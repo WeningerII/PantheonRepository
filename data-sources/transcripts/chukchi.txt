@@ -1,0 +1,256 @@
+Chukchi pantheon — figure-authoring transcript
+================================================
+
+Tradition: Chukchi (northeastern Siberia). Registered era key: primordial.
+
+Research scope: The Pantheon Registry already holds the Creator (chukchi_tenanto_mwan),
+Raven the transformer (chukchi_kurkil), and two of the directional "Beings" (vaʼirgьt):
+Dawn (chukchi_dawn) and the Nail-Star / Pole-Star (chukchi_pole_star). The task was to
+add any further well-attested, individuated CORE Beings still missing.
+
+Per Bogoras's ethnography (The Chukchee, Part II "Religion," 1907) and its faithful
+reproduction in Czaplicka (Aboriginal Siberia, 1914, Pt III ch. XIII), the Chukchi
+recognise a class of "benevolent beings sacrificed to" (taaronyo vairgit) inhabiting the
+twenty-two "directions" of the compass. Two of these are named, individuated, and clearly
+distinct from the existing four, and they recur in every summary of the system alongside
+Dawn and the Pole-Star:
+
+  * MID-DAY — a direction-Being and co-recipient of the chief sacrifices (with Dawn and the
+    Zenith); "often identified with the 'middle-crown'." Attested, distinct from Dawn and
+    from the Pole-Star → AUTHORED as chukchi_midday.
+  * ZENITH ("being-a-crown," kana'irgin / "middle-crown," ginon-kana'irgin) — expressly named
+    by Bogoras "the chief of these beings," the one residing in the zenith. Distinct from the
+    Creator and from the Pole-Star (though the Pole-Star and Mid-day are "identified with" the
+    middle-crown). Attested → AUTHORED as chukchi_zenith.
+
+Verified-and-REJECTED candidates:
+  * Pičvuʼčьn (a small benevolent / fertility spirit) — could NOT be confirmed in Bogoras or
+    any reachable secondary source across repeated targeted searches. Per the hard rules it is
+    OMITTED rather than authored on memory.
+  * The kelet (malevolent spirits) — a spirit-CLASS, with no specific named individual surfaced
+    in the sources; not authored (padding rule).
+
+Result: two figures (Mid-day, Zenith) complete the attested individuated core of named
+directional Beings; with the prior four the principal vaʼirgьt named by Bogoras (Creator,
+Dawn, Mid-day, Zenith, Pole-Star) and the Raven-transformer are now all represented.
+
+Key sources:
+  - Waldemar Bogoras, The Chukchee, Part II "Religion" (Memoirs of the American Museum of
+    Natural History XI; Jesup North Pacific Expedition VII), 1907 — pp. 303–304 on the
+    "benevolent beings sacrificed to" (taaronyo vairgit), the zenith-being "being-a-crown"
+    (kana'irgin) as chief, and Mid-day / the Sun / the Pole-Star identified with the
+    "middle-crown."
+  - M. A. Czaplicka, Aboriginal Siberia: A Study in Social Anthropology (Oxford, 1914),
+    Part III "Religion," ch. XIII — reproducing Bogoras's account of the vaʼirgьt verbatim.
+  - Ülo Siimets, "The Sun, the Moon and Firmament in Chukchi Mythology and on the Relations of
+    Celestial Bodies and Sacrifices," Folklore (Tartu) 32 (2006): 129–156 — peer-reviewed
+    survey listing Creator, Dawn, Zenith, Mid-day and the Northern Star among the "special
+    (higher) beings" and confirming the zenith-being as chief.
+
+```json
+[
+  {
+    "id": "chukchi_midday",
+    "name": {
+      "primary": "Mid-day",
+      "alt": ["the Mid-day Being", "Mid-day Dawn", "Noon"],
+      "transliterations": {
+        "chukchi": "kanoirgin (of the middle-crown)",
+        "etymology": "the Being of the south/noon quarter; identified with the 'middle-crown' (ginon-kana'irgin) — Bogoras, The Chukchee (1907)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chukchi",
+    "primaryTradition": "Chukchi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "named-among-the-benevolent-beings",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (Jesup North Pacific Expedition VII), 1907, pp. 303–304" }
+        ],
+        "notes": "Bogoras lists Mid-day among the 'benevolent beings sacrificed to' (taaronyo vairgit) of the Chukchi directions; with Dawn and the Zenith it is one of the three quarters that receive the principal sacrifices."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "noon-direction",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304, on the directions of the Chukchi compass as personified Beings" }
+        ]
+      },
+      {
+        "sphereId": "benevolent-direction",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "M. A. Czaplicka, Aboriginal Siberia (Oxford, 1914), Pt III ch. XIII, reproducing Bogoras: Mid-day among the benevolent vairgit to whom sacrifice is brought" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive-the-noon-sacrifice",
+        "name": "receives the people's sacrifices at the noon (Mid-day) quarter",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304" }
+        ],
+        "notes": "With the Dawn and the Zenith, Mid-day is one of the directions to which the chief Chukchi sacrifices are addressed."
+      },
+      {
+        "id": "share-the-middle-crown",
+        "name": "is identified with the 'middle-crown' at the height of the sky",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303: 'Mid-day, the Sun, and the Polar Star are often identified with the middle-crown' (ginon-kana'irgin)" }
+        ],
+        "notes": "Mid-day, the Sun and the Pole-Star are each at times equated with the 'middle-crown' (the zenith-being), without losing their separate standing as Beings of their own quarters."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "chukchi_zenith",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304" }
+        ],
+        "notes": "Reciprocal of chukchi_zenith.companion — Mid-day and the Zenith are co-named Beings of the upper directions and joint recipients of the chief sacrifices; Mid-day is one of those 'identified with' the zenith's middle-crown."
+      },
+      {
+        "kind": "companion",
+        "personId": "chukchi_dawn",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304: Dawn, Zenith and Mid-day named together as the directions receiving the principal sacrifices" }
+        ],
+        "notes": "Mid-day stands beside the Dawn among the benevolent direction-Beings to whom the principal Chukchi sacrifices are made."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Waldemar Bogoras, The Chukchee, Part II 'Religion' (Jesup North Pacific Expedition VII / Memoirs AMNH XI), 1907, pp. 303–304" },
+          { "kind": "secondary", "reference": "M. A. Czaplicka, Aboriginal Siberia (Oxford, 1914), Part III 'Religion,' ch. XIII" },
+          { "kind": "secondary", "reference": "Ülo Siimets, 'The Sun, the Moon and Firmament in Chukchi Mythology,' Folklore 32 (2006): 129–156" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Mid-day is one of the named Chukchi directional Beings (vaʼirgьt). Bogoras records the 'benevolent beings sacrificed to' (taaronyo vairgit) as inhabiting the twenty-two directions of the compass, with Dawn, the Zenith and Mid-day receiving the principal sacrifices; Mid-day, the Sun and the Pole-Star are 'often identified with the middle-crown' (ginon-kana'irgin), the being of the zenith. It is treated, like the other directional Beings, as a benevolent superior Being rather than a sharply biographied individual, and is classed here as a deity with no attested divine parent."
+  },
+  {
+    "id": "chukchi_zenith",
+    "name": {
+      "primary": "Zenith",
+      "alt": ["Being-a-Crown", "Middle-Crown", "the Zenith Being", "On-High"],
+      "transliterations": {
+        "chukchi": "kana'irgin (ginon-kana'irgin, 'middle-crown')",
+        "etymology": "'being-a-crown'; chief of the benevolent Beings, residing in the zenith — Bogoras, The Chukchee (1907), p. 303"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chukchi",
+    "primaryTradition": "Chukchi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "named-chief-of-the-benevolent-beings",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (Jesup North Pacific Expedition VII), 1907, p. 303" }
+        ],
+        "notes": "Bogoras names the being residing in the zenith — 'being-a-crown' (kana'irgin), or 'middle-crown' (ginon-kana'irgin) — as the chief of the benevolent beings sacrificed to (taaronyo vairgit)."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-zenith",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303, on the being residing in the zenith as 'being-a-crown' (kana'irgin)" }
+        ]
+      },
+      {
+        "sphereId": "supreme-being",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303: 'the chief of these beings is the one residing in the zenith'" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "chief-of-the-benevolent-beings",
+        "name": "stands as chief over the benevolent Beings sacrificed to",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303" }
+        ],
+        "notes": "Of the taaronyo vairgit inhabiting the twenty-two directions, the zenith-being is named the chief."
+      },
+      {
+        "id": "hold-the-middle-crown",
+        "name": "occupies the 'middle-crown' at the very top of the sky",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303: 'being-a-crown' (kana'irgin) / 'middle-crown' (ginon-kana'irgin)" }
+        ],
+        "notes": "Sits at the apex of the sky as the 'middle-crown'; Mid-day, the Sun and the Pole-Star are each at times identified with this crown."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "chukchi_midday",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304" }
+        ],
+        "notes": "Reciprocal of chukchi_midday.companion — the Zenith and Mid-day are co-named Beings of the upper directions; Mid-day is one of those 'identified with' the zenith's middle-crown."
+      },
+      {
+        "kind": "companion",
+        "personId": "chukchi_pole_star",
+        "sources": [
+          { "kind": "secondary", "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303: the Polar Star among those 'identified with the middle-crown'" }
+        ],
+        "notes": "The Pole-Star (Nail-Star) is, with Mid-day and the Sun, 'often identified with' the zenith's middle-crown, while remaining a distinct Being of the celestial axis."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Waldemar Bogoras, The Chukchee, Part II 'Religion' (Jesup North Pacific Expedition VII / Memoirs AMNH XI), 1907, p. 303" },
+          { "kind": "secondary", "reference": "M. A. Czaplicka, Aboriginal Siberia (Oxford, 1914), Part III 'Religion,' ch. XIII" },
+          { "kind": "secondary", "reference": "Ülo Siimets, 'The Sun, the Moon and Firmament in Chukchi Mythology,' Folklore 32 (2006): 129–156" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "The Zenith-being is, in Bogoras's words, 'the chief' of the benevolent beings sacrificed to (taaronyo vairgit). The Chukchi call it 'being-a-crown' (kana'irgin) or 'middle-crown' (ginon-kana'irgin); it resides at the apex of the sky, and Mid-day, the Sun and the Pole-Star are each 'often identified with the middle-crown' without being reduced to it. Distinct from the Creator (Tenanto'mwan), it heads the spatial system of directional Beings; it is classed here as a deity with no attested divine parent."
+  }
+]
+```
+
+SOLITARY: (none — both authored figures carry cited relations.)
+
+RECIPROCAL-NEEDED: chukchi_dawn companion chukchi_midday  (add reciprocal companion link to the existing figure chukchi_dawn: Dawn and Mid-day are co-named direction-Beings receiving the principal sacrifices — Bogoras, The Chukchee, Part II 'Religion,' 1907, pp. 303–304)
+RECIPROCAL-NEEDED: chukchi_pole_star companion chukchi_zenith  (add reciprocal companion link to the existing figure chukchi_pole_star: the Nail-Star/Pole-Star is "often identified with the middle-crown" of the Zenith — Bogoras, The Chukchee, Part II 'Religion,' 1907, p. 303)

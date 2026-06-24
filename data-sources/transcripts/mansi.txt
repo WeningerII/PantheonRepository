@@ -1,0 +1,750 @@
+Pantheon Registry — Mansi (Vogul) Ob-Ugric pantheon, primordial / mythic-age core
+==================================================================================
+
+Tradition: Mansi (the Vogul of the Konda, Pelym, Sosva and middle Ob, western Siberia).
+Era keys used: primordial and mythic-age (the two registered Mansi eras).
+
+Scope of this batch. The corpus already carries three Mansi figures — the upper
+sky-father (mansi_numi_torum), the World-Surveyor Man (mansi_mir_susne_khum) and
+the dawn/birth goddess Kaltes-Ekwa (mansi_kaltes_ekwa). The brief identifies the
+missing core as (a) the underworld lord, Numi-Torum's brother and adversary, and
+(b) the other sons of Numi-Torum beyond the World-Surveyor, plus the earth-mother
+"Lower-World woman" who is sometimes held distinct from Kaltes. This batch adds
+four firmly-attested figures:
+
+  • mansi_khul_ater   — Khul-Ater / Kul-otyr / Xul'-otyr, lord of the Lower World,
+                        master of the kuľ (disease-spirits), brother and standing
+                        adversary of Numi-Torum, and (in the earth-diver variant)
+                        the diver who fetches up the first mud.
+  • mansi_as_iki      — As-iki, "the old man of the Ob," reckoned the eldest son of
+                        Numi-Torum and lord of the whole Ob (As) basin, god of the
+                        river's water and fish.
+  • mansi_polum_torum — Polum-Torum, the "Pelym god," a son of Numi-Torum, patron of
+                        the game-animals and fish of the Pelym country; his own son
+                        Polum-torum-pyg ("Son of the Pelym God") is the patron spirit
+                        of the Sosva settlement of Verhneye Nildino.
+  • mansi_joli_torum_syan — Joli-Torum-syan / Joli-Torum (Földanya, the "Lower-World /
+                        Earth Mother"), consort of Numi-Torum who dwells upon the
+                        earth among people; partly distinguished from, partly merged
+                        with, Kaltes-Ekwa in the sources.
+
+A note on the Khanty/Mansi split and on doubled names. The Khanty (Ostyak) and Mansi
+(Vogul) share this pantheon almost entirely; the corpus accordingly carries the
+Khanty forms Num-Torum, Kul-Otyr, Mir-susne-khum, Kaltes and Postajankt-iki, and
+the Mansi forms Numi-Torum, Mir-susne-khum and Kaltes-Ekwa. The figures below are
+authored under the Mansi label and cite Mansi (Vogul) attestation specifically:
+Kul-otyr/Xul'-otyr is documented in Munkácsi's Vogul corpus and named in the Vakh-
+Vasyugan and southern-Vogul traditions as Numi-Torum's underworld brother who rules
+the kuľ (disease-spirits); As-iki ("Ob old man," As = the Ob) and Polum-Torum (the
+Pelym/Polum god, the river-name Polum/Pulim) are the Vogul river-sons of Numi-Torum;
+and Joli-Torum / Joli-Torum-śäń ("Lower-World mother," joli 'lower' + torum 'sky/god'
++ śäń 'mother') is the Vogul earth-mother consort. Primary documentation is Bernát
+Munkácsi, Vogul Népköltési Gyűjtemény (Vogul Folklore Collection, 1892–1921) and his
+synthesis "A vogul nép ősi hitvilága" (Nyelvtudományi Közlemények, 1900–1902);
+K. F. Karjalainen, Die Religion der Jugra-Völker (FF Communications 41/44/63,
+1921–1927); Uno Holmberg/Harva, Finno-Ugric [and] Siberian Mythology (The Mythology
+of All Races IV, 1927); and Géza Róheim, Hungarian and Vogul Mythology (Monographs
+of the American Ethnological Society XXII, 1954), with the modern Ob-Ugric synthesis
+of Kulemzin & Lukina et al.
+
+A note on the earth-mother (Joli-Torum-syan vs Kaltes). Two scholarly treatments
+co-exist and the brief flags exactly this: the Hungarian academic tradition
+(Munkácsi; the standard Ob-Ugric handbooks) names Numi-Torum's consort the Földanya
+/ Joli-Torum (the "Lower-World / Earth Mother") who dwells upon the earth among
+people, and makes Kaltes his sibling (in variants his wife); elsewhere Kaltes-Ekwa
+is herself the wife and earth-mother (a by-name Torum-śäń). Joli-Torum-syan is
+therefore authored as a distinct figure with an explicit equated-with edge to
+mansi_kaltes_ekwa recording the partial overlap; the affair-with-Kul-otyr expulsion
+myth belongs to the Kaltes complex and is cited there, not duplicated onto Joli-Torum.
+
+Not authored (verified-then-omitted, to avoid padding):
+  • Nej-Torum / Naj-Ekwa as a son of Numi-Torum — the fire figure Naj-Ekwa is
+    attested rather as a sibling of Numi-Torum (with Hotal-Ekwa the Sun and
+    Etposojka the Moon), not stably as a distinct named "son," so it is omitted
+    here for want of a firm son-attestation.
+  • The further territorial river-sons named in passing (Nyaras-Nay-Ekwa,
+    Tagt-Kotil-Ojka, Aj-As-Ojka, Nyor-Ojka) — local patron-spirits, too thinly
+    attested as primordial pantheon deities to author without padding; omitted.
+  • Numi-Torum's unnamed "one daughter" — not stably a single named figure; omitted.
+
+```json
+[
+ {
+  "id": "mansi_khul_ater",
+  "name": {
+   "primary": "Lord of the Lower World",
+   "alt": [
+    "Khul-Ater",
+    "Kul-otyr",
+    "Xul'-otyr",
+    "Kul'-Otyr",
+    "Hul-Ater",
+    "Kuly-Otir"
+   ],
+   "transliterations": {
+    "mns": "Хуль-отыр",
+    "rom": "Xul'-otyr",
+    "etymology": "Mansi (Vogul) Xul'-otyr / Kul-otyr, a compound of kuľ / xul' 'evil spirit, devil, disease-demon' (the kuľ are the spirits of sickness he commands) + otyr / āter 'lord, prince, hero'; thus 'the lord of the kuľ / the underworld prince'. The Hungarian scholarly form is Hul-Ater. Documented in Munkácsi's Vogul corpus and as Kul-otyr in the Vakh-Vasyugan tradition (Munkácsi, A vogul nép ősi hitvilága, 1900–1902; Karjalainen, Die Religion der Jugra-Völker, 1921–1927)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mansi",
+  "primaryTradition": "Mansi",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "set-as-brother-and-adversary-of-numi-torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, Vogul Folklore Collection (Vogul Népköltési Gyűjtemény), 1892–1921, on Xul'-otyr the Vogul underworld lord and brother of Numi-Torum"
+     }
+    ],
+    "notes": "The dark counterpart of the sky-father in the upper/lower-world dualism: brother and standing adversary of Numi-Torum, lord of the lower (dark) world and master of the kuľ, the spirits of disease."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "dives-for-the-first-earth-in-the-creation",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921); Uno Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (The Mythology of All Races IV), 1927, Ob-Ugric earth-diver creation"
+     }
+    ],
+    "notes": "In the Vogul earth-diver variant of the cosmogony Kul-otyr is sent down (in the loon/diver form) to fetch the first mud from beneath the primordial water at Numi-Torum's command, and so has a hand in shaping the dark lower part of the world."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Хуль-отыр",
+     "script": "Cyrl",
+     "rom": "Xul'-otyr"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (1921–1927), on Kul'/Xul' the underworld lord of the Ob-Ugrians"
+     }
+    ]
+   },
+   {
+    "sphereId": "disease-and-death",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): the lord of the kuľ, the disease-spirits who bring sickness and death among people"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation-of-the-world",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (1927): in the Ob-Ugric earth-diver myth Kul-otyr fetches up the first earth, shaping the lower world"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-kul-disease-spirits",
+    "name": "commands the kuľ, the spirits of disease",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921); Karjalainen, Die Religion der Jugra-Völker (1921–1927)"
+     }
+    ],
+    "notes": "Master of the kuľ (xuľ), the host of disease-demons of the lower world; he looses sickness, suffering and death upon mankind, the chief antagonist of Vogul myth."
+   },
+   {
+    "id": "dive-for-the-first-earth",
+    "name": "dives to bring up the first mud from beneath the water",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921), Vogul earth-diver creation variant with Kul-otyr"
+     }
+    ],
+    "notes": "In the earth-diver variant he plunges (in diving-bird form) into the primordial sea at Numi-Torum's bidding and returns with the mud from which the earth is made."
+   },
+   {
+    "id": "rule-the-dark-lower-world",
+    "name": "rules the dark lower world and the dead",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker (1921–1927); Munkácsi, A vogul nép ősi hitvilága (1900–1902)"
+     }
+    ],
+    "notes": "Sovereign of the dark underworld to which the dead descend; the structural counterweight to Numi-Torum's bright upper heaven."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mansi_numi_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921); Hungarian Ob-Ugric handbooks (Hul-Ater the brother of Numi-Tórem)"
+     }
+    ],
+    "notes": "Brother of the sky-father Numi-Torum in the Ob-Ugric upper/lower-world dualism — the dark twin to the bright sky-god."
+   },
+   {
+    "kind": "enemy",
+    "personId": "mansi_numi_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921); Karjalainen, Die Religion der Jugra-Völker (1921–1927)"
+     }
+    ],
+    "notes": "Standing adversary of Numi-Torum: he corrupts the creation, rules the dead below and sends the disease-spirits up among the living."
+   },
+   {
+    "kind": "lover",
+    "personId": "mansi_kaltes_ekwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin & Lukina et al., Ob-Ugric (Khanty/Mansi) mythology: Kaltes's fall from heaven follows an illicit union with Kul-otyr, master of the lower world"
+     }
+    ],
+    "notes": "In one Ob-Ugric variant Kaltes-Ekwa's expulsion from the upper world follows an affair with Kul-otyr; the Khanty form of the same edge is recorded on khanty_kul_otyr."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "khanty_kul_otyr",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia of Uralic Mythologies (Khanty & Mansi vols.), eds. Napolskikh, Siikala & Hoppál; Holmberg, Mythology of All Races vol. 4, 1927"
+     }
+    ],
+    "notes": "Same Ob-Ugric underworld lord Kul'/Khul' (Kul-Otyr ≈ Khul'-Ater)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Khul-Ater (Mansi Xul'-otyr / Kul-otyr) is the Vogul (Mansi) lord of the lower world, master of the kuľ (disease-spirits) and source of sickness and death, the brother and standing adversary of the sky-father Numi-Torum; in the earth-diver creation he fetches up the first mud from beneath the water.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, Vogul Népköltési Gyűjtemény (Vogul Folklore Collection), 1892–1921"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, A vogul nép ősi hitvilága, Nyelvtudományi Közlemények, 1900–1902"
+     },
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FF Communications 41/44/63), 1921–1927"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Spirit-class underworld lord (classed as deity). Mansi Xul'-otyr / Kul-otyr (Hungarian Hul-Ater); kuľ/xul' = evil/disease-spirit, otyr/āter = lord. The corpus also carries the Khanty form (khanty_kul_otyr) per the tradition split; this is the Vogul (Mansi) attestation, in which he is Numi-Torum's underworld brother-adversary, master of the disease-spirits, and the earth-diver of the creation. Documented in Munkácsi's Vogul corpus and by Karjalainen."
+ },
+ {
+  "id": "mansi_as_iki",
+  "name": {
+   "primary": "Old Man of the Ob",
+   "alt": [
+    "As-iki",
+    "As-Iki",
+    "Ās-ōjka",
+    "As-ojka",
+    "Old Man of the Ob River"
+   ],
+   "transliterations": {
+    "mns": "Ас-ойка",
+    "rom": "Ās-ōjka",
+    "etymology": "Mansi (Vogul) As-iki / Ās-ōjka, a compound of As / Ās 'the Ob (the great river)' + iki / ōjka 'old man, lord' — 'the old man / lord of the Ob' (cf. Khanty As, the Ob, and As-χoyat 'people of the Ob'). The river-name As is the everyday Ob-Ugric word for the Ob (Karjalainen, Die Religion der Jugra-Völker; Munkácsi, Vogul Folklore Collection)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mansi",
+  "primaryTradition": "Mansi",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mansi_numi_torum"
+  ],
+  "parentRoles": {
+   "mansi_numi_torum": "father"
+  },
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-age",
+    "eraOrdering": 0,
+    "startEvent": "born-eldest-son-of-numi-torum-and-given-the-ob",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, Vogul Folklore Collection (Vogul Népköltési Gyűjtemény), 1892–1921, on the sons of Numi-Torum and the lords of the rivers"
+     }
+    ],
+    "notes": "Reckoned the eldest of the seven sons of Numi-Torum and Kaltes-Ekwa; given the whole Ob (As) basin as his domain, he becomes the old man / lord of the great river, master of its water and its fish."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "rivers-and-fishing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ас-ойка",
+     "script": "Cyrl",
+     "rom": "Ās-ōjka"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker (1921–1927): As-iki, lord of the Ob, the river's water and its fish"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-and-fortune",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): the giver of the fish-catch on which the river communities live"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-ob-and-its-fish",
+    "name": "rules the whole Ob basin, its waters and its fish",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker (1921–1927); Munkácsi, Vogul Folklore Collection (1892–1921)"
+     }
+    ],
+    "notes": "Lord of the great river As (the Ob); the eldest son to whom Numi-Torum gives the Ob basin, he sends or withholds the fish on which the riverine Mansi and Khanty depend."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "mansi_numi_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921); Ob-Ugric handbooks: As-iki the eldest son of Numi-Torum"
+     }
+    ],
+    "notes": "Eldest son of the sky-father Numi-Torum, given the Ob basin as his portion."
+   },
+   {
+    "kind": "mother",
+    "personId": "mansi_kaltes_ekwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): the sons of Numi-Torum are the children of Kaltes-Ekwa"
+     }
+    ],
+    "notes": "Born of Kaltes-Ekwa, mother of the sons of Numi-Torum."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mansi_mir_susne_khum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): both reckoned sons of Numi-Torum among the seven brothers"
+     }
+    ],
+    "notes": "Brother of the World-Surveyor Man among the seven sons of Numi-Torum — the eldest (the Ob) beside the youngest (the World-watcher)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mansi_polum_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): the river-lords As-iki and Polum-Torum among the sons of Numi-Torum"
+     }
+    ],
+    "notes": "Brother of the Pelym god Polum-Torum, a fellow river-lord among the sons of Numi-Torum."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "As-iki ('the old man of the Ob', Mansi Ās-ōjka, As = the Ob) is in Vogul (Mansi) religion the eldest son of Numi-Torum and Kaltes-Ekwa, lord of the whole Ob basin and god of its water and fish.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FF Communications 41/44/63), 1921–1927"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, Vogul Népköltési Gyűjtemény (Vogul Folklore Collection), 1892–1921"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "River-lord son of Numi-Torum (classed as deity). Mansi As-iki / Ās-ōjka, 'old man of the Ob' (As/Ās = the Ob). Reckoned the eldest of the seven sons; lord of the great river and its fish, the divine patron of the riverine subsistence of the Ob-Ugrians. Documented for the Vogul by Munkácsi and Karjalainen."
+ },
+ {
+  "id": "mansi_polum_torum",
+  "name": {
+   "primary": "Pelym God",
+   "alt": [
+    "Polum-Torum",
+    "Polёm-Torum",
+    "Pulim-Torum",
+    "God of the Pelym"
+   ],
+   "transliterations": {
+    "mns": "Полум-Торум",
+    "rom": "Polum-Torum",
+    "etymology": "Mansi (Vogul) Polum-Torum / Pulim-torum, a compound of the river-name Polum / Pulim (Russian Pelym, the western tributary of the Tavda–Konda system on which the Pelym Vogul lived) + torum 'sky, god' — 'the god of the Pelym'. His son is Polum-torum-pyg, 'Son of the Pelym God' (Munkácsi, Vogul Folklore Collection, 1892–1921)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mansi",
+  "primaryTradition": "Mansi",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mansi_numi_torum"
+  ],
+  "parentRoles": {
+   "mansi_numi_torum": "father"
+  },
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-age",
+    "eraOrdering": 0,
+    "startEvent": "born-a-son-of-numi-torum-and-given-the-pelym",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, Vogul Folklore Collection (Vogul Népköltési Gyűjtemény), 1892–1921, on Polum-Torum the Pelym god among the children of Numi-Torum"
+     }
+    ],
+    "notes": "A son of Numi-Torum given the Pelym (Polum) river country as his domain; the patron god of the Pelym Vogul, lord of the game-animals and fish of his region. His own son, Polum-torum-pyg, is venerated as the patron spirit of the Sosva settlement of Verhneye Nildino."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "rivers-and-fishing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Полум-Торум",
+     "script": "Cyrl",
+     "rom": "Polum-Torum"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): Polum-Torum, the god of the Pelym river"
+     }
+    ]
+   },
+   {
+    "sphereId": "hunting",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): Polum-Torum the patron of the game-animals and fish, to whom the Pelym Vogul brought sacrifice"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-the-pelym-and-its-game",
+    "name": "guards the Pelym country and its game-animals and fish",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921)"
+     }
+    ],
+    "notes": "Patron of all the animals and fish of the Pelym; the Pelym Vogul came several times a year, chiefly in winter after the New Year, to offer him sacrifice for the hunt and the catch."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "polum-torum-sacred-site",
+    "name": "Pelym sacred site and idol",
+    "kind": "idol",
+    "role": "cult-image",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921); Ob-Ugric ethnography of the Pelym/Nildino sanctuaries"
+     }
+    ],
+    "notes": "Polum-Torum and his son Polum-torum-pyg were honoured at sacred sites with cult-images and periodic offerings; Polum-torum-pyg is the patron spirit of Verhneye Nildino on the Sosva."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "mansi_numi_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): Polum-Torum among the children of Numi-Torum"
+     }
+    ],
+    "notes": "A son of the sky-father Numi-Torum, given the Pelym country."
+   },
+   {
+    "kind": "mother",
+    "personId": "mansi_kaltes_ekwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): the sons of Numi-Torum are the children of Kaltes-Ekwa"
+     }
+    ],
+    "notes": "Born of Kaltes-Ekwa, mother of the sons of Numi-Torum."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mansi_as_iki",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): the river-lords Polum-Torum and As-iki among the sons of Numi-Torum"
+     }
+    ],
+    "notes": "Brother of As-iki, lord of the Ob; both are river-lord sons of Numi-Torum."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mansi_mir_susne_khum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): both reckoned sons of Numi-Torum"
+     }
+    ],
+    "notes": "Brother of the World-Surveyor Man among the sons of Numi-Torum."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Polum-Torum (the 'Pelym god', Mansi Polum/Pulim = the Pelym river + torum 'god') is in Vogul (Mansi) religion a son of Numi-Torum, the patron god of the Pelym country and of its game-animals and fish; his son Polum-torum-pyg ('Son of the Pelym God') is venerated as a local patron spirit.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, Vogul Népköltési Gyűjtemény (Vogul Folklore Collection), 1892–1921"
+     },
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FF Communications 41/44/63), 1921–1927"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "River-lord son of Numi-Torum (classed as deity). Mansi Polum-Torum, 'god of the Pelym' (Polum/Pulim = the Pelym, the river of the Pelym Vogul). Patron of the Pelym country's game and fish, honoured with periodic sacrifice; his son Polum-torum-pyg is the patron spirit of Verhneye Nildino. Documented in Munkácsi's Vogul corpus."
+ },
+ {
+  "id": "mansi_joli_torum_syan",
+  "name": {
+   "primary": "Earth Mother",
+   "alt": [
+    "Joli-Torum-syan",
+    "Joli-Torum",
+    "Joli-Torem",
+    "Joli-Torum-śäń",
+    "Mā-ankw",
+    "Földanya"
+   ],
+   "transliterations": {
+    "mns": "Йоли-Торум-сянь",
+    "rom": "Joli-Torum-śäń",
+    "etymology": "Mansi (Vogul) Joli-Torum-śäń, a compound of joli 'lower, below' + torum 'sky, world, god' + śäń / syan 'mother' — 'the mother of the lower world / the Earth Mother' (Hungarian Földanya, also Joli-Tórem). A parallel form is [Joli-]Mā-ankw 'Earth Mother' (mā 'earth' + ankw 'mother, woman'). Recorded in Munkácsi's Vogul corpus as the consort of Numi-Torum who dwells below, upon the earth (Munkácsi, A vogul nép ősi hitvilága, 1900–1902)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mansi",
+  "primaryTradition": "Mansi",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "consort-of-numi-torum-as-the-lower-earth-mother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, A vogul nép ősi hitvilága (Nyelvtudományi Közlemények), 1900–1902, on Joli-Torum the Earth Mother, consort of Numi-Torum"
+     }
+    ],
+    "notes": "The Lower-World / Earth Mother, paired with the upper sky-father Numi-Torum as the female, earthward pole of the Vogul cosmos; unlike her husband she does not stay in the heavens but is present here below, upon and within the earth, among people."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Йоли-Торум-сянь",
+     "script": "Cyrl",
+     "rom": "Joli-Torum-śäń"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, A vogul nép ősi hitvilága (1900–1902): Joli-Torum / Mā-ankw, the mother of the lower world / the earth"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-and-fortune",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Géza Róheim, Hungarian and Vogul Mythology (Monographs of the American Ethnological Society XXII), 1954, on the Earth-Mother and the welfare of earthly life"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hold-and-quicken-the-earth",
+    "name": "holds and quickens the earth and its life",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, A vogul nép ősi hitvilága (1900–1902); Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (1927)"
+     }
+    ],
+    "notes": "As the Earth Mother she is the female, earthward power of the cosmos, sustaining the life, fertility and welfare of the middle world where she dwells among people."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "mansi_numi_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, A vogul nép ősi hitvilága (1900–1902); Hungarian Ob-Ugric handbooks: Joli-Tórem the Földanya, consort (párja) of Numi-Tórem"
+     }
+    ],
+    "notes": "Consort of the upper sky-father Numi-Torum — the Earth-Mother to his Sky-Father in the Vogul cosmos."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mansi_kaltes_ekwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Folklore Collection (1892–1921); Ob-Ugric handbooks: Kaltes-Ekwa as the wife/earth-mother (Torum-śäń), partly merged with Joli-Torum, partly a distinct figure (sibling of Numi-Torum in variants)"
+     }
+    ],
+    "notes": "Partly identified with, partly distinguished from Kaltes-Ekwa: in the tradition where Kaltes is Numi-Torum's sibling, the earth-mother consort is Joli-Torum; elsewhere Kaltes herself is the wife and earth-mother (by-name Torum-śäń). Authored as distinct, with this overlap recorded."
+   },
+   {
+    "kind": "interpretatio",
+    "personId": "nenets_ya_nebya",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology (Mythology of All Races vol. 4), 1927"
+     }
+    ],
+    "notes": "Functional Earth-Mother parallel across Ob-Ugric and Samoyedic; the names share no etymon (joli-torum-śań 'lower-world mother' vs ya-nebya 'earth-mother')."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Joli-Torum-syan (Mansi Joli-Torum-śäń, 'mother of the lower world / Earth Mother', also Mā-ankw; Hungarian Joli-Tórem / Földanya) is in Vogul (Mansi) religion the Earth Mother, consort of the sky-father Numi-Torum who dwells below upon the earth among people; she is partly identified with and partly distinguished from Kaltes-Ekwa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, A vogul nép ősi hitvilága, Nyelvtudományi Közlemények, 1900–1902"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, Vogul Népköltési Gyűjtemény (Vogul Folklore Collection), 1892–1921"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Géza Róheim, Hungarian and Vogul Mythology (Monographs of the American Ethnological Society XXII), 1954"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Earth-mother consort of Numi-Torum (classed as deity). Mansi Joli-Torum-śäń, 'mother of the lower world / Earth Mother' (joli 'lower' + torum 'sky/world' + śäń 'mother'), also Mā-ankw, Hungarian Földanya / Joli-Tórem. Authored as a figure distinct from but overlapping Kaltes-Ekwa: in the standard Hungarian academic treatment Numi-Torum's consort is the Földanya (Joli-Torum) and Kaltes is his sibling (in variants his wife), while elsewhere Kaltes is herself the wife and earth-mother. The Kaltes affair-with-Kul-otyr expulsion myth is cited on the Kaltes complex, not duplicated here. Documented in Munkácsi's Vogul corpus and synthesis and in Róheim."
+ }
+]
+```
+
+SOLITARY: (none — every authored figure carries cited relations: Khul-Ater is sibling/enemy of Numi-Torum and lover of Kaltes; As-iki and Polum-Torum are sons of Numi-Torum; Joli-Torum-syan is the consort of Numi-Torum.)
+
+RECIPROCAL-NEEDED: mansi_numi_torum sibling mansi_khul_ater  (add reciprocal sibling on the existing figure mansi_numi_torum — the underworld brother)
+RECIPROCAL-NEEDED: mansi_numi_torum enemy mansi_khul_ater  (add reciprocal enemy on the existing figure mansi_numi_torum — the underworld adversary)
+RECIPROCAL-NEEDED: mansi_kaltes_ekwa lover mansi_khul_ater  (add reciprocal lover on the existing figure mansi_kaltes_ekwa — the affair/expulsion myth)
+RECIPROCAL-NEEDED: mansi_mir_susne_khum sibling mansi_as_iki  (add reciprocal sibling on the existing figure mansi_mir_susne_khum)
+RECIPROCAL-NEEDED: mansi_mir_susne_khum sibling mansi_polum_torum  (add reciprocal sibling on the existing figure mansi_mir_susne_khum)
+RECIPROCAL-NEEDED: mansi_numi_torum spouse mansi_joli_torum_syan  (add reciprocal spouse on the existing figure mansi_numi_torum — the earth-mother consort; note Numi-Torum already carries spouse → mansi_kaltes_ekwa)
+RECIPROCAL-NEEDED: mansi_kaltes_ekwa equated-with mansi_joli_torum_syan  (add reciprocal equated-with on the existing figure mansi_kaltes_ekwa — the earth-mother overlap)
+
+Notes on reciprocity within this batch (already symmetric, no flag needed):
+  • mansi_as_iki  sibling  mansi_polum_torum  ↔  mansi_polum_torum  sibling  mansi_as_iki
+Directed parent/child edges (father / mother) are one-directional by design and need no reciprocal:
+  • mansi_as_iki father mansi_numi_torum; mother mansi_kaltes_ekwa
+  • mansi_polum_torum father mansi_numi_torum; mother mansi_kaltes_ekwa

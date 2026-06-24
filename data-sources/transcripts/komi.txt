@@ -1,0 +1,231 @@
+Figure-authoring batch — the Komi (Zyrian) nature-spirit core.
+
+The corpus held only the dualist creation pair (komi_jen, the good demiurge En/Jen;
+komi_omol, the adversary Omöl/Kul') and the north-wind god (komi_voipel). This batch
+adds the well-attested "owner"/master spirits and individuated figures that fill out
+the middle and lower world of the Komi-Zyrian cosmos: VÖRSA (Вöрса), the master of
+the forest; VASA (Васа), the master of the water; YOMA (Ёма), the cannibal forest /
+swamp witch of Komi folktale; and ZARNI AN (Зарни ань), the "Golden Woman," the
+Permian goddess-idol of chronicle fame. Nature-classes that lack a clearly
+individuated named figure are deliberately NOT entered: the olys'/olysya hearth-spirit
+(a domovoi-type household genius), the field-spirits, and the undifferentiated kul'
+water-demons are described in the sources only as classes, so they are skipped to
+avoid padding. The epic strongman Pera-bogatyr is omitted: he is firmly attested but
+overwhelmingly as a Komi-PERMYAK legendary hero (epic, not the Zyrian mythological
+core), and the cosmological/solar elements sometimes attached to him are not securely
+attested for the Zyrian branch.
+
+Sources are the standard reference literature on Permian/Zyrian religion, verified to
+exist as real works: Uno Holmberg (Harva), "Finno-Ugric [and] Siberian Mythology"
+(The Mythology of All Races, Vol. IV, Boston 1927), and his earlier "Permalaisten
+uskonto" (Helsinki 1914); N. D. Konakov et al., "Komi Mythology" (Encyclopaedia of
+Uralic Mythologies, Vol. I; eds. Siikala, Napolskikh & Hoppál; Akadémiai Kiadó & SKS,
+Budapest–Helsinki 2003); and Károly Rédei, "Zyrian Folklore Texts" (Akadémiai Kiadó,
+Budapest 1978) for the folktale corpus (the Yoma tales). Tertiary syntheses (the Komi
+mythology survey on Wikipedia / Mythosphere / Encyclopedia.com, drawing on these works)
+are cited where they carry the specific wording.
+
+The Komi cosmos is a Jen–Omöl dualism with a three-tier structure (luminous upper
+world, the earthly middle world of humans and forests, the shadowy underworld); the
+nature-masters police hunting and fishing morality. Vasa, the water-master, belongs to
+the malevolent water sphere of Omöl/Kul' (Holmberg: he "could be malicious, like Kul'";
+the kul' water-demons are Omöl's spawn), so he is wired as an ally of the existing
+komi_omol, with a RECIPROCAL-NEEDED flag. The forest-master Vörsa, the witch Yoma, and
+the Golden Woman Zarni An have no individuated kin in the sources and are flagged
+SOLITARY with cited reasons.
+
+Native Komi (kpv) orthography is given in Cyrillic with romanization. Etymologies:
+vör 'forest' + -sa 'inhabitant/of' (Вöр-са, "the forest one"); va 'water' + -sa
+(Ва-са, "the water one"); zarni 'gold' + ań 'woman/mother' (Зарни ань, "Golden Woman").
+
+```json
+[
+  {
+    "id": "komi_vorsa",
+    "name": {
+      "primary": "Vörsa the Forest-Master",
+      "alt": ["Vörsa", "Vorsa", "Vörös", "Vörmort", "Vör-mort"],
+      "transliterations": {
+        "kpv": "Вöрса (Vörsa)",
+        "etymology": "Komi vör 'forest' + the suffix -sa 'dweller of / belonging to', i.e. 'the one of the forest'; the lešak / leshy of the Komi taiga (cf. also vör-mort 'forest-man')."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Komi",
+    "primaryTradition": "Komi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "ownership-of-the-forest", "sources": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (The Mythology of All Races, Vol. IV, 1927), Permian section" }, { "kind": "secondary", "reference": "N. D. Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }], "notes": "The 'owner' (master) of the forest in Komi-Zyrian belief; every forest tract has its own Vörsa, who controls the game animals and the hunter's luck. The Komi counterpart of the Russian leshy." },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1, "startEvent": "patron-of-the-hunt", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (drawing on Konakov / Holmberg)" }], "notes": "Hunters offered furs, bread and salt, or tobacco to Vörsa before the season in hope of game, and left the first animal caught as a sacrifice; a hunter who breaks the hunting-morality is deprived of luck or led astray in the forest." }
+    ],
+    "domains": [
+      { "sphereId": "forests-and-the-hunt", "contextTag": "lifelong", "term": { "value": "Вöрса", "script": "Cyrillic", "rom": "Vörsa" }, "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }, { "kind": "secondary", "reference": "Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }] },
+      { "sphereId": "wild-animals-and-game", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (citing the forest-spirit Vörsa)" }] },
+      { "sphereId": "moral-order-of-the-hunt", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }] }
+    ],
+    "faculties": [
+      { "id": "lead_hunters_astray", "name": "lead a hunter astray in the forest", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia" }], "notes": "Vörsa punishes a hunter who disrespects the forest or breaks the hunting-morality by depriving him of luck and leading him in circles so that he loses his way." },
+      { "id": "grant_or_withhold_game", "name": "grant or withhold the hunter's catch", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (drawing on Konakov / Holmberg)" }], "notes": "As owner of the game, Vörsa decides whether the hunter takes animals; offerings of fur, bread, salt and tobacco, and the gift of the first kill, secure his favor." },
+      { "id": "shapeshift_forest_size", "name": "change stature between giant and undergrowth", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia (Vörsa appears as a giant the size of a pine)" }], "notes": "Appears as a naked giant the height of a pine, with furry ears, turned-out heels, no eyebrows or eyelashes and a transparent body; like the leshy he can swell to tree-height or shrink among the trees." }
+    ],
+    "materialCulture": [
+      { "id": "vorsa_first_game_offering", "name": "offering of the first-caught game", "kind": "sacrificial-offering", "role": "the first animal killed in the season, left in the forest as Vörsa's portion to keep the hunter's luck", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (citing Konakov / Holmberg)" }] },
+      { "id": "vorsa_hunters_gifts", "name": "hunters' gifts of fur, bread, salt and tobacco", "kind": "votive-offering", "role": "deposited for Vörsa before the hunting season to win game and safe passage in the forest", "sources": [{ "kind": "secondary", "reference": "Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Vörsa (Вöрса) is the master/'owner' of the forest in Komi-Zyrian belief, the counterpart of the Russian leshy; every forest has its own Vörsa, who owns the game and governs the hunter's fortune.", "citations": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (The Mythology of All Races, Vol. IV, 1927), Permian section" }, { "kind": "secondary", "reference": "N. D. Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }], "weight": "high" },
+      { "claim": "He appears as a naked giant about the size of a pine, with furry ears, no eyebrows or eyelashes and a transparent body, and he leads disrespectful hunters astray while rewarding those who make offerings and leave the first kill.", "citations": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (drawing on Konakov / Holmberg)" }], "weight": "medium" }
+    ],
+    "notes": "Komi-Zyrian forest-master, the chief nature-'owner' of the taiga, rendered here as deity per schema (a class with one master per forest, but a clearly individuated mythic figure). English 'Vörsa the Forest-Master' leads; native Вöрса (Vörsa) in term. SOLITARY: nature-master with no individuated kin, spouse or parentage in the sources (Holmberg 1927; Konakov 2003)."
+  },
+  {
+    "id": "komi_vasa",
+    "name": {
+      "primary": "Vasa the Water-Master",
+      "alt": ["Vasa", "Va-sa", "Vais'", "Vais", "Va-kul", "Vakul"],
+      "transliterations": {
+        "kpv": "Васа (Vasa)",
+        "etymology": "Komi va 'water' + the suffix -sa 'dweller of', i.e. 'the one of the water'; the Permian dialects prefer Vais' (Ваись). Conflated with va-kul' 'water-demon', the vodyanoy of the Komi rivers."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Komi",
+    "primaryTradition": "Komi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "ownership-of-the-waters", "sources": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (The Mythology of All Races, Vol. IV, 1927), Permian section" }, { "kind": "secondary", "reference": "N. D. Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }], "notes": "The 'owner' (master) of the water; Vasa was the most widely used Zyrian name for the water-spirit, the Permians preferring Vais'. He dwells in an underwater house and presides over rivers, lakes and the fish-catch." },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1, "startEvent": "drowner-and-friend-of-millers", "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia (Vasa, friend of millers)" }], "notes": "Like Kul' he can be malicious: it is dangerous to bathe in his waters late in the evening, for he draws people and animals to drown. He is the friend of millers, but when a mill is built he demands a 'head' as sacrifice, or he breaks the dams on his wedding journey." }
+    ],
+    "domains": [
+      { "sphereId": "water-and-rivers", "contextTag": "lifelong", "term": { "value": "Васа", "script": "Cyrillic", "rom": "Vasa" }, "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }, { "kind": "secondary", "reference": "Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }] },
+      { "sphereId": "fishing-and-the-catch", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }] },
+      { "sphereId": "drowning-and-the-watery-dead", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (the water-master draws people to drown)" }] },
+      { "sphereId": "mills-and-watercraft", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section (friend of millers; demands a 'head' at a new mill)" }] }
+    ],
+    "faculties": [
+      { "id": "drown_people_and_animals", "name": "draw people and animals down to drown", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (drawing on Holmberg)" }, { "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }], "notes": "In his waters it is dangerous to bathe, especially late in the evening; he rejoices in advance over his human victims, and is sometimes seen on the bank shortly before a drowning." },
+      { "id": "grant_or_spoil_the_catch", "name": "grant or withhold the fish-catch", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }], "notes": "Sacrifices of bread, butter and eggs are made before the fishing begins; an infringer of the fishing-morality is deprived of luck, as with the forest-master." },
+      { "id": "break_mill_dams", "name": "break the dams of a mill", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia (friend of millers; demands a head)" }], "notes": "Friend of the miller when appeased, but he demands a 'head' as sacrifice at the building of a mill, otherwise he breaks the dams on his wedding journey." },
+      { "id": "shapeshift_water_forms", "name": "appear as fish-tailed man, a great pike, or a fair woman", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia (man with a fish tail or a large pike)" }], "notes": "Pictured as a long-bearded man, as a man with a fish tail, or most often as a man with a large pike; can also take the form of a beautiful woman or a fish-like being." }
+    ],
+    "materialCulture": [
+      { "id": "vasa_underwater_house", "name": "the water-master's underwater house", "kind": "dwelling", "role": "Vasa's home beneath the rivers and lakes, from which he rules the fish and the watery dead", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (the water-spirit dwells in an underwater house)" }] },
+      { "id": "vasa_fishing_offering", "name": "pre-catch offering of bread, butter and eggs", "kind": "sacrificial-offering", "role": "thrown to the water-master before the fish-catch begins to win the catch and avoid drowning", "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }] },
+      { "id": "vasa_mill_head_sacrifice", "name": "the 'head' demanded at a new mill", "kind": "sacrificial-offering", "role": "the sacrifice a miller must give the water-master when a mill is built, lest he break the dams on his wedding journey", "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }] }
+    ],
+    "relations": [
+      { "kind": "ally", "personId": "komi_omol", "era": "primordial", "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section (the water-master 'could be malicious, like Kul'')" }, { "kind": "secondary", "reference": "Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }], "notes": "Vasa belongs to the malevolent water sphere of Omöl/Kul': Holmberg describes the water-master as malicious 'like Kul'', and the Komi kul' water-demons (va-kul') are the spawn of Omöl, lord of water and the dead — the dangerous lower-world water powers stand with the adversary against En's order." }
+    ],
+    "sources": [
+      { "claim": "Vasa (Васа; Permian Vais') is the master/'owner' of the water among the Komi-Zyrians, dwelling in an underwater house and presiding over rivers, the fish-catch and drownings; the counterpart of the Russian vodyanoy.", "citations": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (The Mythology of All Races, Vol. IV, 1927), Permian section" }, { "kind": "secondary", "reference": "N. D. Konakov et al., Komi Mythology (Encyclopaedia of Uralic Mythologies I, 2003)" }], "weight": "high" },
+      { "claim": "He is pictured as a man, a man with a fish tail, or a man with a large pike; he can be malicious like Kul', drawing people to drown, yet is the friend of millers, demanding a 'head' at a new mill or breaking the dams on his wedding journey, and receiving bread, butter and eggs before the catch.", "citations": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927), Permian section" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia" }], "weight": "high" }
+    ],
+    "notes": "Komi-Zyrian water-master, the chief nature-'owner' of the rivers and lakes, rendered here as deity per schema. English 'Vasa the Water-Master' leads; native Васа (Vasa) in term, Permian Vais'. Wired as ally of komi_omol because the water-master shares the malevolent water-and-death domain of Omöl/Kul' (the kul' water-demons are Omöl's spawn). RECIPROCAL-NEEDED toward komi_omol."
+  },
+  {
+    "id": "komi_yoma",
+    "name": {
+      "primary": "Yoma the Forest Witch",
+      "alt": ["Yoma", "Joma", "Ёma", "Yoma-Baba", "Joma-baba"],
+      "transliterations": {
+        "kpv": "Ёма (Joma)",
+        "etymology": "Komi Ёма (Joma), the cannibal hag of the folktales; cognate with the Udmurt obida / the Nenets 'jomma'-type witch (Petrukhin). The Komi-Zyrian and Komi-Permyak counterpart of the Russian Baba-Yaga."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Komi",
+    "primaryTradition": "Komi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "mistress-of-the-swamp-and-wild-beasts", "sources": [{ "kind": "secondary", "reference": "Károly Rédei, Zyrian Folklore Texts (Akadémiai Kiadó, Budapest 1978)" }, { "kind": "secondary", "reference": "V. Ya. Petrukhin, on the yoma of Komi and Samoyed folklore" }], "notes": "The most notorious witch of Komi folklore; she lives in the swamp/deep forest and 'owns wolves as her sheep and bears as her cows'. The Komi Baba-Yaga, a mistress of the wild beasts." },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1, "startEvent": "setter-of-impossible-tasks", "sources": [{ "kind": "secondary", "reference": "Károly Rédei, Zyrian Folklore Texts (Akadémiai Kiadó, Budapest 1978)" }, { "kind": "tertiary", "reference": "Komi mythology / 'Girl tall as a spindle' (Komi tale, coll. 1935), Wikipedia" }], "notes": "In the tales she captures a girl and sets impossible tasks — to shear her 'sheep' (wolves) and milk her 'cows' (bears); a helper-figure advises the heroine, who escapes while Yoma withdraws to sharpen her teeth, oiling the door-hinges with resin so they do not betray her flight." }
+    ],
+    "domains": [
+      { "sphereId": "witchcraft-and-sorcery", "contextTag": "lifelong", "term": { "value": "Ёма", "script": "Cyrillic", "rom": "Joma" }, "sources": [{ "kind": "secondary", "reference": "Károly Rédei, Zyrian Folklore Texts (Akadémiai Kiadó, Budapest 1978)" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia (Yoma, the most notorious witch)" }] },
+      { "sphereId": "wild-beasts-of-the-forest", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "V. Ya. Petrukhin, on the yoma owning wolves as sheep and bears as cows" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia" }] },
+      { "sphereId": "swamp-and-deep-forest", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (Yoma dwells in a swamp)" }] },
+      { "sphereId": "devouring-and-cannibalism", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Károly Rédei, Zyrian Folklore Texts (Akadémiai Kiadó, Budapest 1978)" }] }
+    ],
+    "faculties": [
+      { "id": "command_wild_beasts", "name": "command wolves and bears as her herds", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "V. Ya. Petrukhin, on the yoma of Komi/Samoyed folklore" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia" }], "notes": "She keeps wolves as her sheep and bears as her cows; captives sent to shear or milk them survive only by tricking the beasts into 'shearing' and 'milking' themselves." },
+      { "id": "devour_captives", "name": "devour those she captures", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Károly Rédei, Zyrian Folklore Texts (Akadémiai Kiadó, Budapest 1978)" }, { "kind": "tertiary", "reference": "Komi mythology / 'Girl tall as a spindle', Wikipedia" }], "notes": "A cannibal hag who sharpens her teeth to eat her captive; the heroine escapes during the tooth-sharpening." },
+      { "id": "compel_marriage_by_threat", "name": "compel a marriage-bargain by threat", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Komi mythology / 'Girl tall as a spindle' (Komi tale, coll. 1935), Wikipedia" }], "notes": "In one tale she forces a couple to betroth their children to hers, threatening otherwise to lock up every chimney in their house." }
+    ],
+    "materialCulture": [
+      { "id": "yoma_forest_hut", "name": "Yoma's hut in the swamp", "kind": "dwelling", "role": "the witch's house deep in the swamp/forest, where she keeps captives and sets her tasks (the Komi analogue of Baba-Yaga's hut)", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Wikipedia (Yoma lives in a swamp)" }] },
+      { "id": "yoma_sharpened_teeth", "name": "Yoma's sharpened teeth", "kind": "bodily-attribute", "role": "the cannibal hag sharpens her teeth to devour her captive; the heroine flees during the sharpening", "sources": [{ "kind": "secondary", "reference": "Károly Rédei, Zyrian Folklore Texts (Akadémiai Kiadó, Budapest 1978)" }, { "kind": "tertiary", "reference": "Komi mythology / 'Girl tall as a spindle', Wikipedia" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Yoma (Ёма; Yoma-Baba) is the most notorious witch of Komi folklore — a malevolent cannibal hag of the swamp and deep forest who owns wolves as her sheep and bears as her cows; the Komi counterpart of the Russian Baba-Yaga.", "citations": [{ "kind": "secondary", "reference": "Károly Rédei, Zyrian Folklore Texts (Akadémiai Kiadó, Budapest 1978)" }, { "kind": "secondary", "reference": "V. Ya. Petrukhin, on the yoma of Komi and Samoyed folklore" }, { "kind": "tertiary", "reference": "Komi mythology, Wikipedia" }], "weight": "high" },
+      { "claim": "In the tale-type ('Girl tall as a spindle', collected from a Komi source in 1935) she captures a girl, sets impossible herding tasks with her wolf-sheep and bear-cows, and is escaped while she sharpens her teeth to eat the captive.", "citations": [{ "kind": "tertiary", "reference": "Komi mythology / 'Girl tall as a spindle', Wikipedia" }, { "kind": "secondary", "reference": "Károly Rédei, Zyrian Folklore Texts (Akadémiai Kiadó, Budapest 1978)" }], "weight": "medium" }
+    ],
+    "notes": "Komi-Zyrian (and Permyak) folktale witch, an individuated mythic figure (the named Yoma, not a class of witches), rendered here as deity per schema. English 'Yoma the Forest Witch' leads; native Ёма (Joma) in term. SOLITARY: a solitary hag with no individuated kin, spouse or parentage in the tale corpus (Rédei 1978; Komi mythology surveys)."
+  },
+  {
+    "id": "komi_zarni_an",
+    "name": {
+      "primary": "Zarni An, the Golden Woman",
+      "alt": ["Zarni An", "Zarni Ań", "Zarni Anj", "Golden Woman", "Zolotaya Baba", "Golden Hag"],
+      "transliterations": {
+        "kpv": "Зарни ань (Zarni ań)",
+        "etymology": "Komi zarni 'gold' + ań 'woman, mother', i.e. 'Golden Woman'; Russian Zolotaya Baba 'Golden Hag/Woman'. The female idol revered by the Permians, recorded from the late-14th-century chronicles."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Komi",
+    "primaryTradition": "Komi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "the-golden-idol-of-the-permians", "sources": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (The Mythology of All Races, Vol. IV, 1927)" }, { "kind": "tertiary", "reference": "Sophian / Novgorod Chronicles (s.a. 1398; Life of St Stephen of Perm), via the Golden Woman tradition" }], "notes": "The 'Golden Woman' (Zarni Ań / Zolotaya Baba), a female idol revered by the Permians; first recorded in the Sophian Chronicle (s.a. 1398) and the Novgorod chronicle account of St Stephen of Perm's mission, and later described by Herberstein and Miechowita as a statue receiving offerings from all who pass." },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1, "startEvent": "the-golden-mother-goddess", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Grokipedia / Mythosphere (Zarni Ań as supreme goddess / mother)" }], "notes": "In the later mythological synthesis Zarni Ań is read as a maternal, solar 'mother-goddess' of fertility, protection and the renewal of life, depicted with a child on her lap and associated with elk and bear; she is the female figure on the modern coat of arms of the Komi Republic. (This mother-goddess elaboration is partly modern; the chronicle-attested core is the venerated golden idol.)" }
+    ],
+    "domains": [
+      { "sphereId": "cult-idol-and-veneration", "contextTag": "lifelong", "term": { "value": "Зарни ань", "script": "Cyrillic", "rom": "Zarni ań" }, "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927)" }, { "kind": "tertiary", "reference": "Sophian / Novgorod Chronicles (s.a. 1398), via the Golden Woman tradition" }] },
+      { "sphereId": "motherhood-and-fertility", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Grokipedia / Mythosphere (Golden Woman as mother-goddess)" }] },
+      { "sphereId": "sun-and-light", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Grokipedia (Zarni Ań associated with the 'mother sun' and the solar disk)" }] }
+    ],
+    "faculties": [
+      { "id": "receive_universal_offerings", "name": "draw offerings from all who pass", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Sigismund von Herberstein, Notes on Muscovite Affairs (Rerum Moscoviticarum Commentarii, 1549), on the Zolotaya Baba" }, { "kind": "tertiary", "reference": "Maciej Miechowita, Tractatus de duabus Sarmatiis (1517), on the idol" }], "notes": "Early-modern accounts report that no one passing the idol goes by empty-handed: a noble offering if possible, otherwise a skin or even a hair plucked from one's clothing." },
+      { "id": "grant_fertility_and_protection", "name": "grant fertility, protection and renewal of life", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Komi mythology, Grokipedia / Mythosphere (Golden Woman as mother-goddess of fertility and protection)" }], "notes": "In the mother-goddess reading she oversees fertility, protection and the cyclical renewal of life; depicted with a child on her lap and linked to elk and bear. (Later mythological synthesis rather than chronicle attestation.)" }
+    ],
+    "materialCulture": [
+      { "id": "zarni_an_golden_idol", "name": "the Golden Woman idol", "kind": "cult-image", "role": "the venerated statue of the Permians (reported as gold, or of pyrite), shown holding a rod or a torch, or a child, and seated or enthroned in a sanctuary", "sources": [{ "kind": "tertiary", "reference": "Sigismund von Herberstein, Notes on Muscovite Affairs (1549), description of the Zolotaya Baba" }, { "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (1927)" }] },
+      { "id": "zarni_an_passersby_offerings", "name": "offerings of skins and pelts (down to a plucked hair)", "kind": "votive-offering", "role": "the gifts every passer-by leaves at the idol — a fine offering, or failing that a skin or a single hair from one's clothes", "sources": [{ "kind": "tertiary", "reference": "Maciej Miechowita, Tractatus de duabus Sarmatiis (1517)" }, { "kind": "tertiary", "reference": "Sigismund von Herberstein, Notes on Muscovite Affairs (1549)" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Zarni Ań, the 'Golden Woman' (Russian Zolotaya Baba), is a female idol/goddess revered by the Permians (Komi), recorded from the Sophian Chronicle (s.a. 1398) and the account of St Stephen of Perm's mission, and described as a venerated statue by Herberstein (1549) and Miechowita (1517).", "citations": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric [and] Siberian Mythology (The Mythology of All Races, Vol. IV, 1927)" }, { "kind": "tertiary", "reference": "Sophian / Novgorod Chronicles (s.a. 1398), via the Golden Woman tradition" }, { "kind": "tertiary", "reference": "Sigismund von Herberstein, Notes on Muscovite Affairs (1549)" }], "weight": "high" },
+      { "claim": "In the later mythological synthesis she is read as a solar, maternal mother-goddess of fertility and protection, depicted with a child and associated with elk and bear, and appears on the coat of arms of the Komi Republic.", "citations": [{ "kind": "tertiary", "reference": "Komi mythology, Grokipedia / Mythosphere" }], "weight": "low" }
+    ],
+    "notes": "Komi/Permian goddess-idol, an individuated figure ('the Golden Woman'), rendered here as deity. English 'Zarni An, the Golden Woman' leads; native Зарни ань (Zarni ań) in term. The chronicle-attested core (a venerated golden idol of the Permians) is weighted high; the modern 'solar mother-goddess' elaboration is weighted low, and there is scholarly debate over whether the Zolotaya Baba was Komi-Permian, Ob-Ugric, or a composite of both. SOLITARY: no individuated kin, spouse or parentage attested in the sources (Holmberg 1927; the chronicle and early-modern idol accounts)."
+  }
+]
+```
+
+SOLITARY: komi_vorsa — Komi-Zyrian forest-master; the sources (Holmberg 1927, Permian section; Konakov et al., Komi Mythology 2003) describe him only as the lone "owner" of each forest, with no individuated kin, spouse or parentage.
+SOLITARY: komi_yoma — the cannibal hag Yoma is a solitary witch in the Komi tale-corpus (Rédei, Zyrian Folklore Texts 1978; Komi mythology surveys); no individuated kin, spouse or parentage is attested.
+SOLITARY: komi_zarni_an — the Golden Woman (Zarni Ań) is attested as a single venerated idol/goddess (Holmberg 1927; the Sophian/Novgorod chronicles; Herberstein 1549; Miechowita 1517) with no individuated kin, spouse or parentage.
+
+RECIPROCAL-NEEDED: komi_omol ally komi_vasa — add the reciprocal ally relation to the existing figure komi_omol. Rationale: Holmberg describes the water-master Vasa as malicious "like Kul'", and the Komi kul' water-demons (va-kul') are the spawn of Omöl, lord of water and the dead; the dangerous lower-world water powers stand with the adversary against En's order (Holmberg, Finno-Ugric [and] Siberian Mythology 1927, Permian section; Konakov et al., Komi Mythology 2003).

@@ -34,7 +34,10 @@ const entries = Object.entries(people);
 
 // What we refuse to ship.
 const BANNED_COINAGE = /(kinesis|mancy|pathy|portation|kinetic|telepath)/i;
-const FABRICATION = /series canon|original character|not (mythologically )?attested|fan-?fic|homebrew|\bOC\b/i;
+// "OC" = the fanfic "original character" abbreviation. Use Unicode-letter
+// boundaries, not \b: JS \b is ASCII-only, so a bare \bOC\b false-matches the
+// "Oc" in accented real words like "Océan" (Moerenhout, Voyages … Grand Océan).
+const FABRICATION = /series canon|original character|not (mythologically )?attested|fan-?fic|homebrew|(?<!\p{L})OC(?!\p{L})/iu;
 // A term VALUE that isn't a usable native word (empty / bare language label +
 // dash / authored disclaimer). Mirrors the runtime scrub and the generators.
 const isBadTerm = (v) => {

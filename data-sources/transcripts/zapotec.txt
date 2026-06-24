@@ -1,0 +1,967 @@
+Zapotec (Ben'Zaa, the Cloud People of the Valley of Oaxaca) pantheon — the well-attested
+creator-pair and the specialist gods of earthquake, omen and dream still missing from the
+registry.
+
+Six Zapotec figures are already in the corpus: zapotec_coqui_xee (Coqui Xee / Pije-Tao, the
+infinite uncreated source of the gods), zapotec_cocijo (the great rain-and-lightning god),
+zapotec_pitao_bezelao (Coqui/Pitao Bezelao, the lord of the dead and the underworld, patron of
+Mitla), zapotec_pitao_copijcha (the sun-and-war god), zapotec_pitao_cozobi (the maize-and-harvest
+god) and zapotec_xonaxi_quecuya (the death-goddess, Bezelao's consort). What is still missing is
+the primal creator-couple from which the rest of the pantheon proceeds, and three of the
+specialist "Pitao" deities recorded by Córdova.
+
+I verified every figure by web search and cross-checked the standard scholarship: Fray Juan de
+Córdova, *Vocabulario en lengua çapoteca* (1578) — which preserves the authentic theonyms and
+their Spanish glosses; Fray Francisco de Burgoa, *Geográfica Descripción* (1674); Joseph W.
+Whitecotton, *The Zapotecs: Princes, Priests, and Peasants* (1977); Michael Lind, *Ancient Zapotec
+Religion: An Ethnohistorical and Archaeological Perspective* (2015); Guido Münch Galindo, *La
+Teogonía Zapoteca y sus vestigios en Tehuantepec* (1983); and, for the effigy-urn iconography,
+Alfonso Caso & Ignacio Bernal, *Urnas de Oaxaca* (1952) together with Nelly Robles García,
+Leobardo Pacheco Arias & Mireya Olvera Sánchez, "El Señor Ocho Temblor y la Señora Agua: dos
+urnas zapotecas de élite en Atzompa, Oaxaca" (*Arqueología* 49, 2015).
+
+Five figures are firmly attested and authored below:
+  • zapotec_pitao_cozaana   — Pitao Cozaana (Coqui Cozaana), the creator/multiplier of animals,
+                              men and ancestors, patron of hunters and fishermen; the divine
+                              progenitor, paired with Huichaana. Córdova glosses cozaana as
+                              "produzidora o engendradora de los animales" (verb zàana, "to
+                              give birth/engender").
+  • zapotec_pitao_huichaana — Pitao Huichaana (Nohuichana), goddess of water, rivers and fish, of
+                              fertility, generation, conception, childbirth and the human life-
+                              cycle; patroness of midwives, women and children; "la Engendradora,"
+                              "Madre de todas las criaturas," the foremost female deity, linked to
+                              the moon and (in the colonial cult) equated with the Virgin Mary.
+  • zapotec_pitao_xoo       — Pitao Xoo, the god of earthquakes (Zapotec xoo, "earthquake/tremor"),
+                              the living force of the moving earth; rendered on the great Atzompa
+                              urn as "El Señor Ocho Temblor."
+  • zapotec_pitao_peeze     — Pitao Peeze, the god of omens, auguries, fate and fortune, to whom
+                              the colaní (diviner) traced the sign or dream he read in the ritual
+                              books; his name is glossed "god of omens."
+  • zapotec_pitao_xicala    — Pitao Xicala (Pitao Pecala), the god of dreams (both xicala and pecala
+                              gloss "dream"), reckoned an aspect of Pitao Peeze; bound up with the
+                              love/lechery demon Pixèe Pecàla through Córdova's "owl-dream"
+                              difrasismo (Smith-Stark).
+
+DELIBERATELY NOT AUTHORED (to keep names distinct and avoid padding):
+  • Pitao Pezeelao — NOT a separate figure. Córdova's "Pitào Pezèelào, dios del infierno" is the
+    death-god already in the corpus as zapotec_pitao_bezelao (which carries "Pitao Pezeelao" as an
+    alt name). The brief's "wealth/merchant" gloss for "Peeze" actually belongs to a *different*
+    god, Pitao Paa (the god of merchants, wealth, good fortune and happiness, who enriched
+    traders); Pitao Peeze proper is the god of omens/fate. To keep the names clean I author Peeze
+    only in its attested omen/augury/fortune sense and leave the firmly-attested but out-of-scope
+    Pitao Paa for a later batch.
+  • Pixèe Pecàla (love/lechery) and Pitao Ziy (misery/misfortune) surfaced in the sources but fall
+    outside the assigned candidate set; Pecàla is noted within Xicala's entry as its near-twin.
+
+Native Zapotec forms lead the etymology; `term` carries the Córdova spelling (script "Zapotec")
+with romanisation, and "" is used wherever a native word for a concept is not separately recorded
+(Córdova records the theonyms, not action-phrases, so most faculty terms are left ""). The two
+primal creators are placed in the `primordial` era (the "initial couple of the world," preceded
+only by Coqui Xee); the three specialist gods are `mythic`. inheritability is "none" for these
+divine, non-transmissible powers.
+
+```json
+[
+ {
+  "id": "zapotec_pitao_cozaana",
+  "name": {
+   "primary": "Pitao Cozaana",
+   "alt": [
+    "Coqui Cozaana",
+    "Cozaana",
+    "Cozana",
+    "Cosana",
+    "Pitào Cozàana"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Cozàana",
+    "etymology": "Zapotec ⟨Pitào Cozàana⟩, with pitào the honorific 'great spirit / god' and cozàana from the verb zàana 'to give birth, to engender'. Córdova glosses cozaana as 'produzidora o engendradora de los animales' (producer/engenderer of the animals); he calls the god a procreatrix even while treating him as a male deity, the dual male-female creative principle typical of Mesoamerican creator-gods."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "With his consort Huichaana forms the initial divine couple of the world — proceeding from the uncreated Coqui Xee — and engenders the animals, men, the other gods and the art of divination; venerated thereafter as the progenitor, patron of hunters and fishermen and lord of the ancestors.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, Guido. La Teogonía Zapoteca y sus vestigios en Tehuantepec. UNAM, 1983 (Cozana and Huichana as the initial couple of the world, creators of the Sun, the other gods and men)."
+     }
+    ],
+    "notes": "An undying creator-god; the tradition narrates not a birth or death but his standing function as engenderer and progenitor."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-of-animals",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Cozàana",
+     "script": "Zapotec",
+     "rom": "Pitào Cozàana"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): cozaana, 'produzidora o engendradora de los animales'."
+     }
+    ]
+   },
+   {
+    "sphereId": "creation-of-humankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Cozana, multiplicador de los hombres; con Huichana, creadores de los hombres."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-hunt",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion (2015): Pitao Cozaana, god of animals and the hunt, patron of hunters and fishermen."
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestors-and-lineage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants (1977): Cozaana as god of ancestors and the progenitor."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "engender_the_animals",
+    "name": "engenders and multiplies the beasts of the wild, above all the deer",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The defining power Córdova names for him — 'engendradora de los animales'; he is the maker and increaser of all game, especially deer. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): cozaana as engenderer of the animals."
+     }
+    ]
+   },
+   {
+    "id": "engender_humankind",
+    "name": "with Huichaana brings forth and multiplies men, the gods and the divinatory art",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As the male half of the creator-couple he engenders the Sun (Copijcha), the other gods and mankind, and the art of divination.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Cozana y Huichana engendraron al Sol, a los dioses, a los hombres y al arte adivinatorio."
+     }
+    ]
+   },
+   {
+    "id": "patron_of_hunters_and_fishermen",
+    "name": "grants game to hunters and a catch to fishermen who petition him",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Hunters and fishermen offered to Cozaana for success in the chase and the catch.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): Cozaana patron of hunters and fishermen."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "cozaana_urn",
+    "name": "Effigy urn of the creator-god (earth/ancestor deity)",
+    "kind": "icon",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "depicted",
+    "notes": "Caso & Bernal identify possible images of Cozaana as an earth/creator deity among the Monte Albán effigy urns and at Mitla and Zaachila — the grey-ware funerary vessels that accompanied the honoured dead and the ancestor cult he presided over.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Caso, Alfonso, and Ignacio Bernal. Urnas de Oaxaca. INAH, 1952 (effigy urns of the Monte Albán pantheon; images of Cozaana as an earth/creator deity)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "zapotec_pitao_huichaana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Cozana estaba casado con Huichana; Caso & Bernal, Urnas de Oaxaca (1952), treat Cozaana and Huichaana as consorts, a male-female creator pair."
+     }
+    ],
+    "notes": "The primal creator-couple of the Zapotec world; reciprocal of zapotec_pitao_huichaana.spouse."
+   },
+   {
+    "kind": "father-of",
+    "personId": "zapotec_pitao_copijcha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Copijcha, hijo de Cozana y Huichana, la pareja creadora."
+     }
+    ],
+    "notes": "Father of the sun-and-war god Copijcha, begotten with Huichaana."
+   },
+   {
+    "kind": "emanation-of",
+    "personId": "zapotec_coqui_xee",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs (1977); Münch Galindo, La Teogonía Zapoteca (1983): Coqui Xee, the uncreated source, precedes and gives rise to Cozaana and Huichaana and all the other gods."
+     }
+    ],
+    "notes": "Proceeds from the infinite uncreated Coqui Xee (Pije-Tao), of whom the other gods are aspects/refractions."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Pitao Cozaana (Coqui Cozaana) is the Zapotec creator and multiplier of animals, men and ancestors, patron of hunters and fishermen and the divine progenitor; Córdova glosses cozaana as 'produzidora o engendradora de los animales' (from zàana, 'to engender'), and he is paired with the goddess Huichaana as the male-female creator couple.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. México: Pedro Charte y Antonio Ricardo, 1578 (cozaana, 'produzidora o engendradora de los animales')."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion: An Ethnohistorical and Archaeological Perspective. University Press of Colorado, 2015 (Pitao Cozaana, god of animals and the hunt, creator of men and animals and god of ancestors)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants. University of Oklahoma Press, 1977 (Cozaana the progenitor and god of ancestors)."
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Cozaana and Huichaana form the initial divine couple of the world, creators of the Sun, the other gods and men and of the divinatory art, proceeding from the uncreated Coqui Xee.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, Guido. La Teogonía Zapoteca y sus vestigios en Tehuantepec. UNAM, 1983."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Cozàana⟩; also Coqui Cozaana. The male half of the Zapotec creator-couple, god of the engendering of animals and men, of the hunt and of the ancestors, also remembered in the Isthmus as a fire-god and 'Señor de la Noche'. Distinct from the rain-god Cocijo and from the death-god Bezelao."
+ },
+ {
+  "id": "zapotec_pitao_huichaana",
+  "name": {
+   "primary": "Pitao Huichaana",
+   "alt": [
+    "Nohuichana",
+    "Nohuichaana",
+    "Huichaana",
+    "Huichana",
+    "Cochàna",
+    "Huichàana",
+    "Pitào Huichàana"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Huichàana",
+    "etymology": "Zapotec ⟨Pitào Huichàana⟩ (also Nohuichana, with the female prefix no-/xo-). Córdova names her 'la diosa de los niños o de la generación', and the colonial sources call her 'la Engendradora' and 'Madre de todas las criaturas'. She is the watery, generative counterpart of the engendering Cozaana."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "As the female half of the primal couple, with Cozaana, she brings forth men and fish and presides over the waters and over generation; honoured ever after as the foremost goddess — patroness of childbirth, of midwives, of women and children and of the whole human life-cycle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Huichana, parte femenina de la obra creadora; diosa del agua, de los peces, de la generación, del parto y del ciclo de vida."
+     }
+    ],
+    "notes": "An undying generative goddess; no birth or death is narrated, only her standing function as engenderer and lady of the waters and of generation."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "water-and-rivers",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Huichàana",
+     "script": "Zapotec",
+     "rom": "Pitào Huichàana"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Huichana, diosa del agua, ríos, lagunas, lluvias y de los peces."
+     }
+    ]
+   },
+   {
+    "sphereId": "childbirth-and-generation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Huichaana 'la diosa de los niños o de la generación', a quien las parturientas ofrecían sacrificios."
+     }
+    ]
+   },
+   {
+    "sphereId": "fish-and-fishing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): Pitao Huichaana, creator of men and fish, associated with water."
+     }
+    ]
+   },
+   {
+    "sphereId": "women-and-children",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs (1977): Huichaana, patroness of women and children, goddess of procreation."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring_forth_men_and_fish",
+    "name": "creates and multiplies men and fish",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As the female half of the creator-couple she is named the maker of men and of fish — the generative power of the waters. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): Huichaana creator of men and fish."
+     }
+    ]
+   },
+   {
+    "id": "govern_conception_and_birth",
+    "name": "governs conception, childbirth and the human life-cycle, aiding women in labour",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Women in childbirth offered sacrifices to her; she rules conception, birth and weddings and is patroness of the midwives (comadronas).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): diosa de la generación, a quien las parturientas ofrecían sacrificios."
+     }
+    ]
+   },
+   {
+    "id": "command_the_waters",
+    "name": "commands the waters of the rivers, lagoons and rains and the fish within them",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As a great goddess linked to the moon she exercises dominion over fresh waters and fishing, the moon marking the vital rhythms of renewal.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Huichana, señora de las aguas, los ríos y los peces, ligada a la luna."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "huichaana_senora_agua_urn",
+    "name": "Effigy urn 'la Señora Agua' (Lady Water)",
+    "kind": "icon",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "depicted",
+    "notes": "A finely modelled, polychromed Zapotec urn from the elite funerary complex at Atzompa (Monte Albán IIIB-IV) represents the water-goddess as 'la Señora Agua'; Caso & Bernal and later scholars identify Huichaana/Nohuichana — equated with the goddess-mother '13 Serpent' — among the female effigy urns linked to water and the renewal of the human cycle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robles García, N. M., L. Pacheco Arias, and M. Olvera Sánchez. 'El Señor Ocho Temblor y la Señora Agua: dos urnas zapotecas de élite en Atzompa, Oaxaca.' Arqueología 49 (2015)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Caso, Alfonso, and Ignacio Bernal. Urnas de Oaxaca. INAH, 1952 (Nohuichana and the female water/mother deities on the effigy urns)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "zapotec_pitao_cozaana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Huichana estaba casada con Cozana y con él engendró al Sol y a los demás dioses."
+     }
+    ],
+    "notes": "The primal creator-couple of the Zapotec world; reciprocal of zapotec_pitao_cozaana.spouse."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "zapotec_pitao_copijcha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Copijcha, hijo de Cozana y Huichana."
+     }
+    ],
+    "notes": "Mother of the sun-and-war god Copijcha, begotten with Cozaana."
+   },
+   {
+    "kind": "emanation-of",
+    "personId": "zapotec_coqui_xee",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs (1977); Münch Galindo, La Teogonía Zapoteca (1983): Coqui Xee, the uncreated source, precedes Cozaana and Huichaana."
+     }
+    ],
+    "notes": "Proceeds, with Cozaana, from the infinite uncreated Coqui Xee (Pije-Tao)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Pitao Huichaana (Nohuichana) is the Zapotec goddess of water, rivers and fish, of fertility, generation, conception and childbirth, patroness of midwives, women and children and of the human life-cycle; Córdova names her 'la diosa de los niños o de la generación', she is called 'la Engendradora' and 'Madre de todas las criaturas', and she is paired with Cozaana as the female half of the creator couple.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. 1578 (Huichaana, diosa de la generación a quien las parturientas ofrecían sacrificios)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Huichaana, goddess of procreation and children, creator of men and fish, associated with water)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, Guido. La Teogonía Zapoteca y sus vestigios en Tehuantepec. UNAM, 1983 (Huichana, diosa del agua, los ríos, los peces, el parto y la generación; esposa de Cozana)."
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "As a great goddess Huichaana is linked to the moon and to dominion over the rivers, fishing and the whole vital cycle; in the colonial period her cult was assimilated to that of the Virgin Mary.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants. University of Oklahoma Press, 1977."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Huichàana⟩, also Nohuichana. The foremost Zapotec goddess and the female half of the creator-couple — lady of the waters, of generation and childbirth — paired with Cozaana and mother (with him) of the Sun-god Copijcha. Distinct from the death-goddess Xonaxi Quecuya."
+ },
+ {
+  "id": "zapotec_pitao_xoo",
+  "name": {
+   "primary": "Pitao Xoo",
+   "alt": [
+    "Pitào Xoo",
+    "Xoo",
+    "Lord Eight Earthquake",
+    "Señor Ocho Temblor"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Xoo",
+    "etymology": "Zapotec ⟨Pitào Xoo⟩, from xoo 'earthquake, tremor, the moving of the earth' (in the central valleys the same word also carries the sense of a roar or rumbling sound). Pitào marks the great spirit/force; Pitao Xoo is the deified, pèe-filled power of the quaking earth."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Recognised from of old as the living force of the moving earth — the deity of earthquakes whose stirring shakes the ground — invoked and propitiated by the Zapotec when the earth trembled.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): xoo 'temblor de tierra', and Pitao Xoo as its deity."
+     }
+    ],
+    "notes": "Conceived less as an anthropomorphic god than as a perpetual supernatural force (xoo) charged with pèe, the vital breath; no birth or death is narrated."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earthquakes",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Xoo",
+     "script": "Zapotec",
+     "rom": "Pitào Xoo"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): xoo, the tremor of the earth; Pitao Xoo, its deity."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-moving-earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sellen, Adam T. El cielo compartido: deidades y ancestros en las vasijas efigie zapotecas. UNAM, 2007 (xoo as a living force of the moving earth, filled with pèe)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shake_the_earth",
+    "name": "shakes the earth and looses the tremor that moves the ground",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The defining power: he is the quake itself, the force whose stirring makes the earth move. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): xoo, the moving of the earth, deified as Pitao Xoo."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "xoo_senor_ocho_temblor_urn",
+    "name": "Effigy urn 'El Señor Ocho Temblor' (Lord 8 Earthquake)",
+    "kind": "icon",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "depicted",
+    "notes": "A finely modelled, polychromed elite Zapotec urn from the funerary complex at Atzompa (Monte Albán IIIB-IV) depicts the earthquake personage 'El Señor Ocho Temblor', whose calendrical name '8 Earthquake (8 Movement)' carries the xoo day-sign; the figure pairs on the same find with the water-goddess 'la Señora Agua'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robles García, N. M., L. Pacheco Arias, and M. Olvera Sánchez. 'El Señor Ocho Temblor y la Señora Agua: dos urnas zapotecas de élite en Atzompa, Oaxaca.' Arqueología 49 (2015)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Pitao Xoo is the Zapotec god of earthquakes; Córdova records xoo as the word for the tremor of the earth and Pitao Xoo as its deity, and the earthquake force was conceived as a living, pèe-charged supernatural power rather than an ordinary anthropomorphic god.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. 1578 (xoo, 'temblor de tierra'; Pitao Xoo, god of earthquakes)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Xoo, god of earthquakes)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Sellen, Adam T. El cielo compartido: deidades y ancestros en las vasijas efigie zapotecas. UNAM, 2007 (xoo as living supernatural force of the moving earth)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Xoo⟩. The god/force of earthquakes, the deified tremor of the moving earth, rendered on the Atzompa elite urn as 'El Señor Ocho Temblor' (Lord 8 Earthquake). SOLITARY: no genealogy, consort or other named kin is recorded for Pitao Xoo — he is attested purely as the functional deity of the quaking earth (Córdova 1578; Sellen 2007)."
+ },
+ {
+  "id": "zapotec_pitao_peeze",
+  "name": {
+   "primary": "Pitao Peeze",
+   "alt": [
+    "Pitào Pèeze",
+    "Pitao Pèeche",
+    "Peeze",
+    "Pitao Pezee"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Pèeze",
+    "etymology": "Zapotec ⟨Pitào Pèeze⟩, glossed 'god of omens / of auguries'. The element refers to the sign or augury read by the diviner; Pitao Peeze is the deity to whom such omens were traced. He is to be kept distinct from the death-god Pitào Pezèelào (Bezelao), whose similar-sounding name names the lord of the underworld, not of omens."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Acknowledged as the god of omens, auguries and fate — the deity to whom the colaní (diviner), consulting his ritual books, traced the sign, omen or dream a person had met, and through whom fortune and misfortune were read.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion (2015): the colaní determined the deity responsible for an omen or dream, usually Pitao Peeze, the god of omens."
+     }
+    ],
+    "notes": "An undying deity of fate and augury; no birth or death is narrated, only his standing office over omens and fortune."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "omens-and-auguries",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Pèeze",
+     "script": "Zapotec",
+     "rom": "Pitào Pèeze"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Pitao Peeze glossed as the god of omens/auguries."
+     }
+    ]
+   },
+   {
+    "sphereId": "fate-and-fortune",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs (1977): Pitao Peeze, the deity governing omens, signs and fortune."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send_and_signify_omens",
+    "name": "sends the omens and auguries by which fate and fortune are read",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The diviner traced an encountered sign or dream to Pitao Peeze and read from it the person's fortune; his is the power that charges events with ominous meaning. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): omens and dreams interpreted by the colaní, who traced them to Pitao Peeze, the god of omens."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "peeze_pije_divination_book",
+    "name": "Pijè / piyè divinatory book and the colaní's reckoning",
+    "kind": "ritual-object",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "instrument",
+    "notes": "The colaní (diviner) read omens and fortune from the painted ritual books and the 260-day count (piyè), tracing the encountered sign to the responsible deity — chiefly Pitao Peeze. The reckoning of omens, not an effigy, is his characteristic apparatus.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs: Princes, Priests, and Peasants (1977): the colaní and the divinatory books/calendar through which omens were referred to Pitao Peeze; cf. Córdova, Vocabulario (1578)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Pitao Peeze is the Zapotec god of omens, auguries and fortune: the colaní, consulting the ritual books, interpreted the omens and dreams a person experienced and determined the deity responsible, usually Pitao Peeze, whose name is glossed 'god of omens'. He is distinct from the death-god Pitao Pezeelao/Bezelao, and from Pitao Paa, the separate god of merchants and wealth.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. 1578 (Pitao Peeze, god of omens/auguries)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Peeze the god of omens; Pitao Xicala and Pixee Pecala possibly his aspects; Pitao Paa the distinct god of merchants and wealth)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants. University of Oklahoma Press, 1977."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Pèeze⟩, 'god of omens'. The deity of auguries, fate and fortune to whom diviners referred the signs and dreams they read. Carefully distinguished from the death-god Pitao Bezelao/Pezeelao (already zapotec_pitao_bezelao) and from the wealth/merchant god Pitao Paa. Pitao Xicala (dreams) is reckoned an aspect of him. SOLITARY: no genealogy or consort is recorded for Pitao Peeze; the only relationship attested is the aspect-tie of Pitao Xicala (dreams) to him, captured on zapotec_pitao_xicala (Lind 2015; Whitecotton 1977)."
+ },
+ {
+  "id": "zapotec_pitao_xicala",
+  "name": {
+   "primary": "Pitao Xicala",
+   "alt": [
+    "Pitào Xicàla",
+    "Pitao Pecala",
+    "Pitào Pecàla",
+    "Xicala"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Xicàla",
+    "etymology": "Zapotec ⟨Pitào Xicàla⟩, also Pitào Pecàla — both xicàla and pecàla gloss 'dream'. Córdova defines Pitào xicàla as 'dios de los sueños' (god of dreams). The cognate name Pixèe Pecàla ('owl-dream', a difrasismo Smith-Stark reads as 'owl, dream') names the related demon of lust; Xicala proper is the dream-god."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Known as the god of dreams — the deity from whom dreams come and through whom they signify — whose visions the colaní read alongside the omens of Pitao Peeze, of whom Xicala was reckoned an aspect.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Pitào xicàla, 'dios de los sueños'."
+     }
+    ],
+    "notes": "An undying dream-god; no birth or death is narrated, only his office over dreams. Closely bound to Pitao Peeze (omens) and to the lust-demon Pixèe Pecàla through the shared pecàla 'dream' element."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "dreams",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Xicàla",
+     "script": "Zapotec",
+     "rom": "Pitào Xicàla"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Pitào xicàla, dios de los sueños."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send_and_signify_dreams",
+    "name": "sends dreams and gives them their meaning",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The defining power: he is the god from whom dreams issue and through whom they carry their omen; the diviner read his dream-visions much as he read the auguries of Peeze. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Pitào xicàla as god of dreams."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "xicala_dream_augury",
+    "name": "Dream-augury read by the colaní",
+    "kind": "practice",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "associated",
+    "notes": "Xicala is attested through the practice of dream-divination rather than a distinct effigy: the dreams ascribed to him were read for their omens by the colaní within the same divinatory system that referred signs to Pitao Peeze.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion (2015): Pitao Xicala the god of dreams, possibly an aspect of Pitao Peeze, within the colaní's divinatory practice."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "aspect-of",
+    "personId": "zapotec_pitao_peeze",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): Pitao Xicala (god of dreams) and Pixee Pecala (god of love and lechery) may have been aspects of Pitao Peeze, the god of omens."
+     }
+    ],
+    "notes": "Reckoned an aspect of the omen-god Pitao Peeze, dreams falling within the same sphere of augury and fate."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Pitao Xicala (also Pitao Pecala) is the Zapotec god of dreams — Córdova glosses Pitào xicàla 'dios de los sueños' (both xicala and pecala mean 'dream'); he was reckoned a possible aspect of the omen-god Pitao Peeze and is bound to the lust-demon Pixèe Pecàla through Córdova's 'owl-dream' difrasismo.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. 1578 (Pitào xicàla, god of dreams)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Xicala god of dreams, possibly an aspect of Pitao Peeze)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Smith-Stark, Thomas C., on Córdova's Zapotec theonyms: pixèe pecàla as 'owl, dream' difrasismo linking the dream-god and the lust-demon."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Xicàla⟩, also Pitào Pecàla, 'god of dreams'. Reckoned an aspect of the omen-god Pitao Peeze and the near-twin of the lust-demon Pixèe Pecàla. Distinct from Pitao Ziy, the separate god of misery and misfortune."
+ }
+]
+```
+
+SOLITARY: zapotec_pitao_xoo — no genealogy, consort or other named kin is recorded in the surviving tradition; he is attested purely as the functional deity/force of earthquakes, the deified tremor of the moving earth (Córdova, Vocabulario 1578; Sellen, El cielo compartido 2007).
+SOLITARY: zapotec_pitao_peeze — no genealogy or consort is recorded; the only relationship attested is that Pitao Xicala (dreams), and Pixèe Pecàla (lust), were reckoned aspects of him — the Xicala→Peeze aspect-tie is wired on zapotec_pitao_xicala (Lind 2015; Whitecotton 1977).
+
+RECIPROCAL-NEEDED (symmetric ties to an existing corpus figure): (none). The within-batch symmetric tie Cozaana⟷Huichaana (spouse) is reciprocated on both figures inside this batch. The remaining ties toward EXISTING corpus figures are all directed/non-symmetric and need no reciprocal edge: zapotec_pitao_cozaana father-of zapotec_pitao_copijcha; zapotec_pitao_huichaana mother-of zapotec_pitao_copijcha; zapotec_pitao_cozaana emanation-of zapotec_coqui_xee; zapotec_pitao_huichaana emanation-of zapotec_coqui_xee. (Optional, not required by the validator: a child-of edge from zapotec_pitao_copijcha back to Cozaana and Huichaana could be added to that existing figure to complete the genealogy.)

@@ -1,0 +1,2434 @@
+MARQUESAN PANTHEON — CORE COSMOGONY AND CULTURE-HEROES
+=======================================================
+
+Tradition: Marquesan (Te Henua ʻEnana / Te Fenua ʻEnata — "The Land of Men," the
+indigenous name of the Marquesas Islands archipelago, eastern Polynesia).
+
+This transcript authors the firmly-attested CORE of the Marquesan pantheon, which
+was entirely absent from the registry. The authoritative ethnographic source is
+E. S. Craighill Handy, "The Native Culture in the Marquesas" (Bernice P. Bishop
+Museum Bulletin 9, Honolulu, 1923) — the major reconstruction of pre-contact
+Marquesan religion and cosmology — supplemented by Handy, "Marquesan Legends"
+(Bishop Museum Bulletin 69, 1930), the companion volume of recorded narratives.
+Cross-corroboration from the comparative-mythology literature (Roland B. Dixon,
+"Oceanic Mythology," Mythology of All Races vol. 9, 1916; E. Tregear,
+"Maori-Polynesian Comparative Dictionary," 1891) is cited where it confirms the
+Handy material.
+
+COSMOGONIC SUMMARY (Handy 1923, ch. on religion; Dixon 1916, ch. I):
+In the primeval void (Po) reigned TANAOA (darkness, = pan-Polynesian Tangaroa)
+and MUTU-HEI (silence). In the course of time ATEA ("Light"/"Space") evolved or
+separated himself out of Tanaoa and drove him away, confining the powers of night
+within bounds; then ONO ("Sound") evolved himself out of Atea and destroyed
+Mutu-hei. From these two struggles arose ATANUA ("Dawn"), whom Atea took to wife,
+begetting a host of deities and the lineage of mankind. In the pu'e (sacred
+creation chant — taboo to recite before women), 'Atea impregnates ONE-U'I, the
+"sand-woman," and the first man TIKI is born. Marquesan genealogies of the 19th
+century traced the people of Hiva up some ninety generations to the progenitors
+Atea and Atanua, with Tiki named as the first man. In a Hiva Oa tradition Atea and
+TANE are brothers, sons of TOHO / TOHETIKA. The great culture-hero MAHUI (the
+Marquesan Māui) fished up islands, won fire from his grandfather MAHUIKE in the
+underworld, and snared the sun. Other firmly-named figures in Handy's narrative
+register (Native Culture p. 247) include TU, ONO, TOHETIKA, MAHUI, MAHUIKE, POHU,
+and AKAUI.
+
+Genealogy is entirely WITHIN this batch. No other-tradition ids are referenced.
+
+```json
+[
+ {
+  "id": "marquesan_tanaoa",
+  "name": {
+   "primary": "Tanaoa",
+   "alt": [
+    "Tana'oa",
+    "Taka'oa",
+    "Te Fatu Moana (\"Lord of the Sea\")"
+   ],
+   "transliterations": {
+    "marquesan": "Tanaoa",
+    "etymology": "Marquesan reflex of Proto-Polynesian *Tangaroa (cf. Maori Tangaroa, Tahitian Ta'aroa, Hawaiian Kanaloa); the medial -ng- of Tangaroa is lost in Marquesan, yielding Tanaoa. In the cosmogony the name personifies the primeval Po (darkness/void); the element conveys the boundless dark sea-night out of which light separated."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "reign-in-the-primeval-Po",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), religion/cosmogony section; Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I — 'Tanaoa and Mutuhei (\"Darkness\" and \"Silence\") ruled supreme in the primeval Po.'"
+     }
+    ],
+    "notes": "Lord of darkness and the boundless void (Po), coeval with Mutu-hei (silence). Existent from the beginning."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "separation-of-light-and-confinement-of-darkness",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea 'evolved or separated himself from Tanaoa, and drove him away,' confining the powers of night within set bounds."
+     }
+    ],
+    "notes": "When Atea (Light) separated out of him and drove him off, Tanaoa was confined within set boundaries; the powers of night were hemmed in by the world of light."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "demotion-to-god-of-sea-and-wind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930). Cf. the comparative note that the Marquesan Tangaroa 'could not stay in the role of the paramount deity… turned into the god of the fishermen only.'"
+     }
+    ],
+    "notes": "Having lost the paramountcy to Atea, Tanaoa survives in cult as the god of the sea, the winds, and the patron of fishermen (the Marquesan reflex of Tangaroa/Kanaloa), invoked for the catch."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "primordial-darkness-and-the-void",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I."
+     }
+    ],
+    "notes": "Personification of the primeval Po — the boundless, lightless, soundless dark that preceded creation."
+   },
+   {
+    "sphereId": "sea-wind-and-fishing",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tana'oa as god of the sea and winds and patron of fishermen; Handy, Marquesan Legends (1930)."
+     }
+    ],
+    "notes": "After the cosmogonic defeat, retained as god of the sea and winds; the patron deity of fishermen, who invoked him for success at sea."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-of-the-primeval-void",
+    "name": "Dominion over the primeval darkness",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Sovereignty over the Po before creation — the dark that fills all space until Light separates from it."
+   },
+   {
+    "id": "command-of-sea-and-wind",
+    "name": "Command of the sea and the winds",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tana'oa governs the sea and winds; Handy, Marquesan Legends (1930)."
+     }
+    ],
+    "notes": "Governs the ocean and the winds; grants or withholds the fisherman's catch."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "fishermens-offerings-to-tanaoa",
+    "name": "Fishermen's offerings and invocations to Tana'oa",
+    "kind": "ritual-offering",
+    "role": "Offerings and chanted invocations made by Marquesan fishermen to Tana'oa (Te Fatu Moana, 'Lord of the Sea') to secure a successful catch and safe passage.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tana'oa as patron of fishermen."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea separates from and drives away Tanaoa."
+     }
+    ],
+    "notes": "Atea separated out of him, made war on him, drove him off and confined him."
+   },
+   {
+    "kind": "companion",
+    "personId": "marquesan_mutuhei",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — 'Tanaoa and Mutuhei ruled supreme in the primeval Po.'"
+     }
+    ],
+    "notes": "Coeval power of the Po; darkness paired with silence."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I; E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Tangaroa."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Marquesan reflex of the pan-Polynesian Tangaroa (Maori Tangaroa, Tahitian Ta'aroa, Hawaiian Kanaloa). In Marquesan cosmogony he is the lord of the primeval darkness and void (Po), coeval with Mutu-hei (silence); the two reigned supreme until Atea (Light) separated himself out of Tanaoa, drove him away, and confined the night-powers within set bounds. Demoted from the paramountcy, Tanaoa survives in cult as the god of the sea and winds and the patron of fishermen (Te Fatu Moana, 'Lord of the Sea')."
+ },
+ {
+  "id": "marquesan_mutuhei",
+  "name": {
+   "primary": "Mutu-hei",
+   "alt": [
+    "Mutuhei"
+   ],
+   "transliterations": {
+    "marquesan": "Mutu-hei",
+    "etymology": "Marquesan: mutu 'cut off, ended, silenced' + hei; the name personifies primeval Silence (the soundless stillness of the Po), paired with Tanaoa (Darkness). Cf. Proto-Polynesian *mutu 'severed, cut short, to cease.'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "unknown",
+  "vitalStatus": "unknown",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "reign-of-silence-in-the-Po",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'Tanaoa and Mutuhei (\"Darkness\" and \"Silence\") ruled supreme in the primeval Po.'"
+     }
+    ],
+    "notes": "Personified Silence, coeval with Tanaoa (Darkness); the two ruled the primeval void."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "destruction-by-Ono",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — 'after this, Ono (\"Sound\") evolved himself from Atea and destroyed Mutuhei.'"
+     }
+    ],
+    "notes": "Destroyed/dispelled by Ono (Sound), who evolved out of Atea after the conquest of Tanaoa."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "primordial-silence",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Personification of the soundless stillness of the Po, before Sound (Ono) came into being."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "reign-of-primeval-silence",
+    "name": "Reign of primeval silence",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "The pervading soundlessness of the void; broken and ended when Ono (Sound) arose and destroyed it."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "marquesan_tanaoa",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — 'Tanaoa and Mutuhei ruled supreme in the primeval Po.'"
+     }
+    ],
+    "notes": "Coeval power of the Po; silence paired with darkness."
+   },
+   {
+    "kind": "enemy",
+    "personId": "marquesan_ono",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — Ono destroyed Mutuhei."
+     }
+    ],
+    "notes": "Destroyed by Ono (Sound)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Personified Silence of the primeval void. With Tanaoa (Darkness), Mutu-hei ruled supreme in the Po. After Atea (Light) separated from Tanaoa and drove him off, Ono (Sound) evolved out of Atea and destroyed Mutu-hei — the second of the two cosmogonic conquests from which the dawn-goddess Atanua arose."
+ },
+ {
+  "id": "marquesan_atea",
+  "name": {
+   "primary": "Atea",
+   "alt": [
+    "'Atea",
+    "Ātea",
+    "Wakea (Hawaiian cognate, cross-referenced in the pu'e chant scholarship)"
+   ],
+   "transliterations": {
+    "marquesan": "'Atea",
+    "etymology": "Marquesan ātea 'space, open expanse, light, the bright open' (cf. Maori atea 'clear, free of obstruction; the open space before a meeting-house'; Tahitian Atea; Hawaiian Wakea < Wā-kea 'wide/light space'). Personifies Light and the open expanse of space/sky."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "marquesan_tohetika"
+  ],
+  "parentRoles": {
+   "marquesan_tohetika": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "self-evolution-of-light-out-of-Tanaoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'In the course of time Atea (\"Light\") evolved or separated himself from Tanaoa, and drove him away.'"
+     }
+    ],
+    "notes": "Light separated/evolved itself out of the darkness of Tanaoa, drove him off, and confined the night-powers — the founding act that made the world possible."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "bringing-forth-of-Ono",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — 'after this, Ono (\"Sound\") evolved himself from Atea and destroyed Mutuhei'; Marquesan tradition that Atea brought forth Ono and joined forces with him."
+     }
+    ],
+    "notes": "Brought forth / gave rise to Ono (Sound), who then destroyed Mutu-hei (Silence); the two struggles together produced the dawn."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 2,
+    "startEvent": "marriage-to-Atanua-the-dawn",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — 'From these two struggles arose Atanua (\"Dawn\"), whom Atea took to wife, and so begat a host of deities, besides creating the heavens and the earth.'"
+     }
+    ],
+    "notes": "Took Atanua (the Dawn, who arose from the cosmogonic struggles) to wife; with her begat the host of lesser deities and the lineage of mankind, and created the heavens and the earth."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 3,
+    "startEvent": "impregnation-of-One-u'i-the-sand-woman",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — the pu'e (sacred creation chant), in which 'Atea impregnates One-u'i (the 'sand-woman') to bring forth the first man Tiki; the pu'e is taboo to teach to women and women are excluded from its recitation."
+     }
+    ],
+    "notes": "In the pu'e chant, 'Atea impregnates One-u'i, the 'sand-woman,' fathering the first man Tiki; the chant names plants and materials born of One-u'i after impregnation by 'Atea to furnish the house of the first parents."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "light-and-the-open-expanse-of-space",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'Atea is the giver of light.'"
+     }
+    ],
+    "notes": "Personification of Light and of ātea, the open expanse of space/sky; the giver of light to the world."
+   },
+   {
+    "sphereId": "creation-and-progenitorship-of-gods-and-mankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Marquesan genealogies trace the people of Hiva ~90 generations to the progenitors Atea and Atanua, with Tiki as the first man; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Father of the host of deities and the apical ancestor of the Marquesan people; creator (with Atanua) of the heavens and earth."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "separation-of-light-from-darkness",
+    "name": "Separation of light from darkness",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "The power by which Light evolved itself out of the void, drove off Tanaoa (Darkness), and confined the powers of night — the cosmogonic act that established the world of light."
+   },
+   {
+    "id": "generative-progenitorship",
+    "name": "Generative progenitorship of gods and mankind",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atea with Atanua begets the deities and the human lineage; the pu'e chant of his impregnation of One-u'i to father Tiki."
+     }
+    ],
+    "notes": "By union with Atanua (and, in the pu'e, with One-u'i) Atea engenders the lesser gods and the line of mankind; the generative potency passes into the genealogies of the people."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pu'e-creation-chant",
+    "name": "Pu'e (sacred creation chant of 'Atea and One-u'i)",
+    "kind": "oral-liturgy",
+    "role": "The pu'e is the Marquesan sacred creation chant recounting 'Atea's impregnation of One-u'i (the sand-woman) and the birth of the first man Tiki; each tribe had its own rendition; it was taboo (tapu) to teach to women, who were excluded from its recitation.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — on the pu'e chants and their tapu restriction."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "marquesan_tanaoa",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Separated out of Tanaoa, made war on him and drove him away."
+   },
+   {
+    "kind": "ally",
+    "personId": "marquesan_ono",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea brought forth Ono and the two joined forces against the powers of the Po."
+     }
+    ],
+    "notes": "Brought forth Ono (Sound) and joined forces with him to break up the darkness of the Po."
+   },
+   {
+    "kind": "spouse",
+    "personId": "marquesan_atanua",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea took Atanua, the Dawn, to wife."
+     }
+    ],
+    "notes": "Husband of Atanua (the Dawn); with her begat the deities and mankind and made the heavens and earth."
+   },
+   {
+    "kind": "spouse",
+    "personId": "marquesan_one_ui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Atea impregnates One-u'i in the pu'e chant; they are the first parents."
+     }
+    ],
+    "notes": "Consort of One-u'i (the sand-woman) in the pu'e creation chant; with her the first parents, fathering the first man Tiki."
+   },
+   {
+    "kind": "father-of",
+    "personId": "marquesan_tiki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — the pu'e chant; Marquesan genealogies naming Tiki as the first man descended from Atea."
+     }
+    ],
+    "notes": "Father of Tiki, the first man — by Atanua in the genealogical tradition, and by One-u'i (the sand-woman) in the pu'e chant."
+   },
+   {
+    "kind": "sibling",
+    "personId": "marquesan_tane",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — in a Hiva Oa tradition 'Atea and Tāne are brothers, the sons of Toho'; Atea and Tane respectively the younger and elder (variant) brother."
+     }
+    ],
+    "notes": "Brother of Tane in the Hiva Oa tradition; both are sons of Toho (Tohetika)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_vatea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Atea), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_atea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Atea), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I; E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Atea."
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Hiva Oa tradition making Atea and Tane the sons of Toho (Tohetika). The Atea = self-evolved-from-Tanaoa cosmogony (Dixon 1916) is the alternative, parentless account, recorded here as the genealogical-anchor variant."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Atea ('Atea, 'Light'/'Space') is the giver of light and the chief creator-progenitor of the Marquesan pantheon. In the cosmogony he evolves or separates himself out of the darkness of Tanaoa, drives Tanaoa off and confines the night-powers; he brings forth Ono (Sound), who destroys Mutu-hei (Silence); from these two struggles arises Atanua (Dawn), whom Atea takes to wife, begetting the host of lesser deities and the human lineage and creating the heavens and earth. In the pu'e sacred chant he impregnates One-u'i, the 'sand-woman,' fathering the first man Tiki. Marquesan genealogies traced the people of Hiva some ninety generations back to the progenitors Atea and Atanua. In a Hiva Oa tradition Atea and Tane are brothers, sons of Toho (Tohetika). Cognate with Tahitian Atea, Tuamotuan Atea/Vatea, and Hawaiian Wakea."
+ },
+ {
+  "id": "marquesan_ono",
+  "name": {
+   "primary": "Ono",
+   "alt": [
+    "'Ono",
+    "'Ono-tapu",
+    "Rongo (pan-Polynesian cognate)",
+    "Lono (Hawaiian cognate)"
+   ],
+   "transliterations": {
+    "marquesan": "'Ono",
+    "etymology": "Marquesan reflex of Proto-Polynesian *Rongo (cf. Maori Rongo, Tahitian Ro'o, Hawaiian Lono); the -ng- of Rongo lost in Marquesan, giving 'Ono. The common Polynesian word rongo means 'sound, to hear, report, fame'; in the Marquesan cosmogony 'Ono personifies Sound, arising from Atea (Light)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "evolution-of-sound-out-of-Atea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon, Oceanic Mythology (1916), ch. I — 'after this, Ono (\"Sound\") evolved himself from Atea and destroyed Mutuhei'; Marquesan tradition that Atea 'brought forth Ono' and the two joined forces."
+     }
+    ],
+    "notes": "Sound evolved itself out of Atea (Light) after the conquest of Tanaoa; joined forces with Atea against the powers of the Po."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "destruction-of-Mutu-hei",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — Ono destroyed Mutuhei (Silence)."
+     }
+    ],
+    "notes": "Destroyed Mutu-hei (Silence) — the second of the two cosmogonic conquests from which the dawn (Atanua) arose."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "defeat-of-Tohetika",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — '‘Ono (‘Ono-tapu / Lono)… was a legendary character who defeats the god Tohetika.'"
+     }
+    ],
+    "notes": "In legendary tradition 'Ono (here 'Ono-tapu) defeats the god Tohetika; like Tane, 'Ono was not a major cult-god in Hiva but a prominent figure of the narratives."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sound",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon, Oceanic Mythology (1916), ch. I — Ono = 'Sound.'"
+     }
+    ],
+    "notes": "Personification of Sound, the power that ends primeval Silence; the Marquesan reflex of Rongo/Lono."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bringing-of-sound",
+    "name": "Bringing of sound into the world",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "By arising as Sound out of Light (Atea), Ono ends the primeval Silence — destroying Mutu-hei."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "marquesan_mutuhei",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — Ono destroyed Mutuhei."
+     }
+    ],
+    "notes": "Destroyed Mutu-hei (Silence)."
+   },
+   {
+    "kind": "ally",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea brought forth Ono and the two joined forces against the powers of the Po."
+     }
+    ],
+    "notes": "Arose from Atea and joined forces with him to break up the darkness of the Po."
+   },
+   {
+    "kind": "enemy",
+    "personId": "marquesan_tohetika",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Ono defeats the god Tohetika."
+     }
+    ],
+    "notes": "Defeats the god Tohetika in legend."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_lono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — names 'Ono among the great narrative figures (p. 247) and as the conqueror of Tohetika; Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "'Ono (Marquesan reflex of pan-Polynesian Rongo/Lono) personifies Sound in the cosmogony: arising from Atea (Light) after the conquest of Tanaoa, he destroys Mutu-hei (Silence); from these two struggles the dawn-goddess Atanua arose. In legendary tradition 'Ono (as 'Ono-tapu) defeats the god Tohetika. Handy notes that, like Tane, 'Ono was not a major cult-god of Hiva but a prominent figure of the oral narratives (Native Culture p. 247)."
+ },
+ {
+  "id": "marquesan_atanua",
+  "name": {
+   "primary": "Atanua",
+   "alt": [
+    "Atanea",
+    "Ataea"
+   ],
+   "transliterations": {
+    "marquesan": "Atanua",
+    "etymology": "Marquesan: contains the element ata 'dawn, daybreak, first light; shadow/reflection' (cf. Maori ata 'morning, dawn'). Atanua personifies the Dawn that arose from the cosmogonic struggles; consort of 'Atea (Light)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "arising-of-the-dawn-from-the-cosmogonic-struggles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'From these two struggles arose Atanua (\"Dawn\"), whom Atea took to wife.'"
+     }
+    ],
+    "notes": "The Dawn came into being out of the two cosmogonic conquests (of Tanaoa by Atea, and of Mutu-hei by Ono)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Atea-and-begetting-of-gods-and-mankind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea took Atanua to wife 'and so begat a host of deities, besides creating the heavens and the earth.'"
+     }
+    ],
+    "notes": "Taken to wife by Atea; with him bore the host of lesser deities and the line of mankind, and the heavens and earth were created."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "miscarriage-and-the-origin-of-the-seas",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Marquesan tradition recorded in the comparative literature (Dixon, Oceanic Mythology, 1916, and the Atanua cosmogonic tradition) — Atanua suffered a miscarriage and the seas were formed from her amniotic fluid."
+     }
+    ],
+    "notes": "In one tradition Atanua, having miscarried, filled the oceans with her amniotic fluid — an aetiology of the sea."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "dawn-and-daybreak",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'Atanua, the dawn.'"
+     }
+    ],
+    "notes": "Personification of the Dawn / first light of day."
+   },
+   {
+    "sphereId": "motherhood-of-gods-and-the-human-lineage",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — progenitrix, with Atea, of the Marquesan people across ~90 genealogical generations."
+     }
+    ],
+    "notes": "With Atea, the mother of the host of lesser gods and the apical ancestress of the Marquesan people."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "embodiment-of-the-dawn",
+    "name": "Embodiment of the dawn",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Is the Dawn itself, arisen from the conquest of darkness and silence."
+   },
+   {
+    "id": "maternal-generativity",
+    "name": "Maternal generativity (mother of the races)",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atanua as progenitrix of gods and mankind with Atea."
+     }
+    ],
+    "notes": "By union with Atea bears the lesser gods and the human lineage; in the miscarriage tradition her bodily fluid becomes the sea."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea took Atanua to wife."
+     }
+    ],
+    "notes": "Wife of Atea (Light)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "marquesan_tiki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Marquesan genealogies derive the first man Tiki from the progenitors Atea and Atanua."
+     }
+    ],
+    "notes": "In the genealogical tradition, ancestress (with Atea) of the first man Tiki."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Atanua ('Dawn') is the consort of Atea and the mother of the races of the Marquesan pantheon. She arose out of the two cosmogonic struggles — Atea's defeat of Tanaoa (Darkness) and Ono's destruction of Mutu-hei (Silence) — and was taken by Atea to wife, bearing the host of lesser deities and the human lineage; Marquesan genealogies traced the people of Hiva back to the progenitors Atea and Atanua. In one tradition her miscarriage gave the sea its origin, the oceans filled with her amniotic fluid."
+ },
+ {
+  "id": "marquesan_one_ui",
+  "name": {
+   "primary": "One-u'i",
+   "alt": [
+    "One-uʻi",
+    "Hina-tu-na-one (sand-woman variant)",
+    "the sand-woman"
+   ],
+   "transliterations": {
+    "marquesan": "One-u'i",
+    "etymology": "Marquesan: one 'sand, earth' + u'i; literally 'the sand-(woman)' or 'sand-formed.' The element one ('sand/earth', cf. Maori one, Hawaiian one) marks her as the woman of sand/earth impregnated by 'Atea in the pu'e creation chant. Cf. the pan-Polynesian sand-woman/earth-formed-woman motif (Maori Hine-ahu-one)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "impregnation-by-'Atea-in-the-pu'e-chant",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — the pu'e chant 'recounting the impregnation of One-u'i (the sand woman) by 'Atea'; the chant names plants as 'births by One-u'i after impregnation by 'Atea' to provide materials for the house of the first parents."
+     }
+    ],
+    "notes": "The 'sand-woman,' impregnated by 'Atea in the pu'e (sacred creation chant); from her, after impregnation, are 'born' the plants and materials for the house of the first parents."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "bearing-of-the-first-man-Tiki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — One-u'i (the sand woman) and 'Atea as the first parents; Tiki the first man."
+     }
+    ],
+    "notes": "Mother, by 'Atea, of the first man Tiki, in the pu'e tradition."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sand-formed-first-mother",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — One-u'i the sand-woman of the pu'e chant."
+     }
+    ],
+    "notes": "The sand/earth-formed primal woman, consort of 'Atea, from whom plants, materials, and the first man issue."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sand-born-generativity",
+    "name": "Sand-born generativity",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — in the pu'e, plants and materials are 'births by One-u'i after impregnation by 'Atea.'"
+     }
+    ],
+    "notes": "After impregnation by 'Atea she brings forth, in the chant, the plants and materials needed to build the house of the first parents, and the first man Tiki."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "house-of-the-first-parents",
+    "name": "House of the first parents ('Atea and One-u'i)",
+    "kind": "mythic-structure",
+    "role": "In the pu'e chant, the dwelling of the first parents, for whose construction One-u'i brings forth the various kinds of material (the 'mothers of various kinds of material' invoked in the chant) after her impregnation by 'Atea.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — on the pu'e chant and the house of the first parents 'Atea and One-u'i."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "marquesan_atea",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Atea impregnates One-u'i in the pu'e chant; they are the first parents."
+     }
+    ],
+    "notes": "Consort of 'Atea in the pu'e creation chant (the sand-woman tradition, parallel to the Atanua tradition)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "marquesan_tiki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — One-u'i and 'Atea as parents of the first man Tiki."
+     }
+    ],
+    "notes": "Mother of the first man Tiki."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — the pu'e sacred creation chant of 'Atea and One-u'i."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "One-u'i ('the sand-woman') is the consort of 'Atea in the pu'e (sacred creation chant) tradition of the Marquesas — the alternative to the Atanua tradition. Handy records that the pu'e recounts the impregnation of One-u'i by 'Atea, naming plants as 'births by One-u'i' after impregnation to provide materials for the house of the first parents; the 'mothers of various kinds of material' are invoked to furnish the construction. She is the mother of the first man, Tiki. The pu'e was tapu to teach to women, who were excluded from its recitation. Her name (one 'sand/earth') marks the pan-Polynesian sand-formed-woman motif (cf. Maori Hine-ahu-one)."
+ },
+ {
+  "id": "marquesan_tiki",
+  "name": {
+   "primary": "Tiki",
+   "alt": [
+    "Ti'i",
+    "Tii",
+    "Tiki Tu Kae",
+    "Tiki the Trickster"
+   ],
+   "transliterations": {
+    "marquesan": "Tiki",
+    "etymology": "Marquesan Tiki 'the first man / creator of the first man; an image, a carved human figure' (cf. Tahitian Ti'i, Hawaiian Ki'i, Maori Tiki). The same word denotes the carved anthropomorphic images (tiki/ti'i) representing deified ancestors; from Tiki, the first man and ancestor."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "marquesan_atea",
+   "marquesan_one_ui"
+  ],
+  "parentRoles": {
+   "marquesan_atea": "paternal",
+   "marquesan_one_ui": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-the-first-man",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — 'the first man mentioned in these genealogies is named Tiki'; born of 'Atea and One-u'i (the sand woman) in the pu'e tradition."
+     }
+    ],
+    "notes": "The first man, born of 'Atea and One-u'i; the first named figure in the ~90-generation genealogies of Hiva."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "fathering-of-the-Marquesan-people",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Tiki and his wife Hina-tu-na-one gave rise to the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a.'"
+     }
+    ],
+    "notes": "With his wife Hina (Hina-tu-na-one) fathered the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a (tribe/'face-people')."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "teaching-of-the-arts-of-culture",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — Tiki as 'the ancestor of men' who 'taught the Marquesan people most facets of their traditional culture,' and the cycle of 'Tiki the Trickster.'"
+     }
+    ],
+    "notes": "As 'ancestor of men,' Tiki taught the Marquesans most facets of their traditional culture; he is also the protagonist of a trickster cycle ('Tiki the Trickster') in Handy's Marquesan Legends."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "first-man-and-ancestor-of-mankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tiki the first man and apical ancestor; Handy, Marquesan Legends (1930)."
+     }
+    ],
+    "notes": "The first man and the ancestor of all Marquesans; the source of the human line in the genealogies."
+   },
+   {
+    "sphereId": "culture-bringing-and-the-trickster-cycle",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — 'Tiki the Trickster' cycle; Tiki as teacher of culture."
+     }
+    ],
+    "notes": "Taught the arts and customs of culture; figures as a trickster in the recorded legend-cycle."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fathering-of-the-human-race",
+    "name": "Fathering of the human race",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Tiki and Hina-tu-na-one give rise to the first Marquesans; the ~90-generation genealogies descend from him."
+     }
+    ],
+    "notes": "From Tiki and his wife descend the founding ancestors of every Marquesan tribe; the apical generativity passes fully into the human lineage."
+   },
+   {
+    "id": "culture-bringing",
+    "name": "Bringing of the arts of culture to humankind",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 / 1930 — Tiki taught the Marquesans most facets of their traditional culture."
+     }
+    ],
+    "notes": "Taught the Marquesan people the practices of their traditional culture, in the role of culture-hero."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiki-carved-images",
+    "name": "Tiki / ti'i carved images",
+    "kind": "cult-image",
+    "role": "The carved anthropomorphic figures (tiki, of wood or stone) that bear his name and represent deified ancestors and gods in Marquesan religion and material culture; large stone tiki stand at me'ae (temple sites) such as those of Nuku Hiva and Hiva Oa.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Marquesan tiki images; the word tiki denotes both the first man and the carved ancestral figure."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "marquesan_hina",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Tiki and his wife Hina-tu-na-one gave rise to the first Marquesans.'"
+     }
+    ],
+    "notes": "Husband of Hina (Hina-tu-na-one); together the parents of the first Marquesans."
+   },
+   {
+    "kind": "father-of",
+    "personId": "marquesan_hina",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 / Marquesan genealogies — in the sand-woman variant of the Tiki tale, Tiki forms a woman of sand who becomes both his offspring and his wife (the pan-Polynesian Tiki/Tane sand-woman incest motif)."
+     }
+    ],
+    "notes": "In the sand-woman variant Tiki shapes Hina from sand and she is at once his creature/daughter and his wife — recorded here as the attested incestuous-origin motif of the Tiki cycle."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tiki-shapes-the-sand-woman",
+    "claim": "tiki-forms-his-wife-from-sand",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930); the pan-Polynesian Tiki/Tane motif in which the first man shapes a woman from sand or earth (cf. Dixon 1916; Tregear 1891, s.v. Tiki)."
+     }
+    ],
+    "weight": "secondary",
+    "notes": "In a widespread Polynesian (and Marquesan) variant, the first man (Tiki, or Tane in some traditions) forms a woman out of sand/earth and takes her to wife, the woman bearing the name Hina-(tu-na-)one; the union founds mankind. This is the 'sand-woman tale' of the Tiki cycle, parallel to 'Atea + One-u'i at the prior generation."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — Tiki the first man; Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the Tiki cycle; E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Tiki."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tiki is the first man and ancestor of mankind in the Marquesas — the first figure named in the ~90-generation genealogies of Hiva, born of 'Atea and One-u'i (the sand-woman) in the pu'e tradition. With his wife Hina (Hina-tu-na-one) he gave rise to the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a (tribe). In a widespread variant of the Tiki cycle (Marquesan Legends, 1930) he forms a woman out of sand and takes her to wife — the 'sand-woman tale,' the pan-Polynesian first-man/sand-woman motif (parallel to Maori Tane and Hine-ahu-one). As 'ancestor of men' he taught the Marquesans most facets of their traditional culture; he is also a trickster of the legend-cycle. The word tiki names both the first man and the carved anthropomorphic images of deified ancestors and gods central to Marquesan material culture."
+ },
+ {
+  "id": "marquesan_hina",
+  "name": {
+   "primary": "Hina",
+   "alt": [
+    "Hina-tu-na-one",
+    "Hina-one (\"Hina of the sand\")"
+   ],
+   "transliterations": {
+    "marquesan": "Hina-tu-na-one",
+    "etymology": "Marquesan Hina (pan-Polynesian Hina/Sina, a name of the primal/lunar woman) + tu-na-one, containing one 'sand/earth' — 'Hina (formed/standing) of the sand.' The wife of Tiki, the sand-formed first woman of the human line."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "union-with-Tiki-and-mothering-of-the-first-Marquesans",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — 'Tiki and his wife Hina-tu-na-one gave rise to the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a.'"
+     }
+    ],
+    "notes": "Wife of Tiki; with him the mother of the first Marquesans, ancestors of every tribe."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "first-woman-and-ancestress-of-the-marquesans",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Hina-tu-na-one, wife of Tiki, ancestress of the Marquesans."
+     }
+    ],
+    "notes": "The first woman of the human line; with Tiki the ancestress of the Marquesan people."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mothering-of-the-human-line",
+    "name": "Mothering of the human line",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Tiki and Hina-tu-na-one give rise to the first Marquesans."
+     }
+    ],
+    "notes": "With Tiki, brings forth the first Marquesans; the maternal source of the genealogies of every tribe."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "marquesan_tiki",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Tiki and his wife Hina-tu-na-one."
+     }
+    ],
+    "notes": "Wife of Tiki."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_sina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_nuahine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — Hina-tu-na-one, wife of Tiki; cf. the pan-Polynesian Hina/Sina and the sand-formed first woman (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hina (Hina-tu-na-one, 'Hina of the sand') is the wife of Tiki and, with him, the ancestress of the Marquesan people: Handy records that 'Tiki and his wife Hina-tu-na-one gave rise to the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a.' Her name carries the element one ('sand/earth'), marking her as the sand-formed first woman of the human line — the Marquesan reflex of the widespread Polynesian Hina/Sina and of the sand-woman motif (cf. Maori Hine-ahu-one). In the sand-woman variant of the Tiki cycle she is shaped from sand by Tiki himself."
+ },
+ {
+  "id": "marquesan_tane",
+  "name": {
+   "primary": "Tane",
+   "alt": [
+    "Tāne",
+    "Kane (Hawaiian cognate)"
+   ],
+   "transliterations": {
+    "marquesan": "Tane",
+    "etymology": "Marquesan reflex of Proto-Polynesian *Tāne (cf. Maori Tāne, Tahitian Tāne, Hawaiian Kāne); the common Polynesian word tāne means 'man, male, husband.' A great god of the wider Polynesian pantheon, brother of Atea in the Marquesan (Hiva Oa) tradition."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "marquesan_tohetika"
+  ],
+  "parentRoles": {
+   "marquesan_tohetika": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-brother-of-Atea-son-of-Toho",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — 'In one legend Atea and Tāne are brothers, the sons of Toho'; in Hiva Oa Tane and Atea were respectively the elder and younger brother (variant)."
+     }
+    ],
+    "notes": "Brother of Atea, both sons of Toho (Tohetika), in the Hiva Oa tradition."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-great-god-Tane",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tane as one of the great Polynesian gods, though not a major cult-god of Hiva."
+     }
+    ],
+    "notes": "One of the great Polynesian atua (the pan-Polynesian Tane/Kane); in the Marquesas a member of the high pantheon, though Handy notes he was not a major object of cult in Hiva."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "divine-brotherhood-of-Atea",
+    "name": "Divine brotherhood of Atea",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atea and Tane brothers, sons of Toho."
+     }
+    ],
+    "notes": "Stands beside Atea as co-son of Toho in the Hiva Oa cosmogonic genealogy."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Atea and Tāne are brothers, the sons of Toho.'"
+     }
+    ],
+    "notes": "Brother of Atea; both sons of Toho (Tohetika)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Tane."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tane (the pan-Polynesian Tane/Kane) appears in the Marquesan high pantheon as the brother of Atea: in a Hiva Oa tradition 'Atea and Tāne are brothers, the sons of Toho' (Tohetika). Handy notes that, like 'Ono, Tane was not a major cult-god of Hiva, but he is firmly attested as one of the great gods and as Atea's brother in the cosmogonic genealogy."
+ },
+ {
+  "id": "marquesan_tohetika",
+  "name": {
+   "primary": "Tohetika",
+   "alt": [
+    "Toho",
+    "Tokohiti"
+   ],
+   "transliterations": {
+    "marquesan": "Tohetika",
+    "etymology": "Marquesan Tohetika (also Toho); a primordial progenitor-god. Named as the father of Atea and Tane in the Hiva Oa tradition; the short form Toho appears in the phrase 'sons of Toho.'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "progenitorship-of-Atea-and-Tane",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — 'Atea and Tāne are brothers, the sons of Toho.'"
+     }
+    ],
+    "notes": "Primordial progenitor; father of Atea (Light) and Tane in the Hiva Oa cosmogonic genealogy."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "defeat-by-Ono",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Ono (Ono-tapu / Lono)… was a legendary character who defeats the god Tohetika.'"
+     }
+    ],
+    "notes": "Defeated by 'Ono in legendary tradition."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "primordial-progenitorship",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Toho/Tohetika as father of Atea and Tane."
+     }
+    ],
+    "notes": "A progenitor-god of the high cosmogony; the source from which Atea (Light) and Tane issue in the Hiva Oa tradition."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "progenitor-of-the-great-gods",
+    "name": "Progenitor of the great gods",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — father of Atea and Tane."
+     }
+    ],
+    "notes": "Engenders Atea and Tane; the generative source of the high gods in the Hiva Oa genealogy."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atea and Tane the sons of Toho."
+     }
+    ],
+    "notes": "Father of Atea."
+   },
+   {
+    "kind": "father-of",
+    "personId": "marquesan_tane",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atea and Tane the sons of Toho."
+     }
+    ],
+    "notes": "Father of Tane."
+   },
+   {
+    "kind": "enemy",
+    "personId": "marquesan_ono",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Ono defeats Tohetika."
+     }
+    ],
+    "notes": "Defeated by 'Ono."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — Toho/Tohetika named as father of Atea and Tane, and as defeated by 'Ono (p. 247 narrative register includes Tohetika)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tohetika (short form Toho) is a primordial progenitor-god of the Marquesan high pantheon. In the Hiva Oa tradition recorded by Handy, 'Atea and Tāne are brothers, the sons of Toho' — making Tohetika the father of Atea (Light) and Tane. In legendary tradition he is defeated by 'Ono. He is among the great narrative figures listed by Handy (Native Culture p. 247)."
+ },
+ {
+  "id": "marquesan_mahuike",
+  "name": {
+   "primary": "Mahuike",
+   "alt": [
+    "Mahuika",
+    "Mahu-ika"
+   ],
+   "transliterations": {
+    "marquesan": "Mahuike",
+    "etymology": "Marquesan reflex of pan-Polynesian Mahuika/Mahuike/Mafuike, the fire-deity of the underworld (cf. Maori Mahuika, Mangaian Mauike). Contains the fire/heat element; the keeper of fire in the lower world, from whom Maui/Mahui obtains fire."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "keeping-of-fire-in-the-underworld",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — Maui 'obtained fire from his grandfather Mahuike in the lower regions'; the Marquesan/Tuamotuan Mahu-ika as the fire-god who lives in the underworld and is the grandfather of Maui."
+     }
+    ],
+    "notes": "The keeper of fire who dwells in the lower world (Po); grandfather of Mahui (Maui), from whom Mahui wins fire for humankind."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fire-and-the-underworld",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Mahuike the fire-god of the lower regions, source of Maui's fire."
+     }
+    ],
+    "notes": "Personifies and keeps fire in the underworld; the ultimate source of fire for humankind through Mahui's exploit."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "keeping-and-giving-of-fire",
+    "name": "Keeping and giving of fire",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui obtains fire from Mahuike."
+     }
+    ],
+    "notes": "Holds the fire of the lower world; it is from Mahuike that the culture-hero Mahui obtains fire for mankind."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "underworld-fire-of-mahuike",
+    "name": "The fire of Mahuike",
+    "kind": "mythic-substance",
+    "role": "The fire kept by Mahuike in the lower regions, which the culture-hero Mahui (Maui) obtains from him and brings to humankind — the aetiological source of fire in Marquesan legend.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "grandparent",
+    "personId": "marquesan_mahui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui obtained fire from 'his grandfather Mahuike in the lower regions.'"
+     }
+    ],
+    "notes": "Grandfather of Mahui (Maui), from whom Mahui wins fire."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930); cf. the pan-Polynesian Mahuika fire-deity (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891, s.v. Mahuika)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mahuike (Mahuika / Mahu-ika) is the Marquesan reflex of the pan-Polynesian fire-deity of the underworld. Handy's Marquesan Legends records that Maui 'obtained fire from his grandfather Mahuike in the lower regions' — making Mahuike the keeper of fire in the Po and the grandfather of the culture-hero Mahui, from whom Mahui wins fire for humankind. Listed among Handy's great narrative figures (Native Culture p. 247)."
+ },
+ {
+  "id": "marquesan_mahui",
+  "name": {
+   "primary": "Mahui",
+   "alt": [
+    "Maui",
+    "Māui",
+    "Maui-tikitiki (Marquesan variant)"
+   ],
+   "transliterations": {
+    "marquesan": "Mahui",
+    "etymology": "Marquesan form of the pan-Polynesian culture-hero Māui (cf. Maori Māui, Hawaiian Māui, Tahitian Māui). The Marquesan reflex shows the form Mahui; the demigod trickster who fishes up land, snares the sun, and wins fire."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "fishing-up-of-the-islands",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — Maui 'fished up various islands.'"
+     }
+    ],
+    "notes": "Fished up various islands from the sea floor with his hook and line — the Marquesan reflex of the pan-Polynesian island-fishing exploit."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "winning-of-fire-from-Mahuike",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui 'obtained fire from his grandfather Mahuike in the lower regions.'"
+     }
+    ],
+    "notes": "Descended to the lower regions and obtained fire from his grandfather Mahuike, bringing fire to humankind."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "snaring-of-the-sun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui 'snared the sun with a noose of human hair to delay his passage across the sky in order that Maui's laundry might have time to dry.'"
+     }
+    ],
+    "notes": "Snared the sun with a noose of human hair to slow its passage across the sky — in the Marquesan telling, so that his laundry (tapa) might have time to dry."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "culture-hero-and-trickster",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the Marquesan Maui cycle; Maui among the foremost figures of the narratives (Handy, Native Culture, p. 247)."
+     }
+    ],
+    "notes": "The Marquesan reflex of the pan-Polynesian culture-hero and trickster Māui — fisher of islands, winner of fire, snarer of the sun."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fishing-up-of-land",
+    "name": "Fishing up of land from the sea",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui fished up various islands."
+     }
+    ],
+    "notes": "Hauls islands up out of the ocean with his fishhook and line."
+   },
+   {
+    "id": "snaring-of-the-sun",
+    "name": "Snaring and slowing of the sun",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui snared the sun with a noose of human hair to delay its passage."
+     }
+    ],
+    "notes": "Snares the sun with a noose of human hair and forces it to move more slowly across the sky."
+   },
+   {
+    "id": "winning-of-fire",
+    "name": "Winning of fire from the underworld",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui obtained fire from Mahuike in the lower regions."
+     }
+    ],
+    "notes": "Obtains fire from his grandfather Mahuike in the lower regions and brings it to humankind."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mahui-fishhook",
+    "name": "Mahui's fishhook (the island-fishing hook)",
+    "kind": "implement",
+    "role": "The hook and line with which Mahui (Maui) fished up the islands from the sea floor — the instrument of the Marquesan island-fishing exploit, the pan-Polynesian Māui fishhook.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — Maui fished up various islands."
+     }
+    ]
+   },
+   {
+    "id": "mahui-sun-snare",
+    "name": "Mahui's sun-snare (noose of human hair)",
+    "kind": "implement",
+    "role": "The noose of human hair with which Mahui snared the sun to delay its passage across the sky so that his laundry might dry.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — the noose of human hair used to snare the sun."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "grandchild",
+    "personId": "marquesan_mahuike",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui obtained fire from his grandfather Mahuike."
+     }
+    ],
+    "notes": "Grandson of Mahuike, the fire-keeper of the lower regions."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_maui_kisikisi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mahui-marquesan-form",
+    "claim": "marquesan-reflex-of-pan-polynesian-Maui",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930); Martina Bucková, 'Māui: Polynesian Culture Hero — Variations of Motifs in Māui's Mythological Cycle in East and West Polynesia' (Studia Orientalia Monographica 3) — on the Marquesan Maui motifs."
+     }
+    ],
+    "weight": "secondary",
+    "notes": "The Marquesan Maui shares the pan-Polynesian motif-set (fishing up land, snaring the sun, winning fire) with Maori, Hawaiian, Tahitian, Mangarevan, and other reflexes; the distinctively Marquesan detail is the sun-snaring motivated by the drying of laundry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930); E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mahui is the Marquesan reflex of the pan-Polynesian culture-hero and trickster Māui — a demigod. Handy's Marquesan Legends records that he fished up various islands, obtained fire from his grandfather Mahuike in the lower regions, and snared the sun with a noose of human hair to delay its passage across the sky 'in order that Maui's laundry might have time to dry.' He is one of the foremost figures of the Marquesan narratives (Native Culture p. 247). His parentage is not anchored to a registered figure here (Handy gives the Maui cycle without a fixed Marquesan divine-parent genealogy in the recorded narratives); the firmly-attested kin link is to his grandfather Mahuike."
+ },
+ {
+  "id": "marquesan_tu",
+  "name": {
+   "primary": "Tu",
+   "alt": [
+    "Tū",
+    "Ku (Hawaiian cognate)",
+    "Tiki Tu Kae (compound legendary name)"
+   ],
+   "transliterations": {
+    "marquesan": "Tu",
+    "etymology": "Marquesan reflex of Proto-Polynesian *Tū (cf. Maori Tū / Tūmatauenga, Hawaiian Kū); the common Polynesian element tū 'to stand; stability, war.' One of the great Polynesian atua, named among the foremost Marquesan narrative deities."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "standing-among-the-great-gods",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247 — Tu (Tiki Tu Kae) named among the most prominent figures of the oral narratives."
+     }
+    ],
+    "notes": "One of the great atua named in the Marquesan narrative register; the pan-Polynesian Tu/Ku."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-great-god-Tu",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923), p. 247 — Tu among the foremost narrative deities."
+     }
+    ],
+    "notes": "A great god of the Marquesan pantheon (the pan-Polynesian Tu/Ku, associated elsewhere with stability and war), named among the principal figures of the narratives."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "standing-of-the-great-god",
+    "name": "Standing among the great gods (Tu)",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923, p. 247."
+     }
+    ],
+    "notes": "Counted among the high atua of the Marquesan narratives; the Marquesan reflex of the great Polynesian god Tu/Ku."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247 — Tu (Tiki Tu Kae) among the most prominent names of the oral narratives; E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Tu."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tu (the pan-Polynesian Tu/Ku) is named by Handy among the foremost figures of the Marquesan oral narratives (Native Culture p. 247, in the compound Tiki Tu Kae). One of the great Polynesian atua, associated in the wider tradition with stability and war (Maori Tūmatauenga, Hawaiian Kū). SOLITARY in this batch: Handy's narrative register lists the name among the principal deities without a fixed Marquesan genealogy linking Tu to the other figures authored here, so no kin relations are asserted.",
+  "_solitary_reason": "Named among the great Marquesan atua (Handy, Native Culture p. 247) but without an attested genealogical link to the other batch figures; relations omitted rather than invented."
+ },
+ {
+  "id": "marquesan_pohu",
+  "name": {
+   "primary": "Pohu",
+   "alt": [],
+   "transliterations": {
+    "marquesan": "Pohu",
+    "etymology": "Marquesan Pohu; a legendary culture-hero/ancestor named in the Marquesan narratives. Etymology uncertain; recorded as a personal name in Handy's legend-register."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "legendary-exploits-of-Pohu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247 (Pohu among the foremost narrative figures); Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the story of Pohu (in which a ceremonial platform with a rail is described)."
+     }
+    ],
+    "notes": "A legendary hero of the Marquesan narratives; the recorded story of Pohu describes, among other things, a ceremonial platform (paepae) furnished with a rail."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "legendary-culture-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — the legend of Pohu; Handy, Native Culture (1923), p. 247."
+     }
+    ],
+    "notes": "A legendary hero/ancestor of Marquesan tradition, protagonist of a recorded legend-cycle."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "heroic-exploits-of-pohu",
+    "name": "Heroic exploits of the Pohu legend",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — the story of Pohu."
+     }
+    ],
+    "notes": "The deeds of the Pohu legend as recorded by Handy."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pohu-railed-platform",
+    "name": "Railed ceremonial platform of the Pohu legend",
+    "kind": "structure",
+    "role": "In the story of Pohu, a ceremonial platform (paepae) is described as having a rail around it — a material-culture detail preserved in the recorded legend.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the platform with a rail in the story of Pohu."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247; Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the legend of Pohu."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Pohu is a legendary hero/ancestor named by Handy among the foremost figures of the Marquesan oral narratives (Native Culture p. 247), with a recorded legend (Marquesan Legends, 1930) in which a ceremonial platform is described as having a rail around it. SOLITARY in this batch: the narrative names Pohu without an attested genealogical link to the other figures authored here.",
+  "_solitary_reason": "Named legendary hero (Handy, Native Culture p. 247; Marquesan Legends 1930) with no attested kin-link to the other batch figures; relations omitted rather than invented."
+ },
+ {
+  "id": "marquesan_akaui",
+  "name": {
+   "primary": "Akaui",
+   "alt": [],
+   "transliterations": {
+    "marquesan": "Akaui",
+    "etymology": "Marquesan Akaui; a legendary character/ancestor named in the Marquesan narratives. Recorded as a personal name in Handy's legend-register; etymology uncertain."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "legendary-exploits-of-Akaui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247 (Akaui among the foremost narrative figures); Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930)."
+     }
+    ],
+    "notes": "A legendary character of the Marquesan narratives, named among the principal figures."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "legendary-culture-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923), p. 247; Handy, Marquesan Legends (1930)."
+     }
+    ],
+    "notes": "A legendary hero/ancestor of Marquesan tradition named in the recorded narratives."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "heroic-exploits-of-akaui",
+    "name": "Heroic exploits of the Akaui legend",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930); Handy, Native Culture (1923), p. 247."
+     }
+    ],
+    "notes": "The deeds of Akaui as recorded among the Marquesan legends."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247; Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Akaui is a legendary character/ancestor named by Handy among the foremost figures of the Marquesan oral narratives (Native Culture p. 247; Marquesan Legends, 1930). SOLITARY in this batch: the narrative names Akaui without an attested genealogical link to the other figures authored here.",
+  "_solitary_reason": "Named legendary hero (Handy, Native Culture p. 247; Marquesan Legends 1930) with no attested kin-link to the other batch figures; relations omitted rather than invented."
+ }
+]
+```
+
+SOLITARY: marquesan_tu — Named among the great Marquesan atua (Handy, Native Culture p. 247, "Tiki Tu Kae") but Handy's narrative register lists the name without a fixed Marquesan genealogy linking Tu to the other figures in this batch; kin relations omitted rather than invented.
+SOLITARY: marquesan_pohu — Legendary hero named among the foremost Marquesan narrative figures (Handy, Native Culture p. 247) with a recorded legend (Marquesan Legends, 1930), but with no attested genealogical link to the other batch figures; kin relations omitted rather than invented.
+SOLITARY: marquesan_akaui — Legendary character named among the foremost Marquesan narrative figures (Handy, Native Culture p. 247; Marquesan Legends, 1930) with no attested genealogical link to the other batch figures; kin relations omitted rather than invented.

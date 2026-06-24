@@ -81,6 +81,12 @@ function main() {
     const eraOk = (e, w) => { if (e && vocab && !vocab.includes(e)) problems.push(`${where}: ${w} era ${JSON.stringify(e)} not registered for ${p.tradition} (valid: ${vocab.join(', ')})`); };
     eraOk(p.temporal && p.temporal.era, 'temporal');
     for (const ph of p.lifecycle || []) eraOk(ph.era, 'lifecycle');
+    // The app's Layer-1 hard-schema check rejects (and the boot crashes on) a
+    // lifecycle phase lacking both typeStatus and vitalStatus.
+    (p.lifecycle || []).forEach((ph, i) => {
+      if (ph && typeof ph === 'object' && !ph.typeStatus && !ph.vitalStatus)
+        problems.push(`${where}: lifecycle[${i}] missing typeStatus (set it to the figure's type)`);
+    });
     // faculties: must be {id,name,inheritability,sources}; catch the {faculty:...} shape.
     for (const fac of p.faculties || []) {
       if (!fac || typeof fac !== 'object') { problems.push(`${where}: faculty entry not an object`); continue; }
@@ -96,6 +102,15 @@ function main() {
       if (!hasRef(mc.sources)) problems.push(`${where}: materialCulture ${mc.id || '?'} sources[].reference missing/empty`);
     }
     for (const d of p.domains || []) if (!hasRef(d.sources)) problems.push(`${where}: domain ${d.sphereId || '?'} sources[].reference missing/empty`);
+    // epithets: each must be an OBJECT carrying `original` (the Layer-1 identifying
+    // field) plus a cited source. A bare string, or a {value:...}/{name:...} object
+    // lacking `original`, makes the app's Layer-1 hard-schema check reject the figure
+    // → boot crash; and the wave-7e test requires `original` + a non-empty citation.
+    for (const ep of p.epithets || []) {
+      if (!ep || typeof ep !== 'object') { problems.push(`${where}: epithet is a bare string/non-object — wrap as {original, sources}: ${JSON.stringify(ep).slice(0, 60)}`); continue; }
+      if (!ep.original && !ep.id) problems.push(`${where}: epithet missing 'original' (identifying field) — ${JSON.stringify(ep).slice(0, 70)}`);
+      if (!hasRef(ep.sources)) problems.push(`${where}: epithet ${ep.original || ep.epithetId || '?'} sources[].reference missing/empty`);
+    }
     // parents + relations resolve
     for (const pid of p.parentIds || []) if (!known(pid)) problems.push(`${where}: parentId ${pid} does not resolve`);
     for (const rel of p.relations || []) {

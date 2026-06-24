@@ -1,0 +1,2094 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Samoan (Sāmoa, Western Polynesia)
+Registered era vocabulary: primordial, mythic, mythic-prehistoric
+Author batch: weningerii@gmail.com — 2026-06-23
+
+PURPOSE
+-------
+The Samoan pantheon was entirely absent from the Pantheon Registry. This transcript
+supplies its well-attested CORE — the supreme creator, the lord of the spirit-world
+and his war-goddess daughter, the earthquake-god, the coconut-origin woman, the
+heaven-raiding fisherman, the conjoined tattoo-twins, and the firmly-attested war-
+god octopus, the high earth-god Moso, and the ʻava-origin figure Pava. Every figure
+is drawn from the standard nineteenth/early-twentieth-century ethnographic corpus of
+Samoan religion: chiefly George Turner, "Samoa, a Hundred Years Ago and Long Before"
+(London: Macmillan, 1884); John B. Stair, "Old Samoa, or Flotsam and Jetsam from the
+Pacific Ocean" (London: Religious Tract Society, 1897) and his "Jottings on the
+Mythology and Spirit-lore of Old Samoa" (Journal of the Polynesian Society, 1896) and
+his account of the temple of the Feʻe (JPS, 1894); and Augustin Krämer, "Die
+Samoa-Inseln" (Stuttgart, 1902/03; Eng. "The Samoa Islands," trans. T. Verhaaren),
+the great genealogical-traditional monograph. Fraser's translations of the Samoan
+creation chant (in the Journal of the Polynesian Society) underlie the cosmogony.
+No figure or citation here is invented. Samoan-language terms are given only where
+they are real, sourced words (pō "night/void," lagi "sky/heaven," Pulotu the
+spirit-world, tatau "tattoo," ʻava "kava," tagata "people," toa "ironwood,"
+fafine/tane "woman/man," etc.). Where a detail is variant or single-witness it is
+flagged in the notes.
+
+FIGURES AUTHORED (11)
+---------------------
+1.  samoan_tagaloa      — Tagaloa / Tagaloalagi / Tagaloa-faʻatutupu-nuʻu, the
+                          self-existent supreme creator who stood alone in the
+                          primordial Expanse and made the heavens, the islands, the
+                          sea, and humankind. [deity, primordial]
+2.  samoan_saveasiuleo  — Saveasiʻuleo, the half-man/half-eel Aliʻi (lord) of Pulotu,
+                          the spirit-world; brother of Ulufanuaseseʻe; father of
+                          Nafanua, who devoured his offspring until Nafanua was
+                          hidden from him. [deity, mythic]
+3.  samoan_nafanua      — Nafanua, the great war-goddess of Pulotu; daughter of
+                          Saveasiʻuleo and Tilafaiga; wielder of the four toa-wood
+                          war-clubs; her prophecy to Malietoa Faʻiga "Faʻatali i lagi
+                          se ao o lou mālō." [deity, mythic] parentIds:
+                          [samoan_saveasiuleo, samoan_tilafaiga].
+4.  samoan_mafuie       — Mafuiʻe, the earthquake-god of the land of perpetual fire
+                          beneath the earth, from whom Tiʻitiʻi (the Samoan Māui)
+                          wrests fire and breaks off one arm. [deity, mythic]
+5.  samoan_sina         — Sina, the woman of "Sina ma le Tuna" (Sina and the Eel),
+                          the coconut-origin myth: the slain eel's buried head grows
+                          into the first coconut tree. [mortal, mythic]
+6.  samoan_losi         — Losi, the fisherman/demigod who raids Tagaloa's heaven and
+                          carries the taro (and other food-plants) down to earth.
+                          [demigod, mythic-prehistoric]
+7.  samoan_tilafaiga    — Tilafaiga, one of the conjoined twin goddesses who brought
+                          the tatau (tattooing) from Fiji; also the mother of
+                          Nafanua. [deity, mythic] (twin of Taema; mother-of Nafanua)
+8.  samoan_taema        — Taema, the conjoined twin of Tilafaiga; co-bringer of the
+                          tatau from Fiji. [deity, mythic] (twin of Tilafaiga)
+9.  samoan_lefee        — Le Feʻe, the octopus war-god of Aʻana and Vaimauga, whose
+                          voice is thunder; honoured at the stone "Fale o le Feʻe."
+                          [deity, mythic]
+10. samoan_moso         — Moso, a high god of the land/earth (set against Tagaloa of
+                          the heavens), a widely-invoked village aitu. [deity, mythic]
+11. samoan_pava         — Pava, the man at whose house the first ʻava (kava) was
+                          drunk; his son, slain for disrespect, was restored to life
+                          by the libation — the charter of the ʻava ceremony.
+                          [mortal, mythic-prehistoric]
+
+RELATION WIRING NOTES (all within this fresh batch — no cross-tradition edges)
+------------------------------------------------------------------------------
+- Parent→child edges use the directed kinds "father-of" / "mother-of"; child→parent
+  edges use "father" / "mother" (non-symmetric).
+- Saveasiʻuleo is father-of Nafanua; Tilafaiga is mother-of Nafanua. Nafanua carries
+  the reciprocal "father"/"mother" edges and parentIds [samoan_saveasiuleo,
+  samoan_tilafaiga].
+- TYPE NOTE: Nafanua is the child of two deities (Saveasiʻuleo and Tilafaiga), so by
+  the registry's tier-computation a child of two deities computes to `deity`; she is
+  therefore typed "deity" even though the popular literature loosely calls her a
+  "demigod."
+- Tilafaiga and Taema are conjoined twin sisters: a reciprocal "twin sibling" edge is
+  wired BOTH directions within the batch.
+- Saveasiʻuleo's brother Ulufanuaseseʻe is NOT authored as a separate figure (he is a
+  minor narrative foil with no independent cult); the brother-bond is recorded in
+  Saveasiʻuleo's notes, not as a relation edge to an unauthored id.
+- Pava's mythic counterpart in the ʻava charter is Tagaloa-ʻUi (the first high chief,
+  a distinct figure from the supreme creator Tagaloa-lagi authored here as
+  samoan_tagaloa); to avoid conflation, no genealogical edge is drawn from Pava to
+  samoan_tagaloa. Pava and his (unnamed) son therefore have no in-batch kin — see
+  SOLITARY flag.
+
+```json
+[
+ {
+  "id": "samoan_tagaloa",
+  "name": {
+   "primary": "Tagaloa",
+   "alt": [
+    "Tagaloalagi",
+    "Tagaloa-lagi",
+    "Tagaloa-faʻatutupu-nuʻu",
+    "Tangaloa",
+    "Tagaloa of the Heavens"
+   ],
+   "transliterations": {
+    "samoan": "Tagaloa",
+    "etymology": "Samoan reflex of Proto-Polynesian *Taŋaloa, the great sky/sea deity (cf. Maori Tangaroa, Tongan Tangaloa, Hawaiian Kanaloa). Tagaloa-lagi 'Tagaloa of the sky/heavens' (lagi 'sky, heaven'); Tagaloa-faʻatutupu-nuʻu 'Tagaloa who causes the lands to grow/spring up' (faʻa- causative + tutupu 'to grow, spring up' + nuʻu 'land, settlement')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Exists self-existent and alone, moving to and fro in the limitless Expanse (the Pō / Ilu) before there was any sky, sea, or land; a rock grows up at the place where he stands, from which he begins the work of creation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Samoan creation chant in J. Fraser, 'The Samoan Story of Creation,' Journal of the Polynesian Society 1 (1892): 'Tagaloa dwelt in the Expanse; he made all things; he alone was there.'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), ch. on the creation; Tagaloa-lagi as maker of heavens, lands, sea and people"
+     }
+    ],
+    "notes": "Tagaloa is not born; he is the self-existent creative principle ('le atua Tagaloa'). In the cosmogonic chant he stands in the Expanse and successively brings forth the rock, the sea, the sky, fresh water, and humankind."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-and-cosmogony",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' JPS 1 (1892): Tagaloa-faʻatutupu-nuʻu makes all things from the Expanse"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky-and-heavens",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lagi",
+     "script": "Samoan",
+     "rom": "lagi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884): Tagaloa-lagi, 'Tagaloa of the heavens,' dwelling in and ruling the sky"
+     }
+    ]
+   },
+   {
+    "sphereId": "supreme-sovereignty-over-the-gods",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897): Tagaloa as the chief and progenitor of the gods"
+     }
+    ]
+   },
+   {
+    "sphereId": "origin-of-the-islands-and-mankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nuʻu",
+     "script": "Samoan",
+     "rom": "nuʻu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), on Tagaloa and the origin-traditions of the Samoan lands and peoples"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tagaloa-create-the-cosmos",
+    "name": "Make the heavens, the lands, the sea, and fresh water out of the primordial Expanse",
+    "inheritability": "none",
+    "notes": "Standing on the first rock in the Expanse, he splits and orders it to bring forth sky, sea, and the islands; the creative act is his alone and not transmitted.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' JPS 1 (1892); cf. G. Turner, Samoa (1884), the creation narrative"
+     }
+    ]
+   },
+   {
+    "id": "tagaloa-fling-and-fish-up-the-islands",
+    "name": "Bring the Samoan islands into being — flinging down rocks / fishing them up from the deep",
+    "inheritability": "none",
+    "notes": "Variant island-origin traditions: in some Tagaloa flings down rocks from heaven (Manuʻa, Savaiʻi, Upolu); in others the lands are drawn up. The making of nuʻu is encoded in the name Tagaloa-faʻatutupu-nuʻu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884); A. Krämer, Die Samoa-Inseln (1902/03), island-origin traditions"
+     }
+    ]
+   },
+   {
+    "id": "tagaloa-make-mankind",
+    "name": "Form the first people and animate them with life",
+    "inheritability": "none",
+    "notes": "Tagaloa makes humankind (in some versions from the fue / creeping-plant that rots into maggots which he forms into people, or directly); he is called the progenitor of gods and men.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' JPS 1 (1892); G. Turner, Samoa (1884), the origin of mankind from the fue"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tagaloa-toaga-the-creation-rock",
+    "name": "Papa (the primordial rock of creation)",
+    "kind": "cosmic-locus",
+    "term": {
+     "value": "papa",
+     "script": "Samoan",
+     "rom": "papa"
+    },
+    "role": "creator",
+    "notes": "The rock (papa) that grew up at the place where Tagaloa stood in the Expanse; he commands and splits it, and from its successive parts the sea, the sky-supports, and the lands proceed. The papa-genealogy ('Papa-taʻoto,' 'Papa-sosolo,' etc.) is the spine of the Samoan cosmogonic chant.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' JPS 1 (1892), the rock that grows up under Tagaloa and the papa-series"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (London, 1884), the creation traditions"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands, trans. T. Verhaaren), I"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "supreme-creator-from-the-expanse",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' Journal of the Polynesian Society 1 (1892): Tagaloa-faʻatutupu-nuʻu dwelling and creating in the Expanse"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897), on Tagaloa as chief and progenitor of the gods"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagaloa (Tagaloalagi, Tagaloa-faʻatutupu-nuʻu), the supreme self-existent creator of Samoan religion — the Polynesian *Taŋaloa in his Samoan form — who stood alone in the primordial Expanse (Pō / Ilu) and made the heavens, the islands, the sea, fresh water, and humankind, and is reckoned the chief and progenitor of the gods. Kinless by attestation (self-existent) — see SOLITARY flag. Documented in the Samoan creation chant (Fraser's translation), Turner, Stair and Krämer."
+ },
+ {
+  "id": "samoan_saveasiuleo",
+  "name": {
+   "primary": "Saveasiʻuleo",
+   "alt": [
+    "Saveasiuleo",
+    "Savea Siʻuleo",
+    "Saveasiʻuleo of Pulotu"
+   ],
+   "transliterations": {
+    "samoan": "Saveasiʻuleo",
+    "etymology": "Samoan; commonly parsed with siʻu 'tail/extremity' and leo 'voice / to guard,' fitting the eel-tailed guardian-lord of the spirit-world. The Aliʻi (paramount lord) of Pulotu."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Rules Pulotu, the spirit-world, as its Aliʻi — the upper half of his body that of a man, the lower half the tail of an eel stretching away into the sea; he devours his own offspring until one is concealed from him",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the Pulotu and Nafanua traditions; G. Turner, Samoa (1884), on Saveasiʻuleo of Pulotu"
+     }
+    ],
+    "notes": "He had separated from his youngest brother Ulufanuaseseʻe with the prophecy that they would meet again in their descendants — fulfilled in Nafanua and the Malietoa line."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "spirit-world-and-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pulotu",
+     "script": "Samoan",
+     "rom": "Pulotu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Pulotu, the abode of the spirits, ruled by Saveasiʻuleo"
+     }
+    ]
+   },
+   {
+    "sphereId": "sea-and-the-deep",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): his eel-tail stretching into the sea, lord of both the deep and the underworld"
+     }
+    ]
+   },
+   {
+    "sphereId": "sovereignty-over-pulotu",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897), on the rulership of Pulotu"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "saveasiuleo-rule-pulotu",
+    "name": "Rule the spirit-world Pulotu and receive the souls of the dead",
+    "inheritability": "none",
+    "notes": "As Aliʻi of Pulotu he presides over the land of the departed, the western terminus to which Samoan souls travel.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884); A. Krämer, Die Samoa-Inseln (1902/03), Pulotu traditions"
+     }
+    ]
+   },
+   {
+    "id": "saveasiuleo-eel-body",
+    "name": "Possess the divided body of a man above and a moray-eel's tail below, reaching into the sea",
+    "term": {
+     "value": "tuna",
+     "script": "Samoan",
+     "rom": "tuna"
+    },
+    "inheritability": "none",
+    "notes": "His eel-tail (the moray, tuna/pusi) stretched away into the ocean; he is the eel-bodied lord.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); the half-man, half-eel form of Saveasiʻuleo"
+     }
+    ]
+   },
+   {
+    "id": "saveasiuleo-devour-offspring",
+    "name": "Devour his own offspring as they are born",
+    "inheritability": "none",
+    "notes": "He ate his children (and, in the brother-tradition, his brothers) until Nafanua's mother concealed her pregnancy and hid the afterbirth in the earth, saving the child.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the concealed birth of Nafanua"
+     }
+    ]
+   },
+   {
+    "id": "saveasiuleo-arm-nafanua",
+    "name": "Send and arm his daughter Nafanua to free the oppressed people of the upper world",
+    "inheritability": "none",
+    "notes": "He commands Nafanua to ascend from Pulotu and overthrow the oppressors, giving her the toa-wood war-clubs.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); the commissioning of Nafanua with the war-clubs"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "samoan_nafanua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884): Nafanua, daughter of Saveasiʻuleo of Pulotu"
+     }
+    ],
+    "notes": "Father of the war-goddess Nafanua, whom he kept by him in Pulotu and armed for the war of liberation."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), Pulotu and Saveasiʻuleo"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), the Pulotu / Nafanua cycle"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "eel-lord-of-pulotu-and-father-of-nafanua",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the half-man half-eel Aliʻi of Pulotu, father of Nafanua"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Saveasiʻuleo, the half-man, half-moray-eel Aliʻi (lord) of Pulotu, the Samoan spirit-world; brother of Ulufanuaseseʻe (recorded in this note rather than as a relation, since the brother is not separately authored), and father of the war-goddess Nafanua, whose birth was concealed from him because he devoured his offspring. He commissions and arms Nafanua for the war of liberation. Documented by Turner, Krämer and Stair (secondary)."
+ },
+ {
+  "id": "samoan_nafanua",
+  "name": {
+   "primary": "Nafanua",
+   "alt": [
+    "Nafanua of Falealupo",
+    "Goddess of Pulotu"
+   ],
+   "transliterations": {
+    "samoan": "Nafanua",
+    "etymology": "Samoan; popularly glossed in connection with her concealed, earth-buried birth (the afterbirth/blood-clot hidden in the ground, nafa 'concealed/buried' + fanua 'land, earth/afterbirth'). The war-goddess of Falealupo on Savaiʻi."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "samoan_saveasiuleo",
+   "samoan_tilafaiga"
+  ],
+  "parentRoles": {
+   "samoan_saveasiuleo": "paternal",
+   "samoan_tilafaiga": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Born of Saveasiʻuleo and Tilafaiga and hidden from her devouring father — the afterbirth buried in the earth; raised in Pulotu, she studies the arts of war and of the rain-forest's healing plants",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the concealed birth of Nafanua, daughter of Saveasiʻuleo and Tilafaiga"
+     }
+    ],
+    "notes": "TYPE: child of two deities (Saveasiʻuleo and Tilafaiga) ⇒ computes to deity, despite the popular 'demigod' label."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Ascends from Pulotu with her toa-wood war-clubs, leads the people of the western districts to victory over their oppressors, and afterwards prophesies to Malietoa Faʻiga: 'Faʻatali i lagi se ao o lou mālō' — 'Wait upon heaven for a crown for your kingdom'",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the war of liberation and the prophecy to Malietoa; J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "notes": "Her prophecy is read as foretelling the coming of a higher (Christian) kingship to the Malietoa line; she is the patron war-goddess of Falealupo, by the entrance to Pulotu."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war-and-battle",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "toa",
+     "script": "Samoan",
+     "rom": "toa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Nafanua the war-goddess and her toa-wood clubs"
+     }
+    ]
+   },
+   {
+    "sphereId": "prophecy-and-oracular-pronouncement",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897); A. Krämer, Die Samoa-Inseln (1902/03), the prophecy to Malietoa"
+     }
+    ]
+   },
+   {
+    "sphereId": "sovereignty-and-the-bestowal-of-titles",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), Nafanua and the conferral of the pāpā / kingly titles"
+     }
+    ]
+   },
+   {
+    "sphereId": "healing-and-knowledge-of-plants",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): her knowledge of the rain-forest and the healing power of plants learned in Pulotu"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "nafanua-wield-the-war-clubs",
+    "name": "Wield the four toa-wood war-clubs in battle, breaking the lines of the enemy",
+    "inheritability": "none",
+    "notes": "Her clubs are made from the toa (ironwood). Tafesilafaʻi is the deadliest, used against the foe; Faʻauliulitō a heavy striking-club; Ulimasao the peace-club that ends the war; Faʻamategataua the club used once the mālō (government) is established.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); the four war-clubs of Nafanua"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-prophesy-the-kingdom",
+    "name": "Utter binding war-prophecies and confer or withhold the kingdom",
+    "term": {
+     "value": "ao",
+     "script": "Samoan",
+     "rom": "ao"
+    },
+    "inheritability": "none",
+    "notes": "To Malietoa Faʻiga, who sought her aid to unite Samoa, she prophesied 'Faʻatali i lagi se ao o lou mālō' — 'Wait upon heaven for a crown (ao) for your kingdom.'",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897); A. Krämer, Die Samoa-Inseln (1902/03), the prophecy to Malietoa"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-lead-armies",
+    "name": "Lead and embolden armies, the patron war-power of the western districts",
+    "inheritability": "none",
+    "notes": "She descends from Pulotu to overthrow the oppressors and is thereafter invoked as the goddess of war; Falealupo on Savaiʻi is her seat, beside the entrance to Pulotu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), Nafanua's war of liberation"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nafanua-club-tafesilafai",
+    "name": "Tafesilafaʻi (war-club)",
+    "kind": "weapon",
+    "term": {
+     "value": "Tafesilafaʻi",
+     "script": "Samoan",
+     "rom": "Tafesilafaʻi"
+    },
+    "role": "wielder",
+    "notes": "Her first and deadliest toa-wood war-club, used solely against the enemy; the name evokes 'meeting/contending together.'",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); Nafanua's war-clubs (Falealupo / Pulotu tradition)"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-club-faauliulito",
+    "name": "Faʻauliulitō (war-club)",
+    "kind": "weapon",
+    "term": {
+     "value": "Faʻauliulitō",
+     "script": "Samoan",
+     "rom": "Faʻauliulitō"
+    },
+    "role": "wielder",
+    "notes": "A heavy striking toa-wood club; in the tradition it is given to her attendants to strike the enemy from the flanks while she meets them in the centre to seek a peace.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the four clubs of Nafanua"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-club-ulimasao",
+    "name": "Ulimasao (peace-club)",
+    "kind": "weapon",
+    "term": {
+     "value": "Ulimasao",
+     "script": "Samoan",
+     "rom": "Ulimasao"
+    },
+    "role": "wielder",
+    "notes": "The 'steer-to-safety' club (ulimasao 'to steer safely into harbour / arrive safely'), shaped like a canoe-paddle; used to end the war and bring peace.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); the peace-club Ulimasao"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-club-faamategataua",
+    "name": "Faʻamategataua (war-club)",
+    "kind": "weapon",
+    "term": {
+     "value": "Faʻamategataua",
+     "script": "Samoan",
+     "rom": "Faʻamategataua"
+    },
+    "role": "wielder",
+    "notes": "The fourth toa-wood club, used once the enemy is defeated and the mālō (government/order) has been established.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the four war-clubs of Nafanua"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "samoan_saveasiuleo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884): Nafanua, daughter of Saveasiʻuleo"
+     }
+    ],
+    "notes": "Daughter of the eel-lord of Pulotu, who hid her, reared her, and armed her."
+   },
+   {
+    "kind": "mother",
+    "personId": "samoan_tilafaiga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga (sister of Taema, the tatau-twins) as the mother of Nafanua"
+     }
+    ],
+    "notes": "Her mother Tilafaiga concealed the pregnancy and buried the afterbirth in the earth to save her from Saveasiʻuleo."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), the Nafanua cycle"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897); G. Turner, Samoa, a Hundred Years Ago and Long Before (1884)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "war-goddess-with-the-toa-clubs-and-prophecy-to-malietoa",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the toa-wood war-clubs and the prophecy 'Faʻatali i lagi se ao o lou mālō'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nafanua, the great war-goddess of Pulotu and of Falealupo on Savaiʻi — daughter of the eel-lord Saveasiʻuleo and of Tilafaiga (the tatau-twin), hidden at birth from her devouring father. She ascends with her four toa-wood war-clubs (Tafesilafaʻi, Faʻauliulitō, Ulimasao, Faʻamategataua) to free the oppressed, and prophesies to Malietoa Faʻiga 'Wait upon heaven for a crown for your kingdom.' Typed deity (child of two deities) despite the popular 'demigod' label. Documented by Krämer, Stair and Turner (secondary)."
+ },
+ {
+  "id": "samoan_mafuie",
+  "name": {
+   "primary": "Mafuiʻe",
+   "alt": [
+    "Mafuie",
+    "Mafuiʻe the earthquake-god"
+   ],
+   "transliterations": {
+    "samoan": "Mafuiʻe",
+    "etymology": "Samoan; the god of earthquakes (cf. mafuiʻe 'earthquake'), cognate within Polynesia with fire/earthquake-deities (e.g. Mahuika/Mahuiʻe, keeper of fire). Dweller in the subterranean land of perpetual fire."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Dwells beneath the earth in the land of perpetual fire, guarding the subterranean fire; the hero Tiʻitiʻi descends to him, wrests fire from him, and breaks off one of his arms",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the Mafuiʻe / Tiʻitiʻi fire-myth"
+     }
+    ],
+    "notes": "After Tiʻitiʻi breaks his arm, Mafuiʻe yields the secret that fire is hidden in certain trees and may be drawn out by rubbing wood; the Samoans say his one remaining arm is why earthquakes are not worse."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earthquakes",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mafuiʻe",
+     "script": "Samoan",
+     "rom": "mafuiʻe"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Mafuiʻe the earthquake-god who shakes the islands"
+     }
+    ]
+   },
+   {
+    "sphereId": "subterranean-fire",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the home of Mafuiʻe in the land of perpetual fire; the fire hidden in trees"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-underworld",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897), on Mafuiʻe beneath the earth"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mafuie-shake-the-earth",
+    "name": "Shake the islands by moving the handle/prop of the world beneath them",
+    "inheritability": "none",
+    "notes": "The Samoans held that Mafuiʻe has a long handle to the world under the islands; when angry he moves it and the land quakes. With only one arm (Tiʻitiʻi having broken the other) the shaking is the less violent.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the earthquake and the one-armed Mafuiʻe"
+     }
+    ]
+   },
+   {
+    "id": "mafuie-guard-and-yield-fire",
+    "name": "Guard the underground fire and reveal that it is hidden in the trees",
+    "inheritability": "none",
+    "notes": "Overpowered by Tiʻitiʻi, he gives up the secret of fire: it lies in every piece of wood and is brought out by rubbing the fire-plough.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Mafuiʻe yields the secret of fire to Tiʻitiʻi"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mafuie-subterranean-fire",
+    "name": "The subterranean fire (afi)",
+    "kind": "element",
+    "term": {
+     "value": "afi",
+     "script": "Samoan",
+     "rom": "afi"
+    },
+    "role": "guardian",
+    "notes": "The perpetual fire Mafuiʻe keeps beneath the earth, which Tiʻitiʻi wrests from him for mankind; thereafter hidden in trees and won by the fire-plough (sigano/fire-rubbing).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the fire taken from Mafuiʻe"
+     }
+    ]
+   },
+   {
+    "id": "mafuie-world-handle",
+    "name": "The handle/prop of the world",
+    "kind": "implement",
+    "role": "owner",
+    "notes": "The long stick or handle to the world beneath the islands; Mafuiʻe moves it to shake the land. Recorded in Turner as the Samoan explanation of earthquakes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Mafuiʻe's handle to the world under the islands"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the Mafuiʻe and Tiʻitiʻi fire-myth"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "earthquake-and-fire-god-who-loses-an-arm-to-tiitii",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Tiʻitiʻi breaks off Mafuiʻe's arm and wins fire"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Mafuiʻe, the Samoan god of earthquakes and keeper of the subterranean fire, dwelling in the land of perpetual fire beneath the earth. The hero Tiʻitiʻi (the Samoan Māui) descends, wrests fire from him, and breaks off one of his arms; Mafuiʻe then reveals that fire is hidden in the trees. His single remaining arm is the Samoan reason that earthquakes are not more destructive. No genealogy is attested in the corpus used here — see SOLITARY flag. Documented by Turner and Stair (secondary)."
+ },
+ {
+  "id": "samoan_sina",
+  "name": {
+   "primary": "Sina",
+   "alt": [
+    "Sina of the Eel",
+    "Sina (Sina ma le Tuna)"
+   ],
+   "transliterations": {
+    "samoan": "Sina",
+    "etymology": "Samoan reflex of Proto-Polynesian *Sina (cf. Hina/Hine elsewhere in Polynesia), also the word for 'grey/silvery, white-haired.' The maiden of the coconut-origin myth Sina ma le Tuna ('Sina and the Eel')."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A beautiful maiden who keeps a small eel (Tuna) as a pet until it grows into a great eel and pursues her; the eel, revealed as a transformed Fijian king who loves her, is killed, and bids her bury his head, from which the first coconut tree grows",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the origin of the coconut; A. Krämer, Die Samoa-Inseln (1902/03)"
+     }
+    ],
+    "notes": "Sina ma le Tuna explains the origin of the niu (coconut): the three marks on the husked nut are the eel's two eyes and mouth, so that one who drinks 'kisses the eel.' The spring Mata o le Alelo at Matāvai, Safune (Savaiʻi) is tied to the legend."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "origin-of-the-coconut",
+    "contextTag": "episodic",
+    "term": {
+     "value": "niu",
+     "script": "Samoan",
+     "rom": "niu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Sina and the eel and the first coconut tree"
+     }
+    ]
+   },
+   {
+    "sphereId": "beauty-and-maidenhood",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the Sina ma le Tuna tradition"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sina-bury-the-eels-head",
+    "name": "Bury the slain eel's head as bidden, whence the first coconut tree springs",
+    "inheritability": "none",
+    "notes": "At the dying eel's request she plants its head; from it grows the niu, marked on its shell with the eel's eyes and mouth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the buried eel-head and the coconut"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "sina-first-coconut",
+    "name": "The first coconut tree (niu) and nut",
+    "kind": "plant-origin",
+    "term": {
+     "value": "niu",
+     "script": "Samoan",
+     "rom": "niu"
+    },
+    "role": "originator",
+    "notes": "The coconut palm grown from the buried head of the eel; the husked nut bears the eel's two eyes and mouth, one of which is pierced for drinking.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the origin of the coconut from the eel's head"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_nuahine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the coconut-origin myth"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), Sina ma le Tuna"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "heroine-of-the-coconut-origin-myth",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Sina, the eel, and the first coconut tree"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Sina, the maiden of the Samoan coconut-origin myth Sina ma le Tuna ('Sina and the Eel'): she keeps an eel (Tuna, a transformed Fijian king who loves her) that, when slain, bids her bury its head, from which the first coconut tree grows — the three marks on the husked nut being the eel's eyes and mouth. Treated as a mortal woman (the Samoan Sina of this tale; cognate with the pan-Polynesian Sina/Hina). No kin is attested in this myth-cycle — see SOLITARY flag. Documented by Turner and Krämer (secondary)."
+ },
+ {
+  "id": "samoan_losi",
+  "name": {
+   "primary": "Losi",
+   "alt": [
+    "Losi the fisherman",
+    "Losi the giant"
+   ],
+   "transliterations": {
+    "samoan": "Losi",
+    "etymology": "Samoan personal name of the master-fisherman and demigod of the heaven-raiding, taro-bringing legend."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "A master-fisherman who ascends to Tagaloa's heaven, plays tricks on the gods at their feast, endures and overcomes the ordeals they set him, and on his expulsion smuggles the taro down to earth",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the legend of Losi and the taro; J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "notes": "Sent to supply the gods with fish, Losi laid them in the doorways so the gods slipped and fell; angered, they set him ordeals (an oven, a fight, a house), which he survived, and he carried off the taro (and other food-plants) to earth, where they became the staple foods of Samoa."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fishing-and-the-sea-harvest",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Losi the master-fisherman"
+     }
+    ]
+   },
+   {
+    "sphereId": "origin-of-cultivated-food-plants",
+    "contextTag": "episodic",
+    "term": {
+     "value": "talo",
+     "script": "Samoan",
+     "rom": "talo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Losi brings the taro (talo) down from heaven to earth"
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery-and-the-outwitting-of-the-gods",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), Losi's tricks and ordeals in Tagaloa's heaven"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "losi-raid-heaven",
+    "name": "Ascend to and raid Tagaloa's heaven, surviving the gods' ordeals",
+    "inheritability": "none",
+    "notes": "He withstands the trials set by the heavenly gods (oven, combat, a falling/crushing house) and is too strong and cunning to be destroyed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Losi's ordeals among the gods"
+     }
+    ]
+   },
+   {
+    "id": "losi-bring-the-taro",
+    "name": "Carry the taro (and other food-plants) down from heaven to earth",
+    "inheritability": "none",
+    "notes": "The taro, which had grown only in the heaven of the gods, he smuggled to earth, where it (with other plants) became the staple food of Samoa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the bringing-down of the taro by Losi"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "losi-taro-cutting",
+    "name": "The taro (talo) brought to earth",
+    "kind": "plant-origin",
+    "term": {
+     "value": "talo",
+     "script": "Samoan",
+     "rom": "talo"
+    },
+    "role": "bringer",
+    "notes": "The taro slip Losi carried down from Tagaloa's heaven, origin of the cultivated taro and the staple of the Samoan diet.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the taro brought down by Losi"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the legend of Losi"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "raids-heaven-and-brings-the-taro-to-earth",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Losi the fisherman raids Tagaloa's heaven and brings down the taro"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Losi, the master-fisherman and demigod who ascends to Tagaloa's heaven, plays tricks on the gods and survives the ordeals they set, and on his expulsion carries the taro (talo) — and other food-plants — down to earth, where they become the staples of Samoa. A culture-hero of the demigod/legendary-ancestor stratum. No fixed genealogy is given in the corpus used here (variant traditions make him a descendant of Tagaloa) — see SOLITARY flag. Documented by Turner and Stair (secondary)."
+ },
+ {
+  "id": "samoan_tilafaiga",
+  "name": {
+   "primary": "Tilafaiga",
+   "alt": [
+    "Tilafaigā",
+    "Titi (childhood name)"
+   ],
+   "transliterations": {
+    "samoan": "Tilafaiga",
+    "etymology": "Samoan; one of the conjoined twin goddesses (with Taema) who brought the tatau from Fiji, and the mother of Nafanua."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Born conjoined back-to-back with her twin Taema; the pair swim to Fiji, learn the art of tattooing, and swim back to Samoa with the basket of tatau-tools, landing at Falealupo on Savaiʻi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the tatau-origin and the twins; G. Turner, Samoa (1884)"
+     }
+    ],
+    "notes": "As they swam they sang that women, not men, should be tattooed; diving for a clam near Falealupo they surfaced singing the reverse — that men, not women, should bear the tatau, which became the rule. Tilafaiga is also named the mother of Nafanua by Saveasiʻuleo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tattooing-tatau",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tatau",
+     "script": "Samoan",
+     "rom": "tatau"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the twins as bringers of the tatau from Fiji"
+     }
+    ]
+   },
+   {
+    "sphereId": "war-and-protective-power",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga and Taema also reckoned war-goddesses"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tilafaiga-bring-the-tatau",
+    "name": "Bring the art and instruments of the tatau from Fiji to Samoa",
+    "term": {
+     "value": "tatau",
+     "script": "Samoan",
+     "rom": "tatau"
+    },
+    "inheritability": "none",
+    "notes": "With Taema she learns tattooing in Fiji (from the tufuga Tufou and Filelei in some tellings) and carries the basket of au (tattooing-combs) to Falealupo.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884), the coming of the tatau"
+     }
+    ]
+   },
+   {
+    "id": "tilafaiga-bear-nafanua",
+    "name": "Conceal her pregnancy and bear and save Nafanua from the devouring Saveasiʻuleo",
+    "inheritability": "none",
+    "notes": "She hides the birth and buries the afterbirth in the earth so that her daughter Nafanua survives.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga, mother of Nafanua"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tilafaiga-tatau-tools",
+    "name": "The basket of tatau-tools (au)",
+    "kind": "tool",
+    "term": {
+     "value": "au",
+     "script": "Samoan",
+     "rom": "au"
+    },
+    "role": "bringer",
+    "notes": "The serrated tattooing-combs (au) of bone/boar's-tusk on turtle-shell and wooden handle, carried from Fiji; the implements of the Samoan tatau.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884), the tatau-instruments brought from Fiji"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "samoan_taema",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga and Taema, the conjoined twins of the tatau"
+     }
+    ],
+    "notes": "Conjoined twin of Taema, born joined back-to-back and severed in the sea."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "samoan_nafanua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga, mother of Nafanua by Saveasiʻuleo"
+     }
+    ],
+    "notes": "Mother of the war-goddess Nafanua, whom she saved at birth."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), the tatau-origin twins"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "tatau-bringer-and-mother-of-nafanua",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga, twin of Taema and mother of Nafanua"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tilafaiga, one of the conjoined twin goddesses (with Taema) who brought the tatau from Fiji to Samoa, landing at Falealupo on Savaiʻi; reckoned also a war-goddess, and named the mother of Nafanua by Saveasiʻuleo. Documented by Krämer and Turner (secondary)."
+ },
+ {
+  "id": "samoan_taema",
+  "name": {
+   "primary": "Taema",
+   "alt": [
+    "Taemā",
+    "Titi (childhood name)"
+   ],
+   "transliterations": {
+    "samoan": "Taema",
+    "etymology": "Samoan; the conjoined twin (with Tilafaiga) who brought the tatau from Fiji to Samoa."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Born conjoined back-to-back with her twin Tilafaiga; the pair swim to Fiji, learn tattooing, and swim back to Samoa with the tatau-tools, landing at Falealupo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the tatau-origin twins; G. Turner, Samoa (1884)"
+     }
+    ],
+    "notes": "The conjoined sisters were severed when the spar of a canoe struck the join between them as they swam. They sang the tatau-song that reversed (women, then men) on the way to Falealupo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tattooing-tatau",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tatau",
+     "script": "Samoan",
+     "rom": "tatau"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the twins as bringers of the tatau"
+     }
+    ]
+   },
+   {
+    "sphereId": "war-and-protective-power",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Taema and Tilafaiga also reckoned war-goddesses"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "taema-bring-the-tatau",
+    "name": "Bring the art and instruments of the tatau from Fiji to Samoa with her twin",
+    "term": {
+     "value": "tatau",
+     "script": "Samoan",
+     "rom": "tatau"
+    },
+    "inheritability": "none",
+    "notes": "With Tilafaiga she learns and carries the tatau to Samoa; the pair are the matriarchs of Samoan tattooing.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "taema-tatau-tools",
+    "name": "The tatau-tools (au) brought from Fiji",
+    "kind": "tool",
+    "term": {
+     "value": "au",
+     "script": "Samoan",
+     "rom": "au"
+    },
+    "role": "bringer",
+    "notes": "The serrated tattooing-combs carried with Tilafaiga from Fiji to Falealupo; the implements of the Samoan tatau.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884), the tatau-instruments"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "samoan_tilafaiga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Taema and Tilafaiga, the conjoined twins of the tatau"
+     }
+    ],
+    "notes": "Conjoined twin of Tilafaiga, born joined back-to-back and severed in the sea."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), the tatau-origin twins"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "co-bringer-of-the-tatau-from-fiji",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Taema, twin of Tilafaiga, who brought the tatau"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Taema, the conjoined twin (with Tilafaiga) who brought the tatau from Fiji to Samoa, landing at Falealupo on Savaiʻi; reckoned also a war-goddess. The two sisters, born joined back-to-back, were severed by a canoe-spar as they swam. Documented by Krämer and Turner (secondary)."
+ },
+ {
+  "id": "samoan_lefee",
+  "name": {
+   "primary": "Le Feʻe",
+   "alt": [
+    "Feʻe",
+    "Le Fee",
+    "the Octopus-god"
+   ],
+   "transliterations": {
+    "samoan": "Le Feʻe",
+    "etymology": "Samoan le 'the' + feʻe 'octopus, cuttlefish'; the octopus war-god of Aʻana and Vaimauga, honoured at the Fale o le Feʻe ('house of the octopus')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Dwells in a palace beneath the sea as a great octopus, his tentacles reaching to the far corners of the world; the war-god of Aʻana and Vaimauga, his voice heard in thunder",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the Feʻe the war-god; J. B. Stair, 'The temple of the Feʻe,' Journal of the Polynesian Society (1894)"
+     }
+    ],
+    "notes": "He takes the form of the octopus (feʻe) at sea, of a white shell (pule) on land, and of the soldier-crab (uga) on the mountain. The yearly feast 'o le tapu o Aʻana i le Feʻe' was held in his honour; his stone temple, the Fale o le Feʻe inland of Apia on the Vaisigano, was the only such temple in Samoa."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the Feʻe, war-god of Aʻana and Vaimauga"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sea-and-the-deep",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "feʻe",
+     "script": "Samoan",
+     "rom": "feʻe"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the octopus-god in his palace beneath the sea"
+     }
+    ]
+   },
+   {
+    "sphereId": "thunder-and-war-omens",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the Feʻe's voice in thunder; the diviners reading the thunder for war"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lefee-shapeshift-octopus",
+    "name": "Take the form of an octopus at sea, a white shell on land, and a soldier-crab on the mountain",
+    "term": {
+     "value": "feʻe",
+     "script": "Samoan",
+     "rom": "feʻe"
+    },
+    "inheritability": "none",
+    "notes": "The war-god's three guises: feʻe (octopus) at sea, pule (white shell) on land, uga (soldier-crab) on the mountain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the three forms of the Feʻe"
+     }
+    ]
+   },
+   {
+    "id": "lefee-thunder-voice",
+    "name": "Speak in thunder, giving omens for war",
+    "inheritability": "none",
+    "notes": "The Feʻe was believed to cause thunderstorms by his voice; the king's diviners listened to the thunder to learn whether to go to war.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the thunder-voice and war-divination of the Feʻe"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "lefee-fale-o-le-fee",
+    "name": "Fale o le Feʻe (the stone temple of the octopus)",
+    "kind": "temple",
+    "term": {
+     "value": "Fale o le Feʻe",
+     "script": "Samoan",
+     "rom": "Fale o le Feʻe"
+    },
+    "role": "honoured-at",
+    "notes": "His stone temple inland of Apia on the banks of the Vaisigano, ringed by stone pillars — the only stone temple recorded in Samoa; its ruins were visited and described by Stair.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, 'The temple of the Feʻe,' JPS (1894); G. Turner, Samoa (1884), the temple surrounded by stone pillars"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the Feʻe the war-god"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, 'The temple of the Feʻe,' Journal of the Polynesian Society (1894); Old Samoa (1897)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "octopus-war-god-of-aana-with-stone-temple",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the octopus war-god of Aʻana and Vaimauga and his stone temple"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Le Feʻe, the octopus war-god of the districts of Aʻana and Vaimauga, dwelling beneath the sea with his tentacles reaching to the corners of the world, whose voice is thunder and who gives omens for war. He appears as an octopus at sea, a white shell on land, and a soldier-crab on the mountain, and was honoured at the Fale o le Feʻe, the only stone temple in Samoa. No genealogy is attested — see SOLITARY flag. Documented by Turner and Stair (secondary)."
+ },
+ {
+  "id": "samoan_moso",
+  "name": {
+   "primary": "Moso",
+   "alt": [
+    "Moso"
+   ],
+   "transliterations": {
+    "samoan": "Moso",
+    "etymology": "Samoan; one of the high gods of the land/earth, widely invoked as a village aitu, set against Tagaloa of the heavens."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the high gods of the land/earth — the counterpart of Tagaloa of the heavens — widely worshipped as a village god, manifest in birds and other incarnations and addressed in family prayers",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), Moso among the gods invoked by the Samoans"
+     }
+    ],
+    "notes": "Moso was one of the most widely-invoked gods; in some villages he was symbolised by the tanoa (kava-bowl) decorated with white shells (lipi), and incarnate in the pigeon (tu) or the fuia (Samoan starling), whose coming signified an answered prayer."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-land-and-earth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Moso, a high god of the land, opposite to Tagaloa of the heavens"
+     }
+    ]
+   },
+   {
+    "sphereId": "village-tutelary-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "aitu",
+     "script": "Samoan",
+     "rom": "aitu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Moso as a village god incarnate in birds and other forms"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "moso-incarnate-in-birds",
+    "name": "Become present and answer prayer through incarnations (the pigeon, the fuia starling, and other forms)",
+    "inheritability": "none",
+    "notes": "When the fuia or the sacred pigeon came, morning or evening, the family knew Moso had heard their prayer.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the incarnations of Moso"
+     }
+    ]
+   },
+   {
+    "id": "moso-guard-the-village",
+    "name": "Guard the village and its people as their tutelary god",
+    "inheritability": "none",
+    "notes": "Each village had its god, and those born there were reckoned his; Moso was among the most widely worshipped of these tutelary powers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the village gods of Samoa and Moso among them"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "moso-tanoa",
+    "name": "The tanoa (kava-bowl) symbol of Moso",
+    "kind": "symbol",
+    "term": {
+     "value": "tanoa",
+     "script": "Samoan",
+     "rom": "tanoa"
+    },
+    "role": "symbolized-by",
+    "notes": "In one village Moso was symbolised by the tanoa, the wooden kava-bowl, decorated with white shells (lipi) used at a sudden death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Moso symbolised by the shell-decked tanoa"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the gods invoked by the Samoans, Moso among them"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "high-god-of-the-land-and-widely-invoked-village-aitu",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Moso, high god of the land opposite Tagaloa of the heavens"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Moso, one of the high gods of the land/earth in Samoan religion — the counterpart of Tagaloa of the heavens — and among the most widely-invoked village aitu, incarnate in the pigeon and the fuia starling and symbolised in one village by the shell-decked tanoa (kava-bowl). No genealogy is attested in the corpus used here — see SOLITARY flag. Documented by Turner and Stair (secondary)."
+ },
+ {
+  "id": "samoan_pava",
+  "name": {
+   "primary": "Pava",
+   "alt": [
+    "Pavā"
+   ],
+   "transliterations": {
+    "samoan": "Pava",
+    "etymology": "Samoan; the man at whose house the first ʻava (kava) was drunk, in the charter-myth of the ʻava ceremony."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "At the first drinking of the ʻava, his small son disturbs the ceremony; the boy is struck down and cut in two for his disrespect, then restored to life when the ʻava is poured upon him — the charter of the ʻava ceremony's solemnity and taboos",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897), the origin of the ʻava ceremony; G. Turner, Samoa (1884)"
+     }
+    ],
+    "notes": "The boy walked about during the ʻava; warned twice through Pava, he would not be still, and was cut in two with the words 'There is your half and here is mine.' Seeing Pava weep, the divine host poured ʻava on the ground/on the child saying the ʻava should bring him to life, and the boy lived. The myth grounds the rule that none may move during the ʻava but the cup-bearer. (The divine celebrant is named Tagaloa-ʻUi, the first high chief — a figure distinct from the supreme creator Tagaloa authored here; hence Pava is wired to no in-batch kin.)"
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "origin-of-the-ava-ceremony",
+    "contextTag": "episodic",
+    "term": {
+     "value": "ʻava",
+     "script": "Samoan",
+     "rom": "ʻava"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897): the first ʻava at Pava's house"
+     }
+    ]
+   },
+   {
+    "sphereId": "ritual-precedent-and-taboo",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the rule of stillness during the ʻava traced to this event"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pava-host-the-first-ava",
+    "name": "Host the first drinking of the ʻava, the precedent of the ʻava ceremony",
+    "term": {
+     "value": "ʻava",
+     "script": "Samoan",
+     "rom": "ʻava"
+    },
+    "inheritability": "none",
+    "notes": "At Pava's house the ʻava is first prepared and drunk; the events there fix the order and taboos of the rite.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897); G. Turner, Samoa (1884), the first ʻava"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pava-first-ava-bowl",
+    "name": "The first bowl of ʻava (kava)",
+    "kind": "vessel",
+    "term": {
+     "value": "ʻava",
+     "script": "Samoan",
+     "rom": "ʻava"
+    },
+    "role": "host",
+    "notes": "The first ʻava prepared and drunk at Pava's house; the libation poured from it restored his cut-apart son to life and set the ceremony's pattern.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897): the first ʻava-bowl and the libation"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa, or Flotsam and Jetsam from the Pacific Ocean (1897), the ʻava-origin tradition"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "host-of-the-first-ava-and-the-restored-son",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897): Pava, his slain-and-restored son, and the charter of the ʻava ceremony"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Pava, the man at whose house the first ʻava (kava) was drunk; his small son, slain and cut in two for disturbing the rite, was restored to life by the ʻava-libation — the charter-myth of the ʻava ceremony and the rule that none may move during it. The divine celebrant of the myth is Tagaloa-ʻUi (the first high chief), a figure distinct from the supreme creator Tagaloa authored here; Pava and his unnamed son therefore have no in-batch kin — see SOLITARY flag. Documented by Stair and Turner (secondary)."
+ }
+]
+```
+
+SOLITARY:
+- samoan_tagaloa — The supreme creator is self-existent, alone in the primordial Expanse (Pō / Ilu) before there was sky, sea, or land; he has no parents or progenitors in the cosmogony (J. Fraser, 'The Samoan Story of Creation,' JPS 1, 1892; G. Turner, Samoa, 1884). His descendants (the lesser Tagaloa, Tagaloa-ʻUi, etc.) are not authored in this core batch, so no child-edges are drawn from him.
+- samoan_mafuie — The earthquake-and-fire god is attested only as the solitary keeper of the subterranean fire, with no parents, consort, or offspring in the corpus used here (G. Turner, Samoa, 1884; J. B. Stair, Old Samoa, 1897).
+- samoan_sina — The heroine of the coconut-origin myth Sina ma le Tuna is attested in that tale without divine kin; her relation is to the eel Tuna (a transformed Fijian king), not to any figure in this batch (G. Turner, Samoa, 1884; A. Krämer, Die Samoa-Inseln, 1902/03).
+- samoan_losi — The fisherman-demigod is given no fixed parentage in the corpus used here; variant traditions loosely make him a descendant of Tagaloa, but no firm genealogical edge is attested for the core batch (G. Turner, Samoa, 1884; J. B. Stair, Old Samoa, 1897).
+- samoan_lefee — The octopus war-god is attested as a solitary district war-power with no parents, consort, or offspring in the sources (G. Turner, Samoa, 1884; J. B. Stair, 'The temple of the Feʻe,' JPS, 1894).
+- samoan_moso — The high earth-god / village aitu Moso is attested as a widely-invoked tutelary power without a genealogy in the corpus used here (G. Turner, Samoa, 1884; J. B. Stair, Old Samoa, 1897).
+- samoan_pava — The host of the first ʻava has no attested divine kin; his mythic counterpart is Tagaloa-ʻUi (the first high chief, distinct from the supreme creator Tagaloa authored here) and his son is unnamed, so no in-batch kin-edges are drawn (J. B. Stair, Old Samoa, 1897; G. Turner, Samoa, 1884).

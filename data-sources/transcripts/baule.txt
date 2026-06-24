@@ -1,0 +1,249 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Baule (Baoulé, of Côte d'Ivoire)
+Era (registered, exact): "Baule traditional religion; continuing"
+Author pass: expansion of the Baule pantheon — well-attested individuated deities still MISSING.
+
+EXISTING FIGURES (NOT re-authored; referenced by id):
+  - baule_nyamien  (Nyamien / Nyamye — the supreme, remote sky-god and creator)
+  - baule_asie     (Asie / Asye — the earth-god/goddess, active power over the inhabited world)
+  - baule_mbotumbo (the monkey-god; the figure also/widely called "Gbekre")
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+The Baule are an Akan people of central Côte d'Ivoire; their religion is comparatively
+thinly documented and is centered far less on a developed roster of named high gods than
+on the earth-god Asie, the nature/power-spirits (asye usu, amwin/amuin), the ancestors,
+and the otherworld (blolo). The principal scholarship is Vincent Guerry, *Life with the
+Baoulé* (1975; orig. *La Vie quotidienne dans un village Baoulé*, INADES, 1972); Susan
+Mullin Vogel, *Baule: African Art, Western Eyes* (Yale, 1997); and Pierre Étienne's
+ethnographic work on Baule village society. The genuinely INDIVIDUATED divine core is
+small and is already largely covered by the three existing figures.
+
+ONE new firmly-attested individuated deity is authored here:
+
+  • ANANGAMA (Anangaman / Anangaman Nyamien) — the creator who ordered the world.
+    Across Baule popular religion and ethnography the supreme creator of the firmament is
+    named "Anangaman Nyamien," and the formula "Anangaman Boli-Alliè" is glossed "Dieu le
+    créateur de l'univers" (God the creator of the universe). The name designates the
+    active creator who ordered (set in place) the three-tiered Baule cosmos and to whose
+    sky-realm / to the otherworld (blolo) the souls of the dead return. Sources treat
+    "Anangaman" and "Nyamien" sometimes as a single compound name for the one supreme
+    creator and sometimes (in the ethnographic/scholarly framing the registry follows,
+    after Guerry and Étienne) as the creator-demiurge aspect set just below the remote,
+    intangible high god Nyamien. The figure is therefore authored as a deity and wired to
+    baule_nyamien with a DIRECTED subordinate-to relation (no reciprocal required), with
+    the dual reading documented in the notes so the registry does not overstate a
+    separation the sources leave open.
+
+FIGURES DELIBERATELY NOT AUTHORED (with cited reasons):
+
+  • GBEKRE (Gbekre / Aboya) — although the task flagged a possible "rat-headed judge of
+    souls," the attested figure called Gbekre is the MONKEY-god, i.e. the SAME being
+    already in the corpus as baule_mbotumbo (which lists "Gbekre" among its alt names and
+    already carries the underworld-judgment / judge-of-the-dead domain and the
+    cup-bearing monkey power-figure). Godchecker ("GBEKRE — the Baule God of Judgment"),
+    ArtTribal, and Vogel all identify Gbekre with the cup-bearing monkey power-object;
+    Vogel/Delafosse note that the word *gbekre* literally means "mouse/rat" (the source of
+    the "rat-headed" confusion), but the cult figure is iconographically the monkey-god.
+    Authoring Gbekre separately would duplicate baule_mbotumbo, so it is NOT authored.
+
+  • ALOUROUA (Aluröa) — listed by Godchecker as a "Baule God of Creation" ("all-powerful
+    but extremely shy; no one knows what he looks like"). In the sources this is understood
+    as another NAME for the same remote supreme creator already in the corpus as
+    baule_nyamien, not an independent individuated deity; NOT authored, to avoid a
+    duplicate of Nyamien.
+
+  • KAKAGYE (Kaka Guié) — appears in popular deity-list compilations (Godchecker) as a
+    "Baule God of Funerals," but it is not securely individuated in the standard
+    ethnographies (Guerry, Vogel, Étienne) and is not corroborated by a scholarly source;
+    NOT authored on the standard of "firmly-attested individuated deity."
+
+  • blolo bian / blolo bla (otherworld spirit-spouses), asye usu (bush spirits), amwin /
+    amuin (power-beings/objects), zuly (protective spirits) — these are CLASSES of spirits,
+    not individuals; per the brief they are NOT authored as figures.
+
+CONCLUSION: With Nyamien, Asie and Mbotumbo already present, the attested individuated
+Baule core is nearly complete; the one well-attested addition is ANANGAMA. Returning a
+single figure is the correct, evidence-bounded outcome here.
+
+================================================================================
+AUTHORED FIGURE
+================================================================================
+
+```json
+[
+  {
+    "id": "baule_anangama",
+    "name": {
+      "primary": "the Creator who Ordered the World",
+      "alt": [
+        "Anangama",
+        "Anangaman",
+        "Anangaman Nyamien",
+        "Annangaman"
+      ],
+      "transliterations": {
+        "baule": "Anangaman",
+        "etymology": "Baule divine name of the supreme creator of the firmament; attested in the formula 'Anangaman Nyamien' (God of the heaven/firmament) and 'Anangaman Boli-Alliè', glossed 'God the creator of the universe'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Baule",
+    "primaryTradition": "Baule",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Baule traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Baule traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Named in Baule cosmology as Anangaman Nyamien, the god of the firmament — the creator who set in place and ordered the three-tiered Baule universe (firmament; the terrestrial world of living beings and spirits; and the otherworld, blolo, of the dead).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' (Baoulé cosmology: the universe of three realities, the firmament being the domain of God, Anangaman Nyamien)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Vincent Guerry, Life with the Baoulé (Three Continents Press, 1975; orig. La Vie quotidienne dans un village Baoulé, INADES, 1972)"
+          }
+        ],
+        "notes": "Continuing cult: Baule traditional religion persists into the present alongside Christianity and Islam."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation-and-ordering-of-the-world",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Anangaman",
+          "script": "Latin (Baule orthography)",
+          "rom": "Anangaman (Boli-Alliè) — 'God the creator of the universe'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Rezo-Ivoire.net, 'Origine des Baoulé Agba' / 'Les valeurs culturelles ancestrales … chez les Baoulé' (the formula 'Anangaman Boli-Alliè' = 'Dieu le créateur de l'univers')"
+          }
+        ]
+      },
+      {
+        "sphereId": "supreme-creator",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Anangaman Nyamien",
+          "script": "Latin (Baule orthography)",
+          "rom": "Anangaman Nyamien — the god of the firmament/heaven"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' (the firmament is the domain of God, Anangaman Nyamien; the creator god, intangible and inaccessible)"
+          }
+        ]
+      },
+      {
+        "sphereId": "souls-of-the-dead",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "blôlô",
+          "script": "Latin (Baule orthography)",
+          "rom": "blolo — the otherworld whence souls come at birth and whither they return at death"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "baoule.ci, 'Étude approfondie sur les funérailles et la mort en pays Baoulé' (the real world is the opposite of the spirit world, blôlô, whence souls come at birth and to which they return at death); Vincent Guerry, Life with the Baoulé (1975)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "order_the_created_world",
+        "name": "to create and set in order the world and its three tiers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As Anangaman Nyamien, the creator who ordered the firmament, the terrestrial world of living beings and spirits, and the otherworld (blolo). 'Anangaman Boli-Alliè' is glossed 'God the creator of the universe'.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' and 'Les valeurs culturelles ancestrales … chez les Baoulé'; Vincent Guerry, Life with the Baoulé (1975)"
+          }
+        ]
+      },
+      {
+        "id": "receive_the_souls_of_the_dead",
+        "name": "to receive the souls of the dead returning from the world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Baule eschatology turns on the immortality of the soul: souls issue from the otherworld (blolo) at birth and return at death. The creator-god of the firmament stands at the head of this cycle between worlds; in some accounts he is figured as keeping the threshold between the living world and the world of the dead.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "baoule.ci, 'Étude approfondie sur les funérailles et la mort en pays Baoulé' (immortality of the soul; souls come from and return to blôlô); Susan Mullin Vogel, Baule: African Art, Western Eyes (1997)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "baule_nyamien",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' (the supreme creator of the firmament is named 'Anangaman Nyamien'; in the ethnographic framing, Anangaman is the active creator-aspect set beneath the remote, intangible high god Nyamien); Vincent Guerry, Life with the Baoulé (1975)"
+          }
+        ],
+        "notes": "Directed (non-symmetric): Anangaman is bound to Nyamien — in the compound divine name 'Anangaman Nyamien' the two may be read as one supreme creator, and in the scholarly framing Anangaman is the creator-demiurge who ordered the world below the remote high god. No reciprocal required."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Anangaman (Anangaman Nyamien), in Baule religion, is the named creator-god of the firmament — the active creator who ordered the three-tiered Baule cosmos and at whose head stands the cycle by which souls issue from and return to the otherworld (blolo); the formula 'Anangaman Boli-Alliè' is glossed 'God the creator of the universe'. He is bound to the remote supreme sky-god Nyamien, with whom he is sometimes identified as a single compound name and sometimes distinguished as the creator-demiurge below him.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Vincent Guerry, Life with the Baoulé (Three Continents Press, 1975; orig. La Vie quotidienne dans un village Baoulé, Abidjan: INADES, 1972)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Susan Mullin Vogel, Baule: African Art, Western Eyes (Yale University Press / Yale University Art Gallery, 1997)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' and 'Les valeurs culturelles ancestrales et les interpénétrations culturelles chez les Baoulé' (Anangaman Nyamien, god of the firmament; 'Anangaman Boli-Alliè' = 'Dieu le créateur de l'univers')"
+          },
+          {
+            "kind": "secondary",
+            "reference": "baoule.ci, 'Étude approfondie sur les funérailles et la mort en pays Baoulé de Côte d'Ivoire' (Baoulé eschatology: souls come from and return to the otherworld blôlô; immortality of the soul)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Entered as a deity (the Baule creator-god of the firmament, 'Anangaman Nyamien'). IMPORTANT INTERPRETIVE NOTE: the Baule sources treat 'Anangaman' and 'Nyamien' both as a single compound name for the one supreme creator AND (in the ethnographic/scholarly framing after Guerry and Étienne) as a creator-demiurge aspect set just below the remote, intangible high god Nyamien (baule_nyamien) — hence the directed subordinate-to relation rather than an identity merge. The Baule are an Akan people, so the creator is cognate with the wider Akan high god Nyame. 'blolo' (otherworld), 'asye usu' (bush spirits) and 'amwin/amuin' (power-beings) are CLASSES of spirits, not individuated figures, and are not authored. Principal scholarship: Guerry (1975); Vogel (1997); Étienne."
+  }
+]
+```
+
+SOLITARY: (none — baule_anangama is wired to baule_nyamien via a directed subordinate-to relation.)
+RECIPROCAL-NEEDED: (none — subordinate-to is a directed, non-symmetric relation and requires no reciprocal on baule_nyamien.)

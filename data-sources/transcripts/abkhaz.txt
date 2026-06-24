@@ -1,0 +1,539 @@
+Abkhaz pantheon — core figures still missing from the registry.
+
+The five Abkhaz figures already in the corpus (abkhaz_antswa the supreme creator, abkhaz_afy the
+thunderer, abkhaz_aitar the sevenfold livestock-god, abkhaz_azhwepshaa the forest-and-game lord, and
+abkhaz_shashwy the smith-god) cover the male/celestial and economic core. What is still missing is the
+attested female-and-agrarian tier and the great oracular mountain-shrine personage. I researched each
+candidate by web search and cross-checked the standard scholarship: V. A. Chirikba, *Between Christianity
+and Islam: Heathen Heritage in the Caucasus* (Brill, 2015); George Hewitt (ed.), *The Abkhazians: A
+Handbook* (Curzon, 1999); Sh. D. Inal-ipa, *The Abkhazians* / Abkhaz ethnography; the *Mythological
+Encyclopedia* (Мифы народов мира / Мифологическая энциклопедия) article on Caucasian-Iberian mythology;
+and the modern field study R. Zelnitskaya, "The Sanctuary of Dydrypsh-nykha Yesterday and Today"
+(Kunstkamera journal, 2023).
+
+Three figures are firmly attested and authored below:
+  • abkhaz_dzhadzha — Dzhadzha (Џьаџьа), goddess of agriculture, the earth and fertility.
+  • abkhaz_erysh   — Erysh (Ерыш), goddess of weaving and women's craft (and of milking).
+  • abkhaz_dydrypsh — Dydrypsh (Дыдрыҧшь), the apaimbar (earthly prophet/representative of Antswa) who
+                      dwells on the sacred Dydrypsh mountain, chief oracular oath-shrine of Abkhazia.
+
+DELIBERATELY NOT AUTHORED (verification failed the "firmly-attested / do not pad" bar):
+  • Saunau — no reliable attestation found in any source after repeated targeted searches; the smith-craft
+    sphere is consistently assigned to Shashwy (already in the corpus, abkhaz_shashwy). Excluded.
+  • Atsany (Аҵаны) — attested (Inal-ipa) but as a collective dwarf-FOLK of the Abkhaz Nart epic, not a
+    single named deity/figure; the only named individual in that cycle (the Nart Tsvitsv) is a hero born
+    among them, not himself an Atsan deity. Per the "only if a named figure" instruction, omitted.
+  • (Anana-Gunda, goddess of bees and marriage, and Dzyzlan, water-goddess, surfaced in the listings but
+    fall outside the assigned candidate set, so they are left for a later batch.)
+
+Native Abkhaz forms lead the etymology; `term` carries the Cyrillic Abkhaz spelling with romanisation,
+and "" is used wherever a native word for a concept is not recorded. inheritability uses none/partial/full
+(divine, non-transmissible powers = "none").
+
+```json
+[
+ {
+  "id": "abkhaz_dzhadzha",
+  "name": {
+   "primary": "Goddess of Agriculture and the Fertile Earth",
+   "alt": [
+    "Dzhadzha",
+    "Jajja",
+    "Dzadza",
+    "Djadja",
+    "Џьаџьа"
+   ],
+   "transliterations": {
+    "abkhaz": "Џьаџьа",
+    "etymology": "Abkhaz ⟨Џьаџьа⟩ Ǯʼaǯʼa, an indigenous theonym of the agrarian cult; glossed as the patroness of tillage, the soil and its increase. No secure further etymology is recorded; the name stands among the archaic female fertility-deities of the Northwest Caucasus."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Abkhaz",
+  "primaryTradition": "Abkhaz",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Honoured from time out of mind as the patroness of agriculture and the fertile earth, invoked over the fields and at sowing and harvest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира), article on Caucasian-Iberian mythology (Dzhadzha, patroness of agriculture and fertility); after Sh. D. Inal-ipa."
+     }
+    ],
+    "notes": "Conceived as a perpetual, undying nature-goddess; no birth or death is narrated, only her standing function over the tilled land."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "agriculture-and-tillage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Џьаџьа",
+     "script": "Cyrl",
+     "rom": "Ǯʼaǯʼa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира), Caucasian-Iberian mythology (Dzhadzha as patroness of agriculture); cf. Inal-ipa, Abkhaz ethnography."
+     }
+    ]
+   },
+   {
+    "sphereId": "earth-and-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abkhaz traditional religion (Dzhadzha/Dzadza, goddess of agriculture, the earth and fertility); Hewitt, George (ed.), The Abkhazians: A Handbook, Curzon, 1999, on the agrarian cult."
+     }
+    ]
+   },
+   {
+    "sphereId": "household-and-domestic-labour",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира): in folklore Dzhadzha's functions widened so that her help was sought in domestic and household work."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ripen_the_crops",
+    "name": "makes the sown fields bear and brings the grain to ripeness",
+    "inheritability": "none",
+    "notes": "The presiding power of the agrarian cult: she is prayed to over the planted ground for a good yield. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира), Caucasian-Iberian mythology (Dzhadzha, patroness of agriculture and fertility)."
+     }
+    ]
+   },
+   {
+    "id": "quicken_the_fertile_earth",
+    "name": "fills the soil with fertility and the increase of growing things",
+    "inheritability": "none",
+    "notes": "She embodies general fertility — the productive force of the earth itself — alongside her specifically agricultural patronage.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abkhaz traditional religion (Dzhadzha as embodiment of general fertility); Hewitt, The Abkhazians: A Handbook, 1999."
+     }
+    ]
+   },
+   {
+    "id": "aid_household_work",
+    "name": "lends her help in the household and domestic labour of the farmstead",
+    "inheritability": "none",
+    "notes": "An extension of her sphere attested in the folklore record, where her aid is asked in domestic and household tasks beyond the field proper.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира): folklore broadening of Dzhadzha's functions into domestic/household work."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dzhadzha_harvest_offering",
+    "name": "first-fruits and harvest offering",
+    "kind": "offering",
+    "role": "The grain and first-fruits of the field presented in prayer to Dzhadzha at sowing and harvest to secure her blessing on the crop.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abkhaz traditional religion / agrarian ritual practice (offerings to the agriculture-goddess at the field); Hewitt, The Abkhazians: A Handbook, 1999."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Dzhadzha (Dzadza) is the Abkhaz goddess of agriculture, the earth and fertility, patroness of the tilled fields, whose functions in folklore widened to include help in domestic and household work.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира / Мифологическая энциклопедия), article on Caucasian-Iberian (Caucaso-Iberian) mythology, s.v. Dzhadzha; drawing on Sh. D. Inal-ipa's Abkhaz ethnography."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hewitt, George (ed.). The Abkhazians: A Handbook. Curzon Press, 1999 (Abkhaz traditional religion and the agrarian deities)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Among the Caucasian highlanders the ancient patrons of agriculture, fertility and harvest include the Abkhaz Dzhadzha and Anapa-nagua, set in the same functional class as Adyghe Thaghaledj and Vainakh Tusholi.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира), Caucasian-Iberian mythology (comparative list of agrarian/harvest patrons)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Abkhaz ⟨Џьаџьа⟩ Ǯʼaǯʼa. A female agrarian deity of the Abkhaz pantheon, functionally parallel to the harvest-patron Anapa-nagua and to Circassian Sozeresh/Thaghaledj and Vainakh Maetsill/Tusholi. SOLITARY: no genealogy, spouse or other named relationship is recorded for her in the surviving tradition — she is attested purely as a functional fertility/agriculture goddess (Mythological Encyclopedia; Inal-ipa)."
+ },
+ {
+  "id": "abkhaz_erysh",
+  "name": {
+   "primary": "Goddess of Weaving and Women's Craft",
+   "alt": [
+    "Erysh",
+    "Yerysh",
+    "Erish",
+    "Ерыш"
+   ],
+   "transliterations": {
+    "abkhaz": "Ерыш",
+    "etymology": "Abkhaz ⟨Ерыш⟩ Erəš, the female deity-name of the weaving craft. The songs and tales once attached to her have not survived, and no secure etymology is preserved; she belongs to the archaic stratum of Abkhaz craft-patron goddesses."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Abkhaz",
+  "primaryTradition": "Abkhaz",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Revered from of old as the female deity of the weaving craft, patroness of the loom and of women's textile work.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира), Caucasian-Iberian mythology (Erysh, female deity of weaving); after Inal-ipa."
+     }
+    ],
+    "notes": "An undying craft-goddess; no narrative of her birth or death survives — the tradition explicitly preserves only her function, the stories and songs about her having been lost."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "weaving-and-textile-craft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ерыш",
+     "script": "Cyrl",
+     "rom": "Erəš"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира), Caucasian-Iberian mythology (Erysh, female deity of the weaving craft, compared to Pallas Athena as goddess of spinning and weaving)."
+     }
+    ]
+   },
+   {
+    "sphereId": "womens-domestic-crafts",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abkhaz traditional religion (Erysh, goddess of weaving and milking — patroness of women's domestic crafts); Hewitt, The Abkhazians: A Handbook, 1999."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "patronise_the_loom",
+    "name": "guides and prospers the weaver's hands at the loom",
+    "inheritability": "none",
+    "notes": "She is the patron-power of weaving itself, invoked by women over the loom; the Mythological Encyclopedia likens her to Pallas Athena as the goddess of spinning and weaving. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира), Caucasian-Iberian mythology (Erysh ~ Pallas Athena, goddess of spinning and weaving)."
+     }
+    ]
+   },
+   {
+    "id": "bless_the_milking",
+    "name": "watches over the milking and the women's dairy work",
+    "inheritability": "none",
+    "notes": "Listed in the Abkhaz cult as goddess of weaving 'and of milking', extending her patronage across the round of women's domestic labour.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abkhaz traditional religion (Erysh, goddess of weaving and milking); Hewitt, The Abkhazians: A Handbook, 1999."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "erysh_loom",
+    "name": "the weaver's loom",
+    "kind": "implement",
+    "role": "The loom and its weaving over which Erysh presides — the central craft-object of her domain, worked by Abkhaz women under her patronage.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира), Caucasian-Iberian mythology (Erysh as deity of the weaving craft / the loom)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Erysh is the Abkhaz female deity of the weaving craft — patroness of the loom and of women's textile work, also named as goddess of milking — likened in the scholarship to Pallas Athena as goddess of spinning and weaving; the songs and stories once dedicated to her have not been preserved.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Mythological Encyclopedia (Мифы народов мира / Мифологическая энциклопедия), article on Caucasian-Iberian mythology, s.v. Erysh; drawing on Sh. D. Inal-ipa's Abkhaz ethnography."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hewitt, George (ed.). The Abkhazians: A Handbook. Curzon Press, 1999 (Erysh, goddess of weaving and milking in the Abkhaz pantheon)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Abkhaz ⟨Ерыш⟩ Erəš. A craft-patron goddess; the comparison to Pallas Athena is the encyclopedia's, marking her as the Abkhaz divine personification of weaving. SOLITARY: no kin, spouse or other named relationship survives for her — the tradition expressly notes that the tales and songs about Erysh are lost, leaving only her craft-function attested (Mythological Encyclopedia; Inal-ipa)."
+ },
+ {
+  "id": "abkhaz_dydrypsh",
+  "name": {
+   "primary": "Oracular Prophet of the Sacred Mountain",
+   "alt": [
+    "Dydrypsh",
+    "Dydrypsh-nykha",
+    "Didripsh",
+    "Дыдрыҧшь"
+   ],
+   "transliterations": {
+    "abkhaz": "Дыдрыҧшь / Дыдрыҧшь-ныха",
+    "etymology": "Abkhaz ⟨Дыдрыҧшь⟩ Dədrəpšʲ, the name of the sacred mountain near Achandara and of its indwelling apaimbar; it contains a-dəd 'thunder' (Chirikba). The shrine-form is Dydrypsh-nykha, with a-nəxa 'sanctuary, holy place'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Abkhaz",
+  "primaryTradition": "Abkhaz",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Dwells upon the sacred Dydrypsh mountain above Achandara as the apaimbar — the earthly prophet and representative of the supreme god Antswa — and there receives oaths and judges the truth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zelnitskaya, R. 'The Sanctuary of Dydrypsh-nykha Yesterday and Today.' Kunstkamera journal, no. 1(19), 2023 (Dydrypsh as apaimbar/earthly prophet of Antswa dwelling on the mountain)."
+     }
+    ],
+    "notes": "Conceived as a deathless mountain-dwelling divine personage (apaimbar), not a born-and-dying figure; his existence is bound to the sacred peak and its sanctuary."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sacred-mountain-and-shrine",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Дыдрыҧшь-ныха",
+     "script": "Cyrl",
+     "rom": "Dədrəpšʲ-nəxa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill, 2015 (Dydrypsh-nykha on Dydrypsh mountain, the name containing a-dəd 'thunder', chief shrine of Abkhazia)."
+     }
+    ]
+   },
+   {
+    "sphereId": "oracle-and-divine-judgement",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zelnitskaya, R. 'The Sanctuary of Dydrypsh-nykha Yesterday and Today.' Kunstkamera, 2023 (the oracular oath-shrine where truth is judged and the guilty punished)."
+     }
+    ]
+   },
+   {
+    "sphereId": "oath-and-justice",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abkhaz traditional religion: Dydrypsh-nykha as the chief place of oath-swearing, served by the priestly Chichba clan of Achandara; Hewitt, The Abkhazians: A Handbook, 1999."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "judge_oaths_and_truth",
+    "name": "hears oaths at the mountain shrine and discerns the truth of the swearer",
+    "inheritability": "none",
+    "notes": "As the great oracular sanctuary, parties to a dispute swear before Dydrypsh; the apaimbar reveals guilt or innocence. A divine office, not a transferable power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zelnitskaya, R. 'The Sanctuary of Dydrypsh-nykha Yesterday and Today.' Kunstkamera, 2023; Abkhaz traditional religion (oath-oracle of Dydrypsh-nykha)."
+     }
+    ]
+   },
+   {
+    "id": "punish_the_forsworn",
+    "name": "strikes down the perjurer and the wrongdoer who swears falsely before him",
+    "inheritability": "none",
+    "notes": "A false oath or unpunished crime brought before the shrine is believed to draw the deity's lethal retribution upon the guilty and their line — the sanction behind his oracular authority.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abkhaz traditional religion (retribution of Dydrypsh-nykha upon the forsworn); Chirikba, Between Christianity and Islam, 2015."
+     }
+    ]
+   },
+   {
+    "id": "represent_antswa_on_earth",
+    "name": "stands as the earthly prophet and messenger of the supreme god Antswa",
+    "inheritability": "none",
+    "notes": "Dydrypsh is named an apaimbar — an 'earthly prophet'/representative of Antswa — through whom the high god's will is made manifest at the mountain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zelnitskaya, R. 'The Sanctuary of Dydrypsh-nykha Yesterday and Today.' Kunstkamera, 2023 (Dydrypsh as apaimbar/representative of Antswa)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dydrypsh_mountain_sanctuary",
+    "name": "the mountain sanctuary of Dydrypsh-nykha",
+    "kind": "shrine",
+    "role": "The holy place (a-nəxa) on Dydrypsh mountain above Achandara that embodies the deity on earth — the chief of the Seven Sanctuaries (Abzhnyha) of Abkhazia, the locus of his oath-oracle and sacrifices.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill, 2015 (Dydrypsh-nykha as chief shrine among the seven Abkhaz sanctuaries)."
+     }
+    ]
+   },
+   {
+    "id": "dydrypsh_sacrifice",
+    "name": "the bull-sacrifice and communal prayer at the shrine",
+    "kind": "offering",
+    "role": "The animal sacrifices and communal prayers offered at Dydrypsh-nykha by suppliants and by the Chichba priest on behalf of the people.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zelnitskaya, R. 'The Sanctuary of Dydrypsh-nykha Yesterday and Today.' Kunstkamera, 2023 (sacrifice and communal prayer at the sanctuary)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "subordinate-to",
+    "personId": "abkhaz_antswa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zelnitskaya, R. 'The Sanctuary of Dydrypsh-nykha Yesterday and Today.' Kunstkamera, 2023 (Dydrypsh is one apaimbar/representative of the god Antswa, dwelling on the mountain on his behalf)."
+     }
+    ],
+    "notes": "Dydrypsh is an apaimbar — an earthly prophet and representative of the supreme creator Antswa (abkhaz_antswa) — and so stands under and serves him. Non-symmetric (subordinate/representative) relation."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Dydrypsh is the apaimbar ('earthly prophet'/representative of the supreme god Antswa) who dwells on the sacred Dydrypsh mountain above Achandara (Gudauta district); his sanctuary, Dydrypsh-nykha, is the chief and most revered of the Seven Sanctuaries of Abkhazia, a great oracular oath-shrine served by the Chichba priestly clan.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill, Leiden, 2015 (Dydrypsh-nykha, name containing a-dəd 'thunder', chief shrine of Abkhazia)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Zelnitskaya, R. 'The Sanctuary of Dydrypsh-nykha Yesterday and Today.' Kunstkamera (Kunstkamera journal), no. 1(19), 2023 (Dydrypsh as apaimbar of Antswa; oracle, oath and sacrifice)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hewitt, George (ed.). The Abkhazians: A Handbook. Curzon Press, 1999 (the sacred groves/mountains, the seven shrines and oath-cult of Abkhaz traditional religion)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The name Dydrypsh contains the Abkhaz element a-dəd 'thunder', tying the mountain-deity to the storm/thunder sphere of the high god.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. Between Christianity and Islam, 2015 (etymology of Dədrəpšʲ-nəxa, a-dəd 'thunder')."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Abkhaz ⟨Дыдрыҧшь⟩ Dədrəpšʲ; shrine-form Dydrypsh-nykha (a-nəxa 'sanctuary'). Personified as an apaimbar of Antswa rather than an independent high god, hence classed deity (a divine intermediary) with a subordinate-to relation to abkhaz_antswa. The first of the Seven Sanctuaries (Abzhnyha): Dydrypsh, Lashkendar, Ldzaa, Lykhny, Elyr (Ilor), Inal-Kuba and Bytkha."
+ }
+]
+```
+
+SOLITARY: abkhaz_dzhadzha — no genealogy, spouse or other named relationship is recorded in the surviving Abkhaz tradition; she is attested purely as the functional goddess of agriculture/earth/fertility (Mythological Encyclopedia, Caucasian-Iberian mythology; Sh. D. Inal-ipa, Abkhaz ethnography).
+SOLITARY: abkhaz_erysh — no kin, spouse or other named relationship survives; the tradition expressly records that the tales and songs about Erysh are lost, leaving only her weaving/milking craft-function attested (Mythological Encyclopedia; Sh. D. Inal-ipa).
+RECIPROCAL-NEEDED: (none) — the only relation toward an existing corpus figure, abkhaz_dydrypsh subordinate-to abkhaz_antswa, is non-symmetric (not in the reciprocal set), so no reciprocal edge is required on abkhaz_antswa.

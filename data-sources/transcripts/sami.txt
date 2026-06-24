@@ -1,0 +1,768 @@
+Pantheon Registry — Sámi (Saami) pantheon, mythic core: the Áhkká household goddesses, the wind-man, the creator's son, and the death-rider
+=====================================================================================================================================
+
+Tradition: Sámi (the Saami of Sápmi — northern Fennoscandia and the Kola Peninsula).
+Era key used: mythic (the single registered Sámi era).
+
+Scope of this batch. The corpus already carries six Sámi figures — the sun-mother
+(sami_beaivi), the thunder-god Horagalles (sami_horagalles), the death-goddess
+Jábmeáhkká (sami_jabmeahkka), the alder-man/hunt-god Leib-olmai (sami_leib_olmai),
+the moon-god Mano (sami_mano) and the high creator Radien-attje (sami_radien_attje).
+The conspicuous gap is the great female complex of the Áhkká ("old women / goddesses")
+who govern conception, gestation and birth — the mother Máttaráhkká and her three
+daughters Sáráhkká, Juoksáhkká and Uksáhkká — together with the wind-man Bieggolmai,
+the creator's active son Radien-pardne, and the death- and disease-god Ruohtta (Ruto).
+This batch adds seven firmly-attested figures:
+
+  • sami_mattarahkka — Máttaráhkká (Maderakka), the ancestral mother-goddess who dwells
+                       beneath the floor of the goahti; she receives the soul sent down
+                       from the upper world and clothes it with a body, then passes the
+                       child to her daughters. Mother of the three Áhkká.
+  • sami_sarahkka    — Sáráhkká, the most beloved of the goddesses, who dwells under the
+                       hearth; she of birth, menstruation, sexuality and the growing flesh
+                       of the child in the womb. Wood was cloven and porridge eaten in her
+                       honour after a successful birth.
+  • sami_juoksahkka  — Juoksáhkká, the "bow-woman," guardian of children, who if duly
+                       petitioned could turn a girl-child in the womb into a boy.
+  • sami_uksahkka    — Uksáhkká, the "door-woman," who dwells by the door of the goahti,
+                       guards those who pass in and out, receives the newborn into the
+                       world and protects the child learning to walk.
+  • sami_bieggolmai  — Bieggolmai / Biegga-olmai, the "wind-man," who shovels the winds
+                       into and out of their cave with his two shovels; lord of wind,
+                       weather and sea, one of the deities of the noaidi drum.
+  • sami_radien_pardne — Radien-pardne, the active son of the passive high creator
+                       Radien-attje (and of Radien-akka), who carries out his father's
+                       will in the world.
+  • sami_ruohtta     — Ruohtta (Ruto), the disease- and death-god who rides on horseback
+                       — alone among Sámi powers — spreading sickness; ruler of the
+                       underworld Rotaimo, appeased by the sacrifice (transfer) of a horse.
+
+Sources and attestation. These figures are documented in the early ethnographic and
+missionary record and in the standard handbooks: Lars Levi Læstadius, Fragments of
+Lappish Mythology (manuscript 1838–1845; ed. Pentikäinen, trans. Vähämäki, 2002),
+who emphasised the "more Lappish" character of the birth-giving Áhkká; Uno Holmberg
+(Harva), Finno-Ugric [and Siberian] Mythology / the Lapp sections (1927); Håkan Rydving,
+The End of Drum-Time: Religious Change among the Lule Saami, 1670s–1740s (1993); the
+earlier sources Læstadius, Holmberg and Rydving themselves draw on (Tornæus, Skanke,
+Jessen, Leem, Friis); and the noaidi drum-iconography (Manker, Die lappische
+Zaubertrommel, 1938–50), on which a group of three Áhkká with their mother is one of
+the most common female motifs. The three named daughters are a Western-Sápmi
+elaboration: in the eastern (Kola / Finnish) area the daughters are not distinguished,
+and Máttaráhkká alone (or merged with Sáráhkká) is found. Everything below is
+attested in these works; nothing is invented. All entries are classed as secondary
+attestation, since the Sámi tradition is known only through outside observers and the
+later scholarly record.
+
+A note on relations. The conception-process the sources describe gives a natural,
+cited chain: the soul is sent from the upper world by Radien (Veralden-radien /
+Radien-attje), Máttaráhkká gives it a body, Sáráhkká places it in the mother and grows
+its flesh, Juoksáhkká and Uksáhkká attend the birth and the newborn. The three
+daughters are wired with parentIds ["sami_mattarahkka"] and reciprocal mother/sibling
+edges; Radien-pardne with parentIds ["sami_radien_attje"]. Symmetric edges toward the
+existing figure sami_radien_attje are flagged RECIPROCAL-NEEDED below.
+
+```json
+[
+  {
+    "id": "sami_mattarahkka",
+    "name": {
+      "primary": "Máttaráhkká",
+      "alt": ["Maderakka", "Madder-akka", "Máttaráhkká", "Maddarakka", "Madder-attje's wife"],
+      "transliterations": {
+        "sami": "Máttaráhkká",
+        "etymology": "Northern Sámi máttar- 'root, origin, ancestor, forebear' + áhkká 'old woman, wife, mother, goddess' — 'the ancestral / origin mother', the foremother of the household goddesses. Also given as Maderakka beside her male counterpart Madder-attje, the 'ancestor-father'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "dwells-beneath-the-goahti-as-ancestral-mother-of-the-akka",
+        "sources": [{ "kind": "secondary", "reference": "L. L. Læstadius, Fragments of Lappish Mythology (ms. 1838–1845; ed. Pentikäinen, trans. Vähämäki, 2002), on the birth-giving Áhkká and their mother Maderakka" }],
+        "notes": "The ancestral mother-goddess who dwells beneath the floor of the goahti; she receives the soul sent down from the upper world and gives it a body, then passes the child on to her daughters."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-motherhood",
+        "contextTag": "lifelong",
+        "term": { "value": "Máttaráhkká", "script": "Northern Sámi", "rom": "Mattarahkka" },
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927), Lapp section: Maderakka, the mother of the household birth-goddesses" }]
+      },
+      {
+        "sphereId": "fertility-and-childbirth",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "secondary", "reference": "Britannica, 'Madderakka': the mother-goddess who receives the soul and gives the child its body; mother of Sarakka, Juksakka and Uksakka" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive-soul-and-give-body",
+        "name": "Receive the soul sent from the upper world and clothe it with a body",
+        "inheritability": "partial",
+        "sources": [{ "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time (1993); Britannica 'Madderakka': Maderakka takes the soul from Veralden-radien/Radien and gives the child a body, which Sarakka places in the womb" }],
+        "notes": "First link in the conception-chain; her power passes to her daughters Sáráhkká, Juoksáhkká and Uksáhkká, hence partial inheritability."
+      },
+      {
+        "id": "make-women-and-animals-fertile",
+        "name": "Make women and the female animals fertile",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): Maderakka the mother of all life, who makes humans and beasts fruitful" }],
+        "notes": "Mother of all life, governing the fertility of women and of the reindeer and other female animals."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "goahti-floor-dwelling",
+        "name": "Dwelling beneath the floor of the goahti",
+        "kind": "sacred-place",
+        "role": "dwelling",
+        "sources": [{ "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time (1993): the Áhkká dwell beneath the floor of the dwelling; Maderakka under the goahti, her daughters at hearth and door" }],
+        "notes": "The four Áhkká were located in the women's domestic space of the goahti — Máttaráhkká under the floor, Sáráhkká under the hearth, Uksáhkká by the door."
+      },
+      {
+        "id": "mattarahkka-drum-figure",
+        "name": "Áhkká group on the noaidi drum",
+        "kind": "cosmic-symbol",
+        "role": "subject",
+        "sources": [{ "kind": "secondary", "reference": "E. Manker, Die lappische Zaubertrommel (1938–50): a group of three Áhkká with their mother is a common female motif on the drumheads" }],
+        "notes": "Máttaráhkká and her daughters appear among the drum-figures as a group of women-goddesses."
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother",
+        "personId": "sami_sarahkka",
+        "sources": [{ "kind": "secondary", "reference": "Læstadius, Fragments of Lappish Mythology; Holmberg, Finno-Ugric Mythology (1927): Sarakka the daughter of Maderakka" }],
+        "notes": "Mother of Sáráhkká, the most beloved of the three daughters."
+      },
+      {
+        "kind": "mother",
+        "personId": "sami_juoksahkka",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Rydving, The End of Drum-Time (1993): Juksakka one of the daughters of Maderakka" }],
+        "notes": "Mother of Juoksáhkká, the bow-woman."
+      },
+      {
+        "kind": "mother",
+        "personId": "sami_uksahkka",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Rydving, The End of Drum-Time (1993): Uksakka one of the daughters of Maderakka" }],
+        "notes": "Mother of Uksáhkká, the door-woman."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Máttaráhkká (Maderakka; Northern Sámi máttar 'ancestor, origin' + áhkká 'old woman/goddess') is the ancestral mother-goddess of Sámi religion, who dwells beneath the goahti, receives the soul from the upper world and gives the child its body; she is the mother of the three birth-goddesses Sáráhkká, Juoksáhkká and Uksáhkká. The three named daughters are a Western-Sámi development, not found in the east.",
+        "citations": [
+          { "kind": "secondary", "reference": "L. L. Læstadius, Fragments of Lappish Mythology (ms. 1838–1845; ed. J. Pentikäinen, trans. B. Vähämäki, 2002)" },
+          { "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (The Mythology of All Races IV), 1927" },
+          { "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time: Religious Change among the Lule Saami, 1670s–1740s (1993)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sámi ancestral mother-goddess of conception and birth (classed as deity). Máttaráhkká / Maderakka, 'the origin-mother' (máttar 'ancestor, root' + áhkká 'goddess, old woman'). Head of the four household Áhkká; she gives the soul its body and hands the child to her daughters. The three named daughters belong to Western Sápmi; eastward Máttaráhkká alone (or merged with Sáráhkká) is found. Secondary attestation (Læstadius, Holmberg, Rydving; drum-iconography)."
+  },
+  {
+    "id": "sami_sarahkka",
+    "name": {
+      "primary": "Sáráhkká",
+      "alt": ["Sarakka", "Sarahkka", "Sár-áhkká", "Saracca"],
+      "transliterations": {
+        "sami": "Sáráhkká",
+        "etymology": "Northern Sámi, usually derived from sárrit / sárget 'to cleave, split, divide' + áhkká 'old woman, goddess' — 'the cleaving woman', after the cloven (split) firewood offered her and her work of dividing/forming the child; she dwells under the hearth (árran)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["sami_mattarahkka"],
+    "parentRoles": { "sami_mattarahkka": "mother" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "dwells-under-the-hearth-as-goddess-of-birth-and-the-growing-child",
+        "sources": [{ "kind": "secondary", "reference": "L. L. Læstadius, Fragments of Lappish Mythology (ms. 1838–1845; ed. Pentikäinen, 2002): Sarakka the most beloved of the goddesses, who helps at birth" }],
+        "notes": "Daughter of Máttaráhkká; she dwells beneath the hearth and grows the flesh of the child about its bones in the womb, and aids the woman in labour. The most beloved and most invoked of the Sámi goddesses."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "childbirth",
+        "contextTag": "lifelong",
+        "term": { "value": "Sáráhkká", "script": "Northern Sámi", "rom": "Sarahkka" },
+        "sources": [{ "kind": "secondary", "reference": "Britannica, 'Madderakka': Sarakka, who lives under the hearth, aids in childbirth and grows the child's flesh; the cloven wood and the porridge offered her" }]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time (1993): Sáráhkká, the goddess of fertility, menstruation and birth, the most important of the household goddesses for women" }]
+      },
+      {
+        "sphereId": "hearth",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "secondary", "reference": "Rydving, The End of Drum-Time (1993): Sáráhkká dwells beneath the hearth of the goahti" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grow-the-childs-flesh",
+        "name": "Grow the flesh of the child about its bones in the womb",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "Britannica, 'Madderakka'; Læstadius, Fragments of Lappish Mythology: Sarakka forms the body / flesh of the child that Maderakka has given a body" }],
+        "notes": "Second link in the conception-chain after Máttaráhkká gives the body."
+      },
+      {
+        "id": "ease-labour-cloven-wood",
+        "name": "Ease the pains of labour, for which wood is cloven in two",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "Britannica, 'Madderakka': wood was split for Sarakka to make childbirth easier; godchecker / ethnographic record of the cloven-wood rite" }],
+        "notes": "At a birth a stick of firewood was cloven in two in her honour, to make the delivery easier; the 'cleaving' echoes her name."
+      },
+      {
+        "id": "govern-menstruation-and-sexuality",
+        "name": "Govern menstruation, women's fertility and sexuality",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time (1993): Sáráhkká, goddess of menstruation, sexuality and birth" }],
+        "notes": "Patroness of women through the whole reproductive cycle."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sarahkka-cloven-wood",
+        "name": "Cloven firewood (Sáráhkká's split stick)",
+        "kind": "ritual-object",
+        "role": "attribute",
+        "sources": [{ "kind": "secondary", "reference": "Britannica, 'Madderakka': wood cloven in two for Sarakka at childbirth" }],
+        "notes": "A stick split in two at a birth, the act that gives her the by-name 'cleaving woman'."
+      },
+      {
+        "id": "sarahkka-porridge",
+        "name": "Sáráhkká's porridge (sáráhkká-gáhkku / birth-porridge)",
+        "kind": "offering",
+        "role": "offering",
+        "sources": [{ "kind": "secondary", "reference": "Britannica / Holmberg, Finno-Ugric Mythology (1927): a special porridge eaten in Sarakka's honour after a successful birth; also a brandy/porridge libation" }],
+        "notes": "After a safe delivery a special porridge (and in some accounts a dram) was consumed in her honour; 'Sáráhkká's porridge' was eaten by women."
+      },
+      {
+        "id": "sarahkka-hearth",
+        "name": "The hearth of the goahti (árran)",
+        "kind": "sacred-place",
+        "role": "dwelling",
+        "sources": [{ "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time (1993): Sáráhkká dwells beneath the hearth, in the women's part of the dwelling" }],
+        "notes": "Her seat within the home, beneath the central hearth."
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "sami_juoksahkka",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Rydving, The End of Drum-Time (1993): the three sisters Sarakka, Juksakka and Uksakka, daughters of Maderakka" }],
+        "notes": "Sister of Juoksáhkká, the bow-woman."
+      },
+      {
+        "kind": "sibling",
+        "personId": "sami_uksahkka",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Rydving, The End of Drum-Time (1993): the three sisters daughters of Maderakka" }],
+        "notes": "Sister of Uksáhkká, the door-woman."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sáráhkká (Sarakka; usually < sárrit 'to cleave' + áhkká 'goddess') is the most beloved Sámi goddess, daughter of Máttaráhkká, who dwells under the hearth and presides over menstruation, sexuality, fertility and birth; she grows the flesh of the child in the womb, eases labour (for which a stick was cloven in two), and received a special porridge after a successful delivery.",
+        "citations": [
+          { "kind": "secondary", "reference": "L. L. Læstadius, Fragments of Lappish Mythology (ms. 1838–1845; ed. Pentikäinen, trans. Vähämäki, 2002)" },
+          { "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (The Mythology of All Races IV), 1927" },
+          { "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time: Religious Change among the Lule Saami, 1670s–1740s (1993)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sámi goddess of birth, menstruation and the growing child (classed as deity); the most beloved of the goddesses. Sáráhkká / Sarakka, 'the cleaving woman' (sárrit 'to split' + áhkká), who dwells under the hearth. Daughter of Máttaráhkká. Honoured with cloven firewood and a birth-porridge. Secondary attestation (Læstadius, Holmberg, Rydving)."
+  },
+  {
+    "id": "sami_juoksahkka",
+    "name": {
+      "primary": "Juoksáhkká",
+      "alt": ["Juksakka", "Juksáhkká", "Juoksa-áhkká", "Juksahkka"],
+      "transliterations": {
+        "sami": "Juoksáhkká",
+        "etymology": "Northern Sámi juoksa 'bow' (Proto-Samic *juoksë; an ancient word) + áhkká 'old woman, goddess' — 'the bow-woman', whose bow is the sign of the male child and the hunt she could grant a son for."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["sami_mattarahkka"],
+    "parentRoles": { "sami_mattarahkka": "mother" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "dwells-in-the-goahti-as-the-bow-woman-guardian-of-children",
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): Juksakka, the 'bow-woman', daughter of Maderakka, who could turn a girl-child into a boy" }],
+        "notes": "Daughter of Máttaráhkká; the bow-woman who attends the development of the unborn child and, if duly petitioned, could change a girl-child in the womb into a boy."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "childbirth",
+        "contextTag": "lifelong",
+        "term": { "value": "Juoksáhkká", "script": "Northern Sámi", "rom": "Juoksahkka" },
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927): Juksakka, who helps in the development and birth of the child" }]
+      },
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time (1993): Juksakka the bow-woman, guardian especially of boy-children" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "turn-girl-child-to-boy",
+        "name": "Turn a girl-child in the womb into a boy",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Britannica 'Madderakka': Juksakka, if brought offerings, could change the sex of the unborn from female to male" }],
+        "notes": "Her signature power; the bow (juoksa) is the emblem of the male child she could grant."
+      },
+      {
+        "id": "guard-children",
+        "name": "Guard children and watch over the growing child",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time (1993): Juksakka the guardian of children" }],
+        "notes": "Protectress of the child, especially boys."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "juoksahkka-bow",
+        "name": "The bow of Juoksáhkká (juoksa)",
+        "kind": "weapon",
+        "role": "attribute",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Northern Sámi juoksa 'bow' (the element in her name); drum-figure surveys" }],
+        "notes": "The bow that names her, emblem of the male child and the hunter she could make of him; she is shown with the bow on drum-figures."
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "sami_sarahkka",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Rydving, The End of Drum-Time (1993): the three sisters daughters of Maderakka" }],
+        "notes": "Sister of Sáráhkká."
+      },
+      {
+        "kind": "sibling",
+        "personId": "sami_uksahkka",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Rydving, The End of Drum-Time (1993): the three sisters daughters of Maderakka" }],
+        "notes": "Sister of Uksáhkká."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Juoksáhkká (Juksakka; Northern Sámi juoksa 'bow' + áhkká 'goddess') is the 'bow-woman', a daughter of Máttaráhkká, who attends the development of the unborn child, guards children (especially boys), and — if duly petitioned with offerings — could turn a girl-child in the womb into a boy.",
+        "citations": [
+          { "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (The Mythology of All Races IV), 1927" },
+          { "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time: Religious Change among the Lule Saami, 1670s–1740s (1993)" },
+          { "kind": "secondary", "reference": "L. L. Læstadius, Fragments of Lappish Mythology (ms. 1838–1845; ed. Pentikäinen, 2002)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sámi 'bow-woman' goddess of children and the male child (classed as deity). Juoksáhkká / Juksakka (juoksa 'bow' + áhkká). Daughter of Máttaráhkká, sister of Sáráhkká and Uksáhkká; could change the sex of the unborn from girl to boy. Her attribute is the bow. Secondary attestation (Holmberg, Rydving, Læstadius)."
+  },
+  {
+    "id": "sami_uksahkka",
+    "name": {
+      "primary": "Uksáhkká",
+      "alt": ["Uksakka", "Uks-áhkká", "Ukssakka", "Uksahkka"],
+      "transliterations": {
+        "sami": "Uksáhkká",
+        "etymology": "Northern Sámi uksa 'door' + áhkká 'old woman, goddess' — 'the door-woman', who dwells by the door of the goahti and guards the threshold and those who pass it."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["sami_mattarahkka"],
+    "parentRoles": { "sami_mattarahkka": "mother" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "dwells-by-the-door-as-the-door-woman-and-protector-of-the-newborn",
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): Uksakka, the 'door-woman', daughter of Maderakka, who lives by the door and receives the child into the world" }],
+        "notes": "Daughter of Máttaráhkká; she dwells by the door of the goahti, guards those who step in and out, receives the newborn into the world and protects the child afterwards, especially as it learns to walk."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "childbirth-and-protection-of-women",
+        "contextTag": "lifelong",
+        "term": { "value": "Uksáhkká", "script": "Northern Sámi", "rom": "Uksahkka" },
+        "sources": [{ "kind": "secondary", "reference": "Britannica, 'Madderakka': Uksakka, who lives near the door, receives the newborn child and protects it" }]
+      },
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time (1993): Uksakka the door-woman, who guards those who pass in and out of the dwelling" }]
+      },
+      {
+        "sphereId": "household",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "secondary", "reference": "Rydving, The End of Drum-Time (1993): the Áhkká of the door, in the domestic space of the goahti" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive-the-newborn",
+        "name": "Receive the newborn child into the world",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "Britannica, 'Madderakka'; Holmberg, Finno-Ugric Mythology (1927): Uksakka receives the child at birth, the last of the three sisters in the birth-process" }],
+        "notes": "Final link in the birth-chain, taking the child as it enters the world by the door."
+      },
+      {
+        "id": "guard-the-threshold-and-walking-child",
+        "name": "Guard the threshold and protect the child learning to walk",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); ethnographic record: Uksakka guards those passing the door and keeps the toddling child from harm" }],
+        "notes": "Protectress of the door and of the small child as it begins to walk, so it should not hurt itself."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "uksahkka-door",
+        "name": "The door of the goahti (uksa)",
+        "kind": "sacred-place",
+        "role": "dwelling",
+        "sources": [{ "kind": "secondary", "reference": "Rydving, The End of Drum-Time (1993): Uksáhkká dwells by the door (uksa) of the dwelling; the element uksa 'door' in her name" }],
+        "notes": "Her seat by the door, the threshold she guards; the source of her name."
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "sami_sarahkka",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Rydving, The End of Drum-Time (1993): the three sisters daughters of Maderakka" }],
+        "notes": "Sister of Sáráhkká."
+      },
+      {
+        "kind": "sibling",
+        "personId": "sami_juoksahkka",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Rydving, The End of Drum-Time (1993): the three sisters daughters of Maderakka" }],
+        "notes": "Sister of Juoksáhkká."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Uksáhkká (Uksakka; Northern Sámi uksa 'door' + áhkká 'goddess') is the 'door-woman', a daughter of Máttaráhkká, who dwells by the door of the goahti, guards those who pass the threshold, receives the newborn into the world and protects the child afterwards, especially as it learns to walk.",
+        "citations": [
+          { "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (The Mythology of All Races IV), 1927" },
+          { "kind": "secondary", "reference": "H. Rydving, The End of Drum-Time: Religious Change among the Lule Saami, 1670s–1740s (1993)" },
+          { "kind": "secondary", "reference": "L. L. Læstadius, Fragments of Lappish Mythology (ms. 1838–1845; ed. Pentikäinen, 2002)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sámi 'door-woman' goddess of the threshold and the newborn (classed as deity). Uksáhkká / Uksakka (uksa 'door' + áhkká). Daughter of Máttaráhkká, sister of Sáráhkká and Juoksáhkká; receives the child at birth and guards the toddling child and all who pass the door. Secondary attestation (Holmberg, Rydving, Læstadius)."
+  },
+  {
+    "id": "sami_bieggolmai",
+    "name": {
+      "primary": "Bieggolmai",
+      "alt": ["Biegga-olmai", "Bieggaolmmái", "Biegkagallies", "Bieggagállis", "Bieggagallis", "Pieggaolmai"],
+      "transliterations": {
+        "sami": "Bieggaolmmái",
+        "etymology": "Northern Sámi biegga 'wind' + olmmái 'man' — 'the wind-man'. The variant Biegga-gállis / Biegkagallies is 'wind old-man', sometimes treated as his winter aspect (Karsten) beside the summer-wind Bieggolmai."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "shovels-the-winds-into-and-out-of-their-cave",
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): Biegg-olmai, the wind-man, who governs the winds with his shovel" }],
+        "notes": "The wind-man, who shovels the winds into and out of their mountain cave with his two implements; lord of wind, weather and the sea, prayed to for fair weather and good winds."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wind",
+        "contextTag": "lifelong",
+        "term": { "value": "Bieggaolmmái", "script": "Northern Sámi", "rom": "Bieggaolmmai" },
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): Biegg-olmai, the man of the winds" }]
+      },
+      {
+        "sphereId": "weather",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "secondary", "reference": "R. Karsten, The Religion of the Samek (1955): Bieggolmai the deity of the winds, weather and storms; Biegkagallies his winter counterpart" }]
+      },
+      {
+        "sphereId": "sea",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "secondary", "reference": "A. Olrik and others: Bieggolmai ruled wind and sea, his shovel interpreted as a paddle (the coastal/seafaring connection, compared with Njörðr)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shovel-the-winds",
+        "name": "Shovel the winds into and out of their cave",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); drum-iconography: Biegg-olmai shovels the winds into the cave with one implement and drives them out with the other so they may blow" }],
+        "notes": "With his shovel he packs the winds away; with the club/second shovel he drives them out to blow over the land and sea."
+      },
+      {
+        "id": "grant-fair-weather-and-winds",
+        "name": "Grant or withhold fair weather and good winds",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "R. Karsten, The Religion of the Samek (1955): sacrifices made to Bieggolmai on the mountaintops for good weather and good winds" }],
+        "notes": "Petitioned with mountaintop sacrifices for favourable winds and weather, on which herding and travel depended."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bieggolmai-shovels",
+        "name": "The two wind-shovels (and club) of Bieggolmai",
+        "kind": "implement",
+        "role": "attribute",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927): the wind-man holds a shovel to gather the winds into the cave and a club/second shovel to drive them out" }],
+        "notes": "His emblematic implements; some hold the shovel to be properly a paddle, marking him as a god of the sea-wind."
+      },
+      {
+        "id": "bieggolmai-drum-figure",
+        "name": "Bieggolmai / Biegga-galles on the noaidi drum",
+        "kind": "cosmic-symbol",
+        "role": "subject",
+        "sources": [{ "kind": "secondary", "reference": "E. Manker, Die lappische Zaubertrommel (1938–50): the wind-god among the drum-figures, in some drums in a trinity with Horagalles and Veralden-Olmai" }],
+        "notes": "Appears among the drum-figures, sometimes as one of the three chief gods (with the thunder-god and the world-man)."
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Bieggolmai (Biegga-olmai; Northern Sámi biegga 'wind' + olmmái 'man') is the Sámi wind-god, the 'wind-man', who shovels the winds into and out of their mountain cave with his two implements and rules over wind, weather and the sea; he was petitioned with mountaintop sacrifices for fair winds and weather, and figures among the gods of the noaidi drum.",
+        "citations": [
+          { "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (The Mythology of All Races IV), 1927" },
+          { "kind": "secondary", "reference": "R. Karsten, The Religion of the Samek: Ancient Beliefs and Cults of the Scandinavian and Finnish Lapps (1955)" },
+          { "kind": "secondary", "reference": "E. Manker, Die lappische Zaubertrommel (1938–50): the wind-god among the drum-figures" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sámi wind-god, the 'wind-man' (classed as deity). Bieggolmai / Biegga-olmai (biegga 'wind' + olmmái 'man'); winter aspect Biegga-gállis. He shovels the winds in and out of their cave; lord of wind, weather and sea, one of the deities of the drum. The shovel is sometimes read as a paddle, linking him to the sea and (per Olrik) to Njörðr. Secondary attestation (Holmberg, Karsten; drum-iconography). Kinless in the sources beyond his place among the great gods — see SOLITARY flag."
+  },
+  {
+    "id": "sami_radien_pardne",
+    "name": {
+      "primary": "Radien-pardne",
+      "alt": ["Rádienbárdni", "Radien-bardne", "Raediengiedte", "Radien-kiedde", "Rana-pardne"],
+      "transliterations": {
+        "sami": "Rádienbárdni",
+        "etymology": "Northern/Lule Sámi rádie / rádde 'rule, counsel, power' + bárdni 'son' — 'the son of the ruler', the active son of the high creator Radien-attje ('ruler-father') and Radien-akka ('ruler-mother')."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["sami_radien_attje"],
+    "parentRoles": { "sami_radien_attje": "father" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "born-the-active-son-who-carries-out-the-creators-will",
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): Radien-pardne, the son of the high god Radien, who acts as his father's deputy" }],
+        "notes": "The active son of the passive high creator Radien-attje and of Radien-akka; he performs in the world the orders of his remote, intellectual father, the practical executor of the divine will."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation-supreme",
+        "contextTag": "lifelong",
+        "term": { "value": "Rádienbárdni", "script": "Northern Sámi", "rom": "Radienbardni" },
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): Radien-pardne the active son of the supreme god, executor of his will" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry-out-the-creators-will",
+        "name": "Carry out in the world the orders of the passive high creator",
+        "inheritability": "partial",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Sámi ethnography: the passive Radien-attje rules, the active Radien-pardne acts and does the practical work" }],
+        "notes": "The active principle of the creator-godhead; his authority derives from and continues his father's, hence partial inheritability."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "radien-pardne-drum-figure",
+        "name": "Radien-pardne among the upper-world drum-figures",
+        "kind": "cosmic-symbol",
+        "role": "subject",
+        "sources": [{ "kind": "secondary", "reference": "E. Manker, Die lappische Zaubertrommel (1938–50): the Radien family among the upper-world figures of the drumhead" }],
+        "notes": "The Radien family (father, mother, son, and the daughter Rana Niejta) appear among the upper-world figures on the drums."
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father",
+        "personId": "sami_radien_attje",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Sámi ethnography: Radien-pardne the son of Radien-attje" }],
+        "notes": "Son of the high creator Radien-attje, whose orders he executes."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Radien-pardne (Rádienbárdni; rádie 'rule, power' + bárdni 'son') is the active son of the Sámi high creator Radien-attje (the passive 'ruler-father') and of Radien-akka; he carries out in the world the will of his remote father, doing the practical work of governing the cosmos.",
+        "citations": [
+          { "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (The Mythology of All Races IV), 1927" },
+          { "kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871): the Radien family — Radien-attje, Radien-akka and Radien-pardne" },
+          { "kind": "secondary", "reference": "E. Manker, Die lappische Zaubertrommel (1938–50): the Radien family among the drum-figures" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sámi active creator-son (classed as deity). Radien-pardne / Rádienbárdni, 'the ruler's son' (rádie 'rule' + bárdni 'son'). The active deputy of the passive high god Radien-attje (and Radien-akka), executing the creator's will. Appears in the Radien family on the drums (with the daughter Rana Niejta). Secondary attestation (Holmberg, Friis; drum-iconography). The directional father-edge to the existing figure sami_radien_attje needs no reciprocal."
+  },
+  {
+    "id": "sami_ruohtta",
+    "name": {
+      "primary": "Ruohtta",
+      "alt": ["Ruto", "Rota", "Ruhtta", "Rohttu", "Rutu"],
+      "transliterations": {
+        "sami": "Ruohtta",
+        "etymology": "Northern Sámi Ruohtta (also Ruto/Rota), the personified disease-and-death power; his realm is Rotaimo / Rohttuáibmu, 'the world of Ruohtta', the lowest underworld. The name is associated with sickness and pestilence."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "rides-on-horseback-spreading-disease-and-rules-rotaimo",
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): Ruto/Rota, the god of disease and death, who rides on a horse and rules the lowest underworld" }],
+        "notes": "The disease- and death-god who rides — alone among Sámi powers — on horseback, bringing sickness and death; ruler of the underworld Rotaimo, deep beneath the earth, where the wicked dead are given a new body but can never leave."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "disease",
+        "contextTag": "lifelong",
+        "term": { "value": "Ruohtta", "script": "Northern Sámi", "rom": "Ruohtta" },
+        "sources": [{ "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): Ruto/Rota, the bringer of disease" }]
+      },
+      {
+        "sphereId": "death-underworld",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927): Ruto the ruler of the lowest realm of the dead, Rotaimo" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "spread-disease-and-death",
+        "name": "Spread disease and death, riding among people on his horse",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Sámi ethnography: Ruto rides on horseback spreading pestilence and death" }],
+        "notes": "He alone of the Sámi gods rides a horse — to the Sámi a feared, foreign animal (the Norsemen's mount); his riding marks him as the bringer of plague."
+      },
+      {
+        "id": "rule-rotaimo",
+        "name": "Rule the lowest underworld, Rotaimo, of the unrighteous dead",
+        "inheritability": "none",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927): Rotaimo, the realm of Ruto deep underground, from which there is no return" }],
+        "notes": "Those who did not live by the right order come to Rotaimo, receive a new body there, and can never leave."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ruohtta-horse",
+        "name": "The horse of Ruohtta",
+        "kind": "animal",
+        "role": "mount",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927): Ruto on horseback; the horse alien and feared among the Sámi" }],
+        "notes": "His mount and emblem; contrary to all Sámi custom, he rides, which marks him as the dread, foreign power of disease."
+      },
+      {
+        "id": "ruohtta-sacrificial-horse",
+        "name": "Sacrificial horse (disease-transfer offering to Ruto)",
+        "kind": "offering",
+        "role": "offering",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Sámi healing-ritual record: a horse was sacrificed to Ruto, the sickness conjured out of the patient and into the horse" }],
+        "notes": "In the healing rite a horse was offered to Ruto and the disease driven from the sick person into the animal."
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ruohtta (Ruto / Rota) is the Sámi god and personification of disease and death, who rides on horseback — uniquely among Sámi powers — spreading sickness, and rules the lowest underworld Rotaimo, where the unrighteous dead receive a new body and remain forever; in healing rites a horse was sacrificed to him and the sickness driven into the animal.",
+        "citations": [
+          { "kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (The Mythology of All Races IV), 1927" },
+          { "kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871): Rota / Ruto, the disease-god and the underworld Rotaimo" },
+          { "kind": "secondary", "reference": "L. L. Læstadius, Fragments of Lappish Mythology (ms. 1838–1845; ed. Pentikäinen, 2002)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sámi god of disease and death, the horseback-rider (classed as deity). Ruohtta / Ruto / Rota; his realm is Rotaimo, the lowest underworld. He alone of the Sámi gods rides a horse (the feared, foreign Norse animal); horses were sacrificed to him to carry off disease. Distinct from the death-goddess Jábmeáhkká (sami_jabmeahkka), who keeps the ordinary dead: Ruohtta governs the lowest realm of the unrighteous. Secondary attestation (Holmberg, Friis, Læstadius). Kinless in the sources — see SOLITARY flag."
+  }
+]
+```
+
+SOLITARY: sami_bieggolmai — the wind-man is attested only as one of the great gods (in some drums a trinity with Horagalles and Veralden-Olmai), with no kin named in the sources (Holmberg 1927; Karsten 1955).
+SOLITARY: sami_ruohtta — the disease/death-rider is attested as ruler of Rotaimo with no genealogy in the sources; he is functionally distinct from, not kin to, the death-goddess Jábmeáhkká (Holmberg 1927; Friis 1871).
+
+RECIPROCAL-NEEDED: sami_radien_attje mother sami_radien_pardne is NOT symmetric and needs no reciprocal — directional parent/child edge. (No symmetric edge toward an existing corpus figure is emitted by this batch.)
+
+Notes on reciprocity within this batch (already symmetric, no flag needed):
+  • sami_mattarahkka mother→ sami_sarahkka / sami_juoksahkka / sami_uksahkka are directional parent edges (each daughter carries parentIds ["sami_mattarahkka"] + parentRoles mother); no reciprocal sibling/spouse symmetry required for parent/child.
+  • Sibling triangle is fully reciprocated:
+      sami_sarahkka  sibling sami_juoksahkka ↔ sami_juoksahkka sibling sami_sarahkka
+      sami_sarahkka  sibling sami_uksahkka  ↔ sami_uksahkka  sibling sami_sarahkka
+      sami_juoksahkka sibling sami_uksahkka ↔ sami_uksahkka  sibling sami_juoksahkka
+Directed parent/child edges (mother / father) are one-directional by design and need no reciprocal:
+  • sami_sarahkka / sami_juoksahkka / sami_uksahkka  mother sami_mattarahkka
+  • sami_radien_pardne father sami_radien_attje

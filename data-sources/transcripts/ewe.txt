@@ -1,0 +1,1548 @@
+EWE (Eʋe) PANTHEON — vodu (deities) of the Ewe-speaking peoples of Ghana, Togo and Benin.
+Figure-authoring transcript for the Pantheon Registry. tradition = "Ewe"; era = "primordial" only; id prefix "ewe_".
+
+SCOPE & METHOD
+--------------
+This batch authors the firmly-attested great vodu of the Ewe (Gbe) pantheon that were still
+missing from the corpus. The existing figures are NOT re-authored and are referenced by id:
+  ewe_mawu_lisa (twofold creator pair), ewe_mawu (sky-mother), ewe_lisa (sun-lord),
+  ewe_nana_buluku (primordial grandmother), ewe_so (the thunder-god So/Sogbo/Heviesso).
+
+The Ewe and the neighbouring Fon share a single Gbe religious complex; the classic
+ethnographies treat them together. The seven great vodu born of the creator pair Mawu-Lisa
+are, in the canonical Dahomean/Ewe account: Sakpata (eldest, the earth and smallpox), Sogbo
+(thunder — the existing ewe_so), Agbe (the sea), Age (the hunt and bush), Gu (iron and war),
+Djo (air), and Legba (the youngest, the messenger). This batch adds Sakpata, Age, Gu and
+Legba as children of the existing ewe_mawu_lisa, making them siblings of one another and of
+the existing ewe_so (Sogbo) — the latter requiring reciprocal edges on the existing figure
+(see RECIPROCAL-NEEDED). It further adds Da/Dã (Aido-Hwedo / the Ewe Anyi-eʋo), the
+rainbow-serpent who girdles the world; Afa/Fa, the vodu of divination and destiny; and
+Avlekete, the sea vodu. Those three are recorded with SOLITARY flags: in the attested
+tradition the world-serpent is a pre-existent cosmic power (not begotten by Mawu-Lisa), the
+oracle-vodu Fa is not a consistently-begotten son of the pair, and Avlekete's parentage is
+given variously (child of the sea-pair Agbe/Naete, or of Sogbo) with neither parent authored
+in this batch.
+
+Sources are the standard ethnographies named for the task — Jakob Spieth, Die Ewe-Stämme
+(1906) and Die Religion der Eweer in Süd-Togo (1911); A. B. Ellis, The Ewe-Speaking Peoples
+of the Slave Coast of West Africa (1890); E. G. Parrinder, West African Religion (1949/1961);
+M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938, for the cognate Fon
+vodun) — with corroborating specialist sources where they fix an Ewe-specific term or object.
+
+RELATION NOTES
+--------------
+- ewe_sakpata, ewe_age, ewe_gu, ewe_legba are children of the existing ewe_mawu_lisa
+  (directed parent/child; no reciprocal required toward the parent).
+- Those four are siblings of one another (reciprocal "sibling" WITHIN this batch) and siblings
+  of the existing thunder-god ewe_so (Sogbo). The four sibling-edges toward ewe_so are emitted
+  as RECIPROCAL-NEEDED so the reciprocal can be added to the existing figure.
+- ewe_legba is the interpreter/messenger of Fa's oracle: a NON-symmetric "associate of" edge
+  ewe_legba -> ewe_afa (no reciprocal required); Afa carries the converse note.
+- ewe_da, ewe_afa, ewe_avlekete carry SOLITARY flags with cited reasons (below).
+
+```json
+[
+ {
+  "id": "ewe_sakpata",
+  "name": {
+   "primary": "Earth Lord of Smallpox",
+   "alt": [
+    "Sakpata",
+    "Sapata",
+    "Anyigbato",
+    "Ainon"
+   ],
+   "transliterations": {
+    "ewe": "Sakpata",
+    "etymology": "Worshipped across the Gbe-speaking peoples (Ewe, Fon, Aja) as Sakpata. Among the Ewe the earth-and-sickness power bears the praise-name Anyigbato, from anyigba 'the earth, the ground' + -to 'owner, master/lord of' — 'Lord of the Earth' (cf. Fon Ainon, Aïnon 'proprietor/owner of the earth')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "ewe_mawu_lisa"
+  ],
+  "parentRoles": {
+   "ewe_mawu_lisa": "the creator pair (engendering)"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Born of the creator pair Mawu-Lisa as the eldest of their great vodu children; to him is entrusted dominion over the earth, the soil on which humankind lives, and he is set to dwell upon it",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the earth-pantheon: Sakpata the eldest son of Mawu-Lisa, given the earth."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): the three pantheons sky, earth (Sakpata) and thunder-sea, the latter two the offspring of Mawu-Lisa."
+     }
+    ],
+    "notes": "Heads the earth-pantheon, the second of the three great Gbe pantheons. In the myth he and his brother Sogbo (the thunder-god, existing ewe_so) contend over the rule of the earth."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "Becomes the dreaded sender and stayer of smallpox and the eruptive fevers, striking the bodies of the living from the earth and afterwards withdrawing the affliction from those who appease him",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), on the earth-god and the disease that comes out of the ground."
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), on the Gbe earth-and-smallpox vodu Sakpata/Shapata."
+     }
+    ],
+    "notes": "His name is so dangerous it is avoided in speech, the deity being addressed by praise-names; the pox-marks are 'the grains' he sows on the body."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-soil",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "anyigba",
+     "script": "Latn",
+     "rom": "anyigba"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Sakpata as the vodu of the earth, the eldest of Mawu-Lisa's children."
+     }
+    ]
+   },
+   {
+    "sphereId": "smallpox-and-pestilence",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961): the earth-god is also the god of smallpox and contagious disease across the Gbe and Yoruba area."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the disease sent from the ground."
+     }
+    ]
+   },
+   {
+    "sphereId": "healing-and-affliction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Sakpata as both sender of and protector against the pox; the earth-pantheon priests as healers."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-sakpata-rule-the-earth",
+    "name": "Hold dominion over the earth and the soil that bears mankind",
+    "inheritability": "none",
+    "notes": "As the eldest son of Mawu-Lisa he is given the earth itself; the Ewe praise-name Anyigbato, 'Lord of the Earth,' marks this charge. The proprietorship is his alone and not transmitted.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the earth-pantheon and the apportioning of realms among Mawu-Lisa's children."
+     }
+    ]
+   },
+   {
+    "id": "ewe-sakpata-send-and-stay-smallpox",
+    "name": "Send the smallpox and the eruptive fevers, and withdraw them from the appeased",
+    "inheritability": "none",
+    "notes": "The pox is conceived as 'grains' the earth-god sows on the body; he both inflicts and, when propitiated through his priesthood, lifts the affliction. Power of the deity, not heritable.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the earth-god and the disease from the ground."
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the smallpox-god Sakpata/Shapata."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-sakpata-raffia-broom",
+    "name": "raffia broom (sweep of the earth-god)",
+    "kind": "implement",
+    "role": "The earth-and-smallpox vodu is served with the raffia broom, with which the pestilence is symbolically swept away from the sufferer and the village; a defining object of his cult.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the cult of the earth-god (cf. the corpus figure fon_sakpata, raffia broom)."
+     }
+    ]
+   },
+   {
+    "id": "ewe-sakpata-spotted-cloth",
+    "name": "red-and-white spotted cloth",
+    "kind": "regalia",
+    "role": "Cloth patterned with spots evoking the marks of the pox is worn by his devotees and dancers, signifying the affliction the earth-god both sends and heals.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the dress and emblems of the Sakpata cult."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ewe_age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Sakpata, Age, Gu and the rest born of Mawu-Lisa as brothers."
+     }
+    ],
+    "notes": "Fellow great vodu born of Mawu-Lisa; reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Legba the youngest of the same brood of Mawu-Lisa's children."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_so",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Sakpata (eldest, earth) and Sogbo (thunder) are brothers, sons of Mawu-Lisa, who contend over the rule of the earth."
+     }
+    ],
+    "notes": "Sibling of the existing thunder-god ewe_so (Sogbo/Heviesso); their quarrel over the earth is a stock Gbe myth. RECIPROCAL-NEEDED on ewe_so."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "babalu_aye",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sakpata (Ewe praise-name Anyigbato, 'Lord of the Earth') is the Gbe vodu of the earth and of smallpox/contagious disease, the eldest son of the creator pair Mawu-Lisa and head of the earth-pantheon, brother of the thunder-god Sogbo with whom he disputes the rule of the earth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the earth-pantheon."
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), the earth-and-smallpox vodu."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The earth- and smallpox-vodu, eldest of Mawu-Lisa's children and head of the earth-pantheon. The English descriptor leads name.primary; the Gbe name Sakpata and the Ewe earth-praise-name Anyigbato (anyigba 'earth' + -to 'lord/owner of') stand in alt and the etymology. Typed deity. Documented for the Ewe by Ellis (1890) and Parrinder (1961) and for the cognate Fon in detail by Herskovits (1938); compare the corpus figure fon_sakpata."
+ },
+ {
+  "id": "ewe_gu",
+  "name": {
+   "primary": "Vodu of Iron and War",
+   "alt": [
+    "Gu",
+    "Gun"
+   ],
+   "transliterations": {
+    "ewe": "Gu",
+    "etymology": "Gbe Gu (Fon Gu/Gun), the vodu of iron and war, cognate of the Yoruba Ogun; the name denotes both the god and worked iron itself. Borne in common by Ewe, Fon and Aja."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "ewe_mawu_lisa"
+  ],
+  "parentRoles": {
+   "ewe_mawu_lisa": "the creator pair (engendering)"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Born of Mawu-Lisa and made the vodu of iron; in the cosmogony he is the divine smith sent down to clear the bush, open the roads, and put the unfinished world in order with the cutting edge of metal",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Gu, child of Mawu-Lisa, the iron-vodu who makes the world habitable; his body is iron and his head a cutlass."
+     }
+    ],
+    "notes": "In the Dahomean myth Gu is the instrument of Mawu-Lisa for finishing creation: it is by iron that the forest is cleared and men are given tools and weapons."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "Becomes the patron of smiths, warriors, hunters and all who use the blade; the first smithy and the forge are his, and oaths and war are sworn upon his iron",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), the iron- and war-god Gu, counterpart of the Yoruba Ogun."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), on the god of war and iron."
+     }
+    ],
+    "notes": "Cognate and functional twin of the Yoruba Ogun; the smith's craft is held to descend from him."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "iron-and-metalworking",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Gu",
+     "script": "Latn",
+     "rom": "Gu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu the vodu of iron, patron of the smiths."
+     }
+    ]
+   },
+   {
+    "sphereId": "war-and-weapons",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961): Gu the war-god, cognate of Ogun."
+     }
+    ]
+   },
+   {
+    "sphereId": "crafts-and-tools",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu gives men the cutting tools of farming, hunting and building."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-gu-forge-and-give-iron",
+    "name": "Forge iron and bestow on humankind the blade, the tool and the weapon",
+    "inheritability": "none",
+    "notes": "Gu is the divine smith; from him come the cutlass, the hoe, the axe and the spear, and the craft of the forge itself. The power is the deity's, not a heritable gift.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the iron-vodu and the institution of smithing."
+     }
+    ]
+   },
+   {
+    "id": "ewe-gu-clear-the-bush-open-the-roads",
+    "name": "Clear the primordial bush and open the roads, making the world fit for men",
+    "inheritability": "none",
+    "notes": "In the cosmogony the iron-vodu is sent to cut back the wild and lay open the paths; the order of the inhabited world is his work with the edge of metal.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu as the agent by which Mawu-Lisa completes and orders creation."
+     }
+    ]
+   },
+   {
+    "id": "ewe-gu-give-victory-in-war",
+    "name": "Give victory in war and strength to the warrior's arm",
+    "inheritability": "none",
+    "notes": "As war-vodu, cognate of Ogun, he is invoked by warriors and his iron carries the oath; success in battle is sought from him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the war-god Gu."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-gu-cutlass",
+    "name": "cutlass / sword of Gu",
+    "kind": "weapon",
+    "role": "The cutting blade is the very body and emblem of the iron-vodu — in the myth his head is itself a cutlass; the sword and machete are his sign and the smith's chief work.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the iron-vodu embodied in worked iron and the cutlass (cf. the corpus figure fon_gu, iron-and-cutlass)."
+     }
+    ]
+   },
+   {
+    "id": "ewe-gu-forge-and-iron-assemblage",
+    "name": "the smith's forge and iron cult-assemblage",
+    "kind": "site",
+    "role": "The first smithy is Gu's; his shrines centre on worked-iron assemblages (the asen-like iron objects), bundles of tools and weapons set up as the seat of the iron-vodu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the iron cult-objects of Gu."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ewe_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu and Age (iron and the hunt) among the brothers born of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch; the hunter Age depends on the iron of Gu for his weapons."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_so",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu and Sogbo among the great vodu children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Sibling of the existing thunder-god ewe_so (Sogbo). RECIPROCAL-NEEDED on ewe_so."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Gu/Ogun)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "ogun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Gu/Ogun)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Gu is the Gbe vodu of iron, war, smiths and tools — the divine smith and cognate of the Yoruba Ogun — a child of Mawu-Lisa who in the cosmogony clears the bush and gives mankind the blade.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the iron-vodu Gu."
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), Gu the iron- and war-god, counterpart of Ogun."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Vodu of iron, war and smithing; child of Mawu-Lisa and brother of the other great vodu. The English descriptor leads name.primary; the Gbe name Gu stands in alt/term. Cognate of the Yoruba Ogun and the corpus figure fon_gu. Typed deity. Documented for the Ewe by Ellis (1890) and Parrinder (1961) and for the cognate Fon by Herskovits (1938)."
+ },
+ {
+  "id": "ewe_age",
+  "name": {
+   "primary": "Vodu of the Bush and the Hunt",
+   "alt": [
+    "Age",
+    "Age"
+   ],
+   "transliterations": {
+    "ewe": "Age",
+    "etymology": "Gbe Age (Aje), the vodu of the wild bush, the hunt and the beasts; given in the cosmogony command of the animals and birds and set to live in the forest as a hunter. Borne in common by Ewe and Fon."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "ewe_mawu_lisa"
+  ],
+  "parentRoles": {
+   "ewe_mawu_lisa": "the creator pair (engendering)"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Born of Mawu-Lisa and given command of the wild animals and the birds; he is told to dwell in the bush, away from the towns, as the hunter and master of the untamed land",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Age, son of Mawu-Lisa, given the animals and birds and set to live in the bush as a hunter."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Age the vodu of the wild and of the hunt among the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Lord of all that lies outside the cleared and settled land; hunters are his people and seek his leave before the chase."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wilderness-and-the-bush",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age set to dwell in and rule the bush."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-hunt",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age the hunter, patron of hunters."
+     }
+    ]
+   },
+   {
+    "sphereId": "wild-animals-and-game",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Age given command of the animals and birds."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-age-command-the-beasts",
+    "name": "Command the wild animals and the birds of the bush",
+    "inheritability": "none",
+    "notes": "At the apportioning of the world Mawu-Lisa gives Age authority over all wild creatures; the game belong to him and are loosed or withheld at his will. Power of the deity, not heritable.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the giving of the animals to Age."
+     }
+    ]
+   },
+   {
+    "id": "ewe-age-grant-the-hunt",
+    "name": "Grant or deny success to the hunter in the bush",
+    "inheritability": "none",
+    "notes": "As the master-hunter dwelling in the forest, he gives or withholds the kill; hunters propitiate him before entering his domain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age the patron of hunters."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-age-hunters-shrine",
+    "name": "the hunters' bush-shrine of Age",
+    "kind": "site",
+    "role": "Hunters keep a shrine to Age at the bush-edge, where they make offering before and after the chase to the lord of the wild animals; the trophies and the first of the kill are his due.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the cult of Age among hunters."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ewe_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age and Gu among the brothers born of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_so",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age and Sogbo among the great vodu children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Sibling of the existing thunder-god ewe_so (Sogbo). RECIPROCAL-NEEDED on ewe_so."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Age (Aje) is the Gbe vodu of the wild bush, the hunt and the wild animals — a son of Mawu-Lisa given command of the beasts and birds and set to dwell in the forest as the hunter.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the vodu Age."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Vodu of the bush, the hunt and the wild animals; son of Mawu-Lisa and brother of the other great vodu. The English descriptor leads name.primary; the Gbe name Age stands in alt/etymology. Typed deity. Documented for the Ewe-Fon complex by Herskovits (1938); the cult is that of hunters at the bush-edge."
+ },
+ {
+  "id": "ewe_legba",
+  "name": {
+   "primary": "Trickster-Linguist of the Crossroads",
+   "alt": [
+    "Legba",
+    "Aflakete",
+    "Alegba",
+    "Egbo"
+   ],
+   "transliterations": {
+    "ewe": "Legba",
+    "anlo_ewe": "Alegba",
+    "etymology": "Gbe Legba (Anlo-Ewe Alegba), the youngest son of Mawu-Lisa and messenger of the vodu. The by-name Aflakete is glossed 'I have tricked you,' marking his trickster character. Guardian of thresholds and crossroads, the linguist who carries speech between gods and men."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "ewe_mawu_lisa"
+  ],
+  "parentRoles": {
+   "ewe_mawu_lisa": "the creator pair (engendering)"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Born as the youngest of the children of Mawu-Lisa; alone of the brood he is given no single province of nature but is made the linguist and messenger of the gods, knowing all their tongues",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Legba the youngest son of Mawu-Lisa, made linguist and messenger of the vodu and given the speech of all of them."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Legba the youngest, the linguist whom even the other gods must address first."
+     }
+    ],
+    "notes": "Because he alone knows the languages of all the vodu and of men, every approach to Mawu — even by the other gods — must pass through him; he carries every message between heaven and earth."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "Takes his post at the threshold, the gate and the crossroads as guardian and gatekeeper, the trickster Aflakete who can open or confuse the way between the worlds",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), on Legba/Elegba the phallic guardian-god set before house and town."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998), on Alegba/Legba in Anlo-Ewe practice as the opener of the way."
+     }
+    ],
+    "notes": "His image of mound or post stands at every door, village-gate and fork of the road; nothing can be obtained from the other vodu unless Legba is first satisfied."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "messengers-and-divine-speech",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Legba the linguist and messenger of the gods."
+     }
+    ]
+   },
+   {
+    "sphereId": "thresholds-and-crossroads",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890): the guardian-god set at the doorway and the crossroad."
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery-and-chance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Aflakete",
+     "script": "Latn",
+     "rom": "Aflakete"
+    },
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Legba/Aflakete the trickster, 'I have tricked you.'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-legba-translate-between-gods-and-men",
+    "name": "Carry and translate speech between the vodu and humankind, knowing every tongue",
+    "inheritability": "none",
+    "notes": "As linguist of the gods he alone understands and conveys the languages of all the vodu and of men; every prayer and every divine answer passes through him. The office is his alone.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, Legba the linguist and intermediary."
+     }
+    ]
+   },
+   {
+    "id": "ewe-legba-guard-and-open-the-way",
+    "name": "Guard the threshold and open or close the way between the worlds",
+    "inheritability": "none",
+    "notes": "Set at door, gate and crossroads, he opens the path to the other vodu for those who satisfy him and bars or confounds it for those who do not; the rite begins by 'feeding' Legba.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the guardian at the doorway and crossroad."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998), Alegba the opener of the way."
+     }
+    ]
+   },
+   {
+    "id": "ewe-legba-trick-and-confound",
+    "name": "Trick, confuse and overturn — the play of the crossroads",
+    "inheritability": "none",
+    "notes": "The by-name Aflakete, 'I have tricked you,' marks his character: he sows confusion, tests, and reverses, the unpredictable element at every passage and choice.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Tricksters: African Tricksters,\" Encyclopedia of Religion (2005): Legba/Aflakete the Gbe trickster."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-legba-crossroad-shrine",
+    "name": "the Legba mound at the door and crossroad",
+    "kind": "site",
+    "role": "A mound, cone or guardian-figure of Legba/Alegba is set at the entrance of every house, the village-gate and the fork of the road; it is the first to receive offering, the seat from which he watches and opens the way.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), the Legba figures at doorways and crossroads."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998), Anlo-Ewe Alegba shrines."
+     }
+    ]
+   },
+   {
+    "id": "ewe-legba-phallic-post",
+    "name": "the phallic stick / post of Legba",
+    "kind": "symbol",
+    "role": "Legba's image is markedly phallic — a stick or erect post — standing before the dwelling as the sign of the generative, boundary-crossing power that 'reshapes the world' at every passage.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the phallic guardian-image."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Legba's phallic image before Fon and Ewe dwellings."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ewe_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_so",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Legba the youngest, Sogbo the thunderer, both children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Sibling of the existing thunder-god ewe_so (Sogbo). RECIPROCAL-NEEDED on ewe_so."
+   },
+   {
+    "kind": "associate of",
+    "personId": "ewe_afa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Legba is the indispensable interpreter of the Fa oracle, alone able to translate the messages of Fa/Gbadu, which are reached through the palm-kernels."
+     }
+    ],
+    "notes": "Non-symmetric: Legba is the interpreter and opener of the Fa oracle (ewe_afa); no reciprocal required. The converse is noted on ewe_afa."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "eshu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Legba (Anlo-Ewe Alegba; by-name Aflakete 'I have tricked you') is the youngest son of Mawu-Lisa, the trickster-linguist and messenger of the vodu who knows all their tongues, guardian of thresholds and crossroads, through whom alone humans and even the other gods may reach Mawu.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, Legba the linguist."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), the phallic guardian-god of doorways and crossroads."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998), Alegba in Anlo-Ewe practice."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The youngest son of Mawu-Lisa: trickster-linguist, messenger, gatekeeper of the crossroads and carrier of speech between humans and the vodu. The descriptive title leads name.primary; the Gbe name Legba, the Anlo form Alegba and the trickster by-name Aflakete stand in alt/etymology. Typed deity. Documented for the Ewe by Ellis (1890) and (in Anlo practice) Rosenthal (1998), and for the cognate Fon by Herskovits (1938)."
+ },
+ {
+  "id": "ewe_da",
+  "name": {
+   "primary": "Rainbow-Serpent that Girdles the World",
+   "alt": [
+    "Da",
+    "Dã",
+    "Dan",
+    "Aido-Hwedo",
+    "Ayido Hwedo",
+    "Anyi-eʋo",
+    "Anyiewo"
+   ],
+   "transliterations": {
+    "ewe": "Da",
+    "anlo_ewe": "Anyi-eʋo",
+    "etymology": "Gbe Da/Dã (Fon Dã), 'serpent,' the cosmic snake; the world-serpent is Aido-Hwedo (Ayido Hwedo). Among the Ewe the rainbow-serpent is Anyi-eʋo (Anyiewo). Da denotes both the snake and the principle of sinuous motion, and so of wealth (the coil of cowries)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "dual",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Exists already at the making of the world as the great primordial serpent; he carries the creator through the cosmos in his mouth, and where the pair rest his droppings become the mountains, his winding the river-beds",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Aido-Hwedo the serpent who bears Mawu-Lisa about in the work of creation; the mountains are his excreta, full of riches."
+     }
+    ],
+    "notes": "The serpent is pre-existent and is not numbered among the begotten children of Mawu-Lisa; he is the helper and vehicle of creation (hence the SOLITARY flag)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "When the finished earth proves too heavy, he is set to coil beneath it and around it, resting in the sea and upholding the world on his coils; his arching is the rainbow in the sky and his sign is the snake biting its own tail",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Aido-Hwedo coiled in many thousands of coils beneath the earth, in the sea, supporting it; the rainbow is his celestial form."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890): the Ewe rainbow-serpent Anyi-eʋo, whose temples are painted in rainbow stripes and who drinks from the sky."
+     }
+    ],
+    "notes": "He feeds on iron, and when at the last the iron fails and he gnaws his own tail, his shifting will let the over-burdened earth fall into the sea — a Gbe eschatology."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cosmic-serpent-and-world-support",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Aido-Hwedo",
+     "script": "Latn",
+     "rom": "Aido-Hwedo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: the serpent coiled beneath and around the world, holding it up."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-rainbow",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Anyi-eʋo",
+     "script": "Latn",
+     "rom": "Anyi-eʋo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890): the Ewe rainbow-serpent Anyi-eʋo arching from earth to sky."
+     }
+    ]
+   },
+   {
+    "sphereId": "motion-water-and-wealth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: the serpent as the principle of sinuous motion and as the giver of riches (the mountains of minerals, the coil of cowries)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-da-bear-the-creator-and-shape-the-land",
+    "name": "Carry the creator through the cosmos and shape the contours of the land",
+    "inheritability": "none",
+    "notes": "He bears Mawu-Lisa about in his mouth during the making of the world; his winding traces the river-beds and his droppings, left where they rest, become the mineral-rich mountains. The cosmogonic office is his alone.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the serpent and the shaping of the earth."
+     }
+    ]
+   },
+   {
+    "id": "ewe-da-uphold-the-world",
+    "name": "Coil beneath and around the world and uphold it in the sea",
+    "inheritability": "none",
+    "notes": "The finished earth being too heavy, he lies coiled under and about it, resting in the encircling waters, bearing it on his thousands of coils so it does not sink.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, Aido-Hwedo supporting the world."
+     }
+    ]
+   },
+   {
+    "id": "ewe-da-arch-as-rainbow-and-drink-the-sky",
+    "name": "Arch across the sky as the rainbow and draw up the waters",
+    "inheritability": "none",
+    "notes": "His sky-form is the rainbow; the Ewe say the serpent rears its head into the sky to drink from Mawu's store of water, and the moisture it spills falls as rain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the rainbow-serpent Anyi-eʋo drinking from the sky."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-da-rainbow-striped-temple",
+    "name": "rainbow-striped serpent-temple",
+    "kind": "site",
+    "role": "Among the (western) Ewe the temples of the rainbow-serpent Anyi-eʋo are painted in stripes of prismatic colour, with a drawing of the snake set amid the bands — the built sign of the rainbow-snake.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), the rainbow-painted temples of the serpent."
+     }
+    ]
+   },
+   {
+    "id": "ewe-da-coiled-serpent-pot",
+    "name": "the coiled clay serpent on the offering-pot",
+    "kind": "idol",
+    "role": "A piece of pottery is dedicated to the serpent: a crude clay snake modelled coiled around a shallow earthen pot or calabash, with small red feathers stuck on to represent its horns — the cult-image of Anyi-eʋo.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the clay serpent coiled round the pot, feathered for horns."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "fon_dan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Da/Dan)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Da/Dã (the world-serpent Aido-Hwedo; the Ewe rainbow-serpent Anyi-eʋo) is the great primordial snake who bears the creator through the cosmos, shapes the land, and then coils beneath and around the world to uphold it, resting in the sea; his arc in the sky is the rainbow, and he embodies motion and wealth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, Aido-Hwedo the cosmic serpent."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), the Ewe rainbow-serpent Anyi-eʋo."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The rainbow-serpent who girdles and upholds the world, coiled in the sea — the principle of motion and wealth. The descriptive title leads name.primary; the Gbe name Da/Dã, the world-serpent name Aido-Hwedo and the Ewe rainbow-serpent name Anyi-eʋo stand in alt/etymology. Sex recorded 'dual': the serpent-power is paired/androgynous in the tradition (the Fon couple it as Aido-Hwedo and its female counterpart). Pre-existent cosmic serpent, NOT a begotten child of Mawu-Lisa — see SOLITARY flag. Typed deity. Documented for the Ewe by Ellis (1890) and for the cognate Fon by Herskovits (1938); compare the corpus figure fon_dan."
+ },
+ {
+  "id": "ewe_afa",
+  "name": {
+   "primary": "Vodu of Divination and Destiny",
+   "alt": [
+    "Afa",
+    "Fa",
+    "Fá"
+   ],
+   "transliterations": {
+    "ewe": "Afa",
+    "etymology": "Ewe Afa (Fon Fa), the vodu and oracle of divination and of personal destiny — the Gbe form of the Yoruba Ifa. The diviner reads a person's destiny-sign (kpoli/dzogbe) from the falls of the palm-kernels or the divining chain."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Stands from the first as the oracle of destiny — the knowledge, kept in heaven, of the fate Mawu allots each person before birth, set out in the sixteen principal signs (du) and their combinations and made known on earth through the diviner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961): Fa/Ifa the system of divination and the god of destiny among the Ewe, Fon and Yoruba."
+     },
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: the cult of Fa, the destiny-oracle, whose power is held to derive from the female sky-spirit Gbadu and whose messages Legba alone interprets."
+     }
+    ],
+    "notes": "Afa is not consistently one of the begotten sons of Mawu-Lisa; it is the oracle/vodu of fate (in Fon theology its source is the female spirit Gbadu set by Mawu in the palm-tree). Hence the SOLITARY flag for genealogy."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divination",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Afa",
+     "script": "Latn",
+     "rom": "Afa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961): Afa/Fa divination among the Ewe of Togo and the Fon."
+     }
+    ]
+   },
+   {
+    "sphereId": "destiny-and-fate",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kpoli",
+     "script": "Latn",
+     "rom": "kpoli"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Fa as a person's destiny, the kpoli/du read in the divination."
+     }
+    ]
+   },
+   {
+    "sphereId": "sacred-knowledge-and-counsel",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Fa as the body of oracular wisdom guiding human action."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-afa-reveal-destiny",
+    "name": "Reveal the destiny (kpoli) that Mawu has set for each person",
+    "inheritability": "none",
+    "notes": "Afa discloses the fate fixed for the individual before birth — the destiny-sign read in the divination; to know one's Afa is to know one's proper path. Power of the oracle-vodu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, Fa and personal destiny."
+     }
+    ]
+   },
+   {
+    "id": "ewe-afa-speak-through-the-signs",
+    "name": "Speak through the sixteen signs (du) and their two hundred and fifty-six combinations",
+    "inheritability": "none",
+    "notes": "The oracle answers in the binary figures cast with the palm-kernels or the divining chain: sixteen principal du, multiplying to 256, each carrying its verses and prescriptions, interpreted by the trained diviner.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the sixteen-fold Fa/Ifa system and its figures."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-afa-palm-kernels",
+    "name": "the sixteen sacred palm-kernels (deki)",
+    "kind": "implement",
+    "role": "The diviner passes sixteen palm-kernels rapidly from hand to hand and, by whether one or two remain, marks the strokes that build the oracular figure — the central instrument of Afa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the palm-nuts of Fa/Ifa divination."
+     },
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the casting of the palm-kernels in Fa."
+     }
+    ]
+   },
+   {
+    "id": "ewe-afa-divining-chain",
+    "name": "the divining chain (afakala / agumaga)",
+    "kind": "implement",
+    "role": "A chain strung with four or eight half-seeds or shells, cast on the ground so the figure is read at a single throw — the quicker divining instrument of the Afa priest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the divining chain of the Fa/Ifa diviner."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "fon_fa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "orunmila",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Afa (Fon Fa; the Gbe form of Yoruba Ifa) is the Ewe vodu and oracle of divination and of personal destiny, made known through the sixteen signs (du) cast with the sacred palm-kernels or the divining chain.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), Fa/Afa divination."
+     },
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the cult of Fa."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Vodu of divination and destiny — the Fa/Ifa oracle. The descriptive title leads name.primary; the Ewe name Afa and the Fon Fa stand in alt/etymology. Its messages are interpreted by Legba (see ewe_legba 'associate of' edge); in Fon theology its power-source is the female spirit Gbadu set by Mawu in the palm-tree. Not a consistently-begotten son of Mawu-Lisa — see SOLITARY flag. Typed deity. Documented for the Ewe of Togo by Parrinder (1961) and for the cognate Fon by Herskovits (1938)."
+ },
+ {
+  "id": "ewe_avlekete",
+  "name": {
+   "primary": "Vodu of the Sea and Shore",
+   "alt": [
+    "Avlekete",
+    "Avrekete",
+    "Aflekete"
+   ],
+   "transliterations": {
+    "ewe": "Avlekete",
+    "etymology": "Gbe Avlekete (Avrekete), a vodu of the sea and the lagoon-shore, of the water-pantheon; a town by the saltwater lagoon east of Whydah/Ouidah bears the name. Reckoned variously the consort/younger power of the sea-deity Agbe or a junior of the thunderer Sogbo."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Belongs from the first to the water-pantheon, dwelling in the sea and along the lagoon-shore; she guards those who go upon the water and the treasures of the deep, and gives abundance from the sea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Avlekete among the vodu of the sea-pantheon ruled by Agbe and Naete."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), on the sea- and lagoon-gods of the coast (Hu/Wu)."
+     }
+    ],
+    "notes": "Parentage is given variously — junior of the sea-deity Agbe and his sister-wife Naete, or of the thunderer Sogbo — and neither parent is authored in this batch; recorded with a SOLITARY flag."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sea-and-ocean",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Avlekete a vodu of the sea-pantheon."
+     }
+    ]
+   },
+   {
+    "sphereId": "lagoon-and-shore",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Avlekete",
+     "script": "Latn",
+     "rom": "Avlekete"
+    },
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): the lagoon-shore vodu Avlekete and the place of that name by the Whydah lagoon."
+     }
+    ]
+   },
+   {
+    "sphereId": "abundance-and-protection-of-seafarers",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: the sea-vodu as guardians of those on the water and givers of the sea's bounty."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-avlekete-rule-the-shore-waters",
+    "name": "Rule the lagoon-shore and the near sea, guarding seafarers and fishers",
+    "inheritability": "none",
+    "notes": "As a vodu of the water-pantheon she holds the shore-waters and the lagoon, protecting those who cross them and guarding the treasures of the sea. Power of the deity.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the sea-pantheon and its vodu."
+     }
+    ]
+   },
+   {
+    "id": "ewe-avlekete-give-the-seas-abundance",
+    "name": "Give the abundance of the sea — fish, salt and the gifts of the water",
+    "inheritability": "none",
+    "notes": "She bestows the bounty drawn from sea and lagoon, the catch and the wealth of the shore.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005), the gifts of the sea-vodu."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-avlekete-lagoon-shore-shrine",
+    "name": "the lagoon-shore shrine of Avlekete",
+    "kind": "site",
+    "role": "Her shrines stand by the saltwater lagoon and the strand (the town of Avlekete east of Whydah is named for her), where offerings are made for safe passage and the sea's bounty.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): the place and cult of Avlekete on the Whydah lagoon."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Avlekete (Avrekete) is a Gbe vodu of the sea and the lagoon-shore, of the water-pantheon, guardian of seafarers and giver of the sea's abundance, whose name is borne by a town on the Whydah lagoon.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the sea-pantheon."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005), Avlekete."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "A vodu of the sea and lagoon-shore of the water-pantheon. The descriptive title leads name.primary; the Gbe name Avlekete (Avrekete) stands in alt/etymology. Sex recorded female (the original West African spirit; some Diaspora traditions make Avrekete male). Parentage variously reported (junior of Agbe/Naete or of Sogbo), neither parent authored here — see SOLITARY flag. Typed deity. Authored as firmly attested per the task option; documented for the Gbe complex by Herskovits (1938) with the coastal sea-cult noted by Ellis (1890)."
+ }
+]
+```
+
+SOLITARY:
+- ewe_da — The world-serpent Da/Dã (Aido-Hwedo; the Ewe rainbow-serpent Anyi-eʋo) is a PRE-EXISTENT cosmic power, present at and serving the making of the world rather than begotten within it: he carries the creator Mawu-Lisa during creation and then coils to uphold the finished earth. The tradition expressly does not number him among the begotten children of Mawu-Lisa ("nobody knows where the serpent came from; it is not one of Mawu's deities"). No parent, consort or offspring is authored for him in this batch (M. J. Herskovits, Dahomey, 1938, vol. 2, the cosmic serpent; A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast, 1890, the rainbow-serpent Anyi-eʋo). The Fon couple the serpent-power with a female counterpart, but that figure is not authored here.
+- ewe_afa — Afa/Fa, the vodu and oracle of divination and destiny, is not a consistently-begotten son of Mawu-Lisa; it is the personified oracle of fate. In Fon theology the source of Fa's power is the female sky-spirit Gbadu, set by Mawu atop the palm-tree, and the oracle's messages are interpreted by Legba — a relation captured by the non-symmetric edge ewe_legba "associate of" ewe_afa rather than by parentage. Neither Gbadu nor any begetting parent is authored in this batch (E. G. Parrinder, West African Religion, 1961; M. J. Herskovits, Dahomey, 1938, vol. 2, the cult of Fa).
+- ewe_avlekete — The sea-and-lagoon vodu Avlekete is attested as a power of the water-pantheon, but the sources give her descent variously — junior/consort of the sea-deity Agbe and his sister-wife Naete in one tradition, a junior of the thunderer Sogbo in another — and none of those potential parents is authored in this batch, so no firm parent-edge can be drawn (M. J. Herskovits, Dahomey, 1938, vol. 2, the sea-pantheon; "Fon and Ewe Religion," Encyclopedia of Religion, 2005).
+
+RECIPROCAL-NEEDED (symmetric ties to the EXISTING corpus figure ewe_so / Sogbo — add the reciprocal "sibling" relation to ewe_so):
+- ewe_so sibling ewe_sakpata   (Sakpata the eldest, earth, and Sogbo the thunderer are brothers, sons of Mawu-Lisa, who quarrel over the rule of the earth — M. J. Herskovits, Dahomey, 1938, vol. 2)
+- ewe_so sibling ewe_gu   (Gu the iron-vodu and Sogbo, both children of Mawu-Lisa — Herskovits, Dahomey, 1938, vol. 2)
+- ewe_so sibling ewe_age   (Age the hunter-vodu and Sogbo, both children of Mawu-Lisa — Herskovits, Dahomey, 1938, vol. 2)
+- ewe_so sibling ewe_legba   (Legba the youngest and Sogbo the thunderer, both children of Mawu-Lisa — Herskovits, Dahomey, 1938, vol. 2)

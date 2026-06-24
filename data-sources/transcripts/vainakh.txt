@@ -1,0 +1,341 @@
+Figure-authoring batch — the Vainakh (Chechen–Ingush / Nakh) divine core still missing.
+
+The corpus already holds the head of the pantheon and the best-known figures around
+him: vainakh_dela (Dela/Diela, the supreme creator-god), vainakh_seela (Seela/Sela,
+god of thunder, lightning, the stars and the sun), vainakh_maetsill (Maetsill, the
+harvest-god and protector of the weak), vainakh_tusholi (Tusholi, the spring-and-
+fertility goddess, daughter of Dela), and vainakh_pkharmat (Pkharmat, the fire-stealing
+Nart smith). What is still missing is the rest of the well-attested functional core of
+the Vainakh divine family and the elemental "mother" goddesses of the high Caucasus.
+This batch adds six firmly attested figures:
+
+  • ELTA (Эльта) — god of the hunt and the wild animals, and (before Maetsill assumed
+    the office) of the grain-harvest; a son of the supreme god Dela, blinded in one eye
+    by his father for disobedience. As a child of Dela he is the brother of the existing
+    Tusholi.
+  • SELA SATA (Села Сата) — goddess of crafts and especially women's handiwork
+    (spinning, weaving, embroidery), the daughter (in other versions the wife) of the
+    thunder-god Sela, the Vainakh counterpart of the Northwest-Caucasian Nart matriarch
+    Satanaya; she guides the Nart Pkharmat to the fire on the mountain. She is wired to
+    the existing vainakh_seela (parent) and vainakh_pkharmat (companion in the fire-theft).
+  • MOLYZ-YERDY (Молыз-Ерды) — the war-god "who brought the Vainakh victory"; his name
+    carries the -yerdy / -erda element (the standard theonymic suffix of Vainakh patron-
+    deities and of the stone sanctuaries, e.g. Tkhaba-Yerdy, dedicated to them).
+  • ISHTAR-DELA (Иштар-Дела) — also Eshtar; lord of life and death and ruler of the
+    subterranean world Deeli-Malkhi, the realm of the dead, where he is responsible for
+    punishing the wicked. (Distinct from the supreme Dela despite the shared del- element;
+    this is the figure behind the prompt's "Mater-Dela / Dika-Dela" slot — the attested
+    death-lord of the Vainakh, not a separate "good/mother Dela.")
+  • DARTSA-NANA (Дарца-нана, "Blizzard-mother") — goddess of blizzards and avalanches,
+    who dwells on the snowy summit of Mount Kazbek (Bashlam), around which she has traced
+    a magic circle no mortal of sense dare cross.
+  • MOKHA-NANA (Мох-нана, "Wind-mother") — goddess of the winds, one of the elemental
+    "-nana" (mother) deities of the Vainakh natural world.
+
+Candidates from the brief that are NOT entered, to avoid padding or invention:
+"Mehkan-Nana" ("Mother of the Country/land") is not separately attested in the
+accessible literature — the attested forms are the "father of the country" title
+Mehkan-Da and the earth-mother Latta-Nana, not a distinct tutelary "Mehkan-Nana," so
+it is skipped. "Una-Nana" (a disease/plague mother) is not attested in the consulted
+sources and is omitted. "Galer-Erda" / "Khagia-Yerda" are named only as bare entries in
+deity-lists (local patron-erdy) with no individuated function, family, cult-item or
+narrative recoverable from the accessible sources, so they are not authored. "Mater-Dela
+/ Dika-Dela" is not a securely distinct figure; the death-lord role it gestures at is
+covered by the attested Ishtar-Dela above. The other elemental "-nana" mothers
+(Latta-Nana earth, Khi-Nana water) and the further bare -erdy entries (Hal-Erda sky,
+Mago-Erda magic/wisdom, etc.) are real list-entries but, like Galer-Erda, lack the
+enrichable detail to author responsibly here; the two -nana mothers entered (Dartsa-Nana,
+Mokha-Nana) are the ones for which the sources preserve concrete description.
+
+Sources are the standard reference literature on Vainakh (Chechen–Ingush) religion,
+all verified to exist as real works: Amjad Jaimoukha, *The Chechens: A Handbook*
+(RoutledgeCurzon, 2005), whose religion/mythology chapter reconstructs the pre-Islamic
+pantheon and gives the list of Vainakh deities; Mariel Tsaroïeva, *Anciennes croyances
+des Ingouches et des Tchétchènes* (Paris: Maisonneuve & Larose, 2005), the monograph by
+an Ingush historian of religion that underlies the standard inventory of the gods;
+David Hunt, *Legends of the Caucasus* (Saqi Books, 2012), for the Dartsa-Nana / Kazbek
+material and the fire-theft; and B. K. Dalgat, *Pervobytnaya religiya chechentsev i
+ingushey* [The Primitive Religion of the Chechens and Ingush] (the early-20th-century
+ethnography, Moscow: Nauka ed. 2004), already cited in the corpus. Tertiary syntheses
+(the Vainakh-religion survey on Wikipedia and the batsav.com pantheon page, which
+explicitly draw on Tsaroïeva 2005 and Jaimoukha 2005) are cited where they carry the
+specific wording.
+
+The Vainakh divine world is headed by Dela, beneath whom stand functional gods (Sela
+of the storm; Elta of the hunt; Maetsill, formerly Elta, of the harvest; Molyz-Yerdy of
+war) and the elemental "mothers" (-nana) and patron "saints" (-erdy) of the landscape,
+with Ishtar-Dela ruling the underworld Deeli-Malkhi. Theonyms are given in Cyrillic with
+romanization. Etymological notes: Vainakh nana 'mother' (Dartsa-nana 'blizzard-mother',
+Mokha/Mokh-nana 'wind-mother'); yerdy / erda, the suffix of the patron-deities and their
+stone shrines (elgyts); del- 'god' in Dela and Ishtar-Dela.
+
+Elta (son of Dela) is the brother of the existing vainakh_tusholi (also Dela's child):
+a symmetric sibling tie toward an existing corpus figure, flagged RECIPROCAL-NEEDED.
+Sela Sata is the daughter of the existing vainakh_seela (parentage encoded on her
+parentIds) and the companion of the existing vainakh_pkharmat in the fire-theft — a
+symmetric companion tie toward an existing corpus figure, flagged RECIPROCAL-NEEDED.
+Molyz-Yerdy, Ishtar-Dela, Dartsa-Nana and Mokha-Nana have no individuated kin, spouse or
+parentage in the sources and are flagged SOLITARY with cited reasons.
+
+```json
+[
+  {
+    "id": "vainakh_elta",
+    "name": {
+      "primary": "Elta, God of the Hunt",
+      "alt": ["Elta", "Эльта", "El'ta", "Elt"],
+      "transliterations": {
+        "vainakh": "Эльта (Elta)",
+        "etymology": "Vainakh theonym Elta, the god of the hunt and the wild beasts; in the older order also the god of the grain-harvest, an office later transferred to Maetsill. A son of the supreme god Dela, blinded in one eye by his father for disobedience."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["vainakh_dela"],
+    "parentRoles": { "vainakh_dela": "father" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "god-of-the-hunt-and-wild-animals", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), religion and mythology chapter (Elta, god of the hunt and the animals)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (Paris: Maisonneuve & Larose, 2005)" }], "notes": "Elta is the Vainakh god of the hunt and the lord of the wild animals, the game on which the highland hunter depends; he grants or withholds the quarry." },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1, "startEvent": "former-god-of-the-harvest", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Elta was god of the hunt and animals and — before Maetsill took over his role — the harvest)" }], "notes": "In the older dispensation Elta also governed the grain-harvest; that office was afterwards assumed by Maetsill, leaving Elta as the hunting-god proper." },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 2, "startEvent": "blinded-in-one-eye-by-Dela", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Elta blinded in one eye for disobedience by his father Deela)" }], "notes": "Elta was blinded in one eye by his father, the supreme god Dela, as a punishment for disobedience — the etiological mark that distinguishes the hunt-god." }
+    ],
+    "domains": [
+      { "sphereId": "the-hunt", "contextTag": "lifelong", "term": { "value": "Эльта", "script": "Cyrillic", "rom": "Elta" }, "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005), religion chapter (Elta, god of the hunt)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }] },
+      { "sphereId": "wild-animals-and-game", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005) (Elta, god of the animals)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Elta, god of the hunt and animals)" }] },
+      { "sphereId": "grain-and-the-harvest", "contextTag": "formerly", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Elta was, before Maetsill, god of the harvest)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }] }
+    ],
+    "faculties": [
+      { "id": "grant_or_withhold_game", "name": "grant or withhold the hunter's quarry", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005), Elta as lord of the hunt and the wild beasts" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }], "notes": "As master of the wild animals, Elta decides whether the hunter takes his quarry; the highland hunter's success in the chase is his gift." },
+      { "id": "lord_of_wild_animals", "name": "command and protect the wild animals", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005) (Elta, god of the animals)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Elta, god of the hunt and animals)" }], "notes": "Elta owns and shepherds the game-beasts of the forest and mountain, the divine herdsman of the wild as Maetsill is of the tilled field." },
+      { "id": "ripen_the_grain", "name": "ripen and grant the grain-harvest (former office)", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Elta was god of the harvest before Maetsill)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }], "notes": "In the older order Elta also gave the grain its increase; this harvest-office later passed to Maetsill." }
+    ],
+    "materialCulture": [
+      { "id": "elta_hunters_bow", "name": "the hunter's bow and the chase", "kind": "implement", "role": "the bow and weapons of the hunt over which Elta, lord of the chase and the game, presides; the highland hunter's success in the field is in his gift", "sources": [{ "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005) (Elta as god of the hunt)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }] },
+      { "id": "elta_hunters_offering", "name": "the hunter's offering for the chase", "kind": "votive-offering", "role": "the gift made to Elta by the hunter to win game and a safe return, the hunting-god being the giver of the quarry", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005), on hunting cult and the god of the hunt" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }] }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "vainakh_tusholi", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005) (Elta a son of Dela; Tusholi a daughter of Dela)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Elta, son of Deela; Tusholi, daughter of Dela)" }], "notes": "Elta, a son of the supreme god Dela, is thereby the brother of Tusholi, who is likewise reckoned Dela's daughter in the standard accounts. RECIPROCAL-NEEDED toward the existing vainakh_tusholi." }
+    ],
+    "sources": [
+      { "claim": "Elta (Эльта) is the Vainakh god of the hunt and the wild animals, and — before that office passed to Maetsill — of the grain-harvest; he is a son of the supreme god Dela, who blinded him in one eye for disobedience.", "citations": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), religion and mythology chapter" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (Paris: Maisonneuve & Larose, 2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (drawing on Jaimoukha 2005 and Tsaroïeva 2005)" }], "weight": "high" }
+    ],
+    "notes": "Vainakh hunt-god, a son of Dela and so brother of the existing Tusholi. English 'Elta, God of the Hunt' leads; native Эльта (Elta) in term. The harvest-domain is marked 'formerly' because the sources state it was his before Maetsill assumed it. RECIPROCAL-NEEDED toward vainakh_tusholi (sibling)."
+  },
+  {
+    "id": "vainakh_sela_sata",
+    "name": {
+      "primary": "Sela Sata, Goddess of Crafts",
+      "alt": ["Sela Sata", "Sata", "Села Сата", "Sela-Sata", "Seela Sata"],
+      "transliterations": {
+        "vainakh": "Села Сата (Sela Sata)",
+        "etymology": "Vainakh Sela Sata, 'Sata of Sela', the goddess of crafts and women's handiwork; daughter (in other versions wife) of the thunder-god Sela. The Nakh counterpart of the Northwest-Caucasian Nart matriarch Satanaya / Satana."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["vainakh_seela"],
+    "parentRoles": { "vainakh_seela": "father" },
+    "temporal": { "era": "mythic / Nart age" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "goddess-of-crafts-and-womens-work", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), religion and mythology chapter (Sela Sata, goddess of artisanship)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }], "notes": "Sata, or Sela Sata, is the goddess of artisanship and especially of female crafts — spinning, weaving and embroidery; her face is said to shine like the sun with beauty. She is the Vainakh counterpart of the NW-Caucasian Satanaya." },
+      { "typeStatus": "deity", "era": "mythic / Nart age", "eraOrdering": 1, "startEvent": "guides-Pkharmat-to-the-fire", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005), Pkharmat narrative" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Sela Sata helps Pkharmat steal Sela's fire, guiding him to the peak of Mount Kazbek)" }], "notes": "In the fire-theft she helps the Nart smith Pkharmat take Sela's fire for humankind, guiding him to the peak of Mount Kazbek (Bashlam)." }
+    ],
+    "domains": [
+      { "sphereId": "crafts-and-artisanship", "contextTag": "lifelong", "term": { "value": "Села Сата", "script": "Cyrillic", "rom": "Sela Sata" }, "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005) (Sela Sata, goddess of artisanship)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }] },
+      { "sphereId": "womens-handiwork-spinning-and-weaving", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Sela Sata, goddess of especially female crafts)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }] }
+    ],
+    "faculties": [
+      { "id": "patron_of_crafts", "name": "grant skill in crafts and women's handiwork", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005) (goddess of artisanship and female crafts)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Sela Sata, goddess of especially female crafts)" }], "notes": "As patron of artisanship she gives skill in spinning, weaving, embroidery and the women's handiwork of the household." },
+      { "id": "guide_the_fire_thief", "name": "guide the fire-thief to the celestial fire", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (she guides Pkharmat to the peak of Mount Kazbek to steal Sela's fire)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005), Pkharmat narrative" }], "notes": "She guides the Nart Pkharmat to the fire hoarded on the mountain by her father Sela, enabling the gift of fire to humankind." },
+      { "id": "shining_countenance", "name": "shine in countenance like the sun", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (her face shines like the sun with beauty)" }], "notes": "Her face is described as shining like the sun with beauty, a mark of her divine radiance." }
+    ],
+    "materialCulture": [
+      { "id": "sela_sata_distaff_and_loom", "name": "the distaff, spindle and loom", "kind": "implement", "role": "the tools of spinning, weaving and embroidery over which Sela Sata, goddess of women's handiwork, presides", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005) (goddess of female crafts)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }] }
+    ],
+    "relations": [
+      { "kind": "companion", "personId": "vainakh_pkharmat", "era": "mythic / Nart age", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Sela Sata helps Pkharmat steal Sela's fire, guiding him to Mount Kazbek)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005), Pkharmat narrative" }], "notes": "Sela Sata is the divine helper-companion of the Nart smith Pkharmat in the fire-theft, guiding him to the fire on Mount Kazbek. RECIPROCAL-NEEDED toward the existing vainakh_pkharmat." }
+    ],
+    "sources": [
+      { "claim": "Sela Sata (Села Сата) is the Vainakh goddess of crafts and especially of women's handiwork, the daughter (in other versions the wife) of the thunder-god Sela and the counterpart of the Northwest-Caucasian Nart matriarch Satanaya; she helps the Nart Pkharmat steal Sela's fire, guiding him to the peak of Mount Kazbek.", "citations": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), religion and mythology chapter" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (Paris: Maisonneuve & Larose, 2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Sata / Sela Sata; counterpart of Satanaya)" }], "weight": "high" }
+    ],
+    "notes": "Vainakh crafts-goddess and Nart-age fire-helper, the daughter of the existing vainakh_seela (parentage on parentIds; one tradition makes her his wife instead, noted here) and companion of the existing vainakh_pkharmat. English 'Sela Sata, Goddess of Crafts' leads; native Села Сата (Sela Sata) in term. Era 'mythic / Nart age' because she is both a goddess and a Nart-cycle actor. RECIPROCAL-NEEDED toward vainakh_pkharmat (companion)."
+  },
+  {
+    "id": "vainakh_molyz_yerdy",
+    "name": {
+      "primary": "Molyz-Yerdy, God of War",
+      "alt": ["Molyz-Yerdy", "Molyz-Yerdi", "Molyz-Erda", "Molyz", "Молыз-Ерды"],
+      "transliterations": {
+        "vainakh": "Молыз-Ерды (Molyz-Yerdy)",
+        "etymology": "Vainakh Molyz + -yerdy / -erda, the suffix of the patron-deities and of the stone sanctuaries (elgyts) dedicated to them (cf. Tkhaba-Yerdy, Tamyzh-Yerdy); 'the patron(-saint) Molyz', the war-god."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "war-god-who-grants-victory", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), religion and mythology chapter (Molyz-Yerdy, war-god)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }], "notes": "Molyz-Yerdy is the Vainakh war-god, 'the war god who brought the Vainakh victory'; he was invoked for success in battle, and the -yerdy element marks him as one of the patron-deities honored at the stone sanctuaries." }
+    ],
+    "domains": [
+      { "sphereId": "war-and-battle", "contextTag": "lifelong", "term": { "value": "Молыз-Ерды", "script": "Cyrillic", "rom": "Molyz-Yerdy" }, "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005) (Molyz-Yerdy, war-god)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Molyz-Yerdi, the war god who brought the Vainakh victory)" }] },
+      { "sphereId": "victory", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (the war god who brought the Vainakh victory)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }] }
+    ],
+    "faculties": [
+      { "id": "grant_victory_in_war", "name": "grant the Vainakh victory in war", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (the war god who brought the Vainakh victory)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005) (war-god)" }], "notes": "As god of war he gives his people the victory in battle; warriors invoked him before the fight." },
+      { "id": "patron_of_warriors", "name": "patronize and protect the warriors", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005), on the war-god among the Vainakh patron-deities" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }], "notes": "A -yerdy patron-deity of the warrior estate, receiving the soldiers' vows and offerings at his sanctuary." }
+    ],
+    "materialCulture": [
+      { "id": "molyz_yerdy_shrine", "name": "the sanctuary (yerdy/elgyts) of Molyz-Yerdy", "kind": "shrine", "role": "the stone patron-shrine where the war-god was honored and victory implored, of the same -yerdy class as the famed Vainakh sanctuaries (Tkhaba-Yerdy, Tamyzh-Yerdy)", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005), on the -yerdy patron-deities and their sanctuaries" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }] },
+      { "id": "molyz_yerdy_war_offering", "name": "the warriors' offering for victory", "kind": "votive-offering", "role": "the vow and sacrifice made to the war-god before battle to win his victory and protection", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (the war god who brought the Vainakh victory)" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Molyz-Yerdy (Молыз-Ерды) is the Vainakh war-god, 'the war god who brought the Vainakh victory', one of the patron-deities (-yerdy) of the Chechen–Ingush pantheon.", "citations": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), religion and mythology chapter" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (Paris: Maisonneuve & Larose, 2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Molyz-Yerdi, war god)" }], "weight": "high" }
+    ],
+    "notes": "Vainakh war-god, rendered deity per schema. English 'Molyz-Yerdy, God of War' leads; native Молыз-Ерды (Molyz-Yerdy) in term. SOLITARY: no individuated kin, spouse or parentage is attested for the war-god in the sources (Jaimoukha 2005; Tsaroïeva 2005; the Vainakh-religion survey)."
+  },
+  {
+    "id": "vainakh_ishtar_dela",
+    "name": {
+      "primary": "Ishtar-Dela, Lord of the Dead",
+      "alt": ["Ishtar-Dela", "Ishtar-Deela", "Eshtar", "Ештар", "Иштар-Дела"],
+      "transliterations": {
+        "vainakh": "Иштар-Дела (Ishtar-Dela)",
+        "etymology": "Vainakh Ishtar-Dela (also Eshtar), the lord of life and death and ruler of the underworld; del- 'god'. Distinct from the supreme Dela: he governs the subterranean realm of the dead, Deeli-Malkhi."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "lord-of-life-and-death", "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), religion and mythology chapter" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Ishtar-Deela, lord of life and death and ruler of the underworld, who punishes the wicked)" }], "notes": "Ishtar-Dela (Eshtar) is the lord of life and death and the ruler of the subterranean world, responsible for punishing the wicked." },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1, "startEvent": "ruler-of-Deeli-Malkhi", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Deeli-Malkhi, the subterranean world larger than the human realm, took seven years to create)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }], "notes": "He rules Deeli-Malkhi, the underworld, said to be larger than the human realm and to have taken seven years to create; it was not an evil realm of the dead but, in its social order, even held superior to the world above — there was no judgment in the afterlife, yet Ishtar-Dela punishes the wicked." }
+    ],
+    "domains": [
+      { "sphereId": "death-and-the-underworld", "contextTag": "lifelong", "term": { "value": "Иштар-Дела", "script": "Cyrillic", "rom": "Ishtar-Dela" }, "sources": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005) (Ishtar-Dela / Eshtar, lord of the dead)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (lord of life and death, ruler of the underworld Deeli-Malkhi)" }] },
+      { "sphereId": "life-and-death", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Ishtar-Deela, lord of life and death)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }] },
+      { "sphereId": "punishment-of-the-wicked", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (responsible for punishing the wicked)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }] }
+    ],
+    "faculties": [
+      { "id": "rule_the_underworld", "name": "rule the subterranean realm of the dead", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (ruler of the underworld Deeli-Malkhi)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }], "notes": "He is sovereign of Deeli-Malkhi, the underworld of the dead, larger than the world of the living and seven years in the making." },
+      { "id": "dispose_of_life_and_death", "name": "dispose of life and death", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (lord of life and death)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }], "notes": "As lord of life and death he governs the passage of mortals out of the upper world into his realm." },
+      { "id": "punish_the_wicked", "name": "punish the wicked", "inheritability": "none", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (responsible for punishing the wicked)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }], "notes": "He is responsible for the chastisement of the wicked — even though, in the Vainakh conception, there was no formal judgment of the dead in the afterlife." }
+    ],
+    "materialCulture": [
+      { "id": "deeli_malkhi_underworld", "name": "Deeli-Malkhi, the underworld realm", "kind": "realm", "role": "the subterranean world of the dead ruled by Ishtar-Dela, said to be larger than the human realm and to have taken seven years to create", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Deeli-Malkhi, the subterranean world)" }, { "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (2005)" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Ishtar-Dela (Иштар-Дела; also Eshtar) is the Vainakh lord of life and death and ruler of the subterranean world Deeli-Malkhi, the realm of the dead, where he punishes the wicked.", "citations": [{ "kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), religion and mythology chapter" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Ishtar-Deela; Deeli-Malkhi)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (Paris: Maisonneuve & Larose, 2005)" }], "weight": "high" }
+    ],
+    "notes": "Vainakh death-lord and ruler of the underworld Deeli-Malkhi, the figure behind the 'Mater-Dela / Dika-Dela' slot of the brief (no separate good/mother-Dela is securely attested; the attested distinct del- figure is the death-lord). English 'Ishtar-Dela, Lord of the Dead' leads; native Иштар-Дела (Ishtar-Dela) in term. SOLITARY: despite the shared del- element with the supreme Dela, the sources do not state any individuated kinship, spouse or parentage for him (Jaimoukha 2005; Tsaroïeva 2005; the Vainakh-religion survey)."
+  },
+  {
+    "id": "vainakh_dartsa_nana",
+    "name": {
+      "primary": "Dartsa-Nana, the Blizzard-Mother",
+      "alt": ["Dartsa-Nana", "Dartsa-Naana", "Darza-Nana", "Дарца-нана", "Blizzard-mother"],
+      "transliterations": {
+        "vainakh": "Дарца-нана (Dartsa-nana)",
+        "etymology": "Vainakh darza/dartsa 'blizzard, snowstorm' + nana 'mother', i.e. 'Blizzard-mother'; the goddess of blizzards and avalanches who dwells on Mount Kazbek."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "goddess-of-blizzards-and-avalanches", "sources": [{ "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (Saqi Books, 2012)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }], "notes": "Dartsa-Nana, the 'Blizzard-mother', is the Vainakh goddess of blizzards and avalanches; she dwells on the snowy summit of Mount Kazbek (Bashlam), around which she has traced a magic circle that no mortal of any sense dare cross." },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1, "startEvent": "guardian-of-the-magic-circle-on-Kazbek", "sources": [{ "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (2012)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Dartsa-Naana traces a magic circle on Kazbek; casts trespassers into the abyss with avalanches)" }], "notes": "Should any be foolhardy enough to cross her circle, she casts them into the abyss and brings down upon them the death-dealing snows of her mountain home." }
+    ],
+    "domains": [
+      { "sphereId": "blizzards-and-snowstorms", "contextTag": "lifelong", "term": { "value": "Дарца-нана", "script": "Cyrillic", "rom": "Dartsa-nana" }, "sources": [{ "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (2012)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Dartsa-Naana, goddess of blizzards)" }] },
+      { "sphereId": "avalanches", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (2012) (goddess of blizzards and avalanches)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }] },
+      { "sphereId": "the-high-mountain-of-Kazbek", "contextTag": "lifelong", "sources": [{ "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (she dwells on the snowy summit of Mount Kazbek)" }, { "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (2012)" }] }
+    ],
+    "faculties": [
+      { "id": "raise_blizzards", "name": "raise blizzards and snowstorms", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (2012)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (goddess of blizzards and avalanches)" }], "notes": "As 'Blizzard-mother' she commands the snowstorms of the high Caucasus." },
+      { "id": "loose_avalanches", "name": "loose the death-dealing avalanches", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (2012) (brings down the death-dealing snows upon trespassers)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia" }], "notes": "She brings tumbling down the death-dealing snows of Kazbek upon those who provoke her, casting trespassers into the abyss." },
+      { "id": "ward_the_magic_circle", "name": "ward the magic circle on Kazbek", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (2012)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (the magic circle no mortal of sense dare cross)" }], "notes": "Around her summit-home she has traced a magic circle which no mortal of any sense dare cross; to cross it is death." }
+    ],
+    "materialCulture": [
+      { "id": "dartsa_nana_magic_circle", "name": "the magic circle on Mount Kazbek", "kind": "boundary-marker", "role": "the warded ring Dartsa-Nana has traced about her summit-home, which no mortal of sense dare cross on pain of being cast into the abyss", "sources": [{ "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (2012)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (the magic circle around Kazbek)" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Dartsa-Nana (Дарца-нана, 'Blizzard-mother') is the Vainakh goddess of blizzards and avalanches; she dwells on the snowy summit of Mount Kazbek, around which she has traced a magic circle no mortal of sense dare cross, casting trespassers into the abyss beneath her death-dealing snows.", "citations": [{ "kind": "secondary", "reference": "David Hunt, Legends of the Caucasus (Saqi Books, 2012)" }, { "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (Paris: Maisonneuve & Larose, 2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Dartsa-Naana)" }], "weight": "high" }
+    ],
+    "notes": "Vainakh blizzard-and-avalanche goddess of Mount Kazbek, one of the elemental '-nana' (mother) deities. English 'Dartsa-Nana, the Blizzard-Mother' leads; native Дарца-нана (Dartsa-nana) in term. SOLITARY: described as a solitary mountain-goddess with no individuated kin, spouse or parentage in the sources (Hunt, Legends of the Caucasus 2012; Tsaroïeva 2005; the Vainakh-religion survey). The 'mother' (-nana) of her name is an elemental epithet, not an attested genealogical tie."
+  },
+  {
+    "id": "vainakh_mokha_nana",
+    "name": {
+      "primary": "Mokha-Nana, the Wind-Mother",
+      "alt": ["Mokha-Nana", "Mokha-Naana", "Mokh-Nana", "Mikha-Nana", "Мох-нана", "Wind-mother"],
+      "transliterations": {
+        "vainakh": "Мох-нана (Mokh-nana)",
+        "etymology": "Vainakh mokh / mikh 'wind' + nana 'mother', i.e. 'Wind-mother'; the goddess of the winds, one of the elemental '-nana' (mother) deities of the Vainakh world."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "goddess-of-the-winds", "sources": [{ "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Mokha-Naana, goddess of the winds)" }], "notes": "Mokha-Nana, the 'Wind-mother', is the Vainakh goddess of the winds, one of the elemental '-nana' mothers alongside Dartsa-Nana of the blizzard, Khi-Nana of the waters and Latta-Nana of the earth." }
+    ],
+    "domains": [
+      { "sphereId": "the-winds", "contextTag": "lifelong", "term": { "value": "Мох-нана", "script": "Cyrillic", "rom": "Mokh-nana" }, "sources": [{ "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Mokha-Naana / Mikha-Nana, goddess of the winds)" }] }
+    ],
+    "faculties": [
+      { "id": "command_the_winds", "name": "command and send forth the winds", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (goddess of the winds)" }], "notes": "As 'Wind-mother' she rules the winds of the Vainakh world, the elemental mother of the air as her sisters are of the snow, the water and the earth." }
+    ],
+    "materialCulture": [
+      { "id": "mokha_nana_winds", "name": "the winds of the Vainakh world", "kind": "elemental-domain", "role": "the winds themselves, the natural element over which the Wind-mother presides", "sources": [{ "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Mokha-Naana, goddess of the winds)" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Mokha-Nana (Мох-нана, 'Wind-mother'; also Mikha-Nana) is the Vainakh goddess of the winds, one of the elemental '-nana' (mother) deities of the Chechen–Ingush natural world.", "citations": [{ "kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes (Paris: Maisonneuve & Larose, 2005)" }, { "kind": "tertiary", "reference": "Vainakh religion, Wikipedia (Mokha-Naana / Mikha-Nana)" }], "weight": "medium" }
+    ],
+    "notes": "Vainakh wind-goddess, one of the elemental '-nana' mothers. English 'Mokha-Nana, the Wind-Mother' leads; native Мох-нана (Mokh-nana) in term. SOLITARY: attested only as the elemental goddess of the winds, with no individuated kin, spouse or parentage in the sources (Tsaroïeva 2005; the Vainakh-religion survey). The '-nana' (mother) of her name is an elemental epithet, not an attested genealogical tie."
+  }
+]
+```
+
+SOLITARY: vainakh_molyz_yerdy — the war-god Molyz-Yerdy is attested (Jaimoukha 2005; Tsaroïeva 2005; the Vainakh-religion survey) only by his function ("the war god who brought the Vainakh victory"); no individuated kin, spouse or parentage is given.
+SOLITARY: vainakh_ishtar_dela — the death-lord Ishtar-Dela / Eshtar, ruler of the underworld Deeli-Malkhi, is attested (Jaimoukha 2005; Tsaroïeva 2005; the Vainakh-religion survey) without any stated kinship; despite the shared del- element with the supreme Dela, no parentage or kin is asserted in the sources.
+SOLITARY: vainakh_dartsa_nana — Dartsa-Nana, the Blizzard-mother of Mount Kazbek, is described (Hunt, Legends of the Caucasus 2012; Tsaroïeva 2005) as a solitary mountain-goddess; her '-nana' (mother) is an elemental epithet, and no individuated kin, spouse or parentage is attested.
+SOLITARY: vainakh_mokha_nana — Mokha-Nana, the Wind-mother, is attested (Tsaroïeva 2005; the Vainakh-religion survey) only as the elemental goddess of the winds; her '-nana' (mother) is an elemental epithet, and no individuated kin, spouse or parentage is attested.
+
+RECIPROCAL-NEEDED: vainakh_tusholi sibling vainakh_elta — add the reciprocal sibling relation to the existing figure vainakh_tusholi. Rationale: Elta is a son of the supreme god Dela (Jaimoukha 2005; Vainakh-religion survey) and Tusholi is reckoned Dela's daughter in the standard accounts (already encoded on vainakh_tusholi.parentIds = ["vainakh_dela"]), so the two are siblings.
+RECIPROCAL-NEEDED: vainakh_pkharmat companion vainakh_sela_sata — add the reciprocal companion relation to the existing figure vainakh_pkharmat. Rationale: Sela Sata helps the Nart smith Pkharmat steal Sela's fire for humankind, guiding him to the peak of Mount Kazbek (Jaimoukha 2005, Pkharmat narrative; Vainakh-religion survey).

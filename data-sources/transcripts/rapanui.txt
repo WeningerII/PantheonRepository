@@ -1,0 +1,1394 @@
+Figure-authoring batch — NEW tradition "Rapa Nui" (Easter Island), authored
+from scratch. The Rapa Nui pantheon was entirely absent from the corpus; this
+adds its firmly-attested core (8 figures). ERA_ORDER['Rapa Nui'] and
+ERA_DATES['Rapa Nui'] are already registered with exactly the three eras used
+here: primordial, mythic, mythic-prehistoric.
+
+Sources are the three standard ethnographies of the island plus Thomson's
+foundational 1891 record: Alfred Métraux, Ethnology of Easter Island (Bishop
+Museum Bulletin 160, 1940); Katherine Routledge, The Mystery of Easter Island
+(1919); Sebastian Englert, La Tierra de Hotu Matu'a (1948); and W. J. Thomson,
+Te Pito te Henua, or Easter Island (1891).
+
+Verified scope and genealogy wired WITHIN this batch:
+- Makemake — supreme creator god, maker of mankind (Métraux 1940: "procreated
+  red flesh from a calabash of water, mounded up some earth, and formed three
+  males and one female"; offspring Tive, Rorai, Hova, and the noblewoman
+  Arangi-kote-kote), and chief god of the tangata-manu (birdman) cult at Orongo.
+- Haua — Makemake's COMPANION (Haua-tu'u-take-take, "chief of the eggs"); the
+  two together drove the nesting sea-birds to the islet Motu Nui and instituted
+  the offering "Take for Haua, for Makemake!". (reciprocal companion ↔ Makemake)
+- Uoke (Uvoke) — the giant/god who levered up the lands with his great pole until
+  it broke, leaving only the fragment that is Easter Island (hence Te Pito o te
+  Henua, "the fragment of the earth", Barthel 1974). SOLITARY.
+- Tangaroa — the ancestral god who came to Rapa Nui in the shape of a seal (with a
+  human face and voice; the seal would not cook, proving him a chief of mana).
+  Father of Rongo and brother of Hiro; a divine ancestor of Hotu Matu'a (Métraux
+  1940:127). (reciprocal: father-of ↔ Rongo; sibling ↔ Hiro; ancestor-of Hotu Matu'a)
+- Rongo — son of Tangaroa in the Rapa Nui royal genealogy; with Tangaroa, the
+  divine ancestor from whom the ariki claimed descent (Métraux 1940:127).
+- Hiro — god of wind and rain, whose tears are the rain ("E te uá, matavai-roa a
+  Hiro-é" — "O rain, great tears of Hiro"), summoned with the stone trumpet Pu o
+  Hiro; brother of Tangaroa.
+- Hotu Matu'a — the founding ariki mau (paramount ancestor-king) who led the
+  migration from the homeland Hiva and settled the island at Anakena; descendant
+  of the gods Tangaroa and Rongo (Métraux 1940:127); his line continues through
+  his firstborn son Tu'u Maheke. (type mortal; ancestor edge from Tangaroa & Rongo)
+- Nuahine — the old woman in/of the moon (the Rapa Nui form of Hina). SOLITARY.
+
+Only the widely published ethnographic record is used. The aku-aku (spirits) are
+a CLASS, not authored as a figure; tangata manu is a cult ROLE, not a deity, and
+is likewise not authored.
+
+```json
+[
+ {
+  "id": "rapanui_makemake",
+  "name": {
+   "primary": "Makemake",
+   "alt": [
+    "Make-Make",
+    "Make Make"
+   ],
+   "transliterations": {
+    "rapanui": "Makemake",
+    "etymology": "Personal name of the Rapa Nui supreme god; sometimes regarded as a local form of the wider Polynesian creator Tane (Métraux, Ethnology of Easter Island, 1940). No secure further etymology survives."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "creation-of-mankind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "The supreme creator. Looking at his reflection in a calabash of water he resolved to make a being like himself: he procreated red flesh (the first man) from a gourd of water and, mounding up earth, formed three men and one woman. His offspring are named as Tive, Rorai, Hova and the noblewoman Arangi-kote-kote."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "institution-of-the-birdman-cult",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Chief god of the tangata-manu (birdman) cult at Orongo. With his companion Haua he drove the sea-birds to nest on the islet Motu Nui; the annual contest for the first sooty-tern (manutara) egg was held in his honour, and he is the great subject of the Orongo petroglyphs, carved as a staring face or skull with huge eye-sockets."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Makemake",
+     "script": "Rapa Nui",
+     "rom": "Makemake"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Maker of mankind and of the world's first beings."
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "God of fertility and of the increase of the sea-birds; invoked for plenty."
+   },
+   {
+    "sphereId": "birds",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Lord and driver of the sea-bird flocks; patron of the birdman cult."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "create-human-life",
+    "name": "Create human life",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Procreates the first man as red flesh from a calabash of water and forms three men and a woman from mounded earth."
+   },
+   {
+    "id": "command-the-seabirds",
+    "name": "Command and drive the sea-birds",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "With Haua he removed the nesting sea-birds to Motu Nui, making the manutara egg the prize of the birdman rite."
+   },
+   {
+    "id": "send-fertility-and-plenty",
+    "name": "Send fertility and plenty",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Invoked, with Haua, in the food-offering formula 'Ka to mai te ika, te manu — for Haua, for Makemake!' to give fish and fowl."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "manutara_egg",
+    "name": "Manutara (sooty-tern) egg",
+    "kind": "ritual-object",
+    "role": "patron-prize",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The first egg of the sooty tern (manutara) taken on Motu Nui each year; its bearer's patron became the tangata manu (birdman) for the year, in Makemake's honour."
+   },
+   {
+    "id": "makemake_petroglyphs",
+    "name": "Makemake face/skull petroglyphs of Orongo",
+    "kind": "icon",
+    "role": "cult-image",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Métraux, Ethnology of Easter Island (1940); rock-art corpus of Orongo, Rano Kau"
+     }
+    ],
+    "notes": "Makemake is carved as a face or skull with great round eye-sockets, the commonest motif of the Orongo birdman sanctuary and of caves and coastal rocks across the island."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "rapanui_haua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Inseparable companion of Haua; together they brought the sea-birds to Motu Nui and share the food-offering."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Makemake is the supreme god of Rapa Nui: creator of the world's first beings and of mankind (whom he procreates from a gourd of water and from mounded earth), god of fertility, and chief deity of the tangata-manu (birdman) cult. With his companion Haua he drove the sea-birds to the islet Motu Nui, and the yearly competition for the first sooty-tern (manutara) egg at Orongo was held in his name. He is the most frequent figure in Easter Island rock art, depicted as a staring face or skull with enormous eye-sockets."
+ },
+ {
+  "id": "rapanui_haua",
+  "name": {
+   "primary": "Haua",
+   "alt": [
+    "Haua-tu'u-take-take",
+    "Hawa",
+    "Chief of the Eggs"
+   ],
+   "transliterations": {
+    "rapanui": "Haua-tu'u-take-take",
+    "etymology": "Rapa Nui; the fuller cult-name Haua-tu'u-take-take is glossed in the tradition as the 'chief of the eggs', the god paired with Makemake over the sea-birds (Métraux, 1940)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "removal-of-the-seabirds-to-motu-nui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "Companion of Makemake and, with him, master of the sea-bird flocks. The two gods removed the nesting birds to the offshore islets Motu Nui and Motu Iti (because people were taking all their eggs) and revealed themselves to a priestess, instituting the birdman cult and the offering 'for Haua, for Makemake!'. In the cult he is one of the four associated gods, called 'chief of the eggs', with his wife vi'e Hoa."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "birds",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Co-master, with Makemake, of the sea-birds brought to Motu Nui; the 'chief of the eggs'."
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Shares with Makemake the food-offering and the increase of fish and fowl."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "master-the-seabird-flocks",
+    "name": "Master the sea-bird flocks",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "With Makemake, drove and confined the nesting sea-birds to the islets Motu Nui and Motu Iti."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "rapanui_makemake",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Inseparable companion of Makemake in the mastery of the sea-birds and in the food-offering 'for Haua, for Makemake!'."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Haua (in cult Haua-tu'u-take-take, 'chief of the eggs') is the companion god of Makemake. Together the two are the masters of the sea-bird flocks: they drove the nesting birds to the islets Motu Nui and Motu Iti and, appearing to a priestess, founded the birdman cult and the food-offering set aside 'for Haua, for Makemake!'. He is named among the four gods of the birdman sect, with his wife vi'e Hoa."
+ },
+ {
+  "id": "rapanui_uoke",
+  "name": {
+   "primary": "Uoke",
+   "alt": [
+    "Uvoke",
+    "Uoké"
+   ],
+   "transliterations": {
+    "rapanui": "Uoke",
+    "etymology": "Rapa Nui; personal name of the land-lifting giant (also Uvoke). The associated island-name Te Pito o te Henua is, on this myth, read 'the fragment of the earth' rather than 'the navel of the earth' (Barthel, 1974)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-levering-and-sinking-of-the-lands",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Thomas Barthel, The Eighth Land: The Polynesian Settlement of Easter Island (1974/1978)"
+     }
+    ],
+    "notes": "The primeval giant-god who pried up the lands with his great pole (a lever or crowbar), tilting and sinking one country after another into the sea. When he came to Rapa Nui his pole struck rock and broke, so that only this fragment of land remained above the water — the explanation of the island's small size and isolation, and of the name Te Pito o te Henua, 'the fragment of the earth'."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "primeval",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "Shaper (and destroyer) of the land's extent; raises and sinks whole countries."
+   },
+   {
+    "sphereId": "destruction",
+    "contextTag": "primeval",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barthel, The Eighth Land (1974/1978)"
+     }
+    ],
+    "notes": "His levering drowns the lands; only the broken lever spares Rapa Nui."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lever-up-and-sink-land",
+    "name": "Lever up and sink the land",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Barthel, The Eighth Land (1974/1978)"
+     }
+    ],
+    "notes": "With his great pole he pries up the lands and tips them into the sea; the act ends only when the pole breaks against Rapa Nui."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "uoke_lever",
+    "name": "Uoke's great pole (lever / crowbar)",
+    "kind": "tool",
+    "role": "wielder",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Barthel, The Eighth Land (1974/1978)"
+     }
+    ],
+    "notes": "The huge digging-pole or lever with which Uoke heaved up the lands; it broke against the rock of Rapa Nui, ending the destruction and leaving the island as the last fragment."
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Thomas Barthel, The Eighth Land: The Polynesian Settlement of Easter Island (1974/1978)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Uoke (Uvoke) is the primeval giant-god who levered up the lands with his enormous pole and sank them one by one into the sea. When he reached Rapa Nui his pole broke against the rock, so that only this last fragment of earth was left standing — the island's own explanation for its small size and extreme isolation, and (on Barthel's reading) for the name Te Pito o te Henua, 'the fragment of the earth'. SOLITARY: a primeval world-shaper named with no kin in the Rapa Nui record."
+ },
+ {
+  "id": "rapanui_tangaroa",
+  "name": {
+   "primary": "Tangaroa",
+   "alt": [
+    "Tanga Roa",
+    "Takaroa"
+   ],
+   "transliterations": {
+    "rapanui": "Tangaroa",
+    "etymology": "Rapa Nui form of the pan-Polynesian sea-god Tangaroa; on Easter Island remembered chiefly as the ancestral chief who came in the form of a seal (Métraux, 1940)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "coming-to-rapa-nui-as-a-seal",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "Came to Rapa Nui from Hiva in the shape of a seal that had a human face and voice. The people killed it and put it in the earth-oven, but the flesh would not cook however long it was baked; from this they understood that Tangaroa had been a chief of great power (mana). He is the brother of Hiro and, in the royal genealogy, the father of Rongo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tangaroa",
+     "script": "Rapa Nui",
+     "rom": "Tangaroa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The pan-Polynesian sea-god, on Rapa Nui the ancestral chief who arrived from the ocean as a seal."
+   },
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "With Rongo, the divine ancestor from whom the ariki of Easter Island claimed direct descent."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "resist-the-cooking-fire",
+    "name": "Body that will not cook",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "In seal form his flesh would not cook in the earth-oven however long it was baked — the sign of his mana and chiefly divinity."
+   },
+   {
+    "id": "take-the-form-of-a-seal",
+    "name": "Take the form of a seal",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Came across the sea to Rapa Nui as a seal with a human face and human speech."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "rapanui_hiro",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Brother of Hiro; both brothers were powerful in magic."
+   },
+   {
+    "kind": "father-of",
+    "personId": "rapanui_rongo",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Father of Rongo in the Rapa Nui royal genealogy."
+   },
+   {
+    "kind": "ancestor-of",
+    "personId": "rapanui_hotu_matua",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Divine ancestor (with Rongo) of the first king Hotu Matu'a, from whom the ariki claimed descent."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tangaroa is the Rapa Nui form of the great Polynesian sea-god, but on Easter Island he is remembered above all as the ancestral chief who came from Hiva in the shape of a seal with a human face and voice. Killed and placed in the earth-oven, his flesh would not cook — proof of his mana. He is the brother of the rain-god Hiro and, in the royal genealogy recorded by Métraux (1940:127), the father of Rongo and, with Rongo, a divine ancestor of the first king Hotu Matu'a."
+ },
+ {
+  "id": "rapanui_rongo",
+  "name": {
+   "primary": "Rongo",
+   "alt": [
+    "Roko",
+    "Rongo-ma-tane (Polynesian cognate)"
+   ],
+   "transliterations": {
+    "rapanui": "Rongo",
+    "etymology": "Rapa Nui reflex of the pan-Polynesian god Rongo/Lono; on Easter Island the son of Tangaroa in the royal genealogy (Métraux, 1940:127)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "rapanui_tangaroa"
+  ],
+  "parentRoles": {
+   "rapanui_tangaroa": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "place-in-the-royal-genealogy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940), p. 127"
+     }
+    ],
+    "notes": "Son of Tangaroa. With his father he is the divine ancestor from whom the kings of Easter Island proclaimed their direct descent, linking the human ariki line of Hotu Matu'a to the gods."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Rongo",
+     "script": "Rapa Nui",
+     "rom": "Rongo"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "With Tangaroa, the divine forebear of the royal line of Rapa Nui."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "rapanui_tangaroa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Son of Tangaroa in the royal genealogy."
+   },
+   {
+    "kind": "ancestor-of",
+    "personId": "rapanui_hotu_matua",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Divine ancestor (with Tangaroa) of the first king Hotu Matu'a."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_lono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_ono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940), p. 127"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Rongo is the Rapa Nui reflex of the widespread Polynesian god Rongo/Lono. On Easter Island his role in the surviving record is genealogical: he is the son of Tangaroa, and with his father he is the divine ancestor from whom the ariki of the island, beginning with Hotu Matu'a, claimed direct descent (Métraux 1940:127)."
+ },
+ {
+  "id": "rapanui_hiro",
+  "name": {
+   "primary": "Hiro",
+   "alt": [
+    "Hiro the rain-god"
+   ],
+   "transliterations": {
+    "rapanui": "Hiro",
+    "etymology": "Rapa Nui; god of wind and rain, whose name is invoked in the rain-chant and in the stone trumpet Pu o Hiro ('trumpet of Hiro'). Brother of Tangaroa (Métraux, 1940)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "attestation-as-the-rain-god",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "God of wind and rain and brother of Tangaroa. In time of drought the people chanted to him 'E te uá, matavai-roa a Hiro-é' — 'O rain, great tears of Hiro' — so that the rain was understood as his weeping; he was summoned with the stone trumpet called Pu o Hiro."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The rain is his tears; invoked in drought to send it down."
+   },
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "God of wind as well as rain; brother of Tangaroa, powerful in magic."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send-the-rain",
+    "name": "Send the rain (his tears)",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The rain is the 'great tears of Hiro'; petitioned in drought with the chant 'E te uá, matavai-roa a Hiro-é' and with the trumpet Pu o Hiro."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pu_o_hiro",
+    "name": "Pu o Hiro (the trumpet of Hiro)",
+    "kind": "instrument",
+    "role": "cult-object",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Field record of the Pu o Hiro stone aerophone, north coast of Rapa Nui"
+     }
+    ],
+    "notes": "A pierced stone aerophone ('trumpet of Hiro') sounded to call the rain-god Hiro in fertility and rain-making rites."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "rapanui_tangaroa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Brother of Tangaroa; both brothers were powerful in magic."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hiro is the Rapa Nui god of wind and rain and the brother of Tangaroa. The rain was held to be his weeping: in drought the islanders chanted 'E te uá, matavai-roa a Hiro-é' — 'O rain, great tears of Hiro' — and summoned him with the pierced stone trumpet, the Pu o Hiro, in their rain- and fertility-rites."
+ },
+ {
+  "id": "rapanui_hotu_matua",
+  "name": {
+   "primary": "Hotu Matu'a",
+   "alt": [
+    "Hotu-Matua",
+    "Hotu Matua",
+    "Ariki Mau Hotu Matu'a"
+   ],
+   "transliterations": {
+    "rapanui": "Hotu Matu'a",
+    "etymology": "Rapa Nui; the title/name of the founding paramount chief. 'Hotu' and the epithet 'Matu'a' ('the parent / progenitor') mark him as the ancestral father-king of the island (Englert, 1948)."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "migration-from-hiva",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Paramount chief (ariki mau) of the homeland Hiva. After his counsellor Hau Maka dreamed of a far land — 'the eyes that look to the sky' — and seven explorers were sent ahead, Hotu Matu'a led the migration to Rapa Nui in a great voyaging canoe (in some tellings two, with Tu'u-ko-Iho), bringing the founding stock of plants and animals."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "landing-and-settlement-at-anakena",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "Landed and made his seat at Anakena beach. He divided the island among his sons, founding the clans (mata); his firstborn Tu'u Maheke received the lands about Anakena and continued the royal line."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "death-overlooking-the-homeland",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "In old age he climbed the rim of Rano Kau (above Orongo) to call upon the spirits of his ancestors, and there, gazing toward Hiva, he died — the founding ancestor of all the Rapa Nui."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ariki mau",
+     "script": "Rapa Nui",
+     "rom": "ariki mau"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "The paramount chief (ariki mau) and founder of the royal line of Rapa Nui."
+   },
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Founding ancestor of the Rapa Nui people; the clans claimed descent from his sons, and the kings from him and the gods Tangaroa and Rongo."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "hotu_matua_canoe",
+    "name": "Hotu Matu'a's voyaging canoe",
+    "kind": "vessel",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "The great (in some tellings double, or two) voyaging canoe in which Hotu Matu'a led the migration from Hiva and landed at Anakena."
+   },
+   {
+    "id": "hotu_matua_founding_cargo",
+    "name": "Founding plants and animals brought from Hiva",
+    "kind": "provisions",
+    "role": "bringer",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "The cultivated plants and domestic stock (and, in tradition, the chiefly knowledge) carried in the migration canoe to found life on the island."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "descendant-of",
+    "personId": "rapanui_tangaroa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Claimed descent from the god Tangaroa."
+   },
+   {
+    "kind": "descendant-of",
+    "personId": "rapanui_rongo",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Claimed descent from the god Rongo, son of Tangaroa."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hotu Matu'a is the founding ariki mau (paramount ancestor-king) of Rapa Nui. Guided by his counsellor Hau Maka's dream of a far land, he led the Polynesian migration from the homeland Hiva in a great voyaging canoe and settled at Anakena, dividing the island among his sons (whence the clans) and passing the kingship to his firstborn Tu'u Maheke. He died on the rim of Rano Kau gazing toward Hiva. The ariki traced their line to him and, through him, to the gods Tangaroa and Rongo (Métraux 1940:127)."
+ },
+ {
+  "id": "rapanui_nuahine",
+  "name": {
+   "primary": "Nuahine",
+   "alt": [
+    "Nuahine Pikea Uri",
+    "Hina",
+    "the old woman in the moon"
+   ],
+   "transliterations": {
+    "rapanui": "Nuahine",
+    "etymology": "Rapa Nui, 'old woman' (nua, 'mother/old woman'); the aged woman seen in the moon, identified with the Polynesian moon-goddess Hina (Routledge, 1919; Métraux, 1940)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-old-woman-in-the-moon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "The old woman whom the Rapa Nui see in the face of the moon — their form of the Polynesian moon-goddess Hina. She is the 'nuahine' of the moon; in a related island tale her anger (when left unfed) is blamed for the falling of the moai."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Nuahine",
+     "script": "Rapa Nui",
+     "rom": "Nuahine"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The old woman of the moon, the Rapa Nui Hina."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_sina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Nuahine, 'the old woman', is the aged woman the Rapa Nui see in the moon — their form of the Polynesian moon-goddess Hina. She belongs to the lunar lore of the island rather than to any genealogy. SOLITARY: a moon-figure named with no attested kin in the Rapa Nui record."
+ }
+]
+```
+
+SOLITARY: rapanui_uoke — primeval world-shaper (levered up and sank the lands until his pole broke against Rapa Nui); named in the Rapa Nui record with no parents, spouse or offspring (Englert 1948; Barthel 1974).
+SOLITARY: rapanui_nuahine — the old woman in the moon (the Rapa Nui Hina); attested as a lunar figure with no kin in the island tradition (Routledge 1919; Métraux 1940).
+
+Notes:
+- 8 figures, all firmly attested; no padding. Genealogy wired WITHIN the batch:
+  Makemake ↔ Haua (companion, reciprocal); Tangaroa ↔ Hiro (sibling, reciprocal);
+  Tangaroa → Rongo (father-of / father, reciprocal) and parentIds on Rongo;
+  Tangaroa & Rongo → Hotu Matu'a (ancestor-of / descendant-of, reciprocal,
+  Métraux 1940:127). Uoke and Nuahine are honestly flagged SOLITARY.
+- aku-aku (the class of ancestral spirits) and tangata manu (the birdman cult
+  role) are deliberately NOT authored as figures, per the brief.
+- Terms attached only where a real Rapa Nui word is in the sources (Makemake,
+  Tangaroa, Rongo, Nuahine, 'ariki mau'); Uoke's tool is left untermed (sources
+  give 'pole/lever/crowbar', not a secure Rapa Nui word) per the OMIT rule.
+- Eras restricted to primordial / mythic / mythic-prehistoric throughout.
