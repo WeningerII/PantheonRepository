@@ -1,5 +1,25 @@
 {
   "faculties": {
+    "vanuatu_tagaro": [
+      {
+        "id": "vanuatu_tagaro-shape-aright",
+        "name": "Shape the islands, plants, animals and people aright",
+        "notes": "The good half of the creator-pair: whatever Tagaro made came out right and fit for use, while his brother Suqe-matua (Meragbuto) spoiled or reversed each work, so that creation bears the marks of both.",
+        "inheritability": "none",
+        "sources": [{"kind": "primary", "reference": "R. H. Codrington, The Melanesians (1891), ch. on Tagaro and Suqe"}],
+        "ability": true
+      }
+    ],
+    "wabanaki_mateguas": [
+      {
+        "id": "wabanaki_mateguas-rule-the-dead",
+        "name": "Rule the land of the dead and send rites to the living",
+        "notes": "Rabbit, elder brother of Gluskap in Abenaki tradition; after his own death he becomes lord of the land of the dead and from beyond the grave gives his grieving brother the ceremonies and spiritual knowledge to bring to the people.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "native Abenaki tradition recorded in native-languages.org (Mateguas); Abenaki mythology survey"}],
+        "ability": true
+      }
+    ],
     "turkic_kayra": [
       {
         "id": "turkic_kayra-separate-realms",
@@ -181,19 +201,28 @@
       {"sphereId": "war-and-victory", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Orkhon inscriptions (Tengri grants the Türk khagans victory)"}]}
     ],
     "udmurt_inmar": [
-      {"sphereId": "light", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology"}]}
+      {"sphereId": "light-and-daylight", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology"}]}
     ],
     "vainakh_pkharmat": [
-      {"sphereId": "fire", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook"}]}
+      {"sphereId": "bringer-of-fire-to-humankind", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook"}]}
     ],
     "vanuatu_marawa": [
-      {"sphereId": "death", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "R. H. Codrington, The Melanesians (1891)"}]}
+      {"sphereId": "origin-of-death", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "R. H. Codrington, The Melanesians (1891)"}]}
     ],
     "wabanaki_pamola": [
-      {"sphereId": "cold-and-winter", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Fannie Hardy Eckstorm, The Katahdin Legends; Henry D. Thoreau, The Maine Woods"}]}
+      {"sphereId": "cold-storms-and-winter", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Fannie Hardy Eckstorm, The Katahdin Legends; Henry D. Thoreau, The Maine Woods"}]}
     ]
   },
   "epithets": {
+    "vainakh_dartsa_nana": [
+      {"original": "Дарца-нана", "rom": "Dartsa-nana", "gloss": "Blizzard-Mother", "language": "Vainakh", "contextTag": "epithet", "sources": [{"kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes; Vainakh-religion survey"}]}
+    ],
+    "vainakh_mokha_nana": [
+      {"original": "Мох-нана", "rom": "Mokh-nana", "gloss": "Wind-Mother", "language": "Vainakh", "contextTag": "epithet", "sources": [{"kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes; Vainakh-religion survey"}]}
+    ],
+    "vainakh_dela": [
+      {"original": "Дела / Дяла", "rom": "Dela / Djala", "gloss": "God (the supreme; the del-/dal- element 'god' survives in many theonyms)", "language": "Chechen/Ingush", "contextTag": "title", "sources": [{"kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook; Vainakh-religion survey"}]}
+    ],
     "turkic_tengri": [
       {"original": "𐰚𐰇𐰚 𐱅𐰭𐰼𐰃", "rom": "Kök Teŋri", "gloss": "Blue/Eternal Sky", "language": "Old Turkic", "contextTag": "cult", "sources": [{"kind": "primary", "reference": "Orkhon inscriptions, Kül Tigin and Bilge Khagan steles"}]},
       {"original": "Teŋri teg Teŋride bolmuš", "rom": "Teŋri teg Teŋride bolmuš", "gloss": "Heaven-like, born of Heaven (royal style of the khagan)", "language": "Old Turkic", "contextTag": "title", "sources": [{"kind": "primary", "reference": "Bilge Khagan inscription (opening titulature)"}]}
@@ -240,6 +269,24 @@
     ]
   },
   "cult": {
+    "veps_vedenizand": [
+      {
+        "name": "Fisherman's offering to the water-master",
+        "type": "offering",
+        "cadence": "at the opening and close of fishing",
+        "notes": "To win a good catch and not be drowned, Vepsian fishermen made offerings to the waterman (veden ižand) — southern Veps dipping an egg into the water before fishing, Belozero Veps casting in a cake, tobacco and wine; he was held a cruel and treacherous spirit.",
+        "sources": [{"kind": "secondary", "reference": "Irina Vinokurova, encyclopedia of Veps mythology and folk belief"}]
+      }
+    ],
+    "veps_metsanisand": [
+      {
+        "name": "Forest-master's offering for game and strays",
+        "type": "offering",
+        "cadence": "before hunting and herding; when seeking lost cattle",
+        "notes": "The forest-master (mecan ižand), capable of both good and harm, was propitiated by hunters and herders for game and hunting-luck and to recover beasts gone astray in the wood; ailments 'from the forest' were ascribed to him.",
+        "sources": [{"kind": "secondary", "reference": "Irina Vinokurova, encyclopedia of Veps mythology and folk belief; N. Zhukova, Vepsian disease-names from forest spirits"}]
+      }
+    ],
     "turkic_tengri": [
       {
         "name": "Heaven-sacrifice on the mountain heights",
@@ -416,6 +463,16 @@
     ]
   },
   "iconography": {
+    "vainakh_dartsa_nana": {
+      "attributes": [
+        {"id": "vainakh_dartsa_nana-magic-circle", "name": "The magic circle traced on the summit of Kazbek", "notes": "The blizzard-mother dwells on the snowy peak of Mount Kazbek, around which she has traced a magic circle no mortal of sense dares cross; trespassers she casts into the abyss and buries under avalanches.", "sources": [{"kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes; David Hunt, Legends of the Caucasus (2012)"}]}
+      ]
+    },
+    "udmurt_vumurt": {
+      "attributes": [
+        {"id": "udmurt_vumurt-green-hair", "name": "A man with long green (or white) hair, combing himself by the water", "notes": "The water-man is pictured as a human-like figure with long hair — often green, sometimes white — seen sitting at the waterside combing it; combs and objects he leaves there are his and must not be taken.", "sources": [{"kind": "secondary", "reference": "'Water Bodies in Besserman tradition', Sator 22 (2021); Aado Lintrop, 'On the Udmurt Water Spirit'"}]}
+      ]
+    },
     "turkic_kayra": {
       "attributes": [
         {"id": "turkic_kayra-white-waterbird", "name": "The white waterfowl over the primal waters", "notes": "In Altai cosmogony the creator is figured neither as man nor woman but as a pure-white bird (goose/duck) flying ceaselessly over the boundless primordial sea before the making of the world.", "sources": [{"kind": "secondary", "reference": "Wilhelm Radloff, Proben der Volkslitteratur der türkischen Stämme; Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology"}]}

@@ -149,6 +149,10 @@
     "roman_caligula": [
       { "original": "Caligula", "rom": "Caligula", "gloss": "Little Boot (army nickname, from caliga)", "language": "Latin", "contextTag": "byname", "sources": [{ "kind": "primary", "reference": "Suetonius, Caligula; Tacitus, Annals 1" }] }
     ],
+    "roman_livia_drusilla": [
+      { "original": "Iulia Augusta", "rom": "Iulia Augusta", "gloss": "the name and rank she took on Augustus's death and adoption into the gens Iulia", "language": "Latin", "contextTag": "official", "sources": [{ "kind": "primary", "reference": "Tacitus, Annals 1; Suetonius, Augustus" }] },
+      { "original": "Diva Augusta", "rom": "Diva Augusta", "gloss": "the Deified Augusta (posthumous, from 42 CE)", "language": "Latin", "contextTag": "cult", "sources": [{ "kind": "primary", "reference": "Suetonius, Claudius; Cassius Dio 60" }] }
+    ],
     "roman_phaethon": [
       { "original": "Phaethon", "rom": "Phaethon", "gloss": "the Shining/Radiant one", "language": "Greek", "contextTag": "literary", "sources": [{ "kind": "primary", "reference": "Ovid, Metamorphoses 2" }] }
     ],
@@ -204,6 +208,16 @@
         "cadence": "deified 42 BCE; temple dedicated 29 BCE",
         "notes": "Deified by decree in 42 BCE with Mark Antony as the first flamen Divi Iulii; the temple of Divus Iulius was raised in the Forum on the site of his cremation and dedicated by Octavian in 29 BCE. The comet (sidus Iulium) that blazed during his funeral games was read as his soul received among the gods, and a star was set on his statue's brow.",
         "sources": [{ "kind": "primary", "reference": "Suetonius, Julius; Cassius Dio 47; Pliny, Natural History 2; Ovid, Metamorphoses 15" }]
+      }
+    ],
+    "roman_livia_drusilla": [
+      {
+        "name": "Cult of Diva Augusta",
+        "term": { "value": "Diva Augusta", "script": "Latin", "rom": "Diva Augusta" },
+        "type": "imperial-cult",
+        "cadence": "instituted on her deification, 42 CE",
+        "notes": "Claudius deified his grandmother as Diva Augusta in 42 CE; her statue was set beside Augustus's in his temple, the Vestals and a priestess tended her cult, an elephant-drawn carriage bore her image at the games, and women were to invoke her in their oaths.",
+        "sources": [{ "kind": "primary", "reference": "Suetonius, Claudius; Cassius Dio 60" }]
       }
     ],
     "roman_caligula": [

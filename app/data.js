@@ -375849,16 +375849,61 @@ const FACULTY_SWEEP = {
    "ability": true
   }
  ],
- "turkic_od": [
+ "vanuatu_tagaro": [
   {
-   "id": "turkic_od-purify-by-fire",
-   "name": "Purify and ward off evil through flame",
-   "notes": "The hearth-fire personified as Ot/Od cleanses persons, dwellings and objects; people and possessions were passed between or around fires to drive off sickness and malign spirits.",
+   "id": "vanuatu_tagaro-shape-aright",
+   "name": "Shape the islands, plants, animals and people aright",
+   "notes": "The good half of the creator-pair: whatever Tagaro made came out right and fit for use, while his brother Suqe-matua (Meragbuto) spoiled or reversed each work, so that creation bears the marks of both.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "R. H. Codrington, The Melanesians (1891), ch. on Tagaro and Suqe"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "wabanaki_mateguas": [
+  {
+   "id": "wabanaki_mateguas-rule-the-dead",
+   "name": "Rule the land of the dead and send rites to the living",
+   "notes": "Rabbit, elder brother of Gluskap in Abenaki tradition; after his own death he becomes lord of the land of the dead and from beyond the grave gives his grieving brother the ceremonies and spiritual knowledge to bring to the people.",
    "inheritability": "none",
    "sources": [
     {
      "kind": "secondary",
-     "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols (on the cult of fire, ot)"
+     "reference": "native Abenaki tradition recorded in native-languages.org (Mateguas); Abenaki mythology survey"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "turkic_kayra": [
+  {
+   "id": "turkic_kayra-separate-realms",
+   "name": "Divide the cosmos into the three realms of air, water and land",
+   "notes": "From the primordial waters the creator-father structures the layered cosmos — the heavens above, the earth, and the underworld below — separating the realms of good and evil before begetting the ordering gods.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols; Altai cosmogonic recitations (Radloff, Proben)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "turkic_od": [
+  {
+   "id": "turkic_od-purify-by-fire",
+   "name": "Purify and ward off evil through flame",
+   "notes": "The hearth-fire personified as Ot/Od cleanses persons, dwellings and possessions; people and goods were passed by or around fire to drive off sickness and malign spirits.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols (the cult of fire, ot)"
     }
    ],
    "ability": true
@@ -375868,7 +375913,7 @@ const FACULTY_SWEEP = {
   {
    "id": "turkic_tengri-create-cosmos",
    "name": "Create and order the heavens and the earth",
-   "notes": "In the opening lines of the Orkhon (Kül Tigin / Bilge Khagan) inscriptions the Blue Sky above and the brown earth below are made, and humankind between them, by Tengri's ordinance.",
+   "notes": "In the opening of the Orkhon (Kül Tigin / Bilge Khagan) inscriptions the blue sky above and the brown earth below are made, and humankind set between them, by Tengri's ordinance.",
    "inheritability": "none",
    "sources": [
     {
@@ -375883,12 +375928,12 @@ const FACULTY_SWEEP = {
   {
    "id": "turkic_umay-open-womb",
    "name": "Open the womb and bestow children",
-   "notes": "As mother-goddess of birth Umay grants offspring and presides over conception and safe delivery; her name is the Old Turkic word for the placenta/afterbirth.",
+   "notes": "As mother-goddess of birth Umay grants offspring and presides over conception and safe delivery; her name is the Old Turkic word for the placenta/afterbirth, and khagan-consorts (katun) were likened to her.",
    "inheritability": "none",
    "sources": [
     {
-     "kind": "secondary",
-     "reference": "Jean-Paul Roux, Faune et flore sacrées; cf. Orkhon usage 'umay teg ögüm' (Tonyukuk / Kül Tigin)"
+     "kind": "primary",
+     "reference": "Orkhon inscriptions (the simile 'umay teg ögüm katun', my mother the katun like the goddess Umay), Kül Tigin stele"
     }
    ],
    "ability": true
@@ -375896,9 +375941,9 @@ const FACULTY_SWEEP = {
  ],
  "udmurt_inmar": [
   {
-   "id": "udmurt_inmar-send-light-and-weather",
+   "id": "udmurt_inmar-send-light-and-rain",
    "name": "Send light, rain and benign weather from on high",
-   "notes": "As the high sky-god of the aerial tier Inmar dispenses light and life-giving rain; white animals were immolated to him and prayers offered beneath the pine.",
+   "notes": "As high sky-god of the aerial tier Inmar dispenses light and life-giving rain; white animals were immolated to him and prayers offered beneath the pine.",
    "inheritability": "none",
    "sources": [
     {
@@ -375913,7 +375958,7 @@ const FACULTY_SWEEP = {
   {
    "id": "udmurt_kyldysin-enrich-soil",
    "name": "Enrich the soil and grant the harvest",
-   "notes": "Earth-and-fertility god (the mu- 'earth' aspect Mu-Kylchin) who quickens the ploughland and the crops; collective seasonal sacrifices sought his blessing on soil and yield.",
+   "notes": "Earth-and-fertility god (the mu- 'earth' aspect Mu-Kylchin) who quickens the ploughland and crops; nineteenth-century records describe collective seasonal sacrifices seeking his blessing on soil and yield.",
    "inheritability": "none",
    "sources": [
     {
@@ -375926,9 +375971,9 @@ const FACULTY_SWEEP = {
  ],
  "udmurt_nyulesmurt": [
   {
-   "id": "udmurt_nyulesmurt-decide-the-quarry",
+   "id": "udmurt_nyulesmurt-allot-the-quarry",
    "name": "Allot the game and decide each beast's lair",
-   "notes": "The forest-master apportions hunting and herding luck and is said to decide where each bear shall lie in its den; hunters petitioned him for a good chase.",
+   "notes": "The forest-master apportions hunting and herding luck and is said to decide where each bear shall lie in its den; he can match his stature to the place — level with the trees in the wood, with the grass in the meadow.",
    "inheritability": "none",
    "sources": [
     {
@@ -375939,16 +375984,61 @@ const FACULTY_SWEEP = {
    "ability": true
   }
  ],
+ "udmurt_vumurt": [
+  {
+   "id": "udmurt_vumurt-grant-or-deny-the-catch",
+   "name": "Grant or withhold the fish-catch and drown the heedless",
+   "notes": "The water-man (vukuzyo, 'master of water') gives a rich catch when honoured but, offended, withholds the fish or even drags a lake to a new place; he drowns those who trespass on his waters and is blamed for accidents at mills and fords.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Aado Lintrop, 'On the Udmurt Water Spirit', Folklore (Tartu)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "vainakh_sela_sata": [
+  {
+   "id": "vainakh_sela_sata-shine-like-sun",
+   "name": "Shine in countenance like the sun",
+   "notes": "The crafts-goddess, counterpart of the Northwest-Caucasian Satanaya, is described as having a face that shines with the beauty of the sun.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "John Colarusso, Nart Sagas from the Caucasus; Vainakh-religion survey"
+    }
+   ],
+   "ability": true
+  }
+ ],
  "wabanaki_gluskap": [
   {
    "id": "wabanaki_gluskap-bring-the-arts",
    "name": "Give the people fire, tobacco, nets and canoes",
-   "notes": "As culture-hero Gluskap brings the Wabanaki their useful arts, the knowledge of good and evil, fire, tobacco, fishing nets, earthenware and the canoe.",
+   "notes": "As culture-hero Gluskap brings the Wabanaki their useful arts — fire, tobacco, fishing nets, earthenware and the canoe — and the knowledge of good and evil.",
    "inheritability": "none",
    "sources": [
     {
      "kind": "secondary",
      "reference": "Charles G. Leland, The Algonquin Legends of New England (1884); Silas T. Rand, Legends of the Micmacs (1894)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "vanuatu_qat": [
+  {
+   "id": "vanuatu_qat-buy-the-night",
+   "name": "Buy night and cut the first dawn",
+   "notes": "Finding the world in perpetual day, Qat sails to Vava (the Torres Islands) to buy Night from I-Qong; he teaches the people sleep, then cuts the dawn with a red obsidian knife so that day and night should alternate.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "R. H. Codrington, The Melanesians (1891), ch. on Qat"
     }
    ],
    "ability": true
@@ -382699,6 +382789,20 @@ const MATERIAL_SWEEP = {
    ]
   }
  ],
+ "udmurt_vumurt": [
+  {
+   "id": "udmurt_vumurt-comb",
+   "name": "His comb (left at the waterside; not to be taken)",
+   "classId": "personal-effect",
+   "kind": "implement",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "'Water Bodies in Besserman tradition', Sator 22 (2021); Aado Lintrop, 'On the Udmurt Water Spirit'"
+    }
+   ]
+  }
+ ],
  "vainakh_pkharmat": [
   {
    "id": "vainakh_pkharmat-sheedag",
@@ -382709,6 +382813,34 @@ const MATERIAL_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Amjad Jaimoukha, The Chechens: A Handbook (Pkharmat / Nart cycle)"
+    }
+   ]
+  }
+ ],
+ "vainakh_sela_sata": [
+  {
+   "id": "vainakh_sela_sata-distaff",
+   "name": "Distaff, spindle and loom",
+   "classId": "tool",
+   "kind": "implement",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vainakh-religion survey; John Colarusso, Nart Sagas from the Caucasus"
+    }
+   ]
+  }
+ ],
+ "vanuatu_marawa": [
+  {
+   "id": "vanuatu_marawa-web",
+   "name": "His spider's web (binds and finishes Qat's canoe)",
+   "classId": "natural-feature",
+   "kind": "implement",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "R. H. Codrington, The Melanesians (1891), ch. on Qat"
     }
    ]
   }
@@ -387997,7 +388129,7 @@ const DOMAIN_SWEEP = {
  ],
  "udmurt_inmar": [
   {
-   "sphereId": "light",
+   "sphereId": "light-and-daylight",
    "contextTag": "lifelong",
    "sources": [
     {
@@ -388009,7 +388141,7 @@ const DOMAIN_SWEEP = {
  ],
  "vainakh_pkharmat": [
   {
-   "sphereId": "fire",
+   "sphereId": "bringer-of-fire-to-humankind",
    "contextTag": "lifelong",
    "sources": [
     {
@@ -388019,9 +388151,21 @@ const DOMAIN_SWEEP = {
    ]
   }
  ],
+ "vanuatu_marawa": [
+  {
+   "sphereId": "origin-of-death",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "R. H. Codrington, The Melanesians (1891)"
+    }
+   ]
+  }
+ ],
  "wabanaki_pamola": [
   {
-   "sphereId": "cold-and-winter",
+   "sphereId": "cold-storms-and-winter",
    "contextTag": "lifelong",
    "sources": [
     {
@@ -396808,6 +396952,34 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
+ "roman_livia_drusilla": [
+  {
+   "original": "Iulia Augusta",
+   "rom": "Iulia Augusta",
+   "gloss": "the name and rank she took on Augustus's death and adoption into the gens Iulia",
+   "language": "Latin",
+   "contextTag": "official",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tacitus, Annals 1; Suetonius, Augustus"
+    }
+   ]
+  },
+  {
+   "original": "Diva Augusta",
+   "rom": "Diva Augusta",
+   "gloss": "the Deified Augusta (posthumous, from 42 CE)",
+   "language": "Latin",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Suetonius, Claudius; Cassius Dio 60"
+    }
+   ]
+  }
+ ],
  "roman_phaethon": [
   {
    "original": "Phaethon",
@@ -398150,6 +398322,51 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
+ "vainakh_dartsa_nana": [
+  {
+   "original": "Дарца-нана",
+   "rom": "Dartsa-nana",
+   "gloss": "Blizzard-Mother",
+   "language": "Vainakh",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes; Vainakh-religion survey"
+    }
+   ]
+  }
+ ],
+ "vainakh_mokha_nana": [
+  {
+   "original": "Мох-нана",
+   "rom": "Mokh-nana",
+   "gloss": "Wind-Mother",
+   "language": "Vainakh",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes; Vainakh-religion survey"
+    }
+   ]
+  }
+ ],
+ "vainakh_dela": [
+  {
+   "original": "Дела / Дяла",
+   "rom": "Dela / Djala",
+   "gloss": "God (the supreme; the del-/dal- element 'god' survives in many theonyms)",
+   "language": "Chechen/Ingush",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Amjad Jaimoukha, The Chechens: A Handbook; Vainakh-religion survey"
+    }
+   ]
+  }
+ ],
  "turkic_tengri": [
   {
    "original": "𐰚𐰇𐰚 𐱅𐰭𐰼𐰃",
@@ -398165,7 +398382,7 @@ const EPITHET_SWEEP = {
    ]
   },
   {
-   "original": "𐱅𐰭𐰼𐰃 𐱅𐰭𐰼𐰃𐰓𐰀 𐰉𐰆𐰞𐰢𐰽",
+   "original": "Teŋri teg Teŋride bolmuš",
    "rom": "Teŋri teg Teŋride bolmuš",
    "gloss": "Heaven-like, born of Heaven (royal style of the khagan)",
    "language": "Old Turkic",
@@ -398182,13 +398399,28 @@ const EPITHET_SWEEP = {
   {
    "original": "Бай Үлгэн",
    "rom": "Bay Ülgen",
-   "gloss": "Rich/Magnificent Ülgen",
+   "gloss": "Rich / Magnificent Ülgen",
    "language": "Altai Turkic",
    "contextTag": "cult",
    "sources": [
     {
      "kind": "secondary",
      "reference": "Wilhelm Radloff, Aus Sibirien; Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology"
+    }
+   ]
+  }
+ ],
+ "turkic_kayra": [
+  {
+   "original": "Кайра Хан",
+   "rom": "Kayra Khan",
+   "gloss": "the Merciful/Benevolent Khan (creator-father)",
+   "language": "Altai Turkic",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilhelm Radloff, Proben der Volkslitteratur der türkischen Stämme (Altai cosmogony)"
     }
    ]
   }
@@ -398203,7 +398435,7 @@ const EPITHET_SWEEP = {
    "sources": [
     {
      "kind": "secondary",
-     "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols (cult of fire); Mongol 'Galyn ekh / Ot ekh', fire-mother"
+     "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols; Mongol 'Galyn ekh / Ot ekh', fire-mother"
     }
    ]
   }
@@ -398212,7 +398444,7 @@ const EPITHET_SWEEP = {
   {
    "original": "Boz Kurt",
    "rom": "Boz Kurt",
-   "gloss": "the (guide of the) Grey Wolf",
+   "gloss": "(led by) the Grey Wolf",
    "language": "Turkic",
    "contextTag": "epic",
    "sources": [
@@ -398238,12 +398470,27 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
+ "udmurt_vumurt": [
+  {
+   "original": "Ву-кузё",
+   "rom": "Vu-kuzyo",
+   "gloss": "Master of the Water",
+   "language": "Udmurt",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Aado Lintrop, 'On the Udmurt Water Spirit', Folklore (Tartu)"
+    }
+   ]
+  }
+ ],
  "urartian_haldi": [
   {
-   "original": "DḪaldi",
+   "original": "DKURḪaldi",
    "rom": "Haldi",
    "gloss": "the (god) of Ardini/Muṣaṣir, lord of the city",
-   "language": "Urartian (Akkadian determinative)",
+   "language": "Urartian",
    "contextTag": "cult",
    "sources": [
     {
@@ -398278,7 +398525,7 @@ const EPITHET_SWEEP = {
    "sources": [
     {
      "kind": "secondary",
-     "reference": "Lĩnh Nam chích quái; cult title used at Phù Đổng and Sóc temples"
+     "reference": "Lĩnh Nam chích quái; cult title at Phù Đổng and Sóc temples"
     }
    ]
   }
@@ -398330,13 +398577,28 @@ const EPITHET_SWEEP = {
   {
    "original": "Тушоли",
    "rom": "Tušoli",
-   "gloss": "goddess of spring and fertility, the people's intercessor",
+   "gloss": "goddess of spring and fertility, the people's intercessor with Däl",
    "language": "Ingush/Chechen",
    "contextTag": "cult",
    "sources": [
     {
      "kind": "secondary",
      "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes"
+    }
+   ]
+  }
+ ],
+ "vanuatu_qat": [
+  {
+   "original": "Ikpat / Iqet",
+   "rom": "Ikpat",
+   "gloss": "(the Mota title-form of) Qat",
+   "language": "Mota (Banks Islands)",
+   "contextTag": "epic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "R. H. Codrington, The Melanesians (1891)"
     }
    ]
   }
@@ -406846,6 +407108,25 @@ const CULT_SWEEP = {
    ]
   }
  ],
+ "roman_livia_drusilla": [
+  {
+   "name": "Cult of Diva Augusta",
+   "term": {
+    "value": "Diva Augusta",
+    "script": "Latin",
+    "rom": "Diva Augusta"
+   },
+   "type": "imperial-cult",
+   "cadence": "instituted on her deification, 42 CE",
+   "notes": "Claudius deified his grandmother as Diva Augusta in 42 CE; her statue was set beside Augustus's in his temple, the Vestals and a priestess tended her cult, an elephant-drawn carriage bore her image at the games, and women were to invoke her in their oaths.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Suetonius, Claudius; Cassius Dio 60"
+    }
+   ]
+  }
+ ],
  "roman_caligula": [
   {
    "name": "Living self-deification cult",
@@ -408265,12 +408546,40 @@ const CULT_SWEEP = {
    ]
   }
  ],
+ "veps_vedenizand": [
+  {
+   "name": "Fisherman's offering to the water-master",
+   "type": "offering",
+   "cadence": "at the opening and close of fishing",
+   "notes": "To win a good catch and not be drowned, Vepsian fishermen made offerings to the waterman (veden ižand) — southern Veps dipping an egg into the water before fishing, Belozero Veps casting in a cake, tobacco and wine; he was held a cruel and treacherous spirit.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Irina Vinokurova, encyclopedia of Veps mythology and folk belief"
+    }
+   ]
+  }
+ ],
+ "veps_metsanisand": [
+  {
+   "name": "Forest-master's offering for game and strays",
+   "type": "offering",
+   "cadence": "before hunting and herding; when seeking lost cattle",
+   "notes": "The forest-master (mecan ižand), capable of both good and harm, was propitiated by hunters and herders for game and hunting-luck and to recover beasts gone astray in the wood; ailments 'from the forest' were ascribed to him.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Irina Vinokurova, encyclopedia of Veps mythology and folk belief; N. Zhukova, Vepsian disease-names from forest spirits"
+    }
+   ]
+  }
+ ],
  "turkic_tengri": [
   {
    "name": "Heaven-sacrifice on the mountain heights",
    "type": "sacrifice",
    "cadence": "seasonal / at need by the khagan",
-   "notes": "The steppe peoples sacrificed horses and cattle to Heaven on high places; Sima Qian's Shiji records the Xiongnu offering to tian (Tengri) on mountain-tops, and worship was made by raising the hands and bowing toward the sky.",
+   "notes": "The steppe peoples sacrificed horses and cattle to Heaven on high places; the Shiji records the Xiongnu offering to tian (Tengri) on mountain-tops, and worship was made by raising the hands and bowing toward the sky.",
    "sources": [
     {
      "kind": "primary",
@@ -408284,7 +408593,7 @@ const CULT_SWEEP = {
    "name": "The white horse-sacrifice and shaman's ascent",
    "type": "sacrifice",
    "cadence": "periodic (every 3rd, 6th, 9th or 12th year)",
-   "notes": "An Altai kam erected a yurt enclosing a young birch notched with steps (tapty); a white horse was sacrificed and the shaman, mounting its soul, climbed the heavens stage by stage to lay the offering before Bai Ülgen.",
+   "notes": "An Altai kam set up a yurt enclosing a young birch notched with steps (tapty); a white horse was sacrificed and the shaman, mounting its soul, climbed the heavens stage by stage to lay the offering before Bai Ülgen.",
    "sources": [
     {
      "kind": "secondary",
@@ -408302,7 +408611,7 @@ const CULT_SWEEP = {
    "sources": [
     {
      "kind": "secondary",
-     "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols (cult of fire)"
+     "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols (the cult of fire)"
     }
    ]
   }
@@ -408311,13 +408620,13 @@ const CULT_SWEEP = {
   {
    "name": "White-animal sacrifice in the sacred grove",
    "term": {
-    "value": "Луд / Куала",
+    "value": "луд / куала",
     "script": "Cyrl",
     "rom": "lud / kuala"
    },
    "type": "sacrifice",
    "cadence": "communal seasonal prayer-feasts",
-   "notes": "White animals were immolated to Inmar (black to Kyldysin, red to Kuaz); prayers led by the vösyas' priest were said under a pine in the sacred grove, participants robed in white.",
+   "notes": "White animals were immolated to Inmar (black to Kyldysin, red to Kuaz); prayers led by the vösyas' priest were said under a pine in the sacred grove, the participants robed in white.",
    "sources": [
     {
      "kind": "secondary",
@@ -408330,17 +408639,31 @@ const CULT_SWEEP = {
   {
    "name": "Black-animal propitiation in the keremet grove",
    "term": {
-    "value": "Кереметь / Луд",
+    "value": "кереметь / луд",
     "script": "Cyrl",
     "rom": "keremet' / lud"
    },
    "type": "sacrifice",
    "cadence": "at epidemics and misfortune",
-   "notes": "In a secluded forest clearing (the keremet or lud) a special tuno priest sacrificed black animals to avert the misfortunes the just but stern Lud sent on transgressors.",
+   "notes": "In a secluded forest clearing (the keremet or lud) a special tuno priest sacrificed black animals to avert the misfortunes that the just but stern Lud sent on transgressors.",
    "sources": [
     {
      "kind": "secondary",
      "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology; 'Eastern Udmurt Sacred Places', Journal of Ethnology and Folkloristics"
+    }
+   ]
+  }
+ ],
+ "udmurt_vumurt": [
+  {
+   "name": "Riverside offering for the catch and the cattle",
+   "type": "offering",
+   "cadence": "at the opening/close of fishing and at watering",
+   "notes": "Fishermen and herders propitiated the water-master so the catch would be good and grazing cattle not drown; combs, soap or other objects found by the water were left untouched as his property.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "'Water Bodies in Besserman tradition', Sator 22 (2021); Aado Lintrop, 'On the Udmurt Water Spirit'"
     }
    ]
   }
@@ -408350,7 +408673,7 @@ const CULT_SWEEP = {
    "name": "State sacrifice prescribed in the Meher Kapısı god-list",
    "type": "sacrifice",
    "cadence": "fixed temple allotments",
-   "notes": "On the Meher Kapısı rock inscription Haldi heads the pantheon with the largest allotment (with bulls and sheep prescribed for him); even his attributes — his armies, spear, weapons and gates — receive their own offerings. His chief temple stood at Muṣaṣir/Ardini.",
+   "notes": "On the Meher Kapısı rock inscription Haldi heads the pantheon with the largest allotment (bulls and sheep prescribed for him); even his attributes — his armies, spear, weapons and gates — receive their own offerings. His chief temple stood at Muṣaṣir/Ardini.",
    "sources": [
     {
      "kind": "primary",
@@ -408373,6 +408696,20 @@ const CULT_SWEEP = {
    ]
   }
  ],
+ "urartian_bagmashtu": [
+  {
+   "name": "Votive cult as Haldi's consort at Muṣaṣir",
+   "type": "offering",
+   "cadence": "temple votives",
+   "notes": "In the eastern region around Muṣaṣir/Ardini votive objects name 'Haldi and his wife Bagmashtu (Bagbartu)'; her temple there was plundered by Sargon II of Assyria in 714 BCE.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Muṣaṣir votive inscriptions; Sargon II, Letter to the God Assur (eighth campaign, 714 BCE)"
+    }
+   ]
+  }
+ ],
  "vainakh_tusholi": [
   {
    "name": "Spring Festival of Tusholi",
@@ -408383,7 +408720,7 @@ const CULT_SWEEP = {
    },
    "type": "festival",
    "cadence": "annually in spring (April), at the hoopoe's return",
-   "notes": "Timed to the return migration of the hoopoe ('Tusholi's hen', held sacred), the festival was led by a pure-man priest (tsyeni stag); pilgrims kissed the ground before her wooden idol with its iron mask, and childless women touched the image to seek offspring. Her sanctuary lay in the Assa gorge of Ingushetia.",
+   "notes": "Timed to the return of the hoopoe ('Tusholi's hen', held sacred), the festival was led by a pure-man priest (tsyeni stag); pilgrims kissed the ground before her wooden idol with its iron mask, and childless women touched the image to seek offspring. Her sanctuary lay in the Assa gorge of Ingushetia.",
    "sources": [
     {
      "kind": "secondary",
@@ -408425,7 +408762,7 @@ const CULT_SWEEP = {
    "name": "Warriors' offerings at the sanctuary of Molyz-Yerdy",
    "type": "offering",
    "cadence": "before and after war",
-   "notes": "Vainakh warriors made offerings at the war-god's shrine (yerdy/elgyts) to win and give thanks for victory.",
+   "notes": "Vainakh warriors made offerings at the war-god's shrine (yerdy/elgyts) to win victory and to give thanks for it.",
    "sources": [
     {
      "kind": "secondary",
@@ -408443,7 +408780,7 @@ const CULT_SWEEP = {
    "sources": [
     {
      "kind": "secondary",
-     "reference": "Toan Ánh, Vietnamese folk-belief studies; Tản Viên Sơn Thánh festival inventory (Ba Vì)"
+     "reference": "Lĩnh Nam chích quái; Tản Viên Sơn Thánh festival inventory (Ba Vì), recognised national intangible heritage"
     }
    ]
   }
@@ -408453,7 +408790,7 @@ const CULT_SWEEP = {
    "name": "Gióng Festival of Phù Đổng and Sóc temples",
    "type": "festival",
    "cadence": "annually before the harvest (4th lunar month at Phù Đổng)",
-   "notes": "Re-enacts the hero's battle with a white horse and flag-dance; he is venerated as patron of the harvest, national peace and family prosperity. Inscribed on the UNESCO Representative List of Intangible Cultural Heritage (2010).",
+   "notes": "Re-enacts the hero's battle with a white horse and a flag-dance; he is venerated as patron of the harvest, national peace and family prosperity. Inscribed on the UNESCO Representative List of Intangible Cultural Heritage (2010).",
    "sources": [
     {
      "kind": "secondary",
@@ -408481,7 +408818,7 @@ const CULT_SWEEP = {
    "name": "Ancestral cult at the Hùng Temples",
    "type": "temple",
    "cadence": "ongoing; Hùng Kings' commemoration (10th day, 3rd lunar month)",
-   "notes": "As progenitor of the Bách Việt with Âu Cơ, Lạc Long Quân is venerated with the Holy Ancestor and the Hùng kings at the Hùng Temple complex in Phú Thọ, with incense offered by the temple keepers.",
+   "notes": "As progenitor of the Bách Việt with Âu Cơ, Lạc Long Quân is venerated with the Holy Ancestor and the Hùng kings at the Hùng Temple complex in Phú Thọ, where the temple keepers offer incense.",
    "sources": [
     {
      "kind": "secondary",
@@ -424570,6 +424907,151 @@ const ICONO_SWEEP = {
    }
   ]
  },
+ "tahitian_tane": {
+  "attributes": [
+   {
+    "id": "tahitian_tane-adze",
+    "name": "The artisan's adze (to'i) and the finished heavens",
+    "notes": "As first of the great gods shaped by the artisans and patron of canoe-builders and woodworkers, Tāne is figured by the polished basalt adze; he it was who finished the sky, fixing the stars and hanging the sun and moon.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum, 1928)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "William Ellis, Polynesian Researches (1829)"
+     }
+    ]
+   }
+  ]
+ },
+ "tahitian_maui": {
+  "attributes": [
+   {
+    "id": "tahitian_maui-fishhook",
+    "name": "The fishhook that hauled up the land",
+    "notes": "Māui is figured by his sacred fishhook, with which he drew islands up from the sea-floor, and by the noose/grip with which he snared the sun's rays to slow its course; in Tahiti he was remembered as a priest and prophet afterward deified.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum, 1928)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "William Ellis, Polynesian Researches (1829)"
+     }
+    ]
+   }
+  ]
+ },
+ "taino_yucahu": {
+  "attributes": [
+   {
+    "id": "taino_yucahu-trigonolito-icon",
+    "name": "Three-pointed stone (trigonolito) buried in the conuco",
+    "notes": "Yúcahu was embodied in three-pointed stones (trigonolitos), often bearing a face on one point, which were set in the cassava-mounds of the conuco to make the yuca grow; he is the supreme spirit, lord of cassava and the sea.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ramón Pané, Relación acerca de las antigüedades de los indios (c. 1498)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Antillean trigonolito sculpture, c. 1000-1500 CE"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "taino_yucahu-cassava",
+    "name": "Cassava / yuca",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ramón Pané, Relación acerca de las antigüedades de los indios (c. 1498)"
+     }
+    ]
+   }
+  ]
+ },
+ "taino_atabey": {
+  "attributes": [
+   {
+    "id": "taino_atabey-frog-birthing",
+    "name": "Frog-legged figure in the birthing posture",
+    "notes": "Atabey, mother of the waters and of Yúcahu, is rendered in Taíno art as a squatting female with frog-like legs in the attitude of childbirth, hands to her face, expressing her power over fertility and birth; the coquí frog was held sacred to her.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ramón Pané, Relación acerca de las antigüedades de los indios (c. 1498)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Antillean cohoba and stone iconography of the mother-zemi"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "taino_atabey-frog",
+    "name": "Frog (coquí)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Antillean Taíno iconography of the mother-goddess"
+     }
+    ]
+   }
+  ]
+ },
+ "taino_marohu": {
+  "attributes": [
+   {
+    "id": "taino_marohu-bound-zemi",
+    "name": "Bound stone zemi of fair weather in Iguanaboina's cave",
+    "notes": "With his weeping twin Boinayel, Márohu stood as a small stone zemi with hands bound, seeming to sweat, in their mother's cave; when rain was wanted the Taíno visited the cave, and where Boinayel weeps the rain Márohu clears the sky.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ramón Pané, Relación acerca de las antigüedades de los indios (c. 1498)"
+     }
+    ]
+   }
+  ]
+ },
+ "tagalog_tala": {
+  "attributes": [
+   {
+    "id": "tagalog_tala-light-orbs",
+    "name": "Bearer of light-orbs, the morning and evening star",
+    "notes": "Tala is imagined carrying orbs of light to guide travellers in the dark; she is the planet Venus, leading the stars out at evening and gathering them in at dawn. A possible identification with the goddess Tārā is suggested by the Majapahit-era Golden Tara of Agusan.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tagalog star-lore; F. Landa Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ]
+   }
+  ]
+ },
+ "thracian_kadmilos": {
+  "attributes": [
+   {
+    "id": "thracian_kadmilos-herald-staff",
+    "name": "Herald's staff (kerykeion) and ram, as the Hermes of the Mysteries",
+    "notes": "As the youthful attendant of the Great Gods, identified by the Greeks with Hermes, Kadmilos bore the herald's staff and was associated with the ram; in the Samothracian rite the child of the goddess was understood to be in some mystic sense also her consort.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythography of the Samothracian Mysteries; Acusilaus apud Strabo, Geography 10.3"
+     }
+    ]
+   }
+  ]
+ },
  "thracian_orpheus": {
   "attributes": [
    {
@@ -425139,6 +425621,51 @@ const ICONO_SWEEP = {
    }
   ]
  },
+ "vainakh_dartsa_nana": {
+  "attributes": [
+   {
+    "id": "vainakh_dartsa_nana-magic-circle",
+    "name": "The magic circle traced on the summit of Kazbek",
+    "notes": "The blizzard-mother dwells on the snowy peak of Mount Kazbek, around which she has traced a magic circle no mortal of sense dares cross; trespassers she casts into the abyss and buries under avalanches.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes; David Hunt, Legends of the Caucasus (2012)"
+     }
+    ]
+   }
+  ]
+ },
+ "udmurt_vumurt": {
+  "attributes": [
+   {
+    "id": "udmurt_vumurt-green-hair",
+    "name": "A man with long green (or white) hair, combing himself by the water",
+    "notes": "The water-man is pictured as a human-like figure with long hair — often green, sometimes white — seen sitting at the waterside combing it; combs and objects he leaves there are his and must not be taken.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "'Water Bodies in Besserman tradition', Sator 22 (2021); Aado Lintrop, 'On the Udmurt Water Spirit'"
+     }
+    ]
+   }
+  ]
+ },
+ "turkic_kayra": {
+  "attributes": [
+   {
+    "id": "turkic_kayra-white-waterbird",
+    "name": "The white waterfowl over the primal waters",
+    "notes": "In Altai cosmogony the creator is figured neither as man nor woman but as a pure-white bird (goose/duck) flying ceaselessly over the boundless primordial sea before the making of the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilhelm Radloff, Proben der Volkslitteratur der türkischen Stämme; Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology"
+     }
+    ]
+   }
+  ]
+ },
  "turkic_tengri": {
   "attributes": [
    {
@@ -425156,7 +425683,7 @@ const ICONO_SWEEP = {
   "sacredAnimals": [
    {
     "id": "turkic_tengri-horse",
-    "name": "Horse (the heaven-sacrifice, 'blue' = of divine origin)",
+    "name": "Horse (the heaven-sacrifice; 'blue/grey' = of divine origin)",
     "sources": [
      {
       "kind": "primary",
@@ -425171,19 +425698,19 @@ const ICONO_SWEEP = {
    {
     "id": "turkic_umay-three-horn-headdress",
     "name": "Three-horned / three-pointed headdress",
-    "notes": "Umay is figured with a distinctive triple-horned headgear; the 'elibelinde' (hands-on-hips) mother-goddess motif of Anatolian kilims — a triangular female form with hooked arms — continues her ancient image.",
+    "notes": "Umay is figured with a distinctive triple-pointed headgear; the 'elibelinde' (hands-on-hips) mother-goddess motif of Anatolian kilims — a triangular female form with hooked arms — is taken to continue her ancient image.",
     "sources": [
      {
       "kind": "secondary",
-      "reference": "Emel Esin, Türk Kozmolojisine Giriş; Anatolian kilim 'elibelinde' motif studies"
+      "reference": "Emel Esin, Türk Kozmolojisine Giriş; studies of the Anatolian 'elibelinde' kilim motif"
      }
     ]
    }
   ],
   "sacredAnimals": [
    {
-    "id": "turkic_umay-swan",
-    "name": "Bird (swan/waterfowl as the descending soul of the child)",
+    "id": "turkic_umay-bird",
+    "name": "Bird (the descending soul of the child)",
     "sources": [
      {
       "kind": "secondary",
@@ -425222,8 +425749,8 @@ const ICONO_SWEEP = {
  "turkic_oghuz_khagan": {
   "attributes": [
    {
-    "id": "turkic_oghuz_khagan-blue-radiant",
-    "name": "Born with miraculous, partly bestial features and blue radiance",
+    "id": "turkic_oghuz_khagan-radiant-birth",
+    "name": "Born with miraculous, partly bestial features and radiance",
     "notes": "The Oghuznāme describes the infant Oghuz with an awesome appearance — blue-grey of face, with features of ox, wolf, sable and bear — who matured and spoke within forty days.",
     "sources": [
      {
@@ -425278,7 +425805,7 @@ const ICONO_SWEEP = {
    {
     "id": "urartian_teisheba-on-bull",
     "name": "Standing on a bull, grasping thunderbolts, in a horned tiara",
-    "notes": "The storm-god is figured as a man upon a bull holding a fistful of thunderbolts, wearing a tall horned headgear; the bronze statuette from Teišebaini (Karmir-Blur, found 1941) is the type-piece.",
+    "notes": "The storm-god is figured as a man upon a bull holding a fistful of thunderbolts and wearing a tall horned headgear; the bronze statuette from Teišebaini (Karmir-Blur, found 1941) is the type-piece.",
     "sources": [
      {
       "kind": "primary",
@@ -425309,7 +425836,7 @@ const ICONO_SWEEP = {
     "sources": [
      {
       "kind": "secondary",
-      "reference": "P. Zimansky / studies of Urartian art; 'The Iconography and Symbolism of the Sun God in Urartian Art'"
+      "reference": "studies of Urartian art, 'The Iconography and Symbolism of the Sun God in Urartian Art'"
      }
     ]
    }
@@ -425330,12 +425857,27 @@ const ICONO_SWEEP = {
    }
   ]
  },
+ "vainakh_seela": {
+  "attributes": [
+   {
+    "id": "vainakh_seela-rainbow-bow",
+    "name": "Armed with the rainbow as a bow and lightning as arrows",
+    "notes": "The touchy weather-god wields the rainbow ('Bow of Seela') as his bow and lightning-bolts as arrows, sending snow and hail from his seat on Mount Kazbek; the Milky Way is the 'scattering of Sela' and the Bow of Seela is the rainbow.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes; Vainakh-religion survey"
+     }
+    ]
+   }
+  ]
+ },
  "wabanaki_gluskap": {
   "attributes": [
    {
     "id": "wabanaki_gluskap-stone-canoe",
     "name": "His great stone canoe",
-    "notes": "Gluskap departs the people in (or is associated with) an immense stone canoe, in which he withdraws to the world's edge, promising to return.",
+    "notes": "Gluskap is associated with an immense stone canoe in which he withdraws to the world's edge, promising to return.",
     "sources": [
      {
       "kind": "secondary",
@@ -425356,6 +425898,21 @@ const ICONO_SWEEP = {
    }
   ]
  },
+ "wabanaki_malsum": {
+  "attributes": [
+   {
+    "id": "wabanaki_malsum-wolf",
+    "name": "The wolf (his name means 'wolf' in Wabanaki)",
+    "notes": "Malsumis ('Wolf the younger') is the evil twin who burst from his mother's side; he can be killed only by a blow from a fern-root, with which Gluskap at last slays him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles G. Leland, The Algonquin Legends of New England (1884), 'Of Glooskap's Birth and of his Brother Malsum the Wolf'"
+     }
+    ]
+   }
+  ]
+ },
  "wabanaki_pamola": {
   "attributes": [
    {
@@ -425365,7 +425922,22 @@ const ICONO_SWEEP = {
     "sources": [
      {
       "kind": "secondary",
-      "reference": "Fannie Hardy Eckstorm, The Katahdin Legends; native Penobscot tradition"
+      "reference": "Fannie Hardy Eckstorm, The Katahdin Legends; Penobscot tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "vanuatu_qat": {
+  "attributes": [
+   {
+    "id": "vanuatu_qat-obsidian-knife",
+    "name": "Knife of red obsidian (cuts the first dawn)",
+    "notes": "Qat carves the first people from dracaena wood and, having bought Night, cuts the dawn with a knife of red volcanic glass; with the spider Marawa he builds the first unsinkable canoe.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. on Qat"
      }
     ]
    }
