@@ -1,0 +1,61 @@
+{
+  "faculties": {
+    "roman_juturna": [
+      {
+        "id": "roman_juturna-spring-lordship",
+        "name": "Holds dominion over springs and running water",
+        "term": { "value": "fontibus praesidet", "script": "Latin", "rom": "fontibus praesidet" },
+        "notes": "Made immortal by Jupiter and given lordship over springs, pools and rivers; invoked for healthful waters.",
+        "inheritability": "none",
+        "sources": [{ "kind": "primary", "reference": "Virgil, Aeneid 12; Ovid, Fasti 1" }],
+        "ability": true
+      },
+      {
+        "id": "roman_juturna-shapeshift-charioteer",
+        "name": "Takes the form of her brother's charioteer to save him",
+        "notes": "Assumed the shape of Turnus' charioteer Metiscus, scattered the Latin ranks, and returned his lost sword to prolong his duel with Aeneas until a Dira drove her off.",
+        "inheritability": "none",
+        "sources": [{ "kind": "primary", "reference": "Virgil, Aeneid 12" }],
+        "ability": true
+      }
+    ]
+  },
+  "materialCulture": {
+    "roman_juturna": [
+      {
+        "id": "roman_juturna-lacus",
+        "name": "Spring and pool of Juturna (Lacus Iuturnae)",
+        "classId": "sacred-spring",
+        "kind": "ritual-object",
+        "notes": "Her healing spring in the Roman Forum beside the Temple of Castor, where the Dioscuri were said to have watered their horses after Lake Regillus.",
+        "sources": [{ "kind": "primary", "reference": "Ovid, Fasti 1; Dionysius of Halicarnassus, Roman Antiquities 6" }]
+      }
+    ]
+  },
+  "domains": {},
+  "epithets": {},
+  "cult": {
+    "roman_juturna": [
+      {
+        "name": "Iuturnalia at the Lacus Iuturnae",
+        "term": { "value": "Iuturnalia", "script": "Latin", "rom": "Iuturnalia" },
+        "type": "festival",
+        "cadence": "annual, 11 January",
+        "notes": "Festival of Juturna celebrated on 11 January; those who worked with water (fountain-keepers, craftsmen using water) honoured her at her shrine in the Forum and at her temple in the Campus Martius vowed by Lutatius Catulus.",
+        "sources": [{ "kind": "primary", "reference": "Varro, De Lingua Latina 6; Servius on Aeneid 12" }]
+      }
+    ]
+  },
+  "iconography": {
+    "roman_juturna": {
+      "attributes": [
+        {
+          "id": "roman_juturna-water-urn",
+          "name": "Water-nymph with urn",
+          "notes": "Depicted as a spring-nymph, associated with the welling water of her Forum pool.",
+          "sources": [{ "kind": "secondary", "reference": "LIMC 'Iuturna'" }]
+        }
+      ]
+    }
+  }
+}

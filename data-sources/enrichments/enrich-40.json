@@ -88,6 +88,24 @@
         "kind": "structure",
         "sources": [{"kind": "secondary", "reference": "Colarusso, Nart Sagas from the Caucasus (2002)"}]
       }
+    ],
+    "oduduwa": [
+      {
+        "id": "oduduwa-aare-crown",
+        "name": "the Aare (Ade-Aare) crown, said to have descended from heaven",
+        "classId": "regalia",
+        "kind": "regalia",
+        "sources": [{"kind": "secondary", "reference": "Drewal, Pemberton & Abiodun, Yoruba: Nine Centuries of African Art and Thought (1989)"}]
+      }
+    ],
+    "pawnee_shakuru_sun": [
+      {
+        "id": "pawnee_shakuru_sun-fire-bundle",
+        "name": "the new fire kindled in the Sun's name",
+        "classId": "implement",
+        "kind": "implement",
+        "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]
+      }
     ]
   },
   "domains": {
@@ -137,6 +155,12 @@
     ],
     "pawnee_north_star": [
       {"original": "the Star That Does Not Walk Around", "rom": "the Star That Does Not Walk Around", "gloss": "Polaris, the fixed chief-star", "language": "English (Pawnee idiom)", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+    ],
+    "ossetian_batraz": [
+      {"original": "болат", "rom": "bolat", "gloss": "the Steel (one)", "language": "Ossetian", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+    ],
+    "olodumare": [
+      {"original": "Ọlọ́run", "rom": "Olorun", "gloss": "Owner/Lord of the Sky", "language": "Yoruba", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Idowu, Olódùmarè: God in Yoruba Belief (1962)"}]}
     ]
   },
   "cult": {
@@ -257,6 +281,25 @@
         "notes": "A tall pole figuring a tree was raised bearing an amaranth-dough image of Otontecuhtli/Xócotl at its top; after fire-rites for the dead, youths competed to climb the pole and seize the image. The festival joined the harvest of fruit to the cult of fire and the dead.",
         "sources": [{"kind": "secondary", "reference": "Sahagún, Florentine Codex, Book 2 (Anderson & Dibble trans.); López Austin, on Xocotl Huetzi"}]
       }
+    ],
+    "oduduwa": [
+      {
+        "name": "Olojo festival at Ile-Ife",
+        "type": "festival",
+        "cadence": "annual",
+        "notes": "Celebrating the dawn of creation, the Ooni of Ife emerges after days of seclusion wearing the Aare crown of Oduduwa and leads chiefs and priests to the shrine of Ogun; Oduduwa is venerated as progenitor and first king at his Ile-Ife shrine.",
+        "term": {"value": "Olójó", "script": "Latin (Yoruba)", "rom": "Olojo"},
+        "sources": [{"kind": "secondary", "reference": "Drewal, Pemberton & Abiodun, Yoruba: Nine Centuries of African Art and Thought (1989)"}]
+      }
+    ],
+    "palauan_milad": [
+      {
+        "name": "veneration at the rock-shelter of Ngeremlengui",
+        "type": "offering",
+        "cadence": "ancestral / origin-site observance",
+        "notes": "Milad bore four stone children at the cave of Ngebesek in Ngeremlengui, each founding a high-ranking village (Imeungs, Melekeok, Oreor/Koror, and the sister-stone); the site is held the most sacred origin place of the Palauan polity.",
+        "sources": [{"kind": "secondary", "reference": "Parmentier, The Sacred Remains: Myth, History, and Polity in Belau (1987)"}]
+      }
     ]
   },
   "iconography": {
@@ -367,6 +410,75 @@
     "pawnee_morning_star": {
       "attributes": [
         {"id": "pawnee_morning_star-red-paint", "name": "the warrior painted red, bearing fire and the war-club", "notes": "Identified with Mars; in the sacrifice the male principle of the east arrayed in red.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+      ]
+    },
+    "pawnee_evening_star": {
+      "attributes": [
+        {"id": "pawnee_evening_star-garden-west", "name": "the walled garden of the west, source of all animal and plant life", "notes": "Identified with Venus as the western, female 'White Star Woman'; her garden of creation, guarded by ordeals, is figured in the scaffold of the Morning Star rite.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+      ]
+    },
+    "pawnee_north_star": {
+      "attributes": [
+        {"id": "pawnee_north_star-fixed-chief", "name": "the motionless chief-star of the north (Polaris)", "notes": "'The Star That Does Not Walk Around', appointed by Tirawa to stand fixed and keep the other stars on their courses.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+      ]
+    },
+    "pawnee_tirawa": {
+      "attributes": [
+        {"id": "pawnee_tirawa-thunder-messenger", "name": "manifest in the thunder through his messenger Paruxti", "notes": "'Our Father Above', the unseen creator who governs the cosmos through the star-gods and is heard in the thunder.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+      ]
+    },
+    "palauan_latmikaik": {
+      "attributes": [
+        {"id": "palauan_latmikaik-giant-clam", "name": "the primordial giant clam from which life issued", "notes": "The 'clam mother'; in some tellings her name also names the clam itself, from which the first sea creatures and the ancestors of the Palauans came.", "sources": [{"kind": "secondary", "reference": "Parmentier, The Sacred Remains (1987)"}]}
+      ]
+    },
+    "palauan_milad": {
+      "attributes": [
+        {"id": "palauan_milad-stone-children", "name": "the four founding stones (her petrified children)", "notes": "Her offspring stand as the boundary-stones and monoliths that anchor the four high-ranking villages and the matrilineal order of Palau.", "sources": [{"kind": "secondary", "reference": "Parmentier, The Sacred Remains (1987)"}]}
+      ]
+    },
+    "palauan_chuab": {
+      "attributes": [
+        {"id": "palauan_chuab-body-land", "name": "the felled giant whose body became the islands", "notes": "The giant (Chuab/Uab) outgrew the people and was burnt; the body, toppling, formed Koror, Babeldaob and Kayangel.", "sources": [{"kind": "secondary", "reference": "Parmentier, The Sacred Remains (1987)"}]}
+      ]
+    },
+    "otomi_zana": {
+      "attributes": [
+        {"id": "otomi_zana-moon", "name": "the moon, governing night, weaving, time and childbirth", "notes": "The Old Mother (Pømbe/Zäna), lunar and earthly at once, consort of the Old Father of fire; she presides over the night and the reckoning of time.", "sources": [{"kind": "secondary", "reference": "Galinier, La mitad del mundo (1990)"}]}
+      ],
+      "sacredPlants": [
+        {"id": "otomi_zana-maguey", "name": "the maguey (century plant), yielding pulque", "sources": [{"kind": "secondary", "reference": "Galinier, La mitad del mundo (1990)"}]}
+      ]
+    },
+    "ovambo_kalunga": {
+      "attributes": [
+        {"id": "ovambo_kalunga-otiose-creator", "name": "the remote, unseen creator, named also for death and the abyss", "notes": "Kalunga is approached only through royal ancestors as intermediaries; the single name spans creator, death and the unknown, and is shared into Herero (Ndjambi Karunga).", "sources": [{"kind": "secondary", "reference": "Aarni, The Kalunga Concept in Ovambo Religion (1982)"}]}
+      ]
+    },
+    "oduduwa": {
+      "attributes": [
+        {"id": "oduduwa-beaded-crown", "name": "the conical beaded crown (ade) of Yoruba kingship", "notes": "The fringed, conical beaded crown worn by the Ooni and the kings descended from Oduduwa marks his royal progeniture; the original Aare crown is said to have come from heaven with him.", "sources": [{"kind": "secondary", "reference": "Drewal, Pemberton & Abiodun, Yoruba: Nine Centuries of African Art and Thought (1989)"}]}
+      ]
+    },
+    "ossetian_batraz": {
+      "attributes": [
+        {"id": "ossetian_batraz-steel-body", "name": "the body of tempered steel, glowing white-hot in battle", "notes": "Tempered in the forge of Kurdalægon, Batraz had a steel body invulnerable save where the smith could not reach; he could hurl himself like a fired arrow and strike like lightning.", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]},
+        {"id": "ossetian_batraz-sword-sea", "name": "the great sword that must be cast into the sea at his death", "notes": "Batraz dies only after his magic sword is thrown into the sea; the waters turn and storm, and the sword strikes thereafter as lightning against evil.", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+      ]
+    },
+    "ossetian_dzerassae": {
+      "attributes": [
+        {"id": "ossetian_dzerassae-dove", "name": "her dove form, in which she raids the Narts' apple tree", "notes": "Daughter of Donbettyr, she takes the shape of a golden dove to steal the fruit of the wondrous apple tree of the Narts.", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+      ]
+    },
+    "ossetian_uryzmaeg": {
+      "attributes": [
+        {"id": "ossetian_uryzmaeg-elder-narts", "name": "the grey-bearded elder presiding at the Nart feast", "notes": "Head of the Narts in the heroic age and sister-husband of Satana; figured as the wise elder who leads the cattle-raids and the council.", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+      ]
+    },
+    "pawnee_pah_moon": {
+      "attributes": [
+        {"id": "pawnee_pah_moon-moon-west", "name": "the Moon set in the west, female counterpart of the Sun", "notes": "Pah, placed by Tirawa opposite the Sun (Shakuru); with the Sun she bore the first boy of the Skidi creation.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
       ]
     }
   }

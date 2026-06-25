@@ -1,23 +1,29 @@
 {
   "faculties": {
+    "norse_hodr": [
+      {"id":"norse_hodr-slay-baldr","name":"slays the invulnerable Baldr with the mistletoe dart","notes":"Gylfaginning: blind Hǫðr, guided by Loki, throws the one thing that can harm Baldr — the mistletoe — and kills his brother.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 49; Vǫluspá 31-32 (Poetic Edda)"}],"ability":true}
+    ],
     "norse_idunn": [
-      {"id":"norse_idunn-keeper-of-apples","name":"keeps and dispenses the apples that hold off the gods' old age","term":{"value":"epli ellilyf ásanna","script":"Latin","rom":"epli ellilyf ásanna"},"notes":"Snorri's Skáldskaparmál names her keeper of the apples the Æsir bite to ward off old age until Ragnarök; her loss to Þjazi causes the gods to wither.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda), 'Bragaræður'/ch. on Iðunn"},{"kind":"primary","reference":"Þjóðólfr of Hvinir, Haustlöng"}],"ability":true},
+      {"id":"norse_idunn-keeper-of-apples","name":"keeps and dispenses the apples that hold off the gods' old age","term":{"value":"epli ellilyfs ásanna","script":"Latin","rom":"epli ellilyfs ásanna"},"notes":"Snorri's Skáldskaparmál names her keeper of the apples the Æsir bite to ward off old age until Ragnarök; her loss to Þjazi causes the gods to wither.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda), ch. on Iðunn"},{"kind":"primary","reference":"Þjóðólfr of Hvinir, Haustlöng"}],"ability":true},
       {"id":"norse_idunn-renew-youth","name":"restores the youth of the aging gods","notes":"The apples she guards renew the Æsir's youth; without her the gods grow grey and old (Haustlöng; Skáldskaparmál).","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda)"}],"ability":true}
     ],
     "norse_jord": [
       {"id":"norse_jord-personified-earth","name":"is the personified Earth, the ground itself","term":{"value":"Jǫrð","script":"Latin","rom":"Jǫrð"},"notes":"Snorri's Gylfaginning and Skáldskaparmál treat Jǫrð as the Earth personified, daughter of Nótt, mother of Thor by Odin; she is the land and soil.","inheritability":"partial","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning and Skáldskaparmál (Prose Edda)"}],"ability":true},
-      {"id":"norse_jord-mother-of-thor","name":"bears Thor, the defender of the worlds, to Odin","notes":"Thor is repeatedly called Jarðar burr ('son of Jǫrð'); she is among the foremost ancestresses of the Æsir.","inheritability":"full","sources":[{"kind":"primary","reference":"Vǫluspá (Poetic Edda); Snorri Sturluson, Skáldskaparmál"}],"ability":true}
+      {"id":"norse_jord-mother-of-thor","name":"bears Thor, the defender of the worlds, to Odin","notes":"Thor is repeatedly called Jarðar burr ('son of Jǫrð'); she is among the foremost ancestresses of the Æsir.","inheritability":"full","sources":[{"kind":"primary","reference":"Vǫluspá; Snorri Sturluson, Skáldskaparmál (Prose Edda)"}],"ability":true}
     ],
     "norse_nanna": [
       {"id":"norse_nanna-die-of-grief","name":"dies of grief at Baldr's death and follows him onto the pyre","notes":"Gylfaginning: when Baldr is laid on Hringhorni, Nanna's heart breaks with grief and she dies and is burned beside him.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 49"}],"ability":false},
       {"id":"norse_nanna-send-gifts-from-hel","name":"sends gifts back from Hel to Frigg and Fulla","notes":"From Hel she gives Hermóðr a linen robe for Frigg and a finger-ring for Fulla to carry back to the living.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 49"}],"ability":false}
     ],
     "norse_rindr": [
-      {"id":"norse_rindr-bear-the-avenger","name":"bears Váli, the one-night-old avenger of Baldr, to Odin","notes":"Baldrs draumar foretells that Rindr will bear Váli in the western halls; the child avenges Baldr at one night old.","inheritability":"full","sources":[{"kind":"primary","reference":"Baldrs draumar (Poetic Edda); Snorri Sturluson, Gylfaginning"}],"ability":false}
+      {"id":"norse_rindr-bear-the-avenger","name":"bears Váli, the avenger of Baldr, to Odin","notes":"Baldrs draumar foretells that Rindr will bear Váli in the western halls; the child avenges Baldr at one night old. Saxo (Gesta Danorum 3) tells how Othinus won Rinda by guile.","inheritability":"full","sources":[{"kind":"primary","reference":"Baldrs draumar (Poetic Edda); Snorri, Gylfaginning; Saxo Grammaticus, Gesta Danorum bk. 3"}],"ability":false}
+    ],
+    "norse_ran": [
+      {"id":"norse_ran-gather-the-drowned","name":"gathers the drowned to her undersea hall","notes":"Those lost at sea are said to 'go to Rán'; the wife of Ægir nets the drowned and receives them in her hall (Skáldskaparmál; Sonatorrek).","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda); Egill Skallagrímsson, Sonatorrek"}],"ability":true}
     ],
     "norse_ymir": [
-      {"id":"norse_ymir-source-of-the-world","name":"his slain body becomes the substance of the world","notes":"From Ymir's flesh the earth was made, from his blood the sea, from his bones the mountains, from his skull the heavens, and from his brains the clouds (Vafþrúðnismál; Grímnismál; Gylfaginning).","inheritability":"none","sources":[{"kind":"primary","reference":"Grímnismál 40-41 and Vafþrúðnismál 21 (Poetic Edda); Snorri, Gylfaginning"}],"ability":true},
-      {"id":"norse_ymir-progenitor-of-giants","name":"engenders the race of frost-giants from his own body","notes":"As he slept, a man and woman grew from under his arm and his two feet begot a son; thus the hrímþursar (frost-giants) descend from Ymir.","inheritability":"full","sources":[{"kind":"primary","reference":"Vafþrúðnismál 33 (Poetic Edda); Snorri, Gylfaginning"}],"ability":true}
+      {"id":"norse_ymir-source-of-the-world","name":"his slain body becomes the substance of the world","notes":"From Ymir's flesh the earth was made, from his blood the sea, from his bones the mountains, from his skull the heavens, from his brains the clouds (Grímnismál; Vafþrúðnismál; Gylfaginning).","inheritability":"none","sources":[{"kind":"primary","reference":"Grímnismál 40-41 and Vafþrúðnismál 21 (Poetic Edda); Snorri, Gylfaginning"}],"ability":true},
+      {"id":"norse_ymir-progenitor-of-giants","name":"engenders the race of frost-giants from his own body","notes":"As he slept, a man and woman grew from under his arm and his feet begot a son; thus the hrímþursar descend from Ymir.","inheritability":"full","sources":[{"kind":"primary","reference":"Vafþrúðnismál 33 (Poetic Edda); Snorri, Gylfaginning"}],"ability":true}
     ],
     "norse_thjazi": [
       {"id":"norse_thjazi-eagle-shape","name":"takes the shape of a great eagle","notes":"In eagle-form Þjazi forces Loki to deliver Iðunn and seizes her with her apples (Haustlöng; Skáldskaparmál).","inheritability":"none","sources":[{"kind":"primary","reference":"Þjóðólfr of Hvinir, Haustlöng; Snorri, Skáldskaparmál"}],"ability":true},
@@ -25,25 +31,31 @@
     ],
     "norse_magni": [
       {"id":"norse_magni-prodigious-strength","name":"possesses prodigious strength even as an infant","notes":"At three nights old Magni alone lifts the giant Hrungnir's leg off the fallen Thor, when no other god could move it (Skáldskaparmál).","inheritability":"partial","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda), the Hrungnir episode"}],"ability":true},
-      {"id":"norse_magni-inherit-mjollnir","name":"inherits Mjǫllnir and survives Ragnarök with his brother","notes":"Vafþrúðnismál: Móði and Magni shall possess Mjǫllnir when Vingnir (Thor) falls in the renewed world.","inheritability":"none","sources":[{"kind":"primary","reference":"Vafþrúðnismál 51 (Poetic Edda); Snorri, Skáldskaparmál"}],"ability":false}
+      {"id":"norse_magni-survive-ragnarok","name":"inherits Mjǫllnir and survives Ragnarök with his brother","notes":"Vafþrúðnismál: Móði and Magni shall possess Mjǫllnir when Vingnir (Thor) falls in the renewed world.","inheritability":"none","sources":[{"kind":"primary","reference":"Vafþrúðnismál 51 (Poetic Edda); Snorri, Skáldskaparmál"}],"ability":false}
     ],
     "norse_modi": [
       {"id":"norse_modi-battle-courage","name":"embodies battle-courage and wrath (his name means 'Courage/Wrath')","notes":"Móði ('the angry/courageous one') is named among Thor's sons; the name itself denotes martial fury.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda), kennings for Thor"}],"ability":true},
-      {"id":"norse_modi-inherit-mjollnir","name":"inherits Mjǫllnir and survives Ragnarök with Magni","notes":"Vafþrúðnismál foretells that Móði and Magni will wield their father's hammer in the world after Ragnarök.","inheritability":"none","sources":[{"kind":"primary","reference":"Vafþrúðnismál 51 (Poetic Edda)"}],"ability":false}
+      {"id":"norse_modi-survive-ragnarok","name":"inherits Mjǫllnir and survives Ragnarök with Magni","notes":"Vafþrúðnismál foretells that Móði and Magni will wield their father's hammer in the world after Ragnarök.","inheritability":"none","sources":[{"kind":"primary","reference":"Vafþrúðnismál 51 (Poetic Edda)"}],"ability":false}
     ],
     "norse_vali": [
       {"id":"norse_vali-grow-in-a-day","name":"grows to manhood in a single day to avenge Baldr","notes":"Vǫluspá and Baldrs draumar: Váli, son of Odin and Rindr, neither washes his hands nor combs his hair until he has brought Baldr's slayer to the pyre, at one night old.","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫluspá 32-33 and Baldrs draumar (Poetic Edda); Snorri, Gylfaginning"}],"ability":true}
     ],
     "norse_ve": [
       {"id":"norse_ve-slay-ymir","name":"with Odin and Vili slays Ymir and shapes the world","notes":"Gylfaginning: the three sons of Borr — Odin, Vili and Vé — kill Ymir and fashion the cosmos from his body.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 7-8"}],"ability":true},
-      {"id":"norse_ve-gift-to-mankind","name":"gives the first humans countenance, speech and the senses","notes":"Snorri's Gylfaginning assigns to the third brother the gift of face, speech, hearing and sight to Askr and Embla (the gifts are distributed among the three).","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 9"}],"ability":true}
+      {"id":"norse_ve-gift-to-mankind","name":"helps give the first humans countenance, speech and the senses","notes":"Snorri's Gylfaginning assigns to the three brothers the gifts of breath, wit, and face/speech/hearing/sight to Askr and Embla.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 9"}],"ability":true}
     ],
     "norse_vili": [
       {"id":"norse_vili-slay-ymir","name":"with Odin and Vé slays Ymir and shapes the world","notes":"One of the three sons of Borr who kill the frost-giant Ymir and build the world from his body (Gylfaginning).","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 7-8"}],"ability":true},
-      {"id":"norse_vili-gift-of-will","name":"gives the first humans will, motion and wit (his name means 'Will')","notes":"Vili ('will') is named with Vé as co-creator; the brothers endow Askr and Embla with the inner faculties.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 9; Lokasenna 26 (Poetic Edda)"}],"ability":true}
+      {"id":"norse_vili-gift-of-will","name":"helps give the first humans wit and motion (his name means 'Will')","notes":"Vili ('will') is named with Vé as co-creator; the brothers endow Askr and Embla with the inner faculties.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 9; Lokasenna 26 (Poetic Edda)"}],"ability":true}
+    ],
+    "norse_sigi": [
+      {"id":"norse_sigi-found-volsung-line","name":"founds the Vǫlsung dynasty with Odin's favour","notes":"Half-divine son of Odin who, after slaying the thrall Breði and being banished, builds a kingdom with the god's help and begets the Vǫlsung line (Vǫlsunga saga ch. 1).","inheritability":"full","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 1"}],"ability":false}
     ],
     "norse_sigmund": [
       {"id":"norse_sigmund-draw-the-sword","name":"alone can draw Odin's sword Gram from the tree Barnstokkr","notes":"At his sister Signý's wedding a one-eyed stranger (Odin) thrusts a sword into Barnstokkr; only Sigmund can pull it free (Vǫlsunga saga ch. 3).","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 3"}],"ability":true}
+    ],
+    "norse_sinfjotli": [
+      {"id":"norse_sinfjotli-wolf-strength","name":"gains the strength and howl of a wolf in the cursed wolf-skins","notes":"With Sigmund he wears the enchanted wolf-pelts and lives as a beast in the forest, killing many men before the skins are burned (Vǫlsunga saga ch. 8).","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 8"}],"ability":true}
     ],
     "norse_sigrun": [
       {"id":"norse_sigrun-valkyrie-protect","name":"as a valkyrie rides air and sea and shields her chosen warrior in battle","notes":"Helgakviða Hundingsbana: Sigrún and her valkyrie company ride over sky and sea to ward Helgi in the fight against Hǫðbroddr.","inheritability":"none","sources":[{"kind":"primary","reference":"Helgakviða Hundingsbana I-II (Poetic Edda)"}],"ability":true},
@@ -51,18 +63,35 @@
     ],
     "norse_signy": [
       {"id":"norse_signy-orchestrate-vengeance","name":"engineers the destruction of Siggeir across years of patient revenge","notes":"Vǫlsunga saga: Signý tests her sons, conceives Sinfjǫtli by her own brother Sigmund to breed an avenger of pure Vǫlsung blood, then dies in the burning of Siggeir's hall she helped contrive.","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 4-8"}],"ability":false},
-      {"id":"norse_signy-exchange-shapes","name":"exchanges her shape with a sorceress to lie with Sigmund unrecognised","notes":"By witchcraft she takes another woman's form to come unknown to her brother and beget Sinfjǫtli.","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 7"}],"ability":true}
+      {"id":"norse_signy-exchange-shapes","name":"exchanges her shape with a sorceress to lie unrecognised with Sigmund","notes":"By witchcraft she takes another woman's form to come unknown to her brother and beget Sinfjǫtli.","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 7"}],"ability":true}
     ],
     "norse_volsung": [
       {"id":"norse_volsung-conceived-by-apple","name":"is conceived by the fertility-apple Frigg sends to Rerir","notes":"Vǫlsunga saga: Rerir's queen eats the apple sent by Óðinn's messenger from Frigg and bears Vǫlsung after a long pregnancy; he is cut living from his dying mother.","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 1-2"}],"ability":false}
     ],
     "norse_jormunrekkr": [
       {"id":"norse_jormunrekkr-doom-svanhild","name":"has Svanhild trampled by horses and Randvér hanged on a slander","notes":"Believing the charge that his wife Svanhild and his son Randvér betrayed him, Jǫrmunrekkr hangs Randvér and has Svanhild trodden to death by horses (Hamðismál; Vǫlsunga saga).","inheritability":"none","sources":[{"kind":"primary","reference":"Hamðismál (Poetic Edda); Vǫlsunga saga ch. 42; Snorri, Skáldskaparmál"}],"ability":false}
+    ],
+    "norse_ragnar": [
+      {"id":"norse_ragnar-slay-dragon","name":"slays Þóra's serpent in pitch-boiled breeches to win her hand","notes":"Ragnar kills the great serpent coiled round the maiden Þóra's bower, warded from its venom by his shaggy pitch-soaked breeches, and so wins both bride and byname (Ragnars saga).","inheritability":"none","sources":[{"kind":"primary","reference":"Ragnars saga loðbrókar, ch. 2-3"}],"ability":true}
+    ],
+    "nuer_buk": [
+      {"id":"nuer_buk-mother-of-deng","name":"is the mother of the rain-spirit Deng among the spirits of the above","notes":"Evans-Pritchard records Buk (Candit/Garang's consort in some accounts) as a female Spirit of the above, mother of Deng, associated with rivers and streams.","inheritability":"full","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956)"}],"ability":true},
+      {"id":"nuer_buk-river-power","name":"dwells in and gives power over rivers and streams","notes":"Buk is the colwic/sky-spirit most closely linked with rivers; offerings to her are connected with the waters.","inheritability":"none","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956)"}],"ability":true}
+    ],
+    "nuer_deng": [
+      {"id":"nuer_deng-send-rain","name":"sends the rain as the foremost spirit of the above","notes":"Deng, son of Buk, is the great Nuer (and Dinka) spirit of the sky and rain, invoked by prophets who 'carry Deng'.","inheritability":"none","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956); cf. Lienhardt, Divinity and Experience (Dinka Deng)"}],"ability":true},
+      {"id":"nuer_deng-bring-sickness","name":"brings fever and sickness on those he seizes","notes":"Deng is associated with epidemic sickness and fever; people fall ill when 'caught' by him, and sacrifice is made to release them.","inheritability":"none","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956)"}],"ability":true}
+    ],
+    "nupe_gunnu": [
+      {"id":"nupe_gunnu-renew-fertility","name":"renews the fertility of the land through the annual Gunnu festival","notes":"Nadel documents the Gunnu as a fertility cult whose dry-season festival, with a boys' bush initiation, asks renewed fertility of the land and community.","inheritability":"none","sources":[{"kind":"secondary","reference":"S. F. Nadel, 'Gunnu, a Fertility Cult of the Nupe in Northern Nigeria' (JRAI, 1937); Nadel, Nupe Religion (1954)"}],"ability":true}
+    ],
+    "nupe_kuti": [
+      {"id":"nupe_kuti-ward-witchcraft","name":"wards the community against witchcraft as a tutelary cult-power","notes":"The kuti power, embodied in the Ndakó Gboyá masquerade, polices and destroys witches; the masked 'tall grandfather' is 'the policeman of the Gunnu'.","inheritability":"none","sources":[{"kind":"secondary","reference":"S. F. Nadel, Nupe Religion (1954); Nadel, 'Witchcraft and Anti-Witchcraft in Nupe Society' (Africa, 1935)"}],"ability":true}
     ]
   },
   "materialCulture": {
     "norse_idunn": [
-      {"id":"norse_idunn-eski","name":"the ash-wood casket (eski) holding the apples of youth","classId":"vessel","kind":"container","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda), ch. 86 on Iðunn-kennings"}]}
+      {"id":"norse_idunn-eski","name":"the ash-wood casket (eski) holding the apples of youth","classId":"vessel","kind":"container","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda), ch. on Iðunn-kennings"}]}
     ],
     "norse_jormungandr": [
       {"id":"norse_jormungandr-venom","name":"world-poisoning venom that fills air and sea at Ragnarök","classId":"power-attribute","kind":"venom","sources":[{"kind":"primary","reference":"Vǫluspá (Poetic Edda); Snorri, Gylfaginning ch. 51"}]}
@@ -74,29 +103,41 @@
       {"id":"norse_surtr-flaming-sword","name":"the flaming sword brighter than the sun","classId":"weapon","kind":"sword","sources":[{"kind":"primary","reference":"Vǫluspá 52 (Poetic Edda); Snorri, Gylfaginning ch. 4 and 51"}]}
     ],
     "norse_magni": [
-      {"id":"norse_magni-gullfaxi","name":"Gullfaxi ('Golden-mane'), the horse of Hrungnir given him by Thor","classId":"mount","kind":"horse","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda), the Hrungnir episode"}]},
-      {"id":"norse_magni-mjollnir-heir","name":"Mjǫllnir, the hammer he inherits after Ragnarök","classId":"weapon","kind":"hammer","sources":[{"kind":"primary","reference":"Vafþrúðnismál 51 (Poetic Edda)"}]}
+      {"id":"norse_magni-gullfaxi","name":"Gullfaxi ('Golden-mane'), the horse of Hrungnir given him by Thor","classId":"mount","kind":"horse","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda), the Hrungnir episode"}]}
+    ],
+    "norse_sigi": [
+      {"id":"norse_sigi-sword-of-odin","name":"the kingdom and warband Odin grants him to found the Vǫlsung line","classId":"regalia","kind":"realm","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 1"}]}
+    ],
+    "norse_sinfjotli": [
+      {"id":"norse_sinfjotli-wolf-skins","name":"the cursed wolf-skins he and Sigmund don to live as wolves","classId":"garment","kind":"pelt","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 8"}]}
     ],
     "norse_sigrun": [
-      {"id":"norse_sigrun-valkyrie-mail","name":"the valkyrie's helm and byrnie reddened with blood she wears riding the air","classId":"armor","kind":"mail","sources":[{"kind":"primary","reference":"Helgakviða Hundingsbana I-II (Poetic Edda)"}]}
+      {"id":"norse_sigrun-valkyrie-mail","name":"the valkyrie's helm and blood-reddened byrnie she wears riding the air","classId":"armor","kind":"mail","sources":[{"kind":"primary","reference":"Helgakviða Hundingsbana I-II (Poetic Edda)"}]}
     ],
     "norse_ragnar": [
-      {"id":"norse_ragnar-lodbrok","name":"the shaggy hair-breeches (loðbrók) boiled in pitch that ward off the dragon's venom","classId":"garment","kind":"armor","sources":[{"kind":"primary","reference":"Ragnars saga loðbrókar, ch. 2-3"}]}
+      {"id":"norse_ragnar-lodbrok","name":"the shaggy hair-breeches (loðbrók) boiled in pitch that turn the serpent's venom","classId":"garment","kind":"armor","sources":[{"kind":"primary","reference":"Ragnars saga loðbrókar, ch. 2-3"}]}
     ],
     "norse_sorli": [
       {"id":"norse_sorli-mail-of-jonakr","name":"the byrnie of the Jónakrssynir that iron could not bite","classId":"armor","kind":"mail","sources":[{"kind":"primary","reference":"Hamðismál (Poetic Edda); Vǫlsunga saga ch. 44"}]}
+    ],
+    "nupe_edegi": [
+      {"id":"nupe_edegi-egba-tsoede","name":"Egba Tsoede, the heavy magical iron chains that became the emblem of royal judicial power","classId":"regalia","kind":"insignia","sources":[{"kind":"secondary","reference":"S. F. Nadel, A Black Byzantium (1942)"}]},
+      {"id":"nupe_edegi-bronze-canoe","name":"the bronze canoe and the long brass trumpets (kakati) given him by the Igala king","classId":"regalia","kind":"insignia","sources":[{"kind":"secondary","reference":"S. F. Nadel, A Black Byzantium (1942)"}]}
+    ],
+    "nupe_kuti": [
+      {"id":"nupe_kuti-ndako-gboya","name":"the towering cloth Ndakó Gboyá masquerade ('the tall grandfather') wrapped like a shroud","classId":"regalia","kind":"masquerade","sources":[{"kind":"secondary","reference":"S. F. Nadel, Nupe Religion (1954)"}]}
     ]
   },
   "epithets": {
     "norse_idunn": [
-      {"original":"Brǫgð fjǫr ása","rom":"varðveita epli","gloss":"keeper of the apples (the Æsir's age-old cure)","language":"Old Norse","contextTag":"kenning","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál, ch. 86"}]}
+      {"original":"varðveita epli","rom":"varðveita epli","gloss":"'keeper of the apples' (the Æsir's age-old cure)","language":"Old Norse","contextTag":"kenning","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda), ch. on Iðunn"}]}
     ],
     "norse_jord": [
-      {"original":"Fjǫrgyn","rom":"Fjǫrgyn","gloss":"the Earth (a poetic name of Jǫrð, mother of Thor)","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Vǫluspá 56; Hárbarðsljóð 56 (Poetic Edda); Snorri, Skáldskaparmál"}]},
+      {"original":"Fjǫrgyn","rom":"Fjǫrgyn","gloss":"the Earth (a poetic name of Jǫrð, mother of Thor)","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Vǫluspá 56; Hárbarðsljóð 56 (Poetic Edda)"}]},
       {"original":"Hlóðyn","rom":"Hlóðyn","gloss":"a byname of the Earth-goddess","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Vǫluspá 56 (Poetic Edda)"}]}
     ],
     "norse_skuld": [
-      {"original":"sú þriðja Skuld","rom":"Skuld","gloss":"'Debt/That-which-shall-be', the youngest Norn","language":"Old Norse","contextTag":"name","sources":[{"kind":"primary","reference":"Vǫluspá 20 (Poetic Edda)"}]}
+      {"original":"sú þriðja","rom":"Skuld","gloss":"'Debt / That-which-shall-be', the youngest Norn","language":"Old Norse","contextTag":"name","sources":[{"kind":"primary","reference":"Vǫluspá 20 (Poetic Edda)"}]}
     ],
     "norse_ragnar": [
       {"original":"Loðbrók","rom":"Loðbrók","gloss":"'Hairy-breeches / Shaggy-breeches'","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Ragnars saga loðbrókar; Saxo Grammaticus, Gesta Danorum bk. 9"}]}
@@ -105,7 +146,7 @@
       {"original":"Fáfnisbani","rom":"Fáfnisbani","gloss":"'Slayer of Fáfnir'","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Fáfnismál (Poetic Edda); Vǫlsunga saga; Snorri, Skáldskaparmál"}]}
     ],
     "norse_sigurd_snake": [
-      {"original":"Ormr í auga","rom":"Sigurðr ormr í auga","gloss":"'Snake-in-the-Eye' (the serpent-mark in his eye)","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Ragnars saga loðbrókar; Ragnarssona þáttr"}]}
+      {"original":"ormr í auga","rom":"Sigurðr ormr í auga","gloss":"'Snake-in-the-Eye' (the serpent-mark in his eye)","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Ragnars saga loðbrókar; Ragnarssona þáttr"}]}
     ],
     "norse_ivarr": [
       {"original":"inn beinlausi","rom":"Ívarr inn beinlausi","gloss":"'Ívarr the Boneless'","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Ragnars saga loðbrókar; Ragnarssona þáttr"}]}
@@ -114,13 +155,18 @@
       {"original":"inn ríki","rom":"Jǫrmunrekkr inn ríki","gloss":"'Jǫrmunrekkr the Mighty' (king of the Goths)","language":"Old Norse","contextTag":"epithet","sources":[{"kind":"primary","reference":"Hamðismál (Poetic Edda); Snorri, Skáldskaparmál"}]}
     ],
     "norse_ymir": [
-      {"original":"Brimir","rom":"Brimir","gloss":"a byname of the primordial giant Ymir","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda)"}]},
-      {"original":"Bláinn","rom":"Bláinn","gloss":"a byname of Ymir (from whose skull/blood the dwarves were made)","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Vǫluspá 9 (Poetic Edda)"}]}
+      {"original":"Aurgelmir","rom":"Aurgelmir","gloss":"a name of the primordial giant among the frost-giants","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Vafþrúðnismál 29-30 (Poetic Edda)"}]},
+      {"original":"Brimir","rom":"Brimir","gloss":"a byname of Ymir","language":"Old Norse","contextTag":"byname","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda)"}]}
+    ],
+    "nuer_kwoth": [
+      {"original":"Kwoth a ghau","rom":"Kwoth a ghau","gloss":"'Spirit who is in the sky / God in the heavens'","language":"Nuer","contextTag":"invocation","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956)"}]}
+    ],
+    "nupe_edegi": [
+      {"original":"Etsu Nupe","rom":"Etsu Nupe","gloss":"'King of the Nupe', the royal title he founded","language":"Nupe","contextTag":"title","sources":[{"kind":"secondary","reference":"S. F. Nadel, A Black Byzantium (1942)"}]}
     ]
   },
   "domains": {
     "norse_idunn": [
-      {"sphereId":"youth-rejuvenation","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda)"}]},
       {"sphereId":"fruit-and-plant-fertility","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Þjóðólfr of Hvinir, Haustlöng; Snorri, Skáldskaparmál"}]}
     ],
     "norse_jord": [
@@ -133,13 +179,23 @@
       {"sphereId":"fire-cataclysm","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Vǫluspá 52 (Poetic Edda); Snorri, Gylfaginning"}]}
     ],
     "norse_thjazi": [
-      {"sphereId":"winter-and-frost","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda); Hárbarðsljóð 19 (Poetic Edda)"}]}
+      {"sphereId":"winter-and-frost","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Hárbarðsljóð 19 (Poetic Edda); Snorri, Skáldskaparmál"}]}
     ],
     "norse_jormunrekkr": [
-      {"sphereId":"war-and-the-feud","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Hamðismál (Poetic Edda); Vǫlsunga saga"}]}
+      {"sphereId":"warfare-and-the-feud","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Hamðismál (Poetic Edda); Vǫlsunga saga"}]}
     ],
     "norse_sigrun": [
       {"sphereId":"war-slain","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Helgakviða Hundingsbana I-II (Poetic Edda)"}]}
+    ],
+    "nuer_buk": [
+      {"sphereId":"rivers-fertility","contextTag":"lifelong","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956)"}]}
+    ],
+    "nuer_deng": [
+      {"sphereId":"rain-and-fertility","contextTag":"lifelong","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956)"}]},
+      {"sphereId":"disease-and-pestilence","contextTag":"lifelong","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956)"}]}
+    ],
+    "nupe_kuti": [
+      {"sphereId":"protection-against-witchcraft","contextTag":"lifelong","sources":[{"kind":"secondary","reference":"S. F. Nadel, Nupe Religion (1954)"}]}
     ]
   },
   "cult": {
@@ -147,29 +203,40 @@
       {"name":"the toast to Njǫrðr and Freyr for plenty and peace at the sacrificial feast","term":{"value":"Njarðar full ok Freys full til árs ok friðar","script":"Old Norse","rom":"Njarðar full ok Freys full til árs ok friðar"},"type":"sacrifice","cadence":"at the seasonal blót","notes":"At the blót the horn was drained to Njǫrðr and Freyr 'for good harvest and peace'; his name survives in Norwegian cult place-names such as Njarðarlǫg and Norderhov (Njarðar-hof, 'Njǫrðr's temple').","sources":[{"kind":"primary","reference":"Snorri Sturluson, Hákonar saga góða (Heimskringla), ch. 14"}]}
     ],
     "norse_thor": [
-      {"name":"libation to the idol of Thor against plague and famine at the temple of Uppsala","type":"sacrifice","cadence":"in time of dearth or plague","notes":"Adam of Bremen describes Thor enthroned in the centre of the Uppsala temple between Wodan and Fricco, holding a scepter; when plague or famine threatened, the offering went to Thor.","sources":[{"kind":"secondary","reference":"Adam of Bremen, Gesta Hammaburgensis ecclesiae pontificum, bk. 4 (Descriptio insularum aquilonis)"}]}
+      {"name":"libation to the idol of Thor against plague and famine at the temple of Uppsala","type":"sacrifice","cadence":"in time of dearth or plague","notes":"Adam of Bremen describes Thor enthroned in the centre of the Uppsala temple between Wodan and Fricco, holding a scepter; when plague or famine threatened, the offering went to Thor.","sources":[{"kind":"secondary","reference":"Adam of Bremen, Gesta Hammaburgensis ecclesiae pontificum, bk. 4"}]}
     ],
     "norse_tyr": [
-      {"name":"offerings to Týr at his sacred groves and lakes","type":"offering","cadence":"recurrent","notes":"Týr's name is preserved in cult place-names such as Tislund ('Týr's grove') in Denmark; the lake Tissø ('Týr's lake') has yielded great quantities of deposited Viking-age weapons interpreted as offerings.","sources":[{"kind":"secondary","reference":"toponymy of Tislund and Tissø; cf. de Vries, Altgermanische Religionsgeschichte"}]}
+      {"name":"offerings to Týr at his sacred groves and lakes","type":"offering","cadence":"recurrent","notes":"Týr's name is preserved in cult place-names such as Tislund ('Týr's grove') in Denmark; the lake Tissø ('Týr's lake') has yielded great quantities of deposited Viking-age weapons read as offerings.","sources":[{"kind":"secondary","reference":"toponymy of Tislund and Tissø; cf. de Vries, Altgermanische Religionsgeschichte"}]}
     ],
-    "norse_nuer_placeholder": []
+    "norse_ullr": [
+      {"name":"oaths sworn upon the ring of Ullr","type":"oath-rite","cadence":"at the swearing of solemn oaths","notes":"Atlakviða invokes Ullr's ring in oath-taking; his name is preserved in some thirty-odd Swedish and eastern-Norwegian cult place-names (e.g. Ullevi 'Ullr's sanctuary', Ullarlundr 'Ullr's grove'), marking an extensive early cult.","sources":[{"kind":"primary","reference":"Atlakviða 30 (Poetic Edda); Grímnismál 42 (Ýdalir); cf. Saxo Grammaticus, Gesta Danorum bk. 3 (Ollerus)"}]}
+    ],
+    "nuer_colwic": [
+      {"name":"the colwic shrine-rite for one taken by lightning","term":{"value":"riek","script":"Latin","rom":"riek"},"type":"funeral-rite","cadence":"upon a death by lightning","notes":"When a person is killed by lightning the kin raise a shrine-stake (riek) on the funeral mound and plant a sapling of the nyuot tree beside it; sacrifice is made by all relatives, for the dead has been taken straight to Kwoth in the sky and become colwic.","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956)"}]}
+    ],
+    "nuer_deng": [
+      {"name":"sacrifice of an ox to release one seized by Deng","type":"sacrifice","cadence":"in time of sickness","notes":"An ox (or, failing that, a cucumber) is consecrated and speared so that its life may go to the spirit in place of the sufferer's, freeing the sick person from Deng.","sources":[{"kind":"secondary","reference":"E. E. Evans-Pritchard, Nuer Religion (1956)"}]}
+    ],
+    "nupe_gunnu": [
+      {"name":"the annual Gunnu fertility festival with bush initiation of boys","type":"festival","cadence":"yearly, in the dry season","notes":"Served by the hereditary Gunnuko priesthood, the dry-season festival asks renewed fertility of the land; boys undergo a rite of passage in the forest, and the Ndakó Gboyá masquerade — 'the policeman of the Gunnu' — appears.","sources":[{"kind":"secondary","reference":"S. F. Nadel, 'Gunnu, a Fertility Cult of the Nupe' (JRAI, 1937); Nadel, Nupe Religion (1954)"}]}
+    ],
+    "nupe_kuti": [
+      {"name":"the Ndakó Gboyá masquerade performance for witch-finding and cleansing","type":"masquerade-rite","cadence":"on call and at the Gunnu festival","notes":"The towering shroud-masked spirit is summoned to detect and drive out witches and to cleanse villages; performers form a secret society of priestly 'policemen' of the cult.","sources":[{"kind":"secondary","reference":"S. F. Nadel, Nupe Religion (1954); Nadel, 'Witchcraft and Anti-Witchcraft in Nupe Society' (Africa, 1935)"}]}
+    ]
   },
   "iconography": {
     "norse_idunn": {
       "attributes": [
-        {"id":"norse_idunn-apples-attr","name":"the apples of immortality she bears","notes":"Iðunn is figured cradling the apples that keep the gods young, her defining attribute.","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda)"}]}
+        {"id":"norse_idunn-apples-attr","name":"the apples of immortality she cradles","notes":"Iðunn's defining attribute is the basket or casket of apples that keep the gods young.","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda)"}]}
       ],
       "sacredPlants": [
-        {"id":"norse_idunn-apple-tree","name":"the apple","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda)"}]}
+        {"id":"norse_idunn-apple","name":"the apple","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda)"}]}
       ]
     },
     "norse_jormungandr": {
       "attributes": [
         {"id":"norse_jormungandr-coiled-serpent","name":"the colossal serpent coiled round Midgard biting its own tail","notes":"Jǫrmungandr lies in the sea encircling the world, gripping its tail in its mouth (Gylfaginning).","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 34"}]},
-        {"id":"norse_jormungandr-altuna-gosforth","name":"Thor's fishing of the serpent in Viking-age carving","notes":"The serpent appears with Thor's fishing-line on the Altuna runestone (Uppland) and amid Ragnarök scenes on the Gosforth Cross (Cumbria).","sources":[{"kind":"secondary","reference":"Altuna Runestone (U 1161); Gosforth Cross"}]}
-      ],
-      "sacredAnimals": [
-        {"id":"norse_jormungandr-serpent","name":"the serpent (its own form)","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda)"}]}
+        {"id":"norse_jormungandr-altuna-gosforth","name":"Thor's fishing of the serpent in Viking-age carving","notes":"The serpent appears on Thor's fishing-line on the Altuna runestone (Uppland) and amid Ragnarök scenes on the Gosforth Cross (Cumbria).","sources":[{"kind":"secondary","reference":"Altuna Runestone (U 1161); Gosforth Cross"}]}
       ]
     },
     "norse_surtr": {
@@ -179,7 +246,7 @@
     },
     "norse_ymir": {
       "attributes": [
-        {"id":"norse_ymir-primordial-giant","name":"the vast primordial frost-giant formed in the meeting of frost and fire","notes":"Ymir takes shape from the rime of Élivágar where the cold of Niflheim meets the heat of Muspell (Gylfaginning).","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 5"}]}
+        {"id":"norse_ymir-primordial-giant","name":"the vast primordial frost-giant formed where frost met fire","notes":"Ymir takes shape from the rime of Élivágar where the cold of Niflheim meets the heat of Muspell (Gylfaginning).","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 5"}]}
       ],
       "sacredAnimals": [
         {"id":"norse_ymir-audhumla","name":"Auðhumla, the primeval cow that nourished him","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 6"}]}
@@ -187,7 +254,17 @@
     },
     "norse_vidarr": {
       "attributes": [
-        {"id":"norse_vidarr-great-shoe","name":"the great thick shoe with which he braces against Fenrir's jaw","notes":"Víðarr's iconic attribute is the shoe made from all the leather-scraps men have cut from their shoes, by which he kills the wolf at Ragnarök (Gylfaginning).","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 51; Skáldskaparmál"}]}
+        {"id":"norse_vidarr-great-shoe","name":"the great thick shoe with which he braces against Fenrir's jaw","notes":"Víðarr's iconic attribute is the shoe made of all the leather-scraps men cut from their shoes, by which he tears the wolf apart at Ragnarök (Gylfaginning).","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 51; Skáldskaparmál"}]}
+      ]
+    },
+    "norse_skadi": {
+      "attributes": [
+        {"id":"norse_skadi-skis-and-bow","name":"the skis, snowshoes and hunting-bow of the snow-goddess","notes":"Skaði is the ǫndurdís ('snowshoe-goddess'), figured ranging the winter mountains on skis with her bow (Gylfaginning; Skáldskaparmál).","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning and Skáldskaparmál (Prose Edda)"}]}
+      ]
+    },
+    "nupe_kuti": {
+      "attributes": [
+        {"id":"nupe_kuti-tall-cloth-figure","name":"the towering cylindrical cloth figure ('the tall grandfather') that rises and shrinks","notes":"Ndakó Gboyá appears as an immense column of white cloth over a hidden bearer, able to tower up and sink down, wrapped like a burial shroud.","sources":[{"kind":"secondary","reference":"S. F. Nadel, Nupe Religion (1954)"}]}
       ]
     }
   }

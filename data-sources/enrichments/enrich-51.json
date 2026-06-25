@@ -1,0 +1,393 @@
+{
+  "faculties": {
+    "turkic_od": [
+      {
+        "id": "turkic_od-purify-by-fire",
+        "name": "Purify and ward off evil through flame",
+        "notes": "The hearth-fire personified as Ot/Od cleanses persons, dwellings and objects; people and possessions were passed between or around fires to drive off sickness and malign spirits.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols (on the cult of fire, ot)"}],
+        "ability": true
+      }
+    ],
+    "turkic_tengri": [
+      {
+        "id": "turkic_tengri-create-cosmos",
+        "name": "Create and order the heavens and the earth",
+        "notes": "In the opening lines of the Orkhon (Kül Tigin / Bilge Khagan) inscriptions the Blue Sky above and the brown earth below are made, and humankind between them, by Tengri's ordinance.",
+        "inheritability": "none",
+        "sources": [{"kind": "primary", "reference": "Orkhon inscriptions, Kül Tigin stele (east face, opening)"}],
+        "ability": true
+      }
+    ],
+    "turkic_umay": [
+      {
+        "id": "turkic_umay-open-womb",
+        "name": "Open the womb and bestow children",
+        "notes": "As mother-goddess of birth Umay grants offspring and presides over conception and safe delivery; her name is the Old Turkic word for the placenta/afterbirth.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Jean-Paul Roux, Faune et flore sacrées; cf. Orkhon usage 'umay teg ögüm' (Tonyukuk / Kül Tigin)"}],
+        "ability": true
+      }
+    ],
+    "udmurt_inmar": [
+      {
+        "id": "udmurt_inmar-send-light-and-weather",
+        "name": "Send light, rain and benign weather from on high",
+        "notes": "As the high sky-god of the aerial tier Inmar dispenses light and life-giving rain; white animals were immolated to him and prayers offered beneath the pine.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology"}],
+        "ability": true
+      }
+    ],
+    "udmurt_kyldysin": [
+      {
+        "id": "udmurt_kyldysin-enrich-soil",
+        "name": "Enrich the soil and grant the harvest",
+        "notes": "Earth-and-fertility god (the mu- 'earth' aspect Mu-Kylchin) who quickens the ploughland and the crops; collective seasonal sacrifices sought his blessing on soil and yield.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology"}],
+        "ability": true
+      }
+    ],
+    "udmurt_nyulesmurt": [
+      {
+        "id": "udmurt_nyulesmurt-decide-the-quarry",
+        "name": "Allot the game and decide each beast's lair",
+        "notes": "The forest-master apportions hunting and herding luck and is said to decide where each bear shall lie in its den; hunters petitioned him for a good chase.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Aado Lintrop, 'Forest Spirits in the Udmurt Worldview', Sator 22 (2021)"}],
+        "ability": true
+      }
+    ],
+    "wabanaki_gluskap": [
+      {
+        "id": "wabanaki_gluskap-bring-the-arts",
+        "name": "Give the people fire, tobacco, nets and canoes",
+        "notes": "As culture-hero Gluskap brings the Wabanaki their useful arts, the knowledge of good and evil, fire, tobacco, fishing nets, earthenware and the canoe.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Charles G. Leland, The Algonquin Legends of New England (1884); Silas T. Rand, Legends of the Micmacs (1894)"}],
+        "ability": true
+      }
+    ]
+  },
+  "materialCulture": {
+    "turkic_ulgen": [
+      {
+        "id": "turkic_ulgen-tapty-birch",
+        "name": "The notched sacrificial birch (tapty)",
+        "classId": "ritual-object",
+        "kind": "implement",
+        "sources": [{"kind": "secondary", "reference": "Mircea Eliade, Shamanism: Archaic Techniques of Ecstasy (the Altai horse-sacrifice and ascent to Bai Ülgen)"}]
+      }
+    ],
+    "udmurt_invu_mumy": [],
+    "vainakh_pkharmat": [
+      {
+        "id": "vainakh_pkharmat-sheedag",
+        "name": "The sheedag (reed-pipe shaped during his torment)",
+        "classId": "instrument",
+        "kind": "instrument",
+        "sources": [{"kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (Pkharmat / Nart cycle)"}]
+      }
+    ],
+    "vietnamese_tan_vien_son_thanh": [
+      {
+        "id": "vietnamese_tan_vien_son_thanh-staff",
+        "name": "Magic staff and divine book of arts",
+        "classId": "regalia",
+        "kind": "implement",
+        "sources": [{"kind": "secondary", "reference": "Lĩnh Nam chích quái (Wonders Plucked from the Dust of Linh-nam), tale of Tản Viên / Sơn Tinh"}]
+      }
+    ],
+    "vietnamese_thanh_giong": [
+      {
+        "id": "vietnamese_thanh_giong-bamboo",
+        "name": "Uprooted bamboo clumps wielded as weapons",
+        "classId": "weapon",
+        "kind": "weapon",
+        "sources": [{"kind": "secondary", "reference": "Lĩnh Nam chích quái, legend of Phù Đổng Thiên Vương (Thánh Gióng)"}]
+      }
+    ]
+  },
+  "domains": {
+    "turkic_tengri": [
+      {"sphereId": "war-and-victory", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Orkhon inscriptions (Tengri grants the Türk khagans victory)"}]}
+    ],
+    "udmurt_inmar": [
+      {"sphereId": "light", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology"}]}
+    ],
+    "vainakh_pkharmat": [
+      {"sphereId": "fire", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook"}]}
+    ],
+    "wabanaki_pamola": [
+      {"sphereId": "cold-and-winter", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Fannie Hardy Eckstorm, The Katahdin Legends; Henry D. Thoreau, The Maine Woods"}]}
+    ]
+  },
+  "epithets": {
+    "turkic_tengri": [
+      {"original": "𐰚𐰇𐰚 𐱅𐰭𐰼𐰃", "rom": "Kök Teŋri", "gloss": "Blue/Eternal Sky", "language": "Old Turkic", "contextTag": "cult", "sources": [{"kind": "primary", "reference": "Orkhon inscriptions, Kül Tigin and Bilge Khagan steles"}]},
+      {"original": "𐱅𐰭𐰼𐰃 𐱅𐰭𐰼𐰃𐰓𐰀 𐰉𐰆𐰞𐰢𐰽", "rom": "Teŋri teg Teŋride bolmuš", "gloss": "Heaven-like, born of Heaven (royal style of the khagan)", "language": "Old Turkic", "contextTag": "title", "sources": [{"kind": "primary", "reference": "Bilge Khagan inscription (opening titulature)"}]}
+    ],
+    "turkic_ulgen": [
+      {"original": "Бай Үлгэн", "rom": "Bay Ülgen", "gloss": "Rich/Magnificent Ülgen", "language": "Altai Turkic", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wilhelm Radloff, Aus Sibirien; Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology"}]}
+    ],
+    "turkic_od": [
+      {"original": "Од Ана / От Эне", "rom": "Od Ana / Ot Ene", "gloss": "Fire-Mother", "language": "Turkic-Mongolic", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols (cult of fire); Mongol 'Galyn ekh / Ot ekh', fire-mother"}]}
+    ],
+    "turkic_oghuz_khagan": [
+      {"original": "Boz Kurt", "rom": "Boz Kurt", "gloss": "the (guide of the) Grey Wolf", "language": "Turkic", "contextTag": "epic", "sources": [{"kind": "primary", "reference": "Oghuznāme (Uyghur-script Oghuz Khagan epic)"}]}
+    ],
+    "udmurt_keremet": [
+      {"original": "Луд-кузё", "rom": "Lud-kuzyo", "gloss": "Master of the Field/Grove", "language": "Udmurt", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology; Udmurt Vos ethnography"}]}
+    ],
+    "urartian_haldi": [
+      {"original": "DḪaldi", "rom": "Haldi", "gloss": "the (god) of Ardini/Muṣaṣir, lord of the city", "language": "Urartian (Akkadian determinative)", "contextTag": "cult", "sources": [{"kind": "primary", "reference": "Meher Kapısı (Mheri Dur) inscription; Muṣaṣir votive texts"}]}
+    ],
+    "vainakh_pkharmat": [
+      {"original": "Пхьармат", "rom": "Pẖarmat", "gloss": "the Smith (from pẖar 'smith')", "language": "Chechen", "contextTag": "epic", "sources": [{"kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (Nart cycle)"}]}
+    ],
+    "vietnamese_thanh_giong": [
+      {"original": "扶董天王", "rom": "Phù Đổng Thiên Vương", "gloss": "Heavenly King of Phù Đổng", "language": "Sino-Vietnamese", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Lĩnh Nam chích quái; cult title used at Phù Đổng and Sóc temples"}]}
+    ],
+    "vietnamese_lieu_hanh": [
+      {"original": "母上天", "rom": "Mẫu Thượng Thiên", "gloss": "Mother of the Upper Heaven", "language": "Sino-Vietnamese", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Đạo Mẫu (Mother Goddess) liturgy of the Four Palaces; Phủ Giầy tradition"}]},
+      {"original": "瓊花柳杏公主", "rom": "Quỳnh Hoa Liễu Hạnh công chúa", "gloss": "Princess Quỳnh Hoa Liễu Hạnh", "language": "Sino-Vietnamese", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Scripture of the Four Palaces (Tứ Phủ)"}]}
+    ],
+    "vietnamese_au_co": [
+      {"original": "國母", "rom": "Quốc Mẫu", "gloss": "Mother of the Nation", "language": "Sino-Vietnamese", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Đại Việt sử ký toàn thư (Hồng Bàng annals); cult at Đền Mẫu Âu Cơ, Phú Thọ"}]}
+    ],
+    "vainakh_tusholi": [
+      {"original": "Тушоли", "rom": "Tušoli", "gloss": "goddess of spring and fertility, the people's intercessor", "language": "Ingush/Chechen", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes"}]}
+    ]
+  },
+  "cult": {
+    "turkic_tengri": [
+      {
+        "name": "Heaven-sacrifice on the mountain heights",
+        "type": "sacrifice",
+        "cadence": "seasonal / at need by the khagan",
+        "notes": "The steppe peoples sacrificed horses and cattle to Heaven on high places; Sima Qian's Shiji records the Xiongnu offering to tian (Tengri) on mountain-tops, and worship was made by raising the hands and bowing toward the sky.",
+        "sources": [{"kind": "primary", "reference": "Sima Qian, Shiji 110 (Xiongnu chapter)"}]
+      }
+    ],
+    "turkic_ulgen": [
+      {
+        "name": "The white horse-sacrifice and shaman's ascent",
+        "type": "sacrifice",
+        "cadence": "periodic (every 3rd, 6th, 9th or 12th year)",
+        "notes": "An Altai kam erected a yurt enclosing a young birch notched with steps (tapty); a white horse was sacrificed and the shaman, mounting its soul, climbed the heavens stage by stage to lay the offering before Bai Ülgen.",
+        "sources": [{"kind": "secondary", "reference": "Wilhelm Radloff, Aus Sibirien; Mircea Eliade, Shamanism"}]
+      }
+    ],
+    "turkic_od": [
+      {
+        "name": "Bridal circling of the hearth-fire",
+        "type": "rite",
+        "cadence": "at marriage and hearth-lighting",
+        "notes": "A bride entering the household was led around the family hearth to honour the fire-mother (Ot/Od); the domestic flame was kept pure and never defiled, and fire was used to cleanse.",
+        "sources": [{"kind": "secondary", "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols (cult of fire)"}]
+      }
+    ],
+    "udmurt_inmar": [
+      {
+        "name": "White-animal sacrifice in the sacred grove",
+        "term": {"value": "Луд / Куала", "script": "Cyrl", "rom": "lud / kuala"},
+        "type": "sacrifice",
+        "cadence": "communal seasonal prayer-feasts",
+        "notes": "White animals were immolated to Inmar (black to Kyldysin, red to Kuaz); prayers led by the vösyas' priest were said under a pine in the sacred grove, participants robed in white.",
+        "sources": [{"kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology; Aado Lintrop, Udmurt prayer-feast studies"}]
+      }
+    ],
+    "udmurt_keremet": [
+      {
+        "name": "Black-animal propitiation in the keremet grove",
+        "term": {"value": "Кереметь / Луд", "script": "Cyrl", "rom": "keremet' / lud"},
+        "type": "sacrifice",
+        "cadence": "at epidemics and misfortune",
+        "notes": "In a secluded forest clearing (the keremet or lud) a special tuno priest sacrificed black animals to avert the misfortunes the just but stern Lud sent on transgressors.",
+        "sources": [{"kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology; 'Eastern Udmurt Sacred Places', Journal of Ethnology and Folkloristics"}]
+      }
+    ],
+    "urartian_haldi": [
+      {
+        "name": "State sacrifice prescribed in the Meher Kapısı god-list",
+        "type": "sacrifice",
+        "cadence": "fixed temple allotments",
+        "notes": "On the Meher Kapısı rock inscription Haldi heads the pantheon with the largest allotment (with bulls and sheep prescribed for him); even his attributes — his armies, spear, weapons and gates — receive their own offerings. His chief temple stood at Muṣaṣir/Ardini.",
+        "sources": [{"kind": "primary", "reference": "Meher Kapısı (Mheri Dur) inscription of Išpuini and Minua"}]
+      }
+    ],
+    "urartian_teisheba": [
+      {
+        "name": "Temple worship at Teišebaini",
+        "type": "temple",
+        "cadence": "civic / royal",
+        "notes": "The fortress-city Teišebaini (Karmir-Blur), founded by Rusa II, was named for and dedicated to the storm-god; he received temples and sacrifices alongside Haldi and Šivini.",
+        "sources": [{"kind": "primary", "reference": "Meher Kapısı inscription; Karmir-Blur (Teišebaini) excavation finds"}]
+      }
+    ],
+    "vainakh_tusholi": [
+      {
+        "name": "Spring Festival of Tusholi",
+        "term": {"value": "Тушоли", "script": "Cyrl", "rom": "Tušoli"},
+        "type": "festival",
+        "cadence": "annually in spring (April), at the hoopoe's return",
+        "notes": "Timed to the return migration of the hoopoe ('Tusholi's hen', held sacred), the festival was led by a pure-man priest (tsyeni stag); pilgrims kissed the ground before her wooden idol with its iron mask, and childless women touched the image to seek offspring. Her sanctuary lay in the Assa gorge of Ingushetia.",
+        "sources": [{"kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes"}]
+      }
+    ],
+    "vainakh_seela": [
+      {
+        "name": "Rain-and-harvest prayers in the month of Seli",
+        "type": "offering",
+        "cadence": "in the spring month named for him (Seli-butt)",
+        "notes": "In the month/moon bearing his name Sela was invoked for rain and a good harvest; those struck by his lightning were reckoned blessed and specially buried.",
+        "sources": [{"kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes"}]
+      }
+    ],
+    "vainakh_maetsill": [
+      {
+        "name": "Harvest festival of Maetsill",
+        "type": "festival",
+        "cadence": "at harvest time",
+        "notes": "A harvest feast was kept in honour of the grain-god, who fills the fields and barns and protects the poor; his name is linked to the mountain sanctuary of Mat-Lam.",
+        "sources": [{"kind": "secondary", "reference": "Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes; Vainakh-religion survey"}]
+      }
+    ],
+    "vainakh_molyz_yerdy": [
+      {
+        "name": "Warriors' offerings at the sanctuary of Molyz-Yerdy",
+        "type": "offering",
+        "cadence": "before and after war",
+        "notes": "Vainakh warriors made offerings at the war-god's shrine (yerdy/elgyts) to win and give thanks for victory.",
+        "sources": [{"kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook; Mariel Tsaroïeva, Anciennes croyances des Ingouches et des Tchétchènes"}]
+      }
+    ],
+    "vietnamese_tan_vien_son_thanh": [
+      {
+        "name": "Cult of Tản Viên Sơn Thánh (Và Temple, Ba Vì)",
+        "type": "temple",
+        "cadence": "spring festival; ongoing temple cult",
+        "notes": "Foremost of the Tứ Bất Tử (Four Immortals), the mountain-god of Ba Vì is honoured at scores of relics in the Hanoi region (notably the Và Temple in Sơn Tây), petitioned for good harvests and protection from flood and disaster.",
+        "sources": [{"kind": "secondary", "reference": "Toan Ánh, Vietnamese folk-belief studies; Tản Viên Sơn Thánh festival inventory (Ba Vì)"}]
+      }
+    ],
+    "vietnamese_thanh_giong": [
+      {
+        "name": "Gióng Festival of Phù Đổng and Sóc temples",
+        "type": "festival",
+        "cadence": "annually before the harvest (4th lunar month at Phù Đổng)",
+        "notes": "Re-enacts the hero's battle with a white horse and flag-dance; he is venerated as patron of the harvest, national peace and family prosperity. Inscribed on the UNESCO Representative List of Intangible Cultural Heritage (2010).",
+        "sources": [{"kind": "secondary", "reference": "UNESCO Representative List, 'Gióng festival of Phù Đổng and Sóc temples' (2010)"}]
+      }
+    ],
+    "vietnamese_lieu_hanh": [
+      {
+        "name": "Phủ Giầy Festival of the Mother Goddess",
+        "type": "festival",
+        "cadence": "annually, 3rd–10th day of the 3rd lunar month",
+        "notes": "Centred on her temple complex at Phủ Giầy (Vụ Bản, Nam Định) with its Vân Cát and Tiên Hương palaces; marks the goddess's death anniversary with processions, offerings and hầu đồng spirit-mediumship. Đạo Mẫu was inscribed by UNESCO in 2016.",
+        "sources": [{"kind": "secondary", "reference": "UNESCO, 'Practices related to the Viet beliefs in the Mother Goddesses of Three Realms' (2016); Phủ Giầy festival tradition"}]
+      }
+    ],
+    "vietnamese_lac_long_quan": [
+      {
+        "name": "Ancestral cult at the Hùng Temples",
+        "type": "temple",
+        "cadence": "ongoing; Hùng Kings' commemoration (10th day, 3rd lunar month)",
+        "notes": "As progenitor of the Bách Việt with Âu Cơ, Lạc Long Quân is venerated with the Holy Ancestor and the Hùng kings at the Hùng Temple complex in Phú Thọ, with incense offered by the temple keepers.",
+        "sources": [{"kind": "secondary", "reference": "Đại Việt sử ký toàn thư (Hồng Bàng annals); Hùng Temple cult, Phú Thọ"}]
+      }
+    ],
+    "vietnamese_au_co": [
+      {
+        "name": "Mother-of-the-Nation cult at Đền Mẫu Âu Cơ",
+        "type": "temple",
+        "cadence": "spring temple festival",
+        "notes": "Venerated as Quốc Mẫu ('Mother of the Nation'), notably at Đền Mẫu Âu Cơ in Hiền Lương, Phú Thọ.",
+        "sources": [{"kind": "secondary", "reference": "Đại Việt sử ký toàn thư; cult at Đền Mẫu Âu Cơ, Phú Thọ"}]
+      }
+    ],
+    "wabanaki_pamola": [
+      {
+        "name": "Taboo of the sacred summit of Katahdin",
+        "type": "taboo",
+        "cadence": "ongoing observance",
+        "notes": "Fear of Pamola, who brews storms and seizes climbers, made the summit of Mount Katahdin taboo; Penobscot guides refused to ascend, as Thoreau recorded in 1846 ('Pamola is always angry with those who climb to the summit of K'taadn').",
+        "sources": [{"kind": "primary", "reference": "Henry D. Thoreau, The Maine Woods (1864), 'Ktaadn'"}]
+      }
+    ]
+  },
+  "iconography": {
+    "turkic_tengri": {
+      "attributes": [
+        {"id": "turkic_tengri-aniconic-sky", "name": "Aniconic — the eternal blue sky itself", "notes": "Kök Tengri is never figured in human or animal form; he is the blue heaven, with the sun and moon under his governance as his visible signs.", "sources": [{"kind": "secondary", "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "turkic_tengri-horse", "name": "Horse (the heaven-sacrifice, 'blue' = of divine origin)", "sources": [{"kind": "primary", "reference": "Sima Qian, Shiji 110; cf. Old Turkic kök at"}]}
+      ]
+    },
+    "turkic_umay": {
+      "attributes": [
+        {"id": "turkic_umay-three-horn-headdress", "name": "Three-horned / three-pointed headdress", "notes": "Umay is figured with a distinctive triple-horned headgear; the 'elibelinde' (hands-on-hips) mother-goddess motif of Anatolian kilims — a triangular female form with hooked arms — continues her ancient image.", "sources": [{"kind": "secondary", "reference": "Emel Esin, Türk Kozmolojisine Giriş; Anatolian kilim 'elibelinde' motif studies"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "turkic_umay-swan", "name": "Bird (swan/waterfowl as the descending soul of the child)", "sources": [{"kind": "secondary", "reference": "Jean-Paul Roux, Faune et flore sacrées"}]}
+      ]
+    },
+    "turkic_ulgen": {
+      "sacredPlants": [
+        {"id": "turkic_ulgen-birch", "name": "Birch (the cosmic tree / world-axis to his heaven)", "sources": [{"kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology; Eliade, Shamanism"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "turkic_ulgen-white-horse", "name": "White horse (offered in his sacrifice)", "sources": [{"kind": "secondary", "reference": "Wilhelm Radloff, Aus Sibirien"}]}
+      ]
+    },
+    "turkic_oghuz_khagan": {
+      "attributes": [
+        {"id": "turkic_oghuz_khagan-blue-radiant", "name": "Born with miraculous, partly bestial features and blue radiance", "notes": "The Oghuznāme describes the infant Oghuz with an awesome appearance — blue-grey of face, with features of ox, wolf, sable and bear — who matured and spoke within forty days.", "sources": [{"kind": "primary", "reference": "Oghuznāme (Uyghur-script Oghuz Khagan epic)"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "turkic_oghuz_khagan-grey-wolf", "name": "The heaven-sent grey wolf (Boz Kurt), army-guide", "sources": [{"kind": "primary", "reference": "Oghuznāme (Oghuz Khagan epic)"}]}
+      ]
+    },
+    "urartian_haldi": {
+      "attributes": [
+        {"id": "urartian_haldi-on-lion", "name": "Warrior standing upon a lion, bearing a spear", "notes": "Haldi is portrayed as an armed man, with or without wings, standing on a lion; his temple at Muṣaṣir (shown on Sargon II's relief) carried a spear-finial on its gable with shields hung on the walls — 'the house of weapons'.", "sources": [{"kind": "primary", "reference": "Relief of the sack of Muṣaṣir, palace of Sargon II at Khorsabad (714 BCE)"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "urartian_haldi-lion", "name": "Lion (his mount and emblem)", "sources": [{"kind": "primary", "reference": "Khorsabad Muṣaṣir relief; Urartian bronze plaques"}]}
+      ]
+    },
+    "urartian_teisheba": {
+      "attributes": [
+        {"id": "urartian_teisheba-on-bull", "name": "Standing on a bull, grasping thunderbolts, in a horned tiara", "notes": "The storm-god is figured as a man upon a bull holding a fistful of thunderbolts, wearing a tall horned headgear; the bronze statuette from Teišebaini (Karmir-Blur, found 1941) is the type-piece.", "sources": [{"kind": "primary", "reference": "Bronze statuette of Teisheba from Teišebaini (Karmir-Blur)"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "urartian_teisheba-bull", "name": "Bull (his emblem and mount)", "sources": [{"kind": "primary", "reference": "Karmir-Blur (Teišebaini) finds"}]}
+      ]
+    },
+    "urartian_shivini": {
+      "attributes": [
+        {"id": "urartian_shivini-kneeling-disc", "name": "Long-haired youth kneeling on one knee, upholding the solar disc", "notes": "Šivini is shown as a young man with long hair, kneeling on one knee and raising a winged sun-disc above his head; the winged solar disc and the (winged) shield are his emblems.", "sources": [{"kind": "secondary", "reference": "P. Zimansky / studies of Urartian art; 'The Iconography and Symbolism of the Sun God in Urartian Art'"}]}
+      ]
+    },
+    "vainakh_pkharmat": {
+      "attributes": [
+        {"id": "vainakh_pkharmat-chained-eagle", "name": "Chained to the summit of Bashlam (Kazbek), liver torn by the bird Ida", "notes": "After stealing Sela's fire on the swift horse Turpal, Pkharmat is chained by the cyclops Uja to Mount Bashlam/Kazbek, where the falcon Ida (king of birds) descends each dawn to devour his ever-regenerating liver — the Vainakh Prometheus.", "sources": [{"kind": "secondary", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (Nart cycle)"}]}
+      ]
+    },
+    "wabanaki_gluskap": {
+      "attributes": [
+        {"id": "wabanaki_gluskap-stone-canoe", "name": "His great stone canoe", "notes": "Gluskap departs the people in (or is associated with) an immense stone canoe, in which he withdraws to the world's edge, promising to return.", "sources": [{"kind": "secondary", "reference": "Charles G. Leland, The Algonquin Legends of New England (1884)"}]},
+        {"id": "wabanaki_gluskap-giant-beaver", "name": "Transformer who became a giant beaver", "notes": "In a widely told tale he turns himself into a giant beaver and, slapping his tail, raises islands in the Bay of Fundy; as transformer he shapes the land and tames the monsters of the first age.", "sources": [{"kind": "secondary", "reference": "Silas T. Rand, Legends of the Micmacs (1894)"}]}
+      ]
+    },
+    "wabanaki_pamola": {
+      "attributes": [
+        {"id": "wabanaki_pamola-composite", "name": "Moose-headed, man-bodied, eagle-winged and -taloned", "notes": "Pamola is described with the head of a moose, the body of a man and the wings and feet (talons) of an eagle; he embodies the cold storms of Katahdin.", "sources": [{"kind": "secondary", "reference": "Fannie Hardy Eckstorm, The Katahdin Legends; native Penobscot tradition"}]}
+      ]
+    }
+  }
+}
