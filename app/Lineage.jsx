@@ -3,7 +3,7 @@
 //  below, siblings beside). Lives inside the detail panel.
 // ═══════════════════════════════════════════════════════════════════════════
 
-const { useState: __lState, useMemo: __lMemo } = React;
+const { useState: __lState, useMemo: __lMemo, useEffect: __lEffect } = React;
 
 const CARD_W = 152;
 const CARD_H = 44;
@@ -88,54 +88,56 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
 
 // ── Layout ───────────────────────────────────────────────────────────────
 
-function layoutTree(tree) {
-  // Limit each row to MAX_PER_ROW; the rest collapses into an overflow chip.
-  const trimmed = tree.rows.map(row => {
-    if (row.length <= MAX_PER_ROW) return { visible: row, overflow: 0 };
-    return { visible: row.slice(0, MAX_PER_ROW), overflow: row.length - MAX_PER_ROW };
+function layoutTree(tree, expandedRows) {
+  // Each row shows up to MAX_PER_ROW cards. Anything past that collapses into a
+  // clickable chip — unless the user expanded that row, in which case the whole
+  // row is shown. Expanded rows unfurl to the RIGHT (the canvas scrolls); the
+  // centering frame below is computed from the *capped* widths so the rest of
+  // the tree never jumps sideways when one row is opened.
+  const rows = tree.rows.map((row, idx) => {
+    const overflow = Math.max(0, row.length - MAX_PER_ROW);
+    const expanded = overflow > 0 && expandedRows.has(idx);
+    const visible = expanded ? row : row.slice(0, MAX_PER_ROW);
+    const cappedCount = Math.min(row.length, MAX_PER_ROW);
+    // Frame width: the capped cards plus the chip slot when this row overflows.
+    let cappedW = cappedCount * CARD_W + Math.max(0, cappedCount - 1) * GAP_X;
+    if (overflow > 0) cappedW += GAP_X + CARD_W * 0.5;
+    return { idx, overflow, expanded, visible, cappedW };
   });
 
-  // Compute each row's visual width (visible cards + optional overflow chip).
-  const widths = trimmed.map(({ visible, overflow }) => {
-    let w = visible.length * CARD_W + Math.max(0, visible.length - 1) * GAP_X;
-    if (overflow) w += GAP_X + CARD_W * 0.5;
-    return w;
-  });
-  const maxW = Math.max(...widths, CARD_W);
+  const maxW = Math.max(...rows.map(r => r.cappedW), CARD_W);
 
-  // Place cards centered per row
+  // Place cards centered per row; track the true canvas width so expanded rows
+  // (which run past maxW) stay reachable via horizontal scroll.
   const nodes = [];
   let focusY = 0;
-  trimmed.forEach(({ visible, overflow }, rowIdx) => {
-    const rowW = widths[rowIdx];
-    const startX = (maxW - rowW) / 2;
-    const y = rowIdx * (CARD_H + GAP_Y);
+  let canvasW = maxW;
+  rows.forEach(({ idx, overflow, expanded, visible, cappedW }) => {
+    const startX = (maxW - cappedW) / 2;
+    const y = idx * (CARD_H + GAP_Y);
     visible.forEach((id, i) => {
       const isFocus = id === tree.focusId;
       const kind =
-        rowIdx <  tree.ancestorRowCount ? 'ancestor' :
-        rowIdx >  tree.ancestorRowCount ? 'descendant' :
+        idx <  tree.ancestorRowCount ? 'ancestor' :
+        idx >  tree.ancestorRowCount ? 'descendant' :
         isFocus ? 'focus' : 'sibling';
-      const node = {
-        id, kind,
-        x: startX + i * (CARD_W + GAP_X),
-        y, row: rowIdx, col: i,
-      };
+      const x = startX + i * (CARD_W + GAP_X);
       if (isFocus) focusY = y;
-      nodes.push(node);
+      canvasW = Math.max(canvasW, x + CARD_W);
+      nodes.push({ id, kind, x, y, row: idx, col: i });
     });
-    if (overflow) {
-      nodes.push({
-        kind: 'overflow', count: overflow,
-        x: startX + visible.length * (CARD_W + GAP_X),
-        y, row: rowIdx,
-      });
+    if (overflow > 0) {
+      // Collapsed: chip sits after the 7th card showing "+N". Expanded: chip
+      // moves to the row's end as a "−" collapse toggle.
+      const x = startX + visible.length * (CARD_W + GAP_X);
+      canvasW = Math.max(canvasW, x + CARD_W * 0.5);
+      nodes.push({ kind: expanded ? 'collapse' : 'overflow', count: overflow, row: idx, x, y });
     }
   });
 
   return {
     nodes,
-    width: maxW,
+    width: canvasW,
     height: tree.rows.length * (CARD_H + GAP_Y) - GAP_Y,
     focusY,
   };
@@ -190,12 +192,21 @@ function LineageCard({ node, byId, onPick }) {
 function Lineage({ entry, byId, childrenOf, onPick }) {
   const [upDepth, setUpDepth] = __lState(2);
   const [downDepth, setDownDepth] = __lState(2);
+  // Which rows the user has expanded (by row index). Row indices shift when the
+  // entry or the generation depth changes, so clear the set whenever they do.
+  const [expandedRows, setExpandedRows] = __lState(() => new Set());
+  __lEffect(() => { setExpandedRows(new Set()); }, [entry, upDepth, downDepth]);
+  const toggleRow = (row) => setExpandedRows((prev) => {
+    const next = new Set(prev);
+    if (next.has(row)) next.delete(row); else next.add(row);
+    return next;
+  });
 
   const tree = __lMemo(
     () => buildLineageTree(entry, byId, childrenOf, upDepth, downDepth),
     [entry, byId, childrenOf, upDepth, downDepth],
   );
-  const layout = __lMemo(() => layoutTree(tree), [tree]);
+  const layout = __lMemo(() => layoutTree(tree, expandedRows), [tree, expandedRows]);
   const edges = __lMemo(() => computeEdges(layout.nodes, byId), [layout, byId]);
 
   const hasAny =
@@ -240,23 +251,31 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
               );
             })}
           </svg>
-          {layout.nodes.map((n, i) =>
-            n.kind === 'overflow' ? (
-              <div
-                key={`of-${i}`}
-                className="lineage-overflow"
-                style={{ left: n.x, top: n.y, width: CARD_W * 0.5, height: CARD_H }}
-                title={`${n.count} more not shown`}
-              >+{n.count}</div>
-            ) : (
+          {layout.nodes.map((n, i) => {
+            if (n.kind === 'overflow' || n.kind === 'collapse') {
+              const expanded = n.kind === 'collapse';
+              return (
+                <div
+                  key={`of-${n.row}`}
+                  className={'lineage-overflow' + (expanded ? ' is-expanded' : '')}
+                  style={{ left: n.x, top: n.y, width: CARD_W * 0.5, height: CARD_H }}
+                  onClick={() => toggleRow(n.row)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleRow(n.row); } }}
+                  title={expanded ? 'Show fewer' : `Show ${n.count} more`}
+                >{expanded ? '−' : '+' + n.count}</div>
+              );
+            }
+            return (
               <LineageCard
                 key={n.id}
                 node={n}
                 byId={byId}
                 onPick={onPick}
               />
-            )
-          )}
+            );
+          })}
         </div>
       </div>
 
