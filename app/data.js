@@ -361895,12 +361895,15057 @@ const applyFacultySupplement = makeListApplier({ label: 'faculty', defaultMap: F
 // applies; the `(m) => fn(m, MAP)` wrappers are the overlays that run a second
 // pass against a different map (CROSS_/VERIFY_ENRICHMENTS, the *_X overlays).
 /* ENRICH_SWEEP_START */
-const FACULTY_SWEEP = {};
-const MATERIAL_SWEEP = {};
-const DOMAIN_SWEEP = {};
-const EPITHET_SWEEP = {};
-const CULT_SWEEP = {};
-const ICONO_SWEEP = {};
+const FACULTY_SWEEP = {
+ "abar": [
+  {
+   "id": "abar-sistrum-player",
+   "name": "served as a sistrum-player (consecrated musician) in the temple of Amun",
+   "term": {
+    "value": "𓅓",
+    "script": "Egyptian hieroglyphs",
+    "rom": "ihy / shemayt"
+   },
+   "notes": "Stela V from Kawa records that her father dedicated her as a temple musician of Amun, a role of consecrated royal women.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kawa Stela V (Taharqa), Macadam, The Temples of Kawa I"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Lohwasser, 'Royal Sisters and royal legitimization in the Nubian period'"
+    }
+   ],
+   "ability": false
+  },
+  {
+   "id": "abar-legitimizer",
+   "name": "transmits and legitimizes Kushite kingship as King's Mother",
+   "notes": "As mother of Taharqa and sister-wife of Piye she embodies the maternal line through which 25th-Dynasty royal legitimacy was reckoned; depicted standing behind Taharqa at Gebel Barkal.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Gebel Barkal reliefs of Taharqa; Kawa Stela V"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Lohwasser, 'Royal Sisters and royal legitimization in the Nubian period'"
+    }
+   ],
+   "ability": false
+  }
+ ],
+ "akan_aso": [
+  {
+   "id": "akan_aso-counsel",
+   "name": "devises with Anansi the schemes by which he traps his quarry",
+   "notes": "In the story of winning the sky-god's stories it is Aso, herself wise and cunning, who plans with Anansi the ruse that captures Onini the python.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Akan-Ashanti Folk-Tales (1930); Wikipedia, 'Anansi'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "abkhaz_antswa": [
+  {
+   "id": "abkhaz_antswa-omniscience",
+   "name": "sees and knows all things from his dwelling in the sky",
+   "notes": "Antswa is conceived as omnipotent, omniscient and wholly good, dwelling in the heavens above the lesser deities he appoints.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians); Bgazhba & Lakoba, History of Abkhazia"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "abkhaz_antswa-thunderbolt",
+   "name": "wields thunder and lightning as his punitive instruments",
+   "notes": "Thunder and lightning are reckoned the chastising forces of Antswa, by which he strikes the wicked.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "abkhaz_afy": [
+  {
+   "id": "abkhaz_afy-chooses-victim",
+   "name": "marks those he strikes with lightning as chosen for the god",
+   "notes": "A person or beast killed by lightning was held to have been 'visited' and chosen by Afy; such a death was envied as a sign of election.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians); Chirikba, on Caucasian lightning cult"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "abkhaz_aitar": [
+  {
+   "id": "abkhaz_aitar-sevenfold",
+   "name": "presides as a sevenfold deity over the several patrons of individual domestic animals",
+   "notes": "Aitar is reckoned a composite or 'sevenfold' divinity grouping lesser patrons such as Jabran (sheep) and Alyshkyntyr (dogs).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians); Mythological Encyclopedia (Abkhaz pantheon)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "abkhaz_azhwepshaa": [
+  {
+   "id": "abkhaz_azhwepshaa-master-of-game",
+   "name": "owns and herds the wild beasts of the forest as master of the game",
+   "notes": "Head of the divine forest-family, owner of herds of deer, elk, fallow-deer and roe, granting their flesh to favoured hunters.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians); Religion in Abkhazia (Abkhaz hunting cult)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aboriginal_baiame": [
+  {
+   "id": "aboriginal_baiame-give-law",
+   "name": "gives the people their law, marriage rules, songs and rites",
+   "notes": "Baiame descended from the sky, ordered the land, and gave the kinship system, mourning customs and hunting taboos.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    },
+    {
+     "kind": "primary",
+     "reference": "K. Langloh Parker, The Euahlayi Tribe (1905)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "aboriginal_baiame-withdraw-sky",
+   "name": "withdraws to and dwells in his sky-camp (Bullimah) after creation",
+   "notes": "After shaping Country and instituting law Baiame returned to his sky-home, where he abides as the All-Father.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "K. Langloh Parker, The Euahlayi Tribe (1905)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aboriginal_bunjil": [
+  {
+   "id": "aboriginal_bunjil-ascend-whirlwind",
+   "name": "ascends to the sky-country Tharangalk-bek on a whirlwind of his own raising",
+   "notes": "Having made the land and law, Bunjil had Waang loose the winds, and rose on the whirlwind to dwell in the sky as the headman of the dead.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Smyth, The Aborigines of Victoria (1878)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aboriginal_birrahgnooloo": [
+  {
+   "id": "aboriginal_birrahgnooloo-send-floods",
+   "name": "sends the floods and floodwaters when entreated",
+   "notes": "As All-Mother and senior wife of Baiame she is associated with rain and floodwater and can be petitioned to release floods.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "K. Langloh Parker, The Euahlayi Tribe (1905)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "aboriginal_birrahgnooloo-allmother",
+   "name": "is mother of the people and of Daramulun in the All-Father complex",
+   "notes": "Reckoned chief wife of Baiame and mother of all the people; mother of Daramulun in the south-eastern All-Father tradition.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "K. Langloh Parker, The Euahlayi Tribe (1905)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aboriginal_binbeal": [
+  {
+   "id": "aboriginal_binbeal-rainbow",
+   "name": "appears as and governs the rainbow",
+   "notes": "Binbeal is the rainbow itself, son of Bunjil; the fainter secondary bow is reckoned his wife.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Smyth, The Aborigines of Victoria (1878)"
+    },
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aboriginal_daramulun": [
+  {
+   "id": "aboriginal_daramulun-bullroarer-voice",
+   "name": "speaks through the whirring bullroarer and the thunder",
+   "notes": "The roaring of the bullroarer (often itself called dharamulan) and the rolling of thunder are reckoned the voice of Daramulun.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "aboriginal_daramulun-initiation",
+   "name": "presides over the Bora initiation and the knocking-out of the novice's tooth",
+   "notes": "He separates the youths from their mothers, teaches the Burbung/Bora rites and removes a tooth as the mark of initiation.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    },
+    {
+     "kind": "primary",
+     "reference": "Mathews, 'The Bora or Initiation Ceremonies of the Kamilaroi Tribe' (1895)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aboriginal_wandjina": [
+  {
+   "id": "aboriginal_wandjina-renew-paint",
+   "name": "must have their rock-images repainted to renew the rains and the world",
+   "notes": "The custodians repaint the Wandjina figures to keep their power active and ensure the return of the monsoon and the fertility of Country.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Crawford, The Art of the Wandjina (1968)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Akerman, on Kimberley Wandjina tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aboriginal_wagyl": [
+  {
+   "id": "aboriginal_wagyl-rainbow-serpent",
+   "name": "is the Noongar Rainbow Serpent, creator and keeper of the fresh waters",
+   "notes": "The Wagyl created the rivers and waterholes of the south-west and was appointed guardian of the rivers, lakes, springs and their wildlife.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bates, The Native Tribes of Western Australia"
+    },
+    {
+     "kind": "secondary",
+     "reference": "State Library of Western Australia, 'The Waugal'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ajaka": [
+  {
+   "id": "ajaka-husbandry",
+   "name": "fosters animal husbandry and the peaceful arts of the herd",
+   "notes": "Unlike his warlike father and brother, Ajaka loved cattle-keeping and encouraged animal husbandry among the Oyo.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Samuel Johnson, The History of the Yorubas"
+    }
+   ],
+   "ability": false
+  }
+ ],
+ "akan_anansi": [
+  {
+   "id": "akan_anansi-cunning",
+   "name": "outwits stronger creatures through cunning rather than force",
+   "notes": "The Anansesem turn on Anansi defeating the powerful (the python Onini, leopard Osebo, hornets Mmoboro) by wit and trickery.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Akan-Ashanti Folk-Tales (1930)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "akan_anansi-owner-of-stories",
+   "name": "holds ownership of all tales, won from Nyame",
+   "notes": "Having paid Nyame's price by capturing the great creatures, Anansi became owner of all stories, so that folktales are called anansesem ('spider words').",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Akan-Ashanti Folk-Tales (1930)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Ananse'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "akan_komfo_anokye": [
+  {
+   "id": "akan_komfo_anokye-heal",
+   "name": "heals and controls nature as the great okomfo (priest)",
+   "notes": "The title okomfo marks his repute as a priest possessed of powers of healing and of command over the natural world.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Okomfo Anokye'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "amani": [
+  {
+   "id": "amani-fecundity",
+   "name": "embodies fertility and generative power in his ram-headed Napatan form",
+   "notes": "The Kushite ram-headed Amun emphasised fertility and martial vigour, conceived as the god in his primeval, generative state.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kendall, 'Jebel Barkal and Ancient Napata'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Welsby, The Kingdom of Kush"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ambundu_sun_moon_daughter": [
+  {
+   "id": "ambundu_sun_moon_daughter-bear-thunder-twins",
+   "name": "Bears and mothers the thunder-twins Sudika-Mbambi and Kabundungulu",
+   "notes": "Daughter of the Sun (Lumbi/Kambonge) and the Moon (Mwesi/Kakwiji); won in marriage by the mortal Nzua dia Kimanaueze, she gives birth to the wonder-children who speak from her womb and are born already armed.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heli Chatelain, Folk-Tales of Angola (1894), 'The Son of Kimanaueze and the Daughter of the Sun and the Moon'; 'Sudika-Mbambi'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ambundu_kalunga": [
+  {
+   "id": "ambundu_kalunga-summon-the-dead",
+   "name": "Summons mortals across the Kalunga line to the land of the dead",
+   "term": {
+    "value": "Kalunga",
+    "script": "Latn",
+    "rom": "Kalunga"
+   },
+   "notes": "As Lord Kalunga-ngombe, King of the Netherworld, he calls the living over the boundary (the sea/river dividing the living from the ancestors) to dwell among the dead.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Alice Werner, Myths and Legends of the Bantu (1933), ch. II 'Where Man Came From, and How Death Came'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "ambundu_kalunga-guard-the-boundary",
+   "name": "Guards the threshold between the world of the living and the dead",
+   "notes": "Kalunga is itself the liminal frontier — vast water (sea or river) — that souls must cross to reach the ancestors; the personified Kalunga presides over that passage.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Alice Werner, Myths and Legends of the Bantu (1933)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ambundu_kianda": [
+  {
+   "id": "ambundu_kianda-grant-the-catch",
+   "name": "Grants or withholds the fishermen's catch",
+   "notes": "Patroness of the sea and inland waters; fishermen of Luanda pray to her before setting out for a safe voyage and a full catch.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heli Chatelain, Folk-Tales of Angola (1894), notes on Kimbundu spirit-beings; Kianda of the Ilha de Luanda"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "ambundu_kianda-command-the-waters",
+   "name": "Commands the sea, rivers and lakes and may raise or calm their dangers",
+   "notes": "Each body of water has its own kianda (pl. ianda); she can wreck or spare boats and is propitiated to ward off sea-disasters.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chatelain, Folk-Tales of Angola (1894)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ambundu_kabundungulu": [
+  {
+   "id": "ambundu_kabundungulu-revive-the-slain",
+   "name": "Revives his slain twin from his bones",
+   "notes": "When the life-tree (kilembe) withered, signalling Sudika-Mbambi's death, Kabundungulu travelled to recover and restore his brother to life.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heli Chatelain, Folk-Tales of Angola (1894), 'Sudika-Mbambi'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ambundu_nzambi": [
+  {
+   "id": "ambundu_nzambi-speak-the-world",
+   "name": "Speaks the cosmos into being and then withdraws",
+   "notes": "As supreme creator Nzambi a Mpungu calls the world into existence and orders it, thereafter remaining remote (otiose), with daily affairs delegated to lesser spirits and the ancestors.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Karl Laman, The Kongo (1953-68); Alice Werner, Myths and Legends of the Bantu (1933)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "ambundu_nzambi-sustain-rain-health",
+   "name": "Holds ultimate authority over rainfall, life and health",
+   "notes": "Though distant, Nzambi remains the source of rain and of the life-force; petitions for these may be addressed to him even where mediation runs through the nkisi and ancestors.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Karl Laman, The Kongo (1953-68)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_beowulf": [
+  {
+   "id": "anglosaxon_beowulf-handgrip-thirty",
+   "name": "Hand-grip with the strength of thirty men",
+   "term": {
+    "value": "þritiges manna mægencræft",
+    "script": "Latn",
+    "rom": "thritiges manna maegencraeft"
+   },
+   "notes": "The poet says Beowulf had in his hand-grip the strength of thirty men (lines 379-381), the power with which he tore off Grendel's arm.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 379-381"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "anglosaxon_beowulf-swim-feat",
+   "name": "Endures days swimming the sea in mail among sea-monsters",
+   "notes": "In the boyhood swimming contest with Breca he is borne by the waves, slays nine niceras (sea-beasts) with his sword, and comes ashore in Finland (ll. 506-581).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 506-581 (Unferth flyting and Beowulf's reply)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_hygd": [
+  {
+   "id": "anglosaxon_hygd-weave-peace",
+   "name": "Weaves peace and dispenses treasure as queen of the Geats",
+   "notes": "Daughter of Hæreth, she is the model young queen — wise, gracious, free-handed with gifts to the hall — set against the cautionary tyrant-queen Modthryth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 1925-1962 (Hygd and the Modthryth digression)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "anglosaxon_hygd-offer-throne",
+   "name": "Offers Beowulf the throne over her own son",
+   "notes": "After Hygelac's death Hygd offers Beowulf the hoard and kingdom, doubting her young son Heardred could hold it against foreign foes; Beowulf declines and supports Heardred.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2369-2376"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_hygelac": [
+  {
+   "id": "anglosaxon_hygelac-lord-ringgiver",
+   "name": "Lord and ring-giver of the Geats, uncle and patron of Beowulf",
+   "notes": "King of the Geats who rewards Beowulf with land, a hall and a great heirloom sword after the Grendel exploits; his maternal kinship to Beowulf grounds the hero's loyalty.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2190-2199"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "anglosaxon_hygelac-frisian-raid",
+   "name": "Leads the fatal raid on the Frisian/Frankish coast",
+   "notes": "His historically anchored raid (the Chlochilaicus expedition, c. 516-521 CE) ends in his death; Beowulf escapes by swimming home with thirty war-corslets.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Gregory of Tours, Decem Libri Historiarum (History of the Franks) III.3; Beowulf, ll. 1202-1214, 2354-2366"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_haethcyn": [
+  {
+   "id": "anglosaxon_haethcyn-kinslaying",
+   "name": "Accidentally slays his elder brother Herebeald with a misaimed shaft",
+   "notes": "The unintended kin-slaying of Herebeald brings his father Hrethel to fatal grief, a sorrow likened to a father's for a hanged son.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2435-2443"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_heardred": [
+  {
+   "id": "anglosaxon_heardred-shelter-exiles",
+   "name": "Shelters the Swedish exiles Eanmund and Eadgils, drawing Onela's war",
+   "notes": "As young king of the Geats under Beowulf's regency, his harbouring of the rebel Scylfing princes brings the Swedish king Onela down on him; he is killed and Beowulf succeeds.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2379-2390"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_nithhad": [
+  {
+   "id": "anglosaxon_nithhad-capture-smith",
+   "name": "Captures and hamstrings the smith Wayland, forcing him to forge",
+   "notes": "Níðhad seizes the master-smith, has his sinews cut to hobble him, and sets him to work on an island — the act Wayland avenges.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Deor, ll. 1-13; Völundarkviða (Poetic Edda)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_ecgtheow": [
+  {
+   "id": "anglosaxon_ecgtheow-slay-heatholaf",
+   "name": "Slays Heatholaf of the Wylfings and is sheltered by Hrothgar",
+   "notes": "His killing of Heatholaf begins a feud; the Danish king Hrothgar receives him and settles it with wergild, founding the bond of gratitude Beowulf later repays.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 459-472"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_widia": [
+  {
+   "id": "anglosaxon_widia-deliver-theodric",
+   "name": "Delivers Theodric from the giants in Widsith",
+   "notes": "In Widsith, Wudga (Widia) and his companion Hama win renown; later tradition makes him a champion of the Dietrich/Þiðrekr cycle who wields his father's sword Mimming.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Widsith, ll. 124-130; Waldere fragment II"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_wiglaf": [
+  {
+   "id": "anglosaxon_wiglaf-stand-by-king",
+   "name": "Alone stands by Beowulf against the dragon",
+   "notes": "When the other retainers flee, the young Wægmunding Wiglaf goes into the fire to aid his lord, helps deal the dragon its death-wound, and receives Beowulf's dying words and bequest.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2602-2660, 2809-2820"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_eostre": [
+  {
+   "id": "anglosaxon_eostre-spring-feasts",
+   "name": "Receives feasts in her month at the turn of spring",
+   "notes": "Bede records that feasts were held in her honour in Eosturmonath (≈April), the month later lending its name to the Paschal season.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Bede, De temporum ratione (725 CE), ch. 15 'De mensibus Anglorum'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "anglosaxon_frig": [
+  {
+   "id": "anglosaxon_frig-preside-marriage",
+   "name": "Presides over love, marriage and the bonds of the household",
+   "notes": "Reconstructed from her Norse cognate Frigg and her survival in Frīgedæg (Friday) and place-names; chief goddess of married love and the home.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Philip A. Shaw, Pagan Goddesses in the Early Germanic World: Eostre, Hreda and the Cult of Matrons (2011)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "arabian_al_uzza": [
+  {
+   "id": "arabian_al_uzza-grant-victory",
+   "name": "Grants victory and protection in war",
+   "notes": "Invoked by the Quraysh as a war-protector; at Uhud the cry 'We have al-'Uzza and you have no 'Uzza' is reported, and she was sought for aid in battle.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam (Book of Idols); Ibn Hisham, Sira (Battle of Uhud)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "arabian_al_uzza-receive-oracle",
+   "name": "Delivers oracular communications at her shrine",
+   "notes": "At the sanctuary of Buss in the valley of Hurad at Nakhlah, the people received oracular responses from her.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam (Book of Idols)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "arabian_allat": [
+  {
+   "id": "arabian_allat-send-rain-fertility",
+   "name": "Grants rain, fertility and the abundance of the earth",
+   "notes": "As a great mother-goddess of the harvest she was petitioned for fertility and prosperity across pre-Islamic Arabia.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. F. Healey, The Religion of the Nabataeans (2001); Ibn al-Kalbi, Kitab al-Asnam"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "arabian_allat-shelter-the-haram",
+   "name": "Shelters petitioners within her inviolable sanctuary",
+   "notes": "Her haram at al-Ta'if was a place of refuge where bloodshed and hunting were forbidden within its bounds.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam (Book of Idols)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "arabian_antara": [
+  {
+   "id": "arabian_antara-prowess-battle",
+   "name": "Peerless prowess in single combat and the charge",
+   "notes": "Celebrated for breaking enemy lines lance and sword in hand from horseback; his Mu'allaqa boasts of plunging into the thick of battle and emerging victorious.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "The Mu'allaqa of 'Antara ibn Shaddad (in the Mu'allaqat)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "arabian_antara-poetic-eloquence",
+   "name": "Mastery of heroic and amatory verse",
+   "notes": "Composer of one of the seven Mu'allaqat, weaving valor with his love for 'Abla; his ode is a canonical model of pre-Islamic eloquence.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "The Mu'allaqa of 'Antara ibn Shaddad"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "arabian_hatim_al_tai": [
+  {
+   "id": "arabian_hatim_al_tai-boundless-generosity",
+   "name": "Boundless hospitality and self-sacrificing generosity",
+   "notes": "The proverbial paragon of Arab jud (generosity): when caught without provisions for a guest, he slaughters his own prized horse to feed him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kitab al-Aghani (al-Isfahani); Encyclopaedia Iranica, 'Hatem Ta'i'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "arabian_hatim_al_tai-generosity-beyond-death",
+   "name": "Hospitality that continues even from beyond the grave",
+   "notes": "In the famous tale, travellers who jokingly claim his hospitality at his tomb are fed when one of their camels sickens and must be slaughtered, and the maidens of his grave are heard mourning.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Alf Layla wa-Layla (The Thousand and One Nights), 'Hatim of the tribe of Tayy'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "arabian_adi_ibn_hatim": [
+  {
+   "id": "arabian_adi_ibn_hatim-lead-tayy",
+   "name": "Leads the tribe of Tayyi' across the coming of Islam",
+   "notes": "Inheriting his father's leadership, he held the chieftaincy and the customary fourth-share of raid spoils before converting to Islam in 9 AH and becoming a Companion.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ibn Sa'd, Kitab al-Tabaqat al-Kabir; Ibn Hisham, Sira"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "arabian_adi_ibn_hatim-collect-sadaqa",
+   "name": "Appointed by Muhammad to collect the alms of Tayyi' and Banu Asad",
+   "notes": "After conversion the Prophet entrusted him with gathering the sadaqa (zakat) of his people; he later fought in the Ridda wars and the conquests of Iraq.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ibn Sa'd, Kitab al-Tabaqat al-Kabir"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "apache_white_painted_woman": [
+  {
+   "id": "apache_white_painted_woman-survive-flood",
+   "name": "Survives the world-flood sealed in an abalone shell",
+   "notes": "White Painted Woman rides out the primordial flood inside an abalone (or other) shell, then climbs a mountain where the Sun impregnates her.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Morris E. Opler, An Apache Life-Way (1941); Myths and Tales of the Chiricahua Apache Indians (1942)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "apache_child_of_the_water": [
+  {
+   "id": "apache_child_of_the_water-pass-suns-tests",
+   "name": "Endures the Sun's ordeals to be acknowledged as his son",
+   "notes": "Travelling to his father the Sun, Child of the Water survives tests of fire, cold and arrows and is given power and weapons against the monsters.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Morris E. Opler, Myths and Tales of the Chiricahua Apache Indians (1942)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "andamanese_maia_lircitmo": [
+  {
+   "id": "andamanese_maia_lircitmo-steal-fire",
+   "name": "Steals fire from the sleeping creator and brings it to the ancestors",
+   "notes": "The Kingfisher (Maia, 'Sir') takes a brand from Bilik (or from the camp of the dead) while he sleeps; struck by the brand Bilik hurls, he is scorched on the neck but delivers fire to the people at Wota-emi.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. R. Radcliffe-Brown, The Andaman Islanders (1922), ch. on myths and legends"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "andamanese_tarai": [
+  {
+   "id": "andamanese_tarai-breathe-the-monsoon",
+   "name": "Sends the south-west monsoon with his heavy breathing",
+   "notes": "Tarai, long-legged and short-bodied, lives on a (now-submerged) island; when he sleeps his deep breaths make the wind of the wet-season monsoon.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. R. Radcliffe-Brown, The Andaman Islanders (1922)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "andamanese_tomo": [
+  {
+   "id": "andamanese_tomo-teach-the-arts",
+   "name": "Receives and teaches the arts of living to the first people",
+   "notes": "As the first man, Tomo is taught by the creator how to make fire, hunt, fish and build, and passes these arts to his descendants, the ancestors of the present race.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "E. H. Man, On the Aboriginal Inhabitants of the Andaman Islands (1883); A. R. Radcliffe-Brown, The Andaman Islanders (1922)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "arabian_hubal": [
+  {
+   "id": "arabian_hubal-arrow-divination",
+   "name": "Answer petitions by the casting of divining-arrows",
+   "term": {
+    "value": "الأزلام",
+    "script": "Arabic",
+    "rom": "al-azlām"
+   },
+   "notes": "Seven headless divining-arrows (qidāḥ / azlām) were cast by the sanctuary-keeper before Hubal's image to resolve questions of lineage, marriage, travel, blood-money and the dead; the direction of the drawn arrow gave the god's verdict.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam (The Book of Idols)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "arabian_hubal-grant-victory",
+   "name": "Grant the Quraysh fortune and victory in war",
+   "notes": "Hubal was invoked as the war-tutelary of the Quraysh; at the Battle of Uhud the Meccan leader Abu Sufyan is reported to have exalted Hubal as the giver of their success.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn Hisham, al-Sira al-Nabawiyya (the Battle of Uhud, 'Exalt Hubal!')"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "arabian_imru_al_qais": [
+  {
+   "id": "arabian_imru_al_qais-poetic-mastery",
+   "name": "Master the qasida and the imagery of the desert ode",
+   "notes": "Imru' al-Qais is held in the Arabic tradition to be the originator and supreme exemplar of the qasida form, his Mu'allaqa ('Let us halt and weep') ranking first of the seven Suspended Odes for its erotic, equestrian and storm imagery.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Abu al-Faraj al-Isfahani, Kitab al-Aghani; Arberry, The Seven Odes (1957)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "armenian_shamiram": [
+  {
+   "id": "armenian_shamiram-master-builder",
+   "name": "Raise cities, palaces and waterworks by command",
+   "notes": "In Khorenatsi's account Shamiram (Semiramis), enthralled by the land of Van, ordered a great city (Shamiramakert) built on the lake-shore with palaces, baths, gardens and an aqueduct/canal bringing fresh water, employing a multitude of workmen.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Movses Khorenatsi, History of the Armenians 1.16"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aymara_inti": [
+  {
+   "id": "aymara_inti-warm-and-quicken",
+   "name": "Warm the earth and give light to the living",
+   "notes": "As Tata Inti the Sun gives the warmth and light on which highland agriculture and life depend, his daily return greeted at the June-solstice Willkakuti.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Bernabé Cobo, Historia del Nuevo Mundo (1653)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aymara_tunupa": [
+  {
+   "id": "aymara_tunupa-wander-and-civilize",
+   "name": "Wander among men teaching law, craft and right worship",
+   "notes": "Tunupa (Tarapaca) journeys through the Collao as a civilizing preacher, rewarding and punishing the peoples and instituting moral and ritual order before being persecuted and cast adrift on Lake Titicaca; the chroniclers merge him with Viracocha.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Joan de Santa Cruz Pachacuti Yamqui, Relación de antigüedades deste reyno del Pirú (c. 1613)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aztec_centeotl": [
+  {
+   "id": "aztec_centeotl-quicken-maize",
+   "name": "Quicken and ripen the maize through its growth",
+   "notes": "Centeotl embodies the maize plant from seed-corn through the ripening ear; the young-maize feasts of Huey Tozoztli and Xilonen's rites secured the crop he personified.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 2"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aztec_coyolxauhqui": [
+  {
+   "id": "aztec_coyolxauhqui-incite-fratricide",
+   "name": "Rouse her brothers to assault Coatepec",
+   "notes": "Coyolxauhqui leads her four-hundred brothers, the Centzonhuitznahua, in the attack upon their mother Coatlicue at Coatepec, only to be slain and dismembered by the new-born Huitzilopochtli — the myth re-enacted at the Templo Mayor.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 3 (the birth of Huitzilopochtli)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aztec_mayahuel": [
+  {
+   "id": "aztec_mayahuel-suckle-the-rabbits",
+   "name": "Suckle the gods of drink from her four-hundred breasts",
+   "notes": "Mayahuel nourishes her offspring the Centzon Totochtin ('Four Hundred Rabbits'), the pulque-gods of intoxication, from her many breasts with the fermented maguey-sap; transformed by Quetzalcoatl into the maguey she yields its sweet sap.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Histoyre du Mechique (Garibay); Codex Magliabechiano"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aztec_mictecacihuatl": [
+  {
+   "id": "aztec_mictecacihuatl-guard-the-bones",
+   "name": "Guard the bones of the dead in Mictlan",
+   "notes": "With Mictlantecuhtli she keeps the ancestral bones from which humankind is remade; she presides over the souls of those who die of sickness and over the feasts of the dead.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Books 3 and 6"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aztec_mictlantecuhtli": [
+  {
+   "id": "aztec_mictlantecuhtli-yield-the-bones",
+   "name": "Yield (and contest) the bones for the making of humankind",
+   "notes": "Quetzalcoatl must descend to Mictlan to win from Mictlantecuhtli the ancestral bones; the death-lord sets traps and tricks to keep them, and from the bones the gods grind the present race of men.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Leyenda de los Soles (1558); Histoyre du Mechique"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "armenian_tsovinar": [
+  {
+   "id": "armenian_tsovinar-loose-the-storm",
+   "name": "Drive rain, hail and lightning from the clouds",
+   "term": {
+    "value": "Ծովինար",
+    "script": "Armenian",
+    "rom": "Covinar"
+   },
+   "notes": "In the Armenian water-goddess tradition Tsovinar (Nar) is a fierce storm-power who forces rain and hail from heaven and is the personification of thunder and lightning; folklorists describe her riding through the clouds and creating thunderstorms.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Manuk Abeghian, on Armenian folk belief; Russell, Zoroastrianism in Armenia (1987)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "armenian_tsovinar-sea-conception",
+   "name": "Conceive without man by drinking the sea-spring",
+   "notes": "In the Daredevils of Sassoun, Tsovinar drinks a handful and a half from the marine Milk-Fountain (Katnaghbyur) and so conceives, without a human father, the twin heroes Sanasar and Baghdasar.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sasna Tsřer (Daredevils of Sassoun), Cycle 1"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aztec_tlaltecuhtli": [
+  {
+   "id": "aztec_tlaltecuhtli-devour-blood",
+   "name": "Devour blood and the dead to renew the earth",
+   "term": {
+    "value": "Tlāltēuctli",
+    "script": "Latn",
+    "rom": "Tlaltecuhtli"
+   },
+   "notes": "Insatiable earth-monster who must be sated with human hearts and blood lest she withhold the earth's bounty and the crops fail.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aztec_tonatiuh": [
+  {
+   "id": "aztec_tonatiuh-rule-east",
+   "name": "Rule the east and the daytime sky as lord of warriors",
+   "term": {
+    "value": "Tōnatiuh",
+    "script": "Latn",
+    "rom": "Tonatiuh"
+   },
+   "notes": "Solar deity governing the cardinal east, into whose paradise fallen warriors and sacrificed captives ascend as escorts of the sun.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Read & González, Mesoamerican Mythology"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aztec_xipe_totec": [
+  {
+   "id": "aztec_xipe_totec-patron-goldsmiths",
+   "name": "Patronize goldsmiths and the working of precious metal",
+   "term": {
+    "value": "Xīpe Totēc",
+    "script": "Latn",
+    "rom": "Xipe Totec"
+   },
+   "notes": "Tutelary god of the metalworkers' guild; the golden flayed skin he wears is read as the gilding of the goldsmith's craft.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Sahagún, Florentine Codex, Book 1"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "aztec_xipe_totec-patron-gladiatorial",
+   "name": "Preside over gladiatorial (striping) sacrifice",
+   "term": {
+    "value": "tlāhuāhuanaliztli",
+    "script": "Latn",
+    "rom": "tlahuahuanaliztli"
+   },
+   "notes": "Patron of the gladiatorial combat in which a tethered captive fought armed warriors at the festival Tlacaxipehualiztli.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 2 (Tlacaxipehualiztli)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "aztec_xochiquetzal": [
+  {
+   "id": "aztec_xochiquetzal-patron-pleasure",
+   "name": "Govern flowers, beauty, sexual pleasure and love",
+   "term": {
+    "value": "Xōchiquetzal",
+    "script": "Latn",
+    "rom": "Xochiquetzal"
+   },
+   "notes": "Goddess of flowers, female sexual power, pleasure and youthful beauty, attended by butterflies and birds.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "babalu_aye": [
+  {
+   "id": "babalu_aye-control-pestilence",
+   "name": "Send and withdraw plague at will",
+   "term": {
+    "value": "Ṣọ̀pọ̀nná",
+    "script": "Latn",
+    "rom": "Sopona"
+   },
+   "notes": "As the Yoruba lord of smallpox and epidemic disease, he both looses and stays pestilence; in one legend he swept sesame seeds into the air to create fever and smallpox.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Idowu, Olódùmarè: God in Yoruba Belief"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "balinese_batara_guru": [
+  {
+   "id": "balinese_batara_guru-cosmic-order",
+   "name": "Uphold cosmic order from Mount Meru as king of the gods",
+   "term": {
+    "value": "Bhaṭāra Guru",
+    "script": "Latn",
+    "rom": "Batara Guru"
+   },
+   "notes": "As the Balinese-Javanese form of Shiva (Rudra), he rules the heaven Kahyangan and oversees the order of the three worlds.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hooykaas, Cosmogony and Creation in Balinese Tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "balinese_dewi_danu": [
+  {
+   "id": "balinese_dewi_danu-crater-lake",
+   "name": "Rule Lake Batur as the source of Bali's rivers and springs",
+   "term": {
+    "value": "Dewi Danu",
+    "script": "Latn",
+    "rom": "Dewi Danu"
+   },
+   "notes": "Lake-goddess from whom the island's irrigation water flows; in myth she rose from the crater lake and poured sacred water from a golden jug to revive the parched land.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lansing, Priests and Programmers: Technologies of Power in the Engineered Landscape of Bali"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "balinese_rangda": [
+  {
+   "id": "balinese_rangda-devour-children",
+   "name": "Devour children and prey on the newborn",
+   "term": {
+    "value": "Rangda",
+    "script": "Latn",
+    "rom": "Rangda"
+   },
+   "notes": "Child-eating demon-queen who threatens infants and the unborn, balanced eternally against the protective Barong.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Belo, Bali: Rangda and Barong"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "balinese_sedana": [
+  {
+   "id": "balinese_sedana-grant-fortune",
+   "name": "Grant gold, silver, money and good fortune to traders",
+   "term": {
+    "value": "Rambut Sedana",
+    "script": "Latn",
+    "rom": "Rambut Sedana"
+   },
+   "notes": "God of wealth (dana = wealth/money) revered by merchants and businessmen, equated with the prosperity of Lakshmi; consort of Dewi Sri.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Eiseman, Bali: Sekala and Niskala"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bambara_ndomadyiri": [
+  {
+   "id": "bambara_ndomadyiri-separate-things",
+   "name": "Separate and distinguish things, giving creation its order",
+   "term": {
+    "value": "Ndomadyiri",
+    "script": "Latn",
+    "rom": "Ndomadyiri"
+   },
+   "notes": "Heavenly blacksmith whose principal task is to part and define beings, rendering the thought of creation into an articulate order.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dieterlen, Essai sur la religion bambara"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bambara_mousso_koroni": [
+  {
+   "id": "bambara_mousso_koroni-first-sorcerer",
+   "name": "Work the first sorcery as the original mistress of magic",
+   "term": {
+    "value": "Muso Koroni",
+    "script": "Latn",
+    "rom": "Muso Koroni"
+   },
+   "notes": "Reckoned the first sorcerer; in her jealousy she planted Pemba in the earth and roamed the world sowing wanzo, the feminine force of impurity later excised from the body in circumcision.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dieterlen, Essai sur la religion bambara"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "bambara_mousso_koroni-introduce-death",
+   "name": "Introduce disorder, illness and death to humankind",
+   "term": {
+    "value": "Muso Koroni Koundyé",
+    "script": "Latn",
+    "rom": "Muso Koroni Kundye"
+   },
+   "notes": "Wandering the world she brought confusion, sickness and mortality, the disordering counterpart to Faro's ordering of creation.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Zahan, The Bambara"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "banyaruanda_imana": [
+  {
+   "id": "banyaruanda_imana-bestow-fortune",
+   "name": "Bestow good fortune, fertility and children as Habyarimana",
+   "term": {
+    "value": "Imana",
+    "script": "Latn",
+    "rom": "Imana"
+   },
+   "notes": "Sole giver of offspring and prosperity; his 'very long arms' reach down to rescue and bless even where he remains remote from daily cult.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maquet, The Premise of Inequality in Ruanda"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "banyaruanda_nkuba": [
+  {
+   "id": "banyaruanda_nkuba-hurl-lightning",
+   "name": "Hurl the thunderbolt as King of the Sky",
+   "term": {
+    "value": "Nkuba",
+    "script": "Latn",
+    "rom": "Nkuba"
+   },
+   "notes": "The Lightning, titled Umwami wo Hejuru ('King of the Sky'), celestial sovereign and apex of the Ibimanuka royal ancestry.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "basque_basajaun": [
+  {
+   "id": "basque_basajaun-first-agriculture",
+   "name": "Keep the secret of cereal cultivation as the first farmer",
+   "term": {
+    "value": "Basajaun",
+    "script": "Latn",
+    "rom": "Basajaun"
+   },
+   "notes": "The forest lords first knew how to sow wheat and the calendar of planting; the trickster San Martin Txiki stole the secret of grain, the saw and iron-soldering from them for humankind.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "basque_aatxe": [
+  {
+   "id": "basque_aatxe-enforce-mari",
+   "name": "Enforce the will of Mari, punishing cheats and wrongdoers",
+   "term": {
+    "value": "Aatxe",
+    "script": "Latn",
+    "rom": "Aatxe"
+   },
+   "notes": "Read as an agent or guise of the goddess Mari, the red bull-spirit punishes criminals and those who defraud her.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "basque_eguzki": [
+  {
+   "id": "basque_eguzki-return-to-earth",
+   "name": "Return nightly through the red seas into the Earth-mother's womb",
+   "term": {
+    "value": "Eguzki",
+    "script": "Latn",
+    "rom": "Eguzki"
+   },
+   "notes": "Daughter of Amalur, the Sun sinks each evening through Itxasgorrieta ('the reddish seas') back into the earth from which she is reborn.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "basque_sugaar": [
+  {
+   "id": "basque_sugaar-storm-bringer",
+   "name": "Joins Mari in the mountains to breed storms and hail",
+   "term": {
+    "value": "ekaitza",
+    "script": "Latn",
+    "rom": "ekaitza"
+   },
+   "notes": "Their periodic Friday meetings in the heights generate the bad weather of the Basque country.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, José Miguel de (1972). Diccionario ilustrado de mitología vasca."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "basque_sugaar-sky-serpent",
+   "name": "Crosses the sky as a fiery serpent or sickle of fire",
+   "notes": "Seen as a luminous crescent or streak of fire (often as a falling comet) heralding tempest.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, José Miguel de (1972). Diccionario ilustrado de mitología vasca."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "basque_sugaar-sire-twins",
+   "name": "Sires the ambivalent brothers Atarrabi and Mikelatz",
+   "notes": "By Mari he fathers the benevolent Atarrabi and the malevolent Mikelatz, the moral dualism of Basque myth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hartsuaga, Juan Inazio (1987). Euskal mitologia konparatua."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buddhist_brahma_sahampati": [
+  {
+   "id": "buddhist_brahma_sahampati-request-dharma",
+   "name": "Beseeches the newly awakened Buddha to teach the Dharma",
+   "notes": "Kneeling with clasped hands he entreats the Buddha not to pass into silence but to turn the wheel of the Dhamma for beings 'with little dust in their eyes'.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Saṃyutta Nikāya 6.1, Āyācana Sutta (Brahmā's Request)."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "berber_gurzil": [
+  {
+   "id": "berber_gurzil-bull-war",
+   "name": "Leads the Laguatan war-host in the form of a bull",
+   "notes": "At Antonia Castra (546 CE) the Laguatan loosed a bull embodying Gurzil before the line to rout the Byzantines.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Corippus, Iohannis, books V–VIII."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "berber_anti": [
+  {
+   "id": "berber_anti-earth-strength",
+   "name": "Renews his strength each time he touches his mother Earth",
+   "notes": "Unbeatable while in contact with the ground; Heracles defeats him only by hoisting him aloft.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 2.5.11."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "berber_anti-deadly-wrestling",
+   "name": "Forces all passing strangers into a wrestling match to the death",
+   "notes": "Roofs the temple of his father Poseidon with the skulls of those he kills.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Isthmian 4."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bemba_lesa": [
+  {
+   "id": "bemba_lesa-rain-thunder",
+   "name": "Sends the rain and speaks in the thunder",
+   "notes": "Lesa controls the rains and the fertilizing power; collective rituals address him chiefly in severe drought.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Richards, Audrey I. (1939). Land, Labour and Diet in Northern Rhodesia."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "bemba_lesa-creative-power",
+   "name": "Sets the creative power in the roots and shrubs used for medicine and ritual",
+   "notes": "He is the immanent source of efficacy in the herbs of healing and the relics of office.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Richards, Audrey I. (1969). Bemba religion (in African Systems of Thought, ed. Fortes & Dieterlen)."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bemba_chitimukulu": [
+  {
+   "id": "bemba_chitimukulu-migration",
+   "name": "Leads the bena ng'andu out of Luba country to found the Bemba paramountcy",
+   "notes": "The crocodile-clan migration legend traces the chieftainship from the founding siblings to him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roberts, Andrew D. (1973). A History of the Bemba."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "bemba_chitimukulu-succeed-mipashi",
+   "name": "Succeeds to the mipashi (guardian spirits) of his matrilineal ancestors",
+   "notes": "At installation he inherits the ancestral spirits whose power over the land passes through the babenye relics.",
+   "inheritability": "partial",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Richards, Audrey I. (1969). Bemba religion."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "blackfoot_napi": [
+  {
+   "id": "blackfoot_napi-shape-world",
+   "name": "Shapes the land, the animals and the first people",
+   "notes": "Old Man moulds mountains, rivers, buffalo and the first man and woman, then tests how they shall live.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "blackfoot_napi-teach-custom",
+   "name": "Teaches the people which foods to eat and instituted their customs",
+   "notes": "Culture-bringer who fixes the rules of living before departing westward, promising to return.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "blackfoot_napi-trickster",
+   "name": "Plays the foolish, greedy trickster whose schemes rebound on him",
+   "notes": "At once powerful maker and comic blunderer in the Old Man tales.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "blackfoot_natosi": [
+  {
+   "id": "blackfoot_natosi-rule-sky",
+   "name": "Rules as chief of the Sky Beings and giver of light and warmth",
+   "notes": "Naato'si, 'the Holy One', is the supreme power and ruler of the world.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "blackfoot_natosi-grant-power",
+   "name": "Grants visions, war-medicine and the Sun Dance to those who sacrifice to him",
+   "notes": "The annual Medicine Lodge (Sun Dance) and self-sacrifice of flesh are offered to obtain his power.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "McClintock, Walter (1910). The Old North Trail."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "blackfoot_kokomikisomm": [
+  {
+   "id": "blackfoot_kokomikisomm-night-light",
+   "name": "Gives light to the night as wife of the Sun",
+   "notes": "Ko'komiki'somm, 'night light', second-eldest of the Sky Beings.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "blackfoot_kokomikisomm-mother-stars",
+   "name": "Mothers the stars, foremost the Morning Star",
+   "notes": "With Naato'si she bears the stars, chief among them Ipi'sowaahs (Morning Star).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "blackfoot_aisoyimstan": [
+  {
+   "id": "blackfoot_aisoyimstan-bring-winter",
+   "name": "Brings the cold, snow, frost and blizzard down from the north",
+   "notes": "The Cold Maker, personification of winter, opposed to the warmth of the Sun.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1913). Blackfeet Indian Stories ('Cold Maker's Medicine')."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "blackfoot_poia": [
+  {
+   "id": "blackfoot_poia-bring-sundance",
+   "name": "Brings the Sun Dance and its teachings from the Sky Country to the Blackfoot",
+   "notes": "Sent back by the Sun, Scarface (Poia) instructs the people in the Medicine Lodge ceremony, his facial scar removed as a sign.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales ('Scarface; Origin of the Medicine Lodge')."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "blackfoot_wind_maker": [
+  {
+   "id": "blackfoot_wind_maker-raise-wind",
+   "name": "Raises the wind by rolling the waves of the Upper St. Mary's Lake",
+   "notes": "An Under-Water Person dwelling beneath the lake's head; invoked with Thunder and Cold Maker.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bororo_bakororo": [
+  {
+   "id": "bororo_bakororo-west-souls",
+   "name": "Receives the souls of the dead at the western path",
+   "notes": "Culture-hero and lord of the western moiety; paired with Itubore of the east.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Crocker, Jon Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bororo_itubore": [
+  {
+   "id": "bororo_itubore-east-souls",
+   "name": "Receives the souls of the dead at the eastern path",
+   "notes": "Culture-hero and lord of the eastern moiety; paired with Bakororo of the west.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Crocker, Jon Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buddhist_arati": [
+  {
+   "id": "buddhist_arati-personify-aversion",
+   "name": "Personifies Aversion (discontent) among the daughters of Mara",
+   "notes": "Arati ('aversion/discontent'), with Taṇhā and Rāgā, is sent to break the Buddha's resolve.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Saṃyutta Nikāya 4.25, Māradhītu Sutta (Māra's Daughters)."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buddhist_dhrtarastra": [
+  {
+   "id": "buddhist_dhrtarastra-harmonize",
+   "name": "Harmonizes the world and quells discord with his lute",
+   "notes": "His pipa embodies the Middle Way: strings neither too taut nor too slack.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Soothill & Hodous (1937). A Dictionary of Chinese Buddhist Terms, s.v. 四天王 / 持國天."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bicolano_oryol": [
+  {
+   "id": "bicolano_oryol-reveal-secrets",
+   "name": "Reveals to Handyong the secrets of the monsters and of governing the land",
+   "notes": "Once subdued by love, the serpent-enchantress turns ally and teaches Handyong how to civilize Ibalong.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Espinas, Merito B. (1996). Ibalong: The Bikol Folk Epic-Fragment."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bicolano_handyong": [
+  {
+   "id": "bicolano_handyong-clear-monsters",
+   "name": "Clears Ibalong of its monsters with his warriors",
+   "notes": "Second of the Ibalong heroes, he subdues the one-eyed Gugurang's foes, the wild beasts and the serpents.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Espinas, Merito B. (1996). Ibalong: The Bikol Folk Epic-Fragment."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "bicolano_handyong-institute-arts",
+   "name": "Institutes laws, agriculture, the plough, the boat and writing",
+   "notes": "The Bicolano culture-bringer who founds civilized life after the wars.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Espinas, Merito B. (1996). Ibalong: The Bikol Folk Epic-Fragment."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bicolano_gugurang": [
+  {
+   "id": "bicolano_gugurang-keep-fire",
+   "name": "Keeps the sacred fire of creation within Mount Mayon",
+   "notes": "The supreme benevolent god guards the divine fire (the knowledge and power of the gods) in Mayon's crater.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "bicolano_gugurang-eruption-justice",
+   "name": "Sends eruptions of Mayon to punish wrongdoing",
+   "notes": "When mortals sin, or when Asuang threatens his fire, he answers with volcanic fire.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "batak_si_boru_deak_parujar": [
+  {
+   "id": "batak_si_boru_deak_parujar-weave-textile",
+   "name": "Weaves the ulos ragidup, the textile of life",
+   "notes": "Skilled spinner-weaver; in the myth she weaves the sacred ulos and descends on her own spun thread.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "batak_batara_guru": [
+  {
+   "id": "batak_batara_guru-teach-order",
+   "name": "Teaches gods and humans wisdom and cosmic order",
+   "notes": "Eldest of the Debata na Tolu, patron of knowledge and culture; the Batak hold him dearest of the three.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "batak_batara_guru-father-creatrix",
+   "name": "Fathers Si Boru Deak Parujar who fashions the earth",
+   "notes": "Through his daughter the dry land is spread on the primeval sea.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "batak_soripada": [
+  {
+   "id": "batak_soripada-preserve",
+   "name": "Preserves and maintains the cosmos and its purity",
+   "notes": "Second of the trinity, of the middle world; likened to the preserver principle.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "batak_mangalabulan": [
+  {
+   "id": "batak_mangalabulan-dual-hand",
+   "name": "Grants virtue by the right hand and wrongdoing by the left",
+   "notes": "The dual-natured god of the lower world; descent into darkness and return to light.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "batak_mula_jadi_na_bolon": [
+  {
+   "id": "batak_mula_jadi_na_bolon-beget-gods",
+   "name": "Brings forth the gods, the worlds and all that exists",
+   "notes": "The uncreated origin; his first work is the cosmic hen Manuk-manuk Hulambujati, whose three eggs hatch the Debata na Tolu.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bicolano_asuang": [
+  {
+   "id": "bicolano_asuang-bestow-aswang",
+   "name": "Bestows the dark gift of shape-shifting on his worshippers",
+   "notes": "From his mouth fly blackbirds that enter his followers, making them flesh-eating aswang of the night.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "bicolano_asuang-steal-fire",
+   "name": "Attempts to steal Gugurang's sacred fire from Mayon",
+   "notes": "His theft fails and he is sealed beneath Mount Malinao by Gugurang's thunderbolt.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bicolano_magindara": [
+  {
+   "id": "bicolano_magindara-voice-storm",
+   "name": "Summons or calms storms with her beautiful voice",
+   "notes": "The kind-hearted mermaid-sister, mistress of the sea's weather.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Espinas, Merito B. (1996). Ibalong: The Bikol Folk Epic-Fragment."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "bicolano_magindara-drown-sailors",
+   "name": "Lures sailors to drown them",
+   "notes": "Like the Ibalong mermaids she can draw the unwary into the deep.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Espinas, Merito B. (1996). Ibalong: The Bikol Folk Epic-Fragment."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "baule_nyamien": [
+  {
+   "id": "baule_nyamien-create-remote",
+   "name": "Creates the world, then remains remote and intangible above it",
+   "notes": "The Baule supreme creator (also named Alouroua) is inaccessible and never represented in art.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vogel, Susan Mullin (1997). Baule: African Art, Western Eyes."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "baule_asie": [
+  {
+   "id": "baule_asie-govern-earth",
+   "name": "Governs humans, animals and the life of the earth",
+   "notes": "Earth-god who controls living beings; the asye usu (bush spirits) belong to his domain.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vogel, Susan Mullin (1997). Baule: African Art, Western Eyes."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "baule_mbotumbo": [
+  {
+   "id": "baule_mbotumbo-guard-witchcraft",
+   "name": "Guards the living against witchcraft, epidemics and enemies",
+   "notes": "A men's-society amwin power whose aggressive monkey image wards off unseen dangers.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vogel, Susan Mullin (1997). Baule: African Art, Western Eyes."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "baule_mbotumbo-divine-mbra",
+   "name": "Serves men's societies in the mbra divination rite",
+   "notes": "The cup-bearing figure receives sacrifices and is consulted in agrarian and prophylactic ritual.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vogel, Susan Mullin (1997). Baule: African Art, Western Eyes."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bhil_bhagwan": [
+  {
+   "id": "bhil_bhagwan-create-pair",
+   "name": "Creates the first man and woman and starts the human race",
+   "notes": "The Bhil high god fashions the primal couple on the new earth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Koppers, Wilhelm (1948). Die Bhil in Zentralindien."
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "bhil_bhagwan-flood",
+   "name": "Sends and abates the world-flood, sparing the brother and sister with seeds",
+   "notes": "In the Bhil deluge the surviving pair float in a cage with seeds until the waters subside.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Koppers, Wilhelm (1948). Die Bhil in Zentralindien."
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buddhist_raga": [
+  {
+   "id": "buddhist_raga-allure-passion",
+   "name": "Inflame lust and passion in the beholder",
+   "term": {
+    "value": "राग",
+    "script": "Sanskrit (Devanāgarī)",
+    "rom": "rāga"
+   },
+   "notes": "As the personification of Passion/Attachment, she works the sensual lure against the meditator, the most basic distraction from the path.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Saṃyutta Nikāya, Dhītaro-sutta (SN 4.25)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buddhist_tanha": [
+  {
+   "id": "buddhist_tanha-rouse-craving",
+   "name": "Rouse craving and unquenchable thirst",
+   "term": {
+    "value": "तृष्णा",
+    "script": "Sanskrit (Devanāgarī)",
+    "rom": "tṛṣṇā"
+   },
+   "notes": "Eldest daughter of Māra, the jealous thirst for pleasure, existence and recognition that can never be satisfied; she leads the trio's attempt to seduce the Buddha.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Saṃyutta Nikāya, Dhītaro-sutta (SN 4.25)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buddhist_virudhaka": [
+  {
+   "id": "buddhist_virudhaka-cut-ignorance",
+   "name": "Cut through ignorance with the sword of wisdom",
+   "term": {
+    "value": "विरूढक",
+    "script": "Sanskrit (Devanāgarī)",
+    "rom": "virūḍhaka"
+   },
+   "notes": "His blade symbolises the wisdom that severs ignorance and quickens the roots of virtue ('Increase and Growth', the meaning of his name).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Four Heavenly Kings (Lokapāla) iconographic tradition; Cleveland Museum of Art Virudhaka relief"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buddhist_virupaksa": [
+  {
+   "id": "buddhist_virupaksa-all-seeing-eye",
+   "name": "See all things across the world with far-seeing eyes",
+   "term": {
+    "value": "विरूपाक्ष",
+    "script": "Sanskrit (Devanāgarī)",
+    "rom": "virūpākṣa"
+   },
+   "notes": "His name 'He of Misshapen/Broad Eyes' (Ch. 廣目, 'Broad Eye') marks his power to survey the world; his glance is said to be harmful, so he averts it to the stūpa he carries.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Four Heavenly Kings (Lokapāla) iconographic tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "bunyoro_ndahura": [
+  {
+   "id": "bunyoro_ndahura-conquer-kitara",
+   "name": "Conquer and reorganise the realm of Kitara",
+   "notes": "First fully realised Bacwezi ruler; remembered as the warrior who slew the usurper Bukuku and extended Kitara across Ankole, Buganda, Toro and Busoga.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bunyoro-Kitara oral tradition of the Bacwezi dynasty"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "bunyoro_ndahura-send-smallpox",
+   "name": "Send and lift epidemic smallpox",
+   "notes": "Venerated as Ndahura Atwooki, the embandwa spirit of smallpox and epidemics in the Kubandwa cult.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kubandwa (Cwezi) possession-cult tradition, interlacustrine Uganda"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buganda_wanema": [
+  {
+   "id": "buganda_wanema-sire-balubaale",
+   "name": "Father the great lubaale of the lake and of war",
+   "notes": "Ssese-island progenitor; father of Mukasa the lake-god, Kibuka the war-god, Musisi and Wamala, the lineage from which the principal Baganda gods came to the mainland.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "New Vision, 'Ssese Islands: the wealthy store for Buganda traditions'; Roscoe, The Baganda (1911)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "buganda_wanema-afflict-lameness",
+   "name": "Afflict and heal lameness and physical handicap",
+   "notes": "His name is connected with lameness; his Ssese shrine (Bukasa Island) was resorted to over crippling and bodily handicap.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Baganda balubaale tradition; Roscoe, The Baganda (1911)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buganda_katonda": [
+  {
+   "id": "buganda_katonda-judge-universe",
+   "name": "Judge mortals as the eternal king of the universe",
+   "notes": "Revered as father of the gods, the ever-present one and ultimate judge, standing above the balubaale.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roscoe, The Baganda (1911); Baganda traditional invocations to Katonda"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buganda_kawumpuli": [
+  {
+   "id": "buganda_kawumpuli-send-plague",
+   "name": "Send and withhold epidemic plague",
+   "notes": "Lubaale of plague among the balubaale; his medium was consulted to send or stay outbreaks of pestilence.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roscoe, The Baganda (1911); Kawumpuli plague-shrine tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "burmese_me_wunna": [
+  {
+   "id": "burmese_me_wunna-devour-flowers",
+   "name": "Live on the flowers of Mount Popa",
+   "notes": "The flower-eating ogress (belu) of Popa, whose appetite for the mountain's blossoms marks her as its indwelling mother-spirit.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Popa Medaw / Me Wunna nat tradition, Mount Popa"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "buganda_kintu": [
+  {
+   "id": "buganda_kintu-vanish-magonga",
+   "name": "Vanish without dying into the Magonga forest",
+   "notes": "Unlike later kabakas Kintu is said not to have died but to have disappeared into the forest at Magonga (Buddu); his hidden presence there underpins his standing as undying progenitor.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kintu cycle, Buganda; Magonga (Bukunja) tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "canaanite_resheph": [
+  {
+   "id": "canaanite_resheph-plague-arrows",
+   "name": "Loose plague-arrows that strike down the host",
+   "term": {
+    "value": "ršp",
+    "script": "Latn",
+    "rom": "Rashap"
+   },
+   "notes": "Resheph spreads pestilence and sudden death by shooting his arrows into a population; in Egypt he was likewise a god of plague and battle.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopaedia Britannica, s.v. 'Resheph'"
+    },
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Resheph'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "canaanite_resheph-war-protector",
+   "name": "Guard the warrior and the chariot in battle",
+   "notes": "Adopted in New Kingdom Egypt as a war-god and patron of horses and chariotry, invoked for protection by pharaohs such as Amenhotep II.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopaedia Britannica, s.v. 'Resheph'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "canaanite_kotharot": [
+  {
+   "id": "canaanite_kotharot-bless-marriage",
+   "name": "Bless the bridal bed and ensure conception",
+   "term": {
+    "value": "ktrt",
+    "script": "Latn",
+    "rom": "Kotharat"
+   },
+   "notes": "Invoked as a band (hbl) at the wedding of Nikkal and Yarikh in KTU 1.24 and at human weddings to secure a fruitful union and the birth of a son.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic text KTU 1.24 (Hymn of Nikkal and the Kotharat)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "canaanite_shapshu": [
+  {
+   "id": "canaanite_shapshu-see-all",
+   "name": "Behold all that passes on earth by daylight",
+   "term": {
+    "value": "špš",
+    "script": "Latn",
+    "rom": "Shapshu"
+   },
+   "notes": "As the eye of heaven the 'Torch of the Gods' surveys the whole world and so serves as witness, messenger of El, and arbiter of disputes among the gods.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic Baal Cycle (KTU 1.1-1.6)"
+    },
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Shapshu'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "cherokee_unelanuhi": [
+  {
+   "id": "cherokee_unelanuhi-apportion-time",
+   "name": "Apportion the day and measure out time",
+   "notes": "Her name Une'lanu'hi, 'the Apportioner', marks her as the divider of the day as she crosses the sky vault from east to west.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "James Mooney, Myths of the Cherokee (1900)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "cherokee_moon": [
+  {
+   "id": "cherokee_moon-mild-light",
+   "name": "Shed the mild light that humans smile upon",
+   "notes": "Crossing the night sky in the west, the Moon gives a gentle light at which his 'younger brothers' (humankind) smile, unlike the fierce glare of his sister the Sun.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "James Mooney, Myths of the Cherokee (1900), 'The Daughter of the Sun'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_change": [
+  {
+   "id": "chinese_change-immortal-moon",
+   "name": "Become an immortal and dwell on the moon",
+   "term": {
+    "value": "嫦娥",
+    "script": "Hani",
+    "rom": "Cháng'é"
+   },
+   "notes": "Having swallowed the elixir of immortality, Chang'e rises from the earth and takes up everlasting residence in the lunar palace.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Mid-Autumn Festival legend of Chang'e and Hou Yi (ChinaHighlights, TravelChinaGuide)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_caishen": [
+  {
+   "id": "chinese_caishen-bestow-wealth",
+   "name": "Bestow riches and ward off financial ruin",
+   "term": {
+    "value": "財神",
+    "script": "Hani",
+    "rom": "Cáishén"
+   },
+   "notes": "As the Military God of Wealth (Wu Caishen), Zhao Gongming dispenses prosperity and protects households and businesses from loss; petitioned especially at the Lunar New Year.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Caishen'; 'Zhao Gongming'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_diku": [
+  {
+   "id": "chinese_diku-seasonal-mounts",
+   "name": "Travel by dragon in spring and summer, by horse in autumn and winter",
+   "term": {
+    "value": "帝嚳",
+    "script": "Hani",
+    "rom": "Dì Kù"
+   },
+   "notes": "Sima Qian's Shiji records that after taking the throne Emperor Ku rode a dragon in the warm seasons and a horse in the cold, an emblem of his harmony with the cosmic order.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji, Annals of the Five Emperors"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_danzhu": [
+  {
+   "id": "chinese_danzhu-weiqi",
+   "name": "Reputed inventor of weiqi (the game of Go)",
+   "term": {
+    "value": "丹朱",
+    "script": "Hani",
+    "rom": "Dānzhū"
+   },
+   "notes": "Tradition holds that Yao devised the game of weiqi to instruct or occupy his unruly son Danzhu, making Danzhu the figure most associated with its origin.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Zhang Hua, Bowuzhi (Records of Diverse Matters), on the origin of weiqi"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chamorro_chaifi": [
+  {
+   "id": "chamorro_chaifi-forge-souls",
+   "name": "Forge souls from fire and command wind and water",
+   "term": {
+    "value": "Chaifi",
+    "script": "Latn",
+    "rom": "Chaifi"
+   },
+   "notes": "A blacksmith-creator dwelling in the fiery mountain Sasalaguan, Chaifi forges spirits out of fire and governs the elements of wind, water and flame.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Guampedia, 'Chaife's Lost Soul' (folktale)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chewa_chiuta": [
+  {
+   "id": "chewa_chiuta-bow-rainbow",
+   "name": "Span the sky as the great bow (rainbow)",
+   "term": {
+    "value": "Chiuta",
+    "script": "Latn",
+    "rom": "Chiuta"
+   },
+   "notes": "The name Chiuta means 'the great bow', identifying the high-god with the rainbow that arches over the earth and signals the gift of rain.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Nyau / Chewa cosmology (Wikipedia, 'Nyau'); A. Werner, Myths and Legends of the Bantu (1933)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_fuxi": [
+  {
+   "id": "chinese_fuxi-ordain-marriage",
+   "name": "Institute the rites of marriage",
+   "term": {
+    "value": "嫁娶",
+    "script": "Hant",
+    "rom": "jiàqǔ"
+   },
+   "notes": "Credited with regulating marriage and the giving of betrothal gifts (a pair of deerskins), establishing the institution of the family.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Birrell, Chinese Mythology: An Introduction"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "chinese_fuxi-invent-writing",
+   "name": "Replace knotted cords with the first written signs",
+   "term": {
+    "value": "書契",
+    "script": "Hant",
+    "rom": "shūqì"
+   },
+   "notes": "In the Xici commentary to the Yijing, Fuxi devised written tallies and the trigrams to replace government by knotted cords.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Yijing, Xici (Great Treatise) commentary"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_guanyin": [
+  {
+   "id": "chinese_guanyin-thousand-arms",
+   "name": "Manifest a thousand arms and eyes",
+   "term": {
+    "value": "千手千眼",
+    "script": "Hant",
+    "rom": "qiānshǒu qiānyǎn"
+   },
+   "notes": "The thousand-armed, thousand-eyed form arises from her vow to aid all beings at once; each hand bears a saving implement and an eye of compassion.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Nīlakaṇṭha Dhāraṇī / Qianshou jing (Thousand-Hand Sutra)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_houyi": [
+  {
+   "id": "chinese_houyi-receive-elixir",
+   "name": "Receive the elixir of immortality from the Queen Mother of the West",
+   "notes": "Granted the pill (or twin pills) of deathlessness by Xiwangmu after his labors; the elixir Chang'e then took to the moon.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Huainanzi, 'Lanming' chapter"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_gun": [
+  {
+   "id": "chinese_gun-build-dams",
+   "name": "Dam and dyke the floodwaters",
+   "term": {
+    "value": "堙",
+    "script": "Hant",
+    "rom": "yīn"
+   },
+   "notes": "Attempted to halt the Great Flood by piling up barriers with the self-swelling soil over nine years; the containment strategy failed where his son Yu's dredging succeeded.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shanhaijing, 'Hainei jing'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_huangdi": [
+  {
+   "id": "chinese_huangdi-four-faces",
+   "name": "Gaze on the four quarters with four faces",
+   "term": {
+    "value": "黃帝四面",
+    "script": "Hant",
+    "rom": "Huángdì sìmiàn"
+   },
+   "notes": "Tradition (cited in the Shizi and discussed in the Taiping Yulan) gives the Yellow Emperor four faces, by which he watched over all four directions of his realm at once.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Taiping Yulan, citing the Shizi"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "chinese_huangdi-defeat-chiyou",
+   "name": "Defeat Chiyou at Zhuolu",
+   "term": {
+    "value": "涿鹿之戰",
+    "script": "Hant",
+    "rom": "Zhuōlù zhī zhàn"
+   },
+   "notes": "Overcame the rebel Chiyou in the fog-bound battle of Zhuolu, aided by the south-pointing chariot and the drought-spirit Ba.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji, 'Annals of the Five Emperors'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_yao": [
+  {
+   "id": "chinese_yao-fix-calendar",
+   "name": "Order the calendar and the seasons",
+   "term": {
+    "value": "曆象日月",
+    "script": "Hant",
+    "rom": "lìxiàng rìyuè"
+   },
+   "notes": "Commissioned the Xi and He astronomer-officials to observe sun, moon and stars and to fix the seasons and the intercalary year.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shangshu (Book of Documents), 'Canon of Yao'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "chinese_yao-abdicate-to-merit",
+   "name": "Yield the throne to the worthy",
+   "term": {
+    "value": "禪讓",
+    "script": "Hant",
+    "rom": "shànràng"
+   },
+   "notes": "Passed the sovereignty to the commoner Shun after testing rather than to his own son Danzhu, the founding model of merit-based succession.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shangshu, 'Canon of Yao'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_yu_the_great": [
+  {
+   "id": "chinese_yu_the_great-channel-floods",
+   "name": "Tame the Great Flood by dredging the channels",
+   "term": {
+    "value": "疏導",
+    "script": "Hant",
+    "rom": "shūdǎo"
+   },
+   "notes": "Succeeded where his father Gun failed by cutting drainage channels to lead the waters to the sea, laboring thirteen years and passing his own door three times without entering.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shangshu, 'Yu gong' (Tribute of Yu)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "chinese_yu_the_great-divide-nine-provinces",
+   "name": "Divide the land into the Nine Provinces",
+   "term": {
+    "value": "九州",
+    "script": "Hant",
+    "rom": "jiǔzhōu"
+   },
+   "notes": "After draining the floods he surveyed and apportioned the realm into nine provinces with graded tribute.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shangshu, 'Yu gong'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_houji": [
+  {
+   "id": "chinese_houji-master-grains",
+   "name": "Make the hundred grains flourish",
+   "term": {
+    "value": "播百穀",
+    "script": "Hant",
+    "rom": "bō bǎigǔ"
+   },
+   "notes": "As a child he delighted in planting beans, gourds, hemp and grain that grew abundantly; appointed Minister of Agriculture, he taught the people sowing and reaping.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shijing, 'Shengmin' ode (Mao 245)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_leizu": [
+  {
+   "id": "chinese_leizu-invent-sericulture",
+   "name": "Discover the rearing of silkworms and the reeling of silk",
+   "term": {
+    "value": "養蠶",
+    "script": "Hant",
+    "rom": "yǎngcán"
+   },
+   "notes": "Discovered that the cocoon unwinds into thread and taught silkworm husbandry, reeling and weaving; honored as patron of sericulture.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Tongjian Gangmu / standard sericulture-origin tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_sun_wukong": [
+  {
+   "id": "chinese_sun_wukong-immense-strength",
+   "name": "Wield superhuman strength",
+   "notes": "Born of stone, he hefts the 13,500-jin iron pillar as a weapon and battles the hosts of Heaven single-handed.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Wu Cheng'en, Xiyouji (Journey to the West)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_zao_jun": [
+  {
+   "id": "chinese_zao_jun-ascend-to-report",
+   "name": "Ascend yearly to report the household to Heaven",
+   "term": {
+    "value": "上天言事",
+    "script": "Hant",
+    "rom": "shàngtiān yán shì"
+   },
+   "notes": "On the 23rd/24th of the twelfth month he rises to the Jade Emperor to report each family's conduct, by which their fortune for the coming year is set.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Baopuzi (Ge Hong), 'Weizhi' / Kitchen God folk tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_ehuang": [
+  {
+   "id": "chinese_ehuang-river-goddess",
+   "name": "Preside as a goddess of the Xiang River",
+   "notes": "After drowning in grief she became, with her sister, a tutelary spirit of the Xiang; invoked as Xiang Jun / Xiang Furen in the Chuci 'Nine Songs'.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Chuci, 'Jiuge' (Nine Songs): Xiang Jun, Xiang Furen"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chinese_nuying": [
+  {
+   "id": "chinese_nuying-river-goddess",
+   "name": "Preside as a goddess of the Xiang River",
+   "notes": "Together with her elder sister Ehuang she became a deity of the Xiang after drowning in sorrow, the consort-goddesses addressed in the Chuci.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Chuci, 'Jiuge' (Nine Songs): Xiang Furen"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chukchi_kurkil": [
+  {
+   "id": "chukchi_kurkil-bring-fire",
+   "name": "Bring fire, water and the useful arts to mankind",
+   "notes": "In the Beringian Raven cycle Kurkil/Kutkh gives humankind fire, fresh water, speech and skills such as net-making.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bogoras, Chukchee Mythology (Jesup North Pacific Expedition)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chuukese_olifat": [
+  {
+   "id": "chuukese_olifat-arm-sharks",
+   "name": "Arm the sharks with teeth",
+   "notes": "A malicious culture-act: Olifat gave the sharks their teeth so that they would bite humans, one of the harms attributed to him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lessa, Tales from Ulithi Atoll (Iolofath cycle)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "chuukese_olifat-born-from-head",
+   "name": "Be born from his mother's head",
+   "notes": "Sprang from the head of Tarisso and at once fled, refusing human touch, cleaning himself on palm trunks and biting through his own cord.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bollig, Die Bewohner der Truk-Inseln (1927)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chuukese_anulap": [
+  {
+   "id": "chuukese_anulap-teach-craft",
+   "name": "Teach humankind wisdom, law and craft",
+   "notes": "As the high creator-spirit Anulap is the source of knowledge and the magical and practical arts handed down through his son Lugeilan.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bollig, Die Bewohner der Truk-Inseln (1927)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chuukese_lugeilan": [
+  {
+   "id": "chuukese_lugeilan-intermediary",
+   "name": "Mediate between the sky-gods and mankind",
+   "term": {
+    "value": "Lukeilang",
+    "script": "Latn",
+    "rom": "Lukeilang"
+   },
+   "notes": "Called 'Middle of Heaven', he is lord over spirits and mortals and the channel by which his father Anulap's gifts reach humanity.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bollig, Die Bewohner der Truk-Inseln (1927)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "chuukese_semenkoror": [
+  {
+   "id": "chuukese_semenkoror-master-of-esoteric-knowledge",
+   "name": "holds and dispenses the deep, esoteric knowledge of the gods",
+   "term": {
+    "value": "Semenkoror",
+    "script": "Latn",
+    "rom": "Semenkoror"
+   },
+   "notes": "Named among the Chuukese (Truk) gods as 'Father of Wisdom', a specialist deity of knowledge alongside Sinenap ('Skilled One') and Aremei ('Achiever').",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopedia.com, 'Micronesian Religions: Mythic Themes'"
+    },
+    {
+     "kind": "primary",
+     "reference": "Bollig, Die Bewohner der Truk-Inseln (1927)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "circassian_shible": [
+  {
+   "id": "circassian_shible-hurls-thunderbolt",
+   "name": "hurls the thunderbolt and strikes earth, beast and man with lightning",
+   "term": {
+    "value": "Щыблэ",
+    "script": "Cyrl",
+    "rom": "Ŝəblə"
+   },
+   "notes": "Adyghe thunder/lightning god; persons and animals he strikes are deemed blessed and specially chosen.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Circassian paganism' (Shible)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "A. Jaimoukha, 'Ancient Circassian Religion' (oocities.org)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "circassian_shible-sanctifies-the-struck",
+   "name": "sanctifies the place, tree or creature he strikes, making it a site of veneration",
+   "notes": "A grove or tree struck by Shible's bolt became holy ground for sacrifice and prayer.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Jaimoukha, 'Ancient Circassian Religion' (oocities.org)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "circassian_setenaya": [
+  {
+   "id": "circassian_setenaya-witch-sorcery",
+   "name": "works sorcery and prophecy as the wise-woman and witch of the Narts",
+   "term": {
+    "value": "Сэтэнай",
+    "script": "Cyrl",
+    "rom": "Sɛtɛnaj"
+   },
+   "notes": "Setenay-guasche, matriarch of the Narts, combines eternal youth, beauty, wisdom and witchcraft; she advises, schemes and foresees for the whole host.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. Colarusso, 'The Woman of the Myths: the Satanaya Cycle' (CircassianWorld)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "circassian_setenaya-miraculous-births",
+   "name": "brings about and midwifes the miraculous births of the Nart heroes",
+   "notes": "Conceives or raises every major hero; cuts the glowing infant Sosruquo out of the stone after he is begotten upon it.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. Colarusso, Nart Sagas from the Caucasus (Princeton, 2002)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "circassian_sosruquo": [
+  {
+   "id": "circassian_sosruquo-iron-tempered-body",
+   "name": "is tempered in the smith's forge to a body of iron, invulnerable but at the knees/hips",
+   "term": {
+    "value": "Сосрыкъуэ",
+    "script": "Cyrl",
+    "rom": "Sosrəqʷə"
+   },
+   "notes": "After Tlepsh quenches the glowing stone-born infant, his body becomes iron; the spot the tongs gripped remains his one vulnerable point.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Sosruko'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Mythlok, 'Sosruko: The Fire-Forged Hero of the Nart Sagas'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "circassian_mezitha": [
+  {
+   "id": "circassian_mezitha-disposes-fate-of-beasts",
+   "name": "disposes of the fate of the wild beasts and grants luck to the hunt",
+   "term": {
+    "value": "Мэзытхьэ",
+    "script": "Cyrl",
+    "rom": "Məzytḥə"
+   },
+   "notes": "Adyghe forest- and hunt-god (məz 'forest' + tḥə 'god'); he releases game to favored hunters and withholds it from the impious.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "circasvoices.blogspot.com, 'Mezithe Resurrected'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "A. Jaimoukha, 'The Circassian Pantheon' (oocities.org)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "circassian_warzameg": [
+  {
+   "id": "circassian_warzameg-great-nart",
+   "name": "leads the host as the Great Nart, eldest and foremost of the heroes",
+   "notes": "Warzameg/Wozermes is styled the 'Great Nart', husband of Setenaya, around whose hearth the saga cycles turn.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. Colarusso, Nart Sagas from the Caucasus (Princeton, 2002)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "circassian_tha": [
+  {
+   "id": "circassian_tha-begets-universe",
+   "name": "begets and orders the entire universe as the single supreme god",
+   "term": {
+    "value": "Тхьэшхуэ",
+    "script": "Cyrl",
+    "rom": "Tḥəšxwə"
+   },
+   "notes": "Theshxwe ('Great God') is the monistic high god from whom the cosmos issues; the lesser tha are his manifestations.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Circassian paganism' (Tha/Theshxwe)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "circassian_psathha": [
+  {
+   "id": "circassian_psathha-keeper-of-souls",
+   "name": "grants the breath-soul (psa) and keeps the souls of the dead in the world beyond",
+   "term": {
+    "value": "Псатхьэ",
+    "script": "Cyrl",
+    "rom": "Psatḥə"
+   },
+   "notes": "Name = psa ('soul/life') + tha ('god'); the souls of the dead pass to the otherworld (hedrixe) under his charge and watch over their descendants.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Circassian paganism' (psa, hedrixe)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "cree_wisahkecahk": [
+  {
+   "id": "cree_wisahkecahk-shapeshifting",
+   "name": "shifts his own shape and the shapes and natures of the animals at will",
+   "term": {
+    "value": "ᐃᐧᓴᐦᑫᒑᕽ",
+    "script": "Cans",
+    "rom": "wîsahkêcâhk"
+   },
+   "notes": "The Algonquian transformer changes form and fixes the appearance and behaviour of the creatures in the âtayôhkêwin sacred stories.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Wisakedjak'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "native-languages.org, 'Cree Legends'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "crow_old_man_coyote": [
+  {
+   "id": "crow_old_man_coyote-shape-and-name-the-world",
+   "name": "travels east to west shaping land, mountains, rivers, animals and plants and giving them life",
+   "term": {
+    "value": "Isáahkawuattee",
+    "script": "Latn",
+    "rom": "Isáahkawuattee"
+   },
+   "notes": "After the earth is raised, Old Man Coyote forms and animates the whole created world on his journey across it.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "native-languages.org, 'Old Man Coyote (Akba Atatdia)'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Lib @ Little Big Horn College, 'Creation Story'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dacian_decaeneus": [
+  {
+   "id": "dacian_decaeneus-astronomy-prognostics",
+   "name": "teaches astronomy, the courses of the heavens and divine prognostics to the Getae",
+   "term": {
+    "value": "Δεκαίνεος",
+    "script": "Grek",
+    "rom": "Dekaineos"
+   },
+   "notes": "Strabo: Decaeneus, who had studied among the Egyptians, taught the Getae physics, ethics, logic and the revolutions of the heavens, foretelling the divine will.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Strabo, Geographica VII.3.11"
+    },
+    {
+     "kind": "primary",
+     "reference": "Jordanes, Getica"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "dacian_decaeneus-lawgiver",
+   "name": "imposes law, sober discipline and obedience, persuading the Getae to uproot their vines",
+   "notes": "As high priest and coadjutor of Burebista he legislated the wine-abstention and Pythagorean-style discipline of the realm.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Strabo, Geographica VII.3.11"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dacian_burebista": [
+  {
+   "id": "dacian_burebista-unifier",
+   "name": "unifies the Getic and Dacian tribes and raises a great empire by training and discipline",
+   "term": {
+    "value": "Βυρεβίστας",
+    "script": "Grek",
+    "rom": "Byrebistas"
+   },
+   "notes": "Strabo: Burebista restored a people ruined by wars and within a few years built a great power through sobriety and obedience to his commands.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Strabo, Geographica VII.3.11"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dayak_jata": [
+  {
+   "id": "dayak_jata-watersnake-underworld",
+   "name": "rules the underworld and primeval waters as the great water-serpent (Tambon)",
+   "term": {
+    "value": "Jata",
+    "script": "Latn",
+    "rom": "Jata"
+   },
+   "notes": "Jata Balawang Bulau, female lower-world power appearing as dragon/water-snake; one in essence with Mahatala, of whom she is the shadow.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Kaharingan' (Jata/Tambon)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dayak_tempon_telon": [
+  {
+   "id": "dayak_tempon_telon-psychopomp",
+   "name": "ferries the souls of the dead in the soul-ship past dangers to the highest heaven",
+   "term": {
+    "value": "Tempon Telon",
+    "script": "Latn",
+    "rom": "Tempon Telon"
+   },
+   "notes": "Divine ferryman who conveys the liau of the deceased, freed by the Tiwah ceremony, to Lewu Tatau, the heaven of Ranying.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopedia.com, 'Ngaju Dayak' (tiwah, Lewu Tatau)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dine_johonaai": [
+  {
+   "id": "dine_johonaai-bears-the-sun",
+   "name": "carries the turquoise sun across the sky each day from his house in the east",
+   "term": {
+    "value": "Jóhonaaʼéí",
+    "script": "Latn",
+    "rom": "Jóhonaaʼéí"
+   },
+   "notes": "The Sun-bearer of the Diné Bahaneʼ, husband of Changing Woman, who bears the sun-disk on its daily course.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Diné Bahaneʼ'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "dine_johonaai-arms-the-twins",
+   "name": "tests the Hero Twins with four ordeals and arms them with lightning to slay the monsters",
+   "notes": "After the twins prove their paternity he gives them lightning arrows and weapons to destroy the Naayééʼ.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Nayenezgani'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "navajopeople.org, 'Navajo Mythology Twins – Monster Slayer'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dinka_deng": [
+  {
+   "id": "dinka_deng-rain-lightning",
+   "name": "sends the rain and strikes with lightning as the foremost free-divinity of the sky",
+   "term": {
+    "value": "Dengdit",
+    "script": "Latn",
+    "rom": "Dengdit"
+   },
+   "notes": "Deng (Dengdit) is the sky-power of rain and fertility, son of Abuk in some genealogies, invoked for rain and harvest.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Dinka religion'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Garang'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dinka_abuk": [
+  {
+   "id": "dinka_abuk-patroness-of-women-and-grain",
+   "name": "watches over women, gardens and grain as the first woman and chief female divinity",
+   "notes": "Abuk, first woman shaped with Garang from clay, stretched the single daily grain into paste; patroness of all women and cultivation.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Abuk (mythology)'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Abuk'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dinka_garang": [
+  {
+   "id": "dinka_garang-first-man",
+   "name": "is the first man, shaped from clay and paired with Abuk",
+   "notes": "Free-divinity associated with men; the Creator made Abuk and Garang, the first pair, from the rich clay of the land.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Dinka religion'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Garang'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "dinka_garang-fevers-and-healing",
+   "name": "sends fevers yet also empowers the healers who cure them",
+   "notes": "Lienhardt records Garang as both a source of misfortune (fevers) and a healer-divinity.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Garang'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dinka_nhialic": [
+  {
+   "id": "dinka_nhialic-supreme-creator",
+   "name": "creates and upholds all life as supreme Divinity, sky and rain",
+   "term": {
+    "value": "Nhialic",
+    "script": "Latn",
+    "rom": "Nhialic"
+   },
+   "notes": "Distant supreme creator of the sky who encompasses the free- and clan-divinities; bulls and oxen are sacrificed to him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Dinka religion'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "dinka_nhialic-withdrawal",
+   "name": "withdraws to the sky and severs the rope between heaven and earth after the first offense",
+   "notes": "When Abuk's hoe struck him, Nhialic sent the bird atoc to cut the rope joining men to the sky, ending the age of plenty.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Abuk (mythology)'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dogon_lebe": [
+  {
+   "id": "dogon_lebe-renews-the-soil",
+   "name": "renews the fertility of the soil each season as the spirit of the earth",
+   "term": {
+    "value": "Lébé",
+    "script": "Latn",
+    "rom": "Lébé"
+   },
+   "notes": "Lébé Séru, first ancestor who died and returned as a great serpent, governs earth, vegetation and the periodic renewal of the fields.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Lebe (Dogon)'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dogon_binou_serou": [
+  {
+   "id": "dogon_binou_serou-totemic-manifestation",
+   "name": "manifests to his descendants as the clan's totem animal at the Binu shrine",
+   "notes": "Immortal ancestor of the time before death; founder of the Ono lineage and eponym of the totemic Binu cult, he reveals himself as the clan totem.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Binou (Dogon religion)'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "desana_vai_mahse": [
+  {
+   "id": "desana_vai_mahse-master-of-game",
+   "name": "guards the game within the hills and grants or withholds it to keep the balance of the hunt",
+   "term": {
+    "value": "Vaí-mahsë",
+    "script": "Latn",
+    "rom": "Vaí-mahsë"
+   },
+   "notes": "Master of Animals of the Vaupés; he keeps the creatures inside the hills and watches that hunters do not take more than their due.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "G. Reichel-Dolmatoff, Amazonian Cosmos (1971)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Encyclopedia.com, 'Vaupés'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "desana_pamuri_mahse": [
+  {
+   "id": "desana_pamuri_mahse-leads-the-migration",
+   "name": "leads the first humanity up the rivers in the living Snake-Canoe to settle the Vaupés",
+   "term": {
+    "value": "Pamurí-mahsë",
+    "script": "Latn",
+    "rom": "Pamurí-mahsë"
+   },
+   "notes": "Emissary sent by the Sun-Father, bearing his staff; the canoe in which he travels is itself a great anaconda swimming on the river-bottom.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "G. Reichel-Dolmatoff, Amazonian Cosmos (1971)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "desana_sun_father": [
+  {
+   "id": "desana_sun_father-creates-with-yellow-light",
+   "name": "creates and sustains the world with his yellow seminal light",
+   "term": {
+    "value": "Abé",
+    "script": "Latn",
+    "rom": "Abé"
+   },
+   "notes": "The invisible Sun-Father (Pagÿ Abé) generates and fertilizes creation through the yellow light/seminal power that is the central theme of Desana cosmology.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "G. Reichel-Dolmatoff, Amazonian Cosmos (1971)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "desana_sun_father-sends-the-emissary",
+   "name": "sends Pamurí-mahsë to people the earth and the Daughter of the Sun who bears the vine",
+   "notes": "He dispatches his emissary in the Snake-Canoe and is father of the Yajé/Daughter of the Sun.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "G. Reichel-Dolmatoff, Amazonian Cosmos (1971)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "dogon_yeban": [
+  {
+   "id": "dogon_yeban-earth-genies",
+   "name": "Dwell as the hidden earth-genies of the underworld",
+   "term": {
+    "value": "yèbàn",
+    "script": "Latn",
+    "rom": "yeban"
+   },
+   "notes": "The Yeban are misshapen subterranean genies who inhabit the holes and caves of the earth, born of Ogo the Pale Fox's incest with the earth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Griaule & Dieterlen, Le Renard pâle (1965)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "dogon_yeban-teach-andoumboulou",
+   "name": "Engender and instruct the Andoumboulou",
+   "term": {
+    "value": "andùmbùlù",
+    "script": "Latn",
+    "rom": "andoumboulou"
+   },
+   "notes": "The Yeban engendered the Andoumboulou, the small first humanoids who learned speech and craft from them.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "e_bangishimog": [
+  {
+   "id": "e_bangishimog-father-of-winds",
+   "name": "Govern the West and rule as Father of the Winds",
+   "term": {
+    "value": "Ningaabii'ani-noodin",
+    "script": "Latn",
+    "rom": "Ningaabiiani-noodin"
+   },
+   "notes": "The mighty West Wind manidoo, ruler of the land of the west (Bangishimog) and father of the four winds in Anishinaabe cosmology.",
+   "inheritability": "partial",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Schoolcraft, Algic Researches (1839)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "e_bangishimog-sire-nanabozho",
+   "name": "Sire Nanabozho and his brothers upon a mortal woman",
+   "notes": "By the mortal Wiininwaa he fathered the culture-hero Wenabozho (Nanabozho), the wolf Ma'iingan and their brothers.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Schoolcraft, Algic Researches (1839)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "edo_esu": [
+  {
+   "id": "edo_esu-crossroads-messenger",
+   "name": "Govern crossroads, chance and the traffic between worlds",
+   "notes": "Adopted from the Yoruba Eshu, the Edo Esu rules junctions, lots and the unpredictable, mediating fortune and misfortune.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "R. E. Bradbury, The Benin Kingdom and the Edo-Speaking Peoples (1957)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "edo_olokun": [
+  {
+   "id": "edo_olokun-purity-healing",
+   "name": "Bestow purity, peace and cleansing through white chalk",
+   "notes": "Olokun's worship centres on orhue (riverside kaolin chalk), the Edo emblem of purity, joy and peace used in his rites of cleansing.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bradbury, The Benin Kingdom and the Edo-Speaking Peoples (1957)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "edo_ogiuwu": [
+  {
+   "id": "edo_ogiuwu-dispenser-of-death",
+   "name": "Dispense death as the youngest child of Osanobua",
+   "notes": "In the creation account Osanobua assigned Ogiuwu the office of dispenser of death, claiming the lives of mortals at their appointed end.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bradbury, The Benin Kingdom and the Edo-Speaking Peoples (1957)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_amenmesse": [
+  {
+   "id": "egyptian_amenmesse-usurp-the-south",
+   "name": "Seize Thebes and rule Upper Egypt and Kush as rival king",
+   "notes": "During Seti II's reign Amenmesse took control of Thebes, Upper Egypt and Nubia, ruling the south as a rival pharaoh before his defeat.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dodson, Poisoned Legacy: The Decline and Fall of the Nineteenth Egyptian Dynasty (2010)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_amunherkhepeshef": [
+  {
+   "id": "egyptian_amunherkhepeshef-crown-prince-commander",
+   "name": "Serve as crown prince and army commander at his father's side",
+   "notes": "Firstborn of Ramesses II and heir apparent; depicted as a young commander in the Battle of Kadesh reliefs, the template of Ramesside crown-prince martial iconography.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kadesh reliefs of Ramesses II (Abu Simbel, Ramesseum, Luxor)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_merneptah": [
+  {
+   "id": "egyptian_merneptah-repel-invasion",
+   "name": "Repel the Libyan and Sea-Peoples invasion at Perire",
+   "notes": "In year 5 (c. 1208 BCE) defeated the combined Libyan and Sea-Peoples coalition, commemorated on the Merneptah Stele.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Merneptah Stele (Cairo Museum JE 31408)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "egyptian_merneptah-reign-as-horus",
+   "name": "Reign as the living Horus, son of Ramesses II",
+   "notes": "Acceded at advanced age as the thirteenth son after the deaths of his elder brothers, embodying pharaonic kingship as the living Horus.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Merneptah Stele (Cairo Museum JE 31408)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_horus": [
+  {
+   "id": "egyptian_horus-embody-kingship",
+   "name": "Embody pharaonic kingship as the living king",
+   "notes": "From Dynasty 0 the reigning pharaoh IS Horus, identified by the Horus-name of the royal titulary.",
+   "inheritability": "full",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pyramid Texts; Egyptian royal Horus-name titulary"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "egyptian_horus-avenge-osiris",
+   "name": "Avenge Osiris and win the kingship from Set",
+   "notes": "In the Contendings of Horus and Set he overcomes his uncle to claim his father's throne, the founding legitimation narrative of Egyptian kingship.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Contendings of Horus and Seth (Papyrus Chester Beatty I)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "egyptian_horus-eye-of-the-sky",
+   "name": "Hold the sun and moon as his two eyes across the sky",
+   "notes": "As Horus-of-the-Two-Horizons (Harakhty) the falcon's eyes are sun and moon; the moon-eye is wounded by Set and healed (the wedjat).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pyramid Texts; Coffin Texts"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_atum": [
+  {
+   "id": "egyptian_atum-evening-sun",
+   "name": "Descend as the evening sun returning to the primeval waters",
+   "notes": "Atum is the aged setting sun that re-enters Nun each night, complement to the rising Khepri and midday Ra.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pyramid Texts; Coffin Texts"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_bastet": [
+  {
+   "id": "egyptian_bastet-pacified-eye",
+   "name": "Embody the gentle, pacified Eye of Ra",
+   "notes": "The benign cat-form counterpart to the raging lioness Sekhmet, soothing the solar Eye's wrath.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Coffin Texts; temple of Bubastis"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "egyptian_bastet-nurse-king",
+   "name": "Nurse and protect the king as the lioness-mother",
+   "notes": "In her fiercer aspect she defends the king and nurses him, a protective lioness against enemies.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_bes": [
+  {
+   "id": "egyptian_bes-guard-childbirth",
+   "name": "Guard mother and child through labour and infancy",
+   "notes": "Bes attends the birthing-bower, frightening off hostile spirits that threaten the mother and newborn.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Pinch, Magic in Ancient Egypt (1994)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "egyptian_bes-bring-joy",
+   "name": "Bring music, dance and merriment into the home",
+   "notes": "A god of revelry and apotropaic joy, depicted with drums, tambourines and dancing.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_geb": [
+  {
+   "id": "egyptian_geb-bear-the-dead",
+   "name": "Hold the dead and the seeds within his earthly body",
+   "notes": "As the earth itself Geb both imprisons the dead in his soil and yields vegetation and grain.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pyramid Texts; Coffin Texts"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_hapi": [
+  {
+   "id": "egyptian_hapi-unite-two-lands",
+   "name": "Bind together Upper and Lower Egypt at the throne",
+   "notes": "Twin Hapi figures perform the sema-tawy, knotting papyrus and lotus around the royal throne to unite the Two Lands.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sema-tawy throne-side reliefs (e.g. Karnak, royal statuary)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_hathor": [
+  {
+   "id": "egyptian_hathor-suckle-king",
+   "name": "Suckle and nourish the king as the divine cow",
+   "notes": "As the celestial cow Hathor suckles the pharaoh, conferring divine sustenance and legitimacy.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "egyptian_hathor-lady-of-drunkenness",
+   "name": "Be pacified through music, dance and drunkenness",
+   "notes": "In the myth of the Distant Goddess the raging Eye is appeased and returns as joyful Hathor, celebrated with the Festival of Drunkenness.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Myth of the Heavenly Cow; Dendera temple texts"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_heka": [
+  {
+   "id": "egyptian_heka-empower-gods",
+   "name": "Empower the gods and the act of creation itself",
+   "notes": "Heka is the primal creative force present before duality, by which the creator and all gods accomplish their works.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Coffin Texts spell 261"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "egyptian_heka-sustain-sun",
+   "name": "Sustain and protect the sun-god in his barque",
+   "notes": "Personified Heka travels in the solar barque, his magic warding the sun-god through the day and the underworld.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Coffin Texts; Book of the Dead"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_khonsu": [
+  {
+   "id": "egyptian_khonsu-tell-time",
+   "name": "Measure and define time as the traveller of the night sky",
+   "notes": "As 'Khonsu the Wanderer' the moon-god marks the months and the passage of time.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_min": [
+  {
+   "id": "egyptian_min-renew-king",
+   "name": "Renew the king's potency and guarantee the harvest",
+   "notes": "In the Coming-Forth-of-Min festival the king cuts the first sheaf and the god's restored virility ensures fertile fields.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Festival reliefs, Medinet Habu (temple of Ramesses III)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "egyptian_min-lord-eastern-desert",
+   "name": "Protect the eastern-desert roads and mining expeditions",
+   "notes": "As Lord of the Eastern Desert Min watched over the Coptos caravan routes to the Red Sea and the desert quarries.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_mut": [
+  {
+   "id": "egyptian_mut-divine-mother",
+   "name": "Mother the gods and the king as the Theban great mother",
+   "notes": "As 'Mut the Mother' she bears and protects the king and the divine child Khonsu of the Theban Triad.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_neith": [
+  {
+   "id": "egyptian_neith-protect-dead",
+   "name": "Guard the dead and the canopic viscera with Selket and her sisters",
+   "notes": "One of the four tutelary goddesses of the canopic shrine, Neith protects the deceased (with the duamutef jar in particular).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Canopic shrine of Tutankhamun; Pyramid Texts"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_nekhbet": [
+  {
+   "id": "egyptian_nekhbet-two-ladies",
+   "name": "Crown the king as the Two Ladies with Wadjet",
+   "notes": "Nekhbet of El-Kab (Upper Egypt) and Wadjet of Buto (Lower Egypt) form the nebty Two-Ladies title of the royal titulary.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Egyptian royal nebty (Two Ladies) titulary"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "egyptian_anubis": [
+  {
+   "id": "egyptian_anubis-guide-dead",
+   "name": "Guide and escort the dead through the necropolis",
+   "notes": "As 'Foremost of the Westerners' (an early role later given to Osiris) Anubis leads the deceased to judgment.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pyramid Texts; Book of the Dead"
+    }
+   ],
+   "ability": true
+  }
+ ]
+};
+const MATERIAL_SWEEP = {
+ "abkhaz_afy": [
+  {
+   "id": "abkhaz_afy-fire-arrows",
+   "name": "fiery arrows of lightning hurled from heaven",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians)"
+    }
+   ]
+  }
+ ],
+ "abkhaz_azhwepshaa": [
+  {
+   "id": "abkhaz_azhwepshaa-wild-herds",
+   "name": "his herds of wild deer and forest game",
+   "classId": "creature",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians); Religion in Abkhazia"
+    }
+   ]
+  }
+ ],
+ "aboriginal_birrahgnooloo": [
+  {
+   "id": "aboriginal_birrahgnooloo-floodwaters",
+   "name": "the floods and floodwaters at her command",
+   "classId": "natural-force",
+   "kind": "other",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "K. Langloh Parker, The Euahlayi Tribe (1905)"
+    }
+   ]
+  }
+ ],
+ "aganju": [
+  {
+   "id": "aganju-ferry-staff",
+   "name": "ferryman's staff with which he bears travellers across the deep waters",
+   "classId": "implement",
+   "kind": "staff",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Original Botanica, 'Aganju (Agayu), Orisha of Volcanoes and Wilderness'"
+    }
+   ]
+  }
+ ],
+ "akan_tano": [
+  {
+   "id": "akan_tano-akrafena",
+   "name": "akrafena state swords kept among his shrine regalia",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tano (Ta Kora)' (shrine regalia: crown, staffs, swords, beads, brass pan)"
+    }
+   ]
+  },
+  {
+   "id": "akan_tano-crown",
+   "name": "chiefly crown and beaded regalia of the Tano shrine",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tano (Ta Kora)'"
+    }
+   ]
+  }
+ ],
+ "akan_opoku_ware_i": [
+  {
+   "id": "akan_opoku_ware_i-mponponsuo",
+   "name": "Mponponsuo, the oath-sword of allegiance made for him by Komfo Anokye",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Akrafena' (Mponponsuo made by Akomfo Anokye for Opoku Ware; sword of the oath of office)"
+    }
+   ]
+  }
+ ],
+ "akan_osei_tutu_i": [
+  {
+   "id": "akan_osei_tutu_i-bosommuru",
+   "name": "Bosommuru, the holy state sword on which the Asantehene swears the Great Oath",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Akrafena' (bosommuru: holy sword of the Great Oath, not used for war)"
+    }
+   ]
+  }
+ ],
+ "akan_yaa_asantewaa": [
+  {
+   "id": "akan_yaa_asantewaa-rifle",
+   "name": "the gun she seized and fired before the chiefs to shame them into war",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Yaa Asantewaa'; Boahen, Yaa Asantewaa and the Asante-British War of 1900-1"
+    }
+   ]
+  }
+ ],
+ "amani": [
+  {
+   "id": "amani-sacred-bark",
+   "name": "the processional bark-shrine carried by priests to deliver his oracles",
+   "classId": "vessel",
+   "kind": "vehicle",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kendall, 'Jebel Barkal and Ancient Napata'"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_beowulf": [
+  {
+   "id": "anglosaxon_beowulf-hrunting",
+   "name": "Hrunting (loaned sword of Unferth)",
+   "classId": "sword",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 1455-1464, 1807-1812"
+    }
+   ]
+  }
+ ],
+ "arabian_allat": [
+  {
+   "id": "arabian_allat-lion-statue",
+   "name": "The lion of Allat (colossal stone lion of her sanctuary)",
+   "classId": "cult-statue",
+   "kind": "sculpture",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Palmyrene lion sculpture from the Temple of Allat, Palmyra (1st c. CE)"
+    }
+   ]
+  }
+ ],
+ "andamanese_biliku": [
+  {
+   "id": "andamanese_biliku-web",
+   "name": "Spider's web (with which she is said to have spun the world)",
+   "classId": "object",
+   "kind": "cosmic-object",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. R. Radcliffe-Brown, The Andaman Islanders (1922)"
+    }
+   ]
+  }
+ ],
+ "arabian_imru_al_qais": [
+  {
+   "id": "arabian_imru_al_qais-muallaqa",
+   "name": "The Mu'allaqa (Suspended Ode)",
+   "classId": "text",
+   "kind": "text",
+   "notes": "His celebrated qasida 'Qifa nabki' ('Halt, let us weep'), reckoned the first and greatest of the seven Mu'allaqat hung (by tradition) at the Ka'ba.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Arberry, The Seven Odes (1957)"
+    }
+   ]
+  }
+ ],
+ "aymara_tunupa": [
+  {
+   "id": "aymara_tunupa-staff",
+   "name": "The twin staffs of the Staff God",
+   "classId": "regalia",
+   "kind": "regalia",
+   "notes": "The Tiwanaku 'Staff God' of the Gate of the Sun, identified in colonial tradition with Tunupa/Viracocha, grips a staff in each hand, rays terminating in puma- and condor-heads radiating from his head.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "studies of the Tiwanaku Gateway of the Sun and the Front-Face/Staff Deity"
+    }
+   ]
+  }
+ ],
+ "aztec_mictlantecuhtli": [
+  {
+   "id": "aztec_mictlantecuhtli-eyeball-necklace",
+   "name": "Necklace of human eyeballs",
+   "classId": "regalia",
+   "kind": "regalia",
+   "notes": "The death-lord wears a necklace strung with human eyes and earspools of human bone, his headdress crested with owl-feathers and paper banners.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Codex Borgia, pp. 56-60"
+    }
+   ]
+  }
+ ],
+ "aymara_inti": [
+  {
+   "id": "aymara_inti-golden-disk",
+   "name": "Golden rayed sun-disk (face of the Sun)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "notes": "The Sun is figured as a disk of gold with rays and flames radiating from a central face; the chief image at Cuzco, the Punchao, showed him as a radiant golden boy.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Bernabé Cobo, Historia del Nuevo Mundo (1653), Bk 13"
+    }
+   ]
+  }
+ ],
+ "aztec_tonatiuh": [
+  {
+   "id": "aztec_tonatiuh-eagle-feather-headdress",
+   "name": "Eagle-feather headdress",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+    }
+   ]
+  }
+ ],
+ "aztec_xochiquetzal": [
+  {
+   "id": "aztec_xochiquetzal-flower-bouquet",
+   "name": "Bouquet of flowers",
+   "classId": "attribute",
+   "kind": "plant",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mexicolore, Goddess of the Month: Xochiquetzal"
+    }
+   ]
+  },
+  {
+   "id": "aztec_xochiquetzal-weaving-tools",
+   "name": "Weaving and spinning tools",
+   "classId": "tool",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+    }
+   ]
+  }
+ ],
+ "babalu_aye": [
+  {
+   "id": "babalu_aye-ja-bundle",
+   "name": "Já (palm-fibre ritual bundle hung with cowries)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Thompson, Flash of the Spirit"
+    }
+   ]
+  },
+  {
+   "id": "babalu_aye-crutches",
+   "name": "Crutches",
+   "classId": "attribute",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Murphy, Santería: African Spirits in America"
+    }
+   ]
+  }
+ ],
+ "balinese_batara_guru": [
+  {
+   "id": "balinese_batara_guru-trisula",
+   "name": "Trisula (trident)",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hooykaas, Cosmogony and Creation in Balinese Tradition"
+    }
+   ]
+  },
+  {
+   "id": "balinese_batara_guru-nandini",
+   "name": "Nandini, the divine bull mount",
+   "classId": "mount",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hooykaas, Cosmogony and Creation in Balinese Tradition"
+    }
+   ]
+  }
+ ],
+ "balinese_dewi_danu": [
+  {
+   "id": "balinese_dewi_danu-golden-jug",
+   "name": "Golden water-jug",
+   "classId": "vessel",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lansing, Priests and Programmers"
+    }
+   ]
+  }
+ ],
+ "balinese_dewi_sri": [
+  {
+   "id": "balinese_dewi_sri-cili",
+   "name": "Cili, the hourglass rice effigy of woven palm leaf",
+   "classId": "effigy",
+   "kind": "effigy",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Eiseman, Bali: Sekala and Niskala"
+    }
+   ]
+  }
+ ],
+ "balinese_rangda": [
+  {
+   "id": "balinese_rangda-lidah-api",
+   "name": "Lidah Api (the flaming tongue)",
+   "classId": "attribute",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Belo, Bali: Rangda and Barong"
+    }
+   ]
+  }
+ ],
+ "banyaruanda_nkuba": [
+  {
+   "id": "banyaruanda_nkuba-thunderbolt",
+   "name": "The thunderbolt",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda"
+    }
+   ]
+  }
+ ],
+ "basque_mari": [
+  {
+   "id": "basque_mari-sickle",
+   "name": "Sickle",
+   "classId": "attribute",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ]
+  },
+  {
+   "id": "basque_mari-ram-chariot",
+   "name": "Sky-chariot drawn by rams (or horses)",
+   "classId": "vehicle",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ]
+  }
+ ],
+ "basque_eguzki": [
+  {
+   "id": "basque_eguzki-eguzkilore",
+   "name": "Eguzkilore, the sun-thistle emblem",
+   "classId": "attribute",
+   "kind": "plant",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ]
+  }
+ ],
+ "buddhist_dhrtarastra": [
+  {
+   "id": "buddhist_dhrtarastra-pipa",
+   "name": "Pipa lute",
+   "term": {
+    "value": "琵琶",
+    "script": "Hani",
+    "rom": "pípá"
+   },
+   "classId": "instrument",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Soothill & Hodous (1937). A Dictionary of Chinese Buddhist Terms, s.v. 持國天."
+    }
+   ]
+  }
+ ],
+ "buddhist_mara": [
+  {
+   "id": "buddhist_mara-girimekhala",
+   "name": "War-elephant Girimekhala",
+   "term": {
+    "value": "गिरिमेखल",
+    "script": "Deva",
+    "rom": "Girimekhala"
+   },
+   "classId": "mount",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Buddhavaṃsa and Jātaka commentary; cf. Padhāna Sutta, Suttanipāta 3.2."
+    }
+   ]
+  },
+  {
+   "id": "buddhist_mara-flower-bow",
+   "name": "Flower-arrow bow of desire",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Aśvaghoṣa, Buddhacarita 13 (Defeat of Māra)."
+    }
+   ]
+  }
+ ],
+ "berber_gurzil": [
+  {
+   "id": "berber_gurzil-idol",
+   "name": "Stone war-idol of Gurzil",
+   "classId": "cult-image",
+   "kind": "idol",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "al-Bakri, Kitāb al-Masālik wa-l-Mamālik (11th c.), on the surviving hilltop idol."
+    }
+   ]
+  }
+ ],
+ "berber_amun_siwa": [
+  {
+   "id": "berber_amun_siwa-baris-barque",
+   "name": "Golden barque (baris) bearing the oracular image of Ammon",
+   "classId": "cult-image",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Diodorus Siculus, Bibliotheca Historica 17.50."
+    }
+   ]
+  }
+ ],
+ "berber_ifri": [
+  {
+   "id": "berber_ifri-elephant-headdress",
+   "name": "Elephant-scalp headdress",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+    }
+   ]
+  },
+  {
+   "id": "berber_ifri-cornucopia",
+   "name": "Cornucopia of plenty",
+   "classId": "attribute",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+    }
+   ]
+  }
+ ],
+ "blackfoot_ksiistsikomm": [
+  {
+   "id": "blackfoot_ksiistsikomm-medicine-pipe",
+   "name": "Thunder Medicine Pipe",
+   "term": {
+    "value": "Niinaimsskaahkoyinnimaan",
+    "script": "Latn",
+    "rom": "Niinaimsskaahkoyinnimaan"
+   },
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales ('Origin of the Medicine Pipe')."
+    }
+   ]
+  }
+ ],
+ "blackfoot_natosi": [
+  {
+   "id": "blackfoot_natosi-medicine-bonnet",
+   "name": "Sun's headdress and natoas (Sun-Dance bundle)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "McClintock, Walter (1910). The Old North Trail."
+    }
+   ]
+  }
+ ],
+ "bemba_chitimukulu": [
+  {
+   "id": "bemba_chitimukulu-babenye",
+   "name": "Babenye (sacred royal relics)",
+   "term": {
+    "value": "babenye",
+    "script": "Latn",
+    "rom": "babenye"
+   },
+   "classId": "regalia",
+   "kind": "relic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Richards, Audrey I. (1969). Bemba religion."
+    }
+   ]
+  }
+ ],
+ "bhil_pithora": [
+  {
+   "id": "bhil_pithora-twin-horses",
+   "name": "Two facing white horses of Pithora",
+   "classId": "cult-image",
+   "kind": "image",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Jain, Jyotindra (1984). Painted Myths of Creation: Art and Ritual of an Indian Tribe."
+    }
+   ]
+  }
+ ],
+ "bhil_indi_raja": [
+  {
+   "id": "bhil_indi_raja-painted-horse",
+   "name": "Painted Pithora horse of Baba Ind",
+   "classId": "cult-image",
+   "kind": "image",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Jain, Jyotindra (1984). Painted Myths of Creation."
+    }
+   ]
+  }
+ ],
+ "bodo_bathoubwrai": [
+  {
+   "id": "bodo_bathoubwrai-sijou",
+   "name": "Sijou plant on the Bathou altar",
+   "term": {
+    "value": "sijou",
+    "script": "Latn",
+    "rom": "sijou"
+   },
+   "classId": "cult-image",
+   "kind": "plant",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Endle, Sidney (1911). The Kacharis."
+    }
+   ]
+  }
+ ],
+ "basque_sugaar": [
+  {
+   "id": "basque_sugaar-fire-sickle",
+   "name": "Sickle of fire (fiery serpent form)",
+   "classId": "attribute",
+   "kind": "attribute",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, José Miguel de (1972). Diccionario ilustrado de mitología vasca."
+    }
+   ]
+  }
+ ],
+ "buddhist_brahma_sahampati": [
+  {
+   "id": "buddhist_brahma_sahampati-conch",
+   "name": "White conch offered to the Buddha",
+   "classId": "attribute",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Iconographic tradition of the Dharma-entreaty (Brahmā and Indra offering conch and wheel)."
+    }
+   ]
+  }
+ ],
+ "buddhist_vaishravana": [
+  {
+   "id": "buddhist_vaishravana-stupa",
+   "name": "Treasure stūpa (pagoda)",
+   "term": {
+    "value": "स्तूप",
+    "script": "Sanskrit (Devanāgarī)",
+    "rom": "stūpa"
+   },
+   "classId": "regalia",
+   "kind": "regalia",
+   "notes": "Reliquary pagoda held in one hand, storing immeasurable wealth; emblem of his role as wealth-giver (Kubera).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bishamonten / Tamonten iconographic tradition (Buddhistdoor, 'King of Kings')"
+    }
+   ]
+  },
+  {
+   "id": "buddhist_vaishravana-halberd",
+   "name": "Halberd (war-spear)",
+   "classId": "weapon",
+   "kind": "weapon",
+   "notes": "Three-pronged spear or baton borne in the other hand, marking him as fierce guardian of the north.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Four Heavenly Kings (Lokapāla) iconographic tradition"
+    }
+   ]
+  }
+ ],
+ "buddhist_virudhaka": [
+  {
+   "id": "buddhist_virudhaka-armour",
+   "name": "Warrior armour",
+   "classId": "regalia",
+   "kind": "regalia",
+   "notes": "Blue-faced king depicted in full armour beneath his upraised sword.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Four Heavenly Kings (Lokapāla) iconographic tradition; Cleveland Museum of Art 1918.544"
+    }
+   ]
+  }
+ ],
+ "buganda_walumbe": [
+  {
+   "id": "buganda_walumbe-ttanda-pits",
+   "name": "The Ttanda pits near Mityana",
+   "classId": "site",
+   "kind": "site",
+   "notes": "The roughly 240 deep pits at Ttanda, dug as Walumbe fled underground from Kayikuuzi; venerated as shrines where visitors go barefoot.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ttanda pits of Buganda; Daily Monitor, 'Tanda pits: the legend of Walumbe'"
+    }
+   ]
+  }
+ ],
+ "buganda_mukasa": [
+  {
+   "id": "buganda_mukasa-reed-temple",
+   "name": "Conical reed temple on Bubembe Island",
+   "classId": "site",
+   "kind": "site",
+   "notes": "Conical reed shrine on Bubembe, the chief temple of the lake-god, served by a secluded female medium (mandwa) and priest.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roscoe, The Baganda (1911); Bubembe Island temple tradition"
+    }
+   ]
+  }
+ ],
+ "buganda_kibuka": [
+  {
+   "id": "buganda_kibuka-jawbone-relic",
+   "name": "Jawbone relic of Kibuka",
+   "classId": "relic",
+   "kind": "relic",
+   "notes": "His jawbone, kept in the fireproof inner chamber at Mbaale; embodied the god's presence and was consulted as oracle. Taken to Cambridge by Roscoe, repatriated to the Uganda Museum in 1961.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roscoe, The Baganda (1911); Museum of Archaeology and Anthropology, Cambridge / Uganda Museum repatriation records"
+    }
+   ]
+  },
+  {
+   "id": "buganda_kibuka-shield-spear",
+   "name": "Shield Liigyamirembe and war-spear",
+   "classId": "weapon",
+   "kind": "weapon",
+   "notes": "Among Kibuka's regalia at the Mbaale shrine, integrated by the kabaka into coronation ritual; with a stool spread with lion or leopard skin.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kibuka shrine relics, Mbaale (Gods' Collections case study)"
+    }
+   ]
+  }
+ ],
+ "buryat_erlen_khan": [
+  {
+   "id": "buryat_erlen_khan-iron-sword",
+   "name": "Black iron sword and shield",
+   "classId": "weapon",
+   "kind": "weapon",
+   "notes": "Black-iron arms of the lord of the lower world, who dwells in an underground iron palace.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Turkic-Mongolic Erlik tradition (Siberian/Buryat shamanism)"
+    }
+   ]
+  }
+ ],
+ "buganda_kintu": [
+  {
+   "id": "buganda_kintu-magonga-shrine",
+   "name": "Shrine of Kintu at Magonga",
+   "classId": "site",
+   "kind": "site",
+   "notes": "Sacred site in the Magonga (Bukunja) forest where the undying first man is held to have vanished; a focus of veneration tying the living kabaka lineage to its progenitor.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kintu cycle, Buganda; Magonga forest tradition"
+    }
+   ]
+  }
+ ],
+ "bunyoro_wamara": [
+  {
+   "id": "bunyoro_wamara-lake-wamala",
+   "name": "Lake Wamala",
+   "classId": "site",
+   "kind": "site",
+   "notes": "The lake into which the last Bacwezi king is said to have vanished; it bears his name and is a centre of Kubandwa veneration.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bacwezi disappearance traditions, interlacustrine Uganda"
+    }
+   ]
+  }
+ ],
+ "canaanite_shapshu": [
+  {
+   "id": "canaanite_shapshu-solar-disk",
+   "name": "Winged solar disk",
+   "classId": "regalia",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Shapshu'"
+    }
+   ]
+  }
+ ],
+ "canaanite_yarikh": [
+  {
+   "id": "canaanite_yarikh-crescent",
+   "name": "Lunar crescent",
+   "classId": "emblem",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Yarikh'; 'Nikkal'"
+    }
+   ]
+  }
+ ],
+ "cherokee_uktena": [
+  {
+   "id": "cherokee_uktena-blazing-crest",
+   "name": "Blazing crest on its brow",
+   "classId": "attribute",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "James Mooney, Myths of the Cherokee (1900), 'The Uktena and the Ulun'suti'"
+    }
+   ]
+  }
+ ],
+ "chinese_change": [
+  {
+   "id": "chinese_change-jade-rabbit",
+   "name": "Jade Rabbit, her moon-companion",
+   "classId": "companion",
+   "kind": "animal",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Mid-Autumn Festival legends (TravelChinaGuide; ChinaHighlights)"
+    }
+   ]
+  }
+ ],
+ "chinese_caishen": [
+  {
+   "id": "chinese_caishen-steel-whip",
+   "name": "Steel whip (golden rod)",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Zhao Gongming'"
+    }
+   ]
+  },
+  {
+   "id": "chinese_caishen-gold-ingot",
+   "name": "Gold ingot (yuanbao)",
+   "classId": "emblem",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Caishen'"
+    }
+   ]
+  }
+ ],
+ "chinese_ao_guang": [
+  {
+   "id": "chinese_ao_guang-luminous-pearl",
+   "name": "Luminous night-pearl",
+   "classId": "treasure",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Ao Guang'"
+    }
+   ]
+  }
+ ],
+ "chinese_diku": [
+  {
+   "id": "chinese_diku-bells-pipes",
+   "name": "Court music — bells, chimes, pipes and drums made at his order",
+   "classId": "instrument",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Lüshi Chunqiu, on Di Ku's invention of music"
+    }
+   ]
+  }
+ ],
+ "cheyenne_maheo": [
+  {
+   "id": "cheyenne_maheo-grandmother-turtle",
+   "name": "Grandmother Turtle, who bears the new-made earth",
+   "classId": "emblem",
+   "kind": "animal",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Cheyenne creation account (everyculture.com, 'Cheyenne — Religion and Expressive Culture')"
+    }
+   ]
+  }
+ ],
+ "chibiabos": [
+  {
+   "id": "chibiabos-reed-flute",
+   "name": "Reed flute of the sweetest music",
+   "classId": "instrument",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "H. W. Longfellow, The Song of Hiawatha (1855), based on Ojibwe oral tradition"
+    }
+   ]
+  }
+ ],
+ "chinese_shennong": [
+  {
+   "id": "chinese_shennong-red-whip",
+   "name": "Ruddy Whip (zhebian)",
+   "term": {
+    "value": "赭鞭",
+    "script": "Hant",
+    "rom": "zhěbiān"
+   },
+   "classId": "implement",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Soushenji (In Search of the Sacred); standard Shennong tradition"
+    }
+   ]
+  },
+  {
+   "id": "chinese_shennong-bencaojing",
+   "name": "The Divine Farmer's Materia Medica (Shennong Bencaojing)",
+   "term": {
+    "value": "神農本草經",
+    "script": "Hant",
+    "rom": "Shénnóng Běncǎo Jīng"
+   },
+   "classId": "text",
+   "kind": "text",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Shennong Bencaojing (Han compilation attributed to Shennong)"
+    }
+   ]
+  }
+ ],
+ "chinese_huangdi": [
+  {
+   "id": "chinese_huangdi-tripod-cauldron",
+   "name": "Bronze tripod cast at Jing Mountain",
+   "term": {
+    "value": "鼎",
+    "script": "Hant",
+    "rom": "dǐng"
+   },
+   "classId": "vessel",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji, 'Treatise on the Feng and Shan Sacrifices'"
+    }
+   ]
+  }
+ ],
+ "chinese_jade_emperor": [
+  {
+   "id": "chinese_jade_emperor-mianguan",
+   "name": "Tasselled imperial crown (mianguan)",
+   "term": {
+    "value": "冕冠",
+    "script": "Hant",
+    "rom": "miǎnguān"
+   },
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Standard Daoist iconographic descriptions of the Jade Emperor"
+    }
+   ]
+  },
+  {
+   "id": "chinese_jade_emperor-gui-tablet",
+   "name": "Ceremonial jade tablet (gui)",
+   "term": {
+    "value": "圭",
+    "script": "Hant",
+    "rom": "guī"
+   },
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Standard Daoist iconographic descriptions of the Jade Emperor"
+    }
+   ]
+  }
+ ],
+ "chinese_lu_dongbin": [
+  {
+   "id": "chinese_lu_dongbin-fly-whisk",
+   "name": "Horsehair fly-whisk (yunzhou)",
+   "term": {
+    "value": "雲帚",
+    "script": "Hant",
+    "rom": "yúnzhǒu"
+   },
+   "classId": "implement",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Eight Immortals iconography; Quanzhen hagiography of Lü Zu"
+    }
+   ]
+  }
+ ],
+ "chinese_he_xiangu": [
+  {
+   "id": "chinese_he_xiangu-bamboo-ladle",
+   "name": "Bamboo ladle (or sheng mouth-organ)",
+   "term": {
+    "value": "笊籬",
+    "script": "Hant",
+    "rom": "zhàolí"
+   },
+   "classId": "implement",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Eight Immortals iconographic tradition"
+    }
+   ]
+  }
+ ],
+ "chinese_pangu": [
+  {
+   "id": "chinese_pangu-axe",
+   "name": "World-cleaving axe",
+   "term": {
+    "value": "斧",
+    "script": "Hant",
+    "rom": "fǔ"
+   },
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Pangu creation tradition (post-Han); Birrell, Chinese Mythology"
+    }
+   ]
+  },
+  {
+   "id": "chinese_pangu-chisel",
+   "name": "Chisel (or hammer)",
+   "term": {
+    "value": "鑿",
+    "script": "Hant",
+    "rom": "záo"
+   },
+   "classId": "implement",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Pangu creation tradition; Birrell, Chinese Mythology"
+    }
+   ]
+  }
+ ],
+ "chinese_houyi": [
+  {
+   "id": "chinese_houyi-elixir",
+   "name": "Elixir of immortality from Xiwangmu",
+   "term": {
+    "value": "不死藥",
+    "script": "Hant",
+    "rom": "bùsǐyào"
+   },
+   "classId": "substance",
+   "kind": "substance",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Huainanzi, 'Lanming' chapter"
+    }
+   ]
+  }
+ ],
+ "chinese_leigong": [
+  {
+   "id": "chinese_leigong-chisel",
+   "name": "Thunder chisel for striking the guilty",
+   "term": {
+    "value": "鑿",
+    "script": "Hant",
+    "rom": "záo"
+   },
+   "classId": "implement",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lei Gong iconography (Song-period and later); Werner, Myths and Legends of China"
+    }
+   ]
+  }
+ ],
+ "chinese_yu_the_great": [
+  {
+   "id": "chinese_yu_the_great-luoshu",
+   "name": "Luo River chart (Luoshu) borne by the turtle",
+   "term": {
+    "value": "洛書",
+    "script": "Hant",
+    "rom": "Luòshū"
+   },
+   "classId": "text",
+   "kind": "text",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yijing, Xici commentary; Luoshu tradition"
+    }
+   ]
+  }
+ ],
+ "circassian_sosruquo": [
+  {
+   "id": "circassian_sosruquo-bowl-of-fire",
+   "name": "the bowl of fire stolen from the giant",
+   "classId": "vessel",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Sosruko' (monument iconography)"
+    }
+   ]
+  }
+ ],
+ "circassian_mezitha": [
+  {
+   "id": "circassian_mezitha-golden-boar",
+   "name": "the golden-bristled boar he rides through the forest",
+   "classId": "mount",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Jaimoukha, 'The Circassian Pantheon' (oocities.org)"
+    }
+   ]
+  }
+ ],
+ "circassian_shible": [
+  {
+   "id": "circassian_shible-thunderbolt",
+   "name": "the thunderbolt",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Circassian paganism' (Shible)"
+    }
+   ]
+  }
+ ],
+ "dine_johonaai": [
+  {
+   "id": "dine_johonaai-turquoise-house",
+   "name": "the turquoise house in the eastern sky",
+   "classId": "dwelling",
+   "kind": "structure",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Diné Bahaneʼ'"
+    }
+   ]
+  }
+ ],
+ "dinka_deng": [
+  {
+   "id": "dinka_deng-fishing-spear",
+   "name": "the fishing-spear of invocation",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Dinka religion' (invokers hold a fishing-spear)"
+    }
+   ]
+  }
+ ],
+ "dayak_jata": [
+  {
+   "id": "dayak_jata-golden-water-gate",
+   "name": "the golden water-gate (Balawang Bulau) of the underworld",
+   "classId": "regalia",
+   "kind": "structure",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Kaharingan' (Jata Balawang Bulau)"
+    }
+   ]
+  }
+ ],
+ "crow_old_man_coyote": [
+  {
+   "id": "crow_old_man_coyote-handful-of-mud",
+   "name": "the handful of mud raised by Hell-Diver duck, from which he forms the earth",
+   "classId": "relic",
+   "kind": "relic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lib @ Little Big Horn College, 'Creation Story'"
+    }
+   ]
+  }
+ ],
+ "dacian_zalmoxis": [
+  {
+   "id": "dacian_zalmoxis-message-spears",
+   "name": "the three spears on which the chosen messenger is flung to carry word to the god",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Herodotus, Histories IV.94"
+    }
+   ]
+  }
+ ],
+ "dogon_nommo": [
+  {
+   "id": "dogon_nommo-ark",
+   "name": "The celestial ark (granary) of descent",
+   "classId": "vehicle",
+   "kind": "vehicle",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Griaule & Dieterlen, Le Renard pâle (1965)"
+    }
+   ]
+  },
+  {
+   "id": "dogon_nommo-binu-shrine",
+   "name": "Binu shrines with painted facades",
+   "classId": "architecture",
+   "kind": "structure",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+    }
+   ]
+  }
+ ],
+ "egyptian_atum": [
+  {
+   "id": "egyptian_atum-double-crown",
+   "name": "Double Crown (Pschent)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  }
+ ],
+ "egyptian_min": [
+  {
+   "id": "egyptian_min-tall-plumes",
+   "name": "Tall twin-plumed crown",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  },
+  {
+   "id": "egyptian_min-festival-pole",
+   "name": "Min's festival pole (climbed in his rites)",
+   "classId": "cult-object",
+   "kind": "implement",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Festival reliefs, Medinet Habu"
+    }
+   ]
+  }
+ ],
+ "egyptian_bes": [
+  {
+   "id": "egyptian_bes-tambourine",
+   "name": "Tambourine and drum",
+   "classId": "instrument",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  }
+ ],
+ "egyptian_heka": [
+  {
+   "id": "egyptian_heka-entwined-serpents",
+   "name": "Pair of entwined serpents (held in the hands)",
+   "classId": "emblem",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Pinch, Magic in Ancient Egypt (1994)"
+    }
+   ]
+  }
+ ],
+ "egyptian_neith": [
+  {
+   "id": "egyptian_neith-red-crown",
+   "name": "Red Crown of Lower Egypt (Deshret)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  },
+  {
+   "id": "egyptian_neith-weaving-shuttle",
+   "name": "Weaving shuttle (her name-emblem)",
+   "classId": "emblem",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  }
+ ],
+ "egyptian_anubis": [
+  {
+   "id": "egyptian_anubis-balance",
+   "name": "Scales of judgment",
+   "classId": "cult-object",
+   "kind": "implement",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Book of the Dead, spell 125 (weighing of the heart)"
+    }
+   ]
+  }
+ ],
+ "egyptian_mut": [
+  {
+   "id": "egyptian_mut-ankh-was",
+   "name": "Ankh and was-sceptre",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  }
+ ],
+ "edo_ogiuwu": [
+  {
+   "id": "edo_ogiuwu-snail-shell",
+   "name": "Snail shell of creation (shared instrument of the divine children)",
+   "classId": "cult-object",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bradbury, The Benin Kingdom and the Edo-Speaking Peoples (1957)"
+    }
+   ]
+  }
+ ]
+};
+const DOMAIN_SWEEP = {
+ "aboriginal_baiame": [
+  {
+   "sphereId": "supreme-creator",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ]
+  },
+  {
+   "sphereId": "sky",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "K. Langloh Parker, The Euahlayi Tribe (1905)"
+    }
+   ]
+  },
+  {
+   "sphereId": "justice",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ]
+  },
+  {
+   "sphereId": "initiation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904) (Bora)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_bunjil": [
+  {
+   "sphereId": "creation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ]
+  },
+  {
+   "sphereId": "sky",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Smyth, The Aborigines of Victoria (1878)"
+    }
+   ]
+  },
+  {
+   "sphereId": "ancestral-origins",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904) (eaglehawk moiety)"
+    }
+   ]
+  },
+  {
+   "sphereId": "law",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_binbeal": [
+  {
+   "sphereId": "rainbow",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Smyth, The Aborigines of Victoria (1878)"
+    }
+   ]
+  },
+  {
+   "sphereId": "sky",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_birrahgnooloo": [
+  {
+   "sphereId": "rain",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "K. Langloh Parker, The Euahlayi Tribe (1905)"
+    }
+   ]
+  },
+  {
+   "sphereId": "motherhood",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "K. Langloh Parker, The Euahlayi Tribe (1905)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_daramulun": [
+  {
+   "sphereId": "initiation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ]
+  },
+  {
+   "sphereId": "thunder",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_waa": [
+  {
+   "sphereId": "trickery",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Smyth, The Aborigines of Victoria (1878)"
+    }
+   ]
+  },
+  {
+   "sphereId": "ancestral-origins",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904) (crow moiety)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_wagyl": [
+  {
+   "sphereId": "creation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "State Library of Western Australia, 'The Waugal'"
+    }
+   ]
+  },
+  {
+   "sphereId": "fresh-water",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "State Library of Western Australia, 'The Waugal'"
+    }
+   ]
+  },
+  {
+   "sphereId": "rivers",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "State Library of Western Australia, 'The Waugal'"
+    }
+   ]
+  }
+ ],
+ "aboriginal_wandjina": [
+  {
+   "sphereId": "rain",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Crawford, The Art of the Wandjina (1968)"
+    }
+   ]
+  },
+  {
+   "sphereId": "creation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Crawford, The Art of the Wandjina (1968)"
+    }
+   ]
+  },
+  {
+   "sphereId": "fertility",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Akerman, on Kimberley Wandjina tradition"
+    }
+   ]
+  },
+  {
+   "sphereId": "thunder-and-lightning",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Crawford, The Art of the Wandjina (1968)"
+    }
+   ]
+  }
+ ],
+ "ajaka": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Samuel Johnson, The History of the Yorubas"
+    }
+   ]
+  },
+  {
+   "sphereId": "agriculture",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Samuel Johnson, The History of the Yorubas (animal husbandry)"
+    }
+   ]
+  }
+ ],
+ "akan_anansi": [
+  {
+   "sphereId": "trickery",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Akan-Ashanti Folk-Tales (1930)"
+    }
+   ]
+  },
+  {
+   "sphereId": "wisdom",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Akan-Ashanti Folk-Tales (1930)"
+    }
+   ]
+  },
+  {
+   "sphereId": "storytelling",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Ananse' (anansesem)"
+    }
+   ]
+  }
+ ],
+ "akan_asase_yaa": [
+  {
+   "sphereId": "earth",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Ashanti (1923)"
+    }
+   ]
+  },
+  {
+   "sphereId": "fertility",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Ashanti (1923)"
+    }
+   ]
+  },
+  {
+   "sphereId": "justice",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Ashanti (1923) (oath of the earth)"
+    }
+   ]
+  }
+ ],
+ "akan_bia": [
+  {
+   "sphereId": "forest",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Meyerowitz, The Sacred State of the Akan"
+    }
+   ]
+  }
+ ],
+ "akan_aso": [
+  {
+   "sphereId": "trickery",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Akan-Ashanti Folk-Tales (1930)"
+    }
+   ]
+  }
+ ],
+ "akan_komfo_anokye": [
+  {
+   "sphereId": "prophecy",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Okomfo Anokye'"
+    }
+   ]
+  },
+  {
+   "sphereId": "sacred-kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Okomfo Anokye' (conjuring of the Golden Stool)"
+    }
+   ]
+  },
+  {
+   "sphereId": "healing-medicine",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Okomfo Anokye'"
+    }
+   ]
+  }
+ ],
+ "akan_osei_tutu_i": [
+  {
+   "sphereId": "founding-kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilks, Asante in the Nineteenth Century"
+    }
+   ]
+  },
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilks, Asante in the Nineteenth Century"
+    }
+   ]
+  }
+ ],
+ "akan_opoku_ware_i": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilks, Asante in the Nineteenth Century"
+    }
+   ]
+  },
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilks, Asante in the Nineteenth Century (imperial expansion 1720s-1750)"
+    }
+   ]
+  }
+ ],
+ "akan_prempeh_i": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Boahen, Yaa Asantewaa and the Asante-British War of 1900-1"
+    }
+   ]
+  }
+ ],
+ "akan_prempeh_ii": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilks, Asante in the Nineteenth Century (restoration of the Asantehene-ship 1935)"
+    }
+   ]
+  }
+ ],
+ "akan_yaa_asantewaa": [
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Boahen, Yaa Asantewaa and the Asante-British War of 1900-1"
+    }
+   ]
+  },
+  {
+   "sphereId": "queenship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Boahen, Yaa Asantewaa and the Asante-British War of 1900-1"
+    }
+   ]
+  }
+ ],
+ "akan_nyame": [
+  {
+   "sphereId": "sky",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Ashanti (1923)"
+    }
+   ]
+  },
+  {
+   "sphereId": "supreme-creator",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Ashanti (1923)"
+    }
+   ]
+  },
+  {
+   "sphereId": "rain",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Meyerowitz, The Sacred State of the Akan (Totrobonsu, giver of rain)"
+    }
+   ]
+  }
+ ],
+ "amani": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kendall, 'Jebel Barkal and Ancient Napata'"
+    }
+   ]
+  },
+  {
+   "sphereId": "prophecy",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Welsby, The Kingdom of Kush (oracle of Amun)"
+    }
+   ]
+  },
+  {
+   "sphereId": "creation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kendall, 'Jebel Barkal and Ancient Napata' (primeval Amun)"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_beadohild": [
+  {
+   "sphereId": "endurance-of-sorrow",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Deor, ll. 8-13"
+    }
+   ]
+  },
+  {
+   "sphereId": "motherhood-of-the-hero",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Deor; Völundarkviða (mother of Widia/Viðga)"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_ecgtheow": [
+  {
+   "sphereId": "feud-and-exile",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 459-472"
+    }
+   ]
+  },
+  {
+   "sphereId": "fatherhood-of-the-hero",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 262-266, 372-375"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_haethcyn": [
+  {
+   "sphereId": "kingship-of-the-geats",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2434-2483"
+    }
+   ]
+  },
+  {
+   "sphereId": "accidental-kinslaying",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2435-2443"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_heardred": [
+  {
+   "sphereId": "kingship-of-the-geats",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2202-2206, 2379-2390"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_herebeald": [
+  {
+   "sphereId": "the-irremediable-death",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2435-2443"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_hrethel": [
+  {
+   "sphereId": "kingship-of-the-geats",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2425-2471"
+    }
+   ]
+  },
+  {
+   "sphereId": "fostering-of-the-hero",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2428-2434"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_hygelac": [
+  {
+   "sphereId": "kingship-of-the-geats",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 1830-1839, 2190-2199"
+    }
+   ]
+  },
+  {
+   "sphereId": "the-fatal-raid",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Gregory of Tours, History of the Franks III.3; Beowulf ll. 2354-2366"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_nithhad": [
+  {
+   "sphereId": "tyranny-and-captivity",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Deor, ll. 1-13; Völundarkviða"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_widia": [
+  {
+   "sphereId": "heroic-warfare",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Widsith, ll. 124-130; Waldere"
+    }
+   ]
+  },
+  {
+   "sphereId": "descent-from-the-divine-smith",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Waldere fragment II (son of Weland)"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_wiglaf": [
+  {
+   "sphereId": "loyalty-and-the-comitatus",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2602-2660"
+    }
+   ]
+  },
+  {
+   "sphereId": "succession-and-heirship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Beowulf, ll. 2809-2820"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_wade": [
+  {
+   "sphereId": "the-sea-crossing",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Þiðreks saga af Bern; Chaucer, The Merchant's Tale (allusion to Wade's boat)"
+    }
+   ]
+  },
+  {
+   "sphereId": "giant-kindred",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Þiðreks saga (son of Wilkinus and the sea-woman Wachilt)"
+    }
+   ]
+  }
+ ],
+ "arabian_al_uzza": [
+  {
+   "sphereId": "war-and-protection",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam"
+    }
+   ]
+  },
+  {
+   "sphereId": "morning-star-venus",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Nabataean and Sinaitic inscriptions equating al-'Uzza with Aphrodite/Venus"
+    }
+   ]
+  },
+  {
+   "sphereId": "oracle",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam (shrine of Buss)"
+    }
+   ]
+  }
+ ],
+ "arabian_allat": [
+  {
+   "sphereId": "fertility-and-the-harvest",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. F. Healey, The Religion of the Nabataeans (2001)"
+    }
+   ]
+  },
+  {
+   "sphereId": "war",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Palmyrene iconography of Allat as Athena with spear and aegis"
+    }
+   ]
+  },
+  {
+   "sphereId": "sanctuary-and-refuge",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam (haram at al-Ta'if)"
+    }
+   ]
+  }
+ ],
+ "arabian_antara": [
+  {
+   "sphereId": "heroic-warfare",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "The Mu'allaqa of 'Antara"
+    }
+   ]
+  },
+  {
+   "sphereId": "poetry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "The Mu'allaqa of 'Antara"
+    }
+   ]
+  },
+  {
+   "sphereId": "chivalry-and-courtly-love",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Sirat 'Antar (folk epic)"
+    }
+   ]
+  }
+ ],
+ "arabian_hatim_al_tai": [
+  {
+   "sphereId": "generosity-and-hospitality",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kitab al-Aghani; Encyclopaedia Iranica, 'Hatem Ta'i'"
+    }
+   ]
+  },
+  {
+   "sphereId": "poetry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Diwan attributed to Hatim al-Ta'i"
+    }
+   ]
+  }
+ ],
+ "arabian_abla": [
+  {
+   "sphereId": "thwarted-love",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Sirat 'Antar; the Mu'allaqa of 'Antara"
+    }
+   ]
+  }
+ ],
+ "arabian_hubal": [
+  {
+   "sphereId": "divination",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam (the seven divining-arrows before Hubal)"
+    }
+   ]
+  },
+  {
+   "sphereId": "fate",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam"
+    }
+   ]
+  },
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn Hisham, al-Sira (Battle of Uhud, the cry to Hubal)"
+    }
+   ]
+  }
+ ],
+ "arabian_imru_al_qais": [
+  {
+   "sphereId": "poetry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kitab al-Aghani; Arberry, The Seven Odes (1957)"
+    }
+   ]
+  },
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Imru' al-Qais, Diwan; he sought to recover his father's Kindite kingship"
+    }
+   ]
+  }
+ ],
+ "armenian_amasia": [
+  {
+   "sphereId": "ancestry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Movses Khorenatsi, History of the Armenians 1.12 (eponym of Masis/Ararat)"
+    }
+   ]
+  }
+ ],
+ "armenian_gegham": [
+  {
+   "sphereId": "ancestry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Movses Khorenatsi, History of the Armenians 1.12 (eponym of Lake/Mts Gegham and Gegharkunik)"
+    }
+   ]
+  }
+ ],
+ "armenian_harma": [
+  {
+   "sphereId": "ancestry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Movses Khorenatsi, History of the Armenians 1.12 (father of Aram)"
+    }
+   ]
+  }
+ ],
+ "armenian_aramaneak": [
+  {
+   "sphereId": "ancestry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Movses Khorenatsi, History of the Armenians 1.11-12 (son of Hayk, settler of Aragatsotn)"
+    }
+   ]
+  }
+ ],
+ "armenian_sisak": [
+  {
+   "sphereId": "ancestry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Movses Khorenatsi, History of the Armenians 1.12 (eponym of Sisakan/Syunik)"
+    }
+   ]
+  }
+ ],
+ "armenian_tsovinar": [
+  {
+   "sphereId": "water-rivers",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Armenian water-goddess tradition (Tsovinar/Nar); Russell, Zoroastrianism in Armenia (1987)"
+    }
+   ]
+  },
+  {
+   "sphereId": "thunder-lightning",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Abeghian, on Tsovinar as personification of thunder and lightning"
+    }
+   ]
+  }
+ ],
+ "aymara_inti": [
+  {
+   "sphereId": "sky",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Bernabé Cobo, Historia del Nuevo Mundo (1653)"
+    }
+   ]
+  }
+ ],
+ "aztec_centeotl": [
+  {
+   "sphereId": "fertility",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 1"
+    }
+   ]
+  }
+ ],
+ "aztec_tonatiuh": [
+  {
+   "sphereId": "east-and-daytime-sky",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Read & González, Mesoamerican Mythology"
+    }
+   ]
+  }
+ ],
+ "aztec_xipe_totec": [
+  {
+   "sphereId": "maize-and-seeds",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Sahagún, Florentine Codex, Book 1"
+    }
+   ]
+  }
+ ],
+ "babalu_aye": [
+  {
+   "sphereId": "earth-and-the-cold-ground",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Thompson, Flash of the Spirit"
+    }
+   ]
+  }
+ ],
+ "balinese_rangda": [
+  {
+   "sphereId": "leyak-witchcraft",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Belo, Bali: Rangda and Barong"
+    }
+   ]
+  }
+ ],
+ "bambara_mousso_koroni": [
+  {
+   "sphereId": "sorcery-and-magic",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dieterlen, Essai sur la religion bambara"
+    }
+   ]
+  },
+  {
+   "sphereId": "plants-and-fertility",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Zahan, The Bambara"
+    }
+   ]
+  }
+ ],
+ "bambara_ndomadyiri": [
+  {
+   "sphereId": "trees-and-remedies",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dieterlen, Essai sur la religion bambara"
+    }
+   ]
+  }
+ ],
+ "banyaruanda_gihanga": [
+  {
+   "sphereId": "culture-hero-civilization",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vansina, Antecedents to Modern Rwanda"
+    }
+   ]
+  }
+ ],
+ "basque_basajaun": [
+  {
+   "sphereId": "agriculture-and-craft",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ]
+  }
+ ],
+ "bicolano_gugurang": [
+  {
+   "sphereId": "supreme-creator",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+    }
+   ]
+  },
+  {
+   "sphereId": "sacred-fire",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+    }
+   ]
+  },
+  {
+   "sphereId": "volcano-and-judgment",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+    }
+   ]
+  }
+ ],
+ "bicolano_handyong": [
+  {
+   "sphereId": "culture-hero-and-civilization",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Espinas, Merito B. (1996). Ibalong: The Bikol Folk Epic-Fragment."
+    }
+   ]
+  },
+  {
+   "sphereId": "law-and-agriculture",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Espinas, Merito B. (1996). Ibalong: The Bikol Folk Epic-Fragment."
+    }
+   ]
+  }
+ ],
+ "buddhist_arati": [
+  {
+   "sphereId": "temptation-and-aversion",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Saṃyutta Nikāya 4.25, Māradhītu Sutta."
+    }
+   ]
+  }
+ ],
+ "berber_anti": [
+  {
+   "sphereId": "wrestling-and-combat",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Isthmian 4."
+    }
+   ]
+  }
+ ],
+ "berber_ifri": [
+  {
+   "sphereId": "fertility-and-abundance",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+    }
+   ]
+  },
+  {
+   "sphereId": "land-and-homeland",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+    }
+   ]
+  }
+ ],
+ "bemba_chitimukulu": [
+  {
+   "sphereId": "ancestral-spirits",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Richards, Audrey I. (1969). Bemba religion."
+    }
+   ]
+  }
+ ],
+ "blackfoot_natosi": [
+  {
+   "sphereId": "sky-and-celestial-order",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ]
+  }
+ ],
+ "bicolano_magindara": [
+  {
+   "sphereId": "sea-and-weather",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Espinas, Merito B. (1996). Ibalong: The Bikol Folk Epic-Fragment."
+    }
+   ]
+  }
+ ],
+ "batak_mangalabulan": [
+  {
+   "sphereId": "strength-and-war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+    }
+   ]
+  }
+ ],
+ "buddhist_raga": [
+  {
+   "sphereId": "passion-desire",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Saṃyutta Nikāya, Dhītaro-sutta (SN 4.25)"
+    }
+   ]
+  },
+  {
+   "sphereId": "temptation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Buddhacarita of Aśvaghoṣa, canto XIII–XV"
+    }
+   ]
+  }
+ ],
+ "buddhist_tanha": [
+  {
+   "sphereId": "craving-thirst",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Saṃyutta Nikāya, Dhītaro-sutta (SN 4.25)"
+    }
+   ]
+  },
+  {
+   "sphereId": "temptation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Buddhacarita of Aśvaghoṣa, canto XIII–XV"
+    }
+   ]
+  }
+ ],
+ "buganda_kayikuuzi": [
+  {
+   "sphereId": "underworld-digging",
+   "contextTag": "episodic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kintu cycle; Ttanda pits tradition, Buganda"
+    }
+   ]
+  },
+  {
+   "sphereId": "pursuit-of-death",
+   "contextTag": "episodic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roscoe, The Baganda (1911), Kintu cycle"
+    }
+   ]
+  }
+ ],
+ "bunyoro_isaza": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bunyoro-Kitara Batembuzi king-list tradition"
+    }
+   ]
+  }
+ ],
+ "bunyoro_isimbwa": [
+  {
+   "sphereId": "underworld-passage",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bunyoro-Kitara dynastic tradition (Batembuzi–Bacwezi hinge)"
+    }
+   ]
+  }
+ ],
+ "bunyoro_nyamata": [
+  {
+   "sphereId": "ancestry-lineage",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bunyoro-Kitara dynastic tradition"
+    }
+   ]
+  }
+ ],
+ "buganda_ggulu": [
+  {
+   "sphereId": "creation-progenitor",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kintu cycle, Buganda (Roscoe, The Baganda, 1911)"
+    }
+   ]
+  }
+ ],
+ "canaanite_resheph": [
+  {
+   "sphereId": "underworld",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopaedia Britannica, s.v. 'Resheph' (equated with Nergal)"
+    }
+   ]
+  }
+ ],
+ "chinese_caishen": [
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Zhao Gongming' (the Military God of Wealth, armoured marshal)"
+    }
+   ]
+  }
+ ],
+ "chamorro_chaifi": [
+  {
+   "sphereId": "underworld",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Guampedia, 'Chaife's Lost Soul' (lord of Sasalaguan)"
+    }
+   ]
+  }
+ ],
+ "cherokee_unelanuhi": [
+  {
+   "sphereId": "time",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "James Mooney, Myths of the Cherokee (1900) — Une'lanu'hi, 'the Apportioner'"
+    }
+   ]
+  }
+ ],
+ "chinese_houji": [
+  {
+   "sphereId": "agriculture",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shijing, 'Shengmin' ode"
+    }
+   ]
+  },
+  {
+   "sphereId": "grain",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shijing, 'Shengmin' ode"
+    }
+   ]
+  }
+ ],
+ "chinese_leizu": [
+  {
+   "sphereId": "sericulture",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Standard sericulture-origin tradition"
+    }
+   ]
+  },
+  {
+   "sphereId": "silk",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Standard sericulture-origin tradition"
+    }
+   ]
+  }
+ ],
+ "chinese_yao": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shangshu, 'Canon of Yao'"
+    }
+   ]
+  },
+  {
+   "sphereId": "calendar",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shangshu, 'Canon of Yao'"
+    }
+   ]
+  }
+ ],
+ "chinese_yu_the_great": [
+  {
+   "sphereId": "flood-control",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shangshu, 'Yu gong'"
+    }
+   ]
+  },
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji, 'Annals of the Xia'"
+    }
+   ]
+  }
+ ],
+ "chinese_zhurong": [
+  {
+   "sphereId": "summer",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Huainanzi; Five-Phase directional cosmology"
+    }
+   ]
+  }
+ ],
+ "chinese_ehuang": [
+  {
+   "sphereId": "rivers",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Chuci, 'Jiuge'"
+    }
+   ]
+  }
+ ],
+ "chinese_nuying": [
+  {
+   "sphereId": "rivers",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Chuci, 'Jiuge'"
+    }
+   ]
+  }
+ ],
+ "dine_changing_woman": [
+  {
+   "sphereId": "fertility-and-creation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Asdzą́ą́ Nádleehé'"
+    }
+   ]
+  },
+  {
+   "sphereId": "seasons-and-renewal",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopedia.com, 'Changing Woman'"
+    }
+   ]
+  },
+  {
+   "sphereId": "earth-and-land",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Asdzą́ą́ Nádleehé'"
+    }
+   ]
+  },
+  {
+   "sphereId": "women-and-initiation",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "The Tony Hillerman Portal, 'Changing Woman' (Kinaaldá)"
+    }
+   ]
+  }
+ ],
+ "dine_johonaai": [
+  {
+   "sphereId": "sun",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Diné Bahaneʼ'"
+    }
+   ]
+  },
+  {
+   "sphereId": "sky",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Diné Bahaneʼ'"
+    }
+   ]
+  },
+  {
+   "sphereId": "fatherhood-and-lineage",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Nayenezgani'"
+    }
+   ]
+  }
+ ],
+ "dine_monster_slayer": [
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Nayenezgani'"
+    }
+   ]
+  },
+  {
+   "sphereId": "monster-slaying",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Diné Bahaneʼ'"
+    }
+   ]
+  },
+  {
+   "sphereId": "protection",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "navajopeople.org, 'Navajo Mythology Twins – Monster Slayer'"
+    }
+   ]
+  }
+ ],
+ "dine_born_for_water": [
+  {
+   "sphereId": "water",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Diné Bahaneʼ'"
+    }
+   ]
+  },
+  {
+   "sphereId": "protection",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "The Navajo Twins (Ancient Origins)"
+    }
+   ]
+  },
+  {
+   "sphereId": "healing-and-restoration",
+   "contextTag": "ritual",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Diné Bahaneʼ'"
+    }
+   ]
+  }
+ ],
+ "dine_spider_woman": [
+  {
+   "sphereId": "weaving",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "native-languages.org, 'Spider Woman'"
+    }
+   ]
+  },
+  {
+   "sphereId": "wisdom",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Spider Grandmother'"
+    }
+   ]
+  },
+  {
+   "sphereId": "protection",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "newmexicoculture.org, 'Spider Woman's Gift'"
+    }
+   ]
+  }
+ ],
+ "circassian_sosruquo": [
+  {
+   "sphereId": "culture-hero",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Sosruko'"
+    }
+   ]
+  }
+ ],
+ "circassian_shible": [
+  {
+   "sphereId": "sacred-groves",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Jaimoukha, 'Ancient Circassian Religion' (oocities.org)"
+    }
+   ]
+  }
+ ],
+ "e_bangishimog": [
+  {
+   "sphereId": "wind",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Schoolcraft, Algic Researches (1839)"
+    }
+   ]
+  },
+  {
+   "sphereId": "weather",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Schoolcraft, Algic Researches (1839)"
+    }
+   ]
+  }
+ ],
+ "edo_esu": [
+  {
+   "sphereId": "crossroads",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bradbury, The Benin Kingdom and the Edo-Speaking Peoples (1957)"
+    }
+   ]
+  },
+  {
+   "sphereId": "chance-fortune",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bradbury, The Benin Kingdom and the Edo-Speaking Peoples (1957)"
+    }
+   ]
+  }
+ ],
+ "egyptian_horus": [
+  {
+   "sphereId": "healing",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Metternich Stela (Horus-on-the-crocodiles cippi)"
+    }
+   ]
+  }
+ ],
+ "egyptian_amun": [
+  {
+   "sphereId": "creation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Leiden Hymns to Amun (Papyrus Leiden I 350)"
+    }
+   ]
+  },
+  {
+   "sphereId": "wind-air",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  },
+  {
+   "sphereId": "fertility",
+   "contextTag": "aspect",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  }
+ ],
+ "egyptian_hatshepsut": [
+  {
+   "sphereId": "kingship-pharaonic",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Deir el-Bahari temple reliefs"
+    }
+   ]
+  },
+  {
+   "sphereId": "trade-expedition",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Punt expedition reliefs, Deir el-Bahari"
+    }
+   ]
+  }
+ ],
+ "egyptian_amenhotep_iii": [
+  {
+   "sphereId": "kingship-pharaonic",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Luxor Temple birth-cycle reliefs"
+    }
+   ]
+  },
+  {
+   "sphereId": "monumental-building",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Colossi of Memnon; Luxor Temple"
+    }
+   ]
+  }
+ ],
+ "egyptian_imhotep": [
+  {
+   "sphereId": "medicine",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wildung, Imhotep und Amenhotep (1977)"
+    }
+   ]
+  },
+  {
+   "sphereId": "architecture",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Step Pyramid enclosure, Saqqara; statue-base of Djoser naming Imhotep"
+    }
+   ]
+  },
+  {
+   "sphereId": "wisdom-knowledge",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wildung, Imhotep und Amenhotep (1977)"
+    }
+   ]
+  }
+ ]
+};
+const EPITHET_SWEEP = {
+ "abar": [
+  {
+   "original": "mwt nswt",
+   "rom": "mut nesut",
+   "gloss": "King's Mother",
+   "language": "Egyptian",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kawa Stela V; Lohwasser, 'Royal Sisters and royal legitimization in the Nubian period'"
+    }
+   ]
+  },
+  {
+   "original": "snt nswt",
+   "rom": "senet nesut",
+   "gloss": "King's Sister",
+   "language": "Egyptian",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kawa Stela V; Lohwasser, 'Royal Sisters and royal legitimization in the Nubian period'"
+    }
+   ]
+  },
+  {
+   "original": "hnwt Sma' mhw",
+   "rom": "henut Shemau Mehu",
+   "gloss": "Lady of Upper and Lower Egypt",
+   "language": "Egyptian",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Stela of Abar; Wikipedia, 'Abar (queen)'"
+    }
+   ]
+  }
+ ],
+ "aboriginal_baiame": [
+  {
+   "original": "Byamee",
+   "rom": "Byamee",
+   "gloss": "the All-Father / Maker",
+   "language": "Yuwaalaraay",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "K. Langloh Parker, The Euahlayi Tribe (1905)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_bunjil": [
+  {
+   "original": "Mami-ngata",
+   "rom": "Mami-ngata",
+   "gloss": "Our Father",
+   "language": "Woiwurrung",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ]
+  }
+ ],
+ "aganju": [
+  {
+   "original": "Ọba ọnà",
+   "rom": "Oba ona",
+   "gloss": "King of the Roads",
+   "language": "Yoruba",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Original Botanica, 'Aganju (Agayu), Orisha of Volcanoes and Wilderness'"
+    }
+   ]
+  }
+ ],
+ "akan_anansi": [
+  {
+   "original": "Ɔkwaku Ananse",
+   "rom": "Kwaku Ananse",
+   "gloss": "Ananse, the one born on Wednesday",
+   "language": "Akan (Twi)",
+   "contextTag": "common",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Anansi'; Britannica, 'Ananse'"
+    }
+   ]
+  }
+ ],
+ "akan_tano": [
+  {
+   "original": "Ta Kora",
+   "rom": "Ta Kora",
+   "gloss": "great/immense father (senior of the atano)",
+   "language": "Akan (Twi)",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tano (Ta Kora)'"
+    }
+   ]
+  }
+ ],
+ "akan_nyame": [
+  {
+   "original": "Totrobonsu",
+   "rom": "Totrobonsu",
+   "gloss": "the Giver of Rain",
+   "language": "Akan (Twi)",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Meyerowitz, The Sacred State of the Akan"
+    }
+   ]
+  },
+  {
+   "original": "Amowia",
+   "rom": "Amowia",
+   "gloss": "the Giver of the Sun",
+   "language": "Akan (Twi)",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Meyerowitz, The Sacred State of the Akan"
+    }
+   ]
+  }
+ ],
+ "amani": [
+  {
+   "original": "Imn npt",
+   "rom": "Amun of Napata",
+   "gloss": "Amun who dwells in the Pure Mountain",
+   "language": "Egyptian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kendall, 'Jebel Barkal and Ancient Napata'"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_seaxneat": [
+  {
+   "original": "Seaxnēat",
+   "rom": "Seaxneat",
+   "gloss": "Sword-companion (companion of the seax/long-knife)",
+   "language": "Old English",
+   "contextTag": "genealogical",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Anglo-Saxon royal genealogy of Essex (Textus Roffensis); Old Saxon Baptismal Vow (Saxnôt)"
+    }
+   ]
+  }
+ ],
+ "apache_killer_of_enemies": [
+  {
+   "original": "Naayéé'neizghání",
+   "rom": "Naayee'neizghani",
+   "gloss": "Monster-Slayer / Killer of Enemies",
+   "language": "Apache",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Morris E. Opler, 'Athapaskan Culture Heroes' (1938)"
+    }
+   ]
+  }
+ ],
+ "apache_black_hactcin": [
+  {
+   "original": "Hậctcin Diłhił",
+   "rom": "Hactcin Dilhil",
+   "gloss": "Black Hactcin (the black Holy One of the underworld)",
+   "language": "Apache (Jicarilla)",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Morris E. Opler, Myths and Tales of the Jicarilla Apache Indians (1938)"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_woden": [
+  {
+   "original": "Grīm",
+   "rom": "Grim",
+   "gloss": "the Masked One / Hooded One",
+   "language": "Old English",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "English place-names in Grim- (Grimsdyke, Grimsby); cf. Old Norse Grímnir"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_tiw": [
+  {
+   "original": "Tīr",
+   "rom": "Tir",
+   "gloss": "glory; the victory-rune named for the god",
+   "language": "Old English",
+   "contextTag": "liturgical",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Old English Rune Poem, 'Tir bith tacna sum'"
+    }
+   ]
+  },
+  {
+   "original": "Mars",
+   "rom": "Mars",
+   "gloss": "equated with Roman Mars in glosses (dies Martis > Tiwesdæg)",
+   "language": "Latin",
+   "contextTag": "interpretatio",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Old English glosses rendering Mars by Tig/Tiw"
+    }
+   ]
+  }
+ ],
+ "arabian_al_uzza": [
+  {
+   "original": "العزّى",
+   "rom": "al-'Uzza",
+   "gloss": "the Mightiest (feminine of al-A'azz)",
+   "language": "Arabic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam"
+    }
+   ]
+  }
+ ],
+ "arabian_allat": [
+  {
+   "original": "اللات",
+   "rom": "Allat",
+   "gloss": "the Goddess (al-ilaha)",
+   "language": "Arabic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam; cf. Herodotus' Alilat"
+    }
+   ]
+  },
+  {
+   "original": "الربّة",
+   "rom": "al-Rabba",
+   "gloss": "the Lady (of the temple, at Palmyra)",
+   "language": "Arabic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Palmyrene dedications to Allat as 'the Lady'"
+    }
+   ]
+  }
+ ],
+ "arabian_antara": [
+  {
+   "original": "عنترة الفوارس",
+   "rom": "'Antarat al-Fawaris",
+   "gloss": "'Antara of the Horsemen",
+   "language": "Arabic",
+   "contextTag": "epic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Sirat 'Antar"
+    }
+   ]
+  },
+  {
+   "original": "أبو الفوارس",
+   "rom": "Abu al-Fawaris",
+   "gloss": "Father of the Knights",
+   "language": "Arabic",
+   "contextTag": "epic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Sirat 'Antar"
+    }
+   ]
+  }
+ ],
+ "arabian_hatim_al_tai": [
+  {
+   "original": "أجود من حاتم",
+   "rom": "ajwadu min Hatim",
+   "gloss": "'more generous than Hatim' (proverbial)",
+   "language": "Arabic",
+   "contextTag": "proverb",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "al-Maydani, Majma' al-Amthal (proverb collection)"
+    }
+   ]
+  }
+ ],
+ "apache_white_painted_woman": [
+  {
+   "original": "'Isdzánátł'éshn",
+   "rom": "Isdzanatl'eshn",
+   "gloss": "White-Painted Woman",
+   "language": "Apache (Chiricahua)",
+   "contextTag": "ceremonial",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Morris E. Opler, An Apache Life-Way (1941)"
+    }
+   ]
+  }
+ ],
+ "arabian_hubal": [
+  {
+   "original": "هبل",
+   "rom": "Hubal",
+   "gloss": "the great idol of the Ka'ba; chief god of the Quraysh",
+   "language": "Arabic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam"
+    }
+   ]
+  }
+ ],
+ "arabian_imru_al_qais": [
+  {
+   "original": "الملك الضليل",
+   "rom": "al-Malik al-Ḍillīl",
+   "gloss": "the Errant/Vagabond King (he who never regained his throne)",
+   "language": "Arabic",
+   "contextTag": "epic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kitab al-Aghani; Encyclopaedia of Islam, s.v. Imru' al-Kays"
+    }
+   ]
+  },
+  {
+   "original": "ذو القروح",
+   "rom": "Dhu al-Quruh",
+   "gloss": "the Man of Ulcers (the sores said to have killed him)",
+   "language": "Arabic",
+   "contextTag": "epic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kitab al-Aghani; Encyclopaedia of Islam, s.v. Imru' al-Kays"
+    }
+   ]
+  }
+ ],
+ "aramean_atargatis": [
+  {
+   "original": "Dea Syria",
+   "rom": "Dea Syria",
+   "gloss": "the Syrian Goddess",
+   "language": "Latin",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Lucian (attrib.), De Dea Syria"
+    }
+   ]
+  },
+  {
+   "original": "Δερκετώ",
+   "rom": "Derketo",
+   "gloss": "Derceto, the fish-goddess form of Ascalon",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Diodorus Siculus 2.4; Lucian, De Dea Syria §14"
+    }
+   ]
+  }
+ ],
+ "aramean_hadad": [
+  {
+   "original": "Baʿal-Hadad",
+   "rom": "Baʿal-Hadad",
+   "gloss": "Lord Hadad",
+   "language": "Northwest Semitic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic Baal Cycle (KTU 1.1-1.6)"
+    }
+   ]
+  },
+  {
+   "original": "רמן",
+   "rom": "Rammān",
+   "gloss": "the Thunderer",
+   "language": "Aramaic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "2 Kings 5:18 (Rimmon); Akkadian Ramman/Adad"
+    }
+   ]
+  }
+ ],
+ "aramean_rakib_el": [
+  {
+   "original": "rkb-ʾl",
+   "rom": "Rākib-ʾEl",
+   "gloss": "Charioteer of El; Lord of the (royal) House",
+   "language": "Samalian Aramaic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kilamuwa Stela (KAI 24); Bar-Rakib inscriptions (KAI 216-218)"
+    }
+   ]
+  }
+ ],
+ "aymara_tunupa": [
+  {
+   "original": "Tarapacá",
+   "rom": "Tarapacá",
+   "gloss": "the wandering civilizer (a by-name merged with Viracocha)",
+   "language": "Aymara/Quechua",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Joan de Santa Cruz Pachacuti Yamqui, Relación (c. 1613)"
+    }
+   ]
+  }
+ ],
+ "aztec_coyolxauhqui": [
+  {
+   "original": "Coyolxāuhqui",
+   "rom": "Coyolxauhqui",
+   "gloss": "Painted-with-Bells / She-of-the-Golden-Bells",
+   "language": "Nahuatl",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Miller & Taube, The Gods and Symbols of Ancient Mexico and the Maya (1993)"
+    }
+   ]
+  }
+ ],
+ "aztec_centeotl": [
+  {
+   "original": "Centeōtl",
+   "rom": "Centeotl",
+   "gloss": "the Maize-Cob God",
+   "language": "Nahuatl",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 1"
+    }
+   ]
+  }
+ ],
+ "aztec_mictecacihuatl": [
+  {
+   "original": "Mictēcacihuātl",
+   "rom": "Mictecacihuatl",
+   "gloss": "Lady of the Dead",
+   "language": "Nahuatl",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 3, Appendix"
+    }
+   ]
+  },
+  {
+   "original": "Mictlāncihuātl",
+   "rom": "Mictlancihuatl",
+   "gloss": "Lady of Mictlan",
+   "language": "Nahuatl",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Codex Borgia; Miller & Taube (1993)"
+    }
+   ]
+  }
+ ],
+ "armenian_tsovinar": [
+  {
+   "original": "Նար",
+   "rom": "Nar",
+   "gloss": "Nar, the Lady of the (Sea-)Waters",
+   "language": "Armenian",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Russell, Zoroastrianism in Armenia (1987); Abeghian"
+    }
+   ]
+  }
+ ],
+ "asturian_aernus": [
+  {
+   "original": "Deus Aernus",
+   "rom": "Deus Aernus",
+   "gloss": "the god Aernus (protector of the Zoelae)",
+   "language": "Latin",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Latin votive inscriptions to Deus Aernus, Zoelae territory (CIL II; Hispania Epigraphica)"
+    }
+   ]
+  }
+ ],
+ "aztec_tonatiuh": [
+  {
+   "original": "Tōnatiuh",
+   "rom": "Tonatiuh",
+   "gloss": "He Who Goes Forth Shining",
+   "language": "Nahuatl",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Read & González, Mesoamerican Mythology"
+    }
+   ]
+  }
+ ],
+ "aztec_tlaltecuhtli": [
+  {
+   "original": "Tlāltēuctli",
+   "rom": "Tlaltecuhtli",
+   "gloss": "Earth Lord",
+   "language": "Nahuatl",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Smarthistory, Monolith of Tlaltecuhtli (Earth Lord)"
+    }
+   ]
+  }
+ ],
+ "babalu_aye": [
+  {
+   "original": "Ṣọ̀pọ̀nná",
+   "rom": "Sopona",
+   "gloss": "smallpox / the god of smallpox",
+   "language": "Yoruba",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Idowu, Olódùmarè: God in Yoruba Belief"
+    }
+   ]
+  },
+  {
+   "original": "Asòjaanò",
+   "rom": "Asojano",
+   "gloss": "byname of the disease-orisha (Arará/Lucumí)",
+   "language": "Yoruba",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Brown, Santería Enthroned"
+    }
+   ]
+  }
+ ],
+ "balinese_batara_guru": [
+  {
+   "original": "Bhaṭāra Guru",
+   "rom": "Batara Guru",
+   "gloss": "Divine Teacher / Lord Preceptor",
+   "language": "Old Javanese",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hooykaas, Cosmogony and Creation in Balinese Tradition"
+    }
+   ]
+  }
+ ],
+ "banyaruanda_imana": [
+  {
+   "original": "Rurema",
+   "rom": "Rurema",
+   "gloss": "the Creator",
+   "language": "Kinyarwanda",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maquet, The Premise of Inequality in Ruanda"
+    }
+   ]
+  },
+  {
+   "original": "Rugaba",
+   "rom": "Rugaba",
+   "gloss": "the Generous Provider",
+   "language": "Kinyarwanda",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maquet, The Premise of Inequality in Ruanda"
+    }
+   ]
+  },
+  {
+   "original": "Habyarimana",
+   "rom": "Habyarimana",
+   "gloss": "the sole giver of children",
+   "language": "Kinyarwanda",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maquet, The Premise of Inequality in Ruanda"
+    }
+   ]
+  },
+  {
+   "original": "Iyakare",
+   "rom": "Iyakare",
+   "gloss": "the One at the Origin",
+   "language": "Kinyarwanda",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maquet, The Premise of Inequality in Ruanda"
+    }
+   ]
+  }
+ ],
+ "banyaruanda_nkuba": [
+  {
+   "original": "Umwami wo Hejuru",
+   "rom": "Umwami wo Hejuru",
+   "gloss": "the King of the Sky",
+   "language": "Kinyarwanda",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda"
+    }
+   ]
+  }
+ ],
+ "banyaruanda_gihanga": [
+  {
+   "original": "Gihanga Ngomijana",
+   "rom": "Gihanga Ngomijana",
+   "gloss": "Gihanga of the hundred drums / the Founder",
+   "language": "Kinyarwanda",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vansina, Antecedents to Modern Rwanda"
+    }
+   ]
+  }
+ ],
+ "basque_aatxe": [
+  {
+   "original": "Aatxegorri",
+   "rom": "Aatxegorri",
+   "gloss": "red young bull",
+   "language": "Basque",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ]
+  },
+  {
+   "original": "Etsai",
+   "rom": "Etsai",
+   "gloss": "the Enemy",
+   "language": "Basque",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ]
+  }
+ ],
+ "basque_eguzki": [
+  {
+   "original": "Ekhi",
+   "rom": "Ekhi",
+   "gloss": "the Sun",
+   "language": "Basque",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ]
+  }
+ ],
+ "basque_basajaun": [
+  {
+   "original": "Baso Jaun",
+   "rom": "Basajaun",
+   "gloss": "Lord of the Forest",
+   "language": "Basque",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ]
+  }
+ ],
+ "basque_sugaar": [
+  {
+   "original": "Maju",
+   "rom": "Maju",
+   "gloss": "alternate name of the serpent-consort of Mari",
+   "language": "Basque",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, José Miguel de (1972). Diccionario ilustrado de mitología vasca."
+    }
+   ]
+  },
+  {
+   "original": "Sugoi",
+   "rom": "Sugoi",
+   "gloss": "'serpent' / 'male serpent', byform of the name",
+   "language": "Basque",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hartsuaga, Juan Inazio (1987). Euskal mitologia konparatua."
+    }
+   ]
+  }
+ ],
+ "basque_tartalo": [
+  {
+   "original": "Tartaro",
+   "rom": "Tartaro",
+   "gloss": "common byform of the one-eyed giant's name",
+   "language": "Basque",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Webster, Wentworth (1877). Basque Legends."
+    }
+   ]
+  },
+  {
+   "original": "Torto",
+   "rom": "Torto",
+   "gloss": "dialectal byform of the name",
+   "language": "Basque",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, José Miguel de (1972). Diccionario ilustrado de mitología vasca."
+    }
+   ]
+  }
+ ],
+ "buddhist_dhrtarastra": [
+  {
+   "original": "持國天",
+   "rom": "Chíguó Tiān",
+   "gloss": "'Heavenly King who upholds the realm'",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Soothill & Hodous (1937). A Dictionary of Chinese Buddhist Terms, s.v. 持國天."
+    }
+   ]
+  },
+  {
+   "original": "Gandhabbarāja",
+   "rom": "Gandhabbarāja",
+   "gloss": "'king of the gandharvas (celestial musicians)'",
+   "language": "Pali",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Dīgha Nikāya 32, Āṭānāṭiya Sutta."
+    }
+   ]
+  }
+ ],
+ "buddhist_brahma_sahampati": [
+  {
+   "original": "Sahāṃpati",
+   "rom": "Sahampati",
+   "gloss": "'Lord of the Sahā world'",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Saṃyutta Nikāya 6.1, Āyācana Sutta."
+    }
+   ]
+  }
+ ],
+ "buddhist_mara": [
+  {
+   "original": "Māra Pāpīyas",
+   "rom": "Māra Pāpīyas",
+   "gloss": "'Māra the Evil One / more wicked'",
+   "language": "Pali",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Padhāna Sutta, Suttanipāta 3.2."
+    }
+   ]
+  },
+  {
+   "original": "Namuci",
+   "rom": "Namuci",
+   "gloss": "'he who does not let go', name shared with a Vedic demon",
+   "language": "Pali",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Padhāna Sutta, Suttanipāta 3.2."
+    }
+   ]
+  }
+ ],
+ "berber_anti": [
+  {
+   "original": "Antaîos",
+   "rom": "Antaios",
+   "gloss": "Greek form of the Libyan giant's name",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 2.5.11."
+    }
+   ]
+  }
+ ],
+ "berber_ifri": [
+  {
+   "original": "Dea Africa",
+   "rom": "Dea Africa",
+   "gloss": "'the African Goddess'",
+   "language": "Latin",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+    }
+   ]
+  },
+  {
+   "original": "Dea Patria",
+   "rom": "Dea Patria",
+   "gloss": "'Goddess of the Homeland' (at Timgad)",
+   "language": "Latin",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+    }
+   ]
+  }
+ ],
+ "bemba_chitimukulu": [
+  {
+   "original": "Chitimukulu",
+   "rom": "Chitimukulu",
+   "gloss": "'the Great Tree', title of the Bemba paramount",
+   "language": "Bemba",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roberts, Andrew D. (1973). A History of the Bemba."
+    }
+   ]
+  }
+ ],
+ "blackfoot_napi": [
+  {
+   "original": "Na'pi",
+   "rom": "Napi",
+   "gloss": "'Old Man'",
+   "language": "Blackfoot",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ]
+  }
+ ],
+ "blackfoot_natosi": [
+  {
+   "original": "Naato'si",
+   "rom": "Natosi",
+   "gloss": "'the Sun' / 'the Holy One'",
+   "language": "Blackfoot",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ]
+  }
+ ],
+ "blackfoot_kokomikisomm": [
+  {
+   "original": "Ko'komiki'somm",
+   "rom": "Kokomikisomm",
+   "gloss": "'the Moon' / 'night light'",
+   "language": "Blackfoot",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ]
+  }
+ ],
+ "blackfoot_aisoyimstan": [
+  {
+   "original": "Aisoyimstan",
+   "rom": "Aisoyimstan",
+   "gloss": "'Cold Maker'",
+   "language": "Blackfoot",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1913). Blackfeet Indian Stories."
+    }
+   ]
+  }
+ ],
+ "blackfoot_poia": [
+  {
+   "original": "Poia",
+   "rom": "Poia",
+   "gloss": "'Scarface / Scar-face'",
+   "language": "Blackfoot",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ]
+  }
+ ],
+ "blackfoot_ksiistsikomm": [
+  {
+   "original": "Ksiistsikomm",
+   "rom": "Ksiistsikomm",
+   "gloss": "'Thunder' (the Thunderbird)",
+   "language": "Blackfoot",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+    }
+   ]
+  }
+ ],
+ "bororo_meri": [
+  {
+   "original": "Méri",
+   "rom": "Meri",
+   "gloss": "'Sun'",
+   "language": "Bororo",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Colbacchini & Albisetti (1942). Os Boróros Orientais."
+    }
+   ]
+  }
+ ],
+ "bororo_ari": [
+  {
+   "original": "Arí",
+   "rom": "Ari",
+   "gloss": "'Moon'",
+   "language": "Bororo",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Colbacchini & Albisetti (1942). Os Boróros Orientais."
+    }
+   ]
+  }
+ ],
+ "bodo_bathoubwrai": [
+  {
+   "original": "Sibrai",
+   "rom": "Sibrai",
+   "gloss": "'Lord Siva / great elder', alternate name",
+   "language": "Bodo",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Endle, Sidney (1911). The Kacharis."
+    }
+   ]
+  }
+ ],
+ "bicolano_gugurang": [
+  {
+   "original": "Gugurang",
+   "rom": "Gugurang",
+   "gloss": "supreme benevolent god of Mayon",
+   "language": "Bikol",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+    }
+   ]
+  }
+ ],
+ "bicolano_asuang": [
+  {
+   "original": "Apo Aswang",
+   "rom": "Apo Aswang",
+   "gloss": "'Lord Aswang', the evil god",
+   "language": "Bikol",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+    }
+   ]
+  }
+ ],
+ "baule_nyamien": [
+  {
+   "original": "Alouroua",
+   "rom": "Alouroua",
+   "gloss": "alternate name of the supreme creator",
+   "language": "Baule",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vogel, Susan Mullin (1997). Baule: African Art, Western Eyes."
+    }
+   ]
+  }
+ ],
+ "batak_batara_guru": [
+  {
+   "original": "Debata Batara Guru",
+   "rom": "Debata Batara Guru",
+   "gloss": "'God the divine teacher'",
+   "language": "Batak Toba",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+    }
+   ]
+  }
+ ],
+ "batak_mula_jadi_na_bolon": [
+  {
+   "original": "Mula Jadi Na Bolon",
+   "rom": "Mula Jadi Na Bolon",
+   "gloss": "'the great beginning of becoming'",
+   "language": "Batak Toba",
+   "contextTag": "vernacular",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+    }
+   ]
+  }
+ ],
+ "buddhist_vaishravana": [
+  {
+   "original": "धनद",
+   "rom": "Dhanada",
+   "gloss": "Giver of Wealth",
+   "language": "Sanskrit",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vaiśravaṇa/Kubera tradition; identification of Vaiśravaṇa with Kubera"
+    }
+   ]
+  }
+ ],
+ "buddhist_yama": [
+  {
+   "original": "धर्मराज",
+   "rom": "Dharmarāja",
+   "gloss": "King of the Dharma/Law",
+   "language": "Sanskrit",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yama Dharmarāja tradition (Tibetan Buddhism)"
+    }
+   ]
+  }
+ ],
+ "buddhist_virudhaka": [
+  {
+   "original": "增長天王",
+   "rom": "Zēngzhǎng Tiānwáng",
+   "gloss": "Heavenly King of Increase and Growth",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chinese Four Heavenly Kings (Sì Dà Tiānwáng) tradition"
+    }
+   ]
+  }
+ ],
+ "buddhist_virupaksa": [
+  {
+   "original": "廣目天王",
+   "rom": "Guǎngmù Tiānwáng",
+   "gloss": "Heavenly King of the Broad Eye",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chinese Four Heavenly Kings (Sì Dà Tiānwáng) tradition"
+    }
+   ]
+  }
+ ],
+ "burmese_min_mahagiri": [
+  {
+   "original": "မောင်တင့်တယ်",
+   "rom": "Maung Tint De",
+   "gloss": "human name; 'Handsome Maung Tint De', the Tagaung blacksmith",
+   "language": "Burmese",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mahagiri nat tradition; legend of the Tagaung smith"
+    }
+   ]
+  },
+  {
+   "original": "မင်းမဟာဂီရိ",
+   "rom": "Min Mahagiri",
+   "gloss": "Lord of the Great Mountain",
+   "language": "Burmese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Burmese Thirty-Seven Nats tradition"
+    }
+   ]
+  }
+ ],
+ "burmese_shwe_myethna": [
+  {
+   "original": "ရွှေမျက်နှာ",
+   "rom": "Shwe Myethna",
+   "gloss": "Golden Face",
+   "language": "Burmese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mahagiri nat tradition; sister of Min Mahagiri"
+    }
+   ]
+  },
+  {
+   "original": "နှမတော်ကြီး",
+   "rom": "Hnamadawgyi",
+   "gloss": "Great Royal Sister",
+   "language": "Burmese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Burmese Thirty-Seven Nats tradition"
+    }
+   ]
+  }
+ ],
+ "burmese_thagyamin": [
+  {
+   "original": "သိကြားမင်း",
+   "rom": "Thagya Min",
+   "gloss": "Lord Sakka, King of the Nats (from Skt. Śakra)",
+   "language": "Burmese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Thagyamin / Thingyan tradition, Burma"
+    }
+   ]
+  }
+ ],
+ "buganda_katonda": [
+  {
+   "original": "Ssewannaku",
+   "rom": "Ssewannaku",
+   "gloss": "the Eternal One / the ever-present",
+   "language": "Luganda",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Baganda invocations to Katonda (Roscoe, The Baganda, 1911)"
+    }
+   ]
+  },
+  {
+   "original": "Namuginga",
+   "rom": "Namuginga",
+   "gloss": "the Shaper / Moulder",
+   "language": "Luganda",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Baganda epithets of the creator Katonda"
+    }
+   ]
+  },
+  {
+   "original": "Kagingo",
+   "rom": "Kagingo",
+   "gloss": "Master of Life",
+   "language": "Luganda",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Baganda epithets of the creator Katonda"
+    }
+   ]
+  }
+ ],
+ "bunyoro_ruhanga": [
+  {
+   "original": "Ruhanga",
+   "rom": "Ruhanga",
+   "gloss": "He Who Creates",
+   "language": "Runyoro",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Banyoro creation tradition; Ruhanga as remote creator-sky god"
+    }
+   ]
+  }
+ ],
+ "canaanite_dagan": [
+  {
+   "original": "dgn",
+   "rom": "Dagan",
+   "gloss": "Grain",
+   "language": "Ugaritic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "West Semitic/Ugaritic root dgn 'grain'; Dagan temple at Ugarit"
+    }
+   ]
+  }
+ ],
+ "buryat_esege_malan": [
+  {
+   "original": "Esege Malaan",
+   "rom": "Esege Malaan Tengeri",
+   "gloss": "Father Bald/Clear Sky",
+   "language": "Buryat",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Buryat Tengri tradition; Esege Malan as creator sky-god of the western horizon"
+    }
+   ]
+  }
+ ],
+ "canaanite_kothar": [
+  {
+   "original": "hyn",
+   "rom": "Hayyānu",
+   "gloss": "the Skilful One (also linked to Ea/Hurrian Ea)",
+   "language": "Ugaritic",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ugaritic epithet hyn of Kothar; Smith, Ugaritic Baal Cycle"
+    }
+   ]
+  }
+ ],
+ "burmese_me_wunna": [
+  {
+   "original": "ပုပ္ပားမယ်တော်",
+   "rom": "Popa Medaw",
+   "gloss": "Royal Mother of Popa",
+   "language": "Burmese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Popa Medaw / Mount Popa nat tradition"
+    }
+   ]
+  }
+ ],
+ "canaanite_mot": [
+  {
+   "original": "mdd ʾil",
+   "rom": "madod ʾili",
+   "gloss": "Beloved of El",
+   "language": "Ugaritic",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic Baal Cycle (KTU 1.4-1.6)"
+    }
+   ]
+  }
+ ],
+ "canaanite_shapshu": [
+  {
+   "original": "nrt ʾilm",
+   "rom": "nayyiratu ʾilima",
+   "gloss": "Torch / Luminary of the Gods",
+   "language": "Ugaritic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic Baal Cycle (KTU 1.3-1.6)"
+    }
+   ]
+  }
+ ],
+ "canaanite_yarikh": [
+  {
+   "original": "nyr šmm",
+   "rom": "nayyiru shamima",
+   "gloss": "Lamp / Illuminator of the Heavens",
+   "language": "Ugaritic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic texts (KTU 1.24)"
+    }
+   ]
+  }
+ ],
+ "canaanite_nikkal": [
+  {
+   "original": "nkl w ib",
+   "rom": "Nikkal-wa-Ib",
+   "gloss": "Nikkal-and-Fruitful (the Great and Fruitful Lady)",
+   "language": "Ugaritic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic text KTU 1.24"
+    }
+   ]
+  }
+ ],
+ "canaanite_kotharot": [
+  {
+   "original": "bnt hll snnt",
+   "rom": "banat halali snunati",
+   "gloss": "Daughters of the Crescent Moon, the swallow-like ones",
+   "language": "Ugaritic",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic text KTU 1.24"
+    }
+   ]
+  }
+ ],
+ "celtiberian_lugus": [
+  {
+   "original": "Lugoves",
+   "rom": "Lugoves",
+   "gloss": "the Lugoves / the divine Lugus-triad (dat. Lugovibus)",
+   "language": "Latin (Celtiberian context)",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Votive dedication to the Lugoves by the shoemakers' guild, Uxama (Hispania)"
+    }
+   ]
+  }
+ ],
+ "celtiberian_neto": [
+  {
+   "original": "Neton",
+   "rom": "Neton",
+   "gloss": "the Radiant One (Mars Neton, the ray-crowned war-god)",
+   "language": "Latin (Celtiberian context)",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Macrobius, Saturnalia 1.19"
+    }
+   ]
+  }
+ ],
+ "cheyenne_maheo": [
+  {
+   "original": "Ma'heo'o",
+   "rom": "Ma'heo'o",
+   "gloss": "All-Spirit / the Sacred (Great) One Above",
+   "language": "Cheyenne",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Cheyenne theology (everyculture.com); P. J. Powell, Sweet Medicine (1969)"
+    }
+   ]
+  }
+ ],
+ "cheyenne_sweet_medicine": [
+  {
+   "original": "Mótsé'eóeve",
+   "rom": "Motseyoef",
+   "gloss": "Sweet Medicine / Sweet Root",
+   "language": "Cheyenne",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "P. J. Powell, Sweet Medicine (1969)"
+    }
+   ]
+  }
+ ],
+ "cherokee_unelanuhi": [
+  {
+   "original": "Une'lanu'hi",
+   "rom": "Unelanuhi",
+   "gloss": "the Apportioner",
+   "language": "Cherokee",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "James Mooney, Myths of the Cherokee (1900)"
+    }
+   ]
+  }
+ ],
+ "cherokee_nunnehi": [
+  {
+   "original": "Nûñnë'hï",
+   "rom": "Nunnehi",
+   "gloss": "People Who Live Anywhere (the Travellers)",
+   "language": "Cherokee",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "James Mooney, Myths of the Cherokee (1900)"
+    }
+   ]
+  }
+ ],
+ "cherokee_thunder_boys": [
+  {
+   "original": "Anisga'ya Tsunsdi'",
+   "rom": "Anisgaya Tsunsdi",
+   "gloss": "the Little Men",
+   "language": "Cherokee",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "James Mooney, Myths of the Cherokee (1900)"
+    }
+   ]
+  }
+ ],
+ "chinese_caishen": [
+  {
+   "original": "武財神",
+   "rom": "Wǔ Cáishén",
+   "gloss": "the Military God of Wealth",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Caishen'; 'Zhao Gongming'"
+    }
+   ]
+  }
+ ],
+ "chamorro_taotaomona": [
+  {
+   "original": "taotao mo'na",
+   "rom": "taotaomona",
+   "gloss": "People of Before",
+   "language": "Chamorro",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Guampedia, 'Taotaomo'na'"
+    }
+   ]
+  }
+ ],
+ "chaga_ruwa": [
+  {
+   "original": "Ruwa",
+   "rom": "Ruwa",
+   "gloss": "the Sun (the supreme being)",
+   "language": "Kichagga",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "C. Dundas, Kilimanjaro and Its People (1924); B. Gutmann, Das Recht der Dschagga (1926)"
+    }
+   ]
+  }
+ ],
+ "chinese_fuxi": [
+  {
+   "original": "伏羲",
+   "rom": "Fúxī",
+   "gloss": "the Subduer of Beasts / Hidden Sacrifice",
+   "language": "Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Yijing, Xici commentary"
+    }
+   ]
+  },
+  {
+   "original": "羲皇",
+   "rom": "Xī Huáng",
+   "gloss": "the August Xi (Sovereign Fuxi)",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Standard appellation in later literature"
+    }
+   ]
+  }
+ ],
+ "chinese_gonggong": [
+  {
+   "original": "共工",
+   "rom": "Gònggōng",
+   "gloss": "the Joined-Labor (water-work) god",
+   "language": "Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shanhaijing"
+    }
+   ]
+  },
+  {
+   "original": "康回",
+   "rom": "Kānghuí",
+   "gloss": "alternate name in the Chuci 'Tianwen'",
+   "language": "Chinese",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Chuci, 'Tianwen' (Heavenly Questions)"
+    }
+   ]
+  }
+ ],
+ "chinese_leigong": [
+  {
+   "original": "雷公",
+   "rom": "Léigōng",
+   "gloss": "Duke of Thunder",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shanhaijing; Lunheng (Wang Chong)"
+    }
+   ]
+  }
+ ],
+ "chinese_yao": [
+  {
+   "original": "陶唐氏",
+   "rom": "Táotáng Shì",
+   "gloss": "of the Tao-Tang clan (from his fiefs Tao and Tang)",
+   "language": "Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji, 'Annals of the Five Emperors'"
+    }
+   ]
+  },
+  {
+   "original": "放勳",
+   "rom": "Fàngxūn",
+   "gloss": "'Far-reaching Merit', personal name of Yao",
+   "language": "Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shangshu, 'Canon of Yao'"
+    }
+   ]
+  }
+ ],
+ "chinese_shun": [
+  {
+   "original": "有虞氏",
+   "rom": "Yǒuyú Shì",
+   "gloss": "of the Youyu clan",
+   "language": "Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji, 'Annals of the Five Emperors'"
+    }
+   ]
+  },
+  {
+   "original": "重華",
+   "rom": "Chónghuá",
+   "gloss": "'Double Brightness' (said of his doubled pupils)",
+   "language": "Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji, 'Annals of the Five Emperors'"
+    }
+   ]
+  }
+ ],
+ "chinese_yu_the_great": [
+  {
+   "original": "大禹",
+   "rom": "Dà Yǔ",
+   "gloss": "Yu the Great",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shangshu, 'Yu gong'"
+    }
+   ]
+  },
+  {
+   "original": "夏禹",
+   "rom": "Xià Yǔ",
+   "gloss": "Yu of Xia",
+   "language": "Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Standard historiographic appellation"
+    }
+   ]
+  }
+ ],
+ "chinese_yaoji": [
+  {
+   "original": "巫山神女",
+   "rom": "Wūshān Shénnǚ",
+   "gloss": "Divine Maiden of Mount Wu",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Song Yu, 'Gaotang fu' and 'Shennü fu'"
+    }
+   ]
+  },
+  {
+   "original": "朝雲",
+   "rom": "Zhāoyún",
+   "gloss": "'Morning Cloud' (she becomes cloud at dawn, rain at dusk)",
+   "language": "Chinese",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Song Yu, 'Gaotang fu'"
+    }
+   ]
+  }
+ ],
+ "chinese_zhuanxu": [
+  {
+   "original": "高陽氏",
+   "rom": "Gāoyáng Shì",
+   "gloss": "of the Gaoyang clan",
+   "language": "Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji, 'Annals of the Five Emperors'"
+    }
+   ]
+  }
+ ],
+ "chinese_zhurong": [
+  {
+   "original": "祝融",
+   "rom": "Zhùróng",
+   "gloss": "the fire-god / 'Invoker of Melting'",
+   "language": "Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shanhaijing; Huainanzi"
+    }
+   ]
+  },
+  {
+   "original": "赤帝",
+   "rom": "Chìdì",
+   "gloss": "the Red Emperor (of the south)",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Five-Emperors directional cosmology"
+    }
+   ]
+  }
+ ],
+ "chinese_shennong": [
+  {
+   "original": "五穀先帝",
+   "rom": "Wǔgǔ Xiāndì",
+   "gloss": "First Emperor of the Five Grains",
+   "language": "Chinese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Folk cult appellation of Shennong"
+    }
+   ]
+  }
+ ],
+ "chukchi_zenith": [
+  {
+   "original": "ginon-kana'irgin",
+   "rom": "ginon-kanairgin",
+   "gloss": "'Middle-Crown' (being of the zenith)",
+   "language": "Chukchi",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bogoras, The Chukchee (Jesup North Pacific Expedition)"
+    }
+   ]
+  }
+ ],
+ "chuukese_anulap": [
+  {
+   "original": "Enuunap",
+   "rom": "Enuunap",
+   "gloss": "variant of the name 'Great Spirit'",
+   "language": "Chuukese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bollig, Die Bewohner der Truk-Inseln (1927)"
+    }
+   ]
+  }
+ ],
+ "chuukese_inemes": [
+  {
+   "original": "Venus of Chuuk",
+   "rom": "Venus of Chuuk",
+   "gloss": "Bollig's epithet for the love-goddess",
+   "language": "English",
+   "contextTag": "scholarly",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bollig, Die Bewohner der Truk-Inseln (1927)"
+    }
+   ]
+  }
+ ],
+ "chuukese_semenkoror": [
+  {
+   "original": "Father of Wisdom",
+   "rom": "Father of Wisdom",
+   "gloss": "father of wisdom",
+   "language": "English (rendering)",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopedia.com, 'Micronesian Religions: Mythic Themes'"
+    }
+   ]
+  }
+ ],
+ "circassian_tlepsh": [
+  {
+   "original": "Лъэпщ",
+   "rom": "Łəpš",
+   "gloss": "the Smith (lit. 'iron', cf. Greek khálups)",
+   "language": "Adyghe",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tlepsh'"
+    }
+   ]
+  }
+ ],
+ "circassian_mezitha": [
+  {
+   "original": "Мэзытхьэ",
+   "rom": "Məzytḥə",
+   "gloss": "forest-god (məz 'forest' + tḥə 'god')",
+   "language": "Adyghe",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Jaimoukha, 'The Circassian Pantheon' (oocities.org)"
+    }
+   ]
+  }
+ ],
+ "circassian_tha": [
+  {
+   "original": "Тхьэшхуэ",
+   "rom": "Tḥəšxwə",
+   "gloss": "Great God",
+   "language": "Adyghe",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Circassian paganism'"
+    }
+   ]
+  }
+ ],
+ "circassian_setenaya": [
+  {
+   "original": "Сэтэнай-гуащэ",
+   "rom": "Sɛtɛnaj-gʷaśɛ",
+   "gloss": "Lady Setenay / 'Mother of a Hundred (Narts)'",
+   "language": "Adyghe",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. Colarusso, 'The Woman of the Myths: the Satanaya Cycle'"
+    }
+   ]
+  }
+ ],
+ "circassian_warzameg": [
+  {
+   "original": "Нарт Уэзырмэс",
+   "rom": "Nart Wəzyrmɛs",
+   "gloss": "the Great Nart",
+   "language": "Adyghe",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. Colarusso, Nart Sagas from the Caucasus (Princeton, 2002)"
+    }
+   ]
+  }
+ ],
+ "dacian_burebista": [
+  {
+   "original": "Βυρεβίστας",
+   "rom": "Byrebistas",
+   "gloss": "Burebista (Greek transmission of the king's name)",
+   "language": "Greek (transmission)",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Strabo, Geographica VII.3.11"
+    }
+   ]
+  }
+ ],
+ "dacian_decaeneus": [
+  {
+   "original": "Δεκαίνεος",
+   "rom": "Dekaineos",
+   "gloss": "Decaeneus (Greek form; Latin Dicineus)",
+   "language": "Greek (transmission)",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Strabo, Geographica VII.3.11"
+    }
+   ]
+  }
+ ],
+ "dinka_deng": [
+  {
+   "original": "Dengdit",
+   "rom": "Dengdit",
+   "gloss": "Great Deng / Deng the Great",
+   "language": "Dinka",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Dinka religion'"
+    }
+   ]
+  }
+ ],
+ "dinka_garang": [
+  {
+   "original": "the first man",
+   "rom": "the first man",
+   "gloss": "the first man",
+   "language": "English (rendering)",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Dinka religion'"
+    }
+   ]
+  }
+ ],
+ "crow_old_man_coyote": [
+  {
+   "original": "Akbaatatdía",
+   "rom": "Akbaatatdía",
+   "gloss": "the one who made everything / First-Maker",
+   "language": "Crow (Apsáalooke)",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "native-languages.org, 'Old Man Coyote (Akba Atatdia)'"
+    }
+   ]
+  }
+ ],
+ "cree_wisahkecahk": [
+  {
+   "original": "Whiskey Jack",
+   "rom": "Whiskey Jack",
+   "gloss": "English folk-etymology of Wîsahkêcâhk",
+   "language": "English (folk)",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Wisakedjak'"
+    }
+   ]
+  }
+ ],
+ "dogon_ogo": [
+  {
+   "original": "Yurugu",
+   "rom": "Yurugu",
+   "gloss": "the Pale Fox",
+   "language": "Dogon",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Griaule & Dieterlen, Le Renard pâle (1965)"
+    }
+   ]
+  }
+ ],
+ "edo_olokun": [
+  {
+   "original": "Olokun",
+   "rom": "Olokun",
+   "gloss": "owner/lord of the great waters",
+   "language": "Edo",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ben-Amos, The Art of Benin (1995)"
+    }
+   ]
+  }
+ ],
+ "egyptian_horus": [
+  {
+   "original": "ḥr-m-ꜣḫt",
+   "rom": "Hor-em-akhet",
+   "gloss": "Horus in the Horizon (Harmachis, the Great Sphinx)",
+   "language": "Egyptian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Dream Stela of Thutmose IV, Giza"
+    }
+   ]
+  }
+ ],
+ "egyptian_anubis": [
+  {
+   "original": "jmy-wt",
+   "rom": "imy-wt",
+   "gloss": "He who is in the place of embalming",
+   "language": "Egyptian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  }
+ ],
+ "egyptian_bes": [
+  {
+   "original": "bs",
+   "rom": "Bes",
+   "gloss": "Bes (the protector-dwarf)",
+   "language": "Egyptian",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  }
+ ],
+ "egyptian_heka": [
+  {
+   "original": "ḥkꜣ",
+   "rom": "Heka",
+   "gloss": "Magic / magical power",
+   "language": "Egyptian",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Coffin Texts spell 261"
+    }
+   ]
+  }
+ ],
+ "egyptian_imhotep": [
+  {
+   "original": "sꜣ-ptḥ",
+   "rom": "sa-Ptah",
+   "gloss": "Son of Ptah",
+   "language": "Egyptian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wildung, Imhotep und Amenhotep (1977)"
+    }
+   ]
+  }
+ ],
+ "egyptian_min": [
+  {
+   "original": "kꜣ-mwt.f",
+   "rom": "Kamutef",
+   "gloss": "Bull of his Mother",
+   "language": "Egyptian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "New Kingdom temple texts"
+    }
+   ]
+  }
+ ],
+ "egyptian_mut": [
+  {
+   "original": "jrt-rꜥ",
+   "rom": "iret-Ra",
+   "gloss": "Eye of Ra",
+   "language": "Egyptian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+    }
+   ]
+  }
+ ],
+ "egyptian_bastet": [
+  {
+   "original": "nbt bꜣst",
+   "rom": "nebet-Bast",
+   "gloss": "Lady of Bubastis",
+   "language": "Egyptian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Herodotus, Histories 2.59-60"
+    }
+   ]
+  }
+ ]
+};
+const CULT_SWEEP = {
+ "abkhaz_afy": [
+  {
+   "name": "the lightning-victim rite (Atlar-chapa)",
+   "term": {
+    "value": "Атларчапа",
+    "script": "Cyrillic",
+    "rom": "Atlarchapa"
+   },
+   "type": "funeral-rite",
+   "cadence": "upon a death by lightning",
+   "notes": "A person or beast killed by lightning was wrapped in a bull's hide and raised on a platform or tree; kin and villagers dressed in white performed ritual round-dances and choral chants around the body, the death being held an honour.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians); Chirikba, on the Caucasian lightning cult"
+    }
+   ]
+  }
+ ],
+ "abkhaz_azhwepshaa": [
+  {
+   "name": "pre-hunt sacrifice to the lord of game",
+   "type": "sacrifice",
+   "cadence": "before the hunt",
+   "notes": "In the hunter's house the elder of the rite held a hazel skewer bearing goat's liver and a glass of wine, with hymns and dances entreating Azhwepshaa to grant the game; the bones of the kill were kept whole so the beast might be revived.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians); Religion in Abkhazia (Abkhaz hunting cult)"
+    }
+   ]
+  }
+ ],
+ "abkhaz_dzhadzha": [
+  {
+   "name": "first-fruits offering of the harvest",
+   "type": "offering",
+   "cadence": "at harvest",
+   "notes": "As agrarian goddess of the sown fields she received offerings of the first fruits and of the new grain.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Inal-ipa, Abkhazy (Abkhazians); Mythological Encyclopedia (Abkhaz pantheon)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_baiame": [
+  {
+   "name": "the Bora initiation ceremony",
+   "term": {
+    "value": "Bora",
+    "script": "Latin",
+    "rom": "Bora"
+   },
+   "type": "festival",
+   "cadence": "on initiation of youths",
+   "notes": "Male initiation grounds and ritual sequences re-enacting the ancestral ordering of the world were prepared in Baiame's name across south-eastern Australia.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_daramulun": [
+  {
+   "name": "the Bora / Burbung initiation",
+   "term": {
+    "value": "Burbung",
+    "script": "Latin",
+    "rom": "Burbung"
+   },
+   "type": "festival",
+   "cadence": "on initiation of youths",
+   "notes": "At the Bora the bullroarer was sounded as Daramulun's voice, the novices separated from the women and a tooth knocked out; women and the uninitiated were forbidden to see the instrument.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+    },
+    {
+     "kind": "primary",
+     "reference": "Mathews, 'The Bora or Initiation Ceremonies of the Kamilaroi Tribe' (1895)"
+    }
+   ]
+  }
+ ],
+ "aboriginal_wandjina": [
+  {
+   "name": "repainting of the Wandjina rock-images",
+   "type": "rite",
+   "cadence": "seasonal, before the wet",
+   "notes": "Custodians retouch the painted Wandjina figures to renew their potency and call the monsoon rains and the increase of plant and animal life.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Crawford, The Art of the Wandjina (1968)"
+    }
+   ]
+  }
+ ],
+ "aganju": [
+  {
+   "name": "the festival of Aganju",
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "An annual festival of drumming, dance and offerings honours Aganju's strength and generative power.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Original Botanica, 'Aganju (Agayu), Orisha of Volcanoes and Wilderness'"
+    }
+   ]
+  }
+ ],
+ "akan_asase_yaa": [
+  {
+   "name": "the Thursday-rest observance",
+   "term": {
+    "value": "Yaada",
+    "script": "Latin",
+    "rom": "Yawada (Thursday)"
+   },
+   "type": "taboo-observance",
+   "cadence": "weekly, on Thursday",
+   "notes": "As Asase Yaa is 'Earth, of Thursday', the ground may not be tilled or broken on Thursday; she is approached not by temples or idols but by libation and by the oath sworn upon the earth.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Ashanti (1923)"
+    }
+   ]
+  }
+ ],
+ "akan_tano": [
+  {
+   "name": "shrine cult of the Tano (atano)",
+   "type": "shrine",
+   "cadence": "recurring shrine observance",
+   "notes": "The river-god is venerated at a chain of shrines (Tanoboase, the Tano Rock, Saaman and others); his principal shrine holds a crown, staffs, state umbrellas, swords, beads and a brass pan, and is the senior of the atano shrines.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tano (Ta Kora)'"
+    }
+   ]
+  }
+ ],
+ "akan_nyame": [
+  {
+   "name": "the Nyame dua (god's tree) household altar",
+   "term": {
+    "value": "Nyame dua",
+    "script": "Latin",
+    "rom": "Nyame dua"
+   },
+   "type": "offering",
+   "cadence": "domestic, recurring",
+   "notes": "A forked post cut where three branches meet, set in the compound and holding a pot or basin, at which offerings and libations were made to the otherwise temple-less, non-iconic Sky-God.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rattray, Ashanti (1923)"
+    }
+   ]
+  }
+ ],
+ "amani": [
+  {
+   "name": "oracle and coronation cult of Amun of Napata",
+   "type": "oracle",
+   "cadence": "at royal accession and on inquiry",
+   "notes": "At Gebel Barkal the king, as First Prophet of Amun, and the priesthood carried the god's bark in procession to obtain oracular verdicts; Kushite kings were chosen and crowned by the oracle of Amun, as on the stelae of Piye and Aspelta.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kendall, 'Jebel Barkal and Ancient Napata'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Welsby, The Kingdom of Kush"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_seaxneat": [
+  {
+   "name": "Renunciation in the Old Saxon Baptismal Vow",
+   "term": {
+    "value": "end ec forsacho allum dioboles uuercum and uuordum, Thunaer ende Uuoden ende Saxnote",
+    "script": "Latn",
+    "rom": "...Thunaer ende Uuoden ende Saxnote..."
+   },
+   "type": "veneration",
+   "cadence": "pre-Christian",
+   "notes": "His former cult is attested negatively: converts to Christianity were required to forsake him by name alongside Woden and Thunaer, marking him as one of the three chief gods of the continental Saxons; among the English he survives as divine ancestor of the East Saxon (Essex) kings.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Old Saxon Baptismal Vow (Vatican, Pal. Lat. 577)"
+    }
+   ]
+  }
+ ],
+ "ambundu_kianda": [
+  {
+   "name": "Luanda Island Feast (Festa da Ilha de Luanda)",
+   "term": {
+    "value": "Festa da Ilha",
+    "script": "Latn",
+    "rom": "Festa da Ilha"
+   },
+   "type": "festival",
+   "cadence": "annual (2 November)",
+   "notes": "Annual feast on the Ilha de Luanda honouring Kianda, protectress of fishermen; offerings of food and cloth are cast into the sea to keep peace with the waters and ensure the catch.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heli Chatelain, Folk-Tales of Angola (1894); ethnography of the Ilha de Luanda"
+    }
+   ]
+  }
+ ],
+ "arabian_al_uzza": [
+  {
+   "name": "Pilgrimage and sacrifice at Nakhlah",
+   "term": {
+    "value": "بُسّ",
+    "script": "Arab",
+    "rom": "Buss"
+   },
+   "type": "sacrifice",
+   "cadence": "pilgrimage",
+   "notes": "Worshippers journeyed to her grove of three trees at Nakhlah near the shrine of Buss, brought gifts and sought her favour through sacrifice and oracular consultation; the cult was suppressed when Khalid ibn al-Walid felled the trees (8 AH/630 CE).",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam (Book of Idols)"
+    }
+   ]
+  }
+ ],
+ "arabian_allat": [
+  {
+   "name": "Sacrifice at the haram of al-Ta'if",
+   "term": {
+    "value": "اللات",
+    "script": "Arab",
+    "rom": "Allat"
+   },
+   "type": "sacrifice",
+   "cadence": "pilgrimage",
+   "notes": "Her cubic white stone at al-Ta'if, kept by the Banu 'Attab of Thaqif, stood within an inviolable precinct where hunting and bloodshed were forbidden; pilgrims circled and offered to her until the shrine was destroyed by al-Mughira ibn Shu'ba.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ibn al-Kalbi, Kitab al-Asnam (Book of Idols)"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_eostre": [
+  {
+   "name": "Feasts of Eosturmonath",
+   "term": {
+    "value": "Ēosturmōnaþ",
+    "script": "Latn",
+    "rom": "Eosturmonath"
+   },
+   "type": "festival",
+   "cadence": "annual (spring month ≈ April)",
+   "notes": "Bede reports that in the heathen past feasts were held in her honour during the month named for her, the inherited name later transferred to the Christian Paschal season.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Bede, De temporum ratione, ch. 15"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_thunor": [
+  {
+   "name": "Thunor place-cult and hammer amulets",
+   "term": {
+    "value": "Þunor",
+    "script": "Latn",
+    "rom": "Thunor"
+   },
+   "type": "veneration",
+   "cadence": "local",
+   "notes": "Attested indirectly by some twelve English place-names (e.g. Þunres lēah 'Thunderley', Þunres feld 'Thunderfield') marking groves and fields sacred to him, and by Þorr-style hammer amulets in Anglo-Saxon and Jutish graves (e.g. Gilton, Kent).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Margaret Gelling, Signposts to the Past (1978); David Wilson, Anglo-Saxon Paganism (1992)"
+    }
+   ]
+  }
+ ],
+ "anglosaxon_woden": [
+  {
+   "name": "Dynastic descent and place-cult",
+   "term": {
+    "value": "Wōden",
+    "script": "Latn",
+    "rom": "Woden"
+   },
+   "type": "veneration",
+   "cadence": "local",
+   "notes": "Most Anglo-Saxon royal houses traced their pedigree to Woden, and his name marks sacred sites in place-names such as Wodnesbeorg ('Woden's barrow') and Wansdyke (Wodnes dic); his cult is otherwise attested by his renunciation in the Old Saxon Baptismal Vow.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Anglo-Saxon Chronicle royal genealogies; Margaret Gelling, Signposts to the Past (1978)"
+    }
+   ]
+  }
+ ],
+ "arabian_hatim_al_tai": [
+  {
+   "name": "Veneration at the grave of Hatim",
+   "type": "veneration",
+   "cadence": "occasional",
+   "notes": "Not a cult of worship but a site of legend: his hilltop tomb was marked by two stone troughs (recalling the pots from which he fed the poor) and statues of mourning maidens; travellers camped there expecting his posthumous hospitality.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopaedia Iranica, 'Hatem Ta'i'; Alf Layla wa-Layla"
+    }
+   ]
+  }
+ ],
+ "aztec_mictlantecuhtli": [
+  {
+   "name": "Cult of the death-lord in the Tlalxicco shrine",
+   "term": {
+    "value": "Tlalxicco",
+    "script": "nahuatl",
+    "rom": "Tlalxicco"
+   },
+   "type": "temple",
+   "cadence": "calendrical (Mictlan/death day-signs); month of Tititl associated rites",
+   "notes": "Mictlantecuhtli had a temple called Tlalxicco ('navel of the earth') at Tenochtitlan served by a dedicated priesthood; offerings and incense were made to the lord of the dead, and the dead were dispatched to Mictlan with grave-goods and a guiding dog.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Books 2-3 and Book 6 (the funeral rites)"
+    }
+   ]
+  }
+ ],
+ "aztec_mictecacihuatl": [
+  {
+   "name": "Feasts of the dead in the ninth month",
+   "type": "festival",
+   "cadence": "annual, the 'great feast of the dead' (Hueymiccailhuitl)",
+   "notes": "The Lady of the Dead presided over the festivals of the dead, the lesser and greater 'feasts of the dead' (Miccailhuitontli and Hueymiccailhuitl) in which offerings were made for the departed — practices later folded into the Day of the Dead.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 2 (the ceremonies of the months)"
+    }
+   ]
+  }
+ ],
+ "aztec_coyolxauhqui": [
+  {
+   "name": "Re-enactment of Coatepec on the Coyolxauhqui monolith",
+   "type": "rite",
+   "cadence": "annual, at the feast of Panquetzaliztli",
+   "notes": "At the foot of Huitzilopochtli's stair lay the great relief of the dismembered moon-goddess; sacrificial victims cast down the temple steps re-enacted Coyolxauhqui's defeat and fall at Coatepec.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Books 2-3"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Matos Moctezuma, The Great Temple of the Aztecs (1988)"
+    }
+   ]
+  }
+ ],
+ "aztec_tezcatlipoca": [
+  {
+   "name": "Toxcatl",
+   "term": {
+    "value": "Tóxcatl",
+    "script": "Latn",
+    "rom": "Toxcatl"
+   },
+   "type": "festival",
+   "cadence": "annual (fifth veintena)",
+   "notes": "A flawless youth was chosen a year ahead to live as the god's living image (ixiptla), feasted, given four wives, and at the festival climbed the temple breaking flutes step by step before being sacrificed.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 2 (Toxcatl)"
+    }
+   ]
+  }
+ ],
+ "aztec_tlaloc": [
+  {
+   "name": "Atlcahualo / Mount Tlaloc rites",
+   "term": {
+    "value": "Atlcahualo",
+    "script": "Latn",
+    "rom": "Atlcahualo"
+   },
+   "type": "festival",
+   "cadence": "annual (first veintena)",
+   "notes": "Children were sacrificed to the rain-lord at hilltop shrines and at the boulder-shrine atop Mount Tlaloc to open the rainy season; he shared the summit of the Templo Mayor with Huitzilopochtli.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 2"
+    }
+   ]
+  }
+ ],
+ "aztec_tonatiuh": [
+  {
+   "name": "Solar offering of hearts and blood",
+   "type": "offering",
+   "cadence": "continual",
+   "notes": "The sun's daily motion was held to depend on the heart-blood of sacrificed captives, sustained by the militaristic warrior cults.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Read & González, Mesoamerican Mythology"
+    }
+   ]
+  }
+ ],
+ "aztec_xipe_totec": [
+  {
+   "name": "Tlacaxipehualiztli",
+   "term": {
+    "value": "Tlācaxīpēhualiztli",
+    "script": "Latn",
+    "rom": "Tlacaxipehualiztli"
+   },
+   "type": "festival",
+   "cadence": "annual (second veintena)",
+   "notes": "'The Flaying of Men': captives were sacrificed and gladiatorially fought, then flayed, their skins worn by penitents for twenty days until they rotted, enacting the husking and renewal of the seed.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 2 (Tlacaxipehualiztli)"
+    }
+   ]
+  }
+ ],
+ "aztec_xiuhtecuhtli": [
+  {
+   "name": "New Fire Ceremony",
+   "term": {
+    "value": "Toxiuhmolpilia",
+    "script": "Latn",
+    "rom": "Toxiuhmolpilia"
+   },
+   "type": "festival",
+   "cadence": "every 52 years",
+   "notes": "At the close of each calendar round all fires were extinguished and a new fire kindled in the breast of a sacrificed captive on the Hill of the Star, then carried to rekindle the hearths of the land; the fire-lord was also feasted at Izcalli.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 7"
+    }
+   ]
+  }
+ ],
+ "aztec_tlazolteotl": [
+  {
+   "name": "Ochpaniztli",
+   "term": {
+    "value": "Ochpaniztli",
+    "script": "Latn",
+    "rom": "Ochpaniztli"
+   },
+   "type": "festival",
+   "cadence": "annual (eleventh veintena)",
+   "notes": "The 'Sweeping of the Roads': a great autumn cleansing of the earth-mother goddesses in which streets and houses were swept clear of impurity; her impersonator was sacrificed and flayed.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sahagún, Florentine Codex, Book 2 (Ochpaniztli)"
+    }
+   ]
+  }
+ ],
+ "aztec_xochiquetzal": [
+  {
+   "name": "Xochilhuitl (Feast of Flowers)",
+   "term": {
+    "value": "Xōchilhuitl",
+    "script": "Latn",
+    "rom": "Xochilhuitl"
+   },
+   "type": "festival",
+   "cadence": "calendrical",
+   "notes": "A flower-festival in which houses, streets and temples were decked with blossoms; women artisans offered their weaving and embroidery to the goddess.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mexicolore, Goddess of the Month: Xochiquetzal"
+    }
+   ]
+  }
+ ],
+ "babalu_aye": [
+  {
+   "name": "San Lázaro pilgrimage / awán",
+   "type": "festival",
+   "cadence": "annual (17 December)",
+   "notes": "In West Africa his Sopona priesthood monopolised the appeasement of smallpox with sacrifice and herbal cure; in the diaspora tens of thousands process to the church of San Lázaro at El Rincón, and the awán rite encircles a sackcloth basket with plates of food. Sacrifices include the goat, cock and guinea-fowl; toasted corn and palm-oiled popcorn are offered.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Thompson, Flash of the Spirit"
+    }
+   ]
+  }
+ ],
+ "balinese_barong": [
+  {
+   "name": "Barong–Rangda exorcistic dance-drama",
+   "type": "festival",
+   "cadence": "temple anniversaries / calon arang",
+   "notes": "Sacred dance, accompanied by the gamelan bebarongan, in which the Barong battles Rangda; entranced men turn their krises on themselves and are protected by the Barong's power, restoring the village's balance and health.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Belo, Bali: Rangda and Barong"
+    }
+   ]
+  }
+ ],
+ "balinese_dewi_danu": [
+  {
+   "name": "Pakelem at Pura Ulun Danu Batur",
+   "term": {
+    "value": "Pakelem",
+    "script": "Latn",
+    "rom": "Pakelem"
+   },
+   "type": "offering",
+   "cadence": "periodic (water-buffalo offering every fifth year)",
+   "notes": "Subak farmers from across Bali bring offerings to the lake-temple of Dewi Danu, who allocates irrigation water; in the Pakelem rite a water-buffalo is offered into the lake.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lansing, Priests and Programmers"
+    }
+   ]
+  }
+ ],
+ "balinese_dewi_sri": [
+  {
+   "name": "Cili first-fruits and rice rites",
+   "type": "offering",
+   "cadence": "each planting and harvest",
+   "notes": "Woven cili effigies of the goddess are set in the paddy at planting and in the granary at harvest; offerings of coloured rice, betel and coins are made to secure the crop.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Eiseman, Bali: Sekala and Niskala"
+    }
+   ]
+  }
+ ],
+ "balinese_sedana": [
+  {
+   "name": "Buda Cemeng Klau (Rambut Sedana)",
+   "type": "festival",
+   "cadence": "every 35 days (Balinese wuku week)",
+   "notes": "On Buda Wage Klau merchants and households honour the wealth-deity Rambut Sedana, with an annual 'wedding' of Sri and Sedana sought for both harvest and material plenty.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Eiseman, Bali: Sekala and Niskala"
+    }
+   ]
+  }
+ ],
+ "banyaruanda_ryangombe": [
+  {
+   "name": "Kubandwa possession cult",
+   "term": {
+    "value": "kubandwa",
+    "script": "Latn",
+    "rom": "kubandwa"
+   },
+   "type": "festival",
+   "cadence": "initiatory, with seasonal rites",
+   "notes": "Initiates were 'possessed' by the imandwa-spirits under a godparent's guidance, baptised with an imandwa-name, and feasted with sorghum beer (ikigage); the initiated dwell after death on the volcano Karisimbi. Ryangombe was honoured as king-spirit and mediator before Imana, not worshipped as a god.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Heusch, Le Rwanda et la civilisation interlacustre"
+    }
+   ]
+  }
+ ],
+ "banyaruanda_gihanga": [
+  {
+   "name": "The perpetual royal fire and the drum Kalinga",
+   "type": "offering",
+   "cadence": "continual",
+   "notes": "The fire of Gihanga was kept burning without interruption at the royal court 'where the cattle are milked', and his sacred drum Kalinga and long-horned cattle were tended by hereditary ritual families as emblems of the kingship.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vansina, Antecedents to Modern Rwanda"
+    }
+   ]
+  }
+ ],
+ "basque_mari": [
+  {
+   "name": "Cave-offerings to the Lady of Anboto",
+   "type": "offering",
+   "cadence": "occasional / propitiatory",
+   "notes": "Petitioners left coins, flowers, candles or a ram at the mouths of her caves, approaching her with deference; she brewed weather from her mountain and punished lying, theft and pride.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Barandiarán, Mitología vasca"
+    }
+   ]
+  }
+ ],
+ "blackfoot_natosi": [
+  {
+   "name": "Medicine Lodge (Sun Dance)",
+   "term": {
+    "value": "Okán",
+    "script": "Latn",
+    "rom": "Okan"
+   },
+   "type": "festival",
+   "cadence": "annual (midsummer)",
+   "notes": "The great summer ceremony offered to the Sun, vowed by a woman of good standing; includes sweat-lodges, the centre pole, and offerings of flesh and tongues.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "McClintock, Walter (1910). The Old North Trail."
+    }
+   ]
+  }
+ ],
+ "blackfoot_ksiistsikomm": [
+  {
+   "name": "Spring opening of the Medicine Pipe bundle",
+   "type": "festival",
+   "cadence": "annual (first spring thunder)",
+   "notes": "At the first thunder of spring the Thunder Medicine Pipe bundle is opened and the pipe smoked with prayer, repaying Thunder for the rain.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales ('Origin of the Medicine Pipe')."
+    }
+   ]
+  }
+ ],
+ "berber_amun_siwa": [
+  {
+   "name": "Oracle of Ammon at Siwa",
+   "type": "oracle",
+   "cadence": "continual",
+   "notes": "Petitioners (famously Alexander) consulted the god; the image in its golden barque was carried by priests, its movements read as answers.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Diodorus Siculus, Bibliotheca Historica 17.50."
+    }
+   ]
+  }
+ ],
+ "berber_gurzil": [
+  {
+   "name": "Battlefield bull-rite of Gurzil",
+   "type": "sacrifice",
+   "cadence": "occasional (in war)",
+   "notes": "The Laguatan led a consecrated bull embodying the god before the army; the hilltop idol still drew tribal worship in al-Bakri's day.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Corippus, Iohannis V–VIII; al-Bakri, Kitāb al-Masālik."
+    }
+   ]
+  }
+ ],
+ "berber_ifri": [
+  {
+   "name": "Cult of Dea Africa at the Aqua Septimiana Felix",
+   "term": {
+    "value": "Dea Africa",
+    "script": "Latn",
+    "rom": "Dea Africa"
+   },
+   "type": "temple",
+   "cadence": "continual",
+   "notes": "Worshipped as patron goddess of the homeland at the great sanctuary at Timgad (Thamugadi); honoured on Numidian and Roman coinage.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+    }
+   ]
+  }
+ ],
+ "bhil_pithora": [
+  {
+   "name": "Pithora wall-painting vow-rite",
+   "type": "offering",
+   "cadence": "on fulfilment of a vow",
+   "notes": "A trained Lakhara paints the ritual fresco of the Bhil creation on a house wall to discharge a vow of prosperity, health or progeny made to Baba Pithora.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Jain, Jyotindra (1984). Painted Myths of Creation."
+    }
+   ]
+  }
+ ],
+ "bhil_mogra_dev": [
+  {
+   "name": "Devmogra fair and first-fruits offering",
+   "term": {
+    "value": "Yaha Devmogi",
+    "script": "Latn",
+    "rom": "Yaha Devmogi"
+   },
+   "type": "festival",
+   "cadence": "annual (around Mahashivratri, Feb–Mar)",
+   "notes": "Tribal panchayats present the first harvest, goats and fowls at the hill shrine near Sagbara; the five-day fair draws Bhil, Vasava and Kokni pilgrims of the Satpuras.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dev Mogra shrine ethnography; Government of Gujarat, Narmada District records."
+    }
+   ]
+  }
+ ],
+ "bodo_bathoubwrai": [
+  {
+   "name": "Kherai Puja",
+   "term": {
+    "value": "Kherai",
+    "script": "Latn",
+    "rom": "Kherai"
+   },
+   "type": "festival",
+   "cadence": "seasonal (Kartik–Aghan)",
+   "notes": "Chief Bodo communal worship, performed at the Sijou-and-bamboo Bathou altar by the deodhani medium, seeking the blessing of Bathou Bwrai and Mainao for a good harvest.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Endle, Sidney (1911). The Kacharis."
+    }
+   ]
+  }
+ ],
+ "bodo_mainao": [
+  {
+   "name": "Mainao-bringing rite at harvest",
+   "type": "offering",
+   "cadence": "annual (harvest)",
+   "notes": "At reaping, a sheaf representing Mainao (the rice-goddess, identified with Lakshmi/Mainao Buri) is ceremonially brought home to secure the granary's prosperity.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Endle, Sidney (1911). The Kacharis."
+    }
+   ]
+  }
+ ],
+ "bemba_lesa": [
+  {
+   "name": "Collective drought-rite to Lesa",
+   "type": "offering",
+   "cadence": "occasional (in drought)",
+   "notes": "There is no standing cult; in severe drought or community crisis the people organize collective prayers and rites appealing to Lesa for rain.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Richards, Audrey I. (1969). Bemba religion."
+    }
+   ]
+  }
+ ],
+ "buddhist_prthivi": [
+  {
+   "name": "Water-libation honouring Mae Thorani",
+   "term": {
+    "value": "พระแม่ธรณี",
+    "script": "Thai",
+    "rom": "Phra Mae Thorani"
+   },
+   "type": "offering",
+   "cadence": "associated with merit-dedication",
+   "notes": "In Theravada Southeast Asia the earth-goddess wringing water from her hair is invoked at the pouring of water (kruat nam) to dedicate merit, her image set in temple grounds.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Guthrie, Elizabeth (2004). A Study of the History and Cult of the Buddhist Earth Deity in Mainland Southeast Asia."
+    }
+   ]
+  }
+ ],
+ "baule_mbotumbo": [
+  {
+   "name": "Blood-and-egg sacrifice to the amwin monkey figure",
+   "type": "sacrifice",
+   "cadence": "as needed",
+   "notes": "The cup-bearing figure, kept by men's societies away from women, receives repeated offerings of blood and eggs that build its thick sacrificial patina.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vogel, Susan Mullin (1997). Baule: African Art, Western Eyes."
+    }
+   ]
+  }
+ ],
+ "baule_asie": [
+  {
+   "name": "Offerings to the earth and bush-spirits via komien diviners",
+   "type": "offering",
+   "cadence": "as needed",
+   "notes": "The asye usu (bush/earth spirits) of Asie's domain are addressed through komien (possession diviners) before clearing land or hunting.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vogel, Susan Mullin (1997). Baule: African Art, Western Eyes."
+    }
+   ]
+  }
+ ],
+ "buganda_mukasa": [
+  {
+   "name": "Annual royal offering at Bubembe",
+   "type": "offering",
+   "cadence": "annual",
+   "notes": "The kabaka sent yearly an offering of cattle with a petition for prosperity and good harvests to the Bubembe temple; the secluded medium (mandwa) delivered the god's oracles. Mukasa was a kindly lubaale who never demanded human sacrifice.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roscoe, The Baganda (1911); Bubembe Island temple tradition"
+    }
+   ]
+  }
+ ],
+ "buganda_kibuka": [
+  {
+   "name": "War oracle at the Mbaale shrine",
+   "type": "oracle",
+   "cadence": "occasional",
+   "notes": "Before campaigns the kabaka consulted Kibuka through the medium at Mbaale; his relics and regalia were carried in war and woven into the coronation rite as national war-god.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roscoe, The Baganda (1911); Kibuka shrine relics tradition"
+    }
+   ]
+  }
+ ],
+ "buganda_katonda": [
+  {
+   "name": "Temples of Katonda in Kyagwe",
+   "type": "temple",
+   "cadence": "ongoing",
+   "notes": "Three temples in Kyagwe tended by priests of the Njovu (Elephant) clan; daily morning invocations called on Katonda Ssewannaku for protection and prosperity.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roscoe, The Baganda (1911); Katonda temple tradition"
+    }
+   ]
+  }
+ ],
+ "bunyoro_ndahura": [
+  {
+   "name": "Kubandwa possession of the Ndahura spirit",
+   "term": {
+    "value": "kubandwa",
+    "script": "Latin",
+    "rom": "kubandwa"
+   },
+   "type": "possession",
+   "cadence": "occasional",
+   "notes": "Mediums (embandwa) become possessed by Ndahura, the Bacwezi spirit of smallpox and epidemics; Mubende Hill, linked with Ndahura and his mother Nakayima, is a major pilgrimage site for healing and fertility.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kubandwa (Cwezi) cult tradition; Mubende Hill / Nakayima site"
+    }
+   ]
+  }
+ ],
+ "bunyoro_wamara": [
+  {
+   "name": "Kubandwa veneration of Wamara",
+   "term": {
+    "value": "kubandwa",
+    "script": "Latin",
+    "rom": "kubandwa"
+   },
+   "type": "possession",
+   "cadence": "occasional",
+   "notes": "Chief among the embandwa spirits venerated after the Bacwezi vanished; associated with rain and rivers and with Lake Wamala, which bears his name.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kubandwa (Cwezi) cult tradition, interlacustrine Uganda"
+    }
+   ]
+  }
+ ],
+ "burmese_thagyamin": [
+  {
+   "name": "Thingyan (Burmese New Year water festival)",
+   "term": {
+    "value": "သင်္ကြန်",
+    "script": "Burmese",
+    "rom": "Thingyan"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "At the new year Thagyamin descends to the human world to record the deeds of mortals — the virtuous in a golden book, the wicked in a book of dog-skin — his arrival marking the start of Thingyan.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Thagyamin / Thingyan tradition, Burma"
+    }
+   ]
+  }
+ ],
+ "burmese_shwe_hpyin_naungdaw": [
+  {
+   "name": "Taungbyon Nat Festival",
+   "term": {
+    "value": "တောင်ပြုန်းပွဲတော်",
+    "script": "Burmese",
+    "rom": "Taungbyon pwedaw"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "The largest nat festival in Myanmar, held over six days at Taungbyon village near Mandalay for the Shwe Hpyin brothers; spirit-mediums (nat-kadaw) dance to the hsaing waing orchestra and receive offerings of money, flowers and liquor. Devotees avoid pork in honour of their father Byatta.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Taungbyone Festival tradition, Mandalay"
+    }
+   ]
+  }
+ ],
+ "burmese_shwe_hpyin_nyidaw": [
+  {
+   "name": "Taungbyon Nat Festival",
+   "term": {
+    "value": "တောင်ပြုန်းပွဲတော်",
+    "script": "Burmese",
+    "rom": "Taungbyon pwedaw"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Worshipped with his elder brother at the six-day Taungbyon festival; the younger brother receives liquor, tobacco and revelry from devotees through possessed mediums.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Taungbyone Festival tradition, Mandalay"
+    }
+   ]
+  }
+ ],
+ "burmese_min_mahagiri": [
+  {
+   "name": "Household nat of the house-post",
+   "type": "offering",
+   "cadence": "ongoing",
+   "notes": "Official household nat venerated through a dressed coconut hung on the main house-post, replaced when the stem withers; enshrined with his sister at the Tharabha Gate of Bagan and on Mount Popa.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mahagiri household-nat tradition, Burma"
+    }
+   ]
+  }
+ ],
+ "canaanite_baal": [
+  {
+   "name": "Sacrifice to Baal of Zaphon",
+   "type": "sacrifice",
+   "cadence": "regular",
+   "notes": "Animal sacrifice on stone altars formed the core of his cult; bulls were the premier offering for the 'Bull of Ugarit', though sheep and goats served regular rites.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ugaritic ritual texts; Baal cult at Ugarit"
+    }
+   ]
+  }
+ ],
+ "canaanite_anat": [
+  {
+   "name": "Animal offerings to Anat",
+   "type": "offering",
+   "cadence": "regular",
+   "notes": "Prominent in the Ugaritic cult, with offerings of rams and bulls and many votive inscriptions; named frequently in deity and offering lists.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ugaritic offering and deity lists; votive inscriptions to Anat"
+    }
+   ]
+  }
+ ],
+ "burmese_me_wunna": [
+  {
+   "name": "Pilgrimage to Popa Medaw on Mount Popa",
+   "type": "offering",
+   "cadence": "ongoing",
+   "notes": "As Popa Medaw, the 'Royal Mother of Popa', she is venerated at the Taungkalat shrine of the Thirty-Seven Nats; pilgrims bring flowers, coconuts and bananas, especially at the Nayon (May–June) and Nadaw (November–December) full-moon festivals.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mount Popa / Taungkalat nat-shrine tradition"
+    }
+   ]
+  }
+ ],
+ "burmese_byatta": [
+  {
+   "name": "Veneration of Byatta on Mount Popa",
+   "type": "offering",
+   "cadence": "ongoing",
+   "notes": "The deified royal flower-gatherer is honoured among the nats of Mount Popa beside his consort Popa Medaw and at the Taungbyon festival as father of the Shwe Hpyin brothers.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mount Popa nat tradition; Taungbyone festival"
+    }
+   ]
+  }
+ ],
+ "buganda_kawumpuli": [
+  {
+   "name": "Plague shrine of Kawumpuli",
+   "type": "temple",
+   "cadence": "occasional",
+   "notes": "Shrine at Buyego in Bulemeezi (Luwero area) where the plague-lubaale was propitiated, especially in time of pestilence.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roscoe, The Baganda (1911); Kawumpuli plague-shrine tradition"
+    }
+   ]
+  }
+ ],
+ "buryat_geser": [
+  {
+   "name": "Tailgan offering to the heaven-sent hero",
+   "term": {
+    "value": "tailgan",
+    "script": "Latin",
+    "rom": "tailgan"
+   },
+   "type": "sacrifice",
+   "cadence": "seasonal",
+   "notes": "Geser of the Abai Geser epic is invoked in Buryat tailgan rites alongside the western tengri, with offerings of food and drink and the raising of a ceremonial serge (post) for blessing and protection.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Buryat tailgan ritual tradition; Abai Geser epic cult"
+    }
+   ]
+  }
+ ],
+ "canaanite_resheph": [
+  {
+   "name": "Cult of Resheph at Ugarit, Byblos and Apollonia-Arsuf",
+   "type": "temple",
+   "cadence": "recurring",
+   "notes": "Resheph was worshipped at Ras Shamra (Ugarit), Byblos and at Arsuf (later Apollonia), and was taken into Egypt under the 18th Dynasty where he received state devotion as a war- and plague-god.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopaedia Britannica, s.v. 'Resheph'"
+    }
+   ]
+  }
+ ],
+ "canaanite_yarikh": [
+  {
+   "name": "Lunar offerings to Yarikh",
+   "type": "offering",
+   "cadence": "monthly",
+   "notes": "Worshipped at Ugarit with offerings of food and drink, especially at the full moon; he and Nikkal (with Kushuh) receive joint offerings in ritual text KTU 1.111.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic ritual text KTU 1.111"
+    }
+   ]
+  }
+ ],
+ "canaanite_shapshu": [
+  {
+   "name": "Daily solar veneration",
+   "type": "offering",
+   "cadence": "daily",
+   "notes": "The Torch of the Gods was honoured at the three solar stations of sunrise, noon and sunset.",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Wikipedia, 'Shapshu'; Ugaritic ritual corpus"
+    }
+   ]
+  }
+ ],
+ "canaanite_rephaim": [
+  {
+   "name": "Marzeah feast of the Rapiuma",
+   "term": {
+    "value": "mrzḥ",
+    "script": "Latn",
+    "rom": "marziḥu"
+   },
+   "type": "festival",
+   "cadence": "recurring",
+   "notes": "The deified dead were summoned to a banqueting society (marzeah): they journey three days by chariot to the threshing-floor and feast seven days, drinking wine, in rites that linked the living king to his royal ancestors.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ugaritic Rephaim texts KTU 1.20-1.22"
+    }
+   ]
+  }
+ ],
+ "chewa_mbona": [
+  {
+   "name": "Mbona rain cult at the Khulubvi shrine",
+   "type": "shrine",
+   "cadence": "annual",
+   "notes": "At the Khulubvi grove in Nsanje the martyr's spirit-hut is annually rebuilt and rain is invoked; a spirit-medium possessed by Mbona and his installed 'wife' Salima mediate his oracles. Inscribed on Malawi's UNESCO tentative list.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. M. Schoffeleers, River of Blood: The Genesis of a Martyr Cult in Southern Malawi (1992)"
+    },
+    {
+     "kind": "tertiary",
+     "reference": "UNESCO World Heritage tentative list, 'Khulubvi and Associated Mbona Sacred Rain Shrines'"
+    }
+   ]
+  }
+ ],
+ "chaga_ruwa": [
+  {
+   "name": "Noon sacrifice to Ruwa",
+   "type": "sacrifice",
+   "cadence": "occasional",
+   "notes": "Sacrifices to the sun-high-god were offered at noon; in grave misfortune affecting the chiefdom the whole stomach and intestines of the victim were given to Ruwa, with prayers for harvest and deliverance.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "C. Dundas, Kilimanjaro and Its People (1924)"
+    }
+   ]
+  }
+ ],
+ "chamorro_taotaomona": [
+  {
+   "name": "Reverence of the ancestral taotaomona",
+   "type": "offering",
+   "cadence": "as needed",
+   "notes": "The ancestral spirits inhabiting banyan groves (trongkon nunu), latte sites and the deep forest are addressed with the formula of permission ('guella yan guello') before entering their places; disrespect (tai respetu) draws their punishment, respect their protection and blessing.",
+   "sources": [
+    {
+     "kind": "tertiary",
+     "reference": "Guampedia, 'Taotaomo'na'"
+    }
+   ]
+  }
+ ],
+ "cherokee_selu": [
+  {
+   "name": "Green Corn Ceremony",
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "The Corn Mother is honoured at the late-summer Green Corn (busk) ceremony, the renewal feast at which the first ripe corn is eaten, old fires are extinguished and rekindled, and the community is purified.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James Mooney, Myths of the Cherokee (1900); Cherokee Green Corn (Selu) tradition"
+    }
+   ]
+  }
+ ],
+ "chinese_jade_emperor": [
+  {
+   "name": "Birthday of the Jade Emperor (Tian Gong Dan)",
+   "term": {
+    "value": "天公誕",
+    "script": "Hant",
+    "rom": "Tiāngōng Dàn"
+   },
+   "type": "festival",
+   "cadence": "annual, ninth day of the first lunar month",
+   "notes": "Households and temples (especially in Taiwan and Fujian) light lanterns, burn incense, and offer sugarcane, rice cakes and theatrical performances to the Lord of Heaven.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chinese New Year folk-ritual ethnography; temple practice in Taiwan/Fujian"
+    }
+   ]
+  }
+ ],
+ "chinese_zao_jun": [
+  {
+   "name": "Sending-off of the Kitchen God",
+   "term": {
+    "value": "送灶",
+    "script": "Hant",
+    "rom": "sòngzào"
+   },
+   "type": "festival",
+   "cadence": "annual, 23rd/24th day of the twelfth lunar month",
+   "notes": "On the 'Little New Year' the family burns the old stove-portrait to send Zao Jun to Heaven, smearing sticky malt-sugar on his lips so his report will be sweet; a new image is pasted up at New Year.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chinese New Year folk-ritual ethnography (the 'little new year' / xiaonian)"
+    }
+   ]
+  }
+ ],
+ "chinese_houji": [
+  {
+   "name": "Sacrifice at the Altars of Soil and Grain",
+   "term": {
+    "value": "社稷",
+    "script": "Hant",
+    "rom": "shèjì"
+   },
+   "type": "sacrifice",
+   "cadence": "seasonal state sacrifice",
+   "notes": "As patron of grain Houji received offerings at the she-ji altars, the 'soil-and-grain' shrines that became a metonym for the state itself.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liji (Book of Rites); Zhou state-altar practice"
+    }
+   ]
+  }
+ ],
+ "chinese_shennong": [
+  {
+   "name": "Sacrifice at the Mausoleum of the Yan Emperor",
+   "term": {
+    "value": "炎帝陵祭典",
+    "script": "Hant",
+    "rom": "Yándìlíng jìdiǎn"
+   },
+   "type": "sacrifice",
+   "cadence": "annual ancestral rite",
+   "notes": "As ancestor-god of farming and medicine, Shennong (Yandi) receives ancestral sacrifice at the Yandi Mausoleum in Yanling, Hunan, a rite listed as national intangible cultural heritage.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yandi Mausoleum sacrificial ceremony (PRC national intangible cultural heritage)"
+    }
+   ]
+  }
+ ],
+ "chinese_leizu": [
+  {
+   "name": "Cult of the Silkworm Mother",
+   "term": {
+    "value": "蠶奶奶",
+    "script": "Hant",
+    "rom": "Cán Nǎinai"
+   },
+   "type": "offering",
+   "cadence": "seasonal, at the start of sericulture",
+   "notes": "Identified with the Silkworm Mother (Canmu / Can Nainai), Leizu receives village offerings for healthy silkworms and successful spring rearing, sometimes through a spirit-medium.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Silkworm-Mother village cult (Hebei field study); Canshen tradition"
+    }
+   ]
+  }
+ ],
+ "chinese_yu_the_great": [
+  {
+   "name": "Great Sacrifice to Yu at Kuaiji",
+   "term": {
+    "value": "大禹祭典",
+    "script": "Hant",
+    "rom": "Dà Yǔ jìdiǎn"
+   },
+   "type": "sacrifice",
+   "cadence": "annual",
+   "notes": "Yu's mausoleum, temple and ancestral hall stand at Kuaiji (Shaoxing); the sacrifice, revived as a national ceremony in 'monarchical form', honors the flood-tamer and dynastic founder.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ritual Ceremony for Great Yu at Kuaiji (Zhejiang); cult of Yu tradition"
+    }
+   ]
+  }
+ ],
+ "chinese_houyi": [
+  {
+   "name": "Moon-altar offering (later Mid-Autumn observance)",
+   "type": "offering",
+   "cadence": "associated with the eighth-month full moon",
+   "notes": "In the Chang'e legend Houyi sets out his wife's favorite fruits and incense before the moon, an offering folk tradition links to the Mid-Autumn Festival.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chang'e / Mid-Autumn folk tradition"
+    }
+   ]
+  }
+ ],
+ "chinese_yaoji": [
+  {
+   "name": "Worship at the Divine Maiden Temple, Mount Wu",
+   "term": {
+    "value": "神女廟",
+    "script": "Hant",
+    "rom": "Shénnǚ Miào"
+   },
+   "type": "temple",
+   "cadence": "local cult",
+   "notes": "A temple to the Wushan goddess stood by the Yangtze gorges; in Daoist canonization she bears the title Miaoyong Zhenren.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wushan Shennü temple tradition; Daoist title Miaoyong Zhenren"
+    }
+   ]
+  }
+ ],
+ "chinese_erlang_shen": [
+  {
+   "name": "Erlang worship at Guankou",
+   "term": {
+    "value": "灌口二郎",
+    "script": "Hant",
+    "rom": "Guànkǒu Èrláng"
+   },
+   "type": "temple",
+   "cadence": "local cult, Sichuan",
+   "notes": "Worshipped at Guankou (Dujiangyan) in Sichuan as a river-taming and flood-controlling deity; farmers prayed at his temples by canals and weirs for protection from flood.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Erlang cult of Guankou/Dujiangyan, Sichuan"
+    }
+   ]
+  }
+ ],
+ "chukchi_dawn": [
+  {
+   "name": "Sacrifice to the Dawn quarter",
+   "type": "sacrifice",
+   "cadence": "recurrent, dwellings facing the sunrise",
+   "notes": "Chukchi tents face Morning-Dawn, the pre-eminent benevolent Being; the principal animal sacrifices (reindeer among herders, dog among maritime Chukchi) are directed to the Dawn, with a fox sent down in exchange for the sacrificed dog.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bogoras, The Chukchee (Jesup North Pacific Expedition)"
+    }
+   ]
+  }
+ ],
+ "chukchi_midday": [
+  {
+   "name": "Sacrifice to the Mid-day quarter",
+   "type": "sacrifice",
+   "cadence": "recurrent",
+   "notes": "Mid-day, with Dawn, receives the greater share of the directional sacrifices among the benevolent Beings (taaronyo vairgit).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bogoras, The Chukchee (Jesup North Pacific Expedition)"
+    }
+   ]
+  }
+ ],
+ "chukchi_zenith": [
+  {
+   "name": "Sacrifice to the Zenith (Middle-Crown)",
+   "type": "sacrifice",
+   "cadence": "recurrent",
+   "notes": "The Zenith-being is chief of the benevolent Beings sacrificed to; offerings are directed upward to the 'middle-crown' at the apex of the sky.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bogoras, The Chukchee (Jesup North Pacific Expedition)"
+    }
+   ]
+  }
+ ],
+ "chuukese_inemes": [
+  {
+   "name": "Love-magic invocation of Inemes",
+   "type": "offering",
+   "cadence": "as needed, for love and desire",
+   "notes": "Inemes is the goddess imprecated in Chuukese love-magic spells and love-potions, and she descends upon a spirit-medium in the lineage meeting-house.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bollig, Die Bewohner der Truk-Inseln (1927); Micronesian Seminar, spirit possession in Chuuk"
+    }
+   ]
+  }
+ ],
+ "circassian_shible": [
+  {
+   "name": "Shible-Wuj, the dance round the lightning-struck",
+   "term": {
+    "value": "Щыблэудж",
+    "script": "Cyrl",
+    "rom": "Ŝəblə-wəj"
+   },
+   "type": "rite",
+   "cadence": "on occasion of a lightning strike",
+   "notes": "When lightning struck a place, beast or person, a circle (wuj) formed round the spot and a round-dance was performed with the 'Song of Lightning' (Щыблэ уэрэд), the names Shible and Yelle (Ilya) repeated in the chant. Those killed by lightning were buried with honor as blessed.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Jaimoukha, 'Ancient Circassian Religion' (oocities.org)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Circassian dance' (Shible-Wuj)"
+    }
+   ]
+  }
+ ],
+ "circassian_sozeresh": [
+  {
+   "name": "Sozeresh festival of the first days of spring",
+   "type": "festival",
+   "cadence": "first three days of spring, from the Circassian New Year (22 March)",
+   "notes": "Sozeresh was honored as a domestic idol of a seven-knotted branch of hamshkhut (pear/hawthorn) wood kept in the family barn; the household feasted and prayed before it over the first three days of the New Year for the prosperity of the stores.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Circassian paganism' (Sozeresh)"
+    }
+   ]
+  }
+ ],
+ "circassian_thagaledj": [
+  {
+   "name": "Thaghelej-Wuj, harvest dance for the grain-god",
+   "term": {
+    "value": "Тхьэгъэлэджудж",
+    "script": "Cyrl",
+    "rom": "Tḥəğələǯ-wəj"
+   },
+   "type": "festival",
+   "cadence": "at the agricultural festivals",
+   "notes": "A ritual round-dance dedicated to the deity of agriculture and abundance, performed during the harvest festivals to secure a good crop.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Circassian dance' (Thaghelej-Wuj)"
+    }
+   ]
+  }
+ ],
+ "circassian_mezitha": [
+  {
+   "name": "hunters' sacrifice to the lord of game",
+   "type": "sacrifice",
+   "cadence": "before and after the hunt",
+   "notes": "Hunters honored Mezithe with sacrifice (bulls or lambs), processions, dances and libations of the sacred brew sana, invoking him for luck and a share of the game.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Circassian paganism'"
+    }
+   ]
+  }
+ ],
+ "circassian_tlepsh": [
+  {
+   "name": "smiths' vigil at the forge of Tlepsh",
+   "type": "rite",
+   "cadence": "on occasion (healing vigils)",
+   "notes": "Smiths revered Tlepsh as master of fire and metal; the community petitioned him at ritual vigils held at the forge or anvil to heal wounds and cure illness.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "crazyalchemist.com, 'Tlepsh (Kurdalægon)'"
+    }
+   ]
+  }
+ ],
+ "circassian_akhin": [
+  {
+   "name": "sacrifice of Akhin's self-walking cow",
+   "type": "sacrifice",
+   "cadence": "at the cattle-feast",
+   "notes": "Ahin, ranked among the most vital deities, was honored in the myth-feast of the sacred 'self-walking' cow that came of its own accord to the sacrifice for the prospering of the herds.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Circassian paganism' (Ahin)"
+    }
+   ]
+  }
+ ],
+ "dacian_zalmoxis": [
+  {
+   "name": "the quadrennial messenger sent to Zalmoxis",
+   "type": "sacrifice",
+   "cadence": "every four years",
+   "notes": "Every fourth year the Getae chose a man by lot and flung him onto three upheld spears to carry their petitions to Zalmoxis; if he died pierced the god was thought favorable. Only the king and his messengers might approach the god's cave on Kogaionon.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Herodotus, Histories IV.94"
+    },
+    {
+     "kind": "primary",
+     "reference": "Strabo, Geographica VII.3.5"
+    }
+   ]
+  }
+ ],
+ "dinka_nhialic": [
+  {
+   "name": "ox-sacrifice with the fishing-spear",
+   "type": "sacrifice",
+   "cadence": "at need (rain, harvest, crisis)",
+   "notes": "A bull or ox is sacrificed to Nhialic; the invokers hold fishing-spears and call upon the clan-divinities, free-divinities, ancestral spirits and at times Nhialic himself.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Dinka religion'"
+    }
+   ]
+  }
+ ],
+ "dogon_lebe": [
+  {
+   "name": "cult of the Lébé earth-altar",
+   "type": "offering",
+   "cadence": "seasonal (agricultural)",
+   "notes": "At the Lébé altar the Hogon (priest) makes offerings for the renewal of the soil; the serpent Lébé is said to lick the Hogon each night to transmit life-force to the fields.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Lebe (Dogon)'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Encyclopedia.com, 'Dogon Religion'"
+    }
+   ]
+  }
+ ],
+ "dogon_binou_serou": [
+  {
+   "name": "the Binu totemic cult",
+   "type": "offering",
+   "cadence": "seasonal (agricultural sacrifices)",
+   "notes": "At the painted Binu shrines (gina), priests of the lineage make agricultural sacrifices and millet-porridge offerings to the immortal Binu ancestor, who appears as the clan totem.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Binou (Dogon religion)'"
+    }
+   ]
+  }
+ ],
+ "dogon_dyongou_serou": [
+  {
+   "name": "the Sigui rite and the masks",
+   "term": {
+    "value": "Sigui",
+    "script": "Latn",
+    "rom": "Sigui"
+   },
+   "type": "festival",
+   "cadence": "every sixty years",
+   "notes": "The death of Dyongou Sérou, the first being to die, founded the great mask cult; the Sigui, held roughly every sixty years over several years, commemorates the first ancestor and renews the Great Mask (imina na).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Dogon religion' (Sigui)"
+    }
+   ]
+  }
+ ],
+ "dayak_tempon_telon": [
+  {
+   "name": "the Tiwah secondary mortuary feast",
+   "term": {
+    "value": "Tiwah",
+    "script": "Latn",
+    "rom": "Tiwah"
+   },
+   "type": "festival",
+   "cadence": "secondary funeral, held in due course after death",
+   "notes": "In the great Tiwah ceremony the soul (liau) is released and conveyed by Tempon Telon's soul-ship to the highest heaven, Lewu Tatau; the corpse is laid in a boat-shaped coffin reflecting that journey.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopedia.com, 'Ngaju Dayak'"
+    }
+   ]
+  }
+ ],
+ "edo_olokun": [
+  {
+   "name": "Olokun worship and initiation",
+   "term": {
+    "value": "Olokun",
+    "script": "Latn",
+    "rom": "Olokun"
+   },
+   "type": "devotion",
+   "cadence": "recurring",
+   "notes": "Local congregations, drawn especially from women seeking children, pray and sacrifice to Olokun; mud-shrine figures and waterpots, coral-bead regalia and orhue chalk feature in fourteen-day initiation and purification rites.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ben-Amos, The Art of Benin (1995); Bradbury (1957)"
+    }
+   ]
+  }
+ ],
+ "egyptian_bastet": [
+  {
+   "name": "Feast of Bubastis",
+   "term": {
+    "value": "ḥb bꜣst",
+    "script": "Egyp",
+    "rom": "heb Bast"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Herodotus describes a vast river-procession festival at Bubastis with music, dancing and wine, drawing crowds from across Egypt; votive bronze cats and mummified cats were dedicated.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Herodotus, Histories 2.59-60"
+    }
+   ]
+  }
+ ],
+ "egyptian_min": [
+  {
+   "name": "Coming Forth of Min (Procession of Min)",
+   "term": {
+    "value": "prt-mnw",
+    "script": "Egyp",
+    "rom": "peret-Min"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Harvest festival in which the cult-image was carried to the fields, the king cut the first sheaf of grain, and games (including pole-climbing) were held; well attested at Medinet Habu.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Festival reliefs, Medinet Habu (temple of Ramesses III)"
+    }
+   ]
+  }
+ ],
+ "egyptian_imhotep": [
+  {
+   "name": "Cult of Imhotep, son of Ptah",
+   "type": "devotion",
+   "cadence": "recurring",
+   "notes": "Deified in the Late Period as a healing god; pilgrims sought cures and incubation dreams at sanctuaries, especially at Saqqara, Memphis (Asklepieion) and Philae, where he was syncretized with Asklepios.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wildung, Imhotep und Amenhotep (1977)"
+    }
+   ]
+  }
+ ],
+ "egyptian_amun": [
+  {
+   "name": "Opet Festival",
+   "term": {
+    "value": "ḥb jpt",
+    "script": "Egyp",
+    "rom": "heb Ipet"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Annual Theban procession in which Amun's cult-image travelled by barque from Karnak to Luxor Temple to renew the king's ka and divine kingship.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Opet reliefs, Luxor Temple colonnade"
+    }
+   ]
+  }
+ ],
+ "egyptian_khonsu": [
+  {
+   "name": "Cult of Khonsu the Merciful at Karnak",
+   "type": "devotion",
+   "cadence": "recurring",
+   "notes": "As Khonsu-pa-ir-sekher ('who works destiny/expels demons') he was sought for healing and exorcism; the Bentresh Stela recounts his image sent abroad to cure a foreign princess.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Bentresh Stela (Louvre C 284)"
+    }
+   ]
+  }
+ ],
+ "egyptian_hathor": [
+  {
+   "name": "Festival of Drunkenness",
+   "term": {
+    "value": "tḫy",
+    "script": "Egyp",
+    "rom": "tekhy"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Celebrated the pacified return of the raging Eye as joyful Hathor through music, dance and ritual intoxication, prominently at Dendera and Mut's precinct.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Dendera temple texts; Mut precinct, Karnak"
+    }
+   ]
+  }
+ ]
+};
+const ICONO_SWEEP = {
+ "abkhaz_afy": {
+  "attributes": [
+   {
+    "id": "abkhaz_afy-lightning-bolt",
+    "name": "the lightning-bolt and the thunder-clap",
+    "notes": "Afy is manifest in the flash of lightning and the crash of thunder rather than in any anthropomorphic image.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Inal-ipa, Abkhazy (Abkhazians)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "abkhaz_afy-bull",
+    "name": "the bull (whose hide shrouds the lightning-struck)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Inal-ipa, Abkhazy (Abkhazians)"
+     }
+    ]
+   }
+  ]
+ },
+ "aboriginal_bunjil": {
+  "attributes": [
+   {
+    "id": "aboriginal_bunjil-eagle-form",
+    "name": "the form of the wedge-tailed eagle (eaglehawk)",
+    "notes": "Bunjil's defining form is the wedge-tailed eagle; he is also identified with the star Altair, flanked by his two wives the Black Swans (Aquila).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "aboriginal_bunjil-wedge-tailed-eagle",
+    "name": "the wedge-tailed eagle",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+     }
+    ]
+   }
+  ]
+ },
+ "aboriginal_waa": {
+  "attributes": [
+   {
+    "id": "aboriginal_waa-crow-form",
+    "name": "the form of the crow/raven",
+    "notes": "Waang appears as the black crow, the trickster moiety-ancestor opposite the eaglehawk Bunjil; the fire he stole and flung blackened his feathers.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "aboriginal_waa-crow",
+    "name": "the crow (raven)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Howitt, The Native Tribes of South-East Australia (1904)"
+     }
+    ]
+   }
+  ]
+ },
+ "aboriginal_wandjina": {
+  "attributes": [
+   {
+    "id": "aboriginal_wandjina-halo-head",
+    "name": "large halo-ringed head with great dark eyes and no mouth",
+    "notes": "The Wandjina are painted with a white face, immense round eyes, a long nose and no mouth, the head encircled by a halo or band with radiating lines read as cloud, wind and lightning, the body stippled with dots read as rain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Crawford, The Art of the Wandjina (1968)"
+     }
+    ]
+   }
+  ]
+ },
+ "aboriginal_wagyl": {
+  "attributes": [
+   {
+    "id": "aboriginal_wagyl-serpent-body",
+    "name": "the great serpent whose winding body is the rivers and the Darling Scarp",
+    "notes": "The Wagyl is a vast rainbow-serpent; its meandering passage carved the Swan and Canning rivers, and the Darling Scarp is reckoned its body.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "State Library of Western Australia, 'The Waugal'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "aboriginal_wagyl-serpent",
+    "name": "the serpent (water-snake)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "State Library of Western Australia, 'The Waugal'"
+     }
+    ]
+   }
+  ]
+ },
+ "aganju": {
+  "attributes": [
+   {
+    "id": "aganju-red-brown",
+    "name": "robust regal figure clothed in browns and reds",
+    "notes": "Aganju is shown as a powerful kingly figure in earth-brown and fiery red, the colours of volcano and desert.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Original Botanica, 'Aganju (Agayu), Orisha of Volcanoes and Wilderness'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "aganju-ram",
+    "name": "the ram",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Original Botanica, 'Aganju (Agayu), Orisha of Volcanoes and Wilderness'"
+     }
+    ]
+   }
+  ]
+ },
+ "akan_anansi": {
+  "attributes": [
+   {
+    "id": "akan_anansi-spider-web",
+    "name": "the spider and its web",
+    "notes": "Anansi's normal form is a spider, though he may take human shape; the web is his emblem of cunning and connection.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Anansi'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "akan_anansi-spider",
+    "name": "the spider",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, 'Ananse'"
+     }
+    ]
+   }
+  ]
+ },
+ "amani": {
+  "attributes": [
+   {
+    "id": "amani-ram-head",
+    "name": "man with a ram's head crowned with sun-disk and twin plumes",
+    "notes": "The Napatan Amun is shown ram-headed, wearing the sun-disk and two tall plumes, his distinctive Kushite form at Gebel Barkal.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kendall, 'Jebel Barkal and Ancient Napata'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "amani-ram-criosphinx",
+    "name": "the ram (and the avenue of ram-headed criosphinxes)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kendall, 'Jebel Barkal and Ancient Napata'"
+     }
+    ]
+   }
+  ]
+ },
+ "apache_killer_of_enemies": {
+  "attributes": [
+   {
+    "id": "apache_killer_of_enemies-fire-shield",
+    "name": "Sun/fire shield-emblem",
+    "notes": "As the twin fathered by (or aligned with) the Sun, Killer of Enemies is marked by fire and sun symbols, shown as a shield emblem or flicker-feather headdress distinguishing him from his water-aligned brother.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Morris E. Opler, 'Athapaskan Culture Heroes: Killer-of-Enemies and Child-of-the-Water' (1938)"
+     }
+    ]
+   }
+  ]
+ },
+ "apache_child_of_the_water": {
+  "attributes": [
+   {
+    "id": "apache_child_of_the_water-water-emblem",
+    "name": "Water/moon emblem",
+    "notes": "The twin aligned with water (and the moon/rain) bears water symbols opposite his brother's fire emblem; in Chiricahua and Mescalero tradition he is the dominant of the two heroes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Morris E. Opler, 'Athapaskan Culture Heroes' (1938); Myths and Tales of the Chiricahua Apache Indians (1942)"
+     }
+    ]
+   }
+  ]
+ },
+ "andamanese_juruwin": {
+  "attributes": [
+   {
+    "id": "andamanese_juruwin-bone-amulet",
+    "name": "Bone amulets worn against the sea-dead",
+    "notes": "Amulets fashioned from the bones of dead kin were worn to ward off the dangerous spirits of the dead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. R. Radcliffe-Brown, The Andaman Islanders (1922)"
+     }
+    ]
+   }
+  ]
+ },
+ "andamanese_lau": {
+  "attributes": [
+   {
+    "id": "andamanese_lau-bone-amulet",
+    "name": "Bone amulets worn against the forest-dead",
+    "notes": "Bone amulets of dead relatives were believed to repel the lau and the sickness they bring.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. R. Radcliffe-Brown, The Andaman Islanders (1922)"
+     }
+    ]
+   }
+  ]
+ },
+ "anglosaxon_woden": {
+  "attributes": [
+   {
+    "id": "anglosaxon_woden-nine-twigs",
+    "name": "Nine glory-twigs (wuldortanas)",
+    "notes": "In the Nine Herbs Charm Woden smites the serpent into nine pieces with nine wuldortanas ('glory-twigs'), his instruments of healing and charm-magic.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Nine Herbs Charm (Lacnunga, BL Harley 585)"
+     }
+    ]
+   },
+   {
+    "id": "anglosaxon_woden-hood",
+    "name": "Concealing hood/mask",
+    "notes": "Implied by his byname Grim ('the masked/hooded one'); the disguised wanderer of the Germanic Wodan/Óðinn type.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "cf. Old Norse Grímnir; English Grim- place-names"
+     }
+    ]
+   }
+  ]
+ },
+ "anglosaxon_thunor": {
+  "attributes": [
+   {
+    "id": "anglosaxon_thunor-hammer",
+    "name": "Hammer",
+    "notes": "His weapon and emblem, worn as a protective pendant in the Anglo-Saxon and Jutish hammer-amulets paralleling the Norse Mjöllnir cult.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hammer amulets, Jutish cemetery at Gilton, Kent; David Wilson, Anglo-Saxon Paganism (1992)"
+     }
+    ]
+   },
+   {
+    "id": "anglosaxon_thunor-lightning",
+    "name": "Thunder and lightning",
+    "notes": "The thunder itself (Old English þunor) is his manifestation, like that of his cognate Þórr.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Old English vocabulary; cf. Thor"
+     }
+    ]
+   }
+  ]
+ },
+ "anglosaxon_tiw": {
+  "attributes": [
+   {
+    "id": "anglosaxon_tiw-tir-rune",
+    "name": "The Tīr rune (↑)",
+    "notes": "The arrow-like 'T'-rune named for the god is described in the Old English Rune Poem as a sure guide, ever keeping faith, and was inscribed on weapons for victory.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Old English Rune Poem"
+     }
+    ]
+   }
+  ]
+ },
+ "arabian_al_uzza": {
+  "attributes": [
+   {
+    "id": "arabian_al_uzza-baetyl",
+    "name": "Sacred stone (baetyl) and trees",
+    "notes": "Worshipped aniconically in three sacred acacia/samura trees and an associated stone at Nakhlah.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "arabian_al_uzza-acacia",
+    "name": "Acacia (samura) trees of Nakhlah",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (the three trees at Nakhlah)"
+     }
+    ]
+   }
+  ]
+ },
+ "arabian_allat": {
+  "attributes": [
+   {
+    "id": "arabian_allat-white-stone",
+    "name": "Cubic white granite stone",
+    "notes": "At al-Ta'if she was venerated in the form of a square white stone within her temple precinct.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam"
+     }
+    ]
+   },
+   {
+    "id": "arabian_allat-athena-arms",
+    "name": "Helmet, spear and aegis (Palmyrene Athena type)",
+    "notes": "In Palmyrene sculpture of the Roman period she is shown armed as Athena, with helmet, spear and aegis.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Palmyrene reliefs of Allat as Athena (1st-2nd c. CE)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "arabian_allat-lion",
+    "name": "Lion (her guardian and consort-symbol)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colossal lion of the Temple of Allat, Palmyra, holding a gazelle"
+     }
+    ]
+   },
+   {
+    "id": "arabian_allat-gazelle",
+    "name": "Gazelle (sheltered between the lion's paws, symbol of her mercy)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lion of Allat, Palmyra"
+     }
+    ]
+   }
+  ]
+ },
+ "apache_white_painted_woman": {
+  "attributes": [
+   {
+    "id": "apache_white_painted_woman-abalone",
+    "name": "Abalone shell",
+    "notes": "Her emblem and refuge: she rode out the flood in an abalone shell, and Apache girls wear an abalone-shell pendant on the brow in the Sunrise Ceremony she instituted.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Morris E. Opler, An Apache Life-Way (1941)"
+     }
+    ]
+   }
+  ]
+ },
+ "andamanese_maia_lircitmo": {
+  "attributes": [
+   {
+    "id": "andamanese_maia_lircitmo-red-throat",
+    "name": "Scarlet throat-patch",
+    "notes": "The kingfisher's bright red neck-feathers are said to mark the burn where Bilik's thrown firebrand scorched him as he carried off the fire.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. R. Radcliffe-Brown, The Andaman Islanders (1922)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "andamanese_maia_lircitmo-kingfisher",
+    "name": "Kingfisher (the fire-bringer himself)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. R. Radcliffe-Brown, The Andaman Islanders (1922)"
+     }
+    ]
+   }
+  ]
+ },
+ "andamanese_biliku": {
+  "sacredAnimals": [
+   {
+    "id": "andamanese_biliku-spider",
+    "name": "Spider (her form and namesake)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. R. Radcliffe-Brown, The Andaman Islanders (1922)"
+     }
+    ]
+   },
+   {
+    "id": "andamanese_biliku-cicada",
+    "name": "Cicada (killing or disturbing it rouses her wrath)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. R. Radcliffe-Brown, The Andaman Islanders (1922)"
+     }
+    ]
+   }
+  ]
+ },
+ "anglosaxon_wayland": {
+  "attributes": [
+   {
+    "id": "anglosaxon_wayland-tongs-forge",
+    "name": "Smith's tongs and forge",
+    "notes": "His defining attribute on the Franks Casket front panel: hobbled at his anvil, gripping with tongs the skull-cup made from Niðhad's son.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Franks Casket (early 8th c., British Museum), front panel"
+     }
+    ]
+   },
+   {
+    "id": "anglosaxon_wayland-wings",
+    "name": "Feathered flying-gear",
+    "notes": "The wings (flygil) he forges from birds' feathers to escape his captivity, alluded to in the bird-catching figure on the Franks Casket.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Völundarkviða; Þiðreks saga; Franks Casket"
+     }
+    ]
+   }
+  ]
+ },
+ "anglosaxon_beowulf": {
+  "attributes": [
+   {
+    "id": "anglosaxon_beowulf-grendel-arm",
+    "name": "Grendel's torn-off arm and hand",
+    "notes": "Hung up under Heorot's gabled roof as the trophy and proof of Beowulf's bare-handed victory.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Beowulf, ll. 833-836, 925-927"
+     }
+    ]
+   }
+  ]
+ },
+ "arabian_hubal": {
+  "attributes": [
+   {
+    "id": "arabian_hubal-red-agate-figure",
+    "name": "Red-agate man with a golden hand",
+    "notes": "Hubal's image was a man of red agate (cornelian); it reached the Quraysh with the right hand broken off, and they replaced it with a hand of gold. It stood within the Ka'ba over the treasure-pit.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam"
+     }
+    ]
+   },
+   {
+    "id": "arabian_hubal-seven-arrows",
+    "name": "The seven divining-arrows",
+    "notes": "Seven headless arrows (qidāḥ) stood before the image, drawn by the keeper to deliver the god's verdicts.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam"
+     }
+    ]
+   }
+  ]
+ },
+ "arabian_manat": {
+  "attributes": [
+   {
+    "id": "arabian_manat-black-stone",
+    "name": "Black sacred stone at Qudayd",
+    "notes": "Manat was venerated as a great black stone (an outcrop) on the sea-road at Qudayd between Mecca and Medina, anointed and circumambulated by the Aws and Khazraj.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam"
+     }
+    ]
+   },
+   {
+    "id": "arabian_manat-fate-and-death",
+    "name": "Goddess of fate and the appointed death",
+    "notes": "As the apportioner of destinies and death, Manat (whose name links to maniyya, 'fate/death') was invoked to protect tombs in the Nabataean north and to guarantee oaths.",
+    "sources": [
+     {
+      "kind": "archaeological",
+      "reference": "Nabataean funerary inscriptions invoking Manawat (Hegra/Madā'in Sālih)"
+     }
+    ]
+   }
+  ]
+ },
+ "aramean_atargatis": {
+  "attributes": [
+   {
+    "id": "aramean_atargatis-mural-crown",
+    "name": "Mural (turret) crown",
+    "notes": "Especially on coins the Dea Syria wears the crenellated mural crown of the city she protects, marking her as tutelary city-goddess.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "coinage of Hierapolis-Bambyce; Lightfoot, Lucian: On the Syrian Goddess (2003)"
+     }
+    ]
+   },
+   {
+    "id": "aramean_atargatis-spindle-scepter",
+    "name": "Scepter and spindle, enthroned between lions",
+    "notes": "Lucian describes her seated image holding a scepter in one hand and a spindle in the other, rays about her head and lions at her sides; the fish-tailed Derceto form belongs to Ascalon.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Lucian (attrib.), De Dea Syria §32"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "aramean_atargatis-sacred-trees",
+    "name": "Sacred dove-trees of the temple court",
+    "notes": "The sanctuary at Hierapolis kept sacred trees thronged with the goddess's inviolable doves, beside the pools of her sacred fish.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Lucian (attrib.), De Dea Syria §§41, 45-47"
+     }
+    ]
+   }
+  ]
+ },
+ "aramean_hadad": {
+  "attributes": [
+   {
+    "id": "aramean_hadad-thunderbolt",
+    "name": "Forked thunderbolt and mace",
+    "notes": "The Syro-Hittite weather-god is figured bearded, striding upon or beside his bull, brandishing a mace and grasping a forked lightning-bolt or sheaf of stylized lightning.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Green, The Storm-God in the Ancient Near East (2003)"
+     }
+    ]
+   },
+   {
+    "id": "aramean_hadad-horned-crown",
+    "name": "Horned crown",
+    "notes": "As a high storm-god he wears the horned headdress of divinity in Near Eastern convention.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Green, The Storm-God in the Ancient Near East (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "aramean_rakib_el": {
+  "sacredAnimals": [
+   {
+    "id": "aramean_rakib_el-bull-team",
+    "name": "Chariot and team of the divine charioteer",
+    "notes": "Rakib-El, 'Charioteer of El,' is the dynastic god who drives the divine chariot; on the Bar-Rakib orthostats his royal devotee is shown with the winged solar/lunar disc emblem of the Samalian house, and the god is paired in the inscriptions with the moon-god Baal-Harran.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bar-Rakib inscriptions and reliefs, Zincirli (KAI 216-218)"
+     }
+    ]
+   }
+  ]
+ },
+ "aymara_inti": {
+  "attributes": [
+   {
+    "id": "aymara_inti-radiant-face",
+    "name": "Radiant golden face emitting rays and flames",
+    "notes": "Inti is shown as a human face of gold from which sun-rays and flames stream; gold itself was held to be the 'sweat of the Sun.'",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bernabé Cobo, Historia del Nuevo Mundo (1653)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "aymara_inti-condor",
+    "name": "Condor (mallku) of the sky",
+    "notes": "The condor, lord of the upper world (alaxpacha), is the bird associated with the solar/celestial sphere in Aymara cosmology.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bastien, Mountain of the Condor (1978)"
+     }
+    ]
+   }
+  ]
+ },
+ "aymara_pachamama": {
+  "attributes": [
+   {
+    "id": "aymara_pachamama-harvest-bearer",
+    "name": "Earth-mother bearing crops, embodied in stone and tree",
+    "notes": "Pachamama is imagined as a woman laden with potatoes and coca, present in the soil itself; her shrines are sacred rocks (apachetas) and ancient tree-trunks of the altiplano.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "colonial idolatry literature; Bastien, Mountain of the Condor (1978)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "aymara_pachamama-coca",
+    "name": "Coca leaf",
+    "notes": "Coca (the k'intu of three perfect leaves) is the foremost offering laid to and burned for the earth-mother in the challa and despacho rites.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tschopik, The Aymara of Chucuito (1951)"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_mayahuel": {
+  "attributes": [
+   {
+    "id": "aztec_mayahuel-many-breasted",
+    "name": "Many-breasted goddess enthroned on a tortoise amid the maguey",
+    "notes": "Mayahuel is depicted seated within or upon a flowering maguey, sometimes on a tortoise, with multiple breasts (linked to her 'four hundred' children) and the crescent yacametzli nose-ornament of the pulque-gods.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Codex Borgia; Codex Laud"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "aztec_mayahuel-maguey",
+    "name": "Maguey (agave) plant",
+    "notes": "The maguey into which she was transformed is her body and emblem; its sap (aguamiel) ferments to the sacred pulque.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Histoyre du Mechique; Codex Magliabechiano"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_mictlantecuhtli": {
+  "sacredAnimals": [
+   {
+    "id": "aztec_mictlantecuhtli-owl",
+    "name": "Owl (tecolotl)",
+    "notes": "The screech-owl is the death-bird and harbinger of Mictlan that attends the death-lord.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, The Gods and Symbols of Ancient Mexico and the Maya (1993)"
+     }
+    ]
+   },
+   {
+    "id": "aztec_mictlantecuhtli-bat",
+    "name": "Bat",
+    "notes": "The cave-dwelling bat, associated with the dark underworld passage, belongs to his death-imagery.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Codex Borgia, pp. 56-60"
+     }
+    ]
+   },
+   {
+    "id": "aztec_mictlantecuhtli-spider",
+    "name": "Spider",
+    "notes": "Spiders, creatures of the dark earth, appear among the death-fauna attending him in the codices.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Codex Borgia, pp. 56-60"
+     }
+    ]
+   },
+   {
+    "id": "aztec_mictlantecuhtli-dog",
+    "name": "Dog (Itzcuintli)",
+    "notes": "Mictlantecuhtli rules the day-sign Itzcuintli (dog); a dog guides the soul across the river to Mictlan.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Books 3 and 6"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_mictecacihuatl": {
+  "attributes": [
+   {
+    "id": "aztec_mictecacihuatl-skull-serpent-skirt",
+    "name": "Skull face, gaping jaw and serpent skirt",
+    "notes": "The Lady of the Dead is a skeletal woman, her flesh-stripped face with gaping jaw and bared teeth, wearing a skirt of serpents and with drooping breasts.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, The Gods and Symbols of Ancient Mexico and the Maya (1993)"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_coyolxauhqui": {
+  "attributes": [
+   {
+    "id": "aztec_coyolxauhqui-dismembered-disk",
+    "name": "Dismembered body within a ring of stars",
+    "notes": "The Templo Mayor monolith shows the moon-goddess decapitated and her limbs severed, bound at the joints, encircled by star-symbols — the defeated moon at the foot of the war-god's pyramid.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Matos Moctezuma, The Great Temple of the Aztecs (1988)"
+     }
+    ]
+   },
+   {
+    "id": "aztec_coyolxauhqui-bells-cheeks",
+    "name": "Golden bells on the cheeks",
+    "notes": "Her name 'Painted-with-Bells' is shown by the golden bells (coyolli) marked on her cheeks.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, The Gods and Symbols of Ancient Mexico and the Maya (1993)"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_centeotl": {
+  "sacredPlants": [
+   {
+    "id": "aztec_centeotl-maize",
+    "name": "Maize (cintli)",
+    "notes": "The maize plant and its ripening ear are the body and emblem of the maize-god, borne in his headdress.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Book 2"
+     }
+    ]
+   }
+  ]
+ },
+ "aymara_tunupa": {
+  "attributes": [
+   {
+    "id": "aymara_tunupa-weeping-staff-god",
+    "name": "Frontal staff-bearing 'Weeping God' with rayed head",
+    "notes": "In the Tiwanaku tradition that the chroniclers attach to Tunupa/Viracocha, the deity is the Gate-of-the-Sun 'Staff God': a frontal figure on a stepped platform holding a staff in each hand, rays tipped with puma- and condor-heads radiating from the head, with tear-bands beneath the eyes (the 'crying god').",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "studies of the Tiwanaku Gateway of the Sun (Staff/Front-Face Deity)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "aymara_tunupa-puma",
+    "name": "Puma",
+    "notes": "Puma-heads terminate the divine rays and recur across Tiwanaku staff-god imagery linked to the thunder-and-creator deity.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tiwanaku iconographic scholarship on the Staff God"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_quetzalcoatl": {
+  "attributes": [
+   {
+    "id": "aztec_quetzalcoatl-feathered-serpent",
+    "name": "Plumed serpent body sheathed in quetzal feathers",
+    "notes": "His characteristic form is a serpent clothed in the iridescent green plumes of the quetzal; the earliest cult image stands on the temple façade at Teotihuacan.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+     }
+    ]
+   },
+   {
+    "id": "aztec_quetzalcoatl-wind-jewel",
+    "name": "Ehecailacacozcatl, the spirally cut conch wind-jewel",
+    "notes": "As Ehecatl he wears the cross-sectioned conch breastplate read as the spiral of wind and whirlpool.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Book 1"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_tezcatlipoca": {
+  "attributes": [
+   {
+    "id": "aztec_tezcatlipoca-mirror-foot",
+    "name": "Obsidian smoking-mirror replacing a foot (and at brow or chest)",
+    "notes": "He is shown with a smoking obsidian mirror in place of one foot and another at the temple or breast, instrument of his all-seeing scrying.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "aztec_tezcatlipoca-jaguar",
+    "name": "Jaguar",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Olivier, Mockeries and Metamorphoses of an Aztec God: Tezcatlipoca"
+     }
+    ]
+   },
+   {
+    "id": "aztec_tezcatlipoca-turkey",
+    "name": "Turkey (Chalchiuhtotolin)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_tlaloc": {
+  "attributes": [
+   {
+    "id": "aztec_tlaloc-goggle-eyes",
+    "name": "Goggle eyes and jaguar fangs formed of entwined serpents",
+    "notes": "Two intertwined serpents loop around the eyes to make rings and form the nose, with long fangs over the lip.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Pasztory, Aztec Art"
+     }
+    ]
+   },
+   {
+    "id": "aztec_tlaloc-heron-headdress",
+    "name": "Heron-feather headdress and blue mask",
+    "notes": "He wears a fan of white heron feathers above the blue rain-mask.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_tlaltecuhtli": {
+  "attributes": [
+   {
+    "id": "aztec_tlaltecuhtli-squatting-birth",
+    "name": "Squatting birth-giving pose with splayed limbs",
+    "notes": "Carved on the undersides of monuments in a hocker (birthing) posture, clawed and fanged, wearing a skirt of crossbones and skulls; the great Templo Mayor monolith shows blood streaming from her mouth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Smarthistory, Monolith of Tlaltecuhtli (Earth Lord)"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_tonatiuh": {
+  "attributes": [
+   {
+    "id": "aztec_tonatiuh-rayed-disk",
+    "name": "Rayed solar disk framing a red face",
+    "notes": "Painted red, his face is set in the centre of a rayed sun-disk; on the Calendar Stone his tongue is a sacrificial flint knife.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Read & González, Mesoamerican Mythology"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "aztec_tonatiuh-eagle",
+    "name": "Golden eagle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Read & González, Mesoamerican Mythology"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_xipe_totec": {
+  "attributes": [
+   {
+    "id": "aztec_xipe_totec-flayed-skin",
+    "name": "Suit of flayed human skin over the wearer's red body",
+    "notes": "Shown clad in a golden-yellow flayed skin laced up the back, the loose hands of the victim's skin dangling at the wrists, his own red skin visible through the mouth and eyes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+     }
+    ]
+   },
+   {
+    "id": "aztec_xipe_totec-spoonbill",
+    "name": "Roseate-spoonbill feather adornments and golden jewellery",
+    "notes": "His impersonator was decked in bright red spoonbill plumes and gold, marking his patronage of the goldsmiths.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sahagún, Florentine Codex, Book 1"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_xiuhtecuhtli": {
+  "attributes": [
+   {
+    "id": "aztec_xiuhtecuhtli-xiuhtototl",
+    "name": "Turquoise xiuhtototl bird at the brow and Xiuhcoatl fire-serpent on the back",
+    "notes": "Yellow-bodied with a red ring at the mouth, he wears the descending turquoise cotinga on his forehead and bears the fire-serpent Xiuhcoatl across his back.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_tlazolteotl": {
+  "attributes": [
+   {
+    "id": "aztec_tlazolteotl-black-mouth",
+    "name": "Black rubber paint about the mouth and a half-moon nose-plug",
+    "notes": "Her lips and chin are smeared with black liquid rubber and she wears a crescent yacametztli nose-ornament, marking the earth-threshold of birth and death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya"
+     }
+    ]
+   },
+   {
+    "id": "aztec_tlazolteotl-cotton-spindles",
+    "name": "Headdress of raw unspun cotton with spindles",
+    "notes": "Bands of raw cotton bearing weaving spindles crown her, tying her to spinning, weaving and the transformation of the raw into the finished.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mexicolore, Goddess of the Month: Tlazolteotl"
+     }
+    ]
+   }
+  ]
+ },
+ "aztec_xochiquetzal": {
+  "attributes": [
+   {
+    "id": "aztec_xochiquetzal-flower-plume-crown",
+    "name": "Crown of quetzal-plume flowers over braided red leather",
+    "notes": "Flowers in her hair and a garland from which green quetzal feathers rise like horns, with a flowered cotton huipil.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mexicolore, Goddess of the Month: Xochiquetzal"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "aztec_xochiquetzal-butterfly",
+    "name": "Butterflies and hummingbirds (her messengers)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mexicolore, Goddess of the Month: Xochiquetzal"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "aztec_xochiquetzal-marigold",
+    "name": "Marigold (cempoalxochitl)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mexicolore, Goddess of the Month: Xochiquetzal"
+     }
+    ]
+   }
+  ]
+ },
+ "babalu_aye": {
+  "attributes": [
+   {
+    "id": "babalu_aye-sores-raffia",
+    "name": "Stooped, sore-covered body wrapped in raffia or sackcloth",
+    "notes": "Depicted as a hunched old man scarred by smallpox, his afflicted body hidden under raffia-palm fibre or burlap, sometimes purple in his Saint-Lazarus guise.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thompson, Flash of the Spirit"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "babalu_aye-dog",
+    "name": "Dog (his companion and messenger)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Murphy, Santería: African Spirits in America"
+     }
+    ]
+   }
+  ]
+ },
+ "balinese_barong": {
+  "attributes": [
+   {
+    "id": "balinese_barong-ket-mask",
+    "name": "Composite lion-mask (Barong Ket) with frangipani-decked beard",
+    "notes": "The most sacred form, the Barong Ket, has a face compounded of lion, tiger, cow and goat; its power resides in the beard of human hair hung with frangipani, animated by two dancers in a gilded harness.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Belo, Bali: Rangda and Barong"
+     }
+    ]
+   }
+  ]
+ },
+ "balinese_dewi_sri": {
+  "sacredAnimals": [
+   {
+    "id": "balinese_dewi_sri-rice-snake",
+    "name": "Rice-paddy snake (ular sawah / Antaboga)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Eiseman, Bali: Sekala and Niskala"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "balinese_dewi_sri-rice",
+    "name": "Rice (padi)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Eiseman, Bali: Sekala and Niskala"
+     }
+    ]
+   }
+  ]
+ },
+ "balinese_rangda": {
+  "attributes": [
+   {
+    "id": "balinese_rangda-fanged-mask",
+    "name": "Fanged, goggle-eyed mask with pendulous breasts, claws and lolling tongue",
+    "notes": "A naked hag with wild white hair, tusk-fangs, bulging eyes, drooping breasts and clawed hands, her flame-carved tongue (Lidah Api) hanging to the chest; her white-black-red colours echo Durga.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Belo, Bali: Rangda and Barong"
+     }
+    ]
+   }
+  ]
+ },
+ "banyaruanda_imana": {
+  "attributes": [
+   {
+    "id": "banyaruanda_imana-long-arms",
+    "name": "Very long arms reaching down to mankind",
+    "notes": "Pictured as a benevolent being with 'very long arms' able to snatch a person from death, yet otherwise remote, with no temples raised to him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maquet, The Premise of Inequality in Ruanda"
+     }
+    ]
+   }
+  ]
+ },
+ "basque_mari": {
+  "attributes": [
+   {
+    "id": "basque_mari-moon-hair",
+    "name": "Woman with a full moon behind her head",
+    "notes": "Often shown as a richly dressed lady with the full moon at her back; in Soule she takes the form of a vulture, and crossing the sky she trails fire.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barandiarán, Mitología vasca"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "basque_mari-ram",
+    "name": "Ram (her favourite animal, beside her cave)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barandiarán, Mitología vasca"
+     }
+    ]
+   }
+  ]
+ },
+ "basque_lamia": {
+  "attributes": [
+   {
+    "id": "basque_lamia-duck-feet",
+    "name": "Beautiful long-haired woman with the webbed feet of a duck (or a fish-tail at sea)",
+    "notes": "From the waist up a lovely woman combing her hair, below the webbed feet of a duck or bird's talons; coastal itsaslamiak bear a mermaid's tail.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barandiarán, Mitología vasca"
+     }
+    ]
+   },
+   {
+    "id": "basque_lamia-golden-comb",
+    "name": "Golden comb at the water's edge",
+    "notes": "Forever seen combing her hair with a golden comb by river, spring or fountain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Webster, Basque Legends"
+     }
+    ]
+   }
+  ]
+ },
+ "basque_basajaun": {
+  "attributes": [
+   {
+    "id": "basque_basajaun-hairy-giant",
+    "name": "Towering hair-covered man of the woods with long beard",
+    "notes": "A huge humanoid furred all over, with a beard and hair sometimes reaching the feet; guardian of flocks who whistles to warn shepherds of coming storms.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barandiarán, Mitología vasca"
+     }
+    ]
+   }
+  ]
+ },
+ "basque_amalur": {
+  "sacredPlants": [
+   {
+    "id": "basque_amalur-eguzkilore",
+    "name": "Eguzkilore (Carlina acaulis, the silver/sun thistle)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barandiarán, Mitología vasca"
+     }
+    ]
+   }
+  ]
+ },
+ "basque_sugaar": {
+  "attributes": [
+   {
+    "id": "basque_sugaar-dragon",
+    "name": "Serpent or dragon body",
+    "notes": "Imagined as a great snake or dragon emerging from caves and chasms.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barandiarán, José Miguel de (1972). Diccionario ilustrado de mitología vasca."
+     }
+    ]
+   },
+   {
+    "id": "basque_sugaar-fiery-crescent",
+    "name": "Fiery crescent crossing the sky",
+    "notes": "Manifests as a sickle or streak of fire (or comet) before storms.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hartsuaga, Juan Inazio (1987). Euskal mitologia konparatua."
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "basque_sugaar-snake",
+    "name": "Snake",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barandiarán, José Miguel de (1972). Diccionario ilustrado de mitología vasca."
+     }
+    ]
+   }
+  ]
+ },
+ "basque_tartalo": {
+  "attributes": [
+   {
+    "id": "basque_tartalo-single-eye",
+    "name": "Single eye in the middle of the forehead",
+    "notes": "The defining cyclopean feature, put out by the hero with a heated spit.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Webster, Wentworth (1877). Basque Legends."
+     }
+    ]
+   },
+   {
+    "id": "basque_tartalo-roasting-spit",
+    "name": "Roasting spit and cave hearth",
+    "notes": "He spits and roasts his captives; the spit becomes the instrument of his blinding.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Webster, Wentworth (1877). Basque Legends."
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "basque_tartalo-sheep",
+    "name": "Flock of sheep",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barandiarán, José Miguel de (1972). Diccionario ilustrado de mitología vasca."
+     }
+    ]
+   }
+  ]
+ },
+ "buddhist_dhrtarastra": {
+  "attributes": [
+   {
+    "id": "buddhist_dhrtarastra-white-body",
+    "name": "White-bodied armoured king holding a lute",
+    "notes": "In East Asian temple sets he is the white guardian of the east, first encountered on entering, playing the pipa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Soothill & Hodous (1937). A Dictionary of Chinese Buddhist Terms, s.v. 持國天."
+     }
+    ]
+   }
+  ]
+ },
+ "buddhist_mara": {
+  "attributes": [
+   {
+    "id": "buddhist_mara-many-arms",
+    "name": "Many-armed god with a flower-decked bow and arrows",
+    "notes": "Like Kāma he bears a bow and five flower-arrows of infatuation; in fierce form red or dark with bulging eyes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Aśvaghoṣa, Buddhacarita 13."
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "buddhist_mara-elephant",
+    "name": "War-elephant (Girimekhala)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jātaka commentary; cf. Padhāna Sutta."
+     }
+    ]
+   }
+  ]
+ },
+ "buddhist_prthivi": {
+  "attributes": [
+   {
+    "id": "buddhist_prthivi-wringing-hair",
+    "name": "Woman wringing water from her long hair",
+    "notes": "Her signature image: the cool waters of detachment streaming from her tresses to drown Māra's host.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Guthrie, Elizabeth (2004). The Buddhist Earth Deity in Mainland Southeast Asia."
+     }
+    ]
+   }
+  ]
+ },
+ "berber_ifri": {
+  "attributes": [
+   {
+    "id": "berber_ifri-coin-image",
+    "name": "Elephant-scalp headdress with cornucopia and military standard",
+    "notes": "On Numidian and Roman coins and sculpture she wears the elephant exuviae, holds a cornucopia, sometimes corn-ears and a standard.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "berber_ifri-lion",
+    "name": "Lion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+     }
+    ]
+   },
+   {
+    "id": "berber_ifri-elephant",
+    "name": "Elephant",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maritz, J. A. (2001). Dea Africa: Examining the Evidence."
+     }
+    ]
+   }
+  ]
+ },
+ "berber_gurzil": {
+  "sacredAnimals": [
+   {
+    "id": "berber_gurzil-bull",
+    "name": "Bull",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Corippus, Iohannis."
+     }
+    ]
+   }
+  ]
+ },
+ "berber_amun_siwa": {
+  "sacredAnimals": [
+   {
+    "id": "berber_amun_siwa-ram",
+    "name": "Ram",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herodotus, Histories 2.42 (ram-headed Ammon)."
+     }
+    ]
+   }
+  ]
+ },
+ "blackfoot_ksiistsikomm": {
+  "attributes": [
+   {
+    "id": "blackfoot_ksiistsikomm-thunderbird",
+    "name": "Great bird of prey of the mountains",
+    "notes": "The Thunderbird who lives at Chief Mountain, sworn enemy of the Horned Snakes; in some tellings an Above Person of human form.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "blackfoot_ksiistsikomm-raven",
+    "name": "Raven (the one being Thunder cannot kill)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, George Bird (1892). Blackfoot Lodge Tales."
+     }
+    ]
+   }
+  ]
+ },
+ "blackfoot_aisoyimstan": {
+  "attributes": [
+   {
+    "id": "blackfoot_aisoyimstan-white-rider",
+    "name": "White man with white hair in white clothes on a white horse",
+    "notes": "The familiar image of the Cold Maker riding down from the north.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Spence, Lewis (1914). The Myths of the North American Indians."
+     }
+    ]
+   }
+  ]
+ },
+ "bhil_pithora": {
+  "attributes": [
+   {
+    "id": "bhil_pithora-horse-fresco",
+    "name": "Wall-fresco of mounted gods and twin white horses",
+    "notes": "The cult-image is the painting itself: rows of horses, the gods, the sun and moon, and the Bhil cosmogony rendered on the house wall.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jain, Jyotindra (1984). Painted Myths of Creation."
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "bhil_pithora-horse",
+    "name": "Horse",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jain, Jyotindra (1984). Painted Myths of Creation."
+     }
+    ]
+   }
+  ]
+ },
+ "bodo_bathoubwrai": {
+  "sacredPlants": [
+   {
+    "id": "bodo_bathoubwrai-sijou-plant",
+    "name": "Sijou (Euphorbia splendens), living emblem of the god",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Endle, Sidney (1911). The Kacharis."
+     }
+    ]
+   }
+  ]
+ },
+ "bemba_chitimukulu": {
+  "sacredAnimals": [
+   {
+    "id": "bemba_chitimukulu-crocodile",
+    "name": "Crocodile (ing'andu), totem of the royal clan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roberts, Andrew D. (1973). A History of the Bemba."
+     }
+    ]
+   }
+  ]
+ },
+ "bicolano_asuang": {
+  "attributes": [
+   {
+    "id": "bicolano_asuang-dual-form",
+    "name": "Shifts between a handsome man and a monstrous shape",
+    "notes": "The deity of evil appears beautiful, then reveals his terrible form; blackbirds issue from his mouth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "bicolano_asuang-blackbird",
+    "name": "Blackbirds (carriers of the aswang gift)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Realubit, Maria Lilia F. (1983). Bikols of the Philippines."
+     }
+    ]
+   }
+  ]
+ },
+ "baule_mbotumbo": {
+  "attributes": [
+   {
+    "id": "baule_mbotumbo-cup-monkey",
+    "name": "Cup-bearing monkey figure with bared teeth and prognathous jaw",
+    "notes": "A fierce zoomorphic amwin image holding a bowl for offerings, its surface thickly crusted with sacrificial matter.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vogel, Susan Mullin (1997). Baule: African Art, Western Eyes."
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "baule_mbotumbo-monkey",
+    "name": "Monkey",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vogel, Susan Mullin (1997). Baule: African Art, Western Eyes."
+     }
+    ]
+   }
+  ]
+ },
+ "batak_mula_jadi_na_bolon": {
+  "sacredAnimals": [
+   {
+    "id": "batak_mula_jadi_na_bolon-cosmic-hen",
+    "name": "Manuk-manuk Hulambujati, the iron-beaked cosmic hen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Johannes (1909). Die Religion der Batak."
+     }
+    ]
+   }
+  ]
+ },
+ "canaanite_baal": {
+  "attributes": [
+   {
+    "id": "canaanite_baal-horned-helmet",
+    "name": "Horned helmet of the storm-king",
+    "notes": "Conical helmet adorned with bull's horns, sign of strength and fertility, worn in the smiting pose with raised mace and forked-lightning spear.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Baal au foudre stele, Ugarit (Louvre AO 15775)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "canaanite_baal-bull",
+    "name": "Bull",
+    "notes": "His chief sacred animal and symbol of virility; he is called 'Bull of Ugarit' and crowned with bull horns.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Baal/Hadad bull iconography; epithet 'Bull of Ugarit'"
+     }
+    ]
+   }
+  ]
+ },
+ "canaanite_el": {
+  "attributes": [
+   {
+    "id": "canaanite_el-horned-crown",
+    "name": "Bull-horned crown of the enthroned elder",
+    "notes": "Depicted as a bearded, seated patriarch in a plumed/horned headdress, mantle and strapped sandals (the gilt bronze El figurine from Ugarit), bull horns marking his epithet 'Bull El'.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Enthroned gilt-bronze 'El' figurine, Ugarit (Negbi, Canaanite Gods in Metal)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "canaanite_el-bull",
+    "name": "Bull",
+    "notes": "The bull, sign of his strength and creative force, attaches to his title ṯr ʾil, 'Bull El'.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ugaritic texts, epithet ṯr ʾil ('Bull El')"
+     }
+    ]
+   }
+  ]
+ },
+ "canaanite_anat": {
+  "attributes": [
+   {
+    "id": "canaanite_anat-weapons",
+    "name": "Armed maiden with sword and bow",
+    "notes": "Shown bearing weapons, often winged, as huntress armed with bow and sword, and as a 'Mistress of Animals' grasping or flanked by beasts.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cornelius, 'Anat and Qudshu as Mistress of Animals'; Levantine Anat iconography"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "canaanite_anat-lion",
+    "name": "Lion",
+    "notes": "The lion is her companion and sacred beast in Phoenician depictions of the warrior-huntress.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Phoenician Anat iconography; Mistress of Animals motif"
+     }
+    ]
+   }
+  ]
+ },
+ "canaanite_athirat": {
+  "sacredAnimals": [
+   {
+    "id": "canaanite_athirat-lion",
+    "name": "Lion",
+    "notes": "The chief goddess (Qudshu/Asherah) stands upon a lion in Levantine and Egyptianizing iconography.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qudshu/Asherah iconography; Hestrin, 'Understanding Asherah' (BAR 1991)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "canaanite_athirat-sacred-tree",
+    "name": "Sacred tree / date palm",
+    "notes": "Associated with the stylised sacred tree and date palm, and with the consecrated 'asherah' pole that represents the living tree of the mother-goddess.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Asherah / asherah-pole tradition; sacred-tree iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "canaanite_athtart": {
+  "sacredAnimals": [
+   {
+    "id": "canaanite_athtart-lion",
+    "name": "Lion",
+    "notes": "Lion of war and power, shown as warrior-huntress mastering lions.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Astarte/Athtart iconography (lion, horse, dove, star of Venus)"
+     }
+    ]
+   },
+   {
+    "id": "canaanite_athtart-horse",
+    "name": "Horse",
+    "notes": "Astarte rides or drives horses and chariots, emblem of her martial aspect.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Astarte/Athtart iconography"
+     }
+    ]
+   },
+   {
+    "id": "canaanite_athtart-dove",
+    "name": "Dove",
+    "notes": "Dove of love and beauty, her symbol alongside the eight-pointed star of the planet Venus.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Astarte/Athtart iconography; identification with Venus"
+     }
+    ]
+   }
+  ]
+ },
+ "buddhist_vaishravana": {
+  "sacredAnimals": [
+   {
+    "id": "buddhist_vaishravana-snow-lion",
+    "name": "Snow lion",
+    "notes": "In Tibetan painting the guardian-king of the north is mounted on a snow lion while bearing the victory banner and jewel-spitting mongoose.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tibetan Vaiśravaṇa iconography"
+     }
+    ]
+   },
+   {
+    "id": "buddhist_vaishravana-mongoose",
+    "name": "Jewel-spitting mongoose",
+    "notes": "The mongoose (nakula) that vomits jewels, sign of generosity that conquers the snakes of greed and of his wealth-giving power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bishamonten/Tamonten iconographic tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "buddhist_virupaksa": {
+  "attributes": [
+   {
+    "id": "buddhist_virupaksa-stupa-serpent",
+    "name": "Red king with stūpa and serpent",
+    "notes": "Red-faced king holding a stūpa in one hand and a nāga (serpent) in the other; he gazes at the stūpa to avert his harmful glance.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Four Heavenly Kings (Lokapāla) iconographic tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "buddhist_virupaksa-naga",
+    "name": "Nāga (serpent-dragon)",
+    "notes": "Lord of the nāgas; the serpent he holds is emblematic of rain and agricultural fertility.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Four Heavenly Kings (Lokapāla) iconographic tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "buddhist_virudhaka": {
+  "attributes": [
+   {
+    "id": "buddhist_virudhaka-blue-king",
+    "name": "Blue-faced king with sword",
+    "notes": "Armoured guardian of the south with a blue face, brandishing his sword of wisdom that cuts ignorance.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Four Heavenly Kings (Lokapāla) iconographic tradition; Cleveland Museum of Art 1918.544"
+     }
+    ]
+   }
+  ]
+ },
+ "burmese_thagyamin": {
+  "attributes": [
+   {
+    "id": "burmese_thagyamin-conch-whisk",
+    "name": "White conch and yak-tail fly-whisk",
+    "notes": "Holds a conch shell in one hand and a yak-tail fly-whisk in the other as celestial king of the nats.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thagyamin iconographic tradition, Burma"
+     }
+    ]
+   },
+   {
+    "id": "burmese_thagyamin-golden-book",
+    "name": "Golden book and dog-skin book",
+    "notes": "The two books in which he records, at the new year, the deeds of the virtuous (gold) and the wicked (dog-skin leather).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thagyamin / Thingyan tradition, Burma"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "burmese_thagyamin-erawan",
+    "name": "Three-headed white elephant (Airāvata / Erawan)",
+    "notes": "Rides the three-headed white elephant Airāvaṇa when descending to the human world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thagyamin / Airāvata (Erawan) tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "burmese_min_mahagiri": {
+  "attributes": [
+   {
+    "id": "burmese_min_mahagiri-house-post-coconut",
+    "name": "Dressed coconut on the house-post",
+    "notes": "Embodied in a coconut, robed in a red gaung-baung-style cloth, hung on the chief post of the house as the indwelling household guardian.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mahagiri household-nat tradition, Burma"
+     }
+    ]
+   }
+  ]
+ },
+ "buganda_kibuka": {
+  "attributes": [
+   {
+    "id": "buganda_kibuka-cloud-rain",
+    "name": "Warrior who hovers in cloud and rains down arrows",
+    "notes": "Imagined hovering above the enemy host hidden in cloud and rain, loosing arrows; depicted by his relics — jawbone, shield, spear and a leopard/lion-skin stool.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kibuka shrine relics; Roscoe, The Baganda (1911)"
+     }
+    ]
+   }
+  ]
+ },
+ "burmese_me_wunna": {
+  "attributes": [
+   {
+    "id": "burmese_me_wunna-flower-image",
+    "name": "Flower-eating mother-spirit of Popa",
+    "notes": "Figured among the brightly robed images of the Thirty-Seven Nats at Taungkalat as Popa Medaw, the ogress-mother holding or surrounded by the flowers of the mountain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Taungkalat shrine of the Thirty-Seven Nats, Mount Popa"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "burmese_me_wunna-popa-flowers",
+    "name": "Flowers of Mount Popa",
+    "notes": "Her food and emblem; Popa itself takes its name from Pali/Skt. puppha, 'flower', and bottled flowers are sold as offerings.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mount Popa / Popa Medaw tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "canaanite_kothar": {
+  "attributes": [
+   {
+    "id": "canaanite_kothar-hammer-tongs",
+    "name": "Smith's hammer and tongs",
+    "notes": "The divine craftsman of the smithy; closest regional iconographic kin is Egyptian Ptah of Memphis, the bearded patron of craftsmen with the smith's tools, with whom Kothar's Memphis abode (ḥkpt) identifies him. Greek heir is Hephaestus with hammer and tongs.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kothar–Ptah identification (ḥkpt = Hut-ka-Ptah); Smith, Ugaritic Baal Cycle"
+     }
+    ]
+   }
+  ]
+ },
+ "canaanite_resheph": {
+  "attributes": [
+   {
+    "id": "canaanite_resheph-smiting-pose",
+    "name": "Striding smiting-god with raised mace or axe and shield",
+    "notes": "Rendered as a bearded warrior in the smiting posture, brandishing a mace or battle-axe and bearing a shield, wearing a tall conical (White) crown.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, s.v. 'Resheph'"
+     }
+    ]
+   },
+   {
+    "id": "canaanite_resheph-gazelle-crown",
+    "name": "Gazelle-head at the brow of the crown",
+    "notes": "His conical headdress is fronted by the head of a gazelle; in Egypt he was titled the 'gazelle' and 'deer' god.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, s.v. 'Resheph'; Wikipedia, 'Resheph'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "canaanite_resheph-gazelle",
+    "name": "Gazelle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, s.v. 'Resheph'"
+     }
+    ]
+   }
+  ]
+ },
+ "canaanite_kotharot": {
+  "sacredAnimals": [
+   {
+    "id": "canaanite_kotharot-swallow",
+    "name": "Swallow",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ugaritic text KTU 1.24 ('the swallow-like daughters')"
+     }
+    ]
+   }
+  ]
+ },
+ "canaanite_nikkal": {
+  "attributes": [
+   {
+    "id": "canaanite_nikkal-crescent",
+    "name": "Seated lady with the lunar crescent",
+    "notes": "Following her antecedent Ningal she may be shown enthroned with the crescent of her moon-god husband.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Wikipedia, 'Ningal' / 'Nikkal'"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "canaanite_nikkal-orchard-trees",
+    "name": "Orchard fruit-trees (olive, fig, date, apple, almond, walnut)",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Wikipedia, 'Nikkal' (goddess of the orchard)"
+     }
+    ]
+   }
+  ]
+ },
+ "cherokee_uktena": {
+  "attributes": [
+   {
+    "id": "cherokee_uktena-horned-serpent",
+    "name": "Vast horned serpent, thick as a tree-trunk, scales blazing like fire",
+    "notes": "Horned, with scales that glow like sparks and a brilliant diamond crest (the Ulun'suti) on its forehead; only a shot to the seventh spot from the head can kill it.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "James Mooney, Myths of the Cherokee (1900)"
+     }
+    ]
+   }
+  ]
+ },
+ "cherokee_selu": {
+  "sacredPlants": [
+   {
+    "id": "cherokee_selu-corn",
+    "name": "Corn (maize)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "James Mooney, Myths of the Cherokee (1900)"
+     }
+    ]
+   },
+   {
+    "id": "cherokee_selu-beans",
+    "name": "Beans",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "James Mooney, Myths of the Cherokee (1900)"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_change": {
+  "attributes": [
+   {
+    "id": "chinese_change-lunar-palace",
+    "name": "Lady of the lunar palace",
+    "notes": "Depicted as a graceful woman ascending to or dwelling in the moon, often with flowing sleeves and the rabbit at her side.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Mid-Autumn Festival iconography (ChinaHighlights)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_change-moon-rabbit",
+    "name": "Moon Rabbit (Jade Rabbit)",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Mid-Autumn Festival legends (TravelChinaGuide)"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_caishen": {
+  "attributes": [
+   {
+    "id": "chinese_caishen-armoured-marshal",
+    "name": "Black-faced armoured marshal on a black tiger",
+    "notes": "Shown as a stern, dark-faced general in armour, mounted on a black tiger, holding a steel whip or golden rod, often with a gold ingot.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Wikipedia, 'Zhao Gongming'; 'Caishen'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_caishen-black-tiger",
+    "name": "Black tiger",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Wikipedia, 'Zhao Gongming'"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_ao_guang": {
+  "attributes": [
+   {
+    "id": "chinese_ao_guang-dragon-king",
+    "name": "Crowned dragon-king of the Eastern Sea",
+    "notes": "A great dragon, or a robed and crowned monarch with dragon features, enthroned in the Crystal Palace beneath the eastern waves; commands cloud and rain.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Wikipedia, 'Ao Guang'"
+     }
+    ]
+   }
+  ]
+ },
+ "chamorro_taotaomona": {
+  "sacredPlants": [
+   {
+    "id": "chamorro_taotaomona-banyan",
+    "name": "Banyan tree (trongkon nunu)",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Guampedia, 'Taotaomo'na'; House of Chamorros, 'Trongkon Nunu'"
+     }
+    ]
+   }
+  ]
+ },
+ "chewa_kasiya_maliro": {
+  "attributes": [
+   {
+    "id": "chewa_kasiya_maliro-antelope-mask",
+    "name": "Great antelope mask-structure of Gule Wamkulu",
+    "notes": "Embodied as a large basketry antelope figure carried by initiates; the 'Great Mother' of the Nyau, her stylised antelope form veiling her true nature from the uninitiated.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Wikipedia, 'Nyau'; UNESCO, 'Gule Wamkulu'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chewa_kasiya_maliro-antelope",
+    "name": "Antelope",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "Wikipedia, 'Nyau'"
+     }
+    ]
+   }
+  ]
+ },
+ "cheyenne_sweet_medicine": {
+  "attributes": [
+   {
+    "id": "cheyenne_sweet_medicine-sacred-arrows",
+    "name": "Keeper of the four Sacred Arrows (Maahotse)",
+    "notes": "Associated with the Mahuts bundle of four arrows received from Maheo at Bear Butte — two 'Man Arrows' for war and two 'Buffalo Arrows' for the hunt.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "P. J. Powell, Sweet Medicine (1969)"
+     }
+    ]
+   }
+  ]
+ },
+ "cheyenne_erect_horns": {
+  "attributes": [
+   {
+    "id": "cheyenne_erect_horns-buffalo-hat",
+    "name": "Bearer of the Sacred Buffalo Hat (Esevone/Is'siwun)",
+    "notes": "Received the horned Sacred Buffalo Hat bundle and the Sun Dance from Maheo, the second great covenant of the Cheyenne beside the Sacred Arrows.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "P. J. Powell, Sweet Medicine (1969)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "cheyenne_erect_horns-bison",
+    "name": "Bison (buffalo)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "P. J. Powell, Sweet Medicine (1969)"
+     }
+    ]
+   }
+  ]
+ },
+ "chimalman": {
+  "attributes": [
+   {
+    "id": "chimalman-shield-hand",
+    "name": "The shield-handed woman who catches arrows",
+    "notes": "Her name Chimalman, 'shield-hand', recalls how she caught in her bare hand the arrows Mixcoatl shot at her; she is figured bearing a shield.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Codex Chimalpopoca (Leyenda de los Soles); Manuscript of 1558"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_fuxi": {
+  "attributes": [
+   {
+    "id": "chinese_fuxi-serpent-body",
+    "name": "Human upper body with a serpent's tail",
+    "notes": "In Han tomb art Fuxi has a human head and torso above a coiling serpentine (dragon) tail, his tail entwined with Nüwa's.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Han tomb reliefs, Nanyang (Henan); Wu Liang shrine carvings"
+     }
+    ]
+   },
+   {
+    "id": "chinese_fuxi-carpenters-square",
+    "name": "Holds the carpenter's square (ju)",
+    "notes": "He bears the set-square that draws the square Earth, the complement to Nüwa's compass; the pair codify cosmic geometry.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Han tomb iconography (square-and-compass motif)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_fuxi-dragon",
+    "name": "Dragon (his serpentine body and his clan's dragon-naming of offices)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Zuozhuan (dragon-named offices of Taihao)"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_nuwa": {
+  "attributes": [
+   {
+    "id": "chinese_nuwa-serpent-body",
+    "name": "Human upper body with a serpent's tail",
+    "notes": "Depicted as a beautiful woman above, serpent (dragon) below; with Fuxi their tails interlace like a double helix, signifying their creative union.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Han tomb reliefs, Nanyang; Wu Liang shrine"
+     }
+    ]
+   },
+   {
+    "id": "chinese_nuwa-compass",
+    "name": "Holds the compasses (gui)",
+    "notes": "She bears the pair of compasses that draw the circle of Heaven, complement to Fuxi's set-square.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Han tomb iconography (square-and-compass motif)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_nuwa-snake",
+    "name": "Snake / dragon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Han tomb iconography of the serpent-bodied creator pair"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_shennong": {
+  "attributes": [
+   {
+    "id": "chinese_shennong-ox-head",
+    "name": "Ox head on a human body",
+    "notes": "Shown with the head (or horns) of an ox, recalling the plough-ox and his role as Divine Farmer.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shennong iconographic tradition; Soushenji"
+     }
+    ]
+   },
+   {
+    "id": "chinese_shennong-transparent-belly",
+    "name": "Transparent abdomen",
+    "notes": "A see-through stomach by which he watched how each tasted herb and its toxin acted within him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shennong herb-tasting tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_shennong-ox",
+    "name": "Ox",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shennong ox-head iconography"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "chinese_shennong-tea",
+    "name": "Tea (discovered as antidote to poisons)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shennong tea-origin tradition"
+     }
+    ]
+   },
+   {
+    "id": "chinese_shennong-five-grains",
+    "name": "The five grains",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shennong 'First Emperor of the Five Grains' tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_guanyin": {
+  "attributes": [
+   {
+    "id": "chinese_guanyin-white-robe",
+    "name": "Flowing white robe (Baiyi Guanyin)",
+    "notes": "In China most often a serene woman in a white robe, the White-Robed Guanyin.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chinese Buddhist iconography of Guanyin"
+     }
+    ]
+   },
+   {
+    "id": "chinese_guanyin-eleven-heads",
+    "name": "Eleven heads above a thousand arms",
+    "notes": "Esoteric form combining the eleven-headed and thousand-armed manifestations, each hand with an eye and a saving implement.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Qianshou jing / Eleven-Headed Avalokiteśvara sutra"
+     }
+    ]
+   },
+   {
+    "id": "chinese_guanyin-dragon-lotus-seat",
+    "name": "Standing on a dragon or a lotus",
+    "notes": "Frequently shown atop a sea-dragon or a lotus, attended by the boy Shancai and the Dragon-Girl Longnü.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chinese Guanyin iconography; Sudhana and Longnü acolyte tradition"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "chinese_guanyin-willow",
+    "name": "Willow branch",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Guanyin iconography (vase-and-willow)"
+     }
+    ]
+   },
+   {
+    "id": "chinese_guanyin-lotus",
+    "name": "Lotus",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Guanyin iconography (lotus of enlightenment)"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_xiwangmu": {
+  "attributes": [
+   {
+    "id": "chinese_xiwangmu-tiger-teeth",
+    "name": "Tiger's teeth and panther's tail (early form)",
+    "notes": "In the Shanhaijing she has wild hair, tiger's fangs and a leopard's tail, dwelling in a cave and whistling; later strata refine her into a stately queen.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shanhaijing, 'Xishan jing' (Classic of the Western Mountains)"
+     }
+    ]
+   },
+   {
+    "id": "chinese_xiwangmu-sheng-throne",
+    "name": "Enthroned with the sheng headdress and three attendant creatures",
+    "notes": "In Han art she sits in her sheng head-ornament attended by a three-legged crow, a jade hare pounding the elixir, a nine-tailed fox, and the three blue/green birds that fetch her food.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Han iconography of Xiwangmu (mirrors, tomb reliefs)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_xiwangmu-tiger",
+    "name": "Tiger",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shanhaijing, 'Xishan jing'"
+     }
+    ]
+   },
+   {
+    "id": "chinese_xiwangmu-three-birds",
+    "name": "Three blue (green) birds",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shanhaijing; Han Wudi neizhuan"
+     }
+    ]
+   },
+   {
+    "id": "chinese_xiwangmu-nine-tailed-fox",
+    "name": "Nine-tailed fox",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Han iconography of Xiwangmu's court"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "chinese_xiwangmu-peach",
+    "name": "Peach of immortality (pantao)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Peaches-of-immortality tradition; Han Wudi neizhuan"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_pangu": {
+  "attributes": [
+   {
+    "id": "chinese_pangu-horned-giant",
+    "name": "Hairy, horned giant clad in leaves or bearskin",
+    "notes": "Portrayed as a primordial giant covered in hair (or bearskin and leaves) with horns on his head, grasping axe and chisel, or the sun and moon.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Pangu iconographic tradition; Birrell, Chinese Mythology"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_pangu-four-creatures",
+    "name": "The four numinous creatures: dragon, qilin, phoenix and turtle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Pangu iconography (accompanied by the four spiritual animals)"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_gonggong": {
+  "attributes": [
+   {
+    "id": "chinese_gonggong-serpent-redhair",
+    "name": "Human (copper/iron) head with red hair on a serpent's body",
+    "notes": "A humanoid head, sometimes copper-faced and iron-browed, with vivid red hair, set on the long body of a black serpent-dragon.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gonggong iconographic tradition; Werner, Myths and Legends of China"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_gonggong-serpent",
+    "name": "Serpent / black dragon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shanhaijing (Gonggong and his minister Xiangliu)"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_leigong": {
+  "attributes": [
+   {
+    "id": "chinese_leigong-bird-beast",
+    "name": "Blue-bodied beast with bat-wings, beak and talons",
+    "notes": "A fearsome figure with a blue body, bat-like wings, bird's beak, three eyes and clawed feet, bare-torsoed in a crimson loincloth, beating a ring of drums.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lei Gong iconography (Dunhuang Mogao Cave 285; Song and later depictions)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_leigong-cock",
+    "name": "Bird/half-bird aspect (beak, wings and claws)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wei-period and Dunhuang depictions of the half-bird thunder-being"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_zhurong": {
+  "attributes": [
+   {
+    "id": "chinese_zhurong-rides-dragons",
+    "name": "Man-faced beast riding a pair of dragons",
+    "notes": "In the Shanhaijing the fire-god has a man's face on a beast's body and rides two dragons; he governs fire, summer and the south.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shanhaijing, 'Hainei jing' / 'Dahuang xijing'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_zhurong-two-dragons",
+    "name": "Two dragons (his mounts)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shanhaijing"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_jade_emperor": {
+  "attributes": [
+   {
+    "id": "chinese_jade_emperor-imperial-robe",
+    "name": "Seated in imperial dragon-robe and tasselled crown, holding the jade tablet",
+    "notes": "Enthroned as a bearded sovereign in the long dragon-embroidered robe and mianguan crown of strung jade beads, holding the gui audience-tablet, exactly as a Chinese emperor.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Daoist iconography of the Jade Emperor"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_huangdi": {
+  "attributes": [
+   {
+    "id": "chinese_huangdi-yellow-dragon",
+    "name": "Associated with the Yellow Dragon and ascent on a dragon",
+    "notes": "His emblematic animal-form is the Yellow Dragon; at his death a dragon descended and bore him up to Heaven, his ministers clinging to its whiskers.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji, 'Treatise on the Feng and Shan Sacrifices'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_huangdi-dragon",
+    "name": "Yellow Dragon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yellow Emperor / Huanglong tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_erlang_shen": {
+  "attributes": [
+   {
+    "id": "chinese_erlang_shen-third-eye",
+    "name": "Vertical truth-seeing third eye on the forehead",
+    "notes": "His signature feature is a third, vertical eye in the middle of the brow that pierces all disguise; shown as an armored young warrior with his three-pointed lance and the celestial hound at his side.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Erlang Shen iconographic tradition; Xiyouji and Fengshen yanyi"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chinese_erlang_shen-dog",
+    "name": "Howling Celestial Dog (Xiaotian Quan)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji; Fengshen yanyi"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_nezha": {
+  "attributes": [
+   {
+    "id": "chinese_nezha-lotus-child",
+    "name": "Youthful child-warrior in lotus-petal garb",
+    "notes": "Depicted as a boy reborn from lotus root and flesh, riding the Wind-Fire Wheels, the Universe Ring on his arm and the Red Armillary Sash about his shoulders, the fire-tipped spear in hand.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fengshen yanyi (Investiture of the Gods)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "chinese_nezha-lotus",
+    "name": "Lotus (the flesh of his rebirth)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fengshen yanyi"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_zao_jun": {
+  "attributes": [
+   {
+    "id": "chinese_zao_jun-stove-portrait",
+    "name": "Robed, capped official depicted with his wife on the stove-portrait",
+    "notes": "Shown as a bearded man in official's robes and scholar's cap, paired with his wife, in the paper poster pasted above the kitchen stove.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kitchen God print tradition; Werner, Myths and Legends of China"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_lu_dongbin": {
+  "attributes": [
+   {
+    "id": "chinese_lu_dongbin-scholar-sword",
+    "name": "Scholar in robe and 'pure-yang' turban, sword across his back",
+    "notes": "Portrayed as a handsome bearded scholar in flowing robe and the chunyang turban, the demon-quelling Pure-Yang sword slung at his back and a horsehair fly-whisk in hand.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Eight Immortals iconography; Quanzhen hagiography"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_houyi": {
+  "sacredAnimals": [
+   {
+    "id": "chinese_houyi-three-legged-crow",
+    "name": "The ten sun-crows (three-legged crows he shot down)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Huainanzi; ten-suns / sun-crow tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_ehuang": {
+  "sacredPlants": [
+   {
+    "id": "chinese_ehuang-spotted-bamboo",
+    "name": "Spotted (mottled) bamboo, stained by the sisters' tears",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Spotted-bamboo (Xiang Fei bamboo) legend; Bowuzhi"
+     }
+    ]
+   }
+  ]
+ },
+ "chinese_nuying": {
+  "sacredPlants": [
+   {
+    "id": "chinese_nuying-spotted-bamboo",
+    "name": "Spotted (mottled) bamboo, stained by the sisters' tears",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Spotted-bamboo (Xiang Fei bamboo) legend; Bowuzhi"
+     }
+    ]
+   }
+  ]
+ },
+ "chukchi_kurkil": {
+  "sacredAnimals": [
+   {
+    "id": "chukchi_kurkil-raven",
+    "name": "Raven (his own form)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, Chukchee Mythology"
+     }
+    ]
+   }
+  ]
+ },
+ "chuukese_hit": {
+  "attributes": [
+   {
+    "id": "chuukese_hit-octopus",
+    "name": "Octopus form",
+    "notes": "Hit is the octopus sea-goddess whose ribald dance made the sky-wife Hamulul faint, allowing Olifat's conception.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bollig, Die Bewohner der Truk-Inseln (1927); Olifat conception cycle"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "chuukese_hit-octopus-animal",
+    "name": "Octopus",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chuukese Olifat-conception tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "circassian_mezitha": {
+  "attributes": [
+   {
+    "id": "circassian_mezitha-antlers-and-topknot",
+    "name": "ginger-red moustache, great antlers and golden-red topknot",
+    "notes": "Circassian sources picture Mezithe with a ginger-red moustache, two great antlers and a golden-red topknot.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Jaimoukha, 'The Circassian Pantheon' (oocities.org)"
+     }
+    ]
+   },
+   {
+    "id": "circassian_mezitha-two-sparrows",
+    "name": "two sparrows perched on his shoulders",
+    "notes": "Two sparrows sit on the hunt-god's shoulders as he rides.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Jaimoukha, 'The Circassian Pantheon' (oocities.org)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "circassian_mezitha-boar",
+    "name": "golden-bristled boar (his mount)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Jaimoukha, 'The Circassian Pantheon' (oocities.org)"
+     }
+    ]
+   },
+   {
+    "id": "circassian_mezitha-deer",
+    "name": "deer and wild game (his herds)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "circasvoices.blogspot.com, 'Mezithe Resurrected'"
+     }
+    ]
+   }
+  ]
+ },
+ "circassian_sosruquo": {
+  "attributes": [
+   {
+    "id": "circassian_sosruquo-stone-born-with-fire",
+    "name": "stone-born hero standing on a high rock holding aloft the bowl of stolen fire",
+    "notes": "The visual shorthand of the whole Nart cycle in modern Caucasian art (e.g. the Sosruko monument at Nalchik): the small hero on a crag, fire-bowl raised over his head.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Sosruko'"
+     }
+    ]
+   }
+  ]
+ },
+ "circassian_shible": {
+  "sacredPlants": [
+   {
+    "id": "circassian_shible-struck-tree",
+    "name": "the lightning-struck tree/grove (made holy by his bolt)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Jaimoukha, 'Ancient Circassian Religion' (oocities.org)"
+     }
+    ]
+   }
+  ]
+ },
+ "circassian_sozeresh": {
+  "attributes": [
+   {
+    "id": "circassian_sozeresh-seven-knot-post",
+    "name": "domestic idol of a seven-knotted branch of pear/hawthorn (hamshkhut) wood",
+    "notes": "Kept in the family barn and brought out at the spring festival; the post embodies the god of the household stores.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Circassian paganism' (Sozeresh)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "circassian_sozeresh-pear-wood",
+    "name": "pear/hamshkhut wood (material of his idol)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Circassian paganism' (Sozeresh)"
+     }
+    ]
+   }
+  ]
+ },
+ "dine_changing_woman": {
+  "attributes": [
+   {
+    "id": "dine_changing_woman-shell-and-turquoise",
+    "name": "identified as White Shell Woman and Turquoise Woman",
+    "notes": "Also called Abalone and Jet Woman; her four aspects answer to the four sacred jewels and the four seasons of youth, maturity, age and renewal.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopedia.com, 'Changing Woman'"
+     }
+    ]
+   }
+  ]
+ },
+ "dine_johonaai": {
+  "attributes": [
+   {
+    "id": "dine_johonaai-turquoise-disk",
+    "name": "the turquoise sun-disk borne as a shield across the sky",
+    "notes": "Jóhonaaʼéí carries the sun on its daily course and dwells in a turquoise house in the east.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Diné Bahaneʼ'"
+     }
+    ]
+   }
+  ]
+ },
+ "dine_spider_woman": {
+  "attributes": [
+   {
+    "id": "dine_spider_woman-spider-rock-dweller",
+    "name": "dweller atop Spider Rock in Canyon de Chelly",
+    "notes": "Said to sit on the sandstone spire watching the land; the rock is told to be whitened by sun-bleached bones.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Spider Woman'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "dine_spider_woman-spider",
+    "name": "the spider (her form and the source of the weaving-gift)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Spider Grandmother'"
+     }
+    ]
+   }
+  ]
+ },
+ "dinka_abuk": {
+  "sacredAnimals": [
+   {
+    "id": "dinka_abuk-snake",
+    "name": "the small snake (her sacred animal and form)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Abuk (mythology)'"
+     }
+    ]
+   }
+  ]
+ },
+ "dayak_mahatala": {
+  "sacredAnimals": [
+   {
+    "id": "dayak_mahatala-hornbill",
+    "name": "the hornbill (Tingang), his upperworld form and the male cosmic symbol",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Kaharingan' (Mahatala/Tingang/hornbill)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "dayak_mahatala-tree-of-life",
+    "name": "the Tree of Life (batang garing) grown from his cast-away golden head-band",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Kaharingan' (batang garing)"
+     }
+    ]
+   }
+  ]
+ },
+ "dayak_jata": {
+  "sacredAnimals": [
+   {
+    "id": "dayak_jata-watersnake",
+    "name": "the water-snake / dragon (Tambon), her underworld form and the female cosmic symbol",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Kaharingan' (Jata/Tambon)"
+     }
+    ]
+   }
+  ]
+ },
+ "dogon_lebe": {
+  "sacredAnimals": [
+   {
+    "id": "dogon_lebe-serpent",
+    "name": "the great serpent (his reborn form)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Lebe (Dogon)'"
+     }
+    ]
+   }
+  ]
+ },
+ "crow_old_man_coyote": {
+  "sacredAnimals": [
+   {
+    "id": "crow_old_man_coyote-coyote",
+    "name": "the coyote (his form)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Old Man Coyote'"
+     }
+    ]
+   },
+   {
+    "id": "crow_old_man_coyote-hell-diver-duck",
+    "name": "the Hell-Diver duck (his diving brother who fetches the earth-mud)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lib @ Little Big Horn College, 'Creation Story'"
+     }
+    ]
+   }
+  ]
+ },
+ "cree_wisahkecahk": {
+  "sacredAnimals": [
+   {
+    "id": "cree_wisahkecahk-muskrat",
+    "name": "the muskrat (wîcahk's diver who fetches the mud to remake the earth)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grokipedia, 'Wisakedjak'"
+     }
+    ]
+   }
+  ]
+ },
+ "desana_vai_mahse": {
+  "attributes": [
+   {
+    "id": "desana_vai_mahse-red-dwarf",
+    "name": "a small red dwarf-figure who can change shape",
+    "notes": "Reichel-Dolmatoff's Desana picture Vaí-mahsë as a small red being able to appear in many forms.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "G. Reichel-Dolmatoff, Amazonian Cosmos (1971)"
+     }
+    ]
+   }
+  ]
+ },
+ "desana_pamuri_mahse": {
+  "attributes": [
+   {
+    "id": "desana_pamuri_mahse-staff-bearer",
+    "name": "bears the Sun-Father's staff as the emissary of creation",
+    "notes": "He carries the Sun-Father's staff while searching the Vaupés for the place to settle humanity.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "G. Reichel-Dolmatoff, Amazonian Cosmos (1971)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "desana_pamuri_mahse-anaconda-canoe",
+    "name": "the anaconda that is the living Snake-Canoe",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "G. Reichel-Dolmatoff, Amazonian Cosmos (1971)"
+     }
+    ]
+   }
+  ]
+ },
+ "dogon_nommo": {
+  "attributes": [
+   {
+    "id": "dogon_nommo-serpentine",
+    "name": "Amphibious, fish-tailed serpentine body",
+    "notes": "The Nommo are depicted as half-human, half-fish (or serpent) water beings, often raising their arms in the gesture of the binu masters of water.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le Renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "dogon_nommo-fish",
+    "name": "Fish / aquatic serpent",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ]
+ },
+ "dogon_ogo": {
+  "attributes": [
+   {
+    "id": "dogon_ogo-tracks",
+    "name": "Footprints read in the divination sand-grid",
+    "notes": "Ogo the Pale Fox is known by the tracks he leaves overnight in the bait-strewn divination tables, which diviners read at dawn.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le Renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "dogon_ogo-fox",
+    "name": "Pale fox (Vulpes pallida)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le Renard pâle (1965)"
+     }
+    ]
+   }
+  ]
+ },
+ "edo_olokun": {
+  "attributes": [
+   {
+    "id": "edo_olokun-mudfish-legs",
+    "name": "Human torso with mudfish legs and coral regalia",
+    "notes": "Olokun is shown with a human upper body and mudfish for legs, crowned and draped in coral beads, holding the wealth of the deep.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ben-Amos, The Art of Benin (1995)"
+     }
+    ]
+   },
+   {
+    "id": "edo_olokun-orhue",
+    "name": "Riverside white chalk (orhue) and waterpots",
+    "notes": "Mud shrine-figures, waterpots and orhue kaolin chalk mark his altars as emblems of purity and the waters.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bradbury, The Benin Kingdom and the Edo-Speaking Peoples (1957)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "edo_olokun-mudfish",
+    "name": "Mudfish (catfish)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ben-Amos, The Art of Benin (1995)"
+     }
+    ]
+   },
+   {
+    "id": "edo_olokun-python",
+    "name": "Python",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ben-Amos, The Art of Benin (1995)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_anubis": {
+  "attributes": [
+   {
+    "id": "egyptian_anubis-jackal-head",
+    "name": "Black jackal head or recumbent black jackal",
+    "notes": "Depicted as a man with a black canine head or as a recumbent jackal on a shrine; the black colour evokes both decay's reversal and the fertile silt of rebirth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_anubis-jackal",
+    "name": "Jackal (and the desert dog)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_bastet": {
+  "attributes": [
+   {
+    "id": "egyptian_bastet-cat-head",
+    "name": "Woman with the head of a cat (earlier lioness)",
+    "notes": "Shown as a cat-headed woman, often with kittens at her feet and a sistrum or basket in hand, the gentler counterpart of the lioness Sekhmet.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herodotus, Histories 2.59-60"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_bastet-cat",
+    "name": "Cat",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herodotus, Histories 2.66-67"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_bes": {
+  "attributes": [
+   {
+    "id": "egyptian_bes-frontal-dwarf",
+    "name": "Frontal-faced bearded dwarf with leonine features and lolling tongue",
+    "notes": "Uniquely shown full-face (not in profile), a grotesque protective dwarf with lion's mane, ears and tail, often wearing a plumed crown.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_bes-lion",
+    "name": "Lion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Pinch, Magic in Ancient Egypt (1994)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_geb": {
+  "attributes": [
+   {
+    "id": "egyptian_geb-reclining",
+    "name": "Reclining green or black man beneath arched Nut",
+    "notes": "Geb is shown lying beneath the sky-goddess Nut, his body green or black for vegetation and silt, sometimes ithyphallic, reaching up toward her.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_geb-goose",
+    "name": "Nile goose (the Great Cackler)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_khnum": {
+  "attributes": [
+   {
+    "id": "egyptian_khnum-ram-head",
+    "name": "Man with the head of a horizontally-horned ram",
+    "notes": "Shown ram-headed, frequently seated at a potter's wheel modelling a child, lord of the Elephantine cataract.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_khnum-ram",
+    "name": "Ram (Ovis longipes, flat-horned)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_min": {
+  "attributes": [
+   {
+    "id": "egyptian_min-ithyphallic",
+    "name": "Ithyphallic mummiform figure with raised flail and twin plumes",
+    "notes": "Shown wrapped, with one arm raised holding a flail behind his tall double-plumed crown, and an erect phallus signalling fertility.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_min-white-bull",
+    "name": "White bull",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "egyptian_min-lettuce",
+    "name": "Cos lettuce (Lactuca, for its milky aphrodisiac sap)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_mut": {
+  "attributes": [
+   {
+    "id": "egyptian_mut-vulture-double-crown",
+    "name": "Woman in a vulture headdress wearing the Double Crown",
+    "notes": "Shown as a woman wearing the vulture cap surmounted by the Pschent, often with a long red or blue dress; in fierce aspect lioness-headed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_mut-vulture",
+    "name": "Griffon vulture",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_neith": {
+  "attributes": [
+   {
+    "id": "egyptian_neith-icon-redcrown",
+    "name": "Woman wearing the Red Crown with bow and arrows",
+    "notes": "Shown crowned with the Red Crown of Lower Egypt, sometimes bearing crossed arrows on a shield or a weaving shuttle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_nekhbet": {
+  "attributes": [
+   {
+    "id": "egyptian_nekhbet-vulture-wings",
+    "name": "Vulture with outstretched protective wings holding shen-rings",
+    "notes": "Shown as a griffon vulture hovering over the king, clutching shen-rings of eternity in her talons, or as a woman in the White Crown.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_nekhbet-vulture",
+    "name": "Egyptian/griffon vulture",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_khonsu": {
+  "attributes": [
+   {
+    "id": "egyptian_khonsu-sidelock",
+    "name": "Mummiform youth with side-lock and lunar disk-in-crescent",
+    "notes": "Shown as a tightly-wrapped young man wearing the side-lock of youth and a full-moon disk cradled in a crescent, holding crook and flail.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_hathor": {
+  "attributes": [
+   {
+    "id": "egyptian_hathor-cow-horns",
+    "name": "Cow, or woman with cow-ears and horns enclosing a sun-disk",
+    "notes": "Appears as a cow, a cow-eared woman, or a frontal Hathor-head capital, crowned with cow-horns and a solar disk.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_hathor-cow",
+    "name": "Cow",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "egyptian_hathor-sycamore",
+    "name": "Sycomore fig (she is Lady of the Sycamore)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_amun": {
+  "attributes": [
+   {
+    "id": "egyptian_amun-blue-plumes",
+    "name": "Man in a tall twin-plumed (shuti) crown, skin often blue",
+    "notes": "Shown as an enthroned man wearing the flat-topped double-plumed crown, frequently with blue (lapis) flesh marking his celestial, hidden nature.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_amun-ram",
+    "name": "Ram (criosphinx, with downturned horns)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak ram-headed sphinx avenue"
+     }
+    ]
+   },
+   {
+    "id": "egyptian_amun-goose",
+    "name": "Nile goose (Smen)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ },
+ "egyptian_horus": {
+  "attributes": [
+   {
+    "id": "egyptian_horus-falcon",
+    "name": "Falcon, or falcon-headed man in the Double Crown",
+    "notes": "Shown as a falcon or a falcon-headed man wearing the Pschent; as Harpokrates a naked child with side-lock and finger to mouth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "egyptian_horus-falcon-animal",
+    "name": "Falcon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003)"
+     }
+    ]
+   }
+  ]
+ }
+};
 /* ENRICH_SWEEP_END */
 const SEED_PIPELINE = [
   addNewFigures,                                  // NEW_FIGURES
