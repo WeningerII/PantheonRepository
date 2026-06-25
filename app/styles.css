@@ -2925,10 +2925,21 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   border: 1px dashed var(--rule);
   border-radius: 3px;
   z-index: 2;
+  cursor: pointer;
+  user-select: none;
+  transition: color .12s, border-color .12s, background .12s;
 }
-.lineage-overflow:hover {
+.lineage-overflow:hover,
+.lineage-overflow:focus-visible {
   color: var(--ink-2);
   border-color: rgba(0,0,0,0.22);
+  background: rgba(0,0,0,0.03);
+  outline: none;
+}
+/* Expanded: the chip is now a "−" collapse toggle — make it read as active. */
+.lineage-overflow.is-expanded {
+  border-style: solid;
+  color: var(--ink-2);
 }
 
 .lineage-controls {
