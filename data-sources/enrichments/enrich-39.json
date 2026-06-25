@@ -71,6 +71,20 @@
     "norse_jormunrekkr": [
       {"id":"norse_jormunrekkr-doom-svanhild","name":"has Svanhild trampled by horses and Randvér hanged on a slander","notes":"Believing the charge that his wife Svanhild and his son Randvér betrayed him, Jǫrmunrekkr hangs Randvér and has Svanhild trodden to death by horses (Hamðismál; Vǫlsunga saga).","inheritability":"none","sources":[{"kind":"primary","reference":"Hamðismál (Poetic Edda); Vǫlsunga saga ch. 42; Snorri, Skáldskaparmál"}],"ability":false}
     ],
+    "norse_sif": [
+      {"id":"norse_sif-golden-hair","name":"bears hair of living gold, restored by the dwarves after Loki shears it","notes":"Skáldskaparmál: Loki cuts off Sif's hair and Thor compels him to have the dwarves (Ívaldi's sons) forge new hair of pure gold that grows like real hair, along with the gods' other treasures.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda)"}],"ability":true}
+    ],
+    "norse_urdr": [
+      {"id":"norse_urdr-water-yggdrasil","name":"draws water from her well to nourish and preserve Yggdrasil","notes":"Gylfaginning: the Norns take water from the Well of Urðr and the white clay (aurr) about it and sprinkle the World-Tree so its limbs shall not rot.","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 16; Vǫluspá 19-20 (Poetic Edda)"}],"ability":true},
+      {"id":"norse_urdr-carve-orlog","name":"carves and lays down the örlög (fate-decrees) of gods and men","notes":"Vǫluspá says the maidens 'carved on wood, laid down laws, chose lives for the children of men, and spoke of fate'.","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫluspá 20 (Poetic Edda)"}],"ability":true}
+    ],
+    "norse_verdandi": [
+      {"id":"norse_verdandi-water-yggdrasil","name":"with her sisters waters Yggdrasil from the Well of Urðr","notes":"The three Norns draw from the well and pour water and white clay over the World-Tree to keep it green (Gylfaginning).","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 16"}],"ability":true},
+      {"id":"norse_verdandi-carve-orlog","name":"carves the fate-runes that lay down the örlög of all lives","notes":"With Urðr and Skuld she carves on wood and decrees the lives of the children of men (Vǫluspá).","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫluspá 20 (Poetic Edda)"}],"ability":true}
+    ],
+    "norse_svanhild": [
+      {"id":"norse_svanhild-fairest-of-women","name":"is the fairest of all women, her beauty the spark of the final feud","notes":"Vǫlsunga saga calls Svanhild the most beautiful of women; the horses set to trample her will not harm her until her face is hooded — and her death drives Hamðir and Sǫrli to the cycle's last revenge.","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫlsunga saga, ch. 42-44; Hamðismál (Poetic Edda)"}],"ability":false}
+    ],
     "norse_ragnar": [
       {"id":"norse_ragnar-slay-dragon","name":"slays Þóra's serpent in pitch-boiled breeches to win her hand","notes":"Ragnar kills the great serpent coiled round the maiden Þóra's bower, warded from its venom by his shaggy pitch-soaked breeches, and so wins both bride and byname (Ragnars saga).","inheritability":"none","sources":[{"kind":"primary","reference":"Ragnars saga loðbrókar, ch. 2-3"}],"ability":true}
     ],
@@ -163,6 +177,9 @@
     ],
     "nupe_edegi": [
       {"original":"Etsu Nupe","rom":"Etsu Nupe","gloss":"'King of the Nupe', the royal title he founded","language":"Nupe","contextTag":"title","sources":[{"kind":"secondary","reference":"S. F. Nadel, A Black Byzantium (1942)"}]}
+    ],
+    "norse_sigmund": [
+      {"original":"Vǫlsungr","rom":"Vǫlsungr","gloss":"'the Vǫlsung', scion and greatest of Vǫlsung's sons","language":"Old Norse","contextTag":"patronymic","sources":[{"kind":"primary","reference":"Vǫlsunga saga; Helgakviða Hundingsbana"}]}
     ]
   },
   "domains": {
@@ -260,6 +277,19 @@
     "norse_skadi": {
       "attributes": [
         {"id":"norse_skadi-skis-and-bow","name":"the skis, snowshoes and hunting-bow of the snow-goddess","notes":"Skaði is the ǫndurdís ('snowshoe-goddess'), figured ranging the winter mountains on skis with her bow (Gylfaginning; Skáldskaparmál).","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning and Skáldskaparmál (Prose Edda)"}]}
+      ]
+    },
+    "norse_sif": {
+      "attributes": [
+        {"id":"norse_sif-golden-hair-attr","name":"the flowing hair of pure gold","notes":"Sif's defining attribute is her hair of living gold, long read by scholars as an image of the ripe golden grain-field over which she presides as Thor's earth-bride.","sources":[{"kind":"primary","reference":"Snorri Sturluson, Skáldskaparmál (Prose Edda)"}]}
+      ],
+      "sacredPlants": [
+        {"id":"norse_sif-rowan","name":"the rowan (reynir), 'Thor's salvation', associated with his wife Sif","sources":[{"kind":"secondary","reference":"Snorri Sturluson, Skáldskaparmál (rowan as 'Thor's deliverance'); H. R. Ellis Davidson, Gods and Myths of Northern Europe"}]}
+      ]
+    },
+    "norse_urdr": {
+      "attributes": [
+        {"id":"norse_urdr-well","name":"the Well of Urðr beneath the root of Yggdrasil where the gods hold court","notes":"The holy well at the World-Tree's root, whose water and white clay the Norns pour over Yggdrasil; the Æsir ride there daily to give judgment (Gylfaginning; Grímnismál).","sources":[{"kind":"primary","reference":"Snorri Sturluson, Gylfaginning (Prose Edda), ch. 15-16; Grímnismál 29 (Poetic Edda)"}]}
       ]
     },
     "nupe_kuti": {
