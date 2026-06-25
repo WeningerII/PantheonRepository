@@ -1,7 +1,7 @@
 # Capability scenario report
 
 Evaluation: binary PASS/FAIL via assertions over the real app booted in jsdom.
-Quality bar: every scenario PASS. **Result: 33/34 passed.**
+Quality bar: every scenario PASS. **Result: 34/34 passed.**
 
 | ID | Capability | Criterion | Result | Evidence |
 |----|-----------|-----------|--------|----------|
@@ -22,7 +22,7 @@ Quality bar: every scenario PASS. **Result: 33/34 passed.**
 | S15 | Atlas view | the atlas mounts all mapped territories | ✅ PASS | 331 paths, 238 traditions |
 | S16 | Atlas deep-link | #/atlas/<tradition> focuses that territory | ✅ PASS | focused Greek territory |
 | S17 | Lifecycle | a dense lifecycle lays out stages without overlap | ✅ PASS | 17 stages, min gap 30px |
-| S18 | Items registry | the Items view lists the object corpus grouped by kind | ✅ PASS | 1739 item rows, grouped |
+| S18 | Items registry | the Items view lists the object corpus grouped by kind | ✅ PASS | 1802 item rows, grouped |
 | S19 | Item custody | an item detail names its custody chain and links registry holders | ✅ PASS | custody chain with linked holder |
 | S20 | Keyboard nav | j/k move the cursor, Enter opens it, Escape closes | ✅ PASS | cursor "'Adi ibn Hatim" opened + closed |
 | S21 | Persistence — quota | oversized corpus stays in memory; the atlas still persists | ✅ PASS | people=null (quota), atlas persisted, UI populated |
@@ -30,7 +30,7 @@ Quality bar: every scenario PASS. **Result: 33/34 passed.**
 | S23 | Persistence — user edit | a user-edited corpus in storage wins over the seed | ✅ PASS | stored 2-figure corpus won over seed |
 | S24 | Search — empty state | a no-match query yields zero rows without error | ✅ PASS | no-match → 0 rows, no error, restores |
 | S25 | Routing — unknown id | deep-linking a non-existent figure does not crash the app | ✅ PASS | unknown id handled gracefully |
-| S26 | Detail — minimal figure | a figure with no powers/items/domains renders cleanly | ❌ FAIL | unexpected powers on a minimal figure |
+| S26 | Detail — minimal figure | a figure with no powers/items/domains renders cleanly | ✅ PASS | minimal figure rendered, no powers, no errors |
 | S27 | Detail — cult block | a major deity renders festivals, priesthoods, and offerings | ✅ PASS | cult block: "4 centers · 3 festivals · 3 priesthoods · 3 offerings" |
 | S28 | Detail — iconography | a figure with iconography renders the iconography block | ✅ PASS | iconography rendered (705 chars) |
 | S29 | Browse — sort | sorting by tradition reorders the table | ✅ PASS | reordered from alpha "'Abla bint Malik" |

@@ -366280,6 +366280,383 @@ const FACULTY_SWEEP = {
    "ability": true
   }
  ],
+ "estonian_linda": [
+  {
+   "id": "estonian_linda-mourning-stones",
+   "name": "Carry the stones of Kalev's grave-mound",
+   "term": {
+    "value": "Linda",
+    "script": "Latn",
+    "rom": "Linda"
+   },
+   "notes": "In the epic Linda heaps up a great cairn over her dead husband Kalev; the stone she drops in grief at Lake Ülemiste is folk-aetiology of the lake's origin.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kreutzwald, Kalevipoeg, Canto I"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_aita": [
+  {
+   "id": "etruscan_aita-rule-dead",
+   "name": "Rule the realm of the dead",
+   "notes": "Enthroned lord of the Etruscan underworld, counterpart of Greek Hades/Pluthon, presiding with his consort Phersipnai over the souls of the deceased.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "etruscan_aita-invisibility-cap",
+   "name": "Pass unseen in the wolf-skin cap",
+   "notes": "His wolf-skin headdress (a transformation of Hades' kyne, the dog-skin helmet of invisibility) marks his chthonic, unseen power over death.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_charun": [
+  {
+   "id": "etruscan_charun-seal-death",
+   "name": "Seal the door of death with the hammer",
+   "term": {
+    "value": "𐌗𐌀𐌓𐌖",
+    "script": "Ital",
+    "rom": "charu"
+   },
+   "notes": "Charun wields a great hammer or mallet, his defining attribute, to strike the threshold and confirm/seal a death; the blow consigns the soul to the underworld.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "etruscan_charun-escort-souls",
+   "name": "Escort the dead to the underworld",
+   "notes": "As psychopomp he meets the newly dead and guides (rather than punishes) them to the world below, frequently paired with Vanth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Krauskopf, in The Religion of the Etruscans (2006)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_fufluns": [
+  {
+   "id": "etruscan_fufluns-wine-vegetation",
+   "name": "Quicken the vine and the growth of plants",
+   "notes": "God of wine, plant-life, joy, health and growth; the Etruscan reception of Dionysos, namesake of Populonia (Fufluna).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bonfante & Swaddling, Etruscan Myths (2006)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "etruscan_fufluns-ecstasy-rebirth",
+   "name": "Grant ecstatic release and the promise of rebirth",
+   "notes": "Lord of a mystery-cult (Fufluns Pacha) attended by satyrs and maenads, offering initiates ecstatic communion and the hope of an afterlife.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_laran": [
+  {
+   "id": "etruscan_laran-war",
+   "name": "Command war and martial valour",
+   "notes": "God of war, the Etruscan counterpart of Ares/Mars, shown as the armed defender; on the Populonia mirror he fights the giant Celsclan, son of the earth-goddess Cel.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "etruscan_laran-thunderbolt",
+   "name": "Hurl the thunderbolt",
+   "notes": "Counted among the nine Etruscan deities permitted to wield lightning.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_nethuns": [
+  {
+   "id": "etruscan_nethuns-waters",
+   "name": "Rule wells, springs and the sea",
+   "notes": "Lord of fresh and salt water, of wells and springs, source of the Roman Neptune; named (as Neθ) on the Liver of Piacenza and the Liber Linteus.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Liver of Piacenza"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "etruscan_nethuns-thunderbolt",
+   "name": "Wield the thunderbolt",
+   "notes": "Reckoned among the Etruscan gods empowered to hurl lightning, marking his rank among the great deities.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_persipnei": [
+  {
+   "id": "etruscan_persipnei-queen-dead",
+   "name": "Reign as queen of the underworld",
+   "term": {
+    "value": "𐌚𐌄𐌓𐌔𐌉𐌐𐌍𐌀𐌉",
+    "script": "Ital",
+    "rom": "phersipnai"
+   },
+   "notes": "Consort of Aita and queen of the dead, the Etruscan reception of Persephone/Proserpina, enthroned beside Aita in the painted tombs.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_selvans": [
+  {
+   "id": "etruscan_selvans-guard-boundaries",
+   "name": "Guard boundaries and the wild edges of cultivated land",
+   "term": {
+    "value": "𐌔𐌄𐌋𐌅𐌀𐌍𐌔",
+    "script": "Ital",
+    "rom": "selvans"
+   },
+   "notes": "Tutelary god of woodland, wilderness and boundary-stones (epithet tularias, 'of the boundaries'); a public cult deity at Volsinii, receiving dedications from women as well as men.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Liver of Piacenza"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_sethlans": [
+  {
+   "id": "etruscan_sethlans-forge",
+   "name": "Work fire and the forge",
+   "notes": "God of fire, the forge and metalworking, the Etruscan Hephaestus/Vulcan; first attested in the 4th c. BCE.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "etruscan_sethlans-birth-menrva",
+   "name": "Cleave open Tinia's head to free Menrva",
+   "notes": "On Etruscan mirrors he is the craftsman who splits Tinia's skull with his axe so that the armed Menrva may be born.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_tages": [
+  {
+   "id": "etruscan_tages-reveal-disciplina",
+   "name": "Reveal the Etrusca Disciplina",
+   "term": {
+    "value": "𐌕𐌀𐌓𐌗𐌉𐌄𐌔",
+    "script": "Ital",
+    "rom": "tarchies"
+   },
+   "notes": "Plowed from a furrow at Tarquinia with a child's body and a sage's wisdom, he dictated the rules of haruspicy and the reading of lightning, then died; the fountainhead of Etruscan sacred science (Cicero, De Divinatione II).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cicero, De Divinatione 2.50"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_thesan": [
+  {
+   "id": "etruscan_thesan-bring-dawn",
+   "name": "Bring forth the dawn and the daylight",
+   "notes": "Goddess of the dawn, counterpart of Eos/Aurora, associated with birth and the coming of day; received offerings beside the sun-god Usil in the Liber Linteus.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Liber Linteus Zagrabiensis"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "etruscan_thesan-carry-lover",
+   "name": "Carry off a mortal youth at daybreak",
+   "notes": "On 6th-5th c. BCE mirrors she abducts a young lover (e.g. Kephalos/Tithun), winged and nimbed, mirroring Eos and Tithonus.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_turan": [
+  {
+   "id": "etruscan_turan-love-desire",
+   "name": "Kindle love, desire and vitality",
+   "term": {
+    "value": "𐌕𐌖𐌓𐌀𐌍",
+    "script": "Ital",
+    "rom": "turan"
+   },
+   "notes": "Goddess of love, desire and fertility, the Etruscan Aphrodite/Venus and patron of Vulci; her lover is Atunis (Adonis) and her retinue the winged Lasas.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "etruscan_vanth": [
+  {
+   "id": "etruscan_vanth-light-the-way",
+   "name": "Light the road of the dead with her torch",
+   "term": {
+    "value": "𐌅𐌀𐌍𐌚",
+    "script": "Ital",
+    "rom": "vanth"
+   },
+   "notes": "Winged female psychopomp who appears at the moment of death bearing a torch; indigenous to Etruria with no Greek counterpart, she guides rather than punishes.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "etruscan_vanth-know-fate",
+   "name": "Know and announce the appointed fate",
+   "notes": "In the François Tomb she holds an open scroll recording the destiny of the dead, witnessing the doom of the Trojan captives.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "François Tomb, Vulci, wall-paintings"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ewe_lisa": [
+  {
+   "id": "ewe_lisa-strength-day",
+   "name": "Wield the strength and heat of day",
+   "notes": "As the male, solar half of the creator pair Mawu-Lisa, Lisa embodies the sun, daytime, heat and strength, complementing Mawu's cool nocturnal moon.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "ewe_lisa-order-world",
+   "name": "Order the created world with Mawu",
+   "notes": "With Mawu, Lisa shapes and orders the cosmos from pre-existing matter, dividing day from night between the pair.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "fang_mebere": [
+  {
+   "id": "fang_mebere-order-governance",
+   "name": "Establish order and governance",
+   "notes": "Second person of the Nzame-Mebere-Nkwa triad, the aspect of rule and order who with Nzame and Nkwa resolves to give the new earth a ruler.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Fernandez, Bwiti: An Ethnography of the Religious Imagination in Africa (1982)"
+    }
+   ],
+   "ability": true
+  }
+ ],
  "fang_nzame": [
   {
    "id": "fang_nzame-orders-heavens",
@@ -366310,6 +366687,51 @@ const FACULTY_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Encyclopaedia of Fang creation myth (Nzame–Mebere–Nkwa cycle)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "fang_nkwa": [
+  {
+   "id": "fang_nkwa-endow-beauty",
+   "name": "endows the first man Fam with beauty",
+   "notes": "Third person of the creator triad, holding the beauty-aspect of creation: from Nkwa the first man Fam receives his beauty, as he takes strength from Nzame and leadership from Mebere.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Talk Africana, 'The Creation Story of the Fang people'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "fijian_nacirikaumoli": [
+  {
+   "id": "fijian_nacirikaumoli-shoot-turukawa",
+   "name": "shoots Degei's sacred cock Turukawa and provokes the first war",
+   "notes": "With his twin he kills Degei's wake-rooster Turukawa with a bow of Togovere mangrove, the killing that brings Degei's wrath and the first tribal war of the Nakauvadra.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Fiji Times, 'How tribal war started in Fiji'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "fijian_nakausabaria": [
+  {
+   "id": "fijian_nakausabaria-shoot-turukawa",
+   "name": "shoots Degei's sacred cock Turukawa and provokes the first war",
+   "notes": "With his twin he looses the mangrove arrow that slays Degei's rooster Turukawa, igniting the first tribal war in which Degei calls Vueti's warriors from Verata against them.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Fiji Times, 'How tribal war started in Fiji'"
     }
    ],
    "ability": true
@@ -366546,6 +366968,21 @@ const FACULTY_SWEEP = {
     {
      "kind": "primary",
      "reference": "Kalevala (Lönnrot), Runo 8 (Väinämöinen's knee-wound)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "finnish_aino": [
+  {
+   "id": "finnish_aino-become-water-maiden",
+   "name": "drowns and becomes a maiden of Vellamo, taking salmon-form",
+   "notes": "Rather than wed the old sage she walks into the lake and drowns, passing to the home of the water-maidens in Vellamo's realm; thereafter she swims as a salmon and slips, mocking, from Väinämöinen's hands (Runos 4–5).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kalevala (Lönnrot), Runo 4 (The Fate of Aino), Runo 5"
     }
    ],
    "ability": true
@@ -367034,6 +367471,748 @@ const FACULTY_SWEEP = {
     {
      "kind": "primary",
      "reference": "Apollodorus, Epitome 3.28-29"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_asclepius": [
+  {
+   "id": "greek_asclepius-incubation-cure",
+   "name": "Cure the sick through dream-vision in temple incubation",
+   "term": {
+    "value": "ἐγκοίμησις",
+    "script": "Grek",
+    "rom": "enkoimesis"
+   },
+   "notes": "At the Asclepieia the sick slept in the abaton and the god appeared in a dream to prescribe or directly effect the cure; the iamata stelai of Epidaurus record the miracle-cures.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Epidaurus iamata stelai (IG IV2 1, 121-124)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_asclepius-gentle-physician",
+   "name": "Stay disease and wounds as the gentlest of physicians",
+   "notes": "Trained by Chiron, he surpassed all in surgery, drugs and the soothing of pain; Pindar lists his cures of ulcers, fevers and wounds.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Pythian 3"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_asclepius-raise-dead",
+   "name": "Raise the dead with the Gorgon's blood",
+   "notes": "Using blood drawn from Medusa's left side (given him by Athena) he restored the dead to life until Zeus, to preserve the boundary of mortality, killed him with a thunderbolt.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 3.10.3"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_eileithyia": [
+  {
+   "id": "greek_eileithyia-loose-the-birth",
+   "name": "Loose or bind the womb to release or arrest childbirth",
+   "term": {
+    "value": "Λυσίζωνος",
+    "script": "Grek",
+    "rom": "Lysizonos"
+   },
+   "notes": "As 'she who loosens the girdle' she brings on delivery; by crossing her legs and fingers outside Alcmene's chamber she held back the birth of Heracles for seven days.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ovid, Metamorphoses 9.281-323"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_eileithyia-bring-to-light",
+   "name": "Bring the child out of darkness into the light",
+   "notes": "The Eileithyiai are the daughters of Hera who hold the keen pangs of travail and bring children forth; without her present no birth can be completed.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 11.270; 19.103-119"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_deimos": [
+  {
+   "id": "greek_deimos-rout-armies",
+   "name": "Drive the ranks of men into dread and rout beside Ares",
+   "term": {
+    "value": "Δεῖμος",
+    "script": "Grek",
+    "rom": "Deimos"
+   },
+   "notes": "With his brother Phobos he yokes the chariot of Ares and looses terror through the battle-lines (Theogony 934; Iliad 4.440, 15.119).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 934-936"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_cassandra": [
+  {
+   "id": "greek_cassandra-true-unbelieved-prophecy",
+   "name": "Foresee the future truly yet never be believed",
+   "notes": "Apollo's double gift: she prophesied the fall of Troy, the doom of the wooden horse and her own and Agamemnon's deaths, all in vain.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aeschylus, Agamemnon 1072-1330"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_castor": [
+  {
+   "id": "greek_castor-protect-at-sea",
+   "name": "Save sailors from storm as a saviour of ships",
+   "notes": "With Pollux the Dioscuri appear in tempest as the twin lights (St Elmo's fire) on the masthead and calm the sea for mariners.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 33 to the Dioscuri"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_apollod_telephus": [
+  {
+   "id": "greek_apollod_telephus-wound-and-heal",
+   "name": "Be wounded and healed by the same Achillean spear",
+   "notes": "Speared by Achilles at the Mysian landing, his unhealing wound could be cured only by the rust of the spear that made it ('the wounder heals'), the price of guiding the Greeks to Troy.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Epitome 3.17-20"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_atreus": [
+  {
+   "id": "greek_atreus-claim-by-portent",
+   "name": "Claim the throne of Mycenae by the portent of the golden lamb",
+   "notes": "The golden lamb in his flock marked the rightful king; though Aerope stole it for Thyestes, Zeus reversed the sun's course to vindicate Atreus's title.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Epitome 2.10-12"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_atreus-thyestean-vengeance",
+   "name": "Take vengeance by the Thyestean feast",
+   "notes": "He slew Thyestes' sons and served them to their father at a banquet, the founding crime of the curse on the house of Atreus.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Epitome 2.13"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_clytemnestra": [
+  {
+   "id": "greek_clytemnestra-snare-and-slay",
+   "name": "Snare and slay the returning king",
+   "notes": "She cast an inescapable robe-net over Agamemnon in the bath and struck him down with an axe, avenging Iphigenia.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aeschylus, Agamemnon 1379-1398"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_cycnus_poseidon": [
+  {
+   "id": "greek_cycnus_poseidon-swan-metamorphosis",
+   "name": "Be transformed by Poseidon into a swan at death",
+   "notes": "When Achilles strangled the invulnerable king with his own helmet-strap, Poseidon changed his vanishing body into the swan (kyknos) for which he was named.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ovid, Metamorphoses 12.143-145"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_ceyx": [
+  {
+   "id": "greek_ceyx-halcyon-metamorphosis",
+   "name": "Be transformed with Alcyone into the halcyon birds",
+   "notes": "Drowned in a storm and mourned by his faithful wife, the gods in pity turned the pair into kingfishers; the windless 'halcyon days' mark her brooding on the calmed winter sea.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ovid, Metamorphoses 11.710-748"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_epaphus": [
+  {
+   "id": "greek_epaphus-found-egypt",
+   "name": "Found Memphis and rule Egypt as the touch-born son of Zeus",
+   "term": {
+    "value": "Ἔπαφος",
+    "script": "Grek",
+    "rom": "Epaphos"
+   },
+   "notes": "Born by the touch (epaphe) of Zeus on the restored Io at the Nile; he founded Memphis and from him descend the Libyans, Aethiopians and (through Libya) the Argive, Phoenician and Theban lines.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 2.1.3-4"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_callisto": [
+  {
+   "id": "greek_callisto-become-bear",
+   "name": "Be transformed into a bear and set among the stars",
+   "notes": "Turned into a bear (by Hera, Artemis, or Zeus in the variants) for the union with Zeus; saved from her son's spear, she was catasterised as Ursa Major, the Great Bear.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 3.8.2; Ovid, Metamorphoses 2.401-507"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_chione_boread": [
+  {
+   "id": "greek_chione_boread-bear-eumolpus",
+   "name": "Bear Eumolpus to Poseidon and be saved by the sea",
+   "notes": "The snow-nymph daughter of Boreas bore Eumolpus to Poseidon and, to hide her shame, cast him into the sea, where his father received and reared him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 3.15.4"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_chrysippus": [
+  {
+   "id": "greek_chrysippus-abduction-curse",
+   "name": "Occasion the curse of the Theban house by his abduction",
+   "notes": "Carried off (and violated) by the exiled Laius, whom Pelops was teaching to drive a chariot; Pelops' curse on Laius for the rape sets in motion the doom of Oedipus and Thebes.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 3.5.5; Euripides, Chrysippus (frr.)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_deiphobus": [
+  {
+   "id": "greek_deiphobus-bravest-after-hector",
+   "name": "Fight as the bravest Trojan prince after Hector",
+   "notes": "Athena took his likeness to lure Hector to his death; he wed Helen after Paris fell and was killed and mutilated by Menelaus at the sack.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 22.226-247; Virgil, Aeneid 6.494-534"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_astyanax": [
+  {
+   "id": "greek_astyanax-doomed-heir",
+   "name": "Embody the extinguished heir of Troy",
+   "notes": "The infant 'lord of the city' (Scamandrius to his father), thrown from the walls at the sack so no scion of Priam's house should survive to avenge it.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Epitome 5.23; Euripides, Trojan Women 709-739"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_erechtheus": [
+  {
+   "id": "greek_erechtheus-storm-war",
+   "name": "Repel the invader through the sacrifice of his daughters",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "To win the Eleusinian war against Eumolpus and the Thracians, Erechtheus offered up his own daughters as the oracle demanded, securing victory and the death of Eumolpus before Poseidon destroyed him with a thunderbolt (or trident).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Erechtheus (fragments); Apollodorus, Bibliotheca 3.15.4"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_erechtheus-earthquake",
+   "name": "Persist after death as the earth-shaking Poseidon Erechtheus",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "Absorbed into the cult of Poseidon on the Athenian Acropolis as the syncretic Poseidon Erechtheus, sharing the trident and the salt sea of the Erechtheion.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias 1.26.5; Homer, Iliad 2.546-551"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_eumelus": [
+  {
+   "id": "greek_eumelus-charioteer",
+   "name": "Peerless chariot-driving with the swiftest mares",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "Homer names Eumelus's Apollo-reared mares the best horses at Troy and Eumelus himself the best charioteer; he led the funeral-games race for Patroclus and would have won but for a divinely broken yoke (Athena aiding Diomedes).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 2.763-767, 23.288-565"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_europa": [
+  {
+   "id": "greek_europa-mother-kings",
+   "name": "Bear the three judge-kings of Crete to Zeus",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "By Zeus she bore Minos, Rhadamanthys and Sarpedon, founders of Cretan kingship and (Minos and Rhadamanthys) judges of the dead.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Catalogue of Women fr. 140; Apollodorus, Bibliotheca 3.1.1"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_eurynome": [
+  {
+   "id": "greek_eurynome-mother-bellerophon",
+   "name": "Bear Bellerophon, the Chimera-slayer, to Poseidon",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "Wife of Glaucus of Corinth but mother of the hero Bellerophon by Poseidon; Hesiod praises her as endowed by Athena with beauty and wisdom.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Catalogue of Women fr. 43a; Homer, Iliad 6.155-159"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_ganymede": [
+  {
+   "id": "greek_ganymede-cupbearer",
+   "name": "Pour the nectar of the gods on Olympus",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "Made wine-pourer (oinochoos) to Zeus and the Olympians in place of Hebe, drawing nectar from the mixing-bowl.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 20.232-235; Homeric Hymn to Aphrodite 202-217"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_harmonia": [
+  {
+   "id": "greek_harmonia-concord",
+   "name": "Bind together in harmony and marital concord",
+   "term": {
+    "value": "ἁρμονία",
+    "script": "Grc",
+    "rom": "harmonia"
+   },
+   "notes": "Personified Harmony, the joining of opposites into accord; her wedding to Cadmus, attended by all the gods, was the mythic archetype of divinely-sanctioned marriage.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 933-937; Diodorus Siculus 5.48-49"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hecuba": [
+  {
+   "id": "greek_hecuba-vengeance",
+   "name": "Exact blinding vengeance on the murderer of her child",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "With the captive Trojan women she lured Polymestor into her tent and gouged out his eyes with brooch-pins, killing his sons, in requital for his murder of Polydorus.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Hecuba 1035-1055"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hecuba-metamorphosis",
+   "name": "Transform at death into a fiery-eyed hound",
+   "term": {
+    "value": "κύων",
+    "script": "Grc",
+    "rom": "kyon"
+   },
+   "notes": "Polymestor's prophecy and later tradition make her end a metamorphosis into a bitch with blazing eyes, buried at Cynossema ('the bitch's tomb'), a Hellespontine landmark for sailors.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Hecuba 1265-1273; Ovid, Metamorphoses 13.565-575"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_helen": [
+  {
+   "id": "greek_helen-beauty",
+   "name": "Surpassing beauty that compels and ruins men",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "The most beautiful of mortal women, whose face moved all Greece to war; the Trojan elders judge her beauty 'terribly like the immortal goddesses' even as they wish her gone.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 3.156-160; Cypria fr. 1"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_helen-pharmaka",
+   "name": "Knowledge of Egyptian grief-banishing drugs",
+   "term": {
+    "value": "νηπενθές",
+    "script": "Grc",
+    "rom": "nepenthes"
+   },
+   "notes": "In the Odyssey she casts into the wine the drug nepenthes, given her by Polydamna of Egypt, that quiets all pain and anger.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Odyssey 4.219-232"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_helenus": [
+  {
+   "id": "greek_helenus-augury",
+   "name": "True augury and the bird-borne knowledge of fate",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "Foremost augur of Troy, 'best of bird-seers'; his prophecy, extracted after his capture by Odysseus, named the conditions for Troy's fall (the bow of Heracles, Neoptolemus, the Palladium).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 6.76-101; Apollodorus, Epitome 5.9-10"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_atlas": [
+  {
+   "id": "greek_hesiod_atlas-foreknowledge",
+   "name": "Knowledge of the depths of the whole sea and the heavens",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "Homer calls him the Titan who 'knows the depths of every sea' and guards the pillars that keep earth and sky apart; later he is the astronomer-king who first taught the sphere.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Odyssey 1.52-54; Diodorus Siculus 4.27.4-5"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_clio": [
+  {
+   "id": "greek_hesiod_clio-proclaim",
+   "name": "Proclaim and immortalize renown in song",
+   "term": {
+    "value": "κλέος",
+    "script": "Grc",
+    "rom": "kleos"
+   },
+   "notes": "Her name from kleos ('fame, glory'); she makes famous and is herself the Muse who celebrates the deeds of heroes, later differentiated as the Muse of history.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 77-79; Diodorus Siculus 4.7.4"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_epimetheus": [
+  {
+   "id": "greek_hesiod_epimetheus-afterthought",
+   "name": "Afterthought: act and only then perceive consequence",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "The 'after-thinker' who, against Prometheus's warning, accepted Pandora from the gods and so loosed evils on mankind; his very nature is to learn too late.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Works and Days 83-89; Theogony 511-514"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "haida_master_carpenter": [
+  {
+   "id": "haida_master_carpenter-canoe-builder",
+   "name": "Carve the dugout cedar canoe",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "The supernatural shipwright who builds dugout canoes; in the Skidegate cycle he repeatedly fashions and rejects split canoes until he perfects the craft before going to war with South-East Wind.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "John R. Swanton, Haida Texts and Myths, BAE Bulletin 29 (1905), 'Master-Carpenter and South-East'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "haida_master_carpenter-shape-world",
+   "name": "Shape and order the things of the world by carving",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "As culture-hero artificer, he gives form to the made world; in tellings overlapping the Raven complex he carves and fits together the fabric of houses, canoes and tools.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "John R. Swanton, Contributions to the Ethnology of the Haida, Jesup North Pacific Expedition (1905)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hattic_kasku": [
+  {
+   "id": "hattic_kasku-guarantor-oaths",
+   "name": "Guarantor of oaths as the moon in heaven",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "As the Anatolian moon-god (cognate of Hurrian Kušuḫ and Luwian Arma), he stands among the celestial witnesses invoked to guarantee oaths and treaties.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Daniel Schwemer, in Reallexikon der Assyriologie, s.v. moon-gods of Anatolia; Volkert Haas, Geschichte der hethitischen Religion (1994)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "guarani_kuarahy": [
+  {
+   "id": "guarani_kuarahy-avenge-mother",
+   "name": "Avenge the slain mother and destroy the man-eating jaguars",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "On learning from a bird that the Aña/jaguars had killed his mother Ñande Sy, the Sun-twin leads the slaughter of the monster-jaguars, sparing only a single pregnant female from whom present-day jaguars descend.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "León Cadogan, Ayvu Rapyta (1959); Curt Nimuendajú, Die Sagen von der Erschaffung und Vernichtung der Welt (1914)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "haida_raven": [
+  {
+   "id": "haida_raven-steal-daylight",
+   "name": "Steal the daylight (sun, moon and stars) and loose it on the dark world",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "Raven, by trickery, takes the box in which the light of day is hidden and releases the sun, moon and stars, ending the primordial darkness; the most-told episode of the Haida Raven cycle.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "John R. Swanton, Haida Texts and Myths, BAE Bulletin 29 (1905), the Raven cycle"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "haida_raven-make-haida-gwaii",
+   "name": "Make Haida Gwaii and the first people from the clamshell",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "As transformer-creator he is credited with raising Haida Gwaii and coaxing the first humans out of a clamshell on the beach.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "John R. Swanton, Haida Texts and Myths, BAE Bulletin 29 (1905)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "haida_djilaqons": [
+  {
+   "id": "haida_djilaqons-bring-eagle-lineages",
+   "name": "Bring the founding Eagle-moiety people in canoes",
+   "term": {
+    "value": "",
+    "script": "",
+    "rom": ""
+   },
+   "notes": "The ancestress from whom (save one northern lineage) the Eagle-moiety Haida descend; tradition has her bring the foundational population to the islands by canoe.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "John R. Swanton, Contributions to the Ethnology of the Haida, Jesup North Pacific Expedition (1905)"
     }
    ],
    "ability": true
@@ -368642,6 +369821,418 @@ const MATERIAL_SWEEP = {
    ]
   }
  ],
+ "estonian_kalev": [
+  {
+   "id": "estonian_kalev-grave-mound",
+   "name": "Toompea grave-mound",
+   "classId": "monument",
+   "kind": "monument",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kreutzwald, Kalevipoeg (folk tradition); Toompea aetiology"
+    }
+   ]
+  }
+ ],
+ "etruscan_aita": [
+  {
+   "id": "etruscan_aita-wolfskin-cap",
+   "name": "Wolf-skin cap",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tomb of Orcus II, Tarquinia, wall-paintings"
+    }
+   ]
+  },
+  {
+   "id": "etruscan_aita-snake-scepter",
+   "name": "Snake-entwined scepter",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tomb of Orcus II, Tarquinia, wall-paintings"
+    }
+   ]
+  }
+ ],
+ "etruscan_charun": [
+  {
+   "id": "etruscan_charun-hammer",
+   "name": "Charun's hammer",
+   "classId": "tool",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Monterozzi necropolis Tomb 5636, Tarquinia, wall-painting"
+    }
+   ]
+  }
+ ],
+ "etruscan_fufluns": [
+  {
+   "id": "etruscan_fufluns-thyrsus",
+   "name": "Thyrsus",
+   "classId": "staff",
+   "kind": "staff",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bonfante & Swaddling, Etruscan Myths (2006)"
+    }
+   ]
+  },
+  {
+   "id": "etruscan_fufluns-kantharos",
+   "name": "Wine-cup (kantharos)",
+   "classId": "vessel",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Bonfante & Swaddling, Etruscan Myths (2006)"
+    }
+   ]
+  }
+ ],
+ "etruscan_laran": [
+  {
+   "id": "etruscan_laran-spear",
+   "name": "Spear of Laran",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mars of Todi bronze, Vatican Museums"
+    }
+   ]
+  },
+  {
+   "id": "etruscan_laran-helmet",
+   "name": "Crested helmet",
+   "classId": "armor",
+   "kind": "armor",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Populonia mirror (Laran vs Celsclan), Florence"
+    }
+   ]
+  },
+  {
+   "id": "etruscan_laran-shield",
+   "name": "Round shield",
+   "classId": "armor",
+   "kind": "armor",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Populonia mirror (Laran vs Celsclan), Florence"
+    }
+   ]
+  }
+ ],
+ "etruscan_nethuns": [
+  {
+   "id": "etruscan_nethuns-trident",
+   "name": "Trident of Nethuns",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Coin of Vetulonia, c. 215-211 BCE"
+    }
+   ]
+  }
+ ],
+ "etruscan_persipnei": [
+  {
+   "id": "etruscan_persipnei-bird-scepter",
+   "name": "Bird-crowned scepter",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tomb of Orcus II, Tarquinia, wall-paintings"
+    }
+   ]
+  }
+ ],
+ "etruscan_sethlans": [
+  {
+   "id": "etruscan_sethlans-hammer",
+   "name": "Smith's hammer",
+   "classId": "tool",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Historical Dictionary of the Etruscans, s.v. Sethlans"
+    }
+   ]
+  },
+  {
+   "id": "etruscan_sethlans-tongs",
+   "name": "Blacksmith's tongs",
+   "classId": "tool",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Historical Dictionary of the Etruscans, s.v. Sethlans"
+    }
+   ]
+  },
+  {
+   "id": "etruscan_sethlans-double-axe",
+   "name": "Double-headed axe",
+   "classId": "tool",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Historical Dictionary of the Etruscans, s.v. Sethlans"
+    }
+   ]
+  }
+ ],
+ "etruscan_thesan": [
+  {
+   "id": "etruscan_thesan-wings",
+   "name": "Great wings",
+   "classId": "attribute",
+   "kind": "attribute",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Etruscan mirror, Museo Gregoriano Etrusco (Thesan and Kephalos)"
+    }
+   ]
+  }
+ ],
+ "etruscan_turan": [
+  {
+   "id": "etruscan_turan-dove-attr",
+   "name": "Dove of Turan",
+   "classId": "attribute",
+   "kind": "attribute",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ]
+  }
+ ],
+ "etruscan_vanth": [
+  {
+   "id": "etruscan_vanth-torch",
+   "name": "Torch of Vanth",
+   "classId": "tool",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ]
+  },
+  {
+   "id": "etruscan_vanth-key",
+   "name": "Key of the underworld gate",
+   "classId": "tool",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ]
+  },
+  {
+   "id": "etruscan_vanth-scroll",
+   "name": "Scroll of fate",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "François Tomb, Vulci, wall-paintings"
+    }
+   ]
+  }
+ ],
+ "evenki_khargi": [
+  {
+   "id": "evenki_khargi-engdekit-river",
+   "name": "World-river Engdekit",
+   "classId": "place",
+   "kind": "place",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Anisimov, in Studies in Siberian Shamanism (1963)"
+    }
+   ]
+  }
+ ],
+ "ewe_age": [
+  {
+   "id": "ewe_age-bush-shrine",
+   "name": "Bush-edge shrine of Age",
+   "classId": "shrine",
+   "kind": "shrine",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  }
+ ],
+ "ewe_da": [
+  {
+   "id": "ewe_da-coiled-serpent",
+   "name": "World-supporting coils (asa-xasa)",
+   "classId": "attribute",
+   "kind": "attribute",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  }
+ ],
+ "ewe_gu": [
+  {
+   "id": "ewe_gu-machete",
+   "name": "Cutlass of Gu",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  },
+  {
+   "id": "ewe_gu-asen-iron",
+   "name": "Iron cult-assemblage (gubasa)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Blier, African Vodun: Art, Psychology, and Power (1995)"
+    }
+   ]
+  }
+ ],
+ "ewe_legba": [
+  {
+   "id": "ewe_legba-doorway-mound",
+   "name": "Legba mound at the door",
+   "classId": "shrine",
+   "kind": "shrine",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  },
+  {
+   "id": "ewe_legba-staff",
+   "name": "Phallic stick of Legba",
+   "classId": "staff",
+   "kind": "staff",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  }
+ ],
+ "ewe_sakpata": [
+  {
+   "id": "ewe_sakpata-xaxara-broom",
+   "name": "Raffia broom (xaxará)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  }
+ ],
+ "ewe_so": [
+  {
+   "id": "ewe_so-thunder-axe",
+   "name": "Thunder-axe (so-kpe, thunderstone)",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  }
+ ],
+ "ewuare_great": [
+  {
+   "id": "ewuare_great-coral-regalia",
+   "name": "Coral-bead regalia (ivie)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Egharevba, A Short History of Benin (1968)"
+    }
+   ]
+  },
+  {
+   "id": "ewuare_great-eben-sword",
+   "name": "Eben ceremonial sword",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ben-Amos, The Art of Benin (1995)"
+    }
+   ]
+  }
+ ],
+ "eweka_i": [
+  {
+   "id": "eweka_i-uzama-council",
+   "name": "Uzama Nihinron kingmaker council",
+   "classId": "institution",
+   "kind": "institution",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Egharevba, A Short History of Benin (1968)"
+    }
+   ]
+  }
+ ],
  "fang_nzame": [
   {
    "id": "fang_nzame-thunder-fire",
@@ -368750,6 +370341,20 @@ const MATERIAL_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Wikipedia, 'Sopona'"
+    }
+   ]
+  }
+ ],
+ "fon_fa": [
+  {
+   "id": "fon_fa-divining-board",
+   "name": "the Fa divining-board dusted with irosun powder",
+   "classId": "divination",
+   "kind": "implement",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Smithsonian, 'An Introduction to Fa Divination of Benin'"
     }
    ]
   }
@@ -368874,6 +370479,431 @@ const MATERIAL_SWEEP = {
     {
      "kind": "primary",
      "reference": "Euripides, Hippolytus 108-113"
+    }
+   ]
+  }
+ ],
+ "greek_aristaeus": [
+  {
+   "id": "greek_aristaeus-beehive",
+   "name": "The beehive and the ox-born bees (bugonia)",
+   "classId": "implement",
+   "kind": "implement",
+   "notes": "Inventor of apiculture; in the Georgics his lost bees are regenerated from the carcass of a sacrificed ox (bugonia), the ritual remedy taught by Proteus and Cyrene.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Virgil, Georgics 4.281-558"
+    }
+   ]
+  }
+ ],
+ "greek_asclepius": [
+  {
+   "id": "greek_asclepius-serpent-staff",
+   "name": "The serpent-entwined staff (Rod of Asclepius)",
+   "classId": "attribute",
+   "kind": "staff",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 2.27.2"
+    }
+   ]
+  },
+  {
+   "id": "greek_asclepius-omphalos-throne",
+   "name": "The chryselephantine cult-statue enthroned with staff and dog at Epidaurus",
+   "classId": "cult-statue",
+   "kind": "sculpture",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 2.27.2 (statue by Thrasymedes)"
+    }
+   ]
+  }
+ ],
+ "greek_eileithyia": [
+  {
+   "id": "greek_eileithyia-torches",
+   "name": "Twin torches of childbirth (light brought to the newborn)",
+   "classId": "attribute",
+   "kind": "attribute",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Theoi Project s.v. Eileithyia, citing votive reliefs"
+    }
+   ]
+  }
+ ],
+ "greek_apollod_telephus": [
+  {
+   "id": "greek_apollod_telephus-achilles-spear-rust",
+   "name": "The rust-cure of the Achillean spear (telephus' remedy)",
+   "classId": "substance",
+   "kind": "substance",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Epitome 3.20"
+    }
+   ]
+  }
+ ],
+ "greek_castor": [
+  {
+   "id": "greek_castor-pilos-star",
+   "name": "The pilos cap crowned with a star",
+   "classId": "attribute",
+   "kind": "attribute",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "LIMC III s.v. Dioskouroi"
+    }
+   ]
+  }
+ ],
+ "greek_bellerophon": [
+  {
+   "id": "greek_bellerophon-spear",
+   "name": "The lead-tipped spear that slew the Chimera",
+   "classId": "weapon",
+   "kind": "weapon",
+   "notes": "In Apollodorus he fixed a lump of lead to his spear-point; the Chimera's fiery breath melted it and the molten metal killed the monster.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Apollodorus, Bibliotheca 2.3.2 (Tzetzes scholion)"
+    }
+   ]
+  }
+ ],
+ "greek_clymene_merops": [
+  {
+   "id": "greek_clymene_merops-sun-chariot",
+   "name": "The chariot of Helios (sought by her son Phaethon)",
+   "classId": "vehicle",
+   "kind": "vehicle",
+   "notes": "Clymene's revelation of Phaethon's solar paternity sends him to claim the chariot of the Sun, the proof of his birth.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ovid, Metamorphoses 1.748-2.400"
+    }
+   ]
+  }
+ ],
+ "greek_eumolpus": [
+  {
+   "id": "greek_eumolpus-sceptre",
+   "name": "Hierophant's sceptre",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Scholia and tradition of the Eumolpidae; cf. Apollodorus 3.15.4"
+    }
+   ]
+  },
+  {
+   "id": "greek_eumolpus-aulos",
+   "name": "Aulos and lyre of the fair singer",
+   "classId": "instrument",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Apollodorus, Bibliotheca 2.5.12 (Eumolpus teaches Heracles music)"
+    }
+   ]
+  }
+ ],
+ "greek_europa": [
+  {
+   "id": "greek_europa-bull",
+   "name": "The white bull of Zeus",
+   "classId": "mount",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Moschus, Europa 37-62; Apollodorus, Bibliotheca 3.1.1"
+    }
+   ]
+  },
+  {
+   "id": "greek_europa-wreath",
+   "name": "Garland of woven flowers",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Moschus, Europa 63-71"
+    }
+   ]
+  }
+ ],
+ "greek_ganymede": [
+  {
+   "id": "greek_ganymede-rooster",
+   "name": "Cockerel (lover's gift)",
+   "classId": "divine-attribute",
+   "kind": "attribute",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Attic vase iconography; cf. Pindar, Olympian 1.43-45"
+    }
+   ]
+  }
+ ],
+ "greek_harmonia": [
+  {
+   "id": "greek_harmonia-robe",
+   "name": "Cursed robe (peplos) of Harmonia",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 3.4.2; Diodorus Siculus 4.65.5"
+    }
+   ]
+  }
+ ],
+ "greek_helenus": [
+  {
+   "id": "greek_helenus-staff",
+   "name": "Augur's staff (the lituus/skeptron of the seer)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Virgil, Aeneid 3.358-373 (Helenus as priest-king of Buthrotum)"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_eos": [
+  {
+   "id": "greek_hesiod_eos-horses",
+   "name": "The dawn-horses Lampus and Phaethon",
+   "classId": "mount",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Odyssey 23.244-246"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_helios": [
+  {
+   "id": "greek_hesiod_helios-crown",
+   "name": "Radiate solar crown",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 31 to Helios 9-15; Rhodian coinage"
+    }
+   ]
+  },
+  {
+   "id": "greek_hesiod_helios-cattle",
+   "name": "The sacred cattle of the Sun",
+   "classId": "animal",
+   "kind": "animal",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Odyssey 12.127-141, 260-419"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_hera": [
+  {
+   "id": "greek_hesiod_hera-diadem",
+   "name": "Polos / stephane crown of the queen",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias 2.17.4 (Polyclitus's chryselephantine Hera at the Argive Heraion)"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_hestia": [
+  {
+   "id": "greek_hesiod_hestia-hearth",
+   "name": "The sacred hearth and undying fire",
+   "classId": "sacred-fire",
+   "kind": "sacred-fire",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 24 to Hestia; Homeric Hymn 29 to Hestia 1-6"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_calliope": [
+  {
+   "id": "greek_hesiod_calliope-tablet",
+   "name": "Writing tablet and stylus",
+   "classId": "divine-attribute",
+   "kind": "attribute",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Roman-era Muse iconography; cf. Hesiod, Theogony 79-80"
+    }
+   ]
+  }
+ ],
+ "hattic_wurunkatte": [
+  {
+   "id": "hattic_wurunkatte-mace",
+   "name": "Mace (war-club)",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Volkert Haas, Geschichte der hethitischen Religion (1994); description of the silver statuette of the war-god holding shield and mace"
+    }
+   ]
+  },
+  {
+   "id": "hattic_wurunkatte-shield",
+   "name": "Warrior's shield",
+   "classId": "armor",
+   "kind": "armor",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Volkert Haas, Geschichte der hethitischen Religion (1994)"
+    }
+   ]
+  }
+ ],
+ "guarani_tupa": [
+  {
+   "id": "guarani_tupa-thunder-axe",
+   "name": "The thunder and lightning he hurls",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "León Cadogan, Ayvu Rapyta (1959); the fourth divine father Tupã Ru Ete as lord of thunder, lightning, rain and the waters"
+    }
+   ]
+  }
+ ],
+ "hindu_abhimanyu": [
+  {
+   "id": "hindu_abhimanyu-chariot",
+   "name": "War-chariot driven by Sumitra",
+   "classId": "vehicle",
+   "kind": "vehicle",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Drona Parva (the day-13 chariot assault on the Chakravyuha)"
+    }
+   ]
+  }
+ ],
+ "hindu_aruna": [
+  {
+   "id": "hindu_aruna-sun-chariot",
+   "name": "The seven-horsed chariot of Surya he drives",
+   "classId": "vehicle",
+   "kind": "vehicle",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva (Astika, the Garuda-Vinata cycle); Bhavishya Purana (Surya iconography)"
+    }
+   ]
+  }
+ ],
+ "hindu_angada": [
+  {
+   "id": "hindu_angada-armlet",
+   "name": "Angada (warrior's armlet, his name-bearing ornament)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Valmiki Ramayana, Kishkindha and Yuddha Kandas; the name angada denotes the upper-arm ornament"
+    }
+   ]
+  }
+ ],
+ "hindu_bharata_ramayana": [
+  {
+   "id": "hindu_bharata_ramayana-padukas",
+   "name": "Rama's sandals (padukas) enthroned as regent-token",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Ayodhya Kanda (Bharata installs Rama's padukas on the throne at Nandigrama)"
+    }
+   ]
+  }
+ ],
+ "haida_raven": [
+  {
+   "id": "haida_raven-box-of-daylight",
+   "name": "The box of daylight (holding sun, moon and stars)",
+   "classId": "vessel",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "John R. Swanton, Haida Texts and Myths, BAE Bulletin 29 (1905); the Raven-steals-the-light episode"
+    }
+   ]
+  },
+  {
+   "id": "haida_raven-raven-rattle",
+   "name": "Raven rattle (chief's regalia, with daylight in the beak)",
+   "classId": "instrument",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "Northwest Coast chief's raven-rattle iconography; cf. Swanton, Haida Texts and Myths (1905)"
+    }
+   ]
+  }
+ ],
+ "hattic_telipinu": [
+  {
+   "id": "hattic_telipinu-kursa",
+   "name": "The kurša fleece (sheepskin hunting-bag) hung on the eya-tree",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "The Telipinu Myth (CTH 324); Hittite ritual texts describing the kurša hung from the eyan-tree before the god"
     }
    ]
   }
@@ -370926,6 +372956,90 @@ const DOMAIN_SWEEP = {
    ]
   }
  ],
+ "etruscan_aita": [
+  {
+   "sphereId": "death-and-the-dead",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ]
+  }
+ ],
+ "etruscan_fufluns": [
+  {
+   "sphereId": "ecstasy-and-mystery-rites",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ]
+  }
+ ],
+ "etruscan_nethuns": [
+  {
+   "sphereId": "springs-and-fresh-water",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Historical Dictionary of the Etruscans, s.v. Nethuns"
+    }
+   ]
+  }
+ ],
+ "etruscan_thesan": [
+  {
+   "sphereId": "birth-and-childbirth",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ]
+  }
+ ],
+ "ewe_avlekete": [
+  {
+   "sphereId": "fishing-and-fishers",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  }
+ ],
+ "ewe_so": [
+  {
+   "sphereId": "justice-and-oaths",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998)"
+    }
+   ]
+  }
+ ],
+ "fallen_star": [
+  {
+   "sphereId": "stars-and-constellations",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Walker, Lakota Belief and Ritual (1980)"
+    }
+   ]
+  }
+ ],
  "fang_nzame": [
   {
    "sphereId": "sky",
@@ -371202,6 +373316,316 @@ const DOMAIN_SWEEP = {
     {
      "kind": "primary",
      "reference": "Homer, Iliad 24.602-617"
+    }
+   ]
+  }
+ ],
+ "greek_asclepius": [
+  {
+   "sphereId": "medicine-and-healing",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Pythian 3"
+    }
+   ]
+  },
+  {
+   "sphereId": "resurrection-power",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 3.10.3-4"
+    }
+   ]
+  },
+  {
+   "sphereId": "prophecy",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Epidaurus iamata stelai (oracular dream-cures)"
+    }
+   ]
+  }
+ ],
+ "greek_eileithyia": [
+  {
+   "sphereId": "childbirth",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 11.270"
+    }
+   ]
+  },
+  {
+   "sphereId": "midwifery",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 1.18.5"
+    }
+   ]
+  }
+ ],
+ "greek_cassandra": [
+  {
+   "sphereId": "prophecy",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aeschylus, Agamemnon 1072-1330"
+    }
+   ]
+  }
+ ],
+ "greek_apollod_telephus": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Epitome 3.17-20"
+    }
+   ]
+  },
+  {
+   "sphereId": "city-founding",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Pergamon, Telephus frieze of the Great Altar"
+    }
+   ]
+  }
+ ],
+ "greek_castor": [
+  {
+   "sphereId": "horsemanship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 33 to the Dioscuri"
+    }
+   ]
+  },
+  {
+   "sphereId": "protector-of-sailors",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 33 to the Dioscuri"
+    }
+   ]
+  }
+ ],
+ "greek_cyrene_lapith": [
+  {
+   "sphereId": "hunting",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Pythian 9"
+    }
+   ]
+  },
+  {
+   "sphereId": "city-founding",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Pythian 9"
+    }
+   ]
+  }
+ ],
+ "greek_deimos": [
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 934-936"
+    }
+   ]
+  }
+ ],
+ "greek_arcas": [
+  {
+   "sphereId": "hunting",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 8.4.1"
+    }
+   ]
+  }
+ ],
+ "greek_epaphus": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 2.1.4"
+    }
+   ]
+  }
+ ],
+ "greek_coronis": [
+  {
+   "sphereId": "catasterism-as-corvus",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hyginus, Astronomica 2.40 (Corvus)"
+    }
+   ]
+  }
+ ],
+ "greek_erechtheus": [
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Erechtheus (the Eleusinian war); Apollodorus 3.15.4"
+    }
+   ]
+  },
+  {
+   "sphereId": "earthquakes",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias 1.26.5 (cult of Poseidon Erechtheus)"
+    }
+   ]
+  }
+ ],
+ "greek_europa": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 3.1.1 (mother of the Cretan kings)"
+    }
+   ]
+  }
+ ],
+ "greek_eumelus": [
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 2.711-715 (leader of the Pherae contingent)"
+    }
+   ]
+  }
+ ],
+ "greek_harmonia": [
+  {
+   "sphereId": "marriage-sovereignty",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 933-937; Diodorus Siculus 5.48-49"
+    }
+   ]
+  }
+ ],
+ "greek_helen": [
+  {
+   "sphereId": "beauty",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 3.156-160"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_clio": [
+  {
+   "sphereId": "epic-poetry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 77-79"
+    }
+   ]
+  }
+ ],
+ "greek_eumolpus": [
+  {
+   "sphereId": "mystery-cult",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn to Demeter 473-482 (Demeter instructs Eumolpus in the rites)"
+    }
+   ]
+  }
+ ],
+ "hindu_abhimanyu": [
+  {
+   "sphereId": "archery-and-celestial-weapons",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Drona Parva (Abhimanyu, son of Arjuna, master archer)"
+    }
+   ]
+  }
+ ],
+ "hindu_babhruvahana": [
+  {
+   "sphereId": "kingship-of-manipura",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Ashvamedhika Parva 79-81 (Babhruvahana, king of Manipura)"
+    }
+   ]
+  }
+ ],
+ "guarani_kurupi": [
+  {
+   "sphereId": "abduction-and-unwanted-pregnancy",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Narciso R. Colmán (Rosicrán), Ñande Ypy Kuéra (1929); Dionisio González Torres, Folklore del Paraguay"
     }
    ]
   }
@@ -373825,6 +376249,214 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
+ "estonian_uku": [
+  {
+   "original": "Taevataat",
+   "rom": "Taevataat",
+   "gloss": "Sky Old-Man / Sky Father",
+   "language": "Estonian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Loorits, Grundzüge des estnischen Volksglaubens (1949)"
+    }
+   ]
+  }
+ ],
+ "estonian_tharapita": [
+  {
+   "original": "Taara",
+   "rom": "Taara",
+   "gloss": "the high god (romantic-era form)",
+   "language": "Estonian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Sutrop, 'Taarapita - the Great God of the Oeselians' (2002)"
+    }
+   ]
+  },
+  {
+   "original": "Tarapita",
+   "rom": "Tarapita",
+   "gloss": "'Taara, help!' (chronicle interpretation)",
+   "language": "Latin",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Henry of Livonia, Chronicon Livoniae XXX.5"
+    }
+   ]
+  }
+ ],
+ "etruscan_tinia": [
+  {
+   "original": "𐌕𐌉𐌍𐌉𐌀 𐌂𐌀𐌋𐌖𐌔𐌍𐌀",
+   "rom": "Tinia Calusna",
+   "gloss": "Tinia of the underworld (chthonic aspect)",
+   "language": "Etruscan",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+    }
+   ]
+  }
+ ],
+ "etruscan_fufluns": [
+  {
+   "original": "𐌐𐌀𐌗𐌉𐌄𐌔",
+   "rom": "Pachies",
+   "gloss": "Bacchic (from Greek Bakchios)",
+   "language": "Etruscan",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Vulci inscriptions on Attic pottery, 5th-4th c. BCE"
+    }
+   ]
+  }
+ ],
+ "etruscan_turan": [
+  {
+   "original": "𐌕𐌖𐌓𐌀𐌍 𐌀𐌕𐌉",
+   "rom": "Turan ati",
+   "gloss": "Mother Turan",
+   "language": "Etruscan",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Votive inscription, sanctuary of Gravisca"
+    }
+   ]
+  }
+ ],
+ "etruscan_selvans": [
+  {
+   "original": "𐌕𐌖𐌋𐌀𐌓𐌉𐌀𐌔",
+   "rom": "tularias",
+   "gloss": "of the boundaries",
+   "language": "Etruscan",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Etruscan votive dedication to Selvans"
+    }
+   ]
+  }
+ ],
+ "ewe_mawu": [
+  {
+   "original": "Mawu-Lisa",
+   "rom": "Mawu-Lisa",
+   "gloss": "the conjoined moon-and-sun creator",
+   "language": "Gbe",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  }
+ ],
+ "ewe_sakpata": [
+  {
+   "original": "Anyigbato",
+   "rom": "Anyigbato",
+   "gloss": "Owner/Lord of the Earth",
+   "language": "Ewe",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Parrinder, West African Religion (1961)"
+    }
+   ]
+  }
+ ],
+ "ewe_legba": [
+  {
+   "original": "Aflakete",
+   "rom": "Aflakete",
+   "gloss": "trickster by-name ('I have tricked you')",
+   "language": "Gbe",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998)"
+    }
+   ]
+  }
+ ],
+ "ewe_so": [
+  {
+   "original": "Heviesso",
+   "rom": "Heviesso",
+   "gloss": "Anlo name of the thunder-vodu",
+   "language": "Ewe",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998)"
+    }
+   ]
+  }
+ ],
+ "ewe_da": [
+  {
+   "original": "Aido-Hwedo",
+   "rom": "Aido-Hwedo",
+   "gloss": "the cosmic rainbow-serpent that upholds the world",
+   "language": "Fon",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  }
+ ],
+ "ewuare_great": [
+  {
+   "original": "Ewuare",
+   "rom": "Ewuare",
+   "gloss": "'the trouble/anger has ceased' (regnal name)",
+   "language": "Edo",
+   "contextTag": "royal",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Egharevba, A Short History of Benin (1968)"
+    }
+   ]
+  }
+ ],
+ "fang_mebege": [
+  {
+   "original": "Zame ye Mebege",
+   "rom": "Zame ye Mebege",
+   "gloss": "Zame, son of Mebege (firstborn of the creator)",
+   "language": "Fang",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Fernandez, Bwiti (1982)"
+    }
+   ]
+  }
+ ],
  "fang_nzame": [
   {
    "original": "Mebere",
@@ -373881,6 +376513,36 @@ const EPITHET_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Wikipedia, 'Ratumaibulu'"
+    }
+   ]
+  }
+ ],
+ "fijian_nacirikaumoli": [
+  {
+   "original": "Cirinakaumoli",
+   "rom": "Cirinakaumoli",
+   "gloss": "variant orthography of the elder twin's name",
+   "language": "Fijian",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Fiji Times, 'How tribal war started in Fiji'"
+    }
+   ]
+  }
+ ],
+ "finnish_aino": [
+  {
+   "original": "Vellamon neiti",
+   "rom": "Vellamon neiti",
+   "gloss": "'maiden of Vellamo' — what she becomes among the water-spirits",
+   "language": "Finnish",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kalevala (Lönnrot), Runo 5"
     }
    ]
   }
@@ -374042,6 +376704,21 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
+ "fon_fa": [
+  {
+   "original": "Du",
+   "rom": "Du",
+   "gloss": "the 'sign / destiny' (Fon term for the Yoruba odù) read in Fa",
+   "language": "Fon",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Smithsonian, 'An Introduction to Fa Divination of Benin'"
+    }
+   ]
+  }
+ ],
  "fon_dan": [
   {
    "original": "Dangbe",
@@ -374167,6 +376844,550 @@ const EPITHET_SWEEP = {
     {
      "kind": "primary",
      "reference": "Ovid, Metamorphoses 6.146-312"
+    }
+   ]
+  }
+ ],
+ "greek_asclepius": [
+  {
+   "original": "Σωτήρ",
+   "rom": "Soter",
+   "gloss": "Saviour",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cult inscriptions of the Asclepieia"
+    }
+   ]
+  },
+  {
+   "original": "Παιών",
+   "rom": "Paion",
+   "gloss": "Healer / the Physician",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aristophanes, Plutus 633ff."
+    }
+   ]
+  },
+  {
+   "original": "Ἀσκληπιὸς Ἐπιδώτης",
+   "rom": "Epidotes",
+   "gloss": "the Bountiful / Giver of good",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 2.27.6"
+    }
+   ]
+  }
+ ],
+ "greek_eileithyia": [
+  {
+   "original": "Λυσίζωνος",
+   "rom": "Lysizonos",
+   "gloss": "Loosener of the girdle",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Theoi Project s.v. Eileithyia"
+    }
+   ]
+  },
+  {
+   "original": "Λουκίνα",
+   "rom": "Lucina",
+   "gloss": "She who brings to light (Roman name)",
+   "language": "Latin",
+   "contextTag": "interpretatio",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Ovid, Fasti 2.449-452; 3.255"
+    }
+   ]
+  },
+  {
+   "original": "Εἰλείθυια Ἀμνισία",
+   "rom": "Amnisia",
+   "gloss": "of Amnisos (her Cretan cave-sanctuary)",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Odyssey 19.188; Linear B Am-ni-so e-re-u-ti-ja"
+    }
+   ]
+  }
+ ],
+ "greek_cassandra": [
+  {
+   "original": "Ἀλεξάνδρα",
+   "rom": "Alexandra",
+   "gloss": "Defender of men (her cult-name in Laconia)",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 3.19.6 (Amyclae); 3.26.5 (Leuctra)"
+    }
+   ]
+  }
+ ],
+ "greek_aristaeus": [
+  {
+   "original": "Ἀρισταῖος Νόμιος",
+   "rom": "Nomios",
+   "gloss": "the Pastoral / Shepherd",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Diodorus Siculus 4.81.1-3"
+    }
+   ]
+  },
+  {
+   "original": "Ἀρισταῖος Ἀγρεύς",
+   "rom": "Agreus",
+   "gloss": "the Hunter",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Diodorus Siculus 4.81.1-3"
+    }
+   ]
+  }
+ ],
+ "greek_castor": [
+  {
+   "original": "Ἄνακες",
+   "rom": "Anakes",
+   "gloss": "the Lords (joint title of the Dioscuri)",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 1.18.1 (Anakeion)"
+    }
+   ]
+  },
+  {
+   "original": "Τυνδαρίδαι",
+   "rom": "Tyndaridai",
+   "gloss": "Sons of Tyndareus",
+   "language": "Greek",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 33; Alcman fr. 2"
+    }
+   ]
+  }
+ ],
+ "greek_apollod_telephus": [
+  {
+   "original": "Τήλεφος",
+   "rom": "Telephos",
+   "gloss": "'far-shining' / the deer-suckled (telos + elaphos)",
+   "language": "Greek",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Etymological wordplay in Apollodorus 2.7.4 (suckled by a deer)"
+    }
+   ]
+  }
+ ],
+ "greek_dardanus": [
+  {
+   "original": "Δάρδανος",
+   "rom": "Dardanos",
+   "gloss": "eponym of the Dardanians and Dardania",
+   "language": "Greek",
+   "contextTag": "genealogical",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 20.215-218"
+    }
+   ]
+  }
+ ],
+ "greek_bellerophon": [
+  {
+   "original": "Βελλεροφόντης",
+   "rom": "Bellerophontes",
+   "gloss": "slayer of Belleros (or 'bane-slayer')",
+   "language": "Greek",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 6.155-202"
+    }
+   ]
+  }
+ ],
+ "greek_clytemnestra": [
+  {
+   "original": "Κλυταιμνήστρα",
+   "rom": "Klytaimnestra",
+   "gloss": "famed for scheming / famously wooed",
+   "language": "Greek",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aeschylus, Agamemnon"
+    }
+   ]
+  }
+ ],
+ "greek_europa": [
+  {
+   "original": "Ἑλλωτίς",
+   "rom": "Hellotis",
+   "gloss": "the cult-title of Europa at the Hellotia of Gortyn/Corinth",
+   "language": "grc",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Athenaeus 15.678a-b; Etymologicum Magnum s.v. Hellotia"
+    }
+   ]
+  }
+ ],
+ "greek_ganymede": [
+  {
+   "original": "κάλλιστος",
+   "rom": "kallistos",
+   "gloss": "most beautiful (of mortal men)",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 20.232-235"
+    }
+   ]
+  }
+ ],
+ "greek_hector": [
+  {
+   "original": "χαλκοκορυστής",
+   "rom": "chalkokorystes",
+   "gloss": "clad/helmeted in bronze",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 5.699 and passim"
+    }
+   ]
+  },
+  {
+   "original": "ἀνδροφόνος",
+   "rom": "androphonos",
+   "gloss": "man-slaying",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 1.242, 9.351"
+    }
+   ]
+  }
+ ],
+ "greek_helen": [
+  {
+   "original": "Διὸς θυγάτηρ",
+   "rom": "Dios thygater",
+   "gloss": "daughter of Zeus",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 3.426; Odyssey 4.227"
+    }
+   ]
+  },
+  {
+   "original": "καλλίκομος",
+   "rom": "kallikomos",
+   "gloss": "lovely-haired",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 3.329"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_atlas": [
+  {
+   "original": "ὀλοόφρων",
+   "rom": "oloophron",
+   "gloss": "of baleful/crafty mind",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Odyssey 1.52"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_calliope": [
+  {
+   "original": "προφερεστάτη",
+   "rom": "propherestate",
+   "gloss": "foremost (of the Muses)",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 79"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_eos": [
+  {
+   "original": "Ἠριγένεια",
+   "rom": "Erigeneia",
+   "gloss": "early-born, child of the morning",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Odyssey 2.1; Hesiod, Theogony 381"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_hestia": [
+  {
+   "original": "πρεσβυτάτη",
+   "rom": "presbytate",
+   "gloss": "eldest (of the children of Cronus)",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 454; Homeric Hymn 5 to Aphrodite 22"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_cronus": [
+  {
+   "original": "ὕψιστος",
+   "rom": "hypsistos",
+   "gloss": "highest (Kronos in his Golden-Age sovereignty)",
+   "language": "grc",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Works and Days 111-120 (the golden race under Cronus)"
+    }
+   ]
+  }
+ ],
+ "hindu_abhimanyu": [
+  {
+   "original": "सौभद्र",
+   "rom": "Saubhadra",
+   "gloss": "son of Subhadra",
+   "language": "Sanskrit",
+   "contextTag": "matronymic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Drona Parva"
+    }
+   ]
+  },
+  {
+   "original": "अर्जुनात्मज",
+   "rom": "Arjunatmaja",
+   "gloss": "son of Arjuna",
+   "language": "Sanskrit",
+   "contextTag": "patronymic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Drona Parva"
+    }
+   ]
+  }
+ ],
+ "hindu_angada": [
+  {
+   "original": "वालिपुत्र",
+   "rom": "Valiputra",
+   "gloss": "son of Vali",
+   "language": "Sanskrit",
+   "contextTag": "patronymic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Kishkindha Kanda"
+    }
+   ]
+  },
+  {
+   "original": "युवराज",
+   "rom": "Yuvaraja",
+   "gloss": "crown prince (of Kishkindha)",
+   "language": "Sanskrit",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Kishkindha Kanda"
+    }
+   ]
+  }
+ ],
+ "hindu_aruna": [
+  {
+   "original": "अनूरु",
+   "rom": "Anuru",
+   "gloss": "the thighless one (born prematurely, without thighs)",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva (the Astika/Garuda cycle)"
+    }
+   ]
+  },
+  {
+   "original": "सूर्यसारथि",
+   "rom": "Surya-sarathi",
+   "gloss": "charioteer of the Sun",
+   "language": "Sanskrit",
+   "contextTag": "function",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Puranic and solar-temple iconography; Stella Kramrisch, The Hindu Temple (1946)"
+    }
+   ]
+  }
+ ],
+ "hindu_aditi": [
+  {
+   "original": "देवमातृ",
+   "rom": "Devamatr",
+   "gloss": "mother of the gods",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda (passim); the mother of the Adityas"
+    }
+   ]
+  },
+  {
+   "original": "अदिति",
+   "rom": "Aditi",
+   "gloss": "the unbound, boundless, infinite",
+   "language": "Sanskrit",
+   "contextTag": "name-meaning",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda 1.89.10 and passim"
+    }
+   ]
+  }
+ ],
+ "hindu_balarama": [
+  {
+   "original": "हलायुध",
+   "rom": "Halayudha",
+   "gloss": "he whose weapon is the plough",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Bhagavata Purana 10; Vishnu Purana 5"
+    }
+   ]
+  },
+  {
+   "original": "संकर्षण",
+   "rom": "Sankarshana",
+   "gloss": "the drawer-together (transferred from Devaki's womb to Rohini)",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Bhagavata Purana 10.2"
+    }
+   ]
+  }
+ ],
+ "hindu_bharata_ramayana": [
+  {
+   "original": "कैकेयीसुत",
+   "rom": "Kaikeyisuta",
+   "gloss": "son of Kaikeyi",
+   "language": "Sanskrit",
+   "contextTag": "matronymic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Ayodhya Kanda"
+    }
+   ]
+  }
+ ],
+ "hattic_kasku": [
+  {
+   "original": "Kab",
+   "rom": "Kab",
+   "gloss": "alternative reading of the Hattian moon-god's name",
+   "language": "Hattic",
+   "contextTag": "variant-name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Daniel Schwemer's proposed alternate reading, noted in scholarship on the Hattic moon-god"
     }
    ]
   }
@@ -376133,6 +379354,205 @@ const CULT_SWEEP = {
    ]
   }
  ],
+ "estonian_tharapita": [
+  {
+   "name": "Pre-battle invocation of Tharapita",
+   "term": {
+    "value": "Tarapita",
+    "script": "Latn",
+    "rom": "Tarapita"
+   },
+   "type": "invocation",
+   "cadence": "before war",
+   "notes": "The Oeselians and Vironians cried out to Tharapita before battle, as recorded for the campaigns of 1217 and 1227 in the Chronicle of Henry of Livonia; his cult-place was the wooded Ebavere hill in Vironia.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Henry of Livonia, Chronicon Livoniae XXX.5"
+    }
+   ]
+  }
+ ],
+ "estonian_maaema": [
+  {
+   "name": "Midsummer offering to the Earth Mother",
+   "term": {
+    "value": "Maa-ema",
+    "script": "Latn",
+    "rom": "Maa-ema"
+   },
+   "type": "offering",
+   "cadence": "midsummer / harvest",
+   "notes": "Mothers carried food-offerings to sacrificial stones at Midsummer, saying 'Maaema, you gave it to me and now I bring it to you'; offerings were also laid under boundary stones to secure soil fertility.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Loorits, Grundzüge des estnischen Volksglaubens (1949)"
+    }
+   ]
+  }
+ ],
+ "estonian_pikker": [
+  {
+   "name": "Animal sacrifice to Pikne",
+   "term": {
+    "value": "Pikne",
+    "script": "Latn",
+    "rom": "Pikne"
+   },
+   "type": "sacrifice",
+   "cadence": "occasional",
+   "notes": "Medieval pagan priests offered animal sacrifices to the thunder-god; Pikne was held protector of the holy river Võhandu and withheld rain from those who dammed it for mills.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Eisen, Eesti mütoloogia (1919)"
+    }
+   ]
+  }
+ ],
+ "etruscan_fufluns": [
+  {
+   "name": "Mystery-cult of Fufluns Pacha",
+   "term": {
+    "value": "Pachies",
+    "script": "Ital",
+    "rom": "Pachies"
+   },
+   "type": "mystery",
+   "cadence": "initiatory",
+   "notes": "An ecstatic mystery-cult at Vulci and Populonia, with maenadic and satyric celebrants, promising initiates rebirth; attested by Bacchic acclamations (paχies) inscribed on imported Attic vases.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Vulci inscriptions on Attic pottery, 5th-4th c. BCE"
+    }
+   ]
+  }
+ ],
+ "etruscan_uni": [
+  {
+   "name": "Cult of Uni-Astarte at Pyrgi",
+   "term": {
+    "value": "𐌖𐌍𐌉",
+    "script": "Ital",
+    "rom": "Uni"
+   },
+   "type": "temple",
+   "cadence": "civic",
+   "notes": "A 6th-c. BCE sanctuary at Pyrgi, the port of Caere, dedicated to Uni and identified bilingually with Phoenician Astarte; the dedication of Thefarie Velianas is preserved on the gold Pyrgi tablets.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pyrgi Tablets, c. 500 BCE"
+    }
+   ]
+  }
+ ],
+ "etruscan_thesan": [
+  {
+   "name": "Dawn-cult at Pyrgi",
+   "type": "temple",
+   "cadence": "civic",
+   "notes": "Worshipped at Caere's harbour of Pyrgi, where a temple yielded a distinctive series of 'daybreak' antefixes; she received offerings alongside the sun-god Usil in the Liber Linteus.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Liber Linteus Zagrabiensis"
+    }
+   ]
+  }
+ ],
+ "etruscan_selvans": [
+  {
+   "name": "Votive cult of Selvans",
+   "type": "offering",
+   "cadence": "occasional",
+   "notes": "A public cult, especially of the tuthina of Volsinii, attested from the 5th c. BCE by votive bronze statuettes and objects inscribed to Selvans, set up by women as well as men.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Etruscan votive inscriptions to Selvans"
+    }
+   ]
+  }
+ ],
+ "ewe_so": [
+  {
+   "name": "Yeve thunder-cult",
+   "term": {
+    "value": "Yeve",
+    "script": "Latn",
+    "rom": "Yeve"
+   },
+   "type": "initiation",
+   "cadence": "initiatory",
+   "notes": "The secretive Yeve (Yewe) order of the thunder-vodu among the Anlo-Ewe, with possession-dance, drumming and a long seclusion-initiation; its devotees serve as a ritual enforcer of social and moral order.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998)"
+    }
+   ]
+  }
+ ],
+ "ewe_afa": [
+  {
+   "name": "Afa divination",
+   "term": {
+    "value": "Afa",
+    "script": "Latn",
+    "rom": "Afa"
+   },
+   "type": "divination",
+   "cadence": "on demand",
+   "notes": "Casting the sixteen palm-kernels (deki) or the divining chain (agumaga) to read one of the 256 signs (du / kpoli), revealing the destiny set by Mawu and the taboos binding the initiate's life.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maupoil, La géomancie à l'ancienne Côte des Esclaves (1943)"
+    }
+   ]
+  }
+ ],
+ "ewe_sakpata": [
+  {
+   "name": "Earth-and-pox cult of Sakpata",
+   "term": {
+    "value": "Sakpata",
+    "script": "Latn",
+    "rom": "Sakpata"
+   },
+   "type": "initiation",
+   "cadence": "initiatory",
+   "notes": "A powerful priesthood owning the earth and smallpox, its initiates clothed in raffia hood and skirt; bound by strict taboos to send or withdraw the eruptive fevers from the unappeased or appeased.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+    }
+   ]
+  }
+ ],
+ "ewuare_great": [
+  {
+   "name": "Igue festival",
+   "term": {
+    "value": "Igue",
+    "script": "Latn",
+    "rom": "Igue"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Instituted by Ewuare to renew the Oba's mystical powers and bless his head and the kingdom; the king dances with the Eben sword in full coral regalia. The associated Ugie Ewere re-enacts his marriage to Ewere.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Egharevba, A Short History of Benin (1968)"
+    }
+   ]
+  }
+ ],
  "fijian_dakuwaqa": [
   {
    "name": "Pouring of yaqona to the shark-god",
@@ -376317,6 +379737,25 @@ const CULT_SWEEP = {
    ]
   }
  ],
+ "fon_fa": [
+  {
+   "name": "Fa divination with the sixteen palm-nuts",
+   "term": {
+    "value": "Fa",
+    "script": "Latn",
+    "rom": "Fa"
+   },
+   "type": "offering",
+   "cadence": "consulted at need by the bokɔnɔ",
+   "notes": "The Fa diviner (bokɔnɔ) casts the sixteen sacred palm-nuts (fadékwín), marking the resulting figure on a board dusted with irosun powder; each configuration is a du sign answering to a body of orally-transmitted verses that disclose a person's destiny. Fa was introduced into Dahomey under King Agaja in the early 18th century from Yoruba (Nago) sources.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maupoil, La géomancie à l'ancienne Côte des Esclaves (1943); Smithsonian, 'An Introduction to Fa Divination of Benin'"
+    }
+   ]
+  }
+ ],
  "ga_ataa_naa_nyongmo": [
   {
    "name": "Homowo libations to the supreme being",
@@ -376487,6 +379926,510 @@ const CULT_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Strabo, Geography 6.3.9; Lycophron, Alexandra 1047-1055"
+    }
+   ]
+  }
+ ],
+ "greek_asclepius": [
+  {
+   "name": "Incubation healing at the Asclepieia",
+   "term": {
+    "value": "Ἀσκληπιεῖον",
+    "script": "Grek",
+    "rom": "Asklepieion"
+   },
+   "type": "temple",
+   "cadence": "continual",
+   "notes": "Pilgrims purified, sacrificed (often a cock), and slept in the abaton to be cured by the god in a dream; Epidaurus was the mother-sanctuary of some two hundred Asclepieia. Votive body-part models and the iamata stelai attest the cures.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 2.27; Epidaurus iamata"
+    }
+   ]
+  },
+  {
+   "name": "The Epidauria at Athens",
+   "term": {
+    "value": "Ἐπιδαύρια",
+    "script": "Grek",
+    "rom": "Epidauria"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Festival within the Eleusinian Mysteries commemorating the god's arrival in Athens (420 BCE) when Sophocles received the sacred snake; the cult travelled from Epidaurus to the south slope of the Acropolis.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Plutarch, Life of Numa; IG II2 4960 (Telemachos monument)"
+    }
+   ]
+  }
+ ],
+ "greek_eileithyia": [
+  {
+   "name": "Cave-cult of Eileithyia at Amnisos",
+   "term": {
+    "value": "Εἰλείθυια Ἀμνισία",
+    "script": "Grek",
+    "rom": "Eileithyia Amnisia"
+   },
+   "type": "shrine",
+   "cadence": "continual",
+   "notes": "Her oldest sanctuary, the cave near Amnisos in Crete, received offerings from Minoan times into the Roman period; she is named already on Linear B tablets. Shrines also at Athens, Tegea, Argos and Aigion.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Odyssey 19.188; Pausanias 1.18.5"
+    }
+   ]
+  }
+ ],
+ "greek_apollod_theseus": [
+  {
+   "name": "The Theseia",
+   "term": {
+    "value": "Θησεῖα",
+    "script": "Grek",
+    "rom": "Theseia"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Instituted after Cimon brought the hero's bones from Skyros (c. 475 BCE) and built the Theseion; celebrated on the eighth of Pyanepsion with procession, sacrifice, a torch-race and athletic and martial contests.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Plutarch, Life of Theseus 35-36; Life of Cimon 8"
+    }
+   ]
+  }
+ ],
+ "greek_deimos": [
+  {
+   "name": "Joint cult of Phobos and Deimos at Sparta",
+   "term": {
+    "value": "Φόβος",
+    "script": "Grek",
+    "rom": "Phobos"
+   },
+   "type": "sacrifice",
+   "cadence": "occasional (in war)",
+   "notes": "The Spartans honoured Fear and Dread as guarantors of military discipline; warriors swore oaths and sacrificed to them before battle (the bull slaughtered over the black shield in Seven Against Thebes).",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Plutarch, Life of Cleomenes 9; Aeschylus, Seven Against Thebes 42-48"
+    }
+   ]
+  }
+ ],
+ "greek_castor": [
+  {
+   "name": "The Anakeia (cult of the Dioscuri)",
+   "term": {
+    "value": "Ἀνάκεια",
+    "script": "Grek",
+    "rom": "Anakeia"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "At Sparta the twins were venerated at Therapne with the aniconic dokana (twin beams) carried into battle beside the kings; at Athens at the Anakeion. They received both burnt sacrifice as gods and libations as the dead.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias 3.20.1 (Therapne); 1.18.1 (Anakeion)"
+    }
+   ]
+  }
+ ],
+ "greek_cassandra": [
+  {
+   "name": "Cult of Alexandra-Cassandra in Laconia",
+   "term": {
+    "value": "Ἀλεξάνδρα",
+    "script": "Grek",
+    "rom": "Alexandra"
+   },
+   "type": "shrine",
+   "cadence": "continual",
+   "notes": "Worshipped as a heroine under the name Alexandra: a sanctuary and statue with that of Agamemnon at Amyclae, and a temple with cult-statue at Leuctra in Laconia.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 3.19.6; 3.26.5"
+    }
+   ]
+  }
+ ],
+ "greek_aristaeus": [
+  {
+   "name": "Cult of Aristaeus on Ceos",
+   "term": {
+    "value": "Ἀρισταῖος",
+    "script": "Grek",
+    "rom": "Aristaios"
+   },
+   "type": "sacrifice",
+   "cadence": "seasonal",
+   "notes": "On Ceos he was credited with ending a deadly drought by raising an altar to Zeus Ikmaios and summoning the cooling Etesian winds; honoured as patron of beekeeping, herding and olive-culture in Boeotia, Thessaly, Ceos, Sardinia and Cyrene.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Diodorus Siculus 4.82; Apollonius, Argonautica 2.498-527"
+    }
+   ]
+  }
+ ],
+ "greek_apollod_telephus": [
+  {
+   "name": "Hero-cult of Telephus at Pergamon",
+   "term": {
+    "value": "Τήλεφος",
+    "script": "Grek",
+    "rom": "Telephos"
+   },
+   "type": "veneration",
+   "cadence": "continual",
+   "notes": "Founder-hero and dynastic ancestor of the Attalids, whose genealogy the Telephus frieze of the Great Altar traced from his birth to his healing; he was suckled by a she-lion.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Pergamon, Telephus frieze of the Great Altar (Berlin)"
+    }
+   ]
+  }
+ ],
+ "greek_cyrene_lapith": [
+  {
+   "name": "Cult of Cyrene at the Libyan colony",
+   "term": {
+    "value": "Κυρήνη",
+    "script": "Grek",
+    "rom": "Kyrene"
+   },
+   "type": "veneration",
+   "cadence": "continual",
+   "notes": "Eponymous nymph and tutelary heroine of the polis of Cyrene, where the Delphic oracle directed the founder Battus; her abduction by Apollo founds the city in Pindar's ode.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Pythian 9; Herodotus 4.150-159"
+    }
+   ]
+  }
+ ],
+ "greek_arcas": [
+  {
+   "name": "Hero-cult and tomb of Arcas at Mantineia",
+   "term": {
+    "value": "Ἀρκάς",
+    "script": "Grek",
+    "rom": "Arkas"
+   },
+   "type": "veneration",
+   "cadence": "continual",
+   "notes": "On the Delphic oracle's command his bones were translated from Mount Maenalus and re-buried beside the altar of Hera at Mantineia, where his grave was shown.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 8.9.3-4"
+    }
+   ]
+  }
+ ],
+ "greek_erechtheus": [
+  {
+   "name": "Joint cult of Poseidon Erechtheus on the Acropolis",
+   "term": {
+    "value": "Ποσειδῶν Ἐρεχθεύς",
+    "script": "Grc",
+    "rom": "Poseidon Erechtheus"
+   },
+   "type": "temple",
+   "cadence": "continuous",
+   "notes": "Worshipped in the Erechtheion beside Athena Polias, with the priest of Poseidon Erechtheus among the chief Athenian priesthoods; the salt 'sea' (thalassa) and trident-marks in the rock belonged to his sanctuary.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias 1.26.5; Herodotus 8.55"
+    }
+   ]
+  }
+ ],
+ "greek_europa": [
+  {
+   "name": "Hellotia festival at Gortyn",
+   "term": {
+    "value": "Ἑλλώτια",
+    "script": "Grc",
+    "rom": "Hellotia"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "The Cretans of Gortyn honoured Europa as Hellotis with the Hellotia, in which an enormous myrtle wreath was carried in procession, said to contain the bones of Europa; the rite had an initiatory aspect for young men.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Athenaeus 15.678a-b; Etymologicum Magnum s.v. Hellotia"
+    }
+   ]
+  }
+ ],
+ "greek_eumolpus": [
+  {
+   "name": "Eleusinian Mysteries as founding hierophant",
+   "term": {
+    "value": "Ἐλευσίνια μυστήρια",
+    "script": "Grc",
+    "rom": "Eleusinia mysteria"
+   },
+   "type": "mystery",
+   "cadence": "annual",
+   "notes": "Reckoned the first hierophant and eponymous ancestor of the Eumolpidae, the hereditary clan that supplied the hierophant of the Eleusinian Mysteries for a millennium; his tomb stood at Eleusis.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn to Demeter 473-482; Pausanias 1.38.2-3"
+    }
+   ]
+  }
+ ],
+ "greek_helen": [
+  {
+   "name": "Cult of Helen at the Platanistas and the Menelaion",
+   "term": {
+    "value": "Ἑλένη",
+    "script": "Grc",
+    "rom": "Helene"
+   },
+   "type": "temple",
+   "cadence": "annual",
+   "notes": "Worshipped as a goddess at Sparta: at the urban Platanistas (the plane-grove) where girls sang her epithalamia, and shared a shrine with Menelaus and the Dioscuri at the Menelaion at Therapne. On Rhodes she was Helen Dendritis, hung from a tree by Polyxo's pretended Furies.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Theocritus, Idyll 18; Pausanias 3.19.9-10, 3.15.3"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_cronus": [
+  {
+   "name": "Kronia harvest festival at Athens",
+   "term": {
+    "value": "Κρόνια",
+    "script": "Grc",
+    "rom": "Kronia"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Held on Hekatombaion 12 to mark the first harvest; masters and slaves feasted together in a remembrance of the egalitarian Golden Age under Cronus's rule. A precinct of Cronus and Rhea stood at Athens.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Demosthenes 24.26 (scholia); Plutarch, Theseus 12; Pausanias 1.18.7"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_helios": [
+  {
+   "name": "Halieia of Rhodes with the chariot-into-sea sacrifice",
+   "term": {
+    "value": "Ἁλίεια",
+    "script": "Grc",
+    "rom": "Halieia"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "On Rhodes, where Helios was patron and the Colossus stood, the Halieia featured athletic, equestrian and musical contests and the annual drowning of a four-horse chariot in the sea as an image of the sinking sun.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Olympian 7.54-76; Festus, De verborum significatu s.v. October equus (comparandum)"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_hephaestus": [
+  {
+   "name": "Chalkeia of the Athenian smiths",
+   "term": {
+    "value": "Χαλκεῖα",
+    "script": "Grc",
+    "rom": "Chalkeia"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "On the last day of Pyanepsion, craftsmen and especially bronze-smiths processed in honour of Hephaestus together with Athena Ergane; the Hephaisteia at Athens and the quadrennial torch-race festival on Lemnos were his other principal rites.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Harpocration and Suda s.v. Chalkeia; Pausanias 1.30.2"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_hermes": [
+  {
+   "name": "Worship at herms and the gymnasium Hermaia",
+   "term": {
+    "value": "Ἕρμαια",
+    "script": "Grc",
+    "rom": "Hermaia"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Honoured at the herms (square pillars with his head and phallus) set at crossroads, doorways and boundaries with libations of wine and honey; the Hermaia in the gymnasia celebrated him as patron of youths and athletes, with hierarchies temporarily inverted.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Thucydides 6.27 (the herms of Athens); Pausanias 6.26.2"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_hades": [
+  {
+   "name": "Annual opening of the temple of Hades at Elis",
+   "term": {
+    "value": "Ἅιδης",
+    "script": "Grc",
+    "rom": "Haides"
+   },
+   "type": "temple",
+   "cadence": "annual",
+   "notes": "Pausanias reports that the Eleans alone worshipped Hades, opening his sacred enclosure once each year, when only the priest might enter; elsewhere he received black victims in nocturnal chthonic rites.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias 6.25.2-3"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_boreas": [
+  {
+   "name": "Boreas cult on the Ilissus and the Thurian thank-offering",
+   "term": {
+    "value": "Βορέας",
+    "script": "Grc",
+    "rom": "Boreas"
+   },
+   "type": "sacrifice",
+   "cadence": "annual",
+   "notes": "After his storm wrecked the Persian fleet off Sepias, the Athenians built him a sanctuary on the Ilissus; the Thurians sacrificed to him yearly as Euergetes ('Benefactor') for destroying the fleet of Dionysius. Destructive winds received black victims.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Herodotus 7.189; Aelian, Varia Historia 12.61"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_calliope": [
+  {
+   "name": "Cult of the Muses on Helicon (Mouseia at Thespiae)",
+   "term": {
+    "value": "Μουσεῖα",
+    "script": "Grc",
+    "rom": "Mouseia"
+   },
+   "type": "festival",
+   "cadence": "quadrennial",
+   "notes": "The Muses, born in Pieria, were worshipped chiefly in the grove of the Helicon above Thespiae, where the Thespians held the quadrennial Mouseia with musical and poetic contests by the Hippocrene spring.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 1-8; Pausanias 9.29-31"
+    }
+   ]
+  }
+ ],
+ "guarani_tupa": [
+  {
+   "name": "Invocation of Tupã in the storm",
+   "term": {
+    "value": "Tupã",
+    "script": "Latn",
+    "rom": "Tupã"
+   },
+   "type": "invocation",
+   "cadence": "at thunderstorms",
+   "notes": "As the divine father of thunder, lightning and rain, Tupã is named in the rolling of the storm; the colonial missions later appropriated the name Tupã to render the Christian God, but in Mbyá cosmology he is the youngest of the four divine fathers, the thunder-and-water power.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "León Cadogan, Ayvu Rapyta (1959)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Branislava Susnik, studies of Guarani religion"
+    }
+   ]
+  }
+ ],
+ "herero_ndjambi": [
+  {
+   "name": "Thanksgiving invocation of Ndjambi after deliverance",
+   "term": {
+    "value": "Ndjambi Karunga",
+    "script": "Latn",
+    "rom": "Ndjambi Karunga"
+   },
+   "type": "invocation",
+   "cadence": "occasional; in thanksgiving or extremity",
+   "notes": "Ndjambi receives no organized cult: his name (held in reverence and not lightly uttered) is invoked in thanksgiving after unexpected good fortune, or in prayer when all other help has failed; the one who dies a natural death is said to be 'taken away by Ndjambi'.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Encyclopedia of African supreme beings; H. Vedder / Luttig on Herero religion"
+    }
+   ]
+  }
+ ],
+ "hausa_dan_galadima": [
+  {
+   "name": "Bori possession-dance mounting of Dan Galadima",
+   "term": {
+    "value": "Ɗan Galadima",
+    "script": "Latn",
+    "rom": "Dan Galadima"
+   },
+   "type": "possession-rite",
+   "cadence": "at bori performances",
+   "notes": "The playboy-prince spirit is a favourite of the bori possession-cult; called into a mounted devotee with his praise-music, he is associated with sudden gambling-luck and with the maladies of fever and wasting that the cult both diagnoses and treats.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "A. J. N. Tremearne, The Ban of the Bori (1914)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Fremont E. Besmer, Horses, Musicians, and Gods: The Hausa Cult of Possession-Trance (1983)"
+    }
+   ]
+  }
+ ],
+ "hausa_inna": [
+  {
+   "name": "Bori rite of Inna (Bakar Doguwa) with black sacrifice",
+   "term": {
+    "value": "Inna",
+    "script": "Latn",
+    "rom": "Inna"
+   },
+   "type": "possession-rite",
+   "cadence": "at bori healing performances",
+   "notes": "As a senior, dangerous Doguwa spirit who strikes with paralysis, fever and infertility, Inna is treated in the bori cult by initiation and offering; a black chicken or black goat (echoing her name Bakar Doguwa, 'the Black Tall-Woman') is sacrificed to placate her.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "A. J. N. Tremearne, The Ban of the Bori (1914)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Fremont E. Besmer, Horses, Musicians, and Gods (1983)"
     }
    ]
   }
@@ -380589,6 +384532,554 @@ const ICONO_SWEEP = {
    }
   ]
  },
+ "estonian_vanemuine": {
+  "attributes": [
+   {
+    "id": "estonian_vanemuine-grey-beard",
+    "name": "Grey-bearded elder",
+    "notes": "Depicted in romantic-era Estonian art as a grey-bearded old singer, the 'Estonian Orpheus', after the Finnish Väinämöinen.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Viires, 'Pseudomythology in Estonian Publicity' (1991)"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_aita": {
+  "attributes": [
+   {
+    "id": "etruscan_aita-bearded",
+    "name": "Bearded enthroned king in wolf-skin cap",
+    "notes": "Mature bearded figure crowned with a wolf-skin headdress, enthroned beside Phersipnai in the painted tombs.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Orcus II, Tarquinia, wall-paintings"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "etruscan_aita-wolf",
+    "name": "Wolf",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Orcus II, Tarquinia, wall-paintings"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_charun": {
+  "attributes": [
+   {
+    "id": "etruscan_charun-blue-flesh",
+    "name": "Blue-fleshed bestial demon",
+    "notes": "Bluish, decaying skin, hooked vulture's nose, tusks, pointed ears and great wings, brandishing a hammer.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Monterozzi Tomb 5636, Tarquinia, wall-painting"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "etruscan_charun-snake",
+    "name": "Snake",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Monterozzi Tomb 5636, Tarquinia, wall-painting"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_fufluns": {
+  "attributes": [
+   {
+    "id": "etruscan_fufluns-youth",
+    "name": "Beardless youth with satyrs and maenads",
+    "notes": "Usually a beardless young man (rarely an older bearded figure) amid his thiasos of satyrs and maenads.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bonfante & Swaddling, Etruscan Myths (2006)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "etruscan_fufluns-ivy",
+    "name": "Ivy",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bonfante & Swaddling, Etruscan Myths (2006)"
+     }
+    ]
+   },
+   {
+    "id": "etruscan_fufluns-vine",
+    "name": "Grapevine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bonfante & Swaddling, Etruscan Myths (2006)"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_laran": {
+  "attributes": [
+   {
+    "id": "etruscan_laran-naked-warrior",
+    "name": "Naked helmeted youth with spear and shield",
+    "notes": "A youthful warrior, often nude but for helmet and cuirass, gripping spear and shield, as in the Mars of Todi bronze.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mars of Todi bronze, Vatican Museums"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_nethuns": {
+  "attributes": [
+   {
+    "id": "etruscan_nethuns-ketos",
+    "name": "Sea-monster (ketos) headdress with trident",
+    "notes": "On the Vetulonia coin his profile wears a ketos headdress, his trident set between two dolphins.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Coin of Vetulonia, c. 215-211 BCE"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "etruscan_nethuns-dolphin",
+    "name": "Dolphin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Coin of Vetulonia, c. 215-211 BCE"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_persipnei": {
+  "attributes": [
+   {
+    "id": "etruscan_persipnei-snake-hair",
+    "name": "Enthroned queen with snakes in her hair",
+    "notes": "Shown enthroned beside Aita, snakes entwined in her hair, holding a bird-topped scepter.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Golini Tomb I, Orvieto, and Tomb of Orcus II, Tarquinia"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "etruscan_persipnei-snake",
+    "name": "Snake",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Orcus II, Tarquinia, wall-paintings"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_selvans": {
+  "attributes": [
+   {
+    "id": "etruscan_selvans-bearskin-cap",
+    "name": "Naked youth in bear-skin cap and high boots",
+    "notes": "The single certain image shows him as a nude youth wearing a cap of bear-hide and high boots, unlike the Roman Silvanus.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_sethlans": {
+  "attributes": [
+   {
+    "id": "etruscan_sethlans-pileus",
+    "name": "Smith in conical workman's cap (pileus)",
+    "notes": "Identified by hammer, tongs and double axe and by the conical workman's cap (pileus).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Historical Dictionary of the Etruscans, s.v. Sethlans"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_tages": {
+  "attributes": [
+   {
+    "id": "etruscan_tages-child-sage",
+    "name": "Child with the wisdom of a seer",
+    "notes": "A boy's body bearing a sage's wisdom, risen from the furrow; named Tarchies on the Tuscania mirror.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tuscania bronze mirror"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_thesan": {
+  "attributes": [
+   {
+    "id": "etruscan_thesan-winged-nimbed",
+    "name": "Winged, nimbed dawn-goddess in flight",
+    "notes": "Winged and sometimes haloed, shown running or flying as she carries off a youthful lover.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan mirror, Museo Gregoriano Etrusco (Thesan and Kephalos)"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_turan": {
+  "attributes": [
+   {
+    "id": "etruscan_turan-winged-girl",
+    "name": "Young winged girl with her Lasas",
+    "notes": "A youthful winged goddess, in early art richly robed and jewelled, later nude under Hellenistic influence, attended by the winged Lasas.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "etruscan_turan-dove",
+    "name": "Dove",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+     }
+    ]
+   },
+   {
+    "id": "etruscan_turan-swan",
+    "name": "Swan (Tusna, 'the swan of Turan')",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_vanth": {
+  "attributes": [
+   {
+    "id": "etruscan_vanth-winged-boots",
+    "name": "Winged female in hunting-boots with torch",
+    "notes": "A great-winged young woman, often bare-breasted (apotropaic), in hunting-boots, bearing torch, key and scroll and brandishing snakes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "etruscan_vanth-snake",
+    "name": "Snake",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_menrva": {
+  "sacredAnimals": [
+   {
+    "id": "etruscan_menrva-owl",
+    "name": "Owl",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_uni": {
+  "sacredPlants": [
+   {
+    "id": "etruscan_uni-pomegranate",
+    "name": "Pomegranate",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+     }
+    ]
+   }
+  ]
+ },
+ "etruscan_tinia": {
+  "sacredAnimals": [
+   {
+    "id": "etruscan_tinia-eagle",
+    "name": "Eagle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth, Sacred History, and Legend (2006)"
+     }
+    ]
+   }
+  ]
+ },
+ "evenki_mangi": {
+  "attributes": [
+   {
+    "id": "evenki_mangi-half-bear",
+    "name": "Half-man, half-bear hunter",
+    "notes": "The first-ancestor depicted as half man, half bear, pursuing the cosmic elk; in the sky he is figured by Boötes/Arcturus.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Anisimov, in Studies in Siberian Shamanism (1963)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "evenki_mangi-bear",
+    "name": "Bear",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Anisimov, in Studies in Siberian Shamanism (1963)"
+     }
+    ]
+   }
+  ]
+ },
+ "evenki_heglun": {
+  "attributes": [
+   {
+    "id": "evenki_heglun-cosmic-elk",
+    "name": "Antlered cosmic cow-elk",
+    "notes": "The great elk (Kheglun) whose body forms the bowl of Ursa Major, bearing the sun away on her antlers each night, her calf the stars of Ursa Minor.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Antonello, 'The myths of the Bear' (2013)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "evenki_heglun-elk",
+    "name": "Elk / moose",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Antonello, 'The myths of the Bear' (2013)"
+     }
+    ]
+   }
+  ]
+ },
+ "ewe_so": {
+  "attributes": [
+   {
+    "id": "ewe_so-ram",
+    "name": "Ram with lightning from its mouth",
+    "notes": "Manifest as a ram (sometimes painted red), lightning issuing from its mouth, its curved horns likened to the bolt and the clash of rams to thunder; flanked by two curved thunder-axes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "ewe_so-ram-animal",
+    "name": "Ram",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+     }
+    ]
+   }
+  ]
+ },
+ "ewe_legba": {
+  "attributes": [
+   {
+    "id": "ewe_legba-phallic-figure",
+    "name": "Phallic mound-figure painted red, white and black",
+    "notes": "Represented by a clay mound or small figure with a prominent phallus, set at the doorway and crossroads.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "ewe_legba-dog",
+    "name": "Dog",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+     }
+    ]
+   }
+  ]
+ },
+ "ewe_gu": {
+  "attributes": [
+   {
+    "id": "ewe_gu-iron-blade",
+    "name": "Iron blade and forge",
+    "notes": "Manifest in iron itself; his cult-object is an assemblage of iron blades, and his symbol the cutlass.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "ewe_gu-palm-frond",
+    "name": "Palm frond",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Blier, African Vodun: Art, Psychology, and Power (1995)"
+     }
+    ]
+   }
+  ]
+ },
+ "ewe_sakpata": {
+  "attributes": [
+   {
+    "id": "ewe_sakpata-raffia-spotted",
+    "name": "Raffia hood and skirt, red-and-white spots",
+    "notes": "Devotees clothed head to foot in raffia; the god marked by black, white and red spots evoking the pocks of smallpox.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+     }
+    ]
+   }
+  ]
+ },
+ "ewe_da": {
+  "attributes": [
+   {
+    "id": "ewe_da-rainbow-serpent",
+    "name": "Rainbow-coloured serpent biting its tail",
+    "notes": "A great serpent arching as the rainbow and coiled in the sea, often shown biting its own tail, encircling and upholding the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "ewe_da-python",
+    "name": "Python / serpent",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey: An Ancient West African Kingdom (1938)"
+     }
+    ]
+   }
+  ]
+ },
+ "ewuare_great": {
+  "attributes": [
+   {
+    "id": "ewuare_great-coral-king",
+    "name": "Oba in coral-bead regalia",
+    "notes": "Robed in coral crowns, shirts, aprons and necklaces (said to have been taken from Olokun), giving the Oba a god-like appearance.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ben-Amos, The Art of Benin (1995)"
+     }
+    ]
+   }
+  ]
+ },
+ "fallen_star": {
+  "attributes": [
+   {
+    "id": "fallen_star-rapid-growth",
+    "name": "Child who grows to a man in days",
+    "notes": "Born of a Lakota mother who fell from the Star Country, he matures within a few years into a monster-slaying hero.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980)"
+     }
+    ]
+   }
+  ]
+ },
  "fijian_dakuwaqa": {
   "attributes": [
    {
@@ -380677,6 +385168,48 @@ const ICONO_SWEEP = {
      {
       "kind": "primary",
       "reference": "Kalevala (Lönnrot), Runo 1"
+     }
+    ]
+   }
+  ]
+ },
+ "finnish_aino": {
+  "attributes": [
+   {
+    "id": "finnish_aino-gold-ornaments",
+    "name": "gold breast-cross and silver ornaments laid aside at the shore",
+    "notes": "Before drowning she takes off her gold cross, rings, ribbons and silken dress on the lakeside rock — the image fixed in Gallen-Kallela's Aino triptych (1891).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lönnrot), Runo 4"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "finnish_aino-salmon",
+    "name": "salmon (the fish-form she takes)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lönnrot), Runo 5"
+     }
+    ]
+   }
+  ]
+ },
+ "fijian_nacirikaumoli": {
+  "attributes": [
+   {
+    "id": "fijian_nacirikaumoli-twin-stones",
+    "name": "the paired standing-stones of the twins in the Nakauvadra range",
+    "notes": "Two ancient stones in the Rakiraki highlands are pointed out as representing Cirinakaumoli and Nakausabaria of pre-Christian Fiji.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fiji Times / oral tradition of the Nakauvadra twin-stones"
      }
     ]
    }
@@ -381016,6 +385549,878 @@ const ICONO_SWEEP = {
      {
       "kind": "primary",
       "reference": "Apollodorus, Bibliotheca 2.4.3"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_aristaeus": {
+  "attributes": [
+   {
+    "id": "greek_aristaeus-winged-herdsman",
+    "name": "Youthful herdsman, sometimes winged, among his hives and flocks",
+    "notes": "In Boeotian vase-painting he may appear as a winged youth like the Boreads; otherwise a young shepherd-figure associated with bees, the olive and the milking-pail.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Theoi Project s.v. Aristaios"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_aristaeus-bee",
+    "name": "Bee (his emblem as the god who gave men beekeeping)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Virgil, Georgics 4; Diodorus Siculus 4.81"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "greek_aristaeus-olive",
+    "name": "Olive and silphium (the cultivated plants in his gift)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diodorus Siculus 4.81-82"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_asclepius": {
+  "attributes": [
+   {
+    "id": "greek_asclepius-bearded-himation",
+    "name": "Bearded mature man in a himation leaning on the serpent-staff",
+    "notes": "The canonical type: a benign full-bearded figure, chest bare, resting on a knotty staff entwined by a single serpent, sometimes with a dog at his feet.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.27.2; numerous votive reliefs"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_asclepius-snake",
+    "name": "Serpent (the Aesculapian rat-snake that licked wounds in the abaton)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias, Description of Greece 2.28.1"
+     }
+    ]
+   },
+   {
+    "id": "greek_asclepius-dog",
+    "name": "Dog (the sacred dogs of Epidaurus that healed by licking)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Epidaurus iamata stelai"
+     }
+    ]
+   },
+   {
+    "id": "greek_asclepius-cock",
+    "name": "Cock (the customary offering to Asclepius)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Plato, Phaedo 118a"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_eileithyia": {
+  "attributes": [
+   {
+    "id": "greek_eileithyia-torch-raised-hand",
+    "name": "Veiled woman with a raised torch or with both arms lifted",
+    "notes": "Shown bringing the child 'to the light': either holding torches (with Artemis and Persephone) or with arms thrown up in the gesture of delivery.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Theoi Project s.v. Eileithyia, citing votive reliefs"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_apollod_theseus": {
+  "attributes": [
+   {
+    "id": "greek_apollod_theseus-beardless-club",
+    "name": "Beardless youthful athlete with club or sword over the fallen Minotaur",
+    "notes": "In Attic vase-painting the type-scene shows the young hero dragging or striking the bull-headed Minotaur; he wears a short chiton and carries a sword or the club won from Periphetes.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Attic black- and red-figure Minotauromachy vases; Pausanias 1.17.2-3"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_apollod_theseus-bull",
+    "name": "Bull (the Marathonian/Cretan bull and the Minotaur he mastered)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Plutarch, Life of Theseus 14, 19"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_deimos": {
+  "attributes": [
+   {
+    "id": "greek_deimos-shield-blazon",
+    "name": "Fearsome face blazoned on the warrior's shield",
+    "notes": "With Phobos, Deimos was engraved around the Gorgon-head on the shields of heroes (Agamemnon's in Iliad 11; the Shield of Heracles).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad 11.36-37; [Hesiod], Shield of Heracles 144-160"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_castor": {
+  "attributes": [
+   {
+    "id": "greek_castor-pilos-cap",
+    "name": "Egg-shaped pilos cap surmounted by a star",
+    "notes": "The Dioscuri wear the conical felt cap (from the egg of their birth) crowned with a star, and carry spears.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC III s.v. Dioskouroi"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_castor-horse",
+    "name": "Horse (Castor's mount Cyllarus; the twins as the great horsemen)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn 33; Pausanias 5.19.8"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_apollod_telephus": {
+  "sacredAnimals": [
+   {
+    "id": "greek_apollod_telephus-lioness",
+    "name": "Lioness (the she-lion that suckled the exposed infant)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Pergamon, Telephus frieze of the Great Altar"
+     }
+    ]
+   },
+   {
+    "id": "greek_apollod_telephus-deer",
+    "name": "Hind/deer (the doe that nursed him, source of his name)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 2.7.4"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_cyrene_lapith": {
+  "attributes": [
+   {
+    "id": "greek_cyrene_lapith-lion-wrestler",
+    "name": "Huntress wrestling or strangling a lion",
+    "notes": "Pindar's 'lion-slaying' maiden; the motif of Cyrene throttling the lion (with Libya crowning her) appears in Cyrenean coinage and reliefs.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pindar, Pythian 9.26-28"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_cyrene_lapith-lion",
+    "name": "Lion (the beast she overpowered bare-handed)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pindar, Pythian 9"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_callisto": {
+  "sacredAnimals": [
+   {
+    "id": "greek_callisto-bear",
+    "name": "Bear (her transformed shape and the constellation Ursa Major)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 2.401-507"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_coronis": {
+  "sacredAnimals": [
+   {
+    "id": "greek_coronis-crow",
+    "name": "Crow/raven (whose feathers Apollo scorched black; the constellation Corvus)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 2.542-632"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_cycnus_poseidon": {
+  "sacredAnimals": [
+   {
+    "id": "greek_cycnus_poseidon-swan",
+    "name": "Swan (his metamorphosis and eponym)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 12.143-145"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_ceyx": {
+  "sacredAnimals": [
+   {
+    "id": "greek_ceyx-halcyon",
+    "name": "Halcyon / kingfisher (the bird he and Alcyone became)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.731-748"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_epaphus": {
+  "sacredAnimals": [
+   {
+    "id": "greek_epaphus-apis-bull",
+    "name": "Bull (identified by the Greeks with the Egyptian Apis bull)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herodotus, Histories 2.153; 3.27-28"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_bellerophon": {
+  "sacredAnimals": [
+   {
+    "id": "greek_bellerophon-pegasus",
+    "name": "Pegasus (the winged horse he tamed and rode)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pindar, Olympian 13.63-92"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_calais": {
+  "attributes": [
+   {
+    "id": "greek_calais-wings",
+    "name": "Winged youth with dusky, gold-scaled wings at shoulders and ankles",
+    "notes": "The Boread twins are shown as winged runners; over their tombs on Tenos the pillars were said to sway when the north wind blew.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius, Argonautica 1.219-223; 2.273-300"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_europa": {
+  "attributes": [
+   {
+    "id": "greek_europa-on-bull",
+    "name": "Maiden riding the bull over the sea",
+    "notes": "The dominant image, fixed on Cretan (especially Gortynian) coinage: Europa seated side-saddle on the swimming bull, her veil or mantle billowing in an arc above her.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Moschus, Europa; Gortynian coinage 5th c. BCE - 2nd c. CE"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_europa-eagle",
+    "name": "Eagle (Zeus in the plane-tree)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gortynian silver staters showing Europa in the plane-tree with the eagle"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "greek_europa-plane",
+    "name": "Plane tree of Gortyn (evergreen, sacred to the union)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Theophrastus, Historia Plantarum 1.9.5; Pliny, Natural History 12.11"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_ganymede": {
+  "attributes": [
+   {
+    "id": "greek_ganymede-cup-jug",
+    "name": "Wine-cup and jug of the cupbearer",
+    "notes": "Shown as a beautiful youth, often in a Phrygian cap, holding the cup and oinochoe with which he serves the gods; the abduction scene shows the eagle bearing him aloft.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn to Aphrodite 202-217; Attic vase iconography"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_ganymede-eagle",
+    "name": "Eagle of Zeus (his abductor; constellation Aquila)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Virgil, Aeneid 5.252-257; Ovid, Metamorphoses 10.155-161"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_harmonia": {
+  "attributes": [
+   {
+    "id": "greek_harmonia-necklace-icon",
+    "name": "The necklace and robe of Harmonia",
+    "notes": "Recognized by Hephaestus's golden necklace wrought as two intertwined serpents, and by the woven peplos given at her wedding; both objects cursed to ruin the house of Cadmus.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Diodorus Siculus 4.65.5"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_harmonia-serpent",
+    "name": "Serpent (she and Cadmus transformed into snakes in old age)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 4.563-603; Euripides, Bacchae 1330-1339"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hector": {
+  "attributes": [
+   {
+    "id": "greek_hector-plume",
+    "name": "Bronze helmet with nodding horsehair crest",
+    "notes": "His signature image, the flashing crested helm of korythaiolos Hektor, whose nodding plume frightens the infant Astyanax at the Scaean Gate in Iliad 6.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad 6.466-473"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hecuba": {
+  "sacredAnimals": [
+   {
+    "id": "greek_hecuba-dog",
+    "name": "Dog (her metamorphosis; the Cynossema landmark)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Hecuba 1265-1273; Ovid, Metamorphoses 13.565-575"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_helen": {
+  "attributes": [
+   {
+    "id": "greek_helen-egg",
+    "name": "The egg of Leda from which she was born",
+    "notes": "Her Spartan birth-token: she hatched from an egg laid by Leda after Zeus's visitation as a swan; the egg was shown hanging in the temple of the Leukippides at Sparta.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Helen 16-21, 257-259; Pausanias 3.16.1"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "greek_helen-plane",
+    "name": "Plane tree (the Platanistas grove; 'Helen's tree' on Rhodes)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Theocritus, Idyll 18.43-48; Pausanias 3.19.10"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_eos": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_eos-saffron",
+    "name": "Saffron robe and rosy fingers in a winged figure",
+    "notes": "Depicted as a winged goddess in a saffron mantle (krokopeplos), rosy-fingered, rising from Ocean to open heaven's gates before the chariot of the Sun.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad 8.1; Odyssey 2.1; Hesiod, Theogony 372-374"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_helios": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_helios-radiate",
+    "name": "Radiate crown and the all-seeing eye",
+    "notes": "Crowned with a wreath of sun-rays, driving a four-horse chariot across the sky; the god 'who sees all and hears all', invoked as witness of oaths.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn 31 to Helios 9-16; Homer, Iliad 3.277"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_hesiod_helios-white-horses",
+    "name": "White horses of the solar chariot",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pindar, Olympian 7.71; Ovid, Metamorphoses 2.153-155"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_hecate": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_hecate-triple",
+    "name": "Triple-bodied form at the crossroads (hekataion)",
+    "notes": "From the late 5th c. BCE (Alcamenes' Hekate Epipyrgidia on the Athenian Acropolis) shown three-formed about a central pillar, holding paired torches, and often keys, daggers or serpents.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.30.2"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_hesiod_hecate-dog",
+    "name": "Dog (her howling hounds; sacrificial victim)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Apollonius Rhodius, Argonautica 3.1211-1217; Theocritus, Idyll 2.12-13, 35-36"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_hecate-polecat",
+    "name": "Polecat/weasel (Galinthias transformed into her servant)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Antoninus Liberalis, Metamorphoses 29"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_hera": {
+  "sacredAnimals": [
+   {
+    "id": "greek_hesiod_hera-peacock",
+    "name": "Peacock (its tail bearing the eyes of Argos)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ovid, Metamorphoses 1.720-723"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_hera-cow",
+    "name": "Cow (her archaic bovine aspect; boopis, 'cow-eyed')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad 1.551 and passim (boopis potnia Here)"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_hera-cuckoo",
+    "name": "Cuckoo (Zeus's seductive disguise; perched on her sceptre)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.17.4; 2.36.1-2"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "greek_hesiod_hera-pomegranate",
+    "name": "Pomegranate (emblem of marriage and fecundity, held in her cult-statue)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.17.4"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_hermes": {
+  "sacredAnimals": [
+   {
+    "id": "greek_hesiod_hermes-tortoise",
+    "name": "Tortoise (from whose shell he made the first lyre)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn 4 to Hermes 24-54"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_hermes-ram",
+    "name": "Ram (Kriophoros, the ram-bearer who saved Tanagra from plague)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 9.22.1"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_hephaestus": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_hephaestus-pilos",
+    "name": "Craftsman's cap (pilos), hammer and tongs",
+    "notes": "Shown as a bearded smith in the conical workman's cap and short chiton, hammer and tongs in hand, often lame-footed at his forge.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad 18.369-379, 410-417"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_hesiod_hephaestus-donkey",
+    "name": "Donkey (his mount in the return-to-Olympus procession)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Attic vase iconography of the Return of Hephaestus; cf. Pausanias 1.20.3"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_cronus": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_cronus-sickle",
+    "name": "Jagged sickle (harpe) and veiled head",
+    "notes": "Identified by the adamantine harpe with which he castrated Uranus, a tool also read as the sickle of the harvest; often shown with a veiled or covered head.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 162-182"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_atlas": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_atlas-sky",
+    "name": "Bearing the vault of heaven on neck and hands",
+    "notes": "Standing at the western edge of the world, straining to hold the broad sky apart from earth; the celestial globe is later substituted for the sky in Hellenistic and Roman art.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 517-520, 746-748"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_demeter": {
+  "sacredAnimals": [
+   {
+    "id": "greek_hesiod_demeter-pig",
+    "name": "Pig (sacrificed at the Thesmophoria; emblem of fertility)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scholia to Lucian, Dialogues of the Courtesans 2.1 (the Thesmophoria megara)"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_demeter-serpent",
+    "name": "Serpent (drawing her chariot; chthonic regeneration)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn to Demeter; Ovid, Metamorphoses 5.642-647"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "greek_hesiod_demeter-poppy",
+    "name": "Poppy and grain (the gephyra of cereal and the sleep-poppy)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Theocritus, Idyll 7.155-157; Callimachus, Hymn 6 to Demeter"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_demeter-mint",
+    "name": "Mint (minthe, used in the kykeon of Eleusis)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn to Demeter 208-209; Ovid, Metamorphoses 10.728-731"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_hestia": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_hestia-veil",
+    "name": "Veiled, fully-draped seated goddess by the hearth",
+    "notes": "Shown as a modestly veiled woman, never nude, seated or standing in long robes, sometimes holding a flowering branch; her aniconic presence is the hearth-fire itself.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Athenian vase iconography; cf. Homeric Hymn 29 to Hestia"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_eumolpus": {
+  "attributes": [
+   {
+    "id": "greek_eumolpus-hierophant-robe",
+    "name": "Hierophant's sceptre and ceremonial robe",
+    "notes": "Imagined in the dress of the hierophant whose role he founded: long sacral robe, fillet, and sceptre, his 'fair voice' chanting the sacred formulae of the Mysteries.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tradition of the Eumolpidae; cf. Pausanias 1.38.3"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_aruna": {
+  "attributes": [
+   {
+    "id": "hindu_aruna-reddish-form",
+    "name": "Reddish, dawn-coloured body",
+    "notes": "Personified red glow of dawn; depicted ruddy-hued, the herald of Surya who tempers the sun's first rays.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Puranic solar iconography; Stella Kramrisch, The Hindu Temple (1946)"
+     }
+    ]
+   },
+   {
+    "id": "hindu_aruna-charioteer-pose",
+    "name": "Seated as charioteer before Surya",
+    "notes": "Shown crouched at the front of the chariot driving the seven horses of the Sun, as on the Konark and Modhera sun-temples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Archaeological Survey of India, Konark sun-temple"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_balarama": {
+  "attributes": [
+   {
+    "id": "hindu_balarama-fair-complexion",
+    "name": "Fair (white) complexion",
+    "notes": "Iconographically pale-skinned, contrasting the dark Krishna; said to be born of a white hair of Vishnu, and worshipped at Puri as the white-faced Balabhadra.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhagavata Purana 10.2; Vishnu Purana 5"
+     }
+    ]
+   },
+   {
+    "id": "hindu_balarama-serpent-canopy",
+    "name": "Multi-hooded serpent (Shesha) above or behind him",
+    "notes": "As an incarnation of the cosmic serpent Shesha/Ananta, he is often shown with a snake-hood canopy.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vishnu Purana 5.9; standard Vaishnava iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hattic_wurunkatte": {
+  "attributes": [
+   {
+    "id": "hattic_wurunkatte-on-lion",
+    "name": "Standing upon the back of a lion",
+    "notes": "The Hattic-Hittite war-god is depicted standing on a lion (the lion being his pedestal-animal), holding shield and mace.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Volkert Haas, Geschichte der hethitischen Religion (1994)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hattic_wurunkatte-lion",
+    "name": "Lion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Volkert Haas, Geschichte der hethitischen Religion (1994); the lion-pedestal of the war-god"
+     }
+    ]
+   }
+  ]
+ },
+ "guarani_namandu": {
+  "attributes": [
+   {
+    "id": "guarani_namandu-jeguaka-flowers",
+    "name": "Feathered flower-crown (jeguaka) jewelled with dew-flowers",
+    "notes": "The First Father takes form crowned with the sacred feathered headdress, its flowers shining like drops of dew, emblem of his divinity and of masculine adornment.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "guarani_namandu-hummingbird",
+    "name": "Hummingbird (Maino'i)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959): the primeval hummingbird Maino'i feeds and refreshes the First Father as he creates"
+     }
+    ]
+   }
+  ]
+ },
+ "guarani_kurupi": {
+  "attributes": [
+   {
+    "id": "guarani_kurupi-prehensile-phallus",
+    "name": "Enormous prehensile penis coiled about the waist",
+    "notes": "Defining attribute of the squat, hairy, copper-skinned wild-man: an oversized prehensile phallus wound several times around his body, the instrument of his forest-fertility and of the abductions and pregnancies blamed on him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929); Dionisio González Torres, Folklore del Paraguay"
      }
     ]
    }

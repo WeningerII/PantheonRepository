@@ -50,7 +50,7 @@
       {"id":"greek_europa-wreath","name":"Garland of woven flowers","classId":"regalia","kind":"regalia","sources":[{"kind":"primary","reference":"Moschus, Europa 63-71"}]}
     ],
     "greek_ganymede": [
-      {"id":"greek_ganymede-rooster","name":"Cockerel (lover's gift)","classId":"attribute","kind":"attribute","sources":[{"kind":"secondary","reference":"Attic vase iconography; cf. Pindar, Olympian 1.43-45"}]}
+      {"id":"greek_ganymede-rooster","name":"Cockerel (lover's gift)","classId":"divine-attribute","kind":"attribute","sources":[{"kind":"secondary","reference":"Attic vase iconography; cf. Pindar, Olympian 1.43-45"}]}
     ],
     "greek_harmonia": [
       {"id":"greek_harmonia-robe","name":"Cursed robe (peplos) of Harmonia","classId":"regalia","kind":"regalia","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 3.4.2; Diodorus Siculus 4.65.5"}]}
@@ -63,22 +63,22 @@
     ],
     "greek_hesiod_helios": [
       {"id":"greek_hesiod_helios-crown","name":"Radiate solar crown","classId":"regalia","kind":"regalia","sources":[{"kind":"primary","reference":"Homeric Hymn 31 to Helios 9-15; Rhodian coinage"}]},
-      {"id":"greek_hesiod_helios-cattle","name":"The sacred cattle of the Sun","classId":"livestock","kind":"livestock","sources":[{"kind":"primary","reference":"Homer, Odyssey 12.127-141, 260-419"}]}
+      {"id":"greek_hesiod_helios-cattle","name":"The sacred cattle of the Sun","classId":"animal","kind":"animal","sources":[{"kind":"primary","reference":"Homer, Odyssey 12.127-141, 260-419"}]}
     ],
     "greek_hesiod_hera": [
       {"id":"greek_hesiod_hera-diadem","name":"Polos / stephane crown of the queen","classId":"regalia","kind":"regalia","sources":[{"kind":"primary","reference":"Pausanias 2.17.4 (Polyclitus's chryselephantine Hera at the Argive Heraion)"}]}
     ],
     "greek_hesiod_hestia": [
-      {"id":"greek_hesiod_hestia-hearth","name":"The sacred hearth and undying fire","classId":"installation","kind":"installation","sources":[{"kind":"primary","reference":"Homeric Hymn 24 to Hestia; Homeric Hymn 29 to Hestia 1-6"}]}
+      {"id":"greek_hesiod_hestia-hearth","name":"The sacred hearth and undying fire","classId":"sacred-fire","kind":"sacred-fire","sources":[{"kind":"primary","reference":"Homeric Hymn 24 to Hestia; Homeric Hymn 29 to Hestia 1-6"}]}
     ],
     "greek_hesiod_calliope": [
-      {"id":"greek_hesiod_calliope-tablet","name":"Writing tablet and stylus","classId":"attribute","kind":"attribute","sources":[{"kind":"secondary","reference":"Roman-era Muse iconography; cf. Hesiod, Theogony 79-80"}]}
+      {"id":"greek_hesiod_calliope-tablet","name":"Writing tablet and stylus","classId":"divine-attribute","kind":"attribute","sources":[{"kind":"secondary","reference":"Roman-era Muse iconography; cf. Hesiod, Theogony 79-80"}]}
     ]
   },
   "domains": {
     "greek_erechtheus": [
       {"sphereId":"war","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Euripides, Erechtheus (the Eleusinian war); Apollodorus 3.15.4"}]},
-      {"sphereId":"earthquake","contextTag":"posthumous","sources":[{"kind":"primary","reference":"Pausanias 1.26.5 (cult of Poseidon Erechtheus)"}]}
+      {"sphereId":"earthquakes","contextTag":"posthumous","sources":[{"kind":"primary","reference":"Pausanias 1.26.5 (cult of Poseidon Erechtheus)"}]}
     ],
     "greek_europa": [
       {"sphereId":"kingship","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 3.1.1 (mother of the Cretan kings)"}]}

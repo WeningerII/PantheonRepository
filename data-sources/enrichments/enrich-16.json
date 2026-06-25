@@ -18,8 +18,8 @@
     "greek_castor": [
       {"id":"greek_castor-protect-at-sea","name":"Save sailors from storm as a saviour of ships","notes":"With Pollux the Dioscuri appear in tempest as the twin lights (St Elmo's fire) on the masthead and calm the sea for mariners.","inheritability":"none","sources":[{"kind":"primary","reference":"Homeric Hymn 33 to the Dioscuri"}],"ability":true}
     ],
-    "greek_telephus": [
-      {"id":"greek_telephus-wound-and-heal","name":"Be wounded and healed by the same Achillean spear","notes":"Speared by Achilles at the Mysian landing, his unhealing wound could be cured only by the rust of the spear that made it ('the wounder heals'), the price of guiding the Greeks to Troy.","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 3.17-20"}],"ability":true}
+    "greek_apollod_telephus": [
+      {"id":"greek_apollod_telephus-wound-and-heal","name":"Be wounded and healed by the same Achillean spear","notes":"Speared by Achilles at the Mysian landing, his unhealing wound could be cured only by the rust of the spear that made it ('the wounder heals'), the price of guiding the Greeks to Troy.","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 3.17-20"}],"ability":true}
     ],
     "greek_atreus": [
       {"id":"greek_atreus-claim-by-portent","name":"Claim the throne of Mycenae by the portent of the golden lamb","notes":"The golden lamb in his flock marked the rightful king; though Aerope stole it for Thyestes, Zeus reversed the sun's course to vindicate Atreus's title.","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 2.10-12"}],"ability":true},
@@ -42,9 +42,21 @@
     ],
     "greek_chione_boread": [
       {"id":"greek_chione_boread-bear-eumolpus","name":"Bear Eumolpus to Poseidon and be saved by the sea","notes":"The snow-nymph daughter of Boreas bore Eumolpus to Poseidon and, to hide her shame, cast him into the sea, where his father received and reared him.","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 3.15.4"}],"ability":true}
+    ],
+    "greek_chrysippus": [
+      {"id":"greek_chrysippus-abduction-curse","name":"Occasion the curse of the Theban house by his abduction","notes":"Carried off (and violated) by the exiled Laius, whom Pelops was teaching to drive a chariot; Pelops' curse on Laius for the rape sets in motion the doom of Oedipus and Thebes.","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 3.5.5; Euripides, Chrysippus (frr.)"}],"ability":true}
+    ],
+    "greek_deiphobus": [
+      {"id":"greek_deiphobus-bravest-after-hector","name":"Fight as the bravest Trojan prince after Hector","notes":"Athena took his likeness to lure Hector to his death; he wed Helen after Paris fell and was killed and mutilated by Menelaus at the sack.","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Iliad 22.226-247; Virgil, Aeneid 6.494-534"}],"ability":true}
+    ],
+    "greek_astyanax": [
+      {"id":"greek_astyanax-doomed-heir","name":"Embody the extinguished heir of Troy","notes":"The infant 'lord of the city' (Scamandrius to his father), thrown from the walls at the sack so no scion of Priam's house should survive to avenge it.","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 5.23; Euripides, Trojan Women 709-739"}],"ability":true}
     ]
   },
   "materialCulture": {
+    "greek_aristaeus": [
+      {"id":"greek_aristaeus-beehive","name":"The beehive and the ox-born bees (bugonia)","classId":"implement","kind":"implement","notes":"Inventor of apiculture; in the Georgics his lost bees are regenerated from the carcass of a sacrificed ox (bugonia), the ritual remedy taught by Proteus and Cyrene.","sources":[{"kind":"primary","reference":"Virgil, Georgics 4.281-558"}]}
+    ],
     "greek_asclepius": [
       {"id":"greek_asclepius-serpent-staff","name":"The serpent-entwined staff (Rod of Asclepius)","classId":"attribute","kind":"staff","sources":[{"kind":"primary","reference":"Pausanias, Description of Greece 2.27.2"}]},
       {"id":"greek_asclepius-omphalos-throne","name":"The chryselephantine cult-statue enthroned with staff and dog at Epidaurus","classId":"cult-statue","kind":"sculpture","sources":[{"kind":"primary","reference":"Pausanias, Description of Greece 2.27.2 (statue by Thrasymedes)"}]}
@@ -52,8 +64,8 @@
     "greek_eileithyia": [
       {"id":"greek_eileithyia-torches","name":"Twin torches of childbirth (light brought to the newborn)","classId":"attribute","kind":"attribute","sources":[{"kind":"secondary","reference":"Theoi Project s.v. Eileithyia, citing votive reliefs"}]}
     ],
-    "greek_telephus": [
-      {"id":"greek_telephus-achilles-spear-rust","name":"The rust-cure of the Achillean spear (telephus' remedy)","classId":"substance","kind":"substance","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 3.20"}]}
+    "greek_apollod_telephus": [
+      {"id":"greek_apollod_telephus-achilles-spear-rust","name":"The rust-cure of the Achillean spear (telephus' remedy)","classId":"substance","kind":"substance","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 3.20"}]}
     ],
     "greek_castor": [
       {"id":"greek_castor-pilos-star","name":"The pilos cap crowned with a star","classId":"attribute","kind":"attribute","sources":[{"kind":"secondary","reference":"LIMC III s.v. Dioskouroi"}]}
@@ -68,7 +80,7 @@
   "domains": {
     "greek_asclepius": [
       {"sphereId":"medicine-and-healing","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Pindar, Pythian 3"}]},
-      {"sphereId":"resurrection","contextTag":"mythic","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 3.10.3-4"}]},
+      {"sphereId":"resurrection-power","contextTag":"mythic","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 3.10.3-4"}]},
       {"sphereId":"prophecy","contextTag":"cult","sources":[{"kind":"primary","reference":"Epidaurus iamata stelai (oracular dream-cures)"}]}
     ],
     "greek_eileithyia": [
@@ -78,13 +90,13 @@
     "greek_cassandra": [
       {"sphereId":"prophecy","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Aeschylus, Agamemnon 1072-1330"}]}
     ],
-    "greek_telephus": [
+    "greek_apollod_telephus": [
       {"sphereId":"kingship","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 3.17-20"}]},
       {"sphereId":"city-founding","contextTag":"posthumous","sources":[{"kind":"secondary","reference":"Pergamon, Telephus frieze of the Great Altar"}]}
     ],
     "greek_castor": [
       {"sphereId":"horsemanship","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Homeric Hymn 33 to the Dioscuri"}]},
-      {"sphereId":"protection-of-sailors","contextTag":"cult","sources":[{"kind":"primary","reference":"Homeric Hymn 33 to the Dioscuri"}]}
+      {"sphereId":"protector-of-sailors","contextTag":"cult","sources":[{"kind":"primary","reference":"Homeric Hymn 33 to the Dioscuri"}]}
     ],
     "greek_cyrene_lapith": [
       {"sphereId":"hunting","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Pindar, Pythian 9"}]},
@@ -100,7 +112,7 @@
       {"sphereId":"kingship","contextTag":"lifelong","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 2.1.4"}]}
     ],
     "greek_coronis": [
-      {"sphereId":"catasterism","contextTag":"posthumous","sources":[{"kind":"secondary","reference":"Hyginus, Astronomica 2.40 (Corvus)"}]}
+      {"sphereId":"catasterism-as-corvus","contextTag":"posthumous","sources":[{"kind":"secondary","reference":"Hyginus, Astronomica 2.40 (Corvus)"}]}
     ]
   },
   "epithets": {
@@ -125,7 +137,7 @@
       {"original":"Ἄνακες","rom":"Anakes","gloss":"the Lords (joint title of the Dioscuri)","language":"Greek","contextTag":"cult","sources":[{"kind":"primary","reference":"Pausanias, Description of Greece 1.18.1 (Anakeion)"}]},
       {"original":"Τυνδαρίδαι","rom":"Tyndaridai","gloss":"Sons of Tyndareus","language":"Greek","contextTag":"epithet","sources":[{"kind":"primary","reference":"Homeric Hymn 33; Alcman fr. 2"}]}
     ],
-    "greek_telephus": [
+    "greek_apollod_telephus": [
       {"original":"Τήλεφος","rom":"Telephos","gloss":"'far-shining' / the deer-suckled (telos + elaphos)","language":"Greek","contextTag":"name","sources":[{"kind":"secondary","reference":"Etymological wordplay in Apollodorus 2.7.4 (suckled by a deer)"}]}
     ],
     "greek_dardanus": [
@@ -146,7 +158,7 @@
     "greek_eileithyia": [
       {"name":"Cave-cult of Eileithyia at Amnisos","term":{"value":"Εἰλείθυια Ἀμνισία","script":"Grek","rom":"Eileithyia Amnisia"},"type":"shrine","cadence":"continual","notes":"Her oldest sanctuary, the cave near Amnisos in Crete, received offerings from Minoan times into the Roman period; she is named already on Linear B tablets. Shrines also at Athens, Tegea, Argos and Aigion.","sources":[{"kind":"primary","reference":"Homer, Odyssey 19.188; Pausanias 1.18.5"}]}
     ],
-    "greek_theseus": [
+    "greek_apollod_theseus": [
       {"name":"The Theseia","term":{"value":"Θησεῖα","script":"Grek","rom":"Theseia"},"type":"festival","cadence":"annual","notes":"Instituted after Cimon brought the hero's bones from Skyros (c. 475 BCE) and built the Theseion; celebrated on the eighth of Pyanepsion with procession, sacrifice, a torch-race and athletic and martial contests.","sources":[{"kind":"primary","reference":"Plutarch, Life of Theseus 35-36; Life of Cimon 8"}]}
     ],
     "greek_deimos": [
@@ -161,7 +173,7 @@
     "greek_aristaeus": [
       {"name":"Cult of Aristaeus on Ceos","term":{"value":"Ἀρισταῖος","script":"Grek","rom":"Aristaios"},"type":"sacrifice","cadence":"seasonal","notes":"On Ceos he was credited with ending a deadly drought by raising an altar to Zeus Ikmaios and summoning the cooling Etesian winds; honoured as patron of beekeeping, herding and olive-culture in Boeotia, Thessaly, Ceos, Sardinia and Cyrene.","sources":[{"kind":"primary","reference":"Diodorus Siculus 4.82; Apollonius, Argonautica 2.498-527"}]}
     ],
-    "greek_telephus": [
+    "greek_apollod_telephus": [
       {"name":"Hero-cult of Telephus at Pergamon","term":{"value":"Τήλεφος","script":"Grek","rom":"Telephos"},"type":"veneration","cadence":"continual","notes":"Founder-hero and dynastic ancestor of the Attalids, whose genealogy the Telephus frieze of the Great Altar traced from his birth to his healing; he was suckled by a she-lion.","sources":[{"kind":"secondary","reference":"Pergamon, Telephus frieze of the Great Altar (Berlin)"}]}
     ],
     "greek_cyrene_lapith": [
@@ -172,6 +184,17 @@
     ]
   },
   "iconography": {
+    "greek_aristaeus": {
+      "attributes": [
+        {"id":"greek_aristaeus-winged-herdsman","name":"Youthful herdsman, sometimes winged, among his hives and flocks","notes":"In Boeotian vase-painting he may appear as a winged youth like the Boreads; otherwise a young shepherd-figure associated with bees, the olive and the milking-pail.","sources":[{"kind":"secondary","reference":"Theoi Project s.v. Aristaios"}]}
+      ],
+      "sacredAnimals": [
+        {"id":"greek_aristaeus-bee","name":"Bee (his emblem as the god who gave men beekeeping)","sources":[{"kind":"primary","reference":"Virgil, Georgics 4; Diodorus Siculus 4.81"}]}
+      ],
+      "sacredPlants": [
+        {"id":"greek_aristaeus-olive","name":"Olive and silphium (the cultivated plants in his gift)","sources":[{"kind":"primary","reference":"Diodorus Siculus 4.81-82"}]}
+      ]
+    },
     "greek_asclepius": {
       "attributes": [
         {"id":"greek_asclepius-bearded-himation","name":"Bearded mature man in a himation leaning on the serpent-staff","notes":"The canonical type: a benign full-bearded figure, chest bare, resting on a knotty staff entwined by a single serpent, sometimes with a dog at his feet.","sources":[{"kind":"primary","reference":"Pausanias 2.27.2; numerous votive reliefs"}]}
@@ -187,6 +210,14 @@
         {"id":"greek_eileithyia-torch-raised-hand","name":"Veiled woman with a raised torch or with both arms lifted","notes":"Shown bringing the child 'to the light': either holding torches (with Artemis and Persephone) or with arms thrown up in the gesture of delivery.","sources":[{"kind":"secondary","reference":"Theoi Project s.v. Eileithyia, citing votive reliefs"}]}
       ]
     },
+    "greek_apollod_theseus": {
+      "attributes": [
+        {"id":"greek_apollod_theseus-beardless-club","name":"Beardless youthful athlete with club or sword over the fallen Minotaur","notes":"In Attic vase-painting the type-scene shows the young hero dragging or striking the bull-headed Minotaur; he wears a short chiton and carries a sword or the club won from Periphetes.","sources":[{"kind":"primary","reference":"Attic black- and red-figure Minotauromachy vases; Pausanias 1.17.2-3"}]}
+      ],
+      "sacredAnimals": [
+        {"id":"greek_apollod_theseus-bull","name":"Bull (the Marathonian/Cretan bull and the Minotaur he mastered)","sources":[{"kind":"primary","reference":"Plutarch, Life of Theseus 14, 19"}]}
+      ]
+    },
     "greek_deimos": {
       "attributes": [
         {"id":"greek_deimos-shield-blazon","name":"Fearsome face blazoned on the warrior's shield","notes":"With Phobos, Deimos was engraved around the Gorgon-head on the shields of heroes (Agamemnon's in Iliad 11; the Shield of Heracles).","sources":[{"kind":"primary","reference":"Homer, Iliad 11.36-37; [Hesiod], Shield of Heracles 144-160"}]}
@@ -200,10 +231,10 @@
         {"id":"greek_castor-horse","name":"Horse (Castor's mount Cyllarus; the twins as the great horsemen)","sources":[{"kind":"primary","reference":"Homeric Hymn 33; Pausanias 5.19.8"}]}
       ]
     },
-    "greek_telephus": {
+    "greek_apollod_telephus": {
       "sacredAnimals": [
-        {"id":"greek_telephus-lioness","name":"Lioness (the she-lion that suckled the exposed infant)","sources":[{"kind":"secondary","reference":"Pergamon, Telephus frieze of the Great Altar"}]},
-        {"id":"greek_telephus-deer","name":"Hind/deer (the doe that nursed him, source of his name)","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 2.7.4"}]}
+        {"id":"greek_apollod_telephus-lioness","name":"Lioness (the she-lion that suckled the exposed infant)","sources":[{"kind":"secondary","reference":"Pergamon, Telephus frieze of the Great Altar"}]},
+        {"id":"greek_apollod_telephus-deer","name":"Hind/deer (the doe that nursed him, source of his name)","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 2.7.4"}]}
       ]
     },
     "greek_cyrene_lapith": {
