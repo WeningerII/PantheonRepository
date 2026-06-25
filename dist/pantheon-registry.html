@@ -6958,15 +6958,6 @@ const buildPeopleSeed = () => {
       sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Hes. Theog. 921-922, 950-955' }], weight: 'primary' }],
       notes: 'Goddess. Critical for the Alexiares/Anicetus stress test — divine mother + post-apotheosis-deity father.',
     },
-    {
-      id: 'greek_apollod_thespiades_one', schemaVersion: 2,
-      name: { primary: 'Daughter-of-Thespius (one of fifty)', alt: ['Thespiad'] },
-      type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
-      sex: 'female', vitalStatus: 'dead', parentIds: [],
-      temporal: { era: 'heroic-age' },
-      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Apollod. 2.4.10, 2.7.8' }], weight: 'secondary' }],
-      notes: 'Stand-in for the Thespiades problem — 50 daughters, 50 sons in one night with Heracles. To be fully seeded in Phase 5.',
-    },
 
     // ─── The 8 stress-case children ──────────────────────────────────────
     {
@@ -7109,18 +7100,6 @@ const buildPeopleSeed = () => {
       domains: [{ sphereId: 'unconquerable', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apollod. 2.7.7' }] }],
       sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Apollod. 2.7.7' }], weight: 'primary' }],
       notes: 'Sibling to Alexiares. Same status-at-conception case.',
-    },
-    {
-      id: 'greek_apollod_echephron', schemaVersion: 2,
-      name: { primary: 'Echephron', alt: [], transliterations: { greek: 'Ἐχέφρων' } },
-      type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
-      sex: 'male',
-      vitalStatus: 'dead', parentIds: ['greek_apollod_heracles', 'greek_apollod_thespiades_one'],
-      parentRoles: { greek_apollod_heracles: 'paternal', greek_apollod_thespiades_one: 'maternal' },
-      temporal: { era: 'heroic-age' },
-      lifecycle: [{ typeStatus: 'demigod', startEvent: 'birth', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Apollod. 2.7.8' }] }],
-      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Apollod. 2.7.8' }], weight: 'secondary' }],
-      notes: 'One of fifty Thespiades sons. Stand-in for the full set; full seeding in Phase 5.',
     },
 
     // ─── Heraclidae lineage ──────────────────────────────────────────────
@@ -111038,6 +111017,4713 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Mortal mother of Odysseus, daughter of Autolycus (son of Hermes) and wife of Laertes of Ithaca. She died of grief in her son long absence and met his shade in the Underworld in Odyssey 11, the scene of the thrice-attempted embrace. Distinct from Anticleia of Epidaurus, the mother of Periphetes. Named in the prose of greek_odysseus as his mother, daughter of Autolycus."
+ },
+ {
+  "id": "greek_apollod_megamede",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Megamede",
+   "alt": [],
+   "transliterations": {
+    "greek": "Μεγαμήδη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_apollod_thespius",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.10"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.10"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Daughter of Arneus; wife of Thespius and mother of his fifty daughters, the Thespiades."
+ },
+ {
+  "id": "greek_apollod_thespiad_aeschreis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Aeschreis",
+   "alt": [],
+   "transliterations": {
+    "greek": "Αἰσχρηΐς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Leucones."
+ },
+ {
+  "id": "greek_apollod_thespiad_aglaia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Aglaia",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἀγλαΐα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Antiades."
+ },
+ {
+  "id": "greek_apollod_thespiad_alopius",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Alopius",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_antiope"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_antiope": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Antiope. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_amestrius",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Amestrius",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_eone"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_eone": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Eone. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_anthea",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Anthea",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἄνθεια"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades). She is the one daughter for whom Apollodorus names no son."
+ },
+ {
+  "id": "greek_apollod_thespiad_anthippe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Anthippe",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἀνθίππη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Hippodromus."
+ },
+ {
+  "id": "greek_apollod_thespiad_antiades",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Antiades",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_aglaia"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_aglaia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Aglaia. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_antileon",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Antileon",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἀντιλέων"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_procris"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_procris": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Procris. Twin of Hippeus. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_antimachus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Antimachus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_nicippe"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_nicippe": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Nicippe. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_antiope",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Antiope",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἀντιόπη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Alopius."
+ },
+ {
+  "id": "greek_apollod_thespiad_antiphus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Antiphus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_laothoe"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_laothoe": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Laothoe. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_archedicus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Archedicus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_eurypyle"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_eurypyle": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Eurypyle. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_archemachus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Archemachus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_patro"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_patro": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Patro. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_argele",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Argele",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἀργέλη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Cleolaus."
+ },
+ {
+  "id": "greek_apollod_thespiad_asopis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Asopis",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἀσωπίς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Mentor."
+ },
+ {
+  "id": "greek_apollod_thespiad_astyanax",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Astyanax",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_epilais"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_epilais": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Epilais. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_astybies",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Astybies",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_calametis"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_calametis": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Calametis. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_atromus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Atromus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_stratonice"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_stratonice": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Stratonice. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_bucolus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Bucolus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_marse"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_marse": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Marse. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_buleus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Buleus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_elachia"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_elachia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Elachia. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_calametis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Calametis",
+   "alt": [],
+   "transliterations": {
+    "greek": "Καλαμῆτις"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Astybies."
+ },
+ {
+  "id": "greek_apollod_thespiad_capylus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Capylus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_hippo"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_hippo": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Hippo. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_celeustanor",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Celeustanor",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_iphis"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_iphis": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Iphis. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_certhe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Certhe",
+   "alt": [],
+   "transliterations": {
+    "greek": "Κέρθη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Iobes."
+ },
+ {
+  "id": "greek_apollod_thespiad_chryseis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Chryseis",
+   "alt": [],
+   "transliterations": {
+    "greek": "Χρυσηΐς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Onesippus."
+ },
+ {
+  "id": "greek_apollod_thespiad_cleolaus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Cleolaus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_argele"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_argele": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Argele. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_clytippe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Clytippe",
+   "alt": [],
+   "transliterations": {
+    "greek": "Κλυτίππη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Eurycapys."
+ },
+ {
+  "id": "greek_apollod_thespiad_creon",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Creon",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae (sons of Heracles by the daughters of Thespius). His mother is a daughter of Thespius whose name is lost in Apollodorus’ text, so only the patrilineal link to Heracles is recorded. Distinct from Creon, king of Thebes. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_dynastes",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Dynastes",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_erato"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_erato": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Erato. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_elachia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Elachia",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἐλαχία"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Buleus."
+ },
+ {
+  "id": "greek_apollod_thespiad_entelides",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Entelides",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_menippis"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_menippis": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Menippis. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_eone",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eone",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἠώνη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Amestrius."
+ },
+ {
+  "id": "greek_apollod_thespiad_epilais",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Epilais",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἐπιλαΐς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Astyanax."
+ },
+ {
+  "id": "greek_apollod_thespiad_erasippus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Erasippus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_lysippe"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_lysippe": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Lysippe. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_erato",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Erato",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἐρατώ"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Dynastes."
+ },
+ {
+  "id": "greek_apollod_thespiad_erythras",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Erythras",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_exole"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_exole": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Exole. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_euboea",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Euboea",
+   "alt": [],
+   "transliterations": {
+    "greek": "Εὔβοια"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Olympus."
+ },
+ {
+  "id": "greek_apollod_thespiad_eubote",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eubote",
+   "alt": [],
+   "transliterations": {
+    "greek": "Εὐβώτη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Eurypylus."
+ },
+ {
+  "id": "greek_apollod_thespiad_eumedes",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eumedes",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_lyse"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_lyse": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Lyse. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_eurybia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eurybia",
+   "alt": [],
+   "transliterations": {
+    "greek": "Εὐρυβία"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Polylaus."
+ },
+ {
+  "id": "greek_apollod_thespiad_eurycapys",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eurycapys",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_clytippe"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_clytippe": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Clytippe. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_euryce",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Euryce",
+   "alt": [],
+   "transliterations": {
+    "greek": "Εὐρύκη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Teleutagoras."
+ },
+ {
+  "id": "greek_apollod_thespiad_euryopes",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Euryopes",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_terpsicrate"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_terpsicrate": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Terpsicrate. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_eurypyle",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eurypyle",
+   "alt": [],
+   "transliterations": {
+    "greek": "Εὐρυπύλη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Archedicus."
+ },
+ {
+  "id": "greek_apollod_thespiad_eurypylus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eurypylus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_eubote"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_eubote": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Eubote. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_eurytele",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eurytele",
+   "alt": [],
+   "transliterations": {
+    "greek": "Εὐρυτέλη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Leucippus."
+ },
+ {
+  "id": "greek_apollod_thespiad_exole",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Exole",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἐξόλη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Erythras."
+ },
+ {
+  "id": "greek_apollod_thespiad_halocrates",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Halocrates",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_olympusa"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_olympusa": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Olympusa. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_heliconis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Heliconis",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἑλικωνίς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Phalias."
+ },
+ {
+  "id": "greek_apollod_thespiad_hesychia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hesychia",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἡσυχία"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Oestrobles."
+ },
+ {
+  "id": "greek_apollod_thespiad_hippeus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hippeus",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἱππεύς"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_procris"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_procris": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Procris. Twin of Antileon. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_hippo",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hippo",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἱππώ"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Capylus."
+ },
+ {
+  "id": "greek_apollod_thespiad_hippocrate",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hippocrate",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἱπποκράτη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Hippozygus."
+ },
+ {
+  "id": "greek_apollod_thespiad_hippodromus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hippodromus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_anthippe"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_anthippe": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Anthippe. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_hippozygus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hippozygus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_hippocrate"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_hippocrate": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Hippocrate. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_homolippus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Homolippus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_xanthis"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_xanthis": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Xanthis. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_iobes",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Iobes",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_certhe"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_certhe": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Certhe. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_iphis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Iphis",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ἶφις"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Celeustanor."
+ },
+ {
+  "id": "greek_apollod_thespiad_laomedon",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Laomedon",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_meline"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_meline": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Meline. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_laomenes",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Laomenes",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_oria"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_oria": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Oria. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_laothoe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Laothoe",
+   "alt": [],
+   "transliterations": {
+    "greek": "Λαοθόη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Antiphus."
+ },
+ {
+  "id": "greek_apollod_thespiad_leucippus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Leucippus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_eurytele"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_eurytele": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Eurytele. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_leucones",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Leucones",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_aeschreis"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_aeschreis": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Aeschreis. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_lycurgus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Lycurgus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_toxicrate"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_toxicrate": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Toxicrate. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_lyncaeus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Lyncaeus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_tiphyse"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_tiphyse": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Tiphyse. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_lyse",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Lyse",
+   "alt": [],
+   "transliterations": {
+    "greek": "Λύση"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Eumedes."
+ },
+ {
+  "id": "greek_apollod_thespiad_lysidice",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Lysidice",
+   "alt": [],
+   "transliterations": {
+    "greek": "Λυσιδίκη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Teles."
+ },
+ {
+  "id": "greek_apollod_thespiad_lysippe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Lysippe",
+   "alt": [],
+   "transliterations": {
+    "greek": "Λυσίππη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Erasippus."
+ },
+ {
+  "id": "greek_apollod_thespiad_marse",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Marse",
+   "alt": [],
+   "transliterations": {
+    "greek": "Μάρση"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Bucolus."
+ },
+ {
+  "id": "greek_apollod_thespiad_meline",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Meline",
+   "alt": [],
+   "transliterations": {
+    "greek": "Μηλίνη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Laomedon."
+ },
+ {
+  "id": "greek_apollod_thespiad_menippis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Menippis",
+   "alt": [],
+   "transliterations": {
+    "greek": "Μηνιππίς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Entelides."
+ },
+ {
+  "id": "greek_apollod_thespiad_mentor",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Mentor",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_asopis"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_asopis": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Asopis. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_nephus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nephus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_praxithea"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_praxithea": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Praxithea. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_nice",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nice",
+   "alt": [],
+   "transliterations": {
+    "greek": "Νίκη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Nicodromus."
+ },
+ {
+  "id": "greek_apollod_thespiad_nicippe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nicippe",
+   "alt": [],
+   "transliterations": {
+    "greek": "Νικίππη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Antimachus."
+ },
+ {
+  "id": "greek_apollod_thespiad_nicodromus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nicodromus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_nice"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_nice": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Nice. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_oestrobles",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Oestrobles",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_hesychia"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_hesychia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Hesychia. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_olympus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Olympus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_euboea"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_euboea": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Euboea. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_olympusa",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Olympusa",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ὀλυμπούσα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Halocrates."
+ },
+ {
+  "id": "greek_apollod_thespiad_onesippus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Onesippus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_chryseis"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_chryseis": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Chryseis. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_oria",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Oria",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ὠρεία"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Laomenes."
+ },
+ {
+  "id": "greek_apollod_thespiad_panope",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Panope",
+   "alt": [],
+   "transliterations": {
+    "greek": "Πανόπη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Threpsippas."
+ },
+ {
+  "id": "greek_apollod_thespiad_patro",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Patro",
+   "alt": [],
+   "transliterations": {
+    "greek": "Πατρώ"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Archemachus."
+ },
+ {
+  "id": "greek_apollod_thespiad_patroclus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Patroclus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_pyrippe"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_pyrippe": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Pyrippe. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_phalias",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Phalias",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_heliconis"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_heliconis": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Heliconis. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_phyleis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Phyleis",
+   "alt": [],
+   "transliterations": {
+    "greek": "Φυληΐς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Tigasis."
+ },
+ {
+  "id": "greek_apollod_thespiad_polylaus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Polylaus",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_eurybia"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_eurybia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Eurybia. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_praxithea",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Praxithea",
+   "alt": [],
+   "transliterations": {
+    "greek": "Πραξιθέα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Nephus."
+ },
+ {
+  "id": "greek_apollod_thespiad_procris",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Procris",
+   "alt": [],
+   "transliterations": {
+    "greek": "Πρόκρις"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Eldest of the fifty daughters of Thespius (the Thespiades); by Heracles she bore the twin sons Antileon and Hippeus — the only twin pair Apollodorus names."
+ },
+ {
+  "id": "greek_apollod_thespiad_pyrippe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Pyrippe",
+   "alt": [],
+   "transliterations": {
+    "greek": "Πυρίππη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Patroclus."
+ },
+ {
+  "id": "greek_apollod_thespiad_stratonice",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Stratonice",
+   "alt": [],
+   "transliterations": {
+    "greek": "Στρατονίκη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Atromus."
+ },
+ {
+  "id": "greek_apollod_thespiad_teles",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Teles",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_lysidice"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_lysidice": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Lysidice. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_teleutagoras",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Teleutagoras",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_euryce"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_euryce": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Euryce. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_terpsicrate",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Terpsicrate",
+   "alt": [],
+   "transliterations": {
+    "greek": "Τερψικράτη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Euryopes."
+ },
+ {
+  "id": "greek_apollod_thespiad_threpsippas",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Threpsippas",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_panope"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_panope": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Panope. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_tigasis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Tigasis",
+   "alt": []
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_heracles",
+   "greek_apollod_thespiad_phyleis"
+  ],
+  "parentRoles": {
+   "greek_apollod_heracles": "paternal",
+   "greek_apollod_thespiad_phyleis": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "birth",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the Thespiadae, the sons of Heracles by the fifty daughters of Thespius; son of Heracles and Phyleis. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
+ },
+ {
+  "id": "greek_apollod_thespiad_tiphyse",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Tiphyse",
+   "alt": [],
+   "transliterations": {
+    "greek": "Τιφύση"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Lyncaeus."
+ },
+ {
+  "id": "greek_apollod_thespiad_toxicrate",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Toxicrate",
+   "alt": [],
+   "transliterations": {
+    "greek": "Τοξικράτη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Lycurgus."
+ },
+ {
+  "id": "greek_apollod_thespiad_xanthis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Xanthis",
+   "alt": [],
+   "transliterations": {
+    "greek": "Ξανθίς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_thespius",
+   "greek_apollod_megamede"
+  ],
+  "parentRoles": {
+   "greek_apollod_thespius": "paternal",
+   "greek_apollod_megamede": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.8 (the roster of Thespius’ daughters and their sons by Heracles); Apollod. 2.4.10 (the union)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the fifty daughters of Thespius (the Thespiades); by Heracles she bore Homolippus."
+ },
+ {
+  "id": "greek_apollod_thespius",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Thespius",
+   "alt": [
+    "Thestius"
+   ],
+   "transliterations": {
+    "greek": "Θέσπιος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_apollod_megamede",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.10"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.10, 2.7.8; Paus. 9.26.6, 9.27.6-7"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "King and eponym of Thespiae in Boeotia; son of Erechtheus in the Athenian tradition (Paus. 9.26.6; Diod. 4.29), or of Teuthras in a variant — Apollodorus gives no father. By Megamede, daughter of Arneus, he had fifty daughters (the Thespiades). Hosting Heracles for the fifty days of the hunt for the lion of Cithaeron, he sent his daughters one by one to the hero’s bed so that all might bear his children. The Thespiadae later colonized Sardinia under Iolaus — seven stayed at Thespiae, three (Apollod. 2.7.6) or two (Diod. 4.29) at Thebes, the remaining forty to Sardinia."
  },
  {
   "id": "greek_apollod_tyche",
@@ -331002,11 +335688,6 @@ const ETYMOLOGY = {
     "etymology": "Greek Δημοφῶν (Dēmophôn), older Δημοφόων, 'voice of the people', from δῆμος 'people, district' + the root of φημί/φωνή 'speak, voice'.",
     "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
   },
-  "greek_apollod_echephron": {
-    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
-    "etymology": "Greek Ἐχέφρων (Echéphrōn) 'prudent, sensible', the ordinary adjective ἐχέφρων 'in possession of one's wits', from ἔχω 'to hold, keep' + φρήν 'mind, wits'.",
-    "sources": [{ "kind": "secondary", "reference": "LSJ, A Greek-English Lexicon, s.v. ἐχέφρων" }]
-  },
   "greek_apollod_electryon": {
     "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
     "etymology": "Greek Ἠλεκτρύων (Ēlektrýōn) 'the gleaming/radiant one', from ἠλέκτωρ 'the beaming sun' / ἤλεκτρον 'amber, electrum' (the bright shining metal-amber).",
@@ -344074,14 +348755,6 @@ const ETYMOLOGY = {
       { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
     ]
   },
-  "greek_apollod_echephron": {
-    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
-    "etymology": "Greek Ἐχέφρων (Echéphrōn), from ἔχω (échō) \"to hold, have\" and φρήν (phrḗn) \"mind, wits\" — \"prudent, possessed of sense\" (cf. the adjective ἐχέφρων \"sensible\").",
-    "sources": [
-      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἐχέφρων" },
-      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
-    ]
-  },
   "greek_laodamia_lycian": {
     "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
     "etymology": "Greek Λαοδάμεια (Laodámeia), from λαός (lāós) \"host, war-folk, people\" and the stem of δαμάω (damáō) \"to tame, subdue\" — \"she who subdues the host / tamer of the people.\"",
@@ -344735,11 +349408,6 @@ const VERIFY_ENRICHMENTS = {
   'greek_apollod_astyoche': {
     relations: [
       { kind: 'lover', personId: 'greek_apollod_heracles', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.7.6 (Heracles fathers Tlepolemus on Astyoche, daughter of Phylas)' }, { kind: 'primary', reference: 'Homer, Iliad 2.653-660 (Tlepolemus son of Heracles, Rhodian contingent)' }], notes: 'Bore Tlepolemus to Heracles; Astyoche already listed as Tlepolemus\'s mother in the registry.' },
-    ],
-  },
-  'greek_apollod_thespiades_one': {
-    relations: [
-      { kind: 'lover', personId: 'greek_apollod_heracles', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.10 (Heracles lies with the fifty daughters of Thespius, each bearing a son)' }, { kind: 'secondary', reference: 'Gantz, Early Greek Myth (1993), 378-379, on the Thespiades' }], notes: 'Stand-in for the fifty Thespiades; bore Echephron to Heracles, who is registered with her as mother.' },
     ],
   },
   'greek_hesiod_chaos': {
