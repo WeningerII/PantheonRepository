@@ -1,0 +1,415 @@
+{
+  "faculties": {
+    "nabataean_qaws": [
+      {
+        "id": "nabataean_qaws-storm-thunderbolt",
+        "name": "wield the multi-pronged thunderbolt as a weather-god",
+        "notes": "On the cult-relief from Khirbet et-Tannur the god (Qos syncretized with Dushara) is enthroned and flanked by bulls, holding a forked thunderbolt in his left hand, marking a storm-god function.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Glueck, Deities and Dolphins: The Story of the Nabataeans; Healey, The Religion of the Nabataeans"}],
+        "ability": true
+      }
+    ],
+    "norse_aegir": [
+      {
+        "id": "norse_aegir-host-feast",
+        "name": "host the gods at his hall and brew ale in a vast cauldron",
+        "notes": "In Hymiskvida the Aesir win the mile-deep kettle from the giant Hymir so that Aegir can brew ale for the gods; his hall-feast frames Lokasenna.",
+        "inheritability": "none",
+        "sources": [{"kind": "primary", "reference": "Poetic Edda, Hymiskvida and Lokasenna (prose intro); Snorri Sturluson, Prose Edda, Skaldskaparmal"}],
+        "ability": true
+      },
+      {
+        "id": "norse_aegir-raise-sea",
+        "name": "personify and raise the swelling sea",
+        "notes": "Aegir (also called Hler and Gymir) is the sea itself; with his wife Ran and their nine wave-daughters he embodies the ocean that swallows ships.",
+        "inheritability": "none",
+        "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skaldskaparmal (kennings for the sea)"}],
+        "ability": true
+      }
+    ],
+    "norse_baldr": [
+      {
+        "id": "norse_baldr-invulnerability",
+        "name": "be unharmed by all things sworn not to hurt him",
+        "notes": "After Baldr's death-dreams, Frigg took oaths from fire, water, metals, stones, beasts, birds and snakes not to harm him, so the gods amused themselves by hurling weapons at him; only the overlooked mistletoe could wound him.",
+        "inheritability": "none",
+        "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 49"}],
+        "ability": true
+      }
+    ],
+    "norse_heimdall": [
+      {
+        "id": "norse_heimdall-need-no-sleep",
+        "name": "need less sleep than a bird and see a hundred leagues by night or day",
+        "notes": "Snorri lists Heimdall's superhuman senses: he sleeps less than a bird, sees a hundred rost (leagues) ahead in darkness as in light, and hears grass and wool growing.",
+        "inheritability": "none",
+        "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 27"}],
+        "ability": true
+      },
+      {
+        "id": "norse_heimdall-origin-of-classes",
+        "name": "father the orders of humankind as Rig",
+        "notes": "In Rigsthula the god Rig (identified in the prose header with Heimdall) visits three households and begets the ancestors of the thrall, the freeman and the noble, originating the human social classes.",
+        "inheritability": "none",
+        "sources": [{"kind": "primary", "reference": "Poetic Edda, Rigsthula (prose introduction)"}],
+        "ability": true
+      }
+    ],
+    "norse_freyr": [
+      {
+        "id": "norse_freyr-bestow-peace-plenty",
+        "name": "grant frith and good seasons, ruling over rain, sun and the fruitfulness of the earth",
+        "notes": "Snorri calls Freyr the most renowned of the Aesir-by-adoption: he governs rain and sunshine and the produce of the earth, and it is good to call on him for prosperity and peace (ar ok fridr).",
+        "inheritability": "none",
+        "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 24"}],
+        "ability": true
+      }
+    ],
+    "norse_freyja": [
+      {
+        "id": "norse_freyja-receive-slain",
+        "name": "choose half the battle-slain for her hall Sessrumnir in Folkvang",
+        "notes": "Snorri states that whenever Freyja rides to battle she has half of the slain, and Odin the other half; she seats them in Sessrumnir in her field Folkvang.",
+        "inheritability": "none",
+        "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 24; Poetic Edda, Grimnismal 14"}],
+        "ability": true
+      }
+    ]
+  },
+  "materialCulture": {
+    "norse_aegir": [
+      {
+        "id": "norse_aegir-kettle",
+        "name": "the mile-deep brewing-kettle won from Hymir",
+        "classId": "vessel",
+        "kind": "vessel",
+        "sources": [{"kind": "primary", "reference": "Poetic Edda, Hymiskvida"}]
+      }
+    ],
+    "norse_bragi": [
+      {
+        "id": "norse_bragi-harp",
+        "name": "the harp of the divine poet",
+        "classId": "instrument",
+        "kind": "instrument",
+        "sources": [{"kind": "secondary", "reference": "Lindow, Norse Mythology: A Guide; iconographic identification of Bragi with a harp"}]
+      }
+    ],
+    "norse_freyja": [
+      {
+        "id": "norse_freyja-cloak-feathers-note",
+        "name": "the feather-cloak (fjadrhamr) that lets its wearer fly as a falcon",
+        "classId": "garment",
+        "kind": "garment",
+        "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skaldskaparmal (Loki borrows Freyja's falcon-cloak)"}]
+      }
+    ],
+    "norse_brynhildr": [
+      {
+        "id": "norse_brynhildr-mailcoat",
+        "name": "the mail-coat that grew fast to her flesh until Sigurd cut it away",
+        "classId": "armor",
+        "kind": "armor",
+        "sources": [{"kind": "primary", "reference": "Poetic Edda, Sigrdrifumal (prose); Volsunga saga ch. 21"}]
+      }
+    ],
+    "norse_hjordis": [
+      {
+        "id": "norse_hjordis-gram-shards",
+        "name": "the shards of the broken sword Gram, kept for her unborn son",
+        "classId": "sword",
+        "kind": "weapon",
+        "sources": [{"kind": "primary", "reference": "Volsunga saga ch. 11-12 (Sigmund gives Hjordis the pieces of Gram)"}]
+      }
+    ],
+    "nana_buruku": [
+      {
+        "id": "nana_buruku-ibiri",
+        "name": "the ibiri, a curved ritual sceptre of palm-ribs bound with cowries and beads",
+        "classId": "staff",
+        "kind": "staff",
+        "sources": [{"kind": "secondary", "reference": "Verger, Orixas; Thompson, Flash of the Spirit"}]
+      },
+      {
+        "id": "nana_buruku-broom",
+        "name": "the hooked spiritual broom with which she sweeps and guides her devotees",
+        "classId": "implement",
+        "kind": "implement",
+        "sources": [{"kind": "secondary", "reference": "Verger, Orixas (cult-objects of Nana)"}]
+      }
+    ],
+    "nenets_num": [
+      {
+        "id": "nenets_num-sacred-sledge",
+        "name": "the sacred sledge (hehe han) bearing the wrapped idols and offerings",
+        "classId": "cult-object",
+        "kind": "vehicle",
+        "sources": [{"kind": "secondary", "reference": "Lehtisalo, Entwurf einer Mythologie der Jurak-Samojeden; Golovnev and Osherenko, Siberian Survival: The Nenets and Their Story"}]
+      }
+    ]
+  },
+  "domains": {
+    "nabataean_qaws": [
+      {"sphereId": "archery", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Knauf, 'Qaus' in Dictionary of Deities and Demons in the Bible"}]}
+    ],
+    "norse_forseti": [
+      {"sphereId": "law-and-assembly", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Poetic Edda, Grimnismal 15"}]}
+    ],
+    "norse_baldr": [
+      {"sphereId": "death-and-rebirth", "contextTag": "myth", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 49 (Baldr's death and return after Ragnarok)"}]}
+    ]
+  },
+  "epithets": {
+    "nabataean_dushara": [
+      {"original": "𐢅𐢈𐢔𐢛𐢀", "rom": "dwsr", "gloss": "Lord of (the) Shara (mountains)", "language": "Nabataean Aramaic", "contextTag": "name-meaning", "sources": [{"kind": "secondary", "reference": "Healey, The Religion of the Nabataeans"}]},
+      {"original": "Actia Dusaria", "rom": "Aktia Dousaria", "gloss": "the Actian Dushara (of the games)", "language": "Greek/Latin (coin legend)", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Bostra and Adraa coin legends; Healey, The Religion of the Nabataeans"}]}
+    ],
+    "nabataean_manat": [
+      {"original": "𐢍𐢀𐢈𐢕𐢈", "rom": "mnwtw", "gloss": "Manawat / Manotu, the Apportioner (of fate)", "language": "Nabataean Aramaic", "contextTag": "vernacular", "sources": [{"kind": "primary", "reference": "Hegra (Mada'in Salih) tomb inscriptions; Healey, The Nabataean Tomb Inscriptions of Mada'in Salih"}]}
+    ],
+    "nabataean_qaws": [
+      {"original": "Quzah", "rom": "Quzah", "gloss": "the Archer (of the rainbow, qaws Quzah)", "language": "Arabic", "contextTag": "interpretatio", "sources": [{"kind": "secondary", "reference": "Knauf, 'Qaus' in Dictionary of Deities and Demons in the Bible"}]}
+    ],
+    "norse_baldr": [
+      {"original": "Baldr inn goda", "rom": "Baldr inn godi", "gloss": "Baldr the Good", "language": "Old Norse", "contextTag": "epithet", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning"}]}
+    ],
+    "norse_fenrir": [
+      {"original": "Fenrisulfr", "rom": "Fenrisulfr", "gloss": "Fenrir's Wolf / the Fen-Wolf", "language": "Old Norse", "contextTag": "name", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning"}]},
+      {"original": "Hrodvitnir", "rom": "Hrodvitnir", "gloss": "Fame-Wolf", "language": "Old Norse", "contextTag": "epithet", "sources": [{"kind": "primary", "reference": "Poetic Edda, Lokasenna 39"}]},
+      {"original": "Vanagandr", "rom": "Vanagandr", "gloss": "Monster of the (river) Van", "language": "Old Norse", "contextTag": "epithet", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 34"}]}
+    ],
+    "norse_aslaug": [
+      {"original": "Kraka", "rom": "Kraka", "gloss": "Crow (her name in hiding among the peasants)", "language": "Old Norse", "contextTag": "name", "sources": [{"kind": "primary", "reference": "Ragnars saga lodbrokar; Volsunga saga (Aslaug raised as Kraka)"}]}
+    ],
+    "nana_buruku": [
+      {"original": "Nana Buruku", "rom": "Nana Buruku", "gloss": "Grandmother / primordial ancestress", "language": "Yoruba (and Fon)", "contextTag": "honorific", "sources": [{"kind": "secondary", "reference": "Verger, Orixas"}]}
+    ]
+  },
+  "cult": {
+    "nabataean_dushara": [
+      {
+        "name": "betyl-sacrifice to the Lord of Shara",
+        "type": "sacrifice",
+        "cadence": "regular temple offering",
+        "notes": "The cult-image of Dushara was an aniconic squared stone (baetyl); the Suda records that the Nabataeans sacrificed to this stone and poured the blood of the victims over it. His chief sanctuary at Petra was the Qasr al-Bint, and Siq inscriptions name officials who organised his festivals.",
+        "sources": [{"kind": "primary", "reference": "Suda, s.v. Theus Ares (Dusares); Petra Siq dedicatory inscriptions; Healey, The Religion of the Nabataeans"}]
+      },
+      {
+        "name": "the Actia Dusaria games",
+        "type": "festival",
+        "cadence": "quadrennial (penteteric)",
+        "notes": "Greek-style athletic games in honour of Dushara, the Actia Dusaria, are attested on the coinage of Bostra and Adraa in the Roman period, modelling the deity's festival on the Actian games of Augustus.",
+        "sources": [{"kind": "secondary", "reference": "Bostra/Adraa coinage; Healey, The Religion of the Nabataeans"}]
+      }
+    ],
+    "nabataean_manat": [
+      {
+        "name": "invocation of Manat in tomb-curses",
+        "type": "invocation",
+        "cadence": "in funerary dedication",
+        "notes": "At Hegra (Mada'in Salih) tomb inscriptions call on Manat (Manawat), often with Dushara and Qaysha, to curse and exact a fine from anyone who violates or sells the tomb, casting her as guardian of fate and the grave.",
+        "sources": [{"kind": "primary", "reference": "Hegra tomb inscriptions; Healey, The Nabataean Tomb Inscriptions of Mada'in Salih"}]
+      }
+    ],
+    "norse_freyr": [
+      {
+        "name": "the blot and idol of Freyr at the temple of Uppsala",
+        "term": {"value": "blot", "script": "Latin", "rom": "blot"},
+        "type": "sacrifice",
+        "cadence": "seasonal, with a great sacrifice every nine years",
+        "notes": "Adam of Bremen describes the temple at Uppsala where Freyr (Fricco) stood beside Thor and Odin, fashioned with a great phallus as the god who bestows peace and pleasure; he was invoked at weddings, and a great sacrifice of men and animals was held every nine years. Snorri's Ynglinga saga and Gunnars thattr Helmings depict a wagon-procession of Freyr's image through the land to bless the harvest.",
+        "sources": [{"kind": "primary", "reference": "Adam of Bremen, Gesta Hammaburgensis Ecclesiae Pontificum, Book IV; Snorri Sturluson, Ynglinga saga; Gunnars thattr Helmings"}]
+      }
+    ],
+    "norse_freyja": [
+      {
+        "name": "blot and invocation of Freyja for love, fertility and the dead",
+        "type": "sacrifice",
+        "cadence": "seasonal offering",
+        "notes": "Snorri reports that of all the gods Freyja was the most approachable in prayer and that from her name noble women are called freyjur; Ynglinga saga credits her with teaching seidr to the Aesir. She was widely invoked for fruitful marriage and childbirth, and as a goddess of the slain she shared the war-dead with Odin.",
+        "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 24-35; Snorri Sturluson, Ynglinga saga 4"}]
+      }
+    ],
+    "norse_forseti": [
+      {
+        "name": "the sacred spring and cattle of Fosite on Fositesland",
+        "type": "shrine",
+        "cadence": "perpetual sanctuary",
+        "notes": "Alcuin's Life of Willibrord describes an island between Frisia and Denmark sacred to the god Fosite (identified with Forseti), where stood a holy spring from which water had to be drawn in silence, and cattle that none might touch; Willibrord provoked the Frisians by baptising in the spring and slaughtering the beasts.",
+        "sources": [{"kind": "primary", "reference": "Alcuin, Vita Willibrordi, ch. 10-11"}]
+      }
+    ],
+    "ndebele_umlimu": [
+      {
+        "name": "the rainmaking oracle of Mwari at Njelele (Matonjeni)",
+        "type": "oracle",
+        "cadence": "annual pilgrimage before the rains",
+        "notes": "The Ndebele adopted the Shona-Kalanga Mwari (uMlimu) cult of the Matopos, consulting the voice-oracle of the cave-shrines at Njelele / Matonjeni. Emissaries and pilgrims brought black cattle, hoes, cloth, beads and tobacco and petitioned the deity for rain and counsel, especially in drought.",
+        "sources": [{"kind": "secondary", "reference": "Daneel, The God of the Matopo Hills; Ranger, Voices from the Rocks"}]
+      }
+    ],
+    "nana_buruku": [
+      {
+        "name": "metal-free offerings to the primordial grandmother",
+        "type": "offering",
+        "cadence": "ritual feast-days",
+        "notes": "Because Nana Buruku is held to predate the age of iron, her offerings and food are prepared without iron tools (bamboo or wooden knives are used in her stead); typical gifts include water, white cloth, palm-oil-free dishes, coconut and yams, and her devotees avoid weapons of iron in her presence.",
+        "sources": [{"kind": "secondary", "reference": "Verger, Orixas; Thompson, Flash of the Spirit"}]
+      }
+    ],
+    "nivkh_bear": [
+      {
+        "name": "the bear festival (chxyf lekhand)",
+        "type": "festival",
+        "cadence": "after a bear has been reared for several years, usually in winter",
+        "notes": "The keystone rite of Nivkh religion: a bear cub is captured and raised in a corral, tended like kin by the women, then in a multi-day festival it is feted, paraded, ritually shot, dismembered and feasted upon, so that its soul returns to the mountain-master Pal-yz bearing the people's gifts and securing continued game; sacrificial dogs are also offered.",
+        "sources": [{"kind": "secondary", "reference": "Shternberg, The Social Organization of the Gilyak; Black, 'The Nivkh of Sakhalin'"}]
+      }
+    ],
+    "nivkh_pal_yz": [
+      {
+        "name": "honouring the mountain-master through his bears",
+        "type": "veneration",
+        "cadence": "at the hunt and at the bear festival",
+        "notes": "Pal-yz, master of the mountain and forest, owns the bears as his mountain-people and messengers; hunters who honour the slain bear and observe the taboos secure game, while disrespect is reported back to Pal-yz and punished with misfortune. The bear festival is in effect his great offering.",
+        "sources": [{"kind": "secondary", "reference": "Shternberg, The Social Organization of the Gilyak"}]
+      }
+    ],
+    "nenets_num": [
+      {
+        "name": "blood-sacrifice of reindeer to the sky-god",
+        "type": "sacrifice",
+        "cadence": "on appointed occasions and at sacred places",
+        "notes": "The Nenets offer reindeer (especially white animals) to Num at sacred sites, along with food, cloth and other goods; the animal is strangled or speared and its blood and meat presented, the skull and antlers left at the holy place.",
+        "sources": [{"kind": "secondary", "reference": "Lehtisalo, Entwurf einer Mythologie der Jurak-Samojeden; Golovnev and Osherenko, Siberian Survival: The Nenets and Their Story"}]
+      }
+    ]
+  },
+  "iconography": {
+    "nabataean_dushara": {
+      "attributes": [
+        {
+          "id": "nabataean_dushara-baetyl",
+          "name": "the squared stone baetyl on a moulded base (motab)",
+          "notes": "Dushara was worshipped aniconically as a black rectangular block of stone set on a plinth; only under Graeco-Roman influence does an enthroned, sometimes cuirassed anthropomorphic figure appear.",
+          "sources": [{"kind": "primary", "reference": "Suda, s.v. Dusares; Healey, The Religion of the Nabataeans"}]
+        }
+      ],
+      "sacredAnimals": [
+        {
+          "id": "nabataean_dushara-eagle",
+          "name": "the eagle, carved over tomb-doorways as his protective emblem",
+          "sources": [{"kind": "secondary", "reference": "Healey, The Religion of the Nabataeans (the eagle of Dushara at Hegra)"}]
+        }
+      ]
+    },
+    "nabataean_manat": {
+      "attributes": [
+        {
+          "id": "nabataean_manat-nemesis",
+          "name": "depicted as Nemesis, holding the cubit-rule and wheel of fate",
+          "notes": "In the Hellenised iconography of the Nabataeans, Manat (Manawat) is shown in the guise of the Greek Nemesis, the apportioner of just measure and fortune; her aniconic form remained the block-baetyl.",
+          "sources": [{"kind": "secondary", "reference": "Healey, The Religion of the Nabataeans"}]
+        }
+      ]
+    },
+    "nabataean_qaws": {
+      "attributes": [
+        {
+          "id": "nabataean_qaws-thunderbolt",
+          "name": "the forked thunderbolt held in the left hand",
+          "notes": "On the Khirbet et-Tannur relief the syncretised Qos-Dushara is enthroned holding a multi-pronged thunderbolt, a storm-god attribute.",
+          "sources": [{"kind": "secondary", "reference": "Glueck, Deities and Dolphins; Healey, The Religion of the Nabataeans"}]
+        },
+        {
+          "id": "nabataean_qaws-bow-rainbow",
+          "name": "the bow and the rainbow of the archer-god",
+          "notes": "Qos was assimilated to the Arabian Quzah, archer and god of the rainbow (qaws Quzah, 'the bow of Quzah'), whence his name and bow attribute.",
+          "sources": [{"kind": "secondary", "reference": "Knauf, 'Qaus' in Dictionary of Deities and Demons in the Bible"}]
+        }
+      ],
+      "sacredAnimals": [
+        {
+          "id": "nabataean_qaws-bull",
+          "name": "the bull, flanking his throne",
+          "sources": [{"kind": "secondary", "reference": "Glueck, Deities and Dolphins (Qos-Dushara flanked by bulls at Khirbet et-Tannur)"}]
+        }
+      ]
+    },
+    "norse_bragi": {
+      "attributes": [
+        {
+          "id": "norse_bragi-runes-tongue",
+          "name": "runes carved upon his tongue",
+          "notes": "Snorri says runes were cut on Bragi's tongue, the sign of the god whose gift is eloquence and skaldic verse.",
+          "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skaldskaparmal (the mead of poetry); Poetic Edda, Sigrdrifumal 16"}]
+        },
+        {
+          "id": "norse_bragi-long-beard",
+          "name": "the long beard, by which the word skegg-Bragi ('beard-Bragi') is formed",
+          "notes": "Bragi is conventionally pictured as a long-bearded elder; his name underlies the kenning skegg-Bragi.",
+          "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skaldskaparmal"}]
+        }
+      ]
+    },
+    "norse_heimdall": {
+      "sacredAnimals": [
+        {
+          "id": "norse_heimdall-ram",
+          "name": "the ram (Heimdali is a heiti for ram)",
+          "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skaldskaparmal (heiti for ram)"}]
+        },
+        {
+          "id": "norse_heimdall-rooster",
+          "name": "the cock Gullinkambi, whose crow wakes the warriors and heralds Ragnarok",
+          "sources": [{"kind": "primary", "reference": "Poetic Edda, Voluspa 43 (the gold-combed cock)"}]
+        }
+      ]
+    },
+    "norse_hel": {
+      "attributes": [
+        {
+          "id": "norse_hel-half-blue",
+          "name": "a body half flesh-coloured and half blue-black, with a downcast, grim aspect",
+          "notes": "Snorri describes Hel as half blae (livid blue-black) and half flesh-coloured, easily known, and gloomy and fierce of look.",
+          "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 34"}]
+        }
+      ]
+    },
+    "norse_freyr": {
+      "sacredAnimals": [
+        {
+          "id": "norse_freyr-boar-gullinbursti",
+          "name": "the boar Gullinbursti ('golden-bristled'), whose mane lights the dark",
+          "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skaldskaparmal (the dwarves' gifts)"}]
+        }
+      ]
+    },
+    "norse_gerdr": {
+      "attributes": [
+        {
+          "id": "norse_gerdr-shining-arms",
+          "name": "arms so radiant that from them all the air and sea shone",
+          "notes": "When Gerdr raised her arms to open the door, light shone from them over sky and water; her gleaming beauty is what kindles Freyr's lovesickness, and she is read as an earth/vegetation figure wed to the light-god.",
+          "sources": [{"kind": "primary", "reference": "Poetic Edda, Skirnismal 6; Snorri Sturluson, Prose Edda, Gylfaginning 37"}]
+        }
+      ]
+    },
+    "nanabozho": {
+      "sacredAnimals": [
+        {
+          "id": "nanabozho-great-hare",
+          "name": "the Great Hare (Misaabooz), his foremost form and by-name",
+          "sources": [{"kind": "secondary", "reference": "Barnouw, Wisconsin Chippewa Myths and Tales; Johnston, Ojibway Heritage"}]
+        },
+        {
+          "id": "nanabozho-muskrat",
+          "name": "the muskrat, who dives and brings up the speck of earth for the new world",
+          "notes": "In the earth-diver creation Nanabozho remakes the land from a grain of soil fetched from the flood-bottom by the muskrat after greater animals fail.",
+          "sources": [{"kind": "secondary", "reference": "Barnouw, Wisconsin Chippewa Myths and Tales"}]
+        }
+      ]
+    }
+  }
+}
