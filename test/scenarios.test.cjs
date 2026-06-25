@@ -322,7 +322,15 @@ describe('Pantheon Registry — capability scenarios', () => {
 
   S('S26', 'Detail — minimal figure', 'a figure with no powers/items/domains renders cleanly', async (app) => {
     const before = app.errors.length;
-    await app.openFigure('greek_apollod_acrisius');
+    // Find a genuinely minimal figure at runtime. The enrichment sweep fills most
+    // entries, but bare genealogical mortals legitimately remain power/item/domain-less;
+    // assuming any one fixed id stays empty forever is brittle.
+    const sp = app.window.__PR.seedPeople;
+    const minimal = Object.keys(sp).find((id) => {
+      const p = sp[id];
+      return !(p.faculties || []).length && !(p.materialCulture || []).length && !(p.domains || []).length;
+    }) || 'greek_apollod_acrisius';
+    await app.openFigure(minimal);
     const d = app.document.querySelector('.detail');
     assert.ok(d, 'detail did not open for the minimal figure');
     assert.strictEqual(app.errors.length, before, 'minimal figure raised errors');

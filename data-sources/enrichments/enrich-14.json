@@ -1,0 +1,411 @@
+{
+  "faculties": {
+    "gaulish_belenos": [
+      {
+        "id": "gaulish_belenos-drive-sun",
+        "name": "drive the sun across the sky and pour out its bright light",
+        "notes": "The theonym derives from Proto-Celtic *belo- 'bright, shining'; under interpretatio romana he was equated with Apollo and, like the Augustan-History Apollo, imagined coursing the heavens in a horse-drawn solar chariot.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Belenus'"}],
+        "ability": true
+      }
+    ],
+    "gaulish_lugus": [
+      {
+        "id": "gaulish_lugus-wield-spear",
+        "name": "wield the unfailing spear of the skilled god",
+        "notes": "Gaulish Mercury (= Lugus) was often armed with a spear, the continental counterpart of the spear-weapon (gae assal / sleg) of his Insular cognates Irish Lug and Welsh Lleu.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Lugus'"}],
+        "ability": true
+      }
+    ],
+    "greek_aceso": [
+      {
+        "id": "greek_aceso-curing-process",
+        "name": "carry an ailment through the process of curing to recovery",
+        "term": {"value": "Ἀκεσώ", "script": "Grek", "rom": "Akeso"},
+        "notes": "She personifies the curing process itself (Greek akesis, 'healing'), as distinct from her sister Panacea the finished cure-all.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Aceso'"}],
+        "ability": true
+      }
+    ],
+    "greek_aegle_asclepius": [
+      {
+        "id": "greek_aegle_asclepius-radiance",
+        "name": "bestow the radiant bloom of restored health",
+        "term": {"value": "Αἴγλη", "script": "Grek", "rom": "Aigle"},
+        "notes": "Her name aigle means 'radiance, splendour'; she embodies the healthy body's glow within the Asclepiad daughter-quintet.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Worldhistoryedu, 'Children of Asclepius'"}],
+        "ability": true
+      }
+    ],
+    "greek_amphion": [
+      {
+        "id": "greek_amphion-charm-stones",
+        "name": "raise the walls of Thebes by charming stones into place with his lyre",
+        "notes": "Taught the lyre by Hermes, who gave him a golden instrument; his music moved the stones of the lower city into position while his brother Zethus carried them.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Apollodorus, Bibliotheca 3.5.5; In2Greece, 'Amphion and Zethus'"}],
+        "ability": true
+      }
+    ]
+  },
+  "materialCulture": {
+    "gaulish_belenos": [
+      {
+        "id": "gaulish_belenos-solar-chariot",
+        "name": "horse-drawn solar chariot",
+        "classId": "vehicle",
+        "kind": "vehicle",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Belenus' (Augustan History; ride of the sun)"}]
+      },
+      {
+        "id": "gaulish_belenos-clay-horse",
+        "name": "votive clay horse",
+        "classId": "offering",
+        "kind": "effigy",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Belenus' (clay horse figurine offerings at the Sainte-Sabine shrine, Burgundy)"}]
+      }
+    ],
+    "gaulish_lugus": [
+      {
+        "id": "gaulish_lugus-spear",
+        "name": "spear of the skilled god",
+        "classId": "weapon",
+        "kind": "weapon",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Lugus' (Gaulish Mercury armed with a spear)"}]
+      }
+    ],
+    "gaulish_taranis": [
+      {
+        "id": "gaulish_taranis-thunderbolt",
+        "name": "thunderbolt",
+        "classId": "weapon",
+        "kind": "weapon",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Taranis' (statuettes with a wheel in one hand and a thunderbolt in the other)"}]
+      }
+    ],
+    "gaulish_sucellus": [
+      {
+        "id": "gaulish_sucellus-wolfskin",
+        "name": "wolf-skin cloak",
+        "classId": "attribute",
+        "kind": "garment",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Sucellus' (bearded man wearing a wolf-skin)"}]
+      }
+    ],
+    "garo_saljong": [
+      {
+        "id": "garo_saljong-rice-beer",
+        "name": "offering of rice beer (chu)",
+        "classId": "offering",
+        "kind": "substance",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Songsarek' (finest rice beer presented at the Wangala in his honour)"}]
+      }
+    ],
+    "gondi_persa_pen": [
+      {
+        "id": "gondi_persa_pen-kamk-pillar",
+        "name": "sacred wooden pillar marked with sun and moon (kamk)",
+        "classId": "cult-object",
+        "kind": "monument",
+        "sources": [{"kind": "secondary", "reference": "Enroute Indian History, 'Persa Pen and the Sacred Autonomy of Gond Religion'"}]
+      }
+    ]
+  },
+  "domains": {
+    "gaulish_belenos": [
+      {"sphereId": "healing", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Belenus' (healing sanctuary at Aquileia; therapeutic springs)"}]}
+    ],
+    "gaulish_lugus": [
+      {"sphereId": "craftsmanship", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Lugus' (master of every craft; shoemakers' guild dedication to the Lugoves)"}]}
+    ],
+    "gaulish_cernunnos": [
+      {"sphereId": "underworld", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Britannica, 'Cernunnos' (chthonic ram-headed serpent; Otherworld associations)"}]}
+    ],
+    "gondi_lingo_pen": [
+      {"sphereId": "law", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Forward Press, 'What about Pari Kupar Lingo...' (four-pillar moral code Sade-Saga)"}]}
+    ],
+    "greek_actaeon": [
+      {"sphereId": "trees-and-remedies", "contextTag": "myth", "sources": [{"kind": "primary", "reference": "Apollodorus, Bibliotheca 3.4.4"}]}
+    ],
+    "greek_admetus": [
+      {"sphereId": "generosity-and-hospitality", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Euripides, Alcestis"}]}
+    ]
+  },
+  "epithets": {
+    "gaulish_belenos": [
+      {"original": "Apollo Belenus", "rom": "Apollo Belenus", "gloss": "Belenus identified with Apollo (interpretatio romana)", "language": "Latin", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Belenus'"}]},
+      {"original": "Belenus Augustus", "rom": "Beleno Augusto", "gloss": "the august / venerable Belenus (dedication formula at Aquileia)", "language": "Latin", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Belenus' ('Beleno Aug(usto)', Aquileia)"}]}
+    ],
+    "gaulish_taranis": [
+      {"original": "Iupiter Taranucnus", "rom": "Iupiter Taranucnus", "gloss": "Jupiter the Thunderer (dedications at Boeckingen and Godramstein)", "language": "Latin", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Taranis' (Taranucnus dedications, Germany)"}]}
+    ],
+    "gaulish_teutates": [
+      {"original": "Mars Toutatis", "rom": "Mars Toutatis", "gloss": "Mars god-of-the-tribe (Barkway silver plate, Britain)", "language": "Latin", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Teutates' (Barkway plate: 'To Mars Toutatis...')"}]}
+    ],
+    "gaulish_sucellus": [
+      {"original": "Sucellus", "rom": "Sucellus", "gloss": "the good striker (su- 'good' + cellos 'striker')", "language": "Gaulish", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Sucellus'"}]},
+      {"original": "Sucellus Silvanus", "rom": "Sucellus Silvanus", "gloss": "Sucellus conflated with Silvanus (Augusta Rauricorum / Augst inscription)", "language": "Latin", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Sucellus' (identified with Silvanus at Augst)"}]}
+    ],
+    "garo_saljong": [
+      {"original": "Misi Saljong", "rom": "Misi Saljong", "gloss": "Saljong coupled with Misi, the rice/crop power; the sun-god of crops and fertility worshipped at Wangala", "language": "Garo", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Songsarek'; Wikipedia, 'Wangala'"}]}
+    ],
+    "garo_tatara_rabuga": [
+      {"original": "Dakgipa Rugipa Stugipa Pantugipa", "rom": "Dakgipa Rugipa Stugipa Pantugipa", "gloss": "the maker-shaper-former-fashioner; the supreme creator 'so high he cannot be reached'", "language": "Garo", "contextTag": "myth", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Songsarek'"}]}
+    ],
+    "garo_nostu_nopantu": [
+      {"original": "Mane Pilte", "rom": "Mane Pilte", "gloss": "the name given to the earth she bore at Tatara-Rabuga's command", "language": "Garo", "contextTag": "myth", "sources": [{"kind": "secondary", "reference": "Garo Journal, 'The Garo Myth on the Creation of the Universe'"}]}
+    ],
+    "gondi_persa_pen": [
+      {"original": "Bara Deo", "rom": "Bara Deo", "gloss": "the Great God; the high clan-god, also Budha Deo / Sri Shambu Mahadeo", "language": "Gondi", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Encyclopedia.com, 'Gond' (Baradeo; Persa Pen clan deities)"}]}
+    ],
+    "gondi_lingo_pen": [
+      {"original": "Pahandi Pari Kupar Lingo", "rom": "Pahandi Pari Kupar Lingo", "gloss": "the culture-hero founder of Koya Punem, the 'way of nature', and the 18 Gond clans", "language": "Gondi", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Gondi people'; Forward Press, 'What about Pari Kupar Lingo...'"}]}
+    ],
+    "greek_aeneas": [
+      {"original": "Iuppiter Indiges", "rom": "Iuppiter Indiges", "gloss": "the Native Jupiter; deified Aeneas worshipped at the River Numicius near Lavinium", "language": "Latin", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Jupiter Indiges' (Livy 1.2)"}]}
+    ]
+  },
+  "cult": {
+    "ga_nai": [
+      {
+        "name": "Lagoon offering of the Nai Wulomo",
+        "type": "offering",
+        "cadence": "seasonal, tied to the lagoon's opening and the Homowo cycle",
+        "notes": "Nai is chief among the great sea/lagoon deities of the coastal Ga, and his priest the Nai Wulomo is the senior of the Ga priesthood, presiding over libations and offerings at the lagoon; the Homowo ('hooting at hunger') harvest festival of the Ga frames the agricultural year in which the sea- and lagoon-gods are propitiated.",
+        "sources": [{"kind": "secondary", "reference": "Osabu-Kle, 'The Ga People and Homowo Festival' (Carleton University); Wikipedia, 'Homowo'"}]
+      }
+    ],
+    "garo_saljong": [
+      {
+        "name": "Wangala (the Hundred Drums harvest thanksgiving)",
+        "term": {"value": "Wangala", "script": "Latn", "rom": "Wangala"},
+        "type": "festival",
+        "cadence": "annual, post-harvest (autumn)",
+        "notes": "The chief Garo agricultural festival, a thanksgiving to Misi Saljong, the sun-god of crops, danced to a hundred long oval drums; no newly harvested rice or vegetables may be eaten until the first-fruits are offered to him, and worshippers appease him with a cock on the sacrificial altar and the finest rice beer.",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Wangala'; Wikipedia, 'Songsarek'"}]
+      }
+    ],
+    "gondi_persa_pen": [
+      {
+        "name": "Pen Kareli / clan-god procession at the pen madai",
+        "type": "festival",
+        "cadence": "at the clan festival (pen madai)",
+        "notes": "The aniconic clan-god, present in an iron implement and a sacred wooden pillar (kamk) rather than an image, is brought out and carried in procession at the clan festival; each Gond clan tends its own Persa Pen with offerings in return for protection, and the saja tree in which Baradeo is held to dwell is venerated.",
+        "sources": [{"kind": "secondary", "reference": "Encyclopedia.com, 'Gond'; Enroute Indian History, 'Persa Pen and the Sacred Autonomy of Gond Religion'"}]
+      }
+    ],
+    "greek_achilles": [
+      {
+        "name": "Hero-cult of Achilles on Leuke (the White Island)",
+        "term": {"value": "Λευκή", "script": "Grek", "rom": "Leuke"},
+        "type": "cult",
+        "cadence": "perennial, with an oracle surviving into the Roman period",
+        "notes": "The most famous seat of Achilles' worship was Leuke, the White Island in the northern Black Sea, where after death Thetis was said to have settled him immortal (the Aethiopis tradition); his temple held an oracle and offerings of rings, cups and precious stones, with Greek and Latin verse-inscriptions praising Achilles and Patroclus. His cult was widespread among the Greek colonists of the Pontic shore.",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Achilles' (cult on Leuke; temple and oracle)"}]
+      }
+    ],
+    "greek_aeacus": [
+      {
+        "name": "The Aeacea at the Aeaceum, Aegina",
+        "term": {"value": "Αἰάκεια", "script": "Grek", "rom": "Aiakeia"},
+        "type": "festival",
+        "cadence": "in his honour at Aegina",
+        "notes": "The Aeginetans held Aeacus the tutelary hero of their island and celebrated the Aeacea in his honour at the Aeaceum, a square precinct walled with white marble; he had sanctuaries at both Aegina and Athens. The cult recalls his prayer that ended the pan-Hellenic drought.",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Aeacus' (Aeacea; the Aeaceum at Aegina)"}]
+      }
+    ],
+    "greek_agamemnon": [
+      {
+        "name": "Hero-cult of Agamemnon at Amyklai and Mycenae",
+        "type": "cult",
+        "cadence": "perennial",
+        "notes": "Agamemnon received hero-cult at Amyklai (with his consort Kassandra, locally Alexandra) and at Mycenae, both claiming his grave; the Amyklaian cult was promoted by the Spartan state as it pressed its claims over the Peloponnese, and a later, probably Lykophronic, syncretism fused him with the sky-god as Zeus-Agamemnon.",
+        "sources": [{"kind": "secondary", "reference": "Salapata, 'The Heroic Cult of Agamemnon'"}]
+      }
+    ],
+    "greek_aeneas": [
+      {
+        "name": "Cult of Aeneas Indiges at the River Numicius, Lavinium",
+        "type": "cult",
+        "cadence": "Roman state cult of the Indigetes",
+        "notes": "After death Aeneas was cleansed of his mortal parts by the river-god Numicus and worshipped at Lavinium as Iuppiter Indiges (the 'Native Jupiter'), his cult centred on a tomb-shrine by the River Numicius; this Latin foundation-cult anchored the Julian claim to descent from him.",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Jupiter Indiges' (Livy 1.2); Mythopedia, 'Indiges'"}]
+      }
+    ],
+    "greek_aethiolas": [
+      {
+        "name": "Lacedaemonian hero-cult of the sons of Menelaus",
+        "type": "cult",
+        "cadence": "local, at Sparta",
+        "notes": "Aethiolas, with his brother Nicostratus, received hero-cult at Sparta as a son of Helen and Menelaus; he is otherwise known only as a name and a cult, with no surviving narrative.",
+        "sources": [{"kind": "primary", "reference": "scholiast on Homer, Iliad 3.175"}]
+      }
+    ],
+    "greek_anteros": [
+      {
+        "name": "Altar of Anteros at Athens",
+        "term": {"value": "Ἀντέρως", "script": "Grek", "rom": "Anteros"},
+        "type": "offering",
+        "cadence": "perennial",
+        "notes": "An altar of Anteros (Love Avenged) stood at Athens, dedicated by resident aliens (metics) in memory of Timagoras, who leapt to his death when the Athenian Meles spurned his love and bade him cast himself from the rock; the remorseful Meles then leapt after him, and Anteros avenged the slighted love.",
+        "sources": [{"kind": "primary", "reference": "Pausanias, Description of Greece 1.30.1"}]
+      }
+    ],
+    "greek_aceso": [
+      {
+        "name": "Worship among the daughters of Asclepius at Epidaurus and Athens",
+        "term": {"value": "Ἀκεσώ", "script": "Grek", "rom": "Akeso"},
+        "type": "cult",
+        "cadence": "in the Asklepieion cult",
+        "notes": "Aceso, 'the healing one' (personifying the curing process rather than the finished cure), was honoured with her sisters Iaso, Hygieia, Panacea and Aegle in the healing sanctuary of their father Asclepius, attested at Athens and Epidaurus.",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Aceso'"}]
+      }
+    ],
+    "greek_aegle_asclepius": [
+      {
+        "name": "Worship among the daughters of Asclepius in the Asklepieion",
+        "term": {"value": "Αἴγλη", "script": "Grek", "rom": "Aigle"},
+        "type": "cult",
+        "cadence": "in the Asklepieion cult",
+        "notes": "Aegle, personifying the radiant good health of the cured body, was honoured with her sisters Iaso, Aceso, Hygieia and Panacea in the healing cult of their father Asclepius at Epidaurus and elsewhere.",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Aceso' (the five Asclepiades); Worldhistoryedu, 'Children of Asclepius'"}]
+      }
+    ],
+    "greek_amphion": [
+      {
+        "name": "Guarded tomb-cult of Amphion and Zethus at Thebes",
+        "type": "cult",
+        "cadence": "perennial, at the shared tumulus",
+        "notes": "Pausanias reports that the Thebans carefully guarded the joint tomb (a tumulus) of Amphion and Zethus, because an oracle warned that should the people of Tithorea take earth from it to lay on Antiope's grave their land would prosper and Thebes' fields fail; the grave was watched especially when the sun was in Taurus.",
+        "sources": [{"kind": "primary", "reference": "Pausanias, Description of Greece 9.17.4"}]
+      }
+    ],
+    "greek_alexander": [
+      {
+        "name": "Hellenistic ruler-cult of Alexander",
+        "type": "cult",
+        "cadence": "posthumous, founded under the Ptolemies",
+        "notes": "After the Siwa oracle hailed him son of Zeus-Ammon (332 BCE) Alexander sought divine honours; a formal cult was instituted only after his death, when Ptolemy I founded the cult of Alexander at Alexandria and Ptolemy II joined it to the dynastic ruler-cult. Successor coinages depicted him horned in the manner of Ammon.",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Ptolemaic cult of Alexander the Great'; World History Encyclopedia, 'Alexander the Great as a God'"}]
+      }
+    ]
+  },
+  "iconography": {
+    "gaulish_belenos": {
+      "attributes": [
+        {"id": "gaulish_belenos-radiate-sun", "name": "radiate solar nimbus / Apollo-like youthful god", "notes": "Identified with Apollo, 'the shining one', whose light he embodies.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Belenus'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "gaulish_belenos-horse", "name": "horse", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Belenus' (clay horse offerings; the horse-drawn sun)"}]}
+      ],
+      "sacredPlants": [
+        {"id": "gaulish_belenos-belinuntia", "name": "belinuntia (henbane), the plant named after him and venerated for its healing power", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Belenus' (the plant Belinuntia called after him)"}]}
+      ]
+    },
+    "gaulish_cernunnos": {
+      "attributes": [
+        {"id": "gaulish_cernunnos-antlers", "name": "stag antlers", "notes": "His defining feature; the seasonally shed-and-regrown antlers mark cyclical renewal, as on the Gundestrup cauldron and the Pillar of the Boatmen.", "sources": [{"kind": "secondary", "reference": "Britannica, 'Cernunnos'; World History Encyclopedia, 'Gundestrup Cauldron'"}]},
+        {"id": "gaulish_cernunnos-crosslegged", "name": "cross-legged ('lotus') seated posture", "notes": "Repeatedly shown seated cross-legged surrounded by beasts, holding a torc and a ram-headed serpent.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Cernunnos'"}]},
+        {"id": "gaulish_cernunnos-ramserpent", "name": "ram-horned (ram-headed) serpent", "notes": "A hybrid beast peculiar to the Celts, held in one hand; carries chthonic/regenerative significance and appears with him as early as Val Camonica.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Cernunnos'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "gaulish_cernunnos-stag", "name": "stag", "sources": [{"kind": "secondary", "reference": "World History Encyclopedia, 'Gundestrup Cauldron'"}]},
+        {"id": "gaulish_cernunnos-ramserpent-animal", "name": "ram-headed serpent", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Cernunnos'"}]}
+      ]
+    },
+    "gaulish_epona": {
+      "attributes": [
+        {"id": "gaulish_epona-sidesaddle", "name": "seated side-saddle on a mare (Equestrian type)", "notes": "The Gaulish 'Equestrian' type shows her riding side-saddle; the 'Imperial' type, commoner outside Gaul, enthrones her flanked by horses or foals.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Epona'"}]},
+        {"id": "gaulish_epona-patera-cornucopia", "name": "patera and cornucopia (with grain, bread or fruit)", "notes": "Her fertility attributes; she is shown with a patera, cornucopia, ears of corn or loaves.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Epona'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "gaulish_epona-horse", "name": "horse and foal", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Epona'"}]}
+      ],
+      "sacredPlants": [
+        {"id": "gaulish_epona-roses", "name": "roses (her image was decked with roses at her Roman feast on 18 December)", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Epona'"}]}
+      ]
+    },
+    "gaulish_esus": {
+      "attributes": [
+        {"id": "gaulish_esus-woodcutter", "name": "bearded woodcutter in a tunic felling a tree with a billhook", "notes": "On the Pillar of the Boatmen he grasps a tree (a willow) with one hand and a billhook in the other, beside the bull Tarvos Trigaranus.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Esus'; Wikipedia, 'Tarvos Trigaranus'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "gaulish_esus-bull-cranes", "name": "bull with three cranes (Tarvos Trigaranus)", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Tarvos Trigaranus'"}]}
+      ],
+      "sacredPlants": [
+        {"id": "gaulish_esus-willow", "name": "willow tree (the tree he hews)", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Esus'"}]}
+      ]
+    },
+    "gaulish_lugus": {
+      "attributes": [
+        {"id": "gaulish_lugus-mercury", "name": "Gaulish Mercury, often spear-armed", "notes": "Underlies Caesar's 'Mercury' of the Gauls, patron of every craft; the Lugoves are his plural manifestation.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Lugus'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "gaulish_lugus-raven", "name": "raven (and cock), the birds of Gaulish Mercury", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Lugus'"}]}
+      ]
+    },
+    "gaulish_nantosuelta": {
+      "attributes": [
+        {"id": "gaulish_nantosuelta-house-sceptre", "name": "house-shaped emblem on a long pole (sceptre)", "notes": "Her chief symbol; on the Sarrebourg relief she holds a small peaked-roof house in her left hand and tips a patera over an altar with her right.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Nantosuelta'"}]},
+        {"id": "gaulish_nantosuelta-beehive", "name": "beehive and honeycomb", "notes": "Domestic emblems marking her as goddess of hearth, home and prosperity.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Nantosuelta'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "gaulish_nantosuelta-raven", "name": "raven", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Nantosuelta'"}]}
+      ]
+    },
+    "gaulish_sucellus": {
+      "attributes": [
+        {"id": "gaulish_sucellus-mallet", "name": "long-handled mallet (hammer)", "notes": "His signature attribute; worshippers offered him miniature hammers.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Sucellus'"}]},
+        {"id": "gaulish_sucellus-olla", "name": "olla / barrel (and goblet, purse or cornucopia)", "notes": "Vessels of material and especially viticultural prosperity.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Sucellus'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "gaulish_sucellus-dog", "name": "dog (his faithful companion)", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Sucellus'"}]}
+      ]
+    },
+    "gaulish_taranis": {
+      "attributes": [
+        {"id": "gaulish_taranis-wheel", "name": "spoked (solar) wheel", "notes": "The emblem repeatedly associated with him as the Jupiter-equated 'wheel god', held opposite the thunderbolt.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Taranis'"}]},
+        {"id": "gaulish_taranis-thunderbolt-attr", "name": "thunderbolt and sceptre", "notes": "Borne with the attributes of Jupiter (thunderbolt, sceptre, eagle).", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Taranis'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "gaulish_taranis-eagle", "name": "eagle (with the Jupiter assimilation)", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Taranis'"}]}
+      ]
+    },
+    "gaulish_teutates": {
+      "attributes": [
+        {"id": "gaulish_teutates-tot-ring", "name": "votive silver ring inscribed TOT", "notes": "'TOT' rings (for Toutatis) are found in Roman Britain, dedications to the tribal protector-god.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Teutates'"}]}
+      ]
+    },
+    "gondi_persa_pen": {
+      "attributes": [
+        {"id": "gondi_persa_pen-aniconic", "name": "aniconic: no idol or image, only the kamk pillar and an iron implement", "notes": "The clan-god has no temple and no image; its presence is shown by a sacred wooden pillar marked with sun and moon and by a hidden iron spear-point/axe.", "sources": [{"kind": "secondary", "reference": "Enroute Indian History, 'Persa Pen and the Sacred Autonomy of Gond Religion'"}]}
+      ],
+      "sacredPlants": [
+        {"id": "gondi_persa_pen-saja", "name": "saja tree (in which Baradeo is held to dwell)", "sources": [{"kind": "secondary", "reference": "Encyclopedia.com, 'Gond'"}]}
+      ]
+    },
+    "greek_actaeon": {
+      "attributes": [
+        {"id": "greek_actaeon-stag-transformation", "name": "huntsman shown at the moment of becoming a stag, torn by his hounds", "notes": "In classical art he is usually fully human (sometimes with small horns) as his own dogs kill him; Renaissance art gives him a stag's antlered head. Vases often add Lyssa (Frenzy/Rabies) maddening the pack.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Actaeon'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "greek_actaeon-hounds", "name": "his hunting hounds (the pack that devours him)", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Actaeon'"}]}
+      ]
+    },
+    "greek_anteros": {
+      "attributes": [
+        {"id": "greek_anteros-winged-youth", "name": "winged youth like Eros but with long hair and plumed butterfly wings", "notes": "One of the Erotes in Aphrodite's train; sometimes armed with a golden club or with arrows of lead.", "sources": [{"kind": "secondary", "reference": "Theoi.com, 'Eros-Anteros'; Wikipedia, 'Anteros'"}]}
+      ]
+    },
+    "greek_alexander": {
+      "attributes": [
+        {"id": "greek_alexander-ammon-horns", "name": "the ram's horns of Zeus-Ammon", "notes": "On coins (notably the posthumous types of Lysimachus) Alexander wears the curling ram-horns of Ammon, advertising his divine sonship proclaimed at Siwa.", "sources": [{"kind": "secondary", "reference": "World History Encyclopedia, 'Alexander the Great as a God'; Wikipedia, 'Alexander the Great'"}]}
+      ]
+    }
+  }
+}

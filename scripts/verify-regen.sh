@@ -7,6 +7,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 node scripts/gen-new-figures.cjs   >/dev/null
+node scripts/gen-enrich.cjs        >/dev/null
 node scripts/gen-powers-terms.cjs  >/dev/null
 node scripts/gen-powers-items.cjs  >/dev/null
 python3 build.py                   >/dev/null

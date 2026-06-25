@@ -1,0 +1,485 @@
+{
+  "faculties": {
+    "nuristani_bagisht": [
+      {
+        "id": "nuristani_bagisht-pour-irrigation",
+        "name": "makes the irrigation channels run and the flood-fed fields prosper",
+        "notes": "River and wealth god; the prosperity of the flood-watered terraces of the Bashgal valley was attributed to him.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Robertson, The Kafirs of the Hindu-Kush (1896)"}],
+        "ability": true
+      }
+    ],
+    "phoenician_astarte": [
+      {
+        "id": "phoenician_astarte-evening-star",
+        "name": "shines as the evening star (Venus) and governs the heavens",
+        "notes": "Identified with the planet Venus; depicted with a star within a circle.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Bonnet, Astarte: dossier documentaire et perspectives historiques (1996)"}],
+        "ability": true
+      }
+    ],
+    "ovambo_kalunga": [
+      {
+        "id": "ovambo_kalunga-send-rain",
+        "name": "sends the rain and provides for the created world",
+        "notes": "As supreme creator and provider of rain, approached through royal ancestors who act as intermediaries.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Aarni, The Kalunga Concept in Ovambo Religion from 1870 Onwards (1982)"}],
+        "ability": true
+      }
+    ],
+    "ossetian_satana": [
+      {
+        "id": "ossetian_satana-brew-beer",
+        "name": "brews the first beer of the Narts",
+        "notes": "After seeing a bird faint from eating wild hops, Satana mixed the hops with ground malt and so invented Ossetian beer (bægæny), the drink of the Nart feasts.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros: Légendes sur les Nartes (1965)"}],
+        "ability": true
+      }
+    ],
+    "palauan_uchelianged": [
+      {
+        "id": "palauan_uchelianged-order-cosmos",
+        "name": "commands land to rise from the barren sea and sets the heavens in order",
+        "notes": "The sky high-god who, gazing on the empty waters, ordered the islands to emerge and ranked the cosmos after Latmikaik's brood raised the firmament.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Parmentier, The Sacred Remains: Myth, History, and Polity in Belau (1987)"}],
+        "ability": true
+      }
+    ],
+    "otomi_zithu": [
+      {
+        "id": "otomi_zithu-command-demons",
+        "name": "rules the band of nocturnal earth-demons",
+        "notes": "Lord of the zithü (devils/demons); enthroned at the apex of the night-pantheon and merged in some tellings with the lunar figure, he commands the malevolent powers of the underworld.",
+        "inheritability": "none",
+        "sources": [{"kind": "secondary", "reference": "Galinier, La mitad del mundo: cuerpo y cosmos en los rituales otomíes (1990)"}],
+        "ability": true
+      }
+    ]
+  },
+  "materialCulture": {
+    "phoenician_baal_hammon": [
+      {
+        "id": "phoenician_baal_hammon-throne-sphinxes",
+        "name": "throne flanked by winged sphinxes",
+        "classId": "regalia",
+        "kind": "regalia",
+        "sources": [{"kind": "secondary", "reference": "Lipiński, Dieux et déesses de l'univers phénicien et punique (1995)"}]
+      }
+    ],
+    "pawnee_morning_star": [
+      {
+        "id": "pawnee_morning_star-war-club",
+        "name": "warrior's club and torch of the dawn",
+        "classId": "weapon",
+        "kind": "weapon",
+        "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]
+      }
+    ],
+    "ossetian_donbettyr": [
+      {
+        "id": "ossetian_donbettyr-undersea-realm",
+        "name": "the undersea kingdom of Donbettyr",
+        "classId": "structure",
+        "kind": "structure",
+        "sources": [{"kind": "secondary", "reference": "Colarusso, Nart Sagas from the Caucasus (2002)"}]
+      }
+    ],
+    "oduduwa": [
+      {
+        "id": "oduduwa-aare-crown",
+        "name": "the Aare (Ade-Aare) crown, said to have descended from heaven",
+        "classId": "regalia",
+        "kind": "regalia",
+        "sources": [{"kind": "secondary", "reference": "Drewal, Pemberton & Abiodun, Yoruba: Nine Centuries of African Art and Thought (1989)"}]
+      }
+    ],
+    "pawnee_shakuru_sun": [
+      {
+        "id": "pawnee_shakuru_sun-fire-bundle",
+        "name": "the new fire kindled in the Sun's name",
+        "classId": "implement",
+        "kind": "implement",
+        "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]
+      }
+    ]
+  },
+  "domains": {
+    "ogun": [
+      {"sphereId": "iron-metallurgy", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Barnes (ed.), Africa's Ogun: Old World and New (1997)"}]},
+      {"sphereId": "war", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Barnes (ed.), Africa's Ogun: Old World and New (1997)"}]},
+      {"sphereId": "hunting", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Barnes (ed.), Africa's Ogun: Old World and New (1997)"}]},
+      {"sphereId": "oaths-and-justice", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Barnes (ed.), Africa's Ogun: Old World and New (1997)"}]}
+    ],
+    "oranmiyan": [
+      {"sphereId": "kingship", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Johnson, The History of the Yorubas (1921)"}]},
+      {"sphereId": "war", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Johnson, The History of the Yorubas (1921)"}]},
+      {"sphereId": "dynastic-foundation", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Egharevba, A Short History of Benin (1968)"}]}
+    ],
+    "ossetian_donbettyr": [
+      {"sphereId": "rivers-and-waters", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]},
+      {"sphereId": "sea", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+    ]
+  },
+  "epithets": {
+    "nupe_soko": [
+      {"original": "Tsóci", "rom": "Tsoci", "gloss": "Our Lord / the Owner of us", "language": "Nupe", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Nadel, Nupe Religion (1954)"}]}
+    ],
+    "obatala": [
+      {"original": "Ọba tálá", "rom": "Oba tala", "gloss": "King of the White Cloth", "language": "Yoruba", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Idowu, Olódùmarè: God in Yoruba Belief (1962)"}]}
+    ],
+    "orunmila": [
+      {"original": "Ifá", "rom": "Ifa", "gloss": "the oracle-divinity himself", "language": "Yoruba", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Abimbola, Ifá: An Exposition of Ifá Literary Corpus (1976)"}]}
+    ],
+    "olokun": [
+      {"original": "Olú okun", "rom": "Olu okun", "gloss": "Lord/Owner of the Ocean", "language": "Yoruba", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Ben-Amos, The Art of Benin (1980)"}]}
+    ],
+    "oya": [
+      {"original": "Odò Ọya", "rom": "Odo Oya", "gloss": "the River Oya (the Niger)", "language": "Yoruba", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Gleason, Oya: In Praise of the Goddess (1987)"}]}
+    ],
+    "ossetian_donbettyr": [
+      {"original": "Дондзау", "rom": "Don-dzau", "gloss": "Lord of the Waters", "language": "Ossetian", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+    ],
+    "ossetian_satana": [
+      {"original": "Нарты ус", "rom": "Narty us", "gloss": "Woman/Mother of the Narts", "language": "Ossetian", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+    ],
+    "otomi_otontecuhtli": [
+      {"original": "Xócotl", "rom": "Xocotl", "gloss": "the Fruit (that falls)", "language": "Nahuatl", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Sahagún, Florentine Codex, Book 2 (Anderson & Dibble trans.)"}]}
+    ],
+    "phoenician_baal_hammon": [
+      {"original": "𐤁𐤏𐤋 𐤒𐤓𐤍𐤌", "rom": "Baʿal Qarnaim", "gloss": "Lord of the Two Horns", "language": "Punic", "contextTag": "cult", "sources": [{"kind": "secondary", "reference": "Lipiński, Dieux et déesses de l'univers phénicien et punique (1995)"}]}
+    ],
+    "pawnee_north_star": [
+      {"original": "the Star That Does Not Walk Around", "rom": "the Star That Does Not Walk Around", "gloss": "Polaris, the fixed chief-star", "language": "English (Pawnee idiom)", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+    ],
+    "ossetian_batraz": [
+      {"original": "болат", "rom": "bolat", "gloss": "the Steel (one)", "language": "Ossetian", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+    ],
+    "olodumare": [
+      {"original": "Ọlọ́run", "rom": "Olorun", "gloss": "Owner/Lord of the Sky", "language": "Yoruba", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Idowu, Olódùmarè: God in Yoruba Belief (1962)"}]}
+    ]
+  },
+  "cult": {
+    "nupe_soko": [
+      {
+        "name": "the Ketsa rock offering against flood",
+        "type": "offering",
+        "cadence": "in times of danger of flood",
+        "notes": "A white cow, white fowl (cork) and honey were sacrificed at the foot of a rock called Ketsa; Nadel records the Etsu of Patigi sending a fowl in 1936 for the peace and prosperity of the kingdom.",
+        "sources": [{"kind": "secondary", "reference": "Nadel, Nupe Religion (1954)"}]
+      }
+    ],
+    "nuristani_imra": [
+      {
+        "name": "goat sacrifice and juniper bonfire at the temple of Imra",
+        "type": "sacrifice",
+        "cadence": "seasonal and on request of pilgrims",
+        "notes": "The cult centred on the sacrifice of goats and on purifying bonfires whose juniper smoke mixed with burnt blood and butterfat; the great temple of Imra drew regional pilgrims.",
+        "sources": [{"kind": "secondary", "reference": "Robertson, The Kafirs of the Hindu-Kush (1896)"}]
+      }
+    ],
+    "nuristani_gish": [
+      {
+        "name": "war-rites and victory offerings at the shrine of Gish",
+        "type": "sacrifice",
+        "cadence": "before raids and at festival",
+        "notes": "The most active cult among the Siah-Posh Kafirs of the Bashgal valley; Gish was invoked for victory and clan protection, with sacrifices and dances at his shrine and effigy.",
+        "sources": [{"kind": "secondary", "reference": "Robertson, The Kafirs of the Hindu-Kush (1896)"}]
+      }
+    ],
+    "nuristani_disani": [
+      {
+        "name": "birth offerings at the shrine of Disani",
+        "type": "offering",
+        "cadence": "at the birth of a son and at agricultural feasts",
+        "notes": "Men presented a goat to Disani at the birth of each son; as great mother-goddess she oversaw all births and the fertility of fields and herds, her carved effigy housed in a small shrine.",
+        "sources": [{"kind": "secondary", "reference": "Robertson, The Kafirs of the Hindu-Kush (1896)"}]
+      }
+    ],
+    "obatala": [
+      {
+        "name": "Obatala festival (white-cloth feast)",
+        "type": "festival",
+        "cadence": "annual",
+        "notes": "Worshippers process in white cloth and beads, offer boneless animals (especially the giant snail, igbin), white chalk (efun), coconut and snail water; palm wine is strictly forbidden in his worship.",
+        "sources": [{"kind": "secondary", "reference": "Idowu, Olódùmarè: God in Yoruba Belief (1962)"}]
+      }
+    ],
+    "ogun": [
+      {
+        "name": "Ogun festival (Odun Ogun)",
+        "type": "festival",
+        "cadence": "annual (around August–September)",
+        "notes": "Smiths donate new cutlasses, hoes and gongs; the shrine is dressed with palm fronds, cowries and kola, and a dog (Ogun's sacred animal) is sacrificed. Oaths are sworn by kissing iron in his name.",
+        "sources": [{"kind": "secondary", "reference": "Barnes (ed.), Africa's Ogun: Old World and New (1997)"}]
+      }
+    ],
+    "oshun": [
+      {
+        "name": "Osun-Osogbo festival",
+        "type": "festival",
+        "cadence": "annual (August)",
+        "notes": "A pilgrimage and procession to the Osun River and its sacred grove at Osogbo, led by the Arugba (votary bearing the sacrifice-calabash); offerings of honey and brass at the river renew the covenant between the goddess and the town.",
+        "term": {"value": "Ọ̀ṣun Òṣogbo", "script": "Latin (Yoruba)", "rom": "Osun Osogbo"},
+        "sources": [{"kind": "secondary", "reference": "UNESCO World Heritage nomination, Osun-Osogbo Sacred Grove (2005); Murray, Beier"}]
+      }
+    ],
+    "olokun": [
+      {
+        "name": "Olokun worship at riverside/coastal shrines",
+        "type": "offering",
+        "cadence": "regular and at the Igue/Olokun festivals (Benin)",
+        "notes": "Priestesses (ohen) tend altars holding brass figures, coral beads, chalk and water-pots; in Benin the Olokun cult of wealth and fertility is among the most prominent, its shrines built near rivers and the lagoon.",
+        "sources": [{"kind": "secondary", "reference": "Ben-Amos, The Art of Benin (1980)"}]
+      }
+    ],
+    "oya": [
+      {
+        "name": "Egungun masquerade and Oya rites",
+        "type": "festival",
+        "cadence": "annual / at funerals",
+        "notes": "As the only orisa able to command the egungun (ancestral dead), Oya drives the masquerade between the worlds; her devotees dance with flowing cloths and flywhisks imitating her winds, and she is offered at the Niger and at the marketplace.",
+        "sources": [{"kind": "secondary", "reference": "Gleason, Oya: In Praise of the Goddess (1987)"}]
+      }
+    ],
+    "phoenician_baal_hammon": [
+      {
+        "name": "the molk offering at the Tophet",
+        "type": "sacrifice",
+        "cadence": "in fulfilment of vows and in time of crisis",
+        "notes": "Burnt offerings (the rite called molk) were made to Baal Hammon and Tanit at open-air precincts (tophets); the cremated remains, of infants and of lambs, were buried in urns under stelae. The practice is most fully attested at Carthage from c. 8th–2nd c. BCE.",
+        "sources": [{"kind": "secondary", "reference": "Lipiński, Dieux et déesses de l'univers phénicien et punique (1995); Stager, on the Carthage tophet"}]
+      }
+    ],
+    "phoenician_astarte": [
+      {
+        "name": "temple service of Astarte at Sidon and Tyre",
+        "type": "temple",
+        "cadence": "year-round royal cult",
+        "notes": "Chief goddess of the Sidonian and Tyrian royal houses; at Sidon she shared a temple with Eshmun, and Sidonian kings and queens (per the Eshmunazar inscription) served as her priests and built her sanctuaries.",
+        "sources": [{"kind": "primary", "reference": "Eshmunazar II sarcophagus inscription (KAI 14), Sidon"}]
+      }
+    ],
+    "pawnee_morning_star": [
+      {
+        "name": "the Morning Star sacrifice (captive-girl rite)",
+        "type": "sacrifice",
+        "cadence": "in years when Mars rose as morning star, prompted by a vision",
+        "notes": "The Skidi band's most solemn rite: a captive girl, ritually identified with the Evening Star, was raised on a scaffold of sacred woods (figuring the western garden of creation) and sacrificed at dawn so that fertility might be renewed; last performed 1838.",
+        "sources": [{"kind": "secondary", "reference": "Linton, The Sacrifice to the Morning Star by the Skidi Pawnee (1922); Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]
+      }
+    ],
+    "otomi_otontecuhtli": [
+      {
+        "name": "Xócotl Huetzi (the falling of the fruit)",
+        "type": "festival",
+        "cadence": "annual (Nahua month Xócotl Huetzi, c. August)",
+        "notes": "A tall pole figuring a tree was raised bearing an amaranth-dough image of Otontecuhtli/Xócotl at its top; after fire-rites for the dead, youths competed to climb the pole and seize the image. The festival joined the harvest of fruit to the cult of fire and the dead.",
+        "sources": [{"kind": "secondary", "reference": "Sahagún, Florentine Codex, Book 2 (Anderson & Dibble trans.); López Austin, on Xocotl Huetzi"}]
+      }
+    ],
+    "oduduwa": [
+      {
+        "name": "Olojo festival at Ile-Ife",
+        "type": "festival",
+        "cadence": "annual",
+        "notes": "Celebrating the dawn of creation, the Ooni of Ife emerges after days of seclusion wearing the Aare crown of Oduduwa and leads chiefs and priests to the shrine of Ogun; Oduduwa is venerated as progenitor and first king at his Ile-Ife shrine.",
+        "term": {"value": "Olójó", "script": "Latin (Yoruba)", "rom": "Olojo"},
+        "sources": [{"kind": "secondary", "reference": "Drewal, Pemberton & Abiodun, Yoruba: Nine Centuries of African Art and Thought (1989)"}]
+      }
+    ],
+    "palauan_milad": [
+      {
+        "name": "veneration at the rock-shelter of Ngeremlengui",
+        "type": "offering",
+        "cadence": "ancestral / origin-site observance",
+        "notes": "Milad bore four stone children at the cave of Ngebesek in Ngeremlengui, each founding a high-ranking village (Imeungs, Melekeok, Oreor/Koror, and the sister-stone); the site is held the most sacred origin place of the Palauan polity.",
+        "sources": [{"kind": "secondary", "reference": "Parmentier, The Sacred Remains: Myth, History, and Polity in Belau (1987)"}]
+      }
+    ]
+  },
+  "iconography": {
+    "nupe_soko": {
+      "attributes": [
+        {"id": "nupe_soko-sky-lightning", "name": "the sky itself, and the lightning", "notes": "Soko denotes both the high god and the sky; he is closely associated with rain and lightning rather than imaged anthropomorphically.", "sources": [{"kind": "secondary", "reference": "Nadel, Nupe Religion (1954)"}]}
+      ]
+    },
+    "nuristani_imra": {
+      "attributes": [
+        {"id": "nuristani_imra-horseman", "name": "the creator represented riding a horse", "notes": "Imra was depicted as a rider; his great wooden temple and idol were the chief sanctuary of the Kafirs.", "sources": [{"kind": "secondary", "reference": "Encyclopaedia Iranica, 'Nuristan'"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "nuristani_imra-goat", "name": "the goat (chief sacrificial victim)", "sources": [{"kind": "secondary", "reference": "Robertson, The Kafirs of the Hindu-Kush (1896)"}]}
+      ],
+      "sacredPlants": [
+        {"id": "nuristani_imra-juniper", "name": "juniper (burnt for purifying smoke)", "sources": [{"kind": "secondary", "reference": "Robertson, The Kafirs of the Hindu-Kush (1896)"}]}
+      ]
+    },
+    "nuristani_disani": {
+      "attributes": [
+        {"id": "nuristani_disani-effigy", "name": "carved wooden effigy in a small shrine, with a round face and white-stone eyes", "notes": "Cognate Kalash Dizane idols had a round face with white stones for eyes and a quartz mouth; Disani's shrine above Kamdesh was a small carved house with her effigy in the doorway.", "sources": [{"kind": "secondary", "reference": "Robertson, The Kafirs of the Hindu-Kush (1896)"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "nuristani_disani-goat", "name": "the goat (offered at the birth of a son)", "sources": [{"kind": "secondary", "reference": "Robertson, The Kafirs of the Hindu-Kush (1896)"}]}
+      ]
+    },
+    "nuristani_gish": {
+      "attributes": [
+        {"id": "nuristani_gish-effigy-weapons", "name": "wooden effigy and shrine hung with the spoils and arms of war", "notes": "The popular war-god of the Bashgal; his shrine and image were the focus of the most active Siah-Posh cult.", "sources": [{"kind": "secondary", "reference": "Robertson, The Kafirs of the Hindu-Kush (1896)"}]}
+      ]
+    },
+    "obatala": {
+      "sacredAnimals": [
+        {"id": "obatala-snail", "name": "the giant land snail (igbin), his preferred boneless offering", "sources": [{"kind": "secondary", "reference": "Idowu, Olódùmarè: God in Yoruba Belief (1962)"}]}
+      ],
+      "attributes": [
+        {"id": "obatala-white", "name": "the colour white — white cloth, white chalk (efun), white beads", "notes": "All of Obatala's regalia and offerings are white, signifying purity; palm wine is taboo to him.", "sources": [{"kind": "secondary", "reference": "Idowu, Olódùmarè: God in Yoruba Belief (1962)"}]}
+      ]
+    },
+    "ogun": {
+      "sacredAnimals": [
+        {"id": "ogun-dog", "name": "the dog (his sacrificial animal and companion)", "sources": [{"kind": "secondary", "reference": "Barnes (ed.), Africa's Ogun (1997)"}]}
+      ],
+      "sacredPlants": [
+        {"id": "ogun-palm-frond", "name": "the palm frond (mariwo), his emblem", "sources": [{"kind": "secondary", "reference": "Barnes (ed.), Africa's Ogun (1997)"}]}
+      ],
+      "attributes": [
+        {"id": "ogun-iron-tools", "name": "iron implements — cutlass, hoe and other forged tools", "notes": "Iron and its implements are Ogun's defining attribute and the medium of oaths sworn in his name.", "sources": [{"kind": "secondary", "reference": "Barnes (ed.), Africa's Ogun (1997)"}]}
+      ]
+    },
+    "oshun": {
+      "sacredAnimals": [
+        {"id": "oshun-peacock", "name": "the peacock", "sources": [{"kind": "secondary", "reference": "Badejo, Òṣun Sèègèsí (1996)"}]},
+        {"id": "oshun-vulture", "name": "the vulture", "sources": [{"kind": "secondary", "reference": "Badejo, Òṣun Sèègèsí (1996)"}]}
+      ],
+      "attributes": [
+        {"id": "oshun-brass", "name": "brass and gold — fans, bracelets and the brass bell (aaja)", "notes": "Brass (ide) is Oshun's sacred metal; honey, the mirror and the colour yellow/amber are her tokens.", "sources": [{"kind": "secondary", "reference": "Badejo, Òṣun Sèègèsí (1996)"}]}
+      ]
+    },
+    "oya": {
+      "sacredAnimals": [
+        {"id": "oya-buffalo", "name": "the water buffalo (her avatar)", "notes": "Oya alone among the orisa rises out of the buffalo and returns to it at will.", "sources": [{"kind": "secondary", "reference": "Gleason, Oya: In Praise of the Goddess (1987)"}]}
+      ],
+      "attributes": [
+        {"id": "oya-iruke", "name": "the flywhisk (iruke), with lightning and the sword", "notes": "She is figured by the horsetail/buffalo-tail whisk, the sword, lightning and the whirlwind.", "sources": [{"kind": "secondary", "reference": "Gleason, Oya: In Praise of the Goddess (1987)"}]}
+      ]
+    },
+    "olokun": {
+      "attributes": [
+        {"id": "olokun-coral-beads", "name": "coral and the wealth of the deep — beads, brass figures, water-pots", "notes": "Olokun's altars are heaped with coral, glass beads and brass; in Benin court art the divine king's legs are figured as mudfish, linking the Oba to the ocean god.", "sources": [{"kind": "secondary", "reference": "Ben-Amos, The Art of Benin (1980)"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "olokun-mudfish", "name": "the mudfish (creature of the watery threshold)", "sources": [{"kind": "secondary", "reference": "Ben-Amos, The Art of Benin (1980)"}]}
+      ]
+    },
+    "osanyin": {
+      "attributes": [
+        {"id": "osanyin-iron-staff-bird", "name": "the iron staff crowned with a single bird above a ring of sixteen birds", "notes": "The herbalist's wrought-iron staff (opa Osanyin), surmounted by a great bird, is the signature emblem of his medicine.", "sources": [{"kind": "secondary", "reference": "Thompson, Flash of the Spirit (1983)"}]}
+      ],
+      "sacredPlants": [
+        {"id": "osanyin-leaves", "name": "the leaves of the forest (ewe), the source of all his cures", "sources": [{"kind": "secondary", "reference": "Verger, Ewé: The Use of Plants in Yoruba Society (1995)"}]}
+      ]
+    },
+    "phoenician_astarte": {
+      "sacredAnimals": [
+        {"id": "phoenician_astarte-dove", "name": "the dove", "sources": [{"kind": "secondary", "reference": "Bonnet, Astarte (1996)"}]},
+        {"id": "phoenician_astarte-lion", "name": "the lion (her war-aspect mount)", "sources": [{"kind": "secondary", "reference": "Bonnet, Astarte (1996)"}]}
+      ],
+      "attributes": [
+        {"id": "phoenician_astarte-star", "name": "the eight-rayed star within a circle (Venus)", "sources": [{"kind": "secondary", "reference": "Bonnet, Astarte (1996)"}]},
+        {"id": "phoenician_astarte-cow-horns", "name": "the cow-horn crown (assimilated to Egyptian Hathor/Isis)", "sources": [{"kind": "secondary", "reference": "Bonnet, Astarte (1996)"}]}
+      ]
+    },
+    "phoenician_baal_hammon": {
+      "attributes": [
+        {"id": "phoenician_baal_hammon-ram-horns", "name": "the curling ram's horns and a bearded elder enthroned", "notes": "Depicted as a bearded old man with curving ram's horns, crowned and seated on a sphinx-throne.", "sources": [{"kind": "secondary", "reference": "Lipiński, Dieux et déesses de l'univers phénicien et punique (1995)"}]}
+      ],
+      "sacredAnimals": [
+        {"id": "phoenician_baal_hammon-ram", "name": "the ram", "sources": [{"kind": "secondary", "reference": "Lipiński, Dieux et déesses de l'univers phénicien et punique (1995)"}]}
+      ]
+    },
+    "otomi_otontecuhtli": {
+      "attributes": [
+        {"id": "otomi_otontecuhtli-butterfly", "name": "the butterfly device (papalotl) on the breast", "notes": "His mantled image bears a butterfly insignia, an old fire-and-soul emblem; the festival image was modelled in amaranth dough atop the Xocotl pole.", "sources": [{"kind": "secondary", "reference": "Sahagún, Florentine Codex, Books 1–2 (Anderson & Dibble trans.)"}]}
+      ]
+    },
+    "pawnee_morning_star": {
+      "attributes": [
+        {"id": "pawnee_morning_star-red-paint", "name": "the warrior painted red, bearing fire and the war-club", "notes": "Identified with Mars; in the sacrifice the male principle of the east arrayed in red.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+      ]
+    },
+    "pawnee_evening_star": {
+      "attributes": [
+        {"id": "pawnee_evening_star-garden-west", "name": "the walled garden of the west, source of all animal and plant life", "notes": "Identified with Venus as the western, female 'White Star Woman'; her garden of creation, guarded by ordeals, is figured in the scaffold of the Morning Star rite.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+      ]
+    },
+    "pawnee_north_star": {
+      "attributes": [
+        {"id": "pawnee_north_star-fixed-chief", "name": "the motionless chief-star of the north (Polaris)", "notes": "'The Star That Does Not Walk Around', appointed by Tirawa to stand fixed and keep the other stars on their courses.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+      ]
+    },
+    "pawnee_tirawa": {
+      "attributes": [
+        {"id": "pawnee_tirawa-thunder-messenger", "name": "manifest in the thunder through his messenger Paruxti", "notes": "'Our Father Above', the unseen creator who governs the cosmos through the star-gods and is heard in the thunder.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+      ]
+    },
+    "palauan_latmikaik": {
+      "attributes": [
+        {"id": "palauan_latmikaik-giant-clam", "name": "the primordial giant clam from which life issued", "notes": "The 'clam mother'; in some tellings her name also names the clam itself, from which the first sea creatures and the ancestors of the Palauans came.", "sources": [{"kind": "secondary", "reference": "Parmentier, The Sacred Remains (1987)"}]}
+      ]
+    },
+    "palauan_milad": {
+      "attributes": [
+        {"id": "palauan_milad-stone-children", "name": "the four founding stones (her petrified children)", "notes": "Her offspring stand as the boundary-stones and monoliths that anchor the four high-ranking villages and the matrilineal order of Palau.", "sources": [{"kind": "secondary", "reference": "Parmentier, The Sacred Remains (1987)"}]}
+      ]
+    },
+    "palauan_chuab": {
+      "attributes": [
+        {"id": "palauan_chuab-body-land", "name": "the felled giant whose body became the islands", "notes": "The giant (Chuab/Uab) outgrew the people and was burnt; the body, toppling, formed Koror, Babeldaob and Kayangel.", "sources": [{"kind": "secondary", "reference": "Parmentier, The Sacred Remains (1987)"}]}
+      ]
+    },
+    "otomi_zana": {
+      "attributes": [
+        {"id": "otomi_zana-moon", "name": "the moon, governing night, weaving, time and childbirth", "notes": "The Old Mother (Pømbe/Zäna), lunar and earthly at once, consort of the Old Father of fire; she presides over the night and the reckoning of time.", "sources": [{"kind": "secondary", "reference": "Galinier, La mitad del mundo (1990)"}]}
+      ],
+      "sacredPlants": [
+        {"id": "otomi_zana-maguey", "name": "the maguey (century plant), yielding pulque", "sources": [{"kind": "secondary", "reference": "Galinier, La mitad del mundo (1990)"}]}
+      ]
+    },
+    "ovambo_kalunga": {
+      "attributes": [
+        {"id": "ovambo_kalunga-otiose-creator", "name": "the remote, unseen creator, named also for death and the abyss", "notes": "Kalunga is approached only through royal ancestors as intermediaries; the single name spans creator, death and the unknown, and is shared into Herero (Ndjambi Karunga).", "sources": [{"kind": "secondary", "reference": "Aarni, The Kalunga Concept in Ovambo Religion (1982)"}]}
+      ]
+    },
+    "oduduwa": {
+      "attributes": [
+        {"id": "oduduwa-beaded-crown", "name": "the conical beaded crown (ade) of Yoruba kingship", "notes": "The fringed, conical beaded crown worn by the Ooni and the kings descended from Oduduwa marks his royal progeniture; the original Aare crown is said to have come from heaven with him.", "sources": [{"kind": "secondary", "reference": "Drewal, Pemberton & Abiodun, Yoruba: Nine Centuries of African Art and Thought (1989)"}]}
+      ]
+    },
+    "ossetian_batraz": {
+      "attributes": [
+        {"id": "ossetian_batraz-steel-body", "name": "the body of tempered steel, glowing white-hot in battle", "notes": "Tempered in the forge of Kurdalægon, Batraz had a steel body invulnerable save where the smith could not reach; he could hurl himself like a fired arrow and strike like lightning.", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]},
+        {"id": "ossetian_batraz-sword-sea", "name": "the great sword that must be cast into the sea at his death", "notes": "Batraz dies only after his magic sword is thrown into the sea; the waters turn and storm, and the sword strikes thereafter as lightning against evil.", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+      ]
+    },
+    "ossetian_dzerassae": {
+      "attributes": [
+        {"id": "ossetian_dzerassae-dove", "name": "her dove form, in which she raids the Narts' apple tree", "notes": "Daughter of Donbettyr, she takes the shape of a golden dove to steal the fruit of the wondrous apple tree of the Narts.", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+      ]
+    },
+    "ossetian_uryzmaeg": {
+      "attributes": [
+        {"id": "ossetian_uryzmaeg-elder-narts", "name": "the grey-bearded elder presiding at the Nart feast", "notes": "Head of the Narts in the heroic age and sister-husband of Satana; figured as the wise elder who leads the cattle-raids and the council.", "sources": [{"kind": "secondary", "reference": "Dumézil, Le livre des héros (1965)"}]}
+      ]
+    },
+    "pawnee_pah_moon": {
+      "attributes": [
+        {"id": "pawnee_pah_moon-moon-west", "name": "the Moon set in the west, female counterpart of the Sun", "notes": "Pah, placed by Tirawa opposite the Sun (Shakuru); with the Sun she bore the first boy of the Skidi creation.", "sources": [{"kind": "secondary", "reference": "Murie & Dorsey, Ceremonies of the Pawnee (1981)"}]}
+      ]
+    }
+  }
+}

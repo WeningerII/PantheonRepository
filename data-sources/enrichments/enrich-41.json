@@ -1,0 +1,664 @@
+{
+  "faculties": {
+    "phrygian_agdistis": [
+      {
+        "id": "phrygian_agdistis-androgynous-generation",
+        "name": "Engender Attis from the severed body",
+        "notes": "Born androgyne from the rock Agdos (impregnated by the seed of Zeus/Papas); after the gods sever its male part, an almond (or pomegranate) springs up whose fruit impregnates the river-nymph Nana, who bears Attis.",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pausanias, Description of Greece 7.17.10-12; Arnobius, Adversus Nationes 5.5-7"
+          }
+        ],
+        "ability": true
+      },
+      {
+        "id": "phrygian_agdistis-madness",
+        "name": "Strike with frenzy and drive to self-mutilation",
+        "notes": "Out of jealous love Agdistis maddens Attis at his wedding, causing him to castrate himself beneath the pine; the ecstatic frenzy of the cult's Galli re-enacts this power.",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Arnobius, Adversus Nationes 5.5-7; Pausanias 7.17.10-12"
+          }
+        ],
+        "ability": true
+      }
+    ],
+    "polynesian_kanaloa": [
+      {
+        "id": "polynesian_kanaloa-healing",
+        "name": "Heal the sick and counter sorcery",
+        "notes": "Prayers to Kanaloa are recited over the sick; with Kane he is invoked in kahuna healing to lift the effects of sorcery and disease.",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beckwith, Hawaiian Mythology (Kane and Kanaloa)"
+          }
+        ],
+        "ability": true
+      },
+      {
+        "id": "polynesian_kanaloa-open-springs",
+        "name": "Open fresh-water springs with Kane",
+        "notes": "Travelling the islands with Kane in search of water and awa, the pair strike the ground to open freshwater springs (wai-a-Kane).",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beckwith, Hawaiian Mythology (Kane and Kanaloa)"
+          }
+        ],
+        "ability": true
+      }
+    ],
+    "polynesian_mahuika": [
+      {
+        "id": "polynesian_mahuika-fire-in-nails",
+        "name": "Keep and yield fire from her fingernails and toenails",
+        "notes": "The fire-goddess holds fire in her twenty nails; Maui tricks her into surrendering them one by one, and the last, hurled in rage, sets the world (and the fire-trees) alight.",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Grey, Polynesian Mythology (Maui and Mahuika); Te Ara Encyclopedia of New Zealand"
+          }
+        ],
+        "ability": true
+      },
+      {
+        "id": "polynesian_mahuika-seed-fire-in-trees",
+        "name": "Plant fire in the wood of the kaikomako",
+        "notes": "Her scattered fire lodges in the mahoe, totara, patete, pukatea and kaikomako trees, whence humankind thereafter draws fire by friction.",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Grey, Polynesian Mythology (Maui and Mahuika)"
+          }
+        ],
+        "ability": true
+      }
+    ],
+    "polynesian_hinenuitepo": [
+      {
+        "id": "polynesian_hinenuitepo-decree-mortality",
+        "name": "Fix death upon humankind",
+        "notes": "By crushing Maui as he attempts to reverse mortality, the Great Lady of the Night makes him the first to die and seals death as the lot of all people.",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Grey, Polynesian Mythology (The Death of Maui)"
+          }
+        ],
+        "ability": true
+      }
+    ],
+    "pohnpeian_isokelekel": [
+      {
+        "id": "pohnpeian_isokelekel-armada",
+        "name": "Lead the 333 from Katau against the Saudeleur",
+        "notes": "Born of the thunder-god, he musters 333 men, women and children, voyages from Katau (Eir/Kosrae), and storms Nan Madol to end the Saudeleur tyranny.",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hanlon, Upon a Stone Altar: A History of the Island of Pohnpei; Book of Luelen"
+          }
+        ],
+        "ability": true
+      }
+    ]
+  },
+  "materialCulture": {
+    "phrygian_agdistis": [
+      {
+        "id": "phrygian_agdistis-almond-tree",
+        "name": "Almond tree (sprung from the severed parts)",
+        "classId": "plant",
+        "kind": "plant",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pausanias, Description of Greece 7.17.11; Arnobius, Adversus Nationes 5.6"
+          }
+        ]
+      },
+      {
+        "id": "phrygian_agdistis-agdos-rock",
+        "name": "The rock Agdos at Pessinus",
+        "classId": "natural-feature",
+        "kind": "stone",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Arnobius, Adversus Nationes 5.5"
+          }
+        ]
+      }
+    ],
+    "polynesian_mahuika": [
+      {
+        "id": "polynesian_mahuika-fingernails-of-fire",
+        "name": "Fingernails and toenails of fire",
+        "classId": "body-attribute",
+        "kind": "attribute",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Grey, Polynesian Mythology (Maui and Mahuika)"
+          }
+        ]
+      }
+    ],
+    "polynesian_murirangawhenua": [
+      {
+        "id": "polynesian_murirangawhenua-enchanted-jawbone",
+        "name": "Enchanted jawbone (te kauae)",
+        "term": {
+          "value": "te kauae",
+          "script": "Latn",
+          "rom": "te kauae"
+        },
+        "classId": "relic",
+        "kind": "implement",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Grey, Polynesian Mythology (the magic jawbone of Muri-ranga-whenua)"
+          }
+        ]
+      }
+    ],
+    "pohnpeian_isokelekel": [
+      {
+        "id": "pohnpeian_isokelekel-333-magic-stones",
+        "name": "The 333 magic stones of the warriors",
+        "classId": "relic",
+        "kind": "stone",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pohnpeian oral tradition of Nan Madol; Hanlon, Upon a Stone Altar"
+          }
+        ]
+      }
+    ]
+  },
+  "domains": {
+    "polynesian_hina": [
+      {
+        "sphereId": "childbirth",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beckwith, Hawaiian Mythology (Hina)"
+          }
+        ]
+      }
+    ],
+    "polynesian_kanaloa": [
+      {
+        "sphereId": "healing",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beckwith, Hawaiian Mythology (Kane and Kanaloa)"
+          }
+        ]
+      }
+    ]
+  },
+  "epithets": {
+    "phrygian_agdistis": [
+      {
+        "original": "Ἄγδιστις",
+        "rom": "Agdistis",
+        "gloss": "the (deity) of the rock Agdos / Mother of Pessinus",
+        "language": "Greek",
+        "contextTag": "cult",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pausanias, Description of Greece 7.17.10; Strabo, Geography 12.5.3"
+          }
+        ]
+      },
+      {
+        "original": "Μήτηρ Ἄγδιστις",
+        "rom": "Meter Agdistis",
+        "gloss": "Mother Agdistis",
+        "language": "Greek",
+        "contextTag": "cult",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lydian cult inscriptions (e.g. the sacred law of Dionysios at Philadelphia, LSAM 20)"
+          }
+        ]
+      }
+    ],
+    "phoenician_resheph": [
+      {
+        "original": "𐤓𐤔𐤐 𐤇𐤑",
+        "rom": "ršp ḥṣ",
+        "gloss": "Resheph of the Arrow",
+        "language": "Phoenician",
+        "contextTag": "cult",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Phoenician inscriptions; KAI corpus (Resheph epithets)"
+          }
+        ]
+      },
+      {
+        "original": "𐤓𐤔𐤐 𐤌𐤊𐤋",
+        "rom": "ršp mkl",
+        "gloss": "Resheph-Mukol (Annihilator), equated at Idalion with Apollo Amyklos",
+        "language": "Phoenician",
+        "contextTag": "cult",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Trilingual and Phoenician inscriptions of Idalion, Cyprus (CIS I)"
+          }
+        ]
+      }
+    ],
+    "polynesian_hina": [
+      {
+        "original": "Hina-i-ka-malama",
+        "rom": "Hina-i-ka-malama",
+        "gloss": "Hina in the moon",
+        "language": "Hawaiian",
+        "contextTag": "name",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beckwith, Hawaiian Mythology (Hina who lived in the moon)"
+          }
+        ]
+      },
+      {
+        "original": "Hina-i-ka-paʻi-kua",
+        "rom": "Hina-i-ka-pai-kua",
+        "gloss": "Hina the kapa-beater",
+        "language": "Hawaiian",
+        "contextTag": "epithet",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beckwith, Hawaiian Mythology (Hina the tapa-beater)"
+          }
+        ]
+      }
+    ]
+  },
+  "cult": {
+    "phrygian_agdistis": [
+      {
+        "name": "Cult of the Mother at Pessinus (Agdistis)",
+        "term": {
+          "value": "Ἄγδιστις",
+          "script": "Grek",
+          "rom": "Agdistis"
+        },
+        "type": "temple",
+        "cadence": "ongoing, served by eunuch Galli priests",
+        "notes": "At Pessinus the Mother of the Gods was titled Agdistis and worshipped in the form of a black meteoric stone; her castrated Galli served the shrine. The Roman embassy of 204 BCE fetched this Pessinuntine stone to Rome as the Magna Mater.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 12.5.3; Livy, Ab Urbe Condita 29.10-14"
+          }
+        ]
+      },
+      {
+        "name": "Guardian cult of Agdistis at Philadelphia (Lydia)",
+        "type": "offering",
+        "cadence": "household sanctuary observance",
+        "notes": "In the sacred law of the household sanctuary of Dionysios, Agdistis is set as the guardian (phylake) of the precinct, charged with watching over the moral oaths sworn by its members.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sacred law of Dionysios, Philadelphia in Lydia (LSAM 20)"
+          }
+        ]
+      }
+    ],
+    "phoenician_resheph": [
+      {
+        "name": "Temple of Resheph-Apollo at Idalion",
+        "type": "temple",
+        "cadence": "civic cult of the Cypriote kingdom of Idalion",
+        "notes": "At Idalion on Cyprus Resheph was worshipped under the names ršp mkl and ršp ʾlyyt (Resheph of the heights), assimilated to Apollo; dedicatory inscriptions and votives mark his sanctuary as a leading Cypro-Phoenician cult of the plague-and-archer god.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Phoenician and trilingual votive inscriptions of Idalion (CIS I); Cypro-Phoenician temple of Reshef-Apollo"
+          }
+        ]
+      }
+    ]
+  },
+  "iconography": {
+    "phrygian_agdistis": {
+      "attributes": [
+        {
+          "id": "phrygian_agdistis-androgyne",
+          "name": "Androgynous (dual-sexed) primordial form",
+          "notes": "Agdistis is figured as a being possessing both male and female generative organs, born of the earth-rock; its violent power leads the gods to unman it.",
+          "sources": [
+            {
+              "kind": "primary",
+              "reference": "Pausanias, Description of Greece 7.17.10; Arnobius, Adversus Nationes 5.5"
+            }
+          ]
+        },
+        {
+          "id": "phrygian_agdistis-meteoric-stone",
+          "name": "Aniconic black meteoric stone of Pessinus",
+          "notes": "Where identified with the Pessinuntine Mother, Agdistis is embodied not in a statue but in an unworked black (meteoric) stone, the baetyl carried to Rome in 204 BCE.",
+          "sources": [
+            {
+              "kind": "primary",
+              "reference": "Livy, Ab Urbe Condita 29.11; Herodian 1.11"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_kanaloa": {
+      "attributes": [
+        {
+          "id": "polynesian_kanaloa-kinolau-octopus",
+          "name": "Octopus and squid body-form (kino lau)",
+          "notes": "Kanaloa's bodily manifestations are the heʻe (octopus) and muheʻe (squid); in the Kumulipo he is Ka-heʻe-hauna-wela, 'the foul-smelling squid'.",
+          "sources": [
+            {
+              "kind": "primary",
+              "reference": "Kumulipo (Hawaiian creation chant); Beckwith, Hawaiian Mythology"
+            }
+          ]
+        }
+      ],
+      "sacredAnimals": [
+        {
+          "id": "polynesian_kanaloa-porpoise",
+          "name": "Porpoise (naia)",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Beckwith, Hawaiian Mythology (kino lau of Kanaloa)"
+            }
+          ]
+        }
+      ],
+      "sacredPlants": [
+        {
+          "id": "polynesian_kanaloa-banana",
+          "name": "Banana (maiʻa)",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Beckwith, Hawaiian Mythology (Kane and Kanaloa as growers of banana)"
+            }
+          ]
+        },
+        {
+          "id": "polynesian_kanaloa-awa",
+          "name": "ʻAwa (kava)",
+          "notes": "Kanaloa is 'the awa-drinker'; awa is drunk with Kane and offered to him, and is invoked when consecrating a canoe for the sea.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Beckwith, Hawaiian Mythology (Kanaloa the awa-drinker)"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_kane": {
+      "attributes": [
+        {
+          "id": "polynesian_kane-pohaku-o-kane",
+          "name": "Conical sacred stone (Pohaku o Kane)",
+          "notes": "Kane was worshipped at a single upright conical stone, the Pohaku o Kane, set up as a family altar; his rites were simple, without human sacrifice ('ua kapu ke ola na Kane', life is sacred to Kane).",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Beckwith, Hawaiian Mythology (the Kane worship; Pohaku o Kane)"
+            }
+          ]
+        }
+      ],
+      "sacredPlants": [
+        {
+          "id": "polynesian_kane-taro",
+          "name": "Taro (kalo)",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Beckwith, Hawaiian Mythology; Hawaiian kino lau tradition"
+            }
+          ]
+        },
+        {
+          "id": "polynesian_kane-awa",
+          "name": "ʻAwa (kava)",
+          "notes": "Brought to Hawaiʻi and planted across the islands by Kane and Kanaloa; awa, mulberry and breadfruit are sacred to Kane.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Beckwith, Hawaiian Mythology (plants of Kane and Kanaloa)"
+            }
+          ]
+        },
+        {
+          "id": "polynesian_kane-sugarcane",
+          "name": "Sugarcane (ko) and bamboo (ohe)",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Hawaiian kino lau tradition; Images of Old Hawaiʻi (gods who brought the plants)"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_rongo": {
+      "attributes": [
+        {
+          "id": "polynesian_rongo-tapu-field-stones",
+          "name": "Tapu garden-stones (whatu)",
+          "notes": "Sacred stones representing Rongo were set in the kumara gardens to promote fertility; the first kumara of the harvest were buried as an offering to him.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Te Ara Encyclopedia of New Zealand (kumara: religious aspects); Best, Maori Agriculture"
+            }
+          ]
+        }
+      ],
+      "sacredPlants": [
+        {
+          "id": "polynesian_rongo-kumara",
+          "name": "Kumara (sweet potato)",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Te Ara Encyclopedia of New Zealand (kumara and Rongo)"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_haumiatiketike": {
+      "sacredPlants": [
+        {
+          "id": "polynesian_haumiatiketike-fernroot",
+          "name": "Bracken fern-root (aruhe)",
+          "notes": "The edible rhizome of Pteridium esculentum is the body of Haumia; in the separation myth his hair, protruding from Papatuanuku, becomes the fern-root, and it is offered and acknowledged when wild food is gathered.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Tregear, The Maori-Polynesian Comparative Dictionary; Te Ara Encyclopedia of New Zealand (Haumia-tiketike)"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_hina": {
+      "attributes": [
+        {
+          "id": "polynesian_hina-in-the-moon",
+          "name": "The woman seen in the moon, beating kapa",
+          "notes": "Hina is identified with the figure in the moon (mahina derives from her name), where she perpetually beats out bark-cloth; her beater and anvil are sometimes said to be heard as thunder.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Beckwith, Hawaiian Mythology (Hina who went to the moon)"
+            }
+          ]
+        }
+      ],
+      "sacredPlants": [
+        {
+          "id": "polynesian_hina-wauke",
+          "name": "Paper-mulberry / banyan bark for kapa",
+          "notes": "Hina works the bark (wauke; in some tellings banyan) into the finest kapa cloth.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Beckwith, Hawaiian Mythology (Hina the tapa-maker)"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_hinenuitepo": {
+      "attributes": [
+        {
+          "id": "polynesian_hinenuitepo-obsidian-teeth",
+          "name": "Teeth of obsidian and thighs set with flint and greenstone",
+          "notes": "Her mouth is fanged with volcanic glass (obsidian) and her thighs hold sharp flakes of obsidian and greenstone (pounamu), with which she crushes Maui.",
+          "sources": [
+            {
+              "kind": "primary",
+              "reference": "Grey, Polynesian Mythology (The Death of Maui)"
+            }
+          ]
+        },
+        {
+          "id": "polynesian_hinenuitepo-greenstone-eyes",
+          "name": "Eyes of greenstone, hair of kelp, mouth like a barracouta",
+          "notes": "The standard portrait gives her eyes of pounamu (greenstone), hair of sea-kelp, and a mouth like that of the barracouta fish.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Te Ara / Maori oral tradition; recensions surveyed in scholarship on Hine-nui-te-po's form"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_mahuika": {
+      "sacredPlants": [
+        {
+          "id": "polynesian_mahuika-kaikomako",
+          "name": "Kaikomako and mahoe fire-trees",
+          "notes": "Her scattered fire lodged in the kaikomako, mahoe, totara, patete and pukatea; dry kaikomako wood became the kindling-stick (kaunoti) for fire by friction.",
+          "sources": [
+            {
+              "kind": "primary",
+              "reference": "Grey, Polynesian Mythology (Maui and Mahuika)"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_namaka": {
+      "attributes": [
+        {
+          "id": "polynesian_namaka-wave-form",
+          "name": "Sea-water hurled to quench fire",
+          "notes": "As goddess of the sea she pursues her sister Pele, raising tides and waves to extinguish the fires Pele opens in the earth.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Beckwith, Hawaiian Mythology (Pele and her sister Namakaokahai)"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_poliahu": {
+      "attributes": [
+        {
+          "id": "polynesian_poliahu-white-kapa-mantle",
+          "name": "Mantle of white kapa (snow)",
+          "notes": "Poliʻahu appears as a radiant woman robed in white kapa like fresh snow on Mauna Kea; in her contest with Pele she casts snow and mist to drive back the lava.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Westervelt, Hawaiian Legends of Volcanoes (Pele and the Snow-goddess)"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_ranginui": {
+      "attributes": [
+        {
+          "id": "polynesian_ranginui-rain-as-tears",
+          "name": "Rain and dew as tears of longing",
+          "notes": "Separated from Papatuanuku, the sky-father weeps; his tears fall as rain and dew toward the earth, and her sighs rise back as mist.",
+          "sources": [
+            {
+              "kind": "primary",
+              "reference": "Grey, Polynesian Mythology (The Children of Heaven and Earth)"
+            }
+          ]
+        }
+      ]
+    },
+    "polynesian_papatuanuku": {
+      "attributes": [
+        {
+          "id": "polynesian_papatuanuku-mist-as-sighs",
+          "name": "Rising mist as the sighs of the earth-mother",
+          "notes": "Mist rising from forest and ground is the breath and longing of Papatuanuku for the sky-father from whom she was parted; her body nurtures all living things.",
+          "sources": [
+            {
+              "kind": "primary",
+              "reference": "Grey, Polynesian Mythology (The Children of Heaven and Earth)"
+            }
+          ]
+        }
+      ]
+    },
+    "pohnpeian_olosohpa": {
+      "attributes": [
+        {
+          "id": "pohnpeian_olosohpa-floating-stones",
+          "name": "Basalt megaliths flown into place by magic",
+          "notes": "With his brother Olisihpa, Olosohpa raised the prismatic basalt 'logs' of Nan Madol by incantation (in some tellings borne by a flying dragon), founding the stone city on the reef off Temwen.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Pohnpeian oral tradition of the founding of Nan Madol; Hanlon, Upon a Stone Altar"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
