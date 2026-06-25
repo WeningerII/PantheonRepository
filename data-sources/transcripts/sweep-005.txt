@@ -1,0 +1,2015 @@
+Sweep 005 — strict-alphabetical family-completion sweep, batch 5.
+Batch of 50 ids (bhil_pithora … buryat_erlen_khan) read in order, full prose
+(notes, every lifecycle[].notes, sources[].citations) read semantically.
+
+Outcome: the Bicolano (Asuang/Gugurang/Oryol/Magindara/Handyong), Blackfoot
+(Sun-Moon-Morning Star), Bororo (twin culture-heroes, the aroe/bope opposition),
+Bodo, the Buddhist Four-Heavenly-Kings set, the Buganda Kintu cycle and the
+Ssese-house balubaale, the Bunyoro Batembuzi→Bacwezi line, the Burmese nat
+sibling-pairs and Thagyamin, and Buryat Erlen Khan are overwhelmingly already
+wired within their clusters. Eleven genuinely NAMED-BUT-NO-ENTRY attested kin
+were found, verified, and authored below.
+
+AUTHORED (NEW), with the in-corpus prose that names them:
+
+1. buddhist_tanha / buddhist_arati / buddhist_raga — Māra's three daughters
+   Taṇhā (Craving), Aratī (Aversion/Discontent) and Rāgā (Passion), named in the
+   buddhist_mara entry ("assails the Bodhisattva at the awakening with armies and
+   the three daughters"). They appear together in the Māra-saṃyutta (SN 4, the
+   Dhītaro Sutta SN 4.25) and the Dhammapada commentary on vv.179–180. Authored as
+   daughters of Māra (parentId buddhist_mara) and mutual sisters; reciprocal
+   father-of edges needed on the existing buddhist_mara.
+
+2. buddhist_suja — Sujā, consort of Śakra and daughter of the asura-lord
+   Vemacitrin, named in BOTH the buddhist_sakra entry ("married to Sujā, daughter
+   of the asura lord Vemacitrin") and the buddhist_vemacitrin entry ("father-in-law
+   of Sakka through his daughter Sujā"). Per DPPN s.v. Sujā and the Kulāvaka Jātaka
+   (No.31). Authored: spouse buddhist_sakra, father buddhist_vemacitrin (parentId);
+   reciprocals needed on both existing figures.
+
+3. buganda_kayikuuzi — Kayikuuzi ("he who digs holes"), third child of the
+   sky-father Ggulu and brother of Nambi and Walumbe, named in the buganda_ggulu
+   entry ("father of Nambi, Walumbe, and Kayikuuzi"). In the Kintu cycle (Roscoe,
+   The Baganda, 1911) Ggulu sends him to recapture Walumbe; he digs the Ttanda
+   pits chasing Death. Authored: parentId buganda_ggulu, sibling buganda_nambi,
+   sibling buganda_walumbe; reciprocals needed on those existing figures.
+
+4. bunyoro_isimbwa — Isimbwa, son of the last Batembuzi king Isaza and of Nyamata
+   (Nyamiyonga's daughter), and father of the Bacwezi founder Ndahura. Named in
+   the bunyoro_ndahura entry ("Ndahura's father Isimbwa was son of Isaza") and the
+   bunyoro_nyamiyonga entry ("Nyamiyonga's daughter Nyamata was mother of Isimbwa").
+   Per Roscoe, The Bakitara or Banyoro (1923); Fisher, Twilight Tales (1911).
+   Authored: parentIds [bunyoro_isaza, bunyoro_nyamata], father-of bunyoro_ndahura.
+
+5. bunyoro_isaza — Isaza, last king of the Batembuzi, husband of Nyamata and father
+   of Isimbwa, lured into the underworld by Nyamiyonga; named in the bunyoro_ndahura
+   entry ("his father Isimbwa was son of Isaza, last of the Batembuzi kings") and
+   implied throughout the bunyoro_nyamiyonga entry ("drew the Batembuzi king Isaza
+   into the land of the dead"). Authored: spouse bunyoro_nyamata, father-of
+   bunyoro_isimbwa, enemy/captive-of bunyoro_nyamiyonga; reciprocal needed on
+   bunyoro_nyamiyonga.
+
+6. bunyoro_nyamata — Nyamata, daughter of the underworld-king Nyamiyonga, wife of
+   Isaza and mother of Isimbwa, named in the bunyoro_nyamiyonga entry ("Nyamiyonga's
+   daughter Nyamata was mother of Isimbwa") and bunyoro_ndahura. Authored: parentId
+   bunyoro_nyamiyonga, spouse bunyoro_isaza, mother-of bunyoro_isimbwa; reciprocal
+   needed on bunyoro_nyamiyonga.
+
+7. burmese_byatta — Byatta, the royal flower-gatherer of King Anawrahta and father
+   of the Taungbyon brothers, named in the burmese_shwe_hpyin_naungdaw / _nyidaw
+   entries ("sons of Byatta and the ogress Me Wunna"). Executed for his liaison, he
+   became a nat. Per R. C. Temple, The Thirty-Seven Nats (1906); Maung Htin Aung,
+   Folk Elements in Burmese Buddhism (1962). Authored: spouse burmese_me_wunna,
+   father-of both Taungbyon brothers.
+
+8. burmese_me_wunna — Me Wunna (Popa Medaw), the flower-eating ogress of Mount Popa,
+   mother of the Taungbyon brothers, named in the same two brother-entries. She died
+   of grief and became a nat. Per Temple (1906); Maung Htin Aung (1962). Authored:
+   spouse burmese_byatta, mother-of both Taungbyon brothers.
+
+9. blackfoot_apistotoke — Apistotoke (Ihtsipaitapiiyo'pa, "Source of Life"), the
+   abstract creator, named in BOTH the blackfoot_napi entry ("the abstract creator
+   Apistotoke") and the blackfoot_natosi entry ("Naato'si, who was himself created
+   by the abstract Apistotoke"). Blackfoot tradition keeps Apistotoke and Naato'si
+   strictly distinct. Per native-languages.org (Apistotoke); Grinnell, Blackfeet
+   Lodge Tales. Authored: creator-of / ancestor-of blackfoot_natosi.
+
+WIRE-EDGES on existing corpus figures (no new entry needed; reported for the
+maintainer to apply — both endpoints already exist):
+
+  A. ipisowaahs--parent-->blackfoot_natosi  AND  ipisowaahs--parent-->blackfoot_kokomikisomm
+     The Morning-Star figure ipisowaahs has empty parentIds, yet blackfoot_natosi
+     records father-of-->ipisowaahs and blackfoot_kokomikisomm records
+     mother-of-->ipisowaahs. Add [blackfoot_natosi, blackfoot_kokomikisomm] to
+     ipisowaahs.parentIds so the Sun-Moon→Morning-Star→Poïa lineage closes from the
+     child side. (Both targets exist; poia already lists ipisowaahs as parent.)
+
+  B. bunyoro_ndahura--father-of-->bunyoro_wamara
+     bunyoro_wamara records parentIds [bunyoro_ndahura] (Wamara is the last Bacwezi
+     king, Ndahura's successor-son), but bunyoro_ndahura carries no reciprocal
+     parent→child edge. Add father-of-->bunyoro_wamara to bunyoro_ndahura. (Target
+     exists.) Authoring bunyoro_isimbwa (item 4) with father-of-->bunyoro_ndahura
+     likewise calls for bunyoro_ndahura.parentIds to gain [bunyoro_isimbwa],
+     completing Isaza→Isimbwa→Ndahura→Wamara.
+
+SKIPPED (named-but-not-authored), with reason:
+  - Sibrai / Jiu / Siu Bwrai (bodo_bathoubwrai) — alternate NAMES of Bathoubwrai
+    himself, not separate kin.
+  - Songraja, Bura Bagh Raja (bodo_mainao) — co-ranked household gods, not kin.
+  - Kayikuuzi's mother / the mothers of Oryol and Magindara — "unnamed mortal
+    women"; unnamed → no entry.
+  - Nyinamwiru (mother of Ndahura) — named in external lore but NOT named in any
+    batch entry's prose (the Ndahura entry traces the paternal Isaza→Isimbwa line
+    only); left for a future sweep that surfaces her by name in-corpus.
+  - Kyomya, Rukidi Mpuga, Kato Kimera (later Bunyoro/Babiito genealogy) — descend
+    FROM Isimbwa but are not named in any batch entry; out of scope here.
+  - Khan Khormusta (buryat_erlen_khan) — cosmological OPPOSITE in the 99-tengri
+    dualism, not kin; already in corpus as buryat_khan_khormusta.
+  - Rati / Kāmadeva's consort (buddhist_mara) — the Mara=Kāmadeva note explicitly
+    states "Kāma's consort Rati ... drop[s] away" in the Buddhist recasting; not an
+    attested Buddhist-Māra relation.
+  - bicolano_oryol "father" edge, bodo_mainao "father" edge — descent already
+    computes from each child's parentIds (asuang / bathoubwrai respectively), and
+    the parent's directed father-of is present for Oryol; treated as ALREADY-WIRED.
+
+```json
+[
+ {
+  "id": "buddhist_tanha",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Taṇhā",
+   "alt": [
+    "Tanha",
+    "Tṛṣṇā",
+    "Craving",
+    "Daughter of Māra"
+   ],
+   "transliterations": {
+    "sanskrit": "तृष्णा Tṛṣṇā",
+    "pali": "Taṇhā"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_mara"
+  ],
+  "parentRoles": {
+   "buddhist_mara": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Eldest of the three daughters of Māra, personifying Craving (taṇhā), the first of the cravings that bind beings to saṃsāra. With her sisters Aratī and Rāgā she goes to the freshly-awakened Buddha at the bodhimaṇḍa to seduce him back into the power of Māra.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "She and her sisters display themselves in the guises of maidens of every age, but the Buddha, free of craving, is unmoved; they withdraw defeated. The Dhammapada commentary on verses 179-180 names the three and recounts their failure.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180 (Buddhaghosa)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "craving-and-thirst",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "seduction-and-temptation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "conjure-seductive-forms",
+    "name": "Take on the forms of beautiful women of every age",
+    "inheritability": "none",
+    "scopeTags": [
+     "illusion",
+     "temptation"
+    ],
+    "notes": "With her sisters she manifests as girls, young women, and matrons to tempt the Buddha; the canon makes this the daughters' shared faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buddhist_arati",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buddhist_raga",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "father",
+    "personId": "buddhist_mara",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ],
+    "notes": "Daughter of Māra the Evil One; reciprocal father-of edge to be added to buddhist_mara."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "तृष्णा",
+    "original": "तृष्णा",
+    "language": "sanskrit",
+    "transliteration": "Tṛṣṇā / Taṇhā",
+    "contextTag": "sutra",
+    "notes": "Craving; eldest daughter of Māra, personified thirst that binds beings to rebirth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Indo-European (Indo-Aryan)",
+   "etymology": "Pali taṇhā, Sanskrit tṛṣṇā, thirst or craving, from the root tṛṣ- (to be thirsty; PIE *ters-, dry, thirst); in Buddhist doctrine the cause of suffering named in the second Noble Truth, here personified as a daughter of Māra."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "daughter-of-Mara",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25), where Taṇhā, Aratī and Rāgā are Māra's daughters"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eldest of the three daughters of Māra (with Aratī and Rāgā), personifying Craving. Accompanying their downcast father after his armies fail, the three try to seduce the newly awakened Buddha and fail utterly because he is free of craving. Named in the buddhist_mara entry as one of the three daughters."
+ },
+ {
+  "id": "buddhist_arati",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Aratī",
+   "alt": [
+    "Arati",
+    "Aversion",
+    "Discontent",
+    "Daughter of Māra"
+   ],
+   "transliterations": {
+    "sanskrit": "अरति Arati",
+    "pali": "Aratī"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_mara"
+  ],
+  "parentRoles": {
+   "buddhist_mara": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Second of the three daughters of Māra, personifying Aratī (aversion, discontent, the restless dislike that drives beings from the present). With Taṇhā and Rāgā she attempts to lure the awakened Buddha at the seat of enlightenment.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "The sisters take on a hundred forms of feminine beauty but cannot disturb the Buddha; the Dhammapada commentary on vv.179-180 records the three by name and their defeat.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180 (Buddhaghosa)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "aversion-and-discontent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "seduction-and-temptation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "conjure-seductive-forms",
+    "name": "Take on the forms of beautiful women of every age",
+    "inheritability": "none",
+    "scopeTags": [
+     "illusion",
+     "temptation"
+    ],
+    "notes": "With her sisters she manifests in many feminine guises to tempt the Buddha; the canon makes this the daughters' shared faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buddhist_tanha",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buddhist_raga",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "father",
+    "personId": "buddhist_mara",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ],
+    "notes": "Daughter of Māra the Evil One; reciprocal father-of edge to be added to buddhist_mara."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "अरति",
+    "original": "अरति",
+    "language": "sanskrit",
+    "transliteration": "Aratī",
+    "contextTag": "sutra",
+    "notes": "Aversion / discontent; second daughter of Māra",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Indo-European (Indo-Aryan)",
+   "etymology": "Pali and Sanskrit aratī, discontent or aversion, the negation a- of rati (delight, attachment; root ram-, to take pleasure); personified as a daughter of Māra, the restlessness opposite to the clinging of craving."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "daughter-of-Mara",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25), where Taṇhā, Aratī and Rāgā are Māra's daughters"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Second of the three daughters of Māra (with Taṇhā and Rāgā), personifying Aversion. One of the three daughters named in the buddhist_mara entry; the trio fail to seduce the awakened Buddha."
+ },
+ {
+  "id": "buddhist_raga",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Rāgā",
+   "alt": [
+    "Raga",
+    "Rati",
+    "Passion",
+    "Lust",
+    "Daughter of Māra"
+   ],
+   "transliterations": {
+    "sanskrit": "रागा Rāgā",
+    "pali": "Rāgā"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_mara"
+  ],
+  "parentRoles": {
+   "buddhist_mara": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Third of the three daughters of Māra, personifying Rāgā (passion, lust, sensual desire). With Taṇhā and Aratī she goes to the Buddha to draw him back into the realm of desire that is the domain of her father.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "The allurements of the sisters fail before one who has cut off desire at the root; the Dhammapada commentary on vv.179-180 names the three and records the reply of the Buddha that he cannot be lured by any temptation.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180 (Buddhaghosa)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "passion-and-sensual-desire",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "seduction-and-temptation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "conjure-seductive-forms",
+    "name": "Take on the forms of beautiful women of every age",
+    "inheritability": "none",
+    "scopeTags": [
+     "illusion",
+     "temptation"
+    ],
+    "notes": "With her sisters she manifests in many feminine guises to tempt the Buddha; the canon makes this the daughters' shared faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buddhist_tanha",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buddhist_arati",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "father",
+    "personId": "buddhist_mara",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ],
+    "notes": "Daughter of Māra the Evil One; reciprocal father-of edge to be added to buddhist_mara."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "रागा",
+    "original": "रागा",
+    "language": "sanskrit",
+    "transliteration": "Rāgā",
+    "contextTag": "sutra",
+    "notes": "Passion / lust; third daughter of Māra (also given as Rati in some recensions)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Indo-European (Indo-Aryan)",
+   "etymology": "Sanskrit and Pali rāga, colour and so passion, lust, sensual attachment, from the root raj- or rañj- (to be coloured, to be excited); personified as a daughter of Māra, the dyeing of the mind by desire. Some lists give the name of the third sister as Rati."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "daughter-of-Mara",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25), where Taṇhā, Aratī and Rāgā are Māra's daughters"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Third of the three daughters of Māra (with Taṇhā and Aratī), personifying Passion (sometimes named Rati in the lists). One of the three daughters named in the buddhist_mara entry; the trio fail to seduce the awakened Buddha."
+ },
+ {
+  "id": "buddhist_suja",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Sujā",
+   "alt": [
+    "Suja",
+    "Sujātā",
+    "consort of Sakka"
+   ],
+   "transliterations": {
+    "sanskrit": "सुजा Sujā",
+    "pali": "Sujā"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_vemacitrin"
+  ],
+  "parentRoles": {
+   "buddhist_vemacitrin": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Asura-maiden, daughter of Vemacitrin (Vepacitti) lord of the asuras. Granted by her father the boon of choosing her own husband, she chose Sakka, who came disguised as an aged asura; recognising him from a former association she garlanded him, and he carried her up to Trāyastriṃśa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G.P. Malalasekera, Dictionary of Pāli Proper Names, s.v. 'Sujā'"
+     }
+    ]
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "As Sakka's chief consort she accompanies him everywhere — the boon she asked at marriage. Her marriage makes the asura-lord Vemacitrin the father-in-law of the deva-king, the kinship that underlies their alternating quarrels and truces.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulāvaka Jātaka (No.31); Malalasekera, DPPN, s.v. 'Sujā'"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "consort-of-the-deva-king",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, DPPN, s.v. 'Sujā'",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "accompany-sakka",
+    "name": "Attend the deva-king on all his journeys",
+    "inheritability": "none",
+    "scopeTags": [
+     "consortship"
+    ],
+    "notes": "The boon she chose at marriage was to be with Sakka wherever he went; the canon makes her constant attendance her defining trait.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, DPPN, s.v. 'Sujā'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "buddhist_sakra",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, DPPN, s.v. 'Sakka' and 'Sujā'"
+     }
+    ],
+    "notes": "Chief consort of Śakra (Sakka); Sakka bears the matronymic Sujampati, meaning lord of Sujā. Reciprocal spouse edge to be added to buddhist_sakra."
+   },
+   {
+    "kind": "father",
+    "personId": "buddhist_vemacitrin",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Sakka-saṃyutta (SN 11), Vepacitti as Sujā's father"
+     }
+    ],
+    "notes": "Daughter of the asura-lord Vemacitrin/Vepacitti; through her his enmity with Sakka becomes a father-in-law / son-in-law bond. Reciprocal father-of edge to be added to buddhist_vemacitrin."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "सुजा",
+    "original": "सुजा",
+    "language": "sanskrit",
+    "transliteration": "Sujā",
+    "contextTag": "sutra",
+    "notes": "Asura-daughter and consort of Sakka; her name yields Sakka's title Sujampati",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, DPPN, s.v. 'Sujā'"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Indo-European (Indo-Aryan)",
+   "etymology": "Pali Sujā, generally connected with su- (good, well; cf. sujāta, well-born); the Sakka epithet Sujampati, husband or lord of Sujā, preserves her name."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, Dictionary of Pāli Proper Names, s.v. 'Sujā'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kulāvaka Jātaka (No.31)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "consort-of-Sakka-and-daughter-of-Vepacitti",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Sakka-saṃyutta (SN 11)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Sujā, asura-daughter of Vemacitrin (Vepacitti) and chief consort of Śakra; her name is preserved in the Sakka epithet Sujampati. Named in both the buddhist_sakra entry (married to Sujā, daughter of the asura lord Vemacitrin) and the buddhist_vemacitrin entry (father-in-law of Sakka through his daughter Sujā). Classed demigod as the asura-born consort raised to the deva-heaven."
+ },
+ {
+  "id": "buganda_kayikuuzi",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Kayikuuzi",
+   "alt": [
+    "Kaikuzi",
+    "Kayikuzi"
+   ],
+   "transliterations": {
+    "luganda": "Kayikuuzi"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buganda",
+  "primaryTradition": "Buganda",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buganda_ggulu"
+  ],
+  "parentRoles": {
+   "buganda_ggulu": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Son of the sky-father Ggulu and brother of Nambi and of Walumbe (Death). His name means he who digs holes. When Death followed Nambi and Kintu down to the earth and began to kill their children, Ggulu sent Kayikuuzi to bring Walumbe back to the sky.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John Roscoe, The Baganda (1911), 'The legend of Kintu', pp. 460-464"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "He fought his brother Walumbe and chased him underground, digging great pits in pursuit; the people, told to keep silence and stay indoors, cried out at the sight of Walumbe, who escaped back into the earth. Kayikuuzi gave up the hunt, and Death has remained on earth ever since. The Ttanda pits in Ssingo are shown as the holes he dug.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "pursuer-of-death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "digging-and-the-underground",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dig-the-earth",
+    "name": "Dig great pits in pursuit of Death",
+    "inheritability": "none",
+    "scopeTags": [
+     "earth",
+     "pursuit"
+    ],
+    "notes": "His name, meaning he who digs holes, names the faculty; the Ttanda pits are the trace of his hunt for Walumbe.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ttanda-pits",
+    "name": "The Ttanda pits of Ssingo",
+    "kind": "site",
+    "role": "associated",
+    "notes": "The deep pits at Ttanda in Ssingo county, shown as the holes Kayikuuzi dug chasing Walumbe underground; a place associated with death.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buganda_nambi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ],
+    "notes": "Brother of Nambi, daughter of Ggulu and wife of Kintu; reciprocal sibling edge to be added to buganda_nambi."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buganda_walumbe",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ],
+    "notes": "Brother of Walumbe (Death), whom Ggulu sent him to recapture; reciprocal sibling edge to be added to buganda_walumbe."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Kayikuuzi",
+    "original": "Kayikuuzi",
+    "language": "luganda",
+    "transliteration": "Kayikuuzi",
+    "contextTag": "myth",
+    "notes": "He who digs holes — the digger sent to bring Death back to the sky",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Niger-Congo (Bantu, Luganda)",
+   "etymology": "Luganda Kayikuuzi, understood as he who digs holes (from the verb okukuula / kukuuza, to dig out or uproot), naming his pursuit of Walumbe underground."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), 'The legend of Kintu', pp. 460-464"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "son-of-Ggulu-and-pursuer-of-Walumbe",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Kayikuuzi (he who digs holes), son of the sky-father Ggulu and brother of Nambi and Walumbe. In the Kintu cycle Ggulu sends him to recapture Death (Walumbe) after Walumbe begins killing the children of Kintu and Nambi; he chases his brother underground and digs the Ttanda pits, but the cries of the people let Walumbe escape, so Death stays in the world. Named in the buganda_ggulu entry as the third child (father of Nambi, Walumbe, and Kayikuuzi)."
+ },
+ {
+  "id": "bunyoro_isaza",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Isaza",
+   "alt": [
+    "Isaza Nyakikoto",
+    "Isaza Waraga"
+   ],
+   "transliterations": {
+    "runyoro": "Isaza"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Bunyoro",
+  "primaryTradition": "Bunyoro",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Last king of the Batembuzi, the first dynasty of Kitara. A young, pleasure-loving king who loved hunting and the company of animals; he took the beautiful Nyamata, sister-recommended, as his wife, and she bore him Isimbwa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "Nyamiyonga, king of the underworld, befriended Isaza by a blood-pact and then lured him below the earth — in one telling by sending a beautiful cow-pair he could not resist following. Isaza disappeared into the land of the dead, ending the Batembuzi line on earth; his throne passed in his absence and his son Isimbwa carried the descent toward the Bacwezi.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ruth B. Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ]
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "mythic",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "id": "last-Batembuzi-king",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "kingship-of-Kitara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-kitara",
+    "name": "Hold the throne of Kitara as last of the Batembuzi",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "kingship"
+    ],
+    "notes": "The kingship of the first dynasty ended with his descent into the underworld.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "bunyoro_nyamata",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "notes": "Husband of Nyamata, daughter of the underworld-king Nyamiyonga; their son is Isimbwa."
+   },
+   {
+    "kind": "father-of",
+    "personId": "bunyoro_isimbwa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "notes": "Father of Isimbwa, through whom the line continues to the Bacwezi founder Ndahura."
+   },
+   {
+    "kind": "enemy",
+    "personId": "bunyoro_nyamiyonga",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "notes": "Drawn into the land of the dead by the underworld-king Nyamiyonga, who befriended then lured him below; reciprocal enemy edge to be added to bunyoro_nyamiyonga."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Isaza",
+    "original": "Isaza",
+    "language": "latin",
+    "transliteration": "Isaza",
+    "contextTag": "myth",
+    "notes": "Last king of the Batembuzi, lured into the underworld",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Niger-Congo (Bantu, Runyoro-Rutooro)",
+   "etymology": "Runyoro Isaza, the personal name of the last Batembuzi king; carried in the dynastic king-lists of Kitara."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "last-Batembuzi-king-father-of-Isimbwa",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Isaza, last king of the Batembuzi dynasty of Kitara, husband of Nyamata and father of Isimbwa. Lured into the underworld by Nyamiyonga (in one telling by an irresistible pair of cattle), ending the first dynasty on earth; his son Isimbwa carries the descent to the Bacwezi founder Ndahura. Named in the bunyoro_ndahura entry (Isimbwa was son of Isaza, last of the Batembuzi kings) and implied in the bunyoro_nyamiyonga entry, which says Nyamiyonga drew the Batembuzi king Isaza into the land of the dead."
+ },
+ {
+  "id": "bunyoro_nyamata",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nyamata",
+   "alt": [
+    "daughter of Nyamiyonga",
+    "wife of Isaza"
+   ],
+   "transliterations": {
+    "runyoro": "Nyamata"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Bunyoro",
+  "primaryTradition": "Bunyoro",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "bunyoro_nyamiyonga"
+  ],
+  "parentRoles": {
+   "bunyoro_nyamiyonga": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Daughter of Nyamiyonga, king of the underworld, renowned for her beauty. The Batembuzi king Isaza, told of her by his sister, made her his wife; she bore him a son, Isimbwa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ruth B. Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "Through her the underworld-king Nyamiyonga became grandfather of the Bacwezi founder Ndahura: she is mother of Isimbwa, who is father of Ndahura. In the tellings she returns to or remains in her father's underworld with the young Isimbwa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "mythic",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "id": "underworld-princess",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear-the-cwezi-line",
+    "name": "Bear Isimbwa, link between Batembuzi and Bacwezi",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "ancestry"
+    ],
+    "notes": "Her son Isimbwa is the father of the Bacwezi founder Ndahura; she is the maternal link from the underworld house into the Kitara dynasties.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "bunyoro_isaza",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "notes": "Wife of the last Batembuzi king Isaza; mother of their son Isimbwa."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "bunyoro_isimbwa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "notes": "Mother of Isimbwa, father of the Bacwezi founder Ndahura."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Nyamata",
+    "original": "Nyamata",
+    "language": "latin",
+    "transliteration": "Nyamata",
+    "contextTag": "myth",
+    "notes": "Daughter of the underworld-king Nyamiyonga, wife of Isaza, mother of Isimbwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Niger-Congo (Bantu, Runyoro-Rutooro)",
+   "etymology": "Runyoro Nyamata, the personal name of the daughter of Nyamiyonga in the Bacwezi origin-traditions of Kitara."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "daughter-of-Nyamiyonga-and-mother-of-Isimbwa",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nyamata, daughter of the underworld-king Nyamiyonga, wife of the last Batembuzi king Isaza and mother of Isimbwa. Through her, Nyamiyonga is grandfather of the Bacwezi founder Ndahura. Named in the bunyoro_nyamiyonga entry, which records that the daughter of Nyamiyonga, Nyamata, was the mother of Isimbwa."
+ },
+ {
+  "id": "bunyoro_isimbwa",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Isimbwa",
+   "alt": [
+    "Isimbwa Rutahinduka"
+   ],
+   "transliterations": {
+    "runyoro": "Isimbwa"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Bunyoro",
+  "primaryTradition": "Bunyoro",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "bunyoro_isaza",
+   "bunyoro_nyamata"
+  ],
+  "parentRoles": {
+   "bunyoro_isaza": "paternal",
+   "bunyoro_nyamata": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Son of the last Batembuzi king Isaza and of Nyamata, daughter of the underworld-king Nyamiyonga; raised below the earth in his grandfather's land of the dead while his father reigned above. A great hunter who moved between the underworld and the upper world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "By Nyinamwiru, daughter of the regent Bukuku, he fathered Ndahura, the founder of the Bacwezi dynasty — the demi-divine line of culture-kings who later vanished and were venerated as Kubandwa spirits. Isimbwa is thus the hinge between the Batembuzi and Bacwezi houses.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ruth B. Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "hunter-between-worlds",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "Batembuzi-to-Bacwezi-link",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pass-between-worlds",
+    "name": "Move between the underworld and the land of the living",
+    "inheritability": "none",
+    "scopeTags": [
+     "liminality",
+     "hunting"
+    ],
+    "notes": "Born below the earth, he travels up to the world of men where he sires the Bacwezi line.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "bunyoro_ndahura",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "notes": "Father of Ndahura, founder of the Bacwezi dynasty; bunyoro_ndahura already records Isimbwa as his father in its prose, so [bunyoro_isimbwa] is to be added to bunyoro_ndahura.parentIds."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Isimbwa",
+    "original": "Isimbwa",
+    "language": "latin",
+    "transliteration": "Isimbwa",
+    "contextTag": "myth",
+    "notes": "Son of Isaza, father of the Bacwezi founder Ndahura",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Niger-Congo (Bantu, Runyoro-Rutooro)",
+   "etymology": "Runyoro Isimbwa, the personal name of the son of Isaza in the Kitara dynastic traditions, father of the first Mucwezi Ndahura."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "son-of-Isaza-and-Nyamata-father-of-Ndahura",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Isimbwa, son of the last Batembuzi king Isaza and of Nyamata (daughter of the underworld-king Nyamiyonga), and father of the Bacwezi founder Ndahura. The hinge between the Batembuzi and Bacwezi dynasties: born in the underworld, he comes up to father Ndahura by Nyinamwiru. Named in the bunyoro_ndahura entry, where the father Isimbwa is son of Isaza, and in the bunyoro_nyamiyonga entry as the son whose mother is Nyamata. Classed demigod as the underworld-and-earth-born link of the demi-divine Cwezi line."
+ },
+ {
+  "id": "burmese_byatta",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Byatta",
+   "alt": [
+    "Byat Ta",
+    "Byatta the flower-gatherer"
+   ],
+   "transliterations": {
+    "burmese": "ဗျတ္တ",
+    "rom": "Byatta"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Burmese",
+  "primaryTradition": "Burmese",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "reign of King Anawrahta of Pagan (11th c.)"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 0,
+    "notes": "A man of great strength (in the tradition a shipwrecked foreigner who gained power by eating the flesh of a dead alchemist) taken into King Anawrahta's service. His daily duty was to run to Mount Popa and gather flowers for the king. On the mountain he met and loved the flower-eating ogress Me Wunna.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 1,
+    "notes": "Lingering with Me Wunna, he failed to deliver the flowers on time and the king had him executed. He became a nat; his and Me Wunna's two sons, the Taungbyon Brothers, were raised at court and themselves became among the most famous of the Thirty-Seven Nats.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "deified-royal-servant",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   },
+   {
+    "sphereId": "strength-and-swiftness",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "superhuman-strength-and-speed",
+    "name": "Run to Mount Popa and back as the royal flower-gatherer",
+    "inheritability": "none",
+    "scopeTags": [
+     "strength",
+     "service"
+    ],
+    "notes": "His strength and speed, gained from eating the corpse of an alchemist, made him the flower-runner of Anawrahta; the same liaison on Popa brought his fall.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "burmese_me_wunna",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Husband of the Mount Popa ogress Me Wunna; father of the Taungbyon Brothers."
+   },
+   {
+    "kind": "father-of",
+    "personId": "burmese_shwe_hpyin_naungdaw",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Father of the elder Taungbyon Brother; that child entry records the sons of Byatta and the ogress Me Wunna, so burmese_byatta is to be added to the child parentIds."
+   },
+   {
+    "kind": "father-of",
+    "personId": "burmese_shwe_hpyin_nyidaw",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Father of the younger Taungbyon Brother; the child entry records the sons of Byatta and the ogress Me Wunna, so burmese_byatta is to be added to the child parentIds."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "ဗျတ္တ",
+    "original": "ဗျတ္တ",
+    "language": "burmese",
+    "transliteration": "Byatta",
+    "contextTag": "cult",
+    "notes": "Flower-gatherer of Anawrahta, father of the Taungbyon Brothers, deified as a nat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Burmese)",
+   "etymology": "Burmese Byatta (Byat Ta); the personal name of the foreign-born strongman and flower-gatherer of Anawrahta in the nat-traditions of Pagan."
+  },
+  "sources": [
+   {
+    "claim": "Byatta, the strongman flower-gatherer of King Anawrahta, was executed for tarrying with the Popa ogress Me Wunna and became a nat; their sons are the Taungbyon Brothers.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Byatta, the foreign-born strongman taken into the service of King Anawrahta as his Mount Popa flower-gatherer; husband of the ogress Me Wunna and father of the Taungbyon Brothers (Shwe Hpyin Naungdaw and Nyidaw). Executed for lingering with Me Wunna and failing his duty, he became a nat. Named in the two Taungbyon-brother entries as the sons of Byatta and the ogress Me Wunna."
+ },
+ {
+  "id": "burmese_me_wunna",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Me Wunna",
+   "alt": [
+    "Popa Medaw",
+    "Mae Wunna",
+    "the ogress of Mount Popa"
+   ],
+   "transliterations": {
+    "burmese": "မယ်ဝဏ္ဏ",
+    "rom": "Me Wunna"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Burmese",
+  "primaryTradition": "Burmese",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "reign of King Anawrahta of Pagan (11th c.)"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 0,
+    "notes": "A flower-eating ogress (belu) dwelling on Mount Popa, the mother-spirit of the mountain (Popa Medaw, the Lady or Mother of Popa). She met and loved Byatta, the royal flower-gatherer, and bore him two sons, the future Taungbyon Brothers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 1,
+    "notes": "After Byatta was executed and her sons taken away to the palace, she died of grief on the mountain and became a nat. She is venerated as Popa Medaw, guardian-mother of Mount Popa, and her sons became among the most famous of the Thirty-Seven Nats.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "guardian-mother-of-Mount-Popa",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ပုပ္ပါးမယ်တော်",
+     "script": "burmese",
+     "rom": "Popa Medaw"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   },
+   {
+    "sphereId": "ogress-of-the-mountain",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mountain-guardianship",
+    "name": "Guard Mount Popa as its mother-spirit",
+    "inheritability": "none",
+    "scopeTags": [
+     "tutelary",
+     "mountain"
+    ],
+    "notes": "As Popa Medaw she is the maternal guardian-spirit of Mount Popa, the holy mountain that is the home of the nats.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "burmese_byatta",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Wife of Byatta, the flower-gatherer of Anawrahta; mother of the Taungbyon Brothers."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "burmese_shwe_hpyin_naungdaw",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Mother of the elder Taungbyon Brother; the child entry records the ogress Me Wunna, so burmese_me_wunna is to be added to the child parentIds."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "burmese_shwe_hpyin_nyidaw",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Mother of the younger Taungbyon Brother; the child entry records the ogress Me Wunna, so burmese_me_wunna is to be added to the child parentIds."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "ပုပ္ပါးမယ်တော်",
+    "original": "ပုပ္ပါးမယ်တော်",
+    "language": "burmese",
+    "transliteration": "Popa Medaw",
+    "contextTag": "cult",
+    "notes": "Mother of Popa — the ogress mother-spirit of Mount Popa, mother of the Taungbyon Brothers",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Burmese)",
+   "etymology": "Burmese Me Wunna; venerated as Popa Medaw (ပုပ္ပါးမယ်တော်), the Lady or Mother of Popa, the ogress-mother of Mount Popa in the nat traditions."
+  },
+  "sources": [
+   {
+    "claim": "Me Wunna, the flower-eating ogress of Mount Popa, bore Byatta two sons (the Taungbyon Brothers), died of grief at his death, and became the nat Popa Medaw.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Me Wunna (Popa Medaw), the flower-eating ogress and mother-spirit of Mount Popa; wife of Byatta and mother of the Taungbyon Brothers (Shwe Hpyin Naungdaw and Nyidaw). When Byatta was executed and her sons taken to court, she died of grief and became the nat Popa Medaw, guardian-mother of the holy mountain. Named in the two Taungbyon-brother entries as the sons of Byatta and the ogress Me Wunna."
+ },
+ {
+  "id": "blackfoot_apistotoke",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Apistotoke",
+   "alt": [
+    "Apistotooki",
+    "Ihtsipaitapiiyo'pa",
+    "Source of Life",
+    "the Creator"
+   ],
+   "transliterations": {
+    "blackfoot": "Apistotooki",
+    "rom": "Apistotoke"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Blackfoot",
+  "primaryTradition": "Blackfoot",
+  "sex": "none",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "matumataapi"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 0,
+    "notes": "The abstract creator and Source of Life (Ihtsipaitapiiyo'pa), an indivisible animating power without physical form that originates the cosmic order and the Sky Beings, then leaves the shaping of the world to lesser powers. Blackfoot tradition holds the Creator and the Sun strictly distinct.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Native Languages of the Americas, 'Apistotoke (Apistotooki)'"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 1,
+    "notes": "Naato'si the Sun, foremost of the Sky Beings, was himself created by Apistotoke as the first and chief of the sacred Sky People. Modern Blackfoot tradition keeps Apistotoke (the originating Creator), Naato'si (the Sun), and Napi (Old Man) distinct, against older accounts that merged them.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. B. Grinnell, Blackfoot Lodge Tales (1892); Blackfoot oral tradition"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-and-source-of-life",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ihtsipaitapiiyo'pa",
+     "script": "Blackfoot",
+     "rom": "Ihtsipaitapiiyopa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Native Languages of the Americas, 'Apistotoke (Apistotooki)'"
+     }
+    ]
+   },
+   {
+    "sphereId": "originator-of-the-Sky-Beings",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Blackfoot oral tradition"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "originate-the-cosmos",
+    "name": "Bring the world-order and the Sky Beings into being",
+    "inheritability": "none",
+    "scopeTags": [
+     "creation",
+     "cosmogony"
+    ],
+    "notes": "The Source of Life that originates the cosmic order and creates Naato'si as first of the Sky People, then delegates the shaping of the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Native Languages of the Americas, 'Apistotoke'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "creator of",
+    "personId": "blackfoot_natosi",
+    "era": "matumataapi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Blackfoot oral tradition; cf. native-languages.org 'Natosi' and 'Apistotoke'"
+     }
+    ],
+    "notes": "Naato'si the Sun was created by Apistotoke as the first and foremost of the Sky Beings; the blackfoot_natosi entry already records being 'created by the abstract Apistotoke'."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Ihtsipaitapiiyo'pa",
+    "original": "Ihtsipaitapiiyo'pa",
+    "language": "blackfoot",
+    "transliteration": "Ihtsipaitapiiyopa",
+    "contextTag": "cult",
+    "notes": "Source of Life — the abstract creating power, distinct from the Sun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Blackfoot oral tradition"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Algonquian (Blackfoot)",
+   "etymology": "Blackfoot Apistotooki / Apistotoke, the Creator; also called Ihtsipaitapiiyo'pa, rendered the Source of Life or that which gives life, the abstract animating power of existence."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Native Languages of the Americas, 'Apistotoke (Apistotooki)'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. B. Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "creator-distinct-from-the-Sun",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Blackfoot oral tradition; native-languages.org 'Natosi' (Naato'si created by Apistotoke)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Apistotoke (Ihtsipaitapiiyo'pa, the Source of Life), the abstract Blackfoot creator and originator of the cosmic order and the Sky Beings, formless and distinct from the Sun. Naato'si the Sun was created by Apistotoke as the first and chief of the Sky People. Named in both the blackfoot_napi entry (the abstract creator Apistotoke) and the blackfoot_natosi entry (created by the abstract Apistotoke). Modern Blackfoot tradition keeps Apistotoke, Naato'si and Napi strictly distinct."
+ }
+]
+```

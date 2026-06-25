@@ -1,0 +1,451 @@
+```json
+[
+  {
+    "id": "roman_numitor",
+    "name": {"primary": "Numitor", "alt": ["Numitor Silvius"], "transliterations": {"latin": "Numitor"}},
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "pre-urban"},
+    "lifecycle": [
+      {"typeStatus": "mortal", "era": "pre-urban", "eraOrdering": 0, "startEvent": "rightful-king-of-Alba-Longa-deposed-by-his-brother-Amulius", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.10-1.4; Dionysius of Halicarnassus 1.76"}], "notes": "Son of Procas and elder heir to the Alban throne; deposed by his younger brother Amulius, who killed his son and forced his daughter Rhea Silvia into Vestal virginity to extinguish his line."},
+      {"typeStatus": "mortal", "era": "pre-urban", "eraOrdering": 1, "startEvent": "restored-to-the-throne-of-Alba-Longa-by-his-grandsons", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.5-1.6; Plutarch, Romulus 7-9"}], "notes": "Recognised his grandsons Romulus and Remus, who overthrew Amulius and restored him as king of Alba Longa."}
+    ],
+    "domains": [{"sphereId": "kingship-alban", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3"}], "notes": "Rightful king of Alba Longa of the Silvian dynasty."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.10-1.6; Dionysius of Halicarnassus 1.76-1.83; Plutarch, Romulus 3-9"}]},
+      {"claim": "parentage-of-rhea-silvia", "citations": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.10-1.4.1"}]}
+    ],
+    "notes": "Mortal king of Alba Longa, son of Procas and maternal grandfather of Romulus and Remus through his daughter Rhea Silvia. Deposed by his brother Amulius and later restored to the throne by his grandsons.",
+    "relations": [
+      {"kind": "father-of", "personId": "roman_rhea_silvia", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.10-1.4.1"}], "notes": "Father of the Vestal Rhea Silvia, mother of Romulus and Remus."},
+      {"kind": "sibling", "personId": "roman_amulius", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.10-11"}], "notes": "Elder brother of the usurper Amulius."}
+    ]
+  },
+  {
+    "id": "roman_amulius",
+    "name": {"primary": "Amulius", "alt": ["Amulius Silvius"], "transliterations": {"latin": "Amulius"}},
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "pre-urban"},
+    "lifecycle": [
+      {"typeStatus": "mortal", "era": "pre-urban", "eraOrdering": 0, "startEvent": "usurps-the-throne-of-Alba-Longa-from-his-brother-Numitor", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.10-1.4.3; Dionysius of Halicarnassus 1.76-1.79"}], "notes": "Seized the Alban kingship from his elder brother Numitor, killed Numitor son, and made Rhea Silvia a Vestal to prevent her bearing heirs; ordered the infant twins cast into the Tiber."},
+      {"typeStatus": "mortal", "era": "pre-urban", "eraOrdering": 1, "startEvent": "killed-when-Romulus-and-Remus-restore-Numitor", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.5-1.6; Plutarch, Romulus 7-9"}], "notes": "Slain when the grown twins, learning their origin, overthrew him and restored their grandfather Numitor."}
+    ],
+    "domains": [{"sphereId": "usurped-kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3-1.6"}], "notes": "Usurper-king of Alba Longa."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.10-1.6; Dionysius of Halicarnassus 1.76-1.83; Plutarch, Romulus 3-9; Ovid, Fasti 3.49-68"}]}
+    ],
+    "notes": "Mortal usurper-king of Alba Longa, younger brother of Numitor. He deposed Numitor, killed his nephew, forced Rhea Silvia into Vestal virginity, and tried to drown the twins Romulus and Remus; he was killed when they restored Numitor. Great-uncle of the twins.",
+    "relations": [
+      {"kind": "sibling", "personId": "roman_numitor", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.10-11"}], "notes": "Younger brother of Numitor, whom he deposed."},
+      {"kind": "enemy", "personId": "roman_romulus", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.5-1.6; Plutarch, Romulus 7-9"}], "notes": "Overthrown and killed by Romulus and Remus."}
+    ]
+  },
+  {
+    "id": "roman_faustulus",
+    "name": {"primary": "Faustulus", "alt": [], "transliterations": {"latin": "Faustulus"}},
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "pre-urban"},
+    "lifecycle": [
+      {"typeStatus": "mortal", "era": "pre-urban", "eraOrdering": 0, "startEvent": "finds-the-twins-suckled-by-the-she-wolf-and-rears-them", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.4.6-7; Plutarch, Romulus 4-6"}], "notes": "Royal shepherd of Amulius who found the infants Romulus and Remus being suckled by the she-wolf at the Lupercal, carried them home, and with his wife Acca Larentia raised them on the Palatine."}
+    ],
+    "domains": [{"sphereId": "fosterage", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.4"}], "notes": "Shepherd foster-father of the founders of Rome."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.4.6-7; Dionysius of Halicarnassus 1.79-1.84; Plutarch, Romulus 4-6; Ovid, Fasti 3.55-56"}]}
+    ],
+    "notes": "Mortal shepherd of Alba Longa, foster-father of Romulus and Remus, husband of Acca Larentia. He recovered the exposed twins after the she-wolf suckled them and reared them at the Palatine.",
+    "relations": [
+      {"kind": "spouse", "personId": "roman_acca_larentia", "sources": [{"kind": "primary", "reference": "Plutarch, Romulus 4-5; Livy, Ab Urbe Condita 1.4.7"}], "notes": "Husband of Acca Larentia, the twins foster-mother."},
+      {"kind": "foster-parent", "personId": "roman_romulus", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.4.6-7; Plutarch, Romulus 6"}], "notes": "Foster-father of Romulus."},
+      {"kind": "foster-parent", "personId": "roman_remus", "sources": [{"kind": "primary", "reference": "Livy, Ab Urbe Condita 1.4.6-7; Plutarch, Romulus 6"}], "notes": "Foster-father of Remus."}
+    ]
+  },
+  {
+    "id": "roman_acca_larentia",
+    "name": {"primary": "Acca Larentia", "alt": ["Larentia", "Acca Larentina"], "transliterations": {"latin": "Acca Larentia"}},
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "pre-urban"},
+    "lifecycle": [
+      {"typeStatus": "mortal", "era": "pre-urban", "eraOrdering": 0, "startEvent": "rears-the-twins-as-wife-of-Faustulus", "sources": [{"kind": "primary", "reference": "Plutarch, Romulus 4-5; Macrobius, Saturnalia 1.10.13"}], "notes": "Wife of the shepherd Faustulus who nursed and raised the foundling twins Romulus and Remus; honoured at Rome in the festival of the Larentalia."}
+    ],
+    "domains": [{"sphereId": "fosterage", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Plutarch, Romulus 4-5"}], "notes": "Foster-mother of the founders of Rome; festival-figure of the Larentalia."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Plutarch, Romulus 4-5; Livy, Ab Urbe Condita 1.4.7; Macrobius, Saturnalia 1.10.11-17; Aulus Gellius, Noctes Atticae 7.7"}]}
+    ],
+    "notes": "Mortal foster-mother of Romulus and Remus, wife of the shepherd Faustulus; commemorated at Rome in the Larentalia (23 December). Some traditions confuse or merge her with the she-wolf (lupa) and with a later courtesan-benefactress of Rome of the same name.",
+    "relations": [
+      {"kind": "spouse", "personId": "roman_faustulus", "sources": [{"kind": "primary", "reference": "Plutarch, Romulus 4-5"}], "notes": "Wife of Faustulus."},
+      {"kind": "foster-parent", "personId": "roman_romulus", "sources": [{"kind": "primary", "reference": "Plutarch, Romulus 4-6"}], "notes": "Foster-mother of Romulus."},
+      {"kind": "foster-parent", "personId": "roman_remus", "sources": [{"kind": "primary", "reference": "Plutarch, Romulus 4-6"}], "notes": "Foster-mother of Remus."}
+    ]
+  },
+  {
+    "id": "roman_tiberinus",
+    "name": {"primary": "Tiberinus", "alt": ["Tiberinus Pater", "Father Tiber", "Volturnus"], "transliterations": {"latin": "Tiberinus"}},
+    "type": "deity",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "pre-urban"},
+    "lifecycle": [
+      {"typeStatus": "deity", "era": "pre-urban", "eraOrdering": 0, "startEvent": "river-god-of-the-Tiber-who-takes-Rhea-Silvia-as-his-bride", "sources": [{"kind": "primary", "reference": "Ovid, Fasti 3.45-58; Horace, Carmina 1.2.17-20"}], "notes": "God of the river Tiber. In the tradition followed by Ennius, Horace and Ovid, when Rhea Silvia was cast into his waters he received her, made her his bride, and so preserved the mother of Romes founder in deified form. He also appears to Aeneas in a dream to guide him to the Tiber mouth."}
+    ],
+    "domains": [{"sphereId": "rivers", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Virgil, Aeneid 8.31-78; Ovid, Fasti 3.45-58"}], "notes": "Tutelary river-god of the Tiber, the great river of Rome."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Virgil, Aeneid 8.31-78; Ovid, Fasti 2.597, 3.45-58; Ovid, Metamorphoses 14.614-615; Cicero, De Natura Deorum 3.52"}]},
+      {"claim": "marriage-to-rhea-silvia", "citations": [{"kind": "primary", "reference": "Ovid, Fasti 3.45-58; Horace, Carmina 1.2.17-20 (Ilia and the Tiber); Ennius, Annales fragments"}]}
+    ],
+    "notes": "Roman river-god of the Tiber (Tiberinus Pater, Father Tiber), the deified river. In the river-bride tradition he takes the drowned Vestal Rhea Silvia (Ilia) as his wife, preserving her in divine form; an alternate naming (Ovid Fasti 3) gives the river Anio in his place. Honoured at Rome with the festival of the Tiberinalia and shared in the cult of the river island.",
+    "relations": [
+      {"kind": "spouse", "personId": "roman_rhea_silvia", "sources": [{"kind": "primary", "reference": "Ovid, Fasti 3.45-58; Horace, Carmina 1.2.17-20"}], "notes": "Took the drowned Rhea Silvia (Ilia) as his bride, making her a river-goddess."}
+    ]
+  },
+  {
+    "id": "roman_phaethon",
+    "name": {"primary": "Phaethon", "alt": ["Phaeton"], "transliterations": {"latin": "Phaethon", "greek": "Φαέθων"}},
+    "type": "demigod",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["roman_sol"],
+    "parentRoles": {"roman_sol": "paternal"},
+    "temporal": {"era": "primordial"},
+    "lifecycle": [
+      {"typeStatus": "demigod", "era": "primordial", "eraOrdering": 0, "startEvent": "son-of-Sol-who-begs-to-drive-the-chariot-of-the-sun", "sources": [{"kind": "primary", "reference": "Ovid, Metamorphoses 1.750-2.400"}], "notes": "Son of Sol (Phoebus) and the Oceanid nymph Clymene. To prove his divine parentage he obtained his father oath to grant any wish and asked to drive the sun-chariot; unable to control the horses he scorched the earth and was struck down by Jupiter thunderbolt, falling into the river Eridanus."}
+    ],
+    "domains": [{"sphereId": "sun", "contextTag": "episodic", "sources": [{"kind": "primary", "reference": "Ovid, Metamorphoses 2.1-339"}], "notes": "Drove the chariot of the sun for a single disastrous day."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Ovid, Metamorphoses 1.750-2.400; Hyginus, Fabulae 152-154"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Ovid, Metamorphoses 1.750-779, 2.19-30 (son of Sol/Phoebus and Clymene)"}]}
+    ],
+    "notes": "Roman/Ovidian demigod, son of the sun-god Sol (Phoebus) by the Oceanid Clymene. His doomed ride in the chariot of the sun, ending in his fall and death by Jupiter thunderbolt, is told in Ovid Metamorphoses 2; his sisters the Heliades wept amber for him. Named in the registry as the son of Sol (the family tree links from his parentIds).",
+    "relations": []
+  },
+  {
+    "id": "roman_tiberius_claudius_nero",
+    "name": {"primary": "Tiberius Claudius Nero", "alt": ["Tiberius Nero"], "transliterations": {"latin": "Tiberius Claudius Nero"}},
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "roman-republic-late"},
+    "lifecycle": [
+      {"typeStatus": "mortal", "era": "roman-republic-late", "eraOrdering": 0, "startEvent": "Roman-magistrate-of-the-gens-Claudia-and-first-husband-of-Livia", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 4; Velleius Paterculus 2.75"}], "notes": "Roman senator and praetor of the patrician gens Claudia who married Livia Drusilla and fathered the future emperor Tiberius and Drusus the Elder. In 39 BCE he was compelled to divorce the pregnant Livia so she could marry Octavian."}
+    ],
+    "domains": [{"sphereId": "roman-magistracy", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 4"}], "notes": "Senator and magistrate of the gens Claudia in the late Republic."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Suetonius, Tiberius 4; Suetonius, Divus Augustus 62; Velleius Paterculus 2.75, 2.94; Cassius Dio 48.44"}]}
+    ],
+    "notes": "Mortal Roman senator of the gens Claudia, first husband of Livia Drusilla and father of the emperor Tiberius and of Drusus the Elder. Forced to give up Livia to Octavian in 39 BCE while she was pregnant with Drusus.",
+    "relations": [
+      {"kind": "father-of", "personId": "roman_tiberius", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 4"}], "notes": "Birth-father of the emperor Tiberius."},
+      {"kind": "father-of", "personId": "roman_drusus_the_elder", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 4; Suetonius, Claudius 1"}], "notes": "Father of Drusus the Elder, born after Livia divorce."},
+      {"kind": "spouse", "personId": "roman_livia_drusilla", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 4; Cassius Dio 48.44"}], "notes": "First husband of Livia Drusilla, until the 39 BCE divorce."}
+    ]
+  },
+  {
+    "id": "roman_livia_drusilla",
+    "name": {"primary": "Livia Drusilla", "alt": ["Livia", "Iulia Augusta", "Julia Augusta"], "transliterations": {"latin": "Livia Drusilla"}},
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "roman-republic-late"},
+    "lifecycle": [
+      {"typeStatus": "mortal", "era": "roman-republic-late", "eraOrdering": 0, "startEvent": "wife-of-Tiberius-Claudius-Nero-and-mother-of-Tiberius-and-Drusus", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 4; Tacitus, Annales 5.1"}], "notes": "Born 58 BCE; married first Tiberius Claudius Nero, by whom she bore the future emperor Tiberius and Drusus the Elder."},
+      {"typeStatus": "mortal", "era": "roman-empire-julio-claudian", "eraOrdering": 1, "startEvent": "marriage-to-Octavian-Augustus-and-long-life-as-empress", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 62; Tacitus, Annales 1.3-1.5, 5.1"}], "notes": "Married Octavian (Augustus) in 38 BCE and was empress for over fifty years; after Augustus death in 14 CE she was adopted into the gens Iulia by his will as Iulia Augusta. Died 29 CE; deified under Claudius."}
+    ],
+    "domains": [{"sphereId": "roman-imperial-household", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Tacitus, Annales 1.3-1.5"}], "notes": "Empress consort of Augustus and mother of the emperor Tiberius."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Tacitus, Annales 1.3-1.14, 5.1; Suetonius, Tiberius 4, Divus Augustus 62; Cassius Dio 48-58; Velleius Paterculus 2.75, 2.94"}]}
+    ],
+    "notes": "Mortal Roman empress, mother of the emperor Tiberius and of Drusus the Elder by her first husband Tiberius Claudius Nero; second wife of Augustus and, after his death, Iulia Augusta. Deified by her grandson Claudius.",
+    "relations": [
+      {"kind": "mother-of", "personId": "roman_tiberius", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 4"}], "notes": "Mother of the emperor Tiberius."},
+      {"kind": "mother-of", "personId": "roman_drusus_the_elder", "sources": [{"kind": "primary", "reference": "Suetonius, Claudius 1; Cassius Dio 48.44"}], "notes": "Mother of Drusus the Elder."},
+      {"kind": "spouse", "personId": "roman_tiberius_claudius_nero", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 4"}], "notes": "First husband."},
+      {"kind": "spouse", "personId": "roman_augustus", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 62; Cassius Dio 48.44"}], "notes": "Second husband; she became empress consort."}
+    ]
+  },
+  {
+    "id": "roman_vipsania_agrippina",
+    "name": {"primary": "Vipsania Agrippina", "alt": ["Vipsania"], "transliterations": {"latin": "Vipsania Agrippina"}},
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "roman-empire-julio-claudian"},
+    "lifecycle": [
+      {"typeStatus": "mortal", "era": "roman-republic-late", "eraOrdering": 0, "startEvent": "daughter-of-Agrippa-betrothed-and-married-to-Tiberius", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 7; Nepos, Atticus 19"}], "notes": "Daughter of Marcus Vipsanius Agrippa by his first wife Caecilia Attica; married Tiberius around 19 BCE and bore him Drusus the Younger. Their marriage was the happy one of Tiberius life."},
+      {"typeStatus": "mortal", "era": "roman-empire-julio-claudian", "eraOrdering": 1, "startEvent": "forced-divorce-from-Tiberius-in-12-bce", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 7; Cassius Dio 54.31"}], "notes": "In 12 BCE Augustus compelled Tiberius to divorce her to marry Iulia the Elder; she then married Gaius Asinius Gallus. Tiberius is said never to have forgiven the separation."}
+    ],
+    "domains": [{"sphereId": "roman-imperial-household", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 7"}], "notes": "First wife of the emperor Tiberius."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Suetonius, Tiberius 7; Cassius Dio 54.31; Cornelius Nepos, Atticus 19"}]}
+    ],
+    "notes": "Mortal Roman noblewoman, daughter of Marcus Vipsanius Agrippa, first and most beloved wife of the emperor Tiberius and mother of his son Drusus the Younger. Augustus forced their divorce in 12 BCE so Tiberius could marry Iulia the Elder.",
+    "relations": [
+      {"kind": "spouse", "personId": "roman_tiberius", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 7"}], "notes": "First wife of Tiberius until the forced divorce of 12 BCE."},
+      {"kind": "mother-of", "personId": "roman_drusus_the_younger", "sources": [{"kind": "primary", "reference": "Suetonius, Tiberius 7; Tacitus, Annales 2.43"}], "notes": "Mother of Drusus the Younger by Tiberius."}
+    ]
+  },
+  {
+    "id": "roman_drusus_the_younger",
+    "name": {"primary": "Drusus the Younger", "alt": ["Drusus Iulius Caesar", "Drusus Julius Caesar", "Drusus II"], "transliterations": {"latin": "Drusus Iulius Caesar"}},
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["roman_tiberius", "roman_vipsania_agrippina"],
+    "parentRoles": {"roman_tiberius": "paternal", "roman_vipsania_agrippina": "maternal"},
+    "temporal": {"era": "roman-empire-julio-claudian"},
+    "lifecycle": [
+      {"typeStatus": "mortal", "era": "roman-empire-julio-claudian", "eraOrdering": 0, "startEvent": "born-to-Tiberius-and-Vipsania-around-14-bce", "sources": [{"kind": "primary", "reference": "Tacitus, Annales 2.43-2.44; Suetonius, Tiberius 7"}], "notes": "Only son of Tiberius and Vipsania Agrippina; born about 14 BCE. After his father adoption into the gens Iulia in 4 CE he was Drusus Iulius Caesar."},
+      {"typeStatus": "mortal", "era": "roman-empire-julio-claudian", "eraOrdering": 1, "startEvent": "heir-of-Tiberius-after-Germanicus-and-death-in-23-ce", "sources": [{"kind": "primary", "reference": "Tacitus, Annales 4.3-4.11; Cassius Dio 57.22"}], "notes": "Became Tiberius heir after the death of Germanicus in 19 CE; held the consulship and tribunician power. Died 14 September 23 CE, poisoned (per Tacitus) at the instigation of the praetorian prefect Sejanus and Drusus own wife Livilla."}
+    ],
+    "domains": [{"sphereId": "roman-imperial-succession", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Tacitus, Annales 3.56, 4.3"}], "notes": "Designated heir of Tiberius; held tribunician power."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Tacitus, Annales 1.24, 2.43-2.44, 3.56, 4.3-4.11; Suetonius, Tiberius 7, 62; Cassius Dio 57.13-58.11"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Tacitus, Annales 2.43; Suetonius, Tiberius 7 (son of Tiberius and Vipsania)"}]}
+    ],
+    "notes": "Mortal son of the emperor Tiberius and his first wife Vipsania Agrippina; heir-apparent after Germanicus until his death in 23 CE, poisoned with the connivance of Sejanus and his wife Livilla. Not to be confused with his uncle Drusus the Elder or with Germanicus.",
+    "relations": []
+  },
+  {
+    "id": "sami_madder_attje",
+    "name": {"primary": "Madder-attje", "alt": ["Maderatcha", "Mattarahttje", "Maderakka husband"], "transliterations": {"sami": "Mattarahttje"}},
+    "type": "deity",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {"typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "the-ancestor-father-consort-of-Maderakka", "sources": [{"kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927), Lapp section: Madder-akka and her counterpart Madder-attje"}], "notes": "The ancestor-father, the male counterpart and consort of the ancestral mother-goddess Maderakka (Mattarahkka). On some Sami drums he receives the soul from the high god and passes it to Maderakka, who gives it a body; in the sources he holds a much smaller role than his wife and is taken to be a later addition."}
+    ],
+    "domains": [{"sphereId": "ancestral-fatherhood", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871): Madder-attje beside Madder-akka"}], "notes": "Ancestral father-god, consort of the origin-mother Maderakka."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (The Mythology of All Races IV), 1927"}, {"kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871); Sami drum surveys (Manker)"}]},
+      {"claim": "consort-of-mattarahkka", "citations": [{"kind": "secondary", "reference": "Sami drum iconography: Maderakka given the husband Madder-attje (Mattarahttje)"}]}
+    ],
+    "notes": "Sami ancestral father-god, consort of the origin-mother Maderakka (sami_mattarahkka). The pair Madder-akka and Madder-attje are the ancestress and ancestor (mattar meaning root or ancestor, with akka meaning mother and attje meaning father). He appears on some drums but with a much smaller role than his wife and is held to be a later addition; he is named in the registry as the male counterpart of Maderakka. Wired here only as her spouse, not as father of the three Akka daughters, whose paternity the sources do not make explicit.",
+    "relations": [
+      {"kind": "spouse", "personId": "sami_mattarahkka", "sources": [{"kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927); Sami drum surveys"}], "notes": "Consort of the ancestral mother-goddess Maderakka."}
+    ]
+  },
+  {
+    "id": "sami_radien_akka",
+    "name": {"primary": "Radien-akka", "alt": ["Raedieahkka", "Raedie-akka", "Radienahkka"], "transliterations": {"sami": "Radienahkka"}},
+    "type": "deity",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {"typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "the-superior-mother-consort-of-Radien-attje", "sources": [{"kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (1927): the Radien family - Radien-attje, Radien-akka and Radien-pardne"}], "notes": "The superior mother, wife of the Sami high creator Radien-attje, and mother of the active son Radien-pardne and of the daughter Rana Niejta; she forms the female member of the Radien trinity on the southern Sami drums, placed beside Radien-attje."}
+    ],
+    "domains": [{"sphereId": "creation-supreme", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871): the Radien family"}], "notes": "Mother-goddess of the high creator-family of the Sami."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "secondary", "reference": "U. Holmberg (Harva), Finno-Ugric Mythology (The Mythology of All Races IV), 1927"}, {"kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871); E. Manker, Die lappische Zaubertrommel (1938-50)"}]},
+      {"claim": "consort-of-radien-attje-and-mother-of-the-radien-children", "citations": [{"kind": "secondary", "reference": "Sami religion scholarship: Radien-akka wife of Radien-attje, mother of Radien-pardne and Rana Niejta"}]}
+    ],
+    "notes": "Sami high mother-goddess, wife of the supreme creator Radien-attje (sami_radien_attje) and mother of the active son Radien-pardne (sami_radien_pardne) and of the spring-and-fertility daughter Rana Niejta. The Radien family (father, mother, son and daughter) stands among the upper-world figures of the southern Sami drums. Secondary attestation (Holmberg, Friis; drum-iconography).",
+    "relations": [
+      {"kind": "spouse", "personId": "sami_radien_attje", "sources": [{"kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927); Friis, Lappisk Mythologi (1871)"}], "notes": "Wife of the high creator Radien-attje."},
+      {"kind": "mother-of", "personId": "sami_radien_pardne", "sources": [{"kind": "secondary", "reference": "Holmberg, Finno-Ugric Mythology (1927): Radien-pardne son of Radien-attje and Radien-akka"}], "notes": "Mother of the active son Radien-pardne."},
+      {"kind": "mother-of", "personId": "sami_rana_niejta", "sources": [{"kind": "secondary", "reference": "Sami religion scholarship: Rana Niejta daughter of Radien-attje and Radien-akka"}], "notes": "Mother of the daughter Rana Niejta."}
+    ]
+  },
+  {
+    "id": "sami_rana_niejta",
+    "name": {"primary": "Rana Niejta", "alt": ["Rananeida", "Rana-neida", "Rananeijta", "Rananeitta"], "transliterations": {"sami": "Rana Niejta"}},
+    "type": "deity",
+    "tradition": "Sámi",
+    "primaryTradition": "Sámi",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["sami_radien_attje", "sami_radien_akka"],
+    "parentRoles": {"sami_radien_attje": "father", "sami_radien_akka": "mother"},
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {"typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "the-spring-goddess-daughter-of-the-high-creator-family", "sources": [{"kind": "secondary", "reference": "Sami religion scholarship: among the Swedish Sami, Rana Niejta the daughter of the highest god Radien-attje and his wife Radien-akka"}], "notes": "The daughter of the high creator Radien-attje and Radien-akka; goddess of spring and fertility (her name is glossed as the green hillside maiden), to whom offerings were made so the mountainsides would grow green for the reindeer. She appears with the Radien family among the upper-world figures of the drums."}
+    ],
+    "domains": [{"sphereId": "spring-and-fertility", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Sami religion scholarship: Rana Niejta, goddess of spring and the greening of the land"}], "notes": "Goddess of spring, fertility and the greening of the mountainsides."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871); Sami religion scholarship on the Radien family"}, {"kind": "secondary", "reference": "E. Manker, Die lappische Zaubertrommel (1938-50): the Radien family on the drums"}]},
+      {"claim": "parentage", "citations": [{"kind": "secondary", "reference": "Sami religion scholarship: Rana Niejta daughter of Radien-attje and Radien-akka"}]}
+    ],
+    "notes": "Sami goddess of spring and fertility, daughter of the supreme creator Radien-attje and the mother-goddess Radien-akka. Her name (Rana, the green hillside, + niejta, maiden) marks her as the power of the greening land in spring, petitioned so the slopes should bear new growth for the reindeer. Member of the Radien family on the southern Sami drums. Secondary attestation (Friis; drum-iconography).",
+    "relations": [
+      {"kind": "sibling", "personId": "sami_radien_pardne", "sources": [{"kind": "secondary", "reference": "Sami religion scholarship: Radien-pardne and Rana Niejta, children of Radien-attje and Radien-akka"}], "notes": "Sister of the active creator-son Radien-pardne."}
+    ]
+  },
+  {
+    "id": "samoan_ulufanuasesee",
+    "name": {"primary": "Ulufanuasesee", "alt": ["Ulufanuaseseʻe", "Ulufanua"], "transliterations": {"samoan": "Ulufanuaseseʻe"}},
+    "type": "deity",
+    "tradition": "Samoan",
+    "primaryTradition": "Samoan",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {"typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "the-youngest-brother-of-Saveasiuleo-who-stays-in-the-upper-world", "sources": [{"kind": "secondary", "reference": "A. Kraemer, Die Samoa-Inseln (1902/03), the Pulotu and Nafanua traditions; G. Turner, Samoa (1884)"}], "notes": "The youngest brother of Saveasiuleo, the eel-lord of Pulotu. When the brothers parted, Saveasiuleo going down to rule the spirit-world, he foretold that they would meet again through their descendants - fulfilled in the war-goddess Nafanua and the Malietoa line. He remained in the upper world (the world of the living) at the beach below Alao."}
+    ],
+    "domains": [{"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "A. Kraemer, Die Samoa-Inseln (1902/03): the parting of the brothers and the prophecy of reunion through descendants"}], "notes": "Ancestral brother-figure of the Pulotu lineage; progenitor in the line whose descendants meet those of Saveasiuleo."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "secondary", "reference": "A. Kraemer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), the Pulotu / Nafanua cycle"}, {"kind": "secondary", "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884); J. B. Stair, Old Samoa (1897)"}]},
+      {"claim": "brother-of-saveasiuleo", "citations": [{"kind": "secondary", "reference": "Samoan mythology: Ulufanuaseseʻe the youngest brother of Saveasiuleo, to whom he gave the prophecy of meeting through their descendants"}]}
+    ],
+    "notes": "Samoan ancestral deity, the youngest brother of Saveasiuleo the eel-lord of Pulotu. At the parting of the brothers Saveasiuleo prophesied to him that they would meet again through their descendants, fulfilled in Nafanua and the Malietoa line. Named in the registry as the brother from whom Saveasiuleo separated. (A third brother, Salevao, is named in some tellings but is not authored here as he is not named in the audited prose.) Secondary attestation (Kraemer, Turner, Stair).",
+    "relations": [
+      {"kind": "sibling", "personId": "samoan_saveasiuleo", "sources": [{"kind": "secondary", "reference": "A. Kraemer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884)"}], "notes": "Youngest brother of Saveasiuleo, lord of Pulotu."}
+    ]
+  },
+  {
+    "id": "san_dassie",
+    "name": {"primary": "the Dassie", "alt": ["Coti", "Hyrax wife of the Mantis", "Mother of the Bees"], "transliterations": {"xam_ascii": "Coti (the Dassie)"}},
+    "type": "deity",
+    "tradition": "San",
+    "primaryTradition": "San",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "First Times / the Early Race"},
+    "domains": [{"sphereId": "the-dassie-hyrax", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Bleek, D.F., The Mantis and His Friends: Bushman Folklore (1923)"}], "notes": "The Cape hyrax (dassie, rock-rabbit) wife of the Mantis; called the mother of the bees in the Bleek-Lloyd /Xam corpus."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Bleek, W.H.I. and Lloyd, L.C., Specimens of Bushman Folklore (1911); Bleek, D.F., The Mantis and His Friends (1923)"}]},
+      {"claim": "wife-of-kaggen", "citations": [{"kind": "primary", "reference": "Bleek-Lloyd /Xam corpus: the wife of the Mantis is the Dassie (Cape hyrax)"}]}
+    ],
+    "notes": "San First-Race being, the wife of the trickster-creator Mantis (sami /Kaggen, here san_kaggen), in the form of the Cape hyrax (dassie, rock-rabbit) and called the mother of the bees. Named in the registry as the Dassie, the Mantis wife, who in the Bleek-Lloyd /Xam corpus heads the Mantis household together with the adopted Porcupine (san_kxo). Click symbols are rendered in ASCII.",
+    "relations": [
+      {"kind": "spouse", "personId": "san_kaggen", "sources": [{"kind": "primary", "reference": "Bleek, D.F., The Mantis and His Friends: Bushman Folklore (1923)"}], "notes": "Wife of the Mantis /Kaggen."}
+    ]
+  },
+  {
+    "id": "san_ichneumon",
+    "name": {"primary": "the Ichneumon", "alt": ["Mongoose", "Grandson of the Mantis", "Ni"], "transliterations": {"xam_ascii": "Ichneumon (Mongoose)"}},
+    "type": "demigod",
+    "tradition": "San",
+    "primaryTradition": "San",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["san_kwammanga", "san_kxo"],
+    "parentRoles": {"san_kwammanga": "paternal", "san_kxo": "maternal"},
+    "temporal": {"era": "First Times / the Early Race"},
+    "domains": [{"sphereId": "the-mongoose", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Bleek, D.F., The Mantis and His Friends: Bushman Folklore (1923)"}], "notes": "The mongoose son of Kwammang-a and the Porcupine; the sharp-tongued young one who corrects and instructs his grandfather the Mantis."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Bleek, W.H.I. and Lloyd, L.C., Specimens of Bushman Folklore (1911); Bleek, D.F., The Mantis and His Friends (1923)"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Bleek-Lloyd /Xam corpus: the Porcupine and Kwammang-a have two sons, the younger Kwammang-a and the Mongoose (Ichneumon); the Ichneumon is the Mantis grandson"}]}
+    ],
+    "notes": "San First-Race being, the Ichneumon (mongoose), son of the rainbow-being /Kwammang-a (san_kwammanga) and the Porcupine (san_kxo), and grandson of the trickster-creator Mantis /Kaggen. In the Bleek-Lloyd /Xam narratives he is the bossy, clever young one who is forever putting his grandfather the Mantis in his place. Click symbols rendered in ASCII.",
+    "relations": [
+      {"kind": "sibling", "personId": "san_young_kwammanga", "sources": [{"kind": "primary", "reference": "Bleek, D.F., The Mantis and His Friends (1923)"}], "notes": "Brother of the younger Kwammang-a, the second son of /Kwammang-a and the Porcupine."}
+    ]
+  },
+  {
+    "id": "san_young_kwammanga",
+    "name": {"primary": "the younger Kwammang-a", "alt": ["young Kwammanga", "Kwammang-a the son"], "transliterations": {"xam_ascii": "the younger /Kwammang-a"}},
+    "type": "demigod",
+    "tradition": "San",
+    "primaryTradition": "San",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["san_kwammanga", "san_kxo"],
+    "parentRoles": {"san_kwammanga": "paternal", "san_kxo": "maternal"},
+    "temporal": {"era": "First Times / the Early Race"},
+    "domains": [{"sphereId": "the-rainbow", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Bleek, D.F., The Mantis and His Friends: Bushman Folklore (1923)"}], "notes": "The elder of the two sons of /Kwammang-a, bearing his father name, in the Mantis mythic family."}],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Bleek, D.F., The Mantis and His Friends (1923); Bleek and Lloyd, Specimens of Bushman Folklore (1911)"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Bleek-Lloyd /Xam corpus: the Porcupine and Kwammang-a have two sons, one called Kwammang-a after his father and the other the Mongoose (Ichneumon)"}]}
+    ],
+    "notes": "San First-Race being, the elder son of the rainbow-being /Kwammang-a (san_kwammanga) and the Porcupine (san_kxo), named Kwammang-a after his father, and brother of the Ichneumon (mongoose). Named in the registry as the younger Kwammang-a, one of the two sons of /Kwammang-a in the Mantis mythic family. Click symbols rendered in ASCII.",
+    "relations": [
+      {"kind": "sibling", "personId": "san_ichneumon", "sources": [{"kind": "primary", "reference": "Bleek, D.F., The Mantis and His Friends (1923)"}], "notes": "Brother of the Ichneumon (mongoose), the second son of /Kwammang-a and the Porcupine."}
+    ]
+  }
+]
+```

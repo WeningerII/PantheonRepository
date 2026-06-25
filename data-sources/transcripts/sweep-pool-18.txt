@@ -1,0 +1,434 @@
+Sweep window #18 — family-completion. New figures authored from kin NAMED in the prose
+of existing window entities (mordvin_norovava, mordvin_varmava, norse_aslaug).
+
+Attestation notes:
+- Mastorpaz: son of the sun-god Chipaz and the grain-mother Norov-ava in the Erzya
+  "egg" cosmogony; god of the underworld. (Folklore vol. 17, Tartu 2001; Harva FFC 142.)
+- Varmanpaz: the male wind-god, son of Chipaz, in the same Erzya egg-cosmogony
+  (Chipaz begot Nishkepaz, the earth-keeper Mastoron-kirdi and the wind-god Varmanpaz).
+- Brynhildr: valkyrie / shield-maiden, daughter of Budli; mother of Aslaug (and Svanhild)
+  by Sigurd. (Volsunga saga; Ragnars saga lodbrokar ch.1.)
+- Ragnar Lodbrok: legendary Viking king, husband of Aslaug, father of her sons.
+  (Ragnars saga lodbrokar; Ragnarssona thattr.)
+- Ivarr the Boneless, Bjorn Ironside, Sigurd Snake-in-the-Eye: sons of Ragnar and Aslaug.
+  (Ragnars saga lodbrokar ch.4-9; Ragnarssona thattr.)
+
+```json
+[
+  {
+    "id": "mordvin_varmanpaz",
+    "name": {
+      "primary": "Wind-God of the Erzya",
+      "alt": ["Varmanpaz", "Varma-pas", "Varmapaz", "Варма паз"],
+      "transliterations": {
+        "mordvin": "Варма паз",
+        "etymology": "Erzya varma 'wind' + paz/-pas 'god' = 'wind-god'."
+      }
+    },
+    "type": "deity",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["mordvin_chipaz"],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Begotten by the sun-god Chipaz in the Erzya egg-cosmogony as the god of the wind.",
+        "sources": [
+          {"kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001 (Chipaz begot Nishkepaz, the earth-keeper Mastoron-kirdi and the wind-god Varmanpaz)."}
+        ],
+        "notes": "A cosmogonic son-of-the-sun figure; the male wind-god, kept distinct from the female wind-mother Varma-ava."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wind-and-weather",
+        "contextTag": "lifelong",
+        "term": {"value": "Варма паз", "script": "Cyrl", "rom": "Varma paz"},
+        "sources": [
+          {"kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001."}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology.' Folklore (Tartu) 17, 2001 (Varmanpaz, wind-god, son of the sun-god Chipaz)."},
+          {"kind": "secondary", "reference": "Harva (Holmberg), Uno. Die religiosen Vorstellungen der mordwinischen Volker. FFC 142, Helsinki, 1952."}
+        ],
+        "weight": "medium"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "half-sibling",
+        "personId": "mordvin_mastorpaz",
+        "sources": [
+          {"kind": "secondary", "reference": "Sarv, 'Some Aspects of Mordvin Mythology', Folklore 17, 2001 (both reckoned sons of the sun-god Chipaz)."}
+        ],
+        "notes": "Both are sons of the sun-god Chipaz in the Erzya egg-cosmogony."
+      }
+    ],
+    "notes": "Erzya male wind-god, son of the sun-god Chipaz; named in the corpus entry for Varma-ava, which keeps the wind-mother and the wind-god separate. Authored here as the kin who lacked an entry. The female elemental Varma-ava remains a distinct figure."
+  },
+  {
+    "id": "norse_brynhildr",
+    "name": {
+      "primary": "Brynhildr",
+      "alt": ["Brynhild", "Brunhild", "Brynhildr Budladottir"],
+      "transliterations": {
+        "old-norse": "Brynhildr",
+        "etymology": "brynja 'mail-coat, byrnie' + hildr 'battle' = 'mail-coat of battle / armoured in battle'."
+      }
+    },
+    "type": "numen",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "shieldmaiden-and-valkyrie",
+        "sources": [
+          {"kind": "primary", "reference": "Volsunga saga ch. 20-31"}
+        ],
+        "notes": "Valkyrie and shield-maiden, daughter of Budli and sister of Atli; betrothed to Sigurd, by whom she bore Aslaug, before her oath-bound marriage to Gunnar and her death on Sigurd's pyre."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": {"value": "valkyrja", "script": "Old Norse", "rom": "valkyrja"},
+        "sources": [
+          {"kind": "primary", "reference": "Volsunga saga ch. 20-21; Sigrdrifumal (the awakened valkyrie)."}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "primary", "reference": "Volsunga saga ch. 20-31 (Brynhildr the valkyrie, daughter of Budli)."},
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 1 (Aslaug as the daughter of Sigurd and Brynhildr)."}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "lover",
+        "personId": "norse_sigurd",
+        "sources": [
+          {"kind": "primary", "reference": "Volsunga saga ch. 25-29 (Sigurd and Brynhildr; the begetting of Aslaug)."}
+        ],
+        "notes": "Sigurd and the valkyrie Brynhildr; their daughter is Aslaug."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "norse_aslaug",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 1; Volsunga saga ch. 29 (Aslaug, daughter of Sigurd and Brynhildr)."}
+        ],
+        "notes": "Mother of Aslaug by Sigurd; Aslaug was hidden by Brynhildr's foster-father Heimir."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "norse_svanhild",
+        "sources": [
+          {"kind": "primary", "reference": "Volsunga saga ch. 29 (Svanhild, daughter of Sigurd and the valkyrie)."}
+        ],
+        "notes": "Svanhild is reckoned a daughter of Sigurd and Brynhildr in the Volsung cycle."
+      }
+    ],
+    "notes": "Valkyrie and shield-maiden of the Volsung cycle, daughter of Budli; mother of Aslaug (and, in the cycle, Svanhild) by Sigurd. Named repeatedly in the corpus entry for Aslaug. Her father Budli has no entry, so parentIds is left empty. Classed numen as a valkyrie (fully-divine being outside the worshipped Aesir/Vanir pantheon)."
+  },
+  {
+    "id": "norse_ragnar",
+    "name": {
+      "primary": "Ragnar Lodbrok",
+      "alt": ["Ragnarr", "Ragnar Lothbrok", "Ragnarr Lodbrok"],
+      "transliterations": {
+        "old-norse": "Ragnarr Lodbrok",
+        "etymology": "Ragnarr (regin 'gods/powers' + -arr) + the byname lodbrok 'hairy-breeches / shaggy-breeks'."
+      }
+    },
+    "type": "mortal",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "viking-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "viking-age",
+        "eraOrdering": 0,
+        "startEvent": "legendary-sea-king",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar"}
+        ],
+        "notes": "Legendary Viking sea-king and raider; married Aslaug after his first wife Thora and fathered her sons. By legend he died in King Aella's snake-pit in Northumbria."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 4-9 (Ragnar weds Aslaug/Kraka and they have sons)."},
+          {"kind": "primary", "reference": "Ragnarssona thattr (Tale of Ragnar's Sons)."}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "norse_aslaug",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 4-9 (Ragnar marries Aslaug, called Kraka)."}
+        ],
+        "notes": "Ragnar married Aslaug (the disguised crow-girl Kraka); she bore his sons."
+      },
+      {
+        "kind": "father-of",
+        "personId": "norse_ivarr",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 9; Ragnarssona thattr."}
+        ],
+        "notes": "Father of Ivarr the Boneless by Aslaug."
+      },
+      {
+        "kind": "father-of",
+        "personId": "norse_bjorn_ironside",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 9; Ragnarssona thattr."}
+        ],
+        "notes": "Father of Bjorn Ironside by Aslaug."
+      },
+      {
+        "kind": "father-of",
+        "personId": "norse_sigurd_snake",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 9; Ragnarssona thattr."}
+        ],
+        "notes": "Father of Sigurd Snake-in-the-Eye by Aslaug."
+      }
+    ],
+    "notes": "Legendary Viking-age sea-king, husband of Aslaug and father of her sons (Ivarr the Boneless, Bjorn Ironside, Sigurd Snake-in-the-Eye, and in the fuller lists Hvitserk and Ragnvald). Named in the corpus entry for Aslaug. Classed mortal (a legendary human king)."
+  },
+  {
+    "id": "norse_ivarr",
+    "name": {
+      "primary": "Ivarr the Boneless",
+      "alt": ["Ivar the Boneless", "Ivarr hinn Beinlausi", "Ivar Ragnarsson"],
+      "transliterations": {
+        "old-norse": "Ivarr hinn Beinlausi",
+        "etymology": "Ivarr + hinn beinlausi 'the boneless'."
+      }
+    },
+    "type": "mortal",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["norse_aslaug", "norse_ragnar"],
+    "parentRoles": {"norse_aslaug": "maternal", "norse_ragnar": "paternal"},
+    "temporal": {"era": "viking-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "viking-age",
+        "eraOrdering": 0,
+        "startEvent": "birth",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 9"}
+        ],
+        "notes": "Eldest son of Ragnar and Aslaug, born weak or 'boneless' because Ragnar would not heed Aslaug's counsel to wait; a Viking leader of the invasion of England (died c. 873)."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 9 (Ivarr the Boneless, son of Ragnar and Aslaug)."},
+          {"kind": "primary", "reference": "Ragnarssona thattr (Tale of Ragnar's Sons)."}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "norse_bjorn_ironside",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnarssona thattr (the brothers Ivarr, Bjorn and Sigurd)."}
+        ],
+        "notes": "Brothers, sons of Ragnar and Aslaug."
+      },
+      {
+        "kind": "sibling",
+        "personId": "norse_sigurd_snake",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnarssona thattr."}
+        ],
+        "notes": "Brothers, sons of Ragnar and Aslaug."
+      }
+    ],
+    "notes": "Eldest son of Ragnar Lodbrok and Aslaug, named in the corpus entry for Aslaug. Remembered as a 9th-century Viking commander. Classed mortal; the merge recomputes tier from the descent through Aslaug."
+  },
+  {
+    "id": "norse_bjorn_ironside",
+    "name": {
+      "primary": "Bjorn Ironside",
+      "alt": ["Bjorn Ironside", "Bjorn Jarnsida", "Bjorn Ragnarsson"],
+      "transliterations": {
+        "old-norse": "Bjorn Jarnsida",
+        "etymology": "Bjorn 'bear' + jarnsida 'iron-side'."
+      }
+    },
+    "type": "mortal",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["norse_aslaug", "norse_ragnar"],
+    "parentRoles": {"norse_aslaug": "maternal", "norse_ragnar": "paternal"},
+    "temporal": {"era": "viking-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "viking-age",
+        "eraOrdering": 0,
+        "startEvent": "birth",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 9"}
+        ],
+        "notes": "Son of Ragnar and Aslaug; a Viking leader of raids in Francia and the Mediterranean, reckoned a forefather of the kings of Sweden."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 9 (Bjorn Ironside, son of Ragnar and Aslaug)."},
+          {"kind": "primary", "reference": "Ragnarssona thattr (Tale of Ragnar's Sons)."}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "norse_ivarr",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnarssona thattr (the brothers Ivarr, Bjorn and Sigurd)."}
+        ],
+        "notes": "Brothers, sons of Ragnar and Aslaug."
+      },
+      {
+        "kind": "sibling",
+        "personId": "norse_sigurd_snake",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnarssona thattr."}
+        ],
+        "notes": "Brothers, sons of Ragnar and Aslaug."
+      }
+    ],
+    "notes": "Son of Ragnar Lodbrok and Aslaug, named in the corpus entry for Aslaug. Remembered as a Viking sea-king and legendary ancestor of Swedish kings. Classed mortal."
+  },
+  {
+    "id": "norse_sigurd_snake",
+    "name": {
+      "primary": "Sigurd Snake-in-the-Eye",
+      "alt": ["Sigurd Snake-in-the-Eye", "Sigurdr Ormr i Auga", "Sigurd Ormur"],
+      "transliterations": {
+        "old-norse": "Sigurdr Ormr i Auga",
+        "etymology": "Sigurdr + ormr i auga 'serpent in the eye', for the snake-mark in his eye."
+      }
+    },
+    "type": "mortal",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["norse_aslaug", "norse_ragnar"],
+    "parentRoles": {"norse_aslaug": "maternal", "norse_ragnar": "paternal"},
+    "temporal": {"era": "viking-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "viking-age",
+        "eraOrdering": 0,
+        "startEvent": "birth",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 9"}
+        ],
+        "notes": "Son of Ragnar and Aslaug, born with the image of a serpent in his eye, which proved Aslaug's foretelling and her royal Volsung descent."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "primary", "reference": "Ragnars saga lodbrokar ch. 9 (Sigurd Snake-in-the-Eye, born with a serpent-mark in his eye, son of Ragnar and Aslaug)."},
+          {"kind": "primary", "reference": "Ragnarssona thattr (Tale of Ragnar's Sons)."}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "norse_ivarr",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnarssona thattr (the brothers Ivarr, Bjorn and Sigurd)."}
+        ],
+        "notes": "Brothers, sons of Ragnar and Aslaug."
+      },
+      {
+        "kind": "sibling",
+        "personId": "norse_bjorn_ironside",
+        "sources": [
+          {"kind": "primary", "reference": "Ragnarssona thattr."}
+        ],
+        "notes": "Brothers, sons of Ragnar and Aslaug."
+      }
+    ],
+    "notes": "Son of Ragnar Lodbrok and Aslaug, named in the corpus entry for Aslaug; the serpent-mark in his eye confirmed Aslaug's Volsung ancestry. Remembered as a Viking-age king in Denmark. Classed mortal."
+  }
+]
+```

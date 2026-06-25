@@ -1,0 +1,785 @@
+Sweep pool 02 — window #2 (Greek: Hesiod cosmogony + heroic/Trojan figures).
+Worker W02. New figures are family members NAMED in the prose of existing window
+entities that lacked their own entry, verified by WebSearch at work-citation level.
+
+```json
+[
+  {
+    "id": "greek_hesiod_menoetius",
+    "name": {
+      "primary": "Menoetius",
+      "alt": ["Menoitios", "Menoetes"],
+      "transliterations": { "greek": "Μενοίτιος" }
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["greek_hesiod_iapetus"],
+    "temporal": { "era": "titanomachy" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "titanomachy",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Iapetus-and-Clymene",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 507-516" }
+        ],
+        "notes": "Son of the Titan Iapetus by the Oceanid Clymene; brother of Atlas, Prometheus and Epimetheus."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "titanomachy",
+        "eraOrdering": 1,
+        "startEvent": "blasted-by-Zeus-into-Erebus",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 514-516" }
+        ],
+        "notes": "For his overweening insolence Zeus struck him with a smoking thunderbolt and hurled him down to Erebus."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "violent-rashness",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 514-516" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 507-516" },
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 1.2.3" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "greek_hesiod_atlas",
+        "notes": "Full sibling — both sons of Iapetus and Clymene per Hesiod, Theogony 507-516."
+      },
+      {
+        "kind": "sibling",
+        "personId": "greek_hesiod_prometheus",
+        "notes": "Full sibling — both sons of Iapetus and Clymene per Hesiod, Theogony 507-516."
+      },
+      {
+        "kind": "sibling",
+        "personId": "greek_hesiod_epimetheus",
+        "notes": "Full sibling — both sons of Iapetus and Clymene per Hesiod, Theogony 507-516."
+      }
+    ]
+  },
+  {
+    "id": "greek_hesiod_epimetheus",
+    "name": {
+      "primary": "Epimetheus",
+      "alt": ["Afterthought"],
+      "transliterations": { "greek": "Ἐπιμηθεύς" }
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["greek_hesiod_iapetus"],
+    "temporal": { "era": "titanomachy" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "titanomachy",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Iapetus-and-Clymene",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 507-514" }
+        ],
+        "notes": "Son of Iapetus by the Oceanid Clymene; the scatter-brained brother of Prometheus, Atlas and Menoetius."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "titanomachy",
+        "eraOrdering": 1,
+        "startEvent": "receives-Pandora-against-the-warning-of-Prometheus",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Works and Days 83-89; Theogony 511-514" }
+        ],
+        "notes": "Took the woman Pandora as a gift from Zeus despite the warning of his brother Prometheus never to accept a gift from the Olympians, and so let loose evils upon mankind."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "afterthought",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 511-514" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 507-514; Works and Days 83-89" },
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 1.2.3, 1.7.2" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "greek_hesiod_atlas",
+        "notes": "Full sibling — both sons of Iapetus and Clymene per Hesiod, Theogony 507-514."
+      },
+      {
+        "kind": "sibling",
+        "personId": "greek_hesiod_prometheus",
+        "notes": "Full sibling — both sons of Iapetus and Clymene per Hesiod, Theogony 507-514."
+      },
+      {
+        "kind": "sibling",
+        "personId": "greek_hesiod_menoetius",
+        "notes": "Full sibling — both sons of Iapetus and Clymene per Hesiod, Theogony 507-516."
+      }
+    ]
+  },
+  {
+    "id": "greek_hesiod_moros",
+    "name": {
+      "primary": "Moros",
+      "alt": ["Doom", "Morus"],
+      "transliterations": { "greek": "Μόρος" }
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["greek_hesiod_nyx"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "born-of-Night-without-a-father",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 211-212" }
+        ],
+        "notes": "Brought forth by Nyx (Night) without a mate, alongside Ker, Thanatos, Hypnos and the rest of the dark brood."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "doom",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 211-212" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 211-212" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "greek_hesiod_thanatos",
+        "notes": "Full sibling — both born of Nyx per Hesiod, Theogony 211-212."
+      },
+      {
+        "kind": "sibling",
+        "personId": "greek_hesiod_hypnos",
+        "notes": "Full sibling — both born of Nyx per Hesiod, Theogony 211-212."
+      },
+      {
+        "kind": "sibling",
+        "personId": "greek_hesiod_nemesis",
+        "notes": "Full sibling — both born of Nyx per Hesiod, Theogony 211-223."
+      }
+    ]
+  },
+  {
+    "id": "greek_hesiod_thaumas",
+    "name": {
+      "primary": "Thaumas",
+      "alt": ["Thaumus"],
+      "transliterations": { "greek": "Θαύμας" }
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["greek_hesiod_gaia"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Pontus-and-Gaia",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 233-237" }
+        ],
+        "notes": "Sea-god son of Pontus and Gaia, brother of Nereus, Phorcys, Ceto and Eurybia; a god of the wonders of the deep."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 1,
+        "startEvent": "weds-Electra-and-fathers-Iris-and-the-Harpies",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 265-269" }
+        ],
+        "notes": "Wedded the Oceanid Electra, who bore him swift Iris the messenger and the long-haired Harpies."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wonders-of-the-sea",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 233-237, 265-269" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 233-237, 265-269" },
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 1.2.6" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "greek_hesiod_iris",
+        "era": "primordial",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 265-266" }
+        ],
+        "notes": "Father of Iris by the Oceanid Electra; the existing Iris entry needs parentIds += greek_hesiod_thaumas."
+      }
+    ]
+  },
+  {
+    "id": "greek_hesiod_pallas_titan",
+    "name": {
+      "primary": "Pallas",
+      "alt": ["Pallas the Titan"],
+      "transliterations": { "greek": "Πάλλας" }
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["greek_hesiod_crius"],
+    "temporal": { "era": "titanomachy" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "titanomachy",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Crius-and-Eurybia",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 375-377" }
+        ],
+        "notes": "Second-generation Titan, son of Crius by Eurybia; brother of Astraeus and Perses."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "titanomachy",
+        "eraOrdering": 1,
+        "startEvent": "weds-Styx-and-fathers-the-warrior-spirits",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 383-385" }
+        ],
+        "notes": "With the Oceanid Styx fathered Zelus (Emulation), Nike (Victory), Kratos (Strength) and Bia (Force)."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "warcraft",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 375-385" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 375-377, 383-385" },
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 1.2.2, 1.2.4" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "greek_hesiod_styx",
+        "era": "titanomachy",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 383-385" }
+        ],
+        "notes": "Consort of the Oceanid Styx."
+      },
+      {
+        "kind": "father-of",
+        "personId": "greek_hesiod_nike",
+        "era": "titanomachy",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 383-384" }
+        ],
+        "notes": "Father of Nike by Styx; the existing Nike entry needs parentIds += greek_hesiod_pallas_titan and greek_hesiod_styx."
+      }
+    ]
+  },
+  {
+    "id": "greek_hesiod_styx",
+    "name": {
+      "primary": "Styx",
+      "alt": ["Stux"],
+      "transliterations": { "greek": "Στύξ" }
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["greek_hesiod_oceanus", "greek_hesiod_tethys"],
+    "temporal": { "era": "titanomachy" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "titanomachy",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-eldest-Oceanid",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 361, 383-385" }
+        ],
+        "notes": "Eldest daughter of Oceanus and Tethys; the great cold water of the underworld river by which the gods swear their inviolable oath."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "titanomachy",
+        "eraOrdering": 1,
+        "startEvent": "first-to-aid-Zeus-and-made-the-oath-of-the-gods",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 389-403" }
+        ],
+        "notes": "First of the immortals to come with her children to help Zeus against the Titans; in reward Zeus made her the binding oath of the gods and kept her children beside him."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "oath-river-of-the-underworld",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 383-403" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 361, 383-403" },
+          { "kind": "primary", "reference": "Homer, Iliad 15.37-38; Apollodorus, Bibliotheca 1.2.5" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "greek_hesiod_pallas_titan",
+        "era": "titanomachy",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 383-385" }
+        ],
+        "notes": "Consort of the Titan Pallas."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "greek_hesiod_nike",
+        "era": "titanomachy",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 383-384" }
+        ],
+        "notes": "Mother of Nike by Pallas; the existing Nike entry needs parentIds += greek_hesiod_styx and greek_hesiod_pallas_titan."
+      }
+    ]
+  },
+  {
+    "id": "greek_oenomaus",
+    "name": {
+      "primary": "Oenomaus",
+      "alt": ["Oinomaos", "Oenomaus of Pisa"],
+      "transliterations": { "greek": "Οἰνόμαος" }
+    },
+    "type": "demigod",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["greek_hesiod_ares"],
+    "parentRoles": { "greek_hesiod_ares": "paternal" },
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "kingship-of-Pisa",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Epitome 2.4-5; Pausanias 5.10.6-7" }
+        ],
+        "notes": "King of Pisa in Elis, son of Ares; possessor of swift horses given by his father."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "the-bride-race-for-Hippodamia",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Epitome 2.4-6; Pindar, Olympian 1.67-88" }
+        ],
+        "notes": "Warned that he would die at the hand of a son-in-law, he challenged each suitor of his daughter Hippodamia to a chariot-race and slew the many he overtook."
+      },
+      {
+        "typeStatus": "demigod",
+        "vitalStatus": "dead",
+        "era": "heroic-age",
+        "eraOrdering": 2,
+        "startEvent": "death-in-the-race-against-Pelops",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Epitome 2.6-7; Pausanias 6.21.9-11" }
+        ],
+        "notes": "His charioteer Myrtilus, suborned by Pelops, replaced the linchpins of his car with wax; the wheels gave way and Oenomaus was dragged to his death."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Epitome 2.4-7" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Apollodorus, Epitome 2.4-7; Pindar, Olympian 1.67-88; Pausanias 5.10.6-7, 6.21.9-11; Diodorus Siculus 4.73" }
+        ]
+      },
+      {
+        "claim": "parentage",
+        "citations": [
+          { "kind": "primary", "reference": "Apollodorus, Epitome 2.4; Pausanias 5.22.6" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "greek_hippodamia",
+        "era": "heroic-age",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Epitome 2.4-9; Pindar, Olympian 1.67-88" }
+        ],
+        "notes": "Father of Hippodamia; the existing Hippodamia entry needs parentIds += greek_oenomaus."
+      }
+    ]
+  },
+  {
+    "id": "greek_hesione",
+    "name": {
+      "primary": "Hesione",
+      "alt": ["Hesione of Troy"],
+      "transliterations": { "greek": "Ἡσιόνη" }
+    },
+    "type": "scion",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["greek_laomedon"],
+    "parentRoles": { "greek_laomedon": "paternal" },
+    "temporal": { "era": "pre-trojan-war" },
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "era": "pre-trojan-war",
+        "eraOrdering": 0,
+        "startEvent": "exposure-to-the-sea-monster",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 2.5.9" }
+        ],
+        "notes": "Daughter of King Laomedon of Troy; chained to a rock as a sacrifice to the sea-monster sent by Poseidon when her father cheated the gods of their wage."
+      },
+      {
+        "typeStatus": "scion",
+        "era": "pre-trojan-war",
+        "eraOrdering": 1,
+        "startEvent": "rescue-by-Heracles-and-marriage-to-Telamon",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 2.5.9, 2.6.4; Diodorus Siculus 4.42, 4.49" }
+        ],
+        "notes": "Rescued by Heracles, who slew the monster; when Laomedon withheld the promised horses Heracles sacked Troy and gave Hesione to Telamon of Salamis. She ransomed her brother Podarces, thereafter called Priam, and bore Telamon the archer Teucer."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rescued-princess",
+        "contextTag": "episodic",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 2.5.9" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 2.5.9, 2.6.4; Diodorus Siculus 4.42, 4.49; Homer, Iliad 5.640-651, 20.145-148" }
+        ]
+      },
+      {
+        "claim": "parentage",
+        "citations": [
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 3.12.3 (children of Laomedon)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "greek_priam",
+        "era": "pre-trojan-war",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 2.6.4, 3.12.3" }
+        ],
+        "notes": "Full sibling of Podarces/Priam, whom she ransomed; both children of Laomedon."
+      },
+      {
+        "kind": "sibling",
+        "personId": "greek_hicetaon",
+        "era": "pre-trojan-war",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 3.12.3" }
+        ],
+        "notes": "Full sibling of Hicetaon; both children of Laomedon."
+      }
+    ]
+  },
+  {
+    "id": "greek_hicetaon",
+    "name": {
+      "primary": "Hicetaon",
+      "alt": ["Hiketaon"],
+      "transliterations": { "greek": "Ἱκετάων" }
+    },
+    "type": "scion",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["greek_laomedon"],
+    "parentRoles": { "greek_laomedon": "paternal" },
+    "temporal": { "era": "pre-trojan-war" },
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "era": "pre-trojan-war",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Laomedon",
+        "sources": [
+          { "kind": "primary", "reference": "Homer, Iliad 20.237-238; Apollodorus, Bibliotheca 3.12.3" }
+        ],
+        "notes": "Son of Laomedon, brother of Priam, Tithonus and Clytius; a scion of the line of Ares."
+      },
+      {
+        "typeStatus": "scion",
+        "era": "trojan-war",
+        "eraOrdering": 1,
+        "startEvent": "elder-of-Troy-at-the-Scaean-gate",
+        "sources": [
+          { "kind": "primary", "reference": "Homer, Iliad 3.146-153" }
+        ],
+        "notes": "One of the elders of Troy seated with Priam above the Scaean gate; father of Melanippus who fell in the war."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "counsel-of-elders",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Homer, Iliad 3.146-153" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Homer, Iliad 3.147, 20.237-238; Apollodorus, Bibliotheca 3.12.3" }
+        ]
+      },
+      {
+        "claim": "parentage",
+        "citations": [
+          { "kind": "primary", "reference": "Homer, Iliad 20.237-238; Apollodorus, Bibliotheca 3.12.3" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "greek_priam",
+        "era": "pre-trojan-war",
+        "sources": [
+          { "kind": "primary", "reference": "Homer, Iliad 20.237-238; Apollodorus, Bibliotheca 3.12.3" }
+        ],
+        "notes": "Full sibling of Priam; both sons of Laomedon."
+      },
+      {
+        "kind": "sibling",
+        "personId": "greek_tithonus",
+        "era": "pre-trojan-war",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 3.12.3" }
+        ],
+        "notes": "Full sibling of Tithonus; both sons of Laomedon."
+      },
+      {
+        "kind": "sibling",
+        "personId": "greek_hesione",
+        "era": "pre-trojan-war",
+        "sources": [
+          { "kind": "primary", "reference": "Apollodorus, Bibliotheca 3.12.3" }
+        ],
+        "notes": "Full sibling of Hesione; both children of Laomedon."
+      }
+    ]
+  },
+  {
+    "id": "greek_megapenthes_sparta",
+    "name": {
+      "primary": "Megapenthes",
+      "alt": ["Megapenthes of Sparta"],
+      "transliterations": { "greek": "Μεγαπένθης" }
+    },
+    "type": "mortal",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["greek_menelaus"],
+    "parentRoles": { "greek_menelaus": "paternal" },
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-to-Menelaus-by-a-slave-woman",
+        "sources": [
+          { "kind": "primary", "reference": "Homer, Odyssey 4.10-12; Apollodorus, Bibliotheca 3.11.1" }
+        ],
+        "notes": "Bastard son of Menelaus by the slave-woman Pieris, born because the gods gave Helen no child after Hermione; his name means great-grief."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "post-trojan-war",
+        "eraOrdering": 1,
+        "startEvent": "marriage-and-the-expulsion-of-Helen",
+        "sources": [
+          { "kind": "primary", "reference": "Homer, Odyssey 4.10-12; Pausanias 3.18.13, 3.19.9-10" }
+        ],
+        "notes": "Married a daughter of Alector at Sparta; in the Rhodian tradition he and Nicostratus drove Helen out of Sparta after Menelaus died."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "Spartan-succession",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Pausanias 3.18.13, 3.19.9" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Homer, Odyssey 4.10-12; Apollodorus, Bibliotheca 3.11.1; Pausanias 3.18.13, 3.19.9-10" }
+        ]
+      },
+      {
+        "claim": "parentage",
+        "citations": [
+          { "kind": "primary", "reference": "Homer, Odyssey 4.10-12 (son of Menelaus by a slave-woman); Apollodorus, Bibliotheca 3.11.1 (mother Pieris)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "half-sibling",
+        "personId": "greek_hermione",
+        "era": "heroic-age",
+        "sources": [
+          { "kind": "primary", "reference": "Homer, Odyssey 4.10-14" }
+        ],
+        "notes": "Half-sibling of Hermione; both children of Menelaus, she by Helen and he by the slave Pieris."
+      }
+    ]
+  }
+]
+```

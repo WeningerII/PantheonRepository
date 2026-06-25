@@ -1,0 +1,118 @@
+Sweep pool 04 — alphabetical family-completion sweep, window #4 of 31.
+Window ids processed: guanche_bencomo … hindu_aruna (Guanche, Guaraní, Haida, Tsimshian/hatsenas, Hattic, Hausa, Herero, Hindu).
+
+New figures authored below: family members NAMED in the prose of existing window entities that had no entry of their own.
+ 1. guarani_marangatu  — pious chief, father of Keraná (named in guarani_kerana prose).
+ 2. guarani_nande_sy   — "Our Mother", mother of the divine twins Kuarahy and Jasy (named in their prose as their mother killed by the jaguars).
+ 3. hausa_sarkin_aljan_biddarene — head of the 2nd house of Jangare, biological father of Dan Galadima, younger brother of Sarkin Aljan Suleimanu.
+
+RECIPROCAL / parentId notes for the merge (existing children gain a parent):
+ - guarani_kerana.parentIds += guarani_marangatu
+ - guarani_kuarahy.parentIds += guarani_nande_sy   (maternal)
+ - guarani_jasy.parentIds   += guarani_nande_sy   (maternal)
+ - hausa_dan_galadima.parentIds += hausa_sarkin_aljan_biddarene
+
+```json
+[
+  {
+    "id": "guarani_marangatu",
+    "name": {
+      "primary": "Marangatú",
+      "alt": ["Marangatu", "Marane-y", "the Pious"],
+      "transliterations": {"guarani": "Marangatú", "etymology": "Guaraní marangatu, meaning pious, virtuous, holy, good. The benevolent ancestral chief whose virtue gives him his name; the father of Keraná."}
+    },
+    "type": "mortal",
+    "tradition": "Guaraní",
+    "primaryTradition": "Guaraní",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {"typeStatus": "mortal", "era": "mythic", "eraOrdering": 0, "startEvent": "the-pious-chief-father-of-kerana", "sources": [{"kind": "secondary", "reference": "Narciso R. Colmán (Rosicrán), Ñande Ypy Kuéra / Nuestros antepasados (Asunción, 1929)"}, {"kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)"}], "notes": "The pious and benevolent ancestral leader of the early Guaraní; father of the beautiful Keraná, whom the evil spirit Tau seized to engender the seven monstrous children. In the systematized genealogy of Colmán he is a son of the first humans Rupavé and Sypavé and the brother of the wise prophet Tumé Arandú."}
+    ],
+    "domains": [
+      {"sphereId": "ancestral-piety-and-virtue", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "secondary", "reference": "Narciso R. Colmán, Ñande Ypy Kuéra / Nuestros antepasados (1929)"}, {"kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)"}]},
+      {"claim": "parentage-of-kerana", "citations": [{"kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929) — Keraná as the daughter of the pious Marangatú"}]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "guarani_kerana", "era": "mythic", "sources": [{"kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"}], "notes": "Father of the beautiful Keraná, the mortal mother of the seven monsters; named in the Keraná tradition as the pious Marangatú whose daughter Tau seized."}
+    ],
+    "notes": "The pious ancestral chief, father of Keraná (Colmán 1929; González Torres). Authored as the prose-named father of the existing figure guarani_kerana, who should gain parentIds += guarani_marangatu. In the Colmán systematization he is a son of the first humans Rupavé and Sypavé and brother of the prophet Tumé Arandú and of Japeusá; those further ancestors are not named in the window prose and are left unauthored here."
+  },
+  {
+    "id": "guarani_nande_sy",
+    "name": {
+      "primary": "Ñande Sy",
+      "alt": ["Ñandesy", "Nandecy", "Ñandesyguazú", "Our Mother"],
+      "transliterations": {"guarani": "Ñande Sy", "etymology": "Mbyá / Tupí-Guaraní: ñande (our) plus sy (mother), that is Our Mother. The primordial mother of the divine twins (the Sun Kuarahy and the Moon Jasy), wife of Ñande Ru (Ñamandú); slain by the monster-jaguars while seeking the father of her children."}
+    },
+    "type": "deity",
+    "tradition": "Guaraní",
+    "primaryTradition": "Guaraní",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {"typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "the-mother-of-the-divine-twins", "sources": [{"kind": "primary", "reference": "León Cadogan, Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá (1959)"}, {"kind": "secondary", "reference": "Curt Nimuendajú, Die Sagen von der Erschaffung und Vernichtung der Welt als Grundlagen der Religion der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914)"}], "notes": "Ñande Sy, Our Mother, the primordial mother who conceives the divine twins Kuarahy (the Sun, the elder) and Jasy (the Moon, the younger) by Ñande Ru. While she journeys in search of the father of her children she is killed by the monster-jaguars (the Añay); in the well-known clay-pot episode the grandmother-jaguar tries to hide her but a jaguar uncaps the pot, and the unborn twins survive to be raised among the jaguars and later avenge her."},
+      {"typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 1, "startEvent": "slain-by-the-jaguars-and-the-spoiled-resurrection", "sources": [{"kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959)"}, {"kind": "secondary", "reference": "Nimuendajú (1914)"}], "notes": "After the twins avenge her on the jaguars they gather her bones and attempt her resurrection by singing; the younger twin Jasy looks or laughs too soon and the resurrection is spoiled, so that she does not fully return — in some tellings she becomes a tapir or the Pleiades."}
+    ],
+    "domains": [
+      {"sphereId": "divine-motherhood-of-the-twins", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959)"}, {"kind": "secondary", "reference": "Nimuendajú (1914)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959)"}, {"kind": "secondary", "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, ZfE 46 (1914)"}]},
+      {"claim": "motherhood-of-the-twins", "citations": [{"kind": "secondary", "reference": "Nimuendajú (1914) — Ñandesy, mother of the Sun and Moon twins, killed by the jaguars while seeking the father of her children"}]}
+    ],
+    "relations": [
+      {"kind": "mother-of", "personId": "guarani_kuarahy", "era": "mythic", "sources": [{"kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959)"}, {"kind": "secondary", "reference": "Nimuendajú (1914)"}], "notes": "Mother of Kuarahy, the elder twin, the Sun."},
+      {"kind": "mother-of", "personId": "guarani_jasy", "era": "mythic", "sources": [{"kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959)"}, {"kind": "secondary", "reference": "Nimuendajú (1914)"}], "notes": "Mother of Jasy, the younger twin, the Moon."},
+      {"kind": "spouse", "personId": "guarani_namandu", "era": "mythic", "sources": [{"kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959) — the twins as sons of Ñande Ru"}, {"kind": "secondary", "reference": "Nimuendajú (1914)"}], "notes": "Wife of Ñande Ru (Ñamandú), the father of the divine twins, whom she goes to seek and on the way is slain by the jaguars."}
+    ],
+    "notes": "Ñande Sy, Our Mother, the prose-named mother of the divine twins Kuarahy and Jasy (Cadogan 1959; Nimuendajú 1914). Both existing twins should gain parentIds += guarani_nande_sy (maternal); their father Ñamandú/Ñande Ru already wired. Typed deity as the divine mother of the demiurge-twins, consort of the creator. The corpus prose under guarani_kuarahy renders the name as Ñande Jary; the securely attested name of the twins-mother is Ñande Sy (Our Mother), whereas Ñande Jary means rather Our Grandmother."
+  },
+  {
+    "id": "hausa_sarkin_aljan_biddarene",
+    "name": {
+      "primary": "King of the Spirits Biddarene",
+      "alt": ["Sarkin Aljan Biddarene", "Biddarene"],
+      "transliterations": {"hausa": "Sarkin Aljan Biddarene", "etymology": "Hausa sarkin aljan, meaning king or chief of the jinn (spirits); Biddarene the personal name. Head of the second house of the spirit-city Jangare and younger brother of the spirit-king Sarkin Aljan Suleimanu; biological father of Dan Galadima the gambler-prince."}
+    },
+    "type": "deity",
+    "tradition": "Hausa",
+    "primaryTradition": "Hausa",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "living Bori tradition"},
+    "lifecycle": [
+      {"typeStatus": "deity", "era": "living Bori tradition", "eraOrdering": 0, "startEvent": "head-of-the-second-house-of-jangare", "sources": [{"kind": "secondary", "reference": "Fremont E. Besmer, Horses, Musicians, and Gods: The Hausa Cult of Possession-Trance (1983)"}, {"kind": "secondary", "reference": "A. J. N. Tremearne, The Ban of the Bori: Demons and Demon-Dancing in West and North Africa (1914)"}], "notes": "Sarkin Aljan Biddarene heads the second house of the bori spirit-city Jangare and is the younger brother of its king, Sarkin Aljan Suleimanu. He is named as the biological father of Dan Galadima, the handsome gambler-prince, who is nonetheless brought up in the royal household of Suleimanu."}
+    ],
+    "domains": [
+      {"sphereId": "kingship-spirit-world", "contextTag": "lifelong", "term": {"value": "Sarkin Aljan", "script": "Latin (Hausa orthography)", "rom": "Sarkin Aljan"}, "sources": [{"kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983), on the houses of Jangare"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "secondary", "reference": "Fremont E. Besmer, Horses, Musicians, and Gods: The Hausa Cult of Possession-Trance (1983)"}, {"kind": "secondary", "reference": "A. J. N. Tremearne, The Ban of the Bori (1914)"}]},
+      {"claim": "fatherhood-of-dan-galadima", "citations": [{"kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983) — Dan Galadima fathered by Sarkin Aljan Biddarene, raised in the household of Sarkin Aljan Suleimanu"}]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "hausa_dan_galadima", "sources": [{"kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983)"}], "notes": "Biological father of Dan Galadima, the gambler-prince of Jangare, who is raised in the household of the elder brother Suleimanu."},
+      {"kind": "sibling", "personId": "hausa_sarkin_aljan_suleimanu", "sources": [{"kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983) — Biddarene the younger brother of the spirit-king Suleimanu"}], "notes": "Younger brother of Sarkin Aljan Suleimanu, the king of Jangare; Biddarene heads the second of the twelve houses."}
+    ],
+    "notes": "Head of the second house of Jangare and biological father of Dan Galadima (Besmer 1983; Tremearne 1914). Authored as the prose-named father of the existing figure hausa_dan_galadima, who should gain parentIds += hausa_sarkin_aljan_biddarene. Entered as a deity-class spirit (aljan/iska) consistent with the other Jangare figures in the registry. His wife in Besmer is Magajiyar Jangare, a Kano spirit not named in the window prose and so left unauthored here."
+  }
+]
+```

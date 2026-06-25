@@ -1,0 +1,1507 @@
+Pantheon Registry — Sweep 004 (batch 4) family-completion transcript.
+
+STRICT ALPHABETICAL family-completion sweep over 50 batch ids (balinese_* through bhil_*).
+All 50 batch entities already exist in the corpus; this sweep authors NAMED-BUT-NO-ENTRY,
+attested kin and records wire-edges. Verification by WebSearch; citations at WORK level.
+
+NEW FIGURES (11):
+  balinese_sedana — Betara/Rambut Sedana, brother-and-consort of Dewi Sri (god of wealth).
+  banyaruanda_kigwa — Kigwa/Sabizeze, the celestial fallen one, son of Nkuba, father of Muntu.
+  banyaruanda_muntu — Muntu, son of Kigwa, of the Ibimanuka line toward Gihanga.
+  banyaruanda_kanyarwanda — Kanyarwanda I Gahima, son of Gihanga, eponym of Rwanda.
+  banyaruanda_kazikamuntu — Kazikamuntu, first man made by Imana, ancestor of all humans.
+  banyaruanda_nyinakigwa — Nyinakigwa, the mortal mother granted three children by Imana.
+  banyaruanda_lututsi — Lututsi, brother of Kigwa, ancestor of the Bega clan.
+  banyaruanda_nyinabatutsi — Nyinabatutsi, sister of Kigwa and Lututsi, ancestress of the Bashambo.
+  batak_soripada — Soripada (Sori Sohaliapan), preserver of the Debata na Tolu, son of Mula Jadi.
+  batak_mangalabulan — Mangalabulan (Bala Bulan), the dual-handed god of the Debata na Tolu.
+  berber_tinge — Tinge/Tinjis, Berber goddess, eponym of Tangier, wife of Antaeus (Anti).
+
+WIRE-EDGES to EXISTING corpus figures (reciprocals the maintainer should add — also surfaced
+by the validator as RECIPROCAL-NEEDED):
+  balinese_dewi_sri  --sibling-->  balinese_sedana
+  batak_batara_guru  --sibling-->  batak_soripada ; batak_batara_guru --sibling--> batak_mangalabulan
+  banyaruanda_gihanga  --father-of-->  banyaruanda_kanyarwanda
+  banyaruanda_imana  --creator-of-->  banyaruanda_kazikamuntu
+  banyaruanda_nkuba  --father-of-->  banyaruanda_kigwa
+  berber_anti  --spouse-->  berber_tinge
+
+WIRE-EDGE (existing-to-existing, parentId gap — maintainer fix, no new figure):
+  basque_ilargi SHOULD carry parentIds:[basque_amalur] + relation mother->basque_amalur
+  (Amalur already declares mother-of->basque_ilargi, and the sibling basque_eguzki already
+  carries parentIds:[basque_amalur]; only Ilargi's reverse parent link is missing).
+
+```json
+[
+ {
+  "id": "balinese_sedana",
+  "name": {
+   "primary": "God of Wealth",
+   "alt": [
+    "Sedana",
+    "Rambut Sedana",
+    "Betara Sedana",
+    "Bhatara Sri Sedana"
+   ],
+   "transliterations": {
+    "balinese": "ᬲᬾᬤᬦ",
+    "iast": "Sedana"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Balinese",
+  "primaryTradition": "Balinese",
+  "sex": "male",
+  "vitalStatus": "active",
+  "parentIds": [],
+  "temporal": {
+   "era": "agrarian-ritual present"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "agrarian-ritual present",
+    "eraOrdering": 0,
+    "startEvent": "brother-and-consort-of-the-rice-goddess",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258."
+     }
+    ],
+    "notes": "Sedana (Betara Sedana, also Rambut Sedana) is paired with the rice goddess Dewi Sri as her brother and divine consort. In the Sri-and-Sedana myth-cycle the two are set in the kingdom of Medang Kamulan or in the heaven of Batara Guru, and in every version they are parted by death, wandering, or a refusal to wed."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "agrarian-ritual present",
+    "eraOrdering": 1,
+    "startEvent": "god-of-prosperity-and-wealth-at-besakih",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf."
+     }
+    ],
+    "notes": "As Rambut Sedana he is the Balinese god of wealth, prosperity and generosity, identified with the prosperity-aspect of Lakshmi; the name Sedana glosses as 'money'. He resides at Pura Goa Raja within the Besakih complex, and an annual ritual 'wedding' of Sri Dewi and Sedana is performed to secure both an ample rice harvest and material plenty."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wealth-and-prosperity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Sedana",
+     "script": "ᬲᬾᬤᬦ",
+     "rom": "Sedana"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258."
+     }
+    ]
+   },
+   {
+    "sphereId": "rice-and-agriculture",
+    "contextTag": "ritual",
+    "term": {
+     "value": "padi",
+     "script": "ᬧᬤᬶ",
+     "rom": "padi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf, ch. on agriculture."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-wealth-and-plenty",
+    "name": "bestow material wealth and abundance",
+    "inheritability": "unique",
+    "notes": "As the wealth-god counterpart of the rice goddess he grants prosperity, sufficiency and generosity; the annual Sri-Sedana wedding rite channels his gift of material plenty alongside the harvest.",
+    "scopeTags": [
+     "prosperity",
+     "fertility"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990), Asian Folklore Studies 49(2); Covarrubias, Island of Bali (1937)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "rambut_sedana_pelinggih",
+    "kind": "shrine",
+    "name": "pelinggih of Rambut Sedana",
+    "role": "Shrine-seat of the wealth-god, notably the Pura Goa Raja shrine within the Besakih temple-complex, where offerings for prosperity are made.",
+    "notes": "Rambut Sedana is honored with piodalan rites on the 210-day Balinese ritual cycle, often jointly with Sri Dewi.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Covarrubias, Miguel (1937). Island of Bali; Wessing, Robert (1990), Asian Folklore Studies 49(2)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "balinese_dewi_sri",
+    "era": "agrarian-ritual present",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258 — Sri and her brother Sedana."
+     }
+    ],
+    "notes": "Brother and divine consort of Dewi Sri; the dominant Balinese framing makes them siblings whose ritual 'wedding' is annually re-enacted. Reciprocal sibling edge needed on balinese_dewi_sri."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sedana (Betara/Rambut Sedana), the Balinese god of wealth and prosperity, is the brother and divine consort of the rice goddess Dewi Sri, paired with her in myth and in the agrarian ritual cycle and identified with the prosperity-aspect of Lakshmi.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf."
+     }
+    ]
+   }
+  ],
+  "notes": "Male counterpart of Dewi Sri: god of wealth, money and prosperity (Sedana = 'money'), her brother and divine consort. Resides at Pura Goa Raja in the Besakih complex; the annual Sri-Sedana 'wedding' rite seeks both harvest and material plenty. Carried only implicitly in Dewi Sri's source-title ('Sri and Sedana ...') until materialized here.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_kigwa",
+  "name": {
+   "primary": "Kigwa",
+   "alt": [
+    "Sabizeze",
+    "Kigwa Sabizeze",
+    "the Fallen One"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Kigwa",
+    "etymology": "Kinyarwanda Kigwa, 'the one who fell / the fallen', from kugwa 'to fall'; his personal name Sabizeze marks him as the celestial being who fell from the sky."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_nkuba"
+  ],
+  "parentRoles": {
+   "banyaruanda_nkuba": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "fall-from-the-sky-of-the-son-of-nkuba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Alexis Kagame, Ubucurabwenge."
+     }
+    ],
+    "notes": "Kigwa (personal name Sabizeze), son of Nkuba the King of the Sky, is the celestial being who fell or descended from heaven to earth with his brother and sister, landing in eastern Rwanda near the great rock Ikinani. He heads the Ibimanuka, 'those fallen from the heavens', and is reckoned the first ancestor of the Banyiginya royal clan."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "the-childless-couple-account-of-his-origin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana; 'Imana and the Childless Couple'."
+     }
+    ],
+    "notes": "In the interlocking Childless-Couple account the same Kigwa is one of three children whom the High God Imana grants to the barren Nyinakigwa (with his brother Lututsi and a sister); when the secret of their origin is betrayed, the sky opens and they fall to earth. The corpus ties this tale-Kigwa to the celestial Kigwa line that descends to the kings."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "begetter-of-muntu-and-the-line-to-gihanga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge; Pierre Smith, Le recit populaire au Rwanda (1975) — 'Nkuba begat Kigwa, who begat Muntu'."
+     }
+    ],
+    "notes": "Father of Muntu; in the dynastic genealogy the line runs Nkuba > Kigwa/Sabizeze > Muntu > ... > the founder-king Gihanga, so that Kigwa is the apical fallen ancestor of the Rwandan royal house (Gihanga's paternal great-great-grandfather in the fuller list)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "celestial-ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda (1964)."
+     }
+    ]
+   },
+   {
+    "sphereId": "royal-lineage-origin",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; Smith, Le recit populaire au Rwanda (1975)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fall-from-heaven-to-found-the-line",
+    "name": "fall from heaven as the apical royal ancestor",
+    "inheritability": "lineage",
+    "notes": "As the Ikimanuka who fell from the sky, Kigwa transmits the celestial origin and sacred legitimacy of Rwandan kingship to his descendants down to Gihanga.",
+    "scopeTags": [
+     "foundational",
+     "lineage"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "d'Hertefelt & Coupez (1964); Kagame, Ubucurabwenge."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "banyaruanda_nkuba",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge — 'Nkuba begat Kigwa'."
+     }
+    ],
+    "notes": "Son of Nkuba, King of the Sky; the reverse father-of edge on banyaruanda_nkuba is needed."
+   },
+   {
+    "kind": "father-of",
+    "personId": "banyaruanda_muntu",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; Smith (1975) — 'Kigwa begat Muntu'."
+     }
+    ],
+    "notes": "Father of Muntu, the next ancestor of the Ibimanuka line toward Gihanga."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_lututsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the sons Kigwa and Lututsi."
+     }
+    ],
+    "notes": "Brother of Lututsi in the Childless-Couple account; reciprocated within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_nyinabatutsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the daughter alongside Kigwa and Lututsi."
+     }
+    ],
+    "notes": "Brother of the sister Nyinabatutsi; reciprocated within this batch."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kigwa (Sabizeze), son of Nkuba the King of the Sky, is the celestial 'fallen one' who heads the Ibimanuka and is the apical ancestor of the Banyiginya royal clan, father of Muntu in the dynastic line that descends to Gihanga.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge / Inganji Karinga."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "notes": "Kigwa (personal name Sabizeze), the celestial being who fell from heaven, son of Nkuba; first ancestor of the Banyiginya and head of the Ibimanuka. Two interlocking origin accounts are preserved: the dynastic poem Ubucurabwenge has Nkuba beget Kigwa beget Muntu, while the Childless-Couple tale has Imana grant Kigwa (with his brother Lututsi and a sister) to the barren Nyinakigwa; the corpus identifies both as the same royal-line Kigwa. Demigod as a divinely-descended apical ancestor. Named in the batch prose of banyaruanda_nkuba and banyaruanda_imana; materialized here.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_muntu",
+  "name": {
+   "primary": "Muntu",
+   "alt": [
+    "Sebantu",
+    "the Human Being"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Muntu",
+    "etymology": "Kinyarwanda/Bantu muntu, 'human being, person' (the singular of abantu); as a personage he is the first man of the Ibimanuka celestial line."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_kigwa"
+  ],
+  "parentRoles": {
+   "banyaruanda_kigwa": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "son-of-kigwa-in-the-ibimanuka-line",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge; Pierre Smith, Le recit populaire au Rwanda (1975) — 'Kigwa begat Muntu'."
+     }
+    ],
+    "notes": "Muntu ('the human being'), son of Kigwa/Sabizeze, is the next ancestor in the Ibimanuka celestial line. Per Smith, the genealogy runs 'Nkuba (the thunder) begat Kigwa (the fallen one), who begat Muntu', and continues through the celestial ancestors down to the founder-king Gihanga."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "founder-figure-of-the-ibimanuka-dynasty",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)."
+     }
+    ],
+    "notes": "In some renderings the Ibimanuka dynasty of celestial kings is reckoned from Muntu, son of Kigwa; the line then descends through several generations to Gihanga, the founder of the Nyiginya kingdom."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-lineage",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; Smith, Le recit populaire au Rwanda (1975)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "transmit-the-celestial-line",
+    "name": "carry the celestial royal line toward Gihanga",
+    "inheritability": "lineage",
+    "notes": "As son of the fallen Kigwa, Muntu continues the Ibimanuka descent that culminates in the founder-king Gihanga and the Rwandan monarchy.",
+    "scopeTags": [
+     "lineage"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; d'Hertefelt & Coupez (1964)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "banyaruanda_kigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge — 'Kigwa begat Muntu'."
+     }
+    ],
+    "notes": "Son of Kigwa/Sabizeze; reciprocated by Kigwa father-of Muntu within this batch."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Muntu ('the human being'), son of Kigwa/Sabizeze, is an ancestor of the Ibimanuka celestial line of Rwandan kings; the dynastic genealogy runs Nkuba > Kigwa > Muntu > ... > Gihanga.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge / Inganji Karinga."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Pierre Smith, Le recit populaire au Rwanda (1975)."
+     }
+    ]
+   }
+  ],
+  "notes": "Muntu, son of Kigwa, ancestor of the Ibimanuka celestial line. Named in the batch prose of banyaruanda_nkuba and banyaruanda_gihanga ('Nkuba > Kigwa > Muntu > ... > Gihanga'); the genealogy interposes several further named ancestors (Kimanuka, Kijuru, Kobo, Merano, Randa, Gisa, Kizira, Kazi) between Muntu and Gihanga which are recorded as a bare king-list and are not individuated here. Demigod as a divinely-descended ancestor.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_kanyarwanda",
+  "name": {
+   "primary": "Kanyarwanda",
+   "alt": [
+    "Kanyarwanda I Gahima",
+    "Gahima",
+    "Kanyarwanda Gahima"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Kanyarwanda",
+    "etymology": "Kinyarwanda Kanyarwanda, 'the one of Rwanda / he who belongs to Rwanda', the personified eponym of the country and people of Rwanda; he bears the throne-name Gahima."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_gihanga"
+  ],
+  "parentRoles": {
+   "banyaruanda_gihanga": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "son-and-successor-of-gihanga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Inganji Karinga; Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004)."
+     }
+    ],
+    "notes": "Kanyarwanda (throne-name Gahima), son of the founder-king Gihanga, who succeeded his father as a king of the Ibimanuka line. His name is the personified eponym of Rwanda itself and of the Banyarwanda people."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "eponymous-ancestor-of-the-three-groups",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Folklore in Rwanda; Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "In one tradition Kanyarwanda is the mythical common ancestor whose three sons Gatutsi, Gahutu and Gatwa became the founding ancestors of the Tutsi, Hutu and Twa; the tradition here parallels and overlaps the Kazikamuntu account of the origin of the three groups."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship-and-succession",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)."
+     }
+    ]
+   },
+   {
+    "sphereId": "national-eponym",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Folklore in Rwanda; Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "personify-the-nation",
+    "name": "personify and name the kingdom of Rwanda",
+    "inheritability": "unique",
+    "notes": "As Kanyarwanda, 'the one of Rwanda', he is the dynastic figure whose name the country and people bear; he continues the royal line founded by his father Gihanga.",
+    "scopeTags": [
+     "foundational",
+     "leadership"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Folklore in Rwanda; Kagame, Inganji Karinga."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "banyaruanda_gihanga",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Inganji Karinga; Vansina (2004) — Gihanga succeeded by his son Kanyarwanda I Gahima."
+     }
+    ],
+    "notes": "Son of the founder-king Gihanga; the reverse father-of edge on banyaruanda_gihanga is needed."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kanyarwanda I Gahima, son and successor of the founder-king Gihanga, is the dynastic eponym of Rwanda and its people; in tradition he (or the parallel ancestor) fathered the founding ancestors of the Tutsi, Hutu and Twa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Inganji Karinga."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Folklore in Rwanda; Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "notes": "Kanyarwanda (throne-name Gahima), son of Gihanga and his named successor, the personified eponym of Rwanda. Named explicitly in the batch prose of banyaruanda_gihanga ('succeeded by his son Kanyarwanda I Gahima, the eponym of Rwanda'). The eponymous group-ancestors Gatutsi, Gahutu and Gatwa attributed to him (and parallel to the Kazikamuntu account) are not authored here. Demigod as a divinely-descended founder-line king.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_kazikamuntu",
+  "name": {
+   "primary": "Kazikamuntu",
+   "alt": [
+    "Kazi ka Muntu",
+    "the First Man"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Kazikamuntu",
+    "etymology": "Kinyarwanda Kazikamuntu, parsed 'the root/origin of man' (kazi/igihe + muntu, 'person'); the first human and common ancestor created by Imana."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "creation-of-the-first-man-by-imana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961) — 'Imana, the maker, created Kazikamuntu, the common ancestor of all humans'."
+     }
+    ],
+    "notes": "Kazikamuntu is the first man, fashioned by the High God Imana and made the common ancestor of all humankind. He stands at the head of the anthropogenic (human-origin) strand of Rwandan tradition, distinct from the celestial Ibimanuka dynastic strand headed by Kigwa."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "father-of-the-ancestors-of-the-three-groups",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (oral tradition); Maquet (1961)."
+     }
+    ],
+    "notes": "His three children Gatutsi, Gahutu and Gatwa became the ancestors of the Tutsi, Hutu and Twa. In the tale he first chose Gahutu as his successor, but Gahutu fell asleep over an assigned task, so he chose the sober and clever Gatutsi as chief, and cursed Gatwa for killing one of his brothers."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "human-origins",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "banyaruanda_imana",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maquet, The Premise of Inequality in Ruanda (1961) — Imana created Kazikamuntu."
+     }
+    ],
+    "notes": "First man made by the High God Imana; the reverse creator-of edge on banyaruanda_imana is needed."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kazikamuntu, the first man created by the High God Imana, is the common ancestor of all humans, whose three children Gatutsi, Gahutu and Gatwa became the founding ancestors of the Tutsi, Hutu and Twa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. C. Werner, Myths and Legends of the Bantu (1933), ch. VIII; Origins of Hutu, Tutsi and Twa (oral tradition)."
+     }
+    ]
+   }
+  ],
+  "notes": "Kazikamuntu, the first man fashioned by Imana and common ancestor of all humans; head of the anthropogenic strand of Rwandan origin tradition. Named explicitly in the batch prose of banyaruanda_imana ('Imana, the maker, created Kazikamuntu, the common ancestor of all humans'). His eponymous children Gatutsi, Gahutu and Gatwa (ancestors of the three groups) are noted but not authored as separate entries. Mortal-tier first ancestor.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_nyinakigwa",
+  "name": {
+   "primary": "Nyinakigwa",
+   "alt": [
+    "Mother of Kigwa"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Nyinakigwa",
+    "etymology": "Kinyarwanda Nyinakigwa, 'mother of Kigwa' (nyina, 'his/her mother' + Kigwa), the once-barren woman granted children by Imana."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-barren-woman-granted-children-by-imana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana; 'Imana and the Childless Couple'."
+     }
+    ],
+    "notes": "Nyinakigwa, sad at being childless, entreated the High God Imana for a child. Imana granted her three children on condition she never reveal their origin: the sons Kigwa and Lututsi and a daughter (Nyinabatutsi)."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "the-broken-secret-and-the-fall-of-the-children",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Her jealous, also-barren sister coaxed the secret from her; angered by the disobedience, Nyinakigwa turned on her children, and the sky opened so that they plummeted to the earth, where they lived lives of hardship. The episode links the High God to the origin of the celestial Kigwa line that descends to the kings."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "motherhood-and-origins",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "banyaruanda_kigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the sons Kigwa and Lututsi."
+     }
+    ],
+    "notes": "Tale-mother of Kigwa in the Childless-Couple account (the dominant dynastic account makes Kigwa the son of Nkuba; the corpus identifies the two as the same Kigwa)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "banyaruanda_lututsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Mother of Lututsi."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "banyaruanda_nyinabatutsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — and a daughter."
+     }
+    ],
+    "notes": "Mother of the daughter Nyinabatutsi."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Nyinakigwa, a once-barren woman, was granted three children by the High God Imana on condition she keep their origin secret; the sons Kigwa and Lututsi and a daughter, whose betrayed secret caused them to fall from the sky, are ancestral figures of the Rwandan clans.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "notes": "Nyinakigwa ('mother of Kigwa'), the barren woman of the 'Imana and the Childless Couple' tale who is granted Kigwa, Lututsi and a daughter by the High God. Named explicitly in the batch prose of banyaruanda_imana. Mortal-tier ancestress; the maternal link to Kigwa is the Childless-Couple variant that the corpus ties to the celestial royal line.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_lututsi",
+  "name": {
+   "primary": "Lututsi",
+   "alt": [
+    "Rututsi",
+    "Father of the Bega"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Lututsi",
+    "etymology": "Kinyarwanda: one of the three children granted to Nyinakigwa by Imana; reckoned the ancestor of the Bega (Abega) clan."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_nyinakigwa"
+  ],
+  "parentRoles": {
+   "banyaruanda_nyinakigwa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "second-of-the-children-granted-by-imana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ],
+    "notes": "Lututsi is one of the three children whom the High God Imana grants to the barren Nyinakigwa, brother of Kigwa and of a sister. When the secret of their origin is betrayed, the three fall from the sky to the earth."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "ancestor-of-the-bega-clan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — Lututsi, father of the Bega."
+     }
+    ],
+    "notes": "Reckoned the ancestor (father) of the Bega (Abega) clan, while his brother Kigwa is progenitor of the Banyiginya and their sister of the Bashambo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "clan-ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_kigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the sons Kigwa and Lututsi."
+     }
+    ],
+    "notes": "Brother of Kigwa; reciprocated within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_nyinabatutsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — and a daughter."
+     }
+    ],
+    "notes": "Brother of the sister Nyinabatutsi; reciprocated within this batch."
+   },
+   {
+    "kind": "mother",
+    "personId": "banyaruanda_nyinakigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Son of Nyinakigwa; reciprocated by Nyinakigwa mother-of Lututsi within this batch."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Lututsi, one of the three children granted to the barren Nyinakigwa by the High God Imana and brother of Kigwa, is reckoned the ancestor (father) of the Bega clan of Rwanda.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "notes": "Lututsi, brother of Kigwa in the 'Imana and the Childless Couple' tale, reckoned father of the Bega clan. Named explicitly in the batch prose of banyaruanda_imana ('the sons Kigwa and Lututsi and a daughter'). Mortal-tier clan-ancestor.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_nyinabatutsi",
+  "name": {
+   "primary": "Nyinabatutsi",
+   "alt": [
+    "Mother of the Bashambo",
+    "the Sister"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Nyinabatutsi",
+    "etymology": "Kinyarwanda Nyinabatutsi, 'mother of the Batutsi'; the daughter among the three children granted to Nyinakigwa by Imana, reckoned mother of the Bashambo clan."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_nyinakigwa"
+  ],
+  "parentRoles": {
+   "banyaruanda_nyinakigwa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-daughter-granted-by-imana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ],
+    "notes": "Nyinabatutsi is the daughter among the three children whom the High God Imana grants to the barren Nyinakigwa, sister of Kigwa and Lututsi. With the secret of their origin betrayed, the three fall from the sky to the earth."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "ancestress-of-the-bashambo-clan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the sister, mother of the Bashambo."
+     }
+    ],
+    "notes": "Reckoned the ancestress (mother) of the Bashambo (Abashambo) clan, alongside her brothers Kigwa (Banyiginya) and Lututsi (Bega)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "clan-ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_kigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Sister of Kigwa; reciprocated within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_lututsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Sister of Lututsi; reciprocated within this batch."
+   },
+   {
+    "kind": "mother",
+    "personId": "banyaruanda_nyinakigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Daughter of Nyinakigwa; reciprocated by Nyinakigwa mother-of Nyinabatutsi within this batch."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Nyinabatutsi, the daughter among the three children granted to the barren Nyinakigwa by the High God Imana and sister of Kigwa and Lututsi, is reckoned the ancestress (mother) of the Bashambo clan of Rwanda.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "notes": "Nyinabatutsi, the sister of Kigwa and Lututsi in the 'Imana and the Childless Couple' tale, reckoned mother of the Bashambo clan. She is the (otherwise unnamed) 'daughter' of the batch prose of banyaruanda_imana, named in the source tradition. Mortal-tier clan-ancestress.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "batak_soripada",
+  "name": {
+   "primary": "Second of the Three High Gods",
+   "alt": [
+    "Soripada",
+    "Sori Sohaliapan",
+    "Debata Sori",
+    "Sorisohaliapan"
+   ],
+   "transliterations": {
+    "batak": "ᯘᯬᯒᯪᯇᯑ",
+    "rom": "Soripada"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Batak",
+  "primaryTradition": "Batak",
+  "sex": "male",
+  "vitalStatus": "active",
+  "parentIds": [
+   "batak_mula_jadi_na_bolon"
+  ],
+  "parentRoles": {
+   "batak_mula_jadi_na_bolon": "paternal"
+  },
+  "temporal": {
+   "era": "primordial age of the gods"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial age of the gods",
+    "eraOrdering": 0,
+    "startEvent": "hatched-from-an-egg-as-one-of-the-debata-na-tolu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich."
+     }
+    ],
+    "notes": "Soripada (Sori Sohaliapan) is the second of the three high gods (Debata na Tolu) born from the eggs that the divine hen Manukmanuk Hulambujati laid for Mula Jadi na Bolon; brother of Batara Guru and Mangalabulan. He is associated with the middle world and with purity."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial age of the gods",
+    "eraOrdering": 1,
+    "startEvent": "the-preserver-of-the-cosmos",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ],
+    "notes": "Functionally the preserver of the trinity, likened to Vishnu: he maintains the universe and embodies the principle of preservation, complementing Batara Guru (origination/wisdom) and Mangalabulan (the dual power of good and ill)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "preservation-and-purity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Debata na Tolu",
+     "script": "",
+     "rom": "Debata na Tolu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "preserve-the-middle-world",
+    "name": "preserve and maintain the cosmos",
+    "inheritability": "unique",
+    "notes": "As the preserver of the Debata na Tolu (likened to Vishnu) he upholds the order of the middle world and the eternal principle of preservation.",
+    "scopeTags": [
+     "cosmic-order",
+     "foundational"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016), Wacana 17(2); Warneck, Die Religion der Batak (1909)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "batak_batara_guru",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909) — the three high gods Batara Guru, Soripada and Mangalabulan."
+     }
+    ],
+    "notes": "Brother of Batara Guru in the Debata na Tolu; reciprocal sibling edge needed on batak_batara_guru."
+   },
+   {
+    "kind": "sibling",
+    "personId": "batak_mangalabulan",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909)."
+     }
+    ],
+    "notes": "Brother of Mangalabulan; reciprocated within this batch."
+   },
+   {
+    "kind": "father",
+    "personId": "batak_mula_jadi_na_bolon",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909) — Mula Jadi na Bolon fathered the three high gods."
+     }
+    ],
+    "notes": "Son of the creator Mula Jadi na Bolon."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Soripada (Sori Sohaliapan), the second of the Batak high-god trinity (Debata na Tolu) and a son of Mula Jadi na Bolon, is the preserver of the cosmos, likened to Vishnu, brother of Batara Guru and Mangalabulan.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ]
+   }
+  ],
+  "notes": "Second of the Debata na Tolu, the Batak high-god trinity; son of Mula Jadi na Bolon and brother of Batara Guru and Mangalabulan. Preserver of the cosmos (Vishnu-like), of the middle world and of purity. Named in the batch prose of batak_batara_guru ('one of three brothers, with Soripada and Mangalabulan'); materialized here.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "batak_mangalabulan",
+  "name": {
+   "primary": "Third of the Three High Gods",
+   "alt": [
+    "Mangalabulan",
+    "Bala Bulan",
+    "Balabulan",
+    "Debata Mangalabulan"
+   ],
+   "transliterations": {
+    "batak": "ᯔᯝᯞᯅᯮᯞᯉ᯲",
+    "rom": "Mangalabulan"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Batak",
+  "primaryTradition": "Batak",
+  "sex": "male",
+  "vitalStatus": "active",
+  "parentIds": [
+   "batak_mula_jadi_na_bolon"
+  ],
+  "parentRoles": {
+   "batak_mula_jadi_na_bolon": "paternal"
+  },
+  "temporal": {
+   "era": "primordial age of the gods"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial age of the gods",
+    "eraOrdering": 0,
+    "startEvent": "hatched-from-an-egg-as-one-of-the-debata-na-tolu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich."
+     }
+    ],
+    "notes": "Mangalabulan (Bala Bulan) is the third of the three high gods (Debata na Tolu) born from the eggs laid by the divine hen for Mula Jadi na Bolon; brother of Batara Guru and Soripada. He is associated with the lower world."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial age of the gods",
+    "eraOrdering": 1,
+    "startEvent": "the-god-of-the-dual-hand",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ],
+    "notes": "He governs the descent into the dark and the return to light: with his right hand he bestows good deeds and virtue, and with his left hand he commits crimes and wrongdoing, making him the ambivalent power within the trinity. In some accounts he is invoked in oaths and as a patron of warriors and craft."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ambivalence-and-the-lower-world",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Debata na Tolu",
+     "script": "",
+     "rom": "Debata na Tolu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-good-and-ill-by-either-hand",
+    "name": "grant virtue or wrongdoing by the right or the left hand",
+    "inheritability": "unique",
+    "notes": "The dual-natured god of the trinity: his right hand bestows good deeds and virtue, his left hand crime and wrongdoing; he governs the descent into darkness and the return to light.",
+    "scopeTags": [
+     "ambivalence",
+     "moral-order"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016), Wacana 17(2); Warneck, Die Religion der Batak (1909)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "batak_batara_guru",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909) — the three high gods Batara Guru, Soripada and Mangalabulan."
+     }
+    ],
+    "notes": "Brother of Batara Guru in the Debata na Tolu; reciprocal sibling edge needed on batak_batara_guru."
+   },
+   {
+    "kind": "sibling",
+    "personId": "batak_soripada",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909)."
+     }
+    ],
+    "notes": "Brother of Soripada; reciprocated within this batch."
+   },
+   {
+    "kind": "father",
+    "personId": "batak_mula_jadi_na_bolon",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909) — Mula Jadi na Bolon fathered the three high gods."
+     }
+    ],
+    "notes": "Son of the creator Mula Jadi na Bolon."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mangalabulan (Bala Bulan), the third of the Batak high-god trinity (Debata na Tolu) and a son of Mula Jadi na Bolon, is the ambivalent dual-handed god of the lower world who bestows both good and ill, brother of Batara Guru and Soripada.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ]
+   }
+  ],
+  "notes": "Third of the Debata na Tolu, the Batak high-god trinity; son of Mula Jadi na Bolon and brother of Batara Guru and Soripada. The dual-natured god (right hand virtue, left hand wrongdoing), of the lower world. Named in the batch prose of batak_batara_guru ('one of three brothers, with Soripada and Mangalabulan'); materialized here.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "berber_tinge",
+  "name": {
+   "primary": "Tinge",
+   "alt": [
+    "Tinjis",
+    "Tinga",
+    "Tingis"
+   ],
+   "transliterations": {
+    "latin": "Tinge",
+    "greek": "Tingis",
+    "berber": "Tinjis"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Berber",
+  "primaryTradition": "Berber",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "antiquity"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "antiquity",
+    "eraOrdering": 0,
+    "startEvent": "berber-goddess-and-eponym-of-tangier",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10."
+     }
+    ],
+    "notes": "Tinge (Tinjis), a Berber goddess, is the eponym of the city of Tangier (ancient Tingis). Pomponius Mela makes her the wife of the Libyan giant Antaeus (known to the Berbers as Anti); the city of Tingis was held to be named after her."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "antiquity",
+    "eraOrdering": 1,
+    "startEvent": "widow-of-antaeus-and-the-founding-of-tangier",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bates, O. (1914). The Eastern Libyans: An Essay. London: Macmillan & Co."
+     }
+    ],
+    "notes": "In the local legend, after Heracles slew Antaeus he took Tinge, by whom (in some tellings) was born Sophax, ancestor of the Mauretanian kings; Antaeus had named his domain, which included the Gardens of the Hesperides, after her. Her tomb-city Tingis kept the giant-and-goddess legend alive into Roman times."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "place-and-eponymy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tingis",
+     "script": "Latn",
+     "rom": "Tinge"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10; Strabo, Geographica 17.3."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-her-name-to-tangier",
+    "name": "lend her name to the city of Tangier",
+    "inheritability": "unique",
+    "notes": "As eponym-goddess she names the city of Tingis (Tangier); the local cult preserved her with the legend of her marriage to the earth-giant Antaeus.",
+    "scopeTags": [
+     "foundational"
+    ],
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10; Bates, The Eastern Libyans (1914)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "berber_anti",
+    "era": "antiquity",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10 — Tinge the wife of Antaeus."
+     }
+    ],
+    "notes": "Wife of the Libyan giant Antaeus (Anti); reciprocal spouse edge needed on berber_anti."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tinge (Tinjis), a Berber goddess and the eponym of Tangier (Tingis), is named by Pomponius Mela as the wife of the Libyan giant Antaeus, whom the Berbers knew as Anti; her name underlies that of the city.",
+    "citations": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bates, O. (1914). The Eastern Libyans: An Essay. London: Macmillan & Co."
+     },
+     {
+      "kind": "reference",
+      "reference": "Plutarch, Sertorius 9 (the giant Antaeus at Tingis)."
+     }
+    ]
+   }
+  ],
+  "notes": "Berber goddess Tinge/Tinjis, eponym of Tangier and wife of the earth-giant Antaeus (corpus berber_anti). Named in the batch prose of berber_anti ('Pomponius Mela makes the goddess Tinjis (eponym of Tangier) his wife'); materialized here. The English/Latin form Tinge leads; native Berber Tinjis and Greek Tingis are given in the term-fields. Classified deity (eponym/tutelary goddess).",
+  "schemaVersion": 2
+ }
+]
+```

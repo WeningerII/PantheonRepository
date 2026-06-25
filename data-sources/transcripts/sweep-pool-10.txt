@@ -1,0 +1,1455 @@
+```json
+[
+ {
+  "id": "japanese_yoriyoshi",
+  "name": {
+   "primary": "Minamoto no Yoriyoshi",
+   "alt": [
+    "Yoriyoshi",
+    "Iyo no kami Yoriyoshi"
+   ],
+   "transliterations": {
+    "japanese": "源頼義"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "late-heian"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 0,
+    "startEvent": "birth-988-CE-as-Yorinobu-son",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mutsu Waki (Chronicle of Mutsu); Sonpi Bunmyaku"
+     }
+    ],
+    "notes": "Born 988 CE, legitimate son and heir of Minamoto no Yorinobu, head of the Kawachi Genji line. Father of Hachimantaro Yoshiie."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 1,
+    "startEvent": "former-nine-years-war-commander-against-Abe-clan",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mutsu Waki (Chronicle of Mutsu)"
+     }
+    ],
+    "notes": "Commander of the Former Nine Years War (1051 to 1063) against the Abe clan of Mutsu province. Credited his 1062 victory to the war-god Hachiman, deepening the Minamoto-Hachiman tutelary tie that his son Yoshiie would cement. Died 1075 CE."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "martial-command",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mutsu Waki (Chronicle of Mutsu)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Mutsu Waki (Chronicle of Mutsu, 11th to 12th c.)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "japanese_yoshiie",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku; Mutsu Waki"
+     }
+    ],
+    "notes": "Biological and social father of Yoshiie (Hachimantaro). In the registry Yoshiie carries Hachiman as operative divine parent under the Mongan-pattern claim, so Yoriyoshi resolves the social-father edge rather than the parentIds tier-link."
+   },
+   {
+    "kind": "father-of",
+    "personId": "japanese_yoshitsuna",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ],
+    "notes": "Second son of Yoriyoshi, younger brother of Yoshiie."
+   }
+  ]
+ },
+ {
+  "id": "japanese_yoshitsuna",
+  "name": {
+   "primary": "Minamoto no Yoshitsuna",
+   "alt": [
+    "Yoshitsuna",
+    "Kamo Jiro Yoshitsuna"
+   ],
+   "transliterations": {
+    "japanese": "源義綱"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_yoriyoshi"
+  ],
+  "temporal": {
+   "era": "late-heian"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-Yoriyoshi-second-son",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ],
+    "notes": "Second son of Minamoto no Yoriyoshi and younger brother of Yoshiie, with whom he fought in the Former Nine Years War. Took the cognomen Kamo Jiro after his coming-of-age at the Kamo shrine."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 1,
+    "startEvent": "implicated-in-killing-of-nephew-Yoshitada-1109-then-exiled",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Chuyuki (diary of Fujiwara no Munetada)"
+     }
+    ],
+    "notes": "In the dominant medieval tradition charged with the 1109 killing of his nephew Yoshitada and captured by Tameyoshi, after which he took monastic vows and was banished to Sado. The charge is contested: later accounts attribute the killing to his brother Yoshimitsu, so the registry records the nephew-killing as a disputed tradition rather than settled fact."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "martial-command",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     },
+     {
+      "kind": "primary",
+      "reference": "Chuyuki (diary of Fujiwara no Munetada)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_yoshiie",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ],
+    "notes": "Younger brother of Yoshiie; both sons of Yoriyoshi."
+   }
+  ]
+ },
+ {
+  "id": "japanese_yoshikata",
+  "name": {
+   "primary": "Minamoto no Yoshikata",
+   "alt": [
+    "Yoshikata",
+    "Kira Yoshikata",
+    "Tatara Yoshikata"
+   ],
+   "transliterations": {
+    "japanese": "源義賢"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_tameyoshi"
+  ],
+  "temporal": {
+   "era": "late-heian"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 0,
+    "startEvent": "birth-c-1135-CE-as-Tameyoshi-second-son",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku; Azuma Kagami"
+     }
+    ],
+    "notes": "Second son of Minamoto no Tameyoshi and a younger half-brother of Yoshitomo. Extended Minamoto influence into the Kanto on his father Tameyoshi behalf. Father of Kiso Yoshinaka."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 1,
+    "startEvent": "killed-1155-CE-at-battle-of-Okura-by-nephew-Yoshihira",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami; Heike Monogatari"
+     }
+    ],
+    "notes": "Killed in 1155 at the Battle of Okura in Musashi by his nephew Minamoto no Yoshihira (son of Yoshitomo), leaving his infant son Yoshinaka to be raised in the Kiso valley."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "martial-command",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami (Mirror of the East)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "japanese_yoshinaka",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami; Heike Monogatari"
+     }
+    ],
+    "notes": "Father of Kiso Yoshinaka; the parentage edge that links Yoshinaka into the Seiwa-Genji tree through Tameyoshi."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "japanese_yoshitomo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ],
+    "notes": "Younger half-brother of Yoshitomo; both sons of Tameyoshi by different mothers."
+   }
+  ]
+ },
+ {
+  "id": "japanese_noriyori",
+  "name": {
+   "primary": "Minamoto no Noriyori",
+   "alt": [
+    "Noriyori",
+    "Kaba no Kanja",
+    "Gama no Kanja"
+   ],
+   "transliterations": {
+    "japanese": "源範頼"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_yoshitomo"
+  ],
+  "temporal": {
+   "era": "late-heian"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 0,
+    "startEvent": "birth-c-1150-CE-as-Yoshitomo-sixth-son",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami; Sonpi Bunmyaku"
+     }
+    ],
+    "notes": "Sixth son of Minamoto no Yoshitomo, half-brother of Yoritomo and Yoshitsune. Took the cognomen Kaba no Kanja from his upbringing at Kaba in Totomi."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 1,
+    "startEvent": "Genpei-War-co-commander-with-Yoshitsune",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami; Heike Monogatari"
+     }
+    ],
+    "notes": "Co-commanded the Minamoto field armies with his brother Yoshitsune in the Genpei War from 1184, sharing in the defeat of their cousin Yoshinaka at Awazu and the campaigns at Ichi-no-Tani and Dan-no-ura."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 2,
+    "startEvent": "downfall-and-death-1193-CE-under-Yoritomo-suspicion",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ],
+    "notes": "Fell under Yoritomo suspicion and was forced into exile at Izu, where he was killed in 1193."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "martial-command",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami (Mirror of the East)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari (Tale of the Heike)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_yoritomo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ],
+    "notes": "Half-brother of Yoritomo; both sons of Yoshitomo."
+   },
+   {
+    "kind": "sibling",
+    "personId": "japanese_yoshitsune",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ],
+    "notes": "Half-brother and Genpei-War co-commander of Yoshitsune; both sons of Yoshitomo."
+   }
+  ]
+ },
+ {
+  "id": "japanese_tokiwa_gozen",
+  "name": {
+   "primary": "Tokiwa Gozen",
+   "alt": [
+    "Tokiwa",
+    "Lady Tokiwa"
+   ],
+   "transliterations": {
+    "japanese": "常盤御前"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "late-heian"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-consort-of-Yoshitomo-and-mother-of-Yoshitsune",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari; Gikeiki"
+     }
+    ],
+    "notes": "Noblewoman of the late Heian court, born c. 1138. Entered the household of Minamoto no Yoshitomo as a consort and bore him three sons, the youngest of whom was Ushiwaka, later Yoshitsune."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 1,
+    "startEvent": "flight-from-Kyoto-after-Heiji-Disturbance-1160",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari"
+     }
+    ],
+    "notes": "After Yoshitomo death in the Heiji Disturbance she fled the capital in deep winter with her three young sons; later submitted to Taira no Kiyomori as a concubine to secure her sons lives, and afterward married Fujiwara no Naganari."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "maternal-line",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari (Tale of the Heike)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Gikeiki (Chronicle of Yoshitsune)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "japanese_yoshitsune",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari; Gikeiki"
+     }
+    ],
+    "notes": "Mother of Yoshitsune (Ushiwaka), her youngest son by Yoshitomo."
+   },
+   {
+    "kind": "spouse",
+    "personId": "japanese_yoshitomo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari"
+     }
+    ],
+    "notes": "Consort of Yoshitomo; sources differ on whether wife or concubine."
+   }
+  ]
+ },
+ {
+  "id": "japanese_yoriie",
+  "name": {
+   "primary": "Minamoto no Yoriie",
+   "alt": [
+    "Yoriie",
+    "Kamakura Yoriie"
+   ],
+   "transliterations": {
+    "japanese": "源頼家"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_yoritomo"
+  ],
+  "temporal": {
+   "era": "kamakura"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "kamakura",
+    "eraOrdering": 0,
+    "startEvent": "birth-1182-CE-as-Yoritomo-eldest-son-and-heir",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ],
+    "notes": "Eldest son and designated heir of Minamoto no Yoritomo and Hojo Masako, born 1182. Became second Kamakura shogun on his father death."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kamakura",
+    "eraOrdering": 1,
+    "startEvent": "deposition-by-Hojo-and-assassination-1204",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ],
+    "notes": "Second shogun 1202 to 1203, his authority curtailed by the Hojo regents; deposed and confined at Shuzenji, where he was assassinated in 1204."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "shogunal-office",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami (Mirror of the East)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_sanetomo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ],
+    "notes": "Elder brother of Sanetomo; both sons of Yoritomo and Hojo Masako."
+   }
+  ]
+ },
+ {
+  "id": "japanese_sanetomo",
+  "name": {
+   "primary": "Minamoto no Sanetomo",
+   "alt": [
+    "Sanetomo",
+    "Kamakura Udaijin"
+   ],
+   "transliterations": {
+    "japanese": "源実朝"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_yoritomo"
+  ],
+  "temporal": {
+   "era": "kamakura"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "kamakura",
+    "eraOrdering": 0,
+    "startEvent": "birth-1192-CE-as-Yoritomo-third-son",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ],
+    "notes": "Third son of Yoritomo and Hojo Masako, born 1192. Became third Kamakura shogun at age twelve while real power rested with the Hojo regents; an accomplished waka poet whose verse survives in the Kinkai Wakashu."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kamakura",
+    "eraOrdering": 1,
+    "startEvent": "assassination-1219-CE-by-nephew-Kugyo-ending-Minamoto-shogunal-line",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ],
+    "notes": "Assassinated in 1219 at the Tsurugaoka Hachimangu by his nephew Kugyo (son of Yoriie). Dying childless, he ended the Minamoto line of shoguns; power passed wholly to the Hojo shikken."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "shogunal-office",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami (Mirror of the East)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Kinkai Wakashu (Sanetomo poetry collection)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_yoriie",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami"
+     }
+    ],
+    "notes": "Younger brother of Yoriie; both sons of Yoritomo and Hojo Masako."
+   }
+  ]
+ },
+ {
+  "id": "japanese_nakahara_no_kaneto",
+  "name": {
+   "primary": "Nakahara no Kaneto",
+   "alt": [
+    "Kaneto",
+    "Chuzo Kaneto"
+   ],
+   "transliterations": {
+    "japanese": "中原兼遠"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "late-heian"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-Kiso-valley-notable-and-foster-father-of-Yoshinaka",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari; Genpei Josuiki"
+     }
+    ],
+    "notes": "Local notable of the Kiso valley in Shinano. Took in the infant Yoshinaka after the 1155 killing of Yoshinaka father Yoshikata and raised him as foster-father; his own sons Imai Kanehira and Higuchi Kanemitsu became Yoshinaka closest retainers, and his daughter was the female warrior Tomoe Gozen."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fosterage-and-guardianship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari (Tale of the Heike), book 9"
+     },
+     {
+      "kind": "primary",
+      "reference": "Genpei Josuiki"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "japanese_tomoe_gozen",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari; Genpei Josuiki"
+     }
+    ],
+    "notes": "Father of Tomoe Gozen, whose mother was Yoshinaka wet-nurse."
+   },
+   {
+    "kind": "ally",
+    "personId": "japanese_yoshinaka",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heike Monogatari"
+     }
+    ],
+    "notes": "Foster-father and guardian of Yoshinaka, not his biological parent; raised him in the Kiso valley."
+   }
+  ]
+ },
+ {
+  "id": "japanese_yoshiyasu_ashikaga",
+  "name": {
+   "primary": "Ashikaga Yoshiyasu",
+   "alt": [
+    "Minamoto no Yoshiyasu",
+    "Yoshiyasu"
+   ],
+   "transliterations": {
+    "japanese": "足利義康"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_yoshikuni"
+  ],
+  "temporal": {
+   "era": "late-heian"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 0,
+    "startEvent": "birth-c-1127-CE-as-Yoshikuni-son-and-founder-of-Ashikaga-house",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku; Azuma Kagami"
+     }
+    ],
+    "notes": "Son of Minamoto no Yoshikuni, born c. 1127. Inherited the Ashikaga estate in Shimotsuke and was the first of the line to take Ashikaga as a surname, founding the cadet house whose seventh-generation descendant Ashikaga Takauji established the Muromachi shogunate."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 1,
+    "startEvent": "Hogen-Rebellion-1156-service-and-death-1157",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hogen Monogatari"
+     }
+    ],
+    "notes": "Served on the victorious Go-Shirakawa side in the Hogen Rebellion of 1156; died the following year, 1157."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "warrior-house-founder",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     },
+     {
+      "kind": "primary",
+      "reference": "Hogen Monogatari"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_yoshishige_nitta",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ],
+    "notes": "Brother of Nitta Yoshishige; both sons of Yoshikuni and founders of the Ashikaga and Nitta cadet houses respectively."
+   }
+  ]
+ },
+ {
+  "id": "japanese_yoshishige_nitta",
+  "name": {
+   "primary": "Nitta Yoshishige",
+   "alt": [
+    "Minamoto no Yoshishige",
+    "Yoshishige"
+   ],
+   "transliterations": {
+    "japanese": "新田義重"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_yoshikuni"
+  ],
+  "temporal": {
+   "era": "late-heian"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "late-heian",
+    "eraOrdering": 0,
+    "startEvent": "birth-c-1135-CE-as-Yoshikuni-son-and-founder-of-Nitta-house",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku; Azuma Kagami"
+     }
+    ],
+    "notes": "Son of Minamoto no Yoshikuni, born c. 1135. First head of the Nitta clan, taking his surname from the Nitta manor in Kozuke; ancestor of Nitta Yoshisada, who led the destruction of the Kamakura shogunate in the Kemmu Restoration of 1333."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "warrior-house-founder",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     },
+     {
+      "kind": "primary",
+      "reference": "Azuma Kagami (Mirror of the East)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_yoshiyasu_ashikaga",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sonpi Bunmyaku"
+     }
+    ],
+    "notes": "Brother of Ashikaga Yoshiyasu; both sons of Yoshikuni and founders of the Nitta and Ashikaga cadet houses respectively."
+   }
+  ]
+ },
+ {
+  "id": "japanese_kojiki_nagasunehiko",
+  "name": {
+   "primary": "Nagasunehiko",
+   "alt": [
+    "Nagasune-hiko",
+    "Tomibiko",
+    "Tomi no Nagasunehiko"
+   ],
+   "transliterations": {
+    "japanese": "長髄彦"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "kamiyo"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "kamiyo",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-Tomi-chieftain-and-brother-of-Tomiyabime",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2 (Jimmu eastern expedition)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Nihon Shoki, vol. 3"
+     }
+    ],
+    "notes": "Chieftain of Tomi in the Yamato region and elder brother of Tomi-ya-bime, the wife of the heavenly kami Nigihayahi; thus brother-in-law of Nigihayahi and uncle of Umashimaji."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kamiyo",
+    "eraOrdering": 1,
+    "startEvent": "resistance-to-Jimmu-eastern-expedition-and-death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2"
+     },
+     {
+      "kind": "primary",
+      "reference": "Nihon Shoki, vol. 3"
+     }
+    ],
+    "notes": "Led the resistance against Jimmu eastern expedition and repelled the invaders at Kusaka. In the Nihon Shoki his brother-in-law Nigihayahi finally killed him and submitted to Jimmu, ending the Tomi resistance."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war-and-resistance",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Nihon Shoki, vol. 3"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2, 712 CE"
+     },
+     {
+      "kind": "primary",
+      "reference": "Nihon Shoki, vol. 3, 720 CE"
+     },
+     {
+      "kind": "primary",
+      "reference": "Sendai Kuji Hongi"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_kojiki_tomi_ya_bime",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2; Nihon Shoki, vol. 3"
+     }
+    ],
+    "notes": "Elder brother of Tomi-ya-bime (Mikashikiya-hime), wife of Nigihayahi; resolves the sibling edge recorded on Tomi-ya-bime."
+   },
+   {
+    "kind": "enemy",
+    "personId": "japanese_kojiki_nigihayahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Nihon Shoki, vol. 3"
+     }
+    ],
+    "notes": "Brother-in-law turned victim: in the Nihon Shoki, Nigihayahi kills Nagasunehiko to submit to Jimmu."
+   }
+  ]
+ },
+ {
+  "id": "japanese_kojiki_iikatasumi",
+  "name": {
+   "primary": "Iikatasumi",
+   "alt": [
+    "Iikatasumi-no-Mikoto",
+    "Iigatasumi"
+   ],
+   "transliterations": {
+    "japanese": "飯肩巣見命"
+   }
+  },
+  "type": "quartigod",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_kojiki_kushimikatamatsumi"
+  ],
+  "temporal": {
+   "era": "kojiki-mythohistorical-section"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "kojiki-mythohistorical-section",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-second-generation-of-the-Omononushi-Miwa-line",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2 (Sujin genealogy of Otataneko)"
+     }
+    ],
+    "notes": "Son of Kushimikata and second generation of the Mt. Miwa line descending from the kami Omononushi. In the Kojiki line Omononushi to Kushimikata to Iikatasumi to Takemikazuchi to Otataneko, he is the link between the demigod founder and the priest installed at the Omiwa shrine."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "priestly-lineage-miwa",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2, 712 CE (Otataneko genealogy)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent-of",
+    "personId": "japanese_kojiki_takemikazuchi_miwa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2"
+     }
+    ],
+    "notes": "Father of the Miwa-line Takemikazuchi, third generation of the Omononushi line."
+   }
+  ]
+ },
+ {
+  "id": "japanese_kojiki_takemikazuchi_miwa",
+  "name": {
+   "primary": "Takemikazuchi-no-Mikoto (Miwa line)",
+   "alt": [
+    "Takemikazuchi of the Miwa genealogy",
+    "Take-mika-zuchi"
+   ],
+   "transliterations": {
+    "japanese": "建甕槌命"
+   }
+  },
+  "type": "scion",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_kojiki_iikatasumi"
+  ],
+  "temporal": {
+   "era": "kojiki-mythohistorical-section"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "kojiki-mythohistorical-section",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-third-generation-of-the-Omononushi-Miwa-line",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2 (Sujin genealogy of Otataneko)"
+     }
+    ],
+    "notes": "Son of Iikatasumi and third generation of the Mt. Miwa line of Omononushi; father of the priest Otataneko. A distinct Miwa-genealogy figure who only shares a name with the better-known thunder-kami Takemikazuchi-no-o of the Izumo land-cession and so is registered with a Miwa-line disambiguation."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "priestly-lineage-miwa",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2, 712 CE (Otataneko genealogy)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent-of",
+    "personId": "japanese_kojiki_otataneko",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2"
+     }
+    ],
+    "notes": "Father of Otataneko, the priest installed by Emperor Sujin at the Omiwa shrine."
+   }
+  ]
+ },
+ {
+  "id": "japanese_kojiki_otataneko",
+  "name": {
+   "primary": "Otataneko",
+   "alt": [
+    "Ohotataneko",
+    "Otataneko-no-Mikoto",
+    "Oho-tata-neko"
+   ],
+   "transliterations": {
+    "japanese": "意富多多泥古"
+   }
+  },
+  "type": "scion",
+  "tradition": "Japanese",
+  "primaryTradition": "Japanese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "japanese_kojiki_takemikazuchi_miwa"
+  ],
+  "temporal": {
+   "era": "kojiki-mythohistorical-section"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "kojiki-mythohistorical-section",
+    "eraOrdering": 0,
+    "startEvent": "descent-from-Omononushi-through-the-Miwa-line",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2 (Sujin reign)"
+     }
+    ],
+    "notes": "Great-great-grandson of the kami Omononushi through Ikutamayoribime and Kushimikata, fourth named generation of the Mt. Miwa line. Found at Suga in Kawachi when Emperor Sujin sought him out by name."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "kojiki-mythohistorical-section",
+    "eraOrdering": 1,
+    "startEvent": "installation-by-Sujin-as-Omiwa-priest-to-end-the-plague",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2"
+     },
+     {
+      "kind": "primary",
+      "reference": "Nihon Shoki, vol. 5 (Sujin reign)"
+     }
+    ],
+    "notes": "In a dream Omononushi told Emperor Sujin the plague ravaging the land would cease only when Otataneko worshipped him. Found and installed as high priest of the Omiwa shrine on Mt. Miwa, after which the pestilence stopped. Reckoned ancestor of the Miwa-no-kimi and Kamo priestly clans."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "priestly-office-omiwa",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2, 712 CE (Sujin reign)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Nihon Shoki, vol. 5, 720 CE (Sujin reign)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ancestor-of",
+    "personId": "japanese_kojiki_kushimikatamatsumi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, vol. 2"
+     }
+    ],
+    "notes": "Descendant edge back to the Miwa-line founder Kushimikata; the registry records Otataneko on Kushimikata side as a multi-generation descendant, here resolved through the Iikatasumi to Takemikazuchi-Miwa chain."
+   }
+  ]
+ },
+ {
+  "id": "javanese_bagong",
+  "name": {
+   "primary": "Bagong",
+   "alt": [
+    "Cepot (Sundanese)",
+    "Astrajingga",
+    "Bawor (Banyumas)"
+   ],
+   "transliterations": {
+    "javanese": "ꦧꦒꦺꦴꦁ"
+   }
+  },
+  "type": "demigod",
+  "tradition": "Javanese",
+  "primaryTradition": "Javanese",
+  "sex": "male",
+  "vitalStatus": "alive",
+  "origin": "canon",
+  "parentIds": [
+   "javanese_semar"
+  ],
+  "temporal": {
+   "era": "perennial in wayang"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "perennial in wayang",
+    "eraOrdering": 0,
+    "startEvent": "creation-from-Semar-shadow-as-youngest-panakawan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press."
+     }
+    ],
+    "notes": "Youngest of the panakawan clown-servants and a foster son of the divine clown-guardian Semar; in the common wayang account Semar shadow was transformed into Bagong as his companion. Stout and blunt-spoken, completing the quartet with Gareng and Petruk."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "comic-servant-wayang",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anderson, Benedict R. O. G. (1965). Mythology and the Tolerance of the Javanese. Cornell Modern Indonesia Project."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "javanese_gareng",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Geertz, Clifford (1960). The Religion of Java."
+     }
+    ],
+    "notes": "Foster-brother among the panakawan; clown-sons of Semar."
+   },
+   {
+    "kind": "sibling",
+    "personId": "javanese_petruk",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Geertz, Clifford (1960). The Religion of Java."
+     }
+    ],
+    "notes": "Foster-brother among the panakawan; clown-sons of Semar."
+   }
+  ]
+ }
+]
+```

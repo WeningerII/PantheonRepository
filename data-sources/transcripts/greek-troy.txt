@@ -1,0 +1,3237 @@
+Greek — the Trojan Royal House (the Dardanid line). Newly admissible now that the
+old parentage rule excluding nymph/nereid/titan/pleiad-descended figures is RETIRED:
+such fully-divine, non-Olympian ancestresses get the new type 'numen'. The line's
+ancestress is the Pleiad ELECTRA, who bore DARDANUS to Zeus — so divinity computes
+down the founder-king chain (Dardanus→Erichthonius→Tros→Ilus→Laomedon→Priam→Hector,
+and the junior branch Tros→Assaracus→Capys→Anchises→Aeneas).
+
+Wires to EXISTING anchors (do NOT re-author): greek_hesiod_zeus, greek_hesiod_aphrodite,
+greek_aeneas, greek_anchises, greek_achilles, greek_paris (the Trojan prince ALREADY
+exists), greek_helen, greek_apollod_ascanius. Reciprocal/parentage updates those need
+are listed as UPDATE-NEEDED / RECIPROCAL-NEEDED (hand-maintained — app/data.js NOT edited).
+
+Sources verified at work level: Homer Iliad (esp. the Aeneas genealogy 20.215-241,
+and 6.390-502, 22, 24); Apollodorus Bibliotheca 3.12 (the Dardanid stemma) and 2.5.9,
+Epitome 3-5; Euripides Trojan Women, Hecuba, Andromache; Virgil Aeneid; Hyginus Fabulae.
+
+```json
+[
+ {
+  "id": "greek_electra_pleiad",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Electra",
+   "alt": [
+    "Electra the Pleiad",
+    "Electra of Samothrace",
+    "Atlantis"
+   ],
+   "transliterations": {
+    "greek": "Ἠλέκτρα"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.10.1 (the Pleiades, daughters of Atlas and Pleione); Hes. fr. 169 M-W"
+     }
+    ],
+    "notes": "One of the seven Pleiades, daughters of the Titan Atlas and the Oceanid Pleione; a star-nymph dwelling on Samothrace."
+   },
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "union-with-Zeus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1; Hellanicus FGrHist 4 F 23"
+     }
+    ],
+    "notes": "Bore Zeus two sons — Dardanus, founder of the Dardanian line, and Iasion — on Samothrace."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "stars",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.10.1 — the Pleiades catasterised as the star-cluster"
+     }
+    ]
+   },
+   {
+    "sphereId": "samothracian-mysteries",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1; Diod. Sic. 5.48"
+     }
+    ],
+    "notes": "Associated with the Samothracian cult of the Great Gods."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "catasterism-pleiad",
+    "name": "Astral nature (a Pleiad star)",
+    "inheritability": "none",
+    "scopeTags": [
+     "celestial"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.10.1; Ov. Fast. 4.169-178 — Electra the dimmest star, who veiled herself in grief for Troy"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "greek_hesiod_zeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1"
+     }
+    ],
+    "notes": "Bore Zeus Dardanus and Iasion."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_dardanus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1; Hellanicus FGrHist 4 F 23"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.10.1, 3.12.1; Hes. fr. 169 M-W; Diod. Sic. 5.48; Ov. Fast. 4.31-32, 169-178"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Numen — a Pleiad, daughter of the Titan Atlas and the Oceanid Pleione, dwelling on Samothrace. By Zeus she is the ancestress of the entire Trojan royal house: mother of Dardanus (founder of the Dardanians) and Iasion. The fully-divine, non-Olympian ancestress whose presence makes the Dardanid line compute divinity by blood — the canonical case the old parentage rule excluded. In Ovid she is the faded seventh star of the Pleiades, who covered her face rather than watch Troy burn."
+ },
+ {
+  "id": "greek_dardanus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Dardanus",
+   "alt": [
+    "Dardanos"
+   ],
+   "transliterations": {
+    "greek": "Δάρδανος"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_hesiod_zeus",
+   "greek_electra_pleiad"
+  ],
+  "parentRoles": {
+   "greek_hesiod_zeus": "paternal",
+   "greek_electra_pleiad": "maternal"
+  },
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "tierAuthoredReason": "Founder-king and eponymous ancestor of the Dardanians; computes deity-by-blood (Zeus + the numen Electra) but is a mortal-tier culture-founder, never the object of cult — authored 'demigod' as the highest mortal-tier the founder-king register admits.",
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "migration-from-Samothrace-to-the-Troad",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1; Hom. Il. 20.215-218"
+     }
+    ],
+    "notes": "Son of Zeus and the Pleiad Electra; left Samothrace (or Arcadia, in the Italian variant) and crossed to the Troad, received by King Teucer."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "pre-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "founding-of-Dardania",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.216-218; Apollod. 3.12.1-2"
+     }
+    ],
+    "notes": "Married Batea, daughter of Teucer, received a share of the land, and founded the city Dardania on the slopes of Mt. Ida — before sacred Ilios was built on the plain."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.215-218"
+     }
+    ]
+   },
+   {
+    "sphereId": "city-founding",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.216-218 — founder of Dardania; Apollod. 3.12.1-2"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "founder-kingship",
+    "name": "Founder-kingship of the Dardanians",
+    "inheritability": "partial",
+    "scopeTags": [
+     "rulership"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.215-218; Apollod. 3.12.1-2"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "palladium-dardanus",
+    "name": "The Palladium",
+    "kind": "object",
+    "role": "the sky-fallen wooden image of armed Athena; in one tradition given to Dardanus by Zeus, guardian-talisman of the city while it remained within the walls",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3; Dion. Hal. 1.68-69"
+     }
+    ],
+    "notes": "Most fully tied to his great-grandson Ilus; the line's defining sacred object."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_erichthonius",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.219-230; Apollod. 3.12.2"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_batea",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_iasion",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "ally",
+    "personId": "greek_teucer_dardania",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.215-241; Apollod. 3.12.1-2; Hellanicus FGrHist 4 F 23; Dion. Hal. 1.61-62; Verg. Aen. 3.167-168, 7.205-211, 8.134-137"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.215; Apollod. 3.12.1"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Demigod (deity-by-blood, mortal-tier by office) — son of Zeus by the Pleiad Electra; founder-king and eponymous ancestor of the Dardanians, from whom the whole Trojan royal house descends. Crossed from Samothrace to the Troad, was received by King Teucer, married his daughter Batea, and founded Dardania on Mt. Ida (Iliad 20.215-218 — Aeneas's own recital of the line). Father of Erichthonius. The genealogical root through which divinity propagates down the Dardanid stemma to Aeneas, Hector, and Priam's house."
+ },
+ {
+  "id": "greek_erichthonius",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Erichthonius",
+   "alt": [
+    "Erichthonios of Dardania",
+    "Erichthonius the Trojan"
+   ],
+   "transliterations": {
+    "greek": "Ἐριχθόνιος"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_dardanus"
+  ],
+  "parentRoles": {
+   "greek_dardanus": "paternal"
+  },
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "reign-over-Dardania",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.219-230; Apollod. 3.12.2"
+     }
+    ],
+    "notes": "Succeeded Dardanus; Homer names him the wealthiest of mortal men, with three thousand mares in the marsh-meadows, of whom Boreas sired twelve wind-swift foals. Married Astyoche, daughter of the river Simoeis, and begat Tros."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.219-230"
+     }
+    ]
+   },
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.220 — aphneiotatos, the richest of mortal men"
+     }
+    ]
+   },
+   {
+    "sphereId": "horsemanship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.221-229 — his three thousand mares sired upon by Boreas"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "boread-horse-breeding",
+    "name": "Breeder of the wind-sired horses",
+    "inheritability": "partial",
+    "scopeTags": [
+     "husbandry",
+     "wealth"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.221-229 — Boreas in the guise of a stallion sired twelve foals that ran over the corn-ears and the sea-foam without bending them"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "boread-horses-of-dardania",
+    "name": "The wind-sired mares of Dardania",
+    "kind": "object",
+    "role": "three thousand mares, twelve of them sired by Boreas (the North Wind), so swift they ran over standing corn and the crests of the sea unhindered",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.221-229"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_tros",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.230; Apollod. 3.12.2"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_astyoche_simoeis",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.219-230; Apollod. 3.12.2; Dion. Hal. 1.62"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Demigod by descent (son of Dardanus) — the Trojan/Dardanian Erichthonius, NOT the Athenian autochthon of the same name. King of Dardania, named by Homer the richest of mortal men; owner of the three thousand marsh-mares twelve of whom Boreas sired as wind-swift foals (Iliad 20.219-229). Married Astyoche daughter of the river Simoeis; father of Tros, who gave Troy its name."
+ },
+ {
+  "id": "greek_tros",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Tros",
+   "alt": [
+    "Tros of Dardania"
+   ],
+   "transliterations": {
+    "greek": "Τρώς"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_erichthonius"
+  ],
+  "parentRoles": {
+   "greek_erichthonius": "paternal"
+  },
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "epithets": [
+   {
+    "original": "Τρώς",
+    "language": "greek",
+    "transliteration": "Trōs",
+    "contextTag": "eponym",
+    "notes": "The eponym of Troy and the Trojans (Trōes); the land and people were named after him.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.2; Hom. Il. 20.230"
+     }
+    ]
+   }
+  ],
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "naming-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.2; Hom. Il. 20.230-231"
+     }
+    ],
+    "notes": "Succeeded Erichthonius and called the country Troy (Troia) and its people the Trojans (Trōes) after himself; married Callirhoe, daughter of the river Scamander."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "pre-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "loss-of-Ganymede-and-the-divine-horses",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 5.265-272, 20.231-235; Hymn. Hom. Aphr. 202-217; Apollod. 3.12.2"
+     }
+    ],
+    "notes": "When Zeus carried off his son Ganymede, Tros grieved until Zeus, through Hermes, compensated him with a gift of immortal horses and the assurance that the boy would be deathless and ageless."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.230-231"
+     }
+    ]
+   },
+   {
+    "sphereId": "city-founding",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.2 — eponym of Troy"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "founder-kingship",
+    "name": "Eponymous kingship of Troy",
+    "inheritability": "partial",
+    "scopeTags": [
+     "rulership"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.2; Hom. Il. 20.230-231"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "horses-of-tros",
+    "name": "The immortal horses of Tros",
+    "kind": "object",
+    "role": "the divine, wind-swift horses Zeus gave Tros in recompense for Ganymede; the finest steeds under dawn and sun, their stock later coveted and seized at Troy (Aeneas's line, Il. 5.265-272)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 5.265-272, 23.291-292; Hymn. Hom. Aphr. 210-211; Apollod. 2.5.9, 3.12.2"
+     }
+    ],
+    "notes": "These are the horses Laomedon later withheld from Heracles, triggering the first sack of Troy."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_ilus",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.231-232; Apollod. 3.12.2"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_assaracus",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.231-232; Apollod. 3.12.2"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_ganymede",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.231-232; Apollod. 3.12.2"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 5.265-272, 20.230-235; Apollod. 3.12.2; Hymn. Hom. Aphr. 202-217; Dion. Hal. 1.62"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Demigod by descent — king of the Troad and eponym of Troy and the Trojans, son of Erichthonius. Married Callirhoe daughter of Scamander; father of Ilus (founder of Ilion and ancestor of Priam), Assaracus (ancestor of Aeneas), and Ganymede. When Zeus snatched Ganymede away, Tros was consoled with a gift of immortal horses — the divine stock later withheld by Laomedon from Heracles."
+ },
+ {
+  "id": "greek_ilus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Ilus",
+   "alt": [
+    "Ilos",
+    "Ilus son of Tros"
+   ],
+   "transliterations": {
+    "greek": "Ἶλος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_tros"
+  ],
+  "parentRoles": {
+   "greek_tros": "paternal"
+  },
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "epithets": [
+   {
+    "original": "Ἶλος",
+    "language": "greek",
+    "transliteration": "Ilos",
+    "contextTag": "eponym",
+    "notes": "Eponym of Ilios/Ilion (the alternative name of Troy and the title of the Iliad).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3; Hom. Il. 11.166, 24.349"
+     }
+    ]
+   }
+  ],
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "founding-of-Ilion",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3"
+     }
+    ],
+    "notes": "Won the wrestling prize at games in Phrygia — fifty youths and fifty maidens, and, by an oracle, a dappled cow he was to follow and found a city where she lay down. She lay on the hill of Phrygian Ate; there he built Ilion."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "pre-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "fall-of-the-Palladium",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3"
+     }
+    ],
+    "notes": "Prayed to Zeus for a sign; the Palladium — the sky-fallen wooden image of armed Athena, three cubits high — fell before his tent. He built a temple to house it; the city's safety was bound to its keeping."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3"
+     }
+    ]
+   },
+   {
+    "sphereId": "city-founding",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3 — founder of Ilion"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "founder-kingship",
+    "name": "Founder-kingship of Ilion",
+    "inheritability": "partial",
+    "scopeTags": [
+     "rulership"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "palladium",
+    "name": "The Palladium",
+    "kind": "object",
+    "role": "the sky-fallen cult-image of armed Athena (spear in the right hand, distaff and spindle in the left, three cubits high); the talisman on whose presence within the walls the safety of Troy depended",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3; Apollod. Epit. 5.10, 5.13 (its theft by Odysseus and Diomedes); Verg. Aen. 2.162-179; Dion. Hal. 1.68-69"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_laomedon",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.236; Apollod. 3.12.3"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 11.166, 11.371-372, 20.231-236, 24.349; Apollod. 3.12.3; Dion. Hal. 1.62"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Demigod by descent — eponymous founder of Ilios/Ilion (Troy proper), son of Tros, elder brother of Assaracus and Ganymede. Won a wrestling prize and an oracular dappled cow, founding the city where she lay; received the sky-fallen Palladium of Athena, the talisman guarding the city. His tomb stood on the plain of Troy (a landmark in the Iliad). Father of Laomedon, and so grandfather of Priam."
+ },
+ {
+  "id": "greek_assaracus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Assaracus",
+   "alt": [
+    "Assarakos"
+   ],
+   "transliterations": {
+    "greek": "Ἀσσάρακος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_tros"
+  ],
+  "parentRoles": {
+   "greek_tros": "paternal"
+  },
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "founding-of-the-junior-Dardanid-branch",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.232-239; Apollod. 3.12.2"
+     }
+    ],
+    "notes": "Son of Tros; head of the junior (Dardanian) royal branch that ruled the slopes of Ida apart from the kings of Ilion. Married Hieromneme, daughter of Simoeis; father of Capys."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.232-239"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dynastic-progenitor",
+    "name": "Progenitor of the Aeneadae branch",
+    "inheritability": "partial",
+    "scopeTags": [
+     "lineage"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.232-241 — the line Assaracus → Capys → Anchises → Aeneas"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_capys",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.239; Apollod. 3.12.2"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.232-241; Apollod. 3.12.2; Dion. Hal. 1.62; Verg. Aen. 6.650, 9.643"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Demigod by descent — son of Tros and ancestor of the junior Dardanid (Aeneadan) branch. Married Hieromneme daughter of Simoeis; father of Capys, grandfather of Anchises, great-grandfather of Aeneas (Iliad 20.232-241). This is the branch Poseidon preserves in Iliad 20 on the prophecy that the descendants of Aeneas will rule the Trojans."
+ },
+ {
+  "id": "greek_capys",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Capys",
+   "alt": [
+    "Kapys"
+   ],
+   "transliterations": {
+    "greek": "Κάπυς"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_assaracus"
+  ],
+  "parentRoles": {
+   "greek_assaracus": "paternal"
+  },
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "reign-in-the-junior-branch",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.239; Apollod. 3.12.2"
+     }
+    ],
+    "notes": "Son of Assaracus; married Themiste, daughter of Ilus (uniting the two branches), and begat Anchises."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.239"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_anchises",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.239; Apollod. 3.12.2; Hymn. Hom. Aphr. 54-55"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.239; Apollod. 3.12.2; Hymn. Hom. Aphr. 54-55; Dion. Hal. 1.62; Verg. Aen. 9.576, 10.145"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Demigod by descent — son of Assaracus, father of Anchises (and so grandfather of Aeneas). Married Themiste, daughter of Ilus, joining the senior and junior Dardanid branches (Iliad 20.239; Apollod. 3.12.2). The named link that lets the existing figure greek_anchises receive parentIds (see UPDATE-NEEDED)."
+ },
+ {
+  "id": "greek_ganymede",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Ganymede",
+   "alt": [
+    "Ganymedes",
+    "the cupbearer of the gods",
+    "Catamitus"
+   ],
+   "transliterations": {
+    "greek": "Γανυμήδης"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "apotheosed",
+  "parentIds": [
+   "greek_tros"
+  ],
+  "parentRoles": {
+   "greek_tros": "paternal"
+  },
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "epithets": [
+   {
+    "original": "οἰνοχόος",
+    "language": "greek",
+    "transliteration": "oinochoos",
+    "contextTag": "cult",
+    "notes": "Wine-pourer / cupbearer of the gods on Olympus.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.234-235; Hymn. Hom. Aphr. 202-206"
+     }
+    ]
+   }
+  ],
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-prince-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.231-235; Apollod. 3.12.2"
+     }
+    ],
+    "notes": "Son of Tros, the most beautiful of mortal men."
+   },
+   {
+    "typeStatus": "apotheosed",
+    "vitalStatus": "apotheosed",
+    "era": "pre-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "rape-of-Ganymede-and-elevation-to-Olympus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.232-235; Hymn. Hom. Aphr. 202-217; Apollod. 3.12.2; Verg. Aen. 5.252-257"
+     }
+    ],
+    "notes": "Caught up to Olympus by Zeus (in later tradition, by Zeus in eagle form, or by an eagle sent by him) to be cupbearer to the gods and to dwell among the immortals, deathless and ageless."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cupbearing",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.234-235 — pours the nectar for the gods"
+     }
+    ]
+   },
+   {
+    "sphereId": "beauty",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.233 — kalliston the most beautiful of mortal men"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "granted-immortality",
+    "name": "Granted immortality and agelessness",
+    "inheritability": "none",
+    "scopeTags": [
+     "immortality"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hymn. Hom. Aphr. 214-217 — made deathless and unageing by Zeus"
+     }
+    ],
+    "notes": "A conferred immortality, not heritable — like Tithonus's, but complete (with agelessness)."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nectar-cup-of-ganymede",
+    "name": "The cup of the gods",
+    "kind": "object",
+    "role": "the vessel from which, as cupbearer, he draws and pours the nectar for the Olympians",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.234-235"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "greek_hesiod_zeus",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hymn. Hom. Aphr. 202-206; Verg. Aen. 5.252-257; Ov. Met. 10.155-161"
+     }
+    ],
+    "notes": "Carried off by Zeus; cupbearer and beloved of the king of the gods."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 5.265-267, 20.231-235; Hymn. Hom. Aphr. 202-217; Apollod. 3.12.2; Pind. Ol. 1.43-45; Verg. Aen. 5.252-257; Ov. Met. 10.155-161"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Demigod by descent (son of Tros) — the most beautiful of mortals, carried off to Olympus by Zeus to be the cupbearer of the gods, made deathless and ageless. In compensation his father Tros received the gift of immortal horses (Iliad 5.265-267, 20.231-235). Later tradition fixes the eagle and the homoerotic motif (Hymn to Aphrodite, Pindar, Virgil, Ovid); the constellation Aquarius is his catasterism."
+ },
+ {
+  "id": "greek_laomedon",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Laomedon",
+   "alt": [
+    "Laomedon the oath-breaker"
+   ],
+   "transliterations": {
+    "greek": "Λαομέδων"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_ilus"
+  ],
+  "parentRoles": {
+   "greek_ilus": "paternal"
+  },
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "accession-and-the-building-of-the-walls",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 7.452-453, 21.441-457; Apollod. 2.5.9"
+     }
+    ],
+    "notes": "King of Troy; Apollo and Poseidon (in servitude to him for a year, by Zeus's sentence) built the great walls of Troy, Poseidon raising the ramparts while Apollo herded the cattle on Ida."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "pre-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "first-oath-breaking-against-the-gods",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 21.441-457; Apollod. 2.5.9"
+     }
+    ],
+    "notes": "Withheld the promised wage from Apollo and Poseidon and threatened to bind them and crop their ears; the gods sent a plague and a sea-monster (ketos) against Troy in revenge."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "pre-trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "second-oath-breaking-against-Heracles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 5.638-651, 20.145-148; Apollod. 2.5.9"
+     }
+    ],
+    "notes": "Promised Heracles the immortal horses of Tros to save his daughter Hesione from the monster, then cheated him of the reward; Heracles returned, sacked Troy, and slew Laomedon and all his sons but Priam."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "pre-trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "death-in-the-first-sack-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 5.648-651; Apollod. 2.6.4"
+     }
+    ],
+    "notes": "Killed by Heracles' arrows when the hero took the city; only Podarces — ransomed by Hesione and renamed Priam — survived among his sons."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 21.441-457"
+     }
+    ]
+   },
+   {
+    "sphereId": "oath-breaking",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 5.649-651, 21.441-457 — the proverbial perjury that doomed his house"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "walls-of-troy",
+    "name": "The walls of Troy",
+    "kind": "structure",
+    "role": "the great ramparts built for Laomedon by Poseidon (and Apollo); divinely raised and all but impregnable save at one weak stretch by the fig-tree where Aeacus had worked",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 7.452-453, 21.446-447; Pind. Ol. 8.31-46; Apollod. 2.5.9"
+     }
+    ]
+   },
+   {
+    "id": "horses-of-tros",
+    "name": "The immortal horses of Tros",
+    "kind": "object",
+    "role": "the divine horses Zeus had given Tros for Ganymede, inherited by Laomedon and twice made the stake of a broken oath — to the gods, then to Heracles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 5.640-651; Apollod. 2.5.9"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_priam",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.236-237; Apollod. 3.12.3"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_tithonus",
+    "era": "pre-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.236-237; Apollod. 3.12.3-4"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_tithonus — reciprocal needed."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 5.638-651, 6.23-24, 7.452-453, 20.236-237, 21.441-457; Apollod. 2.5.9, 2.6.4, 3.12.3; Hyg. Fab. 89; Ov. Met. 11.194-220"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Demigod by descent — son of Ilus, king of Troy, the proverbial oath-breaker. Apollo and Poseidon built the walls of Troy for him in a year of servitude; he cheated them of their wage and was punished with plague and a sea-monster, then cheated Heracles of the immortal horses promised for saving Hesione. Heracles sacked Troy and killed him with all his sons but the ransomed Podarces, who became Priam. Father of Priam, Tithonus, Hesione, and Hicetaon."
+ },
+ {
+  "id": "greek_priam",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Priam",
+   "alt": [
+    "Priamos",
+    "Podarces"
+   ],
+   "transliterations": {
+    "greek": "Πρίαμος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_laomedon"
+  ],
+  "parentRoles": {
+   "greek_laomedon": "paternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "ransom-and-renaming-from-Podarces",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.4"
+     }
+    ],
+    "notes": "Born Podarces, the only son of Laomedon spared when Heracles sacked Troy; ransomed by his sister Hesione with her veil, whence (by folk-etymology, priamai 'to buy') the name Priam."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "kingship-of-Troy-in-the-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.788-806, 3.146-160; Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Aged king of Troy through the ten-year war; father by Hecuba and other wives of fifty sons and many daughters; presides over the city from the Scaean Gate."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "ransoming-of-Hector's-body",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 24.469-676"
+     }
+    ],
+    "notes": "Went by night, guided by Hermes, to Achilles' tent to ransom the body of Hector — the emotional climax of the Iliad."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "death-at-the-altar-in-the-sack-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.21; Verg. Aen. 2.506-558"
+     }
+    ],
+    "notes": "Cut down at the altar of Zeus Herkeios by Neoptolemus (Pyrrhus) during the fall of the city."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.788-806, 24"
+     }
+    ]
+   },
+   {
+    "sphereId": "supplication",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 24.477-512 — the supplication of Achilles"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "altar-of-zeus-herkeios",
+    "name": "The altar of Zeus Herkeios",
+    "kind": "structure",
+    "role": "the household altar in Priam's courtyard where he took refuge and was slain by Neoptolemus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 2.512-558; Apollod. Epit. 5.21"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_hecuba",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.79-89; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_hector",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.242-250, 22.405-428; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_paris",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 3.146-160, 24.248-251; Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_paris — parentage/reciprocal update needed."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_cassandra",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 24.699-700; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_helenus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.76, 24.249; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_deiphobus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.227-247, 24.251; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_creusa_troy",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Verg. Aen. 2.562, 2.738-794"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_polyxena",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.23; Eur. Hec. 40-44, 521-582"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_troilus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 24.257; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesione",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hicetaon",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2-24 (passim, esp. 3, 22, 24); Apollod. 3.12.5, Epit. 5.21; Eur. Tro., Hec.; Verg. Aen. 2.506-558; Hyg. Fab. 90"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20.237; Apollod. 2.6.4, 3.12.3"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion (far down the Dardanid line, his divine blood much diluted) — the aged king of Troy through the Trojan War, son of Laomedon, born Podarces and ransomed/renamed by his sister Hesione. Father by Hecuba and other wives of fifty sons and many daughters, among them Hector, Paris, Deiphobus, Helenus, Cassandra, Creusa, Polyxena, and Troilus. His night journey to ransom Hector's body from Achilles is the climax of the Iliad; he was slain at the altar of Zeus Herkeios by Neoptolemus when Troy fell."
+ },
+ {
+  "id": "greek_hecuba",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hecuba",
+   "alt": [
+    "Hecabe",
+    "Hekabe"
+   ],
+   "transliterations": {
+    "greek": "Ἑκάβη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "transformed",
+  "parentIds": [],
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "queenship-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.293-296, 22.79-89; Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Daughter of Dymas (or, some say, of Cisseus); chief wife of Priam and queen of Troy; mother of Hector, Paris, and most of the principal Trojan princes and princesses."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-dream-of-the-firebrand",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Eur. Tro. 919-922; Hyg. Fab. 91"
+     }
+    ],
+    "notes": "Pregnant with Paris, dreamed she bore a flaming torch that burned the city; the seers bade the child be exposed."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "captivity-and-the-revenge-on-Polymestor",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 1132-1295; Apollod. Epit. 5.23"
+     }
+    ],
+    "notes": "Enslaved at Troy's fall; learning that the Thracian Polymestor had murdered her last son Polydorus, she blinded him and killed his sons."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "transformed",
+    "era": "post-trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "metamorphosis-into-a-dog",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 1259-1273; Ov. Met. 13.565-575"
+     }
+    ],
+    "notes": "Foretold (and in Ovid enacted) to be transmuted into a dog with fiery eyes; the headland Cynossema ('the bitch's tomb') marked the place."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.293-296, 22.79-89"
+     }
+    ]
+   },
+   {
+    "sphereId": "maternal-grief",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.79-89, 24.747-760; Eur. Tro., Hec. — the archetype of the bereaved mother"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_priam",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.79-89; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_hector",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.293-296, 22.79-89, 24.747-760; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_paris",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Eur. Tro. 919-922"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_paris — parentage/reciprocal update needed."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_cassandra",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Eur. Tro. 41-44"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_helenus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_deiphobus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_creusa_troy",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_polyxena",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 40-44; Apollod. Epit. 5.23"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_troilus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.293-296, 16.718, 22.79-89, 24.193-227, 747-760; Apollod. 3.12.5, Epit. 5.23; Eur. Tro., Hec.; Ov. Met. 13.399-575"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal — daughter of the Phrygian Dymas (or of Cisseus), chief wife of Priam and queen of Troy; the great tragic mother of Greek myth. Bore Priam most of his principal children — Hector, Paris, Deiphobus, Helenus, Cassandra, Creusa, Polyxena, Troilus, Polydorus, Laodice. Her firebrand-dream foretold Troy's ruin through Paris. Enslaved at the city's fall, she avenged Polydorus by blinding Polymestor, and was finally transformed into a dog at Cynossema (Euripides; Ovid)."
+ },
+ {
+  "id": "greek_hector",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hector",
+   "alt": [
+    "Hektor",
+    "tamer of horses"
+   ],
+   "transliterations": {
+    "greek": "Ἕκτωρ"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_priam",
+   "greek_hecuba"
+  ],
+  "parentRoles": {
+   "greek_priam": "paternal",
+   "greek_hecuba": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "epithets": [
+   {
+    "original": "κορυθαίολος",
+    "language": "greek",
+    "transliteration": "koruthaiolos",
+    "contextTag": "standing-epithet",
+    "notes": "Of-the-glancing-helm / of-the-flashing-helmet — Homer's recurring epithet for Hector.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.263, 6.359, 6.440, 22.232 (passim)"
+     }
+    ]
+   },
+   {
+    "original": "ἱππόδαμος",
+    "language": "greek",
+    "transliteration": "hippodamos",
+    "contextTag": "standing-epithet",
+    "notes": "Tamer of horses; the epithet on which the Iliad closes.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 24.804 (the final line); 7.38"
+     }
+    ]
+   }
+  ],
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "championship-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6, 7.1-91"
+     }
+    ],
+    "notes": "Eldest son of Priam and Hecuba, heir to Troy and its greatest warrior and defender; husband of Andromache, father of Astyanax. The farewell on the wall (Il. 6) is the poem's domestic heart."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "aristeia-and-the-slaying-of-Patroclus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 8, 15-16 (esp. 16.818-857)"
+     }
+    ],
+    "notes": "Drove the Achaeans back to their ships and fired them; slew Patroclus (with Apollo's and Euphorbus's aid) and stripped Achilles' armour from the body."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "death-by-Achilles-and-the-dragging",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.247-404"
+     }
+    ],
+    "notes": "Killed by Achilles before the Scaean Gate to avenge Patroclus; his corpse dragged behind Achilles' chariot round the walls, and ransomed at last by Priam."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. passim — the bulwark of Troy"
+     }
+    ]
+   },
+   {
+    "sphereId": "martial-excellence",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 7, 15-16, 22"
+     }
+    ]
+   },
+   {
+    "sphereId": "civic-defense",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.440-465, 22.99-130 — the defender of city, parents, wife and child"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "supreme-trojan-prowess",
+    "name": "Foremost martial prowess among the Trojans",
+    "inheritability": "partial",
+    "scopeTags": [
+     "combat"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 7, 16.818-857, 22"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "helm-of-hector",
+    "name": "Hector's bronze helm",
+    "kind": "armor",
+    "role": "the gleaming, horse-crested helmet (whence koruthaiolos); its nodding plume frightened the infant Astyanax on the wall in Iliad 6",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.466-473, 22.314-316"
+     }
+    ]
+   },
+   {
+    "id": "armour-of-achilles-captured",
+    "name": "The captured armour of Achilles",
+    "kind": "armor",
+    "role": "the divine arms Hector stripped from the slain Patroclus and wore until his death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 17.125, 17.192-214, 22.322-323"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_andromache",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.390-502, 22.437-515, 24.723-746"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_astyanax",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.399-403, 466-481, 22.500-507"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_paris",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 3.38-57, 6.280-285, 24.248-251"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_paris — reciprocal sibling needed on greek_paris."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_cassandra",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 24.699-706; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_helenus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.76-101; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_deiphobus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.226-247; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_troilus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_polyxena",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Eur. Hec."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_creusa_troy",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_achilles",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.247-404"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_achilles — reciprocal enemy + killer-of needed (Achilles is killer-of Hector)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_polydorus_troy",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2-24 (passim, esp. 6, 7, 16, 22, 24); Apollod. 3.12.5, Epit. 4-5; Eur. Tro., Andr.; Verg. Aen. 1.483-487, 2.270-297"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.242-250, 22.79-89; Apollod. 3.12.5"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion (the divine Dardanid blood much diluted by Priam's generation) — eldest son of Priam and Hecuba, heir and great defender of Troy, the noblest of the Trojans and the tragic counterweight to Achilles. Husband of Andromache and father of Astyanax; the wall-farewell of Iliad 6 is the poem's domestic heart. He killed Patroclus and took Achilles' armour, and was himself killed by Achilles before the Scaean Gate, his body dragged round the walls and ransomed by Priam in Iliad 24. The existing figure greek_achilles is his slayer (see UPDATE-NEEDED)."
+ },
+ {
+  "id": "greek_andromache",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Andromache",
+   "alt": [
+    "Andromakhe"
+   ],
+   "transliterations": {
+    "greek": "Ἀνδρομάχη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "marriage-to-Hector",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.390-502"
+     }
+    ],
+    "notes": "Daughter of Eetion, king of Cilician Thebe (whose house Achilles had destroyed), wife of Hector and mother of Astyanax; the wall-farewell scene defines her."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "mourning-of-Hector",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.437-515, 24.723-745"
+     }
+    ],
+    "notes": "Learns of Hector's death and leads the lament over his body — foreseeing the slavery awaiting her and the doom of their child."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "captivity-as-the-slave-and-concubine-of-Neoptolemus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Tro. 568-779, Andr. 1-55; Apollod. Epit. 5.23-25, 6.12"
+     }
+    ],
+    "notes": "Allotted to Neoptolemus; bore him Molossus and others; later given to the Trojan seer Helenus, with whom she ruled in Epirus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wifely-devotion",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.390-502 — the model of the loving wife"
+     }
+    ]
+   },
+   {
+    "sphereId": "maternal-grief",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.437-515, 24.723-745; Eur. Tro., Andr."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_hector",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.390-502, 24.723-745"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_astyanax",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.399-403, 22.500-507"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_helenus",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 6.12-13; Verg. Aen. 3.294-355"
+     }
+    ],
+    "notes": "After Neoptolemus's death she married the captive Trojan seer Helenus and reigned with him in Epirus; reciprocal spouse present on greek_helenus."
+   },
+   {
+    "kind": "lover",
+    "personId": "greek_neoptolemus",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.390-502, 22.437-515, 24.723-745; Eur. Tro., Andr.; Apollod. Epit. 5.23, 6.12-13; Verg. Aen. 3.294-355"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal — daughter of Eetion king of Cilician Thebe, wife of Hector and mother of Astyanax; the archetype of the devoted wife. Her farewell with Hector at the Scaean Gate (Iliad 6) and her lament over his body (Iliad 22, 24) are among the most famous scenes in Homer. Enslaved at Troy's fall to Neoptolemus, later wife of the seer Helenus and queen in Epirus — the post-war survivor of the Trojan royal women."
+ },
+ {
+  "id": "greek_astyanax",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Astyanax",
+   "alt": [
+    "Scamandrius",
+    "Skamandrios"
+   ],
+   "transliterations": {
+    "greek": "Ἀστυάναξ"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_hector",
+   "greek_andromache"
+  ],
+  "parentRoles": {
+   "greek_hector": "paternal",
+   "greek_andromache": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "epithets": [
+   {
+    "original": "Ἀστυάναξ",
+    "language": "greek",
+    "transliteration": "Astyanax",
+    "contextTag": "by-name",
+    "notes": "'Lord of the city' — the name the Trojans gave Hector's son because Hector alone guarded Ilios; his father called him Scamandrius.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.402-403, 22.506-507"
+     }
+    ]
+   }
+  ],
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "infancy-on-the-walls-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.399-403, 466-481"
+     }
+    ],
+    "notes": "Infant son of Hector and Andromache, frightened on the wall by the nodding plume of his father's helm; Hector's prayer over him is among the poem's tenderest moments."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "dead",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "death-thrown-from-the-walls",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.23; Eur. Tro. 709-789, 1118-1250; Verg. Aen. 2 (alluded), Il. Parv. fr."
+     }
+    ],
+    "notes": "At Troy's fall the victors — Neoptolemus, or by the Greeks' decree on Odysseus's counsel — cast the child from the city walls so no avenger of Priam's line should grow up."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "dynastic-doom",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Tro. 709-789 — the last heir of Troy, killed to end the line"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "externalRef": {
+     "name": "(no attested siblings — Hector and Andromache's only child)",
+     "tradition": "Greek"
+    },
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.399-403"
+     }
+    ],
+    "notes": "Sole child; no sibling relation — externalRef placeholder for completeness only."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.399-403, 466-481, 22.500-507, 24.726-738; Apollod. Epit. 5.23; Eur. Tro. 709-789, 1118-1250"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.399-403, 22.500-507"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal — infant son of Hector and Andromache, called Astyanax ('lord of the city') by the Trojans and Scamandrius by his father. The baby frightened by Hector's helmet-plume in Iliad 6; at the fall of Troy he was thrown from the walls so that no heir of Priam's house should survive to avenge it — the extinction of the male Dardanid line of Ilion (the junior, Aeneadan, branch alone continuing)."
+ },
+ {
+  "id": "greek_cassandra",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Cassandra",
+   "alt": [
+    "Kassandra",
+    "Alexandra"
+   ],
+   "transliterations": {
+    "greek": "Κασσάνδρα"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_priam",
+   "greek_hecuba"
+  ],
+  "parentRoles": {
+   "greek_priam": "paternal",
+   "greek_hecuba": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "the-gift-and-curse-of-prophecy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Aesch. Ag. 1202-1212; Hyg. Fab. 93"
+     }
+    ],
+    "notes": "Daughter of Priam and Hecuba; Apollo gave her true prophecy to win her love, and when she refused him, cursed her so that none would ever believe her."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "unheeded-warnings",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 2.246-247; Apollod. Epit. 5.17"
+     }
+    ],
+    "notes": "Foretold the doom in the wooden horse and the fall of the city, and was disbelieved — the tragic core of her myth."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "the-sack-the-altar-and-the-lesser-Ajax",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.22; Verg. Aen. 2.403-406"
+     }
+    ],
+    "notes": "Dragged from the Palladium / altar of Athena and violated by Ajax the Lesser at the city's fall — the sacrilege that drew Athena's wrath on the Greek return."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "post-trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "captivity-and-murder-at-Mycenae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 11.421-423; Aesch. Ag. 1035-1330; Apollod. Epit. 6.23"
+     }
+    ],
+    "notes": "Taken as Agamemnon's war-prize and concubine; murdered with him by Clytemnestra at Mycenae."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1072-1330; Apollod. 3.12.5"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "true-but-disbelieved-prophecy",
+    "name": "True prophecy fated never to be believed",
+    "inheritability": "none",
+    "scopeTags": [
+     "knowledge",
+     "prophecy"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Aesch. Ag. 1202-1212"
+     }
+    ],
+    "notes": "Apollo's double gift-and-curse — accurate foresight stripped of all persuasive force; a conferred (non-heritable) faculty."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hector",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Hom. Il. 24.699-706"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_helenus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Her twin in some traditions; both received prophecy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_polyxena",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Eur. Hec."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_paris",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_paris — reciprocal sibling needed on greek_paris."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 24.699-706; Hom. Od. 11.421-423; Aesch. Ag. 1035-1330; Apollod. 3.12.5, Epit. 5.17-22, 6.23; Eur. Tro.; Verg. Aen. 2.246-247, 403-406; Hyg. Fab. 93"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion — daughter of Priam and Hecuba, the prophetess fated to speak truth and never be believed (Apollo's gift-and-curse). She foresaw the fall of Troy and the doom of the wooden horse in vain; at the sack she was torn from Athena's image and violated by Ajax the Lesser, and was finally killed beside Agamemnon — her captor — by Clytemnestra at Mycenae. The archetype of the unheeded seer."
+ },
+ {
+  "id": "greek_helenus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Helenus",
+   "alt": [
+    "Helenos",
+    "Helenus the seer"
+   ],
+   "transliterations": {
+    "greek": "Ἕλενος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_priam",
+   "greek_hecuba"
+  ],
+  "parentRoles": {
+   "greek_priam": "paternal",
+   "greek_hecuba": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "seer-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.76-101, 7.44-54; Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Son of Priam and Hecuba, the best of the augurs among the Trojans (and Cassandra's twin in some accounts); advised Hector in the field."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "capture-and-the-conditions-for-Troy's-fall",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.9-10; Soph. Phil.; Verg. Aen. 2 (alluded)"
+     }
+    ],
+    "notes": "Captured by Odysseus (or coming over willingly after a quarrel over Helen), he revealed the prophecies on which Troy's capture depended — the bow of Heracles, Neoptolemus, and the theft of the Palladium."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "post-trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "kingship-in-Epirus-with-Andromache",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 6.12-13; Verg. Aen. 3.294-505"
+     }
+    ],
+    "notes": "Survived the war; took Andromache to wife and ruled a Trojan settlement in Epirus, where he prophesied to Aeneas on his wanderings."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.76; Apollod. Epit. 5.9-10"
+     }
+    ]
+   },
+   {
+    "sphereId": "augury",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.76 — oionopolon ocharistos, far the best of augurs"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "augury-and-prophecy",
+    "name": "Augury and true prophecy (believed)",
+    "inheritability": "none",
+    "scopeTags": [
+     "knowledge",
+     "prophecy"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.76; Apollod. Epit. 5.9-10; Verg. Aen. 3.358-462"
+     }
+    ],
+    "notes": "Unlike his sister Cassandra, Helenus's prophecy was credited; he becomes Aeneas's prophetic guide in the Aeneid."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_andromache",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 6.12-13; Verg. Aen. 3.294-355"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hector",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.76-101; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_cassandra",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Twin in some traditions."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_deiphobus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_paris",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_paris — reciprocal sibling needed on greek_paris."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.76-101, 7.44-54, 12.94-95, 13.576-600; Apollod. 3.12.5, Epit. 5.9-10, 6.12-13; Soph. Phil.; Verg. Aen. 3.294-505"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion — son of Priam and Hecuba, the foremost seer of the Trojans (Cassandra's twin in some accounts), but, unlike her, believed. He counselled Hector, and after his capture revealed the conditions for Troy's fall. He alone of Priam's sons prospered: he married the widowed Andromache and founded a 'little Troy' in Epirus, prophesying to Aeneas in the Aeneid. A rare Dardanid survivor of the catastrophe."
+ },
+ {
+  "id": "greek_deiphobus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Deiphobus",
+   "alt": [
+    "Deiphobos"
+   ],
+   "transliterations": {
+    "greek": "Δηίφοβος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_priam",
+   "greek_hecuba"
+  ],
+  "parentRoles": {
+   "greek_priam": "paternal",
+   "greek_hecuba": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "warrior-prince-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 12.94, 13.156-164, 402-539; Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Son of Priam and Hecuba; after Hector the most valiant of the Trojan princes. Athena took his shape to lure Hector to his death in Iliad 22."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Helen-after-Paris's-death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.9; Hom. Od. 4.276, 8.517-520"
+     }
+    ],
+    "notes": "Took Helen to wife after Paris was killed, prevailing over his brother Helenus."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "death-in-the-sack-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 8.517-520; Verg. Aen. 6.494-534"
+     }
+    ],
+    "notes": "Killed and mutilated at the fall of Troy — by Menelaus, with Helen's connivance (Odyssey, Aeneid); Aeneas meets his maimed shade in the underworld."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 13.156-164, 402-539"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hector",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.226-247; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_helenus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.9"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_paris",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_paris — reciprocal sibling needed on greek_paris."
+   },
+   {
+    "kind": "lover",
+    "personId": "greek_helen",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.9; Hom. Od. 4.276"
+     }
+    ],
+    "notes": "Married Helen after Paris's death; wires to the existing figure greek_helen — reciprocal lover needed there."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 12.94, 13.156-539, 22.226-247; Hom. Od. 4.276, 8.517-520; Apollod. 3.12.5, Epit. 5.9; Verg. Aen. 6.494-534"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion — son of Priam and Hecuba, after Hector the bravest of the Trojan princes; Athena assumed his likeness to deceive Hector into facing Achilles (Iliad 22). He married Helen after Paris fell, and was killed and mutilated at the sack of Troy by Menelaus — Aeneas meets his disfigured shade in the underworld (Aeneid 6)."
+ },
+ {
+  "id": "greek_creusa_troy",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Creusa",
+   "alt": [
+    "Creusa of Troy",
+    "Kreousa",
+    "Creusa daughter of Priam"
+   ],
+   "transliterations": {
+    "greek": "Κρέουσα"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "transformed",
+  "parentIds": [
+   "greek_priam",
+   "greek_hecuba"
+  ],
+  "parentRoles": {
+   "greek_priam": "paternal",
+   "greek_hecuba": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "marriage-to-Aeneas",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Verg. Aen. 2.562, 2.651"
+     }
+    ],
+    "notes": "Daughter of Priam and Hecuba, first wife of Aeneas, mother of Ascanius (Iulus)."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "transformed",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "loss-and-apparition-in-the-flight-from-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 2.736-794"
+     }
+    ],
+    "notes": "Lost in the chaos of the burning city as Aeneas led his family out; her shade appeared to him to foretell his Italian destiny and a royal bride to come — taken up, in Virgil, by the Great Mother."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "dynastic-motherhood",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 2.563-566 — mother of Ascanius, the Iulian ancestor"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_aeneas",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 2.562-795; Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_aeneas, which already carries an externalRef spouse to Creusa — reciprocal spouse (now resolvable to greek_creusa_troy) needed there."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_ascanius",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 2.563-566; Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_apollod_ascanius, which carries an externalRef mother to Creusa — that ref is now resolvable to greek_creusa_troy (UPDATE-NEEDED)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hector",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_paris",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_paris — reciprocal sibling needed on greek_paris."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Verg. Aen. 2.562, 651, 736-794; Paus. 10.26.1; Dion. Hal. 1.46-47"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion — daughter of Priam and Hecuba, first wife of Aeneas and mother of Ascanius/Iulus; the Creusa of Troy (distinct from the registered greek_creusa_athens, mother of Ion). Lost in the flight from burning Troy, her shade appeared to Aeneas foretelling his Italian destiny (Aeneid 2). She is the maternal link in the Iulian descent: her son Ascanius (greek_apollod_ascanius) is the ancestor claimed by the gens Iulia."
+ },
+ {
+  "id": "greek_polyxena",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Polyxena",
+   "alt": [
+    "Polyxene"
+   ],
+   "transliterations": {
+    "greek": "Πολυξένη"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_priam",
+   "greek_hecuba"
+  ],
+  "parentRoles": {
+   "greek_priam": "paternal",
+   "greek_hecuba": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "youngest-daughter-of-Priam",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 40-44; Apollod. Epit. 5.23"
+     }
+    ],
+    "notes": "Daughter of Priam and Hecuba; in the post-Homeric tradition the object of Achilles' love, and linked to the ambush in which he was killed at the temple of Thymbraean Apollo."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "sacrifice-at-the-tomb-of-Achilles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 218-628; Apollod. Epit. 5.23; Ov. Met. 13.439-480"
+     }
+    ],
+    "notes": "After Troy's fall, sacrificed by Neoptolemus on his father Achilles' tomb to appease the hero's demanding shade — meeting death with famous, willing dignity."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sacrificial-victimhood",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 518-582 — the noble willing victim"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hector",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Eur. Hec."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_cassandra",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec.; Apollod. 3.12.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_paris",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_paris — reciprocal sibling needed on greek_paris."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_polydorus_troy",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 40-628, Tro.; Apollod. Epit. 5.23; Ov. Met. 13.439-575; Quint. Smyrn. 14.179-328"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion — youngest daughter of Priam and Hecuba; in post-Homeric legend beloved of Achilles and connected with his death-ambush. After Troy fell she was sacrificed by Neoptolemus on Achilles' tomb to lay the hero's shade, going to her death with a courage that becomes the moral centre of Euripides' Hecuba and Trojan Women."
+ },
+ {
+  "id": "greek_troilus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Troilus",
+   "alt": [
+    "Troilos"
+   ],
+   "transliterations": {
+    "greek": "Τρωΐλος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_priam",
+   "greek_hecuba"
+  ],
+  "parentRoles": {
+   "greek_priam": "paternal",
+   "greek_hecuba": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "youth-of-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 24.257; Apollod. 3.12.5"
+     }
+    ],
+    "notes": "Young son of Priam (in some accounts begotten on Hecuba by Apollo); his life was bound by prophecy to the fate of Troy — were he to reach twenty, the city could not fall."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "killed-by-Achilles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 3.32; Verg. Aen. 1.474-478; Cypria (arg.)"
+     }
+    ],
+    "notes": "Ambushed and killed by Achilles early in the war (at the spring, or the sanctuary of Thymbraean Apollo) — a famous scene in archaic art; Virgil shows him dragged behind his chariot."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "doomed-youth",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 1.474-478 — infelix puer, the ill-starred boy slain by Achilles"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hector",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Hom. Il. 24.257"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_paris",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5; Hom. Il. 24.257"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_paris — reciprocal sibling needed on greek_paris."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_achilles",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 3.32; Verg. Aen. 1.474-478"
+     }
+    ],
+    "notes": "Killed by Achilles; wires to the existing figure greek_achilles — reciprocal enemy/killer-of optional (Achilles already an existing figure)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 24.257; Apollod. 3.12.5, Epit. 3.32; Verg. Aen. 1.474-478; Cypria (Procl. arg.)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion — young son of Priam and Hecuba (begotten by Apollo in one tradition), whose survival to manhood was prophesied to guarantee Troy's survival. Achilles killed him early in the war in an ambush at the spring or the precinct of Thymbraean Apollo — a scene hugely popular in archaic vase-painting and alluded to in the Aeneid. (His medieval romance with Cressida is a much later, non-classical accretion, excluded here.)"
+ }
+]
+```

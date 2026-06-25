@@ -1,0 +1,475 @@
+Verify-first mythology authoring — STRICT ALPHABETICAL family sweep, Batch 6.
+Scope processed IN ORDER (50 entities): buryat_esege_malan, buryat_khan_khormusta,
+buryat_manzan_gurme, buryat_morgon_kara, canaanite_anat, canaanite_aqhat,
+canaanite_athirat, canaanite_athtart, canaanite_baal, canaanite_dagan, canaanite_daniel,
+canaanite_el, canaanite_kirta, canaanite_kothar, canaanite_kotharot, canaanite_mot,
+canaanite_rephaim, canaanite_resheph, canaanite_shapshu, canaanite_yam, canaanite_yarikh,
+cantabrian_candamius, cantabrian_erudinus, cantabrian_mater_deva, celtiberian_cariociecus,
+celtiberian_lugus, celtiberian_neto, chaga_murile, chaga_ruwa, chaga_warimu,
+chamorro_chaifi, chamorro_fuuna, chamorro_puntan, chamorro_taotaomona,
+cherokee_asgaya_gigagei, cherokee_kanati, cherokee_nunnehi, cherokee_selu,
+cherokee_thunder_boys, cherokee_uktena, cherokee_unelanuhi, cherokee_unetlanvhi,
+chewa_chisumphi, chewa_chiuta, chewa_kasiya_maliro, chewa_mbona, chewa_mlauli,
+chewa_mphambe, chewa_salima, cheyenne_erect_horns.
+
+Each entity read semantically for parent / sibling / spouse / child / named-kin. Most of the
+batch was already correctly wired or consists of standalone deities, aspect-names of a high-god,
+or unnamed collectives (taotaomona, nunnehi, warimu, kotharot, rephaim — left as-is). Four
+genuinely-attested but unentered kin are authored below, each carrying its kin-edge to the
+existing batch figure with a RECIPROCAL-NEEDED note for the maintainer to mirror:
+
+  - canaanite_nikkal  : orchard/fertility bride of the moon-god (spouse -> canaanite_yarikh; KTU 1.24)
+  - canaanite_paghat  : sister of Aqhat and avenger, daughter of Daniel (parent canaanite_daniel; sibling -> canaanite_aqhat; KTU 1.19)
+  - cherokee_moon     : the Moon, brother of the female Sun (sibling -> cherokee_unelanuhi; Mooney 1900)
+  - buryat_geser      : Geser Khan, the champion son of Khan Khormusta (parent buryat_khan_khormusta; Abai Geser)
+
+```json
+[
+  {
+    "id": "canaanite_nikkal",
+    "name": {
+      "primary": "Nikkal",
+      "alt": ["Nikkal-wa-Ib", "Nikkalu", "Nkl", "Great Lady and Fruitful"],
+      "transliterations": { "ugaritic": "nkl" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite",
+    "primaryTradition": "Canaanite",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "orchards-and-fruit",
+        "contextTag": "lifelong",
+        "term": { "value": "nkl", "script": "Ugaritic", "rom": "Nikkalu" },
+        "sources": [
+          { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 (the orchard-bride)" }
+        ]
+      },
+      {
+        "sphereId": "marriage-conception",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 (wedding hymn invoking the Kotharot)" }
+        ]
+      },
+      {
+        "sphereId": "fertility-and-marriage",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "del Olmo Lete, Canaanite Religion According to the Liturgical Texts of Ugarit (1999), on Nikkal-wa-Ib as bride and fruitfulness goddess" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bride-of-the-moon",
+        "name": "Wed the moon-god Yarikh for a vast bride-price",
+        "term": { "value": "trh", "script": "Ugaritic", "rom": "tarrihu" },
+        "inheritability": "none",
+        "notes": "courted through the broker Hiribi, king of summer; a thousand of silver and ten thousand of gold",
+        "sources": [
+          { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 17-37" }
+        ],
+        "scopeTags": ["marriage"]
+      },
+      {
+        "id": "bear-fruit-of-the-orchard",
+        "name": "Quicken the orchard and bear fruit as the Fruitful Lady",
+        "term": { "value": "ib", "script": "Ugaritic", "rom": "Ib (Fruit)" },
+        "inheritability": "none",
+        "notes": "the second element of Nikkal-wa-Ib glosses as fruit/blossom",
+        "sources": [
+          { "kind": "secondary", "reference": "del Olmo Lete & Sanmartin, A Dictionary of the Ugaritic Language (DULAT), s.v. nkl" }
+        ],
+        "scopeTags": ["fertility"]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal (KTU 1.24)" },
+          { "kind": "primary", "reference": "Ugaritic god-list KTU 1.118 (RS 20.024); offering lists" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Nikkal (Nikkal-wa-Ib, Great Lady and Fruitful) is the orchard and fertility goddess who weds the moon-god Yarikh in KTU 1.24; her name descends from Sumerian Ningal, the wife of the moon-god Nanna/Sin, via Akkadian and Hurrian mediation.",
+        "citations": [
+          { "kind": "secondary", "reference": "del Olmo Lete, Canaanite Religion According to the Liturgical Texts of Ugarit (1999)" },
+          { "kind": "secondary", "reference": "Pardee, Ritual and Cult at Ugarit (2002)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Orchard and fruitfulness goddess Nikkal-wa-Ib, the Fruitful Great Lady; bride of the moon-god Yarikh in the Ugaritic wedding hymn KTU 1.24, in which the courtship is conducted through Hiribi, the king of summer (sometimes taken as her father, though modern restorations leave that kin-tie uncertain, so no parent is wired here). Her theonym continues Sumerian Ningal (nin-gal, the great lady), the moon-god Nanna-Sin consort, transmitted through Akkadian and Hurrian channels. Authored as the moon-god Yarikh spouse; her spouse-edge is recorded here for the maintainer to mirror on canaanite_yarikh.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Semitic, Ugaritic/Northwest Semitic); theonym ultimately Sumerian via Akkadian-Hurrian transmission",
+      "etymology": "Ugaritic Nikkal (nkl), fuller form Nikkal-wa-Ib, derives from Sumerian Ningal (nin-gal, the great lady), the consort of the moon-god Nanna-Sin. The name passed through Akkadian and Hurrian into Ugaritic, the second element Ib being read as fruit/blossom, hence the gloss Great Lady and Fruitful. As Ningal was the moon-god wife in Mesopotamia, so Nikkal is the bride of the Ugaritic moon-god Yarikh.",
+      "sources": [
+        { "kind": "secondary", "reference": "del Olmo Lete & Sanmartin, A Dictionary of the Ugaritic Language (DULAT), s.v. nkl" },
+        { "kind": "secondary", "reference": "Pardee, Ritual and Cult at Ugarit (2002), on Nikkal and the Hurrian background of KTU 1.24" }
+      ]
+    },
+    "epithets": [
+      {
+        "epithetId": "nkl w ib",
+        "original": "nkl w ib",
+        "language": "ugaritic",
+        "transliteration": "Nikkal-wa-Ib",
+        "contextTag": "cult",
+        "notes": "Great Lady and Fruitful, the doubled name of the orchard-bride of the moon-god",
+        "sources": [
+          { "kind": "primary", "reference": "KTU 1.24.1, 17 (Nikkal hymn)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "canaanite_yarikh",
+        "sources": [
+          { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 17-37 (the moon-god weds Nikkal)" }
+        ],
+        "notes": "RECIPROCAL-NEEDED — Nikkal is the orchard-goddess bride of the moon-god Yarikh in KTU 1.24, whose own prose already records that he weds the orchard-goddess Nikkal; add the reciprocal spouse-edge on canaanite_yarikh."
+      }
+    ],
+    "schemaVersion": 2
+  },
+  {
+    "id": "canaanite_paghat",
+    "name": {
+      "primary": "Paghat",
+      "alt": ["Pughat", "Pugat", "Pgt", "the maiden who knew the course of the stars"],
+      "transliterations": { "ugaritic": "pgt" }
+    },
+    "type": "quartigod",
+    "origin": "canon",
+    "tradition": "Canaanite",
+    "primaryTradition": "Canaanite",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["canaanite_daniel"],
+    "parentRoles": { "canaanite_daniel": "paternal" },
+    "temporal": { "era": "heroic-age" },
+    "domains": [
+      {
+        "sphereId": "vengeance",
+        "contextTag": "lifelong",
+        "term": { "value": "pgt", "script": "Ugaritic", "rom": "Pugatu" },
+        "sources": [
+          { "kind": "primary", "reference": "Aqhat Epic, KTU 1.19 IV (Pughat sets out to avenge her brother)" }
+        ]
+      },
+      {
+        "sphereId": "the-rescue-quest-and-vengeance",
+        "contextTag": "episodic",
+        "sources": [
+          { "kind": "primary", "reference": "Aqhat Epic, KTU 1.19 IV 28-61 (disguised as Anat, she seeks out Yatpan)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "know-the-stars",
+        "name": "Rise early to draw water, brush the dew from the barley, and know the course of the stars",
+        "term": { "value": "ydt hlk kbkbm", "script": "Ugaritic", "rom": "yadaat halaka kabkabima" },
+        "inheritability": "none",
+        "notes": "her recurring honorific formula in the epic",
+        "sources": [
+          { "kind": "primary", "reference": "Aqhat Epic, KTU 1.19 II 1-7 (the thrice-repeated epithet of Pughat)" }
+        ],
+        "scopeTags": ["wisdom"]
+      },
+      {
+        "id": "avenge-in-disguise",
+        "name": "Disguise herself as the goddess Anat to reach and strike her brother killer",
+        "term": { "value": "pgt", "script": "Ugaritic", "rom": "Pugatu" },
+        "inheritability": "none",
+        "notes": "buckles a sword and knife beneath her robes and enters Yatpan camp",
+        "sources": [
+          { "kind": "primary", "reference": "Aqhat Epic, KTU 1.19 IV 28-61 (the tablet breaks before the outcome)" }
+        ],
+        "scopeTags": ["vengeance"]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "paghat-hidden-blade",
+        "kind": "weapon",
+        "name": "Sword and knife hidden in her garments",
+        "term": { "value": "hrb", "script": "Ugaritic", "rom": "harbu" },
+        "role": "wielder",
+        "notes": "concealed beneath her clothing for the vengeance on Yatpan",
+        "sources": [
+          { "kind": "primary", "reference": "Aqhat Epic, KTU 1.19 IV 44-46" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Aqhat Epic (KTU 1.17-1.19)" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Pughat (Paghat) is the daughter of Daniel and sister of Aqhat; after her brother is slain by Anat henchman Yatpan she vows revenge, disguises herself as Anat, and confronts Yatpan, though the epic breaks off before the end.",
+        "citations": [
+          { "kind": "secondary", "reference": "Coogan & Smith, Stories from Ancient Canaan, 2nd ed. (2012), Aqhat" },
+          { "kind": "secondary", "reference": "Wright, Ritual in Narrative: The Dynamics of Feasting, Mourning, and Retaliation Rites in the Ugaritic Tale of Aqhat (2001)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Pughat (Paghat), the wise and dutiful daughter of the sage-king Daniel and sister of the hunter Aqhat. Her standing epithet calls her the one who rises early to draw water, who brushes the dew from the barley, and who knows the course of the stars. Reading the withered vegetation and the vultures over her father house as the signs of her brother murder, she takes up the feud, disguises herself as the goddess Anat, and goes to strike Yatpan, the killer; the clay tablet breaks before the outcome. Typed quartigod to match her brother Aqhat, the mortal child of the deified Rephaim-hero Daniel. Her parent-edge to canaanite_daniel is added here, and her sibling-edge to canaanite_aqhat is recorded for the maintainer to mirror.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Semitic, Ugaritic/Northwest Semitic)",
+      "etymology": "Ugaritic Pgt (vocalized Pugatu or Paghatu), the personal name of the daughter of Daniel in the Aqhat epic; commonly connected with a root for girl/maiden, framing her as the exemplary capable daughter. Mooney-style segmented derivation is not preserved; the name is known from the narrative of KTU 1.17-1.19.",
+      "sources": [
+        { "kind": "secondary", "reference": "del Olmo Lete & Sanmartin, A Dictionary of the Ugaritic Language (DULAT), s.v. pgt" }
+      ]
+    },
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "canaanite_aqhat",
+        "sources": [
+          { "kind": "primary", "reference": "Aqhat Epic, KTU 1.19 (Pughat the sister mourns and avenges Aqhat)" }
+        ],
+        "notes": "RECIPROCAL-NEEDED — Full sibling, both children of the sage-king Daniel; the existing canaanite_aqhat carries the same paternity (canaanite_daniel). Add the reciprocal sibling-edge on canaanite_aqhat."
+      }
+    ],
+    "schemaVersion": 2
+  },
+  {
+    "id": "cherokee_moon",
+    "name": {
+      "primary": "the Moon",
+      "alt": [" Geyaguga ", "Geyaguga", "Nvda Svnoyi Ehi", "the Sun brother"],
+      "transliterations": { "cherokee": "ᏅᏓ (nvda); priestly ᎨᏯᎫᎦ Geʼyaguʼga" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cherokee",
+    "primaryTradition": "Cherokee",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900), The Moon and the Thunders / The Daughter of the Sun" }
+        ]
+      },
+      {
+        "sphereId": "night",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Mooney (1900)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "milder-night-light",
+        "name": "Cross the night sky in the west with mild light that does not make people squint",
+        "inheritability": "none",
+        "notes": "the younger brothers smile at him because his rays are gentle, unlike his sister the Sun",
+        "sources": [
+          { "kind": "primary", "reference": "Mooney (1900), The Daughter of the Sun" }
+        ],
+        "scopeTags": ["celestial"]
+      },
+      {
+        "id": "ash-marked-face",
+        "name": "Bear on his face the ash-marks his sister rubbed on her secret lover",
+        "inheritability": "none",
+        "notes": "the etiology of the markings of the moon; the secret midnight lover proves to be the Moon, the Sun own brother",
+        "sources": [
+          { "kind": "primary", "reference": "Mooney (1900), The Daughter of the Sun (the ash on the lover face)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "In Cherokee myth the Moon is male and is the brother of the female Sun; he lives in the west, is fond of his younger brothers (humankind) because they smile at his mild light, and is revealed as the Sun secret lover when she rubs ashes on his face, accounting for the markings of the moon. Priests called him Geyaguga.",
+        "citations": [
+          { "kind": "primary", "reference": "James Mooney, Myths of the Cherokee (Bureau of American Ethnology, 1900), The Daughter of the Sun and The Moon and the Thunders" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The Moon, a male being in Cherokee myth and the brother of the female Sun (Unelanuhi). He lives in the west and is fond of humankind, his younger brothers, because they smile pleasantly at his mild night-light, whereas they squint and grimace at his fierce sister by day. In The Daughter of the Sun the Sun secret midnight lover, whose face she marks with ashes, proves at the next morning meal to be her own brother the Moon, which is why the moon carries its dark markings. The priestly name recorded by Mooney is Geyaguga, of unknown meaning. Authored as the brother of the Sun; the sibling-edge is recorded here for the maintainer to mirror on cherokee_unelanuhi.",
+    "linguistic": {
+      "languageFamily": "Iroquoian (Cherokee)",
+      "etymology": "The Cherokee word nvda (ᏅᏓ) denotes both sun and moon, distinguished as nvda iga ehi (the nvda that dwells in the day, the Sun) and nvda svnoyi ehi (the nvda that dwells in the night, the Moon). Mooney further records a priestly name for the Moon, Geyaguga (Geʼyaguʼga), whose meaning he states was no longer known. The Moon is a male being and brother to the female Sun.",
+      "sources": [
+        { "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900), notes on the Sun and Moon (Sutalidihi and Geyaguga)" }
+      ]
+    },
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "cherokee_unelanuhi",
+        "sources": [
+          { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900), The Daughter of the Sun (the Moon is the Sun brother)" }
+        ],
+        "notes": "RECIPROCAL-NEEDED — The Moon is the brother of the female Sun Unelanuhi; the existing cherokee_unelanuhi prose already alludes to the Sun household and her brother. Add the reciprocal sibling-edge on cherokee_unelanuhi."
+      }
+    ],
+    "schemaVersion": 2
+  },
+  {
+    "id": "buryat_geser",
+    "name": {
+      "primary": "Geser",
+      "alt": ["Geser Khan", "Abai Geser", "Bukhe Belligte", "Gesar"],
+      "transliterations": { "mong-cyrl": "Гэсэр", "rom": "Geser" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Buryat",
+    "primaryTradition": "Buryat",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["buryat_khan_khormusta"],
+    "parentRoles": { "buryat_khan_khormusta": "paternal" },
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "heroic-champion",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Abai Geser (Buryat epic; ed. A. I. Ulanov, Ulan-Ude, 1960)" }
+        ]
+      },
+      {
+        "sphereId": "monster-slaying",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation (Geser battles the demons born of dismembered Atai Ulan)" }
+        ]
+      },
+      {
+        "sphereId": "otherworld-endowed-hero",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Walther Heissig, The Religions of Mongolia (1980), on Geser as the heaven-sent champion" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heaven-sent-champion",
+        "name": "Descend from the western tengri to be born among humans as their champion",
+        "inheritability": "none",
+        "notes": "the middle son of Khan Khormusta, sent down to repair the ruin worked by the eastern (black) tengri",
+        "sources": [
+          { "kind": "secondary", "reference": "cyberleninka.ru, Buryat Hesariad, on the middle son of Khormusta sent to the middle world" }
+        ],
+        "scopeTags": ["heroism"]
+      },
+      {
+        "id": "slay-the-eastern-demons",
+        "name": "Hunt down and destroy the monsters spawned from dismembered Atai Ulan",
+        "inheritability": "none",
+        "notes": "the demons and beasts of the middle world arose from the scattered body of the eastern khan",
+        "sources": [
+          { "kind": "primary", "reference": "Abai Geser (Buryat epic), the demon-slaying campaigns" }
+        ],
+        "scopeTags": ["monster-slaying"]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "geser-bow",
+        "kind": "weapon",
+        "name": "Hero bow and arms of the heaven-sent champion",
+        "role": "wielder",
+        "notes": "Geser, the celestial warrior, is armed for his war on the demons of the middle world",
+        "sources": [
+          { "kind": "primary", "reference": "Abai Geser (Buryat epic; ed. A. I. Ulanov, Ulan-Ude, 1960)" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Abai Geser (Buryat heroic epic; ed. A. I. Ulanov, Ulan-Ude, 1960)" },
+          { "kind": "secondary", "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Geser Khan is the middle son of Khan Khormusta, chief of the 55 western (white) tengri; after Khormusta defeats and dismembers the eastern khan Atai Ulan, whose body-parts become earthly demons, Geser is sent down from heaven and born among humans to destroy them.",
+        "citations": [
+          { "kind": "secondary", "reference": "Walther Heissig, The Religions of Mongolia (1980)" },
+          { "kind": "secondary", "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Geser Khan, the great hero of the Buryat Abai Geser epic, the celestial-born champion (heavenly name Bukhe Belligte) who is the middle son of Khan Khormusta, chief of the fifty-five western tengri. After Khormusta vanquishes and dismembers the eastern khan Atai Ulan, whose scattered body engenders the demons and monsters of the middle world, the western tengri send Geser down to be born among humans and rid the earth of those evils. Classed demigod, mirroring the Buryat first-shaman culture-hero tier (buryat_morgon_kara), since Geser is a heaven-descended being who lives out a human heroic career. His parent-edge to canaanite-style paternity is added here on buryat_khan_khormusta, whose own entry already names him father of Geser; the reciprocal child-edge is left for the maintainer to mirror.",
+    "linguistic": {
+      "languageFamily": "Mongolic (Buryat); the epic and theonym shared across Mongolic and Tibetan worlds",
+      "etymology": "Buryat Geser (Gesar) is the hero-name of the pan-Inner-Asian Geser/Gesar epic; in the Buryat Tengrist recension he is given the heavenly name Bukhe Belligte (the strong/firm one) before his descent. The name Geser is widely connected to a foreign royal title (compared by some to Caesar/Kesar transmitted eastward), though in Buryat tradition he is fully a son of the sky-god Khormusta. He is born among humans as the divine champion of the western tengri.",
+      "sources": [
+        { "kind": "secondary", "reference": "Walther Heissig, The Religions of Mongolia (1980), on the Geser epic and its heroes" },
+        { "kind": "secondary", "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation" }
+      ]
+    },
+    "epithets": [
+      {
+        "epithetId": "Bukhe Belligte",
+        "original": "Bukhe Belligte",
+        "language": "latin",
+        "transliteration": "Bukhe Belligte",
+        "contextTag": "myth",
+        "notes": "the heavenly name of Geser before his descent to the middle world",
+        "sources": [
+          { "kind": "secondary", "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "descendant of",
+        "personId": "buryat_khan_khormusta",
+        "sources": [
+          { "kind": "secondary", "reference": "cyberleninka.ru, Buryat Hesariad (Geser the middle son of Khan Khormusta)" },
+          { "kind": "primary", "reference": "Abai Geser (Buryat epic; ed. A. I. Ulanov, Ulan-Ude, 1960)" }
+        ],
+        "notes": "RECIPROCAL-NEEDED — Geser is the middle son of Khan Khormusta, chief of the western tengri; the existing buryat_khan_khormusta already carries a faculty sends his son down to earth as a divine champion and names himself father of Geser. The paternal edge is also recorded in parentIds; add the reciprocal ancestor-of / parent acknowledgement on buryat_khan_khormusta."
+      }
+    ],
+    "schemaVersion": 2
+  }
+]
+```
+
+WIRE-EDGES (symmetric -> existing corpus figures, recorded above as RECIPROCAL-NEEDED in the
+relation notes for the maintainer to mirror):
+  - canaanite_nikkal --spouse--> canaanite_yarikh        (existing corpus figure)
+  - canaanite_paghat --sibling--> canaanite_aqhat        (existing corpus figure; also parentId canaanite_daniel, already resolves)
+  - cherokee_moon    --sibling--> cherokee_unelanuhi     (existing corpus figure)
+  - buryat_geser     --descendant of--> buryat_khan_khormusta  (existing corpus figure; also parentId, already resolves)

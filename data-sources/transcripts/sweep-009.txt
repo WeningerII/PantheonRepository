@@ -1,0 +1,821 @@
+Sweep 009 — strict-alphabetical family-completion sweep, batch 9.
+Batch of 50 ids (dogon_ogo … egyptian_ramesses_ii) read IN ORDER, every tradition
+treated as equal. All 50 were already present in the corpus; this sweep is a
+verification-and-wiring pass over the Heliopolitan Ennead, the Theban and Memphite
+triads, and the Ramesside / Thutmosid royal families.
+
+OUTCOME
+
+The Ennead spine (Atum → Shu+Tefnut → Geb+Nut → Osiris/Isis/Set/Nephthys) and the
+Ramesside / Thutmosid royal genealogies are densely and correctly wired by
+parentIds. The Dogon (Amma→Nommo/Ogo/Lebe, the Smith, the Yeban→Andoumboulou),
+Edo (Osanobua→Olokun/Ogiuwu), and Anishinaabe (E-bangishimog→Nanabozho and his
+brothers by Wiininwaa) lines are already complete. No symmetric edge among batch
+figures or to existing corpus figures was found broken by the validator.
+
+TWO genuinely NAMED-BUT-NO-ENTRY attested divine kin were found and are authored
+below. Both are direct kin anchors named inside an existing batch figure:
+
+1. egyptian_mut — the great Theban mother-goddess, consort of Amun and mother of
+   the moon-god Khonsu; second member of the Theban Triad. She is named explicitly
+   and repeatedly inside the existing Khonsu entry ("Theban moon god of healing;
+   son of Amun and Mut"; "third of the Theban triad with Amun and Mut") yet had no
+   entry and was the missing maternal parent of Khonsu. Authored and wired:
+   spouse → egyptian_amun (RECIPROCAL needed on the existing Amun entry), mother-of
+   → egyptian_khonsu (Khonsu's parentIds should add egyptian_mut alongside
+   egyptian_amun).
+
+2. egyptian_nefertem — the lotus-god of Memphis, son of Ptah and Sekhmet and third
+   member of the Memphite Triad. He is named explicitly inside the existing Ptah
+   entry ("Husband of Sekhmet, father of Nefertem") yet had no entry. Authored and
+   wired: parentIds [egyptian_ptah, egyptian_sekhmet]; father → egyptian_ptah,
+   mother → egyptian_sekhmet (both already exist; parent→child is modelled by
+   parentIds in this corpus, so no reciprocal directive is strictly required, but a
+   father-of / mother-of back-edge on Ptah and Sekhmet would complete the triad).
+
+WIRE-EDGES on EXISTING corpus figures (no new entry; recorded for the maintainer to
+apply to app/data.js — the transcript json holds new figures only):
+
+  The Heliopolitan Ennead sibling/parent matrix is incomplete for Osiris and Isis.
+  Set and Nephthys already carry parentIds [egyptian_geb, egyptian_nut] and the
+  Set↔Nephthys sibling pair, but Osiris and Isis have empty parentIds and no sibling
+  edges, although their own prose states the relationships ("brother-husband of
+  Isis ... brother and victim of Set"; "Wife and sister of Osiris"; Nephthys "sister
+  of Isis"). The canonical Ennead (Ennead, s.v.; Britannica; Wikipedia "Nephthys")
+  makes all four full siblings, children of Geb and Nut. Required edges:
+
+    egyptian_osiris   --parentId-->  egyptian_geb
+    egyptian_osiris   --parentId-->  egyptian_nut
+    egyptian_osiris   --sibling-->   egyptian_isis
+    egyptian_osiris   --sibling-->   egyptian_set
+    egyptian_osiris   --sibling-->   egyptian_nephthys
+    egyptian_isis     --parentId-->  egyptian_geb
+    egyptian_isis     --parentId-->  egyptian_nut
+    egyptian_isis     --sibling-->   egyptian_osiris
+    egyptian_isis     --sibling-->   egyptian_set
+    egyptian_isis     --sibling-->   egyptian_nephthys
+    egyptian_set      --sibling-->   egyptian_osiris   (reciprocal of the above)
+    egyptian_set      --sibling-->   egyptian_isis     (reciprocal of the above)
+    egyptian_nephthys --sibling-->   egyptian_osiris   (reciprocal of the above)
+    egyptian_nephthys --sibling-->   egyptian_isis     (reciprocal of the above)
+
+  Theban-triad reciprocal raised by the authored Mut entry:
+    egyptian_amun     --spouse-->    egyptian_mut      (reciprocal of egyptian_mut.spouse)
+    egyptian_khonsu   --parentId-->  egyptian_mut      (Khonsu currently lists only egyptian_amun)
+
+  Memphite-triad parent back-edges raised by the authored Nefertem entry (optional,
+  to mirror the explicit father-of edges used elsewhere in the corpus):
+    egyptian_ptah     --father-of--> egyptian_nefertem
+    egyptian_sekhmet  --mother-of--> egyptian_nefertem
+
+SKIPPED (named in prose but correctly not authored), with reasons:
+
+  - Tutankhamun, Thutmose I / II / III / IV, Kiya, the minor-wife Tiye, Seti I,
+    Ankhesenamun, Senenmut, Amenhotep IV (= Akhenaten pre-name-change): all named in
+    royal prose but deliberately carried as externalRef in the corpus (e.g. Neferure
+    "father → externalRef Thutmose II", Akhenaten "father-of → externalRef
+    Tutankhamun (KV55 DNA)", Pentaweret "mother → externalRef Tiye"). They are also
+    alphabetically out of this a–r batch (T-/K-/S-initial) and belong to later
+    sweeps; materializing them now would be re-authoring outside scope.
+  - dogon_seventh_ancestor (the slain seventh Nommo): mentioned in the dogon_smith
+    entry only as a contrastive DISAMBIGUATION ("Distinct from ... the slain seventh
+    ancestor"), not asserted as kin of any batch figure; no kin edge to wire.
+  - The other three of the four Anishinaabe winds (besides E-bangishimog the West
+    Wind): unnamed-collective in the batch prose; no individual kin named.
+  - greek_memnon, the Greek/Canaanite/etc. interpretatio targets, and Astarte: all
+    already wired (interpretatio/equated-with) or held as externalRef per the
+    registry's deity-as-required-anchor-only principle; not kin to author.
+
+```json
+[
+ {
+  "id": "egyptian_mut",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Mut",
+   "alt": [
+    "Maut",
+    "Mout",
+    "Mut-Wadjet-Bastet"
+   ],
+   "transliterations": {
+    "egyptian": "mwt",
+    "egyptian-hieroglyphic": "𓏏𓄿𓅐",
+    "greek": "Μούθ",
+    "akkadian": ""
+   }
+  },
+  "type": "deity",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "female",
+  "vitalStatus": null,
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "middle-kingdom"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "middle-kingdom",
+    "notes": "Theban mother-goddess who emerges in the textual and monumental record from the late Middle Kingdom, displacing Amunet and Wosret as the consort of Amun; rises to national prominence in the New Kingdom as the maternal half of the Theban Triad.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Mut', in Lexikon der Ägyptologie IV (1982), cols. 246-248"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "new-kingdom",
+    "notes": "At her Karnak precinct south of the temple of Amun-Re she is 'Mut the Great, Lady of Isheru'; her crescent sacred lake (the isheru) is the watery abyss in which the wrathful Eye-of-Ra / Wandering Goddess is cooled and pacified, linking her to Sekhmet, whose statues filled her temple in the hundreds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fazzini & Peck, 'The Precinct of Mut during Dynasty XXV and Early Dynasty XXVI', JARCE 18 (1981)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "motherhood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mwt",
+     "script": "Egyptian (translit)",
+     "rom": "mut"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Towards a Minimal Definition of the Goddess Mut', JEOL 26 (1979-80)"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship-and-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mwt",
+     "script": "Egyptian (translit)",
+     "rom": "mut"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak (precinct of Mut) reliefs; Mut depicted wearing the Double Crown of Upper and Lower Egypt"
+     }
+    ]
+   },
+   {
+    "sphereId": "solar-eye-and-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "jrt-rꜥ",
+     "script": "Egyptian (translit)",
+     "rom": "iret-Ra"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Mut"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "queen-of-the-gods",
+    "name": "Reign as Queen and Mother of the Gods",
+    "term": {
+     "value": "mwt nbt pt ḥnwt nṯrw",
+     "script": "Egyptian (translit)",
+     "rom": "Mut nebet pet henut netjeru"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "kingship",
+     "motherhood"
+    ],
+    "notes": "As 'Lady of Heaven, Mistress of the Gods' she presides over the Theban pantheon beside Amun and confers maternal legitimation on the king, who is figured as her son.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak, precinct of Mut, temple inscriptions"
+     }
+    ]
+   },
+   {
+    "id": "pacified-and-raging-eye",
+    "name": "Embody the Eye of Ra in both its raging (Sekhmet) and pacified aspects",
+    "term": {
+     "value": "mwt-sḫmt",
+     "script": "Egyptian (translit)",
+     "rom": "Mut-Sekhmet"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "protection",
+     "celestial"
+    ],
+    "notes": "Mut absorbs the lioness-goddess Sekhmet as her fierce aspect (the hundreds of Sekhmet statues at her precinct) and is 'cooled' in the isheru-lake — the cyclical pacification of the Distant/Wandering Goddess.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fazzini, 'Some Reliefs and Statues of Sekhmet from the Precinct of Mut', in Studies in Honor of W. K. Simpson (1996)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mut-double-crown",
+    "kind": "crown",
+    "name": "Double Crown (Pschent) of Upper and Lower Egypt",
+    "term": {
+     "value": "sḫmty",
+     "script": "Egyptian (translit)",
+     "rom": "sekhemty"
+    },
+    "role": "wearer",
+    "notes": "Mut is distinctively shown crowned with the royal Double Crown, marking her sovereignty 'over the whole land' — a regalia rarely worn by goddesses.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak, precinct of Mut, reliefs"
+     }
+    ]
+   },
+   {
+    "id": "mut-vulture-headdress",
+    "kind": "regalia",
+    "name": "Vulture headdress",
+    "term": {
+     "value": "mwt",
+     "script": "Egyptian (translit)",
+     "rom": "mut"
+    },
+    "role": "wearer",
+    "notes": "The vulture (mwt) of her name, worn as a headdress, the avian sign that writes 'mother'; she is occasionally figured wholly as a vulture.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Mut"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "mwt wrt nbt jšrw",
+    "original": "mwt wrt nbt jšrw",
+    "language": "egyptian",
+    "transliteration": "Mut weret nebet Isheru",
+    "contextTag": "cult",
+    "notes": "Mut the Great, Lady of Isheru — her title at the Karnak precinct with the crescent sacred lake.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak, precinct of Mut, temple inscriptions"
+     }
+    ]
+   },
+   {
+    "epithetId": "nbt pt ḥnwt nṯrw",
+    "original": "nbt pt ḥnwt nṯrw",
+    "language": "egyptian",
+    "transliteration": "nebet pet henut netjeru",
+    "contextTag": "cult",
+    "notes": "Lady of Heaven, Mistress of all the Gods — her sovereign-mother title in the Theban Triad.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Mut', in Lexikon der Ägyptologie IV (1982)"
+     }
+    ]
+   },
+   {
+    "epithetId": "mwt jṯt snt",
+    "original": "mwt jṯt snt",
+    "language": "egyptian",
+    "transliteration": "mut itjet senet",
+    "contextTag": "hymnic",
+    "notes": "'Mother who became a daughter' — her self-generative epithet expressing the fluid wife/mother/daughter role beside the periodically reborn Amun-Khonsu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Towards a Minimal Definition of the Goddess Mut', JEOL 26 (1979-80)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "egyptian_amun",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak Theban-Triad reliefs (Amun-Mut-Khonsu)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Theban Triad'; Britannica, 'Mut'"
+     }
+    ],
+    "notes": "Consort of Amun from the late Middle Kingdom, displacing Amunet and Wosret; the maternal half of the Theban Triad. RECIPROCAL needed on the existing egyptian_amun entry (spouse -> egyptian_mut)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "egyptian_khonsu",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak, temple of Khonsu; the Theban-Triad processional reliefs"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Khonsu, Mut"
+     }
+    ],
+    "notes": "Mother of the moon-god Khonsu, the divine child of the Theban Triad; the existing egyptian_khonsu entry names 'Amun and Mut' but lists only egyptian_amun in parentIds, so egyptian_mut should be added there."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian mwt (𓏏𓄿𓅐), written with the vulture-sign, is the ordinary word 'mother'; the goddess Mut is the divine personification of motherhood and the name puns the vulture (mwt) on the noun 'mother' (mwt). Greek Μούθ.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Erman & Grapow, Wörterbuch der ägyptischen Sprache, vol. II, s.v. mwt 'Mutter'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Leitz, Lexikon der ägyptischen Götter und Götterbezeichnungen, s.v. Mwt"
+    }
+   ]
+  },
+  "cult": {
+   "cultCenters": [
+    {
+     "placeName": "The Precinct of Mut, south of the temple of Amun-Re at Karnak (Thebes)",
+     "type": "temple-complex",
+     "term": {
+      "value": "jšrw (pr-mwt)",
+      "script": "Egyptian hieroglyphic (transliteration)",
+      "rom": "Isheru (per-Mut)"
+     },
+     "period": "New Kingdom onward (much standing fabric Dynasty XVIII and later)",
+     "notes": "Mut's great temple, encircled on three sides by its crescent isheru sacred lake, lay just south of the Amun precinct and was linked to it by a processional avenue of ram-headed sphinxes; its hundreds of Sekhmet statues identify Mut with the fierce solar Eye.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Fazzini & Peck, 'The Precinct of Mut during Dynasty XXV and Early Dynasty XXVI', JARCE 18 (1981)"
+      },
+      {
+       "kind": "secondary",
+       "reference": "Porter & Moss, Topographical Bibliography II (Theban Temples), the Mut precinct"
+      }
+     ]
+    }
+   ],
+   "festivals": [
+    {
+     "name": "The Navigation / Procession of Mut and the 'Festival of Drunkenness' at the Mut precinct",
+     "term": {
+      "value": "ḥb tḫy",
+      "script": "Egyptian",
+      "rom": "heb tekhy"
+     },
+     "type": "festival",
+     "cadence": "annual, within the Theban festival cycle",
+     "notes": "At the 'Porch of Drunkenness' in the Mut temple worshippers drank to intoxication and woke to the pacified goddess at dawn — the appeasement of the returning Eye of Ra; Mut also processed by barque with Amun and Khonsu at the great Theban feasts.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Bryan, 'The Temple of Mut: New Evidence on Hatshepsut's Building Activity', in Sacred Space and Sacred Function in Ancient Thebes (2007)"
+      }
+     ]
+    }
+   ]
+  },
+  "iconography": {
+   "attributes": [
+    {
+     "id": "double-crown-and-vulture",
+     "term": {
+      "value": "𓏏𓄿𓅐",
+      "script": "Egyptian",
+      "rom": "mwt"
+     },
+     "notes": "Mut as a woman in a close vulture headdress surmounted by the royal Double Crown, a long red or blue sheath dress; uniquely she can also be shown wholly as a vulture.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Mut"
+      }
+     ]
+    }
+   ],
+   "sacredAnimals": [
+    {
+     "id": "vulture",
+     "term": {
+      "value": "𓅐",
+      "script": "Egyptian",
+      "rom": "mwt"
+     },
+     "notes": "The griffon vulture, sign of her name and of 'mother', her chief sacred animal; the lioness (as Sekhmet) marks her fierce aspect.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Karnak, precinct of Mut, the Sekhmet statuary"
+      }
+     ]
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Mut', in Lexikon der Ägyptologie IV (1982), cols. 246-248"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Mut"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "consort-of-Amun-and-mother-of-Khonsu-in-the-Theban-Triad",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Karnak Theban-Triad reliefs (Amun-Mut-Khonsu); the temple of Khonsu inscriptions"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Towards a Minimal Definition of the Goddess Mut', JEOL 26 (1979-80)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mut ('Mother') is the great Theban mother-goddess, consort of Amun and mother of the moon-god Khonsu — the second member of the Theban Triad. Appearing in the record from the late Middle Kingdom, she displaced Amun's earlier consorts Amunet and Wosret and rose with Amun-Re to national prominence in the New Kingdom. Her Karnak precinct, ringed by the crescent isheru lake and filled with hundreds of Sekhmet statues, identifies her with the fierce-and-pacified solar Eye of Ra; she is distinctively crowned with the royal Double Crown and writes her name with the vulture. Authored here to materialize the maternal anchor named inside the existing Khonsu entry ('son of Amun and Mut'); wired spouse -> egyptian_amun (reciprocal needed on Amun) and mother-of -> egyptian_khonsu (parentIds update needed on Khonsu)."
+ },
+ {
+  "id": "egyptian_nefertem",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nefertem",
+   "alt": [
+    "Nefertum",
+    "Nefer-Tem",
+    "Nefertemu"
+   ],
+   "transliterations": {
+    "egyptian": "nfr-tm",
+    "egyptian-hieroglyphic": "𓄤𓏏𓅓",
+    "greek": "Νεφερθμοῦς",
+    "akkadian": ""
+   }
+  },
+  "type": "deity",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "male",
+  "vitalStatus": null,
+  "origin": "canon",
+  "parentIds": [
+   "egyptian_ptah",
+   "egyptian_sekhmet"
+  ],
+  "parentRoles": {
+   "egyptian_ptah": "paternal",
+   "egyptian_sekhmet": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "notes": "The young god who is the blue lotus (Nymphaea caerulea) rising from the primeval waters at the first dawn — 'the lotus-bloom which is at the nose of Ra' of Pyramid Texts Utterance 249, who issues from the horizon daily so that the gods are cleansed at the sight of him.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249 (PT 266)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "new-kingdom",
+    "notes": "Worshipped at Memphis as the son of Ptah and the lioness Sekhmet, completing the Memphite Triad; patron of perfumes and of the cosmetic-and-healing arts derived from flowers, and in later periods given a lion-headed protective form.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lotus-and-primeval-dawn",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sšn",
+     "script": "Egyptian (translit)",
+     "rom": "seshen"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249"
+     }
+    ]
+   },
+   {
+    "sphereId": "perfume-and-fragrance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nfr-tm",
+     "script": "Egyptian (translit)",
+     "rom": "nefer-tem"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, s.v. 'Nefertem' (lord of perfumes)"
+     }
+    ]
+   },
+   {
+    "sphereId": "healing-and-beauty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nfr-tm",
+     "script": "Egyptian (translit)",
+     "rom": "nefer-tem"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lotus-of-the-first-dawn",
+    "name": "Rise as the blue lotus that bears the new sun from the primeval waters",
+    "term": {
+     "value": "sšn ḥr fnd n rꜥ",
+     "script": "Egyptian (translit)",
+     "rom": "seshen her fend en Ra"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "solar",
+     "creation"
+    ],
+    "notes": "Nefertem is the lotus-bloom 'at the nose of Ra' from which the sun emerges each morning; the closed flower opens at dawn, an image of daily and primordial rebirth.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249"
+     }
+    ]
+   },
+   {
+    "id": "lord-of-perfumes",
+    "name": "Govern fragrance, unguents and the cosmetic-healing arts",
+    "term": {
+     "value": "nb sṯj",
+     "script": "Egyptian (translit)",
+     "rom": "neb seti"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "healing"
+    ],
+    "notes": "As the perfume of the blue water-lily he is 'Lord of Perfumes' and patron of the cosmetic and healing crafts derived from flowers; his fragrance gladdens Ra.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, s.v. 'Nefertem'; Wilkinson, Complete Gods and Goddesses (2003)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nefertem-lotus-crown",
+    "kind": "regalia",
+    "name": "Blue-lotus headdress with twin plumes and menat-counterpoises",
+    "term": {
+     "value": "sšn",
+     "script": "Egyptian (translit)",
+     "rom": "seshen"
+    },
+    "role": "wearer",
+    "notes": "His diagnostic attribute: a tall open blue water-lily crowning his head, often surmounted by two plumes and flanked by hanging menat-necklace counterpoises.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+     }
+    ]
+   },
+   {
+    "id": "nefertem-lion",
+    "kind": "sacred-object",
+    "name": "The lion of Nefertem",
+    "term": {
+     "value": "mꜣj",
+     "script": "Egyptian (translit)",
+     "rom": "mai"
+    },
+    "role": "associated",
+    "notes": "In later iconography Nefertem may stand on the back of a lion or take a lion-head, inheriting the protective leonine force of his mother Sekhmet.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Late-Period bronzes and amulets of Nefertem on a lion"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "sšn ḥr fnd n rꜥ",
+    "original": "sšn ḥr fnd n rꜥ",
+    "language": "egyptian",
+    "transliteration": "seshen her fend en Ra",
+    "contextTag": "hymnic",
+    "notes": "'The lotus-bloom which is at the nose of Ra' — his Pyramid-Texts identity as the flower that bears the sun and whose scent the sun-god breathes.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249"
+     }
+    ]
+   },
+   {
+    "epithetId": "nb sṯj",
+    "original": "nb sṯj",
+    "language": "egyptian",
+    "transliteration": "neb seti",
+    "contextTag": "cult",
+    "notes": "'Lord of Perfumes' — Nefertem as the fragrance of the blue water-lily and patron of unguents.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, s.v. 'Nefertem'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "egyptian_ptah",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem, Ptah; the Memphite Triad"
+     }
+    ],
+    "notes": "Son of the Memphite creator Ptah; named inside the existing egyptian_ptah entry ('father of Nefertem'). A father-of back-edge on egyptian_ptah would mirror the explicit child-edges used elsewhere in the corpus."
+   },
+   {
+    "kind": "mother",
+    "personId": "egyptian_sekhmet",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem, Sekhmet; the Memphite Triad"
+     }
+    ],
+    "notes": "Son of the lioness-goddess Sekhmet, from whom he inherits his later leonine protective aspect; third member of the Memphite Triad. A mother-of back-edge on egyptian_sekhmet would complete the triad."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian nfr-tm (𓄤𓏏𓅓), the Memphite lotus-god, is a compound of nfr 'good, beautiful, perfect' and tm, the verb 'to complete / be complete' (also the divine name Atum/Tem) — variously read 'Beautiful-one-who-completes', 'the Completion of Atum', or, taking nfr alone, 'He who is beautiful'. Greek Νεφερθμοῦς.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Erman & Grapow, Wörterbuch der ägyptischen Sprache, s.v. Nfr-tm"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Leitz, Lexikon der ägyptischen Götter und Götterbezeichnungen, s.v. Nfr-tm"
+    }
+   ]
+  },
+  "cult": {
+   "cultCenters": [
+    {
+     "placeName": "Memphis — temple of Ptah (Hut-ka-Ptah), seat of the Memphite Triad",
+     "type": "temple-complex",
+     "term": {
+      "value": "ḥwt-kꜣ-ptḥ",
+      "script": "Egyptian hieroglyphic (transliteration)",
+      "rom": "Hut-ka-Ptah"
+     },
+     "period": "Old Kingdom onward",
+     "notes": "Nefertem was worshipped at Memphis as the divine child of the great temple of Ptah, third member of the Memphite Triad with Ptah and Sekhmet.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem; the Memphite Triad"
+      }
+     ]
+    }
+   ]
+  },
+  "iconography": {
+   "attributes": [
+    {
+     "id": "lotus-headdress",
+     "term": {
+      "value": "𓄤𓏏𓅓",
+      "script": "Egyptian",
+      "rom": "nfr-tm"
+     },
+     "notes": "A beautiful young man crowned with an open blue lotus, frequently with twin plumes and menat-counterpoises; in later forms lion-headed or standing on a lion.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+      }
+     ]
+    }
+   ],
+   "sacredPlants": [
+    {
+     "id": "blue-lotus",
+     "term": {
+      "value": "𓆸",
+      "script": "Egyptian",
+      "rom": "sšn"
+     },
+     "notes": "The blue water-lily Nymphaea caerulea, his very body — the flower that closes at night and opens at dawn, bearing the reborn sun.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pyramid Texts, Utterance 249"
+      }
+     ]
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249 (the lotus at the nose of Ra)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "son-of-Ptah-and-Sekhmet-in-the-Memphite-Triad",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem, Ptah, Sekhmet"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Britannica, s.v. 'Nefertem'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nefertem is the Memphite lotus-god: the blue water-lily that rises from the primeval waters at the first dawn, 'the lotus-bloom which is at the nose of Ra' (Pyramid Texts Utt. 249), and so an emblem of the sun's daily and primordial rebirth and the 'Lord of Perfumes'. As the son of Ptah and the lioness Sekhmet he is the third member of the Memphite Triad, patron of fragrance and of the cosmetic-and-healing arts, and in later periods takes a leonine protective form inherited from his mother. Authored here to materialize the child anchor named inside the existing Ptah entry ('father of Nefertem'); wired parentIds [egyptian_ptah, egyptian_sekhmet], with optional father-of / mother-of back-edges to complete the triad on Ptah and Sekhmet."
+ }
+]
+```

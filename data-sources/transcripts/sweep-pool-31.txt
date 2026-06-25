@@ -1,0 +1,390 @@
+Window #31 (final) — Zapotec / Zoroastrian / Zulu / Zuni family-completion sweep (worker W31).
+
+Authored kin NAMED in the prose of existing window entities that lacked their own entry. All figures are from the Shahnameh / Avestan legendary cycle (Zoroastrian) or Zuni ethnography, verified by WebSearch against work-level sources.
+
+NOTE ON RECIPROCALS / EXISTING-CHILD PARENT WIRING (reported, not patched here):
+  - zoroastrian_rostam.parentIds += ["zoroastrian_zal","zoroastrian_rudaba"]
+  - zoroastrian_siyavash.parentIds += ["zoroastrian_kay_kavus"]
+  - zoroastrian_kay_khosrow.parentIds += ["zoroastrian_farangis"] (already has zoroastrian_siyavash)
+  - zoroastrian_thraetaona.parentIds += ["zoroastrian_athwya"]
+  - zoroastrian_keresaspa.parentIds += ["zoroastrian_thrita"]
+  - zoroastrian_siyavash needs reciprocal spouse -> zoroastrian_farangis
+  - zoroastrian_yima needs reciprocal sibling -> zoroastrian_spityura
+  - zuni_malokyattsiki needs reciprocal spouse -> zuni_turquoise_man
+
+```json
+[
+  {
+    "id": "zoroastrian_zal",
+    "name": {
+      "primary": "Zal",
+      "alt": ["Zal-e Zar", "Dastan", "Zal-Dastan"],
+      "transliterations": {"persian": "Zāl", "pahlavi": "Zāl"}
+    },
+    "type": "mortal",
+    "tradition": "Zoroastrian",
+    "primaryTradition": "Zoroastrian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "legendary"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary",
+        "eraOrdering": 0,
+        "startEvent": "Born to the hero Sam with white hair, exposed as an infant on Mount Alborz and reared by the Simorgh, then reclaimed; lord of Zabulistan and Sistan, he wed Rudaba of Kabul and fathered the champion Rostam.",
+        "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (the book of Zal and Rudaba)"}],
+        "notes": "White-haired sage-warrior of Sistan, foster-child of the Simorgh; father of Rostam."
+      }
+    ],
+    "domains": [
+      {"sphereId": "heroic-champion", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (Zal cycle)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Ferdowsi, Shahnameh (the tale of Zal and Rudaba; Rostam cycle)"},
+        {"kind": "secondary", "reference": "Encyclopaedia Iranica, article Zal"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "zoroastrian_rostam", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (birth of Rostam, son of Zal and Rudaba)"}], "notes": "Father of the champion Rostam; the existing zoroastrian_rostam should carry zoroastrian_zal in parentIds."},
+      {"kind": "spouse", "personId": "zoroastrian_rudaba", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (the wooing and wedding of Zal and Rudaba)"}], "notes": "Husband of Rudaba, princess of Kabul; the love-story of Zal and Rudaba opens the Rostam cycle."}
+    ],
+    "notes": "Persian Zal (Zal-e Zar, Dastan), white-haired hero of Sistan, son of Sam and foster-son of the Simorgh; husband of Rudaba of Kabul and father of Rostam. Named in the prose of zoroastrian_rostam (son of Zal and Rudaba)."
+  },
+  {
+    "id": "zoroastrian_rudaba",
+    "name": {
+      "primary": "Rudaba",
+      "alt": ["Rudabeh", "RODABA"],
+      "transliterations": {"persian": "Rūdāba", "pahlavi": "Rōdāb"}
+    },
+    "type": "mortal",
+    "tradition": "Zoroastrian",
+    "primaryTradition": "Zoroastrian",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "legendary"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary",
+        "eraOrdering": 0,
+        "startEvent": "Princess of Kabul who loved and wed Zal of Sistan and, after a perilous labour eased by the Simorgh, gave birth to the mightiest of heroes, Rostam.",
+        "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (the story of Zal and Rudaba; the birth of Rostam)"}],
+        "notes": "Mother of Rostam; her difficult delivery is the legendary first caesarean (rostamzad) aided by the Simorgh."
+      }
+    ],
+    "domains": [
+      {"sphereId": "heroic-champion", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (Zal and Rudaba)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Ferdowsi, Shahnameh (the tale of Zal and Rudaba)"},
+        {"kind": "secondary", "reference": "Encyclopaedia Iranica, article Rudaba"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "mother-of", "personId": "zoroastrian_rostam", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (birth of Rostam, son of Zal and Rudaba)"}], "notes": "Mother of the champion Rostam; the existing zoroastrian_rostam should carry zoroastrian_rudaba in parentIds."},
+      {"kind": "spouse", "personId": "zoroastrian_zal", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (the wooing and wedding of Zal and Rudaba)"}], "notes": "Wife of Zal of Sistan; reciprocal of the spouse edge on zoroastrian_zal."}
+    ],
+    "notes": "Persian Rudaba (Rudabeh), princess of Kabul, wife of Zal and mother of Rostam, whose birth she survives with the Simorgh aid. Named in the prose of zoroastrian_rostam (son of Zal and Rudaba)."
+  },
+  {
+    "id": "zoroastrian_sohrab",
+    "name": {
+      "primary": "Sohrab",
+      "alt": ["Suhrab", "Sohraab"],
+      "transliterations": {"persian": "Sohrāb", "pahlavi": "Sohrāb"}
+    },
+    "type": "mortal",
+    "tradition": "Zoroastrian",
+    "primaryTradition": "Zoroastrian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["zoroastrian_rostam"],
+    "temporal": {"era": "legendary"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary",
+        "eraOrdering": 0,
+        "startEvent": "Born in Samangan to Rostam and the Turanian princess Tahmineh, he grew of prodigious strength and sought his unknown father; in the war between Iran and Turan the two met unrecognised and Rostam slew his own son, learning the truth only as the youth lay dying.",
+        "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (Rostam and Sohrab)"}],
+        "notes": "Tragic son of Rostam, killed by his own father before recognition; mother Tahmineh of Samangan."
+      }
+    ],
+    "domains": [
+      {"sphereId": "heroic-champion", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (Rostam and Sohrab)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Ferdowsi, Shahnameh (the tragedy of Rostam and Sohrab)"},
+        {"kind": "secondary", "reference": "Encyclopaedia Iranica, article Sohrab"}
+      ]}
+    ],
+    "relations": [],
+    "notes": "Persian Sohrab, son of Rostam by Tahmineh of Samangan, slain unrecognised by his father in the most famous tragedy of the Shahnameh. Named in the prose and cited section (Rostam and Sohrab) of zoroastrian_rostam. The family tree links from this child via parentIds=[zoroastrian_rostam]; the mother Tahmineh is not yet a registry figure."
+  },
+  {
+    "id": "zoroastrian_kay_kavus",
+    "name": {
+      "primary": "Kay Kavus",
+      "alt": ["Kai Kavus", "Kavi Usan", "Kay Us", "Kavus"],
+      "transliterations": {"avestan": "Kauui Usan", "pahlavi": "Kay Us"}
+    },
+    "type": "mortal",
+    "tradition": "Zoroastrian",
+    "primaryTradition": "Zoroastrian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "legendary"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary",
+        "eraOrdering": 0,
+        "startEvent": "Second king of the Kayanian line, a long-reigning but rash and over-reaching shah whose follies (the flight to heaven, the Mazandaran campaign) the heroes must repair; father of the martyred prince Siyavash and grandfather of Kay Khosrow.",
+        "sources": [{"kind": "primary", "reference": "Avesta, Yasht 5.45-46 (Kavi Usan); Ferdowsi, Shahnameh (reign of Kay Kavus)"}],
+        "notes": "Avestan Kavi Usan, Old Indic Kavya Ushanas; father of Siyavash."
+      }
+    ],
+    "domains": [
+      {"sphereId": "just-kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Avesta, Yasht 5.45-46; Ferdowsi, Shahnameh (Kay Kavus)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Avesta, Aban Yasht (Yasht 5.45-46), the kavi Usan; Ferdowsi, Shahnameh (reign of Kay Kavus)"},
+        {"kind": "secondary", "reference": "Encyclopaedia Iranica, article Kayanian v. Kauui Usan, Kay-Us, Kay Kavus"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "zoroastrian_siyavash", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (Siyavash, son of Kay Kavus)"}], "notes": "Father of the prince Siyavash; the existing zoroastrian_siyavash should carry zoroastrian_kay_kavus in parentIds."}
+    ],
+    "notes": "Kay Kavus (Avestan Kavi Usan), second king of the legendary Kayanian dynasty, son of Kay Qobad, father of Siyavash and grandfather of Kay Khosrow. Named in the prose of zoroastrian_siyavash (son of Kay Kavus) and zoroastrian_kay_khosrow."
+  },
+  {
+    "id": "zoroastrian_farangis",
+    "name": {
+      "primary": "Farangis",
+      "alt": ["Faranguis", "Wispan-frya"],
+      "transliterations": {"persian": "Farangīs", "pahlavi": "Wīspān-friyā"}
+    },
+    "type": "mortal",
+    "tradition": "Zoroastrian",
+    "primaryTradition": "Zoroastrian",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "legendary"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary",
+        "eraOrdering": 0,
+        "startEvent": "Daughter of the Turanian king Afrasiab who was given in marriage to the exiled Iranian prince Siyavash; after his murder she fled, bore and guarded his son Kay Khosrow, and brought him at last to Iran.",
+        "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (Siyavash in Turan; the birth and flight of Kay Khosrow)"}],
+        "notes": "Wife of Siyavash and mother of Kay Khosrow; daughter of Afrasiab."
+      }
+    ],
+    "domains": [
+      {"sphereId": "just-kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (Farangis, mother of Kay Khosrow)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Ferdowsi, Shahnameh (the marriage of Siyavash and Farangis; the birth of Kay Khosrow)"},
+        {"kind": "secondary", "reference": "Encyclopaedia Iranica, article Farangis"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "mother-of", "personId": "zoroastrian_kay_khosrow", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (Kay Khosrow, son of Siyavash and Farangis)"}], "notes": "Mother of Kay Khosrow; the existing zoroastrian_kay_khosrow should add zoroastrian_farangis to parentIds (it already carries zoroastrian_siyavash)."},
+      {"kind": "spouse", "personId": "zoroastrian_siyavash", "sources": [{"kind": "primary", "reference": "Ferdowsi, Shahnameh (the wedding of Siyavash and Farangis)"}], "notes": "Wife of the prince Siyavash; reciprocal spouse edge should be added to the existing zoroastrian_siyavash."}
+    ],
+    "notes": "Farangis, daughter of Afrasiab of Turan, wife of Siyavash and mother of Kay Khosrow. Named (as Kay Khosrow mother and Siyavash consort) in the prose of zoroastrian_kay_khosrow and zoroastrian_siyavash."
+  },
+  {
+    "id": "zoroastrian_athwya",
+    "name": {
+      "primary": "Athwya",
+      "alt": ["Abtin", "Aptin", "Athwyani"],
+      "transliterations": {"avestan": "Āθβiia", "pahlavi": "Ābtin"}
+    },
+    "type": "mortal",
+    "tradition": "Zoroastrian",
+    "primaryTradition": "Zoroastrian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "legendary"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary",
+        "eraOrdering": 0,
+        "startEvent": "The second mortal to press the haoma for the corporeal world, and so rewarded with a son, Thraetaona, who would smite the dragon Azhi Dahaka; in the later epic he is Abtin, of the line of Jamshid, slain by Zahhak.",
+        "sources": [{"kind": "primary", "reference": "Avesta, Yasna 9.7 (the Hom Yasht); Ferdowsi, Shahnameh (Abtin)"}],
+        "notes": "Father of Thraetaona/Fereydun; Avestan Athwya, Persian Abtin."
+      }
+    ],
+    "domains": [
+      {"sphereId": "kingship-deliverance", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Avesta, Yasna 9.7; Ferdowsi, Shahnameh (Abtin)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Avesta, Yasna 9.7 (the second presser of haoma, father of Thraetaona); Zamyad Yasht 19.36-37"},
+        {"kind": "secondary", "reference": "Encyclopaedia Iranica, article Abtin / FerEdun (Avestan Athwya)"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "zoroastrian_thraetaona", "sources": [{"kind": "primary", "reference": "Avesta, Yasna 9.7 (to Athwya was born Thraetaona)"}], "notes": "Father of the dragon-slayer Thraetaona/Fereydun; the existing zoroastrian_thraetaona should carry zoroastrian_athwya in parentIds."}
+    ],
+    "notes": "Avestan Athwya (Persian Abtin), the second presser of haoma (Yasna 9.7), father of Thraetaona/Fereydun. Named in the prose of zoroastrian_thraetaona (son of Athwya/Abtin)."
+  },
+  {
+    "id": "zoroastrian_thrita",
+    "name": {
+      "primary": "Thrita",
+      "alt": ["Athrat", "Thrita of the Sama", "Sama"],
+      "transliterations": {"avestan": "Θrita", "pahlavi": "Asrat"}
+    },
+    "type": "mortal",
+    "tradition": "Zoroastrian",
+    "primaryTradition": "Zoroastrian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "legendary"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary",
+        "eraOrdering": 0,
+        "startEvent": "The third mortal to press the haoma, of the house of Sama, rewarded with two sons, Urvakhshaya the lawgiver and Keresaspa the club-bearing dragon-slayer; an early healer who received from Ahura Mazda the remedies against sickness.",
+        "sources": [{"kind": "primary", "reference": "Avesta, Yasna 9.10 (the Hom Yasht); Vendidad 20.2 (Thrita the first healer)"}],
+        "notes": "Father of Keresaspa (Garshasp); of the Saman line."
+      }
+    ],
+    "domains": [
+      {"sphereId": "healing-medicine", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Avesta, Vendidad 20.2; Yasna 9.10"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Avesta, Yasna 9.10 (the third presser of haoma, father of Urvakhshaya and Keresaspa); Vendidad 20.2"},
+        {"kind": "secondary", "reference": "Encyclopaedia Iranica, article Garsasp / Keresaspa (the father Thrita of the Sama family)"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "zoroastrian_keresaspa", "sources": [{"kind": "primary", "reference": "Avesta, Yasna 9.10 (to Thrita were born Urvakhshaya and Keresaspa)"}], "notes": "Father of the hero Keresaspa/Garshasp; the existing zoroastrian_keresaspa should carry zoroastrian_thrita in parentIds. A second son, Urvakhshaya, is attested but not in the registry."}
+    ],
+    "notes": "Avestan Thrita of the Sama house, the third presser of haoma and an early healer (Vendidad 20), father of Keresaspa. Named in the prose of zoroastrian_keresaspa (son of Thrita). To be kept distinct from the kindred figure Thraetaona, with whom the name Thrita is sometimes confused."
+  },
+  {
+    "id": "zoroastrian_spityura",
+    "name": {
+      "primary": "Spityura",
+      "alt": ["Spitiyura", "Spitur"],
+      "transliterations": {"avestan": "Spitiiura", "pahlavi": "Spitur"}
+    },
+    "type": "mortal",
+    "tradition": "Zoroastrian",
+    "primaryTradition": "Zoroastrian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial",
+        "eraOrdering": 1,
+        "startEvent": "Brother of the first king Yima; in league with the dragon Azhi Dahaka he sawed Yima in two, for which the Fire drove him back; his deed ends the golden age of his brother.",
+        "sources": [{"kind": "primary", "reference": "Avesta, Zamyad Yasht (Yasht 19.46)"}],
+        "notes": "The brother who sawed Yima asunder; allied with Azhi Dahaka."
+      }
+    ],
+    "domains": [
+      {"sphereId": "tyranny-evil", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Avesta, Zamyad Yasht (Yasht 19.46)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Avesta, Zamyad Yasht (Yasht 19.46), Spityura who sawed Yima in twain"},
+        {"kind": "secondary", "reference": "Encyclopaedia Iranica, article Yima (Spityura sawing Yima asunder)"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "zoroastrian_yima", "sources": [{"kind": "primary", "reference": "Avesta, Zamyad Yasht (Yasht 19.46)"}], "notes": "Brother of Yima; reciprocal sibling edge should be added to the existing zoroastrian_yima."},
+      {"kind": "enemy", "personId": "zoroastrian_yima", "sources": [{"kind": "primary", "reference": "Avesta, Zamyad Yasht (Yasht 19.46)"}], "notes": "Sawed his brother Yima in two, in league with Azhi Dahaka; reciprocal enemy edge should be added to the existing zoroastrian_yima."},
+      {"kind": "ally", "personId": "zoroastrian_azhi_dahaka", "sources": [{"kind": "primary", "reference": "Avesta, Zamyad Yasht (Yasht 19.46)"}], "notes": "Accomplice of the dragon Azhi Dahaka in the killing of Yima; reciprocal ally edge should be added to the existing zoroastrian_azhi_dahaka."}
+    ],
+    "notes": "Spityura, brother of the first king Yima, who with the dragon Azhi Dahaka sawed Yima in two (Zamyad Yasht 19.46). Named explicitly in the prose of zoroastrian_yima (sawn in two by Spityura), where it is noted he was not yet in the registry."
+  },
+  {
+    "id": "zuni_turquoise_man",
+    "name": {
+      "primary": "Turquoise Man",
+      "alt": ["Turquoise God", "Turquoise-Man"],
+      "transliterations": {"zuni": ""}
+    },
+    "type": "deity",
+    "tradition": "Zuni",
+    "primaryTradition": "Zuni",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "The turquoise deity who wooed and married the Salt Mother (Ma'l Oyattsik'i); when the people troubled her, the two withdrew together to the Zuni Salt Lake, breaking through the sandstone mesa to make their new home.",
+        "sources": [{"kind": "primary", "reference": "F. H. Cushing, Zuni Folk Tales (1901); Charles M. Skinner, Myths and Legends of Our Own Land (1896), relaying Cushing"}],
+        "notes": "Husband of the Zuni Salt Mother; departed with her to the sacred Salt Lake."
+      }
+    ],
+    "domains": [
+      {"sphereId": "salt", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "F. H. Cushing, Zuni Folk Tales (1901)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "F. H. Cushing, Zuni Folk Tales (1901), the Salt Mother and the Turquoise Man"},
+        {"kind": "secondary", "reference": "Charles M. Skinner, Myths and Legends of Our Own Land (1896), the Zuni Salt Lake legend"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "zuni_malokyattsiki", "sources": [{"kind": "primary", "reference": "F. H. Cushing, Zuni Folk Tales (1901)"}], "notes": "Husband of the Salt Mother (Ma'l Oyattsik'i); reciprocal spouse edge should be added to the existing zuni_malokyattsiki."}
+    ],
+    "notes": "Turquoise Man, the Zuni turquoise deity who married the Salt Mother (Ma'l Oyattsik'i) and withdrew with her to the sacred Zuni Salt Lake. Named in the prose of zuni_malokyattsiki (married the Turquoise Man)."
+  }
+]
+```

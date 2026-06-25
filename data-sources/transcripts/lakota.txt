@@ -16,293 +16,1300 @@ Jahner, 1980) and "Lakota Myth" (ed. Jahner, 1983); corroborated by W. K. Powers
 
 ```json
 [
-  {
-    "id": "lakota_inyan",
-    "name": { "primary": "Íŋyaŋ", "alt": ["Inyan", "Rock", "Tȟuŋkášila (in some address)"], "transliterations": { "lakota": "Íŋyaŋ", "etymology": "Lakota 'rock, stone'; the primordial being whose self-sacrifice of his own blood created the world." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "first-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "first-world", "eraOrdering": 0, "startEvent": "primordial-existence-in-darkness", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980), pp. 50-53" }], "notes": "In the beginning, when there was only the spirit of darkness (Háŋ), Íŋyaŋ alone existed — soft, formless, and holding all power and all spirit within himself, with the powers of the universe in his blood, which was blue." },
-      { "typeStatus": "deity", "era": "first-world", "eraOrdering": 1, "startEvent": "self-sacrifice-and-creation-of-the-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (Jahner ed., 1983); Walker, Lakota Belief and Ritual (1980), pp. 51-53" }], "notes": "Desiring something other than himself over which to exercise his power, Íŋyaŋ opened his veins and drew out his blood to form Maká (the Earth) and the encircling waters; as his blood flowed away it became blue water, and his powers passed into the disk he had made. Drained, he shrank, hardened, and became the rock and stone of the world, retaining only a portion of his original power." }
-    ],
-    "domains": [
-      { "sphereId": "earth-and-stone", "contextTag": "lifelong", "term": { "value": "Íŋyaŋ", "script": "Lakota", "rom": "Inyan" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 50-53" }] },
-      { "sphereId": "creation", "contextTag": "primordial", "sources": [{ "kind": "secondary", "reference": "Walker, The Sun Dance (AMNH 16, 1917)" }] }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "father-of", "personId": "lakota_iktomi", "era": "first-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Powers, Oglala Religion (1977)" }], "notes": "Iktómi, originally Ksá (wisdom), is the first-born son of Íŋyaŋ." },
-      { "kind": "creator-of", "personId": "lakota_maka", "era": "first-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53" }], "notes": "Drew Maká, the Earth, out of his own substance and blood." },
-      { "kind": "creator-of", "personId": "lakota_wakinyan", "era": "first-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)" }], "notes": "Wakíŋyaŋ, the Winged One, is reckoned the associate of Íŋyaŋ, brought into being in his cause." }
-    ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH Anthropological Papers 16, 1917)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }], "weight": "secondary" } ],
-    "notes": "Íŋyaŋ, the Rock, is the primordial of Lakota cosmology and the first of the four Superior Gods (Wakáŋ Aŋkáŋtu) who together comprise Wakȟáŋ Tȟáŋka. Alone in the original darkness, holding all power in his blue blood, he sacrificed himself to create — opening his veins to form Maká the Earth and the waters, and in doing so shrank and hardened into the rock and stone of the world. From his line come Iktómi the trickster and the Winged One Wakíŋyaŋ. He is invoked in stone, and the sweat-lodge stones (Tȟuŋkáŋ) carry his ancient power."
+ {
+  "id": "lakota_inyan",
+  "name": {
+   "primary": "Íŋyaŋ",
+   "alt": [
+    "Inyan",
+    "Rock",
+    "Tȟuŋkášila (in some address)"
+   ],
+   "transliterations": {
+    "lakota": "Íŋyaŋ",
+    "etymology": "Lakota 'rock, stone'; the primordial being whose self-sacrifice of his own blood created the world."
+   }
   },
-  {
-    "id": "lakota_maka",
-    "name": { "primary": "Maká", "alt": ["Maka", "Makȟá", "Iná Maká (Mother Earth)", "Earth"], "transliterations": { "lakota": "Makȟá", "etymology": "Lakota 'earth, ground'; the Earth, drawn from Íŋyaŋ's body and addressed as Grandmother/Mother." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "first-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "first-world", "eraOrdering": 0, "startEvent": "drawn-from-inyan", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53" }], "notes": "Íŋyaŋ formed Maká out of his own blood and substance as a disk to hold his power; she was made a part of him and bound to him, which is why earth and rock are inseparable." },
-      { "typeStatus": "deity", "era": "first-world", "eraOrdering": 1, "startEvent": "appeal-to-skan-for-light-and-separation", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)" }], "notes": "Maká complained that her world was cold and dark and wished to be separate from Íŋyaŋ; Škáŋ, as judge, ruled that she must remain bound to the Rock, but caused Wí (the Sun) and the Dawn to come forth to give her light and warmth, ordering day and night to follow one another." }
-    ],
-    "domains": [
-      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "Makȟá", "script": "Lakota", "rom": "Maka" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53" }] },
-      { "sphereId": "fertility-and-land", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }] }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "created-by", "personId": "lakota_inyan", "era": "first-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53" }], "notes": "Drawn from Íŋyaŋ's own substance and bound to him." }
-    ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }], "weight": "secondary" } ],
-    "notes": "Maká, the Earth, is the second of the four Superior Gods. Drawn out of Íŋyaŋ's own body when he sacrificed his blood, she is forever bound to the Rock — soil clinging to stone. Addressed as Mother/Grandmother Earth (Iná Maká, Uŋčí Maká), she is the ground of all living things; when she complained of cold and darkness, the supreme Škáŋ answered by bringing forth the Sun and ordering the alternation of day and night."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "first-world"
   },
-  {
-    "id": "lakota_skan",
-    "name": { "primary": "Škáŋ", "alt": ["Skan", "Tákuškaŋškaŋ", "Taku Skan Skan", "Sky", "That-which-moves"], "transliterations": { "lakota": "Škáŋ", "etymology": "Lakota škaŋ 'to move, motion'; the Sky and the source of all movement and energy, hence the animating power of the world." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "first-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "first-world", "eraOrdering": 0, "startEvent": "emergence-as-the-sky-and-motion", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 50-54" }], "notes": "Škáŋ is the Sky and the source of all motion and energy; he came into being with the separation of Íŋyaŋ, Maká, and the waters, and he gives motion, spirit, and life to all that exists." },
-      { "typeStatus": "deity", "era": "first-world", "eraOrdering": 1, "startEvent": "supreme-judge-of-the-gods", "sources": [{ "kind": "secondary", "reference": "Walker, The Sun Dance (AMNH 16, 1917); Lakota Myth (1983)" }], "notes": "Acknowledged as the great judge among the gods, Škáŋ settles the disputes of the Superior Gods — binding Maká to Íŋyaŋ, judging Wí and the Moon, and condemning the deceiving Ité to wear two faces (Aŋóg Ité). He apportions to each being its spirit (naǧí) and life-breath (niyá)." }
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "primordial-existence-in-darkness",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980), pp. 50-53"
+     }
     ],
-    "domains": [
-      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "Škáŋ", "script": "Lakota", "rom": "Skan" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 50-54" }] },
-      { "sphereId": "motion-and-life", "contextTag": "lifelong", "term": { "value": "Tákuškaŋškaŋ", "script": "Lakota", "rom": "Taku Skan Skan" }, "sources": [{ "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }] }
+    "notes": "In the beginning, when there was only the spirit of darkness (Háŋ), Íŋyaŋ alone existed — soft, formless, and holding all power and all spirit within himself, with the powers of the universe in his blood, which was blue."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 1,
+    "startEvent": "self-sacrifice-and-creation-of-the-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (Jahner ed., 1983); Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
     ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "father-of", "personId": "lakota_wohpe", "era": "first-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)" }], "notes": "Wóȟpe, the Falling Star and Mediator, is the daughter of Škáŋ; Walker's informants name her father as Škáŋ and call her 'of the star people.'" },
-      { "kind": "creator-of", "personId": "lakota_tate", "era": "first-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)" }], "notes": "Škáŋ created Tȟaté (the Wind) to be his companion and helper; Tȟaté is reckoned the associate of Škáŋ." }
+    "notes": "Desiring something other than himself over which to exercise his power, Íŋyaŋ opened his veins and drew out his blood to form Maká (the Earth) and the encircling waters; as his blood flowed away it became blue water, and his powers passed into the disk he had made. Drained, he shrank, hardened, and became the rock and stone of the world, retaining only a portion of his original power."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-stone",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Íŋyaŋ",
+     "script": "Lakota",
+     "rom": "Inyan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 50-53"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance (AMNH 16, 1917)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "lakota_iktomi",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Powers, Oglala Religion (1977)"
+     }
     ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }, { "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }], "weight": "secondary" } ],
-    "notes": "Škáŋ (Tákuškaŋškaŋ, 'that which moves'), the Sky, is the third Superior God and in many of Walker's accounts the supreme animating power — the source of all motion and energy, who gives to every being its spirit and breath. He is the great judge among the gods, settling their quarrels and decreeing the order of the cosmos. He created the Wind (Tȟaté) as his companion and is the father of the mediator Wóȟpe."
+    "notes": "Iktómi, originally Ksá (wisdom), is the first-born son of Íŋyaŋ."
+   },
+   {
+    "kind": "creator-of",
+    "personId": "lakota_maka",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
+    ],
+    "notes": "Drew Maká, the Earth, out of his own substance and blood."
+   },
+   {
+    "kind": "creator-of",
+    "personId": "lakota_wakinyan",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Wakíŋyaŋ, the Winged One, is reckoned the associate of Íŋyaŋ, brought into being in his cause."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH Anthropological Papers 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Íŋyaŋ, the Rock, is the primordial of Lakota cosmology and the first of the four Superior Gods (Wakáŋ Aŋkáŋtu) who together comprise Wakȟáŋ Tȟáŋka. Alone in the original darkness, holding all power in his blue blood, he sacrificed himself to create — opening his veins to form Maká the Earth and the waters, and in doing so shrank and hardened into the rock and stone of the world. From his line come Iktómi the trickster and the Winged One Wakíŋyaŋ. He is invoked in stone, and the sweat-lodge stones (Tȟuŋkáŋ) carry his ancient power."
+ },
+ {
+  "id": "lakota_maka",
+  "name": {
+   "primary": "Maká",
+   "alt": [
+    "Maka",
+    "Makȟá",
+    "Iná Maká (Mother Earth)",
+    "Earth"
+   ],
+   "transliterations": {
+    "lakota": "Makȟá",
+    "etymology": "Lakota 'earth, ground'; the Earth, drawn from Íŋyaŋ's body and addressed as Grandmother/Mother."
+   }
   },
-  {
-    "id": "lakota_wi",
-    "name": { "primary": "Wí", "alt": ["Wi", "Aŋpétu Wí (Day-Sun)", "the Sun"], "transliterations": { "lakota": "Wí", "etymology": "Lakota 'sun'; chief of the Superior Gods, source of light, warmth, and the power of generation." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "first-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "first-world", "eraOrdering": 0, "startEvent": "coming-forth-as-the-sun", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-54" }], "notes": "Wí, the Sun, was brought forth to give light and warmth to Maká; he is named chief of the Superior Gods, the patron of the four cardinal virtues and the great ceremony of the Sun Dance (Wiwáŋyaŋg Wačípi) is danced in his honor." },
-      { "typeStatus": "deity", "era": "first-world", "eraOrdering": 1, "startEvent": "feast-of-the-gods-and-estrangement-from-hanwi", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)" }], "notes": "At the Feast of the Gods, Wí, deceived by the schemes of Iktómi and the two-faced Ité, allowed Ité to take the seat of his wife Haŋwí (the Moon). For shaming his wife, Škáŋ decreed that Wí and Haŋwí be separated — he to rule the day, she the night — and that she should hide her face for shame, which is why the moon waxes and wanes." }
-    ],
-    "domains": [
-      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Wí", "script": "Lakota", "rom": "Wi" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-54" }] },
-      { "sphereId": "light-and-warmth", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Walker, The Sun Dance (AMNH 16, 1917)" }] }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "spouse", "personId": "lakota_hanwi", "era": "first-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)" }], "notes": "Husband of Haŋwí the Moon; the two were estranged by Škáŋ's judgment so that one rules the day and the other the night." }
-    ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }], "weight": "secondary" } ],
-    "notes": "Wí, the Sun, is the fourth Superior God and is named chief among them — the source of light, warmth, and generative power, patron of the cardinal virtues (bravery, fortitude, generosity, wisdom). The supreme ceremony of the Lakota, the Sun Dance, is offered to him. In the great origin narrative he was deceived at the Feast of the Gods into preferring the two-faced Ité over his wife Haŋwí, for which Škáŋ separated the Sun from the Moon, giving day and night their division."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "first-world"
   },
-  {
-    "id": "lakota_hanwi",
-    "name": { "primary": "Haŋwí", "alt": ["Hanwi", "Haŋhépi-wí (Night-Sun)", "the Moon"], "transliterations": { "lakota": "Haŋwí", "etymology": "Lakota haŋ 'night' + wí 'sun/luminary' = 'night-sun', the Moon; the companion (associate) of the Sun." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "second-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 0, "startEvent": "companion-of-the-sun", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54" }], "notes": "Haŋwí, the Moon, is the associate (kȟolá) of Wí; created from him to be his companion, she at first travelled the sky together with the Sun as his wife." },
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 1, "startEvent": "shaming-and-the-phases-of-the-moon", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)" }], "notes": "Arriving late to the Feast of the Gods, Haŋwí found the two-faced Ité sitting in her place beside Wí; ashamed, she drew her robe over her face. Škáŋ separated her from the Sun, giving her dominion over the night; ever after she covers her face when near her husband (the new moon) and shows it fully when farthest from him (the full moon)." }
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "drawn-from-inyan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
     ],
-    "domains": [
-      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Haŋwí", "script": "Lakota", "rom": "Hanwi" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54" }] },
-      { "sphereId": "night", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983)" }] }
+    "notes": "Íŋyaŋ formed Maká out of his own blood and substance as a disk to hold his power; she was made a part of him and bound to him, which is why earth and rock are inseparable."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 1,
+    "startEvent": "appeal-to-skan-for-light-and-separation",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
     ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "spouse", "personId": "lakota_wi", "era": "second-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)" }], "notes": "Wife of Wí the Sun, from whom she was separated by Škáŋ's decree after the Feast of the Gods." }
+    "notes": "Maká complained that her world was cold and dark and wished to be separate from Íŋyaŋ; Škáŋ, as judge, ruled that she must remain bound to the Rock, but caused Wí (the Sun) and the Dawn to come forth to give her light and warmth, ordering day and night to follow one another."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Makȟá",
+     "script": "Lakota",
+     "rom": "Maka"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-and-land",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "lakota_inyan",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
     ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }], "weight": "secondary" } ],
-    "notes": "Haŋwí, the Moon ('night-sun'), is the first of the four Associate Gods (Wakáŋ Kȟoláya), the companion of the Sun. Made to travel the sky with Wí as his wife, she was publicly shamed at the Feast of the Gods when the two-faced Ité usurped her seat; Škáŋ separated her from the Sun and gave her the night. Her waxing and waning are explained as her covering and uncovering her face in shame as she nears or leaves her estranged husband."
+    "notes": "Drawn from Íŋyaŋ's own substance and bound to him."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Maká, the Earth, is the second of the four Superior Gods. Drawn out of Íŋyaŋ's own body when he sacrificed his blood, she is forever bound to the Rock — soil clinging to stone. Addressed as Mother/Grandmother Earth (Iná Maká, Uŋčí Maká), she is the ground of all living things; when she complained of cold and darkness, the supreme Škáŋ answered by bringing forth the Sun and ordering the alternation of day and night."
+ },
+ {
+  "id": "lakota_skan",
+  "name": {
+   "primary": "Škáŋ",
+   "alt": [
+    "Skan",
+    "Tákuškaŋškaŋ",
+    "Taku Skan Skan",
+    "Sky",
+    "That-which-moves"
+   ],
+   "transliterations": {
+    "lakota": "Škáŋ",
+    "etymology": "Lakota škaŋ 'to move, motion'; the Sky and the source of all movement and energy, hence the animating power of the world."
+   }
   },
-  {
-    "id": "lakota_tate",
-    "name": { "primary": "Tȟaté", "alt": ["Tate", "the Wind"], "transliterations": { "lakota": "Tȟaté", "etymology": "Lakota 'wind'; the Wind, created by Škáŋ as his companion and father of the Four Winds." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "second-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 0, "startEvent": "created-as-companion-of-skan", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54; Lakota Myth (1983)" }], "notes": "Tȟaté, the Wind, was created by Škáŋ to be his associate and companion; he is the intermediary who carries out the will of the Sky and dwells at the center of the world." },
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 1, "startEvent": "marriage-to-ite-and-the-four-winds", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (Jahner ed., 1983)" }], "notes": "Tȟaté took Ité (daughter of Old Man and Old Woman) as wife and fathered four sons. After Ité's disgrace and banishment as the two-faced Aŋóg Ité, Tȟaté raised the four boys, then sent them to the four quarters of the world; they became the Four Winds (Tȟaté Tób), and the late-born fifth son Yumní became the Whirlwind." }
-    ],
-    "domains": [
-      { "sphereId": "wind", "contextTag": "lifelong", "term": { "value": "Tȟaté", "script": "Lakota", "rom": "Tate" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54" }] },
-      { "sphereId": "the-four-directions", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983)" }] }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "created-by", "personId": "lakota_skan", "era": "second-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)" }], "notes": "Created by Škáŋ the Sky to be his companion; the associate of Škáŋ." }
-    ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }, { "kind": "secondary", "reference": "Walker, Lakota Myth (Jahner ed., 1983)" }], "weight": "secondary" } ],
-    "notes": "Tȟaté, the Wind, is an Associate God, created by Škáŋ to be his companion and the agent of his will at the center of the world. He married Ité before her transformation into the two-faced Aŋóg Ité, and fathered the Four Winds (Tȟaté Tób) — the West (Eyá), North (Wazíya/Yatá), East (Yaŋpá), and South (Okáǧa) — whom he dispatched to the cardinal quarters, together with the late-born Whirlwind (Yumní). The cycle of the Four Winds underlies much Lakota ritual and the round of the year."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "first-world"
   },
-  {
-    "id": "lakota_wakinyan",
-    "name": { "primary": "Wakíŋyaŋ", "alt": ["Wakinyan", "Wakíŋyaŋ Tȟáŋka", "the Winged One", "the Thunderbird", "the Thunder Beings"], "transliterations": { "lakota": "Wakíŋyaŋ", "etymology": "Lakota wakȟáŋ 'sacred' + kiŋyáŋ 'to fly/winged' = 'sacred winged one'; the Thunderbird, whose wing-beats are thunder and whose glance is lightning." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "second-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 0, "startEvent": "associate-of-inyan-in-the-west", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)" }], "notes": "Wakíŋyaŋ, the Winged One, is reckoned the associate of Íŋyaŋ. He dwells in the West on a mountain peak; the beating of his wings is thunder, the flash of his eyes is lightning, and he brings the cleansing storms. He is the patron of the heyókȟa (sacred clown/contrary)." },
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 1, "startEvent": "war-on-the-water-monsters", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)" }], "notes": "Wakíŋyaŋ wages perpetual war against Uŋktéhi and the water monsters, striking them with his lightning; the bones of the great beasts he slew are said to lie petrified in the Badlands." }
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "emergence-as-the-sky-and-motion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 50-54"
+     }
     ],
-    "domains": [
-      { "sphereId": "thunder-and-lightning", "contextTag": "lifelong", "term": { "value": "Wakíŋyaŋ", "script": "Lakota", "rom": "Wakinyan" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980)" }] },
-      { "sphereId": "storm-and-the-west", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }] }
+    "notes": "Škáŋ is the Sky and the source of all motion and energy; he came into being with the separation of Íŋyaŋ, Maká, and the waters, and he gives motion, spirit, and life to all that exists."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 1,
+    "startEvent": "supreme-judge-of-the-gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance (AMNH 16, 1917); Lakota Myth (1983)"
+     }
     ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "created-by", "personId": "lakota_inyan", "era": "second-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)" }], "notes": "Reckoned the associate of Íŋyaŋ, the Rock." },
-      { "kind": "enemy", "personId": "lakota_unktehi", "era": "second-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)" }], "notes": "Eternal adversary of Uŋktéhi the water monster; the Thunder of the sky against the serpent of the waters." }
+    "notes": "Acknowledged as the great judge among the gods, Škáŋ settles the disputes of the Superior Gods — binding Maká to Íŋyaŋ, judging Wí and the Moon, and condemning the deceiving Ité to wear two faces (Aŋóg Ité). He apportions to each being its spirit (naǧí) and life-breath (niyá)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Škáŋ",
+     "script": "Lakota",
+     "rom": "Skan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 50-54"
+     }
+    ]
+   },
+   {
+    "sphereId": "motion-and-life",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tákuškaŋškaŋ",
+     "script": "Lakota",
+     "rom": "Taku Skan Skan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "lakota_wohpe",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
     ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }, { "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }], "weight": "secondary" } ],
-    "notes": "Wakíŋyaŋ, the Winged One or Thunderbird, is an Associate God, the active companion of Íŋyaŋ. Dwelling in the West, his wing-beats are thunder and his glance is lightning; he brings the storms that purify the world and is the patron of the contrary heyókȟa. He is the perpetual enemy of Uŋktéhi and the water monsters, striking them with his bolts — a primary axis of opposition (sky against water) in Lakota cosmology."
+    "notes": "Wóȟpe, the Falling Star and Mediator, is the daughter of Škáŋ; Walker's informants name her father as Škáŋ and call her 'of the star people.'"
+   },
+   {
+    "kind": "creator-of",
+    "personId": "lakota_tate",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "Škáŋ created Tȟaté (the Wind) to be his companion and helper; Tȟaté is reckoned the associate of Škáŋ."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Škáŋ (Tákuškaŋškaŋ, 'that which moves'), the Sky, is the third Superior God and in many of Walker's accounts the supreme animating power — the source of all motion and energy, who gives to every being its spirit and breath. He is the great judge among the gods, settling their quarrels and decreeing the order of the cosmos. He created the Wind (Tȟaté) as his companion and is the father of the mediator Wóȟpe."
+ },
+ {
+  "id": "lakota_wi",
+  "name": {
+   "primary": "Wí",
+   "alt": [
+    "Wi",
+    "Aŋpétu Wí (Day-Sun)",
+    "the Sun"
+   ],
+   "transliterations": {
+    "lakota": "Wí",
+    "etymology": "Lakota 'sun'; chief of the Superior Gods, source of light, warmth, and the power of generation."
+   }
   },
-  {
-    "id": "lakota_wohpe",
-    "name": { "primary": "Wóȟpe", "alt": ["Wohpe", "Whope", "the Falling Star", "the Mediator", "the Beautiful One", "White Buffalo Calf Woman", "Ptesáŋ Wíŋ", "Pte Ská Wiŋ"], "transliterations": { "lakota": "Wóȟpe", "etymology": "Lakota, associated with the falling/shooting star (meteor) and with 'mediation/peace'; the Beautiful One who reconciles." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": ["lakota_skan"],
-    "parentRoles": { "lakota_skan": "paternal" },
-    "temporal": { "era": "second-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 0, "startEvent": "daughter-of-skan-the-mediator", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)" }], "notes": "Wóȟpe, the Falling Star, is the daughter of Škáŋ and is 'of the star people.' She is the mediator (the Beautiful One) who reconciles the oppositions among the gods and all beings, creating harmony; she dwelt in the lodge of Tȟaté and helped raise the Whirlwind Yumní, and is given as the wife of the South Wind (Okáǧa)." },
-      { "typeStatus": "deity", "era": "third-world", "eraOrdering": 1, "startEvent": "coming-as-white-buffalo-calf-woman", "sources": [{ "kind": "secondary", "reference": "Powers, Oglala Religion (1977); Walker, Lakota Belief and Ritual (1980)" }], "notes": "The sources identify Wóȟpe with White Buffalo Calf Woman (Ptesáŋ Wíŋ / Pte Ská Wiŋ), who came to the Lakota people, brought the Sacred Calf Pipe (čhaŋnúŋpa) and the rites that accompany it, taught them to live rightly, and departed turning into a white buffalo calf." }
-    ],
-    "domains": [
-      { "sphereId": "peace-and-mediation", "contextTag": "lifelong", "term": { "value": "Wóȟpe", "script": "Lakota", "rom": "Wohpe" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980)" }] },
-      { "sphereId": "the-falling-star", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983)" }] },
-      { "sphereId": "the-sacred-pipe", "contextTag": "as White Buffalo Calf Woman", "term": { "value": "čhaŋnúŋpa", "script": "Lakota", "rom": "chanunpa" }, "sources": [{ "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }] }
-    ],
-    "faculties": [],
-    "materialCulture": [
-      { "id": "sacred-calf-pipe", "name": "Sacred Calf Pipe (Pte Hiŋčála Čhaŋnúŋpa)", "kind": "ritual-object", "role": "bringer", "sources": [{ "kind": "secondary", "reference": "Powers, Oglala Religion (1977); J. E. Brown, The Sacred Pipe (1953)" }], "notes": "As White Buffalo Calf Woman she brought the Sacred Calf Pipe and the seven rites to the Lakota." }
-    ],
-    "relations": [
-      { "kind": "father", "personId": "lakota_skan", "era": "second-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)" }], "notes": "Daughter of Škáŋ; Walker's informants name her father as Škáŋ." }
-    ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }, { "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }], "weight": "secondary" } ],
-    "notes": "Wóȟpe, the Falling Star and Mediator (the Beautiful One), is an Associate God and the daughter of Škáŋ. As the great reconciler she harmonizes the oppositions among gods and beings; in the wind cycle she dwelt in Tȟaté's lodge, raised the Whirlwind Yumní, and became the wife of the South Wind. Walker's sources and later scholarship identify her with White Buffalo Calf Woman (Ptesáŋ Wíŋ), who came to the people, brought the Sacred Calf Pipe and its rites, and departed as a white buffalo calf — making her the patroness of the pipe and of peace."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "first-world"
   },
-  {
-    "id": "lakota_iktomi",
-    "name": { "primary": "Iktómi", "alt": ["Iktomi", "Ikto", "Unktomi", "Inktomi", "Ksá (former name)", "the Spider", "the Trickster"], "transliterations": { "lakota": "Iktómi", "etymology": "Lakota, 'spider'; the trickster and culture hero, formerly Ksá, the god of wisdom." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["lakota_inyan"],
-    "parentRoles": { "lakota_inyan": "paternal" },
-    "temporal": { "era": "second-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "first-world", "eraOrdering": 0, "startEvent": "born-as-ksa-god-of-wisdom", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Powers, Oglala Religion (1977)" }], "notes": "The first-born son of Íŋyaŋ, he was originally Ksá, the god of wisdom, who invented language, names, stories, and games." },
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 1, "startEvent": "demotion-to-trickster-spider", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)" }], "notes": "For his meddling — notably contriving with Ité the deception at the Feast of the Gods that estranged Sun and Moon — Ksá was stripped of his honor as wisdom and made Iktómi, the Spider, a trickster forever scheming, often outwitting others but as often the dupe of his own cleverness. He is nonetheless a culture hero who shaped much of the present world." }
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "coming-forth-as-the-sun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-54"
+     }
     ],
-    "domains": [
-      { "sphereId": "trickery-and-cunning", "contextTag": "lifelong", "term": { "value": "Iktómi", "script": "Lakota", "rom": "Iktomi" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983)" }] },
-      { "sphereId": "wisdom-and-invention", "contextTag": "as Ksá", "term": { "value": "Ksá", "script": "Lakota", "rom": "Ksa" }, "sources": [{ "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }] }
+    "notes": "Wí, the Sun, was brought forth to give light and warmth to Maká; he is named chief of the Superior Gods, the patron of the four cardinal virtues and the great ceremony of the Sun Dance (Wiwáŋyaŋg Wačípi) is danced in his honor."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 1,
+    "startEvent": "feast-of-the-gods-and-estrangement-from-hanwi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
     ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "father", "personId": "lakota_inyan", "era": "first-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (1983); Powers, Oglala Religion (1977)" }], "notes": "First-born son of Íŋyaŋ, the Rock." }
+    "notes": "At the Feast of the Gods, Wí, deceived by the schemes of Iktómi and the two-faced Ité, allowed Ité to take the seat of his wife Haŋwí (the Moon). For shaming his wife, Škáŋ decreed that Wí and Haŋwí be separated — he to rule the day, she the night — and that she should hide her face for shame, which is why the moon waxes and wanes."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Wí",
+     "script": "Lakota",
+     "rom": "Wi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-54"
+     }
+    ]
+   },
+   {
+    "sphereId": "light-and-warmth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance (AMNH 16, 1917)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "lakota_hanwi",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
     ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, Lakota Myth (Jahner ed., 1983)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }, { "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }], "weight": "secondary" } ],
-    "notes": "Iktómi, the Spider, is the Lakota trickster and culture hero, the first-born son of Íŋyaŋ the Rock. Originally Ksá, the god of wisdom who invented language, stories, names, and games, he was demoted to trickster after his scheming — including the deception that separated the Sun and Moon. As Iktómi he is endlessly cunning yet frequently the victim of his own tricks, the subject of a vast cycle of teaching-tales, and a shaper of the world as the people now find it."
+    "notes": "Husband of Haŋwí the Moon; the two were estranged by Škáŋ's judgment so that one rules the day and the other the night."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wí, the Sun, is the fourth Superior God and is named chief among them — the source of light, warmth, and generative power, patron of the cardinal virtues (bravery, fortitude, generosity, wisdom). The supreme ceremony of the Lakota, the Sun Dance, is offered to him. In the great origin narrative he was deceived at the Feast of the Gods into preferring the two-faced Ité over his wife Haŋwí, for which Škáŋ separated the Sun from the Moon, giving day and night their division."
+ },
+ {
+  "id": "lakota_hanwi",
+  "name": {
+   "primary": "Haŋwí",
+   "alt": [
+    "Hanwi",
+    "Haŋhépi-wí (Night-Sun)",
+    "the Moon"
+   ],
+   "transliterations": {
+    "lakota": "Haŋwí",
+    "etymology": "Lakota haŋ 'night' + wí 'sun/luminary' = 'night-sun', the Moon; the companion (associate) of the Sun."
+   }
   },
-  {
-    "id": "lakota_unktehi",
-    "name": { "primary": "Uŋktéhi", "alt": ["Unktehi", "Uncegila", "Unktehila", "the Water Monster", "the Horned Serpent"], "transliterations": { "lakota": "Uŋktéhi", "etymology": "Lakota, the great water monster/horned serpent dwelling in deep waters; associated with floods and the underwater powers." } },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Sioux/Lakota",
-    "primaryTradition": "Sioux/Lakota",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "second-world" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 0, "startEvent": "dweller-in-the-deep-waters", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)" }], "notes": "Uŋktéhi is the great water monster — a horned, serpent-like being of the rivers, lakes, and deep waters, mistress of the underwater powers and a cause of floods and drownings. Her power is wakȟáŋ but dangerous, opposed to the powers of the sky." },
-      { "typeStatus": "deity", "era": "second-world", "eraOrdering": 1, "startEvent": "war-with-the-thunderbird", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)" }], "notes": "Locked in perpetual enmity with Wakíŋyaŋ the Thunderbird, who hunts the water monsters with his lightning. The fossil bones found in the Badlands and river bluffs were explained as the petrified remains of the Uŋktéhi slain by the Thunder." }
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "companion-of-the-sun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54"
+     }
     ],
-    "domains": [
-      { "sphereId": "water-and-the-deep", "contextTag": "lifelong", "term": { "value": "Uŋktéhi", "script": "Lakota", "rom": "Unktehi" }, "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980)" }] },
-      { "sphereId": "flood-and-the-underwater-powers", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }] }
+    "notes": "Haŋwí, the Moon, is the associate (kȟolá) of Wí; created from him to be his companion, she at first travelled the sky together with the Sun as his wife."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "shaming-and-the-phases-of-the-moon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
     ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "enemy", "personId": "lakota_wakinyan", "era": "second-world", "sources": [{ "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)" }], "notes": "Eternal adversary of Wakíŋyaŋ the Thunderbird; the serpent of the waters against the Thunder of the sky." }
+    "notes": "Arriving late to the Feast of the Gods, Haŋwí found the two-faced Ité sitting in her place beside Wí; ashamed, she drew her robe over her face. Škáŋ separated her from the Sun, giving her dominion over the night; ever after she covers her face when near her husband (the new moon) and shows it fully when farthest from him (the full moon)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Haŋwí",
+     "script": "Lakota",
+     "rom": "Hanwi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54"
+     }
+    ]
+   },
+   {
+    "sphereId": "night",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "lakota_wi",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
     ],
-    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)" }, { "kind": "secondary", "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)" }, { "kind": "secondary", "reference": "Powers, Oglala Religion (1977)" }], "weight": "secondary" } ],
-    "notes": "Uŋktéhi, the great water monster, is a horned serpent-being of the deep waters and the chief of the underwater powers — wakȟáŋ but dangerous, bringer of floods and drownings. She is the eternal enemy of the Thunderbird Wakíŋyaŋ, who hunts her with lightning; this opposition of water and sky is a fundamental polarity of Lakota cosmology, and the fossil bones of the Plains were taken for the remains of the Uŋktéhi the Thunder had slain."
-  }
+    "notes": "Wife of Wí the Sun, from whom she was separated by Škáŋ's decree after the Feast of the Gods."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Haŋwí, the Moon ('night-sun'), is the first of the four Associate Gods (Wakáŋ Kȟoláya), the companion of the Sun. Made to travel the sky with Wí as his wife, she was publicly shamed at the Feast of the Gods when the two-faced Ité usurped her seat; Škáŋ separated her from the Sun and gave her the night. Her waxing and waning are explained as her covering and uncovering her face in shame as she nears or leaves her estranged husband."
+ },
+ {
+  "id": "lakota_tate",
+  "name": {
+   "primary": "Tȟaté",
+   "alt": [
+    "Tate",
+    "the Wind"
+   ],
+   "transliterations": {
+    "lakota": "Tȟaté",
+    "etymology": "Lakota 'wind'; the Wind, created by Škáŋ as his companion and father of the Four Winds."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "created-as-companion-of-skan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54; Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Tȟaté, the Wind, was created by Škáŋ to be his associate and companion; he is the intermediary who carries out the will of the Sky and dwells at the center of the world."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-ite-and-the-four-winds",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (Jahner ed., 1983)"
+     }
+    ],
+    "notes": "Tȟaté took Ité (daughter of Old Man and Old Woman) as wife and fathered four sons. After Ité's disgrace and banishment as the two-faced Aŋóg Ité, Tȟaté raised the four boys, then sent them to the four quarters of the world; they became the Four Winds (Tȟaté Tób), and the late-born fifth son Yumní became the Whirlwind."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tȟaté",
+     "script": "Lakota",
+     "rom": "Tate"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-four-directions",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "lakota_skan",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "Created by Škáŋ the Sky to be his companion; the associate of Škáŋ."
+   },
+   {
+    "kind": "spouse",
+    "personId": "lakota_anog_ite",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (Jahner ed., 1983)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tȟaté, the Wind, is an Associate God, created by Škáŋ to be his companion and the agent of his will at the center of the world. He married Ité before her transformation into the two-faced Aŋóg Ité, and fathered the Four Winds (Tȟaté Tób) — the West (Eyá), North (Wazíya/Yatá), East (Yaŋpá), and South (Okáǧa) — whom he dispatched to the cardinal quarters, together with the late-born Whirlwind (Yumní). The cycle of the Four Winds underlies much Lakota ritual and the round of the year."
+ },
+ {
+  "id": "lakota_wakinyan",
+  "name": {
+   "primary": "Wakíŋyaŋ",
+   "alt": [
+    "Wakinyan",
+    "Wakíŋyaŋ Tȟáŋka",
+    "the Winged One",
+    "the Thunderbird",
+    "the Thunder Beings"
+   ],
+   "transliterations": {
+    "lakota": "Wakíŋyaŋ",
+    "etymology": "Lakota wakȟáŋ 'sacred' + kiŋyáŋ 'to fly/winged' = 'sacred winged one'; the Thunderbird, whose wing-beats are thunder and whose glance is lightning."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "associate-of-inyan-in-the-west",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Wakíŋyaŋ, the Winged One, is reckoned the associate of Íŋyaŋ. He dwells in the West on a mountain peak; the beating of his wings is thunder, the flash of his eyes is lightning, and he brings the cleansing storms. He is the patron of the heyókȟa (sacred clown/contrary)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "war-on-the-water-monsters",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Wakíŋyaŋ wages perpetual war against Uŋktéhi and the water monsters, striking them with his lightning; the bones of the great beasts he slew are said to lie petrified in the Badlands."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "thunder-and-lightning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Wakíŋyaŋ",
+     "script": "Lakota",
+     "rom": "Wakinyan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980)"
+     }
+    ]
+   },
+   {
+    "sphereId": "storm-and-the-west",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "lakota_inyan",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Reckoned the associate of Íŋyaŋ, the Rock."
+   },
+   {
+    "kind": "enemy",
+    "personId": "lakota_unktehi",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Eternal adversary of Uŋktéhi the water monster; the Thunder of the sky against the serpent of the waters."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wakíŋyaŋ, the Winged One or Thunderbird, is an Associate God, the active companion of Íŋyaŋ. Dwelling in the West, his wing-beats are thunder and his glance is lightning; he brings the storms that purify the world and is the patron of the contrary heyókȟa. He is the perpetual enemy of Uŋktéhi and the water monsters, striking them with his bolts — a primary axis of opposition (sky against water) in Lakota cosmology."
+ },
+ {
+  "id": "lakota_wohpe",
+  "name": {
+   "primary": "Wóȟpe",
+   "alt": [
+    "Wohpe",
+    "Whope",
+    "the Falling Star",
+    "the Mediator",
+    "the Beautiful One",
+    "White Buffalo Calf Woman",
+    "Ptesáŋ Wíŋ",
+    "Pte Ská Wiŋ"
+   ],
+   "transliterations": {
+    "lakota": "Wóȟpe",
+    "etymology": "Lakota, associated with the falling/shooting star (meteor) and with 'mediation/peace'; the Beautiful One who reconciles."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lakota_skan"
+  ],
+  "parentRoles": {
+   "lakota_skan": "paternal"
+  },
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "daughter-of-skan-the-mediator",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Wóȟpe, the Falling Star, is the daughter of Škáŋ and is 'of the star people.' She is the mediator (the Beautiful One) who reconciles the oppositions among the gods and all beings, creating harmony; she dwelt in the lodge of Tȟaté and helped raise the Whirlwind Yumní, and is given as the wife of the South Wind (Okáǧa)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "third-world",
+    "eraOrdering": 1,
+    "startEvent": "coming-as-white-buffalo-calf-woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977); Walker, Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "The sources identify Wóȟpe with White Buffalo Calf Woman (Ptesáŋ Wíŋ / Pte Ská Wiŋ), who came to the Lakota people, brought the Sacred Calf Pipe (čhaŋnúŋpa) and the rites that accompany it, taught them to live rightly, and departed turning into a white buffalo calf."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "peace-and-mediation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Wóȟpe",
+     "script": "Lakota",
+     "rom": "Wohpe"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-falling-star",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sacred-pipe",
+    "contextTag": "as White Buffalo Calf Woman",
+    "term": {
+     "value": "čhaŋnúŋpa",
+     "script": "Lakota",
+     "rom": "chanunpa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "sacred-calf-pipe",
+    "name": "Sacred Calf Pipe (Pte Hiŋčála Čhaŋnúŋpa)",
+    "kind": "ritual-object",
+    "role": "bringer",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977); J. E. Brown, The Sacred Pipe (1953)"
+     }
+    ],
+    "notes": "As White Buffalo Calf Woman she brought the Sacred Calf Pipe and the seven rites to the Lakota."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "lakota_skan",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Daughter of Škáŋ; Walker's informants name her father as Škáŋ."
+   },
+   {
+    "kind": "spouse",
+    "personId": "lakota_okaga",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "companion",
+    "personId": "lakota_yumni",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wóȟpe, the Falling Star and Mediator (the Beautiful One), is an Associate God and the daughter of Škáŋ. As the great reconciler she harmonizes the oppositions among gods and beings; in the wind cycle she dwelt in Tȟaté's lodge, raised the Whirlwind Yumní, and became the wife of the South Wind. Walker's sources and later scholarship identify her with White Buffalo Calf Woman (Ptesáŋ Wíŋ), who came to the people, brought the Sacred Calf Pipe and its rites, and departed as a white buffalo calf — making her the patroness of the pipe and of peace."
+ },
+ {
+  "id": "lakota_iktomi",
+  "name": {
+   "primary": "Iktómi",
+   "alt": [
+    "Iktomi",
+    "Ikto",
+    "Unktomi",
+    "Inktomi",
+    "Ksá (former name)",
+    "the Spider",
+    "the Trickster"
+   ],
+   "transliterations": {
+    "lakota": "Iktómi",
+    "etymology": "Lakota, 'spider'; the trickster and culture hero, formerly Ksá, the god of wisdom."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lakota_inyan"
+  ],
+  "parentRoles": {
+   "lakota_inyan": "paternal"
+  },
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "born-as-ksa-god-of-wisdom",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "The first-born son of Íŋyaŋ, he was originally Ksá, the god of wisdom, who invented language, names, stories, and games."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "demotion-to-trickster-spider",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "For his meddling — notably contriving with Ité the deception at the Feast of the Gods that estranged Sun and Moon — Ksá was stripped of his honor as wisdom and made Iktómi, the Spider, a trickster forever scheming, often outwitting others but as often the dupe of his own cleverness. He is nonetheless a culture hero who shaped much of the present world."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "trickery-and-cunning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Iktómi",
+     "script": "Lakota",
+     "rom": "Iktomi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983)"
+     }
+    ]
+   },
+   {
+    "sphereId": "wisdom-and-invention",
+    "contextTag": "as Ksá",
+    "term": {
+     "value": "Ksá",
+     "script": "Lakota",
+     "rom": "Ksa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "lakota_inyan",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "First-born son of Íŋyaŋ, the Rock."
+   },
+   {
+    "kind": "ally",
+    "personId": "lakota_anog_ite",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (Jahner ed., 1983)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Iktómi, the Spider, is the Lakota trickster and culture hero, the first-born son of Íŋyaŋ the Rock. Originally Ksá, the god of wisdom who invented language, stories, names, and games, he was demoted to trickster after his scheming — including the deception that separated the Sun and Moon. As Iktómi he is endlessly cunning yet frequently the victim of his own tricks, the subject of a vast cycle of teaching-tales, and a shaper of the world as the people now find it."
+ },
+ {
+  "id": "lakota_unktehi",
+  "name": {
+   "primary": "Uŋktéhi",
+   "alt": [
+    "Unktehi",
+    "Uncegila",
+    "Unktehila",
+    "the Water Monster",
+    "the Horned Serpent"
+   ],
+   "transliterations": {
+    "lakota": "Uŋktéhi",
+    "etymology": "Lakota, the great water monster/horned serpent dwelling in deep waters; associated with floods and the underwater powers."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "dweller-in-the-deep-waters",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Uŋktéhi is the great water monster — a horned, serpent-like being of the rivers, lakes, and deep waters, mistress of the underwater powers and a cause of floods and drownings. Her power is wakȟáŋ but dangerous, opposed to the powers of the sky."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "war-with-the-thunderbird",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Locked in perpetual enmity with Wakíŋyaŋ the Thunderbird, who hunts the water monsters with his lightning. The fossil bones found in the Badlands and river bluffs were explained as the petrified remains of the Uŋktéhi slain by the Thunder."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "water-and-the-deep",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Uŋktéhi",
+     "script": "Lakota",
+     "rom": "Unktehi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980)"
+     }
+    ]
+   },
+   {
+    "sphereId": "flood-and-the-underwater-powers",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "lakota_wakinyan",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Eternal adversary of Wakíŋyaŋ the Thunderbird; the serpent of the waters against the Thunder of the sky."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Uŋktéhi, the great water monster, is a horned serpent-being of the deep waters and the chief of the underwater powers — wakȟáŋ but dangerous, bringer of floods and drownings. She is the eternal enemy of the Thunderbird Wakíŋyaŋ, who hunts her with lightning; this opposition of water and sky is a fundamental polarity of Lakota cosmology, and the fossil bones of the Plains were taken for the remains of the Uŋktéhi the Thunder had slain."
+ }
 ]
 ```
 

@@ -1,0 +1,476 @@
+Sweep pool 19 — worker W19 — family-completion for window #19 (Norse cosmogonic + Vanir + Völsung-cycle kin named in existing entities' prose).
+
+All figures below are NAMED in the prose (notes / lifecycle / relations) of window-19 registry entities and were absent from the frozen corpus snapshot (sp[id] checked absent). Each kinship is attested in primary Old Norse sources (Prose Edda / Poetic Edda / Völsunga saga / Heimskringla) confirmed via web search at work level.
+
+```json
+[
+ {
+  "id": "norse_borr",
+  "name": {"primary": "Borr", "alt": ["Bor", "Burr", "Borð"], "transliterations": {"old-norse": "Borr"}},
+  "type": "deity",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "unknown",
+  "origin": "canon",
+  "parentIds": ["norse_buri"],
+  "temporal": {"era": "primordial"},
+  "lifecycle": [{"typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "begotten-by-Buri", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Son of the primordial god Búri; took to wife Bestla, daughter of the giant Bölþorn, and by her fathered Odin, Vili and Vé. The intervening generation between Búri the first god and the Æsir who shape the world."}],
+  "domains": [{"sphereId": "primordial-ancestry", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6; Poetic Edda, Völuspá 4 (Burs synir)"}]}],
+  "relations": [
+   {"kind": "father-of", "personId": "norse_odin", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Father of Odin by Bestla; the existing Odin entry should add norse_borr to parentIds."},
+   {"kind": "father-of", "personId": "norse_vili", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Father of Vili by Bestla."},
+   {"kind": "father-of", "personId": "norse_ve", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Father of Vé by Bestla."},
+   {"kind": "spouse", "personId": "norse_bestla", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Husband of Bestla, daughter of the giant Bölþorn."}
+  ]
+ },
+ {
+  "id": "norse_bestla",
+  "name": {"primary": "Bestla", "alt": [], "transliterations": {"old-norse": "Bestla"}},
+  "type": "numen",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "unknown",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "primordial"},
+  "lifecycle": [{"typeStatus": "numen", "era": "primordial", "eraOrdering": 0, "startEvent": "marriage-to-Borr", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Giantess daughter of the jötunn Bölþorn; wife of Borr and by him mother of Odin, Vili and Vé. Hávamál 140 calls the maternal uncle of Odin (her brother, son of Bölþorn) the source of nine mighty spells, making Bestla the jötunn-line through which the Æsir descend."}],
+  "domains": [{"sphereId": "primordial-ancestry", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6; Poetic Edda, Hávamál 140 (Bölþorns... her brother)"}]}],
+  "relations": [
+   {"kind": "mother-of", "personId": "norse_odin", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Mother of Odin by Borr; the existing Odin entry should add norse_bestla to parentIds."},
+   {"kind": "mother-of", "personId": "norse_vili", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Mother of Vili by Borr."},
+   {"kind": "mother-of", "personId": "norse_ve", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Mother of Vé by Borr."},
+   {"kind": "spouse", "personId": "norse_borr", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Wife of Borr, son of Búri."}
+  ]
+ },
+ {
+  "id": "norse_vili",
+  "name": {"primary": "Vili", "alt": [], "transliterations": {"old-norse": "Vili"}},
+  "type": "deity",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": ["norse_borr", "norse_bestla"],
+  "temporal": {"era": "primordial"},
+  "lifecycle": [{"typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "slaying-of-Ymir-and-world-creation", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6-8"}], "notes": "One of the three sons of Borr and Bestla. With his brothers Odin and Vé he slew the frost-giant Ymir and shaped the world from his body; the brothers also gave the first humans Askr and Embla their gifts. In Lokasenna 26 Loki taunts Frigg that she had taken Vili and Vé to her bed."}],
+  "domains": [{"sphereId": "creation-cosmogony", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6-8"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6-8; Poetic Edda, Lokasenna 26"}]}],
+  "relations": [
+   {"kind": "sibling", "personId": "norse_odin", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Brother of Odin; both sons of Borr and Bestla."},
+   {"kind": "sibling", "personId": "norse_ve", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Brother of Vé."}
+  ]
+ },
+ {
+  "id": "norse_ve",
+  "name": {"primary": "Vé", "alt": ["Ve"], "transliterations": {"old-norse": "Vé"}},
+  "type": "deity",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": ["norse_borr", "norse_bestla"],
+  "temporal": {"era": "primordial"},
+  "lifecycle": [{"typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "slaying-of-Ymir-and-world-creation", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6-9"}], "notes": "Youngest of the three sons of Borr and Bestla. With Odin and Vili he slew Ymir and made the world; the brothers gave Askr and Embla sense, speech and the comely outward shape. Named with Vili in Lokasenna 26."}],
+  "domains": [{"sphereId": "creation-cosmogony", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6-9"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6-9; Poetic Edda, Lokasenna 26"}]}],
+  "relations": [
+   {"kind": "sibling", "personId": "norse_odin", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Brother of Odin; both sons of Borr and Bestla."},
+   {"kind": "sibling", "personId": "norse_vili", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"}], "notes": "Brother of Vili."}
+  ]
+ },
+ {
+  "id": "norse_gerdr",
+  "name": {"primary": "Gerðr", "alt": ["Gerd", "Gerth", "Gerðr Gymisdóttir"], "transliterations": {"old-norse": "Gerðr"}},
+  "type": "numen",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "wooing-by-Skirnir", "sources": [{"kind": "primary", "reference": "Poetic Edda, Skírnismál; Snorri Sturluson, Gylfaginning 37"}], "notes": "Radiantly beautiful jötunn-maiden, daughter of the giant Gymir and Aurboða. Freyr saw her from Hliðskjálf and pined for her; his servant Skírnir wooed her on his behalf, winning her by threats of a curse, and she agreed to meet Freyr at Barri. By Freyr she bore Fjǫlnir, ancestor of the Yngling kings."}],
+  "domains": [{"sphereId": "fertility-earth", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Poetic Edda, Skírnismál; Snorri Sturluson, Gylfaginning 37"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Poetic Edda, Skírnismál; Vǫluspá hin skamma (Hyndluljóð); Snorri Sturluson, Prose Edda, Gylfaginning 37"}]}],
+  "relations": [
+   {"kind": "spouse", "personId": "norse_freyr", "sources": [{"kind": "primary", "reference": "Poetic Edda, Skírnismál; Snorri Sturluson, Gylfaginning 37"}], "notes": "Won as wife by the Vanir god Freyr through his servant Skírnir; reciprocal needed on norse_freyr."},
+   {"kind": "mother-of", "personId": "norse_fjolnir", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Heimskringla, Ynglinga saga 10"}], "notes": "Mother of Fjǫlnir by Freyr."}
+  ]
+ },
+ {
+  "id": "norse_fjolnir",
+  "name": {"primary": "Fjǫlnir", "alt": ["Fjölnir", "Fjolnir"], "transliterations": {"old-norse": "Fjǫlnir"}},
+  "type": "demigod",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": ["norse_freyr", "norse_gerdr"],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "reign-at-Uppsala", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Heimskringla, Ynglinga saga 10-11"}], "notes": "Son of the Vanir god Freyr and the giantess Gerðr; first king of the Yngling line who was not himself reckoned a god. He ruled at Uppsala in peace and plenty after Freyr, and drowned in a vat of mead while visiting the Danish king Peace-Fróði. Eponymous ancestor of the kings of Sweden and Norway through the Ynglingar."}],
+  "domains": [{"sphereId": "kingship-sovereignty", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Heimskringla, Ynglinga saga 10-11"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Heimskringla, Ynglinga saga 10-11; Þjóðólfr of Hvinir, Ynglingatal"}]}],
+  "relations": [
+   {"kind": "father", "personId": "norse_freyr", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Ynglinga saga 10"}], "notes": "Son of Freyr by Gerðr; founder of the historical Yngling royal genealogy."}
+  ]
+ },
+ {
+  "id": "norse_angrboda",
+  "name": {"primary": "Angrboða", "alt": ["Angrboda", "Angrboða"], "transliterations": {"old-norse": "Angrboða"}},
+  "type": "numen",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "bearing-the-brood-of-Loki", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 34"}], "notes": "Giantess in Jötunheimar, mate of Loki, called the mother of monsters. By Loki she bore the wolf Fenrir, the Midgard-serpent Jǫrmungandr and Hel, queen of the dead; the gods, foreseeing disaster, took the three children away. Named as mother of Fenrir in Vǫluspá hin skamma."}],
+  "domains": [{"sphereId": "destruction-monstrosity", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 34"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 34; Poetic Edda, Hyndluljóð 40 (Vǫluspá hin skamma)"}]}],
+  "relations": [
+   {"kind": "mother-of", "personId": "norse_fenrir", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Gylfaginning 34; Hyndluljóð 40"}], "notes": "Mother of the wolf Fenrir by Loki; the existing Fenrir entry should add norse_angrboda to parentIds."},
+   {"kind": "mother-of", "personId": "norse_jormungandr", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Gylfaginning 34"}], "notes": "Mother of the Midgard-serpent Jǫrmungandr by Loki; existing Jǫrmungandr entry should add norse_angrboda to parentIds."},
+   {"kind": "mother-of", "personId": "norse_hel", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Gylfaginning 34"}], "notes": "Mother of Hel by Loki; existing Hel entry already names Angrboða in its notes and should add norse_angrboda to parentIds."}
+  ]
+ },
+ {
+  "id": "norse_rindr",
+  "name": {"primary": "Rindr", "alt": ["Rind", "Rinda"], "transliterations": {"old-norse": "Rindr"}},
+  "type": "numen",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "begetting-of-Vali", "sources": [{"kind": "primary", "reference": "Poetic Edda, Baldrs draumar 11; Snorri Sturluson, Skáldskaparmál"}], "notes": "The being (reckoned among the goddesses, or a mortal princess of the east, depending on the source) who in the western halls bore Váli to Odin. Baldrs draumar foretells that Rindr will bear the one-night-old avenger of Baldr; Saxo Grammaticus (Gesta Danorum 3) tells of Othinus winning Rinda by guile to beget the avenger Bous."}],
+  "domains": [{"sphereId": "fertility-earth", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Poetic Edda, Baldrs draumar 11"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Poetic Edda, Baldrs draumar 11; Snorri Sturluson, Skáldskaparmál; Saxo Grammaticus, Gesta Danorum 3 (Rinda)"}]}],
+  "relations": [
+   {"kind": "mother-of", "personId": "norse_vali", "sources": [{"kind": "primary", "reference": "Poetic Edda, Baldrs draumar 11; Snorri Sturluson, Skáldskaparmál"}], "notes": "Mother of Váli by Odin; the existing Váli entry names Rindr in its notes and should add norse_rindr to parentIds."}
+  ]
+ },
+ {
+  "id": "norse_thjazi",
+  "name": {"primary": "Þjazi", "alt": ["Thjazi", "Thiazi", "Þjassi"], "transliterations": {"old-norse": "Þjazi"}},
+  "type": "numen",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "abduction-of-Idunn-and-death", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skáldskaparmál 1-2; Poetic Edda, Haustlǫng"}], "notes": "Mighty giant, son of Ölvaldi and brother of Gangr and Iði. In eagle-shape he seized Iðunn and her apples with the compelled help of Loki; pursuing her rescue, he was lured over Asgard, his wings caught fire and the gods killed him. Odin cast his eyes into the sky as stars. His daughter Skaði came armed to avenge him and was given atonement and the god Njǫrðr as husband."}],
+  "domains": [{"sphereId": "destruction-monstrosity", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Skáldskaparmál 1-2"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skáldskaparmál 1-2; Þjóðólfr of Hvinir, Haustlǫng; Poetic Edda, Grímnismál 11, Lokasenna 50-51"}]}],
+  "relations": [
+   {"kind": "father-of", "personId": "norse_skadi", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Skáldskaparmál 1-2; Gylfaginning 23"}], "notes": "Father of the winter-goddess Skaði; the existing Skaði entry names Þjazi as her father and should add norse_thjazi to parentIds."}
+  ]
+ },
+ {
+  "id": "norse_nanna",
+  "name": {"primary": "Nanna", "alt": ["Nanna Nepsdóttir"], "transliterations": {"old-norse": "Nanna"}},
+  "type": "deity",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "death-of-grief-at-Baldrs-pyre", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 49"}], "notes": "Goddess called the daughter of Nepr, wife of Baldr and mother of the justice-god Forseti. When Baldr was laid on the funeral ship Hringhorni she broke down and died of grief and was burned beside him; in Hel she gave Hermóðr gifts to carry back to Frigg and Fulla."}],
+  "domains": [{"sphereId": "marriage-motherhood", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 49"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 38, 49; Poetic Edda, Hyndluljóð 20"}]}],
+  "relations": [
+   {"kind": "spouse", "personId": "norse_baldr", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Gylfaginning 49"}], "notes": "Wife of Baldr, named at his pyre in the funeral account within the Baldr entry; reciprocal needed on norse_baldr."},
+   {"kind": "mother-of", "personId": "norse_forseti", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Gylfaginning 38"}], "notes": "Mother of Forseti by Baldr; the existing Forseti entry lists only Baldr and should add norse_nanna to parentIds."}
+  ]
+ },
+ {
+  "id": "norse_magni",
+  "name": {"primary": "Magni", "alt": [], "transliterations": {"old-norse": "Magni"}},
+  "type": "demigod",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": ["norse_thor"],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "lifting-of-Hrungnirs-leg", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skáldskaparmál 17; Vafþrúðnismál 51"}], "notes": "Son of Thor by the giantess Járnsaxa; his name means Strength. At three nights old he alone could lift the leg of the slain giant Hrungnir off his father, and Thor gave him the horse Gullfaxi that had belonged to Hrungnir. With his brother Móði he survives Ragnarök and inherits Mjǫllnir, the hammer of Thor."}],
+  "domains": [{"sphereId": "strength-might", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Skáldskaparmál 17"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Skáldskaparmál 17; Poetic Edda, Vafþrúðnismál 51"}]}],
+  "relations": [
+   {"kind": "father", "personId": "norse_thor", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Skáldskaparmál 17"}], "notes": "Son of Thor by the giantess Járnsaxa."},
+   {"kind": "sibling", "personId": "norse_modi", "sources": [{"kind": "primary", "reference": "Poetic Edda, Vafþrúðnismál 51"}], "notes": "Brother of Móði; together they inherit Mjǫllnir after Ragnarök."}
+  ]
+ },
+ {
+  "id": "norse_modi",
+  "name": {"primary": "Móði", "alt": ["Modi"], "transliterations": {"old-norse": "Móði"}},
+  "type": "demigod",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": ["norse_thor"],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "inheritance-of-Mjollnir", "sources": [{"kind": "primary", "reference": "Poetic Edda, Vafþrúðnismál 51; Snorri Sturluson, Gylfaginning 53"}], "notes": "Son of Thor; his name means Courage or Wrath. With his brother Magni he is foretold to survive Ragnarök and to wield the hammer Mjǫllnir of their father Thor in the renewed world. Snorri lists him among the sons of Thor in the kennings for the hammer-god."}],
+  "domains": [{"sphereId": "war-battle", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Poetic Edda, Vafþrúðnismál 51"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Poetic Edda, Vafþrúðnismál 51; Snorri Sturluson, Prose Edda, Gylfaginning 53, Skáldskaparmál 4"}]}],
+  "relations": [
+   {"kind": "father", "personId": "norse_thor", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Skáldskaparmál 4"}], "notes": "Son of Thor."},
+   {"kind": "sibling", "personId": "norse_magni", "sources": [{"kind": "primary", "reference": "Poetic Edda, Vafþrúðnismál 51"}], "notes": "Brother of Magni."}
+  ]
+ },
+ {
+  "id": "norse_saemingr",
+  "name": {"primary": "Sæmingr", "alt": ["Saeming", "Sæming"], "transliterations": {"old-norse": "Sæmingr"}},
+  "type": "demigod",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": ["norse_skadi"],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "founding-of-the-Hladir-line", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Heimskringla, prologue and Ynglinga saga 8; Eyvindr skáldaspillir, Háleygjatal"}], "notes": "Son of the giantess Skaði; ancestor of the jarls of Hlaðir, from whom Jarl Hákon traced his descent in Eyvindrs Háleygjatal. The paternity is given variously by the sources and is contested: Snorris Ynglinga saga makes him Skaðis son by Odin, while the Háleygjatal as cited in the Heimskringla prologue makes him son of Yngvi-Freyr. The mother Skaði is the constant element, so only the maternal link is set here; the contested father is left unlinked."}],
+  "domains": [{"sphereId": "kingship-sovereignty", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Heimskringla, Ynglinga saga 8"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Snorri Sturluson, Heimskringla, prologue and Ynglinga saga 8; Eyvindr skáldaspillir, Háleygjatal"}]}],
+  "relations": [
+   {"kind": "mother", "personId": "norse_skadi", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Ynglinga saga 8"}], "notes": "Son of Skaði; the existing Njǫrðr and Odin entries both discuss the contested paternity of Sæmingr by Skaði."}
+  ]
+ },
+ {
+  "id": "norse_borghild",
+  "name": {"primary": "Borghild", "alt": ["Borghildr"], "transliterations": {"old-norse": "Borghildr"}},
+  "type": "mortal",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "mortal", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "marriage-to-Sigmund-and-poisoning-of-Sinfjotli", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 10; Poetic Edda, prose passage Frá dauða Sinfjǫtla"}], "notes": "Wife of Sigmund at Bralund and mother of Helgi Hundingsbane. When her stepson Sinfjötli killed her brother in a quarrel over a woman, she avenged him by poisoning Sinfjötli with a drinking-horn; Sigmund then drove her away."}],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Völsunga saga ch. 10; Poetic Edda, prose passage Frá dauða Sinfjǫtla; Helgakviða Hundingsbana I-II"}]}],
+  "relations": [
+   {"kind": "spouse", "personId": "norse_sigmund", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 10"}], "notes": "Wife of Sigmund; the existing Sigmund entry names Borghild as mother of Helgi. Reciprocal needed on norse_sigmund."},
+   {"kind": "mother-of", "personId": "norse_helgi_hundingsbane", "sources": [{"kind": "primary", "reference": "Helgakviða Hundingsbana I, prose; Völsunga saga ch. 9"}], "notes": "Mother of Helgi Hundingsbane by Sigmund; the existing Helgi entry lists only Sigmund and should add norse_borghild to parentIds."},
+   {"kind": "enemy", "personId": "norse_sinfjotli", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 10"}], "notes": "Poisoned her stepson Sinfjötli in vengeance for her brother; reciprocal needed on norse_sinfjotli."}
+  ]
+ },
+ {
+  "id": "norse_hjordis",
+  "name": {"primary": "Hjördís", "alt": ["Hjordis", "Hjǫrdís"], "transliterations": {"old-norse": "Hjǫrdís"}},
+  "type": "mortal",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "mortal", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "widowing-and-birth-of-Sigurd", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 11-12"}], "notes": "Daughter of King Eylimi and last wife of the aged Sigmund. A rejected suitor brought war and Sigmund fell; dying, he gave her the shards of his sword Gram for the son to come. She bore Sigurd posthumously and was taken in by Alf, son of King Hjálprek, where Sigurd was reared."}],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Völsunga saga ch. 11-12; Poetic Edda, prose of Reginsmál and Frá dauða Sinfjǫtla"}]}],
+  "relations": [
+   {"kind": "spouse", "personId": "norse_sigmund", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 11"}], "notes": "Last wife of Sigmund; the existing Sigmund entry names Hjördís as mother of Sigurd. Reciprocal needed on norse_sigmund."},
+   {"kind": "mother-of", "personId": "norse_sigurd", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 12"}], "notes": "Mother of Sigurd by Sigmund, born after the death of Sigmund; the existing Sigurd entry lists only Sigmund and should add norse_hjordis to parentIds."}
+  ]
+ },
+ {
+  "id": "norse_siggeir",
+  "name": {"primary": "Siggeir", "alt": ["Siggeirr"], "transliterations": {"old-norse": "Siggeirr"}},
+  "type": "mortal",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "mortal", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "treachery-against-the-Volsungs", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 3-8"}], "notes": "King of Gautland who married Signý against her will. Coveting the sword of Odin that Sigmund alone could draw, he lured Völsung and his sons to Gautland, killed Völsung and set the captured brothers in stocks where a she-wolf devoured all but Sigmund. He was finally burned to death in his hall by Sigmund and Sinfjötli, and Signý chose to die with him."}],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Völsunga saga ch. 3-8"}]}],
+  "relations": [
+   {"kind": "spouse", "personId": "norse_signy", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 3"}], "notes": "Husband of Signý of the Völsungs; the existing Signý entry names her marriage to Siggeir. Reciprocal needed on norse_signy."},
+   {"kind": "enemy", "personId": "norse_sigmund", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 4-8"}], "notes": "Killer of Völsung and arch-foe of Sigmund, on whom he was finally avenged; reciprocal needed on norse_sigmund."}
+  ]
+ },
+ {
+  "id": "norse_sigrun",
+  "name": {"primary": "Sigrún", "alt": ["Sigrun"], "transliterations": {"old-norse": "Sigrún"}},
+  "type": "scion",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "scion", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "winning-of-Helgi-and-mourning", "sources": [{"kind": "primary", "reference": "Poetic Edda, Helgakviða Hundingsbana I-II"}], "notes": "Valkyrie, daughter of King Högni, betrothed against her will to Höðbroddr. She sought out Helgi Hundingsbane and chose him; he defeated Höðbroddr and the sons of Granmarr at Frekastein to win her. After her brother Dagr slew Helgi with the spear of Odin, she met her dead lover once more in his grave-mound and died of grief. The lovers were said to be reborn as Helgi Haddingjaskati and Kára."}],
+  "domains": [{"sphereId": "war-battle", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Poetic Edda, Helgakviða Hundingsbana I-II"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Poetic Edda, Helgakviða Hundingsbana I-II; Völsunga saga ch. 9"}]}],
+  "relations": [
+   {"kind": "spouse", "personId": "norse_helgi_hundingsbane", "sources": [{"kind": "primary", "reference": "Poetic Edda, Helgakviða Hundingsbana II"}], "notes": "Valkyrie-bride of Helgi Hundingsbane, who is named in his entry as the valkyrie Sigrún. Reciprocal needed on norse_helgi_hundingsbane."}
+  ]
+ },
+ {
+  "id": "norse_brynhildr",
+  "name": {"primary": "Brynhildr", "alt": ["Brynhild", "Brunhild", "Brynhildr Buðladóttir"], "transliterations": {"old-norse": "Brynhildr"}},
+  "type": "scion",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "scion", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "betrayal-and-death-on-Sigurds-pyre", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 21-31; Poetic Edda, Sigrdrífumál, Brot, Sigurðarkviða"}], "notes": "Shield-maiden and valkyrie, daughter of Buðli and sister of Atli, punished by Odin with a sleep ringed by fire until a fearless man should wake her. Sigurd woke her and they pledged faith, but under a potion he forgot her and won her for Gunnar in his own shape. When the deceit was uncovered she drove the Gjúkungs to kill Sigurd, then died on his pyre. By Sigurd she had borne the daughter Áslaug, sent away to be reared in secret."}],
+  "domains": [{"sphereId": "war-battle", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Poetic Edda, Sigrdrífumál; Völsunga saga ch. 21"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Völsunga saga ch. 21-31; Poetic Edda, Sigrdrífumál, Brot af Sigurðarkviðu, Helreið Brynhildar"}]}],
+  "relations": [
+   {"kind": "lover", "personId": "norse_sigurd", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 21-29"}], "notes": "Lover of Sigurd and mother of his daughter Áslaug; reciprocal needed on norse_sigurd."},
+   {"kind": "mother-of", "personId": "norse_aslaug", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 29; Ragnars saga loðbrókar"}], "notes": "Mother of Áslaug by Sigurd; the existing Áslaug entry names Brynhildr as her mother in its notes and lists only Sigurd in parentIds — should add norse_brynhildr."}
+  ]
+ },
+ {
+  "id": "norse_gudrun",
+  "name": {"primary": "Gudrún", "alt": ["Gudrun", "Guðrún", "Guðrún Gjúkadóttir"], "transliterations": {"old-norse": "Guðrún"}},
+  "type": "mortal",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "mortal", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "marriage-to-Sigurd-and-after", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 25-44; Poetic Edda, Guðrúnarkviða I-III, Guðrúnarhvǫt"}], "notes": "Daughter of King Gjúki and Grímhildr, sister of Gunnar and Högni. Wedded to Sigurd by a potion of Grímhildr, she bore him the daughter Svanhild; after his murder she was married to Atli and later to Jónakr, by whom she had Hamðir, Sǫrli and Erp. When Svanhild was trampled to death by Jǫrmunrekkr she goaded Hamðir and Sǫrli to the last revenge."}],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Völsunga saga ch. 25-44; Poetic Edda, Guðrúnarkviða I-III, Hamðismál, Guðrúnarhvǫt"}]}],
+  "relations": [
+   {"kind": "spouse", "personId": "norse_sigurd", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 28"}], "notes": "Wife of Sigurd and mother of Svanhild; reciprocal needed on norse_sigurd."},
+   {"kind": "mother-of", "personId": "norse_svanhild", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 29; Hamðismál"}], "notes": "Mother of Svanhild by Sigurd; the existing Svanhild entry names Gudrún as her mother and lists only Sigurd in parentIds — should add norse_gudrun."},
+   {"kind": "mother-of", "personId": "norse_hamdir", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál; Guðrúnarhvǫt"}], "notes": "Mother of Hamðir by Jónakr."},
+   {"kind": "mother-of", "personId": "norse_sorli", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál; Guðrúnarhvǫt"}], "notes": "Mother of Sǫrli by Jónakr."}
+  ]
+ },
+ {
+  "id": "norse_jormunrekkr",
+  "name": {"primary": "Jǫrmunrekkr", "alt": ["Jörmunrekkr", "Jormunrek", "Ermanaric"], "transliterations": {"old-norse": "Jǫrmunrekkr"}},
+  "type": "mortal",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "mortal", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "execution-of-Svanhild-and-vengeance", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál; Völsunga saga ch. 42-44; Snorri Sturluson, Skáldskaparmál 42"}], "notes": "Mighty king of the Goths (the legendary reflex of the historical Ermanaric) who married Svanhild, daughter of Sigurd. On the slanderous charge that she had betrayed him with his son Randvér, he hanged Randvér and had Svanhild trampled to death by horses, which would not harm her until her face was hooded. Her half-brothers Hamðir and Sǫrli maimed him in revenge and were stoned to death by his men on the counsel of Odin."}],
+  "domains": [{"sphereId": "kingship-sovereignty", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Snorri Sturluson, Skáldskaparmál 42"}]}],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál, Guðrúnarhvǫt; Völsunga saga ch. 42-44; Snorri Sturluson, Skáldskaparmál 42; Bragi Boddason, Ragnarsdrápa"}]}],
+  "relations": [
+   {"kind": "spouse", "personId": "norse_svanhild", "sources": [{"kind": "primary", "reference": "Völsunga saga ch. 42; Hamðismál"}], "notes": "Husband of Svanhild, whom he had trampled to death; the existing Svanhild entry names Jǫrmunrekkr as her husband. Reciprocal needed on norse_svanhild."},
+   {"kind": "enemy", "personId": "norse_hamdir", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál"}], "notes": "Slain-maimed by Hamðir avenging Svanhild; reciprocal handled on Hamðir below."}
+  ]
+ },
+ {
+  "id": "norse_hamdir",
+  "name": {"primary": "Hamðir", "alt": ["Hamdir", "Hamðir Jónakrsson"], "transliterations": {"old-norse": "Hamðir"}},
+  "type": "mortal",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": ["norse_gudrun"],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "mortal", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "vengeance-for-Svanhild", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál; Völsunga saga ch. 44"}], "notes": "Son of Guðrún by King Jónakr and half-brother of Svanhild. Goaded by his mother, he and his brother Sǫrli set out to avenge Svanhild on Jǫrmunrekkr; they slew their half-brother Erp on the way, then cut off the hands and feet of the king but, lacking Erp to behead him, were stoned to death when an old one-eyed man (Odin) told the Goths their armour turned iron."}],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál, Guðrúnarhvǫt; Völsunga saga ch. 44"}]}],
+  "relations": [
+   {"kind": "mother", "personId": "norse_gudrun", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál"}], "notes": "Son of Guðrún by Jónakr."},
+   {"kind": "sibling", "personId": "norse_sorli", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál"}], "notes": "Brother of Sǫrli; both sons of Guðrún and Jónakr."},
+   {"kind": "half-sibling", "personId": "norse_svanhild", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál; Völsunga saga ch. 44"}], "notes": "Half-brother of Svanhild (shared mother Guðrún); the existing Svanhild entry names Hamðir as her half-brother. Reciprocal needed on norse_svanhild."},
+   {"kind": "enemy", "personId": "norse_jormunrekkr", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál"}], "notes": "Maimed Jǫrmunrekkr avenging Svanhild; reciprocal of the edge declared on norse_jormunrekkr."}
+  ]
+ },
+ {
+  "id": "norse_sorli",
+  "name": {"primary": "Sǫrli", "alt": ["Sörli", "Sorli", "Sǫrli Jónakrsson"], "transliterations": {"old-norse": "Sǫrli"}},
+  "type": "mortal",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": ["norse_gudrun"],
+  "temporal": {"era": "mythic-prehistoric"},
+  "lifecycle": [{"typeStatus": "mortal", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "vengeance-for-Svanhild", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál; Völsunga saga ch. 44"}], "notes": "Son of Guðrún by King Jónakr and half-brother of Svanhild. With his brother Hamðir he rode to avenge Svanhild on Jǫrmunrekkr; the brothers killed their half-brother Erp en route, maimed the Gothic king, and were stoned to death by his men on the advice of Odin. The deaths of the Jónakrssynir close the Vǫlsung-Niflung cycle."}],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál, Guðrúnarhvǫt; Völsunga saga ch. 44"}]}],
+  "relations": [
+   {"kind": "mother", "personId": "norse_gudrun", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál"}], "notes": "Son of Guðrún by Jónakr."},
+   {"kind": "sibling", "personId": "norse_hamdir", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál"}], "notes": "Brother of Hamðir; both sons of Guðrún and Jónakr."},
+   {"kind": "half-sibling", "personId": "norse_svanhild", "sources": [{"kind": "primary", "reference": "Poetic Edda, Hamðismál; Völsunga saga ch. 44"}], "notes": "Half-brother of Svanhild (shared mother Guðrún); the existing Svanhild entry names Sǫrli as her half-brother. Reciprocal needed on norse_svanhild."}
+  ]
+ }
+]
+```

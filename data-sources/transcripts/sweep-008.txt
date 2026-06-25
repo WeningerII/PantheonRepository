@@ -1,0 +1,643 @@
+Batch 8 — alphabetical family sweep (chuukese_* through dogon_*).
+
+Of the 50 batch entities, all 50 already exist in the corpus and were read in full and analysed semantically.
+The vast majority are ALREADY-WIRED (their attested parent/sibling/spouse kin already carry reciprocal
+edges) or are SOLITARY / collective / role-class deities with no attested individuated kin (correctly
+"complete"). The figures below are the NAMED-NO-ENTRY attested kin discovered in the prose and verified
+against the secondary literature, authored here and wired back into the existing batch figures. Pure
+parent-to-child completion edges between two already-existing corpus figures are listed in the final
+report as WIRE-EDGE items (mother-of / father-of are directional, not symmetric).
+
+```json
+[
+ {
+  "id": "circassian_khimish",
+  "name": {
+   "primary": "The Slain Nart Father",
+   "alt": [
+    "Khimish",
+    "Khamis",
+    "Khimis",
+    "Xaemyc",
+    "Khymych"
+   ],
+   "transliterations": {
+    "circassian": "Khimish",
+    "etymology": "Adyghe Nart name Khimish; the patronymic of his son is Khimishuquo (Khimish plus qwe, son of Khimish). Counterpart of Ossetian Xaemyc, father of Batraz. Exact Cyrillic orthography not source-verified for this batch."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic / Nart age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic / Nart age",
+    "eraOrdering": 1,
+    "startEvent": "A Nart of the host who marries the tiny water-sprite Lady Isp of the dwarf forest-people and so fathers the avenger Pataraz.",
+    "endEvent": "Treacherously slain by jealous fellow Narts for taking a non-Nart bride; his murder sets the blood-feud that his unborn son swears to avenge.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), the tale How the Nart Khimish Married and How He Was Killed."
+     }
+    ],
+    "notes": "His death is the charter of the Pataraz vengeance cycle."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "heroic-warfare",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), the Khimish material (a Nart of the warrior host)."
+     }
+    ]
+   },
+   {
+    "sphereId": "marriage-and-kinship",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), How the Nart Khimish Married and How He Was Killed."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "marry_the_water_sprite",
+    "name": "marries the water-sprite Lady Isp of the forest-folk",
+    "inheritability": "none",
+    "scopeTags": [
+     "marriage",
+     "exogamy"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), How the Nart Khimish Married (Khimish weds the tiny Lady Isp of the Mara dwarf forest-people)."
+     }
+    ],
+    "notes": "The union across the Nart and non-Nart worlds that produces Pataraz and provokes his murder."
+   },
+   {
+    "id": "father_the_avenger",
+    "name": "fathers the avenger Pataraz",
+    "inheritability": "none",
+    "scopeTags": [
+     "paternity",
+     "lineage"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Georges Dumezil, Legendes sur les Nartes (1930) (Xaemyc/Khimish, father of the steel avenger-hero); John Colarusso, Nart Sagas from the Caucasus (2002)."
+     }
+    ],
+    "notes": "The patronymic Khimishuquo (son of Khimish) marks Pataraz throughout the cycle."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "circassian_isp",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), How the Nart Khimish Married (Khimish takes Lady Isp the water-sprite to wife)."
+     }
+    ],
+    "notes": "Reciprocated within this batch on circassian_isp."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Khimish is the Circassian Nart who married the non-Nart water-sprite Lady Isp and was treacherously killed by jealous Narts for it; he is the father of the avenger Pataraz (patronymic Khimishuquo, son of Khimish), the counterpart of Ossetian Xaemyc, father of Batraz.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), the tale How the Nart Khimish Married and How He Was Killed and the Ballad of Khimishuquo Pataraz."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Georges Dumezil, Legendes sur les Nartes (Paris, 1930) (Xaemyc, father of the avenger Batraz, in the Ossetian parallel)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Authored as the named, attested father of circassian_pataraz, who already records the genealogy in prose (Khimish and the water-sprite Lady Isp) but with parentIds empty. Classed demigod (a Nart of the semi-divine host). WIRE-EDGE: add circassian_khimish to circassian_pataraz.parentIds and a father edge on Khimish to Pataraz (parent-to-child completion, reported in the run notes)."
+ },
+ {
+  "id": "circassian_isp",
+  "name": {
+   "primary": "The Frog-Like Water-Sprite",
+   "alt": [
+    "Lady Isp",
+    "Isp",
+    "Lady Spe",
+    "Spe",
+    "Isf"
+   ],
+   "transliterations": {
+    "circassian": "Isp",
+    "etymology": "Adyghe Isp (also Spe), the name of a tiny frog-like water-sprite of the Mara or Marakwa dwarf forest-people; cf. the Ispy/Spy dwarf-folk of Circassian lore. Exact Cyrillic orthography not source-verified for this batch."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic / Nart age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "mythic / Nart age",
+    "eraOrdering": 1,
+    "startEvent": "A clever frog-like water-sprite of the dwarf forest-people who weds the Nart Khimish and bears the avenger Pataraz.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), How the Nart Khimish Married (Lady Isp, the tiny water-sprite of the Mara forest-folk)."
+     }
+    ],
+    "notes": "A non-Nart nature-sprite, mother of a great Nart."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "water-and-springs",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (Lady Isp, a water-sprite of the forest-folk)."
+     }
+    ]
+   },
+   {
+    "sphereId": "craft-and-invention",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (the clever Lady Isp supplies the knowledge of how to make the sickle)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "design_the_sickle",
+    "name": "supplies the design of the first sickle",
+    "inheritability": "none",
+    "scopeTags": [
+     "invention",
+     "craft-knowledge"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (the clever frog-like Lady Isp shows how the sickle should be shaped, after the curve of a serpent or the moon)."
+     }
+    ],
+    "notes": "Her wit, not her size, makes her a culture-bringer of the Nart world."
+   },
+   {
+    "id": "bear_the_avenger",
+    "name": "bears the avenger Pataraz to Khimish",
+    "inheritability": "none",
+    "scopeTags": [
+     "maternity",
+     "lineage"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), the Pataraz cycle (Pataraz, son of Khimish and the water-sprite Lady Isp)."
+     }
+    ],
+    "notes": "Mother of the Nart who avenges Khimish."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "circassian_khimish",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), How the Nart Khimish Married (Khimish weds Lady Isp the water-sprite)."
+     }
+    ],
+    "notes": "Reciprocated within this batch on circassian_khimish."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Lady Isp (Spe) is a clever frog-like water-sprite of the Mara dwarf forest-people who marries the Nart Khimish and is the mother of the avenger Pataraz; she is remembered for supplying the design of the sickle.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), How the Nart Khimish Married and How He Was Killed and the Pataraz cycle."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Authored as the named, attested mother of circassian_pataraz, whose prose already names her (the water-sprite Lady Isp) with parentIds empty. Classed numen (a non-Nart nature-sprite of the waters). WIRE-EDGE: add circassian_isp to circassian_pataraz.parentIds and a mother edge on Isp to Pataraz (parent-to-child completion, reported in the run notes)."
+ },
+ {
+  "id": "chuukese_hit",
+  "name": {
+   "primary": "The Octopus Goddess",
+   "alt": [
+    "Hit",
+    "Hiti",
+    "Inahit"
+   ],
+   "transliterations": {
+    "Chuukese": "Hit",
+    "etymology": "Chuukese name Hit (Hiti), the octopus goddess of the Carolinian Olifat cycle; recorded in the central-Carolinian transmission of the myth. The morphology is not securely segmented in the sources and is left unanalysed."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chuukese",
+  "primaryTradition": "Chuukese",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "The octopus goddess, mother of the mortal Tarisso; by her lewd dance she causes the sky-wife Hamulul to faint, clearing the way for Lugeilan to lie with Tarisso and so for Olifat to be conceived.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Account of the Carolinian Olifat cycle (Hit the octopus goddess, mother of Tarisso, whose dance enables the conception of Olifat); see William A. Lessa, Tales from Ulithi Atoll (1961) and the central-Carolinian Olifat material."
+     }
+    ],
+    "notes": "A sea-goddess whose ribald dance is the hinge of the Olifat birth-myth."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea-and-ocean",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Hit",
+     "script": "Latin",
+     "rom": "Hit"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Hit the octopus goddess of the sea-world)."
+     }
+    ]
+   },
+   {
+    "sphereId": "dance-and-revelry",
+    "contextTag": "episodic",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Hit dances so lewdly that the sky-wife Hamulul faints)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lewd_dance_of_distraction",
+    "name": "dances so lewdly that the rival sky-wife faints",
+    "inheritability": "none",
+    "scopeTags": [
+     "seduction",
+     "ritual-dance"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (when Hamulul, Lugeilan sky-wife, would block the union with Tarisso, Hit dances so lewdly that Hamulul faints and is carried back to the sky)."
+     }
+    ],
+    "notes": "Her dance removes the obstacle to her daughter Tarisso conceiving Olifat."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "chuukese_tarisso",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bollig, Die Bewohner der Truk-Inseln (1927); Mitchell, Micronesian mythology — Hit the octopus-goddess, mother of Tarisso in the Olifat birth-cycle."
+     }
+    ],
+    "notes": "Her daughter Tarisso, by Lugeilan, is the mother of the trickster Olifat."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hit is the Carolinian octopus goddess, mother of the mortal woman Tarisso; in the Olifat birth-myth her lewd dance makes the sky-wife Hamulul faint, allowing Lugeilan to lie with Tarisso and Olifat to be conceived.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "William A. Lessa, Tales from Ulithi Atoll (University of California Press, 1961) (Iolofath/Olofat cycle of the central Carolines)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Survey of Micronesian (Carolinian) mythology recording Hit the octopus goddess as mother of Tarisso in the Olifat conception story."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Authored as the named, attested mother of chuukese_tarisso (and so maternal grandmother of Olifat). Classed deity (octopus sea-goddess). Her gendered ribald dance is the narrative hinge of the Olifat conception. WIRE-EDGE handled within this batch via Tarisso parentIds and the reciprocal mother edge here."
+ },
+ {
+  "id": "chuukese_tarisso",
+  "name": {
+   "primary": "The Mortal Mother of the Trickster",
+   "alt": [
+    "Tarisso",
+    "Tarissa",
+    "Ligoupup"
+   ],
+   "transliterations": {
+    "Chuukese": "Tarisso",
+    "etymology": "Chuukese name Tarisso, the mortal woman who bears Olifat to the sky-god Lugeilan; daughter of the octopus goddess Hit. The morphology is not securely segmented in the sources and is left unanalysed."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Chuukese",
+  "primaryTradition": "Chuukese",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "chuukese_hit"
+  ],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "A mortal woman, daughter of the octopus goddess Hit, taken by the sky-god Lugeilan as his earthly wife.",
+    "endEvent": "Bears the trickster Olifat (in some tellings he is born from her head); as a mortal she belongs to the human, not the divine, register.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William A. Lessa, Tales from Ulithi Atoll (1961) and the central-Carolinian Olifat material (Tarisso, mortal wife of Lugeilan and mother of Olifat)."
+     }
+    ],
+    "notes": "Her mortality is what makes her son Olifat a demigod rather than a full god."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "human-lineage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tarisso",
+     "script": "Latin",
+     "rom": "Tarisso"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Tarisso the mortal mother of the trickster Olifat)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear_the_trickster",
+    "name": "bears the trickster Olifat to the sky-god Lugeilan",
+    "inheritability": "none",
+    "scopeTags": [
+     "maternity",
+     "mortal-divine-union"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Olifat, son of the god Lugeilan and the mortal Tarisso; in some tellings born from his mother head)."
+     }
+    ],
+    "notes": "The mortal half of the union that yields the Carolinian trickster."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "chuukese_lugeilan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Tarisso the mortal wife of the sky-god Lugeilan / Lugeleng)."
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED on the existing chuukese_lugeilan (add a spouse edge back to chuukese_tarisso)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tarisso is the mortal woman, daughter of the octopus goddess Hit, who becomes the earthly wife of the sky-god Lugeilan and the mother of the Carolinian trickster Olifat; her mortality is why Olifat is reckoned a demigod.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "William A. Lessa, Tales from Ulithi Atoll (University of California Press, 1961) (Iolofath/Olofat cycle)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Survey of Micronesian (Carolinian) mythology recording Tarisso, daughter of Hit, as the mortal mother of Olifat by Lugeilan."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Authored as the named, attested mortal mother of chuukese_olifat, who currently records only his divine father (parentIds chuukese_lugeilan). Daughter of the octopus goddess Hit (chuukese_hit, also authored this batch). WIRE-EDGE: add chuukese_tarisso to chuukese_olifat.parentIds; RECIPROCAL-NEEDED for the Tarisso to Lugeilan spouse edge (reported in the run notes)."
+ },
+ {
+  "id": "cree_mahihkan",
+  "name": {
+   "primary": "Wolf, the Trickster Younger Brother",
+   "alt": [
+    "Mahihkan",
+    "Mahikan",
+    "Maheekun",
+    "the Wolf"
+   ],
+   "transliterations": {
+    "plains-cree-sro": "mahihkan",
+    "popular": "Mahihkan"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Cree",
+  "primaryTradition": "Cree",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "myth-age (sacred-story / âtayôhkêwin time)"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "myth-age (sacred-story / âtayôhkêwin time)",
+    "eraOrdering": 1,
+    "startEvent": "The Wolf, younger brother and companion of the transformer Wisahkecahk in the myth-age.",
+    "endEvent": "Drowned and killed by the Water-Lynxes and Horned Serpents of the deep water, which earns them the lasting enmity of Wisahkecahk.",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (Mahihkan the Wolf, younger brother of Wîsahkêcâhk, slain by the underwater lynxes and horned serpents); see the Cree narratives collected in Bloomfield, Plains Cree Texts (1934)."
+     }
+    ],
+    "notes": "His death by the water-powers is the charter of the feud between Wisahkecahk and the underwater manitous."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mahihkan",
+     "script": "Latn",
+     "rom": "mahihkan"
+    },
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (the Wolf brother, a being of the myth-age beside the transformer)."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-underworld-waters",
+    "contextTag": "episodic",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (Mahihkan is taken and killed by the Water-Lynxes / Horned Serpents of the deep water)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "wolf_companion_of_the_transformer",
+    "name": "runs with Wisahkecahk as his wolf-brother and helper",
+    "inheritability": "none",
+    "scopeTags": [
+     "companionship",
+     "kinship"
+    ],
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (the Wolf, younger brother of the transformer, hunts and travels with him)."
+     }
+    ],
+    "notes": "The wolf-brother of the Cree transformer, paralleling the wolf-nephew/brother of Anishinaabe Nanabozho."
+   },
+   {
+    "id": "slain_by_the_water_powers",
+    "name": "is drowned by the underwater lynxes and serpents",
+    "inheritability": "none",
+    "scopeTags": [
+     "death",
+     "water-monsters"
+    ],
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (Mahihkan killed by the Water-Lynxes / Horned Serpents, provoking Wisahkecahk vengeance)."
+     }
+    ],
+    "notes": "His killing sets Wisahkecahk against the water-manitous."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "cree_wisahkecahk",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (Mahihkan the Wolf is the younger brother of Wîsahkêcâhk)."
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED on the existing cree_wisahkecahk (add a sibling edge back to cree_mahihkan)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mahihkan, the Wolf, is the younger brother and companion of the Cree transformer Wisahkecahk; in many Cree narratives he is drowned and killed by the Water-Lynxes or Horned Serpents of the deep water, which earns those underwater powers the lasting enmity of Wisahkecahk.",
+    "citations": [
+     {
+      "kind": "ethnography",
+      "reference": "Leonard Bloomfield, Plains Cree Texts (American Ethnological Society 16, 1934) (wîsahkêcâhk and the Wolf)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Survey of Cree oral tradition recording Mahihkan the Wolf as the younger brother of Wîsahkêcâhk, slain by the underwater lynxes and horned serpents."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Authored as the named, attested younger brother of cree_wisahkecahk, who is currently recorded as solitary. Classed demigod (a being of the myth-age, brother of the transformer), paralleling the wolf-kin of Anishinaabe Nanabozho. RECIPROCAL-NEEDED: add a sibling edge on cree_wisahkecahk back to cree_mahihkan (reported in the run notes)."
+ }
+]
+```

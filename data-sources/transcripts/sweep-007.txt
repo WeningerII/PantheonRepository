@@ -1,0 +1,1517 @@
+Pantheon Registry — Batch 7 (strict alphabetical family sweep)
+Range processed: cheyenne_maheo … chuukese_anulap (50 entities)
+
+METHOD
+Loaded the corpus by running app/data.js in a node vm with a window+localStorage
+stub (per scripts/validate-transcripts.cjs loadCorpus). Read every one of the 50
+batch entities' full prose (notes + lifecycle[].notes + relations, semantically,
+not by regex) and catalogued each named parent / sibling / spouse / child.
+
+The Chinese sage-king genealogy (Huangdi → Shaohao/Changyi → Zhuanxu; Diku → Yao;
+Gun → Yu → Qi; Gusou/Wo Deng → Shun; Yao → Ehuang/Nuying) is already densely and
+correctly interlinked in the corpus — CONFIRMED rather than re-authored. The
+Chukchi directional Beings (Dawn, Mid-day, Zenith, Pole-Star) are explicitly
+"no attested divine parent" and need no kin; their companion edges are wired.
+Chuukese Anulap, Chibiabos (Anishinaabe), and Chimalman (Aztec) likewise have
+their existing kin wired (chibiabos parents/siblings; chimalman lover Mixcoatl).
+
+What this sweep ADDS is the set of canonically-NAMED, attested direct kin of batch
+figures that lacked their own entry: the father of Nezha (Li Jing), the eldest
+full-brother of Changyi (Shaohao), the passed-over son of Yao (Danzhu), the
+half-brother of Shun (Xiang), and three of Diku's dynastic-progenitor sons
+(Houji, Xie, Zhi). Each is wired to its existing in-batch parent; the reciprocal
+edges that must be added to the EXISTING corpus figures are listed in the final
+message under WIRE-EDGES / RECIPROCAL-NEEDED.
+
+Verification: WebSearch at work level (Sima Qian, Shiji Ch. 1; Mencius 5A; Shijing
+"Shengmin" and "Xuanniao" odes; Xu Zhonglin, Fengshen Yanyi). No page numbers invented.
+
+```json
+[
+  {
+    "id": "chinese_li_jing",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Li Jing",
+      "alt": [
+        "李靖",
+        "Li Jing the Pagoda-Bearer",
+        "Pagoda-Bearing Heavenly King",
+        "Tota Li Tianwang",
+        "Father of Nezha"
+      ],
+      "transliterations": {
+        "chinese-traditional": "李靖",
+        "chinese-simplified": "李靖",
+        "pinyin": "Lǐ Jìng",
+        "epithet": "托塔天王 (Tuōtǎ Tiānwáng, \"Pagoda-Bearing Heavenly King\")"
+      }
+    },
+    "type": "deity",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "apotheosed",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "commander-of-Chentang-Pass",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567-1620"
+          }
+        ],
+        "notes": "Mortal general commanding Chentang Pass (陳塘關); a disciple of the immortal Master Du'e (度厄真人). Father by his wife Lady Yin (殷夫人) of three sons: Jinzha, Muzha, and the youngest, Nezha."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "conflict-with-Nezha",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567-1620"
+          }
+        ],
+        "notes": "After Nezha slew the Dragon-King's son Ao Bing and brought ruin on the household, father and son fell into mortal enmity; the lotus-reborn Nezha sought his life. The immortal Randeng (燃燈道人) gave Li Jing the wish-fulfilling pagoda by which he masters and is reconciled (under compulsion) to his rebellious son — the origin of his Pagoda-Bearer epithet."
+      },
+      {
+        "typeStatus": "deity",
+        "vitalStatus": "apotheosed",
+        "era": "mythic",
+        "eraOrdering": 2,
+        "startEvent": "canonization-as-Pagoda-Bearing-Heavenly-King",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Meir Shahar, Oedipal God: The Chinese Nezha and His Indian Origins (2015)"
+          }
+        ],
+        "notes": "Installed in the Daoist celestial bureaucracy as Tota Li Tianwang (托塔李天王), the Pagoda-Bearing Heavenly King and a marshal of Heaven serving the Jade Emperor; in Journey to the West he and Nezha are dispatched to subdue Sun Wukong. The figure fuses the historical Tang general Li Jing with the Buddhist guardian-king Vaisravana (毘沙門天 / 多聞天), whose son Nalakubara underlies Nezha."
+      }
+    ],
+    "domains": [
+      {
+        "id": "war",
+        "term": {
+          "value": "戰",
+          "script": "Chinese (hanzi)",
+          "rom": "zhàn"
+        },
+        "notes": "celestial marshal and martial commander of Heaven",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567-1620",
+            "derived": true
+          }
+        ]
+      },
+      {
+        "id": "guardianship",
+        "term": {
+          "value": "護法",
+          "script": "Chinese (hanzi)",
+          "rom": "hùfǎ"
+        },
+        "notes": "guardian / dharma-protector king, from the Vaisravana substrate",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Meir Shahar, Oedipal God: The Chinese Nezha and His Indian Origins (2015)",
+            "derived": true
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lijing-tota",
+        "name": "Wield the soul-binding wish-fulfilling pagoda",
+        "term": {
+          "value": "托塔",
+          "script": "Chinese (hanzi)",
+          "rom": "tuō tǎ"
+        },
+        "notes": "Bears the golden pagoda given by Randeng that can trap any being, including the reborn Nezha; the source of his Pagoda-Bearer title.",
+        "inheritability": "none",
+        "scopeTags": [
+          "war",
+          "binding"
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567-1620"
+          }
+        ],
+        "ability": true
+      },
+      {
+        "id": "lijing-marshal",
+        "name": "Command the armies of Heaven",
+        "term": {
+          "value": "天兵",
+          "script": "Chinese (hanzi)",
+          "rom": "tiānbīng"
+        },
+        "notes": "As a Heavenly King marshals the celestial troops; sent with Nezha against Sun Wukong.",
+        "inheritability": "none",
+        "scopeTags": [
+          "war"
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Wu Cheng'en, Xiyouji, c. 1592"
+          }
+        ],
+        "ability": true
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "linglong-baota",
+        "kind": "object",
+        "name": "Exquisite Pagoda",
+        "term": {
+          "value": "玲瓏寶塔",
+          "script": "Chinese (hanzi)",
+          "rom": "línglóng bǎotǎ"
+        },
+        "role": "wielder",
+        "notes": "The wish-fulfilling golden pagoda that emits divine fire and imprisons any being; his defining attribute as the Pagoda-Bearing Heavenly King.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567-1620"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Meir Shahar, Oedipal God: The Chinese Nezha (2015)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "epithetId": "托塔天王",
+        "original": "托塔天王",
+        "language": "chinese",
+        "transliteration": "Tuōtǎ Tiānwáng",
+        "contextTag": "cult",
+        "notes": "Pagoda-Bearing Heavenly King; his standing title in the Daoist celestial bureaucracy.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592"
+          }
+        ]
+      },
+      {
+        "epithetId": "毘沙門天王",
+        "original": "毘沙門天王",
+        "language": "chinese",
+        "transliteration": "Píshāmén Tiānwáng",
+        "contextTag": "buddhist",
+        "notes": "Vaisravana, the Heavenly King of the North; the Buddhist guardian-king with whom Li Jing the Pagoda-bearer is identified.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Soothill & Hodous, A Dictionary of Chinese Buddhist Terms (1937), s.v. 毘沙門"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "chinese_nezha",
+        "era": "mythic",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), ch. 12-14"
+          }
+        ],
+        "notes": "Father of Nezha (and of the elder brothers Jinzha and Muzha) by Lady Yin; the father-son enmity after Nezha returns his flesh and is reborn from lotus is the core of the cycle."
+      }
+    ],
+    "linguistic": {
+      "languageFamily": "Sino-Tibetan (Sinitic)",
+      "etymology": "李靖 Lǐ Jìng — the name of the historical Tang general (571-649 CE), surname Lǐ + jìng \"calm, pacify.\" In Fengshen Yanyi this name is attached to a mythic Shang-era commander and fused with the Buddhist guardian-king Vaisravana (毘沙門天), so that the deified Pagoda-Bearer carries both the Tang general's name and the Buddhist Heavenly-King's iconography and son (Nalakubara > Nezha).",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Meir Shahar, Oedipal God: The Chinese Nezha and His Indian Origins (2015)"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567-1620"
+          },
+          {
+            "kind": "primary",
+            "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Pagoda-Bearing Heavenly King (Tota Li Tianwang) of the Daoist celestial bureaucracy and father of Nezha. In Fengshen Yanyi he is the mortal commander of Chentang Pass who fathers Jinzha, Muzha, and Nezha by Lady Yin; after Nezha's lotus-rebirth the immortal Randeng gives him the soul-binding pagoda by which he masters his rebellious son, and he is later canonized as a Heavenly King. The figure fuses the historical Tang general Li Jing (571-649 CE) with the Buddhist guardian-king Vaisravana, whose son Nalakubara underlies the Chinese Nezha. Carried in the registry only as a name in chinese_nezha's notes ('son of Li Jing the Pagoda-Bearer') until materialized here as the paternal link."
+  },
+  {
+    "id": "chinese_shaohao",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Shaohao",
+      "alt": [
+        "少昊",
+        "Shao Hao",
+        "Xuanxiao",
+        "玄囂",
+        "Qingyang",
+        "Jin Tian Shi",
+        "Eldest son of Huangdi and Leizu"
+      ],
+      "transliterations": {
+        "chinese-traditional": "少昊",
+        "chinese-simplified": "少昊",
+        "pinyin": "Shàohào",
+        "alt-personal-name": "Xuanxiao (玄囂, Huangdi's eldest son per Shiji), also Qingyang (青陽)"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [
+      "chinese_huangdi",
+      "chinese_leizu"
+    ],
+    "parentRoles": {
+      "chinese_huangdi": "paternal",
+      "chinese_leizu": "maternal"
+    },
+    "temporal": {
+      "era": "mythic-prehistory"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistory",
+        "eraOrdering": 0,
+        "startEvent": "birth",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1"
+          }
+        ],
+        "notes": "Per Shiji, the eldest of the two sons Leizu bore to Huangdi (the other being Changyi); identified by Sima Qian with Xuanxiao (玄囂), who dwelt at Qingyang by the river. Full brother of chinese_changyi and thus paternal uncle of Zhuanxu."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "sage-king-reigning",
+        "era": "mythic-prehistory",
+        "eraOrdering": 1,
+        "startEvent": "reign-as-bird-officered-sovereign",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zuozhuan, Duke Zhao year 17 (the bird-named offices of Shaohao); Book of Documents tradition listing Shaohao among the Five Emperors"
+          }
+        ],
+        "notes": "In the eastern-bird tradition (Zuozhuan, Shaohao 17) rules a realm whose offices are named for birds; some Five-Emperors lists (the Book of Documents stratum) count Shaohao among the Wu Di. The Shiji main line instead routes the succession Huangdi -> Zhuanxu, so Shaohao's reign is recorded here as a parallel-tradition phase. His clan-name Jin Tian Shi (金天氏, 'Metal-Heaven clan') aligns him with the west/metal in the Five-Phases scheme."
+      },
+      {
+        "vitalStatus": "dead",
+        "era": "mythic-prehistory",
+        "eraOrdering": 2
+      }
+    ],
+    "domains": [
+      {
+        "id": "eldest-son-of-Huangdi-lineage-link",
+        "term": {
+          "value": "玄囂",
+          "script": "Chinese (hanzi)",
+          "rom": "Xuánxiāo"
+        },
+        "notes": "Huangdi's eldest son (Xuanxiao); ancestral link toward Diku and Yao",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1",
+            "derived": true
+          }
+        ]
+      },
+      {
+        "id": "bird-officered-eastern-sovereignty",
+        "term": {
+          "value": "鳥官",
+          "script": "Chinese (hanzi)",
+          "rom": "niǎo guān"
+        },
+        "notes": "the bird-named offices of Shaohao's realm",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zuozhuan, Duke Zhao year 17",
+            "derived": true
+          }
+        ]
+      },
+      {
+        "id": "jin-tian-clan-metal-phase",
+        "term": {
+          "value": "金天氏",
+          "script": "Chinese (hanzi)",
+          "rom": "Jīntiān shì"
+        },
+        "notes": "the Metal-Heaven clan-lineage (west / metal phase)",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Five-Phases correlative tradition; Han apocrypha on the Five Emperors",
+            "derived": true
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shaohao-niaoguan",
+        "name": "Govern through bird-named offices",
+        "term": {
+          "value": "以鳥名官",
+          "script": "Chinese (hanzi)",
+          "rom": "yǐ niǎo míng guān"
+        },
+        "notes": "On his accession auspicious phoenixes appeared, so he ordered his offices after birds (Zuozhuan, Shaohao 17).",
+        "inheritability": "none",
+        "scopeTags": [
+          "sovereignty"
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zuozhuan, Duke Zhao year 17"
+          }
+        ],
+        "ability": true
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "chinese_changyi",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (Leizu bore Huangdi two sons, Xuanxiao and Changyi)"
+          }
+        ],
+        "notes": "Full brother of Changyi; both sons of Huangdi and Leizu. Through Changyi's son Zhuanxu and through Shaohao's own line the later Five-Emperors and Diku/Yao genealogies descend."
+      }
+    ],
+    "linguistic": {
+      "languageFamily": "Sino-Tibetan (Sinitic)",
+      "etymology": "少昊 Shàohào, 'Lesser Brightness' (shào 'lesser, young' + hào 'bright, vast'), paired antithetically with Taihao 太昊 'Great Brightness' (Fuxi). The Shiji personal name 玄囂 Xuánxiāo couples xuán 'dark, mysterious' with xiāo. The clan-name 金天氏 Jin Tian Shi ('Metal-Heaven clan') is a Five-Phases correlative epithet assigning him to the west and the metal phase.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Sima Qian, Shiji Ch. 1"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (Wudi benji)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Zuozhuan, Duke Zhao year 17"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Eldest son of Huangdi and Leizu, full brother of Changyi; identified by the Shiji with Xuanxiao (玄囂) who dwelt at Qingyang. In the eastern-bird tradition (Zuozhuan) he rules a realm of bird-named offices and is counted among the Five Emperors in the Book-of-Documents stratum, though the Shiji main line routes the succession Huangdi -> Zhuanxu instead. His clan-name Jin Tian Shi places him at the west/metal pole opposite Taihao (Fuxi). Named in chinese_diku's and chinese_changyi's notes ('Xuanxiao / Shaohao, Huangdi's son and Changyi's brother') and chinese_huangdi's lifecycle ('Xuanxiao / Shaohao, whose descendants included Diku and Yao') until materialized here as the sibling and lineage link."
+  },
+  {
+    "id": "chinese_danzhu",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Danzhu",
+      "alt": [
+        "丹朱",
+        "Dan Zhu",
+        "Zhu of Dan",
+        "Son of Yao passed over for Shun"
+      ],
+      "transliterations": {
+        "chinese-traditional": "丹朱",
+        "chinese-simplified": "丹朱",
+        "pinyin": "Dānzhū"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [
+      "chinese_yao"
+    ],
+    "parentRoles": {
+      "chinese_yao": "paternal"
+    },
+    "temporal": {
+      "era": "mythic-prehistory"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistory",
+        "eraOrdering": 0,
+        "startEvent": "birth",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1"
+          }
+        ],
+        "notes": "Eldest son of the sage-king Yao. The Shiji judges him 'unworthy / not good enough to be entrusted with the realm' (頑凶 / 不肖)."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistory",
+        "eraOrdering": 1,
+        "startEvent": "passed-over-in-favor-of-Shun",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1; Mencius / Mengzi 5A.5-6"
+          }
+        ],
+        "notes": "Knowing Danzhu unfit, Yao abdicated to the meritorious commoner Shun rather than to his son — the foundational meritocratic-succession episode. Per Mencius 5A.6, after Yao's death and the mourning Shun withdrew south to yield to Danzhu, but the lords and litigants went to Shun, not Danzhu, so Shun ascended as Heaven's choice. Danzhu was enfeoffed at Dan (whence 'Danzhu')."
+      },
+      {
+        "vitalStatus": "dead",
+        "era": "mythic-prehistory",
+        "eraOrdering": 2
+      }
+    ],
+    "domains": [
+      {
+        "id": "passed-over-heir-of-Yao",
+        "term": {
+          "value": "不肖",
+          "script": "Chinese (hanzi)",
+          "rom": "bùxiào"
+        },
+        "notes": "the unworthy heir; foil to the meritocratic abdication",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1",
+            "derived": true
+          }
+        ]
+      },
+      {
+        "id": "fief-of-Dan",
+        "term": {
+          "value": "丹",
+          "script": "Chinese (hanzi)",
+          "rom": "Dān"
+        },
+        "notes": "the fief of Dan from which his name derives",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shangshu / Yi Ji and commentarial tradition on Danzhu's enfeoffment",
+            "derived": true
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "danzhu-weiqi",
+        "name": "Associated with the invention of weiqi (Go)",
+        "term": {
+          "value": "圍棋",
+          "script": "Chinese (hanzi)",
+          "rom": "wéiqí"
+        },
+        "notes": "A widespread tradition (recorded by Zhang Hua, Bowuzhi) holds that Yao devised the board-game weiqi to instruct the wayward Danzhu.",
+        "inheritability": "none",
+        "scopeTags": [
+          "lore"
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zhang Hua, Bowuzhi (3rd c. CE) — Yao made weiqi to teach Danzhu"
+          }
+        ],
+        "ability": false
+      }
+    ],
+    "relations": [
+      {
+        "kind": "child-of",
+        "personId": "chinese_yao",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1"
+          }
+        ],
+        "notes": "Eldest son of Yao, passed over for Shun in the canonical abdication narrative."
+      }
+    ],
+    "linguistic": {
+      "languageFamily": "Sino-Tibetan (Sinitic)",
+      "etymology": "丹朱 Dānzhū — dān 'cinnabar, red' + zhū 'vermilion, red'; conventionally taken with reference to his fief Dan (丹), the name meaning roughly 'Zhu of Dan.' Both graphs denote shades of red.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Sima Qian, Shiji Ch. 1"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (Wudi benji)"
+          },
+          {
+            "kind": "primary",
+            "reference": "Mencius / Mengzi 5A.5-6"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Eldest son of the sage-king Yao and the heir he passed over. Judged unworthy by the Shiji, Danzhu is the foil whose unfitness motivates Yao's abdication to the meritorious commoner Shun — the foundational case-study of merit-over-bloodline succession in Confucian political theory (Mencius 5A.5-6). After Yao's death Shun ritually yielded to Danzhu, but the people turned to Shun, confirming Heaven's choice. A later tradition (Bowuzhi) credits Yao with inventing weiqi to instruct him. Named in chinese_yao's lifecycle ('abdicated to Shun rather than to his own son Danzhu') until materialized here as the paternal-line son."
+  },
+  {
+    "id": "chinese_xiang",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Xiang",
+      "alt": [
+        "象",
+        "Xiang brother of Shun",
+        "Half-brother of Shun"
+      ],
+      "transliterations": {
+        "chinese-traditional": "象",
+        "chinese-simplified": "象",
+        "pinyin": "Xiàng"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [
+      "chinese_gusou"
+    ],
+    "parentRoles": {
+      "chinese_gusou": "paternal"
+    },
+    "temporal": {
+      "era": "mythic-prehistory"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistory",
+        "eraOrdering": 0,
+        "startEvent": "birth",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1; Mencius / Mengzi 5A.2-3"
+          }
+        ],
+        "notes": "Son of Gusou by his second wife, and thus the younger half-brother of the sage-king Shun (whose mother was Wo Deng). Proverbially arrogant (Mencius: 'Xiang was arrogant / ao 傲')."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistory",
+        "eraOrdering": 1,
+        "startEvent": "conspiracy-against-Shun",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Mencius / Mengzi 5A.2-3; Sima Qian, Shiji Ch. 1"
+          }
+        ],
+        "notes": "With his father Gusou and his mother, Xiang repeatedly plotted Shun's death (the burning granary; the well filled in over him) to seize Shun's property and wives; per Mencius he meant to take Shun's two wives and his bow while leaving the herds to the parents. Shun escaped each time and continued to treat Xiang as a loving brother — the Mencian crux of filial piety persisting through fraternal malice."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistory",
+        "eraOrdering": 2,
+        "startEvent": "enfeoffment-at-Youbi",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Mencius / Mengzi 5A.3 (Shun enfeoffs Xiang at Youbi 有庳)"
+          }
+        ],
+        "notes": "On becoming sovereign Shun did not punish Xiang but enfeoffed him as a feudal lord at Youbi (有庳), keeping him near and prosperous — the canonical example of a sage-king reconciling private affection with public order."
+      },
+      {
+        "vitalStatus": "dead",
+        "era": "mythic-prehistory",
+        "eraOrdering": 3
+      }
+    ],
+    "domains": [
+      {
+        "id": "arrogant-half-brother-of-Shun",
+        "term": {
+          "value": "傲",
+          "script": "Chinese (hanzi)",
+          "rom": "ào"
+        },
+        "notes": "the arrogant brother of the filial-piety narrative",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Mencius / Mengzi 5A.2-3",
+            "derived": true
+          }
+        ]
+      },
+      {
+        "id": "fief-of-Youbi",
+        "term": {
+          "value": "有庳",
+          "script": "Chinese (hanzi)",
+          "rom": "Yǒubì"
+        },
+        "notes": "the fief at Youbi to which Shun appointed him",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Mencius / Mengzi 5A.3",
+            "derived": true
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "xiang-conspiracy",
+        "name": "Conspire (with Gusou) against Shun",
+        "term": {
+          "value": "謀殺舜",
+          "script": "Chinese (hanzi)",
+          "rom": "móushā Shùn"
+        },
+        "notes": "Repeated plots on Shun's life (granary fire, the filled-in well); foiled each time. A narrative role, not a numinous power.",
+        "inheritability": "none",
+        "scopeTags": [
+          "kinship-strife"
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1; Mencius / Mengzi 5A.2"
+          }
+        ],
+        "ability": false
+      }
+    ],
+    "relations": [
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_shun",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1; Mencius / Mengzi 5A.2-3"
+          }
+        ],
+        "notes": "Younger half-brother of Shun (shared father Gusou; Shun's mother was Wo Deng, Xiang's an unnamed second wife). The fraternal malice he shows, met by Shun's undiminished brotherly love, is the Mencian filial-piety crux."
+      },
+      {
+        "kind": "child-of",
+        "personId": "chinese_gusou",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1"
+          }
+        ],
+        "notes": "Son of Gusou by his second wife."
+      }
+    ],
+    "linguistic": {
+      "languageFamily": "Sino-Tibetan (Sinitic)",
+      "etymology": "象 Xiàng — the common word for 'elephant; image, figure.' As a personal name it carries no developed gloss in the sources; it is simply the graph 象.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Mencius / Mengzi 5A.2"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (Wudi benji)"
+          },
+          {
+            "kind": "primary",
+            "reference": "Mencius / Mengzi 5A.2-3"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Younger half-brother of the sage-king Shun — son of Gusou by his second wife. Proverbially arrogant, he joined his father and stepmother in repeated plots to murder Shun (the burning granary, the filled-in well) to seize Shun's property and wives; Shun escaped each attempt and went on loving him as a brother. On acceding, Shun enfeoffed rather than punished Xiang, at Youbi. The whole episode is the Mencian (5A.2-3) case-study of filial and fraternal virtue persisting through malice. Named throughout chinese_shun's and chinese_gusou's notes ('Shun's half-brother Xiang') until materialized here as the half-sibling and son."
+  },
+  {
+    "id": "chinese_houji",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Houji",
+      "alt": [
+        "后稷",
+        "Hou Ji",
+        "Lord Millet",
+        "Qi the Abandoned",
+        "棄",
+        "Zhou-lineage progenitor son of Diku"
+      ],
+      "transliterations": {
+        "chinese-traditional": "后稷",
+        "chinese-simplified": "后稷",
+        "pinyin": "Hòujì",
+        "personal-name": "Qi (棄, 'the Abandoned', Qì)"
+      }
+    },
+    "type": "deity",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "apotheosed",
+    "origin": "canon",
+    "parentIds": [
+      "chinese_diku"
+    ],
+    "parentRoles": {
+      "chinese_diku": "paternal"
+    },
+    "temporal": {
+      "era": "mythic-prehistory"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistory",
+        "eraOrdering": 0,
+        "startEvent": "miraculous-birth-and-abandonment",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shijing, 'Shengmin' (Major Court Hymns, Mao 245); Sima Qian, Shiji Ch. 4 (Zhou benji)"
+          }
+        ],
+        "notes": "Born to Jiang Yuan (姜嫄), a consort of Diku, after she trod in the toe-print of the god Di (上帝); thrice abandoned (whence the name Qi 棄 'Abandoned') but sheltered by oxen, sheep, birds, and woodcutters. The miraculous paternity sits beside the Shiji genealogy making him Diku's son."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "minister-of-agriculture",
+        "era": "mythic-prehistory",
+        "eraOrdering": 1,
+        "startEvent": "appointment-as-Lord-Millet",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 4; Shangshu, Shun Dian"
+          }
+        ],
+        "notes": "From childhood drawn to planting; appointed by Yao and Shun as Agriculture Minister (后稷 Houji, 'Lord of Millet'), he taught the people to sow the grains and was enfeoffed at Tai with the surname Ji (姬), becoming the predynastic ancestor of the house of Zhou."
+      },
+      {
+        "typeStatus": "deity",
+        "vitalStatus": "apotheosed",
+        "era": "mythic-prehistory",
+        "eraOrdering": 2,
+        "startEvent": "deification-as-grain-god",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zhou state cult of Houji as ancestral grain-deity; the She-Ji (社稷) altars"
+          }
+        ],
+        "notes": "Venerated under the Zhou as the grain-god of the She-Ji (社稷, 'soil and grain') state altars — the 'Ji' of sheji, the metonym for the dynastic state itself; the foremost agricultural ancestral deity of the classical Chinese cult."
+      }
+    ],
+    "domains": [
+      {
+        "id": "agriculture",
+        "term": {
+          "value": "稷",
+          "script": "Chinese (hanzi)",
+          "rom": "jì"
+        },
+        "notes": "millet / grain agriculture; Lord of Millet",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shijing, 'Shengmin' (Mao 245)",
+            "derived": true
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "term": {
+          "value": "稼穡",
+          "script": "Chinese (hanzi)",
+          "rom": "jiàsè"
+        },
+        "notes": "sowing and reaping; the husbandry he taught",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 4",
+            "derived": true
+          }
+        ]
+      },
+      {
+        "id": "Zhou-ancestral-progenitor",
+        "term": {
+          "value": "周祖",
+          "script": "Chinese (hanzi)",
+          "rom": "Zhōu zǔ"
+        },
+        "notes": "predynastic ancestor of the house of Zhou (surname Ji 姬)",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 4 (Zhou benji)",
+            "derived": true
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "houji-jiase",
+        "name": "Teach humankind to sow and reap the grains",
+        "term": {
+          "value": "教民稼穡",
+          "script": "Chinese (hanzi)",
+          "rom": "jiào mín jiàsè"
+        },
+        "notes": "Culture-hero gift of grain-agriculture; sowed millet, beans, hemp, wheat and gourds so the people had food.",
+        "inheritability": "partial",
+        "scopeTags": [
+          "agriculture"
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shijing, 'Shengmin' (Mao 245); Shiji Ch. 4"
+          }
+        ],
+        "ability": true
+      },
+      {
+        "id": "houji-survival",
+        "name": "Survive abandonment under heaven's protection",
+        "term": {
+          "value": "棄",
+          "script": "Chinese (hanzi)",
+          "rom": "qì"
+        },
+        "notes": "Thrice exposed as an infant, sheltered by beasts and birds and ice-warming birds; the abandonment-and-survival that names him Qi.",
+        "inheritability": "none",
+        "scopeTags": [
+          "destiny"
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shijing, 'Shengmin' (Mao 245)"
+          }
+        ],
+        "ability": false
+      }
+    ],
+    "epithets": [
+      {
+        "epithetId": "后稷",
+        "original": "后稷",
+        "language": "chinese",
+        "transliteration": "Hòujì",
+        "contextTag": "cult",
+        "notes": "Lord of Millet; his title as agriculture-minister and grain-deity.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shangshu, Shun Dian; Shijing"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "child-of",
+        "personId": "chinese_diku",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 4 (Houji son of Diku by Jiang Yuan)"
+          }
+        ],
+        "notes": "Son of Diku by the consort Jiang Yuan (with the parallel divine-conception tradition of the god's footprint). Half-brother of Yao, Xie, and Zhi."
+      },
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_xie",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+          }
+        ],
+        "notes": "Half-brother of Xie, the Shang progenitor; shared father Diku, different mothers."
+      },
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_zhi",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+          }
+        ],
+        "notes": "Half-brother of Zhi, Diku's short-reigning successor; shared father Diku, different mothers."
+      },
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_yao",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+          }
+        ],
+        "notes": "Half-brother of the sage-king Yao; shared father Diku, different mothers (Jiang Yuan vs. Qingdu)."
+      }
+    ],
+    "linguistic": {
+      "languageFamily": "Sino-Tibetan (Sinitic)",
+      "etymology": "后稷 Hòujì, a title: hòu 'lord, sovereign' + jì 'panicled millet, the chief grain' — 'Lord of Millet.' His personal name 棄 Qì means 'cast away, the Abandoned,' from the thrice-exposed-infant myth of the 'Shengmin' ode. The Zhou surname 姬 Jī derives from his enfeoffment.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Shijing, 'Shengmin' (Mao 245)"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shijing, 'Shengmin' (Major Court Hymns, Mao 245)"
+          },
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 4 (Zhou benji) and Ch. 1 (Wudi benji)"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Lord Millet (Houji), the grain-god and predynastic ancestor of the Zhou; son of Diku by the consort Jiang Yuan, who conceived him after treading in the god Di's footprint, and personally named Qi ('the Abandoned') from the thrice-exposed-infant myth of the Shijing 'Shengmin' ode. Appointed Agriculture Minister by Yao and Shun, he taught the people the grains and was enfeoffed at Tai with the surname Ji. Under the Zhou he became the grain-deity of the She-Ji (soil-and-grain) state altars — the 'Ji' that is metonym for the dynasty itself. Half-brother of Yao, Xie, and Zhi. Named in chinese_diku's notes and lifecycle ('Houji \"Lord Millet,\" the legendary ancestor of the Zhou dynasty') until materialized here as a paternal-line son of Diku."
+  },
+  {
+    "id": "chinese_xie",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Xie",
+      "alt": [
+        "偰",
+        "契",
+        "Xie of Shang",
+        "Qi of Shang",
+        "Shang-lineage progenitor son of Diku"
+      ],
+      "transliterations": {
+        "chinese-traditional": "偰",
+        "chinese-simplified": "偰",
+        "pinyin": "Xiè",
+        "alt-graph": "契 (read qì in this name), surname bestowed Zi (子)"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [
+      "chinese_diku"
+    ],
+    "parentRoles": {
+      "chinese_diku": "paternal"
+    },
+    "temporal": {
+      "era": "mythic-prehistory"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistory",
+        "eraOrdering": 0,
+        "startEvent": "miraculous-birth",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shijing, 'Xuanniao' (Hymns of Shang, Mao 303); Sima Qian, Shiji Ch. 3 (Yin benji)"
+          }
+        ],
+        "notes": "Born to Jiandi (簡狄) of the Yousong (有娀) clan, a consort of Diku, after she swallowed the egg dropped by a black bird (玄鳥, the swallow): 'Heaven bade the dark bird descend and bear the Shang' (Shijing). The Shiji likewise makes him Diku's son."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "minister-of-instruction",
+        "era": "mythic-prehistory",
+        "eraOrdering": 1,
+        "startEvent": "appointment-as-Minister-of-Instruction",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 3; Shangshu, Shun Dian"
+          }
+        ],
+        "notes": "For his aid to Yu in controlling the flood he was appointed by Shun as Situ (司徒), Minister of Instruction, charged to teach the people the five social relations; enfeoffed at Shang and given the surname Zi (子), becoming the predynastic ancestor of the Shang dynasty."
+      },
+      {
+        "vitalStatus": "dead",
+        "era": "mythic-prehistory",
+        "eraOrdering": 2
+      }
+    ],
+    "domains": [
+      {
+        "id": "Shang-ancestral-progenitor",
+        "term": {
+          "value": "商祖",
+          "script": "Chinese (hanzi)",
+          "rom": "Shāng zǔ"
+        },
+        "notes": "predynastic ancestor of the Shang (surname Zi 子)",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 3 (Yin benji)",
+            "derived": true
+          }
+        ]
+      },
+      {
+        "id": "moral-instruction-Situ",
+        "term": {
+          "value": "司徒",
+          "script": "Chinese (hanzi)",
+          "rom": "Sītú"
+        },
+        "notes": "Minister of Instruction; teaching of the five human relations",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shangshu, Shun Dian",
+            "derived": true
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "xie-wujiao",
+        "name": "Teach the people the five social relations",
+        "term": {
+          "value": "敷五教",
+          "script": "Chinese (hanzi)",
+          "rom": "fū wǔ jiào"
+        },
+        "notes": "As Shun's Minister of Instruction, propagated the five cardinal relations (father-son, ruler-subject, husband-wife, elder-younger, friend-friend).",
+        "inheritability": "none",
+        "scopeTags": [
+          "moral-order"
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shangshu, Shun Dian; Shiji Ch. 3"
+          }
+        ],
+        "ability": false
+      }
+    ],
+    "relations": [
+      {
+        "kind": "child-of",
+        "personId": "chinese_diku",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 3 (Xie son of Diku by Jiandi)"
+          }
+        ],
+        "notes": "Son of Diku by the consort Jiandi of the Yousong clan (with the parallel black-bird-egg conception tradition). Half-brother of Yao, Houji, and Zhi."
+      },
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_houji",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+          }
+        ],
+        "notes": "Half-brother of Houji, the Zhou progenitor; shared father Diku, different mothers."
+      },
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_zhi",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+          }
+        ],
+        "notes": "Half-brother of Zhi, Diku's short-reigning successor; shared father Diku, different mothers."
+      },
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_yao",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+          }
+        ],
+        "notes": "Half-brother of the sage-king Yao; shared father Diku, different mothers (Jiandi vs. Qingdu)."
+      }
+    ],
+    "linguistic": {
+      "languageFamily": "Sino-Tibetan (Sinitic)",
+      "etymology": "The name is written 偰 or 契; in this personal name the graph 契 is read qì. No developed gloss attaches to the name itself; the bestowed surname 子 Zǐ ('child') becomes the Shang royal clan-name. The associated 玄鳥 Xuánniǎo 'dark bird' (swallow) of the birth-myth gives the Shang their bird-totem.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Shijing, 'Xuanniao' (Mao 303)"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shijing, 'Xuanniao' (Hymns of Shang, Mao 303)"
+          },
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 3 (Yin benji) and Ch. 1 (Wudi benji)"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Predynastic ancestor of the Shang dynasty; son of Diku by the consort Jiandi of the Yousong clan, conceived (in the Shijing 'Xuanniao' ode) when she swallowed the egg dropped by the black bird — 'Heaven bade the dark bird descend and bear the Shang.' For his aid to Yu in the flood-control he was made Shun's Minister of Instruction (Situ), enfeoffed at Shang and given the surname Zi. Half-brother of Yao, Houji, and Zhi. The name is written 偰 / 契 (here read qi), distinct from chinese_qi_of_xia (啟). Named in chinese_diku's notes ('Xie, the legendary ancestor of the Shang dynasty') until materialized here as a paternal-line son of Diku."
+  },
+  {
+    "id": "chinese_zhi",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Zhi",
+      "alt": [
+        "摯",
+        "Emperor Zhi",
+        "Di Zhi",
+        "Diku's successor displaced by Yao"
+      ],
+      "transliterations": {
+        "chinese-traditional": "摯",
+        "chinese-simplified": "挚",
+        "pinyin": "Zhì"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [
+      "chinese_diku"
+    ],
+    "parentRoles": {
+      "chinese_diku": "paternal"
+    },
+    "temporal": {
+      "era": "mythic-prehistory"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistory",
+        "eraOrdering": 0,
+        "startEvent": "birth",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1"
+          }
+        ],
+        "notes": "Son of Diku by the consort Changyi (常儀 — a consort, distinct from Huangdi's son chinese_changyi 昌意); Diku's eldest acknowledged successor-son. Half-brother of Yao, Houji, and Xie."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "sage-king-reigning",
+        "era": "mythic-prehistory",
+        "eraOrdering": 1,
+        "startEvent": "accession-on-Diku-death",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1"
+          }
+        ],
+        "notes": "On Diku's death Zhi succeeded to the throne — the first of Diku's sons to rule."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistory",
+        "eraOrdering": 2,
+        "startEvent": "displacement-by-Yao",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (Zhi proved incapable; the realm passed to Yao)"
+          }
+        ],
+        "notes": "His reign proving feeble / un-good, the sovereignty passed to his half-brother Yao — so the canonical Five-Emperors line runs Diku -> (Zhi) -> Yao, with Zhi a brief interregnal figure rather than a counted Sage-king."
+      },
+      {
+        "vitalStatus": "dead",
+        "era": "mythic-prehistory",
+        "eraOrdering": 3
+      }
+    ],
+    "domains": [
+      {
+        "id": "displaced-successor-of-Diku",
+        "term": {
+          "value": "摯",
+          "script": "Chinese (hanzi)",
+          "rom": "Zhì"
+        },
+        "notes": "Diku's immediate successor, soon displaced by Yao",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1",
+            "derived": true
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "zhi-brief-reign",
+        "name": "Reign briefly as Diku's heir before yielding to Yao",
+        "term": {
+          "value": "立而不善",
+          "script": "Chinese (hanzi)",
+          "rom": "lì ér bù shàn"
+        },
+        "notes": "Acceded on Diku's death but governed poorly, so the realm passed to Yao; a dynastic-transition role, not a numinous power.",
+        "inheritability": "none",
+        "scopeTags": [
+          "sovereignty"
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1"
+          }
+        ],
+        "ability": false
+      }
+    ],
+    "relations": [
+      {
+        "kind": "child-of",
+        "personId": "chinese_diku",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (Zhi son of Diku, his immediate successor)"
+          }
+        ],
+        "notes": "Son of Diku by the consort Changyi (常儀); Diku's first son to reign. Half-brother of Yao, Houji, and Xie."
+      },
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_yao",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (Zhi displaced; Yao acceded)"
+          }
+        ],
+        "notes": "Half-brother of Yao, who succeeded him when his own reign failed; shared father Diku, different mothers."
+      },
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_houji",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+          }
+        ],
+        "notes": "Half-brother of Houji, the Zhou progenitor; shared father Diku, different mothers."
+      },
+      {
+        "kind": "half-sibling",
+        "personId": "chinese_xie",
+        "era": "mythic-prehistory",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+          }
+        ],
+        "notes": "Half-brother of Xie, the Shang progenitor; shared father Diku, different mothers."
+      }
+    ],
+    "linguistic": {
+      "languageFamily": "Sino-Tibetan (Sinitic)",
+      "etymology": "摯 Zhì 'to seize, hold; sincere, earnest' (a graph also used for birds of prey, zhì). As a personal name it carries no developed gloss in the sources; he is 帝摯 Dì Zhì, 'Emperor Zhi.'",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Sima Qian, Shiji Ch. 1"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Sima Qian, Shiji Ch. 1 (Wudi benji)"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Emperor Zhi, son of Diku by the consort Changyi (常儀, a consort distinct from Huangdi's son chinese_changyi 昌意), and Diku's immediate successor — the first of Diku's sons to rule. His reign proving feeble, the sovereignty passed to his half-brother Yao, so the canonical Five-Emperors line runs Diku -> (Zhi) -> Yao with Zhi a brief interregnal figure. Half-brother of Yao, Houji, and Xie. Named in chinese_diku's notes and lifecycle ('Zhi, Diku's immediate successor before being displaced by Yao') until materialized here as a paternal-line son of Diku."
+  }
+]
+```
+
+============================================================================
+WIRE-EDGES — reciprocal relations to add to EXISTING corpus figures
+(authored children declare these parents/siblings; the existing figures need the
+back-edge. These are NOT new figures — they are edits to current entries.)
+
+  chinese_nezha    : add  parentIds += "chinese_li_jing" (paternal); relation child-of -> chinese_li_jing
+  chinese_huangdi  : add  relation father-of -> chinese_shaohao
+  chinese_leizu    : add  relation mother-of -> chinese_shaohao
+  chinese_changyi  : add  relation sibling   -> chinese_shaohao   (reciprocal of authored sibling)
+  chinese_yao      : add  relation father-of -> chinese_danzhu
+  chinese_yao      : add  relation half-sibling -> chinese_houji, chinese_xie, chinese_zhi
+  chinese_gusou    : add  relation father-of -> chinese_xiang
+  chinese_shun     : add  relation half-sibling -> chinese_xiang  (reciprocal of authored half-sibling)
+  chinese_diku     : add  relation father-of -> chinese_houji, chinese_xie, chinese_zhi
+
+WIRE-EDGES — pre-existing unwired reciprocals discovered during the sweep
+(parent/child already linked one-way via parentIds; the parent lacks the back-edge):
+
+  chinese_sanshengmu   : add  relation mother-of -> chinese_chen_xiang   (chen_xiang.parentIds already includes sanshengmu)
+  chinese_liu_yanchang : add  relation father-of -> chinese_chen_xiang   (chen_xiang.parentIds already includes liu_yanchang)
+  chinese_yaoji        : add  relation mother-of -> chinese_erlang_shen  (erlang_shen.parentIds already includes yaoji)
+  chinese_yang_tianyou : add  relation father-of -> chinese_erlang_shen  (erlang_shen.parentIds already includes yang_tianyou)
+  chimalman            : add  relation mother-of -> topiltzin            (topiltzin.parentIds already includes chimalman)
+  mixcoatl             : add  relation father-of -> topiltzin            (topiltzin.parentIds already includes mixcoatl)
+
+WIRE-EDGES — dangling externalRef that now resolves to an existing id
+(chinese_sun_wukong IS registered as a standalone deity; these externalRef-only
+relations, whose notes say "Sun Wukong entry pending / no longer registered", can
+be repointed to the real id):
+
+  chinese_chen_xiang : mentee/mentor externalRef "Sun Wukong" -> repoint to personId chinese_sun_wukong
+  chinese_erlang_shen: the rival externalRef "Sun Wukong" is redundant — erlang already has a personId rival -> chinese_sun_wukong (reciprocated). Drop the externalRef duplicate.

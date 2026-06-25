@@ -1,0 +1,1800 @@
+Pantheon Registry — Verify-first mythology sweep, Batch 12 (strict alphabetical family sweep).
+
+Scope processed IN ORDER (no skips, none favored):
+finnish_ilmatar, finnish_kalervo, finnish_kullervo, finnish_lemminkainen, finnish_lempi, finnish_lempo, finnish_louhi, finnish_mielikki, finnish_pekko, finnish_pellervoinen, finnish_tapio, finnish_tuonetar, finnish_tuoni, finnish_ukko, finnish_vainamoinen, fon_dan, fon_fa, fon_gu, fon_legba, fon_mawu_lisa, fon_nana_buluku, fon_sakpata, fon_sogbo, ga_ataa_naa_nyongmo, ga_kpele, ga_nai, garo_goera, garo_nostu_nopantu, garo_saljong, garo_susime, garo_tatara_rabuga, gaulish_belenos, gaulish_cernunnos, gaulish_epona, gaulish_esus, gaulish_lugus, gaulish_nantosuelta, gaulish_sucellus, gaulish_taranis, gaulish_teutates, gondi_anga_dev, gondi_bhimal_pen, gondi_kali_kankali, gondi_lingo_pen, gondi_persa_pen, greek_acastus, greek_aceso, greek_achilles, greek_aeacus, greek_aegeus.
+
+Every entity read semantically in full prose. New figures authored below (mirroring same-tradition schemas). WIRE-EDGES on existing corpus figures and SKIP reasons are reported in the final message, not encoded here.
+
+```json
+[
+ {
+  "id": "finnish_untamo",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Untamo",
+   "alt": [
+    "Untamoinen",
+    "Unto",
+    "Brother of Kalervo",
+    "Destroyer of the Kalervo Kindred"
+   ],
+   "transliterations": {
+    "finnish": "Untamo"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "kalevala-mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "feud-with-his-brother-Kalervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 31"
+     }
+    ],
+    "notes": "Mortal Karelian-tribal chief and brother of Kalervo. The Kullervo-cycle opens with the brothers feud, fed by petty disputes (in one telling over fish-traps and a stolen seed-corn / burnt field). The strife between the brothers escalates into open warfare. parentIds left empty per registry conventions for Kalevala mortals whose parents are unregistered; his brother Kalervo is wired as a sibling."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "massacre-of-the-Kalervo-kindred",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 31"
+     }
+    ],
+    "notes": "Untamo raised a war-band and fell upon his brother Kalervo household, slaughtering the whole Kalervo kindred save one pregnant woman, whom he carried off as a bond-slave. In her captivity she bore Kullervo. Untamo thus is the author of the original wrong that the Kullervo-cycle avenges; he tried repeatedly to destroy the preternaturally strong slave-infant Kullervo (drowning, burning, hanging), but the child survived every attempt, after which Untamo at last sold the boy into slavery to the smith Ilmarinen."
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "destruction-by-Kullervo-vengeance",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 36"
+     }
+    ],
+    "notes": "After his own family was found dead, Kullervo marched on Untamola, the homestead of Untamo, and put the whole household to the sword and the torch, killing Untamo and razing his settlement in the canonical climactic vengeance of the Kullervo-cycle, fulfilling the blood-feud that Untamo had begun. Untamo is therefore wired as the enemy of Kullervo, who slays him."
+   }
+  ],
+  "domains": [
+   {
+    "id": "fratricidal-feud-chief",
+    "term": {
+     "value": "vihamies-veli",
+     "script": "Finnish",
+     "rom": "vihamies-veli"
+    },
+    "notes": "feuding brother and war-chief who destroys his kin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 31-36",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lauri Honko 1990; Anna-Leena Siikala 2002",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "destroyer-of-the-Kalervo-kindred",
+    "term": {
+     "value": "suvun surmaaja",
+     "script": "Finnish",
+     "rom": "suvun surmaaja"
+    },
+    "notes": "slayer of the whole Kalervo kindred but for one captive",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 31-36",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lauri Honko 1990; Anna-Leena Siikala 2002",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "enslaver-of-the-infant-Kullervo",
+    "term": {
+     "value": "orjuuttaja",
+     "script": "Finnish",
+     "rom": "orjuuttaja"
+    },
+    "notes": "captor who enslaves and tries to kill the child Kullervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 31-36",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lauri Honko 1990; Anna-Leena Siikala 2002",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "war-band-and-burning-homestead-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 31"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Untamo, also Untamoinen, with the by-form Unto; conventionally connected to the verb-root unta / uni meaning sleep or to the personal-name stem Unto. The -mo / -moinen suffixation is characteristic of Kalevala personal-name formation. As the brother-antagonist of Kalervo the name is fixed to the Kullervo-cycle.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "death": {
+   "manner": {
+    "id": "slain-and-his-household-burnt-by-Kullervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 36"
+     }
+    ]
+   }
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 31-36"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), Kullervo / Kalervo-Untamo feud runos"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lauri Honko 1990; Anna-Leena Siikala 2002"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Karelian-tribal chief, brother of Kalervo and the prime antagonist of the Kullervo-cycle. Driven by a fratricidal feud, he raised a war-band and slaughtered the whole Kalervo kindred save one pregnant captive, who bore Kullervo in slavery; he tried repeatedly to kill the preternaturally strong infant (drowning, burning, hanging) and, failing, sold the boy to the smith Ilmarinen. The wrong he began is the wrong the cycle avenges: Kullervo at last marches on Untamola, kills Untamo and burns his settlement (Runo 36). Wired as sibling of finnish_kalervo and enemy of finnish_kullervo, who slays him.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "finnish_kalervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 31"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_kalervo — Untamo is Kalervo brother; their feud and Untamo massacre of the Kalervo kindred frame the Kullervo-cycle."
+   },
+   {
+    "kind": "enemy",
+    "personId": "finnish_kullervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runos 31, 36"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_kullervo — Untamo enslaves and repeatedly tries to kill the infant Kullervo, who in the cycle climax slays Untamo and razes Untamola."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Untamo verinen",
+    "original": "Untamo verinen",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "bloody Untamo, the feud-chief who destroys his brother kindred",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Kullervo-cycle Runos 31-36"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "untamo-war-sword",
+    "classId": "sword",
+    "kind": "weapon",
+    "name": "Untamo war-sword",
+    "term": {
+     "value": "miekka",
+     "script": "Finnish",
+     "rom": "miekka"
+    },
+    "role": "owner",
+    "notes": "the sword of the war-band with which he massacres the Kalervo kindred",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 31"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "untamo-warband-raising",
+    "name": "Raise a war-band and lay waste a kindred",
+    "term": {
+     "value": "sotajoukko",
+     "script": "Finnish"
+    },
+    "notes": "Gathers armed men to fall upon and destroy his brother household",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 31"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "combat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "finnish_kyllikki",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Kyllikki",
+   "alt": [
+    "Saaren neito",
+    "Maiden of the Island",
+    "Flower of Saari",
+    "Wife of Lemminkainen"
+   ],
+   "transliterations": {
+    "finnish": "Kyllikki",
+    "finnish-epithet": "Saaren neito (Maiden of the Island of Saari)"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "kalevala-mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "fairest-maiden-of-the-island-of-Saari",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 11"
+     }
+    ],
+    "notes": "The fairest maiden and loveliest flower of the island of Saari, courted by many and by the sun, moon and star, who alone of all the island maidens would heed no suitor. Mortal Karelian-island family. parentIds left empty per registry conventions for Kalevala mortals whose parents are unregistered."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "abduction-by-Lemminkainen-and-mutual-vows",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 11"
+     }
+    ],
+    "notes": "The reckless hero Lemminkainen, rebuffed in courtship, seized Kyllikki by force, dragged her into his sledge and carried her off to his home. Reconciled, they swore mutual vows: he would never go to war if she would never go to the village dances. They lived happily for a time as husband and wife. The Kyllikki-abduction (Runo 11) is the canonical bride-capture episode of the Lemminkainen-cycle."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "broken-vow-and-Lemminkainen-departure",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 12"
+     }
+    ],
+    "notes": "When Kyllikki at last broke her vow and went to the village dances, Lemminkainen held his own vow void and, against his mother warning, set off to court the Maiden of Pohjola and to make war on the Northland, beginning the chain of his Pohjola adventures and his death and resurrection. Kyllikki remains in the home of Lemminkainen mother; on the disclosure of her flight she laments that her husband is dead or in trouble. She is the canonical first wife of the hero."
+   }
+  ],
+  "domains": [
+   {
+    "id": "fairest-maiden-of-Saari",
+    "term": {
+     "value": "Saaren kukka",
+     "script": "Finnish",
+     "rom": "Saaren kukka"
+    },
+    "notes": "the flower of the island of Saari, fairest of its maidens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runos 11-12 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Matti Kuusi, Finnish Folk Poetry: Epic (1977)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "captured-bride-and-vow-keeper",
+    "term": {
+     "value": "ryostetty morsian",
+     "script": "Finnish",
+     "rom": "ryostetty morsian"
+    },
+    "notes": "the bride taken by capture, bound by the mutual vow",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runos 11-12 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Matti Kuusi, Finnish Folk Poetry: Epic (1977)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "village-dance-ground-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 12"
+      }
+     ]
+    },
+    {
+     "id": "lemminkainen-sledge-of-capture-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 11"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Kyllikki; a hypocoristic personal name connected by Finnish onomasts to kyllin meaning enough, plenty, abundance (kylla = enough, abundance), hence read as the abundant or amply-blessed one, with the affectionate diminutive ending -kki characteristic of Finnish female pet-names (compare Mielikki, Tuulikki). The name has been a continuously popular modern Finnish female given-name since the national-romantic revival.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 11-12"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), Lemminkainen / Saari bride-capture runos"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Matti Kuusi, Finnish Folk Poetry: Epic (1977)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "First wife of the reckless hero Lemminkainen; the fairest maiden of the island of Saari, courted by all yet heeding no suitor until Lemminkainen carried her off by force (Runo 11). The pair swore mutual vows that he would not go to war if she would not go to the dances; when she broke her vow and went to the village dances, Lemminkainen voided his own and set off for Pohjola, launching the Pohjola adventures (Runo 12). She is the canonical bride-capture wife of the Lemminkainen-cycle. Wired as spouse of finnish_lemminkainen.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "finnish_lemminkainen",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runos 11-12"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_lemminkainen — Kyllikki is the hero captured first wife of the island of Saari, bound to him by the mutual vow; her broken vow frees him to depart for Pohjola."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Saaren kukka",
+    "original": "Saaren kukka",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Flower of Saari, her standing epithet as the fairest island maiden",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 11 epithet for Kyllikki"
+     }
+    ]
+   },
+   {
+    "epithetId": "Saaren neito",
+    "original": "Saaren neito",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Maiden of the Island, her place-epithet",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 11 epithet for Kyllikki"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kyllikki-dance-finery",
+    "classId": "garment",
+    "kind": "garment",
+    "name": "Kyllikki dance finery",
+    "term": {
+     "value": "tanssivaatteet",
+     "script": "Finnish",
+     "rom": "tanssivaatteet"
+    },
+    "role": "wearer",
+    "notes": "the finery she dons to go to the forbidden village dances, breaking her vow",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 12"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "kyllikki-vow-binding",
+    "name": "Bind a marriage by mutual sworn vow",
+    "term": {
+     "value": "vala",
+     "script": "Finnish"
+    },
+    "notes": "Exchanges a binding marriage-vow with Lemminkainen whose breach frees them both",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runos 11-12"
+     }
+    ],
+    "ability": false,
+    "scopeTags": [
+     "marriage"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "finnish_loviatar",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Loviatar",
+   "alt": [
+    "Lovetar",
+    "Loveatar",
+    "Louhetar",
+    "Lovittaret",
+    "Blind Daughter of Tuoni"
+   ],
+   "transliterations": {
+    "finnish": "Loviatar"
+   }
+  },
+  "type": "deity",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "finnish_tuoni",
+   "finnish_tuonetar"
+  ],
+  "parentRoles": {
+   "finnish_tuoni": "paternal",
+   "finnish_tuonetar": "maternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-blind-daughter-of-Tuoni-and-Tuonetar",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45"
+     }
+    ],
+    "notes": "The blind daughter of Tuoni, lord of the dead, and his consort Tuonetar, and reckoned the worst and most malevolent of the death-realm daughters of Tuonela. A goddess of plague, disease and desolation, hideous and blind, dwelling at the dark margins of the underworld."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "impregnation-by-the-wind-and-birth-of-the-nine-diseases",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45"
+     }
+    ],
+    "notes": "In the canonical Birth of the Nine Diseases (Runo 45), Loviatar was impregnated by a great wind (the cold east wind) and after a torment of pregnancy gave birth to nine sons, the personified plagues and diseases sent by Louhi against the people of Kalevala. The nine include pistos (stitch / consumption), ahki (colic), luuvalo (gout), riisi (rickets), paise (boil / ulcer), rupi (scab / itch), syoja (cancer / canker) and rutto (plague); the ninth and worst, a witch and the embodiment of envy, she left unnamed and banished to be a scourge of mankind. In some folk-runo versions she also bore a daughter whom she cast into a river. Loviatar is thus the mother of disease in Finnish mythology."
+   }
+  ],
+  "domains": [
+   {
+    "id": "goddess-of-plague-and-disease",
+    "term": {
+     "value": "taudin emo",
+     "script": "Finnish",
+     "rom": "taudin emo"
+    },
+    "notes": "the mother of disease, source of plague and pestilence",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "blind-daughter-of-Tuonela",
+    "term": {
+     "value": "Tuonen sokea tytar",
+     "script": "Finnish",
+     "rom": "Tuonen sokea tytar"
+    },
+    "notes": "the blind daughter of the death-realm, worst of Tuoni daughters",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "mother-of-the-nine-diseases",
+    "term": {
+     "value": "yhdeksan taudin emo",
+     "script": "Finnish",
+     "rom": "yhdeksan taudin emo"
+    },
+    "notes": "mother of the nine sons of disease begotten by the wind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "blindness-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 45"
+      }
+     ]
+    },
+    {
+     "id": "nine-disease-sons-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 45"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Loviatar, with the by-forms Lovetar, Loveatar, Louhetar and the plural Lovittaret; the many variants are connected to the Finnish word lovi meaning a notch, cleft or crack, and to the shamanic idiom langeta loveen meaning to fall into the lovi, that is to fall into a trance and pass into the spirit-world. The -tar / -tär feminine ending marks a female spirit or goddess (compare Tuonetar, Kivutar). In the old folk-poems the names Loviatar and Louhi are often used interchangeably; Lonnrot separated them into two distinct characters in the Kalevala.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runo 45 (Birth of the Nine Diseases)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), disease-origin incantation runos (synty)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Blind daughter of Tuoni and Tuonetar and the worst of the death-realm daughters of Tuonela; a goddess of plague, disease and desolation. In the canonical Birth of the Nine Diseases (Runo 45) she was impregnated by the cold east wind and bore nine sons, the personified plagues sent by Louhi against Kalevala: pistos, ahki, luuvalo, riisi, paise, rupi, syoja, rutto, and an unnamed ninth and worst, the embodiment of envy, whom she banished to scourge mankind. She is the mother of disease in Finnish mythology. In the old folk-poems the names Loviatar and Louhi are frequently interchanged; Lonnrot made them two distinct characters. Wired as daughter of finnish_tuoni and finnish_tuonetar. The nine disease-sons are disease-personifications (and the ninth unnamed), not registered as standalone figures.",
+  "relations": [
+   {
+    "kind": "mother",
+    "personId": "finnish_tuonetar",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 45; Tuonetar enumerated as mother of Loviatar"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tuonetar — Loviatar is the blind daughter of Tuonetar and Tuoni, the worst of the death-realm daughters."
+   },
+   {
+    "kind": "father",
+    "personId": "finnish_tuoni",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 45; Tuoni the death-lord as father of Loviatar"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tuoni — Loviatar is the blind daughter of Tuoni, lord of the dead, born in Tuonela."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Tuonen tytti",
+    "original": "Tuonen tytti",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Daughter of Tuoni, a death-realm maiden epithet",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 45 and disease-synty incantations"
+     }
+    ]
+   },
+   {
+    "epithetId": "Lovetar, vaimo vanha",
+    "original": "Lovetar, vaimo vanha",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Lovetar the old hag, a charm-epithet of the disease-mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot, disease-origin incantations naming Lovetar / Loviatar"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "loviatar-disease-cradle",
+    "classId": "container",
+    "kind": "tool",
+    "name": "Cradle of the nine diseases",
+    "term": {
+     "value": "kipukehto",
+     "script": "Finnish",
+     "rom": "kipukehto"
+    },
+    "role": "owner",
+    "notes": "the cradle in which the disease-mother rocks her newborn plague-sons before sending them into the world",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 45"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "loviatar-spawn-disease",
+    "name": "Spawn the personified diseases",
+    "term": {
+     "value": "tautien synnyttaminen",
+     "script": "Finnish"
+    },
+    "notes": "Conceives by the wind and gives birth to the nine sons of plague and disease",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 45"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "disease",
+     "death"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "finnish_nyyrikki",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nyyrikki",
+   "alt": [
+    "Pinneus",
+    "Son of Tapio",
+    "Lord of the Hunt-Paths"
+   ],
+   "transliterations": {
+    "finnish": "Nyyrikki"
+   }
+  },
+  "type": "deity",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "finnish_tapio",
+   "finnish_mielikki"
+  ],
+  "parentRoles": {
+   "finnish_tapio": "paternal",
+   "finnish_mielikki": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "son-of-the-forest-king-and-mistress",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 14"
+     }
+    ],
+    "notes": "Son of Tapio, the forest-king, and Mielikki, mistress of the forest, and a god of the hunt and of forest cattle dwelling in Tapiola, the forest-realm. As the son of the forest-couple he marks and clears the hunt-paths through the wood, blazing trees and dropping subtle signs so that those he favours are guided to the best game."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "invoked-in-the-hunting-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 14"
+     }
+    ],
+    "notes": "Invoked in the Kalevala hunting-prayers (notably in Lemminkainen pursuit of the Hiisi-elk and the bear-hunt charms) alongside Tapio and Mielikki: the hunter calls on Nyyrikki, the tall son of Tapio in his red cap and blue cloak, to cut a blaze across the hills and bridge the marshes so the game may be driven to the hunter. He is the forest god most directly concerned with granting the catch."
+   }
+  ],
+  "domains": [
+   {
+    "id": "forest-hunt-god",
+    "term": {
+     "value": "metsastyksen jumala",
+     "script": "Finnish",
+     "rom": "metsastyksen jumala"
+    },
+    "notes": "god of the hunt and granter of forest game",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 14 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "marker-of-the-hunt-paths",
+    "term": {
+     "value": "polkujen merkitsija",
+     "script": "Finnish",
+     "rom": "polkujen merkitsija"
+    },
+    "notes": "blazer of the forest-paths who guides hunters to game",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 14 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "red-cap-and-blue-cloak-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 14"
+      }
+     ]
+    },
+    {
+     "id": "blazed-trees-of-the-hunt-paths-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 14"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Nyyrikki; an obscure forest-spirit name of debated origin, with the affectionate diminutive ending -kki characteristic of the Tapiola family (compare Mielikki, Tuulikki). The glossarial by-name Pinneus is given for him in the Kirby translation glossary. As son of Tapio he is fixed to the forest-hunt sphere.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runo 14 (hunting-charms in Tapiola)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), hunting / bear-rite charms invoking Nyyrikki"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Son of the forest-king Tapio and the forest-mistress Mielikki, and a god of the hunt and of forest cattle in Tapiola. He marks and blazes the hunt-paths through the wood so that those he favours are guided to the best game, and is invoked in the Kalevala hunting-prayers (Lemminkainen Hiisi-elk hunt; bear-hunt charms), called the tall son of Tapio in his red cap and blue cloak. Wired as son of finnish_tapio and finnish_mielikki.",
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "finnish_tapio",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 14; Nyyrikki named son of Tapio"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tapio — Nyyrikki is the son of Tapio the forest-king, god of the hunt-paths of Tapiola."
+   },
+   {
+    "kind": "mother",
+    "personId": "finnish_mielikki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 14; Nyyrikki son of the forest-mistress Mielikki"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_mielikki — Nyyrikki is the son of Mielikki, mistress of the forest, alongside his sisters Tellervo and Tuulikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_tellervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tellervo daughter of Tapio and Mielikki"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_tellervo — fellow child of the forest-couple Tapio and Mielikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_tuulikki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tuulikki daughter of Tapio and Mielikki"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_tuulikki — fellow child of the forest-couple Tapio and Mielikki."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Tapion poika",
+    "original": "Tapion poika",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Son of Tapio, his standing patronymic epithet in the hunting-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 14 hunting-charm"
+     }
+    ]
+   },
+   {
+    "epithetId": "Nyyrikki, Tapion poika, sini-viitta, lakki-puna",
+    "original": "Nyyrikki, Tapion poika, sini-viitta, lakki-puna",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Nyyrikki son of Tapio, blue-cloaked, red-capped, the descriptive hunt-charm formula",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 14"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nyyrikki-blaze-axe",
+    "classId": "axe",
+    "kind": "tool",
+    "name": "Path-blazing axe of Nyyrikki",
+    "term": {
+     "value": "kirves",
+     "script": "Finnish",
+     "rom": "kirves"
+    },
+    "role": "owner",
+    "notes": "the axe with which he cuts blazes across the hills and bridges the marshes to open the hunt-paths",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 14"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "nyyrikki-open-hunt-paths",
+    "name": "Open and mark the hunt-paths of the forest",
+    "term": {
+     "value": "polkujen avaaminen",
+     "script": "Finnish"
+    },
+    "notes": "Blazes trees and bridges marshes so favoured hunters are led to the game",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 14"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "forest",
+     "hunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "finnish_tellervo",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Tellervo",
+   "alt": [
+    "Tapion neiti",
+    "Maiden of Tapio",
+    "Daughter of the Forest"
+   ],
+   "transliterations": {
+    "finnish": "Tellervo"
+   }
+  },
+  "type": "deity",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "finnish_tapio",
+   "finnish_mielikki"
+  ],
+  "parentRoles": {
+   "finnish_tapio": "paternal",
+   "finnish_mielikki": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "daughter-of-the-forest-king-and-mistress",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32"
+     }
+    ],
+    "notes": "Daughter of Tapio, the forest-king, and Mielikki, mistress of the forest, a forest-maiden and herd-keeper of Tapiola. A little maid of the woodland, she is set to mind and guard the cattle pastured in the forest; in some passages of the Kalevala she is so closely identified with her mother that the forest-mistress herself is addressed by the name Tellervo."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "invoked-in-the-cattle-herding-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32"
+     }
+    ],
+    "notes": "Invoked in the Kalevala cattle-protection charms (Runo 32), where the herder commits the kine to the keeping of Tellervo, the slender daughter of Tapio, asking her to herd and watch over the cattle through the forest-day and to guard them from the bear and from harm. She is the forest-maiden who shepherds the herds under the trees."
+   }
+  ],
+  "domains": [
+   {
+    "id": "forest-maiden-herd-keeper",
+    "term": {
+     "value": "metsan piika",
+     "script": "Finnish",
+     "rom": "metsan piika"
+    },
+    "notes": "forest-maiden and keeper of the woodland herds",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "daughter-of-Tapio",
+    "term": {
+     "value": "Tapion tytar",
+     "script": "Finnish",
+     "rom": "Tapion tytar"
+    },
+    "notes": "daughter of the forest-king, maiden of Tapiola",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "woodland-herd-of-cattle-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 32"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Tellervo; an obscure forest-spirit name with the augmentative-affectionate ending -rvo / -o; the stem has been connected speculatively to a woodland-maiden root but its origin is not securely established. The name is fixed in the Kalevala to the Tapiola family as the forest-king daughter and herd-keeper. In modern Finnish Tellervo became a popular female given-name and is the calendar-name-day partner-name of the male Tapio.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runo 32 (cattle-protection charms)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), cattle-herding / forest charms naming Tellervo"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Daughter of the forest-king Tapio and the forest-mistress Mielikki, a forest-maiden and herd-keeper of Tapiola. She is invoked in the Kalevala cattle-protection charms (Runo 32) to herd and guard the kine pastured under the trees and to shield them from the bear; in some passages she is so identified with her mother that Mielikki is addressed as Tellervo. Wired as daughter of finnish_tapio and finnish_mielikki and sister of Nyyrikki and Tuulikki.",
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "finnish_tapio",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 32; Tellervo named daughter of Tapio"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tapio — Tellervo is the daughter of Tapio the forest-king, herd-maiden of Tapiola."
+   },
+   {
+    "kind": "mother",
+    "personId": "finnish_mielikki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tellervo daughter of the forest-mistress Mielikki"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_mielikki — Tellervo is the daughter of Mielikki, sometimes so identified with her that the mother is called by the daughter name."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_nyyrikki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Nyyrikki son of Tapio and Mielikki"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_nyyrikki — fellow child of the forest-couple Tapio and Mielikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_tuulikki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tuulikki daughter of Tapio and Mielikki"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_tuulikki — fellow daughter of the forest-couple Tapio and Mielikki."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Tapion neiti",
+    "original": "Tapion neiti",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Maiden of Tapio, her standing epithet in the herding-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 32 herding-charm"
+     }
+    ]
+   },
+   {
+    "epithetId": "Tellervo, Tapion neiti, metsan piika pikkarainen",
+    "original": "Tellervo, Tapion neiti, metsan piika pikkarainen",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Tellervo maid of Tapio, the little serving-maid of the forest, the descriptive charm-formula",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 32"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tellervo-herding-switch",
+    "classId": "tool",
+    "kind": "tool",
+    "name": "Forest herding-switch of Tellervo",
+    "term": {
+     "value": "karjavitsa",
+     "script": "Finnish",
+     "rom": "karjavitsa"
+    },
+    "role": "owner",
+    "notes": "the switch with which the forest-maiden tends and turns the woodland herd",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 32"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tellervo-guard-the-herds",
+    "name": "Guard and herd the cattle of the forest",
+    "term": {
+     "value": "karjan vartiointi",
+     "script": "Finnish"
+    },
+    "notes": "Shepherds the pastured kine through the forest-day and wards them from the bear",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 32"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "forest",
+     "herding"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "finnish_tuulikki",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Tuulikki",
+   "alt": [
+    "Tellervoinen-companion",
+    "Maiden of the Forest Game",
+    "Daughter of Tapio"
+   ],
+   "transliterations": {
+    "finnish": "Tuulikki"
+   }
+  },
+  "type": "deity",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "finnish_tapio",
+   "finnish_mielikki"
+  ],
+  "parentRoles": {
+   "finnish_tapio": "paternal",
+   "finnish_mielikki": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "daughter-of-the-forest-king-and-mistress",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32"
+     }
+    ],
+    "notes": "Daughter of Tapio, the forest-king, and Mielikki, mistress of the forest, a maiden of Tapiola and a goddess of the forest game-animals. Her name is read as little wind; she drives and rouses the game of the woodland and is invoked to bring the quarry within the hunter reach."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "invoked-in-the-hunting-and-herding-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32"
+     }
+    ],
+    "notes": "Invoked in the Kalevala forest-charms (Runo 32) alongside Tapio, Mielikki, Tellervo and Nyyrikki: the hunter and herder call on Tuulikki, daughter of Tapio, to drive the forest game and the kine from the thickets and to turn them toward the petitioner. As the daughter of the forest-couple she is one of the maidens of Tapiola who order the beasts of the wood."
+   }
+  ],
+  "domains": [
+   {
+    "id": "goddess-of-forest-game-animals",
+    "term": {
+     "value": "metsan elainten neiti",
+     "script": "Finnish",
+     "rom": "metsan elainten neiti"
+    },
+    "notes": "maiden of the forest who drives the game-animals",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "daughter-of-Tapio-of-Tapiola",
+    "term": {
+     "value": "Tapion tytar",
+     "script": "Finnish",
+     "rom": "Tapion tytar"
+    },
+    "notes": "daughter of the forest-king, maiden of Tapiola",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "forest-game-driven-from-the-thicket-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 32"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Tuulikki; from tuuli meaning wind, with the affectionate diminutive ending -kki characteristic of the Tapiola maidens (compare Mielikki, the by-name shared with the mother-goddess family). Literally the little wind, fitting her role of driving the forest game like a breath through the trees. The name is fixed in the Kalevala to the forest-family of Tapio and became a popular modern Finnish female given-name.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runo 32 (forest and herding charms)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), forest / hunting charms naming Tuulikki"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Daughter of the forest-king Tapio and the forest-mistress Mielikki, a maiden of Tapiola and goddess of the forest game-animals; her name reads as little wind. She is invoked in the Kalevala forest-charms (Runo 32) alongside Tapio, Mielikki, Tellervo and Nyyrikki to drive the game and the kine from the thickets toward the hunter and herder. Wired as daughter of finnish_tapio and finnish_mielikki and sister of Nyyrikki and Tellervo.",
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "finnish_tapio",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 32; Tuulikki named daughter of Tapio"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tapio — Tuulikki is the daughter of Tapio the forest-king, maiden of the forest game of Tapiola."
+   },
+   {
+    "kind": "mother",
+    "personId": "finnish_mielikki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tuulikki daughter of the forest-mistress Mielikki"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_mielikki — Tuulikki is the daughter of Mielikki, mistress of the forest, alongside Tellervo and Nyyrikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_nyyrikki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_nyyrikki — fellow child of the forest-couple Tapio and Mielikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_tellervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_tellervo — fellow daughter of the forest-couple Tapio and Mielikki."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Tuulikki, Tapion tytar",
+    "original": "Tuulikki, Tapion tytar",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Tuulikki daughter of Tapio, her standing patronymic epithet in the forest-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 32 forest-charm"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tuulikki-game-driving-wand",
+    "classId": "tool",
+    "kind": "tool",
+    "name": "Game-driving wand of Tuulikki",
+    "term": {
+     "value": "ajovitsa",
+     "script": "Finnish",
+     "rom": "ajovitsa"
+    },
+    "role": "owner",
+    "notes": "the wand or switch with which the forest-maiden drives the game-beasts from the thicket toward the hunter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 32"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tuulikki-drive-forest-game",
+    "name": "Drive the forest game toward the hunter",
+    "term": {
+     "value": "riistan ajaminen",
+     "script": "Finnish"
+    },
+    "notes": "Rouses and drives the game-animals of the wood from cover toward the petitioner",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 32"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "forest",
+     "hunt"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fon_gbadu",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Gbadu",
+   "alt": [
+    "Gbadu",
+    "Fa-Gbadu",
+    "Minona-mother"
+   ],
+   "transliterations": {
+    "fon": "Gbadu"
+   }
+  },
+  "type": "deity",
+  "tradition": "Fon",
+  "primaryTradition": "Fon",
+  "sex": "female",
+  "vitalStatus": null,
+  "origin": "canon",
+  "parentIds": [
+   "fon_mawu_lisa"
+  ],
+  "parentRoles": {
+   "fon_mawu_lisa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "born-daughter-of-Mawu-after-the-elder-twins",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits and Frances S. Herskovits, Dahomean Narrative: A Cross-Cultural Analysis (Northwestern University Press, 1958)"
+     }
+    ],
+    "notes": "Daughter of the creator Mawu (of the dual creator Mawu-Lisa), born after the elder twin sea-and-earth gods of the Dahomean pantheon. She is the female spirit who is the source and seat of Fa, the destiny-oracle, and is set upon a tall palm at the centre of the world with sixteen eyes about her head."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "keeper-of-the-sixteen-eyes-and-source-of-Fa",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits and Frances S. Herskovits, Dahomean Narrative: A Cross-Cultural Analysis (Northwestern University Press, 1958)"
+     }
+    ],
+    "notes": "Mawu set Gbadu in a tall palm at the centre of the world with sixteen eyes ringing her head and gave her the keys to the future, so that she became the goddess of fate. Each dawn her children open and close her eyes; the configuration of the opened eyes is the sign read in Fa divination, and to open even one eye she must call upon Legba. Her sons or messengers carry the knowledge of Fa down to humankind. She is regarded among the Fon as the source of Fa power and is reckoned the female counterpart and wife of Fa, the destiny-oracle himself."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fate-destiny-divination",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Gbadu",
+     "script": "Fon",
+     "rom": "Gbadu"
+    },
+    "notes": "goddess of fate and seat of the Fa destiny-oracle",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits, Dahomey: An Ancient West African Kingdom (J. J. Augustin, 1938), Fa divination, pp. 201-230"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bernard Maupoil, La geomancie a l ancienne Cote des Esclaves (Institut d Ethnologie, 1943)"
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "sixteen-eyes-of-fate-attribute",
+     "notes": "the sixteen eyes ringing her head whose opened configuration is read as the Fa sign",
+     "sources": [
+      {
+       "kind": "ethnography",
+       "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+      }
+     ]
+    },
+    {
+     "id": "tall-palm-at-the-centre-of-the-world-attribute",
+     "notes": "the palm at the world centre in which Mawu seats her",
+     "sources": [
+      {
+       "kind": "ethnography",
+       "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "languageFamily": "Niger-Congo > Atlantic-Congo > Volta-Niger > Gbe (Fon/Fongbe)",
+   "etymology": "Fon Gbadu, the name of the female spirit of fate associated with Fa (the Fon reflex of Yoruba Ifa). In the Dahomean material recorded by Herskovits she is the daughter of Mawu and the seat of the destiny-oracle; her name is treated as that of the goddess of the Fa-system rather than as a transparent common-noun derivation.",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "Melville J. Herskovits, Dahomey: An Ancient West African Kingdom (J. J. Augustin, 1938)"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits and Frances S. Herskovits, Dahomean Narrative: A Cross-Cultural Analysis (Northwestern University Press, 1958)"
+     },
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits, Dahomey: An Ancient West African Kingdom (J. J. Augustin, 1938), Fa divination, pp. 201-230"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bernard Maupoil, La geomancie a l ancienne Cote des Esclaves (Institut d Ethnologie, 1943)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Fon goddess of fate, daughter of the creator Mawu (of Mawu-Lisa) and the source and seat of Fa, the destiny-oracle. Mawu set her in a tall palm at the centre of the world with sixteen eyes ringing her head and gave her the keys to the future; the configuration of her opened eyes is the sign read in Fa divination, and to open an eye she must call upon Legba. Among the Fon she is reckoned the female counterpart and wife of Fa, the destiny-oracle (the corpus entry fon_fa notes that his wife Gbadu sources his power). Her sons or messengers carry Fa-divination down to humankind. Wired as daughter of fon_mawu_lisa and spouse of fon_fa. Her further daughter Minona is named in the Dahomean material but left unregistered as a cascade descendant.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "fon_fa",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958); Gbadu as female counterpart and wife of Fa, source of his power"
+     }
+    ],
+    "notes": "Reciprocal-needed on fon_fa — Gbadu is the female counterpart and wife of Fa and the source of his oracular power (fon_fa notes already record that his wife Gbadu sources his power)."
+   },
+   {
+    "kind": "mother",
+    "personId": "fon_mawu_lisa",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958); Gbadu daughter of Mawu, born after the elder twins"
+     }
+    ],
+    "notes": "Reciprocal-needed on fon_mawu_lisa — Gbadu is the daughter of the creator Mawu (of Mawu-Lisa), seated in the world-palm as the goddess of fate."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "goddess-of-the-sixteen-eyes",
+    "original": "Gbadu",
+    "language": "fon",
+    "transliteration": "Gbadu",
+    "contextTag": "ethnographic",
+    "notes": "the spirit of the sixteen eyes of fate, seat of Fa",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "gbadu-palm-of-the-world-centre",
+    "kind": "structure",
+    "name": "World-centre palm of Gbadu",
+    "term": {
+     "value": "Gbadu azinkan",
+     "script": "Fon",
+     "rom": "Gbadu azinkan"
+    },
+    "role": "occupant",
+    "notes": "the tall palm at the centre of the world in which Mawu seats Gbadu and from which the eyes of fate are read",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "gbadu-eyes-of-fate",
+    "name": "Hold the eyes of fate read in Fa divination",
+    "term": {
+     "value": "Fa nukun",
+     "script": "Fon",
+     "rom": "Fa nukun"
+    },
+    "notes": "Her sixteen eyes, opened and closed each dawn, yield the destiny-signs read by the bokono diviner of Fa",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "divination",
+     "fate"
+    ]
+   }
+  ]
+ }
+]
+```

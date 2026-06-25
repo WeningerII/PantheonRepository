@@ -1,0 +1,619 @@
+Pantheon Registry — Verify-first mythology sweep, Batch 11 (sweep-011)
+========================================================================
+
+Scope processed IN ORDER (51 entities): etruscan_nethuns, etruscan_selvans,
+etruscan_sethlans, etruscan_tages, etruscan_thesan, etruscan_tinia,
+etruscan_turan, etruscan_turms, etruscan_uni, etruscan_vanth, evenki_buga,
+evenki_heglun, evenki_khargi, evenki_mangi, evenki_seveki, ewe_afa, ewe_age,
+ewe_avlekete, ewe_da, ewe_gu, ewe_legba, ewe_lisa, ewe_mawu, ewe_mawu_lisa,
+ewe_nana_buluku, ewe_sakpata, ewe_so, ewedo, eweka_i, ewuare_great,
+fallen_star, fang_fam, fang_mebege, fang_mebere, fang_nkwa, fang_nzame,
+fang_sekume, fijian_cagawalu, fijian_dakuwaqa, fijian_daucina, fijian_degei,
+fijian_nacirikaumoli, fijian_nakausabaria, fijian_ratumaibulu,
+fijian_ravuravu, fijian_rokola, fijian_veli, finnish_ahti, finnish_aino,
+finnish_ilmarinen.
+
+All 51 already exist in the corpus. Each was read in full and its prose mined
+semantically for named kin (parents, siblings, spouses, children, named-kin).
+Existing relations/parentIds and their reciprocals were audited corpus-wide:
+no symmetric-reciprocity gaps among the 51. The two flagged kin-families (the
+Fang creation set Mebege/Nzame/Fam/Sekume + the triad Mebere/Nkwa, and the Ewe
+Mawu-Lisa / Nana-Buluku group with the Mawu-Lisa children Age/Gu/Legba/
+Sakpata/So) are already fully wired internally (sibling/companion/descent
+edges all reciprocal).
+
+Three NAMED-NO-ENTRY kin, attested at work level, are authored below:
+  - fang_mbongwe  — wife of fang_sekume, the first woman made from a tree,
+                    co-progenitor of the Fang (Sekume reciprocal needed).
+  - finnish_vellamo — water-goddess, consort of finnish_ahti (Veen emanta);
+                    enriches the otherwise kinless Ahti (Ahti reciprocal needed).
+  - finnish_joukahainen — brother of finnish_aino and rival/ambusher of
+                    Vainamoinen (Aino + Vainamoinen reciprocals needed).
+
+Notable SKIPs (reasons): Etruscan Hercle/Atunis/Lasas/Pava-Tarchies (externalRef
+or role/collective/syncretic); Evenki elk-calf (unnamed collective); Ewe
+Agbe/Naete/Gbadu (source-flagged contested/variant parentage, not firmly
+attested kin); Edo Ehenmihen (minor intermediate king-list Oba outside the
+curated notable-Oba set, descent already encoded via the Eweka chain and
+ewedo ancestor-of ewuare_great; ewedo itself sets parentIds=[]); Fang Dibobia
+(primordial spider helper, not kin); Fijian Turukawa (Degei cock, animal),
+Tui Nubulevu (contested/unregistered twin-father); Finnish "Maiden of Pohjola"
+(Pohjan neito = descriptive title, no personal name in the Kalevala).
+
+```json
+[
+  {
+    "id": "fang_mbongwe",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Mortal First Woman of the Tree",
+      "alt": [
+        "Mbongwe",
+        "Mbomgwe"
+      ],
+      "transliterations": {
+        "fang": "Mbongwe",
+        "etymology": "Fang Mbongwe, the first woman, shaped by the mortal first man Sekume from the wood of a fallen ebony tree at the bidding of Nzame; with Sekume she is the ancestress of the Fang."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Fang",
+    "primaryTradition": "Fang",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic age",
+        "eraOrdering": 0,
+        "startEvent": "Fashioned from a tree by the mortal first man Sekume, at the command of Nzame, to be his wife and companion after the destruction of the first world",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knappert, Jan. African Mythology: An Encyclopedia of Myth and Legend. London, 1990, s.v. Nzame: Sekume forms his wife Mbongwe from a tree."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fernandez, James W. Bwiti: An Ethnography of the Religious Imagination in Africa. Princeton, 1982, on the Fang first ancestors after the re-creation."
+          }
+        ],
+        "notes": "When Nzame had made the new mortal man Sekume, he told him to make himself a woman from a nearby tree; Sekume carved her from the wood of a fallen ebony, and she was Mbongwe, the first woman."
+      },
+      {
+        "typeStatus": "demigod",
+        "vitalStatus": "deceased",
+        "era": "mythic age",
+        "eraOrdering": 1,
+        "startEvent": "Becomes with Sekume the ancestress of the Fang lineage, bearing the first generations of humankind",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame: from Sekume and Mbongwe descend the Fang."
+          }
+        ],
+        "notes": "Mortal by design, paired with the mortal Sekume; together they flourished and gave rise to the people."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Mbongwe",
+          "script": "Latn",
+          "rom": "Mbongwe"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame."
+          }
+        ]
+      },
+      {
+        "sphereId": "fashioning-of-humankind",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fernandez, James W. Bwiti. Princeton, 1982, on the Fang progenitors."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fang-mbongwe-mother-the-fang",
+        "name": "Bear the first generations and become ancestress of the Fang",
+        "inheritability": "not-inheritable",
+        "notes": "With Sekume the tree-born first woman is the mother of the Fang line; the descent of the people runs from her. The role is hers alone, not a heritable power.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame, the descent of the Fang from Sekume and Mbongwe."
+          }
+        ],
+        "scopeTags": [
+          "fertility"
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "fang-mbongwe-ebony-tree",
+        "name": "the fallen ebony tree of her making",
+        "kind": "material",
+        "role": "The wood of the fallen ebony tree from which Sekume carved her at the god command; the tree-origin of the first woman is the constant of the Fang re-creation narrative.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame, Mbongwe made from a tree."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "fang_sekume",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame: Mbongwe the wife of Sekume."
+          }
+        ],
+        "notes": "Wife of the mortal first man Sekume; with him the ancestress of the Fang. Reciprocal needed on the existing figure fang_sekume."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mbongwe is the Fang first woman, fashioned by the mortal first man Sekume from the wood of a tree at the bidding of Nzame after the destruction of the first world; with Sekume she is the ancestress of the Fang.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Knappert, Jan. African Mythology: An Encyclopedia of Myth and Legend. London, 1990, s.v. Nzame."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fernandez, James W. Bwiti: An Ethnography of the Religious Imagination in Africa. Princeton, 1982."
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Progenitress tier: typed demigod (god-occasioned first woman, mortal by design), mirroring her husband fang_sekume. Carved from a fallen ebony tree by Sekume at Nzame command, the first woman from whom the Fang descend. Named in the widely reproduced Fang creation narrative (Knappert 1990, the Trilles/Tessmann tradition; Fernandez 1982). Authored as a NAMED-NO-ENTRY attested kin of the existing Fang creation family.",
+    "epithets": [
+      {
+        "epithetId": "Mbongwe",
+        "original": "Mbongwe",
+        "language": "fang",
+        "transliteration": "Mbongwe",
+        "contextTag": "myth",
+        "notes": "The first woman, carved from a tree, ancestress of the Fang",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finnish_vellamo",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Vellamo",
+      "alt": [
+        "Veen emanta",
+        "Mistress of the Water"
+      ],
+      "transliterations": {
+        "finnish": "Vellamo",
+        "etymology": "Finnish Vellamo, goddess of the water, lakes and sea; the consort of the water-god Ahti, with whom she rules the sea-realm Ahtola. Called Veen emanta, Mistress of Water."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Mistress of the waters dwelling at the bottom of the sea with her husband Ahti, ruling the sea-realm Ahtola and its creatures, driver of the fish and giver of the catch",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), the vesiluvut and the sea-realm of Ahti and Vellamo; Runo 48 (the netting of the fish)."
+          },
+          {
+            "kind": "primary",
+            "reference": "Ganander, Christfrid. Mythologia Fennica (1789), on Vellamo, mistress of the water."
+          }
+        ],
+        "notes": "Wife of Ahti, lord of the deep; she sits on the water-rock to listen to Vainamoinen kantele-song, and her maids (Vellamon neidot) are the fishes drawn up in the great catch."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vesi",
+          "script": "Finnish",
+          "rom": "vesi"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849); Ganander, Mythologia Fennica (1789)."
+          }
+        ]
+      },
+      {
+        "sphereId": "sea-and-lakes",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ahtola",
+          "script": "Finnish",
+          "rom": "Ahtola"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Siikala, Anna-Leena. Itamerensuomalaisten mytologia (2012), on Ahti, Vellamo and the water-realm Ahtola."
+          }
+        ]
+      },
+      {
+        "sphereId": "fish",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kala",
+          "script": "Finnish",
+          "rom": "kala"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Finnish fishing incantations (Suomen Kansan Vanhat Runot), the vesiluvut to Ahti and Vellamo."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "finnish-vellamo-drive-the-fish",
+        "name": "Drive the fish and give the catch from the deep",
+        "term": {
+          "value": "kalaonni",
+          "script": "Finnish",
+          "rom": "kalaonni"
+        },
+        "inheritability": "none",
+        "notes": "As mistress of the water she herds the fish of lake and sea; fishermen address her with Ahti in the water-charms to drive the catch into their nets.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Finnish fishing incantations (SKVR), the vesiluvut addressed to Ahti and Vellamo."
+          }
+        ],
+        "scopeTags": [
+          "water"
+        ]
+      },
+      {
+        "id": "finnish-vellamo-rule-the-sea-realm",
+        "name": "Rule the sea-realm Ahtola with Ahti and guard its creatures",
+        "inheritability": "none",
+        "notes": "With her husband Ahti she keeps the realm of Ahtola at the bottom of the sea; the water-folk and the maids of Vellamo are hers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Siikala, Anna-Leena. Itamerensuomalaisten mytologia (2012), Ahti and Vellamo of Ahtola."
+          }
+        ],
+        "scopeTags": [
+          "authority"
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "finnish-vellamo-water-rock",
+        "name": "the water-rock of Vellamo",
+        "kind": "site",
+        "role": "The rock in the sea on which Vellamo perches to listen to the kantele-song; the seat from which the mistress of the water rises to the surface.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Vellamo on the rock at the kantele-playing of Vainamoinen."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "finnish_ahti",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849); Ganander, Mythologia Fennica (1789), Vellamo the wife of Ahti."
+          }
+        ],
+        "notes": "Consort of the water-god Ahti, with whom she rules Ahtola. Reciprocal needed on the existing figure finnish_ahti."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Vellamo is the Finnish goddess of the water, lakes and sea, called Veen emanta (Mistress of Water), the consort of the water-god Ahti with whom she rules the sea-realm Ahtola and drives the fish.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Ganander, Christfrid. Mythologia Fennica (1789), Vellamo."
+          },
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Ahti and Vellamo of the sea-realm; Runo 48."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Siikala, Anna-Leena. Itamerensuomalaisten mytologia (2012)."
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Finnish water-goddess, mistress of lakes and sea, consort of Ahti; the pair dwell at the bottom of the sea in Ahtola. Named already in Ganander Mythologia Fennica (1789) and recurrent in Kalevala-metre fishing-charms (the vesiluvut). Authored as the attested but previously unregistered spouse of the corpus figure finnish_ahti, whose record names her repeatedly as his consort.",
+    "epithets": [
+      {
+        "epithetId": "Veen emanta",
+        "original": "Veen emanta",
+        "language": "finnish",
+        "transliteration": "Veen emanta",
+        "contextTag": "cult",
+        "notes": "Mistress of Water; the goddess who rules the deep with Ahti",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Finnish fishing incantations (SKVR), the water-charms naming Vellamo Veen emanta."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finnish_joukahainen",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Joukahainen",
+      "alt": [
+        "Brother of Aino",
+        "the meagre son of Lapland"
+      ],
+      "transliterations": {
+        "finnish": "Joukahainen",
+        "etymology": "Finnish Joukahainen; the young Lappish singer who challenges Vainamoinen to the singing-contest, loses, and pledges his sister Aino to ransom his life. The name is taken with the joukko word-family in folk usage; the figure is the brother of Aino."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "kalevala-mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "kalevala-mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "challenges-Vainamoinen-to-the-singing-contest-Runo-3",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runo 3."
+          }
+        ],
+        "notes": "A young Lappish singer, brother of Aino, who arrogantly drives north to challenge the old sage Vainamoinen to a contest of song and knowledge."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "kalevala-mythic-prehistoric",
+        "eraOrdering": 1,
+        "startEvent": "sung-into-the-swamp-and-pledges-his-sister-Aino",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runo 3."
+          }
+        ],
+        "notes": "Bested and sung down into a swamp by Vainamoinen song-magic; sinking to his chin, in desperation he pledges his sister Aino as bride to the old sage to ransom his life. The pledge, made without Aino consent, sets the Aino tragedy in motion (Runos 4-5)."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "kalevala-mythic-prehistoric",
+        "eraOrdering": 2,
+        "startEvent": "ambushes-Vainamoinen-out-of-spite-Runo-6",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runo 6 (Joukahainen revenge)."
+          }
+        ],
+        "notes": "Nursing his resentment after Aino death, the youth spans his crossbow and lies in wait for Vainamoinen; he looses three bolts and, missing the sage, kills his horse, pitching Vainamoinen into the sea and so launching the Pohjola journeys."
+      }
+    ],
+    "domains": [
+      {
+        "id": "young-singer-and-rival-of-Vainamoinen",
+        "term": {
+          "value": "laulaja",
+          "script": "Finnish",
+          "rom": "laulaja"
+        },
+        "notes": "young singer; the rash challenger of the old sage",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runos 3 and 6.",
+            "derived": true
+          }
+        ]
+      },
+      {
+        "id": "brother-and-pledger-of-Aino",
+        "term": {
+          "value": "Ainon veli",
+          "script": "Finnish",
+          "rom": "Ainon veli"
+        },
+        "notes": "brother of Aino, who pledged her to ransom his life",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runo 3.",
+            "derived": true
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "finnish-joukahainen-contest-in-song",
+        "name": "Contend in the singing-and-knowledge contest",
+        "term": {
+          "value": "kilpalaulanta",
+          "script": "Finnish",
+          "rom": "kilpalaulanta"
+        },
+        "inheritability": "none",
+        "notes": "He boasts the depth of his song and lore and challenges Vainamoinen to the kilpalaulanta; outmatched, he is sung fast into the earth and swamp. A mortal singer power, no match for the sage.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runo 3."
+          }
+        ],
+        "scopeTags": [
+          "language"
+        ]
+      },
+      {
+        "id": "finnish-joukahainen-ambush-with-the-crossbow",
+        "name": "Lie in wait and loose the crossbow at the sage",
+        "term": {
+          "value": "jousi",
+          "script": "Finnish",
+          "rom": "jousi"
+        },
+        "inheritability": "none",
+        "notes": "Out of revenge he spans his great crossbow and shoots at Vainamoinen from ambush; he misses the man but slays his horse, casting the sage into the waves.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runo 6."
+          }
+        ],
+        "scopeTags": [
+          "combat"
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "finnish-joukahainen-crossbow",
+        "name": "the great crossbow of Joukahainen",
+        "kind": "weapon",
+        "term": {
+          "value": "jousi",
+          "script": "Finnish",
+          "rom": "jousi"
+        },
+        "role": "The mighty crossbow he spans to ambush Vainamoinen; with it he looses the bolts that kill the sage horse and pitch him into the sea.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runo 6, the spanning of the crossbow."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "finnish_aino",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runo 3, Joukahainen pledges his sister Aino."
+          }
+        ],
+        "notes": "Elder brother of Aino, whom he pledged to Vainamoinen to ransom his own life. Reciprocal needed on the existing figure finnish_aino."
+      },
+      {
+        "kind": "enemy",
+        "personId": "finnish_vainamoinen",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runos 3 and 6, the singing-contest and the crossbow-ambush."
+          }
+        ],
+        "notes": "Defeated rival and would-be killer of the old sage; he ambushes Vainamoinen and slays his horse. Reciprocal needed on the existing figure finnish_vainamoinen."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Joukahainen is the young Lappish singer of the Kalevala, the brother of Aino, who challenges Vainamoinen to a singing-contest, is sung into a swamp, and pledges his sister Aino to ransom his life; later, out of resentment, he ambushes Vainamoinen with a crossbow and kills the sage horse.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), Runos 3-6."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kuusi, Matti et al. Finnish Folk Poetry: Epic (1977), on the Joukahainen and Aino narratives."
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mortal young singer of the Kalevala, the meagre son of Lapland; brother of Aino and rash rival of Vainamoinen. His losing of the singing-contest and his pledge of Aino (Runo 3) trigger the Aino tragedy (Runos 4-5), and his crossbow-ambush (Runo 6) launches the Pohjola journeys. Carried until now only implicitly behind the Aino record; authored here as the attested but unregistered brother of the corpus figure finnish_aino and rival of finnish_vainamoinen. Mortal tier, mirroring his sister Aino.",
+    "epithets": [
+      {
+        "epithetId": "nuori Joukahainen",
+        "original": "nuori Joukahainen",
+        "language": "finnish",
+        "transliteration": "nuori Joukahainen",
+        "contextTag": "folk",
+        "notes": "young Joukahainen; the rash youth of the singing-contest",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Kalevala (Lonnrot 1849), recurring epithet-formula nuori Joukahainen."
+          }
+        ]
+      }
+    ]
+  }
+]
+```

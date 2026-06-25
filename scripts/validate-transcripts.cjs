@@ -23,7 +23,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const SYM = new Set(['spouse', 'sibling', 'twin sibling', 'half sibling', 'half-sibling',
   'lover', 'enemy', 'rival', 'ally', 'companion', 'sworn companion', 'equated-with', 'interpretatio']);
-const VALID_TYPE = new Set(['deity', 'demigod', 'quartigod', 'scion', 'mortal']);
+const VALID_TYPE = new Set(['deity', 'numen', 'demigod', 'quartigod', 'scion', 'mortal']);
 
 function loadCorpus() {
   const ctx = {

@@ -1,0 +1,950 @@
+Window #9 (W09) alphabetical family-completion sweep.
+Entities audited: inuit_anningan .. iulius_proculus (50 ids).
+New figures authored below as a JSON array. RECIPROCAL-NEEDED notices from the
+validator are expected for edges into existing corpus figures.
+
+```json
+[
+  {
+    "id": "blackfoot_poia",
+    "name": {
+      "primary": "Poia",
+      "alt": ["Star Boy", "Scarface", "Scar Face", "Mistaken-for-Morning-Star"],
+      "transliterations": {}
+    },
+    "type": "demigod",
+    "tradition": "Blackfoot",
+    "primaryTradition": "Blackfoot",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["ipisowaahs", "soatsaki"],
+    "temporal": { "era": "star-stories" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "star-stories",
+        "eraOrdering": 0,
+        "startEvent": "birth-to-morning-star-and-feather-woman",
+        "sources": [{ "kind": "primary", "reference": "Walter McClintock, The Old North Trail (1910), Legend of Poia" }],
+        "notes": "Son of the celestial Morning Star (Ipi'sowaahs) and the mortal Piegan woman So-at-sa-ki (Feather Woman). Born in the Sky Country and brought down to earth with his mother after she dug up the forbidden sacred turnip; bore a scar on his face that gave him the name Poia, scar face."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "star-stories",
+        "eraOrdering": 1,
+        "startEvent": "journey-to-the-sky-country-and-healing-of-the-scar",
+        "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), Legend of Scarface" }],
+        "notes": "Travelled to the Sky Country to ask the Sun to remove his scar so he might marry the girl he loved. The Sun healed his face; afterward he so resembled his father the Morning Star that he gained the further name Mistaken-for-Morning-Star."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "star-stories",
+        "eraOrdering": 2,
+        "startEvent": "bringing-of-the-sun-dance-to-the-blackfoot",
+        "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910), Legend of Poia" }],
+        "notes": "Returned to the Blackfoot bearing the Sun Dance (Medicine Lodge) with instructions from his grandfather the Sun, becoming the culture-hero who established the central Blackfoot ceremony of healing."
+      }
+    ],
+    "domains": [
+      { "sphereId": "culture-hero", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910), Legend of Poia" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Walter McClintock, The Old North Trail (1910), Legend of Poia" },
+          { "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), Legend of Scarface" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "ipisowaahs", "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910)" }], "notes": "Son of Morning Star (Ipi'sowaahs)." },
+      { "kind": "mother", "personId": "soatsaki", "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910)" }], "notes": "Son of the mortal Feather Woman, So-at-sa-ki." },
+      { "kind": "grandchild-of", "personId": "blackfoot_natosi", "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910)" }], "notes": "Paternal grandson of the Sun (Naato'si), who healed his scar and gave him the Sun Dance." }
+    ]
+  },
+  {
+    "id": "inuit_malina",
+    "name": {
+      "primary": "Malina",
+      "alt": ["Siqiniq", "Seqineq", "Sun Woman", "Akycha"],
+      "transliterations": { "inuktitut": "ᓯᕿᓂᖅ Siqiniq" }
+    },
+    "type": "deity",
+    "tradition": "Inuit",
+    "primaryTradition": "Inuit",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "flight-from-the-moon-brother-into-the-sky",
+        "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }],
+        "notes": "The Sun Woman; sister of the Moon Man (Anningan / Taqqiq). After her brother forced himself on her in the dark, she marked his face with soot to expose him, then fled into the sky bearing a torch and became the Sun, her brother pursuing her ever after as the Moon."
+      }
+    ],
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" },
+          { "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "inuit_anningan", "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }], "notes": "Sister of the Moon Man Anningan; their eternal sky-chase explains the lunar phases and, when he overtakes her, the eclipse." }
+    ]
+  },
+  {
+    "id": "irish_cian",
+    "name": {
+      "primary": "Cian",
+      "alt": ["Cian mac Dian Cécht", "Kian", "Scal Balb"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["irish_dian_cecht"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "begetting-of-lugh-on-ethniu",
+        "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired (Second Battle of Mag Tuired)" }],
+        "notes": "Son of the physician Dian Cécht of the Tuatha Dé Danann. Father of Lugh by Ethniu, daughter of the Fomorian Balor; in the folk account he reached Balor's tower-bound daughter with the help of a druidess to beget the prophesied grandson who would kill Balor."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 1,
+        "startEvent": "killing-by-the-sons-of-tuireann",
+        "sources": [{ "kind": "primary", "reference": "Oidheadh Chloinne Tuireann (The Fate of the Children of Tuireann)" }],
+        "notes": "Slain by the sons of Tuireann while in the form of a pig; the blood-fine Lugh exacts for the killing drives the central quest of Oidheadh Chloinne Tuireann."
+      }
+    ],
+    "domains": [
+      { "sphereId": "tuatha-de-danann", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Cath Maige Tuired (Second Battle of Mag Tuired)" },
+          { "kind": "primary", "reference": "Lebor Gabála Érenn" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "parent", "personId": "irish_dian_cecht", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }], "notes": "Son of the physician Dian Cécht." },
+      { "kind": "father-of", "personId": "irish_lugh", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }], "notes": "Father of Lugh by Ethniu daughter of Balor. The existing irish_lugh entry routes paternity to Cian in prose; this materializes the figure." },
+      { "kind": "spouse", "personId": "irish_ethniu", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }], "notes": "United with Ethniu daughter of Balor; their son is Lugh." }
+    ]
+  },
+  {
+    "id": "irish_ethniu",
+    "name": {
+      "primary": "Ethniu",
+      "alt": ["Eithne", "Ethliu", "Ethnea"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["irish_balor"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "confinement-in-balors-tower-and-bearing-of-lugh",
+        "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired (Second Battle of Mag Tuired)" }],
+        "notes": "Daughter of the Fomorian Balor of the Evil Eye, whom a prophecy warned would be killed by his own grandson. Balor shut her in a tower to keep her from men; Cian of the Tuatha Dé Danann reached her nonetheless, and she bore Lugh, the grandson who would fulfil the prophecy."
+      }
+    ],
+    "domains": [
+      { "sphereId": "tuatha-de-danann", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Lebor Gabála Érenn" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Cath Maige Tuired (Second Battle of Mag Tuired)" },
+          { "kind": "primary", "reference": "Lebor Gabála Érenn" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "parent", "personId": "irish_balor", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }], "notes": "Daughter of the Fomorian Balor." },
+      { "kind": "mother-of", "personId": "irish_lugh", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }], "notes": "Mother of Lugh by Cian. The existing irish_lugh entry names Ethniu in prose; this materializes the figure." },
+      { "kind": "spouse", "personId": "irish_cian", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }], "notes": "United with Cian of the Tuatha Dé Danann; their son is Lugh." }
+    ]
+  },
+  {
+    "id": "irish_balor",
+    "name": {
+      "primary": "Balor",
+      "alt": ["Balor of the Evil Eye", "Balar", "Balor Béimnech", "Balor of the Piercing Eye"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "tyranny-as-fomorian-king-with-the-destroying-eye",
+        "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired (Second Battle of Mag Tuired)" }],
+        "notes": "Foremost king-champion of the Fomorians, possessed of a single great eye whose gaze destroyed all it fell upon, kept lidded until raised by his attendants in battle. Warned by prophecy that his grandson would kill him, he locked away his daughter Ethniu."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 1,
+        "startEvent": "death-by-lughs-sling-stone-at-mag-tuired",
+        "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired (Second Battle of Mag Tuired)" }],
+        "notes": "Killed at the Second Battle of Mag Tuired by his grandson Lugh, who put a sling-stone through the destroying eye as it opened, fulfilling the prophecy and breaking the Fomorian power."
+      }
+    ],
+    "domains": [
+      { "sphereId": "fomorians", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "faculties": [
+      {
+        "id": "balor-destroying-eye",
+        "name": "the destroying eye whose gaze withers armies",
+        "inheritability": "none",
+        "notes": "A single venomous eye, lid raised by attendants, that slew all it looked upon.",
+        "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Cath Maige Tuired (Second Battle of Mag Tuired)" },
+          { "kind": "primary", "reference": "Lebor Gabála Érenn" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "father-of", "personId": "irish_ethniu", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }], "notes": "Father of Ethniu, mother of Lugh." },
+      { "kind": "enemy", "personId": "irish_lugh", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }], "notes": "Maternal grandfather and slain foe of Lugh, who killed him with a sling-stone through the eye at Mag Tuired. The existing irish_lugh entry names Balor in prose." }
+    ]
+  },
+  {
+    "id": "irish_ernmas",
+    "name": {
+      "primary": "Ernmas",
+      "alt": ["Ernmais"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "mothering-of-the-sovereignty-and-war-goddesses",
+        "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn" }],
+        "notes": "Mother-goddess of the Tuatha Dé Danann, named in the Lebor Gabála as mother of the three sovereignty-goddesses Ériu, Banba and Fódla, and of the three war-goddesses the Morrígan, Badb and Macha; killed in the First Battle of Mag Tuired."
+      }
+    ],
+    "domains": [
+      { "sphereId": "tuatha-de-danann", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Lebor Gabála Érenn" },
+          { "kind": "primary", "reference": "Cath Maige Tuired (Second Battle of Mag Tuired)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "mother-of", "personId": "irish_morrigan", "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn" }], "notes": "Mother of the Morrígan, one of the three war-goddesses. The existing irish_morrigan entry names Ernmas as her mother in prose." },
+      { "kind": "mother-of", "personId": "irish_eriu", "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn" }], "notes": "Mother of Ériu, one of the three sovereignty-goddesses. The existing irish_eriu entry names Ernmas as her mother in prose." }
+    ]
+  },
+  {
+    "id": "irish_elcmar",
+    "name": {
+      "primary": "Elcmar",
+      "alt": ["Ecmar", "Elcmair"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "lordship-of-bru-na-boinne-and-the-cuckolding-by-the-dagda",
+        "sources": [{ "kind": "primary", "reference": "Tochmarc Étaíne (The Wooing of Étaín)" }],
+        "notes": "Tuatha Dé Danann lord of Brú na Bóinne and husband of Boann, goddess of the river Boyne. While the Dagda sent him away on a one-day errand and held the sun still, Boann bore Aengus; by the wordplay on a day and a night, the grown Aengus later dispossessed Elcmar of the Brug."
+      }
+    ],
+    "domains": [
+      { "sphereId": "tuatha-de-danann", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Tochmarc Étaíne" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Tochmarc Étaíne (The Wooing of Étaín)" },
+          { "kind": "secondary", "reference": "Lebor Gabála Érenn" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "irish_boann", "sources": [{ "kind": "primary", "reference": "Tochmarc Étaíne" }], "notes": "Husband of Boann; the existing irish_boann entry names her husband Elcmar in prose, from whom the Dagda hid the affair that begot Aengus." }
+    ]
+  },
+  {
+    "id": "irish_tailtiu",
+    "name": {
+      "primary": "Tailtiu",
+      "alt": ["Tailltiu", "Telta"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "clearing-of-the-plains-and-death-from-toil",
+        "sources": [{ "kind": "primary", "reference": "Metrical Dindshenchas (Tailtiu)" }],
+        "notes": "Queen of the Fir Bolg, wife of their last high king Eochaid mac Eirc, and foster-mother of Lugh. She cleared the forests of the plain that bears her name (Tailtiu, Teltown) for tillage and died of the exhaustion of that labour."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 1,
+        "startEvent": "founding-of-lughnasadh-in-her-honour",
+        "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn" }],
+        "notes": "At her dying wish her foster-son Lugh founded the harvest assembly and funeral games of Lughnasadh at Tailtiu in her memory."
+      }
+    ],
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Metrical Dindshenchas (Tailtiu)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Metrical Dindshenchas (Tailtiu)" },
+          { "kind": "primary", "reference": "Lebor Gabála Érenn" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "foster-parent", "personId": "irish_lugh", "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn" }], "notes": "Foster-mother of Lugh, in whose honour he founded Lughnasadh. The existing irish_lugh entry names Tailtiu as his foster-mother in prose." }
+    ]
+  },
+  {
+    "id": "irish_idath",
+    "name": {
+      "primary": "Idath",
+      "alt": ["Idad", "Idath of Connacht"],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "fathering-of-fraech-on-be-find",
+        "sources": [{ "kind": "primary", "reference": "Táin Bó Fraích (The Cattle-Raid of Fróech)" }],
+        "notes": "Mortal prince of the men of Connacht, named in the opening of Táin Bó Fraích as the father of the hero Fróech by Bé Find (Bébinn), sister of Boann of the Tuatha Dé Danann. He appears only as the named father at the saga-opening."
+      }
+    ],
+    "domains": [
+      { "sphereId": "connacht-nobility", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Táin Bó Fraích" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Táin Bó Fraích (The Cattle-Raid of Fróech), Book of Leinster" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "father-of", "personId": "irish_fraech", "sources": [{ "kind": "primary", "reference": "Táin Bó Fraích" }], "notes": "Father of Fróech by Bé Find. The existing irish_fraech entry names Idath as his father in prose and flags him left unseeded; this materializes the figure." },
+      { "kind": "spouse", "personId": "irish_be_find", "sources": [{ "kind": "primary", "reference": "Táin Bó Fraích" }], "notes": "United with Bé Find (Bébinn), sister of Boann, who bore him Fróech." }
+    ]
+  },
+  {
+    "id": "irish_scathach",
+    "name": {
+      "primary": "Scáthach",
+      "alt": ["Scathach", "Scáthach nUanaind", "the Shadowy One", "Scáthach of Skye"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "ulster-cycle",
+        "eraOrdering": 0,
+        "startEvent": "warrior-teaching-at-dun-scaith-on-skye",
+        "sources": [{ "kind": "primary", "reference": "Tochmarc Emire (The Wooing of Emer)" }],
+        "notes": "Warrior-woman and martial teacher whose fortress Dún Scáith stood in Alba, associated with the Isle of Skye. Daughter of Árd-Greimne of Lethra and sister-rival of Aífe. She trained the Ulster hero Cú Chulainn and his foster-brother Ferdiad in feats of arms and gave Cú Chulainn alone the dread spear Gáe Bulg."
+      }
+    ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Tochmarc Emire" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Tochmarc Emire (The Wooing of Emer)" },
+          { "kind": "primary", "reference": "Aided Óenfhir Aífe (The Death of Aífe's Only Son)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "mentor", "personId": "irish_cuchulainn", "sources": [{ "kind": "primary", "reference": "Tochmarc Emire" }], "notes": "Trained Cú Chulainn in Alba and gave him the Gáe Bulg. The existing irish_cuchulainn entry names Scáthach as his mentor in prose and marks the entry pending." },
+      { "kind": "sibling", "personId": "irish_aife", "sources": [{ "kind": "primary", "reference": "Aided Óenfhir Aífe" }], "notes": "Sister and rival of Aífe; both are daughters of Árd-Greimne of Lethra." }
+    ]
+  },
+  {
+    "id": "irish_aife",
+    "name": {
+      "primary": "Aífe",
+      "alt": ["Aife", "Aoife of Alba", "Aífe daughter of Árd-Greimne"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "ulster-cycle",
+        "eraOrdering": 0,
+        "startEvent": "defeat-by-cu-chulainn-and-the-bargain",
+        "sources": [{ "kind": "primary", "reference": "Tochmarc Emire (The Wooing of Emer)" }],
+        "notes": "Warrior-woman of Alba, daughter of Árd-Greimne of Lethra and sister-rival of Scáthach. When she warred on Scáthach, Cú Chulainn fought and overcame her by a ruse; he spared her life on terms that included bearing him a son."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "ulster-cycle",
+        "eraOrdering": 1,
+        "startEvent": "bearing-and-raising-of-connla",
+        "sources": [{ "kind": "primary", "reference": "Aided Óenfhir Aífe (The Death of Aífe's Only Son)" }],
+        "notes": "Bore Cú Chulainn a son, Connla, after his departure, and raised the boy in Letha under the three geasa Cú Chulainn had set by the thumb-ring he left with her; the boy would later be killed unknowing by his own father at the ford."
+      }
+    ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Tochmarc Emire" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Tochmarc Emire (The Wooing of Emer)" },
+          { "kind": "primary", "reference": "Aided Óenfhir Aífe (The Death of Aífe's Only Son)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "mother-of", "personId": "irish_connla", "sources": [{ "kind": "primary", "reference": "Aided Óenfhir Aífe" }], "notes": "Mother of Connla by Cú Chulainn. The existing irish_connla entry has its mother slot unresolved and names Aífe in prose; this materializes the figure." },
+      { "kind": "lover", "personId": "irish_cuchulainn", "sources": [{ "kind": "primary", "reference": "Tochmarc Emire" }], "notes": "Bore Connla to Cú Chulainn. The existing irish_cuchulainn entry names Aífe in prose and marks the entry pending." },
+      { "kind": "sibling", "personId": "irish_scathach", "sources": [{ "kind": "primary", "reference": "Aided Óenfhir Aífe" }], "notes": "Sister and rival of Scáthach; both daughters of Árd-Greimne of Lethra." }
+    ]
+  },
+  {
+    "id": "irish_ferdiad",
+    "name": {
+      "primary": "Ferdiad",
+      "alt": ["Fer Diad", "Ferdiad mac Damáin", "Ferdia"],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "ulster-cycle",
+        "eraOrdering": 0,
+        "startEvent": "fellow-training-under-scathach",
+        "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }],
+        "notes": "Warrior of Connacht of the Fir Domnann, son of Damán. Trained alongside Cú Chulainn under Scáthach in Alba and became his foster-brother and equal in arms, save that only Cú Chulainn was taught the Gáe Bulg and only Ferdiad bore a horn-skin no weapon could pierce."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "ulster-cycle",
+        "eraOrdering": 1,
+        "startEvent": "death-at-the-ford-by-the-gae-bulg",
+        "sources": [{ "kind": "primary", "reference": "Comrac Fir Diad (The Combat of Ferdiad), Táin Bó Cúailnge" }],
+        "notes": "Compelled by Medb to fight Cú Chulainn at the ford during the Táin. After a grueling combat over several days, in which the two shared food and physicians each night, he was killed by the Gáe Bulg. The ford Áth Fhirdiad (Ardee) is named for him."
+      }
+    ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Táin Bó Cúailnge, Book of Leinster" },
+          { "kind": "primary", "reference": "Comrac Fir Diad (The Combat of Ferdiad)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "foster-sibling", "personId": "irish_cuchulainn", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }], "notes": "Foster-brother and fellow trainee under Scáthach; killed by Cú Chulainn with the Gáe Bulg at the ford. The existing irish_cuchulainn entry names Ferdiad in prose and marks the entry pending." }
+    ]
+  },
+  {
+    "id": "irish_medb",
+    "name": {
+      "primary": "Medb",
+      "alt": ["Medb of Connacht", "Maeve", "Medb Cruachan", "Méabh"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "ulster-cycle",
+        "eraOrdering": 0,
+        "startEvent": "reign-as-queen-of-connacht-at-cruachan",
+        "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }],
+        "notes": "Queen of Connacht who ruled from Cruachan with her husband Ailill mac Máta. A euhemerized sovereignty-figure of overbearing will, she demanded equality of wealth with Ailill. With them dwelt their daughter Findabair, offered in turn to many warriors during the war."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "ulster-cycle",
+        "eraOrdering": 1,
+        "startEvent": "launching-of-the-tain-bo-cuailnge",
+        "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }],
+        "notes": "Finding herself one great bull short of Ailill in possessions, she launched the Cattle Raid of Cooley to seize the Donn Cúailnge of Ulster, opposed almost alone by Cú Chulainn; in exile Fergus mac Róich led her host and became her lover."
+      }
+    ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Táin Bó Cúailnge, Book of Leinster" },
+          { "kind": "primary", "reference": "Lebor Gabála / Cycle of the Kings genealogies of Connacht" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "irish_ailill", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }], "notes": "Wife of Ailill mac Máta, king of Connacht." },
+      { "kind": "mother-of", "personId": "irish_findabair", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }], "notes": "Mother of Findabair by Ailill." },
+      { "kind": "enemy", "personId": "irish_cuchulainn", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }], "notes": "Instigator of the Cattle Raid of Cooley against Ulster, held at the fords by Cú Chulainn. The existing irish_cuchulainn entry names Medb in prose and marks the entry pending." },
+      { "kind": "lover", "personId": "irish_fergus", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }], "notes": "Took the exiled Fergus mac Róich as lover and as leader of her host. The existing irish_fergus entry names Medb as his lover in prose." }
+    ]
+  },
+  {
+    "id": "irish_ailill",
+    "name": {
+      "primary": "Ailill mac Máta",
+      "alt": ["Ailill", "Ailill mac Mata", "Ailill of Connacht"],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "ulster-cycle",
+        "eraOrdering": 0,
+        "startEvent": "kingship-of-connacht-beside-medb",
+        "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }],
+        "notes": "King of Connacht who ruled from Cruachan as husband of Medb, chosen by her as a man without meanness, jealousy or fear. Father of Findabair. His one prize bull more than Medb owned set off the pillow-talk that began the Táin."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "ulster-cycle",
+        "eraOrdering": 1,
+        "startEvent": "leadership-of-the-cattle-raid-of-cooley",
+        "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }],
+        "notes": "Co-led the Cattle Raid of Cooley with Medb against Ulster; in the saga of Fróech he set the hero the serpent-pool task in the bride-quarrel over Findabair."
+      }
+    ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Táin Bó Cúailnge, Book of Leinster" },
+          { "kind": "primary", "reference": "Táin Bó Fraích" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "irish_medb", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }], "notes": "Husband of Queen Medb of Connacht." },
+      { "kind": "father-of", "personId": "irish_findabair", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }], "notes": "Father of Findabair by Medb." }
+    ]
+  },
+  {
+    "id": "irish_findabair",
+    "name": {
+      "primary": "Findabair",
+      "alt": ["Finnabair", "Findabar"],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "tradition": "Irish",
+    "primaryTradition": "Irish",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["irish_ailill", "irish_medb"],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "ulster-cycle",
+        "eraOrdering": 0,
+        "startEvent": "daughter-of-ailill-and-medb-of-connacht",
+        "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }],
+        "notes": "Daughter of Ailill mac Máta and Queen Medb of Connacht, famed for her beauty. During the Táin her hand was offered in turn to a succession of warriors as the price of facing Cú Chulainn."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "ulster-cycle",
+        "eraOrdering": 1,
+        "startEvent": "love-of-fraech-and-the-serpent-pool-rescue",
+        "sources": [{ "kind": "primary", "reference": "Táin Bó Fraích (The Cattle-Raid of Fróech)" }],
+        "notes": "Beloved of the hero Fróech, who came to Cruachan to win her; when her father Ailill sent Fróech alone against the serpent of the pool, she leapt in with sword and food and saved his life."
+      }
+    ],
+    "domains": [
+      { "sphereId": "connacht-nobility", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Táin Bó Cúailnge, Book of Leinster" },
+          { "kind": "primary", "reference": "Táin Bó Fraích" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "irish_ailill", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }], "notes": "Daughter of Ailill mac Máta." },
+      { "kind": "mother", "personId": "irish_medb", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge" }], "notes": "Daughter of Queen Medb." },
+      { "kind": "lover", "personId": "irish_fraech", "sources": [{ "kind": "primary", "reference": "Táin Bó Fraích" }], "notes": "Beloved of Fróech, whom she rescued from the serpent-pool. The existing irish_fraech entry names Findabair as the object of his courtship in prose." }
+    ]
+  },
+  {
+    "id": "iroquois_deganawida",
+    "name": {
+      "primary": "Deganawida",
+      "alt": ["The Great Peacemaker", "Deganawidah", "Tekanawíta", "Skennenrahawi"],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "tradition": "Iroquois",
+    "primaryTradition": "Iroquois",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "confederacy-foundation" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "confederacy-foundation",
+        "eraOrdering": 0,
+        "startEvent": "coming-from-the-west-with-the-great-law-of-peace",
+        "sources": [{ "kind": "secondary", "reference": "Iroquois oral tradition of the founding of the Confederacy (Great Law of Peace recensions)" }],
+        "notes": "By tradition born among the Huron to the west, the prophet-founder who carried the message of the Great Law of Peace to the warring nations. His name is held too sacred to speak in many Haudenosaunee communities, so the orator Hayowentha became the public voice of the founding."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "confederacy-foundation",
+        "eraOrdering": 1,
+        "startEvent": "founding-of-the-haudenosaunee-with-hayowentha",
+        "sources": [{ "kind": "secondary", "reference": "Mann and Fields, A Sign in the Sky (1997)" }],
+        "notes": "With Hayowentha he travelled the five-nation territories, combed the snakes from the sorcerer Atotarho to convert him, and planted the Tree of Peace at the Onondaga council, binding the Mohawk, Oneida, Onondaga, Cayuga and Seneca into the Confederacy."
+      }
+    ],
+    "domains": [
+      { "sphereId": "lawgiver", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Iroquois oral tradition (Great Law of Peace)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Iroquois oral tradition of the founding of the Haudenosaunee Confederacy" },
+          { "kind": "secondary", "reference": "Mann and Fields, A Sign in the Sky: Dating the League of the Haudenosaunee (1997)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "ally", "personId": "iroquois_hayowentha", "sources": [{ "kind": "secondary", "reference": "Iroquois oral tradition (Great Law of Peace)" }], "notes": "Co-founder of the Confederacy with Hayowentha, who voiced his message. The existing iroquois_hayowentha entry names Deganawida throughout its prose." },
+      { "kind": "ally", "personId": "iroquois_atotarho", "sources": [{ "kind": "secondary", "reference": "Iroquois oral tradition (Great Law of Peace)" }], "notes": "Converted the sorcerer Atotarho through the combing ritual; Atotarho became the first Tadodaho. The existing iroquois_atotarho entry names Tekanawíta the Great Peacemaker in prose." }
+    ]
+  },
+  {
+    "id": "iroquois_handsome_lake",
+    "name": {
+      "primary": "Handsome Lake",
+      "alt": ["Sganyodaiyo", "Ganyodaiyo", "Skaniadariio"],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "tradition": "Iroquois",
+    "primaryTradition": "Iroquois",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["iroquois_aliquipiso"],
+    "temporal": { "era": "post-contact-historical" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "post-contact-historical",
+        "eraOrdering": 0,
+        "startEvent": "birth-c-1735-seneca-of-the-turtle-clan",
+        "sources": [{ "kind": "secondary", "reference": "Arthur C. Parker, The Code of Handsome Lake, the Seneca Prophet (1913)" }],
+        "notes": "Seneca religious leader, half-brother of the war chief Cornplanter through their shared Seneca mother; born about 1735 at Conawagus on the Genesee River."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "post-contact-historical",
+        "eraOrdering": 1,
+        "startEvent": "visions-of-1799-and-the-gaihwiio",
+        "sources": [{ "kind": "secondary", "reference": "Anthony F. C. Wallace, The Death and Rebirth of the Seneca (1970)" }],
+        "notes": "After grave illness in 1799 he received visions from spirit-messengers and preached the Gaihwi:io, the Good Message, the moral-religious revival that became the Longhouse religion still practised among the Haudenosaunee. Died in 1815 at Onondaga."
+      }
+    ],
+    "domains": [
+      { "sphereId": "prophet", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Parker, The Code of Handsome Lake (1913)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Arthur C. Parker, The Code of Handsome Lake, the Seneca Prophet (1913)" },
+          { "kind": "secondary", "reference": "Anthony F. C. Wallace, The Death and Rebirth of the Seneca (1970)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "half-sibling", "personId": "iroquois_cornplanter", "sources": [{ "kind": "secondary", "reference": "Wallace, The Death and Rebirth of the Seneca (1970)" }], "notes": "Half-brother of Cornplanter through their shared Seneca mother. The existing iroquois_cornplanter entry names Sganyodaiyo (Handsome Lake) as his half-brother in prose." },
+      { "kind": "mother", "personId": "iroquois_aliquipiso", "sources": [{ "kind": "secondary", "reference": "Wallace, The Death and Rebirth of the Seneca (1970)" }], "notes": "Son of the Seneca woman of the Wolf Clan who was also mother of Cornplanter." }
+    ]
+  },
+  {
+    "id": "iroquois_aliquipiso",
+    "name": {
+      "primary": "Aliquipiso",
+      "alt": ["Gahonnoneh", "Gah-hon-no-neh", "She Who Goes to the River"],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "tradition": "Iroquois",
+    "primaryTradition": "Iroquois",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "post-contact-historical" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "post-contact-historical",
+        "eraOrdering": 0,
+        "startEvent": "seneca-mother-of-the-wolf-clan",
+        "sources": [{ "kind": "secondary", "reference": "Anthony F. C. Wallace, The Death and Rebirth of the Seneca (1970)" }],
+        "notes": "Seneca woman of the Wolf Clan, known also as Gahonnoneh, She Who Goes to the River. Through the matrilineal Seneca system her clan passed to her sons. She was the mother of the war chief Cornplanter, born of a Dutch trader, and of the prophet Handsome Lake."
+      }
+    ],
+    "domains": [
+      { "sphereId": "seneca-nobility", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Wallace, The Death and Rebirth of the Seneca (1970)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Anthony F. C. Wallace, The Death and Rebirth of the Seneca (1970)" },
+          { "kind": "secondary", "reference": "Thomas S. Abler, Cornplanter: Chief Warrior of the Allegany Senecas (2007)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "mother-of", "personId": "iroquois_cornplanter", "sources": [{ "kind": "secondary", "reference": "Wallace, The Death and Rebirth of the Seneca (1970)" }], "notes": "Mother of Cornplanter, who took his Wolf Clan from her. The existing iroquois_cornplanter entry names Aliquipiso as his Seneca mother in prose." },
+      { "kind": "spouse", "personId": "iroquois_john_abeel", "sources": [{ "kind": "secondary", "reference": "Wallace, The Death and Rebirth of the Seneca (1970)" }], "notes": "United with the Dutch trader John Abeel, by whom she bore Cornplanter." }
+    ]
+  },
+  {
+    "id": "iroquois_john_abeel",
+    "name": {
+      "primary": "John Abeel",
+      "alt": ["Johannes Abeel", "John Abeel II", "John O'Bail"],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "tradition": "Iroquois",
+    "primaryTradition": "Iroquois",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "post-contact-historical" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "post-contact-historical",
+        "eraOrdering": 0,
+        "startEvent": "dutch-trader-father-of-cornplanter",
+        "sources": [{ "kind": "secondary", "reference": "Thomas S. Abler, Cornplanter: Chief Warrior of the Allegany Senecas (2007)" }],
+        "notes": "Fur trader of Dutch descent from Albany, New York. By the Seneca woman Aliquipiso he was the father of the war chief Cornplanter, whose English name John O'Bail is the anglicized form of the Abeel surname."
+      }
+    ],
+    "domains": [
+      { "sphereId": "trade", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Abler, Cornplanter (2007)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Thomas S. Abler, Cornplanter: Chief Warrior of the Allegany Senecas (2007)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "father-of", "personId": "iroquois_cornplanter", "sources": [{ "kind": "secondary", "reference": "Abler, Cornplanter (2007)" }], "notes": "Dutch-trader father of Cornplanter. The existing iroquois_cornplanter entry names John Abeel as his father in prose." },
+      { "kind": "spouse", "personId": "iroquois_aliquipiso", "sources": [{ "kind": "secondary", "reference": "Wallace, The Death and Rebirth of the Seneca (1970)" }], "notes": "United with the Seneca woman Aliquipiso, mother of Cornplanter." }
+    ]
+  }
+]
+```

@@ -10,7 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 const { sources, writeSentinelBlock } = require('./gen-lib.cjs');
-const VALID = new Set(['deity', 'demigod', 'quartigod', 'scion', 'mortal']);
+const VALID = new Set(['deity', 'numen', 'demigod', 'quartigod', 'scion', 'mortal']);
 const EXIST_FILE = fs.existsSync(path.join(__dirname, '..', 'data-sources', 'existing-ids.json'))
   ? path.join(__dirname, '..', 'data-sources', 'existing-ids.json')
   : '/tmp/existing-ids.json';

@@ -1,0 +1,706 @@
+SWEEP-002 — Batch 2 alphabetical family-completion transcript
+Newly-authored figures (named-but-unentered attested kin found in the prose of batch-2 figures).
+
+Scope notes / provenance of each new figure:
+- anglosaxon_hygd: Queen of the Geats, wife of Hygelac and mother of Heardred; named in Beowulf
+  (ll. 1925ff "Hygd ... Hæreþes dohtor"). Referenced by the existing figure anglosaxon_heardred
+  ("Son of Hygelac and the queen Hygd") and anglosaxon_hygelac ("passed via Hygd to King Hygelac").
+- anglosaxon_weohstan: father of Wiglaf, a Wægmunding, slayer of the Swedish prince Eanmund; named
+  repeatedly in Beowulf ("Wīhstān", "Weohstanes sunu"). Referenced by anglosaxon_wiglaf ("Son of
+  Weohstan") and his inherited sword ("Eanmundes lafe").
+- arabian_shaddad: Shaddād ibn Muʿāwiya al-ʿAbsī, free-noble father of the poet ʿAntara, who
+  manumitted him; named in the prose of arabian_antara ("son of Shaddād ibn Muʿawiyah").
+- arabian_zabiba: Zabība, the Ethiopian (Abyssinian) bondwoman, mother of ʿAntara; her slave-status
+  is foundational to ʿAntara's story. Named in the prose of arabian_antara.
+- arabian_abla: ʿAbla bint Mālik, paternal cousin and lifelong beloved of ʿAntara, the central
+  romance of the Sīrat ʿAntar. Named in the prose of arabian_antara.
+- arabian_hujr: Ḥujr ibn al-Ḥārith, last king of Kinda, father of the poet Imruʾ al-Qais; his murder
+  by the Banū Asad launches the poet's vengeance-quest. Named in the prose of arabian_imru_al_qais.
+- arabian_adi_ibn_hatim: ʿAdī ibn Ḥātim al-Ṭāʾī, son of Ḥātim al-Ṭāʾī, tribal chief of Ṭayyiʾ who
+  later became a Companion of the Prophet. Named in the prose of arabian_hatim_al_tai ("His son ʿAdi
+  ibn Hatim subsequently became a prominent companion of Muhammad").
+
+```json
+[
+  {
+    "id": "anglosaxon_hygd",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Hygd",
+      "alt": ["Hygd", "Hæreth's daughter", "Queen of the Geats"],
+      "transliterations": { "old-english": "Hygd" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Anglo-Saxon",
+    "primaryTradition": "Anglo-Saxon",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "queen-of-the-Geats-wife-of-Hygelac",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 1925-1962 (ed. Klaeber): Hygd, daughter of Hæreth, the young, wise queen of Hygelac" }
+        ],
+        "notes": "Hygd (Hæreþes dohtor), the wise and gracious young queen of King Hygelac of the Geats, contrasted in the poem with the proud Modthryth; she dispenses treasure generously in Hygelac's hall."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "widowhood-and-offer-of-the-throne-to-Beowulf",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2369-2376 (ed. Klaeber): after Hygelac's fall, Hygd offers the kingdom to Beowulf, fearing her son Heardred too young to hold it against the Swedes" }
+        ],
+        "notes": "After Hygelac fell in the Frisian raid, Hygd offered the Geatish throne and treasure-hoard to Beowulf, judging her son Heardred too young to defend the realm; Beowulf declined and upheld the boy as king — an act of measured statesmanship that marks her among the poem's good queens."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "queenship-and-the-mead-hall",
+        "contextTag": "lifelong",
+        "term": { "value": "cwēn", "script": "Old English", "rom": "cwen" },
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 1925-1962 — Hygd as the model gift-giving queen of the Geats" }
+        ]
+      },
+      {
+        "sphereId": "counsel-and-succession",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2369-2376 — Hygd's offer of the kingdom to Beowulf over her own son" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "anglosaxon_hygd_freothuwebbe",
+        "name": "Weave peace and dispense the hall's treasure as queen",
+        "inheritability": "none",
+        "scopeTags": ["kingship", "diplomacy"],
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 1925-1962; ll. 2369-2376" }
+        ],
+        "notes": "As Hygelac's queen Hygd performs the queenly office of the freoðuwebbe ('peace-weaver') and ring-giver, and at his death exercises the power to dispose of the kingship, offering it to Beowulf."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hygd-brosinga-mene",
+        "name": "Necklace of the Brosings (Brosinga mene)",
+        "kind": "garment",
+        "role": "owner",
+        "term": { "value": "Brosinga mene", "rom": "Brosinga mene" },
+        "notes": "The marvellous neck-ring that Wealhtheow gives Beowulf and that Beowulf in turn presents to Queen Hygd; she holds it until it passes to Hygelac, who dies wearing it in Frisia. The chief treasure associated with her in the poem.",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2172-2176 (ed. Klaeber): Beowulf gives the Brosinga-mene necklace to Hygd" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "anglosaxon_hygelac",
+        "era": "heroic-age",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 1925-1931 — Hygd, queen of Hygelac" }
+        ],
+        "notes": "RECIPROCAL-NEEDED on the existing corpus figure anglosaxon_hygelac (add spouse -> anglosaxon_hygd)."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "anglosaxon_heardred",
+        "era": "heroic-age",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2369-2376 — Hygd and her son Heardred" }
+        ],
+        "notes": "Mother of Heardred (existing corpus figure anglosaxon_heardred, whose prose already names 'the queen Hygd' as his mother and whose parentIds presently list only anglosaxon_hygelac; add anglosaxon_hygd as maternal parent)."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Beowulf, ll. 1925-1962, 2369-2376 (ed. Klaeber's Beowulf, 4th ed., Toronto 2008)" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "marriage-and-motherhood",
+        "citations": [
+          { "kind": "primary", "reference": "Beowulf, ll. 1925-1931 (wife of Hygelac), 2369-2376 (mother of Heardred)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Hygd, daughter of Hæreth, queen of the Geats as wife of King Hygelac and mother of Heardred. In Beowulf she is the exemplary young queen — wise, gracious and generous with treasure — set against the cautionary tale of the proud queen Modthryth. After Hygelac's death in the Frisian raid she offers the kingdom and hoard to Beowulf, judging her own son Heardred too young to defend the Geats against the Swedes; Beowulf declines and supports Heardred's kingship. Her father Hæreth is named only patronymically ('Hæreþes dohtor') and is not separately entered. She materialises the maternal node of Heardred, who previously recorded only his father Hygelac."
+  },
+  {
+    "id": "anglosaxon_weohstan",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Weohstan",
+      "alt": ["Wēohstān", "Wīhstān", "Weohstanes", "Father of Wiglaf"],
+      "transliterations": { "old-english": "Wēohstān" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Anglo-Saxon",
+    "primaryTradition": "Anglo-Saxon",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "Waegmunding-warrior-in-Swedish-service",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2602-2625 (ed. Klaeber): Weohstan of the Wægmundings" }
+        ],
+        "notes": "Weohstan (Wīhstān), a Wægmunding warrior and thus of Beowulf's own kindred; in his earlier career he served the Scylfing (Swedish) king Onela."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "slaying-of-Eanmund-and-winning-of-the-sword",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2611-2625 (ed. Klaeber): Weohstan slays Eanmund and takes his arms" }
+        ],
+        "notes": "In the Swedish dynastic strife Weohstan killed the rebel prince Eanmund (Ohthere's son) and stripped him of his giant-forged sword and armour, which Onela let him keep; he later bore these arms among the Geats and bequeathed the ancient sword ('Eanmundes lafe') to his son Wiglaf, who would draw it against the dragon at Beowulf's side."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "warfare-and-the-feud",
+        "contextTag": "lifelong",
+        "term": { "value": "Wǣgmunding", "script": "Old English", "rom": "Waegmunding" },
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2602-2625 — Weohstan the Wægmunding, slayer of Eanmund" }
+        ]
+      },
+      {
+        "sphereId": "heirloom-arms-and-lineage",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2615-2625 — Weohstan passes the sword of Eanmund to his son Wiglaf" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "anglosaxon_weohstan_kill_eanmund",
+        "name": "Slew the Swedish prince Eanmund and won his giant-forged arms",
+        "inheritability": "none",
+        "scopeTags": ["combat", "feud"],
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2611-2625 (ed. Klaeber)" }
+        ],
+        "notes": "His single great deed in the poem: the killing of the exiled Eanmund in the service of Onela, by which he gained the heirloom sword and corslet that descend to Wiglaf."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "weohstan-eanmund-sword",
+        "name": "Sword of Eanmund (Eanmundes laf)",
+        "kind": "weapon",
+        "role": "owner",
+        "term": { "value": "ealdsweord etonisc", "script": "Old English", "rom": "ealdsweord etonisc" },
+        "notes": "The ancient giant-forged sword ('ealdsweord etonisc') that Weohstan took from the slain Eanmund and kept by Onela's leave; he handed it down to his son Wiglaf, who wields it against the dragon. A described heirloom, not given a proper name.",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2611-2625 (ed. Klaeber): 'ealdsweord etonisc', 'Eanmundes lafe'" }
+        ]
+      },
+      {
+        "id": "weohstan-mailcoat-and-helm",
+        "name": "Corslet, helm and ring-mail of Eanmund",
+        "kind": "armor",
+        "role": "owner",
+        "notes": "The byrnie, helm and other war-gear Weohstan stripped from Eanmund and bore for many years, passing them at last to Wiglaf when he came of age to fight.",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2617-2625 (ed. Klaeber): Weohstan keeps Eanmund's 'guðgewædu' and bequeaths them to Wiglaf" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "anglosaxon_wiglaf",
+        "era": "heroic-age",
+        "sources": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2602-2625 (ed. Klaeber): Wiglaf, son of Weohstan ('Weohstanes sunu')" }
+        ],
+        "notes": "Father of Wiglaf (existing corpus figure anglosaxon_wiglaf, whose prose already names him 'Son of Weohstan' and whose parentIds are presently empty; add anglosaxon_weohstan as paternal parent)."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2602-2625, 2862, 3076 (ed. Klaeber's Beowulf, 4th ed., Toronto 2008)" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "fatherhood-of-Wiglaf-and-slaying-of-Eanmund",
+        "citations": [
+          { "kind": "primary", "reference": "Beowulf, ll. 2602-2625" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Weohstan (Wīhstān), father of Wiglaf and, like Beowulf's father Ecgtheow, a member of the Wægmunding kindred — the kinship that makes Wiglaf Beowulf's relative and last loyal companion. Formerly in the service of the Swedish king Onela, Weohstan slew the rebel Scylfing prince Eanmund and won his giant-forged sword, helm and corslet; he later lived among the Geats and bequeathed these heirloom arms to his son Wiglaf, who draws Eanmund's sword to help Beowulf kill the dragon. Materialises the paternal node of Wiglaf, who previously recorded his father only by the epithet 'Son of Weohstan'."
+  },
+  {
+    "id": "arabian_shaddad",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Shaddad ibn Mu'awiya",
+      "alt": ["شداد بن معاوية", "Shaddād al-ʿAbsī", "Father of ʿAntara"],
+      "transliterations": { "arabic-script": "شداد بن معاوية العبسي", "arabic-full": "Shaddād ibn Muʿāwiya al-ʿAbsī" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Arabian",
+    "primaryTradition": "Arabian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mu-allaqat-poetic" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 0,
+        "startEvent": "noble-of-the-Banu-Abs",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād; Abū al-Faraj al-Iṣfahānī, Kitāb al-Aghānī" }
+        ],
+        "notes": "Shaddād ibn Muʿāwiya, a free-born noble and warrior of the Banū ʿAbs in the Najd, in the generation before Islam (later 6th c. CE). By the bondwoman Zabība he fathered ʿAntara, who under Arabian custom inherited his mother's slave-status."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 1,
+        "startEvent": "manumission-and-acknowledgement-of-Antara",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād" }
+        ],
+        "notes": "In the canonical narrative Shaddād at first kept ʿAntara as a slave-son, but during a raid in which the young ʿAntara's valour turned the battle he publicly acknowledged and freed him ('attach yourself to your father, ʿAntara'), admitting him to the lineage of the Banū ʿAbs."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tribal-nobility-of-the-Banu-Abs",
+        "contextTag": "lifelong",
+        "term": { "value": "سَيِّد بَني عَبس", "script": "Arabic", "rom": "sayyid Banī ʿAbs" },
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara; al-Iṣfahānī, Kitāb al-Aghānī — Shaddād al-ʿAbsī, father of ʿAntara" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "arabian_shaddad_manumit_antara",
+        "name": "Manumitted and acknowledged his slave-born son ʿAntara",
+        "inheritability": "none",
+        "scopeTags": ["lineage", "honor"],
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād" }
+        ],
+        "notes": "The legally and socially decisive act by which ʿAntara passed from slave to free Banū ʿAbs warrior — the hinge of the whole ʿAntara cycle."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "arabian_antara",
+        "era": "mu-allaqat-poetic",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād; al-Iṣfahānī, Kitāb al-Aghānī — ʿAntara ibn Shaddād" }
+        ],
+        "notes": "Father of the poet-warrior ʿAntara (existing corpus figure arabian_antara, whose prose names 'Shaddād ibn Muʿawiyah' as his father and whose parentIds are presently empty; add arabian_shaddad as paternal parent)."
+      },
+      {
+        "kind": "lover",
+        "personId": "arabian_zabiba",
+        "era": "mu-allaqat-poetic",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād — Shaddād and the bondwoman Zabība, parents of ʿAntara" }
+        ],
+        "notes": "By the Ethiopian bondwoman Zabība (arabian_zabiba, also in this batch) he begot ʿAntara; reciprocated within the batch."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād (medieval Arabic biographical-romance)" },
+          { "kind": "primary", "reference": "Abū al-Faraj al-Iṣfahānī, Kitāb al-Aghānī (10th c.), notices of ʿAntara and his father Shaddād" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Shaddād ibn Muʿāwiya al-ʿAbsī, free-born noble of the Banū ʿAbs and father of the pre-Islamic poet-warrior ʿAntara by the Abyssinian bondwoman Zabība. Because the child of a slave-mother followed the mother's status, ʿAntara was born a slave despite his noble paternity; Shaddād later freed and acknowledged him after his valour in a tribal raid. He is the paternal node of ʿAntara, previously carried in the corpus only within ʿAntara's prose and patronymic ('ibn Shaddād')."
+  },
+  {
+    "id": "arabian_zabiba",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Zabiba",
+      "alt": ["زبيبة", "Zabībah", "Mother of ʿAntara"],
+      "transliterations": { "arabic-script": "زبيبة", "arabic-full": "Zabība al-Ḥabashiyya" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Arabian",
+    "primaryTradition": "Arabian",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mu-allaqat-poetic" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 0,
+        "startEvent": "Abyssinian-bondwoman-of-the-Banu-Abs",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād; al-Iṣfahānī, Kitāb al-Aghānī" }
+        ],
+        "notes": "Zabība, an Ethiopian (Abyssinian) bondwoman in the household of the Banū ʿAbs noble Shaddād, taken (in the tradition) as captive in a raid. By Shaddād she bore ʿAntara, who inherited her black skin and her slave-status."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 1,
+        "startEvent": "mother-of-the-poet-warrior-Antara",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād" }
+        ],
+        "notes": "As ʿAntara's mother she stands at the root of the cycle's central tensions of colour, slavery and honour; ʿAntara's struggle to be acknowledged is in large part the struggle to overcome the stigma of his birth from a slave-mother."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "bondage-and-maternity",
+        "contextTag": "lifelong",
+        "term": { "value": "أَمَة حَبَشِيّة", "script": "Arabic", "rom": "ama ḥabashiyya" },
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara — Zabība, the Abyssinian slave-mother of ʿAntara" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "arabian_zabiba_bore_antara",
+        "name": "Bore the slave-born hero ʿAntara to the noble Shaddād",
+        "inheritability": "none",
+        "scopeTags": ["maternity"],
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād" }
+        ],
+        "notes": "Her motherhood transmits to ʿAntara both his slave-status and the dark complexion that the cycle dwells on; the whole drama of his manumission turns on his maternal origin."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "arabian_antara",
+        "era": "mu-allaqat-poetic",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād; al-Iṣfahānī, Kitāb al-Aghānī" }
+        ],
+        "notes": "Mother of ʿAntara (existing corpus figure arabian_antara, whose prose names 'Zabība' as his mother and whose parentIds are presently empty; add arabian_zabiba as maternal parent)."
+      },
+      {
+        "kind": "lover",
+        "personId": "arabian_shaddad",
+        "era": "mu-allaqat-poetic",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād" }
+        ],
+        "notes": "By the Banū ʿAbs noble Shaddād (arabian_shaddad, also in this batch) she bore ʿAntara; reciprocated within the batch."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād (medieval Arabic biographical-romance)" },
+          { "kind": "primary", "reference": "Abū al-Faraj al-Iṣfahānī, Kitāb al-Aghānī (10th c.), on ʿAntara's parentage" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Zabība, the Ethiopian (Abyssinian) bondwoman of the Banū ʿAbs, mother of the pre-Islamic poet-warrior ʿAntara by her master Shaddād ibn Muʿāwiya. Because the child of a slave-mother inherited her status, ʿAntara was born a slave and dark-skinned, the twin facts on which the whole ʿAntara romance turns. She is the maternal node of ʿAntara, previously carried in the corpus only within his prose."
+  },
+  {
+    "id": "arabian_abla",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "'Abla bint Malik",
+      "alt": ["عبلة بنت مالك", "ʿAbla", "Beloved of ʿAntara"],
+      "transliterations": { "arabic-script": "عبلة بنت مالك", "arabic-full": "ʿAbla bint Mālik" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Arabian",
+    "primaryTradition": "Arabian",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mu-allaqat-poetic" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 0,
+        "startEvent": "cousin-of-Antara-in-the-Banu-Abs",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād; the Muʿallaqa of ʿAntara (nasīb to ʿAbla)" }
+        ],
+        "notes": "ʿAbla bint Mālik, daughter of ʿAntara's paternal uncle Mālik and thus his cousin; celebrated in the tradition for her beauty, she is the beloved whose name opens ʿAntara's verse."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 1,
+        "startEvent": "the-frustrated-courtship",
+        "sources": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād" }
+        ],
+        "notes": "Her father Mālik repeatedly refused ʿAntara's suit on account of his slave-mother origin, setting the long sequence of bride-quests and trials that structure the Sīrat ʿAntar; she is the archetypal beloved of the ʿudhrī-style Arabian romance."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-beloved-of-the-poet",
+        "contextTag": "lifelong",
+        "term": { "value": "مَحبوبة", "script": "Arabic", "rom": "maḥbūba" },
+        "sources": [
+          { "kind": "primary", "reference": "Muʿallaqa of ʿAntara; Sīrat ʿAntara — ʿAbla, the beloved" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "arabian_abla_inspire_antara",
+        "name": "Inspired the verse and quests of ʿAntara as his lifelong beloved",
+        "inheritability": "none",
+        "scopeTags": ["love", "poetry"],
+        "sources": [
+          { "kind": "primary", "reference": "Muʿallaqa of ʿAntara; Sīrat ʿAntara ibn Shaddād" }
+        ],
+        "notes": "ʿAbla is the object of ʿAntara's most famous love-verses and the cause of the bride-price labours and battles that fill his sīra; the prototype of the unattainable cousin-beloved in Arabic romance."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "lover",
+        "personId": "arabian_antara",
+        "era": "mu-allaqat-poetic",
+        "sources": [
+          { "kind": "primary", "reference": "Muʿallaqa of ʿAntara; Sīrat ʿAntara ibn Shaddād — ʿAntara's love for his cousin ʿAbla" }
+        ],
+        "notes": "RECIPROCAL-NEEDED on the existing corpus figure arabian_antara (add lover -> arabian_abla); ʿAntara's prose already names 'ʿAbla bint Mālik' as his beloved cousin."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Sīrat ʿAntara ibn Shaddād (medieval Arabic biographical-romance)" },
+          { "kind": "primary", "reference": "The Muʿallaqa of ʿAntara ibn Shaddād (the nasīb addressed to ʿAbla)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "ʿAbla bint Mālik, paternal cousin and lifelong beloved of the poet-warrior ʿAntara — the central romance of the Sīrat ʿAntar and of his Muʿallaqa. Daughter of ʿAntara's uncle Mālik, who long refused the match because of ʿAntara's slave-mother birth; their thwarted love drives the cycle's bride-quests and battles. Her father Mālik is named only as the obstacle and is not separately entered. She is wired as ʿAntara's beloved (lover), the bond his prose already records."
+  },
+  {
+    "id": "arabian_hujr",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Hujr ibn al-Harith",
+      "alt": ["حجر بن الحارث", "Ḥujr al-Kindī", "Ḥujr Ākil al-Murār's line", "Father of Imruʾ al-Qais"],
+      "transliterations": { "arabic-script": "حجر بن الحارث الكندي", "arabic-full": "Ḥujr ibn al-Ḥārith al-Kindī" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Arabian",
+    "primaryTradition": "Arabian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mu-allaqat-poetic" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 0,
+        "startEvent": "Kindite-king-over-Asad-and-Ghatafan",
+        "sources": [
+          { "kind": "primary", "reference": "al-Ṭabarī, Tārīkh al-Rusul wa-al-Mulūk; Ibn Qutayba, al-Shiʿr wa-al-Shuʿarāʾ" }
+        ],
+        "notes": "Ḥujr ibn al-Ḥārith of the royal house of Kinda, set by his father al-Ḥārith as Kindite king (regent) over the Arab tribes of Asad and Ghaṭafān in the early 6th c. CE; father of the poet Imruʾ al-Qais."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 1,
+        "startEvent": "killed-by-the-Banu-Asad",
+        "sources": [
+          { "kind": "primary", "reference": "al-Ṭabarī; Ibn Qutayba; al-Iṣfahānī, Kitāb al-Aghānī" }
+        ],
+        "notes": "When the Banū Asad rebelled against Kindite rule they rose and killed Ḥujr (c. 525-540 CE). His murder is the catalyst of the saga of his son Imruʾ al-Qais, who abandoned wine and women to pursue blood-vengeance against Asad and to seek the recovery of his father's kingdom."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship-of-Kinda",
+        "contextTag": "lifelong",
+        "term": { "value": "مَلِك كِندة", "script": "Arabic", "rom": "malik Kinda" },
+        "sources": [
+          { "kind": "primary", "reference": "al-Ṭabarī, Tārīkh; Ibn Qutayba — Ḥujr, Kindite king over Asad and Ghaṭafān" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "arabian_hujr_rule_asad",
+        "name": "Ruled the tribes of Asad and Ghaṭafān as Kindite king",
+        "inheritability": "patrilineal",
+        "scopeTags": ["kingship"],
+        "sources": [
+          { "kind": "primary", "reference": "al-Ṭabarī, Tārīkh al-Rusul wa-al-Mulūk" }
+        ],
+        "notes": "His Kindite overlordship — and its violent end at the hands of the Banū Asad — is the political background to Imruʾ al-Qais's life as a dispossessed wandering king."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "arabian_imru_al_qais",
+        "era": "mu-allaqat-poetic",
+        "sources": [
+          { "kind": "primary", "reference": "al-Ṭabarī, Tārīkh; Ibn Qutayba — Imruʾ al-Qais ibn Ḥujr" }
+        ],
+        "notes": "Father of the poet Imruʾ al-Qais (existing corpus figure arabian_imru_al_qais, whose prose names 'Ḥujr ibn al-Ḥārith' as his father and whose parentIds are presently empty; add arabian_hujr as paternal parent)."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "al-Ṭabarī, Tārīkh al-Rusul wa-al-Mulūk" },
+          { "kind": "primary", "reference": "Ibn Qutayba, al-Shiʿr wa-al-Shuʿarāʾ (Book of Poetry and Poets, 9th c.)" },
+          { "kind": "primary", "reference": "Abū al-Faraj al-Iṣfahānī, Kitāb al-Aghānī (10th c.)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Ḥujr ibn al-Ḥārith al-Kindī, of the royal house of Kinda, king (regent) over the Arab tribes of Asad and Ghaṭafān in the early 6th c. CE and father of the great Muʿallaqāt poet Imruʾ al-Qais. His killing by the rebellious Banū Asad sets in motion his son's lifelong vengeance-quest and exile. He is the paternal node of Imruʾ al-Qais, previously carried in the corpus only within the poet's prose and patronymic ('ibn Ḥujr')."
+  },
+  {
+    "id": "arabian_adi_ibn_hatim",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "'Adi ibn Hatim",
+      "alt": ["عدي بن حاتم", "ʿAdī ibn Ḥātim al-Ṭāʾī", "Son of Ḥātim al-Ṭāʾī"],
+      "transliterations": { "arabic-script": "عدي بن حاتم الطائي", "arabic-full": "ʿAdī ibn Ḥātim al-Ṭāʾī" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Arabian",
+    "primaryTradition": "Arabian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["arabian_hatim_al_tai"],
+    "parentRoles": { "arabian_hatim_al_tai": "paternal" },
+    "temporal": { "era": "mu-allaqat-poetic" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 0,
+        "startEvent": "chief-of-Tayyi-son-of-Hatim",
+        "sources": [
+          { "kind": "primary", "reference": "Ibn Saʿd, Kitāb al-Ṭabaqāt al-Kabīr; al-Iṣfahānī, Kitāb al-Aghānī" }
+        ],
+        "notes": "ʿAdī ibn Ḥātim, son of the proverbially generous Ḥātim al-Ṭāʾī, succeeded to a leading position among the Christian (in tradition) tribe of Ṭayyiʾ in northern Arabia after his father's death (c. 578 CE)."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mu-allaqat-poetic",
+        "eraOrdering": 1,
+        "startEvent": "conversion-and-companionship-of-the-Prophet",
+        "sources": [
+          { "kind": "primary", "reference": "Ibn Saʿd, al-Ṭabaqāt; Ibn Hishām, al-Sīra al-Nabawiyya" }
+        ],
+        "notes": "On the coming of Islam ʿAdī accepted the new faith and became a Companion (ṣaḥābī) of the Prophet Muhammad, leading the Ṭayyiʾ; in tradition he later fought on the side of ʿAlī. He marks the generational passage from the pre-Islamic Arabian virtue-ethic embodied by his father to the Islamic order."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "leadership-of-the-Tayyi",
+        "contextTag": "lifelong",
+        "term": { "value": "سَيِّد طَيِّئ", "script": "Arabic", "rom": "sayyid Ṭayyiʾ" },
+        "sources": [
+          { "kind": "primary", "reference": "Ibn Saʿd, Kitāb al-Ṭabaqāt — ʿAdī ibn Ḥātim, chief of Ṭayyiʾ" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "arabian_adi_lead_tayyi",
+        "name": "Led the tribe of Ṭayyiʾ across the coming of Islam",
+        "inheritability": "none",
+        "scopeTags": ["leadership"],
+        "sources": [
+          { "kind": "primary", "reference": "Ibn Saʿd, al-Ṭabaqāt; Ibn Hishām, al-Sīra" }
+        ],
+        "notes": "His acceptance of Islam carried much of Ṭayyiʾ with him; he is remembered as the son who bridged his father Ḥātim's Jāhilī generosity-fame and the Islamic community."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Muḥammad ibn Saʿd, Kitāb al-Ṭabaqāt al-Kabīr (9th c.), notice of ʿAdī ibn Ḥātim al-Ṭāʾī" },
+          { "kind": "primary", "reference": "Abū al-Faraj al-Iṣfahānī, Kitāb al-Aghānī, notices of Ḥātim and his son ʿAdī" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "son-of-Hatim",
+        "citations": [
+          { "kind": "primary", "reference": "al-Iṣfahānī, Kitāb al-Aghānī; Ibn Saʿd, al-Ṭabaqāt — ʿAdī, son of Ḥātim al-Ṭāʾī" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "ʿAdī ibn Ḥātim al-Ṭāʾī, son of the proverbially generous pre-Islamic chief Ḥātim al-Ṭāʾī and himself a leader of the tribe of Ṭayyiʾ who, on the rise of Islam, became a Companion of the Prophet Muhammad. He is the named son referenced in the corpus prose of arabian_hatim_al_tai; his parentId is wired to Ḥātim. As a hinge between the Jāhilī virtue-world of his father and the Islamic order, he is placed in the latest pre-/early-Islamic ('muʿallaqāt-poetic') stratum the Arabian era-vocabulary affords."
+  }
+]
+```

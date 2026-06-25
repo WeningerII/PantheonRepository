@@ -1,0 +1,410 @@
+Worker W07 — alphabetical family-completion sweep, window #7 (hmong_yaj_yuam … ibibio_atai).
+
+Authored 7 new figures whose kin are NAMED in the prose of in-window entities and which were absent from the corpus:
+
+  1. huli_piandela        — son of Honabe & Timbu; sibling of Korimogo/Heyolabe/Ni/Hela/Hana. Named in huli_korimogo prose.
+  2. hungarian_hunor      — son of Nimrod & Enéh; eponymous ancestor of the Huns; brother of Magor. Named in hungarian_nimrod prose.
+  3. hungarian_magor      — son of Nimrod & Enéh; eponymous ancestor of the Magyars; brother of Hunor. Named in hungarian_nimrod prose.
+  4. hungarian_eneh       — wife of Nimrod, the hind/totemic mother of Hunor & Magor. Named in hungarian_nimrod prose.
+  5. hungarian_emese      — the dreaming mother impregnated by the Turul (foremother of the Arpad line). Named in hungarian_isten prose.
+  6. hurrian_sharruma     — son of Teshub & Hebat; Hurrian-Hittite mountain god. Named in hurrian_hebat prose.
+  7. hurrian_sertapsuruhi — daughter of the Sea (Kiase), mother of Hedammu by Kumarbi. Named in hurrian_hedammu prose.
+
+Attestation by WORK (no fabricated page numbers): Simon of Kez­a, Gesta Hunnorum et Hungarorum (c.1282-1285) and the Chronicon Pictum for Hunor/Magor/Eneh; Anonymus, Gesta Hungarorum (c.1200) and Chronicon Pictum for Emese and the Turul dream; Glasse, The Huli of the Southern Highlands (in Lawrence & Meggitt eds., Gods Ghosts and Men in Melanesia, 1965) for Piandela; the Song of Hedammu and Yazilikaya reliefs / Hurrian cult texts for Sharruma and Sertapsuruhi (daughter of the Sea Kiase).
+
+```json
+[
+  {
+    "id": "huli_piandela",
+    "name": {
+      "primary": "Piandela",
+      "alt": [],
+      "transliterations": { "huli": "Piandela" }
+    },
+    "type": "deity",
+    "tradition": "Huli",
+    "primaryTradition": "Huli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["huli_honabe", "huli_timbu"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "birth-among-the-children-of-honabe-and-timbu",
+        "sources": [
+          { "kind": "secondary", "reference": "Glasse, R.M. (1965). The Huli of the Southern Highlands. In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." }
+        ],
+        "notes": "One of the children born to the creator-mother Honabe after her union with the sky-father Timbu; in the recorded genealogy Honabe bears five sons (Korimogo, Heyolabe, Piandela, Ni and Hela) and one daughter (Hana)."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-origins",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Glasse, R.M. (1965). The Huli of the Southern Highlands. In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Glasse, R.M. (1965). The Huli of the Southern Highlands. In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "huli_korimogo", "notes": "Full sibling — both children of the creator-mother Honabe and the sky-father Timbu per the Huli genealogy recorded by Glasse." },
+      { "kind": "sibling", "personId": "huli_heyolabe", "notes": "Full sibling — both children of Honabe and Timbu per Glasse." },
+      { "kind": "sibling", "personId": "huli_ni", "notes": "Full sibling — both children of Honabe and Timbu per Glasse." },
+      { "kind": "sibling", "personId": "huli_hela", "notes": "Full sibling — both children of Honabe and Timbu per Glasse." },
+      { "kind": "sibling", "personId": "huli_hana", "notes": "Full sibling — both children of Honabe and Timbu per Glasse." }
+    ]
+  },
+  {
+    "id": "hungarian_hunor",
+    "name": {
+      "primary": "Hunor",
+      "alt": ["Hunar"],
+      "transliterations": { "hu": "Hunor", "rom": "Hunor" }
+    },
+    "type": "demigod",
+    "tradition": "Hungarian",
+    "primaryTradition": "Hungarian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["hungarian_nimrod", "hungarian_eneh"],
+    "temporal": { "era": "legendary / origin-time" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "legendary / origin-time",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-nimrod-and-eneh",
+        "sources": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" }
+        ],
+        "notes": "Elder son of the giant-hunter Nimrod by his wife Eneh the hind; with his brother Magor he pursued the wondrous stag into the Meotis marshes and there settled."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "legendary / origin-time",
+        "eraOrdering": 1,
+        "startEvent": "abduction-of-the-daughters-of-dula-and-fathering-of-the-huns",
+        "sources": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" }
+        ],
+        "notes": "He and Magor carried off the wives of the sons of Belar and the two daughters of Dula prince of the Alans; Hunor took one to wife and from his line sprang the Huns, to whom he gives his name."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-progenitor",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" },
+          { "kind": "primary", "reference": "Kalti, Mark (attrib.), Chronicon Pictum (Kepes Kronika), c. 1360" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "hungarian_magor", "notes": "Brothers, both sons of Nimrod and Eneh; Hunor founds the Huns and Magor the Magyars per Simon of Keza." }
+    ]
+  },
+  {
+    "id": "hungarian_magor",
+    "name": {
+      "primary": "Magor",
+      "alt": ["Mogor", "Magyar"],
+      "transliterations": { "hu": "Magor", "rom": "Magor" }
+    },
+    "type": "demigod",
+    "tradition": "Hungarian",
+    "primaryTradition": "Hungarian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["hungarian_nimrod", "hungarian_eneh"],
+    "temporal": { "era": "legendary / origin-time" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "legendary / origin-time",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-nimrod-and-eneh",
+        "sources": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" }
+        ],
+        "notes": "Younger son of the giant-hunter Nimrod by his wife Eneh the hind; with his brother Hunor he followed the wondrous stag into the Meotis marshes."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "legendary / origin-time",
+        "eraOrdering": 1,
+        "startEvent": "marriage-and-fathering-of-the-magyars",
+        "sources": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" }
+        ],
+        "notes": "He took to wife one of the two daughters of Dula prince of the Alans, and from his line sprang the Magyars (Hungarians), to whom he gives his name."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-progenitor",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" },
+          { "kind": "primary", "reference": "Kalti, Mark (attrib.), Chronicon Pictum (Kepes Kronika), c. 1360" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "hungarian_hunor", "notes": "Brothers, both sons of Nimrod and Eneh; Magor founds the Magyars and Hunor the Huns per Simon of Keza." }
+    ]
+  },
+  {
+    "id": "hungarian_eneh",
+    "name": {
+      "primary": "Eneh",
+      "alt": ["Eneth", "Eneh the Hind", "Enikő"],
+      "transliterations": { "hu": "Eneh", "rom": "Eneh / Eneth" }
+    },
+    "type": "demigod",
+    "tradition": "Hungarian",
+    "primaryTradition": "Hungarian",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "legendary / origin-time" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "legendary / origin-time",
+        "eraOrdering": 0,
+        "startEvent": "wife-of-nimrod-and-mother-of-hunor-and-magor",
+        "sources": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" }
+        ],
+        "notes": "Wife of the giant-hunter Nimrod and mother of Hunor and Magor. Her name is derived from the Hungarian word for hind (old enegy, modern uno); historians read it as a survival of an earlier Hungarian belief in a hind as totemic ancestress, later reinterpreted after Christianisation."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-progenitor",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Simon of Keza, Gesta Hunnorum et Hungarorum, c. 1282-1285 (Eneth, wife of Nimrod, mother of Hunor and Magor)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "hungarian_nimrod", "notes": "Eneh the hind is the wife of the giant-hunter Nimrod per Simon of Keza." },
+      { "kind": "mother-of", "personId": "hungarian_hunor", "notes": "Mother of Hunor, ancestor of the Huns." },
+      { "kind": "mother-of", "personId": "hungarian_magor", "notes": "Mother of Magor, ancestor of the Magyars." }
+    ]
+  },
+  {
+    "id": "hungarian_emese",
+    "name": {
+      "primary": "Emese",
+      "alt": ["Emesu"],
+      "transliterations": { "hu": "Emese", "rom": "Emese" }
+    },
+    "type": "mortal",
+    "tradition": "Hungarian",
+    "primaryTradition": "Hungarian",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic / origin-legend" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic / origin-legend",
+        "eraOrdering": 0,
+        "startEvent": "dream-of-the-turul-and-conception-of-almos",
+        "sources": [
+          { "kind": "primary", "reference": "Anonymus, Gesta Hungarorum, c. 1200 (the dream of Emese)" }
+        ],
+        "notes": "Foremother of the Arpad dynasty. While already pregnant she dreamed that a Turul bird came upon her and made her conceive, and that a stream issued from her womb from which great kings would spring; her son was therefore named Almos, the Dreamt One. The totemic Turul perched on the world-tree is the impregnating father-spirit of the dream."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-progenitor",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Anonymus, Gesta Hungarorum, c. 1200" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Anonymus, Gesta Hungarorum, c. 1200 (Emese, mother of Almos)" },
+          { "kind": "primary", "reference": "Kalti, Mark (attrib.), Chronicon Pictum (Kepes Kronika), c. 1360" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "lover", "personId": "hungarian_turul", "notes": "In the Emese dream the totemic Turul bird descends upon the sleeping Emese and gets her with child, fathering the line of Almos and the Arpads." }
+    ]
+  },
+  {
+    "id": "hurrian_sharruma",
+    "name": {
+      "primary": "Sharruma",
+      "alt": ["Sarruma", "Sharrumma", "Sarma"],
+      "transliterations": { "hurrian": "Sarruma", "hittite": "Sarruma" }
+    },
+    "type": "deity",
+    "tradition": "Hurrian",
+    "primaryTradition": "Hurrian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["hurrian_teshub", "hurrian_hebat"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "son-of-teshub-and-hebat",
+        "sources": [
+          { "kind": "secondary", "reference": "Britannica, Sharruma" }
+        ],
+        "notes": "Son of the storm-god Teshub and the mother-goddess Hebat; a mountain god, called king of the mountains, depicted riding a leopard and in bull form. He served as an intercessor between worshippers and his parents, and the Hittite king Tudhaliya IV took him as personal protector, embraced by the god in the Yazilikaya rock-sanctuary relief."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Britannica, Sharruma" }
+        ]
+      },
+      {
+        "sphereId": "divine-protection",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Britannica, Sharruma" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Britannica, Sharruma (son of Hebat and Teshub)" },
+          { "kind": "primary", "reference": "Yazilikaya rock-sanctuary reliefs, Chamber A and Chamber B (Sharruma behind Hebat; embracing Tudhaliya IV)" }
+        ]
+      }
+    ],
+    "relations": []
+  },
+  {
+    "id": "hurrian_sertapsuruhi",
+    "name": {
+      "primary": "Sertapsuruhi",
+      "alt": ["Sertapsuruhe", "Shertapshuruhi"],
+      "transliterations": { "hurrian": "Sertapsuruhi" }
+    },
+    "type": "numen",
+    "tradition": "Hurrian",
+    "primaryTradition": "Hurrian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "daughter-of-the-sea-wed-to-kumarbi",
+        "sources": [
+          { "kind": "primary", "reference": "Song of Hedammu (Hurrian-Hittite Kumarbi cycle), Hattusa tablets" }
+        ],
+        "notes": "Daughter of the personified Sea (Kiase). Kumarbi, seeking a champion to overthrow Teshub, married her, and she bore the ravenous sea-serpent Hedammu; she is described as enormous, her body measured in the thousands."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea-monster",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Song of Hedammu (Hurrian-Hittite Kumarbi cycle), Hattusa tablets" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Song of Hedammu (Hurrian-Hittite Kumarbi cycle), Hattusa tablets (the Sea-god Kiase, his daughter Sertapsuruhi, mother of Hedammu)" }
+        ]
+      }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "hurrian_kumarbi", "notes": "Kumarbi married Sertapsuruhi, daughter of the Sea, to engender a rival to Teshub." },
+      { "kind": "mother-of", "personId": "hurrian_hedammu", "notes": "Mother of the sea-serpent Hedammu, whom she bore to Kumarbi." }
+    ]
+  }
+]
+```
+
+WIRE-EDGE (existing -> existing, no new figure):
+  - hurrian_teshub  <-> hurrian_hebat : spouse. Both exist; Teshub's prose names Hebat as consort and Hebat's prose names Teshub as consort, but neither carries the spouse relation (Teshub lists only sibling/equated-with; Hebat lists only an interpretatio edge). Add: hurrian_teshub { kind:"spouse", personId:"hurrian_hebat" } (auto-reciprocates).
+
+NOTE (existing child needs parentIds updated):
+  - hurrian_hedammu : add hurrian_sertapsuruhi to parentIds (currently ["hurrian_kumarbi"]). She is his attested mother in the Song of Hedammu.

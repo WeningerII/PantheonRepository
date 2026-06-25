@@ -1,0 +1,563 @@
+Sweep pool 15 — family-completion authoring for window #15 (Mangaian / Manipuri / Mansi / Mapuche / Mari / Marind / Marquesan).
+
+Worker W15. New figures named in the prose of existing window entities that had no entry of their own, each verified by WebSearch for both the figure and the kinship.
+
+```json
+[
+  {
+    "id": "mangaian_tango",
+    "name": {
+      "primary": "Tango",
+      "alt": ["Tango"],
+      "transliterations": {
+        "mangaian": "Tango",
+        "etymology": "Mangaian Tango; the third child of Vari-ma-te-takere, plucked from her right side, the lord of the birds who dwells at Enua-kura, the land of red parrot-feathers."
+      }
+    },
+    "type": "deity",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["mangaian_vari_ma_te_takere"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "plucked-as-third-child-from-vari-right-side",
+        "sources": [
+          { "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I Creation, pp. 3-9" }
+        ],
+        "notes": "The third of the children plucked from the right side of Vari-ma-te-takere, after Vatea and Tinirau; lord of the birds, assigned to dwell at Enua-kura, the land of red parrot-feathers."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lord-of-birds",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3-9" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I Creation, pp. 3-9" },
+          { "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (The Mythology of All Races, Vol. IX, 1916), pp. 11-13, on the children of Vari" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "mangaian_vatea",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3-9" }
+        ],
+        "notes": "Brother of Vatea, the first-born, both plucked from the right side of Vari."
+      },
+      {
+        "kind": "sibling",
+        "personId": "mangaian_tinirau",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5-9" }
+        ],
+        "notes": "Brother of Tinirau, the second child; Tango is the third of the right-side children."
+      }
+    ],
+    "notes": "Lord of the birds and third child of the primordial mother Vari-ma-te-takere (Gill 1876); set to dwell at Enua-kura, the land of red parrot-feathers. Named in the prose of mangaian_vari_ma_te_takere as one of the four hitherto unauthored children; authored here with the parental link to Vari."
+  },
+  {
+    "id": "mangaian_tumu_te_ana_oa",
+    "name": {
+      "primary": "Tumu-te-ana-oa",
+      "alt": ["Tumu-te-ana-oa", "The Echo"],
+      "transliterations": {
+        "mangaian": "Tumu-te-ana-oa",
+        "etymology": "Mangaian Tumu-te-ana-oa, glossed by Gill as the Echo (the voice in the rocky caves); the fourth child of Vari-ma-te-takere, plucked from her left side, the female personification of Echo."
+      }
+    },
+    "type": "deity",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["mangaian_vari_ma_te_takere"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "plucked-as-fourth-child-from-vari-left-side",
+        "sources": [
+          { "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I Creation, pp. 3-9" }
+        ],
+        "notes": "The first of the children plucked from the left side of Vari-ma-te-takere (the fourth overall); the personified Echo, who haunts the rocky caves of Mangaia and was heard there by Rangi, one of the first inhabitants."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "echo-and-the-caves",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3-9" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I Creation, pp. 3-9" },
+          { "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (The Mythology of All Races, Vol. IX, 1916), pp. 11-13" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "mangaian_vatea",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3-9" }
+        ],
+        "notes": "Sister of Vatea and of the other children of Vari; she is of the left-side trio."
+      }
+    ],
+    "notes": "The personified Echo (Gill renders the name the Echo), fourth child of the primordial mother Vari-ma-te-takere and the first plucked from her left side (Gill 1876). She dwells in the caves of Mangaia. Named in the prose of mangaian_vari_ma_te_takere; authored here with the parental link to Vari. Has a standing Wikipedia entry as Tumu-te-ana-oa."
+  },
+  {
+    "id": "mangaian_raka",
+    "name": {
+      "primary": "Raka",
+      "alt": ["Raka"],
+      "transliterations": {
+        "mangaian": "Raka",
+        "etymology": "Mangaian Raka; the fifth child of Vari-ma-te-takere, plucked from her left side, lord of the winds, to whom Vari gave a great basket holding the winds and the knowledge of many useful inventions."
+      }
+    },
+    "type": "deity",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["mangaian_vari_ma_te_takere"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "plucked-from-vari-left-side-and-given-the-basket-of-winds",
+        "sources": [
+          { "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I Creation, pp. 3-9" }
+        ],
+        "notes": "Plucked from the left side of Vari-ma-te-takere; lord of the winds. Vari gave him a great basket holding the winds, together with the knowledge of many useful inventions, and he disposes the winds of the sea."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lord-of-the-winds",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3-9" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mangaian_raka_basket_of_winds",
+        "name": "hold and loose the winds from the great basket",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3-9" }
+        ],
+        "notes": "Keeper of the great basket of winds given him by his mother Vari; he raises and stills the winds and holds the knowledge of many useful inventions.",
+        "scopeTags": ["weather"]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I Creation, pp. 3-9" },
+          { "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (The Mythology of All Races, Vol. IX, 1916), pp. 11-13" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "mangaian_vatea",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3-9" }
+        ],
+        "notes": "Brother of Vatea and of the other children of Vari; he is of the left-side trio."
+      }
+    ],
+    "notes": "Lord of the winds, fifth child of the primordial mother Vari-ma-te-takere (Gill 1876), who gave him the great basket of winds and the knowledge of useful inventions. Named in the prose of mangaian_vari_ma_te_takere; authored here with the parental link to Vari."
+  },
+  {
+    "id": "mangaian_tu_metua",
+    "name": {
+      "primary": "Tu-metua",
+      "alt": ["Tu-metua", "Tumetua"],
+      "transliterations": {
+        "mangaian": "Tu-metua",
+        "etymology": "Mangaian Tu-metua, glossed by Gill as the loved one; the youngest child of Vari-ma-te-takere, the beloved daughter whom Vari kept ever beside her at the base of Avaiki."
+      }
+    },
+    "type": "deity",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["mangaian_vari_ma_te_takere"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "plucked-as-youngest-and-kept-beside-vari",
+        "sources": [
+          { "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I Creation, pp. 3-9" }
+        ],
+        "notes": "The last of the children plucked from the left side of Vari-ma-te-takere; the loved one, the youngest, whom Vari kept ever at her side in the narrow base of Avaiki and would not send away."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-beloved-youngest-child",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3-9" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I Creation, pp. 3-9" },
+          { "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (The Mythology of All Races, Vol. IX, 1916), pp. 11-13" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "mangaian_vatea",
+        "sources": [
+          { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3-9" }
+        ],
+        "notes": "Sister of Vatea and of the other children of Vari; the youngest of the six."
+      }
+    ],
+    "notes": "The loved one, youngest daughter of the primordial mother Vari-ma-te-takere, kept ever beside her at the base of Avaiki (Gill 1876). Named in the prose of mangaian_vari_ma_te_takere; authored here with the parental link to Vari. Has a standing Wikipedia / DBpedia entry as Tu-metua."
+  },
+  {
+    "id": "manipuri_kounu",
+    "name": {
+      "primary": "Kounu",
+      "alt": ["Kounu", "Ima Kounu", "Konu"],
+      "transliterations": {
+        "meitei": "Kounu",
+        "etymology": "A Meitei goddess-name; the consort of the mountain-god Koubru (Koupalu) and the guardian goddess of the northern direction, with her own abode on Mount Kounu and a second on Mount Koubru."
+      }
+    },
+    "type": "deity",
+    "tradition": "Manipuri",
+    "primaryTradition": "Manipuri",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "existence-as-consort-of-koubru-and-guardian-of-the-north",
+        "sources": [
+          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980), on the Umang Lai and the Koubru cult" }
+        ],
+        "notes": "The Meitei goddess Kounu, consort of the mountain-god Koubru (Koupalu) with whom she dwells on the summit of Mount Koubru in northern Manipur; she is guardian of the northern direction and has her own seat on Mount Kounu. A pilgrimage goddess of the Sanamahi tradition."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "northern-direction",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Meitei tradition (Sanamahism): Kounu the guardian goddess of the north, consort of Koubru" }
+        ]
+      },
+      {
+        "sphereId": "sacred-mountains",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Meitei tradition: Mount Kounu and Mount Koubru as the seats of Kounu and Koubru" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)" },
+          { "kind": "secondary", "reference": "Meitei tradition (Sanamahism): the goddess Kounu, consort of Koubru and guardian of the northern direction" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "manipuri_koubru",
+        "sources": [
+          { "kind": "secondary", "reference": "Meitei tradition: Kounu the consort of the mountain-god Koubru (Koupalu), dwelling together on Mount Koubru" }
+        ],
+        "notes": "Wife and consort of the mountain-god Koubru, with whom she dwells on the summit of Mount Koubru."
+      }
+    ],
+    "notes": "Kounu is the Meitei goddess who is the consort of the mountain-god Koubru (Koupalu) and the guardian of the northern direction, named in the prose of manipuri_koubru as his consort. She has her own abode on Mount Kounu and a second on Mount Koubru; both are Meitei pilgrimage sites. Authored here with the spouse link to Koubru."
+  },
+  {
+    "id": "mapuche_kuyen",
+    "name": {
+      "primary": "Kuyen",
+      "alt": ["Kueyen", "Cuyen", "Kuyén"],
+      "transliterations": {
+        "mapudungun": "Küyen",
+        "etymology": "Mapudungun küyen (kuyen) moon, month; the Moon personified, the principal wangulen (star-spirit) and the wife of the sun Antü."
+      }
+    },
+    "type": "deity",
+    "tradition": "Mapuche",
+    "primaryTradition": "Mapuche",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "the-moon-chosen-as-wife-of-antu",
+        "sources": [
+          { "kind": "secondary", "reference": "Ricardo E. Latcham, La organizacion social y las creencias religiosas de los antiguos araucanos (1924)" }
+        ],
+        "notes": "Küyen is the Moon, the principal wangulen (star-spirit) of the sky-land; when the sun Antü chose a wangulen to wife he picked Küyen as the most luminous, and she became his consort, the feminine, nocturnal balance to his solar light."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": { "value": "Küyen", "script": "Mapudungun", "rom": "Küyen" },
+        "sources": [
+          { "kind": "secondary", "reference": "Tomas Guevara, Historia de Chile: Chile prehispanico (1925); Latcham (1924)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mapuche_kuyen_give_the_moonlight",
+        "name": "Bear the moon through the night and balance the sun",
+        "inheritability": "none",
+        "notes": "The Moon personified; she gives the night its light and the months their measure, the feminine counterpart of the sun Antü.",
+        "sources": [
+          { "kind": "secondary", "reference": "Latcham, La organizacion social... (1924)" }
+        ],
+        "scopeTags": ["lunar"]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Tomas Guevara, Historia de Chile: Chile prehispanico (1925)" },
+          { "kind": "secondary", "reference": "Ricardo E. Latcham, La organizacion social y las creencias religiosas de los antiguos araucanos (1924)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "mapuche_antu",
+        "sources": [
+          { "kind": "secondary", "reference": "Mapuche tradition: the sun Antü takes the moon Küyen, the most luminous wangulen, to wife" }
+        ],
+        "notes": "Wife of the sun Antü; the pairing of moon and sun, night and day, is the equilibrium of the Mapuche sky."
+      }
+    ],
+    "notes": "Küyen (Kueyen) is the Moon of Mapuche belief, the principal wangulen (star-spirit) and the wife of the sun Antü, named in the prose of mapuche_antu (which is paired with the moon Küyen). Authored here with the spouse link to Antü. The figure has a standing Wikipedia entry as Kueyen."
+  },
+  {
+    "id": "mapuche_fucha",
+    "name": {
+      "primary": "Fücha",
+      "alt": ["Fucha", "Futa", "Fucha Wentru"],
+      "transliterations": {
+        "mapudungun": "Fücha",
+        "etymology": "Mapudungun fücha (fücha/futa) old man, elder; the old-man, elder-masculine aspect of the fourfold Ngenechen, paired with the old woman Kushe."
+      }
+    },
+    "type": "deity",
+    "tradition": "Mapuche",
+    "primaryTradition": "Mapuche",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "the-old-man-aspect-of-ngenechen",
+        "sources": [
+          { "kind": "secondary", "reference": "Ricardo E. Latcham, La organizacion social y las creencias religiosas de los antiguos araucanos (1924)" }
+        ],
+        "notes": "Fücha is the old man, the elder masculine aspect of the fourfold supreme being Ngenechen, paired at the summit of age with the old woman Kushe; together they hold one pole of the cosmic balance, beside the young man and young woman."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sovereignty",
+        "contextTag": "lifelong",
+        "term": { "value": "Fücha", "script": "Mapudungun", "rom": "Fücha" },
+        "sources": [
+          { "kind": "secondary", "reference": "Louis C. Faron, Hawks of the Sun: Mapuche Morality and Its Ritual Attributes (1964); Latcham (1924)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mapuche_fucha_elder_aspect",
+        "name": "Embody the old-man, elder aspect of the fourfold Ngenechen",
+        "inheritability": "none",
+        "notes": "The elder masculine person of the supreme being, paired with the old woman Kushe; the wisdom and authority of age in the tetrad.",
+        "sources": [
+          { "kind": "secondary", "reference": "Latcham, La organizacion social... (1924)" }
+        ],
+        "scopeTags": ["foundational"]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Ricardo E. Latcham, La organizacion social y las creencias religiosas de los antiguos araucanos (1924)" },
+          { "kind": "secondary", "reference": "Louis C. Faron, Hawks of the Sun: Mapuche Morality and Its Ritual Attributes (1964); Ana Mariella Bacigalupo on the fourfold Ngünechen" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "mapuche_kushe",
+        "sources": [
+          { "kind": "secondary", "reference": "Mapuche tradition: Fücha the old man paired with Kushe the old woman as the elder couple of the fourfold Ngenechen" }
+        ],
+        "notes": "Paired with the old woman Kushe as the elder couple of the fourfold supreme being."
+      },
+      {
+        "kind": "equated-with",
+        "personId": "mapuche_ngenechen",
+        "sources": [
+          { "kind": "secondary", "reference": "Mapuche tradition: Fücha (the old man) is one of the four paired aspects of Ngenechen" }
+        ],
+        "notes": "An aspect of the fourfold Ngenechen; the elder masculine person of the supreme being."
+      }
+    ],
+    "notes": "Fücha (Fucha, the old man) is the elder masculine aspect of the fourfold Mapuche supreme being Ngenechen, paired with the old woman Kushe, named in the prose of mapuche_kushe (paired with the old man Fücha). Authored here with the spouse link to Kushe and the aspect (equated-with) link to Ngenechen."
+  },
+  {
+    "id": "marind_sami",
+    "name": {
+      "primary": "Sami",
+      "alt": ["Sami"],
+      "transliterations": {
+        "Marind": "Sami",
+        "etymology": "Marind Sami; a dema, child of the sky-deity Dinadin and the earth-deity Nubog, named beside the moon-dema Geb among the first ancestral beings."
+      }
+    },
+    "type": "deity",
+    "tradition": "Marind",
+    "primaryTradition": "Marind",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["marind_dinadin", "marind_nubog"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "born-a-dema-of-dinadin-and-nubog",
+        "sources": [
+          { "kind": "secondary", "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (1966)" }
+        ],
+        "notes": "A primordial dema, offspring of the sky-deity Dinadin and the earth-deity Nubog, named together with the dema Geb among the first ancestral beings from whom the order of the Marind-anim proceeds."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-dema",
+        "contextTag": "lifelong",
+        "term": { "value": "dema", "script": "Latin", "rom": "dema" },
+        "sources": [
+          { "kind": "secondary", "reference": "van Baal, Dema (1966), on the dema offspring of Dinadin and Nubog" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (1966)" },
+          { "kind": "secondary", "reference": "Paul Wirz, Die Marind-anim von Hollandisch-Sud-Neu-Guinea (1922-25)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "marind_geb",
+        "sources": [
+          { "kind": "secondary", "reference": "van Baal, Dema (1966): Geb and Sami, the dema offspring of Dinadin and Nubog" }
+        ],
+        "notes": "Brother of the moon-dema Geb; both are children of Dinadin and Nubog."
+      }
+    ],
+    "notes": "Sami is a Marind-anim dema, child of the sky-deity Dinadin and the earth-deity Nubog, named beside the dema Geb in the prose of marind_dinadin (parent of dema such as Geb and Sami) and in van Baal Dema (1966). Authored here with the parental links to Dinadin and Nubog and the sibling link to Geb."
+  }
+]
+```
