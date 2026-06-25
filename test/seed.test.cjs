@@ -334,6 +334,23 @@ test('symmetric relations are fully reciprocal and duplicate entities stay merge
     'the xirang custody pair lost a holder');
 });
 
+test('no figure note leaks internal/plumbing scaffolding to the public detail page', () => {
+  // The detail page renders `notes` (and lifecycle/relations notes) verbatim, so
+  // they must read as encyclopedic prose — never carry the build's internal terms
+  // (id-wiring, externalRef provenance, tier-compute mechanics, id-suffix jargon).
+  // scripts/sanitize-notes.cjs strips these in the generator + the SEED codemod;
+  // this is the permanent invariant that keeps them out.
+  const MARK = /externalRef|\bwired to greek_|RECIPROCAL-NEEDED|Reciprocal edge|Reciprocal of the existing|already records [^.]*\bexternalRef|\bid-suffix\b|\bId-suffixed\b|Disambiguator _|the registry uses the disambiguating|statusAtConception|status-at-conception|eraOrdering|\bstress (?:case|test)\b|Tests dynastic depth/;
+  const hits = [];
+  const chk = (s, id, where) => { if (typeof s === 'string' && MARK.test(s)) hits.push(`${id} (${where}): ${s.slice(0, 90)}`); };
+  for (const [id, p] of Object.entries(people)) {
+    chk(p.notes, id, 'notes');
+    for (const ph of (p.lifecycle || [])) chk(ph.notes, id, 'lifecycle');
+    for (const r of (p.relations || [])) chk(r.notes, id, 'relations');
+  }
+  assert.deepStrictEqual(hits, [], `${hits.length} note(s) leak internal scaffolding to the UI:\n${hits.slice(0, 25).join('\n')}`);
+});
+
 test('getEntryDates resolves a known entry to the documented shape', () => {
   const zeus = people['greek_hesiod_zeus'];
   assert.ok(zeus, 'expected greek_hesiod_zeus in the seed');

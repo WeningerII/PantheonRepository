@@ -10,6 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 const { sources, writeSentinelBlock } = require('./gen-lib.cjs');
+const { sanitizeFigureNotes } = require('./sanitize-notes.cjs');
 const VALID = new Set(['deity', 'numen', 'demigod', 'quartigod', 'scion', 'mortal']);
 const EXIST_FILE = fs.existsSync(path.join(__dirname, '..', 'data-sources', 'existing-ids.json'))
   ? path.join(__dirname, '..', 'data-sources', 'existing-ids.json')
@@ -69,6 +70,7 @@ for (const { text } of sources()) {
     if (existing.has(f.id)) { stats.exist++; continue; }
     if (all.has(f.id)) { stats.dups++; continue; }
     normalizeMaterialCulture(f);
+    sanitizeFigureNotes(f); // strip internal/plumbing scaffolding from public notes
     all.set(f.id, f);
   }
 }
