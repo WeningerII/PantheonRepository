@@ -3561,7 +3561,7 @@ const buildPeopleSeed = () => {
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Apollod. 2.7.7-8.1' }], weight: 'primary' },
         { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Apollod. 2.7.7' }], weight: 'primary' },
       ],
-      notes: 'Eldest of the canonical Heraclidae. Tests dynastic depth — line continues to Spartan kings.',
+      notes: 'Eldest of the canonical Heraclidae, the sons of Heracles by Deianira. He led the first attempt of the Heraclidae to return to the Peloponnese and was killed in single combat by Echemus of Tegea; his descendants were reckoned the royal line of the Spartan kings.',
     },
     {
       id: 'greek_eur_macaria', schemaVersion: 2,
@@ -3638,7 +3638,7 @@ const buildPeopleSeed = () => {
       lifecycle: [{ typeStatus: 'demigod', startEvent: 'birth', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Apollod. 2.7.8' }] }],
       associations: [{ kind: 'birth', placeName: 'Lydia', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.7.8' }] }],
       sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Apollod. 2.7.8' }], weight: 'secondary' }],
-      notes: 'Disambiguator _lydian distinguishes from the Laestrygonian king of the same name (Hom. Od. 10.81). Cross-tradition Greek/Anatolian.',
+      notes: 'Son of Heracles by Omphale, queen of Lydia, during the hero\'s servitude to her — a figure shared between the Greek and Anatolian traditions. Not to be confused with Lamus, king of the Laestrygonians (Homer, Odyssey 10.81).',
     },
     {
       id: 'greek_apollod_alexiares', schemaVersion: 2,
@@ -3655,7 +3655,7 @@ const buildPeopleSeed = () => {
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Apollod. 2.7.7' }], weight: 'primary' },
         { claim: 'type', citations: [{ kind: 'primary', reference: 'Apollod. 2.7.7' }], weight: 'primary', notes: 'Type: deity. Both parents divine at conception (post-apotheosis Heracles + Hebe). Not a demigod by strict criterion.' },
       ],
-      notes: 'CRITICAL STRESS CASE. statusAtConception(Alexiares, Heracles) must return deity (not demigod) because Heracles\'s lifecycle phase 3 covers Alexiares\'s conception — eraOrdering: 3 places him after phase 3 (eraOrdering: 2, deity).',
+      notes: 'Minor god, son of the deified Heracles and Hebe, born on Olympus after his father\'s apotheosis; with his brother Anicetus he keeps the gates of Olympus. His name means roughly \'who wards off war,\' carrying Heracles\'s protective power into a deity of warding (Apollodorus 2.7.7).',
     },
     {
       id: 'greek_apollod_anicetus', schemaVersion: 2,
@@ -3669,7 +3669,7 @@ const buildPeopleSeed = () => {
       lifecycle: [{ typeStatus: 'deity', startEvent: 'birth-on-Olympus', era: 'heroic-age', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Apollod. 2.7.7' }] }],
       domains: [{ sphereId: 'unconquerable', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apollod. 2.7.7' }] }],
       sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Apollod. 2.7.7' }], weight: 'primary' }],
-      notes: 'Sibling to Alexiares. Same status-at-conception case.',
+      notes: 'Minor god, son of the deified Heracles and Hebe and brother of Alexiares, with whom he keeps the gates of Olympus. His name, \'the Unconquerable,\' carries Heracles\'s invincibility into a deity of protection (Apollodorus 2.7.7).',
     },
 
     // ─── Heraclidae lineage ──────────────────────────────────────────────
