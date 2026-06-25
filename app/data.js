@@ -368167,6 +368167,570 @@ const FACULTY_SWEEP = {
    "ability": true
   }
  ],
+ "greek_hesiod_hyperion": [
+  {
+   "id": "greek_hesiod_hyperion-watcher",
+   "name": "Watches from on high over the celestial light",
+   "term": {
+    "value": "Ὑπερίων",
+    "script": "Greek",
+    "rom": "Hyperiōn"
+   },
+   "notes": "As the light-Titan whose name means 'he who goes/watches above,' he governs heavenly illumination.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 31 to Helios"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_hyperion-sire-luminaries",
+   "name": "Sires the Sun, Moon and Dawn upon Theia",
+   "term": {
+    "value": "φάος",
+    "script": "Greek",
+    "rom": "phaos"
+   },
+   "notes": "By Theia (Euryphaessa) he is generative source of Helios, Selene and Eos.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony; Homeric Hymn 31 to Helios"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_theia": [
+  {
+   "id": "greek_hesiod_theia-bestow-radiance",
+   "name": "Bestows radiance and the value of bright gold",
+   "term": {
+    "value": "Εὐρυφάεσσα",
+    "script": "Greek",
+    "rom": "Euryphaessa"
+   },
+   "notes": "Pindar invokes 'Theia of many names,' saying that for her sake mortals honour gold as mightiest and prize the worth she lends to contending ships and chariot-teams.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Isthmian 5"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_iapetus": [
+  {
+   "id": "greek_hesiod_iapetus-progenitor",
+   "name": "Progenitor of mankind through his sons",
+   "notes": "Through Atlas, Menoetius, Prometheus and Epimetheus his line is bound up with the human lot and its defining traits.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_menoetius": [
+  {
+   "id": "greek_hesiod_menoetius-hubris",
+   "name": "Embodies insolent might and reckless presumption",
+   "term": {
+    "value": "ὑβριστής",
+    "script": "Greek",
+    "rom": "hybristēs"
+   },
+   "notes": "Defined by overweening violence and pride; for his atasthalia and overbearing manhood Zeus struck him with a smoking thunderbolt and hurled him to Erebos.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 514-516"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_phoebe": [
+  {
+   "id": "greek_hesiod_phoebe-oracle",
+   "name": "Holds and bestows the Delphic oracle",
+   "term": {
+    "value": "Φοίβη",
+    "script": "Greek",
+    "rom": "Phoibē"
+   },
+   "notes": "In the Eumenides prologue Phoebe receives the Delphic seat from Themis and gives it to Apollo as a birth-gift; Apollo is called Phoibos after her.",
+   "inheritability": "partial",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aeschylus, Eumenides"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_oceanus": [
+  {
+   "id": "greek_hesiod_oceanus-source-of-gods",
+   "name": "Primeval source from whom the gods and all waters spring",
+   "term": {
+    "value": "θεῶν γένεσις",
+    "script": "Greek",
+    "rom": "theōn genesis"
+   },
+   "notes": "Homer's Hera calls him 'Oceanus, origin of the gods'; as the world-encircling stream he is wellspring of every river, spring and sea.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 14; Hesiod, Theogony"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_tethys": [
+  {
+   "id": "greek_hesiod_tethys-nurse",
+   "name": "Nurses and nurtures the divine generation",
+   "term": {
+    "value": "τήθη",
+    "script": "Greek",
+    "rom": "tēthē"
+   },
+   "notes": "In Iliad 14 Hera says Tethys reared her in her halls during the Titanomachy; her name evokes the nurse/grandmother.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 14"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_pallas_titan": [
+  {
+   "id": "greek_hesiod_pallas_titan-sire-warpowers",
+   "name": "Sires the war-powers Nike, Kratos, Bia and Zelos upon Styx",
+   "term": {
+    "value": "Πάλλας",
+    "script": "Greek",
+    "rom": "Pallas"
+   },
+   "notes": "By Styx he fathers Victory, Strength, Force and Emulation, the warlike personifications who thereafter dwell beside Zeus.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 383-385"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_styx": [
+  {
+   "id": "greek_hesiod_styx-binding-oath",
+   "name": "Her water is the gods' inviolable oath",
+   "term": {
+    "value": "μέγας ὅρκος",
+    "script": "Greek",
+    "rom": "megas horkos"
+   },
+   "notes": "A god who forswears by Styx-water lies breathless and speechless a great year, cut off from nectar and ambrosia, then is banished nine years from the council of the gods.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 775-806"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_styx-first-ally",
+   "name": "First to bring aid to Zeus in the Titanomachy",
+   "notes": "On her father's counsel she came first, bringing her children to Zeus; in reward Zeus made her the great oath of the gods and kept her children ever at his side.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 383-403"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_styx-deadly-water",
+   "name": "Her cold water is deadly to mortals and beasts",
+   "notes": "The Arcadian Styx that trickles down the cliff near Nonacris was reputed death to men and animals and to corrode most materials.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece (Arcadia)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_nyx": [
+  {
+   "id": "greek_hesiod_nyx-prophecy",
+   "name": "Gives oracles consulted even by Zeus",
+   "notes": "In the Orphic theogony Nyx, immortal nurse of the gods, sits in her cave knowing all oracles; Zeus comes to her and she prophesies how he will found his rule.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Orphic Rhapsodies (Orphic theogony fragments)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_nyx-awe-of-zeus",
+   "name": "Commands awe from Zeus himself",
+   "notes": "In Iliad 14 Zeus shrinks from doing what would displease swift Night, who subdues gods and men, and so spares Hypnos.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 14"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_hypnos": [
+  {
+   "id": "greek_hesiod_hypnos-lull-zeus",
+   "name": "Can lull even Zeus and Ocean to sleep",
+   "notes": "At Hera's bidding he put Zeus to sleep on Mt Ida (and once before, during the Heracles episode), boasting he could lull all gods and even the streams of Okeanos.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 14"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_hypnos-bear-sarpedon",
+   "name": "Bears away the dead with his twin Death",
+   "notes": "With Thanatos he carries the body of Sarpedon from Troy to be laid to rest in Lycia.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 16"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_thanatos": [
+  {
+   "id": "greek_hesiod_thanatos-hallow-victim",
+   "name": "Hallows the dying by cutting a lock of hair",
+   "notes": "In Euripides' Alcestis Thanatos comes with his sword to shear a lock of the victim's hair, consecrating her to the gods below.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Alcestis"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_thanatos-overcome",
+   "name": "Can be bound or wrestled down",
+   "notes": "Sisyphus chained Death so that none died until Ares freed him; Heracles ambushed and wrestled Thanatos at the tomb to win back Alcestis.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Alcestis; Apollodorus, Bibliotheca"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_leto": [
+  {
+   "id": "greek_hesiod_leto-protect-young",
+   "name": "Gentle protectress and nurturer of the young",
+   "term": {
+    "value": "κουροτρόφος",
+    "script": "Greek",
+    "rom": "kourotrophos"
+   },
+   "notes": "Hesiod calls her always mild and kindliest within Olympos; she is patroness of children and mothers.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_leto-avenger",
+   "name": "Avenges insult to her honour through her children",
+   "notes": "Apollo and Artemis slew the Niobids when Niobe vaunted over Leto, and destroyed the giant Tityos for his assault upon her.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad; Homer, Odyssey 11; Apollodorus, Bibliotheca"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_mnemosyne": [
+  {
+   "id": "greek_hesiod_mnemosyne-memory",
+   "name": "Personifies Memory, wellspring of inspired song",
+   "notes": "Through her daughters the Muses she grants kings and bards their authoritative speech and a forgetting of sorrows.",
+   "inheritability": "partial",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_mnemosyne-spring",
+   "name": "Presides over the Spring of Memory in the afterlife",
+   "notes": "The Orphic-Bacchic gold tablets bid the soul drink not from Lethe but from the cold Lake of Mnemosyne, to keep memory and escape rebirth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Orphic gold lamellae (funerary tablets)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_themis": [
+  {
+   "id": "greek_hesiod_themis-convene",
+   "name": "Convenes and regulates the assembly of the gods",
+   "notes": "At Zeus's command she summons the gods to council and, when Hera returns to Olympos, hands her the welcome-cup.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 15; Homer, Iliad 20"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_themis-prophecy",
+   "name": "Holds the Delphic oracle and counsels Zeus",
+   "notes": "She held Delphi in succession after Gaia and before Phoebe, and warned Zeus that Thetis would bear a son greater than his father.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aeschylus, Eumenides; Pindar, Isthmian 8"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_uranus": [
+  {
+   "id": "greek_hesiod_uranus-cover-earth",
+   "name": "Shelters and covers Earth on every side",
+   "notes": "Gaia bore him equal to herself that he might envelop her wholly as the all-covering sky.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_thaumas": [
+  {
+   "id": "greek_hesiod_thaumas-sire-marvels",
+   "name": "Sires the rainbow Iris and the storm-Harpies",
+   "notes": "By the Oceanid Electra he fathers swift Iris (the rainbow) and the long-haired Harpies Aello and Ocypete, marvels of sky and sea.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_selene": [
+  {
+   "id": "greek_hesiod_selene-give-light",
+   "name": "Gives light by night, her radiance wheeling round the earth",
+   "notes": "Bathed in Ocean and clad in far-gleaming raiment she yokes her bright team, and the glow from her immortal head encircles the earth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 32 to Selene"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_selene-measure-months",
+   "name": "Measures out the months",
+   "notes": "Her fifty daughters by Endymion, the Menai, were reckoned the fifty lunar months of the four-year Olympiad.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_hesiod_iasion": [
+  {
+   "id": "greek_hesiod_iasion-mysteries",
+   "name": "Founds and teaches the Samothracian Mysteries",
+   "notes": "Zeus taught Iasion the rites of the Great Gods of Samothrace, and he was first to initiate strangers, raising the mysteries to high repute.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Diodorus Siculus, Library of History"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_hesiod_iasion-demeter-union",
+   "name": "Begets agricultural Wealth on Demeter",
+   "notes": "Lying with Demeter in a thrice-ploughed field he fathered Plutus (Wealth), the wealth of the corn; for the union Zeus struck him with a thunderbolt.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony; Homer, Odyssey 5"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_iamus": [
+  {
+   "id": "greek_iamus-altar-fire",
+   "name": "Divines from the burnt offerings on the altar of Zeus",
+   "notes": "After Heracles founded the Olympic Games Apollo granted Iamus the right to prophesy from the altar-fire at Olympia, where his clan officiated.",
+   "inheritability": "full",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Olympian 6"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_idmon": [
+  {
+   "id": "greek_idmon-foreknew-death",
+   "name": "Foreknew his own death yet sailed regardless",
+   "notes": "By his Apolline mantic art he knew he was fated to die on the voyage, yet joined the Argo rather than deny it glory.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollonius Rhodius, Argonautica 1"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_io": [
+  {
+   "id": "greek_io-priestess",
+   "name": "Priestess of Hera at the Argive Heraion",
+   "notes": "She served Hera at Argos when Zeus's desire fell upon her, the office that frames her whole tragedy.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aeschylus, Prometheus Bound; Apollodorus, Bibliotheca 2.1"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_io-foremother",
+   "name": "Foremother of the Danaid and Heraclid lineage",
+   "notes": "Restored in Egypt by Zeus's touch she bore Epaphus, ancestor of the Danaids and ultimately of Heracles.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aeschylus, Suppliants; Apollodorus, Bibliotheca 2.1"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "greek_ion_athens": [
+  {
+   "id": "greek_ion_athens-organize-tribes",
+   "name": "Organizes the four Ionian tribes",
+   "notes": "He named the Geleontes, Hopletes, Argadeis and Aigikoreis after his sons, the ancestral Ionian tribal divisions.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Ion; Pausanias, Description of Greece 7.1"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "greek_ion_athens-war-leader",
+   "name": "Leads Athens as war-commander against Eleusis",
+   "notes": "Invited by the Athenians, he commanded them in the war against Eleusis and was honoured as polemarch.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece 7.1"
+    }
+   ],
+   "ability": true
+  }
+ ],
  "greek_itylus": [
   {
    "id": "greek_itylus-nightingale-lament",
@@ -368925,6 +369489,1377 @@ const FACULTY_SWEEP = {
     {
      "kind": "primary",
      "reference": "Mahabharata, Adi Parva (Satyavati's birth)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hittite_arinna": [
+  {
+   "id": "hittite_arinna-grant-kingship",
+   "name": "Grant kingship and victory in war",
+   "term": {
+    "value": "dUTU URUArinna",
+    "script": "Cuneiform",
+    "rom": "Šiu-šummi"
+   },
+   "notes": "As source of royal legitimacy she runs before the Hittite king in battle and grants him victory; the king and queen serve as her high priest and priestess.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Prayer of Mursili II to the Sun-goddess of Arinna (CTH 376)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hittite_arinna-uphold-cosmic-order",
+   "name": "Govern the established order of heaven and earth",
+   "notes": "Invoked as Queen of Heaven and Earth who sets the bounds of kingship and law for the Land of Hatti.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Prayer of Mursili II to the Sun-goddess of Arinna (CTH 376)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hittite_tarhunna": [
+  {
+   "id": "hittite_tarhunna-command-storm",
+   "name": "Command thunder, lightning, and rain",
+   "term": {
+    "value": "dIM",
+    "script": "Cuneiform",
+    "rom": "Tarḫunna"
+   },
+   "notes": "The Storm-god of Hatti wields the thunderbolt and brings the rains on which the land's fertility depends.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite state treaties and royal prayers (CTH series)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hittite_tarhunna-slay-illuyanka",
+   "name": "Slay the chaos-serpent Illuyanka",
+   "notes": "After an initial defeat, he destroys the dragon Illuyanka with the help of his daughter Inara (first version) or his half-mortal son (second version), recovering his stolen heart and eyes.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Illuyanka myth (CTH 321), recited at the purulli festival"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hittite_tarhunna-guarantee-treaties",
+   "name": "Guarantee oaths and treaties as divine witness",
+   "notes": "Named as chief witness and enforcer in Hittite state treaties, who destroys the perjurer.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Treaty of Suppiluliuma I with Shattiwaza (CTH 51)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hittite_telipinu": [
+  {
+   "id": "hittite_telipinu-grant-fertility",
+   "name": "Grant fertility to crops, herds, and people",
+   "term": {
+    "value": "dTelipinu",
+    "script": "Cuneiform",
+    "rom": "Telipinu"
+   },
+   "notes": "His presence sustains the growth of grain, the increase of cattle and sheep, and human birth; his withdrawal blights all three.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Telipinu myth (CTH 324)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hittite_telipinu-withdraw-blight",
+   "name": "Withdraw in anger and wither the land",
+   "notes": "The archetypal vanishing god: enraged, he storms off (putting his boots on the wrong feet) so that mist seizes the hearth and fields and springs dry up until he is found and soothed.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Telipinu myth (CTH 324)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hittite_inara": [
+  {
+   "id": "hittite_inara-protect-wild-beasts",
+   "name": "Mistress of the wild creatures of the steppe",
+   "term": {
+    "value": "dInara",
+    "script": "Cuneiform",
+    "rom": "Inara"
+   },
+   "notes": "Hattic-derived goddess of the wild animals, daughter of the Storm-god, comparable to a potnia theron.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Illuyanka myth (CTH 321)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hittite_inara-entrap-illuyanka",
+   "name": "Entrap the serpent through cunning and feasting",
+   "notes": "Stages a great feast to make Illuyanka and his brood drunk, then has the mortal Hupasiya bind them so the Storm-god can slay the dragon.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Illuyanka myth (CTH 321)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hittite_illuyanka": [
+  {
+   "id": "hittite_illuyanka-defeat-stormgod",
+   "name": "Overpower the Storm-god and seize his heart and eyes",
+   "term": {
+    "value": "dilluyanka",
+    "script": "Cuneiform",
+    "rom": "Illuyanka"
+   },
+   "notes": "In the second version the serpent bests Tarhunna in their first combat and takes his heart and eyes as spoils before the god recovers them.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Illuyanka myth (CTH 321)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hittite_hannahanna": [
+  {
+   "id": "hittite_hannahanna-send-bee",
+   "name": "Dispatch the bee to find the vanished god",
+   "term": {
+    "value": "dḪannaḫanna",
+    "script": "Cuneiform",
+    "rom": "Ḫannaḫanna"
+   },
+   "notes": "The Grandmother resolves the disappearing-god crises by sending a bee to locate the lost deity, sting him awake, and purify him with wax.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Telipinu myth (CTH 324); Hannahanna myths (CTH 334)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hittite_hannahanna-govern-birth-fate",
+   "name": "Preside over childbirth and decree destiny",
+   "notes": "Primeval mother- and birth-goddess (identified with Nintu) associated with the Gulses goddesses of fate.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite ritual and cult texts invoking Ḫannaḫanna with the Gulses"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hittite_mezzulla": [
+  {
+   "id": "hittite_mezzulla-intercede",
+   "name": "Intercede with the Sun-goddess of Arinna",
+   "term": {
+    "value": "dMezzulla",
+    "script": "Cuneiform",
+    "rom": "Mezzulla"
+   },
+   "notes": "Daughter of the Storm-god and the Sun-goddess of Arinna; conveys mortal prayers to her powerful mother as a divine intermediary.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite royal prayers and the cult of Arinna (CTH series)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hittite_zintuhi": [
+  {
+   "id": "hittite_zintuhi-intercede",
+   "name": "Intercede with the Sun-goddess of Arinna",
+   "term": {
+    "value": "dZintuḫi",
+    "script": "Cuneiform",
+    "rom": "Zintuḫi"
+   },
+   "notes": "Granddaughter of the Sun-goddess and the Storm-god (her name is Hattic for granddaughter); like her mother Mezzulla, invoked as an intermediary with the Sun-goddess.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite cult texts of Arinna (CTH series)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_vishrava": [
+  {
+   "id": "hindu_vishrava-tapas-mastery",
+   "name": "Mastery of Vedic learning won through tapas",
+   "notes": "A scholar par excellence among the rishis, he gained great powers and renown through austerity (tapasya).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Uttara Kanda"
+    }
+   ],
+   "ability": false
+  },
+  {
+   "id": "hindu_vishrava-progenitor-rakshasas",
+   "name": "Progenitor of the rakshasa and yaksha lines",
+   "notes": "By Ilavida he fathered Kubera, and by Kaikasi he fathered Ravana, Kumbhakarna, Shurpanakha, and Vibhishana.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Uttara Kanda"
+    }
+   ],
+   "ability": false
+  }
+ ],
+ "hindu_vyasa": [
+  {
+   "id": "hindu_vyasa-arrange-vedas",
+   "name": "Divide and arrange the Vedas into four collections",
+   "term": {
+    "value": "वेदव्यास",
+    "script": "Devanagari",
+    "rom": "Vedavyāsa"
+   },
+   "notes": "Traditionally compiled the single body of Vedic mantras into the Rig, Yajur, Sama, and Atharva, earning the title Vyasa ('the arranger').",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Vishnu Purana 3.4; Mahabharata, Adi Parva"
+    }
+   ],
+   "ability": false
+  },
+  {
+   "id": "hindu_vyasa-compose-mahabharata",
+   "name": "Compose the Mahabharata and the Puranas",
+   "notes": "Author of the Mahabharata (dictated to Ganesha) and traditionally of the eighteen Puranas and the Brahma Sutras.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva 1"
+    }
+   ],
+   "ability": false
+  },
+  {
+   "id": "hindu_vyasa-chiranjivi",
+   "name": "Deathless sage of the present age",
+   "notes": "Counted among the Chiranjivis (immortals) and regarded as a partial incarnation (amsavatara) of Vishnu.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Puranic Chiranjivi tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_vinata": [
+  {
+   "id": "hindu_vinata-mother-of-suns-birds",
+   "name": "Mother of the solar charioteer and the king of birds",
+   "term": {
+    "value": "विनता",
+    "script": "Devanagari",
+    "rom": "Vinatā"
+   },
+   "notes": "By Kashyapa she bore two eggs that hatched Aruna (charioteer of Surya and personification of dawn) and Garuda (mount of Vishnu).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva (Astika Parva)"
+    }
+   ],
+   "ability": false
+  },
+  {
+   "id": "hindu_vinata-enslaved-by-kadru",
+   "name": "Loses the wager and falls into bondage",
+   "notes": "Wagers with her sister Kadru over the color of Uchchaihshravas' tail; deceived, she becomes Kadru's slave until freed when Garuda fetches the amrita.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva (Astika Parva)"
+    }
+   ],
+   "ability": false
+  }
+ ],
+ "hindu_yudhishthira": [
+  {
+   "id": "hindu_yudhishthira-answer-yaksha",
+   "name": "Answer the questions of the Yaksha (Dharma)",
+   "notes": "At the lake in exile he alone answers the Yaksha's riddles correctly, reviving his fallen brothers; the Yaksha is his father Dharma in disguise.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Vana Parva (Yaksha Prashna)"
+    }
+   ],
+   "ability": false
+  },
+  {
+   "id": "hindu_yudhishthira-ascend-bodily",
+   "name": "Ascend to heaven in his mortal body with the dog",
+   "notes": "Refusing to abandon the dog that followed him, he is taken bodily into Svarga; the dog is revealed as Dharma testing him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Mahaprasthanika Parva and Svargarohana Parva"
+    }
+   ],
+   "ability": false
+  }
+ ],
+ "hindu_vishnu_varaha": [
+  {
+   "id": "hindu_vishnu_varaha-cosmic-diver",
+   "name": "Plunge to the floor of the cosmic ocean",
+   "notes": "Dives into the waters that had submerged the earth to seek the lost Bhumi.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Vishnu Purana 1.4; Bhagavata Purana 3.13"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ijaw_tamuno": [
+  {
+   "id": "ijaw_tamuno-create-all",
+   "name": "create all things, partly identified with the sky",
+   "notes": "Among the Kalabari and eastern Delta Ijaw the supreme being Tamuno (fem. Tamarau, 'Mother-Maker') is held to have made man, animals and trees, and is partly identified with the sky; lesser deities act as intermediaries to this high god.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Kalabari tribe' (Tamuno the supreme creator); Mythlok, 'Ijaw mythology'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "ijaw_tamuno-allot-teme",
+   "name": "give each person a spiritual double (teme) and appoint the destiny chosen before birth",
+   "notes": "As the creator power Tamuno/Woyengi grants each human a teme (soul/spiritual double) and ratifies the fate the unborn chooses before entering the world.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mythlok, 'Ijaw mythology' (teme and the choice of destiny); Britannica, 'Woyengi'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "inca_huallallo_carhuincho": [
+  {
+   "id": "inca_huallallo_carhuincho-fiery-flames",
+   "name": "blaze up in fiery flames that reach the sky",
+   "notes": "When besieged by Pariacaca the fire-huaca turned his body to flames towering to the heavens; Pariacaca quenched him with cataracts of rain and landslides.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Huarochirí Manuscript (ch. 8-9, the contest of Pariacaca and Huallallo Carhuincho)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "inca_huallallo_carhuincho-devour-children",
+   "name": "demand and devour human children of his subject Yunca",
+   "notes": "Lord of the Yunca before Pariacaca, he allowed each family only two children and ate one of them.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Huarochirí Manuscript (ch. 8); Godchecker, 'Huallallo'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "inca_huallallo_carhuincho-summon-amaru",
+   "name": "summon a giant two-headed serpent (amaru)",
+   "notes": "In his last defence he raised a huge two-headed snake; Pariacaca struck it with his golden staff and froze it into the stone amaru.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Huarochirí Manuscript (ch. 9, the amaru turned to stone)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "inca_mama_killa": [
+  {
+   "id": "inca_mama_killa-govern-calendar",
+   "name": "govern the lunar calendar, months and the timing of festivals",
+   "notes": "The Quechua word for month, quilla, is the word for moon; her phases set the Inca ritual and agricultural year and the reckoning of festivals.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Mama Killa'; Ancient Pages, 'Mama Quilla'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "inca_mama_killa-guard-women",
+   "name": "guard women, marriage and fertility",
+   "notes": "As consort of Inti she was patroness of women and marriage and protectress of female fertility, her cycle linked to menstruation.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ancient Pages, 'Mama Quilla, Incan Moon Goddess of Marriage and Fertility'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "inca_pariacaca": [
+  {
+   "id": "inca_pariacaca-banish-huallallo",
+   "name": "defeat, quench and banish the fire-god Huallallo Carhuincho",
+   "notes": "The structural core of the Huarochirí cycle: the storm-and-water god overwhelms the fire-and-drought huaca with rain and flood and drives him to the Anti lowlands.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Huarochirí Manuscript (ch. 8-9)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "inca_pariacaca-take-falcon",
+   "name": "take the form of a falcon (hatun-falcon)",
+   "notes": "Born of the five falcon-eggs of Condorcoto, he and his fivefold self can assume falcon shape.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Huarochirí Manuscript (ch. 5, the five eggs and falcons)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "inca_inti": [
+  {
+   "id": "inca_inti-send-first-inca",
+   "name": "send forth Manco Cápac and the first Inca to found Cuzco",
+   "notes": "As divine father of the dynasty Inti dispatches the founders with the golden staff to seek the site of his temple.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Inti'; Garcilaso de la Vega, Comentarios Reales (Lake Titicaca origin)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "inkarri": [
+  {
+   "id": "inkarri-regenerate-body",
+   "name": "regenerate his buried body upward from the severed head",
+   "notes": "The decapitated Inca king's head, buried in Cuzco, slowly grows a new body from the head down; when complete he will return and reverse the conquered order in a pachakuti.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Inkarri'; documented from Q'ero informants (Arguedas, mid-20th c.)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "insikiran": [
+  {
+   "id": "insikiran-descend-sun",
+   "name": "descend as a benevolent son of the sun (Wei)",
+   "notes": "In the Pemon/Macuxi cycle Insikiran (Inshkirung) is the benevolent brother, a child of Wei the sun and bearer of its life-principle, set against his malevolent brother Makunaima.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Macuxi' (Insikiran and Makunaima, sons of Wei); Koch-Grünberg, Vom Roroima zum Orinoco"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "inca_manco_capac": [
+  {
+   "id": "inca_manco_capac-teach-men",
+   "name": "teach men agriculture, law and the civilized arts",
+   "notes": "In the Garcilaso tradition the first Sapa Inca, sent by Inti, instructed men in farming, building and government while Mama Ocllo taught the women.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Garcilaso de la Vega, Comentarios Reales de los Incas (bk. 1)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "inuit_tekkeitsertok": [
+  {
+   "id": "inuit_tekkeitsertok-release-caribou",
+   "name": "owns the caribou herds and grants or withholds them from the hunter",
+   "notes": "As the chief of the land-game spirits in Boas's Central Eskimo / Baffin Land record, he keeps the caribou and only those he releases may be taken; offended, he withholds the herds and the hunt fails.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Franz Boas, The Central Eskimo (1888)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ipisowaahs": [
+  {
+   "id": "ipisowaahs-cross-sky-morning-star",
+   "name": "rises before the dawn as the Morning Star, herald of the Sun",
+   "notes": "Apisirahts / Iipisowaahs, son of Natosi (Sun) and Ko'komiki'somm (Moon), travels the sky as the bright morning planet preceding his father the Sun.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892), 'The Story of Poia / Scarface'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_aengus": [
+  {
+   "id": "irish_aengus-dispossess-brug",
+   "name": "wins the Brú na Bóinne forever by the riddle of 'a day and a night'",
+   "notes": "Aengus asks Elcmar (or the Dagda) for the Brug for la ocus aidche ('a day and a night'); since all time is made of days and nights, he claims it in perpetuity. Tochmarc Étaíne, Dindshenchas.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Étaíne (The Wooing of Étaín)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "irish_aengus-dream-quest-caer",
+   "name": "seeks his dream-love Caer Ibormeith and joins her as a swan",
+   "notes": "In Aislinge Óenguso (The Dream of Óengus) he wastes with love for a maiden seen in dreams, finds her among 150 swans chained in pairs at Loch Bél Dracon, and at Samain turns into a swan to be with her.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aislinge Óenguso (The Dream of Óengus)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_aife": [
+  {
+   "id": "irish_aife-warrior-champion",
+   "name": "the fiercest warrior-woman of the western world, rival of Scáthach",
+   "notes": "Called by Scáthach the hardest woman-warrior in the world; she alone Scáthach feared. Cú Chulainn overcomes her only by a ruse (crying out that her chariot-horses and charioteer have fallen over a cliff). Tochmarc Emire.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Emire (The Wooing of Emer)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_balor": [
+  {
+   "id": "irish_balor-slay-nuada",
+   "name": "slays Nuada Airgetlám in the Second Battle of Mag Tuired before Lugh fells him",
+   "notes": "Cath Maige Tuired: Balor kills King Nuada (and Macha) on the field; his death-eye is then pierced by Lugh's sling-stone so that it falls back through his own host.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cath Maige Tuired (The Second Battle of Moytura)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_boann": [
+  {
+   "id": "irish_boann-source-of-knowledge",
+   "name": "her transgression of the Well of Segais looses the river and the waters of wisdom",
+   "notes": "Metrical Dindshenchas of Boand: she walks left-handwise (tuathal) round the forbidden Well of Segais (Nechtan's well, ringed by the nine hazels of wisdom); the well rises, maims and drowns her, and pursues her to the sea as the Boyne.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Metrical Dindshenchas, 'Boand I'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_brigid": [
+  {
+   "id": "irish_brigid-patron-of-poets",
+   "name": "presides over filidecht (poetry), healing and smithwork as a triple goddess",
+   "notes": "Cormac's Glossary (Sanas Cormaic) makes Brigit a goddess worshipped by poets, with two sisters of the same name, one over leechcraft (healing) and one over smithwork — the threefold patroness of fili, leech and smith.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sanas Cormaic (Cormac's Glossary), s.v. Brigit"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_cian": [
+  {
+   "id": "irish_cian-transform-pig-fian",
+   "name": "turns himself into a pig to escape the sons of Tuireann",
+   "notes": "Oidheadh Chloinne Tuireann: pursued by Brian, Iuchar and Iucharba, Cian changes into a pig and mixes with a herd; they wound him as a pig, and he is allowed to die in human form, his blood crying out for vengeance.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Oidheadh Chloinne Tuireann (The Fate of the Children of Tuireann)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_dian_cecht": [
+  {
+   "id": "irish_dian_cecht-fashion-silver-arm",
+   "name": "fashions a working silver arm for the maimed King Nuada",
+   "notes": "After Nuada loses his hand at the First Battle of Mag Tuired, Dian Cécht makes him a silver arm with full movement of every joint and finger (later bettered by his son Miach, who grows skin and flesh over it).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cath Maige Tuired (The Second Battle of Moytura)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "irish_dian_cecht-healing-well",
+   "name": "raises the slain whole again through the Well of Sláine",
+   "notes": "He and his children Octriuil, Miach and Airmed chant spells over the well Tipra Sláine, into which the mortally wounded are cast and emerge living and whole, so the Tuatha Dé seem an inexhaustible host.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cath Maige Tuired (The Second Battle of Moytura)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_goibniu": [
+  {
+   "id": "irish_goibniu-three-blows",
+   "name": "forges a finished spear-head with three blows of the hammer",
+   "notes": "With Luchta the wright and Creidne the brazier, Goibniu re-makes the Tuatha Dé's broken weapons each night of the battle: he beats out a spear-head in three strokes so that every spear is whole by morning. Cath Maige Tuired.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cath Maige Tuired (The Second Battle of Moytura)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_lir": [
+  {
+   "id": "irish_lir-grief-of-the-swans",
+   "name": "ancestral sea-lord whose four children are bound 900 years as swans",
+   "notes": "Oidheadh Chloinne Lir: passed over for the kingship of the sídhe in favour of Bodb Derg, Lir is reconciled and given Bodb's daughter Aobh; her sons and daughter Fionnuala are cursed into swan-form by his second wife Aoife for 900 years.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Oidheadh Chloinne Lir (The Fate of the Children of Lir)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_eriu": [
+  {
+   "id": "irish_eriu-prophecy-milesians",
+   "name": "greets the invading Milesians and prophesies the land will be theirs forever",
+   "notes": "Lebor Gabála Érenn: when Ériu meets the Sons of Míl at Uisneach she foretells that the island will belong to them to the world's end, asking only that it bear her name; Amergin grants it.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Lebor Gabála Érenn (The Book of the Taking of Ireland)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_donn": [
+  {
+   "id": "irish_donn-storm-raiser",
+   "name": "raises storms and sickness from Tech Duinn against the living",
+   "notes": "In later folklore Donn Fírinne / Donn of the dead is said to ride the storm-clouds and send tempests and cattle-disease; the dead pass to his house, and seeing him portends death.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dáithí Ó hÓgáin, Myth, Legend and Romance: An Encyclopaedia of the Irish Folk Tradition (1990), s.v. Donn"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_midir": [
+  {
+   "id": "irish_midir-win-etain-fidchell",
+   "name": "wins back Étaín from King Eochaid by staking her at fidchell",
+   "notes": "Tochmarc Étaíne: Midir loses game after game to Eochaid (paying horses, cauldrons, and great works of land-clearing), then for the last stake wins a kiss and embrace of Étaín, seizes her, and the pair rise through the skylight as two swans joined by a golden chain.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Étaíne (The Wooing of Étaín)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_medb": [
+  {
+   "id": "irish_medb-confer-sovereignty",
+   "name": "confers the kingship of Connacht; no man may be king at Crúachan but her husband",
+   "notes": "As a sovereignty figure (identified with Medb Lethderg of Tara), the king rules only through union with her; she chose Ailill as a man without meanness, jealousy or fear, and is said to have been wedded to nine kings of Ireland.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Táin Bó Cúailnge (The Cattle Raid of Cooley)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "irish_medb-muster-the-host",
+   "name": "musters and commands the four provinces of Ireland in the cattle-raid",
+   "notes": "Medb is the driving will of the Táin: provoked by the pillow-talk reckoning of property, she raises the army of Connacht and its allies to seize the Donn Cúailnge from Ulster.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Táin Bó Cúailnge (The Cattle Raid of Cooley)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_scathach": [
+  {
+   "id": "irish_scathach-teach-feats",
+   "name": "teaches the warrior-feats (cless), the salmon-leap and the hero's craft of arms",
+   "notes": "On her island in Alba she trains Cú Chulainn (and Ferdiad) in the full repertoire of feats — the salmon-leap, the apple-feat, the thunder-feat, the rope-feat and the rest. Tochmarc Emire.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Emire (The Wooing of Emer)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "irish_scathach-prophecy-imbas",
+   "name": "prophesies Cú Chulainn's destiny through the imbas forosnai (the great knowledge that illumines)",
+   "notes": "Scáthach foretells in verse (the 'Verba Scáthaige') the deeds and combats that await Cú Chulainn on the Táin, and warns of his short, glorious life.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Verba Scáthaige (The Words of Scáthach)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_tailtiu": [
+  {
+   "id": "irish_tailtiu-clear-the-plain",
+   "name": "clears the wood of Cúan into the open plain of Brega, dying of the labour",
+   "notes": "Metrical Dindshenchas of Tailtiu: the Fir Bolg queen fells the great forest into arable plain; the toil kills her, and with her dying breath she asks that funeral games be held at Lughnasa in her name.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Metrical Dindshenchas, 'Tailtiu'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_fand": [
+  {
+   "id": "irish_fand-otherworld-summons",
+   "name": "summons Cú Chulainn to the Otherworld as bird-woman and lover",
+   "notes": "Serglige Con Culainn: Fand and her sister Lí Ban appear as enchanted birds linked by a silver chain; she lays Cú Chulainn low with whips in a vision, then through Lí Ban offers herself and aid in war against Labraid's enemies in Mag Mell.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Serglige Con Culainn (The Wasting-Sickness of Cú Chulainn)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_ailill": [
+  {
+   "id": "irish_ailill-pillow-talk-reckoning",
+   "name": "matches his wealth against Medb's in the pillow-talk that opens the Táin",
+   "notes": "Táin Bó Cúailnge: the comparison of their possessions finds them equal but for the bull Finnbhennach, which had quit Medb's herds for Ailill's — the lack that drives Medb to seek the Donn Cúailnge.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Táin Bó Cúailnge (The Cattle Raid of Cooley)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_conchobar": [
+  {
+   "id": "irish_conchobar-death-by-brain-ball",
+   "name": "dies when the embedded brain-ball of Mes Gegra bursts from his skull",
+   "notes": "Aided Chonchobuir: the calcified brain of Mes Gegra, slung into his head by Cet mac Mágach, stays lodged for years; he bursts it in rage on learning of Christ's crucifixion and dies, reckoned a believer.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aided Chonchobuir (The Death of Conchobar)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_sualtam": [
+  {
+   "id": "irish_sualtam-shouting-head",
+   "name": "his severed head keeps crying the war-alarm until Ulster wakes",
+   "notes": "Táin Bó Cúailnge: riding to rouse the cursed Ulstermen, Sualtam is beheaded by the rim of his own shield as his horse rears; the head, set on the shield, goes on shouting 'Men are slain, women stolen, cattle driven off!' until Cathbad heeds it.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Táin Bó Cúailnge (The Cattle Raid of Cooley)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_fergus": [
+  {
+   "id": "irish_fergus-strike-the-hills",
+   "name": "shears the tops off three hills with a single stroke of Caladbolg",
+   "notes": "Táin Bó Cúailnge: when Cú Chulainn yields to him in single combat by an earlier pact, Fergus turns aside and lops the tops from the three Máela of Meath with the great sword Caladbolg, which makes a stroke like a rainbow.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Táin Bó Cúailnge (The Cattle Raid of Cooley)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_connla": [
+  {
+   "id": "irish_connla-bound-by-geis",
+   "name": "bound by three geasa never to yield, never to refuse combat, never to tell his name",
+   "notes": "Aided Óenfhir Aífe: under his father's prohibitions Connla will not name himself even to Cú Chulainn, who is thus driven to fight and kill his own son with the Gáe Bulg before learning who he is.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aided Óenfhir Aífe (The Death of Aífe's Only Son)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "iroquois_atotarho": [
+  {
+   "id": "iroquois_atotarho-snakes-from-hair",
+   "name": "a sorcerer whose hair writhes with snakes and whose body is twisted into seven crooks",
+   "notes": "Haudenosaunee tradition: the Onondaga wizard Tadodaho is so malign that serpents grow from his hair and his body bends in seven places; he kills by thought and blocks the peace until Hayowentha combs out the snakes and Deganawida straightens his body with wampum and herbs.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Haudenosaunee oral tradition, The Great Law of Peace (Kaianerekowa)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "iroquois_deganawida": [
+  {
+   "id": "iroquois_deganawida-found-confederacy",
+   "name": "brings the Great Law of Peace and binds the Five Nations into one Confederacy",
+   "notes": "The Peacemaker carries the Kaianerekowa from nation to nation, plants the Great Tree of Peace at Onondaga, and unites the Mohawk, Oneida, Onondaga, Cayuga and Seneca under one council fire.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Haudenosaunee oral tradition, The Great Law of Peace (Kaianerekowa)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "iroquois_deganawida-condolence",
+   "name": "founds the Condolence rite, clearing grief from the mind with strings of wampum",
+   "notes": "He wipes the tears, clears the throat and unstops the ears of the grieving Hayowentha with wampum, instituting the Condolence Ceremony that still raises up new chiefs.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Haudenosaunee oral tradition, The Condolence Ceremony"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "iroquois_handsome_lake": [
+  {
+   "id": "iroquois_handsome_lake-visions",
+   "name": "receives the Gaiwiio (Good Word) from four heavenly messengers in a trance",
+   "notes": "Stricken in 1799 after years of drink, Ganyodaiyo' falls as if dead and is shown a vision by four (or three) messengers of the Creator; recovering, he preaches a code against alcohol, witchcraft, abortion and quarrelling and renews the old thanksgiving ceremonies.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Arthur C. Parker, The Code of Handsome Lake, the Seneca Prophet (1913)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "japanese_yoshiie": [
+  {
+   "id": "japanese_yoshiie-three-man-arrow",
+   "name": "Pierce three men with one arrow",
+   "notes": "Legendary archer whose drawn bow could drive a single shaft through three stacked men or three suits of armour, the deed that won him the byname Hachimantarō.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ryōjin Hishō (imayō song collection); Heike Monogatari, Yoshiie episodes"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "japanese_yoshiie-geese-omen",
+   "name": "Read the omen of the scattering geese",
+   "notes": "At the Later Three-Years War he is said to have detected an ambush in the marsh of Kuriyagawa by noticing a line of wild geese break formation, a feat of military divination attached to his cult as patron of warriors.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ōshū Gosannen Ki (Tale of the Later Three-Years War)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "japanese_yoshitsune": [
+  {
+   "id": "japanese_yoshitsune-eight-boat-leap",
+   "name": "Leap across eight boats (hassō-tobi)",
+   "notes": "At Dan-no-ura, hard pressed, he sprang from vessel to vessel across eight boats to escape the Taira warrior Noritsune, the canonical hassō-tobi.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Gikeiki (Chronicle of Yoshitsune); Heike Monogatari, Dan-no-ura"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "japanese_yoshitsune-tengu-swordsmanship",
+   "name": "Tengu-taught swordsmanship and tactics",
+   "notes": "As the boy Ushiwakamaru at Kurama-dera he was trained in the sword, tactics and magic by the tengu king Sōjōbō in the valley of Sōjōgatani.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Gikeiki (Chronicle of Yoshitsune); Noh play Kurama Tengu"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "japanese_yoshitsune-hiyodorigoe",
+   "name": "The cliff-descent at Hiyodorigoe",
+   "notes": "Led a surprise cavalry charge straight down the precipitous Hiyodori ravine to break the Taira at Ichi-no-Tani, the most celebrated of his tactical coups.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heike Monogatari, Battle of Ichi-no-Tani"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "japanese_yoshinaka": [
+  {
+   "id": "japanese_yoshinaka-kurikara-firebulls",
+   "name": "The fire-ox night attack at Kurikara",
+   "notes": "Routed the much larger Taira army at the Kurikara Pass by stampeding oxen with torches bound to their horns down the slope in a night assault.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heike Monogatari, Battle of Kurikara"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "javanese_semar": [
+  {
+   "id": "javanese_semar-kentut-weapon",
+   "name": "The all-conquering wind (kentut)",
+   "notes": "When finally roused, the lowly clown deploys his flatulence as an irresistible weapon that overcomes even the mightiest gods and demons, a comic inversion of his hidden supremacy as Sang Hyang Ismaya.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Javanese wayang kulit lakon repertoire; Semar tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ket_es": [
+  {
+   "id": "ket_es-cast-down-hosedem",
+   "name": "Cast the faithless Hosedem from heaven",
+   "notes": "As supreme sky-god Es flung his wife Hosedem out of the sky for her adultery with the Moon, sending her to dominate the cold north as the soul-devouring death-being.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "V. I. Anuchin, materials on Ket (Yenisei-Ostyak) religion; E. A. Alekseenko, Ket ethnography"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "ket_es-thunder",
+   "name": "Sender of thunder and the celestial order",
+   "notes": "Remote benign high-god of the uppermost heaven (Ket eś 'sky'), accessible chiefly to shamans, who maintains the order of the world and the heavens.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "E. J. Vajda, Siberian Landscapes in Ket Traditional Culture"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ket_hosedem": [
+  {
+   "id": "ket_hosedem-disease-cold",
+   "name": "Bringer of disease, cold and death from the north",
+   "notes": "Banished to the frozen north, the chief evil being sends sickness and misfortune and devours the souls of the dead, the antithesis of warm-south Tomam.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "V. I. Anuchin, Ket religion; E. J. Vajda, Siberian Landscapes in Ket Traditional Culture"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ket_alba": [
+  {
+   "id": "ket_alba-drive-hosedem-north",
+   "name": "Drove Hosedem northward and burned her in the Arctic",
+   "notes": "The chief Ket hero pursued the death-goddess down the Yenisei past its mouth into the frozen Arctic sea, where he destroyed her by fire.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "E. J. Vajda, Siberian Landscapes in Ket Traditional Culture"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "ket_alba-cut-yenisei",
+   "name": "Cut the channel of the Yenisei",
+   "notes": "In his pursuit Alba broke through a narrows in the hills and so fixed the course of the Yenisei river through the Ket homeland.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "E. J. Vajda, Siberian Landscapes in Ket Traditional Culture"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kartvelian_dali": [
+  {
+   "id": "kartvelian_dali-shapeshift-game",
+   "name": "Take the form of the wild herd",
+   "notes": "The huntress can appear as a white or golden ibex or other game animal, marked off from the herd by some sign, to lead or to lure hunters.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. Tuite, 'The Meaning of Dael: Symbolic and Spatial Associations of the South Caucasian Goddess of Game Animals'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kartvelian_amirani": [
+  {
+   "id": "kartvelian_amirani-fire-bringer",
+   "name": "Brought fire and metallurgy to mankind",
+   "notes": "Promethean culture-hero who defied the supreme god and gave humankind fire and the working of metals; for his hubris he was chained beneath the Caucasus.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "D. Kiziria, 'Amirani, a Georgian Folk Hero'; Georgian Amirani epic (Svan recension)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "khanty_kul_otyr": [
+  {
+   "id": "khanty_kul_otyr-loon-diver",
+   "name": "takes the form of the diving bird that brings up the first silt",
+   "term": {
+    "value": "кул",
+    "script": "Cyrl",
+    "rom": "kul"
+   },
+   "notes": "In the Ob-Ugric earth-diver cosmogony Kul-Otyr appears as the great diving bird (loon) that, at Num-Torum's command, fetches a lump of mud from beneath the primal water out of which the earth is spun.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "khanty_kul_otyr-rules-kulis",
+   "name": "rules the disease-spirits (kulis) of the lower world",
+   "notes": "As lord of the underworld he commands the kuli/khul spirits of sickness, sending illness and death up to the human world through openings in the earth; black animals are sacrificed to avert him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "khanty_kaltes_ekwa": [
+  {
+   "id": "khanty_kaltes_ekwa-rocks-cradles",
+   "name": "rocks the seven heavenly cradles to make each soul",
+   "notes": "On the golden roof of her house she rocks seven cradles seven times, fashioning the soul that is born into a new child; an extension of her role as giver of children and fixer of each lifespan.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "khanty_num_torum": [
+  {
+   "id": "khanty_num_torum-orders-diver",
+   "name": "sends the diving bird to raise the earth from the primal water",
+   "notes": "In the earth-diver cosmogony Num-Torum commands a diver (loon) to bring up silt from beneath the water; the silt spins and grows into the earth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "khasi_u_lei_shyllong": [
+  {
+   "id": "khasi_u_lei_shyllong-bumper-harvest",
+   "name": "grants prosperity and a rich harvest when propitiated at Pomblang",
+   "notes": "As the chief land-tutelary of the Khyrim (Nongkrem) state the god is propitiated by the Syiem and high priest for the prosperity, fertility and bumper harvest of the people at the annual Pomblang Nongkrem rite.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Government of Meghalaya, Nongkrem Dance (Ka Pomblang Nongkrem) cultural record"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "khasi_u_blei_nongthaw": [
+  {
+   "id": "khasi_u_blei_nongthaw-hukum",
+   "name": "governs the world through divine decree (Ka Hukum)",
+   "term": {
+    "value": "Ka Hukum",
+    "script": "Latn",
+    "rom": "Ka Hukum"
+   },
+   "notes": "In Niam Khasi the formless creator orders the cosmos and the moral lives of people through Ka Hukum Blei, the divine decree, beneath which all the lesser gods and spirits exercise their power.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "P. R. T. Gurdon, The Khasis (1907)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kiribati_na_kika": [
+  {
+   "id": "kiribati_na_kika-octopus-arms",
+   "name": "uses his eight octopus-arms to lift islands, beaches and rocks",
+   "notes": "The octopus-god raises the new land from the sea-floor with his many arms during the ordering of the world, complementing Riiki the eel who lifts the sky.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kiribati_naatibu": [
+  {
+   "id": "kiribati_naatibu-eyes-luminaries",
+   "name": "his eyes, brains and bones become sun, moon, stars and land",
+   "notes": "When the primal being is slain the sun and moon are made from his eyes, the stars from his brains, and the islands from his bones and flesh - the Gilbertese world-from-body motif.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kiribati_auriaria": [
+  {
+   "id": "kiribati_auriaria-uea-pandanus",
+   "name": "is invoked as lord (uea) of the pandanus in fructification rites",
+   "notes": "As the deity of the Karongoa clan and lord of the pandanus, Auriaria is the figure consulted in the rituals for the fruiting of the pandanus, his sacred tree.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
     }
    ],
    "ability": true
@@ -371580,6 +373515,248 @@ const MATERIAL_SWEEP = {
    ]
   }
  ],
+ "greek_hesiod_styx": [
+  {
+   "id": "greek_hesiod_styx-ewer",
+   "name": "Ewer of Styx-water for the oath",
+   "classId": "vessel",
+   "kind": "vessel",
+   "term": {
+    "value": "πρόχοος",
+    "script": "Greek",
+    "rom": "prochoos"
+   },
+   "notes": "The pitcher of the river's water that Iris fetches so a swearing god may pour it out while taking the great oath.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 775-806"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_hypnos": [
+  {
+   "id": "greek_hesiod_hypnos-poppy",
+   "name": "Poppy of sleep",
+   "classId": "relic",
+   "kind": "plant",
+   "term": {
+    "value": "μήκων",
+    "script": "Greek",
+    "rom": "mēkōn"
+   },
+   "notes": "Opium-poppy stalk borne as the giver of sleep, with a horn from which slumber is poured.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "LIMC 'Hypnos/Somnus'"
+    }
+   ]
+  },
+  {
+   "id": "greek_hesiod_hypnos-horn",
+   "name": "Horn pouring out sleep",
+   "classId": "vessel",
+   "kind": "vessel",
+   "notes": "In iconography he pours soporific slumber from a horn over the heads of gods and men.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "LIMC 'Hypnos/Somnus'"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_leto": [
+  {
+   "id": "greek_hesiod_leto-palm",
+   "name": "Date-palm of Delos",
+   "classId": "relic",
+   "kind": "plant",
+   "term": {
+    "value": "φοῖνιξ",
+    "script": "Greek",
+    "rom": "phoinix"
+   },
+   "notes": "The palm by the streams of Inopos against which she leaned in her labour with Apollo.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn to Apollo"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_rhea": [
+  {
+   "id": "greek_hesiod_rhea-swaddled-stone",
+   "name": "Swaddled stone given to Cronus",
+   "classId": "artifact",
+   "kind": "artifact",
+   "term": {
+    "value": "λίθος",
+    "script": "Greek",
+    "rom": "lithos"
+   },
+   "notes": "The stone wrapped in swaddling-clothes she gave Cronus to swallow in place of the infant Zeus; later set up as the Omphalos at Delphi.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony; Pausanias, Description of Greece (Phocis)"
+    }
+   ]
+  },
+  {
+   "id": "greek_hesiod_rhea-tympanum",
+   "name": "Tympanum (hand-drum)",
+   "classId": "instrument",
+   "kind": "instrument",
+   "term": {
+    "value": "τύμπανον",
+    "script": "Greek",
+    "rom": "tympanon"
+   },
+   "notes": "As Meter, Mother of the Gods, she rejoices in the rattle of castanets and beat of drums in her ecstatic rites.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 14 to the Mother of the Gods; Orphic Hymn to Rhea"
+    }
+   ]
+  },
+  {
+   "id": "greek_hesiod_rhea-lion-car",
+   "name": "Lion-drawn chariot",
+   "classId": "vehicle",
+   "kind": "vehicle",
+   "notes": "As Cybele/Meter she drives a holy car drawn by fierce lions.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Orphic Hymn to Rhea"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_themis": [
+  {
+   "id": "greek_hesiod_themis-scales",
+   "name": "Scales of judgement",
+   "classId": "regalia",
+   "kind": "regalia",
+   "term": {
+    "value": "ζυγόν",
+    "script": "Greek",
+    "rom": "zygon"
+   },
+   "notes": "The cult-statue at Rhamnous (c. 300 BCE) held scales in one hand and an offering-bowl in the other; the blindfold of later Justice is post-classical.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "LIMC 'Themis'; Pausanias, Description of Greece (Attica)"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_selene": [
+  {
+   "id": "greek_hesiod_selene-crescent",
+   "name": "Crescent moon",
+   "classId": "regalia",
+   "kind": "regalia",
+   "term": {
+    "value": "μήνη",
+    "script": "Greek",
+    "rom": "mēnē"
+   },
+   "notes": "Worn on the brow or rising behind the shoulders like horns, her defining emblem in art.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "LIMC 'Selene, Luna'"
+    }
+   ]
+  },
+  {
+   "id": "greek_hesiod_selene-torch",
+   "name": "Torch",
+   "classId": "tool",
+   "kind": "tool",
+   "term": {
+    "value": "δαΐς",
+    "script": "Greek",
+    "rom": "dais"
+   },
+   "notes": "Carried as bringer of light through the night.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "LIMC 'Selene, Luna'"
+    }
+   ]
+  }
+ ],
+ "greek_hesione": [
+  {
+   "id": "greek_hesione-veil",
+   "name": "Veil given as ransom for Podarces",
+   "classId": "regalia",
+   "kind": "regalia",
+   "term": {
+    "value": "κρήδεμνον",
+    "script": "Greek",
+    "rom": "krēdemnon"
+   },
+   "notes": "The veil she took from her head and gave to ransom her brother, who was thereafter called Priam ('the ransomed').",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca"
+    }
+   ]
+  }
+ ],
+ "greek_iphigenia": [
+  {
+   "id": "greek_iphigenia-xoanon",
+   "name": "Wooden image of Artemis from Tauris",
+   "classId": "artifact",
+   "kind": "artifact",
+   "term": {
+    "value": "ξόανον",
+    "script": "Greek",
+    "rom": "xoanon"
+   },
+   "notes": "The cult-statue she and Orestes carry off from the Taurians and bring to Halae and Brauron in Attica.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Iphigenia in Tauris"
+    }
+   ]
+  }
+ ],
+ "greek_ion_athens": [
+  {
+   "id": "greek_ion_athens-cradle",
+   "name": "Woven cradle of his exposure",
+   "classId": "artifact",
+   "kind": "artifact",
+   "term": {
+    "value": "ἀντίπηξ",
+    "script": "Greek",
+    "rom": "antipēx"
+   },
+   "notes": "The round basket-cradle with its swaddling clothes in which he was exposed, the chief recognition-token in Euripides' Ion.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Ion"
+    }
+   ]
+  }
+ ],
  "greek_oenomaus": [
   {
    "id": "greek_oenomaus-spear",
@@ -371990,6 +374167,524 @@ const MATERIAL_SWEEP = {
     {
      "kind": "primary",
      "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  }
+ ],
+ "hittite_tarhunna": [
+  {
+   "id": "hittite_tarhunna-thunderbolt",
+   "name": "Three-pronged thunderbolt",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hittite and Hurro-Hittite storm-god iconography (e.g. relief depictions)"
+    }
+   ]
+  },
+  {
+   "id": "hittite_tarhunna-axe",
+   "name": "Battle-axe or adze",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Anatolian storm-god reliefs"
+    }
+   ]
+  },
+  {
+   "id": "hittite_tarhunna-bull-chariot",
+   "name": "Bull-drawn chariot",
+   "classId": "vehicle",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite cult inventories and storm-god iconography"
+    }
+   ]
+  }
+ ],
+ "hittite_telipinu": [
+  {
+   "id": "hittite_telipinu-eya-tree",
+   "name": "Eya-tree (evergreen) hung with the fleece-bag of abundance",
+   "classId": "sacred-object",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Telipinu myth (CTH 324), ritual conclusion"
+    }
+   ]
+  }
+ ],
+ "hindu_vyasa": [
+  {
+   "id": "hindu_vyasa-palm-manuscript",
+   "name": "Palm-leaf manuscript (the arranged Vedas)",
+   "classId": "text",
+   "kind": "book",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Iconography of Vyasa in Hindu tradition"
+    }
+   ]
+  },
+  {
+   "id": "hindu_vyasa-deerskin-seat",
+   "name": "Sage's deerskin and rudraksha rosary",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Iconography of Vyasa in Hindu tradition"
+    }
+   ]
+  }
+ ],
+ "hindu_vishrava": [
+  {
+   "id": "hindu_vishrava-kamandalu",
+   "name": "Ascetic's water-pot (kamandalu) and staff",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Rishi iconography; Valmiki Ramayana, Uttara Kanda"
+    }
+   ]
+  }
+ ],
+ "hochunk_disease_giver": [
+  {
+   "id": "hochunk_disease_giver-war-bundle",
+   "name": "Place in the war-bundle ceremony",
+   "classId": "sacred-object",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Radin, The Winnebago Tribe (1923)"
+    }
+   ]
+  }
+ ],
+ "ijaw_woyengi": [
+  {
+   "id": "ijaw_woyengi-throne",
+   "name": "great chair and table of creation",
+   "classId": "regalia",
+   "kind": "furniture",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mythlok, 'Woyengi' (seated on a great chair at a table heaped with earth)"
+    }
+   ]
+  }
+ ],
+ "inca_inti": [
+  {
+   "id": "inca_inti-golden-rays-disc",
+   "name": "golden face-disc radiating rays and flames",
+   "classId": "regalia",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Inti'; World History Encyclopedia, 'Coricancha'"
+    }
+   ]
+  }
+ ],
+ "inca_illapa": [
+  {
+   "id": "inca_illapa-water-jar",
+   "name": "celestial water-jar of the Milky Way (struck to release rain)",
+   "classId": "vessel",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ancient Pages, 'Illapa'; Encyclopedia.com, 'Illapa' (the jar of the celestial river)"
+    }
+   ]
+  }
+ ],
+ "inca_viracocha": [
+  {
+   "id": "inca_viracocha-thunderbolts",
+   "name": "thunderbolts held in either hand (Gateway of the Sun staff-god)",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "World History Encyclopedia, 'Viracocha' (Gate of the Sun, Tiwanaku)"
+    }
+   ]
+  }
+ ],
+ "inca_pariacaca": [
+  {
+   "id": "inca_pariacaca-golden-staff",
+   "name": "golden staff (used to petrify the amaru)",
+   "classId": "regalia",
+   "kind": "staff",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Huarochirí Manuscript (ch. 9)"
+    }
+   ]
+  }
+ ],
+ "inca_manco_capac": [
+  {
+   "id": "inca_manco_capac-mascapaicha",
+   "name": "royal fringe (mascapaicha) and llautu headband of the Sapa Inca",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Mascapaicha'; Garcilaso, Comentarios Reales"
+    }
+   ]
+  }
+ ],
+ "inkarri": [
+  {
+   "id": "inkarri-severed-head",
+   "name": "the buried severed head of the Inca king (from which the body regrows)",
+   "classId": "relic",
+   "kind": "body-part",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Inkarri'"
+    }
+   ]
+  }
+ ],
+ "inca_supay": [
+  {
+   "id": "inca_supay-mine-offerings",
+   "name": "offerings of coca, alcohol and tobacco in the mine (later El Tío)",
+   "classId": "offering",
+   "kind": "substance",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Supay'; godsandmonsters.info, 'Andes Mythology' (El Tío of the mines)"
+    }
+   ]
+  }
+ ],
+ "ipisowaahs": [
+  {
+   "id": "ipisowaahs-raven-feathers",
+   "name": "the raven feathers and magpie-feather plume the Morning Star gives his son",
+   "classId": "regalia",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892), 'Scarface'"
+    }
+   ]
+  }
+ ],
+ "irish_aengus": [
+  {
+   "id": "irish_aengus-harp",
+   "name": "a harp of gold whose music draws all who hear it to follow",
+   "classId": "instrument",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Óengus"
+    }
+   ]
+  },
+  {
+   "id": "irish_aengus-sword-moralltach",
+   "name": "Moralltach, the Great Fury, the sword he lends to Diarmuid",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tóraigheacht Dhiarmada agus Ghráinne (The Pursuit of Diarmuid and Gráinne)"
+    }
+   ]
+  }
+ ],
+ "irish_balor": [
+  {
+   "id": "irish_balor-evil-eye",
+   "name": "the destroying eye, lidded and raised on its ring by four (or nine) attendants",
+   "classId": "attribute",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cath Maige Tuired (The Second Battle of Moytura)"
+    }
+   ]
+  }
+ ],
+ "irish_dian_cecht": [
+  {
+   "id": "irish_dian_cecht-silver-arm",
+   "name": "the jointed silver arm (Airgetlám) he makes for Nuada",
+   "classId": "regalia",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cath Maige Tuired (The Second Battle of Moytura)"
+    }
+   ]
+  }
+ ],
+ "irish_eriu": [
+  {
+   "id": "irish_eriu-feth-fiada-veil",
+   "name": "the cup of red liquor she presses on the kings, later poured as drunken sovereignty",
+   "classId": "vessel",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Ériu"
+    }
+   ]
+  }
+ ],
+ "irish_medb": [
+  {
+   "id": "irish_medb-pet-bird-squirrel",
+   "name": "her pet bird and pet squirrel that perch on her shoulders, killed by Cú Chulainn's slingshots",
+   "classId": "attribute",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Táin Bó Cúailnge (The Cattle Raid of Cooley)"
+    }
+   ]
+  }
+ ],
+ "iroquois_deganawida": [
+  {
+   "id": "iroquois_deganawida-tree-of-peace",
+   "name": "the Great White Pine, the Tree of Peace, planted over the buried weapons of war",
+   "classId": "regalia",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Haudenosaunee oral tradition, The Great Law of Peace (Kaianerekowa)"
+    }
+   ]
+  },
+  {
+   "id": "iroquois_deganawida-hiawatha-belt",
+   "name": "the wampum (the Hiawatha Belt) recording the union of the Five Nations",
+   "classId": "regalia",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Hiawatha Belt'"
+    }
+   ]
+  }
+ ],
+ "japanese_yoshitomo": [
+  {
+   "id": "japanese_yoshitomo-higekiri",
+   "name": "Higekiri (the Beard-Cutter)",
+   "classId": "sword",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heike Monogatari; Soga Monogatari, history of the Minamoto heirloom swords Higekiri and Hizamaru"
+    }
+   ]
+  }
+ ],
+ "japanese_yoshitsune": [
+  {
+   "id": "japanese_yoshitsune-usumidori",
+   "name": "Usumidori (renamed from Hizamaru, the Knee-Cutter)",
+   "classId": "sword",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heike Monogatari; Hizamaru sword-renaming tradition"
+    }
+   ]
+  },
+  {
+   "id": "japanese_yoshitsune-flute-usanosemi",
+   "name": "The flute Usa-no-semi",
+   "classId": "flute",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Gikeiki (Chronicle of Yoshitsune); Jōruri-hime episode"
+    }
+   ]
+  }
+ ],
+ "javanese_semar": [
+  {
+   "id": "javanese_semar-checkered-cloth",
+   "name": "Checkered hip-cloth (kain poleng)",
+   "classId": "garment",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Javanese wayang iconography of Semar / Ki Lurah Semar"
+    }
+   ]
+  }
+ ],
+ "javanese_petruk": [
+  {
+   "id": "javanese_petruk-long-nose",
+   "name": "Elongated nose and tall gangling frame",
+   "classId": "attribute",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Javanese wayang kulit puppet iconography of Petruk"
+    }
+   ]
+  }
+ ],
+ "ket_tomam": [
+  {
+   "id": "ket_tomam-down-cape",
+   "name": "Down-shedding feathered cape",
+   "classId": "garment",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "E. J. Vajda, Siberian Landscapes in Ket Traditional Culture"
+    }
+   ]
+  }
+ ],
+ "kartvelian_amirani": [
+  {
+   "id": "kartvelian_amirani-chain",
+   "name": "The unbreakable iron chain and stake",
+   "classId": "bond",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Georgian Amirani epic; D. Kiziria, 'Amirani, a Georgian Folk Hero'"
+    }
+   ]
+  }
+ ],
+ "khanty_num_torum": [
+  {
+   "id": "khanty_num_torum-golden-staff",
+   "name": "golden staff",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "V. N. Chernetsov, in Studies in Siberian Shamanism (ed. Michael, 1963)"
+    }
+   ]
+  },
+  {
+   "id": "khanty_num_torum-gold-silver-house",
+   "name": "house of gold and silver in the highest sky",
+   "classId": "dwelling",
+   "kind": "structure",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ]
+  }
+ ],
+ "khanty_kaltes_ekwa": [
+  {
+   "id": "khanty_kaltes_ekwa-golden-cradles",
+   "name": "seven golden cradles",
+   "classId": "implement",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ]
+  }
+ ],
+ "khasi_hynniew_trep": [
+  {
+   "id": "khasi_hynniew_trep-golden-ladder",
+   "name": "the golden ladder (jingkieng ksiar)",
+   "classId": "structure",
+   "kind": "structure",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "P. R. T. Gurdon, The Khasis (1907)"
+    }
+   ]
+  }
+ ],
+ "khoekhoe_heitsi_eibib": [
+  {
+   "id": "khoekhoe_heitsi_eibib-throwing-stone",
+   "name": "the thrown stone that kills Ga-gorib",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Theophilus Hahn, Tsuni-||Goam: The Supreme Being of the Khoi-Khoi (1881)"
+    }
+   ]
+  }
+ ],
+ "kikuyu_ngai": [
+  {
+   "id": "kikuyu_ngai-mount-kenya",
+   "name": "Kirinyaga (Mount Kenya), his resting place",
+   "classId": "dwelling",
+   "kind": "structure",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Jomo Kenyatta, Facing Mount Kenya (1938)"
     }
    ]
   }
@@ -374752,6 +377447,158 @@ const DOMAIN_SWEEP = {
    ]
   }
  ],
+ "greek_hesiod_phoebe": [
+  {
+   "sphereId": "moon",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hesiod, Theogony (golden-crowned Phoebe); later lunar association"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_oceanus": [
+  {
+   "sphereId": "fresh-waters",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_styx": [
+  {
+   "sphereId": "oaths",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony 775-806"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_themis": [
+  {
+   "sphereId": "prophecy",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Aeschylus, Eumenides"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_mnemosyne": [
+  {
+   "sphereId": "poetry-inspiration",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_rhea": [
+  {
+   "sphereId": "wild-nature",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 14 to the Mother of the Gods"
+    }
+   ]
+  },
+  {
+   "sphereId": "sovereignty",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ]
+  }
+ ],
+ "greek_iasion": [
+  {
+   "sphereId": "agriculture",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony; Diodorus Siculus, Library of History"
+    }
+   ]
+  }
+ ],
+ "greek_homer_tlepolemus": [
+  {
+   "sphereId": "city-founding",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Olympian 7; Homer, Iliad 2"
+    }
+   ]
+  },
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 2"
+    }
+   ]
+  }
+ ],
+ "greek_idmon": [
+  {
+   "sphereId": "prophecy",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollonius Rhodius, Argonautica 1"
+    }
+   ]
+  }
+ ],
+ "greek_hyrmine": [
+  {
+   "sphereId": "eponym-of-the-town-hyrmine",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece; Strabo, Geography"
+    }
+   ]
+  }
+ ],
+ "greek_iphigenia_helen_variant": [
+  {
+   "sphereId": "witchcraft",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Catalogue of Women (ap. Pausanias 2.22)"
+    }
+   ]
+  }
+ ],
  "greek_menelaus": [
   {
    "sphereId": "kingship-spartan",
@@ -375154,6 +378001,390 @@ const DOMAIN_SWEEP = {
     {
      "kind": "primary",
      "reference": "Valmiki Ramayana, Yuddha Kanda"
+    }
+   ]
+  }
+ ],
+ "hittite_arinna": [
+  {
+   "sphereId": "justice",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Prayer of Mursili II to the Sun-goddess of Arinna (CTH 376)"
+    }
+   ]
+  }
+ ],
+ "hittite_inara": [
+  {
+   "sphereId": "protection",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Illuyanka myth (CTH 321)"
+    }
+   ]
+  }
+ ],
+ "hittite_tarhunna": [
+  {
+   "sphereId": "sky-and-weather",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite royal prayers and treaties (CTH series)"
+    }
+   ]
+  },
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Illuyanka myth (CTH 321)"
+    }
+   ]
+  }
+ ],
+ "hittite_telipinu": [
+  {
+   "sphereId": "vegetation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Telipinu myth (CTH 324)"
+    }
+   ]
+  }
+ ],
+ "hittite_hannahanna": [
+  {
+   "sphereId": "childbirth",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite ritual texts invoking Ḫannaḫanna"
+    }
+   ]
+  }
+ ],
+ "hindu_vishrava": [
+  {
+   "sphereId": "sacred-knowledge",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Uttara Kanda"
+    }
+   ]
+  }
+ ],
+ "hindu_vyasa": [
+  {
+   "sphereId": "writing-and-knowledge",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Vishnu Purana 3.4"
+    }
+   ]
+  }
+ ],
+ "hindu_vinata": [
+  {
+   "sphereId": "dawn",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva (Astika Parva)"
+    }
+   ]
+  }
+ ],
+ "hochunk_earthmaker": [
+  {
+   "sphereId": "supreme-being",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Radin, The Winnebago Tribe (1923)"
+    }
+   ]
+  }
+ ],
+ "hochunk_hare": [
+  {
+   "sphereId": "protection",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Radin, The Winnebago Tribe (1923); Medicine Rite myths"
+    }
+   ]
+  }
+ ],
+ "huli_datagaliwabe": [
+  {
+   "sphereId": "sky",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "R. M. Glasse, Huli of Papua (1968)"
+    }
+   ]
+  }
+ ],
+ "inca_mama_killa": [
+  {
+   "sphereId": "moon",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Mama Killa'"
+    }
+   ]
+  },
+  {
+   "sphereId": "marriage",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ancient Pages, 'Mama Quilla' (patroness of marriage and women)"
+    }
+   ]
+  },
+  {
+   "sphereId": "time-and-calendar",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Mama Killa' (the lunar calendar; quilla = month)"
+    }
+   ]
+  }
+ ],
+ "inca_inti": [
+  {
+   "sphereId": "sun",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Inti'"
+    }
+   ]
+  },
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Inti' (divine ancestor of the Sapa Inca)"
+    }
+   ]
+  }
+ ],
+ "inkarri": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Inkarri'"
+    }
+   ]
+  },
+  {
+   "sphereId": "death-and-rebirth",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Inkarri' (regeneration and return)"
+    }
+   ]
+  }
+ ],
+ "insikiran": [
+  {
+   "sphereId": "creation",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Makunaima' (the brothers and the tree of life / flood)"
+    }
+   ]
+  }
+ ],
+ "inca_supay": [
+  {
+   "sphereId": "mining-and-metals",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Supay' (Lord of Metals; owner of the mountain interior)"
+    }
+   ]
+  }
+ ],
+ "inuit_tekkeitsertok": [
+  {
+   "sphereId": "hunting",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Franz Boas, The Central Eskimo (1888)"
+    }
+   ]
+  }
+ ],
+ "ipisowaahs": [
+  {
+   "sphereId": "stars",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892)"
+    }
+   ]
+  }
+ ],
+ "irish_aengus": [
+  {
+   "sphereId": "poetry",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Óengus"
+    }
+   ]
+  }
+ ],
+ "irish_donn": [
+  {
+   "sphereId": "storms",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dáithí Ó hÓgáin, Myth, Legend and Romance (1990), s.v. Donn"
+    }
+   ]
+  }
+ ],
+ "irish_lugh": [
+  {
+   "sphereId": "harvest",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Metrical Dindshenchas, 'Tailtiu' (foundation of Lughnasa)"
+    }
+   ]
+  }
+ ],
+ "japanese_yoshiie": [
+  {
+   "sphereId": "archery",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ryōjin Hishō; Mutsu Waki (Tale of Mutsu)"
+    }
+   ]
+  }
+ ],
+ "japanese_yoshitsune": [
+  {
+   "sphereId": "military-command",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heike Monogatari; Gikeiki"
+    }
+   ]
+  },
+  {
+   "sphereId": "tragic-hero",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Gikeiki; the hōgan-biiki ('sympathy for the Lieutenant') tradition"
+    }
+   ]
+  }
+ ],
+ "kalash_indr": [
+  {
+   "sphereId": "rainbow",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Witzel, 'The Religions of the Hindukush'; Kalash 'Indra's bow' (rainbow) tradition"
+    }
+   ]
+  }
+ ],
+ "khanty_kul_otyr": [
+  {
+   "sphereId": "earth-diver-creation",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ]
+  }
+ ],
+ "kiribati_na_kika": [
+  {
+   "sphereId": "creation",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
+    }
+   ]
+  }
+ ],
+ "kiribati_naatibu": [
+  {
+   "sphereId": "creation",
+   "contextTag": "mythic",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
     }
    ]
   }
@@ -378421,6 +381652,21 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
+ "garo_nostu_nopantu": [
+  {
+   "original": "Mane Pilte",
+   "rom": "Mane Pilte",
+   "gloss": "the name given to the earth she bore at Tatara-Rabuga's command",
+   "language": "Garo",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Garo Journal, 'The Garo Myth on the Creation of the Universe'"
+    }
+   ]
+  }
+ ],
  "gondi_persa_pen": [
   {
    "original": "Bara Deo",
@@ -378907,6 +382153,227 @@ const EPITHET_SWEEP = {
     {
      "kind": "primary",
      "reference": "Hesiod, Works and Days 111-120 (the golden race under Cronus)"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_theia": [
+  {
+   "original": "Εὐρυφάεσσα",
+   "rom": "Euryphaessa",
+   "gloss": "wide-shining",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 31 to Helios"
+    }
+   ]
+  },
+  {
+   "original": "Ἁλίου μᾶτερ",
+   "rom": "Haliou mater",
+   "gloss": "Mother of the Sun",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Isthmian 5"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_menoetius": [
+  {
+   "original": "ὑβριστής",
+   "rom": "hybristēs",
+   "gloss": "the insolent, violent one",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_phoebe": [
+  {
+   "original": "χρυσοστέφανος",
+   "rom": "chrysostephanos",
+   "gloss": "golden-crowned",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_leto": [
+  {
+   "original": "Κοιογένεια",
+   "rom": "Koiogeneia",
+   "gloss": "daughter of Coeus",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Callimachus, Hymn to Delos"
+    }
+   ]
+  },
+  {
+   "original": "κυανόπεπλος",
+   "rom": "kyanopeplos",
+   "gloss": "dark-robed",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_rhea": [
+  {
+   "original": "Μήτηρ θεῶν",
+   "rom": "Mētēr theōn",
+   "gloss": "Mother of the Gods",
+   "language": "Greek",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn 14; Orphic Hymn to Rhea"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_themis": [
+  {
+   "original": "εὔβουλος",
+   "rom": "euboulos",
+   "gloss": "of good counsel",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Olympian 13; Pindar, fr. 30"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_styx": [
+  {
+   "original": "μέγας ὅρκος θεῶν",
+   "rom": "megas horkos theōn",
+   "gloss": "the great oath of the gods",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_uranus": [
+  {
+   "original": "ἀστερόεις",
+   "rom": "asteroeis",
+   "gloss": "starry",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Theogony"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_oceanus": [
+  {
+   "original": "θεῶν γένεσις",
+   "rom": "theōn genesis",
+   "gloss": "origin of the gods",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 14"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_hypnos": [
+  {
+   "original": "ἄναξ πάντων",
+   "rom": "anax pantōn",
+   "gloss": "lord of all (gods and men)",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 14"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_selene": [
+  {
+   "original": "Μήνη",
+   "rom": "Mēnē",
+   "gloss": "the Moon",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar; cf. Homeric Hymn 32"
+    }
+   ]
+  }
+ ],
+ "greek_hicetaon": [
+  {
+   "original": "ὄζος Ἄρηος",
+   "rom": "ozos Arēos",
+   "gloss": "scion of Ares",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homer, Iliad 20"
+    }
+   ]
+  }
+ ],
+ "greek_iphigenia_helen_variant": [
+  {
+   "original": "Ἑκάτη",
+   "rom": "Hekatē",
+   "gloss": "identified with Hecate after Aulis",
+   "language": "Greek",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hesiod, Catalogue of Women (ap. Pausanias 2.22)"
     }
    ]
   }
@@ -379707,6 +383174,848 @@ const EPITHET_SWEEP = {
     {
      "kind": "primary",
      "reference": "Bhagavata Purana, Book 10"
+    }
+   ]
+  }
+ ],
+ "hittite_arinna": [
+  {
+   "original": "dUTU URUArinna",
+   "rom": "Sun-goddess of the city Arinna",
+   "gloss": "the Sun-goddess of Arinna",
+   "language": "Hittite",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite royal prayers (CTH 376)"
+    }
+   ]
+  },
+  {
+   "original": "Wurušemu",
+   "rom": "Wurusemu",
+   "gloss": "Hattic name of the goddess",
+   "language": "Hattic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hattic-Hittite cult tradition"
+    }
+   ]
+  },
+  {
+   "original": "Arinnitti",
+   "rom": "Arinitti",
+   "gloss": "the Arinnian",
+   "language": "Hittite",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hittite cult texts"
+    }
+   ]
+  },
+  {
+   "original": "Queen of Heaven and Earth",
+   "rom": "Queen of Heaven and Earth",
+   "gloss": "royal title of the goddess",
+   "language": "Hittite",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Prayer of Mursili II (CTH 376)"
+    }
+   ]
+  }
+ ],
+ "hittite_tarhunna": [
+  {
+   "original": "Lord of the Land of Hatti",
+   "rom": "Lord of Hatti",
+   "gloss": "national title of the Storm-god",
+   "language": "Hittite",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite state treaties (CTH series)"
+    }
+   ]
+  },
+  {
+   "original": "Storm-god of Heaven",
+   "rom": "Weather-god of Heaven",
+   "gloss": "celestial weather-god",
+   "language": "Hittite",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite royal prayers (CTH series)"
+    }
+   ]
+  }
+ ],
+ "hittite_hannahanna": [
+  {
+   "original": "Ḫannaḫanna",
+   "rom": "Hannahanna",
+   "gloss": "Grandmother",
+   "language": "Hittite",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hittite (Hattic) onomastics"
+    }
+   ]
+  }
+ ],
+ "hittite_zintuhi": [
+  {
+   "original": "Zintuḫi",
+   "rom": "Zintuhi",
+   "gloss": "the Granddaughter",
+   "language": "Hattic",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hattic-Hittite onomastics"
+    }
+   ]
+  }
+ ],
+ "hittite_tudhaliya_iv": [
+  {
+   "original": "dUTU-ŠI",
+   "rom": "dUTU-ŠI",
+   "gloss": "My Sun (royal title of the Hittite Great King)",
+   "language": "Hittite",
+   "contextTag": "throne",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite royal correspondence and titulary"
+    }
+   ]
+  }
+ ],
+ "hittite_suppiluliuma_ii": [
+  {
+   "original": "dUTU-ŠI",
+   "rom": "dUTU-ŠI",
+   "gloss": "My Sun (royal title of the Hittite Great King)",
+   "language": "Hittite",
+   "contextTag": "throne",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Südburg hieroglyphic inscription; Hittite royal titulary"
+    }
+   ]
+  }
+ ],
+ "hindu_vyasa": [
+  {
+   "original": "वेदव्यास",
+   "rom": "Vedavyāsa",
+   "gloss": "arranger of the Vedas",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Vishnu Purana 3.4"
+    }
+   ]
+  },
+  {
+   "original": "कृष्णद्वैपायन",
+   "rom": "Kṛṣṇadvaipāyana",
+   "gloss": "the dark one born on an island",
+   "language": "Sanskrit",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  },
+  {
+   "original": "बादरायण",
+   "rom": "Bādarāyaṇa",
+   "gloss": "he of the jujube (badara) island; author of the Brahma Sutras",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Brahma Sutras tradition"
+    }
+   ]
+  }
+ ],
+ "hindu_vishwakarma": [
+  {
+   "original": "देवशिल्पिन्",
+   "rom": "Devaśilpin",
+   "gloss": "craftsman of the gods",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Puranic Vishvakarma tradition"
+    }
+   ]
+  }
+ ],
+ "hochunk_earthmaker": [
+  {
+   "original": "Mą'ųna",
+   "rom": "Ma'una",
+   "gloss": "Earth-maker",
+   "language": "Ho-Chunk",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Radin, The Winnebago Tribe (1923)"
+    }
+   ]
+  }
+ ],
+ "hochunk_hare": [
+  {
+   "original": "Wašjįgega",
+   "rom": "Wasjingega",
+   "gloss": "the Hare",
+   "language": "Ho-Chunk",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Radin, The Winnebago Tribe (1923)"
+    }
+   ]
+  }
+ ],
+ "hochunk_trickster": [
+  {
+   "original": "Wakdjąkaga",
+   "rom": "Wakdjunkaga",
+   "gloss": "the tricky one",
+   "language": "Ho-Chunk",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Radin, The Trickster (1956)"
+    }
+   ]
+  }
+ ],
+ "ijaw_tamuno": [
+  {
+   "original": "Tamarau",
+   "rom": "Tamarau",
+   "gloss": "the Mother-Maker; feminine form of the creator",
+   "language": "Ijaw",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mythlok, 'Ijaw mythology'; Grokipedia, 'Kalabari tribe'"
+    }
+   ]
+  }
+ ],
+ "inca_inti": [
+  {
+   "original": "Apu Inti",
+   "rom": "Apu Inti",
+   "gloss": "Supreme / Lord Inti (the first solar aspect)",
+   "language": "Quechua",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Inti'; Wikipedia, 'Inti'"
+    }
+   ]
+  },
+  {
+   "original": "Apu Punchau",
+   "rom": "Apu Punchau",
+   "gloss": "Lord of Daylight / the Day-Sun; the boy-image of Inti at the Coricancha",
+   "language": "Quechua",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Inti' (Apu-punchau); Wikipedia, 'Inti'"
+    }
+   ]
+  }
+ ],
+ "inca_viracocha": [
+  {
+   "original": "Apu Qun Tiqsi Wiraqucha",
+   "rom": "Apu Qun Tiqsi Wiraqucha",
+   "gloss": "Lord Foundation-Origin Viracocha; his full ceremonial title",
+   "language": "Quechua",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "World History Encyclopedia, 'Viracocha'; Wikipedia, 'Viracocha'"
+    }
+   ]
+  }
+ ],
+ "inca_supay": [
+  {
+   "original": "El Tío",
+   "rom": "El Tio",
+   "gloss": "'The Uncle'; the surviving mine-spirit and owner of the underground",
+   "language": "Spanish",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Supay'; godsandmonsters.info, 'Andes Mythology'"
+    }
+   ]
+  }
+ ],
+ "ijaw_ogboinba": [
+  {
+   "original": "the eyes that look back",
+   "rom": "the eyes that look back",
+   "gloss": "she who, trapped in the pupil, looks back from every human eye",
+   "language": "Ijaw",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Ogboinba'"
+    }
+   ]
+  }
+ ],
+ "irish_aengus": [
+  {
+   "original": "Óengus Óc",
+   "rom": "Oengus Oc",
+   "gloss": "Aengus the Young",
+   "language": "Old Irish",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Étaíne"
+    }
+   ]
+  },
+  {
+   "original": "in Mac Óc",
+   "rom": "in Mac Oc",
+   "gloss": "the Young Son / Young Lad",
+   "language": "Old Irish",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Étaíne"
+    }
+   ]
+  }
+ ],
+ "irish_balor": [
+  {
+   "original": "Balor Béimnech",
+   "rom": "Balor Beimnech",
+   "gloss": "Balor the Smiter",
+   "language": "Old Irish",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cath Maige Tuired"
+    }
+   ]
+  },
+  {
+   "original": "Balor Birugderc",
+   "rom": "Balor Birugderc",
+   "gloss": "Balor of the Piercing / Evil Eye",
+   "language": "Old Irish",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cath Maige Tuired"
+    }
+   ]
+  }
+ ],
+ "irish_goibniu": [
+  {
+   "original": "Gobban Saer",
+   "rom": "Goban Saer",
+   "gloss": "Gobán the Wright (folk-survival as master builder)",
+   "language": "Irish",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Goibniu / Gobán Saer"
+    }
+   ]
+  }
+ ],
+ "irish_dian_cecht": [
+  {
+   "original": "líaig",
+   "rom": "liaig",
+   "gloss": "the Leech / Physician (of the Tuath Dé)",
+   "language": "Old Irish",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cath Maige Tuired"
+    }
+   ]
+  }
+ ],
+ "irish_donn": [
+  {
+   "original": "Donn Fírinne",
+   "rom": "Donn Firinne",
+   "gloss": "Donn of (the hill) Knockfierna, lord of the dead in Munster folklore",
+   "language": "Irish",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dáithí Ó hÓgáin, Myth, Legend and Romance (1990), s.v. Donn"
+    }
+   ]
+  }
+ ],
+ "irish_lir": [
+  {
+   "original": "Lir",
+   "rom": "Lir",
+   "gloss": "the Sea (genitive Lir, 'of the sea'); the form Ler underlies Manannán mac Lir",
+   "language": "Old Irish",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Ler / Lir"
+    }
+   ]
+  }
+ ],
+ "irish_medb": [
+  {
+   "original": "Medb",
+   "rom": "Medb",
+   "gloss": "She Who Intoxicates (cognate with 'mead')",
+   "language": "Old Irish",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Medb"
+    }
+   ]
+  },
+  {
+   "original": "Medb Lethderg",
+   "rom": "Medb Lethderg",
+   "gloss": "Medb of the Red Side, sovereignty goddess of Tara",
+   "language": "Old Irish",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Medb Lethderg"
+    }
+   ]
+  }
+ ],
+ "irish_midir": [
+  {
+   "original": "Midir Brí Léith",
+   "rom": "Midir Bri Leith",
+   "gloss": "Midir of Brí Léith (his sídh-mound, Ardagh Hill)",
+   "language": "Old Irish",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Étaíne"
+    }
+   ]
+  }
+ ],
+ "irish_eriu": [
+  {
+   "original": "Ériu",
+   "rom": "Eriu",
+   "gloss": "Ireland (her name is the eponym of Éire/Erin)",
+   "language": "Old Irish",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Lebor Gabála Érenn"
+    }
+   ]
+  }
+ ],
+ "irish_scathach": [
+  {
+   "original": "Scáthach",
+   "rom": "Scathach",
+   "gloss": "the Shadowy One / She Who Casts a Shadow",
+   "language": "Old Irish",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Scáthach"
+    }
+   ]
+  },
+  {
+   "original": "Scáthach Búanand",
+   "rom": "Scathach Buanand",
+   "gloss": "Scáthach the Victorious / the Lasting (war-instructress byname)",
+   "language": "Old Irish",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Emire"
+    }
+   ]
+  }
+ ],
+ "irish_aife": [
+  {
+   "original": "Aífe",
+   "rom": "Aife",
+   "gloss": "Aífe, daughter of Árd-Greimne (the warrior-woman of Alba)",
+   "language": "Old Irish",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Emire"
+    }
+   ]
+  }
+ ],
+ "iroquois_atotarho": [
+  {
+   "original": "Tadodaho",
+   "rom": "Tadodaho",
+   "gloss": "title since borne by the presiding firekeeper-sachem of the Confederacy at Onondaga",
+   "language": "Onondaga",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tadodaho'"
+    }
+   ]
+  }
+ ],
+ "iroquois_deganawida": [
+  {
+   "original": "the Peacemaker",
+   "rom": "the Peacemaker",
+   "gloss": "title used in place of his name, held too sacred to speak in many communities",
+   "language": "English (Haudenosaunee usage)",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Deganawida'"
+    }
+   ]
+  }
+ ],
+ "iroquois_handsome_lake": [
+  {
+   "original": "Ganyodaiyo'",
+   "rom": "Ganyodaiyo",
+   "gloss": "Handsome Lake / Large Beautiful Lake (a hereditary Seneca sachem name)",
+   "language": "Seneca",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Handsome Lake'"
+    }
+   ]
+  }
+ ],
+ "iroquois_cornplanter": [
+  {
+   "original": "Gaiänt'wakê",
+   "rom": "Gaiantwake",
+   "gloss": "Cornplanter / 'By What One Plants' (Seneca name)",
+   "language": "Seneca",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Cornplanter'"
+    }
+   ]
+  }
+ ],
+ "japanese_yoshiie": [
+  {
+   "original": "八幡太郎",
+   "rom": "Hachimantarō",
+   "gloss": "First-Born Son of Hachiman",
+   "language": "Japanese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heike Monogatari; named at his genpuku at Iwashimizu Hachimangū"
+    }
+   ]
+  }
+ ],
+ "japanese_yoshitsune": [
+  {
+   "original": "牛若丸",
+   "rom": "Ushiwakamaru",
+   "gloss": "Young Ox-Boy (his childhood name)",
+   "language": "Japanese",
+   "contextTag": "personal",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Gikeiki (Chronicle of Yoshitsune)"
+    }
+   ]
+  },
+  {
+   "original": "九郎判官",
+   "rom": "Kurō Hōgan",
+   "gloss": "Ninth Son, the Lieutenant",
+   "language": "Japanese",
+   "contextTag": "office",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heike Monogatari; from his court rank of Hōgan / kebiishi"
+    }
+   ]
+  }
+ ],
+ "japanese_yoshinaka": [
+  {
+   "original": "旭将軍",
+   "rom": "Asahi Shōgun",
+   "gloss": "The Rising-Sun (Morning) General",
+   "language": "Japanese",
+   "contextTag": "office",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heike Monogatari, Kiso Yoshinaka episodes"
+    }
+   ]
+  },
+  {
+   "original": "木曾義仲",
+   "rom": "Kiso Yoshinaka",
+   "gloss": "Yoshinaka of Kiso (from the valley where he was raised)",
+   "language": "Japanese",
+   "contextTag": "toponym",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Heike Monogatari"
+    }
+   ]
+  }
+ ],
+ "javanese_semar": [
+  {
+   "original": "ꦏꦾꦲꦶꦭꦸꦫꦃꦱꦼꦩꦂ",
+   "rom": "Kyai Lurah Semar",
+   "gloss": "The Venerable Chief Semar",
+   "language": "Javanese",
+   "contextTag": "honorific",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Javanese wayang tradition; honorific of Semar"
+    }
+   ]
+  }
+ ],
+ "kartvelian_ghmerti": [
+  {
+   "original": "მორიგე ღმერთი",
+   "rom": "Morige Ghmerti",
+   "gloss": "God the Director / the Ruling God",
+   "language": "Georgian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. Tuite, studies of NE Georgian highland religion; Georgian creation traditions"
+    }
+   ]
+  }
+ ],
+ "kalash_balumain": [
+  {
+   "original": "Balumain",
+   "rom": "Balimain",
+   "gloss": "the Chaumos visitor-hero, a form of Indra",
+   "language": "Kalasha",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Witzel, 'The Religions of the Hindukush'"
+    }
+   ]
+  }
+ ],
+ "khanty_kaltes_ekwa": [
+  {
+   "original": "Kaltaś-aŋki",
+   "rom": "Kaltas-anki",
+   "gloss": "Kaltas the mother",
+   "language": "Khanty",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ]
+  }
+ ],
+ "khanty_num_torum": [
+  {
+   "original": "Num Turem Aśi",
+   "rom": "Num Turem Asi",
+   "gloss": "Upper Sky Father",
+   "language": "Khanty",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ]
+  }
+ ],
+ "khanty_postajankt_iki": [
+  {
+   "original": "Sorńi-iki",
+   "rom": "Sorni-iki",
+   "gloss": "the golden old man",
+   "language": "Khanty",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ]
+  },
+  {
+   "original": "Postajankt-iki",
+   "rom": "Postajankt-iki",
+   "gloss": "the fast old man",
+   "language": "Khanty",
+   "contextTag": "general",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ]
+  }
+ ],
+ "khanty_mir_susne_khum": [
+  {
+   "original": "Mĭr šawijti xŭ",
+   "rom": "Mir-shawijti-khu",
+   "gloss": "the man who watches over the world",
+   "language": "Khanty",
+   "contextTag": "general",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+    }
+   ]
+  }
+ ],
+ "kikuyu_ngai": [
+  {
+   "original": "Mwene-Nyaga",
+   "rom": "Mwene-Nyaga",
+   "gloss": "Owner of Brightness / Possessor of the Dazzling Light",
+   "language": "Gikuyu",
+   "contextTag": "general",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Jomo Kenyatta, Facing Mount Kenya (1938)"
+    }
+   ]
+  }
+ ],
+ "khoekhoe_tsui_goab": [
+  {
+   "original": "Tsui-||Goab",
+   "rom": "Tsui-Goab",
+   "gloss": "sore/wounded knee",
+   "language": "Khoekhoe (Nama)",
+   "contextTag": "general",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Theophilus Hahn, Tsuni-||Goam: The Supreme Being of the Khoi-Khoi (1881)"
+    }
+   ]
+  }
+ ],
+ "kirati_yuma_sammang": [
+  {
+   "original": "Yuma",
+   "rom": "Yuma",
+   "gloss": "grandmother / ancestral mother",
+   "language": "Limbu",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "R. K. Sprigg and J. R. Subba, on Limbu (Yakthung) Yuma tradition"
     }
    ]
   }
@@ -382877,6 +387186,299 @@ const CULT_SWEEP = {
    ]
   }
  ],
+ "greek_hesiod_nyx": [
+  {
+   "name": "Oracle of Night at Megara",
+   "term": {
+    "value": "μαντεῖον Νυκτός",
+    "script": "Greek",
+    "rom": "manteion Nyktos"
+   },
+   "type": "oracle",
+   "cadence": "consulted",
+   "notes": "On the Megarian acropolis (Karia) Pausanias records an oracle of Night, beside sanctuaries of Dionysos Nyktelios and Aphrodite Epistrophia.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece (Megara)"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_hypnos": [
+  {
+   "name": "Sanctuary of Sleep with the Muses at Troezen",
+   "type": "temple",
+   "cadence": "local",
+   "notes": "At Troezen Hypnos was honoured together with the Muses; Pausanias also notes a statue of Sleep in an Asclepian healing context.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece (Troezen)"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_leto": [
+  {
+   "name": "Cult of Leto on Delos",
+   "term": {
+    "value": "Δῆλος",
+    "script": "Greek",
+    "rom": "Dēlos"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "At her birth-sanctuary on Delos Leto was honoured with Apollo and Artemis in choral and athletic contests.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Homeric Hymn to Apollo"
+    }
+   ]
+  },
+  {
+   "name": "Cult of Leto Phytie at Phaistos (Ekdysia)",
+   "term": {
+    "value": "Ἐκδύσια",
+    "script": "Greek",
+    "rom": "Ekdysia"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "At Phaistos in Crete Leto Phytie ('the Grafter') was honoured at the Ekdysia ('the Stripping'), commemorating the change of Leukippos from maid to youth.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Antoninus Liberalis, Metamorphoses"
+    }
+   ]
+  },
+  {
+   "name": "The Letoon of Lycia",
+   "type": "temple",
+   "cadence": "federal",
+   "notes": "Near Xanthos the Letoon was the federal sanctuary of the Lycians, where Leto was effectively the national tutelary goddess.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Antoninus Liberalis, Metamorphoses"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_mnemosyne": [
+  {
+   "name": "Spring of Mnemosyne at the oracle of Trophonios",
+   "term": {
+    "value": "Μνημοσύνη",
+    "script": "Greek",
+    "rom": "Mnēmosynē"
+   },
+   "type": "oracle",
+   "cadence": "consulted",
+   "notes": "At Lebadeia the inquirer drank from Lethe to forget former cares, then from the spring of Mnemosyne to remember the vision, and was seated on the chair of Memory to recount it.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece (Boeotia)"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_rhea": [
+  {
+   "name": "Cretan cult of the infant Zeus with the Kouretes",
+   "type": "cult",
+   "cadence": "local",
+   "notes": "On Crete (Mt Ida/Dikte) the armed Kouretes clashed shields to drown the cries of the hidden infant Zeus; Rhea's worship there merged with the Phrygian Meter/Cybele cult of drums, flutes and lions.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca; Homeric Hymn 14"
+    }
+   ]
+  }
+ ],
+ "greek_hesiod_themis": [
+  {
+   "name": "Cult of Themis at Rhamnous beside Nemesis",
+   "type": "temple",
+   "cadence": "local",
+   "notes": "At Rhamnous in Attica Themis was worshipped beside Nemesis; a dedication by Megakles and a cult-statue (c. 300 BCE) survive. Pausanias also records an altar of Themis at Olympia and a sanctuary at Thebes.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece (Attica; Boeotia)"
+    }
+   ]
+  }
+ ],
+ "greek_hyacinthus": [
+  {
+   "name": "The Hyacinthia at Amyclae",
+   "term": {
+    "value": "Ὑακίνθια",
+    "script": "Greek",
+    "rom": "Hyakinthia"
+   },
+   "type": "festival",
+   "cadence": "annual (month Hyakinthios, three days)",
+   "notes": "The second great Spartan festival, turning from mourning for Hyacinthus to rejoicing for Apollo; his tomb-altar lay beneath the colossal Throne of Apollo at the Amyclaeum, with offerings made through a bronze door.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece (Laconia)"
+    }
+   ]
+  }
+ ],
+ "greek_hippodamia": [
+  {
+   "name": "Sacrifices to Hippodamia in the Hippodameion at Olympia",
+   "term": {
+    "value": "Ἱπποδάμειον",
+    "script": "Greek",
+    "rom": "Hippodameion"
+   },
+   "type": "sacrifice",
+   "cadence": "annual (women only)",
+   "notes": "A walled precinct in the Altis which women entered once a year to sacrifice to Hippodamia; her bones were said to have been brought to Olympia by oracle. She also founded the Heraia maidens' footrace in gratitude to Hera.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece (Elis)"
+    }
+   ]
+  }
+ ],
+ "greek_hilaeira": [
+  {
+   "name": "Sanctuary of Hilaeira and Phoebe at Sparta",
+   "type": "temple",
+   "cadence": "local",
+   "notes": "The Leucippides Hilaeira and Phoebe shared a Spartan sanctuary served by maiden priestesses themselves called the Leukippides; a priestess once renewed the face of one cult-image but was warned in a dream not to touch the other.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece (Laconia)"
+    }
+   ]
+  }
+ ],
+ "greek_homer_tlepolemus": [
+  {
+   "name": "Hero-cult and games of Tlepolemus at Rhodes",
+   "type": "festival",
+   "cadence": "recurring",
+   "notes": "At Rhodes Tlepolemus received hero-honours with processions and burnt sacrifices of flocks and athletic games, the contests at which Diagoras of Rhodes won.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Olympian 7"
+    }
+   ]
+  }
+ ],
+ "greek_idmon": [
+  {
+   "name": "Hero-cult of Idmon at Heraclea Pontica",
+   "type": "cult",
+   "cadence": "local",
+   "notes": "Slain by a boar in Mariandynian land, Idmon was buried there; the Delphic oracle later bade the colonists of Heraclea Pontica build their city around his tomb and worship him as guardian hero.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollonius Rhodius, Argonautica 2"
+    }
+   ]
+  }
+ ],
+ "greek_iamus": [
+  {
+   "name": "Hereditary mantic priesthood of the Iamidai at Olympia",
+   "term": {
+    "value": "Ἰαμίδαι",
+    "script": "Greek",
+    "rom": "Iamidai"
+   },
+   "type": "priesthood",
+   "cadence": "perpetual",
+   "notes": "Iamus' descendants, the Iamidai, were the hereditary seers officiating at the great altar of Zeus at Olympia (and elsewhere, e.g. Sparta) into historical times.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pindar, Olympian 6"
+    }
+   ]
+  }
+ ],
+ "greek_iphigenia": [
+  {
+   "name": "Cult of Iphigenia at Brauron and Halae (Artemis Tauropolos/Brauronia)",
+   "term": {
+    "value": "Βραυρωνία",
+    "script": "Greek",
+    "rom": "Braurōnia"
+   },
+   "type": "cult",
+   "cadence": "recurring",
+   "notes": "At Brauron she was honoured in the sanctuary of Artemis (offerings of the clothes of women who died in childbirth dedicated to her); at Halae Araphenides the cult of Artemis Tauropolos kept a token blood-rite recalling Taurian sacrifice. Megara also claimed her tomb.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Euripides, Iphigenia in Tauris; Pausanias, Description of Greece (Attica)"
+    }
+   ]
+  }
+ ],
+ "greek_iasion": [
+  {
+   "name": "The Samothracian Mysteries of the Great Gods",
+   "term": {
+    "value": "Σαμοθρᾴκια",
+    "script": "Greek",
+    "rom": "Samothraikia"
+   },
+   "type": "mystery",
+   "cadence": "recurring",
+   "notes": "Iasion figures as founder within the Mysteries of the Great Gods (Cabeiri) of Samothrace, which he was first to open to strangers.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Diodorus Siculus, Library of History"
+    }
+   ]
+  }
+ ],
+ "greek_io": [
+  {
+   "name": "Identification with Isis in Egypt",
+   "type": "cult",
+   "cadence": "-",
+   "notes": "In Egypt Io was identified with the cow-formed goddess Isis, and her son Epaphus with the bull Apis; the Ionian Sea and the Bosporus ('ox-ford') were named from her wanderings.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Apollodorus, Bibliotheca 2.1; Aeschylus, Prometheus Bound"
+    }
+   ]
+  }
+ ],
+ "greek_ion_athens": [
+  {
+   "name": "Hero-tomb of Ion at Potamoi in Attica",
+   "type": "cult",
+   "cadence": "local",
+   "notes": "Ion died in Attica and his tomb stood in the deme of Potamoi; he was honoured as eponymous ancestor of the Ionians.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Pausanias, Description of Greece (Attica)"
+    }
+   ]
+  }
+ ],
  "greek_menelaus": [
   {
    "name": "Hero-cult of Menelaus at the Menelaion, Therapne",
@@ -383595,6 +388197,840 @@ const CULT_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Veerabhadra Temple, Lepakshi; Jatayu Earth's Center, Kerala"
+    }
+   ]
+  }
+ ],
+ "hittite_arinna": [
+  {
+   "name": "State cult of the Sun-goddess at Arinna",
+   "term": {
+    "value": "dUTU URUArinna",
+    "script": "Cuneiform",
+    "rom": "Sun-goddess of Arinna"
+   },
+   "type": "temple",
+   "cadence": "continual",
+   "notes": "Principal state deity whose temple at the holy city Arinna received royal offerings; the king and queen served as her chief priest and priestess and she was given the spoils of victory.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite cult inventories and royal prayers (CTH 376)"
+    }
+   ]
+  }
+ ],
+ "hittite_tarhunna": [
+  {
+   "name": "Purulli new-year festival",
+   "term": {
+    "value": "purulli",
+    "script": "Cuneiform",
+    "rom": "purulli"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Spring new-year festival celebrating the Storm-god's victory over Illuyanka, at which the dragon-slaying myth was recited to renew the land's fertility.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Illuyanka myth (CTH 321)"
+    }
+   ],
+   "ability": false
+  }
+ ],
+ "hittite_telipinu": [
+  {
+   "name": "Disappearing-god appeasement ritual",
+   "type": "ritual",
+   "cadence": "as-needed",
+   "notes": "Mugawar ritual of soothing: honey, fine oil, and libations with incantations to draw the angry god back and restore fertility; honored with a great festival at Hanhana and Kasha.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Telipinu myth and ritual (CTH 324)"
+    }
+   ]
+  }
+ ],
+ "hittite_hannahanna": [
+  {
+   "name": "Invocation in birth and disappearing-god rituals",
+   "type": "ritual",
+   "cadence": "as-needed",
+   "notes": "Invoked in domestic ritual texts for childbirth and infant protection and in the mugawar rites to send the bee after the vanished deity.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite ritual texts (CTH 334)"
+    }
+   ]
+  }
+ ],
+ "hittite_mezzulla": [
+  {
+   "name": "Worship in the Arinna triad",
+   "type": "temple",
+   "cadence": "continual",
+   "notes": "Worshipped beside her mother in a dedicated temple at Arinna (second in importance after the Sun-goddess's), receiving libations and bread offerings at the monthly festival.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite cult of Arinna (CTH series)"
+    }
+   ]
+  }
+ ],
+ "hindu_vishnu_narasimha": [
+  {
+   "name": "Narasimha Jayanti",
+   "term": {
+    "value": "नृसिंह जयन्ती",
+    "script": "Devanagari",
+    "rom": "Nṛsiṃha Jayantī"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Celebrated on Vaishakha shukla chaturdashi (April–May), marking the deity's appearance at twilight; performed as Bhagavata Mela dance-drama in Tamil Nadu and centered on the nine-fold shrine complex of Ahobilam.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Narasimha Jayanti and Ahobilam temple tradition"
+    }
+   ]
+  }
+ ],
+ "hindu_vishwakarma": [
+  {
+   "name": "Vishvakarma Puja",
+   "term": {
+    "value": "विश्वकर्मा पूजा",
+    "script": "Devanagari",
+    "rom": "Viśvakarmā Pūjā"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Worship of the divine craftsman (mid-September), in which artisans, engineers, and workers venerate their tools and machinery.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Vishvakarma Puja tradition"
+    }
+   ]
+  }
+ ],
+ "hindu_yama": [
+  {
+   "name": "Yama Dwitiya (Bhai Dooj)",
+   "term": {
+    "value": "यम द्वितीया",
+    "script": "Devanagari",
+    "rom": "Yama Dvitīyā"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "On the second day after Diwali, sisters honor brothers and offer arghya and lamps to Yama to avert untimely death (apamrityu); tarpana is offered to him with his fourteen names.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yama Dwitiya / Bhai Dooj observance"
+    }
+   ]
+  }
+ ],
+ "hindu_vyasa": [
+  {
+   "name": "Guru Purnima (Vyasa Purnima)",
+   "term": {
+    "value": "व्यास पूर्णिमा",
+    "script": "Devanagari",
+    "rom": "Vyāsa Pūrṇimā"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "The full-moon of Ashadha is observed as Guru Purnima honoring Vyasa as the adi-guru and compiler of the Vedas.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Guru Purnima / Vyasa Purnima tradition"
+    }
+   ]
+  }
+ ],
+ "hochunk_disease_giver": [
+  {
+   "name": "Offerings in the war-bundle ceremony",
+   "type": "offering",
+   "cadence": "seasonal",
+   "notes": "Honored among the great spirits of the war-bundle feast alongside Earthmaker, the Thunderbirds, and the Night Spirits; dogs were sacrificed to him as messengers in time of need.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Radin, The Winnebago Tribe (1923)"
+    }
+   ]
+  }
+ ],
+ "hochunk_hare": [
+  {
+   "name": "The Medicine Rite (Medicine Lodge)",
+   "type": "ritual",
+   "cadence": "seasonal",
+   "notes": "Founder-hero of the Ho-Chunk Medicine Rite, the secret society and rebirth ceremony whose foundation myth recounts his works and his Grandmother's ordaining of death.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Radin, The Road of Life and Death (1945)"
+    }
+   ]
+  }
+ ],
+ "ijaw_woyengi": [
+  {
+   "name": "Invocation of the Great Mother for fertility and destiny",
+   "type": "offering",
+   "cadence": "as petition, especially for children and at birth",
+   "notes": "The supreme creatress is appealed to for children and for the destiny chosen before birth; petitioners (as in the Ogboinba narrative) journey to her presence to ask a child, healing or magical power, the canonical Ijaw dramatization of the irreversibility of her destiny-decree.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Woyengi'; Oriire, 'Woyengi and Ogboinba: The Ijaw Creation Story'"
+    }
+   ]
+  }
+ ],
+ "inca_inti": [
+  {
+   "name": "Inti Raymi, the Festival of the Sun",
+   "term": {
+    "value": "Inti Raymi",
+    "script": "Latn",
+    "rom": "Inti Raymi"
+   },
+   "type": "festival",
+   "cadence": "annual, at the June (winter) solstice",
+   "notes": "The greatest Inca state festival, held at the winter solstice when the sun's power seemed most fragile; the Sapa Inca raised a cup of chicha to Inti and poured it on the ground, with sacrifices of llamas, cloth and chicha and a priestly pilgrimage to the east. At the Coricancha the aclla ('chosen women') wove cloth and brewed chicha for the Sun.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Britannica, 'Inti'; World History Encyclopedia, 'Coricancha'"
+    }
+   ]
+  },
+  {
+   "name": "Cult of the Sun at the Coricancha",
+   "term": {
+    "value": "Qurikancha",
+    "script": "Latn",
+    "rom": "Coricancha"
+   },
+   "type": "temple",
+   "cadence": "perennial state cult",
+   "notes": "The gold-plated Temple of the Sun at Cuzco, the most sacred huaca of the empire and the centre of the Inca world, housed the golden image of Inti and the mummies of dead rulers; at dawn the sun struck a great golden disc within the eastern chamber. The state cult of Inti was imposed throughout Tahuantinsuyu.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "World History Encyclopedia, 'Coricancha'; Britannica, 'Inti'"
+    }
+   ]
+  }
+ ],
+ "inca_mama_killa": [
+  {
+   "name": "Coya Raymi, the Queen's Festival",
+   "term": {
+    "value": "Coya Raymi",
+    "script": "Latn",
+    "rom": "Coya Raymi"
+   },
+   "type": "festival",
+   "cadence": "annual, in September (the spring equinox / onset of the rains)",
+   "notes": "The September festival of the moon-goddess, honouring women and fertility and inaugurating the rainy season; it included the Situa purification driving sickness from Cuzco. Her silver-clad shrine within the Coricancha was served by priestesses.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ancient Pages, 'Mama Quilla'; Guaman Poma, Nueva Corónica (Coya Raymi Quilla)"
+    }
+   ]
+  }
+ ],
+ "inca_pachamama": [
+  {
+   "name": "Pago a la tierra / despacho (payment to the earth)",
+   "term": {
+    "value": "haywarisqa",
+    "script": "Latn",
+    "rom": "haywarisqa"
+   },
+   "type": "offering",
+   "cadence": "at planting and especially in August, the month the earth 'opens'",
+   "notes": "Buried offerings to the earth-mother of coca leaves, chicha, llama fat (and formerly guinea pig, shells, and gold/silver figurines), prepared by an Andean ritual specialist (paqo) in reciprocity for the soil's fertility; the August earth-feasts remain the living core of her cult.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Pachamama'; Machu Travel Peru, 'Pachamama meaning'"
+    }
+   ]
+  }
+ ],
+ "inca_pariacaca": [
+  {
+   "name": "Mountain cult and pilgrimage to Pariacaca",
+   "type": "festival",
+   "cadence": "calendrical, with sacrifices at the snow-peak shrine",
+   "notes": "The fivefold storm-god was the chief huaca of the Huarochirí peoples descended from his five falcons; his snow-capped cordillera (over 5,700 m, sourcing the Rímac, Lurín, Mala and Cañete) was a pilgrimage shrine where the allied ayllus gathered to sacrifice and renew their bond to him.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Huarochirí Manuscript (the cult and pilgrimage of Pariacaca)"
+    }
+   ]
+  }
+ ],
+ "inca_supay": [
+  {
+   "name": "Underground offerings to the lord of the mine (El Tío)",
+   "type": "offering",
+   "cadence": "perennial, at the mine",
+   "notes": "As lord of Uku Pacha and 'Lord of Metals' Supay is propitiated underground so that ore and miners return safely; the rite survives in Andean mines as offerings of coca, alcohol and tobacco to the horned figure El Tío.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Grokipedia, 'Supay'; godsandmonsters.info, 'Andes Mythology'"
+    }
+   ]
+  }
+ ],
+ "inca_mama_sara": [
+  {
+   "name": "Veneration of the maize-mother doll (saramama / huantay sara)",
+   "term": {
+    "value": "saramama",
+    "script": "Latn",
+    "rom": "saramama"
+   },
+   "type": "offering",
+   "cadence": "renewed each harvest",
+   "notes": "The maize-mother was worshipped in a doll made of maize stalks, dressed and renewed at every harvest; unusual multi-eared or twin maize was kept as a manifestation of her spirit and reverenced to secure the crop's increase.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Inca mythology' (saramama / huantay sara); Cobo, Historia del Nuevo Mundo"
+    }
+   ]
+  }
+ ],
+ "inuit_sedna": [
+  {
+   "name": "Comb-the-hair propitiation by the angakkuq",
+   "type": "offering",
+   "cadence": "in time of famine, by the shaman's spirit-journey",
+   "notes": "When game failed, the angakkuq made a trance spirit-descent to the sea floor to reach the mistress of the animals, whose tangled, filth-laden hair held the broken taboos of the people; combing and dressing her hair (her own fingerless hands cannot) appeased her so she released the seals, walrus and whales.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Sedna (mythology)'; Rasmussen, Intellectual Culture of the Iglulik Eskimos (Takanakapsaluk)"
+    }
+   ]
+  }
+ ],
+ "inuit_nanook": [
+  {
+   "name": "Hosting the slain bear's soul with gendered tools",
+   "type": "offering",
+   "cadence": "for several days after each polar-bear kill",
+   "notes": "The killed bear's soul was honoured so its master would send bears again: the hide and skull were hung in the house for a set number of days and presented with tools of the bear's sex (a female bear with ulu, qulliq lamp, needles and thread; a male with knife and hunting gear), then the spirit released.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Nanook'; documented among the Iglulik Inuit (Rasmussen, Fifth Thule Expedition)"
+    }
+   ]
+  }
+ ],
+ "inuit_pinga": [
+  {
+   "name": "Offerings to the keeper of the caribou",
+   "type": "offering",
+   "cadence": "for hunting luck",
+   "notes": "Among the Iglulik Inuit, sacrificial offerings to Pinga, 'the one up there', secured success in the caribou hunt; she watches the conduct of the living and receives the souls of the dead before their possible rebirth.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Pinga (goddess)'; Rasmussen, Intellectual Culture of the Iglulik Eskimos"
+    }
+   ]
+  }
+ ],
+ "ipisowaahs": [
+  {
+   "name": "the Sun Dance (Okan / Medicine Lodge), kept by the Blackfoot in fulfilment of the Morning Star story",
+   "term": {
+    "value": "Okan",
+    "script": "Latn",
+    "rom": "Okan"
+   },
+   "type": "festival",
+   "cadence": "annual (high summer)",
+   "notes": "The origin-myth of Morning Star, Sun and the youth Poia/Scarface is the charter of the Blackfoot Sun Dance: Scarface returns from the sky-lodge of Sun and Morning Star bearing the rites by which the people honour the Sun each summer.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892), 'The Story of Poia'"
+    }
+   ]
+  }
+ ],
+ "irish_lugh": [
+  {
+   "name": "Lughnasadh / Áenach Tailten, the harvest assembly and funeral games Lugh founded for Tailtiu",
+   "term": {
+    "value": "Lughnasadh",
+    "script": "Latn",
+    "rom": "Lughnasadh"
+   },
+   "type": "festival",
+   "cadence": "annual (1 August)",
+   "notes": "Lugh institutes the óenach at Tailtiu in mourning for his foster-mother: games, fairs, contests and proclamations held in the last fortnight of summer, the season-feast that bears his name across Gaelic Ireland and Scotland.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Metrical Dindshenchas, 'Tailtiu'"
+    }
+   ]
+  }
+ ],
+ "irish_brigid": [
+  {
+   "name": "Imbolc, the early-spring feast of Brigid marking the start of lambing and the year's quickening",
+   "term": {
+    "value": "Imbolc",
+    "script": "Latn",
+    "rom": "Imbolc"
+   },
+   "type": "festival",
+   "cadence": "annual (1 February)",
+   "notes": "The goddess Brigit's name and patronage are continuous with the cult of St Brigit of Kildare at Imbolc/Lá Fhéile Bríde; the perpetual fire tended by nineteen women at Kildare is widely taken as a survival of her cult.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Brigit / Imbolc"
+    }
+   ]
+  }
+ ],
+ "irish_tailtiu": [
+  {
+   "name": "the Áenach Tailten (Tailteann Games), funeral assembly held in her honour",
+   "term": {
+    "value": "Áenach Tailten",
+    "script": "Latn",
+    "rom": "Aenach Tailten"
+   },
+   "type": "festival",
+   "cadence": "annual (around Lughnasa, 1 August)",
+   "notes": "By her dying wish Lugh founds games and a fair at Tailtiu (Teltown, Co. Meath); the assembly with its contests, matchmaking and proclamations continued in some form into the medieval period.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Metrical Dindshenchas, 'Tailtiu'"
+    }
+   ]
+  }
+ ],
+ "irish_donn": [
+  {
+   "name": "the gathering of the dead at Tech Duinn (the House of Donn, Bull Rock off Beara)",
+   "type": "offering",
+   "cadence": "at death (passage of the dead)",
+   "notes": "A ninth-century poem has Donn declare that all his descendants shall come to his house after death; Tech Duinn on its sea-rock is the assembly-place of the Irish dead before their onward journey.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Dáithí Ó hÓgáin, Myth, Legend and Romance (1990), s.v. Donn / Tech Duinn"
+    }
+   ]
+  }
+ ],
+ "iroquois_handsome_lake": [
+  {
+   "name": "the Longhouse Religion (Gaiwiio), the renewed ceremonial cycle taught from his visions",
+   "term": {
+    "value": "Gaiwiio",
+    "script": "Latn",
+    "rom": "Gaiwiio"
+   },
+   "type": "festival",
+   "cadence": "seasonal cycle (Midwinter, Strawberry, Green Corn and Harvest thanksgivings)",
+   "notes": "The Code of Handsome Lake is recited every other year at the longhouses; it knit his moral teaching to the old Haudenosaunee thanksgiving festivals, which continue among the Six Nations to this day.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Arthur C. Parker, The Code of Handsome Lake, the Seneca Prophet (1913)"
+    }
+   ]
+  }
+ ],
+ "japanese_yoshiie": [
+  {
+   "name": "Veneration as patron of the samurai",
+   "type": "veneration",
+   "cadence": "perennial",
+   "notes": "Posthumously honoured as Hachimantarō and revered as a quasi-divine protector of warriors and ancestor-kami of the Minamoto, his cult bound to the Hachiman shrines (notably Iwashimizu Hachimangū).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ryōjin Hishō; Iwashimizu Hachimangū tradition"
+    }
+   ]
+  }
+ ],
+ "javanese_nyai_roro_kidul": [
+  {
+   "name": "Labuhan offering to the Queen of the Southern Sea",
+   "term": {
+    "value": "Labuhan",
+    "script": "Latin",
+    "rom": "Labuhan"
+   },
+   "type": "offering",
+   "cadence": "annual",
+   "notes": "The Yogyakarta (and Surakarta) court annually casts offerings of royal hair, nail-clippings, garments and food into the southern ocean at Parangkusumo/Parangtritis to renew the mystic pact between the sultans of Mataram and the sea-queen.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Documented Yogyakarta kraton Labuhan ceremony; Mataram-Senopati legend"
+    }
+   ]
+  }
+ ],
+ "javanese_sunan_lawu": [
+  {
+   "name": "Pilgrimage and vigil on Mount Lawu",
+   "type": "pilgrimage",
+   "cadence": "annual",
+   "notes": "Pilgrims ascend to Hargo Dalem and the shrines along the Candi Cetho route to meditate and seek the guardian-spirit's favour, most intensively on the night of 1 Sura (Javanese New Year).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mount Lawu pilgrimage tradition; Brawijaya V moksha legend"
+    }
+   ]
+  }
+ ],
+ "kalash_balumain": [
+  {
+   "name": "Chaumos midwinter festival",
+   "term": {
+    "value": "Chaumos",
+    "script": "Latin",
+    "rom": "caumos"
+   },
+   "type": "festival",
+   "cadence": "annual at winter solstice",
+   "notes": "Two-week solstice festival (c. 7-22 Dec.) marking the year's end; Balumain is held to arrive on horseback from Tsiyam to teach and bless the rites, which involve goat sacrifice, juniper purification, dance and song.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Witzel, 'The Religions of the Hindukush'; Chaumos festival ethnography"
+    }
+   ]
+  }
+ ],
+ "kalash_mahandeo": [
+  {
+   "name": "Goat sacrifice at the horse-head altar",
+   "type": "sacrifice",
+   "cadence": "seasonal",
+   "notes": "At the wooden four-horse-head altar a goat's throat is cut, the blood splashed on the altar and the head passed back and forth through juniper flame; Mahandeo is the crop-and-war god and intercessor with the highest deity.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kalash religion ethnography (Chitral valleys); 'before the altar of Mahandeo' field accounts"
+    }
+   ]
+  }
+ ],
+ "kalash_sajigor": [
+  {
+   "name": "Sacrifice at the open stone altar under junipers",
+   "type": "sacrifice",
+   "cadence": "seasonal",
+   "notes": "An onjesta ('pure') Indra-aspect god of herds whose stone altar in Rumbur stands beneath old juniper, oak and cedar; goat sacrifice and the pure (onjesta) sphere exclude the impure, women included.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Witzel, 'The Religions of the Hindukush'; Kalash religion ethnography"
+    }
+   ]
+  }
+ ],
+ "kalash_jestak": [
+  {
+   "name": "Clan rites at the Jeshtak-han",
+   "term": {
+    "value": "Jeṣṭak Han",
+    "script": "Latin",
+    "rom": "Jeshtak Han"
+   },
+   "type": "rite",
+   "cadence": "life-cycle",
+   "notes": "Weddings, births and ancestral food-offerings are held in the clan's wooden lineage temple (Jeṣṭak Han), one of the few Kalash sanctuaries not barred to women.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Witzel, 'The Religions of the Hindukush'; Kalash temple ethnography"
+    }
+   ]
+  }
+ ],
+ "karbi_hemphu": [
+  {
+   "name": "Rongker village festival",
+   "term": {
+    "value": "Rongker",
+    "script": "Latin",
+    "rom": "Rongker"
+   },
+   "type": "festival",
+   "cadence": "annual (spring/new year)",
+   "notes": "Annual village propitiation led by the Kurusar priest to secure welfare and harvest and avert evil; a fowl is offered to each of Hemphu, Mukrang and Rasinja, who share a common altar.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Karbi Rongker festival ethnography (Karbi Anglong, Assam)"
+    }
+   ]
+  }
+ ],
+ "karbi_mukrang": [
+  {
+   "name": "Shared sacrifice at the Hemphu-Mukrang-Rasinja altar",
+   "type": "sacrifice",
+   "cadence": "annual",
+   "notes": "Worshipped jointly with Hemphu and his consort Rasinja at a common altar in the Rongker festival, receiving a sacrificial fowl as the war-and-justice member of the Karbi triad.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Karbi Rongker festival ethnography"
+    }
+   ]
+  }
+ ],
+ "jukun_aku_uka": [
+  {
+   "name": "Puje royal festival",
+   "term": {
+    "value": "Puje",
+    "script": "Latin",
+    "rom": "Puje"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "The divine king presides over the Puje festival of Jukun spirituality, dance and rite; his enthronement requires ritual seclusion and divinization (the Pânkán and Pánkyá rites) before he enters the palace.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "C. K. Meek, A Sudanese Kingdom (Jukun of Wukari); Jukun divine-kingship studies"
+    }
+   ]
+  }
+ ],
+ "ket_tomam": [
+  {
+   "name": "Honoured as bringer of the spring birds",
+   "type": "veneration",
+   "cadence": "seasonal (spring)",
+   "notes": "The warm-south mother is invoked at the return of the migratory waterfowl, whose arrival from her southern land rescues the Ket from late-winter hunger.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "E. J. Vajda, Siberian Landscapes in Ket Traditional Culture"
+    }
+   ]
+  }
+ ],
+ "khoekhoe_heitsi_eibib": [
+  {
+   "name": "The cairn-graves of Heitsi-Eibib",
+   "type": "offering",
+   "cadence": "on passing a grave",
+   "notes": "Travellers passing one of the many stone cairns reckoned the graves of the ever-dying, ever-reborn hero add a stone (or a twig or bit of food) and utter a prayer for rain, safe passage, health of cattle and protection against ||Gaunab; first-fruits were also deposited there before a journey or hunt.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Theophilus Hahn, Tsuni-||Goam: The Supreme Being of the Khoi-Khoi (1881)"
+    }
+   ]
+  }
+ ],
+ "khoekhoe_tsui_goab": [
+  {
+   "name": "Prayers for rain to Tsui-||Goab",
+   "type": "prayer",
+   "cadence": "in time of need (drought, sickness)",
+   "notes": "The Khoekhoe prayed to Tsui-||Goab for rain, thunder and the health of people and cattle, especially in drought; Hahn records the morning/rain prayers addressed to him as the dawn-god who dies and rises again.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Theophilus Hahn, Tsuni-||Goam: The Supreme Being of the Khoi-Khoi (1881)"
+    }
+   ]
+  }
+ ],
+ "khasi_u_lei_shyllong": [
+  {
+   "name": "Ka Pomblang Nongkrem (Nongkrem dance)",
+   "term": {
+    "value": "Ka Pomblang Nongkrem",
+    "script": "Latn",
+    "rom": "Ka Pomblang Nongkrem"
+   },
+   "type": "festival",
+   "cadence": "annual (autumn, at Smit)",
+   "notes": "The five-day Khyrim state festival at Smit: the Syiem of Khyrim and the high priest (Lyngdoh) offer oblation to U Lei Shyllong, sacrificing a cock and goats (pomblang), and maidens and warriors dance to secure a bumper harvest and the welfare of the state.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Government of Meghalaya, Nongkrem Dance (Ka Pomblang Nongkrem) cultural record"
+    }
+   ]
+  }
+ ],
+ "khasi_u_blei_nongthaw": [
+  {
+   "name": "Sacrifice and divination of the Niam Khasi",
+   "type": "sacrifice",
+   "cadence": "as need arises",
+   "notes": "The indigenous Khasi religion offers animal sacrifice (cocks, goats) under the sovereignty of the creator U Blei Nongthaw to propitiate the spirits, with divination by cowries, breaking eggs and reading entrails to learn which spirit is offended.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "P. R. T. Gurdon, The Khasis (1907)"
+    }
+   ]
+  }
+ ],
+ "khasi_ka_mei_ramew": [
+  {
+   "name": "Offerings to Mother Earth (Ka Mei Ramew)",
+   "type": "offering",
+   "cadence": "agricultural / household occasions",
+   "notes": "As the earth-mother whom the descended clans must steward, Ka Mei Ramew (Ka Mei Ram-ew) is honoured with propitiatory offerings before cultivation and at household rites of the Niam Khasi.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "P. R. T. Gurdon, The Khasis (1907)"
+    }
+   ]
+  }
+ ],
+ "khmer_neak_ta": [
+  {
+   "name": "Loeung Neak Ta (raising/feeding the guardian)",
+   "term": {
+    "value": "អ្នកតា",
+    "script": "Khmr",
+    "rom": "neak ta"
+   },
+   "type": "festival",
+   "cadence": "annual, at the onset of the monsoon (rice-planting)",
+   "notes": "Villagers gather at the spirit-hut shrine, set beneath a banyan or other sacred tree, with incense, fruit, cooked food and drink, praying for rain, good harvest, health and protection; a chosen medium may be possessed so the neak ta speaks and heals. The rite recurs yearly as farmers prepare to plant.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ang Choulean, Les etres surnaturels dans la religion populaire khmere (1986)"
+    }
+   ]
+  }
+ ],
+ "kikuyu_ngai": [
+  {
+   "name": "Sacrifice at the mugumo (sacred fig)",
+   "term": {
+    "value": "mugumo",
+    "script": "Latn",
+    "rom": "mugumo"
+   },
+   "type": "sacrifice",
+   "cadence": "on great occasions (rain, planting, calamity)",
+   "notes": "Elders sacrifice a lamb and a kid beneath a chosen mugumo (sacred fig) tree, pour the fat and blood on the trunk and offer the roasted meat to Ngai as a burnt offering, the people praying turned toward Kirinyaga (Mount Kenya); cutting a mugumo is taboo.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Jomo Kenyatta, Facing Mount Kenya (1938)"
+    }
+   ]
+  }
+ ],
+ "kirati_yuma_sammang": [
+  {
+   "name": "Chasok Tangnam (first-harvest festival)",
+   "term": {
+    "value": "Chasok Tangnam",
+    "script": "Latn",
+    "rom": "Chasok Tangnam"
+   },
+   "type": "festival",
+   "cadence": "annual, full moon of Mangsir/Senchengla",
+   "notes": "The Limbu first-harvest thanksgiving: the new crop is offered to Yuma Sammang and the other deities and ancestors before it may be eaten; the rites are conducted by the Phedangma priest reciting the Mundhum.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chaitanya Subba, The Culture and Religion of Limbus (1995)"
+    }
+   ]
+  }
+ ],
+ "kirati_theba_sammang": [
+  {
+   "name": "Worship of Theba Sammang with Yuma",
+   "type": "offering",
+   "cadence": "in Limbu household and clan rites",
+   "notes": "As the paternal/ancestral war-deity Theba Sammang is honoured alongside Yuma Sammang in the rites recited by the Phedangma, the pair ranking second only to the high god Tagera Ningwaphuma.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chaitanya Subba, The Culture and Religion of Limbus (1995)"
+    }
+   ]
+  }
+ ],
+ "kirati_paruhang": [
+  {
+   "name": "Sakela (Sakewa) offerings to the ancestral pair",
+   "term": {
+    "value": "Sakela",
+    "script": "Latn",
+    "rom": "Sakela"
+   },
+   "type": "festival",
+   "cadence": "twice yearly (Ubhauli, Baisakh full moon; Udhauli, Mangsir full moon)",
+   "notes": "The Rai (Khambu) festival of Sakela/Sakewa honours nature and the ancestral creator-pair Paruhang and Sumnima with dance (Sakela sili) and offerings, praying for healthy crops and protection from calamity at the turn of the agricultural seasons.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Martin Gaenszle, Origins and Migrations: Kinship, Mythology and Ethnic Identity among the Mewahang Rai (2000)"
+    }
+   ]
+  }
+ ],
+ "kirati_sumnima": [
+  {
+   "name": "Sakela (Sakewa) offerings to the ancestral pair",
+   "term": {
+    "value": "Sakela",
+    "script": "Latn",
+    "rom": "Sakela"
+   },
+   "type": "festival",
+   "cadence": "twice yearly (Ubhauli and Udhauli)",
+   "notes": "The earth-mother Sumnima is honoured with her consort Paruhang at the Rai Sakela/Sakewa festival of seasonal renewal, the community dancing and offering for fertility of the soil and good harvest.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Martin Gaenszle, Origins and Migrations: Kinship, Mythology and Ethnic Identity among the Mewahang Rai (2000)"
     }
    ]
   }
@@ -388970,6 +394406,21 @@ const ICONO_SWEEP = {
    }
   ]
  },
+ "greek_alexander": {
+  "attributes": [
+   {
+    "id": "greek_alexander-ammon-horns",
+    "name": "the ram's horns of Zeus-Ammon",
+    "notes": "On coins (notably the posthumous types of Lysimachus) Alexander wears the curling ram-horns of Ammon, advertising his divine sonship proclaimed at Siwa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "World History Encyclopedia, 'Alexander the Great as a God'; Wikipedia, 'Alexander the Great'"
+     }
+    ]
+   }
+  ]
+ },
  "greek_apollod_heracles": {
   "attributes": [
    {
@@ -389877,6 +395328,298 @@ const ICONO_SWEEP = {
      {
       "kind": "secondary",
       "reference": "Tradition of the Eumolpidae; cf. Pausanias 1.38.3"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_oceanus": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_oceanus-bull-horns",
+    "name": "Bull-horns at the temples",
+    "notes": "Depicted as an aged bearded man with bull's horns (and sometimes crab-claw horns) sprouting from his brow, after the Greek convention of rivers as bull-formed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC 'Okeanos'"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_oceanus-serpent-body",
+    "name": "Serpentine fish-tailed body",
+    "notes": "From the Hellenistic period shown with a coiling fish-tailed lower body, reclining as a river-god with urn, oar and attendant sea-creatures.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC 'Okeanos'"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_nyx": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_nyx-dark-mantle",
+    "name": "Dark star-spangled mantle",
+    "notes": "Robed in dark mist or a starry veil, she drives a horse-drawn chariot across the sky from the ends of the earth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC 'Nyx'"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_nyx-twin-infants",
+    "name": "Bearing the infant twins Sleep and Death",
+    "notes": "On the Chest of Cypselus, Pausanias reports, Night is shown carrying the two boys Sleep and Death, the one white, the other black.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias, Description of Greece (Elis)"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_hypnos": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_hypnos-temple-wings",
+    "name": "Wings at the temples",
+    "notes": "A gentle winged youth, sometimes shown with wings springing from his brow or shoulders.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC 'Hypnos/Somnus'"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "greek_hesiod_hypnos-poppy-plant",
+    "name": "Poppy",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC 'Hypnos/Somnus'"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_thanatos": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_thanatos-winged",
+    "name": "Winged, black-clad figure",
+    "notes": "A winged figure, in Euripides dressed in black and bearing a sword; in funerary art often with an inverted, extinguished torch.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Alcestis"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_thanatos-iron-heart",
+    "name": "Heart of iron",
+    "notes": "Hesiod gives Death a pitiless heart of iron and a spirit of bronze, hateful even to the gods.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_leto": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_leto-veiled",
+    "name": "Veiled matron",
+    "notes": "Depicted as a mantled, modest matron, in keeping with her mild and demure character.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC 'Leto'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_hesiod_leto-wolf",
+    "name": "Wolf",
+    "notes": "Wolves are linked to her in the aetiology of her coming from the Hyperboreans and her arrival in Lycia.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Antoninus Liberalis, Metamorphoses"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "greek_hesiod_leto-palm-plant",
+    "name": "Date-palm",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn to Apollo"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_rhea": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_rhea-mural-crown",
+    "name": "Enthroned with mural crown",
+    "notes": "As Meter/Cybele she is enthroned, wearing a turreted crown, holding a tympanum and phiale, flanked by lions or riding a lion-drawn car.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC 'Kybele'; Orphic Hymn to Rhea"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_hesiod_rhea-lion",
+    "name": "Lion",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn 14 to the Mother of the Gods; Orphic Hymn to Rhea"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hesiod_selene": {
+  "attributes": [
+   {
+    "id": "greek_hesiod_selene-veil-arch",
+    "name": "Billowing veil arched over the head",
+    "notes": "A flowing mantle and veil arch over her head like a night-sky halo, the crescent at her brow, as she drives a two-horse biga.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC 'Selene, Luna'"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_selene-horned-image",
+    "name": "Horned cult-image at Elis",
+    "notes": "Pausanias saw a stone image of a horned Selene in the agora at Elis, and a relief of Selene driving on the base of the Zeus at Olympia.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias, Description of Greece (Elis)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_hesiod_selene-bull",
+    "name": "Bull / ox",
+    "notes": "Oxen sometimes draw her car, paralleling the bull-horn moon imagery.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "LIMC 'Selene, Luna'"
+     }
+    ]
+   },
+   {
+    "id": "greek_hesiod_selene-horse",
+    "name": "Horse",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn 32 to Selene"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_hyacinthus": {
+  "attributes": [
+   {
+    "id": "greek_hyacinthus-apotheosis",
+    "name": "Carried up to heaven on the Throne of Apollo",
+    "notes": "On the Throne of Apollo at Amyclae, made by Bathycles, Hyacinthus and his sister Polyboea were shown being borne up to heaven by gods.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias, Description of Greece (Laconia)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "greek_hyacinthus-flower-plant",
+    "name": "Hyacinth flower",
+    "notes": "Sprang from his blood, its petals marked with the mourning cry AI AI.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ovid, Metamorphoses 10"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_io": {
+  "attributes": [
+   {
+    "id": "greek_io-heifer",
+    "name": "Horned maiden / white heifer",
+    "notes": "Shown as a horned maiden or a white cow, watched by the many-eyed Argus Panoptes and stung onward by Hera's gadfly.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus, Prometheus Bound; Ovid, Metamorphoses 1"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "greek_io-gadfly",
+    "name": "Gadfly",
+    "notes": "The oistros sent by Hera that drives her over the world.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus, Prometheus Bound"
+     }
+    ]
+   }
+  ]
+ },
+ "greek_iphigenia": {
+  "attributes": [
+   {
+    "id": "greek_iphigenia-altar-deer",
+    "name": "At the altar with the substituted deer",
+    "notes": "The canonical scene shows her at the altar of Aulis with the sacrificial knife, and the deer set in her place by Artemis.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Iphigenia in Tauris"
      }
     ]
    }
@@ -391049,6 +396792,1065 @@ const ICONO_SWEEP = {
    }
   ],
   "sacredAnimals": []
+ },
+ "hittite_arinna": {
+  "attributes": [
+   {
+    "id": "hittite_arinna-winged-disk",
+    "name": "Winged sun-disk",
+    "notes": "Symbolized by the solar disk and winged sun emblem; cult inventories describe her as a golden sun-disk and as a seated female statue receiving offerings.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite cult inventories"
+     }
+    ]
+   }
+  ]
+ },
+ "hittite_tarhunna": {
+  "attributes": [
+   {
+    "id": "hittite_tarhunna-mountain-stance",
+    "name": "Standing on the mountain-gods Namni and Hazzi",
+    "notes": "Depicted as a bearded man in a pointed cap, brandishing the thunderbolt, striding on the backs of the deified mountains.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hurro-Hittite storm-god reliefs"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hittite_tarhunna-bull",
+    "name": "Bull",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite storm-god iconography; silver bull dedicated to his temple"
+     }
+    ]
+   }
+  ]
+ },
+ "hittite_telipinu": {
+  "sacredPlants": [
+   {
+    "id": "hittite_telipinu-eya",
+    "name": "Evergreen eya-tree",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu myth (CTH 324)"
+     }
+    ]
+   }
+  ]
+ },
+ "hittite_hannahanna": {
+  "sacredAnimals": [
+   {
+    "id": "hittite_hannahanna-bee",
+    "name": "Bee",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu myth (CTH 324)"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_vishnu_narasimha": {
+  "attributes": [
+   {
+    "id": "hindu_vishnu_narasimha-pillar",
+    "name": "Bursting from the pillar",
+    "notes": "Shown emerging from a split column at the threshold, signifying his omnipresence, as he seizes Hiranyakashipu across his lap to disembowel him with his claws while Prahlada looks on.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhagavata Purana 7.8"
+     }
+    ]
+   },
+   {
+    "id": "hindu_vishnu_narasimha-lion-face",
+    "name": "Lion head on a human body",
+    "notes": "Lion's face with mane and fangs, clawed hands, on a man's body; depicted in the seated Yoga, fierce Ugra, and Lakshmi-accompanied forms.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Narasimha iconography (Ahobilam nine forms)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_vishnu_narasimha-lion",
+    "name": "Lion",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhagavata Purana 7.8"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_vishnu_varaha": {
+  "attributes": [
+   {
+    "id": "hindu_vishnu_varaha-tusk-lift",
+    "name": "Earth-goddess raised on the tusk",
+    "notes": "Theriomorphic or boar-headed form lifting Bhumi/Bhudevi on his right tusk, often in the warrior's alidha stance with a naga in submission at his feet, as at Udayagiri Cave 5 and the Khajuraho Varaha.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Udayagiri Cave 5 relief; Khajuraho Varaha temple"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_vishnu_varaha-boar",
+    "name": "Boar",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vishnu Purana 1.4"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_vishwakarma": {
+  "attributes": [
+   {
+    "id": "hindu_vishwakarma-tools",
+    "name": "Measuring scale, book, and water-pot",
+    "notes": "Commonly an aged white-bearded craftsman with four arms holding a measuring scale or tape, a book, and a kamandalu; in eastern India shown as a young muscular figure.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vishvakarma iconography"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_vishwakarma-hamsa",
+    "name": "Hamsa (swan/goose) mount",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vishvakarma iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_yama": {
+  "attributes": [
+   {
+    "id": "hindu_yama-dark-form",
+    "name": "Dark-green or red form with noose and rod",
+    "notes": "Depicted with a dark or green complexion, red garments, holding the danda (rod of punishment) and pasha (noose) with which he draws out the soul.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hindu iconography of Yama"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_yama-buffalo",
+    "name": "Buffalo (Mahisha) mount",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Puranic descriptions of Yama"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_vinata": {
+  "sacredAnimals": [
+   {
+    "id": "hindu_vinata-eagle-son",
+    "name": "The eagle Garuda (her son)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva (Astika Parva)"
+     }
+    ]
+   }
+  ]
+ },
+ "hochunk_earthmaker": {
+  "attributes": [
+   {
+    "id": "hochunk_earthmaker-clay-maker",
+    "name": "Shaper of the first human from clay",
+    "notes": "In Radin's origin myth he wakes alone in space, his tears form the primal waters, and he molds the first man from clay in his own likeness, giving tobacco as his gift.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, The Winnebago Tribe (1923)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "hochunk_earthmaker-tobacco",
+    "name": "Tobacco",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, The Winnebago Tribe (1923)"
+     }
+    ]
+   }
+  ]
+ },
+ "hopi_kokopelli": {
+  "attributes": [
+   {
+    "id": "hopi_kokopelli-flute-antennae",
+    "name": "Hunched flute-player with insect antennae",
+    "notes": "Humpbacked figure playing a flute, often shown with antenna-like protrusions linking him to the locust/insect; his hump is a sack of seeds and rain-bringing mist, and he is said to carry unborn children for women.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hopi katsina iconography of Kokopölö"
+     }
+    ]
+   }
+  ]
+ },
+ "hopi_masauwu": {
+  "attributes": [
+   {
+    "id": "hopi_masauwu-skull-mask",
+    "name": "Skull-faced mask (Skeleton Man)",
+    "notes": "Wears a fearsome mask whose face is a skull blotched with cloud-marks and crowned with prayer feathers; alternately revealed as a handsome bejewelled man beneath the mask.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hopi mythology and katsina iconography of Maasaw"
+     }
+    ]
+   }
+  ]
+ },
+ "huli_datagaliwabe": {
+  "attributes": [
+   {
+    "id": "huli_datagaliwabe-astride-giant",
+    "name": "Sky-giant standing astride, looking down on all",
+    "notes": "Imagined as an enormous high-god who stands with legs astride above the world and watches all humans, punishing breaches of kinship law; he is set apart from the dama spirits and cannot be swayed by ritual.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. M. Glasse, Huli of Papua (1968)"
+     }
+    ]
+   }
+  ]
+ },
+ "ijaw_woyengi": {
+  "attributes": [
+   {
+    "id": "ijaw_woyengi-lightning",
+    "name": "descends from the sky in a bolt of lightning",
+    "notes": "The Great Mother is said to have emerged from the sky in lightning to seat herself at the table of creation.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythlok, 'Woyengi'"
+     }
+    ],
+    "term": {
+     "value": "Woyingi",
+     "script": "Latn",
+     "rom": "Woyingi"
+    }
+   },
+   {
+    "id": "ijaw_woyengi-breath-of-life",
+    "name": "breathes life into the earth-moulded, genderless first humans",
+    "notes": "She moulds humans from dirt, then embraces each and breathes life and chosen gender into them.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythlok, 'Woyengi'; Britannica, 'Woyengi'"
+     }
+    ]
+   }
+  ]
+ },
+ "inca_inti": {
+  "attributes": [
+   {
+    "id": "inca_inti-golden-boy",
+    "name": "golden face-disc with radiating rays, or a seated golden boy (Punchao) with a royal headband",
+    "notes": "Inti's chief image, the Punchao, was a small seated golden boy from whose head and shoulders rays shone, wearing the royal headband, with snakes and lions issuing from his body; its hollow belly held the ashes of dead rulers' organs. Gold was the 'sweat of the sun'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Inti'; Britannica, 'Inti'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "inca_inti-llama",
+    "name": "llama (sacrificed to the sun)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "World History Encyclopedia, 'Coricancha' (llama sacrifice)"
+     }
+    ]
+   }
+  ]
+ },
+ "inca_viracocha": {
+  "attributes": [
+   {
+    "id": "inca_viracocha-staff-god",
+    "name": "frontal staff-god holding a staff (or thunderbolt) in each hand, crowned with rays ending in puma-heads, and weeping",
+    "notes": "The Gateway of the Sun figure at Tiwanaku, the type associated with him: a radiate weeping deity gripping staffs/thunderbolts, flanked by running winged attendants; the tears are read as rain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "World History Encyclopedia, 'Viracocha' (Gate of the Sun)"
+     }
+    ]
+   },
+   {
+    "id": "inca_viracocha-beggar",
+    "name": "wandering bearded old man in poor dress carrying a staff",
+    "notes": "In the Andean creator-narratives he walks the land as a ragged elder teaching the peoples, then departs westward over the sea.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, 'Viracocha'; Wikipedia, 'Viracocha'"
+     }
+    ]
+   }
+  ]
+ },
+ "inca_illapa": {
+  "attributes": [
+   {
+    "id": "inca_illapa-warrior-sling",
+    "name": "radiant warrior in shining garments whirling a sling, the lightning his sling-stone",
+    "notes": "He stands in the Milky Way in bright dress; the crack of his sling is the thunderclap and its flash the lightning, while striking his sister's water-jar releases the rain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ancient Pages, 'Illapa'; Encyclopedia.com, 'Illapa'"
+     }
+    ]
+   }
+  ]
+ },
+ "inca_mama_killa": {
+  "attributes": [
+   {
+    "id": "inca_mama_killa-silver-disc",
+    "name": "silver disc bearing a human face; her shrine and image plated in silver",
+    "notes": "The moon was seen as a great silver disc whose markings were her features; in the Coricancha her sanctuary and image were covered in silver, as Inti's were in gold. Lunar eclipses were read as an animal attacking her.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Mama Killa'; oldworldgods.com, 'Mama Quilla'"
+     }
+    ]
+   }
+  ]
+ },
+ "inca_supay": {
+  "attributes": [
+   {
+    "id": "inca_supay-horned",
+    "name": "horned lord of the underworld (later the horned El Tío of the mines)",
+    "notes": "An ambivalent ruler of Uku Pacha rather than a purely evil devil; survives as the horned, seated El Tío to whom miners make offerings underground.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grokipedia, 'Supay'; godsandmonsters.info, 'Andes Mythology'"
+     }
+    ]
+   }
+  ]
+ },
+ "inca_mama_sara": {
+  "attributes": [
+   {
+    "id": "inca_mama_sara-maize-doll",
+    "name": "doll fashioned of maize stalks, dressed and renewed each harvest",
+    "notes": "Her venerated embodiment; multi-eared or deformed maize stalks were preserved as living manifestations of the goddess.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Inca mythology'; Mythlok, 'Mama Sara'"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "inca_mama_sara-maize",
+    "name": "maize (sara), the plant she embodies",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Inca mythology'"
+     }
+    ]
+   },
+   {
+    "id": "inca_mama_sara-willow",
+    "name": "willow tree (with which she is associated)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mythlok, 'Mama Sara'"
+     }
+    ]
+   }
+  ]
+ },
+ "inca_pariacaca": {
+  "sacredAnimals": [
+   {
+    "id": "inca_pariacaca-falcon",
+    "name": "falcon (his fivefold birth-form from the five eggs of Condorcoto)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Huarochirí Manuscript (ch. 5)"
+     }
+    ]
+   }
+  ]
+ },
+ "inca_manco_capac": {
+  "attributes": [
+   {
+    "id": "inca_manco_capac-mascapaicha-icon",
+    "name": "Sapa Inca in the royal fringe (mascapaicha) and multicoloured llautu headband",
+    "notes": "Founder-king shown with the imperial red fringe hung from the llautu, the emblem of Inca sovereignty originating with the founding pair.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grokipedia, 'Mascapaicha'; Garcilaso, Comentarios Reales"
+     }
+    ]
+   }
+  ]
+ },
+ "inuit_tekkeitsertok": {
+  "attributes": [
+   {
+    "id": "inuit_tekkeitsertok-antlers",
+    "name": "imagined as a powerful man crowned with caribou antlers, master of the herds",
+    "notes": "Folk depictions show him as a robust hunter bearing caribou antlers, the sign of his dominion over the land-game.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Tekkeitsertok'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "inuit_tekkeitsertok-caribou",
+    "name": "the caribou (tuktu), the herds he owns and releases",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Franz Boas, The Central Eskimo (1888)"
+     }
+    ]
+   }
+  ]
+ },
+ "ipisowaahs": {
+  "attributes": [
+   {
+    "id": "ipisowaahs-morning-star-disk",
+    "name": "the bright morning planet that rises ahead of the Sun",
+    "notes": "Apisirahts is seen in the sky as the morning star, son of Sun (Natosi) and Moon (Ko'komiki'somm).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ]
+   }
+  ]
+ },
+ "irish_aengus": {
+  "attributes": [
+   {
+    "id": "irish_aengus-kissing-birds",
+    "name": "four birds that circle his head, said to be his kisses, carrying love between the young",
+    "notes": "Late tradition figures the birds about Aengus's head as his kisses, messengers of the love he inspires.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Óengus"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "irish_aengus-swan",
+    "name": "the swan, the form he and Caer Ibormeith take to fly off together",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aislinge Óenguso (The Dream of Óengus)"
+     }
+    ]
+   }
+  ]
+ },
+ "irish_balor": {
+  "attributes": [
+   {
+    "id": "irish_balor-single-eye",
+    "name": "a single vast eye in the back (or middle) of his head, lid raised on a ring by his attendants",
+    "notes": "The poison eye, got from the fumes of his father's druids' brewing, withers and burns whatever its gaze falls on; it takes several men to heave up the heavy lid.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cath Maige Tuired (The Second Battle of Moytura)"
+     }
+    ]
+   }
+  ]
+ },
+ "irish_donn": {
+  "attributes": [
+   {
+    "id": "irish_donn-dark-one",
+    "name": "the Dark One, lord of a bleak sea-rock house, glimpsed riding the storm as a portent of death",
+    "notes": "His name means 'the dark / brown one'; in folklore he rides on storm-clouds and his appearing foretells a death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dáithí Ó hÓgáin, Myth, Legend and Romance (1990), s.v. Donn"
+     }
+    ]
+   }
+  ]
+ },
+ "irish_midir": {
+  "attributes": [
+   {
+    "id": "irish_midir-radiant-warrior",
+    "name": "a proud warrior of surpassing beauty in a purple mantle, golden-yellow hair, bearing a five-pointed spear and a white-bossed shield set with gems",
+    "notes": "Tochmarc Étaíne describes Midir as he appears to Eochaid: golden hair to his shoulders, lustrous eyes, a purple tunic, a gold-bossed shield and a sharp five-barbed spear.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tochmarc Étaíne (The Wooing of Étaín)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "irish_midir-cranes",
+    "name": "the three cranes of churlishness that stand before his sídh, denying entry and hospitality",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "James MacKillop, Dictionary of Celtic Mythology (1998), s.v. Midir"
+     }
+    ]
+   },
+   {
+    "id": "irish_midir-swan",
+    "name": "the swan, the form he and Étaín take to escape from Tara",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tochmarc Étaíne (The Wooing of Étaín)"
+     }
+    ]
+   }
+  ]
+ },
+ "irish_dian_cecht": {
+  "sacredPlants": [
+   {
+    "id": "irish_dian_cecht-healing-herbs",
+    "name": "the 365 healing herbs of Airmed, one for each sinew and joint of the body, that grew on Miach's grave",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cath Maige Tuired (The Second Battle of Moytura)"
+     }
+    ]
+   }
+  ]
+ },
+ "irish_eriu": {
+  "sacredAnimals": [
+   {
+    "id": "irish_eriu-sovereignty-figure",
+    "name": "the land of Ireland itself personified, met by the Milesians at the hill of Uisneach",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Lebor Gabála Érenn"
+     }
+    ]
+   }
+  ]
+ },
+ "irish_tailtiu": {
+  "sacredPlants": [
+   {
+    "id": "irish_tailtiu-cleared-forest",
+    "name": "the felled wood of Cúan turned to the harvest-plain of Brega, her labour and her grave",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Metrical Dindshenchas, 'Tailtiu'"
+     }
+    ]
+   }
+  ]
+ },
+ "iroquois_deganawida": {
+  "attributes": [
+   {
+    "id": "iroquois_deganawida-great-tree",
+    "name": "the Great White Pine with four white roots reaching to the four directions, the Tree of the Long Leaves",
+    "notes": "Under the Tree of Peace the nations bury their weapons in the underground stream among its roots; an eagle is set atop to watch for danger.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Haudenosaunee oral tradition, The Great Law of Peace (Kaianerekowa)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "iroquois_deganawida-eagle",
+    "name": "the eagle perched atop the Tree of Peace, watcher against approaching enemies",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Haudenosaunee oral tradition, The Great Law of Peace (Kaianerekowa)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "iroquois_deganawida-white-pine",
+    "name": "the white pine, whose five needles in a bundle figure the five united nations",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Tree of Peace'"
+     }
+    ]
+   }
+  ]
+ },
+ "iroquois_atotarho": {
+  "attributes": [
+   {
+    "id": "iroquois_atotarho-twisted-body",
+    "name": "a body bent into seven crooks and a head of living snakes, straightened and combed at his conversion",
+    "notes": "The image of Tadodaho before peace: monstrous, snake-haired, seven-times-crooked; Hayowentha combs the snakes from his hair, the act remembered in his name.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Tadodaho'"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_yoshitsune": {
+  "attributes": [
+   {
+    "id": "japanese_yoshitsune-flute-youth",
+    "name": "Flute-playing youth on Gojō Bridge",
+    "notes": "Pictured in art as the slender boy Ushiwakamaru playing his flute by night when he meets and subdues the warrior-monk Benkei on Gojō Bridge.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ukiyo-e tradition (Yoshitoshi, Kuniyoshi); Gikeiki"
+     }
+    ]
+   }
+  ]
+ },
+ "javanese_semar": {
+  "attributes": [
+   {
+    "id": "javanese_semar-body",
+    "name": "Stout androgynous body with topknot and pendulous form",
+    "notes": "Depicted short and fat with a flat pug nose, jutting lower jaw, a single tuft/topknot of white hair, a swollen belly and rear and a checkered hip-cloth, the mandatory humble guise of the god Ismaya.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javanese wayang kulit puppet iconography of Semar"
+     }
+    ]
+   }
+  ]
+ },
+ "javanese_petruk": {
+  "attributes": [
+   {
+    "id": "javanese_petruk-figure",
+    "name": "Tall, lanky figure with a very long nose",
+    "notes": "The long pointed nose and gangling height are Petruk's defining puppet features, marking the sharp-tongued, witty son of Semar.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javanese wayang kulit puppet iconography of Petruk"
+     }
+    ]
+   }
+  ]
+ },
+ "javanese_gareng": {
+  "attributes": [
+   {
+    "id": "javanese_gareng-figure",
+    "name": "Short club-footed figure with a crippled arm",
+    "notes": "Depicted small and misshapen with a club foot and a withered arm and a halting speech, the eldest clown-son of Semar.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javanese wayang kulit puppet iconography of Gareng"
+     }
+    ]
+   }
+  ]
+ },
+ "javanese_bagong": {
+  "attributes": [
+   {
+    "id": "javanese_bagong-figure",
+    "name": "Squat, rotund figure born of Semar's shadow",
+    "notes": "The youngest panakawan, depicted short, obese and blunt-featured; in the common Javanese account he was formed from Semar's own shadow to be his companion.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javanese wayang kulit puppet iconography of Bagong"
+     }
+    ]
+   }
+  ]
+ },
+ "javanese_nyai_roro_kidul": {
+  "attributes": [
+   {
+    "id": "javanese_nyai_roro_kidul-green",
+    "name": "Sea-green raiment (gadhung mlathi)",
+    "notes": "Associated above all with the sacred sea-green colour gadhung mlathi; bathers on the south coast are warned never to wear green lest the queen claim them.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javanese southern-sea tradition; Nyai Roro Kidul legend"
+     }
+    ]
+   }
+  ]
+ },
+ "kartvelian_dali": {
+  "attributes": [
+   {
+    "id": "kartvelian_dali-golden-hair",
+    "name": "Long golden hair and glowing skin",
+    "notes": "A radiant nude woman of surpassing beauty with long golden hair (the seat of her power) and luminous skin, dwelling on inaccessible cliffs.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. Tuite, 'The Meaning of Dael'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "kartvelian_dali-ibex",
+    "name": "Ibex and tur (mountain goat)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. Tuite, 'The Meaning of Dael: Symbolic and Spatial Associations of the South Caucasian Goddess of Game Animals'"
+     }
+    ]
+   }
+  ]
+ },
+ "kartvelian_amirani": {
+  "attributes": [
+   {
+    "id": "kartvelian_amirani-sun-moon-marks",
+    "name": "Sun-and-Moon shoulder marks and golden tooth",
+    "notes": "Bore upon his shoulders the images of the Sun and Moon and had a tooth (or teeth) of gold, the bodily signs of his semi-divine birth from the goddess Dali.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Georgian Amirani epic (Svan recension); D. Kiziria, 'Amirani, a Georgian Folk Hero'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "kartvelian_amirani-kursha",
+    "name": "Q'ursha, the winged hound",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Georgian Amirani cycle; Q'ursha ('Black-ear') the dog who licks his chains"
+     }
+    ]
+   }
+  ]
+ },
+ "kalash_indr": {
+  "attributes": [
+   {
+    "id": "kalash_indr-rainbow-bow",
+    "name": "The rainbow as Indra's bow",
+    "notes": "The rainbow is named 'Indra's bow' as in the Veda, and thunder is Indra at play; Warīn's shrine site was fixed by a bow-shot, echoing the Vedic Indra's bow.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Witzel, 'The Religions of the Hindukush'"
+     }
+    ]
+   }
+  ]
+ },
+ "ket_tomam": {
+  "sacredAnimals": [
+   {
+    "id": "ket_tomam-waterfowl",
+    "name": "Migratory geese and ducks",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. J. Vajda, Siberian Landscapes in Ket Traditional Culture"
+     }
+    ]
+   }
+  ]
+ },
+ "khanty_kaltes_ekwa": {
+  "sacredAnimals": [
+   {
+    "id": "khanty_kaltes_ekwa-hare",
+    "name": "hare",
+    "notes": "Her commonest theriomorphic form; she manifests as a hare, linking her to the moon and to renewal of life.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+     }
+    ]
+   },
+   {
+    "id": "khanty_kaltes_ekwa-goose",
+    "name": "goose/bird-woman",
+    "notes": "She also takes the shape of a bird (goose), the bird-woman form in which she descends and is invoked.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+     }
+    ]
+   }
+  ]
+ },
+ "khanty_mir_susne_khum": {
+  "attributes": [
+   {
+    "id": "khanty_mir_susne_khum-radiant-rider",
+    "name": "radiant horseman crossing the sky",
+    "notes": "Depicted as a shining rider on his winged horse making a daily circuit of the heavens; his image is embroidered on the sacrificial horse-cloth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "khanty_mir_susne_khum-goose",
+    "name": "goose/swan",
+    "notes": "One of the shapes the World-Watching Man takes to move between the worlds; the goose is closely associated with his cult.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+     }
+    ]
+   }
+  ]
+ },
+ "khanty_kul_otyr": {
+  "attributes": [
+   {
+    "id": "khanty_kul_otyr-black",
+    "name": "blackness",
+    "notes": "The underworld lord is figured as black; the animals sacrificed to him are required to be black, in contrast with the bright upper-world gods.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FFC, 1921-1927)"
+     }
+    ]
+   }
+  ]
+ },
+ "khoekhoe_heitsi_eibib": {
+  "attributes": [
+   {
+    "id": "khoekhoe_heitsi_eibib-cairn",
+    "name": "the stone cairn-grave",
+    "notes": "His defining marker: heaps of stones at mountain passes and roadsides across Namaland and the Northern Cape, each a place where he died and was reborn, to which passers add a stone.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Theophilus Hahn, Tsuni-||Goam: The Supreme Being of the Khoi-Khoi (1881)"
+     }
+    ]
+   }
+  ]
+ },
+ "kikuyu_ngai": {
+  "sacredPlants": [
+   {
+    "id": "kikuyu_ngai-mugumo",
+    "name": "mugumo (sacred fig, Ficus thonningii/natalensis)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Jomo Kenyatta, Facing Mount Kenya (1938)"
+     }
+    ]
+   }
+  ]
+ },
+ "kikuyu_gikuyu": {
+  "sacredPlants": [
+   {
+    "id": "kikuyu_gikuyu-mugumo",
+    "name": "mugumo (sacred fig) of the first homestead",
+    "notes": "Gikuyu sacrifices under the mugumo fig at Mukurwe wa Nyagathanga to obtain husbands for his daughters; the fig grove is the founding shrine of the clans.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Jomo Kenyatta, Facing Mount Kenya (1938)"
+     }
+    ]
+   }
+  ]
+ },
+ "kiribati_auriaria": {
+  "attributes": [
+   {
+    "id": "kiribati_auriaria-red-giant",
+    "name": "red-skinned giant",
+    "notes": "Pre-eminent ancestor figured as a giant of red (sun-coloured) skin and red hair come from Samoa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "kiribati_auriaria-rat",
+    "name": "rat (kimoa)",
+    "notes": "His totem is the kimoa (rat), the dweller in the pandanus of which he is lord.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "kiribati_auriaria-pandanus",
+    "name": "pandanus",
+    "notes": "Auriaria is the uea (lord) of the pandanus tree, the staple of the atolls.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
+     }
+    ]
+   }
+  ]
+ },
+ "kiribati_nei_tituaabine": {
+  "attributes": [
+   {
+    "id": "kiribati_nei_tituaabine-lightning-eyes",
+    "name": "eyes that flash like lightning",
+    "notes": "A red-haired woman whose eyes flash like lightning, the trait that links her to the storm.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
+     }
+    ]
+   }
+  ]
+ },
+ "khoekhoe_gaunab": {
+  "attributes": [
+   {
+    "id": "khoekhoe_gaunab-black-sky",
+    "name": "the Black Sky",
+    "notes": "||Gaunab dwells in and is identified with the dark/black sky from which he sends sickness and death, the cosmic opposite of the dawn-god's bright sky.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Theophilus Hahn, Tsuni-||Goam: The Supreme Being of the Khoi-Khoi (1881)"
+     }
+    ]
+   }
+  ]
  }
 };
 /* ENRICH_SWEEP_END */
