@@ -231,13 +231,31 @@
         "kind": "substance",
         "sources": [{"kind": "secondary", "reference": "Grokipedia, 'Supay'; godsandmonsters.info, 'Andes Mythology' (El Tío of the mines)"}]
       }
+    ],
+    "inca_mama_ocllo": [
+      {
+        "id": "inca_mama_ocllo-loom",
+        "name": "backstrap loom and spindle (the weaving she taught the women)",
+        "classId": "tool",
+        "kind": "implement",
+        "sources": [{"kind": "primary", "reference": "Garcilaso de la Vega, Comentarios Reales de los Incas (Mama Ocllo teaches spinning and weaving)"}]
+      }
+    ],
+    "inuit_sedna": [
+      {
+        "id": "inuit_sedna-comb",
+        "name": "her tangled hair, combed and braided by the shaman in propitiation",
+        "classId": "attribute",
+        "kind": "body-part",
+        "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Sedna (mythology)' (the shaman combs her filth-laden hair)"}]
+      }
     ]
   },
   "domains": {
     "inca_mama_killa": [
       {"sphereId": "moon", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Mama Killa'"}]},
-      {"sphereId": "marriage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Ancient Pages, 'Mama Quilla' (patroness of marriage and women)"}]},
-      {"sphereId": "time-and-calendar", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Mama Killa' (the lunar calendar; quilla = month)"}]}
+      {"sphereId": "fertility-and-marriage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Ancient Pages, 'Mama Quilla' (patroness of marriage and women)"}]},
+      {"sphereId": "time-and-seasons", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Mama Killa' (the lunar calendar; quilla = month)"}]}
     ],
     "inti": [
       {"sphereId": "sun", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Britannica, 'Inti'"}]},
@@ -251,7 +269,7 @@
       {"sphereId": "creation", "contextTag": "myth", "sources": [{"kind": "secondary", "reference": "Grokipedia, 'Makunaima' (the brothers and the tree of life / flood)"}]}
     ],
     "inca_supay": [
-      {"sphereId": "mining-and-metals", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Grokipedia, 'Supay' (Lord of Metals; owner of the mountain interior)"}]}
+      {"sphereId": "metals", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Grokipedia, 'Supay' (Lord of Metals; owner of the mountain interior)"}]}
     ]
   },
   "epithets": {
@@ -460,6 +478,11 @@
     "inuit_sila": {
       "attributes": [
         {"id": "inuit_sila-giant-infant", "name": "formless indweller of the air; among Netsilik and Copper Inuit a giant naked infant (Naarjuk) whose breath is the wind", "notes": "Usually without fixed form, the life-force pervading the cosmos and weather; personified as the orphan giant-baby Naarjuk whose stirrings raise storms, which the shaman calms by tightening his garment.", "sources": [{"kind": "secondary", "reference": "Wikipedia, 'Silap Inua'; Saladin d'Anglure (Naarjuk among the Netsilik)"}]}
+      ]
+    },
+    "inca_mama_ocllo": {
+      "attributes": [
+        {"id": "inca_mama_ocllo-weaver-coya", "name": "first Coya at the loom, teaching women to spin and weave", "notes": "The founding queen is figured with the distaff and backstrap loom as the bringer of the domestic and textile arts to Andean women.", "sources": [{"kind": "primary", "reference": "Garcilaso de la Vega, Comentarios Reales de los Incas"}]}
       ]
     }
   }

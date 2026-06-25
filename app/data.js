@@ -368617,9 +368617,9 @@ const FACULTY_SWEEP = {
    "ability": true
   }
  ],
- "greek_hesiod_iasion": [
+ "greek_iasion": [
   {
-   "id": "greek_hesiod_iasion-mysteries",
+   "id": "greek_iasion-mysteries",
    "name": "Founds and teaches the Samothracian Mysteries",
    "notes": "Zeus taught Iasion the rites of the Great Gods of Samothrace, and he was first to initiate strangers, raising the mysteries to high repute.",
    "inheritability": "none",
@@ -368632,7 +368632,7 @@ const FACULTY_SWEEP = {
    "ability": true
   },
   {
-   "id": "greek_hesiod_iasion-demeter-union",
+   "id": "greek_iasion-demeter-union",
    "name": "Begets agricultural Wealth on Demeter",
    "notes": "Lying with Demeter in a thrice-ploughed field he fathered Plutus (Wealth), the wealth of the corn; for the union Zeus struck him with a thunderbolt.",
    "inheritability": "none",
@@ -369494,6 +369494,321 @@ const FACULTY_SWEEP = {
    "ability": true
   }
  ],
+ "hindu_nasatya": [
+  {
+   "id": "hindu_nasatya-madhuvidya",
+   "name": "Holds the Madhuvidya, the honey-doctrine of life-restoring medicine learned from Dadhyañc",
+   "term": {
+    "value": "मधुविद्या",
+    "script": "Devanagari",
+    "rom": "madhuvidyā"
+   },
+   "notes": "With his twin he obtained the secret honey-knowledge from the sage Dadhyañc by replacing his head with a horse's head; thereby the Aśvins became the physicians of the gods.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda 1.116-117; Shatapatha Brahmana 14.1.1"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_prithvi": [
+  {
+   "id": "hindu_prithvi-paired-with-dyaus",
+   "name": "Forms with the sky-father Dyaus the world-parent pair that engenders and upholds all beings",
+   "term": {
+    "value": "द्यावापृथिवी",
+    "script": "Devanagari",
+    "rom": "dyāvāpṛthivī"
+   },
+   "notes": "Hymned in the Rigveda jointly as Dyāvāpṛthivī, the dual sky-and-earth, the broad parents who hold creatures, gods, and the cosmic order between them.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda 1.159; 1.160; 6.70"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_ulupi": [
+  {
+   "id": "hindu_ulupi-nagakanya",
+   "name": "Moves between the serpent-realm and the surface as a Naga princess, half-maiden and half-serpent",
+   "term": {
+    "value": "नागकन्या",
+    "script": "Devanagari",
+    "rom": "nāgakanyā"
+   },
+   "notes": "Daughter of the Naga king Kauravya; commands the waters and depths of the Naga world and draws Arjuna into it.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva (Arjuna's pilgrimage)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hindu_ulupi-sanjivani-revival",
+   "name": "Commands the use of the Naga life-restoring gem to revive the slain",
+   "notes": "In the Ashvamedhika Parva she has the Mṛtasaṃjīvanī gem brought from the Naga realm and instructs Babhruvāhana to lay it on the fallen Arjuna, restoring him to life and lifting the Vasu-curse upon him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Ashvamedhika Parva (Babhruvahana episode)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_uparichara_vasu": [
+  {
+   "id": "hindu_uparichara_vasu-sky-traveller",
+   "name": "Moves through the air at will in the crystal celestial chariot given by Indra",
+   "term": {
+    "value": "उपरिचर",
+    "script": "Devanagari",
+    "rom": "uparicara"
+   },
+   "notes": "His byname 'the upward-mover' derives from this gift; Indra rewarded his austerities with a sky-going crystal car that let him traverse the heavens like a god.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva (Uparichara Vasu)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_satyavati": [
+  {
+   "id": "hindu_satyavati-niyoga-foundress",
+   "name": "Secures the Kuru succession by invoking the niyoga levirate, summoning Vyasa to beget heirs",
+   "term": {
+    "value": "नियोग",
+    "script": "Devanagari",
+    "rom": "niyoga"
+   },
+   "notes": "After her sons by Shantanu die heirless, she calls her firstborn Vyasa to father Dhritarashtra and Pandu upon the widowed queens, on which the whole later epic turns.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva (Satyavati's resolve)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_parashara": [
+  {
+   "id": "hindu_parashara-vishnu-purana",
+   "name": "Promulgates the Vishnu Purana, the foundational Vaishnava cosmology recited to Maitreya",
+   "notes": "Tradition credits Parashara as the original speaker of the Vishnu Purana, later redacted by his son Vyasa; he expounds creation, the yugas, and royal genealogies to his pupil Maitreya.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Vishnu Purana, Book 1"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hindu_parashara-jyotisha",
+   "name": "Founds the science of horoscopy as reputed author of the Brihat Parashara Hora Shastra",
+   "term": {
+    "value": "होरा",
+    "script": "Devanagari",
+    "rom": "horā"
+   },
+   "notes": "Hindu astrological tradition regards Parashara as a father of Jyotisha; the Brihat Parashara Hora Shastra is ascribed to him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Brihat Parashara Hora Shastra (attributed)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hindu_parashara-rakshasa-sattra",
+   "name": "Kindles the rakshasa-destroying sacrifice to avenge his devoured father, then relents at Vasishtha's word",
+   "term": {
+    "value": "राक्षससत्र",
+    "script": "Devanagari",
+    "rom": "rākṣasa-sattra"
+   },
+   "notes": "Learning a rakshasa had eaten his father Shakti, he begins a sacrifice consuming the rakshasas by hundreds; his grandfather Vasishtha and the sage Pulastya persuade him to halt it.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva; Vishnu Purana, Book 1"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_vidura": [
+  {
+   "id": "hindu_vidura-dharma-incarnate",
+   "name": "Embodies Dharma in mortal form, born of Yama under the curse of the sage Mandavya",
+   "term": {
+    "value": "धर्म",
+    "script": "Devanagari",
+    "rom": "dharma"
+   },
+   "notes": "Yama, cursed by Mandavya for an unjust impalement, is born as the maidservant's son Vidura; at his death his spirit merges back into Yudhishthira, Dharma's other son.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva; Stri Parva"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hindu_vidura-niti",
+   "name": "Counsels kings in statecraft and righteousness, delivering the Vidura-niti to Dhritarashtra",
+   "term": {
+    "value": "विदुरनीति",
+    "script": "Devanagari",
+    "rom": "vidura-nīti"
+   },
+   "notes": "His discourse on the duties of rulers and the conduct of the wise (Udyoga Parva 33-40) is preserved as the Vidura-niti; he repeatedly warns against the war.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Udyoga Parva (Prajagara / Vidura-niti)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_vibhishana": [
+  {
+   "id": "hindu_vibhishana-dharma-defection",
+   "name": "Forsakes his unrighteous brother to take refuge with Rama, choosing dharma over kin",
+   "notes": "Rebuked for opposing Sita's abduction, he crosses to Rama's camp, is granted asylum, and is consecrated future king of Lanka before the war.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Yuddha Kanda (Vibhishana-sharanagati)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "hindu_vibhishana-counsel",
+   "name": "Reveals the secret weaknesses of Lanka's defenders, guiding the vanaras to victory",
+   "notes": "His knowledge of rakshasa rites and warriors lets Rama counter Indrajit's sacrifices and identify the foes; he performs Ravana's last rites after the battle.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Yuddha Kanda"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_sumali": [
+  {
+   "id": "hindu_sumali-lanka-conquest",
+   "name": "Wins Lanka and dominion over the three worlds through the unbreakable bond and boon of Brahma",
+   "notes": "With his brothers Mālyavān and Māli he gains from Brahma indomitable strength and brotherly union, seizes the city of Lanka built by Vishvakarman, and rules until driven by Vishnu into Pātāla.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Uttara Kanda (sons of Sukesha)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_shatrughna": [
+  {
+   "id": "hindu_shatrughna-lavanasura",
+   "name": "Slays the demon Lavanasura with a Vishnu-empowered shaft and founds the city of Mathura",
+   "term": {
+    "value": "शत्रुघ्न",
+    "script": "Devanagari",
+    "rom": "śatrughna"
+   },
+   "notes": "His name, 'slayer of foes', is borne out when he kills Lavana, nephew of Ravana, at Madhupura and is crowned king there, refounding it as Mathura.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Uttara Kanda (Lavanasura)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_sampati": [
+  {
+   "id": "hindu_sampati-points-to-lanka",
+   "name": "Discerns Sita's prison across the ocean with far-sight and directs Hanuman's host to Lanka",
+   "notes": "Wingless on the Vindhya shore, the aged vulture tells the searching vanaras that Sita is held a hundred yojanas across the sea in Ravana's Lanka; on rendering this service in Rama's name his wings regrow.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Kishkindha Kanda (Sampati)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_parikshit": [
+  {
+   "id": "hindu_parikshit-revived-in-womb",
+   "name": "Is revived in the womb by Krishna after Ashvatthaman's Brahmastra burns the embryo",
+   "term": {
+    "value": "परीक्षित्",
+    "script": "Devanagari",
+    "rom": "parīkṣit"
+   },
+   "notes": "Aśvatthāmā's weapon strikes the unborn child in Uttarā's womb; Krishna restores him, whence his name 'the tested one'. As sole Kuru survivor he succeeds Yudhishthira and rules sixty years.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Sauptika Parva; Bhagavata Purana, Book 1"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hindu_vasudeva": [
+  {
+   "id": "hindu_vasudeva-carries-krishna",
+   "name": "Bears the infant Krishna across the flooding Yamuna to safety as his chains fall away",
+   "notes": "Imprisoned by Kamsa, on Krishna's birth his fetters open and the prison guards sleep; he carries the child through the parting, Shesha-sheltered Yamuna to Gokula and exchanges him for Yashoda's daughter.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Bhagavata Purana, Book 10; Vishnu Purana, Book 5"
+    }
+   ],
+   "ability": true
+  }
+ ],
  "hittite_arinna": [
   {
    "id": "hittite_arinna-grant-kingship",
@@ -369882,6 +370197,186 @@ const FACULTY_SWEEP = {
    "ability": true
   }
  ],
+ "huli_honabe": [
+  {
+   "id": "huli_honabe-bring-forth-deities",
+   "name": "Brings forth the first generation of deities and of the world's creatures",
+   "term": {
+    "value": "Honabe wali",
+    "script": "Latin",
+    "rom": "Honabe wali"
+   },
+   "notes": "Primordial procreatrix; after union with Timbu she bears the gods Korimogo, Heyolabe, Piandela, Ni (sun) and Hela, the goddess Hana (moon), and a later generation that includes the first bird, possum and pig, hills, trees, bows and arrows, and fire and water.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "R. M. Glasse, 'The Huli of the Southern Highlands' / Mythosphere, Huli mythology"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "huli_timbu": [
+  {
+   "id": "huli_timbu-sire-the-gods",
+   "name": "Sires the primordial deities upon the creator-mother Honabe",
+   "notes": "Male sky-being who seduces/unites with Honabe wali, fathering the first generation of Huli gods; stands above the lesser dama nature-spirits.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mythosphere, Huli mythology (after Glasse)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "huli_ni": [
+  {
+   "id": "huli_ni-warmth-of-day",
+   "name": "Gives light and warmth as the personified sun",
+   "notes": "Huli ni, 'sun'; son of Honabe and Timbu, paired with his sister Hana the moon. Unlike the supreme Datagaliwabe, Ni and Hana are reckoned among the dama (divinities).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mythosphere, Huli mythology; Glasse, Huli of the Southern Highlands"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "huli_hana": [
+  {
+   "id": "huli_hana-light-of-night",
+   "name": "Becomes and governs the moon, the great night-light",
+   "notes": "Huli hana, 'moon'; the one daughter among Honabe's children, an important deity paired with her brother Ni the sun. Reckoned among the dama.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mythosphere, Huli mythology; Glasse, Huli of the Southern Highlands"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hungarian_emese": [
+  {
+   "id": "hungarian_emese-dream-of-the-turul",
+   "name": "Receives the founding Dream of the Turul, conceiving the royal line",
+   "term": {
+    "value": "Emese álma",
+    "script": "Latin",
+    "rom": "Emese álma"
+   },
+   "notes": "While pregnant she dreams that a Turul bird comes upon her and that a stream issues from her womb from which great kings will spring; her son is therefore named Álmos, 'the Dreamt One', ancestor of the Árpáds.",
+   "inheritability": "partial",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Anonymus, Gesta Hungarorum; Simon of Kéza, Gesta Hunnorum et Hungarorum"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hungarian_eneh": [
+  {
+   "id": "hungarian_eneh-totemic-hind-mother",
+   "name": "Bears the twin progenitors Hunor and Magor as the totemic hind-ancestress",
+   "term": {
+    "value": "Enéh",
+    "script": "Latin",
+    "rom": "Enéh"
+   },
+   "notes": "Wife of the giant-hunter Nimród (Ménrót); her name derives from the old Hungarian word for 'hind' (enéh/ünő), read as a survival of belief in a hind as totemic ancestress of the Magyars.",
+   "inheritability": "partial",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Simon of Kéza, Gesta Hunnorum et Hungarorum"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hungarian_hunor": [
+  {
+   "id": "hungarian_hunor-pursuit-of-the-stag",
+   "name": "Pursues the csodaszarvas into Meotis and founds the Hun nation",
+   "term": {
+    "value": "csodaszarvas",
+    "script": "Latin",
+    "rom": "csodaszarvas"
+   },
+   "notes": "Elder son of Nimród and Enéh; with his brother Magor he chases the wondrous white stag into the Meotis marshes, where the brothers settle, marry two princesses and become eponymous fathers of the Huns (Hunor) and Magyars (Magor).",
+   "inheritability": "partial",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Simon of Kéza, Gesta Hunnorum et Hungarorum"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "hungarian_magor": [
+  {
+   "id": "hungarian_magor-progenitor-of-the-magyars",
+   "name": "Follows the wondrous stag and fathers the Magyar people",
+   "term": {
+    "value": "csodaszarvas",
+    "script": "Latin",
+    "rom": "csodaszarvas"
+   },
+   "notes": "Younger son of Nimród and Enéh; with Hunor he pursues the csodaszarvas into the Meotis marshes and becomes the eponymous ancestor of the Magyars (Hungarians).",
+   "inheritability": "partial",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Simon of Kéza, Gesta Hunnorum et Hungarorum"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ifugao_dugai": [
+  {
+   "id": "ifugao_dugai-mortal-mother-of-thunder",
+   "name": "Bears the thunder-child Ovug to the skyworld deity Dumagid",
+   "notes": "Mortal Benguet woman, wife of Dumagid; on the journey toward the skyworld she dies as they near the sun, the loss that leads Dumagid to return and split their son Ovug into the two thunder-voices.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ifugao myth, 'Origin of Thunder and Lightning' (The Aswang Project)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "igbo_idemili": [
+  {
+   "id": "igbo_idemili-pillar-of-waters",
+   "name": "Stands as the pillar that holds up the waters, commanding rain and flood",
+   "term": {
+    "value": "Idemili",
+    "script": "Latin",
+    "rom": "Idemili"
+   },
+   "notes": "Her name glosses as 'pillar of waters'; she governs the river that bears her name through Anambra, controlling rains and floods and granting fertility.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo oral tradition; Igbo water-divinity ethnography"
+    }
+   ],
+   "ability": true
+  }
+ ],
  "ijaw_tamuno": [
   {
    "id": "ijaw_tamuno-create-all",
@@ -370007,9 +370502,9 @@ const FACULTY_SWEEP = {
    "ability": true
   }
  ],
- "inca_inti": [
+ "inti": [
   {
-   "id": "inca_inti-send-first-inca",
+   "id": "inti-send-first-inca",
    "name": "send forth Manco Cápac and the first Inca to found Cuzco",
    "notes": "As divine father of the dynasty Inti dispatches the founders with the golden staff to seek the site of his temple.",
    "inheritability": "none",
@@ -370062,6 +370557,64 @@ const FACULTY_SWEEP = {
     {
      "kind": "primary",
      "reference": "Garcilaso de la Vega, Comentarios Reales de los Incas (bk. 1)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "inuit_sedna": [
+  {
+   "id": "inuit_sedna-fingers-to-animals",
+   "name": "give rise to the sea-mammals from her severed finger-joints",
+   "notes": "Cast from her father's boat, she clung to the gunwale until he cut off her fingers joint by joint; the falling joints became the seals, then the walrus, then the whales, and she sank to rule them on the sea floor.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Sedna (mythology)'; Rasmussen, Intellectual Culture of the Iglulik Eskimos"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "inuit_anningan": [
+  {
+   "id": "inuit_anningan-hunt-seals",
+   "name": "drive a dog-sledge abroad to hunt seals when the moon wanes",
+   "notes": "In the waning quarter the hungry Moon Man harnesses his dogs and leaves to hunt seals, disappearing some days (the new moon) before returning full; his neglect of food in pursuit of his sister explains the thinning crescent.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Sun and Moon (Inuit myth)'; Windows to the Universe, 'Anningan'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "ijaw_ogboinba": [
+  {
+   "id": "ijaw_ogboinba-take-others-powers",
+   "name": "strip and absorb the magical powers of those she defeats",
+   "notes": "Journeying back to confront the creatress, the sorceress overcame and took the powers of a succession of guardian-figures, growing ever stronger until she challenged Woyengi herself.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Ogboinba'; Oriire, 'Woyengi and Ogboinba'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "ijaw_ogboinba-hide-in-eye",
+   "name": "take refuge inside the pupil of a pregnant woman's eye",
+   "notes": "Defeated and stripped of her powers by Woyengi, she fled into the eyes of a pregnant woman; the Ijaw say it is Ogboinba who looks back from every human eye.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Ogboinba'"
     }
    ],
    "ability": true
@@ -370507,6 +371060,66 @@ const FACULTY_SWEEP = {
    "ability": true
   }
  ],
+ "irish_emer": [
+  {
+   "id": "irish_emer-six-gifts",
+   "name": "possesses the six gifts of womanhood: beauty, voice, sweet speech, needlework, wisdom and chastity",
+   "notes": "Tochmarc Emire names Emer as the only woman fit for Cú Chulainn because she holds the six gifts; he woos her through a contest of riddling, cryptic speech.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Tochmarc Emire (The Wooing of Emer)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_ferdiad": [
+  {
+   "id": "irish_ferdiad-horn-skin",
+   "name": "bears a horn-skin (conganchnes) that no point or edge can pierce",
+   "notes": "Táin Bó Cúailnge: Ferdiad equals Cú Chulainn in every feat save two — Cú Chulainn alone has the Gáe Bulg, and Ferdiad alone has the impenetrable horn-skin, which is why Cú Chulainn must resort to the Gáe Bulg from below the water to kill him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Táin Bó Cúailnge (The Cattle Raid of Cooley)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_findabair": [
+  {
+   "id": "irish_findabair-offered-bride-price",
+   "name": "offered in marriage, again and again, as the bait to send champions against Cú Chulainn",
+   "notes": "Táin Bó Cúailnge: Medb and Ailill promise their daughter's hand to one warrior after another to lure them into facing Cú Chulainn; when the deception is exposed she dies of shame (or, in one telling, for love of Fráech).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Táin Bó Cúailnge (The Cattle Raid of Cooley)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "irish_bodb_derg": [
+  {
+   "id": "irish_bodb_derg-king-of-sidhe",
+   "name": "elected king over the Tuatha Dé Danann of the sídhe after they withdraw underground",
+   "notes": "Oidheadh Chloinne Lir / Mythological Cycle: when the Tuath Dé retire into the hollow hills, Bodb Derg son of the Dagda is chosen king of the sídhe over Lir, who is reconciled to him by the gift of his foster-daughter Aobh.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Oidheadh Chloinne Lir (The Fate of the Children of Lir)"
+    }
+   ],
+   "ability": true
+  }
+ ],
  "iroquois_handsome_lake": [
   {
    "id": "iroquois_handsome_lake-visions",
@@ -370517,6 +371130,163 @@ const FACULTY_SWEEP = {
     {
      "kind": "primary",
      "reference": "Arthur C. Parker, The Code of Handsome Lake, the Seneca Prophet (1913)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "iroquois_hino": [
+  {
+   "id": "iroquois_hino-thunderbolt-hurler",
+   "name": "Hurl the thunderbolts and lightning of the storm",
+   "notes": "As leader of the winged race of Thunderers (the Hadu'i / Hinon brothers), He-no travels the western clouds carrying a pouch of thunderbolts and a basket of chert boulders which he casts at evil spirits; the bolts that miss fall to earth as lightning.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Harriet Maxwell Converse, Myths and Legends of the New York State Iroquois (1908)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "iroquois_hino-serpent-slayer",
+   "name": "Slay the great horned water-serpents",
+   "notes": "He-no is the sworn enemy of the monstrous horned serpent (Oniare) that lurks in lakes and rivers; he tracks and destroys these and other monsters with his bolts, keeping the ordered world safe for the people.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Erminnie A. Smith, Myths of the Iroquois (BAE 2nd Annual Report, 1883)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "iroquois_hino-rain-bringer",
+   "name": "Bring the life-giving rains that ripen the crops",
+   "notes": "Revered as the bringer of the rains that nourish the corn, beans and squash; addressed in the Thanksgiving Address among the powers that sustain the people.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Smith, Myths of the Iroquois (1883)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "iroquois_teharonhiawako": [
+  {
+   "id": "iroquois_teharonhiawako-make-beneficial-creation",
+   "name": "Make the gentle rivers, food plants and useful animals",
+   "notes": "The Sapling/good twin forms straight rivers, fruit-bearing plants and docile creatures such as the deer, in contrast to his brother Flint who makes rapids, thorns and predators; he gives humankind the arts of living and the ceremonies.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. N. B. Hewitt, Iroquoian Cosmology, First Part (BAE 21st Annual Report, 1903)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "iroquois_teharonhiawako-overcome-flint",
+   "name": "Overcome the destructive twin in the world-shaping contest",
+   "notes": "In the final duel that fixes the order of the world Sapling defeats Flint (in most recensions with deer-horn as the lethal weapon), securing day, summer and life for the people and confining his brother to the cold half of the year.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hewitt, Iroquoian Cosmology (1903)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "iroquois_tawiskaron": [
+  {
+   "id": "iroquois_tawiskaron-make-hardship-creation",
+   "name": "Make the hardships of the world — rapids, frost, thorns and monsters",
+   "notes": "The flinty Evil-Minded twin answers his brother's good creation by spoiling it: he raises rapids and waterfalls, brings frost and winter, makes predatory beasts and the monstrous serpents, and is overcome in the final contest.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. N. B. Hewitt, Iroquoian Cosmology, First Part (BAE 21st Annual Report, 1903)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "iroquois_tekawerahkwa": [
+  {
+   "id": "iroquois_tekawerahkwa-bear-the-twins",
+   "name": "Conceive the rival Twins by the Wind and die bearing them",
+   "notes": "Impregnated by the West Wind, she dies when the destructive twin Flint forces his way out through her side; her death is the origin of the Twins who shape the world.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. N. B. Hewitt, Iroquoian Cosmology, First Part (BAE 21st Annual Report, 1903)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "iroquois_tekawerahkwa-origin-of-crops",
+   "name": "Give the staple crops from her buried body",
+   "notes": "From her grave grow the Three Sisters — maize from her breast, beans and squash from her hands and navel — together with tobacco from her head; she is the source of the people's food.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hewitt, Iroquoian Cosmology (1903)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "itelmen_sinanevt": [
+  {
+   "id": "itelmen_sinanevt-clever-heroine",
+   "name": "Prevail by cleverness and craft in the folktales",
+   "notes": "Daughter of the raven-creator Kutkh and Miti and one of the most frequent protagonists of recorded Itelmen tales, where she succeeds through industry and wit against ogres and against her foolish kin.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Waldemar Jochelson / Jesup North Pacific Expedition, Kamchadal (Itelmen) folklore"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "itelmen_miti": [
+  {
+   "id": "itelmen_miti-co-create-and-mother",
+   "name": "Help create the world and mother the first family",
+   "notes": "With her husband the raven-creator Kutkh, Miti is said to help fashion the world and bears their children — sons Ememqut and Kotxanamtalxan and daughters including Sinanevt — the Kamchatkan first family.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "S. P. Krasheninnikov, Account of the Land of Kamchatka (1755)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "japanese_sanetomo": [
+  {
+   "id": "japanese_sanetomo-waka-poet",
+   "name": "Compose waka of the first rank in the archaic Manyo manner",
+   "notes": "Tutored at a distance by Fujiwara no Teika, the third Kamakura shogun left some 700 poems collected in the Kinkai Wakashu and a verse in the Ogura Hyakunin Isshu, prized for a vigorous archaic style.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Minamoto no Sanetomo, Kinkai Wakashu"
     }
    ],
    "ability": true
@@ -370860,6 +371630,717 @@ const FACULTY_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kiribati_tabakea": [
+  {
+   "id": "kiribati_tabakea-shell-island",
+   "name": "Turn his own shell into the land of Banaba",
+   "notes": "In the Banaban (Ocean Island) cosmogony the primordial turtle Tabakea is the first of all beings, and the island of Banaba is formed from his carapace; he is the giant turtle upon whose back the land rests.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Grimble, Tungaru Traditions: Writings on the Atoll Culture of the Gilbert Islands"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "kiribati_tabakea-birth-nareau",
+   "name": "Bring forth Nareau from a clam shell",
+   "notes": "In the Banaban recension Tabakea burns a small lizard, sets the ashes in a clam shell of water, and after three moons the demiurge Nareau emerges as a tiny dark man whom Tabakea claims as son.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Grimble, Tungaru Traditions; Banaban creation account"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kiribati_te_ikawai": [
+  {
+   "id": "kiribati_te_ikawai-first-born",
+   "name": "Stand as the first-born of the second generation",
+   "notes": "Te Ikawai (the Eldest) is named in the Tungaru creation-genealogy as the senior child of the generation that springs from Na Atibu, heading the line of personified primordial beings.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Grimble, Tungaru Traditions, creation genealogy"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kiribati_te_nao": [
+  {
+   "id": "kiribati_te_nao-personified-wave",
+   "name": "Embody the surge of the sea-wave",
+   "notes": "Te Nao (the Wave) is the personified ocean-swell, one of the named second-generation beings of the Tungaru creation-genealogy who arise as Nareau orders the primal darkness.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Grimble, Tungaru Traditions, creation genealogy"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kiwai_dirivo": [
+  {
+   "id": "kiwai_dirivo-underworld-bride",
+   "name": "Dwell as mistress in the land of the dead",
+   "notes": "Daughter of the eponymous Adiri and bride of Sido, she receives the first man to die into the underworld of Adiri in Landtman's recension of the Kiwai death-myth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "G. Landtman, The Folk-Tales of the Kiwai Papuans; The Kiwai Papuans of British New Guinea"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kiwai_nuga": [
+  {
+   "id": "kiwai_nuga-crocodile-form",
+   "name": "Take the shape of a crocodile-man",
+   "notes": "A theriomorphic origin-ancestor born from wood, Nuga is a crocodile-man whose form joins human and crocodile, one of the renowned Kiwai mythic figures alongside Sido and Marunogere.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "G. Landtman, The Kiwai Papuans of British New Guinea"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kongo_simbi": [
+  {
+   "id": "kongo_simbi-shape-shifting",
+   "name": "Appear as snake, fire-spark, vine or human",
+   "notes": "The bisimbi nature-spirits manifest in many forms - a person, a great serpent, a calabash vine, pottery, or a spark of fire (kalunga) like the spark that began the world.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "W. MacGaffey, Religion and Society in Central Africa: The BaKongo of Lower Zaire"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "kongo_simbi-kalunga-passage",
+   "name": "Travel the kalunga line between the living and the dead",
+   "notes": "Bisimbi are intermediaries who cross the kalunga boundary between Ku Seke (the world of the living) and Ku Mpemba (the world of the ancestors), guiding souls and linking the living to the dead.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "W. MacGaffey, Religion and Society in Central Africa"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "korean_cheonjiwang": [
+  {
+   "id": "korean_cheonjiwang-sire-twins",
+   "name": "Descend and sire the star-king twins",
+   "notes": "After ordering heaven and earth the celestial king Cheonjiwang descends and lies with the earthly woman Chongmyong-buin (Baji-wang), begetting the twin sons Daebyeolwang and Sobyeolwang.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Cheonjiwang Bonpuri (Jeju creation hymn), as recorded in Korean shamanic narrative collections"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "korean_cheonjiwang-decree-doubled-luminaries",
+   "name": "Decree the destruction of the doubled sun and moon",
+   "notes": "He instructs his sons to shoot down the surplus sun and surplus moon with bows of melted iron, making the scorched and frozen world fit to live in.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Cheonjiwang Bonpuri (Jeju creation hymn)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "korean_daebyeolwang": [
+  {
+   "id": "korean_daebyeolwang-grow-true-flower",
+   "name": "Grow the true flower in the contest for the worlds",
+   "notes": "In the flower-growing contest for rule of the living world the honest elder twin grows the genuine bloom, but his brother swaps the pots in his sleep and steals the living world by fraud, so Daebyeolwang takes the realm of the dead.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Cheonjiwang Bonpuri (Jeju creation hymn)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "korean_habaek": [
+  {
+   "id": "korean_habaek-shapeshift-duel",
+   "name": "Contend in a shapeshifting duel",
+   "notes": "Outraged at Haemosu's abduction of his daughter Yuhwa, the river-god turns into a carp, a deer, and a quail in a metamorphosis contest, but is bested at each turn (otter, wolf, hawk).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yi Gyu-bo, Dongmyeongwang-pyeon; Samguk Yusa"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "korean_sobyeolwang": [
+  {
+   "id": "korean_sobyeolwang-flower-swap",
+   "name": "Win the living world by the swapped flower",
+   "notes": "The younger star-king twin steals rule of the living world by switching the contest-flowers while his elder brother sleeps, so that the world of the living falls under his flawed and deceitful order.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Cheonjiwang Bonpuri (Jeju creation hymn)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "korean_yuri": [
+  {
+   "id": "korean_yuri-broken-sword-token",
+   "name": "Prove his descent with the broken sword",
+   "notes": "Yuri recovers the missing half of Jumong's broken sword, hidden under a pillar, and presents it at Jolbon to be recognized as the founder's true son and heir to Goguryeo.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Samguk Sagi, Goguryeo annals, reign of Yuri"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "korean_yuri-hwangjoga",
+   "name": "Compose the Song of the Orioles (Hwangjoga)",
+   "notes": "Grieving over the strife between his wives Chihui and Hwahui and watching a pair of orioles, King Yuri sings the Hwangjoga, the oldest recorded Korean lyric, lamenting his solitude.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Samguk Sagi, Goguryeo annals, third year of Yuri (Hwangjoga)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "koryak_yiniaaneut": [
+  {
+   "id": "koryak_yiniaaneut-recover-sun",
+   "name": "Recover the sun swallowed by Raven",
+   "notes": "Daughter of Big-Raven, she frees the captured sun in the best-known Koryak light-origin tale, a Kamchatkan parallel to the North Pacific Coast sun-release myths.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "W. Jochelson, The Koryak (Jesup North Pacific Expedition)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "krachi_dente": [
+  {
+   "id": "krachi_dente-war-oracle",
+   "name": "Pronounce oracles consulted in matters of war",
+   "notes": "From the cave-shrine at Kete-Krachi on the Volta, Dente delivered oracles sought across the region; the Asante state consulted him in matters of war and statecraft, making his shrine a pan-regional pilgrimage centre.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. W. Cardinall, Tales Told in Togoland; D. Maier, Priests and Power: The Case of the Dente Shrine"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kuba_mweel": [
+  {
+   "id": "kuba_mweel-ancestral-mother",
+   "name": "Become ancestral mother of the Kuba lineages",
+   "notes": "Sister-wife of Woot, Mweel is the ancestral mother from whom the Kuba lineages descend; her union with her brother Woot founds the line of the Children of Woot.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "E. Torday & T. A. Joyce, Notes ethnographiques sur les peuples communement appeles Bakuba"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kwakwakawakw_bakwas": [
+  {
+   "id": "kwakwakawakw_bakwas-cockle-hunter",
+   "name": "Dig ghost-cockles on lonely beaches",
+   "notes": "The wild man of the woods leaves the forest for isolated beaches to dig dzoli (cockles), his favoured ghost-food, earning him the name Cockle Hunter.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "F. Boas, The Social Organization and the Secret Societies of the Kwakiutl Indians; Kwakwaka'wakw oral tradition"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "kwakwakawakw_komokwa": [
+  {
+   "id": "kwakwakawakw_komokwa-master-of-seals",
+   "name": "Command the seals and sea-mammals",
+   "notes": "Chief of the undersea world, he is master and protector of seals and sea-lions; the posts and beams of his copper house are living sea-lions, and killer whales, loons and sculpins attend him.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "F. Boas, Kwakiutl Tales; Kwakwaka'wakw oral tradition of the undersea chief"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "kwakwakawakw_komokwa-sea-wealth",
+   "name": "Bestow the wealth cast up by the sea",
+   "notes": "As the Wealthy One and Copper Maker he governs the riches deposited on shore by the tides, the storms of winter and the calm of summer, and can heal and grant supernatural gifts to those he favours.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "F. Boas, Kwakiutl Tales; G. Hunt field materials"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "lugbara_dribidu": [
+  {
+   "id": "lugbara_dribidu-fire-receiver",
+   "name": "Receives fire and medicine-knowledge from the woman of the land",
+   "term": {
+    "value": "Dribidu",
+    "script": "Latn",
+    "rom": "Dribidu"
+   },
+   "notes": "On entering the present Lugbara land Dribidu, like his counterpart Jaki, received fire from a local woman whom he then married; he passed magical medicines (including rain-medicine) to his descendants.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "John Middleton, Lugbara Religion (1960); Wikipedia, 'Lugbara mythology'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "lugbara_dribidu-cannibal-exile",
+   "name": "Devours his own children and is driven into exile",
+   "term": {
+    "value": "Banyale",
+    "script": "Latn",
+    "rom": "Banyale"
+   },
+   "notes": "In his hero-ancestor cycle Dribidu the hairy one ate his own children, earning the byname Banyale ('eater of men'); exiled for the cannibalism, he died on Mount Eti.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Lugbara mythology'; Middleton, Lugbara Religion (1960)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "lugbara_jaki": [
+  {
+   "id": "lugbara_jaki-rainmaker",
+   "name": "Brings the first rain-medicine into Lugbara land",
+   "term": {
+    "value": "Jaki",
+    "script": "Latn",
+    "rom": "Jaki"
+   },
+   "notes": "Jaki is one of the two original Lugbara rainmakers (paired with Dribidu), whose mastery of magical medicines for calling rain was inherited by the clans he founded.",
+   "inheritability": "partial",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "John Middleton, Lugbara Religion (1960); Wikipedia, 'Lugbara mythology'"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "lugbara_jaki-clan-founder",
+   "name": "Fathers the sons who found the major Lugbara clans",
+   "notes": "After receiving fire from and marrying a woman of the land, Jaki fathered many sons who became the eponymous founders of the principal Lugbara clans; he died on Mount Liru.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "John Middleton, Lugbara Religion (1960)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "luo_nyasaye": [
+  {
+   "id": "luo_nyasaye-provider",
+   "name": "Grants prosperity, fertility and rain to those who sacrifice",
+   "term": {
+    "value": "Nyasaye",
+    "script": "Latn",
+    "rom": "Nyasaye"
+   },
+   "notes": "As high-god the Luo invoke Nyasaye at sacred places (hembko) with spotless animal offerings to secure rain, fertility, health and continued prosperity, and to avert calamity (dera).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "R. Oduor, 'Nyasaye — God for the Luo People' (2019); Exploring-Africa, 'Luo religious beliefs'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "luo_juogi": [
+  {
+   "id": "luo_juogi-good-bad",
+   "name": "Act as good or evil spirits, known or unknown",
+   "notes": "The juogi (from jok) divide into beneficent and malevolent classes, and into known (named ancestral) and unknown spirits; they mediate between the living and the divine, protect kin, and afflict the negligent.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Exploring-Africa, 'Luo religious beliefs'; IJRISS, 'Elements of Luo Traditional Sacrifice'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "luo_ramogi": [
+  {
+   "id": "luo_ramogi-migration-leader",
+   "name": "Leads the Luo from Pubungu and founds the first settlement at Got Ramogi",
+   "notes": "Ramogi Ajwang' led the Nilotic Luo out of Pubungu/Pakwach and settled at the Ramogi Hills in Siaya, traditionally remembered as the dispersal-point and first home of the Kenyan Luo.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "IJISRT, 'Luo Cultural Shrines: The Hembko of Got Ramogi, Kenya' (2024); Kenyans.co.ke, 'Why Got Ramogi Holds a Special Place in Luo Heritage'"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "luwian_kamrusepa": [
+  {
+   "id": "luwian_kamrusepa-midwife",
+   "name": "Acts as divine midwife and inventor of healing ritual",
+   "notes": "Beyond curing illness, Kamrusepa is credited in Luwian incantations from Kizzuwatna as the originator of ritual procedures later handed to humans, and could function as a divine midwife.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Kamrušepa'; Hutter, in Melchert (ed.), The Luwians (2003)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "lydian_artimus": [
+  {
+   "id": "lydian_artimus-tomb-avenger",
+   "name": "Brings destruction on whoever damages a protected grave",
+   "notes": "In Lydian funerary curse formulae (e.g. the Sardis bilingual) Artimus of Sardis and of Koloe/Ephesos is invoked to bring ruin upon anyone who harms the tomb, its dromos or its belongings, extending the curse to the violator's house, court, land and water.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sardis bilingual Lydian-Aramaic inscription (stele of Maneś son of Kumliś, 4th c. BC)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "manipuri_koubru": [
+  {
+   "id": "manipuri_koubru-guardian-northwest",
+   "name": "Guard the north-western quarter of the Kangleipak world",
+   "term": {
+    "value": "ꯃꯥꯏꯀꯩ ꯉꯥꯛꯄ ꯂꯥꯏ",
+    "script": "Meitei Mayek",
+    "rom": "Maikei Ngakpa Lai"
+   },
+   "notes": "As one of the four cardinal Umang Lai, Koubru (Koupalu) is the omniscient guardian of the north-west, enthroned on the summit of Mount Koubru.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mount Koubru / Koupalu, Wikipedia (citing Sanamahist tradition)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "manipuri_kounu": [
+  {
+   "id": "manipuri_kounu-mountain-tutelary",
+   "name": "Personify and protect Mount Kounu and the northern hills",
+   "notes": "Goddess who is the female personification of Mount Kounu and, with Koubru, watches over the northern Kanglei world.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mount Koubru, Wikipedia (Kounu as personification of Mount Kounu)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "manipuri_leimarel": [
+  {
+   "id": "manipuri_leimarel-womb-of-all",
+   "name": "Bring forth all living beings from her womb",
+   "notes": "As the eternal earth-mother, men and women were believed to originate from the womb of Leimarel Sidabi.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Leimarel Sidabi, Wikipedia"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "manipuri_leimarel-emanate-emoinu",
+   "name": "Emanate the household goddess Emoinu from herself",
+   "notes": "At the bidding of the creator Atingkok Maru Sidaba she produced from herself the goddess Emoinu, sent to earth as guardian of humankind and of the hearth.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Emoinu / Imoinu, Grokipedia and HandWiki (Religion:Emoinu)"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "manipuri_marjing": [
+  {
+   "id": "manipuri_marjing-invent-polo",
+   "name": "Invent the game of polo (sagol kangjei)",
+   "term": {
+    "value": "ꯁꯒꯣꯜ ꯀꯥꯡꯖꯩ",
+    "script": "Meitei Mayek",
+    "rom": "Sagol Kangjei"
+   },
+   "notes": "Parratt: Marjing's chief importance in Meitei mythology is that he is credited with the invention of polo, the national game; the first divine match was played at Lai Haraoba.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Marjing, Wikipedia (citing Saroj N. Arambam Parratt, The Religion of Manipur)"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "manipuri_marjing-soul-of-body",
+   "name": "Enter and reside within the human body as one of its souls",
+   "notes": "Marjing is reckoned one of the gods who enter the human body and position themselves there as a soul.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Marjing, Wikipedia"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "manipuri_nongpok_ningthou": [
+  {
+   "id": "manipuri_nongpok_ningthou-king-of-east",
+   "name": "Reign as sovereign guardian of the eastern direction",
+   "notes": "The 'King of the East', ruling guardian deity of the eastern quarter, enthroned on the Nongmaiching (Langmai) hills.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Nongpok Ningthou, Wikipedia"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "manipuri_panthoibi": [
+  {
+   "id": "manipuri_panthoibi-grant-victory",
+   "name": "Grant courage and victory in war",
+   "notes": "Warrior-goddess patroness of courage, victory and warfare, invoked for triumph in battle.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Panthoibi, Wikipedia"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "manipuri_panthoibi-civilization-handicraft",
+   "name": "Bestow civilization, handicraft and wisdom",
+   "notes": "Patroness of civilization, the handicrafts (especially weaving), fertility and wisdom in the Panthoibi Khonggul tradition.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Panthoibi, Wikipedia; Panthoibi Khonggul, Wikipedia"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "manipuri_sanamahi": [
+  {
+   "id": "manipuri_sanamahi-guard-household",
+   "name": "Guard the household and all mankind",
+   "notes": "Lainingthou Sanamahi is the supreme guardian god of the home and of humankind, worshipped daily in the south-western corner of every Meitei house.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lainingthou Sanamahi, Simple English Wikipedia; Sanamahism, Wikipedia"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "manipuri_thangjing": [
+  {
+   "id": "manipuri_thangjing-guardian-southwest",
+   "name": "Guard the south-western quarter and the Moirang realm",
+   "notes": "Ancient ruling deity of Moirang and cardinal Umang Lai of the south-west, reigning on the banks of Loktak lake and protecting the southern Imphal valley.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Thangching, Wikipedia"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "manipuri_wangbren": [
+  {
+   "id": "manipuri_wangbren-lord-of-waters",
+   "name": "Rule the rivers and the under-water world",
+   "notes": "God of water, rain and flood, lord of the rivers and ruler of the under-water realm.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wangpulen, Wikipedia"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "manipuri_wangbren-send-disease",
+   "name": "Send and withhold disease and sickness",
+   "notes": "As lord of water and flood he is also the god of disease and sickness, propitiated to avert epidemics.",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wangpulen, Wikipedia"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "mangaian_tango": [
+  {
+   "id": "mangaian_tango-lord-of-birds",
+   "name": "Hold lordship over the birds and over Enua-kura",
+   "notes": "Third child of Vari-ma-te-takere, set to dwell at Enua-kura, the land of red parrot-feathers, as lord of birds (Gill 1876).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), ch. I"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "mangaian_tumu_te_ana_oa": [
+  {
+   "id": "mangaian_tumu_te_ana_oa-be-the-echo",
+   "name": "Be the living Echo dwelling in the caves of Mangaia",
+   "notes": "The personified Echo, fourth child of Vari, who dwells in and answers from the caves of Mangaia (Gill 1876).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), ch. I"
+    }
+   ],
+   "ability": true
+  }
+ ],
+ "mangaian_tuna": [
+  {
+   "id": "mangaian_tuna-take-human-form",
+   "name": "Take the form of a handsome youth to woo Ina",
+   "notes": "Tuna, god of eels, transforms from eel to youth to become the lover of Ina near her cave at Tamarua (Gill 1876).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), ch. V"
+    }
+   ],
+   "ability": true
+  },
+  {
+   "id": "mangaian_tuna-become-coconut",
+   "name": "Yield the first coconut palm from his buried head",
+   "notes": "He bids Ina cut off his head and bury it; from it springs the first coconut palm, its three eye-marks held to be Tuna's face (Gill 1876).",
+   "inheritability": "none",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), ch. V"
     }
    ],
    "ability": true
@@ -374171,6 +375652,86 @@ const MATERIAL_SWEEP = {
    ]
   }
  ],
+ "hindu_ulupi": [
+  {
+   "id": "hindu_ulupi-sanjivani-mani",
+   "name": "Mritasanjivani, the Naga life-restoring gem",
+   "classId": "talisman",
+   "kind": "relic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Ashvamedhika Parva"
+    }
+   ]
+  }
+ ],
+ "hindu_uparichara_vasu": [
+  {
+   "id": "hindu_uparichara_vasu-crystal-chariot",
+   "name": "Crystal aerial chariot of Indra",
+   "classId": "vehicle",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  },
+  {
+   "id": "hindu_uparichara_vasu-indra-garland",
+   "name": "Indra's unfading lotus garland (Vaijayanti)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  },
+  {
+   "id": "hindu_uparichara_vasu-venu-staff",
+   "name": "Indra's bamboo festival-pole (Indra-dhvaja staff)",
+   "classId": "standard",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  }
+ ],
+ "hindu_ravana": [
+  {
+   "id": "hindu_ravana-rudra-vina",
+   "name": "Rudra-vina played in worship of Shiva",
+   "classId": "instrument",
+   "kind": "instrument",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Shaiva tradition; Ravana as devotee-musician of Shiva"
+    }
+   ]
+  }
+ ],
+ "hindu_vibhishana": [
+  {
+   "id": "hindu_vibhishana-gada",
+   "name": "Mace borne as warrior-prince of Lanka",
+   "classId": "mace",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Yuddha Kanda"
+    }
+   ]
+  }
+ ],
  "hittite_tarhunna": [
   {
    "id": "hittite_tarhunna-thunderbolt",
@@ -374277,6 +375838,100 @@ const MATERIAL_SWEEP = {
    ]
   }
  ],
+ "hungarian_turul": [
+  {
+   "id": "hungarian_turul-sword-in-talons",
+   "name": "Sword of God borne in its talons",
+   "classId": "sword",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hungarian heraldic-mythological tradition (Turul depicted clutching Isten kardja)"
+    }
+   ]
+  }
+ ],
+ "hungarian_hunor": [
+  {
+   "id": "hungarian_hunor-hunters-bow",
+   "name": "Hunter's bow and arrows of the stag-chase",
+   "classId": "bow",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Simon of Kéza, Gesta Hunnorum et Hungarorum"
+    }
+   ]
+  }
+ ],
+ "igbo_amadioha": [
+  {
+   "id": "igbo_amadioha-iron-staff",
+   "name": "Iron staff of the shrine-altar",
+   "classId": "staff",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo oral tradition; Amadioha shrine practice"
+    }
+   ]
+  },
+  {
+   "id": "igbo_amadioha-white-cloth-emblem",
+   "name": "White linen cloth raised on twin poles as cult-emblem",
+   "classId": "garment",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo oral tradition; Amadioha cult practice"
+    }
+   ]
+  }
+ ],
+ "igbo_agwu": [
+  {
+   "id": "igbo_agwu-ofo-staff",
+   "name": "Ọfọ staff of truth and justice",
+   "classId": "staff",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. C. U. Aguwa, The Agwu Deity in Igbo Religion"
+    }
+   ]
+  },
+  {
+   "id": "igbo_agwu-divination-kit",
+   "name": "Diviner's casting-kit (okwe/nzu and beads of the dibia)",
+   "classId": "tool",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo dibia divination ethnography"
+    }
+   ]
+  }
+ ],
+ "ibibio_ndem": [
+  {
+   "id": "ibibio_ndem-libation-bowl",
+   "name": "Libation vessel of palm-wine offering",
+   "classId": "vessel",
+   "kind": "vessel",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Efik/Ibibio ndem worship ethnography"
+    }
+   ]
+  }
+ ],
  "ijaw_woyengi": [
   {
    "id": "ijaw_woyengi-throne",
@@ -374291,9 +375946,9 @@ const MATERIAL_SWEEP = {
    ]
   }
  ],
- "inca_inti": [
+ "inti": [
   {
-   "id": "inca_inti-golden-rays-disc",
+   "id": "inti-golden-rays-disc",
    "name": "golden face-disc radiating rays and flames",
    "classId": "regalia",
    "kind": "emblem",
@@ -374385,6 +376040,34 @@ const MATERIAL_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Grokipedia, 'Supay'; godsandmonsters.info, 'Andes Mythology' (El Tío of the mines)"
+    }
+   ]
+  }
+ ],
+ "inca_mama_ocllo": [
+  {
+   "id": "inca_mama_ocllo-loom",
+   "name": "backstrap loom and spindle (the weaving she taught the women)",
+   "classId": "tool",
+   "kind": "implement",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Garcilaso de la Vega, Comentarios Reales de los Incas (Mama Ocllo teaches spinning and weaving)"
+    }
+   ]
+  }
+ ],
+ "inuit_sedna": [
+  {
+   "id": "inuit_sedna-comb",
+   "name": "her tangled hair, combed and braided by the shaman in propitiation",
+   "classId": "attribute",
+   "kind": "body-part",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Sedna (mythology)' (the shaman combs her filth-laden hair)"
     }
    ]
   }
@@ -374507,6 +376190,72 @@ const MATERIAL_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Wikipedia, 'Hiawatha Belt'"
+    }
+   ]
+  }
+ ],
+ "iroquois_hino": [
+  {
+   "id": "iroquois_hino-bow-and-arrows",
+   "name": "Bow and arrows of the Thunderer",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Harriet Maxwell Converse, Myths and Legends of the New York State Iroquois (1908)"
+    }
+   ]
+  },
+  {
+   "id": "iroquois_hino-thunderbolt-pouch",
+   "name": "Pouch of thunderbolts",
+   "classId": "regalia",
+   "kind": "implement",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Converse, Myths and Legends of the New York State Iroquois (1908)"
+    }
+   ]
+  },
+  {
+   "id": "iroquois_hino-chert-basket",
+   "name": "Basket of chert boulders (cast down as lightning)",
+   "classId": "implement",
+   "kind": "implement",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Converse, Myths and Legends of the New York State Iroquois (1908)"
+    }
+   ]
+  }
+ ],
+ "japanese_kagutsuchi": [
+  {
+   "id": "japanese_kagutsuchi-ame-no-ohabari",
+   "name": "Ame-no-Ohabari (the sword Totsuka-no-Tsurugi that beheaded him)",
+   "classId": "sword",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kojiki, Book 1 (birth and slaying of Kagutsuchi)"
+    }
+   ]
+  }
+ ],
+ "japanese_tomoe_gozen": [
+  {
+   "id": "japanese_tomoe_gozen-strong-bow",
+   "name": "Powerful war bow",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Heike Monogatari, Book 9 ('Tomoe')"
     }
    ]
   }
@@ -374685,6 +376434,224 @@ const MATERIAL_SWEEP = {
     {
      "kind": "primary",
      "reference": "Jomo Kenyatta, Facing Mount Kenya (1938)"
+    }
+   ]
+  }
+ ],
+ "kiribati_tabuariki": [
+  {
+   "id": "kiribati_tabuariki-thunderbolt",
+   "name": "Fiery thunderbolt",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Grimble, Tungaru Traditions (Tabuariki hurls fiery thunderbolts)"
+    }
+   ]
+  }
+ ],
+ "korean_jumong": [
+  {
+   "id": "korean_jumong-multifletched-bow",
+   "name": "Bow of the Buyeo archer",
+   "classId": "bow",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Samguk Sagi; Yi Gyu-bo, Dongmyeongwang-pyeon (Jumong, 'skilled archer')"
+    }
+   ]
+  }
+ ],
+ "korean_haemosu": [
+  {
+   "id": "korean_haemosu-raven-feather-cap",
+   "name": "Raven-feather cap (ojugwan)",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yi Gyu-bo, Dongmyeongwang-pyeon (Haemosu's raven-feather headdress)"
+    }
+   ]
+  },
+  {
+   "id": "korean_haemosu-dragon-sword",
+   "name": "Sword at his side (yonggwang-geom)",
+   "classId": "sword",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yi Gyu-bo, Dongmyeongwang-pyeon (Haemosu girt with a sword)"
+    }
+   ]
+  }
+ ],
+ "kwakwakawakw_komokwa": [
+  {
+   "id": "kwakwakawakw_komokwa-copper-house",
+   "name": "Copper house beneath the sea",
+   "classId": "dwelling",
+   "kind": "structure",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "F. Boas, Kwakiutl Tales (the Copper Maker's house under the sea)"
+    }
+   ]
+  }
+ ],
+ "luwian_iyarri": [
+  {
+   "id": "luwian_iyarri-arrows",
+   "name": "Plague-bearing arrows",
+   "classId": "projectile",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Iyarri'; Hutter, in Melchert (ed.), The Luwians (2003)"
+    }
+   ]
+  }
+ ],
+ "luwian_tarhunz": [
+  {
+   "id": "luwian_tarhunz-grapes",
+   "name": "Bunches of grapes and ears of grain",
+   "classId": "emblem",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tarḫunz' (Late Luwian reliefs of the weather-god of the vineyard)"
+    }
+   ]
+  },
+  {
+   "id": "luwian_tarhunz-bull",
+   "name": "Bull (mount and attendant beast)",
+   "classId": "animal",
+   "kind": "mount",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tarḫunz'; 'Luwian religion'"
+    }
+   ]
+  }
+ ],
+ "lydian_kuvava": [
+  {
+   "id": "lydian_kuvava-polos",
+   "name": "Polos crown and veil",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Kubaba (goddess)'; Neo-Hittite reliefs from Carchemish"
+    }
+   ]
+  },
+  {
+   "id": "lydian_kuvava-lion-throne",
+   "name": "Lion-supported throne",
+   "classId": "furniture",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Neo-Hittite Carchemish reliefs (9th-8th c. BC); Wikipedia, 'Kubaba (goddess)'"
+    }
+   ]
+  }
+ ],
+ "lydian_kufaws": [
+  {
+   "id": "lydian_kufaws-tympanum",
+   "name": "Throne flanked by lions",
+   "classId": "regalia",
+   "kind": "regalia",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Greenewalt, 'Gods of Lydia' (Sardis Expedition); 6th-c. BC Sardis sculpture of Cybele and lions"
+    }
+   ]
+  }
+ ],
+ "luo_luanda_magere": [
+  {
+   "id": "luo_luanda_magere-shadow",
+   "name": "Vulnerable shadow (his single mortal point)",
+   "classId": "motif",
+   "kind": "other",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Luanda Magere' (the enemy spear that found his shadow killed him)"
+    }
+   ]
+  }
+ ],
+ "manipuri_pakhangba": [
+  {
+   "id": "manipuri_pakhangba-royal-flag",
+   "name": "The royal Pakhangba flag and coat of arms of Manipur",
+   "classId": "regalia",
+   "kind": "emblem",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Pakhangba, Wikipedia; Emblem of Manipur"
+    }
+   ]
+  }
+ ],
+ "manipuri_marjing": [
+  {
+   "id": "manipuri_marjing-kangjei-stick",
+   "name": "Kangjei (polo stick) and kangdrum ball offered to him",
+   "classId": "implement",
+   "kind": "tool",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Marjing, Wikipedia (offering of polostick/kangdrum at Heingang)"
+    }
+   ]
+  }
+ ],
+ "manipuri_salailen": [
+  {
+   "id": "manipuri_salailen-thunderbolt-confirmed",
+   "name": "The divine thunderbolt with which he smites evil spirits",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Atingkok, Wikipedia (sky god who controls thunder and lightning)"
+    }
+   ]
+  }
+ ],
+ "manipuri_panthoibi": [
+  {
+   "id": "manipuri_panthoibi-sword",
+   "name": "Sword and spear borne as a warrior-goddess",
+   "classId": "weapon",
+   "kind": "weapon",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Panthoibi, Wikipedia; Panthoibi Khonggul (her warrior exploits)"
     }
    ]
   }
@@ -378005,6 +379972,110 @@ const DOMAIN_SWEEP = {
    ]
   }
  ],
+ "hindu_ulupi": [
+  {
+   "sphereId": "serpents",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  },
+  {
+   "sphereId": "resurrection-power",
+   "contextTag": "episodic",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Ashvamedhika Parva"
+    }
+   ]
+  }
+ ],
+ "hindu_vidura": [
+  {
+   "sphereId": "wisdom",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Udyoga Parva"
+    }
+   ]
+  },
+  {
+   "sphereId": "justice",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Udyoga Parva"
+    }
+   ]
+  }
+ ],
+ "hindu_vibhishana": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Yuddha Kanda"
+    }
+   ]
+  }
+ ],
+ "hindu_parashara": [
+  {
+   "sphereId": "divination",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Brihat Parashara Hora Shastra (attributed)"
+    }
+   ]
+  }
+ ],
+ "hindu_sampati": [
+  {
+   "sphereId": "winged-flight",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Kishkindha Kanda"
+    }
+   ]
+  }
+ ],
+ "hindu_vayu": [
+  {
+   "sphereId": "wind",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda 1.134; 10.168"
+    }
+   ]
+  }
+ ],
+ "hindu_soma": [
+  {
+   "sphereId": "plants-and-fertility",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda, Mandala 9 (Soma Pavamana)"
+    }
+   ]
+  }
+ ],
  "hittite_arinna": [
   {
    "sphereId": "justice",
@@ -378147,6 +380218,90 @@ const DOMAIN_SWEEP = {
    ]
   }
  ],
+ "huli_honabe": [
+  {
+   "sphereId": "creation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mythosphere, Huli mythology (after Glasse)"
+    }
+   ]
+  }
+ ],
+ "huli_ni": [
+  {
+   "sphereId": "light",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mythosphere, Huli mythology"
+    }
+   ]
+  }
+ ],
+ "hungarian_hadur": [
+  {
+   "sphereId": "metalworking",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hungarian mythology (Hadúr as smith of the gods); Ipolyi, Magyar Mythologia"
+    }
+   ]
+  }
+ ],
+ "hungarian_turul": [
+  {
+   "sphereId": "war",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hungarian mythology (martial lineage-emblem from Attila to the Árpáds)"
+    }
+   ]
+  }
+ ],
+ "igbo_ekwensu": [
+  {
+   "sphereId": "wealth",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo cosmology (Ekwensu as agbara of war and wealth/bargain)"
+    }
+   ]
+  }
+ ],
+ "igbo_agwu": [
+  {
+   "sphereId": "chaos-disorder",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. C. U. Aguwa, The Agwu Deity in Igbo Religion"
+    }
+   ]
+  }
+ ],
+ "ijaw_egbesu": [
+  {
+   "sphereId": "protection",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ijaw oral tradition (Egbesu as divine guardian of the people)"
+    }
+   ]
+  }
+ ],
  "inca_mama_killa": [
   {
    "sphereId": "moon",
@@ -378159,7 +380314,7 @@ const DOMAIN_SWEEP = {
    ]
   },
   {
-   "sphereId": "marriage",
+   "sphereId": "fertility-and-marriage",
    "contextTag": "lifelong",
    "sources": [
     {
@@ -378169,7 +380324,7 @@ const DOMAIN_SWEEP = {
    ]
   },
   {
-   "sphereId": "time-and-calendar",
+   "sphereId": "time-and-seasons",
    "contextTag": "lifelong",
    "sources": [
     {
@@ -378179,7 +380334,7 @@ const DOMAIN_SWEEP = {
    ]
   }
  ],
- "inca_inti": [
+ "inti": [
   {
    "sphereId": "sun",
    "contextTag": "lifelong",
@@ -378237,7 +380392,7 @@ const DOMAIN_SWEEP = {
  ],
  "inca_supay": [
   {
-   "sphereId": "mining-and-metals",
+   "sphereId": "metals",
    "contextTag": "lifelong",
    "sources": [
     {
@@ -378303,6 +380458,88 @@ const DOMAIN_SWEEP = {
     {
      "kind": "primary",
      "reference": "Metrical Dindshenchas, 'Tailtiu' (foundation of Lughnasa)"
+    }
+   ]
+  }
+ ],
+ "iroquois_hino": [
+  {
+   "sphereId": "agriculture-and-harvest",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Erminnie A. Smith, Myths of the Iroquois (1883)"
+    }
+   ]
+  }
+ ],
+ "japanese_susanoo": [
+  {
+   "sphereId": "pestilence-and-plague",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yasaka Jinja (Gion) tradition; syncretism with Gozu Tenno"
+    }
+   ]
+  }
+ ],
+ "japanese_inari": [
+  {
+   "sphereId": "commerce-and-trade",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Fushimi Inari Taisha tradition; Karen A. Smyers, The Fox and the Jewel (1999)"
+    }
+   ]
+  }
+ ],
+ "japanese_benzaiten": [
+  {
+   "sphereId": "water-and-springs",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Three Great Benzaiten Shrines tradition (Enoshima, Chikubushima, Itsukushima)"
+    }
+   ]
+  },
+  {
+   "sphereId": "wealth-and-fortune",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Shichifukujin (Seven Lucky Gods) tradition"
+    }
+   ]
+  }
+ ],
+ "japanese_okuninushi": [
+  {
+   "sphereId": "marriage-and-union",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Izumo Taisha enmusubi tradition"
+    }
+   ]
+  }
+ ],
+ "japanese_konohanasakuya_hime": [
+  {
+   "sphereId": "childbirth-and-fertility",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kojiki, Book 1 (birth of the fire-children unharmed)"
     }
    ]
   }
@@ -378385,6 +380622,174 @@ const DOMAIN_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Arthur Grimble, Tungaru Traditions (ed. H. E. Maude, 1989)"
+    }
+   ]
+  }
+ ],
+ "kiribati_tabuariki": [
+  {
+   "sphereId": "fertility-and-the-crops",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Grimble, Tungaru Traditions (the foremost invoked anti, ruler of wind and rain)"
+    }
+   ]
+  }
+ ],
+ "kiwai_sido": [
+  {
+   "sphereId": "shapeshifting-and-transformation",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "G. Landtman, The Folk-Tales of the Kiwai Papuans (Sido changes his skin like a snake and transforms into a pig)"
+    }
+   ]
+  }
+ ],
+ "kongo_simbi": [
+  {
+   "sphereId": "the-dead-and-the-ancestors",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "W. MacGaffey, Religion and Society in Central Africa"
+    }
+   ]
+  }
+ ],
+ "korean_haemosu": [
+  {
+   "sphereId": "kingship",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yi Gyu-bo, Dongmyeongwang-pyeon (founder of Bukbuyeo)"
+    }
+   ]
+  }
+ ],
+ "krachi_dente": [
+  {
+   "sphereId": "war",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "D. Maier, Priests and Power: The Case of the Dente Shrine (consulted by the Asante state in war)"
+    }
+   ]
+  }
+ ],
+ "kwakwakawakw_komokwa": [
+  {
+   "sphereId": "weather-and-storms",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "F. Boas, Kwakiutl Tales (raiser of winter storms, calmer of summer seas)"
+    }
+   ]
+  }
+ ],
+ "luwian_tiwaz": [
+  {
+   "sphereId": "sky-heavens",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Luwian religion'; Tiwaz as reflex of IE *Dyeus"
+    }
+   ]
+  }
+ ],
+ "lycian_trqqas": [
+  {
+   "sphereId": "justice-punishment",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tarḫunz' (Trqqas invoked to smite wrongdoers, identified with Zeus)"
+    }
+   ]
+  }
+ ],
+ "luo_nyasaye": [
+  {
+   "sphereId": "rain-and-fertility",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "R. Oduor, 'Nyasaye — God for the Luo People' (2019)"
+    }
+   ]
+  }
+ ],
+ "lugbara_dribidu": [
+  {
+   "sphereId": "magic-medicine",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Middleton, Lugbara Religion (1960)"
+    }
+   ]
+  }
+ ],
+ "lugbara_jaki": [
+  {
+   "sphereId": "magic-medicine",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Middleton, Lugbara Religion (1960)"
+    }
+   ]
+  }
+ ],
+ "manipuri_koubru": [
+  {
+   "sphereId": "sacred-mountains",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mount Koubru, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_marjing": [
+  {
+   "sphereId": "sport-and-games",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Marjing, Wikipedia (god of polo and sport)"
+    }
+   ]
+  }
+ ],
+ "manipuri_panthoibi": [
+  {
+   "sphereId": "wisdom",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Panthoibi, Wikipedia"
     }
    ]
   }
@@ -383178,6 +385583,284 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
+ "hindu_ravana": [
+  {
+   "original": "दशग्रीव",
+   "rom": "Daśagrīva",
+   "gloss": "The ten-necked one",
+   "language": "Sanskrit",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Uttara Kanda"
+    }
+   ]
+  },
+  {
+   "original": "दशानन",
+   "rom": "Daśānana",
+   "gloss": "The ten-faced one",
+   "language": "Sanskrit",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana"
+    }
+   ]
+  },
+  {
+   "original": "लङ्केश्वर",
+   "rom": "Laṅkeśvara",
+   "gloss": "Lord of Lanka",
+   "language": "Sanskrit",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana"
+    }
+   ]
+  },
+  {
+   "original": "पौलस्त्य",
+   "rom": "Paulastya",
+   "gloss": "Descendant of the sage Pulastya",
+   "language": "Sanskrit",
+   "contextTag": "lineage",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Uttara Kanda"
+    }
+   ]
+  }
+ ],
+ "hindu_nasatya": [
+  {
+   "original": "दस्र",
+   "rom": "Dasra",
+   "gloss": "The wondrous / accomplisher of marvels (of the twin pair)",
+   "language": "Sanskrit",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda 1.116"
+    }
+   ]
+  },
+  {
+   "original": "अश्विन्",
+   "rom": "Aśvin",
+   "gloss": "The horse-possessor / horseman",
+   "language": "Sanskrit",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda 1.117"
+    }
+   ]
+  }
+ ],
+ "hindu_satyavati": [
+  {
+   "original": "मत्स्यगन्धा",
+   "rom": "Matsyagandhā",
+   "gloss": "She of the fish-scent",
+   "language": "Sanskrit",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  },
+  {
+   "original": "योजनगन्धा",
+   "rom": "Yojanagandhā",
+   "gloss": "She whose fragrance carries a yojana",
+   "language": "Sanskrit",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  },
+  {
+   "original": "गन्धकाली",
+   "rom": "Gandhakālī",
+   "gloss": "The dark fragrant one",
+   "language": "Sanskrit",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  }
+ ],
+ "hindu_vidura": [
+  {
+   "original": "क्षत्तृ",
+   "rom": "Kṣattṛ",
+   "gloss": "The steward / charioteer-minister (court title)",
+   "language": "Sanskrit",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Sabha Parva"
+    }
+   ]
+  },
+  {
+   "original": "धर्म",
+   "rom": "Dharma",
+   "gloss": "Righteousness incarnate",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva"
+    }
+   ]
+  }
+ ],
+ "hindu_sugriva": [
+  {
+   "original": "सूर्यपुत्र",
+   "rom": "Sūryaputra",
+   "gloss": "Son of the sun",
+   "language": "Sanskrit",
+   "contextTag": "lineage",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Kishkindha Kanda"
+    }
+   ]
+  },
+  {
+   "original": "वानरराज",
+   "rom": "Vānararāja",
+   "gloss": "King of the vanaras",
+   "language": "Sanskrit",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Kishkindha Kanda"
+    }
+   ]
+  }
+ ],
+ "hindu_vali": [
+  {
+   "original": "इन्द्रपुत्र",
+   "rom": "Indraputra",
+   "gloss": "Son of Indra",
+   "language": "Sanskrit",
+   "contextTag": "lineage",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Kishkindha Kanda"
+    }
+   ]
+  },
+  {
+   "original": "किष्किन्धाधिपति",
+   "rom": "Kiṣkindhādhipati",
+   "gloss": "Lord of Kishkindha",
+   "language": "Sanskrit",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Valmiki Ramayana, Kishkindha Kanda"
+    }
+   ]
+  }
+ ],
+ "hindu_rati": [
+  {
+   "original": "अनङ्गपत्नी",
+   "rom": "Anaṅgapatnī",
+   "gloss": "Wife of the Bodiless One (Kama)",
+   "language": "Sanskrit",
+   "contextTag": "title",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shiva Purana; Kalika Purana (Kama-dahana)"
+    }
+   ]
+  },
+  {
+   "original": "कामप्रिया",
+   "rom": "Kāmapriyā",
+   "gloss": "Beloved of Kama",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Puranic Kamadeva-Rati tradition"
+    }
+   ]
+  }
+ ],
+ "hindu_soma": [
+  {
+   "original": "ओषधीश",
+   "rom": "Oṣadhīśa",
+   "gloss": "Lord of plants and herbs",
+   "language": "Sanskrit",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda, Mandala 9"
+    }
+   ]
+  },
+  {
+   "original": "इन्दु",
+   "rom": "Indu",
+   "gloss": "The bright drop",
+   "language": "Sanskrit",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda, Mandala 9"
+    }
+   ]
+  }
+ ],
+ "hindu_parashara": [
+  {
+   "original": "शाक्त्य",
+   "rom": "Śāktya",
+   "gloss": "Son of Shakti",
+   "language": "Sanskrit",
+   "contextTag": "lineage",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Vishnu Purana, Book 1"
+    }
+   ]
+  }
+ ],
  "hittite_arinna": [
   {
    "original": "dUTU URUArinna",
@@ -383421,6 +386104,219 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
+ "hurrian_teshub": [
+  {
+   "original": "Teššub šarri",
+   "rom": "Teššub šarri",
+   "gloss": "King Teshub (king of the gods)",
+   "language": "Hurrian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hurro-Hittite Kumarbi Cycle (Hattusa tablets)"
+    }
+   ]
+  },
+  {
+   "original": "dU URUKummiya",
+   "rom": "Teshub of Kummiya",
+   "gloss": "Storm-god of his city Kummiya",
+   "language": "Hurrian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Song of Ullikummi (Hattusa archives)"
+    }
+   ]
+  }
+ ],
+ "hurrian_hebat": [
+  {
+   "original": "Ḫepat šarraššiḫ",
+   "rom": "Ḫepat šarraššiḫ",
+   "gloss": "Queen Hebat",
+   "language": "Hurrian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hurrian/Hittite cult texts"
+    }
+   ]
+  },
+  {
+   "original": "Ḫebat Ḫalbaḫi",
+   "rom": "Ḫebat Ḫalbaḫi",
+   "gloss": "Hebat of Aleppo (Ḥalab)",
+   "language": "Hurrian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hittite-Hurrian cultic geography (Aleppo cult of Hebat)"
+    }
+   ]
+  }
+ ],
+ "hurrian_shaushka": [
+  {
+   "original": "Šauška Ninuwawa",
+   "rom": "Šauška Ninuwawa",
+   "gloss": "Shaushka of Nineveh",
+   "language": "Hurrian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hittite-Hurrian cult texts; Amarna correspondence (Ishtar of Nineveh)"
+    }
+   ]
+  }
+ ],
+ "hurrian_sharruma": [
+  {
+   "original": "Šarruma",
+   "rom": "Šarruma",
+   "gloss": "King of the mountains",
+   "language": "Hurrian",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hurrian-Hittite onomastics; Yazılıkaya relief captions"
+    }
+   ]
+  }
+ ],
+ "hurrian_kushuh": [
+  {
+   "original": "Umbu",
+   "rom": "Umbu",
+   "gloss": "The (full?) moon — alternative name of the moon-god",
+   "language": "Hurrian",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hurrian lexical/cult attestations (Hattusa, Ugarit, Nuzi)"
+    }
+   ]
+  }
+ ],
+ "igbo_amadioha": [
+  {
+   "original": "Kamalu",
+   "rom": "Kamalu",
+   "gloss": "Regional name of the thunder-god (Ngwa/Ohuhu areas)",
+   "language": "Igbo",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo regional theonymy"
+    }
+   ]
+  },
+  {
+   "original": "Igwekala",
+   "rom": "Igwe ka ala",
+   "gloss": "The sky is greater than the earth",
+   "language": "Igbo",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo oral tradition"
+    }
+   ]
+  }
+ ],
+ "igbo_anyanwu": [
+  {
+   "original": "Anyanwụ",
+   "rom": "Anyanwụ",
+   "gloss": "Eye of the sun",
+   "language": "Igbo",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo oral tradition; Nri cosmology"
+    }
+   ]
+  },
+  {
+   "original": "Anyanwụ na Agbala",
+   "rom": "Anyanwụ na Agbala",
+   "gloss": "The Sun and the Oracle (sun paired with divine wisdom)",
+   "language": "Igbo",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Nri cosmological tradition (Anyanwu and Agbala)"
+    }
+   ]
+  }
+ ],
+ "igbo_chukwu": [
+  {
+   "original": "Chukwu Okike",
+   "rom": "Chukwu Okike",
+   "gloss": "The Great Spirit who creates",
+   "language": "Igbo",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo religious thought (Odinani)"
+    }
+   ]
+  },
+  {
+   "original": "Chineke",
+   "rom": "Chi na eke",
+   "gloss": "The chi that creates / source-god",
+   "language": "Igbo",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo religious thought (Odinani)"
+    }
+   ]
+  },
+  {
+   "original": "Chukwu Abịama",
+   "rom": "Chukwu Abịama",
+   "gloss": "Chukwu of the Arochukwu oracle (Ibini Ukpabi)",
+   "language": "Igbo",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Arochukwu oracle tradition"
+    }
+   ]
+  }
+ ],
+ "ibeji": [
+  {
+   "original": "Èjìré ará ìsokùn",
+   "rom": "Èjìré ará ìsokùn",
+   "gloss": "Twins, kin from Isokun (a classic oríkì ibeji address)",
+   "language": "Yoruba",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yoruba oríkì ibeji (praise-chants for twins)"
+    }
+   ]
+  }
+ ],
  "ijaw_tamuno": [
   {
    "original": "Tamarau",
@@ -383436,7 +386332,7 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
- "inca_inti": [
+ "inti": [
   {
    "original": "Apu Inti",
    "rom": "Apu Inti",
@@ -383786,6 +386682,249 @@ const EPITHET_SWEEP = {
    ]
   }
  ],
+ "iroquois_hino": [
+  {
+   "original": "Hino",
+   "rom": "Hino",
+   "gloss": "the Thunderer; Thunder-Leader",
+   "language": "Iroquoian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Harriet Maxwell Converse, Myths and Legends of the New York State Iroquois (1908)"
+    }
+   ]
+  },
+  {
+   "original": "Tisote",
+   "rom": "Tisote",
+   "gloss": "Grandfather (the ceremonial address)",
+   "language": "Seneca",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Converse, Myths and Legends of the New York State Iroquois (1908)"
+    }
+   ]
+  }
+ ],
+ "iroquois_sky_woman": [
+  {
+   "original": "Atsi'tsiaka:ion",
+   "rom": "Atsitsiakaion",
+   "gloss": "Mature (Fallen) Flowers",
+   "language": "Mohawk",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. N. B. Hewitt, Iroquoian Cosmology, First Part (BAE 21st Annual Report, 1903)"
+    }
+   ]
+  },
+  {
+   "original": "Awenhai",
+   "rom": "Awenhai",
+   "gloss": "Mature Flower",
+   "language": "Seneca/Cayuga",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hewitt, Iroquoian Cosmology (1903)"
+    }
+   ]
+  },
+  {
+   "original": "Ataensic",
+   "rom": "Ataentsic",
+   "gloss": "Ancient Body / Ancient Woman",
+   "language": "Wendat (Huron)",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hewitt, Iroquoian Cosmology (1903)"
+    }
+   ]
+  }
+ ],
+ "iroquois_teharonhiawako": [
+  {
+   "original": "Hah-gweh-di-yu",
+   "rom": "Hahgwehdiyu",
+   "gloss": "the Good Mind / Good Spirit",
+   "language": "Iroquoian",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Harriet Maxwell Converse, Myths and Legends of the New York State Iroquois (1908)"
+    }
+   ]
+  },
+  {
+   "original": "Sky-Holder",
+   "rom": "Taronhiawagon",
+   "gloss": "Sky-Holder; Upholder of the Heavens",
+   "language": "Iroquoian",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Converse, Myths and Legends of the New York State Iroquois (1908)"
+    }
+   ]
+  }
+ ],
+ "iroquois_tawiskaron": [
+  {
+   "original": "Hah-qweh-da-et-gah",
+   "rom": "Hahgwehdaetgah",
+   "gloss": "the Evil Mind / Evil Spirit",
+   "language": "Iroquoian",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Harriet Maxwell Converse, Myths and Legends of the New York State Iroquois (1908)"
+    }
+   ]
+  },
+  {
+   "original": "Tawiskaron",
+   "rom": "Tawiskaron",
+   "gloss": "Flint; the Flinty One",
+   "language": "Mohawk",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. N. B. Hewitt, Iroquoian Cosmology (1903)"
+    }
+   ]
+  }
+ ],
+ "iroquois_tekawerahkwa": [
+  {
+   "original": "Tekawerahkwa",
+   "rom": "Tekawerahkwa",
+   "gloss": "Breath of the Wind",
+   "language": "Iroquoian",
+   "contextTag": "lifelong",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Iroquois creation tradition (Sky Woman cycle), per Hewitt, Iroquoian Cosmology (1903)"
+    }
+   ]
+  }
+ ],
+ "japanese_susanoo": [
+  {
+   "original": "牛頭天王",
+   "rom": "Gozu Tenno",
+   "gloss": "Ox-Headed Heavenly King (syncretic pestilence-deity identity)",
+   "language": "Japanese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yasaka Jinja (Gion) tradition; medieval shinbutsu-shugo"
+    }
+   ]
+  }
+ ],
+ "japanese_hachiman": [
+  {
+   "original": "八幡大菩薩",
+   "rom": "Hachiman Daibosatsu",
+   "gloss": "Great Bodhisattva Hachiman (Buddhist syncretic title)",
+   "language": "Japanese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Iwashimizu Hachimangu / Usa Jingu tradition"
+    }
+   ]
+  },
+  {
+   "original": "弓矢八幡",
+   "rom": "Yumiya Hachiman",
+   "gloss": "Hachiman of the Bow and Arrow",
+   "language": "Japanese",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Warrior-cult tradition of the Minamoto (Genji) house"
+    }
+   ]
+  }
+ ],
+ "japanese_kagutsuchi": [
+  {
+   "original": "火産霊",
+   "rom": "Homusubi",
+   "gloss": "He Who Begets Fire (the ritual byname)",
+   "language": "Japanese",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Nihon Shoki, Book 1 (Homusubi)"
+    }
+   ]
+  }
+ ],
+ "japanese_tameyoshi": [
+  {
+   "original": "六条判官",
+   "rom": "Rokujo Hangan",
+   "gloss": "Judge of Rokujo",
+   "language": "Japanese",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hogen Monogatari"
+    }
+   ]
+  }
+ ],
+ "japanese_tametomo": [
+  {
+   "original": "鎮西八郎",
+   "rom": "Chinzei Hachiro",
+   "gloss": "Eighth Son of the Western Pacification (Kyushu)",
+   "language": "Japanese",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Hogen Monogatari"
+    }
+   ]
+  }
+ ],
+ "japanese_noriyori": [
+  {
+   "original": "蒲冠者",
+   "rom": "Kaba no Kanja",
+   "gloss": "the Young Lord of Kaba",
+   "language": "Japanese",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Azuma Kagami"
+    }
+   ]
+  }
+ ],
  "japanese_yoshiie": [
   {
    "original": "八幡太郎",
@@ -384016,6 +387155,543 @@ const EPITHET_SWEEP = {
     {
      "kind": "secondary",
      "reference": "R. K. Sprigg and J. R. Subba, on Limbu (Yakthung) Yuma tradition"
+    }
+   ]
+  }
+ ],
+ "kiribati_tabuariki": [
+  {
+   "original": "Taburimai",
+   "rom": "Taburimai",
+   "gloss": "variant name of the thunder-anti",
+   "language": "Gilbertese",
+   "contextTag": "alt",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Grimble, Tungaru Traditions"
+    }
+   ]
+  }
+ ],
+ "kiribati_riiki": [
+  {
+   "original": "Na Iabu",
+   "rom": "Na Iabu",
+   "gloss": "the Milky Way",
+   "language": "Gilbertese",
+   "contextTag": "myth",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Grimble, Tungaru Traditions (Riiki set in the sky as the Milky Way)"
+    }
+   ]
+  }
+ ],
+ "korean_jumong": [
+  {
+   "original": "鄒牟",
+   "rom": "Chumo",
+   "gloss": "excellent archer (Buyeo word)",
+   "language": "Classical Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Samguk Sagi, Goguryeo annals (also called Chumo or Sanghae)"
+    }
+   ]
+  },
+  {
+   "original": "東明聖王",
+   "rom": "Dongmyeong Seongwang",
+   "gloss": "Holy King of the East",
+   "language": "Classical Chinese",
+   "contextTag": "posthumous",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Samguk Sagi, Goguryeo annals (posthumous title)"
+    }
+   ]
+  }
+ ],
+ "korean_tangun": [
+  {
+   "original": "檀君王儉",
+   "rom": "Dangun Wanggeom",
+   "gloss": "Sandalwood Ruler Wanggeom",
+   "language": "Classical Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Iryeon, Samguk Yusa, Gojoseon"
+    }
+   ]
+  }
+ ],
+ "korean_cheonjiwang": [
+  {
+   "original": "天地王",
+   "rom": "Cheonjiwang",
+   "gloss": "King of Heaven and Earth",
+   "language": "Classical Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Cheonjiwang Bonpuri (Jeju creation hymn)"
+    }
+   ]
+  }
+ ],
+ "korean_haemosu": [
+  {
+   "original": "解慕漱",
+   "rom": "Haemosu",
+   "gloss": "Haemosu of Buyeo",
+   "language": "Classical Chinese",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yi Gyu-bo, Dongmyeongwang-pyeon"
+    }
+   ]
+  }
+ ],
+ "koryak_big_raven": [
+  {
+   "original": "Kutkynnaku",
+   "rom": "Kutkynnaku",
+   "gloss": "Big Raven (augmentative of 'raven')",
+   "language": "Koryak",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "W. Jochelson, The Koryak"
+    }
+   ]
+  },
+  {
+   "original": "Tenanto'mwan",
+   "rom": "Tenantomwan",
+   "gloss": "the Creator",
+   "language": "Koryak",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "W. Jochelson, The Koryak"
+    }
+   ]
+  },
+  {
+   "original": "Acicenaqu",
+   "rom": "Acicenaqu",
+   "gloss": "Big-Grandfather",
+   "language": "Koryak",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "W. Jochelson, The Koryak"
+    }
+   ]
+  }
+ ],
+ "kongo_nzambi_a_mpungu": [
+  {
+   "original": "Nzambi a Mpungu",
+   "rom": "Nzambi a Mpungu",
+   "gloss": "God Almighty / the supreme Nzambi",
+   "language": "Kikongo",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "W. MacGaffey, Religion and Society in Central Africa"
+    }
+   ]
+  }
+ ],
+ "kuba_woot": [
+  {
+   "original": "Woot",
+   "rom": "Woot",
+   "gloss": "the first man and first king",
+   "language": "Bushongo",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "E. Torday & T. A. Joyce, Notes ethnographiques sur les Bakuba"
+    }
+   ]
+  }
+ ],
+ "kwakwakawakw_komokwa": [
+  {
+   "original": "Qaniqilak",
+   "rom": "Qaniqilak",
+   "gloss": "spirit of the summer season",
+   "language": "Kwak'wala",
+   "contextTag": "alt",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "F. Boas, Kwakiutl Tales"
+    }
+   ]
+  }
+ ],
+ "lugbara_dribidu": [
+  {
+   "original": "Dribidu",
+   "rom": "Dribidu",
+   "gloss": "the hairy one",
+   "language": "Lugbara",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Lugbara mythology'"
+    }
+   ]
+  },
+  {
+   "original": "Banyale",
+   "rom": "Banyale",
+   "gloss": "eater of men",
+   "language": "Lugbara",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Lugbara mythology'"
+    }
+   ]
+  }
+ ],
+ "lugbara_gborogboro": [
+  {
+   "original": "Gborogboro",
+   "rom": "Gborogboro",
+   "gloss": "the person coming from the sky",
+   "language": "Lugbara",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Gborogboro and Meme'"
+    }
+   ]
+  }
+ ],
+ "lugbara_meme": [
+  {
+   "original": "Meme",
+   "rom": "Meme",
+   "gloss": "the person who came alone",
+   "language": "Lugbara",
+   "contextTag": "name",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Gborogboro and Meme'"
+    }
+   ]
+  }
+ ],
+ "luwian_arma": [
+  {
+   "original": "Harranian Arma",
+   "rom": "Harranian Arma",
+   "gloss": "Arma of Harran (merged with Sin)",
+   "language": "Luwian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Arma (deity)'; 'Luwian religion'"
+    }
+   ]
+  }
+ ],
+ "luwian_tarhunz": [
+  {
+   "original": "Tarhunzas piha??a??i",
+   "rom": "Tarhunzas pihassassi",
+   "gloss": "Tarhunz of the Thunderbolt",
+   "language": "Luwian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tarḫunz' (venerated at Tarhuntassa)"
+    }
+   ]
+  },
+  {
+   "original": "Tarhunzas tuwarsas",
+   "rom": "Tarhunzas tuwarsas",
+   "gloss": "Tarhunz of the Vineyard",
+   "language": "Luwian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tarḫunz' (worshipped in Tabal)"
+    }
+   ]
+  }
+ ],
+ "luwian_tiwaz": [
+  {
+   "original": "tati",
+   "rom": "tati",
+   "gloss": "Father",
+   "language": "Luwian",
+   "contextTag": "epithet",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Luwian religion' (Tiwaz epithet tati, 'father')"
+    }
+   ]
+  }
+ ],
+ "lycian_lada": [
+  {
+   "original": "ẽni mahanahi",
+   "rom": "eni mahanahi",
+   "gloss": "Mother of the Gods / of this sanctuary",
+   "language": "Lycian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Lycian inscriptions of the Letoon, Xanthos (eni mahanahi)"
+    }
+   ]
+  }
+ ],
+ "lydian_artimus": [
+  {
+   "original": "Artimuś Koлoē",
+   "rom": "Artimus Koloe",
+   "gloss": "Artimus of Koloe",
+   "language": "Lydian",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sardis bilingual inscription (Artemis of Sardis and of Koloe)"
+    }
+   ]
+  }
+ ],
+ "manipuri_salailen": [
+  {
+   "original": "Atiya Sidaba",
+   "rom": "Atiya Sidaba",
+   "gloss": "the immortal of the sky",
+   "language": "Meitei",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Names of the Supreme God in Meitei religion, Simple English Wikipedia; Atingkok, Wikipedia"
+    }
+   ]
+  },
+  {
+   "original": "Atingkok Maru Sidaba",
+   "rom": "Atingkok Maru Sidaba",
+   "gloss": "immortal primordial-void father",
+   "language": "Meitei",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Atingkok, Wikipedia"
+    }
+   ]
+  },
+  {
+   "original": "Tengbanba Mapu",
+   "rom": "Tengbanba Mapu",
+   "gloss": "the supporting/sustaining Lord",
+   "language": "Meitei",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Sidaba Mapu, Wikipedia; Names of the Supreme God in Meitei religion"
+    }
+   ]
+  },
+  {
+   "original": "Soraren",
+   "rom": "Soraren",
+   "gloss": "the heavens / sky-lord",
+   "language": "Meitei",
+   "contextTag": "literary",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Sidaba Mapu, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_panthoibi": [
+  {
+   "original": "Nongpok Leima",
+   "rom": "Nongpok Leima",
+   "gloss": "Queen of the East",
+   "language": "Meitei",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Panthoibi, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_nongpok_ningthou": [
+  {
+   "original": "Nongpok Ningthou",
+   "rom": "Nongpok Ningthou",
+   "gloss": "King of the East",
+   "language": "Meitei",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Nongpok Ningthou, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_koubru": [
+  {
+   "original": "Koupalu",
+   "rom": "Koupalu",
+   "gloss": "the lord of Koubru (Mount Koubru)",
+   "language": "Meitei",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Koupalu, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_leimarel": [
+  {
+   "original": "Leimarel Sidabi",
+   "rom": "Leimarel Sidabi",
+   "gloss": "the immortal great-lady of the earth",
+   "language": "Meitei",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Leimarel Sidabi, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_sanamahi": [
+  {
+   "original": "Lainingthou Sanamahi",
+   "rom": "Lainingthou Sanamahi",
+   "gloss": "Lord-god Sanamahi (the molten-gold one)",
+   "language": "Meitei",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lainingthou Sanamahi, Simple English Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_wangbren": [
+  {
+   "original": "Wangpurel",
+   "rom": "Wangpurel",
+   "gloss": "lord of the waters / Wangbren",
+   "language": "Meitei",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wangpulen, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "mapuche_ngenechen": [
+  {
+   "original": "Chaw Dios",
+   "rom": "Chaw Dios",
+   "gloss": "Father God / Old Man God",
+   "language": "Mapudungun",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ngenechen, Wikipedia; Mapuche religion, Wikipedia"
+    }
+   ]
+  },
+  {
+   "original": "Nuke Dios",
+   "rom": "Ñuke Dios",
+   "gloss": "Mother God / Old Woman God",
+   "language": "Mapudungun",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ngenechen, Wikipedia; Mapuche religion, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "makunaima": [
+  {
+   "original": "Makunaima",
+   "rom": "Makunaima",
+   "gloss": "he who works by night",
+   "language": "Pemon (Cariban)",
+   "contextTag": "narrative",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Makunaima, Native-Languages.org; Pemon, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "mansi_kaltes_ekwa": [
+  {
+   "original": "Kaltas",
+   "rom": "Kaltaś",
+   "gloss": "the (dawn/birth) mother",
+   "language": "Mansi",
+   "contextTag": "cult",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Num-Torum / Kaltash, Wikipedia (Mansi Kaltaś)"
     }
    ]
   }
@@ -388201,6 +391877,111 @@ const CULT_SWEEP = {
    ]
   }
  ],
+ "hindu_surya": [
+  {
+   "name": "Arghya to the rising sun",
+   "term": {
+    "value": "अर्घ्य",
+    "script": "Devanagari",
+    "rom": "arghya"
+   },
+   "type": "offering",
+   "cadence": "daily at sunrise; especially Sunday (Ravivar)",
+   "notes": "Devotees offer water libations to the rising sun and recite the Surya-gayatri and Aditya-hridaya; the salutation-sequence Surya-namaskara accompanies the rite.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Aditya Hridaya (Valmiki Ramayana, Yuddha Kanda); Surya worship tradition"
+    }
+   ]
+  },
+  {
+   "name": "Chhath Puja",
+   "term": {
+    "value": "छठ",
+    "script": "Devanagari",
+    "rom": "chaṭha"
+   },
+   "type": "festival",
+   "cadence": "annual, Kartika (sixth day after Diwali)",
+   "notes": "In the eastern Gangetic plain devotees fast and stand in water to offer arghya to the setting and rising sun and to Chhathi Maiya; one of the most rigorous solar observances.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chhath Puja regional tradition (Bihar, Jharkhand, eastern UP)"
+    }
+   ]
+  },
+  {
+   "name": "Ratha Saptami",
+   "term": {
+    "value": "रथसप्तमी",
+    "script": "Devanagari",
+    "rom": "ratha-saptamī"
+   },
+   "type": "festival",
+   "cadence": "annual, Magha Shukla Saptami",
+   "notes": "Celebrates the sun's chariot turning northward; great solar temples such as Konark and Modhera enshrine Surya as a chariot drawn by seven horses.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Surya temple tradition; Konark Sun Temple"
+    }
+   ]
+  }
+ ],
+ "hindu_soma": [
+  {
+   "name": "Somayajna (soma-pressing sacrifice)",
+   "term": {
+    "value": "सोमयज्ञ",
+    "script": "Devanagari",
+    "rom": "somayajña"
+   },
+   "type": "sacrifice",
+   "cadence": "occasional Shrauta rite; thrice-daily pressings (Agnishtoma)",
+   "notes": "The soma stalks are pressed with stones, strained into the graha cups, and offered; the Agnishtoma is the model soma-sacrifice, with morning, midday, and evening pressings.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Rigveda, Mandala 9; Shatapatha Brahmana (Agnishtoma)"
+    }
+   ]
+  }
+ ],
+ "hindu_uparichara_vasu": [
+  {
+   "name": "Indra-dhvaja (Indra's banner festival)",
+   "term": {
+    "value": "इन्द्रध्वज",
+    "script": "Devanagari",
+    "rom": "indra-dhvaja"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "The Mahabharata traces the royal festival of raising and worshipping Indra's flagstaff to Vasu, who first planted the bamboo pole Indra gave him; kings thereafter erected and decked the pole yearly for Indra's worship.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mahabharata, Adi Parva (origin of the Indra-festival)"
+    }
+   ]
+  }
+ ],
+ "hindu_vibhishana": [
+  {
+   "name": "Veneration as a Chiranjivi (deathless one)",
+   "type": "veneration",
+   "cadence": "perennial",
+   "notes": "Granted long life and unwavering devotion by Brahma, Vibhishana is counted among the chiranjivis and venerated in Vaishnava and temple tradition (notably at Sri Ranganatha shrines) as the righteous rakshasa-devotee.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Chiranjivi tradition; Srivaishnava temple lore"
+    }
+   ]
+  }
+ ],
  "hittite_arinna": [
   {
    "name": "State cult of the Sun-goddess at Arinna",
@@ -388386,6 +392167,386 @@ const CULT_SWEEP = {
    ]
   }
  ],
+ "hurrian_teshub": [
+  {
+   "name": "Cult of the storm-king at Kummiya, Aleppo and Tarḫuntašša",
+   "term": {
+    "value": "Teššub",
+    "script": "Latin",
+    "rom": "Teššub"
+   },
+   "type": "temple",
+   "cadence": "state cult, second millennium BCE",
+   "notes": "Head of the Hurrian pantheon; his mythic seat is the city of Kummiya, with major weather-god cult centres at Aleppo (Ḥalab) and across Kizzuwatna; received the storm-god's bull-offerings and oath-rites of Hittite state treaties.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hurrian-Hittite cultic geography; Hittite treaty oath-lists"
+    }
+   ]
+  }
+ ],
+ "hurrian_hebat": [
+  {
+   "name": "Cult of the queen-of-heaven at Kummanni and Aleppo",
+   "term": {
+    "value": "Ḫepat",
+    "script": "Latin",
+    "rom": "Ḫepat"
+   },
+   "type": "temple",
+   "cadence": "state cult, second millennium BCE",
+   "notes": "Consort of Teshub, worshipped at Kummanni (classical Comana Cappadociae) and Aleppo; assimilated by the Hittites to the Sun-goddess of Arinna, an equation made explicit in Queen Puduḫepa's prayer.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Prayer of Puduḫepa; Hittite-Hurrian cult texts"
+    }
+   ]
+  }
+ ],
+ "hurrian_shaushka": [
+  {
+   "name": "Cult of Shaushka of Nineveh",
+   "term": {
+    "value": "Šauška",
+    "script": "Latin",
+    "rom": "Šauška"
+   },
+   "type": "temple",
+   "cadence": "second millennium BCE",
+   "notes": "Her chief cult was at Nineveh and across Kizzuwatna; her statue (Ishtar of Nineveh) was twice sent to Egypt to heal Amenhotep III, per the Amarna letters. Attended in cult by her handmaidens-musicians Ninatta and Kulitta.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Amarna letters (EA 23); Hittite-Hurrian cult texts"
+    }
+   ]
+  }
+ ],
+ "hurrian_sharruma": [
+  {
+   "name": "Cult of the mountain-god and royal protector",
+   "term": {
+    "value": "Šarruma",
+    "script": "Latin",
+    "rom": "Šarruma"
+   },
+   "type": "temple",
+   "cadence": "second millennium BCE",
+   "notes": "Son of Teshub and Hebat, venerated in Kizzuwatna; taken by Tudḫaliya IV as personal protector-deity, who depicts the god embracing him in the Yazılıkaya rock-sanctuary (Chamber B).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yazılıkaya reliefs; Hittite royal cult of Tudḫaliya IV"
+    }
+   ]
+  }
+ ],
+ "hurrian_kumarbi": [
+  {
+   "name": "Cult of the grain-father god",
+   "term": {
+    "value": "Kumarbi",
+    "script": "Latin",
+    "rom": "Kumarbi"
+   },
+   "type": "temple",
+   "cadence": "second millennium BCE",
+   "notes": "His mythic home is Urkesh, with a secondary cult centre at Azuḫinnu; addressed as a 'king' in ritual texts and named in an Assyrian takultu-text as a god of Taite alongside Nabarbi and Samanuḫa. Worship attested from Anatolia to the Zagros.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Assyrian takultu-text; Hurrian cult attestations"
+    }
+   ]
+  }
+ ],
+ "hurrian_aranzah": [
+  {
+   "name": "Offerings to the source of the deified Tigris",
+   "term": {
+    "value": "Aranzaḫ",
+    "script": "Latin",
+    "rom": "Aranzaḫ"
+   },
+   "type": "offering",
+   "cadence": "occasional",
+   "notes": "The Tigris itself deified; first-millennium BCE Assyrian references to offerings made at the source of the Tigris in Šubria are taken to continue an earlier Hurrian worship of the river as a god.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Neo-Assyrian Tigris-source offerings; Hurrian river-cult"
+    }
+   ]
+  }
+ ],
+ "hungarian_hadur": [
+  {
+   "name": "White-stallion war-sacrifice before battle",
+   "term": {
+    "value": "fehér ló áldozat",
+    "script": "Latin",
+    "rom": "fehér ló áldozat"
+   },
+   "type": "sacrifice",
+   "cadence": "before battle",
+   "notes": "Early Magyars are said to have sacrificed white stallions to the war-god (Hadak Ura) to win his favour in war; horse-deposit burials of the 10th–13th c. attest the practice. Copper was his sacred metal.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hungarian mythology; 10th–13th c. horse-sacrifice archaeology"
+    }
+   ]
+  }
+ ],
+ "ibeji": [
+  {
+   "name": "Feeding and bathing of the ere ìbejì",
+   "term": {
+    "value": "ere ìbejì",
+    "script": "Latin",
+    "rom": "ere ìbejì"
+   },
+   "type": "offering",
+   "cadence": "continual / weekly market-day",
+   "notes": "On the death of a twin a carved ere ìbejì is made; the mother bathes, dresses, anoints with camwood and feeds it as a living child, with offerings of ẹ̀wà ìbejì (beans) and palm-oil. Twins are held under the protection of Ṣàngó.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yoruba ere ìbejì ethnography; oríkì ibeji"
+    }
+   ]
+  }
+ ],
+ "ibibio_ekpe": [
+  {
+   "name": "Ekpe (Mgbe) leopard-society masquerade and judiciary",
+   "term": {
+    "value": "Ekpe",
+    "script": "Latin",
+    "rom": "Ekpe"
+   },
+   "type": "festival",
+   "cadence": "society rites and outings",
+   "notes": "The bush/leopard spirit is embodied by the masked Ekpe (Mgbe/Egbo) society that served the Efik, Efut and Ibibio as judiciary, legislature and security; judgments, fines and summonses were recorded in nsibidi signs and the ukara cloth.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Cross River Ekpe/Mgbe society ethnography; nsibidi studies"
+    }
+   ]
+  }
+ ],
+ "ibibio_abasi": [
+  {
+   "name": "Worship through intermediaries, not direct shrine",
+   "term": {
+    "value": "Abasi Ibom",
+    "script": "Latin",
+    "rom": "Abasi Ibom"
+   },
+   "type": "offering",
+   "cadence": "libation, hierarchically ordered",
+   "notes": "As remote sky-creator Abasi has no temple or priesthood of his own; libations of palm-wine are poured first to Abasi Ibom, then to the ndem (marine tutelary deities), then to the ancestors (mbukpo), so the supreme god is approached through his intermediaries.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Efik/Ibibio religion ethnography"
+    }
+   ]
+  }
+ ],
+ "ibibio_ndem": [
+  {
+   "name": "Libation and offering at ndem water-shrines",
+   "term": {
+    "value": "ndem",
+    "script": "Latin",
+    "rom": "ndem"
+   },
+   "type": "offering",
+   "cadence": "regular and at need",
+   "notes": "The territorial marine/riverine deities are served by chief priests and priestesses; palm-wine libation, sacrifice and invocation are directed to the ndem as tutelary arch-divinities mediating between Abasi Ibom and the community.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Efik/Ibibio ndem worship ethnography"
+    }
+   ]
+  }
+ ],
+ "igbo_ala": [
+  {
+   "name": "Iri Ji new-yam festival and mbari house",
+   "term": {
+    "value": "Iri Ji",
+    "script": "Latin",
+    "rom": "Iri Ji"
+   },
+   "type": "festival",
+   "cadence": "annual (new-yam harvest)",
+   "notes": "The earth-goddess is honoured at the new-yam festival (Iri Ji) thanking her for the harvest, and through the mbari house — a painted open-sided shrine filled with mud sculptures built to appease Ala (and Amadioha). Oath-taking and judgment of nsọ ala (abominations) fall under her.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo Odinani; mbari art ethnography"
+    }
+   ]
+  }
+ ],
+ "igbo_amadioha": [
+  {
+   "name": "White-ram sacrifice and mbari shrine",
+   "term": {
+    "value": "Amadioha",
+    "script": "Latin",
+    "rom": "Amadioha"
+   },
+   "type": "sacrifice",
+   "cadence": "at need and vow",
+   "notes": "Rituals to the thunder-god centre on sacrifice of a white ram (his sacred animal and emblem); shrines hold an iron staff and ram-horns, and major mbari houses were built to him alongside Ala. His colours are red (wrath) and white (purity); nzu chalk marks truth in his rites.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo Odinani; Amadioha shrine practice"
+    }
+   ]
+  }
+ ],
+ "igbo_idemili": [
+  {
+   "name": "Veneration of the royal python (éké Idemili)",
+   "term": {
+    "value": "éké Idemili",
+    "script": "Latin",
+    "rom": "éké Idemili"
+   },
+   "type": "offering",
+   "cadence": "continual taboo-observance",
+   "notes": "In the Idemili clan the royal python is sacred to the goddess as her living messenger; to kill one is a grave abomination requiring a human-style burial for the snake to avert her wrath.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo Odinani; Idemili python-cult ethnography"
+    }
+   ]
+  }
+ ],
+ "igbo_ikenga": [
+  {
+   "name": "Personal Ikenga shrine of the right hand",
+   "term": {
+    "value": "Ikenga",
+    "script": "Latin",
+    "rom": "Ikenga"
+   },
+   "type": "offering",
+   "cadence": "daily kola/wine; blood before ventures",
+   "notes": "Each man keeps a carved Ikenga as a shrine to his right hand (aka ikenga); it is fed daily with kola and palm-wine and, before an important undertaking, with the sacrificial blood of a cock or ram. Over years it accretes residue of blood, chewed kola and alligator pepper.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo Ikenga ethnography (Boston; Cole & Aniakor)"
+    }
+   ]
+  }
+ ],
+ "igbo_agwu": [
+  {
+   "name": "Daily dibia devotion and Nsọ/Iwu Agwụ observance",
+   "term": {
+    "value": "Agwụ",
+    "script": "Latin",
+    "rom": "Agwụ"
+   },
+   "type": "offering",
+   "cadence": "daily morning prayer",
+   "notes": "Every dibia prays to Agwu at first rising and observes the Nsọ Agwụ (taboos) and Iwu Agwụ (laws) of the deity; possession by Agwu is what makes a diviner-healer, and its neglect brings madness and confusion.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "J. C. U. Aguwa, The Agwu Deity in Igbo Religion"
+    }
+   ]
+  }
+ ],
+ "igbo_chukwu": [
+  {
+   "name": "Arochukwu oracle (Ibini Ukpabi / Long Juju)",
+   "term": {
+    "value": "Ibini Ukpabi",
+    "script": "Latin",
+    "rom": "Ibini Ukpabi"
+   },
+   "type": "shrine",
+   "cadence": "oracular consultation",
+   "notes": "Though the supreme creator was held to need no shrine, his voice was sought at the Ibini Ukpabi oracle in a sacred cave at Arochukwu, the most powerful oracle in precolonial Igboland; dibia priests interpreted its pronouncements with palm fronds and kola. Destroyed by the British in the Aro Expedition of 1901–02.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Arochukwu oracle (Ibini Ukpabi) history"
+    }
+   ]
+  }
+ ],
+ "igbo_ekwensu": [
+  {
+   "name": "Ekwensu war-festival and Mgbedike masquerade",
+   "term": {
+    "value": "Ekwensu",
+    "script": "Latin",
+    "rom": "Ekwensu"
+   },
+   "type": "festival",
+   "cadence": "annual (e.g. onwa-asaa)",
+   "notes": "Communities such as Onicha-Ukwuani and the Obollo (during the onwa-asaa festival) honour Ekwensu in memory of victories in war, with forest shrines and masquerade. The fierce horned-and-tusked Mgbedike mask embodies him as warrior-god of the wilderness. He is a trickster-spirit, not a Christian devil.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Igbo cosmology; Ekwensu festival and Mgbedike masquerade ethnography"
+    }
+   ]
+  }
+ ],
+ "ijaw_adumu": [
+  {
+   "name": "Owu water-spirit masquerade of the Ekine (Sekiapu) society",
+   "term": {
+    "value": "Owu",
+    "script": "Latin",
+    "rom": "Owu"
+   },
+   "type": "festival",
+   "cadence": "masquerade cycle (e.g. Owu-Aru-Sun)",
+   "notes": "The owuamapu water-spirits, headed by Adumu (Kalabari Owu), are served by the Ekine (Sekiapu) society, whose masked dancers wear human-and-aquatic crest headdresses to embody them; the Owu-Aru-Sun festival marks their cyclic return.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Kalabari Ijo Ekine/Owu masquerade ethnography (Horton)"
+    }
+   ]
+  }
+ ],
+ "ijaw_egbesu": [
+  {
+   "name": "Egbesu war-rites and just-cause protection",
+   "term": {
+    "value": "Egbesu",
+    "script": "Latin",
+    "rom": "Egbesu"
+   },
+   "type": "festival",
+   "cadence": "war-rites and Owu outing",
+   "notes": "The Egbesu force may be invoked only in defence or to right an injustice, by those in harmony with the cosmos; priests (e.g. the Olodiama Egbesu) perform peri rites, and the deity comes out as the Egbesu Owu masquerade. His emblems are the leopard, panther and lion.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ijaw Egbesu ethnography"
+    }
+   ]
+  }
+ ],
  "ijaw_woyengi": [
   {
    "name": "Invocation of the Great Mother for fertility and destiny",
@@ -388400,7 +392561,7 @@ const CULT_SWEEP = {
    ]
   }
  ],
- "inca_inti": [
+ "inti": [
   {
    "name": "Inti Raymi, the Festival of the Sun",
    "term": {
@@ -388668,6 +392829,186 @@ const CULT_SWEEP = {
     {
      "kind": "primary",
      "reference": "Arthur C. Parker, The Code of Handsome Lake, the Seneca Prophet (1913)"
+    }
+   ]
+  }
+ ],
+ "iroquois_hino": [
+  {
+   "name": "Thunder invocation and thanksgiving",
+   "type": "offering",
+   "cadence": "at thunderstorms and in the seasonal thanksgiving cycle",
+   "notes": "The Thunderer is invoked during thunderstorms and named with gratitude in the Thanksgiving Address (Ohenton Karihwatehkwen) among the powers that bring rain and protect the people; tobacco is burned to him.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Erminnie A. Smith, Myths of the Iroquois (BAE 2nd Annual Report, 1883)"
+    }
+   ]
+  }
+ ],
+ "japanese_amaterasu": [
+  {
+   "name": "Worship at the Ise Grand Shrine (Naiku)",
+   "term": {
+    "value": "伊勢神宮",
+    "script": "Kanji",
+    "rom": "Ise Jingu"
+   },
+   "type": "temple",
+   "cadence": "perpetual; Shikinen Sengu rebuilding every 20 years",
+   "notes": "Amaterasu is enshrined at the Inner Shrine (Naiku) of Ise, where the Yata-no-Kagami mirror is kept as her sacred body; the Shikinen Sengu reconstruction of the shrine has been performed roughly every twenty years since 690 CE.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Ise Jingu tradition; Engishiki (10th c.)"
+    }
+   ]
+  }
+ ],
+ "japanese_susanoo": [
+  {
+   "name": "Gion Matsuri",
+   "term": {
+    "value": "祇園祭",
+    "script": "Kanji",
+    "rom": "Gion Matsuri"
+   },
+   "type": "festival",
+   "cadence": "annually in the seventh month (July)",
+   "notes": "Centred on Yasaka (Gion) Shrine in Kyoto, the festival originates in the goryo-e of 869 CE to placate the pestilence-deity (Susanoo / Gozu Tenno) during an epidemic; its yamaboko floats process to purify the city and ward off plague.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Yasaka Jinja tradition; Gion goryo-e of 869"
+    }
+   ]
+  }
+ ],
+ "japanese_inari": [
+  {
+   "name": "Worship at Fushimi Inari Taisha",
+   "term": {
+    "value": "伏見稲荷大社",
+    "script": "Kanji",
+    "rom": "Fushimi Inari Taisha"
+   },
+   "type": "temple",
+   "cadence": "perpetual; hatsu-uma rite in early spring",
+   "notes": "Head of tens of thousands of Inari shrines, founded by the Hata clan in 711 CE; worshippers pass through corridors of vermilion torii and present offerings of rice, sake and fried tofu (aburaage / inari-zushi) to the fox-messengers.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Fushimi Inari Taisha tradition; Karen A. Smyers, The Fox and the Jewel (1999)"
+    }
+   ]
+  }
+ ],
+ "japanese_hachiman": [
+  {
+   "name": "Hojo-e (rite of releasing living beings)",
+   "term": {
+    "value": "放生会",
+    "script": "Kanji",
+    "rom": "Hojo-e"
+   },
+   "type": "festival",
+   "cadence": "annually in autumn",
+   "notes": "The Iwashimizu Hojo-e, established 863 CE (and the Hakozaki/Usa observances), expresses Hachiman's Buddhist character: fish and birds are released into river and sea as an act of merit and prayer for peace.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Iwashimizu Hachimangu / Usa Jingu tradition"
+    }
+   ]
+  }
+ ],
+ "japanese_konohanasakuya_hime": [
+  {
+   "name": "Worship at Fujisan Hongu Sengen Taisha",
+   "term": {
+    "value": "富士山本宮浅間大社",
+    "script": "Kanji",
+    "rom": "Fujisan Hongu Sengen Taisha"
+   },
+   "type": "temple",
+   "cadence": "perpetual",
+   "notes": "Head of some 1,300 Asama/Sengen shrines, where Mount Fuji itself is revered as her divine body; she is invoked for safe childbirth, against fire, and as patroness of sake-brewing.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Fujisan Hongu Sengen Taisha tradition"
+    }
+   ]
+  }
+ ],
+ "japanese_okuninushi": [
+  {
+   "name": "Worship at Izumo Taisha",
+   "term": {
+    "value": "出雲大社",
+    "script": "Kanji",
+    "rom": "Izumo Oyashiro"
+   },
+   "type": "temple",
+   "cadence": "perpetual; Kamiari-sai in the tenth lunar month",
+   "notes": "The great shrine promised to Okuninushi at the land-cession (kuni-yuzuri); at Kamiari-zuki the kami of Japan are believed to gather there, and he is petitioned as the god of en-musubi (binding of marriages and bonds).",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Kojiki, Book 1 (kuni-yuzuri); Izumo Taisha tradition"
+    }
+   ]
+  }
+ ],
+ "japanese_omononushi": [
+  {
+   "name": "Worship at Omiwa Shrine (Mount Miwa)",
+   "term": {
+    "value": "大神神社",
+    "script": "Kanji",
+    "rom": "Omiwa Jinja"
+   },
+   "type": "temple",
+   "cadence": "perpetual",
+   "notes": "One of Japan's oldest shrines: it has no honden, for Mount Miwa itself is the deity's body, fronted by a triple torii before the forbidden mountain. Offerings of sake and eggs are made to the snake-god, and a cedar-ball (sugidama) marks his patronage of sake-brewing.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Nihon Shoki, Sujin chapter; Omiwa Jinja tradition"
+    }
+   ]
+  }
+ ],
+ "japanese_kagutsuchi": [
+  {
+   "name": "Ho-shizume-no-matsuri (fire-pacification rite)",
+   "term": {
+    "value": "鎮火祭",
+    "script": "Kanji",
+    "rom": "Ho-shizume-no-matsuri"
+   },
+   "type": "festival",
+   "cadence": "twice yearly (imperial court rite)",
+   "notes": "Worshipped as Homusubi at Atago and Akiba shrines as the god of fire and the forge; the court held the Ho-shizume rite twice a year to placate him and avert palace conflagrations.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Engishiki, Norito (Ho-shizume-no-matsuri); Atago/Akiba shrine tradition"
+    }
+   ]
+  }
+ ],
+ "japanese_tametomo": [
+  {
+   "name": "Apotropaic veneration as a smallpox-queller",
+   "type": "offering",
+   "cadence": "during epidemics; protective charms for children",
+   "notes": "From the legend that no smallpox struck Hachijo-jima because the exiled Tametomo had driven off the smallpox demon, his image was made into hoso-e (smallpox pictures) and papier-mache charms given to sick children to ward off the disease.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Edo-period hoso-e (smallpox-print) tradition"
     }
    ]
   }
@@ -389031,6 +393372,620 @@ const CULT_SWEEP = {
     {
      "kind": "secondary",
      "reference": "Martin Gaenszle, Origins and Migrations: Kinship, Mythology and Ethnic Identity among the Mewahang Rai (2000)"
+    }
+   ]
+  }
+ ],
+ "kiribati_tabuariki": [
+  {
+   "name": "Invocation of the thunder-anti",
+   "type": "invocation",
+   "cadence": "perennial",
+   "notes": "Tabuariki was the most prominent of the anti invoked by the Tungaru; as a healer who ruled the winds and rain he was called upon for health and for relief from storm and drought.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "A. Grimble, Tungaru Traditions"
+    }
+   ]
+  }
+ ],
+ "kiwai_marunogere": [
+  {
+   "name": "The moguru fertility rite",
+   "term": {
+    "value": "mogúru",
+    "script": "Latin",
+    "rom": "moguru"
+   },
+   "type": "festival",
+   "cadence": "periodic",
+   "notes": "Marunogere is the culture-hero who instituted the moguru, the great Kiwai fertility rite of communal license and initiation in which ancestral effigies are displayed in the longhouse; the rite descends from his founding act.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "G. Landtman, The Kiwai Papuans of British New Guinea (moguru rite)"
+    }
+   ]
+  }
+ ],
+ "krachi_dente": [
+  {
+   "name": "The Dente cave-oracle at Kete-Krachi",
+   "type": "oracle",
+   "cadence": "perennial",
+   "notes": "One of the oldest shrine institutions of the region, the Dente cave-oracle on the Volta drew pilgrims and state envoys; its priest spoke for the god, and the shrine prohibited bloodshed and dispensed social justice.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "D. Maier, Priests and Power: The Case of the Dente Shrine"
+    }
+   ]
+  }
+ ],
+ "korean_tangun": [
+  {
+   "name": "Veneration of Dangun as national progenitor and mountain-god",
+   "type": "veneration",
+   "cadence": "perennial",
+   "notes": "After his reign Dangun is said to have become the mountain-spirit (sansin) of Asadal; he is venerated as the progenitor of the Korean nation, with later Daejonggyo worship and the Gaecheonjeol observance.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Iryeon, Samguk Yusa, Gojoseon"
+    }
+   ]
+  }
+ ],
+ "korean_habaek": [
+  {
+   "name": "Worship by the Goguryeo royal house",
+   "type": "veneration",
+   "cadence": "perennial",
+   "notes": "As maternal grandfather of the founder Jumong, the river-god Habaek was honoured by the Goguryeo kings in their dynastic cult of divine descent.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Gwanggaeto Stele; Yi Gyu-bo, Dongmyeongwang-pyeon"
+    }
+   ]
+  }
+ ],
+ "kongo_simbi": [
+  {
+   "name": "Veneration of the bisimbi at springs and pools",
+   "type": "veneration",
+   "cadence": "perennial",
+   "notes": "Local bisimbi inhabiting rocks, gullies, streams and pools were venerated as guardians of fertility and well-being; banganga sought their guidance, and their power was bound into minkisi (sacred charms).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "W. MacGaffey, Religion and Society in Central Africa"
+    }
+   ]
+  }
+ ],
+ "kwakwakawakw_dzunukwa": [
+  {
+   "name": "The masked Dzunukwa dance in the winter ceremonial",
+   "type": "festival",
+   "cadence": "seasonal",
+   "notes": "Dzunukwa is danced in the winter potlatch ceremonial; as one of the three foremost crests (with Thunderbird and Sisiutl) she is displayed in mask-dances and her image legitimates chiefly wealth and prerogative.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "F. Boas, The Social Organization and the Secret Societies of the Kwakiutl Indians"
+    }
+   ]
+  }
+ ],
+ "kwakwakawakw_bakwas": [
+  {
+   "name": "The Bukwus mask-dance",
+   "type": "festival",
+   "cadence": "seasonal",
+   "notes": "The wild man of the woods is impersonated in the winter T'seka and Tla'sala dances, the masked performer holding a forearm before the face to mime the spirit's shyness of humankind.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "F. Boas, The Social Organization and the Secret Societies of the Kwakiutl Indians"
+    }
+   ]
+  }
+ ],
+ "lusitanian_endovelicus": [
+  {
+   "name": "Dream-incubation and votive cult at São Miguel da Mota",
+   "term": {
+    "value": "ex responsu / ex imperato",
+    "script": "Latn",
+    "rom": "ex responsu"
+   },
+   "type": "sanctuary",
+   "cadence": "as-needed",
+   "notes": "At the sanctuary near Terena (Alandroal) supplicants sought healing and oracular answers through incubatio (sleeping in the precinct); about 92 Latin votive inscriptions survive, often with formulae ex responsu or ex imperato, alongside bronze and terracotta figurines, boar sculptures and even surgical instruments.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Votive inscriptions of the Endovellicus sanctuary, São Miguel da Mota (CIL II); excavation reports (Schattner et al., 2002)"
+    }
+   ]
+  }
+ ],
+ "lusitanian_ataecina": [
+  {
+   "name": "Curse-tablet and votive cult of Ataecina Turibrigensis",
+   "term": {
+    "value": "defixio",
+    "script": "Latn",
+    "rom": "defixio"
+   },
+   "type": "votive",
+   "cadence": "as-needed",
+   "notes": "Worshippers dedicated goat-figurines welded to inscribed plaques (Santa Lucía del Trampal, Malpartida, Herguijuela) and deposited binding curse-tablets; the Mérida defixio invokes 'Dea Ataecina Turibrigensis Proserpina' to avenge stolen garments. Her cult centred on the lost town of Turobriga in Celtic Beturia.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mérida defixio (CIL II 462); votive goat-plaques of Cáceres province"
+    }
+   ]
+  }
+ ],
+ "lusitanian_bormanicus": [
+  {
+   "name": "Thermal-spring healing dedications at Caldas de Vizela",
+   "type": "votive",
+   "cadence": "as-needed",
+   "notes": "Votive altars dedicated to Bormanico (and to the syncretic Reo Bormanico) were set up at the hot springs of Caldas de Vizela in northern Portugal, the offerers seeking healing through the bubbling thermal water.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Votive inscriptions of Caldas de Vizela (CIL II)"
+    }
+   ]
+  }
+ ],
+ "lusitanian_reve": [
+  {
+   "name": "Bull-offering in the Cabeço das Fráguas sacrifice",
+   "type": "sacrifice",
+   "cadence": "as-needed",
+   "notes": "In the Lusitanian suovetaurilia recorded on the Cabeço das Fráguas rock, Reve receives a breeding bull (the 'comaiam' / Reva), the climactic victim of the joint offering to the local gods.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cabeço das Fráguas inscription (Lusitanian, Latin alphabet)"
+    }
+   ]
+  }
+ ],
+ "lusitanian_trebaruna": [
+  {
+   "name": "Yearling-sheep offering in the Cabeço das Fráguas sacrifice",
+   "type": "sacrifice",
+   "cadence": "as-needed",
+   "notes": "The Cabeço das Fráguas invocatio assigns Trebaruna a one-year-old sheep within the collective sacrifice; she is also widely attested on votive altars, sometimes paired with Reve.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cabeço das Fráguas inscription; Lusitanian votive epigraphy"
+    }
+   ]
+  }
+ ],
+ "lusitanian_trebopala": [
+  {
+   "name": "Opening sheep of the Cabeço das Fráguas sacrifice",
+   "type": "sacrifice",
+   "cadence": "as-needed",
+   "notes": "The invocatio opens 'one sheep to Trebopala', making her the first-named recipient of the joint Lusitanian offering ('Damos-te esta ovelha, ó Trebopala').",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cabeço das Fráguas inscription (invocatio)"
+    }
+   ]
+  }
+ ],
+ "lusitanian_laebo": [
+  {
+   "name": "Pig-offering in the Cabeço das Fráguas sacrifice",
+   "type": "sacrifice",
+   "cadence": "as-needed",
+   "notes": "In the same invocatio Laebo receives a pig ('a pig to Laebo'), the only defined cultic act for this otherwise obscure deity.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cabeço das Fráguas inscription"
+    }
+   ]
+  }
+ ],
+ "lusitanian_iccona": [
+  {
+   "name": "Mare-offering at Cabeço das Fráguas",
+   "type": "sacrifice",
+   "cadence": "as-needed",
+   "notes": "Iccona Loiminna receives the offering of a mare in the Cabeço das Fráguas rite, consistent with her reconstruction as an Epona-like horse-goddess (*Ekwonā).",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Cabeço das Fráguas inscription; Blázquez on Iccona Loiminna"
+    }
+   ]
+  }
+ ],
+ "lusitanian_nabia": [
+  {
+   "name": "Spring and river votive cult",
+   "type": "votive",
+   "cadence": "as-needed",
+   "notes": "Nabia received numerous votive dedications across the Gallaecian-Lusitanian northwest, at springs and watercourses; at the Fonte do Ídolo (Braga) her name is carved beside that of Tongoenabiagus over a spring-fed relief.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Fonte do Ídolo inscription, Braga (1st c. AD); Nabia votive epigraphy"
+    }
+   ]
+  }
+ ],
+ "lusitanian_tongoenabiagus": [
+  {
+   "name": "Oath and spring cult at the Fonte do Ídolo",
+   "term": {
+    "value": "Tongoe Nabiagoi",
+    "script": "Latn",
+    "rom": "Tongoe Nabiagoi"
+   },
+   "type": "sanctuary",
+   "cadence": "as-needed",
+   "notes": "At the 1st-century Braga spring-shrine the dedicator Celicus Fronto of Arcobriga carved an offering 'Tongoe Nabiagoi' beside Nabia; the theonym is linked to *tong- ('to swear', cf. Old Irish tongu), suggesting oaths sworn at the sacred water.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Fonte do Ídolo inscription, Braga (TONGOE NABIAGOI / CELICVS FRONTO ARCOBRIGENSIS)"
+    }
+   ]
+  }
+ ],
+ "luwian_tarhunz": [
+  {
+   "name": "Storm-god cult at Aleppo",
+   "type": "sanctuary",
+   "cadence": "perennial",
+   "notes": "Tarhunz's foremost cult centre was the temple of the storm-god at Aleppo, with worship reaching back into the Bronze Age and continuing through the Iron Age Syro-Anatolian states.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Tarḫunz'; 'Luwian religion'"
+    }
+   ]
+  }
+ ],
+ "luwian_arma": [
+  {
+   "name": "Lunar cult merged with Sin of Harran",
+   "type": "sanctuary",
+   "cadence": "perennial",
+   "notes": "In the Iron Age the cult of Arma fused with that of the moon-god Sin of Harran ('Harranian Arma'); his popularity is shown by the abundance of theophoric names such as Armaziti ('Man of Arma').",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Arma (deity)'"
+    }
+   ]
+  }
+ ],
+ "lycian_lada": [
+  {
+   "name": "Cult of Eni Mahanahi at the Letoon",
+   "term": {
+    "value": "Letoon",
+    "script": "Latn",
+    "rom": "Letoon"
+   },
+   "type": "sanctuary",
+   "cadence": "perennial",
+   "notes": "As 'mother of this sanctuary', Lada (Leto) was the chief deity of the federal Letoon shrine near Xanthos, worshipped at a spring-fed temple beside those of her children Ertemi and the third god; cult decrees were proclaimed there (cf. the Letoon trilingual).",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Letoon trilingual inscription (Lycian/Greek/Aramaic), Xanthos; Lycian dedications to eni mahanahi"
+    }
+   ]
+  }
+ ],
+ "lycian_ertemi": [
+  {
+   "name": "Cult at the Letoon alongside Leto",
+   "type": "sanctuary",
+   "cadence": "perennial",
+   "notes": "Ertemi (the Lycian Artemis), daughter of Lada, was worshipped in her own temple within the Letoon temenos near Xanthos, and shared a precinct with Maliya per the Xanthos material.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Letoon temple inscriptions and dedications, Xanthos"
+    }
+   ]
+  }
+ ],
+ "lycian_twelve_gods": [
+  {
+   "name": "Votive relief cult of the Twelve Gods",
+   "type": "votive",
+   "cadence": "as-needed",
+   "notes": "More than fifty near-identical Roman-period reliefs (2nd-4th c. AD) from across Lycia depict twelve spear-bearing gods above twelve dogs, dedicated by named worshippers; the densest concentration is at Komba (Gömbe), probably the cult's centre.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "G. Renberg, 'Unexplored Aspects of the Lycian Twelve Gods Reliefs', Epigraphica Anatolica 47 (2014); Harvard Art Museums votive relief 287005"
+    }
+   ]
+  }
+ ],
+ "lydian_artimus": [
+  {
+   "name": "Sanctuary of Artemis at Sardis",
+   "type": "sanctuary",
+   "cadence": "perennial",
+   "notes": "The most-attested Lydian deity had a sanctuary at Sardis from at least the 6th century BC (archaic dedications and a cult-image foundation); her name appears in Lydian-language inscriptions on the site and in funerary curse formulae.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Lydian inscriptions of the Artemis sanctuary, Sardis; Sardis Expedition (Greenewalt, 'Gods of Lydia')"
+    }
+   ]
+  }
+ ],
+ "lydian_kuvava": [
+  {
+   "name": "Metroac cult at Sardis",
+   "type": "sanctuary",
+   "cadence": "perennial",
+   "notes": "Kuvava/Kybebe was worshipped at Sardis as tutelary mother-goddess; 6th-century sculpture of the lion-attended goddess and blocks from a later metroon survive, and per Hutter her cult was gradually displaced by Phrygian Cybele.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Greenewalt, 'Gods of Lydia' (Sardis Expedition); Hutter, in Melchert (ed.), The Luwians (2003)"
+    }
+   ]
+  }
+ ],
+ "luo_nyasaye": [
+  {
+   "name": "Sacrifice at sacred places (hembko)",
+   "term": {
+    "value": "hembko",
+    "script": "Latn",
+    "rom": "hembko"
+   },
+   "type": "sacrifice",
+   "cadence": "as-needed",
+   "notes": "The Luo offered spotless animals to Nyasaye at sacred shrines, trees, great rocks, hills and beside Lake Victoria, especially in times of calamity (dera), to propitiate the supernatural and secure prosperity.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Exploring-Africa, 'Luo religious beliefs'; IJRISS, 'Elements of Luo Traditional Sacrifice'"
+    }
+   ]
+  }
+ ],
+ "luo_ramogi": [
+  {
+   "name": "Shrine-rites at Got Ramogi (Lwanda Asumbi)",
+   "type": "sanctuary",
+   "cadence": "as-needed",
+   "notes": "At the Ramogi Hills the shrine Lwanda Asumbi and a network of hembko received sacrifices during severe calamities (dera); Got Ramogi remains a venerated ancestral heritage site.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "IJISRT, 'Luo Cultural Shrines: The Hembko of Got Ramogi, Kenya' (2024)"
+    }
+   ]
+  }
+ ],
+ "luo_luanda_magere": [
+  {
+   "name": "Veneration at the Sidho shrine-stone",
+   "type": "sanctuary",
+   "cadence": "as-needed",
+   "notes": "At Sidho near Awasi a revered stone marks where Luanda Magere is said to have turned to rock; warriors traditionally sharpened their blades there before battle, and people still perform rituals and prayers at the site.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, 'Luanda Magere'; National Museums of Kenya"
+    }
+   ]
+  }
+ ],
+ "maasai_enkai": [
+  {
+   "name": "Cattle-blessing and rain petitions to Enkai",
+   "term": {
+    "value": "Eŋai",
+    "script": "Latn",
+    "rom": "Enkai"
+   },
+   "type": "offering",
+   "cadence": "as-needed",
+   "notes": "The Maasai address Enkai in prayer and offering for rain, fertility and the wellbeing of the cattle that Enkai is said to have lowered to them down the roots of the sacred fig (Ficus natalensis); the tree itself is held sacred for this reason.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Religion Wiki, 'Maasai mythology'; TalkAfricana, 'Creation Story of the Maasai'"
+    }
+   ]
+  }
+ ],
+ "manipuri_thangjing": [
+  {
+   "name": "Moirang Lai Haraoba",
+   "term": {
+    "value": "ꯂꯥꯏ ꯍꯔꯥꯎꯕ",
+    "script": "Meitei Mayek",
+    "rom": "Lai Haraoba"
+   },
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "The great Lai Haraoba ('pleasing of the gods') for Thangjing at Moirang is among the longest of the tradition, its dances and rituals re-enacting the cosmogony and sometimes continuing for a month.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lai Haraoba, Wikipedia; Thangching, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_marjing": [
+  {
+   "name": "Offering of the polo-stick at Heingang",
+   "type": "offering",
+   "cadence": "annual",
+   "notes": "Each year devotees ascend the Heingang (Marjing) hill to offer a polo-stick (kangdrum/kangjei) to the god, alongside his Lai Haraoba; the first divine polo match is said to have been played at Lai Haraoba.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Marjing, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_koubru": [
+  {
+   "name": "Koubru Ching Kaba (pilgrimage to Mount Koubru)",
+   "type": "pilgrimage",
+   "cadence": "annual",
+   "notes": "Meitei pilgrims ascend Mount Koubru to the summit shrine of Koupalu; the mountain is among the most visited pilgrimage sites of Sanamahism.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mount Koubru, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_sanamahi": [
+  {
+   "name": "Household worship at the Sanamahi Kachin",
+   "type": "offering",
+   "cadence": "daily",
+   "notes": "Every Meitei household maintains a Sanamahi corner (kachin) in the south-west, where Sanamahi and Leimarel are honoured daily with a lamp and incense on live charcoal, and fresh vegetables on festival days.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Lainingthou Sanamahi, Simple English Wikipedia; Sanamahism, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_leimarel": [
+  {
+   "name": "Hearth worship in the isaiphu and phunga lairu",
+   "term": {
+    "value": "ꯏꯁꯥꯏꯐꯨ",
+    "script": "Meitei Mayek",
+    "rom": "Isaiphu"
+   },
+   "type": "offering",
+   "cadence": "daily",
+   "notes": "Leimarel (with Sanamahi) is worshipped in the first room of every Meitei home, present in an isaiphu (earthen water-pitcher) with no image; her hearth aspect is the phunga lairu, the sacred kitchen fire.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Leimarel Sidabi, Wikipedia; Imoinu / Emoinu, Grokipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_wangbren": [
+  {
+   "name": "Worship at the Sugnu shrine",
+   "type": "offering",
+   "cadence": "annual",
+   "notes": "The chief cult-centre of Wangbren is the shrine at Sugnu; non-Christian Anal villagers annually give offerings to a priest who presents them to the god there.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wangpulen, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "manipuri_nongpok_ningthou": [
+  {
+   "name": "Lai Haraoba of the divine union",
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "The union of Nongpok Ningthou and Panthoibi on the Nongmaiching hills, celebrated with dance and music by the gods, is held to be the origin of the Lai Haraoba festival itself.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Nongpok Ningthou, Wikipedia; Lai Haraoba"
+    }
+   ]
+  }
+ ],
+ "manipuri_panthoibi": [
+  {
+   "name": "Lai Haraoba and the Panthoibi rites",
+   "type": "festival",
+   "cadence": "annual",
+   "notes": "Panthoibi is honoured in Lai Haraoba, whose origin is traced to her union with Nongpok Ningthou; her exploits are chanted from the Panthoibi Khonggul.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Panthoibi, Wikipedia; Panthoibi Khonggul"
+    }
+   ]
+  }
+ ],
+ "mari_keche": [
+  {
+   "name": "Grove-prayer to the sun among the heaven-gods",
+   "term": {
+    "value": "кӱсото",
+    "script": "Cyrillic",
+    "rom": "küsoto"
+   },
+   "type": "sacrifice",
+   "cadence": "seasonal",
+   "notes": "Keče is propitiated together with the other heaven-gods at the communal grove (küsoto) festivals of Mari native religion, which involve prayer and animal sacrifice.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Mari religion, Wikipedia"
+    }
+   ]
+  }
+ ],
+ "mansi_numi_torum": [
+  {
+   "name": "Reindeer sacrifice at sacred sites",
+   "type": "sacrifice",
+   "cadence": "periodic",
+   "notes": "Numi-Torum is honoured with offerings of reindeer at sacred sites and communal feasts among the Mansi, the blood and organs presented at shrines.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Num-Torum, Wikipedia; Mansi religion ethnography (Munkácsi corpus)"
+    }
+   ]
+  }
+ ],
+ "mangaian_rongo": [
+  {
+   "name": "Human sacrifice and taro offering at Orongo and Akaoro marae",
+   "type": "sacrifice",
+   "cadence": "as-needed",
+   "notes": "At Orongo marae a human victim was laid on a block of limestone before Rongo's image, especially to secure victory in war; in peacetime parcels of cooked taro were his regular offering at the inland Akaoro marae.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Rongo, Wikipedia"
     }
    ]
   }
@@ -396793,6 +401748,566 @@ const ICONO_SWEEP = {
   ],
   "sacredAnimals": []
  },
+ "hindu_shiva": {
+  "attributes": [
+   {
+    "id": "hindu_shiva-crescent",
+    "name": "Crescent moon set in the matted locks (chandrashekhara)",
+    "notes": "The waxing crescent in his jata marks his lordship over time; with it the descending Ganga streams from his hair.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shaiva iconography; Britannica, Shiva"
+     }
+    ]
+   },
+   {
+    "id": "hindu_shiva-third-eye",
+    "name": "Vertical third eye on the brow that incinerates with its glance",
+    "notes": "The eye of fire that burned Kama to ash; emblem of inner vision and destructive power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shiva Purana; Matsya Purana (Kama-dahana)"
+     }
+    ]
+   },
+   {
+    "id": "hindu_shiva-tiger-skin",
+    "name": "Tiger- or elephant-skin garment and ash-smeared body",
+    "notes": "Clad in the hide of slain beasts and smeared with cremation ash (vibhuti), marking his ascetic mastery over death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shaiva iconographic tradition"
+     }
+    ]
+   },
+   {
+    "id": "hindu_shiva-jata-ganga",
+    "name": "Matted ascetic hair (jata) bearing the river Ganga",
+    "notes": "He breaks the fall of the descending Ganga in his locks; the epithet Gangadhara.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ramayana, Bala Kanda (descent of Ganga); Puranas"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_shiva-nandi-bull",
+    "name": "Nandi, the white bull mount couchant before his shrine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shaiva temple iconography"
+     }
+    ]
+   },
+   {
+    "id": "hindu_shiva-vasuki-serpent",
+    "name": "The serpent-king Vasuki coiled about his neck",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shaiva iconography"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "hindu_shiva-bilva",
+    "name": "Bilva (bel) leaves offered in worship",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shaiva ritual; Shiva Purana"
+     }
+    ]
+   },
+   {
+    "id": "hindu_shiva-rudraksha",
+    "name": "Rudraksha beads (seeds of Elaeocarpus) worn as rosary",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shaiva tradition; Devi Bhagavata"
+     }
+    ]
+   },
+   {
+    "id": "hindu_shiva-dhatura",
+    "name": "Dhatura flowers and cannabis offered to him",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shaiva ritual tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_parvati": {
+  "attributes": [
+   {
+    "id": "hindu_parvati-fourarm",
+    "name": "Two-armed beside Shiva, four-armed alone, fair-complexioned and crowned",
+    "notes": "As the gentle Devi she is shown benevolent and golden (Gauri), bearing lotus, mirror, or rosary; often holding a bowl of food as Annapurna.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Devi iconography; Puranic tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_parvati-lion",
+    "name": "Lion (or tiger) vahana, emblem of her fearless power",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Devi iconography"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "hindu_parvati-lotus",
+    "name": "Lotus held in hand and as her seat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Devi iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_sarasvati": {
+  "attributes": [
+   {
+    "id": "hindu_sarasvati-white",
+    "name": "White-clad goddess seated on a lotus, playing the vina",
+    "notes": "Robed in white for purity, four-armed, holding vina, book (pustaka), and rosary (akshamala); embodies speech, learning, and music.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sarasvati iconography; Puranic tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_sarasvati-hamsa",
+    "name": "Hamsa (swan/goose) vahana, discerner of milk from water",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sarasvati iconography"
+     }
+    ]
+   },
+   {
+    "id": "hindu_sarasvati-peacock",
+    "name": "Peacock shown attending her in some depictions",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sarasvati iconography"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "hindu_sarasvati-lotus",
+    "name": "White lotus, her seat and emblem of transcendence",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sarasvati iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_surya": {
+  "attributes": [
+   {
+    "id": "hindu_surya-lotus-hands",
+    "name": "Resplendent standing figure holding a lotus in each hand",
+    "notes": "Haloed solar god riding his chariot, a full-blown lotus in either raised hand; in Northern images shown booted, of Iranian-influenced type.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Surya iconography; Konark Sun Temple"
+     }
+    ]
+   },
+   {
+    "id": "hindu_surya-aruna-charioteer",
+    "name": "Chariot of seven horses driven by the legless charioteer Aruna",
+    "notes": "The seven steeds are named for the Vedic metres; red Aruna, personified dawn, holds the reins; twelve wheels mark the months.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Konark Sun Temple iconography; Puranic tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_surya-seven-horses",
+    "name": "Seven horses drawing the sun-chariot",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Surya iconography"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "hindu_surya-lotus",
+    "name": "Lotus, opened by and emblematic of the sun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Surya iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_soma": {
+  "attributes": [
+   {
+    "id": "hindu_soma-white-mace",
+    "name": "White-bodied deity bearing a mace, hare-marked (shashanka)",
+    "notes": "Pale lunar god holding a club, the moon marked with the figure of a hare; he waxes and wanes as the cup of the gods' nectar.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chandra/Soma iconography; Puranic tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_soma-antelope-chariot",
+    "name": "Chariot drawn by antelopes (or white horses)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chandra/Soma iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_varuna": {
+  "attributes": [
+   {
+    "id": "hindu_varuna-white-umbrella",
+    "name": "Conch-pale lord bearing the noose, beneath a white umbrella",
+    "notes": "Crystalline-complexioned god of waters holding the pasha (noose) to bind wrongdoers; the white parasol arose at the ocean-churning. Guardian of the western quarter.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Varuna iconography; Puranic tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_varuna-makara",
+    "name": "Makara, the part-crocodile sea-creature he rides",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Varuna iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_vayu": {
+  "attributes": [
+   {
+    "id": "hindu_vayu-banner-chariot",
+    "name": "Swift god on a shining chariot of many horses, white banner flying",
+    "notes": "Rigveda describes him borne by two, forty-nine, or a thousand white-and-purple steeds; first to receive the soma offering.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Rigveda 1.134; 4.48"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_vayu-deer",
+    "name": "Antelope/deer (or gazelle) as his mount in later iconography",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Later Vayu iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_ushas": {
+  "attributes": [
+   {
+    "id": "hindu_ushas-radiant-maiden",
+    "name": "Radiant bejewelled maiden uncovering her breast, opening heaven's gates",
+    "notes": "Hymned as a beautiful dancer-bride who reveals herself with the daily light, drives away darkness, and rouses all life to its tasks; daughter of the sky (Divo Duhita).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Rigveda 1.48; 1.113; 7.77"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_ushas-ruddy-cows",
+    "name": "Ruddy cows / red-gold horses drawing her chariot",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Rigveda 1.92"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_nasatya": {
+  "attributes": [
+   {
+    "id": "hindu_nasatya-horse-twin",
+    "name": "Youthful horse-headed (or horse-borne) twin in a golden three-wheeled chariot",
+    "notes": "The Aśvins appear before dawn as radiant horsemen; their car is golden and triangular, swift as thought, bringing healing and treasure.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Rigveda 1.116-118"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_nasatya-horses",
+    "name": "Horses, in name and chariot the Aśvins' defining animal",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Rigveda 1.117"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_nandi": {
+  "attributes": [
+   {
+    "id": "hindu_nandi-couchant-bull",
+    "name": "Humped white bull reclining on a platform, gazing toward Shiva's sanctum",
+    "notes": "Set in the Nandi-mandapa on the temple's central axis facing the linga since at least the early Agamas; the ideal devotee fixed on the lord.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shaiva temple architecture; Kamikagama"
+     }
+    ]
+   },
+   {
+    "id": "hindu_nandi-nandikeshvara",
+    "name": "Anthropomorphic Nandikeshvara: bull-faced or four-armed gatekeeper with axe and antelope",
+    "notes": "At many South Indian Shaiva temple doors he stands as gatekeeper, sharing Shiva's third eye, crescent, and matted locks.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "South Indian Shaiva iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_rama": {
+  "attributes": [
+   {
+    "id": "hindu_rama-dark-archer",
+    "name": "Dark-/blue-complexioned princely archer bearing bow and quiver",
+    "notes": "Shown standing with the Kodanda bow, often in the Rama-darbar flanked by Sita, Lakshmana, and the kneeling Hanuman.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vaishnava Rama iconography; Ram Darbar tradition"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "hindu_rama-tulasi",
+    "name": "Tulasi (holy basil) offered in his Vaishnava worship",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vaishnava ritual tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_sita": {
+  "attributes": [
+   {
+    "id": "hindu_sita-furrow-born",
+    "name": "Golden-hued queen risen from the furrow, returning into the earth",
+    "notes": "Ploughed up by Janaka and at the end received back by her mother Earth; iconographically the demure consort at Rama's left.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Valmiki Ramayana, Bala Kanda and Uttara Kanda"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_prithvi": {
+  "attributes": [
+   {
+    "id": "hindu_prithvi-lotus-cow",
+    "name": "Earth-goddess holding a blue lotus, also figured as a cow",
+    "notes": "As Bhudevi she clings to the tusk of the Varaha boar who lifts her from the waters; the cow-form expresses her all-nourishing abundance.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bhudevi iconography; Varaha myth (Vishnu Purana)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hindu_prithvi-cow",
+    "name": "Cow, image of the all-bearing nourishing earth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Atharvaveda 12.1 (Prithvi Sukta)"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_rati": {
+  "attributes": [
+   {
+    "id": "hindu_rati-jasmine-maiden",
+    "name": "Lustrous jasmine-skinned maiden with lotus-petal eyes, consort of Kama",
+    "notes": "Embodiment of erotic delight; depicted beside Kamadeva and the spring-god Vasanta, sharing his parrot and flower-bow imagery.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kamadeva-Rati iconography; Puranic tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_ravana": {
+  "attributes": [
+   {
+    "id": "hindu_ravana-ten-heads",
+    "name": "Ten-headed, twenty-armed rakshasa king, crowned and bejewelled",
+    "notes": "Born ten-headed and twenty-armed; a learned Shiva-devotee and Veda-master, shown bearing many weapons, burned in effigy at Dussehra.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Valmiki Ramayana, Uttara Kanda"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_sugriva": {
+  "attributes": [
+   {
+    "id": "hindu_sugriva-vanara-king",
+    "name": "Crowned vanara (monkey) king, garlanded to be told from Vali in battle",
+    "notes": "At Rama's instruction he wore a flower-garland (gajapushpi) so Rama could distinguish him from his identical brother and shoot Vali.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Valmiki Ramayana, Kishkindha Kanda"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_vali": {
+  "attributes": [
+   {
+    "id": "hindu_vali-golden-chain",
+    "name": "Mighty vanara wearing Indra's golden pendant that swelled his strength",
+    "notes": "His father Indra's golden chain/pendant augmented his energy in combat; he could drain half a foe's strength when faced directly.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Valmiki Ramayana, Kishkindha Kanda"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_ulupi": {
+  "attributes": [
+   {
+    "id": "hindu_ulupi-half-serpent",
+    "name": "Naga princess, half-maiden and half-serpent",
+    "notes": "Dwells in the serpent-realm beneath the waters; bears the hood-marks of the Naga kindred.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva"
+     }
+    ]
+   }
+  ]
+ },
+ "hindu_sampati": {
+  "attributes": [
+   {
+    "id": "hindu_sampati-vulture",
+    "name": "Giant divine vulture, wingless until his wings regrow at Rama's service",
+    "notes": "Son of Aruna and elder brother of Jatayu; his pinions were scorched shielding Jatayu from the sun and regrow on directing the vanaras to Sita.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Valmiki Ramayana, Kishkindha Kanda"
+     }
+    ]
+   }
+  ]
+ },
  "hittite_arinna": {
   "attributes": [
    {
@@ -397068,6 +402583,365 @@ const ICONO_SWEEP = {
    }
   ]
  },
+ "hurrian_teshub": {
+  "attributes": [
+   {
+    "id": "hurrian_teshub-thunderbolt-axe",
+    "name": "Strides wielding a mace or double axe and a triple thunderbolt",
+    "notes": "Standard storm-god pose: stepping forward on mountains or on a bull, brandishing axe/mace in one hand and forked lightning in the other.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Anatolian-Hurrian storm-god iconography (Yazılıkaya; IDD Anatolia/N. Syria)"
+     }
+    ]
+   },
+   {
+    "id": "hurrian_teshub-horned-crown",
+    "name": "Horned crown marking divine and bovine power",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hurrian-Hittite divine iconography"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hurrian_teshub-bulls-seri-hurri",
+    "name": "The bulls Šeri and Ḫurri who draw his chariot or bear him",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hurro-Hittite ritual and myth texts"
+     }
+    ]
+   }
+  ]
+ },
+ "hurrian_hebat": {
+  "attributes": [
+   {
+    "id": "hurrian_hebat-enthroned-matron",
+    "name": "Matronly queen enthroned or standing on her lion",
+    "notes": "In the Yazılıkaya procession she heads the goddesses, seated on a lion (or shown standing upon it).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yazılıkaya reliefs; Hurrian-Hittite iconography"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hurrian_hebat-lion",
+    "name": "Lion, her mount and pedestal",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yazılıkaya reliefs"
+     }
+    ]
+   }
+  ]
+ },
+ "hurrian_shaushka": {
+  "attributes": [
+   {
+    "id": "hurrian_shaushka-winged-on-lion",
+    "name": "Winged goddess standing on the back of a lion",
+    "notes": "Often shown with wings and accompanied by two birds (doves); in Anatolia linked to the awiti winged-lion/sphinx.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hittite-Hurrian glyptic; IDD Anatolia/N. Syria"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hurrian_shaushka-lion-doves",
+    "name": "Lion (mount) and a pair of doves",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hittite art; Shaushka iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hurrian_sharruma": {
+  "attributes": [
+   {
+    "id": "hurrian_sharruma-on-leopard",
+    "name": "Young god in tunic and pointed shoes, riding a leopard or holding a lance",
+    "notes": "May also appear theriomorphic as a bull; his sign is a pair of human legs or a human head on a bull's body.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yazılıkaya Chamber B relief; Hurrian-Hittite iconography"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hurrian_sharruma-leopard-bull",
+    "name": "Leopard (mount) and bull (his theriomorphic form)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hurrian-Hittite iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "hurrian_kushuh": {
+  "attributes": [
+   {
+    "id": "hurrian_kushuh-crescent-cap",
+    "name": "Winged god whose pointed cap bears the lunar crescent",
+    "notes": "Portrayed identically with a crescent-topped pointed cap and wings on the shoulders; god of the moon, oaths, oracles and pregnancy.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hurrian moon-god iconography (after Wikipedia/Kušuḫ syntheses)"
+     }
+    ]
+   }
+  ]
+ },
+ "hurrian_shimige": {
+  "attributes": [
+   {
+    "id": "hurrian_shimige-winged-sun-disk",
+    "name": "Solar god associated with the winged sun-disk who surveys all the earth",
+    "notes": "Equated with Šamaš/Utu; like the Mesopotamian sun-god seen as all-seeing arbiter; the winged disk that doubles as the Hittite royal emblem 'My Sun'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mesopotamian-Hurrian solar iconography; Hittite winged-disk studies"
+     }
+    ]
+   }
+  ]
+ },
+ "hurrian_ea": {
+  "attributes": [
+   {
+    "id": "hurrian_ea-copper-saw",
+    "name": "Bears the primeval copper saw that once split heaven and earth",
+    "notes": "In the Song of Ullikummi Ea produces this ancient cutting tool to sever the stone monster from Upelluri's shoulder, breaking its invulnerability.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (Hattusa archives)"
+     }
+    ]
+   }
+  ]
+ },
+ "hungarian_turul": {
+  "attributes": [
+   {
+    "id": "hungarian_turul-falcon-wings-spread",
+    "name": "Falcon/hawk of prey with wings spread, often gripping a sword",
+    "notes": "Rendered as a stylized raptor with hooked beak and sharp talons on the shields and crests of Attila, Álmos and Árpád; commonly shown clutching the Sword of God.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hungarian chronicle and heraldic tradition (Gesta Hungarorum; Simon of Kéza)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "hungarian_turul-bird-of-prey",
+    "name": "The falcon/eagle bird-of-prey itself, the theriomorphic ancestor-spirit",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hungarian mythology"
+     }
+    ]
+   }
+  ]
+ },
+ "hungarian_hadur": {
+  "attributes": [
+   {
+    "id": "hungarian_hadur-copper-armour",
+    "name": "Mighty long-haired warrior in armour and weapons of pure copper",
+    "notes": "Copper is his sacred metal; depicted brandishing a sword or spear. As smith of the gods he forged the Sword of God (Isten kardja) later wielded by Attila.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hungarian mythology (Ipolyi, Magyar Mythologia; literary tradition)"
+     }
+    ]
+   }
+  ]
+ },
+ "ifugao_ovug": {
+  "attributes": [
+   {
+    "id": "ifugao_ovug-two-voices",
+    "name": "The half-being whose voice is thunder — sharp from the skyworld half, low from the earth half",
+    "notes": "Split down the middle by his father Dumagid: the skyworld-Ovug's voice is sharp lightning-thunder, the earth-Ovug's voice is low rolling-thunder.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ifugao myth, 'Origin of Thunder and Lightning'"
+     }
+    ]
+   }
+  ]
+ },
+ "igbo_ala": {
+  "attributes": [
+   {
+    "id": "igbo_ala-enthroned-mother-mbari",
+    "name": "Enthroned mother-goddess in mud sculpture, often with a child",
+    "notes": "In the mbari house she is shown as a seated woman, frequently holding or flanked by a small child and a python; the crescent moon is among her symbols.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Igbo mbari art ethnography"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "igbo_ala-python",
+    "name": "The python (éké), her living agent on earth",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Igbo Odinani"
+     }
+    ]
+   }
+  ]
+ },
+ "igbo_amadioha": {
+  "attributes": [
+   {
+    "id": "igbo_amadioha-red-and-white",
+    "name": "Red-and-white emblem — red for wrath, white for purity and order",
+    "notes": "His shrine displays ram-horns, an iron staff, and a white cloth; nzu (white chalk) marks truth in his rites.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Igbo Odinani; Amadioha shrine practice"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "igbo_amadioha-white-ram",
+    "name": "The white ram, his sacred animal and the form in which he appears",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Igbo oral tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "igbo_ikenga": {
+  "attributes": [
+   {
+    "id": "igbo_ikenga-ram-horns",
+    "name": "Carved figure crowned with two curved ram's horns (opi)",
+    "notes": "The horns are its most characteristic element — 'the ram goes into a fight head first' — the right hand (aka ikenga) holds a machete or sword, the left a trophy such as a severed head, tusk or money-bag.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Igbo Ikenga iconography (Cole & Aniakor; Boston)"
+     }
+    ]
+   }
+  ]
+ },
+ "igbo_idemili": {
+  "sacredAnimals": [
+   {
+    "id": "igbo_idemili-royal-python",
+    "name": "The royal python (éké Idemili), her sacred emblem and messenger",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Igbo Odinani; Idemili python-cult"
+     }
+    ]
+   }
+  ]
+ },
+ "ibibio_atai": {
+  "sacredAnimals": [
+   {
+    "id": "ibibio_atai-vulture",
+    "name": "The vulture, her earthly representation at sacrifice",
+    "notes": "A vulture's presence at a sacrifice is read as the sign that Abasi has accepted the offering, marking Atai's role as bridge between divine and earthly.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Efik/Ibibio mythology"
+     }
+    ]
+   }
+  ]
+ },
+ "ibibio_ekpe": {
+  "attributes": [
+   {
+    "id": "ibibio_ekpe-ukara-nsibidi",
+    "name": "Leopard masquerade with blue-and-white ukara cloth inscribed in nsibidi",
+    "notes": "The Ekpe initiate's regalia bears nsibidi ideographs; the leopard (ekpe/mgbe) is the society's totem and the spirit's manifest form.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cross River Ekpe society; nsibidi studies"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "ibibio_ekpe-leopard",
+    "name": "The leopard, the spirit's totem animal",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ekpe (leopard) society ethnography"
+     }
+    ]
+   }
+  ]
+ },
+ "ijaw_egbesu": {
+  "sacredAnimals": [
+   {
+    "id": "ijaw_egbesu-leopard-lion",
+    "name": "Leopard, panther and lion — the symbols of the war-deity's force",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ijaw Egbesu ethnography"
+     }
+    ]
+   }
+  ]
+ },
  "ijaw_woyengi": {
   "attributes": [
    {
@@ -397079,12 +402953,7 @@ const ICONO_SWEEP = {
       "kind": "secondary",
       "reference": "Mythlok, 'Woyengi'"
      }
-    ],
-    "term": {
-     "value": "Woyingi",
-     "script": "Latn",
-     "rom": "Woyingi"
-    }
+    ]
    },
    {
     "id": "ijaw_woyengi-breath-of-life",
@@ -397099,10 +402968,10 @@ const ICONO_SWEEP = {
    }
   ]
  },
- "inca_inti": {
+ "inti": {
   "attributes": [
    {
-    "id": "inca_inti-golden-boy",
+    "id": "inti-golden-boy",
     "name": "golden face-disc with radiating rays, or a seated golden boy (Punchao) with a royal headband",
     "notes": "Inti's chief image, the Punchao, was a small seated golden boy from whose head and shoulders rays shone, wearing the royal headband, with snakes and lions issuing from his body; its hollow belly held the ashes of dead rulers' organs. Gold was the 'sweat of the sun'.",
     "sources": [
@@ -397115,7 +402984,7 @@ const ICONO_SWEEP = {
   ],
   "sacredAnimals": [
    {
-    "id": "inca_inti-llama",
+    "id": "inti-llama",
     "name": "llama (sacrificed to the sun)",
     "sources": [
      {
@@ -397258,6 +403127,120 @@ const ICONO_SWEEP = {
      {
       "kind": "secondary",
       "reference": "Grokipedia, 'Mascapaicha'; Garcilaso, Comentarios Reales"
+     }
+    ]
+   }
+  ]
+ },
+ "inuit_sedna": {
+  "attributes": [
+   {
+    "id": "inuit_sedna-mermaid",
+    "name": "woman's head and torso with the tail of a marine mammal, her hands fingerless or maimed",
+    "notes": "Sculpted as a mermaid-like figure; her lost fingers (cut off as she clung to the boat) mark why she cannot tend her own hair and must be combed by the shaman.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Sedna (mythology)'; feheleyfinearts.com, 'Sedna the Sea Goddess'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "inuit_sedna-seal",
+    "name": "seal, walrus and whale (born of her finger-joints and held under her rule)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Sedna (mythology)'"
+     }
+    ]
+   }
+  ]
+ },
+ "inuit_nanook": {
+  "attributes": [
+   {
+    "id": "inuit_nanook-great-bear",
+    "name": "the great polar bear itself, a sentient master-animal accorded human-like respect",
+    "notes": "Nanook is the archetype and lord of the polar bears (Inuktitut nanuq), treated as a soul-bearing person whose goodwill the bear-hunter must win.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Nanook'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "inuit_nanook-polar-bear",
+    "name": "polar bear",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Nanook'"
+     }
+    ]
+   }
+  ]
+ },
+ "inuit_anningan": {
+  "attributes": [
+   {
+    "id": "inuit_anningan-moon-sledge",
+    "name": "the waxing-and-waning Moon, a hunter on a dog-drawn sledge, soot on his face",
+    "notes": "The Moon Man's thinning and disappearance trace the lunar phases; the dark lunar markings are the soot his sister smeared on him to expose her night visitor.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Sun and Moon (Inuit myth)'"
+     }
+    ]
+   }
+  ]
+ },
+ "inuit_malina": {
+  "attributes": [
+   {
+    "id": "inuit_malina-torch",
+    "name": "the Sun, a fleeing woman bearing a torch, her brother's blackened by soot",
+    "notes": "Both siblings seized torches as she fled; hers blazed bright and became the sun, his guttered to the dimmer moon. She had marked his face with soot/lampblack to reveal him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Sun and Moon (Inuit myth)'; Windows to the Universe, 'Malina'"
+     }
+    ]
+   }
+  ]
+ },
+ "inuit_sila": {
+  "attributes": [
+   {
+    "id": "inuit_sila-giant-infant",
+    "name": "formless indweller of the air; among Netsilik and Copper Inuit a giant naked infant (Naarjuk) whose breath is the wind",
+    "notes": "Usually without fixed form, the life-force pervading the cosmos and weather; personified as the orphan giant-baby Naarjuk whose stirrings raise storms, which the shaman calms by tightening his garment.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Silap Inua'; Saladin d'Anglure (Naarjuk among the Netsilik)"
+     }
+    ]
+   }
+  ]
+ },
+ "inca_mama_ocllo": {
+  "attributes": [
+   {
+    "id": "inca_mama_ocllo-weaver-coya",
+    "name": "first Coya at the loom, teaching women to spin and weave",
+    "notes": "The founding queen is figured with the distaff and backstrap loom as the bringer of the domestic and textile arts to Andean women.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Garcilaso de la Vega, Comentarios Reales de los Incas"
      }
     ]
    }
@@ -397490,6 +403473,373 @@ const ICONO_SWEEP = {
      {
       "kind": "secondary",
       "reference": "Wikipedia, 'Tadodaho'"
+     }
+    ]
+   }
+  ]
+ },
+ "irish_ferdiad": {
+  "attributes": [
+   {
+    "id": "irish_ferdiad-horn-skin-attr",
+    "name": "clad in his own horn-skin, the hide no weapon could pierce, the hero of Áth Fhirdiad (Ardee)",
+    "notes": "His invulnerable horn-skin is his defining attribute in the Táin; the ford where he fell, Áth Fhirdiad, is named for him.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Táin Bó Cúailnge (The Cattle Raid of Cooley)"
+     }
+    ]
+   }
+  ]
+ },
+ "iroquois_hino": {
+  "attributes": [
+   {
+    "id": "iroquois_hino-winged-man",
+    "name": "A winged man (sometimes a giant bird)",
+    "notes": "Depicted as a winged man, leader of the Thunderers, who may shift between human and great-bird form; dwells in the clouds of the far west.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harriet Maxwell Converse, Myths and Legends of the New York State Iroquois (1908)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "iroquois_hino-eagle",
+    "name": "Eagle (his companions Keneu and Oshadagea)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Converse, Myths and Legends of the New York State Iroquois (1908)"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_amaterasu": {
+  "attributes": [
+   {
+    "id": "japanese_amaterasu-radiance",
+    "name": "Solar radiance; the sun emerging from the Rock-Cave",
+    "notes": "Imaged as the light of the sun, most famously at her emergence from the Ama-no-Iwato (Heavenly Rock-Cave); her body is held to reside in the Yata-no-Kagami mirror at Ise.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, Book 1 (Rock-Cave episode)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "japanese_amaterasu-rooster",
+    "name": "Rooster (the long-crowing cocks that called her forth)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, Book 1 (the 'long-singing birds' before the Rock-Cave)"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_inari": {
+  "attributes": [
+   {
+    "id": "japanese_inari-vermilion-torii",
+    "name": "Vermilion torii and red votive bibs",
+    "notes": "Inari shrines are marked by ranks of vermilion (red) torii and by fox statues dressed in red yodarekake bibs; the colour red is itself emblematic of Inari.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fushimi Inari Taisha tradition"
+     }
+    ]
+   },
+   {
+    "id": "japanese_inari-rice-sheaf",
+    "name": "Sheaf of rice / the fox bearing a key or jewel",
+    "notes": "Associated with the rice-sheaf and with fox imagery in which the messenger-fox holds a key (to the granary) or a wish-fulfilling jewel.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karen A. Smyers, The Fox and the Jewel (1999)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "japanese_inari-white-fox",
+    "name": "White fox (byakko / myobu), the messenger of Inari",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fushimi Inari Taisha tradition"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "japanese_inari-rice",
+    "name": "Rice (ine), the staple under Inari's protection",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Inari shrine tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_susanoo": {
+  "sacredAnimals": [
+   {
+    "id": "japanese_susanoo-eight-headed-serpent",
+    "name": "Yamata-no-Orochi, the eight-forked serpent he slew",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, Book 1 (slaying of Yamata-no-Orochi)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "japanese_susanoo-chimaki",
+    "name": "Chimaki rush-bundles (su-shimenawa amulets of Gion)",
+    "notes": "The Gion chimaki — bundles of rushes hung at doorways — derive from the tradition of Somin Shorai protected from pestilence by Susanoo / Gozu Tenno.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yasaka Jinja / Somin Shorai tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_hachiman": {
+  "attributes": [
+   {
+    "id": "japanese_hachiman-bow-banner",
+    "name": "The bow-and-arrow of the warrior-god on Genji banners",
+    "notes": "Tutelary kami of the Minamoto (Genji); his emblem is the bow and arrow, and his name appears on samurai war-banners.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Minamoto (Genji) warrior-cult tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "japanese_hachiman-dove",
+    "name": "Dove / pigeon (hato), the messenger of Hachiman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Iwashimizu Hachimangu tradition (white doves)"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_benzaiten": {
+  "attributes": [
+   {
+    "id": "japanese_benzaiten-biwa",
+    "name": "Seated goddess playing the biwa lute",
+    "notes": "Most commonly imaged as a beautiful goddess holding and playing the biwa, after the Indian Saraswati with her vina; in the Uga-Benzaiten form a human-headed white snake (Ugajin) coils above her head.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Japanese Buddhist iconography of Benzaiten / Uga-Benzaiten"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "japanese_benzaiten-white-snake",
+    "name": "White snake (her messenger and emblem of wealth)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Benzaiten / Ugajin tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_ebisu": {
+  "attributes": [
+   {
+    "id": "japanese_ebisu-seabream-rod",
+    "name": "Smiling, seated god with fishing-rod and a red sea-bream",
+    "notes": "Shown laughing or smiling, seated (he still has difficulty standing), holding a fishing-rod in the right hand and a large red sea-bream (tai) under the left arm, wearing a tall pointed kazaori-eboshi cap.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shichifukujin iconography; Nishinomiya Jinja tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "japanese_ebisu-sea-bream",
+    "name": "Red sea-bream (tai), the auspicious fish he holds",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ebisu iconography"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_fujin": {
+  "attributes": [
+   {
+    "id": "japanese_fujin-windbag-oni",
+    "name": "Green-skinned oni-like demon bearing a great wind-bag",
+    "notes": "Depicted as a fearsome, often green-skinned wind-demon running across the sky with the kazabukuro (wind-sack) stretched across his shoulders, from which he looses the winds; canonically paired with Raijin, as in the Sanjusangendo statues and Tawaraya Sotatsu's screen.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sanjusangendo Kamakura-period statues; Tawaraya Sotatsu, Wind God and Thunder God screen"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_raijin": {
+  "attributes": [
+   {
+    "id": "japanese_raijin-drum-ring",
+    "name": "Red-skinned oni-like demon ringed by thunder-drums",
+    "notes": "Imaged as a muscular, often red-skinned demon encircled by a ring of taiko drums which he beats with hammers (bachi) to make thunder; canonically paired with Fujin in the Sanjusangendo statuary and the Sotatsu screen.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sanjusangendo Kamakura-period statues; Tawaraya Sotatsu, Wind God and Thunder God screen"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_ryujin": {
+  "attributes": [
+   {
+    "id": "japanese_ryujin-dragon-palace",
+    "name": "Great dragon dwelling in the coral undersea palace",
+    "notes": "Imaged as a vast dragon (or a dragon-bodied king) holding the tide-ruling jewels in his undersea palace Ryugu-jo, built of coral and crystal; his daughters are Toyotama-hime and Tamayori-hime.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, Book 1 (Watatsumi's palace; the tide-jewels)"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "japanese_ryujin-wani-turtle",
+    "name": "Wani (sea-monster/crocodile-dragon) and the turtle, his messengers",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, Book 1 (the wani that bears Hoori home)"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_okuninushi": {
+  "sacredAnimals": [
+   {
+    "id": "japanese_okuninushi-hare",
+    "name": "The White Hare of Inaba, whom he healed",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, Book 1 (the Hare of Inaba)"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_omononushi": {
+  "attributes": [
+   {
+    "id": "japanese_omononushi-sugidama",
+    "name": "The sacred cedar of Miwa (cedar-ball / sugidama)",
+    "notes": "His patronage of sake-brewing is marked by the sugidama, a ball of cedar boughs hung at breweries; the cedar is the sacred tree of Mount Miwa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Omiwa Jinja tradition"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "japanese_omononushi-white-snake",
+    "name": "White snake, the form of the Miwa deity",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kojiki, Book 1 (the serpent-form revealed by the thread)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "japanese_omononushi-cedar",
+    "name": "Cedar (sugi), the sacred tree of Mount Miwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Omiwa Jinja tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_konohanasakuya_hime": {
+  "sacredPlants": [
+   {
+    "id": "japanese_konohanasakuya_hime-cherry-blossom",
+    "name": "Cherry blossom (sakura), her emblem and namesake",
+    "notes": "Her name means roughly 'tree-blossom blooming princess'; the fleeting cherry blossom is her sign and a symbol of transient beauty.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sengen/Asama shrine tradition; Konohanasakuya-hime mythology"
+     }
+    ]
+   }
+  ]
+ },
+ "japanese_nigihayahi": {
+  "attributes": [
+   {
+    "id": "japanese_nigihayahi-ten-treasures",
+    "name": "The Ten Sacred Treasures (tokusa-no-kandakara)",
+    "notes": "Bestowed on him by the heavenly kami when he descended in the Rock-Boat: two mirrors, one sword, four magatama beads and three scarves (hire), used in the soul-pacifying mitama-furi rite and kept at Isonokami Shrine.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sendai Kuji Hongi, Tenson Hongi; Isonokami Jingu tradition"
      }
     ]
    }
@@ -397847,6 +404197,767 @@ const ICONO_SWEEP = {
      {
       "kind": "primary",
       "reference": "Theophilus Hahn, Tsuni-||Goam: The Supreme Being of the Khoi-Khoi (1881)"
+     }
+    ]
+   }
+  ]
+ },
+ "kiribati_tabakea": {
+  "sacredAnimals": [
+   {
+    "id": "kiribati_tabakea-turtle",
+    "name": "Sea turtle",
+    "notes": "Tabakea is himself the primordial turtle on whose back the land rests; the turtle is his very form.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Grimble, Tungaru Traditions"
+     }
+    ]
+   }
+  ]
+ },
+ "kiribati_riiki": {
+  "sacredAnimals": [
+   {
+    "id": "kiribati_riiki-eel",
+    "name": "Eel",
+    "notes": "Riiki is the monstrous sky-lifting eel of the Tungaru cosmogony, his elongated form mirrored in the band of the Milky Way into which he is set.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Grimble, Tungaru Traditions"
+     }
+    ]
+   }
+  ]
+ },
+ "korean_jumong": {
+  "attributes": [
+   {
+    "id": "korean_jumong-egg-birth",
+    "name": "Birth from an egg",
+    "notes": "Conceived when sunlight followed Yuhwa, Jumong is born from a large egg that animals refuse to harm and that warms in the sun until the boy hatches.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Samguk Sagi; Yi Gyu-bo, Dongmyeongwang-pyeon"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "korean_jumong-fish-turtles",
+    "name": "Fish and turtles of the river",
+    "notes": "Fleeing pursuit, Jumong strikes the water and fish and turtles rise to form a bridge that carries him across, then disperse behind him.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Samguk Sagi, Goguryeo annals"
+     }
+    ]
+   }
+  ]
+ },
+ "korean_haemosu": {
+  "attributes": [
+   {
+    "id": "korean_haemosu-five-dragon-chariot",
+    "name": "Chariot drawn by five dragons",
+    "notes": "Haemosu descends from heaven in a chariot pulled by five dragons (oryonggeo), his retinue riding swans, when he founds Bukbuyeo.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yi Gyu-bo, Dongmyeongwang-pyeon"
+     }
+    ]
+   }
+  ]
+ },
+ "korean_tangun": {
+  "sacredPlants": [
+   {
+    "id": "korean_tangun-sandalwood",
+    "name": "Sacred sandalwood tree (Sindansu)",
+    "notes": "Dangun is born of the union beneath the sacred Sindansu (sandalwood/birch) tree where Hwanung descended; his name Dangun is read as 'Sandalwood Ruler.'",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Iryeon, Samguk Yusa, Gojoseon"
+     }
+    ]
+   }
+  ]
+ },
+ "korean_hwanin": {
+  "attributes": [
+   {
+    "id": "korean_hwanin-three-seals",
+    "name": "The Three Heavenly Seals (Cheonbuin)",
+    "notes": "Hwanin bestows on Hwanung the three heavenly seals - a bronze mirror, bronze bell and bronze dagger - tokens of heavenly authority for his descent to rule mankind.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Iryeon, Samguk Yusa, Gojoseon"
+     }
+    ]
+   }
+  ]
+ },
+ "korean_hwanung": {
+  "attributes": [
+   {
+    "id": "korean_hwanung-altai-descent",
+    "name": "Descent to the sacred tree with 3,000 followers",
+    "notes": "Hwanung descends to the peak of Mt. Taebaek at the sandalwood tree (Sindansu) with the three seals and 3,000 followers, founding the 'divine city' (sinsi) and the wind, rain and cloud spirits.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Iryeon, Samguk Yusa, Gojoseon"
+     }
+    ]
+   }
+  ]
+ },
+ "korean_ungnyeo": {
+  "sacredAnimals": [
+   {
+    "id": "korean_ungnyeo-bear",
+    "name": "Bear",
+    "notes": "Ungnyeo ('Bear-Woman') is originally a she-bear who alone completes the cave-trial that the tiger abandons.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Iryeon, Samguk Yusa, Gojoseon"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "korean_ungnyeo-mugwort-garlic",
+    "name": "Mugwort and garlic",
+    "notes": "The bear becomes the woman Ungnyeo by enduring 100 days in a cave on nothing but a bundle of sacred mugwort (ssuk) and twenty cloves of garlic, per Hwanung's instruction.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Iryeon, Samguk Yusa, Gojoseon"
+     }
+    ]
+   }
+  ]
+ },
+ "korean_jacheongbi": {
+  "sacredPlants": [
+   {
+    "id": "korean_jacheongbi-five-grains",
+    "name": "The five grains",
+    "notes": "Jacheongbi brings the seeds of the five grains (ogok) down from heaven to humanity, the founding gift of farming in the Segyeong Bonpuri.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Segyeong Bonpuri (Jeju agricultural hymn)"
+     }
+    ]
+   },
+   {
+    "id": "korean_jacheongbi-resurrection-flower",
+    "name": "Flower of resurrection",
+    "notes": "She wins from the Seocheon flower-field the herb/flower of life with which she revives the dead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Segyeong Bonpuri (Jeju agricultural hymn)"
+     }
+    ]
+   }
+  ]
+ },
+ "koryak_big_raven": {
+  "attributes": [
+   {
+    "id": "koryak_big_raven-raven-coat",
+    "name": "Donned and doffed raven shape",
+    "notes": "Big-Raven puts on and takes off his raven coat at will, moving between bird and human form as the first man and great shaman.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "W. Jochelson, The Koryak"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "koryak_big_raven-raven",
+    "name": "Raven",
+    "notes": "The raven is his defining form and namesake (Kutkynnaku), the creator-trickster of the Kamchatkan peoples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "W. Jochelson, The Koryak"
+     }
+    ]
+   }
+  ]
+ },
+ "kuba_mbombo": {
+  "attributes": [
+   {
+    "id": "kuba_mbombo-white-giant",
+    "name": "The white giant who vomits creation",
+    "notes": "Mbombo is pictured as an immense white giant who, in stomach-pain, vomits forth the sun, moon, stars, the nine animals and the first peoples upon the primal water.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. Torday & T. A. Joyce, Notes ethnographiques sur les Bakuba"
+     }
+    ]
+   }
+  ]
+ },
+ "kwakwakawakw_dzunukwa": {
+  "attributes": [
+   {
+    "id": "kwakwakawakw_dzunukwa-pursed-mask",
+    "name": "Black pursed-lip mask and the cry 'hu, hu'",
+    "notes": "Dzunukwa is shown in a dark mask with sunken eyes and a rounded, pursed mouth uttering her booming 'hu, hu'; carried on her back is the burden-basket in which she bears off children.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Boas, The Social Organization and the Secret Societies of the Kwakiutl Indians"
+     }
+    ]
+   }
+  ]
+ },
+ "kwakwakawakw_bakwas": {
+  "attributes": [
+   {
+    "id": "kwakwakawakw_bakwas-green-skull-face",
+    "name": "Green hooked-nose mask with skull-like face",
+    "notes": "Bakwas is masked as a gaunt green being with a skeletal face, sunken eyes, hooked beak-like nose and hemlock-bark rings, a wild man half the height of a person.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Boas, The Social Organization and the Secret Societies of the Kwakiutl Indians"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "kwakwakawakw_bakwas-cockle",
+    "name": "Cockle",
+    "notes": "The cockle (dzoli) he digs and offers as ghost-food is his emblematic creature.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kwakwaka'wakw oral tradition"
+     }
+    ]
+   }
+  ]
+ },
+ "kwakwakawakw_komokwa": {
+  "attributes": [
+   {
+    "id": "kwakwakawakw_komokwa-sea-creature-mask",
+    "name": "Sea-creature mask and ceremonial copper",
+    "notes": "Komokwa is masked as a fusion of sea-mammal and undersea beings, hung with abalone and copper, ruling from a copper house guarded by sea-lion posts.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Boas, Kwakiutl Tales"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "kwakwakawakw_komokwa-orca-seal",
+    "name": "Killer whale and seal",
+    "notes": "Killer whales, seals, sea-lions, loons and sculpins are his attendant creatures.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Boas, Kwakiutl Tales"
+     }
+    ]
+   }
+  ]
+ },
+ "lusitanian_endovelicus": {
+  "attributes": [
+   {
+    "id": "lusitanian_endovelicus-plaques",
+    "name": "Figured votive plaques",
+    "notes": "Endovelicus is known from carved votive plaques and bronze/terracotta figurines from his sanctuary rather than from any narrative image; surgical instruments among the finds underline his healing role.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Votive plaques and figurines, São Miguel da Mota sanctuary"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "lusitanian_endovelicus-boar",
+    "name": "Boar",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Votive boar sculptures dedicated at São Miguel da Mota"
+     }
+    ]
+   },
+   {
+    "id": "lusitanian_endovelicus-serpent",
+    "name": "Serpent",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Endovelicus' (chthonic/healing associations with serpents)"
+     }
+    ]
+   }
+  ]
+ },
+ "lusitanian_ataecina": {
+  "attributes": [
+   {
+    "id": "lusitanian_ataecina-goat-plaque",
+    "name": "Goat welded to a votive plaque",
+    "notes": "Her characteristic image is a small goat figure fixed to an inscribed plaque, found in sanctuaries of Cáceres province; the goat is her emblem rather than a narrative attribute.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Votive goat-plaques, Santa Lucía del Trampal / Malpartida / Herguijuela"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "lusitanian_ataecina-goat",
+    "name": "She-goat",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ataecina votive goat-plaques"
+     }
+    ]
+   }
+  ]
+ },
+ "luwian_arma": {
+  "attributes": [
+   {
+    "id": "luwian_arma-crescent-helmet",
+    "name": "Crescent-moon helmet",
+    "notes": "Arma is shown as a winged, bearded god wearing a helmet topped with a crescent moon; his hieroglyphic name is written with a lunette.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Arma (deity)'"
+     }
+    ]
+   },
+   {
+    "id": "luwian_arma-wings",
+    "name": "Shoulder wings",
+    "notes": "Late iconography gives the moon-god wings rising from his shoulders.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Arma (deity)'"
+     }
+    ]
+   }
+  ]
+ },
+ "luwian_tarhunz": {
+  "attributes": [
+   {
+    "id": "luwian_tarhunz-axe-thunderbolt",
+    "name": "Axe/hammer and thunderbolt bundle",
+    "notes": "Tarhunz is depicted striding with a double-axe or hammer and a bundle of thunderbolts, often driving a horse-drawn chariot; as the vineyard-god he carries grapes and grain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Tarḫunz'; 'Luwian religion'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "luwian_tarhunz-bull",
+    "name": "Bull",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Tarḫunz' (storm-god seated on / accompanied by a bull)"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "luwian_tarhunz-grapevine",
+    "name": "Grapevine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Tarḫunz' (Tarhunza of the Vineyard with grape-bunches)"
+     }
+    ]
+   }
+  ]
+ },
+ "luwian_runtiya": {
+  "attributes": [
+   {
+    "id": "luwian_runtiya-antler-sign",
+    "name": "Stag-antler hieroglyph (CERVUS)",
+    "notes": "Runtiya's name is written with the deer/antler logogram, and he is shown armed with bow and arrow standing upon a stag.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Runtiya'"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "luwian_runtiya-stag",
+    "name": "Stag",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Runtiya'"
+     }
+    ]
+   }
+  ]
+ },
+ "luwian_tiwaz": {
+  "attributes": [
+   {
+    "id": "luwian_tiwaz-winged-disc",
+    "name": "Winged sun-disc",
+    "notes": "The Luwian sun-god is represented by the winged sun-disc, signalling his passage across the heavens.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Luwian religion'"
+     }
+    ]
+   }
+  ]
+ },
+ "luwian_iyarri": {
+  "sacredAnimals": [
+   {
+    "id": "luwian_iyarri-lion",
+    "name": "Lion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Iyarri' (archer plague-god associated with the lion)"
+     }
+    ]
+   }
+  ]
+ },
+ "lydian_kuvava": {
+  "attributes": [
+   {
+    "id": "lydian_kuvava-mirror-pomegranate",
+    "name": "Mirror and pomegranate",
+    "notes": "In Neo-Hittite reliefs Kuvava/Kubaba is seated on a lion-throne wearing a polos and veil, holding a mirror (magic/divination) in one hand and a pomegranate (fertility) in the other, beneath a winged disc.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Kubaba (goddess)'; Carchemish reliefs"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "lydian_kuvava-lion",
+    "name": "Lion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Kubaba (goddess)'; lion-supported throne"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "lydian_kuvava-pomegranate",
+    "name": "Pomegranate",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Kubaba (goddess)'"
+     }
+    ]
+   }
+  ]
+ },
+ "lydian_kufaws": {
+  "attributes": [
+   {
+    "id": "lydian_kufaws-enthroned-lions",
+    "name": "Enthroned between lions",
+    "notes": "The Lydian mother-goddess is shown as a seated female figure flanked or accompanied by lions, in the manner of Phrygian Cybele.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Greenewalt, 'Gods of Lydia' (Sardis Expedition); 6th-c. BC Sardis sculpture"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "lydian_kufaws-lion",
+    "name": "Lion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Greenewalt, 'Gods of Lydia'"
+     }
+    ]
+   }
+  ]
+ },
+ "lycian_twelve_gods": {
+  "attributes": [
+   {
+    "id": "lycian_twelve_gods-spear-frieze",
+    "name": "Twelve spear-bearing gods over twelve dogs",
+    "notes": "The standard relief divides into an upper frieze of twelve frontal armed males holding spears and a lower frieze of twelve dogs, one beneath each god, with the dedicator named between.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Renberg, Epigraphica Anatolica 47 (2014); Harvard Art Museums relief 287005"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "lycian_twelve_gods-dog",
+    "name": "Hunting dog",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lycian Twelve Gods reliefs"
+     }
+    ]
+   }
+  ]
+ },
+ "maasai_olapa": {
+  "attributes": [
+   {
+    "id": "maasai_olapa-marked-face",
+    "name": "Bruised, one-eyed face",
+    "notes": "After her quarrel with the sun Enkai, Olapa shows a wounded, scarred face with one eye struck out, visible on the full moon; the sun in turn shines too bright to look at to hide his own wound.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. C. Hollis, The Masai: Their Language and Folklore (1905), sun-and-moon narrative"
+     }
+    ]
+   }
+  ]
+ },
+ "maasai_enkai": {
+  "sacredPlants": [
+   {
+    "id": "maasai_enkai-sacred-fig",
+    "name": "Sacred fig (Ficus natalensis)",
+    "notes": "Enkai is said to have let the cattle down to the Maasai along the roots/vine of the sacred fig, which is therefore held sacred.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Religion Wiki, 'Maasai mythology'; TalkAfricana, 'Creation Story of the Maasai'"
+     }
+    ]
+   }
+  ]
+ },
+ "manipuri_pakhangba": {
+  "attributes": [
+   {
+    "id": "manipuri_pakhangba-paphal",
+    "name": "Paphal (coiled ouroboros-like dragon-serpent)",
+    "notes": "Post-Khagemba representations show Pakhangba as a paphal, a serpent/dragon coiled and biting or nearing its own tail, symbol of cosmic energy and balance in Lai Haraoba.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Pakhangba, Wikipedia"
+     }
+    ]
+   },
+   {
+    "id": "manipuri_pakhangba-sangai-antlers",
+    "name": "Serpent bearing the antlers of the sangai (brow-antlered deer)",
+    "notes": "He is figured as a great serpent or python crowned with sangai antlers, fusing the serpent and stag totems.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Pakhangba, Wikipedia"
+     }
+    ]
+   }
+  ]
+ },
+ "manipuri_marjing": {
+  "attributes": [
+   {
+    "id": "manipuri_marjing-winged-steed",
+    "name": "Mounted on the winged steed Samadon Ayangba",
+    "notes": "Marjing is depicted with his divine winged horse Samadon Ayangba (Hada Samaton Ayangba), companion on the Heingang hill.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marjing, Wikipedia; Samaton, Wikipedia"
+     }
+    ]
+   }
+  ],
+  "sacredAnimals": [
+   {
+    "id": "manipuri_marjing-horse",
+    "name": "Horse (the Manipuri pony) and the winged steed",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marjing, Wikipedia"
+     }
+    ]
+   }
+  ]
+ },
+ "manipuri_koubru": {
+  "sacredAnimals": [
+   {
+    "id": "manipuri_koubru-white-elephant",
+    "name": "White elephant (Shamu Laishaa Angouba)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mount Koubru, Wikipedia"
+     }
+    ]
+   }
+  ]
+ },
+ "makunaima": {
+  "attributes": [
+   {
+    "id": "makunaima-wazaca-axe",
+    "name": "Axe with which he fells the Wazacá tree of life",
+    "notes": "The culture-hero's defining act is felling the primordial Wazacá tree, whose stump becomes Mount Roraima and whose felling looses the world-flood that recreates humanity.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Pemon, Wikipedia; Macuxi, Indigenous Peoples in Brazil (pib.socioambiental.org)"
+     }
+    ]
+   }
+  ]
+ },
+ "mansi_numi_torum": {
+  "sacredAnimals": [
+   {
+    "id": "mansi_numi_torum-reindeer",
+    "name": "Reindeer (the sacrificial victim offered to him)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Num-Torum, Wikipedia"
+     }
+    ]
+   }
+  ]
+ },
+ "mansi_mir_susne_khum": {
+  "sacredAnimals": [
+   {
+    "id": "mansi_mir_susne_khum-goose-crane",
+    "name": "Goose and crane (his travelling forms)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Num-Torum / Mir-Susne-Khum, Wikipedia"
+     }
+    ]
+   }
+  ]
+ },
+ "mapuche_anchimallen": {
+  "attributes": [
+   {
+    "id": "mapuche_anchimallen-fireball",
+    "name": "Luminous flying fireball / orb of light by night",
+    "notes": "Appears as a small child or, transformed, as a bright flying orb of fire, often likened to a will-o'-the-wisp.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Anchimayen, Wikipedia"
+     }
+    ]
+   }
+  ]
+ },
+ "mapuche_pillan": {
+  "attributes": [
+   {
+    "id": "mapuche_pillan-volcano",
+    "name": "Manifest in volcano, thunder, lightning and earthquake",
+    "notes": "The Pillañ, ancestral spirits of dead chiefs and warriors, inhabit volcanoes and show themselves in eruption, thunder, lightning and earthquake; the volcanoes are thereby sacred.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mapuche religion, Wikipedia; Pillan, Garland Magazine"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_tuna": {
+  "attributes": [
+   {
+    "id": "mangaian_tuna-eel",
+    "name": "Giant eel whose buried head sprouts the coconut",
+    "notes": "Tuna appears as the great eel; the three eye-and-mouth marks on every coconut shell are explained as his face, the white flesh as 'Tuna's brains'.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), ch. V"
+     }
+    ]
+   }
+  ],
+  "sacredPlants": [
+   {
+    "id": "mangaian_tuna-coconut",
+    "name": "Coconut palm (sprung from his head)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), ch. V"
      }
     ]
    }
