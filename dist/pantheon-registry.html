@@ -365313,6 +365313,14 @@ const applyFacultySupplement = makeListApplier({ label: 'faculty', defaultMap: F
 // Steps are written one-arg so the default by-id map (ENRICHMENTS, EPITHETS, …)
 // applies; the `(m) => fn(m, MAP)` wrappers are the overlays that run a second
 // pass against a different map (CROSS_/VERIFY_ENRICHMENTS, the *_X overlays).
+/* ENRICH_SWEEP_START */
+const FACULTY_SWEEP = {};
+const MATERIAL_SWEEP = {};
+const DOMAIN_SWEEP = {};
+const EPITHET_SWEEP = {};
+const CULT_SWEEP = {};
+const ICONO_SWEEP = {};
+/* ENRICH_SWEEP_END */
 const SEED_PIPELINE = [
   addNewFigures,                                  // NEW_FIGURES
   applyDomainSupplement,                          // DOMAIN_SUPPLEMENT
@@ -365331,8 +365339,14 @@ const SEED_PIPELINE = [
   (m) => applyIconography(m, ICONOGRAPHY_X),
   (m) => applyCult(m, CULT_PRACTICES_X),
   (m) => applyEpithets(m, EPITHETS_X),
+  (m) => applyDomainSupplement(m, DOMAIN_SWEEP),  // corpus-enrichment sweep
+  (m) => applyFacultySupplement(m, FACULTY_SWEEP),
+  (m) => applyEpithets(m, EPITHET_SWEEP),
+  (m) => applyCult(m, CULT_SWEEP),
+  (m) => applyIconography(m, ICONO_SWEEP),
   migrate,
   mergeMaterialCulture,
+  (m) => mergeMaterialCulture(m, MATERIAL_SWEEP),
   mergeGeneratedItems,
   populateCustodyHolders,
   mergeDomainTerms,
