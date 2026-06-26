@@ -671,6 +671,7 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
 
   const pathNodeSet = __gMemo(() => {
     if (!pathResult?.nodes?.length) return null;
+    if (!pathResult?.edges?.length) return null; // self-path: no dimming
     return new Set(pathResult.nodes);
   }, [pathResult]);
 
@@ -771,6 +772,11 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
 
   const focused = focusId ? byId.get(focusId) : null;
 
+  // When the graph changes (mode/year/filter rebuild), any node that was
+  // hovered may no longer exist. Clear hover state to avoid dimming the
+  // entire new graph until the mouse moves.
+  __gEff(() => { setHoverNode(null); setHoverPos(null); setHoverEdge(null); }, [graph]);
+
   // Hovering a node temporarily highlights its 1-hop (without changing
   // focus). Useful for scrubbing through a dense region.
   const nodeNeighbors = __gMemo(() => {
@@ -847,7 +853,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
 
   // Label policy
   const labelMode = (() => {
-    if (focusId) return 'focus-and-1hop';
+    if (focusId && focusInScope) return 'focus-and-1hop';
     if (graph.nodes.length <= 60) return 'all';
     if (zoomK >= 1.6) return 'all';
     return 'top-degree';                       // top quartile by degree

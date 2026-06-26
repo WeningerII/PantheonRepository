@@ -284,7 +284,7 @@ function LifecycleTimeline({ lc, tradition }) {
     const b = plot.nodes[i];
     segments.push({
       x1: a.x, x2: b.x, y: ROW_H / 2,
-      dashed: isDeadStatus(a.stage.vitalStatus),
+      dashed: isDeadStatus(b.stage.vitalStatus),
     });
   }
 

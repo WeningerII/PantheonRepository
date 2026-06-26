@@ -620,7 +620,7 @@ function Shell() {
       />
       <div className="shell-body">
         <div className="shell-rail">
-          <Rail filters={filters} view={view} hasDetail={!!selectedEntry} />
+          <Rail filters={filters} view={view} hasDetail={!!(selectedEntry || selectedItemId || selectedPowerId || selectedDomainId)} />
         </div>
         <div className="shell-main">
           {view === 'browse' && (
@@ -636,7 +636,7 @@ function Shell() {
               byId={byId}
               focusId={graphFocusId}
               setFocusId={setGraphFocusId}
-              onOpenDetail={(id) => { setGraphFocusId(null); setView('browse'); selection.setSelectedId(id); }}
+              onOpenDetail={(id) => { setGraphFocusId(null); setView('browse'); selection.setSelectedId(id); const idx = filters.filtered.findIndex(p => p.id === id); if (idx >= 0) selection.setCursorIdx(idx); }}
             />
           )}
           {view === 'atlas' && (

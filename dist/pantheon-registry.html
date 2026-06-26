@@ -440576,7 +440576,7 @@ function LifecycleTimeline({
       x1: a.x,
       x2: b.x,
       y: ROW_H / 2,
-      dashed: isDeadStatus(a.stage.vitalStatus)
+      dashed: isDeadStatus(b.stage.vitalStatus)
     });
   }
 
@@ -443791,6 +443791,7 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
   }, [pathStart, pathEnd, pathAdj]);
   const pathNodeSet = __gMemo(() => {
     if (!pathResult?.nodes?.length) return null;
+    if (!pathResult?.edges?.length) return null; // self-path: no dimming
     return new Set(pathResult.nodes);
   }, [pathResult]);
   const pathEdgeSet = __gMemo(() => {
@@ -443901,6 +443902,15 @@ function Graph({
   }, [graph.links]);
   const focused = focusId ? byId.get(focusId) : null;
 
+  // When the graph changes (mode/year/filter rebuild), any node that was
+  // hovered may no longer exist. Clear hover state to avoid dimming the
+  // entire new graph until the mouse moves.
+  __gEff(() => {
+    setHoverNode(null);
+    setHoverPos(null);
+    setHoverEdge(null);
+  }, [graph]);
+
   // Hovering a node temporarily highlights its 1-hop (without changing
   // focus). Useful for scrubbing through a dense region.
   const nodeNeighbors = __gMemo(() => {
@@ -443977,7 +443987,7 @@ function Graph({
 
   // Label policy
   const labelMode = (() => {
-    if (focusId) return 'focus-and-1hop';
+    if (focusId && focusInScope) return 'focus-and-1hop';
     if (graph.nodes.length <= 60) return 'all';
     if (zoomK >= 1.6) return 'all';
     return 'top-degree'; // top quartile by degree
@@ -446106,7 +446116,7 @@ function Shell() {
   }, /*#__PURE__*/React.createElement(Rail, {
     filters: filters,
     view: view,
-    hasDetail: !!selectedEntry
+    hasDetail: !!(selectedEntry || selectedItemId || selectedPowerId || selectedDomainId)
   })), /*#__PURE__*/React.createElement("div", {
     className: "shell-main"
   }, view === 'browse' && /*#__PURE__*/React.createElement(window.Browse, {
@@ -446125,6 +446135,8 @@ function Shell() {
       setGraphFocusId(null);
       setView('browse');
       selection.setSelectedId(id);
+      const idx = filters.filtered.findIndex(p => p.id === id);
+      if (idx >= 0) selection.setCursorIdx(idx);
     }
   }), view === 'atlas' && /*#__PURE__*/React.createElement(window.Atlas, {
     atlas: atlas,
