@@ -682,8 +682,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
 
   __dEff(() => {
     if (!localEntry) return;
-    // Reset scroll when entry changes
-    const el = document.querySelector('.detail-scroll');
+    const el = panelRef.current?.querySelector('.detail-scroll');
     if (el) el.scrollTop = 0;
   }, [localEntry?.id]);
 

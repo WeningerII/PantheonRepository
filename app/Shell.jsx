@@ -669,7 +669,7 @@ function Shell() {
         entry={selectedEntry}
         byId={byId}
         childrenOf={childrenOf}
-        onClose={() => selection.setSelectedId(null)}
+        onClose={() => { selection.setSelectedId(null); selection.setCursorIdx(0); }}
         onPrev={() => moveSelection(-1)}
         onNext={() => moveSelection(1)}
         canPrev={selIdxInFiltered > 0}

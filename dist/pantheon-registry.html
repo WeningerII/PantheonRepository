@@ -441500,8 +441500,7 @@ function Detail({
   }, [!!localEntry]);
   __dEff(() => {
     if (!localEntry) return;
-    // Reset scroll when entry changes
-    const el = document.querySelector('.detail-scroll');
+    const el = panelRef.current?.querySelector('.detail-scroll');
     if (el) el.scrollTop = 0;
   }, [localEntry?.id]);
   if (!localEntry) return null;
@@ -446118,7 +446117,10 @@ function Shell() {
     entry: selectedEntry,
     byId: byId,
     childrenOf: childrenOf,
-    onClose: () => selection.setSelectedId(null),
+    onClose: () => {
+      selection.setSelectedId(null);
+      selection.setCursorIdx(0);
+    },
     onPrev: () => moveSelection(-1),
     onNext: () => moveSelection(1),
     canPrev: selIdxInFiltered > 0,
