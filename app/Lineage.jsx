@@ -3,7 +3,7 @@
 //  below, siblings beside). Lives inside the detail panel.
 // ═══════════════════════════════════════════════════════════════════════════
 
-const { useState: __lState, useMemo: __lMemo, useEffect: __lEffect } = React;
+const { useState: __lState, useMemo: __lMemo, useEffect: __lEffect, useRef: __lRef } = React;
 
 const CARD_W = 152;
 const CARD_H = 44;
@@ -218,12 +218,26 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
     return next;
   });
 
+  const wrapRef = __lRef(null);
+
   const tree = __lMemo(
     () => buildLineageTree(entry, byId, childrenOf, upDepth, downDepth),
     [entry, byId, childrenOf, upDepth, downDepth],
   );
   const layout = __lMemo(() => layoutTree(tree, expandedRows), [tree, expandedRows]);
   const edges = __lMemo(() => computeEdges(layout.nodes, byId), [layout, byId]);
+
+  // After expanding a wide sibling row the focus card can be thousands of px
+  // from the left edge. Scroll the wrap so the focus card stays centered.
+  // On full collapse, reset to the natural (leftmost) scroll position.
+  __lEffect(() => {
+    const wrap = wrapRef.current;
+    if (!wrap) return;
+    if (expandedRows.size === 0) { wrap.scrollLeft = 0; return; }
+    const focusNode = layout.nodes.find(n => n.id === tree.focusId);
+    if (!focusNode) return;
+    wrap.scrollLeft = Math.max(0, focusNode.x - wrap.clientWidth / 2 + CARD_W / 2);
+  }, [expandedRows, layout, tree.focusId]);
 
   const hasAny =
     tree.ancestorRowCount > 0 ||
@@ -243,7 +257,7 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
         </span>
       </h2>
 
-      <div className="lineage-wrap">
+      <div className="lineage-wrap" ref={wrapRef}>
         <div
           className="lineage-canvas"
           style={{ width: layout.width, height: layout.height }}

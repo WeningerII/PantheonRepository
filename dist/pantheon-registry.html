@@ -438921,6 +438921,24 @@ function displayName(entry) {
   if (typeof entry.name === 'string') return entry.name;
   return entry.name?.primary || entry.name?.canonical || entry.id || '';
 }
+
+// Normalize a display name for consistent alphabetical sort and grouping.
+// Two classes of mismatch between localeCompare and our group-key extractor:
+//
+// 1. Ligatures that NFD doesn't decompose: Æ/æ, Þ/þ, Ð/ð, Ø/ø, Ł/ł, Œ/œ,
+//    ẞ/ß. Without explicit mapping, "Ægir" sorts in the A section (localeCompare
+//    treats Æ≈AE) but the group key strips the non-[A-Za-z] Æ and reads 'g' →
+//    group 'G', producing a phantom second G header.
+//
+// 2. Leading modifier-letter prefixes used in Semitic transliterations: ʾ
+//    (U+02BE, aleph) and ʿ (U+02BF, ayin). These are base characters (not
+//    combining marks), so they survive NFD, and localeCompare places them after
+//    Z. The group key strips them and reads the next letter (e.g. 'A' from
+//    ʾAshtart), while the sort places ʾA entries after Z — producing duplicate
+//    'A', 'I', 'O' headers scattered at the tail of the A→Z list.
+function nameForAlphaSort(entry) {
+  return (displayName(entry) || '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[Æ]/g, 'AE').replace(/[æ]/g, 'ae').replace(/[Þþ]/g, 'Th').replace(/[Ðð]/g, 'Th').replace(/[Øø]/g, 'O').replace(/[Łł]/g, 'L').replace(/[Œœ]/g, 'OE').replace(/[ẞß]/g, 'SS').replace(/^[^A-Za-z]+/, '');
+}
 function altNames(entry) {
   const n = entry?.name;
   if (!n || typeof n === 'string') return [];
@@ -439014,7 +439032,7 @@ const SORTS = {
   alpha: {
     label: 'Alphabetical',
     short: 'A→Z',
-    cmp: (a, b) => displayName(a).localeCompare(displayName(b))
+    cmp: (a, b) => nameForAlphaSort(a).localeCompare(nameForAlphaSort(b))
   },
   tradition: {
     label: 'Tradition',
@@ -439476,6 +439494,7 @@ Object.assign(window, {
   useFilters,
   useSelection,
   displayName,
+  nameForAlphaSort,
   altNames,
   transliterations,
   pressable,
@@ -439627,11 +439646,11 @@ function groupKeyForEntry(entry, sortMode) {
   switch (sortMode) {
     case 'alpha':
       {
-        // Normalize: strip diacritics (Æthelred → Aethelred), then drop any
-        // leading non-letter (apostrophes, punctuation, dashes) so 'Antara
-        // and Ægle don't fragment into a '#' group separate from the As.
-        const name = window.displayName(entry) || '';
-        const normalized = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/^[^A-Za-z]+/, '');
+        // Use the same normalization as the alpha sort comparator so the group
+        // key always matches the sort position. nameForAlphaSort folds ligatures
+        // (Æ→AE, Þ→Th, Ø→O, etc.) that NFD alone doesn't handle --
+        // without it "Ægir" sorts in the A section but groups as 'G'.
+        const normalized = window.nameForAlphaSort(entry).replace(/^[^A-Za-z]+/, '');
         const ch = (normalized[0] || '#').toUpperCase();
         return /[A-Z]/.test(ch) ? ch : '#';
       }
@@ -439861,7 +439880,8 @@ Object.assign(window, {
 const {
   useState: __lState,
   useMemo: __lMemo,
-  useEffect: __lEffect
+  useEffect: __lEffect,
+  useRef: __lRef
 } = React;
 const CARD_W = 152;
 const CARD_H = 44;
@@ -440111,9 +440131,25 @@ function Lineage({
     if (next.has(row)) next.delete(row);else next.add(row);
     return next;
   });
+  const wrapRef = __lRef(null);
   const tree = __lMemo(() => buildLineageTree(entry, byId, childrenOf, upDepth, downDepth), [entry, byId, childrenOf, upDepth, downDepth]);
   const layout = __lMemo(() => layoutTree(tree, expandedRows), [tree, expandedRows]);
   const edges = __lMemo(() => computeEdges(layout.nodes, byId), [layout, byId]);
+
+  // After expanding a wide sibling row the focus card can be thousands of px
+  // from the left edge. Scroll the wrap so the focus card stays centered.
+  // On full collapse, reset to the natural (leftmost) scroll position.
+  __lEffect(() => {
+    const wrap = wrapRef.current;
+    if (!wrap) return;
+    if (expandedRows.size === 0) {
+      wrap.scrollLeft = 0;
+      return;
+    }
+    const focusNode = layout.nodes.find(n => n.id === tree.focusId);
+    if (!focusNode) return;
+    wrap.scrollLeft = Math.max(0, focusNode.x - wrap.clientWidth / 2 + CARD_W / 2);
+  }, [expandedRows, layout, tree.focusId]);
   const hasAny = tree.ancestorRowCount > 0 || tree.descRowCount > 0 || tree.siblings.length > 0;
   if (!hasAny) return null;
   return /*#__PURE__*/React.createElement("div", {
@@ -440121,7 +440157,8 @@ function Lineage({
   }, /*#__PURE__*/React.createElement("h2", null, "Lineage tree", /*#__PURE__*/React.createElement("span", {
     className: "count"
   }, tree.ancestorRowCount > 0 && `${tree.ancestorRowCount}↑ `, tree.siblings.length > 0 && `${tree.siblings.length}↔ `, tree.descRowCount > 0 && `${tree.descRowCount}↓`)), /*#__PURE__*/React.createElement("div", {
-    className: "lineage-wrap"
+    className: "lineage-wrap",
+    ref: wrapRef
   }, /*#__PURE__*/React.createElement("div", {
     className: "lineage-canvas",
     style: {

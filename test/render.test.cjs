@@ -125,7 +125,7 @@ describe('app renders in a browser-like environment', () => {
   };
 
   test('Lifecycle stage nodes are spread, not crammed', async () => {
-    await app.openFirstFigure(); // ʿAntara ibn Shaddad — a multi-era lifecycle
+    await app.openFigure('arabian_antara'); // 'Antara ibn Shaddad — a multi-era lifecycle
     const { gap } = minLifecycleGap(app.document);
     assert.ok(gap >= 24, `stage nodes overlap: min gap ${Math.round(gap)}px < 24px node size`);
   });
@@ -527,5 +527,41 @@ describe('app renders in a browser-like environment', () => {
     assert.ok(app.document.querySelector('.cmdk'), 'Command Palette closed unexpectedly');
     await app.act(async () => { app.key('Escape'); });
     await app.flush();
+  });
+
+  test('Browse A→Z sort: ligature names (Ægir, Þjazi) produce no duplicate group headers', async () => {
+    // Regression: groupKeyForEntry stripped non-[A-Za-z] characters before
+    // extracting the first letter, so "Ægir" → 'G' and "Þjazi" → 'J' despite
+    // localeCompare placing them in the 'A' and 'T' sections. nameForAlphaSort
+    // now maps ligatures (Æ→AE, Þ→Th) before the group key reads the first
+    // letter, keeping sort order and group keys consistent.
+    await app.clickButton('Browse');
+    await app.clickButton('A→Z');
+    await app.flush();
+    const headers = [...app.document.querySelectorAll('.browse-group-header .group-label')]
+      .map((h) => h.textContent);
+    assert.ok(headers.length > 0, 'A→Z sort produced no group headers');
+    const seen = new Set();
+    const duplicates = headers.filter((h) => { const d = seen.has(h); seen.add(h); return d; });
+    assert.deepStrictEqual(duplicates, [],
+      `A→Z group headers are not unique (fragment): ${duplicates.join(', ')}`);
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('Lineage expand: clicking "+N" scrolls the wrap to keep the focus card visible', async () => {
+    // Regression: expanding a 50-sibling row put the focus card ~4100px from
+    // the left edge with no auto-scroll, requiring manual horizontal scrolling.
+    // The new useEffect sets lineage-wrap.scrollLeft to center on the focus.
+    await app.openFigure('greek_apollod_hyllus');
+    const chip = app.document.querySelector('.lineage-overflow:not(.is-expanded)');
+    assert.ok(chip, 'expected a collapsed "+N" overflow chip (50+ siblings)');
+    const wrap = app.document.querySelector('.lineage-wrap');
+    assert.ok(wrap, '.lineage-wrap did not render');
+    assert.strictEqual(wrap.scrollLeft, 0, 'scrollLeft should start at 0');
+    await app.act(async () => { chip.click(); });
+    await app.flush();
+    assert.ok(wrap.scrollLeft > 0,
+      `after expanding a wide row the focus card is still at scrollLeft=0 (effect did not fire)`);
+    await app.clickButton('Browse');
   });
 });

@@ -392,6 +392,34 @@ function displayName(entry) {
   return entry.name?.primary || entry.name?.canonical || entry.id || '';
 }
 
+// Normalize a display name for consistent alphabetical sort and grouping.
+// Two classes of mismatch between localeCompare and our group-key extractor:
+//
+// 1. Ligatures that NFD doesn't decompose: Æ/æ, Þ/þ, Ð/ð, Ø/ø, Ł/ł, Œ/œ,
+//    ẞ/ß. Without explicit mapping, "Ægir" sorts in the A section (localeCompare
+//    treats Æ≈AE) but the group key strips the non-[A-Za-z] Æ and reads 'g' →
+//    group 'G', producing a phantom second G header.
+//
+// 2. Leading modifier-letter prefixes used in Semitic transliterations: ʾ
+//    (U+02BE, aleph) and ʿ (U+02BF, ayin). These are base characters (not
+//    combining marks), so they survive NFD, and localeCompare places them after
+//    Z. The group key strips them and reads the next letter (e.g. 'A' from
+//    ʾAshtart), while the sort places ʾA entries after Z — producing duplicate
+//    'A', 'I', 'O' headers scattered at the tail of the A→Z list.
+function nameForAlphaSort(entry) {
+  return (displayName(entry) || '')
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[Æ]/g, 'AE').replace(/[æ]/g, 'ae')
+    .replace(/[Þþ]/g, 'Th')
+    .replace(/[Ðð]/g, 'Th')
+    .replace(/[Øø]/g, 'O')
+    .replace(/[Łł]/g, 'L')
+    .replace(/[Œœ]/g, 'OE')
+    .replace(/[ẞß]/g, 'SS')
+    .replace(/^[^A-Za-z]+/, '');
+}
+
 function altNames(entry) {
   const n = entry?.name;
   if (!n || typeof n === 'string') return [];
@@ -500,7 +528,7 @@ function useData() {
 // ── Hook: useFilters ─────────────────────────────────────────────────────
 
 const SORTS = {
-  alpha:     { label: 'Alphabetical', short: 'A→Z',       cmp: (a, b) => displayName(a).localeCompare(displayName(b)) },
+  alpha:     { label: 'Alphabetical', short: 'A→Z',       cmp: (a, b) => nameForAlphaSort(a).localeCompare(nameForAlphaSort(b)) },
   tradition: { label: 'Tradition',    short: 'Tradition', cmp: (a, b) => (a.tradition || '').localeCompare(b.tradition || '') || displayName(a).localeCompare(displayName(b)) },
   era:       { label: 'Era (oldest)', short: 'Era',       cmp: (a, b) => {
     const ya = entryAnchorYear(a); const yb = entryAnchorYear(b);
@@ -863,7 +891,7 @@ function buildFacetOptions(list, bucketOf, labelOf, rank) {
 Object.assign(window, {
   TYPE_TIER, TYPE_ORDER, TierIcon,
   useData, useFilters, useSelection,
-  displayName, altNames, transliterations, pressable,
+  displayName, nameForAlphaSort, altNames, transliterations, pressable,
   formatEra,
   getEntryDates,
   entryAnchorYear, eraBandForYear,

@@ -100,14 +100,11 @@ const BrowseRow = React.memo(function BrowseRow({ entry, idx, cursor, selected, 
 function groupKeyForEntry(entry, sortMode) {
   switch (sortMode) {
     case 'alpha': {
-      // Normalize: strip diacritics (Æthelred → Aethelred), then drop any
-      // leading non-letter (apostrophes, punctuation, dashes) so 'Antara
-      // and Ægle don't fragment into a '#' group separate from the As.
-      const name = window.displayName(entry) || '';
-      const normalized = name
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/^[^A-Za-z]+/, '');
+      // Use the same normalization as the alpha sort comparator so the group
+      // key always matches the sort position. nameForAlphaSort folds ligatures
+      // (Æ→AE, Þ→Th, Ø→O, etc.) that NFD alone doesn't handle --
+      // without it "Ægir" sorts in the A section but groups as 'G'.
+      const normalized = window.nameForAlphaSort(entry).replace(/^[^A-Za-z]+/, '');
       const ch = (normalized[0] || '#').toUpperCase();
       return /[A-Z]/.test(ch) ? ch : '#';
     }
