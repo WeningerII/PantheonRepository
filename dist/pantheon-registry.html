@@ -6067,6 +6067,9 @@ const buildTerritorySeed = () => ({
     { kind: 'core', period: 'Mongolian plateau and Orkhon valley (Türk khaganates through the Mongol empire, 6th–13th c.)', source: 'Orkhon inscriptions (732 CE); The Secret History of the Mongols; Roux, La religion des Turcs et des Mongols (1984)', coords: [
       [88,49.5],[95,50.5],[102,50.5],[108,49.5],[112,47.5],[110,44.5],[103,43],[96,43.5],[90,45.5],[88,49.5]
     ] },
+    { kind: 'sphere', period: 'Western Turkic steppe — the Kazakh and Kyrgyz steppe, Altai-Sayan highlands and middle Yenisei, where Tengri, Umay and the Holy Earth-Water were venerated (Türk khaganates onward)', source: 'Orkhon inscriptions; Radloff, Proben I (Altai, 1866); Roux, La religion des Turcs et des Mongols (1984)', coords: [
+      [48,47],[52,50],[60,52],[68,53],[76,52.5],[84,51.5],[89,50],[90,47],[87,44.5],[80,43],[72,42.5],[64,43],[56,44.5],[50,45.5],[48,47]
+    ] },
   ]},
 
   // Thai-Lao Mekong world — phi spirits, naga river-lords and Buddhist folk cosmology
@@ -275565,6 +275568,167 @@ const NEW_FIGURES = [
   "notes": "Altai-Turkic creator-father dwelling in the highest heaven."
  },
  {
+  "id": "turkic_kizagan",
+  "name": {
+   "primary": "Kızagan",
+   "alt": [
+    "Kızağan",
+    "Kızagan Han"
+   ],
+   "transliterations": {
+    "altai": "Кызаган"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "turkic_kayra"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "force",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "martial-valour",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Wilhelm Radloff, Proben … Süd-Sibiriens, vol. I (Altai, 1866); A. V. Anokhin, Materialy po shamanstvu u altaitsev (1924)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Altai god of war, force and martial fury, a son of the creator Kayra Khan who resides on the ninth heaven and rides a red camel. The warlike member of the upper-world brotherhood in the Radloff/Anokhin Altai cosmogony, beside Ülgen and Mergen."
+ },
+ {
+  "id": "turkic_korkut_ata",
+  "name": {
+   "primary": "Korkut Ata",
+   "alt": [
+    "Korkyt",
+    "Dede Korkut"
+   ],
+   "transliterations": {
+    "oldturkic": "Qorqyt Ata"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "legendary"
+  },
+  "domains": [
+   {
+    "sphereId": "music",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "shamanic-wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kitab-ı Dede Korkut (Book of Dede Korkut), Dresden and Vatican manuscripts; Kazakh Korkyt-Ata tradition of the Syr Darya"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The legendary Oghuz/Kazakh shaman-bard and patron of musicians, traditionally of the Syr Darya in the 8th-9th century: inventor of the kobyz fiddle and archetypal baqsı whose songs hold death at bay. Sage-narrator framing the Book of Dede Korkut, his mausoleum stands near Kyzylorda in the Kazakh steppe."
+ },
+ {
+  "id": "turkic_mergen",
+  "name": {
+   "primary": "Mergen",
+   "alt": [
+    "Mergen Khan",
+    "Mergen Tengri"
+   ],
+   "transliterations": {
+    "altai": "Мерген"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "turkic_kayra"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "reason",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "abundance",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Wilhelm Radloff, Proben der Volkslitteratur der türkischen Stämme Süd-Sibiriens, vol. I (Altai, 1866); A. V. Anokhin, Materialy po shamanstvu u altaitsev (1924)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Altai god of wisdom, reason and unerring archery, a son of the creator Kayra Khan who holds the seventh heaven. In the south-Siberian cosmogonic genealogy recorded by Radloff and Anokhin he stands beside his brothers Ülgen and Kızagan as the intellect of the upper world."
+ },
+ {
   "id": "turkic_od",
   "name": {
    "primary": "Od",
@@ -276108,6 +276272,113 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Mother-goddess of birth; only goddess named on the Orkhon steles."
+ },
+ {
+  "id": "turkic_yayik",
+  "name": {
+   "primary": "Yayık",
+   "alt": [
+    "Jayık",
+    "Yayuçı"
+   ],
+   "transliterations": {
+    "altai": "Дьайык"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "intercession",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "protection",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "flood-waters",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev (1924): Yayık as Ülgen's celestial messenger in the white-horse sacrifice"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A celestial intermediary spirit of the Altai sacrificial cosmology: the messenger of the creator Ülgen who relays the white-horse sacrifice up to heaven and guards humankind against flood and evil. Central to the shaman's ecstatic heaven-journey in the south-Siberian ritual recorded by Anokhin."
+ },
+ {
+  "id": "turkic_yer_sub",
+  "name": {
+   "primary": "Yer-Sub",
+   "alt": [
+    "Yer-Su",
+    "Iduk Yer-Sub",
+    "Jer-Suu"
+   ],
+   "transliterations": {
+    "oldturkic": "Yer Sub"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "homeland",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "victory",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "epigraphic",
+      "reference": "Bilge Kagan inscription, East face: 'üze Türük Teŋrisi ıduq Yer-Subı'; Tonyukuk stele; ed. Talât Tekin, A Grammar of Orkhon Turkic (1968)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The sacred 'Holy Earth-Water' (ıduq Yer-Sub) of the Orkhon inscriptions, ranked immediately below Tengri among the powers who ordain Turkic victory and survival. A composite earth-and-water numen — at once the single Holy Land-and-Water and the plurality of local mountain, spring and grove spirits — surviving in the Kazakh and Kyrgyz Jer-Suu and the Altai cult of the land-and-water masters."
  },
  {
   "id": "udmurt_gudyri_mumy",
@@ -283944,6 +284215,116 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Yakut god of light, depicted as an eagle on the world-tree."
+ },
+ {
+  "id": "yakut_ayisit",
+  "name": {
+   "primary": "Ayısıt",
+   "alt": [
+    "Ajysyt",
+    "Ayıhıt",
+    "Ajyyhyt"
+   ],
+   "transliterations": {
+    "sakha": "Айыыһыт"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yakut",
+  "primaryTradition": "Yakut",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "birth-souls",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "protection-of-mothers",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Uno Harva, Die religiösen Vorstellungen der altaischen Völker (FFC 125, 1938), on the Yakut birth-goddess Ajysyt"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Sakha goddess of childbirth, who descends to bring the soul (kut) to the newborn and to protect mothers in labour and the increase of the herds. The Lena-basin counterpart of the steppe mother-goddess Umay and the feminine birth-power of the northern Aiyy pantheon."
+ },
+ {
+  "id": "yakut_uluu_toyon",
+  "name": {
+   "primary": "Uluu Toyon",
+   "alt": [
+    "Uluu Tojon"
+   ],
+   "transliterations": {
+    "sakha": "Улуу Тойон"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yakut",
+  "primaryTradition": "Yakut",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "thunder",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "the-soul",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "rough-justice",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "G. V. Ksenofontov, Uraangkhai-sakhalar (1937) and Legendy i rasskazy o shamanakh (1930); Uno Harva, Die religiösen Vorstellungen der altaischen Völker (1938)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The powerful and dangerous thunder-and-fire lord of the Sakha upper world, giver of fire and of a human soul, master of the abaasy spirits and patron of the 'black' shamans. A figure of rough justice, distinct from the serene creator Ürüng Aiyy Toyon — the storm-edged counterweight at the head of the Yakut cosmos."
  },
  {
   "id": "yakut_uruung_aiyy_toyon",
