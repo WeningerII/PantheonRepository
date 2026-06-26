@@ -137,7 +137,7 @@ function Browse({ filters, selection, onOpen }) {
   // the inline handlers from Shell/useSelection are fresh objects each render.
   const onOpenRef = __bRef(null);  onOpenRef.current = onOpen;
   const onHoverRef = __bRef(null); onHoverRef.current = setCursorIdx;
-  const stableOpen = __bMemo(() => (id) => onOpenRef.current && onOpenRef.current(id), []);
+  const stableOpen = __bMemo(() => (id, idx) => onOpenRef.current && onOpenRef.current(id, idx), []);
   const stableHover = __bMemo(() => (idx) => {
     // Keyboard navigation owns the cursor for a beat after each keypress —
     // ignore the mouseenters produced by rows sliding under a parked pointer.

@@ -812,7 +812,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     if (n.depth === 2) return 0.42;
     return 0.10;
   };
-  const edgeOpacity = (sId, tId, family) => {
+  const edgeOpacity = (sId, tId, family, kind) => {
     // Hidden by legend family toggle or either endpoint's tier toggle
     if (hiddenFamilies.has(family)) return 0;
     const sNode = byId.get(sId);
@@ -823,7 +823,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
       if (pathEdgeSet) {
         const lo = sId < tId ? sId : tId;
         const hi = sId < tId ? tId : sId;
-        return pathEdgeSet.has(lo + '|' + hi) ? 1 : 0.05;
+        return pathEdgeSet.has(lo + '|' + hi + '|' + kind) ? 1 : 0.05;
       }
       return 0.07;
     }
@@ -1017,7 +1017,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
                 const tx = typeof l.target === 'object' ? l.target.x : 0;
                 const ty = typeof l.target === 'object' ? l.target.y : 0;
                 const style = EDGE_STYLE[l.family] || EDGE_STYLE.Other;
-                const op = edgeOpacity(sId, tId, l.family);
+                const op = edgeOpacity(sId, tId, l.family, l.kind);
                 const inPath = pathEdgeSet && pathEdgeSet.has(
                   (sId < tId ? sId : tId) + '|' + (sId < tId ? tId : sId) + '|' + l.kind
                 );
