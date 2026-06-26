@@ -829,7 +829,9 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
           />
           <MaterialCulture entry={entry} onOpenItem={onOpenItem} />
           <IconographyBlock entry={entry} />
-          {(entry.cult?.cultCenters?.length || entry.cult?.festivals?.length || entry.linguistic?.etymology) ? (
+          {(entry.cult?.cultCenters?.length || entry.cult?.festivals?.length ||
+            entry.cult?.priesthoods?.length || entry.cult?.offerings?.length ||
+            entry.linguistic?.etymology) ? (
             <Chapter label="Practice & Language" />
           ) : null}
           <CultBlock entry={entry} />

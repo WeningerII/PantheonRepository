@@ -55,8 +55,8 @@ describe('app renders in a browser-like environment', () => {
     // here, not in a user's screenshot.
     const stats = app.document.querySelector('.atlas-stats')?.textContent || '';
     const m = stats.match(/(\d+)\s*traditions/);
-    assert.ok(m && parseInt(m[1], 10) >= 238,
-      `expected all 238 mapped traditions on the atlas, stats read "${stats}"`);
+    assert.ok(m && parseInt(m[1], 10) >= 241,
+      `expected at least 241 mapped traditions on the atlas, stats read "${stats}"`);
     await app.clickButton('Browse');
     assert.ok(app.document.querySelector('.browse-table'), 'did not return to browse');
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
@@ -614,5 +614,62 @@ describe('app renders in a browser-like environment', () => {
     await app.clickButton('Browse');
     await app.flush();
     assert.strictEqual(getCursorDataIdx(), 0, 'cursor did not reset to 0 after view switch');
+  });
+
+  test('cursorIdx lands at 0 (not last row) when filter shrinks list below cursor position', async () => {
+    // Regression: two separate useEffects in useSelection both fired when
+    // filtered shrank. Effect 1 enqueued setCursorIdx(0); Effect 2's stale
+    // closure saw the old cursorIdx as out-of-bounds and enqueued
+    // setCursorIdx(last). React 18 batching applied the last setter, landing
+    // the cursor on the last row. Fix: remove Effect 2 — 0 is always valid.
+    await app.clickButton('Browse');
+    const getCursorDataIdx = () =>
+      [...app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)')]
+        .findIndex(r => r.classList.contains('cursor'));
+    // Find a tradition with very few entries (< 5) so that advancing cursor
+    // to row 4 puts it out-of-bounds after the filter is applied.
+    const rails = [...app.document.querySelectorAll('.rail-row-trad')];
+    const smallRail = rails.find((r) => {
+      const countEl = r.querySelector('.rail-count');
+      return countEl && parseInt(countEl.textContent, 10) <= 3;
+    });
+    if (!smallRail) { return; } // no suitable small tradition in this build — skip
+    // Advance cursor to position 4 via keyboard.
+    await app.act(async () => {
+      app.key('j'); app.key('j'); app.key('j'); app.key('j');
+    });
+    await app.flush();
+    assert.ok(getCursorDataIdx() >= 4, 'expected cursor to advance to at least row 4');
+    // Apply the small tradition filter — list shrinks below cursor position.
+    await app.act(async () => { smallRail.click(); });
+    await app.flush();
+    assert.strictEqual(getCursorDataIdx(), 0,
+      'cursor should land at 0 (not last row) when filter shrinks list below cursor position');
+    // Clear filter.
+    await app.act(async () => { smallRail.click(); });
+    await app.flush();
+  });
+
+  test('Lifecycle stale hover card clears on entry navigation', async () => {
+    // Regression: LifecycleTimeline's `hover` state was never reset when the
+    // `lc` prop changed. The previous entry's stage card stayed visible after
+    // navigating to a different entry.
+    // Open a figure that has a lifecycle section.
+    await app.openFigure('greek_alexander');
+    const svg = app.document.querySelector('.lifecycle-svg');
+    if (!svg) { return; } // figure has no lifecycle in this build — skip
+    const firstNode = svg.querySelector('circle[r="12"]');
+    if (!firstNode) { return; }
+    // Simulate hover to set hover state.
+    firstNode.parentNode?.dispatchEvent(new app.window.MouseEvent('mouseenter', { bubbles: true }));
+    await app.flush();
+    // Navigate to a different entry.
+    await app.openFigure('greek_zeus');
+    await app.flush();
+    // The hover card (lifecycle detail card below the timeline) must not show
+    // data from the previous entry. We check it's absent (null or empty).
+    const hoverCard = app.document.querySelector('.lifecycle-hover');
+    assert.ok(!hoverCard || !hoverCard.textContent.trim(),
+      'lifecycle hover card from previous entry still visible after navigation');
   });
 });

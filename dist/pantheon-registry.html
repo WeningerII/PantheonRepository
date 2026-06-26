@@ -438937,7 +438937,13 @@ function displayName(entry) {
 //    ʾAshtart), while the sort places ʾA entries after Z — producing duplicate
 //    'A', 'I', 'O' headers scattered at the tail of the A→Z list.
 function nameForAlphaSort(entry) {
-  return (displayName(entry) || '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[Æ]/g, 'AE').replace(/[æ]/g, 'ae').replace(/[Þþ]/g, 'Th').replace(/[Ðð]/g, 'Th').replace(/[Øø]/g, 'O').replace(/[Łł]/g, 'L').replace(/[Œœ]/g, 'OE').replace(/[ẞß]/g, 'SS').replace(/^[^A-Za-z]+/, '');
+  const raw = displayName(entry) || '';
+  const normalized = raw.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[Æ]/g, 'AE').replace(/[æ]/g, 'ae').replace(/[Þþ]/g, 'Th').replace(/[Ðð]/g, 'Th').replace(/[Øø]/g, 'O').replace(/[Łł]/g, 'L').replace(/[Œœ]/g, 'OE').replace(/[ẞß]/g, 'SS').replace(/^[^A-Za-z]+/, '');
+  // If the whole name is non-Latin (Arabic, CJK, Devanagari, etc.) the strip
+  // consumes the entire string and leaves ''. Fall back to the raw display name
+  // so these entries sort after Z by their own script's locale order — placing
+  // the '#' catch-all group at the TAIL of A→Z rather than the head.
+  return normalized || raw;
 }
 function altNames(entry) {
   const n = entry?.name;
@@ -439032,7 +439038,7 @@ const SORTS = {
   alpha: {
     label: 'Alphabetical',
     short: 'A→Z',
-    cmp: (a, b) => nameForAlphaSort(a).localeCompare(nameForAlphaSort(b))
+    cmp: (a, b) => nameForAlphaSort(a).localeCompare(nameForAlphaSort(b)) || displayName(a).localeCompare(displayName(b))
   },
   tradition: {
     label: 'Tradition',
@@ -439165,16 +439171,14 @@ function useSelection(filtered) {
   const [selectedId, setSelectedId] = useState(null);
   const [cursorIdx, setCursorIdx] = useState(0);
 
-  // Reset cursor to the top whenever the filtered list changes content (filter
-  // or sort changed), so the keyboard highlight doesn't silently drift to a
-  // semantically unrelated row. A separate effect handles out-of-bounds clamping
-  // when the list shrinks while the cursor was already past a position.
+  // Reset cursor to 0 whenever the filtered list changes reference (any filter
+  // or sort change). This also handles the out-of-bounds case: 0 is always a
+  // valid index for a non-empty list, and for an empty list no row renders so
+  // the stale index is harmless. A second bounds-clamp effect is not needed
+  // and would race with this one in React 18 batching (last setState wins).
   useEffect(() => {
     setCursorIdx(0);
   }, [filtered]);
-  useEffect(() => {
-    if (cursorIdx >= filtered.length) setCursorIdx(Math.max(0, filtered.length - 1));
-  }, [filtered.length, cursorIdx]);
   const moveCursor = useCallback(delta => {
     setCursorIdx(i => Math.max(0, Math.min(filtered.length - 1, i + delta)));
   }, [filtered.length]);
@@ -439722,7 +439726,7 @@ function Browse({
   const stableHover = __bMemo(() => idx => {
     // Keyboard navigation owns the cursor for a beat after each keypress —
     // ignore the mouseenters produced by rows sliding under a parked pointer.
-    if (Date.now() - (window.__kbNavTs || 0) < 250) return;
+    if (Date.now() - (window.__kbNavTs || 0) < 400) return;
     onHoverRef.current && onHoverRef.current(idx);
   }, []);
 
@@ -440519,6 +440523,12 @@ function LifecycleTimeline({
   const containerRef = __lcRef(null);
   const [width, setWidth] = __lcState(640);
   const [hover, setHover] = __lcState(null);
+  // Clear stale hover card when navigating to a different entry — Detail does
+  // not remount this component, so without this the previous entry's stage card
+  // stays visible below the new timeline until the user mouses over a node.
+  __lcEff(() => {
+    setHover(null);
+  }, [lc]);
   const plot = __lcMemo(() => buildPlot(lc, tradition, width), [lc, tradition, width]);
 
   // Re-run when the mode flips: a session whose FIRST entry renders the
@@ -441629,7 +441639,7 @@ function Detail({
     onOpenItem: onOpenItem
   }), /*#__PURE__*/React.createElement(IconographyBlock, {
     entry: entry
-  }), entry.cult?.cultCenters?.length || entry.cult?.festivals?.length || entry.linguistic?.etymology ? /*#__PURE__*/React.createElement(Chapter, {
+  }), entry.cult?.cultCenters?.length || entry.cult?.festivals?.length || entry.cult?.priesthoods?.length || entry.cult?.offerings?.length || entry.linguistic?.etymology ? /*#__PURE__*/React.createElement(Chapter, {
     label: "Practice & Language"
   }) : null, /*#__PURE__*/React.createElement(CultBlock, {
     entry: entry
@@ -443266,7 +443276,12 @@ function useForceSim(graph, width, height, positionsRef, nodeElRefs, linkElRefs)
   // Create-or-update the simulation. Uses the same instance across rebuilds
   // so positions/velocities survive incremental data changes.
   __gEff(() => {
-    if (!graph.nodes.length || !window.d3 || !width || !height) return;
+    if (!graph.nodes.length || !window.d3 || !width || !height) {
+      // Stop any running simulation so it doesn't keep ticking on stale nodes
+      // (~2 s of wasted rAF callbacks) while the empty-state placeholder shows.
+      simRef.current?.stop();
+      return;
+    }
     const d3 = window.d3;
     const cx = width / 2,
       cy = height / 2;
@@ -443658,15 +443673,20 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
         family
       });
     };
+    // Gate adjacency on the rail-filtered `people` set, not the full byId map.
+    // Using byId.has() would allow filtered-out figures (e.g., a non-Greek deity
+    // when the tradition rail is set to 'Greek') to appear as BFS intermediaries
+    // — visible in the path card but absent from the SVG graph nodes.
+    const inView = new Set(people.map(p => p.id));
     for (const p of people) {
       for (const pid of p.parentIds || []) {
-        if (byId.has(pid)) {
+        if (inView.has(pid)) {
           add(p.id, pid, 'parent', 'Lineage');
           add(pid, p.id, 'parent', 'Lineage');
         }
       }
       for (const r of p.relations || []) {
-        if (!r.personId || !byId.has(r.personId)) continue;
+        if (!r.personId || !inView.has(r.personId)) continue;
         const fam = window.relationFamily(r.kind);
         add(p.id, r.personId, r.kind, fam);
         add(r.personId, p.id, r.kind, fam);

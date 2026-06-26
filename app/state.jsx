@@ -407,7 +407,8 @@ function displayName(entry) {
 //    ʾAshtart), while the sort places ʾA entries after Z — producing duplicate
 //    'A', 'I', 'O' headers scattered at the tail of the A→Z list.
 function nameForAlphaSort(entry) {
-  return (displayName(entry) || '')
+  const raw = displayName(entry) || '';
+  const normalized = raw
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
     .replace(/[Æ]/g, 'AE').replace(/[æ]/g, 'ae')
@@ -418,6 +419,11 @@ function nameForAlphaSort(entry) {
     .replace(/[Œœ]/g, 'OE')
     .replace(/[ẞß]/g, 'SS')
     .replace(/^[^A-Za-z]+/, '');
+  // If the whole name is non-Latin (Arabic, CJK, Devanagari, etc.) the strip
+  // consumes the entire string and leaves ''. Fall back to the raw display name
+  // so these entries sort after Z by their own script's locale order — placing
+  // the '#' catch-all group at the TAIL of A→Z rather than the head.
+  return normalized || raw;
 }
 
 function altNames(entry) {
@@ -528,7 +534,7 @@ function useData() {
 // ── Hook: useFilters ─────────────────────────────────────────────────────
 
 const SORTS = {
-  alpha:     { label: 'Alphabetical', short: 'A→Z',       cmp: (a, b) => nameForAlphaSort(a).localeCompare(nameForAlphaSort(b)) },
+  alpha:     { label: 'Alphabetical', short: 'A→Z',       cmp: (a, b) => nameForAlphaSort(a).localeCompare(nameForAlphaSort(b)) || displayName(a).localeCompare(displayName(b)) },
   tradition: { label: 'Tradition',    short: 'Tradition', cmp: (a, b) => (a.tradition || '').localeCompare(b.tradition || '') || displayName(a).localeCompare(displayName(b)) },
   era:       { label: 'Era (oldest)', short: 'Era',       cmp: (a, b) => {
     const ya = entryAnchorYear(a); const yb = entryAnchorYear(b);
@@ -643,14 +649,12 @@ function useSelection(filtered) {
   const [selectedId, setSelectedId] = useState(null);
   const [cursorIdx, setCursorIdx] = useState(0);
 
-  // Reset cursor to the top whenever the filtered list changes content (filter
-  // or sort changed), so the keyboard highlight doesn't silently drift to a
-  // semantically unrelated row. A separate effect handles out-of-bounds clamping
-  // when the list shrinks while the cursor was already past a position.
+  // Reset cursor to 0 whenever the filtered list changes reference (any filter
+  // or sort change). This also handles the out-of-bounds case: 0 is always a
+  // valid index for a non-empty list, and for an empty list no row renders so
+  // the stale index is harmless. A second bounds-clamp effect is not needed
+  // and would race with this one in React 18 batching (last setState wins).
   useEffect(() => { setCursorIdx(0); }, [filtered]);
-  useEffect(() => {
-    if (cursorIdx >= filtered.length) setCursorIdx(Math.max(0, filtered.length - 1));
-  }, [filtered.length, cursorIdx]);
 
   const moveCursor = useCallback((delta) => {
     setCursorIdx(i => Math.max(0, Math.min(filtered.length - 1, i + delta)));

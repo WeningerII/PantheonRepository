@@ -251,6 +251,10 @@ function LifecycleTimeline({ lc, tradition }) {
   const containerRef = __lcRef(null);
   const [width, setWidth] = __lcState(640);
   const [hover, setHover] = __lcState(null);
+  // Clear stale hover card when navigating to a different entry — Detail does
+  // not remount this component, so without this the previous entry's stage card
+  // stays visible below the new timeline until the user mouses over a node.
+  __lcEff(() => { setHover(null); }, [lc]);
 
   const plot = __lcMemo(() => buildPlot(lc, tradition, width), [lc, tradition, width]);
 

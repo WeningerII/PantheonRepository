@@ -48,8 +48,12 @@ test('seeds the full figure corpus (growing)', () => {
   assert.ok(Object.keys(people).length >= 2700, `expected >= 2700 figures, got ${Object.keys(people).length}`);
 });
 
-test('seeds 241 atlas territories (every tradition mapped)', () => {
-  assert.strictEqual(Object.keys(atlas).length, 241);
+test('seeds atlas territories (every tradition mapped)', () => {
+  // Use a floor, not an exact count — the atlas grows as traditions are added.
+  // Exact-count assertions break on every wave expansion (same pattern as the
+  // figure-corpus test above).
+  assert.ok(Object.keys(atlas).length >= 241,
+    `expected >= 241 atlas territories, got ${Object.keys(atlas).length}`);
 });
 
 test('exposes the constants the UI reads on window.__PR', () => {

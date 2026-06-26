@@ -237,7 +237,12 @@ function useForceSim(graph, width, height, positionsRef, nodeElRefs, linkElRefs)
   // Create-or-update the simulation. Uses the same instance across rebuilds
   // so positions/velocities survive incremental data changes.
   __gEff(() => {
-    if (!graph.nodes.length || !window.d3 || !width || !height) return;
+    if (!graph.nodes.length || !window.d3 || !width || !height) {
+      // Stop any running simulation so it doesn't keep ticking on stale nodes
+      // (~2 s of wasted rAF callbacks) while the empty-state placeholder shows.
+      simRef.current?.stop();
+      return;
+    }
     const d3 = window.d3;
     const cx = width / 2, cy = height / 2;
 
@@ -606,12 +611,17 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
       if (!adj.has(a)) adj.set(a, []);
       adj.get(a).push({ to: b, kind, family });
     };
+    // Gate adjacency on the rail-filtered `people` set, not the full byId map.
+    // Using byId.has() would allow filtered-out figures (e.g., a non-Greek deity
+    // when the tradition rail is set to 'Greek') to appear as BFS intermediaries
+    // — visible in the path card but absent from the SVG graph nodes.
+    const inView = new Set(people.map(p => p.id));
     for (const p of people) {
       for (const pid of (p.parentIds || [])) {
-        if (byId.has(pid)) { add(p.id, pid, 'parent', 'Lineage'); add(pid, p.id, 'parent', 'Lineage'); }
+        if (inView.has(pid)) { add(p.id, pid, 'parent', 'Lineage'); add(pid, p.id, 'parent', 'Lineage'); }
       }
       for (const r of (p.relations || [])) {
-        if (!r.personId || !byId.has(r.personId)) continue;
+        if (!r.personId || !inView.has(r.personId)) continue;
         const fam = window.relationFamily(r.kind);
         add(p.id, r.personId, r.kind, fam);
         add(r.personId, p.id, r.kind, fam);

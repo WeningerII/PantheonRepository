@@ -141,7 +141,7 @@ function Browse({ filters, selection, onOpen }) {
   const stableHover = __bMemo(() => (idx) => {
     // Keyboard navigation owns the cursor for a beat after each keypress —
     // ignore the mouseenters produced by rows sliding under a parked pointer.
-    if (Date.now() - (window.__kbNavTs || 0) < 250) return;
+    if (Date.now() - (window.__kbNavTs || 0) < 400) return;
     onHoverRef.current && onHoverRef.current(idx);
   }, []);
 
