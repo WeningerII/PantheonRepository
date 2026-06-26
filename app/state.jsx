@@ -192,7 +192,7 @@ const ERA_BANDS = [
   { max: -2000, label: '3000–2000 BCE' },
   { max: -1000, label: '2000–1000 BCE' },
   { max:  -500, label: '1000–500 BCE' },
-  { max:     0, label: '500–1 BCE' },
+  { max:    -1, label: '500–1 BCE' },
   { max:   500, label: '1–500 CE' },
   { max:  1000, label: '500–1000 CE' },
   { max:  1500, label: '1000–1500 CE' },
@@ -643,7 +643,11 @@ function useSelection(filtered) {
   const [selectedId, setSelectedId] = useState(null);
   const [cursorIdx, setCursorIdx] = useState(0);
 
-  // Keep cursor in bounds when filter changes
+  // Reset cursor to the top whenever the filtered list changes content (filter
+  // or sort changed), so the keyboard highlight doesn't silently drift to a
+  // semantically unrelated row. A separate effect handles out-of-bounds clamping
+  // when the list shrinks while the cursor was already past a position.
+  useEffect(() => { setCursorIdx(0); }, [filtered]);
   useEffect(() => {
     if (cursorIdx >= filtered.length) setCursorIdx(Math.max(0, filtered.length - 1));
   }, [filtered.length, cursorIdx]);

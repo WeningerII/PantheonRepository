@@ -564,4 +564,55 @@ describe('app renders in a browser-like environment', () => {
       `after expanding a wide row the focus card is still at scrollLeft=0 (effect did not fire)`);
     await app.clickButton('Browse');
   });
+
+  test('eraBandForYear(0) returns the 1–500 CE band, not 500–1 BCE', () => {
+    // Regression: ERA_BANDS used max:0 for the BCE band, so year 0 fell into
+    // '500–1 BCE'. Year 0 (the turn of the era) should land in '1–500 CE'.
+    assert.strictEqual(app.window.eraBandForYear(0), '1–500 CE');
+    assert.strictEqual(app.window.eraBandForYear(-1), '500–1 BCE');
+    assert.strictEqual(app.window.eraBandForYear(1), '1–500 CE');
+  });
+
+  test('cursorIdx resets to 0 when the filter list changes content', async () => {
+    // Regression: useSelection only clamped the cursor when filtered.length
+    // changed, so switching from one tradition (100 rows) to another same-size
+    // tradition left the cursor at an arbitrary position in the new list.
+    await app.clickButton('Browse');
+    // Drive the cursor to position 3 via keyboard.
+    await app.act(async () => { app.key('j'); app.key('j'); app.key('j'); });
+    await app.flush();
+    // Count only data rows (not group headers) to find the cursor position.
+    const getCursorDataIdx = () =>
+      [...app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)')]
+        .findIndex(r => r.classList.contains('cursor'));
+    assert.ok(getCursorDataIdx() > 0, 'expected cursor to advance past row 0');
+    // Switch to Norse filter — changes filtered content, cursor should reset.
+    const rail = [...app.document.querySelectorAll('.rail-row-trad')]
+      .find((r) => r.textContent.includes('Norse'));
+    assert.ok(rail, 'Norse tradition not in rail');
+    await app.act(async () => { rail.click(); });
+    await app.flush();
+    assert.strictEqual(getCursorDataIdx(), 0, 'cursor did not reset to 0 after filter change');
+    // Clear filter.
+    await app.act(async () => { rail.click(); });
+    await app.flush();
+  });
+
+  test('cursorIdx resets to 0 when switching views', async () => {
+    // Regression: changeView() and applyHash() set selectedId to null but
+    // did not reset cursorIdx, so returning to Browse left the highlight
+    // at a stale position from a previous session.
+    await app.clickButton('Browse');
+    await app.act(async () => { app.key('j'); app.key('j'); });
+    await app.flush();
+    const getCursorDataIdx = () =>
+      [...app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)')]
+        .findIndex(r => r.classList.contains('cursor'));
+    assert.ok(getCursorDataIdx() > 0, 'expected cursor to advance');
+    await app.clickButton('Graph');
+    await app.flush();
+    await app.clickButton('Browse');
+    await app.flush();
+    assert.strictEqual(getCursorDataIdx(), 0, 'cursor did not reset to 0 after view switch');
+  });
 });

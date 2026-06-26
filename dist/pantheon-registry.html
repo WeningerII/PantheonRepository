@@ -438681,7 +438681,7 @@ const ERA_BANDS = [{
   max: -500,
   label: '1000–500 BCE'
 }, {
-  max: 0,
+  max: -1,
   label: '500–1 BCE'
 }, {
   max: 500,
@@ -439165,7 +439165,13 @@ function useSelection(filtered) {
   const [selectedId, setSelectedId] = useState(null);
   const [cursorIdx, setCursorIdx] = useState(0);
 
-  // Keep cursor in bounds when filter changes
+  // Reset cursor to the top whenever the filtered list changes content (filter
+  // or sort changed), so the keyboard highlight doesn't silently drift to a
+  // semantically unrelated row. A separate effect handles out-of-bounds clamping
+  // when the list shrinks while the cursor was already past a position.
+  useEffect(() => {
+    setCursorIdx(0);
+  }, [filtered]);
   useEffect(() => {
     if (cursorIdx >= filtered.length) setCursorIdx(Math.max(0, filtered.length - 1));
   }, [filtered.length, cursorIdx]);
@@ -445597,6 +445603,7 @@ function Shell() {
     // hash instead of leaving a panel stuck open over a URL that no longer
     // describes it.
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
     setAtlasFocus(null);
     setSelectedItemId(null);
@@ -445758,6 +445765,7 @@ function Shell() {
   // a bare #/<view> — mirroring applyHash's mutual-exclusion contract.
   const changeView = __sCb(v => {
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
     setAtlasFocus(null);
     setSelectedItemId(null);

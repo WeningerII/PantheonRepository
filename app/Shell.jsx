@@ -266,6 +266,7 @@ function Shell() {
     // hash instead of leaving a panel stuck open over a URL that no longer
     // describes it.
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
     setAtlasFocus(null);
     setSelectedItemId(null);
@@ -417,6 +418,7 @@ function Shell() {
   // a bare #/<view> — mirroring applyHash's mutual-exclusion contract.
   const changeView = __sCb((v) => {
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
     setAtlasFocus(null);
     setSelectedItemId(null);
