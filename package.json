@@ -2,7 +2,26 @@
   "name": "pantheon-registry",
   "private": true,
   "version": "1.0.0",
-  "description": "Multi-tradition registry of mythological and historical figures — 1,800+ entries across 230+ traditions.",
+  "description": "Multi-tradition registry of mythological and historical figures — 2,700+ entries across 240+ traditions.",
+  "keywords": [
+    "mythology",
+    "pantheon",
+    "comparative-mythology",
+    "genealogy",
+    "react",
+    "d3",
+    "data-visualization",
+    "single-page-app"
+  ],
+  "homepage": "https://weningerii.github.io/PantheonRepository/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WeningerII/PantheonRepository.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WeningerII/PantheonRepository/issues"
+  },
+  "author": "WeningerII <weningerii@gmail.com>",
   "scripts": {
     "build": "python3 build.py",
     "dev": "python3 -m http.server 8000",

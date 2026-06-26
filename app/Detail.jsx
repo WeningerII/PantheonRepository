@@ -465,8 +465,9 @@ function Chapter({ label }) {
 
 // Iconography — the figure's visual attributes: emblems/objects they bear,
 // their sacred animals and plants. Each item is { id, term?, notes?, sources }.
-// (Authored for 240 figures but never rendered until now — Zeus's thunderbolt,
-// eagle, and oak; Apollo's lyre, silver bow, and laurel.)
+// (Authored across the deity/demigod tier but never rendered until the
+// iconography section was added — Zeus's thunderbolt, eagle, and oak;
+// Apollo's lyre, silver bow, and laurel.)
 function IconographyBlock({ entry }) {
   const ico = entry.iconography;
   if (!ico) return null;

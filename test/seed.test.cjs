@@ -45,7 +45,7 @@ test('seeds the full figure corpus (growing)', () => {
   // assert a floor rather than an exact count.
   // (1,851 minus the two absorbed duplicate entities — Tyche and the Erinyes
   // each existed twice; wave 7 merged them.)
-  assert.ok(Object.keys(people).length >= 1845, `expected >= 1845 figures, got ${Object.keys(people).length}`);
+  assert.ok(Object.keys(people).length >= 2700, `expected >= 2700 figures, got ${Object.keys(people).length}`);
 });
 
 test('seeds 238 atlas territories (every tradition mapped)', () => {
@@ -419,7 +419,7 @@ test('seeds the cited Thor figure with Mjǫllnir in his material culture', () =>
 test('exposes the item registry on window.__PR.items', () => {
   const items = ctx.window.__PR.items;
   assert.ok(items && typeof items === 'object', '__PR.items not exposed');
-  assert.ok(Object.keys(items).length >= 1240, `expected the full object corpus, got ${Object.keys(items).length}`);
+  assert.ok(Object.keys(items).length >= 2000, `expected the full object corpus, got ${Object.keys(items).length}`);
   // Every materialCulture object becomes an item with at least one holder.
   for (const it of Object.values(items)) {
     assert.strictEqual(typeof it.id, 'string', 'item missing id');
@@ -442,7 +442,7 @@ test('Mjǫllnir carries its multi-script names (incl. the runic form) and maker'
 test('every item in the registry carries cited lore and resolvable custody', () => {
   const items = ctx.window.__PR.items;
   const ids = Object.keys(items);
-  assert.ok(ids.length >= 1240, `expected the full object corpus, got ${ids.length}`);
+  assert.ok(ids.length >= 2000, `expected the full object corpus, got ${ids.length}`);
   for (const it of Object.values(items)) {
     assert.ok(it.lore && it.lore.length > 20, `item ${it.id} is missing authored lore`);
     assert.ok(it.names.length >= 1 && it.names[0].value, `item ${it.id} is missing a name`);

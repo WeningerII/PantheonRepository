@@ -138144,85 +138144,6 @@ const NEW_FIGURES = [
   ]
  },
  {
-  "id": "hindu_ganesha_consort_placeholder_removed",
-  "name": {
-   "primary": "Sheshanaga",
-   "alt": [
-    "Shesha",
-    "Ananta"
-   ],
-   "transliterations": {
-    "devanagari": "शेषनाग"
-   }
-  },
-  "type": "deity",
-  "origin": "canon",
-  "tradition": "Hindu",
-  "primaryTradition": "Hindu",
-  "sex": "male",
-  "vitalStatus": null,
-  "parentIds": [
-   "hindu_kashyapa"
-  ],
-  "temporal": {
-   "era": "primordial"
-  },
-  "domains": [
-   {
-    "sphereId": "cosmic-support",
-    "contextTag": "lifelong",
-    "term": {
-     "value": "आधार",
-     "script": "Devanagari",
-     "rom": "ādhāra"
-    },
-    "sources": [
-     {
-      "kind": "primary",
-      "reference": "Bhagavata Purana 5.25"
-     }
-    ]
-   }
-  ],
-  "faculties": [
-   {
-    "id": "support-the-worlds",
-    "name": "Hold up all the worlds upon his hoods",
-    "term": {
-     "value": "लोकधारण",
-     "script": "Devanagari",
-     "rom": "loka-dhāraṇa"
-    },
-    "inheritability": "none",
-    "notes": "The endless serpent bearing the earth and Vishnu's couch",
-    "sources": [
-     {
-      "kind": "primary",
-      "reference": "Bhagavata Purana 5.25"
-     }
-    ]
-   }
-  ],
-  "materialCulture": [],
-  "sources": [
-   {
-    "claim": "existence",
-    "citations": [
-     {
-      "kind": "primary",
-      "reference": "Mahabharata, Adi Parva"
-     },
-     {
-      "kind": "primary",
-      "reference": "Bhagavata Purana"
-     }
-    ],
-    "weight": "primary"
-   }
-  ],
-  "notes": "The cosmic serpent Ananta-Shesha, couch of Vishnu and bearer of the worlds"
- },
- {
   "id": "hindu_garuda",
   "name": {
    "primary": "Garuda",
@@ -141896,6 +141817,85 @@ const NEW_FIGURES = [
     "notes": "Half-brother of Bharata, whose loyalist he was."
    }
   ]
+ },
+ {
+  "id": "hindu_shesha",
+  "name": {
+   "primary": "Sheshanaga",
+   "alt": [
+    "Shesha",
+    "Ananta"
+   ],
+   "transliterations": {
+    "devanagari": "शेषनाग"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hindu",
+  "primaryTradition": "Hindu",
+  "sex": "male",
+  "vitalStatus": null,
+  "parentIds": [
+   "hindu_kashyapa"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "cosmic-support",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "आधार",
+     "script": "Devanagari",
+     "rom": "ādhāra"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhagavata Purana 5.25"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "support-the-worlds",
+    "name": "Hold up all the worlds upon his hoods",
+    "term": {
+     "value": "लोकधारण",
+     "script": "Devanagari",
+     "rom": "loka-dhāraṇa"
+    },
+    "inheritability": "none",
+    "notes": "The endless serpent bearing the earth and Vishnu's couch",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhagavata Purana 5.25"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva"
+     },
+     {
+      "kind": "primary",
+      "reference": "Bhagavata Purana"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The cosmic serpent Ananta-Shesha, couch of Vishnu and bearer of the worlds"
  },
  {
   "id": "hindu_shiva",
@@ -304736,7 +304736,7 @@ const CULT_SITES = {
       ]
     }
   ],
-  "hindu_ganesha_consort_placeholder_removed": [
+  "hindu_shesha": [
     {
       "placeName": "Sri Ananta Padmanabhaswamy Temple, Thiruvananthapuram, Kerala (Vishnu on Ananta-Shesha)",
       "type": "temple",
@@ -317821,7 +317821,7 @@ const PRIESTHOODS = {
       ]
     }
   ],
-  "hindu_ganesha_consort_placeholder_removed": [
+  "hindu_shesha": [
     {
       "title": "Nambudiri-tradition priests of Śrī Anantapadmanābha (Viṣṇu reclining on Śeṣa) at Thiruvananthapuram",
       "type": "temple-priest",
@@ -340745,7 +340745,7 @@ const ETYMOLOGY = {
       }
     ]
   },
-  "hindu_ganesha_consort_placeholder_removed": {
+  "hindu_shesha": {
     "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
     "etymology": "Sanskrit शेष (Śeṣa), the cosmic serpent, means \"remainder, residue, that which remains\" (from śiṣ- \"to leave (over), remain\"), denoting the divine remnant that endures after each cosmic dissolution. His alt-name अनन्त (Ananta) is an-anta \"endless, infinite\" (privative a(n)- + anta \"end\"). Mayrhofer derives śiṣ- and ánta-. Monier-Williams glosses Śeṣa \"remainder; the serpent Ananta, couch of Viṣṇu.\"",
     "sources": [
@@ -351342,7 +351342,7 @@ const CULT_PRACTICES_X = {
       ]
     }
   ],
-  "hindu_ganesha_consort_placeholder_removed": [
+  "hindu_shesha": [
     {
       "name": "Nāga Pañcamī (Ananta-Śeṣa)",
       "term": {
@@ -358857,7 +358857,7 @@ const EPITHETS_X = {
       ]
     }
   ],
-  "hindu_ganesha_consort_placeholder_removed": [
+  "hindu_shesha": [
     {
       "original": "अनन्त",
       "scriptId": "devanagari",
@@ -364191,7 +364191,7 @@ const ICONOGRAPHY_X = {
       }
     ]
   },
-  "hindu_ganesha_consort_placeholder_removed": {
+  "hindu_shesha": {
     "attributes": [
       {
         "id": "multiple-hoods",
