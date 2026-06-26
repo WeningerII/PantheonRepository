@@ -863,7 +863,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
   const labelDegreeThreshold = __gMemo(() => {
     if (labelMode !== 'top-degree') return -1;
     const degs = graph.nodes.map(n => n.degree).sort((a, b) => b - a);
-    return degs[Math.min(degs.length - 1, Math.floor(degs.length * 0.25))] || 0;
+    return degs[Math.ceil(degs.length * 0.25) - 1] || 0;
   }, [labelMode, graph.nodes]);
   const shouldShowLabel = (n) => {
     if (n.id === hoverNode) return true;
@@ -970,7 +970,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
         <div className="graph-path-bar">
           <span className="graph-path-step">Path:</span>
           <button
-            className={'graph-path-slot ' + (pathStart ? 'set' : 'empty') + (pathStart && !pathEnd ? ' active' : '')}
+            className={'graph-path-slot ' + (pathStart ? 'set' : 'empty') + (!pathStart || pathEnd ? ' active' : '')}
             onClick={() => setPathStart(null)}
           >
             <span className="slot-label">From</span>

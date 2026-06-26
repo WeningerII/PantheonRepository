@@ -444001,7 +444001,7 @@ function Graph({
   const labelDegreeThreshold = __gMemo(() => {
     if (labelMode !== 'top-degree') return -1;
     const degs = graph.nodes.map(n => n.degree).sort((a, b) => b - a);
-    return degs[Math.min(degs.length - 1, Math.floor(degs.length * 0.25))] || 0;
+    return degs[Math.ceil(degs.length * 0.25) - 1] || 0;
   }, [labelMode, graph.nodes]);
   const shouldShowLabel = n => {
     if (n.id === hoverNode) return true;
@@ -444086,7 +444086,7 @@ function Graph({
   }, /*#__PURE__*/React.createElement("span", {
     className: "graph-path-step"
   }, "Path:"), /*#__PURE__*/React.createElement("button", {
-    className: 'graph-path-slot ' + (pathStart ? 'set' : 'empty') + (pathStart && !pathEnd ? ' active' : ''),
+    className: 'graph-path-slot ' + (pathStart ? 'set' : 'empty') + (!pathStart || pathEnd ? ' active' : ''),
     onClick: () => setPathStart(null)
   }, /*#__PURE__*/React.createElement("span", {
     className: "slot-label"
