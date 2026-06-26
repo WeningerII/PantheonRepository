@@ -443962,9 +443962,11 @@ function Graph({
     }
     if (hoverNode) return sId === hoverNode || tId === hoverNode ? 1 : 0.10;
     if (!focusId) return 1;
-    const sd = depthById.get(sId) ?? 99;
-    const td = depthById.get(tId) ?? 99;
-    const min = Math.min(sd, td);
+    const sd = depthById.get(sId);
+    const td = depthById.get(tId);
+    // focusId set but out of scope: all depths null; render edges at full opacity
+    if (sd == null && td == null) return 1;
+    const min = Math.min(sd ?? 99, td ?? 99);
     if (min === 0) return 1;
     if (min === 1) return 0.55;
     return 0.10;
