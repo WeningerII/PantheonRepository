@@ -152,3 +152,13 @@ dist/
 - Python 3 (for the dev server and the build script).
 - Node.js + npm (for `build.py`'s Babel transform, `npm test`, and the
   generator scripts).
+
+## License
+
+The **source code** is licensed under the [MIT License](LICENSE).
+
+The **figure data** — the seeded corpus in `app/data.js`, the cited research in
+`data-sources/`, and the exported data tiers in `dist/data/` — is licensed under
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/):
+reuse it freely with attribution. Each figure additionally cites its underlying
+primary and secondary scholarly sources.
