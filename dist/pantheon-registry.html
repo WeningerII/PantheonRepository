@@ -438628,7 +438628,7 @@ function loadAtlas() {
 function eraStart(tradition, era) {
   const d = window.__PR?.ERA_DATES?.[tradition]?.[era];
   if (!d) return null;
-  return d.textualStart ?? d.mythicStart ?? null;
+  return d.mythicStart ?? d.textualStart ?? null;
 }
 
 // Era keys are hyphen-cased slugs: `mu-allaqat-poetic`, `late-bronze-age`,
@@ -439051,9 +439051,11 @@ const SORTS = {
     cmp: (a, b) => {
       const ya = entryAnchorYear(a);
       const yb = entryAnchorYear(b);
-      if (ya == null && yb == null) return displayName(a).localeCompare(displayName(b));
-      if (ya == null) return 1;
-      if (yb == null) return -1;
+      const yaNull = ya == null || !isFinite(ya);
+      const ybNull = yb == null || !isFinite(yb);
+      if (yaNull && ybNull) return displayName(a).localeCompare(displayName(b));
+      if (yaNull) return 1;
+      if (ybNull) return -1;
       return ya - yb || displayName(a).localeCompare(displayName(b));
     }
   },
@@ -442243,8 +442245,8 @@ function powerBadge(p) {
     label: `${p.inheritorCount} inherit`,
     cls: 'power-badge-descent'
   };
-  if (p.holderCount > 1) return {
-    label: `${p.holderCount} bearers`,
+  if (p.figureCount > 1) return {
+    label: `${p.figureCount} bearers`,
     cls: 'power-badge-multi'
   };
   return null;
@@ -442420,11 +442422,12 @@ function PowerBearers({
 }) {
   const inReg = (holders || []).filter(h => byId.get(h.personId));
   if (!inReg.length) return null;
+  const uniqueFigures = new Set(inReg.map(h => h.personId)).size;
   return /*#__PURE__*/React.createElement("div", {
     className: "section section-power-bearers"
   }, /*#__PURE__*/React.createElement("h2", null, "Wielded by ", /*#__PURE__*/React.createElement("span", {
     className: "count"
-  }, inReg.length)), /*#__PURE__*/React.createElement("div", {
+  }, uniqueFigures)), /*#__PURE__*/React.createElement("div", {
     className: "power-bearers"
   }, inReg.map((h, i) => {
     const p = byId.get(h.personId);
@@ -442676,8 +442679,8 @@ function domGroupKey(name) {
   return /[A-Z]/.test(c) ? c : '#';
 }
 function domainBadge(d) {
-  if (d.holderCount > 1) return {
-    label: `${d.holderCount} figures`,
+  if (d.figureCount > 1) return {
+    label: `${d.figureCount} figures`,
     cls: 'domain-badge-multi'
   };
   return null;
@@ -442765,7 +442768,7 @@ function Domains({
     for (const [, list] of groups) for (const d of list) ids.push(d.id);
     onVisibleOrder(ids);
   }, [groups, onVisibleOrder]);
-  const shared = __dmMemo(() => domains.filter(d => d.holderCount > 1).length, [domains]);
+  const shared = __dmMemo(() => domains.filter(d => d.figureCount > 1).length, [domains]);
   const toggleCtx = v => setCtx(prev => {
     const n = new Set(prev);
     n.has(v) ? n.delete(v) : n.add(v);
@@ -442843,11 +442846,12 @@ function DomainGovernors({
 }) {
   const inReg = (holders || []).filter(h => byId.get(h.personId));
   if (!inReg.length) return null;
+  const uniqueFigures = new Set(inReg.map(h => h.personId)).size;
   return /*#__PURE__*/React.createElement("div", {
     className: "section section-domain-govs"
   }, /*#__PURE__*/React.createElement("h2", null, "Governed by ", /*#__PURE__*/React.createElement("span", {
     className: "count"
-  }, inReg.length)), /*#__PURE__*/React.createElement("div", {
+  }, uniqueFigures)), /*#__PURE__*/React.createElement("div", {
     className: "domain-govs"
   }, inReg.map((h, i) => {
     const p = byId.get(h.personId);
@@ -442995,7 +442999,7 @@ function DomainDetail({
     className: "eyebrow"
   }, /*#__PURE__*/React.createElement("span", {
     className: "eyebrow-tier"
-  }, "Domain"), d.holderCount > 1 && /*#__PURE__*/React.createElement("span", null, d.holderCount, " figures")), /*#__PURE__*/React.createElement("h1", null, d.displayName), d.term && d.term.value && /*#__PURE__*/React.createElement("div", {
+  }, "Domain"), d.figureCount > 1 && /*#__PURE__*/React.createElement("span", null, d.figureCount, " figures")), /*#__PURE__*/React.createElement("h1", null, d.displayName), d.term && d.term.value && /*#__PURE__*/React.createElement("div", {
     className: "power-term"
   }, /*#__PURE__*/React.createElement("span", {
     className: 'power-term-native' + (domIsGlyph(d.term.script) ? ' glyph' : '')
@@ -443839,9 +443843,11 @@ function Graph({
 
   // Path mode forces the full graph view so endpoints + intermediate nodes
   // always exist in the rendered set, no matter what relation family the
-  // user was browsing when they toggled path on.
+  // user was browsing when they toggled path on. Also clear focusId so the
+  // 2-hop subgraph restriction doesn't hide intermediate path nodes.
   __gEff(() => {
     if (pathMode && mode !== 'all') setMode('all');
+    if (pathMode && focusId) setFocusId(null);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathMode]);
   __gEff(() => {
@@ -445816,7 +445822,7 @@ function Shell() {
   const itemOrderRef = __sRef(null);
   const moveItem = __sCb(delta => {
     if (!selectedItemId) return;
-    const order = itemOrderRef.current && itemOrderRef.current.length ? itemOrderRef.current : itemList.map(it => it.id);
+    const order = itemOrderRef.current !== null ? itemOrderRef.current : itemList.map(it => it.id);
     const idx = order.indexOf(selectedItemId);
     if (idx < 0) return;
     const nextId = order[idx + delta];
@@ -445828,7 +445834,7 @@ function Shell() {
   const powerOrderRef = __sRef(null);
   const movePower = __sCb(delta => {
     if (!selectedPowerId) return;
-    const order = powerOrderRef.current && powerOrderRef.current.length ? powerOrderRef.current : powerList.map(p => p.id);
+    const order = powerOrderRef.current !== null ? powerOrderRef.current : powerList.map(p => p.id);
     const idx = order.indexOf(selectedPowerId);
     if (idx < 0) return;
     const nextId = order[idx + delta];
@@ -445837,7 +445843,7 @@ function Shell() {
   const domainOrderRef = __sRef(null);
   const moveDomain = __sCb(delta => {
     if (!selectedDomainId) return;
-    const order = domainOrderRef.current && domainOrderRef.current.length ? domainOrderRef.current : domainList.map(d => d.id);
+    const order = domainOrderRef.current !== null ? domainOrderRef.current : domainList.map(d => d.id);
     const idx = order.indexOf(selectedDomainId);
     if (idx < 0) return;
     const nextId = order[idx + delta];
@@ -445845,17 +445851,17 @@ function Shell() {
   }, [selectedDomainId, domainList]);
   const selIdxInItemOrder = __sMemo(() => {
     if (!selectedItemId) return -1;
-    const order = itemOrderRef.current?.length ? itemOrderRef.current : itemList.map(it => it.id);
+    const order = itemOrderRef.current !== null ? itemOrderRef.current : itemList.map(it => it.id);
     return order.indexOf(selectedItemId);
   }, [selectedItemId, itemList, itemOrderVer]);
   const selIdxInPowerOrder = __sMemo(() => {
     if (!selectedPowerId) return -1;
-    const order = powerOrderRef.current?.length ? powerOrderRef.current : powerList.map(p => p.id);
+    const order = powerOrderRef.current !== null ? powerOrderRef.current : powerList.map(p => p.id);
     return order.indexOf(selectedPowerId);
   }, [selectedPowerId, powerList, powerOrderVer]);
   const selIdxInDomainOrder = __sMemo(() => {
     if (!selectedDomainId) return -1;
-    const order = domainOrderRef.current?.length ? domainOrderRef.current : domainList.map(d => d.id);
+    const order = domainOrderRef.current !== null ? domainOrderRef.current : domainList.map(d => d.id);
     return order.indexOf(selectedDomainId);
   }, [selectedDomainId, domainList, domainOrderVer]);
 

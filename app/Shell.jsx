@@ -386,7 +386,7 @@ function Shell() {
   const itemOrderRef = __sRef(null);
   const moveItem = __sCb((delta) => {
     if (!selectedItemId) return;
-    const order = (itemOrderRef.current && itemOrderRef.current.length)
+    const order = itemOrderRef.current !== null
       ? itemOrderRef.current
       : itemList.map((it) => it.id);
     const idx = order.indexOf(selectedItemId);
@@ -400,7 +400,7 @@ function Shell() {
   const powerOrderRef = __sRef(null);
   const movePower = __sCb((delta) => {
     if (!selectedPowerId) return;
-    const order = (powerOrderRef.current && powerOrderRef.current.length)
+    const order = powerOrderRef.current !== null
       ? powerOrderRef.current : powerList.map((p) => p.id);
     const idx = order.indexOf(selectedPowerId);
     if (idx < 0) return;
@@ -410,7 +410,7 @@ function Shell() {
   const domainOrderRef = __sRef(null);
   const moveDomain = __sCb((delta) => {
     if (!selectedDomainId) return;
-    const order = (domainOrderRef.current && domainOrderRef.current.length)
+    const order = domainOrderRef.current !== null
       ? domainOrderRef.current : domainList.map((d) => d.id);
     const idx = order.indexOf(selectedDomainId);
     if (idx < 0) return;
@@ -420,19 +420,19 @@ function Shell() {
 
   const selIdxInItemOrder = __sMemo(() => {
     if (!selectedItemId) return -1;
-    const order = itemOrderRef.current?.length ? itemOrderRef.current : itemList.map(it => it.id);
+    const order = itemOrderRef.current !== null ? itemOrderRef.current : itemList.map(it => it.id);
     return order.indexOf(selectedItemId);
   }, [selectedItemId, itemList, itemOrderVer]);
 
   const selIdxInPowerOrder = __sMemo(() => {
     if (!selectedPowerId) return -1;
-    const order = powerOrderRef.current?.length ? powerOrderRef.current : powerList.map(p => p.id);
+    const order = powerOrderRef.current !== null ? powerOrderRef.current : powerList.map(p => p.id);
     return order.indexOf(selectedPowerId);
   }, [selectedPowerId, powerList, powerOrderVer]);
 
   const selIdxInDomainOrder = __sMemo(() => {
     if (!selectedDomainId) return -1;
-    const order = domainOrderRef.current?.length ? domainOrderRef.current : domainList.map(d => d.id);
+    const order = domainOrderRef.current !== null ? domainOrderRef.current : domainList.map(d => d.id);
     return order.indexOf(selectedDomainId);
   }, [selectedDomainId, domainList, domainOrderVer]);
 

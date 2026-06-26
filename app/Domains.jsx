@@ -19,7 +19,7 @@ function domGroupKey(name) {
 }
 
 function domainBadge(d) {
-  if (d.holderCount > 1) return { label: `${d.holderCount} figures`, cls: 'domain-badge-multi' };
+  if (d.figureCount > 1) return { label: `${d.figureCount} figures`, cls: 'domain-badge-multi' };
   return null;
 }
 
@@ -95,7 +95,7 @@ function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisib
     onVisibleOrder(ids);
   }, [groups, onVisibleOrder]);
 
-  const shared = __dmMemo(() => domains.filter((d) => d.holderCount > 1).length, [domains]);
+  const shared = __dmMemo(() => domains.filter((d) => d.figureCount > 1).length, [domains]);
   const toggleCtx = (v) => setCtx((prev) => {
     const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n;
   });
@@ -175,9 +175,10 @@ function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisib
 function DomainGovernors({ holders, byId, onOpenFigure }) {
   const inReg = (holders || []).filter((h) => byId.get(h.personId));
   if (!inReg.length) return null;
+  const uniqueFigures = new Set(inReg.map(h => h.personId)).size;
   return (
     <div className="section section-domain-govs">
-      <h2>Governed by <span className="count">{inReg.length}</span></h2>
+      <h2>Governed by <span className="count">{uniqueFigures}</span></h2>
       <div className="domain-govs">
         {inReg.map((h, i) => {
           const p = byId.get(h.personId);
@@ -283,7 +284,7 @@ function DomainDetail({ domain, byId, onClose, onPrev, onNext, canPrev, canNext,
           <div className="detail-header">
             <div className="eyebrow">
               <span className="eyebrow-tier">Domain</span>
-              {d.holderCount > 1 && <span>{d.holderCount} figures</span>}
+              {d.figureCount > 1 && <span>{d.figureCount} figures</span>}
             </div>
             <h1>{d.displayName}</h1>
             {d.term && d.term.value && (

@@ -148,7 +148,7 @@ function loadAtlas() {
 function eraStart(tradition, era) {
   const d = window.__PR?.ERA_DATES?.[tradition]?.[era];
   if (!d) return null;
-  return d.textualStart ?? d.mythicStart ?? null;
+  return d.mythicStart ?? d.textualStart ?? null;
 }
 
 // Era keys are hyphen-cased slugs: `mu-allaqat-poetic`, `late-bronze-age`,
@@ -538,9 +538,11 @@ const SORTS = {
   tradition: { label: 'Tradition',    short: 'Tradition', cmp: (a, b) => (a.tradition || '').localeCompare(b.tradition || '') || displayName(a).localeCompare(displayName(b)) },
   era:       { label: 'Era (oldest)', short: 'Era',       cmp: (a, b) => {
     const ya = entryAnchorYear(a); const yb = entryAnchorYear(b);
-    if (ya == null && yb == null) return displayName(a).localeCompare(displayName(b));
-    if (ya == null) return 1;
-    if (yb == null) return -1;
+    const yaNull = ya == null || !isFinite(ya);
+    const ybNull = yb == null || !isFinite(yb);
+    if (yaNull && ybNull) return displayName(a).localeCompare(displayName(b));
+    if (yaNull) return 1;
+    if (ybNull) return -1;
     return (ya - yb) || displayName(a).localeCompare(displayName(b));
   }},
   type:      { label: 'Type',         short: 'Type',      cmp: (a, b) => (TYPE_TIER[a.type]?.order ?? 99) - (TYPE_TIER[b.type]?.order ?? 99) || displayName(a).localeCompare(displayName(b)) },

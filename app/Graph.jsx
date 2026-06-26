@@ -708,9 +708,11 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
 
   // Path mode forces the full graph view so endpoints + intermediate nodes
   // always exist in the rendered set, no matter what relation family the
-  // user was browsing when they toggled path on.
+  // user was browsing when they toggled path on. Also clear focusId so the
+  // 2-hop subgraph restriction doesn't hide intermediate path nodes.
   __gEff(() => {
     if (pathMode && mode !== 'all') setMode('all');
+    if (pathMode && focusId) setFocusId(null);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathMode]);
 

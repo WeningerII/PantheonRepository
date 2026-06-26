@@ -25,7 +25,7 @@ function powGroupKey(name) {
 // Index-row badge — a traced descent beats a plain multi-bearer count.
 function powerBadge(p) {
   if (p.inheritorCount > 0) return { label: `${p.inheritorCount} inherit`, cls: 'power-badge-descent' };
-  if (p.holderCount > 1) return { label: `${p.holderCount} bearers`, cls: 'power-badge-multi' };
+  if (p.figureCount > 1) return { label: `${p.figureCount} bearers`, cls: 'power-badge-multi' };
   return null;
 }
 
@@ -185,9 +185,10 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
 function PowerBearers({ holders, byId, onOpenFigure }) {
   const inReg = (holders || []).filter((h) => byId.get(h.personId));
   if (!inReg.length) return null;
+  const uniqueFigures = new Set(inReg.map(h => h.personId)).size;
   return (
     <div className="section section-power-bearers">
-      <h2>Wielded by <span className="count">{inReg.length}</span></h2>
+      <h2>Wielded by <span className="count">{uniqueFigures}</span></h2>
       <div className="power-bearers">
         {inReg.map((h, i) => {
           const p = byId.get(h.personId);
