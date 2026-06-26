@@ -254,8 +254,8 @@ function parsePeriod(text, tradition) {
     const lo = Math.min(parseInt(m[1], 10), parseInt(m[2], 10));
     const hi = Math.max(parseInt(m[1], 10), parseInt(m[2], 10));
     const isBCE = m[3].startsWith('b');
-    if (isBCE) return { start: -hi * 100, end: -(lo - 1) * 100 };
-    return { start: (lo - 1) * 100, end: hi * 100 };
+    if (isBCE) return { start: -hi * 100, end: -(lo - 1) * 100 - 1 };
+    return { start: (lo - 1) * 100 + 1, end: hi * 100 };
   }
 
   // Qualified century: "early 19th c.", "mid 19th c.", "late 19th c.".
@@ -267,8 +267,8 @@ function parsePeriod(text, tradition) {
     const q = m[1];
     const c = parseInt(m[2], 10);
     const isBCE = (m[3] || '').startsWith('b');
-    const base = isBCE ? -(c) * 100 : (c - 1) * 100;
-    const top  = isBCE ? -(c - 1) * 100 : c * 100;
+    const base = isBCE ? -(c) * 100 : (c - 1) * 100 + 1;
+    const top  = isBCE ? -(c - 1) * 100 - 1 : c * 100;
     if (q === 'early') return { start: base,      end: base + 33 };
     if (q === 'mid')   return { start: base + 33, end: base + 66 };
     if (q === 'late' || q === 'peak') return { start: base + 66, end: top };
@@ -279,8 +279,8 @@ function parsePeriod(text, tradition) {
   if (m) {
     const c = parseInt(m[1], 10);
     const isBCE = m[2].startsWith('b');
-    if (isBCE) return { start: -c * 100, end: -(c - 1) * 100 };
-    return { start: (c - 1) * 100, end: c * 100 };
+    if (isBCE) return { start: -c * 100, end: -(c - 1) * 100 - 1 };
+    return { start: (c - 1) * 100 + 1, end: c * 100 };
   }
 
   // Plain BCE/CE single year: "1184 BCE", "c. 800 CE", "~1500 BCE", "1851 CE"

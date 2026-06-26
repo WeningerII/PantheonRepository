@@ -438756,10 +438756,10 @@ function parsePeriod(text, tradition) {
     const isBCE = m[3].startsWith('b');
     if (isBCE) return {
       start: -hi * 100,
-      end: -(lo - 1) * 100
+      end: -(lo - 1) * 100 - 1
     };
     return {
-      start: (lo - 1) * 100,
+      start: (lo - 1) * 100 + 1,
       end: hi * 100
     };
   }
@@ -438773,8 +438773,8 @@ function parsePeriod(text, tradition) {
     const q = m[1];
     const c = parseInt(m[2], 10);
     const isBCE = (m[3] || '').startsWith('b');
-    const base = isBCE ? -c * 100 : (c - 1) * 100;
-    const top = isBCE ? -(c - 1) * 100 : c * 100;
+    const base = isBCE ? -c * 100 : (c - 1) * 100 + 1;
+    const top = isBCE ? -(c - 1) * 100 - 1 : c * 100;
     if (q === 'early') return {
       start: base,
       end: base + 33
@@ -438796,10 +438796,10 @@ function parsePeriod(text, tradition) {
     const isBCE = m[2].startsWith('b');
     if (isBCE) return {
       start: -c * 100,
-      end: -(c - 1) * 100
+      end: -(c - 1) * 100 - 1
     };
     return {
-      start: (c - 1) * 100,
+      start: (c - 1) * 100 + 1,
       end: c * 100
     };
   }
