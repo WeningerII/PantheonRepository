@@ -445913,6 +445913,7 @@ function Shell() {
       }
       if (selection.selectedId) {
         selection.setSelectedId(null);
+        selection.setCursorIdx(0);
         return;
       }
       if (filters.query) {
@@ -446084,14 +446085,14 @@ function Shell() {
     onOpenDetail: tradition => {
       // "N figures →" click: drop into Browse with the tradition selected
       filters.setTraditions(new Set([tradition]));
-      setView('browse');
+      changeView('browse');
     }
   }), view === 'items' && /*#__PURE__*/React.createElement(window.Items, {
     items: visibleItems,
     total: itemList.length,
     byId: byId,
     selectedItemId: selectedItemId,
-    onOpenItem: id => setSelectedItemId(id),
+    onOpenItem: openItem,
     onVisibleOrder: ids => {
       itemOrderRef.current = ids;
     }
@@ -446128,7 +446129,11 @@ function Shell() {
       setGraphFocusId(entry.id);
       setView('graph');
       setAtlasFocus(null);
+      setSelectedItemId(null);
+      setSelectedPowerId(null);
+      setSelectedDomainId(null);
       selection.setSelectedId(null);
+      selection.setCursorIdx(0);
     }
   }), /*#__PURE__*/React.createElement(window.ItemDetail, {
     item: selectedItem,

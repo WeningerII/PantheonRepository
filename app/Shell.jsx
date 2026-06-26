@@ -502,7 +502,7 @@ function Shell() {
       if (selectedItemId) { setSelectedItemId(null); return; }
       if (selectedPowerId) { setSelectedPowerId(null); return; }
       if (selectedDomainId) { setSelectedDomainId(null); return; }
-      if (selection.selectedId) { selection.setSelectedId(null); return; }
+      if (selection.selectedId) { selection.setSelectedId(null); selection.setCursorIdx(0); return; }
       if (filters.query) { filters.setQuery(''); return; }
       return;
     }
@@ -624,7 +624,7 @@ function Shell() {
               onOpenDetail={(tradition) => {
                 // "N figures →" click: drop into Browse with the tradition selected
                 filters.setTraditions(new Set([tradition]));
-                setView('browse');
+                changeView('browse');
               }}
             />
           )}
@@ -634,7 +634,7 @@ function Shell() {
               total={itemList.length}
               byId={byId}
               selectedItemId={selectedItemId}
-              onOpenItem={(id) => setSelectedItemId(id)}
+              onOpenItem={openItem}
               onVisibleOrder={(ids) => { itemOrderRef.current = ids; }}
             />
           )}
@@ -680,7 +680,11 @@ function Shell() {
           setGraphFocusId(entry.id);
           setView('graph');
           setAtlasFocus(null);
+          setSelectedItemId(null);
+          setSelectedPowerId(null);
+          setSelectedDomainId(null);
           selection.setSelectedId(null);
+          selection.setCursorIdx(0);
         }}
       />
 
