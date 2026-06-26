@@ -628,7 +628,7 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
       }
     }
     return adj;
-  }, [people, byId, pathMode]);
+  }, [people, pathMode]);
 
   // BFS shortest path. Cap depth at 8 hops — the diameter of any reasonable
   // mythological graph is well below this; beyond it the network is so
@@ -760,7 +760,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
   useForceSim(graph, size.w, size.h, positionsRef, nodeElRefs, linkElRefs);
   const zoomRef = useZoomPan(svgRef, gRef, setZoomK, [graph, size.w, size.h]);
 
-  const { pathResult, pathNodeSet, pathEdgeSet } = usePathFind(people, byId, pathMode, pathStart, pathEnd);
+  const { pathResult, pathNodeSet, pathEdgeSet } = usePathFind(scopedPeople, byId, pathMode, pathStart, pathEnd);
 
   // Active edge families (for the legend — only show what's actually here).
   const activeFamilies = __gMemo(() => {

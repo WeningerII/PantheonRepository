@@ -196,9 +196,12 @@ function PowerBearers({ holders, byId, onOpenFigure }) {
               <window.TierIcon type={p.type} size={12} />
               <span className="power-bearer-name">{window.displayName(p)}</span>
               <span className="power-bearer-meta">{p.tradition}</span>
-              {h.inheritability && h.inheritability !== 'none' && (
-                <span className={'power-herit herit-' + h.inheritability}>{h.inheritability}</span>
-              )}
+              {h.inheritability && (() => {
+                const hb = powerHeritBucket(h.inheritability);
+                return hb !== 'none' && hb !== 'unspecified'
+                  ? <span className={'power-herit herit-' + hb}>{powerHeritLabel(hb)}</span>
+                  : null;
+              })()}
             </button>
           );
         })}
@@ -343,11 +346,12 @@ function PowerDetail({ power, byId, onClose, onPrev, onNext, onOpenFigure }) {
             <div className="eyebrow">
               <span className="eyebrow-tier">Power</span>
               {p.domainTag && <span>{humanizePow(p.domainTag)}</span>}
-              {p.inheritability && (
-                <span className={'power-herit herit-' + p.inheritability}>
-                  {p.inheritability === 'none' ? 'not heritable' : p.inheritability + ' heritable'}
-                </span>
-              )}
+              {p.inheritability && (() => {
+                const hb = powerHeritBucket(p.inheritability);
+                return hb !== 'unspecified'
+                  ? <span className={'power-herit herit-' + hb}>{powerHeritLabel(hb)}</span>
+                  : null;
+              })()}
             </div>
             <h1>{p.displayName}</h1>
             {p.term && p.term.value && (

@@ -175,8 +175,8 @@ function getEntryDates(entry) {
 
 function entryAnchorYear(entry) {
   const d = getEntryDates(entry);
-  if (d.textualStart != null) return d.textualStart;
   if (d.mythicStart != null)  return d.mythicStart;
+  if (d.textualStart != null) return d.textualStart;
   const t = entry?.temporal?.era;
   return eraStart(entry?.tradition, t);
 }
@@ -628,7 +628,7 @@ function useFilters(people) {
 
   const reset = useCallback(() => {
     setQuery(''); setTypes(new Set()); setOrigin('both');
-    setTraditions(new Set()); setSort('alpha');
+    setTraditions(new Set());
   }, []);
 
   return {
@@ -782,7 +782,7 @@ function buildPowerRegistry() {
     const rec = reg[id];
     rec.holderCount = rec.holders.length;
     rec.inheritorCount = rec.inheritors.length;
-    rec.figureCount = rec.holderCount;
+    rec.figureCount = rec.holderCount + rec.inheritorCount;
     rec.sources = dedupeSources(rec.sources);
     let best = null, bestN = -1;
     for (const k of Object.keys(rec.heritCounts)) if (rec.heritCounts[k] > bestN) { best = k; bestN = rec.heritCounts[k]; }
@@ -802,8 +802,9 @@ function buildDomainRegistry() {
   }));
   for (const pid of Object.keys(people)) {
     for (const d of (people[pid].domains || [])) {
-      if (!d || !d.sphereId) continue;
-      const rec = ensure(d.sphereId);
+      const sid = d.sphereId || d.id;
+      if (!d || !sid) continue;
+      const rec = ensure(sid);
       rec.holders.push({
         personId: pid, contextTag: d.contextTag || null,
         sources: d.sources || [], notes: d.notes || null, term: d.term || null,

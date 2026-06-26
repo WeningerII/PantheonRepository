@@ -123,13 +123,13 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
   const groups = __iMemo(() => {
     const byKind = new Map();
     for (const it of visible) {
-      const k = it.kind || 'other';
+      const k = itemKindBucket(it.kind);
       if (!byKind.has(k)) byKind.set(k, []);
       byKind.get(k).push(it);
     }
     return [...byKind.entries()].sort((a, b) =>
-      (itemKindRank(a[0]) - itemKindRank(b[0])) ||
-      itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
+      ((ITEM_BUCKET_RANK[a[0]] ?? 99) - (ITEM_BUCKET_RANK[b[0]] ?? 99)) ||
+      itemBucketLabel(a[0]).localeCompare(itemBucketLabel(b[0])));
   }, [visible]);
 
   // Report the flattened on-screen order (grouped + filtered) so the item
@@ -180,7 +180,7 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
         {groups.map(([kind, list]) => (
           <div className="items-group" key={kind}>
             <h3 className="items-group-head">
-              {itemKindLabel(kind)} <span className="items-group-count">{list.length}</span>
+              {itemBucketLabel(kind)} <span className="items-group-count">{list.length}</span>
             </h3>
             <div className="items-rows">
               {list.map((it) => {

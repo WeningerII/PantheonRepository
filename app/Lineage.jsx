@@ -209,13 +209,22 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
   const [upDepth, setUpDepth] = __lState(2);
   const [downDepth, setDownDepth] = __lState(2);
   // Which rows the user has expanded (by row index). Row indices shift when the
-  // entry or the generation depth changes, so clear the set whenever they do.
-  const [expandedRows, setExpandedRows] = __lState(() => new Set());
-  __lEffect(() => { setExpandedRows(new Set()); }, [entry, upDepth, downDepth]);
-  const toggleRow = (row) => setExpandedRows((prev) => {
-    const next = new Set(prev);
-    if (next.has(row)) next.delete(row); else next.add(row);
-    return next;
+  // entry or the generation depth changes. Storing the context alongside the set
+  // lets layoutTree (a useMemo) see an empty set immediately on context change —
+  // an effect-based reset would arrive one frame late, showing a stale expansion.
+  const [expandState, setExpandState] = __lState(() => ({
+    forId: entry?.id, forUp: upDepth, forDown: downDepth, rows: new Set(),
+  }));
+  const expandedRows = __lMemo(() =>
+    (expandState.forId === entry?.id && expandState.forUp === upDepth && expandState.forDown === downDepth)
+      ? expandState.rows : new Set(),
+    [expandState, entry, upDepth, downDepth]);
+  const toggleRow = (row) => setExpandState(prev => {
+    const sameCtx = prev.forId === entry?.id && prev.forUp === upDepth && prev.forDown === downDepth;
+    const base = sameCtx ? prev.rows : new Set();
+    const rows = new Set(base);
+    rows.has(row) ? rows.delete(row) : rows.add(row);
+    return { forId: entry?.id, forUp: upDepth, forDown: downDepth, rows };
   });
 
   const wrapRef = __lRef(null);

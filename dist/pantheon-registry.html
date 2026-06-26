@@ -438656,8 +438656,8 @@ function getEntryDates(entry) {
 }
 function entryAnchorYear(entry) {
   const d = getEntryDates(entry);
-  if (d.textualStart != null) return d.textualStart;
   if (d.mythicStart != null) return d.mythicStart;
+  if (d.textualStart != null) return d.textualStart;
   const t = entry?.temporal?.era;
   return eraStart(entry?.tradition, t);
 }
@@ -439142,7 +439142,6 @@ function useFilters(people) {
     setTypes(new Set());
     setOrigin('both');
     setTraditions(new Set());
-    setSort('alpha');
   }, []);
   return {
     query,
@@ -439356,7 +439355,7 @@ function buildPowerRegistry() {
     const rec = reg[id];
     rec.holderCount = rec.holders.length;
     rec.inheritorCount = rec.inheritors.length;
-    rec.figureCount = rec.holderCount;
+    rec.figureCount = rec.holderCount + rec.inheritorCount;
     rec.sources = dedupeSources(rec.sources);
     let best = null,
       bestN = -1;
@@ -439385,8 +439384,9 @@ function buildDomainRegistry() {
   });
   for (const pid of Object.keys(people)) {
     for (const d of people[pid].domains || []) {
-      if (!d || !d.sphereId) continue;
-      const rec = ensure(d.sphereId);
+      const sid = d.sphereId || d.id;
+      if (!d || !sid) continue;
+      const rec = ensure(sid);
       rec.holders.push({
         personId: pid,
         contextTag: d.contextTag || null,
@@ -440131,15 +440131,27 @@ function Lineage({
   const [upDepth, setUpDepth] = __lState(2);
   const [downDepth, setDownDepth] = __lState(2);
   // Which rows the user has expanded (by row index). Row indices shift when the
-  // entry or the generation depth changes, so clear the set whenever they do.
-  const [expandedRows, setExpandedRows] = __lState(() => new Set());
-  __lEffect(() => {
-    setExpandedRows(new Set());
-  }, [entry, upDepth, downDepth]);
-  const toggleRow = row => setExpandedRows(prev => {
-    const next = new Set(prev);
-    if (next.has(row)) next.delete(row);else next.add(row);
-    return next;
+  // entry or the generation depth changes. Storing the context alongside the set
+  // lets layoutTree (a useMemo) see an empty set immediately on context change —
+  // an effect-based reset would arrive one frame late, showing a stale expansion.
+  const [expandState, setExpandState] = __lState(() => ({
+    forId: entry?.id,
+    forUp: upDepth,
+    forDown: downDepth,
+    rows: new Set()
+  }));
+  const expandedRows = __lMemo(() => expandState.forId === entry?.id && expandState.forUp === upDepth && expandState.forDown === downDepth ? expandState.rows : new Set(), [expandState, entry, upDepth, downDepth]);
+  const toggleRow = row => setExpandState(prev => {
+    const sameCtx = prev.forId === entry?.id && prev.forUp === upDepth && prev.forDown === downDepth;
+    const base = sameCtx ? prev.rows : new Set();
+    const rows = new Set(base);
+    rows.has(row) ? rows.delete(row) : rows.add(row);
+    return {
+      forId: entry?.id,
+      forUp: upDepth,
+      forDown: downDepth,
+      rows
+    };
   });
   const wrapRef = __lRef(null);
   const tree = __lMemo(() => buildLineageTree(entry, byId, childrenOf, upDepth, downDepth), [entry, byId, childrenOf, upDepth, downDepth]);
@@ -441829,11 +441841,11 @@ function Items({
   const groups = __iMemo(() => {
     const byKind = new Map();
     for (const it of visible) {
-      const k = it.kind || 'other';
+      const k = itemKindBucket(it.kind);
       if (!byKind.has(k)) byKind.set(k, []);
       byKind.get(k).push(it);
     }
-    return [...byKind.entries()].sort((a, b) => itemKindRank(a[0]) - itemKindRank(b[0]) || itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
+    return [...byKind.entries()].sort((a, b) => (ITEM_BUCKET_RANK[a[0]] ?? 99) - (ITEM_BUCKET_RANK[b[0]] ?? 99) || itemBucketLabel(a[0]).localeCompare(itemBucketLabel(b[0])));
   }, [visible]);
 
   // Report the flattened on-screen order (grouped + filtered) so the item
@@ -441886,7 +441898,7 @@ function Items({
     key: kind
   }, /*#__PURE__*/React.createElement("h3", {
     className: "items-group-head"
-  }, itemKindLabel(kind), " ", /*#__PURE__*/React.createElement("span", {
+  }, itemBucketLabel(kind), " ", /*#__PURE__*/React.createElement("span", {
     className: "items-group-count"
   }, list.length)), /*#__PURE__*/React.createElement("div", {
     className: "items-rows"
@@ -442419,9 +442431,12 @@ function PowerBearers({
       className: "power-bearer-name"
     }, window.displayName(p)), /*#__PURE__*/React.createElement("span", {
       className: "power-bearer-meta"
-    }, p.tradition), h.inheritability && h.inheritability !== 'none' && /*#__PURE__*/React.createElement("span", {
-      className: 'power-herit herit-' + h.inheritability
-    }, h.inheritability));
+    }, p.tradition), h.inheritability && (() => {
+      const hb = powerHeritBucket(h.inheritability);
+      return hb !== 'none' && hb !== 'unspecified' ? /*#__PURE__*/React.createElement("span", {
+        className: 'power-herit herit-' + hb
+      }, powerHeritLabel(hb)) : null;
+    })());
   })));
 }
 
@@ -442594,9 +442609,12 @@ function PowerDetail({
     className: "eyebrow"
   }, /*#__PURE__*/React.createElement("span", {
     className: "eyebrow-tier"
-  }, "Power"), p.domainTag && /*#__PURE__*/React.createElement("span", null, humanizePow(p.domainTag)), p.inheritability && /*#__PURE__*/React.createElement("span", {
-    className: 'power-herit herit-' + p.inheritability
-  }, p.inheritability === 'none' ? 'not heritable' : p.inheritability + ' heritable')), /*#__PURE__*/React.createElement("h1", null, p.displayName), p.term && p.term.value && /*#__PURE__*/React.createElement("div", {
+  }, "Power"), p.domainTag && /*#__PURE__*/React.createElement("span", null, humanizePow(p.domainTag)), p.inheritability && (() => {
+    const hb = powerHeritBucket(p.inheritability);
+    return hb !== 'unspecified' ? /*#__PURE__*/React.createElement("span", {
+      className: 'power-herit herit-' + hb
+    }, powerHeritLabel(hb)) : null;
+  })()), /*#__PURE__*/React.createElement("h1", null, p.displayName), p.term && p.term.value && /*#__PURE__*/React.createElement("div", {
     className: "power-term"
   }, /*#__PURE__*/React.createElement("span", {
     className: 'power-term-native' + (powIsGlyph(p.term.script) ? ' glyph' : '')
@@ -443693,7 +443711,7 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
       }
     }
     return adj;
-  }, [people, byId, pathMode]);
+  }, [people, pathMode]);
 
   // BFS shortest path. Cap depth at 8 hops — the diameter of any reasonable
   // mythological graph is well below this; beyond it the network is so
@@ -443857,7 +443875,7 @@ function Graph({
     pathResult,
     pathNodeSet,
     pathEdgeSet
-  } = usePathFind(people, byId, pathMode, pathStart, pathEnd);
+  } = usePathFind(scopedPeople, byId, pathMode, pathStart, pathEnd);
 
   // Active edge families (for the legend — only show what's actually here).
   const activeFamilies = __gMemo(() => {
