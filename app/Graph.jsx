@@ -745,9 +745,10 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     [focusId, scopedPeople],
   );
 
+  const effectiveFocusId = focusInScope ? focusId : null;
   const graph = __gMemo(
-    () => buildGraph(scopedPeople, byId, mode, focusInScope ? focusId : null),
-    [scopedPeople, byId, mode, focusId, focusInScope],
+    () => buildGraph(scopedPeople, byId, mode, effectiveFocusId),
+    [scopedPeople, byId, mode, effectiveFocusId],
   );
   // Position memory survives graph rebuilds so dragging the year slider
   // doesn't re-explode the layout every frame. See useForceSim above.
@@ -845,6 +846,8 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
         return pathEdgeSet.has(lo + '|' + hi + '|' + kind) ? 1 : 0.05;
       }
       if (pathResult?.unreachable) return 0.05;
+      // No path assembled yet — honour hover so incident edges brighten with node
+      if (hoverNode && (sId === hoverNode || tId === hoverNode)) return 0.55;
       return 0.07;
     }
     if (hoverNode) return (sId === hoverNode || tId === hoverNode) ? 1 : 0.10;
@@ -1007,6 +1010,9 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
           <div className="graph-path-status">
             {pathResult?.unreachable && (
               <span className="graph-path-unreachable">no path within 8 hops</span>
+            )}
+            {pathResult && !pathResult.unreachable && pathResult.nodes.length === 1 && (
+              <span className="graph-path-unreachable">same node — pick a different destination</span>
             )}
             {pathResult && !pathResult.unreachable && pathResult.edges.length > 0 && (
               <span className="graph-path-length">
