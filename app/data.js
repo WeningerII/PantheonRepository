@@ -206,6 +206,8 @@ const TRADITION_PIGMENTS = {
   'Semang':              '#b0a060',  // Bamboo comb yellow — the incised bamboo combs carrying Karei's thunder patterns among the Negrito bands
   'Senufo':              '#ad9166',  // Korhogo fila cloth — umber vegetal pigment painted on handspun cream cotton
   'Shipibo':             '#5e3a23',  // Mahogany-and-huito — the dark bark slip and genipa black of Shipibo kené pottery painting
+  'Bactrian':            '#9c7c30',  // Kushan coin-gold — the struck gold of Kanishka's dynastic deity issues from Bactra
+  'Sogdian':             '#5a5a9e',  // Penjikent lapis-violet — the ultramarine of the Sogdian temple murals of the Zarafshan
   'Songhai':             '#b3854f',  // Sahel banco — the smoothed adobe of the Tomb of Askia and the Niger-bend mosque architecture
   'Sotho-Tswana':        '#c08060',  // Litema wall-ochre — the warm earth pigments of Sotho-Tswana homestead mural art, ground from highveld clays.
   'Taíno':               '#ab763b',  // Guanín gold — the reddish gold-copper alloy of cacique regalia, the fragrant 'sky-metal' of Taíno chiefly and cosmological value
@@ -2068,6 +2070,22 @@ const buildTerritorySeed = () => ({
   "Songhai": { polygons: [
     { kind: 'core', period: 'Songhay-Zarma lands along the Niger bend — Timbuktu and Gao to Zarmaganda; imperial apogee 1464-1591 CE', source: 'Rouch, La religion et la magie Songhay (1960); Stoller, Fusion of the Worlds (1989)', coords: [
       [-3.5,17.2],[-1,17],[0.5,16.5],[2.5,15.5],[3.5,14],[2,13],[0.5,13.5],[-1.5,14.5],[-3,15.5],[-3.5,17.2]
+    ] },
+  ]},
+
+  // Sogdiana — the Zarafshan valley city-states (Samarkand/Afrasiab, Panjikent,
+  // Bukhara), heartland of the pre-Islamic Sogdian temple cult.
+  "Sogdian": { polygons: [
+    { kind: 'core', period: 'Sogdiana (Transoxiana) along the Zarafshan — Bukhara, Samarkand and Panjikent; pre-Islamic temple religion of the murals, c. 4th-8th c. CE', source: 'Grenet & Marshak, on the Panjikent murals; Shenkar, Intangible Spirits and Graven Images (2014)', coords: [
+      [63,40.2],[64.8,40.3],[66.2,40],[67.6,39.7],[68.6,39.2],[67.8,38.7],[66.2,38.9],[64.3,39.5],[63,40.2]
+    ] },
+  ]},
+
+  // Bactria / Tokharistan — the upper Oxus (Amu Darya) basin, dynastic homeland
+  // of the Kushans (Bactra/Balkh, Surkh Kotal, Rabatak, Takht-i Sangin).
+  "Bactrian": { polygons: [
+    { kind: 'core', period: 'Bactria / Tokharistan on the upper Oxus — Balkh, Surkh Kotal and the Rabatak sanctuary; Kushan dynastic cult, 1st-3rd c. CE', source: 'Sims-Williams & Cribb, A New Bactrian Inscription of Kanishka (1996); Rosenfield, The Dynastic Arts of the Kushans (1967)', coords: [
+      [64,38],[66,37.9],[68,37.6],[69,36.8],[68.3,36],[67,35.9],[65.5,36.3],[64.2,37],[64,38]
     ] },
   ]},
 
@@ -8685,6 +8703,7 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [ { kind: 'lover', personId: 'greek_iasion', notes: '' },
+        { kind: 'equated-with', personId: 'sogdian_zemat', era: 'classical', sources: [{ kind: 'scholarly', reference: 'F. Grenet, in "MITHRA ii. Iconography", Encyclopaedia Iranica' }], notes: 'Grenet reads the mourning vegetation-goddess of the Panjikent murals as a Sogdian counterpart of Demeter.' },
         { kind: 'equated-with', personId: 'roman_ceres', era: 'archaic', sources: [{ kind: 'secondary', reference: 'Standard interpretatio Graeca/Romana scholarship; Beard, North & Price, Religions of Rome (1998); Wissowa, Religion und Kultus der Römer (1912)' }], notes: 'Roman Ceres is the canonical Latin parallel to Greek Demeter through interpretatio Romana; the plebeian-aedile association and lex sacrata Cereris are distinctively Roman institutional forms.' },
         { kind: 'lover', externalRef: { name: 'Iasion (Samothracian initiate, brother of Dardanus, son of Zeus and the Pleiad Electra, lover of Demeter, father of Plutus; not registered under strict rule)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hom. Od. 5.125-128; Hes. Theog. 969-974' }], notes: '' },
         { kind: 'sibling', personId: 'greek_hesiod_zeus', era: 'primordial', sources: [{ kind: 'primary', reference: 'Hes. Theog. 453-454' }] },
@@ -38499,6 +38518,8 @@ const ERA_ORDER = {
   'Semang': ['primordial', 'primordial / perpetual'],
   'Senufo': ['Senufo traditional religion; continuing'],
   'Shipibo': ['primordial', 'mythic'],
+  'Bactrian': ['primordial', 'mythic-age'],
+  'Sogdian': ['primordial', 'mythic-age'],
   'Songhai': ['Songhay/Zarma oral tradition; living holey cult', 'Songhay/Zarma oral tradition; living holey possession cult', 'Songhay heroic age', 'Songhay heroic age; ancestor of the sorko praise-singers'],
   'Sotho-Tswana': ['primordial', 'mythic-past', 'legendary-genealogical'],
   'Taíno': ['mythic-primordial', 'mythic-perennial'],
@@ -39916,6 +39937,18 @@ const ERA_DATES = {
   'Shipibo': {
     'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 1928, textualEnd: 2000, precision: 'cosmic' },
     'mythic':                { mythicStart: null, mythicEnd: null, textualStart: 1928, textualEnd: 2000, precision: 'cosmic' },
+  },
+  'Bactrian': {
+    // The Kushan dynastic gods are timeless; their attestation is the imperial
+    // coinage and the Rabatak inscription, 1st-3rd c. CE.
+    'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 100, textualEnd: 300, precision: 'cosmic' },
+    'mythic-age':            { mythicStart: null, mythicEnd: null, textualStart: 100, textualEnd: 300, precision: 'cosmic' },
+  },
+  'Sogdian': {
+    // The Sogdian gods are timeless; attestation is the Penjikent/Afrasiab
+    // murals and the Sogdian texts, c. 4th-8th c. CE.
+    'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 300, textualEnd: 800, precision: 'cosmic' },
+    'mythic-age':            { mythicStart: null, mythicEnd: null, textualStart: 300, textualEnd: 800, precision: 'cosmic' },
   },
   'Songhai': {
     'Songhay/Zarma oral tradition; living holey cult': { mythicStart: null, mythicEnd: null, textualStart: 1941, textualEnd: 2000, precision: 'cosmic' },
@@ -51777,6 +51810,624 @@ const NEW_FIGURES = [
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
    }
   ]
+ },
+ {
+  "id": "bactrian_ardoxsho",
+  "name": {
+   "primary": "Ardoxsho",
+   "alt": [
+    "Ardochsho",
+    "Ardoksho"
+   ],
+   "transliterations": {
+    "bactrian": "αρδοχϸο"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "abundance",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "good-fortune",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "reward",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Huvishka and later (with Oesho the dominant late reverse); Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Ardoxsho is the deified Aši Vaŋuhī, the Zoroastrian personification of reward and abundance, recognizable by the cornucopia she cradles. She rises to prominence on later coinage and, like the Greek Tyche, embodies the good fortune of the realm."
+ },
+ {
+  "id": "bactrian_atsho",
+  "name": {
+   "primary": "Atsho",
+   "alt": [
+    "Athsho",
+    "Adsho"
+   ],
+   "transliterations": {
+    "bactrian": "αθϸο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "sacrifice",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "purity",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_atar",
+    "notes": "Atsho is the deified Zoroastrian fire Atar."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΑΘϷΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Atsho is the deified Zoroastrian fire (Ātar), shown haloed in flames and at times holding smith's tongs — the sacred and royal flame of the Kushan house."
+ },
+ {
+  "id": "bactrian_manaobago",
+  "name": {
+   "primary": "Manaobago",
+   "alt": [
+    "Manabago"
+   ],
+   "transliterations": {
+    "bactrian": "μαναοβαγο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "good-mind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "just-rule",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Manaobago personifies Vohu Manah, the Good Mind."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Gold coins of Huvishka, reverse legend ΜΑΝΑΟΒΑΓΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Manaobago is the Kushan personification of Vohu Manah, the 'Good Mind' of Zoroastrian thought — here a god of the wisdom that underwrites just kingship and the prosperity of the realm."
+ },
+ {
+  "id": "bactrian_mao",
+  "name": {
+   "primary": "Mao",
+   "alt": [
+    "Mah"
+   ],
+   "transliterations": {
+    "bactrian": "μαο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "night",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cyclical-order",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΜΑΟ; J. Rosenfield, The Dynastic Arts of the Kushans (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Bactrian moon-god, instantly recognized on the coins by the crescent rising behind his shoulders. He forms a celestial pair with the sun-god Miiro."
+ },
+ {
+  "id": "bactrian_miiro",
+  "name": {
+   "primary": "Miiro",
+   "alt": [
+    "Mioro",
+    "Miuro"
+   ],
+   "transliterations": {
+    "bactrian": "μιιρο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "light",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "covenant",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_mithra",
+    "notes": "Miiro is the Kushan coin-form of Mithra."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΜΙΙΡΟ; J. Rosenfield, The Dynastic Arts of the Kushans (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Kushan rendering of Mithra, a haloed youth radiating sunbeams who offers blessing to the king — one of the half-dozen titular dynastic gods struck on the imperial coinage."
+ },
+ {
+  "id": "bactrian_nana",
+  "name": {
+   "primary": "Nana",
+   "alt": [
+    "Nanaia",
+    "Nanašao"
+   ],
+   "transliterations": {
+    "bactrian": "νανα"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "victory",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "royal-legitimacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "sogdian_nana"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "epigraphic",
+      "reference": "Rabatak inscription, ll. 1-3: Kanishka 'who has obtained the kingship from Nana and from all the gods'; ed. Sims-Williams & Cribb (1996)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nana is the head of the Kushan dynastic pantheon and the only deity the Rabatak inscription names as the source of royal power. On the coins she stands or is enthroned on a lion — the dynastic, sovereignty-granting form of the same goddess worshipped across Sogdiana."
+ },
+ {
+  "id": "bactrian_oado",
+  "name": {
+   "primary": "Oado",
+   "alt": [
+    "Vado",
+    "Wado"
+   ],
+   "transliterations": {
+    "bactrian": "οαδο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "breath",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vayu",
+    "notes": "Oado is the Kushan wind-god, continuing Vayu."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΟΑΔΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Kushan wind-god — one of the earliest fully personified wind images in art: he runs with his garment ballooning behind him to convey rushing air, the Bactrian continuation of the Avestan Vayu."
+ },
+ {
+  "id": "bactrian_oaxsho",
+  "name": {
+   "primary": "Oaxsho",
+   "alt": [
+    "Wakhsh",
+    "Oxus"
+   ],
+   "transliterations": {
+    "bactrian": "οαξϸο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "the-oxus-river",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "land-fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "local-sovereignty",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Copper coins of Huvishka, reverse legend ΟΑΞϷΟ; the Takht-i Sangin temple of the Oxus"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Oaxsho is the divine personification of the Oxus (Amu Darya / Wakhsh), the defining river of Bactria, shown Poseidon-like with the water flowing from him. His great sanctuary stood at Takht-i Sangin, where the Wakhsh meets the Panj."
+ },
+ {
+  "id": "bactrian_oesho",
+  "name": {
+   "primary": "Oesho",
+   "alt": [
+    "Wesho",
+    "Oeso"
+   ],
+   "transliterations": {
+    "bactrian": "οηϸο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "destruction-and-renewal",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "ascetic-power",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cattle",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "hindu_shiva",
+    "notes": "Oesho fuses the Iranian Vayu with the Indic Shiva-Maheshvara."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I, Huvishka and Vasudeva I, reverse legend ΟΗϷΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the titular gods of the dynasty and, with Ardoxsho, one of only two deities still struck on late Kushan coinage. Shown with trident and bull, he fuses the Iranian Vayu with the Indic Shiva-Maheshvara — the Bactrian high god in Shaiva form."
+ },
+ {
+  "id": "bactrian_orlagno",
+  "name": {
+   "primary": "Orlagno",
+   "alt": [
+    "Oralagno"
+   ],
+   "transliterations": {
+    "bactrian": "ορλαγνο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "victory",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "royal-protection",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_verethragna",
+    "notes": "Orlagno is the Kushan Verethragna."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Huvishka, reverse legend ΟΡΛΑΓΝΟ; R. Göbl, System und Chronologie der Münzprägung des Kušānreiches (1984)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Orlagno is the Kushan Verethragna, the Iranian god of crushing victory and protector of royalty — abroad equated with Herakles and Ares — who appears armed and triumphant on Huvishka's coinage."
+ },
+ {
+  "id": "bactrian_pharro",
+  "name": {
+   "primary": "Pharro",
+   "alt": [
+    "Farro"
+   ],
+   "transliterations": {
+    "bactrian": "φαρρο"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "royal-glory",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fortune",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "divine-investiture",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΦΑΡΡΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Pharro is the deified Khwarenah — the Iranian God-given royal glory and fortune that descends on the rightful king. On the coins he is a male figure, sometimes winged or flaming, who confers legitimacy on the sovereign."
  },
  {
   "id": "balinese_barong",
@@ -142188,7 +142839,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Supreme deity of destruction, asceticism, and regeneration; the great yogin"
+  "notes": "Supreme deity of destruction, asceticism, and regeneration; the great yogin",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_oesho"
+   }
+  ]
  },
  {
   "id": "hindu_shura",
@@ -249858,6 +250515,294 @@ const NEW_FIGURES = [
   "notes": "Slavic dawn goddess(es), daughters of Dazhbog who open and close the gates of the sky."
  },
  {
+  "id": "sogdian_adbag",
+  "name": {
+   "primary": "Adbag",
+   "alt": [
+    "Adhvagh",
+    "Adhbag"
+   ],
+   "transliterations": {
+    "sogdian": "ʾδβɣ"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cosmic-order",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "heaven",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_ahura_mazda",
+    "notes": "Adbag, 'the great god', is the Sogdian cult-form of Ahura Mazda."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka, where the Hindu Indra is rendered Adhvagh (Aδβaγ); ed. É. Benveniste (1946)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Adbag — literally 'the great god' — is the Sogdian name and cult-form of Ahura Mazda, the supreme Mazdean creator, with whom Temple I at Panjikent is associated. In the Buddhist Sogdian texts the name is used to render the highest Indic god."
+ },
+ {
+  "id": "sogdian_nana",
+  "name": {
+   "primary": "Nana",
+   "alt": [
+    "Nanai",
+    "Nanaia",
+    "Nanaya"
+   ],
+   "transliterations": {
+    "sogdian": "nny"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "celestial-order",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_nana",
+    "notes": "The same goddess (Nanaia) — the Sogdian city-patron and the Kushan dynastic sovereign."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "M. Shenkar, 'NANA', Encyclopaedia Iranica; M. Compareti, 'Nana and Tish in Sogdiana' (2017)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The pre-eminent goddess and city-patron of Sogdiana, descended from the Sumero-Akkadian Nanaya and worshipped from Bukhara to Panjikent, where Temple II was her sanctuary. In the murals she is enthroned on a lion, often four-armed and holding the sun and moon — the four-armed dragon-throne goddess of Panjikent being her local form. Her consort in Sogdiana is the rain-star god Tish (Tishtrya)."
+ },
+ {
+  "id": "sogdian_weshparkar",
+  "name": {
+   "primary": "Weshparkar",
+   "alt": [
+    "Wēšparkar",
+    "Vēšparkar"
+   ],
+   "transliterations": {
+    "sogdian": "wyšprkr"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "atmosphere",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vayu",
+    "notes": "Weshparkar continues the Avestan wind-god Vayu, in Shaiva guise."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka renders the Hindu Maheshvara (Shiva) as Wēšparkar; F. Grenet, 'Iranian Gods in Hindu Garb' (2010)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Sogdian wind- and atmosphere-god, heir of the Avestan Vayu, who in Sogdian art is clothed in the iconography of the Hindu Shiva-Maheshvara: three-headed, holding trident and thunderbolt. A striking case of an Iranian deity rendered through Indic visual form."
+ },
+ {
+  "id": "sogdian_zemat",
+  "name": {
+   "primary": "Žēmāt",
+   "alt": [
+    "Žimat",
+    "Zhemat"
+   ],
+   "transliterations": {
+    "sogdian": "žymʾt"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "grain",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vegetation-cycle",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "mourning",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "greek_hesiod_demeter",
+    "notes": "Grenet reads the Panjikent mourning-goddess as a Sogdian counterpart of Demeter."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "F. Grenet, in 'MITHRA ii. Iconography', Encyclopaedia Iranica, on the Panjikent 'Mourning Scene'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Grenet interprets the goddess presiding over the famous 'Mourning Scene' at Panjikent Temple II as Žēmāt, a Sogdian counterpart of Demeter who laments a dying-and-returning vegetation deity — the Transoxianan reflex of the ancient Near Eastern grieving-goddess of the grain."
+ },
+ {
+  "id": "sogdian_zurvan",
+  "name": {
+   "primary": "Zurvan",
+   "alt": [
+    "Azruwa",
+    "Zruwan"
+   ],
+   "transliterations": {
+    "sogdian": "zrwʾ"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "time",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "destiny",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cosmic-primacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka renders the Hindu Brahma as Azruwa (Zurvan); Manichaean Sogdian 'Azrua' for the Father of Greatness"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Zurvan, the personification of infinite Time and Destiny, stands at the head of the Sogdian high triad. In the Sogdian Vessantara Jataka the supreme Indic creator Brahma is rendered by his name, and in Manichaean Sogdian he lends his name to the Father of Greatness."
+ },
+ {
   "id": "songhai_cirey",
   "name": {
    "primary": "Lightning",
@@ -283606,7 +284551,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Supreme uncreated creator god of Zoroastrianism, the Wise Lord and source of all good."
+  "notes": "Supreme uncreated creator god of Zoroastrianism, the Wise Lord and source of all good.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "sogdian_adbag"
+   }
+  ]
  },
  {
   "id": "zoroastrian_ameretat",
@@ -284329,6 +285280,10 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "zoroastrian_vohu_manah",
     "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_atsho"
    }
   ]
  },
@@ -285562,7 +286517,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata of covenants, light, and oaths; all-seeing judge whom Ahura Mazda set as worthy of worship as himself."
+  "notes": "Yazata of covenants, light, and oaths; all-seeing judge whom Ahura Mazda set as worthy of worship as himself.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_miiro"
+   }
+  ]
  },
  {
   "id": "zoroastrian_rashnu",
@@ -287047,7 +288008,17 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata personifying the wind and the intermediate atmosphere; an ambivalent power with both beneficent and harmful aspects."
+  "notes": "Yazata personifying the wind and the intermediate atmosphere; an ambivalent power with both beneficent and harmful aspects.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_oado"
+   },
+   {
+    "kind": "equated-with",
+    "personId": "sogdian_weshparkar"
+   }
+  ]
  },
  {
   "id": "zoroastrian_verethragna",
@@ -287322,7 +288293,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata of victory and war who appears in ten incarnate forms; the smasher of resistance and giver of triumph."
+  "notes": "Yazata of victory and war who appears in ten incarnate forms; the smasher of resistance and giver of triumph.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_orlagno"
+   }
+  ]
  },
  {
   "id": "zoroastrian_vohu_manah",
@@ -287470,6 +288447,10 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "zoroastrian_spenta_mainyu",
     "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_manaobago"
    }
   ]
  },

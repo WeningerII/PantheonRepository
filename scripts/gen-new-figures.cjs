@@ -166,6 +166,26 @@ for (const [cid, parents] of Object.entries(PARENT_RECONCILE)) {
   if (PARENT_RECONCILE_RETYPE[cid]) f.type = PARENT_RECONCILE_RETYPE[cid];
 }
 
+// Reciprocate cross-tradition interpretatio edges authored on the new Central
+// Asian (sogdian_/bactrian_) figures. Their cult-forms equate to Iranian/Greek/
+// Indic originals (Adbag=Ahura Mazda, Miiro=Mithra, Oesho=Shiva, ...), and the
+// symmetric-reciprocity invariant requires the mirror edge on the target — which
+// also lives in NEW_FIGURES, so the generator can add it. Scoped to these new
+// ids so no unrelated relation data shifts.
+const EQUATE_KINDS = new Set(['equated-with', 'interpretatio']);
+for (const f of all.values()) {
+  if (!/^(sogdian|bactrian)_/.test(f.id)) continue;
+  for (const r of (f.relations || [])) {
+    if (!EQUATE_KINDS.has(r.kind) || !r.personId) continue;
+    const tgt = all.get(r.personId);
+    if (!tgt) continue;
+    tgt.relations = tgt.relations || [];
+    if (!tgt.relations.some((rr) => rr.personId === f.id && rr.kind === r.kind)) {
+      tgt.relations.push({ kind: r.kind, personId: f.id });
+    }
+  }
+}
+
 const arr = [...all.values()].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 const block = `/* NEW_FIGURES_START */\nconst NEW_FIGURES = ${JSON.stringify(arr, null, 1)};\n/* NEW_FIGURES_END */`;
 writeSentinelBlock('NEW_FIGURES', block);
