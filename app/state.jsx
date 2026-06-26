@@ -819,7 +819,7 @@ function buildDomainRegistry() {
   for (const id of Object.keys(reg)) {
     const rec = reg[id];
     rec.holderCount = rec.holders.length;
-    rec.figureCount = rec.holderCount;
+    rec.figureCount = new Set(rec.holders.map(h => h.personId)).size;
     rec.sources = dedupeSources(rec.sources);
   }
   _domainReg = reg;

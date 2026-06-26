@@ -680,7 +680,7 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
     pathResult.edges.forEach(e => {
       const lo = e.from < e.to ? e.from : e.to;
       const hi = e.from < e.to ? e.to : e.from;
-      s.add(lo + '|' + hi);
+      s.add(lo + '|' + hi + '|' + e.kind);
     });
     return s;
   }, [pathResult]);
@@ -1019,7 +1019,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
                 const style = EDGE_STYLE[l.family] || EDGE_STYLE.Other;
                 const op = edgeOpacity(sId, tId, l.family);
                 const inPath = pathEdgeSet && pathEdgeSet.has(
-                  (sId < tId ? sId : tId) + '|' + (sId < tId ? tId : sId)
+                  (sId < tId ? sId : tId) + '|' + (sId < tId ? tId : sId) + '|' + l.kind
                 );
                 return (
                   <line

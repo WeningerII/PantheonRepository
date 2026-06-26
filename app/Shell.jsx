@@ -209,6 +209,12 @@ function Shell() {
   const [selectedItemId, setSelectedItemId] = __sState(null);
   const [selectedPowerId, setSelectedPowerId] = __sState(null);
   const [selectedDomainId, setSelectedDomainId] = __sState(null);
+  // Version counters incremented by onVisibleOrder so selIdxIn*Order memos
+  // recompute after the child reports a new ordered list (ref mutation alone
+  // never triggers a re-render).
+  const [itemOrderVer, setItemOrderVer] = __sState(0);
+  const [powerOrderVer, setPowerOrderVer] = __sState(0);
+  const [domainOrderVer, setDomainOrderVer] = __sState(0);
   const searchRef = __sRef(null);
 
   // Item registry (built in data.js, read once). The sorted list drives the
@@ -416,19 +422,38 @@ function Shell() {
     if (!selectedItemId) return -1;
     const order = itemOrderRef.current?.length ? itemOrderRef.current : itemList.map(it => it.id);
     return order.indexOf(selectedItemId);
-  }, [selectedItemId, itemList]);
+  }, [selectedItemId, itemList, itemOrderVer]);
 
   const selIdxInPowerOrder = __sMemo(() => {
     if (!selectedPowerId) return -1;
     const order = powerOrderRef.current?.length ? powerOrderRef.current : powerList.map(p => p.id);
     return order.indexOf(selectedPowerId);
-  }, [selectedPowerId, powerList]);
+  }, [selectedPowerId, powerList, powerOrderVer]);
 
   const selIdxInDomainOrder = __sMemo(() => {
     if (!selectedDomainId) return -1;
     const order = domainOrderRef.current?.length ? domainOrderRef.current : domainList.map(d => d.id);
     return order.indexOf(selectedDomainId);
-  }, [selectedDomainId, domainList]);
+  }, [selectedDomainId, domainList, domainOrderVer]);
+
+  // Stable onVisibleOrder callbacks — inline arrow functions in JSX are new
+  // references every render, which would make Items/Powers/Domains useEffect
+  // re-fire → call setOrderVer → re-render → new reference → infinite loop.
+  // useCallback with [] produces the same stable function across all renders;
+  // setOrderVer (stable setter) and the refs (stable objects) are safe to close
+  // over with empty deps.
+  const onItemVisibleOrder = __sCb((ids) => {
+    itemOrderRef.current = ids;
+    setItemOrderVer(v => v + 1);
+  }, []);
+  const onPowerVisibleOrder = __sCb((ids) => {
+    powerOrderRef.current = ids;
+    setPowerOrderVer(v => v + 1);
+  }, []);
+  const onDomainVisibleOrder = __sCb((ids) => {
+    domainOrderRef.current = ids;
+    setDomainOrderVer(v => v + 1);
+  }, []);
 
   // Switch top-level view from the view tabs. Clear every detail axis first so
   // an open slide-over never stays stacked over the new view, and the hash
@@ -635,7 +660,7 @@ function Shell() {
               byId={byId}
               selectedItemId={selectedItemId}
               onOpenItem={openItem}
-              onVisibleOrder={(ids) => { itemOrderRef.current = ids; }}
+              onVisibleOrder={onItemVisibleOrder}
             />
           )}
           {view === 'powers' && (
@@ -645,7 +670,7 @@ function Shell() {
               byId={byId}
               selectedPowerId={selectedPowerId}
               onOpenPower={openPower}
-              onVisibleOrder={(ids) => { powerOrderRef.current = ids; }}
+              onVisibleOrder={onPowerVisibleOrder}
             />
           )}
           {view === 'domains' && (
@@ -655,7 +680,7 @@ function Shell() {
               byId={byId}
               selectedDomainId={selectedDomainId}
               onOpenDomain={openDomain}
-              onVisibleOrder={(ids) => { domainOrderRef.current = ids; }}
+              onVisibleOrder={onDomainVisibleOrder}
             />
           )}
         </div>
@@ -702,6 +727,7 @@ function Shell() {
           setAtlasFocus(null);
           setSelectedItemId(null);
           selection.setSelectedId(id);
+          selection.setCursorIdx(0);
         }}
       />
 
@@ -719,6 +745,7 @@ function Shell() {
           setAtlasFocus(null);
           setSelectedPowerId(null);
           selection.setSelectedId(id);
+          selection.setCursorIdx(0);
         }}
       />
 
@@ -736,6 +763,7 @@ function Shell() {
           setAtlasFocus(null);
           setSelectedDomainId(null);
           selection.setSelectedId(id);
+          selection.setCursorIdx(0);
         }}
       />
 
