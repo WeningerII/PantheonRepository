@@ -457,6 +457,24 @@ function Shell() {
     setSelectedItemId(id);
   }, [selection]);
 
+  const openPower = __sCb((id) => {
+    setView('powers');
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setSelectedItemId(null);
+    setSelectedDomainId(null);
+    setSelectedPowerId(id);
+  }, [selection]);
+
+  const openDomain = __sCb((id) => {
+    setView('domains');
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(id);
+  }, [selection]);
+
   // Keyboard bindings. The handler is kept in a ref refreshed every render so
   // the window listener attaches exactly once yet always reads current state —
   // `filters`/`selection` are fresh objects each render, so a dependency-keyed
@@ -620,7 +638,7 @@ function Shell() {
               total={powerList.length}
               byId={byId}
               selectedPowerId={selectedPowerId}
-              onOpenPower={(id) => setSelectedPowerId(id)}
+              onOpenPower={openPower}
               onVisibleOrder={(ids) => { powerOrderRef.current = ids; }}
             />
           )}
@@ -630,7 +648,7 @@ function Shell() {
               total={domainList.length}
               byId={byId}
               selectedDomainId={selectedDomainId}
-              onOpenDomain={(id) => setSelectedDomainId(id)}
+              onOpenDomain={openDomain}
               onVisibleOrder={(ids) => { domainOrderRef.current = ids; }}
             />
           )}

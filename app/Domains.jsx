@@ -42,9 +42,9 @@ function domainCtxBucket(raw) {
   if (/post-?mortem|posthumous|apotheos|after.?death|final-phase|\bdeath\b/.test(s)) return 'post-mortem';
   if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
   if (/genealog|lineage|foundation|founder|dynast/.test(s)) return 'genealogical';
+  if (/lifelong/.test(s)) return 'lifelong';
   if (/festival|seasonal|cyclic|calendr|harvest/.test(s)) return 'festival';
   if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|position/.test(s)) return 'narrative';
-  if (/lifelong/.test(s)) return 'lifelong';
   return 'other';
 }
 function domainCtxBuckets(d) {

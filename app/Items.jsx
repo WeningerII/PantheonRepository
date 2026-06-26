@@ -73,7 +73,7 @@ function itemKindBucket(kind) {
   if (/substance|elixir|potion|\bearth\b|\bfire\b|\bplant\b|\btree\b|herb|flower|fruit|\bwater\b|blood|\bmead\b|ambrosia/.test(s)) return 'substance';
   if (/ritual|\bcult\b|sacred|offering|votive|amulet|talisman|charm|bundle|fetish|\brelic\b|altar|reliquary/.test(s)) return 'ritual';
   if (/\btool\b|implement|equipment|\bstaff\b|\brod\b|\bhook\b|\bnet\b|\bkey\b|wheel|loom|plough|plow|anvil|mirror|\blamp\b|torch|sickle|scythe|spindle/.test(s)) return 'tool';
-  if (/symbol|\bsign\b|cosmic|attribute|emblem/.test(s)) return 'symbol';
+  if (/symbol|\bsign\b|cosmic|attribute/.test(s)) return 'symbol';
   return 'other';
 }
 

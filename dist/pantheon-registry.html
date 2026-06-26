@@ -440078,7 +440078,7 @@ function computeEdges(layoutNodes, byId) {
     if (!p) continue;
     for (const pid of p.parentIds || []) {
       const parent = byNodeId.get(pid);
-      if (parent && parent.row === n.row - 1) {
+      if (parent) {
         edges.push({
           x1: parent.x + CARD_W / 2,
           y1: parent.y + CARD_H,
@@ -441784,7 +441784,7 @@ function itemKindBucket(kind) {
   if (/substance|elixir|potion|\bearth\b|\bfire\b|\bplant\b|\btree\b|herb|flower|fruit|\bwater\b|blood|\bmead\b|ambrosia/.test(s)) return 'substance';
   if (/ritual|\bcult\b|sacred|offering|votive|amulet|talisman|charm|bundle|fetish|\brelic\b|altar|reliquary/.test(s)) return 'ritual';
   if (/\btool\b|implement|equipment|\bstaff\b|\brod\b|\bhook\b|\bnet\b|\bkey\b|wheel|loom|plough|plow|anvil|mirror|\blamp\b|torch|sickle|scythe|spindle/.test(s)) return 'tool';
-  if (/symbol|\bsign\b|cosmic|attribute|emblem/.test(s)) return 'symbol';
+  if (/symbol|\bsign\b|cosmic|attribute/.test(s)) return 'symbol';
   return 'other';
 }
 
@@ -442712,9 +442712,9 @@ function domainCtxBucket(raw) {
   if (/post-?mortem|posthumous|apotheos|after.?death|final-phase|\bdeath\b/.test(s)) return 'post-mortem';
   if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
   if (/genealog|lineage|foundation|founder|dynast/.test(s)) return 'genealogical';
+  if (/lifelong/.test(s)) return 'lifelong';
   if (/festival|seasonal|cyclic|calendr|harvest/.test(s)) return 'festival';
   if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|position/.test(s)) return 'narrative';
-  if (/lifelong/.test(s)) return 'lifelong';
   return 'other';
 }
 function domainCtxBuckets(d) {
@@ -445851,6 +445851,22 @@ function Shell() {
     setSelectedDomainId(null);
     setSelectedItemId(id);
   }, [selection]);
+  const openPower = __sCb(id => {
+    setView('powers');
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setSelectedItemId(null);
+    setSelectedDomainId(null);
+    setSelectedPowerId(id);
+  }, [selection]);
+  const openDomain = __sCb(id => {
+    setView('domains');
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(id);
+  }, [selection]);
 
   // Keyboard bindings. The handler is kept in a ref refreshed every render so
   // the window listener attaches exactly once yet always reads current state —
@@ -446077,7 +446093,7 @@ function Shell() {
     total: powerList.length,
     byId: byId,
     selectedPowerId: selectedPowerId,
-    onOpenPower: id => setSelectedPowerId(id),
+    onOpenPower: openPower,
     onVisibleOrder: ids => {
       powerOrderRef.current = ids;
     }
@@ -446086,7 +446102,7 @@ function Shell() {
     total: domainList.length,
     byId: byId,
     selectedDomainId: selectedDomainId,
-    onOpenDomain: id => setSelectedDomainId(id),
+    onOpenDomain: openDomain,
     onVisibleOrder: ids => {
       domainOrderRef.current = ids;
     }

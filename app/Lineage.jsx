@@ -169,7 +169,7 @@ function computeEdges(layoutNodes, byId) {
     if (!p) continue;
     for (const pid of (p.parentIds || [])) {
       const parent = byNodeId.get(pid);
-      if (parent && parent.row === n.row - 1) {
+      if (parent) {
         edges.push({
           x1: parent.x + CARD_W / 2,
           y1: parent.y + CARD_H,
