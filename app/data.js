@@ -168,6 +168,7 @@ const TRADITION_PIGMENTS = {
   'Krachi':              '#154f52',  // Deep Volta-pool teal — the river gorge at Kete Krachi where Dente's oracle cave stood until drowned by Lake Volta in 1965.
   'Kulin':               '#79655a',  // Smoke-tanned possum-skin cloak, the incised winter garment of the Kulin peoples
   'Kwakwaka\'wakw':      '#2f6b62',  // Mask blue-green — the copper-oxide green of Kwakwaka'wakw transformation masks and painted house fronts
+  'Kyrgyz':              '#a23b30',  // Shyrdak madder-red — the felt-carpet red and the red field of the Kyrgyz banner, the colour of the Manas heroic cycle
   'Lepcha':              '#86a061',  // Bamboo green of Mayel Lyang — the bamboo-built material world of Lepcha houses, bridges and ritual vessels
   'Lithuanian':          '#4f8a3a',  // Oak-grove green — Perkūnas' sacred oaks and the žaltys grass-snake of hearth cult; the grove (alkas) was the Lithuanian sanctuary.
   'Lozi':                '#54585f',  // Nalikwanda grey — the black-and-white livery of the Litunga's royal barge on the Zambezi flood
@@ -1797,6 +1798,14 @@ const buildTerritorySeed = () => ({
   "Lepcha": { polygons: [
     { kind: 'core', period: 'Mayel Lyang — Lepcha homeland in Sikkim, Darjeeling-Kalimpong hills and Ilam, from the 17th-c. Namgyal kingdom to present', source: 'Gorer, Himalayan Village (1938); Siiger, The Lepchas (1967)', coords: [
       [87.9,27.1],[88.1,27.9],[88.7,28.1],[88.9,27.4],[88.8,26.9],[88.2,26.8],[87.9,27.1]
+    ] },
+  ]},
+
+  // The Tian Shan and Talas heartland of the Kyrgyz, homeland of the Manas
+  // epic cycle — roughly modern Kyrgyzstan, the mountain rim of the Ferghana.
+  "Kyrgyz": { polygons: [
+    { kind: 'core', period: 'Tian Shan, Talas and Issyk-Kul homeland of the Kyrgyz; legendary setting of the Manas trilogy (epic recorded 1856-1885)', source: 'Hatto, The Manas of Wilhelm Radloff (1990); Radloff, Proben V (1885)', coords: [
+      [69.5,42.8],[71,43.2],[74,42.9],[77,42.9],[78.5,42.8],[80.2,42.2],[80,40.5],[78,40],[75,39.3],[73,39.4],[71,40.2],[70,41],[69.4,41.5],[69.5,42.8]
     ] },
   ]},
 
@@ -38444,6 +38453,7 @@ const ERA_ORDER = {
   'Krachi': ['primordial', 'mythic-age'],
   'Kulin': ['dreaming-creator-era'],
   'Kwakwaka\'wakw': ['mythic-primordial', 'mythic-perennial'],
+  'Kyrgyz': ['heroic-age', 'semetey-cycle', 'seitek-cycle', 'wider-cycle'],
   'Lepcha': ['primordial / before the world', 'primordial / perpetual', 'primordial / first generation of humans', 'primordial / early ancestral generation', 'mythic / culture-founding age'],
   'Lithuanian': ['mythic'],
   'Lozi': ['primordial', 'mythic founding'],
@@ -39698,6 +39708,15 @@ const ERA_DATES = {
   'Kwakwaka\'wakw': {
     'mythic-primordial':     { mythicStart: null, mythicEnd: null, textualStart: 1886, textualEnd: 2000, precision: 'cosmic' },
     'mythic-perennial':      { mythicStart: null, mythicEnd: null, textualStart: 1886, textualEnd: 2000, precision: 'cosmic' },
+  },
+  'Kyrgyz': {
+    // The Manas trilogy's legendary heroic past (variously anchored to the
+    // Yenisei-Kyrgyz floruit, 9th-10th c.); the living oral epic was first
+    // written down from 1856 (Valikhanov) and 1862-69 (Radloff).
+    'heroic-age':            { mythicStart: 850, mythicEnd: 1000, textualStart: 1856, textualEnd: 2000, precision: 'era-only' },
+    'semetey-cycle':         { mythicStart: 900, mythicEnd: 1030, textualStart: 1856, textualEnd: 2000, precision: 'era-only' },
+    'seitek-cycle':          { mythicStart: 950, mythicEnd: 1060, textualStart: 1856, textualEnd: 2000, precision: 'era-only' },
+    'wider-cycle':           { mythicStart: 700, mythicEnd: 1100, textualStart: 1862, textualEnd: 2000, precision: 'era-only' },
   },
   'Lepcha': {
     'primordial / before the world': { mythicStart: null, mythicEnd: null, textualStart: 1870, textualEnd: 2010, precision: 'cosmic' },
@@ -178923,6 +178942,1146 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Classed as a deity; a culture-hero/transformer cognate with Haida Yáahl and Tlingit Yéil. Boas's extensive Kwakwaka'wakw corpus is the principal documentation."
+ },
+ {
+  "id": "kyrgyz_aichurok",
+  "name": {
+   "primary": "Aichürök",
+   "alt": [
+    "Ayčürök",
+    "Aichurek"
+   ],
+   "transliterations": {
+    "kyrgyz": "Айчүрөк"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "semetey-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "loyalty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "kyrgyz_seitek",
+    "era": "seitek-cycle",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Semetey — 'The Marriage of Semetey to Aichürök'; A. T. Hatto, The Manas of Wilhelm Radloff (1990), on the swan-maiden motif"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_semetey"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Semetey — 'The Marriage of Semetey to Aichürök'; A. T. Hatto, The Manas of Wilhelm Radloff (1990), on the swan-maiden motif"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A luminous swan-maiden (peri), daughter of Akun Khan, betrothed to Semetey before his birth by Manas's vow. She transforms into a white swan to seek her destined husband, aids him against his rivals, and after his fall safeguards the unborn Seitek — the thread by which the lineage survives."
+ },
+ {
+  "id": "kyrgyz_ajybay",
+  "name": {
+   "primary": "Ajybay",
+   "alt": [
+    "Ajibay",
+    "Acıbay"
+   ],
+   "transliterations": {
+    "kyrgyz": "Ажыбай"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "diplomacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), Manas dividing his host under named captains; A. T. Hatto, The Memorial Feast for Kökötöy-Khan (Oxford, 1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the named forty companions, singled out in the muster of Manas's army to lead a division. Tradition makes him a speaker of many tongues, useful as an envoy — the diplomatic arm of the warband."
+ },
+ {
+  "id": "kyrgyz_almambet",
+  "name": {
+   "primary": "Almambet",
+   "alt": [
+    "Alman Bet"
+   ],
+   "transliterations": {
+    "kyrgyz": "Алмамбет"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "strategy",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "sworn-brotherhood",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "weather-magic",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sworn companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_chubak"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'Almambet, Er Kökčö and Ak-Erkeč: An Episode from the Kirghiz Epic Manas', Central Asiatic Journal (1969); W. Radloff, Proben V (1885)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Manas's foremost paladin: a Kalmyk/Chinese prince who converts to Islam and becomes his sworn blood-brother. The most psychologically developed of the forty companions — an outsider whose loyalty, command of war-magic (the rain-stone jay-tash), and tragic death on the Great Campaign are central to the epic."
+ },
+ {
+  "id": "kyrgyz_bakai",
+  "name": {
+   "primary": "Bakai",
+   "alt": [
+    "Bakay",
+    "Bakai-khan"
+   ],
+   "transliterations": {
+    "kyrgyz": "Бакай"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "counsel",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "regency",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_semetey"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977); A. T. Hatto, The Manas of Wilhelm Radloff (1990), on Bakai as the sage"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The wise elder and counsellor of Manas, the sober voice of experience among the companions. One of the few of the old generation to survive Manas, he becomes regent and guide to Semetey, embodying continuity across the trilogy's generations."
+ },
+ {
+  "id": "kyrgyz_bokmurun",
+  "name": {
+   "primary": "Bokmurun",
+   "alt": [
+    "Boqmurun",
+    "Bok Murun"
+   ],
+   "transliterations": {
+    "kyrgyz": "Бокмурун"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_kokotoy"
+  ],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "inheritance",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "feast-giving",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_koshoy"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the 'Bok Murun' episode (rec. 1862); A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The young heir of Kökötöy — his diminutive name ('Snotty-Nose') marking his untried youth — who, with Manas's backing, proclaims and stages the most lavish memorial games in the tradition. Protagonist of the self-contained Memorial Feast episode."
+ },
+ {
+  "id": "kyrgyz_chubak",
+  "name": {
+   "primary": "Chubak",
+   "alt": [
+    "Čubak"
+   ],
+   "transliterations": {
+    "kyrgyz": "Чубак"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "valour",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_almambet"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Saghïmbay Orozbaq uulu / D. Prior (trans.), The Memorial Feast for Kökötöy Khan (Penguin, 2022); A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A leading native champion, son of the hero Akbalta, who embodies the tension between the Kyrgyz heroes and the adopted foreigner Almambet. His jealousy of the favoured outsider drives a famous quarrel during the Great Campaign; he dies among the finest heroes lost in the victory."
+ },
+ {
+  "id": "kyrgyz_er_toshtuk",
+  "name": {
+   "primary": "Er Töshtük",
+   "alt": [
+    "Er Töstük",
+    "Er Toshtuk"
+   ],
+   "transliterations": {
+    "kyrgyz": "Эр Төштүк"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "wider-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-quest",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "underworld-journey",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "magic",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the Er Töshtük text; Pertev Naili Boratav (trans.), Er-Töshtük: épopée kirghize (Gallimard, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hero of a self-standing Kyrgyz epic loosely attached to the Manas orbit: the youngest son of old Eleman, husband of the clever Kenjeke. With the psychopomp talking-horse Chal-Kuyruk he journeys to the underworld to recover his soul and overcome a seven-headed monster — a mythological-initiatory tale of the wider cycle."
+ },
+ {
+  "id": "kyrgyz_jakyp",
+  "name": {
+   "primary": "Jakyp",
+   "alt": [
+    "Jaqyp",
+    "Jakyp-bay"
+   ],
+   "transliterations": {
+    "kyrgyz": "Жакып"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "herding",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fatherhood",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "kyrgyz_manas",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'The Birth of Manas', Asia Major 14.2 (1969); W. Radloff, Proben V (1885), the Birth of Manas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'The Birth of Manas', Asia Major 14.2 (1969); W. Radloff, Proben V (1885), the Birth of Manas"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The wealthy but long-childless herdsman whose desperate prayers for a son open the epic. His joy and anxiety at the birth of a supernatural-seeming child establish the dynastic frame; in Radloff's text he is son of Kara-khan and husband of Chyiyrdy, the mother of Manas."
+ },
+ {
+  "id": "kyrgyz_joloi",
+  "name": {
+   "primary": "Joloi",
+   "alt": [
+    "Joloy",
+    "Coloy"
+   ],
+   "transliterations": {
+    "kyrgyz": "Жолой"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "brute-strength",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_koshoy"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977): Joloi's wrestling; the Majmu' al-tawarikh (1792-93), earliest manuscript naming Manas"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The archetypal pagan giant-adversary, a Kalmyk (Oirat) khan of prodigious strength and appetite. He wrestles old Koshoy to a standstill at the Memorial Feast until Manas fells him, and raids Kyrgyz herds alongside Konurbay; he is also the hero of his own related Inner-Asian epic."
+ },
+ {
+  "id": "kyrgyz_kanykey",
+  "name": {
+   "primary": "Kanykey",
+   "alt": [
+    "Qanykey",
+    "Sanirabiga"
+   ],
+   "transliterations": {
+    "kyrgyz": "Каныкей"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "loyalty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "motherhood",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "kyrgyz_semetey",
+    "era": "semetey-cycle",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), episode 'Manas heiratet Kanykey'; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), episode 'Manas heiratet Kanykey'; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The epic's foremost heroine: daughter of Temir Khan of Bukhara, she chooses and tests Manas, heals his wounds, foresees disaster, and after his death secures the survival of the dynasty by spiriting the infant Semetey to safety in her father's land."
+ },
+ {
+  "id": "kyrgyz_kojojash",
+  "name": {
+   "primary": "Kojojash",
+   "alt": [
+    "Kožojaš"
+   ],
+   "transliterations": {
+    "kyrgyz": "Кожожаш"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "wider-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "hunting",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "totemic-taboo",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Daniel Prior et al., Univ. of Washington 'Silk Road Seattle', The Kyrgyz Epic Kojojash; Kyrgyz Academy of Sciences, Kožojaš (Frunze)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hunter-hero of an archaic Kyrgyz 'small epic' representing the oldest stratum of the tradition's worldview. His relentless pursuit of Sur-Echki, the supernatural grey mother-goat who guards the wild game, breaks a sacred limit between humanity and nature; his death dramatises the totemic balance he violated."
+ },
+ {
+  "id": "kyrgyz_kokotoy",
+  "name": {
+   "primary": "Kökötöy",
+   "alt": [
+    "Kukotay",
+    "Köketey"
+   ],
+   "transliterations": {
+    "kyrgyz": "Көкөтөй"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "kyrgyz_bokmurun",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "Ch. Valikhanov, 'Smert' Kukotay-khana i ego pominki' (1856); A. T. Hatto, 'Kukotay and Bok Murun', BSOAS (1969)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Ch. Valikhanov, 'Smert' Kukotay-khana i ego pominki' (1856); A. T. Hatto, 'Kukotay and Bok Murun', BSOAS (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "An immensely rich old Kyrgyz khan whose death and lavish memorial feast give the most-recorded episode of the whole tradition its name. His deathbed instructions set in motion the funeral games at which Manas, Joloi and Konurbay first contend."
+ },
+ {
+  "id": "kyrgyz_konurbay",
+  "name": {
+   "primary": "Konurbay",
+   "alt": [
+    "Qoñurbay",
+    "Konurbai"
+   ],
+   "transliterations": {
+    "kyrgyz": "Коңурбай"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_semetey"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the Great Campaign against Beijin; Sayakbai Karalaev variant, Semetey — Semetey slays the aged Konurbay"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The principal antagonist of the trilogy: the formidable khan of Beijin, rider of the great black winged horse Algara. He leads the Chinese against Manas, helps inflict the wounds from which the hero dies, and survives into extreme old age to be hunted down and killed by Semetey — the thread of enmity binding two generations."
+ },
+ {
+  "id": "kyrgyz_koshoy",
+  "name": {
+   "primary": "Koshoy",
+   "alt": [
+    "Qoshoy",
+    "Koshoi"
+   ],
+   "transliterations": {
+    "kyrgyz": "Кошой"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wrestling",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "elder-authority",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_joloi"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_bokmurun"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977): Koshoy's day-long wrestling match; Ch. Valikhanov, 'Smert' Kukotay-khana' (1856)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The aged khan of the Katagan and revered patriarch of the older Kyrgyz generation. Central to the Memorial Feast, where he wrestles the Kalmyk giant Joloi for a full day until Manas intervenes; the Koshoy-Korgon fortress in the Naryn region bears his name."
+ },
+ {
+  "id": "kyrgyz_manas",
+  "name": {
+   "primary": "Manas",
+   "alt": [
+    "Manas Baatyr",
+    "Er Manas"
+   ],
+   "transliterations": {
+    "kyrgyz": "Манас"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_jakyp"
+  ],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-leadership",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "tribal-unity",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_kanykey"
+   },
+   {
+    "kind": "sworn companion",
+    "personId": "kyrgyz_almambet"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_bakai"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_chubak"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_syrgak"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_ajybay"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_koshoy"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_konurbay"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_joloi"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_neskara"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'The Birth of Manas', Asia Major 14.2 (1969), pp. 217-241; W. Radloff, Proben V (1885), the Manas cycle"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The great unifying khan and warrior-hero of the Kyrgyz and eponym of their national epic. The long-awaited only son of the herdsman Jakyp, he rallies the dispersed tribes, reclaims the Talas homeland from Kalmyk and Chinese overlords, and leads the Great Campaign against Beijin, dying of his wounds soon after — the founding act the rest of the trilogy answers to."
+ },
+ {
+  "id": "kyrgyz_neskara",
+  "name": {
+   "primary": "Neskara",
+   "alt": [
+    "Nezkara"
+   ],
+   "transliterations": {
+    "kyrgyz": "Нескара"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "raiding",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sagymbai Orozbakov variant, Manas — 'The Attack of Neskara'; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A foreign (Kalmyk/Manchu) khan whose early raid on the Kyrgyz helps galvanise Manas's unification of the tribes. He belongs to the ring of hostile rulers — with Joloi and Konurbay — whose aggression drives the epic's central conflict."
+ },
+ {
+  "id": "kyrgyz_seitek",
+  "name": {
+   "primary": "Seitek",
+   "alt": [
+    "Seytek"
+   ],
+   "transliterations": {
+    "kyrgyz": "Сейтек"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_semetey",
+   "kyrgyz_aichurok"
+  ],
+  "temporal": {
+   "era": "seitek-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "restoration-of-justice",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Seitek (Kyrgyz Academy of Sciences edn); UNESCO Representative List, 'Kyrgyz epic trilogy: Manas, Semetey, Seytek' (2013)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hero of the trilogy's closing epic. Secretly raised by Aichürök and Kanykey in concealment from the usurper Kanchoro, he comes of age to overthrow the traitor, avenge his father, and re-establish the Kyrgyz polity — the restoration of justice that completes the dynastic arc."
+ },
+ {
+  "id": "kyrgyz_semetey",
+  "name": {
+   "primary": "Semetey",
+   "alt": [
+    "Semetei"
+   ],
+   "transliterations": {
+    "kyrgyz": "Семетей"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_manas",
+   "kyrgyz_kanykey"
+  ],
+  "temporal": {
+   "era": "semetey-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "restoration",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_aichurok"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_bakai"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_konurbay"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Semetey (Kyrgyz Academy of Sciences edn); A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hero of the trilogy's middle epic. Raised in exile in Bukhara unaware of his lineage, he returns to Talas to reclaim his patrimony, gathers his father's surviving companions, wins the swan-maiden Aichürök, and slays the aged Konurbay to avenge Manas before falling to the treachery of his own follower Kanchoro."
+ },
+ {
+  "id": "kyrgyz_syrgak",
+  "name": {
+   "primary": "Syrgak",
+   "alt": [
+    "Sırgak"
+   ],
+   "transliterations": {
+    "kyrgyz": "Сыргак"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "scouting",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "speed",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the reconnaissance of Almambet and Syrgak; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The young, swift scout among the forty companions, famed for agility and daring. Paired with Almambet on the perilous spying mission toward Beijin, he represents the youthful, fearless edge of the warband and is named among the great heroes who fall to secure the Kyrgyz victory."
  },
  {
   "id": "lakota_anog_ite",

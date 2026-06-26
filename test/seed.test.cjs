@@ -48,8 +48,8 @@ test('seeds the full figure corpus (growing)', () => {
   assert.ok(Object.keys(people).length >= 2700, `expected >= 2700 figures, got ${Object.keys(people).length}`);
 });
 
-test('seeds 238 atlas territories (every tradition mapped)', () => {
-  assert.strictEqual(Object.keys(atlas).length, 238);
+test('seeds 239 atlas territories (every tradition mapped)', () => {
+  assert.strictEqual(Object.keys(atlas).length, 239);
 });
 
 test('exposes the constants the UI reads on window.__PR', () => {
