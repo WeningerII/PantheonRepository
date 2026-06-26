@@ -8,10 +8,10 @@
 // Idempotent. Used by gen-new-figures (transcript notes) and the one-time SEED codemod.
 
 // A sentence is pure plumbing if it carries any of these code/bookkeeping terms.
-const HARD = /externalRef|\bwired to\b|wires to the existing|RECIPROCAL-NEEDED|Reciprocal edge|Reciprocal of the existing|not yet registered|already records|schemaVersion|statusAtConception|status-at-conception|eraOrdering|stress test|stress case|Tests dynastic|the registry uses the disambiguating|registry threshold|individuated-figure threshold|2-entry .* budget/;
+const HARD = /externalRef|\bwired to\b|wires to the existing|RECIPROCAL-NEEDED|Reciprocal edge|Reciprocal of the existing|not yet registered|already records|schemaVersion|statusAtConception|status-at-conception|eraOrdering|stress test|stress case|Tests dynastic|the registry uses the disambiguating|registry threshold|individuated-figure threshold|2-entry .* budget|should add [A-Za-z0-9_]+ to parentIds|lists only .+ as parent and should add/;
 
 // Only touch notes that actually carry a trigger — keeps clean notes byte-identical.
-const TRIGGER = /externalRef|\bwired to\b|wires to the existing|RECIPROCAL|Reciprocal edge|Reciprocal of the existing|already records|id-suffix|Id-suffixed|Disambiguator _|disambiguating id|statusAtConception|status-at-conception|eraOrdering|stress test|stress case|Tests dynastic|not yet registered|schemaVersion|registry threshold|individuated-figure threshold/;
+const TRIGGER = /externalRef|\bwired to\b|wires to the existing|RECIPROCAL|Reciprocal edge|Reciprocal of the existing|already records|id-suffix|Id-suffixed|Disambiguator _|disambiguating id|statusAtConception|status-at-conception|eraOrdering|stress test|stress case|Tests dynastic|not yet registered|schemaVersion|registry threshold|individuated-figure threshold|to parentIds/;
 
 function sanitizeNote(s) {
   if (typeof s !== 'string' || !s || !TRIGGER.test(s)) return s;
@@ -28,6 +28,12 @@ function sanitizeNote(s) {
   t = t.replace(/;\s*(?:the existing figure\s+)?[A-Za-z][A-Za-z0-9_ ]*\s+already\s+records[^.]*\./g, '.');
   //    "Foo; X wired to greek_... ." -> "Foo."
   t = t.replace(/;\s*[A-Za-z][A-Za-z ]*\s+wired\s+to\s+greek_[^.]*\./g, '.');
+  //    "Mother of Tros; the existing figure greek_tros should add greek_x to parentIds." -> "Mother of Tros."
+  //    (a developer TODO that resolved into a real parentIds reconciliation; the
+  //    mythological head clause is the keeper. The standalone-sentence form
+  //    "The existing X entry lists only Y as parent and should add Z to
+  //    parentIds." is dropped by the HARD sentence filter below.)
+  t = t.replace(/;\s*(?:the existing figure\s+)?[A-Za-z][A-Za-z0-9_ ]*\s+should\s+add\s+[A-Za-z0-9_]+\s+to\s+parentIds[^.]*\./gi, '.');
   // 3. Sentence-level strip: drop any remaining sentence carrying a hard marker.
   t = t.split(/(?<=[.!?])\s+/).filter((seg) => !HARD.test(seg)).join(' ');
   // 4. Tidy whitespace/punctuation left by the cuts.

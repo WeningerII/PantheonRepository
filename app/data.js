@@ -4905,7 +4905,7 @@ const buildPeopleSeed = () => {
       id: 'greek_evadne_iamus', schemaVersion: 2,
       name: { primary: 'Evadne', alt: ['Euadne'], transliterations: { greek: 'Εὐάδνη' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
-      sex: 'female', vitalStatus: 'dead', parentIds: [], temporal: { era: 'heroic-age' },
+      sex: 'female', vitalStatus: 'dead', parentIds: ['greek_pitane'], temporal: { era: 'heroic-age' },
       relations: [
         { kind: 'lover', personId: 'greek_hesiod_apollo', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pind. Olymp. 6.28-70' }] },
         { kind: 'mother-of', personId: 'greek_iamus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pind. Olymp. 6.28-70' }] },
@@ -13770,7 +13770,7 @@ const buildPeopleSeed = () => {
       },
       type: 'deity', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse',
       sex: 'male', vitalStatus: 'living',
-      parentIds: [],
+      parentIds: ['norse_borr', 'norse_bestla'],
       temporal: { era: 'mythic-prehistoric' },
       iconography: {
         attributes: [
@@ -112938,7 +112938,7 @@ const NEW_FIGURES = [
       "reference": "Apollod. 3.12.2"
      }
     ],
-    "notes": "Mother of Tros; the existing figure greek_tros should add greek_astyoche_simoeis to parentIds."
+    "notes": "Mother of Tros."
    },
    {
     "kind": "father-of",
@@ -113453,7 +113453,7 @@ const NEW_FIGURES = [
       "reference": "Apollod. 3.12.1-2"
      }
     ],
-    "notes": "Mother of the Dardanian Erichthonius; the existing figure greek_erichthonius should add greek_batea to parentIds."
+    "notes": "Mother of the Dardanian Erichthonius."
    }
   ],
   "notes": "Mortal daughter of Teucer, first king of the Troad, and the wife given to Dardanus when he crossed from Samothrace. By Dardanus she bore Ilus (who died childless) and Erichthonius, through whom the Trojan royal line descends. She is the Batea named in the registry Dardanus entry (some sources call her Arisbe). Mother of the registered figure greek_erichthonius, whose maternity was previously unrecorded."
@@ -116112,7 +116112,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "dead",
   "parentIds": [
-   "greek_dardanus"
+   "greek_dardanus",
+   "greek_batea"
   ],
   "parentRoles": {
    "greek_dardanus": "paternal"
@@ -126956,7 +126957,7 @@ const NEW_FIGURES = [
       "reference": "Pind. Ol. 6.29-35"
      }
     ],
-    "notes": "Mother of Evadne; the existing figure greek_evadne_iamus should add greek_pitane to parentIds."
+    "notes": "Mother of Evadne."
    }
   ],
   "notes": "Naiad-nymph of the Laconian town of Pitane and daughter of the river Eurotas. By Poseidon she bore the violet-haired Evadne, whom she concealed and sent to Arcadia to be reared by Aepytus (Pindar, Olympian 6). She is the Pitana named in the registry Evadne entry. Mother of the registered figure greek_evadne_iamus, whose maternity was previously unrecorded."
@@ -168260,7 +168261,8 @@ const NEW_FIGURES = [
   "sex": "female",
   "vitalStatus": "immortal",
   "parentIds": [
-   "khasi_ka_mei_ramew"
+   "khasi_ka_mei_ramew",
+   "khasi_u_basa"
   ],
   "temporal": {
    "era": "primordial / perpetual"
@@ -168655,7 +168657,7 @@ const NEW_FIGURES = [
       "reference": "P. R. T. Gurdon, The Khasis (1907): the Sun Ka Sngi and Moon U Bnai are the children of Ka Ramew and U Basa"
      }
     ],
-    "notes": "Father of the Sun Ka Sngi (by Ka Mei Ramew). The existing Ka Sngi entry lists only Ka Mei Ramew as parent and should add khasi_u_basa to parentIds."
+    "notes": "Father of the Sun Ka Sngi (by Ka Mei Ramew)."
    },
    {
     "kind": "father-of",
@@ -168666,7 +168668,7 @@ const NEW_FIGURES = [
       "reference": "P. R. T. Gurdon, The Khasis (1907): the Moon U Bnai is a child of Ka Ramew and U Basa"
      }
     ],
-    "notes": "Father of the Moon U Bnai (by Ka Mei Ramew). The existing U Bnai entry lists only Ka Mei Ramew as parent and should add khasi_u_basa to parentIds."
+    "notes": "Father of the Moon U Bnai (by Ka Mei Ramew)."
    }
   ],
   "notes": "Khasi world-guardian deity, husband of the earth-mother Ka Mei Ramew; the existing Ka Mei Ramew, Ka Sngi and U Bnai entries already name him (U Basa) in their prose as her consort and the father of the children. Classed deity. Ramew (earth) and Basa (stone) are the original binary creative pair of the Khasi cosmogony. Father-of edges declared here; the two existing children need khasi_u_basa appended to their parentIds."
@@ -168798,7 +168800,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "immortal",
   "parentIds": [
-   "khasi_ka_mei_ramew"
+   "khasi_ka_mei_ramew",
+   "khasi_u_basa"
   ],
   "temporal": {
    "era": "primordial / perpetual"
@@ -172061,7 +172064,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "immortal",
   "parentIds": [
-   "kiribati_naatibu"
+   "kiribati_naatibu",
+   "kiribati_nei_teukez"
   ],
   "parentRoles": [
    {
@@ -172716,7 +172720,7 @@ const NEW_FIGURES = [
       "reference": "Grimble, Tungaru Traditions (ed. Maude, 1989): Na Kika a son of Na Atibu and Nei Teukez"
      }
     ],
-    "notes": "Mother of the octopus-god Na Kika. The existing Na Kika entry lists only Na Atibu as parent and should add kiribati_nei_teukez to parentIds."
+    "notes": "Mother of the octopus-god Na Kika."
    },
    {
     "kind": "mother-of",
@@ -172727,7 +172731,7 @@ const NEW_FIGURES = [
       "reference": "Grimble, Tungaru Traditions (ed. Maude, 1989): Riiki the eel a child of Na Atibu and Nei Teukez"
      }
     ],
-    "notes": "Mother of the sky-lifting eel Riiki. The existing Riiki entry lists only Na Atibu as parent and should add kiribati_nei_teukez to parentIds."
+    "notes": "Mother of the sky-lifting eel Riiki."
    }
   ],
   "notes": "Kiribati primal mother, named in the creation-genealogy prose of the existing Riiki and Na Kika entries (Na Atibu and Nei Teukez beget the second generation). Classed deity. Mother-of edges to the two existing children declared here; both need kiribati_nei_teukez appended to their parentIds, and Na Atibu needs the reciprocal spouse edge. Her newly-authored children Te Ikawai, Nei Marena and Te Nao carry her in their own parentIds."
@@ -173061,7 +173065,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "immortal",
   "parentIds": [
-   "kiribati_naatibu"
+   "kiribati_naatibu",
+   "kiribati_nei_teukez"
   ],
   "parentRoles": [
    {
@@ -210788,7 +210793,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Gylfaginning 34; Hyndluljóð 40"
      }
     ],
-    "notes": "Mother of the wolf Fenrir by Loki; the existing Fenrir entry should add norse_angrboda to parentIds."
+    "notes": "Mother of the wolf Fenrir by Loki."
    },
    {
     "kind": "mother-of",
@@ -210799,7 +210804,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Gylfaginning 34"
      }
     ],
-    "notes": "Mother of the Midgard-serpent Jǫrmungandr by Loki; existing Jǫrmungandr entry should add norse_angrboda to parentIds."
+    "notes": ""
    },
    {
     "kind": "mother-of",
@@ -210810,7 +210815,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Gylfaginning 34"
      }
     ],
-    "notes": "Mother of Hel by Loki; existing Hel entry already names Angrboða in its notes and should add norse_angrboda to parentIds."
+    "notes": ""
    }
   ]
  },
@@ -211107,7 +211112,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"
      }
     ],
-    "notes": "Mother of Odin by Borr; the existing Odin entry should add norse_bestla to parentIds."
+    "notes": "Mother of Odin by Borr."
    },
    {
     "kind": "mother-of",
@@ -211306,7 +211311,7 @@ const NEW_FIGURES = [
       "reference": "Helgakviða Hundingsbana I, prose; Völsunga saga ch. 9"
      }
     ],
-    "notes": "Mother of Helgi Hundingsbane by Sigmund; the existing Helgi entry lists only Sigmund and should add norse_borghild to parentIds."
+    "notes": "Mother of Helgi Hundingsbane by Sigmund."
    },
    {
     "kind": "enemy",
@@ -211396,7 +211401,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"
      }
     ],
-    "notes": "Father of Odin by Bestla; the existing Odin entry should add norse_borr to parentIds."
+    "notes": "Father of Odin by Bestla."
    },
    {
     "kind": "father-of",
@@ -211718,7 +211723,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_loki"
+   "norse_loki",
+   "norse_angrboda"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -211883,7 +211889,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_baldr"
+   "norse_baldr",
+   "norse_nanna"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -212721,7 +212728,8 @@ const NEW_FIGURES = [
   "sex": "female",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_loki"
+   "norse_loki",
+   "norse_angrboda"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -212828,7 +212836,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "dead",
   "parentIds": [
-   "norse_sigmund"
+   "norse_sigmund",
+   "norse_borghild"
   ],
   "parentRoles": {
    "norse_sigmund": "paternal"
@@ -212986,7 +212995,7 @@ const NEW_FIGURES = [
       "reference": "Völsunga saga ch. 12"
      }
     ],
-    "notes": "Mother of Sigurd by Sigmund, born after the death of Sigmund; the existing Sigurd entry lists only Sigmund and should add norse_hjordis to parentIds."
+    "notes": "Mother of Sigurd by Sigmund, born after the death of Sigmund."
    }
   ]
  },
@@ -213257,7 +213266,8 @@ const NEW_FIGURES = [
   "sex": "other",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_loki"
+   "norse_loki",
+   "norse_angrboda"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -213791,7 +213801,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Gylfaginning 38"
      }
     ],
-    "notes": "Mother of Forseti by Baldr; the existing Forseti entry lists only Baldr and should add norse_nanna to parentIds."
+    "notes": "Mother of Forseti by Baldr."
    }
   ]
  },
@@ -214064,7 +214074,7 @@ const NEW_FIGURES = [
       "reference": "Poetic Edda, Baldrs draumar 11; Snorri Sturluson, Skáldskaparmál"
      }
     ],
-    "notes": "Mother of Váli by Odin; the existing Váli entry names Rindr in its notes and should add norse_rindr to parentIds."
+    "notes": ""
    }
   ]
  },
@@ -214680,7 +214690,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "dead",
   "parentIds": [
-   "norse_sigmund"
+   "norse_sigmund",
+   "norse_hjordis"
   ],
   "parentRoles": {
    "norse_sigmund": "paternal"
@@ -215121,7 +215132,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Norse",
   "sex": "female",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": [
+   "norse_thjazi"
+  ],
   "temporal": {
    "era": "mythic-prehistoric"
   },
@@ -215634,7 +215647,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Skáldskaparmál 1-2; Gylfaginning 23"
      }
     ],
-    "notes": "Father of the winter-goddess Skaði; the existing Skaði entry names Þjazi as her father and should add norse_thjazi to parentIds."
+    "notes": ""
    }
   ]
  },
@@ -215912,7 +215925,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_odin"
+   "norse_odin",
+   "norse_rindr"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -283453,7 +283467,7 @@ const NEW_FIGURES = [
       "reference": "Ferdowsi, Shahnameh (Kay Khosrow, son of Siyavash and Farangis)"
      }
     ],
-    "notes": "Mother of Kay Khosrow; the existing zoroastrian_kay_khosrow should add zoroastrian_farangis to parentIds (it already carries zoroastrian_siyavash)."
+    "notes": "Mother of Kay Khosrow."
    },
    {
     "kind": "spouse",
@@ -283824,7 +283838,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "unknown",
   "parentIds": [
-   "zoroastrian_siyavash"
+   "zoroastrian_siyavash",
+   "zoroastrian_farangis"
   ],
   "temporal": {
    "era": "legendary",

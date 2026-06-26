@@ -340,7 +340,7 @@ test('no figure note leaks internal/plumbing scaffolding to the public detail pa
   // (id-wiring, externalRef provenance, tier-compute mechanics, id-suffix jargon).
   // scripts/sanitize-notes.cjs strips these in the generator + the SEED codemod;
   // this is the permanent invariant that keeps them out.
-  const MARK = /externalRef|\bwired to greek_|RECIPROCAL-NEEDED|Reciprocal edge|Reciprocal of the existing|already records [^.]*\bexternalRef|\bid-suffix\b|\bId-suffixed\b|Disambiguator _|the registry uses the disambiguating|statusAtConception|status-at-conception|eraOrdering|\bstress (?:case|test)\b|Tests dynastic depth/;
+  const MARK = /externalRef|\bwired to greek_|RECIPROCAL-NEEDED|Reciprocal edge|Reciprocal of the existing|already records [^.]*\bexternalRef|\bid-suffix\b|\bId-suffixed\b|Disambiguator _|the registry uses the disambiguating|statusAtConception|status-at-conception|eraOrdering|\bstress (?:case|test)\b|Tests dynastic depth|\bto parentIds\b|should add [A-Za-z0-9_]+ to parent/;
   const hits = [];
   const chk = (s, id, where) => { if (typeof s === 'string' && MARK.test(s)) hits.push(`${id} (${where}): ${s.slice(0, 90)}`); };
   for (const [id, p] of Object.entries(people)) {

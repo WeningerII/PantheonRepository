@@ -74,6 +74,44 @@ const richness = (f) => {
 // targets) — the latter must never be silently merged.
 const relTargets = (f) => new Set((f.relations || []).map((r) => r.personId).filter(Boolean));
 
+// Curated genealogy completions. The kin-completion sweep declared these
+// children's second (divine) parent only via a mother-of/father-of relation on
+// the parent side, and left an explicit "should add X to parentIds" note on it
+// — but never wrote the parent into the child's parentIds. The divinity cascade
+// reads parentIds only, so the missing co-parent was silently counted as the
+// "unnamed mortal half", under-tiering the child. Reconcile each documented
+// pair so both parents are counted. Every parent is an in-corpus figure. All of
+// these are tier-neutral: the children are deity/mortal-typed (axiomatic, so the
+// fraction is fixed regardless of ancestry) or the added co-parent is mortal
+// (already the assumed unnamed half) — the completion only fills in the lineage
+// tree. The two noted children norse_odin and greek_evadne_iamus live in the
+// hand-authored core, not NEW_FIGURES, and are reconciled there directly.
+//
+// DELIBERATELY EXCLUDED: greek_tros. Adding his numen mother Astyoche would lift
+// his fraction quartigod -> demigod and cascade down the Trojan royal line
+// (Ilus, Assaracus, Ganymede, Capys, Laomedon), re-tiering five canonical
+// mortal kings. Those are founder-king figures the author tiered low by
+// mythographic stance (cf. greek_dardanus's tierAuthoredReason); promoting the
+// whole line belongs to that human-reviewed stance set, not an automated
+// completion. Tros's maternity stays recorded via Astyoche's mother-of relation.
+const PARENT_RECONCILE = {
+  greek_erichthonius: ['greek_batea'],
+  khasi_ka_sngi: ['khasi_u_basa'],
+  khasi_u_bnai: ['khasi_u_basa'],
+  kiribati_na_kika: ['kiribati_nei_teukez'],
+  kiribati_riiki: ['kiribati_nei_teukez'],
+  norse_fenrir: ['norse_angrboda'],
+  norse_jormungandr: ['norse_angrboda'],
+  norse_hel: ['norse_angrboda'],
+  norse_forseti: ['norse_nanna'],
+  norse_vali: ['norse_rindr'],
+  norse_skadi: ['norse_thjazi'],
+  norse_helgi_hundingsbane: ['norse_borghild'],
+  norse_sigurd: ['norse_hjordis'],
+  zoroastrian_kay_khosrow: ['zoroastrian_farangis'],
+};
+const PARENT_RECONCILE_RETYPE = {};
+
 const all = new Map();
 const stats = { files: 0, raw: 0, dups: 0, exist: 0, invalid: 0, dupReplaced: 0, dupCollide: 0 };
 for (const { text } of sources()) {
@@ -118,6 +156,16 @@ for (const { text } of sources()) {
     all.set(f.id, f);
   }
 }
+// Apply the curated genealogy completions (see PARENT_RECONCILE above).
+let reconciled = 0;
+for (const [cid, parents] of Object.entries(PARENT_RECONCILE)) {
+  const f = all.get(cid);
+  if (!f) continue; // child lives in the hand-authored core, reconciled there
+  if (!Array.isArray(f.parentIds)) f.parentIds = [];
+  for (const p of parents) if (!f.parentIds.includes(p)) { f.parentIds.push(p); reconciled++; }
+  if (PARENT_RECONCILE_RETYPE[cid]) f.type = PARENT_RECONCILE_RETYPE[cid];
+}
+
 const arr = [...all.values()].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 const block = `/* NEW_FIGURES_START */\nconst NEW_FIGURES = ${JSON.stringify(arr, null, 1)};\n/* NEW_FIGURES_END */`;
 writeSentinelBlock('NEW_FIGURES', block);
