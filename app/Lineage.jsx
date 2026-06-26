@@ -228,6 +228,7 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
   });
 
   const wrapRef = __lRef(null);
+  const prevExpandedSizeRef = __lRef(0);
 
   const tree = __lMemo(
     () => buildLineageTree(entry, byId, childrenOf, upDepth, downDepth),
@@ -242,7 +243,12 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
   __lEffect(() => {
     const wrap = wrapRef.current;
     if (!wrap) return;
-    if (expandedRows.size === 0) { wrap.scrollLeft = 0; return; }
+    const prevSize = prevExpandedSizeRef.current;
+    prevExpandedSizeRef.current = expandedRows.size;
+    if (expandedRows.size === 0) {
+      if (prevSize > 0) wrap.scrollLeft = 0;
+      return;
+    }
     const focusNode = layout.nodes.find(n => n.id === tree.focusId);
     if (!focusNode) return;
     wrap.scrollLeft = Math.max(0, focusNode.x - wrap.clientWidth / 2 + CARD_W / 2);

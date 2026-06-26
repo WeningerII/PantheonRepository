@@ -784,6 +784,7 @@ function Shell() {
               selection.setSelectedId(null);
               setGraphFocusId(id);
             } else {
+              setGraphFocusId(null);
               if (view !== 'browse') setView('browse');
               selection.setSelectedId(id);
             }

@@ -440156,6 +440156,7 @@ function Lineage({
     };
   });
   const wrapRef = __lRef(null);
+  const prevExpandedSizeRef = __lRef(0);
   const tree = __lMemo(() => buildLineageTree(entry, byId, childrenOf, upDepth, downDepth), [entry, byId, childrenOf, upDepth, downDepth]);
   const layout = __lMemo(() => layoutTree(tree, expandedRows), [tree, expandedRows]);
   const edges = __lMemo(() => computeEdges(layout.nodes, byId), [layout, byId]);
@@ -440166,8 +440167,10 @@ function Lineage({
   __lEffect(() => {
     const wrap = wrapRef.current;
     if (!wrap) return;
+    const prevSize = prevExpandedSizeRef.current;
+    prevExpandedSizeRef.current = expandedRows.size;
     if (expandedRows.size === 0) {
-      wrap.scrollLeft = 0;
+      if (prevSize > 0) wrap.scrollLeft = 0;
       return;
     }
     const focusNode = layout.nodes.find(n => n.id === tree.focusId);
@@ -443988,7 +443991,10 @@ function Graph({
     if (n.id === hoverNode) return true;
     if (n.id === focusId) return true;
     if (labelMode === 'all') return true;
-    if (labelMode === 'focus-and-1hop') return n.depth != null && n.depth <= 1;
+    if (labelMode === 'focus-and-1hop') {
+      const d = depthById.get(n.id);
+      return d != null && d <= 1;
+    }
     if (labelMode === 'top-degree') return n.degree >= labelDegreeThreshold;
     return false;
   };
@@ -446233,6 +446239,7 @@ function Shell() {
         selection.setSelectedId(null);
         setGraphFocusId(id);
       } else {
+        setGraphFocusId(null);
         if (view !== 'browse') setView('browse');
         selection.setSelectedId(id);
       }

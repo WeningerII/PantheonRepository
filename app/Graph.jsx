@@ -861,7 +861,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     if (n.id === hoverNode) return true;
     if (n.id === focusId) return true;
     if (labelMode === 'all') return true;
-    if (labelMode === 'focus-and-1hop') return n.depth != null && n.depth <= 1;
+    if (labelMode === 'focus-and-1hop') { const d = depthById.get(n.id); return d != null && d <= 1; }
     if (labelMode === 'top-degree') return n.degree >= labelDegreeThreshold;
     return false;
   };
