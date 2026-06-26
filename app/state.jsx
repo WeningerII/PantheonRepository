@@ -802,8 +802,9 @@ function buildDomainRegistry() {
   }));
   for (const pid of Object.keys(people)) {
     for (const d of (people[pid].domains || [])) {
+      if (!d) continue;
       const sid = d.sphereId || d.id;
-      if (!d || !sid) continue;
+      if (!sid) continue;
       const rec = ensure(sid);
       rec.holders.push({
         personId: pid, contextTag: d.contextTag || null,

@@ -330,7 +330,7 @@ function ItemSources({ sources }) {
 }
 
 // ── Item detail slide-over ───────────────────────────────────────────────────
-function ItemDetail({ item, byId, onClose, onPrev, onNext, onOpenFigure }) {
+function ItemDetail({ item, byId, onClose, onPrev, onNext, canPrev, canNext, onOpenFigure }) {
   // Exit animation mirrors the figure Detail: keep the last item mounted for one
   // beat after `item` goes null, then unmount. (Shell renders this component
   // unconditionally so the null transition — and the slide-out — happens.)
@@ -393,8 +393,8 @@ function ItemDetail({ item, byId, onClose, onPrev, onNext, onOpenFigure }) {
       >
         <div className="detail-bar">
           <div className="nav">
-            <button className="btn btn-ghost btn-sm" onClick={onPrev} title="Previous (k)">↑ Prev</button>
-            <button className="btn btn-ghost btn-sm" onClick={onNext} title="Next (j)">↓ Next</button>
+            <button className="btn btn-ghost btn-sm" onClick={onPrev} disabled={canPrev === false} title="Previous (k)">↑ Prev</button>
+            <button className="btn btn-ghost btn-sm" onClick={onNext} disabled={canNext === false} title="Next (j)">↓ Next</button>
           </div>
           <div className="spacer" />
           <button className="close" onClick={onClose} title="Close (esc)" aria-label="Close">×</button>

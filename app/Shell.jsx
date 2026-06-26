@@ -412,6 +412,12 @@ function Shell() {
     if (nextId) setSelectedDomainId(nextId);
   }, [selectedDomainId, domainList]);
 
+  const selIdxInItemOrder = __sMemo(() => {
+    if (!selectedItemId) return -1;
+    const order = itemOrderRef.current?.length ? itemOrderRef.current : itemList.map(it => it.id);
+    return order.indexOf(selectedItemId);
+  }, [selectedItemId, itemList]);
+
   const selIdxInPowerOrder = __sMemo(() => {
     if (!selectedPowerId) return -1;
     const order = powerOrderRef.current?.length ? powerOrderRef.current : powerList.map(p => p.id);
@@ -446,6 +452,8 @@ function Shell() {
     setView('items');
     selection.setSelectedId(null);
     setGraphFocusId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
     setSelectedItemId(id);
   }, [selection]);
 
@@ -657,6 +665,8 @@ function Shell() {
         onClose={() => setSelectedItemId(null)}
         onPrev={() => moveItem(-1)}
         onNext={() => moveItem(1)}
+        canPrev={selIdxInItemOrder > 0}
+        canNext={selIdxInItemOrder >= 0 && selIdxInItemOrder < (itemOrderRef.current?.length || itemList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
           setSelectedItemId(null);

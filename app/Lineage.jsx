@@ -73,8 +73,8 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
   const siblings = [...sibSet];
 
   // Focus row — half siblings left, focus center, rest right
-  const halfL = siblings.slice(0, Math.floor(siblings.length / 2));
-  const halfR = siblings.slice(Math.floor(siblings.length / 2));
+  const halfL = siblings.slice(0, Math.ceil(siblings.length / 2));
+  const halfR = siblings.slice(Math.ceil(siblings.length / 2));
   const focusRow = [...halfL, focusId, ...halfR];
 
   return {
