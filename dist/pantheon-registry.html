@@ -440587,8 +440587,23 @@ function LifecycleTimeline({
   }
 
   // Decide which stage labels to anchor below vs above to avoid collision.
-  // Stages with x close to their neighbor alternate vertical anchor.
-  const labelSide = plot.nodes.map((_, i) => i % 2 === 0 ? 'above' : 'below');
+  // Sort by x position before assigning sides — nodes in the same era are
+  // visually adjacent, but their originalIndex values may be non-consecutive
+  // (interleaved with stages from other eras), so i%2 on the originalIndex-sorted
+  // array can assign the same side to two fanned nodes in the same column.
+  const labelSide = (() => {
+    const byX = plot.nodes.map((n, i) => ({
+      i,
+      x: n.x
+    })).sort((a, b) => a.x - b.x);
+    const sides = new Array(plot.nodes.length);
+    byX.forEach(({
+      i
+    }, rank) => {
+      sides[i] = rank % 2 === 0 ? 'above' : 'below';
+    });
+    return sides;
+  })();
 
   // Build a legend strip containing only the type-statuses that actually
   // appear in this entry's lifecycle. Without it, the glyph alphabet
