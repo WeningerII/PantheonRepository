@@ -436103,6 +436103,48 @@ function entryAnchorYear(entry) {
   return eraStart(entry?.tradition, t);
 }
 
+// Chronological grouping for the "Era (oldest)" sort. The sort orders rows by
+// absolute anchor year, but era *labels* (e.g. "Primordial") recur across
+// dozens of traditions at wildly different absolute years, so grouping by the
+// raw era label shatters into hundreds of one-row runs. Bucketing the same
+// anchor year the sort uses into coarse, monotonic time bands keeps each
+// header contiguous and matches the chronological axis the user is reading.
+const ERA_BANDS = [{
+  max: -3000,
+  label: 'Before 3000 BCE'
+}, {
+  max: -2000,
+  label: '3000–2000 BCE'
+}, {
+  max: -1000,
+  label: '2000–1000 BCE'
+}, {
+  max: -500,
+  label: '1000–500 BCE'
+}, {
+  max: 0,
+  label: '500–1 BCE'
+}, {
+  max: 500,
+  label: '1–500 CE'
+}, {
+  max: 1000,
+  label: '500–1000 CE'
+}, {
+  max: 1500,
+  label: '1000–1500 CE'
+}, {
+  max: Infinity,
+  label: '1500 CE onward'
+}];
+function eraBandForYear(year) {
+  if (year == null) return 'Undated';
+  for (const b of ERA_BANDS) {
+    if (year <= b.max) return b.label;
+  }
+  return 'Undated';
+}
+
 // ── Tradition pigments ───────────────────────────────────────────────────
 
 const FALLBACK_PIGMENTS = ['#5a7a52', '#7a4a5a', '#a08a5a', '#4a7a6a', '#7a5a3a', '#5a4a7a', '#8a6a3a', '#3a6a5a', '#7a3a4a', '#5a6a3a'];
@@ -436880,6 +436922,8 @@ Object.assign(window, {
   pressable,
   formatEra,
   getEntryDates,
+  entryAnchorYear,
+  eraBandForYear,
   SORTS,
   RELATION_FAMILIES,
   relationFamily,
@@ -437035,7 +437079,7 @@ function groupKeyForEntry(entry, sortMode) {
     case 'tradition':
       return entry.tradition || 'Unsorted';
     case 'era':
-      return window.formatEra(entry.temporal?.era) || '—';
+      return window.eraBandForYear(window.entryAnchorYear(entry));
     case 'type':
       return window.TYPE_TIER[entry.type]?.label || 'Other';
     default:
@@ -437351,7 +437395,23 @@ function layoutTree(tree, expandedRows) {
   const rows = tree.rows.map((row, idx) => {
     const overflow = Math.max(0, row.length - MAX_PER_ROW);
     const expanded = overflow > 0 && expandedRows.has(idx);
-    const visible = expanded ? row : row.slice(0, MAX_PER_ROW);
+    // The focus card must never be the one sliced away. On the focus row the
+    // figure sits centered among its siblings, so with 14+ siblings its index
+    // lands past MAX_PER_ROW and a plain slice(0, MAX_PER_ROW) would drop the
+    // very figure being viewed. When that happens, slide the collapsed window
+    // so it stays centered on the focus; the chip still reports every hidden
+    // card. Other rows keep the simple leading slice.
+    const focusIdx = row.indexOf(tree.focusId);
+    let visible;
+    if (expanded) {
+      visible = row;
+    } else if (focusIdx >= MAX_PER_ROW) {
+      let start = focusIdx - Math.floor(MAX_PER_ROW / 2);
+      start = Math.max(0, Math.min(start, row.length - MAX_PER_ROW));
+      visible = row.slice(start, start + MAX_PER_ROW);
+    } else {
+      visible = row.slice(0, MAX_PER_ROW);
+    }
     const cappedCount = Math.min(row.length, MAX_PER_ROW);
     // Frame width: the capped cards plus the chip slot when this row overflows.
     let cappedW = cappedCount * CARD_W + Math.max(0, cappedCount - 1) * GAP_X;
@@ -443072,6 +443132,20 @@ function Shell() {
     if (nextId) setSelectedDomainId(nextId);
   }, [selectedDomainId, domainList]);
 
+  // Switch top-level view from the view tabs. Clear every detail axis first so
+  // an open slide-over never stays stacked over the new view, and the hash
+  // (written by the URL-sync effect from these same state values) collapses to
+  // a bare #/<view> — mirroring applyHash's mutual-exclusion contract.
+  const changeView = __sCb(v => {
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
+    setView(v);
+  }, [selection]);
+
   // Open an item from anywhere (the index, or a figure's material culture).
   // Opening an item is an Items-view navigation: switch views and clear the
   // figure selection so the two slide-overs never stack.
@@ -443255,7 +443329,7 @@ function Shell() {
   }, /*#__PURE__*/React.createElement(TopBar, {
     totalCount: people.length,
     view: view,
-    setView: setView,
+    setView: changeView,
     query: filters.query,
     setQuery: filters.setQuery,
     searchRef: searchRef,

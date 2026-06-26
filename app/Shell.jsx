@@ -406,6 +406,20 @@ function Shell() {
     if (nextId) setSelectedDomainId(nextId);
   }, [selectedDomainId, domainList]);
 
+  // Switch top-level view from the view tabs. Clear every detail axis first so
+  // an open slide-over never stays stacked over the new view, and the hash
+  // (written by the URL-sync effect from these same state values) collapses to
+  // a bare #/<view> — mirroring applyHash's mutual-exclusion contract.
+  const changeView = __sCb((v) => {
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
+    setView(v);
+  }, [selection]);
+
   // Open an item from anywhere (the index, or a figure's material culture).
   // Opening an item is an Items-view navigation: switch views and clear the
   // figure selection so the two slide-overs never stack.
@@ -520,7 +534,7 @@ function Shell() {
       <TopBar
         totalCount={people.length}
         view={view}
-        setView={setView}
+        setView={changeView}
         query={filters.query}
         setQuery={filters.setQuery}
         searchRef={searchRef}

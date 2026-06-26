@@ -181,6 +181,31 @@ function entryAnchorYear(entry) {
   return eraStart(entry?.tradition, t);
 }
 
+// Chronological grouping for the "Era (oldest)" sort. The sort orders rows by
+// absolute anchor year, but era *labels* (e.g. "Primordial") recur across
+// dozens of traditions at wildly different absolute years, so grouping by the
+// raw era label shatters into hundreds of one-row runs. Bucketing the same
+// anchor year the sort uses into coarse, monotonic time bands keeps each
+// header contiguous and matches the chronological axis the user is reading.
+const ERA_BANDS = [
+  { max: -3000, label: 'Before 3000 BCE' },
+  { max: -2000, label: '3000–2000 BCE' },
+  { max: -1000, label: '2000–1000 BCE' },
+  { max:  -500, label: '1000–500 BCE' },
+  { max:     0, label: '500–1 BCE' },
+  { max:   500, label: '1–500 CE' },
+  { max:  1000, label: '500–1000 CE' },
+  { max:  1500, label: '1000–1500 CE' },
+  { max: Infinity, label: '1500 CE onward' },
+];
+function eraBandForYear(year) {
+  if (year == null) return 'Undated';
+  for (const b of ERA_BANDS) {
+    if (year <= b.max) return b.label;
+  }
+  return 'Undated';
+}
+
 // ── Tradition pigments ───────────────────────────────────────────────────
 
 const FALLBACK_PIGMENTS = [
@@ -841,6 +866,7 @@ Object.assign(window, {
   displayName, altNames, transliterations, pressable,
   formatEra,
   getEntryDates,
+  entryAnchorYear, eraBandForYear,
   SORTS,
   RELATION_FAMILIES, relationFamily,
   colorForTradition,

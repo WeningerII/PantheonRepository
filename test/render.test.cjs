@@ -412,4 +412,53 @@ describe('app renders in a browser-like environment', () => {
     }
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
   });
+
+  test('the focused figure is always present in its own Lineage tree (14+ siblings)', async () => {
+    // Regression: the focus row centers the figure among its siblings, so a
+    // figure with >=14 siblings landed past the 7-card collapse window and a
+    // plain slice(0, MAX_PER_ROW) sliced away the very card being viewed.
+    // greek_apollod_hyllus is a Heraclid with 50+ siblings.
+    await app.openFigure('greek_apollod_hyllus');
+    const focus = app.document.querySelector('.lineage-card.focus');
+    assert.ok(focus, 'the focused figure vanished from its own lineage tree');
+    assert.match(focus.querySelector('.lineage-card-name')?.textContent || '', /Hyllus/,
+      'the focus card is not the figure being viewed');
+    await app.clickButton('Browse');
+  });
+
+  test('switching view tabs with a detail open closes it and drops the id from the hash', async () => {
+    // Regression: the view tabs called setView directly, leaving an open
+    // slide-over stacked over the new view while the hash collapsed to
+    // #/<view> with no id — breaking the mutual-exclusion / hash-source-of-
+    // truth invariant. changeView now clears every detail axis first.
+    await app.openFigure('greek_hesiod_zeus');
+    assert.ok(app.document.querySelector('.detail:not(.closing)'), 'detail did not open');
+    await app.clickButton('Items');
+    assert.ok(app.document.querySelector('.items-view'), 'Items view did not mount');
+    assert.strictEqual(app.document.querySelector('.detail:not(.closing)'), null,
+      'a figure detail stayed open (non-closing) over the new view');
+    assert.strictEqual(app.window.location.hash, '#/items',
+      'hash kept a figure id after switching views');
+    await app.clickButton('Browse');
+  });
+
+  test('Browse "Era (oldest)" sort groups into a few contiguous time bands, not hundreds', async () => {
+    // Regression: grouping by the raw era label while sorting by absolute
+    // anchor year shattered into ~1110 one-row headers (the same label recurs
+    // across dozens of traditions at different years). Grouping now uses the
+    // same chronological axis the sort uses, so each band header is contiguous.
+    await app.clickButton('Browse');
+    await app.clickButton('Era');
+    const headers = [...app.document.querySelectorAll('.browse-group-header .group-label')]
+      .map((h) => h.textContent);
+    assert.ok(headers.length > 0, 'Era sort produced no group headers');
+    assert.ok(headers.length <= 12,
+      `Era sort fragmented into ${headers.length} headers (expected a handful of time bands)`);
+    // Every header label must be unique — a repeated label means a band was
+    // split into non-contiguous runs.
+    assert.strictEqual(new Set(headers).size, headers.length,
+      `Era band headers repeat (non-contiguous): ${headers.join(', ')}`);
+    await app.clickButton('A→Z');
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
 });
