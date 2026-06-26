@@ -107,15 +107,22 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
     const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n;
   });
 
-  const groups = __iMemo(() => {
+  // The on-screen list after BOTH the kind facet and the text query. The
+  // header count and summary line read from this (not the facet-only
+  // `faceted`), so they track the search box too.
+  const visible = __iMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? faceted : faceted.filter((it) => {
+    if (!query) return faceted;
+    return faceted.filter((it) => {
       const hay = [it.displayName, it.id, it.classId, it.kind,
         ...(it.names || []).map((n) => n.value)].join(' ').toLowerCase();
       return hay.includes(query);
     });
+  }, [faceted, q]);
+
+  const groups = __iMemo(() => {
     const byKind = new Map();
-    for (const it of filtered) {
+    for (const it of visible) {
       const k = it.kind || 'other';
       if (!byKind.has(k)) byKind.set(k, []);
       byKind.get(k).push(it);
@@ -123,7 +130,7 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
     return [...byKind.entries()].sort((a, b) =>
       (itemKindRank(a[0]) - itemKindRank(b[0])) ||
       itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
-  }, [faceted, q]);
+  }, [visible]);
 
   // Report the flattened on-screen order (grouped + filtered) so the item
   // detail's Prev/Next walks the same sequence the index displays, not the
@@ -141,9 +148,9 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
     <div className="items-view">
       <div className="items-head">
         <div className="items-head-row">
-          <h2 className="items-title">Items <span className="items-count">{faceted.length}</span></h2>
-          {total > faceted.length ? (
-            <span className="items-showcased">filtered — {faceted.length} of {total}</span>
+          <h2 className="items-title">Items <span className="items-count">{visible.length}</span></h2>
+          {total > visible.length ? (
+            <span className="items-showcased">filtered — {visible.length} of {total}</span>
           ) : showcased > 0 && (
             <span className="items-showcased">{showcased} with a traced custody chain</span>
           )}

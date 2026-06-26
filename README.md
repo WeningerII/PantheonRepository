@@ -1,7 +1,7 @@
 # Pantheon Registry
 
-A multi-tradition registry of mythological and historical figures — **1,849 entries
-across 232 traditions**, presented as a single-page app you can browse, search,
+A multi-tradition registry of mythological and historical figures — **2,773 entries
+across 240 traditions**, presented as a single-page app you can browse, search,
 graph, and map.
 
 The whole thing runs from static files with React loaded over a CDN. There is no
@@ -54,12 +54,12 @@ After that, deploys are automatic.
 ```bash
 npm install   # installs the test-only devDependencies (jsdom + the React/d3/
               # topojson builds the app otherwise loads from a CDN)
-npm test      # node --test
+npm test      # node --test --test-force-exit test/*.test.cjs
 ```
 
 - `test/seed.test.cjs` runs `app/data.js` in an isolated VM and checks the seeded
-  corpus (≥1,845 figures, exactly 238 territories, the `window.__PR` surface,
-  no hard-schema violations, and ceilings on warn-level integrity drift).
+  corpus (the full ~2,770-figure corpus, exactly 238 territories, the `window.__PR`
+  surface, no hard-schema violations, and ceilings on warn-level integrity drift).
 - `test/render.test.cjs` boots the whole app in jsdom and exercises the views,
   keyboard navigation (j/k/Enter/Escape, ⌘K and Ctrl+K), the detail panel, the
   Atlas (against a committed basemap fixture), and the localStorage-quota
@@ -72,6 +72,10 @@ npm test      # node --test
   the seed, corrupted/empty values fall back to the in-memory corpus.
 - `test/manifest.test.cjs` asserts `index.html`, `build.py`, and the test
   harness load the same `app/*.jsx` files in the same order.
+- `test/scenarios.test.cjs` boots the app and walks deterministic end-to-end UI
+  scenarios (browse, search, facets, detail panel, keyboard navigation).
+- `test/tiers.test.cjs` validates the lazily-loadable tiered-data export
+  (`dist/data/`) reproduces the live corpus.
 
 `.github/workflows/ci.yml` runs the suite and byte-exact regeneration on every
 pull request and on pushes to `main` and `claude/**` branches.
@@ -91,6 +95,8 @@ app/
   Graph.jsx                   Cross-tradition relation graph (d3)
   Atlas.jsx                   Natural Earth world map of tradition territories
   Items.jsx                   Material-culture registry: index + item detail
+  Powers.jsx                  Faculties (powers) registry: index + power detail
+  Domains.jsx                 Domains registry: index + domain detail
   Detail.jsx                  Slide-over entry detail panel
   Lineage.jsx                 Per-entry parentage tree (ancestors / descendants)
   Lifecycle.jsx               Era-scaled timeline of a figure's status transitions
@@ -133,7 +139,7 @@ dist/
   in-memory seed otherwise.
 - **Views.** Figures are organized along three preattentive axes — **type tier**
   (deity → demigod → quartigod → scion → mortal), **tradition**, and **era** —
-  and explored through Browse, Graph, Atlas, Items, and per-figure Lineage /
+  and explored through Browse, Graph, Atlas, Items, Powers, Domains, and per-figure Lineage /
   Lifecycle panels.
 - **No framework tooling.** React 18 and friends come from `cdnjs.cloudflare.com`,
   every tag pinned with a Subresource Integrity hash. Development transforms JSX
@@ -146,3 +152,13 @@ dist/
 - Python 3 (for the dev server and the build script).
 - Node.js + npm (for `build.py`'s Babel transform, `npm test`, and the
   generator scripts).
+
+## License
+
+The **source code** is licensed under the [MIT License](LICENSE).
+
+The **figure data** — the seeded corpus in `app/data.js`, the cited research in
+`data-sources/`, and the exported data tiers in `dist/data/` — is licensed under
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/):
+reuse it freely with attribution. Each figure additionally cites its underlying
+primary and secondary scholarly sources.

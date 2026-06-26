@@ -69,7 +69,15 @@ const flags = (p) =>
 function buildPowers(P, ids, inh) {
   const reg = {};
   const ensure = (id) => reg[id] || (reg[id] = { id, displayName: humanize(id), domainTag: null, holders: [], inheritors: [] });
-  for (const id of ids) for (const f of (P[id].faculties || [])) {
+  // Iterate figures in corpus insertion order — NOT the sorted `ids` used for
+  // sharding. The "first declarer whose displayName still equals humanize(id)
+  // wins" rule below is order-sensitive, and the live app's power registry
+  // (app/state.jsx buildPowerRegistry) walks Object.keys(seedPeople) in
+  // insertion order. Iterating sorted ids here picked a different declarer for
+  // 6 powers, writing ungrammatical mid-sentence fragments into powers.json
+  // that disagreed with what the app shows. Matching the runtime's order keeps
+  // the artifact and the registry in lockstep.
+  for (const id of Object.keys(P)) for (const f of (P[id].faculties || [])) {
     if (!f || !f.id) continue;
     const r = ensure(f.id);
     if (f.name && r.displayName === humanize(f.id)) r.displayName = f.name;

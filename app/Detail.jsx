@@ -465,8 +465,9 @@ function Chapter({ label }) {
 
 // Iconography — the figure's visual attributes: emblems/objects they bear,
 // their sacred animals and plants. Each item is { id, term?, notes?, sources }.
-// (Authored for 240 figures but never rendered until now — Zeus's thunderbolt,
-// eagle, and oak; Apollo's lyre, silver bow, and laurel.)
+// (Authored across the deity/demigod tier but never rendered until the
+// iconography section was added — Zeus's thunderbolt, eagle, and oak;
+// Apollo's lyre, silver bow, and laurel.)
 function IconographyBlock({ entry }) {
   const ico = entry.iconography;
   if (!ico) return null;
@@ -819,7 +820,9 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
             flavor="epithets"
             title="Epithets"
             items={entry.epithets}
-            name={e => e.epithetId || (typeof e.name === 'string' ? e.name : null) || safeLabel(e)}
+            name={e => e.epithetId || (typeof e.name === 'string' ? e.name : null)
+              || (typeof e.translation === 'string' ? e.translation : null)
+              || (typeof e.original === 'string' ? e.original : null) || safeLabel(e)}
             metas={e => [e.language, e.transliteration, e.contextTag]}
             notes={e => e.notes}
             nameStyle="rich-row-name-epithet"

@@ -5619,7 +5619,7 @@ Here is the batch of missing attested Hindu figures. I authored the full core pa
   ]
  },
  {
-  "id": "hindu_ganesha_consort_placeholder_removed",
+  "id": "hindu_shesha",
   "name": {
    "primary": "Sheshanaga",
    "alt": [
@@ -5704,7 +5704,7 @@ A note on scope and decisions:
 
 - Existing IDs were not recreated. The corpus already had the Vedic devas Indra, Surya, Vayu, the two Ashvins, plus Dharma and the whole Mahabharata lineage; I left all of those alone. Note: `hindu_dharma` already exists, so I authored Yama explicitly as the death-god/judge (`hindu_yama`) and flagged the distinction in its notes.
 - Parentage integrity: every `parentIds` entry points only to an existing-corpus ID or one authored in this same batch. To make the marquee figures' lineages valid I added the necessary parents as supporting entries: Vasudeva/Devaki/Rohini (for Krishna/Balarama), Dasharatha/Kausalya/Sumitra (for Rama/Lakshmana), and Vishrava/Kaikesi/Kashyapa/Vinata (for Ravana, Kubera, Garuda, Aruna). Varuna→Aditi, Yama/Sugriva→Surya, Vali→Indra, Ganesha/Kartikeya→Shiva+Parvati, Kamadeva→Brahma, etc.
-- Coverage: all 31 figures named in the brief plus well-attested additions tightly bound to them — Vibhishana, Kumbhakarna, Indrajit, Sugriva, Vali, Angada, Jatayu, Aruna, Rati, and Shesha (the last object carries a leftover descriptive id string `hindu_ganesha_consort_placeholder_removed`; its actual subject is Shesha — if you want a cleaner id, rename it to `hindu_shesha` on ingest).
+- Coverage: all 31 figures named in the brief plus well-attested additions tightly bound to them — Vibhishana, Kumbhakarna, Indrajit, Sugriva, Vali, Angada, Jatayu, Aruna, Rati, and Shesha (the last object carries a leftover descriptive id string `hindu_shesha`; its actual subject is Shesha — if you want a cleaner id, rename it to `hindu_shesha` on ingest).
 - Sourcing: existence claims and load-bearing items/faculties are cited to primary texts (Rigveda, Atharvaveda, Mahabharata, Ramayana, principal Puranas, Devi Mahatmya, Bhagavad Gita). Where a detail is genuinely only post-Vedic iconographic convention (e.g., Agni's ram, Varuna's makara, Lakshmi's owl, Soma's antelope chariot, Kartikeya's vel), I marked the source `kind:"secondary"` rather than overstate a primary attestation. No figures or attributes were fabricated.
 
-One correction you should make on ingest: the final object's `id` is a placeholder leftover (`hindu_ganesha_consort_placeholder_removed`) but describes Shesha — rename it to `hindu_shesha`.
+One correction you should make on ingest: the final object's `id` is a placeholder leftover (`hindu_shesha`) but describes Shesha — rename it to `hindu_shesha`.

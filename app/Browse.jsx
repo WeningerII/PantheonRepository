@@ -112,7 +112,7 @@ function groupKeyForEntry(entry, sortMode) {
       return /[A-Z]/.test(ch) ? ch : '#';
     }
     case 'tradition': return entry.tradition || 'Unsorted';
-    case 'era':       return window.formatEra(entry.temporal?.era) || '—';
+    case 'era':       return window.eraBandForYear(window.entryAnchorYear(entry));
     case 'type':      return window.TYPE_TIER[entry.type]?.label || 'Other';
     default:          return null;
   }

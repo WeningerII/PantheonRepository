@@ -8335,7 +8335,7 @@ const buildPeopleSeed = () => {
       id: 'greek_evadne_iamus', schemaVersion: 2,
       name: { primary: 'Evadne', alt: ['Euadne'], transliterations: { greek: 'Εὐάδνη' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
-      sex: 'female', vitalStatus: 'dead', parentIds: [], temporal: { era: 'heroic-age' },
+      sex: 'female', vitalStatus: 'dead', parentIds: ['greek_pitane'], temporal: { era: 'heroic-age' },
       relations: [
         { kind: 'lover', personId: 'greek_hesiod_apollo', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pind. Olymp. 6.28-70' }] },
         { kind: 'mother-of', personId: 'greek_iamus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pind. Olymp. 6.28-70' }] },
@@ -17200,7 +17200,7 @@ const buildPeopleSeed = () => {
       },
       type: 'deity', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse',
       sex: 'male', vitalStatus: 'living',
-      parentIds: [],
+      parentIds: ['norse_borr', 'norse_bestla'],
       temporal: { era: 'mythic-prehistoric' },
       iconography: {
         attributes: [
@@ -116368,7 +116368,7 @@ const NEW_FIGURES = [
       "reference": "Apollod. 3.12.2"
      }
     ],
-    "notes": "Mother of Tros; the existing figure greek_tros should add greek_astyoche_simoeis to parentIds."
+    "notes": "Mother of Tros."
    },
    {
     "kind": "father-of",
@@ -116883,7 +116883,7 @@ const NEW_FIGURES = [
       "reference": "Apollod. 3.12.1-2"
      }
     ],
-    "notes": "Mother of the Dardanian Erichthonius; the existing figure greek_erichthonius should add greek_batea to parentIds."
+    "notes": "Mother of the Dardanian Erichthonius."
    }
   ],
   "notes": "Mortal daughter of Teucer, first king of the Troad, and the wife given to Dardanus when he crossed from Samothrace. By Dardanus she bore Ilus (who died childless) and Erichthonius, through whom the Trojan royal line descends. She is the Batea named in the registry Dardanus entry (some sources call her Arisbe). Mother of the registered figure greek_erichthonius, whose maternity was previously unrecorded."
@@ -119542,7 +119542,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "dead",
   "parentIds": [
-   "greek_dardanus"
+   "greek_dardanus",
+   "greek_batea"
   ],
   "parentRoles": {
    "greek_dardanus": "paternal"
@@ -130386,7 +130387,7 @@ const NEW_FIGURES = [
       "reference": "Pind. Ol. 6.29-35"
      }
     ],
-    "notes": "Mother of Evadne; the existing figure greek_evadne_iamus should add greek_pitane to parentIds."
+    "notes": "Mother of Evadne."
    }
   ],
   "notes": "Naiad-nymph of the Laconian town of Pitane and daughter of the river Eurotas. By Poseidon she bore the violet-haired Evadne, whom she concealed and sent to Arcadia to be reared by Aepytus (Pindar, Olympian 6). She is the Pitana named in the registry Evadne entry. Mother of the registered figure greek_evadne_iamus, whose maternity was previously unrecorded."
@@ -139259,8 +139260,8 @@ const NEW_FIGURES = [
     "Ambalika of Kashi"
    ],
    "transliterations": {
-    "sanskrit": "अम्बालिका",
-    "iast": "Ambalika"
+    "iast": "Ambālikā",
+    "devanagari": "अम्बालिका"
    }
   },
   "type": "mortal",
@@ -139271,37 +139272,48 @@ const NEW_FIGURES = [
   "origin": "canon",
   "parentIds": [],
   "temporal": {
-   "era": "dvapara-yuga"
+   "era": "epic-period"
   },
   "lifecycle": [
    {
     "typeStatus": "mortal",
-    "era": "dvapara-yuga",
+    "era": "epic-period",
     "eraOrdering": 0,
-    "startEvent": "princess-of-Kashi-queen-of-Vichitravirya",
+    "startEvent": "abduction-from-Kashi-svayamvara-by-Bhishma",
     "sources": [
      {
       "kind": "primary",
-      "reference": "Mahabharata Adi Parva 102; 105"
+      "reference": "Mahabharata, Adi Parva 102"
      }
     ],
-    "notes": "Youngest daughter of the king of Kashi, taken with her sister Ambika by Bhishma to wed Vichitravirya of Hastinapura, who died heirless."
+    "notes": "Youngest of the three Kashi princesses, daughter of the king of Kashi; carried off with her sister Ambika by Bhishma to be wed to Vichitravirya."
    },
    {
     "typeStatus": "mortal",
-    "era": "dvapara-yuga",
+    "era": "epic-period",
     "eraOrdering": 1,
-    "startEvent": "mother-of-Pandu-by-niyoga-with-Vyasa",
+    "startEvent": "niyoga-with-Vyasa-and-birth-of-Pandu",
     "sources": [
      {
       "kind": "primary",
-      "reference": "Mahabharata Adi Parva 105-106"
+      "reference": "Mahabharata, Adi Parva 100"
      }
     ],
-    "notes": "By the niyoga rite with the sage Vyasa she bore Pandu; her turning pale at the sight of the unkempt sage is given as the cause of Pandus pallid complexion. Grandmother of the Pandavas."
+    "notes": "After Vichitravirya died childless she lay with Vyasa by niyoga; she turned pale with fear, and so bore the pale Pandu."
    }
   ],
-  "domains": [],
+  "domains": [
+   {
+    "sphereId": "queenship-of-Hastinapura",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva 102"
+     }
+    ]
+   }
+  ],
   "faculties": [],
   "materialCulture": [],
   "sources": [
@@ -139310,32 +139322,44 @@ const NEW_FIGURES = [
     "citations": [
      {
       "kind": "primary",
-      "reference": "Mahabharata (BORI) Adi Parva 102; 105-106"
+      "reference": "Mahabharata, Adi Parva 100-102"
      }
     ]
    }
   ],
   "relations": [
    {
-    "kind": "parent-of",
-    "personId": "hindu_pandu",
+    "kind": "sibling",
+    "personId": "hindu_ambika",
     "sources": [
      {
       "kind": "primary",
-      "reference": "Mahabharata Adi Parva 105-106"
+      "reference": "Mahabharata, Adi Parva 102"
      }
     ],
-    "notes": "Mother of Pandu by Vyasa through niyoga."
-   },
-   {
-    "kind": "sibling",
-    "personId": "hindu_ambika",
-    "notes": ""
+    "notes": "Sister, fellow Kashi princess and co-wife of Vichitravirya."
    },
    {
     "kind": "spouse",
     "personId": "hindu_vichitravirya",
-    "notes": ""
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva 102"
+     }
+    ],
+    "notes": "Junior wife of Vichitravirya."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "hindu_pandu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva 100"
+     }
+    ],
+    "notes": "Mother of the pale Pandu by Vyasa under niyoga."
    }
   ]
  },
@@ -141572,85 +141596,6 @@ const NEW_FIGURES = [
     "notes": "Full sibling — shares the same attested parentage (Shiva & Parvati) per the figures' cited genealogy."
    }
   ]
- },
- {
-  "id": "hindu_ganesha_consort_placeholder_removed",
-  "name": {
-   "primary": "Sheshanaga",
-   "alt": [
-    "Shesha",
-    "Ananta"
-   ],
-   "transliterations": {
-    "devanagari": "शेषनाग"
-   }
-  },
-  "type": "deity",
-  "origin": "canon",
-  "tradition": "Hindu",
-  "primaryTradition": "Hindu",
-  "sex": "male",
-  "vitalStatus": null,
-  "parentIds": [
-   "hindu_kashyapa"
-  ],
-  "temporal": {
-   "era": "primordial"
-  },
-  "domains": [
-   {
-    "sphereId": "cosmic-support",
-    "contextTag": "lifelong",
-    "term": {
-     "value": "आधार",
-     "script": "Devanagari",
-     "rom": "ādhāra"
-    },
-    "sources": [
-     {
-      "kind": "primary",
-      "reference": "Bhagavata Purana 5.25"
-     }
-    ]
-   }
-  ],
-  "faculties": [
-   {
-    "id": "support-the-worlds",
-    "name": "Hold up all the worlds upon his hoods",
-    "term": {
-     "value": "लोकधारण",
-     "script": "Devanagari",
-     "rom": "loka-dhāraṇa"
-    },
-    "inheritability": "none",
-    "notes": "The endless serpent bearing the earth and Vishnu's couch",
-    "sources": [
-     {
-      "kind": "primary",
-      "reference": "Bhagavata Purana 5.25"
-     }
-    ]
-   }
-  ],
-  "materialCulture": [],
-  "sources": [
-   {
-    "claim": "existence",
-    "citations": [
-     {
-      "kind": "primary",
-      "reference": "Mahabharata, Adi Parva"
-     },
-     {
-      "kind": "primary",
-      "reference": "Bhagavata Purana"
-     }
-    ],
-    "weight": "primary"
-   }
-  ],
-  "notes": "The cosmic serpent Ananta-Shesha, couch of Vishnu and bearer of the worlds"
  },
  {
   "id": "hindu_garuda",
@@ -145326,6 +145271,85 @@ const NEW_FIGURES = [
     "notes": "Half-brother of Bharata, whose loyalist he was."
    }
   ]
+ },
+ {
+  "id": "hindu_shesha",
+  "name": {
+   "primary": "Sheshanaga",
+   "alt": [
+    "Shesha",
+    "Ananta"
+   ],
+   "transliterations": {
+    "devanagari": "शेषनाग"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hindu",
+  "primaryTradition": "Hindu",
+  "sex": "male",
+  "vitalStatus": null,
+  "parentIds": [
+   "hindu_kashyapa"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "cosmic-support",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "आधार",
+     "script": "Devanagari",
+     "rom": "ādhāra"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhagavata Purana 5.25"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "support-the-worlds",
+    "name": "Hold up all the worlds upon his hoods",
+    "term": {
+     "value": "लोकधारण",
+     "script": "Devanagari",
+     "rom": "loka-dhāraṇa"
+    },
+    "inheritability": "none",
+    "notes": "The endless serpent bearing the earth and Vishnu's couch",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhagavata Purana 5.25"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva"
+     },
+     {
+      "kind": "primary",
+      "reference": "Bhagavata Purana"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The cosmic serpent Ananta-Shesha, couch of Vishnu and bearer of the worlds"
  },
  {
   "id": "hindu_shiva",
@@ -171667,7 +171691,8 @@ const NEW_FIGURES = [
   "sex": "female",
   "vitalStatus": "immortal",
   "parentIds": [
-   "khasi_ka_mei_ramew"
+   "khasi_ka_mei_ramew",
+   "khasi_u_basa"
   ],
   "temporal": {
    "era": "primordial / perpetual"
@@ -172062,7 +172087,7 @@ const NEW_FIGURES = [
       "reference": "P. R. T. Gurdon, The Khasis (1907): the Sun Ka Sngi and Moon U Bnai are the children of Ka Ramew and U Basa"
      }
     ],
-    "notes": "Father of the Sun Ka Sngi (by Ka Mei Ramew). The existing Ka Sngi entry lists only Ka Mei Ramew as parent and should add khasi_u_basa to parentIds."
+    "notes": "Father of the Sun Ka Sngi (by Ka Mei Ramew)."
    },
    {
     "kind": "father-of",
@@ -172073,7 +172098,7 @@ const NEW_FIGURES = [
       "reference": "P. R. T. Gurdon, The Khasis (1907): the Moon U Bnai is a child of Ka Ramew and U Basa"
      }
     ],
-    "notes": "Father of the Moon U Bnai (by Ka Mei Ramew). The existing U Bnai entry lists only Ka Mei Ramew as parent and should add khasi_u_basa to parentIds."
+    "notes": "Father of the Moon U Bnai (by Ka Mei Ramew)."
    }
   ],
   "notes": "Khasi world-guardian deity, husband of the earth-mother Ka Mei Ramew; the existing Ka Mei Ramew, Ka Sngi and U Bnai entries already name him (U Basa) in their prose as her consort and the father of the children. Classed deity. Ramew (earth) and Basa (stone) are the original binary creative pair of the Khasi cosmogony. Father-of edges declared here; the two existing children need khasi_u_basa appended to their parentIds."
@@ -172205,7 +172230,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "immortal",
   "parentIds": [
-   "khasi_ka_mei_ramew"
+   "khasi_ka_mei_ramew",
+   "khasi_u_basa"
   ],
   "temporal": {
    "era": "primordial / perpetual"
@@ -175468,7 +175494,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "immortal",
   "parentIds": [
-   "kiribati_naatibu"
+   "kiribati_naatibu",
+   "kiribati_nei_teukez"
   ],
   "parentRoles": [
    {
@@ -176123,7 +176150,7 @@ const NEW_FIGURES = [
       "reference": "Grimble, Tungaru Traditions (ed. Maude, 1989): Na Kika a son of Na Atibu and Nei Teukez"
      }
     ],
-    "notes": "Mother of the octopus-god Na Kika. The existing Na Kika entry lists only Na Atibu as parent and should add kiribati_nei_teukez to parentIds."
+    "notes": "Mother of the octopus-god Na Kika."
    },
    {
     "kind": "mother-of",
@@ -176134,7 +176161,7 @@ const NEW_FIGURES = [
       "reference": "Grimble, Tungaru Traditions (ed. Maude, 1989): Riiki the eel a child of Na Atibu and Nei Teukez"
      }
     ],
-    "notes": "Mother of the sky-lifting eel Riiki. The existing Riiki entry lists only Na Atibu as parent and should add kiribati_nei_teukez to parentIds."
+    "notes": "Mother of the sky-lifting eel Riiki."
    }
   ],
   "notes": "Kiribati primal mother, named in the creation-genealogy prose of the existing Riiki and Na Kika entries (Na Atibu and Nei Teukez beget the second generation). Classed deity. Mother-of edges to the two existing children declared here; both need kiribati_nei_teukez appended to their parentIds, and Na Atibu needs the reciprocal spouse edge. Her newly-authored children Te Ikawai, Nei Marena and Te Nao carry her in their own parentIds."
@@ -176468,7 +176495,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "immortal",
   "parentIds": [
-   "kiribati_naatibu"
+   "kiribati_naatibu",
+   "kiribati_nei_teukez"
   ],
   "parentRoles": [
    {
@@ -214195,7 +214223,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Gylfaginning 34; Hyndluljóð 40"
      }
     ],
-    "notes": "Mother of the wolf Fenrir by Loki; the existing Fenrir entry should add norse_angrboda to parentIds."
+    "notes": "Mother of the wolf Fenrir by Loki."
    },
    {
     "kind": "mother-of",
@@ -214206,7 +214234,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Gylfaginning 34"
      }
     ],
-    "notes": "Mother of the Midgard-serpent Jǫrmungandr by Loki; existing Jǫrmungandr entry should add norse_angrboda to parentIds."
+    "notes": ""
    },
    {
     "kind": "mother-of",
@@ -214217,7 +214245,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Gylfaginning 34"
      }
     ],
-    "notes": "Mother of Hel by Loki; existing Hel entry already names Angrboða in its notes and should add norse_angrboda to parentIds."
+    "notes": ""
    }
   ]
  },
@@ -214514,7 +214542,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"
      }
     ],
-    "notes": "Mother of Odin by Borr; the existing Odin entry should add norse_bestla to parentIds."
+    "notes": "Mother of Odin by Borr."
    },
    {
     "kind": "mother-of",
@@ -214713,7 +214741,7 @@ const NEW_FIGURES = [
       "reference": "Helgakviða Hundingsbana I, prose; Völsunga saga ch. 9"
      }
     ],
-    "notes": "Mother of Helgi Hundingsbane by Sigmund; the existing Helgi entry lists only Sigmund and should add norse_borghild to parentIds."
+    "notes": "Mother of Helgi Hundingsbane by Sigmund."
    },
    {
     "kind": "enemy",
@@ -214803,7 +214831,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 6"
      }
     ],
-    "notes": "Father of Odin by Bestla; the existing Odin entry should add norse_borr to parentIds."
+    "notes": "Father of Odin by Bestla."
    },
    {
     "kind": "father-of",
@@ -215125,7 +215153,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_loki"
+   "norse_loki",
+   "norse_angrboda"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -215290,7 +215319,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_baldr"
+   "norse_baldr",
+   "norse_nanna"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -216128,7 +216158,8 @@ const NEW_FIGURES = [
   "sex": "female",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_loki"
+   "norse_loki",
+   "norse_angrboda"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -216235,7 +216266,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "dead",
   "parentIds": [
-   "norse_sigmund"
+   "norse_sigmund",
+   "norse_borghild"
   ],
   "parentRoles": {
    "norse_sigmund": "paternal"
@@ -216393,7 +216425,7 @@ const NEW_FIGURES = [
       "reference": "Völsunga saga ch. 12"
      }
     ],
-    "notes": "Mother of Sigurd by Sigmund, born after the death of Sigmund; the existing Sigurd entry lists only Sigmund and should add norse_hjordis to parentIds."
+    "notes": "Mother of Sigurd by Sigmund, born after the death of Sigmund."
    }
   ]
  },
@@ -216664,7 +216696,8 @@ const NEW_FIGURES = [
   "sex": "other",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_loki"
+   "norse_loki",
+   "norse_angrboda"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -217198,7 +217231,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Gylfaginning 38"
      }
     ],
-    "notes": "Mother of Forseti by Baldr; the existing Forseti entry lists only Baldr and should add norse_nanna to parentIds."
+    "notes": "Mother of Forseti by Baldr."
    }
   ]
  },
@@ -217471,7 +217504,7 @@ const NEW_FIGURES = [
       "reference": "Poetic Edda, Baldrs draumar 11; Snorri Sturluson, Skáldskaparmál"
      }
     ],
-    "notes": "Mother of Váli by Odin; the existing Váli entry names Rindr in its notes and should add norse_rindr to parentIds."
+    "notes": ""
    }
   ]
  },
@@ -218087,7 +218120,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "dead",
   "parentIds": [
-   "norse_sigmund"
+   "norse_sigmund",
+   "norse_hjordis"
   ],
   "parentRoles": {
    "norse_sigmund": "paternal"
@@ -218528,7 +218562,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Norse",
   "sex": "female",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": [
+   "norse_thjazi"
+  ],
   "temporal": {
    "era": "mythic-prehistoric"
   },
@@ -219041,7 +219077,7 @@ const NEW_FIGURES = [
       "reference": "Snorri Sturluson, Skáldskaparmál 1-2; Gylfaginning 23"
      }
     ],
-    "notes": "Father of the winter-goddess Skaði; the existing Skaði entry names Þjazi as her father and should add norse_thjazi to parentIds."
+    "notes": ""
    }
   ]
  },
@@ -219319,7 +219355,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "living",
   "parentIds": [
-   "norse_odin"
+   "norse_odin",
+   "norse_rindr"
   ],
   "temporal": {
    "era": "mythic-prehistoric"
@@ -286860,7 +286897,7 @@ const NEW_FIGURES = [
       "reference": "Ferdowsi, Shahnameh (Kay Khosrow, son of Siyavash and Farangis)"
      }
     ],
-    "notes": "Mother of Kay Khosrow; the existing zoroastrian_kay_khosrow should add zoroastrian_farangis to parentIds (it already carries zoroastrian_siyavash)."
+    "notes": "Mother of Kay Khosrow."
    },
    {
     "kind": "spouse",
@@ -287231,7 +287268,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "unknown",
   "parentIds": [
-   "zoroastrian_siyavash"
+   "zoroastrian_siyavash",
+   "zoroastrian_farangis"
   ],
   "temporal": {
    "era": "legendary",
@@ -308166,7 +308204,7 @@ const CULT_SITES = {
       ]
     }
   ],
-  "hindu_ganesha_consort_placeholder_removed": [
+  "hindu_shesha": [
     {
       "placeName": "Sri Ananta Padmanabhaswamy Temple, Thiruvananthapuram, Kerala (Vishnu on Ananta-Shesha)",
       "type": "temple",
@@ -321251,7 +321289,7 @@ const PRIESTHOODS = {
       ]
     }
   ],
-  "hindu_ganesha_consort_placeholder_removed": [
+  "hindu_shesha": [
     {
       "title": "Nambudiri-tradition priests of Śrī Anantapadmanābha (Viṣṇu reclining on Śeṣa) at Thiruvananthapuram",
       "type": "temple-priest",
@@ -344175,7 +344213,7 @@ const ETYMOLOGY = {
       }
     ]
   },
-  "hindu_ganesha_consort_placeholder_removed": {
+  "hindu_shesha": {
     "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
     "etymology": "Sanskrit शेष (Śeṣa), the cosmic serpent, means \"remainder, residue, that which remains\" (from śiṣ- \"to leave (over), remain\"), denoting the divine remnant that endures after each cosmic dissolution. His alt-name अनन्त (Ananta) is an-anta \"endless, infinite\" (privative a(n)- + anta \"end\"). Mayrhofer derives śiṣ- and ánta-. Monier-Williams glosses Śeṣa \"remainder; the serpent Ananta, couch of Viṣṇu.\"",
     "sources": [
@@ -354772,7 +354810,7 @@ const CULT_PRACTICES_X = {
       ]
     }
   ],
-  "hindu_ganesha_consort_placeholder_removed": [
+  "hindu_shesha": [
     {
       "name": "Nāga Pañcamī (Ananta-Śeṣa)",
       "term": {
@@ -362287,7 +362325,7 @@ const EPITHETS_X = {
       ]
     }
   ],
-  "hindu_ganesha_consort_placeholder_removed": [
+  "hindu_shesha": [
     {
       "original": "अनन्त",
       "scriptId": "devanagari",
@@ -367621,7 +367659,7 @@ const ICONOGRAPHY_X = {
       }
     ]
   },
-  "hindu_ganesha_consort_placeholder_removed": {
+  "hindu_shesha": {
     "attributes": [
       {
         "id": "multiple-hoods",
@@ -436103,6 +436141,48 @@ function entryAnchorYear(entry) {
   return eraStart(entry?.tradition, t);
 }
 
+// Chronological grouping for the "Era (oldest)" sort. The sort orders rows by
+// absolute anchor year, but era *labels* (e.g. "Primordial") recur across
+// dozens of traditions at wildly different absolute years, so grouping by the
+// raw era label shatters into hundreds of one-row runs. Bucketing the same
+// anchor year the sort uses into coarse, monotonic time bands keeps each
+// header contiguous and matches the chronological axis the user is reading.
+const ERA_BANDS = [{
+  max: -3000,
+  label: 'Before 3000 BCE'
+}, {
+  max: -2000,
+  label: '3000–2000 BCE'
+}, {
+  max: -1000,
+  label: '2000–1000 BCE'
+}, {
+  max: -500,
+  label: '1000–500 BCE'
+}, {
+  max: 0,
+  label: '500–1 BCE'
+}, {
+  max: 500,
+  label: '1–500 CE'
+}, {
+  max: 1000,
+  label: '500–1000 CE'
+}, {
+  max: 1500,
+  label: '1000–1500 CE'
+}, {
+  max: Infinity,
+  label: '1500 CE onward'
+}];
+function eraBandForYear(year) {
+  if (year == null) return 'Undated';
+  for (const b of ERA_BANDS) {
+    if (year <= b.max) return b.label;
+  }
+  return 'Undated';
+}
+
 // ── Tradition pigments ───────────────────────────────────────────────────
 
 const FALLBACK_PIGMENTS = ['#5a7a52', '#7a4a5a', '#a08a5a', '#4a7a6a', '#7a5a3a', '#5a4a7a', '#8a6a3a', '#3a6a5a', '#7a3a4a', '#5a6a3a'];
@@ -436880,6 +436960,8 @@ Object.assign(window, {
   pressable,
   formatEra,
   getEntryDates,
+  entryAnchorYear,
+  eraBandForYear,
   SORTS,
   RELATION_FAMILIES,
   relationFamily,
@@ -437035,7 +437117,7 @@ function groupKeyForEntry(entry, sortMode) {
     case 'tradition':
       return entry.tradition || 'Unsorted';
     case 'era':
-      return window.formatEra(entry.temporal?.era) || '—';
+      return window.eraBandForYear(window.entryAnchorYear(entry));
     case 'type':
       return window.TYPE_TIER[entry.type]?.label || 'Other';
     default:
@@ -437351,7 +437433,23 @@ function layoutTree(tree, expandedRows) {
   const rows = tree.rows.map((row, idx) => {
     const overflow = Math.max(0, row.length - MAX_PER_ROW);
     const expanded = overflow > 0 && expandedRows.has(idx);
-    const visible = expanded ? row : row.slice(0, MAX_PER_ROW);
+    // The focus card must never be the one sliced away. On the focus row the
+    // figure sits centered among its siblings, so with 14+ siblings its index
+    // lands past MAX_PER_ROW and a plain slice(0, MAX_PER_ROW) would drop the
+    // very figure being viewed. When that happens, slide the collapsed window
+    // so it stays centered on the focus; the chip still reports every hidden
+    // card. Other rows keep the simple leading slice.
+    const focusIdx = row.indexOf(tree.focusId);
+    let visible;
+    if (expanded) {
+      visible = row;
+    } else if (focusIdx >= MAX_PER_ROW) {
+      let start = focusIdx - Math.floor(MAX_PER_ROW / 2);
+      start = Math.max(0, Math.min(start, row.length - MAX_PER_ROW));
+      visible = row.slice(start, start + MAX_PER_ROW);
+    } else {
+      visible = row.slice(0, MAX_PER_ROW);
+    }
     const cappedCount = Math.min(row.length, MAX_PER_ROW);
     // Frame width: the capped cards plus the chip slot when this row overflows.
     let cappedW = cappedCount * CARD_W + Math.max(0, cappedCount - 1) * GAP_X;
@@ -438584,8 +438682,9 @@ function Chapter({
 
 // Iconography — the figure's visual attributes: emblems/objects they bear,
 // their sacred animals and plants. Each item is { id, term?, notes?, sources }.
-// (Authored for 240 figures but never rendered until now — Zeus's thunderbolt,
-// eagle, and oak; Apollo's lyre, silver bow, and laurel.)
+// (Authored across the deity/demigod tier but never rendered until the
+// iconography section was added — Zeus's thunderbolt, eagle, and oak;
+// Apollo's lyre, silver bow, and laurel.)
 function IconographyBlock({
   entry
 }) {
@@ -438957,7 +439056,7 @@ function Detail({
     flavor: "epithets",
     title: "Epithets",
     items: entry.epithets,
-    name: e => e.epithetId || (typeof e.name === 'string' ? e.name : null) || safeLabel(e),
+    name: e => e.epithetId || (typeof e.name === 'string' ? e.name : null) || (typeof e.translation === 'string' ? e.translation : null) || (typeof e.original === 'string' ? e.original : null) || safeLabel(e),
     metas: e => [e.language, e.transliteration, e.contextTag],
     notes: e => e.notes,
     nameStyle: "rich-row-name-epithet"
@@ -439141,20 +439240,27 @@ function Items({
     n.has(v) ? n.delete(v) : n.add(v);
     return n;
   });
-  const groups = __iMemo(() => {
+
+  // The on-screen list after BOTH the kind facet and the text query. The
+  // header count and summary line read from this (not the facet-only
+  // `faceted`), so they track the search box too.
+  const visible = __iMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? faceted : faceted.filter(it => {
+    if (!query) return faceted;
+    return faceted.filter(it => {
       const hay = [it.displayName, it.id, it.classId, it.kind, ...(it.names || []).map(n => n.value)].join(' ').toLowerCase();
       return hay.includes(query);
     });
+  }, [faceted, q]);
+  const groups = __iMemo(() => {
     const byKind = new Map();
-    for (const it of filtered) {
+    for (const it of visible) {
       const k = it.kind || 'other';
       if (!byKind.has(k)) byKind.set(k, []);
       byKind.get(k).push(it);
     }
     return [...byKind.entries()].sort((a, b) => itemKindRank(a[0]) - itemKindRank(b[0]) || itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
-  }, [faceted, q]);
+  }, [visible]);
 
   // Report the flattened on-screen order (grouped + filtered) so the item
   // detail's Prev/Next walks the same sequence the index displays, not the
@@ -439176,9 +439282,9 @@ function Items({
     className: "items-title"
   }, "Items ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, faceted.length)), total > faceted.length ? /*#__PURE__*/React.createElement("span", {
+  }, visible.length)), total > visible.length ? /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
-  }, "filtered \u2014 ", faceted.length, " of ", total) : showcased > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "filtered \u2014 ", visible.length, " of ", total) : showcased > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, showcased, " with a traced custody chain")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -439611,20 +439717,26 @@ function PowersView({
   const [herit, setHerit] = __pState(() => new Set());
   const heritOptions = __pMemo(() => window.buildFacetOptions(powers, p => powerHeritBucket(p.inheritability), powerHeritLabel, POWER_HERIT_RANK), [powers]);
   const faceted = __pMemo(() => herit.size ? powers.filter(p => herit.has(powerHeritBucket(p.inheritability))) : powers, [powers, herit]);
-  const groups = __pMemo(() => {
+
+  // Post-facet, post-query list — drives the header count/summary so they
+  // track the search box, not just the heritability facet.
+  const visible = __pMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? faceted : faceted.filter(p => {
+    if (!query) return faceted;
+    return faceted.filter(p => {
       const hay = [p.displayName, p.id, p.domainTag, p.term && p.term.value, ...(p.scopeTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
     });
+  }, [faceted, q]);
+  const groups = __pMemo(() => {
     const byLetter = new Map();
-    for (const p of filtered) {
+    for (const p of visible) {
       const k = powGroupKey(p.displayName);
       if (!byLetter.has(k)) byLetter.set(k, []);
       byLetter.get(k).push(p);
     }
     return [...byLetter.entries()].sort((a, b) => (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [faceted, q]);
+  }, [visible]);
   __pEff(() => {
     if (!onVisibleOrder) return;
     const ids = [];
@@ -439647,9 +439759,9 @@ function PowersView({
     className: "items-title"
   }, "Powers ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, faceted.length)), total > faceted.length ? /*#__PURE__*/React.createElement("span", {
+  }, visible.length)), total > visible.length ? /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
-  }, "filtered \u2014 ", faceted.length, " of ", total) : heritable > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "filtered \u2014 ", visible.length, " of ", total) : heritable > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, heritable, " traced down a bloodline")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -440023,20 +440135,26 @@ function Domains({
   const [ctx, setCtx] = __dmState(() => new Set());
   const ctxOptions = __dmMemo(() => window.buildFacetOptions(domains, domainCtxBuckets, domainCtxLabel, DOMAIN_CTX_RANK), [domains]);
   const faceted = __dmMemo(() => ctx.size ? domains.filter(d => domainCtxBuckets(d).some(b => ctx.has(b))) : domains, [domains, ctx]);
-  const groups = __dmMemo(() => {
+
+  // Post-facet, post-query list — drives the header count/summary so they
+  // track the search box, not just the context facet.
+  const visible = __dmMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? faceted : faceted.filter(d => {
+    if (!query) return faceted;
+    return faceted.filter(d => {
       const hay = [d.displayName, d.id, d.term && d.term.value, ...(d.contextTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
     });
+  }, [faceted, q]);
+  const groups = __dmMemo(() => {
     const byLetter = new Map();
-    for (const d of filtered) {
+    for (const d of visible) {
       const k = domGroupKey(d.displayName);
       if (!byLetter.has(k)) byLetter.set(k, []);
       byLetter.get(k).push(d);
     }
     return [...byLetter.entries()].sort((a, b) => (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [faceted, q]);
+  }, [visible]);
   __dmEff(() => {
     if (!onVisibleOrder) return;
     const ids = [];
@@ -440059,9 +440177,9 @@ function Domains({
     className: "items-title"
   }, "Domains ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, faceted.length)), total > faceted.length ? /*#__PURE__*/React.createElement("span", {
+  }, visible.length)), total > visible.length ? /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
-  }, "filtered \u2014 ", faceted.length, " of ", total) : shared > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "filtered \u2014 ", visible.length, " of ", total) : shared > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, shared, " shared across figures")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -442913,7 +443031,20 @@ function Shell() {
     const raw = (window.location.hash || '').replace(/^#\/?/, '');
     const parts = raw.split('/').filter(Boolean);
     const v = parts[0];
-    if (!['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(v)) return;
+    const known = ['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(v);
+    // Clear every detail axis first — keeps the slide-overs mutually exclusive
+    // however the hash arrives, and (crucially) collapses any open slide-over
+    // when the hash is emptied or points at an unknown view. Doing this BEFORE
+    // the unknown-view bail is what lets the URL-sync effect canonicalize the
+    // hash instead of leaving a panel stuck open over a URL that no longer
+    // describes it.
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
+    if (!known) return; // empty/unknown hash: keep the current view, details cleared
     // Malformed escapes (#/browse/%zz) must not crash applyHash — it runs in
     // a mount effect, so a throw here would loop the ErrorBoundary forever.
     let id = null;
@@ -442925,14 +443056,6 @@ function Shell() {
       }
     }
     setView(v);
-    // Clear every detail axis, then set the one this view owns — keeps the
-    // slide-overs mutually exclusive however the hash arrives.
-    selection.setSelectedId(null);
-    setGraphFocusId(null);
-    setAtlasFocus(null);
-    setSelectedItemId(null);
-    setSelectedPowerId(null);
-    setSelectedDomainId(null);
     if (v === 'browse') selection.setSelectedId(id);else if (v === 'graph') setGraphFocusId(id);else if (v === 'atlas') setAtlasFocus(id);else if (v === 'items') setSelectedItemId(id);else if (v === 'powers') setSelectedPowerId(id);else if (v === 'domains') setSelectedDomainId(id);
   }, [selection]);
   __sEff(() => {
@@ -443071,6 +443194,20 @@ function Shell() {
     if (nextId) setSelectedDomainId(nextId);
   }, [selectedDomainId, domainList]);
 
+  // Switch top-level view from the view tabs. Clear every detail axis first so
+  // an open slide-over never stays stacked over the new view, and the hash
+  // (written by the URL-sync effect from these same state values) collapses to
+  // a bare #/<view> — mirroring applyHash's mutual-exclusion contract.
+  const changeView = __sCb(v => {
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
+    setView(v);
+  }, [selection]);
+
   // Open an item from anywhere (the index, or a figure's material culture).
   // Opening an item is an Items-view navigation: switch views and clear the
   // figure selection so the two slide-overs never stack.
@@ -443128,8 +443265,10 @@ function Shell() {
       return;
     }
 
-    // Search-focus binding
-    if (e.key === '/' && !inField) {
+    // Search-focus binding. Inert while the Command Palette owns the screen —
+    // otherwise '/' typed from the body (after blurring the palette input)
+    // steals focus to the background search box behind the open palette.
+    if (e.key === '/' && !inField && !cmdkOpen) {
       e.preventDefault();
       searchRef.current?.focus();
       searchRef.current?.select();
@@ -443254,7 +443393,7 @@ function Shell() {
   }, /*#__PURE__*/React.createElement(TopBar, {
     totalCount: people.length,
     view: view,
-    setView: setView,
+    setView: changeView,
     query: filters.query,
     setQuery: filters.setQuery,
     searchRef: searchRef,

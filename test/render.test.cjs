@@ -18,7 +18,7 @@ describe('app renders in a browser-like environment', () => {
     // The corpus is deliberately expanding as missing central figures are added;
     // assert a floor rather than an exact count (mirrors seed.test.cjs).
     const rows = app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)');
-    assert.ok(rows.length >= 1845, `expected >= 1845 rows, got ${rows.length}`);
+    assert.ok(rows.length >= 2700, `expected >= 2700 rows, got ${rows.length}`);
   });
 
   test('"/" focuses the search box', async () => {
@@ -411,5 +411,121 @@ describe('app renders in a browser-like environment', () => {
         `${tab} clear did not restore the full list`);
     }
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('the focused figure is always present in its own Lineage tree (14+ siblings)', async () => {
+    // Regression: the focus row centers the figure among its siblings, so a
+    // figure with >=14 siblings landed past the 7-card collapse window and a
+    // plain slice(0, MAX_PER_ROW) sliced away the very card being viewed.
+    // greek_apollod_hyllus is a Heraclid with 50+ siblings.
+    await app.openFigure('greek_apollod_hyllus');
+    const focus = app.document.querySelector('.lineage-card.focus');
+    assert.ok(focus, 'the focused figure vanished from its own lineage tree');
+    assert.match(focus.querySelector('.lineage-card-name')?.textContent || '', /Hyllus/,
+      'the focus card is not the figure being viewed');
+    await app.clickButton('Browse');
+  });
+
+  test('switching view tabs with a detail open closes it and drops the id from the hash', async () => {
+    // Regression: the view tabs called setView directly, leaving an open
+    // slide-over stacked over the new view while the hash collapsed to
+    // #/<view> with no id — breaking the mutual-exclusion / hash-source-of-
+    // truth invariant. changeView now clears every detail axis first.
+    await app.openFigure('greek_hesiod_zeus');
+    assert.ok(app.document.querySelector('.detail:not(.closing)'), 'detail did not open');
+    await app.clickButton('Items');
+    assert.ok(app.document.querySelector('.items-view'), 'Items view did not mount');
+    assert.strictEqual(app.document.querySelector('.detail:not(.closing)'), null,
+      'a figure detail stayed open (non-closing) over the new view');
+    assert.strictEqual(app.window.location.hash, '#/items',
+      'hash kept a figure id after switching views');
+    await app.clickButton('Browse');
+  });
+
+  test('Browse "Era (oldest)" sort groups into a few contiguous time bands, not hundreds', async () => {
+    // Regression: grouping by the raw era label while sorting by absolute
+    // anchor year shattered into ~1110 one-row headers (the same label recurs
+    // across dozens of traditions at different years). Grouping now uses the
+    // same chronological axis the sort uses, so each band header is contiguous.
+    await app.clickButton('Browse');
+    await app.clickButton('Era');
+    const headers = [...app.document.querySelectorAll('.browse-group-header .group-label')]
+      .map((h) => h.textContent);
+    assert.ok(headers.length > 0, 'Era sort produced no group headers');
+    assert.ok(headers.length <= 12,
+      `Era sort fragmented into ${headers.length} headers (expected a handful of time bands)`);
+    // Every header label must be unique — a repeated label means a band was
+    // split into non-contiguous runs.
+    assert.strictEqual(new Set(headers).size, headers.length,
+      `Era band headers repeat (non-contiguous): ${headers.join(', ')}`);
+    await app.clickButton('A→Z');
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('epithets with the {original, translation} shape render legible text, not raw JSON', async () => {
+    // Regression: epithet records lacking epithetId/string-name fell through to
+    // safeLabel(), which JSON.stringify()'d the record into a truncated blob
+    // (22 Greek figures). The accessor now prefers translation, then original.
+    await app.openFigure('greek_agamemnon');
+    const names = [...app.document.querySelectorAll('.rich-row-name-epithet')].map((n) => n.textContent);
+    assert.ok(names.length >= 2, 'expected Agamemnon\'s epithets to render');
+    assert.ok(!names.some((t) => t.includes('{') || t.includes('"')),
+      `epithet rendered as raw JSON: ${names.find((t) => t.includes('{'))}`);
+    assert.ok(names.some((t) => /lord of men/i.test(t)), `expected the translated epithet, got ${names.join(' | ')}`);
+    await app.clickButton('Browse');
+  });
+
+  test('emptying the hash collapses an open detail instead of leaving it stuck open', async () => {
+    // Regression: applyHash early-returned on an empty/unknown hash BEFORE the
+    // clear-all-detail-axes block, so the slide-over stayed open (no 'closing'
+    // class) while the URL no longer described it. The clears now run first.
+    await app.openFigure('greek_hesiod_zeus');
+    assert.ok(app.document.querySelector('.detail-backdrop:not(.closing)'), 'detail did not open');
+    await app.act(async () => {
+      app.window.location.hash = '#';
+      app.window.dispatchEvent(new app.window.Event('hashchange'));
+    });
+    await app.flush();
+    assert.strictEqual(app.document.querySelector('.detail-backdrop:not(.closing)'), null,
+      'a detail stayed open after the hash was emptied');
+    await app.clickButton('Browse');
+  });
+
+  test('Items search query drives the header count and summary line', async () => {
+    // Regression: the title count and summary read faceted.length (kind-facet
+    // only), ignoring the text query — so "Items 2079" stuck even with one row
+    // shown. Both now read the post-query visible list.
+    await app.clickButton('Items');
+    const setVal = Object.getOwnPropertyDescriptor(app.window.HTMLInputElement.prototype, 'value').set;
+    const input = app.document.querySelector('.items-search input');
+    await app.act(async () => { setVal.call(input, 'mjolnir'); input.dispatchEvent(new app.window.Event('input', { bubbles: true })); });
+    await app.flush();
+    const count = app.document.querySelector('.items-count')?.textContent;
+    const rows = app.document.querySelectorAll('.item-row').length;
+    assert.strictEqual(String(rows), count, `header count ${count} != rendered rows ${rows} under an active query`);
+    assert.ok(rows >= 1 && rows < 2079, `expected the query to narrow the list, got ${rows}`);
+    assert.match(app.document.querySelector('.items-showcased')?.textContent || '', /filtered — \d+ of/,
+      'summary line did not reflect the filtered count');
+    await app.act(async () => { setVal.call(input, ''); input.dispatchEvent(new app.window.Event('input', { bubbles: true })); });
+    await app.flush();
+    await app.clickButton('Browse');
+  });
+
+  test('the "/" search shortcut is inert while the Command Palette is open', async () => {
+    // Regression: the '/' branch ran before the cmdkOpen guard, so '/' typed
+    // from the body (after blurring the palette input) stole focus to the
+    // background search box behind the open palette.
+    await app.act(async () => { app.key('k', { metaKey: true }); });
+    await app.flush();
+    assert.ok(app.document.querySelector('.cmdk'), 'Command Palette did not open');
+    const search = app.document.querySelector('.topbar-search input');
+    if (app.document.activeElement === search) search.blur();
+    await app.act(async () => { app.key('/'); });
+    await app.flush();
+    assert.notStrictEqual(app.document.activeElement, search,
+      "'/' focused the background search input while the palette was open");
+    assert.ok(app.document.querySelector('.cmdk'), 'Command Palette closed unexpectedly');
+    await app.act(async () => { app.key('Escape'); });
+    await app.flush();
   });
 });

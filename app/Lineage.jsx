@@ -97,7 +97,23 @@ function layoutTree(tree, expandedRows) {
   const rows = tree.rows.map((row, idx) => {
     const overflow = Math.max(0, row.length - MAX_PER_ROW);
     const expanded = overflow > 0 && expandedRows.has(idx);
-    const visible = expanded ? row : row.slice(0, MAX_PER_ROW);
+    // The focus card must never be the one sliced away. On the focus row the
+    // figure sits centered among its siblings, so with 14+ siblings its index
+    // lands past MAX_PER_ROW and a plain slice(0, MAX_PER_ROW) would drop the
+    // very figure being viewed. When that happens, slide the collapsed window
+    // so it stays centered on the focus; the chip still reports every hidden
+    // card. Other rows keep the simple leading slice.
+    const focusIdx = row.indexOf(tree.focusId);
+    let visible;
+    if (expanded) {
+      visible = row;
+    } else if (focusIdx >= MAX_PER_ROW) {
+      let start = focusIdx - Math.floor(MAX_PER_ROW / 2);
+      start = Math.max(0, Math.min(start, row.length - MAX_PER_ROW));
+      visible = row.slice(start, start + MAX_PER_ROW);
+    } else {
+      visible = row.slice(0, MAX_PER_ROW);
+    }
     const cappedCount = Math.min(row.length, MAX_PER_ROW);
     // Frame width: the capped cards plus the chip slot when this row overflows.
     let cappedW = cappedCount * CARD_W + Math.max(0, cappedCount - 1) * GAP_X;
