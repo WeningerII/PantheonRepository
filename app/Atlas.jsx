@@ -221,6 +221,12 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
     return all.filter(t => traditionFilter.has(t));
   }, [atlas, traditionFilter]);
 
+  // When traditionFilter narrows the visible set, a previously-focused tradition
+  // may be hidden — clear it so the label doesn't claim focus on invisible territory.
+  __aEff(() => {
+    if (focused && !visibleTraditions.includes(focused)) setFocused(null);
+  }, [focused, visibleTraditions]);
+
   // For each tradition, count figures of that tradition in the registry
   // — used to suppress traditions with zero entries from the footer count.
   const figureCount = __aMemo(() => {
