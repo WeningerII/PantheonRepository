@@ -470,6 +470,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                     stroke="rgba(11,11,11,0.35)"
                     strokeWidth={0.8}
                     vectorEffect="non-scaling-stroke"
+                    pointerEvents="none"
                   />
                   <path
                     d={basemapPaths.graticule}
@@ -477,6 +478,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                     stroke="rgba(0,0,0,0.05)"
                     strokeWidth={0.4}
                     vectorEffect="non-scaling-stroke"
+                    pointerEvents="none"
                   />
                   <path
                     d={basemapPaths.land}
@@ -485,6 +487,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                     strokeWidth={0.55}
                     strokeLinejoin="round"
                     vectorEffect="non-scaling-stroke"
+                    pointerEvents="none"
                   />
                   <path
                     d={basemapPaths.countries}
@@ -492,6 +495,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                     stroke="rgba(0,0,0,0.09)"
                     strokeWidth={0.4}
                     vectorEffect="non-scaling-stroke"
+                    pointerEvents="none"
                   />
                 </>
               )}

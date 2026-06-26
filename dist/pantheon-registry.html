@@ -439112,7 +439112,7 @@ function useFilters(people) {
     const out = people.filter(p => {
       if (types.size && !types.has(p.type)) return false;
       if (origin === 'canon' && p.origin !== 'canon') return false;
-      if (origin === 'original' && p.origin === 'canon') return false;
+      if (origin === 'original' && p.origin !== 'original') return false;
       if (traditions.size && !traditions.has(p.tradition)) return false;
       if (q) {
         const hay = searchHaystacks.get(p.id);
@@ -444138,7 +444138,7 @@ function Graph({
       x2: tx,
       y2: ty,
       stroke: inPath ? '#B5371F' : style.stroke,
-      strokeOpacity: inPath ? 0.95 * (op > 0 ? 1 : 0) : style.alpha * op,
+      strokeOpacity: inPath ? 0.95 : style.alpha * op,
       strokeWidth: inPath ? 2.4 : style.width,
       strokeDasharray: inPath ? undefined : style.dash || undefined,
       style: {
@@ -444872,26 +444872,30 @@ function Atlas({
     fill: "#E4E9E4",
     stroke: "rgba(11,11,11,0.35)",
     strokeWidth: 0.8,
-    vectorEffect: "non-scaling-stroke"
+    vectorEffect: "non-scaling-stroke",
+    pointerEvents: "none"
   }), /*#__PURE__*/React.createElement("path", {
     d: basemapPaths.graticule,
     fill: "none",
     stroke: "rgba(0,0,0,0.05)",
     strokeWidth: 0.4,
-    vectorEffect: "non-scaling-stroke"
+    vectorEffect: "non-scaling-stroke",
+    pointerEvents: "none"
   }), /*#__PURE__*/React.createElement("path", {
     d: basemapPaths.land,
     fill: "#EDE6D3",
     stroke: "rgba(0,0,0,0.30)",
     strokeWidth: 0.55,
     strokeLinejoin: "round",
-    vectorEffect: "non-scaling-stroke"
+    vectorEffect: "non-scaling-stroke",
+    pointerEvents: "none"
   }), /*#__PURE__*/React.createElement("path", {
     d: basemapPaths.countries,
     fill: "none",
     stroke: "rgba(0,0,0,0.09)",
     strokeWidth: 0.4,
-    vectorEffect: "non-scaling-stroke"
+    vectorEffect: "non-scaling-stroke",
+    pointerEvents: "none"
   })), /*#__PURE__*/React.createElement("g", {
     clipPath: "url(#atlas-land)"
   }, ['extent', 'successors', 'colonies', 'diaspora', 'core'].map(layerKind => {
@@ -446108,13 +446112,20 @@ function Shell() {
   }, view === 'browse' && /*#__PURE__*/React.createElement(window.Browse, {
     filters: filters,
     selection: selection,
-    onOpen: id => selection.setSelectedId(id)
+    onOpen: (id, idx) => {
+      selection.setSelectedId(id);
+      if (idx != null) selection.setCursorIdx(idx);
+    }
   }), view === 'graph' && /*#__PURE__*/React.createElement(window.Graph, {
     people: filters.filtered,
     byId: byId,
     focusId: graphFocusId,
     setFocusId: setGraphFocusId,
-    onOpenDetail: id => selection.setSelectedId(id)
+    onOpenDetail: id => {
+      setGraphFocusId(null);
+      setView('browse');
+      selection.setSelectedId(id);
+    }
   }), view === 'atlas' && /*#__PURE__*/React.createElement(window.Atlas, {
     atlas: atlas,
     byId: byId,

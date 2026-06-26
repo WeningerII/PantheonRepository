@@ -598,7 +598,7 @@ function useFilters(people) {
     const out = people.filter(p => {
       if (types.size && !types.has(p.type)) return false;
       if (origin === 'canon'    && p.origin !== 'canon') return false;
-      if (origin === 'original' && p.origin === 'canon') return false;
+      if (origin === 'original' && p.origin !== 'original') return false;
       if (traditions.size && !traditions.has(p.tradition)) return false;
       if (q) {
         const hay = searchHaystacks.get(p.id);

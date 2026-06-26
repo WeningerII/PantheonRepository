@@ -627,7 +627,7 @@ function Shell() {
             <window.Browse
               filters={filters}
               selection={selection}
-              onOpen={(id) => selection.setSelectedId(id)}
+              onOpen={(id, idx) => { selection.setSelectedId(id); if (idx != null) selection.setCursorIdx(idx); }}
             />
           )}
           {view === 'graph' && (
@@ -636,7 +636,7 @@ function Shell() {
               byId={byId}
               focusId={graphFocusId}
               setFocusId={setGraphFocusId}
-              onOpenDetail={(id) => selection.setSelectedId(id)}
+              onOpenDetail={(id) => { setGraphFocusId(null); setView('browse'); selection.setSelectedId(id); }}
             />
           )}
           {view === 'atlas' && (
