@@ -451,7 +451,9 @@ function Shell() {
   const openItem = __sCb((id) => {
     setView('items');
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
+    setAtlasFocus(null);
     setSelectedPowerId(null);
     setSelectedDomainId(null);
     setSelectedItemId(id);
@@ -460,7 +462,9 @@ function Shell() {
   const openPower = __sCb((id) => {
     setView('powers');
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
+    setAtlasFocus(null);
     setSelectedItemId(null);
     setSelectedDomainId(null);
     setSelectedPowerId(id);
@@ -469,7 +473,9 @@ function Shell() {
   const openDomain = __sCb((id) => {
     setView('domains');
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
+    setAtlasFocus(null);
     setSelectedItemId(null);
     setSelectedPowerId(null);
     setSelectedDomainId(id);
@@ -673,6 +679,7 @@ function Shell() {
         onShowInGraph={(entry) => {
           setGraphFocusId(entry.id);
           setView('graph');
+          setAtlasFocus(null);
           selection.setSelectedId(null);
         }}
       />
@@ -687,6 +694,8 @@ function Shell() {
         canNext={selIdxInItemOrder >= 0 && selIdxInItemOrder < (itemOrderRef.current?.length || itemList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
+          setGraphFocusId(null);
+          setAtlasFocus(null);
           setSelectedItemId(null);
           selection.setSelectedId(id);
         }}
@@ -702,6 +711,8 @@ function Shell() {
         canNext={selIdxInPowerOrder >= 0 && selIdxInPowerOrder < (powerOrderRef.current?.length || powerList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
+          setGraphFocusId(null);
+          setAtlasFocus(null);
           setSelectedPowerId(null);
           selection.setSelectedId(id);
         }}
@@ -717,6 +728,8 @@ function Shell() {
         canNext={selIdxInDomainOrder >= 0 && selIdxInDomainOrder < (domainOrderRef.current?.length || domainList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
+          setGraphFocusId(null);
+          setAtlasFocus(null);
           setSelectedDomainId(null);
           selection.setSelectedId(id);
         }}
@@ -734,6 +747,7 @@ function Shell() {
             setSelectedItemId(null);
             setSelectedPowerId(null);
             setSelectedDomainId(null);
+            setAtlasFocus(null);
             if (view === 'graph') {
               selection.setSelectedId(null);
               setGraphFocusId(id);

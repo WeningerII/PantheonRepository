@@ -782,7 +782,8 @@ function buildPowerRegistry() {
     const rec = reg[id];
     rec.holderCount = rec.holders.length;
     rec.inheritorCount = rec.inheritors.length;
-    rec.figureCount = rec.holderCount + rec.inheritorCount;
+    const holderIds = new Set(rec.holders.map(h => h.personId));
+    rec.figureCount = holderIds.size + rec.inheritors.filter(h => !holderIds.has(h.personId)).length;
     rec.sources = dedupeSources(rec.sources);
     let best = null, bestN = -1;
     for (const k of Object.keys(rec.heritCounts)) if (rec.heritCounts[k] > bestN) { best = k; bestN = rec.heritCounts[k]; }
