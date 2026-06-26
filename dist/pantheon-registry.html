@@ -443934,9 +443934,15 @@ function Graph({
     }
     if (hoverNode) return nodeNeighbors && nodeNeighbors.has(n.id) ? 1 : 0.20;
     if (!focusId) return 1;
-    if (n.depth === 0) return 1;
-    if (n.depth === 1) return 0.95;
-    if (n.depth === 2) return 0.42;
+    // focusId is set but the focus node is outside the current scope (e.g.
+    // tradition rail filtered it out). buildGraph received focusId=null so all
+    // nodes have n.depth = null. Treat as unfocused — show at full opacity and
+    // let the "focus filtered out" card explain the situation.
+    const depth = depthById.get(n.id);
+    if (depth == null) return 1;
+    if (depth === 0) return 1;
+    if (depth === 1) return 0.95;
+    if (depth === 2) return 0.42;
     return 0.10;
   };
   const edgeOpacity = (sId, tId, family, kind) => {
