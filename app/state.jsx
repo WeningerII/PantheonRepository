@@ -188,7 +188,7 @@ function entryAnchorYear(entry) {
 // anchor year the sort uses into coarse, monotonic time bands keeps each
 // header contiguous and matches the chronological axis the user is reading.
 const ERA_BANDS = [
-  { max: -3000, label: 'Before 3000 BCE' },
+  { max: -3001, label: 'Before 3000 BCE' },
   { max: -2000, label: '3000–2000 BCE' },
   { max: -1000, label: '2000–1000 BCE' },
   { max:  -500, label: '1000–500 BCE' },
@@ -829,7 +829,7 @@ function allPowers() {
   try {
     return Object.values(buildPowerRegistry()).sort((a, b) =>
       (b.figureCount - a.figureCount) ||
-      (b.inheritorCount - a.inheritorCount) ||
+      (b.holderCount - a.holderCount) ||
       String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
   } catch (_) { return []; }
 }

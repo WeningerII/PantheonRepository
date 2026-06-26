@@ -438669,7 +438669,7 @@ function entryAnchorYear(entry) {
 // anchor year the sort uses into coarse, monotonic time bands keeps each
 // header contiguous and matches the chronological axis the user is reading.
 const ERA_BANDS = [{
-  max: -3000,
+  max: -3001,
   label: 'Before 3000 BCE'
 }, {
   max: -2000,
@@ -439412,7 +439412,7 @@ function buildDomainRegistry() {
 // Index sort: most-attested first, then alphabetical. Mirrors allItems().
 function allPowers() {
   try {
-    return Object.values(buildPowerRegistry()).sort((a, b) => b.figureCount - a.figureCount || b.inheritorCount - a.inheritorCount || String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
+    return Object.values(buildPowerRegistry()).sort((a, b) => b.figureCount - a.figureCount || b.holderCount - a.holderCount || String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
   } catch (_) {
     return [];
   }
@@ -442519,6 +442519,8 @@ function PowerDetail({
   onClose,
   onPrev,
   onNext,
+  canPrev,
+  canNext,
   onOpenFigure
 }) {
   const [local, setLocal] = __pState(power || null);
@@ -442589,10 +442591,12 @@ function PowerDetail({
   }, /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onPrev,
+    disabled: canPrev === false,
     title: "Previous (k)"
   }, "\u2191 Prev"), /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onNext,
+    disabled: canNext === false,
     title: "Next (j)"
   }, "\u2193 Next")), /*#__PURE__*/React.createElement("div", {
     className: "spacer"
@@ -442889,6 +442893,8 @@ function DomainDetail({
   onClose,
   onPrev,
   onNext,
+  canPrev,
+  canNext,
   onOpenFigure
 }) {
   const [local, setLocal] = __dmState(domain || null);
@@ -442959,10 +442965,12 @@ function DomainDetail({
   }, /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onPrev,
+    disabled: canPrev === false,
     title: "Previous (k)"
   }, "\u2191 Prev"), /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onNext,
+    disabled: canNext === false,
     title: "Next (j)"
   }, "\u2193 Next")), /*#__PURE__*/React.createElement("div", {
     className: "spacer"
@@ -444938,7 +444946,7 @@ function Atlas({
           onMouseLeave: () => setHover(null),
           onClick: e => {
             e.stopPropagation();
-            setFocused(tradition);
+            setFocused(focused === tradition ? null : tradition);
           }
         }));
       }));
@@ -445796,6 +445804,16 @@ function Shell() {
     const nextId = order[idx + delta];
     if (nextId) setSelectedDomainId(nextId);
   }, [selectedDomainId, domainList]);
+  const selIdxInPowerOrder = __sMemo(() => {
+    if (!selectedPowerId) return -1;
+    const order = powerOrderRef.current?.length ? powerOrderRef.current : powerList.map(p => p.id);
+    return order.indexOf(selectedPowerId);
+  }, [selectedPowerId, powerList]);
+  const selIdxInDomainOrder = __sMemo(() => {
+    if (!selectedDomainId) return -1;
+    const order = domainOrderRef.current?.length ? domainOrderRef.current : domainList.map(d => d.id);
+    return order.indexOf(selectedDomainId);
+  }, [selectedDomainId, domainList]);
 
   // Switch top-level view from the view tabs. Clear every detail axis first so
   // an open slide-over never stays stacked over the new view, and the hash
@@ -445842,6 +445860,10 @@ function Shell() {
         setCmdkOpen(false);
         return;
       }
+      if (inField) {
+        e.target.blur();
+        return;
+      }
       if (selectedItemId) {
         setSelectedItemId(null);
         return;
@@ -445856,10 +445878,6 @@ function Shell() {
       }
       if (selection.selectedId) {
         selection.setSelectedId(null);
-        return;
-      }
-      if (inField) {
-        e.target.blur();
         return;
       }
       if (filters.query) {
@@ -446093,6 +446111,8 @@ function Shell() {
     onClose: () => setSelectedPowerId(null),
     onPrev: () => movePower(-1),
     onNext: () => movePower(1),
+    canPrev: selIdxInPowerOrder > 0,
+    canNext: selIdxInPowerOrder >= 0 && selIdxInPowerOrder < (powerOrderRef.current?.length || powerList.length) - 1,
     onOpenFigure: id => {
       setView('browse');
       setSelectedPowerId(null);
@@ -446104,6 +446124,8 @@ function Shell() {
     onClose: () => setSelectedDomainId(null),
     onPrev: () => moveDomain(-1),
     onNext: () => moveDomain(1),
+    canPrev: selIdxInDomainOrder > 0,
+    canNext: selIdxInDomainOrder >= 0 && selIdxInDomainOrder < (domainOrderRef.current?.length || domainList.length) - 1,
     onOpenFigure: id => {
       setView('browse');
       setSelectedDomainId(null);
@@ -446121,6 +446143,7 @@ function Shell() {
       setSelectedPowerId(null);
       setSelectedDomainId(null);
       if (view === 'graph') {
+        selection.setSelectedId(null);
         setGraphFocusId(id);
       } else {
         if (view !== 'browse') setView('browse');

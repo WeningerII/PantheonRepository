@@ -572,7 +572,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                                     }}
                                     onMouseMove={(e) => positionTooltip(e.clientX, e.clientY)}
                                     onMouseLeave={() => setHover(null)}
-                                    onClick={(e) => { e.stopPropagation(); setFocused(tradition); }}
+                                    onClick={(e) => { e.stopPropagation(); setFocused(focused === tradition ? null : tradition); }}
                                   />
                                 </React.Fragment>
                               );

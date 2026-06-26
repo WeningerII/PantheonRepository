@@ -280,7 +280,7 @@ function PowerSources({ sources }) {
 }
 
 // ── Power detail slide-over ──────────────────────────────────────────────────
-function PowerDetail({ power, byId, onClose, onPrev, onNext, onOpenFigure }) {
+function PowerDetail({ power, byId, onClose, onPrev, onNext, canPrev, canNext, onOpenFigure }) {
   const [local, setLocal] = __pState(power || null);
   const [closing, setClosing] = __pState(false);
   const panelRef = __pRef(null);
@@ -334,8 +334,8 @@ function PowerDetail({ power, byId, onClose, onPrev, onNext, onOpenFigure }) {
       >
         <div className="detail-bar">
           <div className="nav">
-            <button className="btn btn-ghost btn-sm" onClick={onPrev} title="Previous (k)">↑ Prev</button>
-            <button className="btn btn-ghost btn-sm" onClick={onNext} title="Next (j)">↓ Next</button>
+            <button className="btn btn-ghost btn-sm" onClick={onPrev} disabled={canPrev === false} title="Previous (k)">↑ Prev</button>
+            <button className="btn btn-ghost btn-sm" onClick={onNext} disabled={canNext === false} title="Next (j)">↓ Next</button>
           </div>
           <div className="spacer" />
           <button className="close" onClick={onClose} title="Close (esc)" aria-label="Close">×</button>

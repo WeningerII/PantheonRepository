@@ -218,7 +218,7 @@ function DomainSources({ sources }) {
 }
 
 // ── Domain detail slide-over ─────────────────────────────────────────────────
-function DomainDetail({ domain, byId, onClose, onPrev, onNext, onOpenFigure }) {
+function DomainDetail({ domain, byId, onClose, onPrev, onNext, canPrev, canNext, onOpenFigure }) {
   const [local, setLocal] = __dmState(domain || null);
   const [closing, setClosing] = __dmState(false);
   const panelRef = __dmRef(null);
@@ -272,8 +272,8 @@ function DomainDetail({ domain, byId, onClose, onPrev, onNext, onOpenFigure }) {
       >
         <div className="detail-bar">
           <div className="nav">
-            <button className="btn btn-ghost btn-sm" onClick={onPrev} title="Previous (k)">↑ Prev</button>
-            <button className="btn btn-ghost btn-sm" onClick={onNext} title="Next (j)">↓ Next</button>
+            <button className="btn btn-ghost btn-sm" onClick={onPrev} disabled={canPrev === false} title="Previous (k)">↑ Prev</button>
+            <button className="btn btn-ghost btn-sm" onClick={onNext} disabled={canNext === false} title="Next (j)">↓ Next</button>
           </div>
           <div className="spacer" />
           <button className="close" onClick={onClose} title="Close (esc)" aria-label="Close">×</button>

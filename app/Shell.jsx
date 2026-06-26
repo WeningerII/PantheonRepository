@@ -412,6 +412,18 @@ function Shell() {
     if (nextId) setSelectedDomainId(nextId);
   }, [selectedDomainId, domainList]);
 
+  const selIdxInPowerOrder = __sMemo(() => {
+    if (!selectedPowerId) return -1;
+    const order = powerOrderRef.current?.length ? powerOrderRef.current : powerList.map(p => p.id);
+    return order.indexOf(selectedPowerId);
+  }, [selectedPowerId, powerList]);
+
+  const selIdxInDomainOrder = __sMemo(() => {
+    if (!selectedDomainId) return -1;
+    const order = domainOrderRef.current?.length ? domainOrderRef.current : domainList.map(d => d.id);
+    return order.indexOf(selectedDomainId);
+  }, [selectedDomainId, domainList]);
+
   // Switch top-level view from the view tabs. Clear every detail axis first so
   // an open slide-over never stays stacked over the new view, and the hash
   // (written by the URL-sync effect from these same state values) collapses to
@@ -454,11 +466,11 @@ function Shell() {
     }
     if (e.key === 'Escape') {
       if (cmdkOpen) { setCmdkOpen(false); return; }
+      if (inField) { e.target.blur(); return; }
       if (selectedItemId) { setSelectedItemId(null); return; }
       if (selectedPowerId) { setSelectedPowerId(null); return; }
       if (selectedDomainId) { setSelectedDomainId(null); return; }
       if (selection.selectedId) { selection.setSelectedId(null); return; }
-      if (inField) { e.target.blur(); return; }
       if (filters.query) { filters.setQuery(''); return; }
       return;
     }
@@ -658,6 +670,8 @@ function Shell() {
         onClose={() => setSelectedPowerId(null)}
         onPrev={() => movePower(-1)}
         onNext={() => movePower(1)}
+        canPrev={selIdxInPowerOrder > 0}
+        canNext={selIdxInPowerOrder >= 0 && selIdxInPowerOrder < (powerOrderRef.current?.length || powerList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
           setSelectedPowerId(null);
@@ -671,6 +685,8 @@ function Shell() {
         onClose={() => setSelectedDomainId(null)}
         onPrev={() => moveDomain(-1)}
         onNext={() => moveDomain(1)}
+        canPrev={selIdxInDomainOrder > 0}
+        canNext={selIdxInDomainOrder >= 0 && selIdxInDomainOrder < (domainOrderRef.current?.length || domainList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
           setSelectedDomainId(null);
@@ -691,6 +707,7 @@ function Shell() {
             setSelectedPowerId(null);
             setSelectedDomainId(null);
             if (view === 'graph') {
+              selection.setSelectedId(null);
               setGraphFocusId(id);
             } else {
               if (view !== 'browse') setView('browse');
