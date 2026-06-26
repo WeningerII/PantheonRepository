@@ -461,4 +461,71 @@ describe('app renders in a browser-like environment', () => {
     await app.clickButton('A→Z');
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
   });
+
+  test('epithets with the {original, translation} shape render legible text, not raw JSON', async () => {
+    // Regression: epithet records lacking epithetId/string-name fell through to
+    // safeLabel(), which JSON.stringify()'d the record into a truncated blob
+    // (22 Greek figures). The accessor now prefers translation, then original.
+    await app.openFigure('greek_agamemnon');
+    const names = [...app.document.querySelectorAll('.rich-row-name-epithet')].map((n) => n.textContent);
+    assert.ok(names.length >= 2, 'expected Agamemnon\'s epithets to render');
+    assert.ok(!names.some((t) => t.includes('{') || t.includes('"')),
+      `epithet rendered as raw JSON: ${names.find((t) => t.includes('{'))}`);
+    assert.ok(names.some((t) => /lord of men/i.test(t)), `expected the translated epithet, got ${names.join(' | ')}`);
+    await app.clickButton('Browse');
+  });
+
+  test('emptying the hash collapses an open detail instead of leaving it stuck open', async () => {
+    // Regression: applyHash early-returned on an empty/unknown hash BEFORE the
+    // clear-all-detail-axes block, so the slide-over stayed open (no 'closing'
+    // class) while the URL no longer described it. The clears now run first.
+    await app.openFigure('greek_hesiod_zeus');
+    assert.ok(app.document.querySelector('.detail-backdrop:not(.closing)'), 'detail did not open');
+    await app.act(async () => {
+      app.window.location.hash = '#';
+      app.window.dispatchEvent(new app.window.Event('hashchange'));
+    });
+    await app.flush();
+    assert.strictEqual(app.document.querySelector('.detail-backdrop:not(.closing)'), null,
+      'a detail stayed open after the hash was emptied');
+    await app.clickButton('Browse');
+  });
+
+  test('Items search query drives the header count and summary line', async () => {
+    // Regression: the title count and summary read faceted.length (kind-facet
+    // only), ignoring the text query — so "Items 2079" stuck even with one row
+    // shown. Both now read the post-query visible list.
+    await app.clickButton('Items');
+    const setVal = Object.getOwnPropertyDescriptor(app.window.HTMLInputElement.prototype, 'value').set;
+    const input = app.document.querySelector('.items-search input');
+    await app.act(async () => { setVal.call(input, 'mjolnir'); input.dispatchEvent(new app.window.Event('input', { bubbles: true })); });
+    await app.flush();
+    const count = app.document.querySelector('.items-count')?.textContent;
+    const rows = app.document.querySelectorAll('.item-row').length;
+    assert.strictEqual(String(rows), count, `header count ${count} != rendered rows ${rows} under an active query`);
+    assert.ok(rows >= 1 && rows < 2079, `expected the query to narrow the list, got ${rows}`);
+    assert.match(app.document.querySelector('.items-showcased')?.textContent || '', /filtered — \d+ of/,
+      'summary line did not reflect the filtered count');
+    await app.act(async () => { setVal.call(input, ''); input.dispatchEvent(new app.window.Event('input', { bubbles: true })); });
+    await app.flush();
+    await app.clickButton('Browse');
+  });
+
+  test('the "/" search shortcut is inert while the Command Palette is open', async () => {
+    // Regression: the '/' branch ran before the cmdkOpen guard, so '/' typed
+    // from the body (after blurring the palette input) stole focus to the
+    // background search box behind the open palette.
+    await app.act(async () => { app.key('k', { metaKey: true }); });
+    await app.flush();
+    assert.ok(app.document.querySelector('.cmdk'), 'Command Palette did not open');
+    const search = app.document.querySelector('.topbar-search input');
+    if (app.document.activeElement === search) search.blur();
+    await app.act(async () => { app.key('/'); });
+    await app.flush();
+    assert.notStrictEqual(app.document.activeElement, search,
+      "'/' focused the background search input while the palette was open");
+    assert.ok(app.document.querySelector('.cmdk'), 'Command Palette closed unexpectedly');
+    await app.act(async () => { app.key('Escape'); });
+    await app.flush();
+  });
 });

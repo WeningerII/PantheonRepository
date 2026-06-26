@@ -139259,8 +139259,8 @@ const NEW_FIGURES = [
     "Ambalika of Kashi"
    ],
    "transliterations": {
-    "sanskrit": "अम्बालिका",
-    "iast": "Ambalika"
+    "iast": "Ambālikā",
+    "devanagari": "अम्बालिका"
    }
   },
   "type": "mortal",
@@ -139271,37 +139271,48 @@ const NEW_FIGURES = [
   "origin": "canon",
   "parentIds": [],
   "temporal": {
-   "era": "dvapara-yuga"
+   "era": "epic-period"
   },
   "lifecycle": [
    {
     "typeStatus": "mortal",
-    "era": "dvapara-yuga",
+    "era": "epic-period",
     "eraOrdering": 0,
-    "startEvent": "princess-of-Kashi-queen-of-Vichitravirya",
+    "startEvent": "abduction-from-Kashi-svayamvara-by-Bhishma",
     "sources": [
      {
       "kind": "primary",
-      "reference": "Mahabharata Adi Parva 102; 105"
+      "reference": "Mahabharata, Adi Parva 102"
      }
     ],
-    "notes": "Youngest daughter of the king of Kashi, taken with her sister Ambika by Bhishma to wed Vichitravirya of Hastinapura, who died heirless."
+    "notes": "Youngest of the three Kashi princesses, daughter of the king of Kashi; carried off with her sister Ambika by Bhishma to be wed to Vichitravirya."
    },
    {
     "typeStatus": "mortal",
-    "era": "dvapara-yuga",
+    "era": "epic-period",
     "eraOrdering": 1,
-    "startEvent": "mother-of-Pandu-by-niyoga-with-Vyasa",
+    "startEvent": "niyoga-with-Vyasa-and-birth-of-Pandu",
     "sources": [
      {
       "kind": "primary",
-      "reference": "Mahabharata Adi Parva 105-106"
+      "reference": "Mahabharata, Adi Parva 100"
      }
     ],
-    "notes": "By the niyoga rite with the sage Vyasa she bore Pandu; her turning pale at the sight of the unkempt sage is given as the cause of Pandus pallid complexion. Grandmother of the Pandavas."
+    "notes": "After Vichitravirya died childless she lay with Vyasa by niyoga; she turned pale with fear, and so bore the pale Pandu."
    }
   ],
-  "domains": [],
+  "domains": [
+   {
+    "sphereId": "queenship-of-Hastinapura",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva 102"
+     }
+    ]
+   }
+  ],
   "faculties": [],
   "materialCulture": [],
   "sources": [
@@ -139310,32 +139321,44 @@ const NEW_FIGURES = [
     "citations": [
      {
       "kind": "primary",
-      "reference": "Mahabharata (BORI) Adi Parva 102; 105-106"
+      "reference": "Mahabharata, Adi Parva 100-102"
      }
     ]
    }
   ],
   "relations": [
    {
-    "kind": "parent-of",
-    "personId": "hindu_pandu",
+    "kind": "sibling",
+    "personId": "hindu_ambika",
     "sources": [
      {
       "kind": "primary",
-      "reference": "Mahabharata Adi Parva 105-106"
+      "reference": "Mahabharata, Adi Parva 102"
      }
     ],
-    "notes": "Mother of Pandu by Vyasa through niyoga."
-   },
-   {
-    "kind": "sibling",
-    "personId": "hindu_ambika",
-    "notes": ""
+    "notes": "Sister, fellow Kashi princess and co-wife of Vichitravirya."
    },
    {
     "kind": "spouse",
     "personId": "hindu_vichitravirya",
-    "notes": ""
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva 102"
+     }
+    ],
+    "notes": "Junior wife of Vichitravirya."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "hindu_pandu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva 100"
+     }
+    ],
+    "notes": "Mother of the pale Pandu by Vyasa under niyoga."
    }
   ]
  },
@@ -439018,7 +439041,7 @@ function Detail({
     flavor: "epithets",
     title: "Epithets",
     items: entry.epithets,
-    name: e => e.epithetId || (typeof e.name === 'string' ? e.name : null) || safeLabel(e),
+    name: e => e.epithetId || (typeof e.name === 'string' ? e.name : null) || (typeof e.translation === 'string' ? e.translation : null) || (typeof e.original === 'string' ? e.original : null) || safeLabel(e),
     metas: e => [e.language, e.transliteration, e.contextTag],
     notes: e => e.notes,
     nameStyle: "rich-row-name-epithet"
@@ -439202,20 +439225,27 @@ function Items({
     n.has(v) ? n.delete(v) : n.add(v);
     return n;
   });
-  const groups = __iMemo(() => {
+
+  // The on-screen list after BOTH the kind facet and the text query. The
+  // header count and summary line read from this (not the facet-only
+  // `faceted`), so they track the search box too.
+  const visible = __iMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? faceted : faceted.filter(it => {
+    if (!query) return faceted;
+    return faceted.filter(it => {
       const hay = [it.displayName, it.id, it.classId, it.kind, ...(it.names || []).map(n => n.value)].join(' ').toLowerCase();
       return hay.includes(query);
     });
+  }, [faceted, q]);
+  const groups = __iMemo(() => {
     const byKind = new Map();
-    for (const it of filtered) {
+    for (const it of visible) {
       const k = it.kind || 'other';
       if (!byKind.has(k)) byKind.set(k, []);
       byKind.get(k).push(it);
     }
     return [...byKind.entries()].sort((a, b) => itemKindRank(a[0]) - itemKindRank(b[0]) || itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
-  }, [faceted, q]);
+  }, [visible]);
 
   // Report the flattened on-screen order (grouped + filtered) so the item
   // detail's Prev/Next walks the same sequence the index displays, not the
@@ -439237,9 +439267,9 @@ function Items({
     className: "items-title"
   }, "Items ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, faceted.length)), total > faceted.length ? /*#__PURE__*/React.createElement("span", {
+  }, visible.length)), total > visible.length ? /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
-  }, "filtered \u2014 ", faceted.length, " of ", total) : showcased > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "filtered \u2014 ", visible.length, " of ", total) : showcased > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, showcased, " with a traced custody chain")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -439672,20 +439702,26 @@ function PowersView({
   const [herit, setHerit] = __pState(() => new Set());
   const heritOptions = __pMemo(() => window.buildFacetOptions(powers, p => powerHeritBucket(p.inheritability), powerHeritLabel, POWER_HERIT_RANK), [powers]);
   const faceted = __pMemo(() => herit.size ? powers.filter(p => herit.has(powerHeritBucket(p.inheritability))) : powers, [powers, herit]);
-  const groups = __pMemo(() => {
+
+  // Post-facet, post-query list — drives the header count/summary so they
+  // track the search box, not just the heritability facet.
+  const visible = __pMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? faceted : faceted.filter(p => {
+    if (!query) return faceted;
+    return faceted.filter(p => {
       const hay = [p.displayName, p.id, p.domainTag, p.term && p.term.value, ...(p.scopeTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
     });
+  }, [faceted, q]);
+  const groups = __pMemo(() => {
     const byLetter = new Map();
-    for (const p of filtered) {
+    for (const p of visible) {
       const k = powGroupKey(p.displayName);
       if (!byLetter.has(k)) byLetter.set(k, []);
       byLetter.get(k).push(p);
     }
     return [...byLetter.entries()].sort((a, b) => (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [faceted, q]);
+  }, [visible]);
   __pEff(() => {
     if (!onVisibleOrder) return;
     const ids = [];
@@ -439708,9 +439744,9 @@ function PowersView({
     className: "items-title"
   }, "Powers ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, faceted.length)), total > faceted.length ? /*#__PURE__*/React.createElement("span", {
+  }, visible.length)), total > visible.length ? /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
-  }, "filtered \u2014 ", faceted.length, " of ", total) : heritable > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "filtered \u2014 ", visible.length, " of ", total) : heritable > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, heritable, " traced down a bloodline")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -440084,20 +440120,26 @@ function Domains({
   const [ctx, setCtx] = __dmState(() => new Set());
   const ctxOptions = __dmMemo(() => window.buildFacetOptions(domains, domainCtxBuckets, domainCtxLabel, DOMAIN_CTX_RANK), [domains]);
   const faceted = __dmMemo(() => ctx.size ? domains.filter(d => domainCtxBuckets(d).some(b => ctx.has(b))) : domains, [domains, ctx]);
-  const groups = __dmMemo(() => {
+
+  // Post-facet, post-query list — drives the header count/summary so they
+  // track the search box, not just the context facet.
+  const visible = __dmMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? faceted : faceted.filter(d => {
+    if (!query) return faceted;
+    return faceted.filter(d => {
       const hay = [d.displayName, d.id, d.term && d.term.value, ...(d.contextTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
     });
+  }, [faceted, q]);
+  const groups = __dmMemo(() => {
     const byLetter = new Map();
-    for (const d of filtered) {
+    for (const d of visible) {
       const k = domGroupKey(d.displayName);
       if (!byLetter.has(k)) byLetter.set(k, []);
       byLetter.get(k).push(d);
     }
     return [...byLetter.entries()].sort((a, b) => (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [faceted, q]);
+  }, [visible]);
   __dmEff(() => {
     if (!onVisibleOrder) return;
     const ids = [];
@@ -440120,9 +440162,9 @@ function Domains({
     className: "items-title"
   }, "Domains ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, faceted.length)), total > faceted.length ? /*#__PURE__*/React.createElement("span", {
+  }, visible.length)), total > visible.length ? /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
-  }, "filtered \u2014 ", faceted.length, " of ", total) : shared > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "filtered \u2014 ", visible.length, " of ", total) : shared > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, shared, " shared across figures")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -442974,7 +443016,20 @@ function Shell() {
     const raw = (window.location.hash || '').replace(/^#\/?/, '');
     const parts = raw.split('/').filter(Boolean);
     const v = parts[0];
-    if (!['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(v)) return;
+    const known = ['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(v);
+    // Clear every detail axis first — keeps the slide-overs mutually exclusive
+    // however the hash arrives, and (crucially) collapses any open slide-over
+    // when the hash is emptied or points at an unknown view. Doing this BEFORE
+    // the unknown-view bail is what lets the URL-sync effect canonicalize the
+    // hash instead of leaving a panel stuck open over a URL that no longer
+    // describes it.
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
+    if (!known) return; // empty/unknown hash: keep the current view, details cleared
     // Malformed escapes (#/browse/%zz) must not crash applyHash — it runs in
     // a mount effect, so a throw here would loop the ErrorBoundary forever.
     let id = null;
@@ -442986,14 +443041,6 @@ function Shell() {
       }
     }
     setView(v);
-    // Clear every detail axis, then set the one this view owns — keeps the
-    // slide-overs mutually exclusive however the hash arrives.
-    selection.setSelectedId(null);
-    setGraphFocusId(null);
-    setAtlasFocus(null);
-    setSelectedItemId(null);
-    setSelectedPowerId(null);
-    setSelectedDomainId(null);
     if (v === 'browse') selection.setSelectedId(id);else if (v === 'graph') setGraphFocusId(id);else if (v === 'atlas') setAtlasFocus(id);else if (v === 'items') setSelectedItemId(id);else if (v === 'powers') setSelectedPowerId(id);else if (v === 'domains') setSelectedDomainId(id);
   }, [selection]);
   __sEff(() => {
@@ -443203,8 +443250,10 @@ function Shell() {
       return;
     }
 
-    // Search-focus binding
-    if (e.key === '/' && !inField) {
+    // Search-focus binding. Inert while the Command Palette owns the screen —
+    // otherwise '/' typed from the body (after blurring the palette input)
+    // steals focus to the background search box behind the open palette.
+    if (e.key === '/' && !inField && !cmdkOpen) {
       e.preventDefault();
       searchRef.current?.focus();
       searchRef.current?.select();

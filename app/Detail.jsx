@@ -820,7 +820,9 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
             flavor="epithets"
             title="Epithets"
             items={entry.epithets}
-            name={e => e.epithetId || (typeof e.name === 'string' ? e.name : null) || safeLabel(e)}
+            name={e => e.epithetId || (typeof e.name === 'string' ? e.name : null)
+              || (typeof e.translation === 'string' ? e.translation : null)
+              || (typeof e.original === 'string' ? e.original : null) || safeLabel(e)}
             metas={e => [e.language, e.transliteration, e.contextTag]}
             notes={e => e.notes}
             nameStyle="rich-row-name-epithet"

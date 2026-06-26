@@ -258,7 +258,20 @@ function Shell() {
     const raw = (window.location.hash || '').replace(/^#\/?/, '');
     const parts = raw.split('/').filter(Boolean);
     const v = parts[0];
-    if (!['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(v)) return;
+    const known = ['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(v);
+    // Clear every detail axis first — keeps the slide-overs mutually exclusive
+    // however the hash arrives, and (crucially) collapses any open slide-over
+    // when the hash is emptied or points at an unknown view. Doing this BEFORE
+    // the unknown-view bail is what lets the URL-sync effect canonicalize the
+    // hash instead of leaving a panel stuck open over a URL that no longer
+    // describes it.
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
+    if (!known) return;   // empty/unknown hash: keep the current view, details cleared
     // Malformed escapes (#/browse/%zz) must not crash applyHash — it runs in
     // a mount effect, so a throw here would loop the ErrorBoundary forever.
     let id = null;
@@ -266,14 +279,6 @@ function Shell() {
       try { id = decodeURIComponent(parts[1]); } catch (_) { id = parts[1]; }
     }
     setView(v);
-    // Clear every detail axis, then set the one this view owns — keeps the
-    // slide-overs mutually exclusive however the hash arrives.
-    selection.setSelectedId(null);
-    setGraphFocusId(null);
-    setAtlasFocus(null);
-    setSelectedItemId(null);
-    setSelectedPowerId(null);
-    setSelectedDomainId(null);
     if (v === 'browse') selection.setSelectedId(id);
     else if (v === 'graph') setGraphFocusId(id);
     else if (v === 'atlas') setAtlasFocus(id);
@@ -456,8 +461,10 @@ function Shell() {
       return;
     }
 
-    // Search-focus binding
-    if (e.key === '/' && !inField) {
+    // Search-focus binding. Inert while the Command Palette owns the screen —
+    // otherwise '/' typed from the body (after blurring the palette input)
+    // steals focus to the background search box behind the open palette.
+    if (e.key === '/' && !inField && !cmdkOpen) {
       e.preventDefault();
       searchRef.current?.focus();
       searchRef.current?.select();

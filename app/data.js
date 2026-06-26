@@ -135829,8 +135829,8 @@ const NEW_FIGURES = [
     "Ambalika of Kashi"
    ],
    "transliterations": {
-    "sanskrit": "अम्बालिका",
-    "iast": "Ambalika"
+    "iast": "Ambālikā",
+    "devanagari": "अम्बालिका"
    }
   },
   "type": "mortal",
@@ -135841,37 +135841,48 @@ const NEW_FIGURES = [
   "origin": "canon",
   "parentIds": [],
   "temporal": {
-   "era": "dvapara-yuga"
+   "era": "epic-period"
   },
   "lifecycle": [
    {
     "typeStatus": "mortal",
-    "era": "dvapara-yuga",
+    "era": "epic-period",
     "eraOrdering": 0,
-    "startEvent": "princess-of-Kashi-queen-of-Vichitravirya",
+    "startEvent": "abduction-from-Kashi-svayamvara-by-Bhishma",
     "sources": [
      {
       "kind": "primary",
-      "reference": "Mahabharata Adi Parva 102; 105"
+      "reference": "Mahabharata, Adi Parva 102"
      }
     ],
-    "notes": "Youngest daughter of the king of Kashi, taken with her sister Ambika by Bhishma to wed Vichitravirya of Hastinapura, who died heirless."
+    "notes": "Youngest of the three Kashi princesses, daughter of the king of Kashi; carried off with her sister Ambika by Bhishma to be wed to Vichitravirya."
    },
    {
     "typeStatus": "mortal",
-    "era": "dvapara-yuga",
+    "era": "epic-period",
     "eraOrdering": 1,
-    "startEvent": "mother-of-Pandu-by-niyoga-with-Vyasa",
+    "startEvent": "niyoga-with-Vyasa-and-birth-of-Pandu",
     "sources": [
      {
       "kind": "primary",
-      "reference": "Mahabharata Adi Parva 105-106"
+      "reference": "Mahabharata, Adi Parva 100"
      }
     ],
-    "notes": "By the niyoga rite with the sage Vyasa she bore Pandu; her turning pale at the sight of the unkempt sage is given as the cause of Pandus pallid complexion. Grandmother of the Pandavas."
+    "notes": "After Vichitravirya died childless she lay with Vyasa by niyoga; she turned pale with fear, and so bore the pale Pandu."
    }
   ],
-  "domains": [],
+  "domains": [
+   {
+    "sphereId": "queenship-of-Hastinapura",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva 102"
+     }
+    ]
+   }
+  ],
   "faculties": [],
   "materialCulture": [],
   "sources": [
@@ -135880,32 +135891,44 @@ const NEW_FIGURES = [
     "citations": [
      {
       "kind": "primary",
-      "reference": "Mahabharata (BORI) Adi Parva 102; 105-106"
+      "reference": "Mahabharata, Adi Parva 100-102"
      }
     ]
    }
   ],
   "relations": [
    {
-    "kind": "parent-of",
-    "personId": "hindu_pandu",
+    "kind": "sibling",
+    "personId": "hindu_ambika",
     "sources": [
      {
       "kind": "primary",
-      "reference": "Mahabharata Adi Parva 105-106"
+      "reference": "Mahabharata, Adi Parva 102"
      }
     ],
-    "notes": "Mother of Pandu by Vyasa through niyoga."
-   },
-   {
-    "kind": "sibling",
-    "personId": "hindu_ambika",
-    "notes": ""
+    "notes": "Sister, fellow Kashi princess and co-wife of Vichitravirya."
    },
    {
     "kind": "spouse",
     "personId": "hindu_vichitravirya",
-    "notes": ""
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva 102"
+     }
+    ],
+    "notes": "Junior wife of Vichitravirya."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "hindu_pandu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahabharata, Adi Parva 100"
+     }
+    ],
+    "notes": "Mother of the pale Pandu by Vyasa under niyoga."
    }
   ]
  },

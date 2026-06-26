@@ -65,22 +65,28 @@ function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisib
     () => (ctx.size ? domains.filter((d) => domainCtxBuckets(d).some((b) => ctx.has(b))) : domains),
     [domains, ctx]);
 
-  const groups = __dmMemo(() => {
+  // Post-facet, post-query list — drives the header count/summary so they
+  // track the search box, not just the context facet.
+  const visible = __dmMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? faceted : faceted.filter((d) => {
+    if (!query) return faceted;
+    return faceted.filter((d) => {
       const hay = [d.displayName, d.id, d.term && d.term.value,
         ...(d.contextTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
     });
+  }, [faceted, q]);
+
+  const groups = __dmMemo(() => {
     const byLetter = new Map();
-    for (const d of filtered) {
+    for (const d of visible) {
       const k = domGroupKey(d.displayName);
       if (!byLetter.has(k)) byLetter.set(k, []);
       byLetter.get(k).push(d);
     }
     return [...byLetter.entries()].sort((a, b) =>
       (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [faceted, q]);
+  }, [visible]);
 
   __dmEff(() => {
     if (!onVisibleOrder) return;
@@ -98,9 +104,9 @@ function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisib
     <div className="items-view domains-view">
       <div className="items-head">
         <div className="items-head-row">
-          <h2 className="items-title">Domains <span className="items-count">{faceted.length}</span></h2>
-          {total > faceted.length ? (
-            <span className="items-showcased">filtered — {faceted.length} of {total}</span>
+          <h2 className="items-title">Domains <span className="items-count">{visible.length}</span></h2>
+          {total > visible.length ? (
+            <span className="items-showcased">filtered — {visible.length} of {total}</span>
           ) : shared > 0 && (
             <span className="items-showcased">{shared} shared across figures</span>
           )}

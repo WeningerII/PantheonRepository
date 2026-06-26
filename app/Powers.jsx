@@ -70,22 +70,28 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
     () => (herit.size ? powers.filter((p) => herit.has(powerHeritBucket(p.inheritability))) : powers),
     [powers, herit]);
 
-  const groups = __pMemo(() => {
+  // Post-facet, post-query list — drives the header count/summary so they
+  // track the search box, not just the heritability facet.
+  const visible = __pMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? faceted : faceted.filter((p) => {
+    if (!query) return faceted;
+    return faceted.filter((p) => {
       const hay = [p.displayName, p.id, p.domainTag, p.term && p.term.value,
         ...(p.scopeTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
     });
+  }, [faceted, q]);
+
+  const groups = __pMemo(() => {
     const byLetter = new Map();
-    for (const p of filtered) {
+    for (const p of visible) {
       const k = powGroupKey(p.displayName);
       if (!byLetter.has(k)) byLetter.set(k, []);
       byLetter.get(k).push(p);
     }
     return [...byLetter.entries()].sort((a, b) =>
       (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [faceted, q]);
+  }, [visible]);
 
   __pEff(() => {
     if (!onVisibleOrder) return;
@@ -103,9 +109,9 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
     <div className="items-view powers-view">
       <div className="items-head">
         <div className="items-head-row">
-          <h2 className="items-title">Powers <span className="items-count">{faceted.length}</span></h2>
-          {total > faceted.length ? (
-            <span className="items-showcased">filtered — {faceted.length} of {total}</span>
+          <h2 className="items-title">Powers <span className="items-count">{visible.length}</span></h2>
+          {total > visible.length ? (
+            <span className="items-showcased">filtered — {visible.length} of {total}</span>
           ) : heritable > 0 && (
             <span className="items-showcased">{heritable} traced down a bloodline</span>
           )}
