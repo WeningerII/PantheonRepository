@@ -288,14 +288,14 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
     if (glidedRef.current === focused) return;
     if (!svgRef.current || !zoomRef.current || !window.d3 || !size.w || !size.h) return;
     const t = renderedTraditions.find(r => r.tradition === focused);
-    if (!t) return;
+    if (!t) { glidedRef.current = focused; return; }
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
     for (const p of t.polys) {
       if (!p.bounds) continue;
       x0 = Math.min(x0, p.bounds[0][0]); y0 = Math.min(y0, p.bounds[0][1]);
       x1 = Math.max(x1, p.bounds[1][0]); y1 = Math.max(y1, p.bounds[1][1]);
     }
-    if (!isFinite(x0) || x1 <= x0 || y1 <= y0) return;
+    if (!isFinite(x0) || x1 <= x0 || y1 <= y0) { glidedRef.current = focused; return; }
     glidedRef.current = focused;
     const k = Math.max(1, Math.min(8, 0.75 / Math.max((x1 - x0) / size.w, (y1 - y0) / size.h)));
     const transform = window.d3.zoomIdentity

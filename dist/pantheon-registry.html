@@ -440510,13 +440510,13 @@ function StageNode({
   const fill = TS_FILL[ts] || '#5A5550';
   const glyph = TS_GLYPH[ts] || '?';
   const dead = isDeadStatus(node.stage.vitalStatus);
-  const isHover = hover === node;
+  const isHover = hover === node.originalIndex;
   return /*#__PURE__*/React.createElement("g", {
     transform: `translate(${node.x}, ${ROW_H / 2})`,
     style: {
       cursor: 'pointer'
     },
-    onMouseEnter: () => onHover(node),
+    onMouseEnter: () => onHover(node.originalIndex),
     onMouseLeave: onLeave
   }, isHover && /*#__PURE__*/React.createElement("circle", {
     r: NODE_R + 5,
@@ -440552,6 +440552,7 @@ function LifecycleTimeline({
     setHover(null);
   }, [lc]);
   const plot = __lcMemo(() => buildPlot(lc, tradition, width), [lc, tradition, width]);
+  const hoverNode = hover != null && plot.nodes ? plot.nodes.find(n => n.originalIndex === hover) : null;
 
   // Re-run when the mode flips: a session whose FIRST entry renders the
   // fallback (no container div) must still attach the observer when a later
@@ -440713,24 +440714,24 @@ function LifecycleTimeline({
     className: "lifecycle-legend-label"
   }, nameForTypeStatus(ts)))), /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-legend-note"
-  }, "dashed = deceased"), plot.omitted > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "dashed = dead / deceased"), plot.omitted > 0 && /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-legend-note"
-  }, "+", plot.omitted, " stage", plot.omitted === 1 ? '' : 's', " in undated eras not plotted")), hover && /*#__PURE__*/React.createElement("div", {
+  }, "+", plot.omitted, " stage", plot.omitted === 1 ? '' : 's', " in undated eras not plotted")), hoverNode && /*#__PURE__*/React.createElement("div", {
     className: "lifecycle-card"
   }, /*#__PURE__*/React.createElement("div", {
     className: "lifecycle-card-eyebrow"
   }, /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-card-chip",
     style: {
-      background: TS_FILL[hover.stage.typeStatus] || '#5A5550'
+      background: TS_FILL[hoverNode.stage.typeStatus] || '#5A5550'
     }
-  }, TS_GLYPH[hover.stage.typeStatus] || '?'), /*#__PURE__*/React.createElement("span", null, nameForTypeStatus(hover.stage.typeStatus)), hover.stage.vitalStatus && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+  }, TS_GLYPH[hoverNode.stage.typeStatus] || '?'), /*#__PURE__*/React.createElement("span", null, nameForTypeStatus(hoverNode.stage.typeStatus)), hoverNode.stage.vitalStatus && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-card-dot"
-  }), /*#__PURE__*/React.createElement("span", null, hover.stage.vitalStatus)), /*#__PURE__*/React.createElement("span", {
+  }), /*#__PURE__*/React.createElement("span", null, hoverNode.stage.vitalStatus)), /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-card-dot"
-  }), /*#__PURE__*/React.createElement("span", null, hover.stage.era.replace(/-/g, ' '))), hover.stage.notes && /*#__PURE__*/React.createElement("p", {
+  }), /*#__PURE__*/React.createElement("span", null, hoverNode.stage.era.replace(/-/g, ' '))), hoverNode.stage.notes && /*#__PURE__*/React.createElement("p", {
     className: "lifecycle-card-notes"
-  }, hover.stage.notes)));
+  }, hoverNode.stage.notes)));
 }
 
 // Fallback for traditions with no parseable era spans.
@@ -442719,11 +442720,11 @@ function domainCtxBucket(raw) {
   const s = String(raw == null ? '' : raw).toLowerCase().trim();
   if (!s) return 'unspecified';
   if (/post-?mortem|posthumous|apotheos|after.?death|final-phase|\bdeath\b/.test(s)) return 'post-mortem';
-  if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
   if (/lifelong/.test(s)) return 'lifelong';
+  if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
   if (/genealog|lineage|foundation|founder|dynast/.test(s)) return 'genealogical';
   if (/festival|seasonal|cyclic|calendr|harvest/.test(s)) return 'festival';
-  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|position/.test(s)) return 'narrative';
+  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|\bposition\b/.test(s)) return 'narrative';
   return 'other';
 }
 function domainCtxBuckets(d) {
@@ -444751,7 +444752,10 @@ function Atlas({
     if (glidedRef.current === focused) return;
     if (!svgRef.current || !zoomRef.current || !window.d3 || !size.w || !size.h) return;
     const t = renderedTraditions.find(r => r.tradition === focused);
-    if (!t) return;
+    if (!t) {
+      glidedRef.current = focused;
+      return;
+    }
     let x0 = Infinity,
       y0 = Infinity,
       x1 = -Infinity,
@@ -444763,7 +444767,10 @@ function Atlas({
       x1 = Math.max(x1, p.bounds[1][0]);
       y1 = Math.max(y1, p.bounds[1][1]);
     }
-    if (!isFinite(x0) || x1 <= x0 || y1 <= y0) return;
+    if (!isFinite(x0) || x1 <= x0 || y1 <= y0) {
+      glidedRef.current = focused;
+      return;
+    }
     glidedRef.current = focused;
     const k = Math.max(1, Math.min(8, 0.75 / Math.max((x1 - x0) / size.w, (y1 - y0) / size.h)));
     const transform = window.d3.zoomIdentity.translate(size.w / 2 - k * (x0 + x1) / 2, size.h / 2 - k * (y0 + y1) / 2).scale(k);
@@ -446024,6 +446031,10 @@ function Shell() {
 
     // Item-detail navigation
     if (selectedItemId) {
+      if (e.key === 'Escape') {
+        setSelectedItemId(null);
+        return;
+      }
       if (e.key === 'j' || e.key === 'ArrowDown') {
         e.preventDefault();
         markKbNav();
@@ -446041,6 +446052,10 @@ function Shell() {
 
     // Power-detail navigation
     if (selectedPowerId) {
+      if (e.key === 'Escape') {
+        setSelectedPowerId(null);
+        return;
+      }
       if (e.key === 'j' || e.key === 'ArrowDown') {
         e.preventDefault();
         markKbNav();
@@ -446058,6 +446073,10 @@ function Shell() {
 
     // Domain-detail navigation
     if (selectedDomainId) {
+      if (e.key === 'Escape') {
+        setSelectedDomainId(null);
+        return;
+      }
       if (e.key === 'j' || e.key === 'ArrowDown') {
         e.preventDefault();
         markKbNav();

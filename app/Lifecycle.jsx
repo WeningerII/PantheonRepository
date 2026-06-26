@@ -217,12 +217,12 @@ function StageNode({ node, hover, onHover, onLeave }) {
   const fill = TS_FILL[ts] || '#5A5550';
   const glyph = TS_GLYPH[ts] || '?';
   const dead = isDeadStatus(node.stage.vitalStatus);
-  const isHover = hover === node;
+  const isHover = hover === node.originalIndex;
   return (
     <g
       transform={`translate(${node.x}, ${ROW_H / 2})`}
       style={{ cursor: 'pointer' }}
-      onMouseEnter={() => onHover(node)}
+      onMouseEnter={() => onHover(node.originalIndex)}
       onMouseLeave={onLeave}
     >
       {isHover && (
@@ -257,6 +257,7 @@ function LifecycleTimeline({ lc, tradition }) {
   __lcEff(() => { setHover(null); }, [lc]);
 
   const plot = __lcMemo(() => buildPlot(lc, tradition, width), [lc, tradition, width]);
+  const hoverNode = (hover != null && plot.nodes) ? plot.nodes.find(n => n.originalIndex === hover) : null;
 
   // Re-run when the mode flips: a session whose FIRST entry renders the
   // fallback (no container div) must still attach the observer when a later
@@ -425,7 +426,7 @@ function LifecycleTimeline({ lc, tradition }) {
               <span className="lifecycle-legend-label">{nameForTypeStatus(ts)}</span>
             </span>
           ))}
-          <span className="lifecycle-legend-note">dashed = deceased</span>
+          <span className="lifecycle-legend-note">dashed = dead / deceased</span>
           {plot.omitted > 0 && (
             <span className="lifecycle-legend-note">
               +{plot.omitted} stage{plot.omitted === 1 ? '' : 's'} in undated eras not plotted
@@ -434,24 +435,24 @@ function LifecycleTimeline({ lc, tradition }) {
         </div>
       )}
 
-      {hover && (
+      {hoverNode && (
         <div className="lifecycle-card">
           <div className="lifecycle-card-eyebrow">
-            <span className="lifecycle-card-chip" style={{ background: TS_FILL[hover.stage.typeStatus] || '#5A5550' }}>
-              {TS_GLYPH[hover.stage.typeStatus] || '?'}
+            <span className="lifecycle-card-chip" style={{ background: TS_FILL[hoverNode.stage.typeStatus] || '#5A5550' }}>
+              {TS_GLYPH[hoverNode.stage.typeStatus] || '?'}
             </span>
-            <span>{nameForTypeStatus(hover.stage.typeStatus)}</span>
-            {hover.stage.vitalStatus && (
+            <span>{nameForTypeStatus(hoverNode.stage.typeStatus)}</span>
+            {hoverNode.stage.vitalStatus && (
               <>
                 <span className="lifecycle-card-dot" />
-                <span>{hover.stage.vitalStatus}</span>
+                <span>{hoverNode.stage.vitalStatus}</span>
               </>
             )}
             <span className="lifecycle-card-dot" />
-            <span>{hover.stage.era.replace(/-/g, ' ')}</span>
+            <span>{hoverNode.stage.era.replace(/-/g, ' ')}</span>
           </div>
-          {hover.stage.notes && (
-            <p className="lifecycle-card-notes">{hover.stage.notes}</p>
+          {hoverNode.stage.notes && (
+            <p className="lifecycle-card-notes">{hoverNode.stage.notes}</p>
           )}
         </div>
       )}

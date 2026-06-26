@@ -558,6 +558,7 @@ function Shell() {
 
     // Item-detail navigation
     if (selectedItemId) {
+      if (e.key === 'Escape') { setSelectedItemId(null); return; }
       if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); moveItem(1); return; }
       if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); moveItem(-1); return; }
       return;
@@ -565,6 +566,7 @@ function Shell() {
 
     // Power-detail navigation
     if (selectedPowerId) {
+      if (e.key === 'Escape') { setSelectedPowerId(null); return; }
       if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); movePower(1); return; }
       if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); movePower(-1); return; }
       return;
@@ -572,6 +574,7 @@ function Shell() {
 
     // Domain-detail navigation
     if (selectedDomainId) {
+      if (e.key === 'Escape') { setSelectedDomainId(null); return; }
       if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); moveDomain(1); return; }
       if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); moveDomain(-1); return; }
       return;

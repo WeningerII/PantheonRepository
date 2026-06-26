@@ -40,11 +40,11 @@ function domainCtxBucket(raw) {
   const s = String(raw == null ? '' : raw).toLowerCase().trim();
   if (!s) return 'unspecified';
   if (/post-?mortem|posthumous|apotheos|after.?death|final-phase|\bdeath\b/.test(s)) return 'post-mortem';
-  if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
   if (/lifelong/.test(s)) return 'lifelong';
+  if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
   if (/genealog|lineage|foundation|founder|dynast/.test(s)) return 'genealogical';
   if (/festival|seasonal|cyclic|calendr|harvest/.test(s)) return 'festival';
-  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|position/.test(s)) return 'narrative';
+  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|\bposition\b/.test(s)) return 'narrative';
   return 'other';
 }
 function domainCtxBuckets(d) {
