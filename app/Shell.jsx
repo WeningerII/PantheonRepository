@@ -201,6 +201,8 @@ function Shell() {
   const { people, atlas, byId, childrenOf, ready } = window.useData();
   const filters = window.useFilters(people);
   const selection = window.useSelection(filters.filtered);
+  const filteredRef = __sRef(filters.filtered);
+  filteredRef.current = filters.filtered;
 
   const [view, setView] = __sState('browse');
   const [cmdkOpen, setCmdkOpen] = __sState(false);
@@ -286,8 +288,13 @@ function Shell() {
       try { id = decodeURIComponent(parts[1]); } catch (_) { id = parts[1]; }
     }
     setView(v);
-    if (v === 'browse') selection.setSelectedId(id);
-    else if (v === 'graph') setGraphFocusId(id);
+    if (v === 'browse') {
+      selection.setSelectedId(id);
+      if (id) {
+        const idx = filteredRef.current.findIndex(p => p.id === id);
+        if (idx >= 0) selection.setCursorIdx(idx);
+      }
+    } else if (v === 'graph') setGraphFocusId(id);
     else if (v === 'atlas') setAtlasFocus(id);
     else if (v === 'items') setSelectedItemId(id);
     else if (v === 'powers') setSelectedPowerId(id);
@@ -720,14 +727,15 @@ function Shell() {
         onPrev={() => moveItem(-1)}
         onNext={() => moveItem(1)}
         canPrev={selIdxInItemOrder > 0}
-        canNext={selIdxInItemOrder >= 0 && selIdxInItemOrder < (itemOrderRef.current?.length || itemList.length) - 1}
+        canNext={selIdxInItemOrder >= 0 && selIdxInItemOrder < (itemOrderRef.current !== null ? itemOrderRef.current.length : itemList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
           setGraphFocusId(null);
           setAtlasFocus(null);
           setSelectedItemId(null);
           selection.setSelectedId(id);
-          selection.setCursorIdx(0);
+          const idx = filters.filtered.findIndex(p => p.id === id);
+          selection.setCursorIdx(idx >= 0 ? idx : 0);
         }}
       />
 
@@ -738,14 +746,15 @@ function Shell() {
         onPrev={() => movePower(-1)}
         onNext={() => movePower(1)}
         canPrev={selIdxInPowerOrder > 0}
-        canNext={selIdxInPowerOrder >= 0 && selIdxInPowerOrder < (powerOrderRef.current?.length || powerList.length) - 1}
+        canNext={selIdxInPowerOrder >= 0 && selIdxInPowerOrder < (powerOrderRef.current !== null ? powerOrderRef.current.length : powerList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
           setGraphFocusId(null);
           setAtlasFocus(null);
           setSelectedPowerId(null);
           selection.setSelectedId(id);
-          selection.setCursorIdx(0);
+          const idx = filters.filtered.findIndex(p => p.id === id);
+          selection.setCursorIdx(idx >= 0 ? idx : 0);
         }}
       />
 
@@ -756,14 +765,15 @@ function Shell() {
         onPrev={() => moveDomain(-1)}
         onNext={() => moveDomain(1)}
         canPrev={selIdxInDomainOrder > 0}
-        canNext={selIdxInDomainOrder >= 0 && selIdxInDomainOrder < (domainOrderRef.current?.length || domainList.length) - 1}
+        canNext={selIdxInDomainOrder >= 0 && selIdxInDomainOrder < (domainOrderRef.current !== null ? domainOrderRef.current.length : domainList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
           setGraphFocusId(null);
           setAtlasFocus(null);
           setSelectedDomainId(null);
           selection.setSelectedId(id);
-          selection.setCursorIdx(0);
+          const idx = filters.filtered.findIndex(p => p.id === id);
+          selection.setCursorIdx(idx >= 0 ? idx : 0);
         }}
       />
 

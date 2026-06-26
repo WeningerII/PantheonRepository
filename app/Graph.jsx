@@ -808,6 +808,11 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     // Path mode — a path is rendered or being assembled.
     if (pathMode) {
       if (pathNodeSet) return pathNodeSet.has(n.id) ? 1 : 0.10;
+      if (pathResult?.unreachable) {
+        // No route within BFS depth — endpoints still bright, rest clearly dead
+        if (n.id === pathStart || n.id === pathEnd) return 1;
+        return 0.15;
+      }
       // No path computed yet — just dim everything except endpoints
       if (n.id === pathStart || n.id === pathEnd) return 1;
       if (hoverNode === n.id) return 1;
@@ -839,6 +844,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
         const hi = sId < tId ? tId : sId;
         return pathEdgeSet.has(lo + '|' + hi + '|' + kind) ? 1 : 0.05;
       }
+      if (pathResult?.unreachable) return 0.05;
       return 0.07;
     }
     if (hoverNode) return (sId === hoverNode || tId === hoverNode) ? 1 : 0.10;
