@@ -1027,7 +1027,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
                     ref={el => { if (el) linkElRefs.current.set(i, el); else linkElRefs.current.delete(i); }}
                     x1={sx} y1={sy} x2={tx} y2={ty}
                     stroke={inPath ? '#B5371F' : style.stroke}
-                    strokeOpacity={inPath ? 0.95 : style.alpha * op}
+                    strokeOpacity={inPath ? 0.95 * (op > 0 ? 1 : 0) : style.alpha * op}
                     strokeWidth={inPath ? 2.4 : style.width}
                     strokeDasharray={inPath ? undefined : (style.dash || undefined)}
                     style={{ cursor: 'pointer' }}

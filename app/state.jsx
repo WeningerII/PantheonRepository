@@ -541,7 +541,7 @@ const SORTS = {
     if (ya == null && yb == null) return displayName(a).localeCompare(displayName(b));
     if (ya == null) return 1;
     if (yb == null) return -1;
-    return ya - yb;
+    return (ya - yb) || displayName(a).localeCompare(displayName(b));
   }},
   type:      { label: 'Type',         short: 'Type',      cmp: (a, b) => (TYPE_TIER[a.type]?.order ?? 99) - (TYPE_TIER[b.type]?.order ?? 99) || displayName(a).localeCompare(displayName(b)) },
 };

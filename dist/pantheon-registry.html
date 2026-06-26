@@ -439054,7 +439054,7 @@ const SORTS = {
       if (ya == null && yb == null) return displayName(a).localeCompare(displayName(b));
       if (ya == null) return 1;
       if (yb == null) return -1;
-      return ya - yb;
+      return ya - yb || displayName(a).localeCompare(displayName(b));
     }
   },
   type: {
@@ -439609,7 +439609,7 @@ const BrowseRow = React.memo(function BrowseRow({
   return /*#__PURE__*/React.createElement("tr", {
     ref: ref,
     className: (cursor ? 'cursor ' : '') + (selected ? 'selected ' : '') + 'type-row-' + entry.type,
-    onClick: () => onOpen(entry.id),
+    onClick: () => onOpen(entry.id, idx),
     onMouseEnter: () => onHover && onHover(idx)
   }, /*#__PURE__*/React.createElement("td", {
     className: "cell-name"
@@ -444124,7 +444124,7 @@ function Graph({
       x2: tx,
       y2: ty,
       stroke: inPath ? '#B5371F' : style.stroke,
-      strokeOpacity: inPath ? 0.95 : style.alpha * op,
+      strokeOpacity: inPath ? 0.95 * (op > 0 ? 1 : 0) : style.alpha * op,
       strokeWidth: inPath ? 2.4 : style.width,
       strokeDasharray: inPath ? undefined : style.dash || undefined,
       style: {
@@ -445911,8 +445911,9 @@ function Shell() {
         return;
       }
       if (selection.selectedId) {
+        const i = selIdxInFiltered;
         selection.setSelectedId(null);
-        selection.setCursorIdx(0);
+        selection.setCursorIdx(i >= 0 ? i : 0);
         return;
       }
       if (filters.query) {
@@ -446118,14 +446119,18 @@ function Shell() {
     byId: byId,
     childrenOf: childrenOf,
     onClose: () => {
+      const i = selIdxInFiltered;
       selection.setSelectedId(null);
-      selection.setCursorIdx(0);
+      selection.setCursorIdx(i >= 0 ? i : 0);
     },
     onPrev: () => moveSelection(-1),
     onNext: () => moveSelection(1),
     canPrev: selIdxInFiltered > 0,
     canNext: selIdxInFiltered >= 0 && selIdxInFiltered < filters.filtered.length - 1,
-    onOpen: id => selection.setSelectedId(id),
+    onOpen: (id, idx) => {
+      selection.setSelectedId(id);
+      if (idx != null) selection.setCursorIdx(idx);
+    },
     onOpenItem: openItem,
     onShowInGraph: entry => {
       setGraphFocusId(entry.id);

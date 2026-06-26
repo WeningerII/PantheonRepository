@@ -502,7 +502,7 @@ function Shell() {
       if (selectedItemId) { setSelectedItemId(null); return; }
       if (selectedPowerId) { setSelectedPowerId(null); return; }
       if (selectedDomainId) { setSelectedDomainId(null); return; }
-      if (selection.selectedId) { selection.setSelectedId(null); selection.setCursorIdx(0); return; }
+      if (selection.selectedId) { const i = selIdxInFiltered; selection.setSelectedId(null); selection.setCursorIdx(i >= 0 ? i : 0); return; }
       if (filters.query) { filters.setQuery(''); return; }
       return;
     }
@@ -669,12 +669,12 @@ function Shell() {
         entry={selectedEntry}
         byId={byId}
         childrenOf={childrenOf}
-        onClose={() => { selection.setSelectedId(null); selection.setCursorIdx(0); }}
+        onClose={() => { const i = selIdxInFiltered; selection.setSelectedId(null); selection.setCursorIdx(i >= 0 ? i : 0); }}
         onPrev={() => moveSelection(-1)}
         onNext={() => moveSelection(1)}
         canPrev={selIdxInFiltered > 0}
         canNext={selIdxInFiltered >= 0 && selIdxInFiltered < filters.filtered.length - 1}
-        onOpen={(id) => selection.setSelectedId(id)}
+        onOpen={(id, idx) => { selection.setSelectedId(id); if (idx != null) selection.setCursorIdx(idx); }}
         onOpenItem={openItem}
         onShowInGraph={(entry) => {
           setGraphFocusId(entry.id);

@@ -62,7 +62,7 @@ const BrowseRow = React.memo(function BrowseRow({ entry, idx, cursor, selected, 
     <tr
       ref={ref}
       className={(cursor ? 'cursor ' : '') + (selected ? 'selected ' : '') + 'type-row-' + entry.type}
-      onClick={() => onOpen(entry.id)}
+      onClick={() => onOpen(entry.id, idx)}
       onMouseEnter={() => onHover && onHover(idx)}
     >
       <td className="cell-name">
