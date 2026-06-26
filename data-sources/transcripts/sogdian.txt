@@ -1,0 +1,300 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Sogdian (pre-Islamic Transoxiana / Penjikent)
+Author: figure-authoring researcher
+Date: 2026-06-26
+
+PURPOSE
+Fills the Zarafshan-valley core of the Central Asia gap with the distinctive Sogdian pantheon of the Penjikent and Afrasiab murals — Nana the lion-borne city-patron, Adbag (Ahura Mazda), the Shiva-clad wind-god Weshparkar, Zurvan (Time), and the mourning vegetation-goddess Žēmāt. Iranian-yazata forms carry equated-with links to their Zoroastrian/Greek originals; Žēmāt and the others draw on Grenet, Marshak and Shenkar.
+
+```json
+[
+ {
+  "id": "sogdian_nana",
+  "name": {
+   "primary": "Nana",
+   "alt": [
+    "Nanai",
+    "Nanaia",
+    "Nanaya"
+   ],
+   "transliterations": {
+    "sogdian": "nny"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "celestial-order",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_nana",
+    "notes": "The same goddess (Nanaia) — the Sogdian city-patron and the Kushan dynastic sovereign."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "M. Shenkar, 'NANA', Encyclopaedia Iranica; M. Compareti, 'Nana and Tish in Sogdiana' (2017)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The pre-eminent goddess and city-patron of Sogdiana, descended from the Sumero-Akkadian Nanaya and worshipped from Bukhara to Panjikent, where Temple II was her sanctuary. In the murals she is enthroned on a lion, often four-armed and holding the sun and moon — the four-armed dragon-throne goddess of Panjikent being her local form. Her consort in Sogdiana is the rain-star god Tish (Tishtrya)."
+ },
+ {
+  "id": "sogdian_adbag",
+  "name": {
+   "primary": "Adbag",
+   "alt": [
+    "Adhvagh",
+    "Adhbag"
+   ],
+   "transliterations": {
+    "sogdian": "ʾδβɣ"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cosmic-order",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "heaven",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_ahura_mazda",
+    "notes": "Adbag, 'the great god', is the Sogdian cult-form of Ahura Mazda."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka, where the Hindu Indra is rendered Adhvagh (Aδβaγ); ed. É. Benveniste (1946)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Adbag — literally 'the great god' — is the Sogdian name and cult-form of Ahura Mazda, the supreme Mazdean creator, with whom Temple I at Panjikent is associated. In the Buddhist Sogdian texts the name is used to render the highest Indic god."
+ },
+ {
+  "id": "sogdian_weshparkar",
+  "name": {
+   "primary": "Weshparkar",
+   "alt": [
+    "Wēšparkar",
+    "Vēšparkar"
+   ],
+   "transliterations": {
+    "sogdian": "wyšprkr"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "atmosphere",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vayu",
+    "notes": "Weshparkar continues the Avestan wind-god Vayu, in Shaiva guise."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka renders the Hindu Maheshvara (Shiva) as Wēšparkar; F. Grenet, 'Iranian Gods in Hindu Garb' (2010)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Sogdian wind- and atmosphere-god, heir of the Avestan Vayu, who in Sogdian art is clothed in the iconography of the Hindu Shiva-Maheshvara: three-headed, holding trident and thunderbolt. A striking case of an Iranian deity rendered through Indic visual form."
+ },
+ {
+  "id": "sogdian_zurvan",
+  "name": {
+   "primary": "Zurvan",
+   "alt": [
+    "Azruwa",
+    "Zruwan"
+   ],
+   "transliterations": {
+    "sogdian": "zrwʾ"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "time",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "destiny",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cosmic-primacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka renders the Hindu Brahma as Azruwa (Zurvan); Manichaean Sogdian 'Azrua' for the Father of Greatness"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Zurvan, the personification of infinite Time and Destiny, stands at the head of the Sogdian high triad. In the Sogdian Vessantara Jataka the supreme Indic creator Brahma is rendered by his name, and in Manichaean Sogdian he lends his name to the Father of Greatness."
+ },
+ {
+  "id": "sogdian_zemat",
+  "name": {
+   "primary": "Žēmāt",
+   "alt": [
+    "Žimat",
+    "Zhemat"
+   ],
+   "transliterations": {
+    "sogdian": "žymʾt"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "grain",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vegetation-cycle",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "mourning",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "greek_hesiod_demeter",
+    "notes": "Grenet reads the Panjikent mourning-goddess as a Sogdian counterpart of Demeter."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "F. Grenet, in 'MITHRA ii. Iconography', Encyclopaedia Iranica, on the Panjikent 'Mourning Scene'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Grenet interprets the goddess presiding over the famous 'Mourning Scene' at Panjikent Temple II as Žēmāt, a Sogdian counterpart of Demeter who laments a dying-and-returning vegetation deity — the Transoxianan reflex of the ancient Near Eastern grieving-goddess of the grain."
+ }
+]
+```

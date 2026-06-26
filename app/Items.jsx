@@ -73,7 +73,7 @@ function itemKindBucket(kind) {
   if (/substance|elixir|potion|\bearth\b|\bfire\b|\bplant\b|\btree\b|herb|flower|fruit|\bwater\b|blood|\bmead\b|ambrosia/.test(s)) return 'substance';
   if (/ritual|\bcult\b|sacred|offering|votive|amulet|talisman|charm|bundle|fetish|\brelic\b|altar|reliquary/.test(s)) return 'ritual';
   if (/\btool\b|implement|equipment|\bstaff\b|\brod\b|\bhook\b|\bnet\b|\bkey\b|wheel|loom|plough|plow|anvil|mirror|\blamp\b|torch|sickle|scythe|spindle/.test(s)) return 'tool';
-  if (/symbol|\bsign\b|cosmic|attribute|emblem/.test(s)) return 'symbol';
+  if (/symbol|\bsign\b|cosmic|attribute/.test(s)) return 'symbol';
   return 'other';
 }
 
@@ -123,13 +123,13 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
   const groups = __iMemo(() => {
     const byKind = new Map();
     for (const it of visible) {
-      const k = it.kind || 'other';
+      const k = itemKindBucket(it.kind);
       if (!byKind.has(k)) byKind.set(k, []);
       byKind.get(k).push(it);
     }
     return [...byKind.entries()].sort((a, b) =>
-      (itemKindRank(a[0]) - itemKindRank(b[0])) ||
-      itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
+      ((ITEM_BUCKET_RANK[a[0]] ?? 99) - (ITEM_BUCKET_RANK[b[0]] ?? 99)) ||
+      itemBucketLabel(a[0]).localeCompare(itemBucketLabel(b[0])));
   }, [visible]);
 
   // Report the flattened on-screen order (grouped + filtered) so the item
@@ -180,7 +180,7 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
         {groups.map(([kind, list]) => (
           <div className="items-group" key={kind}>
             <h3 className="items-group-head">
-              {itemKindLabel(kind)} <span className="items-group-count">{list.length}</span>
+              {itemBucketLabel(kind)} <span className="items-group-count">{list.length}</span>
             </h3>
             <div className="items-rows">
               {list.map((it) => {
@@ -330,7 +330,7 @@ function ItemSources({ sources }) {
 }
 
 // ── Item detail slide-over ───────────────────────────────────────────────────
-function ItemDetail({ item, byId, onClose, onPrev, onNext, onOpenFigure }) {
+function ItemDetail({ item, byId, onClose, onPrev, onNext, canPrev, canNext, onOpenFigure }) {
   // Exit animation mirrors the figure Detail: keep the last item mounted for one
   // beat after `item` goes null, then unmount. (Shell renders this component
   // unconditionally so the null transition — and the slide-out — happens.)
@@ -393,8 +393,8 @@ function ItemDetail({ item, byId, onClose, onPrev, onNext, onOpenFigure }) {
       >
         <div className="detail-bar">
           <div className="nav">
-            <button className="btn btn-ghost btn-sm" onClick={onPrev} title="Previous (k)">↑ Prev</button>
-            <button className="btn btn-ghost btn-sm" onClick={onNext} title="Next (j)">↓ Next</button>
+            <button className="btn btn-ghost btn-sm" onClick={onPrev} disabled={canPrev === false} title="Previous (k)">↑ Prev</button>
+            <button className="btn btn-ghost btn-sm" onClick={onNext} disabled={canNext === false} title="Next (j)">↓ Next</button>
           </div>
           <div className="spacer" />
           <button className="close" onClick={onClose} title="Close (esc)" aria-label="Close">×</button>

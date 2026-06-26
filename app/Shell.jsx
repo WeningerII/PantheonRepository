@@ -201,6 +201,8 @@ function Shell() {
   const { people, atlas, byId, childrenOf, ready } = window.useData();
   const filters = window.useFilters(people);
   const selection = window.useSelection(filters.filtered);
+  const filteredRef = __sRef(filters.filtered);
+  filteredRef.current = filters.filtered;
 
   const [view, setView] = __sState('browse');
   const [cmdkOpen, setCmdkOpen] = __sState(false);
@@ -209,6 +211,12 @@ function Shell() {
   const [selectedItemId, setSelectedItemId] = __sState(null);
   const [selectedPowerId, setSelectedPowerId] = __sState(null);
   const [selectedDomainId, setSelectedDomainId] = __sState(null);
+  // Version counters incremented by onVisibleOrder so selIdxIn*Order memos
+  // recompute after the child reports a new ordered list (ref mutation alone
+  // never triggers a re-render).
+  const [itemOrderVer, setItemOrderVer] = __sState(0);
+  const [powerOrderVer, setPowerOrderVer] = __sState(0);
+  const [domainOrderVer, setDomainOrderVer] = __sState(0);
   const searchRef = __sRef(null);
 
   // Item registry (built in data.js, read once). The sorted list drives the
@@ -266,6 +274,7 @@ function Shell() {
     // hash instead of leaving a panel stuck open over a URL that no longer
     // describes it.
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
     setAtlasFocus(null);
     setSelectedItemId(null);
@@ -279,8 +288,13 @@ function Shell() {
       try { id = decodeURIComponent(parts[1]); } catch (_) { id = parts[1]; }
     }
     setView(v);
-    if (v === 'browse') selection.setSelectedId(id);
-    else if (v === 'graph') setGraphFocusId(id);
+    if (v === 'browse') {
+      selection.setSelectedId(id);
+      if (id) {
+        const idx = filteredRef.current.findIndex(p => p.id === id);
+        if (idx >= 0) selection.setCursorIdx(idx);
+      }
+    } else if (v === 'graph') setGraphFocusId(id);
     else if (v === 'atlas') setAtlasFocus(id);
     else if (v === 'items') setSelectedItemId(id);
     else if (v === 'powers') setSelectedPowerId(id);
@@ -379,7 +393,7 @@ function Shell() {
   const itemOrderRef = __sRef(null);
   const moveItem = __sCb((delta) => {
     if (!selectedItemId) return;
-    const order = (itemOrderRef.current && itemOrderRef.current.length)
+    const order = itemOrderRef.current !== null
       ? itemOrderRef.current
       : itemList.map((it) => it.id);
     const idx = order.indexOf(selectedItemId);
@@ -393,7 +407,7 @@ function Shell() {
   const powerOrderRef = __sRef(null);
   const movePower = __sCb((delta) => {
     if (!selectedPowerId) return;
-    const order = (powerOrderRef.current && powerOrderRef.current.length)
+    const order = powerOrderRef.current !== null
       ? powerOrderRef.current : powerList.map((p) => p.id);
     const idx = order.indexOf(selectedPowerId);
     if (idx < 0) return;
@@ -403,7 +417,7 @@ function Shell() {
   const domainOrderRef = __sRef(null);
   const moveDomain = __sCb((delta) => {
     if (!selectedDomainId) return;
-    const order = (domainOrderRef.current && domainOrderRef.current.length)
+    const order = domainOrderRef.current !== null
       ? domainOrderRef.current : domainList.map((d) => d.id);
     const idx = order.indexOf(selectedDomainId);
     if (idx < 0) return;
@@ -411,12 +425,50 @@ function Shell() {
     if (nextId) setSelectedDomainId(nextId);
   }, [selectedDomainId, domainList]);
 
+  const selIdxInItemOrder = __sMemo(() => {
+    if (!selectedItemId) return -1;
+    const order = itemOrderRef.current !== null ? itemOrderRef.current : itemList.map(it => it.id);
+    return order.indexOf(selectedItemId);
+  }, [selectedItemId, itemList, itemOrderVer]);
+
+  const selIdxInPowerOrder = __sMemo(() => {
+    if (!selectedPowerId) return -1;
+    const order = powerOrderRef.current !== null ? powerOrderRef.current : powerList.map(p => p.id);
+    return order.indexOf(selectedPowerId);
+  }, [selectedPowerId, powerList, powerOrderVer]);
+
+  const selIdxInDomainOrder = __sMemo(() => {
+    if (!selectedDomainId) return -1;
+    const order = domainOrderRef.current !== null ? domainOrderRef.current : domainList.map(d => d.id);
+    return order.indexOf(selectedDomainId);
+  }, [selectedDomainId, domainList, domainOrderVer]);
+
+  // Stable onVisibleOrder callbacks — inline arrow functions in JSX are new
+  // references every render, which would make Items/Powers/Domains useEffect
+  // re-fire → call setOrderVer → re-render → new reference → infinite loop.
+  // useCallback with [] produces the same stable function across all renders;
+  // setOrderVer (stable setter) and the refs (stable objects) are safe to close
+  // over with empty deps.
+  const onItemVisibleOrder = __sCb((ids) => {
+    itemOrderRef.current = ids;
+    setItemOrderVer(v => v + 1);
+  }, []);
+  const onPowerVisibleOrder = __sCb((ids) => {
+    powerOrderRef.current = ids;
+    setPowerOrderVer(v => v + 1);
+  }, []);
+  const onDomainVisibleOrder = __sCb((ids) => {
+    domainOrderRef.current = ids;
+    setDomainOrderVer(v => v + 1);
+  }, []);
+
   // Switch top-level view from the view tabs. Clear every detail axis first so
   // an open slide-over never stays stacked over the new view, and the hash
   // (written by the URL-sync effect from these same state values) collapses to
   // a bare #/<view> — mirroring applyHash's mutual-exclusion contract.
   const changeView = __sCb((v) => {
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
     setAtlasFocus(null);
     setSelectedItemId(null);
@@ -431,8 +483,34 @@ function Shell() {
   const openItem = __sCb((id) => {
     setView('items');
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
     setSelectedItemId(id);
+  }, [selection]);
+
+  const openPower = __sCb((id) => {
+    setView('powers');
+    selection.setSelectedId(null);
+    selection.setCursorIdx(0);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedDomainId(null);
+    setSelectedPowerId(id);
+  }, [selection]);
+
+  const openDomain = __sCb((id) => {
+    setView('domains');
+    selection.setSelectedId(null);
+    selection.setCursorIdx(0);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(id);
   }, [selection]);
 
   // Keyboard bindings. The handler is kept in a ref refreshed every render so
@@ -452,11 +530,11 @@ function Shell() {
     }
     if (e.key === 'Escape') {
       if (cmdkOpen) { setCmdkOpen(false); return; }
+      if (inField) { e.target.blur(); return; }
       if (selectedItemId) { setSelectedItemId(null); return; }
       if (selectedPowerId) { setSelectedPowerId(null); return; }
       if (selectedDomainId) { setSelectedDomainId(null); return; }
-      if (selection.selectedId) { selection.setSelectedId(null); return; }
-      if (inField) { e.target.blur(); return; }
+      if (selection.selectedId) { const i = selIdxInFiltered; selection.setSelectedId(null); selection.setCursorIdx(i >= 0 ? i : 0); return; }
       if (filters.query) { filters.setQuery(''); return; }
       return;
     }
@@ -480,6 +558,7 @@ function Shell() {
 
     // Item-detail navigation
     if (selectedItemId) {
+      if (e.key === 'Escape') { setSelectedItemId(null); return; }
       if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); moveItem(1); return; }
       if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); moveItem(-1); return; }
       return;
@@ -487,6 +566,7 @@ function Shell() {
 
     // Power-detail navigation
     if (selectedPowerId) {
+      if (e.key === 'Escape') { setSelectedPowerId(null); return; }
       if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); movePower(1); return; }
       if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); movePower(-1); return; }
       return;
@@ -494,6 +574,7 @@ function Shell() {
 
     // Domain-detail navigation
     if (selectedDomainId) {
+      if (e.key === 'Escape') { setSelectedDomainId(null); return; }
       if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); moveDomain(1); return; }
       if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); moveDomain(-1); return; }
       return;
@@ -549,14 +630,14 @@ function Shell() {
       />
       <div className="shell-body">
         <div className="shell-rail">
-          <Rail filters={filters} view={view} hasDetail={!!selectedEntry} />
+          <Rail filters={filters} view={view} hasDetail={!!(selectedEntry || selectedItemId || selectedPowerId || selectedDomainId)} />
         </div>
         <div className="shell-main">
           {view === 'browse' && (
             <window.Browse
               filters={filters}
               selection={selection}
-              onOpen={(id) => selection.setSelectedId(id)}
+              onOpen={(id, idx) => { selection.setSelectedId(id); if (idx != null) selection.setCursorIdx(idx); }}
             />
           )}
           {view === 'graph' && (
@@ -565,7 +646,7 @@ function Shell() {
               byId={byId}
               focusId={graphFocusId}
               setFocusId={setGraphFocusId}
-              onOpenDetail={(id) => selection.setSelectedId(id)}
+              onOpenDetail={(id) => { setGraphFocusId(null); setView('browse'); selection.setSelectedId(id); const idx = filters.filtered.findIndex(p => p.id === id); if (idx >= 0) selection.setCursorIdx(idx); }}
             />
           )}
           {view === 'atlas' && (
@@ -578,7 +659,7 @@ function Shell() {
               onOpenDetail={(tradition) => {
                 // "N figures →" click: drop into Browse with the tradition selected
                 filters.setTraditions(new Set([tradition]));
-                setView('browse');
+                changeView('browse');
               }}
             />
           )}
@@ -588,8 +669,8 @@ function Shell() {
               total={itemList.length}
               byId={byId}
               selectedItemId={selectedItemId}
-              onOpenItem={(id) => setSelectedItemId(id)}
-              onVisibleOrder={(ids) => { itemOrderRef.current = ids; }}
+              onOpenItem={openItem}
+              onVisibleOrder={onItemVisibleOrder}
             />
           )}
           {view === 'powers' && (
@@ -598,8 +679,8 @@ function Shell() {
               total={powerList.length}
               byId={byId}
               selectedPowerId={selectedPowerId}
-              onOpenPower={(id) => setSelectedPowerId(id)}
-              onVisibleOrder={(ids) => { powerOrderRef.current = ids; }}
+              onOpenPower={openPower}
+              onVisibleOrder={onPowerVisibleOrder}
             />
           )}
           {view === 'domains' && (
@@ -608,8 +689,8 @@ function Shell() {
               total={domainList.length}
               byId={byId}
               selectedDomainId={selectedDomainId}
-              onOpenDomain={(id) => setSelectedDomainId(id)}
-              onVisibleOrder={(ids) => { domainOrderRef.current = ids; }}
+              onOpenDomain={openDomain}
+              onVisibleOrder={onDomainVisibleOrder}
             />
           )}
         </div>
@@ -623,17 +704,22 @@ function Shell() {
         entry={selectedEntry}
         byId={byId}
         childrenOf={childrenOf}
-        onClose={() => selection.setSelectedId(null)}
+        onClose={() => { const i = selIdxInFiltered; selection.setSelectedId(null); selection.setCursorIdx(i >= 0 ? i : 0); }}
         onPrev={() => moveSelection(-1)}
         onNext={() => moveSelection(1)}
         canPrev={selIdxInFiltered > 0}
         canNext={selIdxInFiltered >= 0 && selIdxInFiltered < filters.filtered.length - 1}
-        onOpen={(id) => selection.setSelectedId(id)}
+        onOpen={(id, idx) => { selection.setSelectedId(id); if (idx != null) selection.setCursorIdx(idx); }}
         onOpenItem={openItem}
         onShowInGraph={(entry) => {
           setGraphFocusId(entry.id);
           setView('graph');
+          setAtlasFocus(null);
+          setSelectedItemId(null);
+          setSelectedPowerId(null);
+          setSelectedDomainId(null);
           selection.setSelectedId(null);
+          selection.setCursorIdx(0);
         }}
       />
 
@@ -643,10 +729,16 @@ function Shell() {
         onClose={() => setSelectedItemId(null)}
         onPrev={() => moveItem(-1)}
         onNext={() => moveItem(1)}
+        canPrev={selIdxInItemOrder > 0}
+        canNext={selIdxInItemOrder >= 0 && selIdxInItemOrder < (itemOrderRef.current !== null ? itemOrderRef.current.length : itemList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
+          setGraphFocusId(null);
+          setAtlasFocus(null);
           setSelectedItemId(null);
           selection.setSelectedId(id);
+          const idx = filters.filtered.findIndex(p => p.id === id);
+          selection.setCursorIdx(idx >= 0 ? idx : 0);
         }}
       />
 
@@ -656,10 +748,16 @@ function Shell() {
         onClose={() => setSelectedPowerId(null)}
         onPrev={() => movePower(-1)}
         onNext={() => movePower(1)}
+        canPrev={selIdxInPowerOrder > 0}
+        canNext={selIdxInPowerOrder >= 0 && selIdxInPowerOrder < (powerOrderRef.current !== null ? powerOrderRef.current.length : powerList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
+          setGraphFocusId(null);
+          setAtlasFocus(null);
           setSelectedPowerId(null);
           selection.setSelectedId(id);
+          const idx = filters.filtered.findIndex(p => p.id === id);
+          selection.setCursorIdx(idx >= 0 ? idx : 0);
         }}
       />
 
@@ -669,10 +767,16 @@ function Shell() {
         onClose={() => setSelectedDomainId(null)}
         onPrev={() => moveDomain(-1)}
         onNext={() => moveDomain(1)}
+        canPrev={selIdxInDomainOrder > 0}
+        canNext={selIdxInDomainOrder >= 0 && selIdxInDomainOrder < (domainOrderRef.current !== null ? domainOrderRef.current.length : domainList.length) - 1}
         onOpenFigure={(id) => {
           setView('browse');
+          setGraphFocusId(null);
+          setAtlasFocus(null);
           setSelectedDomainId(null);
           selection.setSelectedId(id);
+          const idx = filters.filtered.findIndex(p => p.id === id);
+          selection.setCursorIdx(idx >= 0 ? idx : 0);
         }}
       />
 
@@ -688,9 +792,12 @@ function Shell() {
             setSelectedItemId(null);
             setSelectedPowerId(null);
             setSelectedDomainId(null);
+            setAtlasFocus(null);
             if (view === 'graph') {
+              selection.setSelectedId(null);
               setGraphFocusId(id);
             } else {
+              setGraphFocusId(null);
               if (view !== 'browse') setView('browse');
               selection.setSelectedId(id);
             }

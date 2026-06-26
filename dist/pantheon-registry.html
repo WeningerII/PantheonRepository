@@ -3598,6 +3598,7 @@ const TRADITION_PIGMENTS = {
   'Krachi':              '#154f52',  // Deep Volta-pool teal — the river gorge at Kete Krachi where Dente's oracle cave stood until drowned by Lake Volta in 1965.
   'Kulin':               '#79655a',  // Smoke-tanned possum-skin cloak, the incised winter garment of the Kulin peoples
   'Kwakwaka\'wakw':      '#2f6b62',  // Mask blue-green — the copper-oxide green of Kwakwaka'wakw transformation masks and painted house fronts
+  'Kyrgyz':              '#a23b30',  // Shyrdak madder-red — the felt-carpet red and the red field of the Kyrgyz banner, the colour of the Manas heroic cycle
   'Lepcha':              '#86a061',  // Bamboo green of Mayel Lyang — the bamboo-built material world of Lepcha houses, bridges and ritual vessels
   'Lithuanian':          '#4f8a3a',  // Oak-grove green — Perkūnas' sacred oaks and the žaltys grass-snake of hearth cult; the grove (alkas) was the Lithuanian sanctuary.
   'Lozi':                '#54585f',  // Nalikwanda grey — the black-and-white livery of the Litunga's royal barge on the Zambezi flood
@@ -3635,6 +3636,8 @@ const TRADITION_PIGMENTS = {
   'Semang':              '#b0a060',  // Bamboo comb yellow — the incised bamboo combs carrying Karei's thunder patterns among the Negrito bands
   'Senufo':              '#ad9166',  // Korhogo fila cloth — umber vegetal pigment painted on handspun cream cotton
   'Shipibo':             '#5e3a23',  // Mahogany-and-huito — the dark bark slip and genipa black of Shipibo kené pottery painting
+  'Bactrian':            '#9c7c30',  // Kushan coin-gold — the struck gold of Kanishka's dynastic deity issues from Bactra
+  'Sogdian':             '#5a5a9e',  // Penjikent lapis-violet — the ultramarine of the Sogdian temple murals of the Zarafshan
   'Songhai':             '#b3854f',  // Sahel banco — the smoothed adobe of the Tomb of Askia and the Niger-bend mosque architecture
   'Sotho-Tswana':        '#c08060',  // Litema wall-ochre — the warm earth pigments of Sotho-Tswana homestead mural art, ground from highveld clays.
   'Taíno':               '#ab763b',  // Guanín gold — the reddish gold-copper alloy of cacique regalia, the fragrant 'sky-metal' of Taíno chiefly and cosmological value
@@ -5230,6 +5233,14 @@ const buildTerritorySeed = () => ({
     ] },
   ]},
 
+  // The Tian Shan and Talas heartland of the Kyrgyz, homeland of the Manas
+  // epic cycle — roughly modern Kyrgyzstan, the mountain rim of the Ferghana.
+  "Kyrgyz": { polygons: [
+    { kind: 'core', period: 'Tian Shan, Talas and Issyk-Kul homeland of the Kyrgyz; legendary setting of the Manas trilogy (epic recorded 1856-1885)', source: 'Hatto, The Manas of Wilhelm Radloff (1990); Radloff, Proben V (1885)', coords: [
+      [69.5,42.8],[71,43.2],[74,42.9],[77,42.9],[78.5,42.8],[80.2,42.2],[80,40.5],[78,40],[75,39.3],[73,39.4],[71,40.2],[70,41],[69.4,41.5],[69.5,42.8]
+    ] },
+  ]},
+
   // Lithuania proper and Samogitia — the last pagan polity of Europe, Christianized only 1387 (Aukštaitija) and 1413 (Žemaitija).
   "Lithuanian": { polygons: [
     { kind: 'core', period: 'Grand Duchy core lands at Christianization (1387-1413 CE) — Baltic pagan cult region attested from 13th-c. chronicles onward', source: 'Gimbutas, The Balts (1963); Greimas, Of Gods and Men (1992)', coords: [
@@ -5489,6 +5500,22 @@ const buildTerritorySeed = () => ({
   "Songhai": { polygons: [
     { kind: 'core', period: 'Songhay-Zarma lands along the Niger bend — Timbuktu and Gao to Zarmaganda; imperial apogee 1464-1591 CE', source: 'Rouch, La religion et la magie Songhay (1960); Stoller, Fusion of the Worlds (1989)', coords: [
       [-3.5,17.2],[-1,17],[0.5,16.5],[2.5,15.5],[3.5,14],[2,13],[0.5,13.5],[-1.5,14.5],[-3,15.5],[-3.5,17.2]
+    ] },
+  ]},
+
+  // Sogdiana — the Zarafshan valley city-states (Samarkand/Afrasiab, Panjikent,
+  // Bukhara), heartland of the pre-Islamic Sogdian temple cult.
+  "Sogdian": { polygons: [
+    { kind: 'core', period: 'Sogdiana (Transoxiana) along the Zarafshan — Bukhara, Samarkand and Panjikent; pre-Islamic temple religion of the murals, c. 4th-8th c. CE', source: 'Grenet & Marshak, on the Panjikent murals; Shenkar, Intangible Spirits and Graven Images (2014)', coords: [
+      [63,40.2],[64.8,40.3],[66.2,40],[67.6,39.7],[68.6,39.2],[67.8,38.7],[66.2,38.9],[64.3,39.5],[63,40.2]
+    ] },
+  ]},
+
+  // Bactria / Tokharistan — the upper Oxus (Amu Darya) basin, dynastic homeland
+  // of the Kushans (Bactra/Balkh, Surkh Kotal, Rabatak, Takht-i Sangin).
+  "Bactrian": { polygons: [
+    { kind: 'core', period: 'Bactria / Tokharistan on the upper Oxus — Balkh, Surkh Kotal and the Rabatak sanctuary; Kushan dynastic cult, 1st-3rd c. CE', source: 'Sims-Williams & Cribb, A New Bactrian Inscription of Kanishka (1996); Rosenfield, The Dynastic Arts of the Kushans (1967)', coords: [
+      [64,38],[66,37.9],[68,37.6],[69,36.8],[68.3,36],[67,35.9],[65.5,36.3],[64.2,37],[64,38]
     ] },
   ]},
 
@@ -6039,6 +6066,9 @@ const buildTerritorySeed = () => ({
   "Tengrist": { polygons: [
     { kind: 'core', period: 'Mongolian plateau and Orkhon valley (Türk khaganates through the Mongol empire, 6th–13th c.)', source: 'Orkhon inscriptions (732 CE); The Secret History of the Mongols; Roux, La religion des Turcs et des Mongols (1984)', coords: [
       [88,49.5],[95,50.5],[102,50.5],[108,49.5],[112,47.5],[110,44.5],[103,43],[96,43.5],[90,45.5],[88,49.5]
+    ] },
+    { kind: 'sphere', period: 'Western Turkic steppe — the Kazakh and Kyrgyz steppe, Altai-Sayan highlands and middle Yenisei, where Tengri, Umay and the Holy Earth-Water were venerated (Türk khaganates onward)', source: 'Orkhon inscriptions; Radloff, Proben I (Altai, 1866); Roux, La religion des Turcs et des Mongols (1984)', coords: [
+      [48,47],[52,50],[60,52],[68,53],[76,52.5],[84,51.5],[89,50],[90,47],[87,44.5],[80,43],[72,42.5],[64,43],[56,44.5],[50,45.5],[48,47]
     ] },
   ]},
 
@@ -12106,6 +12136,7 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [ { kind: 'lover', personId: 'greek_iasion', notes: '' },
+        { kind: 'equated-with', personId: 'sogdian_zemat', era: 'classical', sources: [{ kind: 'scholarly', reference: 'F. Grenet, in "MITHRA ii. Iconography", Encyclopaedia Iranica' }], notes: 'Grenet reads the mourning vegetation-goddess of the Panjikent murals as a Sogdian counterpart of Demeter.' },
         { kind: 'equated-with', personId: 'roman_ceres', era: 'archaic', sources: [{ kind: 'secondary', reference: 'Standard interpretatio Graeca/Romana scholarship; Beard, North & Price, Religions of Rome (1998); Wissowa, Religion und Kultus der Römer (1912)' }], notes: 'Roman Ceres is the canonical Latin parallel to Greek Demeter through interpretatio Romana; the plebeian-aedile association and lex sacrata Cereris are distinctively Roman institutional forms.' },
         { kind: 'lover', externalRef: { name: 'Iasion (Samothracian initiate, brother of Dardanus, son of Zeus and the Pleiad Electra, lover of Demeter, father of Plutus; not registered under strict rule)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hom. Od. 5.125-128; Hes. Theog. 969-974' }], notes: '' },
         { kind: 'sibling', personId: 'greek_hesiod_zeus', era: 'primordial', sources: [{ kind: 'primary', reference: 'Hes. Theog. 453-454' }] },
@@ -41874,6 +41905,7 @@ const ERA_ORDER = {
   'Krachi': ['primordial', 'mythic-age'],
   'Kulin': ['dreaming-creator-era'],
   'Kwakwaka\'wakw': ['mythic-primordial', 'mythic-perennial'],
+  'Kyrgyz': ['heroic-age', 'semetey-cycle', 'seitek-cycle', 'wider-cycle'],
   'Lepcha': ['primordial / before the world', 'primordial / perpetual', 'primordial / first generation of humans', 'primordial / early ancestral generation', 'mythic / culture-founding age'],
   'Lithuanian': ['mythic'],
   'Lozi': ['primordial', 'mythic founding'],
@@ -41919,6 +41951,8 @@ const ERA_ORDER = {
   'Semang': ['primordial', 'primordial / perpetual'],
   'Senufo': ['Senufo traditional religion; continuing'],
   'Shipibo': ['primordial', 'mythic'],
+  'Bactrian': ['primordial', 'mythic-age'],
+  'Sogdian': ['primordial', 'mythic-age'],
   'Songhai': ['Songhay/Zarma oral tradition; living holey cult', 'Songhay/Zarma oral tradition; living holey possession cult', 'Songhay heroic age', 'Songhay heroic age; ancestor of the sorko praise-singers'],
   'Sotho-Tswana': ['primordial', 'mythic-past', 'legendary-genealogical'],
   'Taíno': ['mythic-primordial', 'mythic-perennial'],
@@ -43129,6 +43163,15 @@ const ERA_DATES = {
     'mythic-primordial':     { mythicStart: null, mythicEnd: null, textualStart: 1886, textualEnd: 2000, precision: 'cosmic' },
     'mythic-perennial':      { mythicStart: null, mythicEnd: null, textualStart: 1886, textualEnd: 2000, precision: 'cosmic' },
   },
+  'Kyrgyz': {
+    // The Manas trilogy's legendary heroic past (variously anchored to the
+    // Yenisei-Kyrgyz floruit, 9th-10th c.); the living oral epic was first
+    // written down from 1856 (Valikhanov) and 1862-69 (Radloff).
+    'heroic-age':            { mythicStart: 850, mythicEnd: 1000, textualStart: 1856, textualEnd: 2000, precision: 'era-only' },
+    'semetey-cycle':         { mythicStart: 900, mythicEnd: 1030, textualStart: 1856, textualEnd: 2000, precision: 'era-only' },
+    'seitek-cycle':          { mythicStart: 950, mythicEnd: 1060, textualStart: 1856, textualEnd: 2000, precision: 'era-only' },
+    'wider-cycle':           { mythicStart: 700, mythicEnd: 1100, textualStart: 1862, textualEnd: 2000, precision: 'era-only' },
+  },
   'Lepcha': {
     'primordial / before the world': { mythicStart: null, mythicEnd: null, textualStart: 1870, textualEnd: 2010, precision: 'cosmic' },
     'primordial / perpetual': { mythicStart: null, mythicEnd: null, textualStart: 1870, textualEnd: 2010, precision: 'cosmic' },
@@ -43327,6 +43370,18 @@ const ERA_DATES = {
   'Shipibo': {
     'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 1928, textualEnd: 2000, precision: 'cosmic' },
     'mythic':                { mythicStart: null, mythicEnd: null, textualStart: 1928, textualEnd: 2000, precision: 'cosmic' },
+  },
+  'Bactrian': {
+    // The Kushan dynastic gods are timeless; their attestation is the imperial
+    // coinage and the Rabatak inscription, 1st-3rd c. CE.
+    'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 100, textualEnd: 300, precision: 'cosmic' },
+    'mythic-age':            { mythicStart: null, mythicEnd: null, textualStart: 100, textualEnd: 300, precision: 'cosmic' },
+  },
+  'Sogdian': {
+    // The Sogdian gods are timeless; attestation is the Penjikent/Afrasiab
+    // murals and the Sogdian texts, c. 4th-8th c. CE.
+    'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 300, textualEnd: 800, precision: 'cosmic' },
+    'mythic-age':            { mythicStart: null, mythicEnd: null, textualStart: 300, textualEnd: 800, precision: 'cosmic' },
   },
   'Songhai': {
     'Songhay/Zarma oral tradition; living holey cult': { mythicStart: null, mythicEnd: null, textualStart: 1941, textualEnd: 2000, precision: 'cosmic' },
@@ -55188,6 +55243,624 @@ const NEW_FIGURES = [
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
    }
   ]
+ },
+ {
+  "id": "bactrian_ardoxsho",
+  "name": {
+   "primary": "Ardoxsho",
+   "alt": [
+    "Ardochsho",
+    "Ardoksho"
+   ],
+   "transliterations": {
+    "bactrian": "αρδοχϸο"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "abundance",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "good-fortune",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "reward",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Huvishka and later (with Oesho the dominant late reverse); Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Ardoxsho is the deified Aši Vaŋuhī, the Zoroastrian personification of reward and abundance, recognizable by the cornucopia she cradles. She rises to prominence on later coinage and, like the Greek Tyche, embodies the good fortune of the realm."
+ },
+ {
+  "id": "bactrian_atsho",
+  "name": {
+   "primary": "Atsho",
+   "alt": [
+    "Athsho",
+    "Adsho"
+   ],
+   "transliterations": {
+    "bactrian": "αθϸο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "sacrifice",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "purity",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_atar",
+    "notes": "Atsho is the deified Zoroastrian fire Atar."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΑΘϷΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Atsho is the deified Zoroastrian fire (Ātar), shown haloed in flames and at times holding smith's tongs — the sacred and royal flame of the Kushan house."
+ },
+ {
+  "id": "bactrian_manaobago",
+  "name": {
+   "primary": "Manaobago",
+   "alt": [
+    "Manabago"
+   ],
+   "transliterations": {
+    "bactrian": "μαναοβαγο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "good-mind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "just-rule",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Manaobago personifies Vohu Manah, the Good Mind."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Gold coins of Huvishka, reverse legend ΜΑΝΑΟΒΑΓΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Manaobago is the Kushan personification of Vohu Manah, the 'Good Mind' of Zoroastrian thought — here a god of the wisdom that underwrites just kingship and the prosperity of the realm."
+ },
+ {
+  "id": "bactrian_mao",
+  "name": {
+   "primary": "Mao",
+   "alt": [
+    "Mah"
+   ],
+   "transliterations": {
+    "bactrian": "μαο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "night",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cyclical-order",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΜΑΟ; J. Rosenfield, The Dynastic Arts of the Kushans (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Bactrian moon-god, instantly recognized on the coins by the crescent rising behind his shoulders. He forms a celestial pair with the sun-god Miiro."
+ },
+ {
+  "id": "bactrian_miiro",
+  "name": {
+   "primary": "Miiro",
+   "alt": [
+    "Mioro",
+    "Miuro"
+   ],
+   "transliterations": {
+    "bactrian": "μιιρο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "light",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "covenant",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_mithra",
+    "notes": "Miiro is the Kushan coin-form of Mithra."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΜΙΙΡΟ; J. Rosenfield, The Dynastic Arts of the Kushans (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Kushan rendering of Mithra, a haloed youth radiating sunbeams who offers blessing to the king — one of the half-dozen titular dynastic gods struck on the imperial coinage."
+ },
+ {
+  "id": "bactrian_nana",
+  "name": {
+   "primary": "Nana",
+   "alt": [
+    "Nanaia",
+    "Nanašao"
+   ],
+   "transliterations": {
+    "bactrian": "νανα"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "victory",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "royal-legitimacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "sogdian_nana"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "epigraphic",
+      "reference": "Rabatak inscription, ll. 1-3: Kanishka 'who has obtained the kingship from Nana and from all the gods'; ed. Sims-Williams & Cribb (1996)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nana is the head of the Kushan dynastic pantheon and the only deity the Rabatak inscription names as the source of royal power. On the coins she stands or is enthroned on a lion — the dynastic, sovereignty-granting form of the same goddess worshipped across Sogdiana."
+ },
+ {
+  "id": "bactrian_oado",
+  "name": {
+   "primary": "Oado",
+   "alt": [
+    "Vado",
+    "Wado"
+   ],
+   "transliterations": {
+    "bactrian": "οαδο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "breath",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vayu",
+    "notes": "Oado is the Kushan wind-god, continuing Vayu."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΟΑΔΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Kushan wind-god — one of the earliest fully personified wind images in art: he runs with his garment ballooning behind him to convey rushing air, the Bactrian continuation of the Avestan Vayu."
+ },
+ {
+  "id": "bactrian_oaxsho",
+  "name": {
+   "primary": "Oaxsho",
+   "alt": [
+    "Wakhsh",
+    "Oxus"
+   ],
+   "transliterations": {
+    "bactrian": "οαξϸο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "the-oxus-river",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "land-fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "local-sovereignty",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Copper coins of Huvishka, reverse legend ΟΑΞϷΟ; the Takht-i Sangin temple of the Oxus"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Oaxsho is the divine personification of the Oxus (Amu Darya / Wakhsh), the defining river of Bactria, shown Poseidon-like with the water flowing from him. His great sanctuary stood at Takht-i Sangin, where the Wakhsh meets the Panj."
+ },
+ {
+  "id": "bactrian_oesho",
+  "name": {
+   "primary": "Oesho",
+   "alt": [
+    "Wesho",
+    "Oeso"
+   ],
+   "transliterations": {
+    "bactrian": "οηϸο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "destruction-and-renewal",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "ascetic-power",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cattle",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "hindu_shiva",
+    "notes": "Oesho fuses the Iranian Vayu with the Indic Shiva-Maheshvara."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I, Huvishka and Vasudeva I, reverse legend ΟΗϷΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the titular gods of the dynasty and, with Ardoxsho, one of only two deities still struck on late Kushan coinage. Shown with trident and bull, he fuses the Iranian Vayu with the Indic Shiva-Maheshvara — the Bactrian high god in Shaiva form."
+ },
+ {
+  "id": "bactrian_orlagno",
+  "name": {
+   "primary": "Orlagno",
+   "alt": [
+    "Oralagno"
+   ],
+   "transliterations": {
+    "bactrian": "ορλαγνο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "victory",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "royal-protection",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_verethragna",
+    "notes": "Orlagno is the Kushan Verethragna."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Huvishka, reverse legend ΟΡΛΑΓΝΟ; R. Göbl, System und Chronologie der Münzprägung des Kušānreiches (1984)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Orlagno is the Kushan Verethragna, the Iranian god of crushing victory and protector of royalty — abroad equated with Herakles and Ares — who appears armed and triumphant on Huvishka's coinage."
+ },
+ {
+  "id": "bactrian_pharro",
+  "name": {
+   "primary": "Pharro",
+   "alt": [
+    "Farro"
+   ],
+   "transliterations": {
+    "bactrian": "φαρρο"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "royal-glory",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fortune",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "divine-investiture",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΦΑΡΡΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Pharro is the deified Khwarenah — the Iranian God-given royal glory and fortune that descends on the rightful king. On the coins he is a male figure, sometimes winged or flaming, who confers legitimacy on the sovereign."
  },
  {
   "id": "balinese_barong",
@@ -145599,7 +146272,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Supreme deity of destruction, asceticism, and regeneration; the great yogin"
+  "notes": "Supreme deity of destruction, asceticism, and regeneration; the great yogin",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_oesho"
+   }
+  ]
  },
  {
   "id": "hindu_shura",
@@ -182353,6 +183032,1146 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Classed as a deity; a culture-hero/transformer cognate with Haida Yáahl and Tlingit Yéil. Boas's extensive Kwakwaka'wakw corpus is the principal documentation."
+ },
+ {
+  "id": "kyrgyz_aichurok",
+  "name": {
+   "primary": "Aichürök",
+   "alt": [
+    "Ayčürök",
+    "Aichurek"
+   ],
+   "transliterations": {
+    "kyrgyz": "Айчүрөк"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "semetey-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "loyalty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "kyrgyz_seitek",
+    "era": "seitek-cycle",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Semetey — 'The Marriage of Semetey to Aichürök'; A. T. Hatto, The Manas of Wilhelm Radloff (1990), on the swan-maiden motif"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_semetey"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Semetey — 'The Marriage of Semetey to Aichürök'; A. T. Hatto, The Manas of Wilhelm Radloff (1990), on the swan-maiden motif"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A luminous swan-maiden (peri), daughter of Akun Khan, betrothed to Semetey before his birth by Manas's vow. She transforms into a white swan to seek her destined husband, aids him against his rivals, and after his fall safeguards the unborn Seitek — the thread by which the lineage survives."
+ },
+ {
+  "id": "kyrgyz_ajybay",
+  "name": {
+   "primary": "Ajybay",
+   "alt": [
+    "Ajibay",
+    "Acıbay"
+   ],
+   "transliterations": {
+    "kyrgyz": "Ажыбай"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "diplomacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), Manas dividing his host under named captains; A. T. Hatto, The Memorial Feast for Kökötöy-Khan (Oxford, 1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the named forty companions, singled out in the muster of Manas's army to lead a division. Tradition makes him a speaker of many tongues, useful as an envoy — the diplomatic arm of the warband."
+ },
+ {
+  "id": "kyrgyz_almambet",
+  "name": {
+   "primary": "Almambet",
+   "alt": [
+    "Alman Bet"
+   ],
+   "transliterations": {
+    "kyrgyz": "Алмамбет"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "strategy",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "sworn-brotherhood",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "weather-magic",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sworn companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_chubak"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'Almambet, Er Kökčö and Ak-Erkeč: An Episode from the Kirghiz Epic Manas', Central Asiatic Journal (1969); W. Radloff, Proben V (1885)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Manas's foremost paladin: a Kalmyk/Chinese prince who converts to Islam and becomes his sworn blood-brother. The most psychologically developed of the forty companions — an outsider whose loyalty, command of war-magic (the rain-stone jay-tash), and tragic death on the Great Campaign are central to the epic."
+ },
+ {
+  "id": "kyrgyz_bakai",
+  "name": {
+   "primary": "Bakai",
+   "alt": [
+    "Bakay",
+    "Bakai-khan"
+   ],
+   "transliterations": {
+    "kyrgyz": "Бакай"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "counsel",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "regency",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_semetey"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977); A. T. Hatto, The Manas of Wilhelm Radloff (1990), on Bakai as the sage"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The wise elder and counsellor of Manas, the sober voice of experience among the companions. One of the few of the old generation to survive Manas, he becomes regent and guide to Semetey, embodying continuity across the trilogy's generations."
+ },
+ {
+  "id": "kyrgyz_bokmurun",
+  "name": {
+   "primary": "Bokmurun",
+   "alt": [
+    "Boqmurun",
+    "Bok Murun"
+   ],
+   "transliterations": {
+    "kyrgyz": "Бокмурун"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_kokotoy"
+  ],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "inheritance",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "feast-giving",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_koshoy"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the 'Bok Murun' episode (rec. 1862); A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The young heir of Kökötöy — his diminutive name ('Snotty-Nose') marking his untried youth — who, with Manas's backing, proclaims and stages the most lavish memorial games in the tradition. Protagonist of the self-contained Memorial Feast episode."
+ },
+ {
+  "id": "kyrgyz_chubak",
+  "name": {
+   "primary": "Chubak",
+   "alt": [
+    "Čubak"
+   ],
+   "transliterations": {
+    "kyrgyz": "Чубак"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "valour",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_almambet"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Saghïmbay Orozbaq uulu / D. Prior (trans.), The Memorial Feast for Kökötöy Khan (Penguin, 2022); A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A leading native champion, son of the hero Akbalta, who embodies the tension between the Kyrgyz heroes and the adopted foreigner Almambet. His jealousy of the favoured outsider drives a famous quarrel during the Great Campaign; he dies among the finest heroes lost in the victory."
+ },
+ {
+  "id": "kyrgyz_er_toshtuk",
+  "name": {
+   "primary": "Er Töshtük",
+   "alt": [
+    "Er Töstük",
+    "Er Toshtuk"
+   ],
+   "transliterations": {
+    "kyrgyz": "Эр Төштүк"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "wider-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-quest",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "underworld-journey",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "magic",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the Er Töshtük text; Pertev Naili Boratav (trans.), Er-Töshtük: épopée kirghize (Gallimard, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hero of a self-standing Kyrgyz epic loosely attached to the Manas orbit: the youngest son of old Eleman, husband of the clever Kenjeke. With the psychopomp talking-horse Chal-Kuyruk he journeys to the underworld to recover his soul and overcome a seven-headed monster — a mythological-initiatory tale of the wider cycle."
+ },
+ {
+  "id": "kyrgyz_jakyp",
+  "name": {
+   "primary": "Jakyp",
+   "alt": [
+    "Jaqyp",
+    "Jakyp-bay"
+   ],
+   "transliterations": {
+    "kyrgyz": "Жакып"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "herding",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fatherhood",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "kyrgyz_manas",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'The Birth of Manas', Asia Major 14.2 (1969); W. Radloff, Proben V (1885), the Birth of Manas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'The Birth of Manas', Asia Major 14.2 (1969); W. Radloff, Proben V (1885), the Birth of Manas"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The wealthy but long-childless herdsman whose desperate prayers for a son open the epic. His joy and anxiety at the birth of a supernatural-seeming child establish the dynastic frame; in Radloff's text he is son of Kara-khan and husband of Chyiyrdy, the mother of Manas."
+ },
+ {
+  "id": "kyrgyz_joloi",
+  "name": {
+   "primary": "Joloi",
+   "alt": [
+    "Joloy",
+    "Coloy"
+   ],
+   "transliterations": {
+    "kyrgyz": "Жолой"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "brute-strength",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_koshoy"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977): Joloi's wrestling; the Majmu' al-tawarikh (1792-93), earliest manuscript naming Manas"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The archetypal pagan giant-adversary, a Kalmyk (Oirat) khan of prodigious strength and appetite. He wrestles old Koshoy to a standstill at the Memorial Feast until Manas fells him, and raids Kyrgyz herds alongside Konurbay; he is also the hero of his own related Inner-Asian epic."
+ },
+ {
+  "id": "kyrgyz_kanykey",
+  "name": {
+   "primary": "Kanykey",
+   "alt": [
+    "Qanykey",
+    "Sanirabiga"
+   ],
+   "transliterations": {
+    "kyrgyz": "Каныкей"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "loyalty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "motherhood",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "kyrgyz_semetey",
+    "era": "semetey-cycle",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), episode 'Manas heiratet Kanykey'; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), episode 'Manas heiratet Kanykey'; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The epic's foremost heroine: daughter of Temir Khan of Bukhara, she chooses and tests Manas, heals his wounds, foresees disaster, and after his death secures the survival of the dynasty by spiriting the infant Semetey to safety in her father's land."
+ },
+ {
+  "id": "kyrgyz_kojojash",
+  "name": {
+   "primary": "Kojojash",
+   "alt": [
+    "Kožojaš"
+   ],
+   "transliterations": {
+    "kyrgyz": "Кожожаш"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "wider-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "hunting",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "totemic-taboo",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Daniel Prior et al., Univ. of Washington 'Silk Road Seattle', The Kyrgyz Epic Kojojash; Kyrgyz Academy of Sciences, Kožojaš (Frunze)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hunter-hero of an archaic Kyrgyz 'small epic' representing the oldest stratum of the tradition's worldview. His relentless pursuit of Sur-Echki, the supernatural grey mother-goat who guards the wild game, breaks a sacred limit between humanity and nature; his death dramatises the totemic balance he violated."
+ },
+ {
+  "id": "kyrgyz_kokotoy",
+  "name": {
+   "primary": "Kökötöy",
+   "alt": [
+    "Kukotay",
+    "Köketey"
+   ],
+   "transliterations": {
+    "kyrgyz": "Көкөтөй"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "kyrgyz_bokmurun",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "Ch. Valikhanov, 'Smert' Kukotay-khana i ego pominki' (1856); A. T. Hatto, 'Kukotay and Bok Murun', BSOAS (1969)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Ch. Valikhanov, 'Smert' Kukotay-khana i ego pominki' (1856); A. T. Hatto, 'Kukotay and Bok Murun', BSOAS (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "An immensely rich old Kyrgyz khan whose death and lavish memorial feast give the most-recorded episode of the whole tradition its name. His deathbed instructions set in motion the funeral games at which Manas, Joloi and Konurbay first contend."
+ },
+ {
+  "id": "kyrgyz_konurbay",
+  "name": {
+   "primary": "Konurbay",
+   "alt": [
+    "Qoñurbay",
+    "Konurbai"
+   ],
+   "transliterations": {
+    "kyrgyz": "Коңурбай"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_semetey"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the Great Campaign against Beijin; Sayakbai Karalaev variant, Semetey — Semetey slays the aged Konurbay"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The principal antagonist of the trilogy: the formidable khan of Beijin, rider of the great black winged horse Algara. He leads the Chinese against Manas, helps inflict the wounds from which the hero dies, and survives into extreme old age to be hunted down and killed by Semetey — the thread of enmity binding two generations."
+ },
+ {
+  "id": "kyrgyz_koshoy",
+  "name": {
+   "primary": "Koshoy",
+   "alt": [
+    "Qoshoy",
+    "Koshoi"
+   ],
+   "transliterations": {
+    "kyrgyz": "Кошой"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wrestling",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "elder-authority",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_joloi"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_bokmurun"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977): Koshoy's day-long wrestling match; Ch. Valikhanov, 'Smert' Kukotay-khana' (1856)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The aged khan of the Katagan and revered patriarch of the older Kyrgyz generation. Central to the Memorial Feast, where he wrestles the Kalmyk giant Joloi for a full day until Manas intervenes; the Koshoy-Korgon fortress in the Naryn region bears his name."
+ },
+ {
+  "id": "kyrgyz_manas",
+  "name": {
+   "primary": "Manas",
+   "alt": [
+    "Manas Baatyr",
+    "Er Manas"
+   ],
+   "transliterations": {
+    "kyrgyz": "Манас"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_jakyp"
+  ],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-leadership",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "tribal-unity",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_kanykey"
+   },
+   {
+    "kind": "sworn companion",
+    "personId": "kyrgyz_almambet"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_bakai"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_chubak"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_syrgak"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_ajybay"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_koshoy"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_konurbay"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_joloi"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_neskara"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'The Birth of Manas', Asia Major 14.2 (1969), pp. 217-241; W. Radloff, Proben V (1885), the Manas cycle"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The great unifying khan and warrior-hero of the Kyrgyz and eponym of their national epic. The long-awaited only son of the herdsman Jakyp, he rallies the dispersed tribes, reclaims the Talas homeland from Kalmyk and Chinese overlords, and leads the Great Campaign against Beijin, dying of his wounds soon after — the founding act the rest of the trilogy answers to."
+ },
+ {
+  "id": "kyrgyz_neskara",
+  "name": {
+   "primary": "Neskara",
+   "alt": [
+    "Nezkara"
+   ],
+   "transliterations": {
+    "kyrgyz": "Нескара"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "raiding",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sagymbai Orozbakov variant, Manas — 'The Attack of Neskara'; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A foreign (Kalmyk/Manchu) khan whose early raid on the Kyrgyz helps galvanise Manas's unification of the tribes. He belongs to the ring of hostile rulers — with Joloi and Konurbay — whose aggression drives the epic's central conflict."
+ },
+ {
+  "id": "kyrgyz_seitek",
+  "name": {
+   "primary": "Seitek",
+   "alt": [
+    "Seytek"
+   ],
+   "transliterations": {
+    "kyrgyz": "Сейтек"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_semetey",
+   "kyrgyz_aichurok"
+  ],
+  "temporal": {
+   "era": "seitek-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "restoration-of-justice",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Seitek (Kyrgyz Academy of Sciences edn); UNESCO Representative List, 'Kyrgyz epic trilogy: Manas, Semetey, Seytek' (2013)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hero of the trilogy's closing epic. Secretly raised by Aichürök and Kanykey in concealment from the usurper Kanchoro, he comes of age to overthrow the traitor, avenge his father, and re-establish the Kyrgyz polity — the restoration of justice that completes the dynastic arc."
+ },
+ {
+  "id": "kyrgyz_semetey",
+  "name": {
+   "primary": "Semetey",
+   "alt": [
+    "Semetei"
+   ],
+   "transliterations": {
+    "kyrgyz": "Семетей"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_manas",
+   "kyrgyz_kanykey"
+  ],
+  "temporal": {
+   "era": "semetey-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "restoration",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_aichurok"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_bakai"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_konurbay"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Semetey (Kyrgyz Academy of Sciences edn); A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hero of the trilogy's middle epic. Raised in exile in Bukhara unaware of his lineage, he returns to Talas to reclaim his patrimony, gathers his father's surviving companions, wins the swan-maiden Aichürök, and slays the aged Konurbay to avenge Manas before falling to the treachery of his own follower Kanchoro."
+ },
+ {
+  "id": "kyrgyz_syrgak",
+  "name": {
+   "primary": "Syrgak",
+   "alt": [
+    "Sırgak"
+   ],
+   "transliterations": {
+    "kyrgyz": "Сыргак"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "scouting",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "speed",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the reconnaissance of Almambet and Syrgak; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The young, swift scout among the forty companions, famed for agility and daring. Paired with Almambet on the perilous spying mission toward Beijin, he represents the youthful, fearless edge of the warband and is named among the great heroes who fall to secure the Kyrgyz victory."
  },
  {
   "id": "lakota_anog_ite",
@@ -252129,6 +253948,294 @@ const NEW_FIGURES = [
   "notes": "Slavic dawn goddess(es), daughters of Dazhbog who open and close the gates of the sky."
  },
  {
+  "id": "sogdian_adbag",
+  "name": {
+   "primary": "Adbag",
+   "alt": [
+    "Adhvagh",
+    "Adhbag"
+   ],
+   "transliterations": {
+    "sogdian": "ʾδβɣ"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cosmic-order",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "heaven",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_ahura_mazda",
+    "notes": "Adbag, 'the great god', is the Sogdian cult-form of Ahura Mazda."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka, where the Hindu Indra is rendered Adhvagh (Aδβaγ); ed. É. Benveniste (1946)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Adbag — literally 'the great god' — is the Sogdian name and cult-form of Ahura Mazda, the supreme Mazdean creator, with whom Temple I at Panjikent is associated. In the Buddhist Sogdian texts the name is used to render the highest Indic god."
+ },
+ {
+  "id": "sogdian_nana",
+  "name": {
+   "primary": "Nana",
+   "alt": [
+    "Nanai",
+    "Nanaia",
+    "Nanaya"
+   ],
+   "transliterations": {
+    "sogdian": "nny"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "celestial-order",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_nana",
+    "notes": "The same goddess (Nanaia) — the Sogdian city-patron and the Kushan dynastic sovereign."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "M. Shenkar, 'NANA', Encyclopaedia Iranica; M. Compareti, 'Nana and Tish in Sogdiana' (2017)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The pre-eminent goddess and city-patron of Sogdiana, descended from the Sumero-Akkadian Nanaya and worshipped from Bukhara to Panjikent, where Temple II was her sanctuary. In the murals she is enthroned on a lion, often four-armed and holding the sun and moon — the four-armed dragon-throne goddess of Panjikent being her local form. Her consort in Sogdiana is the rain-star god Tish (Tishtrya)."
+ },
+ {
+  "id": "sogdian_weshparkar",
+  "name": {
+   "primary": "Weshparkar",
+   "alt": [
+    "Wēšparkar",
+    "Vēšparkar"
+   ],
+   "transliterations": {
+    "sogdian": "wyšprkr"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "atmosphere",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vayu",
+    "notes": "Weshparkar continues the Avestan wind-god Vayu, in Shaiva guise."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka renders the Hindu Maheshvara (Shiva) as Wēšparkar; F. Grenet, 'Iranian Gods in Hindu Garb' (2010)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Sogdian wind- and atmosphere-god, heir of the Avestan Vayu, who in Sogdian art is clothed in the iconography of the Hindu Shiva-Maheshvara: three-headed, holding trident and thunderbolt. A striking case of an Iranian deity rendered through Indic visual form."
+ },
+ {
+  "id": "sogdian_zemat",
+  "name": {
+   "primary": "Žēmāt",
+   "alt": [
+    "Žimat",
+    "Zhemat"
+   ],
+   "transliterations": {
+    "sogdian": "žymʾt"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "grain",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vegetation-cycle",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "mourning",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "greek_hesiod_demeter",
+    "notes": "Grenet reads the Panjikent mourning-goddess as a Sogdian counterpart of Demeter."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "F. Grenet, in 'MITHRA ii. Iconography', Encyclopaedia Iranica, on the Panjikent 'Mourning Scene'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Grenet interprets the goddess presiding over the famous 'Mourning Scene' at Panjikent Temple II as Žēmāt, a Sogdian counterpart of Demeter who laments a dying-and-returning vegetation deity — the Transoxianan reflex of the ancient Near Eastern grieving-goddess of the grain."
+ },
+ {
+  "id": "sogdian_zurvan",
+  "name": {
+   "primary": "Zurvan",
+   "alt": [
+    "Azruwa",
+    "Zruwan"
+   ],
+   "transliterations": {
+    "sogdian": "zrwʾ"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "time",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "destiny",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cosmic-primacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka renders the Hindu Brahma as Azruwa (Zurvan); Manichaean Sogdian 'Azrua' for the Father of Greatness"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Zurvan, the personification of infinite Time and Destiny, stands at the head of the Sogdian high triad. In the Sogdian Vessantara Jataka the supreme Indic creator Brahma is rendered by his name, and in Manichaean Sogdian he lends his name to the Father of Greatness."
+ },
+ {
   "id": "songhai_cirey",
   "name": {
    "primary": "Lightning",
@@ -273461,6 +275568,167 @@ const NEW_FIGURES = [
   "notes": "Altai-Turkic creator-father dwelling in the highest heaven."
  },
  {
+  "id": "turkic_kizagan",
+  "name": {
+   "primary": "Kızagan",
+   "alt": [
+    "Kızağan",
+    "Kızagan Han"
+   ],
+   "transliterations": {
+    "altai": "Кызаган"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "turkic_kayra"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "force",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "martial-valour",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Wilhelm Radloff, Proben … Süd-Sibiriens, vol. I (Altai, 1866); A. V. Anokhin, Materialy po shamanstvu u altaitsev (1924)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Altai god of war, force and martial fury, a son of the creator Kayra Khan who resides on the ninth heaven and rides a red camel. The warlike member of the upper-world brotherhood in the Radloff/Anokhin Altai cosmogony, beside Ülgen and Mergen."
+ },
+ {
+  "id": "turkic_korkut_ata",
+  "name": {
+   "primary": "Korkut Ata",
+   "alt": [
+    "Korkyt",
+    "Dede Korkut"
+   ],
+   "transliterations": {
+    "oldturkic": "Qorqyt Ata"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "legendary"
+  },
+  "domains": [
+   {
+    "sphereId": "music",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "shamanic-wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kitab-ı Dede Korkut (Book of Dede Korkut), Dresden and Vatican manuscripts; Kazakh Korkyt-Ata tradition of the Syr Darya"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The legendary Oghuz/Kazakh shaman-bard and patron of musicians, traditionally of the Syr Darya in the 8th-9th century: inventor of the kobyz fiddle and archetypal baqsı whose songs hold death at bay. Sage-narrator framing the Book of Dede Korkut, his mausoleum stands near Kyzylorda in the Kazakh steppe."
+ },
+ {
+  "id": "turkic_mergen",
+  "name": {
+   "primary": "Mergen",
+   "alt": [
+    "Mergen Khan",
+    "Mergen Tengri"
+   ],
+   "transliterations": {
+    "altai": "Мерген"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "turkic_kayra"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "reason",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "abundance",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Wilhelm Radloff, Proben der Volkslitteratur der türkischen Stämme Süd-Sibiriens, vol. I (Altai, 1866); A. V. Anokhin, Materialy po shamanstvu u altaitsev (1924)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Altai god of wisdom, reason and unerring archery, a son of the creator Kayra Khan who holds the seventh heaven. In the south-Siberian cosmogonic genealogy recorded by Radloff and Anokhin he stands beside his brothers Ülgen and Kızagan as the intellect of the upper world."
+ },
+ {
   "id": "turkic_od",
   "name": {
    "primary": "Od",
@@ -274004,6 +276272,113 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Mother-goddess of birth; only goddess named on the Orkhon steles."
+ },
+ {
+  "id": "turkic_yayik",
+  "name": {
+   "primary": "Yayık",
+   "alt": [
+    "Jayık",
+    "Yayuçı"
+   ],
+   "transliterations": {
+    "altai": "Дьайык"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "intercession",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "protection",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "flood-waters",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev (1924): Yayık as Ülgen's celestial messenger in the white-horse sacrifice"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A celestial intermediary spirit of the Altai sacrificial cosmology: the messenger of the creator Ülgen who relays the white-horse sacrifice up to heaven and guards humankind against flood and evil. Central to the shaman's ecstatic heaven-journey in the south-Siberian ritual recorded by Anokhin."
+ },
+ {
+  "id": "turkic_yer_sub",
+  "name": {
+   "primary": "Yer-Sub",
+   "alt": [
+    "Yer-Su",
+    "Iduk Yer-Sub",
+    "Jer-Suu"
+   ],
+   "transliterations": {
+    "oldturkic": "Yer Sub"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "homeland",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "victory",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "epigraphic",
+      "reference": "Bilge Kagan inscription, East face: 'üze Türük Teŋrisi ıduq Yer-Subı'; Tonyukuk stele; ed. Talât Tekin, A Grammar of Orkhon Turkic (1968)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The sacred 'Holy Earth-Water' (ıduq Yer-Sub) of the Orkhon inscriptions, ranked immediately below Tengri among the powers who ordain Turkic victory and survival. A composite earth-and-water numen — at once the single Holy Land-and-Water and the plurality of local mountain, spring and grove spirits — surviving in the Kazakh and Kyrgyz Jer-Suu and the Altai cult of the land-and-water masters."
  },
  {
   "id": "udmurt_gudyri_mumy",
@@ -281842,6 +284217,116 @@ const NEW_FIGURES = [
   "notes": "Yakut god of light, depicted as an eagle on the world-tree."
  },
  {
+  "id": "yakut_ayisit",
+  "name": {
+   "primary": "Ayısıt",
+   "alt": [
+    "Ajysyt",
+    "Ayıhıt",
+    "Ajyyhyt"
+   ],
+   "transliterations": {
+    "sakha": "Айыыһыт"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yakut",
+  "primaryTradition": "Yakut",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "birth-souls",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "protection-of-mothers",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Uno Harva, Die religiösen Vorstellungen der altaischen Völker (FFC 125, 1938), on the Yakut birth-goddess Ajysyt"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Sakha goddess of childbirth, who descends to bring the soul (kut) to the newborn and to protect mothers in labour and the increase of the herds. The Lena-basin counterpart of the steppe mother-goddess Umay and the feminine birth-power of the northern Aiyy pantheon."
+ },
+ {
+  "id": "yakut_uluu_toyon",
+  "name": {
+   "primary": "Uluu Toyon",
+   "alt": [
+    "Uluu Tojon"
+   ],
+   "transliterations": {
+    "sakha": "Улуу Тойон"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yakut",
+  "primaryTradition": "Yakut",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "thunder",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "the-soul",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "rough-justice",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "G. V. Ksenofontov, Uraangkhai-sakhalar (1937) and Legendy i rasskazy o shamanakh (1930); Uno Harva, Die religiösen Vorstellungen der altaischen Völker (1938)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The powerful and dangerous thunder-and-fire lord of the Sakha upper world, giver of fire and of a human soul, master of the abaasy spirits and patron of the 'black' shamans. A figure of rough justice, distinct from the serene creator Ürüng Aiyy Toyon — the storm-edged counterweight at the head of the Yakut cosmos."
+ },
+ {
   "id": "yakut_uruung_aiyy_toyon",
   "name": {
    "primary": "Ürüng Aiyy Toyon",
@@ -285877,7 +288362,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Supreme uncreated creator god of Zoroastrianism, the Wise Lord and source of all good."
+  "notes": "Supreme uncreated creator god of Zoroastrianism, the Wise Lord and source of all good.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "sogdian_adbag"
+   }
+  ]
  },
  {
   "id": "zoroastrian_ameretat",
@@ -286600,6 +289091,10 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "zoroastrian_vohu_manah",
     "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_atsho"
    }
   ]
  },
@@ -287833,7 +290328,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata of covenants, light, and oaths; all-seeing judge whom Ahura Mazda set as worthy of worship as himself."
+  "notes": "Yazata of covenants, light, and oaths; all-seeing judge whom Ahura Mazda set as worthy of worship as himself.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_miiro"
+   }
+  ]
  },
  {
   "id": "zoroastrian_rashnu",
@@ -289318,7 +291819,17 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata personifying the wind and the intermediate atmosphere; an ambivalent power with both beneficent and harmful aspects."
+  "notes": "Yazata personifying the wind and the intermediate atmosphere; an ambivalent power with both beneficent and harmful aspects.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_oado"
+   },
+   {
+    "kind": "equated-with",
+    "personId": "sogdian_weshparkar"
+   }
+  ]
  },
  {
   "id": "zoroastrian_verethragna",
@@ -289593,7 +292104,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata of victory and war who appears in ten incarnate forms; the smasher of resistance and giver of triumph."
+  "notes": "Yazata of victory and war who appears in ten incarnate forms; the smasher of resistance and giver of triumph.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_orlagno"
+   }
+  ]
  },
  {
   "id": "zoroastrian_vohu_manah",
@@ -289741,6 +292258,10 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "zoroastrian_spenta_mainyu",
     "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_manaobago"
    }
   ]
  },
@@ -436107,7 +438628,7 @@ function loadAtlas() {
 function eraStart(tradition, era) {
   const d = window.__PR?.ERA_DATES?.[tradition]?.[era];
   if (!d) return null;
-  return d.textualStart ?? d.mythicStart ?? null;
+  return d.mythicStart ?? d.textualStart ?? null;
 }
 
 // Era keys are hyphen-cased slugs: `mu-allaqat-poetic`, `late-bronze-age`,
@@ -436135,8 +438656,8 @@ function getEntryDates(entry) {
 }
 function entryAnchorYear(entry) {
   const d = getEntryDates(entry);
-  if (d.textualStart != null) return d.textualStart;
   if (d.mythicStart != null) return d.mythicStart;
+  if (d.textualStart != null) return d.textualStart;
   const t = entry?.temporal?.era;
   return eraStart(entry?.tradition, t);
 }
@@ -436148,7 +438669,7 @@ function entryAnchorYear(entry) {
 // anchor year the sort uses into coarse, monotonic time bands keeps each
 // header contiguous and matches the chronological axis the user is reading.
 const ERA_BANDS = [{
-  max: -3000,
+  max: -3001,
   label: 'Before 3000 BCE'
 }, {
   max: -2000,
@@ -436160,7 +438681,7 @@ const ERA_BANDS = [{
   max: -500,
   label: '1000–500 BCE'
 }, {
-  max: 0,
+  max: -1,
   label: '500–1 BCE'
 }, {
   max: 500,
@@ -436235,10 +438756,10 @@ function parsePeriod(text, tradition) {
     const isBCE = m[3].startsWith('b');
     if (isBCE) return {
       start: -hi * 100,
-      end: -(lo - 1) * 100
+      end: -(lo - 1) * 100 - 1
     };
     return {
-      start: (lo - 1) * 100,
+      start: (lo - 1) * 100 + 1,
       end: hi * 100
     };
   }
@@ -436252,8 +438773,8 @@ function parsePeriod(text, tradition) {
     const q = m[1];
     const c = parseInt(m[2], 10);
     const isBCE = (m[3] || '').startsWith('b');
-    const base = isBCE ? -c * 100 : (c - 1) * 100;
-    const top = isBCE ? -(c - 1) * 100 : c * 100;
+    const base = isBCE ? -c * 100 : (c - 1) * 100 + 1;
+    const top = isBCE ? -(c - 1) * 100 - 1 : c * 100;
     if (q === 'early') return {
       start: base,
       end: base + 33
@@ -436275,10 +438796,10 @@ function parsePeriod(text, tradition) {
     const isBCE = m[2].startsWith('b');
     if (isBCE) return {
       start: -c * 100,
-      end: -(c - 1) * 100
+      end: -(c - 1) * 100 - 1
     };
     return {
-      start: (c - 1) * 100,
+      start: (c - 1) * 100 + 1,
       end: c * 100
     };
   }
@@ -436400,6 +438921,30 @@ function displayName(entry) {
   if (typeof entry.name === 'string') return entry.name;
   return entry.name?.primary || entry.name?.canonical || entry.id || '';
 }
+
+// Normalize a display name for consistent alphabetical sort and grouping.
+// Two classes of mismatch between localeCompare and our group-key extractor:
+//
+// 1. Ligatures that NFD doesn't decompose: Æ/æ, Þ/þ, Ð/ð, Ø/ø, Ł/ł, Œ/œ,
+//    ẞ/ß. Without explicit mapping, "Ægir" sorts in the A section (localeCompare
+//    treats Æ≈AE) but the group key strips the non-[A-Za-z] Æ and reads 'g' →
+//    group 'G', producing a phantom second G header.
+//
+// 2. Leading modifier-letter prefixes used in Semitic transliterations: ʾ
+//    (U+02BE, aleph) and ʿ (U+02BF, ayin). These are base characters (not
+//    combining marks), so they survive NFD, and localeCompare places them after
+//    Z. The group key strips them and reads the next letter (e.g. 'A' from
+//    ʾAshtart), while the sort places ʾA entries after Z — producing duplicate
+//    'A', 'I', 'O' headers scattered at the tail of the A→Z list.
+function nameForAlphaSort(entry) {
+  const raw = displayName(entry) || '';
+  const normalized = raw.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[Æ]/g, 'AE').replace(/[æ]/g, 'ae').replace(/[Þþ]/g, 'Th').replace(/[Ðð]/g, 'Th').replace(/[Øø]/g, 'O').replace(/[Łł]/g, 'L').replace(/[Œœ]/g, 'OE').replace(/[ẞß]/g, 'SS').replace(/^[^A-Za-z]+/, '');
+  // If the whole name is non-Latin (Arabic, CJK, Devanagari, etc.) the strip
+  // consumes the entire string and leaves ''. Fall back to the raw display name
+  // so these entries sort after Z by their own script's locale order — placing
+  // the '#' catch-all group at the TAIL of A→Z rather than the head.
+  return normalized || raw;
+}
 function altNames(entry) {
   const n = entry?.name;
   if (!n || typeof n === 'string') return [];
@@ -436493,7 +439038,7 @@ const SORTS = {
   alpha: {
     label: 'Alphabetical',
     short: 'A→Z',
-    cmp: (a, b) => displayName(a).localeCompare(displayName(b))
+    cmp: (a, b) => nameForAlphaSort(a).localeCompare(nameForAlphaSort(b)) || displayName(a).localeCompare(displayName(b))
   },
   tradition: {
     label: 'Tradition',
@@ -436506,10 +439051,12 @@ const SORTS = {
     cmp: (a, b) => {
       const ya = entryAnchorYear(a);
       const yb = entryAnchorYear(b);
-      if (ya == null && yb == null) return displayName(a).localeCompare(displayName(b));
-      if (ya == null) return 1;
-      if (yb == null) return -1;
-      return ya - yb;
+      const yaNull = ya == null || !isFinite(ya);
+      const ybNull = yb == null || !isFinite(yb);
+      if (yaNull && ybNull) return displayName(a).localeCompare(displayName(b));
+      if (yaNull) return 1;
+      if (ybNull) return -1;
+      return ya - yb || displayName(a).localeCompare(displayName(b));
     }
   },
   type: {
@@ -436567,7 +439114,7 @@ function useFilters(people) {
     const out = people.filter(p => {
       if (types.size && !types.has(p.type)) return false;
       if (origin === 'canon' && p.origin !== 'canon') return false;
-      if (origin === 'original' && p.origin === 'canon') return false;
+      if (origin === 'original' && p.origin !== 'original') return false;
       if (traditions.size && !traditions.has(p.tradition)) return false;
       if (q) {
         const hay = searchHaystacks.get(p.id);
@@ -436597,7 +439144,6 @@ function useFilters(people) {
     setTypes(new Set());
     setOrigin('both');
     setTraditions(new Set());
-    setSort('alpha');
   }, []);
   return {
     query,
@@ -436626,10 +439172,14 @@ function useSelection(filtered) {
   const [selectedId, setSelectedId] = useState(null);
   const [cursorIdx, setCursorIdx] = useState(0);
 
-  // Keep cursor in bounds when filter changes
+  // Reset cursor to 0 whenever the filtered list changes reference (any filter
+  // or sort change). This also handles the out-of-bounds case: 0 is always a
+  // valid index for a non-empty list, and for an empty list no row renders so
+  // the stale index is harmless. A second bounds-clamp effect is not needed
+  // and would race with this one in React 18 batching (last setState wins).
   useEffect(() => {
-    if (cursorIdx >= filtered.length) setCursorIdx(Math.max(0, filtered.length - 1));
-  }, [filtered.length, cursorIdx]);
+    setCursorIdx(0);
+  }, [filtered]);
   const moveCursor = useCallback(delta => {
     setCursorIdx(i => Math.max(0, Math.min(filtered.length - 1, i + delta)));
   }, [filtered.length]);
@@ -436805,9 +439355,10 @@ function buildPowerRegistry() {
   }
   for (const id of Object.keys(reg)) {
     const rec = reg[id];
-    rec.holderCount = rec.holders.length;
+    const holderIds = new Set(rec.holders.map(h => h.personId));
+    rec.holderCount = holderIds.size;
     rec.inheritorCount = rec.inheritors.length;
-    rec.figureCount = rec.holderCount;
+    rec.figureCount = holderIds.size + rec.inheritors.filter(h => !holderIds.has(h.personId)).length;
     rec.sources = dedupeSources(rec.sources);
     let best = null,
       bestN = -1;
@@ -436836,8 +439387,10 @@ function buildDomainRegistry() {
   });
   for (const pid of Object.keys(people)) {
     for (const d of people[pid].domains || []) {
-      if (!d || !d.sphereId) continue;
-      const rec = ensure(d.sphereId);
+      if (!d) continue;
+      const sid = d.sphereId || d.id;
+      if (!sid) continue;
+      const rec = ensure(sid);
       rec.holders.push({
         personId: pid,
         contextTag: d.contextTag || null,
@@ -436853,7 +439406,7 @@ function buildDomainRegistry() {
   for (const id of Object.keys(reg)) {
     const rec = reg[id];
     rec.holderCount = rec.holders.length;
-    rec.figureCount = rec.holderCount;
+    rec.figureCount = new Set(rec.holders.map(h => h.personId)).size;
     rec.sources = dedupeSources(rec.sources);
   }
   _domainReg = reg;
@@ -436863,7 +439416,7 @@ function buildDomainRegistry() {
 // Index sort: most-attested first, then alphabetical. Mirrors allItems().
 function allPowers() {
   try {
-    return Object.values(buildPowerRegistry()).sort((a, b) => b.figureCount - a.figureCount || b.inheritorCount - a.inheritorCount || String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
+    return Object.values(buildPowerRegistry()).sort((a, b) => b.figureCount - a.figureCount || b.holderCount - a.holderCount || String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
   } catch (_) {
     return [];
   }
@@ -436955,6 +439508,7 @@ Object.assign(window, {
   useFilters,
   useSelection,
   displayName,
+  nameForAlphaSort,
   altNames,
   transliterations,
   pressable,
@@ -437057,7 +439611,7 @@ const BrowseRow = React.memo(function BrowseRow({
   return /*#__PURE__*/React.createElement("tr", {
     ref: ref,
     className: (cursor ? 'cursor ' : '') + (selected ? 'selected ' : '') + 'type-row-' + entry.type,
-    onClick: () => onOpen(entry.id),
+    onClick: () => onOpen(entry.id, idx),
     onMouseEnter: () => onHover && onHover(idx)
   }, /*#__PURE__*/React.createElement("td", {
     className: "cell-name"
@@ -437106,11 +439660,11 @@ function groupKeyForEntry(entry, sortMode) {
   switch (sortMode) {
     case 'alpha':
       {
-        // Normalize: strip diacritics (Æthelred → Aethelred), then drop any
-        // leading non-letter (apostrophes, punctuation, dashes) so 'Antara
-        // and Ægle don't fragment into a '#' group separate from the As.
-        const name = window.displayName(entry) || '';
-        const normalized = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/^[^A-Za-z]+/, '');
+        // Use the same normalization as the alpha sort comparator so the group
+        // key always matches the sort position. nameForAlphaSort folds ligatures
+        // (Æ→AE, Þ→Th, Ø→O, etc.) that NFD alone doesn't handle --
+        // without it "Ægir" sorts in the A section but groups as 'G'.
+        const normalized = window.nameForAlphaSort(entry).replace(/^[^A-Za-z]+/, '');
         const ch = (normalized[0] || '#').toUpperCase();
         return /[A-Z]/.test(ch) ? ch : '#';
       }
@@ -437172,11 +439726,11 @@ function Browse({
   onOpenRef.current = onOpen;
   const onHoverRef = __bRef(null);
   onHoverRef.current = setCursorIdx;
-  const stableOpen = __bMemo(() => id => onOpenRef.current && onOpenRef.current(id), []);
+  const stableOpen = __bMemo(() => (id, idx) => onOpenRef.current && onOpenRef.current(id, idx), []);
   const stableHover = __bMemo(() => idx => {
     // Keyboard navigation owns the cursor for a beat after each keypress —
     // ignore the mouseenters produced by rows sliding under a parked pointer.
-    if (Date.now() - (window.__kbNavTs || 0) < 250) return;
+    if (Date.now() - (window.__kbNavTs || 0) < 400) return;
     onHoverRef.current && onHoverRef.current(idx);
   }, []);
 
@@ -437340,7 +439894,8 @@ Object.assign(window, {
 const {
   useState: __lState,
   useMemo: __lMemo,
-  useEffect: __lEffect
+  useEffect: __lEffect,
+  useRef: __lRef
 } = React;
 const CARD_W = 152;
 const CARD_H = 44;
@@ -437410,8 +439965,8 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
   const siblings = [...sibSet];
 
   // Focus row — half siblings left, focus center, rest right
-  const halfL = siblings.slice(0, Math.floor(siblings.length / 2));
-  const halfR = siblings.slice(Math.floor(siblings.length / 2));
+  const halfL = siblings.slice(0, Math.ceil(siblings.length / 2));
+  const halfR = siblings.slice(Math.ceil(siblings.length / 2));
   const focusRow = [...halfL, focusId, ...halfR];
   return {
     rows: [...ancestorRows, focusRow, ...descRows],
@@ -437526,7 +440081,7 @@ function computeEdges(layoutNodes, byId) {
     if (!p) continue;
     for (const pid of p.parentIds || []) {
       const parent = byNodeId.get(pid);
-      if (parent && parent.row === n.row - 1) {
+      if (parent) {
         edges.push({
           x1: parent.x + CARD_W / 2,
           y1: parent.y + CARD_H,
@@ -437580,19 +440135,53 @@ function Lineage({
   const [upDepth, setUpDepth] = __lState(2);
   const [downDepth, setDownDepth] = __lState(2);
   // Which rows the user has expanded (by row index). Row indices shift when the
-  // entry or the generation depth changes, so clear the set whenever they do.
-  const [expandedRows, setExpandedRows] = __lState(() => new Set());
-  __lEffect(() => {
-    setExpandedRows(new Set());
-  }, [entry, upDepth, downDepth]);
-  const toggleRow = row => setExpandedRows(prev => {
-    const next = new Set(prev);
-    if (next.has(row)) next.delete(row);else next.add(row);
-    return next;
+  // entry or the generation depth changes. Storing the context alongside the set
+  // lets layoutTree (a useMemo) see an empty set immediately on context change —
+  // an effect-based reset would arrive one frame late, showing a stale expansion.
+  const [expandState, setExpandState] = __lState(() => ({
+    forId: entry?.id,
+    forUp: upDepth,
+    forDown: downDepth,
+    rows: new Set()
+  }));
+  const expandedRows = __lMemo(() => expandState.forId === entry?.id && expandState.forUp === upDepth && expandState.forDown === downDepth ? expandState.rows : new Set(), [expandState, entry, upDepth, downDepth]);
+  const toggleRow = row => setExpandState(prev => {
+    const sameCtx = prev.forId === entry?.id && prev.forUp === upDepth && prev.forDown === downDepth;
+    const base = sameCtx ? prev.rows : new Set();
+    const rows = new Set(base);
+    rows.has(row) ? rows.delete(row) : rows.add(row);
+    return {
+      forId: entry?.id,
+      forUp: upDepth,
+      forDown: downDepth,
+      rows
+    };
   });
+  const wrapRef = __lRef(null);
+  const prevExpandedSizeRef = __lRef(0);
+  const prevTreeFocusIdRef = __lRef(null);
   const tree = __lMemo(() => buildLineageTree(entry, byId, childrenOf, upDepth, downDepth), [entry, byId, childrenOf, upDepth, downDepth]);
   const layout = __lMemo(() => layoutTree(tree, expandedRows), [tree, expandedRows]);
   const edges = __lMemo(() => computeEdges(layout.nodes, byId), [layout, byId]);
+
+  // After expanding a wide sibling row the focus card can be thousands of px
+  // from the left edge. Scroll the wrap so the focus card stays centered.
+  // On full collapse, reset to the natural (leftmost) scroll position.
+  __lEffect(() => {
+    const wrap = wrapRef.current;
+    if (!wrap) return;
+    const treeChanged = prevTreeFocusIdRef.current !== tree.focusId;
+    prevTreeFocusIdRef.current = tree.focusId;
+    const prevSize = prevExpandedSizeRef.current;
+    prevExpandedSizeRef.current = expandedRows.size;
+    if (expandedRows.size === 0) {
+      if (prevSize > 0 || treeChanged) wrap.scrollLeft = 0;
+      return;
+    }
+    const focusNode = layout.nodes.find(n => n.id === tree.focusId);
+    if (!focusNode) return;
+    wrap.scrollLeft = Math.max(0, focusNode.x - wrap.clientWidth / 2 + CARD_W / 2);
+  }, [expandedRows, layout, tree.focusId]);
   const hasAny = tree.ancestorRowCount > 0 || tree.descRowCount > 0 || tree.siblings.length > 0;
   if (!hasAny) return null;
   return /*#__PURE__*/React.createElement("div", {
@@ -437600,7 +440189,8 @@ function Lineage({
   }, /*#__PURE__*/React.createElement("h2", null, "Lineage tree", /*#__PURE__*/React.createElement("span", {
     className: "count"
   }, tree.ancestorRowCount > 0 && `${tree.ancestorRowCount}↑ `, tree.siblings.length > 0 && `${tree.siblings.length}↔ `, tree.descRowCount > 0 && `${tree.descRowCount}↓`)), /*#__PURE__*/React.createElement("div", {
-    className: "lineage-wrap"
+    className: "lineage-wrap",
+    ref: wrapRef
   }, /*#__PURE__*/React.createElement("div", {
     className: "lineage-canvas",
     style: {
@@ -437920,13 +440510,13 @@ function StageNode({
   const fill = TS_FILL[ts] || '#5A5550';
   const glyph = TS_GLYPH[ts] || '?';
   const dead = isDeadStatus(node.stage.vitalStatus);
-  const isHover = hover === node;
+  const isHover = hover === node.originalIndex;
   return /*#__PURE__*/React.createElement("g", {
     transform: `translate(${node.x}, ${ROW_H / 2})`,
     style: {
       cursor: 'pointer'
     },
-    onMouseEnter: () => onHover(node),
+    onMouseEnter: () => onHover(node.originalIndex),
     onMouseLeave: onLeave
   }, isHover && /*#__PURE__*/React.createElement("circle", {
     r: NODE_R + 5,
@@ -437955,7 +440545,14 @@ function LifecycleTimeline({
   const containerRef = __lcRef(null);
   const [width, setWidth] = __lcState(640);
   const [hover, setHover] = __lcState(null);
+  // Clear stale hover card when navigating to a different entry — Detail does
+  // not remount this component, so without this the previous entry's stage card
+  // stays visible below the new timeline until the user mouses over a node.
+  __lcEff(() => {
+    setHover(null);
+  }, [lc]);
   const plot = __lcMemo(() => buildPlot(lc, tradition, width), [lc, tradition, width]);
+  const hoverNode = hover != null && plot.nodes ? plot.nodes.find(n => n.originalIndex === hover) : null;
 
   // Re-run when the mode flips: a session whose FIRST entry renders the
   // fallback (no container div) must still attach the observer when a later
@@ -437985,13 +440582,28 @@ function LifecycleTimeline({
       x1: a.x,
       x2: b.x,
       y: ROW_H / 2,
-      dashed: isDeadStatus(a.stage.vitalStatus)
+      dashed: isDeadStatus(b.stage.vitalStatus)
     });
   }
 
   // Decide which stage labels to anchor below vs above to avoid collision.
-  // Stages with x close to their neighbor alternate vertical anchor.
-  const labelSide = plot.nodes.map((_, i) => i % 2 === 0 ? 'above' : 'below');
+  // Sort by x position before assigning sides — nodes in the same era are
+  // visually adjacent, but their originalIndex values may be non-consecutive
+  // (interleaved with stages from other eras), so i%2 on the originalIndex-sorted
+  // array can assign the same side to two fanned nodes in the same column.
+  const labelSide = (() => {
+    const byX = plot.nodes.map((n, i) => ({
+      i,
+      x: n.x
+    })).sort((a, b) => a.x - b.x);
+    const sides = new Array(plot.nodes.length);
+    byX.forEach(({
+      i
+    }, rank) => {
+      sides[i] = rank % 2 === 0 ? 'above' : 'below';
+    });
+    return sides;
+  })();
 
   // Build a legend strip containing only the type-statuses that actually
   // appear in this entry's lifecycle. Without it, the glyph alphabet
@@ -438117,24 +440729,24 @@ function LifecycleTimeline({
     className: "lifecycle-legend-label"
   }, nameForTypeStatus(ts)))), /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-legend-note"
-  }, "dashed = deceased"), plot.omitted > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "dashed = dead / deceased"), plot.omitted > 0 && /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-legend-note"
-  }, "+", plot.omitted, " stage", plot.omitted === 1 ? '' : 's', " in undated eras not plotted")), hover && /*#__PURE__*/React.createElement("div", {
+  }, "+", plot.omitted, " stage", plot.omitted === 1 ? '' : 's', " in undated eras not plotted")), hoverNode && /*#__PURE__*/React.createElement("div", {
     className: "lifecycle-card"
   }, /*#__PURE__*/React.createElement("div", {
     className: "lifecycle-card-eyebrow"
   }, /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-card-chip",
     style: {
-      background: TS_FILL[hover.stage.typeStatus] || '#5A5550'
+      background: TS_FILL[hoverNode.stage.typeStatus] || '#5A5550'
     }
-  }, TS_GLYPH[hover.stage.typeStatus] || '?'), /*#__PURE__*/React.createElement("span", null, nameForTypeStatus(hover.stage.typeStatus)), hover.stage.vitalStatus && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+  }, TS_GLYPH[hoverNode.stage.typeStatus] || '?'), /*#__PURE__*/React.createElement("span", null, nameForTypeStatus(hoverNode.stage.typeStatus)), hoverNode.stage.vitalStatus && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-card-dot"
-  }), /*#__PURE__*/React.createElement("span", null, hover.stage.vitalStatus)), /*#__PURE__*/React.createElement("span", {
+  }), /*#__PURE__*/React.createElement("span", null, hoverNode.stage.vitalStatus)), /*#__PURE__*/React.createElement("span", {
     className: "lifecycle-card-dot"
-  }), /*#__PURE__*/React.createElement("span", null, hover.stage.era.replace(/-/g, ' '))), hover.stage.notes && /*#__PURE__*/React.createElement("p", {
+  }), /*#__PURE__*/React.createElement("span", null, hoverNode.stage.era.replace(/-/g, ' '))), hoverNode.stage.notes && /*#__PURE__*/React.createElement("p", {
     className: "lifecycle-card-notes"
-  }, hover.stage.notes)));
+  }, hoverNode.stage.notes)));
 }
 
 // Fallback for traditions with no parseable era spans.
@@ -438912,8 +441524,7 @@ function Detail({
   }, [!!localEntry]);
   __dEff(() => {
     if (!localEntry) return;
-    // Reset scroll when entry changes
-    const el = document.querySelector('.detail-scroll');
+    const el = panelRef.current?.querySelector('.detail-scroll');
     if (el) el.scrollTop = 0;
   }, [localEntry?.id]);
   if (!localEntry) return null;
@@ -439065,7 +441676,7 @@ function Detail({
     onOpenItem: onOpenItem
   }), /*#__PURE__*/React.createElement(IconographyBlock, {
     entry: entry
-  }), entry.cult?.cultCenters?.length || entry.cult?.festivals?.length || entry.linguistic?.etymology ? /*#__PURE__*/React.createElement(Chapter, {
+  }), entry.cult?.cultCenters?.length || entry.cult?.festivals?.length || entry.cult?.priesthoods?.length || entry.cult?.offerings?.length || entry.linguistic?.etymology ? /*#__PURE__*/React.createElement(Chapter, {
     label: "Practice & Language"
   }) : null, /*#__PURE__*/React.createElement(CultBlock, {
     entry: entry
@@ -439197,7 +441808,7 @@ function itemKindBucket(kind) {
   if (/substance|elixir|potion|\bearth\b|\bfire\b|\bplant\b|\btree\b|herb|flower|fruit|\bwater\b|blood|\bmead\b|ambrosia/.test(s)) return 'substance';
   if (/ritual|\bcult\b|sacred|offering|votive|amulet|talisman|charm|bundle|fetish|\brelic\b|altar|reliquary/.test(s)) return 'ritual';
   if (/\btool\b|implement|equipment|\bstaff\b|\brod\b|\bhook\b|\bnet\b|\bkey\b|wheel|loom|plough|plow|anvil|mirror|\blamp\b|torch|sickle|scythe|spindle/.test(s)) return 'tool';
-  if (/symbol|\bsign\b|cosmic|attribute|emblem/.test(s)) return 'symbol';
+  if (/symbol|\bsign\b|cosmic|attribute/.test(s)) return 'symbol';
   return 'other';
 }
 
@@ -439255,11 +441866,11 @@ function Items({
   const groups = __iMemo(() => {
     const byKind = new Map();
     for (const it of visible) {
-      const k = it.kind || 'other';
+      const k = itemKindBucket(it.kind);
       if (!byKind.has(k)) byKind.set(k, []);
       byKind.get(k).push(it);
     }
-    return [...byKind.entries()].sort((a, b) => itemKindRank(a[0]) - itemKindRank(b[0]) || itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
+    return [...byKind.entries()].sort((a, b) => (ITEM_BUCKET_RANK[a[0]] ?? 99) - (ITEM_BUCKET_RANK[b[0]] ?? 99) || itemBucketLabel(a[0]).localeCompare(itemBucketLabel(b[0])));
   }, [visible]);
 
   // Report the flattened on-screen order (grouped + filtered) so the item
@@ -439312,7 +441923,7 @@ function Items({
     key: kind
   }, /*#__PURE__*/React.createElement("h3", {
     className: "items-group-head"
-  }, itemKindLabel(kind), " ", /*#__PURE__*/React.createElement("span", {
+  }, itemBucketLabel(kind), " ", /*#__PURE__*/React.createElement("span", {
     className: "items-group-count"
   }, list.length)), /*#__PURE__*/React.createElement("div", {
     className: "items-rows"
@@ -439483,6 +442094,8 @@ function ItemDetail({
   onClose,
   onPrev,
   onNext,
+  canPrev,
+  canNext,
   onOpenFigure
 }) {
   // Exit animation mirrors the figure Detail: keep the last item mounted for one
@@ -439559,10 +442172,12 @@ function ItemDetail({
   }, /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onPrev,
+    disabled: canPrev === false,
     title: "Previous (k)"
   }, "\u2191 Prev"), /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onNext,
+    disabled: canNext === false,
     title: "Next (j)"
   }, "\u2193 Next")), /*#__PURE__*/React.createElement("div", {
     className: "spacer"
@@ -439649,8 +442264,8 @@ function powerBadge(p) {
     label: `${p.inheritorCount} inherit`,
     cls: 'power-badge-descent'
   };
-  if (p.holderCount > 1) return {
-    label: `${p.holderCount} bearers`,
+  if (p.figureCount > 1) return {
+    label: `${p.figureCount} bearers`,
     cls: 'power-badge-multi'
   };
   return null;
@@ -439826,11 +442441,12 @@ function PowerBearers({
 }) {
   const inReg = (holders || []).filter(h => byId.get(h.personId));
   if (!inReg.length) return null;
+  const uniqueFigures = new Set(inReg.map(h => h.personId)).size;
   return /*#__PURE__*/React.createElement("div", {
     className: "section section-power-bearers"
   }, /*#__PURE__*/React.createElement("h2", null, "Wielded by ", /*#__PURE__*/React.createElement("span", {
     className: "count"
-  }, inReg.length)), /*#__PURE__*/React.createElement("div", {
+  }, uniqueFigures)), /*#__PURE__*/React.createElement("div", {
     className: "power-bearers"
   }, inReg.map((h, i) => {
     const p = byId.get(h.personId);
@@ -439845,9 +442461,12 @@ function PowerBearers({
       className: "power-bearer-name"
     }, window.displayName(p)), /*#__PURE__*/React.createElement("span", {
       className: "power-bearer-meta"
-    }, p.tradition), h.inheritability && h.inheritability !== 'none' && /*#__PURE__*/React.createElement("span", {
-      className: 'power-herit herit-' + h.inheritability
-    }, h.inheritability));
+    }, p.tradition), h.inheritability && (() => {
+      const hb = powerHeritBucket(h.inheritability);
+      return hb !== 'none' && hb !== 'unspecified' ? /*#__PURE__*/React.createElement("span", {
+        className: 'power-herit herit-' + hb
+      }, powerHeritLabel(hb)) : null;
+    })());
   })));
 }
 
@@ -439930,6 +442549,8 @@ function PowerDetail({
   onClose,
   onPrev,
   onNext,
+  canPrev,
+  canNext,
   onOpenFigure
 }) {
   const [local, setLocal] = __pState(power || null);
@@ -440000,10 +442621,12 @@ function PowerDetail({
   }, /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onPrev,
+    disabled: canPrev === false,
     title: "Previous (k)"
   }, "\u2191 Prev"), /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onNext,
+    disabled: canNext === false,
     title: "Next (j)"
   }, "\u2193 Next")), /*#__PURE__*/React.createElement("div", {
     className: "spacer"
@@ -440020,9 +442643,12 @@ function PowerDetail({
     className: "eyebrow"
   }, /*#__PURE__*/React.createElement("span", {
     className: "eyebrow-tier"
-  }, "Power"), p.domainTag && /*#__PURE__*/React.createElement("span", null, humanizePow(p.domainTag)), p.inheritability && /*#__PURE__*/React.createElement("span", {
-    className: 'power-herit herit-' + p.inheritability
-  }, p.inheritability === 'none' ? 'not heritable' : p.inheritability + ' heritable')), /*#__PURE__*/React.createElement("h1", null, p.displayName), p.term && p.term.value && /*#__PURE__*/React.createElement("div", {
+  }, "Power"), p.domainTag && /*#__PURE__*/React.createElement("span", null, humanizePow(p.domainTag)), p.inheritability && (() => {
+    const hb = powerHeritBucket(p.inheritability);
+    return hb !== 'unspecified' ? /*#__PURE__*/React.createElement("span", {
+      className: 'power-herit herit-' + hb
+    }, powerHeritLabel(hb)) : null;
+  })()), /*#__PURE__*/React.createElement("h1", null, p.displayName), p.term && p.term.value && /*#__PURE__*/React.createElement("div", {
     className: "power-term"
   }, /*#__PURE__*/React.createElement("span", {
     className: 'power-term-native' + (powIsGlyph(p.term.script) ? ' glyph' : '')
@@ -440072,8 +442698,8 @@ function domGroupKey(name) {
   return /[A-Z]/.test(c) ? c : '#';
 }
 function domainBadge(d) {
-  if (d.holderCount > 1) return {
-    label: `${d.holderCount} figures`,
+  if (d.figureCount > 1) return {
+    label: `${d.figureCount} figures`,
     cls: 'domain-badge-multi'
   };
   return null;
@@ -440109,11 +442735,11 @@ function domainCtxBucket(raw) {
   const s = String(raw == null ? '' : raw).toLowerCase().trim();
   if (!s) return 'unspecified';
   if (/post-?mortem|posthumous|apotheos|after.?death|final-phase|\bdeath\b/.test(s)) return 'post-mortem';
+  if (/lifelong/.test(s)) return 'lifelong';
   if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
   if (/genealog|lineage|foundation|founder|dynast/.test(s)) return 'genealogical';
   if (/festival|seasonal|cyclic|calendr|harvest/.test(s)) return 'festival';
-  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|position/.test(s)) return 'narrative';
-  if (/lifelong/.test(s)) return 'lifelong';
+  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|\bposition\b/.test(s)) return 'narrative';
   return 'other';
 }
 function domainCtxBuckets(d) {
@@ -440161,7 +442787,7 @@ function Domains({
     for (const [, list] of groups) for (const d of list) ids.push(d.id);
     onVisibleOrder(ids);
   }, [groups, onVisibleOrder]);
-  const shared = __dmMemo(() => domains.filter(d => d.holderCount > 1).length, [domains]);
+  const shared = __dmMemo(() => domains.filter(d => d.figureCount > 1).length, [domains]);
   const toggleCtx = v => setCtx(prev => {
     const n = new Set(prev);
     n.has(v) ? n.delete(v) : n.add(v);
@@ -440239,11 +442865,12 @@ function DomainGovernors({
 }) {
   const inReg = (holders || []).filter(h => byId.get(h.personId));
   if (!inReg.length) return null;
+  const uniqueFigures = new Set(inReg.map(h => h.personId)).size;
   return /*#__PURE__*/React.createElement("div", {
     className: "section section-domain-govs"
   }, /*#__PURE__*/React.createElement("h2", null, "Governed by ", /*#__PURE__*/React.createElement("span", {
     className: "count"
-  }, inReg.length)), /*#__PURE__*/React.createElement("div", {
+  }, uniqueFigures)), /*#__PURE__*/React.createElement("div", {
     className: "domain-govs"
   }, inReg.map((h, i) => {
     const p = byId.get(h.personId);
@@ -440297,6 +442924,8 @@ function DomainDetail({
   onClose,
   onPrev,
   onNext,
+  canPrev,
+  canNext,
   onOpenFigure
 }) {
   const [local, setLocal] = __dmState(domain || null);
@@ -440367,10 +442996,12 @@ function DomainDetail({
   }, /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onPrev,
+    disabled: canPrev === false,
     title: "Previous (k)"
   }, "\u2191 Prev"), /*#__PURE__*/React.createElement("button", {
     className: "btn btn-ghost btn-sm",
     onClick: onNext,
+    disabled: canNext === false,
     title: "Next (j)"
   }, "\u2193 Next")), /*#__PURE__*/React.createElement("div", {
     className: "spacer"
@@ -440387,7 +443018,7 @@ function DomainDetail({
     className: "eyebrow"
   }, /*#__PURE__*/React.createElement("span", {
     className: "eyebrow-tier"
-  }, "Domain"), d.holderCount > 1 && /*#__PURE__*/React.createElement("span", null, d.holderCount, " figures")), /*#__PURE__*/React.createElement("h1", null, d.displayName), d.term && d.term.value && /*#__PURE__*/React.createElement("div", {
+  }, "Domain"), d.figureCount > 1 && /*#__PURE__*/React.createElement("span", null, d.figureCount, " figures")), /*#__PURE__*/React.createElement("h1", null, d.displayName), d.term && d.term.value && /*#__PURE__*/React.createElement("div", {
     className: "power-term"
   }, /*#__PURE__*/React.createElement("span", {
     className: 'power-term-native' + (domIsGlyph(d.term.script) ? ' glyph' : '')
@@ -440702,7 +443333,12 @@ function useForceSim(graph, width, height, positionsRef, nodeElRefs, linkElRefs)
   // Create-or-update the simulation. Uses the same instance across rebuilds
   // so positions/velocities survive incremental data changes.
   __gEff(() => {
-    if (!graph.nodes.length || !window.d3 || !width || !height) return;
+    if (!graph.nodes.length || !window.d3 || !width || !height) {
+      // Stop any running simulation so it doesn't keep ticking on stale nodes
+      // (~2 s of wasted rAF callbacks) while the empty-state placeholder shows.
+      simRef.current?.stop();
+      return;
+    }
     const d3 = window.d3;
     const cx = width / 2,
       cy = height / 2;
@@ -441094,22 +443730,27 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
         family
       });
     };
+    // Gate adjacency on the rail-filtered `people` set, not the full byId map.
+    // Using byId.has() would allow filtered-out figures (e.g., a non-Greek deity
+    // when the tradition rail is set to 'Greek') to appear as BFS intermediaries
+    // — visible in the path card but absent from the SVG graph nodes.
+    const inView = new Set(people.map(p => p.id));
     for (const p of people) {
       for (const pid of p.parentIds || []) {
-        if (byId.has(pid)) {
+        if (inView.has(pid)) {
           add(p.id, pid, 'parent', 'Lineage');
           add(pid, p.id, 'parent', 'Lineage');
         }
       }
       for (const r of p.relations || []) {
-        if (!r.personId || !byId.has(r.personId)) continue;
+        if (!r.personId || !inView.has(r.personId)) continue;
         const fam = window.relationFamily(r.kind);
         add(p.id, r.personId, r.kind, fam);
         add(r.personId, p.id, r.kind, fam);
       }
     }
     return adj;
-  }, [people, byId, pathMode]);
+  }, [people, pathMode]);
 
   // BFS shortest path. Cap depth at 8 hops — the diameter of any reasonable
   // mythological graph is well below this; beyond it the network is so
@@ -441173,6 +443814,7 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
   }, [pathStart, pathEnd, pathAdj]);
   const pathNodeSet = __gMemo(() => {
     if (!pathResult?.nodes?.length) return null;
+    if (!pathResult?.edges?.length) return null; // self-path: no dimming
     return new Set(pathResult.nodes);
   }, [pathResult]);
   const pathEdgeSet = __gMemo(() => {
@@ -441181,7 +443823,7 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
     pathResult.edges.forEach(e => {
       const lo = e.from < e.to ? e.from : e.to;
       const hi = e.from < e.to ? e.to : e.from;
-      s.add(lo + '|' + hi);
+      s.add(lo + '|' + hi + '|' + e.kind);
     });
     return s;
   }, [pathResult]);
@@ -441220,9 +443862,11 @@ function Graph({
 
   // Path mode forces the full graph view so endpoints + intermediate nodes
   // always exist in the rendered set, no matter what relation family the
-  // user was browsing when they toggled path on.
+  // user was browsing when they toggled path on. Also clear focusId so the
+  // 2-hop subgraph restriction doesn't hide intermediate path nodes.
   __gEff(() => {
     if (pathMode && mode !== 'all') setMode('all');
+    if (pathMode && focusId) setFocusId(null);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathMode]);
   __gEff(() => {
@@ -441253,7 +443897,8 @@ function Graph({
   // seeding the BFS at a linkless phantom empties the whole graph behind the
   // focus card. Treat it as unfocused and say so (notice rendered below).
   const focusInScope = __gMemo(() => !focusId || scopedPeople.some(p => p.id === focusId), [focusId, scopedPeople]);
-  const graph = __gMemo(() => buildGraph(scopedPeople, byId, mode, focusInScope ? focusId : null), [scopedPeople, byId, mode, focusId, focusInScope]);
+  const effectiveFocusId = focusInScope ? focusId : null;
+  const graph = __gMemo(() => buildGraph(scopedPeople, byId, mode, effectiveFocusId), [scopedPeople, byId, mode, effectiveFocusId]);
   // Position memory survives graph rebuilds so dragging the year slider
   // doesn't re-explode the layout every frame. See useForceSim above.
   const positionsRef = __gRef(new Map());
@@ -441273,7 +443918,7 @@ function Graph({
     pathResult,
     pathNodeSet,
     pathEdgeSet
-  } = usePathFind(people, byId, pathMode, pathStart, pathEnd);
+  } = usePathFind(scopedPeople, byId, pathMode, pathStart, pathEnd);
 
   // Active edge families (for the legend — only show what's actually here).
   const activeFamilies = __gMemo(() => {
@@ -441282,6 +443927,15 @@ function Graph({
     return s;
   }, [graph.links]);
   const focused = focusId ? byId.get(focusId) : null;
+
+  // When the graph changes (mode/year/filter rebuild), any node that was
+  // hovered may no longer exist. Clear hover state to avoid dimming the
+  // entire new graph until the mouse moves.
+  __gEff(() => {
+    setHoverNode(null);
+    setHoverPos(null);
+    setHoverEdge(null);
+  }, [graph]);
 
   // Hovering a node temporarily highlights its 1-hop (without changing
   // focus). Useful for scrubbing through a dense region.
@@ -441312,6 +443966,11 @@ function Graph({
     // Path mode — a path is rendered or being assembled.
     if (pathMode) {
       if (pathNodeSet) return pathNodeSet.has(n.id) ? 1 : 0.10;
+      if (pathResult?.unreachable) {
+        // No route within BFS depth — endpoints still bright, rest clearly dead
+        if (n.id === pathStart || n.id === pathEnd) return 1;
+        return 0.15;
+      }
       // No path computed yet — just dim everything except endpoints
       if (n.id === pathStart || n.id === pathEnd) return 1;
       if (hoverNode === n.id) return 1;
@@ -441319,12 +443978,18 @@ function Graph({
     }
     if (hoverNode) return nodeNeighbors && nodeNeighbors.has(n.id) ? 1 : 0.20;
     if (!focusId) return 1;
-    if (n.depth === 0) return 1;
-    if (n.depth === 1) return 0.95;
-    if (n.depth === 2) return 0.42;
+    // focusId is set but the focus node is outside the current scope (e.g.
+    // tradition rail filtered it out). buildGraph received focusId=null so all
+    // nodes have n.depth = null. Treat as unfocused — show at full opacity and
+    // let the "focus filtered out" card explain the situation.
+    const depth = depthById.get(n.id);
+    if (depth == null) return 1;
+    if (depth === 0) return 1;
+    if (depth === 1) return 0.95;
+    if (depth === 2) return 0.42;
     return 0.10;
   };
-  const edgeOpacity = (sId, tId, family) => {
+  const edgeOpacity = (sId, tId, family, kind) => {
     // Hidden by legend family toggle or either endpoint's tier toggle
     if (hiddenFamilies.has(family)) return 0;
     const sNode = byId.get(sId);
@@ -441335,15 +444000,20 @@ function Graph({
       if (pathEdgeSet) {
         const lo = sId < tId ? sId : tId;
         const hi = sId < tId ? tId : sId;
-        return pathEdgeSet.has(lo + '|' + hi) ? 1 : 0.05;
+        return pathEdgeSet.has(lo + '|' + hi + '|' + kind) ? 1 : 0.05;
       }
+      if (pathResult?.unreachable) return 0.05;
+      // No path assembled yet — honour hover so incident edges brighten with node
+      if (hoverNode && (sId === hoverNode || tId === hoverNode)) return 0.55;
       return 0.07;
     }
     if (hoverNode) return sId === hoverNode || tId === hoverNode ? 1 : 0.10;
     if (!focusId) return 1;
-    const sd = depthById.get(sId) ?? 99;
-    const td = depthById.get(tId) ?? 99;
-    const min = Math.min(sd, td);
+    const sd = depthById.get(sId);
+    const td = depthById.get(tId);
+    // focusId set but out of scope: all depths null; render edges at full opacity
+    if (sd == null && td == null) return 1;
+    const min = Math.min(sd ?? 99, td ?? 99);
     if (min === 0) return 1;
     if (min === 1) return 0.55;
     return 0.10;
@@ -441351,7 +444021,7 @@ function Graph({
 
   // Label policy
   const labelMode = (() => {
-    if (focusId) return 'focus-and-1hop';
+    if (focusId && focusInScope) return 'focus-and-1hop';
     if (graph.nodes.length <= 60) return 'all';
     if (zoomK >= 1.6) return 'all';
     return 'top-degree'; // top quartile by degree
@@ -441359,13 +444029,16 @@ function Graph({
   const labelDegreeThreshold = __gMemo(() => {
     if (labelMode !== 'top-degree') return -1;
     const degs = graph.nodes.map(n => n.degree).sort((a, b) => b - a);
-    return degs[Math.min(degs.length - 1, Math.floor(degs.length * 0.25))] || 0;
+    return degs[Math.ceil(degs.length * 0.25) - 1] || 0;
   }, [labelMode, graph.nodes]);
   const shouldShowLabel = n => {
     if (n.id === hoverNode) return true;
     if (n.id === focusId) return true;
     if (labelMode === 'all') return true;
-    if (labelMode === 'focus-and-1hop') return n.depth != null && n.depth <= 1;
+    if (labelMode === 'focus-and-1hop') {
+      const d = depthById.get(n.id);
+      return d != null && d <= 1;
+    }
     if (labelMode === 'top-degree') return n.degree >= labelDegreeThreshold;
     return false;
   };
@@ -441441,7 +444114,7 @@ function Graph({
   }, /*#__PURE__*/React.createElement("span", {
     className: "graph-path-step"
   }, "Path:"), /*#__PURE__*/React.createElement("button", {
-    className: 'graph-path-slot ' + (pathStart ? 'set' : 'empty') + (pathStart && !pathEnd ? ' active' : ''),
+    className: 'graph-path-slot ' + (pathStart ? 'set' : 'empty') + (!pathStart || pathEnd ? ' active' : ''),
     onClick: () => setPathStart(null)
   }, /*#__PURE__*/React.createElement("span", {
     className: "slot-label"
@@ -441470,7 +444143,9 @@ function Graph({
     className: "graph-path-status"
   }, pathResult?.unreachable && /*#__PURE__*/React.createElement("span", {
     className: "graph-path-unreachable"
-  }, "no path within 8 hops"), pathResult && !pathResult.unreachable && pathResult.edges.length > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "no path within 8 hops"), pathResult && !pathResult.unreachable && pathResult.nodes.length === 1 && /*#__PURE__*/React.createElement("span", {
+    className: "graph-path-unreachable"
+  }, "same node \u2014 pick a different destination"), pathResult && !pathResult.unreachable && pathResult.edges.length > 0 && /*#__PURE__*/React.createElement("span", {
     className: "graph-path-length"
   }, /*#__PURE__*/React.createElement("strong", null, pathResult.edges.length), " hop", pathResult.edges.length === 1 ? '' : 's'))), /*#__PURE__*/React.createElement("div", {
     ref: containerRef,
@@ -441497,8 +444172,8 @@ function Graph({
     const tx = typeof l.target === 'object' ? l.target.x : 0;
     const ty = typeof l.target === 'object' ? l.target.y : 0;
     const style = EDGE_STYLE[l.family] || EDGE_STYLE.Other;
-    const op = edgeOpacity(sId, tId, l.family);
-    const inPath = pathEdgeSet && pathEdgeSet.has((sId < tId ? sId : tId) + '|' + (sId < tId ? tId : sId));
+    const op = edgeOpacity(sId, tId, l.family, l.kind);
+    const inPath = pathEdgeSet && pathEdgeSet.has((sId < tId ? sId : tId) + '|' + (sId < tId ? tId : sId) + '|' + l.kind);
     return /*#__PURE__*/React.createElement("line", {
       key: i,
       ref: el => {
@@ -442012,6 +444687,12 @@ function Atlas({
     return all.filter(t => traditionFilter.has(t));
   }, [atlas, traditionFilter]);
 
+  // When traditionFilter narrows the visible set, a previously-focused tradition
+  // may be hidden — clear it so the label doesn't claim focus on invisible territory.
+  __aEff(() => {
+    if (focused && !visibleTraditions.includes(focused)) setFocused(null);
+  }, [focused, visibleTraditions]);
+
   // For each tradition, count figures of that tradition in the registry
   // — used to suppress traditions with zero entries from the footer count.
   const figureCount = __aMemo(() => {
@@ -442092,7 +444773,10 @@ function Atlas({
     if (glidedRef.current === focused) return;
     if (!svgRef.current || !zoomRef.current || !window.d3 || !size.w || !size.h) return;
     const t = renderedTraditions.find(r => r.tradition === focused);
-    if (!t) return;
+    if (!t) {
+      glidedRef.current = focused;
+      return;
+    }
     let x0 = Infinity,
       y0 = Infinity,
       x1 = -Infinity,
@@ -442104,7 +444788,10 @@ function Atlas({
       x1 = Math.max(x1, p.bounds[1][0]);
       y1 = Math.max(y1, p.bounds[1][1]);
     }
-    if (!isFinite(x0) || x1 <= x0 || y1 <= y0) return;
+    if (!isFinite(x0) || x1 <= x0 || y1 <= y0) {
+      glidedRef.current = focused;
+      return;
+    }
     glidedRef.current = focused;
     const k = Math.max(1, Math.min(8, 0.75 / Math.max((x1 - x0) / size.w, (y1 - y0) / size.h)));
     const transform = window.d3.zoomIdentity.translate(size.w / 2 - k * (x0 + x1) / 2, size.h / 2 - k * (y0 + y1) / 2).scale(k);
@@ -442243,26 +444930,30 @@ function Atlas({
     fill: "#E4E9E4",
     stroke: "rgba(11,11,11,0.35)",
     strokeWidth: 0.8,
-    vectorEffect: "non-scaling-stroke"
+    vectorEffect: "non-scaling-stroke",
+    pointerEvents: "none"
   }), /*#__PURE__*/React.createElement("path", {
     d: basemapPaths.graticule,
     fill: "none",
     stroke: "rgba(0,0,0,0.05)",
     strokeWidth: 0.4,
-    vectorEffect: "non-scaling-stroke"
+    vectorEffect: "non-scaling-stroke",
+    pointerEvents: "none"
   }), /*#__PURE__*/React.createElement("path", {
     d: basemapPaths.land,
     fill: "#EDE6D3",
     stroke: "rgba(0,0,0,0.30)",
     strokeWidth: 0.55,
     strokeLinejoin: "round",
-    vectorEffect: "non-scaling-stroke"
+    vectorEffect: "non-scaling-stroke",
+    pointerEvents: "none"
   }), /*#__PURE__*/React.createElement("path", {
     d: basemapPaths.countries,
     fill: "none",
     stroke: "rgba(0,0,0,0.09)",
     strokeWidth: 0.4,
-    vectorEffect: "non-scaling-stroke"
+    vectorEffect: "non-scaling-stroke",
+    pointerEvents: "none"
   })), /*#__PURE__*/React.createElement("g", {
     clipPath: "url(#atlas-land)"
   }, ['extent', 'successors', 'colonies', 'diaspora', 'core'].map(layerKind => {
@@ -442336,7 +445027,7 @@ function Atlas({
           onMouseLeave: () => setHover(null),
           onClick: e => {
             e.stopPropagation();
-            setFocused(tradition);
+            setFocused(prev => prev === tradition ? null : tradition);
           }
         }));
       }));
@@ -442975,6 +445666,8 @@ function Shell() {
   } = window.useData();
   const filters = window.useFilters(people);
   const selection = window.useSelection(filters.filtered);
+  const filteredRef = __sRef(filters.filtered);
+  filteredRef.current = filters.filtered;
   const [view, setView] = __sState('browse');
   const [cmdkOpen, setCmdkOpen] = __sState(false);
   const [graphFocusId, setGraphFocusId] = __sState(null);
@@ -442982,6 +445675,12 @@ function Shell() {
   const [selectedItemId, setSelectedItemId] = __sState(null);
   const [selectedPowerId, setSelectedPowerId] = __sState(null);
   const [selectedDomainId, setSelectedDomainId] = __sState(null);
+  // Version counters incremented by onVisibleOrder so selIdxIn*Order memos
+  // recompute after the child reports a new ordered list (ref mutation alone
+  // never triggers a re-render).
+  const [itemOrderVer, setItemOrderVer] = __sState(0);
+  const [powerOrderVer, setPowerOrderVer] = __sState(0);
+  const [domainOrderVer, setDomainOrderVer] = __sState(0);
   const searchRef = __sRef(null);
 
   // Item registry (built in data.js, read once). The sorted list drives the
@@ -443039,6 +445738,7 @@ function Shell() {
     // hash instead of leaving a panel stuck open over a URL that no longer
     // describes it.
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
     setAtlasFocus(null);
     setSelectedItemId(null);
@@ -443056,7 +445756,13 @@ function Shell() {
       }
     }
     setView(v);
-    if (v === 'browse') selection.setSelectedId(id);else if (v === 'graph') setGraphFocusId(id);else if (v === 'atlas') setAtlasFocus(id);else if (v === 'items') setSelectedItemId(id);else if (v === 'powers') setSelectedPowerId(id);else if (v === 'domains') setSelectedDomainId(id);
+    if (v === 'browse') {
+      selection.setSelectedId(id);
+      if (id) {
+        const idx = filteredRef.current.findIndex(p => p.id === id);
+        if (idx >= 0) selection.setCursorIdx(idx);
+      }
+    } else if (v === 'graph') setGraphFocusId(id);else if (v === 'atlas') setAtlasFocus(id);else if (v === 'items') setSelectedItemId(id);else if (v === 'powers') setSelectedPowerId(id);else if (v === 'domains') setSelectedDomainId(id);
   }, [selection]);
   __sEff(() => {
     applyHash();
@@ -443166,7 +445872,7 @@ function Shell() {
   const itemOrderRef = __sRef(null);
   const moveItem = __sCb(delta => {
     if (!selectedItemId) return;
-    const order = itemOrderRef.current && itemOrderRef.current.length ? itemOrderRef.current : itemList.map(it => it.id);
+    const order = itemOrderRef.current !== null ? itemOrderRef.current : itemList.map(it => it.id);
     const idx = order.indexOf(selectedItemId);
     if (idx < 0) return;
     const nextId = order[idx + delta];
@@ -443178,7 +445884,7 @@ function Shell() {
   const powerOrderRef = __sRef(null);
   const movePower = __sCb(delta => {
     if (!selectedPowerId) return;
-    const order = powerOrderRef.current && powerOrderRef.current.length ? powerOrderRef.current : powerList.map(p => p.id);
+    const order = powerOrderRef.current !== null ? powerOrderRef.current : powerList.map(p => p.id);
     const idx = order.indexOf(selectedPowerId);
     if (idx < 0) return;
     const nextId = order[idx + delta];
@@ -443187,12 +445893,46 @@ function Shell() {
   const domainOrderRef = __sRef(null);
   const moveDomain = __sCb(delta => {
     if (!selectedDomainId) return;
-    const order = domainOrderRef.current && domainOrderRef.current.length ? domainOrderRef.current : domainList.map(d => d.id);
+    const order = domainOrderRef.current !== null ? domainOrderRef.current : domainList.map(d => d.id);
     const idx = order.indexOf(selectedDomainId);
     if (idx < 0) return;
     const nextId = order[idx + delta];
     if (nextId) setSelectedDomainId(nextId);
   }, [selectedDomainId, domainList]);
+  const selIdxInItemOrder = __sMemo(() => {
+    if (!selectedItemId) return -1;
+    const order = itemOrderRef.current !== null ? itemOrderRef.current : itemList.map(it => it.id);
+    return order.indexOf(selectedItemId);
+  }, [selectedItemId, itemList, itemOrderVer]);
+  const selIdxInPowerOrder = __sMemo(() => {
+    if (!selectedPowerId) return -1;
+    const order = powerOrderRef.current !== null ? powerOrderRef.current : powerList.map(p => p.id);
+    return order.indexOf(selectedPowerId);
+  }, [selectedPowerId, powerList, powerOrderVer]);
+  const selIdxInDomainOrder = __sMemo(() => {
+    if (!selectedDomainId) return -1;
+    const order = domainOrderRef.current !== null ? domainOrderRef.current : domainList.map(d => d.id);
+    return order.indexOf(selectedDomainId);
+  }, [selectedDomainId, domainList, domainOrderVer]);
+
+  // Stable onVisibleOrder callbacks — inline arrow functions in JSX are new
+  // references every render, which would make Items/Powers/Domains useEffect
+  // re-fire → call setOrderVer → re-render → new reference → infinite loop.
+  // useCallback with [] produces the same stable function across all renders;
+  // setOrderVer (stable setter) and the refs (stable objects) are safe to close
+  // over with empty deps.
+  const onItemVisibleOrder = __sCb(ids => {
+    itemOrderRef.current = ids;
+    setItemOrderVer(v => v + 1);
+  }, []);
+  const onPowerVisibleOrder = __sCb(ids => {
+    powerOrderRef.current = ids;
+    setPowerOrderVer(v => v + 1);
+  }, []);
+  const onDomainVisibleOrder = __sCb(ids => {
+    domainOrderRef.current = ids;
+    setDomainOrderVer(v => v + 1);
+  }, []);
 
   // Switch top-level view from the view tabs. Clear every detail axis first so
   // an open slide-over never stays stacked over the new view, and the hash
@@ -443200,6 +445940,7 @@ function Shell() {
   // a bare #/<view> — mirroring applyHash's mutual-exclusion contract.
   const changeView = __sCb(v => {
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
     setAtlasFocus(null);
     setSelectedItemId(null);
@@ -443214,8 +445955,32 @@ function Shell() {
   const openItem = __sCb(id => {
     setView('items');
     selection.setSelectedId(null);
+    selection.setCursorIdx(0);
     setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
     setSelectedItemId(id);
+  }, [selection]);
+  const openPower = __sCb(id => {
+    setView('powers');
+    selection.setSelectedId(null);
+    selection.setCursorIdx(0);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedDomainId(null);
+    setSelectedPowerId(id);
+  }, [selection]);
+  const openDomain = __sCb(id => {
+    setView('domains');
+    selection.setSelectedId(null);
+    selection.setCursorIdx(0);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(id);
   }, [selection]);
 
   // Keyboard bindings. The handler is kept in a ref refreshed every render so
@@ -443238,6 +446003,10 @@ function Shell() {
         setCmdkOpen(false);
         return;
       }
+      if (inField) {
+        e.target.blur();
+        return;
+      }
       if (selectedItemId) {
         setSelectedItemId(null);
         return;
@@ -443251,11 +446020,9 @@ function Shell() {
         return;
       }
       if (selection.selectedId) {
+        const i = selIdxInFiltered;
         selection.setSelectedId(null);
-        return;
-      }
-      if (inField) {
-        e.target.blur();
+        selection.setCursorIdx(i >= 0 ? i : 0);
         return;
       }
       if (filters.query) {
@@ -443285,6 +446052,10 @@ function Shell() {
 
     // Item-detail navigation
     if (selectedItemId) {
+      if (e.key === 'Escape') {
+        setSelectedItemId(null);
+        return;
+      }
       if (e.key === 'j' || e.key === 'ArrowDown') {
         e.preventDefault();
         markKbNav();
@@ -443302,6 +446073,10 @@ function Shell() {
 
     // Power-detail navigation
     if (selectedPowerId) {
+      if (e.key === 'Escape') {
+        setSelectedPowerId(null);
+        return;
+      }
       if (e.key === 'j' || e.key === 'ArrowDown') {
         e.preventDefault();
         markKbNav();
@@ -443319,6 +446094,10 @@ function Shell() {
 
     // Domain-detail navigation
     if (selectedDomainId) {
+      if (e.key === 'Escape') {
+        setSelectedDomainId(null);
+        return;
+      }
       if (e.key === 'j' || e.key === 'ArrowDown') {
         e.preventDefault();
         markKbNav();
@@ -443405,19 +446184,28 @@ function Shell() {
   }, /*#__PURE__*/React.createElement(Rail, {
     filters: filters,
     view: view,
-    hasDetail: !!selectedEntry
+    hasDetail: !!(selectedEntry || selectedItemId || selectedPowerId || selectedDomainId)
   })), /*#__PURE__*/React.createElement("div", {
     className: "shell-main"
   }, view === 'browse' && /*#__PURE__*/React.createElement(window.Browse, {
     filters: filters,
     selection: selection,
-    onOpen: id => selection.setSelectedId(id)
+    onOpen: (id, idx) => {
+      selection.setSelectedId(id);
+      if (idx != null) selection.setCursorIdx(idx);
+    }
   }), view === 'graph' && /*#__PURE__*/React.createElement(window.Graph, {
     people: filters.filtered,
     byId: byId,
     focusId: graphFocusId,
     setFocusId: setGraphFocusId,
-    onOpenDetail: id => selection.setSelectedId(id)
+    onOpenDetail: id => {
+      setGraphFocusId(null);
+      setView('browse');
+      selection.setSelectedId(id);
+      const idx = filters.filtered.findIndex(p => p.id === id);
+      if (idx >= 0) selection.setCursorIdx(idx);
+    }
   }), view === 'atlas' && /*#__PURE__*/React.createElement(window.Atlas, {
     atlas: atlas,
     byId: byId,
@@ -443427,50 +446215,56 @@ function Shell() {
     onOpenDetail: tradition => {
       // "N figures →" click: drop into Browse with the tradition selected
       filters.setTraditions(new Set([tradition]));
-      setView('browse');
+      changeView('browse');
     }
   }), view === 'items' && /*#__PURE__*/React.createElement(window.Items, {
     items: visibleItems,
     total: itemList.length,
     byId: byId,
     selectedItemId: selectedItemId,
-    onOpenItem: id => setSelectedItemId(id),
-    onVisibleOrder: ids => {
-      itemOrderRef.current = ids;
-    }
+    onOpenItem: openItem,
+    onVisibleOrder: onItemVisibleOrder
   }), view === 'powers' && /*#__PURE__*/React.createElement(window.PowersView, {
     powers: visiblePowers,
     total: powerList.length,
     byId: byId,
     selectedPowerId: selectedPowerId,
-    onOpenPower: id => setSelectedPowerId(id),
-    onVisibleOrder: ids => {
-      powerOrderRef.current = ids;
-    }
+    onOpenPower: openPower,
+    onVisibleOrder: onPowerVisibleOrder
   }), view === 'domains' && /*#__PURE__*/React.createElement(window.Domains, {
     domains: visibleDomains,
     total: domainList.length,
     byId: byId,
     selectedDomainId: selectedDomainId,
-    onOpenDomain: id => setSelectedDomainId(id),
-    onVisibleOrder: ids => {
-      domainOrderRef.current = ids;
-    }
+    onOpenDomain: openDomain,
+    onVisibleOrder: onDomainVisibleOrder
   }))), /*#__PURE__*/React.createElement(window.Detail, {
     entry: selectedEntry,
     byId: byId,
     childrenOf: childrenOf,
-    onClose: () => selection.setSelectedId(null),
+    onClose: () => {
+      const i = selIdxInFiltered;
+      selection.setSelectedId(null);
+      selection.setCursorIdx(i >= 0 ? i : 0);
+    },
     onPrev: () => moveSelection(-1),
     onNext: () => moveSelection(1),
     canPrev: selIdxInFiltered > 0,
     canNext: selIdxInFiltered >= 0 && selIdxInFiltered < filters.filtered.length - 1,
-    onOpen: id => selection.setSelectedId(id),
+    onOpen: (id, idx) => {
+      selection.setSelectedId(id);
+      if (idx != null) selection.setCursorIdx(idx);
+    },
     onOpenItem: openItem,
     onShowInGraph: entry => {
       setGraphFocusId(entry.id);
       setView('graph');
+      setAtlasFocus(null);
+      setSelectedItemId(null);
+      setSelectedPowerId(null);
+      setSelectedDomainId(null);
       selection.setSelectedId(null);
+      selection.setCursorIdx(0);
     }
   }), /*#__PURE__*/React.createElement(window.ItemDetail, {
     item: selectedItem,
@@ -443478,10 +446272,16 @@ function Shell() {
     onClose: () => setSelectedItemId(null),
     onPrev: () => moveItem(-1),
     onNext: () => moveItem(1),
+    canPrev: selIdxInItemOrder > 0,
+    canNext: selIdxInItemOrder >= 0 && selIdxInItemOrder < (itemOrderRef.current !== null ? itemOrderRef.current.length : itemList.length) - 1,
     onOpenFigure: id => {
       setView('browse');
+      setGraphFocusId(null);
+      setAtlasFocus(null);
       setSelectedItemId(null);
       selection.setSelectedId(id);
+      const idx = filters.filtered.findIndex(p => p.id === id);
+      selection.setCursorIdx(idx >= 0 ? idx : 0);
     }
   }), /*#__PURE__*/React.createElement(window.PowerDetail, {
     power: selectedPower,
@@ -443489,10 +446289,16 @@ function Shell() {
     onClose: () => setSelectedPowerId(null),
     onPrev: () => movePower(-1),
     onNext: () => movePower(1),
+    canPrev: selIdxInPowerOrder > 0,
+    canNext: selIdxInPowerOrder >= 0 && selIdxInPowerOrder < (powerOrderRef.current !== null ? powerOrderRef.current.length : powerList.length) - 1,
     onOpenFigure: id => {
       setView('browse');
+      setGraphFocusId(null);
+      setAtlasFocus(null);
       setSelectedPowerId(null);
       selection.setSelectedId(id);
+      const idx = filters.filtered.findIndex(p => p.id === id);
+      selection.setCursorIdx(idx >= 0 ? idx : 0);
     }
   }), /*#__PURE__*/React.createElement(window.DomainDetail, {
     domain: selectedDomain,
@@ -443500,10 +446306,16 @@ function Shell() {
     onClose: () => setSelectedDomainId(null),
     onPrev: () => moveDomain(-1),
     onNext: () => moveDomain(1),
+    canPrev: selIdxInDomainOrder > 0,
+    canNext: selIdxInDomainOrder >= 0 && selIdxInDomainOrder < (domainOrderRef.current !== null ? domainOrderRef.current.length : domainList.length) - 1,
     onOpenFigure: id => {
       setView('browse');
+      setGraphFocusId(null);
+      setAtlasFocus(null);
       setSelectedDomainId(null);
       selection.setSelectedId(id);
+      const idx = filters.filtered.findIndex(p => p.id === id);
+      selection.setCursorIdx(idx >= 0 ? idx : 0);
     }
   }), cmdkOpen && /*#__PURE__*/React.createElement(window.CommandPalette, {
     people: people,
@@ -443516,9 +446328,12 @@ function Shell() {
       setSelectedItemId(null);
       setSelectedPowerId(null);
       setSelectedDomainId(null);
+      setAtlasFocus(null);
       if (view === 'graph') {
+        selection.setSelectedId(null);
         setGraphFocusId(id);
       } else {
+        setGraphFocusId(null);
         if (view !== 'browse') setView('browse');
         selection.setSelectedId(id);
       }

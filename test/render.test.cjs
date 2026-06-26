@@ -55,8 +55,8 @@ describe('app renders in a browser-like environment', () => {
     // here, not in a user's screenshot.
     const stats = app.document.querySelector('.atlas-stats')?.textContent || '';
     const m = stats.match(/(\d+)\s*traditions/);
-    assert.ok(m && parseInt(m[1], 10) >= 238,
-      `expected all 238 mapped traditions on the atlas, stats read "${stats}"`);
+    assert.ok(m && parseInt(m[1], 10) >= 241,
+      `expected at least 241 mapped traditions on the atlas, stats read "${stats}"`);
     await app.clickButton('Browse');
     assert.ok(app.document.querySelector('.browse-table'), 'did not return to browse');
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
@@ -125,7 +125,7 @@ describe('app renders in a browser-like environment', () => {
   };
 
   test('Lifecycle stage nodes are spread, not crammed', async () => {
-    await app.openFirstFigure(); // ʿAntara ibn Shaddad — a multi-era lifecycle
+    await app.openFigure('arabian_antara'); // 'Antara ibn Shaddad — a multi-era lifecycle
     const { gap } = minLifecycleGap(app.document);
     assert.ok(gap >= 24, `stage nodes overlap: min gap ${Math.round(gap)}px < 24px node size`);
   });
@@ -527,5 +527,237 @@ describe('app renders in a browser-like environment', () => {
     assert.ok(app.document.querySelector('.cmdk'), 'Command Palette closed unexpectedly');
     await app.act(async () => { app.key('Escape'); });
     await app.flush();
+  });
+
+  test('Browse A→Z sort: ligature names (Ægir, Þjazi) produce no duplicate group headers', async () => {
+    // Regression: groupKeyForEntry stripped non-[A-Za-z] characters before
+    // extracting the first letter, so "Ægir" → 'G' and "Þjazi" → 'J' despite
+    // localeCompare placing them in the 'A' and 'T' sections. nameForAlphaSort
+    // now maps ligatures (Æ→AE, Þ→Th) before the group key reads the first
+    // letter, keeping sort order and group keys consistent.
+    await app.clickButton('Browse');
+    await app.clickButton('A→Z');
+    await app.flush();
+    const headers = [...app.document.querySelectorAll('.browse-group-header .group-label')]
+      .map((h) => h.textContent);
+    assert.ok(headers.length > 0, 'A→Z sort produced no group headers');
+    const seen = new Set();
+    const duplicates = headers.filter((h) => { const d = seen.has(h); seen.add(h); return d; });
+    assert.deepStrictEqual(duplicates, [],
+      `A→Z group headers are not unique (fragment): ${duplicates.join(', ')}`);
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('Lineage expand: clicking "+N" scrolls the wrap to keep the focus card visible', async () => {
+    // Regression: expanding a 50-sibling row put the focus card ~4100px from
+    // the left edge with no auto-scroll, requiring manual horizontal scrolling.
+    // The new useEffect sets lineage-wrap.scrollLeft to center on the focus.
+    await app.openFigure('greek_apollod_hyllus');
+    const chip = app.document.querySelector('.lineage-overflow:not(.is-expanded)');
+    assert.ok(chip, 'expected a collapsed "+N" overflow chip (50+ siblings)');
+    const wrap = app.document.querySelector('.lineage-wrap');
+    assert.ok(wrap, '.lineage-wrap did not render');
+    assert.strictEqual(wrap.scrollLeft, 0, 'scrollLeft should start at 0');
+    await app.act(async () => { chip.click(); });
+    await app.flush();
+    assert.ok(wrap.scrollLeft > 0,
+      `after expanding a wide row the focus card is still at scrollLeft=0 (effect did not fire)`);
+    await app.clickButton('Browse');
+  });
+
+  test('eraBandForYear(0) returns the 1–500 CE band, not 500–1 BCE', () => {
+    // Regression: ERA_BANDS used max:0 for the BCE band, so year 0 fell into
+    // '500–1 BCE'. Year 0 (the turn of the era) should land in '1–500 CE'.
+    assert.strictEqual(app.window.eraBandForYear(0), '1–500 CE');
+    assert.strictEqual(app.window.eraBandForYear(-1), '500–1 BCE');
+    assert.strictEqual(app.window.eraBandForYear(1), '1–500 CE');
+  });
+
+  test('cursorIdx resets to 0 when the filter list changes content', async () => {
+    // Regression: useSelection only clamped the cursor when filtered.length
+    // changed, so switching from one tradition (100 rows) to another same-size
+    // tradition left the cursor at an arbitrary position in the new list.
+    await app.clickButton('Browse');
+    // Drive the cursor to position 3 via keyboard.
+    await app.act(async () => { app.key('j'); app.key('j'); app.key('j'); });
+    await app.flush();
+    // Count only data rows (not group headers) to find the cursor position.
+    const getCursorDataIdx = () =>
+      [...app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)')]
+        .findIndex(r => r.classList.contains('cursor'));
+    assert.ok(getCursorDataIdx() > 0, 'expected cursor to advance past row 0');
+    // Switch to Norse filter — changes filtered content, cursor should reset.
+    const rail = [...app.document.querySelectorAll('.rail-row-trad')]
+      .find((r) => r.textContent.includes('Norse'));
+    assert.ok(rail, 'Norse tradition not in rail');
+    await app.act(async () => { rail.click(); });
+    await app.flush();
+    assert.strictEqual(getCursorDataIdx(), 0, 'cursor did not reset to 0 after filter change');
+    // Clear filter.
+    await app.act(async () => { rail.click(); });
+    await app.flush();
+  });
+
+  test('cursorIdx resets to 0 when switching views', async () => {
+    // Regression: changeView() and applyHash() set selectedId to null but
+    // did not reset cursorIdx, so returning to Browse left the highlight
+    // at a stale position from a previous session.
+    await app.clickButton('Browse');
+    await app.act(async () => { app.key('j'); app.key('j'); });
+    await app.flush();
+    const getCursorDataIdx = () =>
+      [...app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)')]
+        .findIndex(r => r.classList.contains('cursor'));
+    assert.ok(getCursorDataIdx() > 0, 'expected cursor to advance');
+    await app.clickButton('Graph');
+    await app.flush();
+    await app.clickButton('Browse');
+    await app.flush();
+    assert.strictEqual(getCursorDataIdx(), 0, 'cursor did not reset to 0 after view switch');
+  });
+
+  test('cursorIdx lands at 0 (not last row) when filter shrinks list below cursor position', async () => {
+    // Regression: two separate useEffects in useSelection both fired when
+    // filtered shrank. Effect 1 enqueued setCursorIdx(0); Effect 2's stale
+    // closure saw the old cursorIdx as out-of-bounds and enqueued
+    // setCursorIdx(last). React 18 batching applied the last setter, landing
+    // the cursor on the last row. Fix: remove Effect 2 — 0 is always valid.
+    await app.clickButton('Browse');
+    const getCursorDataIdx = () =>
+      [...app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)')]
+        .findIndex(r => r.classList.contains('cursor'));
+    // Find a tradition with very few entries (< 5) so that advancing cursor
+    // to row 4 puts it out-of-bounds after the filter is applied.
+    const rails = [...app.document.querySelectorAll('.rail-row-trad')];
+    const smallRail = rails.find((r) => {
+      const countEl = r.querySelector('.rail-count');
+      return countEl && parseInt(countEl.textContent, 10) <= 3;
+    });
+    if (!smallRail) { return; } // no suitable small tradition in this build — skip
+    // Advance cursor to position 4 via keyboard.
+    await app.act(async () => {
+      app.key('j'); app.key('j'); app.key('j'); app.key('j');
+    });
+    await app.flush();
+    assert.ok(getCursorDataIdx() >= 4, 'expected cursor to advance to at least row 4');
+    // Apply the small tradition filter — list shrinks below cursor position.
+    await app.act(async () => { smallRail.click(); });
+    await app.flush();
+    assert.strictEqual(getCursorDataIdx(), 0,
+      'cursor should land at 0 (not last row) when filter shrinks list below cursor position');
+    // Clear filter.
+    await app.act(async () => { smallRail.click(); });
+    await app.flush();
+  });
+
+  test('Lifecycle stale hover card clears on entry navigation', async () => {
+    // Regression: LifecycleTimeline's `hover` state was never reset when the
+    // `lc` prop changed. The previous entry's stage card stayed visible after
+    // navigating to a different entry.
+    // Open a figure that has a lifecycle section.
+    await app.openFigure('greek_alexander');
+    const svg = app.document.querySelector('.lifecycle-svg');
+    if (!svg) { return; } // figure has no lifecycle in this build — skip
+    const firstNode = svg.querySelector('circle[r="12"]');
+    if (!firstNode) { return; }
+    // Simulate hover to set hover state.
+    firstNode.parentNode?.dispatchEvent(new app.window.MouseEvent('mouseenter', { bubbles: true }));
+    await app.flush();
+    // Navigate to a different entry.
+    await app.openFigure('greek_zeus');
+    await app.flush();
+    // The hover card (lifecycle detail card below the timeline) must not show
+    // data from the previous entry. We check it's absent (null or empty).
+    const hoverCard = app.document.querySelector('.lifecycle-hover');
+    assert.ok(!hoverCard || !hoverCard.textContent.trim(),
+      'lifecycle hover card from previous entry still visible after navigation');
+  });
+
+  test('Browse "Clear all" does not reset sort mode', async () => {
+    // Regression: filters.reset() called setSort('alpha') even though sort is
+    // not presented as a filter chip and should not be wiped by "Clear all".
+    await app.clickButton('Browse');
+    // Switch to Tradition sort.
+    const sortTrad = [...app.document.querySelectorAll('.sort-group button')]
+      .find((b) => b.textContent.includes('Trad'));
+    if (!sortTrad) { return; } // no Tradition sort button — skip
+    await app.act(async () => { sortTrad.click(); });
+    await app.flush();
+    assert.ok(sortTrad.classList.contains('btn-on'), 'Tradition sort should be active');
+    // Activate 2 filters (tradition + origin) so the "Clear all" chip appears.
+    // "Clear all" only renders when activeChips.length >= 2.
+    const greekRail = [...app.document.querySelectorAll('.rail-row-trad')]
+      .find((r) => r.textContent.includes('Greek'));
+    const canonBtn = [...app.document.querySelectorAll('button[role="tab"]')]
+      .find((b) => b.textContent === 'Canon');
+    if (!greekRail || !canonBtn) { return; } // expected UI missing — skip
+    await app.act(async () => { greekRail.click(); canonBtn.click(); });
+    await app.flush();
+    const clearAll = [...app.document.querySelectorAll('.filter-chip')]
+      .find((c) => c.textContent.includes('Clear all'));
+    assert.ok(clearAll, 'expected Clear all chip after applying 2 filters');
+    await app.act(async () => { clearAll.click(); });
+    await app.flush();
+    // Sort should still be Tradition, not A→Z.
+    assert.ok(sortTrad.classList.contains('btn-on'),
+      'sort was reset to alpha by Clear all (should be preserved)');
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('domain registry indexes legacy d.id domain entries (E-bangishimog / west-wind)', async () => {
+    // Regression: buildDomainRegistry required d.sphereId and silently dropped
+    // any domain entry using the older d.id field. Over 100 domain records used
+    // d.id. Fix: accept d.sphereId || d.id.
+    const allDomains = app.window.allDomains ? app.window.allDomains() : null;
+    if (!allDomains) { return; } // allDomains not yet exposed — skip
+    const westWind = allDomains.find((d) => d.id === 'west-wind');
+    assert.ok(westWind, 'west-wind domain not found — legacy d.id fix may have regressed');
+    assert.ok(westWind.holderCount >= 1,
+      `west-wind domain has no holders; expected E-bangishimog (holderCount: ${westWind.holderCount})`);
+    assert.ok(westWind.holders.some((h) => h.personId === 'e_bangishimog'),
+      'E-bangishimog should appear as holder of west-wind domain (uses legacy d.id field)');
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('entryAnchorYear prefers mythicStart over textualStart when both are present', async () => {
+    // Regression: entryAnchorYear used textualStart before mythicStart, but
+    // entryDateRange (the display function) uses mythicStart first. This caused
+    // the era sort group and the displayed date to derive from different axes.
+    // For a Greek heroic-age figure with an explicit mythicStart (~1400 BCE) and
+    // the default ERA_DATES textualStart (~750 BCE), the anchor year should be
+    // the mythicStart so the sort position matches the displayed date.
+    const entry = app.window.__PR?.seedPeople?.['greek_apollod_acrisius'];
+    if (!entry) { return; } // figure not in this build — skip
+    const anchorYear = app.window.entryAnchorYear(entry);
+    // mythicStart for Acrisius is -1400; ERA textualStart is ~ -750.
+    assert.ok(anchorYear <= -1300,
+      `entryAnchorYear returned ${anchorYear} — expected mythicStart (~-1400), not textualStart (~-750)`);
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('Items view groups items by bucket key, not raw kind, when a facet is active', async () => {
+    // Regression: groups() keyed by raw it.kind ('thunderbolt-weapon', 'blade',
+    // 'dagger-weapon'…) while the facet filter used itemKindBucket() — different
+    // key spaces. Filtering to "Weapons" produced dozens of micro-group headers
+    // instead of a single "Weapons" section.
+    await app.clickButton('Items');
+    await app.flush();
+    const view = app.document.querySelector('.items-view');
+    assert.ok(view, 'Items view did not render');
+    // Click the Weapons facet chip.
+    const weaponsChip = [...view.querySelectorAll('.facet-chip:not(.facet-clear)')]
+      .find((c) => c.textContent.trim() === 'Weapons');
+    if (!weaponsChip) { return; } // no Weapons chip in this build — skip
+    await app.act(async () => { weaponsChip.click(); });
+    await app.flush();
+    const groupHeaders = view.querySelectorAll('.items-group-head');
+    // After the fix, all weapon-bucket items go into ONE group named "Weapons".
+    // A micro-group explosion from raw kinds would produce > 5 headers here.
+    assert.ok(groupHeaders.length <= 2,
+      `Weapons facet produced ${groupHeaders.length} group headers (expected ≤2 after bucket-grouping fix)`);
+    const headerTexts = [...groupHeaders].map((h) => h.textContent.trim());
+    assert.ok(headerTexts.some((t) => t.startsWith('Weapons')),
+      `expected a "Weapons" group header, got: ${headerTexts.join(', ')}`);
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
   });
 });

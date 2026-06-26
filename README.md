@@ -1,7 +1,7 @@
 # Pantheon Registry
 
-A multi-tradition registry of mythological and historical figures — **2,773 entries
-across 240 traditions**, presented as a single-page app you can browse, search,
+A multi-tradition registry of mythological and historical figures — **2,815 entries
+across 243 traditions**, presented as a single-page app you can browse, search,
 graph, and map.
 
 The whole thing runs from static files with React loaded over a CDN. There is no
@@ -58,7 +58,7 @@ npm test      # node --test --test-force-exit test/*.test.cjs
 ```
 
 - `test/seed.test.cjs` runs `app/data.js` in an isolated VM and checks the seeded
-  corpus (the full ~2,770-figure corpus, exactly 238 territories, the `window.__PR`
+  corpus (the full ~2,815-figure corpus, exactly 241 territories, the `window.__PR`
   surface, no hard-schema violations, and ceilings on warn-level integrity drift).
 - `test/render.test.cjs` boots the whole app in jsdom and exercises the views,
   keyboard navigation (j/k/Enter/Escape, ⌘K and Ctrl+K), the detail panel, the

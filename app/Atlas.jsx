@@ -221,6 +221,12 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
     return all.filter(t => traditionFilter.has(t));
   }, [atlas, traditionFilter]);
 
+  // When traditionFilter narrows the visible set, a previously-focused tradition
+  // may be hidden — clear it so the label doesn't claim focus on invisible territory.
+  __aEff(() => {
+    if (focused && !visibleTraditions.includes(focused)) setFocused(null);
+  }, [focused, visibleTraditions]);
+
   // For each tradition, count figures of that tradition in the registry
   // — used to suppress traditions with zero entries from the footer count.
   const figureCount = __aMemo(() => {
@@ -288,14 +294,14 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
     if (glidedRef.current === focused) return;
     if (!svgRef.current || !zoomRef.current || !window.d3 || !size.w || !size.h) return;
     const t = renderedTraditions.find(r => r.tradition === focused);
-    if (!t) return;
+    if (!t) { glidedRef.current = focused; return; }
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
     for (const p of t.polys) {
       if (!p.bounds) continue;
       x0 = Math.min(x0, p.bounds[0][0]); y0 = Math.min(y0, p.bounds[0][1]);
       x1 = Math.max(x1, p.bounds[1][0]); y1 = Math.max(y1, p.bounds[1][1]);
     }
-    if (!isFinite(x0) || x1 <= x0 || y1 <= y0) return;
+    if (!isFinite(x0) || x1 <= x0 || y1 <= y0) { glidedRef.current = focused; return; }
     glidedRef.current = focused;
     const k = Math.max(1, Math.min(8, 0.75 / Math.max((x1 - x0) / size.w, (y1 - y0) / size.h)));
     const transform = window.d3.zoomIdentity
@@ -470,6 +476,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                     stroke="rgba(11,11,11,0.35)"
                     strokeWidth={0.8}
                     vectorEffect="non-scaling-stroke"
+                    pointerEvents="none"
                   />
                   <path
                     d={basemapPaths.graticule}
@@ -477,6 +484,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                     stroke="rgba(0,0,0,0.05)"
                     strokeWidth={0.4}
                     vectorEffect="non-scaling-stroke"
+                    pointerEvents="none"
                   />
                   <path
                     d={basemapPaths.land}
@@ -485,6 +493,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                     strokeWidth={0.55}
                     strokeLinejoin="round"
                     vectorEffect="non-scaling-stroke"
+                    pointerEvents="none"
                   />
                   <path
                     d={basemapPaths.countries}
@@ -492,6 +501,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                     stroke="rgba(0,0,0,0.09)"
                     strokeWidth={0.4}
                     vectorEffect="non-scaling-stroke"
+                    pointerEvents="none"
                   />
                 </>
               )}
@@ -572,7 +582,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                                     }}
                                     onMouseMove={(e) => positionTooltip(e.clientX, e.clientY)}
                                     onMouseLeave={() => setHover(null)}
-                                    onClick={(e) => { e.stopPropagation(); setFocused(tradition); }}
+                                    onClick={(e) => { e.stopPropagation(); setFocused(prev => prev === tradition ? null : tradition); }}
                                   />
                                 </React.Fragment>
                               );

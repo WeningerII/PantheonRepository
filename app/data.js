@@ -168,6 +168,7 @@ const TRADITION_PIGMENTS = {
   'Krachi':              '#154f52',  // Deep Volta-pool teal — the river gorge at Kete Krachi where Dente's oracle cave stood until drowned by Lake Volta in 1965.
   'Kulin':               '#79655a',  // Smoke-tanned possum-skin cloak, the incised winter garment of the Kulin peoples
   'Kwakwaka\'wakw':      '#2f6b62',  // Mask blue-green — the copper-oxide green of Kwakwaka'wakw transformation masks and painted house fronts
+  'Kyrgyz':              '#a23b30',  // Shyrdak madder-red — the felt-carpet red and the red field of the Kyrgyz banner, the colour of the Manas heroic cycle
   'Lepcha':              '#86a061',  // Bamboo green of Mayel Lyang — the bamboo-built material world of Lepcha houses, bridges and ritual vessels
   'Lithuanian':          '#4f8a3a',  // Oak-grove green — Perkūnas' sacred oaks and the žaltys grass-snake of hearth cult; the grove (alkas) was the Lithuanian sanctuary.
   'Lozi':                '#54585f',  // Nalikwanda grey — the black-and-white livery of the Litunga's royal barge on the Zambezi flood
@@ -205,6 +206,8 @@ const TRADITION_PIGMENTS = {
   'Semang':              '#b0a060',  // Bamboo comb yellow — the incised bamboo combs carrying Karei's thunder patterns among the Negrito bands
   'Senufo':              '#ad9166',  // Korhogo fila cloth — umber vegetal pigment painted on handspun cream cotton
   'Shipibo':             '#5e3a23',  // Mahogany-and-huito — the dark bark slip and genipa black of Shipibo kené pottery painting
+  'Bactrian':            '#9c7c30',  // Kushan coin-gold — the struck gold of Kanishka's dynastic deity issues from Bactra
+  'Sogdian':             '#5a5a9e',  // Penjikent lapis-violet — the ultramarine of the Sogdian temple murals of the Zarafshan
   'Songhai':             '#b3854f',  // Sahel banco — the smoothed adobe of the Tomb of Askia and the Niger-bend mosque architecture
   'Sotho-Tswana':        '#c08060',  // Litema wall-ochre — the warm earth pigments of Sotho-Tswana homestead mural art, ground from highveld clays.
   'Taíno':               '#ab763b',  // Guanín gold — the reddish gold-copper alloy of cacique regalia, the fragrant 'sky-metal' of Taíno chiefly and cosmological value
@@ -1800,6 +1803,14 @@ const buildTerritorySeed = () => ({
     ] },
   ]},
 
+  // The Tian Shan and Talas heartland of the Kyrgyz, homeland of the Manas
+  // epic cycle — roughly modern Kyrgyzstan, the mountain rim of the Ferghana.
+  "Kyrgyz": { polygons: [
+    { kind: 'core', period: 'Tian Shan, Talas and Issyk-Kul homeland of the Kyrgyz; legendary setting of the Manas trilogy (epic recorded 1856-1885)', source: 'Hatto, The Manas of Wilhelm Radloff (1990); Radloff, Proben V (1885)', coords: [
+      [69.5,42.8],[71,43.2],[74,42.9],[77,42.9],[78.5,42.8],[80.2,42.2],[80,40.5],[78,40],[75,39.3],[73,39.4],[71,40.2],[70,41],[69.4,41.5],[69.5,42.8]
+    ] },
+  ]},
+
   // Lithuania proper and Samogitia — the last pagan polity of Europe, Christianized only 1387 (Aukštaitija) and 1413 (Žemaitija).
   "Lithuanian": { polygons: [
     { kind: 'core', period: 'Grand Duchy core lands at Christianization (1387-1413 CE) — Baltic pagan cult region attested from 13th-c. chronicles onward', source: 'Gimbutas, The Balts (1963); Greimas, Of Gods and Men (1992)', coords: [
@@ -2059,6 +2070,22 @@ const buildTerritorySeed = () => ({
   "Songhai": { polygons: [
     { kind: 'core', period: 'Songhay-Zarma lands along the Niger bend — Timbuktu and Gao to Zarmaganda; imperial apogee 1464-1591 CE', source: 'Rouch, La religion et la magie Songhay (1960); Stoller, Fusion of the Worlds (1989)', coords: [
       [-3.5,17.2],[-1,17],[0.5,16.5],[2.5,15.5],[3.5,14],[2,13],[0.5,13.5],[-1.5,14.5],[-3,15.5],[-3.5,17.2]
+    ] },
+  ]},
+
+  // Sogdiana — the Zarafshan valley city-states (Samarkand/Afrasiab, Panjikent,
+  // Bukhara), heartland of the pre-Islamic Sogdian temple cult.
+  "Sogdian": { polygons: [
+    { kind: 'core', period: 'Sogdiana (Transoxiana) along the Zarafshan — Bukhara, Samarkand and Panjikent; pre-Islamic temple religion of the murals, c. 4th-8th c. CE', source: 'Grenet & Marshak, on the Panjikent murals; Shenkar, Intangible Spirits and Graven Images (2014)', coords: [
+      [63,40.2],[64.8,40.3],[66.2,40],[67.6,39.7],[68.6,39.2],[67.8,38.7],[66.2,38.9],[64.3,39.5],[63,40.2]
+    ] },
+  ]},
+
+  // Bactria / Tokharistan — the upper Oxus (Amu Darya) basin, dynastic homeland
+  // of the Kushans (Bactra/Balkh, Surkh Kotal, Rabatak, Takht-i Sangin).
+  "Bactrian": { polygons: [
+    { kind: 'core', period: 'Bactria / Tokharistan on the upper Oxus — Balkh, Surkh Kotal and the Rabatak sanctuary; Kushan dynastic cult, 1st-3rd c. CE', source: 'Sims-Williams & Cribb, A New Bactrian Inscription of Kanishka (1996); Rosenfield, The Dynastic Arts of the Kushans (1967)', coords: [
+      [64,38],[66,37.9],[68,37.6],[69,36.8],[68.3,36],[67,35.9],[65.5,36.3],[64.2,37],[64,38]
     ] },
   ]},
 
@@ -2609,6 +2636,9 @@ const buildTerritorySeed = () => ({
   "Tengrist": { polygons: [
     { kind: 'core', period: 'Mongolian plateau and Orkhon valley (Türk khaganates through the Mongol empire, 6th–13th c.)', source: 'Orkhon inscriptions (732 CE); The Secret History of the Mongols; Roux, La religion des Turcs et des Mongols (1984)', coords: [
       [88,49.5],[95,50.5],[102,50.5],[108,49.5],[112,47.5],[110,44.5],[103,43],[96,43.5],[90,45.5],[88,49.5]
+    ] },
+    { kind: 'sphere', period: 'Western Turkic steppe — the Kazakh and Kyrgyz steppe, Altai-Sayan highlands and middle Yenisei, where Tengri, Umay and the Holy Earth-Water were venerated (Türk khaganates onward)', source: 'Orkhon inscriptions; Radloff, Proben I (Altai, 1866); Roux, La religion des Turcs et des Mongols (1984)', coords: [
+      [48,47],[52,50],[60,52],[68,53],[76,52.5],[84,51.5],[89,50],[90,47],[87,44.5],[80,43],[72,42.5],[64,43],[56,44.5],[50,45.5],[48,47]
     ] },
   ]},
 
@@ -8676,6 +8706,7 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [ { kind: 'lover', personId: 'greek_iasion', notes: '' },
+        { kind: 'equated-with', personId: 'sogdian_zemat', era: 'classical', sources: [{ kind: 'scholarly', reference: 'F. Grenet, in "MITHRA ii. Iconography", Encyclopaedia Iranica' }], notes: 'Grenet reads the mourning vegetation-goddess of the Panjikent murals as a Sogdian counterpart of Demeter.' },
         { kind: 'equated-with', personId: 'roman_ceres', era: 'archaic', sources: [{ kind: 'secondary', reference: 'Standard interpretatio Graeca/Romana scholarship; Beard, North & Price, Religions of Rome (1998); Wissowa, Religion und Kultus der Römer (1912)' }], notes: 'Roman Ceres is the canonical Latin parallel to Greek Demeter through interpretatio Romana; the plebeian-aedile association and lex sacrata Cereris are distinctively Roman institutional forms.' },
         { kind: 'lover', externalRef: { name: 'Iasion (Samothracian initiate, brother of Dardanus, son of Zeus and the Pleiad Electra, lover of Demeter, father of Plutus; not registered under strict rule)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hom. Od. 5.125-128; Hes. Theog. 969-974' }], notes: '' },
         { kind: 'sibling', personId: 'greek_hesiod_zeus', era: 'primordial', sources: [{ kind: 'primary', reference: 'Hes. Theog. 453-454' }] },
@@ -38444,6 +38475,7 @@ const ERA_ORDER = {
   'Krachi': ['primordial', 'mythic-age'],
   'Kulin': ['dreaming-creator-era'],
   'Kwakwaka\'wakw': ['mythic-primordial', 'mythic-perennial'],
+  'Kyrgyz': ['heroic-age', 'semetey-cycle', 'seitek-cycle', 'wider-cycle'],
   'Lepcha': ['primordial / before the world', 'primordial / perpetual', 'primordial / first generation of humans', 'primordial / early ancestral generation', 'mythic / culture-founding age'],
   'Lithuanian': ['mythic'],
   'Lozi': ['primordial', 'mythic founding'],
@@ -38489,6 +38521,8 @@ const ERA_ORDER = {
   'Semang': ['primordial', 'primordial / perpetual'],
   'Senufo': ['Senufo traditional religion; continuing'],
   'Shipibo': ['primordial', 'mythic'],
+  'Bactrian': ['primordial', 'mythic-age'],
+  'Sogdian': ['primordial', 'mythic-age'],
   'Songhai': ['Songhay/Zarma oral tradition; living holey cult', 'Songhay/Zarma oral tradition; living holey possession cult', 'Songhay heroic age', 'Songhay heroic age; ancestor of the sorko praise-singers'],
   'Sotho-Tswana': ['primordial', 'mythic-past', 'legendary-genealogical'],
   'Taíno': ['mythic-primordial', 'mythic-perennial'],
@@ -39699,6 +39733,15 @@ const ERA_DATES = {
     'mythic-primordial':     { mythicStart: null, mythicEnd: null, textualStart: 1886, textualEnd: 2000, precision: 'cosmic' },
     'mythic-perennial':      { mythicStart: null, mythicEnd: null, textualStart: 1886, textualEnd: 2000, precision: 'cosmic' },
   },
+  'Kyrgyz': {
+    // The Manas trilogy's legendary heroic past (variously anchored to the
+    // Yenisei-Kyrgyz floruit, 9th-10th c.); the living oral epic was first
+    // written down from 1856 (Valikhanov) and 1862-69 (Radloff).
+    'heroic-age':            { mythicStart: 850, mythicEnd: 1000, textualStart: 1856, textualEnd: 2000, precision: 'era-only' },
+    'semetey-cycle':         { mythicStart: 900, mythicEnd: 1030, textualStart: 1856, textualEnd: 2000, precision: 'era-only' },
+    'seitek-cycle':          { mythicStart: 950, mythicEnd: 1060, textualStart: 1856, textualEnd: 2000, precision: 'era-only' },
+    'wider-cycle':           { mythicStart: 700, mythicEnd: 1100, textualStart: 1862, textualEnd: 2000, precision: 'era-only' },
+  },
   'Lepcha': {
     'primordial / before the world': { mythicStart: null, mythicEnd: null, textualStart: 1870, textualEnd: 2010, precision: 'cosmic' },
     'primordial / perpetual': { mythicStart: null, mythicEnd: null, textualStart: 1870, textualEnd: 2010, precision: 'cosmic' },
@@ -39897,6 +39940,18 @@ const ERA_DATES = {
   'Shipibo': {
     'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 1928, textualEnd: 2000, precision: 'cosmic' },
     'mythic':                { mythicStart: null, mythicEnd: null, textualStart: 1928, textualEnd: 2000, precision: 'cosmic' },
+  },
+  'Bactrian': {
+    // The Kushan dynastic gods are timeless; their attestation is the imperial
+    // coinage and the Rabatak inscription, 1st-3rd c. CE.
+    'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 100, textualEnd: 300, precision: 'cosmic' },
+    'mythic-age':            { mythicStart: null, mythicEnd: null, textualStart: 100, textualEnd: 300, precision: 'cosmic' },
+  },
+  'Sogdian': {
+    // The Sogdian gods are timeless; attestation is the Penjikent/Afrasiab
+    // murals and the Sogdian texts, c. 4th-8th c. CE.
+    'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 300, textualEnd: 800, precision: 'cosmic' },
+    'mythic-age':            { mythicStart: null, mythicEnd: null, textualStart: 300, textualEnd: 800, precision: 'cosmic' },
   },
   'Songhai': {
     'Songhay/Zarma oral tradition; living holey cult': { mythicStart: null, mythicEnd: null, textualStart: 1941, textualEnd: 2000, precision: 'cosmic' },
@@ -51758,6 +51813,624 @@ const NEW_FIGURES = [
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
    }
   ]
+ },
+ {
+  "id": "bactrian_ardoxsho",
+  "name": {
+   "primary": "Ardoxsho",
+   "alt": [
+    "Ardochsho",
+    "Ardoksho"
+   ],
+   "transliterations": {
+    "bactrian": "αρδοχϸο"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "abundance",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "good-fortune",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "reward",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Huvishka and later (with Oesho the dominant late reverse); Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Ardoxsho is the deified Aši Vaŋuhī, the Zoroastrian personification of reward and abundance, recognizable by the cornucopia she cradles. She rises to prominence on later coinage and, like the Greek Tyche, embodies the good fortune of the realm."
+ },
+ {
+  "id": "bactrian_atsho",
+  "name": {
+   "primary": "Atsho",
+   "alt": [
+    "Athsho",
+    "Adsho"
+   ],
+   "transliterations": {
+    "bactrian": "αθϸο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "sacrifice",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "purity",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_atar",
+    "notes": "Atsho is the deified Zoroastrian fire Atar."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΑΘϷΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Atsho is the deified Zoroastrian fire (Ātar), shown haloed in flames and at times holding smith's tongs — the sacred and royal flame of the Kushan house."
+ },
+ {
+  "id": "bactrian_manaobago",
+  "name": {
+   "primary": "Manaobago",
+   "alt": [
+    "Manabago"
+   ],
+   "transliterations": {
+    "bactrian": "μαναοβαγο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "good-mind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "just-rule",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Manaobago personifies Vohu Manah, the Good Mind."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Gold coins of Huvishka, reverse legend ΜΑΝΑΟΒΑΓΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Manaobago is the Kushan personification of Vohu Manah, the 'Good Mind' of Zoroastrian thought — here a god of the wisdom that underwrites just kingship and the prosperity of the realm."
+ },
+ {
+  "id": "bactrian_mao",
+  "name": {
+   "primary": "Mao",
+   "alt": [
+    "Mah"
+   ],
+   "transliterations": {
+    "bactrian": "μαο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "night",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cyclical-order",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΜΑΟ; J. Rosenfield, The Dynastic Arts of the Kushans (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Bactrian moon-god, instantly recognized on the coins by the crescent rising behind his shoulders. He forms a celestial pair with the sun-god Miiro."
+ },
+ {
+  "id": "bactrian_miiro",
+  "name": {
+   "primary": "Miiro",
+   "alt": [
+    "Mioro",
+    "Miuro"
+   ],
+   "transliterations": {
+    "bactrian": "μιιρο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "light",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "covenant",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_mithra",
+    "notes": "Miiro is the Kushan coin-form of Mithra."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΜΙΙΡΟ; J. Rosenfield, The Dynastic Arts of the Kushans (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Kushan rendering of Mithra, a haloed youth radiating sunbeams who offers blessing to the king — one of the half-dozen titular dynastic gods struck on the imperial coinage."
+ },
+ {
+  "id": "bactrian_nana",
+  "name": {
+   "primary": "Nana",
+   "alt": [
+    "Nanaia",
+    "Nanašao"
+   ],
+   "transliterations": {
+    "bactrian": "νανα"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "victory",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "royal-legitimacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "sogdian_nana"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "epigraphic",
+      "reference": "Rabatak inscription, ll. 1-3: Kanishka 'who has obtained the kingship from Nana and from all the gods'; ed. Sims-Williams & Cribb (1996)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nana is the head of the Kushan dynastic pantheon and the only deity the Rabatak inscription names as the source of royal power. On the coins she stands or is enthroned on a lion — the dynastic, sovereignty-granting form of the same goddess worshipped across Sogdiana."
+ },
+ {
+  "id": "bactrian_oado",
+  "name": {
+   "primary": "Oado",
+   "alt": [
+    "Vado",
+    "Wado"
+   ],
+   "transliterations": {
+    "bactrian": "οαδο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "breath",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vayu",
+    "notes": "Oado is the Kushan wind-god, continuing Vayu."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΟΑΔΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Kushan wind-god — one of the earliest fully personified wind images in art: he runs with his garment ballooning behind him to convey rushing air, the Bactrian continuation of the Avestan Vayu."
+ },
+ {
+  "id": "bactrian_oaxsho",
+  "name": {
+   "primary": "Oaxsho",
+   "alt": [
+    "Wakhsh",
+    "Oxus"
+   ],
+   "transliterations": {
+    "bactrian": "οαξϸο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "the-oxus-river",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "land-fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "local-sovereignty",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Copper coins of Huvishka, reverse legend ΟΑΞϷΟ; the Takht-i Sangin temple of the Oxus"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Oaxsho is the divine personification of the Oxus (Amu Darya / Wakhsh), the defining river of Bactria, shown Poseidon-like with the water flowing from him. His great sanctuary stood at Takht-i Sangin, where the Wakhsh meets the Panj."
+ },
+ {
+  "id": "bactrian_oesho",
+  "name": {
+   "primary": "Oesho",
+   "alt": [
+    "Wesho",
+    "Oeso"
+   ],
+   "transliterations": {
+    "bactrian": "οηϸο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "destruction-and-renewal",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "ascetic-power",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cattle",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "hindu_shiva",
+    "notes": "Oesho fuses the Iranian Vayu with the Indic Shiva-Maheshvara."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I, Huvishka and Vasudeva I, reverse legend ΟΗϷΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the titular gods of the dynasty and, with Ardoxsho, one of only two deities still struck on late Kushan coinage. Shown with trident and bull, he fuses the Iranian Vayu with the Indic Shiva-Maheshvara — the Bactrian high god in Shaiva form."
+ },
+ {
+  "id": "bactrian_orlagno",
+  "name": {
+   "primary": "Orlagno",
+   "alt": [
+    "Oralagno"
+   ],
+   "transliterations": {
+    "bactrian": "ορλαγνο"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "victory",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "royal-protection",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_verethragna",
+    "notes": "Orlagno is the Kushan Verethragna."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Huvishka, reverse legend ΟΡΛΑΓΝΟ; R. Göbl, System und Chronologie der Münzprägung des Kušānreiches (1984)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Orlagno is the Kushan Verethragna, the Iranian god of crushing victory and protector of royalty — abroad equated with Herakles and Ares — who appears armed and triumphant on Huvishka's coinage."
+ },
+ {
+  "id": "bactrian_pharro",
+  "name": {
+   "primary": "Pharro",
+   "alt": [
+    "Farro"
+   ],
+   "transliterations": {
+    "bactrian": "φαρρο"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Bactrian",
+  "primaryTradition": "Bactrian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "royal-glory",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fortune",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "divine-investiture",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "numismatic",
+      "reference": "Coins of Kanishka I and Huvishka, reverse legend ΦΑΡΡΟ; Rosenfield (1967)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Pharro is the deified Khwarenah — the Iranian God-given royal glory and fortune that descends on the rightful king. On the coins he is a male figure, sometimes winged or flaming, who confers legitimacy on the sovereign."
  },
  {
   "id": "balinese_barong",
@@ -142169,7 +142842,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Supreme deity of destruction, asceticism, and regeneration; the great yogin"
+  "notes": "Supreme deity of destruction, asceticism, and regeneration; the great yogin",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_oesho"
+   }
+  ]
  },
  {
   "id": "hindu_shura",
@@ -178923,6 +179602,1146 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Classed as a deity; a culture-hero/transformer cognate with Haida Yáahl and Tlingit Yéil. Boas's extensive Kwakwaka'wakw corpus is the principal documentation."
+ },
+ {
+  "id": "kyrgyz_aichurok",
+  "name": {
+   "primary": "Aichürök",
+   "alt": [
+    "Ayčürök",
+    "Aichurek"
+   ],
+   "transliterations": {
+    "kyrgyz": "Айчүрөк"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "semetey-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "loyalty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "kyrgyz_seitek",
+    "era": "seitek-cycle",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Semetey — 'The Marriage of Semetey to Aichürök'; A. T. Hatto, The Manas of Wilhelm Radloff (1990), on the swan-maiden motif"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_semetey"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Semetey — 'The Marriage of Semetey to Aichürök'; A. T. Hatto, The Manas of Wilhelm Radloff (1990), on the swan-maiden motif"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A luminous swan-maiden (peri), daughter of Akun Khan, betrothed to Semetey before his birth by Manas's vow. She transforms into a white swan to seek her destined husband, aids him against his rivals, and after his fall safeguards the unborn Seitek — the thread by which the lineage survives."
+ },
+ {
+  "id": "kyrgyz_ajybay",
+  "name": {
+   "primary": "Ajybay",
+   "alt": [
+    "Ajibay",
+    "Acıbay"
+   ],
+   "transliterations": {
+    "kyrgyz": "Ажыбай"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "diplomacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), Manas dividing his host under named captains; A. T. Hatto, The Memorial Feast for Kökötöy-Khan (Oxford, 1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "One of the named forty companions, singled out in the muster of Manas's army to lead a division. Tradition makes him a speaker of many tongues, useful as an envoy — the diplomatic arm of the warband."
+ },
+ {
+  "id": "kyrgyz_almambet",
+  "name": {
+   "primary": "Almambet",
+   "alt": [
+    "Alman Bet"
+   ],
+   "transliterations": {
+    "kyrgyz": "Алмамбет"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "strategy",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "sworn-brotherhood",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "weather-magic",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sworn companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_chubak"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'Almambet, Er Kökčö and Ak-Erkeč: An Episode from the Kirghiz Epic Manas', Central Asiatic Journal (1969); W. Radloff, Proben V (1885)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Manas's foremost paladin: a Kalmyk/Chinese prince who converts to Islam and becomes his sworn blood-brother. The most psychologically developed of the forty companions — an outsider whose loyalty, command of war-magic (the rain-stone jay-tash), and tragic death on the Great Campaign are central to the epic."
+ },
+ {
+  "id": "kyrgyz_bakai",
+  "name": {
+   "primary": "Bakai",
+   "alt": [
+    "Bakay",
+    "Bakai-khan"
+   ],
+   "transliterations": {
+    "kyrgyz": "Бакай"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "counsel",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "regency",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_semetey"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977); A. T. Hatto, The Manas of Wilhelm Radloff (1990), on Bakai as the sage"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The wise elder and counsellor of Manas, the sober voice of experience among the companions. One of the few of the old generation to survive Manas, he becomes regent and guide to Semetey, embodying continuity across the trilogy's generations."
+ },
+ {
+  "id": "kyrgyz_bokmurun",
+  "name": {
+   "primary": "Bokmurun",
+   "alt": [
+    "Boqmurun",
+    "Bok Murun"
+   ],
+   "transliterations": {
+    "kyrgyz": "Бокмурун"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_kokotoy"
+  ],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "inheritance",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "feast-giving",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_koshoy"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the 'Bok Murun' episode (rec. 1862); A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The young heir of Kökötöy — his diminutive name ('Snotty-Nose') marking his untried youth — who, with Manas's backing, proclaims and stages the most lavish memorial games in the tradition. Protagonist of the self-contained Memorial Feast episode."
+ },
+ {
+  "id": "kyrgyz_chubak",
+  "name": {
+   "primary": "Chubak",
+   "alt": [
+    "Čubak"
+   ],
+   "transliterations": {
+    "kyrgyz": "Чубак"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "valour",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_almambet"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Saghïmbay Orozbaq uulu / D. Prior (trans.), The Memorial Feast for Kökötöy Khan (Penguin, 2022); A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A leading native champion, son of the hero Akbalta, who embodies the tension between the Kyrgyz heroes and the adopted foreigner Almambet. His jealousy of the favoured outsider drives a famous quarrel during the Great Campaign; he dies among the finest heroes lost in the victory."
+ },
+ {
+  "id": "kyrgyz_er_toshtuk",
+  "name": {
+   "primary": "Er Töshtük",
+   "alt": [
+    "Er Töstük",
+    "Er Toshtuk"
+   ],
+   "transliterations": {
+    "kyrgyz": "Эр Төштүк"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "wider-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-quest",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "underworld-journey",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "magic",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the Er Töshtük text; Pertev Naili Boratav (trans.), Er-Töshtük: épopée kirghize (Gallimard, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hero of a self-standing Kyrgyz epic loosely attached to the Manas orbit: the youngest son of old Eleman, husband of the clever Kenjeke. With the psychopomp talking-horse Chal-Kuyruk he journeys to the underworld to recover his soul and overcome a seven-headed monster — a mythological-initiatory tale of the wider cycle."
+ },
+ {
+  "id": "kyrgyz_jakyp",
+  "name": {
+   "primary": "Jakyp",
+   "alt": [
+    "Jaqyp",
+    "Jakyp-bay"
+   ],
+   "transliterations": {
+    "kyrgyz": "Жакып"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "herding",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fatherhood",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "kyrgyz_manas",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'The Birth of Manas', Asia Major 14.2 (1969); W. Radloff, Proben V (1885), the Birth of Manas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'The Birth of Manas', Asia Major 14.2 (1969); W. Radloff, Proben V (1885), the Birth of Manas"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The wealthy but long-childless herdsman whose desperate prayers for a son open the epic. His joy and anxiety at the birth of a supernatural-seeming child establish the dynastic frame; in Radloff's text he is son of Kara-khan and husband of Chyiyrdy, the mother of Manas."
+ },
+ {
+  "id": "kyrgyz_joloi",
+  "name": {
+   "primary": "Joloi",
+   "alt": [
+    "Joloy",
+    "Coloy"
+   ],
+   "transliterations": {
+    "kyrgyz": "Жолой"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "brute-strength",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_koshoy"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977): Joloi's wrestling; the Majmu' al-tawarikh (1792-93), earliest manuscript naming Manas"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The archetypal pagan giant-adversary, a Kalmyk (Oirat) khan of prodigious strength and appetite. He wrestles old Koshoy to a standstill at the Memorial Feast until Manas fells him, and raids Kyrgyz herds alongside Konurbay; he is also the hero of his own related Inner-Asian epic."
+ },
+ {
+  "id": "kyrgyz_kanykey",
+  "name": {
+   "primary": "Kanykey",
+   "alt": [
+    "Qanykey",
+    "Sanirabiga"
+   ],
+   "transliterations": {
+    "kyrgyz": "Каныкей"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "loyalty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "motherhood",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "kyrgyz_semetey",
+    "era": "semetey-cycle",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), episode 'Manas heiratet Kanykey'; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), episode 'Manas heiratet Kanykey'; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The epic's foremost heroine: daughter of Temir Khan of Bukhara, she chooses and tests Manas, heals his wounds, foresees disaster, and after his death secures the survival of the dynasty by spiriting the infant Semetey to safety in her father's land."
+ },
+ {
+  "id": "kyrgyz_kojojash",
+  "name": {
+   "primary": "Kojojash",
+   "alt": [
+    "Kožojaš"
+   ],
+   "transliterations": {
+    "kyrgyz": "Кожожаш"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "wider-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "hunting",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "totemic-taboo",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Daniel Prior et al., Univ. of Washington 'Silk Road Seattle', The Kyrgyz Epic Kojojash; Kyrgyz Academy of Sciences, Kožojaš (Frunze)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hunter-hero of an archaic Kyrgyz 'small epic' representing the oldest stratum of the tradition's worldview. His relentless pursuit of Sur-Echki, the supernatural grey mother-goat who guards the wild game, breaks a sacred limit between humanity and nature; his death dramatises the totemic balance he violated."
+ },
+ {
+  "id": "kyrgyz_kokotoy",
+  "name": {
+   "primary": "Kökötöy",
+   "alt": [
+    "Kukotay",
+    "Köketey"
+   ],
+   "transliterations": {
+    "kyrgyz": "Көкөтөй"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "kyrgyz_bokmurun",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "scholarly",
+      "reference": "Ch. Valikhanov, 'Smert' Kukotay-khana i ego pominki' (1856); A. T. Hatto, 'Kukotay and Bok Murun', BSOAS (1969)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Ch. Valikhanov, 'Smert' Kukotay-khana i ego pominki' (1856); A. T. Hatto, 'Kukotay and Bok Murun', BSOAS (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "An immensely rich old Kyrgyz khan whose death and lavish memorial feast give the most-recorded episode of the whole tradition its name. His deathbed instructions set in motion the funeral games at which Manas, Joloi and Konurbay first contend."
+ },
+ {
+  "id": "kyrgyz_konurbay",
+  "name": {
+   "primary": "Konurbay",
+   "alt": [
+    "Qoñurbay",
+    "Konurbai"
+   ],
+   "transliterations": {
+    "kyrgyz": "Коңурбай"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_semetey"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the Great Campaign against Beijin; Sayakbai Karalaev variant, Semetey — Semetey slays the aged Konurbay"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The principal antagonist of the trilogy: the formidable khan of Beijin, rider of the great black winged horse Algara. He leads the Chinese against Manas, helps inflict the wounds from which the hero dies, and survives into extreme old age to be hunted down and killed by Semetey — the thread of enmity binding two generations."
+ },
+ {
+  "id": "kyrgyz_koshoy",
+  "name": {
+   "primary": "Koshoy",
+   "alt": [
+    "Qoshoy",
+    "Koshoi"
+   ],
+   "transliterations": {
+    "kyrgyz": "Кошой"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "wrestling",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "elder-authority",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   },
+   {
+    "kind": "rival",
+    "personId": "kyrgyz_joloi"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_bokmurun"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto (ed.), The Memorial Feast for Kökötöy-Khan (Oxford, 1977): Koshoy's day-long wrestling match; Ch. Valikhanov, 'Smert' Kukotay-khana' (1856)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The aged khan of the Katagan and revered patriarch of the older Kyrgyz generation. Central to the Memorial Feast, where he wrestles the Kalmyk giant Joloi for a full day until Manas intervenes; the Koshoy-Korgon fortress in the Naryn region bears his name."
+ },
+ {
+  "id": "kyrgyz_manas",
+  "name": {
+   "primary": "Manas",
+   "alt": [
+    "Manas Baatyr",
+    "Er Manas"
+   ],
+   "transliterations": {
+    "kyrgyz": "Манас"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_jakyp"
+  ],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-leadership",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "tribal-unity",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_kanykey"
+   },
+   {
+    "kind": "sworn companion",
+    "personId": "kyrgyz_almambet"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_bakai"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_chubak"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_syrgak"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_ajybay"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_koshoy"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_konurbay"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_joloi"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_neskara"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. T. Hatto, 'The Birth of Manas', Asia Major 14.2 (1969), pp. 217-241; W. Radloff, Proben V (1885), the Manas cycle"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The great unifying khan and warrior-hero of the Kyrgyz and eponym of their national epic. The long-awaited only son of the herdsman Jakyp, he rallies the dispersed tribes, reclaims the Talas homeland from Kalmyk and Chinese overlords, and leads the Great Campaign against Beijin, dying of his wounds soon after — the founding act the rest of the trilogy answers to."
+ },
+ {
+  "id": "kyrgyz_neskara",
+  "name": {
+   "primary": "Neskara",
+   "alt": [
+    "Nezkara"
+   ],
+   "transliterations": {
+    "kyrgyz": "Нескара"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "raiding",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sagymbai Orozbakov variant, Manas — 'The Attack of Neskara'; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A foreign (Kalmyk/Manchu) khan whose early raid on the Kyrgyz helps galvanise Manas's unification of the tribes. He belongs to the ring of hostile rulers — with Joloi and Konurbay — whose aggression drives the epic's central conflict."
+ },
+ {
+  "id": "kyrgyz_seitek",
+  "name": {
+   "primary": "Seitek",
+   "alt": [
+    "Seytek"
+   ],
+   "transliterations": {
+    "kyrgyz": "Сейтек"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_semetey",
+   "kyrgyz_aichurok"
+  ],
+  "temporal": {
+   "era": "seitek-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "restoration-of-justice",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Seitek (Kyrgyz Academy of Sciences edn); UNESCO Representative List, 'Kyrgyz epic trilogy: Manas, Semetey, Seytek' (2013)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hero of the trilogy's closing epic. Secretly raised by Aichürök and Kanykey in concealment from the usurper Kanchoro, he comes of age to overthrow the traitor, avenge his father, and re-establish the Kyrgyz polity — the restoration of justice that completes the dynastic arc."
+ },
+ {
+  "id": "kyrgyz_semetey",
+  "name": {
+   "primary": "Semetey",
+   "alt": [
+    "Semetei"
+   ],
+   "transliterations": {
+    "kyrgyz": "Семетей"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "kyrgyz_manas",
+   "kyrgyz_kanykey"
+  ],
+  "temporal": {
+   "era": "semetey-cycle"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "restoration",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "kyrgyz_aichurok"
+   },
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_bakai"
+   },
+   {
+    "kind": "enemy",
+    "personId": "kyrgyz_konurbay"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Sayakbai Karalaev variant, Semetey (Kyrgyz Academy of Sciences edn); A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hero of the trilogy's middle epic. Raised in exile in Bukhara unaware of his lineage, he returns to Talas to reclaim his patrimony, gathers his father's surviving companions, wins the swan-maiden Aichürök, and slays the aged Konurbay to avenge Manas before falling to the treachery of his own follower Kanchoro."
+ },
+ {
+  "id": "kyrgyz_syrgak",
+  "name": {
+   "primary": "Syrgak",
+   "alt": [
+    "Sırgak"
+   ],
+   "transliterations": {
+    "kyrgyz": "Сыргак"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kyrgyz",
+  "primaryTradition": "Kyrgyz",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "scouting",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "speed",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kyrgyz_manas"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "W. Radloff, Proben V (1885), the reconnaissance of Almambet and Syrgak; A. T. Hatto, The Manas of Wilhelm Radloff (1990)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The young, swift scout among the forty companions, famed for agility and daring. Paired with Almambet on the perilous spying mission toward Beijin, he represents the youthful, fearless edge of the warband and is named among the great heroes who fall to secure the Kyrgyz victory."
  },
  {
   "id": "lakota_anog_ite",
@@ -248699,6 +250518,294 @@ const NEW_FIGURES = [
   "notes": "Slavic dawn goddess(es), daughters of Dazhbog who open and close the gates of the sky."
  },
  {
+  "id": "sogdian_adbag",
+  "name": {
+   "primary": "Adbag",
+   "alt": [
+    "Adhvagh",
+    "Adhbag"
+   ],
+   "transliterations": {
+    "sogdian": "ʾδβɣ"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cosmic-order",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "heaven",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_ahura_mazda",
+    "notes": "Adbag, 'the great god', is the Sogdian cult-form of Ahura Mazda."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka, where the Hindu Indra is rendered Adhvagh (Aδβaγ); ed. É. Benveniste (1946)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Adbag — literally 'the great god' — is the Sogdian name and cult-form of Ahura Mazda, the supreme Mazdean creator, with whom Temple I at Panjikent is associated. In the Buddhist Sogdian texts the name is used to render the highest Indic god."
+ },
+ {
+  "id": "sogdian_nana",
+  "name": {
+   "primary": "Nana",
+   "alt": [
+    "Nanai",
+    "Nanaia",
+    "Nanaya"
+   ],
+   "transliterations": {
+    "sogdian": "nny"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "celestial-order",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_nana",
+    "notes": "The same goddess (Nanaia) — the Sogdian city-patron and the Kushan dynastic sovereign."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "M. Shenkar, 'NANA', Encyclopaedia Iranica; M. Compareti, 'Nana and Tish in Sogdiana' (2017)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The pre-eminent goddess and city-patron of Sogdiana, descended from the Sumero-Akkadian Nanaya and worshipped from Bukhara to Panjikent, where Temple II was her sanctuary. In the murals she is enthroned on a lion, often four-armed and holding the sun and moon — the four-armed dragon-throne goddess of Panjikent being her local form. Her consort in Sogdiana is the rain-star god Tish (Tishtrya)."
+ },
+ {
+  "id": "sogdian_weshparkar",
+  "name": {
+   "primary": "Weshparkar",
+   "alt": [
+    "Wēšparkar",
+    "Vēšparkar"
+   ],
+   "transliterations": {
+    "sogdian": "wyšprkr"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "atmosphere",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "zoroastrian_vayu",
+    "notes": "Weshparkar continues the Avestan wind-god Vayu, in Shaiva guise."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka renders the Hindu Maheshvara (Shiva) as Wēšparkar; F. Grenet, 'Iranian Gods in Hindu Garb' (2010)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Sogdian wind- and atmosphere-god, heir of the Avestan Vayu, who in Sogdian art is clothed in the iconography of the Hindu Shiva-Maheshvara: three-headed, holding trident and thunderbolt. A striking case of an Iranian deity rendered through Indic visual form."
+ },
+ {
+  "id": "sogdian_zemat",
+  "name": {
+   "primary": "Žēmāt",
+   "alt": [
+    "Žimat",
+    "Zhemat"
+   ],
+   "transliterations": {
+    "sogdian": "žymʾt"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "grain",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "vegetation-cycle",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "mourning",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "greek_hesiod_demeter",
+    "notes": "Grenet reads the Panjikent mourning-goddess as a Sogdian counterpart of Demeter."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "F. Grenet, in 'MITHRA ii. Iconography', Encyclopaedia Iranica, on the Panjikent 'Mourning Scene'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Grenet interprets the goddess presiding over the famous 'Mourning Scene' at Panjikent Temple II as Žēmāt, a Sogdian counterpart of Demeter who laments a dying-and-returning vegetation deity — the Transoxianan reflex of the ancient Near Eastern grieving-goddess of the grain."
+ },
+ {
+  "id": "sogdian_zurvan",
+  "name": {
+   "primary": "Zurvan",
+   "alt": [
+    "Azruwa",
+    "Zruwan"
+   ],
+   "transliterations": {
+    "sogdian": "zrwʾ"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sogdian",
+  "primaryTradition": "Sogdian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "time",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "destiny",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "cosmic-primacy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sogdian Vessantara Jataka renders the Hindu Brahma as Azruwa (Zurvan); Manichaean Sogdian 'Azrua' for the Father of Greatness"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Zurvan, the personification of infinite Time and Destiny, stands at the head of the Sogdian high triad. In the Sogdian Vessantara Jataka the supreme Indic creator Brahma is rendered by his name, and in Manichaean Sogdian he lends his name to the Father of Greatness."
+ },
+ {
   "id": "songhai_cirey",
   "name": {
    "primary": "Lightning",
@@ -270031,6 +272138,167 @@ const NEW_FIGURES = [
   "notes": "Altai-Turkic creator-father dwelling in the highest heaven."
  },
  {
+  "id": "turkic_kizagan",
+  "name": {
+   "primary": "Kızagan",
+   "alt": [
+    "Kızağan",
+    "Kızagan Han"
+   ],
+   "transliterations": {
+    "altai": "Кызаган"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "turkic_kayra"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "force",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "martial-valour",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Wilhelm Radloff, Proben … Süd-Sibiriens, vol. I (Altai, 1866); A. V. Anokhin, Materialy po shamanstvu u altaitsev (1924)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Altai god of war, force and martial fury, a son of the creator Kayra Khan who resides on the ninth heaven and rides a red camel. The warlike member of the upper-world brotherhood in the Radloff/Anokhin Altai cosmogony, beside Ülgen and Mergen."
+ },
+ {
+  "id": "turkic_korkut_ata",
+  "name": {
+   "primary": "Korkut Ata",
+   "alt": [
+    "Korkyt",
+    "Dede Korkut"
+   ],
+   "transliterations": {
+    "oldturkic": "Qorqyt Ata"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "legendary"
+  },
+  "domains": [
+   {
+    "sphereId": "music",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "shamanic-wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kitab-ı Dede Korkut (Book of Dede Korkut), Dresden and Vatican manuscripts; Kazakh Korkyt-Ata tradition of the Syr Darya"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The legendary Oghuz/Kazakh shaman-bard and patron of musicians, traditionally of the Syr Darya in the 8th-9th century: inventor of the kobyz fiddle and archetypal baqsı whose songs hold death at bay. Sage-narrator framing the Book of Dede Korkut, his mausoleum stands near Kyzylorda in the Kazakh steppe."
+ },
+ {
+  "id": "turkic_mergen",
+  "name": {
+   "primary": "Mergen",
+   "alt": [
+    "Mergen Khan",
+    "Mergen Tengri"
+   ],
+   "transliterations": {
+    "altai": "Мерген"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "turkic_kayra"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "reason",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "abundance",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Wilhelm Radloff, Proben der Volkslitteratur der türkischen Stämme Süd-Sibiriens, vol. I (Altai, 1866); A. V. Anokhin, Materialy po shamanstvu u altaitsev (1924)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Altai god of wisdom, reason and unerring archery, a son of the creator Kayra Khan who holds the seventh heaven. In the south-Siberian cosmogonic genealogy recorded by Radloff and Anokhin he stands beside his brothers Ülgen and Kızagan as the intellect of the upper world."
+ },
+ {
   "id": "turkic_od",
   "name": {
    "primary": "Od",
@@ -270574,6 +272842,113 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Mother-goddess of birth; only goddess named on the Orkhon steles."
+ },
+ {
+  "id": "turkic_yayik",
+  "name": {
+   "primary": "Yayık",
+   "alt": [
+    "Jayık",
+    "Yayuçı"
+   ],
+   "transliterations": {
+    "altai": "Дьайык"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "intercession",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "protection",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "flood-waters",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev (1924): Yayık as Ülgen's celestial messenger in the white-horse sacrifice"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A celestial intermediary spirit of the Altai sacrificial cosmology: the messenger of the creator Ülgen who relays the white-horse sacrifice up to heaven and guards humankind against flood and evil. Central to the shaman's ecstatic heaven-journey in the south-Siberian ritual recorded by Anokhin."
+ },
+ {
+  "id": "turkic_yer_sub",
+  "name": {
+   "primary": "Yer-Sub",
+   "alt": [
+    "Yer-Su",
+    "Iduk Yer-Sub",
+    "Jer-Suu"
+   ],
+   "transliterations": {
+    "oldturkic": "Yer Sub"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "homeland",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "victory",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "epigraphic",
+      "reference": "Bilge Kagan inscription, East face: 'üze Türük Teŋrisi ıduq Yer-Subı'; Tonyukuk stele; ed. Talât Tekin, A Grammar of Orkhon Turkic (1968)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The sacred 'Holy Earth-Water' (ıduq Yer-Sub) of the Orkhon inscriptions, ranked immediately below Tengri among the powers who ordain Turkic victory and survival. A composite earth-and-water numen — at once the single Holy Land-and-Water and the plurality of local mountain, spring and grove spirits — surviving in the Kazakh and Kyrgyz Jer-Suu and the Altai cult of the land-and-water masters."
  },
  {
   "id": "udmurt_gudyri_mumy",
@@ -278412,6 +280787,116 @@ const NEW_FIGURES = [
   "notes": "Yakut god of light, depicted as an eagle on the world-tree."
  },
  {
+  "id": "yakut_ayisit",
+  "name": {
+   "primary": "Ayısıt",
+   "alt": [
+    "Ajysyt",
+    "Ayıhıt",
+    "Ajyyhyt"
+   ],
+   "transliterations": {
+    "sakha": "Айыыһыт"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yakut",
+  "primaryTradition": "Yakut",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "birth-souls",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "protection-of-mothers",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Uno Harva, Die religiösen Vorstellungen der altaischen Völker (FFC 125, 1938), on the Yakut birth-goddess Ajysyt"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Sakha goddess of childbirth, who descends to bring the soul (kut) to the newborn and to protect mothers in labour and the increase of the herds. The Lena-basin counterpart of the steppe mother-goddess Umay and the feminine birth-power of the northern Aiyy pantheon."
+ },
+ {
+  "id": "yakut_uluu_toyon",
+  "name": {
+   "primary": "Uluu Toyon",
+   "alt": [
+    "Uluu Tojon"
+   ],
+   "transliterations": {
+    "sakha": "Улуу Тойон"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yakut",
+  "primaryTradition": "Yakut",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "thunder",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "the-soul",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "rough-justice",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "G. V. Ksenofontov, Uraangkhai-sakhalar (1937) and Legendy i rasskazy o shamanakh (1930); Uno Harva, Die religiösen Vorstellungen der altaischen Völker (1938)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The powerful and dangerous thunder-and-fire lord of the Sakha upper world, giver of fire and of a human soul, master of the abaasy spirits and patron of the 'black' shamans. A figure of rough justice, distinct from the serene creator Ürüng Aiyy Toyon — the storm-edged counterweight at the head of the Yakut cosmos."
+ },
+ {
   "id": "yakut_uruung_aiyy_toyon",
   "name": {
    "primary": "Ürüng Aiyy Toyon",
@@ -282447,7 +284932,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Supreme uncreated creator god of Zoroastrianism, the Wise Lord and source of all good."
+  "notes": "Supreme uncreated creator god of Zoroastrianism, the Wise Lord and source of all good.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "sogdian_adbag"
+   }
+  ]
  },
  {
   "id": "zoroastrian_ameretat",
@@ -283170,6 +285661,10 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "zoroastrian_vohu_manah",
     "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_atsho"
    }
   ]
  },
@@ -284403,7 +286898,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata of covenants, light, and oaths; all-seeing judge whom Ahura Mazda set as worthy of worship as himself."
+  "notes": "Yazata of covenants, light, and oaths; all-seeing judge whom Ahura Mazda set as worthy of worship as himself.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_miiro"
+   }
+  ]
  },
  {
   "id": "zoroastrian_rashnu",
@@ -285888,7 +288389,17 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata personifying the wind and the intermediate atmosphere; an ambivalent power with both beneficent and harmful aspects."
+  "notes": "Yazata personifying the wind and the intermediate atmosphere; an ambivalent power with both beneficent and harmful aspects.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_oado"
+   },
+   {
+    "kind": "equated-with",
+    "personId": "sogdian_weshparkar"
+   }
+  ]
  },
  {
   "id": "zoroastrian_verethragna",
@@ -286163,7 +288674,13 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata of victory and war who appears in ten incarnate forms; the smasher of resistance and giver of triumph."
+  "notes": "Yazata of victory and war who appears in ten incarnate forms; the smasher of resistance and giver of triumph.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_orlagno"
+   }
+  ]
  },
  {
   "id": "zoroastrian_vohu_manah",
@@ -286311,6 +288828,10 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "zoroastrian_spenta_mainyu",
     "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "bactrian_manaobago"
    }
   ]
  },

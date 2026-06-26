@@ -148,7 +148,7 @@ function loadAtlas() {
 function eraStart(tradition, era) {
   const d = window.__PR?.ERA_DATES?.[tradition]?.[era];
   if (!d) return null;
-  return d.textualStart ?? d.mythicStart ?? null;
+  return d.mythicStart ?? d.textualStart ?? null;
 }
 
 // Era keys are hyphen-cased slugs: `mu-allaqat-poetic`, `late-bronze-age`,
@@ -175,8 +175,8 @@ function getEntryDates(entry) {
 
 function entryAnchorYear(entry) {
   const d = getEntryDates(entry);
-  if (d.textualStart != null) return d.textualStart;
   if (d.mythicStart != null)  return d.mythicStart;
+  if (d.textualStart != null) return d.textualStart;
   const t = entry?.temporal?.era;
   return eraStart(entry?.tradition, t);
 }
@@ -188,11 +188,11 @@ function entryAnchorYear(entry) {
 // anchor year the sort uses into coarse, monotonic time bands keeps each
 // header contiguous and matches the chronological axis the user is reading.
 const ERA_BANDS = [
-  { max: -3000, label: 'Before 3000 BCE' },
+  { max: -3001, label: 'Before 3000 BCE' },
   { max: -2000, label: '3000–2000 BCE' },
   { max: -1000, label: '2000–1000 BCE' },
   { max:  -500, label: '1000–500 BCE' },
-  { max:     0, label: '500–1 BCE' },
+  { max:    -1, label: '500–1 BCE' },
   { max:   500, label: '1–500 CE' },
   { max:  1000, label: '500–1000 CE' },
   { max:  1500, label: '1000–1500 CE' },
@@ -254,8 +254,8 @@ function parsePeriod(text, tradition) {
     const lo = Math.min(parseInt(m[1], 10), parseInt(m[2], 10));
     const hi = Math.max(parseInt(m[1], 10), parseInt(m[2], 10));
     const isBCE = m[3].startsWith('b');
-    if (isBCE) return { start: -hi * 100, end: -(lo - 1) * 100 };
-    return { start: (lo - 1) * 100, end: hi * 100 };
+    if (isBCE) return { start: -hi * 100, end: -(lo - 1) * 100 - 1 };
+    return { start: (lo - 1) * 100 + 1, end: hi * 100 };
   }
 
   // Qualified century: "early 19th c.", "mid 19th c.", "late 19th c.".
@@ -267,8 +267,8 @@ function parsePeriod(text, tradition) {
     const q = m[1];
     const c = parseInt(m[2], 10);
     const isBCE = (m[3] || '').startsWith('b');
-    const base = isBCE ? -(c) * 100 : (c - 1) * 100;
-    const top  = isBCE ? -(c - 1) * 100 : c * 100;
+    const base = isBCE ? -(c) * 100 : (c - 1) * 100 + 1;
+    const top  = isBCE ? -(c - 1) * 100 - 1 : c * 100;
     if (q === 'early') return { start: base,      end: base + 33 };
     if (q === 'mid')   return { start: base + 33, end: base + 66 };
     if (q === 'late' || q === 'peak') return { start: base + 66, end: top };
@@ -279,8 +279,8 @@ function parsePeriod(text, tradition) {
   if (m) {
     const c = parseInt(m[1], 10);
     const isBCE = m[2].startsWith('b');
-    if (isBCE) return { start: -c * 100, end: -(c - 1) * 100 };
-    return { start: (c - 1) * 100, end: c * 100 };
+    if (isBCE) return { start: -c * 100, end: -(c - 1) * 100 - 1 };
+    return { start: (c - 1) * 100 + 1, end: c * 100 };
   }
 
   // Plain BCE/CE single year: "1184 BCE", "c. 800 CE", "~1500 BCE", "1851 CE"
@@ -392,6 +392,40 @@ function displayName(entry) {
   return entry.name?.primary || entry.name?.canonical || entry.id || '';
 }
 
+// Normalize a display name for consistent alphabetical sort and grouping.
+// Two classes of mismatch between localeCompare and our group-key extractor:
+//
+// 1. Ligatures that NFD doesn't decompose: Æ/æ, Þ/þ, Ð/ð, Ø/ø, Ł/ł, Œ/œ,
+//    ẞ/ß. Without explicit mapping, "Ægir" sorts in the A section (localeCompare
+//    treats Æ≈AE) but the group key strips the non-[A-Za-z] Æ and reads 'g' →
+//    group 'G', producing a phantom second G header.
+//
+// 2. Leading modifier-letter prefixes used in Semitic transliterations: ʾ
+//    (U+02BE, aleph) and ʿ (U+02BF, ayin). These are base characters (not
+//    combining marks), so they survive NFD, and localeCompare places them after
+//    Z. The group key strips them and reads the next letter (e.g. 'A' from
+//    ʾAshtart), while the sort places ʾA entries after Z — producing duplicate
+//    'A', 'I', 'O' headers scattered at the tail of the A→Z list.
+function nameForAlphaSort(entry) {
+  const raw = displayName(entry) || '';
+  const normalized = raw
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[Æ]/g, 'AE').replace(/[æ]/g, 'ae')
+    .replace(/[Þþ]/g, 'Th')
+    .replace(/[Ðð]/g, 'Th')
+    .replace(/[Øø]/g, 'O')
+    .replace(/[Łł]/g, 'L')
+    .replace(/[Œœ]/g, 'OE')
+    .replace(/[ẞß]/g, 'SS')
+    .replace(/^[^A-Za-z]+/, '');
+  // If the whole name is non-Latin (Arabic, CJK, Devanagari, etc.) the strip
+  // consumes the entire string and leaves ''. Fall back to the raw display name
+  // so these entries sort after Z by their own script's locale order — placing
+  // the '#' catch-all group at the TAIL of A→Z rather than the head.
+  return normalized || raw;
+}
+
 function altNames(entry) {
   const n = entry?.name;
   if (!n || typeof n === 'string') return [];
@@ -500,14 +534,16 @@ function useData() {
 // ── Hook: useFilters ─────────────────────────────────────────────────────
 
 const SORTS = {
-  alpha:     { label: 'Alphabetical', short: 'A→Z',       cmp: (a, b) => displayName(a).localeCompare(displayName(b)) },
+  alpha:     { label: 'Alphabetical', short: 'A→Z',       cmp: (a, b) => nameForAlphaSort(a).localeCompare(nameForAlphaSort(b)) || displayName(a).localeCompare(displayName(b)) },
   tradition: { label: 'Tradition',    short: 'Tradition', cmp: (a, b) => (a.tradition || '').localeCompare(b.tradition || '') || displayName(a).localeCompare(displayName(b)) },
   era:       { label: 'Era (oldest)', short: 'Era',       cmp: (a, b) => {
     const ya = entryAnchorYear(a); const yb = entryAnchorYear(b);
-    if (ya == null && yb == null) return displayName(a).localeCompare(displayName(b));
-    if (ya == null) return 1;
-    if (yb == null) return -1;
-    return ya - yb;
+    const yaNull = ya == null || !isFinite(ya);
+    const ybNull = yb == null || !isFinite(yb);
+    if (yaNull && ybNull) return displayName(a).localeCompare(displayName(b));
+    if (yaNull) return 1;
+    if (ybNull) return -1;
+    return (ya - yb) || displayName(a).localeCompare(displayName(b));
   }},
   type:      { label: 'Type',         short: 'Type',      cmp: (a, b) => (TYPE_TIER[a.type]?.order ?? 99) - (TYPE_TIER[b.type]?.order ?? 99) || displayName(a).localeCompare(displayName(b)) },
 };
@@ -564,7 +600,7 @@ function useFilters(people) {
     const out = people.filter(p => {
       if (types.size && !types.has(p.type)) return false;
       if (origin === 'canon'    && p.origin !== 'canon') return false;
-      if (origin === 'original' && p.origin === 'canon') return false;
+      if (origin === 'original' && p.origin !== 'original') return false;
       if (traditions.size && !traditions.has(p.tradition)) return false;
       if (q) {
         const hay = searchHaystacks.get(p.id);
@@ -594,7 +630,7 @@ function useFilters(people) {
 
   const reset = useCallback(() => {
     setQuery(''); setTypes(new Set()); setOrigin('both');
-    setTraditions(new Set()); setSort('alpha');
+    setTraditions(new Set());
   }, []);
 
   return {
@@ -615,10 +651,12 @@ function useSelection(filtered) {
   const [selectedId, setSelectedId] = useState(null);
   const [cursorIdx, setCursorIdx] = useState(0);
 
-  // Keep cursor in bounds when filter changes
-  useEffect(() => {
-    if (cursorIdx >= filtered.length) setCursorIdx(Math.max(0, filtered.length - 1));
-  }, [filtered.length, cursorIdx]);
+  // Reset cursor to 0 whenever the filtered list changes reference (any filter
+  // or sort change). This also handles the out-of-bounds case: 0 is always a
+  // valid index for a non-empty list, and for an empty list no row renders so
+  // the stale index is harmless. A second bounds-clamp effect is not needed
+  // and would race with this one in React 18 batching (last setState wins).
+  useEffect(() => { setCursorIdx(0); }, [filtered]);
 
   const moveCursor = useCallback((delta) => {
     setCursorIdx(i => Math.max(0, Math.min(filtered.length - 1, i + delta)));
@@ -744,9 +782,10 @@ function buildPowerRegistry() {
   }
   for (const id of Object.keys(reg)) {
     const rec = reg[id];
-    rec.holderCount = rec.holders.length;
+    const holderIds = new Set(rec.holders.map(h => h.personId));
+    rec.holderCount = holderIds.size;
     rec.inheritorCount = rec.inheritors.length;
-    rec.figureCount = rec.holderCount;
+    rec.figureCount = holderIds.size + rec.inheritors.filter(h => !holderIds.has(h.personId)).length;
     rec.sources = dedupeSources(rec.sources);
     let best = null, bestN = -1;
     for (const k of Object.keys(rec.heritCounts)) if (rec.heritCounts[k] > bestN) { best = k; bestN = rec.heritCounts[k]; }
@@ -766,8 +805,10 @@ function buildDomainRegistry() {
   }));
   for (const pid of Object.keys(people)) {
     for (const d of (people[pid].domains || [])) {
-      if (!d || !d.sphereId) continue;
-      const rec = ensure(d.sphereId);
+      if (!d) continue;
+      const sid = d.sphereId || d.id;
+      if (!sid) continue;
+      const rec = ensure(sid);
       rec.holders.push({
         personId: pid, contextTag: d.contextTag || null,
         sources: d.sources || [], notes: d.notes || null, term: d.term || null,
@@ -780,7 +821,7 @@ function buildDomainRegistry() {
   for (const id of Object.keys(reg)) {
     const rec = reg[id];
     rec.holderCount = rec.holders.length;
-    rec.figureCount = rec.holderCount;
+    rec.figureCount = new Set(rec.holders.map(h => h.personId)).size;
     rec.sources = dedupeSources(rec.sources);
   }
   _domainReg = reg;
@@ -792,7 +833,7 @@ function allPowers() {
   try {
     return Object.values(buildPowerRegistry()).sort((a, b) =>
       (b.figureCount - a.figureCount) ||
-      (b.inheritorCount - a.inheritorCount) ||
+      (b.holderCount - a.holderCount) ||
       String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
   } catch (_) { return []; }
 }
@@ -863,7 +904,7 @@ function buildFacetOptions(list, bucketOf, labelOf, rank) {
 Object.assign(window, {
   TYPE_TIER, TYPE_ORDER, TierIcon,
   useData, useFilters, useSelection,
-  displayName, altNames, transliterations, pressable,
+  displayName, nameForAlphaSort, altNames, transliterations, pressable,
   formatEra,
   getEntryDates,
   entryAnchorYear, eraBandForYear,

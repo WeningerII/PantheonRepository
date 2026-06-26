@@ -237,7 +237,12 @@ function useForceSim(graph, width, height, positionsRef, nodeElRefs, linkElRefs)
   // Create-or-update the simulation. Uses the same instance across rebuilds
   // so positions/velocities survive incremental data changes.
   __gEff(() => {
-    if (!graph.nodes.length || !window.d3 || !width || !height) return;
+    if (!graph.nodes.length || !window.d3 || !width || !height) {
+      // Stop any running simulation so it doesn't keep ticking on stale nodes
+      // (~2 s of wasted rAF callbacks) while the empty-state placeholder shows.
+      simRef.current?.stop();
+      return;
+    }
     const d3 = window.d3;
     const cx = width / 2, cy = height / 2;
 
@@ -606,19 +611,24 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
       if (!adj.has(a)) adj.set(a, []);
       adj.get(a).push({ to: b, kind, family });
     };
+    // Gate adjacency on the rail-filtered `people` set, not the full byId map.
+    // Using byId.has() would allow filtered-out figures (e.g., a non-Greek deity
+    // when the tradition rail is set to 'Greek') to appear as BFS intermediaries
+    // — visible in the path card but absent from the SVG graph nodes.
+    const inView = new Set(people.map(p => p.id));
     for (const p of people) {
       for (const pid of (p.parentIds || [])) {
-        if (byId.has(pid)) { add(p.id, pid, 'parent', 'Lineage'); add(pid, p.id, 'parent', 'Lineage'); }
+        if (inView.has(pid)) { add(p.id, pid, 'parent', 'Lineage'); add(pid, p.id, 'parent', 'Lineage'); }
       }
       for (const r of (p.relations || [])) {
-        if (!r.personId || !byId.has(r.personId)) continue;
+        if (!r.personId || !inView.has(r.personId)) continue;
         const fam = window.relationFamily(r.kind);
         add(p.id, r.personId, r.kind, fam);
         add(r.personId, p.id, r.kind, fam);
       }
     }
     return adj;
-  }, [people, byId, pathMode]);
+  }, [people, pathMode]);
 
   // BFS shortest path. Cap depth at 8 hops — the diameter of any reasonable
   // mythological graph is well below this; beyond it the network is so
@@ -661,6 +671,7 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
 
   const pathNodeSet = __gMemo(() => {
     if (!pathResult?.nodes?.length) return null;
+    if (!pathResult?.edges?.length) return null; // self-path: no dimming
     return new Set(pathResult.nodes);
   }, [pathResult]);
 
@@ -670,7 +681,7 @@ function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
     pathResult.edges.forEach(e => {
       const lo = e.from < e.to ? e.from : e.to;
       const hi = e.from < e.to ? e.to : e.from;
-      s.add(lo + '|' + hi);
+      s.add(lo + '|' + hi + '|' + e.kind);
     });
     return s;
   }, [pathResult]);
@@ -697,9 +708,11 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
 
   // Path mode forces the full graph view so endpoints + intermediate nodes
   // always exist in the rendered set, no matter what relation family the
-  // user was browsing when they toggled path on.
+  // user was browsing when they toggled path on. Also clear focusId so the
+  // 2-hop subgraph restriction doesn't hide intermediate path nodes.
   __gEff(() => {
     if (pathMode && mode !== 'all') setMode('all');
+    if (pathMode && focusId) setFocusId(null);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathMode]);
 
@@ -732,9 +745,10 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     [focusId, scopedPeople],
   );
 
+  const effectiveFocusId = focusInScope ? focusId : null;
   const graph = __gMemo(
-    () => buildGraph(scopedPeople, byId, mode, focusInScope ? focusId : null),
-    [scopedPeople, byId, mode, focusId, focusInScope],
+    () => buildGraph(scopedPeople, byId, mode, effectiveFocusId),
+    [scopedPeople, byId, mode, effectiveFocusId],
   );
   // Position memory survives graph rebuilds so dragging the year slider
   // doesn't re-explode the layout every frame. See useForceSim above.
@@ -750,7 +764,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
   useForceSim(graph, size.w, size.h, positionsRef, nodeElRefs, linkElRefs);
   const zoomRef = useZoomPan(svgRef, gRef, setZoomK, [graph, size.w, size.h]);
 
-  const { pathResult, pathNodeSet, pathEdgeSet } = usePathFind(people, byId, pathMode, pathStart, pathEnd);
+  const { pathResult, pathNodeSet, pathEdgeSet } = usePathFind(scopedPeople, byId, pathMode, pathStart, pathEnd);
 
   // Active edge families (for the legend — only show what's actually here).
   const activeFamilies = __gMemo(() => {
@@ -760,6 +774,11 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
   }, [graph.links]);
 
   const focused = focusId ? byId.get(focusId) : null;
+
+  // When the graph changes (mode/year/filter rebuild), any node that was
+  // hovered may no longer exist. Clear hover state to avoid dimming the
+  // entire new graph until the mouse moves.
+  __gEff(() => { setHoverNode(null); setHoverPos(null); setHoverEdge(null); }, [graph]);
 
   // Hovering a node temporarily highlights its 1-hop (without changing
   // focus). Useful for scrubbing through a dense region.
@@ -790,6 +809,11 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     // Path mode — a path is rendered or being assembled.
     if (pathMode) {
       if (pathNodeSet) return pathNodeSet.has(n.id) ? 1 : 0.10;
+      if (pathResult?.unreachable) {
+        // No route within BFS depth — endpoints still bright, rest clearly dead
+        if (n.id === pathStart || n.id === pathEnd) return 1;
+        return 0.15;
+      }
       // No path computed yet — just dim everything except endpoints
       if (n.id === pathStart || n.id === pathEnd) return 1;
       if (hoverNode === n.id) return 1;
@@ -797,12 +821,18 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     }
     if (hoverNode) return (nodeNeighbors && nodeNeighbors.has(n.id)) ? 1 : 0.20;
     if (!focusId)  return 1;
-    if (n.depth === 0) return 1;
-    if (n.depth === 1) return 0.95;
-    if (n.depth === 2) return 0.42;
+    // focusId is set but the focus node is outside the current scope (e.g.
+    // tradition rail filtered it out). buildGraph received focusId=null so all
+    // nodes have n.depth = null. Treat as unfocused — show at full opacity and
+    // let the "focus filtered out" card explain the situation.
+    const depth = depthById.get(n.id);
+    if (depth == null) return 1;
+    if (depth === 0) return 1;
+    if (depth === 1) return 0.95;
+    if (depth === 2) return 0.42;
     return 0.10;
   };
-  const edgeOpacity = (sId, tId, family) => {
+  const edgeOpacity = (sId, tId, family, kind) => {
     // Hidden by legend family toggle or either endpoint's tier toggle
     if (hiddenFamilies.has(family)) return 0;
     const sNode = byId.get(sId);
@@ -813,15 +843,20 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
       if (pathEdgeSet) {
         const lo = sId < tId ? sId : tId;
         const hi = sId < tId ? tId : sId;
-        return pathEdgeSet.has(lo + '|' + hi) ? 1 : 0.05;
+        return pathEdgeSet.has(lo + '|' + hi + '|' + kind) ? 1 : 0.05;
       }
+      if (pathResult?.unreachable) return 0.05;
+      // No path assembled yet — honour hover so incident edges brighten with node
+      if (hoverNode && (sId === hoverNode || tId === hoverNode)) return 0.55;
       return 0.07;
     }
     if (hoverNode) return (sId === hoverNode || tId === hoverNode) ? 1 : 0.10;
     if (!focusId)  return 1;
-    const sd = depthById.get(sId) ?? 99;
-    const td = depthById.get(tId) ?? 99;
-    const min = Math.min(sd, td);
+    const sd = depthById.get(sId);
+    const td = depthById.get(tId);
+    // focusId set but out of scope: all depths null; render edges at full opacity
+    if (sd == null && td == null) return 1;
+    const min = Math.min(sd ?? 99, td ?? 99);
     if (min === 0) return 1;
     if (min === 1) return 0.55;
     return 0.10;
@@ -829,7 +864,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
 
   // Label policy
   const labelMode = (() => {
-    if (focusId) return 'focus-and-1hop';
+    if (focusId && focusInScope) return 'focus-and-1hop';
     if (graph.nodes.length <= 60) return 'all';
     if (zoomK >= 1.6) return 'all';
     return 'top-degree';                       // top quartile by degree
@@ -837,13 +872,13 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
   const labelDegreeThreshold = __gMemo(() => {
     if (labelMode !== 'top-degree') return -1;
     const degs = graph.nodes.map(n => n.degree).sort((a, b) => b - a);
-    return degs[Math.min(degs.length - 1, Math.floor(degs.length * 0.25))] || 0;
+    return degs[Math.ceil(degs.length * 0.25) - 1] || 0;
   }, [labelMode, graph.nodes]);
   const shouldShowLabel = (n) => {
     if (n.id === hoverNode) return true;
     if (n.id === focusId) return true;
     if (labelMode === 'all') return true;
-    if (labelMode === 'focus-and-1hop') return n.depth != null && n.depth <= 1;
+    if (labelMode === 'focus-and-1hop') { const d = depthById.get(n.id); return d != null && d <= 1; }
     if (labelMode === 'top-degree') return n.degree >= labelDegreeThreshold;
     return false;
   };
@@ -944,7 +979,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
         <div className="graph-path-bar">
           <span className="graph-path-step">Path:</span>
           <button
-            className={'graph-path-slot ' + (pathStart ? 'set' : 'empty') + (pathStart && !pathEnd ? ' active' : '')}
+            className={'graph-path-slot ' + (pathStart ? 'set' : 'empty') + (!pathStart || pathEnd ? ' active' : '')}
             onClick={() => setPathStart(null)}
           >
             <span className="slot-label">From</span>
@@ -975,6 +1010,9 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
           <div className="graph-path-status">
             {pathResult?.unreachable && (
               <span className="graph-path-unreachable">no path within 8 hops</span>
+            )}
+            {pathResult && !pathResult.unreachable && pathResult.nodes.length === 1 && (
+              <span className="graph-path-unreachable">same node — pick a different destination</span>
             )}
             {pathResult && !pathResult.unreachable && pathResult.edges.length > 0 && (
               <span className="graph-path-length">
@@ -1007,9 +1045,9 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
                 const tx = typeof l.target === 'object' ? l.target.x : 0;
                 const ty = typeof l.target === 'object' ? l.target.y : 0;
                 const style = EDGE_STYLE[l.family] || EDGE_STYLE.Other;
-                const op = edgeOpacity(sId, tId, l.family);
+                const op = edgeOpacity(sId, tId, l.family, l.kind);
                 const inPath = pathEdgeSet && pathEdgeSet.has(
-                  (sId < tId ? sId : tId) + '|' + (sId < tId ? tId : sId)
+                  (sId < tId ? sId : tId) + '|' + (sId < tId ? tId : sId) + '|' + l.kind
                 );
                 return (
                   <line

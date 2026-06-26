@@ -19,7 +19,7 @@ function domGroupKey(name) {
 }
 
 function domainBadge(d) {
-  if (d.holderCount > 1) return { label: `${d.holderCount} figures`, cls: 'domain-badge-multi' };
+  if (d.figureCount > 1) return { label: `${d.figureCount} figures`, cls: 'domain-badge-multi' };
   return null;
 }
 
@@ -40,11 +40,11 @@ function domainCtxBucket(raw) {
   const s = String(raw == null ? '' : raw).toLowerCase().trim();
   if (!s) return 'unspecified';
   if (/post-?mortem|posthumous|apotheos|after.?death|final-phase|\bdeath\b/.test(s)) return 'post-mortem';
+  if (/lifelong/.test(s)) return 'lifelong';
   if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
   if (/genealog|lineage|foundation|founder|dynast/.test(s)) return 'genealogical';
   if (/festival|seasonal|cyclic|calendr|harvest/.test(s)) return 'festival';
-  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|position/.test(s)) return 'narrative';
-  if (/lifelong/.test(s)) return 'lifelong';
+  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|\bposition\b/.test(s)) return 'narrative';
   return 'other';
 }
 function domainCtxBuckets(d) {
@@ -95,7 +95,7 @@ function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisib
     onVisibleOrder(ids);
   }, [groups, onVisibleOrder]);
 
-  const shared = __dmMemo(() => domains.filter((d) => d.holderCount > 1).length, [domains]);
+  const shared = __dmMemo(() => domains.filter((d) => d.figureCount > 1).length, [domains]);
   const toggleCtx = (v) => setCtx((prev) => {
     const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n;
   });
@@ -175,9 +175,10 @@ function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisib
 function DomainGovernors({ holders, byId, onOpenFigure }) {
   const inReg = (holders || []).filter((h) => byId.get(h.personId));
   if (!inReg.length) return null;
+  const uniqueFigures = new Set(inReg.map(h => h.personId)).size;
   return (
     <div className="section section-domain-govs">
-      <h2>Governed by <span className="count">{inReg.length}</span></h2>
+      <h2>Governed by <span className="count">{uniqueFigures}</span></h2>
       <div className="domain-govs">
         {inReg.map((h, i) => {
           const p = byId.get(h.personId);
@@ -218,7 +219,7 @@ function DomainSources({ sources }) {
 }
 
 // ── Domain detail slide-over ─────────────────────────────────────────────────
-function DomainDetail({ domain, byId, onClose, onPrev, onNext, onOpenFigure }) {
+function DomainDetail({ domain, byId, onClose, onPrev, onNext, canPrev, canNext, onOpenFigure }) {
   const [local, setLocal] = __dmState(domain || null);
   const [closing, setClosing] = __dmState(false);
   const panelRef = __dmRef(null);
@@ -272,8 +273,8 @@ function DomainDetail({ domain, byId, onClose, onPrev, onNext, onOpenFigure }) {
       >
         <div className="detail-bar">
           <div className="nav">
-            <button className="btn btn-ghost btn-sm" onClick={onPrev} title="Previous (k)">↑ Prev</button>
-            <button className="btn btn-ghost btn-sm" onClick={onNext} title="Next (j)">↓ Next</button>
+            <button className="btn btn-ghost btn-sm" onClick={onPrev} disabled={canPrev === false} title="Previous (k)">↑ Prev</button>
+            <button className="btn btn-ghost btn-sm" onClick={onNext} disabled={canNext === false} title="Next (j)">↓ Next</button>
           </div>
           <div className="spacer" />
           <button className="close" onClick={onClose} title="Close (esc)" aria-label="Close">×</button>
@@ -283,7 +284,7 @@ function DomainDetail({ domain, byId, onClose, onPrev, onNext, onOpenFigure }) {
           <div className="detail-header">
             <div className="eyebrow">
               <span className="eyebrow-tier">Domain</span>
-              {d.holderCount > 1 && <span>{d.holderCount} figures</span>}
+              {d.figureCount > 1 && <span>{d.figureCount} figures</span>}
             </div>
             <h1>{d.displayName}</h1>
             {d.term && d.term.value && (

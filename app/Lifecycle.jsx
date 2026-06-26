@@ -217,12 +217,12 @@ function StageNode({ node, hover, onHover, onLeave }) {
   const fill = TS_FILL[ts] || '#5A5550';
   const glyph = TS_GLYPH[ts] || '?';
   const dead = isDeadStatus(node.stage.vitalStatus);
-  const isHover = hover === node;
+  const isHover = hover === node.originalIndex;
   return (
     <g
       transform={`translate(${node.x}, ${ROW_H / 2})`}
       style={{ cursor: 'pointer' }}
-      onMouseEnter={() => onHover(node)}
+      onMouseEnter={() => onHover(node.originalIndex)}
       onMouseLeave={onLeave}
     >
       {isHover && (
@@ -251,8 +251,13 @@ function LifecycleTimeline({ lc, tradition }) {
   const containerRef = __lcRef(null);
   const [width, setWidth] = __lcState(640);
   const [hover, setHover] = __lcState(null);
+  // Clear stale hover card when navigating to a different entry — Detail does
+  // not remount this component, so without this the previous entry's stage card
+  // stays visible below the new timeline until the user mouses over a node.
+  __lcEff(() => { setHover(null); }, [lc]);
 
   const plot = __lcMemo(() => buildPlot(lc, tradition, width), [lc, tradition, width]);
+  const hoverNode = (hover != null && plot.nodes) ? plot.nodes.find(n => n.originalIndex === hover) : null;
 
   // Re-run when the mode flips: a session whose FIRST entry renders the
   // fallback (no container div) must still attach the observer when a later
@@ -280,13 +285,21 @@ function LifecycleTimeline({ lc, tradition }) {
     const b = plot.nodes[i];
     segments.push({
       x1: a.x, x2: b.x, y: ROW_H / 2,
-      dashed: isDeadStatus(a.stage.vitalStatus),
+      dashed: isDeadStatus(b.stage.vitalStatus),
     });
   }
 
   // Decide which stage labels to anchor below vs above to avoid collision.
-  // Stages with x close to their neighbor alternate vertical anchor.
-  const labelSide = plot.nodes.map((_, i) => i % 2 === 0 ? 'above' : 'below');
+  // Sort by x position before assigning sides — nodes in the same era are
+  // visually adjacent, but their originalIndex values may be non-consecutive
+  // (interleaved with stages from other eras), so i%2 on the originalIndex-sorted
+  // array can assign the same side to two fanned nodes in the same column.
+  const labelSide = (() => {
+    const byX = plot.nodes.map((n, i) => ({ i, x: n.x })).sort((a, b) => a.x - b.x);
+    const sides = new Array(plot.nodes.length);
+    byX.forEach(({ i }, rank) => { sides[i] = rank % 2 === 0 ? 'above' : 'below'; });
+    return sides;
+  })();
 
   // Build a legend strip containing only the type-statuses that actually
   // appear in this entry's lifecycle. Without it, the glyph alphabet
@@ -421,7 +434,7 @@ function LifecycleTimeline({ lc, tradition }) {
               <span className="lifecycle-legend-label">{nameForTypeStatus(ts)}</span>
             </span>
           ))}
-          <span className="lifecycle-legend-note">dashed = deceased</span>
+          <span className="lifecycle-legend-note">dashed = dead / deceased</span>
           {plot.omitted > 0 && (
             <span className="lifecycle-legend-note">
               +{plot.omitted} stage{plot.omitted === 1 ? '' : 's'} in undated eras not plotted
@@ -430,24 +443,24 @@ function LifecycleTimeline({ lc, tradition }) {
         </div>
       )}
 
-      {hover && (
+      {hoverNode && (
         <div className="lifecycle-card">
           <div className="lifecycle-card-eyebrow">
-            <span className="lifecycle-card-chip" style={{ background: TS_FILL[hover.stage.typeStatus] || '#5A5550' }}>
-              {TS_GLYPH[hover.stage.typeStatus] || '?'}
+            <span className="lifecycle-card-chip" style={{ background: TS_FILL[hoverNode.stage.typeStatus] || '#5A5550' }}>
+              {TS_GLYPH[hoverNode.stage.typeStatus] || '?'}
             </span>
-            <span>{nameForTypeStatus(hover.stage.typeStatus)}</span>
-            {hover.stage.vitalStatus && (
+            <span>{nameForTypeStatus(hoverNode.stage.typeStatus)}</span>
+            {hoverNode.stage.vitalStatus && (
               <>
                 <span className="lifecycle-card-dot" />
-                <span>{hover.stage.vitalStatus}</span>
+                <span>{hoverNode.stage.vitalStatus}</span>
               </>
             )}
             <span className="lifecycle-card-dot" />
-            <span>{hover.stage.era.replace(/-/g, ' ')}</span>
+            <span>{hoverNode.stage.era.replace(/-/g, ' ')}</span>
           </div>
-          {hover.stage.notes && (
-            <p className="lifecycle-card-notes">{hover.stage.notes}</p>
+          {hoverNode.stage.notes && (
+            <p className="lifecycle-card-notes">{hoverNode.stage.notes}</p>
           )}
         </div>
       )}

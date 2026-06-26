@@ -1,0 +1,122 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Yakut (Sakha additions)
+Author: figure-authoring researcher
+Date: 2026-06-26
+
+PURPOSE
+Extends the existing Yakut (Sakha) tradition with two genuinely-new figures of the Lena-basin pantheon: the birth-goddess Ayısıt (the northern counterpart of Umay) and the dangerous thunder-and-fire lord Uluu Toyon, distinct from the already-registered Ürüng Aiyy Toyon, Ai Toyon and Abaasy.
+
+```json
+[
+ {
+  "id": "yakut_ayisit",
+  "name": {
+   "primary": "Ayısıt",
+   "alt": [
+    "Ajysyt",
+    "Ayıhıt",
+    "Ajyyhyt"
+   ],
+   "transliterations": {
+    "sakha": "Айыыһыт"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yakut",
+  "primaryTradition": "Yakut",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "birth-souls",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "protection-of-mothers",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "Uno Harva, Die religiösen Vorstellungen der altaischen Völker (FFC 125, 1938), on the Yakut birth-goddess Ajysyt"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Sakha goddess of childbirth, who descends to bring the soul (kut) to the newborn and to protect mothers in labour and the increase of the herds. The Lena-basin counterpart of the steppe mother-goddess Umay and the feminine birth-power of the northern Aiyy pantheon."
+ },
+ {
+  "id": "yakut_uluu_toyon",
+  "name": {
+   "primary": "Uluu Toyon",
+   "alt": [
+    "Uluu Tojon"
+   ],
+   "transliterations": {
+    "sakha": "Улуу Тойон"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yakut",
+  "primaryTradition": "Yakut",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "thunder",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "the-soul",
+    "contextTag": "lifelong"
+   },
+   {
+    "sphereId": "rough-justice",
+    "contextTag": "lifelong"
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "scholarly",
+      "reference": "G. V. Ksenofontov, Uraangkhai-sakhalar (1937) and Legendy i rasskazy o shamanakh (1930); Uno Harva, Die religiösen Vorstellungen der altaischen Völker (1938)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The powerful and dangerous thunder-and-fire lord of the Sakha upper world, giver of fire and of a human soul, master of the abaasy spirits and patron of the 'black' shamans. A figure of rough justice, distinct from the serene creator Ürüng Aiyy Toyon — the storm-edged counterweight at the head of the Yakut cosmos."
+ }
+]
+```
