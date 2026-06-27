@@ -1,0 +1,942 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Sotho-Tswana (Batswana / Tswana chiefdoms of Botswana & South Africa)
+Era (registered, exact): "legendary-genealogical"
+Author pass: the five eponymous founder-sons of Malope (parent id: sotho_tswana_malope,
+type mortal), still MISSING from the corpus. This is the Oghuz-sons pattern: legendary
+tribal-founder ancestors wired as siblings of one another and as sons of Malope.
+
+PARENT CLUSTER (NOT re-authored; referenced by id):
+  - sotho_tswana_malope  (Malope — legendary common ancestor/kgosi from whose house the
+    principal Tswana chiefdoms branched; type mortal, era legendary-genealogical)
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+The standard ethnographic genealogy of the Tswana traces the senior merafe (chiefdoms) to
+the sons of the eponymous ancestor Malope. The chief scholarship is Isaac Schapera, *The
+Ethnic Composition of Tswana Tribes* (LSE Monographs on Social Anthropology 11, London:
+LSE / Athlone Press, 1952), with his tribal histories of the Bakgatla and Bakwena; and
+Leonard D. Ngcongco, "Origins of the Tswana," *Pula: Botswana Journal of African Studies*
+2(1), 1982. Schapera's *A Handbook of Tswana Law and Custom* (1938) and the corpus entry
+for Malope (citing Ngcongco 1982 and Schapera 1952) both record the descent: "after his
+death his children Mohurutshe, Kwena, Kgatla, Ngwato and Ngwaketse founded the Bahurutshe,
+Bakwena, Bakgatla, Bangwato and Bangwaketse."
+
+FIVE figures are authored here, the eponymous founders of the five tribes:
+  • MOHURUTSHE — eponym of the Bahurutshe, conventionally the SENIOR Tswana tribe; totem
+    the baboon (tshwene), whence the alternate clan-name Batshweneng. (A widely recorded
+    variant tradition makes Mohurutshe a DAUGHTER and senior house, with Kwena the senior
+    son; the corpus cluster, following Malope's own registry entry and the "five sons"
+    founder-list, registers Mohurutshe among the founder-sons. The daughter-variant is
+    flagged in this figure's notes for scholarly honesty; sex is given as male per the
+    cluster's founder-son framing, with the variant disclosed.)
+  • KWENA — eponym of the Bakwena ("people of the crocodile"); totem the crocodile (kwena),
+    settled at Molepolole. The Bakwena are the parent stock from which the Bangwato,
+    Bangwaketse and Batawana royal houses branch (they share the crocodile totem).
+  • KGATLA (Mokgatla) — eponym of the Bakgatla; totem the monkey (kgabo); the senior
+    Bakgatla seat in the corpus's frame at Mochudi (Bakgatla-ba-Kgafela).
+  • NGWATO — eponym of the Bangwato (Bamangwato); totem the duiker (phuti, a small
+    antelope); settled at Serowe. In the lost-cow tradition Ngwato and his followers split
+    from Kwena and moved north.
+  • NGWAKETSE — eponym of the Bangwaketse; totem the crocodile (kwena, the shared royal
+    Bakwena totem, marking the common origin); settled at Kanye.
+
+TYPE / TIER DECISION (anti-drift). All five are legendary human tribal-founder ancestors,
+not deities; per the authoring rule, tribal founders are authored as MORTAL regardless of
+the descent fraction. Their father Malope is himself a mortal in the corpus, and no divine
+parent is involved, so the mortal tier is also what the descent rule yields. No second
+parent (mother) is registered in the corpus — Malope has no recorded spouse, and
+verified-solitary.json confirms none of the sons (nor a mother) are registry figures — so
+each child is wired with parentIds = [sotho_tswana_malope] (parentRoles {father}) only, not
+to a guessed mother.
+
+LIFECYCLE. As with Malope himself (who carries no lifecycle block), these eponymous
+founders have no attested death/transformation myth that changes their type-status; they
+are recorded as deceased legendary ancestors without a lifecycle array.
+
+WIRING.
+  - parentIds: ["sotho_tswana_malope"]  (parentRoles {father}) for all five.
+  - sibling → each of the other four founder-sons, reciprocated within this batch
+    (the Oghuz-sons pattern: all five are brothers).
+  No already-existing sibling of this cluster is in the corpus (the only Sotho-Tswana
+  figures are sotho_tswana_badimo, _malope, _modimo, _senkatana), so there is no one-way
+  sibling edge to an existing figure to add.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "sotho_tswana_mohurutshe",
+  "name": {
+   "primary": "Mohurutshe",
+   "alt": [
+    "Mohurutshe",
+    "Hurutshe",
+    "Mohlurutshe"
+   ],
+   "transliterations": {
+    "setswana": "Mohurutshe",
+    "etymology": "Setswana eponymous-ancestor name; the people called after him are the Bahurutshe (ba- 'people of' + Hurutshe), also Batshweneng after their totem tshwene ('baboon')."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Sotho-Tswana",
+  "primaryTradition": "Sotho-Tswana",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "sotho_tswana_malope"
+  ],
+  "parentRoles": {
+   "sotho_tswana_malope": "father"
+  },
+  "temporal": {
+   "era": "legendary-genealogical"
+  },
+  "domains": [
+   {
+    "sphereId": "founding-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Mohurutshe",
+     "script": "Latn",
+     "rom": "Mohurutshe"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE Monographs on Social Anthropology 11, Athlone Press."
+     }
+    ],
+    "notes": "Eponymous founding ancestor of the Bahurutshe, conventionally reckoned the senior Tswana merafe descended from Malope."
+   },
+   {
+    "sphereId": "clan-totem",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tshwene",
+     "script": "Latn",
+     "rom": "tshwene"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ],
+    "notes": "Totem of the Bahurutshe is the baboon (tshwene); the tribe is alternatively called Batshweneng, 'those of the baboon'."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-bahurutshe-line",
+    "name": "founds and propagates the Bahurutshe lineage",
+    "term": {
+     "value": "go thaya morafe",
+     "script": "Latn",
+     "rom": "go thaya morafe"
+    },
+    "inheritability": "full",
+    "notes": "As the eponymous ancestor, the Bahurutshe chiefly line and clan identity descend from him through the male line; 'go thaya morafe' = 'to found a nation/tribe'.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mohurutshe-tshwene-totem",
+    "kind": "emblem",
+    "name": "Baboon totem of the Bahurutshe",
+    "term": {
+     "value": "tshwene",
+     "script": "Latn",
+     "rom": "tshwene"
+    },
+    "role": "venerated",
+    "notes": "The baboon (tshwene) as clan totem (seano) of the Bahurutshe, venerated and protected by ritual taboo; emblem of the descent group founded by Mohurutshe.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Batshweneng",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_kwena",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bakwena)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_kgatla",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bakgatla)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_ngwato",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bangwato)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_ngwaketse",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bangwaketse)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mohurutshe is an eponymous founding ancestor, a son of Malope, from whom the Bahurutshe (the senior Tswana tribe, baboon totem) descend.",
+    "citations": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE Monographs on Social Anthropology 11, Athlone Press."
+     },
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ],
+    "weight": 0.8
+   }
+  ],
+  "notes": "Eponymous founder of the Bahurutshe, conventionally the senior Tswana merafe; totem the baboon (tshwene). Authored as a legendary mortal tribal-founder ancestor (Oghuz-sons pattern), son of Malope and brother of Kwena, Kgatla, Ngwato and Ngwaketse. NOTE ON A VARIANT: a widely recorded tradition makes Mohurutshe a daughter and senior house, with Kwena the senior son; the corpus follows Malope's own registry entry, which lists Mohurutshe among the five founder-sons, and so registers the figure here with sex male while disclosing the daughter-variant. No mother is registered in the corpus, so only the father edge is wired."
+ },
+ {
+  "id": "sotho_tswana_kwena",
+  "name": {
+   "primary": "Kwena",
+   "alt": [
+    "Kwêna",
+    "Mokwena"
+   ],
+   "transliterations": {
+    "setswana": "Kwena",
+    "etymology": "Setswana kwena, 'crocodile'; the eponym of the Bakwena ('people of the crocodile'), whose totem is the crocodile."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Sotho-Tswana",
+  "primaryTradition": "Sotho-Tswana",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "sotho_tswana_malope"
+  ],
+  "parentRoles": {
+   "sotho_tswana_malope": "father"
+  },
+  "temporal": {
+   "era": "legendary-genealogical"
+  },
+  "domains": [
+   {
+    "sphereId": "founding-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kwena",
+     "script": "Latn",
+     "rom": "Kwena"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Eponymous founding ancestor of the Bakwena, settled at Molepolole; the parent stock from which the Bangwato, Bangwaketse and Batawana royal houses branch."
+   },
+   {
+    "sphereId": "clan-totem",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kwena",
+     "script": "Latn",
+     "rom": "kwena"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ],
+    "notes": "Totem of the Bakwena is the crocodile (kwena), whence the tribe and eponym take their name."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-bakwena-line",
+    "name": "founds and propagates the Bakwena lineage",
+    "term": {
+     "value": "go thaya morafe",
+     "script": "Latn",
+     "rom": "go thaya morafe"
+    },
+    "inheritability": "full",
+    "notes": "Eponymous ancestor through whose male line the Bakwena chiefship and the offshoot royal houses (Bangwato, Bangwaketse, Batawana) descend.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kwena-crocodile-totem",
+    "kind": "emblem",
+    "name": "Crocodile totem of the Bakwena",
+    "term": {
+     "value": "kwena",
+     "script": "Latn",
+     "rom": "kwena"
+    },
+    "role": "venerated",
+    "notes": "The crocodile (kwena) as clan totem (seano) of the Bakwena, venerated and protected by taboo; the eponymous emblem of the descent group, shared by the Bakwena-derived royal lines.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ]
+   }
+  ],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_mohurutshe",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bahurutshe)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_kgatla",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bakgatla)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_ngwato",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope; in the lost-cow tradition Ngwato split from Kwena and moved north (eponym of the Bangwato)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_ngwaketse",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bangwaketse)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kwena is the eponymous founding ancestor of the Bakwena, a son of Malope, whose totem is the crocodile and whose line is the parent stock of the Bangwato, Bangwaketse and Batawana.",
+    "citations": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE Monographs on Social Anthropology 11, Athlone Press."
+     },
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ],
+    "weight": 0.8
+   }
+  ],
+  "notes": "Eponymous founder of the Bakwena ('people of the crocodile'), settled at Molepolole; the senior Bakwena stock from which the Bangwato, Bangwaketse and Batawana royal houses branch (sharing the crocodile totem). Authored as a legendary mortal tribal-founder ancestor (Oghuz-sons pattern), son of Malope and brother of Mohurutshe, Kgatla, Ngwato and Ngwaketse. No mother is registered in the corpus, so only the father edge is wired."
+ },
+ {
+  "id": "sotho_tswana_kgatla",
+  "name": {
+   "primary": "Kgatla",
+   "alt": [
+    "Mokgatla",
+    "Kgatla wa ga Malope"
+   ],
+   "transliterations": {
+    "setswana": "Kgatla",
+    "etymology": "Setswana eponymous-ancestor name (also Mokgatla); the people called after him are the Bakgatla. Their totem is the monkey (kgabo)."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Sotho-Tswana",
+  "primaryTradition": "Sotho-Tswana",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "sotho_tswana_malope"
+  ],
+  "parentRoles": {
+   "sotho_tswana_malope": "father"
+  },
+  "temporal": {
+   "era": "legendary-genealogical"
+  },
+  "domains": [
+   {
+    "sphereId": "founding-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kgatla",
+     "script": "Latn",
+     "rom": "Kgatla"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Eponymous founding ancestor of the Bakgatla; the senior Bakgatla seat (Bakgatla-ba-Kgafela) is at Mochudi."
+   },
+   {
+    "sphereId": "clan-totem",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kgabo",
+     "script": "Latn",
+     "rom": "kgabo"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1942). A Short History of the BaKgatla-baga-Kgafela. Cape Town: University of Cape Town."
+     }
+    ],
+    "notes": "Totem of the Bakgatla is the monkey (kgabo)."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-bakgatla-line",
+    "name": "founds and propagates the Bakgatla lineage",
+    "term": {
+     "value": "go thaya morafe",
+     "script": "Latn",
+     "rom": "go thaya morafe"
+    },
+    "inheritability": "full",
+    "notes": "Eponymous ancestor through whose male line the Bakgatla chiefship and clan identity descend.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1942). A Short History of the BaKgatla-baga-Kgafela. Cape Town: University of Cape Town."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kgatla-kgabo-totem",
+    "kind": "emblem",
+    "name": "Monkey totem of the Bakgatla",
+    "term": {
+     "value": "kgabo",
+     "script": "Latn",
+     "rom": "kgabo"
+    },
+    "role": "venerated",
+    "notes": "The monkey (kgabo) as clan totem (seano) of the Bakgatla, venerated and protected by taboo; emblem of the descent group founded by Kgatla.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1942). A Short History of the BaKgatla-baga-Kgafela. Cape Town: University of Cape Town."
+     }
+    ]
+   }
+  ],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_mohurutshe",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bahurutshe)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_kwena",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bakwena)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_ngwato",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bangwato)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_ngwaketse",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bangwaketse)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kgatla (Mokgatla) is the eponymous founding ancestor of the Bakgatla, a son of Malope, whose totem is the monkey (kgabo).",
+    "citations": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE Monographs on Social Anthropology 11, Athlone Press."
+     },
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1942). A Short History of the BaKgatla-baga-Kgafela. Cape Town: University of Cape Town."
+     }
+    ],
+    "weight": 0.8
+   }
+  ],
+  "notes": "Eponymous founder of the Bakgatla; totem the monkey (kgabo); the senior Bakgatla seat (Bakgatla-ba-Kgafela) at Mochudi. Authored as a legendary mortal tribal-founder ancestor (Oghuz-sons pattern), son of Malope and brother of Mohurutshe, Kwena, Ngwato and Ngwaketse. No mother is registered in the corpus, so only the father edge is wired."
+ },
+ {
+  "id": "sotho_tswana_ngwato",
+  "name": {
+   "primary": "Ngwato",
+   "alt": [
+    "Ngwato",
+    "Mangwato",
+    "Ngwato wa ga Malope"
+   ],
+   "transliterations": {
+    "setswana": "Ngwato",
+    "etymology": "Setswana eponymous-ancestor name; the people called after him are the Bangwato (Bamangwato). Their totem is the duiker (phuti)."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Sotho-Tswana",
+  "primaryTradition": "Sotho-Tswana",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "sotho_tswana_malope"
+  ],
+  "parentRoles": {
+   "sotho_tswana_malope": "father"
+  },
+  "temporal": {
+   "era": "legendary-genealogical"
+  },
+  "domains": [
+   {
+    "sphereId": "founding-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ngwato",
+     "script": "Latn",
+     "rom": "Ngwato"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Eponymous founding ancestor of the Bangwato (Bamangwato), an offshoot of the Bakwena settled at Serowe."
+   },
+   {
+    "sphereId": "clan-totem",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "phuti",
+     "script": "Latn",
+     "rom": "phuti"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ],
+    "notes": "Totem of the Bangwato is the duiker (phuti), a small antelope said to have saved the life of a chief; the royal house also retains the Bakwena crocodile as a senior totem."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-bangwato-line",
+    "name": "founds and propagates the Bangwato lineage",
+    "term": {
+     "value": "go thaya morafe",
+     "script": "Latn",
+     "rom": "go thaya morafe"
+    },
+    "inheritability": "full",
+    "notes": "Eponymous ancestor through whose male line the Bangwato chiefship (the line of Khama) descends; in the lost-cow tradition he led his followers north from Kwena's village.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ngwato-phuti-totem",
+    "kind": "emblem",
+    "name": "Duiker totem of the Bangwato",
+    "term": {
+     "value": "phuti",
+     "script": "Latn",
+     "rom": "phuti"
+    },
+    "role": "venerated",
+    "notes": "The duiker (phuti) as clan totem (seano) of the Bangwato, venerated and protected by taboo; said in tribal tradition to have saved a chief, and the emblem of the descent group founded by Ngwato.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Bamangwato",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_mohurutshe",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bahurutshe)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_kwena",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope; in the lost-cow tradition Ngwato split from Kwena's Bakwena and moved north."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_kgatla",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bakgatla)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_ngwaketse",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bangwaketse)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ngwato is the eponymous founding ancestor of the Bangwato (Bamangwato), a son of Malope and an offshoot of the Bakwena, settled at Serowe, with the duiker as totem.",
+    "citations": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE Monographs on Social Anthropology 11, Athlone Press."
+     },
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ],
+    "weight": 0.8
+   }
+  ],
+  "notes": "Eponymous founder of the Bangwato (Bamangwato), settled at Serowe; an offshoot of the Bakwena, totem the duiker (phuti). Authored as a legendary mortal tribal-founder ancestor (Oghuz-sons pattern), son of Malope and brother of Mohurutshe, Kwena, Kgatla and Ngwaketse. No mother is registered in the corpus, so only the father edge is wired."
+ },
+ {
+  "id": "sotho_tswana_ngwaketse",
+  "name": {
+   "primary": "Ngwaketse",
+   "alt": [
+    "Ngwaketse",
+    "Mongwaketse",
+    "Ngwaketse wa ga Malope"
+   ],
+   "transliterations": {
+    "setswana": "Ngwaketse",
+    "etymology": "Setswana eponymous-ancestor name; the people called after him are the Bangwaketse. Their totem is the crocodile (kwena), the senior Bakwena totem retained from their common origin."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Sotho-Tswana",
+  "primaryTradition": "Sotho-Tswana",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "sotho_tswana_malope"
+  ],
+  "parentRoles": {
+   "sotho_tswana_malope": "father"
+  },
+  "temporal": {
+   "era": "legendary-genealogical"
+  },
+  "domains": [
+   {
+    "sphereId": "founding-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ngwaketse",
+     "script": "Latn",
+     "rom": "Ngwaketse"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Eponymous founding ancestor of the Bangwaketse, an offshoot of the Bakwena settled at Kanye."
+   },
+   {
+    "sphereId": "clan-totem",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kwena",
+     "script": "Latn",
+     "rom": "kwena"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ],
+    "notes": "Totem of the Bangwaketse is the crocodile (kwena), the same as the royal Bakwena and Bangwato totem, marking their common Bakwena origin."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-bangwaketse-line",
+    "name": "founds and propagates the Bangwaketse lineage",
+    "term": {
+     "value": "go thaya morafe",
+     "script": "Latn",
+     "rom": "go thaya morafe"
+    },
+    "inheritability": "full",
+    "notes": "Eponymous ancestor through whose male line the Bangwaketse chiefship descends; he led his followers south to settle the Kanye area.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ngwaketse-kwena-totem",
+    "kind": "emblem",
+    "name": "Crocodile totem of the Bangwaketse",
+    "term": {
+     "value": "kwena",
+     "script": "Latn",
+     "rom": "kwena"
+    },
+    "role": "venerated",
+    "notes": "The crocodile (kwena) as clan totem (seano) of the Bangwaketse, venerated and protected by taboo; the same totem as the senior Bakwena line, marking the shared origin of the descent group founded by Ngwaketse.",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ]
+   }
+  ],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_mohurutshe",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bahurutshe)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_kwena",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope; the Bangwaketse are an offshoot of Kwena's Bakwena (sharing the crocodile totem)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_kgatla",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bakgatla)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "sotho_tswana_ngwato",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE / Athlone Press."
+     }
+    ],
+    "notes": "Brother and fellow founder-son of Malope (eponym of the Bangwato)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ngwaketse is the eponymous founding ancestor of the Bangwaketse, a son of Malope and an offshoot of the Bakwena, settled at Kanye, retaining the crocodile totem of their common Bakwena origin.",
+    "citations": [
+     {
+      "kind": "reference",
+      "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE Monographs on Social Anthropology 11, Athlone Press."
+     },
+     {
+      "kind": "reference",
+      "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)."
+     }
+    ],
+    "weight": 0.8
+   }
+  ],
+  "notes": "Eponymous founder of the Bangwaketse, settled at Kanye; an offshoot of the Bakwena retaining the crocodile (kwena) totem. Authored as a legendary mortal tribal-founder ancestor (Oghuz-sons pattern), son of Malope and brother of Mohurutshe, Kwena, Kgatla and Ngwato. No mother is registered in the corpus, so only the father edge is wired."
+ }
+]
+```
+
+RECIPROCAL-NEEDED (symmetric ties to existing corpus figures):
+  - NONE. The only Sotho-Tswana figures already in the corpus are sotho_tswana_badimo,
+    sotho_tswana_malope, sotho_tswana_modimo and sotho_tswana_senkatana; none is a sibling
+    of this cluster. All sibling edges among the five founder-sons are reciprocated within
+    this batch.
+
+NOTE ON PARENT EDGES (no reciprocal required; directed):
+  - sotho_tswana_mohurutshe  child of  sotho_tswana_malope  (father)
+  - sotho_tswana_kwena       child of  sotho_tswana_malope  (father)
+  - sotho_tswana_kgatla      child of  sotho_tswana_malope  (father)
+  - sotho_tswana_ngwato      child of  sotho_tswana_malope  (father)
+  - sotho_tswana_ngwaketse   child of  sotho_tswana_malope  (father)
+  No mother is registered in the corpus (Malope has no recorded spouse; verified-solitary
+  confirms none of the sons nor a mother are registry figures), so only the father edge is
+  wired for each child.

@@ -1,0 +1,1218 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Cluster: children of Harmonia (parent id: greek_harmonia; tradition: Greek; parent type: deity)
+Era (registered, exact, used for every child): "heroic-age"
+Author pass: the Theban princes/princesses — the Cadmeid children of Cadmus and Harmonia still
+MISSING from the corpus.
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISIONS
+================================================================================
+
+CHILDREN AUTHORED HERE (all four are genuinely absent from app/data.js and from the
+data-sources/transcripts/ corpus — grepped by bare name and by greek_<name>):
+  • greek_ino        — Ino, the Theban princess who reared Dionysus and leapt into the sea,
+                       deified as the sea-goddess Leucothea (infant Melicertes → Palaemon).
+  • greek_semele     — Semele, the mortal mother of Dionysus by Zeus, killed by his thunderbolt.
+  • greek_agave      — Agave, wife of Echion and mother of Pentheus, whom she dismembered in
+                       Bacchic frenzy (Euripides, Bacchae).
+  • greek_polydorus_thebes — Polydorus of Thebes, the only son of Cadmus and Harmonia, king of
+                       Thebes, husband of Nycteis and father of Labdacus (the Labdacid line).
+
+EXISTING FIGURES referenced/wired (NOT re-authored):
+  • greek_harmonia        (the cluster parent — deity; her own notes already read "Mother of Ino,
+                          Semele, Agave, Autonoe, and Polydorus of Thebes"). Wired as parentId.
+  • greek_autonoe         (the eldest Cadmeid daughter — ALREADY EXISTS, type mortal, era
+                          heroic-age). She is a sibling of the four authored here; per the batch
+                          rule for an already-existing sibling, each new figure carries a ONE-WAY
+                          `sibling` relation to greek_autonoe (no reciprocal authored on her).
+
+OTHER-PARENT (Cadmus) WIRING DECISION — accuracy-first, validator-safe:
+  The other parent is Cadmus, founder-king of Thebes. Grepped exhaustively:
+  there is NO registered figure greek_cadmus / greek_kadmos (neither the "id": "…" JSON form nor
+  the id: '…' JS form). Cadmus appears in the corpus ONLY as prose and as an externalRef (e.g. in
+  greek_harmonia's relations: {"name":"Cadmus (founder-king of Thebes, son of Agenor, brother of
+  Europa)"}). The HARD RULE requires every parentId to resolve to an existing/in-batch figure, and
+  the existing sibling greek_autonoe sets the exact precedent for this cluster: her parentIds are
+  ["greek_harmonia"] alone, with the note that "Her parents Cadmus and Harmonia … are named in the
+  tradition but lack corpus entries, so they are described rather than wired." Accordingly each
+  child here is wired:
+     - parentIds: ["greek_harmonia"]  /  parentRoles: {"greek_harmonia": "mother"}
+     - Cadmus carried as an externalRef `father` relation + named in notes (described, not wired),
+       so the registry stays internally consistent and no dangling parentId is created.
+  (Cadmus is correctly the FATHER; Harmonia the MOTHER. Both parents are thus represented — the
+  resolvable one as a parentId edge, the unregistered one as a documented externalRef — exactly as
+  the existing Autonoe entry handles the identical situation.)
+
+TYPE / TIER (anti-drift): Harmonia = deity (1.0); Cadmus is an unregistered second parent and is
+  therefore counted as mortal (0). Strict descent fraction = (1.0 + 0)/2 = 0.5, which falls in the
+  demigod band. BUT the Cadmeid princes/princesses are the canonical MORTAL Theban royal line (the
+  human house of Thebes — Semele is the paradigmatic mortal consort of Zeus; Ino, Agave and
+  Polydorus are mortal Theban royals who marry, rule and die as humans). The already-authored
+  sibling greek_autonoe is `type: mortal`, and the rule's tie-breaker is "pick the LOWER tier" and
+  "author … the tribal founders as mortal." All four are therefore authored as `type: mortal`,
+  matching the established sibling and canon. (Ino's later apotheosis to Leucothea, and Semele's to
+  Thyone, are post-mortal transformations recorded in lifecycle/notes, not a birth tier.)
+
+ERA: temporal.era and every lifecycle.era = "heroic-age" exactly (= the cluster era and Harmonia's
+  era), keeping each child no earlier than the parent.
+
+CHILDREN-OF-THE-CHILDREN (Dionysus, Pentheus, Melicertes, Palaemon, Learchus, Labdacus) and the
+  spouses (Athamas, Echion, Nycteus, Zeus) are named in the tradition but have NO corpus entries
+  (grepped: no greek_dionysus, greek_pentheus, greek_melicertes, greek_learchus, greek_athamas,
+  greek_aristaeus, etc.); they are described as externalRefs / in prose rather than wired.
+
+PRIMARY/SECONDARY SOURCES (all real, verified against Perseus/standard editions):
+  Apollodorus, Bibliotheca 3.4.2 (Cadmus & Harmonia's children; Ino↔Athamas, Autonoe↔Aristaeus,
+  Agave↔Echion); 3.4.3 (Semele, Zeus, the thunderbolt, Dionysus sewn in the thigh and given to Ino
+  and Athamas to rear); 3.5.2 (Pentheus, son of Agave and Echion, torn apart by the maenads);
+  3.5.5 (Polydorus king of Thebes, marries Nycteis daughter of Nycteus, father of Labdacus).
+  Hesiod, Theogony 940-942 (Semele bears Dionysus to Zeus), 975-978 (Ino bears Palaemon-Melicertes;
+  the Cadmeid daughters). Euripides, Bacchae (Agave's sparagmos of Pentheus; the Theban frenzy).
+  Ovid, Metamorphoses 3.259-315 (Semele & the thunderbolt), 4.416-542 (Athamas' madness, Learchus
+  killed, Ino's leap, Ino→Leucothea / Melicertes→Palaemon). Pausanias 1.44.7-8 & 2.1.3 (Ino-
+  Leucothea, Palaemon at the Isthmus); 9.5.2-3 (the Theban succession: Echion son-in-law of Cadmus;
+  Polydorus → Labdacus, Nycteus regent). Diodorus Siculus 4.2-4 & 5.48-49 (Cadmean genealogy).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "greek_ino",
+  "name": {
+   "primary": "Ino",
+   "alt": [
+    "Inō",
+    "Ino of Thebes",
+    "Leucothea",
+    "Leukothea",
+    "the White Goddess"
+   ],
+   "transliterations": {
+    "greek": "Ἰνώ",
+    "etymology": "Greek Ἰνώ (Inō), of pre-Greek/uncertain derivation; after her apotheosis called Λευκοθέα (Leukothea), 'the white goddess', from λευκός 'white' + θεά 'goddess'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_harmonia"
+  ],
+  "parentRoles": {
+   "greek_harmonia": "mother"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-Cadmeid-daughter-at-Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Hesiod, Theogony 975-978"
+     }
+    ],
+    "notes": "Second of the four daughters of Cadmus, founder-king of Thebes, and the goddess Harmonia; sister of Autonoe, Semele and Agave and of Polydorus. Given in marriage to Athamas of Boeotia, by whom she bore Learchus and Melicertes."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "rearing-of-the-infant-Dionysus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.3; Ovid, Metamorphoses 3.313-315"
+     }
+    ],
+    "notes": "After Semele's death Zeus entrusted the infant Dionysus to Ino and Athamas, who reared him (in some accounts disguised as a girl); for sheltering the god the house drew the lasting wrath of Hera."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "madness-of-Athamas-and-the-leap-into-the-sea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 4.464-542; Apollodorus, Bibliotheca 1.9.2, 3.4.3"
+     }
+    ],
+    "notes": "Hera, through the Fury Tisiphone, drove Athamas mad; he killed their son Learchus, and Ino fled with the infant Melicertes and leapt from a cliff into the sea."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 3,
+    "startEvent": "apotheosis-as-Leucothea-the-white-sea-goddess",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 5.333-353; Ovid, Metamorphoses 4.531-542; Pausanias 1.44.7-8"
+     }
+    ],
+    "notes": "At Aphrodite's plea Poseidon transformed mother and child into sea-divinities: Ino became Leucothea ('the white goddess'), the saving sea-deity who lends Odysseus her veil, and Melicertes became Palaemon, honoured at the Isthmian Games. A post-mortal apotheosis, not a birth-tier; she is therefore authored as a mortal (her divine status is the transformation recorded here)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sea",
+    "contextTag": "after-apotheosis",
+    "term": {
+     "value": "Λευκοθέα",
+     "script": "Greek",
+     "rom": "Leukothea"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 5.333-353; Pausanias 1.44.7-8"
+     }
+    ],
+    "notes": "As Leucothea, a white sea-goddess and rescuer of imperilled sailors."
+   },
+   {
+    "sphereId": "salvation-of-sailors",
+    "contextTag": "after-apotheosis",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 5.333-353 (Leucothea gives Odysseus her veil)"
+     }
+    ],
+    "notes": "Protectress of the shipwrecked; her κρήδεμνον (veil) bears Odysseus safe to land."
+   },
+   {
+    "sphereId": "nursing-and-fosterage",
+    "contextTag": "episodic",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.3"
+     }
+    ],
+    "notes": "Foster-mother and nurse of the infant Dionysus."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rescue-the-shipwrecked",
+    "name": "Rescues the shipwrecked at sea",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As Leucothea she rises from the waves to save drowning sailors, granting Odysseus her immortal veil. A power of her apotheosised state, not a heritable bloodline trait.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 5.333-353"
+     }
+    ]
+   },
+   {
+    "id": "nurse-the-infant-god",
+    "name": "Nurses and shelters the infant Dionysus",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Reared the motherless Dionysus with Athamas after Semele's death.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.3"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ino-leucothea-veil",
+    "kind": "garment",
+    "name": "The veil (krēdemnon) of Leucothea",
+    "term": {
+     "value": "κρήδεμνον",
+     "script": "Greek",
+     "rom": "krēdemnon"
+    },
+    "role": "bestowed",
+    "notes": "The immortal headband/veil Leucothea gives Odysseus to keep him afloat until he reaches Phaeacia; her signature saving-instrument.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 5.346-353, 5.459-462"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Λευκοθέα",
+    "translation": "the White Goddess",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 5.334; Pausanias 1.44.7"
+     }
+    ]
+   },
+   {
+    "original": "Ἰνὼ Καδμηΐς",
+    "translation": "Ino daughter of Cadmus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 5.333 (Ἰνὼ … Κάδμου θυγάτηρ)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_autonoe",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister; eldest of the Cadmeid daughters (one-way edge to the pre-existing figure)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_semele",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister; mother of Dionysus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_agave",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister; mother of Pentheus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_polydorus_thebes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Brother; the only son of Cadmus and Harmonia, king of Thebes."
+   },
+   {
+    "kind": "spouse",
+    "externalRef": {
+     "name": "Athamas (Boeotian king, son of Aeolus)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 1.9.1-2, 3.4.3"
+     }
+    ],
+    "notes": "Husband; no corpus entry — named as externalRef."
+   },
+   {
+    "kind": "mother-of",
+    "externalRef": {
+     "name": "Melicertes / Palaemon (sea-god honoured at the Isthmus)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 4.519-542; Pausanias 2.1.3"
+     }
+    ],
+    "notes": "Son, transformed with her into the sea-god Palaemon; no corpus entry."
+   },
+   {
+    "kind": "mother-of",
+    "externalRef": {
+     "name": "Learchus (son killed by the maddened Athamas)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 1.9.2; Ovid, Metamorphoses 4.512-519"
+     }
+    ],
+    "notes": "Son, slain by Athamas in his madness; no corpus entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence and parentage (daughter of Cadmus and Harmonia, wife of Athamas)",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2-3; Hesiod, Theogony 975-978; Diodorus Siculus 4.2-4"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "leap into the sea and apotheosis as Leucothea (Melicertes as Palaemon)",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 4.464-542; Homer, Odyssey 5.333-353; Pausanias 1.44.7-8, 2.1.3"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Theban princess, second daughter of Cadmus and Harmonia (greek_harmonia, whose own notes name 'Ino' among her children). Wife of Athamas; mother of Learchus and Melicertes; foster-mother of Dionysus. After Athamas' Hera-sent madness she leapt into the sea and was deified as the saving sea-goddess Leucothea (Melicertes → Palaemon). Authored as mortal (matching her existing sister greek_autonoe and the canonical mortal Theban line; her divinity is a post-mortal apotheosis recorded in lifecycle). Her father Cadmus has no corpus entry (greek_cadmus does not resolve), so he is given as an externalRef father and described in prose; only the resolvable parent greek_harmonia is wired as parentId. Her husband Athamas and her children Melicertes/Palaemon and Learchus likewise lack entries and are named as externalRefs."
+ },
+ {
+  "id": "greek_semele",
+  "name": {
+   "primary": "Semele",
+   "alt": [
+    "Semelē",
+    "Semele of Thebes",
+    "Thyone"
+   ],
+   "transliterations": {
+    "greek": "Σεμέλη",
+    "etymology": "Greek Σεμέλη (Semelē), widely held to be a Thraco-Phrygian loan related to *zemelō 'earth' (cf. the Phrygian formula diōs zemelō); after her apotheosis renamed Θυώνη (Thyōnē), connected with θύω 'to rage/sacrifice'. (Distinct from the Thracian earth-goddess entry thracian_semele.)"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_harmonia"
+  ],
+  "parentRoles": {
+   "greek_harmonia": "mother"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-Cadmeid-daughter-at-Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Hesiod, Theogony 940-942"
+     }
+    ],
+    "notes": "Third daughter of Cadmus and Harmonia; sister of Autonoe, Ino and Agave and of Polydorus. Loved by Zeus and pregnant with Dionysus."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "death-by-the-thunderbolt-of-Zeus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.3; Ovid, Metamorphoses 3.253-315; Euripides, Bacchae 1-12, 88-98"
+     }
+    ],
+    "notes": "Deceived by the jealous Hera, she begged Zeus to appear in his full divinity; he came amid lightning and thunder and she was consumed by the thunderbolt. Zeus snatched the six-month foetus and sewed it into his thigh, whence Dionysus was later born — the 'twice-born' god."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "retrieval-from-Hades-and-deification-as-Thyone",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.3; Pindar, Olympian 2.25-27; Diodorus Siculus 4.25.4"
+     }
+    ],
+    "notes": "When grown, Dionysus descended to Hades, brought up his mother, renamed her Thyone, and took her to Olympus among the immortals. A post-mortal deification, recorded here; she is authored at her mortal birth-tier."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "motherhood-and-birth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Σεμέλη",
+     "script": "Greek",
+     "rom": "Semelē"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 940-942 (she bears Dionysus to Zeus)"
+     }
+    ],
+    "notes": "Mortal mother, by Zeus, of the wine-god Dionysus."
+   },
+   {
+    "sphereId": "apotheosis-and-Olympian-honour",
+    "contextTag": "after-apotheosis",
+    "term": {
+     "value": "Θυώνη",
+     "script": "Greek",
+     "rom": "Thyōnē"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diodorus Siculus 4.25.4; Pindar, Olympian 2.25-27"
+     }
+    ],
+    "notes": "Raised from the dead by Dionysus and made the immortal Thyone."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear-the-twice-born-god",
+    "name": "Bears Dionysus to Zeus",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Mortal mother of Dionysus; her death by the thunderbolt precipitates the god's second birth from Zeus's thigh. A unique narrative event, not a heritable faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.3; Hesiod, Theogony 940-942"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "semele-tomb-thebes",
+    "kind": "site",
+    "name": "The tomb of Semele at Thebes",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Her smouldering tomb in the precinct of the Theban Cadmeia, shown to travellers and central to the Bacchae's setting; a forbidden, sacred ground struck by Zeus's fire.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Bacchae 6-12; Pausanias 9.12.3"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Θυώνη",
+    "translation": "Thyone (the raging/inspired one)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diodorus Siculus 4.25.4; Pindar, Olympian 2.26"
+     }
+    ]
+   },
+   {
+    "original": "Σεμέλη κεραυνία",
+    "translation": "thunder-stricken Semele",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Pindar, Olympian 2.25 with scholia (Semele slain by the keraunos); Walter Burkert, Greek Religion (1985), on the Theban Semele"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_autonoe",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister (one-way edge to the pre-existing figure)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_ino",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2-3"
+     }
+    ],
+    "notes": "Sister; after Semele's death Ino and Athamas reared the infant Dionysus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_agave",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister; the Cadmeid daughters who, per the Bacchae, doubted Semele's union with Zeus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_polydorus_thebes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Brother; king of Thebes."
+   },
+   {
+    "kind": "mother-of",
+    "externalRef": {
+     "name": "Dionysus (Olympian god of wine and ecstasy, by Zeus)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 940-942; Euripides, Bacchae 1-9"
+     }
+    ],
+    "notes": "Her son by Zeus; no corpus entry — named as externalRef."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence and parentage (daughter of Cadmus and Harmonia, mother of Dionysus by Zeus)",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2-3; Hesiod, Theogony 940-942; Euripides, Bacchae 1-12"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "death by Zeus's thunderbolt and deification as Thyone",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 3.253-315; Apollodorus, Bibliotheca 3.5.3; Diodorus Siculus 4.25.4"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Theban princess, third daughter of Cadmus and Harmonia (greek_harmonia, whose notes name 'Semele'). Loved by Zeus; deceived by Hera, she was destroyed by his thunderbolt and the unborn Dionysus was sewn into Zeus's thigh (the twice-born god). Later raised from Hades by Dionysus and deified as Thyone. Authored as mortal — the paradigmatic mortal consort of Zeus and the canonical Theban princess, matching the existing sister greek_autonoe; her divinity is a post-mortal deification. DISTINCT from the existing thracian_semele (the Thraco-Phrygian earth-mother Zemele), which is a separate tradition/figure. Cadmus has no corpus entry (greek_cadmus does not resolve) and is given as an externalRef father; only greek_harmonia is wired as parentId. Her son Dionysus has no entry and is named as an externalRef."
+ },
+ {
+  "id": "greek_agave",
+  "name": {
+   "primary": "Agave",
+   "alt": [
+    "Agauē",
+    "Agaue",
+    "Agave of Thebes"
+   ],
+   "transliterations": {
+    "greek": "Ἀγαυή",
+    "etymology": "Greek Ἀγαυή (Agauē), 'illustrious, noble', from the adjective ἀγαυός 'illustrious, high-born'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_harmonia"
+  ],
+  "parentRoles": {
+   "greek_harmonia": "mother"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-Cadmeid-daughter-and-marriage-to-Echion",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Pausanias 9.5.3"
+     }
+    ],
+    "notes": "Youngest of the four daughters of Cadmus and Harmonia; sister of Autonoe, Ino and Semele and of Polydorus. Married Echion, one of the Spartoi (the Sown Men), whom Cadmus preferred as a son-in-law; bore Pentheus."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "Bacchic-frenzy-and-the-sparagmos-of-Pentheus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Bacchae 1043-1152, 1168-1300; Apollodorus, Bibliotheca 3.5.2; Ovid, Metamorphoses 3.701-733"
+     }
+    ],
+    "notes": "When her son Pentheus, king of Thebes, opposed the rites of Dionysus, the god drove the Theban women into ecstasy; on Mount Cithaeron Agave, taking him for a mountain lion, led the maenads in tearing him apart, and bore his head into the city in triumph before her madness lifted."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "exile-from-Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Bacchae 1330-1392; Hyginus, Fabulae 184, 240, 254"
+     }
+    ],
+    "notes": "Stricken with grief and pollution for the killing of her son, she went into exile from Thebes (in some accounts to Illyria, where she married Lycotherses)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "Dionysiac-frenzy",
+    "contextTag": "episodic",
+    "term": {
+     "value": "μαινάς",
+     "script": "Greek",
+     "rom": "mainas"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Bacchae 1043-1152"
+     }
+    ],
+    "notes": "Leader of the Theban maenads in the god-sent Bacchic ecstasy on Cithaeron."
+   },
+   {
+    "sphereId": "Theban-royalty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Pausanias 9.5.3"
+     }
+    ],
+    "notes": "Cadmeid princess, wife of the Sown Man Echion and mother of the Theban king Pentheus."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lead-the-maenadic-sparagmos",
+    "name": "Leads the maenads in the rending of Pentheus",
+    "term": {
+     "value": "σπαραγμός",
+     "script": "Greek",
+     "rom": "sparagmos"
+    },
+    "inheritability": "none",
+    "notes": "Under Dionysus's madness she heads the Theban women who tear Pentheus limb from limb; a god-imposed frenzy, not a heritable power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Bacchae 1114-1147; Apollodorus, Bibliotheca 3.5.2"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "agave-thyrsus",
+    "kind": "implement",
+    "name": "Thyrsus of the maenad",
+    "term": {
+     "value": "θύρσος",
+     "script": "Greek",
+     "rom": "thyrsos"
+    },
+    "role": "wielded",
+    "notes": "The fennel-and-ivy wand of the Dionysiac reveller borne by Agave and the Theban maenads in the Bacchae.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Bacchae 1054-1057, 1157"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ἀγαυὴ Κάδμου θυγάτηρ",
+    "translation": "Agave daughter of Cadmus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Bacchae 1154-1155; Apollodorus, Bibliotheca 3.4.2"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_autonoe",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Euripides, Bacchae 229-232"
+     }
+    ],
+    "notes": "Sister; both join the maenads in the Bacchae (one-way edge to the pre-existing figure)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_ino",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Euripides, Bacchae 229-232"
+     }
+    ],
+    "notes": "Sister."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_semele",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister; mother of Dionysus, the god who sends the frenzy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_polydorus_thebes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Brother; king of Thebes after Pentheus."
+   },
+   {
+    "kind": "spouse",
+    "externalRef": {
+     "name": "Echion (one of the Spartoi / Sown Men of Thebes)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.1-2; Pausanias 9.5.3"
+     }
+    ],
+    "notes": "Husband; no corpus entry — named as externalRef."
+   },
+   {
+    "kind": "mother-of",
+    "externalRef": {
+     "name": "Pentheus (king of Thebes, torn apart by the maenads)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Bacchae; Apollodorus, Bibliotheca 3.5.2"
+     }
+    ],
+    "notes": "Her son, whom she dismembered in her frenzy; no corpus entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence and parentage (daughter of Cadmus and Harmonia, wife of Echion, mother of Pentheus)",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Pausanias 9.5.2-3; Hesiod, Theogony 975-978"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Bacchic frenzy and the dismemberment of Pentheus",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Bacchae 1043-1300; Apollodorus, Bibliotheca 3.5.2; Ovid, Metamorphoses 3.701-733"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Theban princess, youngest daughter of Cadmus and Harmonia (greek_harmonia, whose notes name 'Agave'). Wife of the Spartos Echion and mother of King Pentheus, whom she tore apart on Cithaeron in the Dionysiac frenzy of Euripides's Bacchae. Authored as mortal, matching the existing sister greek_autonoe and the canonical mortal Theban line. Cadmus has no corpus entry (greek_cadmus does not resolve) and is given as an externalRef father; only greek_harmonia is wired as parentId. Her husband Echion and son Pentheus lack entries and are named as externalRefs."
+ },
+ {
+  "id": "greek_polydorus_thebes",
+  "name": {
+   "primary": "Polydorus of Thebes",
+   "alt": [
+    "Polydorus",
+    "Polydoros",
+    "Polydorus son of Cadmus"
+   ],
+   "transliterations": {
+    "greek": "Πολύδωρος",
+    "etymology": "Greek Πολύδωρος (Polydōros), 'rich in gifts, much-giving', from πολύς 'many' + δῶρον 'gift'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_harmonia"
+  ],
+  "parentRoles": {
+   "greek_harmonia": "mother"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-the-only-son-of-Cadmus-and-Harmonia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Hesiod, Theogony 978"
+     }
+    ],
+    "notes": "The only son among the five children of Cadmus and Harmonia; brother of Autonoe, Ino, Semele and Agave. Heir to the Theban kingship."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "kingship-of-Thebes-and-marriage-to-Nycteis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.5; Pausanias 9.5.3"
+     }
+    ],
+    "notes": "Succeeded to the throne of Thebes (after Cadmus's withdrawal to Illyria, and after Pentheus); married Nycteis, daughter of Nycteus, and begat Labdacus, founder of the Labdacid line that runs to Laius and Oedipus."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-leaving-the-infant-Labdacus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.5; Pausanias 9.5.3-5"
+     }
+    ],
+    "notes": "Died while Labdacus was still a child, leaving his father-in-law Nycteus (and afterward Nycteus's brother Lycus) as regent of Thebes."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "βασιλεύς",
+     "script": "Greek",
+     "rom": "basileus"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.5; Pausanias 9.5.3"
+     }
+    ],
+    "notes": "King of Thebes in the Cadmean royal succession; ancestor of the Labdacid dynasty."
+   },
+   {
+    "sphereId": "dynastic-succession",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.5"
+     }
+    ],
+    "notes": "Through his son Labdacus the line passes to Laius and Oedipus — the house at the centre of Theban tragedy."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "transmit-the-cadmean-kingship",
+    "name": "Transmits the Cadmean kingship of Thebes to the Labdacid line",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "notes": "As the only son of Cadmus he carries the Theban royal succession by blood-descent to his son Labdacus and the Labdacids; a heritable dynastic right transmitted along the bloodline.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.5; Pausanias 9.5.3-5"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "polydorus-theban-throne",
+    "kind": "regalia",
+    "name": "The throne of the Cadmeia (Theban kingship)",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "role": "held",
+    "notes": "The sovereignty of the Cadmeia, the Theban acropolis founded by Cadmus, which Polydorus held and passed to Labdacus.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.5; Pausanias 9.5.3"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Πολύδωρος Κάδμου παῖς",
+    "translation": "Polydorus son of Cadmus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2, 3.5.5"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_autonoe",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister (one-way edge to the pre-existing figure)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_ino",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_semele",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister; mother of Dionysus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_agave",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2"
+     }
+    ],
+    "notes": "Sister; mother of Pentheus, whom Polydorus succeeded."
+   },
+   {
+    "kind": "spouse",
+    "externalRef": {
+     "name": "Nycteis (daughter of Nycteus the regent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.5; Pausanias 9.5.3"
+     }
+    ],
+    "notes": "Wife; no corpus entry — named as externalRef."
+   },
+   {
+    "kind": "father-of",
+    "externalRef": {
+     "name": "Labdacus (king of Thebes, eponym of the Labdacid line)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.5; Pausanias 9.5.4-5"
+     }
+    ],
+    "notes": "Son; founder of the Labdacid dynasty (Laius, Oedipus); no corpus entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence and parentage (only son of Cadmus and Harmonia)",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.4.2; Hesiod, Theogony 978; Diodorus Siculus 19.53.5"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "kingship of Thebes, marriage to Nycteis, fatherhood of Labdacus",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 3.5.5; Pausanias 9.5.3-5; Herodotus 5.59 (the Labdacid line)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Theban prince and king, the only son of Cadmus and Harmonia (greek_harmonia, whose notes name 'Polydorus of Thebes'). Brother of Autonoe, Ino, Semele and Agave. Husband of Nycteis and father of Labdacus, founder of the Labdacid line (Laius, Oedipus). Authored as mortal — the human Theban royal line — matching the existing sister greek_autonoe. Id is greek_polydorus_thebes to disambiguate from the existing greek_polydorus_troy (Polydorus son of Priam, an unrelated figure). Cadmus has no corpus entry (greek_cadmus does not resolve) and is given as an externalRef father; only greek_harmonia is wired as parentId. His wife Nycteis and son Labdacus lack entries and are named as externalRefs."
+ }
+]
+```
+
+================================================================================
+WIRING / STATUS NOTES
+================================================================================
+
+AUTHORED (4): greek_ino, greek_semele, greek_agave, greek_polydorus_thebes
+  — all type mortal, era heroic-age, parentIds ["greek_harmonia"] (parentRoles mother).
+
+EXISTING-WIRED (already in corpus; not authored):
+  - greek_autonoe — the eldest Cadmeid daughter; each new figure carries a one-way `sibling`
+    relation to it (no reciprocal authored on greek_autonoe, per the batch rule for pre-existing
+    siblings).
+
+PARENT EDGES (directed; no reciprocal required):
+  - greek_ino / greek_semele / greek_agave / greek_polydorus_thebes  child of  greek_harmonia
+    (mother). The father Cadmus is NOT wired as a parentId because no figure greek_cadmus/
+    greek_kadmos exists in the corpus; he is recorded as an externalRef father + in notes, exactly
+    as the pre-existing sibling greek_autonoe handles the identical case.
+
+SIBLINGS RECIPROCATED WITHIN THE BATCH (symmetric):
+  greek_ino ↔ greek_semele ↔ greek_agave ↔ greek_polydorus_thebes (every pair carries the
+  reciprocal `sibling` edge in-batch).
+
+NOT WIRED (named as externalRefs / prose only — no corpus entries):
+  Cadmus (father); spouses Athamas, Echion, Nycteus/Nycteis; the next generation Dionysus,
+  Pentheus, Melicertes/Palaemon, Learchus, Labdacus. (Grepped: none resolve to a corpus id.)
+
+DISAMBIGUATION:
+  - greek_semele is the GREEK Theban princess, DISTINCT from the existing thracian_semele
+    (the Thraco-Phrygian earth-goddess Zemele) — different tradition and figure.
+  - greek_polydorus_thebes is DISTINCT from the existing greek_polydorus_troy (son of Priam).

@@ -1,0 +1,718 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Hindu (Vedic–Purāṇic solar genealogy)
+Cluster: children of Sūrya (parent id: hindu_surya, type: deity)
+Era (registered, exact, applied to EVERY child + every lifecycle stage): "vedic"
+Author pass: the offspring of Sūrya by Saraṇyū / Saṃjñā still MISSING from the corpus.
+
+EXISTING FIGURES (NOT re-authored; referenced / wired by id):
+  - hindu_surya    (Sūrya / Vivasvat — solar deity; the cluster parent. era already "vedic")
+  - hindu_yama     (Yama — god of death; twin brother of Yamī. ALREADY parented to hindu_surya
+                    via parentIds:["hindu_surya"]; the existing figure even carries the note
+                    "twin of Yami". → exists-wire-only; the new Yamī figure carries a one-way
+                    twin-sibling relation to him, per the spec for an already-existing sibling.)
+
+================================================================================
+STEP 1 — EXISTENCE / GREP RESULTS
+================================================================================
+GREP of app/data.js for figure id-keys and bare names, and of data-sources/transcripts/:
+
+  • hindu_yama .................... EXISTS  (app/data.js line 145262). parentIds already
+                                    = ["hindu_surya"]; notes "son of Surya, twin of Yami".
+                                    Iconography elsewhere (Mahiṣāsura-tableau, l.441108)
+                                    even depicts "his sister Yami". → existingWired.
+  • hindu_yami / hindu_yamuna ..... ABSENT. "Yamunā" occurs only as a river/place-name and
+                                    in festival glosses ("Yama's visit to his sister
+                                    Yamī/Yamunā", Bhāī Dūj, l.303132). No figure id-key
+                                    "hindu_yami" or "hindu_yamuna" anywhere. → AUTHOR.
+                                    (Yamī and the river-goddess Yamunā are the SAME figure
+                                    in the corpus's own usage — authored once.)
+  • hindu_manu / hindu_vaivasvata_manu / hindu_vaivasvata
+                                    ABSENT as a figure. "Vaivasvata" occurs only as an
+                                    EPITHET inside the Yama entry (वैवस्वत, l.341061) and
+                                    Sūrya's own notes name "Manu (the progenitor of humanity)"
+                                    as his son (l.10383). No Manu figure exists. → AUTHOR.
+  • hindu_saranyu / hindu_sanjna / hindu_samjna  (the OTHER parent — the mother)
+                                    ABSENT. Saraṇyū is named only in prose: Tvaṣṭṛ-
+                                    Vishvakarman's relation (l.356135) records "Saranyu,
+                                    daughter of Tvashtr … mother of the Yama twins by
+                                    Vivasvat/Surya", and Sūrya's abandonment-of-Karṇa note
+                                    (l.10503). There is NO registered figure for her under
+                                    any of saranyu / sanjna / samjna. Per the HARD RULE that
+                                    parentIds must resolve to a registered or in-batch figure,
+                                    the mother is therefore NOT placed in parentIds (no id to
+                                    point at); both children are wired to hindu_surya only,
+                                    and Saraṇyū is named in notes + in transliteration
+                                    etymology so the maternity is recorded without an invented
+                                    id. (The Purāṇic doublet Saṃjñā/Chāyā is noted too.)
+  • Transcripts dir ............... no offspring-of-Sūrya transcript pre-exists; the four
+                                    hindu_* files that mention hindu_surya are unrelated
+                                    audit/notes files (no Yamī / Manu / Saranyu figures).
+
+================================================================================
+STEP 2 — WIRING & TYPING DECISIONS
+================================================================================
+PARENT EDGE (directed; no reciprocal required):
+  - hindu_yami  child of  hindu_surya   (parentRoles {hindu_surya:"father"})
+  - hindu_manu  child of  hindu_surya   (parentRoles {hindu_surya:"father"})
+  The mother (Saraṇyū / Saṃjñā) is unregistered → not in parentIds (no resolvable id);
+  recorded in notes/etymology instead. Both are children of Sūrya by Saraṇyū in canon.
+
+SIBLING EDGES (symmetric; reciprocated WITHIN this batch):
+  - hindu_yami  <->  hindu_manu     full siblings (both Sūrya×Saraṇyū). RECIPROCATED here.
+  one-way edge to the already-existing sibling (per spec):
+  - hindu_yami  ->  hindu_yama      TWIN sibling (Ṛgveda 10.10, the Yama–Yamī dialogue).
+                                    Added one-way on Yamī; the parent agent may add the
+                                    reciprocal twin-sibling on hindu_yama if desired.
+  - hindu_manu  ->  hindu_yama      sibling (both sons of Vivasvat). Added one-way on Manu.
+  (Manu and Yama are brothers in the solar genealogy though not the RV 10.10 twin-pair,
+   which is specifically Yama & Yamī; the dyadic "twin" tag is reserved for Yamī↔Yama.)
+
+TYPE BY DESCENT (anti-drift / anti-inversion):
+  Fraction = average of parents' divinity fractions; an UNREGISTERED second parent counts
+  as mortal(0), sum still /2. Sūrya = deity = 1.0; Saraṇyū unregistered → 0.0.
+    → fraction = (1.0 + 0.0) / 2 = 0.5  →  band 0.375–0.75  →  DEMIGOD.
+  Both Yamī/Yamunā and Vaivasvata Manu are authored as type "demigod". This is also the
+  drift-SAFE choice ("when unsure pick the LOWER tier"): a deity claim (needs >0.75) would
+  be auto-reclassified downward, whereas demigod is stable at the computed 0.5. (The
+  pre-existing twin hindu_yama is a legacy "deity" entry parented to Sūrya only; the
+  computation for the new figures follows the mandated formula and is noted per-figure.)
+  Manu is additionally the archetypal FIRST MAN / flood-survivor progenitor; demigod (a
+  divine-born mortal-ancestor) fits both the formula and the "first man" reading.
+
+ERA: every figure temporal.era = "vedic"; every lifecycle.era = "vedic" (exact cluster era;
+  keeps each child no earlier than the parent and prevents era-drift).
+
+LIFECYCLE (only for figures who die / transform):
+  - hindu_yami : transformation stage — descends/manifests as the earthly river Yamunā
+                 (deified river-goddess). Stage era "vedic".
+  - hindu_manu : he survives the deluge and lives on as progenitor; the registered stage is
+                 his survival-of-the-flood and re-peopling of the earth (he is the ancestor,
+                 not a god who dies). Stage era "vedic".
+
+SOURCES (all REAL; primary + scholarly secondary):
+  Ṛgveda 10.10 (Yama–Yamī dialogue); Ṛgveda 10.17.1–2 (Saraṇyū bears the twins to Vivasvat);
+  Ṛgveda 10.14, 10.63, 8.52 (Manu / Yama solar genealogy); Śatapatha Brāhmaṇa 1.8.1.1–6
+  (Mādhyandina; the fish saves Manu from the flood — the earliest flood account);
+  Matsya Purāṇa and Bhāgavata Purāṇa 8.24 (Manu & the fish); Bhāgavata / Mārkaṇḍeya /
+  Brahmāṇḍa Purāṇa (Saṃjñā/Chāyā genealogy, Yamunā & Yama children of Sūrya by Saṃjñā);
+  Yamunāṣṭakam (devotional hymn to the river-goddess).
+  Secondary: Wendy Doniger, The Rig Veda (Penguin Classics, 1981), "Yama rejects Yami" &
+  the Saraṇyū→Saṃjñā discussion; A.A. Macdonell, Vedic Mythology (1897), §§ on Yama, Manu,
+  and the Indo-European Twin/Man pair; David L. Haberman, River of Love in an Age of
+  Pollution: The Yamuna River of Northern India (Univ. of California Press, 2006).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "hindu_yami",
+  "name": {
+   "primary": "Yamī",
+   "alt": [
+    "Yami",
+    "Yamunā",
+    "Yamuna",
+    "Yamī Yamunā",
+    "Kālindī"
+   ],
+   "transliterations": {
+    "devanagari": "यमी",
+    "iast": "Yamī",
+    "etymology": "Sanskrit यमी (Yamī), the feminine of यम (yama) 'twin' (root yam- 'to hold, restrain, pair'); 'the female twin', sister of Yama. As the deified river she is यमुना (Yamunā), 'the twin (river)', and Kālindī, 'she of (Mount) Kalinda', her Himalayan source. Daughter of Vivasvat (Sūrya) by Saraṇyū (Ṛgveda 10.17); in the Purāṇic doublet the mother is Saṃjñā / Chāyā."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Hindu",
+  "primaryTradition": "Hindu",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "hindu_surya"
+  ],
+  "parentRoles": {
+   "hindu_surya": "father"
+  },
+  "temporal": {
+   "era": "vedic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "vedic",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-twin-of-yama-to-vivasvat-and-saranyu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ṛgveda 10.17.1-2; Ṛgveda 10.10 (the Yama–Yamī dialogue)"
+     }
+    ],
+    "notes": "Born the twin sister of Yama to Vivasvat (Sūrya) and Saraṇyū. In Ṛgveda 10.10 she urges Yama to lie with her so that the human race may continue; he refuses, citing ṛta and the bond of kin, and she is left grieving — the first woman set against the first death."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "vedic",
+    "eraOrdering": 1,
+    "startEvent": "manifestation-as-the-river-goddess-yamuna",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhāgavata Purāṇa; Brahmāṇḍa Purāṇa; Yamunāṣṭakam (devotional hymn to the river-goddess)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "David L. Haberman, River of Love in an Age of Pollution: The Yamuna River of Northern India (Univ. of California Press, 2006)"
+     }
+    ],
+    "notes": "Yamī descends from heaven and is manifest on earth as the river Yamunā (Kālindī), daughter of the Sun and sister of Death; bathing in her on Yama-dvitīyā (Bhāī Dūj) is said to avert Yama's realm. As the river-goddess she is venerated along her banks (the Braj pilgrimage country) as a goddess of love and grace."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "rivers-and-fresh-water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "यमुना",
+     "script": "Devanagari",
+     "rom": "yamunā"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Yamunāṣṭakam; Bhāgavata Purāṇa"
+     },
+     {
+      "kind": "secondary",
+      "reference": "David L. Haberman, River of Love in an Age of Pollution (2006)"
+     }
+    ],
+    "notes": "Goddess and personification of the river Yamunā, the great twin-river of the Ganga."
+   },
+   {
+    "sphereId": "love-and-grace",
+    "contextTag": "ritual",
+    "term": {
+     "value": "",
+     "script": "Devanagari",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "David L. Haberman, River of Love in an Age of Pollution (2006)"
+     }
+    ],
+    "notes": "In the Braj devotional tradition the Yamunā is conceived as flowing with liquid love (prema), bestowing grace on those who bathe in and worship her."
+   },
+   {
+    "sphereId": "fertility-and-the-continuance-of-the-race",
+    "contextTag": "mythic",
+    "term": {
+     "value": "",
+     "script": "Devanagari",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ṛgveda 10.10"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wendy Doniger, The Rig Veda (Penguin Classics, 1981)"
+     }
+    ],
+    "notes": "In the dialogue hymn Yamī is the principle of generation pressing for the continuance of mortals against Yama's refusal."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "purify-and-remit-by-her-waters",
+    "name": "Purifies and averts the realm of death for those who bathe in her",
+    "term": {
+     "value": "",
+     "script": "Devanagari",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As the river Yamunā she remits sin and, on Yama-dvitīyā, is said to keep the bather from her brother Yama's hells; a non-blood, cultic power of the river-goddess.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Yamunāṣṭakam; vrata tradition of Yama-dvitīyā (Bhāī Dūj)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "P.V. Kane, History of Dharmaśāstra, vol. V.1 (1958)"
+     }
+    ]
+   },
+   {
+    "id": "urge-the-continuance-of-mankind",
+    "name": "Pleads for the begetting of offspring to continue the human race",
+    "term": {
+     "value": "",
+     "script": "Devanagari",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "In Ṛgveda 10.10 she presses Yama for union so that mortals may have descendants; the mythic role, not a heritable power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ṛgveda 10.10"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "yamuna-tortoise-mount",
+    "kind": "mount",
+    "name": "Tortoise (kūrma)",
+    "term": {
+     "value": "कूर्म",
+     "script": "Devanagari",
+     "rom": "kūrma"
+    },
+    "role": "wielder",
+    "notes": "In river-goddess iconography the Yamunā stands upon a tortoise (the Gaṅgā upon a makara), the pair flanking temple doorways since the Gupta period.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Heinrich Zimmer, Myths and Symbols in Indian Art and Civilization (1946); standard Gupta doorway iconography"
+     }
+    ]
+   },
+   {
+    "id": "yamuna-water-pot",
+    "kind": "implement",
+    "name": "Water-pot (kalaśa)",
+    "term": {
+     "value": "कलश",
+     "script": "Devanagari",
+     "rom": "kalaśa"
+    },
+    "role": "wielder",
+    "notes": "The overflowing pot held by the river-goddess, sign of her perennial waters.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "David L. Haberman, River of Love in an Age of Pollution (2006)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "यमुना",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Yamunāṣṭakam; Purāṇic and Mahābhārata usage (rom. Yamunā, 'the twin river')"
+     }
+    ]
+   },
+   {
+    "original": "कालिन्दी",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhāgavata Purāṇa, daśama-skandha (rom. Kālindī, 'she of Mount Kalinda', her source)"
+     }
+    ]
+   },
+   {
+    "original": "सूर्यतनया",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Yamunāṣṭakam (rom. Sūrya-tanayā, 'daughter of the Sun')"
+     }
+    ]
+   },
+   {
+    "original": "यमस्वसृ",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vedic/Purāṇic epithet (rom. Yama-svasṛ, 'sister of Yama')"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "hindu_yama",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ṛgveda 10.10 (the Yama–Yamī dialogue); Ṛgveda 10.17.1-2"
+     }
+    ],
+    "notes": "Her twin brother, the god of death; the two are the twin children of Vivasvat (Sūrya) and Saraṇyū. One-way edge to the already-existing hindu_yama (whose own entry already records 'twin of Yami')."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hindu_manu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Purāṇic solar genealogy (children of Vivasvat/Sūrya); Bhāgavata Purāṇa"
+     }
+    ],
+    "notes": "Full brother in the solar line — Vaivasvata Manu, son of Vivasvat. Reciprocated within this batch."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Ṛgveda 10.10 (Yama–Yamī dialogue); Ṛgveda 10.17.1-2 (Saraṇyū bears the twins to Vivasvat)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Bhāgavata Purāṇa; Brahmāṇḍa Purāṇa; Yamunāṣṭakam"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wendy Doniger, The Rig Veda (Penguin Classics, 1981), 'Yama rejects Yami'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "David L. Haberman, River of Love in an Age of Pollution: The Yamuna River of Northern India (Univ. of California Press, 2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Yamī, the twin sister of Yama and, as the deified river Yamunā (Kālindī), a daughter of the Sun. Authored as ONE figure because the corpus uses 'Yamī/Yamunā' for a single person (cf. hindu_yama notes 'twin of Yami'; the Bhāī Dūj gloss 'his sister Yamī/Yamunā'). Child of Sūrya (parentId hindu_surya, father); her mother is Saraṇyū (Purāṇic Saṃjñā/Chāyā), who has no registered figure and so is named here rather than placed in parentIds. Typed demigod by the mandated descent rule (Sūrya deity 1.0 + unregistered mother 0.0, /2 = 0.5 → demigod; the drift-safe lower tier). Twin-sibling edge to the existing hindu_yama (one-way) and full-sibling edge to hindu_manu (reciprocated in-batch)."
+ },
+ {
+  "id": "hindu_manu",
+  "name": {
+   "primary": "Vaivasvata Manu",
+   "alt": [
+    "Manu",
+    "Vaivasvata",
+    "Manu Vaivasvata",
+    "Śrāddhadeva",
+    "Satyavrata"
+   ],
+   "transliterations": {
+    "devanagari": "वैवस्वत मनु",
+    "iast": "Vaivasvata Manu",
+    "etymology": "Sanskrit मनु (Manu), 'man, thinker' (root man- 'to think'); the archetypal first man and progenitor, cognate with Germanic *Mannaz. The patronymic वैवस्वत (Vaivasvata) means 'son of Vivasvat (the Sun)', marking him the offspring of Sūrya. Of the fourteen Manus of the cosmic ages he is the seventh, Manu of the present manvantara."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Hindu",
+  "primaryTradition": "Hindu",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "hindu_surya"
+  ],
+  "parentRoles": {
+   "hindu_surya": "father"
+  },
+  "temporal": {
+   "era": "vedic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "vedic",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-son-of-vivasvat-progenitor-of-mankind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ṛgveda 8.52.1; 10.63.7 (Manu, son of Vivasvat); Mahābhārata, Ādi & Vana Parvans"
+     }
+    ],
+    "notes": "Born to Vivasvat (Sūrya) by Saraṇyū / Saṃjñā; the patriarch Manu Vaivasvata, father of the human race (mānava) and founder of the solar dynasty (Ikṣvāku, his son)."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "vedic",
+    "eraOrdering": 1,
+    "startEvent": "survival-of-the-deluge-and-re-peopling-of-the-earth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Śatapatha Brāhmaṇa 1.8.1.1-6 (Mādhyandina; the fish saves Manu from the flood); Matsya Purāṇa; Bhāgavata Purāṇa 8.24"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A.A. Macdonell, Vedic Mythology (1897)"
+     }
+    ],
+    "notes": "A small fish (later Viṣṇu's Matsya) warns Manu of a world-destroying flood; he builds and tethers a ship to the fish's horn and rides out the deluge on the northern mountain. The sole survivor, he performs the pāka-sacrifice from which the woman Iḍā arises, and from them the renewed human race descends. He survives — the deathless first ancestor — and lives on as progenitor and first lawgiver."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "progenitorship-of-mankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "मनु",
+     "script": "Devanagari",
+     "rom": "manu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Śatapatha Brāhmaṇa 1.8.1; Ṛgveda 10.63.7"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A.A. Macdonell, Vedic Mythology (1897)"
+     }
+    ],
+    "notes": "Father of the human race; mankind are mānava, 'descendants of Manu'."
+   },
+   {
+    "sphereId": "law-and-dharma",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "मनुस्मृति",
+     "script": "Devanagari",
+     "rom": "manusmṛti"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Manusmṛti (Mānava-dharma-śāstra), the law-code ascribed to Manu"
+     }
+    ],
+    "notes": "First lawgiver of mankind; the Manusmṛti (Laws of Manu) is attributed to him."
+   },
+   {
+    "sphereId": "kingship-and-the-solar-dynasty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Devanagari",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mahābhārata; Viṣṇu Purāṇa; Rāmāyaṇa (the Sūryavaṃśa genealogy)"
+     }
+    ],
+    "notes": "Founder of the Sūryavaṃśa (solar dynasty); his son Ikṣvāku is the first king of the line of Rāma."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "survive-the-deluge",
+    "name": "Rides out the world-flood by the fish-guided ship",
+    "term": {
+     "value": "",
+     "script": "Devanagari",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Heeds the fish's warning, builds a ship and tethers it to the horned Matsya, surviving the deluge that ends the age; a one-time saving, not a heritable power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Śatapatha Brāhmaṇa 1.8.1.1-6; Matsya Purāṇa"
+     }
+    ]
+   },
+   {
+    "id": "regenerate-the-human-race",
+    "name": "Re-peoples the earth as father of mankind",
+    "term": {
+     "value": "",
+     "script": "Devanagari",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "notes": "From his post-flood sacrifice arises Iḍā, and from Manu the whole renewed human race (mānava) descends — a propagative power that is, by definition, the line of blood-descent he founds.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Śatapatha Brāhmaṇa 1.8.1.7-10 (the arising of Iḍā and the descent of mankind)"
+     }
+    ]
+   },
+   {
+    "id": "promulgate-the-law-of-men",
+    "name": "Lays down the law and duties of mankind",
+    "term": {
+     "value": "धर्म",
+     "script": "Devanagari",
+     "rom": "dharma"
+    },
+    "inheritability": "none",
+    "notes": "As first king and lawgiver he establishes the dharma later codified as the Manusmṛti.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Manusmṛti 1.1-1.119"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "manu-ship-of-the-flood",
+    "kind": "implement",
+    "name": "Ship tethered to the fish's horn",
+    "term": {
+     "value": "नौ",
+     "script": "Devanagari",
+     "rom": "nau"
+    },
+    "role": "wielder",
+    "notes": "The vessel Manu built and bound by a rope to the horn of the giant fish, by which he was drawn over the flood-waters to the northern mountain.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Śatapatha Brāhmaṇa 1.8.1.4-6; Matsya Purāṇa"
+     }
+    ]
+   },
+   {
+    "id": "manu-dharmashastra",
+    "kind": "text",
+    "name": "Mānava-dharma-śāstra (Laws of Manu)",
+    "term": {
+     "value": "मनुस्मृति",
+     "script": "Devanagari",
+     "rom": "manusmṛti"
+    },
+    "role": "ascribed-author",
+    "notes": "The foundational Hindu law-code traditionally promulgated by Manu to mankind.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Manusmṛti (Mānava-dharma-śāstra)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "वैवस्वत",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ṛgveda 10.14.1; Mahābhārata (rom. Vaivasvata, 'son of Vivasvat / the Sun')"
+     }
+    ]
+   },
+   {
+    "original": "श्राद्धदेव",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhāgavata Purāṇa; Mahābhārata (rom. Śrāddhadeva, 'god of the funerary offering')"
+     }
+    ]
+   },
+   {
+    "original": "सत्यव्रत",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bhāgavata Purāṇa 8.24 (rom. Satyavrata, the king Manu of the flood narrative)"
+     }
+    ]
+   },
+   {
+    "original": "मानवपिता",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A.A. Macdonell, Vedic Mythology (1897) (rom. mānava-pitā, 'father of mankind')"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_yami",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Purāṇic solar genealogy (children of Vivasvat/Sūrya); Bhāgavata Purāṇa"
+     }
+    ],
+    "notes": "Full sister in the solar line — Yamī / the river Yamunā, daughter of Vivasvat. Reciprocated within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hindu_yama",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ṛgveda 10.14; Purāṇic solar genealogy (Manu and Yama both sons of Vivasvat)"
+     }
+    ],
+    "notes": "Brother — Yama, lord of the dead, the other son of Vivasvat. One-way edge to the already-existing hindu_yama. (The dyadic 'twin' is Yama & Yamī specifically; Manu is brother, not twin.)"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Ṛgveda 8.52.1; 10.63.7 (Manu son of Vivasvat); Śatapatha Brāhmaṇa 1.8.1.1-10 (the flood and the arising of Iḍā)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Matsya Purāṇa; Bhāgavata Purāṇa 8.24; Mahābhārata, Vana Parva (the Matsya–Manu episode)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A.A. Macdonell, Vedic Mythology (1897), on Manu, Yama and the Indo-European 'Man/Twin' pair"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wendy Doniger, The Rig Veda (Penguin Classics, 1981)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Vaivasvata Manu, son of Vivasvat (Sūrya), the progenitor of mankind and survivor of the great deluge — the Indian counterpart of the flood-patriarch. Child of Sūrya (parentId hindu_surya, father); his mother is Saraṇyū / Saṃjñā, who has no registered figure and so is named here rather than placed in parentIds. Typed demigod by the mandated descent rule (Sūrya deity 1.0 + unregistered mother 0.0, /2 = 0.5 → demigod) and by the 'first man / divine-born mortal-ancestor' reading; this is the drift-safe lower tier (a deity claim would be auto-reclassified down). Full-sibling edge to hindu_yami (reciprocated in-batch) and brother-edge to the existing hindu_yama (one-way). 'Vaivasvata' currently exists in the corpus only as an epithet inside the Yama entry; this is his first standalone figure."
+ }
+]
+```
+
+================================================================================
+STEP 3 — SUMMARY
+================================================================================
+AUTHORED (genuinely absent, written above):
+  - hindu_yami  (Yamī / the river-goddess Yamunā) — demigod, era vedic
+  - hindu_manu  (Vaivasvata Manu, progenitor of mankind) — demigod, era vedic
+
+EXISTING — WIRE-ONLY (not re-authored):
+  - hindu_yama  — already parented to hindu_surya; the new hindu_yami carries a one-way
+                  "twin sibling" relation to it, and hindu_manu a one-way "sibling" relation.
+                  The parent agent may add reciprocal sibling/twin-sibling edges on hindu_yama.
+
+OTHER PARENT (the mother), unregistered → recorded in notes/etymology, NOT in parentIds:
+  - Saraṇyū / Saṃjñā (Chāyā) — no figure id exists under saranyu / sanjna / samjna.
+
+IN-BATCH RECIPROCAL SIBLING EDGES (both present):
+  - hindu_yami <-> hindu_manu   (full siblings, solar line).
+
+RECIPROCAL-NEEDED on an existing figure (optional, for the parent agent):
+  - hindu_yama  twin sibling  hindu_yami   (add reciprocal twin-sibling on hindu_yama)
+  - hindu_yama  sibling       hindu_manu   (add reciprocal sibling on hindu_yama)

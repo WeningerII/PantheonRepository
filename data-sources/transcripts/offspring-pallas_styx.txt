@@ -1,0 +1,697 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Greek (Hesiodic theogony)
+Era (registered, exact): "titanomachy"
+Cluster: children of Pallas (greek_hesiod_pallas_titan, deity) by the Oceanid Styx
+(greek_hesiod_styx, deity).
+Author pass: the winged enforcer-spirits of Zeus — the personified abstractions
+born of Pallas and Styx that are still MISSING from the corpus.
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+The locus classicus is Hesiod, Theogony 383–403: "And Styx the daughter of Ocean
+was joined to Pallas and bore Zelos (Emulation/Rivalry) and trim-ankled Nike
+(Victory) in the house; and she brought forth Kratos (Strength) and Bia (Force),
+wonderful children. These have no house apart from Zeus, nor any dwelling nor path
+except where the god leads them, but they dwell always beside Zeus the loud-
+thunderer." When Styx was first of the immortals to come with her children to aid
+Zeus in the war against the Titans, Zeus honoured her by keeping her offspring at
+his side forever (Theog. 389–403). The four are thus the personified war-powers
+and winged attendants/enforcers of the throne of Zeus.
+
+Two of the four (Kratos and Bia) are the named agents who open Aeschylus,
+Prometheus Bound (1–87): sent by Zeus, they drag the captive Prometheus to the
+Scythian crag and compel the reluctant Hephaestus to fetter him. Kratos
+(Strength/Power) speaks and embodies brute, pitiless authority; Bia (Force) stands
+by in silence. Apollodorus, Bibliotheca 1.2.4 repeats the Hesiodic parentage
+(Pallas + Styx → Nike, Kratos, Zelos, Bia).
+
+Standard modern scholarship used here:
+  • M. L. West, Hesiod: Theogony, Edited with Prolegomena and Commentary (Oxford:
+    Clarendon Press, 1966), on lines 383–403 (the Styx genealogy and the war-
+    powers as throne-attendants of Zeus).
+  • Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources
+    (Baltimore: Johns Hopkins University Press, 1993), pp. 26–28 (children of
+    Pallas and Styx).
+  • A. F. Garvie / Mark Griffith, ed., Aeschylus: Prometheus Bound (Cambridge:
+    Cambridge University Press, 1983), on the prologue (Kratos and Bia).
+
+THREE firmly-attested children are authored here: ZELUS (Zelos), KRATOS (Kratos/
+Cratus) and BIA. NIKE is NOT re-authored — she already exists as
+greek_hesiod_nike — and is wired as their sibling (one-way, since the reciprocal
+must be added on the existing Nike entry).
+
+TYPE (by descent). Both parents are deities — Pallas (greek_hesiod_pallas_titan,
+divinity fraction 1.0) and Styx (greek_hesiod_styx, 1.0). The average is 1.0
+(> 0.75), so each child is a DEITY. They are personified-abstraction deities and
+are deathless throne-attendants of Zeus (vitalStatus living; no death/transform
+event, so no lifecycle array is authored, matching the existing Nike entry which
+likewise omits lifecycle).
+
+WIRING.
+  - parentIds: ["greek_hesiod_pallas_titan", "greek_hesiod_styx"]
+    parentRoles: { greek_hesiod_pallas_titan: "father",
+                   greek_hesiod_styx: "mother" } (Theog. 383–385; Apollod. 1.2.4)
+  - sibling → each of the other two new children (reciprocated WITHIN this batch)
+  - sibling → greek_hesiod_nike (existing; one-way here — reciprocal to be added
+    on the Nike entry)
+
+RECIPROCAL-NEEDED (symmetric ties to the existing corpus — add on the existing
+figure):
+  - greek_hesiod_nike  sibling  greek_hesiod_zelus   (add reciprocal on greek_hesiod_nike)
+  - greek_hesiod_nike  sibling  greek_hesiod_kratos  (add reciprocal on greek_hesiod_nike)
+  - greek_hesiod_nike  sibling  greek_hesiod_bia     (add reciprocal on greek_hesiod_nike)
+
+NOTE ON PARENT EDGES (directed; no reciprocal required): Pallas already carries
+father-of and Styx mother-of edges to Nike; the existing Pallas/Styx entries may
+additionally want father-of/mother-of edges to the three new children, but those
+are directed and handled on the parent figures, not here.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "greek_hesiod_zelus",
+  "name": {
+   "primary": "Zelus",
+   "alt": [
+    "Zelos",
+    "Zelus (Emulation)",
+    "Zelos (Rivalry)"
+   ],
+   "transliterations": {
+    "greek": "Ζῆλος",
+    "etymology": "Greek ζῆλος (zēlos), 'zeal, emulation, rivalry, eager striving'; from the same root as ζηλόω 'to emulate, to vie'. Personified as the spirit of competitive emulation and jealous rivalry."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "greek_hesiod_pallas_titan",
+   "greek_hesiod_styx"
+  ],
+  "parentRoles": {
+   "greek_hesiod_pallas_titan": "father",
+   "greek_hesiod_styx": "mother"
+  },
+  "temporal": {
+   "era": "titanomachy"
+  },
+  "domains": [
+   {
+    "sphereId": "emulation-and-rivalry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ζῆλος",
+     "script": "Greek",
+     "rom": "zelos"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 384"
+     }
+    ],
+    "notes": "Personified spirit of zeal, emulation and jealous rivalry — the competitive striving for glory."
+   },
+   {
+    "sphereId": "attendance-on-zeus",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 386-388"
+     },
+     {
+      "kind": "secondary",
+      "reference": "M. L. West, Hesiod: Theogony (Oxford, 1966), comm. on 383-403"
+     }
+    ],
+    "notes": "Has no house or path apart from Zeus; dwells always beside the loud-thunderer as one of the four warrior-spirits Styx brought to his side."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "stir-emulous-rivalry",
+    "name": "Stirs zealous emulation and jealous rivalry",
+    "term": {
+     "value": "ζηλοῦν",
+     "script": "Greek",
+     "rom": "zeloun"
+    },
+    "inheritability": "none",
+    "notes": "Embodiment of the eager striving and envious rivalry by which mortals and gods vie for honour; an abstraction, not a heritable bloodline power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 384"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth (Johns Hopkins, 1993), 26-28"
+     }
+    ]
+   },
+   {
+    "id": "attend-the-throne-of-zeus",
+    "name": "Stands in perpetual attendance at the throne of Zeus",
+    "term": {
+     "value": "ναίειν πὰρ Ζηνί",
+     "script": "Greek",
+     "rom": "naiein par Zeni"
+    },
+    "inheritability": "none",
+    "notes": "One of the war-powers kept beside Zeus after Styx brought her children first to his aid against the Titans.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 386-403"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "ἐϋσφύρου ... ἀγλαὰ τέκνα (with trim-ankled Nike, 'splendid children' of Styx)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 384-385"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_kratos",
+    "era": "titanomachy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     }
+    ],
+    "notes": "Full sibling; fellow child of Pallas and Styx, fellow throne-attendant of Zeus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_bia",
+    "era": "titanomachy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     }
+    ],
+    "notes": "Full sibling; fellow child of Pallas and Styx."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_nike",
+    "era": "titanomachy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     }
+    ],
+    "notes": "Full sibling; trim-ankled Nike, fellow child of Pallas and Styx (reciprocal to be added on the existing Nike entry)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     },
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 1.2.4"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources (Johns Hopkins University Press, 1993), 26-28"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Zelos (Emulation/Rivalry), the personified spirit of zealous rivalry and one of the four winged warrior-spirits and throne-attendants of Zeus. Son of the Titan Pallas (greek_hesiod_pallas_titan) and the Oceanid Styx (greek_hesiod_styx); brother of Kratos, Bia and the existing Nike (greek_hesiod_nike). Authored as a deity (both parents deities). A personified abstraction; deathless, so no lifecycle event is recorded, matching the existing Nike entry."
+ },
+ {
+  "id": "greek_hesiod_kratos",
+  "name": {
+   "primary": "Kratos",
+   "alt": [
+    "Cratus",
+    "Cratos",
+    "Kratos (Strength)",
+    "Potestas (Latin)"
+   ],
+   "transliterations": {
+    "greek": "Κράτος",
+    "etymology": "Greek κράτος (kratos), 'strength, might, power, mastery, dominion'; cognate with κρατύς 'strong' and κρατεῖν 'to rule, to prevail'. Personified as sovereign Strength/Power."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "greek_hesiod_pallas_titan",
+   "greek_hesiod_styx"
+  ],
+  "parentRoles": {
+   "greek_hesiod_pallas_titan": "father",
+   "greek_hesiod_styx": "mother"
+  },
+  "temporal": {
+   "era": "titanomachy"
+  },
+  "domains": [
+   {
+    "sphereId": "strength-and-sovereign-power",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "κράτος",
+     "script": "Greek",
+     "rom": "kratos"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 385"
+     }
+    ],
+    "notes": "Personified spirit of strength, might and sovereign power — the mastery by which Zeus prevails and rules."
+   },
+   {
+    "sphereId": "enforcement-of-zeus-will",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus, Prometheus Bound 1-87"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Mark Griffith, ed., Aeschylus: Prometheus Bound (Cambridge, 1983), comm. on the prologue"
+     }
+    ],
+    "notes": "Speaking agent of Zeus who, with silent Bia, drags Prometheus to the Scythian crag and compels Hephaestus to chain him; the embodiment of pitiless executive power."
+   },
+   {
+    "sphereId": "attendance-on-zeus",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 386-403"
+     }
+    ],
+    "notes": "Has no house or path apart from Zeus; one of the four warrior-spirits kept always beside him."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "embody-sovereign-strength",
+    "name": "Embodies strength and sovereign mastery",
+    "term": {
+     "value": "κρατεῖν",
+     "script": "Greek",
+     "rom": "kratein"
+    },
+    "inheritability": "none",
+    "notes": "Personification of κράτος, the might by which the ruler prevails; an abstraction, not a heritable bloodline trait.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 385"
+     }
+    ]
+   },
+   {
+    "id": "bind-prometheus",
+    "name": "Fetters the enemies of Zeus and enforces his decrees",
+    "term": {
+     "value": "δεσμεύειν",
+     "script": "Greek",
+     "rom": "desmeuein"
+    },
+    "inheritability": "none",
+    "notes": "In Prometheus Bound he leads the captive Titan to the rock and orders Hephaestus to rivet his chains, threatening the wrath of Zeus; the executive arm of divine sovereignty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus, Prometheus Bound 1-87"
+     }
+    ]
+   },
+   {
+    "id": "attend-the-throne-of-zeus",
+    "name": "Stands in perpetual attendance at the throne of Zeus",
+    "term": {
+     "value": "ναίειν πὰρ Ζηνί",
+     "script": "Greek",
+     "rom": "naiein par Zeni"
+    },
+    "inheritability": "none",
+    "notes": "Kept beside Zeus after Styx brought her children first to his aid against the Titans.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 386-403"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kratos-fetters-of-prometheus",
+    "kind": "implement",
+    "name": "Adamantine fetters of Prometheus",
+    "term": {
+     "value": "ἀδαμάντινοι δεσμοί",
+     "script": "Greek",
+     "rom": "adamantinoi desmoi"
+    },
+    "role": "wielded",
+    "notes": "The unbreakable bonds and wedge with which, at Kratos' command, Hephaestus chains Prometheus to the Scythian crag in the prologue of Prometheus Bound.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus, Prometheus Bound 6, 19-20, 52-81"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "ἀγλαὰ τέκνα ('splendid children' of Styx)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 385"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_zelus",
+    "era": "titanomachy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     }
+    ],
+    "notes": "Full sibling; fellow child of Pallas and Styx, fellow throne-attendant of Zeus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_bia",
+    "era": "titanomachy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385; Aeschylus, Prometheus Bound 12-13"
+     }
+    ],
+    "notes": "Full sibling; his constant companion, the silent Bia, with whom he binds Prometheus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_nike",
+    "era": "titanomachy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     }
+    ],
+    "notes": "Full sibling; trim-ankled Nike, fellow child of Pallas and Styx (reciprocal to be added on the existing Nike entry)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     },
+     {
+      "kind": "primary",
+      "reference": "Aeschylus, Prometheus Bound 1-87"
+     },
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 1.2.4"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources (Johns Hopkins University Press, 1993), 26-28"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Kratos (Strength/Power), the personified spirit of might and sovereign mastery, one of the four winged warrior-spirits and the executive enforcer of Zeus. With his sister Bia he opens Aeschylus' Prometheus Bound, dragging the Titan to the crag and compelling Hephaestus to chain him. Son of the Titan Pallas (greek_hesiod_pallas_titan) and the Oceanid Styx (greek_hesiod_styx); brother of Zelos, Bia and the existing Nike (greek_hesiod_nike). Authored as a deity (both parents deities). A personified abstraction; deathless, so no lifecycle event is recorded."
+ },
+ {
+  "id": "greek_hesiod_bia",
+  "name": {
+   "primary": "Bia",
+   "alt": [
+    "Bia (Force)",
+    "Vis (Latin)"
+   ],
+   "transliterations": {
+    "greek": "Βία",
+    "etymology": "Greek βία (bia), 'force, violence, bodily strength, compulsion'; cognate with βιάζω 'to constrain, to overpower by force'. Personified as the spirit of brute Force and violent compulsion."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "greek_hesiod_pallas_titan",
+   "greek_hesiod_styx"
+  ],
+  "parentRoles": {
+   "greek_hesiod_pallas_titan": "father",
+   "greek_hesiod_styx": "mother"
+  },
+  "temporal": {
+   "era": "titanomachy"
+  },
+  "domains": [
+   {
+    "sphereId": "force-and-violent-compulsion",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "βία",
+     "script": "Greek",
+     "rom": "bia"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 385"
+     }
+    ],
+    "notes": "Personified spirit of brute force, violence and bodily compulsion — the raw constraint paired with her brother's sovereign strength."
+   },
+   {
+    "sphereId": "enforcement-of-zeus-will",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus, Prometheus Bound 1-87"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Mark Griffith, ed., Aeschylus: Prometheus Bound (Cambridge, 1983), comm. on the prologue"
+     }
+    ],
+    "notes": "Silent agent of Zeus who, with the speaking Kratos, brings Prometheus to the crag for fettering; embodiment of mute, implacable violence."
+   },
+   {
+    "sphereId": "attendance-on-zeus",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 386-403"
+     }
+    ],
+    "notes": "Has no house or path apart from Zeus; one of the four warrior-spirits kept always beside him."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "embody-brute-force",
+    "name": "Embodies brute force and violent compulsion",
+    "term": {
+     "value": "βιάζειν",
+     "script": "Greek",
+     "rom": "biazein"
+    },
+    "inheritability": "none",
+    "notes": "Personification of βία, the violence that compels and overpowers; an abstraction, not a heritable bloodline trait.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 385"
+     }
+    ]
+   },
+   {
+    "id": "compel-by-force",
+    "name": "Compels and overpowers the enemies of Zeus",
+    "term": {
+     "value": "βίᾳ δαμάζειν",
+     "script": "Greek",
+     "rom": "biai damazein"
+    },
+    "inheritability": "none",
+    "notes": "In Prometheus Bound she stands as the mute force that helps bring the Titan to his chaining; the violent counterpart to Kratos' authority.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus, Prometheus Bound 12-13"
+     }
+    ]
+   },
+   {
+    "id": "attend-the-throne-of-zeus",
+    "name": "Stands in perpetual attendance at the throne of Zeus",
+    "term": {
+     "value": "ναίειν πὰρ Ζηνί",
+     "script": "Greek",
+     "rom": "naiein par Zeni"
+    },
+    "inheritability": "none",
+    "notes": "Kept beside Zeus after Styx brought her children first to his aid against the Titans.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 386-403"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "ἀγλαὰ τέκνα ('splendid children' of Styx)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 385"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_zelus",
+    "era": "titanomachy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     }
+    ],
+    "notes": "Full sibling; fellow child of Pallas and Styx, fellow throne-attendant of Zeus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_kratos",
+    "era": "titanomachy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385; Aeschylus, Prometheus Bound 12-13"
+     }
+    ],
+    "notes": "Full sibling and constant companion; with Kratos she binds Prometheus in the prologue of Prometheus Bound."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_nike",
+    "era": "titanomachy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     }
+    ],
+    "notes": "Full sibling; trim-ankled Nike, fellow child of Pallas and Styx (reciprocal to be added on the existing Nike entry)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 383-385"
+     },
+     {
+      "kind": "primary",
+      "reference": "Aeschylus, Prometheus Bound 1-87"
+     },
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 1.2.4"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources (Johns Hopkins University Press, 1993), 26-28"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Bia (Force), the personified spirit of brute force and violent compulsion, one of the four winged warrior-spirits of Zeus. The silent companion of Kratos in the prologue of Aeschylus' Prometheus Bound, where the two bring the Titan to be chained. Daughter of the Titan Pallas (greek_hesiod_pallas_titan) and the Oceanid Styx (greek_hesiod_styx); sister of Zelos, Kratos and the existing Nike (greek_hesiod_nike). Authored as a deity (both parents deities). Hesiod treats Bia as female among Styx's children; she is a personified abstraction, deathless, so no lifecycle event is recorded."
+ }
+]
+```
+
+SOLITARY:
+  (none — all three children are wired to both parents and to their siblings.)
+
+RECIPROCAL-NEEDED (symmetric ties to existing corpus figures — add the reciprocal
+on the existing figure):
+  - greek_hesiod_nike  sibling  greek_hesiod_zelus    (add reciprocal sibling on greek_hesiod_nike)
+  - greek_hesiod_nike  sibling  greek_hesiod_kratos   (add reciprocal sibling on greek_hesiod_nike)
+  - greek_hesiod_nike  sibling  greek_hesiod_bia      (add reciprocal sibling on greek_hesiod_nike)
+
+NOTE ON PARENT EDGES (directed; no reciprocal required within this file):
+  - greek_hesiod_zelus   child of  greek_hesiod_pallas_titan (father) and greek_hesiod_styx (mother)
+  - greek_hesiod_kratos  child of  greek_hesiod_pallas_titan (father) and greek_hesiod_styx (mother)
+  - greek_hesiod_bia     child of  greek_hesiod_pallas_titan (father) and greek_hesiod_styx (mother)
+  (Pallas and Styx may additionally carry father-of/mother-of edges to the three
+  new children; those are directed and handled on the parent figures.)

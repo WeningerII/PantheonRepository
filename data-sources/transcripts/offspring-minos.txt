@@ -1,0 +1,1387 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Greek (Cretan dynasty — children of Minos × Pasiphae)
+Era (registered, exact, for every child): "heroic-age"
+Author pass: the four still-MISSING children of Minos requested for authoring —
+Ariadne, Androgeos, Catreus, and Glaucus son of Crete (the boy revived from the
+honey-jar). Phaedra is NOT re-authored (already registered as greek_phaedra).
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISIONS
+================================================================================
+
+PARENT CLUSTER. The directed parent edge for every child is greek_minos
+(registered; type demigod, half-Olympian son of Zeus by Europa, king of Crete and
+later judge of the dead). Minos's existing record lists each of these children only
+as an external-reference ("father-of … not registered as Pasiphae-line cascade"),
+so none of the four exists yet as a registered figure (confirmed by grep: no
+id 'greek_ariadne' / 'greek_androgeos' / 'greek_catreus' / 'greek_glaucus_minos',
+and the only registered Glaucus is greek_glaucus_corinth, the Corinthian
+taraxippus, a wholly distinct figure). parentRoles {greek_minos:"father"}.
+
+SECOND PARENT — PASIPHAE. The mother of all four is Pasiphae (daughter of Helios).
+Per the authoring brief I grepped for greek_pasiphae: there is NO registered
+figure (app/data.js line ~6301 holds only a section-comment placeholder
+"Pasiphae — sun-daughter wife of Minos", with no id). Pasiphae is therefore an
+UNREGISTERED second parent. She is not added to parentIds (matching the corpus
+convention already used for greek_phaedra, whose parentIds = ['greek_minos'] only,
+and for the Theseus×Phaedra children greek_apollod_acamas / greek_apollod_demophon,
+whose parentIds list only the registered parent). She is named in each child's
+lifecycle and relations (as an externalRef mother) and in notes.
+
+TYPE BY DESCENT (anti-drift rule). Minos = demigod (divinity fraction 0.5). The
+second parent Pasiphae is unregistered and is therefore counted as mortal (0) for
+the fraction math, with the sum still divided by 2: (0.5 + 0) / 2 = 0.25. 0.25
+falls in the quartigod band (0.1875–0.375). All four children are accordingly
+authored as type "quartigod". This is exactly the precedent already in the corpus:
+greek_apollod_acamas and greek_apollod_demophon (Theseus demigod × Phaedra
+unregistered-mortal) are both registered as "quartigod". None of these four is a
+historical human, so the "author historical humans as mortal" carve-out does not
+apply; quartigod stands. (Note the mythological subtlety, recorded in notes but NOT
+used to inflate the tier: Pasiphae is herself a daughter of Helios, so in full myth
+these children are divinely descended on both sides; because she is unregistered the
+strict descent math counts her as mortal and the LOWER tier is taken, per the rule.)
+
+SIBLINGS. The full sibling set of Minos × Pasiphae in Apollodorus 3.1.2 is
+Ariadne, Phaedra, Androgeos, Glaucus, Catreus, and Deucalion (son of Minos).
+Phaedra is the already-existing sibling (greek_phaedra): each of the four authored
+figures carries a ONE-WAY sibling relation to greek_phaedra (the brief's rule for an
+already-registered sibling). The four authored figures are wired as siblings to one
+another RECIPROCALLY within this batch. Deucalion-son-of-Minos and the Minotaur are
+unregistered and are given as externalRef sibling/half-sibling notes only where
+attested, not as resolvable personIds.
+
+PER-FIGURE NOTES.
+
+  • ARIADNE (greek_ariadne) — daughter of Minos and Pasiphae; gave Theseus the
+    clew/thread of wool that let him escape the Labyrinth after killing the Minotaur
+    (Apollod. Epit. 1.8–9; Plut. Thes. 19; Catullus 64). Abandoned by Theseus on
+    Naxos; became the consort/wife of Dionysus, who set her bridal crown (made by
+    Hephaestus) in the sky as the constellation Corona Borealis, and by whom (per
+    Hesiod Theog. 947–949) she was made immortal and ageless. Wired: father
+    greek_minos; mother (externalRef) Pasiphae; siblings (the three other authored
+    children + one-way greek_phaedra); lover greek_apollod_theseus (registered, ended
+    by abandonment on Naxos); spouse/consort greek_hesiod_dionysus (registered).
+    vitalStatus living (deified-immortalized by Dionysus, Theog. 949 "deathless and
+    ageless"); a lifecycle apotheosis stage is recorded, era heroic-age.
+
+  • ANDROGEOS (greek_androgeos) — son of Minos and Pasiphae; an outstanding athlete
+    who won every contest at the Athenian Panathenaic games and was then killed —
+    either by the other competitors out of envy, or sent by Aegeus against the
+    Marathonian Bull, which slew him (Apollod. 3.15.7; Diod. 4.60.5; Plut. Thes. 15).
+    His death is the casus belli for which Minos made war on Athens and imposed the
+    tribute of youths and maidens to the Minotaur. Father of Alcaeus and Sthenelus,
+    whom Heracles later took from Paros (Apollod. 2.5.9). Wired: father greek_minos;
+    mother (externalRef) Pasiphae; siblings as above. Dies → lifecycle death stage,
+    era heroic-age, vitalStatus deceased.
+
+  • CATREUS (greek_catreus) — eldest son of Minos and Pasiphae; king of Crete after
+    Minos. An oracle foretold he would die at the hand of one of his own children;
+    he sent his daughters Aerope and Clymene abroad (Aerope to Nauplius, becoming
+    ancestress of the house of Atreus) and his son Althaemenes fled to Rhodes to
+    avoid fulfilling it. In old age Catreus sailed to Rhodes to leave his kingdom to
+    Althaemenes; not recognized, he was killed by Althaemenes' spear/thrown stone —
+    the prophesied death by his own child (Apollod. 3.2.1–2; Diod. 5.59). Grandfather,
+    through Aerope, of Agamemnon and Menelaus; the funeral of Catreus is the pretext
+    that draws Menelaus from Sparta in the Helen-abduction tradition. Wired: father
+    greek_minos; mother (externalRef) Pasiphae; siblings as above; children given as
+    externalRef (Althaemenes, Aerope, Apemosyne, Clymene — none registered). Dies →
+    lifecycle death stage, era heroic-age, vitalStatus deceased.
+
+  • GLAUCUS SON OF CRETE (greek_glaucus_minos) — the young son of Minos and Pasiphae
+    who, chasing a mouse (or a ball), fell into a great jar (pithos) of honey and
+    drowned. Minos, told by the Curetes that whoever could best describe a strange
+    three-coloured calf in his herds could revive the boy, was answered by the seer
+    Polyidus of Argos (likening it to a ripening blackberry). Polyidus found the body
+    by augury; shut in the tomb with the corpse, he saw a serpent revive a dead
+    serpent with a herb, used the same herb to raise Glaucus, and (forced to teach the
+    boy divination) on departing had Glaucus spit in his mouth, undoing the lesson
+    (Apollod. 3.3.1–2; Hyg. Fab. 136; the lost Sophocles "Manteis"/Polyidus and
+    Euripides "Polyidus"). A variant names Asclepius as the reviver (Apollod. 3.10.3,
+    among those Asclepius raised). Wired: father greek_minos; mother (externalRef)
+    Pasiphae; siblings as above; reviver Polyidus given as externalRef (unregistered);
+    Asclepius variant noted. He DIES and is RESURRECTED within the heroic-age, so the
+    lifecycle carries a death stage and a restored-to-life stage, both era heroic-age;
+    final vitalStatus living (raised by Polyidus). Distinct from greek_glaucus_corinth
+    (the Corinthian, eaten by his mares) and from Glaucus the sea-god and Glaucus the
+    Lycian — the disambiguation is stated in notes.
+
+PRIMARY/SECONDARY SCHOLARSHIP USED (real, non-fabricated):
+  - Apollodorus, Bibliotheca (Library) 3.1.2 (the children-list), 3.2.1–2 (Catreus),
+    3.3.1–2 (Glaucus & Polyidus), 3.15.7 (Androgeos), 3.10.3 (Asclepius variant),
+    2.5.9 (Androgeos's sons on Paros), Epitome 1.7–9 (Ariadne & Theseus).
+  - Hesiod, Theogony 947–949 (Dionysus weds golden-haired Ariadne; Zeus makes her
+    deathless and ageless).
+  - Diodorus Siculus 4.60.4–5, 4.61 (Androgeos), 5.59 (Catreus, Althaemenes).
+  - Plutarch, Theseus 15–19 (Androgeos's death, the tribute, Ariadne's thread).
+  - Hyginus, Fabulae 41–43 (Androgeos/tribute), 136 (Glaucus & Polyidus), 47;
+    Astronomica 2.5 (Ariadne's crown / Corona Borealis).
+  - Catullus 64.50–266 (Ariadne abandoned on Naxos, Bacchus's arrival).
+  - Ovid, Metamorphoses 8.169–182 (Ariadne's crown set among the stars).
+  - Aratus, Phaenomena 71–73 (the Crown, Ariadne's, among the constellations).
+  - Pausanias 1.27.10 (Androgeos / Marathonian Bull), 2.32.7.
+  - Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources
+    (Johns Hopkins Univ. Press, 1993), ch. on Minos and the Cretan dynasty.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "greek_ariadne",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Ariadne",
+   "alt": [
+    "Ariadne of Crete",
+    "Ariagne",
+    "Aridela"
+   ],
+   "transliterations": {
+    "greek": "Ἀριάδνη",
+    "etymology": "Greek Ἀριάδνη; commonly read as an intensive ἀρι- ('most, very') + a form related to ἁγνός / Cretan ἀδνός ('holy, pure') — 'the most holy', preserved in the Cretan cult-epithet Ἀριδήλα (Aridela, 'the very manifest one'). The name is pre-Greek/Minoan in origin."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "greek_minos"
+  ],
+  "parentRoles": {
+   "greek_minos": "father"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1280,
+   "mythicEnd": -1230,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Minos-and-Pasiphae-on-Crete",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2; Hes. Theog. 947"
+     }
+    ],
+    "notes": "Daughter of Minos and Pasiphae of Crete; elder sister of Phaedra. Quartigod-tier: half-Olympian father Minos (demigod) by the unregistered Pasiphae counted as the mortal parent."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-thread-of-the-labyrinth-and-flight-with-Theseus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.8-9; Plut. Thes. 19; Catull. 64.50-115"
+     }
+    ],
+    "notes": "Fell in love with Theseus when he came among the Athenian tribute-youths; on Daedalus's counsel gave him the clew (ball of thread) by which, after killing the Minotaur, he retraced his way out of the Labyrinth. Fled Crete with him."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "abandonment-on-Naxos-by-Theseus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.9; Plut. Thes. 20; Catull. 64.116-201; Ov. Her. 10"
+     }
+    ],
+    "notes": "Abandoned by Theseus on the island of Naxos (Dia) while she slept — variously by his forgetfulness or at the bidding of Dionysus, who claimed her."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 3,
+    "startEvent": "marriage-to-Dionysus-and-apotheosis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 947-949; Apollod. Epit. 1.9; Hyg. Astr. 2.5; Ov. Met. 8.176-182"
+     }
+    ],
+    "notes": "Taken as consort/wife by Dionysus, who made her his own; per Hesiod (Theog. 949) the son of Cronus made her 'deathless and ageless'. Her bridal crown, the work of Hephaestus, was set among the stars as the constellation Corona Borealis (the Northern Crown). She thus passes from mortal-line heroine to immortalized consort of the god."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-labyrinth-thread",
+    "contextTag": "episodic",
+    "term": {
+     "value": "μίτος",
+     "script": "Greek",
+     "rom": "mitos"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.8-9; Plut. Thes. 19"
+     }
+    ],
+    "notes": "Mistress of the saving thread — the clew that solves the Labyrinth; her name becomes a byword for the guiding line ('Ariadne's thread')."
+   },
+   {
+    "sphereId": "wine-god-consort",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 947-949; Apollod. Epit. 1.9"
+     }
+    ],
+    "notes": "Immortalized bride of Dionysus; cult-partner of the wine-god, honoured with him in the mysteries (the Cretan Aridela)."
+   },
+   {
+    "sphereId": "the-northern-crown",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aratus, Phaenomena 71-73; Hyginus, Astronomica 2.5"
+     }
+    ],
+    "notes": "Catasterized in her crown: the constellation Corona Borealis is 'Ariadne's Crown' (Stephanos)."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-the-saving-thread",
+    "name": "Gives the saving thread that masters the Labyrinth",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Provided Theseus the clew of wool to unwind through the maze and retrace his path after slaying the Minotaur; an episodic act of cunning aid, not a heritable power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.9; Plut. Thes. 19"
+     }
+    ]
+   },
+   {
+    "id": "be-made-deathless-by-dionysus",
+    "name": "Is made deathless and ageless as the bride of Dionysus",
+    "term": {
+     "value": "ἀθάνατον καὶ ἀγήρων",
+     "script": "Greek",
+     "rom": "athanaton kai agērōn"
+    },
+    "inheritability": "none",
+    "notes": "Granted immortality by the gift of Dionysus/Zeus (Theog. 949), not by blood-descent; therefore inheritability none.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 947-949"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ariadne-clew-of-thread",
+    "kind": "implement",
+    "name": "The clew of thread (Ariadne's thread)",
+    "term": {
+     "value": "μίτος / ἀγαθίς",
+     "script": "Greek",
+     "rom": "mitos / agathis"
+    },
+    "role": "bestowed",
+    "notes": "The ball of wool fastened at the Labyrinth's entrance and unwound by Theseus; the proverbial 'thread of Ariadne'. Per Apollodorus it was Daedalus who told her the device.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.9"
+     }
+    ]
+   },
+   {
+    "id": "ariadne-golden-crown",
+    "kind": "regalia",
+    "name": "The golden crown of Ariadne (Corona Borealis)",
+    "term": {
+     "value": "στέφανος",
+     "script": "Greek",
+     "rom": "stephanos"
+    },
+    "role": "worn",
+    "notes": "Her bridal/wedding crown, the work of Hephaestus and gleaming with gems; set by Dionysus among the stars as the Northern Crown.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hyginus, Astronomica 2.5; Ovid, Metamorphoses 8.176-182"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Aridela (Ἀριδήλα, 'the very manifest / radiant one')",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth (Johns Hopkins Univ. Press, 1993), pp. 264-265 (Cretan Ariadne-Aridela)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_minos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "externalRef": {
+     "name": "Pasiphae (daughter of Helios, wife of Minos; unregistered second parent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_phaedra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2; Epit. 1.17"
+     }
+    ],
+    "notes": "Younger sister; both daughters of Minos and Pasiphae."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_androgeos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_catreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_glaucus_minos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "lover",
+    "personId": "greek_apollod_theseus",
+    "era": "heroic-age",
+    "endingEvent": "abandonment-on-Naxos",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.8-9; Plut. Thes. 19-20"
+     }
+    ],
+    "notes": "Helped Theseus through the Labyrinth and fled with him; abandoned by him on Naxos."
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_hesiod_dionysus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 947-949; Apollod. Epit. 1.9"
+     }
+    ],
+    "notes": "Consort/wife of Dionysus, who made her immortal and set her crown in the heavens."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod Theogony 947-949; Apollodorus 3.1.2, Epitome 1.7-9; Plutarch Theseus 19-20; Catullus 64; Ovid Metamorphoses 8.169-182, Heroides 10; Hyginus Fabulae 42-43, Astronomica 2.5"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources (Johns Hopkins Univ. Press, 1993), pp. 263-273"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2 (daughter of Minos and Pasiphae)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Daughter of Minos and Pasiphae; the heroine who gave Theseus the clew of thread to escape the Labyrinth after he slew the Minotaur, was abandoned by him on Naxos, and became the immortalized consort of Dionysus (Hes. Theog. 947-949), her bridal crown set in the sky as Corona Borealis. Authored as quartigod by the descent math (Minos demigod 0.5 + the unregistered Pasiphae counted as mortal 0, /2 = 0.25), matching the corpus precedent of the Theseus×Phaedra children greek_apollod_acamas / greek_apollod_demophon. vitalStatus living = deified/immortalized by Dionysus per Theog. 949. Mother Pasiphae is given as an externalRef because no greek_pasiphae figure is registered. Sibling edge to the already-registered greek_phaedra is one-way (per the authoring rule); the three other authored children are reciprocated in-batch."
+ },
+ {
+  "id": "greek_androgeos",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Androgeos",
+   "alt": [
+    "Androgeus",
+    "Androgeos of Crete",
+    "Eurygyes"
+   ],
+   "transliterations": {
+    "greek": "Ἀνδρόγεως",
+    "etymology": "Greek Ἀνδρόγεως, from ἀνήρ / ἀνδρο- ('man') + a stem related to γῆ / γέας ('earth') or to the root of γίγνομαι — read as 'earth-born man' or 'born of man'. Pindar and the Marmor Parium give the by-name Eurygyes (Εὐρυγύης, 'of the broad lands')."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_minos"
+  ],
+  "parentRoles": {
+   "greek_minos": "father"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1290,
+   "mythicEnd": -1250,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Minos-and-Pasiphae-on-Crete",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ],
+    "notes": "Son of Minos and Pasiphae of Crete. Quartigod-tier: demigod father Minos by the unregistered Pasiphae counted as the mortal parent."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "victory-at-the-Panathenaic-games-at-Athens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. 4.60.4-5; Apollod. 3.15.7"
+     }
+    ],
+    "notes": "An outstanding athlete who came to Athens for the Panathenaic festival and defeated all comers in every contest."
+   },
+   {
+    "typeStatus": "quartigod",
+    "vitalStatus": "deceased",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-at-Athens-and-the-Marathonian-bull",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.7; Plut. Thes. 15; Paus. 1.27.10; Diod. 4.60.5-61.1"
+     }
+    ],
+    "notes": "Killed soon after his victories — in one version by the defeated competitors out of envy, in another by King Aegeus, who sent him against the Marathonian Bull, which slew him. His death moved Minos to make war on Athens and to impose the tribute of seven youths and seven maidens fed to the Minotaur."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "athletic-contest",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. 4.60.4-5"
+     }
+    ],
+    "notes": "Pre-eminent victor of the Panathenaic games; the unbeaten Cretan athlete-prince."
+   },
+   {
+    "sphereId": "the-cretan-tribute",
+    "contextTag": "consequential",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.8; Plut. Thes. 15"
+     }
+    ],
+    "notes": "His killing is the cause for which the Athenian tribute to the Minotaur was exacted — the mythic engine of the Theseus saga."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "win-every-contest",
+    "name": "Wins every contest of the games",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Defeated all opponents at the Panathenaea; an episodic feat of athletic prowess, not a heritable divine power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. 4.60.4-5; Apollod. 3.15.7"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "androgeos-hero-tomb",
+    "kind": "site",
+    "name": "Hero-shrine of Androgeos (the Heroon at Phaleron / Eurygyes-cult)",
+    "term": {
+     "value": "Ἀνδρόγεω ἡρῷον",
+     "script": "Greek",
+     "rom": "Androgeō hērōon"
+    },
+    "role": "venerated-at",
+    "notes": "Androgeos received hero-cult at Athens; Pausanias notes his tomb-precinct in the Ceramicus/Phaleron area, where he was honoured under the by-name Eurygyes with funeral games.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 1.1.4; Hesychius s.v. ἐπὶ Εὐρυγύῃ ἀγών"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Eurygyes (Εὐρυγύης, 'of the broad lands')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Marmor Parium (Parian Marble) A19; cf. Hesychius s.v. Εὐρυγύης"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_minos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2, 3.15.7"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "externalRef": {
+     "name": "Pasiphae (daughter of Helios, wife of Minos; unregistered second parent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_phaedra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ],
+    "notes": "Brother of Phaedra; both children of Minos and Pasiphae."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_ariadne",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_catreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_glaucus_minos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "externalRef": {
+     "name": "Alcaeus (son of Androgeos, taken by Heracles from Paros; unregistered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.5.9"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "externalRef": {
+     "name": "Sthenelus (son of Androgeos, taken by Heracles from Paros; unregistered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.5.9"
+     }
+    ]
+   }
+  ],
+  "death": {
+   "manner": {
+    "kind": "slain-by-the-Marathonian-bull-or-envious-rivals",
+    "notes": "Killed at or near Athens after his games-victories — by ambush of the defeated competitors, or sent by Aegeus against the Marathonian Bull, which gored him."
+   },
+   "place": {
+    "name": "Attica (Athens / the road to Thebes / Marathon)"
+   },
+   "afterlifeStatus": "hero-cult-at-Athens"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.1.2, 3.15.7-8, 2.5.9; Diodorus Siculus 4.60.4-61.1; Plutarch Theseus 15; Pausanias 1.1.4, 1.27.10; Hyginus Fabulae 41; Marmor Parium A19"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth (Johns Hopkins Univ. Press, 1993), pp. 262-263"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2 (son of Minos and Pasiphae)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Son of Minos and Pasiphae; the unbeaten athlete-prince whose death at Athens — by envious rivals or by the Marathonian Bull sent by Aegeus — is the casus belli for Minos's war on Athens and the tribute of youths to the Minotaur. Father of Alcaeus and Sthenelus (taken by Heracles from Paros, Apollod. 2.5.9). Honoured with hero-cult at Athens under the by-name Eurygyes. Authored as quartigod by the descent math (Minos demigod 0.5 + unregistered Pasiphae as mortal 0, /2 = 0.25). Mother given as externalRef (no greek_pasiphae registered); sibling edge to greek_phaedra one-way, the other three authored siblings reciprocated in-batch; his sons remain externalRef (unregistered)."
+ },
+ {
+  "id": "greek_catreus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Catreus",
+   "alt": [
+    "Katreus",
+    "Catreus of Crete"
+   ],
+   "transliterations": {
+    "greek": "Κατρεύς",
+    "etymology": "Greek Κατρεύς, a Cretan dynastic name of uncertain sense; ancient and modern guesses connect it to κάτω ('downward') or treat it as pre-Greek. No secure transparent etymology survives."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_minos"
+  ],
+  "parentRoles": {
+   "greek_minos": "father"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1300,
+   "mythicEnd": -1240,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Minos-and-Pasiphae-on-Crete",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ],
+    "notes": "Eldest son of Minos and Pasiphae of Crete. Quartigod-tier: demigod father Minos by the unregistered Pasiphae counted as the mortal parent."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "kingship-of-Crete-and-the-oracle-of-death-by-his-own-child",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1-2; Diod. 5.59.1-4"
+     }
+    ],
+    "notes": "Succeeded Minos as king of Crete. Father of Althaemenes, Apemosyne, Aerope and Clymene. An oracle foretold he would be slain by one of his own children; learning of it, his son Althaemenes emigrated to Rhodes (taking Apemosyne), and Catreus gave Aerope and Clymene to Nauplius to be sold or married overseas — Aerope to Atreus, becoming ancestress of Agamemnon and Menelaus."
+   },
+   {
+    "typeStatus": "quartigod",
+    "vitalStatus": "deceased",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-on-Rhodes-at-the-hand-of-Althaemenes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1-2; Diod. 5.59.4"
+     }
+    ],
+    "notes": "In old age sailed to Rhodes to hand his kingdom to his son Althaemenes. Landing by night, he and his men were taken for pirates; in the fighting Althaemenes struck him down with a spear (or a thrown stone) before recognizing his father — the prophesied death by his own child. Althaemenes, in grief, prayed to be swallowed by the earth and was. The funeral of Catreus is the errand on which Menelaus leaves Sparta, enabling Paris's abduction of Helen."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cretan-kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1; Diod. 5.59.1"
+     }
+    ],
+    "notes": "King of Crete after Minos; head of the Cretan royal house in the generation before the Trojan War."
+   },
+   {
+    "sphereId": "doomed-prophecy",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1-2"
+     }
+    ],
+    "notes": "Subject of the oracle of death-by-one's-own-child — the prophecy-fulfilled-through-flight pattern."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-crete-after-minos",
+    "name": "Holds the kingship of Crete after Minos",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Royal office (held, then bequeathed to Althaemenes), not a heritable divine power; inheritability none.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "catreus-royal-sceptre-crete",
+    "kind": "regalia",
+    "name": "The kingship/sceptre of Crete",
+    "term": {
+     "value": "σκῆπτρον",
+     "script": "Greek",
+     "rom": "skēptron"
+    },
+    "role": "held",
+    "notes": "The Cretan sovereignty inherited from Minos that Catreus sailed to Rhodes to pass to Althaemenes — the journey on which he met his death.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.2; Diod. 5.59.4"
+     }
+    ]
+   }
+  ],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_minos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2, 3.2.1"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "externalRef": {
+     "name": "Pasiphae (daughter of Helios, wife of Minos; unregistered second parent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_phaedra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ],
+    "notes": "Brother of Phaedra; both children of Minos and Pasiphae."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_ariadne",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_androgeos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_glaucus_minos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "externalRef": {
+     "name": "Althaemenes (son of Catreus, his unwitting killer on Rhodes; unregistered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1-2; Diod. 5.59.4"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "externalRef": {
+     "name": "Aerope (daughter of Catreus, wife of Atreus, mother of Agamemnon and Menelaus; unregistered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1-2, Epit. 2.10"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "externalRef": {
+     "name": "Apemosyne (daughter of Catreus, killed by Althaemenes; unregistered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "externalRef": {
+     "name": "Clymene (daughter of Catreus, given to Nauplius; unregistered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.2"
+     }
+    ]
+   }
+  ],
+  "death": {
+   "manner": {
+    "kind": "slain-by-his-son-Althaemenes",
+    "notes": "Struck down by Althaemenes' spear (or a thrown stone) on Rhodes, mistaken for a pirate — the prophesied death at the hand of his own child."
+   },
+   "place": {
+    "name": "Rhodes (the place later called Cretinia / by the harbour)"
+   },
+   "afterlifeStatus": "mortal-death"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.1.2, 3.2.1-2, Epitome 2.10; Diodorus Siculus 5.59; Pausanias 8.53.4; Hyginus Fabulae 97"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth (Johns Hopkins Univ. Press, 1993), pp. 270-271, 552"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2 (son of Minos and Pasiphae)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eldest son of Minos and Pasiphae; king of Crete after Minos and victim of the oracle of death-by-his-own-child, slain on Rhodes by his unrecognizing son Althaemenes. Through his daughter Aerope (given to Nauplius and married to Atreus) he is grandfather of Agamemnon and Menelaus; his funeral is the errand that draws Menelaus from Sparta in the Helen tradition. Authored as quartigod by the descent math (Minos demigod 0.5 + unregistered Pasiphae as mortal 0, /2 = 0.25). Mother given as externalRef (no greek_pasiphae registered); sibling edge to greek_phaedra one-way, the other three authored siblings reciprocated in-batch; his children remain externalRef (unregistered — including the dynastically important Aerope)."
+ },
+ {
+  "id": "greek_glaucus_minos",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Glaucus",
+   "alt": [
+    "Glaukos",
+    "Glaucus son of Minos",
+    "Glaucus of Crete"
+   ],
+   "transliterations": {
+    "greek": "Γλαῦκος",
+    "etymology": "Greek Γλαῦκος, from γλαυκός ('gleaming, blue-grey, gray-green'). The same colour-name borne by several Greek figures; this Glaucus is distinguished as the son of Minos and Pasiphae (id-suffixed _minos)."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "greek_minos"
+  ],
+  "parentRoles": {
+   "greek_minos": "father"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1290,
+   "mythicEnd": -1250,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Minos-and-Pasiphae-on-Crete",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2, 3.3.1"
+     }
+    ],
+    "notes": "Young son of Minos and Pasiphae of Crete. Quartigod-tier: demigod father Minos by the unregistered Pasiphae counted as the mortal parent."
+   },
+   {
+    "typeStatus": "quartigod",
+    "vitalStatus": "deceased",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "death-by-drowning-in-the-honey-jar",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.3.1; Hyg. Fab. 136"
+     }
+    ],
+    "notes": "While still a child, chasing a mouse (or a ball), he fell into a great jar (pithos) of honey and was drowned. Minos, unable to find him, consulted seers; the Curetes said that whoever could best describe a strange three-coloured calf among his herds would also restore the boy alive."
+   },
+   {
+    "typeStatus": "quartigod",
+    "vitalStatus": "living",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "resurrection-by-Polyidus-with-the-serpent-herb",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.3.1-2; Hyg. Fab. 136"
+     }
+    ],
+    "notes": "Polyidus of Argos, son of Coeranus, likened the calf to a ripening blackberry, found the body by divination, and was shut in the tomb with the corpse. Seeing one serpent revive another with a herb, he applied the same herb to Glaucus and raised him from the dead. Compelled to teach the boy divination, Polyidus on leaving had Glaucus spit into his mouth, whereby Glaucus forgot the art. A variant credits the healer Asclepius with the resurrection (Apollod. 3.10.3)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "death-and-restoration",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.3.1-2"
+     }
+    ],
+    "notes": "The boy who died and was raised — the paradigm of mortal resurrection by the serpent's herb, paired with the seer Polyidus."
+   },
+   {
+    "sphereId": "honey-and-the-jar",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hyginus, Fabulae 136"
+     }
+    ],
+    "notes": "His drowning in the pithos of honey is the fixed emblem of his story."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "be-raised-from-the-dead",
+    "name": "Is raised from the dead by the serpent-herb",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Restored to life by Polyidus through the herb a serpent used to revive its mate; the power is the seer's/herb's, not Glaucus's own or heritable — inheritability none.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.3.1-2"
+     }
+    ]
+   },
+   {
+    "id": "briefly-learn-then-lose-divination",
+    "name": "Is briefly taught, then made to forget, the art of divination",
+    "term": {
+     "value": "μαντική",
+     "script": "Greek",
+     "rom": "mantikē"
+    },
+    "inheritability": "none",
+    "notes": "Forced on him by Polyidus and then undone when, at the seer's bidding, he spat into Polyidus's mouth; a taught-and-revoked skill, not a heritable power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.3.2"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "glaucus-honey-pithos",
+    "kind": "vessel",
+    "name": "The jar of honey (pithos)",
+    "term": {
+     "value": "πίθος μέλιτος",
+     "script": "Greek",
+     "rom": "pithos melitos"
+    },
+    "role": "died-in",
+    "notes": "The great storage-jar of honey into which the child fell and drowned.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.3.1; Hyg. Fab. 136"
+     }
+    ]
+   },
+   {
+    "id": "glaucus-reviving-herb",
+    "kind": "substance",
+    "name": "The serpent's reviving herb",
+    "term": {
+     "value": "πόα / βοτάνη",
+     "script": "Greek",
+     "rom": "poa / botanē"
+    },
+    "role": "revived-by",
+    "notes": "The herb a serpent laid on its dead fellow, which Polyidus then used to raise Glaucus — the life-restoring plant of the tale.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.3.2"
+     }
+    ]
+   }
+  ],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_minos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2, 3.3.1"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "externalRef": {
+     "name": "Pasiphae (daughter of Helios, wife of Minos; unregistered second parent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_phaedra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ],
+    "notes": "Brother of Phaedra; both children of Minos and Pasiphae."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_ariadne",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_androgeos",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_catreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2"
+     }
+    ]
+   },
+   {
+    "kind": "revived-by",
+    "externalRef": {
+     "name": "Polyidus of Argos, son of Coeranus (the seer who raised him; unregistered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.3.1-2; Hyg. Fab. 136"
+     }
+    ],
+    "notes": "A variant credits Asclepius with the resurrection (Apollod. 3.10.3)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.1.2, 3.3.1-2, 3.10.3; Hyginus Fabulae 136, Astronomica 2.14; Sophocles Manteis/Polyidus (lost, frr. 389a-400 Radt); Euripides Polyidus (lost); Aelian, De Natura Animalium 5.2"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth (Johns Hopkins Univ. Press, 1993), pp. 270-271"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2, 3.3.1 (son of Minos and Pasiphae)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The child of Minos and Pasiphae who drowned in a jar of honey and was raised from the dead by the seer Polyidus using the herb a serpent used to revive its mate (Apollod. 3.3.1-2; Hyg. Fab. 136); a variant credits Asclepius (Apollod. 3.10.3). The subject of lost tragedies by Sophocles (Manteis) and Euripides (Polyidus). DISTINCT from greek_glaucus_corinth (the Corinthian, the taraxippus devoured by his own mares), from Glaucus the sea-god (Glaukos Pontios), and from Glaucus the Lycian of the Iliad. Authored as quartigod by the descent math (Minos demigod 0.5 + unregistered Pasiphae as mortal 0, /2 = 0.25). He dies and is resurrected within the heroic-age, so the lifecycle carries a death stage and a restored-to-life stage (both era heroic-age) and final vitalStatus is living. Mother given as externalRef (no greek_pasiphae registered); sibling edge to greek_phaedra one-way, the other three authored siblings reciprocated in-batch; reviver Polyidus remains externalRef (unregistered)."
+ }
+]
+```
+
+================================================================================
+WIRING / RECIPROCITY LEDGER
+================================================================================
+
+WITHIN-BATCH SYMMETRIC TIES (reciprocated among the four authored figures):
+  - greek_ariadne   sibling  greek_androgeos / greek_catreus / greek_glaucus_minos
+  - greek_androgeos sibling  greek_ariadne / greek_catreus / greek_glaucus_minos
+  - greek_catreus   sibling  greek_ariadne / greek_androgeos / greek_glaucus_minos
+  - greek_glaucus_minos sibling greek_ariadne / greek_androgeos / greek_catreus
+  (all reciprocated above)
+
+ONE-WAY TIE TO AN ALREADY-REGISTERED SIBLING (per the authoring rule — add the
+reciprocal on the existing figure if desired; not authored here):
+  - greek_ariadne       sibling  greek_phaedra
+  - greek_androgeos     sibling  greek_phaedra
+  - greek_catreus       sibling  greek_phaedra
+  - greek_glaucus_minos sibling  greek_phaedra
+
+OTHER SYMMETRIC TIES TO EXISTING FIGURES (RECIPROCAL-NEEDED on the existing record):
+  - greek_ariadne  spouse/consort  greek_hesiod_dionysus  (add reciprocal spouse on
+    greek_hesiod_dionysus)
+  - greek_ariadne  lover           greek_apollod_theseus  (add reciprocal lover on
+    greek_apollod_theseus; ended by abandonment on Naxos)
+
+DIRECTED PARENT EDGES (no reciprocal required):
+  - greek_ariadne / greek_androgeos / greek_catreus / greek_glaucus_minos
+        child of  greek_minos   (parentRoles {greek_minos:"father"})
+  - second parent Pasiphae is UNREGISTERED → given as externalRef mother on each
+    child; NOT added to parentIds (matching greek_phaedra and the Theseus×Phaedra
+    children already in the corpus).
+
+EXTERNAL-REFERENCE (unregistered) FIGURES NAMED BUT NOT WIRED AS personIds:
+  Pasiphae (mother of all four); Deucalion-son-of-Minos & the Minotaur (further
+  Minos×Pasiphae offspring); Alcaeus & Sthenelus (sons of Androgeos); Althaemenes,
+  Aerope, Apemosyne, Clymene (children of Catreus); Polyidus of Argos (reviver of
+  Glaucus). All deferred to a later pass.

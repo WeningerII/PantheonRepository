@@ -409,7 +409,7 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
   "primaryTradition": "Greek",
   "sex": "male",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": ["greek_hesiod_aphrodite"],
   "temporal": {
    "era": "primordial"
   },
@@ -511,7 +511,7 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
    "greek_hesiod_gaia"
   ],
   "temporal": {
-   "era": "titanomachy"
+   "era": "primordial"
   },
   "domains": [
    {
@@ -684,7 +684,7 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
    "greek_hesiod_gaia"
   ],
   "temporal": {
-   "era": "titanomachy"
+   "era": "primordial"
   },
   "domains": [
    {
@@ -3308,7 +3308,12 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": ["greek_hesiod_pallas_titan"],
+  "relations": [
+   {"kind": "sibling", "personId": "greek_hesiod_zelus", "sources": [{"kind": "secondary", "reference": "Hesiod, Theogony 383-385"}]},
+   {"kind": "sibling", "personId": "greek_hesiod_kratos", "sources": [{"kind": "secondary", "reference": "Hesiod, Theogony 383-385"}]},
+   {"kind": "sibling", "personId": "greek_hesiod_bia", "sources": [{"kind": "secondary", "reference": "Hesiod, Theogony 383-385"}]}
+  ],
   "temporal": {
    "era": "titanomachy"
   },
@@ -3378,7 +3383,7 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": ["greek_hesiod_thaumas"],
   "temporal": {
    "era": "titanomachy"
   },

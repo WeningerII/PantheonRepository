@@ -1,0 +1,590 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Greek (heroic-age)
+Cluster: the heteropaternal twins of Chione of Phocis (parent id: greek_chione)
+Era (registered, exact, used for every child): "heroic-age"
+
+EXISTING FIGURES referenced by id (NOT re-authored):
+  - greek_chione          (Chione, mortal princess of Phocis, daughter of Daedalion — the cluster mother)
+  - greek_hesiod_hermes   (Hermes — divine father of Autolycus)
+  - greek_hesiod_apollo   (Apollo — divine father of Philammon)
+  - greek_anticlea_ithaca (Anticlea of Ithaca — daughter of Autolycus, mother of Odysseus; already registered, wired one-way)
+  - greek_odysseus        (Odysseus — grandson of Autolycus, whom Autolycus named; already registered, wired one-way)
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+Per Ovid (Metamorphoses 11.301–317), Chione — the mortal daughter of Daedalion of
+Phocis — was loved on the same day by both Hermes and Apollo, and bore heteropaternal
+twins on the same night: AUTOLYCUS (by Hermes, "skilled in theft, a crafty wight … to
+make of white things black, and black things white") and PHILAMMON (by Apollo, "famous
+for the lyre and song"). The corpus already records this in the notes of greek_chione,
+which carries external-ref placeholders for both twins and a "// ─── Autolycus ───"
+comment-stub in the demigod block of app/data.js; NEITHER twin is registered as a
+standalone figure (confirmed by grep: no id greek_autolycus / greek_philammon, and no
+transcript authoring them). Both are therefore authored here.
+
+TYPE BY DESCENT (per the anti-inversion rule). Each twin = one Olympian father (deity,
+fraction 1.0) + Chione (mortal, fraction 0). Divinity fraction = (1.0 + 0)/2 = 0.5,
+which falls in the demigod band (0.375–0.75). Both twins = DEMIGOD. era = heroic-age
+(the cluster era). Both die in the tradition, so both carry a lifecycle.
+
+AUTOLYCUS — the master-thief of Parnassus. Homer (Odyssey 19.394–398) makes him the
+father of Odysseus's mother Anticlea and says he "excelled all men in thievery and the
+oath," gifts won from Hermes himself; at Od. 19.399–412 he comes to Ithaca, dandles the
+newborn on his knees and names him Odysseus ("child of wrath"); later the boy is gashed
+by the boar on Parnassus while hunting with Autolycus's sons (Od. 19.413–466). Ovid
+(Met. 11.313–315) gives the shape-shifting/colour-changing theft-craft. Apollodorus
+(2.4.9) names Autolycus as the man who taught Heracles to wrestle. He is the stock
+ancestor-of-cunning: grandfather of Odysseus through Anticlea, and (in some lines)
+of Jason through Polymede. Authored as DEMIGOD; wired to greek_chione + greek_hesiod_hermes
+as parents; one-way relations to the already-registered Anticlea (father-of) and Odysseus
+(grandfather/named-by); reciprocal twin-sibling to greek_philammon (in-batch).
+
+PHILAMMON — the master-singer. Son of Apollo and Chione (Pherecydes FGrH 3 F 120;
+Apollodorus 1.3.3; the same-night birth in Ovid Met. 11.316–317 and Hyginus Fab. 161,
+200). Pausanias (10.7.2) ranks him the second victor (after Chrysothemis of Crete, before
+his own son Thamyris) in the most ancient Pythian song-contest, the hymn-to-Apollo nome;
+he founded the choruses of maidens who sang at Delphi the births of Leto, Artemis and
+Apollo (Pherecydes; Pollux 4.7), and some made him the inventor of choral music. Pausanias
+(2.37.2) reports — "though I do not believe it" — the tradition that he founded the
+Lernaean Mysteries; and (9.36.2) that he fell defending the sanctuary of Apollo at Delphi
+against the raiding Phlegyans, killed in the battle. By the Parnassian nymph Argiope he
+fathered Thamyris (Pausanias 4.33.3, 10.7.2; Apollodorus 1.3.3). Authored as DEMIGOD;
+wired to greek_chione + greek_hesiod_apollo as parents; reciprocal twin-sibling to
+greek_autolycus (in-batch). Thamyris and Argiope are not registered, so no edge is wired
+to them (the Thamyris paternity is recorded in notes only).
+
+WIRING (symmetric reciprocated in-batch; directed parent edges need no reciprocal):
+  - greek_autolycus   twin sibling  greek_philammon   (reciprocal in-batch)
+  - greek_philammon   twin sibling  greek_autolycus   (reciprocal in-batch)
+  - greek_autolycus   father-of     greek_anticlea_ithaca   (one-way; Anticlea already registered)
+  - greek_autolycus   grandfather-of greek_odysseus         (one-way; Odysseus already registered; the naming scene)
+  - greek_autolycus   parentIds = [greek_chione, greek_hesiod_hermes]; roles mother / father
+  - greek_philammon   parentIds = [greek_chione, greek_hesiod_apollo]; roles mother / father
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "greek_autolycus",
+  "name": {
+   "primary": "Autolycus",
+   "alt": [
+    "Autolykos",
+    "Autolycos"
+   ],
+   "transliterations": {
+    "greek": "Αὐτόλυκος",
+    "rom": "Autólykos",
+    "etymology": "Greek Αὐτόλυκος, conventionally analysed as autos ('self') + lykos ('wolf'), i.e. 'the very wolf' / 'lone wolf' — an apt by-name for the master-thief of Parnassus. Homer (Od. 19.405-409) instead plays etymologically on his grandson's name, not his own."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_chione",
+   "greek_hesiod_hermes"
+  ],
+  "parentRoles": {
+   "greek_chione": "mother",
+   "greek_hesiod_hermes": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "conception-by-hermes-of-chione-twin-of-philammon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.301-317 (Hermes lies with Chione; she bears Autolycus, twin of Philammon by Apollo, on the same night)"
+     }
+    ],
+    "notes": "Begotten by Hermes on Chione of Phocis, the heteropaternal twin of Philammon (son of Apollo) born the same night. From his father he had the gift of unmatched thievery and binding oaths."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "master-thief-of-parnassus-and-namer-of-odysseus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 19.394-466 (Autolycus excels all men in thievery and the oath, names the infant Odysseus, and hosts the Parnassus boar-hunt)"
+     }
+    ],
+    "notes": "Dwelt on Mount Parnassus, renowned among men for cunning theft and oath-craft won from Hermes. Father of Anticlea; came to Ithaca at Odysseus's birth, set the child on his knees and named him; later his sons hunted the Parnassian boar with the young Odysseus, who was gashed on the thigh — the scar by which Eurycleia knew him."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-in-old-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 11.85 (Anticlea among the dead) with 19.394-466; Hyginus, Fabulae 201"
+     }
+    ],
+    "notes": "Reached great age (an old man already at Odysseus's birth) and died a mortal death; his daughter Anticlea, mother of Odysseus, is met among the shades in the Underworld. No divine apotheosis is attested for the thief."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "thievery-and-trickery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "κλεπτοσύνη",
+     "script": "Greek",
+     "rom": "kleptosynē"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 19.395-397 ('he excelled all men in thievery and the oath')"
+     }
+    ],
+    "notes": "The paradigmatic Greek master-thief, surpassing all mortals in stealing — the inheritance from Hermes, god of thieves."
+   },
+   {
+    "sphereId": "oaths-and-cunning-speech",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 19.396 (excelling in the oath, horkos)"
+     }
+    ],
+    "notes": "Mastery of the binding/deceptive oath, paired with theft as the twin Hermetic gifts; the cunning he transmits to his grandson Odysseus."
+   },
+   {
+    "sphereId": "wrestling-and-the-palaestra",
+    "contextTag": "instructional",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 2.4.9 (Autolycus taught Heracles to wrestle)"
+     }
+    ],
+    "notes": "Named as the wrestling-master of the young Heracles. (Some scholars suspect this teacher is a homonymous Autolycus the Argonaut rather than the Parnassian thief; the attribution is given as it stands in Apollodorus.)"
+   }
+  ],
+  "faculties": [
+   {
+    "id": "steal-undetected",
+    "name": "Steals so cunningly as never to be caught",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "notes": "The gift won from his father Hermes; passed on (as cunning) to his grandson Odysseus, hence partial blood-descent inheritability through the Hermes line.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 19.395-397; Hyginus, Fabulae 201"
+     }
+    ]
+   },
+   {
+    "id": "transform-stolen-goods",
+    "name": "Changes the form and colour of what he steals",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Made stolen cattle hornless or horned, white black and black white, so the owner could not recognize them — the trick by which Sisyphus alone caught him out (by branding his herd's hooves).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.313-315; Hyginus, Fabulae 201 (the Sisyphus cattle-conflict)"
+     }
+    ]
+   },
+   {
+    "id": "swear-binding-oaths",
+    "name": "Swears and exploits binding oaths",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "notes": "The oath-craft (horkos) Homer pairs with his theft as the Hermetic endowment; reckoned among the cunning traits descending to Odysseus.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 19.396"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "greek_autolycus-rustled-cattle",
+    "kind": "implement",
+    "name": "The disguised stolen herds",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "role": "associated-with",
+    "notes": "The cattle and flocks Autolycus rustled and magically re-marked; the focal object of his famous contest of wits with Sisyphus, who branded his beasts' hooves to expose the thief.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.313-315; Hyginus, Fabulae 201"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "πολύτροπος (in spirit — the all-cunning), the master-thief of Parnassus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 19.394-397"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "greek_philammon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.301-317 (heteropaternal twins of Chione born the same night)"
+     }
+    ],
+    "notes": "Heteropaternal twin: Autolycus by Hermes, Philammon by Apollo, conceived on the same day and born together to Chione."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_anticlea_ithaca",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 11.85, 19.394-416; Apollodorus, Bibliotheca 1.9.16"
+     }
+    ],
+    "notes": "Father of Anticlea of Ithaca, who married Laertes and bore Odysseus (one-way relation; Anticlea is already registered as greek_anticlea_ithaca)."
+   },
+   {
+    "kind": "grandfather-of",
+    "personId": "greek_odysseus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 19.399-412 (Autolycus names the infant Odysseus)"
+     }
+    ],
+    "notes": "Maternal grandfather of Odysseus; he came to Ithaca and named the newborn 'Odysseus' (the man of wrath). One-way relation; Odysseus is already registered as greek_odysseus."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 19.394-466 (the locus classicus: Autolycus son-of-Hermes, father of Anticlea, namer of Odysseus, Parnassus boar-hunt)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.301-317 (parentage by Hermes of Chione; twin of Philammon; the shape-changing theft-craft)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Bibliotheca 2.4.9 (wrestling-master of Heracles); 1.9.16 (father of Anticlea)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Hyginus, Fabulae 200-201 (Autolycus, Chione, and the cattle-theft contest with Sisyphus)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources (Johns Hopkins Univ. Press, 1993), pp. 173-176"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Master-thief of Mount Parnassus, the heteropaternal twin of Philammon: son of Hermes by the mortal Chione of Phocis (greek_chione), born the same night as Apollo's son Philammon (Ovid Met. 11.301-317). Authored as a demigod (Olympian father Hermes + mortal mother Chione → divinity fraction 0.5). From Hermes he had unmatched skill in theft, the power to disguise and re-colour what he stole, and the binding oath (Homer Od. 19.394-397); he taught Heracles to wrestle (Apollod. 2.4.9, possibly conflated with the homonymous Argonaut). Father of Anticlea (greek_anticlea_ithaca) and maternal grandfather of Odysseus (greek_odysseus), whom he named at the cradle and on whose Parnassus boar-hunt the scar-recognition of Odyssey 19 turns. Wired to greek_chione + greek_hesiod_hermes as parents and reciprocally to his twin greek_philammon."
+ },
+ {
+  "id": "greek_philammon",
+  "name": {
+   "primary": "Philammon",
+   "alt": [
+    "Philammon of Delphi"
+   ],
+   "transliterations": {
+    "greek": "Φιλάμμων",
+    "rom": "Philámmōn",
+    "etymology": "Greek Φιλάμμων, commonly read as phil- ('loving') + Ammon, i.e. 'dear to / friend of Ammon', linking the Delphic singer to the Libyan-Egyptian oracular god Ammon (with whom Apollo and Zeus were syncretized); fittingly a name for a son of Apollo and master of the cult-hymn."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_chione",
+   "greek_hesiod_apollo"
+  ],
+  "parentRoles": {
+   "greek_chione": "mother",
+   "greek_hesiod_apollo": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "conception-by-apollo-of-chione-twin-of-autolycus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pherecydes FGrHist 3 F 120; Apollodorus, Bibliotheca 1.3.3; Ovid, Metamorphoses 11.316-317 (Philammon famed for lyre and song, twin of Autolycus, born the same night to Chione)"
+     }
+    ],
+    "notes": "Begotten by Apollo on Chione of Phocis, the heteropaternal twin of Autolycus (son of Hermes) born the same night. From his father he had surpassing skill in the lyre and song."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "founding-of-delphic-choral-song-and-pythian-victory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 10.7.2 (second victor, after Chrysothemis and before his son Thamyris, in the most ancient Pythian song-contest); Pausanias 2.37.2 (the Lernaean Mysteries ascribed to him)"
+     }
+    ],
+    "notes": "The great ante-Homeric singer of Delphi: he established the choruses of maidens who sang at Delphi the births of Leto, Artemis and Apollo, won the second victory in the most ancient Pythian contest with a hymn-to-Apollo nome, and was named (with a doubt, by Pausanias) founder of the Lernaean Mysteries. By the Parnassian nymph Argiope he fathered the singer Thamyris."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-defending-delphi-against-the-phlegyans",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 9.36.2 (Philammon killed fighting the Phlegyans who marched on the sanctuary at Delphi)"
+     }
+    ],
+    "notes": "Fell in the defence of Apollo's Delphic sanctuary against the impious Phlegyans who came to plunder it — slain in the battle. A hero's mortal death in his father's own shrine; no apotheosis is attested."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "music-and-song",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ἀοιδή",
+     "script": "Greek",
+     "rom": "aoidē"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.317 ('Philammon, famous in song and the lyre'); Pausanias 10.7.2"
+     }
+    ],
+    "notes": "One of the legendary first singer-poets, ranked with Orpheus, Musaeus and his own son Thamyris; the master of the cithara and the cult-hymn inherited from Apollo."
+   },
+   {
+    "sphereId": "choral-and-cultic-hymnody",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pherecydes FGrHist 3 F 26 / Pollux, Onomasticon 4.7 (Philammon founded the Delphic maiden-choruses singing the births of Leto, Artemis and Apollo)"
+     }
+    ],
+    "notes": "Founder of the choruses of girls who sang the divine-birth hymns in the Delphian worship of Apollo; some credited him with the invention of choral music itself."
+   },
+   {
+    "sphereId": "mystery-rites",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.37.2 (the founding of the Lernaean Mysteries ascribed to Philammon, reported with doubt)"
+     }
+    ],
+    "notes": "Traditionally named founder of the Lernaean Mysteries of Demeter — a claim Pausanias records but says he does not himself believe."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sing-and-play-the-lyre",
+    "name": "Sings and plays the lyre with surpassing skill",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "notes": "The Apolline gift of music, passed on by blood to his son Thamyris, himself a famed (and doomed) singer — hence partial blood-descent inheritability through the Apollo line.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.317; Pausanias 10.7.2; Pausanias 4.33.3 (Thamyris his son)"
+     }
+    ]
+   },
+   {
+    "id": "compose-the-cult-hymn-nome",
+    "name": "Composes the hymn-to-Apollo nome for the Pythian contest",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Won the second victory in the most ancient Pythian song-contest singing the nome, the hymn to Apollo whose invention was credited to Apollo himself.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 10.7.2"
+     }
+    ]
+   },
+   {
+    "id": "institute-maiden-choruses",
+    "name": "Institutes the Delphic maiden-choruses",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Established the girls' choruses that sang the births of Leto, Artemis and Apollo in the Delphic cult — credited by some as the origin of choral music.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pherecydes FGrHist 3 F 26 / Pollux, Onomasticon 4.7"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "greek_philammon-lyre",
+    "kind": "implement",
+    "name": "Lyre / cithara of Philammon",
+    "term": {
+     "value": "κιθάρα",
+     "script": "Greek",
+     "rom": "kithara"
+    },
+    "role": "wielded",
+    "notes": "The stringed instrument of the Apolline singer, with which he won the Pythian nome-contest and led the Delphic hymn-choruses; the paternal gift of Apollo, lord of the lyre.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.317; Pausanias 10.7.2"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "ἀοιδός — 'the singer' (of Delphi)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 10.7.2; Ovid, Metamorphoses 11.317"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "greek_autolycus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.301-317 (heteropaternal twins of Chione born the same night)"
+     }
+    ],
+    "notes": "Heteropaternal twin: Philammon by Apollo, Autolycus by Hermes, conceived on the same day and born together to Chione."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pherecydes FGrHist 3 F 120 (son of Apollo and Chione/Philonis); Apollodorus, Bibliotheca 1.3.3 (Philammon son of Apollo, father of Thamyris)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Pausanias 10.7.2 (Pythian song-contest victor); 2.37.2 (Lernaean Mysteries); 9.36.2 (death fighting the Phlegyans at Delphi); 4.33.3 (father of Thamyris by Argiope)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 11.316-317 (twin of Autolycus, famed for lyre and song); Hyginus, Fabulae 161, 200 (son of Apollo)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Conon, Narrationes 7 (the Argiope / Thamyris tradition)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources (Johns Hopkins Univ. Press, 1993), pp. 96, 173"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Legendary ante-Homeric singer of Delphi, the heteropaternal twin of Autolycus: son of Apollo by the mortal Chione of Phocis (greek_chione), born the same night as Hermes's son Autolycus (Ovid Met. 11.301-317; Pherecydes; Apollod. 1.3.3). Authored as a demigod (Olympian father Apollo + mortal mother Chione → divinity fraction 0.5). He founded the Delphic maiden-choruses singing the births of Leto, Artemis and Apollo, won the second victory (after Chrysothemis, before his son Thamyris) in the most ancient Pythian nome-contest (Paus. 10.7.2), was named — with Pausanias's own doubt — founder of the Lernaean Mysteries (Paus. 2.37.2), and fell defending Apollo's sanctuary at Delphi against the marauding Phlegyans (Paus. 9.36.2). By the Parnassian nymph Argiope (not registered) he fathered the doomed singer Thamyris (not registered) — recorded in notes only, so no kin edge is wired to them. Wired to greek_chione + greek_hesiod_apollo as parents and reciprocally to his twin greek_autolycus."
+ }
+]
+```
+
+RECIPROCAL / DIRECTED EDGES SUMMARY:
+  - greek_autolycus  twin sibling  greek_philammon   — RECIPROCATED in-batch (both carry it)
+  - greek_philammon  twin sibling  greek_autolycus   — RECIPROCATED in-batch
+  - greek_autolycus  father-of      greek_anticlea_ithaca  — one-way (Anticlea already registered; directed, no reciprocal required)
+  - greek_autolycus  grandfather-of greek_odysseus         — one-way (Odysseus already registered; directed, the naming scene)
+
+PARENT EDGES (directed, no reciprocal required):
+  - greek_autolycus  child of  greek_chione (mother) + greek_hesiod_hermes (father)
+  - greek_philammon  child of  greek_chione (mother) + greek_hesiod_apollo (father)
+
+NOT WIRED (figures not registered in the corpus; recorded in notes only, per accuracy-first):
+  - Thamyris (son of Philammon by Argiope) — no standalone id; referenced only in a faculty-note elsewhere.
+  - Argiope (nymph, mother of Thamyris) — nymph-class, not registered.
+  - Daedalion (father of Chione) — not registered; mentioned only in greek_chione's notes.
+  - Sisyphus / Polymede / Jason — not wired from Autolycus (the cattle-contest with Sisyphus and the
+    Polymede→Jason descent are recorded in notes/sources, not as kin edges, to avoid over-claiming
+    against the registry's existing entries).

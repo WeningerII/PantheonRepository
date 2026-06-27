@@ -1,0 +1,1437 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Greek (Oechalian house — sons of Eurytus of Oechalia)
+Era (registered, exact, for every child): "heroic-age"
+Author pass: the five still-MISSING sons of Eurytus of Oechalia requested for
+authoring — Iphitus, Clytius, Toxeus, Deioneus, and Molion. Iole is NOT
+re-authored (already registered as greek_apollod_iole).
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISIONS
+================================================================================
+
+PARENT CLUSTER. The directed parent edge for every child is greek_eurytus_oechalia
+(registered; type mortal, king of Oechalia and famed master-archer, teacher of
+Heracles in the bow, killed with his sons at the sack of Oechalia). Eurytus's own
+record states in prose: "Father of Iole and of sons (Iphitus, Clytius, Toxeus,
+Deioneus, Molion) by Antiope daughter of Pylon," and adds that "His sons (Iphitus,
+Clytius, Toxeus, Deioneus, Molion) and wife Antiope daughter of Pylon are named in
+the tradition but have no corpus entries, so they are described here rather than
+wired." Confirmed by grep that none of the five exists yet as a registered figure
+(no id 'greek_iphitus' / 'greek_clytius' / 'greek_toxeus' / 'greek_deioneus' /
+'greek_molion' nor any greek_*_<name> variant; the only corpus occurrences of these
+names are prose mentions inside other figures' notes/power-lists — e.g. Eurytus's
+own notes, greek_apollod_heracles's lover-relation to Omphale "as expiation for the
+murder of Iphitus," and greek_odysseus's bow-item "Gift of Iphitus, once
+Eurytus's"). parentRoles {greek_eurytus_oechalia:"father"}.
+
+SECOND PARENT — ANTIOPE / ANTIOCHE. The mother of the sons is Antiope, daughter of
+Pylon (son of Naubolus) in the dominant Apollodoran-onomastic tradition; Hesiod's
+Catalogue calls Eurytus's wife Antioche. There is NO registered figure for her: the
+several "Antiope" entries in the corpus are wholly distinct women (Antiope of Thebes
+daughter of Nycteus, mother of Amphion and Zethus; and Antiope the Amazon), none of
+them the wife of Eurytus. She is therefore an UNREGISTERED second parent. Per the
+corpus convention already used for the children of Minos × (unregistered) Pasiphae —
+where each child's parentIds list only the registered parent and the mother is
+carried as an externalRef relation and in notes — Antiope/Antioche is NOT added to
+parentIds. She is given as an externalRef "mother" relation on each son and named in
+each son's lifecycle and notes.
+
+TYPE BY DESCENT (anti-drift rule). Eurytus = mortal (divinity fraction 0). The
+second parent Antiope/Antioche is unregistered and is counted as mortal (0), with
+the sum still divided by 2: (0 + 0) / 2 = 0. This lands below the scion band, i.e.
+mortal. Independently, the brief flags these explicitly as "mortal heroes," and the
+"author tribal/dynastic founders and historical humans as mortal" carve-out, plus
+the LOWER-tier-when-unsure rule, all converge on the same result. All five sons are
+accordingly authored as type "mortal" — matching their registered father Eurytus and
+their registered sister greek_apollod_iole (both "mortal"). (Mythic note, recorded
+but NOT used to inflate tier: Eurytus is reckoned a grandson of Apollo through his
+father Melaneus in the Thessalian tradition, but the corpus already fixes Eurytus as
+mortal, so descent from him yields mortal.)
+
+SIBLINGS. The sons of Eurytus across the sources are Iphitus, Clytius, Toxeus,
+Deioneus (Deion), and Molion (with Didaeon and Hippasus added in some late lists, and
+the daughter Iole). The source traditions divide the set: Apollonius Rhodius's
+Argonaut-catalogue and Hyginus pair Clytius and Iphitus; Diodorus Siculus 4.37.5
+names the slain sons as Toxeus, Molion, and Clytius; the Hesiodic Catalogue (via the
+Scholiast on Sophocles, Trachiniae 354) names Deion, Clytius, Toxeus, and Iphitus
+(omitting Molion). Apollodorus 2.7.7 has Heracles slay "Eurytus and his sons"
+collectively at the sack of Oechalia. The five authored sons are wired as siblings to
+one another RECIPROCALLY within this batch; each also carries a ONE-WAY sibling
+relation to the already-registered sister greek_apollod_iole (the brief's rule for an
+already-registered sibling — Iole's own entry is not edited here). Didaeon and Hippasus
+(late-list brothers) are given as externalRef sibling notes only, not as resolvable
+personIds.
+
+PER-FIGURE NOTES.
+
+  • IPHITUS (greek_iphitus) — the famous son: an Argonaut (Apollonius Rhodius,
+    Argonautica 1.86-89, with his brother Clytius; Hyginus, Fabulae 14), and above all
+    the guest-friend of both Odysseus and Heracles. Seeking his father's strayed mares
+    (twelve mares and mule-foals), he met young Odysseus in Messene at the house of
+    Ortilochus and gave him the great bow of Eurytus, receiving a sword and spear — the
+    very bow of the Odyssey 21 suitor-contest (Hom. Od. 21.13-41). Believing Heracles
+    innocent of the theft of the mares, he came as his guest to Tiryns; Heracles, in a
+    fit of madness (or treacherously), hurled him down from the walls/towers of Tiryns
+    and killed him (Apollod. 2.6.1-2; Diod. Sic. 4.31.3). For this murder of a
+    guest-friend Heracles was struck with disease and, purified, sold into servitude to
+    Omphale queen of Lydia (Apollod. 2.6.2-3). He DIES within the heroic-age, so the
+    lifecycle carries a death stage (era heroic-age) and vitalStatus is "dead"; death
+    block records the hurling from Tiryns. Distinct from Iphitus son of Naubolus, the
+    Phocian Argonaut and father of Schedius and Epistrophus (Il. 2.518) — disambiguated
+    in notes.
+
+  • CLYTIUS (greek_clytius) — son of Eurytus, brother of Iphitus and an Argonaut in the
+    same catalogue (Apollonius Rhodius, Argonautica 1.86-89; Hyginus, Fabulae 14). He
+    was killed by Heracles in the war against Eurytus per Diodorus Siculus (4.37.5,
+    "Toxeus, Molion, and Clytius"); a variant in a possibly-corrupt passage of Hyginus
+    (Fab. 14) has him slain by Aeetes on the Argonaut voyage. DIES at the sack of
+    Oechalia (dominant tradition) → lifecycle death stage, vitalStatus "dead." Distinct
+    from the many other Greek figures named Clytius (the Giant; the Trojan elder son of
+    Laomedon; et al.) — disambiguated in notes.
+
+  • TOXEUS (greek_toxeus) — son of Eurytus, named first among the slain sons by
+    Diodorus Siculus 4.37.5 ("Toxeus, Molion, and Clytius") and in the Hesiodic
+    Catalogue list (Sch. Soph. Trach. 354). His name ("bowman," from τόξον) marks the
+    archer-house of Eurytus. Killed by Heracles at the sack of Oechalia → lifecycle
+    death stage, vitalStatus "dead." Distinct from Toxeus son of Oeneus (whom his father
+    Oeneus killed for leaping the ditch at Calydon) — disambiguated in notes.
+
+  • DEIONEUS (greek_deioneus; "Deion") — son of Eurytus, attested in the Hesiodic
+    Catalogue list of the sons (Sch. Soph. Trach. 354, citing Hesiod's Ehoiai and the
+    Capture of Oechalia). A distinct tradition in Plutarch (Theseus 8.3) has Theseus
+    give Perigune, daughter of Sinis (and mother of Theseus's son Melanippus), in
+    marriage to "Deïoneus son of Eurytus the Oechalian" — the only individuated myth for
+    this son. He falls with his brothers when Heracles sacks Oechalia (Apollod. 2.7.7,
+    "Eurytus and his sons") → lifecycle death stage, vitalStatus "dead"; the Perigune
+    marriage is recorded as an externalRef spouse-relation and in notes (Perigune is
+    unregistered). Distinct from Deioneus/Deion son of Aeolus (father of Cephalus) —
+    disambiguated in notes.
+
+  • MOLION (greek_molion) — son of Eurytus, named among the slain sons by Diodorus
+    Siculus 4.37.5 ("Toxeus, Molion, and Clytius") and a brother of Clytius and Toxeus;
+    omitted from the Hesiodic four-son list, included in the late full lists. Killed by
+    Heracles at the sack of Oechalia → lifecycle death stage, vitalStatus "dead."
+    Distinct from the Molione/Moliones (Eurytus and Cteatus, the conjoined twin sons of
+    Actor/Poseidon and Molione) — disambiguated in notes.
+
+PRIMARY/SECONDARY SCHOLARSHIP USED (real, non-fabricated):
+  - Homer, Odyssey 21.13-41 (Iphitus gives Odysseus the bow of Eurytus, met at
+    Ortilochus's house in Messene; Iphitus killed by Heracles in violation of guest-law),
+    8.224-228 (Eurytus the archer); Iliad 2.518, 2.596 (the distinct Iphiti).
+  - Apollodorus, Bibliotheca (Library) 2.4.9 (Eurytus teaches Heracles the bow), 2.6.1-3
+    (archery contest for Iole; theft of the cattle/mares; Iphitus thrown from the walls of
+    Tiryns; Heracles's disease and servitude to Omphale), 2.7.7 (Heracles sacks Oechalia,
+    slays Eurytus and his sons, carries off Iole).
+  - Diodorus Siculus, Library of History 4.31.3 (Iphitus thrown from the tower of Tiryns),
+    4.37.4-5 (the sons Toxeus, Molion, and Clytius slain at Oechalia; Iole taken).
+  - Apollonius Rhodius, Argonautica 1.86-89 (Clytius and Iphitus, "warders of Oechalia,
+    sons of Eurytus the ruthless," in the Argonaut-catalogue; the bow of Apollo motif).
+  - Hyginus, Fabulae 14 (Argonaut-catalogue, Clytius and Iphitus sons of Eurytus); the
+    Aeetes-variant for Clytius.
+  - Plutarch, Theseus 8.3 (Perigune, daughter of Sinis, given by Theseus in marriage to
+    Deioneus son of Eurytus; the Ioxid asparagus-custom).
+  - Sophocles, Trachiniae 260-285 (the contest and the wrong done to Heracles), 351-365,
+    476-478 (the sack of Oechalia and the capture of Iole); Scholia to Trachiniae 354
+    (the Hesiodic Catalogue / Capture of Oechalia list of Eurytus's sons: Deion, Clytius,
+    Toxeus, Iphitus).
+  - Hesiod, Catalogue of Women (Ehoiai), frr. on the Oechalian house (preserved via the
+    Trachiniae scholia), naming Eurytus's wife Antioche and his sons.
+  - Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources (Johns
+    Hopkins Univ. Press, 1993), pp. 434-437 (Heracles, Eurytus, Iphitus and the sack of
+    Oechalia).
+  - William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849),
+    s.vv. "Eurytus," "Iphitus," "Clytius," "Toxeus," "Deioneus," "Molion."
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "greek_iphitus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Iphitus",
+   "alt": [
+    "Iphitos",
+    "Iphitus of Oechalia",
+    "Iphitus son of Eurytus"
+   ],
+   "transliterations": {
+    "greek": "Ἴφιτος",
+    "etymology": "Greek Ἴφιτος, conventionally connected with ἶφι ('with might, mightily') / ἴς ('strength, sinew') — 'the mighty one'. Borne by several heroes; here the eldest son of Eurytus of Oechalia."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_eurytus_oechalia"
+  ],
+  "parentRoles": {
+   "greek_eurytus_oechalia": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Eurytus-and-Antiope-at-Oechalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.1; Apollonius Rhodius, Argonautica 1.86-89"
+     }
+    ],
+    "notes": "Eldest son of the master-archer Eurytus of Oechalia by Antiope daughter of Pylon (Antioche in the Hesiodic Catalogue); brother of Iole, Clytius, Toxeus, Deioneus and Molion. Mortal-tier: mortal father Eurytus by an unregistered mortal mother."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "voyage-of-the-Argo-as-an-Argonaut",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.86-89; Hyginus, Fabulae 14"
+     }
+    ],
+    "notes": "Sailed with the Argonauts to Colchis together with his brother Clytius — the two named in the catalogue as the warders of Oechalia, sons of Eurytus, to whom Apollo had given his bow."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "guest-friendship-with-Odysseus-and-gift-of-the-bow-of-Eurytus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 21.13-41"
+     }
+    ],
+    "notes": "Searching for twelve strayed mares with their mule-foals, met the young Odysseus in Messene at the house of Ortilochus; the two became guest-friends, and Iphitus gave Odysseus the great bow of his father Eurytus, receiving a sword and spear in exchange. That bow is the bow strung in the suitor-contest of Odyssey 21."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 3,
+    "startEvent": "death-hurled-from-the-walls-of-Tiryns-by-Heracles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.1-2; Diod. Sic. 4.31.3; Hom. Od. 21.24-30"
+     }
+    ],
+    "notes": "Still seeking the lost mares, and believing Heracles innocent of the theft, he came as Heracles's guest to Tiryns. Heracles — in a fit of madness, or treacherously — led him up onto the high wall and hurled him down to his death, the killing of a guest-friend that Homer condemns as an outrage against Zeus. For this blood-guilt Heracles fell ill and was sold into servitude to Omphale of Lydia."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "τόξον",
+     "script": "Greek",
+     "rom": "toxon"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 21.13-41; Apollonius Rhodius, Argonautica 1.88-89"
+     }
+    ],
+    "notes": "Heir of the archer-house of Eurytus and keeper of the great bow Apollo had given his father; the bow he passes to Odysseus."
+   },
+   {
+    "sphereId": "guest-friendship",
+    "contextTag": "episodic",
+    "term": {
+     "value": "ξενίη",
+     "script": "Greek",
+     "rom": "xeniē"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 21.31-41"
+     }
+    ],
+    "notes": "Exemplar and victim of the guest-bond (xenia): bound to Odysseus by gift-exchange, and murdered by Heracles in violation of the same sacred tie."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "iphitus-bow-of-eurytus",
+    "name": "Wields and bestows the bow of Eurytus",
+    "term": {
+     "value": "τόξον Εὐρύτου",
+     "script": "Greek",
+     "rom": "toxon Eurytou"
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "skill",
+     "weapon-mastery"
+    ],
+    "notes": "Inherited his father Eurytus's archery and his great bow; gave the bow to Odysseus as a guest-gift. Inheritability 'partial' as a skill descending in the archer-line of Eurytus.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 21.13-41"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "iphitus-bow-of-eurytus-item",
+    "name": "The bow of Eurytus",
+    "kind": "weapon",
+    "role": "inherited from his father Eurytus and given as a guest-gift to Odysseus; strung in the Odyssey 21 suitor-contest",
+    "term": {
+     "value": "τόξον Εὐρύτου",
+     "script": "Greek",
+     "rom": "toxon Eurytou"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 21.13-41"
+     }
+    ]
+   },
+   {
+    "id": "iphitus-sword-and-spear",
+    "name": "Sword and spear received from Odysseus",
+    "kind": "weapon",
+    "role": "guest-gift given by Odysseus in exchange for the bow, token of their xenia",
+    "term": {
+     "value": "ξίφος καὶ ἔγχος",
+     "script": "Greek",
+     "rom": "xiphos kai enchos"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 21.33-35"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_eurytus_oechalia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.1; Apollonius Rhodius, Argonautica 1.86-89"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "externalRef": {
+     "name": "Antiope daughter of Pylon (Antioche in Hesiod; wife of Eurytus, unregistered second parent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.1; Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_apollod_iole",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.1, 2.7.7"
+     }
+    ],
+    "notes": "Brother of Iole, the bride promised in the contest and carried off by Heracles. One-way relation to the already-registered sister; her entry is not edited here."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_clytius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.86-89; Apollod. 2.7.7"
+     }
+    ],
+    "notes": "Brother and fellow Argonaut."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_toxeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5; Scholia to Sophocles, Trachiniae 354"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_deioneus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_molion",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   }
+  ],
+  "death": {
+   "manner": {
+    "kind": "hurled-from-the-walls-of-Tiryns-by-Heracles",
+    "notes": "Thrown headlong from the high wall (or tower) of Tiryns by Heracles, who killed his trusting guest-friend either in renewed madness or by treachery — the blood-guilt for which Heracles served Omphale."
+   },
+   "place": {
+    "name": "Tiryns (Argolid)"
+   },
+   "afterlifeStatus": "shade"
+  },
+  "epithets": [
+   {
+    "original": "Οἰχαλίης ἐπίουρος (Oichaliēs epiouros, 'warder of Oechalia')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.87"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Odyssey 21.13-41; Apollodorus 2.6.1-2, 2.7.7; Diodorus Siculus 4.31.3, 4.37.5; Apollonius Rhodius Argonautica 1.86-89; Hyginus Fabulae 14"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth (Johns Hopkins Univ. Press, 1993), pp. 434-437"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "death-by-Heracles-at-Tiryns",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.6.1-2; Diodorus Siculus 4.31.3; Homer Odyssey 21.24-30"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eldest son of Eurytus of Oechalia, Argonaut, and guest-friend of Odysseus (to whom he gave the bow of Eurytus, the bow of Odyssey 21) and of Heracles, who murdered him by hurling him from the walls of Tiryns — the crime that sent Heracles into servitude to Omphale. Father greek_eurytus_oechalia; mother Antiope/Antioche (externalRef, unregistered); siblings the four other authored sons reciprocally and greek_apollod_iole one-way. Mortal-tier (mortal father, unregistered mortal mother), matching the registered Eurytus and Iole. Distinct from Iphitus son of Naubolus, the Phocian Argonaut and father of Schedius and Epistrophus (Iliad 2.518)."
+ },
+ {
+  "id": "greek_clytius",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Clytius",
+   "alt": [
+    "Klytios",
+    "Clytius of Oechalia",
+    "Clytius son of Eurytus"
+   ],
+   "transliterations": {
+    "greek": "Κλυτίος",
+    "etymology": "Greek Κλυτίος, from κλυτός ('famous, renowned', cf. κλέος 'fame'), 'the renowned'. A common heroic name; here the son of Eurytus of Oechalia."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_eurytus_oechalia"
+  ],
+  "parentRoles": {
+   "greek_eurytus_oechalia": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Eurytus-and-Antiope-at-Oechalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.86-89; Diod. Sic. 4.37.5"
+     }
+    ],
+    "notes": "Son of Eurytus of Oechalia by Antiope (Antioche in Hesiod); brother of Iphitus, Iole, Toxeus, Deioneus and Molion. Mortal-tier: mortal father by an unregistered mortal mother."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "voyage-of-the-Argo-as-an-Argonaut",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.86-89; Hyginus, Fabulae 14"
+     }
+    ],
+    "notes": "Sailed with the Argonauts alongside his brother Iphitus; the pair named in the catalogue as the warders of Oechalia, sons of Eurytus, heirs of Apollo's bow."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-at-the-sack-of-Oechalia-by-Heracles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5; Apollod. 2.7.7"
+     }
+    ],
+    "notes": "Slain by Heracles when Heracles sacked Oechalia to avenge the refusal of Iole — named among the killed sons (Toxeus, Molion, Clytius). A divergent, possibly corrupt notice in Hyginus (Fab. 14) instead has him killed by Aeetes during the Argo's voyage; the Diodoran death at Oechalia is followed here."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "τόξον",
+     "script": "Greek",
+     "rom": "toxon"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.88-89"
+     }
+    ],
+    "notes": "Of the archer-house of Eurytus; with Iphitus, an heir of the bow Apollo gave their father."
+   },
+   {
+    "sphereId": "the-argonautic-expedition",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.86-89; Hyginus, Fabulae 14"
+     }
+    ],
+    "notes": "One of the heroes of the Argo, in the catalogue of those who sailed for the Golden Fleece."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "clytius-oechalian-archery",
+    "name": "Draws the inherited Oechalian bow",
+    "term": {
+     "value": "τόξον",
+     "script": "Greek",
+     "rom": "toxon"
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "skill",
+     "weapon-mastery"
+    ],
+    "notes": "Shares in the archery of the house of Eurytus (the bow of Apollo). Inheritability 'partial' as a skill of the archer-line.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.86-89"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_eurytus_oechalia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.86-89; Diod. Sic. 4.37.5"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "externalRef": {
+     "name": "Antiope daughter of Pylon (Antioche in Hesiod; wife of Eurytus, unregistered second parent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_apollod_iole",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7"
+     }
+    ],
+    "notes": "Brother of Iole. One-way relation to the already-registered sister; her entry is not edited here."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_iphitus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.86-89"
+     }
+    ],
+    "notes": "Brother and fellow Argonaut."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_toxeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_deioneus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_molion",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   }
+  ],
+  "death": {
+   "manner": {
+    "kind": "slain-by-Heracles-at-the-sack-of-Oechalia",
+    "notes": "Killed with his father and brothers when Heracles stormed Oechalia to seize Iole (Diod. Sic. 4.37.5; Apollod. 2.7.7). Variant: slain by Aeetes on the Argo (Hyg. Fab. 14)."
+   },
+   "place": {
+    "name": "Oechalia"
+   },
+   "afterlifeStatus": "shade"
+  },
+  "epithets": [
+   {
+    "original": "Οἰχαλίης ἐπίουρος (Oichaliēs epiouros, 'warder of Oechalia')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius, Argonautica 1.87"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollonius Rhodius Argonautica 1.86-89; Hyginus Fabulae 14; Diodorus Siculus 4.37.5; Apollodorus 2.7.7; Scholia to Sophocles Trachiniae 354"
+     },
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Clytius (4)'"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "death-by-Heracles-at-Oechalia",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Diodorus Siculus 4.37.5; Apollodorus 2.7.7"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Son of Eurytus of Oechalia, Argonaut (with his brother Iphitus), slain by Heracles at the sack of Oechalia (variant: by Aeetes on the Argo). Father greek_eurytus_oechalia; mother Antiope/Antioche (externalRef, unregistered); siblings the four other authored sons reciprocally and greek_apollod_iole one-way. Mortal-tier. Distinct from the other Greek figures named Clytius — the Giant slain in the Gigantomachy, and Clytius son of Laomedon the Trojan elder, among others."
+ },
+ {
+  "id": "greek_toxeus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Toxeus",
+   "alt": [
+    "Toxeas",
+    "Toxeus of Oechalia",
+    "Toxeus son of Eurytus"
+   ],
+   "transliterations": {
+    "greek": "Τοξεύς",
+    "etymology": "Greek Τοξεύς, 'archer, bowman', from τόξον ('bow') — a fitting name in the archer-house of Eurytus. Borne also by a son of Oeneus; here the son of Eurytus of Oechalia."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_eurytus_oechalia"
+  ],
+  "parentRoles": {
+   "greek_eurytus_oechalia": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Eurytus-and-Antiope-at-Oechalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5; Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ],
+    "notes": "Son of Eurytus of Oechalia by Antiope (Antioche in Hesiod); brother of Iphitus, Clytius, Iole, Deioneus and Molion. His name marks the archer-house. Mortal-tier: mortal father by an unregistered mortal mother."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "death-at-the-sack-of-Oechalia-by-Heracles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5; Apollod. 2.7.7"
+     }
+    ],
+    "notes": "Slain by Heracles at the storming of Oechalia, named first among the killed sons (Toxeus, Molion, Clytius), when Heracles took the city to carry off Iole."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "τόξον",
+     "script": "Greek",
+     "rom": "toxon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Toxeus (2)'"
+     }
+    ],
+    "notes": "Of the archer-line of Eurytus; his very name, 'Bowman', expresses the family's bow-craft. The archer-house affiliation is drawn from the standard reference literature on the onomastics of Eurytus's sons."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "toxeus-oechalian-archery",
+    "name": "Draws the inherited Oechalian bow",
+    "term": {
+     "value": "τόξον",
+     "script": "Greek",
+     "rom": "toxon"
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "skill",
+     "weapon-mastery"
+    ],
+    "notes": "Shares the archery of the house of Eurytus; 'partial' as a skill of the archer-line. The archer-house affiliation rests on the standard reference literature and the name Τοξεύς ('archer').",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Eurytus (1)'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_eurytus_oechalia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5; Scholia to Sophocles, Trachiniae 354"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "externalRef": {
+     "name": "Antiope daughter of Pylon (Antioche in Hesiod; wife of Eurytus, unregistered second parent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_apollod_iole",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7"
+     }
+    ],
+    "notes": "Brother of Iole. One-way relation to the already-registered sister; her entry is not edited here."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_iphitus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354; Diod. Sic. 4.37.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_clytius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_deioneus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_molion",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   }
+  ],
+  "death": {
+   "manner": {
+    "kind": "slain-by-Heracles-at-the-sack-of-Oechalia",
+    "notes": "Killed with his father and brothers when Heracles stormed Oechalia to seize Iole (Diod. Sic. 4.37.5; Apollod. 2.7.7)."
+   },
+   "place": {
+    "name": "Oechalia"
+   },
+   "afterlifeStatus": "shade"
+  },
+  "epithets": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Diodorus Siculus 4.37.5; Apollodorus 2.7.7; Scholia to Sophocles Trachiniae 354 (Hesiod, Catalogue of Women)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Toxeus (2)'"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "death-by-Heracles-at-Oechalia",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Diodorus Siculus 4.37.5; Apollodorus 2.7.7"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Son of Eurytus of Oechalia, named first among the sons slain by Heracles at the sack of Oechalia (Diod. Sic. 4.37.5). Father greek_eurytus_oechalia; mother Antiope/Antioche (externalRef, unregistered); siblings the four other authored sons reciprocally and greek_apollod_iole one-way. Mortal-tier. Distinct from Toxeus son of Oeneus, killed by his own father at Calydon for leaping the ditch."
+ },
+ {
+  "id": "greek_deioneus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Deioneus",
+   "alt": [
+    "Deion",
+    "Deïoneus",
+    "Deioneus of Oechalia",
+    "Deioneus son of Eurytus"
+   ],
+   "transliterations": {
+    "greek": "Δηιονεύς",
+    "etymology": "Greek Δηιονεύς (also Δηίων, Deion), conventionally linked to δήιος ('hostile, destroying; of war') — 'the warlike'. Borne also by Deion son of Aeolus; here the son of Eurytus of Oechalia."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_eurytus_oechalia"
+  ],
+  "parentRoles": {
+   "greek_eurytus_oechalia": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Eurytus-and-Antiope-at-Oechalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue); Plut. Thes. 8.3"
+     }
+    ],
+    "notes": "Son of Eurytus of Oechalia by Antiope (Antioche in Hesiod); named 'Deion' in the Hesiodic Catalogue list of the sons (Deion, Clytius, Toxeus, Iphitus). Brother of Iphitus, Clytius, Toxeus, Iole and Molion. Mortal-tier: mortal father by an unregistered mortal mother."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Perigune-given-by-Theseus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Plutarch, Theseus 8.3"
+     }
+    ],
+    "notes": "Theseus gave him in marriage Perigune, daughter of the brigand Sinis (slain by Theseus), after she had borne Theseus a son, Melanippus; from Melanippus came Ioxus and the Ioxid clan with their reverence for asparagus and rushes. The only individuated myth attached to this son of Eurytus."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-at-the-sack-of-Oechalia-by-Heracles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7"
+     }
+    ],
+    "notes": "Falls with his father and brothers when Heracles sacks Oechalia to carry off Iole — Apollodorus has Heracles slay 'Eurytus and his sons' collectively."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "τόξον",
+     "script": "Greek",
+     "rom": "toxon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Eurytus (1)'"
+     }
+    ],
+    "notes": "Of the archer-house of Eurytus; the family bow-craft affiliation is drawn from the standard reference literature on Eurytus's sons."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "deioneus-oechalian-archery",
+    "name": "Draws the inherited Oechalian bow",
+    "term": {
+     "value": "τόξον",
+     "script": "Greek",
+     "rom": "toxon"
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "skill",
+     "weapon-mastery"
+    ],
+    "notes": "Shares the archery of the house of Eurytus; 'partial' as a skill of the archer-line. Affiliation rests on the standard reference literature on the sons of Eurytus.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Eurytus (1)'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_eurytus_oechalia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue); Plut. Thes. 8.3"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "externalRef": {
+     "name": "Antiope daughter of Pylon (Antioche in Hesiod; wife of Eurytus, unregistered second parent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "externalRef": {
+     "name": "Perigune (daughter of Sinis, mother of Theseus's son Melanippus; unregistered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Plutarch, Theseus 8.3"
+     }
+    ],
+    "notes": "Given to Deioneus in marriage by Theseus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_apollod_iole",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7; Scholia to Sophocles, Trachiniae 354"
+     }
+    ],
+    "notes": "Brother of Iole. One-way relation to the already-registered sister; her entry is not edited here."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_iphitus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_clytius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_toxeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles, Trachiniae 354 (Hesiod, Catalogue)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_molion",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7; Diod. Sic. 4.37.5"
+     }
+    ],
+    "notes": "Fellow son of Eurytus; brothers as the sons slain at Oechalia."
+   }
+  ],
+  "death": {
+   "manner": {
+    "kind": "slain-by-Heracles-at-the-sack-of-Oechalia",
+    "notes": "Killed with his father and brothers when Heracles stormed Oechalia to seize Iole (Apollod. 2.7.7, 'Eurytus and his sons')."
+   },
+   "place": {
+    "name": "Oechalia"
+   },
+   "afterlifeStatus": "shade"
+  },
+  "epithets": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Scholia to Sophocles Trachiniae 354 (Hesiod, Catalogue of Women); Plutarch Theseus 8.3; Apollodorus 2.7.7"
+     },
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Deioneus (2)'"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "marriage-to-Perigune",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Plutarch Theseus 8.3"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Son of Eurytus of Oechalia ('Deion' in the Hesiodic Catalogue), distinguished by the one tradition (Plutarch Theseus 8.3) in which Theseus gives him Perigune, daughter of Sinis, in marriage; he falls with his brothers at the sack of Oechalia. Father greek_eurytus_oechalia; mother Antiope/Antioche and wife Perigune both externalRef (unregistered); siblings the four other authored sons reciprocally and greek_apollod_iole one-way. Mortal-tier. Distinct from Deion/Deioneus son of Aeolus, father of Cephalus."
+ },
+ {
+  "id": "greek_molion",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Molion",
+   "alt": [
+    "Molion of Oechalia",
+    "Molion son of Eurytus"
+   ],
+   "transliterations": {
+    "greek": "Μολίων",
+    "etymology": "Greek Μολίων, a name connected with μῶλος ('the toil/din of battle'); 'the battler'. Shared with the patronymic Μολίονε of the twin Moliones; here the son of Eurytus of Oechalia."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_eurytus_oechalia"
+  ],
+  "parentRoles": {
+   "greek_eurytus_oechalia": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Eurytus-and-Antiope-at-Oechalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ],
+    "notes": "Son of Eurytus of Oechalia by Antiope (Antioche in Hesiod); brother of Clytius and Toxeus (and of Iphitus, Deioneus and Iole). Named among the slain sons by Diodorus; omitted from the Hesiodic four-son list, present in the fuller lists. Mortal-tier: mortal father by an unregistered mortal mother."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "death-at-the-sack-of-Oechalia-by-Heracles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5; Apollod. 2.7.7"
+     }
+    ],
+    "notes": "Slain by Heracles at the storming of Oechalia, named among the killed sons (Toxeus, Molion, Clytius), when Heracles took the city to carry off Iole."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "τόξον",
+     "script": "Greek",
+     "rom": "toxon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Eurytus (1)'"
+     }
+    ],
+    "notes": "Of the archer-house of Eurytus; the family bow-craft affiliation is drawn from the standard reference literature on Eurytus's sons."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "molion-oechalian-archery",
+    "name": "Draws the inherited Oechalian bow",
+    "term": {
+     "value": "τόξον",
+     "script": "Greek",
+     "rom": "toxon"
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "skill",
+     "weapon-mastery"
+    ],
+    "notes": "Shares the archery of the house of Eurytus; 'partial' as a skill of the archer-line. Affiliation rests on the standard reference literature on the sons of Eurytus.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Eurytus (1)'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_eurytus_oechalia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "externalRef": {
+     "name": "Antiope daughter of Pylon (Antioche in Hesiod; wife of Eurytus, unregistered second parent)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_apollod_iole",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7; Diod. Sic. 4.37.5"
+     }
+    ],
+    "notes": "Brother of Iole. One-way relation to the already-registered sister; her entry is not edited here."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_iphitus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_clytius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_toxeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 4.37.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_deioneus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7; Diod. Sic. 4.37.5"
+     }
+    ],
+    "notes": "Fellow son of Eurytus; brothers as the sons slain at Oechalia."
+   }
+  ],
+  "death": {
+   "manner": {
+    "kind": "slain-by-Heracles-at-the-sack-of-Oechalia",
+    "notes": "Killed with his father and brothers when Heracles stormed Oechalia to seize Iole (Diod. Sic. 4.37.5; Apollod. 2.7.7)."
+   },
+   "place": {
+    "name": "Oechalia"
+   },
+   "afterlifeStatus": "shade"
+  },
+  "epithets": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Diodorus Siculus 4.37.5; Apollodorus 2.7.7"
+     },
+     {
+      "kind": "secondary",
+      "reference": "William Smith (ed.), A Dictionary of Greek and Roman Biography and Mythology (1849), s.v. 'Molion (2)'"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "death-by-Heracles-at-Oechalia",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Diodorus Siculus 4.37.5; Apollodorus 2.7.7"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Son of Eurytus of Oechalia, named among the sons slain by Heracles at the sack of Oechalia (Diod. Sic. 4.37.5), brother of Clytius and Toxeus. Father greek_eurytus_oechalia; mother Antiope/Antioche (externalRef, unregistered); siblings the four other authored sons reciprocally and greek_apollod_iole one-way. Mortal-tier. Distinct from the Moliones (the conjoined twins Eurytus and Cteatus, sons of Actor/Poseidon and Molione)."
+ }
+]
+```
+
+WIRED:
+  - greek_iphitus, greek_clytius, greek_toxeus, greek_deioneus, greek_molion
+    → father greek_eurytus_oechalia (parentRoles {greek_eurytus_oechalia:"father"}); each
+      also carries a directed "father" relation to greek_eurytus_oechalia.
+  - the five authored sons → siblings of one another, RECIPROCALLY within this batch.
+  - each authored son → ONE-WAY sibling relation to the already-registered sister
+    greek_apollod_iole (her entry is not edited here).
+  - greek_deioneus → spouse externalRef Perigune (unregistered), per Plut. Thes. 8.3.
+
+EXTERNALREF (named, not wired — no registered entry):
+  - Antiope daughter of Pylon / Antioche (mother; unregistered second parent) — given as an
+    externalRef "mother" relation on every son and in notes; NOT added to parentIds, per the
+    corpus convention for an unregistered second parent.
+  - Perigune (daughter of Sinis; wife of Deioneus) — externalRef spouse on greek_deioneus.
+  - Didaeon and Hippasus (late-list further brothers of Oechalia) — named in the research
+    header only; not individuated/wired, as they are absent from the brief's five and thinly
+    attested.
+
+NOTE ON TYPE (anti-drift): all five are type "mortal" — mortal father Eurytus (0) × unregistered
+mortal mother (0), (0+0)/2 = 0 → mortal; reinforced by the brief's "mortal heroes" flag and the
+registered father/sister both being "mortal."
