@@ -415,7 +415,7 @@ test('inheritance never overrides a figure\'s own declared powers (canon-safe)',
 test('seeds the cited Thor figure with Mjǫllnir in his material culture', () => {
   const thor = people['norse_thor'];
   assert.ok(thor, 'expected norse_thor in the seed');
-  assert.deepStrictEqual(thor.parentIds, ['norse_odin'], 'Thor is Odin\'s son');
+  assert.deepStrictEqual(thor.parentIds, ['norse_odin', 'norse_jord'], 'Thor is the son of Odin and the earth-goddess Jǫrð');
   const mc = (thor.materialCulture || []).map((m) => m.id);
   assert.ok(mc.includes('mjolnir'), 'Thor should carry mjolnir');
 });

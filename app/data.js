@@ -5173,7 +5173,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Menelaus', alt: ['Menelaos'], transliterations: { greek: 'Μενέλαος' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: [],
+      parentIds: ['greek_aerope', 'greek_atreus'],
       parentRoles: {},
       temporal: {
         era: 'heroic-age',
@@ -5811,7 +5811,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Creusa', alt: ['Creusa of Athens', 'Kreousa'], transliterations: { greek: 'Κρέουσα' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: [],
+      parentIds: ['greek_erechtheus', 'greek_praxithea'],
       parentRoles: {},
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -6048,7 +6048,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Oreithyia', alt: ['Orithyia'], transliterations: { greek: 'Ὠρείθυια', etymology: 'from ὄρος (mountain) + θύω (rage, surge) — "she who surges over the mountains," fitting to her abduction by the wind-god across the Thracian peaks.' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: ['greek_erechtheus'],
+      parentIds: ['greek_erechtheus', 'greek_praxithea'],
       parentRoles: {},
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -6596,7 +6596,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Yoshiie', alt: ['Minamoto no Yoshiie', 'Hachiman Tarō Yoshiie', 'Hachimantarō', '"first son of Hachiman"'], transliterations: { japanese: '源義家 / 八幡太郎義家', romaji: 'Minamoto no Yoshiie / Hachiman Tarō Yoshiie', etymology: 'The Hachimantarō naming (八幡太郎 = "First Son of Hachiman") is the divine-paternity claim attached at his coming-of-age (genpuku) ceremony at Iwashimizu Hachimangū in Kyoto.' } },
       type: 'demigod', origin: 'canon', tradition: 'Japanese', primaryTradition: 'Japanese',
       sex: 'male', vitalStatus: 'apotheosed',
-      parentIds: ['japanese_hachiman'],
+      parentIds: ['japanese_hachiman', 'japanese_yoriyoshi'],
       parentRoles: { japanese_hachiman: 'paternal' },
       temporal: {
         era: 'late-heian',
@@ -6841,7 +6841,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Alunsina', alt: ['Laun Sina ("the Unmarried One")', 'Laon Sina', 'Abyang Alunsina'], transliterations: { 'kinaray-a': 'Alunsina', etymology: 'from Kinaray-a roots: laun ("ancient, original") + sina ("the one who"), or "Laun Sina" parsed as "the Unmarried One." The Visayan-region traditions often identify her with Laon — the Hiligaynon supreme creator-goddess of Mt. Kanlaon — making the Alunsina-Laon pairing a regional-overlapping identification across Suludnon and Hiligaynon traditions.' } },
       type: 'deity', origin: 'canon', tradition: 'Suludnon', primaryTradition: 'Suludnon',
       sex: 'female', vitalStatus: 'living',
-      parentIds: [],
+      parentIds: ['suludnon_kaptan'],
       parentRoles: {},
       temporal: { era: 'mythic-prehistoric' },
       lifecycle: [
@@ -7156,7 +7156,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Ovug', alt: [], transliterations: { ifugao: 'Ovug', etymology: 'Ifugao: the eponymous-thunder-sound figure; the name is identified with the etiological function (the voice that produces thunder).' } },
       type: 'demigod', origin: 'canon', tradition: 'Ifugao', primaryTradition: 'Ifugao',
       sex: 'male', vitalStatus: 'living',
-      parentIds: ['ifugao_dumagid'],
+      parentIds: ['ifugao_dumagid', 'ifugao_dugai'],
       parentRoles: { ifugao_dumagid: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -7311,7 +7311,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Okwa', alt: ['Okwä', 'Ukwa'], transliterations: { shilluk: 'Okwä', etymology: 'Shilluk: a royal name in the foundational genealogical line.' } },
       type: 'mortal', origin: 'canon', tradition: 'Shilluk', primaryTradition: 'Shilluk',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: [],
+      parentIds: ['shilluk_wat_mol'],
       parentRoles: {},
       temporal: { era: 'mythic-prehistoric' },
       lifecycle: [
@@ -7338,7 +7338,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Nyakaya', alt: ['Nyakayo', 'Nyikaayø', 'Nyikaya'], transliterations: { shilluk: 'Nyakaayø', etymology: 'Shilluk: a name within the river-crocodile divine-feminine tradition; identified by Frazer and Seligman as a "naiad-type" African water-goddess.' } },
       type: 'deity', origin: 'canon', tradition: 'Shilluk', primaryTradition: 'Shilluk',
       sex: 'female', vitalStatus: 'living',
-      parentIds: [],
+      parentIds: ['shilluk_dunyel'],
       parentRoles: {},
       temporal: { era: 'mythic-prehistoric' },
       lifecycle: [
@@ -10393,7 +10393,7 @@ const buildPeopleSeed = () => {
       },
       type: 'deity', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'male', vitalStatus: 'living',
-      parentIds: [],
+      parentIds: ['hindu_surya'],
       temporal: {
         era: 'vedic',  // textual attestation: Rgvedic hymns
         mythicStart: null,  // Aśvin twin (Nāsatya); eternal cosmic. Era marker textual. Fathers Nakula in dvapara-yuga.
@@ -10488,7 +10488,7 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: [],
+      parentIds: ['hindu_shura'],
       temporal: { era: 'dvapara-yuga' },
       relations: [
         { kind: 'spouse', personId: 'hindu_pandu', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mahabharata, Adi Parva 110' }] },
@@ -10879,7 +10879,7 @@ const buildPeopleSeed = () => {
       },
       type: 'deity', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish',
       sex: 'male', vitalStatus: 'living',
-      parentIds: [],
+      parentIds: ['irish_cian'],
       temporal: { era: 'mythological-cycle' },
       iconography: {
         attributes: [
@@ -11138,7 +11138,7 @@ const buildPeopleSeed = () => {
       },
       type: 'deity', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish',
       sex: 'male', vitalStatus: 'living',
-      parentIds: [],
+      parentIds: ['irish_lir'],
       temporal: { era: 'mythological-cycle' },
       iconography: {
         attributes: [
@@ -13933,7 +13933,7 @@ const buildPeopleSeed = () => {
       },
       type: 'deity', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse',
       sex: 'male', vitalStatus: 'living',
-      parentIds: ['norse_odin'],
+      parentIds: ['norse_odin', 'norse_jord'],
       parentRoles: { norse_odin: 'paternal' },
       temporal: { era: 'mythic-prehistoric' },
       faculties: [
@@ -14016,7 +14016,7 @@ const buildPeopleSeed = () => {
       },
       type: 'deity', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse',
       sex: 'male', vitalStatus: 'living',
-      parentIds: [],
+      parentIds: ['norse_njord'],
       temporal: { era: 'mythic-prehistoric' },
       iconography: {
         attributes: [
@@ -14692,7 +14692,7 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: [],
+      parentIds: ['hindu_pratipa'],
       temporal: { era: 'epic-period' },
       lifecycle: [
         { typeStatus: 'mortal', startEvent: 'birth-as-Pratipa-second-son', era: 'epic-period', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Mahabharata Adi Parva 90' }], notes: 'Second son of King Pratipa of Hastinapura; younger brother of Devapi (renounced, became a hermit) and Bahlika (left for the Bahlika kingdom). Inherited the Kuru throne.' },
@@ -15294,7 +15294,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Wiininwaa', alt: ['Winona'], transliterations: {} },
       type: 'mortal', tradition: 'Anishinaabe', primaryTradition: 'Anishinaabe', sex: 'female', vitalStatus: 'dead',
       origin: 'canon',
-        parentIds: [],
+        parentIds: ['nokomis'],
       temporal: { era: 'pre-prophecy' },
       lifecycle: [{ typeStatus: 'mortal', era: 'pre-prophecy', eraOrdering: 0, sources: [{ kind: 'secondary', reference: 'Schoolcraft, Algic Researches' }] }],
       sources: [
@@ -16242,7 +16242,7 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Iroquois', primaryTradition: 'Iroquois', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['iroquois_aliquipiso'],
       temporal: { era: 'post-contact-historical' },
       lifecycle: [
         { typeStatus: 'mortal', era: 'post-contact-historical', eraOrdering: 0, startEvent: 'birth-c-1750-ce-Conewaugus', sources: [{ kind: 'primary', reference: 'A. F. C. Wallace, The Death and Rebirth of the Seneca (1969); Cornplanter\'s own dictated memoirs to the Pennsylvania state government 1822' }], notes: 'Born c. 1750 CE at Conewaugus on the Genesee River (modern western New York); son of Aliquipiso (Seneca mother of the Wolf Clan) and John Abeel (a Dutch trader from Albany). The Dutch-Seneca dual-heritage was reflected in his English name (John O\'Bail / John Abeel, the anglicized form of his father\'s name). Per Seneca matrilineal kinship, his Wolf Clan affiliation through his mother determined his political-cultural identity; the Dutch-trader father provided the European-cultural-linguistic exposure that subsequently informed his diplomatic-political role.' },
@@ -18840,7 +18840,7 @@ const buildPeopleSeed = () => {
       },
       type: 'quartigod', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_sinchi_roca'],
+      parentIds: ['inca_sinchi_roca', 'inca_mama_coca'],
       parentRoles: { inca_sinchi_roca: 'paternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
@@ -19157,7 +19157,7 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_yahuar_huacac'],
+      parentIds: ['inca_yahuar_huacac', 'inca_mama_chicya'],
       parentRoles: { inca_yahuar_huacac: 'paternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
@@ -19213,7 +19213,7 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_viracocha_inca'],
+      parentIds: ['inca_viracocha_inca', 'inca_mama_runtu'],
       parentRoles: { inca_viracocha_inca: 'paternal' },
       temporal: { era: 'imperial' },
       lifecycle: [
@@ -20737,7 +20737,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Prativindhya', alt: ['Prativindhya Yaudheya'], transliterations: { sanskrit: 'प्रतिविन्ध्य', etymology: 'Sanskrit: prati- (against, opposite) + vindhya (the Vindhya mountain range or "the unconquerable") — possibly "the one who stands against the Vindhyas" or "the unconquerable-toward." The name is canonically explained as referring to the boy\'s firmness "like the Vindhya mountain" per Mahābhārata Ādi Parva 220.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['hindu_yudhishthira'],
+      parentIds: ['hindu_yudhishthira', 'hindu_draupadi'],
       parentRoles: { hindu_yudhishthira: 'paternal' },
       temporal: { era: 'dvapara-yuga' },
       lifecycle: [
@@ -20768,7 +20768,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Sutasoma', alt: [], transliterations: { sanskrit: 'सुतसोम', etymology: 'Sanskrit: suta (born, born-of) + soma (the moon, the sacred ritual-drink) — "born of the soma" or "moon-born." The name canonically commemorates that he was conceived during a soma-sacrifice per Mahābhārata Ādi Parva 220.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['hindu_bhima'],
+      parentIds: ['hindu_bhima', 'hindu_draupadi'],
       parentRoles: { hindu_bhima: 'paternal' },
       temporal: { era: 'dvapara-yuga' },
       lifecycle: [
@@ -20799,7 +20799,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Śrutakarma', alt: ['Shrutakarma', 'Śrutakīrti'], transliterations: { sanskrit: 'श्रुतकर्म', etymology: 'Sanskrit: śruta (heard, famous) + karma (deed, action) — "the famous-deed-doer." The variant Śrutakīrti (श्रुतकीर्ति, "famous-fame") appears in some recensions; BORI Critical Edition prefers Śrutakarma.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['hindu_arjuna'],
+      parentIds: ['hindu_arjuna', 'hindu_draupadi'],
       parentRoles: { hindu_arjuna: 'paternal' },
       temporal: { era: 'dvapara-yuga' },
       lifecycle: [
@@ -20831,7 +20831,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Śatānīka', alt: ['Shatanika'], transliterations: { sanskrit: 'शतानीक', etymology: 'Sanskrit: śata (hundred) + anīka (army, host) — "the hundred-armies" or "leader of a hundred armies." The name appears multiple times in the Mahābhārata genealogies; this Śatānīka is the Upapāṇḍava, distinct from the later Janamejaya\'s grandson of the same name.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['hindu_nakula'],
+      parentIds: ['hindu_nakula', 'hindu_draupadi'],
       parentRoles: { hindu_nakula: 'paternal' },
       temporal: { era: 'dvapara-yuga' },
       lifecycle: [
@@ -20861,7 +20861,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Śrutasena', alt: ['Shrutasena'], transliterations: { sanskrit: 'श्रुतसेन', etymology: 'Sanskrit: śruta (heard, famous) + sena (army) — "the famous-army-bearer" or "famed-in-army."' } },
       type: 'quartigod', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['hindu_sahadeva'],
+      parentIds: ['hindu_sahadeva', 'hindu_draupadi'],
       parentRoles: { hindu_sahadeva: 'paternal' },
       temporal: { era: 'dvapara-yuga' },
       lifecycle: [
@@ -20924,7 +20924,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Sarvaga', alt: ['Sarvagata'], transliterations: { sanskrit: 'सर्वग', etymology: 'Sanskrit: sarva ("all") + ga ("going, moving") — "all-going" or "going everywhere." Variant Sarvagata (सर्वगत) "the all-pervasive." The name marks his canonical role as the heir of the Kāśī kingdom that united the Kuru-Kāśī dynastic spheres.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['hindu_bhima'],
+      parentIds: ['hindu_bhima', 'hindu_balandhara'],
       parentRoles: { hindu_bhima: 'paternal' },
       temporal: { era: 'dvapara-yuga' },
       lifecycle: [
@@ -21226,7 +21226,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Śatānīka', alt: ['Shatanika Janamejayi'], transliterations: { sanskrit: 'शतानीक', etymology: 'Sanskrit: śata (hundred) + anīka (army) — "the hundred-armied." The id-suffix _janamejaya disambiguates from the earlier Upapāṇḍava Śatānīka (Nakula\'s son by Draupadī) who is registered separately as hindu_shatanika.' } },
       type: 'mortal', origin: 'canon', tradition: 'Hindu', primaryTradition: 'Hindu',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['hindu_janamejaya'],
+      parentIds: ['hindu_janamejaya', 'hindu_vapushtama'],
       parentRoles: { hindu_janamejaya: 'paternal' },
       temporal: {
         era: 'kali-yuga',
@@ -21362,7 +21362,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Eurypylus', alt: ['Eurypylos of Mysia'], transliterations: { greek: 'Εὐρύπυλος', etymology: 'Greek: εὐρύς ("wide") + πύλη ("gate") — "wide-gates" or "of the wide-gates." The name appears for several Greek figures; this Eurypylus is specifically the son of Telephus and king of Mysia, id-suffixed _telephus to disambiguate from Eurypylus of Cos and Eurypylus son of Euaemon (the Thessalian).' } },
       type: 'scion', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_apollod_telephus'],
+      parentIds: ['greek_apollod_telephus', 'greek_astyoche_laomedon'],
       parentRoles: { greek_apollod_telephus: 'paternal' },
       temporal: {
         era: 'trojan-war',
@@ -21433,7 +21433,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Acamas', alt: ['Akamas'], transliterations: { greek: 'Ἀκάμας', etymology: 'Greek: ἀ- (privative) + κάμνω ("to grow weary") — "the unwearying" or "tireless." The name marks his canonical-warrior endurance-virtue, paired with his brother Demophon as the two Theseid-survivors of the Trojan War.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_apollod_theseus'],
+      parentIds: ['greek_apollod_theseus', 'greek_phaedra'],
       parentRoles: { greek_apollod_theseus: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -21463,7 +21463,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Demophon', alt: ['Demophoon'], transliterations: { greek: 'Δημοφῶν', etymology: 'Greek: δῆμος ("people, district") + φάος / φάω ("light; to shine") — "people-light" or "light-of-the-people." The name canonically marks his post-Trojan role as the Athenian-restored king who received the Heraclidae per Euripides Heraclidae.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_apollod_theseus'],
+      parentIds: ['greek_apollod_theseus', 'greek_phaedra'],
       parentRoles: { greek_apollod_theseus: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -21556,7 +21556,7 @@ const buildPeopleSeed = () => {
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       crossListedIn: ['Roman'],
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_aeneas'],
+      parentIds: ['greek_aeneas', 'greek_creusa_troy'],
       parentRoles: { greek_aeneas: 'paternal' },
       temporal: {
         era: 'trojan-war',
@@ -21590,7 +21590,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Silvius', alt: ['Silvius Postumus'], transliterations: { latin: 'Silvius', etymology: 'Latin: from silva ("forest, woodland") — "of-the-woodland" or "forest-born." Per Livy 1.3.6, the name commemorates Silvius\'s birth and upbringing in the Latin woodland after Lavinia fled into the forest pregnant, fearing Ascanius\'s succession-claim. The dynastic-name pattern "Silvius" continued as the patronymic-cognomen of the entire Alban royal line per Livy 1.3.8: every successor-king was called X Silvius.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Roman', primaryTradition: 'Roman',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_aeneas'],
+      parentIds: ['greek_aeneas', 'greek_lavinia'],
       parentRoles: { greek_aeneas: 'paternal' },
       temporal: {
         era: 'post-trojan-war',
@@ -22013,7 +22013,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Aratus of Sicyon', alt: ['Aratos'], transliterations: { greek: 'Ἄρατος', etymology: 'Greek: from ἀράομαι ("to pray, invoke") — "the prayed-for" or "invocation-born." The name marks his canonical-conception in fulfillment of Aristodama\'s prayer at the Asclepieion. Per Pausanias 2.10.3 and 4.14.7-8, this is the canonical-mythological Aratus distinct from the historical Aratus of Sicyon (271-213 BCE, the Achaean League general).' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_asclepius'],
+      parentIds: ['greek_asclepius', 'greek_aristodama'],
       parentRoles: { greek_asclepius: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -22144,7 +22144,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Anogon', alt: ['Anaxis'], transliterations: { greek: 'Ἄνωγον', etymology: 'Greek: of disputed etymology — possibly from ἀνά + γόνος ("of-the-line, descendant"). Variant Anaxis (Ἄναξις) preserved by Pausanias 2.22.5.' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_castor'],
+      parentIds: ['greek_castor', 'greek_hilaeira'],
       parentRoles: { greek_castor: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -22216,7 +22216,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Eurystheus', alt: ['Eurystheos'], transliterations: { greek: 'Εὐρυσθεύς', etymology: 'Greek: εὐρύς ("wide") + σθένος ("strength") — "wide-strength" or "of-broad-might." The name pattern echoes the Perseid kingship-strength prerogative; Eurystheus was the Mycenaean king who imposed the Twelve Labors on Heracles per Hera\'s instigation.' } },
       type: 'scion', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_sthenelus_perseus'],
+      parentIds: ['greek_sthenelus_perseus', 'greek_nicippe'],
       parentRoles: { greek_sthenelus_perseus: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -22432,7 +22432,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Chloris', alt: ['Chlōris'], transliterations: { greek: 'Χλωρίς', etymology: 'Greek: from χλωρός ("pale-green, fresh, young") — "the pale-green-one." The name marks her vegetative-fertility virtue; she was apotheosed in Roman tradition as Flora the goddess of flowers per Ovid Fasti 5.193-220. Distinct from Chloris daughter of Amphion-and-Niobe in the canonical Apollodorus 3.5.6 reading is conflated by some scholars with Chloris the Boeotian-Pylian wife of Neleus — Apollodorus 1.9.9 lists them as the same figure, attributing the surviving-Niobid-pale-of-fear etymology to her.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: ['greek_amphion'],
+      parentIds: ['greek_amphion', 'greek_apollod_niobe'],
       parentRoles: { greek_amphion: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -22459,7 +22459,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Amyclas', alt: ['Amyklas'], transliterations: { greek: 'Ἀμύκλας', etymology: 'Greek: of disputed etymology — possibly from a pre-Greek substrate-element shared with the toponym Amyclae (Spartan-region, the canonical foundation of the Hyacinthia-cult). Multiple Greek figures share the name; this Amyclas is specifically the Niobid survivor per Apollodorus 3.5.6 (distinct from Amyclas the Spartan founder, son of Lacedaemon, also in the genealogical record).' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_amphion'],
+      parentIds: ['greek_amphion', 'greek_apollod_niobe'],
       parentRoles: { greek_amphion: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -23796,7 +23796,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Esigie', alt: ['Oba Esigie'], transliterations: { 'edo': 'Esigie' } },
       type: 'mortal', tradition: 'Edo', primaryTradition: 'Edo', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['ozolua'],
+      parentIds: ['ozolua', 'edo_idia'],
       parentRoles: { ozolua: 'paternal' },
       temporal: { era: 'eweka-dynasty' },
       lifecycle: [
@@ -25282,7 +25282,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Yoshitsune', alt: ['Minamoto no Yoshitsune', 'Ushiwakamaru (childhood name)', 'Kurō Hōgan'], transliterations: { japanese: '源義経', romaji: 'Minamoto no Yoshitsune', etymology: 'Japanese: 義 yoshi (Minamoto generational element) + 経 tsune ("to govern, regulate, channel"). Childhood name Ushiwakamaru (牛若丸 = "Young Bull-Boy"); cognomen Kurō Hōgan ("Ninth Son Judge") marks his court-office and his ninth-son rank.' } },
       type: 'mortal', tradition: 'Japanese', primaryTradition: 'Japanese', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['japanese_yoshitomo'],
+      parentIds: ['japanese_yoshitomo', 'japanese_tokiwa_gozen'],
       parentRoles: { japanese_yoshitomo: 'paternal' },
       temporal: {
         era: 'late-heian',
@@ -25327,7 +25327,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Yoshinaka', alt: ['Minamoto no Yoshinaka', 'Kiso no Yoshinaka', 'Asahi Shogun ("Rising-Sun Shogun")'], transliterations: { japanese: '源義仲 / 木曾義仲', romaji: 'Minamoto no Yoshinaka / Kiso no Yoshinaka', etymology: 'Japanese: 義 yoshi (Minamoto generational element) + 仲 naka ("middle, intermediary"). Place-name cognomen Kiso ("of the Kiso valley," modern Nagano prefecture) marks his upbringing-territory. Cognomen Asahi Shogun ("Rising-Sun Shogun") was self-assumed during his brief Kyoto occupancy 1183-1184.' } },
       type: 'mortal', tradition: 'Japanese', primaryTradition: 'Japanese', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['japanese_yoshikata'],
       temporal: {
         era: 'late-heian',
         mythicStart: 1154,  // Minamoto no Yoshinaka, killed at Battle of Awazu 1184
@@ -25364,7 +25364,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Tomoe Gozen', alt: ['Tomoe', 'Lady Tomoe'], transliterations: { japanese: '巴御前', romaji: 'Tomoe Gozen', etymology: 'Japanese: 巴 tomoe ("comma-shape, swirl-pattern" — the canonical-Japanese mitsudomoe family-crest pattern) + 御前 gozen (honorific title for high-ranking women, "lady, mistress"). Personal name origin uncertain; Tomoe-as-name is associated with the comma-shape mitsudomoe crest of the Yoshinaka faction.' } },
       type: 'mortal', tradition: 'Japanese', primaryTradition: 'Japanese', sex: 'female', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['japanese_nakahara_no_kaneto'],
       temporal: {
         era: 'late-heian',
         mythicStart: 1157,  // Onna-musha attached to Yoshinaka; later traditions place death after 1184
@@ -26357,7 +26357,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Atia Balba Caesonia', alt: ['Atia', 'Atia Balba'], transliterations: { latin: 'Atia Balba Caesonia', etymology: 'Latin: Atia (gens-name from the gens Atia of Aricia) + Balba (cognomen) + Caesonia (matronymic-cognomen marking her descent from Iulia Minor of the gens Iulia, sister of the Dictator).' } },
       type: 'mortal', tradition: 'Roman', primaryTradition: 'Roman', sex: 'female', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['roman_iulia_minor_caesaris'],
       temporal: {
         era: 'roman-republic-late',
         mythicStart: -85,  // Augustus's mother, dies September 43 BCE per Suet. Aug.
@@ -26491,7 +26491,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Iulia the Elder', alt: ['Iulia Augusti filia', 'Iulia Maior'], transliterations: { latin: 'Iulia Augusti filia', etymology: 'Latin: Iulia — the canonical female-form of the gens-name Iulius. The cognomen Augusti filia ("daughter of Augustus") or Maior ("the elder") distinguishes her from her own daughter Iulia Minor.' } },
       type: 'mortal', tradition: 'Roman', primaryTradition: 'Roman', sex: 'female', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['roman_augustus'],
+      parentIds: ['roman_augustus', 'roman_scribonia'],
       parentRoles: { roman_augustus: 'paternal' },
       temporal: {
         era: 'roman-empire-julio-claudian',
@@ -26619,7 +26619,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Germanicus', alt: ['Germanicus Iulius Caesar (after 4 CE adoption by Tiberius)', 'Nero Claudius Drusus Germanicus (birth-name)'], transliterations: { latin: 'Germanicus Iulius Caesar', etymology: 'Latin: the cognomen Germanicus inherited from his father Drusus the Elder\'s posthumous cognomen voted by the Senate in 9 BCE — the gens-Iulia hereditary-cognomen that passed through Germanicus to his son Gaius Caesar Germanicus (Caligula) and to his brother Claudius. After Tiberius\'s 4 CE adoption of Germanicus into the gens Iulia, legally Germanicus Iulius Caesar.' } },
       type: 'mortal', tradition: 'Roman', primaryTradition: 'Roman', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['roman_drusus_the_elder'],
+      parentIds: ['roman_drusus_the_elder', 'roman_antonia_minor'],
       parentRoles: { roman_drusus_the_elder: 'paternal' },
       temporal: {
         era: 'roman-empire-julio-claudian',
@@ -26665,7 +26665,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Caligula', alt: ['Gaius Caesar Augustus Germanicus (imperial titulature)', 'Gaius (proper-name)', 'Caligula (nickname meaning "little boots" from the soldier-boots his father\'s legions gave him as a child mascot at the Rhine camp)'], transliterations: { latin: 'Gaius Caesar Augustus Germanicus', etymology: 'Latin: Caligula — diminutive of caliga ("legionary boot"), the nickname given him as a child by his father Germanicus\'s Rhine legions when Agrippina the Elder dressed him in miniature legionary uniform; per Suetonius Caligula 9 he detested the nickname as emperor and forbade its use, but it stuck in canonical-Roman and modern usage. The imperial titulature Gaius Caesar Augustus Germanicus encodes his gens-Iulia membership (Caesar) and the hereditary Germanicus-cognomen from his grandfather Drusus the Elder.' } },
       type: 'mortal', tradition: 'Roman', primaryTradition: 'Roman', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['roman_germanicus'],
+      parentIds: ['roman_germanicus', 'roman_agrippina_the_elder'],
       parentRoles: { roman_germanicus: 'paternal' },
       temporal: {
         era: 'roman-empire-julio-claudian',
@@ -26723,7 +26723,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Acastus', alt: ['Akastos'], transliterations: { greek: 'Ἄκαστος', etymology: 'Greek Ἄκαστος of contested etymology — possibly from ἀ- (intensive) + the root of κάζομαι ("to be celebrated") or from a pre-Greek substrate. The Pelias-Acastus name-pair is canonical in the Iolcian dynastic tradition.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_pelias'],
+      parentIds: ['greek_pelias', 'greek_anaxibia_bias'],
       parentRoles: { greek_pelias: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -26763,7 +26763,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Alcestis', alt: ['Alkestis'], transliterations: { greek: 'Ἄλκηστις', etymology: 'Greek Ἄλκηστις from ἀλκή ("strength, prowess") — "strong-one." The canonical-Euripidean tragic-protagonist of the Alcestis (438 BCE) — the prosatyric drama performed in fourth position at the Dionysia, the canonical-Greek voluntary-self-substitution-for-the-husband narrative.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: ['greek_pelias'],
+      parentIds: ['greek_pelias', 'greek_anaxibia_bias'],
       parentRoles: { greek_pelias: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -26944,7 +26944,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Tenes', alt: ['Tennes'], transliterations: { greek: 'Τέννης', etymology: 'Greek Τέννης — eponymous founder of the island Tenedos (Τένεδος, "Tenes-island") in the northeast Aegean off the Trojan coast. The pre-Tenes-name of the island per Apollod. Epit. 3.24 was Leucophrys ("white-brow"); Tenes renamed it after himself per the canonical-eponymous foundation-narrative.' } },
       type: 'demigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_hesiod_apollo'],
+      parentIds: ['greek_hesiod_apollo', 'greek_cycnus_poseidon'],
       parentRoles: { greek_hesiod_apollo: 'paternal' },
       temporal: { era: 'trojan-war' },
       lifecycle: [
@@ -27396,7 +27396,7 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Welsh', primaryTradition: 'Welsh', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['welsh_penarddun'],
+      parentIds: ['welsh_penarddun', 'welsh_eurosswydd'],
       parentRoles: { welsh_penarddun: 'maternal' },
       temporal: { era: 'mabinogion-mythological' },
       lifecycle: [
@@ -27474,7 +27474,7 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Welsh', primaryTradition: 'Welsh', sex: 'female', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['welsh_gwyn_gohoyw'],
       temporal: { era: 'mabinogion-mythological' },
       lifecycle: [
         { typeStatus: 'mortal', era: 'mabinogion-mythological', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Mabinogion Third Branch' }], notes: 'Daughter of Gwynn Gohoyw (per the Third Branch genealogy; Gwynn Gohoyw is mentioned as a king in the Welsh genealogical tradition but not registered separately within this 11-entry budget). parentIds left empty.' },
@@ -28074,7 +28074,7 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Arabian', primaryTradition: 'Arabian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['arabian_hujr'],
       temporal: { era: 'mu-allaqat-poetic' },
       lifecycle: [
         { typeStatus: 'mortal', era: 'mu-allaqat-poetic', eraOrdering: 0, startEvent: 'birth-c-501-ce-Najd', sources: [{ kind: 'primary', reference: 'al-Tabari Tarikh; Ibn Qutaybah, al-Shi\'r wa-al-Shu\'ara\'' }], notes: 'Born c. 501 CE in the Najd region; son of Ḥujr ibn al-Ḥārith, the last king of the Kindite kingdom (a 5th-6th c. CE Central Arabian polity that briefly unified several Arabian tribes under Lakhmid-Sasanian Persian patronage). Mortal parentage; parentIds left empty per registry conventions for figures whose father is not registered.' },
@@ -28128,7 +28128,7 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Arabian', primaryTradition: 'Arabian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['arabian_shaddad', 'arabian_zabiba'],
       temporal: { era: 'mu-allaqat-poetic' },
       lifecycle: [
         { typeStatus: 'mortal', era: 'mu-allaqat-poetic', eraOrdering: 0, startEvent: 'birth-c-525-ce-Najd', sources: [{ kind: 'primary', reference: 'Sirat \'Antara ibn Shaddad; al-Isfahani Kitab al-Aghani' }], notes: 'Born c. 525 CE in the Najd region; son of Shaddād ibn Mu\'awiyah (a chief of the Banu \'Abs tribe) and Zabība (an Ethiopian slave-woman captured in raid). Per Arabian custom, the child of a slave-mother inherited the slave-status of the mother — \'Antara was therefore born into slavery, despite his free-Arabian-noble paternity. The slave-status-and-skin-color circumstances are foundational to his subsequent biographical-narrative.' },
@@ -28372,7 +28372,7 @@ const buildPeopleSeed = () => {
       id: 'anglosaxon_heardred', schemaVersion: 2,
       name: { primary: 'Heardred', alt: ['Son of Hygelac'], transliterations: { 'old-english': 'Heardred' } },
       type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
-      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      origin: 'canon', parentIds: ['anglosaxon_hygd'], temporal: { era: 'heroic-age' },
       lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2202-2390' }] }],
       domains: [{ id: 'king-of-the-Geats' }, { id: 'son-of-Hygelac' }],
       sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 2202-2390 — young king of the Geats under Beowulf\'s guardianship, killed by the Swede Onela' }], weight: 'primary' }],
@@ -28403,7 +28403,7 @@ const buildPeopleSeed = () => {
       id: 'anglosaxon_wiglaf', schemaVersion: 2,
       name: { primary: 'Wiglaf', alt: ['Wīglāf', 'Son of Weohstan', 'Wiglaf the Waegmunding'], transliterations: { 'old-english': 'Wīglāf' } },
       type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
-      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      origin: 'canon', parentIds: ['anglosaxon_weohstan'], temporal: { era: 'heroic-age' },
       lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2602-2891, 3076-3182' }] }],
       domains: [{ id: 'Waegmunding-kinsman-of-Beowulf' }, { id: 'last-loyal-retainer-and-heir' }],
       sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 2602-2891 — Wiglaf son of Weohstan, the Waegmunding kinsman who alone stood by Beowulf against the dragon' }], weight: 'primary' }],
@@ -56663,7 +56663,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Basque",
   "sex": "female",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": [
+   "basque_amalur"
+  ],
   "temporal": {
    "era": "mythic"
   },
@@ -78321,7 +78323,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "immortal",
   "parentIds": [
-   "chuukese_lugeilan"
+   "chuukese_lugeilan",
+   "chuukese_tarisso"
   ],
   "temporal": {
    "era": "mythic"
@@ -79274,7 +79277,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Circassian",
   "sex": "male",
   "vitalStatus": "deceased",
-  "parentIds": [],
+  "parentIds": [
+   "circassian_isp"
+  ],
   "parentRoles": [],
   "temporal": {
    "era": "mythic / Nart age"
@@ -107749,7 +107754,8 @@ const NEW_FIGURES = [
   "vitalStatus": "dead",
   "parentIds": [
    "greek_atreus",
-   "greek_aerope"
+   "greek_aerope",
+   "greek_hippodamia"
   ],
   "parentRoles": {
    "greek_atreus": "paternal",
@@ -114034,7 +114040,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": [],
+  "parentIds": [
+   "greek_harmonia"
+  ],
   "temporal": {
    "era": "heroic-age"
   },
@@ -120734,7 +120742,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": [
+   "greek_hesiod_thaumas"
+  ],
   "temporal": {
    "era": "titanomachy"
   },
@@ -121315,7 +121325,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": [
+   "greek_hesiod_pallas_titan"
+  ],
   "temporal": {
    "era": "titanomachy"
   },
@@ -123713,7 +123725,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": [],
+  "parentIds": [
+   "greek_oenomaus"
+  ],
   "temporal": {
    "era": "heroic-age",
    "mythicStart": -1360,
@@ -127241,7 +127255,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": [],
+  "parentIds": [
+   "greek_minos"
+  ],
   "temporal": {
    "era": "heroic-age",
    "mythicStart": -1280,
@@ -131376,7 +131392,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "apotheosed",
   "parentIds": [
-   "guarani_namandu"
+   "guarani_namandu",
+   "guarani_nande_sy"
   ],
   "parentRoles": {
    "guarani_namandu": "paternal"
@@ -132019,7 +132036,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Guaraní",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": [],
+  "parentIds": [
+   "guarani_marangatu"
+  ],
   "parentRoles": {},
   "temporal": {
    "era": "mythic"
@@ -132185,7 +132204,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "apotheosed",
   "parentIds": [
-   "guarani_namandu"
+   "guarani_namandu",
+   "guarani_nande_sy"
   ],
   "parentRoles": {
    "guarani_namandu": "paternal"
@@ -145149,7 +145169,8 @@ const NEW_FIGURES = [
   "vitalStatus": "immortal",
   "origin": "canon",
   "parentIds": [
-   "hindu_satyavati"
+   "hindu_satyavati",
+   "hindu_parashara"
   ],
   "temporal": {
    "era": "dvapara-yuga"
@@ -155459,7 +155480,8 @@ const NEW_FIGURES = [
   "vitalStatus": "dead",
   "origin": "canon",
   "parentIds": [
-   "inca_viracocha_inca"
+   "inca_viracocha_inca",
+   "inca_mama_runtu"
   ],
   "temporal": {
    "era": "pre-imperial"
@@ -169173,7 +169195,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "immortal",
   "parentIds": [
-   "khanty_num_torum"
+   "khanty_num_torum",
+   "khanty_kaltes_ekwa"
   ],
   "parentRoles": {
    "khanty_num_torum": "father"
@@ -211623,7 +211646,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Mordvin",
   "sex": "male",
   "vitalStatus": "immortal",
-  "parentIds": [],
+  "parentIds": [
+   "mordvin_chipaz"
+  ],
   "temporal": {
    "era": "mythic"
   },
@@ -241190,7 +241215,8 @@ const NEW_FIGURES = [
   "vitalStatus": "immortal",
   "origin": "canon",
   "parentIds": [
-   "roman_daunus"
+   "roman_daunus",
+   "roman_venilia"
   ],
   "parentRoles": {
    "roman_daunus": "paternal"
@@ -245345,7 +245371,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "living",
   "parentIds": [
-   "sami_radien_attje"
+   "sami_radien_attje",
+   "sami_radien_akka"
   ],
   "parentRoles": {
    "sami_radien_attje": "father"
@@ -293929,7 +293956,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Zoroastrian",
   "sex": "male",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": [
+   "zoroastrian_thrita"
+  ],
   "temporal": {
    "era": "legendary",
    "note": "of the House of Sama; son of Thrita; lies in enchanted sleep until the end-time"
@@ -294475,7 +294504,10 @@ const NEW_FIGURES = [
   "primaryTradition": "Zoroastrian",
   "sex": "male",
   "vitalStatus": "deceased",
-  "parentIds": [],
+  "parentIds": [
+   "zoroastrian_rudaba",
+   "zoroastrian_zal"
+  ],
   "temporal": {
    "era": "legendary",
    "note": "of Sistan; son of Zal and Rudaba; champion of the Kayanian kings"
@@ -294707,7 +294739,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Zoroastrian",
   "sex": "male",
   "vitalStatus": "deceased",
-  "parentIds": [],
+  "parentIds": [
+   "zoroastrian_kay_kavus"
+  ],
   "temporal": {
    "era": "legendary",
    "note": "Kayanian prince; son of Kay Kavus; father of Kay Khosrow"
