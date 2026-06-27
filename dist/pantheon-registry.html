@@ -6752,7 +6752,7 @@ const buildPeopleSeed = () => {
       id: 'greek_apollod_amphitryon', schemaVersion: 2,
       name: { primary: 'Amphitryon', alt: [], transliterations: { greek: 'Ἀμφιτρύων' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
-      sex: 'male', vitalStatus: 'dead', parentIds: [],
+      sex: 'male', vitalStatus: 'dead', parentIds: ['greek_alcaeus_perseus'],
       temporal: {
         era: 'heroic-age',
         mythicStart: -1320,  // Alcmene's husband, Heracles's stepfather
@@ -6985,7 +6985,7 @@ const buildPeopleSeed = () => {
       id: 'greek_apollod_megara', schemaVersion: 2,
       name: { primary: 'Megara', alt: [], transliterations: { greek: 'Μεγάρα' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
-      sex: 'female', vitalStatus: 'dead', parentIds: [],
+      sex: 'female', vitalStatus: 'dead', parentIds: ['greek_creon_thebes'],
       temporal: { era: 'heroic-age' },
       death: {
         manner: { classId: 'killed-by-spouse', agentPersonId: 'greek_apollod_heracles', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.12' }], notes: "Killed by Heracles in his Hera-induced madness, along with their children." },
@@ -7221,7 +7221,7 @@ const buildPeopleSeed = () => {
       id: 'greek_apollod_iole', schemaVersion: 2,
       name: { primary: 'Iole', alt: [], transliterations: { greek: 'Ἰόλη' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
-      sex: 'female', vitalStatus: 'dead', parentIds: [],
+      sex: 'female', vitalStatus: 'dead', parentIds: ['greek_eurytus_oechalia'],
       temporal: { era: 'heroic-age' },
       relations: [
         { kind: 'spouse', personId: 'greek_apollod_hyllus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.7.7 (Heracles\'s deathbed instruction)' }], notes: 'Reciprocal of greek_apollod_hyllus.spouse' },
@@ -7390,7 +7390,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Ares', alt: ['Enyalios'], transliterations: { greek: 'Ἄρης' } },
       type: 'deity', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'living',
-      parentIds: ['greek_hesiod_zeus'],
+      parentIds: ['greek_hesiod_zeus', 'greek_hesiod_hera'],
       parentRoles: { greek_hesiod_zeus: 'paternal' },
       temporal: { era: 'primordial' },
       iconography: {
@@ -7799,7 +7799,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Rhea Silvia', alt: ['Ilia'], transliterations: { latin: 'Rhea Silvia' } },
       type: 'mortal', origin: 'canon', tradition: 'Roman', primaryTradition: 'Roman',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: [],
+      parentIds: ['roman_numitor'],
       temporal: {
         era: 'pre-urban',
         mythicStart: -772,  // Romulus and Remus's mother, traditional dating tied to the 753 BCE foundation
@@ -8734,7 +8734,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Pleisthenes', alt: ['Plisthenes'], transliterations: { greek: 'Πλεισθένης' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['greek_helen', 'greek_menelaus'],
+      parentIds: ['greek_helen', 'greek_menelaus', 'greek_atreus'],
       parentRoles: { greek_helen: 'maternal', greek_menelaus: 'paternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -9084,7 +9084,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Cyrene', alt: ['Kyrene'], transliterations: { greek: 'Κυρήνη', etymology: 'Eponym of the Greek city Cyrene in Libya, founded ~630 BCE — the historical foundation backing the eponymous-mother tradition.' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: [],
+      parentIds: ['greek_hypseus'],
       parentRoles: {},
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -9478,7 +9478,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Oreithyia', alt: ['Orithyia'], transliterations: { greek: 'Ὠρείθυια', etymology: 'from ὄρος (mountain) + θύω (rage, surge) — "she who surges over the mountains," fitting to her abduction by the wind-god across the Thracian peaks.' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: [],
+      parentIds: ['greek_erechtheus'],
       parentRoles: {},
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -9694,7 +9694,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Odysseus', alt: ['Ulysses (Roman)', 'Ulixes (Roman)'], transliterations: { greek: 'Ὀδυσσεύς', etymology: 'Homer Od. 19.407-409 has Autolycus name him from ὀδύσσομαι (be wroth, hate) — "the one named in anger" or "the one who has hated and been hated." The Roman Ulysses derives from the Aeolic-Greek form Olyssēus.' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: [],
+      parentIds: ['greek_laertes', 'greek_anticlea_ithaca'],
       parentRoles: {},
       temporal: {
         era: 'heroic-age',
@@ -25836,7 +25836,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Niobe', alt: ['Niobē'], transliterations: { greek: 'Νιόβη', etymology: 'Greek: of disputed etymology — possibly from a pre-Greek substrate-element preserved through the Mycenaean period. Some etymologies derive from νιφάς ("snowflake") or νίπτω ("to wash, weep"), aligning with the canonical weeping-stone-on-Mt-Sipylus aetiology. The name is shared with Niobe daughter of Phoroneus (the first mortal woman to bear children to Zeus per Apollodorus 2.1.1); the id is unsuffixed because this Niobe (daughter of Tantalus, queen of Thebes) is the more famous figure with the canonical Niobid-massacre narrative.' } },
       type: 'mortal', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'female', vitalStatus: 'transformed',
-      parentIds: [],
+      parentIds: ['greek_tantalus'],
       temporal: { era: 'heroic-age' },
       lifecycle: [
         { typeStatus: 'mortal', startEvent: 'marriage-to-Amphion-and-bearing-of-twelve-or-fourteen-children', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Homer, Iliad 24.602-617; Hesiod fr. 183; Apollodorus 3.5.6; Ovid, Metamorphoses 6.146-312' }], notes: 'Daughter of Tantalus and Dione (or Eurythemista); sister of Pelops. Married Amphion the Theban demigod-king. Bore him twelve children per Homer Il. 24.602-617 (six sons and six daughters), or fourteen per Hesiod fr. 183 and the Hellenistic tradition (seven and seven). Mortal-tier — no divine paternity through her own line.' },
@@ -26716,7 +26716,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Ramesses IV', alt: ['Ramses IV', 'Rameses IV', 'Amenherkhepshef B', 'Heqamaatre Setepenamun'], transliterations: { 'egyptian-hieroglyphic': '𓁛𓂝𓊪𓏏𓏤𓂋𓁹𓊵𓏏𓊪𓊪', 'mdc-transliteration': 'ḥqꜢ-mꜢꜤt-rꜤ stp-n-imn', etymology: 'Throne name Heqamaatre-Setepenamun ("Ruler of the Justice of Re, Chosen of Amun"); birth name Amenherkhepshef ("Amun-protects-his-arm"), reused after his deceased elder brother Amenherkhepshef A. The Amun-element is the canonical Birth-Cycle Theban-Amun marker.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_ramesses_iii'],
+      parentIds: ['egyptian_ramesses_iii', 'egyptian_tyti'],
       parentRoles: { egyptian_ramesses_iii: 'paternal' },
       temporal: {
         era: 'new-kingdom',
@@ -26755,7 +26755,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Ramesses VI', alt: ['Ramses VI', 'Rameses VI', 'Amenherkhepshef C', 'Nebmaatre Meryamun'], transliterations: { 'egyptian-hieroglyphic': '𓁛𓎟𓂝𓏏𓁹𓏠𓋴𓋴', 'mdc-transliteration': 'nb-mꜢꜤt-rꜤ mri-imn', etymology: 'Throne name Nebmaatre-Meryamun ("Lord of the Justice of Re, Beloved of Amun") — deliberately echoing Amenhotep III\'s throne name Nebmaatre, reaching back across two centuries to one of the most-honored 18th-Dynasty pharaohs as a legitimacy strategy. Birth name Ramesses-Itamun.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_ramesses_iii'],
+      parentIds: ['egyptian_ramesses_iii', 'egyptian_iset_ta_hemdjert'],
       parentRoles: { egyptian_ramesses_iii: 'paternal' },
       temporal: {
         era: 'new-kingdom',
@@ -52517,7 +52517,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "living",
   "parentIds": [
-   "aztec_xochiquetzal"
+   "aztec_xochiquetzal",
+   "aztec_tlazolteotl"
   ],
   "temporal": {
    "era": "cosmogonic"
@@ -58392,7 +58393,8 @@ const NEW_FIGURES = [
   "sex": "male",
   "vitalStatus": "dead",
   "parentIds": [
-   "banyaruanda_nkuba"
+   "banyaruanda_nkuba",
+   "banyaruanda_nyinakigwa"
   ],
   "parentRoles": {
    "banyaruanda_nkuba": "paternal"
@@ -78785,7 +78787,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Chinese",
   "sex": "male",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": [
+   "chinese_li_jing"
+  ],
   "temporal": {
    "era": "mythic"
   },
@@ -110684,7 +110688,8 @@ const NEW_FIGURES = [
   "vitalStatus": "dead",
   "parentIds": [
    "greek_atreus",
-   "greek_aerope"
+   "greek_aerope",
+   "greek_pleisthenes"
   ],
   "parentRoles": {
    "greek_atreus": "paternal",
@@ -122866,7 +122871,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Greek",
   "sex": "male",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": [
+   "greek_hesiod_aphrodite"
+  ],
   "temporal": {
    "era": "primordial"
   },
@@ -298822,7 +298829,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Zoroastrian",
   "sex": "male",
   "vitalStatus": "deceased",
-  "parentIds": [],
+  "parentIds": [
+   "zoroastrian_athwya"
+  ],
   "temporal": {
    "era": "legendary",
    "note": "Pishdadian dynasty; son of Athwya/Abtin"
