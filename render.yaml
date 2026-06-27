@@ -1,0 +1,20 @@
+# Render Blueprint for the Pantheon Registry MCP connector.
+# Deploy: Render → New → Blueprint → pick this repo (branch: main).
+# It builds mcp/Dockerfile (context = repo root) and serves Streamable HTTP at /mcp.
+services:
+  - type: web
+    name: pantheon-registry-mcp
+    runtime: docker
+    repo: https://github.com/WeningerII/PantheonRepository
+    branch: main
+    dockerfilePath: ./mcp/Dockerfile
+    dockerContext: .
+    region: oregon
+    plan: free            # bump to "starter" to avoid free-tier idle spin-down (cold starts)
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      # Leave unset for an open read-only endpoint, or set a value to require
+      # `Authorization: Bearer <token>` on /mcp. Set in the Render dashboard.
+      - key: MCP_TOKEN
+        sync: false
