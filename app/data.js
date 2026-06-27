@@ -3021,7 +3021,9 @@ const buildPeopleSeed = () => {
       id: 'greek_hesiod_zeus', schemaVersion: 2,
       name: { primary: 'Zeus', alt: ['Zen', 'Dia'], transliterations: { greek: 'Ζεύς' } },
       type: 'deity', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
-      sex: 'male', vitalStatus: 'living', parentIds: [],
+      sex: 'male', vitalStatus: 'living',
+      parentIds: ['greek_hesiod_cronus', 'greek_hesiod_rhea'],
+      parentRoles: { greek_hesiod_cronus: 'father', greek_hesiod_rhea: 'mother' },
       temporal: {
         era: 'primordial',
         // No mythicStart/End override — Zeus is cosmic per ERA_DATES default
@@ -3063,7 +3065,7 @@ const buildPeopleSeed = () => {
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'throughout Greek corpus' }], weight: 'primary' },
       ],
-      notes: 'Father of Heracles by Alcmene. Alt names "Jupiter" and "Jove" — the Roman interpretatio — are handled via the relation to roman_iuppiter rather than as alt names, preserving the registry\'s cross-tradition equation as a structural relation.',
+      notes: 'King of the Olympian gods and sky-father, wielder of the thunderbolt; youngest son of Cronus and Rhea, who freed his swallowed siblings and overthrew the Titans to take the throne of Olympus. Father of Heracles by the mortal Alcmene.',
     },
 
     // ─── PERSEUS TREE — the Mycenaean demigod ancestry of Heracles ──────
@@ -119167,7 +119169,7 @@ const NEW_FIGURES = [
    "greek_hesiod_gaia"
   ],
   "temporal": {
-   "era": "titanomachy"
+   "era": "primordial"
   },
   "domains": [
    {
@@ -122202,7 +122204,7 @@ const NEW_FIGURES = [
    "greek_hesiod_gaia"
   ],
   "temporal": {
-   "era": "titanomachy"
+   "era": "primordial"
   },
   "domains": [
    {
