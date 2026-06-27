@@ -1,0 +1,1143 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Malagasy (the traditional religion and mythology of Madagascar)
+ID prefix: malagasy_
+Eras (registered, exact): "primordial", "mythic"
+  - "primordial" = creator gods / cosmogonic beings (Zanahary, Ratovantany)
+  - "mythic"     = epic heroes of the Ibonia / Andriambahoaka cycle (a vague heroic past)
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISIONS
+================================================================================
+
+Two strata of Malagasy tradition are authored here. (1) The cosmogonic stratum: the
+sky/earth creation pair Zanahary and Ratovantany, whose bargain over the human person —
+soul from the sky, body from the clay/earth, each reclaimed at death — is the single
+best-attested datum of pan-Malagasy belief (recognised, with local variation, across the
+island). (2) The epic stratum: the hero Ibonia (Iboniamasiboniamanoro) and the two other
+firmly individuated actors of his story — his betrothed Iampelasoamananoro and his
+adversary Ravatovolovoay, the "Stone Man."
+
+ANCHOR SOURCES (verified):
+  • Jørgen Ruud, *Taboo: A Study of Malagasy Customs and Beliefs* (Oslo Univ. Press /
+    George Allen & Unwin, 1960) — fady, the razana (ancestors), Zanahary, the soul/body
+    division.
+  • Lee Haring, *Ibonia: Epic of Madagascar* (Bucknell Univ. Press / Associated Univ.
+    Presses, 1994) — the first full English translation of the Merina Ibonia (recorded
+    1877 from an anonymous bard); and his *How to Read a Folktale: The 'Ibonia' Epic from
+    Madagascar* (Open Book Publishers, 2013), an open-access edition with full apparatus.
+  • Charles Renel, *Contes de Madagascar* (3 vols., 1910) and *Ancêtres et dieux* (Bull.
+    de l'Académie malgache, 1920–21) — the creation myth (Ratovoantany the self-created
+    earth-being modelling clay figures dried in the sun; Zanahary giving them life).
+  • James Sibree, *The Great African Island: Chapters on Madagascar* (London, 1880) —
+    the supreme being known as Zanahary ("the Creator") and Andriamanitra ("the Fragrant
+    One"); names recognised all over the island.
+  • Lars Dahle, *Specimens of Malagasy Folk-lore* (Antananarivo, 1877) — the early printed
+    text of the Ibonia recitation (the "Ibonia" / "Rabonia" tantara).
+
+KEY DECISIONS:
+  • ANDRIAMANITRA / ANDRIANANAHARY are NOT authored as a distinct figure. The sources are
+    explicit that Andriamanitra ("the Fragrant Lord/Prince"; from andriana + manitra,
+    "fragrant," the quality ascribed to a dead noble) is a TITLE of the supreme being, used
+    interchangeably with Zanahary, and that Andriananahary ("the Creator/Creating One") is
+    "rarely used as a standalone name … mostly used as an epithet: 'Andriamanitra
+    Andriananahary'" (Sibree 1880; 1911 Encyclopædia Britannica s.v. Madagascar). They are
+    therefore folded into Zanahary.epithets, per the authoring instruction, rather than
+    duplicated as a paired high-god.
+  • RATOVANTANY is "the self-created / uncreated one" (the name is glossed in the
+    literature as "self-created," and he "shot up like a plant from the ground"). He is
+    therefore NOT a child of Zanahary; he has no attested divine parent or sibling. He and
+    Zanahary are wired as reciprocal ALLIES / co-creators (the cosmogonic compact), not as
+    kin. type = numen (a self-arising earth power / chthonic numen) rather than a peopled
+    deity-figure, since he "was not a prominent deity to any Malagasy people" yet the myth is
+    ubiquitous.
+  • THE RAZANA (ancestors) are recorded as a venerated CLASS in Zanahary's and Ratovantany's
+    notes/relations context, but are NOT authored as individuated figures (they are a
+    generic collective, the cornerstone of Malagasy cult but not named persons).
+  • IBONIA'S PARENTS — his mother Rasoabemananoro ("Beautiful-Rich," called Rasoa) and his
+    putative father, the "Prince of the Center" (an andriambahoaka, a "prince of the
+    people"), with the diviner Ranakombe who effects the conception — are firmly named in
+    the epic but are NOT authored in this pass (the roster is the hero, his betrothed and his
+    adversary). Per the validator rule "parentIds … resolve within the batch (or omit),"
+    Ibonia's parentIds are therefore OMITTED and the parentage is recorded in his notes and
+    lifecycle instead of asserting an unresolved edge.
+  • The Ravatovolovoay gloss "Stone Man" is secure (the element vato = "stone" in Malagasy,
+    Ra- the honorific); the full morphological reading is given as Haring's and attributed to
+    him rather than over-parsed.
+
+FIVE figures are authored: two primordial (Zanahary, Ratovantany) and three mythic
+(Ibonia, Iampelasoamananoro, Ravatovolovoay).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "malagasy_zanahary",
+  "name": {
+   "primary": "Zanahary",
+   "alt": [
+    "Zañahary",
+    "Andrianahary",
+    "Andriananahary",
+    "Ndranan'ahary",
+    "Zanaháry"
+   ],
+   "transliterations": {
+    "malagasy": "Zanahary",
+    "etymology": "Malagasy, the most ancient Malagasy word for 'god', glossed 'the Creator' (the root ahary / hary, 'to create, bring into being'; Andriananahary = 'the Creating One / Lord Creator'). A folk-etymology also links it to razana + nahary, 'ancestor-creator (of the people)'. The honorific andriana ('lord, noble') underlies the related titles Andrianahary and Andriamanitra."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Malagasy",
+  "primaryTradition": "Malagasy",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Zanahary",
+     "script": "Malagasy",
+     "rom": "Zanahary"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "James Sibree, The Great African Island: Chapters on Madagascar (1880)"
+     }
+    ],
+    "notes": "The personified sky and supreme heaven-dwelling god; the soul that he gives returns to him in the sky (or on the sun) at death."
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bull. de l'Académie malgache, 1920–21)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ],
+    "notes": "Creator who gives life/soul to the clay figures modelled by Ratovantany; the supreme creator-god (Zanahary / Andriamanitra) recognised across Madagascar."
+   },
+   {
+    "sphereId": "the-soul",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ],
+    "notes": "Owner and giver of the human soul/breath: by the cosmogonic bargain the soul belongs to the sky and is reclaimed by Zanahary when a person dies, underpinning ancestor (razana) belief."
+   },
+   {
+    "sphereId": "the-sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Contes de Madagascar (1910)"
+     }
+    ],
+    "notes": "Associated with the sun as the celestial destination of the soul; in some versions the souls of the dead return 'on the sun'."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-life-and-soul",
+    "name": "Gives life and soul to created beings",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Descending from heaven, he animates the lifeless clay images Ratovantany had modelled and dried in the sun — the act that completes the human person.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bull. de l'Académie malgache, 1920–21)"
+     }
+    ]
+   },
+   {
+    "id": "reclaim-the-soul-at-death",
+    "name": "Reclaims the soul into the sky at death",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "By the compact with Ratovantany, Zanahary takes back the life he gave: at death the soul rises to the sky/sun while the body returns to the earth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "zanahary-sky",
+    "kind": "site",
+    "name": "The sky / heaven (lanitra)",
+    "term": {
+     "value": "lanitra",
+     "script": "Malagasy",
+     "rom": "lanitra"
+    },
+    "role": "embodied",
+    "notes": "Zanahary is the personified sky itself, the celestial realm to which souls return; the upper half of the sky/earth dualism he generates.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "James Sibree, The Great African Island: Chapters on Madagascar (1880)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Andriamanitra",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "James Sibree, The Great African Island: Chapters on Madagascar (1880)"
+     }
+    ],
+    "notes": "'The Fragrant Lord / Fragrant One' (andriana 'noble' + manitra 'fragrant', the quality ascribed to a dead noble's body); a title of the supreme being used interchangeably with Zanahary across Madagascar, and the term later adopted by Christian missionaries for God."
+   },
+   {
+    "original": "Andriananahary",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "1911 Encyclopædia Britannica, s.v. 'Madagascar' (drawing on Sibree and the LMS missionaries)"
+     }
+    ],
+    "notes": "'The Creating One / Lord Creator' (andriana + nahary). Rarely a standalone name; chiefly used as an epithet in the formula 'Andriamanitra Andriananahary', 'God in his quality of Lord Creator'."
+   },
+   {
+    "original": "Andriantompo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ],
+    "notes": "'Lord Master / Sovereign Lord', a reverential title of the supreme being (also applied in the creation cycle to the earth-creator; see Ratovantany)."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "malagasy_ratovantany",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bull. de l'Académie malgache, 1920–21)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ],
+    "notes": "Co-creator: the sky-god strikes the cosmogonic compact with the self-created earth-being Ratovantany — Zanahary gives the soul, Ratovantany gives the body; each reclaims his part at death. Allies/partners in creation, not kin."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "James Sibree, The Great African Island: Chapters on Madagascar (London, 1880)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (Oslo Univ. Press / George Allen & Unwin, 1960)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bulletin de l'Académie malgache, 1920–21)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "soul-body dualism (Zanahary gives/reclaims the soul to the sky; the body returns to the earth)",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Contes de Madagascar (1910)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Supreme creator and personified sky of pan-Malagasy religion, also titled Andriamanitra ('the Fragrant Lord') and Andriananahary ('Lord Creator'). With the self-created earth-being Ratovantany he forms the sky/earth creation pair: Zanahary gives the soul from the sky, Ratovantany the body from clay, and at death each reclaims his part (soul to sky/sun, body to earth) — the foundation of razana (ancestor) belief. Andriamanitra/Andriananahary are folded in as epithets rather than authored separately, since the sources treat them as titles of this same supreme being. The razana (ancestors) are venerated as a class but are not authored as named figures."
+ },
+ {
+  "id": "malagasy_ratovantany",
+  "name": {
+   "primary": "Ratovantany",
+   "alt": [
+    "Ratovoantany",
+    "Ratovontany",
+    "Andriantompo",
+    "Ratovo-antany"
+   ],
+   "transliterations": {
+    "malagasy": "Ratovoantany",
+    "etymology": "Malagasy; the name contains tany ('earth, ground, clay') and is glossed in the literature as 'the self-created / uncreated one' (the being who 'shot up like a plant from the ground'). The honorific Ra- prefixes the earth-element. Also titled Andriantompo, 'Lord Master'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Malagasy",
+  "primaryTradition": "Malagasy",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tany",
+     "script": "Malagasy",
+     "rom": "tany"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bull. de l'Académie malgache, 1920–21)"
+     }
+    ],
+    "notes": "The self-arising earth-power; he rose out of the ground and is the chthonic half of the sky/earth dualism, owner of the body and the soil."
+   },
+   {
+    "sphereId": "creation-of-the-body",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Contes de Madagascar (1910)"
+     }
+    ],
+    "notes": "Modeller of the human and animal bodies: he shaped clay figures and dried them in the sun but could not give them life, prompting Zanahary's intervention."
+   },
+   {
+    "sphereId": "death-and-the-grave",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ],
+    "notes": "Reclaimer of the corpse: by the compact the body returns to Ratovantany and the earth when a person dies, while the soul rises to Zanahary."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "arise-self-created-from-earth",
+    "name": "Arises self-created out of the ground",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The 'self-created one' who shot up like a plant from the earth, owing his being to no parent — the basis of his name.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bull. de l'Académie malgache, 1920–21)"
+     }
+    ]
+   },
+   {
+    "id": "model-bodies-from-clay",
+    "name": "Models human and animal bodies from clay",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Fashions figures of people and beasts from clay and dries them in the sun; he gives the body but cannot give it life.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Contes de Madagascar (1910)"
+     }
+    ]
+   },
+   {
+    "id": "reclaim-the-body-at-death",
+    "name": "Reclaims and decomposes the body at death",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Takes back the clay he formed: at death the body returns to the earth (to Ratovantany) and decays, while Zanahary recovers the soul.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ratovantany-clay-figures",
+    "kind": "implement",
+    "name": "Sun-dried clay figures of humans and animals",
+    "term": {
+     "value": "tany",
+     "script": "Malagasy",
+     "rom": "tany"
+    },
+    "role": "embodied",
+    "notes": "The unfired clay images Ratovantany modelled and set to dry in the sun — the bodies that Zanahary then animated; the material substance of every human being.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bull. de l'Académie malgache, 1920–21)"
+     }
+    ]
+   },
+   {
+    "id": "ratovantany-earth-grave",
+    "kind": "site",
+    "name": "The earth and the tomb (fasana)",
+    "term": {
+     "value": "tany",
+     "script": "Malagasy",
+     "rom": "tany"
+    },
+    "role": "embodied",
+    "notes": "The ground/grave to which the body returns; the lower half of the sky/earth dualism and the chthonic counterpart of Zanahary's sky.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Andriantompo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ],
+    "notes": "'Lord Master / Sovereign Lord' — a reverential title under which the earth-creator is also known."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "malagasy_zanahary",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bull. de l'Académie malgache, 1920–21)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ],
+    "notes": "Co-creator: the earth-being strikes the cosmogonic compact with the sky-god Zanahary — Ratovantany gives the body, Zanahary the soul; each reclaims his part at death. Partners in creation, not kin (Ratovantany is self-created)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bulletin de l'Académie malgache, 1920–21)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Contes de Madagascar (1910)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jørgen Ruud, Taboo: A Study of Malagasy Customs and Beliefs (1960)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "self-creation and the modelling of bodies from clay (with Zanahary giving life)",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Charles Renel, Ancêtres et dieux (Bull. de l'Académie malgache, 1920–21)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The self-created earth-being ('the uncreated one', also titled Andriantompo) who modelled human and animal bodies from clay and dried them in the sun; unable to give life, he agreed that the sky-god Zanahary would animate them on condition that the body remain his, returning to the earth at death. Authored as a numen (a self-arising chthonic power) rather than a peopled deity, since the literature notes he was not a prominently worshipped god while the creation myth itself is ubiquitous. He has no attested divine parent or sibling (he is self-created), so he is wired only to Zanahary, as a co-creating ally rather than as kin."
+ },
+ {
+  "id": "malagasy_ibonia",
+  "name": {
+   "primary": "Ibonia",
+   "alt": [
+    "Iboniamasiboniamanoro",
+    "Ibonamasiboniamanoro",
+    "Rabonia",
+    "Ibonia-be"
+   ],
+   "transliterations": {
+    "malagasy": "Iboniamasiboniamanoro",
+    "etymology": "Malagasy; the full name Iboniamasiboniamanoro is glossed by Haring 'He-of-the-clear-and-captivating-glance' (containing maso, 'eye/glance', and manoro, 'enchanting/captivating'). 'Ibonia' is the contracted hero-name of the epic."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Malagasy",
+  "primaryTradition": "Malagasy",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "miraculous-conception-as-a-locust-through-the-diviner-ranakombe",
+    "vitalStatus": "living",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lars Dahle, Specimens of Malagasy Folk-lore (1877)"
+     }
+    ],
+    "notes": "Born to the long-barren queen Rasoabemananoro ('Beautiful-Rich', called Rasoa), wife of the Prince of the Center, after the diviner Ranakombe effects his conception: she fetches a locust from the Male Rock of a Thousand Corners and it enters her womb. Carried ten years, the wonder-child speaks and arms himself before birth, demanding while still unborn to be betrothed to Iampelasoamananoro."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "peaceful-death-after-recovering-iampelasoamananoro",
+    "vitalStatus": "deceased",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "After defeating Ravatovolovoay ('Stone Man') and winning back his betrothed, Ibonia lives with her for about ten years and then dies a peaceful death — the quiet close that ends the hero's career in the Merina recitation."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "heroism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Iboniamasiboniamanoro",
+     "script": "Malagasy",
+     "rom": "Iboniamasiboniamanoro"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "The supreme culture-hero of Malagasy oral epic — the wonder-child who, by valour and cunning, overcomes every trial to claim his destined bride."
+   },
+   {
+    "sphereId": "wit-and-cunning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "Master of the verbal duel and the disguise: he out-argues Great Echo, and infiltrates Stone Man's household disguised as an old man to recover his wife."
+   },
+   {
+    "sphereId": "martial-prowess",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "Arms himself before birth and passes the deadly tests of his quest, defeating the adversary Ravatovolovoay."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "speak-and-arm-before-birth",
+    "name": "Speaks and arms himself while still unborn",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The wonder-child announces his name and destiny, chooses his weapons and demands his betrothal from within the womb — the marvellous-birth motif of the epic.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ]
+   },
+   {
+    "id": "win-the-verbal-duel",
+    "name": "Out-duels opponents in word-combat",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Defeats Great Echo (Ravato's herald-figure) in a contest of speech, gaining the counsel needed to pass the trials of his quest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ]
+   },
+   {
+    "id": "transform-and-disguise",
+    "name": "Disguises himself to deceive his enemy",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Takes the skin of an old man (and his enemy's servant's hair and skin) to enter Stone Man's compound, charming him with the valiha and the game of fanorona before escaping with Iampelasoamananoro.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, How to Read a Folktale: The 'Ibonia' Epic from Madagascar (2013)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ibonia-valiha",
+    "kind": "implement",
+    "name": "Valiha (tube zither)",
+    "term": {
+     "value": "valiha",
+     "script": "Malagasy",
+     "rom": "valiha"
+    },
+    "role": "wielded",
+    "notes": "The bamboo tube-zither Ibonia plays, in his old-man disguise, to win the trust of Ravatovolovoay while plotting to free his wife.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, How to Read a Folktale: The 'Ibonia' Epic from Madagascar (2013)"
+     }
+    ]
+   },
+   {
+    "id": "ibonia-fanorona",
+    "kind": "implement",
+    "name": "Fanorona (stone board-game)",
+    "term": {
+     "value": "fanorona",
+     "script": "Malagasy",
+     "rom": "fanorona"
+    },
+    "role": "wielded",
+    "notes": "The traditional Malagasy board-game Ibonia plays to disarm and distract Stone Man during the rescue.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, How to Read a Folktale: The 'Ibonia' Epic from Madagascar (2013)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Iboniamasiboniamanoro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "'He-of-the-clear-and-captivating-glance' — the full ceremonial name of the hero, of which 'Ibonia' is the short form."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "malagasy_iampelasoamananoro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "His destined betrothed, demanded while he was still unborn and finally his wife: he wins her back from Stone Man and lives with her about ten years until his death."
+   },
+   {
+    "kind": "enemy",
+    "personId": "malagasy_ravatovolovoay",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "His great adversary, the 'Stone Man' who abducts Iampelasoamananoro; Ibonia infiltrates his household and defeats him to recover her."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (Bucknell Univ. Press, 1994)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lars Dahle, Specimens of Malagasy Folk-lore (Antananarivo, 1877)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, How to Read a Folktale: The 'Ibonia' Epic from Madagascar (Open Book Publishers, 2013)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The great hero of Malagasy oral epic (the Ibonia / Andriambahoaka cycle). Miraculously conceived as a locust through the diviner Ranakombe by the barren queen Rasoabemananoro ('Beautiful-Rich' / Rasoa), wife of the Prince of the Center; he speaks, arms himself and demands his betrothal before birth, then wins back his bride Iampelasoamananoro from the 'Stone Man' Ravatovolovoay, and finally dies a peaceful death. Authored as a demigod (the marvellously-born culture-hero). His parents are firmly named in the epic but are not authored in this pass; per the in-batch resolution rule his parentIds are omitted and the parentage is recorded here and in his lifecycle. The text was first printed by Dahle (1877) and given its standard English edition by Haring (1994)."
+ },
+ {
+  "id": "malagasy_iampelasoamananoro",
+  "name": {
+   "primary": "Iampelasoamananoro",
+   "alt": [
+    "Iampela Soamananoro",
+    "Rasoa",
+    "Soamananoro",
+    "Girl of Grace",
+    "Joy-Giving Girl"
+   ],
+   "transliterations": {
+    "malagasy": "Iampelasoamananoro",
+    "etymology": "Malagasy; glossed by Haring 'Girl of Grace' (also rendered 'the joy-giving girl'). The name contains ampela ('girl/woman') and soa ('good, fair, gracious'); manoro echoes the 'captivating' element of Ibonia's own name."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Malagasy",
+  "primaryTradition": "Malagasy",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "betrothal-to-the-unborn-ibonia",
+    "vitalStatus": "living",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "The destined bride whom Ibonia claims while still in the womb. Before the marriage she is carried off by Ravatovolovoay ('Stone Man'); held in his household, she scorns him ('a disaster man, a calamity man, a thorn it is better not to touch') until Ibonia, in disguise, frees her."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-ibonia-and-shared-life",
+    "vitalStatus": "deceased",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "Recovered and wedded to Ibonia, with whom she lives about ten years until his peaceful death closes the epic."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "grace-and-beauty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Iampelasoamananoro",
+     "script": "Malagasy",
+     "rom": "Iampelasoamananoro"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "The 'Girl of Grace', the joy-giving maiden whose beauty makes her the contested prize of the epic."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "scorn-the-captor",
+    "name": "Scorns and resists her captor",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "In Stone Man's household she rejects his suit with mocking praise-names, holding faith with Ibonia until his rescue.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, How to Read a Folktale: The 'Ibonia' Epic from Madagascar (2013)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Girl of Grace",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "Haring's standing English rendering of Iampelasoamananoro (also 'the joy-giving girl')."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "malagasy_ibonia",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "Betrothed to Ibonia before his birth and ultimately his wife; the object of his quest."
+   },
+   {
+    "kind": "rival",
+    "personId": "malagasy_ravatovolovoay",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "Her abductor, the 'Stone Man', whose suit she rejects and from whom Ibonia rescues her."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, How to Read a Folktale: The 'Ibonia' Epic from Madagascar (Open Book Publishers, 2013)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The 'Girl of Grace', betrothed of Ibonia (claimed by him before his birth) and the prize of the epic. Abducted by Ravatovolovoay the 'Stone Man', she rebuffs him until Ibonia frees her, marries her, and lives with her until his death. Authored as a scion (a maiden of the heroic/noble world of the epic). Wired reciprocally as Ibonia's spouse and as the rival/captive of Ravatovolovoay; no parentage is firmly named, so parentIds are omitted."
+ },
+ {
+  "id": "malagasy_ravatovolovoay",
+  "name": {
+   "primary": "Ravatovolovoay",
+   "alt": [
+    "Revato",
+    "Stone Man",
+    "Trouble-Stone Man",
+    "Man-of-Stone"
+   ],
+   "transliterations": {
+    "malagasy": "Ravatovolovoay",
+    "etymology": "Malagasy; the name contains vato ('stone, rock') with the honorific Ra-, whence Haring's rendering 'Stone Man' (also 'Revato', literally 'Lord Stone'). Haring reads the longer form as the boastful 'stone-man' of many possessions."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Malagasy",
+  "primaryTradition": "Malagasy",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "abduction-of-iampelasoamananoro",
+    "vitalStatus": "living",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "The powerful adversary who carries off Ibonia's betrothed Iampelasoamananoro and keeps her in his household; lauded by women as 'a meteor' and 'a thunderbolt'. Ibonia, disguised as an old man, deceives and overcomes him."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "defeat-by-ibonia",
+    "vitalStatus": "deceased",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "Overcome by the hero, who escapes with the rescued Iampelasoamananoro; the defeat of Stone Man is the climax of the quest."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "adversity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ravatovolovoay",
+     "script": "Malagasy",
+     "rom": "Ravatovolovoay"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "The great antagonist of the epic — called by his enemies 'a disaster man, a calamity man', the obstacle the hero must defeat."
+   },
+   {
+    "sphereId": "stone-and-rock",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "vato",
+     "script": "Malagasy",
+     "rom": "vato"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, How to Read a Folktale: The 'Ibonia' Epic from Madagascar (2013)"
+     }
+    ],
+    "notes": "The 'Stone Man', whose very name binds him to stone/rock (vato); a hard, obdurate power matched against the hero."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "abduct-the-bride",
+    "name": "Carries off the hero's betrothed",
+    "term": {
+     "value": "",
+     "script": "Malagasy",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Seizes Iampelasoamananoro before her marriage and holds her in his stronghold — the act that launches Ibonia's quest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Stone Man",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "Haring's standing English rendering of Ravatovolovoay / Revato; also called the 'Trouble-Stone Man'."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "malagasy_ibonia",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "The hero's adversary, defeated and despoiled of his captive bride by Ibonia."
+   },
+   {
+    "kind": "rival",
+    "personId": "malagasy_iampelasoamananoro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (1994)"
+     }
+    ],
+    "notes": "The maiden he abducts and unsuccessfully courts; she scorns him and is rescued from him."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, Ibonia: Epic of Madagascar (Bucknell Univ. Press, 1994)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lee Haring, How to Read a Folktale: The 'Ibonia' Epic from Madagascar (Open Book Publishers, 2013)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The 'Stone Man', the great adversary of the Ibonia epic, who abducts the hero's betrothed Iampelasoamananoro and is overcome by Ibonia in disguise. The name carries the element vato ('stone'); 'Stone Man' is Haring's rendering. Authored as a demigod (a more-than-mortal antagonist of the heroic cycle). Wired reciprocally as Ibonia's enemy and as the captor/rival over Iampelasoamananoro; no parentage is firmly named, so parentIds are omitted."
+ }
+]
+```
+
+================================================================================
+WIRING NOTES
+================================================================================
+
+SYMMETRIC RELATIONS (all reciprocated within this batch):
+  - malagasy_zanahary            ally    malagasy_ratovantany           (and reverse)  — co-creators (sky/earth compact)
+  - malagasy_ibonia              spouse  malagasy_iampelasoamananoro    (and reverse)
+  - malagasy_ibonia              enemy   malagasy_ravatovolovoay        (and reverse)
+  - malagasy_iampelasoamananoro  rival   malagasy_ravatovolovoay        (and reverse)
+
+FOLDED IN (not authored as separate figures):
+  - Andriamanitra ("the Fragrant Lord") and Andriananahary ("the Lord Creator") — titles
+    of the supreme being → Zanahary.epithets (sources treat them as Zanahary's own names).
+  - Andriantompo ("Lord Master") — given as an epithet on both Zanahary and Ratovantany,
+    as the title is applied to each in the creation cycle.
+
+EXCLUDED CANDIDATES (with reasons):
+  - The RAZANA (ancestors) — venerated as the cornerstone CLASS of Malagasy cult, but a
+    generic collective, not named persons; recorded in the creator-gods' context, not
+    authored as individuated figures (per instruction).
+  - RASOABEMANANORO ("Beautiful-Rich"/Rasoa, Ibonia's mother), the PRINCE OF THE CENTER
+    (his putative father), and the diviner RANAKOMBE — firmly named in the epic but outside
+    this pass's roster (hero + betrothed + adversary). Named in Ibonia's notes/lifecycle;
+    not authored, so Ibonia's parentIds are omitted rather than left unresolved.
+  - GREAT ECHO (the echo-spirit Ibonia out-argues) — a real named figure of the epic but a
+    minor functionary; deferred rather than padded into the roster (mentioned in Ibonia's
+    faculties).

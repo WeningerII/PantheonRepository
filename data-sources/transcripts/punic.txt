@@ -1,0 +1,1631 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Punic (Carthage and the western Phoenician / Punic world — Tunisia, Sardinia,
+Ibiza, western Sicily, Malta, Punic Iberia; c. 814–146 BCE and the Roman-African afterlife)
+ID prefix: punic_
+Eras (registered, exact): "primordial", "mythic"
+  - "primordial" = the great gods as timeless cosmic powers, attested epigraphically across the
+    Punic world from the foundation of Carthage (trad. 814 BCE) to its fall (146 BCE).
+  - "mythic" = narrative/heroic figures: Melqart's death-and-awakening cycle; Sid the eponym
+    of Sardinia. (No theogony or birth-narrative of the great gods survives in Punic sources, so
+    Baal Hammon, Tanit, Eshmun, Astarte, Baal Shamem and Reshef are placed in "primordial.")
+
+NOTE ON SCOPE — PUNIC vs. inherited Phoenician. This transcript authors the CARTHAGINIAN /
+western-Punic pantheon under the punic_ prefix, distinct from the eastern Phoenician homeland
+gods already in the corpus under the phoenician_ prefix (phoenician_baal_hammon, _tanit,
+_melqart, _eshmun, _astarte, _resheph, _baalshamin). The two sets share theonyms and origin;
+here each figure is authored in its PUNIC form and cult role, and the shared origin with the
+eastern homeland is recorded in each figure's notes. Relations are wired ONLY within this
+punic_ batch (per the hard rule that relation.personId resolve within the batch); the eastern
+phoenician_ figures are referenced in prose notes, not as relation edges.
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISIONS
+================================================================================
+
+ANCHOR SOURCES (verified titles/years).
+  • Serge Lancel, *Carthage: A History*, trans. Antonia Nevill (Oxford: Blackwell, 1995) —
+    Lancel directed the Byrsa excavations; standard narrative-and-religion history.
+  • Edward Lipiński, *Dieux et déesses de l'univers phénicien et punique* (Studia Phoenicia
+    XIV = Orientalia Lovaniensia Analecta 64; Leuven: Peeters, 1995).
+  • Gilbert Charles-Picard & Colette Picard, *The Life and Death of Carthage* (London:
+    Sidgwick & Jackson, 1968; Eng. trans. of *La vie et la mort de Carthage*). [First English
+    edition 1968 — not 1969/70.]
+  • Paolo Xella, *Baal Hammon. Recherches sur l'identité et l'histoire d'un dieu phénico-
+    punique* (Contributi alla Storia della Religione Fenicio-Punica I = Collezione di Studi
+    Fenici 32; Roma: CNR, 1991) — the standard Baal Hammon monograph.
+  • Corinne Bonnet, *Melqart. Cultes et mythes de l'Héraclès tyrien en Méditerranée* (Studia
+    Phoenicia VIII; Leuven: Peeters / Namur, 1988) — the standard Melqart monograph.
+  • F. O. Hvidberg-Hansen, *La déesse TNT: Une étude sur la religion canaanéo-punique*, 2 vols.
+    (Copenhagen: Gad, 1979) — the standard Tanit monograph.
+  • Josephine Crawley Quinn, *In Search of the Phoenicians* (Princeton Univ. Press, 2018) — esp.
+    the chapter "The Circle of the Tophet" (the tophet and Punic identity).
+  • Reshef: William J. Fulco, *The Canaanite God Rēšep* (American Oriental Society, 1976) — the
+    first monograph; Edward Lipiński, *Resheph: A Syro-Canaanite Deity* (Studia Phoenicia XIX =
+    OLA 181; Peeters, 2009) — the dedicated Lipiński study; Paolo Xella, "Resheph", in *Dictionary
+    of Deities and Demons in the Bible* (DDD, 2nd ed.; Brill, 1999), 700–703; M. M. Münnich, *The
+    God Resheph in the Ancient Near East* (Mohr Siebeck, 2013).
+  • Epigraphic corpora: KAI = H. Donner & W. Röllig, *Kanaanäische und aramäische Inschriften*
+    (3 vols., 1st ed. 1960–64; 5th ed. of vol. 1, 2002); CIS I = *Corpus Inscriptionum
+    Semiticarum*, pars prima (the great mass of Carthaginian tophet stelae); M. G. Amadasi
+    Guzzo, *Le iscrizioni fenicie e puniche delle colonie in Occidente* / *…in Italia* (ICO)
+    for Sardinia (Antas) and Italy.
+
+DISTINCTIVELY PUNIC vs. INHERITED (foregrounded per the brief).
+  • Distinctively Punic / western: BAAL HAMMON (supreme god of Carthage, lord of the tophet),
+    TANIT / Tinnit Pene Baal (the great goddess of Carthage, the "sign of Tanit"), and SID Addir
+    / Sardus Pater (eponymous hero-god of Sardinia, son of Melqart, of the temple of Antas).
+  • Inherited from the Phoenician homeland but authored here in their Punic role: MELQART (the
+    Tyrian dynastic god and ancestral patron honoured at Carthage; egersis), ESHMUN (the healer,
+    whose great temple crowned the Byrsa), ASTARTE (present in Punic cult, e.g. the Pyrgi
+    dedication; assimilated to Tanit at Carthage), BAAL SHAMEM ("lord of the heavens"), and
+    RESHEF (West Semitic god of plague/war — see the caveat below).
+
+THE GREEK/ROMAN INTERPRETATIO (recorded as notes/epithets unless the counterpart is IN this
+batch). Baal Hammon = Kronos (Greek) / Saturn (Roman; the immensely popular Saturnus Africanus).
+Tanit = Juno Caelestis / Dea Caelestis (Roman), occasionally Artemis/Hera. Melqart = Herakles /
+Hercules ("the Tyrian Herakles"). Eshmun = Asklepios / Aesculapius. Sid = Sardus Pater (Roman).
+Astarte = Aphrodite (Greek) / Venus·Juno (Roman). Reshef = Apollo (Greek). NONE of these
+Greco-Roman counterparts is a figure in this batch, so each is recorded in notes/epithets, NOT
+as a dangling "equated-with" relation (per the hard rule).
+
+RELATIONAL WIRING (reciprocal within batch).
+  • BAAL HAMMON ⇄ TANIT — the consort pair of Carthage, jointly invoked on every tophet stele.
+    Wired as reciprocal `spouse`. CAVEAT carried in notes: the pairing is cultic/epigraphic
+    (joint invocation, the epithet "Face of Baal"); NO Punic text gives a marriage narrative,
+    parentage, or offspring for either deity. No kin edge to children is asserted.
+  • MELQART (father-of) ⇄ SID (son-of) — Sid of Sardinia is the son of Melqart-Herakles. This
+    rests on the cult assemblage at Antas (Melqart + Sid/Sardus Pater + Astarte) plus the
+    classical genealogy of Sardus son of Makeris (= the "Libyan" Herakles = Melqart) in
+    Pausanias 10.17 and Sallust. Flagged as partly reconstructed; wired as the directed
+    father-of/son-of pair (Sid's parentId = punic_melqart).
+  • No other kin edges are attested. Eshmun, Astarte, Baal Shamem and Reshef are authored
+    WITHOUT kin relations (Astarte's pairing with Melqart at Tyre and her assimilation to Tanit
+    are noted in prose, not over-claimed as Carthaginian kinship). They are flagged SOLITARY.
+
+ATTESTED vs. RECONSTRUCTED (the cardinal rule — flagged per figure).
+  • Firmly attested (epigraphy/primary): the theonyms (bʿl ḥmn, tnt, mlqrt, ʾšmn, ʿštrt, ršp,
+    bʿl šmm) and the standard tophet formula l-rbt l-tnt pn bʿl w-l-ʾdn l-bʿl ḥmn ("To the Lady,
+    to Tanit Face of Baal, and to the Lord, to Baal Hammon"), with Tanit named FIRST from the
+    5th c. BCE; the vow-formula ʾš ndr … k šmʿ qlʾ ("which he vowed … because he heard his
+    voice"); the mlk/molk offering term; KAI 47 (Cippi of Melqart), KAI 277 (Pyrgi/Astarte),
+    KAI 14 & 15–16 (Eshmunazar / Bodashtart, Sidon); the egersis and the priest-title mqm ʾlm;
+    the Byrsa temple of Eshmun as the last redoubt in 146 BCE (Appian; Strabo 17.3.14); the
+    temple of Antas to Sid Addir, rebuilt as Sardus Pater Babai.
+  • Modern reconstruction (flagged, not asserted as fact): the meaning of "Ḥammon" (brazier /
+    Mt Amanus / toponym); the etymology of "Tinnit" (Lipiński's "weeper"; Cross's Asherah-
+    epithet); the precise domain-portfolios (sun/vegetation; moon/heaven) read from iconography
+    and interpretatio; the identification of the "sign of Tanit" with the goddess; whether
+    systematic child sacrifice occurred at the tophet; Melqart as a full "dying-and-rising god"
+    (the egersis is attested; the death-by-fire is drawn from Greek Herakles material); Eshmun's
+    youth-castration-revival myth (a single late source, Damascius via Photius, cod. 242).
+
+FIGURES CONSIDERED BUT EXCLUDED / NOTE.
+  • RESHEF is authored, but with a prominent caveat: per Xella, there is no SECURE evidence for
+    a Reshef cult in the Punic cities themselves; older claims of a "Punic Reshef" rest on
+    misreadings (of ʿrš "Eresh" and of rš "Baal of the cape"). He is therefore authored as the
+    inherited West Semitic god attested across the wider Phoenician-Punic sphere (esp. Cyprus —
+    Kition/Idalion, where ršp mkl = Apollo Amyklos), NOT as a securely-attested Carthaginian
+    god; this is stated in his notes. He is included because the brief lists him and he is a
+    real, citable figure of the Phoenician-Punic religious world.
+  • "Moloch" as a god is NOT authored: following Eissfeldt (1935), mlk/molk on the stelae is a
+    sacrificial term (mlk ʾmr "offering of a lamb" = molchomor; mlk ʾdm "offering of a man"),
+    not the name of a deity. Recorded in Baal Hammon's materialCulture/notes, not as a figure.
+  • The Greco-Roman interpretatio counterparts (Kronos/Saturn, Heracles, Asklepios, Juno
+    Caelestis, Aphrodite/Venus, Apollo, Sardus Pater) are NOT authored as separate figures and
+    NOT wired as relations (they are not in this batch); they appear in notes/epithets only.
+
+================================================================================
+AUTHORED FIGURES (8)
+================================================================================
+
+```json
+[
+ {
+  "id": "punic_baal_hammon",
+  "name": {
+   "primary": "Baal Hammon",
+   "alt": [
+    "Baʿal Ḥammon",
+    "Baʿl Ḥamōn",
+    "Baal Hamon"
+   ],
+   "transliterations": {
+    "phoenician": "𐤁𐤏𐤋 𐤇𐤌𐤍",
+    "punic": "bʿl ḥmn",
+    "greek": "Kronos (interpretatio)",
+    "latin": "Saturnus (interpretatio; Saturnus Africanus)",
+    "etymology": "bʿl 'lord' + ḥmn (uncertain). Leading proposals: 'lord of the brazier / incense-altar' (ḥammān, a cultic fire-installation); 'lord of (Mt) Amanus' (Ḫamān, the position of F. M. Cross, supporting an identification with El); or 'lord of the sanctuary Ḥammon' (a toponym near Tyre). The second element is genuinely unresolved in the scholarship."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Punic",
+  "primaryTradition": "Punic",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [],
+  "domains": [
+   {
+    "sphereId": "supreme-god",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "𐤁𐤏𐤋 𐤇𐤌𐤍",
+     "script": "Phoenician",
+     "rom": "bʿl ḥmn ('Baʿal Ḥammon')"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet votive stelae (CIS I; the formula l-ʾdn l-bʿl ḥmn, 'to the Lord, to Baal Hammon')"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Paolo Xella, Baal Hammon. Recherches sur l'identité et l'histoire d'un dieu phénico-punique (Coll. di Studi Fenici 32; Roma: CNR, 1991)"
+     }
+    ],
+    "notes": "Principal/supreme male deity of Carthage and head of the tophet cult, jointly invoked with Tanit. Titled ʾdn ('lord')."
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Serge Lancel, Carthage: A History (Blackwell, 1995)"
+     }
+    ],
+    "notes": "Paternal fertility/vegetation god; this domain-portfolio is reconstructed from iconography and the Saturn interpretatio rather than stated in Punic texts."
+   },
+   {
+    "sphereId": "sky-and-sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Paolo Xella, Baal Hammon (1991); E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "notes": "Celestial/solar aspect (solar disc in his iconography); reconstructed, not epigraphically explicit."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "receive-the-molk-offering",
+    "name": "Receives the molk offering vowed at the tophet",
+    "term": {
+     "value": "𐤌𐤋𐤊",
+     "script": "Phoenician",
+     "rom": "mlk (molk); mlk ʾmr 'offering of a lamb' (molchomor), mlk ʾdm 'offering of a man'"
+    },
+    "inheritability": "none",
+    "notes": "The tophet stelae record the monument as that 'which PN vowed' (ʾš ndr) to Baal Hammon (and Tanit), 'because he heard his voice' (k šmʿ qlʾ). Following Eissfeldt (1935), mlk/molk is the term for the offering itself, not a god 'Moloch'.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian and Neo-Punic tophet stelae (CIS I; the molchomor / mlk ʾmr formula)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Otto Eissfeldt, Molk als Opferbegriff im Punischen und Hebräischen (1935)"
+     }
+    ]
+   },
+   {
+    "id": "hear-the-vow-and-bless",
+    "name": "Hears the vow of the dedicant and grants blessing",
+    "term": {
+     "value": "𐤊 𐤔𐤌𐤏 𐤒𐤋𐤀",
+     "script": "Phoenician",
+     "rom": "k šmʿ qlʾ ('because he heard his voice')"
+    },
+    "inheritability": "none",
+    "notes": "The closing of the standard tophet dedication: the god heard the dedicant's voice and is asked to bless him (ybrkʾ).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet stelae (CIS I; e.g. the Lilybaeum/Marsala stele: 'to the Lord, to Baal Hammon … because he heard his voice, may he bless him')"
+     }
+    ]
+   },
+   {
+    "id": "ripen-the-crops",
+    "name": "Quickens the grain and ripens the harvest",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Agrarian fertility power, prominent in his Roman-African afterlife as Saturnus Africanus, the dominant rural god of North Africa into the 3rd c. CE. Interpretatio-based.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Serge Lancel, Carthage: A History (1995); G. & C. Charles-Picard, The Life and Death of Carthage (1968)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "baal-hammon-tophet",
+    "kind": "site",
+    "name": "The tophet (precinct of Baal Hammon and Tanit)",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": "(the modern label 'tophet' is from Hebrew tōpheth, Jer. 7; the Punic name of the precinct is not preserved)"
+    },
+    "role": "venerated-at",
+    "notes": "The open-air sacred precinct (Carthage's 'Salammbô' tophet, with parallels at Motya, Sulci, Tharros, Hadrumetum, etc.) containing urns of cremated infants and young animals beneath inscribed votive stelae to Tanit and Baal Hammon. Whether systematic child sacrifice occurred there is a live scholarly controversy.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tophet of Salammbô, Carthage (excavated precinct and stelae; CIS I)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Josephine Crawley Quinn, In Search of the Phoenicians (Princeton, 2018), ch. 'The Circle of the Tophet'"
+     }
+    ]
+   },
+   {
+    "id": "baal-hammon-stele",
+    "kind": "emblem",
+    "name": "Votive tophet stele",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "role": "associated",
+    "notes": "Carved limestone/sandstone stelae bearing the dedication to Tanit and Baal Hammon and often the 'sign of Tanit', the caduceus, and a raised hand. KAI 78 (= CIS I 3778), the Baalay/Mitsri-genealogy stele, was set up at a statue of Baal Hammon.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "KAI 78 = CIS I 3778 (Baalay statue stele, Carthage, 4th c. BCE)"
+     }
+    ]
+   },
+   {
+    "id": "baal-hammon-enthroned-ram",
+    "kind": "regalia",
+    "name": "Solar disc and ram's-horn imagery; enthroned figure",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "role": "associated",
+    "notes": "Diagnostic iconography: a solar disc set above or between rams/ram's horns, and a bearded, elderly enthroned male (throne sometimes flanked by sphinxes). Securely labelled images are rare, so identifications are largely inferred.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Paolo Xella, Baal Hammon (1991); Iconography of Deities and Demons (IDD, Univ. Zürich), s.v. Baal Hammon"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "ʾdn (Adon, 'Lord')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet stelae (l-ʾdn l-bʿl ḥmn)"
+     }
+    ],
+    "notes": "His standing title in the dedicatory formula."
+   },
+   {
+    "original": "Baʿal Qarnaim ('Lord of the Two Horns')",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Punic North-African epigraphy/iconography (the horned headdress); cf. Lancel, Carthage (1995)"
+     }
+    ],
+    "notes": "A North-African epithet/cult-form tied to the ram's-horn imagery; use with care, as Baʿal Qarnaim is sometimes treated as a distinct local manifestation."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "punic_tanit",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet stelae — joint invocation l-rbt l-tnt pn bʿl w-l-ʾdn l-bʿl ḥmn (CIS I)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Serge Lancel, Carthage: A History (1995)"
+     }
+    ],
+    "notes": "The consort pair of Carthage. The pairing is cultic/epigraphic (joint invocation; Tanit as 'Face of Baal'); no marriage narrative, parentage or offspring is attested for either."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet votive stelae, CIS I (the l-ʾdn l-bʿl ḥmn formula); KAI 78 = CIS I 3778"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Paolo Xella, Baal Hammon. Recherches sur l'identité et l'histoire d'un dieu phénico-punique (CNR, 1991)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Serge Lancel, Carthage: A History (Blackwell, 1995)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Supreme god of Carthage and lord of the tophet, invoked with Tanit on the votive stelae; equated by the Greeks with Kronos and by the Romans with Saturn (the popular Saturnus Africanus of Roman North Africa). Shares theonym and origin with the eastern Phoenician Baʿal Ḥammon (corpus id phoenician_baal_hammon); authored here in his distinctive Carthaginian cult role. The meaning of 'Ḥammon', the precise domains, and the reality of child sacrifice are flagged as unresolved/reconstructed. The Kronos/Saturn interpretatio is recorded here (the counterparts are not figures in this batch, so no equated-with relation is wired)."
+ },
+ {
+  "id": "punic_tanit",
+  "name": {
+   "primary": "Tanit",
+   "alt": [
+    "Tinnit",
+    "Tinnit Pene Baal",
+    "Tannit"
+   ],
+   "transliterations": {
+    "phoenician": "𐤕𐤍𐤕",
+    "punic": "tnt (vocalized Tinnit)",
+    "greek": "Artemis / Hera (interpretatio)",
+    "latin": "Iuno Caelestis / Dea Caelestis (interpretatio)",
+    "etymology": "Uncertain. Lipiński derives tnt from the root tny 'to lament/wail' (Tinnit = 'she who weeps', hence 'Tinnit Pene Baal' = 'the weeper before Baal'); F. M. Cross took tnt as originally an epithet of the goddess Asherah; others leave it unexplained. The epithet pn bʿl is transparent: 'Face/Presence of Baal'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Punic",
+  "primaryTradition": "Punic",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [],
+  "domains": [
+   {
+    "sphereId": "great-goddess",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "𐤓𐤁𐤕 𐤕𐤍𐤕 𐤐𐤍 𐤁𐤏𐤋",
+     "script": "Phoenician",
+     "rom": "rbt tnt pn bʿl ('the Lady Tanit, Face of Baal')"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet votive stelae (CIS I) — the formula l-rbt l-tnt pn bʿl, with Tanit named first from the 5th c. BCE"
+     },
+     {
+      "kind": "secondary",
+      "reference": "F. O. Hvidberg-Hansen, La déesse TNT (Copenhagen, 1979)"
+     }
+    ],
+    "notes": "The great goddess of Carthage, 'the Lady' (rbt), titled 'Face of Baal'. Her naming BEFORE Baal Hammon in the standard dedication is a firmly attested epigraphic feature."
+   },
+   {
+    "sphereId": "fertility-and-motherhood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Serge Lancel, Carthage: A History (1995); F. O. Hvidberg-Hansen, La déesse TNT (1979)"
+     }
+    ],
+    "notes": "Mother-goddess of fertility and increase; pomegranate and dove emblems. Reconstructed from iconography and the Caelestis interpretatio."
+   },
+   {
+    "sphereId": "heaven-and-moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "notes": "Celestial/lunar goddess (crescent and disc in her iconography), continued in her Roman afterlife as the heavenly Dea Caelestis. Reconstructed."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "be-the-face-of-baal",
+    "name": "Mediates as the manifest Face of Baal",
+    "term": {
+     "value": "𐤐𐤍 𐤁𐤏𐤋",
+     "script": "Phoenician",
+     "rom": "pn bʿl ('Face/Presence of Baal')"
+    },
+    "inheritability": "none",
+    "notes": "Her standing epithet Tinnit Pene Baal makes her the accessible 'face/presence' of Baal Hammon to worshippers — the standard scholarly gloss of pn bʿl.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet stelae (tnt pn bʿl)"
+     }
+    ]
+   },
+   {
+    "id": "protect-carthage",
+    "name": "Shields Carthage as its civic patroness",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "From the late 5th–4th c. BCE the pre-eminent deity of Carthage in votive practice; protectress of the city and its colonies (notably Ibiza, where she became the island's patron goddess at Es Culleram).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet stelae (her first-position naming, CIS I); Es Culleram sanctuary, Ibiza"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Serge Lancel, Carthage: A History (1995)"
+     }
+    ]
+   },
+   {
+    "id": "grant-fertility",
+    "name": "Grants offspring, fertility and abundant increase",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Mother-goddess granting fruitfulness; receives, with Baal Hammon, the vows at the tophet.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. O. Hvidberg-Hansen, La déesse TNT (1979)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "sign-of-tanit",
+    "kind": "emblem",
+    "name": "The 'sign of Tanit' (signe de Tanit)",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "role": "associated",
+    "notes": "A schematic emblem: a triangle/trapezoid base, a horizontal bar (often read as outstretched arms), surmounted by a disc/circle, frequently with a crescent. Pervasive on Punic stelae and artefacts. Its firm attribution to the goddess Tanit is a modern convention — the emblem is not labelled on the monuments; the readings of its parts are interpretive.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Punic votive monuments, Carthage and the western Punic world (CIS I; tophet stelae)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "F. O. Hvidberg-Hansen, La déesse TNT (1979); Serge Lancel, Carthage: A History (1995)"
+     }
+    ]
+   },
+   {
+    "id": "tanit-tophet",
+    "kind": "site",
+    "name": "The tophet of Carthage (precinct of Tanit and Baal Hammon)",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Tanit shares the tophet with Baal Hammon and is named first in its dedications; her cult radiated to Ibiza (Es Culleram), Sardinia, Sicily and North Africa.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tophet of Salammbô, Carthage (CIS I)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Pene Baal (Pene Baʿal / Tinnit Pene Baal, 'Face of Baal')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet stelae (tnt pn bʿl)"
+     }
+    ],
+    "notes": "Her defining epithet; she is the 'face/presence' of Baal Hammon."
+   },
+   {
+    "original": "Rabat (rbt, 'Lady')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet stelae (l-rbt l-tnt)"
+     }
+    ],
+    "notes": "Her title in the dedicatory formula, paralleling Baal Hammon's ʾdn ('Lord')."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "punic_baal_hammon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet stelae — joint invocation l-rbt l-tnt pn bʿl w-l-ʾdn l-bʿl ḥmn (CIS I)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Serge Lancel, Carthage: A History (1995)"
+     }
+    ],
+    "notes": "Consort pair of Carthage; the bond is cultic/epigraphic (joint invocation; 'Face of Baal'), not a narrative marriage. No parentage or offspring attested."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Carthaginian tophet votive stelae, CIS I (the l-rbt l-tnt pn bʿl formula, Tanit named first from the 5th c. BCE)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "F. O. Hvidberg-Hansen, La déesse TNT: Une étude sur la religion canaanéo-punique (Copenhagen, 1979)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Serge Lancel, Carthage: A History (Blackwell, 1995)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The great goddess of Carthage, 'Tanit Face of Baal' (Tinnit Pene Baal), consort of Baal Hammon and named before him on the tophet stelae; her emblem is the 'sign of Tanit'. Romanized as Dea/Iuno Caelestis. Shares theonym and origin with the eastern Phoenician Tanit (corpus id phoenician_tanit); her ultimate origin (a Punic form of Astarte vs. an autochthonous Libyan goddess later assimilated to Astarte) is contested. The etymology of 'Tinnit' and the attribution of the 'sign of Tanit' are flagged as unresolved/reconstructed. The Caelestis/Artemis interpretatio is recorded here, not wired as a relation (counterparts not in this batch)."
+ },
+ {
+  "id": "punic_melqart",
+  "name": {
+   "primary": "Melqart",
+   "alt": [
+    "Milqart",
+    "Milk-Qart",
+    "Melkart"
+   ],
+   "transliterations": {
+    "phoenician": "𐤌𐤋𐤒𐤓𐤕",
+    "punic": "mlqrt",
+    "greek": "Hēraklēs (ho Tyrios — 'the Tyrian Herakles')",
+    "latin": "Hercules",
+    "etymology": "mlk-qrt = 'King of the City' (mlk 'king' + qrt 'city/town'), i.e. King of Tyre — a transparent, universally accepted Northwest Semitic etymology."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Punic",
+  "primaryTradition": "Punic",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "death-of-melqart-by-fire",
+    "vitalStatus": "deceased",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Corinne Bonnet, Melqart. Cultes et mythes de l'Héraclès tyrien en Méditerranée (Studia Phoenicia VIII, 1988)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Pseudo-Clementine Recognitions (the 'tomb of Herakles at Tyre, where he was burnt with fire'); the Greek Herakles' self-immolation on Mt Oeta, adduced as the interpretatio"
+     }
+    ],
+    "notes": "The death phase of the annual cycle: Melqart dies (his burning/pyre). This 'death by fire' is reconstructed from Greek Herakles material and late testimonia rather than a Punic ritual text; what the rite enacted is inferred from the existence of the egersis (next phase)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "egersis-awakening-of-melqart",
+    "vitalStatus": "living",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Josephus, Against Apion 1.118–119 and Antiquities 8.146 (quoting Menander of Ephesus): Hiram I 'first performed the egersis of Herakles' in the month Peritios"
+     },
+     {
+      "kind": "primary",
+      "reference": "Punic priestly title mqm ʾlm ('miqim elim', 'raiser/resuscitator of the deity'), attested epigraphically"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Corinne Bonnet, Melqart (Studia Phoenicia VIII, 1988)"
+     }
+    ],
+    "notes": "The 'awakening' phase: the egersis (ἔγερσις, 'awakening/resurrection'), an annual festival in the month Peritios (≈ February) at which the god was revived, performed by the priest titled mqm ʾlm ('awakener of the god'). Instituted, per Menander via Josephus, by Hiram I of Tyre. The egersis is firmly attested; reading Melqart as a full 'dying-and-rising god' is a modern interpretation built upon it."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "𐤌𐤋𐤒𐤓𐤕",
+     "script": "Phoenician",
+     "rom": "mlqrt ('King of the City', i.e. of Tyre)"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cippi of Melqart, Malta (KAI 47 = CIS I 122): l-ʾdnn l-mlqrt bʿl ṣr, 'to our lord Melqart, Baal of Tyre'"
+     }
+    ],
+    "notes": "Poliad and dynastic god of Tyre; tutelary deity of the Tyrian royal house, honoured at Carthage as the inherited ancestral god of the mother-city."
+   },
+   {
+    "sphereId": "colonization-and-the-sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Corinne Bonnet, Melqart (1988)"
+     }
+    ],
+    "notes": "Patron of Tyrian seafaring and colonial foundation; his temples mark the colonial network (Gades, Carthage, Lixus, Sardinia)."
+   },
+   {
+    "sphereId": "ancestral-patron-of-carthage",
+    "contextTag": "ritual",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diodorus Siculus 20.14; Justin (Pompeius Trogus), Epitome 18.7 (Carthage's annual tithe to Melqart's temple at Tyre); Polybius 7.9.2–3 (Herakles among the gods of the Hannibal–Philip V treaty, 215 BCE)"
+     }
+    ],
+    "notes": "At Carthage the inherited dynastic god: the city sent an annual tithe/sacred embassy to his temple at Tyre, and his neglect was said to bring divine punishment."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "die-and-be-awakened",
+    "name": "Dies and is annually awakened at the egersis",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": "egersis (ἔγερσις, 'awakening'); the officiant is the mqm ʾlm"
+    },
+    "inheritability": "none",
+    "notes": "The death-and-awakening cycle enacted each Peritios; the priest-title mqm ʾlm ('raiser of the god') is the Punic-world office of the awakener. Firmly attested as a rite; the dying-and-rising reading is interpretive.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Josephus, Against Apion 1.118–119; Antiquities 8.146 (Menander of Ephesus); the epigraphic title mqm ʾlm"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Corinne Bonnet, Melqart (Studia Phoenicia VIII, 1988)"
+     }
+    ]
+   },
+   {
+    "id": "found-and-guard-colonies",
+    "name": "Founds and guards the Tyrian colonies overseas",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "A temple of Melqart was raised at the colonial foundations (Gades, Carthage, Lixus); he is the archēgetēs ('founder-leader', so the Greek of the Cippi).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cippi of Melqart, KAI 47 (Greek: Hēraklei archēgetei)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Corinne Bonnet, Melqart (1988)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "cippi-of-melqart",
+    "kind": "emblem",
+    "name": "The Cippi of Melqart (Malta bilingual)",
+    "term": {
+     "value": "𐤋𐤀𐤃𐤍𐤍 𐤋𐤌𐤋𐤒𐤓𐤕 𐤁𐤏𐤋 𐤑𐤓",
+     "script": "Phoenician",
+     "rom": "l-ʾdnn l-mlqrt bʿl ṣr ('to our lord Melqart, Baal of Tyre')"
+    },
+    "role": "venerated-at",
+    "notes": "A pair of marble cippi from Malta (Tas-Silġ), bilingual Phoenician–Greek, c. 2nd c. BCE (KAI 47 = CIS I 122), dedicated to Melqart Baal of Tyre by two brothers (sons of ʿAbdʾosir); the Greek renders the dedicatee Hēraklēs Archēgetēs. Their bilingual text enabled J.-J. Barthélemy to decipher the Phoenician alphabet in 1758. One cippus is now in the Louvre, its twin in Valletta.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cippi of Melqart, KAI 47 = CIS I 122 (Malta)"
+     }
+    ]
+   },
+   {
+    "id": "melqart-pillars-and-fire",
+    "kind": "site",
+    "name": "Temple of Melqart with twin pillars and perpetual fire",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "role": "embodied",
+    "notes": "At Tyre the temple of Melqart (Herakles) held two pillars, one of gold and one of smaragdos (emerald) that shone at night (Herodotus 2.44). At Gades the Heracleion-Gaditanum held two bronze pillars (8 cubits) and a perpetual altar-fire tended by priests, with no cult images (Strabo 3.5.5–6; Silius Italicus, Punica 3). The 'Pillars of Herakles/Melqart' name the Strait of Gibraltar. (A perpetual fire is securely attested for Gades; for Tyre it is uncertain.)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herodotus, Histories 2.44 (Tyre, the gold and emerald pillars); Strabo 3.5.5–6 and Silius Italicus, Punica 3 (Gades: bronze pillars, perpetual fire, no images)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Baʿl Ṣur (bʿl ṣr, 'Baal/Lord of Tyre')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cippi of Melqart, KAI 47 (l-mlqrt bʿl ṣr)"
+     }
+    ],
+    "notes": "His defining title — the lord of the mother-city Tyre."
+   },
+   {
+    "original": "Archēgetēs ('Founder-Leader'; Greek of the Cippi)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cippi of Melqart, KAI 47 (Greek: Hēraklei archēgetei)"
+     }
+    ],
+    "notes": "The Greek interpretatio styles him Herakles Archēgetēs, founder of the colonies."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "punic_sid",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 10.17 and Sallust (Sardus, eponym of Sardinia, as son of Makeris = the 'Libyan' Herakles = Melqart); cult assemblage at the temple of Antas (Melqart + Sid/Sardus Pater + Astarte)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "notes": "Sid of Sardinia is the son of Melqart-Herakles. The filiation rests on the Antas cult assemblage plus the classical genealogy of Sardus son of Makeris (= Melqart); flagged as partly reconstructed (no single 'Sid bn Mlqrt' formula)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Cippi of Melqart, KAI 47 = CIS I 122 (Malta); Herodotus 2.44; Josephus, Against Apion 1.118–119"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Corinne Bonnet, Melqart. Cultes et mythes de l'Héraclès tyrien en Méditerranée (Studia Phoenicia VIII; Peeters/Namur, 1988)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "'King of the City' (Tyre), the Tyrian Herakles: the dynastic god of Tyre and inherited ancestral patron of Carthage, to whose temple at Tyre Carthage sent an annual tithe. His mythic profile is the death-and-awakening cycle (egersis), here given as a two-phase lifecycle (death by fire → egersis awakening). Shares theonym and origin with the eastern Phoenician Melqart (corpus id phoenician_melqart); authored here in his Punic/Carthaginian role. Father of Sid of Sardinia (punic_sid). The Herakles/Hercules interpretatio is recorded here, not wired as a relation (counterpart not in this batch). The death-by-fire is reconstructed from Greek material; a perpetual fire at Tyre is uncertain."
+ },
+ {
+  "id": "punic_eshmun",
+  "name": {
+   "primary": "Eshmun",
+   "alt": [
+    "Eshmoun",
+    "Ešmun"
+   ],
+   "transliterations": {
+    "phoenician": "𐤀𐤔𐤌𐤍",
+    "punic": "ʾšmn",
+    "greek": "Asklēpios",
+    "latin": "Aesculapius",
+    "etymology": "Debated: proposals connect ʾšmn to 'oil', to 'the Name', or to the numeral 'eight' (Eshmun as an 'eighth' figure, linked by some to the Kabeiroi). None is secure."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Punic",
+  "primaryTradition": "Punic",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [],
+  "domains": [
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "𐤀𐤔𐤌𐤍",
+     "script": "Phoenician",
+     "rom": "ʾšmn ('Eshmun')"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eshmunazar II sarcophagus, Sidon (KAI 14 = CIS I 3): the king builds a temple to Eshmun"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "notes": "The healer-god, equated with Asklepios/Aesculapius; a principal deity of Sidon whose cult was carried into the Punic world."
+   },
+   {
+    "sphereId": "civic-tutelage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Appian, Roman History 8 (Punica) ~130–131; Strabo 17.3.14 (the temple of Asklepios/Eshmun crowning the Byrsa of Carthage)"
+     }
+    ],
+    "notes": "At Carthage his great temple crowned the Byrsa (the citadel) and was the principal sanctuary of the city — the last redoubt in the fall of 146 BCE."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "heal-the-sick",
+    "name": "Cures disease and restores bodily health",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The healing power that underlies his equation with Asklepios/Aesculapius; serpent-and-staff imagery in his Hellenized iconography.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (1995); Serge Lancel, Carthage: A History (1995)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "eshmun-byrsa-temple",
+    "kind": "temple",
+    "name": "Temple of Eshmun on the Byrsa, Carthage",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "The principal temple of Carthage, atop the Byrsa citadel (approached, in the ancient tradition, by sixty steps). In 146 BCE the last defenders — Hasdrubal, his family and c. 900 Roman deserters — made their final stand here; the temple was fired, and Hasdrubal's wife killed their children and threw herself into the flames (Appian; Strabo 17.3.14).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Appian, Roman History 8 (Punica) ~130–131; Strabo, Geography 17.3.14"
+     }
+    ]
+   },
+   {
+    "id": "eshmun-sidon-temple",
+    "kind": "temple",
+    "name": "Temple of Eshmun at Sidon (Bustan esh-Sheikh)",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "The great extramural sanctuary of Eshmun at Sidon, named in the royal building inscriptions: the Eshmunazar II sarcophagus (KAI 14 = CIS I 3) and the Bodashtart inscriptions (KAI 15, naming Bodashtart; KAI 16, naming Bodashtart and his heir Yatonmilk). Cited as the homeland matrix of the cult carried west.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "KAI 14 = CIS I 3 (Eshmunazar II); KAI 15 and 16 (Bodashtart inscriptions), Sidon"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Asklēpios / Aesculapius (interpretatio)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Strabo 17.3.14 and Appian, Punica (the Byrsa 'temple of Asklepios' = Eshmun)"
+     }
+    ],
+    "notes": "The Greek and Roman sources name the Byrsa temple as that of Asklepios — the standard interpretatio of Eshmun. Recorded as an interpretatio note, not a relation (counterpart not in this batch)."
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Eshmunazar II sarcophagus, KAI 14 = CIS I 3 (Sidon); Appian, Roman History 8 (Punica) and Strabo 17.3.14 (the Byrsa temple, Carthage)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995); Serge Lancel, Carthage: A History (1995)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The healer-god, equated with Asklepios/Aesculapius; at Carthage his temple on the Byrsa was the principal sanctuary and the last redoubt in 146 BCE. Shares theonym and origin with the eastern Phoenician Eshmun (corpus id phoenician_eshmun); authored here in his Punic/Carthaginian role. SOLITARY in this batch: at Sidon he is paired in cult with Astarte, but no Punic kinship is attested, so no kin edge is asserted (the Astarte pairing and the late youth-revival myth of Damascius via Photius cod. 242 are noted, not wired). The Asklepios interpretatio and the etymology are flagged as interpretive/unresolved."
+ },
+ {
+  "id": "punic_sid",
+  "name": {
+   "primary": "Sid",
+   "alt": [
+    "Ṣid",
+    "Sid Addir",
+    "Sid Babai"
+   ],
+   "transliterations": {
+    "phoenician": "𐤑𐤃",
+    "punic": "ṣd; ṣd ʾdr (Sid Addir)",
+    "greek": "(Sardō / Sardos, eponym of Sardinia)",
+    "latin": "Sardus Pater (Babai)",
+    "etymology": "Punic ṣd. The epithet Sid Addir (ṣd ʾdr) = 'Sid the Mighty/Majestic' (ʾdr 'mighty'). 'Babai' is the epithet of the indigenous (Nuragic) Sardinian god with whom Sid was identified, carried over into the Roman 'Sardus Pater Babai'."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Punic",
+  "primaryTradition": "Punic",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "punic_melqart"
+  ],
+  "parentRoles": {
+   "punic_melqart": "father"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "settlement-of-sardinia-as-its-eponym",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 10.17 (Sardus, son of Makeris/Herakles, gives the island the name Sardō); Sallust (the Sardus-son-of-Hercules tradition)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "notes": "Son of Melqart-Herakles and eponymous hero-god of Sardinia; in the classical tradition Sardus, son of the 'Libyan' Herakles (= Melqart = Makeris), migrates to and names the island. Worshipped as Sid Addir, later interpreted as the Roman Sardus Pater."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "eponymous-hero-of-sardinia",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "𐤑𐤃 𐤀𐤃𐤓",
+     "script": "Phoenician",
+     "rom": "ṣd ʾdr ('Sid Addir', 'Sid the Mighty')"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Punic dedications to Sid Addir, temple of Antas, Sardinia (Amadasi Guzzo, ICO — Sardinia)"
+     }
+    ],
+    "notes": "The eponymous ancestor-hero and tutelary god of Punic Sardinia, identified with the indigenous Nuragic divinity (Babai) and, under Rome, with Sardus Pater."
+   },
+   {
+    "sphereId": "hunt-and-war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (1995)"
+     }
+    ],
+    "notes": "God of hunters and warriors; also reckoned a healing divinity and protector of seafarers in the Antas tradition."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "personify-sardinia",
+    "name": "Personifies and names the island of Sardinia",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As Sardus/Sardò he is the eponym of the island; his cult at Antas continued from the Punic Sid Addir into the Roman Sardus Pater Babai.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 10.17 (Sardō named from Sardus); the architrave inscription TEMPL(um) DE(i) SARDI PATRIS BAB(ai), temple of Antas"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "temple-of-antas",
+    "kind": "temple",
+    "name": "Temple of Antas (Fluminimaggiore, Sardinia)",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": "Sid Addir Babai → Sardus Pater Babai"
+    },
+    "role": "venerated-at",
+    "notes": "The sanctuary of Sid in southwest Sardinia (Fluminimaggiore, Iglesiente): a Punic temple to Sid Addir (Babai) built c. 500 BCE over a sacred limestone outcrop and restored c. 300 BCE; rebuilt by the Romans (first under Augustus) as the temple of Sardus Pater Babai, with a restoration under Caracalla (213–217 CE) by one Proculus recorded on the Latin architrave (TEMPL[um] DE[i] SARDI PATRIS BAB[ai]). The Punic dedications honour Sid; the cult assemblage actually attested on site associated him with Melqart (a dedication names Melqart) and with the healer-gods Hauron and Shadrafa (a 6th/5th-c. BCE Punic inscription notes that their statuettes could be offered in his temple). NB: Tanit is NOT attested in cult at Antas; her only link to Sid is as his reconstructed mythological mother (Tanit/Astarte) — see notes. The Sid/Antas votives are catalogued by Amadasi Guzzo (ICO) and CIS I, with no single famous KAI number.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Temple of Antas, Punic and Latin inscriptions (Amadasi Guzzo, ICO — Sardinia; the Sardus Pater Babai architrave)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Sid Addir (ṣd ʾdr, 'Sid the Mighty')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Punic dedications, temple of Antas"
+     }
+    ],
+    "notes": "His cult-name in the Punic dedications of Sardinia."
+   },
+   {
+    "original": "Sardus Pater Babai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Latin architrave of the temple of Antas (TEMPL. DE SARDI PATRIS BAB.)"
+     }
+    ],
+    "notes": "His Roman interpretatio — 'Father Sardus' — the eponym of Sardinia. Recorded as an interpretatio epithet (the Roman counterpart is not a figure in this batch)."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "son-of",
+    "personId": "punic_melqart",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 10.17 and Sallust (Sardus son of Makeris/Herakles = Melqart); cult assemblage at Antas (Melqart present with Sid)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "notes": "Son of Melqart-Herakles (reciprocal of punic_melqart father-of). Partly reconstructed — from the classical Sardus/Makeris genealogy and the Antas cult assemblage, not a single Punic filiation formula."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Punic dedications to Sid Addir and the Sardus Pater Babai architrave, temple of Antas, Sardinia (Amadasi Guzzo, ICO); Pausanias 10.17"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Sid Addir, the eponymous hero-god of Punic Sardinia and son of Melqart-Herakles, worshipped at the temple of Antas and interpreted by the Romans as Sardus Pater Babai. Authored as a demigod (son of the god Melqart; eponymous hero). CORRECTION to a common over-claim: although Tanit's cult is widespread in Punic Sardinia, Tanit is NOT specifically attested in cult AT the temple of Antas; she appears only as Sid's reconstructed mother (Tanit/Astarte) in the modern genealogy. The Sid↔Tanit-at-Antas link is therefore NOT wired. The Sardus Pater interpretatio is recorded as an epithet, not a relation (counterpart not in this batch)."
+ },
+ {
+  "id": "punic_astarte",
+  "name": {
+   "primary": "Astarte",
+   "alt": [
+    "Ashtart",
+    "ʿAshtart",
+    "Ashtoreth"
+   ],
+   "transliterations": {
+    "phoenician": "𐤏𐤔𐤕𐤓𐤕",
+    "punic": "ʿštrt",
+    "greek": "Aphroditē",
+    "latin": "Venus (also Iuno)",
+    "etymology": "ʿštrt, the Phoenician reflex of the common Semitic goddess-name ʿAṯtart / Ištar; the great Levantine goddess of love, war and sovereignty."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Punic",
+  "primaryTradition": "Punic",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [],
+  "domains": [
+   {
+    "sphereId": "love-and-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "𐤓𐤁𐤕 𐤏𐤔𐤕𐤓𐤕",
+     "script": "Phoenician",
+     "rom": "rbt ʿštrt ('the Lady Astarte')"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyrgi Tablets (KAI 277), c. 500 BCE: l-rbt l-ʿštrt, 'to the Lady, to Astarte' — dedication of a holy place by Thefarie Velianas, king of Caere"
+     }
+    ],
+    "notes": "Goddess of love, fertility and sexual power, present in the Punic west; the Pyrgi gold tablets dedicate a sanctuary to 'the Lady Astarte' (= Etruscan Uni). A Carthaginian dedication names the sanctuaries of both Astarte and Tanit (Berger 1898)."
+   },
+   {
+    "sphereId": "war-and-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "notes": "Armed war-goddess and granter of royal sovereignty in the Phoenician tradition, inherited into Punic cult."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "kindle-desire",
+    "name": "Kindles desire, fertility and procreation",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Her core power as the love-and-fertility goddess (interpretatio Aphrodite/Venus); dove emblem.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (1995)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pyrgi-tablets",
+    "kind": "emblem",
+    "name": "The Pyrgi Tablets (gold dedication to Astarte)",
+    "term": {
+     "value": "𐤋𐤓𐤁𐤕 𐤋𐤏𐤔𐤕𐤓𐤕",
+     "script": "Phoenician",
+     "rom": "l-rbt l-ʿštrt ('to the Lady, to Astarte')"
+    },
+    "role": "venerated-at",
+    "notes": "Three inscribed gold tablets from Pyrgi (Santa Severa, the port of Etruscan Caere), c. 500 BCE; the Phoenician sheet (KAI 277, 11 lines) records Thefarie Velianas, 'king over the Caerites', dedicating a holy place (ʾšr qdš) to 'the Lady, to Astarte' (l-rbt l-ʿštrt) 'in the month of the sacrifice to the Sun' (b-yrḥ zbḥ šmš), with Astarte assimilated to the Etruscan Uni. The key primary attestation of Astarte in the Punic-area west. Now in the Museo Nazionale Etrusco di Villa Giulia, Rome.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyrgi Tablets, KAI 277 (Pyrgi/Caere, Italy, c. 500 BCE)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "P. C. Schmitz, 'The Phoenician Text from the Etruscan Sanctuary at Pyrgi', Journal of the American Oriental Society 115.4 (1995), 559–575"
+     }
+    ]
+   },
+   {
+    "id": "astarte-tas-silg",
+    "kind": "temple",
+    "name": "Sanctuaries of Astarte in the Punic world (Tas-Silġ, Malta)",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Her renowned Phoenician-Punic sanctuary at Tas-Silġ (Malta), and others (e.g. Ras il-Wardija, Gozo), mark her cult across the central-Mediterranean Punic sphere.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Punic sanctuary of Astarte, Tas-Silġ, Malta (M. G. Amadasi Guzzo, 'Astarte a Malta')"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Rabat (rbt, 'Lady')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyrgi Tablets, KAI 277 (l-rbt l-ʿštrt)"
+     }
+    ],
+    "notes": "Her title in the Pyrgi dedication."
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pyrgi Tablets, KAI 277 (c. 500 BCE); Punic sanctuary of Astarte, Tas-Silġ, Malta; Ph. Berger, 'Inscription dédicatoire des sanctuaires d'Astarté et de Tanit à Carthage', Revue d'Assyriologie 5/1 (1898), 11–25"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995); Serge Lancel, Carthage: A History (1995)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The great Phoenician goddess of love, war and sovereignty, present in Punic cult (the Pyrgi dedication; Tas-Silġ on Malta; the Berger 1898 Carthaginian dedication naming sanctuaries of both Astarte and Tanit). Shares theonym and origin with the eastern Phoenician Astarte (corpus id phoenician_astarte); authored here in her Punic role. SOLITARY in this batch: at Carthage she is overshadowed by, and assimilated to, Tanit (Tanit-Astarte) — the older view that Tanit is a Punic form/hypostasis or successor of Astarte is widely reported but increasingly contested (current scholarship tends to distinguish them, Tanit likely originally local/Libyan), so no kin/identity edge is wired; at Tyre she is paired with Melqart. The Aphrodite/Venus (also Iuno, in the Uni/Caelestis milieu) interpretatio is recorded here, not wired as a relation (counterpart not in this batch)."
+ },
+ {
+  "id": "punic_baal_shamem",
+  "name": {
+   "primary": "Baal Shamem",
+   "alt": [
+    "Baʿal Šamem",
+    "Baalshamin",
+    "Baʿal Šamîn"
+   ],
+   "transliterations": {
+    "phoenician": "𐤁𐤏𐤋 𐤔𐤌𐤌",
+    "punic": "bʿl šmm",
+    "greek": "Zeus (Ouranios)",
+    "latin": "Caelus / Iuppiter",
+    "etymology": "bʿl šmm = 'Lord of the Heavens' (bʿl 'lord' + šmm 'heavens/sky')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Punic",
+  "primaryTradition": "Punic",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [],
+  "domains": [
+   {
+    "sphereId": "the-heavens",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "𐤁𐤏𐤋 𐤔𐤌𐤌",
+     "script": "Phoenician",
+     "rom": "bʿl šmm ('Lord of the Heavens')"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Phoenician-Punic treaty and dedicatory inscriptions invoking bʿl šmm (e.g. the gods of the Hannibal–Philip V treaty, Polybius 7.9, opening with Zeus = Baal Shamem)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "notes": "The celestial 'Lord of the Heavens', an inherited Phoenician sky-god invoked in the Punic state oath; the first-named god of the Hannibal–Philip V treaty (Polybius 7.9) is taken as Baal Shamem (rendered 'Zeus')."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-heavens",
+    "name": "Rules the heavens and guarantees oaths",
+    "term": {
+     "value": "",
+     "script": "Phoenician",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Heaven-god and guarantor of treaties/oaths in the Phoenician-Punic world.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Polybius 7.9 (the gods invoked in the Carthaginian treaty oath)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Baʿal Šamem ('Lord of the Heavens')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Phoenician-Punic dedicatory and treaty inscriptions"
+     }
+    ],
+    "notes": "His standing title; the name itself functions as the epithet 'Lord of the Heavens'."
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Phoenician-Punic inscriptions invoking bʿl šmm; Polybius 7.9 (Carthaginian treaty oath)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. Lipiński, Dieux et déesses de l'univers phénicien et punique (Studia Phoenicia XIV, 1995)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "'Lord of the Heavens', the inherited Phoenician sky-god present in the Punic pantheon and invoked in the Carthaginian state oath (the first god of the Hannibal–Philip V treaty, Polybius 7.9). Shares theonym and origin with the eastern Phoenician Baalshamin (corpus id phoenician_baalshamin); authored here in his Punic role. SOLITARY in this batch: no Punic kinship is attested, so no kin edge is asserted. The Zeus/Caelus interpretatio is recorded here, not wired as a relation (counterpart not in this batch)."
+ },
+ {
+  "id": "punic_resheph",
+  "name": {
+   "primary": "Reshef",
+   "alt": [
+    "Resheph",
+    "Rašap",
+    "Rešep"
+   ],
+   "transliterations": {
+    "phoenician": "𐤓𐤔𐤐",
+    "punic": "ršp",
+    "greek": "Apollōn",
+    "latin": "Apollo",
+    "etymology": "ršp, from a root meaning 'to burn/flame', whence 'burning fever, plague, pestilence'; the West Semitic god of plague and war."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Punic",
+  "primaryTradition": "Punic",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [],
+  "domains": [
+   {
+    "sphereId": "plague",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "𐤓𐤔𐤐",
+     "script": "Phoenician",
+     "rom": "ršp ('Reshef')"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William J. Fulco, The Canaanite God Rešep (American Oriental Society, 1976)"
+     }
+    ],
+    "notes": "God of plague and pestilence: his arrows, like those of Apollo, kill by spreading disease — the basis of the interpretatio Apollo."
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "𐤓𐤔𐤐 𐤇𐤑",
+     "script": "Phoenician",
+     "rom": "ršp ḥṣ ('Reshef of the arrow'); cf. bʿl ḥṣ ('lord of the arrow')"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Phoenician inscription of Kition, Cyprus (ršp ḥṣ, 'Reshef of the arrow' = KAI 32 = CIS I 10); the Idalion bilingual (388 BCE), ršp mkl = Apollo Amyklos"
+     }
+    ],
+    "notes": "Archer-god of war and death-by-weapons; the Kition epithet ršp ḥṣ ('Reshef of the arrow'). The 'gateway' association is a Ugaritic role (gatekeeper of the netherworld), not a Punic 'Reshef of the gate'."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "loose-plague-arrows",
+    "name": "Looses arrows of plague and war",
+    "term": {
+     "value": "𐤓𐤔𐤐 𐤇𐤑",
+     "script": "Phoenician",
+     "rom": "ršp ḥṣ ('Reshef of the arrow')"
+    },
+    "inheritability": "none",
+    "notes": "The archer who brings pestilence; equated with the plague-bringing Apollo. Also bore the epithet ršp gn ('Reshef of the Garden').",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Phoenician inscriptions, Cyprus (ršp ḥṣ, KAI 32 = CIS I 10; the Idalion bilingual, 388 BCE, ršp mkl = Apollo Amyklos)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "William J. Fulco, The Canaanite God Rēšep (American Oriental Society, 1976)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "ršp ḥṣ ('Reshef of the arrow')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Phoenician inscription, Kition (Cyprus), KAI 32 = CIS I 10"
+     }
+    ],
+    "notes": "His archer-of-plague epithet (the 'arrow' reading per J. Teixidor)."
+   },
+   {
+    "original": "ršp gn ('Reshef of the Garden')",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William J. Fulco, The Canaanite God Rēšep (1976); E. Lipiński, Resheph: A Syro-Canaanite Deity (Studia Phoenicia XIX = OLA 181, 2009)"
+     }
+    ],
+    "notes": "A cultic epithet attested in the Phoenician sphere."
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Phoenician inscriptions of Cyprus (ršp ḥṣ, KAI 32 = CIS I 10, Kition; the Idalion bilingual, 388 BCE, ršp mkl = Apollo Amyklos)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "William J. Fulco, The Canaanite God Rēšep (American Oriental Society, 1976); E. Lipiński, Resheph: A Syro-Canaanite Deity (Studia Phoenicia XIX = OLA 181; Peeters, 2009); P. Xella, 'Resheph', in Dictionary of Deities and Demons in the Bible (2nd ed., Brill, 1999), 700–703"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The West Semitic god of plague and war, the archer whose arrows bring pestilence; equated by the Greeks with Apollo (Reshef-Mikal = Apollo Amyklos at Idalion, Cyprus, 388 BCE). Shares origin with the eastern Phoenician Reshef (corpus id phoenician_resheph); authored here as the inherited god of the wider Phoenician-Punic sphere. IMPORTANT CAVEAT: per Xella there is NO secure evidence for a Reshef cult in the Punic cities themselves — older claims of a 'Punic Reshef' rest on misreadings (of ʿrš 'Eresh' and of rš 'Baal of the cape'); his firm Phoenician-Punic-world attestation is eastern/Cypriot (Kition, Idalion). He is included as a real, citable figure but his Carthaginian presence is NOT over-claimed. SOLITARY: no Punic kinship attested. The Apollo interpretatio is recorded here, not wired as a relation (counterpart not in this batch). On the literature: the first monograph is Fulco (1976); the dedicated Lipiński study is Resheph (2009); Xella's treatment is the DDD entry (1999); the current standard overall is Münnich (2013)."
+ }
+]
+```
+
+SOLITARY (no kin edge asserted, with cited reason):
+  - punic_eshmun  — paired in cult with Astarte at Sidon, but no Punic kinship is attested at
+    Carthage; the late youth-revival myth (Damascius via Photius, cod. 242) and the Sydyk/
+    Kabeiroi schema (Philo of Byblos) are noted, not wired.
+  - punic_astarte — assimilated to Tanit at Carthage (Tanit-Astarte) and paired with Melqart at
+    Tyre, but the Tanit-hypostasis question is contested and no Carthaginian kinship is attested,
+    so no identity/kin edge is wired.
+  - punic_baal_shamem — no attested Punic kin.
+  - punic_resheph — no attested Punic kin; and no secure Reshef cult in the Punic cities (Xella).
+
+RELATIONS WITHIN BATCH (reciprocated):
+  - punic_baal_hammon  spouse      punic_tanit          ⇄  punic_tanit  spouse  punic_baal_hammon
+  - punic_melqart      father-of   punic_sid            ⇄  punic_sid    son-of  punic_melqart
+
+INTERPRETATIO RECORDED IN NOTES/EPITHETS (NOT wired — counterparts not in this batch):
+  Baal Hammon = Kronos/Saturn; Tanit = Iuno/Dea Caelestis (Artemis); Melqart = Herakles/Hercules;
+  Eshmun = Asklepios/Aesculapius; Sid = Sardus Pater; Astarte = Aphrodite/Venus; Baal Shamem =
+  Zeus/Caelus; Reshef = Apollo.
+
+ERA ASSIGNMENT:
+  primordial — punic_baal_hammon, punic_tanit, punic_eshmun, punic_astarte, punic_baal_shamem,
+               punic_resheph (the great gods as timeless epigraphic powers; no birth-narrative).
+  mythic     — punic_melqart (death-and-egersis cycle), punic_sid (eponymous hero, son of Melqart).
