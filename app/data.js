@@ -216742,7 +216742,8 @@ const NEW_FIGURES = [
    ],
    "transliterations": {
     "niv": "Тол ыз",
-    "rom": "Tol yz"
+    "rom": "Tol yz",
+    "etymology": "Nivkh tol 'sea/water' + yz (yzng) 'master-spirit / owner of a natural domain'; hence 'the master of the sea', the counterpart of the mountain-master Pal-yz'."
    }
   },
   "type": "deity",
@@ -216840,7 +216841,7 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Spirit-class master-of-the-sea (classed as deity). tol = sea/water; yz = master-spirit. Forms with Pal-yz' the basic land/sea pair of the Nivkh animist cosmology recorded by Shternberg."
+  "notes": "Spirit-class master-of-the-sea (classed as deity). Forms with Pal-yz' the basic land/sea pair of the Nivkh animist cosmology recorded by Shternberg."
  },
  {
   "id": "nokomis",
@@ -278478,6 +278479,452 @@ const NEW_FIGURES = [
   "notes": "She-wolf ancestress of the Ashina dynasty of the Göktürks."
  },
  {
+  "id": "turkic_ay_han",
+  "name": {
+   "primary": "Moon Khan",
+   "alt": [
+    "Ay Han",
+    "Ay Khan"
+   ],
+   "transliterations": {
+    "old-turkic": "Ay Qan",
+    "etymology": "Turkic ay 'moon' + qan/han 'khan'; the second son of Oghuz Khagan and twin of Sun (Gün), of the senior Bozok wing."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "turkic_oghuz_khagan"
+  ],
+  "parentRoles": {
+   "turkic_oghuz_khagan": "father"
+  },
+  "temporal": {
+   "era": "legendary"
+  },
+  "domains": [
+   {
+    "sphereId": "eponymous-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ay",
+     "script": "Old Uyghur",
+     "rom": "Ay"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     }
+    ],
+    "notes": "Second son of Oghuz; through his four sons an ancestor of the Bozok tribes."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "golden-bow-share",
+    "kind": "regalia",
+    "name": "Piece of the golden bow",
+    "term": {
+     "value": "altun yā",
+     "script": "Old Uyghur",
+     "rom": "altun yā"
+    },
+    "role": "owner",
+    "notes": "One of the three elder sons who found and broke the golden bow, founding the senior Bozok wing.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Bozok",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abū al-Ghāzī Bahādur Khan, Shajara-i Tarākima (1659)"
+     }
+    ],
+    "notes": "Of the 'broken-bow' senior wing."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "turkic_gun_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ],
+    "notes": "Moon and Sun, the twin elder sons of Oghuz."
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_yildiz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_gok_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_dag_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_deniz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rashīd al-Dīn, Jāmiʿ al-tawārīkh (c. 1300–1310)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Second of Oghuz Khagan's six sons and twin of Sun (Gün); eponym of the Bozok wing alongside his brothers."
+ },
+ {
+  "id": "turkic_dag_han",
+  "name": {
+   "primary": "Mountain Khan",
+   "alt": [
+    "Dağ Han",
+    "Tağ Khan"
+   ],
+   "transliterations": {
+    "old-turkic": "Tağ Qan",
+    "etymology": "Turkic tağ/dağ 'mountain' + qan/han 'khan'; the fifth son of Oghuz Khagan, of the junior Üçok wing."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "turkic_oghuz_khagan"
+  ],
+  "parentRoles": {
+   "turkic_oghuz_khagan": "father"
+  },
+  "temporal": {
+   "era": "legendary"
+  },
+  "domains": [
+   {
+    "sphereId": "eponymous-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tağ",
+     "script": "Old Uyghur",
+     "rom": "Tağ"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     }
+    ],
+    "notes": "Fifth son of Oghuz; of the arrow-bearing Üçok trio."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "silver-arrow",
+    "kind": "regalia",
+    "name": "One of the three silver arrows",
+    "term": {
+     "value": "kümüš oq",
+     "script": "Old Uyghur",
+     "rom": "kümüš oq"
+    },
+    "role": "owner",
+    "notes": "One of the three younger sons given a silver arrow, founding the junior Üçok wing.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Üçok",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abū al-Ghāzī Bahādur Khan, Shajara-i Tarākima (1659)"
+     }
+    ],
+    "notes": "Of the 'three-arrows' junior wing."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "turkic_gun_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_ay_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_yildiz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_gok_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_deniz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rashīd al-Dīn, Jāmiʿ al-tawārīkh (c. 1300–1310)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Fifth of Oghuz Khagan's six sons; of the arrow-bearing Üçok wing."
+ },
+ {
+  "id": "turkic_deniz_han",
+  "name": {
+   "primary": "Sea Khan",
+   "alt": [
+    "Deniz Han",
+    "Deŋiz Khan",
+    "Tengiz Khan"
+   ],
+   "transliterations": {
+    "old-turkic": "Teŋiz Qan",
+    "etymology": "Turkic teŋiz/deniz 'sea' + qan/han 'khan'; the sixth and youngest son of Oghuz Khagan, of the junior Üçok wing."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "turkic_oghuz_khagan"
+  ],
+  "parentRoles": {
+   "turkic_oghuz_khagan": "father"
+  },
+  "temporal": {
+   "era": "legendary"
+  },
+  "domains": [
+   {
+    "sphereId": "eponymous-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Teŋiz",
+     "script": "Old Uyghur",
+     "rom": "Teŋiz"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     }
+    ],
+    "notes": "Sixth and youngest son of Oghuz; the last of the arrow-bearing Üçok trio."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "silver-arrow",
+    "kind": "regalia",
+    "name": "One of the three silver arrows",
+    "term": {
+     "value": "kümüš oq",
+     "script": "Old Uyghur",
+     "rom": "kümüš oq"
+    },
+    "role": "owner",
+    "notes": "Youngest of the three sons given a silver arrow, completing the junior Üçok wing.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Üçok",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abū al-Ghāzī Bahādur Khan, Shajara-i Tarākima (1659)"
+     }
+    ],
+    "notes": "Of the 'three-arrows' junior wing."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "turkic_gun_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_ay_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_yildiz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_gok_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_dag_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rashīd al-Dīn, Jāmiʿ al-tawārīkh (c. 1300–1310)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Sixth and youngest of Oghuz Khagan's six sons; completes the arrow-bearing Üçok wing and the famous Bozok/Üçok division of the Oghuz."
+ },
+ {
   "id": "turkic_erlik",
   "name": {
    "primary": "Erlik",
@@ -278581,6 +279028,312 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "First man and rebel; lord of darkness, opposite of Ülgen."
+ },
+ {
+  "id": "turkic_gok_han",
+  "name": {
+   "primary": "Sky Khan",
+   "alt": [
+    "Gök Han",
+    "Kök Khan"
+   ],
+   "transliterations": {
+    "old-turkic": "Kök Qan",
+    "etymology": "Turkic kök/gök 'sky, blue' + qan/han 'khan'; the fourth son of Oghuz Khagan and eponym of the junior Üçok wing."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "turkic_oghuz_khagan"
+  ],
+  "parentRoles": {
+   "turkic_oghuz_khagan": "father"
+  },
+  "temporal": {
+   "era": "legendary"
+  },
+  "domains": [
+   {
+    "sphereId": "eponymous-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kök",
+     "script": "Old Uyghur",
+     "rom": "Kök"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     }
+    ],
+    "notes": "Fourth son of Oghuz; eldest of the arrow-bearing Üçok trio."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "silver-arrow",
+    "kind": "regalia",
+    "name": "One of the three silver arrows",
+    "term": {
+     "value": "kümüš oq",
+     "script": "Old Uyghur",
+     "rom": "kümüš oq"
+    },
+    "role": "owner",
+    "notes": "Oghuz gave his three younger sons three silver arrows — the origin of the junior Üçok ('three arrows') wing, subordinate at the feast to the bow-bearing Bozok.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rashīd al-Dīn, Jāmiʿ al-tawārīkh (c. 1300–1310), Oghuz section"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Üçok",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abū al-Ghāzī Bahādur Khan, Shajara-i Tarākima (1659)"
+     }
+    ],
+    "notes": "The 'three-arrows' junior wing of the Oghuz, descended from the three younger sons (Sky, Mountain, Sea)."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "turkic_gun_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_ay_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_yildiz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_dag_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_deniz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rashīd al-Dīn, Jāmiʿ al-tawārīkh (c. 1300–1310)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Fourth of Oghuz Khagan's six sons; eponym of the arrow-bearing Üçok wing."
+ },
+ {
+  "id": "turkic_gun_han",
+  "name": {
+   "primary": "Sun Khan",
+   "alt": [
+    "Gün Han",
+    "Gün Khan",
+    "Kün Khan"
+   ],
+   "transliterations": {
+    "old-turkic": "Kün Qan",
+    "etymology": "Turkic kün/gün 'sun' + qan/han 'khan'; the eldest son of Oghuz Khagan and eponym of the senior Bozok wing of the Oghuz."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "turkic_oghuz_khagan"
+  ],
+  "parentRoles": {
+   "turkic_oghuz_khagan": "father"
+  },
+  "temporal": {
+   "era": "legendary"
+  },
+  "domains": [
+   {
+    "sphereId": "eponymous-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kün",
+     "script": "Old Uyghur",
+     "rom": "Kün"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     }
+    ],
+    "notes": "Eldest son of Oghuz; through his own four sons the ancestor of four of the twenty-four Oghuz tribes."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "golden-bow-share",
+    "kind": "regalia",
+    "name": "Piece of the golden bow",
+    "term": {
+     "value": "altun yā",
+     "script": "Old Uyghur",
+     "rom": "altun yā"
+    },
+    "role": "owner",
+    "notes": "Oghuz set his three elder sons to find a golden bow; they broke it in three and each took a piece — the origin of the senior Bozok ('broken bow') wing and its precedence at the feast and in the hunt.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rashīd al-Dīn, Jāmiʿ al-tawārīkh (c. 1300–1310), Oghuz section"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Bozok",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abū al-Ghāzī Bahādur Khan, Shajara-i Tarākima (1659)"
+     }
+    ],
+    "notes": "The 'broken-bow' senior wing of the Oghuz, descended from the three elder sons (Sun, Moon, Star)."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "turkic_ay_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ],
+    "notes": "Sun and Moon, the twin elder sons of Oghuz."
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_yildiz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_gok_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_dag_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_deniz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rashīd al-Dīn, Jāmiʿ al-tawārīkh (c. 1300–1310)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eldest of Oghuz Khagan's six sons and, with his twin Moon (Ay), one of the two senior sons; eponym of the Bozok wing. In the Oghuznāme the elder three sons receive the golden bow, the younger three the silver arrows."
  },
  {
   "id": "turkic_kayra",
@@ -279484,6 +280237,154 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "The sacred 'Holy Earth-Water' (ıduq Yer-Sub) of the Orkhon inscriptions, ranked immediately below Tengri among the powers who ordain Turkic victory and survival. A composite earth-and-water numen — at once the single Holy Land-and-Water and the plurality of local mountain, spring and grove spirits — surviving in the Kazakh and Kyrgyz Jer-Suu and the Altai cult of the land-and-water masters."
+ },
+ {
+  "id": "turkic_yildiz_han",
+  "name": {
+   "primary": "Star Khan",
+   "alt": [
+    "Yıldız Han",
+    "Yultuz Khan"
+   ],
+   "transliterations": {
+    "old-turkic": "Yultuz Qan",
+    "etymology": "Turkic yultuz/yıldız 'star' + qan/han 'khan'; the third son of Oghuz Khagan, of the senior Bozok wing."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Tengrist",
+  "primaryTradition": "Tengrist",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "turkic_oghuz_khagan"
+  ],
+  "parentRoles": {
+   "turkic_oghuz_khagan": "father"
+  },
+  "temporal": {
+   "era": "legendary"
+  },
+  "domains": [
+   {
+    "sphereId": "eponymous-ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Yultuz",
+     "script": "Old Uyghur",
+     "rom": "Yultuz"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     }
+    ],
+    "notes": "Third son of Oghuz; the youngest of the bow-bearing Bozok trio."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "golden-bow-share",
+    "kind": "regalia",
+    "name": "Piece of the golden bow",
+    "term": {
+     "value": "altun yā",
+     "script": "Old Uyghur",
+     "rom": "altun yā"
+    },
+    "role": "owner",
+    "notes": "Third of the elder sons who shared the broken golden bow of the Bozok wing.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Bozok",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abū al-Ghāzī Bahādur Khan, Shajara-i Tarākima (1659)"
+     }
+    ],
+    "notes": "Of the 'broken-bow' senior wing."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "turkic_gun_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_ay_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_gok_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_dag_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "turkic_deniz_han",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Oghuz Khagan epic)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Oghuznāme (Uyghur Oghuz Khagan epic), 13th–14th c."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rashīd al-Dīn, Jāmiʿ al-tawārīkh (c. 1300–1310)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Third of Oghuz Khagan's six sons; with Sun and Moon completes the bow-bearing Bozok wing."
  },
  {
   "id": "udmurt_gudyri_mumy",
