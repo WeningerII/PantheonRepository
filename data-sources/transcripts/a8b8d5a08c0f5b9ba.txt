@@ -3309,6 +3309,11 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
   "sex": "female",
   "vitalStatus": "living",
   "parentIds": ["greek_hesiod_pallas_titan"],
+  "relations": [
+   {"kind": "sibling", "personId": "greek_hesiod_zelus", "sources": [{"kind": "secondary", "reference": "Hesiod, Theogony 383-385"}]},
+   {"kind": "sibling", "personId": "greek_hesiod_kratos", "sources": [{"kind": "secondary", "reference": "Hesiod, Theogony 383-385"}]},
+   {"kind": "sibling", "personId": "greek_hesiod_bia", "sources": [{"kind": "secondary", "reference": "Hesiod, Theogony 383-385"}]}
+  ],
   "temporal": {
    "era": "titanomachy"
   },

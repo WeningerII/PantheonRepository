@@ -1,0 +1,708 @@
+PANTHEON REGISTRY — OFFSPRING-AUTHORING TRANSCRIPT
+Cluster: children of Kanyarwanda (banyaruanda_kanyarwanda)
+Tradition: Banyaruanda (Rwanda)
+Era (registered, exact, used for every child): "heroic-age"
+Parent: banyaruanda_kanyarwanda (Kanyarwanda I Gahima, son of Gihanga), type quartigod.
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+The three eponymous ancestors of the Tutsi, Hutu and Twa — GATUTSI, GAHUTU and GATWA —
+are firmly attested in the Rwandan dynastic-and-origin tradition but were NOT yet authored
+as separate corpus entries (they appear only inside the `notes`/`lifecycle` prose of
+banyaruanda_kanyarwanda and banyaruanda_kazikamuntu). They are authored here as three new
+figures, wired as sons of Kanyarwanda and siblings of one another.
+
+VERIFICATION (genuine absence). GREP of app/data.js and data-sources/transcripts/ for the
+bare names (Gatutsi/Gahutu/Gatwa, plus Katutsi/Kahutu/Katwa) and for the prefixed ids
+banyaruanda_gatutsi / banyaruanda_gahutu / banyaruanda_gatwa returns ONLY mentions inside
+existing figures' prose (Kanyarwanda's and Kazikamuntu's notes/lifecycle). No standalone
+entry exists for any of the three. They are therefore genuinely absent and authored in full.
+
+SOURCES. The chief modern source is Jacques J. Maquet, *The Premise of Inequality in Ruanda:
+A Study of Political Relations in a Central African Kingdom* (Oxford Univ. Press, for the
+International African Institute, 1961), which records the origin tale of the three sons and
+the destiny-allotment by which their inequality was sacralised. The dynastic frame
+(Gihanga → Kanyarwanda Gahima) follows Alexis Kagame, *Inganji Karinga*, and Jan Vansina,
+*Antecedents to Modern Rwanda: The Nyiginya Kingdom* (Univ. of Wisconsin Press, 2004; his
+English version of *Le Rwanda ancien: Le royaume nyiginya*, 2001). Earlier Bantu-myth
+attestation: A. C. Werner, *Myths and Legends of the Bantu* (London: Harrap, 1933), ch. VIII.
+The widely-cited synthesis of the variant fatherhoods (Gihanga / Kanyarwanda / Kazikamuntu /
+Kigwa) and the milk-pot test is collected at "Origins of Hutu, Tutsi and Twa" (Wikipedia),
+which cites Maquet and the Rwandan oral tradition.
+
+THE MYTH (as authored). A primordial father — named variously as Gihanga, his son
+Kanyarwanda Gahima, the first man Kazikamuntu, or the celestial Kigwa — set his three sons
+a test of vigilance (in the best-known version each is given a pot of milk to guard
+overnight). Gatwa drank his milk; Gahutu fell asleep and let his pot spill; only Gatutsi
+kept watch and preserved his. The father therefore made Gatutsi his successor and lord of
+cattle, set Gahutu to serve his brother (acquiring cattle only through that service), and
+consigned Gatwa to the margins of society. In the parallel Kazikamuntu telling already in
+the corpus, Gahutu likewise fails by falling asleep over an assigned task, Gatutsi is chosen
+as the sober and clever chief, and Gatwa is CURSED for killing one of his brothers — i.e.
+Gatwa does not merely lose but is cursed/expelled. This allotment of destinies is the
+myth's etiological core: it sacralises the precolonial Tutsi–Hutu–Twa hierarchy.
+
+WIRING DECISION (per instructions; founder-ancestors).
+  - parentIds: ["banyaruanda_kanyarwanda"] (parentRoles {father}) for each of the three —
+    Kanyarwanda Gahima is the cluster parent; the directed son-of edge is set to him. No
+    second parent (mother) is individuated/registered in the tradition, so none is wired.
+  - sibling → each of the other two new sons (reciprocated WITHIN this batch).
+  - VARIANT NOTE recorded in each figure: a variant tradition makes the three the sons of
+    the first man Kazikamuntu (banyaruanda_kazikamuntu) instead of Kanyarwanda (and still
+    other variants name Gihanga or Kigwa). This is stated in `notes` but, to avoid asserting
+    two competing directed parent edges, only the cluster parent Kanyarwanda is wired in
+    parentIds; the Kazikamuntu variant is documented, not double-wired.
+
+TYPE BY DESCENT (anti-drift / anti-inversion). Kanyarwanda is a quartigod (divinity
+fraction 0.25); the unnamed, unregistered second parent counts as mortal (0); the child
+fraction is therefore (0.25 + 0)/2 = 0.125, which by the bands alone would fall in the
+scion range (0.046–0.1875). HOWEVER these three are the eponymous TRIBAL FOUNDERS of the
+Tutsi, Hutu and Twa, which the authoring rule directs be authored as "mortal" regardless;
+the parallel canonical strand likewise makes them sons of the MORTAL first man Kazikamuntu;
+and the tie-break instruction is to pick the LOWER tier when unsure (mortal < scion).
+All three are accordingly authored as type = "mortal". era = "heroic-age" (the cluster era),
+which keeps each child no earlier than the quartigod parent. The reasoning is recorded in
+each figure's notes.
+
+LIFECYCLE. Each son undergoes the destiny-allotment transformation (made chief / made
+servant / cursed-and-cast-out), and all three are deceased founding ancestors, so a
+lifecycle stage is recorded for each, with era EXACTLY "heroic-age". Gatwa's stage records
+the curse/expulsion (the "transform/fall" event) explicitly.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "banyaruanda_gatutsi",
+  "name": {
+   "primary": "Gatutsi",
+   "alt": [
+    "Gatusi",
+    "Katutsi",
+    "Gatwitsi"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Gatutsi",
+    "etymology": "Kinyarwanda Gatutsi, the eponymous ancestor whose name underlies Umututsi / Abatutsi (Tutsi); ga- diminutive/personal prefix on the -tutsi root by which the pastoralist group is named."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "banyaruanda_kanyarwanda"
+  ],
+  "parentRoles": {
+   "banyaruanda_kanyarwanda": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-test-of-the-sons-and-allotment-of-destinies",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (Oxford Univ. Press / International African Institute, 1961)."
+     }
+    ],
+    "notes": "Son of the eponymous king Kanyarwanda Gahima (son of Gihanga). In the origin tale the father sets his three sons a test of vigilance — in the best-known version each is given a pot of milk to guard overnight. Gatwa drinks his, Gahutu falls asleep and lets his spill, and only Gatutsi keeps watch and preserves his. For his vigilance Gatutsi is made the father's successor — the sober and clever chief — and lord of cattle; the Tutsi pastoralist group descends from and is named after him."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-eponym",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Gatutsi",
+     "script": "Latin",
+     "rom": "Gatutsi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "Eponymous founding ancestor of the Tutsi (Abatutsi)."
+   },
+   {
+    "sphereId": "chiefship-and-cattle",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ],
+    "notes": "Chosen as chief/successor and lord of cattle in the allotment of destinies; the etiology of Tutsi pastoral lordship."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "keep-vigil-over-the-milk",
+    "name": "Keeps faithful vigil over the entrusted milk",
+    "term": {
+     "value": "",
+     "script": "Latin",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "In the test of the sons he alone stays awake and guards his pot of milk through the night, winning the chiefship; the act is personal, not an inherited divine power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ]
+   },
+   {
+    "id": "found-the-tutsi-line",
+    "name": "Founds and gives his name to the Tutsi",
+    "term": {
+     "value": "",
+     "script": "Latin",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Eponymous ancestor from whom the Tutsi pastoralists are reckoned to descend and after whom they are named.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "gatutsi-milk-pot",
+    "kind": "implement",
+    "name": "Pot of milk of the test",
+    "term": {
+     "value": "",
+     "script": "Latin",
+     "rom": ""
+    },
+    "role": "guarded",
+    "notes": "The pot of milk each son was given to watch overnight; Gatutsi's was kept whole, the token of his fitness to rule (milk and cattle being the emblem of Tutsi lordship).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ]
+   },
+   {
+    "id": "gatutsi-cattle",
+    "kind": "regalia",
+    "name": "Cattle of chiefship",
+    "term": {
+     "value": "inka",
+     "script": "Latin",
+     "rom": "inka"
+    },
+    "role": "possessed",
+    "notes": "The cattle and pastoral wealth awarded to Gatutsi as chief; the Hutu could acquire cattle only through service to him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the sober and clever son",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_gahutu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "Brother and fellow son of Kanyarwanda; Gahutu was set to serve Gatutsi in the allotment."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_gatwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "Brother and fellow son of Kanyarwanda; Gatwa was consigned to the margins (and in the Kazikamuntu variant cursed for killing a brother)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Gatutsi, son of the eponym Kanyarwanda Gahima (variantly of Gihanga, Kazikamuntu or Kigwa), is the eponymous ancestor of the Tutsi; in the origin tale he alone keeps vigil over his entrusted milk and is therefore made chief and lord of cattle.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda: A Study of Political Relations in a Central African Kingdom (Oxford Univ. Press / International African Institute, 1961)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (Univ. of Wisconsin Press, 2004)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. C. Werner, Myths and Legends of the Bantu (London: Harrap, 1933), ch. VIII; Origins of Hutu, Tutsi and Twa (Rwandan oral tradition)."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Gatutsi, eponymous ancestor of the Tutsi and the son chosen as chief in the allotment of destinies. Authored as a son (parentId) of banyaruanda_kanyarwanda and sibling of banyaruanda_gahutu and banyaruanda_gatwa (reciprocated in-batch). VARIANT: a parallel tradition makes the three the sons of the first man Kazikamuntu (banyaruanda_kazikamuntu) instead of Kanyarwanda (still others name Gihanga or the celestial Kigwa); this is documented here but only the cluster parent Kanyarwanda is wired in parentIds to avoid asserting competing directed edges. Type = mortal: an eponymous TRIBAL FOUNDER (authored mortal by rule), with descent that otherwise computes to scion (quartigod father 0.25 + mortal unregistered mother 0, /2 = 0.125) and a parallel strand of mortal descent from Kazikamuntu — lower tier chosen. era heroic-age = the cluster era."
+ },
+ {
+  "id": "banyaruanda_gahutu",
+  "name": {
+   "primary": "Gahutu",
+   "alt": [
+    "Kahutu",
+    "Gahutsi",
+    "Mututsi-Gahutu"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Gahutu",
+    "etymology": "Kinyarwanda Gahutu, the eponymous ancestor whose name underlies Umuhutu / Abahutu (Hutu); ga- diminutive/personal prefix on the -hutu root by which the cultivator group is named."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "banyaruanda_kanyarwanda"
+  ],
+  "parentRoles": {
+   "banyaruanda_kanyarwanda": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-test-of-the-sons-and-allotment-of-destinies",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (Oxford Univ. Press / International African Institute, 1961)."
+     }
+    ],
+    "notes": "Son of the eponymous king Kanyarwanda Gahima (son of Gihanga). In the test of the sons Gahutu falls asleep over the assigned task — in the milk-pot version he lets his pot spill — and so fails the trial. He is therefore made the servant of his brother Gatutsi, permitted to acquire cattle only through that service; the Hutu cultivator group descends from and is named after him. (In some tellings the father first chose Gahutu as successor, but his sleep cost him the chiefship.)"
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-eponym",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Gahutu",
+     "script": "Latin",
+     "rom": "Gahutu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "Eponymous founding ancestor of the Hutu (Abahutu)."
+   },
+   {
+    "sphereId": "cultivation-and-service",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ],
+    "notes": "Allotted the station of servant/cultivator under his brother Gatutsi; the etiology of the Hutu's agrarian and clientary role."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-the-hutu-line",
+    "name": "Founds and gives his name to the Hutu",
+    "term": {
+     "value": "",
+     "script": "Latin",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Eponymous ancestor from whom the Hutu cultivators are reckoned to descend and after whom they are named.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   },
+   {
+    "id": "fail-the-vigil-by-sleep",
+    "name": "Fails the night vigil by falling asleep",
+    "term": {
+     "value": "",
+     "script": "Latin",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "In the test of the sons he sleeps and lets his milk spill, forfeiting the chiefship and being set to serve his brother; a narrated act, not an inherited divine power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "gahutu-milk-pot",
+    "kind": "implement",
+    "name": "Pot of milk of the test",
+    "term": {
+     "value": "",
+     "script": "Latin",
+     "rom": ""
+    },
+    "role": "spilled",
+    "notes": "The pot of milk Gahutu was given to guard; he fell asleep and let it spill, the token of his loss of the chiefship.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ]
+   },
+   {
+    "id": "gahutu-hoe",
+    "kind": "implement",
+    "name": "Hoe of the cultivator",
+    "term": {
+     "value": "isuka",
+     "script": "Latin",
+     "rom": "isuka"
+    },
+    "role": "wielded",
+    "notes": "The hoe emblematic of the Hutu agrarian station to which Gahutu and his descendants were allotted under Tutsi lordship.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the brother set to serve",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_gatutsi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "Brother and fellow son of Kanyarwanda; Gahutu was set to serve the chosen chief Gatutsi."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_gatwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "Brother and fellow son of Kanyarwanda; in the Kazikamuntu variant Gatwa is cursed for killing one of his brothers."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Gahutu, son of the eponym Kanyarwanda Gahima (variantly of Gihanga, Kazikamuntu or Kigwa), is the eponymous ancestor of the Hutu; in the origin tale he fails the night vigil by falling asleep (letting his milk spill) and is therefore made the servant of his brother Gatutsi.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda: A Study of Political Relations in a Central African Kingdom (Oxford Univ. Press / International African Institute, 1961)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (Univ. of Wisconsin Press, 2004)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. C. Werner, Myths and Legends of the Bantu (London: Harrap, 1933), ch. VIII; Origins of Hutu, Tutsi and Twa (Rwandan oral tradition)."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Gahutu, eponymous ancestor of the Hutu and the son who failed the vigil by sleeping and was set to serve his brother. Authored as a son (parentId) of banyaruanda_kanyarwanda and sibling of banyaruanda_gatutsi and banyaruanda_gatwa (reciprocated in-batch). VARIANT: a parallel tradition makes the three the sons of the first man Kazikamuntu (banyaruanda_kazikamuntu) instead of Kanyarwanda (still others name Gihanga or the celestial Kigwa); documented here but only the cluster parent Kanyarwanda is wired in parentIds. Type = mortal: an eponymous TRIBAL FOUNDER (authored mortal by rule), descent otherwise computing to scion (quartigod father 0.25 + mortal unregistered mother 0, /2 = 0.125) with a parallel strand of mortal descent from Kazikamuntu — lower tier chosen. era heroic-age = the cluster era."
+ },
+ {
+  "id": "banyaruanda_gatwa",
+  "name": {
+   "primary": "Gatwa",
+   "alt": [
+    "Katwa",
+    "Gatwitsi",
+    "Gatwa-Mutwa"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Gatwa",
+    "etymology": "Kinyarwanda Gatwa, the eponymous ancestor whose name underlies Umutwa / Abatwa (Twa); ga- diminutive/personal prefix on the -twa root by which the hunter-gatherer and potter group is named."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "banyaruanda_kanyarwanda"
+  ],
+  "parentRoles": {
+   "banyaruanda_kanyarwanda": "father"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-test-of-the-sons-and-allotment-of-destinies",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (Oxford Univ. Press / International African Institute, 1961)."
+     }
+    ],
+    "notes": "Son of the eponymous king Kanyarwanda Gahima (son of Gihanga). In the test of the sons Gatwa drinks the milk he was set to guard (the gravest breach of the trust) and is therefore consigned to the fringe of society — neither chief nor servant but outsider. The Twa hunter-gatherers and potters descend from and are named after him."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-curse-and-expulsion-of-gatwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition); Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "In the Kazikamuntu strand of the tradition the father's judgement on Gatwa is sharpened into a CURSE: Gatwa is cursed for killing one of his brothers, and is cast out to the margins of society. This curse-and-expulsion fixes the Twa as the perpetual outsiders of the threefold order."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-eponym",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Gatwa",
+     "script": "Latin",
+     "rom": "Gatwa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "Eponymous founding ancestor of the Twa (Abatwa)."
+   },
+   {
+    "sphereId": "the-margins-and-the-forest",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ],
+    "notes": "Allotted (and in the Kazikamuntu variant cursed to) the outsider's station at the fringe of society; the etiology of the Twa as hunter-gatherers and potters outside the cattle-and-cultivation order."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-the-twa-line",
+    "name": "Founds and gives his name to the Twa",
+    "term": {
+     "value": "",
+     "script": "Latin",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Eponymous ancestor from whom the Twa are reckoned to descend and after whom they are named.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   },
+   {
+    "id": "break-the-trust-and-be-cast-out",
+    "name": "Breaks the trust and is cast to the margins",
+    "term": {
+     "value": "",
+     "script": "Latin",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "In the test he drinks the entrusted milk and (in the Kazikamuntu variant) kills a brother, and is cursed and expelled to the fringe of society; a narrated act and judgement, not an inherited divine power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "gatwa-milk-pot",
+    "kind": "implement",
+    "name": "Pot of milk of the test",
+    "term": {
+     "value": "",
+     "script": "Latin",
+     "rom": ""
+    },
+    "role": "consumed",
+    "notes": "The pot of milk Gatwa was given to guard; he drank it, the breach of trust that consigned him to the margins.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition, after Maquet 1961)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the cursed and cast-out brother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (Rwandan oral tradition); Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_gatutsi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "Brother and fellow son of Kanyarwanda; Gatutsi was made chief over the threefold order from which Gatwa was excluded."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_gahutu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "Brother and fellow son of Kanyarwanda; in the Kazikamuntu variant Gatwa is cursed for killing one of his brothers."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Gatwa, son of the eponym Kanyarwanda Gahima (variantly of Gihanga, Kazikamuntu or Kigwa), is the eponymous ancestor of the Twa; in the origin tale he drinks the entrusted milk (and in the Kazikamuntu variant is cursed for killing a brother) and is therefore cast to the margins of society.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda: A Study of Political Relations in a Central African Kingdom (Oxford Univ. Press / International African Institute, 1961)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (Univ. of Wisconsin Press, 2004)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. C. Werner, Myths and Legends of the Bantu (London: Harrap, 1933), ch. VIII; Origins of Hutu, Tutsi and Twa (Rwandan oral tradition)."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Gatwa, eponymous ancestor of the Twa and the son cast to the margins (in the Kazikamuntu variant cursed for killing a brother). Authored as a son (parentId) of banyaruanda_kanyarwanda and sibling of banyaruanda_gatutsi and banyaruanda_gahutu (reciprocated in-batch). VARIANT: a parallel tradition makes the three the sons of the first man Kazikamuntu (banyaruanda_kazikamuntu) instead of Kanyarwanda (still others name Gihanga or the celestial Kigwa); documented here but only the cluster parent Kanyarwanda is wired in parentIds. Type = mortal: an eponymous TRIBAL FOUNDER (authored mortal by rule), descent otherwise computing to scion (quartigod father 0.25 + mortal unregistered mother 0, /2 = 0.125) with a parallel strand of mortal descent from Kazikamuntu — lower tier chosen. era heroic-age = the cluster era. A lifecycle 'transform' stage records the curse/expulsion."
+ }
+]
+```
+
+================================================================================
+WIRING NOTES
+================================================================================
+
+PARENT EDGE (directed; no reciprocal authored here — surfaced for the maintainer):
+  - banyaruanda_gatutsi  child of  banyaruanda_kanyarwanda  (father)
+  - banyaruanda_gahutu   child of  banyaruanda_kanyarwanda  (father)
+  - banyaruanda_gatwa    child of  banyaruanda_kanyarwanda  (father)
+  RECIPROCAL-NEEDED on banyaruanda_kanyarwanda: add father-of edges to the three new sons
+  (Kanyarwanda's existing notes already state the three sons are attributed to him).
+
+SIBLING EDGES (symmetric; reciprocated WITHIN this batch — complete):
+  - banyaruanda_gatutsi  sibling  banyaruanda_gahutu / banyaruanda_gatwa
+  - banyaruanda_gahutu   sibling  banyaruanda_gatutsi / banyaruanda_gatwa
+  - banyaruanda_gatwa    sibling  banyaruanda_gatutsi / banyaruanda_gahutu
+
+VARIANT PARENTAGE (documented, NOT wired as a second directed parent edge to avoid
+competing edges): a variant tradition makes the three the sons of Kazikamuntu
+(banyaruanda_kazikamuntu); still other variants name Gihanga or the celestial Kigwa.

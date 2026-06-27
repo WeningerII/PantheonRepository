@@ -1,0 +1,553 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Chinese (vernacular-Daoist / Buddhist syncretism of the Ming novels)
+Era (registered, exact): "mythic"
+Cluster: children of Li Jing (chinese_li_jing, type deity, Chinese).
+Author pass: the two elder brothers of Nezha — JINZHA and MUZHA — sons of Li Jing the
+Pagoda-Bearing Heavenly King by his wife Lady Yin, disciples of immortals in the Ming novel
+Fengshen Yanyi (Investiture of the Gods).
+
+EXISTING FIGURES (NOT re-authored; referenced by id):
+  - chinese_li_jing   (Li Jing — Pagoda-Bearing Heavenly King; the cluster parent; deity)
+  - chinese_nezha     (Nezha — lotus-reborn child-god; the youngest brother; deity)
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+The locus classicus for the three brothers is the Ming vernacular novel *Fengshen Yanyi*
+(*Investiture of the Gods*, 封神演義, attributed to Xu Zhonglin / Lu Xixing, c. 1567–1620),
+which makes Jinzha (金吒), Muzha (木吒) and Nezha (哪吒) the three sons of the Chentang-Pass
+commander Li Jing (李靖) by his wife Lady Yin (殷夫人). The brothers leave home to study under
+Chan-Daoist immortals of the Chan ("Explanation") sect and return to fight for the Zhou
+against the Shang under Jiang Ziya (姜子牙). Muzha is carried further into *Xiyouji*
+(*Journey to the West*, 西遊記, Wu Cheng'en, c. 1592), where as Guanyin's disciple Hui'an
+(惠岸) he helps subdue Sun Wukong and the demon Red Boy. The standard modern scholarship on
+the family and its Buddhist substrate is Meir Shahar, *Oedipal God: The Chinese Nezha and His
+Indian Origins* (Univ. of Hawai'i Press, 2015); the corpus already cites Shahar for Li Jing
+(= Vaiśravaṇa) and Nezha (= Nalakūbara). The brothers' Buddhist afterlives — Muzha as Guanyin's
+attendant Hui'an, and the wider identification of the trio with the bodhisattva-disciples of
+the Chan masters (Wenshu/Mañjuśrī, Puxian/Samantabhadra, Cihang/Guanyin) — are recorded in the
+Ming "Three Religions" pantheon material and summarized in the reference literature.
+
+WIRING DECISION. Both figures are wired as sons of the cluster parent Li Jing
+(parentIds: ["chinese_li_jing"], parentRoles {father}). Their mother, Lady Yin (殷夫人), is
+NOT a registered figure (no id resolves in the corpus), so per the brief she is left
+unregistered and is not added to parentIds; she is named in notes/etymology only. The two are
+wired as siblings of each other (RECIPROCAL within this batch) and each carries a one-way
+sibling edge to the already-existing youngest brother chinese_nezha (chinese_nezha presently
+has no `relations` array, so the reciprocal on Nezha is left for the orchestrator to add).
+
+TYPE BY DESCENT. Li Jing is a deity (divinity fraction 1.0); the second parent, Lady Yin, is
+an unregistered mortal (0.0). Average = (1.0 + 0.0) / 2 = 0.5, which falls in the demigod band
+(0.375–0.75). Both brothers are therefore authored as type = "demigod" (matching their
+youngest brother's half-divine, immortal-disciple standing while respecting the descent rule;
+where unsure the LOWER tier is taken, and demigod is the band value, not a promotion).
+
+LIFECYCLE. Per the rule that lifecycle is recorded only for figures who die or transform:
+  - MUZHA receives a lifecycle: he genuinely transforms across the two novels, translated from
+    a Daoist disciple of Puxian Zhenren (Fengshen Yanyi) into the Buddhist attendant-bodhisattva
+    Hui'an / Mucha, disciple of Guanyin (Journey to the West). Both lifecycle eras are exactly
+    "mythic".
+  - JINZHA receives NO lifecycle: in the sources he neither dies nor undergoes a
+    death/transformation — he remains an immortal Daoist disciple of Wenshu Guangfa Tianzun and
+    (already a cultivated immortal) is not even among the 365 invested on the Fengshen Bang. A
+    lifecycle entry would be unwarranted, so it is omitted (as it is for chinese_nezha).
+
+INHERITABILITY. None of the brothers' powers are blood-descent transmissions (they are
+acquired by discipleship from immortals, not inherited from Li Jing/Vaiśravaṇa), so every
+faculty is inheritability "none".
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "chinese_jinzha",
+  "name": {
+   "primary": "Jinzha",
+   "alt": [
+    "金吒",
+    "Jin Zha",
+    "Chin-cha",
+    "Kinsha",
+    "Eldest Son of Li Jing"
+   ],
+   "transliterations": {
+    "chinese-traditional": "金吒",
+    "chinese-simplified": "金吒",
+    "pinyin": "Jīnzhā",
+    "etymology": "金 jīn 'gold/metal' + 吒 zhā (a syllable shared by the three brothers' names, Jin-zha / Mu-zha / Ne-zha); 'the gold/metal -zha', the eldest of Li Jing's three sons by Lady Yin (殷夫人). The shared -吒 element follows the Buddhist-derived naming of the Nezha (Nalakūbara) cycle rather than the five-phases series a folk etymology expects."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Chinese",
+  "primaryTradition": "Chinese",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "chinese_li_jing"
+  ],
+  "parentRoles": {
+   "chinese_li_jing": "father"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "戰",
+     "script": "Chinese (hanzi)",
+     "rom": "zhàn"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620, ch. 14, 39"
+     }
+    ],
+    "notes": "Warrior-disciple of the Chan sect who fights for the Zhou against the Shang; helps subdue his rebellious brother Nezha and battles enemy adepts such as Wang Mo."
+   },
+   {
+    "sphereId": "guardianship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "護法",
+     "script": "Chinese (hanzi)",
+     "rom": "hùfǎ"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meir Shahar, Oedipal God: The Chinese Nezha and His Indian Origins (Univ. of Hawai'i Press, 2015)"
+     }
+    ],
+    "notes": "Dharma-protecting martial son of the Pagoda-Bearer's household; in the wider Three-Religions pantheon the brothers are guardian (hufa) figures attached to the bodhisattvas."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "jinzha-dunlong-stake",
+    "name": "Bind and subdue with the Dragon-Subduing Stake",
+    "term": {
+     "value": "遁龍樁",
+     "script": "Chinese (hanzi)",
+     "rom": "dùnlóng zhuāng"
+    },
+    "inheritability": "none",
+    "notes": "Wields the Dunlong (Dragon-Subduing) Stake granted by his master Wenshu Guangfa Tianzun — a binding magic-treasure of three linked rings used to trap and immobilize foes; an acquired immortal art, not inherited from Li Jing.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"
+     }
+    ]
+   },
+   {
+    "id": "jinzha-chan-arts",
+    "name": "Wield the Daoist sword-arts and spells of the Chan sect",
+    "term": {
+     "value": "道術",
+     "script": "Chinese (hanzi)",
+     "rom": "dàoshù"
+    },
+    "inheritability": "none",
+    "notes": "Trained by the immortal Wenshu Guangfa Tianzun (the Daoist form of the bodhisattva Mañjuśrī), Jinzha commands the talismanic spells and treasured sword of a cultivated Chan-sect adept.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620, ch. 14"
+     },
+     {
+      "kind": "reference_work",
+      "reference": "\"List of gods in the Investiture of the Gods,\" Wikipedia (the disciples of Wenshu Guangfa Tianzun, Puxian Zhenren and Cihang Zhenren of the Chan sect)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "jinzha-dunlong-zhuang",
+    "kind": "weapon",
+    "name": "Dragon-Subduing Stake",
+    "term": {
+     "value": "遁龍樁",
+     "script": "Chinese (hanzi)",
+     "rom": "dùnlóng zhuāng"
+    },
+    "role": "wielder",
+    "notes": "His signature magic-treasure, given by Wenshu Guangfa Tianzun: a three-ringed binding stake that snares an enemy's head, hands and feet. His defining attribute in Fengshen Yanyi.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"
+     }
+    ]
+   },
+   {
+    "id": "jinzha-treasured-sword",
+    "kind": "weapon",
+    "name": "Treasured sword of the Chan sect",
+    "term": {
+     "value": "寶劍",
+     "script": "Chinese (hanzi)",
+     "rom": "bǎojiàn"
+    },
+    "role": "wielder",
+    "notes": "The immortal's sword Jinzha bears as a disciple-warrior of Wenshu Guangfa Tianzun in the Zhou host.",
+    "sources": [
+     {
+      "kind": "reference_work",
+      "reference": "\"Jinzha,\" Wikipedia (disciple of Manjusri / Wenshu Guangfa Tianzun, wielding Daoist spells and a treasured sword)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "李靖長子",
+    "original": "李靖長子",
+    "language": "chinese",
+    "transliteration": "Lǐ Jìng zhǎngzǐ",
+    "contextTag": "narrative",
+    "notes": "'Eldest son of Li Jing'; his standing identifier as the firstborn of the Pagoda-Bearer's three sons.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "chinese_muzha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"
+     }
+    ],
+    "notes": "Younger brother; the second son of Li Jing and disciple of Puxian Zhenren."
+   },
+   {
+    "kind": "sibling",
+    "personId": "chinese_nezha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620, ch. 12–14"
+     }
+    ],
+    "notes": "Youngest brother (the lotus-reborn Nezha); Jinzha helps subdue the rampaging Nezha in ch. 14. One-way edge: chinese_nezha carries no relations array yet, so the reciprocal is to be added on Nezha."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620 (Jinzha, eldest son of Li Jing, disciple of Wenshu Guangfa Tianzun)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meir Shahar, Oedipal God: The Chinese Nezha and His Indian Origins (Univ. of Hawai'i Press, 2015)"
+     },
+     {
+      "kind": "reference_work",
+      "reference": "\"Jinzha,\" Wikipedia (eldest son of Li Jing and Lady Yin; elder brother of Muzha and Nezha)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eldest of Li Jing's three sons by Lady Yin and elder brother of Muzha and Nezha. Disciple of the Chan-sect immortal Wenshu Guangfa Tianzun (the Daoist form of the bodhisattva Mañjuśrī); wields the Dragon-Subduing Stake (遁龍樁) and a treasured sword for the Zhou against the Shang, helping subdue his brother Nezha (ch. 14) and fighting enemy adepts (e.g. Wang Mo, ch. 39). Already a cultivated immortal, he is not among the gods invested on the Fengshen Bang and survives the war. His mother is the Lady Yin (殷夫人)."
+ },
+ {
+  "id": "chinese_muzha",
+  "name": {
+   "primary": "Muzha",
+   "alt": [
+    "木吒",
+    "Mu Zha",
+    "Mucha",
+    "Moksha",
+    "Hui'an",
+    "Huian",
+    "Hui An",
+    "惠岸"
+   ],
+   "transliterations": {
+    "chinese-traditional": "木吒",
+    "chinese-simplified": "木吒",
+    "pinyin": "Mùzhā",
+    "buddhist-name": "惠岸 (Huì'àn, \"Beneficent Shore\"); also 木叉 (Mùchā), taken to render Sanskrit mokṣa / pratimokṣa",
+    "etymology": "木 mù 'wood' + 吒 zhā, the second of Li Jing's three sons by Lady Yin (殷夫人). The variant writing 木叉 Mùchā is read as a transcription of Buddhist mokṣa ('release, liberation') / pratimokṣa, in keeping with his Buddhist career as Guanyin's disciple Hui'an (惠岸)."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Chinese",
+  "primaryTradition": "Chinese",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "chinese_li_jing"
+  ],
+  "parentRoles": {
+   "chinese_li_jing": "father"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "戰",
+     "script": "Chinese (hanzi)",
+     "rom": "zhàn"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"
+     }
+    ],
+    "notes": "Sword-wielding disciple-warrior of the Chan sect in the Zhou host against the Shang."
+   },
+   {
+    "sphereId": "guardianship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "護法",
+     "script": "Chinese (hanzi)",
+     "rom": "hùfǎ"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592, ch. 6"
+     }
+    ],
+    "notes": "As Guanyin's attendant Hui'an, a dharma-protector who subdues demons and guards the pilgrimage."
+   },
+   {
+    "sphereId": "compassion-and-deliverance",
+    "contextTag": "ritual",
+    "term": {
+     "value": "惠岸",
+     "script": "Chinese (hanzi)",
+     "rom": "huì'àn"
+    },
+    "sources": [
+     {
+      "kind": "reference_work",
+      "reference": "\"Muzha (mythology),\" Wikipedia (dharma-name Hui'an, \"Beneficent Shore\"; the name Mucha 木叉 = mokṣa, 'liberation')"
+     }
+    ],
+    "notes": "His Buddhist persona of liberation/deliverance: dharma-name Hui'an ('Beneficent Shore'), the variant 木叉 read as mokṣa."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "muzha-wugou-swords",
+    "name": "Wield the paired Wu Gou swords",
+    "term": {
+     "value": "吳鉤雙劍",
+     "script": "Chinese (hanzi)",
+     "rom": "wúgōu shuāngjiàn"
+    },
+    "inheritability": "none",
+    "notes": "Fights with the twin Wu Gou (hook-bladed) swords granted by his master Puxian Zhenren; an acquired immortal art, not inherited from Li Jing.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"
+     }
+    ]
+   },
+   {
+    "id": "muzha-transformations",
+    "name": "Work shape-shifting transformations of the Chan sect",
+    "term": {
+     "value": "變化",
+     "script": "Chinese (hanzi)",
+     "rom": "biànhuà"
+    },
+    "inheritability": "none",
+    "notes": "Employs the magical transformations and talismanic arts learned from Puxian Zhenren in battle against the Shang adepts.",
+    "sources": [
+     {
+      "kind": "reference_work",
+      "reference": "\"Muzha (mythology),\" Wikipedia (disciple of Pu Xian Zhenren of Baihe/White-Crane Cave on Jiugong Mountain, employing shape-shifting transformations and magical weapons)"
+     }
+    ]
+   },
+   {
+    "id": "muzha-subdue-demons",
+    "name": "Subdue demons as Guanyin's attendant",
+    "term": {
+     "value": "降妖",
+     "script": "Chinese (hanzi)",
+     "rom": "xiángyāo"
+    },
+    "inheritability": "none",
+    "notes": "As Hui'an, wields an iron rod and assists Guanyin in binding fierce demons — Sun Wukong (ch. 6) and the fire-demon Red Boy (ch. 42–43).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592, ch. 6, 40–43"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "muzha-wugou-jian",
+    "kind": "weapon",
+    "name": "Wu Gou paired swords",
+    "term": {
+     "value": "吳鉤劍",
+     "script": "Chinese (hanzi)",
+     "rom": "wúgōu jiàn"
+    },
+    "role": "wielder",
+    "notes": "The twin hook-bladed swords bestowed by Puxian Zhenren; Muzha's defining weapon in Fengshen Yanyi.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"
+     }
+    ]
+   },
+   {
+    "id": "muzha-iron-rod",
+    "kind": "weapon",
+    "name": "Iron rod of Hui'an",
+    "term": {
+     "value": "鐵棍",
+     "script": "Chinese (hanzi)",
+     "rom": "tiěgùn"
+    },
+    "role": "wielder",
+    "notes": "The iron cudgel/rod he wields as Guanyin's disciple Hui'an in Journey to the West when sent to fight Sun Wukong and the demons of the road.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592, ch. 6"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "惠岸",
+    "original": "惠岸",
+    "language": "chinese",
+    "transliteration": "Huì'àn",
+    "contextTag": "buddhist",
+    "notes": "'Beneficent Shore', his dharma-name as the disciple-attendant of Guanyin in Journey to the West.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592"
+     }
+    ]
+   },
+   {
+    "epithetId": "木叉",
+    "original": "木叉",
+    "language": "chinese",
+    "transliteration": "Mùchā",
+    "contextTag": "buddhist",
+    "notes": "Variant writing of his name read as Sanskrit mokṣa / pratimokṣa ('liberation'); the basis of the English form 'Moksha'.",
+    "sources": [
+     {
+      "kind": "reference_work",
+      "reference": "\"Muzha (mythology),\" Wikipedia (Mucha 木叉, short for Pratimokṣa in Chinese; also rendered Moksha)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "chinese_jinzha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"
+     }
+    ],
+    "notes": "Elder brother; the eldest son of Li Jing and disciple of Wenshu Guangfa Tianzun."
+   },
+   {
+    "kind": "sibling",
+    "personId": "chinese_nezha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"
+     }
+    ],
+    "notes": "Youngest brother (the lotus-reborn Nezha). One-way edge: chinese_nezha carries no relations array yet, so the reciprocal is to be added on Nezha."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620 (Muzha, second son of Li Jing, disciple of Puxian Zhenren)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592, ch. 6, 40–43 (Muzha as Guanyin's disciple Hui'an)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meir Shahar, Oedipal God: The Chinese Nezha and His Indian Origins (Univ. of Hawai'i Press, 2015)"
+     },
+     {
+      "kind": "reference_work",
+      "reference": "\"Muzha (mythology),\" Wikipedia (second son of Li Jing and Lady Yin; Hui'an / Mucha / Moksha)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Second of Li Jing's three sons by Lady Yin and elder brother of Nezha (younger brother of Jinzha). In Fengshen Yanyi a disciple of the Chan-sect immortal Puxian Zhenren (Daoist form of the bodhisattva Samantabhadra) at White Crane Cave on Mount Jiugong, wielding the paired Wu Gou swords for the Zhou. In Journey to the West he is translated into the Buddhist attendant Hui'an (惠岸 / Mucha 木叉, 'Moksha'), disciple of Guanyin, who helps subdue Sun Wukong (ch. 6) and the demon Red Boy (ch. 42–43). This Daoist-to-Buddhist translation is a transformation rather than a death. His mother is the Lady Yin (殷夫人)."
+ }
+]
+```
+
+WIRED:
+  - chinese_jinzha  child of  chinese_li_jing  (father; directed parent edge, no reciprocal required)
+  - chinese_muzha   child of  chinese_li_jing  (father; directed parent edge, no reciprocal required)
+  - chinese_jinzha  sibling  chinese_muzha     (reciprocated in-batch)
+  - chinese_muzha   sibling  chinese_jinzha    (reciprocated in-batch)
+
+RECIPROCAL-NEEDED (symmetric ties to an existing corpus figure — add the reciprocal on the existing figure):
+  - chinese_jinzha  sibling  chinese_nezha   (add reciprocal sibling on chinese_nezha)
+  - chinese_muzha   sibling  chinese_nezha   (add reciprocal sibling on chinese_nezha)
+
+UNREGISTERED KIN (named in sources only; intentionally NOT wired):
+  - Lady Yin (殷夫人) — the mother of Jinzha, Muzha and Nezha. No id resolves in the corpus, so
+    per the brief she is left unregistered and is not added to parentIds; named in
+    etymology/notes only.
+
+NOTE ON SOURCES / ACCESS: en.wikipedia.org and grokipedia.com were blocked (HTTP 403) for
+direct fetch by the session egress policy, so the Wikipedia "Jinzha" and "Muzha (mythology)"
+articles and the "List of gods in the Investiture of the Gods" article are cited from their
+search-surfaced summaries (corroborated against Meir Shahar 2015 and the primary novels), not
+from a full-page fetch. All primary-text claims rest on Fengshen Yanyi and Xiyouji directly.

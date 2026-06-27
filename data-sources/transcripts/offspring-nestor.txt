@@ -1,0 +1,794 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Greek (the house of Neleus at Pylos; the Trojan-War generation)
+Era (registered, exact, used for every figure here): "trojan-war"
+Author pass: the missing sons of Nestor of Pylos — Antilochus, Thrasymedes, and
+Peisistratus — children of the existing figure greek_nestor.
+
+EXISTING FIGURES (NOT re-authored; referenced by id):
+  - greek_nestor   (Nestor, Gerenian horseman of Pylos; type=demigod, era=trojan-war,
+                    parentIds greek_neleus + greek_apollod_chloris). His prose notes
+                    already name "Antilochus and Thrasymedes (Trojan-War contingent) and
+                    Peisistratus" as his sons, so these three close an explicit gap.
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+PRESENCE CHECK (STEP 1). Grepped app/data.js and data-sources/transcripts/ for each child
+under both the bare name and the greek_<name> id (Antilochus/greek_antilochus,
+Thrasymedes/greek_thrasymedes, Peisistratus/Pisistratus/greek_peisistratus). NONE exists as
+an authored figure. The only hits are (a) prose mentions inside greek_nestor and
+greek_memnon ("Killed Antilochus son of Nestor at Troy"), and (b) an unrelated Pausanias
+citation to a sculptor named Thrasymedes. All three sons are therefore genuinely absent and
+are authored below.
+
+SECOND PARENT (the mother). Nestor's wife is named in two strands:
+  • Homer, Odyssey 3.451–452 — Eurydice, eldest daughter of Clymenus.
+  • Apollodorus, Library 1.9.9 — Anaxibia, daughter of Cratieus, who bore Nestor the
+    daughters Pisidice and Polycaste and the sons Perseus, Stratichus, Aretus, Echephron,
+    Peisistratus, Antilochus, and Thrasymedes.
+Neither mother is registered in the corpus (the existing greek_anaxibia_atreid is Agamemnon's
+sister, and greek_anaxibia_bias is Pelias's wife — neither is Nestor's wife / a daughter of
+Cratieus, and no Eurydice-daughter-of-Clymenus figure exists). The mother is accordingly an
+UNREGISTERED second parent: she is recorded in parentRoles only via the registered father and
+is named in prose, and for the descent-tier computation she counts as mortal(0).
+
+TIER / TYPE (anti-drift, by descent). Nestor = demigod = 0.5 (per his registered type and the
+cluster brief); unregistered mother = mortal = 0. Child divinity fraction = (0.5 + 0) / 2 =
+0.25, which falls in the quartigod band (0.1875–0.375). All three sons are therefore authored
+as type = "quartigod". (This is also internally consistent with the corpus, which already
+records the *grandfather* generation, e.g. Acastus and the Peliades, as quartigods off a
+demigod-or-better Poseidon-line parent by a mortal mother.)
+
+ERA. temporal.era = "trojan-war" for all three, exactly as the cluster requires and exactly as
+the parent greek_nestor carries; every lifecycle.era is likewise "trojan-war". This keeps each
+son no earlier than the father.
+
+LIFECYCLE. Authored ONLY for the son who dies: Antilochus, slain by Memnon at Troy. Thrasymedes
+and Peisistratus both survive the war and return to Pylos (no death or transformation is
+attested), so per the schema rule they carry no lifecycle array entries.
+
+WIRING.
+  - parentIds: ["greek_nestor"] for each (the mandated cluster-parent edge; the mother is
+    unregistered so no second id is added — confirmed by grep that no Eurydice-of-Clymenus /
+    Anaxibia-of-Cratieus figure exists).
+  - parentRoles: { "greek_nestor": "father" }.
+  - sibling relations are reciprocated WITHIN this batch among the three brothers (Antilochus
+    ↔ Thrasymedes ↔ Peisistratus), each with its own source. No already-registered sibling of
+    these three exists in the corpus (Pisidice, Polycaste, Perseus, Stratichus, Aretus,
+    Echephron, etc. are unregistered), so there is no out-of-batch one-way sibling edge to add.
+
+SOURCES. Primary citations are the Homeric poems (Iliad / Odyssey, by book.line), Apollodorus's
+Library, the Epic-Cycle Aethiopis (Proclus's summary), Pindar's Pythian 6, and Quintus
+Smyrnaeus's Posthomerica; secondary scholarship is Gantz, *Early Greek Myth* (1993) and the
+standard commentaries (Heubeck et al., *A Commentary on Homer's Odyssey*; Richardson, *The
+Iliad: A Commentary* vol. VI on Book 23). No reference is fabricated.
+
+FIGURES CONSIDERED BUT NOT AUTHORED (with reasons):
+  • The other Apollodoran sons (Perseus, Stratichus, Aretus, Echephron) and daughters
+    (Pisidice, Polycaste) of Nestor — real names in Apollod. 1.9.9, but the cluster brief asks
+    for exactly Antilochus, Thrasymedes, and Peisistratus; the rest are deferred to avoid
+    padding, and are NOT wired here (so no dangling sibling edges are created).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "greek_antilochus",
+  "name": {
+   "primary": "Antilochus",
+   "alt": [
+    "Antilochos",
+    "Antilokhos",
+    "Antilochus son of Nestor"
+   ],
+   "transliterations": {
+    "greek": "Ἀντίλοχος",
+    "etymology": "Ancient Greek Ἀντίλοχος, from ἀντι- (anti-, 'against, facing') + λόχος (lokhos, 'ambush, body of armed men'), i.e. 'he who stands against the war-band' — a fitting martial name for the young Pylian champion."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_nestor"
+  ],
+  "parentRoles": {
+   "greek_nestor": "father"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "joins-the-pylian-contingent-at-troy-under-nestor",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 4.457-462 (Antilochus draws first Achaean blood at Troy, killing Echepolus)"
+     }
+    ],
+    "notes": "Young son of Nestor in the Pylian contingent at Troy; one of the foremost younger Achaean warriors, beloved of Achilles, swift of foot, and conspicuous in the fighting from the moment he slays Echepolus son of Thalysias."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "death-defending-nestor-against-memnon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aethiopis arg. (Proclus, Chrestomathia); Pind. Pyth. 6.28-42; Quint. Smyrn. Posthomerica 2.243-259"
+     }
+    ],
+    "notes": "When Memnon, son of Eos, bore down on the aged Nestor — whose trace-horse had been struck by Paris and who could not escape — Antilochus threw himself before his father and was killed by Memnon, dying to save him: the canonical exemplum of filial devotion (Pindar). Achilles avenged him by slaying Memnon; his bones were laid in the same mound as Achilles and Patroclus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "warfare",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "πόλεμος",
+     "script": "Greek",
+     "rom": "polemos"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 4.457-462; 13.396-423; 15.568-591"
+     }
+    ],
+    "notes": "A frontline Achaean fighter: first to kill a Trojan in the Iliad, slayer of Echepolus, of Mydon (Pylaemenes's charioteer), and of Melanippus."
+   },
+   {
+    "sphereId": "filial-devotion",
+    "contextTag": "death",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 6.28-42"
+     }
+    ],
+    "notes": "Pindar makes Antilochus the supreme paradigm of a son who dies for his father, buying Nestor's life with his own against Memnon."
+   },
+   {
+    "sphereId": "chariotry",
+    "contextTag": "ritual",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 23.301-350, 23.514-615 (the chariot-race at Patroclus's funeral games)"
+     }
+    ],
+    "notes": "Receives his father's famous horsemanship-counsel and drives daringly in the funeral chariot-race, edging out Menelaus by craft before yielding the mare to him in courteous concession."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "swift-footed-pursuit",
+    "name": "Runs down foes and ground with great swiftness",
+    "term": {
+     "value": "πόδας ταχύς",
+     "script": "Greek",
+     "rom": "podas tachys"
+    },
+    "inheritability": "none",
+    "notes": "Homer's recurring epithet for Antilochus is 'swift of foot'; he competes in the footrace of Iliad 23 and his speed marks his fighting. Not a blood-heritable power (a personal heroic attribute), hence inheritability none.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 15.569-570; 18.2; 23.755-797 (the footrace)"
+     }
+    ]
+   },
+   {
+    "id": "bear-grievous-tidings",
+    "name": "Carries the death-news of Patroclus to Achilles",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Chosen as the messenger who tells Achilles that Patroclus has fallen, and holds Achilles's hands lest in his grief he cut his own throat — a defining narrative office, not a transmissible power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 17.685-701; 18.1-34"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "antilochus-spear",
+    "kind": "implement",
+    "name": "War-spear of Antilochus",
+    "term": {
+     "value": "ἔγχος",
+     "script": "Greek",
+     "rom": "enchos"
+    },
+    "role": "wielded",
+    "notes": "His thrown spear kills Echepolus (the first Achaean kill of the war) and, in close fighting, Mydon and Melanippus; the characteristic weapon of his aristeia.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 4.457-462; 5.580-589; 15.576-578"
+     }
+    ]
+   },
+   {
+    "id": "antilochus-shared-tomb",
+    "kind": "site",
+    "name": "The shared barrow of Achilles, Patroclus and Antilochus",
+    "term": {
+     "value": "τύμβος",
+     "script": "Greek",
+     "rom": "tymbos"
+    },
+    "role": "interred-in",
+    "notes": "His bones were honoured by being laid together with those of Achilles and Patroclus in one golden urn / mound on the Hellespont shore — the mark of Achilles's special love for him.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 24.76-79; cf. Od. 3.109-112"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ἀντίλοχος μεγάθυμος",
+    "translation": "great-hearted Antilochus",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 23.419, 23.541"
+     }
+    ]
+   },
+   {
+    "original": "Νέστορος ἀγλαὸς υἱός",
+    "translation": "Nestor's glorious son",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 6.33 (formula of Antilochus); cf. Od. 4.187-188"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_thrasymedes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9 (Antilochus and Thrasymedes among the sons of Nestor)"
+     }
+    ],
+    "notes": "Elder brother; the two Pylian sons of Nestor fight side by side at Troy and tend the wounded Machaon together."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_peisistratus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Od. 3.36-50, 4.155-167 (Peisistratus mourns his absent brother Antilochus)"
+     }
+    ],
+    "notes": "Younger brother; in the Odyssey Peisistratus weeps remembering Antilochus, fallen at Troy."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad (esp. 4.457-462, 15.568-591, 17.685-701, 18.1-34, 23.301-797); Homer, Odyssey 24.76-79"
+     },
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Library 1.9.9 (son of Nestor); Aethiopis arg. (Proclus); Pindar, Pythian 6.28-42; Quintus Smyrnaeus, Posthomerica 2.243-259"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources (Johns Hopkins Univ. Press, 1993), pp. 622-625 (Antilochus and the Memnonis)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9 (son of Nestor by Anaxibia daughter of Cratieus); Hom. Od. 3.451-452 (Nestor's wife Eurydice, daughter of Clymenus)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Quartigod son of the demigod Nestor of Pylos by an unregistered mother (named Anaxibia daughter of Cratieus in Apollod. 1.9.9, or Eurydice daughter of Clymenus in Hom. Od. 3.451-452); tier = (0.5 + 0)/2 = 0.25. The swift-footed young Pylian champion, dear to Achilles, who drew first Achaean blood at Troy and died defending his father Nestor against Memnon — the proverbial exemplum of filial devotion — and was buried in the same mound as Achilles and Patroclus. era trojan-war; lifecycle authored because he dies at Troy. Brothers Thrasymedes and Peisistratus wired reciprocally in-batch; the mother is unregistered so only the father edge is set."
+ },
+ {
+  "id": "greek_thrasymedes",
+  "name": {
+   "primary": "Thrasymedes",
+   "alt": [
+    "Thrasymedes son of Nestor",
+    "Thrasumedes",
+    "Thrasymedes the Pylian"
+   ],
+   "transliterations": {
+    "greek": "Θρασυμήδης",
+    "etymology": "Ancient Greek Θρασυμήδης, from θρασύς (thrasys, 'bold, daring') + μῆδος / μήδεα (mēdos, 'counsel, plans'), i.e. 'bold in counsel' — befitting a son of the great counsellor Nestor."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_nestor"
+  ],
+  "parentRoles": {
+   "greek_nestor": "father"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "domains": [
+   {
+    "sphereId": "warfare",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "πόλεμος",
+     "script": "Greek",
+     "rom": "polemos"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 16.317-325 (kills Maris son of Amisodarus); Hom. Il. 14.10-11, 17.378, 17.705"
+     }
+    ],
+    "notes": "A steady Pylian fighter at Troy: slays Maris in defence of the body of Sarpedon's companion, and is repeatedly named in the press of battle around the ships and the body of Patroclus."
+   },
+   {
+    "sphereId": "watch-and-sentinel-duty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "φυλακή",
+     "script": "Greek",
+     "rom": "phylakē"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 9.80-88 (one of the seven captains of the night-watch before the ships)"
+     }
+    ],
+    "notes": "Set among the chief captains of the Achaean night-guard, charged with keeping the watch-fires and the perimeter of the camp."
+   },
+   {
+    "sphereId": "sacrifice",
+    "contextTag": "ritual",
+    "term": {
+     "value": "θυσία",
+     "script": "Greek",
+     "rom": "thysia"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.439-450 (the sacrifice of the gilt-horned heifer to Athena at Pylos)"
+     }
+    ],
+    "notes": "At his father's house in Pylos he wields the axe and strikes down the gilt-horned heifer in the great sacrifice to Athena that Nestor offers for the visiting Telemachus."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "arm-the-night-raiders",
+    "name": "Arms the night-scouts for the Doloneia",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Lends Diomedes his own two-edged sword and oxhide shield (and Meriones is likewise equipped) before the night raid of Iliad 10; a service of the watch-captain, not a heritable power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 10.255-259"
+     }
+    ]
+   },
+   {
+    "id": "wield-sacrificial-axe",
+    "name": "Fells the sacrificial victim with the axe",
+    "term": {
+     "value": "πέλεκυς",
+     "script": "Greek",
+     "rom": "pelekys"
+    },
+    "inheritability": "none",
+    "notes": "Performs the killing-stroke in Nestor's heifer-sacrifice to Athena; a ritual office of the household, not a transmissible faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.442-449"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "thrasymedes-sword-shield",
+    "kind": "implement",
+    "name": "The two-edged sword and shield of Thrasymedes",
+    "term": {
+     "value": "φάσγανον ἄμφηκες",
+     "script": "Greek",
+     "rom": "phasganon amphēkes"
+    },
+    "role": "wielded",
+    "notes": "His own sword and oxhide shield, which he gives Diomedes to carry on the night-raid against the Trojan camp; his ordinary war-gear in the fighting at the ships.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 10.255-257"
+     }
+    ]
+   },
+   {
+    "id": "thrasymedes-sacrificial-axe",
+    "kind": "implement",
+    "name": "The sacrificial axe of the heifer-offering",
+    "term": {
+     "value": "πέλεκυς",
+     "script": "Greek",
+     "rom": "pelekys"
+    },
+    "role": "wielded",
+    "notes": "The axe with which he severs the sinews of the gilt-horned heifer in Nestor's sacrifice to Athena at Pylos.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.442-449"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Θρασυμήδης δαΐφρων",
+    "translation": "warlike (battle-minded) Thrasymedes",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 9.80; Hom. Od. 3.39"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_antilochus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Il. 16.317-325, 17.377-383 (the two brothers fighting together)"
+     }
+    ],
+    "notes": "Younger brother Antilochus, with whom he fights side by side and whose death at Troy he survives."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_peisistratus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Od. 3.413-416 (both sons of Nestor present at the Pylos sacrifice)"
+     }
+    ],
+    "notes": "Brother; both are among the sons of Nestor who attend the household at Pylos in Odyssey 3."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad 9.80-88, 10.255-259, 14.10-11, 16.317-325, 17.378, 17.705; Homer, Odyssey 3.39, 3.413-416, 3.439-450"
+     },
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Library 1.9.9 (son of Nestor); Quintus Smyrnaeus, Posthomerica 12.314-319 (among the warriors in the Wooden Horse)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Timothy Gantz, Early Greek Myth: A Guide to Literary and Artistic Sources (Johns Hopkins Univ. Press, 1993), p. 645 (the sons of Nestor)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9 (son of Nestor by Anaxibia daughter of Cratieus); Hom. Od. 3.451-452 (Nestor's wife Eurydice, daughter of Clymenus)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Quartigod son of the demigod Nestor of Pylos by an unregistered mother (Anaxibia daughter of Cratieus in Apollod. 1.9.9, or Eurydice daughter of Clymenus in Hom. Od. 3.451-452); tier = (0.5 + 0)/2 = 0.25. 'Bold in counsel': a captain of the Achaean night-watch who arms Diomedes for the Doloneia, fights at the ships and over Patroclus, and at home in Pylos performs the axe-stroke in Nestor's sacrifice to Athena. He survives the war and returns home (no death/transformation attested), so NO lifecycle is authored. vitalStatus deceased reflects his eventual mortal end, not a Troy death. Brothers Antilochus and Peisistratus wired reciprocally in-batch; the mother is unregistered so only the father edge is set."
+ },
+ {
+  "id": "greek_peisistratus",
+  "name": {
+   "primary": "Peisistratus",
+   "alt": [
+    "Pisistratus",
+    "Peisistratos",
+    "Peisistratus son of Nestor"
+   ],
+   "transliterations": {
+    "greek": "Πεισίστρατος",
+    "etymology": "Ancient Greek Πεισίστρατος, from πείθω (peithō, 'to persuade') + στρατός (stratos, 'army, host'), i.e. 'he who persuades the host' — a name in the heroic 'army' family shared with his brothers' martial names."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "greek_nestor"
+  ],
+  "parentRoles": {
+   "greek_nestor": "father"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "domains": [
+   {
+    "sphereId": "guest-friendship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ξενία",
+     "script": "Greek",
+     "rom": "xenia"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.36-50 (Peisistratus is first to welcome and seat the stranger Telemachus at Pylos)"
+     }
+    ],
+    "notes": "The model of correct hospitality: youngest son of Nestor, he rises first to greet the arriving Telemachus and Mentor/Athena, seats them on soft fleeces by the sea, and serves them the sacrificial portions."
+   },
+   {
+    "sphereId": "companionship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ἑταιρεία",
+     "script": "Greek",
+     "rom": "hetaireia"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.474-485; 4.1-19; 15.44-216 (Peisistratus as Telemachus's travelling companion to and from Sparta)"
+     }
+    ],
+    "notes": "Appointed by Nestor to drive Telemachus by chariot to Sparta and back; becomes Telemachus's intimate friend and escort on the journey in search of news of Odysseus."
+   },
+   {
+    "sphereId": "chariotry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.482-485; 15.145-146, 15.215-216 (Peisistratus takes the reins of the team)"
+     }
+    ],
+    "notes": "Drives the yoked horses on the overland road between Pylos and Lacedaemon, handling the reins for himself and Telemachus."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "offer-right-hospitality",
+    "name": "Welcomes and serves the guest in due order",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Greets the strangers, hands the cup of wine first to Athena-as-Mentor (deferring to the elder guest), and bids them pray to Poseidon — the very paradigm of well-bred xenia. A learned social office, not a heritable power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.40-66"
+     }
+    ]
+   },
+   {
+    "id": "weep-in-remembrance",
+    "name": "Moves the company to grief by remembrance of the dead",
+    "term": {
+     "value": "",
+     "script": "Greek",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "At Menelaus's feast he is moved to tears recalling his own brother Antilochus, fallen at Troy, and so prompts the company's shared lament — a narrative role, not a transmissible faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 4.155-167, 187-202"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "peisistratus-chariot",
+    "kind": "implement",
+    "name": "The chariot and team of Nestor's house",
+    "term": {
+     "value": "ἅρμα",
+     "script": "Greek",
+     "rom": "harma"
+    },
+    "role": "wielded",
+    "notes": "The polished chariot and swift horses of Pylos that he yokes and drives to carry Telemachus to Sparta and home again.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.478-486; 15.145-146"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Νέστορος υἱός",
+    "translation": "son of Nestor",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.36, 15.6, 15.46 (formulaic identification of Peisistratus)"
+     }
+    ]
+   },
+   {
+    "original": "ὄρχαμος ἀνδρῶν",
+    "translation": "leader of men",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 15.131, 15.151 (of Peisistratus)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_antilochus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Od. 4.155-167 (Peisistratus grieves his brother Antilochus, dead at Troy)"
+     }
+    ],
+    "notes": "Elder brother Antilochus, slain at Troy before Peisistratus came of age; Peisistratus weeps for him at Sparta."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_thrasymedes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Od. 3.413-416 (the sons of Nestor, including Thrasymedes and Peisistratus, gathered at Pylos)"
+     }
+    ],
+    "notes": "Brother; both are among Nestor's sons attending the household and sacrifice at Pylos in Odyssey 3."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 3.36-50, 3.400, 3.474-485, 4.155-202, 15.44-216 (Peisistratus hosts and escorts Telemachus)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Apollodorus, Library 1.9.9 (youngest son of Nestor)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Alfred Heubeck, Stephanie West & J. B. Hainsworth, A Commentary on Homer's Odyssey, vol. I (Oxford, 1988), on Od. 3.36 ff. (Peisistratus and the Telemachy)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9 (son of Nestor by Anaxibia daughter of Cratieus); Hom. Od. 3.451-452 (Nestor's wife Eurydice, daughter of Clymenus)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Quartigod youngest son of the demigod Nestor of Pylos by an unregistered mother (Anaxibia daughter of Cratieus in Apollod. 1.9.9, or Eurydice daughter of Clymenus in Hom. Od. 3.451-452); tier = (0.5 + 0)/2 = 0.25. The courteous young prince of Pylos who first welcomes Telemachus, becomes his close companion, and drives him by chariot to Sparta and back in the Telemachy — and weeps at Menelaus's table for his brother Antilochus dead at Troy. He survives (no death/transformation attested), so NO lifecycle is authored; vitalStatus deceased reflects his eventual mortal end. Brothers Antilochus and Thrasymedes wired reciprocally in-batch; the mother is unregistered so only the father edge is set."
+ }
+]
+```
+
+SOLITARY:
+  (none — all three sons are wired to greek_nestor and reciprocally to one another.)
+
+RECIPROCAL-NEEDED (symmetric ties to existing corpus figures — add the reciprocal on the
+existing figure):
+  (none — no already-registered sibling/spouse of these three exists in the corpus. The sibling
+  edges among Antilochus, Thrasymedes and Peisistratus are all reciprocated WITHIN this batch.)
+
+NOTE ON PARENT EDGES (no reciprocal required; directed):
+  - greek_antilochus     child of  greek_nestor   (parentRoles: father)
+  - greek_thrasymedes    child of  greek_nestor   (parentRoles: father)
+  - greek_peisistratus   child of  greek_nestor   (parentRoles: father)
+  The mother (Anaxibia daughter of Cratieus, Apollod. 1.9.9; or Eurydice daughter of Clymenus,
+  Hom. Od. 3.451-452) is UNREGISTERED and so is recorded in prose only, not as a parentId; for
+  the descent-tier math she counts as mortal(0), giving each son the quartigod tier.

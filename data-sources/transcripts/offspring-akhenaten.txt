@@ -1,0 +1,956 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Cluster: Children of Akhenaten (the Amarna royal children)
+Tradition: Egyptian (18th Dynasty, Amarna Period / New Kingdom)
+Parent: egyptian_akhenaten (Akhenaten, "the heretic pharaoh", type quartigod)
+Era (registered, exact) for every child: "new-kingdom"
+Author pass: the four famous, securely-attested Amarna royal children still MISSING
+from the corpus — Tutankhamun, Meritaten, Meketaten and Ankhesenamun.
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+PRIMARY SOURCES. The Amarna royal children are attested archaeologically and
+epigraphically rather than mythologically: the Amarna Boundary Stelae and the
+royal-family talatat reliefs of Akhetaten (Tell el-Amarna); the Royal Tomb of
+Akhenaten (TA26 / Amarna Royal Tomb), whose chamber gamma reliefs depict the death
+and mourning of Meketaten; the tomb of Meryre II at Amarna (the Smenkhkare-and-
+Meritaten scene); the tomb and treasures of Tutankhamun (KV62, Carter excavation
+1922) and his Restoration Stela from Karnak; and the Hittite "Deeds of Suppiluliuma"
+(the Dakhamunzu / Zannanza affair). The DNA/forensic study is Zahi Hawass et al.,
+"Ancestry and Pathology in King Tutankhamun's Family," JAMA 303.7 (2010): 638–647,
+which identified the KV55 mummy as Tutankhamun's father (Akhenaten) and the KV35
+"Younger Lady" (KV35YL) as his mother — a full sister of Akhenaten, NOT Nefertiti.
+
+STANDARD MODERN SCHOLARSHIP. Aidan Dodson & Dyan Hilton, The Complete Royal
+Families of Ancient Egypt (Thames & Hudson, 2004); Aidan Dodson, Amarna Sunset
+(AUC Press, 2009) and Amarna Sunrise (2014); Nicholas Reeves, The Complete
+Tutankhamun (Thames & Hudson, 1990) and Akhenaten: Egypt's False Prophet (2001);
+Toby Wilkinson, The Rise and Fall of Ancient Egypt (2010); Joyce Tyldesley,
+Nefertiti: Egypt's Sun Queen (1998).
+
+TYPE / TIER DECISION (anti-drift). By the descent math, a child of Akhenaten
+(quartigod, 0.25) by a mortal-tier mother (Nefertiti, Kiya, or the unnamed KV35YL,
+each 0) computes to (0.25 + 0)/2 = 0.125 — the scion band. HOWEVER these are
+historical 18th-Dynasty royals, and the cluster instruction is explicit that the
+Amarna royal children are to be authored as MORTAL regardless. All four are
+therefore typed "mortal" (matching how the corpus already carries Tiye and
+Nefertiti — mortal-by-descent New-Kingdom royals — and the historical-human rule).
+Each figure's notes record this decision.
+
+WIRING. Parent edges are directed (no reciprocal needed):
+  - All four → parentId egyptian_akhenaten (father).
+  - Meritaten, Meketaten, Ankhesenamun → also parentId egyptian_nefertiti (mother),
+    who is securely their mother (six daughters of Akhenaten and Nefertiti). Both
+    parents wired.
+  - Tutankhamun → egyptian_akhenaten only. His mother is, per the 2010 DNA study,
+    the KV35 "Younger Lady" (a sister of Akhenaten), her personal identity unresolved
+    (Kiya and others proposed); she is NOT registered in the corpus and is NOT
+    Nefertiti, so no second parent edge is asserted rather than guessing one. The
+    point is recorded in his notes.
+The four are full/half-siblings of one another and are wired as siblings RECIPROCALLY
+WITHIN THIS BATCH (Tutankhamun is the half-brother of the three daughters, and also
+the husband of Ankhesenamun — both a sibling and a spouse edge are recorded between
+them, each reciprocated). No already-existing corpus figure is among these four, so
+no out-of-batch sibling reciprocal is required.
+
+EXISTING FIGURES REFERENCED (not authored here):
+  - egyptian_akhenaten  (father; quartigod)
+  - egyptian_nefertiti  (mother of the three daughters; mortal)
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "egyptian_tutankhamun",
+  "name": {
+   "primary": "Tutankhamun",
+   "alt": [
+    "Tutankhaten (birth-name, Aten form)",
+    "Tutankhamen",
+    "Nebkheperure",
+    "King Tut"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓇋𓏏𓐰𓆣𓇳𓎟",
+    "mdc-transliteration": "twt-ꜥnḫ-ı͗mn",
+    "etymology": "Egyptian twt-ꜥnḫ-ı͗mn, 'living image of Amun.' Born Tutankhaten ('living image of the Aten') during the Aten revolution; the name was changed to Tutankhamun early in his reign when the cult of Amun was restored and the court returned from Akhetaten to the Theban orbit. His throne-name was Nebkheperure ('lord of the manifestations of Ra')."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "egyptian_akhenaten"
+  ],
+  "parentRoles": {
+   "egyptian_akhenaten": "father"
+  },
+  "temporal": {
+   "era": "new-kingdom"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-Tutankhaten-son-of-Akhenaten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hawass et al., 'Ancestry and Pathology in King Tutankhamun's Family,' JAMA 303.7 (2010): 638–647 (KV55-paternity DNA); inscriptions of Tutankhamun's tomb (KV62)"
+     }
+    ],
+    "notes": "Born c. 1341 BCE as Tutankhaten during the Amarna (Aten) revolution. The 2010 DNA study identified his father as the KV55 mummy (Akhenaten) and his mother as the KV35 'Younger Lady', a full sister of Akhenaten whose individual identity (Kiya among the candidates) is unresolved."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "startEvent": "accession-as-boy-king-and-restoration-of-the-Amun-cult",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Restoration Stela of Tutankhamun (Karnak); royal titulary changing Tutankhaten to Tutankhamun"
+     }
+    ],
+    "notes": "Acceded c. 1332 BCE as a child of about nine. His reign reversed the religious revolution of his father: the Aten-only cult was abandoned, the cult of Amun and the old gods restored, the name changed from Tutankhaten to Tutankhamun, and the court moved away from Akhetaten. The Restoration Stela records the reopening of the temples. The young king married his half-sister Ankhesenamun."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "startEvent": "death-c-1323-bce-and-burial-in-KV62",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Tutankhamun (KV62), excavated by Howard Carter 1922; Hawass et al., JAMA 303.7 (2010), CT and DNA pathology"
+     }
+    ],
+    "notes": "Died c. 1323 BCE in his late teens, ending the direct Thutmosid–Amarna royal line; succeeded by the elder courtier Ay. Forensic study (Hawass 2010) found malaria and a bone disorder; his two stillborn daughters were interred with him. His near-intact tomb (KV62), found by Howard Carter in 1922, made him the most famous of all pharaohs."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Nebkheperure",
+     "script": "Egyptian",
+     "rom": "nb-ḫprw-rꜥ"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tutankhamun's royal titulary (KV62; Restoration Stela, Karnak)"
+     }
+    ],
+    "notes": "Boy-pharaoh of the late 18th Dynasty; throne-name Nebkheperure."
+   },
+   {
+    "sphereId": "religious-restoration",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Restoration Stela of Tutankhamun (Karnak)"
+     }
+    ],
+    "notes": "Restorer of the traditional Egyptian cults (above all Amun) after the Aten revolution; reopened and re-endowed the temples his father had closed."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "restore-the-temples",
+    "name": "Restores and re-endows the temples of the gods",
+    "term": {
+     "value": "",
+     "script": "Egyptian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "His Restoration Stela proclaims the reopening of the shrines, the recasting of the divine images and the renewal of offerings after the Amarna suppression.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Restoration Stela of Tutankhamun (Karnak)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tutankhamun-gold-mask",
+    "kind": "regalia",
+    "name": "Golden funerary mask of Tutankhamun",
+    "term": {
+     "value": "",
+     "script": "Egyptian",
+     "rom": ""
+    },
+    "role": "buried-with",
+    "notes": "The gold-and-lapis death mask from KV62 — the most iconic surviving object of pharaonic Egypt; one of the masterpieces of the Carter find.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Tutankhamun (KV62); Carter excavation 1922"
+     }
+    ]
+   },
+   {
+    "id": "tutankhamun-restoration-stela",
+    "kind": "monument",
+    "name": "Restoration Stela",
+    "term": {
+     "value": "",
+     "script": "Egyptian",
+     "rom": ""
+    },
+    "role": "commissioned",
+    "notes": "Karnak stela recording the restoration of the cults of Amun and the gods after the Amarna period (later usurped by Horemheb).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Restoration Stela of Tutankhamun (Cairo Egyptian Museum, from Karnak)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Nebkheperure ('Lord of the manifestations of Ra')",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tutankhamun's throne-name in his royal titulary (KV62)"
+     }
+    ]
+   },
+   {
+    "original": "Living image of Amun (twt-ꜥnḫ-ı͗mn)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tutankhamun's nomen; Restoration Stela (Karnak)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_meritaten",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton, The Complete Royal Families of Ancient Egypt (2004)"
+     }
+    ],
+    "notes": "Half-sister; both children of Akhenaten (Tutankhamun by the KV35 'Younger Lady', Meritaten by Nefertiti)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_meketaten",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton, The Complete Royal Families of Ancient Egypt (2004)"
+     }
+    ],
+    "notes": "Half-sister; both children of Akhenaten."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_ankhesenamun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hawass et al., JAMA 303.7 (2010); inscriptions of KV62 naming Ankhesenamun"
+     }
+    ],
+    "notes": "Half-sister and also his queen — both children of Akhenaten; she became his Great Royal Wife (see spouse relation)."
+   },
+   {
+    "kind": "spouse",
+    "personId": "egyptian_ankhesenamun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Objects from KV62 naming Ankhesenamun as Great Royal Wife; royal reliefs of the pair"
+     }
+    ],
+    "notes": "His half-sister Ankhesenamun (formerly Ankhesenpaaten) was his Great Royal Wife; their only known children were two stillborn daughters buried with him."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Tutankhamun (KV62), Howard Carter excavation 1922; the Restoration Stela (Karnak); Hawass et al., 'Ancestry and Pathology in King Tutankhamun's Family,' JAMA 303.7 (2010): 638–647"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nicholas Reeves, The Complete Tutankhamun (Thames & Hudson, 1990)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Aidan Dodson & Dyan Hilton, The Complete Royal Families of Ancient Egypt (Thames & Hudson, 2004)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hawass et al., JAMA 303.7 (2010): 638–647 (KV55 = Akhenaten = father; KV35 'Younger Lady' = mother)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The boy-pharaoh, son of Akhenaten (KV55 DNA paternity, Hawass et al. 2010). Born Tutankhaten during the Aten revolution; restored the cult of Amun, changed his name to Tutankhamun, and married his half-sister Ankhesenamun. Died in his late teens c. 1323 BCE; his near-intact tomb (KV62), found by Howard Carter in 1922, made him the most famous pharaoh. Authored as mortal (a historical 18th-Dynasty royal, per the historical-human rule), matching the corpus's treatment of Nefertiti and Tiye. His mother is the KV35 'Younger Lady', a sister of Akhenaten not registered in the corpus and not Nefertiti, so only the paternal edge is wired."
+ },
+ {
+  "id": "egyptian_meritaten",
+  "name": {
+   "primary": "Meritaten",
+   "alt": [
+    "Meryetaten",
+    "Merytaten",
+    "Mayati"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓍇𓏏𓇳𓏏𓈖",
+    "mdc-transliteration": "mryt-ı͗tn",
+    "etymology": "Egyptian mryt-ı͗tn, 'beloved of the Aten.' The eldest of the six daughters of Akhenaten and Nefertiti, her name (like those of her sisters) was formed on the solar-disk Aten during the religious revolution."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "egyptian_akhenaten",
+   "egyptian_nefertiti"
+  ],
+  "parentRoles": {
+   "egyptian_akhenaten": "father",
+   "egyptian_nefertiti": "mother"
+  },
+  "temporal": {
+   "era": "new-kingdom"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-eldest-daughter-of-Akhenaten-and-Nefertiti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna Boundary Stelae and royal-family talatat reliefs of Akhetaten"
+     }
+    ],
+    "notes": "Eldest of the six daughters of Akhenaten and Nefertiti, born c. year 1 of Akhenaten's reign; the most frequently depicted of the princesses on the early Amarna monuments and boundary stelae."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "startEvent": "elevation-as-Great-Royal-Wife-of-Smenkhkare",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Meryre II at Amarna (the Smenkhkare-and-Meritaten scene)"
+     }
+    ],
+    "notes": "Rose to high prominence in the late Amarna court: she appears as Great Royal Wife of the ephemeral king Smenkhkare in the tomb of Meryre II, and some scholars further identify her with the female pharaoh Ankhkheperure Neferneferuaten (the identification is debated)."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Aidan Dodson, Amarna Sunset (AUC Press, 2009)"
+     }
+    ],
+    "notes": "Disappears from the record at the very end of the Amarna period; her tomb and burial are not securely identified."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "royal-women-of-amarna",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Meritaten",
+     "script": "Egyptian",
+     "rom": "mryt-ı͗tn"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs and boundary stelae"
+     }
+    ],
+    "notes": "Senior royal princess of Akhetaten and, later, queen."
+   },
+   {
+    "sphereId": "queenship",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Meryre II at Amarna (Meritaten as Great Royal Wife of Smenkhkare)"
+     }
+    ],
+    "notes": "Great Royal Wife of Smenkhkare; a leading candidate for the Amarna female pharaoh Neferneferuaten in the secondary literature."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "meritaten-amarna-reliefs",
+    "kind": "monument",
+    "name": "Amarna princess reliefs",
+    "term": {
+     "value": "",
+     "script": "Egyptian",
+     "rom": ""
+    },
+    "role": "depicted-on",
+    "notes": "The talatat reliefs and boundary stelae of Akhetaten in which Meritaten is the most prominently and frequently shown of the six daughters.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna Boundary Stelae; royal-family talatat reliefs"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "King's Daughter of his body, his beloved",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs and boundary stelae (princess titulary)"
+     }
+    ]
+   },
+   {
+    "original": "Great Royal Wife (of Smenkhkare)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Meryre II at Amarna"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_meketaten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs naming the daughters of Akhenaten and Nefertiti in sequence"
+     }
+    ],
+    "notes": "Full sister; second of the six daughters."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_ankhesenamun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs naming the daughters in sequence"
+     }
+    ],
+    "notes": "Full sister; third of the six daughters."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_tutankhamun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton, The Complete Royal Families of Ancient Egypt (2004)"
+     }
+    ],
+    "notes": "Half-brother; both children of Akhenaten."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Amarna Boundary Stelae; royal-family talatat reliefs of Akhetaten; tomb of Meryre II at Amarna"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Aidan Dodson, Amarna Sunset (AUC Press, 2009)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Aidan Dodson & Dyan Hilton, The Complete Royal Families of Ancient Egypt (Thames & Hudson, 2004)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs naming her as eldest daughter of Akhenaten and Nefertiti"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eldest of the six daughters of Akhenaten and Nefertiti; the most-depicted Amarna princess, later Great Royal Wife of Smenkhkare and a leading candidate for the female pharaoh Neferneferuaten. Both parents wired (Akhenaten, Nefertiti). Authored as mortal (a historical 18th-Dynasty royal, per the historical-human rule)."
+ },
+ {
+  "id": "egyptian_meketaten",
+  "name": {
+   "primary": "Meketaten",
+   "alt": [
+    "Meketaton",
+    "Maketaten"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓅓𓆵𓏏𓇳𓏏𓈖",
+    "mdc-transliteration": "mkt-ı͗tn",
+    "etymology": "Egyptian mkt-ı͗tn, 'protected by the Aten' (mkt, 'protection'). The second of the six daughters of Akhenaten and Nefertiti; her name, like her sisters', invokes the solar-disk Aten."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "egyptian_akhenaten",
+   "egyptian_nefertiti"
+  ],
+  "parentRoles": {
+   "egyptian_akhenaten": "father",
+   "egyptian_nefertiti": "mother"
+  },
+  "temporal": {
+   "era": "new-kingdom"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-second-daughter-of-Akhenaten-and-Nefertiti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs and boundary stelae of Akhetaten"
+     }
+    ],
+    "notes": "Second of the six daughters of Akhenaten and Nefertiti, born c. year 4 of Akhenaten's reign; a young child at the move to the new capital Akhetaten, where she appears on the family monuments behind her elder sister Meritaten."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "startEvent": "death-c-year-14-and-mourning-in-the-Amarna-Royal-Tomb",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Royal Tomb of Akhenaten (TA26 / Amarna Royal Tomb), chamber gamma reliefs"
+     }
+    ],
+    "notes": "Died c. year 14 of Akhenaten, while still young, and was buried in her father's Royal Tomb at Amarna (TA26). The reliefs of chamber gamma show the royal family — Akhenaten, Nefertiti and the surviving daughters — mourning over her; an adjacent scene of a woman beneath a canopy with an infant has led some scholars to suggest she died in childbirth, though this is debated. These are among the rare death-and-mourning scenes of Egyptian royal art."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "royal-women-of-amarna",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Meketaten",
+     "script": "Egyptian",
+     "rom": "mkt-ı͗tn"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs and boundary stelae"
+     }
+    ],
+    "notes": "Royal princess of Akhetaten, second of Akhenaten and Nefertiti's daughters."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "meketaten-royal-tomb-relief",
+    "kind": "monument",
+    "name": "Mourning reliefs of the Amarna Royal Tomb (chamber gamma)",
+    "term": {
+     "value": "",
+     "script": "Egyptian",
+     "rom": ""
+    },
+    "role": "depicted-on",
+    "notes": "The relief scenes in chamber gamma of TA26 depicting the royal family's grief over the dead Meketaten — an unusually intimate royal mourning tableau.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Royal Tomb of Akhenaten (TA26), chamber gamma reliefs"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "King's Daughter of his body, his beloved",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs (princess titulary)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_meritaten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs naming the daughters of Akhenaten and Nefertiti in sequence"
+     }
+    ],
+    "notes": "Full sister; eldest of the six daughters."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_ankhesenamun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs naming the daughters in sequence"
+     }
+    ],
+    "notes": "Full sister; third of the six daughters."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_tutankhamun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton, The Complete Royal Families of Ancient Egypt (2004)"
+     }
+    ],
+    "notes": "Half-brother; both children of Akhenaten."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Royal Tomb of Akhenaten (TA26), chamber gamma reliefs; Amarna royal-family talatat reliefs and boundary stelae"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Aidan Dodson & Dyan Hilton, The Complete Royal Families of Ancient Egypt (Thames & Hudson, 2004)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs naming her as second daughter of Akhenaten and Nefertiti"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Second of the six daughters of Akhenaten and Nefertiti; died young c. year 14 and was mourned in the reliefs of the Amarna Royal Tomb (TA26), one of the rare royal death-scenes of Egyptian art (the childbirth interpretation is debated). Both parents wired (Akhenaten, Nefertiti). Authored as mortal (a historical 18th-Dynasty royal, per the historical-human rule)."
+ },
+ {
+  "id": "egyptian_ankhesenamun",
+  "name": {
+   "primary": "Ankhesenamun",
+   "alt": [
+    "Ankhesenpaaten (birth-name, Aten form)",
+    "Ankhesenamen",
+    "Ankhesenpaaton",
+    "Ankhesenamon"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓋹𓋴𓈖𓇳𓏏𓈖",
+    "mdc-transliteration": "ꜥnḫ-s-n-ı͗mn",
+    "etymology": "Egyptian ꜥnḫ-s-n-ı͗mn, 'she lives for Amun' (or 'her life is of Amun'). Born Ankhesenpaaten, 'she lives for the Aten,' during the Aten revolution; the name was changed to Ankhesenamun when the cult of Amun was restored under Tutankhamun, paralleling her husband's own change from Tutankhaten."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "egyptian_akhenaten",
+   "egyptian_nefertiti"
+  ],
+  "parentRoles": {
+   "egyptian_akhenaten": "father",
+   "egyptian_nefertiti": "mother"
+  },
+  "temporal": {
+   "era": "new-kingdom"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-third-daughter-Ankhesenpaaten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs and boundary stelae of Akhetaten"
+     }
+    ],
+    "notes": "Born Ankhesenpaaten c. 1348 BCE, the third of the six daughters of Akhenaten and Nefertiti, raised at the Aten court of Akhetaten."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Tutankhamun-and-Great-Royal-Wife-as-Ankhesenamun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Objects from the tomb of Tutankhamun (KV62) naming Ankhesenamun as Great Royal Wife; royal reliefs of the pair"
+     }
+    ],
+    "notes": "Married her half-brother Tutankhaten/Tutankhamun and became his Great Royal Wife; with the restoration of Amun her name changed from Ankhesenpaaten to Ankhesenamun. The couple's only attested offspring are two stillborn daughters found in KV62. She is shown with the king in the intimate scenes on his throne and shrine."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "startEvent": "the-Dakhamunzu-appeal-to-the-Hittites-and-marriage-to-Ay",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite 'Deeds of Suppiluliuma' (the Dakhamunzu / Zannanza affair)"
+     }
+    ],
+    "notes": "After Tutankhamun's death, a widowed Egyptian queen — widely (though not unanimously) identified with Ankhesenamun — wrote to the Hittite king Suppiluliuma I asking for a son to marry; the prince Zannanza was sent but died en route. She is last attested on a ring paired with the successor Ay; her death and burial are unknown."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ankhesenamun",
+     "script": "Egyptian",
+     "rom": "ꜥnḫ-s-n-ı͗mn"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Objects from KV62 naming Ankhesenamun as Great Royal Wife of Tutankhamun"
+     }
+    ],
+    "notes": "Great Royal Wife of Tutankhamun; queen of the late 18th Dynasty."
+   },
+   {
+    "sphereId": "royal-women-of-amarna",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs and boundary stelae"
+     }
+    ],
+    "notes": "Born an Amarna princess (Ankhesenpaaten), third daughter of Akhenaten and Nefertiti."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "appeal-to-a-foreign-king",
+    "name": "Petitions a foreign king for a royal husband",
+    "term": {
+     "value": "",
+     "script": "Egyptian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The Dakhamunzu letter of the Hittite annals — a widowed queen (identified with Ankhesenamun) asking Suppiluliuma I for a son to make pharaoh; the embassy ended with Prince Zannanza's death.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite 'Deeds of Suppiluliuma' (the Dakhamunzu / Zannanza episode)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ankhesenamun-throne-back",
+    "kind": "regalia",
+    "name": "Golden Throne of Tutankhamun (backrest scene)",
+    "term": {
+     "value": "",
+     "script": "Egyptian",
+     "rom": ""
+    },
+    "role": "depicted-on",
+    "notes": "The backrest of the golden throne from KV62 shows Ankhesenamun anointing Tutankhamun beneath the Aten — one of the most famous Amarna-style royal-intimacy scenes.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Golden throne of Tutankhamun (KV62)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Great Royal Wife (of Tutankhamun)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Objects from KV62 naming Ankhesenamun"
+     }
+    ]
+   },
+   {
+    "original": "Dakhamunzu ('the King's Wife', Hittite rendering)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite 'Deeds of Suppiluliuma' (the Dakhamunzu appeal)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_meritaten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs naming the daughters of Akhenaten and Nefertiti in sequence"
+     }
+    ],
+    "notes": "Full sister; eldest of the six daughters."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_meketaten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs naming the daughters in sequence"
+     }
+    ],
+    "notes": "Full sister; second of the six daughters."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_tutankhamun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Inscriptions of KV62; Hawass et al., JAMA 303.7 (2010)"
+     }
+    ],
+    "notes": "Half-brother and also her husband — both children of Akhenaten; she became his Great Royal Wife (see spouse relation)."
+   },
+   {
+    "kind": "spouse",
+    "personId": "egyptian_tutankhamun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Objects from KV62 naming Ankhesenamun as Great Royal Wife; royal reliefs of the pair"
+     }
+    ],
+    "notes": "Great Royal Wife of her half-brother Tutankhamun; their only known children were two stillborn daughters buried with him in KV62."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Objects from the tomb of Tutankhamun (KV62); Amarna royal-family reliefs and boundary stelae; the Hittite 'Deeds of Suppiluliuma'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Aidan Dodson & Dyan Hilton, The Complete Royal Families of Ancient Egypt (Thames & Hudson, 2004)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Joyce Tyldesley, Nefertiti: Egypt's Sun Queen (Viking, 1998)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Amarna royal-family reliefs naming her as third daughter of Akhenaten and Nefertiti"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Third of the six daughters of Akhenaten and Nefertiti (born Ankhesenpaaten); became Great Royal Wife of her half-brother Tutankhamun (renamed Ankhesenamun with the Amun restoration). After his death she is the queen most often identified with the Dakhamunzu of the Hittite Zannanza affair, and last appears beside the successor Ay. Both parents wired (Akhenaten, Nefertiti); sibling-and-spouse double edge to Tutankhamun reciprocated in-batch. Authored as mortal (a historical 18th-Dynasty royal, per the historical-human rule)."
+ }
+]
+```
+
+RECIPROCAL NOTE (all within this batch — no out-of-batch corpus reciprocals required):
+  - egyptian_tutankhamun  sibling  egyptian_meritaten / egyptian_meketaten / egyptian_ankhesenamun  (reciprocated on each)
+  - egyptian_tutankhamun  spouse   egyptian_ankhesenamun  (reciprocated on Ankhesenamun)
+  - egyptian_meritaten / egyptian_meketaten / egyptian_ankhesenamun mutually siblings (reciprocated)
+
+PARENT-EDGE NOTE (directed; no reciprocal required):
+  - egyptian_tutankhamun   child of  egyptian_akhenaten  (father; mother = KV35 'Younger Lady', unregistered, not Nefertiti)
+  - egyptian_meritaten     child of  egyptian_akhenaten + egyptian_nefertiti
+  - egyptian_meketaten     child of  egyptian_akhenaten + egyptian_nefertiti
+  - egyptian_ankhesenamun  child of  egyptian_akhenaten + egyptian_nefertiti
