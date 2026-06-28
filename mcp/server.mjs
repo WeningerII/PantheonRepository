@@ -1,9 +1,12 @@
 // server.mjs — remote MCP server (Streamable HTTP) over the Pantheon corpus.
-// Stateless: a fresh McpServer + transport per request, which is plenty for a
-// read-only knowledge base and avoids session bookkeeping.
+// Session-managed (the canonical MCP pattern): initialize opens a session,
+// subsequent POSTs route by Mcp-Session-Id, GET opens the notification stream,
+// DELETE tears the session down. This is what claude.ai's connector expects.
 import express from 'express';
+import { randomUUID } from 'node:crypto';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
+import { isInitializeRequest } from '@modelcontextprotocol/sdk/types.js';
 import { z } from 'zod';
 import * as corpus from './corpus.mjs';
 
@@ -74,20 +77,40 @@ app.use('/mcp', (req, res, next) => {
   res.status(401).json({ jsonrpc: '2.0', error: { code: -32001, message: 'unauthorized' }, id: null });
 });
 
+// active transports keyed by session id
+const transports = {};
+
 app.post('/mcp', async (req, res) => {
-  const server = buildServer();
-  const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });
-  res.on('close', () => { transport.close(); server.close(); });
+  const sid = req.headers['mcp-session-id'];
+  let transport;
+  if (sid && transports[sid]) {
+    transport = transports[sid];
+  } else if (!sid && isInitializeRequest(req.body)) {
+    transport = new StreamableHTTPServerTransport({
+      sessionIdGenerator: () => randomUUID(),
+      onsessioninitialized: (id) => { transports[id] = transport; },
+    });
+    transport.onclose = () => { if (transport.sessionId) delete transports[transport.sessionId]; };
+    await buildServer().connect(transport);
+  } else {
+    res.status(400).json({ jsonrpc: '2.0', error: { code: -32000, message: 'Bad Request: no valid session id (send an initialize request first)' }, id: null });
+    return;
+  }
   try {
-    await server.connect(transport);
     await transport.handleRequest(req, res, req.body);
   } catch (e) {
     if (!res.headersSent) res.status(500).json({ jsonrpc: '2.0', error: { code: -32603, message: String(e) }, id: null });
   }
 });
-const noStream = (_req, res) => res.status(405).json({ jsonrpc: '2.0', error: { code: -32000, message: 'Method Not Allowed (stateless server)' }, id: null });
-app.get('/mcp', noStream);
-app.delete('/mcp', noStream);
+
+// GET = open the SSE notification stream; DELETE = end the session
+const bySession = async (req, res) => {
+  const sid = req.headers['mcp-session-id'];
+  if (!sid || !transports[sid]) { res.status(400).send('Invalid or missing session id'); return; }
+  await transports[sid].handleRequest(req, res);
+};
+app.get('/mcp', bySession);
+app.delete('/mcp', bySession);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Pantheon Registry MCP listening on :${PORT} — ${corpus.stats.figures} figures, ${corpus.stats.traditions} traditions`));
