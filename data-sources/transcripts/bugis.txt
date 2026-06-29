@@ -1,0 +1,794 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bugis
+Era (registered, exact): "Bugis traditional religion; continuing"
+Author pass: new tradition — attested individuated core (5 figures).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bugis_patotoqe",
+    "name": {
+      "primary": "Patotoqe, Determiner of Fate of the Upperworld",
+      "alt": [
+        "Datu Patoto",
+        "Datu Patotoq",
+        "PatotoE",
+        "To Palanroe"
+      ],
+      "transliterations": {
+        "bug": "Patotoqé",
+        "etymology": "From the Bugis root toto 'fate, lot, destiny' with the agentive prefix pa- and definite -E, hence 'the One Who Apportions Fate'; the parallel epithet To Palanroé means 'the Maker / Creator' (Koolhof 1999)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the opening of the Sureq I La Galigo, Patotoqe rules the Upperworld Boting Langiq and, on learning that the Middleworld lies empty, resolves with his consort and the rulers of the Underworld to populate it by sending down his eldest son.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fate-and-destiny",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "toto",
+          "script": "Latin",
+          "rom": "toto ('fate, allotted destiny')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      },
+      {
+        "sphereId": "sky-and-upperworld",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Boting Langiq",
+          "script": "Latin",
+          "rom": "Botiq Langiq ('the Upperworld / heavens')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      },
+      {
+        "sphereId": "creation-and-cosmic-order",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "palanro",
+          "script": "Latin",
+          "rom": "palanro ('to make, fashion, create')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. Nyompa Salim et al. (eds.) discussion in Christian Pelras, The Bugis (Blackwell, 1996), chap. 3, 'The world of myth'."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "apportion_fate",
+        "name": "to apportion the fates and destinies of gods and humankind",
+        "term": {
+          "value": "toto",
+          "script": "Latin",
+          "rom": "toto"
+        },
+        "inheritability": "none",
+        "notes": "His sovereign role as arbiter of toto gives him the standing epithet 'Determiner of Fate'.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      },
+      {
+        "id": "decree_settlement_of_world",
+        "name": "to decree the peopling of the empty Middleworld",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He convenes the council of the three worlds and sends his son down to inaugurate human society in Luwuq.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "To Palanroé",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      },
+      {
+        "original": "Datu Patotoé",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "bugis_datu_palingeq",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ],
+        "notes": "Datu Palingeq is the queen of the Upperworld and the mother of his son Batara Guru."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Patotoqe (Datu Patoto, To Palanroe) is the supreme fate-determining creator god who rules the Upperworld Boting Langiq in the Bugis La Galigo cycle and who sets the creation in motion.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3, 'The world of myth'."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Patotoqe, also called Datu Patoto and by the epithet To Palanroe ('the Creator'), is the highest deity of the pre-Islamic Bugis pantheon as preserved in the Sureq I La Galigo of South Sulawesi. Enthroned in the Upperworld Boting Langiq, he is the apportioner of fate (toto) for gods and mortals alike. When his counsellors report that the Middleworld lies empty between sky and sea, Patotoqe summons the rulers of the realms and resolves that it must be inhabited by beings of divine descent; he sends his eldest son Batara Guru down to the land of Luwuq to become the first human ruler, and arranges a bride for him from the Underworld. He stands at the head of the genealogy from which the entire human world of the epic descends."
+  },
+  {
+    "id": "bugis_datu_palingeq",
+    "name": {
+      "primary": "Datu Palingeq, Queen of the Upperworld",
+      "alt": [
+        "Datu Palinge",
+        "Datu PalingE",
+        "Datu Palingeq ri Boting Langiq"
+      ],
+      "transliterations": {
+        "bug": "Datu Palingéq",
+        "etymology": "Datu is the high Bugis title 'lord/sovereign'; palingeq is glossed as 'the one who arranges / disposes', marking her as the ordering consort of the fate-god (Pelras 1996)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Datu Palingeq reigns beside Patotoqe in Boting Langiq and is consulted by him when he resolves to send their son down to populate the Middleworld.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky-and-upperworld",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Boting Langiq",
+          "script": "Latin",
+          "rom": "Botiq Langiq ('the Upperworld')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      },
+      {
+        "sphereId": "queenship-and-divine-counsel",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "datu",
+          "script": "Latin",
+          "rom": "datu ('sovereign, lord')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "counsel_the_fate_lord",
+        "name": "to counsel the fate-lord in the ordering of creation",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Patotoqe takes counsel with her before sending their son to the Middleworld.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Datu Palingéq ri Boting Langiq",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "bugis_patotoqe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ],
+        "notes": "She is the consort of the supreme god Patotoqe and co-ruler of the Upperworld."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Datu Palingeq is the divine consort of the supreme god Patotoqe and queen of the Upperworld Boting Langiq, mother of the first human ruler Batara Guru in the Bugis La Galigo cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3, 'The world of myth'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Datu Palingeq is the queen of the Upperworld Boting Langiq and the wife of Patotoqe, the supreme fate-god of the Bugis La Galigo cycle. As the ordering consort of the creator, she is consulted by Patotoqe when he resolves to people the empty Middleworld, and she is the mother of their eldest son Batara Guru (La Togeq Langiq), who is sent down to found the kingdom of Luwuq. Through this son the divine couple become the apical ancestors of the human dynasties of the epic."
+  },
+  {
+    "id": "bugis_batara_guru",
+    "name": {
+      "primary": "Batara Guru, the First to Descend to the Middleworld",
+      "alt": [
+        "La Togeq Langiq",
+        "La Toge Langi",
+        "Manurungnge ri Luwuq",
+        "Manurungnge ri Lappa Tellang Pulawengnge"
+      ],
+      "transliterations": {
+        "bug": "Batara Guru / La Togéq Langiq",
+        "etymology": "The title Batara Guru is a Bugis reflex of Sanskrit Bhaṭāra Guru ('lord teacher', an epithet of Śiva) adopted from earlier Indic influence; his Bugis birth-name La Togeq Langiq is borne alongside the epithet Manurungnge, 'the one who descended (from the sky)' (Koolhof 1999; Pelras 1996)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "bugis_patotoqe",
+      "bugis_datu_palingeq"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Batara Guru, eldest son of Patotoqe and Datu Palingeq, descends from Boting Langiq to the still-empty land of Luwuq — by tradition through a hollow stalk of golden bamboo — to become the first human and first ruler of the Middleworld.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship-of-luwuq",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Luwuq",
+          "script": "Latin",
+          "rom": "Luwuq (the cradle-kingdom of the epic)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      },
+      {
+        "sphereId": "middleworld-and-human-origins",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ale Lino",
+          "script": "Latin",
+          "rom": "Alé Lino ('the world of humans, the Middleworld')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      },
+      {
+        "sphereId": "celestial-descent",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "manurung",
+          "script": "Latin",
+          "rom": "manurung ('one who has descended from the sky')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "descend_from_sky",
+        "name": "to descend from the Upperworld and take on human form",
+        "term": {
+          "value": "manurung",
+          "script": "Latin",
+          "rom": "manurung"
+        },
+        "inheritability": "none",
+        "notes": "As the first manurung he becomes the prototype of the sky-descended founders of Bugis ruling houses.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      },
+      {
+        "id": "found_first_kingdom",
+        "name": "to found and rule the first kingdom of the Middleworld",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He establishes the polity of Luwuq, the cradle of the dynasties traced through the epic.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Manurungngé ri Luwuq",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      },
+      {
+        "original": "La Togéq Langiq",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "bugis_we_nyiliq_timoq",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ],
+        "notes": "We Nyiliq Timoq, eldest daughter of the rulers of the Underworld, rises from the sea to become his bride; she is also reckoned his cross-cousin."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "bugis_patotoqe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ],
+        "notes": "He acts under the decree of his father Patotoqe, who sends him down to the Middleworld."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Batara Guru (La Togeq Langiq), eldest son of Patotoqe and Datu Palingeq, is the first being sent from the Upperworld to become the first human and founding ruler of Luwuq in the Bugis La Galigo cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3, 'The world of myth'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Batara Guru, whose Bugis name is La Togeq Langiq, is the eldest son of the supreme god Patotoqe and his consort Datu Palingeq. He is the first of the manurung, the sky-descended beings: dispatched from the Upperworld Boting Langiq to the empty land of Luwuq, he becomes the first human and the first ruler of the Middleworld (Ale Lino), and in popular tradition he descends through a hollow stalk of golden bamboo, whence the epithet Manurungnge ri Lappa Tellang Pulawengnge. The title Batara Guru itself is a Bugis adaptation of the Sanskrit Bhaṭāra Guru, an epithet of Śiva, reflecting older Indic influence on the region. He takes as his bride We Nyiliq Timoq, who rises from the Underworld; their union joins the upper and lower worlds, and the dynasty descending from them — through their son Batara Lattuq to the hero Sawerigading — drives the action of the entire epic."
+  },
+  {
+    "id": "bugis_we_nyiliq_timoq",
+    "name": {
+      "primary": "We Nyiliq Timoq, Princess of the Underworld",
+      "alt": [
+        "Wé Nyiliq Timoq",
+        "We Nyili Timo",
+        "We Nyelli Timo",
+        "Wé Nyiliq Timoq ri Pérétiwi"
+      ],
+      "transliterations": {
+        "bug": "Wé Nyiliq Timoq",
+        "etymology": "Wé is the Bugis feminine personal-name marker; the name is borne by the eldest daughter of the rulers of Pérétiwi, the Underworld, and is rendered in scholarship as Wé Nyiliq Timoq (Pelras 1996; Koolhof 1999)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "We Nyiliq Timoq, eldest daughter of the rulers of the Underworld Pérétiwi, rises from beneath the sea to the land of Luwuq to become the bride of the sky-descended Batara Guru.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld-and-sea",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Pérétiwi",
+          "script": "Latin",
+          "rom": "Pérétiwi ('the Underworld', also called Boriq Liu / Buriq Liu, the undersea realm)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      },
+      {
+        "sphereId": "underworld-royalty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Boriq Liu",
+          "script": "Latin",
+          "rom": "Boriq Liu ('the land below / undersea kingdom')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rise_from_underworld",
+        "name": "to rise from the undersea Underworld to the world of humans",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her ascent from Pérétiwi to Luwuq mirrors Batara Guru's descent from the sky, joining the lower and upper worlds.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Wé Nyiliq Timoq ri Pérétiwi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "bugis_batara_guru",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ],
+        "notes": "Bride of the sky-descended Batara Guru and, in the genealogy of the epic, his cross-cousin; their union founds the dynasty of Luwuq."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "We Nyiliq Timoq is the goddess-princess of the Underworld Pérétiwi (Boriq Liu), eldest daughter of its rulers, who becomes the bride of Batara Guru and the divine ancestress of the dynasty of Luwuq in the Bugis La Galigo cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3, 'The world of myth'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "We Nyiliq Timoq is the divine princess of the Underworld in the Bugis La Galigo cycle, the eldest daughter of the rulers of Pérétiwi — the undersea lower world also called Boriq Liu. When Patotoqe sends his son Batara Guru down from the sky to the empty land of Luwuq, a consort is sought for him in the depths, and We Nyiliq Timoq rises from beneath the sea to become his bride; she is also reckoned his cross-cousin within the divine kindred. Her ascent from below mirrors Batara Guru's descent from above, so that their marriage unites the Upperworld and the Underworld in the Middleworld of humankind. From this union descends Batara Lattuq, and in turn the hero Sawerigading and his twin We Tenriabeng, making her one of the apical ancestresses of the epic's human world."
+  },
+  {
+    "id": "bugis_sawerigading",
+    "name": {
+      "primary": "Sawerigading, Wandering Hero of Luwuq",
+      "alt": [
+        "Sawérigading",
+        "Sawéri Gading",
+        "La Maddungkelleng (regional variant)",
+        "Opunna Ware"
+      ],
+      "transliterations": {
+        "bug": "Sawérigading",
+        "etymology": "A Bugis personal name borne by the epic's central hero, prince of Luwuq; it is sometimes connected with sawéri/sawérigading as a name-element of the ruling line, and he carries the princely title Opunna Waré ('lord of Waré') (Koolhof 1999; Pelras 1996)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Sawerigading, prince of Luwuq and grandson of Batara Guru, comes of age and conceives a forbidden love for his twin sister We Tenriabeng, setting in motion the central voyages of the La Galigo epic.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "seafaring-and-voyaging",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Luwuq",
+          "script": "Latin",
+          "rom": "Luwuq (his ancestral kingdom)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3."
+          }
+        ]
+      },
+      {
+        "sphereId": "heroic-kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Opunna Waré",
+          "script": "Latin",
+          "rom": "Opunna Waré ('lord of Waré', his princely title)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "voyage_across_three_worlds",
+        "name": "to voyage across the sea and between the upper, middle and lower worlds",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His journeys carry him to China and through the cosmic realms in pursuit of a bride resembling his twin sister.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      },
+      {
+        "id": "fell_the_welenrengnge_tree",
+        "name": "to fell the great cosmic tree Welenrengnge and build a fleet from it",
+        "term": {
+          "value": "Welenréngngé",
+          "script": "Latin",
+          "rom": "Welenréngngé (the gigantic tree felled for his ship)"
+        },
+        "inheritability": "none",
+        "notes": "The episode Ritumpanna Welenrengnge ('the felling of the Welenrengnge') recounts how the tree is cut down to make his ship.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bugis_welenrengnge_ship",
+        "name": "The ship of the Welenrengnge tree",
+        "kind": "vessel",
+        "role": "Sawerigading's great seagoing ship, built from the felled cosmic tree Welenrengnge, which carries him on his voyage to China.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Opunna Waré",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sawerigading is the wandering hero and prince of Luwuq, grandson of Batara Guru and great-grandson of the supreme god Patotoqe, and the central human protagonist of the Bugis La Galigo epic.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth', Bijdragen tot de Taal-, Land- en Volkenkunde 155, no. 3 (1999): 362–387."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford and Cambridge, MA: Blackwell, 1996), chap. 3, 'The world of myth'."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Sawerigading is the great hero of the Bugis La Galigo cycle and its central human figure, a prince of Luwuq descended in the third generation from the sky: he is the grandson of Batara Guru and We Nyiliq Timoq (through their son Batara Lattuq) and thus the great-grandson of the supreme god Patotoqe. Coming of age, he falls in love with his twin sister We Tenriabeng, but their union is forbidden as an incest that would destroy the realm; the twins are parted, and Sawerigading vows to seek a bride who resembles her. To this end the colossal tree Welenrengnge is felled — the episode Ritumpanna Welenrengnge — and from its timber his great ship is built, in which he voyages as far as China to win the princess We Cudai, who is said to resemble We Tenriabeng. Their son is I La Galigo, after whom the whole epic is named. As a seafaring, restless, formidable captain who crosses the upper, middle and lower worlds, Sawerigading became the archetypal Bugis culture-hero, and is associated in tradition with the founding line of the kings of Luwuq."
+  }
+]
+```
