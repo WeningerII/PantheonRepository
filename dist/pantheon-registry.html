@@ -3487,6 +3487,10 @@ const TYPE_META = {  // colors mirror state.jsx TYPE_TIER — the UI's canonical
 
 // Per-tradition pigment palette (qualitative-categorical, adjacency-tested)
 const TRADITION_PIGMENTS = {
+  "Mandaean": "#1f6f8b",  // the living-water blue of the marshes and rivers of southern Mesopotamia in which the Mandaeans perform their baptisms (maṣbuta)
+  "Chumash": "#9b2d1f",  // hematite red ochre of the Chumash painted-cave pictographs of the Santa Barbara coast
+  "Palmyrene": "#c9a227",  // sun-bleached desert limestone and golden caravan light of the Tadmor oasis
+  "Yolngu": "#b1432e",  // the red ochre and red-lorikeet-feather string of the Arnhem Land coast, the colour bound into the Djang'kawu rangga and the Morning Star Pole
   'Greek':               '#7a4a2a',  // earth-pigment / red-figure
   'Roman':               '#a83820',  // Vermilion / cinnabar — Pompeian red, the triumphator's face-paint, the Jupiter cult statue
   'Etruscan':            '#b65030',  // Tomb-fresco ochre — the Tarquinian wall-painting palette of the Tomb of the Lionesses
@@ -41456,6 +41460,10 @@ const migrate = (peopleMap) => {
 // array gives ordinal time. The era-inversion validation pass uses this
 // ordering to detect parent-child temporal anomalies within a tradition.
 const ERA_ORDER = {
+  "Mandaean": ["Mandaean Gnostic religion; continuing"],
+  "Chumash": ["Chumash traditional religion; continuing"],
+  "Palmyrene": ["hellenistic-roman-palmyra"],
+  "Yolngu": ["Yolngu traditional religion; continuing"],
   // Greek: standard archaeological-historical periodization for the classical
   // record, prefixed by the mythic-internal sequence (primordial cosmogony,
   // Titanomachy, Mycenaean Bronze Age framing the heroic age, Trojan War as
@@ -42184,6 +42192,10 @@ const ERA_ORDER = {
 // Lookup pattern: getEntryDates(entry) returns the entry's own dates if any
 // of them are non-undefined, else falls back to ERA_DATES[tradition][era].
 const ERA_DATES = {
+  "Mandaean": {"Mandaean Gnostic religion; continuing": {"mythicStart": null, "mythicEnd": null, "textualStart": 1652, "textualEnd": 2011, "precision": "cosmic"}},
+  "Chumash": {"Chumash traditional religion; continuing": {"mythicStart": null, "mythicEnd": null, "textualStart": 1912, "textualEnd": 2020, "precision": "cosmic"}},
+  "Palmyrene": {"hellenistic-roman-palmyra": {"mythicStart": null, "mythicEnd": null, "textualStart": -44, "textualEnd": 273, "precision": "century"}},
+  "Yolngu": {"Yolngu traditional religion; continuing": {"mythicStart": null, "mythicEnd": null, "textualStart": 1937, "textualEnd": 2009, "precision": "cosmic"}},
   // ─── Greek ─────────────────────────────────────────────────────────────────
   // Mythic-internal placement follows the conventional Mycenaean Bronze Age
   // framework: heroic-age = Mycenaean palatial through Bronze Age collapse
@@ -82320,6 +82332,917 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "The Zenith-being is, in Bogoras's words, 'the chief' of the benevolent beings sacrificed to (taaronyo vairgit). The Chukchi call it 'being-a-crown' (kana'irgin) or 'middle-crown' (ginon-kana'irgin); it resides at the apex of the sky, and Mid-day, the Sun and the Pole-Star are each 'often identified with the middle-crown' without being reduced to it. Distinct from the Creator (Tenanto'mwan), it heads the spatial system of directional Beings; it is classed here as a deity with no attested divine parent."
+ },
+ {
+  "id": "chumash_alchupoosh",
+  "name": {
+   "primary": "Alchupo'osh (the Sky Snake / Milky Way)",
+   "alt": [
+    "Sky Snake",
+    "Milky Way",
+    "Alchupo'osh"
+   ],
+   "transliterations": {
+    "Chumash": "Alchupo'osh",
+    "etymology": "a Chumash name for the Sky Snake, the serpent whose body is seen as the Milky Way"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chumash",
+  "primaryTradition": "Chumash",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Chumash traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Chumash traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The Sky Snake, whose long body is the Milky Way, gives fire to the first people on Limuw and so allows them to thrive.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "milky-way",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Alchupo'osh",
+     "script": "Latin",
+     "rom": "Alchupo'osh"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fire-and-lightning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give_fire_to_the_people",
+    "name": "to give fire to the first human beings",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As Hutash's husband the Sky Snake gave the first Chumash the fire by which they warmed themselves and prospered on the island.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   },
+   {
+    "id": "cast_lightning_with_his_tongue",
+    "name": "to cast bolts of lightning with his tongue",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The Sky Snake is said to make lightning with his tongue, a power tied to his gift of fire to humankind.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Alchupo'osh",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "chumash_hutash",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ],
+    "notes": "The Sky Snake is the husband of the Earth Mother Hutash, and his gift of fire complements her making of the people."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Alchupo'osh, the Sky Snake seen as the Milky Way, is the husband of Hutash who gave fire to the first Chumash and makes lightning with his tongue.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky: An Intellectual Odyssey Involving Chumash Astronomy, Cosmology, and Rock Art (Ballena Press Anthropological Papers No. 10, 1978)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Alchupo'osh is the Sky Snake of the Chumash, the great serpent whose luminous body is seen overhead as the Milky Way. In the creation narrative he is the husband of the Earth Mother Hutash: after she had raised the first people from seeds on the island of Limuw, the Sky Snake gave them fire, and by its warmth they multiplied. He is said to make lightning with his tongue, a flashing power bound up with his gift of fire. Hudson and Underhay record the Sky Snake among the powerful beings of the upper world, where his coiled length marks the band of the galaxy."
+ },
+ {
+  "id": "chumash_hutash",
+  "name": {
+   "primary": "Hutash (the Earth Mother)",
+   "alt": [
+    "Earth Mother",
+    "Hutash",
+    "Hutásh"
+   ],
+   "transliterations": {
+    "Chumash": "Hutash",
+    "etymology": "a Chumash name for the Earth and its generative power, by extension the personified Earth Mother who made the first people"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chumash",
+  "primaryTradition": "Chumash",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Chumash traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Chumash traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The Earth Mother sows the seeds of a magical plant on the island of Limuw (Santa Cruz Island) and from them brings forth the first Chumash people.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Hutash",
+     "script": "Latin",
+     "rom": "Hutash"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation-of-humankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Limuw",
+     "script": "Latin",
+     "rom": "Limuw"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "make_first_people_from_seeds",
+    "name": "to bring forth the first human beings from the seeds of a magical plant",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Hutash plants seeds on Limuw and the first Chumash grow from them, making her the mother of the people.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   },
+   {
+    "id": "raise_the_rainbow_bridge",
+    "name": "to raise a rainbow bridge between the island and the mainland",
+    "term": {
+     "value": "Wishtoyo",
+     "script": "Latin",
+     "rom": "Wishtoyo"
+    },
+    "inheritability": "none",
+    "notes": "When the island grew crowded Hutash spanned a rainbow, Wishtoyo, from the highest peak of Limuw to the mountains near the mainland coast for the people to cross; those who fell from it she turned into dolphins.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "chumash_wishtoyo_bridge",
+    "name": "Wishtoyo, the Rainbow Bridge",
+    "kind": "emblem",
+    "role": "the rainbow Hutash stretched from Limuw to the mainland so the people could cross to their new home",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Hutash",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "chumash_alchupoosh",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ],
+    "notes": "Hutash is married to the Sky Snake, Alchupo'osh, the Milky Way, whose gift of fire let the first people thrive on Limuw."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hutash is the Chumash Earth Mother who created the first people from seeds on Santa Cruz Island and made the rainbow bridge Wishtoyo, wife of the Sky Snake.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California (Bureau of American Ethnology Bulletin 78, 1925)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Hutash is the Earth Mother of the Chumash and the maker of humankind. In the creation narrative recorded from Harrington's consultants she sowed the seeds of a magical plant on Limuw, the island now called Santa Cruz, and from those seeds the first Chumash arose. Her husband, the Sky Snake Alchupo'osh whom the Chumash see in the Milky Way, gave the people fire, and under its warmth they multiplied until the island grew crowded and loud. To resettle them Hutash spanned a great rainbow, Wishtoyo, from the tallest peak of the island to the high mountains of the mainland; as the people crossed, some grew dizzy and fell into the sea, and out of pity she changed them into dolphins, whom the Chumash still call kin."
+ },
+ {
+  "id": "chumash_kakunupmawa",
+  "name": {
+   "primary": "Kakunupmawa (the Sun)",
+   "alt": [
+    "Sun",
+    "Old Man Sun",
+    "Kakunupmawa"
+   ],
+   "transliterations": {
+    "Chumash": "Kakunupmawa",
+    "etymology": "glossed in the ethnographic record as 'the radiance of the child born at the winter solstice', the Sun's sacred-language name"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chumash",
+  "primaryTradition": "Chumash",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Chumash traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Chumash traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "An aged widower who lives in the upper world with his two daughters, the Sun crosses the sky each day bearing a torch of rolled bark, and at the winter solstice is ritually 'turned back' so that the days may lengthen again.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky: An Intellectual Odyssey Involving Chumash Astronomy, Cosmology, and Rock Art (Ballena Press Anthropological Papers No. 10, 1978)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kakunupmawa",
+     "script": "Latin",
+     "rom": "Kakunupmawa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fate-and-mortality",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "carry_the_sky_torch",
+    "name": "to carry a torch of rolled bark across the sky and so give the world its daylight",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The Sun is pictured as an old man who lights his bark-torch and bears it from east to west, its glow being the sunlight.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   },
+   {
+    "id": "gamble_for_human_fates",
+    "name": "to gamble nightly in the peon stick-game for the harvests and lives of human beings",
+    "term": {
+     "value": "peon",
+     "script": "Latin",
+     "rom": "peon"
+    },
+    "inheritability": "none",
+    "notes": "Each night the Sun and his partner Golden Eagle play the hand-game of peon against Sky Coyote and Morning Star; the year's tally decides whether the people will know rain and plenty or scarcity and death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "chumash_sun_torch",
+    "name": "the Sun's bark-torch",
+    "kind": "emblem",
+    "role": "the rolled-bark brand the Sun carries across the heavens, whose light is the day",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Kakunupmawa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "rival",
+    "personId": "chumash_shnilemun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ],
+    "notes": "The Sun and Sky Coyote are the opposing principals of the nightly peon game in the upper world, the Sun pulling against the people's interest while Sky Coyote pulls for them."
+   },
+   {
+    "kind": "ally",
+    "personId": "chumash_slow",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ],
+    "notes": "Golden Eagle is the Sun's partner against Sky Coyote and Morning Star in the celestial peon game."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kakunupmawa is the Chumash Sun, an aged torch-bearer of the upper world whose nightly gambling with Sky Coyote and his solstitial turning govern human fortune.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky: An Intellectual Odyssey Involving Chumash Astronomy, Cosmology, and Rock Art (Ballena Press Anthropological Papers No. 10, 1978)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kakunupmawa, the Sun, is among the most powerful of the Chumash sky people. The ethnographies recorded by John P. Harrington describe him as an old man, a widower living in the upper world with his two daughters, who each day carries a torch of rolled bark across the sky to give the world its light. His name was understood in the sacred language as the radiance of the child born at the winter solstice, and the great winter-solstice observance was held in his honour to coax him to begin his northward return so that warmth and the growing season might come back. Every night the Sun and his partner Golden Eagle play the gambling game of peon against Sky Coyote and Morning Star; the running score, settled at the winter solstice, determines whether the coming year will bring rain and abundance or famine and death."
+ },
+ {
+  "id": "chumash_momoy",
+  "name": {
+   "primary": "Momoy (the Datura old-woman)",
+   "alt": [
+    "Old Woman Momoy",
+    "Old Mother Momoy",
+    "Momoy",
+    "Mo'moy"
+   ],
+   "transliterations": {
+    "Chumash": "momoy",
+    "etymology": "the Chumash (Samala) word for the datura or jimsonweed plant, Datura wrightii, personified as an old woman who became the plant"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chumash",
+  "primaryTradition": "Chumash",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Chumash traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Chumash traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "An old woman of the First People whose hand-washing water grants prophetic visions, Momoy turns herself into the datura plant at the end of the mythic age after the great flood.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Richard B. Applegate, 'The Datura Cult Among the Chumash,' Journal of California Anthropology 2(1):7-17 (1975)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "datura-and-visions",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "momoy",
+     "script": "Latin",
+     "rom": "momoy"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Richard B. Applegate, 'The Datura Cult Among the Chumash,' Journal of California Anthropology 2(1):7-17 (1975)"
+     }
+    ]
+   },
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "grant_visions_through_datura",
+    "name": "to grant prophetic visions to those who drink her water",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "One who drinks the water in which Old Woman Momoy has washed her hands falls into a trance and receives visions of things to come; as the datura plant she is the source of the toloache used in the Chumash vision quest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Richard B. Applegate, 'The Datura Cult Among the Chumash,' Journal of California Anthropology 2(1):7-17 (1975)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     }
+    ]
+   },
+   {
+    "id": "become_the_datura_plant",
+    "name": "to transform herself into the datura plant at the close of the mythic age",
+    "term": {
+     "value": "momoy",
+     "script": "Latin",
+     "rom": "momoy"
+    },
+    "inheritability": "none",
+    "notes": "At the end of the time of the First People, after the flood, Momoy turned into the datura, so that the plant carries her name and her visionary power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Richard B. Applegate, 'The Datura Cult Among the Chumash,' Journal of California Anthropology 2(1):7-17 (1975)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "momoy",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Richard B. Applegate, 'The Datura Cult Among the Chumash,' Journal of California Anthropology 2(1):7-17 (1975)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Momoy is the Chumash old-woman personification of the datura plant whose water grants visions and who became the plant after the flood, central to the toloache vision quest.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Richard B. Applegate, 'The Datura Cult Among the Chumash,' Journal of California Anthropology 2(1):7-17 (1975)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Momoy is the personified datura, the old-woman spirit of the visionary plant the Spanish called toloache (Datura wrightii). In the narratives that Harrington collected and Blackburn published she is an aged grandmother of the First People, wealthy and wise; the water in which she has washed her hands induces, in whoever drinks it, a deep trance and prophetic dreams of the future. At the close of the mythic age, after the great flood that ended the time of the First People, she turned herself into the datura plant, and so her name momoy belongs both to the woman and to the herb. As the source of the toloache drunk in the Chumash vision quest she stands at the centre of the datura cult, in which initiates sought a dream-helper and knowledge of their destiny."
+ },
+ {
+  "id": "chumash_shnilemun",
+  "name": {
+   "primary": "Shnilemun (Sky Coyote)",
+   "alt": [
+    "Sky Coyote",
+    "Coyote of the Sky",
+    "Shnilemun",
+    "Snilemun"
+   ],
+   "transliterations": {
+    "Chumash": "Shnilemun",
+    "etymology": "a Chumash name for the celestial Coyote, the 'Coyote of the Sky', identified by ethnographers with the North Star, Polaris"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chumash",
+  "primaryTradition": "Chumash",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Chumash traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Chumash traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Sky Coyote dwells at the unmoving pivot of the upper world, identified with Polaris, where he takes the side of humankind in the nightly gambling for their fortunes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky: An Intellectual Odyssey Involving Chumash Astronomy, Cosmology, and Rock Art (Ballena Press Anthropological Papers No. 10, 1978)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "pole-star",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Shnilemun",
+     "script": "Latin",
+     "rom": "Shnilemun"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "champion_humankind_at_peon",
+    "name": "to take the side of human beings in the nightly peon game against the Sun",
+    "term": {
+     "value": "peon",
+     "script": "Latin",
+     "rom": "peon"
+    },
+    "inheritability": "none",
+    "notes": "Partnered with Morning Star, Sky Coyote plays the hand-game of peon against the Sun and Golden Eagle; when he wins the tally the people are granted a wet year and abundant food.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Shnilemun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "rival",
+    "personId": "chumash_kakunupmawa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child (University of California Press, 1975)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ],
+    "notes": "Sky Coyote and the Sun are the opposing principals of the nightly peon game, Sky Coyote pulling for the people against the Sun."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Shnilemun, the Sky Coyote, is the Chumash celestial trickster-protector identified with Polaris who champions humankind in the nightly peon game against the Sun.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky: An Intellectual Odyssey Involving Chumash Astronomy, Cosmology, and Rock Art (Ballena Press Anthropological Papers No. 10, 1978)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Shnilemun, the Sky Coyote or Coyote of the Sky, is a great being of the Chumash upper world whom the ethnographers Hudson and Underhay identified with Polaris, the one star that does not wheel through the night. He is at once trickster and protector, and above all the friend of humankind. Each night, partnered with Morning Star, he plays the gambling hand-game of peon against the Sun and Golden Eagle, and the result of the year's contest decides the people's fate: when Sky Coyote prevails the year brings rain and plentiful food, but when the Sun's side wins, famine follows and lives are lost. He is distinct from, though related in character to, the earthbound trickster Coyote of the many Chumash folk-tales."
+ },
+ {
+  "id": "chumash_slow",
+  "name": {
+   "primary": "Slo'w (the Golden Eagle)",
+   "alt": [
+    "Golden Eagle",
+    "Sl'ow",
+    "Slo'w",
+    "Slow"
+   ],
+   "transliterations": {
+    "Chumash": "Slo'w",
+    "etymology": "the Chumash word for the golden eagle, applied to the giant eagle on whose wings the upper world rests"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chumash",
+  "primaryTradition": "Chumash",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Chumash traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Chumash traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The giant Golden Eagle stands at the centre of the sky upholding the upper world upon his outstretched wings, stirring only to stretch them.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky: An Intellectual Odyssey Involving Chumash Astronomy, Cosmology, and Rock Art (Ballena Press Anthropological Papers No. 10, 1978)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky-vault",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Slo'w",
+     "script": "Latin",
+     "rom": "Slo'w"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "uphold_the_upper_world",
+    "name": "to hold up the upper world upon his outstretched wings",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The Golden Eagle stands motionless at the sky's centre, bearing the upper world on his wings; the Chumash account derives the phases of the moon from his slow stretching of those wings, which periodically hides the moon.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   },
+   {
+    "id": "partner_the_sun_at_peon",
+    "name": "to partner the Sun in the nightly peon game against Sky Coyote",
+    "term": {
+     "value": "peon",
+     "script": "Latin",
+     "rom": "peon"
+    },
+    "inheritability": "none",
+    "notes": "Golden Eagle plays at the Sun's side against Sky Coyote and Morning Star in the celestial gambling that decides human fortune.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Slo'w",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "chumash_kakunupmawa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky (Ballena Press, 1978)"
+     }
+    ],
+    "notes": "Golden Eagle is the Sun's partner against Sky Coyote and Morning Star in the nightly peon game of the upper world."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Slo'w, the giant Golden Eagle, is the Chumash sky being who upholds the upper world on his wings and whose wing-stretching is given as the cause of the moon's phases.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Travis Hudson and Ernest Underhay, Crystals in the Sky: An Intellectual Odyssey Involving Chumash Astronomy, Cosmology, and Rock Art (Ballena Press Anthropological Papers No. 10, 1978)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Thomas C. Blackburn, December's Child: A Book of Chumash Oral Narratives (University of California Press, 1975)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Slo'w is the giant Golden Eagle of the Chumash upper world. The astronomy recorded by Hudson and Underhay describes the house of the Sun and indeed the whole upper world as resting upon his outstretched wings, and tells that he stands motionless save when, to ease his tiredness, he slowly stretches those wings; in so doing he passes them before the moon, and the Chumash explained the waxing and waning of the moon by this stretching. He is also one of the upper-world gamblers, partnering the Sun against Sky Coyote and Morning Star in the nightly game of peon."
  },
  {
   "id": "chuukese_anulap",
@@ -206293,6 +207216,1376 @@ const NEW_FIGURES = [
   "notes": "Supreme creator and personified sky of pan-Malagasy religion, also titled Andriamanitra ('the Fragrant Lord') and Andriananahary ('Lord Creator'). With the self-created earth-being Ratovantany he forms the sky/earth creation pair: Zanahary gives the soul from the sky, Ratovantany the body from clay, and at death each reclaims his part (soul to sky/sun, body to earth) — the foundation of razana (ancestor) belief. Andriamanitra/Andriananahary are folded in as epithets rather than authored separately, since the sources treat them as titles of this same supreme being. The razana (ancestors) are venerated as a class but are not authored as named figures."
  },
  {
+  "id": "mandaean_abathur",
+  "name": {
+   "primary": "Abathur (the Third Life, weigher of souls)",
+   "alt": [
+    "Abatur",
+    "Abathur Muzania (Abathur of the Scales)",
+    "Abathur Rama (the lofty Abathur)",
+    "Bhaq Ziwa"
+   ],
+   "transliterations": {
+    "Mandaic": "ࡀࡁࡀࡕࡅࡓ",
+    "rom": "Abatur",
+    "etymology": "Glossed in the tradition as 'father of the uthras' (aba 'father'); scholars also connect Muzania to Mandaic muzania 'scales, balance', naming his role as weigher of souls at the threshold of the Light"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mandaean",
+  "primaryTradition": "Mandaean",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mandaean_yushamin"
+  ],
+  "parentRoles": [
+   "father"
+  ],
+  "temporal": {
+   "era": "Mandaean Gnostic religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Mandaean Gnostic religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Abathur, the Third Life and son of Yushamin, is seated at the boundary of the World of Light, where in his aspect Abathur Muzania he weighs the souls of the dead in his scales.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "weighing-of-souls",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "muzania",
+     "script": "Mandaic",
+     "rom": "muzania"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "sphereId": "boundary-of-the-light",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "uthra",
+     "script": "Mandaic",
+     "rom": "uthra"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "weigh_the_souls_of_the_dead",
+    "name": "to weigh the souls of the dead in his scales",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   },
+   {
+    "id": "guard_the_threshold",
+    "name": "to guard the threshold between the worlds of light and darkness",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mandaean_muzania",
+    "name": "the scales (muzania)",
+    "kind": "emblem",
+    "role": "the balance in which Abathur weighs the souls and deeds of the dead to determine their fate",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Abatur Muzania",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "original": "Abatur Rama",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "subordinate-to",
+    "personId": "mandaean_hayyi_rabbi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     }
+    ],
+    "notes": "Abathur is the Third Life, an emanation within the descending hierarchy issuing ultimately from the Great Life."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Abathur, the Third Life and son of Yushamin, is the Mandaean weigher of souls — Abathur of the Scales — who sits at the boundary of the Light and judges the dead; he is the father of the demiurge Ptahil.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Abathur, the Third Life, is the great judge-uthra of Mandaeism, glossed in the tradition as 'father of the uthras'. He is distinguished in two aspects: Abathur Rama, the lofty or celestial Abathur enthroned in the upper world, and Abathur Muzania, 'Abathur of the Scales', who is stationed at the frontier between light and darkness and there weighs the souls of the departed and their deeds in his balance, determining whether they ascend or are detained. Comparativists have likened this office to that of the Egyptian Thoth at the scales of the Book of the Dead. The Diwan Abatur, a richly illustrated scroll over twenty feet long, depicts him enthroned and maps the soul's passage through the purgatories. He is the son of Yushamin and the father of Ptahil."
+ },
+ {
+  "id": "mandaean_hayyi_rabbi",
+  "name": {
+   "primary": "Hayyi Rabbi (the Great Life)",
+   "alt": [
+    "Hiia Rbia",
+    "Hayyi Qadmaiyi (the First Life)",
+    "Malka d-Nhura (King of Light)",
+    "Mara d-Rabuta (Lord of Greatness)",
+    "Mana Rabba (the Great Mind)"
+   ],
+   "transliterations": {
+    "Mandaic": "ࡄࡉࡉࡀ ࡓࡁࡉࡀ",
+    "rom": "Hiia Rbia",
+    "etymology": "Classical Mandaic hiia 'life, the living' (Semitic root ḥ-y-y) + rbia 'great, mighty', i.e. 'the Great Life'; per Drower the title Mana Rabba ('Great Mind') marks the supreme over-mind from which souls are sparks"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mandaean",
+  "primaryTradition": "Mandaean",
+  "sex": "unknown",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Mandaean Gnostic religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Mandaean Gnostic religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "In the Ginza Rabba the Great Life is the uncreated supreme being, self-existent in the World of Light, from whom the lower Lives and all the uthras emanate.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "supreme-life-source",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hiia",
+     "script": "Mandaic",
+     "rom": "hiia"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   },
+   {
+    "sphereId": "light-and-radiance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nhura",
+     "script": "Mandaic",
+     "rom": "nhura"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "emanate_the_lower_lives",
+    "name": "to emanate the lower Lives and the worlds of light",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     }
+    ]
+   },
+   {
+    "id": "give_life_to_all",
+    "name": "to be the source of life that fills all existence",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Malka ḏ-Nhura",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   },
+   {
+    "original": "Mara ḏ-Rabuta",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "original": "Mana Rabba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Hayyi Rabbi, the Great Life, is the transcendent supreme God of Mandaeism, the uncreated source of light and life from whom all emanations proceed.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Hayyi Rabbi, the Great Life, is the supreme and wholly transcendent deity of the Mandaeans. Unlike the anthropomorphic gods of neighbouring traditions, the Great Life is conceived as an ineffable, boundless presence of light and life pervading the World of Light. The Great Life does not fashion the material world directly; rather, creation is willed and delegated through a descending series of emanated beings, the Lives and the uthras. Among the divine titles recorded in the Ginza Rabba and the Qolasta are King of Light (Malka d-Nhura), Lord of Greatness (Mara d-Rabuta) and the Great Mind (Mana Rabba), the over-soul from which individual human souls are held to be sparks."
+ },
+ {
+  "id": "mandaean_hibil_ziwa",
+  "name": {
+   "primary": "Hibil Ziwa (Abel of Splendour)",
+   "alt": [
+    "Hibil Ziua",
+    "Splendid Hibil",
+    "Yawar-Hibil"
+   ],
+   "transliterations": {
+    "Mandaic": "ࡄࡉࡁࡉࡋ ࡆࡉࡅࡀ",
+    "rom": "Hibil Ziua",
+    "etymology": "Mandaic Hibil (the Mandaean form corresponding to biblical Abel) + ziwa 'radiance, splendour' (Aramaic root z-h-w/z-y-w), i.e. 'Abel of Splendour'; in Mandaean usage Hibil Ziwa functions as a great descending light-being"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mandaean",
+  "primaryTradition": "Mandaean",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Mandaean Gnostic religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Mandaean Gnostic religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Hibil Ziwa makes a soteriological descent into the World of Darkness, where he overcomes its rulers and seals their abodes, as related in the fifth book of the Right Ginza and in the Diwan Maṣbuta ḏ-Hibil Ziwa.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "radiance-splendour",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ziwa",
+     "script": "Mandaic",
+     "rom": "ziwa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "sphereId": "victory-over-darkness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "descend_into_the_darkness",
+    "name": "to descend into the World of Darkness and return unharmed",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "id": "subdue_the_rulers_of_darkness",
+    "name": "to subdue and seal the rulers of the World of Darkness",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "In the Ginza he battles and binds the dark powers, including the giant Krun.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Carlos Gelbert (trans.), Ginza Rba: The Great Treasure (Sydney: Living Water Books, 2011)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Hibil Ziua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "subordinate-to",
+    "personId": "mandaean_hayyi_rabbi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ],
+    "notes": "Hibil Ziwa is a great uthra of the World of Light, acting on behalf of the Great Life in his descent against the powers of darkness."
+   },
+   {
+    "kind": "ally",
+    "personId": "mandaean_manda_d_hayyi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "notes": "Hibil Ziwa and Manda d-Hayyi are paired saving uthras, at times identified, kept distinct in the esoteric scrolls."
+   },
+   {
+    "kind": "enemy",
+    "personId": "mandaean_ruha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "notes": "In his descent Hibil Ziwa confronts and subdues Ruha and the powers of the lower world."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hibil Ziwa, 'Abel of Splendour', is a great Mandaean light-being (uthra) who descends into the World of Darkness, defeats its rulers and seals them, securing the cosmos for the Light.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Hibil Ziwa, 'Abel of Splendour', is among the foremost saving uthras of Mandaeism. His great deed is a descent (a soteriological katabasis) into the World of Darkness, where he overcomes its monstrous rulers — among them the giant Krun — and seals their abodes before returning to the Light, undergoing ritual baptisms before and after. This descent is narrated in the fifth book of the Right Ginza and in a dedicated scroll, the Baptism of Hibil Ziwa (Diwan Maṣbuta d-Hibil Ziwa). Closely linked to Manda d-Hayyi, with whom he is sometimes identified, Hibil Ziwa is still invoked by name by Mandaeans in moments of danger."
+ },
+ {
+  "id": "mandaean_manda_d_hayyi",
+  "name": {
+   "primary": "Manda d-Hayyi (Knowledge of Life)",
+   "alt": [
+    "Manda ḏ-Hiia",
+    "Manda d-Hiia",
+    "the Gnosis of Life"
+   ],
+   "transliterations": {
+    "Mandaic": "ࡌࡀࡍࡃࡀ ࡖࡄࡉࡉࡀ",
+    "rom": "Manda ḏ-Hiia",
+    "etymology": "Classical Mandaic manda 'knowledge, gnosis' + ḏ-hiia 'of (the) Life', i.e. 'Knowledge of Life' — the personified saving gnosis sent from the Great Life; the term manda also names the religion's own self-designation"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mandaean",
+  "primaryTradition": "Mandaean",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Mandaean Gnostic religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Mandaean Gnostic religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Manda d-Hayyi is sent forth by the Great Life as the foremost messenger-uthra who brings saving knowledge (manda) down to Tibil, the earthly world.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "saving-knowledge-gnosis",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "manda",
+     "script": "Mandaic",
+     "rom": "manda"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "sphereId": "revelation-and-messengership",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "uthra",
+     "script": "Mandaic",
+     "rom": "uthra"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Edmondo Lupieri, The Mandaeans: The Last Gnostics, trans. C. Hindley (Grand Rapids: Eerdmans, 2002)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "reveal_saving_knowledge",
+    "name": "to bring the saving knowledge of Life to the world",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "id": "guide_souls_upward",
+    "name": "to summon and guide the souls of the faithful upward to the Light",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, Mandaeism (Iconography of Religions XXI/1) (Leiden: Brill, 1978)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Manda ḏ-Hiia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "subordinate-to",
+    "personId": "mandaean_hayyi_rabbi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ],
+    "notes": "Manda d-Hayyi is sent forth by the Great Life, whose saving knowledge he personifies and conveys to the world."
+   },
+   {
+    "kind": "ally",
+    "personId": "mandaean_hibil_ziwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, Diwan Abatur, or Progress through the Purgatories (Vatican City: Biblioteca Apostolica Vaticana, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "notes": "Manda d-Hayyi and Hibil Ziwa are closely associated saving uthras, at times identified with one another though kept distinct in the Diwan Abatur."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Manda d-Hayyi, 'Knowledge of Life', is the chief uthra of Mandaeism, the personified redeeming gnosis sent by the Great Life as messenger and saviour of souls.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Manda d-Hayyi, 'Knowledge of Life', is the most important of the uthras (the emanated light-beings of Mandaeism). His name embodies the central concept of the faith — manda, saving knowledge or gnosis — and the Mandaeans take their own name from this word. Sent forth by the Great Life, he descends to the world of mortals to summon souls and reveal the way of ascent back to the World of Light. In the Mandaean Book of John he appears to John the Baptizer. He is closely bound up with Hibil Ziwa, with whom he is sometimes identified, though the two are treated as distinct beings in the liturgical and esoteric scrolls."
+ },
+ {
+  "id": "mandaean_ptahil",
+  "name": {
+   "primary": "Ptahil (the Fourth Life, the demiurge)",
+   "alt": [
+    "Ptahil-Uthra",
+    "Ptahil Ziwa",
+    "Gabriel the Messenger (in some texts)"
+   ],
+   "transliterations": {
+    "Mandaic": "ࡐࡕࡀࡄࡉࡋ",
+    "rom": "Ptahil",
+    "etymology": "Etymology debated: Lidzbarski and others derive it from the Egyptian creator-god Ptah + the divine element -il/-el ('god'); Norberg and Kraeling rather connect it to the Mandaic verb ptaha 'to open / to create', hence 'God opened/fashioned'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mandaean",
+  "primaryTradition": "Mandaean",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mandaean_abathur"
+  ],
+  "parentRoles": [
+   "father"
+  ],
+  "temporal": {
+   "era": "Mandaean Gnostic religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Mandaean Gnostic religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Ptahil, the Fourth Life and son of Abathur, is commissioned to condense the dark waters into solid ground and so to shape Tibil, the material earth, though he cannot of himself endow his creatures with living souls.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fashioning-the-material-world",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tibil",
+     "script": "Mandaic",
+     "rom": "Tibil"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   },
+   {
+    "sphereId": "craft-and-demiurgy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "uthra",
+     "script": "Mandaic",
+     "rom": "uthra"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shape_the_material_earth",
+    "name": "to shape the material earth from the primordial waters",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Instructed by Abathur, he condenses the stagnant dark waters into the solid world of Tibil.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   },
+   {
+    "id": "fashion_the_body_of_adam",
+    "name": "to fashion the body of the first man",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "He forms the bodies of the first humans but cannot make them stand or live until a soul is sent from the higher light-beings.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Ptahil-Uthra",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "subordinate-to",
+    "personId": "mandaean_abathur",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ],
+    "notes": "Ptahil acts on the instructions of his father Abathur, who supplies him the materials and the task of forming the material world."
+   },
+   {
+    "kind": "ally",
+    "personId": "mandaean_ruha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "notes": "In the work of fashioning the lower world Ptahil is associated with Ruha and the planetary powers of the lower realm."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ptahil, the Fourth Life and son of Abathur, is the Mandaean demiurge who shapes the material world Tibil and the body of the first man, but cannot animate his creatures without a soul sent from above.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Ptahil, the Fourth Life, is the demiurge of Mandaean cosmology — the uthra who actually fashions the material world. Commissioned and instructed by his father Abathur, he condenses the stagnant dark waters into solidity to form Tibil, the earthly realm, and shapes the bodies of the first human beings. His work is, however, flawed and incomplete: he can form bodies but cannot endow them with living souls, so that the higher light-beings must intervene to set the divine spark within Adam. Because the material world is the product of this lesser, half-failing craftsman rather than of the Great Life directly, Mandaean theology regards the created cosmos with deep ambivalence. The name is variously derived from the Egyptian creator-god Ptah or from the Mandaic verb 'to open/fashion'."
+ },
+ {
+  "id": "mandaean_ruha",
+  "name": {
+   "primary": "Ruha (the Spirit of the lower world)",
+   "alt": [
+    "Ruha d-Qudsha (the Holy Spirit)",
+    "Ruha Masṭanita (Ruha the seductress)",
+    "Namrus",
+    "Hiwat"
+   ],
+   "transliterations": {
+    "Mandaic": "ࡓࡅࡄࡀ",
+    "rom": "Ruha",
+    "etymology": "Classical Mandaic ruha 'spirit, breath' (Semitic root r-w-ḥ; cognate with Hebrew ruaḥ and Arabic rūḥ); in Mandaean usage the bare 'Spirit' denotes the ambivalent female ruler of the lower world"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mandaean",
+  "primaryTradition": "Mandaean",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Mandaean Gnostic religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Mandaean Gnostic religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Ruha, the female spirit of the lower world, brings forth the seven planets and the twelve signs of the zodiac and rules over them in the realm below the World of Light.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "spirit-of-the-lower-world",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ruha",
+     "script": "Mandaic",
+     "rom": "ruha"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "sphereId": "planets-and-zodiac",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "šuba",
+     "script": "Mandaic",
+     "rom": "šuba"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring_forth_the_planets",
+    "name": "to bring forth the seven planets and twelve signs of the zodiac",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "id": "ensnare_souls_in_matter",
+    "name": "to entangle souls in the material world and hinder their ascent",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Ruha ḏ-Qudša",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   },
+   {
+    "original": "Ruha Masṭanita",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "mandaean_hibil_ziwa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "notes": "Ruha and the powers of the lower world are confronted and subdued by Hibil Ziwa in his descent."
+   },
+   {
+    "kind": "ally",
+    "personId": "mandaean_ptahil",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "notes": "Ruha and her planetary offspring are associated with Ptahil in the fashioning of the lower, material world."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ruha, 'the Spirit', is the ambivalent female ruler of the Mandaean lower world, mother of the seven planets and twelve zodiacal signs, who entangles souls in matter.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Ginza: Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Ruha, simply 'the Spirit', is the great female power of the lower world in Mandaean cosmology, a deeply ambivalent figure. Though her name means 'spirit' and she bears the title Ruha d-Qudsha, 'the Holy Spirit', she is not benevolent: she is the mother of the seven planets (the šuba) and the twelve signs of the zodiac (the trisar), the astral powers that govern and bind the material cosmos. She personifies the lower, passionate and material element that entangles human souls and impedes their return to the Light, and is portrayed as a seductress (Ruha Masṭanita). In the cosmological narratives she rules the realm of darkness together with her offspring, and is confronted by the descending saviour Hibil Ziwa."
+ },
+ {
+  "id": "mandaean_yushamin",
+  "name": {
+   "primary": "Yushamin (the Second Life)",
+   "alt": [
+    "Yušamin",
+    "Joshamin",
+    "Yushamin Ziwa",
+    "the Ancient One"
+   ],
+   "transliterations": {
+    "Mandaic": "ࡉࡅࡔࡀࡌࡉࡍ",
+    "rom": "Yušamin",
+    "etymology": "Commonly explained as containing the divine element Yao/Yahu plus Aramaic šmayn 'heaven(s)', hence something like 'Yao of heaven'; Yushamin bears the title of the Second Life and 'father of the uthras'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mandaean",
+  "primaryTradition": "Mandaean",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mandaean_hayyi_rabbi"
+  ],
+  "parentRoles": [
+   "emanator"
+  ],
+  "temporal": {
+   "era": "Mandaean Gnostic religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Mandaean Gnostic religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Yushamin, the Second Life, is the first emanation to proceed from the Great Life; desiring a world of his own he rebels against the King of Light, is chastised, and is at length forgiven.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Das Johannesbuch der Mandäer (Giessen: Töpelmann, 1915)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "first-emanation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "uthra",
+     "script": "Mandaic",
+     "rom": "uthra"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "generate_lower_uthras",
+    "name": "to generate the further uthras of the lower world",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Yušamin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Das Johannesbuch der Mandäer (Giessen: Töpelmann, 1915)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E.S. Drower, The Mandaeans of Iraq and Iran (Oxford: Clarendon Press, 1937)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "subordinate-to",
+    "personId": "mandaean_hayyi_rabbi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Das Johannesbuch der Mandäer (Giessen: Töpelmann, 1915)"
+     }
+    ],
+    "notes": "Yushamin is the Second Life, the first emanation proceeding from the Great Life, against whom he briefly rebels before reconciliation."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Yushamin, the Second Life, is the primal uthra emanated first from the Great Life, remembered chiefly for his rebellion against the King of Light and subsequent forgiveness.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Mark Lidzbarski (trans.), Das Johannesbuch der Mandäer (Giessen: Töpelmann, 1915)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kurt Rudolph, 'Mandaeans ii. The Mandaean Religion', Encyclopaedia Iranica (online ed., 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jorunn Jacobsen Buckley, The Mandaeans: Ancient Texts and Modern People (New York: Oxford University Press, 2002)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Yushamin, called the Second Life and 'the Ancient One', is the first emanation to issue from the Great Life and stands at the head of the descending hierarchy of Lives. His role is comparatively obscure: the chief narrative attached to him is that of rebellion. Wishing to create a world of his own, he opposes the King of Light and is punished for it, though he is ultimately pardoned. The opening chapters of the Mandaean Book of John recount the progress of the rebellion of Yushamin and his sons and their eventual reconciliation. Buckley reads him as both a faultless light-world uthra and the prototype of a priest who has erred in ritual. He is the father of Abathur, the Third Life."
+ },
+ {
   "id": "mangaian_ina",
   "name": {
    "primary": "Ina",
@@ -239228,6 +241521,1088 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Palauan sky high-god. Name parsed as uchel ('foremost, beginning') + eanged ('sky, heaven'); gloss 'First of Heaven'. Distinguished from Chuab/Milad earth-origin cycle."
+ },
+ {
+  "id": "palmyrene_aglibol",
+  "name": {
+   "primary": "Aglibol",
+   "alt": [
+    "ʿAglibol",
+    "Aglibôl"
+   ],
+   "transliterations": {
+    "aramaic": "ʿglbwl",
+    "etymology": "Usually rendered 'calf of Bel' (Aramaic ʿgl, 'calf') or alternatively 'chariot of Bel'; the bull/calf imagery suits a lunar deity whose crescent resembles horns."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Palmyrene",
+  "primaryTradition": "Palmyrene",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "hellenistic-roman-palmyra"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "hellenistic-roman-palmyra",
+    "eraOrdering": 0,
+    "startEvent": "Aglibol the moon god is attested from an inscription of 17 BCE pairing him with the sun god Malakbel, and he served as the lunar member of both the triad of Bel and the triad of Baalshamin.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "moon-and-lunar-cycle",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ʿglbwl",
+     "script": "Palmyrene Aramaic",
+     "rom": "Aglibol"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   },
+   {
+    "sphereId": "night-sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "carry_the_lunar_light",
+    "name": "to bear the light of the moon through the night",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As the lunar god Aglibol governed the moon and its monthly cycle, complementing the solar gods of Palmyra.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "palmyrene_crescent_aglibol",
+    "name": "Lunar crescent",
+    "kind": "emblem",
+    "role": "the crescent rising behind Aglibol's shoulders that identifies him as the moon god in Palmyrene relief.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   },
+   {
+    "id": "palmyrene_sacred_garden_aglibol",
+    "name": "Sacred Garden sanctuary",
+    "kind": "sanctuary",
+    "role": "the gnt' 'ilym, one of Palmyra's four chief sanctuaries, with two altars and a sacred cypress, where Aglibol was venerated together with Malakbel.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "ʿglbwl",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "palmyrene_malakbel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ],
+    "notes": "Aglibol (moon) and Malakbel (sun) form the celebrated Palmyrene pair venerated together in the Sacred Garden and on the sacred-garden reliefs."
+   },
+   {
+    "kind": "companion",
+    "personId": "palmyrene_bel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lucinda Dirven, The Palmyrenes of Dura-Europos: A Study of Religious Interaction in Roman Syria (Religions in the Graeco-Roman World 138), Leiden: Brill, 1999."
+     }
+    ],
+    "notes": "Aglibol completes the great triad of Bel as its lunar member."
+   },
+   {
+    "kind": "companion",
+    "personId": "palmyrene_yarhibol",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lucinda Dirven, The Palmyrenes of Dura-Europos: A Study of Religious Interaction in Roman Syria (Religions in the Graeco-Roman World 138), Leiden: Brill, 1999."
+     }
+    ],
+    "notes": "Aglibol (moon) is regularly paired beside Yarhibol (sun) as the two flanking deities of Bel."
+   },
+   {
+    "kind": "subordinate-to",
+    "personId": "palmyrene_baalshamin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Collart and Jacques Vicari, Le sanctuaire de Baalshamîn à Palmyre, vol. I (Bibliotheca Helvetica Romana 10), Rome: Institut suisse de Rome, 1969."
+     }
+    ],
+    "notes": "Aglibol also serves as a lesser member of the triad of the sky god Baalshamin, alongside Malakbel."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Aglibol was the Palmyrene moon god, attested from 17 BCE, lunar member of the triad of Bel and of the triad of Baalshamin and the constant companion of the sun god Malakbel.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     },
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Aglibol was the moon god of Palmyra, identifiable by the lunar crescent behind his shoulders. His name is usually read 'calf of Bel'. He is among the earliest securely attested Palmyrene deities, named in an inscription of 17 BCE alongside the sun god Malakbel, with whom he was venerated in the Sacred Garden (gnt' 'ilym), a sanctuary with two altars and a sacred cypress tended by the priestly tribe of the Bene Komare. Aglibol served simultaneously as the lunar partner in two triads: the great triad of Bel (with the solar Yarhibol) and the triad of the sky god Baalshamin (with Malakbel)."
+ },
+ {
+  "id": "palmyrene_allat",
+  "name": {
+   "primary": "Allat",
+   "alt": [
+    "Al-Lat",
+    "Athena-Allat",
+    "Lat"
+   ],
+   "transliterations": {
+    "aramaic": "ʾlt",
+    "etymology": "'The Goddess', a contraction of al-ilahat ('the goddess'); a major pre-Islamic Arabian deity adopted into the Palmyrene pantheon and assimilated to Greek Athena."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Palmyrene",
+  "primaryTradition": "Palmyrene",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "hellenistic-roman-palmyra"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "hellenistic-roman-palmyra",
+    "eraOrdering": 0,
+    "startEvent": "Allat, the pre-Islamic Arabian goddess, was worshipped at Palmyra in a temple in the western quarter, by the second century portrayed as Athena-Allat with helmet and aegis and guarded by a great limestone lion.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war-and-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ʾlt",
+     "script": "Palmyrene Aramaic",
+     "rom": "Allat"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   },
+   {
+    "sphereId": "wild-animals-and-the-desert",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shield_the_worshipper",
+    "name": "to protect her worshippers in war",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Assimilated to Athena, Allat was venerated as an armed protectress bearing helmet, aegis and spear.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "palmyrene_lion_of_allat",
+    "name": "Lion of Allat",
+    "kind": "regalia",
+    "role": "the colossal limestone lion sheltering a gazelle between its paws that guarded the entrance to her Palmyrene temple.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   },
+   {
+    "id": "palmyrene_aegis_allat",
+    "name": "Helmet and aegis",
+    "kind": "regalia",
+    "role": "the Athena-style helmet, aegis and spear worn by Allat in her assimilated warrior iconography at Palmyra.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "ʾlt",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Allat was a pre-Islamic Arabian goddess worshipped at Palmyra, assimilated to Athena and associated with the lion, with her own temple in the western quarter of the city.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Michał Gawlikowski, Le sanctuaire d'Allat à Palmyre, in Studia Palmyreńskie, Warsaw, 1977."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Allat, 'the Goddess', was a major pre-Islamic Arabian deity who held an important place in the Palmyrene pantheon, reflecting the Arab component of the city's population. Her temple stood in the western quarter of Palmyra. By the second century CE she was thoroughly assimilated to Greek Athena and styled Athena-Allat, depicted with helmet, aegis and spear, while retaining Semitic cultic forms. Her most famous monument is the colossal limestone lion that guarded her temple, shown sheltering a gazelle between its paws, an emblem of her protective power. She was equated by the Palmyrenes with such goddesses as Atargatis and identified in the Greek world with Athena."
+ },
+ {
+  "id": "palmyrene_baalshamin",
+  "name": {
+   "primary": "Baalshamin",
+   "alt": [
+    "Baʿalshamem",
+    "Baal Shamin",
+    "Beelshamen"
+   ],
+   "transliterations": {
+    "aramaic": "bʿl smyn",
+    "etymology": "'Lord of the Heavens', from baʿal ('lord') and shamayin ('heavens'); a Northwest Semitic sky-god title applied to the supreme weather and sky deity."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Palmyrene",
+  "primaryTradition": "Palmyrene",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "hellenistic-roman-palmyra"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "hellenistic-roman-palmyra",
+    "eraOrdering": 0,
+    "startEvent": "Baalshamin, 'Lord of the Heavens' and god of storms, rains and fertility, headed his own sanctuary and triad at Palmyra, his temple precinct attested in dedications from the first century onward.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Collart and Jacques Vicari, Le sanctuaire de Baalshamîn à Palmyre, vol. I (Bibliotheca Helvetica Romana 10), Rome: Institut suisse de Rome, 1969."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky-and-heavens",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bʿl smyn",
+     "script": "Palmyrene Aramaic",
+     "rom": "Baalshamin"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   },
+   {
+    "sphereId": "storm-rain-and-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Collart and Jacques Vicari, Le sanctuaire de Baalshamîn à Palmyre, vol. I (Bibliotheca Helvetica Romana 10), Rome: Institut suisse de Rome, 1969."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send_the_rains",
+    "name": "to send the storms and the life-giving rains",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "A dedicatory inscription of 130/131 CE honours him as Lord of Heaven and god of fertility, of storms and of rains.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "palmyrene_thunderbolt_baalshamin",
+    "name": "Thunderbolt and eagle",
+    "kind": "emblem",
+    "role": "the lightning bolt and eagle, attributes of Baalshamin as celestial storm-lord.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   },
+   {
+    "id": "palmyrene_sanctuary_baalshamin",
+    "name": "Sanctuary of Baalshamin",
+    "kind": "sanctuary",
+    "role": "the northern temple precinct of Baalshamin, its cella dedicated 130/131 CE under the clerk Malé son of Yarhai.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Collart and Jacques Vicari, Le sanctuaire de Baalshamîn à Palmyre, vol. I (Bibliotheca Helvetica Romana 10), Rome: Institut suisse de Rome, 1969."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "mrʾ ʿlmʾ",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Baalshamin, 'Lord of the Heavens', was the Palmyrene sky and storm god, one of the city's two supreme deities, head of a triad with Aglibol and Malakbel.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Collart and Jacques Vicari, Le sanctuaire de Baalshamîn à Palmyre, vol. I (Bibliotheca Helvetica Romana 10), Rome: Institut suisse de Rome, 1969."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Baalshamin, 'Lord of the Heavens', was the sky god of Palmyra and, alongside Bel, one of the city's two supreme deities. His attributes were the eagle and the thunderbolt, and a dedicatory inscription of 130/131 CE from his sanctuary honours him as Lord of Heaven and god of fertility, of storms and of rains; in Greco-Roman contexts he was equated with Zeus Hypsistos, 'the Most High'. He presided over his own triad together with the moon god Aglibol and the sun god Malakbel, paralleling Bel's triad. His well-preserved sanctuary in the northern quarter of the city, excavated and published by a Swiss mission, was among Palmyra's principal temples."
+ },
+ {
+  "id": "palmyrene_bel",
+  "name": {
+   "primary": "Bel",
+   "alt": [
+    "Bol",
+    "Bel of Palmyra"
+   ],
+   "transliterations": {
+    "aramaic": "bl",
+    "etymology": "From the Northwest Semitic title baʿal, 'lord'; the older local form Bol was assimilated to the Babylonian Bel (Bel-Marduk), an honorific 'lord' rather than a personal name."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Palmyrene",
+  "primaryTradition": "Palmyrene",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "hellenistic-roman-palmyra"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "hellenistic-roman-palmyra",
+    "eraOrdering": 0,
+    "startEvent": "Bel headed the Palmyrene pantheon as cosmic lord of the universe and of fate, his great sanctuary in the heart of Tadmor being consecrated in 32 CE.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cosmic-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bl",
+     "script": "Palmyrene Aramaic",
+     "rom": "Bel"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   },
+   {
+    "sphereId": "fate-and-destiny",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   },
+   {
+    "sphereId": "weather-and-storm",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ordain_the_cosmic_order",
+    "name": "to govern the order of the heavens and the cosmos",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As supreme lord Bel was held to rule the planetary deities and the movement of the heavens, a Mesopotamian inheritance from Bel-Marduk.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   },
+   {
+    "id": "decree_human_destiny",
+    "name": "to decree the fate of mortals",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Palmyrene dedications invoke Bel as master of fate, the deity who allots fortune to his worshippers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "palmyrene_temple_of_bel",
+    "name": "Temple of Bel at Palmyra",
+    "kind": "sanctuary",
+    "role": "the great walled sanctuary in the heart of Tadmor, its cella consecrated in 32 CE and forming the centre of civic cult.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Michał Gawlikowski, Le temple palmyrénien: étude d'épigraphie et de topographie historique (Palmyre VI), Warsaw: Éditions scientifiques de Pologne, 1973."
+     }
+    ]
+   },
+   {
+    "id": "palmyrene_bel_eagle",
+    "name": "Eagle of Bel",
+    "kind": "emblem",
+    "role": "the spread-winged eagle carved on the temple ceiling, signifying Bel's heavenly and cosmic dominion.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "bl",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "palmyrene_yarhibol",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lucinda Dirven, The Palmyrenes of Dura-Europos: A Study of Religious Interaction in Roman Syria (Religions in the Graeco-Roman World 138), Leiden: Brill, 1999."
+     }
+    ],
+    "notes": "Yarhibol attends Bel as a member of the great triad of Palmyra and is regularly depicted at his side."
+   },
+   {
+    "kind": "companion",
+    "personId": "palmyrene_aglibol",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lucinda Dirven, The Palmyrenes of Dura-Europos: A Study of Religious Interaction in Roman Syria (Religions in the Graeco-Roman World 138), Leiden: Brill, 1999."
+     }
+    ],
+    "notes": "Aglibol, the moon, completes the triad of Bel and stands beside the supreme god in cult reliefs."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Bel was the supreme god of Palmyra, a cosmic lord of the universe and of fate descended from Babylonian Bel-Marduk, whose great temple was consecrated in 32 CE.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Bel was the chief deity of Palmyra and the head of its civic pantheon. His name, an assimilation of the older local title Bol to the Babylonian Bel (Bel-Marduk), means simply 'lord'. He was venerated as ruler of the cosmos and arbiter of fate, with associations to the heavens and to storms. His monumental sanctuary, the Temple of Bel, dominated the city; its cella was consecrated in 32 CE. In cult he headed the celebrated triad of Bel together with the solar Yarhibol and the lunar Aglibol, and his consort was the goddess Astarte (Beltis). Thousands of clay banqueting tesserae from his sanctuary attest the central place of his cult in the social and religious life of the caravan city."
+ },
+ {
+  "id": "palmyrene_malakbel",
+  "name": {
+   "primary": "Malakbel",
+   "alt": [
+    "Malak-Bel",
+    "Malakbêl",
+    "Malachbelus"
+   ],
+   "transliterations": {
+    "aramaic": "mlkbl",
+    "etymology": "'Messenger of Bel', from Semitic mlk ('messenger, angel') and Bel ('lord'), marking his role as the acolyte and envoy of the supreme god."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Palmyrene",
+  "primaryTradition": "Palmyrene",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "hellenistic-roman-palmyra"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "hellenistic-roman-palmyra",
+    "eraOrdering": 0,
+    "startEvent": "Malakbel, the 'Messenger of Bel' and a Palmyrene sun god, was venerated with the moon god Aglibol in the Sacred Garden and later worshipped at Rome as Sol Sanctissimus.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sun-and-solar-light",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mlkbl",
+     "script": "Palmyrene Aramaic",
+     "rom": "Malakbel"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   },
+   {
+    "sphereId": "vegetation-and-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   },
+   {
+    "sphereId": "divine-messengership",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mlk",
+     "script": "Palmyrene Aramaic",
+     "rom": "malak (messenger)"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "carry_the_word_of_bel",
+    "name": "to carry the messages of Bel",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "His very name marks him as the envoy and acolyte of the supreme god Bel.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   },
+   {
+    "id": "quicken_the_sacred_garden",
+    "name": "to bring forth growth and vegetation",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As a solar power tied to the Sacred Garden and its cypress, Malakbel carried associations of vegetation and prosperity.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "palmyrene_solar_chariot_malakbel",
+    "name": "Griffin-drawn solar chariot",
+    "kind": "emblem",
+    "role": "the chariot, sometimes drawn by griffins or winged creatures, in which Malakbel rides as the ascending sun.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   },
+   {
+    "id": "palmyrene_sacred_cypress_malakbel",
+    "name": "Sacred cypress of the garden",
+    "kind": "emblem",
+    "role": "the cypress of the gnt' 'ilym sanctuary associated with Malakbel's vegetative and solar aspect.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "mlkbl",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "palmyrene_aglibol",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ],
+    "notes": "Malakbel (sun) and Aglibol (moon) form the inseparable Palmyrene pair of the Sacred Garden reliefs."
+   },
+   {
+    "kind": "subordinate-to",
+    "personId": "palmyrene_bel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ],
+    "notes": "As 'Messenger of Bel' Malakbel is by name the acolyte and envoy of the supreme god."
+   },
+   {
+    "kind": "subordinate-to",
+    "personId": "palmyrene_baalshamin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Collart and Jacques Vicari, Le sanctuaire de Baalshamîn à Palmyre, vol. I (Bibliotheca Helvetica Romana 10), Rome: Institut suisse de Rome, 1969."
+     }
+    ],
+    "notes": "Malakbel is the solar member of the triad of the sky god Baalshamin, paired there with Aglibol."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Malakbel, the 'Messenger of Bel', was a Palmyrene sun and vegetation god, paired with the moon god Aglibol in the Sacred Garden and later identified at Rome with Sol.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Steven E. Hijmans, Sol: The Sun in the Art and Religions of Rome, Groningen: University of Groningen, 2009."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Malakbel, whose name means 'Messenger of Bel', was a Palmyrene sun god and the envoy or acolyte of the supreme god Bel. He carried a strong vegetative and fertilising aspect, expressed through his association with the sacred cypress of the Sacred Garden (gnt' 'ilym), and was depicted ascending in a chariot drawn by griffins. His cult is attested from an inscription of 17 BCE in which he is paired with the moon god Aglibol, with whom he formed an inseparable solar-lunar couple tended by the priestly Bene Komare. Through the Palmyrene merchant diaspora his cult reached Rome, where he was identified with Sol and honoured as Deus Sol Sanctissimus."
+ },
+ {
+  "id": "palmyrene_yarhibol",
+  "name": {
+   "primary": "Yarhibol",
+   "alt": [
+    "Iarhibol",
+    "Yarhibôl"
+   ],
+   "transliterations": {
+    "aramaic": "yrhbwl",
+    "etymology": "Commonly read as 'Yarih (moon) of Bel', linking the name to the Northwest Semitic moon god Yarikh; the lunar onomastics contrast with his later solar role at Palmyra."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Palmyrene",
+  "primaryTradition": "Palmyrene",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "hellenistic-roman-palmyra"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "hellenistic-roman-palmyra",
+    "eraOrdering": 0,
+    "startEvent": "Yarhibol began as the tutelary numen and 'Gad' (guardian) of the Efqa spring and rose to become the solar god of the triad of Bel, depicted with a radiate halo.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sun-and-solar-light",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yrhbwl",
+     "script": "Palmyrene Aramaic",
+     "rom": "Yarhibol"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   },
+   {
+    "sphereId": "springs-and-sacred-water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gd",
+     "script": "Palmyrene Aramaic",
+     "rom": "Gad (guardian/fortune of the spring)"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   },
+   {
+    "sphereId": "oracles-and-divination",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give_oracular_judgement",
+    "name": "to deliver oracular judgements at the spring",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As lord of the Efqa source Yarhibol functioned as an oracular deity whose sanction was sought by the Palmyrenes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   },
+   {
+    "id": "guard_the_spring_waters",
+    "name": "to guard the life-giving waters of the Efqa spring",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Yarhibol was the genius loci of the perennial Efqa source that made the oasis habitable.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "palmyrene_radiate_nimbus_yarhibol",
+    "name": "Solar radiate nimbus",
+    "kind": "emblem",
+    "role": "the rayed halo encircling Yarhibol's head that marks him as the sun god in Palmyrene relief.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "gd ʿyn",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ted Kaizer, The Religious Life of Palmyra (Oriens et Occidens 4), Stuttgart: Franz Steiner Verlag, 2002."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "palmyrene_bel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lucinda Dirven, The Palmyrenes of Dura-Europos: A Study of Religious Interaction in Roman Syria (Religions in the Graeco-Roman World 138), Leiden: Brill, 1999."
+     }
+    ],
+    "notes": "Yarhibol stands among the attendants of Bel as the solar member of the great triad of Palmyra."
+   },
+   {
+    "kind": "companion",
+    "personId": "palmyrene_aglibol",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lucinda Dirven, The Palmyrenes of Dura-Europos: A Study of Religious Interaction in Roman Syria (Religions in the Graeco-Roman World 138), Leiden: Brill, 1999."
+     }
+    ],
+    "notes": "Yarhibol (sun) and Aglibol (moon) flank Bel together, Aglibol conventionally placed at Yarhibol's right hand."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Yarhibol was the Palmyrene solar god and oracular guardian of the Efqa spring, the secondary partner of Bel in the city's principal triad.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Javier Teixidor, The Pantheon of Palmyra (EPRO 79), Leiden: Brill, 1979."
+     },
+     {
+      "kind": "secondary",
+      "reference": "H. J. W. Drijvers, The Religion of Palmyra (Iconography of Religions XV/15), Leiden: Brill, 1976."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Yarhibol was a major Palmyrene god, by the Roman period the sun god of the triad of Bel, depicted with a radiate solar halo. His name is generally understood as 'Yarih (moon) of Bel', and his lunar onomastics together with crescents on some images point to an earlier lunar character before his assimilation to the sun. He originated as the tutelary spirit and Gad (guardian-fortune) of the Efqa spring, the perennial sulphur source on which the oasis depended, and in that capacity served as an oracular deity styled 'lord of the spring'. In the great triad he flanks Bel together with the moon god Aglibol."
  },
  {
   "id": "pawnee_evening_star",
@@ -303679,6 +307054,1191 @@ const NEW_FIGURES = [
     "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
    }
   ]
+ },
+ {
+  "id": "yolngu_barnumbirr",
+  "name": {
+   "primary": "Barnumbirr (the Morning Star)",
+   "alt": [
+    "Banumbirr",
+    "Bunumbirr",
+    "Barnumbir"
+   ],
+   "transliterations": {
+    "Yolngu-Matha": "Barnumbirr",
+    "etymology": "Yolngu-Matha name of the planet Venus as the Morning Star; the same spirit-being is honoured in the Banumbirr (Morning Star) mortuary ceremony."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yolngu",
+  "primaryTradition": "Yolngu",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Yolngu traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Yolngu traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Rising before dawn over the island of Bralgu, Barnumbirr guided the Djang'kawu ancestors across the Arafura Sea to the mainland, then flew from east to west naming and creating the country before being drawn back toward the sun on her string.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Raymond P. Norris & Duane W. Hamacher, 'The Astronomy of Aboriginal Australia', arXiv:0906.0155 (2009)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "stars-and-planets",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Barnumbirr",
+     "script": "Latin",
+     "rom": "Barnumbirr"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Raymond P. Norris & Duane W. Hamacher, 'The Astronomy of Aboriginal Australia', arXiv:0906.0155 (2009)"
+     }
+    ]
+   },
+   {
+    "sphereId": "death-and-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Raymond P. Norris & Duane W. Hamacher, 'The Astronomy of Aboriginal Australia', arXiv:0906.0155 (2009), on the Morning Star Pole and the rope to Baralku"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guide_across_the_sea",
+    "name": "to guide travellers across the sea by her light before dawn",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As the Morning Star rising over Bralgu she led the Djang'kawu canoe across the Arafura Sea to landfall near Yalangbara.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Raymond P. Norris & Duane W. Hamacher, 'The Astronomy of Aboriginal Australia', arXiv:0906.0155 (2009)"
+     }
+    ]
+   },
+   {
+    "id": "carry_messages_to_the_dead",
+    "name": "to carry messages between the living and the dead on Baralku along her trailing string",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "In the Morning Star mortuary ceremony the living send word to ancestors on the island of the dead, Baralku, along the rope of light that Barnumbirr trails behind her and which tethers her to the sun.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Raymond P. Norris & Duane W. Hamacher, 'The Astronomy of Aboriginal Australia', arXiv:0906.0155 (2009)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "yolngu_morning_star_pole",
+    "name": "The Morning Star Pole (Banumbirr)",
+    "kind": "regalia",
+    "role": "The richly decorated ceremonial pole of the Morning Star mortuary rite, hung with feathered strings that stand for the rope of light linking Barnumbirr to Bralgu and to other stars and clans; a feather tuft at the top represents the star herself.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Raymond P. Norris & Duane W. Hamacher, 'The Astronomy of Aboriginal Australia', arXiv:0906.0155 (2009)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Banumbirr",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Raymond P. Norris & Duane W. Hamacher, 'The Astronomy of Aboriginal Australia', arXiv:0906.0155 (2009)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "guide-of",
+    "personId": "yolngu_djanggawul_brother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Raymond P. Norris & Duane W. Hamacher, 'The Astronomy of Aboriginal Australia', arXiv:0906.0155 (2009)"
+     }
+    ],
+    "notes": "As the Morning Star she guided the Djang'kawu ancestors, including the Brother, across the Arafura Sea from Bralgu to the mainland."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Barnumbirr is the Yolngu creator-spirit identified with the planet Venus as the Morning Star, who guided the Djang'kawu ancestors across the sea, sang the country into being from east to west, and presides over the Morning Star mortuary ceremony linking the living to the dead on Baralku.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Raymond P. Norris & Duane W. Hamacher, 'The Astronomy of Aboriginal Australia', arXiv:0906.0155 (2009)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul: An Aboriginal Religious Cult of North-Eastern Arnhem Land (London: Routledge & Kegan Paul, 1952)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Barnumbirr (also Banumbirr) is the Yolngu name for the planet Venus seen as the Morning Star, and the creator-spirit she embodies. Rising before dawn over Bralgu, the island of the dead, she guided the Djang'kawu ancestors across the Arafura Sea to the mainland near Yalangbara; she then flew across the land from east to west, naming and creating the animals, plants and features of the country and laying down a songline. She is said to trail a faint rope of light behind her that keeps her from ever moving far from the sun. In the Morning Star (Banumbirr) mortuary ceremony the Yolngu use a richly decorated, feathered Morning Star Pole to send the spirits of the dead and messages along this string to the ancestors on Baralku."
+ },
+ {
+  "id": "yolngu_bildjiwuraroiju",
+  "name": {
+   "primary": "Bildjiwuraroiju (the elder Djang'kawu sister)",
+   "alt": [
+    "Bildjiwuraroju",
+    "Bitjiwurrurru",
+    "the elder Djanggawul Sister"
+   ],
+   "transliterations": {
+    "Yolngu-Matha": "Bildjiwuraroiju",
+    "etymology": "Personal name of the senior of the two Djang'kawu sisters as recorded in the ritual song-cycle transcribed and translated by Berndt."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yolngu",
+  "primaryTradition": "Yolngu",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Yolngu traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Yolngu traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The elder sister came with her brother and younger sister by canoe from Bralgu and, at sites such as Balma among the coastal dunes, gave birth to the first people of the Dhuwa clans, instituting the Fertility-Mother rites of the region.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul: An Aboriginal Religious Cult of North-Eastern Arnhem Land (1952)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952), on the sisters as the Fertility Mothers"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give_birth_to_the_clans",
+    "name": "to give birth continually to the people of the Dhuwa clans",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Perpetually pregnant, the sisters drew the first men and women from their wombs at named sites, peopling the country of the Dhuwa moiety.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "yolngu_ganinjari_digging_stick",
+    "name": "Ganinjari (the sisters' digging-stick)",
+    "kind": "emblem",
+    "role": "The shorter, yam-shaped sacred digging-sticks (ganinjari) carried by the sisters, used to open waterholes and associated with the female generative power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952), on the ganinjari digging-sticks"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Mialk-bukmaranji",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952), recording the sisters as the Fertility Mothers"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "yolngu_djanggawul_brother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ],
+    "notes": "Elder sister of the Djang'kawu Brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "yolngu_miralaidj",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ],
+    "notes": "Elder sister of Miralaidj; the two are the paired Fertility Mothers of the Djang'kawu cycle."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Bildjiwuraroiju is the elder of the two Djang'kawu sisters, principal Fertility Mother of the Dhuwa moiety, who with her brother and younger sister came from Bralgu and gave birth to the first people of north-east Arnhem Land.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul: An Aboriginal Religious Cult of North-Eastern Arnhem Land (London: Routledge & Kegan Paul, 1952)"
+     },
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (New York: Harper, 1937; rev. 1958)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Bildjiwuraroiju is the senior of the two Djang'kawu sisters, the elder of the paired Fertility Mothers of the Dhuwa moiety. Eternally pregnant, she and her younger sister Miralaidj gave birth to the first ancestors of the Dhuwa clans at named sites among the coastal sand-dunes, such as Balma. The sisters carried the shorter, yam-shaped ganinjari digging-sticks, with which they opened waterholes. In the myth the original sacred power and the rangga emblems belonged to the women; only later did men take charge of the ceremonies. Her name is preserved in the ritual song-cycle recorded and translated by Ronald M. Berndt."
+ },
+ {
+  "id": "yolngu_boaliri",
+  "name": {
+   "primary": "Boaliri (the younger Wawalag sister)",
+   "alt": [
+    "Boaliri",
+    "Garangal",
+    "the younger Wawalag Sister",
+    "the younger Wagilag Sister"
+   ],
+   "transliterations": {
+    "Yolngu-Matha": "Boaliri",
+    "etymology": "Personal name of the junior of the two Wawalag (Wagilag) sisters of the Kunapipi cycle; some recorded versions name her Garangal."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yolngu",
+  "primaryTradition": "Yolngu",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Yolngu traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Yolngu traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The younger Wawalag sister, near to bearing a child, journeyed north with her elder sister and was swallowed with her by the Great Copper Python at the well of Mirrirmina before the two were disgorged again.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (1937)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Kunapipi: A Study of an Australian Aboriginal Religious Cult (1951)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dance_to_hold_back_the_snake",
+    "name": "to sing and dance through the night to hold back the rising python",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As the storm gathered and the python stirred, the sisters sang and danced at the hut door through the night in an effort to keep the serpent and the rain at bay; their songs became the songs of the rite.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Wawalag",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Kunapipi: A Study of an Australian Aboriginal Religious Cult (1951)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "yolngu_waimariwi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ],
+    "notes": "Younger sister of Waimariwi; the two are the Wawalag sisters swallowed by the python."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Boaliri is the younger of the two Wawalag (Wagilag) sisters of the Kunapipi cycle, an ancestral woman who, with her elder sister, was swallowed and later disgorged by the Great Copper Python Yurlunggur, an ordeal re-enacted in Yolngu initiation.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (New York: Harper, 1937; rev. 1958)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Kunapipi: A Study of an Australian Aboriginal Religious Cult (Melbourne: F. W. Cheshire, 1951)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Boaliri is the junior of the two Wawalag sisters (Wagilag sisters in north-central Arnhem Land), an ancestral woman of the Dhuwa moiety; some recorded tellings give her name as Garangal. Heavily pregnant, she travelled north with her elder sister Waimariwi, and the two camped at the well of the Great Copper Python at Mirrirmina. As the storm gathered they sang and danced through the night to hold off the rising serpent, but Yurlunggur swallowed them and their children before disgorging them. Their songs and the swallowing are the heart of the Kunapipi ritual recorded by W. Lloyd Warner and Ronald M. Berndt."
+ },
+ {
+  "id": "yolngu_djanggawul_brother",
+  "name": {
+   "primary": "Djang'kawu (the Brother)",
+   "alt": [
+    "Djanggawul",
+    "Djan'kawu",
+    "Djankawu",
+    "the Djang'kawu Brother"
+   ],
+   "transliterations": {
+    "Yolngu-Matha": "Djaŋ'kawu",
+    "etymology": "The collective name Djang'kawu/Djanggawul denotes the three Dhuwa-moiety creator ancestors as recorded in north-east Arnhem Land; the male of the three is distinguished simply as the Brother."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yolngu",
+  "primaryTradition": "Yolngu",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Yolngu traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Yolngu traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "With his two sisters the Brother paddled a bark canoe from the island of Bralgu (Burralku) across the Arafura Sea, guided by the Morning Star, landing near Yalangbara on the Gove Peninsula to begin the creation of the Dhuwa-moiety country.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul: An Aboriginal Religious Cult of North-Eastern Arnhem Land (London: Routledge & Kegan Paul, 1952)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul: An Aboriginal Religious Cult of North-Eastern Arnhem Land (1952)"
+     }
+    ]
+   },
+   {
+    "sphereId": "law-ceremony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "rangga",
+     "script": "Latin",
+     "rom": "raŋga"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952), on the distribution of rangga emblems and Ngärra ceremony to the Dhuwa clans"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "name_and_create_country",
+    "name": "to name and so bring into being the plants, animals and places of the land",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As the three travelled inland the Brother named the country, its waters, plants and creatures, and in the naming made them; the songs of this journey form the Djanggawul song cycle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ]
+   },
+   {
+    "id": "found_dhuwa_ceremony",
+    "name": "to establish the sacred law and ceremonies of the Dhuwa moiety",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The Brother set down the Ngärra rites and entrusted the rangga emblems, armbands and feathered headdresses carried in the canoe to the clans of the Dhuwa moiety.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "yolngu_mawalan_digging_stick",
+    "name": "Mawalan (the sacred digging-stick)",
+    "kind": "emblem",
+    "role": "The long sacred digging-sticks belonging to the Brother, named mauwulan, with which he struck the ground to release fresh water and which are identified with the male generative power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952), on the mauwulan and ganinjari digging-sticks"
+     }
+    ]
+   },
+   {
+    "id": "yolngu_djanggawul_canoe",
+    "name": "The bark canoe from Bralgu",
+    "kind": "vehicle",
+    "role": "The bark canoe in which the three crossed the Arafura Sea, carrying the rangga emblems wrapped in a pandanus mat.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Djaŋ'kawu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "yolngu_bildjiwuraroiju",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ],
+    "notes": "Brother of the elder Djang'kawu sister Bildjiwuraroiju, with whom he created the Dhuwa country."
+   },
+   {
+    "kind": "sibling",
+    "personId": "yolngu_miralaidj",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ],
+    "notes": "Brother of the younger Djang'kawu sister Miralaidj."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Brother is the male of the three Djang'kawu (Djanggawul) creation ancestors of the Dhuwa moiety, who came by canoe from Bralgu following the Morning Star and, with his two sisters, named and created the country and instituted the sacred law of north-east Arnhem Land.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul: An Aboriginal Religious Cult of North-Eastern Arnhem Land (London: Routledge & Kegan Paul, 1952)"
+     },
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (New York: Harper, 1937; rev. 1958)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Djang'kawu (also Djanggawul) are the three principal creation ancestors of the Dhuwa moiety of north-east Arnhem Land: a brother and his two sisters, reckoned children of the Sun. They paddled a bark canoe from the island of Bralgu (Burralku) across the Arafura Sea, navigating by the Morning Star, and came ashore near Yalangbara. Travelling inland, the Brother named the plants, animals, waters and places, and in naming them made them; he struck the ground with his long sacred digging-stick, the mauwulan, to open fresh-water wells. He and his sisters distributed the rangga emblems, armbands and feathered headdresses they had carried in the canoe, and set down the Ngärra ceremonies that the Dhuwa clans still perform. The myth was recorded in detail by W. Lloyd Warner and given its standard scholarly treatment, with the 188-song Djanggawul cycle, by Ronald M. Berndt."
+ },
+ {
+  "id": "yolngu_laindjung",
+  "name": {
+   "primary": "Laindjung (the Yirritja ancestral hero)",
+   "alt": [
+    "Lany'tjung",
+    "Laintjung",
+    "Laindj:ung"
+   ],
+   "transliterations": {
+    "Yolngu-Matha": "Lany'tjung",
+    "etymology": "Personal name of the Yirritja-moiety ancestral hero of north-east Arnhem Land recorded by Warner and the Berndts; orthography Lany'tjung in modern Yolngu-Matha."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yolngu",
+  "primaryTradition": "Yolngu",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Yolngu traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Yolngu traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Laindjung rose out of the water at Blue Mud Bay (and from the sacred well at Gangan) with his face and body streaked by the patterns of foam, mud and water-weed, and from these markings gave the Yirritja clans their sacred designs, songs and law.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (1937)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "law-ceremony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "miny'tji",
+     "script": "Latin",
+     "rom": "miny'tji"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937), on Laindjung as origin of the Yirritja sacred designs and ceremonies"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt & Catherine H. Berndt, The World of the First Australians (1964), on the Yirritja-moiety ancestors"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow_clan_designs",
+    "name": "to bestow the sacred clan-designs, songs and ceremonies on the Yirritja clans",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The patterns left on his body by the water became the sacred designs (miny'tji), songs and ceremonial objects that Laindjung gave to each Yirritja clan as its inheritance and title to country.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "yolngu_laindjung_designs",
+    "name": "The Yirritja sacred designs",
+    "kind": "emblem",
+    "role": "The cross-hatched sacred clan-designs (miny'tji), modelled on the foam and water-weed markings on Laindjung's body, that identify and empower the Yirritja clans.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Lany'tjung",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt & Catherine H. Berndt, The World of the First Australians (1964)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Laindjung (Lany'tjung) is the Yirritja-moiety ancestral hero of north-east Arnhem Land who emerged from the water marked with the designs of foam and water-weed and gave the Yirritja clans their sacred designs, songs and ceremonial law.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (New York: Harper, 1937; rev. 1958)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt & Catherine H. Berndt, The World of the First Australians (Sydney: Ure Smith, 1964)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Laindjung (in modern orthography Lany'tjung) is the great ancestral hero of the Yirritja moiety of north-east Arnhem Land, the Yirritja counterpart to the Dhuwa Djang'kawu. In the tradition recorded by W. Lloyd Warner he rose out of the salt water of Blue Mud Bay with his face and body streaked by foam, mud and water-weed; in related clan accounts he and Barama emerged from the fresh-water well at Gangan covered in the same markings. From these patterns came the sacred cross-hatched designs (miny'tji), songs, dances and ceremonial objects that Laindjung distributed to each Yirritja clan as its law and title to country. He is closely linked with Barama and, in the Yolngu bark-painting tradition, with his messenger or son Banaidja and his brother Garaginya."
+ },
+ {
+  "id": "yolngu_miralaidj",
+  "name": {
+   "primary": "Miralaidj (the younger Djang'kawu sister)",
+   "alt": [
+    "Miralaid",
+    "Madalatj",
+    "the younger Djanggawul Sister"
+   ],
+   "transliterations": {
+    "Yolngu-Matha": "Miralaidj",
+    "etymology": "Personal name of the junior of the two Djang'kawu sisters as recorded in the Djanggawul song-cycle transcribed by Berndt."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yolngu",
+  "primaryTradition": "Yolngu",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Yolngu traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Yolngu traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The younger sister came from Bralgu with her brother and elder sister and shared in the bearing of the first Dhuwa people and the founding of the Fertility-Mother ceremonies along the north-east Arnhem coast.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul: An Aboriginal Religious Cult of North-Eastern Arnhem Land (1952)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952), on the sisters as the Fertility Mothers"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "open_waterholes",
+    "name": "to open fresh-water wells with the sacred digging-stick",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "With the ganinjari digging-stick the younger sister, like her elder, pierced the ground to release the fresh water of the wells along the creation route.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Miralaidj",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "yolngu_djanggawul_brother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ],
+    "notes": "Younger sister of the Djang'kawu Brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "yolngu_bildjiwuraroiju",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul (1952)"
+     }
+    ],
+    "notes": "Younger sister of Bildjiwuraroiju; the two are the paired Fertility Mothers of the Djang'kawu cycle."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Miralaidj is the younger of the two Djang'kawu sisters, a Fertility Mother of the Dhuwa moiety who, with her brother and elder sister, came from Bralgu and bore the first ancestors of north-east Arnhem Land.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Djanggawul: An Aboriginal Religious Cult of North-Eastern Arnhem Land (London: Routledge & Kegan Paul, 1952)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt & Catherine H. Berndt, The World of the First Australians (Sydney: Ure Smith, 1964)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Miralaidj is the junior of the two Djang'kawu sisters and, with her elder sister Bildjiwuraroiju, one of the paired Fertility Mothers of the Dhuwa moiety. She shared in the journey from Bralgu, the bearing of the first Dhuwa people, and the opening of fresh-water wells with the ganinjari digging-stick. Her name is recorded in the Djanggawul song-cycle transcribed and translated by Ronald M. Berndt; the two sisters together embody the original ownership of the sacred law by women."
+ },
+ {
+  "id": "yolngu_waimariwi",
+  "name": {
+   "primary": "Waimariwi (the elder Wawalag sister)",
+   "alt": [
+    "Waimariwoi",
+    "the elder Wawalag Sister",
+    "the elder Wagilag Sister"
+   ],
+   "transliterations": {
+    "Yolngu-Matha": "Waimariwi",
+    "etymology": "Personal name of the senior of the two Wawalag (Wagilag) sisters of the Kunapipi cycle as recorded in north-east Arnhem Land."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yolngu",
+  "primaryTradition": "Yolngu",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Yolngu traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Yolngu traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Travelling north with her younger sister and naming the country and its creatures as they went, the elder Wawalag sister camped by the python's well at Mirrirmina, where her blood drew up the Great Copper Python who swallowed them both.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (1937)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Kunapipi: A Study of an Australian Aboriginal Religious Cult (1951)"
+     }
+    ]
+   },
+   {
+    "sphereId": "naming-the-land",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937), on the sisters naming plants, animals and country on their journey"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "name_plants_and_animals",
+    "name": "to name and give the languages of the plants, animals and country",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As they walked north the two sisters named the creatures and places they met, assigning each its language and so ordering the country.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Wawalag",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Kunapipi: A Study of an Australian Aboriginal Religious Cult (1951)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "yolngu_boaliri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ],
+    "notes": "Elder sister of Boaliri; the two are the Wawalag sisters swallowed by the python."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Waimariwi is the elder of the two Wawalag (Wagilag) sisters of the Kunapipi cycle, ancestral women who named the country on their northward journey and were swallowed and later disgorged by the Great Copper Python Yurlunggur.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (New York: Harper, 1937; rev. 1958)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Kunapipi: A Study of an Australian Aboriginal Religious Cult (Melbourne: F. W. Cheshire, 1951)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Waimariwi is the senior of the two Wawalag sisters (known in north-central Arnhem Land as the Wagilag sisters), ancestral women of the Dhuwa moiety central to the Kunapipi cult. Travelling north from the inland country, the sisters named the plants, animals and places they passed, and one of them carried or bore a child. When they camped at the well of the Great Copper Python at Mirrirmina, the elder sister's blood ran into the water and roused Yurlunggur, who rose with the rains and swallowed the sisters and their children, later disgorging them. The myth and its ritual were recorded by W. Lloyd Warner and analysed by Ronald M. Berndt; the sisters' ordeal models the death and rebirth dramatised in initiation."
+ },
+ {
+  "id": "yolngu_yurlunggur",
+  "name": {
+   "primary": "Yurlunggur (the Great Copper Python)",
+   "alt": [
+    "Yulunggur",
+    "Yurlungur",
+    "Jurlungur",
+    "Julunggur",
+    "Wititj"
+   ],
+   "transliterations": {
+    "Yolngu-Matha": "Yurlunggur",
+    "etymology": "Recorded by Warner as the Murngin (Yolngu) name of the great copper python of the Wawalag myth, glossed in the comparative literature as 'the great father'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yolngu",
+  "primaryTradition": "Yolngu",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Yolngu traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Yolngu traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Roused from his waterhole at Mirrirmina by the menstrual and birth blood of the two Wawalag sisters, the Great Copper Python rose, brought on the wet-season rains, and swallowed the sisters and their children before later disgorging them.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (New York: Harper, 1937; rev. 1958)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "rain-and-monsoon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937), on the python and the coming of the wet-season rains"
+     }
+    ]
+   },
+   {
+    "sphereId": "initiation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Kunapipi: A Study of an Australian Aboriginal Religious Cult (Melbourne: F. W. Cheshire, 1951)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "swallow_and_disgorge",
+    "name": "to swallow and later disgorge the living",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The python swallowed the Wawalag sisters and their children and afterwards brought them up again, the act dramatised in initiation as a swallowing and rebirth of the novices.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ]
+   },
+   {
+    "id": "bring_the_rains",
+    "name": "to raise the flood-waters and the wet-season rains",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "When the python reared up, the rains and the annual flooding of the country came with him, linking the myth to the monsoon cycle of Arnhem Land.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Yurlunggur",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Arthur Cotterell, A Dictionary of World Mythology (Oxford: Oxford University Press, 1986), s.v. Yurlungur, 'the great copper python'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "slayer-of",
+    "personId": "yolngu_waimariwi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ],
+    "notes": "The python swallowed the elder Wawalag sister Waimariwi together with her sister and their children."
+   },
+   {
+    "kind": "slayer-of",
+    "personId": "yolngu_boaliri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization (1937)"
+     }
+    ],
+    "notes": "The python swallowed the younger Wawalag sister Boaliri in the same act, before disgorging the sisters again."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Yurlunggur is the great copper python of the Yolngu (Murngin), the 'great father' of the Wawalag myth and the Kunapipi cult, who swallowed the two Wawalag sisters and brought the wet-season rains, embodying initiatory death and rebirth.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "W. Lloyd Warner, A Black Civilization: A Social Study of an Australian Tribe (New York: Harper, 1937; rev. 1958)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ronald M. Berndt, Kunapipi: A Study of an Australian Aboriginal Religious Cult (Melbourne: F. W. Cheshire, 1951)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Yurlunggur (Yulunggur) is, in the ethnography of W. Lloyd Warner, the Murngin (Yolngu) name of the Great Copper Python, glossed in the comparative literature as 'the great father'. He lay in the sacred waterhole at Mirrirmina until the menstrual and birth blood of the two Wawalag sisters polluted his well; roused, he rose with the wet-season rains, swallowed the sisters and their children, and afterwards disgorged them. The myth and its associated Kunapipi rites, in which the python's swallowing and bringing-up is re-enacted as the death and rebirth of initiates, were documented by Warner and analysed by Ronald M. Berndt. The same rainbow-serpent being is known in feminine form elsewhere in Arnhem Land as Julunggul; among the Yolngu of Warner's account the python is the great father, distinct from that female tradition."
  },
  {
   "id": "zapotec_cocijo",
