@@ -1,0 +1,781 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bai
+Era (registered, exact): "Bai traditional religion; continuing"
+Author pass: new tradition — attested individuated core (5 figures).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bai_duan_siping",
+    "name": {
+      "primary": "Duan Siping",
+      "alt": [
+        "Emperor Taizu of Dali",
+        "Duan Siping benzhu"
+      ],
+      "transliterations": {
+        "zh-Hans": "段思平",
+        "pinyin": "Duàn Sīpíng",
+        "etymology": "The surname Duan 段 is the lineage name of the founding house of the Dali Kingdom; in Benzhuism the founder is enshrined as the local patron (benzhu, 本主) of the Duan home village near Xizhou."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bai",
+    "primaryTradition": "Bai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "bai_baijie_shengfei"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "Bai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Duan Siping (893-944), a military commissioner of the Erhai basin, overthrew the Dayi Ning regime and in 937 founded the Dali Kingdom, reigning as its first ruler until his death in 944.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. P. FitzGerald, The Tower of Five Glories: A Study of the Min Chia of Ta Li, Yunnan (London: The Cresset Press, 1941)."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 1,
+        "startEvent": "After his death the founder of Dali was posthumously enshrined as a benzhu, the deified patron god of the Duan ancestral village at Qingdong near Xizhou, where he receives sacrifice during the annual Raosanling pilgrimage.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship-founding",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "本主",
+          "script": "Han",
+          "rom": "benzhu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      },
+      {
+        "sphereId": "village-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "段思平",
+          "script": "Han",
+          "rom": "Duan Siping"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. P. FitzGerald, The Tower of Five Glories: A Study of the Min Chia of Ta Li, Yunnan (London: The Cresset Press, 1941)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_home_village",
+        "name": "to guard his ancestral village and its harvests from sickness and disaster",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As a benzhu the deified founder is held to intercede with Heaven for the prosperity of the community that enshrines him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "太祖",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "descendant-of",
+        "personId": "bai_duan_zongbang",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ],
+        "notes": "The royal Duan house of Dali traced its descent from the Nanzhao-era Duan minister Duan Zongbang, who was venerated as the Central Benzhu and remote ancestor of the lineage."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Duan Siping is the historical founder of the Dali Kingdom (r. 937-944) who was posthumously deified as a benzhu, the patron god of his Duan ancestral village near Xizhou.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "C. P. FitzGerald, The Tower of Five Glories: A Study of the Min Chia of Ta Li, Yunnan (London: The Cresset Press, 1941)."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Duan Siping (893-944) founded the Dali Kingdom in 937 and ruled as its first king. In Benzhuism, the indigenous patron-god religion of the Bai people of the Dali region, he is enshrined as the benzhu of the Duan family's home village at Qingdong near Xizhou, one of the deified rulers and ancestors whose worship knits each village to its history. A Ming-era legend made him the son of Baijie Amei, a maiden born from a plum who conceived him after touching a dragon, a motif that lent the founder of Dali divine paternity while giving his mother her own miraculous origin."
+  },
+  {
+    "id": "bai_duan_zongbang",
+    "name": {
+      "primary": "Duan Zongbang, the Central Benzhu",
+      "alt": [
+        "Central Benzhu",
+        "King of the Five Hundred Divine Kings"
+      ],
+      "transliterations": {
+        "zh-Hans": "段宗榜",
+        "pinyin": "Duàn Zōngbǎng",
+        "etymology": "Honoured as the Central Benzhu (Zhongyang benzhu, 中央本主) because of his pre-eminent rank, he is said to preside over the regional patron gods as the head of five hundred divine kings."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bai",
+    "primaryTradition": "Bai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the ninth century Duan Zongbang, a leading figure of the Duan clan, served as chief minister to the Nanzhao king and campaigned in upper Burma, returning to Dali with a Buddha-tooth relic.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 1,
+        "startEvent": "Under the Dali Kingdom the Duan-clan minister was enshrined as the Central Benzhu, governing the Five Hundred Divine Kings, and is worshipped at the Shendu temple and on the island in Erhai now called Nanzhao Fengqing.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "divine-overlordship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "中央本主",
+          "script": "Han",
+          "rom": "Zhongyang benzhu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      },
+      {
+        "sphereId": "war-leadership",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "段宗榜",
+          "script": "Han",
+          "rom": "Duan Zongbang"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. P. FitzGerald, The Tower of Five Glories: A Study of the Min Chia of Ta Li, Yunnan (London: The Cresset Press, 1941)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_over_local_gods",
+        "name": "to preside over the regional patron gods as their overlord",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As Central Benzhu he is reckoned the chief of the many village benzhu of the Dali plain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bai_buddha_tooth_relic",
+        "name": "Buddha-tooth relic",
+        "kind": "relic",
+        "role": "Holy tooth-relic that the minister is said to have carried back to Dali from his Burmese campaign.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "五百神王",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ancestor-of",
+        "personId": "bai_duan_siping",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ],
+        "notes": "Remembered as a remote ancestor of the Dali royal Duan family, the lineage from which the kingdom's founder Duan Siping sprang."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Duan Zongbang is a ninth-century Nanzhao Duan-clan minister, remote ancestor of the Dali royal house, who was deified as the Central Benzhu and overlord of five hundred divine kings.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "C. P. FitzGerald, The Tower of Five Glories: A Study of the Min Chia of Ta Li, Yunnan (London: The Cresset Press, 1941)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Duan Zongbang was a leading member of the Duan clan during the Nanzhao Kingdom, serving as chief minister and general; tradition credits him with campaigns in upper Burma and with bringing a Buddha-tooth relic to Dali. Posthumously he became the most exalted of the Bai patron gods, the Central Benzhu, said to rule the Five Hundred Divine Kings of the region, and was honoured as a remote ancestor of the royal Duan house that later founded the Dali Kingdom."
+  },
+  {
+    "id": "bai_baijie_shengfei",
+    "name": {
+      "primary": "Baijie Shengfei",
+      "alt": [
+        "Baijie Amei",
+        "Cishan",
+        "Baijie Furen",
+        "Lady Baijie"
+      ],
+      "transliterations": {
+        "zh-Hans": "白姐圣妃",
+        "pinyin": "Báijiě Shèngfēi",
+        "etymology": "Baijie 白姐 means roughly 'White Sister'; as a Buddhist goddess she is Shengfei 圣妃, 'Holy Consort', while her mortal-mother form is Baijie Amei 白姐阿妹, 'Little White Sister', and her widow-martyr form bears the personal name Cishan 慈善, 'Kindness'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bai",
+    "primaryTradition": "Bai",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Baijie first appears in Dali-kingdom Buddhist ritual texts such as the Dahei tianshen daochang yi as Baijie Shengfei, the consort of the protector god Mahakala.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Mahakala Worship in the Dali Kingdom (937-1253): A Study of the Dahei tianshen daochang yi,\" Journal of the International Association of Buddhist Studies 35, no. 1-2 (2012/13): 3-69."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 1,
+        "startEvent": "By the Ming dynasty Baijie was recast as Baijie Amei, a maiden born from a plum who conceived Duan Siping, founder of the Dali Kingdom, after touching a floating dragon, and as the chaste widow-martyr Cishan commemorated in the Torch Festival.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Baijie and the Bai: Gender and Ethnic Religion in Dali, Yunnan,\" Asian Ethnology 72, no. 1 (2013): 3-31."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fertility-motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "白姐阿妹",
+          "script": "Han",
+          "rom": "Baijie Amei"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Baijie and the Bai: Gender and Ethnic Religion in Dali, Yunnan,\" Asian Ethnology 72, no. 1 (2013): 3-31."
+          }
+        ]
+      },
+      {
+        "sphereId": "chastity-martyrdom",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "慈善",
+          "script": "Han",
+          "rom": "Cishan"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      },
+      {
+        "sphereId": "buddhist-tutelary",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "圣妃",
+          "script": "Han",
+          "rom": "Shengfei"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Mahakala Worship in the Dali Kingdom (937-1253): A Study of the Dahei tianshen daochang yi,\" Journal of the International Association of Buddhist Studies 35, no. 1-2 (2012/13): 3-69."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_children",
+        "name": "to grant children and protect mothers and the newborn",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In her village-benzhu form Baijie is invoked by women for fertility and the well-being of children.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Baijie and the Bai: Gender and Ethnic Religion in Dali, Yunnan,\" Asian Ethnology 72, no. 1 (2013): 3-31."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bai_iron_bracelet",
+        "name": "Iron bracelet",
+        "kind": "emblem",
+        "role": "Iron armlet that the widow Cishan clasped on her husband's arm so she could later identify his charred body among the dead of the Pine-Torch Tower.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "白洁夫人",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Baijie and the Bai: Gender and Ethnic Religion in Dali, Yunnan,\" Asian Ethnology 72, no. 1 (2013): 3-31."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "bai_mahakala",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Mahakala Worship in the Dali Kingdom (937-1253): A Study of the Dahei tianshen daochang yi,\" Journal of the International Association of Buddhist Studies 35, no. 1-2 (2012/13): 3-69."
+          }
+        ],
+        "notes": "In the Dahei tianshen daochang yi, the chief Mahakala ritual text of the Dali kingdom, Baijie Shengfei is named as the consort of the god Mahakala."
+      },
+      {
+        "kind": "parent-of",
+        "personId": "bai_duan_siping",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Baijie and the Bai: Gender and Ethnic Religion in Dali, Yunnan,\" Asian Ethnology 72, no. 1 (2013): 3-31."
+          }
+        ],
+        "notes": "In her Ming-era form as Baijie Amei she is the mother of Duan Siping, founder of the Dali Kingdom, conceived after she touched a dragon."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Baijie Shengfei is a multiform Bai goddess of the Dali region, attested successively as the Buddhist consort of Mahakala, as Baijie Amei the mother of the kingdom's founder Duan Siping, as the widow-martyr Cishan, and as a contemporary village benzhu.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Baijie and the Bai: Gender and Ethnic Religion in Dali, Yunnan,\" Asian Ethnology 72, no. 1 (2013): 3-31."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Baijie is the most studied goddess of the Bai, worshipped only in the Dali region. Megan Bryson traces four historical guises: a Buddhist goddess and consort of Mahakala in the Dali-kingdom ritual text Dahei tianshen daochang yi; Baijie Amei, a plum-born maiden who conceived the dynasty's founder Duan Siping after touching a dragon, a legend that crystallised in the fifteenth century under the Ming; the chaste widow-martyr Cishan (Baijie Furen), who identified her burned husband by an iron bracelet after the Nanzhao king's massacre at the Pine-Torch Tower and then took her own life; and a tutelary village benzhu venerated chiefly by older women today. The widow-martyr account is preserved in the Bai song of the Burning of the Pine-Torch Tower, the legend that the Bai attach to the Torch Festival."
+  },
+  {
+    "id": "bai_mahakala",
+    "name": {
+      "primary": "Mahakala, the Black Sky God",
+      "alt": [
+        "Dahei Tianshen",
+        "Dahei Tian",
+        "Great Black Deva"
+      ],
+      "transliterations": {
+        "zh-Hans": "大黑天",
+        "pinyin": "Dàhēitiān",
+        "etymology": "A Chinese rendering of Sanskrit Mahakala, 'Great Black One'; in Dali he is called Dahei tianshen 大黑天神, the 'Great Black Heaven-God', known locally as the Black Sky God."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bai",
+    "primaryTradition": "Bai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Mahakala flourished as a warrior protector god in the Nanzhao and Dali kingdoms, depicted with multiple arms in the Jianchuan grottoes and addressed in the Dali ritual text Dahei tianshen daochang yi.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Mahakala Worship in the Dali Kingdom (937-1253): A Study of the Dahei tianshen daochang yi,\" Journal of the International Association of Buddhist Studies 35, no. 1-2 (2012/13): 3-69."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 1,
+        "startEvent": "In later village religion the Black Sky God passed into the benzhu pantheon, becoming one of the most popular protector patrons enshrined as benzhu in Bai villages of northwestern Yunnan.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "protection-warding",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "大黑天神",
+          "script": "Han",
+          "rom": "Dahei tianshen"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Mahakala Worship in the Dali Kingdom (937-1253): A Study of the Dahei tianshen daochang yi,\" Journal of the International Association of Buddhist Studies 35, no. 1-2 (2012/13): 3-69."
+          }
+        ]
+      },
+      {
+        "sphereId": "territorial-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "大黑天",
+          "script": "Han",
+          "rom": "Daheitian"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ward_the_realm",
+        "name": "to ward the borders of the realm and guard the Buddhist teaching",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As a wrathful protector he was set at frontiers and grotto sites to defend territory and dharma.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Mahakala Worship in the Dali Kingdom (937-1253): A Study of the Dahei tianshen daochang yi,\" Journal of the International Association of Buddhist Studies 35, no. 1-2 (2012/13): 3-69."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "黑天神",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Mahakala Worship in the Dali Kingdom (937-1253): A Study of the Dahei tianshen daochang yi,\" Journal of the International Association of Buddhist Studies 35, no. 1-2 (2012/13): 3-69."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "bai_baijie_shengfei",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Mahakala Worship in the Dali Kingdom (937-1253): A Study of the Dahei tianshen daochang yi,\" Journal of the International Association of Buddhist Studies 35, no. 1-2 (2012/13): 3-69."
+          }
+        ],
+        "notes": "The Dali ritual text Dahei tianshen daochang yi pairs Mahakala with the goddess Baijie Shengfei as his consort."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mahakala, the Black Sky God (Dahei tianshen), is a wrathful Buddhist protector deity who became a central cult figure in the Nanzhao and Dali kingdoms and entered the Bai benzhu pantheon as a popular village patron.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, \"Mahakala Worship in the Dali Kingdom (937-1253): A Study of the Dahei tianshen daochang yi,\" Journal of the International Association of Buddhist Studies 35, no. 1-2 (2012/13): 3-69."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Mahakala, the 'Great Black Heaven-God' or Black Sky God, is a wrathful Buddhist guardian who became the focus of a flourishing cult in the Nanzhao and Dali kingdoms of Yunnan from the ninth century onward, appearing many-armed in the Jianchuan grottoes and as the chief deity of the Dali ritual manual Dahei tianshen daochang yi, in which his consort is the goddess Baijie Shengfei. In later Bai village religion the Black Sky God was absorbed into Benzhuism and is among the most widely enshrined of the protector benzhu of northwestern Yunnan."
+  },
+  {
+    "id": "bai_duan_chicheng",
+    "name": {
+      "primary": "Duan Chicheng, the Python-Slayer",
+      "alt": [
+        "Duan Chicheng",
+        "God of Erhai"
+      ],
+      "transliterations": {
+        "zh-Hans": "段赤城",
+        "pinyin": "Duàn Chìchéng",
+        "etymology": "A personal name of the Duan surname; the hero is honoured as a benzhu after dying to slay the man-eating python of the Erhe River that feeds Erhai Lake."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bai",
+    "primaryTradition": "Bai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "By legend a giant python infested the Erhe River around the early ninth century, devouring people and flooding the fields, until the youth Duan Chicheng killed the beast at the cost of his own life.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. P. FitzGerald, The Tower of Five Glories: A Study of the Min Chia of Ta Li, Yunnan (London: The Cresset Press, 1941)."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "Bai traditional religion; continuing",
+        "eraOrdering": 1,
+        "startEvent": "The self-sacrificing python-slayer was enshrined as a hero benzhu and god of Erhai at the Erhe memorial temple in Heyicheng near Xizhou, and is welcomed during the Raosanling and Shuahai (Sea-Playing) festivals.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lake-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "段赤城",
+          "script": "Han",
+          "rom": "Duan Chicheng"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. P. FitzGerald, The Tower of Five Glories: A Study of the Min Chia of Ta Li, Yunnan (London: The Cresset Press, 1941)."
+          }
+        ]
+      },
+      {
+        "sphereId": "heroic-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "本主",
+          "script": "Han",
+          "rom": "benzhu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "slay_the_water_serpent",
+        "name": "to slay the man-eating python and so calm the waters of Erhai",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His defining heroic deed, for which he is reckoned the protector god of the lake.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. P. FitzGerald, The Tower of Five Glories: A Study of the Min Chia of Ta Li, Yunnan (London: The Cresset Press, 1941)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "洱海之神",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Duan Chicheng is a heroic benzhu of the Bai, a youth who died slaying the man-eating python of the Erhe River and is thereafter venerated as the god of Erhai Lake at the Erhe memorial temple.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Megan Bryson, Goddess on the Frontier: Religion, Ethnicity, and Gender in Southwest China (Stanford: Stanford University Press, 2017)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "C. P. FitzGerald, The Tower of Five Glories: A Study of the Min Chia of Ta Li, Yunnan (London: The Cresset Press, 1941)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Duan Chicheng is a hero-type benzhu of the Bai, the patron god enshrined at the Erhe memorial temple in Heyicheng village near Xizhou. By legend a monstrous python infested the Erhe River that feeds Erhai Lake, devouring people and livestock and flooding the crops, until the youth Duan Chicheng slew it and perished in the deed; he was thereupon deified as the god of Erhai. His sacrifice is commemorated at the Sea-Playing (Shuahai) festival, and he is among the chief benzhu welcomed during the Raosanling pilgrimage."
+  }
+]
+```
