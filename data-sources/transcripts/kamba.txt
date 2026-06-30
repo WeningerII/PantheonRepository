@@ -1,0 +1,441 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Kamba
+Era (registered, exact): "Kamba traditional religion; continuing"
+Author pass: new tradition — attested individuated core (3 figures).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "kamba_mulungu",
+    "name": {
+      "primary": "Mulungu (Ngai), the supreme creator",
+      "alt": [
+        "Ngai",
+        "Mulungu",
+        "Mlungu",
+        "Asa",
+        "Mumbi",
+        "Mwatuangi",
+        "Ngai Mumbi",
+        "Ngai Mumbi Mwatuangi"
+      ],
+      "transliterations": {
+        "kam": "Mũlũngũ",
+        "etymology": "Mulungu/Mungu is the widespread East-Bantu word for God; the Akamba more often invoke him through the epithets Mumbi (from ku-umba, 'to mould/fashion') and Mwatuangi ('the divider/distributor')."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kamba",
+    "primaryTradition": "Kamba",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Kamba traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Kamba traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Among the Akamba of eastern Kenya, Mulungu (Ngai) is the single transcendent creator who dwells in the sky and is invoked under the reverential names Asa, Mumbi and Mwatuangi.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa: An Ethnological Monograph, 2nd enlarged ed. (Uppsala: Appelbergs, 1920; 1st ed. 1916), chapter on the conception of Mulungu (Ngai)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kuumba",
+          "script": "Latin",
+          "rom": "ku-umba ('to mould, to fashion')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, Concepts of God in Africa (London: S.P.C.K., 1970), on the Akamba name Mumbi, God the fashioner."
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-and-weather",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mbua",
+          "script": "Latin",
+          "rom": "mbua ('rain'); rain spoken of as the saliva of God"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (Cambridge: Cambridge University Press, 1910), noting that prayers for rain were addressed only to Mulungu and never to the ancestral spirits."
+          }
+        ]
+      },
+      {
+        "sphereId": "sky-and-sovereignty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ituni",
+          "script": "Latin",
+          "rom": "ituni ('in the sky / on high'), the dwelling of Mulungu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Molefi Kete Asante and Ama Mazama (eds.), Encyclopedia of African Religion (Thousand Oaks, CA: Sage, 2009), 'Akamba', pp. 21-23."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion_humankind",
+        "name": "to mould and fashion human beings and all creatures",
+        "term": {
+          "value": "kuumba",
+          "script": "Latin",
+          "rom": "ku-umba"
+        },
+        "inheritability": "none",
+        "notes": "Expressed in the epithet Mumbi, 'the fashioner', understood on the analogy of a potter moulding clay.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, African Religions and Philosophy (London: Heinemann, 1969), on Akamba names of God."
+          }
+        ]
+      },
+      {
+        "id": "give_rain",
+        "name": "to give and withhold the rain",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Mulungu is the Rain-Giver; rain is figuratively called the saliva of God, and to spit in blessing recalls this gift.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (Cambridge: Cambridge University Press, 1910)."
+          }
+        ]
+      },
+      {
+        "id": "divide_and_distribute",
+        "name": "to divide, apportion and separate the parts of creation",
+        "term": {
+          "value": "kutuanga",
+          "script": "Latin",
+          "rom": "ku-tuanga ('to divide / to apportion')"
+        },
+        "inheritability": "none",
+        "notes": "Expressed in the epithet Mwatuangi, 'the divider/distributor', who sets apart the limbs and fingers of the body, the waters from the land, and one species from another.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa: An Ethnological Monograph, 2nd enlarged ed. (Uppsala: Appelbergs, 1920)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kamba_ithembo",
+        "name": "Ithembo (sacred grove and shrine)",
+        "kind": "shrine",
+        "role": "Sacred fig-tree or baobab grove (plural mathembo) where the Akamba offered communal sacrifice and prayer toward Mulungu.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa: An Ethnological Monograph, 2nd enlarged ed. (Uppsala: Appelbergs, 1920), on prayer and sacrifice at the mathembo."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Asa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, Concepts of God in Africa (London: S.P.C.K., 1970): Asa, 'the Father', the strong Lord."
+          }
+        ]
+      },
+      {
+        "original": "Mumbi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, African Religions and Philosophy (London: Heinemann, 1969): Mumbi, God the fashioner/creator."
+          }
+        ]
+      },
+      {
+        "original": "Mwatuangi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa, 2nd ed. (Uppsala: Appelbergs, 1920): Mwatuangi, the divider/distributor."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creator-of",
+        "personId": "kamba_mundu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa, 2nd ed. (Uppsala: Appelbergs, 1920), on the creation of the first man and his descent to the rock at Nzaui."
+          }
+        ],
+        "notes": "Mulungu fashioned the first man, Mundu, in the sky and set him upon the rock of Nzaui together with his cattle and a stool."
+      },
+      {
+        "kind": "creator-of",
+        "personId": "kamba_kiveti",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, African Religions and Philosophy (London: Heinemann, 1969), recounting the Akamba creation of the first man and woman."
+          }
+        ],
+        "notes": "Mulungu likewise fashioned the first woman, Kiveti, the wife of Mundu, whose footprints are shown beside his at Nzaui."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mulungu (Ngai) is the supreme, sky-dwelling creator-god of the Akamba, invoked through the epithets Asa (the Father), Mumbi (the fashioner) and Mwatuangi (the divider), and the only power to whom rain is prayed.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa: An Ethnological Monograph, 2nd enlarged ed. (Uppsala: Appelbergs, 1920; 1st ed. 1916)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, Concepts of God in Africa (London: S.P.C.K., 1970)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (Cambridge: Cambridge University Press, 1910)."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Mulungu, more often called Ngai, is the supreme and essentially monotheistic God of the Akamba of the Machakos and Kitui highlands of eastern Kenya. Invisible and transcendent, he dwells on high (ituni) and is approached not so much by his proper name, which is uttered with great reserve, as through a cluster of descriptive titles: Asa, 'the Father' and strong Lord; Mumbi, 'the fashioner', who moulds every creature as a potter works clay; and Mwatuangi, 'the divider' or 'distributor', who apportions the parts of the body and separates the waters from the dry land. He is the giver of children, cattle, food and above all rain, which is spoken of as his saliva; prayer for rain is directed to him alone and never to the ancestral spirits. Communal sacrifice on his behalf was offered at sacred groves of fig or baobab, the mathembo. In the creation narrative he fashioned the first human pair and lowered them from the sky onto the rock of Nzaui."
+  },
+  {
+    "id": "kamba_mundu",
+    "name": {
+      "primary": "Mundu, the first man",
+      "alt": [
+        "Mũndũ"
+      ],
+      "transliterations": {
+        "kam": "Mũndũ",
+        "etymology": "Mundu is the ordinary Kikamba word for 'person, man, human being', here used as the name of the primordial first man."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Kamba",
+    "primaryTradition": "Kamba",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Kamba traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Kamba traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Akamba creation myth Mundu, the first man, was fashioned by Mulungu in the sky and let down with his wife, cattle and a stool onto the rock of Nzaui, where his footprints are still shown.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa: An Ethnological Monograph, 2nd enlarged ed. (Uppsala: Appelbergs, 1920)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "human-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Mũndũ",
+          "script": "Latin",
+          "rom": "mundu ('person, human being')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, African Religions and Philosophy (London: Heinemann, 1969), on the Akamba account of the first man and woman."
+          }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      {
+        "id": "kamba_mundu_stool",
+        "name": "The first man's stool",
+        "kind": "regalia",
+        "role": "Three-legged stool let down from the sky with Mundu, marking him as a householder and elder.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa, 2nd ed. (Uppsala: Appelbergs, 1920), on Mundu's descent with cattle and a stool to the rock of Nzaui."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "kamba_kiveti",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa, 2nd ed. (Uppsala: Appelbergs, 1920), on the first man and his wife at Nzaui."
+          },
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, African Religions and Philosophy (London: Heinemann, 1969)."
+          }
+        ],
+        "notes": "Mundu and Kiveti are the primordial married pair from whom, with the couple who emerged from the anthill, the Akamba reckon their descent."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mundu is the first man of the Akamba creation myth, fashioned by Mulungu and set with his wife Kiveti upon the rock of Nzaui, where their footprints and those of their cattle are pointed out.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa: An Ethnological Monograph, 2nd enlarged ed. (Uppsala: Appelbergs, 1920; 1st ed. 1916)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, African Religions and Philosophy (London: Heinemann, 1969)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mundu, whose name is simply the Kikamba word for 'man', is the first human being of the Akamba creation story. Mulungu fashioned him and his wife in the sky, where, like Mulungu himself, they were spirits, and then lowered them to earth with their cattle and a stool for the man. They alighted on a rock on the hill of Nzaui in present-day Makueni, and the Akamba say that the footprints of Mundu, Kiveti and their animals can still be seen there. After Mulungu sent a great rain a second couple came out of an anthill; the heavenly pair had only sons and the anthill pair only daughters, so the sons of Mundu took the daughters in marriage, and from these unions the people multiplied."
+  },
+  {
+    "id": "kamba_kiveti",
+    "name": {
+      "primary": "Kiveti, the first woman",
+      "alt": [
+        "Kĩveti"
+      ],
+      "transliterations": {
+        "kam": "Kĩveti",
+        "etymology": "Kiveti is the ordinary Kikamba word for 'woman, wife', here used as the name of the primordial first woman."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Kamba",
+    "primaryTradition": "Kamba",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Kamba traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Kamba traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Kiveti, the first woman and wife of Mundu, was fashioned by Mulungu and let down from the sky to the rock of Nzaui, where her footprints are shown beside her husband's.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, African Religions and Philosophy (London: Heinemann, 1969), on the Akamba first man and woman."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "human-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Kĩveti",
+          "script": "Latin",
+          "rom": "kiveti ('woman, wife')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa, 2nd ed. (Uppsala: Appelbergs, 1920), on the wife of the first man."
+          }
+        ]
+      }
+    ],
+    "faculties": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "kamba_mundu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa, 2nd ed. (Uppsala: Appelbergs, 1920)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, African Religions and Philosophy (London: Heinemann, 1969)."
+          }
+        ],
+        "notes": "Kiveti is the wife of Mundu, the first man; together they are the primordial human couple of the Akamba creation myth."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kiveti is the first woman of the Akamba creation myth, wife of Mundu, fashioned by Mulungu and set with him on the rock of Nzaui.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gerhard Lindblom, The Akamba in British East Africa: An Ethnological Monograph, 2nd enlarged ed. (Uppsala: Appelbergs, 1920; 1st ed. 1916)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "John S. Mbiti, African Religions and Philosophy (London: Heinemann, 1969)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kiveti, whose name is the Kikamba word for 'woman' or 'wife', is the first woman of the Akamba creation story and the wife of Mundu. Fashioned in the sky by Mulungu and lowered with her husband and their cattle to the rock of Nzaui, she shares with him the footprints the Akamba point out on the hill as proof of the tale. As the mother of the heavenly couple's sons she stands at the head of Akamba genealogy, alongside the unnamed pair who emerged from the anthill and founded the spirits' clan (the aimu)."
+  }
+]
+```

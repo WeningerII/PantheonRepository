@@ -1,0 +1,542 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Dilmun
+Era (registered, exact): "dilmun-bronze-age", "dilmun-mythic-primordial"
+Author pass: new tradition — attested individuated core (3 figures).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "dilmun_inzak",
+    "name": {
+      "primary": "Inzak, tutelary lord of Dilmun",
+      "alt": [
+        "Enzak",
+        "Enzag",
+        "Enshag",
+        "Anzak",
+        "Ninzaga",
+        "Inzak of Agarum"
+      ],
+      "transliterations": {
+        "akkadian": "Inzak",
+        "sumerian": "Enšag / Nin-zà-ga",
+        "logographic": "dInzak (dEN.ZAG)",
+        "etymology": "Gianni Marchesi tentatively derives the name from a Sumerian nin-za-ak, 'lord of the beads', fitting a pearling sea; Piotr Steinkeller likewise argues a Sumerian origin spread by the Uruk expansion, though the etymology remains debated."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dilmun",
+    "primaryTradition": "Dilmun",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dilmun-bronze-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "dilmun-mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the Sumerian myth 'Enki and Ninhursaga', set in the pure land of Dilmun, Enshag (Inzak) is the last of eight deities whom the mother-goddess Ninhursaga engenders to heal Enki's ailing organs, after which a grateful Enki proclaims him 'lord of Dilmun'.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Noah Kramer & W. F. Albright, 'Enki and Ninhursag: A Sumerian \"Paradise\" Myth', Bulletin of the American Schools of Oriental Research, Supplementary Studies 1 (1945)."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "dilmun-bronze-age",
+        "eraOrdering": 1,
+        "startEvent": "Inzak first appears in history in a late third-millennium inscription of Gudea of Lagash, where the god Ninzaga (equated with Enzak of Dilmun) is said to have shipped copper to the temple-builder; he thereafter becomes the patron god of the Dilmunite kings, who style themselves 'servant of Inzak of Agarum'.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology, ed. Haya Ali Al Khalifa & Michael Rice (London/New York: KPI, 1986), pp. 340-366."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tutelary-kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Inzak ša Agarum",
+          "script": "Latin (transliterated Akkadian)",
+          "rom": "Inzak of Agarum, the god invoked in Dilmunite royal titulary"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology, ed. H. A. Al Khalifa & M. Rice (London: KPI, 1986), pp. 340-366."
+          }
+        ]
+      },
+      {
+        "sphereId": "maritime-copper-trade",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "uruda",
+          "script": "Sumerian cuneiform",
+          "rom": "urud(a), 'copper', the cargo Ninzaga/Inzak delivers in Gudea's inscription"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gianni Marchesi, 'The Cuneiform Texts from Failaka', in Failaka/Dilmun: The Second Millennium Settlements, Vol. 6: Copper, Cuneiform Inscriptions and Other Finds, ed. F. Højlund (Aarhus University Press / Jutland Archaeological Society Publications 17:6, 2024)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_lordship_of_dilmun",
+        "name": "to hold the lordship of the pure land of Dilmun",
+        "term": {
+          "value": "en Dilmun",
+          "script": "Sumerian cuneiform",
+          "rom": "en Dilmun, 'lord of Dilmun'"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Noah Kramer & W. F. Albright, 'Enki and Ninhursag: A Sumerian \"Paradise\" Myth', BASOR Supplementary Studies 1 (1945)."
+          }
+        ]
+      },
+      {
+        "id": "convey_copper_oversea",
+        "name": "to convey copper across the sea to Mesopotamia",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology (London: KPI, 1986), pp. 340-366."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dilmun_egal_inzak",
+        "name": "Egalgula / Egal-Inzak ('great palace' / 'palace of Inzak')",
+        "kind": "temple",
+        "role": "Ceremonial name of Inzak's sanctuary on Failaka, where his cult was housed.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gianni Marchesi, 'The Cuneiform Texts from Failaka', in Failaka/Dilmun: The Second Millennium Settlements, Vol. 6, ed. F. Højlund (Aarhus University Press, 2024)."
+          }
+        ]
+      },
+      {
+        "id": "dilmun_durand_stone",
+        "name": "Durand Stone",
+        "kind": "inscribed monument",
+        "role": "Black basalt votive cone from Bahrain bearing the Old Babylonian dedication 'Palace of Rimum, the servant of Inzak of Agarum', the keystone attestation of Inzak's cult on Bahrain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "P. B. Cornwall, 'Two Letters from Dilmun', Journal of Cuneiform Studies 6 (1952), pp. 137-145."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Inzak ša Agarum",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology (London: KPI, 1986), pp. 340-366."
+          }
+        ]
+      },
+      {
+        "original": "en Dilmun",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Noah Kramer & W. F. Albright, 'Enki and Ninhursag: A Sumerian \"Paradise\" Myth', BASOR Supplementary Studies 1 (1945)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "dilmun_meskilak",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology (London: KPI, 1986), pp. 340-366."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gianni Marchesi, 'The Cuneiform Texts from Failaka', in Failaka/Dilmun: The Second Millennium Settlements, Vol. 6, ed. F. Højlund (Aarhus University Press, 2024)."
+          }
+        ],
+        "notes": "Inzak and Meskilak (locally Panipa) form the divine couple at the head of the Dilmun pantheon, jointly worshipped in the temple Ekarra on Failaka and paired in the greeting formulae of letters between Dilmun and Nippur. A minority view (noted by al-Nashef) instead makes Meskilak his mother rather than his consort."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Inzak (Enzak/Enshag) was the tutelary chief god of the Dilmun pantheon, whose cult centre was Agarum (Failaka) and in whose name the kings of Dilmun ruled.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology, ed. H. A. Al Khalifa & M. Rice (London/New York: KPI, 1986), pp. 340-366."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gianni Marchesi, 'The Cuneiform Texts from Failaka', in Failaka/Dilmun: The Second Millennium Settlements, Vol. 6: Copper, Cuneiform Inscriptions and Other Finds, ed. F. Højlund (Aarhus University Press / Jutland Archaeological Society Publications 17:6, 2024)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stephanie Dalley, 'Gods from north-eastern and north-western Arabia in cuneiform texts from the First Sealand Dynasty, and a cuneiform inscription from Tell en-Nasbeh, c. 1500 BC', Arabian Archaeology and Epigraphy 24/2 (2013), pp. 177-185."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Inzak (Akkadian Inzak; Sumerian Enshag; older scholarship Enshag, also Enzag, Enzak, Anzak) was the principal god of Bronze Age Dilmun, the civilisation centred on Bahrain and the Eastern Arabian coast including the island of Failaka, anciently called Agarum. He is first named in a late third-millennium inscription of Gudea of Lagash, where, under the form Ninzaga, he ships copper to Lagash, reflecting Dilmun's role as the entrepot of the Gulf copper trade. The Dilmunite kings, attested on the Durand Stone of Bahrain and on stone vessels from royal tumuli (the dynasty of Rimum and his son Yagli-El, c. 1780 BCE), styled themselves 'servant of Inzak of Agarum', a theocratic royal ideology comparable to that of Assur and Eshnunna. In the Sumerian paradise myth 'Enki and Ninhursaga', set in Dilmun, Enshag is the eighth of the deities the mother-goddess Ninhursaga creates to cure Enki, and is rewarded with the lordship of Dilmun. His cult, shared with the goddess Meskilak, was housed in the Failaka temples (Ekarra, 'house of the quay', and Egal-Inzak, 'palace of Inzak'). His worship reached beyond Dilmun: Enzak stood in a divine triad on the Susa acropolis in the eighteenth century BCE, and in the late god-list An = Anu sha ameli he was equated with the Babylonian scribal god Nabu."
+  },
+  {
+    "id": "dilmun_meskilak",
+    "name": {
+      "primary": "Meskilak, lady of Dilmun",
+      "alt": [
+        "Panipa",
+        "Mesikila",
+        "Meskil-la",
+        "Ninsikila (Mesopotamian homonym)",
+        "Nintilmun"
+      ],
+      "transliterations": {
+        "akkadian": "Meskilak",
+        "sumerian": "Mes-kil-ak / me-sikil-ak",
+        "logographic": "dPanipa (dPA.NI.PA)",
+        "etymology": "Gianni Marchesi reads the name as Sumerian me-sikil-ak, 'she of the pure divine ordinances (me)', consistent with Dilmun's epithet as the land of pure decrees; the local Failaka writing dPA.NI.PA is read phonetically Panipa."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dilmun",
+    "primaryTradition": "Dilmun",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dilmun-bronze-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "dilmun-bronze-age",
+        "eraOrdering": 0,
+        "startEvent": "Meskilak appears as one of the two chief deities of Dilmun, paired with Inzak in the benedictions of letters exchanged between Dilmun and Nippur and worshipped beside him in the temple Ekarra on Failaka, where she is named locally with the logogram dPA.NI.PA (Panipa).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology, ed. H. A. Al Khalifa & M. Rice (London: KPI, 1986), pp. 340-366."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "dilmun-mythic-primordial",
+        "eraOrdering": 1,
+        "startEvent": "In the Sumerian compositions 'Enki and Ninhursaga' and 'Enki and the World Order', Meskilak is named in connection with Dilmun, her name written homonymously in Mesopotamia as Ninsikila.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gianni Marchesi, 'The Cuneiform Texts from Failaka', in Failaka/Dilmun: The Second Millennium Settlements, Vol. 6, ed. F. Højlund (Aarhus University Press, 2024)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "purity-sacred-ordinances",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "me sikil",
+          "script": "Sumerian cuneiform",
+          "rom": "me-sikil, 'pure divine ordinances', the element underlying the name Meskilak"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gianni Marchesi, 'The Cuneiform Texts from Failaka', in Failaka/Dilmun: The Second Millennium Settlements, Vol. 6, ed. F. Højlund (Aarhus University Press, 2024)."
+          }
+        ]
+      },
+      {
+        "sphereId": "tutelary-goddess-of-dilmun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Panipa",
+          "script": "Latin (transliterated logogram dPA.NI.PA)",
+          "rom": "Panipa, the local Failaka name of the chief goddess"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology (London: KPI, 1986), pp. 340-366."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "embody_purity_of_dilmun",
+        "name": "to embody the ritual purity of the land of Dilmun",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gianni Marchesi, 'The Cuneiform Texts from Failaka', in Failaka/Dilmun: The Second Millennium Settlements, Vol. 6, ed. F. Højlund (Aarhus University Press, 2024)."
+          }
+        ]
+      },
+      {
+        "id": "guard_the_lives_of_supplicants",
+        "name": "to guard the life of those who invoke her in letters and benedictions",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "P. B. Cornwall, 'Two Letters from Dilmun', Journal of Cuneiform Studies 6 (1952), pp. 137-145."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dilmun_ekarra",
+        "name": "Ekarra ('house of the quay')",
+        "kind": "temple",
+        "role": "The Failaka sanctuary jointly dedicated to Inzak and Meskilak; an inscription of Nebuchadnezzar II indicates the Larsa form of the sun god Shamash was also venerated there.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew R. George, House Most High: The Temples of Ancient Mesopotamia (Winona Lake, IN: Eisenbrauns, Mesopotamian Civilizations 5, 1993)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Nintilmun",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology (London: KPI, 1986), pp. 340-366."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "dilmun_inzak",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology (London: KPI, 1986), pp. 340-366."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gianni Marchesi, 'The Cuneiform Texts from Failaka', in Failaka/Dilmun: The Second Millennium Settlements, Vol. 6, ed. F. Højlund (Aarhus University Press, 2024)."
+          }
+        ],
+        "notes": "Meskilak (locally Panipa) is the consort of Inzak and, with him, one of the two head deities of Dilmun; the pair are invoked together in royal and epistolary benedictions. A minority reading instead casts her as Inzak's mother."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Meskilak (locally Panipa) was the chief goddess of Dilmun and the consort of Inzak, attested on Bahrain and Failaka and reinterpreted in Mesopotamia under the homonym Ninsikila.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Khaled al-Nashef, 'The Deities of Dilmun', in Bahrain Through the Ages: The Archaeology, ed. H. A. Al Khalifa & M. Rice (London/New York: KPI, 1986), pp. 340-366."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gianni Marchesi, 'The Cuneiform Texts from Failaka', in Failaka/Dilmun: The Second Millennium Settlements, Vol. 6: Copper, Cuneiform Inscriptions and Other Finds, ed. F. Højlund (Aarhus University Press / Jutland Archaeological Society Publications 17:6, 2024)."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Meskilak was the principal goddess of Dilmun and the consort of the tutelary god Inzak. Her name, which Gianni Marchesi reads as Sumerian me-sikil-ak, 'she of the pure divine ordinances (me)', is matched by her distinctively local Failaka writing dPA.NI.PA, read phonetically Panipa. Inzak and Meskilak were worshipped together in the temple Ekarra ('house of the quay') on Failaka and are paired in the greeting formulae of the Old Babylonian letters between an inhabitant of Nippur and correspondents in Dilmun, where both deities are asked to protect the writer. In Mesopotamian scholarly tradition her name was reinterpreted as the homonym Ninsikila, and the title Nintilmun, 'lady of Dilmun', listed in the Inanna section of the god-list An = Anum, may also denote her; the same list assigns eight divine children to the couple Inzak and Meskilak. In the late god-list An = Anu sha ameli, where Inzak is equated with Nabu, Manfred Krebernik suggests Meskilak was correspondingly equated with Nabu's wife Tashmetum. While the dominant view, followed by al-Nashef and Marchesi, makes her Inzak's spouse, an alternative scholarly proposal instead understands her as his mother."
+  },
+  {
+    "id": "dilmun_ninsikila",
+    "name": {
+      "primary": "Ninsikila, queen of the pure land",
+      "alt": [
+        "Nin-sikila",
+        "Ninsikil",
+        "Meskil-la (Mesopotamian homonym of Meskilak)"
+      ],
+      "transliterations": {
+        "sumerian": "Nin-sikil(a)",
+        "logographic": "dNin-sikil-la",
+        "etymology": "Sumerian nin-sikil(-a), 'pure lady' or 'lady of the pure place', a name that resonates with Dilmun's mythic purity; in Mesopotamia the spelling overlapped with that of the Dilmunite goddess Meskilak."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dilmun",
+    "primaryTradition": "Dilmun",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dilmun-mythic-primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "dilmun-mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the Sumerian myth 'Enki and Ninhursaga', set in the pure land of Dilmun, the god Enki lies down with his spouse Ninsikila, 'the queen of the pure place', in a Dilmun that is still virginal and pristine, and she petitions him to grant the land sweet water, harbours and abundance.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Noah Kramer & W. F. Albright, 'Enki and Ninhursag: A Sumerian \"Paradise\" Myth', BASOR Supplementary Studies 1 (1945)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "pure-land-of-dilmun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ki sikil",
+          "script": "Sumerian cuneiform",
+          "rom": "ki-sikil, 'pure place', the virginal land of Dilmun over which she presides"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thorkild Jacobsen, The Harps That Once...: Sumerian Poetry in Translation (New Haven: Yale University Press, 1987), pp. 181-204."
+          }
+        ]
+      },
+      {
+        "sphereId": "fresh-water-and-abundance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "a duru",
+          "script": "Sumerian cuneiform",
+          "rom": "a-duru, the sweet/fresh water she asks Enki to bring up for Dilmun"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Noah Kramer & W. F. Albright, 'Enki and Ninhursag: A Sumerian \"Paradise\" Myth', BASOR Supplementary Studies 1 (1945)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "petition_for_sweet_water",
+        "name": "to petition the creator god to bring sweet water and plenty to Dilmun",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thorkild Jacobsen, The Harps That Once...: Sumerian Poetry in Translation (New Haven: Yale University Press, 1987), pp. 181-204."
+          }
+        ]
+      },
+      {
+        "id": "preside_over_the_pure_place",
+        "name": "to preside over the virgin pure land of Dilmun",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pascal Attinger, 'Enki et Ninhursaga', Zeitschrift fur Assyriologie 74 (1984), pp. 1-52."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "nin ki-sikil-la dilmun-na",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thorkild Jacobsen, The Harps That Once...: Sumerian Poetry in Translation (New Haven: Yale University Press, 1987), pp. 181-204."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ninsikila is the goddess of the pure land of Dilmun who, as the spouse of Enki in the Sumerian myth 'Enki and Ninhursaga', petitions the god to endow Dilmun with sweet water and plenty; in Mesopotamia her name overlaps with that of the Dilmunite goddess Meskilak.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Noah Kramer & W. F. Albright, 'Enki and Ninhursag: A Sumerian \"Paradise\" Myth', Bulletin of the American Schools of Oriental Research, Supplementary Studies 1 (1945)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Pascal Attinger, 'Enki et Ninhursaga', Zeitschrift fur Assyriologie und Vorderasiatische Archaologie 74 (1984), pp. 1-52."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ninsikila ('pure lady' / 'lady of the pure place') is the Dilmunite goddess as she appears in Mesopotamian myth. In 'Enki and Ninhursaga', the great Sumerian poem that locates the primordial paradise in Dilmun, Enki lies down with Ninsikila his spouse in a land that is described as still virginal and pristine, and she addresses him to ask that the city of Dilmun be given fresh water from the earth, quays and harbours for ships, and agricultural abundance; the same figure reappears in 'Enki and the World Order', where Enki, having purified Dilmun, places Ninsikila in charge of it. Assyriological scholarship treats this Dilmun Ninsikila as closely bound up with the chief goddess Meskilak, whose name was written homonymously as Ninsikila in Mesopotamia; the two are frequently identified, though a separate, gender-shifting Mesopotamian deity Ninsikila (spouse of Lisin) is a distinct figure not to be confused with the lady of Dilmun. Because the surviving portrait of Ninsikila belongs wholly to the literary mythology of the pure land rather than to the Bahrain-Failaka cult, she stands somewhat apart from the historically attested couple Inzak and Meskilak."
+  }
+]
+```

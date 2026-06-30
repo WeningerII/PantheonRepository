@@ -1,0 +1,765 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Mentawai
+Era (registered, exact): "Mentawai traditional religion; continuing"
+Author pass: new tradition — attested individuated core (5 figures).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "mentawai_taikamanua",
+    "name": {
+      "primary": "Taikamanua, ruling spirit of the sky",
+      "alt": [
+        "Tai Ka-Manua",
+        "Tai Ka Manua",
+        "Taikamanua",
+        "Taika Manua"
+      ],
+      "transliterations": {
+        "mentawai": "Taikamanua",
+        "etymology": "Mentawai tai 'ruling spirit, lord' + ka 'of/in' + manua 'sky, heaven'; thus 'the lord of the sky'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mentawai",
+    "primaryTradition": "Mentawai",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mentawai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Mentawai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Arat Sabulungan cosmology of the Mentawai of Siberut, Taikamanua is the ruling spirit of the sky and clouds who governs the weather and sends the rain, and in some accounts is named as the creator and highest ruler of the upper, middle, and lower worlds.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky-and-weather",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "manua",
+          "script": "Latin",
+          "rom": "manua (sky, heaven)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan; Roles of animals in sculptures, shamanic songs and dances, and the belief system of traditional Mentawaians.' Wacana, Journal of the Humanities of Indonesia 23(2), 2022."
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-and-fertility-of-the-air",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hanani, S. & Nelmaya. 'Ecological ethics in the theological teaching of Arat Sabulungan in Mentawai Island Indonesia.' Kasetsart Journal of Social Sciences 43(1), 2022, pp. 102-107. DOI: 10.34044/j.kjss.2022.43.1.14."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "to_send_the_rain",
+        "name": "to send rain and govern the weather of the sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Taikamanua is held responsible for rain and for the conditions of the heavens, which the kerei petition through the leaf-bundle ritual.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Mentawai Shaman: Keeper of the Rainforest. New York: Aperture, 1991 (photographs by Charles Lindsay)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Tai Ka-Manua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "mentawai_taikaleleu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan.' Wacana 23(2), 2022."
+          }
+        ],
+        "notes": "Worshipped together with the rulers of forest and sea as the co-ordinate domain spirits invoked in every sabulungan rite."
+      },
+      {
+        "kind": "ally",
+        "personId": "mentawai_kabagat_koat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Toys for the Souls: Life and Art on the Mentawai Islands. Brussels: Primedia / 5 Continents, 2017 (English edition; orig. Speelgoed voor de zielen, Delft 1979)."
+          }
+        ],
+        "notes": "The sky-lord and the sea-lord are jointly addressed by the kerei as guardians of two of the three cosmic domains."
+      },
+      {
+        "kind": "ally",
+        "personId": "mentawai_taikabaga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan.' Wacana 23(2), 2022."
+          }
+        ],
+        "notes": "Sky-above and earth-below are paired as the upper and lower ruling spirits framing the middle world of humans."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "mentawai_ulaumanua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ],
+        "notes": "Where the formless high deity Ulaumanua is recognised, the named domain spirits stand beneath its overarching authority over all realms."
+      },
+      {
+        "kind": "ally",
+        "personId": "mentawai_ulaumanua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ],
+        "notes": "As the overarching high deity, Ulaumanua presides above the named ruling spirit of the sky and the other domain spirits."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Taikamanua is the Mentawai ruling spirit of the sky and clouds, governing weather and rain and in some accounts named as creator and highest ruler.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan; Roles of animals in sculptures, shamanic songs and dances, and the belief system of traditional Mentawaians.' Wacana, Journal of the Humanities of Indonesia 23(2), 2022."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Taikamanua (Tai Ka-Manua, 'lord of the sky') is the ruling spirit of the heavens and clouds in the Arat Sabulungan religion of the Mentawai of Siberut, off the west coast of Sumatra. He is held responsible for rain and the weather, and in several ethnographic accounts is identified as the creator and the supreme ruler over the upper, middle, and lower worlds. Together with the rulers of the forest and the sea he forms the triad of domain spirits whom the kerei (shaman) addresses with bundles of leaves (sabulungan) at every ceremony of birth, healing, house-building, and tattooing."
+  },
+  {
+    "id": "mentawai_taikaleleu",
+    "name": {
+      "primary": "Taikaleleu, ruling spirit of the forest and mountains",
+      "alt": [
+        "Tai Ka-Leleu",
+        "Tai Ka Leleu",
+        "Taikaleleu",
+        "Sikaleleu"
+      ],
+      "transliterations": {
+        "mentawai": "Taikaleleu",
+        "etymology": "Mentawai tai 'ruling spirit, lord' + ka 'of/in' + leleu 'forest, mountains, the upland interior'; thus 'the lord of the forest and mountains'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mentawai",
+    "primaryTradition": "Mentawai",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mentawai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Mentawai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Taikaleleu is the ruling spirit who guards the forest and the mountains of Siberut; in Schefold's account he keeps his own invisible 'culture' in the deep forest, with houses and domestic animals, and game must be sought with his permission.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "forest-and-mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "leleu",
+          "script": "Latin",
+          "rom": "leleu (forest, mountains, upland interior)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan.' Wacana, Journal of the Humanities of Indonesia 23(2), 2022."
+          }
+        ]
+      },
+      {
+        "sphereId": "the-hunt-and-wild-game",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Mentawai Shaman: Keeper of the Rainforest. New York: Aperture, 1991."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "to_guard_the_forest_and_its_game",
+        "name": "to guard the forest, the mountains, and their game animals",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Hunters and forest-clearers must obtain the consent of the forest-lord through the kerei before taking game or felling trees.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hanani, S. & Nelmaya. 'Ecological ethics in the theological teaching of Arat Sabulungan in Mentawai Island Indonesia.' Kasetsart Journal of Social Sciences 43(1), 2022, pp. 102-107."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Sikaleleu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "mentawai_taikamanua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan.' Wacana 23(2), 2022."
+          }
+        ],
+        "notes": "Worshipped together with the rulers of sky and sea as the co-ordinate domain spirits invoked in every sabulungan rite."
+      },
+      {
+        "kind": "ally",
+        "personId": "mentawai_kabagat_koat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Toys for the Souls: Life and Art on the Mentawai Islands. Brussels: Primedia / 5 Continents, 2017."
+          }
+        ],
+        "notes": "The lord of the land and the lord of the sea divide the inhabited surface of the Mentawai world between forest and ocean."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "mentawai_ulaumanua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ],
+        "notes": "The forest-lord, like the other domain spirits, stands beneath the overarching authority of the formless high deity Ulaumanua."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Taikaleleu (Sikaleleu) is the Mentawai ruling spirit of the forest and mountains, guardian of wild game and the upland interior.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan; Roles of animals in sculptures, shamanic songs and dances, and the belief system of traditional Mentawaians.' Wacana, Journal of the Humanities of Indonesia 23(2), 2022."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Taikaleleu (Tai Ka-Leleu, also called Sikaleleu, 'lord of the forest') is the ruling spirit of the forest and mountains in the Arat Sabulungan religion of Siberut. In Reimar Schefold's ethnography the forest-lord keeps an invisible parallel society in the deep forest, complete with houses and livestock, so that hunters and those who clear gardens must first win his goodwill through the kerei. He is one of the three co-ordinate cosmic-domain spirits — sky, forest, and sea — at the heart of Mentawai ritual life."
+  },
+  {
+    "id": "mentawai_kabagat_koat",
+    "name": {
+      "primary": "Kabagat Koat, ruling spirit of the sea",
+      "alt": [
+        "Tai Ka-Koat",
+        "Tai Ka Bagat Koat",
+        "Kabagat Koat",
+        "Taikabagatkoat"
+      ],
+      "transliterations": {
+        "mentawai": "Kabagat Koat",
+        "etymology": "Mentawai (tai) ka 'lord of/in' + bagat 'within, the inside/depths of' + koat 'sea, ocean'; thus 'the lord within the sea'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mentawai",
+    "primaryTradition": "Mentawai",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mentawai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Mentawai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Kabagat Koat is the ruling spirit of the sea who guards marine life and the coastal waters of the Mentawai islands, one of the three domain spirits invoked together with the rulers of sky and forest in the sabulungan leaf ritual.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea-and-marine-life",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "koat",
+          "script": "Latin",
+          "rom": "koat (sea, ocean)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan.' Wacana, Journal of the Humanities of Indonesia 23(2), 2022."
+          }
+        ]
+      },
+      {
+        "sphereId": "fishing-and-coastal-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hanani, S. & Nelmaya. 'Ecological ethics in the theological teaching of Arat Sabulungan in Mentawai Island Indonesia.' Kasetsart Journal of Social Sciences 43(1), 2022, pp. 102-107."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "to_guard_the_sea_and_its_creatures",
+        "name": "to guard the sea and the marine life within it",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Fishing and travel by sea require the goodwill of the sea-lord, sought through the kerei and the sabulungan offering.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Toys for the Souls: Life and Art on the Mentawai Islands. Brussels: Primedia / 5 Continents, 2017."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Tai Ka Bagat Koat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "mentawai_taikamanua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Toys for the Souls: Life and Art on the Mentawai Islands. Brussels: Primedia / 5 Continents, 2017."
+          }
+        ],
+        "notes": "The sea-lord and the sky-lord are jointly addressed by the kerei as guardians of two of the three cosmic domains."
+      },
+      {
+        "kind": "ally",
+        "personId": "mentawai_taikaleleu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Toys for the Souls: Life and Art on the Mentawai Islands. Brussels: Primedia / 5 Continents, 2017."
+          }
+        ],
+        "notes": "The lord of the sea and the lord of the land divide the inhabited surface of the Mentawai world between ocean and forest."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "mentawai_ulaumanua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ],
+        "notes": "The sea-lord, like the other domain spirits, stands beneath the overarching authority of the formless high deity Ulaumanua."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kabagat Koat (Tai Ka-Koat) is the Mentawai ruling spirit of the sea, guardian of marine life and the coastal waters.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan; Roles of animals in sculptures, shamanic songs and dances, and the belief system of traditional Mentawaians.' Wacana, Journal of the Humanities of Indonesia 23(2), 2022."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kabagat Koat (Tai Ka Bagat Koat, also Tai Ka-Koat, 'the lord within the sea') is the ruling spirit of the ocean in the Arat Sabulungan religion of the Mentawai. He guards marine life and the coastal waters, and fishermen and seafarers seek his consent through the kerei and the sabulungan leaf-offering. With the rulers of the sky and the forest he completes the triad of cosmic-domain spirits whom the Mentawai address in every major rite."
+  },
+  {
+    "id": "mentawai_taikabaga",
+    "name": {
+      "primary": "Taikabaga, ruling spirit beneath the earth",
+      "alt": [
+        "Tai Ka-Baga",
+        "Tai Ka Baga",
+        "Taikabaga",
+        "Tai si Ka Baga",
+        "Tai Ka-Bagat"
+      ],
+      "transliterations": {
+        "mentawai": "Taikabaga",
+        "etymology": "Mentawai tai 'ruling spirit, lord' + ka 'of/in' + baga 'the inside, the interior, that which is below'; thus 'the lord of the interior / of the world below'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mentawai",
+    "primaryTradition": "Mentawai",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mentawai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Mentawai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Taikabaga is the ruling spirit who dwells beneath the surface of the earth, the chthonic lord of the lower of the three Mentawai worlds, whose realm in the underworld is imagined with its own inhabitants and where the spirits of the dead are received.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator. 'Stranded people; Mythical narratives about the first inhabitants of Mentawai Islands.' Wacana, Journal of the Humanities of Indonesia 14(2), 2012, pp. 215-240."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-below-and-underworld",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "baga",
+          "script": "Latin",
+          "rom": "baga (inside, interior, the world below)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan.' Wacana, Journal of the Humanities of Indonesia 23(2), 2022."
+          }
+        ]
+      },
+      {
+        "sphereId": "soil-fertility-and-the-land",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "to_rule_the_world_beneath_the_earth",
+        "name": "to rule the world beneath the earth and receive the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The lower world below the earth's surface is the domain of the chthonic ruling spirit, set against the sky above and the inhabited middle world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schefold, Reimar. Lia: Das grosse Ritual auf den Mentawai-Inseln (Indonesien). Berlin: Dietrich Reimer Verlag, 1988."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Tai si Ka Baga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator. 'Stranded people; Mythical narratives about the first inhabitants of Mentawai Islands.' Wacana, Journal of the Humanities of Indonesia 14(2), 2012, pp. 215-240."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "mentawai_taikamanua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan.' Wacana 23(2), 2022."
+          }
+        ],
+        "notes": "Sky-above and earth-below are paired as the upper and lower ruling spirits framing the middle world of humans."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "mentawai_ulaumanua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ],
+        "notes": "The lord of the world below, like the other domain spirits, stands beneath the overarching authority of the formless high deity Ulaumanua."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Taikabaga (Tai Ka-Baga) is the Mentawai ruling spirit beneath the earth's surface, the chthonic lord of the lower of the three cosmic worlds.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator. 'Stranded people; Mythical narratives about the first inhabitants of Mentawai Islands.' Wacana, Journal of the Humanities of Indonesia 14(2), 2012, pp. 215-240."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Tulius, Juniator & Linda Burman-Hall. 'Primates and birds of sabulungan; Roles of animals in sculptures, shamanic songs and dances, and the belief system of traditional Mentawaians.' Wacana, Journal of the Humanities of Indonesia 23(2), 2022."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Taikabaga (Tai Ka-Baga, 'lord of the interior / of the world below') is the ruling spirit who dwells beneath the surface of the earth in the Arat Sabulungan religion of the Mentawai. He is the chthonic ruler of the lowest of the three Mentawai worlds — sky above, the inhabited middle world, and the realm below the earth — and his domain is bound up with the fertility of the soil and with the world that receives the dead. In the architectural symbolism of the jaraik fetish-panel, the downward-curving lower part, like tree-roots, represents this underworld domain."
+  },
+  {
+    "id": "mentawai_ulaumanua",
+    "name": {
+      "primary": "Ulaumanua, the formless high deity",
+      "alt": [
+        "Ulaumanua",
+        "Ulau Manua"
+      ],
+      "transliterations": {
+        "mentawai": "Ulaumanua",
+        "etymology": "Mentawai ulau 'light; the outside' + manua 'sky, heaven'; understood as a formless 'supreme light' of the heavens"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mentawai",
+    "primaryTradition": "Mentawai",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mentawai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Mentawai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Ulaumanua is the formless high deity of the Mentawai, conceived as a supreme light without personal shape that holds the highest authority over both the spiritual and physical realms and sustains all life, so that even a natural death is regarded as its will.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "supreme-overarching-authority",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ulaumanua",
+          "script": "Latin",
+          "rom": "Ulaumanua (supreme light of the heavens)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ]
+      },
+      {
+        "sphereId": "life-and-natural-death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hanani, S. & Nelmaya. 'Ecological ethics in the theological teaching of Arat Sabulungan in Mentawai Island Indonesia.' Kasetsart Journal of Social Sciences 43(1), 2022, pp. 102-107."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "to_sustain_all_life",
+        "name": "to sustain all life and hold authority over every realm",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Ulaumanua is held to sustain all life on earth; in modern Mentawai Christian and Muslim understanding the name is often equated with God.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "mentawai_taikamanua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          }
+        ],
+        "notes": "As the overarching high deity, Ulaumanua presides above the named ruling spirit of the sky and the other domain spirits."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ulaumanua is the Mentawai formless high deity, a 'supreme light' holding the highest authority over the spiritual and physical realms and sustaining all life.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "The Religious Cosmology of Indigenous Communities for Maintaining Ecological Balance in the Mentawai Islands, Indonesia. Millah: Journal of Religious Studies, Universitas Islam Indonesia, 2024."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hanani, S. & Nelmaya. 'Ecological ethics in the theological teaching of Arat Sabulungan in Mentawai Island Indonesia.' Kasetsart Journal of Social Sciences 43(1), 2022, pp. 102-107. DOI: 10.34044/j.kjss.2022.43.1.14."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ulaumanua (Ulau Manua, from ulau 'light' and manua 'sky') is the formless high deity of the Mentawai, conceived not as a person but as a supreme light of the heavens. It is held to possess the highest authority over both the spiritual and the physical realms and to sustain all life on earth, so that even natural death is regarded as its will. Standing above the named ruling spirits of sky, forest, sea, and the world below, Ulaumanua in modern Mentawai religious life is frequently identified by Christian and Muslim converts with the one God."
+  }
+]
+```

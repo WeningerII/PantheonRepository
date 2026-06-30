@@ -1,7 +1,7 @@
 # Pantheon Registry
 
-A multi-tradition registry of mythological and historical figures — **2,815 entries
-across 243 traditions**, presented as a single-page app you can browse, search,
+A multi-tradition registry of mythological and historical figures — **3,472 entries
+across 360 traditions**, presented as a single-page app you can browse, search,
 graph, and map.
 
 The whole thing runs from static files with React loaded over a CDN. There is no

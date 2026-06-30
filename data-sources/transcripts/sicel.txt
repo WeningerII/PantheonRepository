@@ -1,0 +1,677 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Sicel
+Era (registered, exact): "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+Author pass: new tradition — attested individuated core (4 figures).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "sicel_palici",
+    "name": {
+      "primary": "The Palici",
+      "alt": [
+        "Palikoi",
+        "Palikoí",
+        "Palaci",
+        "Dilloi",
+        "Delloi"
+      ],
+      "transliterations": {
+        "grc": "Παλικοί",
+        "lat": "Palici",
+        "etymology": "Explained in antiquity (Macrobius, Saturnalia 5.19) from Greek apo tou palin hikesthai, 'because they had come back (again)' from the earth; the indigenous Sikel name was assimilated to this folk-etymology."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sicel",
+    "primaryTradition": "Sicel",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "sicel_adranus",
+      "sicel_thaleia"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 0,
+        "startEvent": "Born of the earth at the sulphurous springs of the Palagonia plain when, the myth held, the nymph Thaleia (pregnant by Zeus and hidden underground from Hera) sent forth twin boys who 'came back' from the ground beside Lake Naftia.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Macrobius, Saturnalia 5.19.15-31 (ed./trans. R. A. Kaster, Loeb Classical Library 512, Harvard University Press, 2011)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 1,
+        "startEvent": "Worshipped at the national Sikel sanctuary of Palike on the Rocchicella hill, where about 453 BCE Ducetius gathered the Sikel league and founded the city of Palike beside the geyser-shrine.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 11.88.6-90.2 (trans. C. H. Oldfather, Loeb Classical Library 375, Harvard University Press, 1946)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "geysers-and-thermal-springs",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "krenai",
+          "script": "Latin",
+          "rom": "krēnai (springs)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. H. Croon, 'The Palici: An Autochthonous Cult in Ancient Sicily', Mnemosyne 5.2 (1952), pp. 116-129"
+          }
+        ]
+      },
+      {
+        "sphereId": "sworn-oaths-and-ordeal",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "horkos",
+          "script": "Latin",
+          "rom": "horkos (oath)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Macrobius, Saturnalia 5.19 (ed./trans. R. A. Kaster, Loeb Classical Library 512, Harvard University Press, 2011)"
+          }
+        ]
+      },
+      {
+        "sphereId": "asylum-and-sanctuary-of-the-oppressed",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "asylon",
+          "script": "Latin",
+          "rom": "asylon (refuge)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 11.89.6-8 (trans. C. H. Oldfather, Loeb Classical Library 375, Harvard University Press, 1946)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "judge_the_truth_of_oaths",
+        "name": "to judge the truth of a sworn oath by ordeal",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "An oath written on a tablet was cast into their sacred pool; a true oath floated, a false one sank, and perjurers were said to be struck blind or to die.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Macrobius, Saturnalia 5.19.20-30 (ed./trans. R. A. Kaster, Loeb Classical Library 512, Harvard University Press, 2011)"
+          }
+        ]
+      },
+      {
+        "id": "grant_sanctuary_to_fugitives",
+        "name": "to grant inviolable refuge to suppliants and runaway slaves",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Their precinct was a recognised place of asylum where mistreated slaves could compel their masters to swear better treatment before release.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 11.89.6-8 (trans. C. H. Oldfather, Loeb Classical Library 375, Harvard University Press, 1946)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sicel_naftia_geyser_pools",
+        "name": "the boiling craters of Lake Naftia (the Delloi springs)",
+        "kind": "sacred-site",
+        "role": "Twin sulphurous geyser-pools, called the Delloi (the 'brothers' of the Palici), regarded as the gods' own bodies and the instrument of the oath-ordeal.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "L. Maniscalco (ed.), Il santuario dei Palici: un centro di culto nella Valle del Margi (Collana d'Area, Quaderno 11; Palermo: Regione Siciliana, 2008)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "θεοὶ Παλικοί",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 11.89.1 (trans. C. H. Oldfather, Loeb Classical Library 375, Harvard University Press, 1946)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "twin sibling",
+        "personId": "sicel_palici",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. H. Croon, 'The Palici: An Autochthonous Cult in Ancient Sicily', Mnemosyne 5.2 (1952), pp. 116-129"
+          }
+        ],
+        "notes": "The Palici are themselves an inseparable pair of twin brothers, worshipped jointly and never as individuals; their twin springs the Delloi were called their 'brothers'."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Palici are the indigenous Sikel twin chthonic gods of the sulphurous geysers of Lake Naftia and of sworn oaths, with a national sanctuary at Palike where the Sikel league under Ducetius assembled.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 11.88.6-90.2 (trans. C. H. Oldfather, Loeb Classical Library 375, Harvard University Press, 1946)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. H. Croon, 'The Palici: An Autochthonous Cult in Ancient Sicily', Mnemosyne 5.2 (1952), pp. 116-129"
+          },
+          {
+            "kind": "secondary",
+            "reference": "L. Maniscalco (ed.), Il santuario dei Palici: un centro di culto nella Valle del Margi (Palermo: Regione Siciliana, 2008); reviewed in Bryn Mawr Classical Review 2010.03.26"
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "The Palici (Greek Palikoi) are the most distinctly indigenous gods of pre-Greek Sicily: twin chthonic brothers manifest in the boiling, sulphur-smelling geysers of the small Lake Naftia in the Palagonia plain (the Valle del Margi), near Mount Etna. They presided over the most binding form of oath: a litigant wrote his oath on a tablet and cast it into the steaming pool, where it was believed to float if true and to sink if false, perjury being punished at once by blindness or death. Their precinct was a famous asylum where ill-used slaves could take refuge. Greek tradition gave them divine parents (Zeus and the nymph Thaleia, or Zeus and the mountain-goddess Aetna), while an indigenous account made them sons of the Sikel fire-god Adranus. Their sanctuary at Palike on the Rocchicella di Mineo became the political and religious centre of the Sikel league founded by Ducetius around 453 BCE; modern excavations directed by Laura Maniscalco have recovered the shrine and its 'boiling waters'."
+  },
+  {
+    "id": "sicel_adranus",
+    "name": {
+      "primary": "Adranus",
+      "alt": [
+        "Adranos",
+        "Hadranus",
+        "Adrano"
+      ],
+      "transliterations": {
+        "grc": "Ἄδρανος",
+        "lat": "Adranus",
+        "etymology": "A native Sikel theonym, also the name of his cult-town Adranon (modern Adrano); some scholars have compared it with Near-Eastern fire/solar names such as Adar, though the connection is uncertain and the name is most likely indigenous Sicilian."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sicel",
+    "primaryTradition": "Sicel",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 0,
+        "startEvent": "Venerated as a fiery god dwelling beneath Mount Etna, said in Greek tradition to have been driven from the mountain by Hephaestus, and worshipped across Sicily but above all at his temple in the town of Adranon.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Aelian, On the Nature of Animals (De natura animalium) 11.20 (trans. A. F. Scholfield, Loeb Classical Library 449, Harvard University Press, 1959)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 1,
+        "startEvent": "His sanctuary at the town refounded by Dionysius I of Syracuse (Adranum, c. 400 BCE) was guarded by about a thousand sacred dogs that fawned on pilgrims by day and escorted them home by night while savaging thieves and the impious.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 14.37.5 (trans. C. H. Oldfather, Loeb Classical Library 399, Harvard University Press, 1954)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire-and-volcanic-mountain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "pyr",
+          "script": "Latin",
+          "rom": "pyr (fire)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. Manganaro, in J. H. Croon, 'The Palici: An Autochthonous Cult in Ancient Sicily', Mnemosyne 5.2 (1952), pp. 116-129"
+          }
+        ]
+      },
+      {
+        "sphereId": "oaths-and-sanctuary-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Aelian, On the Nature of Animals 11.20 (trans. A. F. Scholfield, Loeb Classical Library 449, Harvard University Press, 1959)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "manifest_as_volcanic_fire",
+        "name": "to embody and command the fire beneath Mount Etna",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Identified with the subterranean fire of Etna, from which Greek myth said Hephaestus expelled him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. H. Croon, 'The Palici: An Autochthonous Cult in Ancient Sicily', Mnemosyne 5.2 (1952), pp. 116-129"
+          }
+        ]
+      },
+      {
+        "id": "give_a_battle_omen_through_his_spear",
+        "name": "to send omens of victory in battle through his image and spear",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "When Timoleon approached Adranum in 344 BCE, the temple doors were said to have flown open of themselves and the god's spear to have quivered and sweated, taken as a portent of his favour.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Timoleon 12.5-9 (trans. B. Perrin, Loeb Classical Library 98, Harvard University Press, 1918)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sicel_sacred_dogs_of_adranum",
+        "name": "the thousand sacred dogs of Adranum",
+        "kind": "temple-guardian",
+        "role": "A pack of about a thousand hounds attached to the god's temple, gentle to worshippers but death to thieves and the impious; emblematic of Adranus' protective power.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Aelian, On the Nature of Animals 11.20 (trans. A. F. Scholfield, Loeb Classical Library 449, Harvard University Press, 1959)"
+          }
+        ]
+      },
+      {
+        "id": "sicel_spear_of_adranus",
+        "name": "the spear of Adranus",
+        "kind": "regalia",
+        "role": "The war-spear of the cult image, whose trembling and sweating before the battle of Adranum was read as a divine omen.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Timoleon 12.5-9 (trans. B. Perrin, Loeb Classical Library 98, Harvard University Press, 1918)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "lover",
+        "personId": "sicel_thaleia",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hesychius of Alexandria, Lexicon, s.v. Palikoi (ed. K. Latte / P. A. Hansen, Hesychii Alexandrini Lexicon, Berlin: De Gruyter)"
+          }
+        ],
+        "notes": "An indigenous tradition reported by Hesychius makes Adranus the father of the Palici by the nymph Thaleia (Thalia), in place of the Greek account that named Zeus their father."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Adranus is the indigenous Sikel fire-god of Mount Etna, father in the native tradition of the Palici, whose temple at Adranon was guarded by a thousand sacred dogs.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Aelian, On the Nature of Animals (De natura animalium) 11.20 (trans. A. F. Scholfield, Loeb Classical Library 449, Harvard University Press, 1959)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Timoleon 12.5-9 (trans. B. Perrin, Loeb Classical Library 98, Harvard University Press, 1918)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. H. Croon, 'The Palici: An Autochthonous Cult in Ancient Sicily', Mnemosyne 5.2 (1952), pp. 116-129"
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Adranus (Greek Adranos) was the principal fire-god of the Sikels, associated with the volcanic fire of Mount Etna and worshipped throughout Sicily, especially at the town that bore his name, Adranon (modern Adrano), refounded by Dionysius I of Syracuse around 400 BCE. Aelian records that some thousand sacred dogs were kept at his sanctuary: by day they welcomed pilgrims, by night they guided home those who had drunk too much and tore apart thieves and the sacrilegious. Plutarch tells that when Timoleon marched on Adranum in 344 BCE the temple doors opened of their own accord and the god's spear trembled and ran with sweat, an omen of victory. In the indigenous genealogy reported by the lexicographer Hesychius, Adranus is the father of the twin Palici by the nymph Thaleia, whereas the Hellenised version assigns that role to Zeus; later writers compared his name with eastern fire-deities such as Adar, but he is best understood as a native Sicilian god."
+  },
+  {
+    "id": "sicel_thaleia",
+    "name": {
+      "primary": "Thaleia, nymph of Aetna",
+      "alt": [
+        "Thalia",
+        "Thalea",
+        "Aetna",
+        "Aitne"
+      ],
+      "transliterations": {
+        "grc": "Θάλεια",
+        "lat": "Thalia",
+        "etymology": "Greek Thaleia, 'the blooming, flourishing one', from thallein 'to bloom'; in a parallel Sicilian tradition the mother of the Palici is instead named Aetna (Aitne), the goddess of Mount Etna herself."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sicel",
+    "primaryTradition": "Sicel",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 0,
+        "startEvent": "A naiad-nymph of the region of Mount Etna, daughter of Hephaestus, who, embraced by Zeus near the river Symaethus and fearing Hera's jealousy, prayed that the earth open and swallow her.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Servius, Commentary on Vergil's Aeneid 9.581 (9.584) (ed. G. Thilo & H. Hagen, Servii Grammatici qui feruntur in Vergilii carmina commentarii, Leipzig: Teubner, 1881-1887)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 1,
+        "startEvent": "When her time came the earth opened again and she sent up from underground the twin Palici, who were named for having 'come back' from the ground at the geysers of the Palagonia plain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Macrobius, Saturnalia 5.19.18-19 (ed./trans. R. A. Kaster, Loeb Classical Library 512, Harvard University Press, 2011)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "volcanic-fertility-of-etna",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. H. Croon, 'The Palici: An Autochthonous Cult in Ancient Sicily', Mnemosyne 5.2 (1952), pp. 116-129"
+          }
+        ]
+      },
+      {
+        "sphereId": "springs-and-naiad-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "naias",
+          "script": "Latin",
+          "rom": "naïas (naiad)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Macrobius, Saturnalia 5.19 (ed./trans. R. A. Kaster, Loeb Classical Library 512, Harvard University Press, 2011)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "be_swallowed_and_give_back_the_earths_children",
+        "name": "to be received into the earth and to send her children back from it",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Hidden underground from Hera, she brought forth the Palici from the ground itself, linking her to the chthonic, regenerative power of the volcanic land.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Macrobius, Saturnalia 5.19.18-19 (ed./trans. R. A. Kaster, Loeb Classical Library 512, Harvard University Press, 2011)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Αἴτνη",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Scholia on Theocritus, Idyll 1.65 (citing Simonides), in J. H. Croon, 'The Palici: An Autochthonous Cult in Ancient Sicily', Mnemosyne 5.2 (1952), pp. 116-129"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "lover",
+        "personId": "sicel_adranus",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hesychius of Alexandria, Lexicon, s.v. Palikoi (ed. K. Latte / P. A. Hansen, Hesychii Alexandrini Lexicon, Berlin: De Gruyter)"
+          }
+        ],
+        "notes": "In the indigenous tradition reported by Hesychius, the nymph Thaleia bore the Palici to the Sikel fire-god Adranus, rather than to Zeus."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Thaleia (also identified with the mountain-goddess Aetna) is the nymph mother of the Palici, daughter of Hephaestus, who hid in the earth from Hera and sent the twin gods back up from the ground.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Macrobius, Saturnalia 5.19.18-19 (ed./trans. R. A. Kaster, Loeb Classical Library 512, Harvard University Press, 2011)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Servius, Commentary on Vergil's Aeneid 9.581 (9.584) (ed. G. Thilo & H. Hagen, Leipzig: Teubner, 1881-1887)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Thaleia (Latin Thalia), a naiad-nymph of Mount Etna and daughter of Hephaestus, is the mother of the Palici. Aeschylus dramatised her story in his lost Sicilian tragedy the Women of Aetna (Aetnaeae); Macrobius and Servius preserve the myth: caught in the embrace of Zeus and dreading the anger of Hera, she begged the earth to swallow her, and in due season the ground opened and gave up her twin sons, the Palici, at the sulphur-springs of the Palagonia plain. A parallel Sicilian tradition names the mother of the Palici not Thaleia but Aetna, the goddess of the mountain herself, who (according to Simonides) once arbitrated between Hephaestus and Demeter for possession of Sicily; the two figures are closely linked and sometimes conflated. An indigenous account recorded by Hesychius makes her consort the Sikel fire-god Adranus rather than Zeus."
+  },
+  {
+    "id": "sicel_hybla",
+    "name": {
+      "primary": "Hybla",
+      "alt": [
+        "Hyblaea",
+        "Hyblaia",
+        "Ibla"
+      ],
+      "transliterations": {
+        "grc": "Ὕβλα",
+        "lat": "Hybla",
+        "etymology": "An indigenous Sikel name borne by several towns (Hybla Gereatis/Geleatis, Hybla Major, Hybla Heraea) and by their tutelary goddess; the name is pre-Greek and of uncertain meaning, later Latinised as Hyblaea and attached to the famous Hyblaean honey."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sicel",
+    "primaryTradition": "Sicel",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 0,
+        "startEvent": "Honoured by the Sikels as a goddess of the earth and its fertility at the Hyblaean towns, with her principal sanctuary at Hybla Gereatis whose priests were renowned as interpreters of dreams and portents.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 5.23.6 (trans. W. H. S. Jones, Loeb Classical Library 188, Harvard University Press, 1926)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-fertility-and-abundance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. Smith (ed.), 'Hybla', in A Dictionary of Greek and Roman Geography (London: Walton & Maberly, 1854), vol. 1, pp. 1075-1076"
+          }
+        ]
+      },
+      {
+        "sphereId": "dream-divination-and-portents",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "oneiroi",
+          "script": "Latin",
+          "rom": "oneiroi (dreams)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 5.23.6 (citing Philistus of Syracuse) (trans. W. H. S. Jones, Loeb Classical Library 188, Harvard University Press, 1926)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "speak_through_dreams_and_omens",
+        "name": "to reveal hidden things and the future through dreams and portents",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her sanctuary at Gereatis was a centre of incubation and dream-interpretation; its priests were held to be the most skilled readers of dreams among the peoples of Sicily.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 5.23.6 (trans. W. H. S. Jones, Loeb Classical Library 188, Harvard University Press, 1926)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sicel_veiled_hybla_coinage",
+        "name": "the veiled head of Hybla on Sicilian coinage",
+        "kind": "emblem",
+        "role": "Civic coins of the Hyblaean towns bear the goddess's veiled head, sometimes with a bee, marking her as patron of the land and its celebrated honey.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. Smith (ed.), 'Hybla', in A Dictionary of Greek and Roman Geography (London: Walton & Maberly, 1854), vol. 1, pp. 1075-1076"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Ὑβλαία",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 5.23.6 (trans. W. H. S. Jones, Loeb Classical Library 188, Harvard University Press, 1926)"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hybla (Hyblaea) is the indigenous Sikel mother and earth-goddess of the Hyblaean towns, a deity of fertility and of dream-divination whose chief sanctuary was at Hybla Gereatis.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 5.23.6 (trans. W. H. S. Jones, Loeb Classical Library 188, Harvard University Press, 1926)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "W. Smith (ed.), 'Hybla', in A Dictionary of Greek and Roman Geography (London: Walton & Maberly, 1854), vol. 1, pp. 1075-1076"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hybla (Latin Hyblaea) was an indigenous Sikel goddess of the earth and its fertility, worshipped at the several Sicilian towns that bore her name, the most important being Hybla Gereatis (Geleatis), a dependency of Catana. Pausanias, drawing on the Sicilian historian Philistus, reports that the people of Gereatis were the most devoted of all the inhabitants of Sicily and were famed as interpreters of dreams and portents, marking Hybla's sanctuary as a centre of incubation and divination. She was a goddess of the fertile, volcanic uplands celebrated for their wild flowers and the finest honey of the ancient world; her veiled head, sometimes accompanied by a bee, appears on local coinage. In Roman times she was assimilated to Venus, worshipped as Venus Victrix Hyblensis. She stands somewhat apart from the Etna-and-geyser cluster of Sikel gods, belonging instead to the honey-bearing Hyblaean hills."
+  }
+]
+```

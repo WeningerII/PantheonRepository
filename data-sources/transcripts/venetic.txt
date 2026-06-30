@@ -1,0 +1,485 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Venetic
+Era (registered, exact): "venetic-preroman-iron-age", "venetic-roman-interpretatio"
+Author pass: new tradition — attested individuated core (3 figures).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "venetic_reitia",
+    "name": {
+      "primary": "Reitia",
+      "alt": [
+        "Rehtia",
+        "Reitiia",
+        "Sainati Reitiai",
+        "Pora",
+        "Śahnate"
+      ],
+      "transliterations": {
+        "venetic": "rehtiia / reitiiai",
+        "oldItalic": "𐌓𐌄𐌉𐌕𐌉𐌀",
+        "etymology": "Disputed; commonly linked to a root *rei- 'to flow / to scratch, write' (whence the gloss 'the one who writes', cf. Detienne), with rival proposals tying it to *reg- 'to set straight / to direct'; the epithet pora is glossed 'the good, kind' and śainatei has been read as 'the healer' or, more recently, as a civic/poliadic title."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Venetic",
+    "primaryTradition": "Venetic",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "venetic-preroman-iron-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "venetic-preroman-iron-age",
+        "eraOrdering": 0,
+        "startEvent": "Reitia is the principal goddess of the Adriatic Veneti, worshipped at the spring-sanctuary of Este-Baratella from roughly the sixth century BCE, where she received thousands of inscribed bronze votives.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wallace, R. E. (2008). 'Venetic.' In R. D. Woodard (ed.), The Ancient Languages of Europe. Cambridge: Cambridge University Press, pp. 124-140."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "venetic-roman-interpretatio",
+        "eraOrdering": 1,
+        "startEvent": "Under Roman influence Reitia's cult persists and she is assimilated to Italic and Greek figures, being identified in scholarship variously with Juno as protectress of women in childbirth and with Diana / Artemis.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Whatmough, J. (1922). 'Rehtia, the Venetic Goddess of Healing.' Nature 109, 154."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "writing-and-literacy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "rehtiia",
+          "script": "Venetic (North Italic)",
+          "rom": "Reitia"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McDonald, K. (2019). 'Education and Literacy in Ancient Italy: Evidence from the Dedications to the Goddess Reitia.' Journal of Roman Studies 109, 131-159."
+          }
+        ]
+      },
+      {
+        "sphereId": "healing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "śainatei",
+          "script": "Venetic (North Italic)",
+          "rom": "sainatei"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Whatmough, J. (1922). 'Rehtia, the Venetic Goddess of Healing.' Nature 109, 154."
+          }
+        ]
+      },
+      {
+        "sphereId": "childbirth-and-women",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "louderobos",
+          "script": "Venetic (North Italic)",
+          "rom": "louderobos"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. (2001). Le iscrizioni dal santuario di Reitia (scavi 1880-1916 e 1987-1991) / Die Inschriften aus dem Reitia-Heiligtum von Este. Mainz."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_the_art_of_writing",
+        "name": "to grant the art of writing and instruct in the alphabet",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Dedicants offered bronze styluses and tablets inscribed with abecedaria, treating the goddess as patron of learning to write.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McDonald, K. (2019). 'Education and Literacy in Ancient Italy: Evidence from the Dedications to the Goddess Reitia.' Journal of Roman Studies 109, 131-159."
+          }
+        ]
+      },
+      {
+        "id": "heal_the_sick_and_safeguard_birth",
+        "name": "to heal the sick and watch over women in childbirth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Axe-pendant pins offered almost exclusively by women, paralleled at the shrine of Orthia at Sparta, point to a role around childbirth and women's health.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Whatmough, J. (1922). 'Rehtia, the Venetic Goddess of Healing.' Nature 109, 154."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "venetic_reitia_stilo",
+        "name": "Inscribed bronze stylus",
+        "kind": "votive instrument",
+        "role": "Square-section bronze writing stylus, often bearing an alphabet on its faces, dedicated in the hundreds in her votive deposit",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McDonald, K. (2019). 'Education and Literacy in Ancient Italy: Evidence from the Dedications to the Goddess Reitia.' Journal of Roman Studies 109, 131-159."
+          }
+        ]
+      },
+      {
+        "id": "venetic_reitia_lamina",
+        "name": "Inscribed votive bronze plaque (lamina)",
+        "kind": "votive plaque",
+        "role": "Thin bronze sheet carrying the dedicatory formula naming the goddess, e.g. the laminae LV Es 28 and Es 29 from the Baratella deposit",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. (2001). Le iscrizioni dal santuario di Reitia (scavi 1880-1916 e 1987-1991) / Die Inschriften aus dem Reitia-Heiligtum von Este. Mainz."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "śainatei",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fogolari, G. & Gambacurta, G. (eds.) (2001). Materiali veneti preromani e romani del santuario di Lagole di Calalzo al Museo di Pieve di Cadore. Rome: Bretschneider."
+          }
+        ]
+      },
+      {
+        "original": "porai",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lejeune, M. (1974). Manuel de la langue vénète. Heidelberg: Carl Winter."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Reitia is the chief goddess of the Adriatic Veneti, a deity of writing, healing and childbirth worshipped at the Este-Baratella sanctuary and known from inscribed bronze votives bearing the formula naming her Śainati and Pora.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Wallace, R. E. (2008). 'Venetic.' In R. D. Woodard (ed.), The Ancient Languages of Europe. Cambridge: Cambridge University Press, pp. 124-140."
+          },
+          {
+            "kind": "secondary",
+            "reference": "McDonald, K. (2019). 'Education and Literacy in Ancient Italy: Evidence from the Dedications to the Goddess Reitia.' Journal of Roman Studies 109, 131-159."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. (2001). Le iscrizioni dal santuario di Reitia (scavi 1880-1916 e 1987-1991) / Die Inschriften aus dem Reitia-Heiligtum von Este. Mainz."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Reitia is the best-attested deity of the Adriatic Veneti, the focus of the great spring-sanctuary at Baratella near Este, active from about the sixth to the first century BCE. Her name appears in the speaking-object dedicatory formula 'mego donasto śainatei reitiiai porai' — 'me gave (the dedicant) to Śainati Reitia Pora' — in which śainati ('the healer', perhaps better 'the civic patroness') and pora ('the good, the kind') accompany her name; a fuller version adds the dedication on behalf of the louderoi, the children. She is above all a goddess of writing: her deposit yielded hundreds of inscribed bronze styluses and tablets used as alphabet exercises, making her cult one of the richest sources for early literacy in ancient Italy, with women prominent among the dedicants. Pendant-axe pins offered by women also tie her to childbirth and healing. In the Roman period her worship continued and she was equated by interpreters with Juno, Diana and Artemis."
+  },
+  {
+    "id": "venetic_trumusiatis",
+    "name": {
+      "primary": "Trumusiatis",
+      "alt": [
+        "Trumusijatis",
+        "Trumusiate Sainate",
+        "Trumusiati",
+        "Tribusiatis"
+      ],
+      "transliterations": {
+        "venetic": "trumusijatei / trumusiatei",
+        "oldItalic": "𐌕𐌓𐌖𐌌𐌖𐌔𐌉𐌀𐌕𐌄𐌉",
+        "etymology": "Of uncertain, probably pre-Latin local origin; understood as a place-bound theonym of the Làgole spring, frequently accompanied by the epithet sainate, read either as 'healer' or as a poliadic ('of the place') title."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Venetic",
+    "primaryTradition": "Venetic",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "venetic-preroman-iron-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "venetic-preroman-iron-age",
+        "eraOrdering": 0,
+        "startEvent": "Trumusiatis is the tutelary god of the thermal-spring sanctuary of Làgole di Calalzo in the Cadore, receiving votive offerings of bronze ladles from about the sixth century BCE for the healing power of its sulphurous waters.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fogolari, G. & Gambacurta, G. (eds.) (2001). Materiali veneti preromani e romani del santuario di Lagole di Calalzo al Museo di Pieve di Cadore. Rome: Bretschneider."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "venetic-roman-interpretatio",
+        "eraOrdering": 1,
+        "startEvent": "In the Roman period the god of Làgole is assimilated to Apollo the healer, whose name appears on later inscriptions from the same sanctuary alongside the older Venetic theonym.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fogolari, G. & Gambacurta, G. (eds.) (2001). Materiali veneti preromani e romani del santuario di Lagole di Calalzo al Museo di Pieve di Cadore. Rome: Bretschneider."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "healing-springs",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "trumusijatei",
+          "script": "Venetic (North Italic)",
+          "rom": "trumusijatei"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wallace, R. E. (2008). 'Venetic.' In R. D. Woodard (ed.), The Ancient Languages of Europe. Cambridge: Cambridge University Press, pp. 124-140."
+          }
+        ]
+      },
+      {
+        "sphereId": "thermal-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sainate",
+          "script": "Venetic (North Italic)",
+          "rom": "sainate"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fogolari, G. & Gambacurta, G. (eds.) (2001). Materiali veneti preromani e romani del santuario di Lagole di Calalzo al Museo di Pieve di Cadore. Rome: Bretschneider."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heal_through_the_thermal_spring",
+        "name": "to heal the sick and wounded through the waters of his spring",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Pilgrims drank and bathed in the sulphurous waters of Làgole drawn with bronze ladles, which were then offered to the god for cure.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fogolari, G. & Gambacurta, G. (eds.) (2001). Materiali veneti preromani e romani del santuario di Lagole di Calalzo al Museo di Pieve di Cadore. Rome: Bretschneider."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "venetic_trumusiatis_simpulum",
+        "name": "Inscribed bronze ladle (simpulum) handle",
+        "kind": "votive vessel",
+        "role": "Long-handled bronze ladle used to draw the spring-water; after use it was broken at the join and the inscribed handle, naming the god and the dedicant, was left as an offering",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fogolari, G. & Gambacurta, G. (eds.) (2001). Materiali veneti preromani e romani del santuario di Lagole di Calalzo al Museo di Pieve di Cadore. Rome: Bretschneider."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "sainate",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fogolari, G. & Gambacurta, G. (eds.) (2001). Materiali veneti preromani e romani del santuario di Lagole di Calalzo al Museo di Pieve di Cadore. Rome: Bretschneider."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Trumusiatis is the male healing god of the Venetic thermal-spring sanctuary at Làgole di Calalzo, named on numerous inscribed bronze ladle-handles and identified with Apollo in the Roman period.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Fogolari, G. & Gambacurta, G. (eds.) (2001). Materiali veneti preromani e romani del santuario di Lagole di Calalzo al Museo di Pieve di Cadore. Rome: Bretschneider."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wallace, R. E. (2008). 'Venetic.' In R. D. Woodard (ed.), The Ancient Languages of Europe. Cambridge: Cambridge University Press, pp. 124-140."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Trumusiatis (Venetic trumusijatei, with the variant Tribusiatis) is the presiding god of the mountain spring-sanctuary of Làgole di Calalzo, high in the Cadore on the upper Piave, which produced nearly a quarter of all known Venetic inscriptions. Worshippers came for the curative sulphurous waters, which they drew with bronze ladles (simpula); after drinking or washing, the ladle was deliberately broken and its inscribed handle, carrying a short votive formula with the dedicant's name and the god's name and epithet, was deposited as a gift. He is regularly given the epithet sainate, the same word attached to Reitia at Este; once read as 'the healer', it is now often taken as a 'poliadic' title marking the god of the place, since it recurs at Este and Altino. In the Roman period the god of Làgole was syncretised with Apollo, who appears by name on the later inscriptions of the site."
+  },
+  {
+    "id": "venetic_louderai",
+    "name": {
+      "primary": "Louderai Kanis",
+      "alt": [
+        "Louderai",
+        "Loudera",
+        "Loudera Kane",
+        "Loudera Kanei"
+      ],
+      "transliterations": {
+        "venetic": "louderai kanei",
+        "oldItalic": "𐌋𐌏𐌖𐌃𐌄𐌓𐌀𐌉",
+        "etymology": "From Venetic *louderos 'free; child', cognate with Latin liber and Greek eleutheros (Proto-Italic *louðeros); the dative louderai corresponds to Latin Liberae, 'to the Free One', the second element kanei being a further divine name or epithet."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Venetic",
+    "primaryTradition": "Venetic",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "venetic-preroman-iron-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "venetic-preroman-iron-age",
+        "eraOrdering": 0,
+        "startEvent": "Louderai is a local goddess of the Cadore named in the votive bronze inscription from Valle di Cadore (eik goltanos doto louderai kanei), interpreted as a Venetic counterpart of the Latin Libera.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pellegrini, G. B. & Prosdocimi, A. L. (1967). La lingua venetica, 2 vols. Padua: Istituto di Glottologia; Florence: Circolo Linguistico Fiorentino."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "freedom-and-youth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "louderai",
+          "script": "Venetic (North Italic)",
+          "rom": "louderai"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pellegrini, G. B. & Prosdocimi, A. L. (1967). La lingua venetica, 2 vols. Padua: Istituto di Glottologia; Florence: Circolo Linguistico Fiorentino."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_the_offerings_of_the_free",
+        "name": "to receive the gifts of the free-born and of the young",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her name derives from the word for 'free / child', and the cognate plural louderoi denotes 'the children' on whose behalf Venetic dedications were made.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wallace, R. E. (2008). 'Venetic.' In R. D. Woodard (ed.), The Ancient Languages of Europe. Cambridge: Cambridge University Press, pp. 124-140."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "venetic_louderai_situla",
+        "name": "Inscribed bronze vessel from Valle di Cadore",
+        "kind": "votive vessel",
+        "role": "Bronze offering-vessel bearing the dedication 'eik goltanos doto louderai kanei', the inscription that attests the goddess",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pellegrini, G. B. & Prosdocimi, A. L. (1967). La lingua venetica, 2 vols. Padua: Istituto di Glottologia; Florence: Circolo Linguistico Fiorentino."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "kanei",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pellegrini, G. B. & Prosdocimi, A. L. (1967). La lingua venetica, 2 vols. Padua: Istituto di Glottologia; Florence: Circolo Linguistico Fiorentino."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Louderai (Louderai Kanis) is a local Venetic goddess of the Cadore, attested by the votive inscription eik goltanos doto louderai kanei and interpreted as the equivalent of the Latin Libera, 'the Free One'.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Pellegrini, G. B. & Prosdocimi, A. L. (1967). La lingua venetica, 2 vols. Padua: Istituto di Glottologia; Florence: Circolo Linguistico Fiorentino."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wallace, R. E. (2008). 'Venetic.' In R. D. Woodard (ed.), The Ancient Languages of Europe. Cambridge: Cambridge University Press, pp. 124-140."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Louderai is a local goddess of the Cadore region of the eastern Veneto, known from a single but much-discussed votive bronze inscription from Valle di Cadore: eik goltanos doto louderai kanei, 'here Goltanos gave (this) to Louderai Kanis'. Pellegrini and Prosdocimi rendered the dedication into Latin as hic Goltanus dedit Liberae Cani, identifying louderai with Libera, 'the Free One', from the Venetic word *louderos 'free, child' (cognate with Latin liber and Greek eleutheros). The same root underlies the plural louderoi / louderobos, 'the children', named in the dedications to Reitia at Este, so the goddess belongs to a wider Venetic conception of the free-born young. Whether kanei is a second theonym or a qualifying epithet remains debated. She stands apart from the great sanctuary deities as a distinctly local cult-figure of the Piave valley."
+  }
+]
+```
