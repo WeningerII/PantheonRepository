@@ -1,0 +1,860 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bemba
+Era (registered, exact): "mythic founding"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the six individuated figures of the Bemba founding-migration charter still missing from the corpus: King Mukulumpe of Kola, the sky-born ancestress Mumbi Mukasa, the royal siblings Nkole, Katongo and Chilufya Mulenga, and the diviner-guide Luchele Ng'anga. All are attested in Roberts, A History of the Bemba (1973), Richards (African Political Systems 1940; Chisungu 1956; 'Keeping the King Divine' 1968) and Hinfelaar (1994), and are wired to the existing Chitimukulu and Lesa via directed relations and parentage. Half-brothers Kapasa, Chimba and Kazembe appear in the charter but were left out as thinner, partly Lunda-affiliated figures; the named record beyond this set is essentially exhausted.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bemba_mukulumpe",
+    "name": {
+      "primary": "Mukulumpe",
+      "alt": [
+        "Mukulumpe Mubemba"
+      ],
+      "transliterations": {
+        "bemba": "Mukulumpe",
+        "etymology": "Bemba name of the tyrannical king of Kola in the origin charter; associated with -kulu, 'great/elder' (Roberts, A History of the Bemba, 1973)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Bemba",
+    "primaryTradition": "Bemba",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic founding"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic founding",
+        "eraOrdering": 0,
+        "startEvent": "Mukulumpe reigns as a great chief in Kola (Luba country) at the opening of the Bemba migration charter, before his sons' exile (Roberts, A History of the Bemba, 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mfumu",
+          "script": "Latin",
+          "rom": "chief, king"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, 'The Political System of the Bemba Tribe, North-Eastern Rhodesia', in M. Fortes and E. E. Evans-Pritchard (eds.), African Political Systems, Oxford University Press, 1940"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "royal_judgment",
+        "name": "to punish and banish his royal sons",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He blinds Katongo and exiles Chiti and Nkole after the collapse of their tower, then treacherously digs a game-pit to kill them on their recall.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "bemba_chitimukulu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Mukulumpe is the father of Chiti (Chitimukulu), the founding paramount, whom he exiles from Kola."
+      },
+      {
+        "kind": "father-of",
+        "personId": "bemba_nkole",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Father of Nkole, the elder migration leader."
+      },
+      {
+        "kind": "father-of",
+        "personId": "bemba_katongo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Father of Katongo, whom he blinds in anger."
+      },
+      {
+        "kind": "father-of",
+        "personId": "bemba_chilufya_mulenga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Father of the ancestress Chilufya Mulenga."
+      },
+      {
+        "kind": "spouse",
+        "personId": "bemba_mumbi_mukasa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hugo F. Hinfelaar, Bemba-speaking Women of Zambia in a Century of Religious Change (1892-1992), Brill, 1994"
+          }
+        ],
+        "notes": "Husband of the sky-woman Mumbi Mukasa of the crocodile clan."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mukulumpe is the tyrannical Luba king of Kola in the Bemba origin charter, father of the migrating royal siblings whose exile founds the Bemba polity.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, 'The Political System of the Bemba Tribe, North-Eastern Rhodesia', in M. Fortes and E. E. Evans-Pritchard (eds.), African Political Systems, Oxford University Press, 1940"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Bemba charter myth recorded by Richards and analysed by Roberts, Mukulumpe is a great chief in Kola, in Luba country to the west. He marries the sky-woman Mumbi Mukasa and fathers Katongo, Chiti, Nkole and Chilufya Mulenga. When his sons build a tower that collapses and kills people, he blinds Katongo and drives Chiti and Nkole into the exile that becomes the founding migration of the Bemba across the Luapula."
+  },
+  {
+    "id": "bemba_mumbi_mukasa",
+    "name": {
+      "primary": "Mumbi Mukasa",
+      "alt": [
+        "Mumbi Mukasa Liulu",
+        "Mumbi"
+      ],
+      "transliterations": {
+        "bemba": "Mumbi Mukasa",
+        "etymology": "Mumbi is linked to Bemba -umba, 'to mould/create'; she is remembered as a celestial woman of the crocodile clan (Hinfelaar, Bemba-speaking Women of Zambia, 1994)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Bemba",
+    "primaryTradition": "Bemba",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic founding"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic founding",
+        "eraOrdering": 0,
+        "startEvent": "Mumbi Mukasa, a woman with ears like an elephant's who fell from the sky, marries King Mukulumpe in Kola and becomes mother of the Bemba royal siblings (Roberts, A History of the Bemba, 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "royal-matriliny",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Bena Ng'andu",
+          "script": "Latin",
+          "rom": "the Crocodile clan (people of the crocodile)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, Chisungu: A Girl's Initiation Ceremony among the Bemba of Northern Rhodesia, Faber and Faber, 1956"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "celestial_descent",
+        "name": "to descend from the sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "She is said to have come from the sky (from Lesa's realm), founding the royal crocodile-clan matriline.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hugo F. Hinfelaar, Bemba-speaking Women of Zambia in a Century of Religious Change (1892-1992), Brill, 1994"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "bemba_chitimukulu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Mother of Chiti, the founding Chitimukulu; the royal line traces its matrilineal descent and crocodile clan through her."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "bemba_nkole",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Mother of Nkole."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "bemba_katongo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Mother of the blind drummer Katongo."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "bemba_chilufya_mulenga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Mother of Chilufya Mulenga, through whom the royal succession passes."
+      },
+      {
+        "kind": "spouse",
+        "personId": "bemba_mukulumpe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hugo F. Hinfelaar, Bemba-speaking Women of Zambia in a Century of Religious Change (1892-1992), Brill, 1994"
+          }
+        ],
+        "notes": "Wife of King Mukulumpe of Kola."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "bemba_lesa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hugo F. Hinfelaar, Bemba-speaking Women of Zambia in a Century of Religious Change (1892-1992), Brill, 1994"
+          }
+        ],
+        "notes": "Her celestial origin associates her with the sky realm of the high god Lesa."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mumbi Mukasa is the sky-born ancestress of the crocodile clan, wife of Mukulumpe and mother of the Bemba royal siblings, the mythical source of the royal matriline.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hugo F. Hinfelaar, Bemba-speaking Women of Zambia in a Century of Religious Change (1892-1992), Brill, 1994"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mumbi Mukasa is the celestial woman of the Bemba origin charter, said to have fallen from the sky with ears as large as an elephant's and to belong to the crocodile clan (Bena Ng'andu). As wife of Mukulumpe and mother of Katongo, Chiti, Nkole and Chilufya Mulenga, she is the ultimate ancestress through whom the matrilineal royal dynasty of the Chitimukulu claims descent and clan identity. Hinfelaar treats her as the female, heavenly pole of Bemba royal ideology."
+  },
+  {
+    "id": "bemba_nkole",
+    "name": {
+      "primary": "Nkole",
+      "alt": [
+        "Nkole wa Mapembwe"
+      ],
+      "transliterations": {
+        "bemba": "Nkole",
+        "etymology": "Personal name of the elder migration leader; the senior burial grove Mwalule is linked to his funeral (Roberts, A History of the Bemba, 1973)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Bemba",
+    "primaryTradition": "Bemba",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "bemba_mukulumpe",
+      "bemba_mumbi_mukasa"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic founding"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic founding",
+        "eraOrdering": 0,
+        "startEvent": "Nkole, elder son of Mukulumpe and Mumbi Mukasa, leads the exiles east from Kola with his brother Chiti and becomes paramount after Chiti's death (Roberts, A History of the Bemba, 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "migration-leadership",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mfumu",
+          "script": "Latin",
+          "rom": "chief"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, 'The Political System of the Bemba Tribe, North-Eastern Rhodesia', in M. Fortes and E. E. Evans-Pritchard (eds.), African Political Systems, Oxford University Press, 1940"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "war_leadership",
+        "name": "to lead the migrating royal host and avenge his brother",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Nkole avenges Chiti's death at the hands of the Ng'anda chief Mwase, burning Mwase's village; he is said to have died from the smoke of the pyre.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bemba_mwalule_grove",
+        "name": "Mwalule burial grove",
+        "kind": "sacred site",
+        "role": "Royal burial grove where Nkole and Chiti were interred, thereafter the necropolis of the Chitimukulus.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, 'Keeping the King Divine', Proceedings of the Royal Anthropological Institute of Great Britain and Ireland, 1968"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "bemba_katongo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Brother of the blind drummer Katongo, who warned the exiles of their father's trap."
+      },
+      {
+        "kind": "sibling",
+        "personId": "bemba_chilufya_mulenga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Brother of Chilufya Mulenga, whose son succeeded to the paramountcy."
+      },
+      {
+        "kind": "companion",
+        "personId": "bemba_luchele_nganga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "The diviner Luchele Ng'anga accompanied and guided Nkole and Chiti's migration eastward."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nkole is the elder royal brother who co-leads the Bemba founding migration from Kola, avenges Chiti's death, and is buried with him at Mwalule.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, 'Keeping the King Divine', Proceedings of the Royal Anthropological Institute of Great Britain and Ireland, 1968"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nkole is one of the two royal brothers exiled by Mukulumpe who lead the founding migration of the Bemba from Kola across the Luapula. After Chiti is killed by Mwase over the abduction of Mwase's wife, Nkole avenges him and dies soon afterwards, reputedly from the smoke of the funeral fires. The brothers' burial place at Mwalule became the permanent royal necropolis, central to the ritual kingship described by Richards."
+  },
+  {
+    "id": "bemba_katongo",
+    "name": {
+      "primary": "Katongo",
+      "alt": [],
+      "transliterations": {
+        "bemba": "Katongo",
+        "etymology": "Personal name of the eldest royal son, blinded by Mukulumpe (Roberts, A History of the Bemba, 1973)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Bemba",
+    "primaryTradition": "Bemba",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "bemba_mukulumpe",
+      "bemba_mumbi_mukasa"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic founding"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic founding",
+        "eraOrdering": 0,
+        "startEvent": "Katongo, eldest son of Mukulumpe, is blinded by his father after the fall of the tower and remains in Kola, warning his exiled brothers of the king's trap by drum message (Roberts, A History of the Bemba, 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "drum-signalling",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ing'oma",
+          "script": "Latin",
+          "rom": "drum"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, Chisungu: A Girl's Initiation Ceremony among the Bemba of Northern Rhodesia, Faber and Faber, 1956"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "drum_warning",
+        "name": "to send warnings by talking drum",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Though blind, Katongo beat out a drum message warning Chiti and Nkole of the game-pit their father had dug to kill them.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bemba_katongo_drum",
+        "name": "talking drum of Katongo",
+        "kind": "instrument",
+        "role": "The drum with which the blind prince warned his brothers of Mukulumpe's treachery.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "bemba_nkole",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Brother of the migration leader Nkole."
+      },
+      {
+        "kind": "sibling",
+        "personId": "bemba_chilufya_mulenga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Brother of Chilufya Mulenga."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Katongo is the blinded eldest son of Mukulumpe who saves his exiled brothers by drumming a warning of their father's trap.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, 'The Political System of the Bemba Tribe, North-Eastern Rhodesia', in M. Fortes and E. E. Evans-Pritchard (eds.), African Political Systems, Oxford University Press, 1940"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Katongo is the eldest of the royal sons in the Bemba origin charter. Blinded by his father Mukulumpe as punishment for the collapse of the tower the princes had built, he stayed behind in Kola; when Mukulumpe feigned reconciliation and dug a concealed game-pit to kill the recalled exiles, the blind Katongo warned Chiti and Nkole with a drummed message, enabling the migration to proceed."
+  },
+  {
+    "id": "bemba_chilufya_mulenga",
+    "name": {
+      "primary": "Chilufya Mulenga",
+      "alt": [
+        "Chilufya",
+        "Bwalya Chabala (associated relic name)"
+      ],
+      "transliterations": {
+        "bemba": "Chilufya Mulenga",
+        "etymology": "Bemba female personal name; Chilufya is connected with -lufya, 'to lose/cause to be lost' (Roberts, A History of the Bemba, 1973)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Bemba",
+    "primaryTradition": "Bemba",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "bemba_mukulumpe",
+      "bemba_mumbi_mukasa"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic founding"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic founding",
+        "eraOrdering": 0,
+        "startEvent": "Chilufya Mulenga, the royal sister, is fetched from Kola to join the migrants, and her son succeeds Chiti and Nkole, establishing matrilineal succession to the paramountcy (Roberts, A History of the Bemba, 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "matrilineal-succession",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Bena Ng'andu",
+          "script": "Latin",
+          "rom": "Crocodile clan"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, Chisungu: A Girl's Initiation Ceremony among the Bemba of Northern Rhodesia, Faber and Faber, 1956"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "dynastic_motherhood",
+        "name": "to transmit royal descent through the female line",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As sister of Chiti and Nkole she is the node through which the Chitimukulu succession passes, the charter for Bemba matriliny.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, 'The Political System of the Bemba Tribe, North-Eastern Rhodesia', in M. Fortes and E. E. Evans-Pritchard (eds.), African Political Systems, Oxford University Press, 1940"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "bemba_nkole",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Sister of Nkole; her son succeeded the founding brothers."
+      },
+      {
+        "kind": "sibling",
+        "personId": "bemba_katongo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "Sister of Katongo."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Chilufya Mulenga is the royal sister of the founding migration whose son inherits the paramountcy, providing the mythical charter for Bemba matrilineal succession.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Audrey I. Richards, Chisungu: A Girl's Initiation Ceremony among the Bemba of Northern Rhodesia, Faber and Faber, 1956"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Chilufya Mulenga is the daughter of Mukulumpe and Mumbi Mukasa in the Bemba origin charter. After the deaths of Chiti and Nkole, succession passed to her young son, and Bemba tradition treats this episode as the charter for the matrilineal inheritance of the Chitimukuluship within the crocodile clan, a system analysed at length by Audrey Richards."
+  },
+  {
+    "id": "bemba_luchele_nganga",
+    "name": {
+      "primary": "Luchele Ng'anga",
+      "alt": [
+        "Luchele",
+        "Lucele-ng'anga",
+        "Luchele the Diviner"
+      ],
+      "transliterations": {
+        "bemba": "Luchele Ng'anga",
+        "etymology": "Luchele evokes ukucha, 'to dawn/become light' (the pale or dawn-bright one); ng'anga is Bemba for 'doctor, diviner' (Roberts, A History of the Bemba, 1973)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Bemba",
+    "primaryTradition": "Bemba",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic founding"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic founding",
+        "eraOrdering": 0,
+        "startEvent": "The pale seer Luchele Ng'anga joins the migrating royal brothers and, by conjuring a fish in a mortar, divines that they must travel east to their promised country (Roberts, A History of the Bemba, 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "divination",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ng'anga",
+          "script": "Latin",
+          "rom": "diviner, doctor"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hugo F. Hinfelaar, Bemba-speaking Women of Zambia in a Century of Religious Change (1892-1992), Brill, 1994"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "prophetic_guidance",
+        "name": "to divine omens and guide the migration eastward",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His fish-in-a-mortar omen directed Chiti and Nkole east of the Luapula; later Bemba prophetic movements invoked his promised return from the east.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in north-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Ng'anga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "bemba_nkole",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          }
+        ],
+        "notes": "He travelled with and guided the royal brothers Nkole and Chiti during the founding migration."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "bemba_lesa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hugo F. Hinfelaar, Bemba-speaking Women of Zambia in a Century of Religious Change (1892-1992), Brill, 1994"
+          }
+        ],
+        "notes": "Bemba religious thought casts Luchele Ng'anga as a light-bringing messenger figure associated with the high god Lesa, expected to return from the east."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Luchele Ng'anga is the pale diviner-prophet who guided the Bemba founding migration eastward and whose promised return shaped later Bemba religious expectation.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-eastern Zambia before 1900, Longman, 1973"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hugo F. Hinfelaar, Bemba-speaking Women of Zambia in a Century of Religious Change (1892-1992), Brill, 1994"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Luchele Ng'anga is the mysterious pale ('white' or dawn-bright) diviner of the Bemba migration charter. Falling in with the exiled princes, he read the omen of a fish conjured in a mortar as a command to press eastward across the Luapula toward the Chambeshi plateau, the land the Bemba would settle. He then vanished toward the east, and Bemba tradition held that he would one day return from that direction, an expectation that coloured responses to later prophets and missionaries, as discussed by Roberts and Hinfelaar. Cognate figures appear in neighbouring Lamba tradition."
+  }
+]
+```

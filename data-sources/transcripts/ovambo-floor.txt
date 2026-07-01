@@ -1,0 +1,398 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ovambo
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the three individuated ancestral figures of the Aawambo origin tradition: Kamangundu (Mangundu), the first human created by Kalunga or emerging from the Omumborombonga tree, and his sons Nangombe ya Mangundu (progenitor of the Aawambo) and Kathu (progenitor of the Ovaherero), attested in Williams (1991), Werner (1933), Scheub (2000) and Aarni (1982). Kamangundu is wired to the existing ovambo_kalunga as creator-parent. Beyond these, the scholarship on Ovambo religion (Aarni 1982; Hiltunen, Witchcraft and Sorcery in Ovambo, 1986) documents only Kalunga, Musisi, and unnamed spirit classes (aathithi, oompwidhuli), so no further individuated figures qualified.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ovambo_kamangundu",
+    "name": {
+      "primary": "the First Human",
+      "alt": [
+        "Kamangundu",
+        "Mangundu",
+        "Amangundu"
+      ],
+      "transliterations": {
+        "oshiwambo": "Kamangundu",
+        "etymology": "Oshiwambo personal name of the first human, whom tradition remembers only as 'Mangundu' without specifying sex (Williams, Precolonial Communities of Southwestern Africa, 1991)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Ovambo",
+    "primaryTradition": "Ovambo",
+    "sex": "unknown",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "ovambo_kalunga"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the beginning Kalunga created Mangundu, the first human being, from whom the peoples of the region descend; a parallel tradition has Kamangundu emerge from the Omumborombonga tree of life.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, National Archives of Namibia, 1991"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller, Oxford University Press, 2000, s.v. 'Kamangundu'"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "first-humanity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Omumborombonga",
+          "script": "Latin",
+          "rom": "the leadwood tree of life from which the first people emerged"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller, Oxford University Press, 2000"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_humankind",
+        "name": "to beget the ancestral lineages of humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Kamangundu's children Nangombe and Kathu became the progenitors of the Aawambo and Ovaherero peoples respectively.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, 1991"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ovambo_omumborombonga_tree",
+        "name": "Omumborombonga tree",
+        "kind": "emblem",
+        "role": "the primordial tree of life from which the first human emerged in one strand of the tradition",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, George G. Harrap, 1933, ch. II"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "ovambo_nangombe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, 1991"
+          }
+        ],
+        "notes": "Nangombe is remembered as a child of Mangundu, though tradition does not preserve whether Mangundu was father or mother."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "ovambo_kathu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, 1991"
+          }
+        ],
+        "notes": "Kathu, ancestor of the Ovaherero, is likewise a child of Mangundu in the shared origin tradition."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kamangundu (Mangundu) is the first human of Ovambo origin tradition, created by the supreme being Kalunga (or emerging from the Omumborombonga tree) and parent of the ancestral brothers Nangombe and Kathu.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, National Archives of Namibia, 1991"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller, Oxford University Press, 2000"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kamangundu, also recorded simply as Mangundu, is the first human being of Aawambo (Ovambo) origin tradition. One strand holds that the supreme being Kalunga created Mangundu and a spouse at the beginning of the world; another, shared with the neighbouring Ovaherero, has Kamangundu emerge from the great Omumborombonga (leadwood) tree of life. Oral tradition does not preserve whether Mangundu was male or female, only that Mangundu was the parent of Nangombe and Kathu, from whom the Aawambo and Ovaherero peoples respectively descend."
+  },
+  {
+    "id": "ovambo_nangombe",
+    "name": {
+      "primary": "the Ancestor of the Aawambo",
+      "alt": [
+        "Nangombe",
+        "Nangombe ya Mangundu"
+      ],
+      "transliterations": {
+        "oshiwambo": "Nangombe yaMangundu",
+        "etymology": "From Oshiwambo ongombe, 'head of cattle'; 'Nangombe ya Mangundu' means 'Nangombe (child) of Mangundu' (Williams 1991)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Ovambo",
+    "primaryTradition": "Ovambo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "ovambo_kamangundu"
+    ],
+    "parentRoles": [
+      "parent"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Nangombe, son of Mangundu, migrated from the east with his brother Kathu and, parting from him at the great Omumborombonga tree, settled with his followers on the fertile plains of Ovamboland to become the progenitor of the Aawambo.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, National Archives of Namibia, 1991"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Teddy Aarni, The Kalunga Concept in Ovambo Religion from 1870 Onwards, Stockholm Studies in Comparative Religion 22, 1982"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-and-cattle",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ongombe",
+          "script": "Latin",
+          "rom": "head of cattle, the root of his name"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, 1991"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_owambo_people",
+        "name": "to found the lineages and settlements of the Aawambo people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "All Aawambo matriclans trace their descent to Nangombe ya Mangundu.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, 1991"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Nangombe yaMangundu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, 1991"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "ovambo_kathu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, George G. Harrap, 1933, ch. II"
+          }
+        ],
+        "notes": "Nangombe and Kathu were brothers who migrated together from the east before parting at the Omumborombonga tree."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nangombe ya Mangundu is the eponymous ancestral founder of the Aawambo (Ovambo) people, who settled the Ovamboland floodplain after parting from his brother Kathu at the Omumborombonga tree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, National Archives of Namibia, 1991"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, George G. Harrap, 1933"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nangombe ya Mangundu is the founding ancestor of the Aawambo (Ovambo) people in the shared Owambo-Herero origin tradition. A son of Mangundu, he migrated from the east (traditionally from the region of the great lakes) with his brother Kathu; at the great Omumborombonga tree in the Ondonga area the brothers separated, Kathu leading the pastoral Ovaherero onward while Nangombe and his followers settled the fertile Cuvelai floodplains of Ovamboland. His name, built on the word for cattle, reflects the pastoral wealth of his descendants, and the Owambo kingdoms traced their clans back to him."
+  },
+  {
+    "id": "ovambo_kathu",
+    "name": {
+      "primary": "the Ancestor of the Ovaherero",
+      "alt": [
+        "Kathu",
+        "Kadhu",
+        "Kathu ya Mangundu"
+      ],
+      "transliterations": {
+        "oshiwambo": "Kathu yaMangundu",
+        "etymology": "Oshiwambo personal name; 'Kathu ya Mangundu' means 'Kathu (child) of Mangundu' (Williams 1991)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Ovambo",
+    "primaryTradition": "Ovambo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "ovambo_kamangundu"
+    ],
+    "parentRoles": [
+      "parent"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Kathu, son of Mangundu and brother of Nangombe, parted from his brother at the great Omumborombonga tree and led his followers onward in search of pasture, becoming in Ovambo tradition the ancestor of the Ovaherero.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, National Archives of Namibia, 1991"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, George G. Harrap, 1933, ch. II"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "migration-and-pastoralism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Omumborombonga",
+          "script": "Latin",
+          "rom": "the leadwood tree at which the brothers parted"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, George G. Harrap, 1933, ch. II"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead_herero_migration",
+        "name": "to lead his followers and their herds in search of new pastures",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Owambo account of the shared migration, Kathu drove the cattle-keeping branch southwest into Hereroland.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, 1991"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "ovambo_nangombe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, George G. Harrap, 1933, ch. II"
+          }
+        ],
+        "notes": "Kathu and Nangombe were brothers whose parting at the Omumborombonga tree explains the kinship of the Ovaherero and Aawambo peoples."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kathu ya Mangundu is, in Ovambo origin tradition, the brother of Nangombe who led the Ovaherero away from the Omumborombonga tree in search of pasture, making the two peoples kin.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Frieda-Nela Williams, Precolonial Communities of Southwestern Africa: A History of Owambo Kingdoms 1600–1920, National Archives of Namibia, 1991"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, George G. Harrap, 1933"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kathu (Kadhu) ya Mangundu figures in Aawambo origin tradition as the brother of Nangombe and a son of the first human Mangundu. When the two brothers reached the great Omumborombonga tree during their migration from the east, they separated: Kathu led his people and herds onward in search of pasture, becoming the ancestor of the pastoral Ovaherero, while Nangombe remained to found the Aawambo. The story is regularly cited to explain the acknowledged kinship between the Aawambo and Ovaherero peoples of Namibia."
+  }
+]
+```

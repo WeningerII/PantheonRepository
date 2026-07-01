@@ -1,0 +1,301 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Tumbuka
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Tumbuka theology proper is essentially exhausted by the existing Chiuta (supreme creator, with aliases Leza/Mulungu/Mulengi) and Chikang'ombe (territorial snake spirit): the remaining spirit vocabulary — vimbuza, vyanusi, vilombo, mizimu — denotes unnamed spirit CLASSES (Friedson, Dancing Prophets, 1996; Vail in Schoffeleers, Guardians of the Land, 1979), which the brief excludes. The only genuinely individuated named figures further documented are the legendary founder-ancestors of the Chikulamayembe paramountcy: Mlowoka (Kakalala Gondwe) and his son Gonapamuhanya, both well attested in T. Cullen Young (1932), Vail (1972) and McCracken (2012), and the latter still venerated at an annual festival. Both are entered as mortal heroic ancestors, wired to the pantheon via Gonapamuhanya's subordination to Chiuta. Popular websites listing additional "Tumbuka deities" (e.g. Mlengi as a separate fertility god, or Chaminuka) were checked and rejected as AI-generated or misattributed Shona material.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "tumbuka_mlowoka",
+    "name": {
+      "primary": "Mlowoka",
+      "alt": [
+        "Kakalala Musawira Gondwe",
+        "Kakalala Chisalanda",
+        "Mlowoka the Crosser"
+      ],
+      "transliterations": {
+        "tumbuka": "Mlowoka",
+        "etymology": "From Tumbuka ku-lowoka, 'to cross over (a body of water)'; the Balowoka were 'those who crossed' Lake Malawi (T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples, 1932)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Tumbuka",
+    "primaryTradition": "Tumbuka",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Tumbuka founding traditions recount that the trader Kakalala Gondwe, remembered as Mlowoka, crossed Lake Malawi from the east and established himself among the Tumbuka of Nkhamanga in the later eighteenth century.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (London: Religious Tract Society, 1932)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Leroy Vail, 'Suggestions towards a Reinterpreted Tumbuka History', in B. Pachai (ed.), The Early History of Malawi (London: Longman, 1972)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "trade-and-exchange",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "malonda",
+          "script": "Latin",
+          "rom": "trade, commerce (Tumbuka)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leroy Vail, 'Suggestions towards a Reinterpreted Tumbuka History', in B. Pachai (ed.), The Early History of Malawi (1972)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "founding_ancestral_authority",
+        "name": "to confer legitimacy on his descendants as the remembered founding ancestor of the ruling line",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Mlowoka is invoked in Chikulamayembe dynastic tradition as the apical ancestor from whom the paramountcy descends.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (1932)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tumbuka_ivory_tusk",
+        "name": "Elephant ivory",
+        "kind": "emblem",
+        "role": "The ivory trade across Lake Malawi is the basis of Mlowoka's wealth and authority in the founding narrative",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leroy Vail, 'Suggestions towards a Reinterpreted Tumbuka History', in B. Pachai (ed.), The Early History of Malawi (1972)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Mlowoka",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (1932)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "tumbuka_gonapamuhanya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (1932)"
+          }
+        ],
+        "notes": "Dynastic tradition makes Gonapamuhanya, first Chikulamayembe, a son of Mlowoka by a woman of a leading indigenous Tumbuka clan."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mlowoka (Kakalala Gondwe) is the legendary trader-ancestor who crossed Lake Malawi and founded the ruling lineage of the Tumbuka Nkhamanga kingdom.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (London: Religious Tract Society, 1932)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Leroy Vail, 'Suggestions towards a Reinterpreted Tumbuka History', in B. Pachai (ed.), The Early History of Malawi (London: Longman, 1972)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "John McCracken, A History of Malawi, 1859-1966 (Woodbridge: James Currey, 2012)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mlowoka, 'the one who crossed over', is the appellation of Kakalala Musawira Gondwe, the legendary ivory trader who, in Tumbuka oral tradition, crossed Lake Malawi from the east around the late eighteenth century and settled in the Nkhamanga plain. Through wealth in ivory, cloth and imported goods, and through marriage alliances with indigenous clan heads, he became the apical ancestor of the Chikulamayembe paramountcy. He belongs to legendary-historical rather than divine tradition, but stands as the founding heroic ancestor of the Tumbuka royal line and is remembered in dynastic ritual and oral history."
+  },
+  {
+    "id": "tumbuka_gonapamuhanya",
+    "name": {
+      "primary": "Gonapamuhanya",
+      "alt": [
+        "Chikulamayembe",
+        "Khalapamuhanya",
+        "Chikulamayembe I"
+      ],
+      "transliterations": {
+        "tumbuka": "Gonapamuhanya",
+        "etymology": "Tumbuka, commonly glossed 'he who sleeps in the daytime/sun'; his title Chikulamayembe derives from mayembe, 'hoes', for his distribution of imported hoes (T. Cullen Young, 1932)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Tumbuka",
+    "primaryTradition": "Tumbuka",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "tumbuka_mlowoka"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Oral tradition places Gonapamuhanya, son of Mlowoka and nephew of a leading Tumbuka clan head, as the first Chikulamayembe paramount of Nkhamanga around the turn of the nineteenth century.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (1932)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Leroy Vail, 'Suggestions towards a Reinterpreted Tumbuka History', in B. Pachai (ed.), The Early History of Malawi (1972)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "themba",
+          "script": "Latin",
+          "rom": "chief, king (Tumbuka)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (1932)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "royal_ancestral_intercession",
+        "name": "to receive veneration and commemoration as the founding paramount ancestor of the Chikulamayembe line",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He is honoured in the annual Gonapamuhanya festival of the Tumbuka in Rumphi, northern Malawi.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leroy Vail, 'Suggestions towards a Reinterpreted Tumbuka History', in B. Pachai (ed.), The Early History of Malawi (1972)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tumbuka_iron_hoe",
+        "name": "Iron hoe (jembe)",
+        "kind": "emblem",
+        "role": "Distribution of imported hoes to influential clans earned him the dynastic title Chikulamayembe, 'the great one of the hoes'",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (1932)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Chikulamayembe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (1932)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "tumbuka_chiuta",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leroy Vail, 'Religion, Language and the Tribal Myth: The Tumbuka and Chewa of Malawi', in J. M. Schoffeleers (ed.), Guardians of the Land: Essays on Central African Territorial Cults (Gwelo: Mambo Press, 1979)"
+          }
+        ],
+        "notes": "As a human paramount and venerated ancestor, Gonapamuhanya stands, like all Tumbuka ancestors, beneath the supreme creator Chiuta in the religious hierarchy of intercession."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Gonapamuhanya, son of Mlowoka, was the first Chikulamayembe paramount of the Tumbuka Nkhamanga kingdom and remains a venerated founding ancestor commemorated in an annual festival.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "T. Cullen Young, Notes on the History of the Tumbuka-Kamanga Peoples in the Northern Province of Nyasaland (London: Religious Tract Society, 1932)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Leroy Vail, 'Suggestions towards a Reinterpreted Tumbuka History', in B. Pachai (ed.), The Early History of Malawi (London: Longman, 1972)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "John McCracken, A History of Malawi, 1859-1966 (Woodbridge: James Currey, 2012)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gonapamuhanya (also Khalapamuhanya) is remembered in Tumbuka oral tradition as the son of the lake-crossing trader Mlowoka and, through his mother, kinsman of a leading indigenous clan. He became the first holder of the Chikulamayembe title, ruling the Nkhamanga plain west and south of the Nyika Plateau around the early nineteenth century. His title, 'the great one of the hoes', recalls his distribution of imported iron hoes to influential clans. As founding paramount he is a heroic ancestor of the Tumbuka, commemorated today in the annual Gonapamuhanya cultural festival at Bolero in Rumphi District, northern Malawi."
+  }
+]
+```

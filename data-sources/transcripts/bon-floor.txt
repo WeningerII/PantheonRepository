@@ -1,0 +1,807 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bön
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the well-attested individuated core of the Bön pantheon beyond Tönpa Shenrab: the other three of the Four Transcendent Lords (Satrig Ersang 'the Mother', Shenlha Ökar 'the God', Sangpo Bumtri 'the Procreator'), the chief protectress Sipé Gyalmo, and the Zhang-zhung tutelary deity Gekhö. Attestation rests principally on Per Kværne, The Bon Religion of Tibet (1995), Samten Karmay's Treasury of Good Sayings (1972) and The Arrow and the Spindle (1998), Snellgrove's Nine Ways of Bon (1967), and Bellezza's Zhang Zhung (2008); web verification confirmed the tetrad structure and Sipé Gyalmo's identity as the wrathful form of the wisdom mother. Shenlha Ökar is wired to the existing Tönpa Shenrab entry via a creator-of (emanation-source) relation; Nyenchen Tanglha and Yul-lha under the sibling 'Tibetan Bön' label were not duplicated.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bon_shenlha_okar",
+    "name": {
+      "primary": "Shenlha Ökar",
+      "alt": [
+        "gShen-lha 'od-dkar",
+        "Shenlha Wökar",
+        "Shiwa Ökar"
+      ],
+      "transliterations": {
+        "tibetan": "gshen lha 'od dkar",
+        "etymology": "Tibetan gshen lha 'od dkar, 'gShen-god of White Light' (Kværne, The Bon Religion of Tibet, 1995)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bön",
+    "primaryTradition": "Bön",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Shenlha Ökar is counted as 'the God' among the Four Transcendent Lords who preside over the present world-age in Bön cosmology (Kværne, The Bon Religion of Tibet, 1995).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "light",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "'od dkar",
+          "script": "Tibetan (romanized)",
+          "rom": "ökar, 'white light'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      },
+      {
+        "sphereId": "compassion",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "thugs rje",
+          "script": "Tibetan (romanized)",
+          "rom": "tukjé, 'compassion'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David L. Snellgrove, The Nine Ways of Bon, 1967"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "emanate_teachers",
+        "name": "to send forth enlightened emanations into the world to teach beings",
+        "term": {
+          "value": "sprul pa",
+          "script": "Tibetan (romanized)",
+          "rom": "trulpa, 'emanation'"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      },
+      {
+        "id": "dispel_darkness",
+        "name": "to dispel darkness and suffering with radiant white light",
+        "term": {
+          "value": "'od",
+          "script": "Tibetan (romanized)",
+          "rom": "ö, 'light'"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Treasury of Good Sayings: A Tibetan History of Bon, 1972"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bon_white_light_body",
+        "name": "body of white light",
+        "kind": "emblem",
+        "role": "iconographic form: a peaceful white deity clothed in white, radiating light",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "lha",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "bon_satrig_ersang",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ],
+        "notes": "Both belong to the divine tetrad of the Four Transcendent Lords heading the peaceful Bön pantheon."
+      },
+      {
+        "kind": "companion",
+        "personId": "bon_sangpo_bumtri",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ],
+        "notes": "Fellow member of the Four Transcendent Lords."
+      },
+      {
+        "kind": "creator-of",
+        "personId": "tibetan_tonpa_shenrab",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ],
+        "notes": "In Bön doctrine the teacher Tönpa Shenrab is regarded as the emanation in the human world sent forth from the compassion of Shenlha Ökar."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Shenlha Ökar, the 'gShen-god of White Light', is the principal peaceful god of compassion in Bön and one of the Four Transcendent Lords, from whom the teacher Tönpa Shenrab emanates.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          },
+          {
+            "kind": "secondary",
+            "reference": "David L. Snellgrove, The Nine Ways of Bon, 1967"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Shenlha Ökar (gShen-lha 'od-dkar), the 'gShen-god of White Light', is among the most important peaceful deities of the Bön religion of Tibet. In the standard Bön theology described by Per Kværne he is 'the God' within the tetrad of Four Transcendent Lords, alongside the goddess Satrig Ersang, the procreator Sangpo Bumtri, and the teacher Tönpa Shenrab. He embodies compassion and luminous wisdom, is depicted as a serene white figure radiating light, and is regarded as the source from which Shenrab descended into the human world as teacher."
+  },
+  {
+    "id": "bon_satrig_ersang",
+    "name": {
+      "primary": "Satrig Ersang",
+      "alt": [
+        "Sa-trig er-sangs",
+        "Yum Chenmo",
+        "Sherab Chamma",
+        "Chamma"
+      ],
+      "transliterations": {
+        "tibetan": "sa trig er sangs",
+        "etymology": "The name Sa-trig er-sangs is held to be in the Zhang-zhung language, glossed in Tibetan as Sherab Chamma, 'Loving Mother of Wisdom' (Kværne, 1995)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bön",
+    "primaryTradition": "Bön",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Satrig Ersang heads the Four Transcendent Lords as 'the Mother' in the Bön account of the present world-age (Kværne, The Bon Religion of Tibet, 1995).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wisdom",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "shes rab",
+          "script": "Tibetan (romanized)",
+          "rom": "sherab, 'wisdom'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      },
+      {
+        "sphereId": "motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "yum chen",
+          "script": "Tibetan (romanized)",
+          "rom": "yumchen, 'great mother'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Treasury of Good Sayings: A Tibetan History of Bon, 1972"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_wisdom",
+        "name": "to bestow wisdom and loving care upon all beings",
+        "term": {
+          "value": "byams",
+          "script": "Tibetan (romanized)",
+          "rom": "cham, 'love'"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bon_golden_mirror",
+        "name": "mirror and vase",
+        "kind": "emblem",
+        "role": "attributes held in her iconography as the wisdom mother",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Yum chen mo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      },
+      {
+        "original": "Byams ma",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "bon_shenlha_okar",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ],
+        "notes": "Fellow member of the Four Transcendent Lords, which she heads as 'the Mother'."
+      },
+      {
+        "kind": "companion",
+        "personId": "bon_sangpo_bumtri",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ],
+        "notes": "Fellow member of the Four Transcendent Lords."
+      },
+      {
+        "kind": "equated-with",
+        "personId": "bon_sipe_gyalmo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ],
+        "notes": "Sipé Gyalmo is regarded as the wrathful manifestation of the peaceful wisdom mother."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Satrig Ersang, the 'Great Mother' of wisdom (Sherab Chamma / Yum Chenmo), is the goddess who heads the Four Transcendent Lords of the Bön pantheon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Treasury of Good Sayings: A Tibetan History of Bon, 1972"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Satrig Ersang is the supreme goddess of the Bön religion, 'the Mother' who heads the tetrad of Four Transcendent Lords. Her name is considered to be in the Zhang-zhung language and is glossed in Tibetan as Sherab Chamma, the 'Loving Mother of Wisdom'; she is also called Yum Chenmo, the 'Great Mother'. She personifies wisdom and maternal compassion, and her wrathful counterpart is the great protectress Sipé Gyalmo."
+  },
+  {
+    "id": "bon_sangpo_bumtri",
+    "name": {
+      "primary": "Sangpo Bumtri",
+      "alt": [
+        "Sangs-po 'bum-khri"
+      ],
+      "transliterations": {
+        "tibetan": "sangs po 'bum khri",
+        "etymology": "Tibetan Sangs-po 'bum-khri; he is styled 'the Procreator' among the Four Transcendent Lords (Kværne, 1995)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bön",
+    "primaryTradition": "Bön",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Sangpo Bumtri appears at the beginning of the world-age as 'the Procreator', the divine forefather of living beings in Bön cosmogony (Kværne, The Bon Religion of Tibet, 1995).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "srid pa",
+          "script": "Tibetan (romanized)",
+          "rom": "sipa, 'the world of becoming/existence'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Arrow and the Spindle: Studies in History, Myths, Rituals and Beliefs in Tibet, 1998"
+          }
+        ]
+      },
+      {
+        "sphereId": "ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "'bum khri",
+          "script": "Tibetan (romanized)",
+          "rom": "bumtri, 'a hundred thousand times ten thousand' (progenitor of myriads)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "generate_beings",
+        "name": "to bring forth living beings and the ordered world of existence",
+        "term": {
+          "value": "srid",
+          "script": "Tibetan (romanized)",
+          "rom": "si, 'to engender/exist'"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Arrow and the Spindle: Studies in History, Myths, Rituals and Beliefs in Tibet, 1998"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "bon_satrig_ersang",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ],
+        "notes": "Fellow member of the Four Transcendent Lords."
+      },
+      {
+        "kind": "companion",
+        "personId": "bon_shenlha_okar",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ],
+        "notes": "Fellow member of the Four Transcendent Lords."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sangpo Bumtri is 'the Procreator' of the Four Transcendent Lords, the primordial divine ancestor from whom living beings arise in Bön cosmogony.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Arrow and the Spindle: Studies in History, Myths, Rituals and Beliefs in Tibet, 1998"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sangpo Bumtri (Sangs-po 'bum-khri) is 'the Procreator' among the Four Transcendent Lords of the Bön pantheon, together with Satrig Ersang, Shenlha Ökar and the teacher Tönpa Shenrab. In Bön cosmogonic narratives he stands at the origin of the world of existence as the primordial ancestor and lord of created beings, a figure connected with the archaic Tibetan creator known in cosmogonic texts studied by Samten Karmay."
+  },
+  {
+    "id": "bon_sipe_gyalmo",
+    "name": {
+      "primary": "Sipé Gyalmo",
+      "alt": [
+        "Srid-pa'i rgyal-mo",
+        "Sidpa Gyalmo",
+        "Queen of Existence"
+      ],
+      "transliterations": {
+        "tibetan": "srid pa'i rgyal mo",
+        "etymology": "Tibetan srid pa'i rgyal mo, 'Queen of the World of Existence' (Kværne, 1995)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bön",
+    "primaryTradition": "Bön",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Sipé Gyalmo arises as the wrathful manifestation of the peaceful wisdom mother and takes an oath to guard the Bön teachings (Kværne, The Bon Religion of Tibet, 1995).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "srung ma",
+          "script": "Tibetan (romanized)",
+          "rom": "sungma, 'guardian, protector'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      },
+      {
+        "sphereId": "sovereignty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "rgyal mo",
+          "script": "Tibetan (romanized)",
+          "rom": "gyalmo, 'queen'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Treasury of Good Sayings: A Tibetan History of Bon, 1972"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "destroy_enemies_of_doctrine",
+        "name": "to destroy the enemies and obstructors of the Bön doctrine",
+        "term": {
+          "value": "drag po",
+          "script": "Tibetan (romanized)",
+          "rom": "drakpo, 'wrathful'"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bon_mule_mount",
+        "name": "red mule",
+        "kind": "mount",
+        "role": "the wrathful queen rides a mule in her standard iconography",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      },
+      {
+        "id": "bon_victory_banner_sword",
+        "name": "sword and victory banner",
+        "kind": "weapon",
+        "role": "attributes held in her many arms as protectress of the doctrine",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Srid pa'i rgyal mo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "equated-with",
+        "personId": "bon_satrig_ersang",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          }
+        ],
+        "notes": "She is regarded as the wrathful manifestation of the peaceful wisdom mother Sherab Chamma / Satrig Ersang."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sipé Gyalmo, the 'Queen of Existence', is the chief wrathful protectress of the Bön religion, the fierce manifestation of the wisdom mother, iconographically shown riding a mule.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Per Kværne, The Bon Religion of Tibet: The Iconography of a Living Tradition, 1995"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Treasury of Good Sayings: A Tibetan History of Bon, 1972"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sipé Gyalmo (Srid-pa'i rgyal-mo), the 'Queen of the World of Existence', is the foremost guardian goddess of Bön, invoked as protectress of the doctrine and its practitioners. She is understood as the wrathful manifestation of the peaceful wisdom mother Sherab Chamma (Satrig Ersang). In her characteristic iconography she is dark, many-armed and terrifying, brandishing weapons and riding a mule; her cult remains central in Bönpo monasteries such as Menri."
+  },
+  {
+    "id": "bon_gekho",
+    "name": {
+      "primary": "Gekhö",
+      "alt": [
+        "Ge-khod",
+        "Walchen Gekhö",
+        "dBal-chen Ge-khod",
+        "Zhang-zhung Meri"
+      ],
+      "transliterations": {
+        "tibetan": "ge khod",
+        "etymology": "Ge-khod, a name of Zhang-zhung origin; the deity is styled dBal-chen, 'Great dBal (fierce power)' (Karmay, The Arrow and the Spindle, 1998)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bön",
+    "primaryTradition": "Bön",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Gekhö is worshipped as the chief tutelary god of the ancient kingdom of Zhang-zhung, residing on the sacred mountain Tise (Kailash) (Karmay, The Arrow and the Spindle, 1998).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Arrow and the Spindle: Studies in History, Myths, Rituals and Beliefs in Tibet, 1998"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ti se",
+          "script": "Tibetan (romanized)",
+          "rom": "Tisé, Mount Kailash, his abode"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Arrow and the Spindle: Studies in History, Myths, Rituals and Beliefs in Tibet, 1998"
+          }
+        ]
+      },
+      {
+        "sphereId": "tantric-power",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "dbal",
+          "script": "Tibetan (romanized)",
+          "rom": "wal, 'fierce blazing power'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Vincent Bellezza, Zhang Zhung: Foundations of Civilization in Tibet, 2008"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "subdue_demons",
+        "name": "to subdue demons and hostile spirits of the land",
+        "term": {
+          "value": "bdud 'dul",
+          "script": "Tibetan (romanized)",
+          "rom": "düdul, 'demon-taming'"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Vincent Bellezza, Zhang Zhung: Foundations of Civilization in Tibet, 2008"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bon_gekho_mandala",
+        "name": "retinue of three hundred and sixty Gekhö deities",
+        "kind": "cultic ensemble",
+        "role": "he presides over a mandala of 360 attendant deities in the Zhang-zhung cycle",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Arrow and the Spindle: Studies in History, Myths, Rituals and Beliefs in Tibet, 1998"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "dBal chen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Arrow and the Spindle: Studies in History, Myths, Rituals and Beliefs in Tibet, 1998"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Gekhö (dBal-chen Ge-khod) is the fierce tutelary god of the ancient Zhang-zhung kingdom, abiding on Mount Tise (Kailash) at the head of a retinue of 360 deities, absorbed into Bön as a major yidam.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Samten G. Karmay, The Arrow and the Spindle: Studies in History, Myths, Rituals and Beliefs in Tibet, 1998"
+          },
+          {
+            "kind": "secondary",
+            "reference": "John Vincent Bellezza, Zhang Zhung: Foundations of Civilization in Tibet, 2008"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gekhö (Ge-khod), often invoked as Walchen Gekhö, 'Great dBal Gekhö', is the ancient tutelary god of the kingdom of Zhang-zhung in western Tibet, whose abode is the sacred mountain Tise (Kailash). In the Bön religion he became a major wrathful meditational deity presiding over a cycle of three hundred and sixty attendant gods, and his cult preserves some of the oldest strata of pre-Buddhist Tibetan religion documented by Samten Karmay and John Vincent Bellezza."
+  }
+]
+```

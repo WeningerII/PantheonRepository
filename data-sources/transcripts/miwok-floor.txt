@@ -1,0 +1,606 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Miwok
+Era (registered, exact): "myth-age (first-people / animal-people time)"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five individuated Miwok figures verified against the two core primary ethnographies, C. Hart Merriam's The Dawn of the World (1910) and E. W. Gifford's Miwok Myths (UCPAAE 12(8), 1917), with support from Kroeber's Handbook (1925) and Gifford & Block (1930): Mol'-luk the Condor (father of the existing Wek'-wek the Falcon and son of Coyote-man, wired in via parentIds and a father-of relation), Ke'-lok the North Giant whose death caused the world fire, the Rock Giant Che-ha-lum'-che, the cannibal giant Yayali, and Oo-soo'-ma-te the Grizzly Bear woman. Other Merriam names (e.g., minor Hoi-ah'-ko tale characters, unnamed rock-giant classes, Ho-ha'-pe mermaids) were excluded as spirit classes or insufficiently individuated.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "miwok_molluk",
+    "name": {
+      "primary": "Condor",
+      "alt": [
+        "Mol'-luk",
+        "Molluk the Condor-man",
+        "Condor-man"
+      ],
+      "transliterations": {
+        "miwok": "Mol'-luk",
+        "etymology": "Mol'-luk is the Sierra Miwok word for the California condor, recorded by C. Hart Merriam (The Dawn of the World, 1910)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Miwok",
+    "primaryTradition": "Miwok",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "miwok_coyote"
+    ],
+    "parentRoles": [
+      "grandsire-line per Merriam: Wek'-wek is son of Mol'-luk and grandson of O-let'-te the Coyote-man"
+    ],
+    "temporal": {
+      "era": "myth-age (first-people / animal-people time)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "myth-age (first-people / animal-people time)",
+        "eraOrdering": 0,
+        "startEvent": "Mol'-luk the Condor-man lives among the First People before humans exist, keeping his home on Molluk's Rock and fathering Wek'-wek the Falcon (Merriam, The Dawn of the World, 1910).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World: Myths and Weird Tales Told by the Mewan Indians of California, Arthur H. Clark Co., 1910"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky-and-carrion-birds",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mol'-luk",
+          "script": "Latin",
+          "rom": "condor"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "engender_falcon_hero",
+        "name": "to father the hero Falcon from an egg laid on his rock",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910 (\"Wek'-wek's Search for his Father\")"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "miwok_molluk_rock",
+        "name": "Condor Rock",
+        "kind": "dwelling",
+        "role": "the rock home where Mol'-luk lived and where Wek'-wek was hatched",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "miwok_falcon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ],
+        "notes": "In the Sacramento-river Miwok accounts Wek'-wek the Falcon is the son of Mol'-luk the Condor and grandson of O-let'-te the Coyote-man."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mol'-luk the Condor-man is a First-People being of Miwok mythology, companion of Coyote-man and father of the hero Wek'-wek the Falcon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World: Myths and Weird Tales Told by the Mewan Indians of California, Arthur H. Clark Co., 1910"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. L. Kroeber, Handbook of the Indians of California, Bureau of American Ethnology Bulletin 78, 1925"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mol'-luk the Condor is one of the great First People of Miwok (Mewan) mythology as recorded by C. Hart Merriam. In the plains and Sierra Miwok cycles he is the companion of O-let'-te (Coyote-man) and the father of Wek'-wek the Falcon, who hatches from an egg on Condor Rock and later searches the world for his father. His genealogy — Coyote, Condor, Falcon — forms the central divine family of the Miwok creation cycle."
+  },
+  {
+    "id": "miwok_kelok",
+    "name": {
+      "primary": "Ke'-lok the North Giant",
+      "alt": [
+        "Kelok",
+        "Ke'-lok"
+      ],
+      "transliterations": {
+        "miwok": "Ke'-lok",
+        "etymology": "Ke'-lok is the name Merriam recorded for the cannibal giant whose home was at Tah-lah'-wit, the north (Merriam 1910)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Miwok",
+    "primaryTradition": "Miwok",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age (first-people / animal-people time)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age (first-people / animal-people time)",
+        "eraOrdering": 0,
+        "startEvent": "Ke'-lok the North Giant dwells at Tah-lah'-wit in the far north until Wek'-wek the Falcon battles and kills him, whereupon his burning body sets the world on fire (Merriam, The Dawn of the World, 1910).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World: Myths and Weird Tales Told by the Mewan Indians of California, Arthur H. Clark Co., 1910"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "north-and-world-fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tah-lah'-wit",
+          "script": "Latin",
+          "rom": "the north"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "invulnerable_except_heel",
+        "name": "to withstand all wounds except a strike to his one vulnerable spot",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Merriam records that Ke'-lok could be killed only by hitting the single vulnerable place on his body.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910 (\"Ke'-lok and his Han-na'-boo\")"
+          }
+        ]
+      },
+      {
+        "id": "hurl_burning_rocks",
+        "name": "to hurl red-hot rocks at his enemies",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "miwok_kelok_hannaboo",
+        "name": "Han-na'-boo",
+        "kind": "dwelling",
+        "role": "the giant's roundhouse in the north where the contest with Wek'-wek took place",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ke'-lok is the cannibal North Giant of Miwok mythology whose death in battle with Wek'-wek the Falcon ignited the primeval world fire.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World: Myths and Weird Tales Told by the Mewan Indians of California, Arthur H. Clark Co., 1910"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. L. Kroeber, Handbook of the Indians of California, Bureau of American Ethnology Bulletin 78, 1925"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ke'-lok the North Giant is a man-eating being of the Miwok myth-age whose home lay at Tah-lah'-wit, the north. In Merriam's Sacramento-river cycle he is described as Wek'-wek's elder kinsman; the two fight a great contest at the giant's roundhouse, and when Wek'-wek finally kills him by striking his one vulnerable spot, Ke'-lok's burning body sets the whole world aflame — the Miwok account of the world fire."
+  },
+  {
+    "id": "miwok_chehalumche",
+    "name": {
+      "primary": "Che-ha-lum'-che the Rock Giant",
+      "alt": [
+        "Chehalumche",
+        "Che-ha-lum'-che"
+      ],
+      "transliterations": {
+        "miwok": "Che-ha-lum'-che",
+        "etymology": "Che-ha-lum'-che is the Southern Sierra Miwok name for the cave-dwelling cannibal Rock Giant of the Calaveras region (Merriam 1910)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Miwok",
+    "primaryTradition": "Miwok",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age (first-people / animal-people time)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age (first-people / animal-people time)",
+        "eraOrdering": 0,
+        "startEvent": "Che-ha-lum'-che haunts the limestone caves of the Calaveras country, carrying off people at night in his great basket to devour them (Merriam, The Dawn of the World, 1910).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World: Myths and Weird Tales Told by the Mewan Indians of California, Arthur H. Clark Co., 1910"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "caves-and-cannibalism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910 (chapter on the Rock Giants)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry_off_victims",
+        "name": "to snatch people at night and carry them to his cave in a basket",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ]
+      },
+      {
+        "id": "mimic_cries",
+        "name": "to imitate voices and cries to lure victims from their homes",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "miwok_chehalumche_basket",
+        "name": "burden basket",
+        "kind": "implement",
+        "role": "the great basket in which the Rock Giant carries away human victims",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Che-ha-lum'-che is the cannibal Rock Giant of the Southern Sierra Miwok, a cave-dwelling ogre who carries victims off in his basket.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World: Myths and Weird Tales Told by the Mewan Indians of California, Arthur H. Clark Co., 1910"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edward W. Gifford and Gwendoline Harris Block, Californian Indian Nights Entertainments, Arthur H. Clark Co., 1930"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Che-ha-lum'-che is the named Rock Giant of the Southern Sierra Miwok of Calaveras County, recorded by C. Hart Merriam among the tribe's beliefs about giants and fabulous beings. He dwells in the limestone caverns of the region, prowls at night imitating voices to lure people out, and carries his victims to his cave in an enormous basket to eat them; the caves were consequently feared and avoided."
+  },
+  {
+    "id": "miwok_yayali",
+    "name": {
+      "primary": "Yayali the Giant",
+      "alt": [
+        "Yayali",
+        "Yayale"
+      ],
+      "transliterations": {
+        "miwok": "Yayali",
+        "etymology": "Yayali is the Central Sierra Miwok name of the cannibal giant recorded by E. W. Gifford (Miwok Myths, 1917)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Miwok",
+    "primaryTradition": "Miwok",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age (first-people / animal-people time)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age (first-people / animal-people time)",
+        "eraOrdering": 0,
+        "startEvent": "Yayali the Giant comes into the hills seeking human victims, kills Chipmunk, and takes Chipmunk's widow as his wife before she and her kin destroy him (Gifford, Miwok Myths, 1917, tales 3 and 14).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edward Winslow Gifford, \"Miwok Myths,\" University of California Publications in American Archaeology and Ethnology 12(8), 1917"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cannibal-giants",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edward Winslow Gifford, \"Miwok Myths,\" UCPAAE 12(8), 1917"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "crush_with_stone",
+        "name": "to kill victims with a stone carried in his burden basket",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edward Winslow Gifford, \"Miwok Myths,\" UCPAAE 12(8), 1917"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "miwok_yayali_burden_basket",
+        "name": "burden basket",
+        "kind": "implement",
+        "role": "the basket in which Yayali carries the stone he uses to kill and the bodies of his victims",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edward Winslow Gifford, \"Miwok Myths,\" UCPAAE 12(8), 1917"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Yayali is the cannibal giant of Central Sierra Miwok narrative who kills Chipmunk and is finally destroyed by Chipmunk's widow and her kin.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Edward Winslow Gifford, \"Miwok Myths,\" University of California Publications in American Archaeology and Ethnology 12(8), 1917"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edward W. Gifford and Gwendoline Harris Block, Californian Indian Nights Entertainments, Arthur H. Clark Co., 1930"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Yayali is the man-eating giant of the Central Sierra Miwok, attested in two independent versions in Gifford's Miwok Myths (tales 3 and 14). He roams the hills hunting the animal-people, kills Chipmunk with the stone in his burden basket, and forcibly takes Chipmunk's widow as a wife; she deceives him, escapes with her children, and with her kin brings about the giant's death, a fall into fire or from a bridge in the recorded variants."
+  },
+  {
+    "id": "miwok_usumate",
+    "name": {
+      "primary": "Grizzly Bear Woman",
+      "alt": [
+        "Oo-soo'-ma-te",
+        "Usumati",
+        "the Grizzly Bear"
+      ],
+      "transliterations": {
+        "miwok": "ûsûma·ti",
+        "etymology": "Southern Sierra Miwok ûsûma·ti, 'grizzly bear'; the place-name Yosemite derives from this word (Kroeber, Handbook of the Indians of California, 1925)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Miwok",
+    "primaryTradition": "Miwok",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age (first-people / animal-people time)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age (first-people / animal-people time)",
+        "eraOrdering": 0,
+        "startEvent": "Oo-soo'-ma-te the Grizzly Bear woman murders her sister-in-law O-woo'-yah the Deer, and is in turn killed by the Deer's two orphaned fawns (Merriam, The Dawn of the World, 1910, \"The Bear and the Fawns\").",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World: Myths and Weird Tales Told by the Mewan Indians of California, Arthur H. Clark Co., 1910"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "bears-and-violence",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ûsûma·ti",
+          "script": "Latin",
+          "rom": "grizzly bear"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. L. Kroeber, Handbook of the Indians of California, Bureau of American Ethnology Bulletin 78, 1925"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "kill_by_deceit",
+        "name": "to lure a companion close under pretense of grooming and kill her",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910 (\"The Bear and the Fawns\")"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "miwok_usumate_liver_basket",
+        "name": "liver basket",
+        "kind": "implement",
+        "role": "the basket in which she hid the murdered Deer woman's liver",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World, 1910"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Oo-soo'-ma-te the Grizzly Bear woman is a First-People figure of Miwok myth who kills her sister-in-law the Deer and is avenged by the Deer's fawn sons.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "C. Hart Merriam, The Dawn of the World: Myths and Weird Tales Told by the Mewan Indians of California, Arthur H. Clark Co., 1910"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edward Winslow Gifford, \"Miwok Myths,\" University of California Publications in American Archaeology and Ethnology 12(8), 1917"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Oo-soo'-ma-te, the Grizzly Bear woman of the First People, appears in the widely told Miwok narrative of the Bear and the Fawns, recorded by both Merriam and Gifford. She treacherously kills her sister-in-law O-woo'-yah the Deer while pretending to groom her, hides the victim's liver in a basket, and pursues the orphaned fawns, who finally kill her with heated rocks. Her Miwok name, ûsûma·ti, is the word from which the place-name Yosemite ultimately derives."
+  }
+]
+```

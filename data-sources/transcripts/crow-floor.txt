@@ -1,0 +1,680 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Crow
+Era (registered, exact): "creation-time", "primordial / creation-time"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five well-attested Crow (Apsáalooke) figures beyond the Old Man Coyote pair: the Sun (Áxxaashe), a principal deity per Lowie's Religion of the Crow Indians (1922); his son the monster-slaying hero Old Woman's Grandchild, identified with the Morning Star in McCleary's The Stars We Know (1997); the ogress Red Woman (Hisshishtawia), attested in Lowie 1918; and the twin heroes Thrown-behind-the-Curtain and Thrown-into-the-Spring of the Crow 'Lodge Boy and Thrown Away' cycle (Lowie 1918; Thompson 1929). Genealogy and slayer relations follow the recorded narratives; symmetric twin-sibling links are reciprocated within the new set. Remaining Crow narrative characters (e.g., unnamed ducks in the earth-diver myth, generic star beings) are not individuated named figures and were excluded.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "crow_sun",
+    "name": {
+      "primary": "The Sun",
+      "alt": [
+        "Áxxaashe",
+        "Axshé",
+        "The Sun (Crow)"
+      ],
+      "transliterations": {
+        "crow": "Áxxaashe",
+        "etymology": "Crow áxxaashe, 'sun, luminary' (Graczyk, A Grammar of Crow, 2007)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Crow",
+    "primaryTradition": "Crow",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial / creation-time"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial / creation-time",
+        "eraOrdering": 0,
+        "startEvent": "The Sun exists from the beginning as one of the greatest of Crow supernatural beings and is invoked in prayer, oath-taking, and the sweat lodge (Lowie, The Religion of the Crow Indians, 1922).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, The Religion of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(2), 1922"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "áxxaashe",
+          "script": "Latin (Crow orthography)",
+          "rom": "sun"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Randolph Graczyk, A Grammar of Crow, University of Nebraska Press, 2007"
+          }
+        ]
+      },
+      {
+        "sphereId": "oaths-and-prayer",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, The Religion of the Crow Indians, 1922"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_visions",
+        "name": "to grant visions and supernatural power to fasters and suppliants",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, The Religion of the Crow Indians, 1922"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "crow_sweat_lodge",
+        "name": "sweat lodge",
+        "kind": "ritual structure",
+        "role": "the sweat bath was traditionally offered to the Sun",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, The Crow Indians, Farrar & Rinehart, 1935"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "crow_old_womans_grandchild",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(1), 1918"
+          }
+        ],
+        "notes": "In the widespread Crow narrative, the Sun takes a Crow woman as his wife in the sky country and fathers the hero known as Old Woman's Grandchild."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Sun is a principal Crow deity, invoked in prayer and oaths and father of the hero Old Woman's Grandchild.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, The Religion of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(2), 1922"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Timothy P. McCleary, The Stars We Know: Crow Indian Astronomy and Lifeways, Waveland Press, 1997"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Sun (Crow áxxaashe) was among the most frequently invoked supernatural beings of the Apsáalooke. Lowie records that oaths were sworn by the Sun, sweat baths were dedicated to him, and prayers and offerings were addressed to him at dawn. In the celestial-marriage narrative, the Sun takes a Crow woman to the sky country, where she bears him a son who becomes the culture hero Old Woman's Grandchild and, ultimately, the Morning Star."
+  },
+  {
+    "id": "crow_old_womans_grandchild",
+    "name": {
+      "primary": "Old Woman's Grandchild",
+      "alt": [
+        "Kaalisbaapite",
+        "Old Woman's Grandson",
+        "Morning Star"
+      ],
+      "transliterations": {
+        "crow": "Kaalisbaapite",
+        "etymology": "Crow kaale 'grandmother, old woman' + baapite 'grandchild' (McCleary, The Stars We Know, 1997)"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Crow",
+    "primaryTradition": "Crow",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "crow_sun"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "creation-time"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "creation-time",
+        "eraOrdering": 0,
+        "startEvent": "Born to the Sun and a mortal Crow woman in the sky country, the child descends to earth, is adopted by an old woman, destroys the monsters that plague the people, and finally ascends to become the Morning Star (Lowie 1918; McCleary 1997).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(1), 1918"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Timothy P. McCleary, The Stars We Know: Crow Indian Astronomy and Lifeways, Waveland Press, 1997"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "morning-star",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Timothy P. McCleary, The Stars We Know: Crow Indian Astronomy and Lifeways, 1997"
+          }
+        ]
+      },
+      {
+        "sphereId": "monster-slaying",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "slay_monsters",
+        "name": "to destroy the monsters and ogres that menace humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ]
+      },
+      {
+        "id": "ascend_sky",
+        "name": "to ascend into the sky and shine as the Morning Star",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Timothy P. McCleary, The Stars We Know: Crow Indian Astronomy and Lifeways, 1997"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "crow_red_woman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ],
+        "notes": "Among the hero's exploits in Crow variants is the destruction of the ogress Red Woman, one of the chief monsters plaguing the people."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Old Woman's Grandchild is the Crow monster-slaying culture hero, son of the Sun and a mortal woman, who becomes the Morning Star.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(1), 1918"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Timothy P. McCleary, The Stars We Know: Crow Indian Astronomy and Lifeways, Waveland Press, 1997"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Old Woman's Grandchild (Crow Kaalisbaapite) is the best-attested Crow culture hero after Old Man Coyote. Born of the Sun and a Crow woman carried up to the sky, he returns to earth, is raised by an old woman (identified in Crow star lore with the Moon), and undertakes a cycle of exploits in which he rids the world of monsters, including the ogress Red Woman. At the end of his career he ascends into the sky as the Morning Star; Crow elders recorded by McCleary continue to identify the Morning Star with this hero."
+  },
+  {
+    "id": "crow_red_woman",
+    "name": {
+      "primary": "Red Woman",
+      "alt": [
+        "Hisshishtawia",
+        "Hi'cictawi'a",
+        "Red-Woman"
+      ],
+      "transliterations": {
+        "crow": "Hisshishtawia",
+        "etymology": "From Crow hisshi 'red'; recorded by Lowie as Hi'cictawi'a, 'Red Woman' (Lowie 1918)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Crow",
+    "primaryTradition": "Crow",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "creation-time"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "creation-time",
+        "eraOrdering": 0,
+        "startEvent": "Red Woman appears in the age of the hero tales as a malevolent ogress who murders and mutilates, until she is destroyed by the monster-slaying heroes (Lowie 1918).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(1), 1918"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "malevolence",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ]
+      },
+      {
+        "sphereId": "witchcraft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Timothy P. McCleary, The Stars We Know: Crow Indian Astronomy and Lifeways, 1997"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deceive_and_kill",
+        "name": "to deceive, murder, and mutilate her victims through malevolent power",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Red Woman (Hisshishtawia) is the principal ogress and villain of Crow hero tales, slain in different variants by Old Woman's Grandchild or by the twin heroes.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(1), 1918"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Timothy P. McCleary, The Stars We Know: Crow Indian Astronomy and Lifeways, Waveland Press, 1997"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Red Woman (recorded by Lowie as Hi'cictawi'a, modern orthography Hisshishtawia) is the chief malevolent figure of Crow narrative. Unlike trickster figures she kills purely for malice: in the twin-hero cycle she murders a pregnant woman, casting one child behind the tipi curtain and the other into a spring, and in the Old Woman's Grandchild cycle she is among the monsters the hero must destroy. Her defeat by the hero twins or by Old Woman's Grandchild marks the cleansing of the world for human beings."
+  },
+  {
+    "id": "crow_thrown_behind_the_curtain",
+    "name": {
+      "primary": "Thrown-behind-the-Curtain",
+      "alt": [
+        "Curtain-Boy",
+        "Lodge Boy",
+        "Thrown-behind-the-Tipi-Lining"
+      ],
+      "transliterations": {
+        "crow": "",
+        "etymology": "English rendering of the Crow name recorded by Lowie for the twin cast behind the tipi lining (Lowie 1918)"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Crow",
+    "primaryTradition": "Crow",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "creation-time"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "creation-time",
+        "eraOrdering": 0,
+        "startEvent": "Torn from his murdered mother by Red Woman and thrown behind the tipi curtain, the boy survives, is raised by his father, and with his twin avenges their mother and destroys monsters (Lowie 1918).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(1), 1918"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heroic-vengeance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "revive_the_dead",
+        "name": "to restore his slain mother to life together with his twin",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ]
+      },
+      {
+        "id": "slay_monsters_twin",
+        "name": "to overcome the ogres and monsters of the early world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stith Thompson, Tales of the North American Indians, Harvard University Press, 1929"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "twin sibling",
+        "personId": "crow_thrown_into_the_spring",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ],
+        "notes": "The two boys are twins separated at birth by Red Woman and reunited when the lodge twin lures his wild brother from the spring."
+      },
+      {
+        "kind": "slayer-of",
+        "personId": "crow_red_woman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ],
+        "notes": "With his twin he avenges their mother by destroying the ogress Red Woman."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Thrown-behind-the-Curtain is one of the twin heroes of the Crow 'Lodge Boy and Thrown Away' cycle who avenge their mother's murder by Red Woman.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(1), 1918"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stith Thompson, Tales of the North American Indians, Harvard University Press, 1929"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Thrown-behind-the-Curtain is the domesticated twin of the Crow version of the Plains 'Lodge Boy and Thrown Away' cycle. After Red Woman kills their pregnant mother, this child is flung behind the tipi lining and reared by his father, while his brother grows up wild in a spring. Reunited, the twins revive their mother and undertake a series of monster-slaying exploits, including the destruction of Red Woman herself."
+  },
+  {
+    "id": "crow_thrown_into_the_spring",
+    "name": {
+      "primary": "Thrown-into-the-Spring",
+      "alt": [
+        "Spring-Boy",
+        "Thrown Away"
+      ],
+      "transliterations": {
+        "crow": "",
+        "etymology": "English rendering of the Crow name recorded by Lowie for the twin cast into a spring (Lowie 1918)"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Crow",
+    "primaryTradition": "Crow",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "creation-time"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "creation-time",
+        "eraOrdering": 0,
+        "startEvent": "Cast into a spring by Red Woman at birth, the boy grows up wild with sharp teeth until his twin lures him home, after which the pair avenge their mother and rid the world of monsters (Lowie 1918).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(1), 1918"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wild-power",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "live_underwater",
+        "name": "to live and thrive beneath the waters of the spring",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ]
+      },
+      {
+        "id": "slay_monsters_wild_twin",
+        "name": "to overcome the ogres and monsters of the early world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stith Thompson, Tales of the North American Indians, Harvard University Press, 1929"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "twin sibling",
+        "personId": "crow_thrown_behind_the_curtain",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ],
+        "notes": "The two boys are twins separated at birth by Red Woman and reunited when the lodge twin lures his wild brother from the spring."
+      },
+      {
+        "kind": "slayer-of",
+        "personId": "crow_red_woman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, 1918"
+          }
+        ],
+        "notes": "With his twin he avenges their mother by destroying the ogress Red Woman."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Thrown-into-the-Spring is the wild twin of the Crow 'Lodge Boy and Thrown Away' cycle who, with his brother, avenges their mother's murder by Red Woman.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Myths and Traditions of the Crow Indians, Anthropological Papers of the American Museum of Natural History 25(1), 1918"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stith Thompson, Tales of the North American Indians, Harvard University Press, 1929"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Thrown-into-the-Spring is the feral twin of the Crow twin-hero cycle. Flung into a spring by Red Woman after she murdered his mother, he grows up in the water as a wild boy until his brother entices him ashore and their father captures him. Together the twins restore their mother to life and destroy the monsters of the early world, Red Woman among them. The cycle is a Crow instance of the widespread Plains 'Lodge Boy and Thrown Away' tale type documented comparatively by Stith Thompson."
+  }
+]
+```

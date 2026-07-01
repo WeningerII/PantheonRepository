@@ -1,0 +1,675 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bodo
+Era (registered, exact): "mythic / agricultural cycle"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five well-attested individuated Bathouism deities beyond Bathoubwrai and Mainao: the household god Song Raja, the tiger king Bura Bagh Raja, and the three chief Kherai attendants Agrang (general), Khoila (messenger) and Ailong (earth/bodyguard), each wired to Bathoubwrai via a directed subordinate-to relation. Attestation rests on Sidney Endle, The Kacharis (1911), Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos (1992), and Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition (2006). I deliberately excluded the schematic list of eighteen divine couples (Si Bwrai/Si Burwi, Bwlli Bwrai/Bwlli Burwi, etc.), which the sources present as paired name-classes rather than individuated figures with independent mythology, and generic named consorts (Song Rani) attested only as pair-fillers.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bodo_song_raja",
+    "name": {
+      "primary": "Household God",
+      "alt": [
+        "Song Raja",
+        "Song Bwrai",
+        "Song Burai"
+      ],
+      "transliterations": {
+        "bodo": "Song Raja",
+        "etymology": "From Bodo song, associated with the dwelling/hearth, plus raja 'king' (Indo-Aryan loan); the 'king of the house' (Brahma 1992)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bodo",
+    "primaryTradition": "Bodo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / agricultural cycle"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / agricultural cycle",
+        "eraOrdering": 0,
+        "startEvent": "Song Raja is venerated as one of the principal household deities of the Bodo home, enshrined at an interior altar and honoured throughout the domestic ritual year (Endle 1911; Brahma 1992).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sidney Endle, The Kacharis, London: Macmillan, 1911."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "household",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "no",
+          "script": "Latin (Bodo)",
+          "rom": "no — 'house, dwelling'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      },
+      {
+        "sphereId": "wild-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_household",
+        "name": "to guard the household and its inmates",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sidney Endle, The Kacharis, London: Macmillan, 1911."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bodo_dham_altar",
+        "name": "Dham (interior house altar)",
+        "kind": "shrine",
+        "role": "Altar inside the Bodo dwelling at which Song Raja receives offerings, particularly from the women of the household.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Song Bwrai",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "bodo_bathoubwrai",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ],
+        "notes": "Song Raja is described as a devoted follower of Bathoubwrai; the offerings laid at his interior altar are ultimately carried out to the sijou tree that represents the supreme god."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Song Raja is a principal household deity of the Bodos, guardian of the dwelling and (in some accounts) lord of wild animals propitiated by hunters, worshipped with his consort Song Rani at an interior altar called the dham.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sidney Endle, The Kacharis, London: Macmillan, 1911."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Song Raja ('king of the house') is among the most prominent household deities of the Bodo (Boro-Kachari) people of Assam. He is represented within the dwelling at an interior altar known as the dham, where he receives regular devotion, notably from the women of the household; his offerings are eventually brought outside and laid at the sijou (Euphorbia) tree that embodies Bathoubwrai, marking his subordination to the supreme god. Ethnographic accounts also describe Song Raja as owner of the wild animals, whom hunters propitiate before entering the forest. He is paired with a female counterpart, Song Rani, in the traditional enumeration of eighteen divine couples of Bathouism."
+  },
+  {
+    "id": "bodo_bura_bagh_raja",
+    "name": {
+      "primary": "Tiger King",
+      "alt": [
+        "Bura Bagh Raja",
+        "Bagh Raja",
+        "Baghraja"
+      ],
+      "transliterations": {
+        "bodo": "Bura Bagh Raja",
+        "etymology": "Bura 'old, elder' + bagh 'tiger' (Indo-Aryan loan) + raja 'king': the old tiger king, monarch of the woods (Endle 1911)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bodo",
+    "primaryTradition": "Bodo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / agricultural cycle"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / agricultural cycle",
+        "eraOrdering": 0,
+        "startEvent": "Bura Bagh Raja is honoured among the prominent household deities of the Bodos, propitiated to keep the tiger and the perils of the forest away from homestead and cattle (Endle 1911; Brahma 1992).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sidney Endle, The Kacharis, London: Macmillan, 1911."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "forest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "hagra",
+          "script": "Latin (Bodo)",
+          "rom": "hagra — 'forest, jungle'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sidney Endle, The Kacharis, London: Macmillan, 1911."
+          }
+        ]
+      },
+      {
+        "sphereId": "tigers",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mosa",
+          "script": "Latin (Bodo)",
+          "rom": "mosa — 'tiger'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_wild_beasts",
+        "name": "to command the tigers and wild beasts of the forest",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sidney Endle, The Kacharis, London: Macmillan, 1911."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Bura Bagh Raja",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "bodo_bathoubwrai",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ],
+        "notes": "Bura Bagh Raja is worshipped as one of the household divinities ranged beneath the supreme god Bathoubwrai in the Bathou pantheon."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bura Bagh Raja, the 'old tiger king' and monarch of the woods, is a prominent Bodo household deity propitiated for protection from tigers and the dangers of the jungle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sidney Endle, The Kacharis, London: Macmillan, 1911."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bura Bagh Raja, the 'old tiger king', is counted by Endle and later ethnographers among the prominent household deities of the Bodos, alongside Bathoubwrai, Mainao and Song Raja. As monarch of the woods he presides over tigers and the wild fauna of the jungle bordering Bodo villages, and is propitiated so that the tiger may spare people and cattle. His cult belongs to a broad family of tiger-god veneration across the peoples of the Brahmaputra valley and central India, but among the Bodos he is an individuated, regularly named recipient of household worship."
+  },
+  {
+    "id": "bodo_agrang",
+    "name": {
+      "primary": "General of the Gods",
+      "alt": [
+        "Agrang",
+        "Agrang Raja",
+        "Agrang Bwrai"
+      ],
+      "transliterations": {
+        "bodo": "Agrang",
+        "etymology": "Bodo divine name of uncertain derivation; in modern Bathou exegesis Agrang is associated with the element water (Brahma 1992)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bodo",
+    "primaryTradition": "Bodo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / agricultural cycle"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / agricultural cycle",
+        "eraOrdering": 0,
+        "startEvent": "Agrang serves as the general of the god-in-chief Bathoubwrai and is invoked among the principal Kherai deities when the priestess dances before the altar (Brahma 1992; S. Brahma 2006).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-leadership",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ]
+      },
+      {
+        "sphereId": "water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "dwi",
+          "script": "Latin (Bodo)",
+          "rom": "dwi — 'water'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "marshal_divine_hosts",
+        "name": "to marshal the hosts of the gods as commander of the supreme god",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "bodo_bathoubwrai",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ],
+        "notes": "Agrang is expressly described as the general of the god-in-chief Bathoubwrai and attends him in the Kherai worship."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Agrang is a major Kherai deity of the Bodos, the general or commander of the supreme god Bathoubwrai, and in Bathou elemental doctrine the god associated with water.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Agrang is one of the great gods invoked in the Kherai, the central communal festival of Bathouism, in which the doudini (priestess-medium) dances the deeds of the deities before the sijou altar. He is characterised in the ethnographic literature as the general of the god-in-chief Bathoubwrai, leading the divine retinue, and in the systematised elemental theology of modern Bathouism he stands for water among the five constituent elements. He is regularly named together with Ailong and Khoila as the foremost attendants of the supreme god."
+  },
+  {
+    "id": "bodo_khoila",
+    "name": {
+      "primary": "Divine Messenger",
+      "alt": [
+        "Khoila",
+        "Khoila Bwrai",
+        "Khaila"
+      ],
+      "transliterations": {
+        "bodo": "Khoila",
+        "etymology": "Bodo divine name of uncertain derivation; in Bathou elemental doctrine Khoila is identified with the air or wind (Brahma 1992)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bodo",
+    "primaryTradition": "Bodo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / agricultural cycle"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / agricultural cycle",
+        "eraOrdering": 0,
+        "startEvent": "Khoila acts as the messenger of the god-in-chief Bathoubwrai and is among the deities honoured in the Kherai festival (Brahma 1992; S. Brahma 2006).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "messages",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ]
+      },
+      {
+        "sphereId": "wind",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bar",
+          "script": "Latin (Bodo)",
+          "rom": "bar — 'wind, air'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry_divine_commands",
+        "name": "to carry the commands and messages of the supreme god",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "bodo_bathoubwrai",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ],
+        "notes": "Khoila is described as the messenger of the god-in-chief Bathoubwrai, serving him alongside Agrang and Ailong in the Kherai worship."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Khoila is a principal Kherai deity of the Bodos, the messenger of the supreme god Bathoubwrai, associated in Bathou elemental doctrine with the air.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Khoila is one of the chief gods of the Kherai festival of the Bodos, invoked by name in the dances of the doudini before the sijou altar. He functions as the messenger of the god-in-chief Bathoubwrai, bearing his commands among gods and men, and in the elemental scheme of modern Bathouism he is identified with the air or wind, one of the five elements from which the tradition holds the world to be composed."
+  },
+  {
+    "id": "bodo_ailong",
+    "name": {
+      "primary": "Earth Deity and Guardian of Bathou",
+      "alt": [
+        "Ailong",
+        "Aileng",
+        "Bura Ailong"
+      ],
+      "transliterations": {
+        "bodo": "Ailong",
+        "etymology": "Bodo divine name of uncertain derivation, connected in Bathou exegesis with the earth (Bodo ha) as one of the five elements (Brahma 1992)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bodo",
+    "primaryTradition": "Bodo",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / agricultural cycle"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / agricultural cycle",
+        "eraOrdering": 0,
+        "startEvent": "Ailong stands guard over the supreme god Bathoubwrai and presides over the earth, being invoked among the foremost deities of the Kherai festival (Brahma 1992; S. Brahma 2006).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ha",
+          "script": "Latin (Bodo)",
+          "rom": "ha — 'earth, soil, land'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      },
+      {
+        "sphereId": "guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "uphold_the_earth",
+        "name": "to uphold the earth and guard the person of the supreme god",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Bura Ailong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "bodo_bathoubwrai",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          }
+        ],
+        "notes": "Ailong is described as the bodyguard of Bathoubwrai, attending on the supreme god together with Agrang and Khoila in the Kherai rites."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ailong (Aileng, Bura Ailong) is a principal Kherai deity of the Bodos, guardian of the supreme god Bathoubwrai and the divinity of the earth in Bathou elemental doctrine.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Kameswar Brahma, A Study of Socio-Religious Beliefs, Practices and Ceremonies of the Bodos, Calcutta: Punthi Pustak, 1992."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sekhar Brahma, Religion of the Boros and Their Socio-Cultural Transition: A Phenomenological Approach, Guwahati: DVS Publishers, 2006."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ailong (also written Aileng or Bura Ailong) is among the foremost gods invoked in the Kherai festival of the Bodos. The ethnographic literature describes this deity both as the bodyguard of the supreme god Bathoubwrai and as the divinity presiding over the earth, one of the five elements of Bathou theology; some accounts render the figure as an old male god (Bura Ailong), while others speak of the same power as a mother of the earth, so the sex is recorded here as uncertain. Ailong is regularly named with Agrang and Khoila as the closest attendants of the supreme god."
+  }
+]
+```
