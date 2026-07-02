@@ -1,0 +1,626 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Kamilaroi
+Era (registered, exact): "dreaming-creator-era"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five individuated Kamilaroi/Euahlayi beings beyond the existing Baiame-Birrahgnooloo-Daramulun core: Bahloo the moon-man, Yhi the sun-woman, Mullian the eaglehawk (Altair), Wahn the crow (Canopus), and Gawarrgay the spirit Emu in the Sky. All are attested by name in K. Langloh Parker's Australian Legendary Tales (1896) and The Euahlayi Tribe (1905) and independently confirmed with community elders in Fuller, Anderson, Norris & Trudgett's 2014 Kamilaroi/Euahlayi astronomy studies. I deliberately excluded literary elaborations (e.g. the expanded Yhi creation myth of later popular retellings) and unnamed spirit classes such as the wunda; the Yhi-Bahloo pursuit and Bahloo's subordination to Baiame are the only relations the sources support.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "kamilaroi_bahloo",
+    "name": {
+      "primary": "Bahloo the Moon",
+      "alt": [
+        "Bahloo",
+        "Baaluu",
+        "Balu"
+      ],
+      "transliterations": {
+        "gamilaraay-yuwaalaraay": "Baaluu",
+        "etymology": "Yuwaalaraay/Gamilaraay baaluu, 'moon' (K. Langloh Parker, Australian Legendary Tales, 1896, glossary)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kamilaroi",
+    "primaryTradition": "Kamilaroi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dreaming-creator-era"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "dreaming-creator-era",
+        "eraOrdering": 0,
+        "startEvent": "Bahloo walks the earth by night in the creative Dreaming era, keeping his snakes and shaping the fates of humankind (K. Langloh Parker, Australian Legendary Tales, 1896).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, David Nutt, London, 1896"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "baaluu",
+          "script": "Latin",
+          "rom": "moon"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, 1896 (glossary: 'Bahloo — moon')"
+          }
+        ]
+      },
+      {
+        "sphereId": "death-and-rebirth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2, pp. 3-27"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_serpents",
+        "name": "to command and carry serpents, which are his companions",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the tale 'Bahloo the Moon and the Daens' he asks men to carry his snakes across a river; their refusal fixes human mortality.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, 1896 ('Bahloo the Moon and the Daens')"
+          }
+        ]
+      },
+      {
+        "id": "decree_mortality",
+        "name": "to decree that human beings die and do not return",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, The Euahlayi Tribe: A Study of Aboriginal Life in Australia, Archibald Constable, London, 1905"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "aboriginal_baiame",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, The Euahlayi Tribe, 1905"
+          }
+        ],
+        "notes": "Parker's Euahlayi ethnography places Bahloo among the sky beings associated with and ranking beneath the All-Father Byamee (Baiame)."
+      },
+      {
+        "kind": "rival",
+        "personId": "kamilaroi_yhi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller et al., 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2"
+          }
+        ],
+        "notes": "Yhi the sun-woman pursues Bahloo across the sky; his flight from her advances explains the moon's motion relative to the sun."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bahloo is the male moon of Kamilaroi/Euahlayi tradition, keeper of snakes and the being whose rebuff by the first men made death permanent.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, David Nutt, London, 1896"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2, pp. 3-27"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bahloo is the moon-man of the Kamilaroi (Gamilaraay) and closely related Euahlayi (Yuwaalaraay) peoples of northern New South Wales. In the tale recorded by K. Langloh Parker, Bahloo asks men to carry his snakes across a river; when they refuse out of fear, he declares that they will die forever while he himself dies and returns each month, an aetiology of both human mortality and the lunar cycle. Contemporary Kamilaroi and Euahlayi elders interviewed by Fuller and colleagues confirm Bahloo as a male moon figure pursued across the sky by Yhi the sun-woman."
+  },
+  {
+    "id": "kamilaroi_yhi",
+    "name": {
+      "primary": "Yhi the Sun-Woman",
+      "alt": [
+        "Yhi",
+        "Yaay"
+      ],
+      "transliterations": {
+        "gamilaraay-yuwaalaraay": "yaay",
+        "etymology": "Yuwaalaraay yaay (Parker's spelling 'Yhi'), 'sun' (K. Langloh Parker, Australian Legendary Tales, 1896, glossary)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kamilaroi",
+    "primaryTradition": "Kamilaroi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dreaming-creator-era"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "dreaming-creator-era",
+        "eraOrdering": 0,
+        "startEvent": "Yhi looks down on the earth by day from the beginning of the Dreaming, the female counterpart to the male moon (K. Langloh Parker, Australian Legendary Tales, 1896).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, David Nutt, London, 1896"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "yaay",
+          "script": "Latin",
+          "rom": "sun"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, 1896 (glossary: 'Yhi — the sun')"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "pursue_across_sky",
+        "name": "to pursue the moon across the sky, driving the alternation of sun and moon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2, pp. 3-27"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "rival",
+        "personId": "kamilaroi_bahloo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller et al., 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2"
+          }
+        ],
+        "notes": "Yhi endlessly chases Bahloo the moon, who spurns her; their pursuit explains the relative motions of sun and moon."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Yhi is the female sun of Kamilaroi/Euahlayi tradition, who watches the earth by day and pursues the moon-man Bahloo.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, David Nutt, London, 1896"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2, pp. 3-27"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Yhi (Yuwaalaraay yaay, 'sun') is the sun-woman of the Kamilaroi and Euahlayi peoples, recorded by K. Langloh Parker in 1896 as the being who 'looks down on the earth by day' as Bahloo the moon does by night. In knowledge recorded from Kamilaroi and Euahlayi elders, Yhi continually pursues Bahloo, whose rejection of her keeps the two luminaries apart. Popular retellings of a fuller Yhi creation narrative derive from later literary elaboration; only the sun-woman and her pursuit of Bahloo are securely attested in the early ethnographic record."
+  },
+  {
+    "id": "kamilaroi_mullian",
+    "name": {
+      "primary": "Mullian the Eaglehawk",
+      "alt": [
+        "Mullyan",
+        "Mullyangah",
+        "Maliyan"
+      ],
+      "transliterations": {
+        "gamilaraay": "maliyan",
+        "etymology": "Gamilaraay maliyan, 'wedge-tailed eagle' (K. Langloh Parker, Australian Legendary Tales, 1896, glossary)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Kamilaroi",
+    "primaryTradition": "Kamilaroi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dreaming-creator-era"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "dreaming-creator-era",
+        "eraOrdering": 0,
+        "startEvent": "In the Dreaming Mullian the eaglehawk lives as a man-eater in a great yaraan tree until he is burned and rises into the sky as the star Mullyangah (K. Langloh Parker, Australian Legendary Tales, 1896).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, David Nutt, London, 1896 ('Mullyangah the Morning Star')"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "eagles-and-sky-hunting",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maliyan",
+          "script": "Latin",
+          "rom": "wedge-tailed eagle"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, 1896"
+          }
+        ]
+      },
+      {
+        "sphereId": "stars",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2 (Mullyan identified with the star Altair)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "become_star",
+        "name": "to ascend into the sky and shine as a star after his tree is burned",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Identified with Altair in Kamilaroi/Euahlayi star knowledge.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller et al., 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Mullian is the cannibal eaglehawk of Kamilaroi/Euahlayi legend who, after being burned in his yaraan-tree home, became the star Mullyangah (Altair).",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, David Nutt, London, 1896"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2, pp. 3-27"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mullian (Gamilaraay maliyan, the wedge-tailed eagle) is an individuated Dreaming being of the Kamilaroi and Euahlayi peoples. In the tale 'Mullyangah the Morning Star' recorded by K. Langloh Parker, Mullian is a man-eating eaglehawk who dwells at the top of an enormous yaraan tree; when the people fire the tree to destroy him, he escapes upward and becomes a star, still visible with the marks of his burning. Kamilaroi and Euahlayi star knowledge recorded by Fuller and colleagues identifies Mullyan the eaglehawk with the bright star Altair."
+  },
+  {
+    "id": "kamilaroi_wahn",
+    "name": {
+      "primary": "Wahn the Crow",
+      "alt": [
+        "Wahn",
+        "Waan"
+      ],
+      "transliterations": {
+        "gamilaraay-yuwaalaraay": "waan",
+        "etymology": "Yuwaalaraay/Gamilaraay waan, 'crow' (K. Langloh Parker, Australian Legendary Tales, 1896, glossary)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Kamilaroi",
+    "primaryTradition": "Kamilaroi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dreaming-creator-era"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "dreaming-creator-era",
+        "eraOrdering": 0,
+        "startEvent": "Wahn the crow acts as a trickster and rain-associated being among the Dreaming ancestors, later placed in the sky as the star Canopus (K. Langloh Parker, 1896; Fuller et al., 2014).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, David Nutt, London, 1896"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "crows-and-trickery",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "waan",
+          "script": "Latin",
+          "rom": "crow"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, 1896 (glossary: 'Wahn — crow')"
+          }
+        ]
+      },
+      {
+        "sphereId": "stars",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2 (Wahn identified with Canopus)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "trickery_and_shapeshifting",
+        "name": "to deceive other ancestral beings through cunning and disguise",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Wahn figures as a trickster in several of Parker's tales.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, David Nutt, London, 1896"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Wahn is the crow, a trickster among the Kamilaroi/Euahlayi Dreaming ancestors, identified in star knowledge with Canopus.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "K. Langloh Parker, Australian Legendary Tales, David Nutt, London, 1896"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2, pp. 3-27"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Wahn the crow appears repeatedly in the Kamilaroi/Euahlayi tales collected by K. Langloh Parker as a named ancestral being of trickster character. Kamilaroi and Euahlayi star knowledge recorded from community elders by Fuller and colleagues identifies Wahn with the bright southern star Canopus, one of a group of Dreaming ancestors fixed in the sky. The crow ancestor is a major figure across southeastern Australian traditions, and Wahn is his individuated Kamilaroi/Yuwaalaraay form."
+  },
+  {
+    "id": "kamilaroi_gawarrgay",
+    "name": {
+      "primary": "Gawarrgay the Sky Emu",
+      "alt": [
+        "Gawarghoo",
+        "Gawarrgay the featherless emu",
+        "Emu in the Sky"
+      ],
+      "transliterations": {
+        "gamilaraay": "gawarrgay",
+        "etymology": "Gamilaraay gawarrgay, the spirit emu of the sky, related to gawarraay 'emu chick' (Fuller, Anderson, Norris & Trudgett, 2014)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Kamilaroi",
+    "primaryTradition": "Kamilaroi",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dreaming-creator-era"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "dreaming-creator-era",
+        "eraOrdering": 0,
+        "startEvent": "In the Dreaming, when sky and earth exchanged places, the featherless spirit emu Gawarrgay took its place in the dark clouds of the Milky Way, stretching from the Coalsack to Scorpius (Fuller et al., 2014).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Emu Sky Knowledge of the Kamilaroi and Euahlayi Peoples', Journal of Astronomical History and Heritage 17(2), 2014, pp. 171-179"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "milky-way-dark-constellations",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "gawarrgay",
+          "script": "Latin",
+          "rom": "spirit emu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Emu Sky Knowledge of the Kamilaroi and Euahlayi Peoples', JAHH 17(2), 2014"
+          }
+        ]
+      },
+      {
+        "sphereId": "seasonal-calendar",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller et al., 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "signal_seasons",
+        "name": "to signal, by its orientation in the night sky, the times for gathering emu eggs and holding ceremonies",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Emu Sky Knowledge of the Kamilaroi and Euahlayi Peoples', JAHH 17(2), 2014"
+          }
+        ]
+      },
+      {
+        "id": "tend_waterholes",
+        "name": "to travel to earth and care for the waterholes of the country",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Emu Sky Knowledge of the Kamilaroi and Euahlayi Peoples', JAHH 17(2), 2014"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Gawarrgay is the featherless spirit emu of the Kamilaroi and Euahlayi, seen as the dark 'Emu in the Sky' in the Milky Way and tied to egg-gathering seasons, waterholes and male initiation ceremony.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Emu Sky Knowledge of the Kamilaroi and Euahlayi Peoples', Journal of Astronomical History and Heritage 17(2), 2014, pp. 171-179"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R.S. Fuller, M.G. Anderson, R.P. Norris & M. Trudgett, 'The Astronomy of the Kamilaroi and Euahlayi Peoples and Their Neighbours', Australian Aboriginal Studies 2014/2, pp. 3-27"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gawarrgay is the named spirit emu of the Kamilaroi (Gamilaraay) and Euahlayi peoples, perceived not in the stars but in the dark dust lanes of the Milky Way, with its head in the Coalsack beneath the Southern Cross and its body stretching through Scorpius. Knowledge recorded from Kamilaroi and Euahlayi elders describes Gawarrgay as a featherless spirit being that travels down to care for waterholes; its changing orientation through the year told people when emus were breeding, when eggs could be collected, and when the bora initiation ceremonies should be held."
+  }
+]
+```

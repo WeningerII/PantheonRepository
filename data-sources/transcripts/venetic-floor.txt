@@ -1,0 +1,350 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Venetic
+Era (registered, exact): "venetic-preroman-iron-age", "venetic-roman-interpretatio"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the only two further individuated, securely attested Venetic divine figures found in scholarship: Altno-, the male titular god of the Altino (Fornace) sanctuary recovered from Venetic votive epigraphy by Marinetti (Marinetti & Prosdocimi 2006; Marinetti 2009, and the Roman-phase continuation into Jupiter per Cresci Marrone 2009), and Aponus, the healing god of the Euganean hot springs near Padua, whose Palaeovenetic lake sanctuary at San Pietro Montagnon (Dämmer 1986) precedes his Roman-era naming in Claudian, Martial and Suetonius (Lazzaro 1981). Per the task notes, Śainati and Pora were verified to be epithets already carried as alternate names on Reitia and Trumusiatis, so they were not authored as separate deities; plural or generic dedications (e.g. boundary gods) were excluded as non-individuated, and Belenus was excluded as Celtic rather than Venetic.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "venetic_altno",
+    "name": {
+      "primary": "Altno-",
+      "alt": [
+        "Altino (the god)",
+        "Altnoi",
+        "Altino-",
+        "Iuppiter (Roman-phase titular of the Altino sanctuary)"
+      ],
+      "transliterations": {
+        "xve": "Altno-",
+        "etymology": "Theonym identical with the toponym Altinum/Altino; the god's name is recovered from Venetic dative forms on votive inscriptions from the Fornace sanctuary at Altino (Marinetti & Prosdocimi 2006; Marinetti 2009)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Venetic",
+    "primaryTradition": "Venetic",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "venetic-preroman-iron-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "venetic-preroman-iron-age",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped as the eponymous titular god of the emporic sanctuary at the Fornace site of Altino, where Venetic votive inscriptions naming him were dedicated from the pre-Roman Iron Age (Marinetti 2009).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. (2009). 'Da Altno- a Giove: la titolarità del santuario. I. La fase preromana', in G. Cresci Marrone & M. Tirelli (eds.), Altnoi. Il santuario altinate: strutture del sacro a confronto e i luoghi di culto lungo la via Annia. Rome: Quasar, 81-127."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "venetic-roman-interpretatio",
+        "eraOrdering": 1,
+        "startEvent": "With the Romanization of Altinum the sanctuary's titularity passed from the native god Altno- to Jupiter, as traced in the Roman-phase epigraphy of the site (Cresci Marrone 2009).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Cresci Marrone, G. (2009). 'Da Altno- a Giove: la titolarità del santuario. II. La fase romana', in G. Cresci Marrone & M. Tirelli (eds.), Altnoi. Il santuario altinate. Rome: Quasar, 129-137."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tutelary-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Altno-",
+          "script": "Venetic alphabet (romanized)",
+          "rom": "Altno- (eponymous tutelary of Altinum)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. & Prosdocimi, A. L. (2006). 'Novità e rivisitazioni nella teonimia dei Veneti antichi: il dio Altino e l'epiteto śainati-', in ...ut...rosa... Studi in onore di Elena Di Filippo Balestrazzi / studies on ancient Veneto. Padua."
+          }
+        ]
+      },
+      {
+        "sphereId": "trade-and-exchange",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. (2009). 'Da Altno- a Giove: la titolarità del santuario. I. La fase preromana', in G. Cresci Marrone & M. Tirelli (eds.), Altnoi. Il santuario altinate. Rome: Quasar, 81-127."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_emporium",
+        "name": "to protect the harbour town of Altinum and the traders frequenting its sanctuary",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Fornace sanctuary served an emporic community open to Etruscan and Greek visitors, under the patronage of the local god.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. (2009). 'Da Altno- a Giove: la titolarità del santuario. I. La fase preromana', in Altnoi. Il santuario altinate. Rome: Quasar, 81-127."
+          }
+        ]
+      },
+      {
+        "id": "receive_votive_dedications",
+        "name": "to answer the vows recorded in the votive inscriptions addressed to him",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. & Solinas, P. (2024). 'Venetic', in The Fragmentarily Attested Languages of Italy. Leiden: Brill (doi:10.1163/9789004694637_007)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "venetic_altino_votive_inscriptions",
+        "name": "Inscribed votive pottery and bronzes from the Fornace sanctuary at Altino",
+        "kind": "votive offering",
+        "role": "Dedications in the Venetic language naming the god, the principal evidence for his cult",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. (2009). 'Da Altno- a Giove: la titolarità del santuario. I. La fase preromana', in Altnoi. Il santuario altinate. Rome: Quasar, 81-127."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Altno- is the male titular god of the pre-Roman emporic sanctuary of Altino (Altinum), named in Venetic votive inscriptions from the Fornace site and succeeded by Jupiter in the Roman phase of the cult.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. (2009). 'Da Altno- a Giove: la titolarità del santuario. I. La fase preromana', in G. Cresci Marrone & M. Tirelli (eds.), Altnoi. Il santuario altinate: strutture del sacro a confronto e i luoghi di culto lungo la via Annia. Rome: Quasar, 81-127."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marinetti, A. & Prosdocimi, A. L. (2006). 'Novità e rivisitazioni nella teonimia dei Veneti antichi: il dio Altino e l'epiteto śainati-'. Padua."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Cresci Marrone, G. (2009). 'Da Altno- a Giove: la titolarità del santuario. II. La fase romana', in Altnoi. Il santuario altinate. Rome: Quasar, 129-137."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Altno- is the divine patron of Altinum, the Venetic harbour town on the northern Adriatic lagoon. His name, identical with that of the town, was recovered by Anna Marinetti from a series of Venetic votive inscriptions excavated at the sanctuary of Fornace di Altino, a cult place frequented from the Iron Age by Veneti as well as Etruscan and Greek traders. He is one of the very few male deities securely attested in the small Venetic epigraphic corpus, alongside Trumusiatis of Lagole. Under Rome the same sanctuary was rededicated to Jupiter, a continuity of titularity studied in the volume Altnoi (2009), whose title plays on the god's name."
+  },
+  {
+    "id": "venetic_aponus",
+    "name": {
+      "primary": "Aponus",
+      "alt": [
+        "Aponos",
+        "Fons Aponi (the Aponus spring)"
+      ],
+      "transliterations": {
+        "la": "Aponus",
+        "etymology": "Usually derived from the Indo-European root *ap- 'water', fitting a native north-Italic hydronym; ancient folk etymology connected it with Greek a-ponos 'without pain' (Lazzaro 1981)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Venetic",
+    "primaryTradition": "Venetic",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "venetic-preroman-iron-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "venetic-preroman-iron-age",
+        "eraOrdering": 0,
+        "startEvent": "A votive cult at the thermal lake of San Pietro Montagnon (Montegrotto) near the Euganean hot springs is archaeologically documented from the early Iron Age, the pre-Roman antecedent of the historical cult of Aponus (Dämmer 1986).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dämmer, H.-W. (1986). San Pietro Montagnon (Montegrotto): un santuario protostorico paleoveneto. Mainz: Philipp von Zabern."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "venetic-roman-interpretatio",
+        "eraOrdering": 1,
+        "startEvent": "In the Roman period the healing god of the Euganean springs is named Aponus in Latin inscriptions and literature, celebrated above all in Claudian's poem Aponus (carmina minora 26), and associated with the oracle of Geryon consulted by Tiberius (Suetonius, Tiberius 14).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lazzaro, L. (1981). Fons Aponi: Abano e Montegrotto nell'antichità. Abano Terme: Francisci."
+          },
+          {
+            "kind": "primary",
+            "reference": "Claudian, Carmina minora 26 ('Aponus'), late 4th century AD."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "healing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Aponus",
+          "script": "Latin",
+          "rom": "Aponus, the pain-relieving hot spring"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lazzaro, L. (1981). Fons Aponi: Abano e Montegrotto nell'antichità. Abano Terme: Francisci."
+          }
+        ]
+      },
+      {
+        "sphereId": "thermal-springs",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "fons Aponi",
+          "script": "Latin",
+          "rom": "the spring of Aponus"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Martial, Epigrams 6.42, 1st century AD."
+          }
+        ]
+      },
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Suetonius, Life of Tiberius 14 (the oracle of Geryon and the lots cast into the Aponus spring)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heal_through_hot_waters",
+        "name": "to cure sickness and relieve pain through the hot mineral waters of the Euganean springs",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Claudian praises the spring as a common healer freely available to the sick.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lazzaro, L. (1981). Fons Aponi: Abano e Montegrotto nell'antichità. Abano Terme: Francisci."
+          }
+        ]
+      },
+      {
+        "id": "reveal_the_future",
+        "name": "to reveal the future through lots drawn at his spring beside the oracle of Geryon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Suetonius records that Tiberius consulted the oracle of Geryon near Patavium and cast golden dice into the fountain of Aponus.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Suetonius, Life of Tiberius 14."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "venetic_montegrotto_votive_deposit",
+        "name": "Votive deposit of the thermal lake sanctuary at San Pietro Montagnon (Montegrotto)",
+        "kind": "votive offering",
+        "role": "Bronze figurines, miniature vessels and drinking cups deposited in the sacred hot lake from the early Iron Age",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dämmer, H.-W. (1986). San Pietro Montagnon (Montegrotto): un santuario protostorico paleoveneto. Mainz: Philipp von Zabern."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Aponus is the healing god of the hot springs of the Euganean district near Padua (modern Abano and Montegrotto Terme), a Roman-era named continuation of a Palaeovenetic thermal spring cult attested archaeologically from the early Iron Age.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lazzaro, L. (1981). Fons Aponi: Abano e Montegrotto nell'antichità. Abano Terme: Francisci."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dämmer, H.-W. (1986). San Pietro Montagnon (Montegrotto): un santuario protostorico paleoveneto. Mainz: Philipp von Zabern."
+          },
+          {
+            "kind": "primary",
+            "reference": "Claudian, Carmina minora 26 ('Aponus'); Martial, Epigrams 6.42; Suetonius, Life of Tiberius 14."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Aponus is the god of the steaming mineral springs at the foot of the Euganean hills in the territory of Patavium (Padua), the heart of ancient Venetia. Although his name is transmitted only in Latin sources, the cult place itself is far older: excavation of the thermal lake at San Pietro Montagnon has yielded a rich Palaeovenetic votive deposit beginning in the eighth century BC, showing that the Veneti venerated the healing waters long before Romanization. In the imperial period the fons Aponi was famous throughout Italy; Martial and Silius Italicus mention it, Suetonius links it with the oracle of Geryon consulted by the future emperor Tiberius, and Claudian devoted an entire poem to the miraculous spring. Modern Abano Terme preserves the god's name."
+  }
+]
+```

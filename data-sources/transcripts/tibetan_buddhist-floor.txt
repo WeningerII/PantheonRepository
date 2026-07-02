@@ -1,0 +1,999 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Tibetan Buddhist
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six well-attested, individuated Tibetan Buddhist protector deities absent from the corpus: Begtse (war god, Heller 1992; Nebesky-Wojkowitz 1956), Tsiu Marpo (Samye's protector, Bell 2006), Dorje Legpa and Za Rahula (two of the three Nyingma Dzogchen guardians, cross-linked as allies; the third, Ekajati, was left out as a pan-Buddhist Tara-related figure closer to the corpus 'Buddhist' tradition), Tashi Tseringma (chief of the Five Long-Life Sisters, Chang 1962), and Dorje Shugden (included with explicit treatment of the controversy per Dreyfus 1998). Deliberately skipped: Nyenchen Thanglha (already in the corpus as tibetan_nyenchen_tanglha under Tibetan Bön) and Dorje Drakden (documented in the corpus inside the Pehar entry as his emanation/minister, so authoring him separately would risk duplicating an aspect of an existing figure). All citations are real scholarship, anchored on Nebesky-Wojkowitz's Oracles and Demons of Tibet (1956).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "tibetan_buddhist_begtse",
+    "name": {
+      "primary": "Begtse",
+      "alt": [
+        "Beg tse",
+        "Chamsing",
+        "lCam sring",
+        "Beg tse lcam sring",
+        "Jamsaran"
+      ],
+      "transliterations": {
+        "tibetan": "བེག་ཙེ (beg tse)",
+        "etymology": "The name beg tse, 'hidden coat of mail', is generally derived from a Mongol word for cuirass, reflecting the deity's armour-clad war-god iconography (R. de Nebesky-Wojkowitz, Oracles and Demons of Tibet, 1956; A. Heller, Étude sur le développement de l'iconographie et du culte de Beg-tse, 1992)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Buddhist",
+    "primaryTradition": "Tibetan Buddhist",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Begtse appears in Tibetan textual sources from the eleventh century as an armoured war god, and legend recounts his subjugation and conversion to Buddhism at the meeting of the Third Dalai Lama, Sonam Gyatso, with the Mongol Altan Khan in 1578.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amy Heller, 'Historic and Iconographic Aspects of the Protective Deities Srung-ma dmar-nag', in Tibetan Studies: Proceedings of the 5th Seminar of the International Association for Tibetan Studies, Narita 1989 (1992)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet: The Cult and Iconography of the Tibetan Protective Deities (1956)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "warfare",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "དགྲ་ལྷ",
+          "script": "Tibetan",
+          "rom": "dgra lha, 'enemy-god', the class of war deities among whom Begtse is invoked"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "sphereId": "dharma-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ཆོས་སྐྱོང",
+          "script": "Tibetan",
+          "rom": "chos skyong, 'dharma protector'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amy Heller, 'Historic and Iconographic Aspects of the Protective Deities Srung-ma dmar-nag' (1992)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_victory_in_battle",
+        "name": "to grant victory in battle and destroy the enemies of the doctrine",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Invoked as a war god who marches at the head of an army of red butchers and devours the heart-blood of enemies of the teaching.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "id": "guard_the_dalai_lamas",
+        "name": "to guard the person and lineage of the Dalai Lamas",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Begtse served as the personal protector of the Third Dalai Lama and, paired with Palden Lhamo, as one of the 'red and black protectors' (srung ma dmar nag) of the Dalai Lamas and of Chokhorgyel monastery.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amy Heller, 'Historic and Iconographic Aspects of the Protective Deities Srung-ma dmar-nag' (1992)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tibetan_buddhist_begtse_scorpion_sword",
+        "name": "copper sword with scorpion-shaped hilt",
+        "kind": "weapon",
+        "role": "Begtse's principal attribute, a flaming copper sword whose hilt ends in a scorpion, brandished over the heart and lungs of an enemy he devours",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "id": "tibetan_buddhist_begtse_coat_of_mail",
+        "name": "hidden coat of mail",
+        "kind": "armour",
+        "role": "the copper cuirass from which the deity takes his very name, part of his full war-god panoply of armour, helmet and boots",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amy Heller, Étude sur le développement de l'iconographie et du culte de Beg-tse, divinité protectrice tibétaine (doctoral dissertation, École Pratique des Hautes Études, Paris, 1992)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ལྕམ་སྲིང (lCam sring)",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "original": "གནོད་སྦྱིན་ཆེན་པོ (gNod sbyin chen po, 'great yaksha')",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Begtse (lCam sring) is a red, armour-clad Tibetan Buddhist war god and dharma protector, first attested in eleventh-century sources, converted in legend by the Third Dalai Lama and paired with Palden Lhamo as the 'red and black' personal protectors of the Dalai Lamas.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet: The Cult and Iconography of the Tibetan Protective Deities (The Hague: Mouton, 1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Amy Heller, 'Historic and Iconographic Aspects of the Protective Deities Srung-ma dmar-nag', in Tibetan Studies: Proceedings of the 5th Seminar of the International Association for Tibetan Studies, Narita 1989 (1992)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Begtse, also called Chamsing (lCam sring, 'brother and sister', from his pairing with his sister-consort in iconography), is one of the eight great dharma protectors (drag gshed) of Tibetan Buddhism. He is depicted red-bodied in full mail armour with Mongol boots, brandishing a flaming copper sword with a scorpion hilt while pressing a devoured heart to his mouth, trampling a horse and a man, and leading a retinue of twenty-nine red butchers with knives. Legend recounts that he opposed the Third Dalai Lama's journey to convert the Mongols in 1578 and was himself subdued and bound as a Buddhist protector, after which his cult flourished among both Tibetans and Mongols, who worship him as Jamsaran. Amy Heller's research has shown that his cult is in fact older, attested in Tibetan texts from the eleventh century; he served as personal protector of the Third Dalai Lama and, together with Palden Lhamo, as one of the paired 'red and black protectors' (srung ma dmar nag) of the Dalai Lama lineage and of Chokhorgyel monastery."
+  },
+  {
+    "id": "tibetan_buddhist_tsiu_marpo",
+    "name": {
+      "primary": "Tsiu Marpo",
+      "alt": [
+        "Tsi'u dmar po",
+        "Tsimara",
+        "rTsi'u dmar po",
+        "Chidmar"
+      ],
+      "transliterations": {
+        "tibetan": "ཙིའུ་དམར་པོ (tsi'u dmar po)",
+        "etymology": "dmar po means 'the red one', marking him as chief of the red btsan spirits; the element tsi'u is of uncertain, possibly non-Tibetan origin (C. Bell, Tsiu Marpo: The Career of a Tibetan Protector Deity, 2006)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Buddhist",
+    "primaryTradition": "Tibetan Buddhist",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "In Tibetan legend the warlike red spirit Tsiu Marpo was bound by oath as a Buddhist protector and installed as guardian of Samye, Tibet's first monastery, a role in which he was firmly established by the seventeenth century.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christopher Bell, Tsiu Marpo: The Career of a Tibetan Protector Deity (MA thesis, Florida State University, 2006)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "warlike-spirits",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "བཙན",
+          "script": "Tibetan",
+          "rom": "btsan, the class of fierce red warrior spirits of which Tsiu Marpo is chief"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "sphereId": "monastery-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "བསམ་ཡས",
+          "script": "Tibetan",
+          "rom": "bSam yas, the monastery of which he is the special protector"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christopher Bell, Tsiu Marpo: The Career of a Tibetan Protector Deity (MA thesis, Florida State University, 2006)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "possess_oracle_mediums",
+        "name": "to possess human oracle mediums and deliver prophecy in trance",
+        "term": {
+          "value": "སྐུ་རྟེན",
+          "script": "Tibetan",
+          "rom": "sku rten, the human 'body-support' medium through whom the deity speaks"
+        },
+        "inheritability": "none",
+        "notes": "Tsiu Marpo spoke through his own oracle at Samye monastery, one of the important protector oracles of central Tibet.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "id": "punish_oath_breakers",
+        "name": "to hunt down and punish breakers of religious vows",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As an oath-bound worldly protector he rides out with his lasso and lance against enemies of the doctrine and violators of their pledges.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christopher Bell, Tsiu Marpo: The Career of a Tibetan Protector Deity (MA thesis, Florida State University, 2006)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tibetan_buddhist_tsiu_marpo_red_lance",
+        "name": "red lance with pennant",
+        "kind": "weapon",
+        "role": "the red spear with fluttering silk pennant that Tsiu Marpo levels at the enemies of the teaching as he gallops on his black-tailed horse",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "id": "tibetan_buddhist_tsiu_marpo_snare",
+        "name": "btsan snare",
+        "kind": "weapon",
+        "role": "the red lasso of the btsan spirits with which he binds the life-breath of oath-breakers",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christopher Bell, Tsiu Marpo: The Career of a Tibetan Protector Deity (MA thesis, Florida State University, 2006)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tsiu Marpo is the red btsan warrior deity who serves as the special oath-bound protector of Samye, the first Buddhist monastery of Tibet, chief of a band of seven riders and the focus of his own oracle cult.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christopher Bell, Tsiu Marpo: The Career of a Tibetan Protector Deity (MA thesis, Florida State University, 2006)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet: The Cult and Iconography of the Tibetan Protective Deities (1956)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tsiu Marpo is a red-bodied warrior deity of the btsan class, depicted in armour of leather and copper, riding a black-maned horse and brandishing a red lance and snare, at the head of his band of seven riders (rol pa skya bdun). He was bound by oath as a Buddhist protector and became the special guardian of Samye monastery (founded c. 779 CE), where his shrine and oracle were maintained; Christopher Bell's study traces how he became firmly established as Samye's chief protector by the seventeenth century, in a role earlier associated with Pehar Gyalpo, who according to tradition departed Samye and was eventually installed at Nechung. Tsiu Marpo's cult spread with Samye's prestige, and his oracle was consulted alongside the other great protector oracles of central Tibet."
+  },
+  {
+    "id": "tibetan_buddhist_dorje_legpa",
+    "name": {
+      "primary": "Dorje Legpa",
+      "alt": [
+        "rDo rje legs pa",
+        "Damchen Dorje Legpa",
+        "Dam can rdo rje legs pa",
+        "Vajrasādhu"
+      ],
+      "transliterations": {
+        "tibetan": "རྡོ་རྗེ་ལེགས་པ (rdo rje legs pa)",
+        "etymology": "rDo rje legs pa, 'Excellent Vajra', rendered in Sanskrit as Vajrasādhu; his standing epithet dam can, 'bound by oath', records his subjugation by Padmasambhava (R. de Nebesky-Wojkowitz, Oracles and Demons of Tibet, 1956)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Buddhist",
+    "primaryTradition": "Tibetan Buddhist",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "According to Nyingma tradition the indigenous spirit Dorje Legpa was subdued by Padmasambhava in the eighth century at Oyug and bound by oath (dam can) as a protector of the Buddhist teaching.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ladrang Kalsang, The Guardian Deities of Tibet (Dharamsala: Little Lhasa Publications, 1996)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "oath-bound-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "དམ་ཅན",
+          "script": "Tibetan",
+          "rom": "dam can, 'oath-bound one'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "sphereId": "smithcraft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "མགར་བ",
+          "script": "Tibetan",
+          "rom": "mgar ba, 'blacksmith'; Dorje Legpa is the patron of Tibetan blacksmiths"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_dzogchen_teachings",
+        "name": "to guard the Dzogchen teachings and those who practise them",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Nyingma school Dorje Legpa is one of the three principal protectors of the Great Perfection teachings, alongside Ekajati and the planetary deity Rahula.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ladrang Kalsang, The Guardian Deities of Tibet (1996)"
+          }
+        ]
+      },
+      {
+        "id": "forge_and_wield_weapons",
+        "name": "to forge weapons and strike enemies with the smith's hammer",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As divine blacksmith he commands the craft of the forge and punishes with his hammer and bellows.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tibetan_buddhist_dorje_legpa_hammer",
+        "name": "blacksmith's hammer",
+        "kind": "weapon",
+        "role": "the smith's hammer (and in other forms a vajra or corpse-club) with which the oath-bound blacksmith god strikes down enemies of the doctrine",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "id": "tibetan_buddhist_dorje_legpa_goat_mount",
+        "name": "brown billy-goat mount",
+        "kind": "mount",
+        "role": "the long-horned goat on which Dorje Legpa rides, one of his most distinctive iconographic marks, alongside his round wide-brimmed hat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ladrang Kalsang, The Guardian Deities of Tibet (1996)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "དམ་ཅན (Dam can, 'the Oath-Bound One')",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "tibetan_buddhist_za_rahula",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ladrang Kalsang, The Guardian Deities of Tibet (1996)"
+          }
+        ],
+        "notes": "Dorje Legpa and the planetary deity Rahula, together with the goddess Ekajati, form the triad of principal guardians of the Nyingma Dzogchen teachings and are invoked together in that school's protector rites."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dorje Legpa (Vajrasādhu) is an indigenous Tibetan spirit subdued by Padmasambhava and bound by oath as a Buddhist protector, worshipped as a goat-riding blacksmith god and one of the three chief guardians of the Nyingma Dzogchen teachings.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet: The Cult and Iconography of the Tibetan Protective Deities (1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ladrang Kalsang, The Guardian Deities of Tibet (Dharamsala: Little Lhasa Publications, 1996)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Damchen Dorje Legpa, 'the oath-bound Excellent Vajra' (Sanskrit Vajrasādhu), is among the best known of the indigenous Tibetan deities converted to Buddhism. Tradition holds that Padmasambhava subdued him in the eighth century and bound him under oath to protect the doctrine. He is depicted as a red, wrathful figure in the dress of a layman, wearing a round wide-brimmed hat and riding a brown billy-goat (or in other forms a snow lion), holding a vajra, a smith's hammer or a heart. He is the patron deity of Tibetan blacksmiths, a craft-association that links him with fire and the forge, and in the Nyingma school he serves, with Ekajati and Rahula, as one of the three special protectors of the Dzogchen (Great Perfection) teachings."
+  },
+  {
+    "id": "tibetan_buddhist_za_rahula",
+    "name": {
+      "primary": "Za Rahula",
+      "alt": [
+        "gZa' Rāhula",
+        "Rahula",
+        "Khyab 'jug chen po",
+        "Za"
+      ],
+      "transliterations": {
+        "tibetan": "གཟའ་རཱ་ཧུ་ལ (gza' rā hu la)",
+        "etymology": "gza' is the Tibetan word for 'planet' and for the class of planetary demons; Rāhula continues the Indian eclipse-demon Rāhu, the 'seizer' who swallows sun and moon (R. de Nebesky-Wojkowitz, Oracles and Demons of Tibet, 1956)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Buddhist",
+    "primaryTradition": "Tibetan Buddhist",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "The Indian eclipse-demon Rāhu was assimilated in Tibet as chief of the gza' planetary spirits and, in Nyingma tradition, was bound by Padmasambhava as an oath-bound protector of the teachings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ladrang Kalsang, The Guardian Deities of Tibet (1996)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "planets-and-eclipses",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "གཟའ",
+          "script": "Tibetan",
+          "rom": "gza', 'planet; planetary demon'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "sphereId": "dzogchen-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "བཀའ་སྲུང",
+          "script": "Tibetan",
+          "rom": "bka' srung, 'guardian of the word', protector of the transmitted teachings"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ladrang Kalsang, The Guardian Deities of Tibet (1996)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_sun_and_moon",
+        "name": "to seize and devour the sun and moon, causing eclipses",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the Tibetan continuation of the Indian Rāhu, he swallows the luminaries; eclipses are his visible work.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "id": "strike_with_planetary_illness",
+        "name": "to strike vow-breakers with seizures, strokes and paralysis",
+        "term": {
+          "value": "གཟའ་ནད",
+          "script": "Tibetan",
+          "rom": "gza' nad, 'planet-sickness', the strokes and epileptic seizures attributed to the gza' demons"
+        },
+        "inheritability": "none",
+        "notes": "Tibetan medicine and folk religion attribute sudden strokes and epilepsy to the attack of Rahula and the gza' spirits he commands.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tibetan_buddhist_za_rahula_snake_bow",
+        "name": "bow and serpent arrow",
+        "kind": "weapon",
+        "role": "the bow with which the thousand-eyed planetary lord shoots arrows of sickness; he is also shown grasping a snake-lasso and a victory banner",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ཁྱབ་འཇུག་ཆེན་པོ (Khyab 'jug chen po, 'the Great Pervader')",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "tibetan_buddhist_dorje_legpa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ladrang Kalsang, The Guardian Deities of Tibet (1996)"
+          }
+        ],
+        "notes": "Rahula and Dorje Legpa, together with the goddess Ekajati, are invoked as the triad of principal oath-bound guardians of the Nyingma Dzogchen teachings."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Za Rahula is the Tibetan Buddhist planetary protector developed from the Indian eclipse-demon Rāhu: a nine-headed, thousand-eyed, serpent-bodied lord of the gza' spirits, bound by Padmasambhava and honoured in the Nyingma school as one of the three chief Dzogchen protectors.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet: The Cult and Iconography of the Tibetan Protective Deities (1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ladrang Kalsang, The Guardian Deities of Tibet (Dharamsala: Little Lhasa Publications, 1996)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Za Rahula is the wrathful planetary protector of Tibetan Buddhism, the local development of the Indian eclipse-demon Rāhu who swallows sun and moon. He is portrayed with a dark serpent's tail in place of legs, four arms, nine heads crowned by a raven's head that caws prophecy, a gaping face in his belly, and a body covered with a thousand eyes. As chief of the gza' class of planetary demons he is feared as the bringer of strokes, epilepsy and sudden paralysis (gza' nad, 'planet-sickness'), and propitiated to avert them. In the Nyingma school he was bound by Padmasambhava as a guardian of the transmitted teachings and forms, with Ekajati and Dorje Legpa, the triad of special protectors of the Dzogchen tradition."
+  },
+  {
+    "id": "tibetan_buddhist_tashi_tseringma",
+    "name": {
+      "primary": "Tashi Tseringma",
+      "alt": [
+        "bKra shis tshe ring ma",
+        "Tseringma",
+        "Jomo Tseringma",
+        "chief of the Tshe ring mched lnga (Five Long-Life Sisters)"
+      ],
+      "transliterations": {
+        "tibetan": "བཀྲ་ཤིས་ཚེ་རིང་མ (bkra shis tshe ring ma)",
+        "etymology": "bKra shis tshe ring ma means 'Auspicious Lady of Long Life', from bkra shis 'good fortune' and tshe ring 'long life' (R. de Nebesky-Wojkowitz, Oracles and Demons of Tibet, 1956)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Buddhist",
+    "primaryTradition": "Tibetan Buddhist",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "The mountain goddess Tseringma, eldest of the Five Long-Life Sisters dwelling in the Himalayan peaks, was bound to the Buddhist teaching first by Padmasambhava and again, in the eleventh century, by the yogin Milarepa, whose songs record their encounters.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Garma C. C. Chang (trans.), The Hundred Thousand Songs of Milarepa (1962)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "longevity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ཚེ་རིང",
+          "script": "Tibetan",
+          "rom": "tshe ring, 'long life'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "sphereId": "himalayan-peaks",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ཇོ་མོ་ཚེ་རིང་མ",
+          "script": "Tibetan",
+          "rom": "Jo mo tshe ring ma, the peak (Gauri Shankar) identified as her mountain seat"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_long_life",
+        "name": "to bestow long life, health and prosperity on devotees",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As 'Auspicious Lady of Long Life' she grants longevity, and with her sisters protects practitioners, herds and harvests.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      },
+      {
+        "id": "command_the_five_sisters",
+        "name": "to lead the Five Long-Life Sisters of the snow mountains",
+        "term": {
+          "value": "ཚེ་རིང་མཆེད་ལྔ",
+          "script": "Tibetan",
+          "rom": "tshe ring mched lnga, 'the five long-life sisters'"
+        },
+        "inheritability": "none",
+        "notes": "She is the eldest and chief of the five mountain goddesses converted to Buddhism, who appear together in her retinue.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Garma C. C. Chang (trans.), The Hundred Thousand Songs of Milarepa (1962)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tibetan_buddhist_tseringma_long_life_vase",
+        "name": "vase of long life",
+        "kind": "emblem",
+        "role": "the treasure vase of longevity she holds, together with a golden vajra, as she rides her white snow lion",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ཇོ་མོ་ཚེ་རིང་མ (Jo mo tshe ring ma, 'Lady Tseringma')",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tashi Tseringma is the chief of the Five Long-Life Sisters (Tshe ring mched lnga), Himalayan mountain goddesses converted to Buddhism by Padmasambhava and Milarepa, worshipped as a bestower of longevity and protectress of the Kagyu tradition.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet: The Cult and Iconography of the Tibetan Protective Deities (1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Garma C. C. Chang (trans.), The Hundred Thousand Songs of Milarepa (New York: University Books, 1962)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tashi Tseringma, the 'Auspicious Lady of Long Life', is the eldest and chief of the Five Long-Life Sisters (Tshe ring mched lnga), pre-Buddhist goddesses of the high Himalayan peaks on the Tibet-Nepal border; her own seat is the mountain Jomo Tseringma (Gauri Shankar). Tradition holds that Padmasambhava first bound the sisters by oath, and the biographical song-cycle of Milarepa devotes several chapters to their assaults on, conversion by, and teachings received from the eleventh-century yogin, after which Tseringma became a special protectress of the Kagyu school. She is depicted as a beautiful white goddess riding a white snow lion, holding a golden vajra and a vase of long life, and is invoked for longevity, health and prosperity; her four sisters ride a wild ass, a tigress, a doe and a dragon in her retinue."
+  },
+  {
+    "id": "tibetan_buddhist_dorje_shugden",
+    "name": {
+      "primary": "Dorje Shugden",
+      "alt": [
+        "rDo rje shugs ldan",
+        "Dolgyal",
+        "Dol rgyal",
+        "Gyalchen Shugden"
+      ],
+      "transliterations": {
+        "tibetan": "རྡོ་རྗེ་ཤུགས་ལྡན (rdo rje shugs ldan)",
+        "etymology": "rDo rje shugs ldan means 'Vajra Possessing Strength'; the alternative name Dol rgyal, 'the king-spirit of Dol', refers to Dol Chumig Karmo, the place of his cult's origin (G. Dreyfus, 'The Shuk-den Affair', 1998)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Buddhist",
+    "primaryTradition": "Tibetan Buddhist",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Tibetan tradition holds that Dorje Shugden arose in the seventeenth century as the wrathful spirit of the Gelug lama Drakpa Gyaltsen (1619-1656), who died in contested circumstances at Drepung and thereafter manifested as a protector at Dol Chumig Karmo.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georges Dreyfus, 'The Shuk-den Affair: History and Nature of a Quarrel', Journal of the International Association of Buddhist Studies 21.2 (1998), 227-270"
+          },
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sectarian-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "སྲུང་མ",
+          "script": "Tibetan",
+          "rom": "srung ma, 'guardian, protector'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georges Dreyfus, 'The Shuk-den Affair: History and Nature of a Quarrel', JIABS 21.2 (1998)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_gelug_teachings",
+        "name": "to protect the purity of the Gelug teachings and punish those who mix traditions",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His devotees regard him as a fierce guardian of the exclusive Gelug transmission; this exclusivist understanding is precisely what made his cult controversial.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georges Dreyfus, 'The Shuk-den Affair: History and Nature of a Quarrel', JIABS 21.2 (1998)"
+          }
+        ]
+      },
+      {
+        "id": "speak_through_oracles",
+        "name": "to take possession of oracle mediums and give counsel in trance",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Shugden possessed recognized oracle mediums, among them the medium of Trode Khangsar in Lhasa and later oracles in exile.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tibetan_buddhist_shugden_razor_sword",
+        "name": "razor-edged sword",
+        "kind": "weapon",
+        "role": "the sword he brandishes in his right hand while holding an enemy's heart in his left, riding a snow lion and wearing the golden riding-hat of a monk-king",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet (1956)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "རྒྱལ་ཆེན་ཤུགས་ལྡན (rGyal chen shugs ldan, 'Great King Shugden')",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georges Dreyfus, 'The Shuk-den Affair: History and Nature of a Quarrel', JIABS 21.2 (1998)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Dorje Shugden is a wrathful protector deity held to have arisen from the spirit of the seventeenth-century lama Drakpa Gyaltsen, venerated by part of the Gelug school as a guardian of its teachings and the subject of a major modern controversy over his status as enlightened protector or harmful worldly spirit.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Georges Dreyfus, 'The Shuk-den Affair: History and Nature of a Quarrel', Journal of the International Association of Buddhist Studies 21.2 (1998), 227-270"
+          },
+          {
+            "kind": "secondary",
+            "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet: The Cult and Iconography of the Tibetan Protective Deities (1956)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Dorje Shugden, 'Vajra Possessing Strength', also called Dolgyal ('the king-spirit of Dol'), is a wrathful protector whose cult tradition traces to the death of Tulku Drakpa Gyaltsen (1619-1656), a Gelug lama of Drepung whose spirit was believed to have manifested as a fierce deity at Dol Chumig Karmo. He is depicted as a monk-armoured rider on a snow lion, wearing a golden domed hat, brandishing a sword and clutching a heart. His cult was systematized in the early twentieth century by Pabongkha Rinpoche, whose followers promoted Shugden as the chief protector of an exclusively guarded Gelug tradition. The deity's status is deeply contested: devotees regard him as an enlightened protector, while the Fourteenth Dalai Lama and much of the Tibetan religious establishment regard him as a worldly or harmful spirit and have discouraged his propitiation, producing the modern 'Shugden affair' analysed by Georges Dreyfus. Nebesky-Wojkowitz documented the deity's iconography, myths and oracles as they stood in mid-twentieth-century Tibet."
+  }
+]
+```

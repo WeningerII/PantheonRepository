@@ -1,0 +1,649 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Cheyenne
+Era (registered, exact): "myth-age / culture-hero age", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five well-attested individuated Cheyenne figures: Aktunowihio the Wise One Below (Grinnell 1923; Mooney 1907; Dorsey 1905), the paired sacred couple Esceheman (Grandmother Earth) and Nonoma (Thunder) from Schlesier's Massaum reconstruction (1987) with Powell (1969) and the Cheyenne Dictionary (2006), their daughter Ehyophstah the Yellow-Haired Woman who brought the buffalo (Grinnell 1926; Schlesier 1987), and the star-born monster-slaying hero Falling Star (Grinnell 1926; Kroeber 1900). Heammawihio was excluded as an alias of the existing Maheo entry, and generic spirit classes (maiyun, listeners-above/below) were excluded as non-individuated. New figures are wired to the existing Maheo entry via directed subordinate-to relations and to each other via attested parentage.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "cheyenne_aktunowihio",
+    "name": {
+      "primary": "Wise One Below",
+      "alt": [
+        "Aktunowihio",
+        "Ahk tun o wihio",
+        "Ahktunowihio"
+      ],
+      "transliterations": {
+        "chy": "Áhk tun o wihio",
+        "etymology": "From Cheyenne wihio, 'spider, wise one', with an element meaning 'below'; the counterpart of Heammawihio, 'Wise One Above' (Grinnell, The Cheyenne Indians, 1923; Mooney, 'The Cheyenne Indians', 1907)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cheyenne",
+    "primaryTradition": "Cheyenne",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Present from the beginning of the world as the great subterranean power dwelling beneath the earth, complementary to the Wise One Above (Grinnell, The Cheyenne Indians, 1923).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, The Cheyenne Indians: Their History and Ways of Life, Yale University Press, 1923"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld-earth-depths",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Áhk tun o wihio",
+          "script": "Latin",
+          "rom": "wise one below"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, The Cheyenne Indians: Their History and Ways of Life, Yale University Press, 1923"
+          },
+          {
+            "kind": "secondary",
+            "reference": "James Mooney, 'The Cheyenne Indians', Memoirs of the American Anthropological Association 1(6), 1907"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sustain_earth_life",
+        "name": "to animate and sustain life within and beneath the earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Described in early ethnography as the animating spirit of the earth's interior, source of springs, roots, and subterranean powers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George A. Dorsey, The Cheyenne, Field Columbian Museum Anthropological Series 9, 1905"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Áhk tun o wihio",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, The Cheyenne Indians: Their History and Ways of Life, Yale University Press, 1923"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "cheyenne_maheo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, The Cheyenne Indians: Their History and Ways of Life, Yale University Press, 1923"
+          }
+        ],
+        "notes": "In Cheyenne cosmology the subterranean Wise One Below stands as the lower counterpart within the ordered universe presided over by the Wise One Above (Heammawihio/Maheo)."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Aktunowihio, the 'Wise One Below', is the great Cheyenne subterranean spirit of the earth, cosmological counterpart of the Wise One Above.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, The Cheyenne Indians: Their History and Ways of Life, Yale University Press, 1923"
+          },
+          {
+            "kind": "secondary",
+            "reference": "James Mooney, 'The Cheyenne Indians', Memoirs of the American Anthropological Association 1(6), 1907"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George A. Dorsey, The Cheyenne, Field Columbian Museum Anthropological Series 9, 1905"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Aktunowihio (Áhk tun o wihio), the 'Wise One Below', is the great subterranean power of Cheyenne religion, dwelling within the earth as the complement of Heammawihio, the 'Wise One Above'. Early ethnographers including George Bird Grinnell, James Mooney, and George Dorsey recorded this vertical duality as the fundamental axis of Cheyenne cosmology: offerings and pipe ceremonies addressed the powers above and below before the four directions. The being below is associated with the earth's fertility, springs, and the roots of growing things."
+  },
+  {
+    "id": "cheyenne_esceheman",
+    "name": {
+      "primary": "Our Grandmother",
+      "atl_note": "",
+      "alt": [
+        "Ésceheman",
+        "Esceheman",
+        "Grandmother Earth"
+      ],
+      "transliterations": {
+        "chy": "Ésceheman",
+        "etymology": "Cheyenne (Tsistsistas) 'our grandmother', the female earth spirit of the deep earth (Schlesier, The Wolves of Heaven, 1987)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cheyenne",
+    "primaryTradition": "Cheyenne",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Established from the world's ordering as the female sacred power of the deep earth, guardian of animal life, in the Tsistsistas cosmology reconstructed from the Massaum ceremony (Schlesier, The Wolves of Heaven, 1987).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-fertility-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ésceheman",
+          "script": "Latin",
+          "rom": "our grandmother"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Peter J. Powell, Sweet Medicine: The Continuing Role of the Sacred Arrows, the Sun Dance, and the Sacred Buffalo Hat in Northern Cheyenne History, University of Oklahoma Press, 1969"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "release_game_animals",
+        "name": "to release or withhold the game animals from the deep earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As mistress of the deep earth she is guardian of the animals on which the people depend.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Ésceheman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "cheyenne_maheo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ],
+        "notes": "Grandmother Earth acts within the universe ordered by Maheo, the highest sacred power."
+      },
+      {
+        "kind": "spouse",
+        "personId": "cheyenne_nonoma",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ],
+        "notes": "Paired with Nonoma, the thunder spirit, in the sacred genealogy underlying the Massaum ceremony."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "cheyenne_ehyophstah",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ],
+        "notes": "Mother of Ehyophstah, the Yellow-Haired Woman who brought the buffalo to the people."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ésceheman, 'Our Grandmother', is the Cheyenne female sacred power of the deep earth, guardian of the animals and mother of Ehyophstah.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Peter J. Powell, Sweet Medicine: The Continuing Role of the Sacred Arrows, the Sun Dance, and the Sacred Buffalo Hat in Northern Cheyenne History, University of Oklahoma Press, 1969"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ésceheman, 'Our Grandmother', is the female earth spirit of the Tsistsistas (Cheyenne), dwelling in the deep earth as guardian of the game animals and of the earth's generative power. Karl Schlesier's reconstruction of the Massaum, the great world-renewal ceremony, places her at the heart of Cheyenne sacred cosmology alongside Maheo above; Peter Powell's ethnohistory records the continuing veneration of Grandmother Earth in Northern Cheyenne ritual. In the Massaum tradition she and the thunder spirit Nonoma are the parents of Ehyophstah, the Yellow-Haired Woman."
+  },
+  {
+    "id": "cheyenne_nonoma",
+    "name": {
+      "primary": "Thunder",
+      "alt": [
+        "Nonoma",
+        "Nonóma'e"
+      ],
+      "transliterations": {
+        "chy": "nonóma'e",
+        "etymology": "From Cheyenne nonóma'e, 'thunder' (Fisher, Leman, Pine and Sanchez, Cheyenne Dictionary, 2006)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cheyenne",
+    "primaryTradition": "Cheyenne",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Present from the world's ordering as the thunder spirit of the near sky, paired with Grandmother Earth in the Tsistsistas cosmology of the Massaum (Schlesier, The Wolves of Heaven, 1987).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder-storm",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nonóma'e",
+          "script": "Latin",
+          "rom": "thunder"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Louise Fisher, Wayne Leman, Leroy Pine Sr., and Marie Sanchez, Cheyenne Dictionary, Chief Dull Knife College, 2006"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_storms",
+        "name": "to bring the thunder, lightning, and life-renewing spring rains",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Thunder in Plains and Cheyenne belief returns in spring to renew the earth and wars against destructive powers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, The Cheyenne Indians: Their History and Ways of Life, Yale University Press, 1923"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Nonóma'e",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "cheyenne_maheo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ],
+        "notes": "The thunder spirit operates within the sacred order established by Maheo."
+      },
+      {
+        "kind": "spouse",
+        "personId": "cheyenne_esceheman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ],
+        "notes": "Paired with Ésceheman, Grandmother Earth, in the sacred genealogy of the Massaum ceremony."
+      },
+      {
+        "kind": "father-of",
+        "personId": "cheyenne_ehyophstah",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ],
+        "notes": "Father of Ehyophstah, the Yellow-Haired Woman."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nonoma is the Cheyenne thunder spirit, consort of Grandmother Earth and father of Ehyophstah in the sacred cosmology of the Massaum ceremony.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Louise Fisher, Wayne Leman, Leroy Pine Sr., and Marie Sanchez, Cheyenne Dictionary, Chief Dull Knife College, 2006"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nonoma is the thunder spirit of Tsistsistas (Cheyenne) religion, whose name is the ordinary Cheyenne word for thunder (nonóma'e). In Karl Schlesier's reconstruction of the Massaum world-renewal ceremony, the thunder spirit and Ésceheman, Grandmother Earth, form a paired male-female sacred couple whose daughter Ehyophstah, the Yellow-Haired Woman, was given to the people. Thunder is more broadly attested in Cheyenne belief, recorded by Grinnell, as the springtime power of storm and renewal opposed to the destructive winter powers."
+  },
+  {
+    "id": "cheyenne_ehyophstah",
+    "name": {
+      "primary": "Yellow-Haired Woman",
+      "alt": [
+        "Ehyophstah",
+        "Ehyophsta",
+        "E hyoph sta",
+        "Yellow Hair on Her Head"
+      ],
+      "transliterations": {
+        "chy": "Ehyophstah",
+        "etymology": "Cheyenne name glossed 'Yellow-Haired Woman' or 'Yellow Hair on Her Head' (Grinnell, By Cheyenne Campfires, 1926)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cheyenne",
+    "primaryTradition": "Cheyenne",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "cheyenne_esceheman",
+      "cheyenne_nonoma"
+    ],
+    "parentRoles": [
+      "mother",
+      "father"
+    ],
+    "temporal": {
+      "era": "myth-age / culture-hero age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "myth-age / culture-hero age",
+        "eraOrdering": 0,
+        "startEvent": "Given to two young Tsistsistas men from within the sacred mountain, she came to the starving people and released the buffalo and other game (Grinnell, By Cheyenne Campfires, 1926; Schlesier, The Wolves of Heaven, 1987).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, By Cheyenne Campfires, Yale University Press, 1926"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "buffalo-game-abundance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, By Cheyenne Campfires, Yale University Press, 1926"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "call_buffalo",
+        "name": "to call forth the buffalo and wild game for the people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her presence brought the buffalo; when a taboo against expressing pity for the animals was broken, the game withdrew.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, By Cheyenne Campfires, Yale University Press, 1926"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Ehyophstah",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ehyophstah, the Yellow-Haired Woman, is the Cheyenne heroine and sacred daughter of the earth and thunder powers who first brought the buffalo to the people.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, By Cheyenne Campfires, Yale University Press, 1926"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Karl H. Schlesier, The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins, University of Oklahoma Press, 1987"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ehyophstah, the Yellow-Haired Woman, is a central heroine of Cheyenne myth, recorded by George Bird Grinnell in 1926. Given from within the sacred mountain to two young men who had journeyed there in a time of famine, she came to live among the people and brought the buffalo and other game; when a Cheyenne broke the taboo against pitying the slain animals, she departed and the game vanished until ritually restored. In Karl Schlesier's analysis of the Massaum ceremony she is the daughter of Ésceheman, Grandmother Earth, and the thunder spirit Nonoma, and her gift of the animals is the charter of the Cheyenne sacred hunt. Her name was later borne by the historical nineteenth-century Cheyenne woman warrior Ehyophsta."
+  },
+  {
+    "id": "cheyenne_falling_star",
+    "name": {
+      "primary": "Falling Star",
+      "alt": [
+        "Hotóhkeso"
+      ],
+      "transliterations": {
+        "chy": "hotóhke",
+        "etymology": "English name of the hero as recorded by Grinnell; from Cheyenne hotóhke, 'star' (Grinnell, By Cheyenne Campfires, 1926; Fisher et al., Cheyenne Dictionary, 2006)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Cheyenne",
+    "primaryTradition": "Cheyenne",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age / culture-hero age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "myth-age / culture-hero age",
+        "eraOrdering": 0,
+        "startEvent": "Born of a Cheyenne woman who had married a star and fallen back to earth, the infant hero survived his mother's fall and was reared by an old woman, growing up to rid the camps of monsters (Grinnell, By Cheyenne Campfires, 1926).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, By Cheyenne Campfires, Yale University Press, 1926"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heroic-monster-slaying",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "hotóhke",
+          "script": "Latin",
+          "rom": "star"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, By Cheyenne Campfires, Yale University Press, 1926"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. L. Kroeber, 'Cheyenne Tales', Journal of American Folklore 13(50), 1900"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "slay_monsters",
+        "name": "to destroy the monsters and cannibal beings afflicting the people's camps",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the cycle of tales he travels from camp to camp destroying a great sucking monster, a murderous white crow, and other destructive beings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, By Cheyenne Campfires, Yale University Press, 1926"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Falling Star is the Cheyenne star-born culture hero, son of a star and a mortal woman, who travelled among the camps destroying monsters.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "George Bird Grinnell, By Cheyenne Campfires, Yale University Press, 1926"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. L. Kroeber, 'Cheyenne Tales', Journal of American Folklore 13(50), 1900"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Falling Star is a Cheyenne star-born hero whose cycle Grinnell recorded among the hero myths in By Cheyenne Campfires (1926), with related star-husband and hero tales collected earlier by Alfred Kroeber (1900). A Cheyenne woman who married a star fell from the sky world; her infant son survived, was raised by an old woman, and grew into a wandering hero who visited the Cheyenne camps in turn, destroying the monsters and malevolent beings that oppressed the people. He belongs to the widespread Plains star-boy hero pattern but is an individuated, named figure of the Cheyenne narrative tradition."
+  }
+]
+```
+

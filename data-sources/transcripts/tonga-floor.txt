@@ -1,0 +1,333 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Tonga
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the two genuinely individuated, named figures that Zambian/Zimbabwean (Gwembe Valley) Tonga scholarship documents beyond Leza and the existing mortals: Nyaminyami, the serpentine Zambezi river god (Chikozho & Mubaya 2015; McGregor 2009; Tremmel 1994), and Monze, the named basangu rain spirit of the plateau rain-shrine cult (Colson 1969, 2006; O'Brien 1983; Kaoma 2017). Both are wired to the existing high god Leza via cited subordinate-to relations reflecting the documented Tonga spiritual hierarchy. Other candidates were rejected as non-individuated: basangu and mizimu are spirit classes, sikatongo and mulela are ritual offices, and figures such as Mweemba are chiefly titles whose attestation as named spirits is too thin; Nyaminyami's wife is unnamed in the scholarship and was therefore excluded.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "tonga_nyaminyami",
+    "name": {
+      "primary": "Nyaminyami",
+      "alt": [
+        "Nyami Nyami",
+        "the Zambezi River God"
+      ],
+      "transliterations": {
+        "tonga": "Nyaminyami",
+        "etymology": "Commonly derived from Chitonga nyama, 'meat/flesh', in reference to the belief that the river spirit fed the people strips of meat from its own body in famine (Chikozho & Mubaya 2015; Tremmel 1994)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tonga",
+    "primaryTradition": "Tonga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Nyaminyami is held to have dwelt in the Zambezi from time immemorial as the river's guardian spirit, sustaining the Gwembe Valley Tonga who lived along its banks (Chikozho & Mubaya 2015).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chikozho, J. & Mubaya, T. R., 'Nyaminyami, \"The Tonga River-God\": The Place and Role of the Nyaminyami in the Tonga People's Cosmology and Environmental Conservation Practices', in M. Mawere & S. Awuah-Nyamekye (eds.), Harnessing Cultural Capital for Sustainability: A Pan Africanist Perspective, Langaa RPCIG, 2015"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mulonga",
+          "script": "Latin",
+          "rom": "river (Chitonga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McGregor, JoAnn, Crossing the Zambezi: The Politics of Landscape on a Central African Frontier, James Currey / Weaver Press, 2009"
+          }
+        ]
+      },
+      {
+        "sphereId": "sustenance-and-abundance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nyama",
+          "script": "Latin",
+          "rom": "meat, flesh (Chitonga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tremmel, Michael, The People of the Great River: The Tonga Hoped the Water Would Follow Them, Mambo Press, 1994"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "stir_whirlpools_and_floods",
+        "name": "to raise whirlpools, floods and tremors in the Zambezi when angered",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Floods and earth tremors during the building of Kariba Dam were attributed to Nyaminyami's anger at being cut off from his wife downstream.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McGregor, JoAnn, Crossing the Zambezi: The Politics of Landscape on a Central African Frontier, James Currey / Weaver Press, 2009"
+          }
+        ]
+      },
+      {
+        "id": "feed_people_in_famine",
+        "name": "to offer strips of meat from his own body to the people in times of famine",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chikozho, J. & Mubaya, T. R., 'Nyaminyami, \"The Tonga River-God\"', in Mawere & Awuah-Nyamekye (eds.), Harnessing Cultural Capital for Sustainability, Langaa RPCIG, 2015"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tonga_nyaminyami_carving",
+        "name": "Nyaminyami walking-stick and pendant carvings",
+        "kind": "emblem",
+        "role": "Carved images of a fish-headed serpent coiled around a staff, worn or carried as tokens of the river god's protection and widely produced in the Zambezi Valley",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McGregor, JoAnn, Crossing the Zambezi: The Politics of Landscape on a Central African Frontier, James Currey / Weaver Press, 2009"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "tonga_leza",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chikozho, J. & Mubaya, T. R., 'Nyaminyami, \"The Tonga River-God\"', in Mawere & Awuah-Nyamekye (eds.), Harnessing Cultural Capital for Sustainability, Langaa RPCIG, 2015"
+          }
+        ],
+        "notes": "In Tonga cosmology the creator Leza stands at the apex of the spiritual hierarchy, with river and territorial spirits such as Nyaminyami operating beneath him as guardians of particular places."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nyaminyami is the serpentine river god of the Zambezi among the Gwembe Valley (BaTonga) people, pictured with a fish's head and snake's body, who sustained the river-bank communities and whose wrath was blamed for the floods and tremors that beset the construction of Kariba Dam.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chikozho, J. & Mubaya, T. R., 'Nyaminyami, \"The Tonga River-God\": The Place and Role of the Nyaminyami in the Tonga People's Cosmology and Environmental Conservation Practices', in M. Mawere & S. Awuah-Nyamekye (eds.), Harnessing Cultural Capital for Sustainability: A Pan Africanist Perspective, Langaa RPCIG, 2015"
+          },
+          {
+            "kind": "secondary",
+            "reference": "McGregor, JoAnn, Crossing the Zambezi: The Politics of Landscape on a Central African Frontier, James Currey / Weaver Press, 2009"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Tremmel, Michael, The People of the Great River: The Tonga Hoped the Water Would Follow Them, Mambo Press, 1994"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nyaminyami is the best-known individuated spirit of the Zambezi Valley Tonga, envisaged as a great serpent with the head of a fish who dwells in the Zambezi River. Tradition holds that in famine he allowed people to cut meat from his flanks, and that the damming of the river at Kariba in the 1950s separated him from his wife, his struggles to rejoin her explaining the tremors and floods that plagued the dam works and the region thereafter. JoAnn McGregor has shown that colonial-era writers exaggerated and caricatured the figure, but the belief is genuinely rooted in BaTonga river-spirit religion and remains central to Tonga identity on both banks of the Zambezi, where carved Nyaminyami staffs and pendants are worn as protective emblems."
+  },
+  {
+    "id": "tonga_monze",
+    "name": {
+      "primary": "Monze",
+      "alt": [
+        "Monze the Rain Prophet",
+        "the basangu Monze"
+      ],
+      "transliterations": {
+        "tonga": "Monze",
+        "etymology": "The name of the founding rain prophet, inherited by the basangu spirit that successively possessed his mediums and by the chiefly title derived from the cult (O'Brien 1983; Colson 2006)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Tonga",
+    "primaryTradition": "Tonga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "The basangu spirit Monze first manifested through a renowned nineteenth-century rain caller on the southern Zambian plateau, whose shrine at the place now called Monze drew delegations from Tonga, Ila and Sala communities (O'Brien 1983; Colson 2006).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "O'Brien, Dan, 'Chiefs of Rain — Chiefs of Ruling: A Reinterpretation of Pre-colonial Tonga (Zambia) Social and Political Structure', Africa: Journal of the International African Institute 53(4), 1983, pp. 23–42"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Colson, Elizabeth, Tonga Religious Life in the Twentieth Century, Bookworld Publishers, 2006"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "imvwula",
+          "script": "Latin",
+          "rom": "rain (Chitonga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Colson, Elizabeth, Tonga Religious Life in the Twentieth Century, Bookworld Publishers, 2006"
+          }
+        ]
+      },
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "basangu",
+          "script": "Latin",
+          "rom": "communal spirits that possess prophets (Chitonga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Colson, Elizabeth, 'Spirit Possession among the Tonga of Zambia', in J. Beattie & J. Middleton (eds.), Spirit Mediumship and Society in Africa, Routledge & Kegan Paul, 1969"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "call_rain",
+        "name": "to call rain and avert drought for the communities that petition his shrine",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "O'Brien, Dan, 'Chiefs of Rain — Chiefs of Ruling: A Reinterpretation of Pre-colonial Tonga (Zambia) Social and Political Structure', Africa 53(4), 1983, pp. 23–42"
+          }
+        ]
+      },
+      {
+        "id": "possess_mediums",
+        "name": "to possess successive human mediums and speak through them on communal crises such as drought, epidemic and pestilence",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Colson, Elizabeth, 'Spirit Possession among the Tonga of Zambia', in J. Beattie & J. Middleton (eds.), Spirit Mediumship and Society in Africa, Routledge & Kegan Paul, 1969"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tonga_monze_malende_shrine",
+        "name": "malende rain shrine of Monze",
+        "kind": "shrine",
+        "role": "The rain shrine complex on the southern Zambian plateau where the lwiindi rain rites are performed and the spirit Monze is petitioned; the modern town and chieftaincy of Monze take their name from it",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kaoma, Kapya J., 'Towards an African theological ethic of earth care: Encountering the Tonga lwiindi of Simaamba of Zambia in the face of the ecological crisis', HTS Teologiese Studies / Theological Studies 73(3), 2017"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "tonga_leza",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Colson, Elizabeth, Tonga Religious Life in the Twentieth Century, Bookworld Publishers, 2006"
+          }
+        ],
+        "notes": "Basangu spirits such as Monze act beneath the creator Leza, mediating between the distant high god and the living by warning communities and conveying rain."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Monze is the named basangu (communal rain spirit) of the Zambian Tonga, originating with a famous nineteenth-century rain-calling prophet whose spirit continued to possess successive mediums at the malende rain shrine that gave its name to the town and chieftaincy of Monze.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Colson, Elizabeth, Tonga Religious Life in the Twentieth Century, Bookworld Publishers, 2006"
+          },
+          {
+            "kind": "secondary",
+            "reference": "O'Brien, Dan, 'Chiefs of Rain — Chiefs of Ruling: A Reinterpretation of Pre-colonial Tonga (Zambia) Social and Political Structure', Africa: Journal of the International African Institute 53(4), 1983, pp. 23–42"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kaoma, Kapya J., 'Towards an African theological ethic of earth care: Encountering the Tonga lwiindi of Simaamba of Zambia in the face of the ecological crisis', HTS Teologiese Studies / Theological Studies 73(3), 2017"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Monze is the outstanding named figure of the Tonga basangu cult: a nineteenth-century rain prophet on the southern Zambian plateau whose spirit, itself called Monze, continued after his death to possess a line of mediums at his rain shrine. As a successful rain caller and healer he drew delegations from Tonga, Ila and Sala communities across an unusually wide region, and the authority of his cult crystallised into the Monze chieftainship recognised in the colonial and modern periods. His shrine remains a centre of the lwiindi rain-calling ceremonies, in which the spirit is petitioned to intercede for rain and communal wellbeing under the remote creator Leza."
+  }
+]
+```

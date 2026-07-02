@@ -1,0 +1,190 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Swazi
+Era (registered, exact): "Swazi traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+The individuated Swazi divine record is essentially exhausted by the existing three figures: Kuper (An African Aristocracy, 1947; The Swazi, 1963; the "Swazi Religion" entry in the Encyclopedia of Religion) and Marwick (The Swazi, 1940) name only the remote supreme being Mvelinqangi/Mkhulumnqande, his one-legged messenger Mlentengamunye, and the sky princess Nomkhubulwane; everything else is the collective ancestor cult (emadloti) and unnamed spirit classes (emandzawe, tinzunzu), which I excluded as non-individuated. I added one figure: Somhlolo (Sobhuza I), the individually named and venerated royal ancestor whose deathbed dream-vision of the book and the coin is a foundational sacred narrative of Swazi religion, well attested in Kuper, Matsebula (1972), and Mzizi (1995). Other historical kings appear in ritual only collectively, so no further additions qualified.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "swazi_somhlolo",
+    "name": {
+      "primary": "Somhlolo (Sobhuza I, the Wonder)",
+      "alt": [
+        "Sobhuza I",
+        "Somhlolo",
+        "Ngwane IV"
+      ],
+      "transliterations": {
+        "siSwati": "Somhlolo",
+        "etymology": "siSwati somhlolo, 'wonder, marvel, portent' — a praise-name given because of the extraordinary circumstances surrounding his birth and accession, his father Ndvungunye having been killed by lightning (Matsebula, A History of Swaziland, 1972)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Swazi",
+    "primaryTradition": "Swazi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Swazi traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Swazi traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Somhlolo reigned as king of the Swazi (c. 1815–1836) and after death entered the royal ancestor cult, in which deceased kings are addressed with sacrifice at the national Incwala ceremony.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kuper, Hilda. An African Aristocracy: Rank Among the Swazi. London: Oxford University Press, 1947."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Matsebula, J. S. M. A History of Swaziland. Cape Town: Longman, 1972."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ingwenyama",
+          "script": "Latin",
+          "rom": "ingwenyama, 'the Lion', ritual title of the Swazi king"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kuper, Hilda. An African Aristocracy: Rank Among the Swazi. London: Oxford University Press, 1947."
+          }
+        ]
+      },
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "umbono",
+          "script": "Latin",
+          "rom": "umbono, 'vision'; his dream is remembered as umbono waSomhlolo, the Vision of Somhlolo"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mzizi, Joshua Bheki. Voices of the Voiceless: Toward a Theology of Liberation for Post-Colonial Swaziland. PhD dissertation, Vanderbilt University, 1995."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "prophetic_dreaming",
+        "name": "to receive prophetic visions in dreams",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Shortly before his death Somhlolo dreamt of white-skinned strangers bearing umculu (a scroll or book) and indilinga (a round metal coin), and instructed the nation to accept the book but be wary of the money — a narrative that became foundational to Swazi religious history.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matsebula, J. S. M. A History of Swaziland. Cape Town: Longman, 1972."
+          }
+        ]
+      },
+      {
+        "id": "ancestral_intercession",
+        "name": "to intercede for the living nation as a royal ancestral spirit",
+        "term": {
+          "value": "lidloti",
+          "script": "Latin",
+          "rom": "lidloti (pl. emadloti), 'ancestral spirit'"
+        },
+        "inheritability": "none",
+        "notes": "Deceased Swazi kings, Somhlolo among them, are believed to watch over the nation and are propitiated with cattle sacrifice and ritual address at royal shrines and during the Incwala.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kuper, Hilda. The Swazi: A South African Kingdom. New York: Holt, Rinehart and Winston, 1963."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "swazi_umculu",
+        "name": "Umculu (the book of Somhlolo's vision)",
+        "kind": "emblem",
+        "role": "The scroll or book carried by the strangers in Somhlolo's dream, later identified with the Bible; emblem of the sacred knowledge he told the nation to accept.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mzizi, Joshua Bheki. Voices of the Voiceless: Toward a Theology of Liberation for Post-Colonial Swaziland. PhD dissertation, Vanderbilt University, 1995."
+          }
+        ]
+      },
+      {
+        "id": "swazi_indilinga",
+        "name": "Indilinga (the round coin of Somhlolo's vision)",
+        "kind": "emblem",
+        "role": "The round metal disc or coin in the vision, identified with money, against which Somhlolo warned the Swazi nation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matsebula, J. S. M. A History of Swaziland. Cape Town: Longman, 1972."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Somhlolo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matsebula, J. S. M. A History of Swaziland. Cape Town: Longman, 1972."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Somhlolo (Sobhuza I, r. c. 1815–1836) is the Swazi king venerated as a pre-eminent royal ancestor, whose deathbed dream-vision of strangers bearing a book and a coin became a foundational sacred narrative of Swazi religion and national identity.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Kuper, Hilda. An African Aristocracy: Rank Among the Swazi. London: Oxford University Press, 1947."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Matsebula, J. S. M. A History of Swaziland. Cape Town: Longman, 1972."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mzizi, Joshua Bheki. Voices of the Voiceless: Toward a Theology of Liberation for Post-Colonial Swaziland. PhD dissertation, Vanderbilt University, 1995."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Somhlolo, born Sobhuza I of the Dlamini dynasty, ruled the emerging Swazi kingdom in the early nineteenth century and consolidated it in the mid-Highveld region of present-day Eswatini. His praise-name means 'the Wonder' or 'the Portent'. In Swazi religion, where deceased kings form the most powerful tier of the ancestral spirits (emadloti) and are ritually addressed at the annual Incwala ceremony, Somhlolo holds a singular place: shortly before his death he is said to have dreamt of pale-skinned strangers arriving with a scroll or book (umculu) and a round coin (indilinga), and to have counselled his people to receive the book but treat the money with caution and never to shed the strangers' blood. This 'Vision of Somhlolo' shaped the Swazi reception of Christian missionaries from the 1840s onward and remains a touchstone of Swazi spirituality and national self-understanding, commemorated in national institutions such as Somhlolo Stadium."
+  }
+]
+```

@@ -1,0 +1,671 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ifugao
+Era (registered, exact): "mythic-prehistoric", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six core, individually named Ifugao figures missing from the corpus: the chief god Maknongan, the Skyworld mediator Liddum, the Skyworld benefactor Ampual, the flood-ancestor and harvest pair Wigan and Bugan, and the bulul-origin deity Namtogan. Attestation rests on Barton (1946, 1955), Beyer (1913), Jocano (1969), Eugenio (1993), and Dulawan (2001). Kabigat was deliberately excluded to keep the Bontoc corpus distinct, and generic classes (bulul figures as objects, unnamed ancestors, the numerous minor named baki deities of Barton's thousand-strong lists that lack individuated narratives) were not authored. Wigan and Bugan carry reciprocal spouse and sibling relations per the deluge myth; Maknongan is wired to Bugan as consort per Jocano's creation account.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ifugao_maknongan",
+    "name": {
+      "primary": "Maknongan",
+      "alt": [
+        "Mah-nongan",
+        "Maknongan ad Dalom"
+      ],
+      "transliterations": {
+        "ifugao": "Maknongan",
+        "etymology": "From the Ifugao root nong/monong, 'to give offering'; glossed by Barton (1946) as 'he to whom sacrifice is due'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ifugao",
+    "primaryTradition": "Ifugao",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Regarded as the chief god and 'creator of all things' who, with his wife Bugan, shaped the world and its inhabitants at the beginning of time (Jocano, Outline of Philippine Mythology, 1969).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, Centro Escolar University Research and Development Center, 1969"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ]
+      },
+      {
+        "sphereId": "sacrifice",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "baki",
+          "script": "Latin",
+          "rom": "baki — Ifugao ritual invocation/sacrifice"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, American Anthropological Association Memoir 65, 1946"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_world",
+        "name": "to create the world and its inhabitants",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "ifugao_bugan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ],
+        "notes": "In the creation account recorded by Jocano, Maknongan creates the world together with his wife Bugan."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Maknongan (Mah-nongan) is commonly described as the chief god of the Ifugao, honored as the creator of all things and the principal recipient of sacrifice, though Barton noted the term is also applied honorifically to deified ancestors.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, American Anthropological Association Memoir 65, 1946"
+          },
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, Centro Escolar University Research and Development Center, 1969"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Maknongan, or Mah-nongan, stands at the head of the vast Ifugao pantheon as the god most often glossed 'creator of all things' and the ultimate recipient of animal sacrifice. R. F. Barton's ethnography cautioned that the name derives from the vocabulary of offering and is also applied to honored dead, so that Maknongan functions less as a remote high god than as the focal figure of Ifugao sacrificial religion. In the creation tradition recorded by F. Landa Jocano, Maknongan and his wife Bugan together fashioned the world and its inhabitants."
+  },
+  {
+    "id": "ifugao_liddum",
+    "name": {
+      "primary": "Liddum",
+      "alt": [
+        "Lidum"
+      ],
+      "transliterations": {
+        "ifugao": "Liddum",
+        "etymology": "Ifugao proper name of a Skyworld god; recorded by Barton (1946) as the chief deity of the Kabunyan (Skyworld) region."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ifugao",
+    "primaryTradition": "Ifugao",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Dwells in the Kabunyan, the Skyworld, from primordial times as the chief mediator between humankind and the other gods (Barton, The Religion of the Ifugaos, 1946).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, American Anthropological Association Memoir 65, 1946"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mediation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kabunyan",
+          "script": "Latin",
+          "rom": "kabunyan — the Skyworld, his dwelling region"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, 1946"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "intercede_with_gods",
+        "name": "to carry human petitions to the other gods and communicate the gods' will to people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Liddum is the Skyworld deity regarded as the chief mediator and messenger between the Ifugao people and the rest of the pantheon, invoked in rites of intercession.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, American Anthropological Association Memoir 65, 1946"
+          },
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Liddum inhabits the Kabunyan, the uppermost sky region of the six-layered Ifugao cosmos, and is the god who communicates directly with humankind. In rites for sickness or misfortune he is among the major gods invoked, with offerings of animals and rice wine, to intercede with Mah-nongan or whichever deity is thought to have caused the affliction."
+  },
+  {
+    "id": "ifugao_ampual",
+    "name": {
+      "primary": "Ampual",
+      "alt": [],
+      "transliterations": {
+        "ifugao": "Ampual",
+        "etymology": "Ifugao proper name of a god of the Fourth Skyworld (Jocano 1969)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ifugao",
+    "primaryTradition": "Ifugao",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "A god of the Fourth Skyworld who bestowed animals and plants upon humankind (Jocano, Outline of Philippine Mythology, 1969).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "animals-and-plants",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ]
+      },
+      {
+        "sphereId": "rice-agriculture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "page",
+          "script": "Latin",
+          "rom": "page — Ifugao term for rice/palay"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, American Anthropological Association Memoir 65, 1946"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_livestock_and_crops",
+        "name": "to bestow animals and food plants upon humankind and oversee the transplanting of rice",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ampual is a major Skyworld god of the Ifugao who gave animals and plants to the people and is invoked among the great intercessor gods in healing and agricultural rites.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, American Anthropological Association Memoir 65, 1946"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ampual is a god of the Fourth Skyworld credited with giving animals and plants to humankind. He belongs to the group of major deities — alongside Liddum, Hinumbian, Wigan and others — invoked with animal offerings and rice wine to intercede with the chief god when sickness or crop failure strikes."
+  },
+  {
+    "id": "ifugao_wigan",
+    "name": {
+      "primary": "Wigan",
+      "alt": [],
+      "transliterations": {
+        "ifugao": "Wigan",
+        "etymology": "Ifugao personal name borne both by a Skyworld god of harvest and by the male flood-survivor ancestor of the Ifugao (Beyer 1913)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ifugao",
+    "primaryTradition": "Ifugao",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "In the Ifugao deluge myth Wigan survives the great flood on one of the two mountains and, with Bugan, repeoples the earth and founds the village of Kiyyangan (Beyer, 'Origin Myths among the Mountain Peoples of the Philippines', 1913).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Otley Beyer, 'Origin Myths among the Mountain Peoples of the Philippines', Philippine Journal of Science, vol. 8, 1913"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "harvest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "page",
+          "script": "Latin",
+          "rom": "page — rice, the crop of the harvest he grants"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_good_harvest",
+        "name": "to grant abundant rice harvests",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "ifugao_bugan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Otley Beyer, 'Origin Myths among the Mountain Peoples of the Philippines', Philippine Journal of Science, vol. 8, 1913"
+          }
+        ],
+        "notes": "In the flood myth the sibling survivors Wigan and Bugan marry, with divine sanction, to repeople the earth."
+      },
+      {
+        "kind": "sibling",
+        "personId": "ifugao_bugan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Damiana L. Eugenio, Philippine Folk Literature: The Myths, University of the Philippines Press, 1993"
+          }
+        ],
+        "notes": "Wigan and Bugan are brother and sister, the sole survivors of the great flood."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Wigan is the Ifugao god of good harvest and, in the deluge myth, the male survivor of the great flood who with his sister-wife Bugan became the ancestor of the Ifugao people at Kiyyangan.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "H. Otley Beyer, 'Origin Myths among the Mountain Peoples of the Philippines', Philippine Journal of Science, vol. 8, 1913"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Mythology of the Ifugaos, Memoirs of the American Folklore Society 46, 1955"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Wigan is among the most frequently invoked names in Ifugao myth and ritual. As a god he grants good harvests; in the deluge myth recorded by Beyer, he and his sister Bugan alone survive the great flood on the mountains Amuyao and Kalawitan, marry with the gods' blessing, and become the first ancestors of the Ifugao, settling the village of Kiyyangan near present-day Kiangan."
+  },
+  {
+    "id": "ifugao_bugan",
+    "name": {
+      "primary": "Bugan",
+      "alt": [],
+      "transliterations": {
+        "ifugao": "Bugan",
+        "etymology": "The most common female name in Ifugao mythology, borne by goddesses and heroines alike (Barton, The Mythology of the Ifugaos, 1955)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ifugao",
+    "primaryTradition": "Ifugao",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Survives the great flood with her brother Wigan and becomes the ancestress of the Ifugao people (Beyer, 'Origin Myths among the Mountain Peoples of the Philippines', 1913).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Otley Beyer, 'Origin Myths among the Mountain Peoples of the Philippines', Philippine Journal of Science, vol. 8, 1913"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-and-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Damiana L. Eugenio, Philippine Folk Literature: The Myths, University of the Philippines Press, 1993"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "teach_arts_of_air_and_water",
+        "name": "to teach humankind the use of the forces of air and water",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology, 1969"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "ifugao_wigan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Otley Beyer, 'Origin Myths among the Mountain Peoples of the Philippines', Philippine Journal of Science, vol. 8, 1913"
+          }
+        ],
+        "notes": "After the flood Bugan marries her brother Wigan with the gods' sanction to repeople the earth."
+      },
+      {
+        "kind": "sibling",
+        "personId": "ifugao_wigan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Damiana L. Eugenio, Philippine Folk Literature: The Myths, University of the Philippines Press, 1993"
+          }
+        ],
+        "notes": "Bugan and Wigan are the sibling pair who alone survive the deluge."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bugan is the principal goddess-name of Ifugao mythology: the flood-surviving ancestress of the Ifugao, wife of Wigan, and in other tales the wife of the chief god and a goddess who descended to teach humankind.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Mythology of the Ifugaos, Memoirs of the American Folklore Society 46, 1955"
+          },
+          {
+            "kind": "secondary",
+            "reference": "H. Otley Beyer, 'Origin Myths among the Mountain Peoples of the Philippines', Philippine Journal of Science, vol. 8, 1913"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bugan is the great female name of the Ifugao mythic corpus. In the deluge myth she and her brother Wigan alone survive the flood and become the ancestors of the Ifugao; in other traditions Bugan appears as the wife of the creator Maknongan, and in the tale of Bugan and Kinggauan as a goddess who married a mortal man. She is also said to have descended to earth to teach people the use of the forces of air and water."
+  },
+  {
+    "id": "ifugao_namtogan",
+    "name": {
+      "primary": "Namtogan",
+      "alt": [],
+      "transliterations": {
+        "ifugao": "Namtogan",
+        "etymology": "Ifugao proper name of the paraplegic deity whose story explains the origin of the bulul granary figures (Dulawan 2001)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ifugao",
+    "primaryTradition": "Ifugao",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Descends among the Ifugao, dwells at Ahin in Tinoc where his presence brings abundant harvests, and after departing in anger teaches the people to carve the bulul figures in his image (Dulawan, Ifugao Culture and History, 2001).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lourdes S. Dulawan, Ifugao Culture and History, National Commission for Culture and the Arts, 2001"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rice-granary-abundance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bulul",
+          "script": "Latin",
+          "rom": "bulul — carved granary guardian figure made in his image"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, American Anthropological Association Memoir 65, 1946"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bless_and_curse_harvests",
+        "name": "to make harvests and livestock multiply where he is honored and to withdraw prosperity where he is neglected",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lourdes S. Dulawan, Ifugao Culture and History, National Commission for Culture and the Arts, 2001"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ifugao_bulul_figure",
+        "name": "Bulul",
+        "kind": "cult image",
+        "role": "Carved wooden granary guardian figure made in Namtogan's seated likeness and consecrated by mumbaki priests",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, American Anthropological Association Memoir 65, 1946"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Namtogan is the paraplegic Ifugao deity of agricultural abundance whose sojourn among humans and subsequent departure explain the origin of the bulul rice-granary figures and their rites.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lourdes S. Dulawan, Ifugao Culture and History, National Commission for Culture and the Arts, 2001"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. F. Barton, The Religion of the Ifugaos, American Anthropological Association Memoir 65, 1946"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Namtogan is remembered as a paraplegic god who came to live among the people of Ahin in Tinoc; while the community fed and cared for him their rice harvests grew bountiful and their livestock doubled. When he was neglected he departed and prosperity failed, and on being persuaded to relent he taught the Ifugao to carve his seated image in wood — the bulul — and to perform the yearly rituals for these granary guardians. He is notable as an indigenous Philippine deity depicted with a physical disability, conventionally shown seated with arms folded over bent knees."
+  }
+]
+```

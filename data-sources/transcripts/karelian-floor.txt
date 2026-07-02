@@ -1,0 +1,586 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Karelian
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four figures attested in the Viena/Karelian rune, charm and tale corpus and absent from both the Karelian and Finnish traditions: Antero Vipunen (the dead giant sage of SKVR I), Syöjätär (ogress and mythic mother of the snake, especially prominent in Karelian charms and wonder tales), Hiisi (demonized master of the sacred grove, maker of the demon elk), and Iku-Turso (the sea monster of the Sampo-voyage runes, bound by Väinämöinen and wired to karelian_vainamoinen accordingly). I deliberately skipped Kalevala-core figures already held by the Finnish tradition (Louhi, Tapio, Ahti, Ilmatar, Tuoni family, Pellervoinen, etc.) and vague spirit-classes such as haltiat. Citations rest on Harva (1948), Haavio (1952, 1967), Siikala (2012), Kuusi/Bosley/Branch (1977), Oinas (1985) and the SKVR corpus.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "karelian_antero_vipunen",
+    "name": {
+      "primary": "Antero Vipunen the Dead Giant Sage",
+      "alt": [
+        "Antero Vipunen",
+        "Vipunen",
+        "Antervo Vipunen"
+      ],
+      "transliterations": {
+        "fi": "Antero Vipunen",
+        "etymology": "Vipunen is connected by Haavio to vipu 'lever, trap', while Antero derives from St. Andreas; the name combination is fixed in the Viena Karelian rune tradition (Haavio, Väinämöinen: Eternal Sage, 1952)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Karelian",
+    "primaryTradition": "Karelian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Antero Vipunen belongs to the primeval age of the singers, lying long dead in the earth with trees growing from his body when Väinämöinen seeks him out for the missing charm-words (Kuusi, Bosley & Branch, Finnish Folk Poetry: Epic, 1977).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matti Kuusi, Keith Bosley & Michael Branch (eds.), Finnish Folk Poetry: Epic. An Anthology in Finnish and English, Finnish Literature Society, 1977"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hidden-knowledge",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sanat",
+          "script": "Latin",
+          "rom": "words; the origin-charms and spells sought from Vipunen"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martti Haavio, Väinämöinen: Eternal Sage (Folklore Fellows' Communications 144), 1952"
+          }
+        ]
+      },
+      {
+        "sphereId": "underworld-wisdom",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tietäjä",
+          "script": "Latin",
+          "rom": "seer, one who knows; the dead sage as ultimate source of lore"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anna-Leena Siikala, Itämerensuomalaisten mytologia, Finnish Literature Society, 2012"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hoard_primeval_charms",
+        "name": "to hold in memory the primeval origin-charms and songs lost to living singers",
+        "term": {
+          "value": "synnyt",
+          "script": "Latin",
+          "rom": "origin-charms"
+        },
+        "inheritability": "none",
+        "notes": "In the Viena Karelian rune Väinämöinen enters Vipunen's belly and forces the giant to disgorge the words he lacks.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martti Haavio, Väinämöinen: Eternal Sage (FFC 144), 1952"
+          }
+        ]
+      },
+      {
+        "id": "sing_while_dead",
+        "name": "to sing and speak from within the grave, undecayed in knowledge though long dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Haavio interprets Vipunen as a dead proto-shaman whose grave is visited for knowledge.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Juha Pentikäinen, Kalevala Mythology, Indiana University Press, 1989"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "virsikäs Vipunen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matti Kuusi, Keith Bosley & Michael Branch (eds.), Finnish Folk Poetry: Epic, 1977"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Antero Vipunen is the long-dead giant sage of the Viena Karelian epic runes, from whose grave-bound body Väinämöinen wrests the missing origin-words, interpreted by scholars as the memory of a dead proto-shaman consulted for esoteric knowledge.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Martti Haavio, Väinämöinen: Eternal Sage (Folklore Fellows' Communications 144), Suomalainen Tiedeakatemia, 1952"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Matti Kuusi, Keith Bosley & Michael Branch (eds.), Finnish Folk Poetry: Epic. An Anthology in Finnish and English, Finnish Literature Society, 1977"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Suomen Kansan Vanhat Runot I: Vienan läänin runot, Finnish Literature Society, 1908"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Antero Vipunen is a primeval giant of the Viena Karelian rune tradition, recorded above all in the runes collected in White Sea Karelia and printed in Suomen Kansan Vanhat Runot I. He lies long dead beneath the earth, an aspen growing from his shoulders and a birch from his temples, yet retains the full hoard of origin-charms. When Väinämöinen lacks three words to finish his boat, he journeys to Vipunen, is swallowed, and torments the giant from within until the charms are sung out. Martti Haavio read the figure as a reminiscence of the dead shaman whose grave is visited for knowledge, and the episode was reworked by Lönnrot as Kalevala runo 17."
+  },
+  {
+    "id": "karelian_syojatar",
+    "name": {
+      "primary": "Syöjätär the Ogress",
+      "alt": [
+        "Syöjätär",
+        "Syöjätär-akka",
+        "Syöttäjä"
+      ],
+      "transliterations": {
+        "fi": "Syöjätär",
+        "etymology": "From Finnish-Karelian syöjä 'eater, devourer' with the feminine suffix -tär: 'the devouress' (Haavio, Suomalainen mytologia, 1967)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Karelian",
+    "primaryTradition": "Karelian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Syöjätär appears in Karelian origin-charms as the primordial evil woman whose spittle on the waters becomes the first serpent (Siikala, Itämerensuomalaisten mytologia, 2012).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anna-Leena Siikala, Itämerensuomalaisten mytologia, Finnish Literature Society, 2012"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "serpents-and-vermin",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "käärmeen synty",
+          "script": "Latin",
+          "rom": "the origin of the snake, a charm genre naming Syöjätär as the snake's mother"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martti Haavio, Suomalainen mytologia, WSOY, 1967"
+          }
+        ]
+      },
+      {
+        "sphereId": "malevolent-enchantment",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "pahansuopa",
+          "script": "Latin",
+          "rom": "ill-willing; her role as the wicked transformer of heroines in Karelian wonder tales"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Felix J. Oinas, Studies in Finnic Folklore, Finnish Literature Society / Indiana University, 1985"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "spawn_harmful_creatures",
+        "name": "to bring forth snakes, lizards and other harmful creatures from her spittle and body",
+        "term": {
+          "value": "sylki",
+          "script": "Latin",
+          "rom": "spittle"
+        },
+        "inheritability": "none",
+        "notes": "The snake-origin charm derives the serpent from Syöjätär's spittle floating on the waters.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anna-Leena Siikala, Itämerensuomalaisten mytologia, 2012"
+          }
+        ]
+      },
+      {
+        "id": "transform_and_usurp",
+        "name": "to transform brides and heroines into animals and substitute her own daughter in their place",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "A stock role of Syöjätär in Karelian wonder tales of the substituted-bride type.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Felix J. Oinas, Studies in Finnic Folklore, 1985"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Syöjätär-akka",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martti Haavio, Suomalainen mytologia, WSOY, 1967"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Syöjätär is the ogress of Karelian charms and wonder tales, the mythic mother of the snake and the malicious devouress who transforms and supplants heroines.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Martti Haavio, Suomalainen mytologia, WSOY, 1967"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anna-Leena Siikala, Itämerensuomalaisten mytologia, Finnish Literature Society, 2012"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Syöjätär, 'the Devouress', is a demonic female being especially prominent in the Karelian charm and tale tradition. In the widely recorded origin-charm of the snake her spittle, drifting on the waters, is warmed by the sun and quickened into the first serpent, making her the mythic mother of snakes and vermin. In Karelian wonder tales she plays the recurrent ogress role: she bewitches maidens into ducks or reindeer, substitutes her own daughter as the hero's bride, and devours or attempts to devour her victims. She is thus one of the few named, fully individuated evil beings of the tradition."
+  },
+  {
+    "id": "karelian_hiisi",
+    "name": {
+      "primary": "Hiisi, Master of the Sacred Grove",
+      "alt": [
+        "Hiisi",
+        "Hiitto",
+        "Hiien ukko"
+      ],
+      "transliterations": {
+        "fi": "hiisi",
+        "etymology": "Originally a common noun for a sacred grove or cult site, later personified as its demonized master-spirit (Oinas, Studies in Finnic Folklore, 1985)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Karelian",
+    "primaryTradition": "Karelian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Hiisi develops from the guardian of the pre-Christian sacred grove into the personified demon-lord of the Karelian runes, who fashions the demon elk that Lemminkäinen must ski down (Harva, Suomalaisten muinaisusko, 1948).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Uno Harva, Suomalaisten muinaisusko, WSOY, 1948"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-groves",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "hiisi",
+          "script": "Latin",
+          "rom": "sacred grove, cult site; later 'demon's place'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Felix J. Oinas, Studies in Finnic Folklore, Finnish Literature Society / Indiana University, 1985"
+          }
+        ]
+      },
+      {
+        "sphereId": "wild-menace",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Hiiden hirvi",
+          "script": "Latin",
+          "rom": "the Elk of Hiisi, the demon elk of the runes"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anna-Leena Siikala, Itämerensuomalaisten mytologia, Finnish Literature Society, 2012"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion_demon_beasts",
+        "name": "to fashion uncanny animals such as the demon elk and the fiery-maned horse of Hiisi",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Karelian runes the elk of Hiisi is built from rotten wood, sticks and marsh materials.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matti Kuusi, Keith Bosley & Michael Branch (eds.), Finnish Folk Poetry: Epic, 1977"
+          }
+        ]
+      },
+      {
+        "id": "send_affliction",
+        "name": "to send sickness, injury and misfortune, which healing charms banish back to Hiisi's abode",
+        "term": {
+          "value": "Hiitolaan",
+          "script": "Latin",
+          "rom": "'to Hiitola', the banishing formula of the charms"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Uno Harva, Suomalaisten muinaisusko, WSOY, 1948"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "karelian_hiiden_hirvi",
+        "name": "Elk of Hiisi",
+        "kind": "emblem",
+        "role": "The uncanny elk fashioned by Hiisi, the quarry of the famous ski-chase rune",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matti Kuusi, Keith Bosley & Michael Branch (eds.), Finnish Folk Poetry: Epic, 1977"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Hiien ukko",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anna-Leena Siikala, Itämerensuomalaisten mytologia, 2012"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Hiisi is the personified master of the old sacred grove, demonized under Christian influence into the malevolent lord of Hiitola who fashions demon beasts and sends afflictions in the Karelian runes and charms.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Uno Harva, Suomalaisten muinaisusko, WSOY, 1948"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Felix J. Oinas, Studies in Finnic Folklore, Finnish Literature Society / Indiana University, 1985"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hiisi is one of the oldest attested figures of Finnic religion: the word first denoted the sacred grove or cult site itself, and place-names in hiisi- mark old worship sites across Karelia. In the runic poetry and charms the word is personified as the grove's master, increasingly demonized after Christianization into a devil-like lord dwelling in Hiitola. In the Karelian epic runes he fashions the demon elk that Lemminkäinen must catch on skis, and healing charms banish diseases and iron-wounds back to Hiisi's realm."
+  },
+  {
+    "id": "karelian_iku_turso",
+    "name": {
+      "primary": "Iku-Turso the Sea Monster",
+      "alt": [
+        "Iku-Turso",
+        "Turso",
+        "Tursas",
+        "Iku-Tursas"
+      ],
+      "transliterations": {
+        "fi": "Iku-Turso",
+        "etymology": "Iku- 'eternal, age-old' prefixed to Turso/Tursas, a name compared to Germanic thurs 'giant' (Siikala, Itämerensuomalaisten mytologia, 2012)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Karelian",
+    "primaryTradition": "Karelian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Iku-Turso rises from the primeval sea in the runes, raising fire from the waves and menacing the Sampo-raiders' voyage (Kuusi, Bosley & Branch, Finnish Folk Poetry: Epic, 1977).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matti Kuusi, Keith Bosley & Michael Branch (eds.), Finnish Folk Poetry: Epic, 1977"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea-terror",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Tursas",
+          "script": "Latin",
+          "rom": "sea giant; in an old rune Tursas rises from the sea and burns the hay mown by the maidens, from whose ashes the great oak grows"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anna-Leena Siikala, Itämerensuomalaisten mytologia, Finnish Literature Society, 2012"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rise_from_the_deep",
+        "name": "to rise from the depths of the sea to threaten seafarers and seize their vessel",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In Karelian variants of the Sampo voyage the monster lifts its head beside the boat until Väinämöinen banishes it back beneath the waves.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matti Kuusi, Keith Bosley & Michael Branch (eds.), Finnish Folk Poetry: Epic, 1977"
+          }
+        ]
+      },
+      {
+        "id": "raise_fire_from_water",
+        "name": "to raise fire out of the sea and burn what stands upon the shore",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The great-oak rune has Tursas burn the mown hay, the ash-bed from which the world-oak sprouts.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Uno Harva, Suomalaisten muinaisusko, WSOY, 1948"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Tuhat-Turso",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martti Haavio, Suomalainen mytologia, WSOY, 1967"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "karelian_vainamoinen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matti Kuusi, Keith Bosley & Michael Branch (eds.), Finnish Folk Poetry: Epic, 1977"
+          }
+        ],
+        "notes": "In the Karelian Sampo-voyage runes Väinämöinen seizes Iku-Turso by the ears and binds him with an oath never again to rise against seafarers, subduing the monster to his word."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Iku-Turso (Tursas) is the age-old sea monster of the Karelian runes who raises fire from the waves and menaces the Sampo voyage until Väinämöinen binds him beneath the sea.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Martti Haavio, Suomalainen mytologia, WSOY, 1967"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anna-Leena Siikala, Itämerensuomalaisten mytologia, Finnish Literature Society, 2012"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Iku-Turso, 'the eternal Turso', is a monstrous being of the sea attested in the old runic poetry and already listed among the Tavastian 'gods' in Mikael Agricola's 1551 catalogue as Turisas. In the great-oak rune Tursas rises from the sea to burn the hay mown by the island maidens, and from the ashes the cosmic oak grows; in Karelian variants of the Sampo expedition the monster lifts its head beside Väinämöinen's boat and is grasped by the ears and sworn back into the depths. His name has long been compared with the Germanic word for giant, thurs."
+  }
+]
+```

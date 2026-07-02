@@ -1,0 +1,662 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Mossi
+Era (registered, exact): "Mossi traditional religion; pre-Islamic and continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the five individuated ancestral figures of the Mossi dynastic founding legend — Yennenga, Rialé, Ouédraogo, Zoungrana, and Oubri — which the core ethnographies (Skinner 1964; Izard 1970 and 2003; Tiendrébéogo/Pageard 1964; Delobsom 1932; Guirma 1971) document as named, venerated royal ancestors whose cult (kiimse observance and the naam ideology) is integral to Mossi traditional religion alongside the existing deities Wende and Tenga. All are typed mortal/deceased and wired into a single genealogical chain; symmetric spouse links occur only between the two new figures Yennenga and Rialé. The kinkirsi bush spirits and generic kiimse ancestors were deliberately excluded as unnamed spirit classes, and Yennenga's father Nedega was left out as belonging to the Dagomba/Mamprusi rather than the Mossi tradition. No further individuated Mossi divinities are attested in the scholarship consulted.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "mossi_yennenga",
+    "name": {
+      "primary": "Yennenga, Warrior Princess and Mother of the Mossi",
+      "alt": [
+        "Yennenga",
+        "Yennega",
+        "Yenenga",
+        "Princesse Yennenga"
+      ],
+      "transliterations": {
+        "moore": "Yennenga",
+        "etymology": "Name of a Dagomba/Mamprusi princess of Gambaga remembered as the ancestress of the Mossi; the etymology is not securely glossed in the scholarship (Skinner, The Mossi of the Upper Volta, 1964)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Mossi",
+    "primaryTradition": "Mossi",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mossi traditional religion; pre-Islamic and continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Mossi traditional religion; pre-Islamic and continuing",
+        "eraOrdering": 0,
+        "startEvent": "Mossi dynastic tradition places Yennenga as the daughter of Nedega, ruler of the Dagomba/Mamprusi at Gambaga, who fled her father's court on horseback and, with the hunter Rialé, became mother of Ouédraogo, progenitor of the Mossi kingdoms.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ]
+      },
+      {
+        "sphereId": "horsemanship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "wefo",
+          "script": "Latin",
+          "rom": "Mooré, 'horse'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ]
+      },
+      {
+        "sphereId": "dynastic-motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Yamba Tiendrébéogo (Larhallé Naba), Histoire et coutumes royales des Mossi de Ouagadougou, rédaction de Robert Pageard, Ouagadougou, 1964"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mounted_combat",
+        "name": "to fight and lead warriors as a mounted cavalry commander",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Tradition remembers Yennenga as a peerless horsewoman who led her father's cavalry from her youth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mossi_yennenga_stallion",
+        "name": "Stallion of Yennenga",
+        "kind": "mount",
+        "role": "The runaway stallion that carried Yennenga from Gambaga to the hunter Rialé; commemorated in her son's name Wedraogo ('stallion') and in the modern Étalon de Yennenga award.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frederic Guirma, Tales of Mogho: African Stories from Upper Volta, Macmillan, 1971"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "mossi_riale",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ],
+        "notes": "After fleeing Gambaga on horseback, Yennenga was received by the elephant hunter Rialé, whom tradition makes her husband and the father of her son Ouédraogo."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "mossi_ouedraogo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ],
+        "notes": "Yennenga is the mother of Ouédraogo, the eponymous progenitor of the Mossi ruling lineages."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Yennenga is the legendary Dagomba/Mamprusi warrior princess of Gambaga who fled her father Nedega's court and, with the hunter Rialé, bore Ouédraogo, ancestor of the Mossi royal dynasties; she is revered as the mother of the Mossi people.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Moogo: L'émergence d'un espace étatique ouest-africain au XVIe siècle, Karthala, 2003"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Yamba Tiendrébéogo (Larhallé Naba), Histoire et coutumes royales des Mossi de Ouagadougou, rédaction de Robert Pageard, Ouagadougou, 1964"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Yennenga is the founding ancestress of the Mossi people of Burkina Faso. Dynastic oral tradition, recorded by court historians such as the Larhallé Naba Yamba Tiendrébéogo and analyzed by Elliott Skinner and Michel Izard, remembers her as the daughter of Nedega (Na Gbewa in some versions), ruler of the Dagomba or Mamprusi at Gambaga in present-day northern Ghana. A superb horsewoman who led her father's cavalry, she was forbidden to marry; she fled northward when her stallion bolted, was sheltered by the solitary elephant hunter Rialé, and bore him a son named Ouédraogo ('stallion') in memory of the horse. Through Ouédraogo she is the apical ancestress of every Mossi royal lineage, and her memory remains central to Burkinabè national identity: the golden stallion trophy of the FESPACO film festival, the Étalon de Yennenga, bears her name."
+  },
+  {
+    "id": "mossi_riale",
+    "name": {
+      "primary": "Rialé the Hunter",
+      "alt": [
+        "Rialé",
+        "Riale",
+        "Ryallé"
+      ],
+      "transliterations": {
+        "moore": "Rialé",
+        "etymology": "Name of the solitary elephant hunter of the founding legend, variously described as of Mandé (Boussansi/Bisa) origin (Skinner, The Mossi of the Upper Volta, 1964)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Mossi",
+    "primaryTradition": "Mossi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mossi traditional religion; pre-Islamic and continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Mossi traditional religion; pre-Islamic and continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Mossi founding legend Rialé is the solitary elephant hunter living in the bush north of Gambaga who received the fugitive princess Yennenga and fathered Ouédraogo, progenitor of the Mossi ruling houses.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hunting",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "elephant_hunting",
+        "name": "to track and hunt elephants alone in the bush",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Tradition characterizes Rialé as a solitary elephant hunter of exceptional skill.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frederic Guirma, Tales of Mogho: African Stories from Upper Volta, Macmillan, 1971"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "mossi_yennenga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ],
+        "notes": "Rialé sheltered and married the fugitive princess Yennenga after her stallion carried her to his camp."
+      },
+      {
+        "kind": "father-of",
+        "personId": "mossi_ouedraogo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ],
+        "notes": "Rialé is the father of Ouédraogo, first ancestor of the Mossi chiefs."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Rialé is the solitary elephant hunter of the Mossi founding legend, husband of the princess Yennenga and father of Ouédraogo, ancestor of the Mossi royal dynasties.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Yamba Tiendrébéogo (Larhallé Naba), Histoire et coutumes royales des Mossi de Ouagadougou, rédaction de Robert Pageard, Ouagadougou, 1964"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Rialé is the paternal ancestor of the Mossi royal lineages in the dynastic founding legend. He is portrayed as a solitary elephant hunter living in the bush north of Gambaga; some versions of the tradition recorded by Skinner and Izard make him a man of Mandé (Bisa/Boussansi) origin, so that the Mossi ruling houses unite a southern royal line through Yennenga with an autochthonous or Mandé hunter's line through Rialé. His union with the fugitive princess Yennenga produced Ouédraogo, whose descendants founded the kingdoms of Tenkodogo, Ouagadougou, Yatenga and the other Mossi states."
+  },
+  {
+    "id": "mossi_ouedraogo",
+    "name": {
+      "primary": "Ouédraogo, Progenitor of the Mossi Kingdoms",
+      "alt": [
+        "Ouédraogo",
+        "Wedraogo",
+        "Naaba Wedraogo",
+        "Ouidiraogo"
+      ],
+      "transliterations": {
+        "moore": "Wẽdraogo",
+        "etymology": "Mooré wed-raogo, 'stallion' (male horse), given in memory of the stallion that carried his mother Yennenga to Rialé (Skinner, The Mossi of the Upper Volta, 1964)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Mossi",
+    "primaryTradition": "Mossi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "mossi_yennenga",
+      "mossi_riale"
+    ],
+    "parentRoles": [
+      "mother",
+      "father"
+    ],
+    "temporal": {
+      "era": "Mossi traditional religion; pre-Islamic and continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Mossi traditional religion; pre-Islamic and continuing",
+        "eraOrdering": 0,
+        "startEvent": "Dynastic tradition makes Ouédraogo the son of Yennenga and Rialé, the first Naaba, who established himself at Tenkodogo and whose sons and grandsons founded the Mossi kingdoms.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "naam",
+          "script": "Latin",
+          "rom": "Mooré, the divinely sanctioned power to rule held by chiefs"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ]
+      },
+      {
+        "sphereId": "conquest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Moogo: L'émergence d'un espace étatique ouest-africain au XVIe siècle, Karthala, 2003"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "confer_chiefship",
+        "name": "to found ruling lineages and transmit chiefly authority to his descendants",
+        "term": {
+          "value": "naam",
+          "script": "Latin",
+          "rom": "chiefly power"
+        },
+        "inheritability": "lineal",
+        "notes": "All Mossi nakombse (members of royal lineages) trace their right to rule to descent from Ouédraogo.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "mossi_zoungrana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Yamba Tiendrébéogo (Larhallé Naba), Histoire et coutumes royales des Mossi de Ouagadougou, rédaction de Robert Pageard, Ouagadougou, 1964"
+          }
+        ],
+        "notes": "Zoungrana, who ruled at Tenkodogo, is remembered as Ouédraogo's son and successor."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ouédraogo, son of Yennenga and Rialé, is the semi-legendary first Naaba and progenitor of all Mossi royal dynasties, who established himself at Tenkodogo.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ouédraogo (Naaba Wedraogo) is the apical ancestor of the Mossi ruling class. His name, meaning 'stallion' in Mooré, commemorates the horse that carried his mother Yennenga from Gambaga to the hunter Rialé. Raised at his grandfather Nedega's court and given horsemen with whom he rode north, he established himself in the region of Tenkodogo, married among the local Bisa and Gurunsi peoples, and fathered the ancestors of the Mossi ruling houses. Every legitimate Mossi chief validates his naam — the ancestrally sanctioned power to rule — by tracing descent from Ouédraogo, and he is honored in royal ancestor observances of the Ouagadougou court. The name remains the most common patronym in Burkina Faso."
+  },
+  {
+    "id": "mossi_zoungrana",
+    "name": {
+      "primary": "Naaba Zoungrana of Tenkodogo",
+      "alt": [
+        "Zoungrana",
+        "Zungrana",
+        "Naba Zoungrana"
+      ],
+      "transliterations": {
+        "moore": "Zũngrana",
+        "etymology": "Personal name of the second ruler in the Mossi dynastic genealogy, son of Wedraogo (Izard, Introduction à l'histoire des royaumes mossi, 1970)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Mossi",
+    "primaryTradition": "Mossi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "mossi_ouedraogo"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "Mossi traditional religion; pre-Islamic and continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Mossi traditional religion; pre-Islamic and continuing",
+        "eraOrdering": 0,
+        "startEvent": "Mossi royal genealogies place Zoungrana as the son and successor of Ouédraogo at Tenkodogo and as father of Oubri, founder of the Ouagadougou kingdom.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "naam",
+          "script": "Latin",
+          "rom": "Mooré, the divinely sanctioned power to rule held by chiefs"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "transmit_dynastic_rule",
+        "name": "to hold and pass on the chiefship of the early Mossi state at Tenkodogo",
+        "term": {
+          "value": "naam",
+          "script": "Latin",
+          "rom": "chiefly power"
+        },
+        "inheritability": "lineal",
+        "notes": "As the genealogical link between Ouédraogo and the founders of the great kingdoms, Zoungrana anchors the legitimacy of later dynasties.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Yamba Tiendrébéogo (Larhallé Naba), Histoire et coutumes royales des Mossi de Ouagadougou, rédaction de Robert Pageard, Ouagadougou, 1964"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "mossi_oubri",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ],
+        "notes": "Zoungrana's son Oubri, by a Ninisi wife in most versions, founded the kingdom of Ouagadougou."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Naaba Zoungrana is the semi-legendary son and successor of Ouédraogo at Tenkodogo in the Mossi royal genealogies, and the father of Oubri, founder of the Ouagadougou dynasty.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Naaba Zoungrana is the second figure in the canonical Mossi royal genealogy, son of Ouédraogo and grandson of Yennenga. Court tradition recorded by the Larhallé Naba Yamba Tiendrébéogo and analyzed by Michel Izard and Elliott Skinner remembers him ruling from Tenkodogo, the cradle of the Mossi states. His marriage to a woman of the autochthonous Ninisi (in most versions named Pouiriketa) produced Oubri, founder of the kingdom of Ouagadougou, so that the Ouagadougou dynasty unites the conquering horsemen's line with the people of the land. He is venerated among the royal ancestors whose goodwill legitimates the naam of reigning chiefs."
+  },
+  {
+    "id": "mossi_oubri",
+    "name": {
+      "primary": "Naaba Oubri, Founder of the Kingdom of Ouagadougou",
+      "alt": [
+        "Oubri",
+        "Wubri",
+        "Naba Oubri",
+        "Naaba Wubri"
+      ],
+      "transliterations": {
+        "moore": "Wubri",
+        "etymology": "Personal name of the founder of the Wogodogo (Ouagadougou) dynasty, grandson of Wedraogo (Izard, Introduction à l'histoire des royaumes mossi, 1970)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Mossi",
+    "primaryTradition": "Mossi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "mossi_zoungrana"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "Mossi traditional religion; pre-Islamic and continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Mossi traditional religion; pre-Islamic and continuing",
+        "eraOrdering": 0,
+        "startEvent": "Royal tradition makes Oubri, son of Zoungrana and grandson of Ouédraogo, the conqueror of the Ninisi country who founded the kingdom and dynasty of Ouagadougou, from whom every Mogho Naaba must descend.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "naam",
+          "script": "Latin",
+          "rom": "Mooré, the divinely sanctioned power to rule held by chiefs"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. A. Dim Delobsom, L'empire du Mogho-Naba: coutumes des Mossi de la Haute-Volta, Domat-Montchrestien, 1932"
+          }
+        ]
+      },
+      {
+        "sphereId": "conquest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_kingdom",
+        "name": "to conquer new territory and establish an enduring royal dynasty",
+        "term": {
+          "value": "naam",
+          "script": "Latin",
+          "rom": "chiefly power"
+        },
+        "inheritability": "lineal",
+        "notes": "Eligibility for the throne of the Mogho Naaba of Ouagadougou is traditionally restricted to descendants of Oubri.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Naaba Oubri, grandson of Ouédraogo and son of Zoungrana, is the semi-legendary conqueror of the Ninisi country and founder of the kingdom of Ouagadougou, apical ancestor of the Mogho Naaba dynasty.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Michel Izard, Introduction à l'histoire des royaumes mossi, Recherches Voltaïques 12, CNRS/CVRS, 1970"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. A. Dim Delobsom, L'empire du Mogho-Naba: coutumes des Mossi de la Haute-Volta, Domat-Montchrestien, 1932"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People, Stanford University Press, 1964"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Naaba Oubri (Wubri) is the founder of the kingdom of Ouagadougou, the paramount Mossi state, and of the dynasty of the Mogho Naaba that continues to the present day. Son of Naaba Zoungrana of Tenkodogo and, in most versions, of a woman of the autochthonous Ninisi, he led the Mossi horsemen into the Kombemtenga region, subdued the Ninisi, and gave the country the name from which Ouagadougou (Wogodogo) derives. Court custom recorded by Dim Delobsom and later ethnographers requires that every Mogho Naaba be a descendant of Oubri, and he stands at the head of the royal ancestors honored in the annual ceremonies of the Ouagadougou court. His figure marks the point where legendary genealogy passes into the historical king-lists of the Mossi states."
+  }
+]
+```

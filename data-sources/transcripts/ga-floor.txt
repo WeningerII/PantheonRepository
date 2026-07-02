@@ -1,0 +1,581 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ga
+Era (registered, exact): "mythic-age"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four individuated, well-attested Ga divinities missing from the corpus: the war and lagoon god Sakumo, the wealth goddess Ashiakle (daughter of the existing sea god Nai, linked via parentIds), the Korle lagoon goddess Naa Korle, and the smith-thunder god Gua. All are documented in M. J. Field's Religion and Medicine of the Gã People (1937), Marion Kilson's kpele studies (1971, 2013), John Parker's Making the Town (2000), and Lynch's African Mythology A to Z (2004). Further Ga religious beings (dzemawodzi, town gods such as Lakpa of La) are largely covered by the existing collective ga_kpele entry or are localized aspects rather than distinct individuated figures, so they were not duplicated.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ga_sakumo",
+    "name": {
+      "primary": "Sakumo",
+      "alt": [
+        "Sakumɔ",
+        "Sakumo Wulomo's god",
+        "Sakumono"
+      ],
+      "transliterations": {
+        "ga": "Sakumɔ",
+        "etymology": "Name of the Sakumo lagoon west of Accra, whose tutelary deity he is (Field, Religion and Medicine of the Gã People, 1937)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ga",
+    "primaryTradition": "Ga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Sakumo is venerated as the war god who led the Ga in their migrations and battles and settled in the Sakumo lagoon near Tema and at Sakumo We in central Accra (Field, Religion and Medicine of the Gã People, 1937).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ta",
+          "script": "Latin",
+          "rom": "war (Ga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      },
+      {
+        "sphereId": "lagoons",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kpaakpo",
+          "script": "Latin",
+          "rom": "lagoon (Ga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marion Kilson, Kpele Lala: Ga Religious Songs and Symbols, Harvard University Press, 1971."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_victory_in_war",
+        "name": "to grant victory in war and protect the Ga towns in battle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      },
+      {
+        "id": "judge_spiritual_wrongdoing",
+        "name": "to hear oaths and judge accusations of spiritual wrongdoing at his shrine",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Parker, Making the Town: Ga State and Society in Early Colonial Accra, Heinemann, 2000."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ga_sakumo_shrine",
+        "name": "Sakumo We shrine",
+        "kind": "shrine",
+        "role": "Principal cult house of Sakumo in central Accra, seat of the Sakumo wulomo (priest)",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Parker, Making the Town: Ga State and Society in Early Colonial Accra, Heinemann, 2000."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ga_ataa_naa_nyongmo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marion Kilson, Kpele Lala: Ga Religious Songs and Symbols, Harvard University Press, 1971."
+          }
+        ],
+        "notes": "Like all kpele gods, Sakumo exercises his powers under the supreme creator Ataa Naa Nyongmo."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sakumo is the Ga war god and tutelary deity of the Sakumo lagoon, one of the three paramount deities of Accra alongside Nai and Korle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          },
+          {
+            "kind": "secondary",
+            "reference": "John Parker, Making the Town: Ga State and Society in Early Colonial Accra, Heinemann, 2000."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sakumo is among the most important of the Ga kpele deities: the god of war and of the Sakumo lagoon, credited in tradition with leading the Ga people in their migrations and wars. His priest, the Sakumo wulomo, historically held quasi-political authority in Accra, and his shrine remains one of the town's courts of first appeal in spiritual disputes and hosts central rites of the Homowo festival cycle."
+  },
+  {
+    "id": "ga_ashiakle",
+    "name": {
+      "primary": "Ashiakle",
+      "alt": [
+        "Ashiakle of the sea",
+        "Naa Ashiakle"
+      ],
+      "transliterations": {
+        "ga": "Ashiakle",
+        "etymology": "Ga personal name of the sea-born goddess of wealth, daughter of the sea god Nai (Lynch, African Mythology A to Z, 2004)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ga",
+    "primaryTradition": "Ga",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "ga_nai"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Ashiakle was born in the ocean as the daughter of the sea god Nai and came to land by canoe, bringing wealth from the sea (Lynch, African Mythology A to Z, 2004).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z, Facts on File, 2004."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wealth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nii",
+          "script": "Latin",
+          "rom": "riches, goods (Ga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z, Facts on File, 2004."
+          }
+        ]
+      },
+      {
+        "sphereId": "sea",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nsho",
+          "script": "Latin",
+          "rom": "sea (Ga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_wealth",
+        "name": "to bestow wealth and prosperity drawn from the sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z, Facts on File, 2004."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ga_ashiakle_canoe",
+        "name": "canoe",
+        "kind": "emblem",
+        "role": "The vessel by which the sea-born goddess is said to have reached the land",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z, Facts on File, 2004."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ashiakle is the Ga goddess of wealth, daughter of the sea god Nai, born in the ocean and brought to shore by canoe.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z, Facts on File, 2004."
+          },
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ashiakle is a Ga goddess of wealth belonging to the family of sea divinities headed by her father Nai, the great sea god of Accra. Tradition holds that she was born in the ocean and travelled to land in a canoe; she is invoked for prosperity, and her cult is attached to the coastal shrine complexes of the Ga towns."
+  },
+  {
+    "id": "ga_naa_korle",
+    "name": {
+      "primary": "Naa Korle",
+      "alt": [
+        "Korle",
+        "Kɔɔle"
+      ],
+      "transliterations": {
+        "ga": "Kɔɔle",
+        "etymology": "Name of the Korle lagoon at Accra, whose tutelary goddess she is; 'Naa' is a Ga honorific for a senior woman or goddess (Field, 1937)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ga",
+    "primaryTradition": "Ga",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Naa Korle is the goddess of the Korle lagoon at Accra, one of the principal kpele divinities of the Ga capital from its foundation (Field, Religion and Medicine of the Gã People, 1937).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lagoons",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Kɔɔle",
+          "script": "Latin",
+          "rom": "the Korle lagoon"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Parker, Making the Town: Ga State and Society in Early Colonial Accra, Heinemann, 2000."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_children",
+        "name": "to grant children and fertility to women who supplicate at her lagoon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Parker, Making the Town: Ga State and Society in Early Colonial Accra, Heinemann, 2000."
+          }
+        ]
+      },
+      {
+        "id": "adjudicate_spiritual_cases",
+        "name": "to hear and judge cases of witchcraft and spiritual harm brought to her shrine",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ga_korle_we_shrine",
+        "name": "Korle We shrine",
+        "kind": "shrine",
+        "role": "Cult house of Naa Korle beside the Korle lagoon, seat of the Korle wulomo and priestesses",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Parker, Making the Town: Ga State and Society in Early Colonial Accra, Heinemann, 2000."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ga_ataa_naa_nyongmo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marion Kilson, Kpele Lala: Ga Religious Songs and Symbols, Harvard University Press, 1971."
+          }
+        ],
+        "notes": "As a kpele divinity, Naa Korle acts under the authority of the supreme creator Ataa Naa Nyongmo."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Naa Korle is the goddess of the Korle lagoon, one of the three paramount deities of Accra with Nai and Sakumo, associated with fertility and the spiritual adjudication of the town.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          },
+          {
+            "kind": "secondary",
+            "reference": "John Parker, Making the Town: Ga State and Society in Early Colonial Accra, Heinemann, 2000."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Naa Korle is the tutelary goddess of the Korle lagoon on the western edge of old Accra and one of the three paramount divinities of the Ga capital, together with the sea god Nai and the war god Sakumo. Women seek children at her waters, and her shrine, Korle We, has long functioned as a court of first appeal in cases of witchcraft and spiritual malfeasance."
+  },
+  {
+    "id": "ga_gua",
+    "name": {
+      "primary": "Gua",
+      "alt": [
+        "Gua of the blacksmiths"
+      ],
+      "transliterations": {
+        "ga": "Gua",
+        "etymology": "Ga name of the smith and thunder deity, cognate with the Fante Egua and related West African smith gods (Field, 1937)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ga",
+    "primaryTradition": "Ga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Gua is worshipped among the Ga as the god of blacksmiths, thunder and war, with an old cult centred in Accra held by the Kpakpatse We family (Field, Religion and Medicine of the Gã People, 1937).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "smithing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      },
+      {
+        "sphereId": "thunder",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nugbɔ",
+          "script": "Latin",
+          "rom": "thunder (Ga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_smiths_and_warriors",
+        "name": "to protect blacksmiths at the forge and warriors bearing iron weapons",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ga_gua_forge_iron",
+        "name": "smith's iron and forge implements",
+        "kind": "emblem",
+        "role": "Iron tools of the forge consecrated to Gua as god of blacksmiths",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ga_ataa_naa_nyongmo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marion Kilson, Kpele Lala: Ga Religious Songs and Symbols, Harvard University Press, 1971."
+          }
+        ],
+        "notes": "Gua, like the other gods of the Ga towns, wields his powers under the supreme creator Ataa Naa Nyongmo."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Gua is the Ga god of blacksmiths, thunder and war, with an ancient cult in Accra in the custody of the Kpakpatse We family.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Field, Religion and Medicine of the Gã People, Oxford University Press, 1937."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marion Kilson, Dancing with the Gods: Essays in Ga Ritual, University Press of America, 2013."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gua is one of the older gods of Accra, patron of blacksmiths and associated with thunder and war; his cult, held by the Kpakpatse We family of the Asere quarter, parallels the smith and thunder gods of neighbouring Akan and Fon traditions. Field recorded his worship in the 1930s as an established, hereditary priesthood within the Ga capital."
+  }
+]
+```

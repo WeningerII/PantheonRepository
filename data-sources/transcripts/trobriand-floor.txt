@@ -1,0 +1,877 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Trobriand
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (8 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added eight Malinowski- and Senft-attested individuated figures: Topileta, guardian of the dead on Tuma (Malinowski 1916; Seligman 1910); Bolutukwa, virgin mother of the existing culture-hero Tudava, and Dokonikan, the ogre he slew (Malinowski 1926); Toweyre'i and Na'ukuwakula of the Kudayuri flying-canoe myth, wired to the existing Mokatuboda (Malinowski 1922, ch. XII; Tambiah 1983); Inuvayla'u of the Kwaybwaga legend (Malinowski 1929); and the lovers Imdeduya and Yolina, documented in five variants by Senft (2017). Details for the Kudayuri sister rely on Argonauts ch. XII and are kept conservative since full-text verification online was blocked; remaining named Trobriand beings (tauva'u, tokway, generic baloma) are spirit classes rather than individuals and were excluded, as was Kasabwaybwayreta, whose myth Malinowski localizes at Tewara outside the Trobriands proper.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "trobriand_topileta",
+    "name": {
+      "primary": "Guardian of the Land of the Dead",
+      "alt": [
+        "Topileta"
+      ],
+      "transliterations": {
+        "kilivila": "Topileta",
+        "etymology": "The Kilivila prefix to- marks a male person (Malinowski, 'Baloma', 1916)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Trobriand",
+    "primaryTradition": "Trobriand",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Recorded in Kiriwina in 1915-16 as the headman of the villages of the dead on Tuma who receives every newly deceased spirit (Malinowski, 'Baloma; the Spirits of the Dead in the Trobriand Islands', 1916).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. 'Baloma; the Spirits of the Dead in the Trobriand Islands.' Journal of the Royal Anthropological Institute 46 (1916): 353-430."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "afterlife",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tolivalu",
+          "script": "Latin (Kilivila)",
+          "rom": "master of the village"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. 'Baloma; the Spirits of the Dead in the Trobriand Islands.' Journal of the Royal Anthropological Institute 46 (1916): 353-430."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "admit_spirits_to_tuma",
+        "name": "to admit or refuse the spirits of the dead entry into the netherworld",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His decision rests not on moral judgement but on his satisfaction with the valuables the newcomer spirit pays him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. 'Baloma; the Spirits of the Dead in the Trobriand Islands.' Journal of the Royal Anthropological Institute 46 (1916): 353-430."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "trobriand_spirit_fee_valuables",
+        "name": "Valuables paid by the newly dead",
+        "kind": "toll",
+        "role": "Fee of native valuables with which each arriving spirit, laden at burial, pays Topileta for admission to Tuma.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. 'Baloma; the Spirits of the Dead in the Trobriand Islands.' Journal of the Royal Anthropological Institute 46 (1916): 353-430."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Topileta is the spirit headman of the villages of the dead on Tuma island, a Charon-like gatekeeper who admits each baloma (spirit) to the netherworld in exchange for a payment of valuables.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. 'Baloma; the Spirits of the Dead in the Trobriand Islands.' Journal of the Royal Anthropological Institute 46 (1916): 353-430."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Seligman, C. G. The Melanesians of British New Guinea. Cambridge: Cambridge University Press, 1910."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Magic, Science and Religion and Other Essays. Glencoe, IL: The Free Press, 1948."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Topileta is the most nearly god-like being in Trobriand eschatology. When a person dies, the baloma, the main form of the spirit, travels to the island of Tuma, some ten miles north-west of the Trobriands, where Topileta presides as master of the villages of the dead. Malinowski's informants compared him to a ferryman or gatekeeper: he meets the newcomer, receives a fee from the valuables with which the corpse was adorned at burial, and shows the spirit the road to the netherworld, with separate roads for the dead of different districts. His admission of a spirit does not depend on moral considerations but simply on his satisfaction with the payment. A female counterpart is said to perform the same office for women. Topileta was already noted in C. G. Seligman's 1910 survey of the Massim and was described in detail in Malinowski's 1916 essay on the baloma."
+  },
+  {
+    "id": "trobriand_bolutukwa",
+    "name": {
+      "primary": "Mother of Tudava",
+      "alt": [
+        "Bolutukwa",
+        "Mitigis"
+      ],
+      "transliterations": {
+        "kilivila": "Bolutukwa",
+        "etymology": "Kilivila bo-/na- prefixes mark female persons; the name is associated with litukwa, the dripping water of the grotto that caused her conception (Malinowski, Myth in Primitive Psychology, 1926)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Trobriand",
+    "primaryTradition": "Trobriand",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Placed at the mythical village of Laba'i in northern Kiriwina, where she lived alone in a grotto and conceived the culture-hero Tudava without a father, pierced by water dripping from the roof of the cave (Malinowski, Myth in Primitive Psychology, 1926).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Myth in Primitive Psychology. London: Kegan Paul, Trench, Trubner, 1926."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "litukwa",
+          "script": "Latin (Kilivila)",
+          "rom": "dripping water"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Myth in Primitive Psychology. London: Kegan Paul, Trench, Trubner, 1926."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "virgin_conception",
+        "name": "to conceive a hero-child without a father",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her fatherless conception of Tudava is a standard Trobriand illustration of the doctrine that spirit children, not fathers, cause pregnancy.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Myth in Primitive Psychology. London: Kegan Paul, Trench, Trubner, 1926."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "trobriand_tudava",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Myth in Primitive Psychology. London: Kegan Paul, Trench, Trubner, 1926."
+          }
+        ],
+        "notes": "Bolutukwa bore the culture-hero Tudava in her grotto at Laba'i after being pierced by dripping water, and reared him alone after her kinsmen fled the ogre Dokonikan."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bolutukwa (also called Mitigis) is the mother of the culture-hero Tudava, a woman of Laba'i who conceived him virginally when water dripping from the stalactites of her grotto pierced her while she slept.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Myth in Primitive Psychology. London: Kegan Paul, Trench, Trubner, 1926."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Strenski, Ivan (ed.). Malinowski and the Work of Myth. Princeton: Princeton University Press, 1992."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Tudava cycle told at Laba'i on the northern shore of Kiriwina, all the inhabitants fled the man-eating ogre Dokonikan, abandoning one woman, Bolutukwa or Mitigis, who lived alone in a grotto by the beach. One night, as she slept, water dripping from the stalactites of the cave pierced her and she conceived. Her son was Tudava, the great culture-hero who later killed Dokonikan. Malinowski repeatedly used this fatherless conception as evidence of Trobriand beliefs about procreation, in which pregnancy is caused by spirit children rather than by fathers, and matrilineal descent alone determines kinship."
+  },
+  {
+    "id": "trobriand_dokonikan",
+    "name": {
+      "primary": "The Cannibal Ogre",
+      "alt": [
+        "Dokonikan",
+        "Dokinikani"
+      ],
+      "transliterations": {
+        "kilivila": "Dokonikan",
+        "etymology": "Kilivila name of the man-eating giant of the Tudava cycle; also spelled Dokinikani in later mission recordings (Baldwin)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Trobriand",
+    "primaryTradition": "Trobriand",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Appears in the age of the culture-hero Tudava as the man-eating giant whose depredations emptied the villages of northern Kiriwina, until Tudava slew him and presented his head hidden in a taro pudding to his maternal uncle (Malinowski, Myth in Primitive Psychology, 1926).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Myth in Primitive Psychology. London: Kegan Paul, Trench, Trubner, 1926."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cannibalism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Myth in Primitive Psychology. London: Kegan Paul, Trench, Trubner, 1926."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_humans",
+        "name": "to hunt down and devour human beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His man-eating drove the population of the Trobriand coast into flight, setting the scene for Tudava's heroic career.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Myth in Primitive Psychology. London: Kegan Paul, Trench, Trubner, 1926."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Dokonikan is the man-eating ogre of the Tudava cycle who depopulated the Trobriand coast and was finally slain by the culture-hero Tudava, who served the ogre's head to his maternal uncle in a dish of taro pudding.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Myth in Primitive Psychology. London: Kegan Paul, Trench, Trubner, 1926."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Strenski, Ivan (ed.). Malinowski and the Work of Myth. Princeton: Princeton University Press, 1992."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Dokonikan is the great adversary of Trobriand heroic myth: a cannibal giant who ate the inhabitants of village after village in northern Kiriwina, so that the whole population fled by canoe, leaving behind only the woman Bolutukwa, hidden in her grotto at Laba'i. Her son Tudava grew up, learned powerful magic, cultivated the first gardens, and finally killed and beheaded Dokonikan, concealing the head in a baked taro pudding which he served to his maternal uncle as a reproach for abandoning his mother. Malinowski analysed the episode as a matrilineal transformation of the ogre-slaying tale; later mission collections from the Trobriands record the same figure as Dokinikani in a whole cycle of cannibal tales."
+  },
+  {
+    "id": "trobriand_toweyrei",
+    "name": {
+      "primary": "Slayer of the Flying-Canoe Master",
+      "alt": [
+        "Toweyre'i",
+        "Toweyrei"
+      ],
+      "transliterations": {
+        "kilivila": "Toweyre'i",
+        "etymology": "Kilivila personal name with the male prefix to- (Malinowski, Argonauts of the Western Pacific, 1922)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Trobriand",
+    "primaryTradition": "Trobriand",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Figures in the Kudayuri myth of Kitava as the younger brother of Mokatuboda, whom he killed out of resentment, only to discover he had not inherited the full magic of the flying canoe (Malinowski, Argonauts of the Western Pacific, 1922, ch. XII).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "canoe-magic",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "wayugo",
+          "script": "Latin (Kilivila)",
+          "rom": "lashing-creeper spell of canoe magic"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "incomplete_canoe_magic",
+        "name": "to perform the Kudayuri canoe magic, though only in imperfect, partial form",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Having killed his brother before learning the whole system of magic, he could make canoes swift but never again make them fly; the myth explains why flying canoes are lost to men.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "trobriand_kudayuri_canoe",
+        "name": "The Kudayuri canoe",
+        "kind": "vessel",
+        "role": "The marvellous canoe of Kudayuri village on Kitava, which flew through the air under Mokatuboda's magic but, after Toweyre'i's fratricide, sailed only on the sea.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "trobriand_mokatuboda",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ],
+        "notes": "Toweyre'i, with his kinsmen, killed his elder brother Mokatuboda, the master of the flying canoe, believing he had already learned all of his magic."
+      },
+      {
+        "kind": "sibling",
+        "personId": "trobriand_naukuwakula",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ],
+        "notes": "Toweyre'i and Na'ukuwakula were siblings of the Kudayuri family of the Lukuba clan on Kitava."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Toweyre'i is the younger brother of Mokatuboda in the Kudayuri myth of Kitava, who murdered the master of the flying canoe and thereby lost the full flying magic for humankind.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Tambiah, S. J. 'On Flying Witches and Flying Canoes: The Coding of Male and Female Values.' In J. W. Leach and E. Leach (eds.), The Kula: New Perspectives on Massim Exchange. Cambridge: Cambridge University Press, 1983."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Kudayuri myth, one of the central charter myths of Kula seafaring, the headman Mokatuboda of the Lukuba clan built a canoe that flew through the air by his magic, shaming the other men of Kitava whose canoes had to sail. His younger brother Toweyre'i grew resentful and, believing he had already absorbed the whole of the magic, killed Mokatuboda with the help of their kinsmen. When Toweyre'i later built and lashed a canoe of his own, it would not fly: he had learned only part of the system of spells, and the flying canoe was lost to men for ever. The myth was recorded in full by Malinowski and has been much analysed, notably by Stanley Tambiah, as a meditation on male canoe magic and female flying witchcraft."
+  },
+  {
+    "id": "trobriand_naukuwakula",
+    "name": {
+      "primary": "Flying Sister of Kudayuri",
+      "alt": [
+        "Na'ukuwakula",
+        "Naukuwakula"
+      ],
+      "transliterations": {
+        "kilivila": "Na'ukuwakula",
+        "etymology": "Kilivila personal name with the female prefix na- (Malinowski, Argonauts of the Western Pacific, 1922)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Trobriand",
+    "primaryTradition": "Trobriand",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Named in the Kudayuri myth as one of the sisters of Mokatuboda and Toweyre'i who, being flying witches, took to the air after the fratricide; she flew westward from Kitava and settled at Simsim in the Lusancay Islands (Malinowski, Argonauts of the Western Pacific, 1922, ch. XII).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "witchcraft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "yoyova",
+          "script": "Latin (Kilivila)",
+          "rom": "flying witch"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fly_through_air",
+        "name": "to fly through the air by her own inborn witchcraft",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Unlike the men of her family, whose flight depended on canoe magic, the Kudayuri sisters flew in their own persons, as flying witches do.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "trobriand_toweyrei",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          }
+        ],
+        "notes": "Na'ukuwakula was one of the sisters of the Kudayuri brothers Mokatuboda and Toweyre'i on Kitava."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Na'ukuwakula is one of the named sisters of the Kudayuri myth, a flying witch who left Kitava after her brother Mokatuboda's murder and flew westward to Simsim in the Lusancay Islands, whence the flying-witch craft of the western islands is traced.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. Argonauts of the Western Pacific. London: Routledge & Kegan Paul, 1922, ch. XII."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Tambiah, S. J. 'On Flying Witches and Flying Canoes: The Coding of Male and Female Values.' In J. W. Leach and E. Leach (eds.), The Kula: New Perspectives on Massim Exchange. Cambridge: Cambridge University Press, 1983."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Kudayuri myth names not only the two brothers but also their sisters, who were yoyova, flying witches, able to fly in their own bodies without any canoe. After Toweyre'i killed Mokatuboda, the sisters, angered at the loss of the flying magic, took to the air and dispersed across the Kula region, turning into stones or settling in distant islands. Na'ukuwakula flew westward from Kitava through the Trobriand lagoon and settled at Simsim in the Lusancay group, and Trobriand tradition derives the flying witchcraft of the western islands from her. She thus provides the mythic charter linking the Kudayuri canoe myth with the feared mulukwausi, the flying witches of the open sea."
+  },
+  {
+    "id": "trobriand_inuvaylau",
+    "name": {
+      "primary": "The Shamed Adulterer of Kwaybwaga",
+      "alt": [
+        "Inuvayla'u",
+        "Inuvaylau"
+      ],
+      "transliterations": {
+        "kilivila": "Inuvayla'u",
+        "etymology": "Kilivila personal name of the protagonist of the Kwaybwaga legend and its song cycle (Malinowski, The Sexual Life of Savages, 1929)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Trobriand",
+    "primaryTradition": "Trobriand",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Placed by legend in the village of Kwaybwaga in northern Kiriwina, where he lived as a headman of the Lukuba clan until public shame over his adulteries drove him to mutilate himself and go into exile (Malinowski, The Sexual Life of Savages, 1929).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. The Sexual Life of Savages in North-Western Melanesia. London: George Routledge & Sons, 1929."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sexuality",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. The Sexual Life of Savages in North-Western Melanesia. London: George Routledge & Sons, 1929."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "extend_member_over_distance",
+        "name": "to make his penis travel of its own accord over great distances",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the legend his member crept like a snake through the grass and under water into the houses and gardens of other men's wives while the men were away.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. The Sexual Life of Savages in North-Western Melanesia. London: George Routledge & Sons, 1929."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "trobriand_inuvaylau_stones",
+        "name": "The stones of Inuvayla'u",
+        "kind": "landmark",
+        "role": "Stones near Kwaybwaga identified as the severed pieces of Inuvayla'u's member, cut off by him in shame and turned to stone where they fell.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. The Sexual Life of Savages in North-Western Melanesia. London: George Routledge & Sons, 1929."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Inuvayla'u is the protagonist of a famous Trobriand legend and song from Kwaybwaga: a headman whose prodigious member committed adulteries throughout the village until, publicly shamed, he cut it off piece by piece, the pieces turning to stone, and departed south singing his lament.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. The Sexual Life of Savages in North-Western Melanesia. London: George Routledge & Sons, 1929."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Malinowski, Bronislaw. The Sexual Life of Savages in North-Western Melanesia. Reprint edition. Boston: Beacon Press, 1987."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The legend of Inuvayla'u belongs to the erotic folklore of northern Kiriwina and was recorded by Malinowski together with the song and dance that commemorate him. Inuvayla'u, a man of the Lukuba clan in Kwaybwaga, possessed a member of prodigious size which would steal away on its own to the wives of other men while they worked in the gardens or fished. When the outraged men of the village finally shamed him publicly, he cut off his member piece by piece with an axe; the pieces turned into stones which are still pointed out near the village. He then left Kwaybwaga with his mother, singing the melancholy song that bears his name, and the Inuvayla'u song and dance remained part of the village's ceremonial repertoire. The tale served Malinowski as a document of Trobriand attitudes to adultery, shame, and punishment."
+  },
+  {
+    "id": "trobriand_imdeduya",
+    "name": {
+      "primary": "The Famed Beauty of the Imdeduya Myth",
+      "alt": [
+        "Imdeduya"
+      ],
+      "transliterations": {
+        "kilivila": "Imdeduya",
+        "etymology": "Kilivila personal name; the myth and its songs are named after her (Senft, Imdeduya, 2017)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Trobriand",
+    "primaryTradition": "Trobriand",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Figures in Trobriand oral tradition as the woman so famous for her beauty that the hero Yolina sailed from island to island to woo her, in the myth of love and hate recorded in multiple variants by Gunter Senft (Senft, Imdeduya, 2017).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "beauty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "renowned_beauty",
+        "name": "to draw suitors across the sea by the fame of her beauty",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her renown, carried from island to island, motivates Yolina's long voyage in every recorded variant of the myth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "lover",
+        "personId": "trobriand_yolina",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          }
+        ],
+        "notes": "Imdeduya and Yolina are the protagonists of the Trobriand myth of love and hate; Yolina wins her after his long voyage, but their union ends tragically."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Imdeduya is the heroine of one of the best-documented Trobriand myths, a woman famous for her beauty whom the hero Yolina sails to marry, their love ending tragically; the myth exists in narrative, short-story and song variants.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kasaipwalova, John. Sail the Midnight Sun. Port Moresby: Credit Melanesia, 1980."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The myth of Imdeduya and Yolina is one of the great love stories of the Trobriand Islands. Imdeduya is a woman whose beauty is famed throughout the Kula region; the young man Yolina resolves to marry her and makes a long journey from village to village and island to island to reach her home. Their story, which turns from love to hate and ends tragically, has been documented in five variants by the linguist Gunter Senft: two tellings of the myth proper, a short story, a song cycle, and the English-language epic poem 'Sail the Midnight Sun' by the Trobriand poet John Kasaipwalova, which draws directly on the tradition. The corpus is a key case study of oral variation and the changing role of myth in modern Trobriand society."
+  },
+  {
+    "id": "trobriand_yolina",
+    "name": {
+      "primary": "The Voyaging Suitor of the Imdeduya Myth",
+      "alt": [
+        "Yolina"
+      ],
+      "transliterations": {
+        "kilivila": "Yolina",
+        "etymology": "Kilivila personal name of the hero of the Imdeduya myth (Senft, Imdeduya, 2017)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Trobriand",
+    "primaryTradition": "Trobriand",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Enters the myth as the young man who, hearing of Imdeduya's beauty, sets out on a long sea journey from island to island to win her as his wife (Senft, Imdeduya, 2017).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "seafaring",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "epic_voyaging",
+        "name": "to voyage from island to island in pursuit of his chosen bride",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His island-by-island journey to Imdeduya's village structures every variant of the myth and its songs.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "lover",
+        "personId": "trobriand_imdeduya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          }
+        ],
+        "notes": "Yolina sails the length of the Kula region to marry the famed beauty Imdeduya; their love story turns to estrangement and tragedy."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Yolina is the hero of the Trobriand myth of Imdeduya, the suitor who undertakes a long inter-island voyage to marry the famed beauty Imdeduya, in a love story that ends in hate and tragedy.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Senft, Gunter. Imdeduya: Variants of a Myth of Love and Hate from the Trobriand Islands of Papua New Guinea. Amsterdam: John Benjamins, 2017."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kasaipwalova, John. Sail the Midnight Sun. Port Moresby: Credit Melanesia, 1980."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Yolina is the male protagonist of the Imdeduya myth, recorded in several oral variants and in song. Hearing of the beauty of Imdeduya, he announces his intention to marry her and sets out on a long voyage, stopping at village after village along the island chain, where in the sung versions his arrival is greeted with a recurring refrain, until he reaches Imdeduya's home and wins her. The later course of the story turns the celebrated love into estrangement and sorrow, which is why Gunter Senft, its principal editor, calls it a myth of love and hate. Yolina's voyage, mapped island by island in the appendices to Senft's edition, mirrors the geography of Kula seafaring, and the figure was reimagined in John Kasaipwalova's modern epic poem 'Sail the Midnight Sun'."
+  }
+]
+```

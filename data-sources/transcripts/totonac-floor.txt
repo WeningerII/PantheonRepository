@@ -1,0 +1,537 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Totonac
+Era (registered, exact): "primordial", "timeless"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the four remaining well-individuated Totonac divinities documented in the core ethnographic literature: the Sun Chichiní and his brother the Moon Papa' (creation narrative and sibling rivalry per Ichon 1973 and Beaucage and Rojas Mora 2021), the mother goddess Natsi'itni who fashions children's souls and is mother of the Sun (Ichon 1973; Pérez González 2011), and Kiwikgolo, the Old Man of the Forest and Owner of wild nature (Ellison 2004; Beaucage and Rojas Mora 2022). Chichiní is wired to Natsi'itni (mother) and Papa' (reciprocated sibling). I deliberately excluded the Morning Star/Lucero (attested for the Sierra de Puebla generally but without a secure individuated Totonac name in the sources checked), the unnamed dueños as spirit classes, and the Papantla vanilla-legend figures (Tzacopontziza/Xanat), whose attestation is modern folkloric rather than scholarly ethnography. Beyond these, Ichon's monograph and the Handbook of Middle American Indians treat remaining Totonac supernaturals as owner-classes rather than named individuals.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "totonac_chichini",
+    "name": {
+      "primary": "Chichiní",
+      "alt": [
+        "Chichini'",
+        "the Sun",
+        "Sun Father"
+      ],
+      "transliterations": {
+        "totonac": "chichiní",
+        "etymology": "Totonac chichiní 'sun'; the name of the day-star itself, used as the god's name in Sierra Totonac religion (Ichon 1973)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Totonac",
+    "primaryTradition": "Totonac",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "totonac_natsiitni"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In Sierra Totonac creation narratives a humble boy hurled himself into the great fire and rose transformed as the Sun, inaugurating the present era of the world (Beaucage and Rojas Mora 2021; Ichon 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Primera parte: el tiempo de la creación.' Anales de Antropología 55, no. 2 (2021): 143-159."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "chichiní",
+          "script": "Latin",
+          "rom": "sun"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          }
+        ]
+      },
+      {
+        "sphereId": "life-giving-light",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harvey, H. R., and Isabel Kelly. 'The Totonac.' In Handbook of Middle American Indians, vol. 8, Ethnology, Part Two, edited by Evon Z. Vogt. Austin: University of Texas Press, 1969."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_light_and_life",
+        "name": "to give light, warmth, and life to the world by day",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "totonac_papa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Primera parte: el tiempo de la creación.' Anales de Antropología 55, no. 2 (2021): 143-159."
+          }
+        ],
+        "notes": "The Sun and the Moon are brothers in Sierra Totonac cosmogony; the Moon hesitated before the sacrificial fire that the Sun braved, and their continuing celestial rivalry is said to cause eclipses."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Chichiní, the Sun, is the supreme deity of traditional Totonac religion, born from a boy who leapt into the primordial fire and honored daily as the giver of light and life.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Primera parte: el tiempo de la creación.' Anales de Antropología 55, no. 2 (2021): 143-159."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harvey, H. R., and Isabel Kelly. 'The Totonac.' In Handbook of Middle American Indians, vol. 8, Ethnology, Part Two, edited by Evon Z. Vogt. Austin: University of Texas Press, 1969."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Chichiní, the Sun, stands at the head of the traditional Totonac pantheon as documented by Alain Ichon among the Sierra Totonac of Puebla in the 1960s. Creation narratives recorded in the Sierra Norte de Puebla relate that a poor boy threw himself into a great fire and rose into the sky as the Sun, while his hesitant brother became the Moon; the Sun thereafter rules the day and the ordered, life-giving side of the cosmos, assisted in the east and south, which the Totonac associate with his birth and vitality. In the colonial and modern period the Sun was syncretically identified with Jesus Christ, and he was believed to require regular offerings of incense and devotion to sustain his vital force. Ichon records that the Sun is regarded as the son of the divine mother Natsi'itni."
+  },
+  {
+    "id": "totonac_papa",
+    "name": {
+      "primary": "Papa",
+      "alt": [
+        "P'apa",
+        "Papa'",
+        "the Moon"
+      ],
+      "transliterations": {
+        "totonac": "papa'",
+        "etymology": "Totonac papa' 'moon', the ordinary word for the moon used as the god's name (Beaucage and Rojas Mora 2021)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Totonac",
+    "primaryTradition": "Totonac",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the Sierra Totonac creation story the Moon hesitated before the sacrificial fire and, finding only ashes where the Sun had leapt, was nonetheless sent into the sky to rule the night (Beaucage and Rojas Mora 2021).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Primera parte: el tiempo de la creación.' Anales de Antropología 55, no. 2 (2021): 143-159."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "papa'",
+          "script": "Latin",
+          "rom": "moon"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Primera parte: el tiempo de la creación.' Anales de Antropología 55, no. 2 (2021): 143-159."
+          }
+        ]
+      },
+      {
+        "sphereId": "night-and-sorcery",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_the_night",
+        "name": "to rule the night sky and govern its dangerous, inverted powers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          }
+        ]
+      },
+      {
+        "id": "visit_women",
+        "name": "to visit women every twenty-eight days and stir the tides of the waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Primera parte: el tiempo de la creación.' Anales de Antropología 55, no. 2 (2021): 143-159."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "totonac_chichini",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Primera parte: el tiempo de la creación.' Anales de Antropología 55, no. 2 (2021): 143-159."
+          }
+        ],
+        "notes": "The Moon is the Sun's brother in Sierra Totonac cosmogony; having shrunk from the fire the Sun braved, he became the lesser, nocturnal light, and their recurring combats in the sky are held to cause eclipses."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Papa', the Moon, is the male lunar deity of the Sierra Totonac, brother and rival of the Sun, ruler of the night, associated with women's cycles, the tides, sorcerers, and the western realm of the dead.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Primera parte: el tiempo de la creación.' Anales de Antropología 55, no. 2 (2021): 143-159."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Papa', the Moon, is an individuated male deity in Sierra Totonac religion, the brother of the Sun Chichiní. Creation narratives recorded in the Sierra Norte de Puebla tell that when the gods kindled the fire of the new era the Moon hesitated to leap and found only ashes, so he was cast into the sky as the paler nocturnal light; he is said to visit women every twenty-eight days, an explanation of the menstrual cycle, and to raise the tides. In Alain Ichon's ethnography the Moon governs the night-time, inverted half of the cosmos: the north and west, orientations of the Moon and of the dead, carry negative connotations, and the Moon stands as patron of sorcerers, in colonial syncretism assimilated to the Devil in opposition to the solar Christ."
+  },
+  {
+    "id": "totonac_natsiitni",
+    "name": {
+      "primary": "Natsi'itni",
+      "alt": [
+        "the Madresitas",
+        "the Little Mothers",
+        "Mother of the Sun"
+      ],
+      "transliterations": {
+        "totonac": "natsi'itni",
+        "etymology": "Sierra Totonac natsi'itni, conventionally glossed in Spanish as 'Madresitas' (little mothers), from the Totonac root for mother (Pérez González 2011)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Totonac",
+    "primaryTradition": "Totonac",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Ichon records Natsi'itni among the great gods of the Sierra Totonac from the beginning of the cosmos, as the Virgin-Mother whose son is the Sun (Ichon 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "birth-and-motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "natsi'itni",
+          "script": "Latin",
+          "rom": "the little mothers"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pérez González, David. 'La reconciliación como motivo en el Natsi'itni o Madresitas.' Dimensión Antropológica 53 (2011): 139-160."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion_souls",
+        "name": "to fashion the souls of newborn children and watch over their early lives",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          }
+        ]
+      },
+      {
+        "id": "restore_family_equilibrium",
+        "name": "to restore health and harmony to children and their families through the ritual that bears her name",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pérez González, David. 'La reconciliación como motivo en el Natsi'itni o Madresitas.' Dimensión Antropológica 53 (2011): 139-160."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "totonac_chichini",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          }
+        ],
+        "notes": "In Sierra Totonac belief the Sun is the son of the Virgin-Mother Natsi'itni, who together with the divine Fathers forms the circle of the great gods."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Natsi'itni, the 'Madresitas', is the Sierra Totonac mother goddess (conceived both as one Virgin-Mother and as a plurality of little mothers) who creates the souls of children and is the mother of the Sun.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ichon, Alain. La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista / Secretaría de Educación Pública, 1973."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Pérez González, David. 'La reconciliación como motivo en el Natsi'itni o Madresitas.' Dimensión Antropológica 53 (2011): 139-160."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Natsi'itni, glossed in the ethnographic literature as the 'Madresitas' or Little Mothers, is the great mother goddess of the Sierra Totonac. Alain Ichon, who documented Totonac religion in the Sierra de Puebla in the 1960s, places her among the great gods and records the belief that the Sun himself is the son of the Virgin-Mother Natsi'itni; mother goddesses hold a central place in Totonac religion because each person's soul is created by them. The name also designates a healing and reconciliation ritual, studied by David Pérez González, performed for ailing infants: beyond curing the child, the Natsi'itni ceremony seeks to reconcile the family and restore its equilibrium under the patronage of the divine mothers, showing the goddess's continuing role in Totonac ritual life."
+  },
+  {
+    "id": "totonac_kiwikgolo",
+    "name": {
+      "primary": "Kiwikgolo",
+      "alt": [
+        "Kiwíkgolo'",
+        "Kiwiqgoló",
+        "Old Man of the Forest",
+        "Dueño del Monte",
+        "Juan del Monte"
+      ],
+      "transliterations": {
+        "totonac": "kiwikgolo'",
+        "etymology": "Totonac kiwi 'tree, wood' + kgolo 'old man': 'the old man of the trees' (Ellison 2004)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Totonac",
+    "primaryTradition": "Totonac",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "timeless"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "timeless",
+        "eraOrdering": 0,
+        "startEvent": "Totonac oral tradition presents Kiwikgolo as the ever-present Owner of the forest, regulating trees, plants, and animals since before human memory (Ellison 2004; Beaucage and Rojas Mora 2022).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ellison, Nicolas. 'Une écologie symbolique totonaque: le municipe de Huehuetla (Puebla, Mexique).' Journal de la Société des Américanistes 90, no. 2 (2004): 35-62."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "forest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kiwi",
+          "script": "Latin",
+          "rom": "tree, wood"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ellison, Nicolas. 'Une écologie symbolique totonaque: le municipe de Huehuetla (Puebla, Mexique).' Journal de la Société des Américanistes 90, no. 2 (2004): 35-62."
+          }
+        ]
+      },
+      {
+        "sphereId": "wild-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Segunda parte: las almas, los dueños, las fuerzas maléficas.' Anales de Antropología 56, no. 1 (2022): 7-25."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_wild",
+        "name": "to guard the trees, plants, and game animals of the wild forest",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ellison, Nicolas. 'Une écologie symbolique totonaque: le municipe de Huehuetla (Puebla, Mexique).' Journal de la Société des Américanistes 90, no. 2 (2004): 35-62."
+          }
+        ]
+      },
+      {
+        "id": "punish_abusers",
+        "name": "to destroy crops and send frights upon those who take from the forest without respect",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ellison, Nicolas. 'Une écologie symbolique totonaque: le municipe de Huehuetla (Puebla, Mexique).' Journal de la Société des Américanistes 90, no. 2 (2004): 35-62."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Kiwikgolo, the 'Old Man of the Trees', is the individuated masculine Owner of the forest in Totonac religion, who regulates wild nature, receives offerings from hunters, farmers, and ritual dancers, and punishes those who abuse the woods.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ellison, Nicolas. 'Une écologie symbolique totonaque: le municipe de Huehuetla (Puebla, Mexique).' Journal de la Société des Américanistes 90, no. 2 (2004): 35-62."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beaucage, Pierre, and Xóchitl Rojas Mora. 'Cosmologías nahua (maseual) y totonaca (tutunakú) de la Sierra Norte de Puebla (México). Segunda parte: las almas, los dueños, las fuerzas maléficas.' Anales de Antropología 56, no. 1 (2022): 7-25."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kiwikgolo (kiwi 'tree' plus kgolo 'old man') is the Old Man of the Forest, the individuated masculine Owner (dueño) of wild nature among the Totonac of the Sierra Norte de Puebla and Veracruz. Nicolas Ellison's ethnography of Huehuetla describes him as a being who can benefit humans but also harm them, destroying crops and causing frights when the forest is used without proper respect, while Pierre Beaucage and Xóchitl Rojas Mora identify him as the masculine Owner of nature in Totonac cosmology, counterpart of the plural owners recognized by neighboring Nahua communities. Hunters, farmers, and the ritual dancers of the Lakakgolo dance still direct offerings to him before taking wood, game, or land from the monte, and contemporary Totonac communities invoke him as protector of the forest."
+  }
+]
+```

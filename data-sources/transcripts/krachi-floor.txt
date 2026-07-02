@@ -1,0 +1,277 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Krachi
+Era (registered, exact): "mythic-age", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the two remaining individuated figures of the documented Krachi corpus: Owuo, the giant personification of Death from the famous Krachi origin-of-death tale (Cardinall 1931; Abrahamsson 1951; Scheub 2000; Lynch 2010), and Asase Ya, the named Mother Earth on whom Wulbari lay in the Krachi cosmogony (Cardinall 1931; Radin 1952; Beier 1966; Leeming 2005), wiring Asase Ya to the existing Wulbari as consort. Bruku of Shiare and Akonedi of Larteh, though ritually networked with the Dente shrine, were excluded as deities of the neighbouring Adele and Larteh-Guan traditions rather than of Krachi proper (Maier, Priests and Power, 1983). The remaining actors in Cardinall's Krachi tales — the pestle-pounding old woman, the death-bringing bird, and the first men and women lowered from the sky — are unnamed and therefore not individuated.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "krachi_owuo",
+    "name": {
+      "primary": "Owuo",
+      "alt": [
+        "Death",
+        "Owuo the Giant"
+      ],
+      "transliterations": {
+        "twi": "owuo",
+        "etymology": "Twi owuo, 'death' (from the verb wu, 'to die'); the Akan word serves as the giant's proper name in the Krachi tale recorded by Cardinall (Tales Told in Togoland, 1931; Scheub, A Dictionary of African Mythology, 2000)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Krachi",
+    "primaryTradition": "Krachi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "In the days of a great famine a young man of Krachi met, on the road toward Salaga, the giant Owuo, Death, whose silky hair stretched from Krachi to Salaga (Cardinall, Tales Told in Togoland, 1931).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), ch. 2, 'Of the Origin of Things'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hans Abrahamsson, The Origin of Death: Studies in African Mythology, Studia Ethnographica Upsaliensia III (Uppsala: Almqvist & Wiksells, 1951)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "owuo",
+          "script": "Latin",
+          "rom": "death (Twi)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000), s.v. 'Owuo'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z, 2nd ed., rev. Jeremy Roberts (New York: Chelsea House, 2010), s.v. 'Owuo'."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "death_blink",
+        "name": "to cause a person to die each time his eye blinks",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "After the medicine was sprinkled on the dead giant's eye, the eye opened and began to blink, and every blink brings a human death.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000), s.v. 'Owuo'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), ch. 2, 'Of the Origin of Things'."
+          }
+        ]
+      },
+      {
+        "id": "revive_the_dead",
+        "name": "to restore the dead to life with the medicine hidden in his hair",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "A magic medicine concealed at the roots of the giant's hair brought his victims back to life when sprinkled on their bones.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), ch. 2, 'Of the Origin of Things'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hans Abrahamsson, The Origin of Death: Studies in African Mythology, Studia Ethnographica Upsaliensia III (Uppsala: Almqvist & Wiksells, 1951)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "krachi_owuo_hair_medicine",
+        "name": "revival medicine of Owuo's hair",
+        "kind": "substance",
+        "role": "Magic medicine hidden at the roots of Death's immense hair; it restored the giant's victims to life, and the remnant poured on his eye set his death-dealing blinking in motion.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), ch. 2, 'Of the Origin of Things'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z, 2nd ed., rev. Jeremy Roberts (New York: Chelsea House, 2010), s.v. 'Owuo'."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Owuo, whose name is the Twi word for death, is the giant personification of Death in Krachi myth; the burning of his hair and the medicine poured on his ever-blinking eye explain how death became permanent among mankind.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), ch. 2, 'Of the Origin of Things'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000), s.v. 'Owuo'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hans Abrahamsson, The Origin of Death: Studies in African Mythology, Studia Ethnographica Upsaliensia III (Uppsala: Almqvist & Wiksells, 1951)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z, 2nd ed., rev. Jeremy Roberts (New York: Chelsea House, 2010), s.v. 'Owuo'."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Krachi tale of the origin of death, recorded by A. W. Cardinall in the 1920s, a great famine drove a young man out along the road toward Salaga, where he came upon what seemed a hill of silky hair stretching for miles across the plain: the body of an enormous giant. The giant named himself Owuo, that is, Death, and fed the starving youth meat in exchange for service. The meat proved to be human flesh, and when the young man's sister and her maid were sent to serve the giant they were devoured in turn. The people of Krachi then set fire to Owuo's great hair and the giant perished in the flames; a magic medicine found at the roots of his hair restored his victims to life, but a remnant of it, sprinkled on the dead giant's eye, set the eye blinking forever, and each time Owuo's eye blinks a person somewhere dies. Owuo is the ordinary Twi word for death, and the same personification is known among the neighbouring Akan; the Krachi narrative, however, is its fullest mythological elaboration and became one of the most widely anthologized of African origin-of-death myths, analysed in Hans Abrahamsson's comparative monograph on the theme."
+  },
+  {
+    "id": "krachi_asase_ya",
+    "name": {
+      "primary": "Asase Ya",
+      "alt": [
+        "Asase Yaa",
+        "Mother Earth"
+      ],
+      "transliterations": {
+        "twi": "Asase Yaa",
+        "etymology": "Twi asase, 'earth', with the feminine day-name Yaa ('Thursday-born'); Rattray records the Akan earth spirit as Asase Ya, 'Thursday's Earth' (Rattray, Ashanti, 1923)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Krachi",
+    "primaryTradition": "Krachi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "At the beginning of days the sky god Wulbari lay upon Mother Earth, Asase Ya, with mankind cramped between them (Cardinall, Tales Told in Togoland, 1931).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), ch. 2, 'Of the Origin of Things'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paul Radin (ed.), African Folktales, Bollingen Series XXXII (New York: Pantheon Books, 1952), no. 1, 'The Separation of God from Man' (Krachi)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "asase",
+          "script": "Latin",
+          "rom": "earth (Twi)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), ch. 2, 'Of the Origin of Things'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "David Adams Leeming, The Oxford Companion to World Mythology (New York: Oxford University Press, 2005), s.v. 'Wulbari'."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "krachi_wulbari",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), ch. 2, 'Of the Origin of Things'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "David Adams Leeming, The Oxford Companion to World Mythology (New York: Oxford University Press, 2005), s.v. 'Wulbari'."
+          }
+        ],
+        "notes": "In the Krachi creation account the sky god Wulbari originally lay directly upon Asase Ya, Mother Earth, before withdrawing to the heights of the sky; Leeming describes her as the earth mother who is the sky god's consort."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Asase Ya is the Mother Earth of the Krachi cosmogony, upon whom the sky god Wulbari lay in the beginning of days before mankind's irritations drove him upward to his present unreachable height.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), ch. 2, 'Of the Origin of Things'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000), s.v. 'Wulbari'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "David Adams Leeming, The Oxford Companion to World Mythology (New York: Oxford University Press, 2005), s.v. 'Wulbari'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ulli Beier (ed.), The Origin of Life and Death: African Creation Myths (London: Heinemann, 1966)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Krachi cosmogony recorded by A. W. Cardinall opens with the statement that in the beginning of days Wulbari and man lived close together, and Wulbari lay on top of Mother Earth, Asase Ya. Mankind, cramped between sky and earth, so irritated the sky god that he withdrew upward: an old woman kept striking him with her fufu pestle, the smoke of cooking fires stung his eyes, people wiped their dirty hands on him, and another old woman cut bits from him to flavour her soup. Wulbari rose to his present unreachable height, leaving Asase Ya below as the abiding earth on which humanity lives. Her name is shared with the Akan earth spirit Asase Yaa, 'Thursday's Earth', a reflection of the strong Asante influence on the Guan-speaking Krachi; in the Krachi text she figures as the named, female primordial earth upon whom the sky once rested. The tale was reprinted as the opening piece of Paul Radin's African Folktales and appears in Ulli Beier's collection of African creation myths."
+  }
+]
+```

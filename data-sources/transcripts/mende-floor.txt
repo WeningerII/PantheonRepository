@@ -1,0 +1,746 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Mende
+Era (registered, exact): "Mende traditional religion; continuing", "Mende traditional religion; continuing Poro society", "Mende traditional religion; continuing Sande society"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five individuated, well-attested Mende figures missing from the corpus: the water genius Tingoi (Njaloi) and the bush genius Ndogbojusui, the two named dyinyinga documented by Harris & Sawyerr (1968), Little (1951), and Gittins (1987), both wired as subordinate to the existing creator Ngewo; the Sande clown Gonde (Phillips 1995; Boone 1986), subordinate to the existing Sowo; the one-armed Poro warrior spirit Falui (Siegmann & Perani 1976; Sierra Leone Heritage), subordinate to the existing Gbeni; and the unaffiliated satirical masker Gongoli (Anderson, Africa 2018; Siegmann & Perani 1976). Other candidates were excluded as unindividuated spirit classes (generic ngafanga ancestors, dyinyinga as a category, society medicines such as those of the Njayei and Humoi) or as aliases of existing entries (Goboi/Gbini under mende_gbeni; Leve under mende_ngewo).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "mende_tingoi",
+    "name": {
+      "primary": "Tingoi",
+      "alt": [
+        "Tingɔi",
+        "Njaloi",
+        "the river maiden"
+      ],
+      "transliterations": {
+        "mende": "Tingɔi",
+        "etymology": "Mende name of the female water genius; the variant Njaloi incorporates Mende nja/njei 'water' (Harris & Sawyerr 1968; Boone 1986)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Mende",
+    "primaryTradition": "Mende",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mende traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Mende traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Tingoi belongs to the dyinyinga, the nature genii of Mende belief, encountered at rivers and pools throughout the documented span of Mende traditional religion.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. T. Harris & Harry Sawyerr, The Springs of Mende Belief and Conduct, Sierra Leone University Press, 1968"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers-and-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "njei",
+          "script": "Latin (Mende)",
+          "rom": "njei, 'water'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sylvia Ardyn Boone, Radiance from the Waters: Ideals of Feminine Beauty in Mende Art, Yale University Press, 1986"
+          }
+        ]
+      },
+      {
+        "sphereId": "wealth-and-fortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. T. Harris & Harry Sawyerr, The Springs of Mende Belief and Conduct, Sierra Leone University Press, 1968"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_riches_for_a_price",
+        "name": "to grant wealth and good fortune to those who seize her comb or mirror, in exchange for a heavy price",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Accounts describe the person who takes her comb or mirror becoming bound to her, receiving riches but owing her a relative or service in return.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. T. Harris & Harry Sawyerr, The Springs of Mende Belief and Conduct, Sierra Leone University Press, 1968"
+          }
+        ]
+      },
+      {
+        "id": "appear_as_beautiful_woman",
+        "name": "to appear as a beautiful long-haired woman, sometimes with a fish- or snake-like lower body, on rocks in rivers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kenneth Little, The Mende of Sierra Leone: A West African People in Transition, Routledge & Kegan Paul, 1951"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mende_tingoi_comb_and_mirror",
+        "name": "golden comb and mirror",
+        "kind": "emblem",
+        "role": "The comb and mirror with which Tingoi dresses her hair; seizing them binds her to the taker and opens the fateful bargain for wealth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. T. Harris & Harry Sawyerr, The Springs of Mende Belief and Conduct, Sierra Leone University Press, 1968"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "mende_ngewo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anthony J. Gittins, Mende Religion: Aspects of Belief and Thought in Sierra Leone, Steyler Verlag, 1987"
+          }
+        ],
+        "notes": "Like all the nature genii (dyinyinga), Tingoi stands within the created order under Ngewo, the Mende supreme God, from whom all spiritual power ultimately derives."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tingoi (Njaloi) is the beautiful female water spirit of Mende belief, a mermaid-like genius of rivers who sits on rocks combing her hair and grants wealth, at a price, to those who seize her comb or mirror.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. T. Harris & Harry Sawyerr, The Springs of Mende Belief and Conduct, Sierra Leone University Press, 1968"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kenneth Little, The Mende of Sierra Leone: A West African People in Transition, Routledge & Kegan Paul, 1951"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sylvia Ardyn Boone, Radiance from the Waters: Ideals of Feminine Beauty in Mende Art, Yale University Press, 1986"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tingoi, also recorded as Tingɔi or Njaloi, is the best-known of the Mende nature genii (dyinyinga). She is pictured as a strikingly beautiful woman, sometimes with a fish-like or snake-like lower body, who sits on rocks in rivers combing her long hair before a mirror. Ethnographers of the Mende, notably Harris and Sawyerr and Kenneth Little, record that a person who manages to seize her comb or mirror gains a claim on her: she appears in dreams and offers wealth and success, but demands a costly return, in some accounts the surrender of a relative to her underwater realm. Sylvia Boone has argued that ideals of feminine beauty embodied in the Sande society's imagery draw on the radiance associated with such water spirits. Tingoi remains a living figure of belief and storytelling in southern and eastern Sierra Leone."
+  },
+  {
+    "id": "mende_ndogbojusui",
+    "name": {
+      "primary": "Ndogbojusui",
+      "alt": [
+        "Ndɔgbɔjusui",
+        "Ndogbojusu",
+        "the white-faced bush spirit"
+      ],
+      "transliterations": {
+        "mende": "Ndɔgbɔjusui",
+        "etymology": "From Mende ndɔgbɔ, 'bush, forest', the name designating the solitary genius of the deep bush (Gittins 1987; Harris & Sawyerr 1968)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Mende",
+    "primaryTradition": "Mende",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mende traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Mende traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Ndogbojusui is counted among the dyinyinga, the non-ancestral nature genii of the Mende, haunting the deep bush throughout the documented span of Mende traditional religion.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. T. Harris & Harry Sawyerr, The Springs of Mende Belief and Conduct, Sierra Leone University Press, 1968"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "forest-and-bush",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ndɔgbɔ",
+          "script": "Latin (Mende)",
+          "rom": "ndogbo, 'bush, forest'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anthony J. Gittins, Mende Religion: Aspects of Belief and Thought in Sierra Leone, Steyler Verlag, 1987"
+          }
+        ]
+      },
+      {
+        "sphereId": "bargains-and-fortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. T. Harris & Harry Sawyerr, The Springs of Mende Belief and Conduct, Sierra Leone University Press, 1968"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lure_travellers_astray",
+        "name": "to waylay solitary travellers in the bush, engage them in conversation, and lead the credulous astray",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He is said to be outwitted by those who answer him with contrariness, refusing whatever he proposes.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. T. Harris & Harry Sawyerr, The Springs of Mende Belief and Conduct, Sierra Leone University Press, 1968"
+          }
+        ]
+      },
+      {
+        "id": "grant_riches_through_pacts",
+        "name": "to offer riches and good luck through a pact that finally claims the beneficiary for service in the deep bush",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kenneth Little, The Mende of Sierra Leone: A West African People in Transition, Routledge & Kegan Paul, 1951"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "mende_ngewo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anthony J. Gittins, Mende Religion: Aspects of Belief and Thought in Sierra Leone, Steyler Verlag, 1987"
+          }
+        ],
+        "notes": "As one of the nature genii of the bush, Ndogbojusui stands within the created spiritual order presided over by Ngewo, the Mende creator God."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ndogbojusui is the male genius of the deep Mende bush, a white-skinned, long-bearded spirit who waylays travellers, tests them with cunning talk, and offers wealth through pacts that ultimately enslave the greedy.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. T. Harris & Harry Sawyerr, The Springs of Mende Belief and Conduct, Sierra Leone University Press, 1968"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kenneth Little, The Mende of Sierra Leone: A West African People in Transition, Routledge & Kegan Paul, 1951"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anthony J. Gittins, Mende Religion: Aspects of Belief and Thought in Sierra Leone, Steyler Verlag, 1987"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ndogbojusui (Ndɔgbɔjusui) is the individuated male spirit of the deep forest in Mende belief, the masculine counterpart to the river maiden Tingoi among the nature genii called dyinyinga. He is described as resembling a man with pale or white skin and a long white beard, encountered by hunters and solitary travellers far from the village. In the accounts gathered by Harris and Sawyerr and by Kenneth Little, he engages people in conversation and tries to lead them astray or draw them into a bargain: riches and extraordinary luck for a term of years, after which the beneficiary must follow him into the bush as his servant. Folk wisdom holds that he can be defeated by contrary speech, since he grants the opposite of what is asked of him. He remains a stock figure of Mende storytelling and moral instruction about greed."
+  },
+  {
+    "id": "mende_gonde",
+    "name": {
+      "primary": "Gonde",
+      "alt": [
+        "gonde",
+        "Gɔnde",
+        "the Sande clown"
+      ],
+      "transliterations": {
+        "mende": "gɔnde",
+        "etymology": "Mende name of the comic masquerade of the Sande society, applied to old or discarded sowei masks danced in deliberately slovenly fashion (Phillips 1995)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mende",
+    "primaryTradition": "Mende",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mende traditional religion; continuing Sande society"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Mende traditional religion; continuing Sande society",
+        "eraOrdering": 0,
+        "startEvent": "Gonde appears wherever the Sande society's masquerades are performed, dancing as the comic foil to the dignified sowei masker during initiation seasons.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruth B. Phillips, Representing Woman: Sande Masquerades of the Mende of Sierra Leone, UCLA Fowler Museum of Cultural History, 1995"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "humor-and-parody",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "gɔnde",
+          "script": "Latin (Mende)",
+          "rom": "gonde"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruth B. Phillips, Representing Woman: Sande Masquerades of the Mende of Sierra Leone, UCLA Fowler Museum of Cultural History, 1995"
+          }
+        ]
+      },
+      {
+        "sphereId": "female-initiation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Sande",
+          "script": "Latin (Mende)",
+          "rom": "Sande, the women's initiation society"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sylvia Ardyn Boone, Radiance from the Waters: Ideals of Feminine Beauty in Mende Art, Yale University Press, 1986"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "invert_sande_ideals",
+        "name": "to parody the beauty and dignity of the sowei through clumsy dancing, begging, and comic misbehaviour",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "By breaking every rule the sowei embodies, Gonde defines Sande ideals of feminine beauty and conduct through inversion.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sylvia Ardyn Boone, Radiance from the Waters: Ideals of Feminine Beauty in Mende Art, Yale University Press, 1986"
+          }
+        ]
+      },
+      {
+        "id": "console_initiates",
+        "name": "to amuse and console Sande initiates during the hardships of their seclusion and training",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruth B. Phillips, Representing Woman: Sande Masquerades of the Mende of Sierra Leone, UCLA Fowler Museum of Cultural History, 1995"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mende_gonde_mask",
+        "name": "gonde mask",
+        "kind": "regalia",
+        "role": "A worn-out, damaged, or crudely finished sowei-type helmet mask, worn with a ragged costume as the visible form of the Sande clown.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruth B. Phillips, Representing Woman: Sande Masquerades of the Mende of Sierra Leone, UCLA Fowler Museum of Cultural History, 1995"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "mende_sowo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sylvia Ardyn Boone, Radiance from the Waters: Ideals of Feminine Beauty in Mende Art, Yale University Press, 1986"
+          }
+        ],
+        "notes": "Gonde is the comic counterpart and foil of the sowei (Sowo), the dignified Sande water-spirit masquerade; she accompanies the sowei's appearances and derives her identity from parodying her superior."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Gonde is the comic female masquerade spirit of the Mende Sande society, danced in an old or degraded sowei mask and ragged dress as the clownish inversion of the ideal beauty embodied by the sowei.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ruth B. Phillips, Representing Woman: Sande Masquerades of the Mende of Sierra Leone, UCLA Fowler Museum of Cultural History, 1995"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sylvia Ardyn Boone, Radiance from the Waters: Ideals of Feminine Beauty in Mende Art, Yale University Press, 1986"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gonde is the clown of the Mende women's Sande society, the only major African masking tradition in which women themselves dance the masks. Where the sowei masker embodies the society's water spirit in perfect composure and glossy black beauty, Gonde appears in a cast-off or damaged mask and tattered costume, dances badly on purpose, begs from spectators, and jokes with the crowd. Ruth Phillips and Sylvia Boone both document Gonde as a named, recurring character of Sande performance whose licensed misbehaviour throws the ideals of the sowei into relief, and who comforts and entertains the girls undergoing initiation. Gonde thus functions as the institutionalized anti-ideal of Sande aesthetics, inseparable from, yet always subordinate to, the spirit she parodies."
+  },
+  {
+    "id": "mende_falui",
+    "name": {
+      "primary": "Falui",
+      "alt": [
+        "falui",
+        "the falui devil"
+      ],
+      "transliterations": {
+        "mende": "falui",
+        "etymology": "Mende name of a Poro-affiliated masquerade spirit; the term designates both the spirit and its cowrie-studded conical headdress (Siegmann & Perani 1976)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mende",
+    "primaryTradition": "Mende",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mende traditional religion; continuing Poro society"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Mende traditional religion; continuing Poro society",
+        "eraOrdering": 0,
+        "startEvent": "Falui belongs to the set of masked spirits fielded by the men's Poro society of the Mende, appearing at festivities and displays of protective medicine throughout the documented masquerade tradition.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William Siegmann & Judith Perani, 'Men's Masquerades of Sierra Leone and Liberia', African Arts 9(3), 1976, pp. 42-47, 92"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-medicine",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "hale",
+          "script": "Latin (Mende)",
+          "rom": "hale, 'medicine, sacred power'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William Siegmann & Judith Perani, 'Men's Masquerades of Sierra Leone and Liberia', African Arts 9(3), 1976, pp. 42-47, 92"
+          }
+        ]
+      },
+      {
+        "sphereId": "masquerade-performance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Basu (dir.), Sierra Leone Heritage: Reanimating Cultural Heritage digital resource (sierraleoneheritage.org), 2013, 'Falui' glossary entry"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "empower_medicine_by_sacrifice",
+        "name": "to strengthen his protective medicine at the cost of his own body, having given up an arm to empower it",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Siegmann and Perani record the tradition that Falui is a warrior spirit who sold one arm to further empower his medicine.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William Siegmann & Judith Perani, 'Men's Masquerades of Sierra Leone and Liberia', African Arts 9(3), 1976, pp. 42-47, 92"
+          }
+        ]
+      },
+      {
+        "id": "perform_mystic_feats",
+        "name": "to entertain and awe spectators with acrobatic dancing and displays of mystic invulnerability",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Basu (dir.), Sierra Leone Heritage: Reanimating Cultural Heritage digital resource (sierraleoneheritage.org), 2013, 'Falui' glossary entry"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mende_falui_headdress",
+        "name": "falui headdress",
+        "kind": "regalia",
+        "role": "A conical cloth headdress covered with vertical rows of cowrie shells, sometimes hung with leather amulets or Qur'anic tablets, worn with a country-cloth costume trimmed in raffia.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Basu (dir.), Sierra Leone Heritage: Reanimating Cultural Heritage digital resource (sierraleoneheritage.org), 2013, 'Falui headdress' catalogue record"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "mende_gbeni",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William Siegmann & Judith Perani, 'Men's Masquerades of Sierra Leone and Liberia', African Arts 9(3), 1976, pp. 42-47, 92"
+          }
+        ],
+        "notes": "Falui ranks among the lesser, more entertainment-oriented Poro masqueraders, beneath the gbini/goboi complex that constitutes the society's most powerful and sacred masked spirit."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Falui is a one-armed warrior spirit of the Mende Poro society, a masked figure in a cowrie-covered conical headdress who traded an arm to strengthen his medicine and performs feats of mystic power and entertainment.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "William Siegmann & Judith Perani, 'Men's Masquerades of Sierra Leone and Liberia', African Arts 9(3), 1976, pp. 42-47, 92"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paul Basu (dir.), Sierra Leone Heritage: Reanimating Cultural Heritage digital resource (sierraleoneheritage.org), 2013, 'Falui' glossary entry"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Falui is one of the standard named masked spirits of the Mende men's Poro society. Siegmann and Perani record him as a warrior spirit who sold one of his arms to increase the power of his medicine, and his masquerade wears a feather-topped or cowrie-studded conical cloth headdress with a baggy country-cloth costume fringed in raffia; some headdresses carry leather amulets or wooden tablets inscribed with Qur'anic passages, reflecting the entanglement of Mende masquerade with Muslim protective practice. Unlike the fearsome and secluded gbini, Falui has a largely public, entertaining function, dancing at festivities and demonstrating mystic feats; celebrated performers, such as the twentieth-century dancer Kpetema Seiya of eastern Sierra Leone, built personal fame in the role."
+  },
+  {
+    "id": "mende_gongoli",
+    "name": {
+      "primary": "Gongoli",
+      "alt": [
+        "Kongoli",
+        "gongoli",
+        "the shameless clown mask"
+      ],
+      "transliterations": {
+        "mende": "gongoli",
+        "etymology": "Mende name of the grotesque comic face mask and the character it embodies; also spelled kongoli (Anderson 2018)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Mende",
+    "primaryTradition": "Mende",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mende traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Mende traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Gongoli emerges within the broader Mende masquerade complex as a licensed clown who crashes village festivities, a role documented from twentieth-century ethnography to the present.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Mark Anderson, 'Letting the Mask Slip: The Shameless Fame of Sierra Leone's Gongoli', Africa 88(4), 2018"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "satire-and-social-criticism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "gongoli",
+          "script": "Latin (Mende)",
+          "rom": "gongoli"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William Siegmann & Judith Perani, 'Men's Masquerades of Sierra Leone and Liberia', African Arts 9(3), 1976, pp. 42-47, 92"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mock_with_impunity",
+        "name": "to mock chiefs, elders, and social pretensions with licensed impunity, relieving tensions through ridicule",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Siegmann and Perani characterize Gongoli as a vehicle for the ritualized reduction of social tensions through social commentary and criticism.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William Siegmann & Judith Perani, 'Men's Masquerades of Sierra Leone and Liberia', African Arts 9(3), 1976, pp. 42-47, 92"
+          }
+        ]
+      },
+      {
+        "id": "crash_festivities",
+        "name": "to barge uninvited into any village festivity, begging, clowning, and breaking the rules of masked decorum",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Mark Anderson, 'Letting the Mask Slip: The Shameless Fame of Sierra Leone's Gongoli', Africa 88(4), 2018"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mende_gongoli_mask",
+        "name": "gongoli mask",
+        "kind": "regalia",
+        "role": "An oversized, deliberately grotesque wooden face mask, so ungainly it must be steadied by hand, worn with rags and a nondescript stick brandished as crutch and whip.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Mark Anderson, 'Letting the Mask Slip: The Shameless Fame of Sierra Leone's Gongoli', Africa 88(4), 2018"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Gongoli (Kongoli) is the grotesque licensed clown of Mende masquerade, an oversized ugly face mask whose ragged, rule-breaking performer satirizes authority and social pretension outside the sacred hierarchy of the secret societies.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Mark Anderson, 'Letting the Mask Slip: The Shameless Fame of Sierra Leone's Gongoli', Africa 88(4), 2018"
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Siegmann & Judith Perani, 'Men's Masquerades of Sierra Leone and Liberia', African Arts 9(3), 1976, pp. 42-47, 92"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gongoli, also spelled Kongoli, is the individuated clown character of Mende masquerade in Sierra Leone. His huge, intentionally ugly wooden face mask is often too unwieldy to stay on without a supporting hand, and he appears in rags with a stick that serves by turns as crutch, whip, and lewd prop. Unlike the masked spirits of the Poro and Sande societies, Gongoli is regarded as the least sacred and most secular of Mende maskers, free to crash any festivity, beg, and lampoon chiefs, elders, and onlookers alike; Siegmann and Perani describe him as a vehicle for the ritualized reduction of social tensions through social commentary and criticism. Samuel Mark Anderson's study documents Gongoli's continuing, even growing, fame in contemporary Sierra Leone as a shameless public satirist whose license depends precisely on his exclusion from the sacred masking hierarchy."
+  }
+]
+```
