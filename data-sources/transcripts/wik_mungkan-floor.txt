@@ -1,0 +1,697 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Wik-Mungkan
+Era (registered, exact): "Wik-Mungkan traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added six individuated named pulwaiya (totemic ancestors) documented in Ursula McConnel's Wik-Mungkan corpus beyond the existing four: Kapa (the Moon), Min Monti (the jabiru), Min Wuka (the flying-fox), Kongkong (the white fish-hawk, tied to the origin of the fishing-net), and the paired serpent ancestors Mun U.ka (White Snake Man) and Min Tuktaiyan (Black Snake Woman), whom I wired to each other as the two protagonists of a single recorded myth. Each name and native form is taken directly from McConnel's field-text titles catalogued in the South Australian Museum AA 191 collection ('Texts, mainly in Wik-Mungkan') and published in Myths of the Munkan (1957), corroborated by her Oceania articles (1930, 1935) and McKnight (1981); I excluded generic food-totems and figures I could not confirm as specifically Wik-Mungkan (e.g. the coastal hero-brothers Sivirri and Nyunggu, whose cult McConnel attributes to Wik-Mungkan 'and neighbouring tribes'). Further named pulwaiya exist in the same archive (e.g. the pelican Min Mo.ta, the frilled-lizard Min Pontyangoiya, the willy-wagtail Tityarokan and peewit Iyebanya), so the record is not exhausted, but I limited the set to the best-attested, clearly individuated ancestors to prioritise correctness over quantity.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "wik_mungkan_kapa",
+    "name": {
+      "primary": "Kapa (the Moon Ancestor)",
+      "alt": [
+        "Kapa",
+        "Kapan",
+        "the Moon"
+      ],
+      "transliterations": {
+        "wik-mungkan": "Kapa",
+        "etymology": "Kapa is the Wik-Mungkan word for the moon; as a pulwaiya (\"old forebear\") the moon is a totemic ancestor whose waxing and waning myth accounts for death and renewal."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wik-Mungkan",
+    "primaryTradition": "Wik-Mungkan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wik-Mungkan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wik-Mungkan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the myth recorded by McConnel from the narrator Bambeigan, the Moon-ancestor Kapa established at his totemic site the pattern by which the moon dies and returns each month, a story the Munkan connect with the coming of death to humankind.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon-and-night",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kapa",
+          "script": "Latin",
+          "rom": "kapa (the moon)"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/29, 'Story of the Moon (Kapa)', recorded from Bambeigan."
+          }
+        ]
+      },
+      {
+        "sphereId": "death-and-renewal",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "wane_and_return_each_month",
+        "name": "to wane and be reborn each month",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "pulwaiya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kapa is the Moon-ancestor (pulwaiya) of the Wik-Mungkan, whose monthly death and return is told in a totemic myth recorded by Ursula McConnel.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          },
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/29, 'Story of the Moon (Kapa)', recorded from Bambeigan."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kapa is the Moon, counted among the Wik-Mungkan pulwaiya, the ancestral totemic forebears of western Cape York. In the story recorded by Ursula McConnel from the narrator Bambeigan, the Moon-ancestor's monthly waning and return furnishes an explanation of mortality and renewal, a widespread theme in Cape York cosmology. Like other pulwaiya, Kapa is tied to a place of origin that serves as a totemic ritual site."
+  },
+  {
+    "id": "wik_mungkan_min_monti",
+    "name": {
+      "primary": "Min Monti (the Jabiru Ancestor)",
+      "alt": [
+        "Min Monti",
+        "the Jabiru",
+        "the Black-necked Stork"
+      ],
+      "transliterations": {
+        "wik-mungkan": "Min Monti",
+        "etymology": "The prefix min (also minh) marks the flesh-food/animal noun class in Wik-Mungkan; Min Monti is the jabiru or black-necked stork as a named totemic ancestor."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wik-Mungkan",
+    "primaryTradition": "Wik-Mungkan",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wik-Mungkan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wik-Mungkan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the myth recorded by McConnel from the narrator Kumita, the jabiru-ancestor Min Monti acted in the ancestral time to inaugurate its totemic cult and fix the increase-site of the jabiru at a place on Wik-Mungkan country.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wetland-birds",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "min monti",
+          "script": "Latin",
+          "rom": "min monti (the jabiru)"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/14, 'Myth of Min Monti the Jabiru', recorded from Kumita."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "increase_its_species_at_the_totemic_site",
+        "name": "to multiply its species at the totemic increase-site",
+        "term": {
+          "value": "auwa",
+          "script": "Latin",
+          "rom": "auwa (totemic increase-site)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "pulwaiya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Min Monti, the jabiru (black-necked stork), is a named Wik-Mungkan totemic ancestor whose myth was recorded by Ursula McConnel from the narrator Kumita.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          },
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/14, 'Myth of Min Monti the Jabiru', recorded from Kumita."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Min Monti is the jabiru, or black-necked stork, one of the Wik-Mungkan pulwaiya - the ancestral totemic beings of western Cape York. In the myth recorded by Ursula McConnel from the narrator Kumita, Min Monti acts in the ancestral era to establish its totemic cult and the auwa, the place at which the increase of the species is ritually maintained. Each such pulwaiya founds an independent clan totem centred on its own site."
+  },
+  {
+    "id": "wik_mungkan_min_wuka",
+    "name": {
+      "primary": "Min Wuka (the Flying-fox Ancestor)",
+      "alt": [
+        "Min Wuka",
+        "the Flying-fox",
+        "the Fruit-bat"
+      ],
+      "transliterations": {
+        "wik-mungkan": "Min Wuka",
+        "etymology": "The prefix min marks the animal/flesh-food noun class in Wik-Mungkan; Min Wuka is the flying-fox (fruit-bat) as a named totemic ancestor."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wik-Mungkan",
+    "primaryTradition": "Wik-Mungkan",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wik-Mungkan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wik-Mungkan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the myth recorded by McConnel from the narrator Kuworpita, the flying-fox ancestor Min Wuka established its totemic cult and increase-site during the ancestral time.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "flying-foxes",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "min wuka",
+          "script": "Latin",
+          "rom": "min wuka (the flying-fox)"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/12 'Texts, mostly in Wik-Mungkan. Part One', item AA 191/12/32, 'Myth of the Flying-fox (Min Wuka)', recorded from Kuworpita."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "increase_its_species_at_the_totemic_site",
+        "name": "to multiply its species at the totemic increase-site",
+        "term": {
+          "value": "auwa",
+          "script": "Latin",
+          "rom": "auwa (totemic increase-site)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "pulwaiya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Min Wuka, the flying-fox, is a named Wik-Mungkan totemic ancestor whose myth was recorded by Ursula McConnel from the narrator Kuworpita.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          },
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/12 'Texts, mostly in Wik-Mungkan. Part One', item AA 191/12/32, 'Myth of the Flying-fox (Min Wuka)', recorded from Kuworpita."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Min Wuka is the flying-fox (fruit-bat), one of the Wik-Mungkan pulwaiya, the ancestral totemic forebears of western Cape York. Its myth, recorded by Ursula McConnel from the narrator Kuworpita, belongs to the body of totemic-ancestor stories in which each species-forebear inaugurates a clan cult and an increase-site (auwa). As with the other pulwaiya, the flying-fox is honoured as an independent clan totem."
+  },
+  {
+    "id": "wik_mungkan_kongkong",
+    "name": {
+      "primary": "Kongkong (the White Fish-hawk Ancestor)",
+      "alt": [
+        "Kongkong",
+        "the White Fish-hawk",
+        "the Osprey"
+      ],
+      "transliterations": {
+        "wik-mungkan": "Kongkong",
+        "etymology": "Kongkong is the Wik-Mungkan name of the white fish-hawk (osprey) as a totemic ancestor; the myth links it to the origin of the fishing-net."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wik-Mungkan",
+    "primaryTradition": "Wik-Mungkan",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wik-Mungkan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wik-Mungkan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the myth recorded by McConnel, the white fish-hawk ancestor Kongkong is associated with the origin of the fishing-net, establishing at the same time its own totemic cult on Wik-Mungkan country.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fishing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kongkong",
+          "script": "Latin",
+          "rom": "kongkong (the white fish-hawk)"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/24, 'Myth of Kongkong the White Fish-hawk and the Fishing-net'."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "increase_its_species_at_the_totemic_site",
+        "name": "to multiply its species at the totemic increase-site",
+        "term": {
+          "value": "auwa",
+          "script": "Latin",
+          "rom": "auwa (totemic increase-site)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "wik_mungkan_kongkong_fishing_net",
+        "name": "the fishing-net",
+        "kind": "tool",
+        "role": "The fishing-net whose origin the myth of Kongkong the white fish-hawk explains.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/24, 'Myth of Kongkong the White Fish-hawk and the Fishing-net'."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "pulwaiya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kongkong, the white fish-hawk (osprey), is a named Wik-Mungkan totemic ancestor whose myth, recorded by Ursula McConnel, is connected with the origin of the fishing-net.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          },
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/24, 'Myth of Kongkong the White Fish-hawk and the Fishing-net'."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kongkong is the white fish-hawk, or osprey, one of the Wik-Mungkan pulwaiya of western Cape York. In the myth recorded by Ursula McConnel, the fish-hawk ancestor is bound up with the origin of the fishing-net, so that the story both accounts for a technology of daily subsistence and inaugurates the bird's totemic cult. Totems of this kind were commonly drawn from the objects of utility around which daily life centred."
+  },
+  {
+    "id": "wik_mungkan_mun_uka",
+    "name": {
+      "primary": "Mun U.ka (the White Snake Man)",
+      "alt": [
+        "Mun U.ka",
+        "Munuka",
+        "the White Snake Man"
+      ],
+      "transliterations": {
+        "wik-mungkan": "Mun U.ka",
+        "etymology": "A named male serpent ancestor of the Wik-Mungkan, the White Snake Man, paired in a single myth with the Black Snake Woman Min Tuktaiyan."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wik-Mungkan",
+    "primaryTradition": "Wik-Mungkan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wik-Mungkan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wik-Mungkan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the myth recorded by McConnel from the narrator Lampas, the White Snake Man Mun U.ka appears together with the Black Snake Woman Min Tuktaiyan as the paired serpent protagonists of an ancestral story.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "snakes",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mun u.ka",
+          "script": "Latin",
+          "rom": "mun u.ka (the white snake)"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/17, 'Myth of the White Snake Man Mun U.ka and the Black Snake Woman Min Tuktaiyan', recorded from Lampas."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "increase_its_species_at_the_totemic_site",
+        "name": "to multiply its species at the totemic increase-site",
+        "term": {
+          "value": "auwa",
+          "script": "Latin",
+          "rom": "auwa (totemic increase-site)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "pulwaiya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "wik_mungkan_min_tuktaiyan",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/17, 'Myth of the White Snake Man Mun U.ka and the Black Snake Woman Min Tuktaiyan', recorded from Lampas."
+          }
+        ],
+        "notes": "The White Snake Man and the Black Snake Woman are the two paired serpent protagonists of a single Wik-Mungkan myth recorded by McConnel."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mun U.ka, the White Snake Man, is a named male serpent ancestor of the Wik-Mungkan, paired with the Black Snake Woman Min Tuktaiyan in a myth recorded by Ursula McConnel from the narrator Lampas.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          },
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/17, 'Myth of the White Snake Man Mun U.ka and the Black Snake Woman Min Tuktaiyan', recorded from Lampas."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mun U.ka, the White Snake Man, is a serpent ancestor of the Wik-Mungkan of western Cape York, distinct from Taipan the great rainbow-snake. He is the male protagonist of a paired myth, recorded by Ursula McConnel from the narrator Lampas, in which he appears together with the Black Snake Woman Min Tuktaiyan. Serpent ancestors of this kind belong among the pulwaiya, the totemic forebears whose stories underpin clan cult and identity."
+  },
+  {
+    "id": "wik_mungkan_min_tuktaiyan",
+    "name": {
+      "primary": "Min Tuktaiyan (the Black Snake Woman)",
+      "alt": [
+        "Min Tuktaiyan",
+        "the Black Snake Woman"
+      ],
+      "transliterations": {
+        "wik-mungkan": "Min Tuktaiyan",
+        "etymology": "A named female serpent ancestor of the Wik-Mungkan, the Black Snake Woman; the prefix min marks the animal noun class, paired in a single myth with the White Snake Man Mun U.ka."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wik-Mungkan",
+    "primaryTradition": "Wik-Mungkan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wik-Mungkan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wik-Mungkan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the myth recorded by McConnel from the narrator Lampas, the Black Snake Woman Min Tuktaiyan appears together with the White Snake Man Mun U.ka as the paired serpent protagonists of an ancestral story.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "snakes",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "min tuktaiyan",
+          "script": "Latin",
+          "rom": "min tuktaiyan (the black snake)"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/17, 'Myth of the White Snake Man Mun U.ka and the Black Snake Woman Min Tuktaiyan', recorded from Lampas."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "increase_its_species_at_the_totemic_site",
+        "name": "to multiply its species at the totemic increase-site",
+        "term": {
+          "value": "auwa",
+          "script": "Latin",
+          "rom": "auwa (totemic increase-site)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "pulwaiya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. 'The Wik-Munkan Tribe of Cape York Peninsula.' Oceania 1, no. 1 (1930): 97-104; no. 2 (1930): 181-205."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "wik_mungkan_mun_uka",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/17, 'Myth of the White Snake Man Mun U.ka and the Black Snake Woman Min Tuktaiyan', recorded from Lampas."
+          }
+        ],
+        "notes": "The Black Snake Woman and the White Snake Man are the two paired serpent protagonists of a single Wik-Mungkan myth recorded by McConnel."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Min Tuktaiyan, the Black Snake Woman, is a named female serpent ancestor of the Wik-Mungkan, paired with the White Snake Man Mun U.ka in a myth recorded by Ursula McConnel from the narrator Lampas.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "McConnel, Ursula H. Myths of the Munkan. Melbourne: Melbourne University Press, 1957."
+          },
+          {
+            "kind": "primary",
+            "reference": "South Australian Museum, AA 191 Ursula Hope McConnel Collection, Series AA 191/16 'Texts, mainly in Wik-Mungkan', item AA 191/16/17, 'Myth of the White Snake Man Mun U.ka and the Black Snake Woman Min Tuktaiyan', recorded from Lampas."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Min Tuktaiyan, the Black Snake Woman, is a serpent ancestress of the Wik-Mungkan of western Cape York, the female counterpart in a paired myth recorded by Ursula McConnel from the narrator Lampas, in which she appears with the White Snake Man Mun U.ka. She stands among the pulwaiya, the ancestral totemic beings whose stories anchor clan cult and country, and is distinct from Taipan the rainbow-snake."
+  }
+]
+```

@@ -1,0 +1,320 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Yapese
+Era (registered, exact): "perennial"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two individuated Yapese figures beyond the existing sky-gods: Lug (Müller's Lugalang), the second great sky god who devours the "soul-that-dies," and Rumang, the toll-keeping gate-guard who judges the dead on the road to the afterworld and is wired to the existing chief god Yanolop. Both are drawn from the classic Yap ethnographies of Müller (1917) and Furness (1910), which document the Yapese pantheon and the soul's journey. I deliberately excluded Marespa and his soul-catching companion Mirrou (Ulithian apotheosis, a separate Carolinian tradition studied by Lessa) and the fisher-hero Motikitik (pan-Micronesian/Chuukese) as belonging to other corpus traditions rather than Yap proper. Attestation was constrained by loss of full-text access to Müller, Furness, and Lingenfelter during this session, so both figures are weighted "medium" and no dubious names were added to pad the set.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "yapese_lug",
+    "name": {
+      "primary": "Lug",
+      "alt": [
+        "Lugalang",
+        "Luk"
+      ],
+      "transliterations": {
+        "yap": "Lug",
+        "etymology": "A Yapese theonym; the name corresponds to the central Caroline sky-lord Lugeilang, with whom Müller equates the Yapese Lugalang."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yapese",
+    "primaryTradition": "Yapese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial",
+        "eraOrdering": 0,
+        "startEvent": "Müller records Lugalang as one of the two great Yapese sky gods alongside Yalafath, and Yapese afterlife belief holds that at death the soul-that-dies is consumed by the sky god Lug and a companion.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Müller, Wilhelm. Yap. Ergebnisse der Südsee-Expedition 1908–1910, II. Ethnographie, B. Mikronesien, Band 2. Hamburg: L. Friederichsen, 1917."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky-heaven",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Poignant, Roslyn. Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia. London: Paul Hamlyn, 1967."
+          }
+        ]
+      },
+      {
+        "sphereId": "death-and-the-dead",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "yaan ni yam",
+          "script": "Latin",
+          "rom": "the soul that dies"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Furness, William Henry, III. The Island of Stone Money: Uap of the Carolines. Philadelphia: J. B. Lippincott, 1910."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_soul_of_dead",
+        "name": "to devour the soul of the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "At death the soul-that-dies is consumed by Lug together with an unnamed companion.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Müller, Wilhelm. Yap. Ergebnisse der Südsee-Expedition 1908–1910, II. Ethnographie, B. Mikronesien, Band 2. Hamburg: L. Friederichsen, 1917."
+          }
+        ]
+      },
+      {
+        "id": "preside_over_heavens",
+        "name": "to preside over the heavens",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Named by Müller with Yalafath as one of the two ruling sky gods of Yap.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Poignant, Roslyn. Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia. London: Paul Hamlyn, 1967."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Lug (Lugalang) is a Yapese sky god paired with Yalafath in Müller's pantheon who, in Yapese afterlife belief, devours the soul-that-dies.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Müller, Wilhelm. Yap. Ergebnisse der Südsee-Expedition 1908–1910, II. Ethnographie, B. Mikronesien, Band 2. Hamburg: L. Friederichsen, 1917."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Furness, William Henry, III. The Island of Stone Money: Uap of the Carolines. Philadelphia: J. B. Lippincott, 1910."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Poignant, Roslyn. Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia. London: Paul Hamlyn, 1967."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Lug (recorded by Wilhelm Müller as Lugalang) is, with Yalafath, one of the two principal sky gods of Yap; Müller notes that both have counterparts in the atolls of the central Carolines, where the corresponding figure is the sky-lord Lugeilang. In the Yapese conception of the person each living being possesses two souls, one that lives and one that dies (yaan ni yam); when a person dies, the soul-that-dies is devoured by Lug and an unnamed companion, while the soul-that-lives wanders the earth. He is thus at once a celestial ruler and a devourer at the threshold of death, standing apart from the beneficent high god Yalafath and the chief god Yanolop who governs the afterworld proper."
+  },
+  {
+    "id": "yapese_rumang",
+    "name": {
+      "primary": "Rumang",
+      "alt": [
+        "Rumung"
+      ],
+      "transliterations": {
+        "yap": "Rumang",
+        "etymology": "A Yapese personal name borne by the guardian of the road to the afterworld; recorded in ethnographic accounts of the soul's journey."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yapese",
+    "primaryTradition": "Yapese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial",
+        "eraOrdering": 0,
+        "startEvent": "In the Yapese account of the soul's journey, the dead who would ascend to heaven must first offer stone money to the guard Rumang and pass his judgment before entering the clubhouse of the chief god Yanolop.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Furness, William Henry, III. The Island of Stone Money: Uap of the Carolines. Philadelphia: J. B. Lippincott, 1910."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "threshold-of-the-afterworld",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Müller, Wilhelm. Yap. Ergebnisse der Südsee-Expedition 1908–1910, II. Ethnographie, B. Mikronesien, Band 2. Hamburg: L. Friederichsen, 1917."
+          }
+        ]
+      },
+      {
+        "sphereId": "wealth-and-tribute",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "rai",
+          "script": "Latin",
+          "rom": "stone money"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Furness, William Henry, III. The Island of Stone Money: Uap of the Carolines. Philadelphia: J. B. Lippincott, 1910."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_road_of_the_dead",
+        "name": "to guard the road to the afterworld",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Rumang keeps the gate on the way-station road by which the dead pass from the earthly threshold toward heaven.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Furness, William Henry, III. The Island of Stone Money: Uap of the Carolines. Philadelphia: J. B. Lippincott, 1910."
+          }
+        ]
+      },
+      {
+        "id": "judge_souls_of_dead",
+        "name": "to weigh and judge the souls of the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Only those who satisfy Rumang's judgment may proceed into the afterworld.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Müller, Wilhelm. Yap. Ergebnisse der Südsee-Expedition 1908–1910, II. Ethnographie, B. Mikronesien, Band 2. Hamburg: L. Friederichsen, 1917."
+          }
+        ]
+      },
+      {
+        "id": "exact_toll_of_stone_money",
+        "name": "to demand a toll of stone money from the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The dead must offer stone money (rai) to Rumang before they may pass his gate.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Furness, William Henry, III. The Island of Stone Money: Uap of the Carolines. Philadelphia: J. B. Lippincott, 1910."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yapese_rai_toll",
+        "name": "Rai (toll of stone money)",
+        "kind": "emblem",
+        "role": "The offering of stone money that the departing soul must render to Rumang to be admitted onto the road to heaven.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Furness, William Henry, III. The Island of Stone Money: Uap of the Carolines. Philadelphia: J. B. Lippincott, 1910."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "yapese_yanolop",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Müller, Wilhelm. Yap. Ergebnisse der Südsee-Expedition 1908–1910, II. Ethnographie, B. Mikronesien, Band 2. Hamburg: L. Friederichsen, 1917."
+          }
+        ],
+        "notes": "Rumang keeps the toll-gate on the approach to the afterworld; the soul that passes him then enters the clubhouse of the chief god Yanolop, who makes the final separation of the worthy from the unworthy dead."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Rumang is the Yapese gate-keeper of the road to the afterworld who exacts a toll of stone money and judges the dead before they reach Yanolop's clubhouse.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Furness, William Henry, III. The Island of Stone Money: Uap of the Carolines. Philadelphia: J. B. Lippincott, 1910."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Müller, Wilhelm. Yap. Ergebnisse der Südsee-Expedition 1908–1910, II. Ethnographie, B. Mikronesien, Band 2. Hamburg: L. Friederichsen, 1917."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lingenfelter, Sherwood G. Yap: Political Leadership and Culture Change in an Island Society. Honolulu: University of Hawaii Press, 1975."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Rumang is the guardian of the road that the dead must travel to reach heaven in Yapese belief. After death the soul that would ascend is drawn by ritual incantation to a way-station, and from there it must offer stone money (rai) to Rumang and submit to his judgment before it is permitted to continue. Only those who satisfy him pass on into the clubhouse of the chief god Yanolop, who separates the good dead from the bad, such as those marked by disease. Rumang thus functions as a threshold judge and toll-keeper of the afterworld, a role that mirrors in the world of the dead the central place of stone money in Yapese life."
+  }
+]
+```

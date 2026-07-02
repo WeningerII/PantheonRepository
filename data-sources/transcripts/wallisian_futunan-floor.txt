@@ -1,0 +1,644 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Wallisian-Futunan
+Era (registered, exact): "Wallisian-Futunan traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four individuated figures documented for the Polynesian outliers of Futuna and 'Uvea (Wallis) and genealogically tied to the existing Fakavelikele: Finelasi (tutelary goddess of Futuna, dwelling on Mount Puke and known on Wallis as Kakahu); Malafulafu (protector-god of nature, animal-shifting, holder of a 'stone of life and death'); and the founding ancestral couple Mago and Tafaleata, said to have come from Samoa in a coconut and to have engendered Fakavelikele, Finelasi and Malafulafu. These are attested in Burrows' Ethnology of Futuna (1936), Guiot's 2000 study of Futunan sacred forests (Journal de la Société des Océanistes), Mayer's 1973 survey of Wallisian-Futunan oral tradition, and Abbal's 'Les mythes de Wallis et Futuna', and are distinct from the separately-corpus'd Samoan, Tongan and general Polynesian material. I stopped at four: repeated searches of Burrows' Ethnology of Uvea and the ethnographic literature surfaced no further individuated, named 'Uvea-specific deity beyond Kakahu/Finelasi — the remaining Wallisian religious record consists of unnamed atua tanutanu (deified chiefs) and the imported Tui Tokelau cult, neither of which yields new distinctly-Wallisian named individuals I could cite responsibly.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "wallisian_futunan_finelasi",
+    "name": {
+      "primary": "Finelasi (Protective Goddess of Futuna)",
+      "alt": [
+        "Finelasi",
+        "Kakahu",
+        "Kakau"
+      ],
+      "transliterations": {
+        "futunan": "Finelasi",
+        "wallisian": "Kakahu",
+        "etymology": "Commonly parsed from Polynesian fine/fafine 'woman' with lasi 'great, large', i.e. 'the great woman'; her Wallisian name Kakahu corresponds to a Polynesian word for a garment or wrapping-mat."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wallisian-Futunan",
+    "primaryTradition": "Wallisian-Futunan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "wallisian_futunan_mago",
+      "wallisian_futunan_tafaleata"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Wallisian-Futunan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wallisian-Futunan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In Futunan tradition Finelasi is honoured as the tutelary goddess of the island of Futuna, said to dwell on the summit of Mount Puke, and she is known on Wallis under the name Kakahu.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Guiot, Hélène. 'Gestion traditionnelle des espaces forestiers à Futuna (Polynésie occidentale): Contenu idéel et pratiques associées.' Journal de la Société des Océanistes 110 (2000): 61-75."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tutelary-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Guiot, Hélène. 'Gestion traditionnelle des espaces forestiers à Futuna (Polynésie occidentale): Contenu idéel et pratiques associées.' Journal de la Société des Océanistes 110 (2000): 61-75."
+          }
+        ]
+      },
+      {
+        "sphereId": "sacred-mountain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Puke",
+          "script": "Latin",
+          "rom": "Mount Puke"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_island",
+        "name": "to guard and protect the island of Futuna",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Guiot, Hélène. 'Gestion traditionnelle des espaces forestiers à Futuna (Polynésie occidentale).' Journal de la Société des Océanistes 110 (2000): 61-75."
+          }
+        ]
+      },
+      {
+        "id": "dwell_on_the_peak",
+        "name": "to reside upon the summit of Mount Puke",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "wallisian_futunan_malafulafu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ],
+        "notes": "Both are counted among the children of the ancestral couple Mago and Tafaleata, alongside the war-god Fakavelikele."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Finelasi (called Kakahu on Wallis) is the tutelary protective goddess of Futuna who dwells on Mount Puke and remains a popular figure of local devotion.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Guiot, Hélène. 'Gestion traditionnelle des espaces forestiers à Futuna (Polynésie occidentale): Contenu idéel et pratiques associées.' Journal de la Société des Océanistes 110 (2000): 61-75."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Finelasi is the protective goddess of the island of Futuna, one of the children of the ancestral couple Mago and Tafaleata and thus sister to the war-god Fakavelikele. Tradition places her dwelling on the 522-metre summit of Mount Puke, the island's highest point, which lends a sacred dimension to its ascent. On the neighbouring island of Wallis ('Uvea) she is known under the name Kakahu, and she remains a well-remembered figure of popular devotion into the modern period, illustrating the shared religious inheritance of the two Polynesian outliers."
+  },
+  {
+    "id": "wallisian_futunan_malafulafu",
+    "name": {
+      "primary": "Malafulafu (Protector God of Nature)",
+      "alt": [
+        "Malafulafu"
+      ],
+      "transliterations": {
+        "futunan": "Malafulafu",
+        "etymology": "The name is not securely etymologised in the ethnographic record; it is transmitted as a fixed proper name in Futunan oral tradition."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wallisian-Futunan",
+    "primaryTradition": "Wallisian-Futunan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "wallisian_futunan_mago",
+      "wallisian_futunan_tafaleata"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Wallisian-Futunan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wallisian-Futunan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Malafulafu is remembered in Futunan tradition as a protector of the natural world who could appear in animal form and who held a stone by which he granted life or dealt death.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "nature-wilderness",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vao tapu",
+          "script": "Latin",
+          "rom": "sacred forest / wild land"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Guiot, Hélène. 'Gestion traditionnelle des espaces forestiers à Futuna (Polynésie occidentale): Contenu idéel et pratiques associées.' Journal de la Société des Océanistes 110 (2000): 61-75."
+          }
+        ]
+      },
+      {
+        "sphereId": "life-and-death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_the_natural_world",
+        "name": "to protect the forests and living things of the land",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Guiot, Hélène. 'Gestion traditionnelle des espaces forestiers à Futuna (Polynésie occidentale).' Journal de la Société des Océanistes 110 (2000): 61-75."
+          }
+        ]
+      },
+      {
+        "id": "take_animal_form",
+        "name": "to appear in the form of animals such as the turtle, dog, dove or whale",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ]
+      },
+      {
+        "id": "grant_life_or_death",
+        "name": "to grant life or deal death by means of a sacred stone",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "wallisian_futunan_fatu_mauli_mate",
+        "name": "Stone of life and death",
+        "kind": "relic",
+        "role": "sacred stone by which Malafulafu could bestow life or bring about death",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "wallisian_futunan_finelasi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ],
+        "notes": "Both are numbered among the offspring of Mago and Tafaleata, together with the war-god Fakavelikele."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Malafulafu is a Futunan protector-god of nature, able to assume animal shapes and possessing a stone of life and death, reckoned among the children of Mago and Tafaleata.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Guiot, Hélène. 'Gestion traditionnelle des espaces forestiers à Futuna (Polynésie occidentale): Contenu idéel et pratiques associées.' Journal de la Société des Océanistes 110 (2000): 61-75."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Malafulafu is a Futunan divinity charged with the protection of the natural world. Like other lesser gods of Futuna he was believed able to manifest in animal form, the tutelary beasts of the island including the turtle, the dog, the dove and the whale; he is further distinguished by a 'stone of life and death' through which he could give or take life. In the founding genealogy he is one of the children of the ancestral couple Mago and Tafaleata, and thus a brother of the goddess Finelasi and the war-god Fakavelikele. His association with the wild land connects him to the vao tapu, the sacred forest tracts that traditional Futunan and Wallisian religion regarded as reservoirs of life."
+  },
+  {
+    "id": "wallisian_futunan_mago",
+    "name": {
+      "primary": "Mago (Ancestral Father of the Alo Lineage)",
+      "alt": [
+        "Mago"
+      ],
+      "transliterations": {
+        "futunan": "Mago",
+        "etymology": "The name coincides with a widespread Polynesian word mago/mako 'shark', though the ethnographic sources transmit it simply as the personal name of the founding ancestor."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wallisian-Futunan",
+    "primaryTradition": "Wallisian-Futunan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wallisian-Futunan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wallisian-Futunan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Futunan tradition tells that Mago and his wife Tafaleata came from Samoa borne within a coconut, becoming the divine ancestors from whom the war-god Fakavelikele and the founding kingship of Alo descend.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-lineage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kutuga",
+          "script": "Latin",
+          "rom": "descent group / lineage"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "father_the_alo_kingship",
+        "name": "to father the founding lineage of the Alo kingship of Futuna",
+        "term": {
+          "value": "sau",
+          "script": "Latin",
+          "rom": "paramount chief / king"
+        },
+        "inheritability": "lineal",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "wallisian_futunan_niu_voyage",
+        "name": "Voyaging coconut",
+        "kind": "vessel",
+        "role": "the coconut within which Mago and Tafaleata are said to have travelled from Samoa to Futuna",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "wallisian_futunan_tafaleata",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ],
+        "notes": "Mago and Tafaleata are the founding ancestral couple of the Alo tradition of Futuna."
+      },
+      {
+        "kind": "father-of",
+        "personId": "wallisian_futunan_fakavelikele",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ],
+        "notes": "The war-god and founding sau Fakavelikele is counted among the children of Mago and Tafaleata."
+      },
+      {
+        "kind": "father-of",
+        "personId": "wallisian_futunan_finelasi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ],
+        "notes": "The protective goddess Finelasi is likewise reckoned a daughter of Mago and Tafaleata."
+      },
+      {
+        "kind": "father-of",
+        "personId": "wallisian_futunan_malafulafu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ],
+        "notes": "The nature-god Malafulafu is counted among the children of Mago and Tafaleata."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mago is the ancestral father of the Futunan founding couple, said to have arrived from Samoa in a coconut with his wife Tafaleata and to have engendered the war-god Fakavelikele and the Alo kingship.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mayer, Raymond. 'Un millier de légendes aux îles Wallis et Futuna et divers centres d'intérêt de la tradition orale.' Journal de la Société des Océanistes 29, no. 38 (1973): 69-100."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mago is the ancestral father of the founding couple of Futuna's Alo tradition. Oral tradition recorded by Burrows relates that Mago and his wife Tafaleata came from Samoa, carried within a coconut, and settled at Alo; from them descend the war-god and first sau (paramount chief) Fakavelikele, whose title the paramount lineage of Alo, later renamed Tui Agaifo, still traces to itself. In the wider mythic genealogy Mago and Tafaleata are also named as parents of the protective goddess Finelasi and the nature-god Malafulafu. The narrative encodes the strong Samoan strand in Futunan origin traditions, distinct from the separate mythologies of Samoa itself."
+  },
+  {
+    "id": "wallisian_futunan_tafaleata",
+    "name": {
+      "primary": "Tafaleata (Ancestral Mother of the Alo Lineage)",
+      "alt": [
+        "Tafaleata",
+        "Tafaleat"
+      ],
+      "transliterations": {
+        "futunan": "Tafaleata",
+        "etymology": "Transmitted as the personal name of the founding ancestress in Futunan oral tradition; no settled etymology is given in the ethnographic sources."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wallisian-Futunan",
+    "primaryTradition": "Wallisian-Futunan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wallisian-Futunan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wallisian-Futunan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Tafaleata, wife of Mago, is remembered in Futunan tradition as the ancestral mother who came from Samoa within a coconut and bore the founding deities of the Alo kingship.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-lineage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kutuga",
+          "script": "Latin",
+          "rom": "descent group / lineage"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mother_the_founding_deities",
+        "name": "to bring forth the founding gods and kingly lineage of Futuna",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "lineal",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mayer, Raymond. 'Un millier de légendes aux îles Wallis et Futuna et divers centres d'intérêt de la tradition orale.' Journal de la Société des Océanistes 29, no. 38 (1973): 69-100."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "wallisian_futunan_mago",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ],
+        "notes": "Tafaleata and Mago form the founding ancestral couple of the Alo tradition of Futuna."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "wallisian_futunan_fakavelikele",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          }
+        ],
+        "notes": "The war-god Fakavelikele is numbered among the children of Tafaleata and Mago."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "wallisian_futunan_finelasi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ],
+        "notes": "The protective goddess Finelasi is reckoned a daughter of Tafaleata and Mago."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "wallisian_futunan_malafulafu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ],
+        "notes": "The nature-god Malafulafu is likewise counted a child of Tafaleata and Mago."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tafaleata is the ancestral mother of Futuna's founding couple, wife of Mago, said to have come from Samoa in a coconut and to have borne the war-god Fakavelikele and his divine siblings.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Burrows, Edwin G. Ethnology of Futuna. Bernice P. Bishop Museum Bulletin 138. Honolulu: Bishop Museum Press, 1936."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mayer, Raymond. 'Un millier de légendes aux îles Wallis et Futuna et divers centres d'intérêt de la tradition orale.' Journal de la Société des Océanistes 29, no. 38 (1973): 69-100."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Abbal, Odon. 'Les mythes de Wallis et Futuna.' Nîmes: Académie de Nîmes (academia.edu working paper)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tafaleata is the ancestral mother of the founding couple of Futuna's Alo tradition and the wife of Mago. In the origin narrative recorded by Burrows, she and Mago arrived from Samoa carried within a coconut and became the parents of the founding gods of Futuna, foremost among them the war-god and first sau Fakavelikele, and in the fuller genealogy also the protective goddess Finelasi and the nature-god Malafulafu. As the female principle of the founding pair she anchors the descent of the paramount lineage of Alo, later styled Tui Agaifo."
+  }
+]
+```
