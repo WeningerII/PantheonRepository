@@ -1,0 +1,1356 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Itelmen
+Era (registered, exact): "mythic / first-times", "mythic / first-times (creation of Kamchatka)"
+Author pass: floor-raising expansion — attested individuated figures still missing (10 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the ten individuated Itelmen figures still missing from the corpus: the tale-cycle children of Kutkh and Miti (Ememkut, Sisilkhan, Sirim; Jochelson/Worth 1961, Menovshchikov 1974, Meletinskii 1979 and 1982) and the 18th-century pantheon recorded by Krasheninnikov (1755; Eng. trans. Crownhart-Vaughan 1972) and Steller (1774) and summarized by Sirina & Murashko (2010): Symskalin, Tyzhil-Kutkhu, Siduka, Gaech, Bilyukai/Pilyachuch, Tuil and Mitg. Pilyachuch is folded into Bilyukai because the sources equate the two names, and Krasheninnikov's Il'kkhum was deliberately not authored since she fills the same wife-of-Kutkh slot as the existing Miti record. Remaining attested names were judged too thin to individuate here and are noted only in prose: single-mention genealogical or weather figures (Amleia, Sidukamshich, Khutlyzhich, the sea-maker Utleigyn, the wind-man Balakitg and his wife Savina-Kugagt, the dog Kozei), minor tale characters (Kotkhanamtalkhan, Nyaa, Anaraklnavt, Chelkutkh, Marokl'navt), and unindividuated spirit classes (gamuly, ushakhchu, kanna).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "itelmen_ememkut",
+    "name": {
+      "primary": "Ememkut",
+      "alt": [
+        "Ememqut",
+        "Ememkut",
+        "Эмэмкут",
+        "Эмемкут"
+      ],
+      "transliterations": {
+        "itelmen": "Ememqut",
+        "ru": "Эмэмкут",
+        "etymology": "Name of the Raven's eldest son throughout Chukotko-Kamchatkan Raven-cycle folklore, identical with Koryak Ememqut (Meletinskii, Paleoaziatskii mifologicheskii epos, 1979)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "itelmen_kutkh",
+      "itelmen_miti"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic / first-times"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times",
+        "eraOrdering": 0,
+        "startEvent": "Born as the eldest son of the raven-creator Kutkh and his wife Miti, at the head of the first family of the Itelmen tale cycle.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia' [Mythology of the Palaeo-Asiatic peoples], in Mify narodov mira: Entsiklopediia, ed. S. A. Tokarev, vol. 2 (Moscow: Sovetskaia Entsiklopediia, 1982)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki [Tales and Myths of the Peoples of Chukotka and Kamchatka], ed. E. M. Meletinskii (Moscow: Nauka, 1974), Itelmen section."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hunting-and-heroic-success",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Эмэмкут",
+          "script": "Cyrillic",
+          "rom": "Ememkut"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki, ed. E. M. Meletinskii (Moscow: Nauka, 1974), Itelmen tales of Ememkut's hunts and marriages."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "prevail_in_hunt_and_contest",
+        "name": "to prevail in hunting, wooing and contests with rivals and monsters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the recorded tales Ememkut is the successful hunter and suitor of supernatural brides, overcoming evil spirits and rivals where his envious brother Sisilkhan fails.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, Paleoaziatskii mifologicheskii epos: Tsikl Vorona [The Palaeo-Asiatic Mythological Epic: The Raven Cycle] (Moscow: Nauka, 1979)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "itelmen_sisilkhan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki, ed. E. M. Meletinskii (Moscow: Nauka, 1974), Itelmen section."
+          }
+        ],
+        "notes": "Sisilkhan is Ememkut's younger brother in the Itelmen tale cycle; the two brothers appear together in numerous recorded tales."
+      },
+      {
+        "kind": "rival",
+        "personId": "itelmen_sisilkhan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia', in Mify narodov mira, vol. 2 (1982)."
+          }
+        ],
+        "notes": "The envious Sisilkhan constantly plots against Ememkut, who invariably prevails; the pair form the classic successful-elder versus scheming-younger opposition of the cycle."
+      },
+      {
+        "kind": "sibling",
+        "personId": "itelmen_sirim",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki (Moscow: Nauka, 1974), Itelmen section."
+          }
+        ],
+        "notes": "Sirim is a younger daughter of Kutkh and Miti and thus Ememkut's sister in the tale cycle."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ememkut is the eldest son of the raven-creator Kutkh and his wife Miti and the principal hero of the recorded Itelmen Raven-cycle tales.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia' [Mythology of the Palaeo-Asiatic peoples], in Mify narodov mira: Entsiklopediia, ed. S. A. Tokarev, vol. 2 (Moscow: Sovetskaia Entsiklopediia, 1982)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kamchadal Texts Collected by W. Jochelson, ed. Dean S. Worth, Janua Linguarum Series Maior 2 ('s-Gravenhage: Mouton, 1961), tales of Ememqut."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki [Tales and Myths of the Peoples of Chukotka and Kamchatka], ed. E. M. Meletinskii (Moscow: Nauka, 1974), Itelmen section."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ememkut (Itelmen Ememqut) is the eldest son of the raven-creator Kutkh and Miti and the most frequent hero of the Itelmen tale corpus recorded by Waldemar Jochelson in 1910-11 and republished in Russian by G. A. Menovshchikov. He is the successful hunter and provider of the raven family, wins supernatural wives, and defeats evil spirits and his scheming younger brother Sisilkhan; in one well-known tale he even contends with his own father ('The struggle of Kutkh with Ememkut'). The figure is shared across the Chukotko-Kamchatkan area, corresponding exactly to Ememqut, son of Big-Raven, among the neighbouring Koryak."
+  },
+  {
+    "id": "itelmen_sisilkhan",
+    "name": {
+      "primary": "Sisilkhan",
+      "alt": [
+        "Sisil'khan",
+        "Chichikan",
+        "Сисильхан"
+      ],
+      "transliterations": {
+        "ru": "Сисильхан",
+        "etymology": "Name of the Raven's younger son in the Itelmen tale corpus, recorded in the variant form Chichikan (Meletinskii, in Mify narodov mira, vol. 2, 1982)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "itelmen_kutkh",
+      "itelmen_miti"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic / first-times"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times",
+        "eraOrdering": 0,
+        "startEvent": "Enters the tale cycle as a younger son of Kutkh and Miti, the envious counterpart of his elder brother Ememkut.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki, ed. E. M. Meletinskii (Moscow: Nauka, 1974), Itelmen tales such as 'The bold Ememkut and the envious Sisilkhan'."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "envy-and-kin-rivalry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Сисильхан",
+          "script": "Cyrillic",
+          "rom": "Sisilkhan"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia', in Mify narodov mira, vol. 2 (1982): Sisilkhan as the negative character who constantly schemes against Kutkh's elder children."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "scheme_against_kin",
+        "name": "to plot mischief against his elder brother and sister",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In tale after tale Sisilkhan covets what Ememkut has won, including his wife, and sends his sister Sirim on errands of intrigue; his schemes always end in his own humiliation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki (Moscow: Nauka, 1974), Itelmen tales of Sisilkhan, including 'Sisilkhan and Ememkut's wife'."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "itelmen_ememkut",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki (Moscow: Nauka, 1974), Itelmen section."
+          }
+        ],
+        "notes": "Ememkut is Sisilkhan's elder brother, whose success in hunting and marriage Sisilkhan envies."
+      },
+      {
+        "kind": "rival",
+        "personId": "itelmen_ememkut",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia', in Mify narodov mira, vol. 2 (1982)."
+          }
+        ],
+        "notes": "Sisilkhan is the standing antagonist of Ememkut within the raven family, the scheming younger rival who is always defeated."
+      },
+      {
+        "kind": "sibling",
+        "personId": "itelmen_sirim",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia', in Mify narodov mira, vol. 2 (1982): 'Sisilkhan (Chichikan) and his sister Sirim'."
+          }
+        ],
+        "notes": "Sirim is Sisilkhan's sister and habitual accomplice, whom he sends to Ememkut with his schemes."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sisilkhan is a younger son of Kutkh and Miti in the Itelmen tale cycle, the envious negative counterpart who constantly plots against the elder children Ememkut and Sinanevt.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia' [Mythology of the Palaeo-Asiatic peoples], in Mify narodov mira: Entsiklopediia, ed. S. A. Tokarev, vol. 2 (Moscow: Sovetskaia Entsiklopediia, 1982)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki [Tales and Myths of the Peoples of Chukotka and Kamchatka], ed. E. M. Meletinskii (Moscow: Nauka, 1974), Itelmen section."
+          },
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, Paleoaziatskii mifologicheskii epos: Tsikl Vorona [The Palaeo-Asiatic Mythological Epic: The Raven Cycle] (Moscow: Nauka, 1979)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sisilkhan is the younger son of the raven-creator Kutkh and Miti and the standing villain of the Itelmen tale cycle: envious, lazy and boastful, he covets his elder brother Ememkut's game, brides and good fortune, sends his sister Sirim to spy and slander, and is regularly shamed or destroyed by his own devices. Meletinskii notes that in some tellings the scheming pair function instead as cousins of the elder children, and records the variant name Chichikan. The figure corresponds functionally to the envious-cousin antagonists (Illa, Kilu) of the neighbouring Koryak Raven cycle."
+  },
+  {
+    "id": "itelmen_sirim",
+    "name": {
+      "primary": "Sirim",
+      "alt": [
+        "Сирим"
+      ],
+      "transliterations": {
+        "ru": "Сирим",
+        "etymology": "Name of a younger daughter of Kutkh in the Itelmen tale corpus recorded by Jochelson and republished by Menovshchikov (1974)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "itelmen_kutkh",
+      "itelmen_miti"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic / first-times"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times",
+        "eraOrdering": 0,
+        "startEvent": "Enters the tale cycle as a younger daughter of Kutkh and Miti, paired with her brother Sisilkhan against the elder siblings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki, ed. E. M. Meletinskii (Moscow: Nauka, 1974), Itelmen section."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kin-rivalry-and-misadventure",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Сирим",
+          "script": "Cyrillic",
+          "rom": "Sirim"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia', in Mify narodov mira, vol. 2 (1982): Sirim as sister of the scheming Sisilkhan."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear_messages_in_schemes",
+        "name": "to carry messages and further her brother's schemes",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the tales Sisilkhan repeatedly sends Sirim to Ememkut's household with his intrigues; in other episodes she comes to grief on her own, as when the Wind snatches her away in a blizzard after Kutkh sends her out to check the weather.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki (Moscow: Nauka, 1974), Itelmen tales featuring Sirim."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "itelmen_ememkut",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki (Moscow: Nauka, 1974), Itelmen section."
+          }
+        ],
+        "notes": "Ememkut is Sirim's elder brother; she generally stands opposite him on the side of Sisilkhan in the tales."
+      },
+      {
+        "kind": "sibling",
+        "personId": "itelmen_sisilkhan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia', in Mify narodov mira, vol. 2 (1982)."
+          }
+        ],
+        "notes": "Sirim is the sister and habitual accomplice of the scheming Sisilkhan, forming the junior pair opposed to the elder children of Kutkh."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sirim is a younger daughter of Kutkh and Miti in the Itelmen tale cycle, the sister and accomplice of the scheming Sisilkhan.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "E. M. Meletinskii, 'Paleoaziatskikh narodov mifologiia' [Mythology of the Palaeo-Asiatic peoples], in Mify narodov mira: Entsiklopediia, ed. S. A. Tokarev, vol. 2 (Moscow: Sovetskaia Entsiklopediia, 1982)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. A. Menovshchikov (comp.), Skazki i mify narodov Chukotki i Kamchatki [Tales and Myths of the Peoples of Chukotka and Kamchatka], ed. E. M. Meletinskii (Moscow: Nauka, 1974), Itelmen section."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sirim is a younger daughter of the raven-creator Kutkh and Miti in the recorded Itelmen tales. She is usually paired with her brother Sisilkhan as the junior, unsuccessful counterpart of the elder siblings Ememkut and Sinanevt, running his errands of intrigue, and she also appears in independent comic misadventures, as when her father sends her outside to check the weather and the Wind carries her off in a blizzard. Meletinskii treats the Sisilkhan-Sirim pair as the Itelmen counterpart of the envious rival siblings of the wider Palaeo-Asiatic Raven cycle."
+  },
+  {
+    "id": "itelmen_symskalin",
+    "name": {
+      "primary": "Symskalin",
+      "alt": [
+        "Simskalin",
+        "Сымскалин"
+      ],
+      "transliterations": {
+        "ru": "Сымскалин",
+        "etymology": "Recorded by Krasheninnikov (1755) as the name of Kutkhu's first-born son, from whose body the earth was made."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "itelmen_kutkh"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic / first-times (creation of Kamchatka)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times (creation of Kamchatka)",
+        "eraOrdering": 0,
+        "startEvent": "Born in the sea to Kutkhu's wife Il'kkhum and commanded by his father to turn into the earth, so that the land itself was formed from his body.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3, ch. 11, 'On God, the creation of the earth, and the dogmas of the Kamchadal faith'."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "formation-of-the-land",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Сымскалин",
+          "script": "Cyrillic",
+          "rom": "Symskalin"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11: the Kamchadals say Kutkhu made the earth from his son Symskalin."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "become_the_land",
+        "name": "to turn his body into the newly made earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Born in the water, he floated with his head to the west and his feet to the east, and at Kutkhu's command his body became the earth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "itelmen_tyzhil_kutkhu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ],
+        "notes": "Tyzhil-Kutkhu is Kutkhu's later-born son, brother of Symskalin in Krasheninnikov's account of the creator's family."
+      },
+      {
+        "kind": "sibling",
+        "personId": "itelmen_siduka",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ],
+        "notes": "Siduka is Kutkhu's daughter, sister of Symskalin in Krasheninnikov's account of the creator's family."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Symskalin is the first-born son of the creator Kutkhu, borne at sea by Kutkhu's wife Il'kkhum, from whose body, at his father's command, the earth was made.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3, ch. 11, 'On God, the creation of the earth, and the dogmas of the Kamchadal faith'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the cosmogony recorded from the Kamchadals by Stepan Krasheninnikov in the 1730s, the creator Kutkhu came down with his wife Il'kkhum to the primeval sea; she sank to her breast in the water and there gave birth to a son, Symskalin, who floated with his head to the west and his feet to the east, and Kutkhu commanded the boy to turn into the earth. Krasheninnikov also records a competing version in which Kutkhu and his sister Khutlyzhich brought the earth down from the sky and set it upon the sea. Symskalin thus stands at the very beginning of the Itelmen first-times, the primordial child whose body is the land."
+  },
+  {
+    "id": "itelmen_tyzhil_kutkhu",
+    "name": {
+      "primary": "Tyzhil-Kutkhu",
+      "alt": [
+        "Tizhil-Kutkhu",
+        "Tyzil-Kutkhu",
+        "Тыжил-Кутху"
+      ],
+      "transliterations": {
+        "ru": "Тыжил-Кутху",
+        "etymology": "Compound name containing Kutkhu, the raven-creator's own name, as recorded by Krasheninnikov (1755)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "itelmen_kutkh"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic / first-times (creation of Kamchatka)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times (creation of Kamchatka)",
+        "eraOrdering": 0,
+        "startEvent": "Born to Kutkhu after the creator settled on Kamchatka, and left as master of the land when Kutkhu departed.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3, ch. 11."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation-of-the-land-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Тыжил-Кутху",
+          "script": "Cyrillic",
+          "rom": "Tyzhil-Kutkhu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11: Tyzhil-Kutkhu, not Kutkhu, created the land animals and set Pilyachuch over them as herdsman."
+          }
+        ]
+      },
+      {
+        "sphereId": "subsistence-crafts-boats-and-nets",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972): Tyzhil-Kutkhu taught the making of boats and the weaving of nettle nets."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_land_animals",
+        "name": "to create the land animals and clothe people in their skins",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Because it was Tyzhil-Kutkhu and not Kutkhu who made the animals, the Kamchadals directed their November festivities and prayers to the son rather than to the departed creator.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ]
+      },
+      {
+        "id": "invent_boats_and_nets",
+        "name": "to devise boats and nettle-fibre fishing nets",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Having lived at first on birch and willow bark, he invented net-weaving from nettle fibre and taught his son Amleia to catch fish with it, and showed people how to make boats.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "itelmen_nettle_fishing_net",
+        "name": "Nettle-fibre fishing net",
+        "kind": "tool",
+        "role": "The first fishing net, which he devised and taught his son Amleia to use.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ]
+      },
+      {
+        "id": "itelmen_first_boats",
+        "name": "First boats",
+        "kind": "vehicle",
+        "role": "The watercraft whose making he taught to the people of Kamchatka.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka, trans. E. A. P. Crownhart-Vaughan (1972)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "itelmen_siduka",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ],
+        "notes": "After Kutkhu's departure from Kamchatka, Tyzhil-Kutkhu took his sister Siduka to wife; from their line the peoples of Kamchatka descend."
+      },
+      {
+        "kind": "sibling",
+        "personId": "itelmen_siduka",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ],
+        "notes": "Siduka is his sister, both being children of the creator Kutkhu."
+      },
+      {
+        "kind": "sibling",
+        "personId": "itelmen_symskalin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ],
+        "notes": "Symskalin, the first-born who became the earth, is his brother in Krasheninnikov's genealogy of the creator's family."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tyzhil-Kutkhu is the son of the creator Kutkhu who remained on Kamchatka after his father's departure, married his sister Siduka, created the land animals, invented boats and nettle nets, and became the ancestor and honoured object of the Kamchadals' November festivities.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3, ch. 11, 'On God, the creation of the earth, and the dogmas of the Kamchadal faith'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In Krasheninnikov's account of the Kamchadal faith, Tyzhil-Kutkhu is the son born to the creator Kutkhu and his wife Il'kkhum after the family settled on Kamchatka. When Kutkhu left the peninsula, Tyzhil-Kutkhu married his sister Siduka and remained as master of the land: he created the land animals and appointed the cloud-dweller Pilyachuch (Bilyukai) their herdsman, made clothing from their skins, and, after living at first on bark, invented boats and nettle-fibre fishing nets, teaching his son Amleia to fish. Krasheninnikov stresses that the Kamchadals therefore honoured Tyzhil-Kutkhu rather than Kutkhu, celebrating him at their November festival; through Amleia and the daughter Sidukamshich his line was held to be the source of the peoples of Kamchatka."
+  },
+  {
+    "id": "itelmen_siduka",
+    "name": {
+      "primary": "Siduka",
+      "alt": [
+        "Sidukа",
+        "Сидука"
+      ],
+      "transliterations": {
+        "ru": "Сидука",
+        "etymology": "Recorded by Krasheninnikov (1755) as the name of Kutkhu's daughter, sister-wife of Tyzhil-Kutkhu."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "itelmen_kutkh"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic / first-times (creation of Kamchatka)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times (creation of Kamchatka)",
+        "eraOrdering": 0,
+        "startEvent": "Born to Kutkhu on Kamchatka and, after her father's departure, married to her brother Tyzhil-Kutkhu as the first wife of the land.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3, ch. 11."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-of-the-peoples",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Сидука",
+          "script": "Cyrillic",
+          "rom": "Siduka"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11: from the marriage of Tyzhil-Kutkhu and Siduka the peoples were held to descend."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mother_the_first_line",
+        "name": "to bear the line from which the peoples of Kamchatka descend",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her children Amleia and Sidukamshich were married to one another, and from them, in the account Krasheninnikov recorded, the peoples descended.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "itelmen_tyzhil_kutkhu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ],
+        "notes": "After the creator Kutkhu left Kamchatka, Siduka became the wife of her brother Tyzhil-Kutkhu, the pair remaining as the first couple of the land."
+      },
+      {
+        "kind": "sibling",
+        "personId": "itelmen_tyzhil_kutkhu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ],
+        "notes": "Tyzhil-Kutkhu is her brother, both being children of the creator Kutkhu."
+      },
+      {
+        "kind": "sibling",
+        "personId": "itelmen_symskalin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ],
+        "notes": "Symskalin, the first-born who became the earth, is her brother in Krasheninnikov's genealogy of the creator's family."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Siduka is the daughter of the creator Kutkhu who married her brother Tyzhil-Kutkhu after their father left Kamchatka, and through her children Amleia and Sidukamshich became the ancestress of the peoples of Kamchatka.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3, ch. 11, 'On God, the creation of the earth, and the dogmas of the Kamchadal faith'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Siduka is the daughter of the creator Kutkhu and his wife Il'kkhum in the Kamchadal cosmogony recorded by Krasheninnikov. When Kutkhu departed from Kamchatka, she was married to her brother Tyzhil-Kutkhu; she bore the son Amleia and the daughter Sidukamshich, who were in turn married to one another, and from this first family the Kamchadals derived the peoples of the land. She thus stands as the primordial ancestress of the Itelmen genealogical myth, the counterpart in Krasheninnikov's record of the folkloric mother-figure Miti of the tale cycle."
+  },
+  {
+    "id": "itelmen_gaech",
+    "name": {
+      "primary": "Gaech",
+      "alt": [
+        "Gaech'",
+        "Haetsch",
+        "Гаеч",
+        "Гаечь"
+      ],
+      "transliterations": {
+        "ru": "Гаеч",
+        "de": "Haetsch",
+        "etymology": "Recorded as Gaech' by Krasheninnikov (1755) and as Haetsch in Steller's German account (1774)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "itelmen_kutkh"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic / first-times (creation of Kamchatka)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times (creation of Kamchatka)",
+        "eraOrdering": 0,
+        "startEvent": "Counted among the elder sons of Kutkh and held to be the first person to die in Kamchatka, whereupon he became the host and master of the dead beneath the earth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov' [Beliefs of the Itelmens], in Narody Severo-Vostoka Sibiri [Peoples of North-East Siberia], ed. E. P. Bat'ianova and V. A. Turaev (Moscow: Nauka, 2010)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, on the Kamchadal faith and the state of the dead."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld-of-the-dead",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Гаеч",
+          "script": "Cyrillic",
+          "rom": "Gaech"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov', in Narody Severo-Vostoka Sibiri (Moscow: Nauka, 2010): the spirit-master of the underworld, where the spirits and the dead live, is Gaech."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "host_the_dead",
+        "name": "to receive and host the dead in the underground world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Gaech receives all dead Kamchadals below the earth and reverses their earthly fortunes: those who arrive rich, with fine clothing and good dog-teams, are given poor ones, while the poor receive good clothing, good dogs and a good place to settle.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Gaech is a son of the raven-creator Kutkh, the first person to die in Kamchatka, who became the master of the underground world where he receives and hosts all the dead.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3, on the Kamchadal faith and the state of the dead."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. W. Steller, Beschreibung von dem Lande Kamtschatka (Frankfurt and Leipzig: J. G. Fleischer, 1774), on the Itelmen afterlife; English: Steller's History of Kamchatka, trans. Margritt Engel and Karen Willmore (Fairbanks: University of Alaska Press, 2003)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov' [Beliefs of the Itelmens], in Narody Severo-Vostoka Sibiri, ed. E. P. Bat'ianova and V. A. Turaev (Moscow: Nauka, 2010)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gaech (Steller's Haetsch) is the master of the underground world in the Itelmen cosmology recorded in the eighteenth century. Born of Kutkh, he was the first person to die in Kamchatka and lived alone below the earth until his two daughters died and joined him; thereafter he received all the dead, who continue below an existence much like the one above. Krasheninnikov records a pointed reversal in his hospitality: the dead who arrive rich in clothing and dog-teams are given poor ones, while the poor are given good clothing, good dogs and a good place to settle. Fear of the returning dead visiting in Gaech's manner was given as the reason the Kamchadals abandoned a dwelling in which someone had died."
+  },
+  {
+    "id": "itelmen_bilyukai",
+    "name": {
+      "primary": "Bilyukai",
+      "alt": [
+        "Billukai",
+        "Pilyachuch",
+        "Piliachuch",
+        "Билюкай",
+        "Пилячуч"
+      ],
+      "transliterations": {
+        "ru": "Билюкай",
+        "etymology": "The cloud-dwelling thunderer of the Kamchadals, recorded under the double name Bilyukai / Pilyachuch by Krasheninnikov (1755) and Steller (1774)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / first-times"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times",
+        "eraOrdering": 0,
+        "startEvent": "Set over the land animals as their herdsman when Tyzhil-Kutkhu created them, and dwelling ever since on the clouds with his attendant gamul spirits.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3, ch. 11."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder-lightning-and-rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Билюкай",
+          "script": "Cyrillic",
+          "rom": "Bilyukai"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3: Bilyukai lives on the clouds with many gamuls and sends thunder, lightning and rain, the rainbow being the trim of his garment."
+          }
+        ]
+      },
+      {
+        "sphereId": "mastery-of-the-land-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Пилячуч",
+          "script": "Cyrillic",
+          "rom": "Pilyachuch"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov', in Narody Severo-Vostoka Sibiri (Moscow: Nauka, 2010): the spirit-master of the animals was Pilyachuch (Bilyukai)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send_thunder_and_rain",
+        "name": "to send thunder, lightning and rain from the clouds",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Kamchadals explained storms as his doing and saw the rainbow as the hem of his garment.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. W. Steller, Beschreibung von dem Lande Kamtschatka (Frankfurt and Leipzig: J. G. Fleischer, 1774), on the Itelmen weather beliefs."
+          }
+        ]
+      },
+      {
+        "id": "master_the_land_animals",
+        "name": "to command the land animals as their herdsman and master",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Tyzhil-Kutkhu, having created the land animals, set Pilyachuch over them; hunters therefore reckoned with the little master of the beasts.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov', in Narody Severo-Vostoka Sibiri (Moscow: Nauka, 2010)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "itelmen_rainbow_hem_kukhlyanka",
+        "name": "Wolverine-fur garment with rainbow hem",
+        "kind": "regalia",
+        "role": "His prized wolverine-skin coat, whose motley hem the Kamchadals saw in the rainbow.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3."
+          }
+        ]
+      },
+      {
+        "id": "itelmen_ptarmigan_bird_team",
+        "name": "Team of birds",
+        "kind": "mount",
+        "role": "The birds, especially ptarmigans, on which the tiny thunderer rides; people claimed at times to see his tracks.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "itelmen_tyzhil_kutkhu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3, ch. 11."
+          }
+        ],
+        "notes": "When Tyzhil-Kutkhu created the land animals he appointed Pilyachuch (Bilyukai) as their herdsman, so the little cloud-dweller keeps the beasts on the son of the creator's behalf."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bilyukai, also called Pilyachuch, is the tiny cloud-dwelling weather god and master of the land animals of the Kamchadals, who sends thunder, lightning and rain, wears a wolverine garment whose hem is the rainbow, and rides on birds.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. W. Steller, Beschreibung von dem Lande Kamtschatka (Frankfurt and Leipzig: J. G. Fleischer, 1774); English: Steller's History of Kamchatka, trans. Margritt Engel and Karen Willmore (Fairbanks: University of Alaska Press, 2003)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov' [Beliefs of the Itelmens], in Narody Severo-Vostoka Sibiri, ed. E. P. Bat'ianova and V. A. Turaev (Moscow: Nauka, 2010)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bilyukai, whom the eighteenth-century sources also call Pilyachuch, is the thunderer of the Kamchadal (Itelmen) world-picture: a man of very small stature who lives on the clouds with a host of gamul spirits and sends down thunder, lightning and rain, the rainbow being taken for the motley hem of his garment. He wears a coat of wolverine skin, the fur the Kamchadals prized most, and travels riding on birds, especially ptarmigans, whose passenger's tracks people sometimes claimed to find. In the creation account, Tyzhil-Kutkhu made the land animals and set Pilyachuch over them as their herdsman, and later ethnography accordingly describes him as the spirit-master of the animals."
+  },
+  {
+    "id": "itelmen_tuil",
+    "name": {
+      "primary": "Tuil",
+      "alt": [
+        "Tuila",
+        "Туил",
+        "Туила"
+      ],
+      "transliterations": {
+        "ru": "Туил",
+        "etymology": "Recorded by Krasheninnikov (1755) as the name of the being who causes earthquakes; the fuller form Tuila also appears in the sources."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / first-times"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times",
+        "eraOrdering": 0,
+        "startEvent": "Rides beneath the earth on his sled since the first-times, the ground quaking whenever his dog Kozei shakes itself.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earthquakes",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Туил",
+          "script": "Cyrillic",
+          "rom": "Tuil"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov', in Narody Severo-Vostoka Sibiri (Moscow: Nauka, 2010): the spirit Tuil produced earthquakes when his dog Kozei shook the snow from itself."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shake_the_earth",
+        "name": "to shake the earth as he rides beneath it",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Earthquakes on Kamchatka were explained as the moments when Tuil's dog Kozei shakes off snow while its master drives his sled under the ground.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "itelmen_underground_sled",
+        "name": "Underground sled",
+        "kind": "vehicle",
+        "role": "The sled on which Tuil drives beneath the earth with his dog Kozei; the ground quakes when the dog shakes itself.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki (1755), vol. 2, pt. 3."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tuil is the Kamchadal earthquake god who rides on a sled beneath the earth; the ground shakes whenever his dog Kozei shakes the snow from itself.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3."
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov' [Beliefs of the Itelmens], in Narody Severo-Vostoka Sibiri, ed. E. P. Bat'ianova and V. A. Turaev (Moscow: Nauka, 2010)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tuil (also written Tuila) is the personified cause of Kamchatka's earthquakes in the beliefs of the Itelmen (Kamchadals) as recorded in the eighteenth century: he drives a sled beneath the earth, and whenever his dog Kozei stops to shake the snow from its coat the ground above trembles. The explanation, noted by Krasheninnikov during the Second Kamchatka Expedition and repeated in modern ethnographic surveys, belongs to the same series of nature-masters as the sea-master Mitg and the cloud-dwelling thunderer Bilyukai; no kinship with the raven family is recorded for him."
+  },
+  {
+    "id": "itelmen_mitg",
+    "name": {
+      "primary": "Mitg",
+      "alt": [
+        "Митг"
+      ],
+      "transliterations": {
+        "ru": "Митг",
+        "etymology": "Recorded by Krasheninnikov (1755) as the name of the fish-shaped god and master of the sea."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / first-times"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times",
+        "eraOrdering": 0,
+        "startEvent": "Dwells in the sea since the first-times as the fish-shaped master who owns its fish and gives the staple food of the Itelmen.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea-and-its-fish",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Митг",
+          "script": "Cyrillic",
+          "rom": "Mitg"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov', in Narody Severo-Vostoka Sibiri (Moscow: Nauka, 2010): the master of the sea, Mitg, was pictured in the form of a fish."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_or_withhold_fish",
+        "name": "to give or withhold the fish of the sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As owner of the sea's fish, Mitg provided the salmon runs on which Itelmen subsistence depended, and was accordingly held in particular regard.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov', in Narody Severo-Vostoka Sibiri (Moscow: Nauka, 2010)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Mitg is the fish-shaped god and master of the sea of the Kamchadals, owner and giver of the fish that formed the staple food of the Itelmen.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Opisanie zemli Kamchatki [Description of the Land of Kamchatka] (St. Petersburg: Imperial Academy of Sciences, 1755), vol. 2, pt. 3."
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. A. Sirina and O. A. Murashko, 'Verovaniia itel'menov' [Beliefs of the Itelmens], in Narody Severo-Vostoka Sibiri, ed. E. P. Bat'ianova and V. A. Turaev (Moscow: Nauka, 2010)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. P. Krasheninnikov, Explorations of Kamchatka: North Pacific Scimitar, trans. E. A. P. Crownhart-Vaughan (Portland: Oregon Historical Society, 1972)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mitg is the sea-master of the Itelmen (Kamchadals), described in the eighteenth-century records as a god in the form of a fish who dwells in the sea and owns its fish, sending the salmon on which the people lived; modern ethnographic surveys of Itelmen belief repeat Krasheninnikov's picture of a fish-shaped 'master of the sea' who was especially venerated because he gave the staple food. No genealogy, consort or kinship with the raven family is recorded for him, and he stands alongside the earthquake-maker Tuil and the thunderer Bilyukai among the self-standing nature-masters of the tradition."
+  }
+]
+```

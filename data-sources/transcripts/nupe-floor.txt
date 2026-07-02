@@ -1,0 +1,319 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Nupe
+Era (registered, exact): "mythic-age"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added two well-attested figures: Sogba (Sokogba), the thunder cult-power understood as 'the axe of Soko', documented by Nadel (1942; 1954) and analysed by Capo Chichi (Yoruba Studies Review, 2025), wired as subordinate to the existing sky god Soko; and Ndaduma, 'Father Niger', the personified River Niger worshipped as a flood divinity at Gbara and Jima (Sidi, ADVED 2015; Salihu, Wukari International Studies Journal, 2022). Beyond these the individuated record is genuinely exhausted: Nadel's standard ethnographies present Nupe religion as centred on Soko plus impersonal cult-powers (kuti, gunnu, ndako gboya — all already in the corpus) rather than a personified pantheon. Candidates examined and rejected were elo (a purely secular entertainment mask, per Britannica), gugu (the borrowed Yoruba egungun, a spirit-class), gani (an eighteenth-century Bornu import, per Nadel 1949), the Jebba/Tada 'Gara' bronzes (cult objects of the existing Tsoede, not beings), and Ketsa Rock and the 'Mamma' leaf-masquerade, each attested only in a single source (Sidi 2015), below the two-citation bar; the actors of the Tsoede legend (his Igala father, his mother of Nku) remain unnamed in the sources.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "nupe_sogba",
+    "name": {
+      "primary": "Thunder Cult-Power",
+      "alt": [
+        "Sogba",
+        "Sokogba",
+        "Sògbà",
+        "Sòkógbà"
+      ],
+      "transliterations": {
+        "nupe": "Sògbà ~ Sòkógbà",
+        "etymology": "Nupe sòkó 'God, sky god' + ègbà 'axe', i.e. 'the axe of Soko/God' (Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1, 2025)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nupe",
+    "primaryTradition": "Nupe",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Nupe tradition places the thunder power among the cults surrounding the sky god Soko, whose punitive lightning it wields as 'the axe of God'; ethnographers record it as an established institution of pre-Islamic Nupe religion, introduced from the neighbouring Gwari (Nadel, A Black Byzantium, 1942; Capo Chichi 2025).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. F. Nadel, A Black Byzantium: The Kingdom of Nupe in Nigeria (London: Oxford University Press for the International African Institute, 1942)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1 (2025)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sòkógbà",
+          "script": "Latin",
+          "rom": "'axe of God', the thunderbolt"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1 (2025)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. F. Nadel, Nupe Religion: Traditional Beliefs and the Influence of Islam in a West African Chiefdom (London: Routledge & Kegan Paul, 1954)"
+          }
+        ]
+      },
+      {
+        "sphereId": "divine-retribution",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1 (2025)"
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1 (2025)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "strike_with_lightning",
+        "name": "to strike thieves and wrongdoers with lightning",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1 (2025)"
+          }
+        ]
+      },
+      {
+        "id": "cure_barrenness",
+        "name": "to cure barrenness in women who seek the cult",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1 (2025)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nupe_sokogba_axe",
+        "name": "Sokogba thunder-axe",
+        "kind": "emblem",
+        "role": "the 'axe of God' (sòkó + ègbà) conceived as the bolt hurled from the sky against thieves; the emblematic object of the thunder cult",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1 (2025)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. F. Nadel, A Black Byzantium: The Kingdom of Nupe in Nigeria (London: Oxford University Press for the International African Institute, 1942)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "nupe_soko",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1 (2025)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. F. Nadel, Nupe Religion: Traditional Beliefs and the Influence of Islam in a West African Chiefdom (London: Routledge & Kegan Paul, 1954)"
+          }
+        ],
+        "notes": "The thunder power is 'the axe of Soko': the lightning it wields is understood as the sky god Soko's own punishment of thieves, so the cult stands under Soko's authority and mediates his justice on earth."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sogba, in fuller form Sokogba ('the axe of Soko'), is the Nupe thunder cult-power through which the sky god's lightning punishes thieves, which is also invoked to cure barrenness, and which ethnographers have compared directly with the Yoruba thunder god Shango.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "S. F. Nadel, A Black Byzantium: The Kingdom of Nupe in Nigeria (London: Oxford University Press for the International African Institute, 1942)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sandro Capo Chichi, 'On the Etymology of the Yoruba Theonym Shango', Yoruba Studies Review 10, no. 1 (2025)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. F. Nadel, Nupe Religion: Traditional Beliefs and the Influence of Islam in a West African Chiefdom (London: Routledge & Kegan Paul, 1954)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sogba, in its fuller form Sokogba, is the thunder power of Nupe religion, its name analysed as 'the axe of Soko' (Nupe sòkó 'God' joined to ègbà 'axe'). The Nupe hold that Soko, the sky god, causes lightning to strike thieves, and the sogba cult wielded this punitive thunder while also being sought out by women as a cure for barrenness. S. F. Nadel compared the cult directly with the worship of the Yoruba thunder god Shango and recorded that the thunder cult reached the Nupe from their Gwari (Gbagyi) neighbours; recent scholarship has argued, conversely, that the very name of Shango may derive from the Nupe Sogba. Like the gunnu festival and the kuti shrine-objects, sogba exemplifies the characteristic Nupe pattern in which sacred power resides in a cult and its emblems rather than in a richly personified god."
+  },
+  {
+    "id": "nupe_ndaduma",
+    "name": {
+      "primary": "Father Niger",
+      "alt": [
+        "Ndaduma"
+      ],
+      "transliterations": {
+        "nupe": "Ndaduma",
+        "etymology": "Nupe honorific containing ndà 'father', applied to the personified River Niger and glossed 'Father Niger' (H. A. Salihu, 'A Study of Selected Pre-Colonial Political Entities in the Niger-Benue Confluence Region of Nigeria', Wukari International Studies Journal 6, 2022)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nupe",
+    "primaryTradition": "Nupe",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "The personified 'Father Niger' belongs to the pre-Islamic stratum of Nupe religion, venerated as a divinity of the flood at riverine towns such as Gbara and Jima, where its worship persisted even after imams and qadis had been appointed (Sidi 2015; Salihu 2022).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sheshi T. Sidi, 'The Beginnings of Islam in Nupeland in North Central Area of Nigeria', in Proceedings of ADVED 2015: International Conference on Advances in Education and Social Sciences (Istanbul: OCERINT, 2015)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "H. A. Salihu, 'A Study of Selected Pre-Colonial Political Entities in the Niger-Benue Confluence Region of Nigeria', Wukari International Studies Journal 6 (2022)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ndaduma",
+          "script": "Latin",
+          "rom": "'Father Niger', the personified great river"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. A. Salihu, 'A Study of Selected Pre-Colonial Political Entities in the Niger-Benue Confluence Region of Nigeria', Wukari International Studies Journal 6 (2022)"
+          }
+        ]
+      },
+      {
+        "sphereId": "floods",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sheshi T. Sidi, 'The Beginnings of Islam in Nupeland in North Central Area of Nigeria', in Proceedings of ADVED 2015: International Conference on Advances in Education and Social Sciences (Istanbul: OCERINT, 2015)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_flood",
+        "name": "to command the annual rise and flood of the River Niger",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sheshi T. Sidi, 'The Beginnings of Islam in Nupeland in North Central Area of Nigeria', in Proceedings of ADVED 2015: International Conference on Advances in Education and Social Sciences (Istanbul: OCERINT, 2015)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ndaduma, 'Father Niger', is the personified River Niger, worshipped by the Nupe as a divinity of the flood, notably at the old royal towns of Gbara and Jima, where its cult outlasted the formal Islamization of Nupeland.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sheshi T. Sidi, 'The Beginnings of Islam in Nupeland in North Central Area of Nigeria', in Proceedings of ADVED 2015: International Conference on Advances in Education and Social Sciences (Istanbul: OCERINT, 2015)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "H. A. Salihu, 'A Study of Selected Pre-Colonial Political Entities in the Niger-Benue Confluence Region of Nigeria', Wukari International Studies Journal 6 (2022)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ndaduma, 'Father Niger', is the personified River Niger of the Nupe, whose homeland lies along the great river (called Edu in everyday Nupe speech) and its confluence with the Kaduna. The river was venerated as a divinity of the annual flood, and its worship at the old royal towns of Gbara and Jima persisted long after the formal Islamization of Nupeland, when imams and qadis had already been appointed there. The river's course is also remembered as the path along which the culture hero Tsoede travelled by bronze canoe from Idah to unite the Nupe into a kingdom, and in the late twentieth century the name Ndaduma was taken up by the movement for a Nupe homeland state, showing the river-father's enduring place in Nupe identity."
+  }
+]
+```

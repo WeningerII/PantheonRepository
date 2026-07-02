@@ -1,0 +1,815 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ni-Vanuatu
+Era (registered, exact): "mythic", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six individuated, doubly-cited figures: from Codrington's Banks Islands Qat cycle the ogre Qasavara, Qat's spirit-wife Iro Lei, and the money-spirit Ro Som (all verified verbatim in Codrington 1891, corroborated by Dixon 1916 and the Codrington-Palmer Mota dictionary 1896); and from Malekula the devouring guardian Le-hev-hev (Layard 1942; Campbell 1959; Deacon's JRAI 1934 article; Encyclopedia of Religion 2005) plus the culture hero Ambat and the ogress Nevinbimbaau (Deacon 1934; Poignant 1967), linked as reciprocal enemies. The eleven Tangaro brothers were deliberately not authored separately: only Tangaro the Wise and Tangaro the Fool are individuated, and those aspects are already covered by the existing Tagaro and Mwerambuto entries. Thinner named figures - Iro Vilgale (the first woman, a single Codrington passage), Temes Savsap (the Seniang counterpart of Le-hev-hev), Temes Malau, Mansip, Lindanda, and the mortal Ganviviris - are documented within the notes of the six new records rather than as standalone entries.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "vanuatu_qasavara",
+    "name": {
+      "primary": "The Man-Eating Ogre",
+      "alt": [
+        "Qasavara"
+      ],
+      "transliterations": {
+        "mota": "Qasavara",
+        "etymology": "Mota name of the man-eating vui (spirit) slain by Qat in the Banks Islands tales (R. H. Codrington, The Melanesians, 1891, pp. 156-158)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ni-Vanuatu",
+    "primaryTradition": "Ni-Vanuatu",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Appears in the Banks Islands Qat cycle as the man-eating spirit who slaughtered Qat's brothers and was destroyed by Qat, falling to earth as a stone (R. H. Codrington, The Melanesians, 1891, pp. 156-158).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 156-158"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cannibalism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vui",
+          "script": "Latin",
+          "rom": "spirit, supernatural being (Mota)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 156-158"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. B. Dixon, Oceanic Mythology (The Mythology of All Races, vol. IX; Boston: Marshall Jones Company, 1916), Part II, 'Melanesia'"
+          }
+        ]
+      },
+      {
+        "sphereId": "martial-valour",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 156-158"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "man_eating",
+        "name": "to hunt down and devour men",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Qasavara preyed on people of the Banks Islands and killed and ate Qat's brothers before Qat restored them to life.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. B. Dixon, Oceanic Mythology (The Mythology of All Races, vol. IX; Boston: Marshall Jones Company, 1916), Part II, 'Melanesia'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 156-158"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vanuatu_qasavara_stone",
+        "name": "Stone of Qasavara",
+        "kind": "cult-stone",
+        "role": "The stone into which the fallen ogre turned; anyone desiring to be valiant and strong in fighting makes offerings upon it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 156-158"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "vanuatu_tagaro",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 156-158"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. B. Dixon, Oceanic Mythology (The Mythology of All Races, vol. IX; Boston: Marshall Jones Company, 1916), Part II, 'Melanesia'"
+          }
+        ],
+        "notes": "In the Mota tale Qasavara killed Qat's brothers, the Tangaro, and hid their bones in his food-chest; Qat found the bones and brought his brothers back to life by blowing through a reed and bidding them laugh, and afterwards destroyed the ogre in revenge."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Qasavara is the man-eating ogre-spirit (vui) of the Banks Islands Qat cycle who slew Qat's brothers and was destroyed by Qat, falling to earth as a stone on which men sacrifice for prowess in fighting.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 156-158"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. B. Dixon, Oceanic Mythology (The Mythology of All Races, vol. IX; Boston: Marshall Jones Company, 1916), Part II, 'Melanesia'"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Qasavara is the great adversary of the hero Qat in the mythology of the Banks Islands in northern Vanuatu, a vui (spirit) portrayed as a tyrannical, man-eating ogre. In the Mota account collected by Codrington, Qasavara killed Qat's brothers and stored their remains in his food-chest; Qat sought them out, revived the brothers from their bones by blowing through a reed and commanding them to laugh, and then turned on the ogre. In one telling Qat lured Qasavara out by dropping fruit upon his house and slew him with a shell hatchet; in another Qat let go the bent tip of a casuarina-tree so that it sprang back and hurled Qasavara upward, his head striking against the sky, and he fell back to earth and turned into a stone. Sacrifices were afterwards made on that stone by those who wished to become valiant and strong in fighting."
+  },
+  {
+    "id": "vanuatu_iro_lei",
+    "name": {
+      "primary": "Wife of Qat",
+      "alt": [
+        "Iro Lei",
+        "Ro Lei"
+      ],
+      "transliterations": {
+        "mota": "Iro Lei",
+        "etymology": "Mota; the feminine personal article iro/ro is prefixed to the names of women and female spirits (R. H. Codrington and J. Palmer, A Dictionary of the Language of Mota, 1896)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ni-Vanuatu",
+    "primaryTradition": "Ni-Vanuatu",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Enters the Mota narratives of the Qat cycle as the beautiful female spirit whom Qat took to wife and whom his wifeless brothers plotted to steal together with his canoe (R. H. Codrington, The Melanesians, 1891, pp. 158-160).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 158-160"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "beauty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 158-160"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. B. Dixon, Oceanic Mythology (The Mythology of All Races, vol. IX; Boston: Marshall Jones Company, 1916), Part II, 'Melanesia'"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "vanuatu_qat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 158-160"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. B. Dixon, Oceanic Mythology (The Mythology of All Races, vol. IX; Boston: Marshall Jones Company, 1916), Part II, 'Melanesia'"
+          }
+        ],
+        "notes": "Iro Lei was the wife of Qat; his brothers, who had no wives of their own, envied him the beautiful Iro Lei as well as his excellent canoe and were always conspiring to get both into their own hands."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Iro Lei is the beautiful female spirit (vui) who was Qat's wife, whom Qat's jealous brothers repeatedly plotted to seize together with his canoe, their schemes being foiled with the help of the spider-spirit Marawa.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), pp. 158-160"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. B. Dixon, Oceanic Mythology (The Mythology of All Races, vol. IX; Boston: Marshall Jones Company, 1916), Part II, 'Melanesia'"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Mota stories of the Banks Islands, 'Qat had a wife, a female vui, Iro Lei by name,' though he had no children. His eleven brothers envied him the possession of the beautiful Iro Lei and of his fine canoe, and repeatedly tried to destroy him so that they might take both. In the best-known episode they induced Qat to crawl into the burrow of a land-crab beneath a stone which they had undermined, and toppled the stone upon him; thinking him crushed, they ran off to seize Ro Lei and the canoe, but Qat called on his friend, the spider-spirit Marawa, crying 'Marawa! take me round about to Ro Lei,' and when the brothers reached the village Qat was sitting at his wife's side. Iro Lei, the spirit-wife, is distinct from Iro Vilgale, the first woman of the Banks Islands creation account, whom Qat fashioned of rods and rings of supple twigs covered with the spathes of sago-palms."
+  },
+  {
+    "id": "vanuatu_ro_som",
+    "name": {
+      "primary": "Lady Money",
+      "alt": [
+        "Ro Som"
+      ],
+      "transliterations": {
+        "mota": "Ro Som",
+        "etymology": "Mota som, 'money, shell money'; Codrington himself glosses the name as 'Money' (R. H. Codrington, The Melanesians, 1891, ch. xix; R. H. Codrington and J. Palmer, A Dictionary of the Language of Mota, 1896)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ni-Vanuatu",
+    "primaryTradition": "Ni-Vanuatu",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Told on Mota as a story 'not an old one': the spirit-woman Ro Som, 'Money', took pity on the orphan Ganviviris and carried him into her dry cave at Ngerenow (R. H. Codrington, The Melanesians, 1891, ch. xix).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), ch. xix (the story of Ro Som and Ganviviris)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wealth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "som",
+          "script": "Latin",
+          "rom": "shell money (Mota)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), ch. xix (the story of Ro Som and Ganviviris)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington and J. Palmer, A Dictionary of the Language of Mota, Sugarloaf Island, Banks' Islands (London: Society for Promoting Christian Knowledge, 1896)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shape_shifting",
+        "name": "to take the form of a fish or of a woman",
+        "term": {
+          "value": "sauma",
+          "script": "Latin",
+          "rom": "the fish whose shape Ro Som took (Mota)"
+        },
+        "inheritability": "none",
+        "notes": "She appeared to Ganviviris as a sauma fish, carried him into her cave, and there turned into a woman, saying 'Don't cry, it is I who have had pity on you.'",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), ch. xix (the story of Ro Som and Ganviviris)"
+          }
+        ]
+      },
+      {
+        "id": "wealth_bestowal",
+        "name": "to fill money-bags with shell money and multiply pigs overnight, and to take such wealth back again",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "She filled Ganviviris's ten money-bags so that the house rafters creaked beneath the weight, and when she finally departed the bags were empty and all his pigs were gone.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), ch. xix (the story of Ro Som and Ganviviris)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vanuatu_ro_som_regalia",
+        "name": "Spear staff and boar's-tusk armlet",
+        "kind": "regalia",
+        "role": "At her last apparition Ro Som walked up with a spear for a walking-stick, shell bracelets to the elbow, a boar's tusk on her right arm, her head smeared with red earth and pigs' tails fastened in her hair, before withdrawing the wealth she had given.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), ch. xix (the story of Ro Som and Ganviviris)"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ro Som, 'Money', is a female spirit of Mota who dwelt in a dry cave, took the form of a fish and of a woman, and bestowed and then withdrew miraculous wealth in shell money and pigs upon the man Ganviviris.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-Lore (Oxford: Clarendon Press, 1891), ch. xix (the story of Ro Som and Ganviviris)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. H. Codrington and J. Palmer, A Dictionary of the Language of Mota, Sugarloaf Island, Banks' Islands (London: Society for Promoting Christian Knowledge, 1896)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ro Som, whose name Codrington glosses simply as 'Money' (Mota som, shell money), is a female spirit of Mota in the Banks Islands whose story was told to Codrington as 'not an old one,' concerning a man, Ganviviris, whom the narrator's great-grandfather had known. Ganviviris, an idle orphan, went to shoot fish at Ngerenow and struck a sauma, which carried him into a dry cave, the dwelling of Ro Som; the fish turned into a woman who said, 'Don't cry, it is I who have had pity on you.' She filled his ten money-bags with shell money overnight, so that the rafters of the house creaked, and gave him pigs, so that he rose with astonishing speed through the ranks of the Suqe society, making his suqe at Mota and building his house at Tasmate. In the end a woman came walking with a spear for a walking-stick, shell bracelets to the elbow, a boar's tusk on her right arm, her head reddened with earth and pigs' tails in her hair; she entered his house and vanished, whereupon his bags were found empty and his pigs gone, and Ganviviris sickened that night and died on the fifth day. The tale was cited as proof that wealth and rank in the Banks Islands flow from the favour of spirits."
+  },
+  {
+    "id": "vanuatu_lehevhev",
+    "name": {
+      "primary": "The Devouring Ghost",
+      "alt": [
+        "Le-hev-hev",
+        "Lehevhev",
+        "Le-hevhev"
+      ],
+      "transliterations": {
+        "malekula": "Le-hev-hev",
+        "etymology": "Written le-hev-hev by Layard from the Small Islands of north-east Malekula (J. Layard, Stone Men of Malekula: Vao, 1942)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ni-Vanuatu",
+    "primaryTradition": "Ni-Vanuatu",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Attested in the ethnography of Malekula as the female Guardian Ghost who awaits the dead and to whom the tusked-boar sacrifices of the graded rituals are directed (J. Layard, Stone Men of Malekula: Vao, 1942).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. Layard, Stone Men of Malekula: Vao (London: Chatto & Windus, 1942)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "temes",
+          "script": "Latin",
+          "rom": "ghost, spirit of the dead (south-west Malekula)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon, 'Geometrical Drawings from Malekula and Other Islands of the New Hebrides', Journal of the Royal Anthropological Institute 64 (1934), pp. 129-175"
+          },
+          {
+            "kind": "secondary",
+            "reference": "'Vanuatu Religions', in L. Jones (ed.), Encyclopedia of Religion, 2nd ed. (Detroit: Macmillan Reference USA, 2005)"
+          }
+        ]
+      },
+      {
+        "sphereId": "sacrifice",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maki",
+          "script": "Latin",
+          "rom": "the graded megalithic ritual cycle of Vao (Layard)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. Layard, Stone Men of Malekula: Vao (London: Chatto & Windus, 1942)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "soul_devouring",
+        "name": "to devour the souls of the dead who cannot complete her sand-tracing",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The dead must complete the half of the labyrinthine design that the guardian has rubbed out; whoever fails is eaten and never reaches the land of the dead.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. Campbell, The Masks of God: Primitive Mythology (New York: Viking Press, 1959)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon, 'Geometrical Drawings from Malekula and Other Islands of the New Hebrides', Journal of the Royal Anthropological Institute 64 (1934), pp. 129-175"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vanuatu_nahal_sand_design",
+        "name": "Nahal, 'The Path' (sand-tracing)",
+        "kind": "emblem",
+        "role": "The labyrinthine figure traced in the sand on the road of the dead, half of which is rubbed out before the approaching ghost, who must restore it in order to pass to the land of the dead.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon, 'Geometrical Drawings from Malekula and Other Islands of the New Hebrides', Journal of the Royal Anthropological Institute 64 (1934), pp. 129-175"
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. Campbell, The Masks of God: Primitive Mythology (New York: Viking Press, 1959)"
+          }
+        ]
+      },
+      {
+        "id": "vanuatu_maki_tusked_boar",
+        "name": "Tusked boar of the Maki",
+        "kind": "sacrificial offering",
+        "role": "Boars with curved tusks are slaughtered in the long Maki ritual cycle to ransom the sacrificer from the Devouring Ghost at death.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. Layard, Stone Men of Malekula: Vao (London: Chatto & Windus, 1942)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Le-hev-hev is the female Devouring Ghost of Malekula who awaits the dead beside a half-erased sand-drawing, devours those who cannot complete it, and to whom the tusked-boar sacrifices of the graded ritual cycles are ultimately directed.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "J. Layard, Stone Men of Malekula: Vao (London: Chatto & Windus, 1942)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. Campbell, The Masks of God: Primitive Mythology (New York: Viking Press, 1959)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "'Vanuatu Religions', in L. Jones (ed.), Encyclopedia of Religion, 2nd ed. (Detroit: Macmillan Reference USA, 2005)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Le-hev-hev is the female Guardian Ghost of Malekula and its Small Islands, the devouring power that awaits every soul on the road of the dead. John Layard, who recorded her cult on Vao, made her central to his account of Malekulan religion: the decades-long Maki ritual cycle, with its megaliths and its slaughter of tusked boars, serves above all to ransom the celebrant's soul from her at death. In the account made famous by Layard and retold by Joseph Campbell, the ghost of the dead comes to a place where the guardian has traced a labyrinthine figure in the sand and rubbed out half of it; the ghost who knows the design completes it and passes on, while the ghost who does not is devoured. In the Seniang district of south-west Malekula, where A. B. Deacon documented the same belief, the guardian who draws the figure Nahal, 'The Path', beside a rock on the way to Wies, the land of the dead, is called Temes Savsap. The Encyclopedia of Religion notes that this being is commonly associated with the underground, caves, mazes, snakes, spiders and rats, with acts of a devouring or destructive kind, and with the failure to attain a satisfactory afterlife."
+  },
+  {
+    "id": "vanuatu_ambat",
+    "name": {
+      "primary": "Culture Hero of Malekula",
+      "alt": [
+        "Ambat"
+      ],
+      "transliterations": {
+        "malekula": "Ambat",
+        "etymology": "Name of the principal culture hero in the traditions of the Seniang district of south-west Malekula recorded by Deacon (A. B. Deacon, Malekula: A Vanishing People in the New Hebrides, 1934)"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Ni-Vanuatu",
+    "primaryTradition": "Ni-Vanuatu",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Recorded in the Seniang district of south-west Malekula as the culture hero who freed his brothers from the ogress Nevinbimbaau and was afterwards killed by them (A. B. Deacon, Malekula, 1934).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heroism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Poignant, Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia (London: Paul Hamlyn, 1967)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "cunning_rescue",
+        "name": "to free his brothers from the ogress's trap by cunning",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His older brothers were trapped one after another in a ditch by the ogress Nevinbimbaau and remained there until Ambat came and released them.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Poignant, Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia (London: Paul Hamlyn, 1967)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vanuatu_ambat_comb",
+        "name": "Ambat's comb",
+        "kind": "token",
+        "role": "The keepsake Ambat left with his wife Lindanda; when blood appeared on the comb she knew that her husband had been killed.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Poignant, Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia (London: Paul Hamlyn, 1967)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "vanuatu_nevinbimbaau",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Poignant, Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia (London: Paul Hamlyn, 1967)"
+          }
+        ],
+        "notes": "The ogress Nevinbimbaau trapped Ambat's older brothers one after another in a ditch, where they remained until Ambat came and freed them."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ambat is the principal culture hero of the Seniang district of south-west Malekula, who freed his brothers from the ogress Nevinbimbaau and was afterwards murdered by those same brothers out of envy of his beautiful wife Lindanda.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Poignant, Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia (London: Paul Hamlyn, 1967)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ambat is the great culture hero of the myths of south-west Malekula, recorded among the Seniang people by the Cambridge anthropologist A. Bernard Deacon shortly before his death in 1927. When the ogress Nevinbimbaau, wife of Temes Malau, trapped Ambat's older brothers one after another in a ditch, they remained imprisoned there until Ambat came and set them free. Those same brothers later turned against him: envying him his beautiful wife Lindanda, they killed him. Lindanda learned of her husband's death when she saw blood appear on the comb he had left with her, and she escaped from the brothers who thought they had won her. The pattern of the clever hero beset by envious brothers closely parallels the Qat cycle of the Banks Islands, and comparative surveys of Oceanic mythology treat Ambat as the Malekulan counterpart of Qat and Tagaro."
+  },
+  {
+    "id": "vanuatu_nevinbimbaau",
+    "name": {
+      "primary": "The Ogress",
+      "alt": [
+        "Nevinbimbaau",
+        "Nevinbumbaau"
+      ],
+      "transliterations": {
+        "malekula": "Nevinbimbaau",
+        "etymology": "Seniang (south-west Malekula) name, spelled Nevinbumbaau in Deacon's records; central figure of the Nevinbur rites (A. B. Deacon, Malekula: A Vanishing People in the New Hebrides, 1934)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ni-Vanuatu",
+    "primaryTradition": "Ni-Vanuatu",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Recorded in south-west Malekula myth as the ogress who trapped Ambat's older brothers in a ditch and around whose story the Nevinbur rites revolve (A. B. Deacon, Malekula, 1934).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "strife",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          }
+        ]
+      },
+      {
+        "sphereId": "initiation-rites",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nevinbur",
+          "script": "Latin",
+          "rom": "the Nevinbur secret rites of Seniang, Malekula"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Poignant, Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia (London: Paul Hamlyn, 1967)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "entrapment",
+        "name": "to trap men in a pit",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "She caught Ambat's older brothers one after another in a ditch and held them there until Ambat came to free them.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vanuatu_temes_nevinbur_effigies",
+        "name": "Temes nevinbur effigies",
+        "kind": "ritual effigy",
+        "role": "Staff puppets with carved heads and wooden effigies used in the Nevinbur rites to enact the story of Nevinbimbaau, her son Mansip, his two wives and their children; at the climax the effigies of Mansip and his wives are speared and burned.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Poignant, Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia (London: Paul Hamlyn, 1967)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "vanuatu_ambat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Poignant, Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia (London: Paul Hamlyn, 1967)"
+          }
+        ],
+        "notes": "Nevinbimbaau trapped the older brothers of the culture hero Ambat one after another in a ditch, and they stayed imprisoned there until Ambat came and freed them."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nevinbimbaau is the ogress of south-west Malekula myth, wife of Temes Malau and mother of Mansip, who trapped Ambat's brothers in a ditch and whose story is enacted with puppets and effigies in the Nevinbur rites.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "A. B. Deacon (ed. C. H. Wedgwood), Malekula: A Vanishing People in the New Hebrides (London: George Routledge & Sons, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Poignant, Oceanic Mythology: The Myths of Polynesia, Micronesia, Melanesia, Australia (London: Paul Hamlyn, 1967)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nevinbimbaau (Deacon's spelling Nevinbumbaau) is the ogress of the myths of the Seniang district of south-west Malekula, described in some accounts simply as a powerful female mythic figure. She is the wife of Temes Malau and mother of Mansip, and in the Ambat cycle she trapped the hero's older brothers one after another in a ditch, where they remained until Ambat freed them. She stands at the centre of the Nevinbur secret rites documented by Deacon: performers manipulate large staffs topped with modelled and carved heads, stick puppets called temes nevinbur representing Mansip's children, her grandchildren; in the course of the long ritual cycle some or all of these figures are destroyed and made anew, and at the climax wooden effigies of Mansip and his two wives are speared and burned. The dramatic apparatus of these rites is among the best-known ritual art of Vanuatu, and examples of the Nevinbur figures are held in major museum collections."
+  }
+]
+```

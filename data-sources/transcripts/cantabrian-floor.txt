@@ -1,0 +1,587 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Cantabrian
+Era (registered, exact): "Roman period"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five epigraphically attested Cantabrian-Asturian deities missing from the corpus: Cabuniaeginus (Monte Cildá altar, Palencia), Epane (Cantabrian form of Epona at Monte Bernorio), Salus Umeritana (the Otañes patera near Flaviobriga), Nimmedus Aseddiagus (Ujo altar, Mieres), and Vagodonnaegus (La Milla del Río altars, publicly dedicated by Asturica Augusta) — the latter two Asturian, matching the corpus precedent of Aernus. Each rests on real epigraphic scholarship (Iglesias Gil 1976/2014, Diego Santos 1959/1986, Blázquez 1975, Olivares Pedreño 2002/2005, Marco Simón 2005, Peralta Labrador 2003, García y Bellido 1949). I excluded Tabaliaenus of Grases because the fragmentary reading '[Lug]ovio Tabaliaeno' is generally taken as an epithet of Lugus, and excluded unnamed collective cults (Matres) per the individuation rule. All five are solitary because the inscriptions record no genealogies or divine pairings; all use the registered era key 'Roman period', the AD 161 altar key belonging to the existing Erudinus record.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "cantabrian_cabuniaeginus",
+    "name": {
+      "primary": "Cabuniaeginus the Health-Giver of Monte Cildá",
+      "alt": [
+        "Cabuniaegino",
+        "Deus Cabuniaeginus"
+      ],
+      "transliterations": {
+        "la": "Cabuniaegino",
+        "etymology": "Attested only in the dative Cabuniaegino; Blázquez linked the root to Indo-European theonyms such as Devaco Caburio, while Montenegro connected it to pre-Indo-European Cantabrian toponyms like Cabuérniga and Caborana (Blázquez 1975; Olivares Pedreño 2002)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cantabrian",
+    "primaryTradition": "Cantabrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Roman period"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Roman period",
+        "eraOrdering": 0,
+        "startEvent": "A votive altar found at the hillfort of Monte Cildá (Olleros de Pisuerga, Palencia) records a dedication to the god Cabuniaeginus by Doiderus of the Tridiavi for the health of Duratus of the Polecenses (Iglesias Gil 1976).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iglesias Gil, José Manuel, Epigrafía cántabra. Estereometría, decoración, onomástica, Santander: Institución Cultural de Cantabria, 1976."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "health-and-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "pro salute",
+          "script": "Latin",
+          "rom": "for the well-being (formula of the Monte Cildá dedication)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, Juan Carlos, Los dioses de la Hispania Céltica, Madrid: Real Academia de la Historia / Universidad de Alicante, 2002."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "restore_health",
+        "name": "to restore and safeguard the health of devotees",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Monte Cildá altar was erected on behalf of the health of a named individual, the standard pro salute votive formula.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iglesias Gil, José Manuel, Epigrafía cántabra. Estereometría, decoración, onomástica, Santander: Institución Cultural de Cantabria, 1976."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cantabrian_monte_cilda_altar",
+        "name": "Altar of Monte Cildá",
+        "kind": "votive altar",
+        "role": "Sandstone ara reading Cabuniaegino Doider[us] Tridia[u]m pro salut[e D]uratonis fi(lii) Polecensium l(ibens) m(erito), now in the Museum of Prehistory and Archaeology of Cantabria",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iglesias Gil, José Manuel, Epigrafía cántabra. Estereometría, decoración, onomástica, Santander: Institución Cultural de Cantabria, 1976."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Cabuniaeginus is a local Cantabrian god known from a single votive altar at the hillfort of Monte Cildá, dedicated for the health of a member of the Polecenses kin group.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Iglesias Gil, José Manuel, Epigrafía cántabra. Estereometría, decoración, onomástica, Santander: Institución Cultural de Cantabria, 1976."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Blázquez, José María, Diccionario de las religiones prerromanas de Hispania, Madrid: Istmo, 1975."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, Juan Carlos, Los dioses de la Hispania Céltica, Madrid: Real Academia de la Historia / Universidad de Alicante, 2002."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Cabuniaeginus is an indigenous god of the southern Cantabri, attested on a Roman-period altar recovered from the wall of the hillfort of Monte Cildá above Olleros de Pisuerga (Palencia). The dedicant, Doiderus of the Tridiavi, set up the stone for the health of Duratus of the Polecenses, showing the god invoked as a personal protector and healer within local kin-group religion. The theonym is otherwise unknown: Blázquez sought Indo-European parallels in dedications such as Devaco Caburio from the Meseta, Ángel Montenegro derived the root from pre-Indo-European toponyms of the Cantabrian mountains (Cabuérniga, Caborana), and Karl Horst Schmidt argued for a Celtic origin. The altar is displayed in the Museum of Prehistory and Archaeology of Cantabria in Santander."
+  },
+  {
+    "id": "cantabrian_epane",
+    "name": {
+      "primary": "Epane the Horse Goddess",
+      "alt": [
+        "Epana",
+        "Epona (Cantabrian form)"
+      ],
+      "transliterations": {
+        "la": "Epane",
+        "etymology": "A local Cantabrian form of the pan-Celtic horse goddess Epona, from Celtic *epos, 'horse' (Peralta Labrador 2003)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cantabrian",
+    "primaryTradition": "Cantabrian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Roman period"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Roman period",
+        "eraOrdering": 0,
+        "startEvent": "The goddess Epane is attested epigraphically in Cantabrian territory at Monte Bernorio (Palencia), where the local form of the Celtic horse goddess Epona was venerated (Peralta Labrador 2003).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peralta Labrador, Eduardo, Los cántabros antes de Roma, Madrid: Real Academia de la Historia, 2003."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "horses",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "epos",
+          "script": "Latin (Gaulish)",
+          "rom": "horse, the Celtic root of the theonym"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peralta Labrador, Eduardo, Los cántabros antes de Roma, Madrid: Real Academia de la Historia, 2003."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_horses_and_riders",
+        "name": "to protect horses, mares and their riders",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the Cantabrian counterpart of Epona, Epane presided over horses, a central element of Cantabrian warrior society famed for its cavalry.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Blázquez, José María, Diccionario de las religiones prerromanas de Hispania, Madrid: Istmo, 1975."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cantabrian_bernorio_epane_inscription",
+        "name": "Epane inscription of Monte Bernorio",
+        "kind": "votive inscription",
+        "role": "Roman-period epigraph from the great Cantabrian oppidum of Monte Bernorio recording the goddess's local name",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peralta Labrador, Eduardo, Los cántabros antes de Roma, Madrid: Real Academia de la Historia, 2003."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Epane is the local Cantabrian name of the Celtic horse goddess Epona, attested epigraphically at Monte Bernorio in Palencia.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Peralta Labrador, Eduardo, Los cántabros antes de Roma, Madrid: Real Academia de la Historia, 2003."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Blázquez, José María, Diccionario de las religiones prerromanas de Hispania, Madrid: Istmo, 1975."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Epane is the Cantabrian form of Epona, the Celtic goddess of horses whose cult spread across the Roman Empire. Her name is attested in Cantabrian territory at Monte Bernorio (Palencia), one of the largest fortified oppida of the Cantabri and a stronghold destroyed during the Cantabrian Wars. The veneration of a horse goddess fits the prominence of horsemanship among the Cantabri, whose cavalry manoeuvres (the circulus cantabricus) were famous in antiquity, and parallels related Iberian forms of the goddess such as Iccona in Lusitania. The name derives from the Celtic word epos, 'horse'."
+  },
+  {
+    "id": "cantabrian_salus_umeritana",
+    "name": {
+      "primary": "Salus Umeritana the Healing Spring Goddess",
+      "alt": [
+        "Salus Vmeritana"
+      ],
+      "transliterations": {
+        "la": "Salus Vmeritana",
+        "etymology": "Latin Salus, 'health', with the locative epithet Umeritana, formed with the suffix -ana on a local place- or spring-name Umeri, perhaps connected to Latin umerus, 'shoulder, ridge' (Iglesias Gil 2014)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cantabrian",
+    "primaryTradition": "Cantabrian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Roman period"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Roman period",
+        "eraOrdering": 0,
+        "startEvent": "The goddess is named and depicted on the silver-gilt patera of Otañes (Castro Urdiales, Cantabria), a Roman-period ex-voto inscribed Salus Umeritana that shows her as a reclining spring nymph pouring water from a vessel (Iglesias Gil 2014).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iglesias Gil, José Manuel, 'Flaviobriga y el santuario de Salus Umeritana', in J. Mangas Manjarrés and M. Á. Novillo López (eds.), Santuarios suburbanos y del territorio de las ciudades romanas, Madrid: Universidad Autónoma de Madrid, 2014, pp. 277-294."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "healing-springs",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "salus",
+          "script": "Latin",
+          "rom": "health, well-being"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iglesias Gil, José Manuel, 'Flaviobriga y el santuario de Salus Umeritana', in J. Mangas Manjarrés and M. Á. Novillo López (eds.), Santuarios suburbanos y del territorio de las ciudades romanas, Madrid: Universidad Autónoma de Madrid, 2014, pp. 277-294."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heal_through_spring_waters",
+        "name": "to cure illness through the waters of her sacred spring",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Otañes patera is interpreted as a thank-offering for a cure obtained at the goddess's medicinal spring; its scenes show the water being drawn, bottled and carted away for the sick.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "García y Bellido, Antonio, Esculturas romanas de España y Portugal, Madrid: CSIC, 1949."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cantabrian_otanes_patera",
+        "name": "Patera of Otañes",
+        "kind": "libation vessel (ex-voto)",
+        "role": "Silver and gilt libation dish found near Otañes (Castro Urdiales) between 1798 and 1800, inscribed Salus Umeritana and decorated with scenes of the healing spring and its cult",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "García y Bellido, Antonio, Esculturas romanas de España y Portugal, Madrid: CSIC, 1949."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Iglesias Gil, José Manuel, 'Flaviobriga y el santuario de Salus Umeritana', in J. Mangas Manjarrés and M. Á. Novillo López (eds.), Santuarios suburbanos y del territorio de las ciudades romanas, Madrid: Universidad Autónoma de Madrid, 2014, pp. 277-294."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Vmeritana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iglesias Gil, José Manuel, 'Flaviobriga y el santuario de Salus Umeritana', in J. Mangas Manjarrés and M. Á. Novillo López (eds.), Santuarios suburbanos y del territorio de las ciudades romanas, Madrid: Universidad Autónoma de Madrid, 2014, pp. 277-294."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Salus Umeritana is a Romanized local goddess of a healing spring in coastal Cantabria, named and depicted on the silver patera of Otañes near the Roman colony of Flaviobriga.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Iglesias Gil, José Manuel, 'Flaviobriga y el santuario de Salus Umeritana', in J. Mangas Manjarrés and M. Á. Novillo López (eds.), Santuarios suburbanos y del territorio de las ciudades romanas, Madrid: Universidad Autónoma de Madrid, 2014, pp. 277-294."
+          },
+          {
+            "kind": "secondary",
+            "reference": "García y Bellido, Antonio, Esculturas romanas de España y Portugal, Madrid: CSIC, 1949."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Salus Umeritana is a goddess of a medicinal spring in the territory of the Roman port of Flaviobriga (Castro Urdiales) on the Cantabrian coast. She is known from the celebrated patera of Otañes, a silver and gilt libation dish discovered between 1798 and 1800 near the Pico del Castillo, which bears her name and portrays her as a semi-nude nymph reclining beside her source and pouring water from an urn, surrounded by scenes of pilgrims drawing, bottling and carting away the curative water. The vessel is understood as an ex-voto offered in gratitude for a cure. Although her name is Latin, she represents the interpretatio Romana of an indigenous water divinity of the eastern Cantabrian seaboard, her epithet preserving the local name of the spring or its place."
+  },
+  {
+    "id": "cantabrian_nimmedus_aseddiagus",
+    "name": {
+      "primary": "Nimmedus Aseddiagus the God of the Sacred Grove",
+      "alt": [
+        "Nimmedo Aseddiago",
+        "Nimmedus Seddiagus"
+      ],
+      "transliterations": {
+        "la": "Nimmedo Aseddiago",
+        "etymology": "Nimmedus reflects Celtic nemeton, 'sacred grove or sanctuary'; Aseddiagus has been derived from the Indo-European root *sed-, 'to sit', hence 'the seated one of the sacred grove' (Marco Simón 2005; Olivares Pedreño 2002)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cantabrian",
+    "primaryTradition": "Cantabrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Roman period"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Roman period",
+        "eraOrdering": 0,
+        "startEvent": "A votive altar unearthed in 1919 at Ujo (Mieres, Asturias) records the vow of Gaius Sulpicius Africanus to Nimmedus Aseddiagus (Diego Santos 1959).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diego Santos, Francisco, Epigrafía romana de Asturias, Oviedo: Instituto de Estudios Asturianos, 1959 (2nd ed. 1985)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-groves",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nemeton",
+          "script": "Latin (Celtic)",
+          "rom": "sacred grove, open-air sanctuary"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marco Simón, Francisco, 'Religion and Religious Practices of the Ancient Celts of the Iberian Peninsula', e-Keltoi: Journal of Interdisciplinary Celtic Studies 6, 2005, pp. 287-345."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_over_sacred_grove",
+        "name": "to preside over the sacred grove where worship and communal rites took place",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The theonym itself divinizes the nemeton, the open-air woodland sanctuary of Celtic religion in northern Hispania.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marco Simón, Francisco, 'Religion and Religious Practices of the Ancient Celts of the Iberian Peninsula', e-Keltoi: Journal of Interdisciplinary Celtic Studies 6, 2005, pp. 287-345."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cantabrian_ujo_altar",
+        "name": "Altar of Ujo",
+        "kind": "votive altar",
+        "role": "Stone ara found in 1919 during street works at Ujo (Mieres), dedicated to Nimmedus Aseddiagus by Gaius Sulpicius Africanus in fulfilment of a vow",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diego Santos, Francisco, Epigrafía romana de Asturias, Oviedo: Instituto de Estudios Asturianos, 1959 (2nd ed. 1985)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Aseddiago",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, Juan Carlos, Los dioses de la Hispania Céltica, Madrid: Real Academia de la Historia / Universidad de Alicante, 2002."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Nimmedus Aseddiagus is an indigenous Asturian god of the sacred grove, attested on a votive altar found at Ujo (Mieres) dedicated by a Roman citizen, Gaius Sulpicius Africanus.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Diego Santos, Francisco, Epigrafía romana de Asturias, Oviedo: Instituto de Estudios Asturianos, 1959 (2nd ed. 1985)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marco Simón, Francisco, 'Religion and Religious Practices of the Ancient Celts of the Iberian Peninsula', e-Keltoi: Journal of Interdisciplinary Celtic Studies 6, 2005, pp. 287-345."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, Juan Carlos, Los dioses de la Hispania Céltica, Madrid: Real Academia de la Historia / Universidad de Alicante, 2002."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nimmedus Aseddiagus is a god of the Astures known from a Roman-period altar discovered on 23 July 1919 during works in the railway-station street of Ujo, in the Caudal valley of central Asturias. The dedicant, Gaius Sulpicius Africanus, bears fully Roman names, showing an outsider honouring the indigenous divinity of the place. The first element of the theonym corresponds to the Celtic word nemeton, the sacred grove or open-air sanctuary, so that the god personifies the woodland holy place itself; the epithet Aseddiagus has been explained from the Indo-European root for 'sitting', giving readings such as 'the seated one of the sacred grove'. The inscription is a key witness to the survival of grove sanctuaries among the peoples of northern Hispania under Rome."
+  },
+  {
+    "id": "cantabrian_vagodonnaegus",
+    "name": {
+      "primary": "Vagodonnaegus the Civic Protector of the Astures",
+      "alt": [
+        "Vagodonnaego",
+        "Vagus Donnaegus"
+      ],
+      "transliterations": {
+        "la": "Deo Vagodonnaego",
+        "etymology": "The element -donn- has been compared with Celtic donn, 'dark, dark one', prompting interpretations of an underworld or ancestral god, though the etymology remains debated (Olivares Pedreño 2002)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cantabrian",
+    "primaryTradition": "Cantabrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Roman period"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Roman period",
+        "eraOrdering": 0,
+        "startEvent": "Two altars from La Milla del Río (León), one dedicated officially by the res publica of Asturica Augusta through its magistrates, attest the public cult of the god Vagodonnaegus among the Astures (Diego Santos 1986).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diego Santos, Francisco, Inscripciones romanas de la provincia de León, León: Institución Fray Bernardino de Sahagún, 1986."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "civic-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, Juan Carlos, Los dioses de la Hispania Céltica, Madrid: Real Academia de la Historia / Universidad de Alicante, 2002."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "safeguard_the_community",
+        "name": "to safeguard the community that honoured him with public dedications",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Uniquely among indigenous gods of the region, Vagodonnaegus received an official dedication from the city of Asturica Augusta, indicating a cult of communal, civic scope.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, Juan Carlos, 'Celtic Gods of the Iberian Peninsula', e-Keltoi: Journal of Interdisciplinary Celtic Studies 6, 2005, pp. 607-649."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cantabrian_milla_del_rio_altars",
+        "name": "Altars of La Milla del Río",
+        "kind": "votive altars",
+        "role": "Two Roman-period arae from La Milla del Río near the river Órbigo (León), one inscribed Deo Vagodonnaego and set up by the res publica of Asturica Augusta through its magistrates",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diego Santos, Francisco, Inscripciones romanas de la provincia de León, León: Institución Fray Bernardino de Sahagún, 1986."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Vagodonnaegus is an indigenous god of the Astures attested on altars from La Milla del Río (León), notable for receiving an official public dedication from the res publica of Asturica Augusta.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Diego Santos, Francisco, Inscripciones romanas de la provincia de León, León: Institución Fray Bernardino de Sahagún, 1986."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, Juan Carlos, Los dioses de la Hispania Céltica, Madrid: Real Academia de la Historia / Universidad de Alicante, 2002."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Vagodonnaegus is a god of the Astures whose cult is documented by two altars from La Milla del Río, on the river Órbigo west of the conventus capital Asturica Augusta (Astorga). The principal altar is exceptional in Hispania because the dedication was made officially by the res publica of Asturica Augusta acting through its magistrates, showing a native god formally adopted into the public religion of a Roman city. The meaning of the theonym is disputed: interpretations building on the Celtic element donn, 'the dark one', have suggested an underworld or ancestral character comparable to the Irish Donn, while others see a territorial or river-valley divinity of the middle Órbigo. In the same manner as Aernus among the Zoelae, Vagodonnaegus illustrates how Asturian communities maintained their own tutelary gods under Roman rule."
+  }
+]
+```

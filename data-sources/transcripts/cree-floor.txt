@@ -1,0 +1,1232 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Cree
+Era (registered, exact): "myth-age (sacred-story / \u00e2tay\u00f4hk\u00eawin time)", "myth-age and present"
+Author pass: floor-raising expansion — attested individuated figures still missing (8 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added eight well-attested Cree figures: the winter cannibal Wîhtikôw, the skeleton spirit Pâhkahkos, the Thunderbird Piyêsiw, the paired water monsters Misipisiw (Great Lynx, slayer of the existing Mahihkan in the flood cycle) and Misi-kinêpikw (Great Serpent, the thunderbirds' reciprocal enemy), the Rolling Head Cihcipistikwân (attested mother of the existing Wîsahkêcâhk and Mahihkan), and the James Bay hero-cycle figures Cahkâpês and Ayâs. Every figure carries at least two verified scholarly citations (Skinner 1911; Ahenakew 1929; Mandelbaum 1940/1979; Teicher 1960; Stevens 1971; Brown and Brightman 1988; Brightman 1988, 1989, 1993; Granzberg 1994; Ellis 1995; Wolvengrey 2001; Carlson 2009). I deliberately excluded maci-manitow, the 'Evil Spirit', because scholarship debates whether the good/evil manito dualism is aboriginal or missionary-shaped (Cooper, The Northern Algonquian Supreme Being, 1934; Brown and Brightman 1988), and likewise excluded personified but weakly individuated powers (Kîwêtin the North Wind, Pîsim the Sun) and unnamed spirit classes (mistâpêwak, cîpayak). The count slightly exceeds the typical range because this major tradition was severely under-populated relative to its documented pantheon.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "cree_wihtikow",
+    "name": {
+      "primary": "Wîhtikôw, the Winter Cannibal Monster",
+      "alt": [
+        "Wîhtikôw",
+        "Witiko",
+        "Wetiko",
+        "Windigo",
+        "Wīhtikō",
+        "Atuush (East Cree)"
+      ],
+      "transliterations": {
+        "cr": "wîhtikôw",
+        "etymology": "Plains Cree wîhtikôw, cognate with Ojibwe wiindigoo, the common Algonquian name of the winter cannibal monster (Brightman, 'The Windigo in the Material World,' Ethnohistory 35(4), 1988)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age and present"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age and present",
+        "eraOrdering": 0,
+        "startEvent": "Cree sacred stories set cannibal wîhtikôwak in the story-world age, and documented windigo encounters and killings continued in Cree communities into the late nineteenth and early twentieth centuries (Carlson, 'Reviving Witiko (Windigo),' Ethnohistory 56(3), 2009).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Carlson, Nathan D. 'Reviving Witiko (Windigo): An Ethnohistory of \"Cannibal Monsters\" in the Athabasca District of Northern Alberta, 1878–1910.' Ethnohistory 56, no. 3 (2009): 355–394."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "winter",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "pipon",
+          "script": "Latin",
+          "rom": "winter"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. 'The Windigo in the Material World.' Ethnohistory 35, no. 4 (1988): 337–379."
+          }
+        ]
+      },
+      {
+        "sphereId": "cannibalism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Teicher, Morton I. Windigo Psychosis: A Study of a Relationship between Belief and Behavior among the Indians of Northeastern Canada. Seattle: American Ethnological Society / University of Washington Press, 1960."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_human_flesh",
+        "name": "to hunt and devour human beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. 'The Windigo in the Material World.' Ethnohistory 35, no. 4 (1988): 337–379."
+          }
+        ]
+      },
+      {
+        "id": "turn_people_windigo",
+        "name": "to turn people into cannibal monsters like itself through dreams, possession, or famine cannibalism",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Carlson, Nathan D. 'Reviving Witiko (Windigo): An Ethnohistory of \"Cannibal Monsters\" in the Athabasca District of Northern Alberta, 1878–1910.' Ethnohistory 56, no. 3 (2009): 355–394."
+          }
+        ]
+      },
+      {
+        "id": "grow_giant_with_cold",
+        "name": "to grow gigantic and gaunt, strengthening with winter cold and starvation",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. 'The Windigo in the Material World.' Ethnohistory 35, no. 4 (1988): 337–379."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cree_wihtikow_ice_heart",
+        "name": "heart of ice",
+        "kind": "emblem",
+        "role": "the frozen heart at the core of the windigo, which had to be melted or destroyed by fire before the monster could truly be killed",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Carlson, Nathan D. 'Reviving Witiko (Windigo): An Ethnohistory of \"Cannibal Monsters\" in the Athabasca District of Northern Alberta, 1878–1910.' Ethnohistory 56, no. 3 (2009): 355–394."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Wîhtikôw (Windigo) is the cannibal ice monster of Cree belief, a giant winter man-eater with a heart of ice into which humans could transform through famine cannibalism or spirit possession.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. 'The Windigo in the Material World.' Ethnohistory 35, no. 4 (1988): 337–379."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Carlson, Nathan D. 'Reviving Witiko (Windigo): An Ethnohistory of \"Cannibal Monsters\" in the Athabasca District of Northern Alberta, 1878–1910.' Ethnohistory 56, no. 3 (2009): 355–394."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Teicher, Morton I. Windigo Psychosis: A Study of a Relationship between Belief and Behavior among the Indians of Northeastern Canada. Seattle: American Ethnological Society / University of Washington Press, 1960."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The wîhtikôw (windigo) is the cannibal monster of the Cree winter: a gaunt or gigantic man-eater with a heart of solid ice, associated with famine, isolation, and the north. Cree tradition holds that a person could become wîhtikôw by resorting to cannibalism in famine, by dreaming of the being, or through hostile sorcery, and communities took urgent measures, including melting the ice heart with fire or burning the body, to stop a windigo before it killed. Documented windigo cases from the eighteenth to the early twentieth century, especially in northern Manitoba, Saskatchewan, and Alberta, made this being one of the most intensively studied figures of Algonquian religion; in a well-recorded 1896 case at Trout Lake, Alberta, the afflicted man spoke of ice rising within his body and begged his relatives to kill him. In the East Cree communities of James Bay the same monster is known as atuush."
+  },
+  {
+    "id": "cree_pahkahkos",
+    "name": {
+      "primary": "Pâhkahkos, the Flying Skeleton Spirit",
+      "alt": [
+        "Pâhkahk",
+        "Pah-kack",
+        "Pakakoos",
+        "Pah-ka-kos",
+        "Pahkack"
+      ],
+      "transliterations": {
+        "cr": "pâhkahkos",
+        "etymology": "diminutive of pâhkahk, the name of the dried-up skeletal spirit, recorded from the western Cree as Pah-kack by the fur trader George Nelson in 1823 (Brown and Brightman, 'The Orders of the Dreamed', 1988)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age and present"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age and present",
+        "eraOrdering": 0,
+        "startEvent": "Recorded among the western Cree by the trader George Nelson in 1823 as a skeletal being of starvation and disease, Pâhkahk remained the object of feasts and give-away dances into the reserve era (Brown and Brightman, 'The Orders of the Dreamed', 1988).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "starvation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      },
+      {
+        "sphereId": "disease",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "appear_as_skeleton",
+        "name": "to appear as an animate, desiccated skeleton, a harbinger of famine and sickness",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      },
+      {
+        "id": "give_or_withhold_luck",
+        "name": "to grant good fortune to those who honour it with feasts and gifts, and to afflict those who offend it with bad luck",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Calverley, Dorthea H. 'The Give-Away Dance.' South Peace Historical Society Local History Collection, article 01-085 (calverley.ca)."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Pâhkahk, in the diminutive Pâhkahkos, is the skeletal spirit of starvation and disease among the Cree, honoured and propitiated in feasting and give-away ceremonies.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mandelbaum, David G. The Plains Cree: An Ethnographic, Historical, and Comparative Study. Regina: Canadian Plains Research Center, 1979 [1940]."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pâhkahk, often called by the diminutive Pâhkahkos, is a skeletal spirit of the Cree, a dried-up, bony being associated with starvation and disease. George Nelson's 1823 letter-journal from Lac la Ronge describes Pah-kack among the powerful beings of Cree cosmology, and among the Plains and western Woods Cree the being was honoured in feasts and the Give-Away Dance, in which goods were given away to win its favour; those who pleased it received striking good fortune, while those who offended it courted hunger and misfortune. Skeleton figures called pakakoos were among the tattoo designs David Mandelbaum recorded from Plains Cree men, a mark of the being's protective as well as fearsome character."
+  },
+  {
+    "id": "cree_piyesiw",
+    "name": {
+      "primary": "Piyêsiw, the Thunderbird",
+      "alt": [
+        "Piyêsiw",
+        "Pinesiw",
+        "Pithêsiw (Woods Cree)",
+        "piyêsiwak (plural, the Thunderers)"
+      ],
+      "transliterations": {
+        "cr": "piyêsiw",
+        "etymology": "Plains Cree piyêsiw 'thunderbird, thunderer', beside the diminutive piyêsîs 'bird' (Wolvengrey, nêhiyawêwin: itwêwina / Cree: Words, 2001)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age and present"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "myth-age and present",
+        "eraOrdering": 0,
+        "startEvent": "The thunderbirds figure in Cree sacred stories and continue to be heard in every summer thunderstorm and encountered as dream guardians (Brightman, Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians, 1989).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "piyêsiw",
+          "script": "Latin",
+          "rom": "thunderbird; thunderer"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wolvengrey, Arok. nêhiyawêwin: itwêwina / Cree: Words. Regina: Canadian Plains Research Center, 2001."
+          }
+        ]
+      },
+      {
+        "sphereId": "storms",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ]
+      },
+      {
+        "sphereId": "dream-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "pawâkan",
+          "script": "Latin",
+          "rom": "dream guardian spirit"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mandelbaum, David G. The Plains Cree: An Ethnographic, Historical, and Comparative Study. Regina: Canadian Plains Research Center, 1979 [1940]."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_thunder",
+        "name": "to make thunder with the beating of its wings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ]
+      },
+      {
+        "id": "hurl_lightning",
+        "name": "to strike serpents and offenders with lightning",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      },
+      {
+        "id": "bless_dreamers",
+        "name": "to grant power and protection to those who obtain it in fasting dreams",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mandelbaum, David G. The Plains Cree: An Ethnographic, Historical, and Comparative Study. Regina: Canadian Plains Research Center, 1979 [1940]."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cree_piyesiw_lightning",
+        "name": "lightning",
+        "kind": "weapon",
+        "role": "the bolts the thunderbirds cast down at the great serpents and water monsters",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "cree_misikinepikw",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ],
+        "notes": "Rock Cree narratives describe the thunderbirds' hatred for the enormous man-eating serpents, whom they hunt with lightning whenever the monsters surface."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Piyêsiw, the Thunderbird, is the great bird being whose wingbeats are the thunder and whose strikes are the lightning, one of the most powerful spirit beings and dream guardians of the Cree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mandelbaum, David G. The Plains Cree: An Ethnographic, Historical, and Comparative Study. Regina: Canadian Plains Research Center, 1979 [1940]."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Piyêsiw, the Thunderbird, is the great bird whose wingbeats make the thunder and whose glance and strikes are the lightning. Among the most powerful of the spirit beings of Cree cosmology, the thunderbirds pass the summer hunting the giant serpents and other water monsters, and they were counted among the mightiest dream guardians a Cree faster could obtain, granting power in war and healing. In Plains Cree the word piyêsiw itself belongs to the ceremonial register and names the thunderers, while ordinary birds bear the diminutive piyêsîs; George Nelson's Cree informants of 1823 also described the Thunderbird appearing in visionary contexts in splendid bird form."
+  },
+  {
+    "id": "cree_misipisiw",
+    "name": {
+      "primary": "Misipisiw, the Great Lynx",
+      "alt": [
+        "Misipisiw",
+        "Michi-Pichoux",
+        "Water Lynx",
+        "Underwater Panther",
+        "misipisiwak (plural)"
+      ],
+      "transliterations": {
+        "cr": "misipisiw",
+        "etymology": "misi- 'great' + pisiw 'lynx', 'the Great Lynx', the Cree name of the underwater panther (Brightman, Grateful Prey, 1993)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age and present"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "myth-age and present",
+        "eraOrdering": 0,
+        "startEvent": "The Great Lynx acts in the sacred-story flood cycle and remained a feared presence of lakes and rapids for Rock Cree hunters into the twentieth century (Brightman, Grateful Prey: Rock Cree Human-Animal Relationships, 1993).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Grateful Prey: Rock Cree Human-Animal Relationships. Berkeley: University of California Press, 1993."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underwater-realm",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Grateful Prey: Rock Cree Human-Animal Relationships. Berkeley: University of California Press, 1993."
+          }
+        ]
+      },
+      {
+        "sphereId": "rapids-and-storms",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_storms_on_water",
+        "name": "to raise storms, waves, and rapids on lakes and rivers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      },
+      {
+        "id": "drag_under_water",
+        "name": "to seize and drown people and animals that venture onto its waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Grateful Prey: Rock Cree Human-Animal Relationships. Berkeley: University of California Press, 1993."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "cree_mahihkan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ahenakew, Edward. 'Cree Trickster Tales.' Journal of American Folklore 42, no. 166 (1929): 309–353."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ],
+        "notes": "In the Cree flood story the giant underwater cats (joined in some tellings by the horned serpents) kill the Wolf, Wîsahkêcâhk's younger brother; the trickster's revenge upon them lets loose the deluge that drowns the first world."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Misipisiw, the Great Lynx or underwater panther, is the feared master water being of Cree cosmology, dwelling beneath lakes and rapids and central to the flood story of the trickster cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Grateful Prey: Rock Cree Human-Animal Relationships. Berkeley: University of California Press, 1993."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Misipisiw, the Great Lynx, is the underwater panther of Cree cosmology, a giant cat-being of the deep water that raises storms and rapids and drags the unwary under. In the sacred-story flood cycle it is the underwater cats who kill the Wolf, the younger brother of Wîsahkêcâhk, and the trickster's vengeance on them looses the flood that drowns the first world, after which the earth is remade from mud brought up by the diving animals. George Nelson's Cree and Ojibwa informants at Lac la Ronge in 1823 described the being, under the name Michi-Pichoux, as among the most feared of the water powers, and Rock Cree hunters in twentieth-century Manitoba still spoke of misipisiw dwelling in their lakes."
+  },
+  {
+    "id": "cree_misikinepikw",
+    "name": {
+      "primary": "Misi-kinêpikw, the Great Serpent",
+      "alt": [
+        "Misikinepikw",
+        "Misikinebik",
+        "Great Snake",
+        "Horned Serpent",
+        "misikinêpikwak (plural)"
+      ],
+      "transliterations": {
+        "cr": "misi-kinêpikw",
+        "etymology": "misi- 'great' + kinêpikw 'snake', 'the Great Serpent' (Wolvengrey, nêhiyawêwin: itwêwina / Cree: Words, 2001)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age and present"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age and present",
+        "eraOrdering": 0,
+        "startEvent": "George Nelson's Cree informants in 1823 counted the monstrous water serpent among the most powerful beings, and it remains the thunderbirds' quarry in Rock Cree narrative (Brown and Brightman, 'The Orders of the Dreamed', 1988).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "serpents",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kinêpikw",
+          "script": "Latin",
+          "rom": "snake"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wolvengrey, Arok. nêhiyawêwin: itwêwina / Cree: Words. Regina: Canadian Plains Research Center, 2001."
+          }
+        ]
+      },
+      {
+        "sphereId": "deep-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_travellers",
+        "name": "to devour people who cross its waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ]
+      },
+      {
+        "id": "lurk_beneath_lakes",
+        "name": "to lie hidden beneath lakes and rapids, unseen until it strikes",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "cree_piyesiw",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ],
+        "notes": "The great serpents are the prey and adversaries of the thunderbirds, who blast them with lightning from the sky whenever they show themselves."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Misi-kinêpikw, the Great Serpent, is the monstrous man-eating water snake of Cree belief, the prey and enemy of the thunderbirds.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Brown, Jennifer S. H., and Robert Brightman. 'The Orders of the Dreamed': George Nelson on Cree and Northern Ojibwa Religion and Myth, 1823. Winnipeg: University of Manitoba Press, 1988."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Brightman, Robert A. Ācaðōhkīwina and ācimōwina: Traditional Narratives of the Rock Cree Indians. Canadian Museum of Civilization Mercury Series, Ethnology Paper 113. Ottawa: Canadian Museum of Civilization, 1989."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Misi-kinêpikw, the Great Serpent, is the monstrous horned snake of Cree waters. George Nelson's Cree material of 1823 counts the great water serpent among the most powerful beings, 'a monstrous animal' of much power, and Rock Cree narratives tell of enormous man-eating serpents hated and hunted by the thunderbirds, whose lightning is aimed at them whenever they surface. The being lurks beneath lakes and rapids and devours those who cross its waters, and in some tellings of the flood cycle the horned serpents share with the underwater cats the guilt of killing the trickster's wolf brother."
+  },
+  {
+    "id": "cree_cihcipistikwan",
+    "name": {
+      "primary": "Cihcipistikwân, the Rolling Head",
+      "alt": [
+        "Chichipischekwan",
+        "cihcipiscikwân",
+        "Rolling Head",
+        "cihcipistikwân"
+      ],
+      "transliterations": {
+        "cr": "cihcipistikwân",
+        "etymology": "'rolling head', a compound on mistikwân 'head'; the first tale of Edward Ahenakew's Plains Cree trickster cycle is titled 'Chichipischekwan (Rolling Head)' (Ahenakew, 'Cree Trickster Tales,' Journal of American Folklore 42, 1929)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age (sacred-story / âtayôhkêwin time)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age (sacred-story / âtayôhkêwin time)",
+        "eraOrdering": 0,
+        "startEvent": "Her beheading and her head's pursuit of her fleeing sons form the opening âtayôhkêwin of the Plains Cree trickster cycle (Ahenakew, 'Cree Trickster Tales,' 1929).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ahenakew, Edward. 'Cree Trickster Tales.' Journal of American Folklore 42, no. 166 (1929): 309–353."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "vengeance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Granzberg, Gary. 'The Rolling Head Legend among Algonquians.' Anthropologica 36, no. 1 (1994): 3–33."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "live_as_severed_head",
+        "name": "to live on as an animate severed head",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ahenakew, Edward. 'Cree Trickster Tales.' Journal of American Folklore 42, no. 166 (1929): 309–353."
+          }
+        ]
+      },
+      {
+        "id": "pursue_relentlessly",
+        "name": "to roll across the land in relentless pursuit of her fleeing sons",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Granzberg, Gary. 'The Rolling Head Legend among Algonquians.' Anthropologica 36, no. 1 (1994): 3–33."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "cree_wisahkecahk",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ahenakew, Edward. 'Cree Trickster Tales.' Journal of American Folklore 42, no. 166 (1929): 309–353."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Granzberg, Gary. 'The Rolling Head Legend among Algonquians.' Anthropologica 36, no. 1 (1994): 3–33."
+          }
+        ],
+        "notes": "The Rolling Head is the slain snake-wife whose elder son grows up to be Wîsahkêcâhk; her severed head pursues the fleeing boys in the opening sacred story of the trickster cycle."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "cree_mahihkan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ahenakew, Edward. 'Cree Trickster Tales.' Journal of American Folklore 42, no. 166 (1929): 309–353."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stevens, James R. Sacred Legends of the Sandy Lake Cree. Toronto: McClelland and Stewart, 1971."
+          }
+        ],
+        "notes": "Her younger son, carried on his brother's back during the flight from the pursuing head, is the boy who later becomes the Wolf, the trickster's younger brother."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Cihcipistikwân, the Rolling Head, is the beheaded snake-wife whose animate head pursues her sons in the opening sacred story of the Cree trickster cycle; she is the mother of Wîsahkêcâhk and of the boy who becomes the Wolf.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ahenakew, Edward. 'Cree Trickster Tales.' Journal of American Folklore 42, no. 166 (1929): 309–353."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Granzberg, Gary. 'The Rolling Head Legend among Algonquians.' Anthropologica 36, no. 1 (1994): 3–33."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Cihcipistikwân, the Rolling Head, opens the sacred-story cycle of the Cree. A married woman kept serpents as lovers; her husband killed them and then beheaded her, and her severed head remained alive and rolled in pursuit of her two fleeing sons, who threw behind them gifts from their father that became obstacles across her path. The elder of the boys grew up to be Wîsahkêcâhk, the transformer and trickster, and the younger became the Wolf; the head itself was at last destroyed at a river crossing. Recorded from Plains Cree tellers by Edward Ahenakew in the 1920s and studied comparatively across the Algonquian world, the Rolling Head remains one of the most widely told of the âtayôhkêwina, and places in Saskatchewan are still associated with her story."
+  },
+  {
+    "id": "cree_cahkapes",
+    "name": {
+      "primary": "Cahkâpês, the Boy Who Snared the Sun",
+      "alt": [
+        "Chahkabesh",
+        "Câhkâpêš",
+        "Cahkâpêsh",
+        "Tcikápis",
+        "Chakabesh",
+        "Ja-ka-baysh",
+        "Tshakapesh (Innu cognate)"
+      ],
+      "transliterations": {
+        "cr": "câhkâpêš",
+        "etymology": "a hero name of uncertain meaning shared across Cree, Innu (Tshakapesh), and Naskapi tradition; recorded as Tcikápis among the Eastern Cree by Skinner and as câhkâpêš in the Moose and Swampy Cree texts edited by Ellis (Skinner 1911; Ellis 1995)"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age and present"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "myth-age (sacred-story / âtayôhkêwin time)",
+        "eraOrdering": 0,
+        "startEvent": "Orphaned when monstrous beings kill his parents and raised by his elder sister, Cahkâpês passes his boyhood adventures in the age of the sacred stories (Skinner, Notes on the Eastern Cree and Northern Saulteaux, 1911).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          }
+        ]
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "myth-age and present",
+        "eraOrdering": 1,
+        "startEvent": "At the cycle's end the moon draws Cahkâpês up, and James Bay Cree tradition says his figure can be seen there still (Ellis, ed., Cree Legends and Narratives from the West Coast of James Bay, 1995, text 6, 'Chahkabesh is drawn up by the moon').",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ellis, C. Douglas, ed. âtalôhkâna nêsta tipâcimôwina / Cree Legends and Narratives from the West Coast of James Bay. Publications of the Algonquian Text Society. Winnipeg: University of Manitoba Press, 1995."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tipiski-pîsim",
+          "script": "Latin",
+          "rom": "the night sun, i.e. the moon (Moose Cree)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ellis, C. Douglas, ed. âtalôhkâna nêsta tipâcimôwina / Cree Legends and Narratives from the West Coast of James Bay. Publications of the Algonquian Text Society. Winnipeg: University of Manitoba Press, 1995."
+          }
+        ]
+      },
+      {
+        "sphereId": "hunting",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "snare_the_sun",
+        "name": "to snare the sun on its path and darken the world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ellis, C. Douglas, comp. 'How Chahkabesh snared the sun.' Spoken Cree: Cree Legends and Narratives from the West Coast of James Bay, audio text corpus (spokencree.org)."
+          }
+        ]
+      },
+      {
+        "id": "overcome_giants",
+        "name": "to overcome monstrous adversaries far larger than himself",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          }
+        ]
+      },
+      {
+        "id": "dwell_in_moon",
+        "name": "to dwell in the moon, where his figure can still be seen",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ellis, C. Douglas, ed. âtalôhkâna nêsta tipâcimôwina / Cree Legends and Narratives from the West Coast of James Bay. Publications of the Algonquian Text Society. Winnipeg: University of Manitoba Press, 1995."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cree_cahkapes_sun_snare",
+        "name": "sun snare",
+        "kind": "tool",
+        "role": "the snare line Cahkâpês sets on the sun's trail, catching the sun and holding back the day in his most famous adventure",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ellis, C. Douglas, comp. 'How Chahkabesh snared the sun.' Spoken Cree: Cree Legends and Narratives from the West Coast of James Bay, audio text corpus (spokencree.org)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Cahkâpês (Chahkabesh) is the boy hero of James Bay Cree sacred stories, a diminutive giant-killer who snared the sun and was drawn up into the moon, where he can still be seen.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ellis, C. Douglas, ed. âtalôhkâna nêsta tipâcimôwina / Cree Legends and Narratives from the West Coast of James Bay. Publications of the Algonquian Text Society. Winnipeg: University of Manitoba Press, 1995."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Cahkâpês (Chahkabesh) is the boy hero of the James Bay Cree sacred stories: small, brave, and impulsive, an orphan raised by his patient elder sister after monstrous beings killed their parents. Despite his tiny size he overcomes huge adversaries, and in his most famous adventures he snares the sun on its path, darkening the world until the snare is cut, and is finally drawn up by the moon, where Cree tradition says his figure can still be seen. Versions of his cycle were recorded at Rupert House and Fort Albany by Alanson Skinner in 1911 and from Swampy and Moose Cree tellers by C. Douglas Ellis in the 1950s and 1960s; the same hero is known to the neighbouring Innu and Naskapi as Tshakapesh."
+  },
+  {
+    "id": "cree_ayas",
+    "name": {
+      "primary": "Ayâs, the Deserted Boy",
+      "alt": [
+        "Âyâs",
+        "Ayash",
+        "Ayas",
+        "Ayâsew",
+        "Iyas",
+        "the Son of Aioswé"
+      ],
+      "transliterations": {
+        "cr": "âyâs",
+        "etymology": "the hero's name in the West James Bay text tradition, where the legend is titled 'âyâs kâ-išinihkâson'ci', 'the one named Âyâs'; Skinner recorded the jealous father as Aioswé (Ellis 1995; Skinner 1911)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age (sacred-story / âtayôhkêwin time)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "myth-age (sacred-story / âtayôhkêwin time)",
+        "eraOrdering": 0,
+        "startEvent": "The legend of Ayâs is told as an âtanôhkân of the story-world age, beginning when his jealous father abandons him on a gull-egg island far from shore (Skinner, Notes on the Eastern Cree and Northern Saulteaux, 1911; Ellis, ed., Cree Legends and Narratives from the West Coast of James Bay, 1995).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ellis, C. Douglas, ed. âtalôhkâna nêsta tipâcimôwina / Cree Legends and Narratives from the West Coast of James Bay. Publications of the Algonquian Text Society. Winnipeg: University of Manitoba Press, 1995."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "endurance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          }
+        ]
+      },
+      {
+        "sphereId": "world-fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "iskotêw",
+          "script": "Latin",
+          "rom": "fire"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "survive_abandonment",
+        "name": "to survive abandonment and the perilous road home with the aid of spirit helpers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          }
+        ]
+      },
+      {
+        "id": "set_world_afire",
+        "name": "to set the old world ablaze in retribution when he returns home",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ellis, C. Douglas, ed. âtalôhkâna nêsta tipâcimôwina / Cree Legends and Narratives from the West Coast of James Bay. Publications of the Algonquian Text Society. Winnipeg: University of Manitoba Press, 1995."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ayâs is the epic deserted-boy hero of James Bay Cree tradition, abandoned on an island by his jealous father, who returns home with spirit help and burns the old world.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Skinner, Alanson. Notes on the Eastern Cree and Northern Saulteaux. Anthropological Papers of the American Museum of Natural History 9, pt. 1. New York: American Museum of Natural History, 1911."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ellis, C. Douglas, ed. âtalôhkâna nêsta tipâcimôwina / Cree Legends and Narratives from the West Coast of James Bay. Publications of the Algonquian Text Society. Winnipeg: University of Manitoba Press, 1995."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ayâs is the deserted-boy hero of the great James Bay Cree epic. His jealous father, called Aioswé in the version Alanson Skinner recorded at Rupert House, strands him on an island of gull eggs; a sea being carries him back across the water — in the coastal telling a walrus, which is killed by lightning when the boy conceals the approaching thunder — and a spirit grandmother feeds him and arms him with items of power against the dangerous beings that line the road home. Reaching home at last, he finds his mother mistreated, takes his revenge, and sets the old world on fire, an ending remembered in the Rupert House telling as the burning of the world. The legend was still being told in Cree on the west coast of James Bay in the 1950s, and it remains part of the living repertoire of Cree storytellers."
+  }
+]
+```

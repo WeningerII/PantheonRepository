@@ -1,0 +1,675 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Diyari
+Era (registered, exact): "Diyari traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the four Diyari figures that published scholarship genuinely individuates beyond the existing core: Marindi, the ancestral dog whose blood became the Parachilna red ochre, the mythic partner of the existing Adnoartina (Horne & Aiston 1924; Howitt 1904; McBryde 1987, 2000); Kutji, the malevolent spirit paired against the existing Mura/Mooramoora from the first ethnography onward (Gason 1874; Howitt 1904; Austin 2013); and the muramura Minkani and Ngura-wordu-punnuna from the Siebert-Howitt legend corpus (Howitt & Siebert, JAI 34, 1904; Howitt 1904; Smith 2019). I verified and excluded near-misses: Paralina (attributed to the Yaurorka, not the Diyari), the Mankara-waka and Mankara-pirna (explicitly two travelling parties of girls, not individuals), the Anti-etya/Ngardu-etya pair as independent entries (Anti-etya is identified with Minkani and the legend is elsewhere credited to Yandruwandha country), and Darana's unnamed youths. Reuther's Killalpaninna manuscript names many further muramura (533 dictionary mentions per Austin), but they lack individuated treatment in accessible published scholarship, so per correctness-over-quantity they were not authored. All four new figures stand alone because the sources record no genealogy, and the one attested tie (Adnoartina slew Marindi) runs from an existing figure to a new one, which the schema's directed kinds cannot express from the new side; it is documented in Marindi's notes and solitary rationale instead.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "diyari_marindi",
+    "name": {
+      "primary": "Marindi (the ancestral dog)",
+      "alt": [
+        "Marandi",
+        "Marindi the dog"
+      ],
+      "transliterations": {
+        "diyari": "Marindi",
+        "etymology": "The proper name of the ancestral dog as taken down from Lake Eyre informants by George Horne and George Aiston (Savage Life in Central Australia, 1924); no meaning for the name is recorded, and later retellings sometimes spell it Marandi."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Diyari",
+    "primaryTradition": "Diyari",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Diyari traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Diyari traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Marindi belongs to the age of the muramura, when the gecko ancestor Adnoartina challenged the great dog at a dry creek bed, seized him by the throat at dusk, and his spilled blood dyed the rocks red, forming the ochre deposit at Pukardu Hill near Parachilna.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Horne & George Aiston, Savage Life in Central Australia (London: Macmillan, 1924)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "red-ochre",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "karku",
+          "script": "Latin",
+          "rom": "red ochre, held to be the blood of the ancestral beings"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Isabel McBryde, 'Goods from another country: exchange networks and the people of the Lake Eyre Basin', in D.J. Mulvaney & J.P. White (eds), Australians to 1788 (Sydney: Fairfax, Syme & Weldon, 1987)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "blood_becomes_ochre",
+        "name": "to turn his spilled blood into red ochre",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The blood that poured from Marindi's throat dyed the rocks of the creek red and remains in the land as the mined ochre of Pukardu (Bookartoo) Hill.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Horne & George Aiston, Savage Life in Central Australia (London: Macmillan, 1924)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Isabel McBryde, 'Travellers in storied landscapes: a case study in exchanges and heritage', Aboriginal History 24 (2000)"
+          }
+        ]
+      },
+      {
+        "id": "ancestral_combat",
+        "name": "to fight rival ancestral beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Marindi leapt to catch the gecko Adnoartina when the lizard challenged him over their prey.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Horne & George Aiston, Savage Life in Central Australia (London: Macmillan, 1924)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "diyari_karku_ochre",
+        "name": "Karku (red ochre of the Pukardu mine)",
+        "kind": "sacred substance",
+        "role": "Marindi's congealed blood, mined near Parachilna in the Flinders Ranges, carried north by Diyari ochre expeditions and required for ceremonies such as the Mindari peace ceremony",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Isabel McBryde, 'Goods from another country: exchange networks and the people of the Lake Eyre Basin', in D.J. Mulvaney & J.P. White (eds), Australians to 1788 (Sydney: Fairfax, Syme & Weldon, 1987)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Marindi is the ancestral dog of Diyari tradition who was killed in a fight with the gecko ancestor Adnoartina, his blood becoming the red-ochre deposit at Pukardu Hill near Parachilna, the object of the great Diyari ochre expeditions.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "George Horne & George Aiston, Savage Life in Central Australia (London: Macmillan, 1924)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Isabel McBryde, 'Travellers in storied landscapes: a case study in exchanges and heritage', Aboriginal History 24 (2000)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Marindi is the ancestral dog of the Diyari (Dieri) people of the Lake Eyre basin, South Australia. In the age of the ancestral beings, the gecko ancestor Adnoartina challenged the great dog Marindi to a fight beside a dry watercourse; waiting until the cool of dusk, the gecko seized the dog by the throat, its sharp teeth sinking in until the red blood spurted out, pouring over the rocks and dyeing them red. That blood remains in the land as the red ochre (karku) of Pukardu (Bookartoo) Hill near Parachilna in the Flinders Ranges, a site now dual-named Parachilna Ochre Mine/Vukartu Ithapi. Diyari men made celebrated expeditions of hundreds of kilometres to mine this ochre, which was understood as the transformed blood of the dog and was essential to ceremonies such as the Mindari peace ceremony and to trade throughout the Lake Eyre basin. The legend was published by A. W. Howitt in 1904 and again, from informants of the Diyari country, by George Horne and George Aiston in 1924; some modern retellings transfer the bloodstain to Uluru, but the ethnographic accounts fix it at the Parachilna ochre mine."
+  },
+  {
+    "id": "diyari_kutji",
+    "name": {
+      "primary": "Kutji (the malevolent spirit)",
+      "alt": [
+        "Kutchi",
+        "Kootchie",
+        "Cootchie",
+        "Kutyi"
+      ],
+      "transliterations": {
+        "diyari": "kutyi",
+        "etymology": "Diyari kutyi 'devil, evil spirit' (Peter K. Austin, A Dictionary of Diyari, South Australia, 2013); recorded as 'Kootchie' by Gason (1874) and 'Kutchi' by Howitt (1904)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Diyari",
+    "primaryTradition": "Diyari",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Diyari traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Diyari traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Kutji is feared from the earliest recorded accounts of Diyari religion, in which Samuel Gason (1874) set the evil being Kootchie against the good spirit Mooramoora and described ceremonies held within a sand circle from which Kutji was shut out.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Gason, The Dieyerie Tribe of Australian Aborigines (Adelaide, 1874; repr. in J.D. Woods (ed.), The Native Tribes of South Australia, Adelaide, 1879)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sickness-and-misfortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kutyi",
+          "script": "Latin",
+          "rom": "devil; evil spirit"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Gason, The Dieyerie Tribe of Australian Aborigines (Adelaide, 1874; repr. in J.D. Woods (ed.), The Native Tribes of South Australia, Adelaide, 1879)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Peter K. Austin, A Dictionary of Diyari, South Australia (rev. edn, 2013)"
+          }
+        ]
+      },
+      {
+        "sphereId": "whirlwinds",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      },
+      {
+        "sphereId": "medicine-men",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kunki",
+          "script": "Latin",
+          "rom": "Diyari medicine-man, who communicates with Kutji"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inflict_sickness",
+        "name": "to inflict sickness, death and calamity",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Kutji was held to be the cause of sickness and other evils, which the medicine-men drove out by suitable means.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Gason, The Dieyerie Tribe of Australian Aborigines (Adelaide, 1874; repr. in J.D. Woods (ed.), The Native Tribes of South Australia, Adelaide, 1879)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      },
+      {
+        "id": "ride_whirlwinds",
+        "name": "to travel in whirlwinds and dust clouds",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Dust whirlwinds crossing the plains were ascribed to Kutji, and one passing through a camp caused great consternation as the omen of a coming calamity.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      },
+      {
+        "id": "inspire_medicine_men",
+        "name": "to reveal hidden knowledge to medicine-men",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The kunki, the Diyari doctors, were believed to hold direct communication with Kutji, interpreting dreams and revealing the authors of deaths.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Kutji is the malevolent spirit of Diyari religion, the counterpart of the good spirit Mooramoora in Gason's 1874 account, blamed for sickness and calamity, discerned in dust whirlwinds, and the source of the revelations of the Diyari medicine-men (kunki).",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Gason, The Dieyerie Tribe of Australian Aborigines (Adelaide, 1874; repr. in J.D. Woods (ed.), The Native Tribes of South Australia, Adelaide, 1879)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Peter K. Austin, A Dictionary of Diyari, South Australia (rev. edn, 2013)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kutji (Gason's 'Kootchie', Howitt's 'Kutchi'; modern Diyari kutyi, glossed 'devil') is the malevolent power of Diyari religion. The police trooper Samuel Gason, in the first ethnography of the Diyari (1874), described Kootchie as the evil being opposed to the good spirit Mooramoora: certain ceremonies were performed within a circle traced in the sand, within which the good spirit was present and from which Kutji was shut out. Kutji brings sickness, death and misfortune; the dust whirlwinds that sweep the Cooper plains were ascribed to this spirit, and one passing through a camp caused great consternation as the forewarning of calamity. The Diyari medicine-men, the kunki, were held to have direct communication with Kutji as well as with the muramura, receiving from the spirit the revelations by which they interpreted dreams, named the authors of deaths, and cured the very ills the spirit caused. Later ethnography noted that Gason's picture of a single 'devil' simplifies Diyari belief, in which kutji could denote malignant spirit presence more generally; the figure nonetheless remains the standard dark counterpart of the good spirit Mura in accounts of Diyari religion."
+  },
+  {
+    "id": "diyari_minkani",
+    "name": {
+      "primary": "Minkani (the muramura beneath the sandhill)",
+      "alt": [
+        "Mura-mura Minkani",
+        "Anti-etya"
+      ],
+      "transliterations": {
+        "diyari": "Minkani",
+        "etymology": "Compare Diyari minka 'hole, burrow' (J.G. Reuther's Diari dictionary; Austin 2013), apt for the muramura who lies hidden in his cave deep in a sandhill."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Diyari",
+    "primaryTradition": "Diyari",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Diyari traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Diyari traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the age of the muramura the hunter ancestor Anti-etya burrowed ever deeper into his sandhill and remains there as the Mura-mura Minkani, whose 'elbow' is ritually uncovered at Kudna-ngauana on Cooper Creek.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt & Otto Siebert, 'Legends of the Dieri and Kindred Tribes of Central Australia', Journal of the Anthropological Institute of Great Britain and Ireland 34 (1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "carpet-snake-increase",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "woma",
+          "script": "Latin",
+          "rom": "carpet-snake (woma python), a staple food multiplied by his rite"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      },
+      {
+        "sphereId": "goanna-increase",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kapiri",
+          "script": "Latin",
+          "rom": "lace monitor (goanna), likewise multiplied by his ceremony"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "multiply_snakes_and_goannas",
+        "name": "to make the sandhills bring forth young carpet-snakes and goannas",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Blood from the celebrants' arm veins, mixed with earth from Minkani's cave and scattered over the sandhills, causes them to bring forth the young woma and kapiri hidden in them.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt & Otto Siebert, 'Legends of the Dieri and Kindred Tribes of Central Australia', Journal of the Anthropological Institute of Great Britain and Ireland 34 (1904)"
+          }
+        ]
+      },
+      {
+        "id": "abide_beneath_earth",
+        "name": "to lie living beneath the earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Minkani is hidden in his cave deep in a sandhill, and the diggers uncover his 'elbow' with great care at each ceremony.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt & Otto Siebert, 'Legends of the Dieri and Kindred Tribes of Central Australia', Journal of the Anthropological Institute of Great Britain and Ireland 34 (1904)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "diyari_minkani_cave_earth",
+        "name": "Earth from Minkani's cave",
+        "kind": "ritual substance",
+        "role": "dug from the muramura's resting place, mixed with the celebrants' arm-blood and scattered over the sandhills to produce young carpet-snakes and goannas",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Mura-mura Minkani",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Minkani is a Diyari muramura who lies buried alive in a sandhill near Cooper Creek, the centre of a periodic increase ceremony in which his 'elbow' is uncovered and arm-blood dropped upon him so that the sandhills bring forth carpet-snakes and goannas; his subterranean 'remains' were identified with the fossil bones the Diyari call kadimarkara.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt & Otto Siebert, 'Legends of the Dieri and Kindred Tribes of Central Australia', Journal of the Anthropological Institute of Great Britain and Ireland 34 (1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "M.A. Smith, 'The historiography of kardimarkara: reading a desert tradition as cultural memory of the remote past', Journal of Social Archaeology 19(1) (2019)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Minkani is a muramura of the Diyari who lies alive beneath a sandhill at Kudna-ngauana near Cooper Creek. In the legend recorded by the missionary Otto Siebert, the hunter muramura Anti-etya burrowed deeper and deeper into his sandhill and abides there as the Mura-mura Minkani. At his periodic ceremony, held by the Diyari together with neighbouring Lake Eyre peoples such as the Yaurorka, Yantruwunta and Ngameni, the men dig with great care until the 'elbow' of the muramura is uncovered; two men then stand over him and let blood from their opened arm veins fall upon him while the Minkani song is sung. The participants, in a frenzy, strike at one another with their weapons on the mile-long return to camp, until the women rush out and hold shields over their husbands to end the fighting. The blood shed in this combat, mixed with earth from Minkani's cave, is scattered over the sandhills so that they will bring forth the young carpet-snakes (woma) and goannas (kapiri) hidden within them. Howitt judged that the 'body' of Minkani answered to the fossil bones found in the deltas of the rivers entering Lake Eyre, which the Diyari call kadimarkara, and the tradition has figured ever since in discussion of how such desert narratives relate to the remote past."
+  },
+  {
+    "id": "diyari_ngura_wordu_punnuna",
+    "name": {
+      "primary": "Ngura-wordu-punnuna (the wandering muramura of Pando)",
+      "alt": [
+        "Ngurawordupunnuna",
+        "Mura-mura Ngura-wordu-punnuna"
+      ],
+      "transliterations": {
+        "diyari": "Ngura-wordu-punnuna",
+        "etymology": "Compound name recorded from Diyari informants by Otto Siebert and published by Howitt (1904); its first element answers to Diyari ngura 'camp' (J.G. Reuther's Diari dictionary; Austin 2013)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Diyari",
+    "primaryTradition": "Diyari",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Diyari traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Diyari traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the age of the muramura he lived at Pando (Lake Hope) in Diyari country, snaring the rats and mice that swarmed there, before wandering with the west wind and finally sinking into the ground at the end of his journey.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt & Otto Siebert, 'Legends of the Dieri and Kindred Tribes of Central Australia', Journal of the Anthropological Institute of Great Britain and Ireland 34 (1904)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "small-game-hunting",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      },
+      {
+        "sphereId": "kadimarkara-creatures",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kadimarkara",
+          "script": "Latin",
+          "rom": "monstrous creatures of Lake Eyre tradition, identified with the region's fossil bones"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "M.A. Smith, 'The historiography of kardimarkara: reading a desert tradition as cultural memory of the remote past', Journal of Social Archaeology 19(1) (2019)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "craft_water_bags",
+        "name": "to sew water-bags from the skins of his game",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Of the skins of the rats and mice he caught at Pando he made the water-bags that sustained his wanderings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      },
+      {
+        "id": "engender_kadimarkara",
+        "name": "to bring forth kadimarkara along his track",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "At the places where he rested on his wanderings, kadimarkara were produced and remained in the land.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      },
+      {
+        "id": "sink_into_earth",
+        "name": "to sink into the earth at his journey's end",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Like other muramura of the Diyari, he ended his wanderings by sinking down into the ground, where he remains.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "diyari_skin_water_bags",
+        "name": "Skin water-bags",
+        "kind": "implement",
+        "role": "bags sewn from the skins of rats and mice, and one great bag made from the hide of the monstrous creature he overcame, in which he carried water on his wanderings",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Mura-mura Ngura-wordu-punnuna",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ngura-wordu-punnuna is a Diyari muramura of Pando (Lake Hope) who lived on the rats and mice he snared there, sewed their skins into water-bags, wandered when the west wind blew while kadimarkara arose at his resting-places, and sank into the earth at the end of his journey.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt, The Native Tribes of South-East Australia (London: Macmillan, 1904)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A.W. Howitt & Otto Siebert, 'Legends of the Dieri and Kindred Tribes of Central Australia', Journal of the Anthropological Institute of Great Britain and Ireland 34 (1904)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ngura-wordu-punnuna is a muramura of the Diyari whose legend, collected by the missionary Otto Siebert at Killalpaninna and published by A. W. Howitt, is set at Pando (Lake Hope) in the heart of Diyari country. He lived there on the rats and mice that swarmed in good seasons, sewing their skins into water-bags, and in the story he overcomes a strange beast that addresses him before he can strike, afterwards taking its great hide for the largest of his bags. When the west wind blew he wandered on, resting when it shifted, and at his resting-places kadimarkara — the monstrous creatures of Lake Eyre lore, whose 'bones' the Diyari recognised in the fossil beds of the region — arose along his track; at one place two kadimarkara hid in their burrows for fear of him, and at another two of them blocked his way. Laden with his filled water-bags, he came at last to Yulku-kudana, stretched out his neck to look back toward his camp at Pando, and sank down into the earth, ending his journey in the manner of the muramura, who remain in the land at the places where they went down."
+  }
+]
+```

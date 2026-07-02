@@ -1,0 +1,137 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Makira
+Era (registered, exact): "Makira traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added a single figure, Oharimae, the only further individuated Makiran being the attested record yields: Fox and Drew's foundational JRAI account (1915) names it as a hi'ona/figona with serpent incarnation "only known to particular persons," and the passage is reproduced verbatim in G. Elliot Smith's The Evolution of the Dragon (1919). Systematic checks of Codrington (1891), Fox & Drew (1915), Dixon's Oceanic Mythology (1916), Elliot Smith (1919), Fox's The Threshold of the Pacific (1924, including its full term index), and Michael W. Scott's Arosi ethnography (The Severed Snake, 2007; Oceania, 2021) surface no other named individuals: the remaining Makiran supernaturals (figona/hi'ona, adaro, aunga ghosts, kakamora, masi, auhenua ancestors) are unnamed classes, and the only named adaro, Ngorieru/Ugoriaru, is already in the corpus. The snake goddess Walutahanga was deliberately excluded because no scholarly source localizes her beyond generic "Solomon Islands/Melanesia"; Rapuanate is an 'Are'are (Malaita) hero, Warohunugamwanehaora and the Masi fools belong to Ulawa, and Atawa/Amwea are Bauro moieties rather than persons. Beyond Oharimae the individuated record for Makira island appears genuinely exhausted.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "makira_oharimae",
+    "name": {
+      "primary": "Oharimae",
+      "alt": [],
+      "transliterations": {
+        "arosi": "Oharimae"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Makira",
+    "primaryTradition": "Makira",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Makira traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Makira traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Named by C. E. Fox and F. H. Drew (1915) among the hi'ona (figona) of San Cristoval as a serpent-incarnate spirit 'only known to particular persons', in contrast with the universally worshipped creator Agunua.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. E. Fox and F. H. Drew, \"Beliefs and Tales of San Cristoval (Solomon Islands)\", Journal of the Royal Anthropological Institute of Great Britain and Ireland 45 (1915), pp. 187–228."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. Elliot Smith, The Evolution of the Dragon (Manchester: Manchester University Press, 1919), ch. III, quoting Fox and Drew on the San Cristoval figona."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "serpents",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "figona",
+          "script": "Latin",
+          "rom": "figona / hi'ona — spirit-being with serpent incarnation"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. E. Fox and F. H. Drew, \"Beliefs and Tales of San Cristoval (Solomon Islands)\", Journal of the Royal Anthropological Institute of Great Britain and Ireland 45 (1915), pp. 187–228."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. Elliot Smith, The Evolution of the Dragon (Manchester: Manchester University Press, 1919), ch. III."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "serpent_incarnation",
+        "name": "to be incarnate in the form of a serpent",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Fox and Drew report that all the hi'ona or figona of San Cristoval, from Agunua down to locally known spirits such as Oharimae, were believed to have a serpent incarnation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. E. Fox and F. H. Drew, \"Beliefs and Tales of San Cristoval (Solomon Islands)\", Journal of the Royal Anthropological Institute of Great Britain and Ireland 45 (1915), pp. 187–228."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. Elliot Smith, The Evolution of the Dragon (Manchester: Manchester University Press, 1919), ch. III."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "makira_agunua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. E. Fox and F. H. Drew, \"Beliefs and Tales of San Cristoval (Solomon Islands)\", Journal of the Royal Anthropological Institute of Great Britain and Ireland 45 (1915), pp. 187–228."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Encyclopedia of Gods: Over 2,500 Deities of the World (New York: Facts on File, 1993), s.v. \"Agunua\"."
+          }
+        ],
+        "notes": "Fox and Drew range the serpent-incarnate figona of San Cristoval from Agunua, the creator worshipped by everyone, down to spirits such as Oharimae venerated only by particular persons; later reference works follow Fox in treating the lesser figona as aspects or subordinates of Agunua."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Oharimae is a named hi'ona (figona) of San Cristoval (Makira), a serpent-incarnate spirit-being whose cult was restricted to particular persons, contrasted by Fox and Drew with the universally worshipped creator Agunua.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "C. E. Fox and F. H. Drew, \"Beliefs and Tales of San Cristoval (Solomon Islands)\", Journal of the Royal Anthropological Institute of Great Britain and Ireland 45 (1915), pp. 187–228."
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. Elliot Smith, The Evolution of the Dragon (Manchester: Manchester University Press, 1919), ch. III, quoting Fox and Drew: \"All the hi'ona or figona of San Cristoval have a serpent incarnation, from Agunua the creator, worshipped by every one, to Oharimae and others, only known to particular persons.\""
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Oharimae is one of the named hi'ona or figona of San Cristoval (Makira) in the south-eastern Solomon Islands. In the foundational account of Makiran religion, C. E. Fox and F. H. Drew report that every figona was believed to have a serpent incarnation, and they range these spirit-beings 'from Agunua the creator, worshipped by every one, to Oharimae and others, only known to particular persons.' Oharimae thus represents the localized end of the figona cult: a serpent-spirit venerated privately by particular families or persons rather than by the whole island. Fox and Drew add that almost all such local figona were represented as female snakes, Agunua alone being male, though Oharimae's own sex is not recorded. The passage naming Oharimae was reproduced by Grafton Elliot Smith in The Evolution of the Dragon (1919) as evidence of the serpent form of Melanesian divinities."
+  }
+]
+```

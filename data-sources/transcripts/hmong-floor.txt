@@ -1,0 +1,1099 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Hmong
+Era (registered, exact): "Hmong otherworld cosmology; living belief", "Hmong/Miao creation time; living cosmology"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six individuated, well-attested figures: the death-lord Ntxwj Nyug (the documented counterpart of the existing Nyuj Vaj Tuam Teem, not a duplicate of him), the first shaman Siv Yis, the frog creator Nplooj Lwg whose dying curse explains human mortality, the household fortune spirit Xwm Kab, the child-soul goddess Niam Nkauj Kab Yeeb (a Guanyin syncretism), and the Dab Pog birth couple, each carrying two or more real scholarly citations (Tapp 1989; Chindarsi 1976; Lemoine 1986; Mottin 1984; Falk 1996; K.-L. Yang 2006; D. Cha 2003; Lee and Tapp 2010). Siv Yis and Ntxwj Nyug are tied into the existing pantheon through Saub (who commissioned the first shaman) and through their attested enmity. I deliberately excluded the sun-maiden and moon-lord pair (Nkauj Hnub, Nraug Hli) and the thunder lord Xob, whose individuated attestation proved chiefly popular-folkloric or to belong to the distinct Hmu (Guizhou Miao) Butterfly Mother epic cycle rather than to Hmong tradition proper, and I excluded non-individuated spirit classes such as poj ntxoog forest spirits and zaj dragons.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "hmong_ntxwj_nyug",
+    "name": {
+      "primary": "Lord of Death",
+      "alt": [
+        "Ntxwj Nyug",
+        "Ntxwj Nyoog",
+        "Ntxwg Nyug",
+        "Ntzer Nyong"
+      ],
+      "transliterations": {
+        "hmong-rpa": "Ntxwj Nyug",
+        "etymology": "White Hmong name in the Romanized Popular Alphabet, also spelled Ntxwj Nyoog; scholarship records the variant spellings without a settled derivation (Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1, 1989; Catherine Falk, 'Hmong Instructions to the Dead', Asian Folklore Studies 55/1, 1996)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hmong",
+    "primaryTradition": "Hmong",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Hmong otherworld cosmology; living belief"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Hmong otherworld cosmology; living belief",
+        "eraOrdering": 0,
+        "startEvent": "From the ordering of the living and the dead, Ntxwj Nyug sits at the top of a mighty mountain guarding the gates of the otherworld, issuing the licences of life whose expiry brings death and judging the souls of the dead for rebirth (Tapp 1989; Lemoine 1986).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in Glenn L. Hendricks, Bruce T. Downing and Amos S. Deinard (eds.), The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kev tuag",
+          "script": "Latin (Hmong RPA)",
+          "rom": "death, dying"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Catherine Falk, 'Hmong Instructions to the Dead: What the Mouth Organ Qeej Says (Part One)', Asian Folklore Studies 55/1 (1996)"
+          }
+        ]
+      },
+      {
+        "sphereId": "disease",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kev mob",
+          "script": "Latin (Hmong RPA)",
+          "rom": "sickness, illness"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      },
+      {
+        "sphereId": "fate",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "txoj sia",
+          "script": "Latin (Hmong RPA)",
+          "rom": "the thread or span of life"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "decree_lifespans",
+        "name": "to grant and recall the licences of life that fix each person's span",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Shamans may bargain with him for an extension when a patient's licence of life has expired.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      },
+      {
+        "id": "send_disease",
+        "name": "to afflict the living with sickness and death",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      },
+      {
+        "id": "judge_souls",
+        "name": "to judge the souls of the dead and appoint the form of their rebirth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Souls may be returned as humans, animals or plants according to his judgment.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Catherine Falk, 'Hmong Instructions to the Dead: What the Mouth Organ Qeej Says (Part One)', Asian Folklore Studies 55/1 (1996)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hmong_licence_of_life",
+        "name": "Licence of life and death",
+        "kind": "emblem",
+        "role": "The written mandate by which each person's lifespan is granted, renewed or recalled at Ntxwj Nyug's court; shamans plead before him for its extension.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "hmong_siv_yis",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ],
+        "notes": "In Hmong shamanic tradition Ntxwj Nyug schemes against the first shaman Siv Yis, whose healing craft reclaims the souls that the death lord tries to carry off."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ntxwj Nyug is the Hmong lord of death and sickness who dwells above the gates of the otherworld on a mighty mountain, issues the licences of life that fix every creature's span, and judges the souls of the dead for rebirth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Catherine Falk, 'Hmong Instructions to the Dead: What the Mouth Organ Qeej Says (Part One)', Asian Folklore Studies 55/1 (1996)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in Glenn L. Hendricks, Bruce T. Downing and Amos S. Deinard (eds.), The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ntxwj Nyug is the grim ruler of death in Hmong cosmology, seated at the summit of a great mountain in the dark otherworld where he guards the gates through which the souls of the dead must pass on their way back to the village of the ancestors. He keeps registers of the living and issues each person a licence of life; when the licence runs out the person sickens and dies, and the soul comes before him to be judged and assigned rebirth as a human being, an animal or a plant. He works alongside the otherworld judge Nyuj Vaj Tuam Teem, who stamps the licences for rebirth, the two together being remembered as the lords of the otherworld who control life and death. Because he afflicts humankind with disease and shortens lives, the benevolent creator Saub entrusted healing powers to the first shaman Siv Yis, and every Hmong shaman since has fought to wrest patients' souls from Ntxwj Nyug's grasp, sometimes pleading at his court for a licence to be renewed. In funeral chants such as the Showing the Way and in the speech of the funeral reed-organ, the dead are instructed how to pass safely through his domain."
+  },
+  {
+    "id": "hmong_siv_yis",
+    "name": {
+      "primary": "First Shaman",
+      "alt": [
+        "Siv Yis",
+        "Shee Yee",
+        "Siv Yig"
+      ],
+      "transliterations": {
+        "hmong-rpa": "Siv Yis",
+        "etymology": "White Hmong name in the Romanized Popular Alphabet, anglicized as 'Shee Yee' in refugee-era ethnography (Dwight Conquergood, I Am a Shaman: A Hmong Life Story with Ethnographic Commentary, University of Minnesota, 1989)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hmong",
+    "primaryTradition": "Hmong",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Hmong otherworld cosmology; living belief"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Hmong otherworld cosmology; living belief",
+        "eraOrdering": 0,
+        "startEvent": "When the diseases of Ntxwj Nyug were destroying the living faster than they could be replaced, the creator Saub entrusted Siv Yis with his healing spirits and instruments and sent him among humankind as the first shaman (Tapp 1989; Lemoine 1986).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "Hmong otherworld cosmology; living belief",
+        "eraOrdering": 1,
+        "startEvent": "After his time among the living Siv Yis returned to the sky world, and every shaman who has entered trance since then speaks and acts as Siv Yis, healing in his person (Mottin 1984; Lemoine 1986).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jean Mottin, 'A Hmong Shaman's Seance', Asian Folklore Studies 43/1 (1984)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "healing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kho mob",
+          "script": "Latin (Hmong RPA)",
+          "rom": "to cure sickness"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      },
+      {
+        "sphereId": "shamanism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ua neeb",
+          "script": "Latin (Hmong RPA)",
+          "rom": "to perform the shamanic rite"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jean Mottin, 'A Hmong Shaman's Seance', Asian Folklore Studies 43/1 (1984)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heal_the_sick",
+        "name": "to cure sickness by mastering the spirits that cause it",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His healing spirits, the dab neeb, were entrusted to him by Saub and now serve the shamans who succeed him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          }
+        ]
+      },
+      {
+        "id": "otherworld_journey",
+        "name": "to ride in trance into the otherworld and ransom captive souls",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jean Mottin, 'A Hmong Shaman's Seance', Asian Folklore Studies 43/1 (1984)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hmong_rooj_neeb",
+        "name": "Shaman's bench (rooj neeb)",
+        "kind": "ritual instrument",
+        "role": "The wooden bench that becomes the shaman's flying horse on the trance journey into the unseen world, ridden in Siv Yis's name together with the rattle, gong, finger-bells and divination horns of his tool-kit.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jean Mottin, 'A Hmong Shaman's Seance', Asian Folklore Studies 43/1 (1984)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "hmong_saub",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          }
+        ],
+        "notes": "Saub, the kindly creator who periodically rescues humanity, entrusted Siv Yis with a portion of his own healing powers and sent him to defend humankind against disease."
+      },
+      {
+        "kind": "enemy",
+        "personId": "hmong_ntxwj_nyug",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ],
+        "notes": "Hmong tales cast the death lord Ntxwj Nyug as the adversary whose afflictions Siv Yis was commissioned to undo, and the two contend over the souls of the sick."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Siv Yis is the first shaman of the Hmong, entrusted by the creator Saub with healing spirits to combat the diseases sent by Ntxwj Nyug, and every Hmong shaman in trance identifies himself with Siv Yis and wields the tools he left behind.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jean Mottin, 'A Hmong Shaman's Seance', Asian Folklore Studies 43/1 (1984)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jacques Lemoine, 'Shamanism in the Context of Hmong Resettlement', in Glenn L. Hendricks, Bruce T. Downing and Amos S. Deinard (eds.), The Hmong in Transition (New York: Center for Migration Studies, 1986)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dwight Conquergood, I Am a Shaman: A Hmong Life Story with Ethnographic Commentary (Southeast Asian Refugee Studies Occasional Papers 8; Minneapolis: University of Minnesota, 1989)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Siv Yis, remembered in English-language ethnography as Shee Yee, is the archetypal healer of the Hmong. When the death lord Ntxwj Nyug was killing more people than were being born, the benevolent creator Saub gave Siv Yis a share of his own power, together with healing spirits and ritual instruments, and sent him to protect humankind from disease. Siv Yis fought sickness and the schemes of the death lord, rescuing souls that had been carried off to the otherworld. Hmong tellings recount that when he finally withdrew again into the sky his tools remained among humankind, and those whom his spirits choose take them up and become shamans in their turn. To this day the shaman who mounts the wooden bench, veils his face and enters trance announces himself as Siv Yis, so that the first shaman is held to be present in every seance; the resident shamanic spirits a master serves are the same neeb that once served Siv Yis."
+  },
+  {
+    "id": "hmong_nplooj_lwg",
+    "name": {
+      "primary": "Primordial Frog",
+      "alt": [
+        "Nplooj Lwg",
+        "Blong Lue"
+      ],
+      "transliterations": {
+        "hmong-rpa": "Nplooj Lwg",
+        "etymology": "White Hmong proper name of the frog of the creation account, written in the Romanized Popular Alphabet and rendered 'Blong Lue' in English retellings (Nusit Chindarsi, The Religion of the Hmong Njua, 1976)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Hmong",
+    "primaryTradition": "Hmong",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Hmong/Miao creation time; living cosmology"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Hmong/Miao creation time; living cosmology",
+        "eraOrdering": 0,
+        "startEvent": "At the beginning of things the frog Nplooj Lwg made heaven and earth as a single world in which human beings and spirits lived together in peace (Chindarsi 1976; Tapp 1989).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      },
+      {
+        "typeStatus": "numen",
+        "era": "Hmong/Miao creation time; living cosmology",
+        "eraOrdering": 1,
+        "startEvent": "The first people killed the frog in anger for saying the world was no larger than the palm of a hand and the sole of a foot, and with its dying breath it cursed humankind with sickness and death, the parting of people and spirits into two worlds, alternating heat and rain, and the falling of the leaves (Chindarsi 1976).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tsim teb tsim chaw",
+          "script": "Latin (Hmong RPA)",
+          "rom": "the making of the land and the places; the creation of the world"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          }
+        ]
+      },
+      {
+        "sphereId": "mortality",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kev tuag",
+          "script": "Latin (Hmong RPA)",
+          "rom": "death, dying"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "world_making",
+        "name": "to fashion heaven and earth at the beginning of time",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          }
+        ]
+      },
+      {
+        "id": "dying_curse",
+        "name": "to bind humankind by a dying curse to sickness, death and the falling of the leaves",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The curse also parted the once-shared world of people and spirits into two separate worlds.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Nplooj Lwg is the primordial frog of the Hmong creation account who made heaven and earth, and whose dying curse, after the first people killed it for lying about the size of the world, brought sickness, death, the separation of people and spirits, and the falling of the leaves.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the creation account recorded among the Hmong Njua of northern Thailand and echoed in Hmong funeral song, the frog Nplooj Lwg made heaven and earth, a young world in which human beings and spirits dwelt together and death had no lasting hold. The frog told the first people that the world was no larger than the palm of a hand and the sole of a foot, and when they travelled and saw its true vastness they killed the frog for lying. Dying, it cursed them: henceforth people and spirits would live in separate worlds, humankind would know sickness and death, heat and rain would alternate, the leaves would fall from the trees, and the dead would no longer rise on the thirteenth day. The story stands beside the account of Saub's creation as an alternative Hmong cosmogony, and it supplies the tradition's central explanation for why human beings are mortal."
+  },
+  {
+    "id": "hmong_xwm_kab",
+    "name": {
+      "primary": "Spirit of Household Fortune",
+      "alt": [
+        "Xwm Kab",
+        "Dab Xwm Kab",
+        "Xwb Kab"
+      ],
+      "transliterations": {
+        "hmong-rpa": "Xwm Kab",
+        "etymology": "White Hmong name in the Romanized Popular Alphabet; the spirit shares its name with the paper house altar (the xwm kab) at which it is honoured (Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1, 1989)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Hmong",
+    "primaryTradition": "Hmong",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Hmong otherworld cosmology; living belief"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Hmong otherworld cosmology; living belief",
+        "eraOrdering": 0,
+        "startEvent": "Hmong households install Xwm Kab, the chief of the tame domestic spirits, on the main wall of the house and renew its paper altar each New Year so that wealth and protection will dwell within (Chindarsi 1976; Tapp 1989).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wealth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nyiaj txiag",
+          "script": "Latin (Hmong RPA)",
+          "rom": "money, wealth"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gary Yia Lee and Nicholas Tapp, Culture and Customs of the Hmong (Santa Barbara, CA: Greenwood, 2010)"
+          }
+        ]
+      },
+      {
+        "sphereId": "fortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "koob hmoov",
+          "script": "Latin (Hmong RPA)",
+          "rom": "blessing, good fortune"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          }
+        ]
+      },
+      {
+        "sphereId": "household-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vaj tse",
+          "script": "Latin (Hmong RPA)",
+          "rom": "house and home"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_fortune",
+        "name": "to draw wealth, livestock and good fortune into the household",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gary Yia Lee and Nicholas Tapp, Culture and Customs of the Hmong (Santa Barbara, CA: Greenwood, 2010)"
+          }
+        ]
+      },
+      {
+        "id": "guard_household",
+        "name": "to ward the house and its people from harmful spirits",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hmong_xwm_kab_altar",
+        "name": "Xwm kab house altar",
+        "kind": "shrine",
+        "role": "A sheet of ritual paper flecked with gold and silver leaf and chicken feathers, fixed to the main wall of the house facing the door, where Xwm Kab is fed and petitioned and which is taken down and renewed at each New Year.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gary Yia Lee and Nicholas Tapp, Culture and Customs of the Hmong (Santa Barbara, CA: Greenwood, 2010)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Dab Xwm Kab",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gary Yia Lee and Nicholas Tapp, Culture and Customs of the Hmong (Santa Barbara, CA: Greenwood, 2010)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Xwm Kab is the named spirit of fortune and wealth, chief of the tame domestic spirits, honoured at the paper altar on the main wall of every traditional Hmong house and renewed at the New Year.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Nusit Chindarsi, The Religion of the Hmong Njua (Bangkok: The Siam Society, 1976)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nicholas Tapp, 'Hmong Religion', Asian Folklore Studies 48/1 (1989), 59-94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gary Yia Lee and Nicholas Tapp, Culture and Customs of the Hmong (Santa Barbara, CA: Greenwood, 2010)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Xwm Kab, often addressed as Dab Xwm Kab, is the spirit of good fortune of the Hmong house and the most important of the tame domestic spirits. Its seat is the main household altar, a sheet of ritual paper decorated with touches of gold and silver leaf and chicken feathers, set on the wall of the main room so as to face the door. There the household head offers rice, chicken, soup, incense and spirit money, asking the spirit to guard the family, multiply its silver and livestock, and keep harmful spirits outside. At the New Year the old altar paper is taken down and a new one put up, renewing the compact between the family and its fortune for the year to come. Some households speak of the altar's occupants in the plural as spirits of wealth, but ritual address is to the named spirit Xwm Kab itself, and the altar and spirit together anchor the religious life of the house."
+  },
+  {
+    "id": "hmong_kab_yeeb",
+    "name": {
+      "primary": "Lady Bestower of Children",
+      "alt": [
+        "Kab Yeeb",
+        "Niam Nkauj Kab Yeeb",
+        "Nkauj Kab Yeeb",
+        "Kaying",
+        "Lady Kaying"
+      ],
+      "transliterations": {
+        "hmong-rpa": "Kab Yeeb",
+        "etymology": "Hmong rendering of the name of the Chinese bodhisattva Guanyin, borrowed together with her office as bestower and guardian of children (Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy', Hmong Studies Journal 7, 2006)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hmong",
+    "primaryTradition": "Hmong",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Hmong otherworld cosmology; living belief"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Hmong otherworld cosmology; living belief",
+        "eraOrdering": 0,
+        "startEvent": "Dwelling in the world above, Lady Kab Yeeb keeps the souls of children in the sky and, when petitioned, releases them to be born on earth, a role for which she is thanked in the soul-calling rite held on the third morning after a birth (Yang 2006).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "children",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "me nyuam",
+          "script": "Latin (Hmong RPA)",
+          "rom": "child, children"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          }
+        ]
+      },
+      {
+        "sphereId": "unborn-souls",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ntsuj plig",
+          "script": "Latin (Hmong RPA)",
+          "rom": "soul, spirit of a person"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_children",
+        "name": "to send the souls of children to couples who pray for offspring",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Childless couples and the parents of frail or slow-growing children petition her through prayer and shamanic rites.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          }
+        ]
+      },
+      {
+        "id": "guard_child_souls",
+        "name": "to keep and guard the souls of children in the sky before birth and after early death",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "She acts as guardian of infants and conductor of the souls of children who die young.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Niam Nkauj Kab Yeeb",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "equated-with",
+        "personId": "hmong_dab_pog_couple",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          }
+        ],
+        "notes": "Yang analyses Lady Kab Yeeb as a Hmong appropriation of Guanyin that absorbed the child-giving office of the indigenous Dab Pog couple, with whom she is paired and partly identified in birth ritual."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Niam Nkauj Kab Yeeb, Lady Kaying, is the sky-dwelling Hmong goddess of fertility who keeps, bestows and guards the souls of children, a figure borrowed from the Chinese bodhisattva Guanyin and merged with the indigenous child-giving Dab Pog couple.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Niam Nkauj Kab Yeeb, Lady Kab Yeeb or Kaying, is a celestial goddess who dwells in the world above, where she watches over the souls of children waiting to be born. Couples who long for offspring pray to her, and when a child is born the officiant of the soul-calling ceremony held on the third morning announces that Lady Kab Yeeb has sent the child to loving parents, thanks her, and calls the infant's soul firmly into its body. She is also invoked over frail, slow-growing or sickly children and over women who cannot conceive, serves among the helping spirits of the shaman, and is remembered as the conductor of the souls of children who die young. Scholarship identifies her as the Chinese bodhisattva Guanyin, the goddess of mercy, taken over by the Hmong in China together with her roles as bestower and guardian of children, and merged in practice with the indigenous grandmother-and-grandfather birth spirits, the Dab Pog couple. Parents still give her name, Kab Yeeb, to newborn daughters in her honour."
+  },
+  {
+    "id": "hmong_dab_pog_couple",
+    "name": {
+      "primary": "Dab Pog Couple",
+      "alt": [
+        "Nkawm Niam Txiv Dab Pog",
+        "Niam Txiv Dab Pog",
+        "Dab Pog"
+      ],
+      "transliterations": {
+        "hmong-rpa": "Nkawm Niam Txiv Dab Pog",
+        "etymology": "White Hmong dab 'spirit' and pog 'grandmother'; the fuller phrase names the spirit grandmother and grandfather as a married pair (Dia Cha, 'The Hmong \"Dab Pog Couple\" Story', Hmong Studies Journal 4, 2003)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Hmong",
+    "primaryTradition": "Hmong",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Hmong otherworld cosmology; living belief"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Hmong otherworld cosmology; living belief",
+        "eraOrdering": 0,
+        "startEvent": "At the beginning of time the Dab Pog couple, dwellers in a richly peopled spirit world, taught the Hmong the performance of their rituals and undertook to bring the souls of children to their parents on earth (Cha 2003).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "childbirth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "yug me nyuam",
+          "script": "Latin (Hmong RPA)",
+          "rom": "the bearing of children"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          }
+        ]
+      },
+      {
+        "sphereId": "child-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tsom kwm",
+          "script": "Latin (Hmong RPA)",
+          "rom": "to watch over, to care for"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deliver_child_souls",
+        "name": "to bring the souls of children from the spirit world to their parents on earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "At the soul-calling ceremony after a birth the couple are summoned to welcome the baby and are thanked for granting the child.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          }
+        ]
+      },
+      {
+        "id": "teach_rituals",
+        "name": "to teach humankind the rites of birth, marriage and death",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          }
+        ]
+      },
+      {
+        "id": "guard_the_young",
+        "name": "to guard growing children until they reach adulthood",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Nkawm Niam Txiv Dab Pog",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "equated-with",
+        "personId": "hmong_kab_yeeb",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          }
+        ],
+        "notes": "In the soul-calling rite the child-bestowing office of the Dab Pog couple is shared with, and in syncretic practice merged into, Lady Kab Yeeb, whom scholarship treats as a Guanyin figure grafted onto this indigenous pair."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Dab Pog couple are the grandmother-and-grandfather spirit pair of the Hmong spirit world who bring the souls of children to their parents on earth, guard the young as they grow, and are credited with first teaching the Hmong their rituals.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Dia Cha, 'The Hmong \"Dab Pog Couple\" Story and its Significance in Arriving at an Understanding of Hmong Ritual', Hmong Studies Journal 4 (2003), 1-20"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kao-Ly Yang, 'The Meeting with Guanyin, the Goddess of Mercy: A Case Study of Syncretism in the Hmong System of Beliefs', Hmong Studies Journal 7 (2006), 1-42"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Dab Pog couple, in fuller address Nkawm Niam Txiv Dab Pog, are a married pair of benevolent spirits, a grandmother and grandfather who live in a richly detailed and populous spirit world. Hmong tradition holds that they bring the souls of children to their parents on earth and then serve as guardians of those children as they grow toward adulthood. The story told of them relates that at the beginning of time the couple instructed the Hmong in the performance of their rituals, so that their traces run through Hmong ceremonial life from the soul-calling held on the third morning after a birth, at which they are summoned to welcome the baby and thanked for granting the child, through wedding usages to the final rites. In modern devotion their child-giving office overlaps with that of Lady Kab Yeeb, the Hmong Guanyin, with whom they are jointly invoked."
+  }
+]
+```

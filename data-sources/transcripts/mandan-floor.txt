@@ -1,0 +1,675 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Mandan
+Era (registered, exact): "Mandan traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the four figures the Mandan record genuinely individuates beyond the existing core: Old-Woman-Who-Never-Dies, the undying corn goddess of the waterfowl feasts (Maximilian 1843, quoted verbatim in Frazer 1922; Bowers 1950; Beckwith 1938; Colvin 2012), and the three corn-bringing brothers of the emergence tradition — Good Furred Robe, first corn priest, rain-robe owner, and founder of the Goose Society, with his brothers Cornhusk Earrings and Head for Rattle (No Hair on Him), whose skulls the corn bundle was said to contain as late as 1948 (Bowers 1950; Fenn 2014; Will & Hyde 1917; Lowie 1913). I declined to author the Sun, the Moon, "Black Medicine," and "Sweet Medicine," which the Encyclopedia of World Cultures (1991) lists among important sacred beings but which the verifiable ethnography does not individuate with distinct names, myths, or cults, and Maximilian's "Lord of Life" (Omahank-Numakschi), which scholarship identifies with the creator already in the corpus as First Creator. Bundle-myth heroes such as Charred Body, Grandson, and Packs Antelope were excluded as belonging to Hidatsa rather than Mandan tradition, and Foolish Woman and Scattered Corn are twentieth-century informants, not sacred beings.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "mandan_old_woman_who_never_dies",
+    "name": {
+      "primary": "Old-Woman-Who-Never-Dies",
+      "alt": [
+        "Old Woman Who Never Dies",
+        "The Old Woman Who Never Dies",
+        "Grandmother",
+        "Kadhutetash (Hidatsa name)",
+        "Gaarudetaash (Hidatsa name)"
+      ],
+      "transliterations": {
+        "hidatsa": "Kadhutetash",
+        "etymology": "The classic ethnographies render the Mandan title only in translation, 'the Old Woman who Never Dies' (Maximilian's German 'die alte Frau, die niemals stirbt'); the cognate name among the neighboring Hidatsa, who share her cult, is recorded as Kadhutetash, in modern orthography Gaarudetaash, 'Old-Woman-Who-Never-Dies'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mandan",
+    "primaryTradition": "Mandan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mandan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Mandan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Old-Woman-Who-Never-Dies, dwelling somewhere in the south, makes the crops grow and sends the migratory waterfowl north each spring as her tokens and representatives, the wild goose standing for the maize, the wild swan for the gourds, and the wild duck for the beans.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maximilian, Prince of Wied, Travels in the Interior of North America, translated by H. Evans Lloyd, London: Ackermann and Co., 1843."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "corn-and-garden-crops",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          },
+          {
+            "kind": "secondary",
+            "reference": "George F. Will and George E. Hyde, Corn Among the Indians of the Upper Missouri, St. Louis: The William Harvey Miner Co., 1917."
+          }
+        ]
+      },
+      {
+        "sphereId": "migratory-waterfowl",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maximilian, Prince of Wied, Travels in the Interior of North America, translated by H. Evans Lloyd, London: Ackermann and Co., 1843."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_the_crops_grow",
+        "name": "to make the corn and garden crops grow",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Mandan held that it was the Old Woman who Never Dies who made the crops to grow, and grains of maize consecrated to her at the spring feast were mixed with the seed corn to fertilize it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James George Frazer, The Golden Bough: A Study in Magic and Religion, abridged edition, London: Macmillan, 1922, ch. 46, quoting Maximilian, Prince of Wied."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      },
+      {
+        "id": "send_the_waterfowl_north",
+        "name": "to send the wild geese, swans, and ducks north in spring as her tokens",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Each kind of waterfowl announced a crop to be planted: the goose the maize, the swan the gourds, the duck the beans; in autumn the departing birds were believed to return to her in the south.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maximilian, Prince of Wied, Travels in the Interior of North America, translated by H. Evans Lloyd, London: Ackermann and Co., 1843."
+          }
+        ]
+      },
+      {
+        "id": "live_on_undying",
+        "name": "to live on from age to age without dying",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her defining attribute, expressed in her very name, is that although old she never dies, persisting through the generations as keeper of the seed.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Matthew H. Colvin, Old-Woman-Who-Never-Dies: A Mississippian Survival in the Hidatsa World, M.A. thesis, Texas State University-San Marcos, 2012."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mandan_offering_scaffolds",
+        "name": "Offering scaffolds of dried meat",
+        "kind": "offering-place",
+        "role": "scaffolds set up at the spring corn-medicine feast of the women and hung with dried meat and other goods as offerings to her, which the waterfowl were thought to carry back to her in the south.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maximilian, Prince of Wied, Travels in the Interior of North America, translated by H. Evans Lloyd, London: Ackermann and Co., 1843."
+          },
+          {
+            "kind": "secondary",
+            "reference": "James George Frazer, The Golden Bough: A Study in Magic and Religion, abridged edition, London: Macmillan, 1922, ch. 46, quoting Maximilian, Prince of Wied."
+          }
+        ]
+      },
+      {
+        "id": "mandan_consecrated_seed_corn",
+        "name": "Consecrated ears of seed corn",
+        "kind": "emblem",
+        "role": "the ears of maize fastened to sticks and borne by the old women who represented her at the corn-medicine feast; grains of the holy corn were placed in the dishes of the young women and mixed with the seed corn to fertilize it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James George Frazer, The Golden Bough: A Study in Magic and Religion, abridged edition, London: Macmillan, 1922, ch. 46, quoting Maximilian, Prince of Wied."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Old-Woman-Who-Never-Dies is the undying corn goddess of the Mandan (shared with the Hidatsa), who dwells in the south, makes the crops grow, and sends the migratory waterfowl as her tokens, honored at the spring corn-medicine feast of the women and by the women's Goose Society.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Maximilian, Prince of Wied, Travels in the Interior of North America, translated by H. Evans Lloyd, London: Ackermann and Co., 1843."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Martha Warren Beckwith, Mandan-Hidatsa Myths and Ceremonies (Memoirs of the American Folklore Society, Vol. 32), New York: J. J. Augustin for the American Folklore Society, 1938."
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Mandan\", in Timothy J. O'Leary and David Levinson (eds.), Encyclopedia of World Cultures, Vol. 1: North America, Boston: G. K. Hall, 1991."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Old-Woman-Who-Never-Dies is the great agricultural goddess of the Mandan and Hidatsa villages of the upper Missouri and, after the creator pair, among the most important of the Mandan sacred beings. Maximilian, Prince of Wied, recorded in the 1830s that she was believed to live somewhere in the south and to make the crops grow, sending the migratory waterfowl north each spring as her tokens and representatives — the wild goose standing for the maize, the wild swan for the gourds, and the wild duck for the beans. At the spring corn-medicine feast of the women, scaffolds were hung with dried meat as offerings to her; old women representing the goddess carried ears of maize on sticks, and grains of the consecrated corn were mixed with the seed corn to fertilize it, while in autumn the departing birds were believed to carry the people's offerings back to her lodge in the south. The women's Goose Society, whose members were women in their middle years, danced in her honor at the arrival and departure of the waterfowl and for the good of the corn. Recent scholarship has traced her iconography and cult deep into the pre-contact archaeology of the region."
+  },
+  {
+    "id": "mandan_good_furred_robe",
+    "name": {
+      "primary": "Good Furred Robe",
+      "alt": [
+        "Good Fur Robe",
+        "Good-Furred-Robe",
+        "Corn Medicine"
+      ],
+      "transliterations": {
+        "mandan": "",
+        "etymology": "English rendering, standard throughout the ethnographic literature (Beckwith's 'Good-Furred-Robe', Fenn's 'Good Fur Robe'), of the Mandan name of the corn culture hero of the emergence tradition, who bore the title 'Corn Medicine' as the first of the corn priests."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Mandan",
+    "primaryTradition": "Mandan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mandan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Mandan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Good Furred Robe, who was Corn Medicine with the right to teach the people how to raise corn, led the Corn People up from their home beneath the earth, bringing the corn with them, and guided them northward along the Missouri until they reached the Heart River.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth A. Fenn, Encounters at the Heart of the World: A History of the Mandan People, New York: Hill and Wang, 2014."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "corn-and-garden-crops",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          },
+          {
+            "kind": "secondary",
+            "reference": "George F. Will and George E. Hyde, Corn Among the Indians of the Upper Missouri, St. Louis: The William Harvey Miner Co., 1917."
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-making",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      },
+      {
+        "sphereId": "ceremony-and-ritual",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "teach_the_raising_of_corn",
+        "name": "to teach the people how to raise corn",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the early time when the people came out of the ground, Good Furred Robe was Corn Medicine and held the right to teach the others how to raise corn; the people of Awigaxa asked him to teach them his songs so as to keep the corn and grow it successfully.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      },
+      {
+        "id": "bring_rain_with_the_sacred_robe",
+        "name": "to bring rain when water was sprinkled on his robe",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He possessed a robe which, if sprinkled with water, would cause rain to come, and rain-making remained an office of the corn priests who succeeded him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      },
+      {
+        "id": "organize_the_goose_society",
+        "name": "to organize the Goose Society of the women",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Good Furred Robe founded the Goose Women's Society, the agricultural society of Mandan women in their middle years, for which the corn bundle owner acted as singer.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Robert H. Lowie, Societies of the Crow, Hidatsa and Mandan Indians (Anthropological Papers of the American Museum of Natural History, Vol. 11, Part 3), New York: American Museum of Natural History, 1913."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mandan_sacred_corn_robe",
+        "name": "The Sacred Robe",
+        "kind": "regalia",
+        "role": "the robe of Good Furred Robe which, sprinkled with water, caused rain to come; its rites belonged to the corn priests of the Mandan.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      },
+      {
+        "id": "mandan_corn_bundle_skulls",
+        "name": "Skulls of the corn bundle",
+        "kind": "relic",
+        "role": "the Mandan corn bundle was said, as late as 1948, to contain the skulls of Good Furred Robe and his brothers, kept as the holiest relics of the corn ceremonies.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth A. Fenn, Encounters at the Heart of the World: A History of the Mandan People, New York: Hill and Wang, 2014."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "mandan_cornhusk_earrings",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ],
+        "notes": "In the corn origin tradition Good Furred Robe, chief of the Corn People, had a brother named Cornhusk Earrings who came up from beneath the earth with him."
+      },
+      {
+        "kind": "sibling",
+        "personId": "mandan_head_for_rattle",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ],
+        "notes": "His younger brother, called No Hair on Him or Head for Rattle after the gourds, likewise came up from beneath the earth among the Corn People."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "mandan_old_woman_who_never_dies",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ],
+        "notes": "As the first corn priest Good Furred Robe organized the Goose Society, whose rites at the spring arrival and autumn departure of the waterfowl were addressed to Old-Woman-Who-Never-Dies, the goddess who makes the corn grow and whom the corn rites serve."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Good Furred Robe is the Mandan corn culture hero and first corn priest who led the Corn People up from beneath the earth to the Heart River, taught the raising of corn, owned the rain-bringing Sacred Robe, founded the corn ceremonies and the women's Goose Society, and whose skull was said to be kept in the corn bundle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth A. Fenn, Encounters at the Heart of the World: A History of the Mandan People, New York: Hill and Wang, 2014."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Martha Warren Beckwith, Mandan-Hidatsa Myths and Ceremonies (Memoirs of the American Folklore Society, Vol. 32), New York: J. J. Augustin for the American Folklore Society, 1938."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Good Furred Robe is the culture hero of the Mandan corn tradition. In the origin account recorded by Alfred Bowers, the Corn People came up from their home beneath the earth led by their chief Good Furred Robe, who was Corn Medicine and alone held the right to teach the people how to raise corn; he guided them northward along the Missouri to the Heart River, where they joined the Buffalo People and the country became the meeting place of all the Mandan. He instituted the corn ceremonies, among the most valued of early Mandan rites, and organized the Goose Women's Society, whose dances at the coming and going of the waterfowl served the corn goddess Old-Woman-Who-Never-Dies. He owned a robe which, sprinkled with water, would cause rain to come, and the office of corn priest descended from him into the twentieth century — Scattered Corn, who assisted the ethnographers of Mandan agriculture, was the daughter of the last Mandan corn priest. As late as 1948 the Mandan corn bundle was said to contain the skulls of Good Furred Robe and his brothers."
+  },
+  {
+    "id": "mandan_cornhusk_earrings",
+    "name": {
+      "primary": "Cornhusk Earrings",
+      "alt": [
+        "Corn Husk Earrings"
+      ],
+      "transliterations": {
+        "mandan": "",
+        "etymology": "English rendering, following the texts recorded by Alfred Bowers, of the Mandan name of the second of the three corn-bringing brothers of the emergence tradition."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Mandan",
+    "primaryTradition": "Mandan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mandan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Mandan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Cornhusk Earrings came up from beneath the earth among the Corn People as a brother of their chief Good Furred Robe, sharing in the corn medicine of the emergence.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "corn-and-garden-crops",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "keep_the_corn_rites_of_the_emergence",
+        "name": "to keep the corn medicine rites of the emergence with his brothers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The three brothers who led the Corn People out of the ground stood at the head of the corn rites, and the corn bundle was said to preserve their skulls.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth A. Fenn, Encounters at the Heart of the World: A History of the Mandan People, New York: Hill and Wang, 2014."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "mandan_good_furred_robe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ],
+        "notes": "Cornhusk Earrings is named as a brother of Good Furred Robe, the chief who led the Corn People up from beneath the earth."
+      },
+      {
+        "kind": "sibling",
+        "personId": "mandan_head_for_rattle",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ],
+        "notes": "The youngest of the three corn-bringing brothers, called No Hair on Him or Head for Rattle, is his sibling in the emergence tradition."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Cornhusk Earrings is one of the three corn-bringing brothers of the Mandan emergence tradition, a brother of the corn chief Good Furred Robe, whose skulls the Mandan corn bundle was said to contain as late as 1948.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth A. Fenn, Encounters at the Heart of the World: A History of the Mandan People, New York: Hill and Wang, 2014."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Cornhusk Earrings is a named ancestral figure of the Mandan corn origin tradition recorded by Alfred Bowers from his Mandan informants. When the Corn People came up from their home beneath the earth bringing the corn with them, their chief Good Furred Robe was accompanied by his brother Cornhusk Earrings and by a younger brother called No Hair on Him or Head for Rattle. The three brothers stand at the head of the corn ceremonies, among the most valued rites instituted in early Mandan times, and the sacred corn bundle of the Mandan was said, as recently as 1948, to contain the skulls of Good Furred Robe and his brothers."
+  },
+  {
+    "id": "mandan_head_for_rattle",
+    "name": {
+      "primary": "Head for Rattle",
+      "alt": [
+        "No Hair on Him",
+        "Head Rattle"
+      ],
+      "transliterations": {
+        "mandan": "",
+        "etymology": "English rendering, following the texts recorded by Alfred Bowers, of the name of the youngest of the three corn-bringing brothers, called No Hair on Him or Head for Rattle 'after the gourds', his hairless head being likened to the gourd rattles of the corn rites."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Mandan",
+    "primaryTradition": "Mandan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mandan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Mandan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Head for Rattle, also called No Hair on Him, came up from beneath the earth among the Corn People as the youngest brother of their chief Good Furred Robe.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "corn-and-garden-crops",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "share_the_corn_rites_of_the_emergence",
+        "name": "to share the corn medicine rites of the emergence with his brothers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As one of the three brothers who led the Corn People out of the ground he shared in the corn medicine, and the corn bundle was said to preserve the brothers' skulls.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth A. Fenn, Encounters at the Heart of the World: A History of the Mandan People, New York: Hill and Wang, 2014."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "mandan_good_furred_robe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ],
+        "notes": "He is named as the younger brother of Good Furred Robe, the chief who led the Corn People up from beneath the earth."
+      },
+      {
+        "kind": "sibling",
+        "personId": "mandan_cornhusk_earrings",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          }
+        ],
+        "notes": "Cornhusk Earrings, the second of the three corn-bringing brothers of the emergence tradition, is his sibling."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Head for Rattle, also called No Hair on Him, is the youngest of the three corn-bringing brothers of the Mandan emergence tradition, named for his gourd-like hairless head, whose skulls together with those of his brothers the Mandan corn bundle was said to contain.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred W. Bowers, Mandan Social and Ceremonial Organization, Chicago: University of Chicago Press, 1950."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth A. Fenn, Encounters at the Heart of the World: A History of the Mandan People, New York: Hill and Wang, 2014."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Head for Rattle, also remembered as No Hair on Him, is a named ancestral figure of the Mandan corn origin tradition recorded by Alfred Bowers. He was the youngest of the three brothers — with Good Furred Robe, the Corn Medicine and chief, and Cornhusk Earrings — who led the Corn People up from their home beneath the earth bringing the corn with them, and his name was given him 'after the gourds', his hairless head being likened to the gourd rattles used in the corn rites. The three brothers stand at the head of the Mandan corn ceremonies, and the sacred corn bundle was said, as recently as 1948, to contain the skulls of Good Furred Robe and his brothers."
+  }
+]
+```

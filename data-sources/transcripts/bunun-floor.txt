@@ -1,0 +1,432 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bunun
+Era (registered, exact): "Bunun traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the four individuated actors of the Bunun deluge cycle — the river-damming giant serpent, the giant crab that slew it, the fire-bringing kaipis/haipis bird (the only one bearing a recorded Bunun name), and the fire-fetching toad — all attested in Ogawa & Asai's 1935 Bunun text collection, Ho Ting-jui's 1971 comparative study, Lu Yi-lu's 2002 flood-myth monograph, and Gauss (2020). Beyond this cycle, ethnographies of Bunun religion (e.g., Huang Ying-kuei's work and Yang Shu-yuan's studies) consistently describe a system of dihanin plus the hanitu spirit-class with no further personalized, named deities, so no additional god-figures qualified. The "Ina and Ino" supreme deities circulating on popular websites have no scholarly attestation and were deliberately excluded as fabrications.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bunun_flood_serpent",
+    "name": {
+      "primary": "The Giant Serpent of the Deluge",
+      "alt": [
+        "the giant snake that dammed the river",
+        "the flood serpent"
+      ],
+      "transliterations": {
+        "bunun": "ivut",
+        "etymology": "Described in Bunun tellings simply as a monstrous ivut, the ordinary Bunun word for 'snake' (Ho, A Comparative Study of Myths and Legends of Formosan Aborigines, 1971)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Bunun",
+    "primaryTradition": "Bunun",
+    "sex": "unknown",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bunun traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Bunun traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "The serpent appears at the opening of the Bunun deluge narrative, when its enormous body blocks the course of a great river (identified in central-Taiwan tellings with the Zhuoshui River) and the pent-up waters drown the lowlands, driving the ancestors up to the mountain peaks.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "floods",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ivut",
+          "script": "Latin",
+          "rom": "ivut, 'snake'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lu, Yi-lu (鹿憶鹿). 洪水神話：以中國南方民族與台灣原住民神話為中心 [Flood Myths: Centering on the Ethnic Peoples of Southern China and the Taiwan Indigenes]. Taipei: Liren Shuju, 2002."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "dam_rivers_with_body",
+        "name": "to dam a great river with its coiled body and drown the world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The primeval flood in Bunun myth is caused not by rain but by this serpent's body obstructing the river's flow.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "bunun_giant_crab",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gauss, Aaron Valdis. 'Villains of Formosan Aboriginal Mythology.' Intergrams 20.1 (2020)."
+          }
+        ],
+        "notes": "The giant crab challenged and fought the serpent, cutting open its belly with its pincers; the serpent's death released the floodwaters."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "A monstrous serpent whose body dammed a great river and caused the primeval flood in Bunun myth, until it was slain by a giant crab and the waters receded.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ogawa, Naoyoshi, and Erin Asai. 原語による台湾高砂族伝説集 [The Myths and Traditions of the Formosan Native Tribes]. Tokyo: Tōkō Shoin, 1935."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The giant serpent is the antagonist of the Bunun deluge myth, one of the most widely recorded narratives of the tradition alongside the sun-shooting story. Its coiled body blocked a great river — in central-Taiwan versions the Zhuoshui River — and the impounded waters rose until only the highest peaks, such as Yushan and Luntou-shan, stood above the flood. The ancestors of the Bunun took refuge on the summits until a giant crab fought the serpent and sliced open its belly, whereupon the dead serpent washed away and the waters drained. Japanese-era linguists Ogawa Naoyoshi and Asai Erin recorded versions of the tale in Bunun in 1935, and Ho Ting-jui's comparative survey of Formosan mythology (1971) analyses it among the island's flood myths caused by a blocking monster rather than by rain."
+  },
+  {
+    "id": "bunun_giant_crab",
+    "name": {
+      "primary": "The Giant Crab, Slayer of the Flood Serpent",
+      "alt": [
+        "the great crab of the deluge",
+        "the crab that freed the waters"
+      ],
+      "transliterations": {
+        "bunun": "",
+        "etymology": "Recorded in Bunun tellings as an enormous crab of the flooded rivers; the crab's pinch-marks were said to remain on the serpent-kind ever after (Ho 1971)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Bunun",
+    "primaryTradition": "Bunun",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bunun traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Bunun traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "The crab enters the Bunun deluge narrative when it volunteers, while the ancestors are stranded on the mountain peaks, to fight the giant serpent whose body dams the river.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "receding-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lu, Yi-lu (鹿憶鹿). 洪水神話：以中國南方民族與台灣原住民神話為中心 [Flood Myths: Centering on the Ethnic Peoples of Southern China and the Taiwan Indigenes]. Taipei: Liren Shuju, 2002."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "cut_open_serpent",
+        "name": "to cut open the flood serpent's belly with its pincers and release the pent-up waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The crab's victory ends the primeval flood; in some tellings crabs are respected or spared in memory of this deed.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "bunun_flood_serpent",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ogawa, Naoyoshi, and Erin Asai. 原語による台湾高砂族伝説集 [The Myths and Traditions of the Formosan Native Tribes]. Tokyo: Tōkō Shoin, 1935."
+          }
+        ],
+        "notes": "With its great pincers the crab sliced open the belly of the serpent that dammed the river, killing it and ending the flood."
+      },
+      {
+        "kind": "enemy",
+        "personId": "bunun_flood_serpent",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gauss, Aaron Valdis. 'Villains of Formosan Aboriginal Mythology.' Intergrams 20.1 (2020)."
+          }
+        ],
+        "notes": "The single combat between crab and serpent is the pivot of the Bunun deluge narrative."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The heroic giant crab of the Bunun deluge myth, which fought the river-damming serpent, cut open its belly with its pincers, and so released the floodwaters and saved the ancestors.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lu, Yi-lu (鹿憶鹿). 洪水神話：以中國南方民族與台灣原住民神話為中心 [Flood Myths: Centering on the Ethnic Peoples of Southern China and the Taiwan Indigenes]. Taipei: Liren Shuju, 2002."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The giant crab is the monster-slaying hero of the Bunun flood myth. While the ancestors were stranded on the mountain summits above the risen waters, the crab descended to battle the giant serpent whose body blocked the river. Gripping the serpent with its pincers, it cut open the monster's belly; the serpent died, the dam broke, and the waters drained away so that people could return to the land. Comparative mythologists class the tale among the distinctive Formosan flood myths in which the deluge is ended by an animal combat rather than by divine decree, and the episode was recorded from Bunun narrators by Ogawa and Asai (1935) and analysed by Ho Ting-jui (1971) and Lu Yi-lu (2002)."
+  },
+  {
+    "id": "bunun_kaipis_firebird",
+    "name": {
+      "primary": "Kaipis, the Fire-Bringing Bird",
+      "alt": [
+        "Haipis",
+        "kaipis",
+        "the sacred fire bird",
+        "the red-billed bulbul of the flood"
+      ],
+      "transliterations": {
+        "bunun": "kaipis / haipis",
+        "etymology": "Bunun name of the black bulbul (Hypsipetes leucocephalus); haipis is the Isbukun dialect form. The bird's red bill and feet are explained as burns from carrying fire (Ho 1971)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Bunun",
+    "primaryTradition": "Bunun",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bunun traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Bunun traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "The kaipis enters the Bunun deluge narrative when, after the toad's attempt fails, it flies across the floodwaters to fetch burning tinder for the ancestors stranded without fire on the mountain peaks.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kaipis",
+          "script": "Latin",
+          "rom": "kaipis, the black bulbul"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ogawa, Naoyoshi, and Erin Asai. 原語による台湾高砂族伝説集 [The Myths and Traditions of the Formosan Native Tribes]. Tokyo: Tōkō Shoin, 1935."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry_fire",
+        "name": "to carry burning tinder in its bill and claws across the floodwaters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The bird, once wholly black, was scorched by the embers it carried, and its bill and feet turned red; the Bunun made it taboo to kill the kaipis in gratitude.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The heroic bird of the Bunun deluge myth that succeeded in carrying fire to the flood-stranded ancestors, its bill and feet turned red by the embers, and which is therefore protected by taboo.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ogawa, Naoyoshi, and Erin Asai. 原語による台湾高砂族伝説集 [The Myths and Traditions of the Formosan Native Tribes]. Tokyo: Tōkō Shoin, 1935."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kaipis (Isbukun haipis), the black bulbul, is the celebrated fire-bringer of Bunun myth. When the primeval flood drove the ancestors to the mountain peaks without tinder, the people first sent a toad to fetch fire, but its ember was quenched in the water; the kaipis then flew to a distant fire-bearing summit and carried burning tinder back in its bill and claws. The embers scorched the once all-black bird, which is why the black bulbul has a red bill and red feet to this day. In memory of this service the Bunun traditionally forbid killing the kaipis, and the bird retains a sacred status in Bunun communities. The episode is recorded in the Japanese-era Bunun text collection of Ogawa and Asai (1935) and in Ho Ting-jui's comparative study of Formosan myths (1971)."
+  },
+  {
+    "id": "bunun_fire_toad",
+    "name": {
+      "primary": "The Fire-Fetching Toad",
+      "alt": [
+        "the toad of the deluge",
+        "the first fire-messenger"
+      ],
+      "transliterations": {
+        "bunun": "",
+        "etymology": "The toad is individuated in Bunun deluge tellings as the first volunteer sent across the floodwaters for fire (Ho 1971)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Bunun",
+    "primaryTradition": "Bunun",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bunun traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Bunun traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "The toad enters the Bunun deluge narrative when it volunteers to swim across the floodwaters and bring back fire for the ancestors stranded on the peaks, though the ember is extinguished when it dives.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lu, Yi-lu (鹿憶鹿). 洪水神話：以中國南方民族與台灣原住民神話為中心 [Flood Myths: Centering on the Ethnic Peoples of Southern China and the Taiwan Indigenes]. Taipei: Liren Shuju, 2002."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "swim_with_embers",
+        "name": "to swim the floodwaters carrying embers on its back",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Though the toad's ember was quenched, some tellings say the burns left the blisters on the toad's skin, and the Bunun made it taboo to kill toads in honour of the attempt.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The toad of the Bunun deluge myth, the first animal to attempt to carry fire to the flood-stranded ancestors; though its ember was quenched, its effort earned it a lasting protective taboo.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ho, Ting-jui. A Comparative Study of Myths and Legends of Formosan Aborigines. Taipei: Orient Cultural Service, 1971."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ogawa, Naoyoshi, and Erin Asai. 原語による台湾高砂族伝説集 [The Myths and Traditions of the Formosan Native Tribes]. Tokyo: Tōkō Shoin, 1935."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Bunun deluge myth, when the ancestors marooned on the mountain summits had no fire, the toad was the first creature to volunteer to fetch it from a distant burning peak. Carrying an ember, it swam back through the floodwaters, but when it dived the fire was extinguished; the kaipis bird then completed the quest. Despite its failure the toad is honoured in Bunun tradition: killing toads is traditionally forbidden in memory of its courage, and some tellings attribute the warty blisters of the toad's skin to the burns it suffered. The episode appears in the Bunun texts collected by Ogawa and Asai (1935) and in Ho Ting-jui's comparative treatment of Formosan flood myths (1971)."
+  }
+]
+```
