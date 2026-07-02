@@ -1,0 +1,606 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Kondh
+Era (registered, exact): "Kondh traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four genuinely individuated, named Kondh divine figures beyond the existing five Pennu. Niyam Raja, the 'King of the Law' and supreme god-king of the Dongria Kondh of Niyamgiri, and Nirantali, the Kuttia Kondh creatrix who makes sun, moon, earth and the first humans, are both strongly attested (Elwin's Orissa myth collections; Padel & Das 2010; Behera & Padhi 2022) and represent the two major sub-tribal cosmologies distinct from the plains Bura Pennu pantheon. Dinga Pennu, the judge of the dead, is drawn from Macpherson's classic 1852 account and Tylor, and is wired to the creator pair as a second-order Pennu. Banka-Mundi, a hunting/fertility goddess, is included with a low weighting because her attestation rests mainly on comparative encyclopaedias (Michael Jordan) rather than primary ethnography. I deliberately excluded Dharni/Darni Penu (already an alias of the existing Tari Pennu) and the merely functional lesser gods (hill, stream, village, firstfruits, increase) that Macpherson and Tylor describe by role but for which no stable individual proper name is recoverable in the accessible sources.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "kondh_niyam_raja",
+    "name": {
+      "primary": "Niyam Raja (the King of the Law)",
+      "alt": [
+        "Niyam Raja Penu",
+        "Niyamraja",
+        "Niyam Raja Penu Deo"
+      ],
+      "transliterations": {
+        "kui": "Niyam Raja Penu",
+        "etymology": "niyam 'law, rule, ordinance' + raja 'king'; hence 'King of the Law', the sovereign of the Niyamgiri hills"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kondh",
+    "primaryTradition": "Kondh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Kondh traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Kondh traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Revered by the Dongria Kondh of the Niyamgiri range as the god-king who created the hills and laid down the laws by which the people live, dwelling on the highest peak, Niyam Dongar.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Felix Padel and Samarendra Das, Out of This Earth: East India Adivasis and the Aluminium Cartel (Orient BlackSwan, 2010)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "law-and-custom",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "niyam",
+          "script": "Latin",
+          "rom": "niyam (law, rule)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Minaketan Behera and Soubhagya Ranjan Padhi, 'Tribal Movements against Mining-induced Displacement in Odisha: The Case of Dongria Kondh's Niyamgiri Movement', Journal of Developing Societies 38 (2022)"
+          }
+        ]
+      },
+      {
+        "sphereId": "sacred-mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Niyam Dongar",
+          "script": "Latin",
+          "rom": "Niyam Dongar (Mountain of the Law)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Felix Padel and Samarendra Das, Out of This Earth: East India Adivasis and the Aluminium Cartel (Orient BlackSwan, 2010)"
+          }
+        ]
+      },
+      {
+        "sphereId": "kingship-and-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Minaketan Behera and Soubhagya Ranjan Padhi, 'Tribal Movements against Mining-induced Displacement in Odisha: The Case of Dongria Kondh's Niyamgiri Movement', Journal of Developing Societies 38 (2022)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lay_down_forest_law",
+        "name": "to lay down the laws that govern the forest and its people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Felix Padel and Samarendra Das, Out of This Earth: East India Adivasis and the Aluminium Cartel (Orient BlackSwan, 2010)"
+          }
+        ]
+      },
+      {
+        "id": "punish_law_breakers",
+        "name": "to punish those who violate the laws of the hills",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Minaketan Behera and Soubhagya Ranjan Padhi, 'Tribal Movements against Mining-induced Displacement in Odisha: The Case of Dongria Kondh's Niyamgiri Movement', Journal of Developing Societies 38 (2022)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kondh_niyam_raja_sword",
+        "name": "Sacred sword of Niyam Raja",
+        "kind": "emblem",
+        "role": "The Dongria Kondh represent the male deity Niyam Raja by a sword, honoured during Dussehra and the Jura parab festival.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Minaketan Behera and Soubhagya Ranjan Padhi, 'Tribal Movements against Mining-induced Displacement in Odisha: The Case of Dongria Kondh's Niyamgiri Movement', Journal of Developing Societies 38 (2022)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Niyam Raja",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Felix Padel and Samarendra Das, Out of This Earth: East India Adivasis and the Aluminium Cartel (Orient BlackSwan, 2010)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Niyam Raja is the god-king and 'King of the Law', the supreme deity and mythic ancestor of the Dongria Kondh, who dwells on the Niyamgiri hills and to whom the tribe traces its descent and its right to the land.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Felix Padel and Samarendra Das, Out of This Earth: East India Adivasis and the Aluminium Cartel (Orient BlackSwan, 2010)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Minaketan Behera and Soubhagya Ranjan Padhi, 'Tribal Movements against Mining-induced Displacement in Odisha: The Case of Dongria Kondh's Niyamgiri Movement', Journal of Developing Societies 38 (2022)"
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Niyam Raja is the paramount deity of the Dongria Kondh, a Kui-speaking sub-group who inhabit the Niyamgiri mountains of Rayagada and Kalahandi districts in southern Odisha. Regarded both as their first king and as their eternal spiritual sovereign, he is held to have created the hills and to have decreed the laws by which the community lives; the entire Niyamgiri massif is considered his kingdom, with his abode on the highest summit, Niyam Dongar, the Mountain of the Law. He is benevolent when honoured but angry when the forest law is broken, punishing those who hunt en masse or clear forest without propitiating him. Worshipped chiefly during Dussehra and the Jura harvest festival, he is represented by a sword. His cult gained wide notice during the Dongria Kondh's successful resistance to bauxite mining on Niyamgiri."
+  },
+  {
+    "id": "kondh_nirantali",
+    "name": {
+      "primary": "Nirantali (the first mother and creatrix)",
+      "alt": [
+        "Nirentali"
+      ],
+      "transliterations": {
+        "kui": "Nirantali",
+        "etymology": "A Kui theonym of the Kuttia Kondh; a fixed proper name whose further analysis is not securely recorded"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kondh",
+    "primaryTradition": "Kondh",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Kondh traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Kondh traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the myths of the Kuttia Kondh, Nirantali orders the newly made world, shaping the sun, the moon and the earth and bringing forth the first human beings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Tribal Myths of Orissa (Oxford University Press, 1954)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Tribal Myths of Orissa (Oxford University Press, 1954)"
+          }
+        ]
+      },
+      {
+        "sphereId": "origin-of-humankind",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Myths of Middle India (Oxford University Press, 1949)"
+          }
+        ]
+      },
+      {
+        "sphereId": "language-and-speech",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Tribal Myths of Orissa (Oxford University Press, 1954)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shape_sun_moon_earth",
+        "name": "to shape the sun, the moon and the earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Tribal Myths of Orissa (Oxford University Press, 1954)"
+          }
+        ]
+      },
+      {
+        "id": "make_first_humans",
+        "name": "to bring forth and give speech to the first human beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Tribal Myths of Orissa (Oxford University Press, 1954)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kondh_nirantali_banyan_seeds",
+        "name": "Banyan seeds wrapped in leaves",
+        "kind": "emblem",
+        "role": "In Kuttia Kondh myth Nirantali carries fig and banyan seeds bound in leaves, and tobacco is said to have sprung where seed fell from the bun of her hair.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Tribal Myths of Orissa (Oxford University Press, 1954)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Nirantali is the creator goddess and first mother of the Kuttia Kondh, who in their oral mythology makes the sun, moon and earth, forms the first human beings and gives them their tongues and their staple plants.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Tribal Myths of Orissa (Oxford University Press, 1954)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Myths of Middle India (Oxford University Press, 1949)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nirantali is the great creatrix and first mother in the mythology of the Kuttia Kondh, one of the wilder hill sections of the Kondh in the old Ganjam and Koraput tracts of Odisha. Recorded by Verrier Elwin from Kondh oral literature, she orders the primeval world, fashioning the sun, the moon and the earth and then the first human beings, to whom she gives their languages, made from the fluttering leaves of the fig, and their first shelter and food. She is remembered as carrying banyan and fig seeds bound in leaves, and the origin of tobacco is traced to seed dropped from the bun of her hair on the banks of a river. Her cycle stands somewhat apart from the Bura Pennu and Tari Pennu creation account of the plains Kondh, representing the distinct cosmogony of the Kuttia branch."
+  },
+  {
+    "id": "kondh_dinga_pennu",
+    "name": {
+      "primary": "Dinga Pennu (the Judge of the Dead)",
+      "alt": [
+        "Dinga",
+        "Dinga Penu"
+      ],
+      "transliterations": {
+        "kui": "Dinga Pennu",
+        "etymology": "Kui pennu / penu 'god, deity' (as in Bura Pennu, Tari Pennu); Dinga names the divine judge and allotter of retribution"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kondh",
+    "primaryTradition": "Kondh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "kondh_bura_pennu",
+      "kondh_tari_pennu"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Kondh traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Kondh traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In Macpherson's account of Kondh religion, Dinga stands among the second order of gods born of Bura Pennu and Tari Pennu as the judge of the dead and the allotter of retribution.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Charters Macpherson, 'An Account of the Religion of the Khonds in Orissa', Journal of the Royal Asiatic Society of Great Britain and Ireland, vol. 13 (1852), pp. 216-274"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death-and-afterlife",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edward B. Tylor, Primitive Culture, vol. 2 (John Murray, 1871)"
+          }
+        ]
+      },
+      {
+        "sphereId": "justice-and-retribution",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Charters Macpherson, 'An Account of the Religion of the Khonds in Orissa', Journal of the Royal Asiatic Society of Great Britain and Ireland, vol. 13 (1852), pp. 216-274"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "judge_the_dead",
+        "name": "to judge the souls of the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edward B. Tylor, Primitive Culture, vol. 2 (John Murray, 1871)"
+          }
+        ]
+      },
+      {
+        "id": "allot_retribution",
+        "name": "to allot reward and retribution to the departed",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Charters Macpherson, 'An Account of the Religion of the Khonds in Orissa', Journal of the Royal Asiatic Society of Great Britain and Ireland, vol. 13 (1852), pp. 216-274"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "kondh_bura_pennu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Charters Macpherson, 'An Account of the Religion of the Khonds in Orissa', Journal of the Royal Asiatic Society of Great Britain and Ireland, vol. 13 (1852), pp. 216-274"
+          }
+        ],
+        "notes": "As one of the deities descended from the creator Bura Pennu, Dinga ranks below the supreme light-god in the Kondh hierarchy."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dinga Pennu is the Kondh judge of the dead and allotter of retribution, ranked among the second order of gods descended from the creator pair Bura Pennu and Tari Pennu.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Samuel Charters Macpherson, 'An Account of the Religion of the Khonds in Orissa', Journal of the Royal Asiatic Society of Great Britain and Ireland, vol. 13 (1852), pp. 216-274"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edward B. Tylor, Primitive Culture, vol. 2 (John Murray, 1871)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Dinga (Dinga Pennu) is the judge of the dead in the classic account of Kondh religion set down by the officer S. C. Macpherson in the mid-nineteenth century and rehearsed by E. B. Tylor and later encyclopaedists. All the Kondh gods (Pennu) are held to descend from the supreme light-god Bura Pennu and the earth-goddess Tari Pennu; among the resulting second order of deities, alongside the gods of rain, war, boundaries, hunting and increase, stands Dinga, who judges the souls of the departed and apportions their retribution. He thus fills, within the Kondh pantheon, the office of divine assessor of the dead."
+  },
+  {
+    "id": "kondh_banka_mundi",
+    "name": {
+      "primary": "Banka-Mundi (goddess of the hunt)",
+      "alt": [
+        "Banka Mundi",
+        "Bamka Mundi"
+      ],
+      "transliterations": {
+        "kui": "Banka-Mundi",
+        "etymology": "Kui; reportedly banka 'bent, curved' (as of the hunting bow) with mundi 'head, chief', though this reading is popular rather than securely established"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kondh",
+    "primaryTradition": "Kondh",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Kondh traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Kondh traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Invoked by Kondh hunters as the goddess of the chase and of fertility, whose name uttered at the forest's edge dispels the fear of wild beasts.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Encyclopedia of Gods: Over 2,500 Deities of the World (Facts on File, 1993)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hunting",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Encyclopedia of Gods: Over 2,500 Deities of the World (Facts on File, 1993)"
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Dictionary of Gods and Goddesses, 2nd ed. (Facts on File, 2004)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_success_in_hunt",
+        "name": "to grant success and safety in the hunt",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Encyclopedia of Gods: Over 2,500 Deities of the World (Facts on File, 1993)"
+          }
+        ]
+      },
+      {
+        "id": "remove_fear_of_beasts",
+        "name": "to remove the hunter's fear of wild animals",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Dictionary of Gods and Goddesses, 2nd ed. (Facts on File, 2004)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Banka-Mundi is a Kondh goddess of the hunt and of fertility, invoked for success in the chase, protection from wild animals of the forest and the granting of increase.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Encyclopedia of Gods: Over 2,500 Deities of the World (Facts on File, 1993)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Dictionary of Gods and Goddesses, 2nd ed. (Facts on File, 2004)"
+          }
+        ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Banka-Mundi is recorded as a goddess of the hunt and of fertility among the Kondh of eastern India. Hunters call on her for courage and luck and for protection against the dangers of the jungle, believing that merely uttering her name at the forest's edge dispels the fear of wild beasts; she is likewise entreated for fertility and increase. Her worship is associated with the sacred groves of the Odisha hill country. Her documentation rests chiefly on comparative encyclopaedias of world deities rather than on the primary ethnographic record of Macpherson or Elwin, so she is entered here with a correspondingly cautious weighting."
+  }
+]
+```

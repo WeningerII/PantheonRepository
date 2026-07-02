@@ -1,0 +1,1009 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Diné
+Era (registered, exact): "cosmogonic-emergence", "hero-twins-monster-slaying"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added six well-attested, individuated Diné Holy People absent from the existing set: First Man (Áłtsé Hastiin) and First Woman (Áłtsé Asdzą́ą́), the primordial couple and foster parents of the already-registered Changing Woman; Coyote (Mąʼii / Áłtsé Hashké), the trickster; Black God (Haashchʼééshzhiní), god of fire and maker of the constellations; Talking God (Haashchʼééłtiʼí), chief of the yéʼii; and Water Sprinkler (Tó Neinilí), the rain god. Each is a named, individuated deity documented across the core scholarly corpus (Matthews 1897 and 1902, Reichard 1950, O'Bryan 1956, Haile 1984, Zolbrod 1984, Luckert 1979, Griffin-Pierce 1992), and I wired them into the existing pantheon via the First Man/First Woman spousal pair and their fosterage of Changing Woman, plus the yéʼii companion cluster. I deliberately excluded generic classes (the yéʼii collectively, unnamed Holy People, monster-classes) and aspects of existing figures such as White Shell Woman; further named beings like Salt Woman or the Moon-bearer exist but are more thinly individuated, so I stopped at the securely attested core to avoid padding.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "dine_first_man",
+    "name": {
+      "primary": "First Man",
+      "alt": [
+        "Áłtsé Hastiin",
+        "First Man of the Diné"
+      ],
+      "transliterations": {
+        "nv": "Áłtsé Hastiin",
+        "etymology": "Navajo áłtsé 'first' + hastiin 'man, elder, mister'; the primordial male being formed from the meeting of the sacred winds together with an ear of white corn."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Diné",
+    "primaryTradition": "Diné",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "cosmogonic-emergence"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "cosmogonic-emergence",
+        "eraOrdering": 0,
+        "startEvent": "First Man is formed in the lower worlds from the mingling of the white cloud and the sacred winds together with an ear of white corn, and leads the beings upward through the successive worlds to the surface of the present world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Áłtsé Hastiin",
+          "script": "Latin",
+          "rom": "first man"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Aileen O'Bryan, The Diné: Origin Myths of the Navaho Indians, Bureau of American Ethnology Bulletin 163, Smithsonian Institution, 1956."
+          }
+        ]
+      },
+      {
+        "sphereId": "sacred-geography",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Dził Náʼoodiłii",
+          "script": "Latin",
+          "rom": "the sacred mountains"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shape_the_world",
+        "name": "to build the sacred mountains and order the surface world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "With First Woman and other Holy People, fashions the four sacred mountains from soil carried up from the world below.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, Navaho Legends, American Folk-Lore Society / Houghton Mifflin, 1897."
+          }
+        ]
+      },
+      {
+        "id": "place_the_stars",
+        "name": "to set certain stars in the sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In some recensions First Man deliberately places the constellation Náhookǫs bikąʼí (the Big Dipper) before Coyote scatters the remaining stars.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Trudy Griffin-Pierce, Earth Is My Mother, Sky Is My Father: Space, Time, and Astronomy in Navajo Sandpainting, University of New Mexico Press, 1992."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dine_medicine_bundle",
+        "name": "Medicine bundle (jish)",
+        "kind": "emblem",
+        "role": "The sacred bundle in which First Man carries the substances of creation and the means of ordering the world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Áłtsé Hastiin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "dine_first_woman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ],
+        "notes": "First Man and First Woman are the primordial couple formed together in the worlds below."
+      },
+      {
+        "kind": "father-of",
+        "personId": "dine_changing_woman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, Navaho Legends, American Folk-Lore Society / Houghton Mifflin, 1897."
+          }
+        ],
+        "notes": "First Man finds the infant Changing Woman on Gobernador Knob (Chʼóolʼíʼí) and, with First Woman, raises her as a foster daughter."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "First Man (Áłtsé Hastiin) is the primordial male Holy Person of Diné cosmogony, formed with an ear of white corn, who leads the emergence, helps build the sacred mountains, and fosters the infant Changing Woman.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, Navaho Legends, American Folk-Lore Society / Houghton Mifflin, 1897."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Aileen O'Bryan, The Diné: Origin Myths of the Navaho Indians, Smithsonian Institution BAE Bulletin 163, 1956."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "First Man, Áłtsé Hastiin, is one of the two primordial Holy People of the Diné origin narrative. He is formed in the lower worlds from the meeting of the dawn and the sacred winds, paired with an ear of white corn, and becomes the principal organizer of the ascent through the underworlds to the present earth. Together with First Woman, Black God, Water Sprinkler and other Holy People he raises the four sacred mountains from soil brought up from below and helps arrange the orderly stars. After the emergence he discovers the newborn Changing Woman on the sacred mountain and, with First Woman, rears her, thereby standing at the origin of the line that produces the Hero Twins. In some tellings he is also associated with knowledge later turned to witchcraft, marking his ambivalent authority over the ordering of the world."
+  },
+  {
+    "id": "dine_first_woman",
+    "name": {
+      "primary": "First Woman",
+      "alt": [
+        "Áłtsé Asdzą́ą́",
+        "First Woman of the Diné"
+      ],
+      "transliterations": {
+        "nv": "Áłtsé Asdzą́ą́",
+        "etymology": "Navajo áłtsé 'first' + asdzą́ą́ 'woman'; the primordial female being formed from the sacred winds together with an ear of yellow corn."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Diné",
+    "primaryTradition": "Diné",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "cosmogonic-emergence"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "cosmogonic-emergence",
+        "eraOrdering": 0,
+        "startEvent": "First Woman is formed in the lower worlds from the sacred winds together with an ear of yellow corn, and journeys with First Man upward to the surface world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Áłtsé Asdzą́ą́",
+          "script": "Latin",
+          "rom": "first woman"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Aileen O'Bryan, The Diné: Origin Myths of the Navaho Indians, Smithsonian Institution BAE Bulletin 163, 1956."
+          }
+        ]
+      },
+      {
+        "sphereId": "celestial-order",
+        "contextTag": "episodic",
+        "term": {
+          "value": "Náhookǫs baʼáádí",
+          "script": "Latin",
+          "rom": "the female revolving one (Little Dipper)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Trudy Griffin-Pierce, Earth Is My Mother, Sky Is My Father: Space, Time, and Astronomy in Navajo Sandpainting, University of New Mexico Press, 1992."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "order_the_heavens",
+        "name": "to place stars and help order the surface world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In several recensions First Woman sets the constellation Náhookǫs baʼáádí (the Little Dipper) into the sky.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Trudy Griffin-Pierce, Earth Is My Mother, Sky Is My Father: Space, Time, and Astronomy in Navajo Sandpainting, University of New Mexico Press, 1992."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Áłtsé Asdzą́ą́",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "dine_first_man",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ],
+        "notes": "First Woman and First Man are the primordial couple, formed together in the worlds below."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "dine_changing_woman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, Navaho Legends, American Folk-Lore Society / Houghton Mifflin, 1897."
+          }
+        ],
+        "notes": "With First Man, First Woman raises the infant Changing Woman found on the sacred mountain, acting as her foster mother."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "First Woman (Áłtsé Asdzą́ą́) is the primordial female Holy Person of Diné cosmogony, formed with an ear of yellow corn, consort of First Man, and foster mother of Changing Woman.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, Navaho Legends, American Folk-Lore Society / Houghton Mifflin, 1897."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "First Woman, Áłtsé Asdzą́ą́, is the primordial female Holy Person of the Diné emergence story, formed in the lower worlds from the sacred winds and paired with an ear of yellow corn. She ascends with First Man through the underworlds and shares in the ordering of the present world, in some tellings placing the Little Dipper in the sky opposite the Big Dipper set by First Man. The famous episode of the separation of the sexes, in which the men and women live apart across a river until reconciliation, turns on the pride and independence First Woman asserts. With First Man she discovers and rears the infant Changing Woman, placing her at the head of the maternal line from which the Hero Twins descend."
+  },
+  {
+    "id": "dine_coyote",
+    "name": {
+      "primary": "Coyote",
+      "alt": [
+        "Mąʼii",
+        "Áłtsé Hashké",
+        "First Angry",
+        "First Scolder"
+      ],
+      "transliterations": {
+        "nv": "Mąʼii",
+        "etymology": "Navajo mąʼii 'coyote'; his ceremonial name Áłtsé Hashké means 'First Angry' or 'First Scolder', marking him as the primordial disruptive being."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Diné",
+    "primaryTradition": "Diné",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "cosmogonic-emergence"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "cosmogonic-emergence",
+        "eraOrdering": 0,
+        "startEvent": "Coyote appears among the first beings of the underworlds and, at the ordering of the sky, seizes the blanket of unplaced stars and flings them into the disorder of the Milky Way.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "hero-twins-monster-slaying",
+        "eraOrdering": 1,
+        "startEvent": "Coyote continues as an ambivalent, shape-shifting agent whose meddling both endangers and inadvertently aids the ordering of the monster-ridden world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl W. Luckert, Coyoteway: A Navajo Holyway Healing Ceremonial, University of Arizona Press, 1979."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "trickery",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Áłtsé Hashké",
+          "script": "Latin",
+          "rom": "first angry / first scolder"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Father Berard Haile, Navajo Coyote Tales: The Curly Tó Aheedlíinii Version, University of Nebraska Press, 1984."
+          }
+        ]
+      },
+      {
+        "sphereId": "disorder",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ]
+      },
+      {
+        "sphereId": "witchcraft",
+        "contextTag": "episodic",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl W. Luckert, Coyoteway: A Navajo Holyway Healing Ceremonial, University of Arizona Press, 1979."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "change_shape",
+        "name": "to change his shape and disguise himself",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Coyote takes on human and other forms to deceive.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Father Berard Haile, Navajo Coyote Tales: The Curly Tó Aheedlíinii Version, University of Nebraska Press, 1984."
+          }
+        ]
+      },
+      {
+        "id": "scatter_the_stars",
+        "name": "to disrupt the ordering of the world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "By flinging the unplaced stars he introduces the chaotic band of the Milky Way, and elsewhere he brings death and witchcraft into being.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Áłtsé Hashké",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Father Berard Haile, Navajo Coyote Tales: The Curly Tó Aheedlíinii Version, University of Nebraska Press, 1984."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Coyote (Mąʼii), ceremonially Áłtsé Hashké 'First Angry', is the ambivalent trickster Holy Person of Diné tradition who scatters the stars, introduces death and witchcraft, and yet drives away 'ugly things' in healing.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Father Berard Haile, Navajo Coyote Tales: The Curly Tó Aheedlíinii Version, University of Nebraska Press, 1984."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Karl W. Luckert, Coyoteway: A Navajo Holyway Healing Ceremonial, University of Arizona Press, 1979."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paul G. Zolbrod, Diné bahaneʼ: The Navajo Creation Story, University of New Mexico Press, 1984."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Coyote, Mąʼii, whose ceremonial name Áłtsé Hashké means 'First Angry' or 'First Scolder', is among the most important and most ambivalent of the Diné Holy People. Present from the earliest worlds, he is the archetypal trickster whose greed, lust and impatience repeatedly disrupt the careful ordering of creation: when the Holy People are placing the stars deliberately in the sky, Coyote seizes the blanket of remaining stars and flings them upward, creating the untidy sweep of the Milky Way, and in other episodes he brings death, sickness and witchcraft into the world. Yet his chaotic energy is not merely destructive; in the Coyoteway and related ceremonials his power to drive off 'ugly things' is harnessed to restore hózhó, the condition of beauty and balance, to a patient. He is a shape-shifter and boundary-crosser whose stories carry much of the moral and cosmological teaching of the tradition."
+  },
+  {
+    "id": "dine_black_god",
+    "name": {
+      "primary": "Black God",
+      "alt": [
+        "Haashchʼééshzhiní",
+        "Black Yéʼii",
+        "Fire God"
+      ],
+      "transliterations": {
+        "nv": "Haashchʼééshzhiní",
+        "etymology": "Navajo haashchʼééʼ 'yéʼii, Holy Person, god' + a form based on łizhin 'black'; literally the 'Black Yéʼii', the god of fire and maker of the constellations."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Diné",
+    "primaryTradition": "Diné",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "cosmogonic-emergence"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "cosmogonic-emergence",
+        "eraOrdering": 0,
+        "startEvent": "Black God brings the first fire into being with the fire-drill and, carrying the Pleiades on his body, sets the orderly constellations in their places across the night sky.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Haashchʼééshzhiní",
+          "script": "Latin",
+          "rom": "black god / god of fire"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      },
+      {
+        "sphereId": "celestial-order",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Dilyéhé",
+          "script": "Latin",
+          "rom": "the Pleiades"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Trudy Griffin-Pierce, Earth Is My Mother, Sky Is My Father: Space, Time, and Astronomy in Navajo Sandpainting, University of New Mexico Press, 1992."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "kindle_fire",
+        "name": "to make fire with the fire-drill",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Black God is credited as the inventor of the fire-drill and the first being to generate fire.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ]
+      },
+      {
+        "id": "set_the_constellations",
+        "name": "to place the stars into orderly constellations",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Carrying the Pleiades on his ankle and then his temple, he arranges the constellations before Coyote scatters the rest.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Trudy Griffin-Pierce, Earth Is My Mother, Sky Is My Father: Space, Time, and Astronomy in Navajo Sandpainting, University of New Mexico Press, 1992."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dine_black_god_mask",
+        "name": "Charcoal-blackened buckskin mask",
+        "kind": "regalia",
+        "role": "The mask worn by Black God and his impersonator, blackened with sacred charcoal and marked with a crescent moon, a full-moon mouth, and the Pleiades.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      },
+      {
+        "id": "dine_fire_drill",
+        "name": "Fire-drill",
+        "kind": "emblem",
+        "role": "The implement with which Black God, inventor of fire, kindles the first flame.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Haashchʼééshzhiní",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "dine_talking_god",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ],
+        "notes": "Black God stands among the yéʼii Holy People alongside Talking God, both impersonated by masked dancers in the Nightway."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Black God (Haashchʼééshzhiní) is the Diné god of fire, inventor of the fire-drill, and maker of the orderly constellations, marked by the Pleiades on his mask.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Trudy Griffin-Pierce, Earth Is My Mother, Sky Is My Father: Space, Time, and Astronomy in Navajo Sandpainting, University of New Mexico Press, 1992."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Black God, Haashchʼééshzhiní, the 'Black Yéʼii', is the Diné god of fire and the maker of the stars. He is remembered as the inventor of the fire-drill and the first being to generate fire, and as the deity who, carrying the Pleiades on his body, sets the orderly constellations in their fixed places in the night sky. When he enters the hogan of the Holy People with the Pleiades clinging to his ankle, he stamps and the stars leap up his leg to his temple, after which he is granted the task of placing the remaining constellations, until Coyote impatiently scatters the rest. His mask is blackened with sacred charcoal and painted with a crescent moon on the forehead, a full moon for a mouth, and the Pleiades at the temple. Unlike the heroic Holy People, he is often depicted as old, slow and outwardly poor, a humble and sometimes wry figure whose modest appearance belies his cosmic office."
+  },
+  {
+    "id": "dine_talking_god",
+    "name": {
+      "primary": "Talking God",
+      "alt": [
+        "Haashchʼééłtiʼí",
+        "Yeʼii Bicheii",
+        "Maternal Grandfather of the Gods"
+      ],
+      "transliterations": {
+        "nv": "Haashchʼééłtiʼí",
+        "etymology": "Navajo haashchʼééʼ 'yéʼii, Holy Person, god' + a stem meaning 'he talks / speaks'; the god who speaks for the Holy People, also called Yeʼii Bicheii, 'maternal grandfather of the yéʼii'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Diné",
+    "primaryTradition": "Diné",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "cosmogonic-emergence"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "cosmogonic-emergence",
+        "eraOrdering": 0,
+        "startEvent": "Talking God, the white-bodied chief of the yéʼii, guides and speaks on behalf of the Holy People during the emergence and the ordering of the world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "hero-twins-monster-slaying",
+        "eraOrdering": 1,
+        "startEvent": "Talking God attends the birth and instruction of the Hero Twins and guides them on their journey to the house of their father the Sun.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, Navaho Legends, American Folk-Lore Society / Houghton Mifflin, 1897."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "dawn",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Haashchʼééłtiʼí",
+          "script": "Latin",
+          "rom": "talking god"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      },
+      {
+        "sphereId": "speech-and-intercession",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Yeʼii Bicheii",
+          "script": "Latin",
+          "rom": "maternal grandfather of the gods"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "speak_for_the_gods",
+        "name": "to speak and intercede on behalf of the Holy People",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As chief of the yéʼii he addresses and guides both gods and humans, and is invoked at the head of the Nightway masked dancers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dine_talking_god_mask",
+        "name": "White yéʼii mask with eagle plumes",
+        "kind": "regalia",
+        "role": "The white-painted mask personifying Talking God, worn by the lead masked dancer in the Nightway ceremony.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Yeʼii Bicheii",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "dine_water_sprinkler",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ],
+        "notes": "Talking God and Water Sprinkler are numbered together among the masked yéʼii of the Nightway."
+      },
+      {
+        "kind": "companion",
+        "personId": "dine_black_god",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ],
+        "notes": "Talking God stands among the yéʼii Holy People with Black God."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Talking God (Haashchʼééłtiʼí), the white-bodied chief of the yéʼii and 'maternal grandfather of the gods', speaks for the Holy People, guides the Hero Twins, and leads the masked dancers of the Nightway.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, Navaho Legends, American Folk-Lore Society / Houghton Mifflin, 1897."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Talking God, Haashchʼééłtiʼí, is the white-bodied chief of the yéʼii and the foremost intercessor among the Diné Holy People, so central that he is called the 'maternal grandfather of the gods' (Yeʼii Bicheii). He speaks on behalf of the other Holy People, appearing at moments of guidance and instruction throughout the tradition: he is present in the emergence and the ordering of the world, attends the birth and rearing of the Hero Twins, and helps direct them on their perilous journey to the house of the Sun. He is invoked at the head of the eight other male yéʼii in the nine-night Nightway (Tłʼééʼjí), the great healing ceremonial in which masked dancers personify the gods, and his white mask crowned with eagle plumes identifies him among the sacred impersonators. He is associated with dawn and the east and embodies benevolent authority and right speech."
+  },
+  {
+    "id": "dine_water_sprinkler",
+    "name": {
+      "primary": "Water Sprinkler",
+      "alt": [
+        "Tó Neinilí",
+        "Tonenili",
+        "Rain God",
+        "Water Carrier"
+      ],
+      "transliterations": {
+        "nv": "Tó Neinilí",
+        "etymology": "Navajo tó 'water' + neinilí 'he repeatedly pours or sprinkles it'; the yéʼii of rain, sleet and snow, sometimes cast in a clownish or trickster-like role."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Diné",
+    "primaryTradition": "Diné",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "cosmogonic-emergence"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "cosmogonic-emergence",
+        "eraOrdering": 0,
+        "startEvent": "Water Sprinkler, the blue-bodied yéʼii of rain, joins the Holy People in ordering the world and is given charge of rain, sleet and snow.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Tó Neinilí",
+          "script": "Latin",
+          "rom": "water sprinkler"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      },
+      {
+        "sphereId": "water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tó",
+          "script": "Latin",
+          "rom": "water"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send_the_rain",
+        "name": "to bring rain, sleet, and snow",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As god of water he controls the forms of falling moisture and is invoked for rain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dine_water_jar",
+        "name": "Water jars",
+        "kind": "emblem",
+        "role": "The vessels of water Water Sprinkler carries and pours out as rain in the Nightway.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Tó Neinilí",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "dine_talking_god",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          }
+        ],
+        "notes": "Water Sprinkler is numbered among the masked yéʼii of the Nightway alongside Talking God."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Water Sprinkler (Tó Neinilí) is the Diné yéʼii of rain, sleet and snow, a blue-bodied water god who also appears in a clownish, trickster-like guise among the masked dancers.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Washington Matthews, The Night Chant, a Navaho Ceremony, Memoirs of the American Museum of Natural History, 1902."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gladys A. Reichard, Navaho Religion: A Study of Symbolism, Bollingen / Pantheon Books, 1950."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Water Sprinkler, Tó Neinilí, is the Diné god of water, responsible for rain, sleet and snow. A blue-bodied yéʼii, he joins the Holy People in the emergence and the fashioning of the world and is one of the deities impersonated by masked dancers in the Nightway ceremony, where he carries water jars and is associated with the bringing of moisture to a dry land. He often plays a clownish, mischievous part among the sacred dancers, mimicking and disrupting the others, so that alongside his solemn office as rain-bringer he carries a comic, trickster-tinged character. A rainbow yéʼii encircling the sandpaintings is sometimes understood as an aspect of him."
+  }
+]
+```

@@ -1,0 +1,603 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Garo
+Era (registered, exact): "perpetual", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five well-attested, individuated Garo figures that the corpus was missing, all documented in Playfair's foundational ethnography The Garos (1909) and corroborated by later scholarship (Sangma 1981; Rongmuthu 1967; Marak 2015). Two are primordial actors in the earth-diver creation myth — Machi, the second lesser demiurge who shapes the earth with Nostu-Nopantu at Tatara-Rabuga's command, and Chiching-Barching, the named beetle who dives into the primordial ocean and retrieves the clay for Nostu-Nopantu — each wired to its existing parent-figure. Three are named Songsarek deities of ongoing human and agricultural concern: Kalkame (guardian of human life, brother of the existing Goera), Chorabudi (crop-protector and servant of Tatara-Rabuga), and Rokkime/Mima Kiri Rokkime (mother-goddess of the rice-paddy, invoked at Agalmaka), all placed as lesser deities under the supreme creator. I deliberately excluded generic spirit-classes such as the unnamed crabs and the malevolent mite/nawang soul-devourers, and the thinly-attested epic culture-heroes (Dikki, Bandi), as not sufficiently individuated or documented to meet the bar.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "garo_machi",
+    "name": {
+      "primary": "Machi the Co-Demiurge",
+      "alt": [
+        "Machi",
+        "Machi (lesser creator-spirit)"
+      ],
+      "transliterations": {
+        "achik": "Machi",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the Garo cosmogony, the supreme creator Tatara-Rabuga commanded two lesser spirits, Nostu-Nopantu and Machi, to fashion the earth out of the primordial waters and darkness.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt, chapter on Religion."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation-of-the-world",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Rongmuthu, Dewansingh Shangma (1967). The Epic Lore of the Garos. Gauhati: Department of Tribal Culture and Folklore Research, Gauhati University."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shape_the_primordial_earth",
+        "name": "to help fashion the earth out of the primordial waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Acts as a junior demiurge working alongside Nostu-Nopantu at the creator's command.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "garo_tatara_rabuga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt."
+          }
+        ],
+        "notes": "Machi shapes the world only at the command of the supreme creator Tatara-Rabuga."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Machi is one of the two lesser demiurge spirits who, together with Nostu-Nopantu, made the earth at the command of the supreme creator Tatara-Rabuga.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt, chapter on Religion (creation of the world)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rongmuthu, Dewansingh Shangma (1967). The Epic Lore of the Garos. Gauhati University, Department of Tribal Culture and Folklore Research."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Machi is a primordial spirit of the Garo (A·chik) creation account. According to the myth first systematically recorded by Playfair, when the cosmos was still water and darkness the supreme being Tatara-Rabuga did not shape the earth himself but issued the command to two lesser spirits, Nostu-Nopantu and Machi, who together brought the world into being. Machi is thus counted among the earliest divine agents, a junior partner to the earth-making mother Nostu-Nopantu, and stands apart from the many nature-spirits (mite) that populate later Garo cosmology."
+  },
+  {
+    "id": "garo_chiching_barching",
+    "name": {
+      "primary": "Chiching-Barching the Beetle",
+      "alt": [
+        "Chiching Barching",
+        "Chiching-Barching",
+        "the beetle of creation"
+      ],
+      "transliterations": {
+        "achik": "Chiching-Barching",
+        "etymology": ""
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "When the demiurge Nostu-Nopantu could gather no clay from the deep, she chose the beetle Chiching-Barching, who dived into the primordial ocean and returned bearing the lump of clay from which the earth was fashioned.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt, chapter on Religion."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation-of-the-world",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Rongmuthu, Dewansingh Shangma (1967). The Epic Lore of the Garos. Gauhati University, Department of Tribal Culture and Folklore Research."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "retrieve_primordial_clay",
+        "name": "to dive into the primordial ocean and bring up clay",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Succeeds where the great and the small crabs had failed.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "garo_nostu_nopantu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt."
+          }
+        ],
+        "notes": "Chosen and sent down by the earth-maker Nostu-Nopantu to fetch clay from the deep."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Chiching-Barching is the beetle chosen by the demiurge Nostu-Nopantu who dived to the bottom of the primordial ocean and brought up the clay from which the earth Mane-Pilte was formed.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt, chapter on Religion (creation of the world)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marak, Lucy R. (2015). Myths and Archetypes in Garo (A·chik) Folk Narratives. Partridge India."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Chiching-Barching is the named beetle-helper of the Garo earth-diver creation myth. After Nostu-Nopantu, suspended over the waters on a spider's thread, failed to make anything solid from handfuls of sand, and after a great crab and then a smaller crab were sent unsuccessfully into the deep, she chose the beetle Chiching-Barching, who alone succeeded in bringing back a lump of clay. From this clay Nostu-Nopantu shaped the earth (Mane-Pilte), the large rocks (Mojar) and the small rocks (Dinjar), which Tatara-Rabuga then dried and hardened with sun, moon and wind. Though a small creature, the beetle is an individuated actor essential to the making of the world, and is remembered by name in the recited cosmogony."
+  },
+  {
+    "id": "garo_kalkame",
+    "name": {
+      "primary": "Kalkame, Guardian of Human Life",
+      "alt": [
+        "Kalkame",
+        "Kalkame the protector"
+      ],
+      "transliterations": {
+        "achik": "Kalkame",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perpetual"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perpetual",
+        "eraOrdering": 0,
+        "startEvent": "Kalkame, reckoned the brother of the thunder-god Goera, is the guardian spirit charged with the lives of human beings, shielding them from wild beasts, disease and every kind of harm.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "protection-of-human-life",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt."
+          }
+        ]
+      },
+      {
+        "sphereId": "health-and-healing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_humans_from_beasts_and_disease",
+        "name": "to guard human beings from wild animals and disease",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Held responsible for the safety and lives of all people.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "garo_tatara_rabuga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt."
+          }
+        ],
+        "notes": "Counted among the lesser deities (mite) who act within the order established by the supreme creator Tatara-Rabuga."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kalkame is the Garo guardian deity, brother of the thunder-god Goera, who is responsible for the lives of human beings and protects them from wild animals, disease and every hazard.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt, chapter on Religion."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kalkame is a protective deity of the Garo Songsarek pantheon, closely paired with the thunder-god Goera, whom the tradition calls his brother. Where Goera governs strength, storm and lightning, Kalkame is charged specifically with the safety and preservation of human life: he wards people against wild beasts, sickness and misfortune, and is invoked for recovery and continued well-being. His fraternal link to Goera situates him firmly within the household of active nature-deities that mediate between the remote supreme creator Tatara-Rabuga and everyday human affairs."
+  },
+  {
+    "id": "garo_chorabudi",
+    "name": {
+      "primary": "Chorabudi, Protector of Crops",
+      "alt": [
+        "Chorabudi",
+        "Chorabudu"
+      ],
+      "transliterations": {
+        "achik": "Chorabudi",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perpetual"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perpetual",
+        "eraOrdering": 0,
+        "startEvent": "Chorabudi is the benign guardian of the crops, to whom the first-fruits of the fields are offered and to whom a pig is sacrificed whenever offering is made to Tatara-Rabuga.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt, chapter on Religion."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "protection-of-crops",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_the_crops",
+        "name": "to protect the crops in the fields",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "A calm, benevolent spirit to whom the harvest's first fruits belong.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "garo_first_fruits_offering",
+        "name": "First-fruits of the fields",
+        "kind": "offering",
+        "role": "The earliest produce of the harvest, dedicated to Chorabudi, together with a pig sacrificed when offerings are made to Tatara-Rabuga.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "garo_tatara_rabuga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt."
+          }
+        ],
+        "notes": "Described as a servant of the supreme creator Tatara-Rabuga, honoured with a pig whenever sacrifice is offered to him."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Chorabudi is a benign Garo deity, the protector of crops and servant of Tatara-Rabuga, to whom the first-fruits of the fields and a pig sacrifice are offered.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Playfair, Major A. (1909). The Garos. London: David Nutt, chapter on Religion."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Chorabudi (also spelt Chorabudu) is a benevolent crop-guardian of the Garo Songsarek religion. He watches over the fields and the growing produce, and the Garos present to him the first-fruits of every harvest. He is closely associated with the supreme creator Tatara-Rabuga, being described as his servant and receiving a pig-sacrifice whenever offerings are made to the creator. As a specifically named agricultural protector, distinct from the sun-giver Saljong and the generalised field-spirits, he occupies a well-defined place in the ritual economy of Garo swidden cultivation."
+  },
+  {
+    "id": "garo_rokkime",
+    "name": {
+      "primary": "Rokkime, Mother-Goddess of the Rice-Paddy",
+      "alt": [
+        "Rokkime",
+        "Rokime",
+        "Mima Kiri Rokkime"
+      ],
+      "transliterations": {
+        "achik": "Mima Kiri Rokkime",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perpetual"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perpetual",
+        "eraOrdering": 0,
+        "startEvent": "Invoked as Mima Kiri Rokkime, the mother-goddess of the rice-paddy, she is called into the newly burnt swidden fields at the Agalmaka (Rokkime Ringama) rite so that the paddy may take root and the harvest prosper.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rice-and-the-harvest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Mima Kiri Rokkime",
+          "script": "Latin",
+          "rom": "great mother of the paddy"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_the_rice_grow_and_ripen",
+        "name": "to make the rice paddy grow and ripen",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The paddy plant itself is regarded as the presence of the goddess.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marak, Lucy R. (2015). Myths and Archetypes in Garo (A·chik) Folk Narratives. Partridge India."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "garo_paddy_plant",
+        "name": "The rice-paddy plant",
+        "kind": "emblem",
+        "role": "The growing paddy is identified with the goddess herself and is treated as her living form in the fields.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marak, Lucy R. (2015). Myths and Archetypes in Garo (A·chik) Folk Narratives. Partridge India."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Mima Kiri Rokkime",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "garo_tatara_rabuga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          }
+        ],
+        "notes": "Counted among the beneficent deities of the Garo pantheon that stand under the supreme creator Tatara-Rabuga; invoked together with the sun-giver Saljong at the Agalmaka field rite."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Rokkime, invoked as Mima Kiri Rokkime, is the Garo mother-goddess of the rice-paddy, identified with the paddy plant and called into the fields at the Agalmaka spring rite alongside the sun-giver Saljong.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sangma, Milton S. (1981). History and Culture of the Garos. New Delhi: Books Today."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marak, Lucy R. (2015). Myths and Archetypes in Garo (A·chik) Folk Narratives. Partridge India."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Rokkime is the Garo goddess of rice, honoured under the ritual name Mima Kiri Rokkime, the 'great mother' of the paddy. The Achik cultivators regard the paddy plant itself as her embodiment, and at the Agalmaka festival (also called Rokkime Ringama), held in spring once the hill-plots have been burnt, the village priest calls upon the goddess to descend and dwell in the fields together with the sun-giver Misi Saljong so that the crop may flourish. She is a distinct, named agricultural mother-goddess of the Garo pantheon, complementary to but separate from the crop-protector Chorabudi and the sun-deity Saljong."
+  }
+]
+```

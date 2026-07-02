@@ -1,0 +1,830 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Haida
+Era (registered, exact): "mythic-perennial", "mythic-primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added six well-attested, individuated Haida figures absent from the existing set: Power-of-the-Shining-Heavens (Sîns Sganagwai), the supreme sky-power; Sacred-One-Standing-and-Moving (Ḵuuya Gyaag̱andal), the earthquake-causing world-bearer; the hero Stone-Ribs, slayer of the five-finned killer whale Qagawai; Property Woman (Skîl Jáadei), a wealth-bringing spirit; Konankada, Chief of the Undersea World; and Nanasimgit, hero of the woman-carried-away-by-killer-whales narrative. Each rests on at least two real scholarly sources (Swanton 1905 Contributions and Skidegate Texts, Barbeau 1953, MacDonald 1983, Stewart 1979, Bringhurst 1999, and Boelscher Ignace 2005), and new figures are wired into the existing pantheon where attested: Power-of-the-Shining-Heavens as source of the Sg̱áana beings, the world-bearer as subordinate within that hierarchy, and Stone-Ribs as slayer of the killer-whale Qagawai. I deliberately excluded Dzelarhons/Volcano Woman (already present as haida_djilaqons) and the Wasgo/sea-wolf, which the sources treat as a creature-type rather than a single named individual.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "haida_sins_sganagwai",
+    "name": {
+      "primary": "Power-of-the-Shining-Heavens",
+      "alt": [
+        "Sîns Sganagwai",
+        "Sins Sganagwai",
+        "Sîns sǥā'naǥwa-i",
+        "Sin Sganagwai"
+      ],
+      "transliterations": {
+        "hai": "Sîns Sganagwai",
+        "etymology": "From Haida sîn 'daylight, the shining sky' and sganagwai 'supernatural power/being'; rendered by Swanton as 'Power-of-the-Shining-Heavens'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "Swanton recorded that the highest being in Haida cosmology, dwelling in the uppermost sky, was Sîns Sganagwai, the diffuse source from whom every supernatural being received its power.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Contributions to the Ethnology of the Haida (Memoirs of the American Museum of Natural History, Jesup North Pacific Expedition Vol. 5, Pt. 1), 1905"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cosmic-order",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Sganagwai",
+          "script": "Latin",
+          "rom": "supernatural power"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marianne Boelscher Ignace, 'Haida Religious Traditions,' in Encyclopedia of Religion, 2nd ed., ed. Lindsay Jones (Macmillan Reference), 2005"
+          }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sîn",
+          "script": "Latin",
+          "rom": "daylight sky"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Contributions to the Ethnology of the Haida (Memoirs of the American Museum of Natural History, Jesup North Pacific Expedition Vol. 5, Pt. 1), 1905"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_power",
+        "name": "to grant supernatural power to other beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Swanton identifies this being as the one who gave the Sganagwai (supernatural beings) their potency.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Contributions to the Ethnology of the Haida (Memoirs of the American Museum of Natural History, Jesup North Pacific Expedition Vol. 5, Pt. 1), 1905"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creator-of",
+        "personId": "haida_sgaana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Contributions to the Ethnology of the Haida (Memoirs of the American Museum of Natural History, Jesup North Pacific Expedition Vol. 5, Pt. 1), 1905"
+          }
+        ],
+        "notes": "As the highest sky power, Power-of-the-Shining-Heavens is the source that endowed the killer-whale and supernatural beings (Sganagwai) with their abilities."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Power-of-the-Shining-Heavens is the supreme sky-dwelling power of Haida cosmology, the diffuse source from which all supernatural beings derive their power.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Contributions to the Ethnology of the Haida (Memoirs of the American Museum of Natural History, Jesup North Pacific Expedition Vol. 5, Pt. 1), 1905"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marianne Boelscher Ignace, 'Haida Religious Traditions,' in Encyclopedia of Religion, 2nd ed., ed. Lindsay Jones (Macmillan Reference), 2005"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Power-of-the-Shining-Heavens (Sîns Sganagwai) is, in the ethnography of John Swanton, the highest of all Haida supernatural beings: an impersonal sky-power rather than an anthropomorphic god, dwelling above the world and serving as the ultimate wellspring of the potency held by the many Sganagwai, including the killer-whale beings. Because the power is diffuse and abstract, it is rarely narrated as a character, yet it stands at the apex of the cosmological hierarchy the Haida described to early ethnographers."
+  },
+  {
+    "id": "haida_sacred_one_standing_and_moving",
+    "name": {
+      "primary": "Sacred-One-Standing-and-Moving",
+      "alt": [
+        "Ḵuuya Gyaag̱andal",
+        "Kuuya Gyaagandal",
+        "Sacred-one-standing-and-moving"
+      ],
+      "transliterations": {
+        "hai": "Ḵuuya Gyaag̱andal",
+        "etymology": "A Haida phrase-name meaning roughly 'the sacred one who stands and moves', describing the being who both upholds the land and shifts it."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "When the supernatural beings met to decide who would hold up Haida Gwaii, Sacred-One-Standing-and-Moving took the burden, balancing the islands on a pole set against his chest above a copper box.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earthquakes",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      },
+      {
+        "sphereId": "earth-support",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George F. MacDonald, Haida Monumental Art: Villages of the Queen Charlotte Islands (University of British Columbia Press), 1983"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hold_up_the_land",
+        "name": "to hold up the islands of Haida Gwaii",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The world floats but rests upon him and upon a copper box beneath him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      },
+      {
+        "id": "make_earthquakes",
+        "name": "to make the earth quake when he shifts",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "A marten (K'uuxuu) runs up the supporting pole, and the tremor it sends down is felt as an earthquake.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "haida_copper_box_of_the_world",
+        "name": "copper box beneath the world",
+        "kind": "emblem",
+        "role": "the copper chest upon which the world-bearer himself rests",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "haida_sins_sganagwai",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marianne Boelscher Ignace, 'Haida Religious Traditions,' in Encyclopedia of Religion, 2nd ed., ed. Lindsay Jones (Macmillan Reference), 2005"
+          }
+        ],
+        "notes": "Within the cosmological hierarchy Swanton recorded, the world-bearer, like all Sganagwai, holds power derived from Power-of-the-Shining-Heavens."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sacred-One-Standing-and-Moving is the supernatural being who upholds the land of Haida Gwaii and whose shifting causes earthquakes.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George F. MacDonald, Haida Monumental Art: Villages of the Queen Charlotte Islands (University of British Columbia Press), 1983"
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Sacred-One-Standing-and-Moving (Ḵuuya Gyaag̱andal) is the world-bearer of Haida cosmology. In the Skidegate myth recorded by Swanton under the title 'Sacred-one-standing-and-moving, Stone-ribs, and Upward,' the supernatural beings gather to choose who will hold up the islands, and he accepts the task, balancing Haida Gwaii on a great pole braced against his chest above a copper box. When he stirs, a marten runs up the pole and the vibration is felt across the land as an earthquake. The figure remains vivid in living Haida culture: he was carved on the Gwaii Haanas Legacy Pole raised at Windy Bay in 2013 to commemorate the 2012 Haida Gwaii earthquake."
+  },
+  {
+    "id": "haida_stone_ribs",
+    "name": {
+      "primary": "Stone-Ribs",
+      "alt": [
+        "Stone-ribs"
+      ],
+      "transliterations": {
+        "hai": "",
+        "etymology": "Swanton's English rendering of the hero's Haida name, describing his stone-hard body; born at Tlkadan in the Ninstints (Sg̱ang Gwaay) country."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "Born of a woman at Tlkadan in the southern islands, Stone-Ribs overcame the five-finned killer whale Qagawai that had been destroying people and took its skin, then travelled the seas defeating the Ocean-People.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heroism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      },
+      {
+        "sphereId": "the-sea",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sg̱áana",
+          "script": "Latin",
+          "rom": "killer whale / supernatural being"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marius Barbeau, Haida Myths Illustrated in Argillite Carvings (National Museum of Canada Bulletin 127), 1953"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "assume_ocean_skins",
+        "name": "to put on the skins and take the forms of ocean beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Having taken the skins of the Ocean-People he defeated, he could assume their shapes at will.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      },
+      {
+        "id": "overcome_sea_monsters",
+        "name": "to overcome the monsters and beings of the sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marius Barbeau, Haida Myths Illustrated in Argillite Carvings (National Museum of Canada Bulletin 127), 1953"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "haida_killer_whale_skin",
+        "name": "killer-whale skin of Qagawai",
+        "kind": "regalia",
+        "role": "the skin of the five-finned killer whale, worn to travel and fight beneath the sea",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "haida_sgaana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ],
+        "notes": "Stone-Ribs killed the man-destroying five-finned killer whale Qagawai, one of the killer-whale beings, and took its skin."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Stone-Ribs is a Haida supernatural hero who slew the five-finned killer whale Qagawai and travelled the seas overcoming and assuming the forms of the Ocean-People.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marius Barbeau, Haida Myths Illustrated in Argillite Carvings (National Museum of Canada Bulletin 127), 1953"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Stone-Ribs is a supernatural hero of the southern Haida, born of a woman at Tlkadan in the Ninstints (Sg̱ang Gwaay) country. His central exploit is the killing of Qagawai, a five-finned killer whale that had been destroying people; having taken its skin, he travelled all around Haida Gwaii beneath the water, defeating the Ocean-People and collecting their skins so that he could take on their shapes at will. His story is one of the linked narratives Swanton recorded together with that of Sacred-One-Standing-and-Moving, and it is a favoured subject of Haida argillite carving."
+  },
+  {
+    "id": "haida_property_woman",
+    "name": {
+      "primary": "Property Woman",
+      "alt": [
+        "Skîl Jáadei",
+        "Skil Jaadei",
+        "Skîl djā'ada-i",
+        "Skil Jaada"
+      ],
+      "transliterations": {
+        "hai": "Skîl Jáadei",
+        "etymology": "From Haida skîl 'wealth, good fortune, property' and jáadei 'woman'; Swanton's 'Property-Woman', a woman of good fortune."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "Property-Woman appears in the forest and along the shore to bring wealth, both material and spiritual, to those who manage to encounter her and act rightly toward her.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Contributions to the Ethnology of the Haida (Memoirs of the American Museum of Natural History, Jesup North Pacific Expedition Vol. 5, Pt. 1), 1905"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wealth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "skîl",
+          "script": "Latin",
+          "rom": "wealth / good fortune"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Contributions to the Ethnology of the Haida (Memoirs of the American Museum of Natural History, Jesup North Pacific Expedition Vol. 5, Pt. 1), 1905"
+          }
+        ]
+      },
+      {
+        "sphereId": "good-fortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marius Barbeau, Haida Myths Illustrated in Argillite Carvings (National Museum of Canada Bulletin 127), 1953"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_wealth",
+        "name": "to bring wealth and good fortune to those who glimpse her",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Those who catch sight of her, or who seize her child, are said to gain prosperity.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marius Barbeau, Haida Myths Illustrated in Argillite Carvings (National Museum of Canada Bulletin 127), 1953"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "haida_skil_copper",
+        "name": "copper (t'aa.u)",
+        "kind": "emblem",
+        "role": "engraved copper, the supreme Haida token of wealth associated with her gift of fortune",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George F. MacDonald, Haida Monumental Art: Villages of the Queen Charlotte Islands (University of British Columbia Press), 1983"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Property Woman (Skîl Jáadei) is a Haida wealth-bringing supernatural woman who confers prosperity on those who encounter her.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Contributions to the Ethnology of the Haida (Memoirs of the American Museum of Natural History, Jesup North Pacific Expedition Vol. 5, Pt. 1), 1905"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marius Barbeau, Haida Myths Illustrated in Argillite Carvings (National Museum of Canada Bulletin 127), 1953"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Property Woman, whom Swanton records as Skîl djā'ada-i, is a Haida supernatural woman who dispenses wealth and good fortune. She is imagined as a spirit-woman, often glimpsed only briefly in the woods or by the water, sometimes carrying a child; those who see her, or in some tellings who seize the child, are rewarded with prosperity of every kind. Her name is built on the Haida root skîl, 'wealth' or 'property', the same value embodied in the engraved coppers that were the ultimate marker of Haida rank."
+  },
+  {
+    "id": "haida_konankada",
+    "name": {
+      "primary": "Konankada",
+      "alt": [
+        "Chief of the Undersea World",
+        "Konankadeit",
+        "Kanukx"
+      ],
+      "transliterations": {
+        "hai": "Konankada",
+        "etymology": "Haida name of the sovereign of the undersea realm; cognate with Tlingit Gonakadet and Tsimshian forms of the sea-chief."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "Konankada reigns in his great house at the bottom of the sea, master of the seals and of the wealth of the ocean, granting fortune and power to those who reach him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George F. MacDonald, Haida Monumental Art: Villages of the Queen Charlotte Islands (University of British Columbia Press), 1983"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-sea",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George F. MacDonald, Haida Monumental Art: Villages of the Queen Charlotte Islands (University of British Columbia Press), 1983"
+          }
+        ]
+      },
+      {
+        "sphereId": "wealth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hilary Stewart, Looking at Indian Art of the Northwest Coast (Douglas & McIntyre), 1979"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_fortune",
+        "name": "to grant fortune and power to those who reach his house",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Haida held that those who visited the Chief of the Undersea World returned with wealth and power.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hilary Stewart, Looking at Indian Art of the Northwest Coast (Douglas & McIntyre), 1979"
+          }
+        ]
+      },
+      {
+        "id": "command_the_seals",
+        "name": "to command the seals and the creatures of the sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George F. MacDonald, Haida Monumental Art: Villages of the Queen Charlotte Islands (University of British Columbia Press), 1983"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "haida_konankada_copper",
+        "name": "copper and abalone",
+        "kind": "emblem",
+        "role": "the copper and abalone that signify his immense undersea wealth in Haida art",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hilary Stewart, Looking at Indian Art of the Northwest Coast (Douglas & McIntyre), 1979"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Konankada is the Haida Chief of the Undersea World, master of the seals and of oceanic wealth, whose oversized head and hands are a recurring subject of Haida art.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "George F. MacDonald, Haida Monumental Art: Villages of the Queen Charlotte Islands (University of British Columbia Press), 1983"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hilary Stewart, Looking at Indian Art of the Northwest Coast (Douglas & McIntyre), 1979"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Konankada is the Haida sovereign of the undersea world, the great being who dwells in a house at the bottom of the sea as master of the seals and of the ocean's wealth. Depicted with an outsized head and hands and framed by copper and abalone, he is one of the most frequently rendered figures on Haida chests, food vessels, and house-fronts, where his 'front' image marks the threshold between the human and the submarine realms. Those who reached his house were believed to return endowed with fortune and power. He is the Haida counterpart of the pan-coastal sea-chief known to the Tlingit as Gonakadet."
+  },
+  {
+    "id": "haida_nanasimgit",
+    "name": {
+      "primary": "Nanasimgit",
+      "alt": [
+        "Nanasimget",
+        "Nanasimgyet",
+        "Nan-a-simgit"
+      ],
+      "transliterations": {
+        "hai": "Nanasimgit",
+        "etymology": "Personal name of the Haida hero of the 'woman carried away by killer whales' narrative; his wife is named Ḵ'uljáad."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "male",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "When his wife Ḵ'uljáad is seized and carried off by the killer-whale people to their house beneath the sea, Nanasimgit sets out after her, aided above water by Swallow and Marten and below by the creatures he has treated kindly, and brings her home.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heroism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      },
+      {
+        "sphereId": "the-sea",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sg̱áana",
+          "script": "Latin",
+          "rom": "killer whale"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert Bringhurst, A Story as Sharp as a Knife: The Classical Haida Mythtellers and Their World (Douglas & McIntyre), 1999"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "journey_undersea",
+        "name": "to travel into the undersea world and return alive",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "With the help of an orca he journeys beneath the sea to the town of the killer-whale people and back.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          }
+        ]
+      },
+      {
+        "id": "win_animal_aid",
+        "name": "to win the help of animals through kindness",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Creatures he has helped repay him during his descent to the sea-floor town.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Robert Bringhurst, A Story as Sharp as a Knife: The Classical Haida Mythtellers and Their World (Douglas & McIntyre), 1999"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nanasimgit is the Haida hero who follows his abducted wife Ḵ'uljáad into the undersea town of the killer-whale people and recovers her.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Haida Texts and Myths, Skidegate Dialect (Bureau of American Ethnology Bulletin 29), 1905"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Robert Bringhurst, A Story as Sharp as a Knife: The Classical Haida Mythtellers and Their World (Douglas & McIntyre), 1999"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nanasimgit is the hero of one of the most widely told Haida narratives, the story of the woman carried away by killer whales. After his wife Ḵ'uljáad is seized by the killer-whale people and taken to their house beneath the sea, Nanasimgit pursues her: aided above the water by Swallow and Marten, and below it by the geese, heron, and woodcutter he has helped, he descends with the help of an orca to the sea-floor town, frees his wife, and returns home. The tale carries the twin lessons that one must not take from nature without gratitude and that kindness is repaid in need; it remains a favoured subject of Haida carving and retelling."
+  }
+]
+```

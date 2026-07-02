@@ -1,0 +1,474 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Luo
+Era (registered, exact): "legendary-historical", "mythic-past"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four genuinely individuated, well-attested Luo figures missing from the corpus: Podho, the eponymous progenitor whom Ogot calls 'the Adam of the Luo' and who is wired to the existing Ramogi via a father-of relation; Owiny Sigoma, the legendary warrior-leader of the Jok-Owiny and founder of the Karuoth royal clan; Gor Mahia, the celebrated magician-chief and seer of Kanyamwa; and Nyamgondho wuod Ombare, the canonical fisher-hero of the lakeshore moral legend. Each is documented in mainstream scholarship (Ogot's History of the Southern Luo, Ochieng's Outline History of Nyanza, Cohen and Atieno Odhiambo's Siaya, and the Luo oral-literature anthologies of Onyango-Ogutu and Roscoe and of Miruka). I deliberately excluded the Shilluk figure Nyikang and the Anuak/Acholi Jok material, since those Northern and Central Luo religious systems are catalogued under their own traditions and folding them into this Kenyan-Luo (Joluo) set would conflate distinct corpora; I also excluded place-legends and unnamed spirits (for example the anonymous 'lady of the lake') that lack an individuated named being.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "luo_podho",
+    "name": {
+      "primary": "Podho",
+      "alt": [
+        "Podho Rieny",
+        "Podho Aruwa"
+      ],
+      "transliterations": {
+        "luo": "Podho"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Luo",
+    "primaryTradition": "Luo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-past"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-past",
+        "eraOrdering": 0,
+        "startEvent": "In Luo migration tradition Podho is the eponymous forebear who moved eastward out of the north and fathered Ramogi and the other founders of the Luo groups, characterised by Ogot as 'the Adam of the Luo' to Ramogi's 'Abraham'.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bethwell A. Ogot, History of the Southern Luo, Volume I: Migration and Settlement, 1500-1900 (Nairobi: East African Publishing House, 1967)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-lineage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kwaro",
+          "script": "",
+          "rom": "ancestor/grandfather"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bethwell A. Ogot, History of the Southern Luo, Volume I: Migration and Settlement, 1500-1900 (Nairobi: East African Publishing House, 1967)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "progenitor_of_lineages",
+        "name": "to father the ancestral Luo lineages",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "luo_ramogi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bethwell A. Ogot, History of the Southern Luo, Volume I: Migration and Settlement, 1500-1900 (Nairobi: East African Publishing House, 1967)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          }
+        ],
+        "notes": "The dominant genealogical tradition names Ramogi among Podho's sons; variant recitations insert an intervening generation, and Ogot stresses that the single-eponym scheme is partly a later systematisation of the migration traditions."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Podho is the eponymous ancestral progenitor of the Luo in migration tradition, remembered as the father of Ramogi and the head of the genealogy from which the Luo groups descend.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bethwell A. Ogot, History of the Southern Luo, Volume I: Migration and Settlement, 1500-1900 (Nairobi: East African Publishing House, 1967)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Podho occupies the apex of the standard Luo genealogical recitation as the ancestor who led the eastward movement and fathered Ramogi together with brothers whose names head other lineages. Historians of the Southern Luo treat him as a telescoped, semi-legendary eponym rather than a datable individual, noting that the belief in descent from a single forefather was elaborated in later generations, yet his name anchors the way the Luo narrate their own origins."
+  },
+  {
+    "id": "luo_owiny_sigoma",
+    "name": {
+      "primary": "Owiny Sigoma",
+      "alt": [
+        "Owiny",
+        "Owiny Sigoma"
+      ],
+      "transliterations": {
+        "luo": "Owiny Sigoma"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Luo",
+    "primaryTradition": "Luo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-past"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-past",
+        "eraOrdering": 0,
+        "startEvent": "Owiny Sigoma led the Jok-Owiny wave of Luo migrants across Samia-Bugwe into the Yala and Alego country roughly ten to twelve generations ago, and his aggressive conquests earned his following the clan name Karuoth, 'the royal clan'.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bethwell A. Ogot, History of the Southern Luo, Volume I: Migration and Settlement, 1500-1900 (Nairobi: East African Publishing House, 1967)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-and-conquest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "lweny",
+          "script": "",
+          "rom": "war"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bethwell A. Ogot, History of the Southern Luo, Volume I: Migration and Settlement, 1500-1900 (Nairobi: East African Publishing House, 1967)."
+          }
+        ]
+      },
+      {
+        "sphereId": "royal-authority",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ruoth",
+          "script": "",
+          "rom": "chief/king"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "war_leadership",
+        "name": "to lead the Luo in armed conquest",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bethwell A. Ogot, History of the Southern Luo, Volume I: Migration and Settlement, 1500-1900 (Nairobi: East African Publishing House, 1967)."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Owiny Sigoma is the legendary warrior-leader of the Jok-Owiny migration into western Kenya, eponym of the Sigoma settlement and founder of the Karuoth royal clan of Alego.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bethwell A. Ogot, History of the Southern Luo, Volume I: Migration and Settlement, 1500-1900 (Nairobi: East African Publishing House, 1967)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Owiny Sigoma stands in Southern Luo tradition as the archetypal conquering leader of the second, more militant wave of Luo settlement. Leading the Jok-Owiny out of Busoga and across the lakeshore, he defeated the peoples in his path and established a settlement named Sigoma after himself in Alego; the reputation for aggression won his descendants the honorific clan name Karuoth, 'those of the king'. He is remembered as the human founder of a royal lineage rather than as a divine or superhuman being."
+  },
+  {
+    "id": "luo_gor_mahia",
+    "name": {
+      "primary": "Gor Mahia",
+      "alt": [
+        "Gor",
+        "Gor Ogalo",
+        "Gor K'Ogalo",
+        "Gor wuod Ogada"
+      ],
+      "transliterations": {
+        "luo": "Gor Mahia",
+        "etymology": "mahia, Dholuo for 'magic/wonders', nicknaming Gor for his feats of sorcery"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Luo",
+    "primaryTradition": "Luo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "legendary-historical"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "legendary-historical",
+        "eraOrdering": 0,
+        "startEvent": "Born in Kanyamwa (Ndhiwa) in the late eighteenth century as the son of Ogada of the Ogalo line, Gor inherited magical power from his grandfather and rose to rule his people as a dreaded magician, seer and rainmaker whose fame persisted into the colonial encounters of the early twentieth century.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "magic-and-sorcery",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mahia",
+          "script": "",
+          "rom": "magic/wonders"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          }
+        ]
+      },
+      {
+        "sphereId": "divination-prophecy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ajuoga",
+          "script": "",
+          "rom": "diviner/medicine-man"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David William Cohen and E. S. Atieno Odhiambo, Siaya: The Historical Anthropology of an African Landscape (London: James Currey; Nairobi: Heinemann Kenya; Athens: Ohio University Press, 1989)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "work_magic",
+        "name": "to work magic and wonders",
+        "term": {
+          "value": "mahia",
+          "script": "",
+          "rom": "magic"
+        },
+        "inheritability": "none",
+        "notes": "Tradition holds the power was passed down to Gor from his grandfather Ogalo.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          }
+        ]
+      },
+      {
+        "id": "foretell_future",
+        "name": "to foretell future events",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He is said to have foreseen and announced the coming of Europeans.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David William Cohen and E. S. Atieno Odhiambo, Siaya: The Historical Anthropology of an African Landscape (London: James Currey; Nairobi: Heinemann Kenya; Athens: Ohio University Press, 1989)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Gor K'Ogalo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Gor Mahia is the legendary magician-chief of Kanyamwa, a late-eighteenth- to nineteenth-century seer and rainmaker credited with inherited supernatural powers and remembered across Luo country for his sorcery and prophecy.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "William R. Ochieng', An Outline History of Nyanza up to 1914 (Nairobi: East African Literature Bureau, 1974)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "David William Cohen and E. S. Atieno Odhiambo, Siaya: The Historical Anthropology of an African Landscape (London: James Currey; Nairobi: Heinemann Kenya; Athens: Ohio University Press, 1989)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gor, nicknamed 'Mahia' after the Dholuo word for magic, was a chief and magician of the Kanyamwa area near the shore of Lake Victoria whose reputation for wonder-working, rainmaking and prophecy made him one of the most celebrated figures of Luo memory. Son of Ogada and heir, by tradition, to the powers of his grandfather Ogalo, he is described as ruling through fear of his sorcery, and stories credit him with foreseeing the arrival of Europeans. Though a historical personage of the recent past, he has passed into legend as an almost superhuman worker of the miraculous, his name later borrowed for Kenya's best-known football club."
+  },
+  {
+    "id": "luo_nyamgondho",
+    "name": {
+      "primary": "Nyamgondho wuod Ombare",
+      "alt": [
+        "Nyamgondho",
+        "Nyamgondho Kombare",
+        "Nyamgodho son of Ombare",
+        "Julu wuod Ombare"
+      ],
+      "transliterations": {
+        "luo": "Nyamgondho wuod Ombare",
+        "etymology": "wuod Ombare, Dholuo for 'son of Ombare'"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Luo",
+    "primaryTradition": "Luo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-past"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-past",
+        "eraOrdering": 0,
+        "startEvent": "A destitute fisherman on the shore of Nam Lolwe (Lake Victoria) at Nyandiwa in the Suba country, Nyamgondho drew a mysterious woman from the lake in his net, married her and grew immensely wealthy, then lost everything to the water through drunken pride and was turned into a tree at the lakeside spot called Kidi Nyamgondho.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "B. Onyango-Ogutu and Adrian A. Roscoe, Keep My Words: Luo Oral Literature (Nairobi: East African Publishing House, 1974)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fishing-and-lake",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nam",
+          "script": "",
+          "rom": "lake"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "B. Onyango-Ogutu and Adrian A. Roscoe, Keep My Words: Luo Oral Literature (Nairobi: East African Publishing House, 1974)."
+          }
+        ]
+      },
+      {
+        "sphereId": "wealth-and-ruin",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Simon Okumba Miruka, Oral Literature of the Luo (Nairobi: East African Educational Publishers, 2001)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "luo_kidi_nyamgondho",
+        "name": "Kidi Nyamgondho",
+        "kind": "sacred-site",
+        "role": "The lakeside tree and stone into which the ruined Nyamgondho was transformed, remembered as a place of mystery and healing.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "B. Onyango-Ogutu and Adrian A. Roscoe, Keep My Words: Luo Oral Literature (Nairobi: East African Publishing House, 1974)."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nyamgondho wuod Ombare is a legendary Luo folktale hero, the poor fisherman enriched by a wife from the lake and ruined by his own pride, whose story is a canonical moral narrative of the Luo lakeshore.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "B. Onyango-Ogutu and Adrian A. Roscoe, Keep My Words: Luo Oral Literature (Nairobi: East African Publishing House, 1974)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Simon Okumba Miruka, Oral Literature of the Luo (Nairobi: East African Educational Publishers, 2001)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nyamgondho, son of Ombare, is one of the most widely told legendary figures of the Luo of the Lake Victoria shore. A luckless fisherman, he found a strange woman caught in his net who married him on condition that he never reveal her origin; through her he gained cattle, wives and standing, but when drink and arrogance led him to insult and curse her, she walked back into the lake and every cow and possession followed her beneath the water. Left destitute, he sank down on his staff at the shore and became a tree. The tale, preserved in the standard anthologies of Luo oral literature, functions as a moral warning that fortune granted from the spirit world demands humility, and the site of his transformation, Kidi Nyamgondho, remains associated with mystery and healing."
+  }
+]
+```

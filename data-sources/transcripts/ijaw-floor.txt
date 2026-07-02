@@ -1,0 +1,726 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ijaw
+Era (registered, exact): "mythic-age"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added six individuated figures drawn entirely from the Ijaw (Ijo) oral epic The Ozidi Saga, recorded in 1963 from the bard Okabou Ojobolo and published/translated by J. P. Clark-Bekederemo (1977) with an extended critical study by Isidore Okpewho (Blood on the Tides, 2014; Oral Tradition, 2004): the avenger-hero Ozidi the Younger, his murdered father Ozidi the Elder, his mother Orea, his sorceress grandmother Oreame, his idiot-king uncle Temugedege, and the forest wizard Bouakarakarabiri. They form a tightly attested kin-and-combat network, wired to each other by parentage, marriage, sibling and companion ties, and connected to the existing corpus through Orea's invocation of Tamara (Tamuno) against the Smallpox King. I deliberately excluded the epic's many monster-antagonists (Tebesonoma, Odogu, Engarando, etc.) and the generic water-spirit class (Owuamapu) as either non-principled to enumerate or not individuated ancestors/heroes, keeping the addition to the securely documented core cast.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ijaw_ozidi",
+    "name": {
+      "primary": "Ozidi the Younger",
+      "alt": [
+        "Ozidi",
+        "Ozidi Junior"
+      ],
+      "transliterations": {
+        "ijo": "Ozidi"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "male",
+    "vitalStatus": "mortal",
+    "parentIds": [
+      "ijaw_ozidi_senior",
+      "ijaw_orea"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Born posthumously and already standing upright with open eyes at Orua after his father's murder, Ozidi is reared and supernaturally armed by his grandmother to avenge the killing and restore order to the town.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "vengeance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ]
+      },
+      {
+        "sphereId": "heroic-combat",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "overcome_warriors",
+        "name": "to overcome monstrous warriors in single combat",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ijaw_ozidi_sword",
+        "name": "Seven-pronged sword",
+        "kind": "weapon",
+        "role": "Extraordinary blade forged by a smith whom Oreame summons from the earth, required to clinch each of Ozidi's victories.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "ijaw_oreame",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ],
+        "notes": "His witch grandmother accompanies him into every battle as guide, protector and driving conscience."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ozidi the Younger is the avenger-hero of the Ijo Ozidi Saga who destroys the warlords that murdered his father and restores civic and cosmic order to Orua.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Ozidi is the culture-hero of the Ijaw (Ijo) oral epic performed as ritual theatre at Orua in the Niger Delta. Born after the assassination of his father, he is raised in his mother's natal town and fortified with war-charms, a seven-pronged sword, and constant supernatural guidance by his grandmother Oreame. Reaching manhood he returns to Orua and cuts down, one after another, the captains who conspired against his father, before facing further monstrous adversaries. The saga was recorded in 1963 from the bard Okabou Ojobolo and given its standard bilingual edition and critical study in the twentieth century."
+  },
+  {
+    "id": "ijaw_ozidi_senior",
+    "name": {
+      "primary": "Ozidi the Elder",
+      "alt": [
+        "Ozidi Senior"
+      ],
+      "transliterations": {
+        "ijo": "Ozidi"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "A leading war-captain of Orua, Ozidi the Elder is assassinated by jealous fellow warriors in a succession intrigue after his simple-minded brother is acclaimed king.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "warfare",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead_warhost",
+        "name": "to lead the war-host of Orua",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "ijaw_temugedege",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ],
+        "notes": "Brother of the simple-minded Temugedege, whose elevation to the kingship precipitates the feud."
+      },
+      {
+        "kind": "spouse",
+        "personId": "ijaw_orea",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ],
+        "notes": "Husband of Orea, who is heavy with child at the time of his murder."
+      },
+      {
+        "kind": "father-of",
+        "personId": "ijaw_ozidi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ],
+        "notes": "Father of the avenger-hero Ozidi, born after his death."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ozidi the Elder is the Orua war-captain whose treacherous murder sets the whole revenge cycle of the Ozidi Saga in motion.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Ozidi the Elder is the father of the hero and the man whose death the epic exists to avenge. A renowned fighter of Orua, he is drawn into a fatal quarrel when his intellectually disabled brother Temugedege is made king and demands the tributes due to a monarch; resentful rival warriors kill Ozidi the Elder rather than honour the claim. His pregnant widow withdraws to her mother's town, where the posthumous hero is born."
+  },
+  {
+    "id": "ijaw_orea",
+    "name": {
+      "primary": "Orea",
+      "alt": [],
+      "transliterations": {
+        "ijo": "Orea"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "female",
+    "vitalStatus": "mortal",
+    "parentIds": [
+      "ijaw_oreame"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Widowed and pregnant, Orea withdraws with her mother Oreame to her natal town, where she bears the hero Ozidi and afterwards shields him with prayer.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "ijaw_ozidi_senior",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ],
+        "notes": "Wife of Ozidi the Elder, widowed by his assassination."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "ijaw_ozidi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ],
+        "notes": "Mother of the hero Ozidi, whom she bears standing after her husband's death."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "ijaw_tamuno",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ],
+        "notes": "In the episode of the Smallpox King she invokes Tamara (the supreme creator Tamuno) to save her son and drive the plague-spirit from Orua."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Orea is Ozidi's mother, daughter of the witch Oreame and widow of Ozidi the Elder, who bears and protects the hero.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Orea is the hero's mother and the human link between Ozidi and his sorceress grandmother Oreame. Pregnant when her husband is killed, she retreats to Oreame's town and there gives birth to the boy who will avenge his father. During the visitation of Engarando the Smallpox King she calls on Tamara, the Ijaw supreme deity, to shield her son, and the plague-spirit departs Orua."
+  },
+  {
+    "id": "ijaw_oreame",
+    "name": {
+      "primary": "Oreame",
+      "alt": [
+        "Ereame"
+      ],
+      "transliterations": {
+        "ijo": "Oreame"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "A witch whose command of medicines and words can tie knots in a river, Oreame rears her grandson Ozidi, arms him with charms and a magical sword, and flies at his side through every combat until she is killed in the frenzy of his final battles.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "witchcraft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ]
+      },
+      {
+        "sphereId": "fate",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fly_to_aid",
+        "name": "to fly through the air to aid the hero in battle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ]
+      },
+      {
+        "id": "bind_rivers",
+        "name": "to bind rivers and work war-medicine by her words",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "ijaw_orea",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ],
+        "notes": "Mother of Orea and thus maternal grandmother of the hero Ozidi."
+      },
+      {
+        "kind": "companion",
+        "personId": "ijaw_ozidi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ],
+        "notes": "She raises, arms and accompanies her grandson into every fight as his guiding supernatural power."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Oreame is Ozidi's sorceress maternal grandmother, the supernatural agent who rears, arms and drives the hero and stands as fate and conscience over the epic.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Oreame is arguably the most powerful presence in the Ozidi Saga, a witch and mistress of medicines who is the mother of Orea and the maternal grandmother of the hero. She engineers Ozidi's fortification, summoning smiths and musicians from the earth, procuring charms, and flying beside him to revive and prod him through combat after combat. Scholars read her as the embodiment of fate and driving conscience in the epic. She meets her end when, in the delirium of Ozidi's greatest fights, the hero cuts her down by accident."
+  },
+  {
+    "id": "ijaw_temugedege",
+    "name": {
+      "primary": "Temugedege",
+      "alt": [],
+      "transliterations": {
+        "ijo": "Temugedege"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "male",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "The simple-minded elder brother of Ozidi the Elder, Temugedege is acclaimed king of Orua, and the tribute his kingship demands provokes the killing of his brother.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "ijaw_ozidi_senior",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ],
+        "notes": "Elder brother of Ozidi the Elder; his elevation to the throne triggers the fatal quarrel."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Temugedege is Ozidi the Elder's simple-minded brother, whose acclamation as king of Orua and demand for royal tribute precipitate the feud at the heart of the saga.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Temugedege is the intellectually disabled elder brother of Ozidi the Elder. When the men of Orua, unwilling to grant the kingship to any of the great warriors, ironically raise the harmless Temugedege to the throne, his claim to the tributes owed a king inflames the rival captains. Their refusal and the ensuing quarrel lead directly to the assassination of Ozidi the Elder, making Temugedege the unwitting hinge of the whole tragedy. Like every major figure in the saga he is given his own praise-chant in performance."
+  },
+  {
+    "id": "ijaw_bouakarakarabiri",
+    "name": {
+      "primary": "Bouakarakarabiri",
+      "alt": [
+        "Tebekawene"
+      ],
+      "transliterations": {
+        "ijo": "Bouakarakarabiri"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "male",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "A dreaded wizard of the forest, Bouakarakarabiri compounds the war-charms that make Ozidi's body invulnerable, having earlier fortified the hero's great rival in the same way.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-magic",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ]
+      },
+      {
+        "sphereId": "herbalism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. \"Performance and Plot in The Ozidi Saga.\" Oral Tradition 19, no. 1 (2004): 63-95."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "compound_invulnerability_charms",
+        "name": "to compound charms that make a warrior's body invulnerable",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Bouakarakarabiri is the forest wizard of the Ozidi Saga who prepares the fortifying war-charms of the epic's chief combatants, including Ozidi himself.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, J. P. The Ozidi Saga. Ibadan: Ibadan University Press & Oxford University Press, 1977."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okpewho, Isidore. Blood on the Tides: The Ozidi Saga and Oral Epic Narratology. Rochester, NY: University of Rochester Press, 2014."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bouakarakarabiri is a fearsome forest wizard and master of protective medicine in the Ozidi Saga. Petitioners seek him out to have their bodies charmed against edge and blow, and it is he who orders the preparation of the charms that render Ozidi effectively invulnerable in combat. Ambivalently, he had already worked the same fortification for Ozidi's formidable rival, so that his craft supplies the invulnerability of warriors on both sides of the epic's greatest duels."
+  }
+]
+```
+

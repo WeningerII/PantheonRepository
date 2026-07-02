@@ -1,0 +1,652 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Khmer
+Era (registered, exact): "mythic foundation age", "pre-Indic Khmer animism; living village cult"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five well-attested, individuated Khmer figures absent from the existing founder-myth set: the paired dance-drama divinities Moni Mekhala (goddess of sea and lightning) and Ream Eyso (the thunder storm-giant), wired to each other as cosmic antagonists whose danced pursuit explains the monsoon; Preah Pisnukar, the Khmer form of the divine architect Vishvakarman and legendary builder of Angkor Wat in the 17th-century Poem of Angkor Wat; Preah Thorani (Neang Konghing), the earth goddess who wrings the flood from her hair to defeat Mara; and Yeay Mao, the named warrior-heroine venerated as the great tutelary neak ta of the southern coast. Each rests on at least two real scholarly sources (Cravath 2007; Shapiro-Phim 1994; Jacob 1996; Pou; Guthrie 2004; Ang Choulean 1986/1995; Forest 1992). Thorani and Pisnukar are Indic receptions but are strongly individuated in the Khmer record with distinct native names, iconography, and cults, so they qualify; the three unpartnered figures are documented as standing alone and are placed in solitary with cited reasons. I stopped at five rather than padding with legendary kings (e.g. Ketumala) or unnamed spirit-classes, which lack the individuation or cannot be cleanly related under the allowed relation kinds.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "khmer_moni_mekhala",
+    "name": {
+      "primary": "Moni Mekhala, Goddess of the Sea and Lightning",
+      "alt": [
+        "Moni Mekhala",
+        "Mani Mekhala",
+        "Neang Moni Mekhala",
+        "Mekhala"
+      ],
+      "transliterations": {
+        "km": "មណីមេខលា",
+        "etymology": "From Sanskrit Maṇimekhalā, 'girdle/belt of jewels' (maṇi 'gem' + mekhalā 'girdle'), a Buddhist sea-guardian goddess adopted into Khmer myth (Cravath 2007)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khmer",
+    "primaryTradition": "Khmer",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic foundation age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic foundation age",
+        "eraOrdering": 0,
+        "startEvent": "In Khmer myth she is the celestial guardian of the waters who wins a magical gem in a hermit's dew-gathering contest, and her flashing of that gem becomes the lightning that heralds the life-giving monsoon.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Cravath, Earth in Flower: The Divine Mystery of the Cambodian Dance Drama (Holmes Beach, FL: DatASIA Press, 2007)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea-and-storm",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "មណី",
+          "script": "Khmer",
+          "rom": "mŭni ('gem', her lightning-crystal)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Cravath, Earth in Flower: The Divine Mystery of the Cambodian Dance Drama (Holmes Beach, FL: DatASIA Press, 2007)."
+          }
+        ]
+      },
+      {
+        "sphereId": "monsoon-rain-and-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Toni Samantha Shapiro-Phim, 'Dance and the Spirit of Cambodia' (PhD dissertation, Cornell University, 1994)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "flash_lightning_gem",
+        "name": "to flash blinding lightning from her magic gem",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The intense glow of her crystal ball is understood as lightning in the ritual dance-drama.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Cravath, Earth in Flower: The Divine Mystery of the Cambodian Dance Drama (Holmes Beach, FL: DatASIA Press, 2007)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "khmer_mani_gem",
+        "name": "the magic crystal gem",
+        "kind": "emblem",
+        "role": "the luminous jewel she won from the hermit, whose flash is the lightning of the monsoon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Toni Samantha Shapiro-Phim, 'Dance and the Spirit of Cambodia' (PhD dissertation, Cornell University, 1994)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "khmer_ream_eyso",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Cravath, Earth in Flower: The Divine Mystery of the Cambodian Dance Drama (Holmes Beach, FL: DatASIA Press, 2007)."
+          }
+        ],
+        "notes": "Their eternal aerial pursuit, in which the storm-giant chases her for the gem and she blinds him with its light, is danced each Khmer New Year in the Buong Suong rain rite and generates thunder, lightning, and rain."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Moni Mekhala is the Khmer goddess of the sea and lightning whose contest with the storm-giant Ream Eyso over a magic gem explains thunder, lightning, and the monsoon rains.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Cravath, Earth in Flower: The Divine Mystery of the Cambodian Dance Drama (Holmes Beach, FL: DatASIA Press, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Toni Samantha Shapiro-Phim, 'Dance and the Spirit of Cambodia' (PhD dissertation, Cornell University, 1994)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Moni Mekhala is a celestial goddess of the waters, sea, and lightning in Cambodian tradition, best known through the sacred dance-drama that bears her name. In the myth she and the ogre Ream Eyso are fellow pupils of a hermit who promises his magic gem to whoever first brings a glass of morning dew; Mekhala wins by wringing the dew from her scarf, and thereafter the giant pursues her through the sky to seize the jewel. Her flashing of the gem is lightning, the giant's axe-blows are thunder, and their struggle brings the rain that renews the rice fields, so the dance is performed as a rain-invoking rite (Buong Suong) at the Khmer New Year. She is regarded as one of the most demanding and prestigious female roles in Khmer classical dance."
+  },
+  {
+    "id": "khmer_ream_eyso",
+    "name": {
+      "primary": "Ream Eyso, the Storm-Giant of Thunder",
+      "alt": [
+        "Ream Eyso",
+        "Ream Eyssaur",
+        "Reameyso",
+        "003"
+      ],
+      "transliterations": {
+        "km": "រាមឥសូរ",
+        "etymology": "Khmer name of Sanskritic origin, an asura or yaksa storm-ogre whose name is usually connected to Rāma-Īśvara/Rāmeśvara in the received Indic onomasticon (Cravath 2007)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Khmer",
+    "primaryTradition": "Khmer",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic foundation age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic foundation age",
+        "eraOrdering": 0,
+        "startEvent": "A powerful ogre-pupil of the hermit, Ream Eyso loses the magic gem to Moni Mekhala and forever chases her across the sky, hurling his axe so that its blows resound as thunder.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Cravath, Earth in Flower: The Divine Mystery of the Cambodian Dance Drama (Holmes Beach, FL: DatASIA Press, 2007)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder-and-tempest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ផ្គរ",
+          "script": "Khmer",
+          "rom": "phkô ('thunder')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Toni Samantha Shapiro-Phim, 'Dance and the Spirit of Cambodia' (PhD dissertation, Cornell University, 1994)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl_thunder_axe",
+        "name": "to hurl a magic axe that cracks as thunder",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His axe-throws at the fleeing goddess are heard on earth as thunderclaps.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Cravath, Earth in Flower: The Divine Mystery of the Cambodian Dance Drama (Holmes Beach, FL: DatASIA Press, 2007)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "khmer_ream_eyso_axe",
+        "name": "the magic axe",
+        "kind": "weapon",
+        "role": "the giant's hurled weapon whose impact is heard as thunder as he pursues Moni Mekhala",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Toni Samantha Shapiro-Phim, 'Dance and the Spirit of Cambodia' (PhD dissertation, Cornell University, 1994)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "khmer_moni_mekhala",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Cravath, Earth in Flower: The Divine Mystery of the Cambodian Dance Drama (Holmes Beach, FL: DatASIA Press, 2007)."
+          }
+        ],
+        "notes": "He is the storm-giant who forever chases the goddess for her gem; their danced pursuit is the Khmer explanation of thunder, lightning, and rain."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ream Eyso is the Khmer storm-ogre whose losing pursuit of Moni Mekhala for her magic gem produces thunder and, together with her lightning, the monsoon rain.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Cravath, Earth in Flower: The Divine Mystery of the Cambodian Dance Drama (Holmes Beach, FL: DatASIA Press, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Toni Samantha Shapiro-Phim, 'Dance and the Spirit of Cambodia' (PhD dissertation, Cornell University, 1994)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ream Eyso is the fierce storm-giant of Cambodian myth, an ogre (yeak) figure who, with Moni Mekhala, forms the paired protagonists of Khmer classical dance's most sacred piece. Having lost the hermit's magic gem to the goddess, he pursues her endlessly across the heavens; his hurled axe resounds as thunder while the flash of her jewel blinds him and appears as lightning. Their combat is not a moral duel of good against evil but a cosmic complementarity of male tempest and female radiance whose union releases the rains, and it is enacted at the Khmer New Year to summon the monsoon."
+  },
+  {
+    "id": "khmer_preah_pisnukar",
+    "name": {
+      "primary": "Preah Pisnukar, Divine Architect of Angkor",
+      "alt": [
+        "Preah Pisnukar",
+        "Braḥ Bisṇukār",
+        "Preah Pisnuka",
+        "Vishvakarman (Khmer form)"
+      ],
+      "transliterations": {
+        "km": "ព្រះពិស្ណុការ",
+        "etymology": "Khmer reflex of Sanskrit Viśvakarman, 'maker of all, all-creating' (viśva 'all' + karman 'work'), with the sacred prefix preah (Pou; Jacob 1996)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khmer",
+    "primaryTradition": "Khmer",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic foundation age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic foundation age",
+        "eraOrdering": 0,
+        "startEvent": "Indra's celestial architect, sent to earth in the Poem of Angkor Wat to raise the great stone palace for the exiled prince Ketumala, becomes in Khmer legend the divine builder of Angkor Wat.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Judith M. Jacob, The Traditional Literature of Cambodia: A Preliminary Guide (Oxford: Oxford University Press, 1996)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "architecture-and-craft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ពិស្ណុការ",
+          "script": "Khmer",
+          "rom": "pĭsnŭkar ('divine artificer / architect')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Judith M. Jacob, The Traditional Literature of Cambodia: A Preliminary Guide (Oxford: Oxford University Press, 1996)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_divine_architecture",
+        "name": "to raise celestial palaces and temples on earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the poem he clears the forest around Phnom Bakheng and assembles the finest stone to build the temple-palace.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Judith M. Jacob, The Traditional Literature of Cambodia: A Preliminary Guide (Oxford: Oxford University Press, 1996)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "khmer_pisnukar_palace",
+        "name": "the celestial palace of Ketumala (Angkor Wat)",
+        "kind": "monument",
+        "role": "the stone temple-palace he descends from heaven to build for the exiled prince, identified in Khmer legend with Angkor Wat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Judith M. Jacob, The Traditional Literature of Cambodia: A Preliminary Guide (Oxford: Oxford University Press, 1996)."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Preah Pisnukar is the Khmer form of the divine architect Vishvakarman, sent by Indra in the Poem of Angkor Wat to build the temple-palace for prince Ketumala and revered as the legendary builder of Angkor Wat and patron of artisans.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Judith M. Jacob, The Traditional Literature of Cambodia: A Preliminary Guide (Oxford: Oxford University Press, 1996)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Saveros Pou, philological study of the Lpoek Aṅgar Vat (The Poem of Angkor Wat), dating the poem to 1620 CE and attributing it to Pang Tat (Neak Pang)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Preah Pisnukar is the Khmer reception of the pan-Indic divine artificer Vishvakarman, the architect of the gods. He is the principal hero of the seventeenth-century Poem of Angkor Wat (Lpoek Angkor Vat), in which the god Indra, unable to keep his half-mortal son Ketumala in heaven because of the prince's human odour, sends Pisnukar down to earth to build him a palace worthy of the gods; that palace is identified with Angkor Wat itself. Beyond the poem he survives in living tradition as the patron invoked by Cambodian carpenters, sculptors, and builders, and his legend is retold in popular theatre and the Royal Ballet."
+  },
+  {
+    "id": "khmer_preah_thorani",
+    "name": {
+      "primary": "Preah Thorani, the Earth Goddess who Wrings the Waters",
+      "alt": [
+        "Preah Thorani",
+        "Preah Thoroni",
+        "Neang Konghing",
+        "Preah Mae Thorani",
+        "Dharani"
+      ],
+      "transliterations": {
+        "km": "ព្រះធរណី",
+        "etymology": "From Pali/Sanskrit dharaṇī, 'the earth, that which holds or bears', with sacred prefix preah; her Khmer title Neang Konghing (នាងគង្ហីង) means 'lady/princess' (Guthrie 2004)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khmer",
+    "primaryTradition": "Khmer",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Indic Khmer animism; living village cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "pre-Indic Khmer animism; living village cult",
+        "eraOrdering": 0,
+        "startEvent": "Called as witness to the Buddha's accumulated merit, the earth goddess wrings from her long hair the flood of waters that had been poured out over lifetimes of giving, drowning the army of Mara and confirming the Buddha's right to enlightenment.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth Guthrie, 'A Study of the History and Cult of the Buddhist Earth Deity in Mainland Southeast Asia' (PhD dissertation, University of Canterbury, 2004)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-and-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ធរណី",
+          "script": "Khmer",
+          "rom": "thôrônéi ('earth')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth Guthrie, 'A Study of the History and Cult of the Buddhist Earth Deity in Mainland Southeast Asia' (PhD dissertation, University of Canterbury, 2004)."
+          }
+        ]
+      },
+      {
+        "sphereId": "witness-and-merit-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ang Choulean, 'Le sol et l'ancêtre: l'amorphe et l'anthropomorphe', Journal asiatique 283, no. 1 (1995)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "wring_merit_flood",
+        "name": "to wring a drowning flood from her hair",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The water squeezed from her hair embodies the merit of the Buddha's past gifts and sweeps away Mara's host.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth Guthrie, 'A Study of the History and Cult of the Buddhist Earth Deity in Mainland Southeast Asia' (PhD dissertation, University of Canterbury, 2004)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "khmer_thorani_hair",
+        "name": "her long flood-bearing hair",
+        "kind": "emblem",
+        "role": "the reservoir of merit-water she wrings out to drown Mara, and her defining iconographic attribute beneath the Buddha's throne",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth Guthrie, 'A Study of the History and Cult of the Buddhist Earth Deity in Mainland Southeast Asia' (PhD dissertation, University of Canterbury, 2004)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ព្រះម៉ែធរណី",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth Guthrie, 'A Study of the History and Cult of the Buddhist Earth Deity in Mainland Southeast Asia' (PhD dissertation, University of Canterbury, 2004)."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Preah Thorani (Neang Konghing) is the Khmer earth goddess who witnesses the Buddha's merit and wrings a drowning flood from her hair to defeat Mara, worshipped as a chthonic Mother Earth figure.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Elizabeth Guthrie, 'A Study of the History and Cult of the Buddhist Earth Deity in Mainland Southeast Asia' (PhD dissertation, University of Canterbury, 2004)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ang Choulean, 'Le sol et l'ancêtre: l'amorphe et l'anthropomorphe', Journal asiatique 283, no. 1 (1995)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Preah Thorani, known in Khmer also as Neang Konghing and Preah Mae Thorani ('Mother Earth'), is the earth goddess who anchors one of the most beloved images in Cambodian Buddhism: a graceful young woman wringing water from her long dark hair beneath the Buddha's throne. When Mara challenged the Buddha's fitness for enlightenment, the Buddha touched the earth to call her as witness, and Thorani released the accumulated waters of his lifetimes of generosity, drowning Mara's army. Scholarship traces her as a Buddhist personification layered over far older mainland Southeast Asian veneration of the earth and its fertility, and her image guards temple thrones and boundary stones across Cambodia."
+  },
+  {
+    "id": "khmer_yeay_mao",
+    "name": {
+      "primary": "Yeay Mao, Grandmother Guardian of the Coast",
+      "alt": [
+        "Yeay Mao",
+        "Lok Yeay Mao",
+        "Grandmother Mao"
+      ],
+      "transliterations": {
+        "km": "លោកយាយម៉ៅ",
+        "etymology": "Khmer 'Grandmother Mao': yeay 'grandmother', Mao a personal name, with honorific lok; a named tutelary spirit (neak ta) of the coastal south (Ang Choulean 1986)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Khmer",
+    "primaryTradition": "Khmer",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Indic Khmer animism; living village cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "pre-Indic Khmer animism; living village cult",
+        "eraOrdering": 0,
+        "startEvent": "A warrior-heroine who studied magic under a mountain hermit and, on her husband's death in battle, turned grass and tamarind leaves into a phantom army to repel invaders, becomes after death the guardian tutelary spirit of Cambodia's southern coast.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ang Choulean, Les êtres surnaturels dans la religion populaire khmère (Paris: Cedoreck, 1986)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "protection-of-travellers-and-coast",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "អ្នកតា",
+          "script": "Khmer",
+          "rom": "neak ta ('ancestral guardian spirit')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ang Choulean, Les êtres surnaturels dans la religion populaire khmère (Paris: Cedoreck, 1986)."
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility-and-fortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alain Forest, Le culte des génies protecteurs au Cambodge: analyse et traduction d'un corpus de textes sur les neak ta (Paris: L'Harmattan, 1992)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_phantom_army",
+        "name": "to turn leaves and grass into a phantom army",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "By her learned magic she conjured soldiers from tamarind leaves and blades of grass to defeat the Siamese invaders.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ang Choulean, Les êtres surnaturels dans la religion populaire khmère (Paris: Cedoreck, 1986)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "khmer_yeay_mao_shrine",
+        "name": "her coastal hilltop shrines",
+        "kind": "shrine",
+        "role": "the roadside and mountain shrines (notably at Pich Nil pass and Bokor) where travellers and sailors leave offerings for safe passage and luck",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alain Forest, Le culte des génies protecteurs au Cambodge: analyse et traduction d'un corpus de textes sur les neak ta (Paris: L'Harmattan, 1992)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "លោកយាយម៉ៅ",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ang Choulean, Les êtres surnaturels dans la religion populaire khmère (Paris: Cedoreck, 1986)."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Yeay Mao is a named warrior-heroine venerated as a powerful neak ta guardian spirit of Cambodia's southern coast, protectress of travellers, sailors, and the land.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ang Choulean, Les êtres surnaturels dans la religion populaire khmère (Paris: Cedoreck, 1986)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alain Forest, Le culte des génies protecteurs au Cambodge: analyse et traduction d'un corpus de textes sur les neak ta (Paris: L'Harmattan, 1992)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Yeay Mao, respectfully 'Lok Yeay Mao' ('Grandmother Mao'), is the most famous individually named neak ta (ancestral guardian spirit) of southern Cambodia, venerated across Kampot, Kep, and Sihanoukville and along the mountain passes and coast. Legend makes her a formidable woman who learned magic from a mountain hermit; when her husband, a coastal commander, fell to a Siamese invasion, she took command and conjured a supernatural army out of grass and tamarind leaves to drive the enemy out. After death she became the tutelary spirit of the region, credited with power over travel, the sea, fertility, and fortune, and drivers, fishermen, and pilgrims still stop at her shrines with offerings; a colossal statue of her crowns Bokor Mountain. She exemplifies the way Khmer popular religion individuates the otherwise anonymous class of land-guardian spirits into a specific named heroine with her own biography and cult."
+  }
+]
+```

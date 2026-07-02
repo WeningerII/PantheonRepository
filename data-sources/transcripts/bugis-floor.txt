@@ -1,0 +1,776 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bugis
+Era (registered, exact): "Bugis traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added six well-attested, individuated figures from the Bugis creation epic Sureq Galigo (La Galigo) who were missing from the corpus and who wire directly into the existing five: the Underworld sovereign couple Guru ri Selleng and Sinaung Toja (parents of the existing We Nyiliq Timoq); Batara Lattuq / La Tiuleng, second ruler of Luwuq and son of the existing Batara Guru and We Nyiliq Timoq; We Tenriabeng, the twin sister of the existing Sawerigading; the princess I We Cudai of Cina, Sawerigading's wife; and their son I La Galigo, the epic's eponym. Each is documented across standard scholarship — Pelras's The Bugis (1996), Koolhof's La Galigo encyclopaedia study (1999), Kern's manuscript catalogue (1939), Zainal Abidin (1974) and Andaya (1981). I stopped here because remaining named La Galigo personages (e.g. the celestial husband Remmang ri Langi, or the many local dynastic manurung) are either thinly individuated or shade into generic ancestor-classes the brief excludes; the genuinely individuated divine and heroic core is now covered.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bugis_guru_ri_selleng",
+    "name": {
+      "primary": "Guru ri Selleng, King of the Underworld",
+      "alt": [
+        "Guru riSelleng",
+        "Guru ri Sellang"
+      ],
+      "transliterations": {
+        "Buginese": "Guru ri Selleng",
+        "etymology": "Bugis guru 'lord, master' plus ri Selleng '(who is) in the deep/black realm'; the ruler at the bottom of the waters (Pelras 1996)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Sureq Galigo, Guru ri Selleng rules the Underworld of the waters as the male half of the lower divine couple and, together with the gods of the Upperworld, agrees to populate the empty Middleworld.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Toddang Toja",
+          "script": "Buginese",
+          "rom": "Toddang Toja, 'the bottom of the waters'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      },
+      {
+        "sphereId": "primordial-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Pérétiwi",
+          "script": "Buginese",
+          "rom": "Peretiwi, the watery underworld (from Sanskrit Prthivi)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andi Zainal Abidin (trans. C.C. Macknight), 'The I La Galigo Epic Cycle of South Celebes and Its Diffusion,' Indonesia 17 (1974): 161-169."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_underworld",
+        "name": "to rule the underworld of the waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      },
+      {
+        "id": "raise_progeny_to_earth",
+        "name": "to send divine offspring up to the middle world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "bugis_we_nyiliq_timoq",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ],
+        "notes": "Guru ri Selleng is the father of We Nyiliq Timoq, the princess raised from the Underworld to become consort of Batara Guru in the Middleworld."
+      },
+      {
+        "kind": "spouse",
+        "personId": "bugis_sinaung_toja",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ],
+        "notes": "Guru ri Selleng and Sinaung Toja form the ruling divine couple of the Underworld, parents of We Nyiliq Timoq."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Guru ri Selleng is the male sovereign of the Bugis Underworld of the waters and father of We Nyiliq Timoq in the La Galigo creation cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Guru ri Selleng is the king of the Underworld (Toddang Toja, the realm at the bottom of the waters, also called Peretiwi) in the Bugis creation epic Sureq Galigo. With his consort Sinaung Toja he forms the lower of the two great divine couples that balance the Upperworld of Patotoqe and Datu Palingeq. When the world-creator gods resolve that the empty Middleworld must be settled so that the gods should not go unworshipped, Guru ri Selleng agrees to send up his daughter We Nyiliq Timoq, who becomes the wife of Batara Guru, the first ruler of Luwuq. Through this union the divine dynasty of the Bugis kingdoms is founded."
+  },
+  {
+    "id": "bugis_sinaung_toja",
+    "name": {
+      "primary": "Sinaung Toja, Queen of the Underworld",
+      "alt": [
+        "Sinoa Toja",
+        "Sinauq Toja"
+      ],
+      "transliterations": {
+        "Buginese": "Sinaung Toja",
+        "etymology": "Associated with toja 'water'; the female sovereign of the subterranean waters (Koolhof 1999)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Sureq Galigo, Sinaung Toja reigns over the Underworld as the female half of the lower divine couple and, with Guru ri Selleng, consents to the peopling of the Middleworld.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "subterranean-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Toddang Toja",
+          "script": "Buginese",
+          "rom": "Toddang Toja, 'the bottom of the waters'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_underworld_waters",
+        "name": "to govern the waters of the underworld",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "bugis_guru_ri_selleng",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ],
+        "notes": "Sinaung Toja is the consort of Guru ri Selleng and co-ruler of the Underworld."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "bugis_we_nyiliq_timoq",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ],
+        "notes": "As consort of Guru ri Selleng she is mother of We Nyiliq Timoq, sent up to become the Middleworld queen."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sinaung Toja is the female sovereign of the Bugis Underworld and consort of Guru ri Selleng in the La Galigo cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sinaung Toja (also Sinoa Toja) is the queen of the Underworld in the Bugis Sureq Galigo, the female counterpart of Guru ri Selleng. Together they rule the depths of the waters and mirror below the world the sovereign couple Patotoqe and Datu Palingeq who rule above it. It is these two underworld deities who, jointly with the Upperworld gods, resolve to fill the empty Middleworld, and Sinaung Toja is accordingly counted mother of We Nyiliq Timoq, whose ascent and marriage to Batara Guru inaugurates human kingship in Luwuq."
+  },
+  {
+    "id": "bugis_batara_lattuq",
+    "name": {
+      "primary": "Batara Lattuq, Second Ruler of Luwuq",
+      "alt": [
+        "Batara Lattu",
+        "La Tiuleng",
+        "Batara Latu"
+      ],
+      "transliterations": {
+        "Buginese": "Batara Lattuq",
+        "etymology": "batara 'lord, deity' (from Sanskrit bhattara); the throne-name of La Tiuleng, son of Batara Guru (Pelras 1996)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "bugis_batara_guru",
+      "bugis_we_nyiliq_timoq"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Batara Lattuq, born La Tiuleng to Batara Guru and We Nyiliq Timoq, succeeds his father as the second sovereign of Luwuq.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Luwuq",
+          "script": "Buginese",
+          "rom": "Luwuq, the senior Bugis realm"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leonard Y. Andaya, The Heritage of Arung Palakka: A History of South Sulawesi (Celebes) in the Seventeenth Century (The Hague: Martinus Nijhoff, 1981)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "reign_over_luwuq",
+        "name": "to reign over the kingdom of Luwuq",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "bugis_sawerigading",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ],
+        "notes": "Batara Lattuq is father of the twins Sawerigading and We Tenriabeng."
+      },
+      {
+        "kind": "father-of",
+        "personId": "bugis_we_tenriabeng",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ],
+        "notes": "He fathers the twin daughter We Tenriabeng alongside Sawerigading."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Batara Lattuq (La Tiuleng), son of Batara Guru and We Nyiliq Timoq, is the second ruler of Luwuq and father of the twins Sawerigading and We Tenriabeng.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Andi Zainal Abidin (trans. C.C. Macknight), 'The I La Galigo Epic Cycle of South Celebes and Its Diffusion,' Indonesia 17 (1974): 161-169."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Batara Lattuq, whose personal name is La Tiuleng, is the son of Batara Guru, the first man to descend from heaven, and of We Nyiliq Timoq, raised from the Underworld. He succeeds his father as the second divine sovereign of Luwuq, the senior kingdom of the Bugis. His marriage produces the celebrated twins Sawerigading and We Tenriabeng, whose forbidden mutual attraction and subsequent separate destinies form the dramatic heart of the Sureq Galigo. Through Sawerigading he is grandfather of the epic's title-figure, I La Galigo."
+  },
+  {
+    "id": "bugis_we_tenriabeng",
+    "name": {
+      "primary": "We Tenriabeng, Twin Sister of Sawerigading",
+      "alt": [
+        "Wé Tenriabéng",
+        "We Tenriyabeng",
+        "We Tenri Abeng"
+      ],
+      "transliterations": {
+        "Buginese": "Wé Tenriabéng",
+        "etymology": "The female personal article Wé prefixes the name; the article marks noble women throughout the La Galigo (Pelras 1996)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "bugis_batara_lattuq"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "We Tenriabeng is born the twin of Sawerigading to Batara Lattuq of Luwuq, and is separated from her brother to avert their prophesied incest.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ritual-priesthood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bissu",
+          "script": "Buginese",
+          "rom": "bissu, androgynous priest of the pre-Islamic Bugis"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      },
+      {
+        "sphereId": "heaven",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Boting Langiq",
+          "script": "Buginese",
+          "rom": "Boting Langiq, the summit of heaven"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ascend_to_heaven",
+        "name": "to ascend to the upperworld",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ]
+      },
+      {
+        "id": "counsel_the_hero",
+        "name": "to guide her brother away from forbidden love",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "bugis_i_la_galigo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ],
+        "notes": "We Tenriabeng is paternal aunt to I La Galigo; the two belong to the same Luwuq divine lineage."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "We Tenriabeng is the twin sister of Sawerigading who, to avert their prophesied incest, is separated from him and ultimately ascends to the Upperworld to marry Remmang ri Langi.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "We Tenriabeng is the twin sister of the hero Sawerigading, born to Batara Lattuq of Luwuq. Because a prophecy foretold that the twins would fall fatally in love, the bissu priests ordered them parted at birth, and We Tenriabeng was raised apart from her brother. When Sawerigading, returning home, does indeed conceive a forbidden passion for her, she wisely redirects him by describing her mirror-image, the princess I We Cudai of Cina, whom he departs to woo. We Tenriabeng herself renounces earthly marriage and ascends to the Upperworld (Boting Langiq), where she weds her celestial betrothed Remmang ri Langi. She is closely tied in the tradition to the bissu, the androgynous priesthood that mediates between the human world and the gods."
+  },
+  {
+    "id": "bugis_we_cudai",
+    "name": {
+      "primary": "I We Cudai, Princess of Cina",
+      "alt": [
+        "I Wé Cudai",
+        "We Cudaiq",
+        "We Cudai"
+      ],
+      "transliterations": {
+        "Buginese": "I Wé Cudai",
+        "etymology": "Borne with the noble female article Wé; princess of the realm of Cina in the La Galigo (Koolhof 1999)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "I We Cudai, princess of the kingdom of Cina, is wooed by the voyaging Sawerigading and becomes his wife and the mother of I La Galigo.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Cina",
+          "script": "Buginese",
+          "rom": "Cina, a legendary Bugis kingdom"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_cina",
+        "name": "to rule as princess of Cina",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "bugis_sawerigading",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ],
+        "notes": "After a long and stormy courtship, I We Cudai becomes the wife of Sawerigading."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "bugis_i_la_galigo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ],
+        "notes": "She is the mother of I La Galigo, the epic's title-figure."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "I We Cudai is the princess of Cina who becomes the wife of Sawerigading and mother of I La Galigo.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "I We Cudai is the princess of the kingdom of Cina and the mirror-double of We Tenriabeng, resembling Sawerigading's forbidden twin so closely that she can lawfully take her place as his bride. The long, tempestuous courtship of Sawerigading and I We Cudai — including the felling of the great Welenrengnge tree to build the ship that carries him to her — is the most celebrated episode of the whole Sureq Galigo. From their union is born I La Galigo, after whom the entire epic cycle is named."
+  },
+  {
+    "id": "bugis_i_la_galigo",
+    "name": {
+      "primary": "I La Galigo, Prince of Luwuq",
+      "alt": [
+        "La Galigo",
+        "I Lagaligo"
+      ],
+      "transliterations": {
+        "Buginese": "I La Galigo",
+        "etymology": "Borne with the noble male article La; the eponymous prince whose name titles the epic cycle (Kern 1939)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Bugis",
+    "primaryTradition": "Bugis",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "bugis_sawerigading",
+      "bugis_we_cudai"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Bugis traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "I La Galigo is born to Sawerigading and I We Cudai and grows into a seafaring prince whose exploits give the great Bugis epic its name.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.A. Kern, Catalogus van de Boegineesche, tot den I La Galigo-cyclus behoorende handschriften der Leidsche Universiteitsbibliotheek (Leiden: Universiteitsbibliotheek, 1939)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "seafaring",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ware",
+          "script": "Buginese",
+          "rom": "Ware, the port-seat of Luwuq"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sirtjo Koolhof, 'The La Galigo: A Bugis Encyclopaedia and its Growth,' Bijdragen tot de Taal-, Land- en Volkenkunde 155/3 (1999): 362-387."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "voyage_the_seas",
+        "name": "to voyage across the seas as a prince-adventurer",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R.A. Kern, Catalogus van de Boegineesche, tot den I La Galigo-cyclus behoorende handschriften der Leidsche Universiteitsbibliotheek (Leiden: Universiteitsbibliotheek, 1939)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "bugis_we_tenriabeng",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ],
+        "notes": "We Tenriabeng, twin of his father Sawerigading, is his paternal aunt within the Luwuq lineage."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "I La Galigo is the son of Sawerigading and I We Cudai and the eponymous hero of the Bugis epic cycle Sureq Galigo.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R.A. Kern, Catalogus van de Boegineesche, tot den I La Galigo-cyclus behoorende handschriften der Leidsche Universiteitsbibliotheek (Leiden: Universiteitsbibliotheek, 1939)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Christian Pelras, The Bugis (Oxford: Blackwell Publishers, 1996), ch. 2."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "I La Galigo is the son of the hero Sawerigading and the princess I We Cudai of Cina, and grandson of Batara Lattuq of Luwuq. Though the sprawling epic cycle bears his name, he is in fact a comparatively late figure within it, a seafaring prince famed for gambling, cockfighting and roving adventures across the archipelago. His birth was marked by his mother's initial rejection of him. In Bugis reckoning he belongs to the last of the wholly divine-descended generations before the gods withdrew and the manurung ancestors of the historical dynasties appeared. The written cycle, Sureq Galigo, is among the longest literary works known."
+  }
+]
+```

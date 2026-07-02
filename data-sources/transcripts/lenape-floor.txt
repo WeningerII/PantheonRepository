@@ -1,0 +1,437 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Lenape
+Era (registered, exact): "Lenape traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three genuinely individuated, named Lenape beings absent from the existing set: Maxa'xâk the Great Horned Serpent (a malevolent underwater manitou), Kichichaxkal the Great Toad or 'Water Keeper' (the Creator-appointed ruler of the waters), and Snow Boy (the fatherless spirit of snow and winter). The serpent and toad are wired to each other as reciprocal enemies over dominion of the waters, and the toad is bound as a subordinate to the existing Creator (Kishelemukong); Snow Boy stands alone as documented. I deliberately excluded Nanapush, which even the recorded modern creation account borrows but which scholarship (native-languages.org, following the Walam Olum critique) identifies as an Anishinaabe culture-hero wrongly transplanted into Lenape tradition, and Rainbow Crow / Mànàka'has, whose Lenape authenticity is denied by the Lenape-Nanticoke Museum as a post-1989 reworking of a Cherokee tale; the earth-bearing Great Turtle was judged a cosmological element rather than an individuated deity. Citations rest on Harrington (1921), Speck (1931), Bierhorst (1995), Kraft (2001), and the Delaware Tribe's recorded creation narrative told by Chief Robert Red Hawk Ruth.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "lenape_maxaxak",
+    "name": {
+      "primary": "Maxa'xâk (the Great Horned Serpent)",
+      "alt": [
+        "Mëxaxkuk",
+        "Maxaxak",
+        "Maxa'xak",
+        "W'axkook",
+        "the Great Snake",
+        "Great Horned Water-Serpent"
+      ],
+      "transliterations": {
+        "Unami": "Maxa'xâk",
+        "etymology": "Generally analyzed as 'Great Snake,' joining a Delaware element for 'great/big' with (a)xkuk 'snake, serpent' (Bierhorst, Mythology of the Lenape, 1995)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lenape",
+    "primaryTradition": "Lenape",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Lenape traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Lenape traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In Lenape belief the Great Horned Serpent dwells beneath lakes and rivers as a malevolent underwater manitou, an embodiment of watery chaos against whom the Thunder Beings defend humankind.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. R. Harrington, Religion and Ceremonies of the Lenape, Museum of the American Indian, Heye Foundation, 1921"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lakes-and-deep-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Bierhorst, Mythology of the Lenape: Guide and Texts, University of Arizona Press, 1995"
+          }
+        ]
+      },
+      {
+        "sphereId": "storms-and-chaos",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. R. Harrington, Religion and Ceremonies of the Lenape, Museum of the American Indian, Heye Foundation, 1921"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lurk_and_devour",
+        "name": "to lurk beneath the water and devour those who venture near",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Bierhorst, Mythology of the Lenape: Guide and Texts, University of Arizona Press, 1995"
+          }
+        ]
+      },
+      {
+        "id": "stir_the_flood",
+        "name": "to stir the waters into destructive floods and storms",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Robert Red Hawk Ruth (Chief), The Lenape Creation Story, Delaware Tribe of Indians (recorded oral narrative)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "lenape_maxaxak_scale",
+        "name": "Horn or scale of the Great Serpent",
+        "kind": "charm",
+        "role": "a fragment of the serpent's body prized as potent hunting and medicine charm by those who obtained it",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Herbert C. Kraft, The Lenape-Delaware Indian Heritage: 10,000 B.C. to A.D. 2000, Lenape Books, 2001"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "lenape_kichichaxkal",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Robert Red Hawk Ruth (Chief), The Lenape Creation Story, Delaware Tribe of Indians (recorded oral narrative)"
+          }
+        ],
+        "notes": "The horned serpent and the Great Toad fought bitterly over which of them would rule the waters of the earth, a struggle that in the creation narrative loosed a world-flood."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Maxa'xâk is the Lenape Great Horned Serpent, a malevolent underwater manitou of the lakes and rivers, opposed by the Thunder Beings and, in the creation account, by the Great Toad.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "M. R. Harrington, Religion and Ceremonies of the Lenape, Museum of the American Indian, Heye Foundation, 1921"
+          },
+          {
+            "kind": "secondary",
+            "reference": "John Bierhorst, Mythology of the Lenape: Guide and Texts, University of Arizona Press, 1995"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Herbert C. Kraft, The Lenape-Delaware Indian Heritage: 10,000 B.C. to A.D. 2000, Lenape Books, 2001"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Maxa'xâk, the Great Horned Serpent, is a powerful and dangerous water being in Lenape tradition, an underwater serpent bearing horns who lurks in deep lakes and devours the unwary. He personifies the chaotic and hostile powers of the waters, and the Thunder Beings are charged by the Creator with protecting people against him and his kind. In the recorded creation narrative he contends with the Great Toad, the appointed keeper of the waters, for mastery over them; their battle ends in mutual destruction and unleashes a great flood upon the young earth. Parts of his body, such as his horns or scales, were regarded as sources of extraordinary medicine power."
+  },
+  {
+    "id": "lenape_kichichaxkal",
+    "name": {
+      "primary": "Kichichaxkal (the Great Toad, Keeper of the Waters)",
+      "alt": [
+        "Kchchaxkal",
+        "Kichichax'kàl",
+        "the Great Toad",
+        "the Great Frog",
+        "Bikanaki'hàt (the Water Keeper)"
+      ],
+      "transliterations": {
+        "Unami": "Kichichaxkal",
+        "etymology": "The name of the giant water-toad in the Lenape creation narrative; he is also titled Bikanaki'hàt, 'the Water Keeper' (Ruth, Delaware Tribe of Indians)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lenape",
+    "primaryTradition": "Lenape",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Lenape traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Lenape traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Lenape creation account the Creator set the Great Toad upon the new earth and gave him charge over all its waters, with power to send rain at his will.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Robert Red Hawk Ruth (Chief), The Lenape Creation Story, Delaware Tribe of Indians (recorded oral narrative)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rain-and-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Robert Red Hawk Ruth (Chief), The Lenape Creation Story, Delaware Tribe of Indians (recorded oral narrative)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "keep_the_waters",
+        "name": "to rule over the earth's waters and send rain at will",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Robert Red Hawk Ruth (Chief), The Lenape Creation Story, Delaware Tribe of Indians (recorded oral narrative)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Bikanaki'hàt",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Robert Red Hawk Ruth (Chief), The Lenape Creation Story, Delaware Tribe of Indians (recorded oral narrative)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "lenape_kishelemukong",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Robert Red Hawk Ruth (Chief), The Lenape Creation Story, Delaware Tribe of Indians (recorded oral narrative)"
+          }
+        ],
+        "notes": "The Great Creator placed the Great Toad on the earth and appointed him to hold authority over its waters, making him a servant-guardian of the created order."
+      },
+      {
+        "kind": "enemy",
+        "personId": "lenape_maxaxak",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Robert Red Hawk Ruth (Chief), The Lenape Creation Story, Delaware Tribe of Indians (recorded oral narrative)"
+          }
+        ],
+        "notes": "The horned serpent coveted the Toad's dominion over the waters, and the two fought a mortal battle that destroyed them both and released the flood."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kichichaxkal, the Great Toad or 'Water Keeper' (Bikanaki'hàt), is the being appointed by the Lenape Creator to rule the waters of the earth and send rain, who dies fighting the horned serpent and thereby looses the great flood.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Robert Red Hawk Ruth (Chief), The Lenape Creation Story, Delaware Tribe of Indians (recorded oral narrative)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "John Bierhorst, Mythology of the Lenape: Guide and Texts, University of Arizona Press, 1995"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kichichaxkal, the Great Toad, is the guardian of the waters in the Lenape creation narrative. The Creator placed him upon the newly formed earth and gave him authority over all its waters, together with the power to make rain fall at his will, so that he is also called Bikanaki'hàt, 'the Water Keeper.' When the horned serpent Maxa'xâk sought to seize this dominion, the Toad tried to swallow him; the two destroyed one another, and the wound the serpent tore in the Toad's side let loose the waters in a world-flood. He is thus a benevolent ordering power of the waters, set in contrast to the chaotic serpent."
+  },
+  {
+    "id": "lenape_snow_boy",
+    "name": {
+      "primary": "Snow Boy (bringer of snow and frost)",
+      "alt": [
+        "the Snow Boy",
+        "the snow child",
+        "helper of Our Grandfather of the North"
+      ],
+      "transliterations": {
+        "Unami": "",
+        "etymology": "Recorded in English as 'Snow Boy'; a winter being linked with the North and with 'Our Grandfather where it is winter' (Harrington 1921)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Lenape",
+    "primaryTradition": "Lenape",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Lenape traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Lenape traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Born to a young woman with no known father, the Snow Boy chilled other children with his touch and was sent off down the river on an ice floe, promising to return each year as the snow.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. R. Harrington, Religion and Ceremonies of the Lenape, Museum of the American Indian, Heye Foundation, 1921"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "winter-and-snow",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. R. Harrington, Religion and Ceremonies of the Lenape, Museum of the American Indian, Heye Foundation, 1921"
+          }
+        ]
+      },
+      {
+        "sphereId": "hunting-and-tracking",
+        "contextTag": "seasonal",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Bierhorst, Mythology of the Lenape: Guide and Texts, University of Arizona Press, 1995"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_snow_and_frost",
+        "name": "to bring snow and killing frost with his touch",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. R. Harrington, Religion and Ceremonies of the Lenape, Museum of the American Indian, Heye Foundation, 1921"
+          }
+        ]
+      },
+      {
+        "id": "lay_snow_for_tracking",
+        "name": "to spread his body as snow so hunters can track game",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John Bierhorst, Mythology of the Lenape: Guide and Texts, University of Arizona Press, 1995"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Snow Boy is a Lenape winter being, a fatherless child who controls snow and frost, to whom offerings were made to secure enough snow for tracking game in the winter hunt.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "M. R. Harrington, Religion and Ceremonies of the Lenape, Museum of the American Indian, Heye Foundation, 1921"
+          },
+          {
+            "kind": "secondary",
+            "reference": "John Bierhorst, Mythology of the Lenape: Guide and Texts, University of Arizona Press, 1995"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Frank G. Speck, A Study of the Delaware Indian Big House Ceremony, Publications of the Pennsylvania Historical Commission, vol. 2, 1931"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Snow Boy is the Lenape spirit of snow and winter cold. In the recorded tale he is born to a young woman with no known father; as an infant he freezes the fingers of other children who anger him, and is finally set adrift down the river on a cake of ice, promising to return each year as the snow. His story carries a double aspect: the harmful side of winter, which numbs and blackens with cold, and its benevolent side, for the snow that is his body spread upon the ground lets hunters follow the tracks of game. He is distinguished from 'Our Grandfather of the North,' who merely supplies the north wind, and offerings were made to Snow Boy to ensure enough snow for the winter hunt."
+  }
+]
+```

@@ -1,0 +1,545 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Choctaw
+Era (registered, exact): "Choctaw traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four genuinely individuated, named beings that the Choctaw ethnographic record documents beyond the existing set: Nalusa Chito / Impa Shilup (the great black soul-eater), Bohpoli / Kowi Anukasha (the invisible forest 'Thrower' who trains medicine men), Hoklonote'she (the thought-reading shape-shifter), and Ishkitini (the horned owl of death omen), each carried by Bushnell (BAE Bulletin 48, 1909), Swanton (BAE Bulletin 103, 1931), Lankford (1987), or Mould (2004). I deliberately excluded Okwa Nahollo ('white people of the water') and the Kowi Anukasha as a whole, since scholarship treats these as spirit-races rather than named individuals, and I excluded Heloha and Melatha (thunder/lightning birds) because their individuated attestation rests essentially on a single modern children's retelling (Harrell 1995) rather than two independent scholarly sources; the shilup/shilombish dual soul was likewise excluded as a concept rather than a being. None of the four added figures has attested genealogy or symmetric kinship in the sources, so all are recorded as standing alone with cited justification.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "choctaw_nalusa_chito",
+    "name": {
+      "primary": "Nalusa Chito (the great black being, the soul-eater)",
+      "alt": [
+        "Nalusa Chito",
+        "Impa Shilup",
+        "Impashilup",
+        "the Soul Eater",
+        "the Great Black Being"
+      ],
+      "transliterations": {
+        "cho": "Nalusa Chito",
+        "etymology": "Choctaw nalusa 'black being' + chito 'big, great'; the alternate name Impa Shilup from impa 'eater' + shilup 'inside soul, ghost', hence 'soul-eater' (Swanton 1931)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Choctaw",
+    "primaryTradition": "Choctaw",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Choctaw traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Choctaw traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Choctaw tradition names Nalusa Chito, also called Impa Shilup, as a great black being that preys on those who yield to dark or despairing thoughts and consumes the inside soul.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, Bureau of American Ethnology Bulletin 103, Smithsonian Institution, Washington, D.C., 1931."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death-and-the-soul",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "shilup",
+          "script": "Latin",
+          "rom": "shilup (the inside soul, ghost)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, Bureau of American Ethnology Bulletin 103, 1931."
+          }
+        ]
+      },
+      {
+        "sphereId": "despair-and-evil-thought",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nalusa",
+          "script": "Latin",
+          "rom": "nalusa (black being)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tom Mould, Choctaw Tales, University Press of Mississippi, Jackson, 2004."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_the_inside_soul",
+        "name": "to creep inside a despairing person and devour the soul",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Attacks are traditionally said to follow when a person entertains evil thoughts or melancholy.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, BAE Bulletin 103, 1931."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Impa Shilup",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tom Mould, Choctaw Tales, University Press of Mississippi, 2004."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Nalusa Chito, also called Impa Shilup, is the Choctaw great black being or soul-eater who enters and consumes the souls of those overtaken by dark or despairing thoughts.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, Bureau of American Ethnology Bulletin 103, Smithsonian Institution, Washington, D.C., 1931."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Tom Mould, Choctaw Tales, University Press of Mississippi, Jackson, 2004."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nalusa Chito, 'the great black being,' is among the most feared entities of Choctaw belief and is also known by the name Impa Shilup, the soul-eater. He is said to seek out people who surrender to evil thoughts, sorrow, or depression, creeping unseen into the person and consuming the shilup, the inner soul that would otherwise travel to the land of the dead. Because of the dread attached to him, many Choctaw people traditionally avoid speaking his name aloud. He belongs to the same family of shadow beings as the long black being of the woods, and reflects a moral teaching that guarding one's mind against despair is a form of spiritual protection."
+  },
+  {
+    "id": "choctaw_bohpoli",
+    "name": {
+      "primary": "Bohpoli (the Thrower, the forest little man)",
+      "alt": [
+        "Bohpoli",
+        "Bahpoli",
+        "Kowi Anukasha",
+        "Kwanokasha",
+        "the Thrower"
+      ],
+      "transliterations": {
+        "cho": "Bohpoli",
+        "etymology": "Bohpoli glossed 'the thrower'; the companion name Kowi Anukasha from kowi 'forest, woods' + anukasha 'dweller within', i.e. 'one who stays in the woods' (Bushnell 1909; Swanton 1931)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Choctaw",
+    "primaryTradition": "Choctaw",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Choctaw traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Choctaw traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Choctaw tradition describes Bohpoli, 'the Thrower', also called Kowi Anukasha, as a small unseen man of the deep woods who startles travelers and secretly instructs prophets and herb-doctors.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David I. Bushnell Jr., The Choctaw of Bayou Lacomb, St. Tammany Parish, Louisiana, Bureau of American Ethnology Bulletin 48, Smithsonian Institution, Washington, D.C., 1909."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "forest-and-wilderness",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kowi",
+          "script": "Latin",
+          "rom": "kowi (forest, woods)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David I. Bushnell Jr., The Choctaw of Bayou Lacomb, BAE Bulletin 48, 1909."
+          }
+        ]
+      },
+      {
+        "sphereId": "medicine-and-herbalism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, BAE Bulletin 103, 1931."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "abduct_and_test_children",
+        "name": "to seize boys who wander into the woods and test their character",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "A boy who chooses the good medicine over the knife or poisonous herbs is destined to become a great doctor.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George E. Lankford, Native American Legends of the Southeast, August House, Little Rock, 1987."
+          }
+        ]
+      },
+      {
+        "id": "throw_stones_unseen",
+        "name": "to throw sticks and stones while remaining invisible",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David I. Bushnell Jr., The Choctaw of Bayou Lacomb, BAE Bulletin 48, 1909."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "choctaw_thrown_stone",
+        "name": "thrown stick or stone",
+        "kind": "emblem",
+        "role": "the token Bohpoli casts unseen to startle passers-by, giving him the name 'the Thrower'",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David I. Bushnell Jr., The Choctaw of Bayou Lacomb, BAE Bulletin 48, 1909."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Kowi Anukasha",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, BAE Bulletin 103, 1931."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Bohpoli, 'the Thrower', also called Kowi Anukasha, is the invisible little man of the deep Choctaw forest who mischievously casts stones at travelers and secretly instructs prophets and herb-doctors, abducting worthy boys to make them medicine men.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "David I. Bushnell Jr., The Choctaw of Bayou Lacomb, St. Tammany Parish, Louisiana, Bureau of American Ethnology Bulletin 48, Smithsonian Institution, Washington, D.C., 1909."
+          },
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, Bureau of American Ethnology Bulletin 103, Smithsonian Institution, 1931."
+          },
+          {
+            "kind": "secondary",
+            "reference": "George E. Lankford, Native American Legends of the Southeast, August House, Little Rock, 1987."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bohpoli, whose name is rendered 'the Thrower,' is the little man of the Choctaw woods, standing only two or three feet tall and living among caves and thick timber. Ordinary people never saw him; he made himself known only by tossing sticks and stones or by sudden noises, and only prophets and herb-doctors claimed his acquaintance, saying he guided them in gathering and compounding their medicines. He is closely identified with Kowi Anukasha, 'the dweller in the woods,' in the widely told account in which he carries off a small boy to his cave, where three ancient white-haired spirits offer the child a knife, a bundle of poisonous plants, and a bundle of true healing herbs; the boy who reaches for the good medicine is marked to become a great doctor of his people. Bohpoli thus stands at the origin of Choctaw doctoring knowledge, a benign but formidable teacher hidden in the forest."
+  },
+  {
+    "id": "choctaw_hoklonoteshe",
+    "name": {
+      "primary": "Hoklonote'she (the shape-shifting spirit that reads the mind)",
+      "alt": [
+        "Hoklonote'she",
+        "Hoklonote",
+        "Hoklonotushe"
+      ],
+      "transliterations": {
+        "cho": "Hoklonote'she"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Choctaw",
+    "primaryTradition": "Choctaw",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Choctaw traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Choctaw traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Choctaw tradition records Hoklonote'she as an evil spirit able to read a person's thoughts and to take on the shape of any bird or animal it wishes.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, Bureau of American Ethnology Bulletin 103, Smithsonian Institution, 1931, p. 195."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "shape-shifting-and-illusion",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Hoklonote'she",
+          "script": "Latin",
+          "rom": "Hoklonote'she"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, BAE Bulletin 103, 1931."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "read_thoughts",
+        "name": "to read the thoughts of a person",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, BAE Bulletin 103, 1931."
+          }
+        ]
+      },
+      {
+        "id": "assume_any_animal_shape",
+        "name": "to take on the form of any bird or animal at will",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Frequently said to appear as an owl.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David I. Bushnell Jr., The Choctaw of Bayou Lacomb, BAE Bulletin 48, 1909."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Hoklonote'she is a Choctaw evil spirit that reads human thoughts and can transform into any bird or animal, often appearing as an owl, prompting medicine people to be consulted to identify it.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, Bureau of American Ethnology Bulletin 103, Smithsonian Institution, Washington, D.C., 1931."
+          },
+          {
+            "kind": "secondary",
+            "reference": "David I. Bushnell Jr., The Choctaw of Bayou Lacomb, St. Tammany Parish, Louisiana, Bureau of American Ethnology Bulletin 48, Smithsonian Institution, 1909."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hoklonote'she is a malevolent Choctaw spirit distinguished by two powers: it can read what a person is thinking, and it can freely assume the form of any bird or animal, most often an owl. Because it could wear any shape, an encounter with a strange or bold animal might in fact be Hoklonote'she, and medicine men and women were consulted to determine whether a given creature was the spirit in disguise. Its ability to know the mind made it especially dangerous, since it could anticipate and thwart a person's intentions, and it belongs to the broad Choctaw category of deceptive, thought-knowing woodland spirits."
+  },
+  {
+    "id": "choctaw_ishkitini",
+    "name": {
+      "primary": "Ishkitini (the horned owl that prowls by night)",
+      "alt": [
+        "Ishkitini",
+        "Ishkitine",
+        "the Horned Owl"
+      ],
+      "transliterations": {
+        "cho": "Ishkitini",
+        "etymology": "Choctaw ishkitini, the great horned owl (Swanton 1931)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Choctaw",
+    "primaryTradition": "Choctaw",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Choctaw traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Choctaw traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Choctaw tradition holds that Ishkitini, the horned owl, prowls at night killing men and animals, and that its screech foretells a sudden or violent death.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, Bureau of American Ethnology Bulletin 103, Smithsonian Institution, 1931."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "omens-of-death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ishkitini",
+          "script": "Latin",
+          "rom": "ishkitini (horned owl)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, BAE Bulletin 103, 1931."
+          }
+        ]
+      },
+      {
+        "sphereId": "night-and-predation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David I. Bushnell Jr., The Choctaw of Bayou Lacomb, BAE Bulletin 48, 1909."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "foretell_sudden_death",
+        "name": "to foretell a sudden or violent death by its screech",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, BAE Bulletin 103, 1931."
+          }
+        ]
+      },
+      {
+        "id": "prowl_and_kill_by_night",
+        "name": "to prowl by night killing men and animals",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, BAE Bulletin 103, 1931."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Ishkitini",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, BAE Bulletin 103, 1931."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ishkitini, the great horned owl, is the most ominous of the Choctaw omen-owls, believed to roam at night killing men and animals and to announce sudden or violent death when it screeches.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "John R. Swanton, Source Material for the Social and Ceremonial Life of the Choctaw Indians, Bureau of American Ethnology Bulletin 103, Smithsonian Institution, Washington, D.C., 1931."
+          },
+          {
+            "kind": "secondary",
+            "reference": "David I. Bushnell Jr., The Choctaw of Bayou Lacomb, St. Tammany Parish, Louisiana, Bureau of American Ethnology Bulletin 48, Smithsonian Institution, 1909."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ishkitini is the great horned owl of Choctaw belief, singled out from the other owls of ill omen as an active and dangerous nocturnal being rather than a mere sign. It was said to prowl the darkness killing both men and animals, and its screech was heard as a warning of sudden death, often understood specifically as a murder. Choctaw tradition ranked the omen-birds by degree: while the screech owl foretold the death of a young child and the common hooting owl warned of death among near relatives, Ishkitini's cry marked the gravest and most violent end, giving it a place among the feared night powers of the Choctaw world."
+  }
+]
+```

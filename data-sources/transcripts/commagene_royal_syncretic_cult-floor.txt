@@ -1,0 +1,217 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Commagene royal syncretic cult
+Era (registered, exact): "hellenistic-commagene-royal-cult"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added one genuinely individuated figure: Mithridates I Kallinikos (r. c. 109–70 BCE), Antiochos I's father and founder-king of independent Commagene, who initiated the dynasty's Graeco-Iranian cult reforms and was posthumously deified with his own hierothesion and cult-foundation inscription at Arsameia on the Nymphaios — a distinct individuated cult recipient documented by Waldmann (1973), Dörner & Goell's excavation report (1963), Versluys (2017), and Sullivan (1977), and wired into the pantheon as father-of the existing Antiochos I Theos. No further figures qualified: the four great syncretic gods, Commagene the Fatherland, and Antiochos himself are already in the corpus, while the extensive Nemrud Dağı ancestor galleries (the paternal Achaemenid line from Darius I and the maternal Seleucid line, including Laodice VII Thea) are collective genealogical honorands rather than individuated deities with their own sanctuaries, so authoring them would violate the no-vague-classes rule.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "commagene_royal_syncretic_cult_mithridates_i_kallinikos",
+    "name": {
+      "primary": "Mithridates I Kallinikos of Commagene",
+      "alt": [
+        "Mithradates I Kallinikos",
+        "Mithridates I Callinicus",
+        "Mithradates Kallinikos"
+      ],
+      "transliterations": {
+        "grc": "Μιθραδάτης Καλλίνικος",
+        "etymology": "Greek Μιθραδάτης renders Old Iranian *Miθradāta- 'given by Mithra' (the god Miθra + dāta 'given'); the cult epithet Καλλίνικος means 'gloriously victorious'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Commagene royal syncretic cult",
+    "primaryTradition": "Commagene royal syncretic cult",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "hellenistic-commagene-royal-cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "hellenistic-commagene-royal-cult",
+        "eraOrdering": 0,
+        "startEvent": "Reigning as king of Commagene about 109 to 70 BCE, Mithridates I Kallinikos initiated the dynasty's fusion of Greek and Iranian worship and was posthumously enshrined among the gods by his son Antiochos I in the hierothesion at Arsameia on the Nymphaios.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Helmut Waldmann, Die kommagenischen Kultreformen unter König Mithradates I. Kallinikos und seinem Sohne Antiochos I. (Études préliminaires aux religions orientales dans l'empire romain 34), Leiden: Brill, 1973."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Miguel John Versluys, Visual Style and Constructing Identity in the Hellenistic World: Nemrud Dağ and Commagene under Antiochos I, Cambridge: Cambridge University Press, 2017."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "dynastic-ancestor-cult",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ἱεροθέσιον",
+          "script": "Greek",
+          "rom": "hierothesion"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Friedrich Karl Dörner and Theresa Goell, Arsameia am Nymphaios: Die Ausgrabungen im Hierothesion des Mithradates Kallinikos von 1953–1956 (Istanbuler Forschungen 23), Berlin: Gebr. Mann, 1963."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Miguel John Versluys, Visual Style and Constructing Identity in the Hellenistic World: Nemrud Dağ and Commagene under Antiochos I, Cambridge: Cambridge University Press, 2017."
+          }
+        ]
+      },
+      {
+        "sphereId": "royal-legitimacy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Richard D. Sullivan, 'The Dynasty of Commagene,' in Aufstieg und Niedergang der römischen Welt II.8, Berlin: De Gruyter, 1977, pp. 732–798."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Helmut Waldmann, Die kommagenischen Kultreformen unter König Mithradates I. Kallinikos und seinem Sohne Antiochos I., Leiden: Brill, 1973."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sanctify_royal_succession",
+        "name": "to sanctify the royal succession of Commagene",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As deified founder of the dynasty he legitimizes his descendants' twin claim of descent from the Achaemenid Persian kings and from Alexander and the Seleucids.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Miguel John Versluys, Visual Style and Constructing Identity in the Hellenistic World: Nemrud Dağ and Commagene under Antiochos I, Cambridge: Cambridge University Press, 2017."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Richard D. Sullivan, 'The Dynasty of Commagene,' in Aufstieg und Niedergang der römischen Welt II.8, Berlin: De Gruyter, 1977."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "commagene_royal_syncretic_cult_arsameia_dexiosis_relief",
+        "name": "Arsameia dexiosis relief",
+        "kind": "relief",
+        "role": "Monumental rock-cut stele on which a Commagenian king clasps the right hand of a god (Herakles-Artagnes) in the dexiosis gesture of fellowship between ruler and deity.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Friedrich Karl Dörner and Theresa Goell, Arsameia am Nymphaios: Die Ausgrabungen im Hierothesion des Mithradates Kallinikos von 1953–1956, Berlin: Gebr. Mann, 1963."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Miguel John Versluys, Visual Style and Constructing Identity in the Hellenistic World: Nemrud Dağ and Commagene under Antiochos I, Cambridge: Cambridge University Press, 2017."
+          }
+        ]
+      },
+      {
+        "id": "commagene_royal_syncretic_cult_arsameia_nomos_inscription",
+        "name": "Arsameia cult inscription (nomos)",
+        "kind": "inscription",
+        "role": "The great Greek cult-law stele beside the tunnel at Arsameia, in which Antiochos I records the sacred foundation and offerings honouring his deified father Mithridates Kallinikos.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Helmut Waldmann, Die kommagenischen Kultreformen unter König Mithradates I. Kallinikos und seinem Sohne Antiochos I., Leiden: Brill, 1973."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Friedrich Karl Dörner and Theresa Goell, Arsameia am Nymphaios, Berlin: Gebr. Mann, 1963."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Καλλίνικος",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Richard D. Sullivan, 'The Dynasty of Commagene,' in Aufstieg und Niedergang der römischen Welt II.8, Berlin: De Gruyter, 1977, pp. 732–798."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Helmut Waldmann, Die kommagenischen Kultreformen unter König Mithradates I. Kallinikos und seinem Sohne Antiochos I., Leiden: Brill, 1973."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "commagene_royal_syncretic_cult_antiochus_i_theos",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Miguel John Versluys, Visual Style and Constructing Identity in the Hellenistic World: Nemrud Dağ and Commagene under Antiochos I, Cambridge: Cambridge University Press, 2017."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Richard D. Sullivan, 'The Dynasty of Commagene,' in Aufstieg und Niedergang der römischen Welt II.8, Berlin: De Gruyter, 1977."
+          }
+        ],
+        "notes": "Father of Antiochos I Theos of Commagene, who buried him in the hierothesion at Arsameia and instituted his cult as a deified ancestor of the royal syncretic pantheon."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mithridates I Kallinikos (reigned about 109 to 70 BCE) was the founder-king of independent Commagene and the deified royal ancestor whose Graeco-Iranian cult reforms his son Antiochos I monumentalized, enshrining him in the hierothesion at Arsameia on the Nymphaios.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Helmut Waldmann, Die kommagenischen Kultreformen unter König Mithradates I. Kallinikos und seinem Sohne Antiochos I. (EPRO 34), Leiden: Brill, 1973."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Friedrich Karl Dörner and Theresa Goell, Arsameia am Nymphaios: Die Ausgrabungen im Hierothesion des Mithradates Kallinikos von 1953–1956 (Istanbuler Forschungen 23), Berlin: Gebr. Mann, 1963."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Miguel John Versluys, Visual Style and Constructing Identity in the Hellenistic World: Nemrud Dağ and Commagene under Antiochos I, Cambridge: Cambridge University Press, 2017."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Richard D. Sullivan, 'The Dynasty of Commagene,' in Aufstieg und Niedergang der römischen Welt II.8, Berlin: De Gruyter, 1977, pp. 732–798."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mithridates I Kallinikos was king of Commagene in the early first century BCE and the father of Antiochos I Theos. Married to the Seleucid princess Laodice VII Thea, he consolidated the small Euphrates kingdom's independence and began the deliberate blending of Greek and Iranian religion that his son would raise to full monumental expression at Nemrud Dağı. After his death he was worshipped as a deified ancestor: Antiochos I built for him the hierothesion at Arsameia on the Nymphaios, a rock-cut sanctuary combining reliefs, a monumental tunnel, and the longest surviving Greek inscription from Commagene, which fixed the offerings and priesthood devoted to his cult. On the dexiosis reliefs there the Commagenian king is shown clasping hands with the gods as their peer, proclaiming the divine standing of the royal house. He is honoured under the epithet Kallinikos, 'gloriously victorious.'"
+  }
+]
+```

@@ -1,0 +1,387 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Evenki
+Era (registered, exact): "mythic-age"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two genuinely individuated, well-attested figures absent from the existing set: Agdy, the Evenki personification of thunder (the 'old man/lord of thunder' and the iron, fiery-eyed thunder-birds, famously invoked in oral explanations of the 1908 Tunguska event), and Enekan Togo, 'grandmother-fire', the named spirit-mistress of the household hearth. Enekan Togo is wired to the existing pantheon as subordinate to the sky-grandmother Buga (Enekan Buga), whose hearth-level representative she is; Agdy is honestly left solitary because scholarship attaches it to shamans and the lower-world thunder-ancestors rather than to any attested parentage or symmetric bond. I deliberately excluded weaker candidates: the sun (dylacha) and moon (bega) appear as ordinary words rather than clearly personified named deities, and the water-, taiga-, and animal-'masters' are spirit classes (musun/ejen) without a single attested proper name, so including them would be padding. Sources checked include Vasilevich (1969), Anisimov (1959/1963 Michael translation), Shirokogoroff (1935), and Ol'khovatov (2023).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "evenki_agdy",
+    "name": {
+      "primary": "Agdy",
+      "alt": [
+        "Agdy",
+        "Agdi",
+        "Ogdy",
+        "Old Man of Thunder",
+        "Lord of Thunder",
+        "Thunderbird"
+      ],
+      "transliterations": {
+        "evenki": "agdy",
+        "etymology": "Evenki agdy 'thunder', used simultaneously for the noise of the sky, the personified old man/lord who commands it, and the iron thunder-birds whose flight produces the storm (Vasilevich 1969)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Evenki",
+    "primaryTradition": "Evenki",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "In Evenki belief thunder and lightning are called agdy, at once the sky-noise, the old man who is its lord, and the iron thunder-birds with fiery eyes whose flight above the earth causes the storm.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder-and-storm",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "agdy",
+          "script": "Latin",
+          "rom": "thunder"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          }
+        ]
+      },
+      {
+        "sphereId": "lightning",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "agdy",
+          "script": "Latin",
+          "rom": "lightning-flash of the thunder-bird's eyes"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ol'khovatov, A. Yu. (2023). The Evenki accounts of the 1908 Tunguska event collected in 1920s–1930s. arXiv:2402.10900."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl_thunder_and_lightning",
+        "name": "to hurl thunder and cast lightning across the sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The thunder arises from the flight of the iron agdy-birds, whose fiery eyes flash as lightning.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          }
+        ]
+      },
+      {
+        "id": "answer_the_shaman_against_enemies",
+        "name": "to answer a shaman's call and strike down an enemy clan",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Because the ancestors of the thunder dwell in the lower world where shamans' souls also reside, a hostile shaman was believed able to summon the agdy against those he hated; Evenki tradition ascribed the 1908 Tunguska blast to such an act.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ol'khovatov, A. Yu. (2023). The Evenki accounts of the 1908 Tunguska event collected in 1920s–1930s. arXiv:2402.10900."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "evenki_agdy_iron_bird",
+        "name": "Iron thunder-bird",
+        "kind": "emblem",
+        "role": "The bodily form of the agdy: birds the size of black grouse, bodies of iron and eyes of fire, whose passage above the earth is heard as thunder.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "agdy",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Agdy is the Evenki personification of thunder — the old man or lord of the storm and the flock of iron, fiery-eyed thunder-birds whose flight makes the thunder, bound to shamans who could summon it against their enemies.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ol'khovatov, A. Yu. (2023). The Evenki accounts of the 1908 Tunguska event collected in 1920s–1930s. arXiv:2402.10900."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anisimov, A. F. (1963). Cosmological Concepts of the Peoples of the North. In H. N. Michael (ed.), Studies in Siberian Shamanism. Toronto: University of Toronto Press for the Arctic Institute of North America."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Agdy is the Evenki term and personification for thunder. Ethnographers record that the single word agdy names at once the sound of the storm, an old man who is lord of the thunder, and the iron thunder-birds — described as no larger than black grouse, their bodies of iron and their eyes of fire — whose flight above the earth is heard as thunder and whose flashing eyes are the lightning. The thunder-ancestors were said to dwell in the lower world alongside the souls of shamans, and certain shamans were thought to be friends of the thunder, able to send the agdy to destroy a rival clan; Evenki oral tradition famously attributed the 1908 Tunguska explosion to a shaman dispatching the thunder against enemies. Agdy thus stands somewhat apart from the creator lineage, belonging instead to the storm-sky and to the intimate, dangerous compact between thunder and the shaman."
+  },
+  {
+    "id": "evenki_enekan_togo",
+    "name": {
+      "primary": "Enekan Togo",
+      "alt": [
+        "Enekan Togo",
+        "Grandmother Fire",
+        "Togo Musunin",
+        "Togo",
+        "Fire-Mistress"
+      ],
+      "transliterations": {
+        "evenki": "enekan togo",
+        "etymology": "Evenki enekan 'grandmother' + togo 'fire'; the hearth-fire's animating spirit is called togo musunin, 'the musun (vital force) of the fire' (Shirokogoroff 1935; Vasilevich 1969)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Evenki",
+    "primaryTradition": "Evenki",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "The living spirit of the household fire, envisioned as an old woman — grandmother-fire, enekan togo — dwells in every hearth and is treated as a member of the family who must be fed and honoured.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shirokogoroff, S. M. (1935). Psychomental Complex of the Tungus. London: Kegan Paul, Trench, Trubner & Co."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire-and-hearth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "togo",
+          "script": "Latin",
+          "rom": "fire"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          }
+        ]
+      },
+      {
+        "sphereId": "divination-and-foretelling",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "musun",
+          "script": "Latin",
+          "rom": "vital / motive force animating the fire"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anisimov, A. F. (1963). The Shaman's Tent of the Evenks and the Origin of the Shamanistic Rite. In H. N. Michael (ed.), Studies in Siberian Shamanism. Toronto: University of Toronto Press for the Arctic Institute of North America."
+          }
+        ]
+      },
+      {
+        "sphereId": "purification",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "togo",
+          "script": "Latin",
+          "rom": "purifying fire"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shirokogoroff, S. M. (1935). Psychomental Complex of the Tungus. London: Kegan Paul, Trench, Trubner & Co."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "foretell_in_the_flames",
+        "name": "to foretell the future through the crackling and behaviour of the flames",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Evenki listened to the hearth-fire's sounds and sparks as omens; grandmother-fire was believed to know and reveal what was to come.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          }
+        ]
+      },
+      {
+        "id": "drive_out_evil_spirits",
+        "name": "to drive out evil spirits and cleanse the dwelling",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Fire was held to possess power to expel harmful spirits, and the hearth was used to purify the tent, people, and belongings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anisimov, A. F. (1963). The Shaman's Tent of the Evenks and the Origin of the Shamanistic Rite. In H. N. Michael (ed.), Studies in Siberian Shamanism. Toronto: University of Toronto Press for the Arctic Institute of North America."
+          }
+        ]
+      },
+      {
+        "id": "carry_offerings_to_the_sky",
+        "name": "to carry the family's offerings and reports upward to the sky-grandmother",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The hearth-fire received the first and finest portion of every meal and served as the household's channel to the higher powers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shirokogoroff, S. M. (1935). Psychomental Complex of the Tungus. London: Kegan Paul, Trench, Trubner & Co."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "evenki_enekan_togo_hearth",
+        "name": "The household hearth",
+        "kind": "emblem",
+        "role": "The living seat of grandmother-fire, fed the best of every meal and protected by prohibitions — one must not spit on it, strike it with iron, or thrust a knife-blade toward it lest her eyes be put out.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "enekan togo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shirokogoroff, S. M. (1935). Psychomental Complex of the Tungus. London: Kegan Paul, Trench, Trubner & Co."
+          }
+        ]
+      },
+      {
+        "original": "togo musunin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "evenki_buga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shirokogoroff, S. M. (1935). Psychomental Complex of the Tungus. London: Kegan Paul, Trench, Trubner & Co."
+          }
+        ],
+        "notes": "Grandmother-fire was regarded as the local representative and most revered helper of the sky-grandmother Enekan Buga, present in each hearth and relaying the family's honour and needs upward."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Enekan Togo, 'grandmother-fire', is the Evenki spirit-mistress of the household hearth — an androgynous but grandmother-named being who lives in the fire, foretells the future, drives out evil, demands the best of every meal, and serves as the hearth-representative of the sky-grandmother.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Shirokogoroff, S. M. (1935). Psychomental Complex of the Tungus. London: Kegan Paul, Trench, Trubner & Co."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Vasilevich, G. M. (1969). Evenki: Istoriko-etnograficheskie ocherki (XVIII – nachalo XX v.). Leningrad: Nauka."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anisimov, A. F. (1963). The Shaman's Tent of the Evenks and the Origin of the Shamanistic Rite. In H. N. Michael (ed.), Studies in Siberian Shamanism. Toronto: University of Toronto Press for the Arctic Institute of North America."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Enekan Togo — 'grandmother-fire' — is the personified spirit of the household fire in Evenki belief. The vital force animating the hearth was called togo musunin, placing fire among the beings that possess musun, the motive energy of all living things. Though addressed with a feminine, grandmotherly name, the fire-spirit was often understood as androgynous. She was treated as a living member of the household: given the first and best portion of each meal, consulted for omens read in the crackle and sparks of the flames, and relied upon to purify the dwelling and expel harmful spirits. A dense web of prohibitions guarded her — one must not spit into the fire, cut it or strike it with iron, or point a knife-blade at the flames, an act understood as putting out the grandmother's eyes. Ethnographers describe her as the hearth-level representative and most honoured helper of the celestial grandmother Enekan Buga, making the family fire the everyday link between the household and the sky."
+  }
+]
+```

@@ -1,0 +1,666 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Berber
+Era (registered, exact): "antiquity"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added six individuated, epigraphically or textually attested Berber deities absent from the existing set: Bonchor (central god of the Dii Mauri relief at Vaga/Beja), Aulisua (the widely-attested Mauretanian protective god called deus sanctus), Ieru (a Numidian moon-god whose name preserves Berber ayyur), Bacax (the cave-god of Thibilis with a dated Roman dedication series), and Mastiman and Sinifere (the death-god and war-god named alongside Gurzil in Corippus' Iohannis). Mastiman and Sinifere are wired to each other as companions because Corippus catalogues them together among the eastern Libyan (Laguatan) gods, and their prose notes tie them to the existing figure Gurzil; the four other newcomers are attested only as isolated cult-names and are therefore recorded as solitary. I deliberately excluded the remaining Dii Mauri names (Macurtam, Iunam, Vihinam, Varsissima, Matilam) that survive merely as labels in a group list without individuating attributes, and the poorly-secured Ierna, who is a mortal chieftain-priest rather than a god; each new figure carries at least two real scholarly or primary citations (Camps 1954, Benabou 1976, Gsell 1913-1928, the Encyclopedie berbere, CIL VIII, Corippus ed. Diggle-Goodyear 1970, Moderan 2003, Merrills 2023).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "berber_bonchor",
+    "name": {
+      "primary": "Bonchor",
+      "alt": [
+        "Bonchar",
+        "Bonchor Augustus"
+      ],
+      "transliterations": {
+        "libyan": "Bonchor",
+        "etymology": "Libyco-Berber theonym of debated etymology, known from the third-century Latin dedication of the Dii Mauri at Vaga (Camps 1954)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "antiquity"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "antiquity",
+        "eraOrdering": 0,
+        "startEvent": "Bonchor is named and figured at the centre of the third-century dedication and bas-relief of the seven Dii Mauri from Vaga (modern Beja, Tunisia), occupying the place of honour and holding a scepter.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, 'L'inscription de Beja et le probleme des Dii Mauri,' Revue africaine 98 (1954): 233-260."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "chief-of-the-moorish-gods",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, 'L'inscription de Beja et le probleme des Dii Mauri,' Revue africaine 98 (1954): 233-260."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_over_moorish_gods",
+        "name": "to preside over the assembly of the Moorish gods",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marcel Benabou, La resistance africaine a la romanisation (Paris: Francois Maspero, 1976)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "berber_bonchor_scepter",
+        "name": "Scepter",
+        "kind": "regalia",
+        "role": "Sign of Bonchor's pre-eminence, held in his hand at the centre of the Beja relief.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, 'L'inscription de Beja et le probleme des Dii Mauri,' Revue africaine 98 (1954): 233-260."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Bonchor is the central and evidently pre-eminent god of the Dii Mauri, the group of seven Moorish deities named on the third-century dedication and bas-relief from Vaga (Beja) in Roman Africa.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, 'L'inscription de Beja et le probleme des Dii Mauri,' Revue africaine 98 (1954): 233-260."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marcel Benabou, La resistance africaine a la romanisation (Paris: Francois Maspero, 1976)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bonchor is the leading figure of the Dii Mauri, the indigenous 'Moorish gods' whose collective cult survived under Roman rule in Numidia and the Proconsular province. He is best known from a third-century relief and Latin dedication found at Vaga (modern Beja, Tunisia), now in the Bardo Museum, where seven deities are carved together: Bonchor stands in the centre holding a scepter, flanked by the goddesses Vihinam and Varsissima, the healer Macurgum and the god Matilam, with the horsemen Macurtam and Iunam at the edges. His central placement and regalia mark him as the head of this local pantheon, though the meaning of his name remains uncertain."
+  },
+  {
+    "id": "berber_aulisua",
+    "name": {
+      "primary": "Aulisua",
+      "alt": [
+        "Aulisva",
+        "Deus Sanctus Aulisua"
+      ],
+      "transliterations": {
+        "libyan": "Aulisua",
+        "etymology": "Berber theonym of uncertain etymology, attested only in Latin dedications of Mauretania (Camps; Benabou 1976)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "antiquity"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "antiquity",
+        "eraOrdering": 0,
+        "startEvent": "Aulisua is honoured as deus sanctus in a small group of Latin inscriptions from Pomaria and Ain Khial in Mauretania Caesariensis and from Volubilis in Mauretania Tingitana during the second and third centuries CE.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marcel Benabou, La resistance africaine a la romanisation (Paris: Francois Maspero, 1976)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marcel Benabou, La resistance africaine a la romanisation (Paris: Francois Maspero, 1976)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_worshippers",
+        "name": "to protect worshippers and communities from harm",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marcel Benabou, La resistance africaine a la romanisation (Paris: Francois Maspero, 1976)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Sanctus",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marcel Benabou, La resistance africaine a la romanisation (Paris: Francois Maspero, 1976)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Aulisua is a major Mauretanian god attested as deus sanctus by inscriptions across both Caesariensis and Tingitana, the indigenous Berber deity with the widest attested territory outside the official Roman pantheon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Marcel Benabou, La resistance africaine a la romanisation (Paris: Francois Maspero, 1976)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Aulisua,' Encyclopedie berbere (Aix-en-Provence: Edisud)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Aulisua is among the best-attested indigenous gods of Roman Mauretania, named in about five Latin dedications that qualify him as sanctus ('holy'). Three of these were set up at Pomaria and Ain Khial by an officer of the ala of Pomarienses explorers, troops recruited among the local Moors, which once suggested a warrior god; but a further text from Volubilis, dedicated by a freedman shoemaker, shows him rather as a broad protective and tutelary deity of the Mauri. His unusually wide geographic spread, from Caesariensis to Tingitana, makes him the most territorially significant of the native Berber gods known from epigraphy."
+  },
+  {
+    "id": "berber_ieru",
+    "name": {
+      "primary": "Ieru, the Moon-god",
+      "alt": [
+        "Ieru",
+        "Ior",
+        "Iuru"
+      ],
+      "transliterations": {
+        "berber": "ayyur",
+        "tifinagh": "ⰰⱢⱢⱓⱣ",
+        "etymology": "The theonym Ieru corresponds to Berber ayyur, archaic (y)yur, 'moon' (Camps)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "antiquity"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "antiquity",
+        "eraOrdering": 0,
+        "startEvent": "Ieru is named in a Roman-period rock inscription at Guechguech in Numidia, surmounted by an engraving of a radiate head of the type used for astral divinities.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Ieru,' Encyclopedie berbere (Aix-en-Provence: Edisud)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ayyur",
+          "script": "Tifinagh",
+          "rom": "ayyur"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Ieru,' Encyclopedie berbere (Aix-en-Provence: Edisud)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_the_moon",
+        "name": "to govern the moon and the night sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Ieru,' Encyclopedie berbere (Aix-en-Provence: Edisud)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "berber_ieru_radiate_head",
+        "name": "Radiate head",
+        "kind": "emblem",
+        "role": "In the Guechguech relief Ieru is shown with a radiated head, marking his astral, lunar nature.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Ieru,' Encyclopedie berbere (Aix-en-Provence: Edisud)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ieru is an ancient Berber moon-god known from a Numidian rock inscription, his name preserving the Berber word for the moon (ayyur).",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Ieru,' Encyclopedie berbere (Aix-en-Provence: Edisud)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stephane Gsell, Histoire ancienne de l'Afrique du Nord, 8 vols. (Paris: Hachette, 1913-1928)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ieru is a Berber lunar deity attested by a Roman-period rock inscription at Guechguech in Numidia, above which is carved a human head with a radiate crown, the standard iconography of an astral god. His name is philologically linked by Gabriel Camps to the Berber word for the moon, ayyur (archaic (y)yur), making him a rare named embodiment of the moon-worship that ancient writers ascribed to the Libyans: Herodotus (Histories 4.188) reports that the Libyans sacrificed to the sun and the moon, and Ibn Khaldun likewise recalls Berber veneration of these luminaries. Ieru thus provides an individuated cultic name for the widely noted but otherwise anonymous Berber cult of the moon."
+  },
+  {
+    "id": "berber_bacax",
+    "name": {
+      "primary": "Bacax",
+      "alt": [
+        "Bacax Augustus"
+      ],
+      "transliterations": {
+        "libyan": "Bacax",
+        "etymology": "Indigenous Libyco-Berber theonym; the Latin form Bacax echoes Bacchus only by assonance, the cult itself being native (Camps)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "antiquity"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "antiquity",
+        "eraOrdering": 0,
+        "startEvent": "Bacax was worshipped in the grotto of Djebel Taya near Thibilis, where the two annual magistrates of the town engraved dedications to Bacax Augustus during a springtime pilgrimage between about 210 and 284 CE.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Bacax,' Encyclopedie berbere, vol. 9 (Aix-en-Provence: Edisud, 1991)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-caves",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Bacax,' Encyclopedie berbere, vol. 9 (Aix-en-Provence: Edisud, 1991)."
+          }
+        ]
+      },
+      {
+        "sphereId": "spring-vegetation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Bacax,' Encyclopedie berbere, vol. 9 (Aix-en-Provence: Edisud, 1991)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_over_grotto",
+        "name": "to preside over the sacred grotto and the return of spring growth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Bacax,' Encyclopedie berbere, vol. 9 (Aix-en-Provence: Edisud, 1991)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Bacax Augustus",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Corpus Inscriptionum Latinarum, vol. VIII, nos. 5504-5519 and 18828-18857 (dedications from the grotto of Djebel Taya, Thibilis)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Bacax is an indigenous Berber cave-god of the territory of Thibilis in Numidia, worshipped through an annual springtime pilgrimage and sacrifice led by the town's two chief magistrates during the Roman period.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gabriel Camps, s.v. 'Bacax,' Encyclopedie berbere, vol. 9 (Aix-en-Provence: Edisud, 1991)."
+          },
+          {
+            "kind": "primary",
+            "reference": "Corpus Inscriptionum Latinarum, vol. VIII, nos. 5504-5519 and 18828-18857 (dedications from the grotto of Djebel Taya, Thibilis)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bacax is a native Berber deity of caves and vegetation whose cult is unusually well documented by epigraphy. His sanctuary was the Ghar el Djemaa, a large cavern in Djebel Taya above the Roman town of Thibilis (Announa, Algeria). Each spring the two annually elected magistri of Thibilis made a pilgrimage to the grotto and engraved a dated dedication to 'Bacax Augustus'; the surviving series runs from roughly 210 to 284 CE, with celebrations falling around 31 March or 1 May, tied to the growth season of cereals and pasture. Although the Latinized name resembles Bacchus, scholars regard the god as thoroughly indigenous, a local numen of the sacred mountain and its life-renewing spring."
+  },
+  {
+    "id": "berber_mastiman",
+    "name": {
+      "primary": "Mastiman",
+      "alt": [
+        "Mastigan",
+        "Autiman"
+      ],
+      "transliterations": {
+        "libyan": "Mastiman",
+        "etymology": "Berber theonym recorded by Corippus; etymology uncertain, perhaps containing a root for 'lord' or 'master' (Modern discussion in Modern scholarship)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "antiquity"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "antiquity",
+        "eraOrdering": 0,
+        "startEvent": "Mastiman is invoked in Corippus' sixth-century epic Iohannis among the gods of the Laguatan confederation, presented as a dread power to whom human victims were offered.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Corippus, Iohannis seu De bellis Libycis, ed. James Diggle and F. R. D. Goodyear (Cambridge: Cambridge University Press, 1970)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death-and-underworld",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Yves Moderan, Les Maures et l'Afrique romaine (IVe-VIIe siecle) (Rome: Ecole francaise de Rome, 2003)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_the_dead",
+        "name": "to receive the dead and to claim human sacrifice",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Yves Moderan, Les Maures et l'Afrique romaine (IVe-VIIe siecle) (Rome: Ecole francaise de Rome, 2003)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "berber_sinifere",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andy Merrills, War, Rebellion and Epic in Byzantine North Africa: A Historical Study of Corippus' Iohannis (Cambridge: Cambridge University Press, 2023)."
+          }
+        ],
+        "notes": "Corippus names Mastiman and Sinifere together among the deities invoked by the Laguatan and Austur confederations of eastern Libya."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mastiman is a Berber deity named by Corippus among the gods of the Laguatan, interpreted as a god of death or the underworld, sometimes equated by Roman writers with Dis, to whom human victims were offered.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Yves Moderan, Les Maures et l'Afrique romaine (IVe-VIIe siecle) (Rome: Ecole francaise de Rome, 2003)."
+          },
+          {
+            "kind": "primary",
+            "reference": "Corippus, Iohannis seu De bellis Libycis, ed. James Diggle and F. R. D. Goodyear (Cambridge: Cambridge University Press, 1970)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mastiman is one of the Berber gods named in the Iohannis of Corippus, the Latin epic on the Byzantine wars against the Moors in the 540s CE. He belongs to the religious world of the Laguatan (Louata) confederation of Tripolitania and Cyrenaica, alongside the bull-god Gurzil and the war-god Sinifere. Corippus casts him as a grim, chthonic power associated with death and the underworld, before whom human sacrifices were performed, and the poet assimilates him to the Roman god of the dead. Modern scholarship treats him as a genuine indigenous deity of the eastern Berbers rather than a mere literary invention, even if the darker details are coloured by Corippus' hostile Christian perspective."
+  },
+  {
+    "id": "berber_sinifere",
+    "name": {
+      "primary": "Sinifere",
+      "alt": [
+        "Synefere"
+      ],
+      "transliterations": {
+        "libyan": "Sinifere",
+        "etymology": "Berber theonym recorded by Corippus; etymology unknown."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "antiquity"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "antiquity",
+        "eraOrdering": 0,
+        "startEvent": "Sinifere is named in Corippus' Iohannis as a war-god worshipped by the eastern Libyan (Laguatan and Austur) tribes.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Corippus, Iohannis seu De bellis Libycis, ed. James Diggle and F. R. D. Goodyear (Cambridge: Cambridge University Press, 1970)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andy Merrills, War, Rebellion and Epic in Byzantine North Africa: A Historical Study of Corippus' Iohannis (Cambridge: Cambridge University Press, 2023)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_victory",
+        "name": "to grant victory in battle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andy Merrills, War, Rebellion and Epic in Byzantine North Africa: A Historical Study of Corippus' Iohannis (Cambridge: Cambridge University Press, 2023)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "berber_mastiman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andy Merrills, War, Rebellion and Epic in Byzantine North Africa: A Historical Study of Corippus' Iohannis (Cambridge: Cambridge University Press, 2023)."
+          }
+        ],
+        "notes": "Corippus lists Sinifere and Mastiman together among the deities of the eastern Libyan confederations."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sinifere is a Berber war-god named by Corippus among the deities of the eastern Libyan tribes, probably a tutelary or tribal god of the Laguatan confederation.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Yves Moderan, Les Maures et l'Afrique romaine (IVe-VIIe siecle) (Rome: Ecole francaise de Rome, 2003)."
+          },
+          {
+            "kind": "primary",
+            "reference": "Corippus, Iohannis seu De bellis Libycis, ed. James Diggle and F. R. D. Goodyear (Cambridge: Cambridge University Press, 1970)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sinifere is a Berber war-god known only from the Iohannis of Corippus, where he appears among the gods invoked by the eastern Libyan tribes during their sixth-century revolts against Byzantium. He is grouped with the bull-god Gurzil and the death-god Mastiman as one of the martial deities of the Laguatan and Austur confederations. Because he is attested by this single source, some scholars suspect he may have been a local or tribal god rather than a widely shared divinity, but he is nonetheless a distinct named being in the eastern Berber pantheon of late antiquity."
+  }
+]
+```

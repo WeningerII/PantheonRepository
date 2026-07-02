@@ -1,0 +1,661 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Gondi
+Era (registered, exact): "mythic founding age of Gond society", "mythic founding age onward", "perennial"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four genuinely individuated figures beyond the existing five. Raitad Jango (the first priestess and chief goddess of the sagas, sister of Lingo) and Hira Suka Patalir (the kingri-playing bard who freed the imprisoned gods and was crushed by the boulder) are the two named actors of the Kachargarh deliverance epic distinct from Lingo and Kali Kankali, documented in Kangali's Gondi Punem Darshan (1986), Patankar's Seminar essay (2021) and Sahapedia. Narayan Deo, the Gond sun-god of the Laru Kaj pig sacrifice, is attested in Russell & Hira Lal (1916) and Fuchs (1960); Nagoba, the serpent Persa Pen of the Mesram Raj Gonds at Keslapur, is documented at length by Fürer-Haimendorf (1948, 1979). New figures are wired to the existing pantheon (Patalir subordinate to Lingo; Narayan Deo and Nagoba to the Persa Pen clan-god node) and to each other (Jango and Patalir as allies). I deliberately excluded generic spirit-classes (the 33 Saga Deva, village-mothers) and the syncretic Shiva-figure Shembhu, as none is individuated Gond material.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "gondi_jango",
+    "name": {
+      "primary": "Jango, the First Priestess",
+      "alt": [
+        "Raitad Jango",
+        "Raitad Jungo",
+        "Jangu Bai",
+        "Jangubai",
+        "Sadar Pen"
+      ],
+      "transliterations": {
+        "gondi": "Raitad Jango",
+        "etymology": "The personal name Jango carried with the feminine honorific -bai 'lady, mother'; in the Gondi Punem tradition she bears the title Sadar Pen, 'chief deity'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Gondi",
+    "primaryTradition": "Gondi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic founding age of Gond society"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic founding age of Gond society",
+        "eraOrdering": 0,
+        "startEvent": "In the Gondi Punem tradition she appears as Raitad Jango, sister of Pari Kupar Lingo and the first priestess of the Gonds, who went to Lingo as he meditated near the Kachargarh cave and asked him to deliver the divine children imprisoned within it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic founding age onward",
+        "eraOrdering": 1,
+        "startEvent": "Honoured thereafter as the chief goddess (Sadar Pen) of the eight sagas and the founder of the Sarpe clan-group, she is venerated at cave shrines such as Kota-Parandoli and the Jangu Bai temples of the Adilabad country.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mayuri Patankar, 'Memory and the Visual Politics of Gond Religion,' Seminar, no. 740 (2021)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "priesthood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Sadar Pen",
+          "script": "Latin",
+          "rom": "chief goddess"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ]
+      },
+      {
+        "sphereId": "clan-organization",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Saga",
+          "script": "Latin",
+          "rom": "clan-division"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mayuri Patankar, 'Memory and the Visual Politics of Gond Religion,' Seminar, no. 740 (2021)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "summon_the_deliverer",
+        "name": "to summon the deliverer of the imprisoned gods",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ]
+      },
+      {
+        "id": "found_clan_divisions",
+        "name": "to establish the saga and clan divisions of Gond society",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mayuri Patankar, 'Memory and the Visual Politics of Gond Religion,' Seminar, no. 740 (2021)."
+          }
+        ]
+      },
+      {
+        "id": "champion_widows",
+        "name": "to win rights of maintenance and remarriage for widows",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mayuri Patankar, 'Memory and the Visual Politics of Gond Religion,' Seminar, no. 740 (2021)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Raitad Jango",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mayuri Patankar, 'Memory and the Visual Politics of Gond Religion,' Seminar, no. 740 (2021)."
+          }
+        ]
+      },
+      {
+        "original": "Sadar Pen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "gondi_hirasuka_patalir",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ],
+        "notes": "In the deliverance of the divine children she works together with the bard Hira Suka Patalir, whose music does what her plea to Lingo set in motion."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Raitad Jango is the sister of Pari Kupar Lingo and the first priestess and chief goddess of the Gonds, who instigated the freeing of the divine children imprisoned in the Kachargarh cave.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mayuri Patankar, 'Memory and the Visual Politics of Gond Religion,' Seminar, no. 740 (2021)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Verrier Elwin, Myths of Middle India (Madras: Oxford University Press, 1949)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Raitad Jango is one of the two great female figures of the Gondi Punem, distinct from the mother-goddess Kali Kankali. Remembered as the sister of the culture-hero Pari Kupar Lingo, she is the first priestess of the Gonds and, in her own right, the chief goddess (Sadar Pen) of eight clan-groups. The founding narrative of Kachargarh turns on her: it is Jango who, seeing the divine children shut inside the cave, goes to the meditating Lingo and sets in motion their rescue, after which the clan and saga organisation of Gond society is fixed. Modern Gond tradition also credits her with a reform winning widows the right to maintenance and remarriage. She is worshipped at cave shrines, most prominently the Jangu Bai temples of the Adilabad region."
+  },
+  {
+    "id": "gondi_hirasuka_patalir",
+    "name": {
+      "primary": "Hira Suka Patalir, the Bard of Kachargarh",
+      "alt": [
+        "Hirasuka Patalir",
+        "Hira Suka Patari",
+        "Patalir"
+      ],
+      "transliterations": {
+        "gondi": "Hira Suka Patalir",
+        "etymology": "A personal name; Patalir functions as a lineage or bardic title borne by the kingri-player of Dhanegaon."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Gondi",
+    "primaryTradition": "Gondi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic founding age of Gond society"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic founding age of Gond society",
+        "eraOrdering": 0,
+        "startEvent": "A kingri-player of the village Dhanegaon, he was fetched by Pari Kupar Lingo and sat at the mouth of the Kachargarh cave playing 'veer rasa' music that filled the imprisoned children with the courage to roll away the boulder sealing them in.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ]
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mythic founding age onward",
+        "eraOrdering": 1,
+        "startEvent": "Crushed beneath the very boulder his music had loosened, he is remembered and honoured at the Kachargarh pilgrimage as the musician whose self-sacrifice made the deliverance of the gods possible.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sahapedia, 'Kachargarh: Pilgrimage of the Gond Adivasis,' Sahapedia online encyclopaedia (2019)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "music",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kingri",
+          "script": "Latin",
+          "rom": "bowed lute"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rouse_courage_by_music",
+        "name": "to fill the imprisoned children with courage through his music",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sahapedia, 'Kachargarh: Pilgrimage of the Gond Adivasis,' Sahapedia online encyclopaedia (2019)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "gondi_kingri",
+        "name": "Kingri",
+        "kind": "instrument",
+        "role": "The bowed lute whose 'veer rasa' strains gave the imprisoned children the strength to free themselves.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "gondi_jango",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ],
+        "notes": "His music completes the deliverance that the priestess Jango asks Lingo to bring about."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "gondi_lingo_pen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          }
+        ],
+        "notes": "Summoned and directed by the culture-hero Pari Kupar Lingo, who recognises that only music can rouse the children to free themselves."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hira Suka Patalir is the kingri-playing bard of Dhanegaon who, at Lingo's bidding, roused the imprisoned Gond gods to free themselves and was crushed by the falling boulder.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Motiravan Kangali, Pari Kupar Lingo Gondi Punem Darshan (Nagpur: Ushakiran Prakashan, 1986)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mayuri Patankar, 'Memory and the Visual Politics of Gond Religion,' Seminar, no. 740 (2021)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sahapedia, 'Kachargarh: Pilgrimage of the Gond Adivasis,' Sahapedia online encyclopaedia (2019)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hira Suka Patalir is the heroic musician of the Kachargarh deliverance. When Pari Kupar Lingo determines that the divine children shut in the cave can only be freed if they themselves push away the sealing boulder, he fetches Patalir, a kingri-player from the village of Dhanegaon. Seated at the cave mouth, Patalir plays music in the martial 'veer rasa' mode that fills the children with the strength and courage to roll the stone aside; as it moves, the stone crushes him. Though a mortal rather than a god, he is a named individual central to the Gond origin epic and is commemorated at the annual Kachargarh pilgrimage."
+  },
+  {
+    "id": "gondi_narayan_deo",
+    "name": {
+      "primary": "Narayan Deo, the Sun-God of the Pig Sacrifice",
+      "alt": [
+        "Narayan Deo",
+        "Narayan Pen",
+        "Narayandeo"
+      ],
+      "transliterations": {
+        "gondi": "Narayan Pen",
+        "etymology": "Sanskrit Nārāyaṇa combined with deo (from Sanskrit deva, 'god'); the equivalent Gondi title is Pen, 'clan-god'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Gondi",
+    "primaryTradition": "Gondi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped across the Gond and Bhumia country as Narayan Deo, a sun-god and household protector, he is honoured when a family offers a pig to him once every nine or twelve years in the rite called Laru Kaj, the 'pig's wedding'.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell & Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. III (London: Macmillan, 1916), article 'Gond'."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Narayan",
+          "script": "Latin",
+          "rom": "sun-god"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell & Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. III (London: Macmillan, 1916), article 'Gond'."
+          }
+        ]
+      },
+      {
+        "sphereId": "sacrifice",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Laru Kaj",
+          "script": "Latin",
+          "rom": "pig's wedding"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen Fuchs, The Gond and Bhumia of Eastern Mandla (Bombay: Asia Publishing House, 1960)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_prosperity",
+        "name": "to grant health and prosperity in return for the pig offering",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell & Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. III (London: Macmillan, 1916), article 'Gond'."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "gondi_laru",
+        "name": "Laru (sacrificial pig)",
+        "kind": "offering",
+        "role": "The pig ceremonially married and sacrificed to the god in the Laru Kaj rite performed once every nine or twelve years for a family's prosperity.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen Fuchs, The Gond and Bhumia of Eastern Mandla (Bombay: Asia Publishing House, 1960)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Narayan Pen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen Fuchs, The Gond and Bhumia of Eastern Mandla (Bombay: Asia Publishing House, 1960)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "gondi_persa_pen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell & Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. III (London: Macmillan, 1916), article 'Gond'."
+          }
+        ],
+        "notes": "Ranked below the supreme clan-god Bara Deo (Persa Pen) within the Gond hierarchy of deities."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Narayan Deo is a Gond sun-god and household protector to whom families periodically offer a pig in the Laru Kaj ceremony to secure health and prosperity.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell & Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. III (London: Macmillan, 1916), article 'Gond'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stephen Fuchs, The Gond and Bhumia of Eastern Mandla (Bombay: Asia Publishing House, 1960)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Narayan Deo is a distinct and widely worshipped deity of the Gond and neighbouring Bhumia peoples, identified as a sun-god and household protector. Although his name is drawn from the Hindu Narayana, in Gond practice he is an independent object of cult worshipped under the Gondi title Pen. His characteristic observance is the Laru Kaj, the 'pig's wedding', in which a family that has vowed to him ceremonially weds and then sacrifices a pig to the god once in every nine or twelve years, seeking prosperity, health and freedom from misfortune. Within the layered Gond pantheon he stands below the supreme clan-god Bara Deo."
+  },
+  {
+    "id": "gondi_nagoba",
+    "name": {
+      "primary": "Nagoba, the Serpent Clan-God of the Mesram",
+      "alt": [
+        "Nagoba",
+        "Nagoba Deo",
+        "Sri Shek",
+        "Sheshanag"
+      ],
+      "transliterations": {
+        "gondi": "Nagoba",
+        "etymology": "From Sanskrit nāga 'serpent' with the Deccan honorific -bā/oba 'father, lord', hence 'serpent-lord'; identified with the cosmic serpent Shesha."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Gondi",
+    "primaryTradition": "Gondi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial",
+        "eraOrdering": 0,
+        "startEvent": "He is venerated as Nagoba, the serpent clan-god (Persa Pen) of the Boi Gutta branch of the Mesram Raj Gonds, whose shrine at Keslapur in the Adilabad country is the centre of the great annual Nagoba Jatara, its worship opening with priests fetching water and pots from the Godavari.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Aboriginal Tribes of Hyderabad, Vol. III: The Raj Gonds of Adilabad (London: Macmillan, 1948)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "serpents",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Nagoba",
+          "script": "Latin",
+          "rom": "serpent-lord"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Aboriginal Tribes of Hyderabad, Vol. III: The Raj Gonds of Adilabad (London: Macmillan, 1948)."
+          }
+        ]
+      },
+      {
+        "sphereId": "clan-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Persa Pen",
+          "script": "Latin",
+          "rom": "great clan-god"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Gonds of Andhra Pradesh: Tradition and Change in an Indian Tribe (London: George Allen & Unwin, 1979)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_the_clan",
+        "name": "to protect the Mesram clan and its worshippers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Aboriginal Tribes of Hyderabad, Vol. III: The Raj Gonds of Adilabad (London: Macmillan, 1948)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "gondi_nagoba_kalash",
+        "name": "Nagoba kalash",
+        "kind": "regalia",
+        "role": "The sacred earthen and brass pots carried by the Mesram priests from the Godavari to Keslapur to be filled and worshipped as the god's presence during the Jatara.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Aboriginal Tribes of Hyderabad, Vol. III: The Raj Gonds of Adilabad (London: Macmillan, 1948)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Persa Pen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Gonds of Andhra Pradesh: Tradition and Change in an Indian Tribe (London: George Allen & Unwin, 1979)."
+          }
+        ]
+      },
+      {
+        "original": "Sri Shek",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Aboriginal Tribes of Hyderabad, Vol. III: The Raj Gonds of Adilabad (London: Macmillan, 1948)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "gondi_persa_pen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Gonds of Andhra Pradesh: Tradition and Change in an Indian Tribe (London: George Allen & Unwin, 1979)."
+          }
+        ],
+        "notes": "Nagoba is the specific Persa Pen (great clan-god) of the Mesram Raj Gonds, a named serpent-manifestation within the wider Gond clan-deity cult."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nagoba is the serpent clan-god (Persa Pen) of the Mesram Raj Gonds, whose shrine at Keslapur in Adilabad is the focus of the annual Nagoba Jatara.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Aboriginal Tribes of Hyderabad, Vol. III: The Raj Gonds of Adilabad (London: Macmillan, 1948)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Christoph von Fürer-Haimendorf, The Gonds of Andhra Pradesh: Tradition and Change in an Indian Tribe (London: George Allen & Unwin, 1979)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nagoba is the serpent-god who serves as the Persa Pen, the great clan-god, of the Mesram (Raj Gond) clan and specifically its Boi Gutta lineage. Identified with the cosmic serpent Shesha, he is the object of one of the most important Gond festivals, the Nagoba Jatara held each winter at his shrine in Keslapur, Adilabad district. The rites, documented in detail by the anthropologist Christoph von Fürer-Haimendorf, open with the Mesram priests fetching water and pots from the Godavari; the god's worship is bound to the clan's identity and its assembly, and Fürer-Haimendorf himself helped institutionalise the accompanying durbar in the 1940s. As a specifically named clan-deity Nagoba individuates the generic Persa Pen cult already represented in the corpus."
+  }
+]
+```

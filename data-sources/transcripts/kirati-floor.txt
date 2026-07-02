@@ -1,0 +1,774 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Kirati
+Era (registered, exact): "mythic", "mythic / cult continuous to present", "primordial", "primordial / before creation"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five genuinely individuated figures beyond the existing set. From the Limbu Mundhum: Porokmi Yamphami, the demiurge who fashions humankind under Tagera Ningwaphuma (wired as subordinate-to her and creator-of the first human); Mujingna Kheyongna, that first living human and ancestress; and Nahangma, the warrior life-force goddess of the Nahangma rite. From the wider tradition I added Sirijunga, the deified culture-hero and script-giver venerated within Yumaism (tied to Yuma as her consecrated priest), and Hetchhakuppa, the youngest child of the existing Paruhang and Sumnima, founder of the Rai agricultural age (wired via parentIds to both). Each is grounded in at least two standard scholarly sources (Chemjong, Sagant, T.B. Subba, Gaenszle, Chaitanya Subba, J.R. Subba, Ramesh Kumar Limbu); Nahangma is placed in solitary because her only mythic relation is a symmetric antagonism with an existing figure, which the schema does not allow to be wired.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "kirati_porokmi_yamphami",
+    "name": {
+      "primary": "Porokmi Yamphami, the Fashioner of Humankind",
+      "alt": [
+        "Porokmi Yamphami",
+        "Poroklungma Yamphami",
+        "Pōrokmī Yāmphāmī"
+      ],
+      "transliterations": {
+        "limbu": "Porokmi Yamphami",
+        "devanagari": "पोरोक्मी याम्फामी",
+        "etymology": "Limbu porok- 'to mould / bring forth' with the fashioning-agent name Yamphami, glossed by Chemjong as the divine artisan who shaped the first bodies at Tagera Ningwaphuma's command."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kirati",
+    "primaryTradition": "Kirati",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial / before creation",
+        "eraOrdering": 0,
+        "startEvent": "Acting on the command of the supreme knowledge-mother Tagera Ningwaphuma, Porokmi Yamphami undertook to fashion a beautiful and deathless human being from gold, silver and diamond, but the images he made could neither move nor speak.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 1,
+        "startEvent": "To break a great drought that afflicted the newborn world he was ordered to hurl a shot-stone (chhelong), and the spot where it fell in the Tehrathum hills is still remembered as Iwa Hada.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ramesh Kumar Limbu, 'Performance in Limbu Mundhum: A Study of Cultural Representation,' Tribhuvan University Journal 30, no. 2 (2016): 39–58"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation-of-humankind",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Mundhum",
+          "script": "Devanagari",
+          "rom": "mundhum (sacred oral scripture in which the fashioning is recounted)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chaitanya Subba, The Culture and Religion of Limbus (Kathmandu: K.B. Subba, 1995)"
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-and-drought",
+        "contextTag": "episodic",
+        "term": {
+          "value": "chhelong",
+          "script": "",
+          "rom": "chhelong / chhelo-pa'lum, the shot-stone hurled to end the drought"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion_first_humans",
+        "name": "to fashion the first human forms from precious matter",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His metal images lacked speech and life until the higher creative power animated them.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ramesh Kumar Limbu, 'Performance in Limbu Mundhum: A Study of Cultural Representation,' Tribhuvan University Journal 30, no. 2 (2016): 39–58"
+          }
+        ]
+      },
+      {
+        "id": "break_the_drought",
+        "name": "to end drought by hurling the sacred stone",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kirati_porokmi_shotstone",
+        "name": "The shot-stone of Iwa Hada",
+        "kind": "relic",
+        "role": "The stone Porokmi Yamphami cast to break the primordial drought, its landing-place still named in the Tehrathum landscape.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ramesh Kumar Limbu, 'Performance in Limbu Mundhum: A Study of Cultural Representation,' Tribhuvan University Journal 30, no. 2 (2016): 39–58"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "kirati_tagera_ningwaphuma",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chaitanya Subba, The Culture and Religion of Limbus (Kathmandu: K.B. Subba, 1995)"
+          }
+        ],
+        "notes": "He acts throughout as the executant of the supreme knowledge-mother, undertaking creation only on her instruction."
+      },
+      {
+        "kind": "creator-of",
+        "personId": "kirati_mujingna_kheyongna",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ],
+        "notes": "In the Limbu Mundhum his fashioning labour culminates in the making of the first living human, Mujingna Kheyongna."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Porokmi Yamphami is the Limbu demiurge of the Mundhum who, on Tagera Ningwaphuma's command, fashioned the first human bodies and cast the shot-stone that ended the primordial drought.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ramesh Kumar Limbu, 'Performance in Limbu Mundhum: A Study of Cultural Representation,' Tribhuvan University Journal 30, no. 2 (2016): 39–58"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In Limbu (Yakthung) cosmogony Porokmi Yamphami is the artisan-creator who carries out the making of the world and its people at the direction of the supreme goddess Tagera Ningwaphuma. His repeated failures to give speech and life to images moulded of gold, silver and diamond, and his casting of the shot-stone to break a devastating drought, are recited episodes of the Mundhum. He is distinct from the Rai sky-father Paruhang, belonging specifically to the Limbu creation cycle."
+  },
+  {
+    "id": "kirati_mujingna_kheyongna",
+    "name": {
+      "primary": "Mujingna Kheyongna, the First Human",
+      "alt": [
+        "Mujingna Kheyangna",
+        "Mujikna Kheyongna",
+        "Mujiṅnā Kheyoṅnā"
+      ],
+      "transliterations": {
+        "limbu": "Mujingna Kheyongna",
+        "devanagari": "मुजिङ्ना खेयोङ्ना",
+        "etymology": "A Limbu Mundhum name for the first-formed human, associated in the recitation with breath and wind; her wind-conceived offspring are called Susuweng Lalaweng, 'the children of wind and air.'"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Kirati",
+    "primaryTradition": "Kirati",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "kirati_porokmi_yamphami"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "The first living human of the Mundhum, brought into being when the divine creative power mixed the ash of bamboo with bird droppings and gave the form breath, after the moulded metal images had failed to live.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ]
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "primordial",
+        "eraOrdering": 1,
+        "startEvent": "She conceived through the wind, and her offspring, the 'children of wind and air' (Susuweng Lalaweng), are counted the forebears of the Yakthung Limbu people.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chaitanya Subba, The Culture and Religion of Limbus (Kathmandu: K.B. Subba, 1995)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "first-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Susuweng Lalaweng",
+          "script": "",
+          "rom": "susuweng lalaweng, 'children of wind and air,' her wind-conceived descent line"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chaitanya Subba, The Culture and Religion of Limbus (Kathmandu: K.B. Subba, 1995)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "conceive_by_the_wind",
+        "name": "to conceive offspring by the wind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "From this wind-conception the ancestral line of the Limbu is traced.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chaitanya Subba, The Culture and Religion of Limbus (Kathmandu: K.B. Subba, 1995)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Mujingna Kheyongna is the first living human of the Limbu Mundhum, made by the creator from bamboo-ash and bird droppings, whose wind-conceived children are the ancestors of the Yakthung Limbu.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chaitanya Subba, The Culture and Religion of Limbus (Kathmandu: K.B. Subba, 1995)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Limbu creation cycle Mujingna Kheyongna is the first human being successfully brought to life after the creator's earlier attempts with precious metals failed. The Yakthung Limbu reckon their descent from her wind-conceived offspring. She is the Limbu counterpart to, but named and narrated distinctly from, the Rai first-ancestress Sumnima."
+  },
+  {
+    "id": "kirati_nahangma",
+    "name": {
+      "primary": "Nahangma, the Warrior Life-Force Goddess",
+      "alt": [
+        "Nahangma",
+        "Nahen",
+        "Nāhāṅmā"
+      ],
+      "transliterations": {
+        "limbu": "Nahangma",
+        "devanagari": "नाहाङमा",
+        "etymology": "Limbu na(-hang) 'head / war-chief' with the feminine suffix -ma; the associated rite of 'raising the head' (nahangma) restores the household head's warrior life-spark and dignity."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kirati",
+    "primaryTradition": "Kirati",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / cult continuous to present"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / cult continuous to present",
+        "eraOrdering": 0,
+        "startEvent": "A martial deity seated upon the mountain heights, invoked by the Limbu shaman (yeba) in the Nahangma rite so that the household head's warrior soul may 'rise' and his authority be restored.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Philippe Sagant, The Dozing Shaman: The Limbus of Eastern Nepal (Delhi: Oxford University Press, 1996)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-and-warrior-prowess",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Nahangma",
+          "script": "Devanagari",
+          "rom": "nahangma, the war-dance and rite of the raised head"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Philippe Sagant, The Dozing Shaman: The Limbus of Eastern Nepal (Delhi: Oxford University Press, 1996)"
+          }
+        ]
+      },
+      {
+        "sphereId": "life-force-of-the-household-head",
+        "contextTag": "ritual",
+        "term": {
+          "value": "sam",
+          "script": "",
+          "rom": "sam / sam phungma, 'the soul that rises' at the rite's close"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chaitanya Subba, The Culture and Religion of Limbus (Kathmandu: K.B. Subba, 1995)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_the_warrior_soul",
+        "name": "to raise the warrior life-force of the household head",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "At the rite's end the head is said to be 'held high again,' a metaphor of restored dignity and authority.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Philippe Sagant, The Dozing Shaman: The Limbus of Eastern Nepal (Delhi: Oxford University Press, 1996)"
+          }
+        ]
+      },
+      {
+        "id": "grant_victory_in_war",
+        "name": "to grant prowess and victory in war",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kirati_nahangma_regalia",
+        "name": "Bow, sword and shield of Nahangma",
+        "kind": "regalia",
+        "role": "The warrior arms of the goddess, ritually conferred on the household head so that he inherits weapons identical to hers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Philippe Sagant, The Dozing Shaman: The Limbus of Eastern Nepal (Delhi: Oxford University Press, 1996)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Nahangma is the Limbu mountaintop war-goddess whose rite restores the warrior life-force and authority of the household head, and who stands in Mundhum narrative as the perennial antagonist of the grandmother-goddess Yuma.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Philippe Sagant, The Dozing Shaman: The Limbus of Eastern Nepal (Delhi: Oxford University Press, 1996)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nahangma is a martial deity of the Limbu, imagined enthroned on the mountain heights in the manner of Himalayan war-gods. In the Nahangma rite the shaman calls upon her so that the household head's soul may 'rise' (sam phungma) and his warrior dignity and political legitimacy be renewed; he receives arms identical to hers. In the oral tradition she and the grandmother-mother Yuma are figured as standing antagonists, a polarity of martial and nurturing power."
+  },
+  {
+    "id": "kirati_sirijunga",
+    "name": {
+      "primary": "Sirijunga, the Deified Giver of the Script",
+      "alt": [
+        "Te-ongsi Sirijunga Xin Thebe",
+        "Sirijonga",
+        "Sirijunga Singthebe",
+        "Sirijaṅgā"
+      ],
+      "transliterations": {
+        "limbu": "Sirijunga",
+        "devanagari": "सिरिजुङ्गा",
+        "etymology": "The name of the deified Limbu sage; the epithet Te-ongsi (te-ongsi) marks him as the heaven-descended reincarnation of the ninth-century Limbu king Sirijonga."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kirati",
+    "primaryTradition": "Kirati",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / cult continuous to present"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic / cult continuous to present",
+        "eraOrdering": 0,
+        "startEvent": "Held to be the reincarnation of the legendary ninth-century Limbu king Sirijonga, the eighteenth-century sage revived the old Limbu script, gathered and transcribed the Mundhum, and trained disciples in the ancestral learning.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tanka Bahadur Subba, Politics of Culture: A Study of Three Kirata Communities in the Eastern Himalayas (Chennai: Orient Longman, 1999)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "mythic / cult continuous to present",
+        "eraOrdering": 1,
+        "startEvent": "After his martyrdom he was venerated within Yumaism as a divine culture-hero of writing and wisdom, worshipped at shrines dedicated to Teongsi Sirijunga.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J.R. Subba, The Philosophy and Teachings of Yumaism (Gangtok: Yakthung Mundhum Saplopa, 2012)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "writing-and-sacred-learning",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Sirijunga",
+          "script": "Limbu",
+          "rom": "sirijunga, the Limbu (Kirat-Sirijunga) script he revived"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tanka Bahadur Subba, Politics of Culture: A Study of Three Kirata Communities in the Eastern Himalayas (Chennai: Orient Longman, 1999)"
+          }
+        ]
+      },
+      {
+        "sphereId": "preservation-of-the-mundhum",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Mundhum",
+          "script": "Devanagari",
+          "rom": "mundhum, the oral scripture he transcribed and taught"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J.R. Subba, The Philosophy and Teachings of Yumaism (Gangtok: Yakthung Mundhum Saplopa, 2012)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_the_script",
+        "name": "to give and revive the sacred script",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tanka Bahadur Subba, Politics of Culture: A Study of Three Kirata Communities in the Eastern Himalayas (Chennai: Orient Longman, 1999)"
+          }
+        ]
+      },
+      {
+        "id": "return_by_reincarnation",
+        "name": "to return across ages by reincarnation",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He was held to be the reborn ninth-century king Sirijonga.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J.R. Subba, The Philosophy and Teachings of Yumaism (Gangtok: Yakthung Mundhum Saplopa, 2012)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kirati_sirijunga_manuscripts",
+        "name": "The Sirijunga script and Mundhum manuscripts",
+        "kind": "emblem",
+        "role": "The revived Limbu writing system and the transcribed corpus of Mundhum through which he is remembered and venerated.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tanka Bahadur Subba, Politics of Culture: A Study of Three Kirata Communities in the Eastern Himalayas (Chennai: Orient Longman, 1999)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Te-ongsi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tanka Bahadur Subba, Politics of Culture: A Study of Three Kirata Communities in the Eastern Himalayas (Chennai: Orient Longman, 1999)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "kirati_yuma_sammang",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J.R. Subba, The Philosophy and Teachings of Yumaism (Gangtok: Yakthung Mundhum Saplopa, 2012)"
+          }
+        ],
+        "notes": "He was consecrated as a Muhigum Ongsi, a celibate priest devoted to the teachings of the grandmother-goddess Yuma, and his cult remains embedded within her Yumaist worship."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sirijunga is the deified Limbu culture-hero, believed reincarnation of the ninth-century king Sirijonga, who revived the Limbu script and transcribed the Mundhum and is venerated within Yumaism as a divine patron of writing and wisdom.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Tanka Bahadur Subba, Politics of Culture: A Study of Three Kirata Communities in the Eastern Himalayas (Chennai: Orient Longman, 1999)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "J.R. Subba, The Philosophy and Teachings of Yumaism (Gangtok: Yakthung Mundhum Saplopa, 2012)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sirijunga fuses a legendary ninth-century Limbu king with the historical eighteenth-century sage Te-ongsi Sirijunga Xin Thebe, held to be his reincarnation. Credited with reviving the Limbu writing system and with gathering, composing and transcribing the Mundhum, he was killed for his cultural revival and thereafter venerated as a divine culture-hero of learning within the Yumaist tradition, where shrines are dedicated to Teongsi Sirijunga."
+  },
+  {
+    "id": "kirati_hetchhakuppa",
+    "name": {
+      "primary": "Hetchhakuppa, Founder of the Agricultural Age",
+      "alt": [
+        "Hetchhakuwa",
+        "Khakchhilip",
+        "Khokchilipa",
+        "Raichhakule",
+        "Heccakuppā"
+      ],
+      "transliterations": {
+        "limbu": "Hetchhakuppa",
+        "devanagari": "हेच्छाकुप्पा",
+        "etymology": "A Rai (Khambu) Mundhum name for the youngest child of Sumnima and Paruhang, remembered as the originator of cultivation and of the founding dances of the Kirat-Rai."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kirati",
+    "primaryTradition": "Kirati",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "kirati_paruhang",
+      "kirati_sumnima"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "The youngest child of the sky-father Paruhang and the earth-mother Sumnima, younger brother of the primeval sisters Tayama and Khiyama, born into the dawn of Kirat-Rai humanity.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martin Gaenszle, Ancestral Voices: Oral Ritual Texts and their Social Contexts among the Mewahang Rai of East Nepal (Münster: LIT Verlag, 2002)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "He inaugurated the age of cultivation and is remembered as the first to perform the founding dance from which the Rai Sakela tradition descends.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "agriculture-and-cultivation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": "founder of the tilling and cultivation age of the Kirat-Rai"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martin Gaenszle, Origins and Migrations: Kinship, Mythology and Ethnic Identity among the Mewahang Rai of East Nepal (Kathmandu: Mandala Book Point, 2000)"
+          }
+        ]
+      },
+      {
+        "sphereId": "founding-dance",
+        "contextTag": "episodic",
+        "term": {
+          "value": "silli",
+          "script": "",
+          "rom": "silli, the ancestral dance he is said first to have performed"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inaugurate_agriculture",
+        "name": "to inaugurate the age of cultivation",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martin Gaenszle, Origins and Migrations: Kinship, Mythology and Ethnic Identity among the Mewahang Rai of East Nepal (Kathmandu: Mandala Book Point, 2000)"
+          }
+        ]
+      },
+      {
+        "id": "originate_the_founding_dance",
+        "name": "to originate the ancestral founding dance",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Hetchhakuppa is the youngest child of the Rai primordial pair Paruhang and Sumnima, remembered in Mundhum as the founder of the agricultural age and originator of the ancestral founding dance of the Kirat-Rai.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Martin Gaenszle, Ancestral Voices: Oral Ritual Texts and their Social Contexts among the Mewahang Rai of East Nepal (Münster: LIT Verlag, 2002)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Iman Singh Chemjong, History and Culture of the Kirat People, Parts I–II (Kathmandu: Kirat Yakthung Chumlung, 4th ed. 2003 [1967])"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Rai (Khambu) branch of Kirati tradition Hetchhakuppa, also called Khakchhilip or Raichhakule, is the youngest child of the sky-father Paruhang and the earth-mother Sumnima and younger brother of the primeval sisters Tayama and Khiyama. He is honoured as the culture-hero who began the age of cultivation and who first performed the founding dance from which the Sakela dance-cycle is traced, making him a key ancestral progenitor of Kirat-Rai civilization."
+  }
+]
+```
+

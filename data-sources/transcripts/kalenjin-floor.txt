@@ -1,0 +1,555 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Kalenjin
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four genuinely individuated, named celestial deities from the Pokot (Suk) branch of the Kalenjin cluster, all documented in Mervyn Beech's 1911 ethnography "The Suk: Their Language and Folklore" (recorded from the elder Tiamolok) and reproduced in standard mythology dictionaries (Jordan 2004; Scheub 2000): the winged creator sky-god Tororut, his Pleiades-wife Seta, their firstborn son Arawa (the moon), and their firstborn daughter Topogh (the evening star). These are wired into the existing pantheon: Tororut is given as father of the already-registered Ilat/Ilet (the rain reckoned his son in the Suk account), and the new figures are cross-linked by spouse, parent, and sibling ties. I deliberately excluded the Kokel (stars) and the oyik (ancestral dead) as unindividuated spirit-classes, and the anonymous "Dorobo/Okiek" first ancestor of the Nandi origin myth as unnamed; the sun Asis, moon, and thunder are either already in the corpus or folded into these entries, so the individuated record beyond this set appears exhausted.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "kalenjin_tororut",
+    "name": {
+      "primary": "Tororut",
+      "alt": [
+        "Tororot"
+      ],
+      "transliterations": {
+        "pokot": "Tororut",
+        "etymology": "Pokot/Suk theonym for the high sky-god; connected by observers to Kalenjin roots for height and the heavens (Beech 1911)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kalenjin",
+    "primaryTradition": "Kalenjin",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the cosmology recorded from the aged Suk elder Tiamolok in 1911, Tororut is the omnipotent creator who made the earth and brought forth mankind and animals at the beginning of things.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creator-sky-god",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Tororut",
+          "script": "Latin",
+          "rom": "the most high / sky-god"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      },
+      {
+        "sphereId": "storm-and-lightning",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Kerual",
+          "script": "Latin",
+          "rom": "lightning (the flash of his wings)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_world_and_life",
+        "name": "to create the world and bring forth mankind and animals",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As universal father he is credited with the making of the earth and of every good thing.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      },
+      {
+        "id": "send_lightning_and_thunder",
+        "name": "to loose lightning and thunder from his beating wings",
+        "term": {
+          "value": "Kotil",
+          "script": "Latin",
+          "rom": "thunder (the whirring of his wings)"
+        },
+        "inheritability": "none",
+        "notes": "He is manlike but winged; the flash of his huge wings is the lightning Kerual and their whirring is the thunder Kotil.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kalenjin_tororut_wings",
+        "name": "The great wings of Tororut",
+        "kind": "emblem",
+        "role": "His huge wings whose flash is lightning and whose whirring is thunder.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "kalenjin_seta",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ],
+        "notes": "His wife is Seta, identified with the star-cluster of the Pleiades."
+      },
+      {
+        "kind": "father-of",
+        "personId": "kalenjin_arawa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ],
+        "notes": "Arawa, the moon, is named as his firstborn son."
+      },
+      {
+        "kind": "father-of",
+        "personId": "kalenjin_topogh",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ],
+        "notes": "Topogh, the evening star, is named as his firstborn daughter."
+      },
+      {
+        "kind": "father-of",
+        "personId": "kalenjin_ilet",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ],
+        "notes": "In the northern Suk/Pokot reckoning, Ilat the rain is counted among Tororut's sons, one of the celestial family through whom the sky-god acts."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tororut is the omnipotent, omniscient creator and universal sky-father of the Pokot/Suk (a northern Kalenjin people), pictured as a winged man whose flashing wings make lightning and whose whirring makes thunder, and who heads a family of celestial deities.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Dictionary of Gods and Goddesses, 2nd ed. (New York: Facts on File, 2004)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tororut is the supreme creator god of the Pokot (Suk), the northern section of the Kalenjin cluster, recorded in detail from the elder Tiamolok by Mervyn Beech in 1911. He made the earth and causes the birth of people and beasts; he knows all secrets and is the universal father, and cattle-plagues and calamities are held to be his punishment for human sin. He is imagined as manlike but with enormous wings, the flash of which is the lightning (Kerual) and the whirring of which is the thunder (Kotil). About him gathers a family of lesser sky-deities, all benevolent toward humankind: his wife Seta (the Pleiades), his firstborn son Arawa (the moon), his firstborn daughter Topogh (the evening star), his son Ilat (the rain), and the Kokel (the stars). In this Pokot account the sun Asis is reckoned Tororut's younger brother, who grows angry in the dry season, a striking contrast with the more southerly Kalenjin traditions in which the solar Asis is himself the supreme being."
+  },
+  {
+    "id": "kalenjin_seta",
+    "name": {
+      "primary": "Seta",
+      "alt": [
+        "Seta (the Pleiades)"
+      ],
+      "transliterations": {
+        "pokot": "Seta",
+        "etymology": "Pokot/Suk name for the star-cluster of the Pleiades, personified as the consort of the sky-god (Beech 1911)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kalenjin",
+    "primaryTradition": "Kalenjin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the Suk cosmology recorded by Beech in 1911, Seta the Pleiades stands beside the creator Tororut as his wife from the beginning of the world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "pleiades-and-stars",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Seta",
+          "script": "Latin",
+          "rom": "the Pleiades"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shine_as_pleiades",
+        "name": "to shine in the sky as the cluster of the Pleiades",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "She is the heavenly consort of the sky-god, seen in the Pleiades whose seasonal appearance ordered the pastoral and agricultural year.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Dictionary of Gods and Goddesses, 2nd ed. (New York: Facts on File, 2004)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "kalenjin_tororut",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ],
+        "notes": "She is the wife of the creator Tororut."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "kalenjin_arawa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ],
+        "notes": "As Tororut's consort she is mother of the celestial children, including Arawa the moon."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "kalenjin_topogh",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ],
+        "notes": "Mother of Topogh, the evening star."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Seta is the wife of the Pokot/Suk sky-god Tororut, identified with the star-cluster of the Pleiades and mother of the celestial family of deities.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Dictionary of Gods and Goddesses, 2nd ed. (New York: Facts on File, 2004)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Seta is the divine consort of Tororut in Pokot (Suk) mythology, identified with the Pleiades. The heliacal rising and setting of the Pleiades governed the pastoral and cultivating seasons of the Kalenjin peoples, and her marriage to the creator makes her the mother of the sky-family: Arawa the moon, Topogh the evening star, Ilat the rain, and the Kokel or stars. She is remembered as one of the wholly benevolent deities of the Suk heaven."
+  },
+  {
+    "id": "kalenjin_arawa",
+    "name": {
+      "primary": "Arawa",
+      "alt": [
+        "Arawet"
+      ],
+      "transliterations": {
+        "pokot": "Arawa",
+        "etymology": "From the common Kalenjin word arawa 'moon, month'; here personified as the moon-god, firstborn son of the sky-god (Beech 1911)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kalenjin",
+    "primaryTradition": "Kalenjin",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "kalenjin_tororut",
+      "kalenjin_seta"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the Suk cosmology recorded by Beech in 1911, Arawa the moon is named as the firstborn son of the creator Tororut and his wife Seta.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon-and-night",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Arawa",
+          "script": "Latin",
+          "rom": "moon / month"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_light_by_night",
+        "name": "to give light by night as the moon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the moon he lights the night sky and, by his phases, measures the months.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "kalenjin_topogh",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ],
+        "notes": "Brother of Topogh, the evening star, among the children of Tororut and Seta."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Arawa is the moon-god of the Pokot/Suk, named as the firstborn son of the sky-god Tororut and his wife Seta and reckoned one of the benevolent celestial deities.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Arawa is the personified moon in Pokot (Suk) mythology, named as the firstborn son of the creator Tororut and his consort Seta. His name is the ordinary Kalenjin word for the moon and the month, and as a deity he is counted among the wholly benevolent members of the sky-family alongside his sister Topogh the evening star, his brother Ilat the rain, and the Kokel or stars. The lunar personification echoes the more southerly Kalenjin creation traditions in which the sun Asis takes the moon to wife, though in the Suk account the moon is instead the sky-god's son rather than the sun's spouse."
+  },
+  {
+    "id": "kalenjin_topogh",
+    "name": {
+      "primary": "Topogh",
+      "alt": [
+        "Topoh"
+      ],
+      "transliterations": {
+        "pokot": "Topogh",
+        "etymology": "Pokot/Suk name for the evening star (the planet Venus at dusk), personified as the sky-god's firstborn daughter (Beech 1911)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kalenjin",
+    "primaryTradition": "Kalenjin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "kalenjin_tororut",
+      "kalenjin_seta"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the Suk cosmology recorded by Beech in 1911, Topogh the evening star is named as the firstborn daughter of the creator Tororut and his wife Seta.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "evening-star",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Topogh",
+          "script": "Latin",
+          "rom": "the evening star"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "herald_the_dusk",
+        "name": "to shine at dusk as the evening star",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "She appears in the western sky at nightfall as the evening star, the eldest daughter of the sky-god.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Dictionary of Gods and Goddesses, 2nd ed. (New York: Facts on File, 2004)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "kalenjin_arawa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          }
+        ],
+        "notes": "Sister of Arawa, the moon, among the children of Tororut and Seta."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Topogh is the evening-star goddess of the Pokot/Suk, named as the firstborn daughter of the sky-god Tororut and his wife Seta and one of the benevolent celestial deities.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Michael Jordan, Dictionary of Gods and Goddesses, 2nd ed. (New York: Facts on File, 2004)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Topogh is the personified evening star (Venus at dusk) in Pokot (Suk) mythology, named as the firstborn daughter of the creator Tororut and his consort Seta. She belongs to the family of benevolent sky-deities, sister to Arawa the moon and Ilat the rain, and is grouped with her mother Seta and the Kokel among the star-powers of the Suk heaven. Her prominence as a named female star-deity, alongside the Pleiades-goddess Seta, distinguishes the northern Pokot pantheon from the largely solar and monotheistic religion of the southern Kalenjin."
+  }
+]
+```
