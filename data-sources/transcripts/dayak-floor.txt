@@ -1,0 +1,738 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Dayak
+Era (registered, exact): "primordial / creation"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six well-attested Ngaju Dayak figures: the first human couple Manyamei Tunggul Garing and Kameloh Putak Bulau, their three sons Maharaja Sangiang, Maharaja Sangen, and Maharaja Bunu (ancestors respectively of the spirit beings, the primeval heroes, and mortal humankind), all documented in Hans Schärer's Ngaju Religion (1963) and Anne Schiller's Small Sacrifices (1997); and the trickster hero Sangumang from the folktale corpus of Klokke-Coster, Klokke and Saha (1976). The new figures are wired to the existing corpus through subordinate-to relations with dayak_mahatala. Remaining Ngaju supernatural categories (sangiang, gana, generic ancestor spirits) are spirit classes rather than individuated figures and were excluded.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "dayak_manyamei_tunggul_garing",
+    "name": {
+      "primary": "First Man of the Ngaju Creation Myth",
+      "alt": [
+        "Manyamei Tunggul Garing",
+        "Manyamei Tunggul Garing Janjahunan Laut"
+      ],
+      "transliterations": {
+        "ngaju": "Manyamei Tunggul Garing Janjahunan Laut",
+        "etymology": "The name incorporates Ngaju garing, the sacred Tree of Life from whose destruction the first humans arise (Schärer, Ngaju Religion, 1963; Hardeland, Dajacksch-deutsches Wörterbuch, 1859)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Dayak",
+    "primaryTradition": "Dayak",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial / creation"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial / creation",
+        "eraOrdering": 0,
+        "startEvent": "In the Ngaju cosmogony the first man comes into being in the primeval age after the clash of the two hornbills in the Tree of Life (Schärer, Ngaju Religion, 1963).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "primordial-humanity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "garing",
+          "script": "Latin (Ngaju)",
+          "rom": "garing — sacred tree of life"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_human_lineages",
+        "name": "to father the ancestral lineages of gods, spirits, and humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dayak_batang_garing",
+        "name": "Batang Garing (Tree of Life)",
+        "kind": "emblem",
+        "role": "cosmic tree from whose substance the first humans originate",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "dayak_mahatala",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "The first man owes his existence and fate to the supreme upperworld god Mahatala (Ranying Hatalla)."
+      },
+      {
+        "kind": "spouse",
+        "personId": "dayak_kameloh_putak_bulau",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "Husband of Kameloh Putak Bulau, the first woman; together they beget the three primordial brothers."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Manyamei Tunggul Garing is the first man of Ngaju Dayak cosmogony, husband of the first woman and father of the three primordial brothers.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Schiller, Anne. Small Sacrifices: Religious Change and Cultural Identity among the Ngaju of Indonesia. New York: Oxford University Press, 1997."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Ngaju Dayak creation myth of southern Borneo, recorded most fully by Hans Schärer, the primeval age culminates in the battle of two hornbills in the Tree of Life; from the debris of that cosmic tree arise the first man, Manyamei Tunggul Garing Janjahunan Laut, and the first woman. Their sons become the ancestors of the sangiang spirit beings and of humankind."
+  },
+  {
+    "id": "dayak_kameloh_putak_bulau",
+    "name": {
+      "primary": "First Woman of the Ngaju Creation Myth",
+      "alt": [
+        "Kameloh Putak Bulau",
+        "Kameloh Putak Bulau Janjulen Karangan",
+        "Putir Kahukup Bungking Garing"
+      ],
+      "transliterations": {
+        "ngaju": "Kameloh Putak Bulau Janjulen Karangan",
+        "etymology": "Her name contains Ngaju bulau, 'gold', a substance of the sacred upperworld (Hardeland, Dajacksch-deutsches Wörterbuch, 1859; Schärer, Ngaju Religion, 1963)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Dayak",
+    "primaryTradition": "Dayak",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial / creation"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial / creation",
+        "eraOrdering": 0,
+        "startEvent": "The first woman arises in the primeval age from the Tree of Life alongside the first man (Schärer, Ngaju Religion, 1963).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "primordial-humanity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bulau",
+          "script": "Latin (Ngaju)",
+          "rom": "bulau — gold, sacred upperworld substance"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hardeland, August. Dajacksch-deutsches Wörterbuch. Amsterdam: Frederik Muller, 1859."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear_primordial_sons",
+        "name": "to give birth to the ancestors of spirits and of humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "dayak_mahatala",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "Like the first man, she exists by the will of the supreme god of the upperworld."
+      },
+      {
+        "kind": "spouse",
+        "personId": "dayak_manyamei_tunggul_garing",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "Wife of the first man Manyamei Tunggul Garing and mother of the three primordial brothers."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kameloh Putak Bulau is the first woman of Ngaju Dayak cosmogony and mother of the three primordial brothers.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Schiller, Anne. Small Sacrifices: Religious Change and Cultural Identity among the Ngaju of Indonesia. New York: Oxford University Press, 1997."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kameloh Putak Bulau Janjulen Karangan is the first woman of the Ngaju Dayak creation narrative. With the first man she bears three sons — Maharaja Sangiang, Maharaja Sangen, and Maharaja Bunu — whose divergent fates account for the origin of the upperworld spirit beings and of mortal humanity."
+  },
+  {
+    "id": "dayak_maharaja_sangiang",
+    "name": {
+      "primary": "Ancestor of the Sangiang Spirit Beings",
+      "alt": [
+        "Maharaja Sangiang"
+      ],
+      "transliterations": {
+        "ngaju": "Maharaja Sangiang",
+        "etymology": "From Malay-derived maharaja, 'great king', and Ngaju sangiang, the benevolent upperworld spirit beings descended from him (Schärer, Ngaju Religion, 1963)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Dayak",
+    "primaryTradition": "Dayak",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "dayak_manyamei_tunggul_garing",
+      "dayak_kameloh_putak_bulau"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "primordial / creation"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial / creation",
+        "eraOrdering": 0,
+        "startEvent": "Born in the primeval age as the eldest of the three sons of the first human couple, he remains in the upperworld as progenitor of the sangiang (Schärer, Ngaju Religion, 1963).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "upperworld-spirits",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sangiang",
+          "script": "Latin (Ngaju)",
+          "rom": "sangiang — upperworld spirit beings"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schiller, Anne. Small Sacrifices: Religious Change and Cultural Identity among the Ngaju of Indonesia. New York: Oxford University Press, 1997."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "engender_spirit_helpers",
+        "name": "to engender the benevolent spirit beings who assist priests in ritual",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "dayak_maharaja_sangen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "Brother of Maharaja Sangen."
+      },
+      {
+        "kind": "sibling",
+        "personId": "dayak_maharaja_bunu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "Brother of Maharaja Bunu, ancestor of mortal humankind."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Maharaja Sangiang is one of the three sons of the first human couple and the ancestor of the sangiang upperworld spirit beings of Ngaju religion.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Schiller, Anne. Small Sacrifices: Religious Change and Cultural Identity among the Ngaju of Indonesia. New York: Oxford University Press, 1997."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Maharaja Sangiang is the eldest of the three primordial brothers of Ngaju Dayak myth. He remained in the sacred village of the upperworld and became the ancestor of the sangiang, the benevolent spirit beings whom balian and basir priests summon during death rituals and healing ceremonies."
+  },
+  {
+    "id": "dayak_maharaja_sangen",
+    "name": {
+      "primary": "Ancestor of the Sangen Heroic Beings",
+      "alt": [
+        "Maharaja Sangen"
+      ],
+      "transliterations": {
+        "ngaju": "Maharaja Sangen",
+        "etymology": "From maharaja, 'great king', and sangen, the heroic beings of the primeval epoch celebrated in Ngaju sacred chant (Schärer, Ngaju Religion, 1963)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Dayak",
+    "primaryTradition": "Dayak",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "dayak_manyamei_tunggul_garing",
+      "dayak_kameloh_putak_bulau"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "primordial / creation"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial / creation",
+        "eraOrdering": 0,
+        "startEvent": "Born in the primeval age as one of the three sons of the first human couple, he becomes progenitor of the sangen, the heroes of the sacred epoch (Schärer, Ngaju Religion, 1963).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heroic-primeval-age",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sangen",
+          "script": "Latin (Ngaju)",
+          "rom": "sangen — beings of the sacred primeval epoch"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "engender_primeval_heroes",
+        "name": "to engender the heroic beings of the sacred primeval epoch",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "dayak_maharaja_sangiang",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "Brother of Maharaja Sangiang."
+      },
+      {
+        "kind": "sibling",
+        "personId": "dayak_maharaja_bunu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "Brother of Maharaja Bunu."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Maharaja Sangen is one of the three sons of the first human couple in Ngaju cosmogony, ancestor of the sangen beings of the sacred primeval epoch.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Schiller, Anne. Small Sacrifices: Religious Change and Cultural Identity among the Ngaju of Indonesia. New York: Oxford University Press, 1997."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Maharaja Sangen is the second of the three primordial brothers of Ngaju Dayak mythology. Like Maharaja Sangiang he remained immortal, becoming the ancestor of the sangen, the exemplary heroes of the primeval sacred epoch whose deeds are recounted in the ritual chant language of the priests."
+  },
+  {
+    "id": "dayak_maharaja_bunu",
+    "name": {
+      "primary": "Ancestor of Mortal Humankind",
+      "alt": [
+        "Maharaja Bunu"
+      ],
+      "transliterations": {
+        "ngaju": "Maharaja Bunu",
+        "etymology": "From maharaja, 'great king', and Ngaju bunu, connected with killing and mortality, fitting his role as ancestor of death-bound humanity (Hardeland, Dajacksch-deutsches Wörterbuch, 1859; Schärer, Ngaju Religion, 1963)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Dayak",
+    "primaryTradition": "Dayak",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "dayak_manyamei_tunggul_garing",
+      "dayak_kameloh_putak_bulau"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "primordial / creation"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial / creation",
+        "eraOrdering": 0,
+        "startEvent": "Born in the primeval age as one of the three sons of the first couple, he alone becomes subject to death and descends to inhabit the earth as forefather of humankind (Schärer, Ngaju Religion, 1963).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mortal-humanity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kalunen",
+          "script": "Latin (Ngaju)",
+          "rom": "kalunen — humankind, mortals"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_mortal_race",
+        "name": "to found the race of mortal human beings on earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "dayak_maharaja_sangiang",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "Brother of Maharaja Sangiang, ancestor of the spirit beings."
+      },
+      {
+        "kind": "sibling",
+        "personId": "dayak_maharaja_sangen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "Brother of Maharaja Sangen."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "dayak_mahatala",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People. The Hague: Martinus Nijhoff, 1963."
+          }
+        ],
+        "notes": "His mortality and earthly destiny are decreed by the supreme god of the upperworld."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Maharaja Bunu is the son of the first human couple who became mortal and is regarded as the ancestor of humankind in Ngaju Dayak myth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Schärer, Hans. Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham. The Hague: Martinus Nijhoff, 1963."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Schiller, Anne. Small Sacrifices: Religious Change and Cultural Identity among the Ngaju of Indonesia. New York: Oxford University Press, 1997."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Maharaja Bunu is the third of the primordial brothers of Ngaju Dayak cosmogony. Unlike his brothers, who remained immortal in the upperworld, he became subject to death; his descent to the earth explains the origin of mortal humanity (kalunen), whose souls the death rituals of Kaharingan religion return to the primordial village of the ancestors."
+  },
+  {
+    "id": "dayak_sangumang",
+    "name": {
+      "primary": "Trickster Hero of the Upperworld",
+      "alt": [
+        "Sangumang",
+        "Sangomang"
+      ],
+      "transliterations": {
+        "ngaju": "Sangumang",
+        "etymology": "A proper name of the cunning upperworld hero of Ngaju folktale cycles; recorded in the oral corpus edited by Klokke-Coster, Klokke and Saha (De slimme en de domme, 1976)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Dayak",
+    "primaryTradition": "Dayak",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial / creation"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial / creation",
+        "eraOrdering": 0,
+        "startEvent": "Ngaju folktales place Sangumang among the beings of the upperworld, where his cycle of trickster exploits against his uncle the king unfolds (Klokke-Coster, Klokke and Saha, De slimme en de domme, 1976).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Klokke-Coster, A., A. H. Klokke and M. Saha. De slimme en de domme: Ngadju-Dajakse volksverhalen. The Hague: Martinus Nijhoff, 1976."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cunning-trickery",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "harati",
+          "script": "Latin (Ngaju)",
+          "rom": "harati — clever, knowing"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hardeland, August. Dajacksch-deutsches Wörterbuch. Amsterdam: Frederik Muller, 1859."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "outwit_the_powerful",
+        "name": "to outwit kings and the powerful through cunning stratagems",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Klokke-Coster, A., A. H. Klokke and M. Saha. De slimme en de domme: Ngadju-Dajakse volksverhalen. The Hague: Martinus Nijhoff, 1976."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Sangumang is the cunning trickster hero of the Ngaju Dayak folktale cycle, an upperworld figure who repeatedly outwits his uncle the king.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Klokke-Coster, A., A. H. Klokke and M. Saha. De slimme en de domme: Ngadju-Dajakse volksverhalen. The Hague: Martinus Nijhoff, 1976."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Klokke, Arnoud H. (ed.). Fishing, Hunting and Headhunting in the Former Culture of the Ngaju Dayak in Central Kalimantan. Phillips, ME: Borneo Research Council, 2004."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sangumang is the best-known trickster of Ngaju Dayak oral literature. In a cycle of at least ten recorded tales he uses wit and stratagem to fool his uncle, the king, and secure wealth and status. The tales set him and his counterpart, the fool Bapa Paloi, in the upperworld, linking the folktale corpus to the mythological cosmology of the Ngaju."
+  }
+]
+```

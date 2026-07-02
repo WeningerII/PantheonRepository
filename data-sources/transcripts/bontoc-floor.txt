@@ -1,0 +1,111 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bontoc
+Era (registered, exact): "Bontoc traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added one figure, Batanga (Fatanga), the named Bontoc man of Lanao whose daughter Fukan married the culture hero Lumawig; he is explicitly named in Cole's 'Lumawig on Earth' (1916) and rests on the underlying ethnographies of Jenks (1905) and Seidenadel (1909), with modern analysis in Bacwaden (1997), and I wired him into the existing pantheon as father-of the already-registered Fukan (thus father-in-law of Lumawig). No other individuated figure qualified: the remaining actors in the Lumawig cycle and the sun/moon headhunting myth are attested but explicitly unnamed in the sources (Fukan's elder sister, the beheaded son of Chal-chal, Lumawig's two sons a.k.a. the 'sons of Cayapon,' Kabunian's two other sons, and the brother-and-sister flood survivors), so authoring them would create spurious named entities. I deliberately excluded 'Bangan' and 'Obban,' which circulate in popular listicles as daughters of Lumawig and 'Bugan,' because that pairing derives from Ifugao/pan-Cordilleran material (Bugan is the Ifugao name for the hero's wife) and is not grounded in Bontoc ethnography. The Bontoc named record beyond the existing five is therefore effectively exhausted by this single addition.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bontoc_batanga",
+    "name": {
+      "primary": "Batanga",
+      "alt": [
+        "Fatanga"
+      ],
+      "transliterations": {
+        "bontoc": "Batanga"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Bontoc",
+    "primaryTradition": "Bontoc",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bontoc traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Bontoc traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Batanga is the Bontoc man of Lanao whose two daughters Lumawig discovered gathering beans, and who offered a daughter to the descended culture hero for a wife.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mabel Cook Cole, Philippine Folk Tales (Chicago: A. C. McClurg & Co., 1916), 'Lumawig on Earth'."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-and-lineage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Albert Ernest Jenks, The Bontoc Igorot (Manila: Bureau of Public Printing, 1905)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "bontoc_fukan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mabel Cook Cole, Philippine Folk Tales (Chicago: A. C. McClurg & Co., 1916), 'Lumawig on Earth'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Joy Christine O. Bacwaden, 'The Lumawig Bontoc Myths,' Philippine Studies 45, no. 1 (1997): 3-49."
+          }
+        ],
+        "notes": "In the myth of Lumawig's descent to earth, Fukan (Fucan) is named as the younger of Batanga's two daughters; Lumawig chose her over her elder sister, making Batanga the father-in-law of the Bontoc culture hero."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Batanga is the mortal Bontoc man of Lanao, father of the two bean-gathering sisters, whose younger daughter Fukan the culture hero Lumawig took as his wife.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mabel Cook Cole, Philippine Folk Tales (Chicago: A. C. McClurg & Co., 1916), 'Lumawig on Earth'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Albert Ernest Jenks, The Bontoc Igorot (Manila: Bureau of Public Printing, 1905)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Joy Christine O. Bacwaden, 'The Lumawig Bontoc Myths,' Philippine Studies 45, no. 1 (1997): 3-49."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Batanga (also transcribed Fatanga) is a named human figure in the Bontoc cycle of Lumawig, the sky-descended culture hero. When Lumawig looked down from the sky he saw two sisters gathering beans at Lanao and came down to court them; the younger, Fukan, told him that her father's name was Batanga. After Lumawig astonished the family by miraculously filling their baskets with beans and multiplying their livestock, Batanga, delighted, offered his elder daughter as a wife, but Lumawig said he preferred the younger, and so married Fukan. Batanga is thus remembered as the father of Fukan and the earthly father-in-law of Lumawig, standing at the junction where the divine culture hero was joined to a Bontoc human family. He is one of the few individually named mortals in the Bontoc oral tradition, appearing in the ethnographic records of Jenks and Seidenadel and in Cole's retelling."
+  }
+]
+```

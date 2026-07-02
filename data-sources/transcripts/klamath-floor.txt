@@ -1,0 +1,302 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Klamath
+Era (registered, exact): "Klamath-Modoc traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two genuinely individuated, well-attested figures missing from the existing set. Llao, the chief of the below-world and antagonist of Skell in the Crater Lake origin narrative, is documented by Clark (1953) and by Deur's NPS traditional-use study (2008), which records Klamath descriptions of ongoing battles between Skell and Llao along the caldera rim; he is left solitary because his only defining tie is an enmity with an existing figure that has no directed-relation equivalent. Weasel (Modoc Tcûskai) is the named younger brother and companion of Old Marten (the existing klamath_sqel), attested in Gatschet (1890) and Curtin (1912), and is wired in as subordinate to his elder brother. I deliberately excluded candidates that are spirit-classes rather than individuated persons — the cannibal Thunders (Leméis), the Witsduk snowstorm spirits, and generic animal-people (Eagle, Wolf, Grizzly) — and I did not author the Modoc trickster fox Wus, since it falls within the existing Coyote entry's attested aliases (Was/Wash).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "klamath_llao",
+    "name": {
+      "primary": "Llao (Chief of the Below World)",
+      "alt": [
+        "La'o",
+        "Laö",
+        "Chief of the Below World"
+      ],
+      "transliterations": {
+        "klm": "Llao",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Klamath",
+    "primaryTradition": "Klamath",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Klamath-Modoc traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Klamath-Modoc traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Llao dwells within the mountain now called Mount Mazama as the chief of the below-world, and his catastrophic battle with the above-world chief Skell collapses the peak to form the basin of Crater Lake.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld-below-world",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Douglas Deur, In the Footprints of Gmukamps: A Traditional Use Study of Crater Lake National Park and Lava Beds National Monument, National Park Service, Pacific West Region, 2008."
+          }
+        ]
+      },
+      {
+        "sphereId": "volcanic-fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl_volcanic_fire",
+        "name": "to hurl fire and red-hot rock from the mountaintop",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the recorded contest Llao rains down fire and boulders upon the Makalak people and against Skell.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          }
+        ]
+      },
+      {
+        "id": "command_below_world",
+        "name": "to rule and summon the beings of the below-world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Douglas Deur, In the Footprints of Gmukamps: A Traditional Use Study of Crater Lake National Park and Lava Beds National Monument, National Park Service, Pacific West Region, 2008."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "klamath_llao_rock",
+        "name": "Llao Rock",
+        "kind": "landmark",
+        "role": "The great cliff on the northwestern rim of Crater Lake bears Llao's name and is associated with his below-world domain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Douglas Deur, In the Footprints of Gmukamps: A Traditional Use Study of Crater Lake National Park and Lava Beds National Monument, National Park Service, Pacific West Region, 2008."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Llao is the chief of the below-world in Klamath tradition, an adversary of the above-world chief Skell whose destructive battle at Mount Mazama is said to have created Crater Lake.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Douglas Deur, In the Footprints of Gmukamps: A Traditional Use Study of Crater Lake National Park and Lava Beds National Monument, National Park Service, Pacific West Region, 2008."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Llao is the chief of the below-world in Klamath tradition, dwelling within the mountain the Klamath know as the site of Crater Lake (Mount Mazama). He is the antagonist of Skell, the chief of the above-world: in the widely recorded narrative the two hurl fire and stone at one another from their mountaintops until Llao is driven back into the earth and the shattered peak fills with water to become the lake. Klamath consultants describe the two beings as continuing to skirmish along the caldera rim, and the prominent cliff named Llao Rock preserves his name. While the fullest published versions of the battle were shaped by later retelling, Llao's identity as a below-world power tied to the Crater Lake landscape is grounded in the ethnographic and community record."
+  },
+  {
+    "id": "klamath_weasel",
+    "name": {
+      "primary": "Weasel",
+      "alt": [
+        "Tcûskai",
+        "Tchashgai",
+        "Tcúskai"
+      ],
+      "transliterations": {
+        "mod": "Tcûskai",
+        "etymology": "Modoc/Klamath name meaning 'weasel'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Klamath",
+    "primaryTradition": "Klamath",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Klamath-Modoc traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Klamath-Modoc traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Weasel appears throughout the myth-age as the impetuous younger brother and companion of Old Marten (Skel), accompanying him against the cannibal Thunders and repeatedly being slain and restored to life.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Albert S. Gatschet, The Klamath Indians of Southwestern Oregon, Contributions to North American Ethnology, Vol. II, Government Printing Office, 1890."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death-and-revival",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Tcûskai",
+          "script": "Latin",
+          "rom": "Tcûskai"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jeremiah Curtin, Myths of the Modocs: Indian Legends of the Northwest, Little, Brown, and Company, 1912."
+          }
+        ]
+      },
+      {
+        "sphereId": "kinship-brotherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Albert S. Gatschet, The Klamath Indians of Southwestern Oregon, Contributions to North American Ethnology, Vol. II, Government Printing Office, 1890."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "restored_to_life",
+        "name": "to be restored to life after being killed",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In several tales Weasel is killed by the Thunders or other adversaries and is revived by his elder brother Old Marten.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jeremiah Curtin, Myths of the Modocs: Indian Legends of the Northwest, Little, Brown, and Company, 1912."
+          }
+        ]
+      },
+      {
+        "id": "reckless_courage",
+        "name": "to act with reckless courage in confronting monsters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Albert S. Gatschet, The Klamath Indians of Southwestern Oregon, Contributions to North American Ethnology, Vol. II, Government Printing Office, 1890."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "klamath_sqel",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Albert S. Gatschet, The Klamath Indians of Southwestern Oregon, Contributions to North American Ethnology, Vol. II, Government Printing Office, 1890."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jeremiah Curtin, Myths of the Modocs: Indian Legends of the Northwest, Little, Brown, and Company, 1912."
+          }
+        ],
+        "notes": "Weasel is the younger brother and constant companion of Old Marten (Skel), following his lead in their exploits against the Thunders and other beings."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Weasel (Tcûskai) is the impetuous younger brother and companion of the transformer-hero Old Marten (Skel) in Klamath and Modoc myth, repeatedly slain and revived in the course of their adventures.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Albert S. Gatschet, The Klamath Indians of Southwestern Oregon, Contributions to North American Ethnology, Vol. II, Government Printing Office, 1890."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jeremiah Curtin, Myths of the Modocs: Indian Legends of the Northwest, Little, Brown, and Company, 1912."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Weasel, called Tcûskai in the Modoc texts, is the younger brother and inseparable companion of Old Marten (Skel), one of the great transformer-heroes of the Klamath and Modoc. Rash and headstrong where his elder brother is prudent, Weasel plays a recurring supporting role in the myth-age cycle: he accompanies Marten in the confrontation with the cannibal Thunders and other adversaries, is frequently killed through his own impetuousness, and is restored to life again by his brother. He is a distinct, named individual within the pantheon rather than a generic animal-person, defined by his fraternal bond with Old Marten."
+  }
+]
+```

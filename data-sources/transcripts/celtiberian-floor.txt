@@ -1,0 +1,293 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Celtiberian
+Era (registered, exact): "Late Iron Age to Roman period", "Roman period"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the two remaining securely individuated, epigraphically attested Celtiberian deities: Airon, the chthonic god of wells attested at the Fuente Redonda sanctuary near Uclés/Segobriga (Lorrio & Sánchez de Prado 2002; Marco Simón 2005), and Dercetius, the mountain god of the Sierra de la Demanda attested on a Roman altar and in Braulio of Zaragoza's Vita Sancti Aemiliani. Other Hispano-Celtic names were deliberately excluded: Epona and the Matres are Gaulish or collective, Ataecina/Bandua/Reue/Nabia belong to the Lusitanian-Vettonian corpus, Vurovius is Autrigonian rather than strictly Celtiberian, and the Peñalba de Villastar readings 'Eniorosis'/'Tiato' are too disputed to author as figures. Beyond these, scholarship (Olivares Pedreño 2002; Marco Simón 2005) documents no further securely individuated Celtiberian theonyms.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "celtiberian_airon",
+    "name": {
+      "primary": "Airon of the Deep Wells",
+      "alt": [
+        "Airon",
+        "Deus Aironis",
+        "Aironi",
+        "Pozo Airón"
+      ],
+      "transliterations": {
+        "la": "Deus Aironis",
+        "etymology": "Theonym attested in Latin dative 'Deo Aironi'; commonly connected to a hydronymic/chthonic root surviving in Spanish 'pozo airón' (bottomless well), per Lorrio & Sánchez de Prado 2002."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Celtiberian",
+    "primaryTradition": "Celtiberian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Late Iron Age to Roman period"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Late Iron Age to Roman period",
+        "eraOrdering": 0,
+        "startEvent": "A votive altar dedicated 'Deo Aironi' at the spring-well sanctuary of Fuente Redonda near Uclés (Cuenca), in the territory of Segobriga, attests his cult in the Roman imperial period atop an older indigenous water sanctuary.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lorrio Alvarado, A. J. & Sánchez de Prado, M. D., 'La necrópolis romana de Haza del Arca y el santuario del Deus Aironis en la Fuente Redonda (Uclés, Cuenca)', Iberia 5, 2002"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wells-and-springs",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "pozo airón",
+          "script": "Latin",
+          "rom": "bottomless well; the god's name preserved in Spanish folk toponymy"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lorrio Alvarado, A. J., 'El dios celta Airón y su supervivencia en el folclore y la toponimia', 2007"
+          }
+        ]
+      },
+      {
+        "sphereId": "underworld-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marco Simón, F., 'Religion and Religious Practices of the Ancient Celts of the Iberian Peninsula', e-Keltoi: Journal of Interdisciplinary Celtic Studies 6, 2005"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "claim_lives_in_deep_waters",
+        "name": "to draw the unwary down into bottomless wells and pools",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Later Iberian folklore about the 'pozo Airón' preserves the god as a devouring presence of deep water, a memory of his chthonic character.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lorrio Alvarado, A. J., 'El dios celta Airón y su supervivencia en el folclore y la toponimia', 2007"
+          }
+        ]
+      },
+      {
+        "id": "guard_sacred_springs",
+        "name": "to preside over sacred springs and grant the favours sought there",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lorrio Alvarado, A. J. & Sánchez de Prado, M. D., 'La necrópolis romana de Haza del Arca y el santuario del Deus Aironis en la Fuente Redonda (Uclés, Cuenca)', Iberia 5, 2002"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "celtiberian_fuente_redonda_altar",
+        "name": "Votive altar of Fuente Redonda",
+        "kind": "votive altar",
+        "role": "Inscribed stone altar dedicated 'Deo Aironi' at the circular spring-well of Fuente Redonda (Uclés, Cuenca), the god's identified sanctuary.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lorrio Alvarado, A. J. & Sánchez de Prado, M. D., 'La necrópolis romana de Haza del Arca y el santuario del Deus Aironis en la Fuente Redonda (Uclés, Cuenca)', Iberia 5, 2002"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Airon is a Celtiberian chthonic god of deep wells and springs, attested epigraphically at the Fuente Redonda sanctuary near Uclés in the territory of Segobriga and surviving in Iberian folklore as the 'pozo Airón'.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lorrio Alvarado, A. J. & Sánchez de Prado, M. D., 'La necrópolis romana de Haza del Arca y el santuario del Deus Aironis en la Fuente Redonda (Uclés, Cuenca)', Iberia 5, 2002"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marco Simón, F., 'Religion and Religious Practices of the Ancient Celts of the Iberian Peninsula', e-Keltoi: Journal of Interdisciplinary Celtic Studies 6, 2005"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, J. C., Los dioses de la Hispania céltica, Real Academia de la Historia / Universidad de Alicante, 2002"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Airon is one of the few Celtiberian deities whose cult place can be identified with precision. A Roman-period votive altar dedicated 'Deo Aironi' was found at the Fuente Redonda, a circular walled spring-well near Uclés (Cuenca) in the hinterland of the Celtiberian-Roman city of Segobriga, marking the site as a sanctuary of an indigenous god of subterranean waters. The god's name enjoyed a remarkable afterlife: across central Spain dozens of deep pools, sinkholes and wells are still called 'pozo Airón' and are the object of folk legends about bottomless, life-taking waters, which scholars such as Alberto Lorrio have traced back to the pre-Roman divinity. His character is therefore reconstructed as chthonic and aquatic, tied to wells, springs and the dangerous depths of the earth."
+  },
+  {
+    "id": "celtiberian_dercetius",
+    "name": {
+      "primary": "Dercetius of the Mountain",
+      "alt": [
+        "Dercetius",
+        "Dercetio",
+        "Dircetius"
+      ],
+      "transliterations": {
+        "la": "Dercetio",
+        "etymology": "Attested in the Latin dative 'Dercetio'; generally derived from the Indo-European root *derk- 'to see', suggesting a far-seeing mountain god (Marco Simón 2005)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Celtiberian",
+    "primaryTradition": "Celtiberian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Roman period"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Roman period",
+        "eraOrdering": 0,
+        "startEvent": "A first-century AD votive altar dedicated 'Dercetio' from the San Millán de la Cogolla area (La Rioja) attests his cult, and the mountain there was still called 'Dircetius mons' in Braulio of Zaragoza's seventh-century Vita Sancti Aemiliani.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marco Simón, F., 'Religion and Religious Practices of the Ancient Celts of the Iberian Peninsula', e-Keltoi: Journal of Interdisciplinary Celtic Studies 6, 2005"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Dircetius mons",
+          "script": "Latin",
+          "rom": "Mount Dircetius, the sacred mountain bearing the god's name"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Blázquez, J. M., Religiones primitivas de Hispania I: Fuentes literarias y epigráficas, CSIC, 1962"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "embody_the_sacred_peak",
+        "name": "to dwell in and personify the mountain that bears his name",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Dercetius belongs to the class of Hispano-Celtic oronymic deities whose name is shared by god and mountain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, J. C., Los dioses de la Hispania céltica, Real Academia de la Historia / Universidad de Alicante, 2002"
+          }
+        ]
+      },
+      {
+        "id": "watch_from_the_heights",
+        "name": "to watch over the surrounding land from the heights",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Suggested by the etymological link of the theonym to the Indo-European root for seeing.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marco Simón, F., 'Religion and Religious Practices of the Ancient Celts of the Iberian Peninsula', e-Keltoi: Journal of Interdisciplinary Celtic Studies 6, 2005"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "celtiberian_dercetio_altar",
+        "name": "Altar of Dercetio",
+        "kind": "votive altar",
+        "role": "Roman-period inscribed altar dedicated in the dative 'Dercetio', found in the Sierra de la Demanda area near San Millán de la Cogolla (La Rioja).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Blázquez, J. M., Religiones primitivas de Hispania I: Fuentes literarias y epigráficas, CSIC, 1962"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Dercetius is a Celtiberian mountain god of the Sierra de la Demanda region, attested by a Roman-period votive altar inscribed 'Dercetio' and by the mountain name 'Dircetius mons' recorded in Braulio of Zaragoza's Vita Sancti Aemiliani.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Marco Simón, F., 'Religion and Religious Practices of the Ancient Celts of the Iberian Peninsula', e-Keltoi: Journal of Interdisciplinary Celtic Studies 6, 2005"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Blázquez, J. M., Religiones primitivas de Hispania I: Fuentes literarias y epigráficas, CSIC, 1962"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Olivares Pedreño, J. C., Los dioses de la Hispania céltica, Real Academia de la Historia / Universidad de Alicante, 2002"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Dercetius is a mountain divinity of the upper Ebro fringe of Celtiberia, in the Sierra de la Demanda of modern La Rioja. His cult is documented by a first-century AD votive altar dedicated in the dative form 'Dercetio', found near San Millán de la Cogolla, and his memory persisted long after paganism ended: in the seventh century Braulio of Zaragoza, writing the Life of Saint Aemilianus, still called the peak on which the hermit saint retreated 'Dircetius mons'. He thus belongs to the well-documented Hispano-Celtic pattern of deified mountains, in which the same name designates both the god and his peak; the theonym is usually explained from the Indo-European root meaning 'to see', fitting a god of high, far-seeing places."
+  }
+]
+```

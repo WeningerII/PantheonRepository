@@ -1,0 +1,677 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Q'ero/Quechua
+Era (registered, exact): "post-colonial", "pre-inca"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four well-attested figures of the post-conquest southern Peruvian Quechua/Q'ero folk tradition: Roal, the Q'ero creator spirit and chief of the apus (Ó. Núñez del Prado 1957; J. Núñez del Prado 1974); Qollari, the primordial woman created with Inkarrí (Ossio 1973; Ortiz Rescaniere 1973), wired to the existing inkarri figure as consort; and the two individuated paramount mountain lords, Apu Ausangate (Randall 1982; Allen 1988; Salas Carreño 2019) and Apu Salkantay (Reinhard 2007; Bernbaum 1990), typed as numina and subordinated to Roal per the recorded apu hierarchy. I deliberately excluded Pachamama, Viracocha and other imperial-cult figures (Inca corpus), generic spirit classes (ñawpa machu, machula aulanchis, generic apus), and the Q'ero local apu Wamanlipa, for which I could not confirm two scholarly citations in this session.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "quechua_roal",
+    "name": {
+      "primary": "Roal",
+      "alt": [
+        "Ruwal",
+        "Apu Roal",
+        "Rúal"
+      ],
+      "transliterations": {
+        "quechua": "Ruwal",
+        "etymology": "Recorded as Roal/Ruwal in Q'ero ethnography; plausibly connected to Quechua ruway, 'to make, to do' (Núñez del Prado 1957; J. Núñez del Prado 1974)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Q'ero/Quechua",
+    "primaryTradition": "Q'ero/Quechua",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-inca"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "pre-inca",
+        "eraOrdering": 0,
+        "startEvent": "In the Q'ero origin myth, at the dawn of the present world age after the darkness of the ñawpa machu, Roal, chief of the mountain spirits, offers his own power to humankind and creates Inkarrí and Qollari (Núñez del Prado 1957; Ossio 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Núñez del Prado, Óscar. 'El hombre y la familia: su matrimonio y organización político-social en Q'ero.' Revista Universitaria (Cusco) 114, 1957."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kamay",
+          "script": "Latin (Quechua)",
+          "rom": "to animate, to bring into being"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Núñez del Prado, Juan V. 'The Supernatural World of the Quechua of Southern Peru as Seen from the Community of Qotobamba.' In Patricia J. Lyon (ed.), Native South Americans: Ethnology of the Least Known Continent. Boston: Little, Brown, 1974."
+          }
+        ]
+      },
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "apu",
+          "script": "Latin (Quechua)",
+          "rom": "lord; mountain lord"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Núñez del Prado, Óscar. 'El hombre y la familia: su matrimonio y organización político-social en Q'ero.' Revista Universitaria (Cusco) 114, 1957."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_living_beings",
+        "name": "to create living beings and give them breath and power",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Q'ero myth Roal gives life to the primordial couple Inkarrí and Qollari.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ossio, Juan M. (ed.). Ideología mesiánica del mundo andino. Lima: Ignacio Prado Pastor, 1973."
+          }
+        ]
+      },
+      {
+        "id": "command_mountain_lords",
+        "name": "to command the mountain lords and order the spirit hierarchy",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Ethnographers of southern Peru place Roal at the head of the hierarchy of apus.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Núñez del Prado, Juan V. 'The Supernatural World of the Quechua of Southern Peru as Seen from the Community of Qotobamba.' In Patricia J. Lyon (ed.), Native South Americans. Boston: Little, Brown, 1974."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Apu Roal",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Núñez del Prado, Óscar. 'El hombre y la familia: su matrimonio y organización político-social en Q'ero.' Revista Universitaria (Cusco) 114, 1957."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creator-of",
+        "personId": "inkarri",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ossio, Juan M. (ed.). Ideología mesiánica del mundo andino. Lima: Ignacio Prado Pastor, 1973."
+          }
+        ],
+        "notes": "In the Q'ero version of the Inkarrí myth, Roal creates Inkarrí as the primordial man who will found a great people."
+      },
+      {
+        "kind": "creator-of",
+        "personId": "quechua_qollari",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ortiz Rescaniere, Alejandro. De Adaneva a Inkarrí: una visión indígena del Perú. Lima: Retablo de Papel Ediciones, 1973."
+          }
+        ],
+        "notes": "Roal creates Qollari as the primordial woman, companion of Inkarrí."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Roal is the creator spirit and chief of the apus (mountain lords) in the cosmology of the Q'ero and neighbouring southern Peruvian Quechua communities, who gave life to the primordial couple Inkarrí and Qollari.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Núñez del Prado, Óscar. 'El hombre y la familia: su matrimonio y organización político-social en Q'ero.' Revista Universitaria (Cusco) 114, 1957."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Núñez del Prado, Juan V. 'The Supernatural World of the Quechua of Southern Peru as Seen from the Community of Qotobamba.' In Patricia J. Lyon (ed.), Native South Americans: Ethnology of the Least Known Continent. Boston: Little, Brown, 1974."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ossio, Juan M. (ed.). Ideología mesiánica del mundo andino. Lima: Ignacio Prado Pastor, 1973."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Roal (also Ruwal) is the creator spirit of the Q'ero communities of the Cusco highlands, first documented during the 1955 Cusco university expedition to Q'ero led by Óscar Núñez del Prado and Efraín Morote Best. In the Q'ero cosmogony the world before the present age belonged to the ñawpa machu, the ancient ones who lived by the light of the moon; when the present sun rose, Roal, the chief of the apus, created the primordial couple Inkarrí and Qollari and gave Inkarrí a golden rod with which to found a great people. Roal stands at the apex of the hierarchy of mountain lords described for southern Peru, above the regional and local apus, and is distinct from the imperial Inca creator Viracocha, belonging instead to the post-conquest oral tradition of the Quechua herding communities."
+  },
+  {
+    "id": "quechua_qollari",
+    "name": {
+      "primary": "Qollari",
+      "alt": [
+        "Qollarí",
+        "Collari",
+        "Qulla Riy"
+      ],
+      "transliterations": {
+        "quechua": "Qullari",
+        "etymology": "From Qulla, the altiplano people and region south-east of Cusco, with the hispanized ending rey ('king/sovereign'), parallel to Inkarrí from Inka rey (Ossio 1973)"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Q'ero/Quechua",
+    "primaryTradition": "Q'ero/Quechua",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-inca"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "pre-inca",
+        "eraOrdering": 0,
+        "startEvent": "Created together with Inkarrí by the creator spirit Roal at the dawn of the present world age, to found a great people (Ossio 1973; Ortiz Rescaniere 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ossio, Juan M. (ed.). Ideología mesiánica del mundo andino. Lima: Ignacio Prado Pastor, 1973."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-founding",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "qulla",
+          "script": "Latin (Quechua)",
+          "rom": "the Qolla people of the altiplano"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ortiz Rescaniere, Alejandro. De Adaneva a Inkarrí: una visión indígena del Perú. Lima: Retablo de Papel Ediciones, 1973."
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ossio, Juan M. (ed.). Ideología mesiánica del mundo andino. Lima: Ignacio Prado Pastor, 1973."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_peoples",
+        "name": "to found and mother a people as primordial ancestress",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Q'ero narrative Qollari and Inkarrí are created as the founding couple of humanity in the present age.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ortiz Rescaniere, Alejandro. De Adaneva a Inkarrí: una visión indígena del Perú. Lima: Retablo de Papel Ediciones, 1973."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "inkarri",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ossio, Juan M. (ed.). Ideología mesiánica del mundo andino. Lima: Ignacio Prado Pastor, 1973."
+          }
+        ],
+        "notes": "Qollari is the female companion of Inkarrí, created with him by Roal; in the paired Inkarrí-Qollari narratives the two embody the complementary duality of the Inca and Qolla regions."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Qollari is the primordial woman of the southern Peruvian Quechua Inkarrí-Qollari myth cycle, created by Roal as companion and counterpart of Inkarrí and embodying the Qolla (altiplano) half of the Andean world.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ossio, Juan M. (ed.). Ideología mesiánica del mundo andino. Lima: Ignacio Prado Pastor, 1973."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ortiz Rescaniere, Alejandro. De Adaneva a Inkarrí: una visión indígena del Perú. Lima: Retablo de Papel Ediciones, 1973."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Qollari is the female protagonist of the Inkarrí-Qollari myth cycle recorded in Q'ero and other communities of southern Peru from the 1950s onward. In the Q'ero version collected by Óscar Núñez del Prado, the creator spirit Roal gives life to Inkarrí and Qollari as the first man and woman of the present age. Her name mirrors Inkarrí's: as Inkarrí derives from 'Inka rey' (Inca king), Qollari derives from 'Qolla rey', the sovereign of the Qolla altiplano south-east of Cusco, so that the couple personifies the classic Andean dual division between the Inca heartland and the Qollasuyu. In some regional versions the two compete in feats of founding and world-ordering, expressing the complementary opposition of the two moieties."
+  },
+  {
+    "id": "quechua_ausangate",
+    "name": {
+      "primary": "Apu Ausangate",
+      "alt": [
+        "Ausangate",
+        "Awsanqati",
+        "Ausangati"
+      ],
+      "transliterations": {
+        "quechua": "Awsanqati",
+        "etymology": "Hispanized from Quechua Awsanqati, the name of the 6,384 m snow peak of the Vilcanota range; the etymology of the toponym is uncertain (Randall 1982)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Q'ero/Quechua",
+    "primaryTradition": "Q'ero/Quechua",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-inca"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "pre-inca",
+        "eraOrdering": 0,
+        "startEvent": "Venerated since before the Inca empire as the great snow peak and pre-eminent regional mountain lord of the Cusco highlands (Randall 1982; Allen 1988).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Randall, Robert. 'Qoyllur Rit'i, an Inca Fiesta of the Pleiades: Reflections on Time and Space in the Andean World.' Bulletin de l'Institut Français d'Études Andines 11(1-2): 37-81, 1982."
+          }
+        ]
+      },
+      {
+        "typeStatus": "numen",
+        "era": "post-colonial",
+        "eraOrdering": 1,
+        "startEvent": "In modern Quechua and Q'ero communities Ausangate remains the paramount apu, receiving despacho offerings and presiding over the Qoyllur Rit'i pilgrimage on his flank at Sinakara (Allen 1988; Salas Carreño 2019).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Allen, Catherine J. The Hold Life Has: Coca and Cultural Identity in an Andean Community. Washington, DC: Smithsonian Institution Press, 1988."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "apu",
+          "script": "Latin (Quechua)",
+          "rom": "lord; mountain lord"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Allen, Catherine J. The Hold Life Has: Coca and Cultural Identity in an Andean Community. Washington, DC: Smithsonian Institution Press, 1988."
+          }
+        ]
+      },
+      {
+        "sphereId": "weather",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "rit'i",
+          "script": "Latin (Quechua)",
+          "rom": "snow"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Randall, Robert. 'Qoyllur Rit'i, an Inca Fiesta of the Pleiades.' Bulletin de l'Institut Français d'Études Andines 11(1-2): 37-81, 1982."
+          }
+        ]
+      },
+      {
+        "sphereId": "herd-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "paqucha",
+          "script": "Latin (Quechua)",
+          "rom": "alpaca"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wissler, Holly. 'From Grief and Joy We Sing: Social and Cosmic Regenerative Processes in the Songs of Q'eros, Peru.' PhD dissertation, Florida State University, 2009."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "control_weather",
+        "name": "to send or withhold rain, hail and snow over the highlands",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the dominant snow peak of the Vilcanota range Ausangate is held to govern the weather and water of the region.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Randall, Robert. 'Qoyllur Rit'i, an Inca Fiesta of the Pleiades.' Bulletin de l'Institut Français d'Études Andines 11(1-2): 37-81, 1982."
+          }
+        ]
+      },
+      {
+        "id": "grant_herd_increase",
+        "name": "to grant fertility and increase to alpaca and llama herds",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Herding communities such as Q'eros address animal-fertility songs and offerings to the apus, with Ausangate as the greatest of them.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wissler, Holly. 'From Grief and Joy We Sing: Social and Cosmic Regenerative Processes in the Songs of Q'eros, Peru.' PhD dissertation, Florida State University, 2009."
+          }
+        ]
+      },
+      {
+        "id": "watch_over_people",
+        "name": "to watch over, protect and punish the people living within his gaze",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Apus are held to observe and sanction the communities on their slopes, rewarding offerings and punishing neglect.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Allen, Catherine J. The Hold Life Has: Coca and Cultural Identity in an Andean Community. Washington, DC: Smithsonian Institution Press, 1988."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Apu Awsanqati",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Allen, Catherine J. The Hold Life Has: Coca and Cultural Identity in an Andean Community. Washington, DC: Smithsonian Institution Press, 1988."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "quechua_roal",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Núñez del Prado, Juan V. 'The Supernatural World of the Quechua of Southern Peru as Seen from the Community of Qotobamba.' In Patricia J. Lyon (ed.), Native South Americans. Boston: Little, Brown, 1974."
+          }
+        ],
+        "notes": "In the hierarchy of supernatural beings recorded for southern Peru, the great regional apus such as Ausangate stand below Roal, the chief of the mountain spirits."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Apu Ausangate is the divinized 6,384 m snow peak of the Vilcanota range and the paramount mountain lord (apu) of the Cusco-region Quechua and Q'ero communities, controller of weather and herd fertility and host of the Qoyllur Rit'i pilgrimage.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Randall, Robert. 'Qoyllur Rit'i, an Inca Fiesta of the Pleiades: Reflections on Time and Space in the Andean World.' Bulletin de l'Institut Français d'Études Andines 11(1-2): 37-81, 1982."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Allen, Catherine J. The Hold Life Has: Coca and Cultural Identity in an Andean Community. Washington, DC: Smithsonian Institution Press, 1988."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Salas Carreño, Guillermo. Lugares parientes: comida, cohabitación y mundos andinos. Lima: Fondo Editorial PUCP, 2019."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ausangate (Quechua Awsanqati), the highest peak of the Cordillera Vilcanota south-east of Cusco, is the pre-eminent apu, or mountain lord, of the southern Peruvian Quechua world, including the Q'ero communities on its northern slopes. Ethnographies of the region describe him as a powerful male lord who governs weather and water, grants increase to alpaca and llama herds, and watches over the communities within his view, receiving woven offerings, libations and despacho bundles from ritual specialists. The great pilgrimage of Qoyllur Rit'i, timed to the reappearance of the Pleiades, takes place at the Sinakara sanctuary on his flank, fusing devotion to the Lord of Qoyllur Rit'i with the older cult of the mountain."
+  },
+  {
+    "id": "quechua_salkantay",
+    "name": {
+      "primary": "Apu Salkantay",
+      "alt": [
+        "Salkantay",
+        "Salcantay",
+        "Sallqantay"
+      ],
+      "transliterations": {
+        "quechua": "Sallqantay",
+        "etymology": "From Quechua sallqa, 'wild, untamed, uncivilized', hence the 'savage mountain' (Reinhard 2007)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Q'ero/Quechua",
+    "primaryTradition": "Q'ero/Quechua",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-inca"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "pre-inca",
+        "eraOrdering": 0,
+        "startEvent": "Revered since before the Inca empire as the wild snow peak dominating the ranges west of Cusco and one of the two greatest mountain lords of the region alongside Ausangate (Reinhard 2007; Bernbaum 1990).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reinhard, Johan. Machu Picchu: Exploring an Ancient Sacred Center. 4th ed. Los Angeles: Cotsen Institute of Archaeology Press, UCLA, 2007."
+          }
+        ]
+      },
+      {
+        "typeStatus": "numen",
+        "era": "post-colonial",
+        "eraOrdering": 1,
+        "startEvent": "In contemporary Quechua communities Salkantay continues to be honoured as a powerful and temperamental apu associated with storms and the wild puna (Bernbaum 1990).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bernbaum, Edwin. Sacred Mountains of the World. San Francisco: Sierra Club Books, 1990."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "apu",
+          "script": "Latin (Quechua)",
+          "rom": "lord; mountain lord"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reinhard, Johan. Machu Picchu: Exploring an Ancient Sacred Center. 4th ed. Los Angeles: Cotsen Institute of Archaeology Press, UCLA, 2007."
+          }
+        ]
+      },
+      {
+        "sphereId": "storms",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "chikchi",
+          "script": "Latin (Quechua)",
+          "rom": "hail"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bernbaum, Edwin. Sacred Mountains of the World. San Francisco: Sierra Club Books, 1990."
+          }
+        ]
+      },
+      {
+        "sphereId": "wilderness",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sallqa",
+          "script": "Latin (Quechua)",
+          "rom": "wild, untamed; the high wild puna"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reinhard, Johan. Machu Picchu: Exploring an Ancient Sacred Center. 4th ed. Los Angeles: Cotsen Institute of Archaeology Press, UCLA, 2007."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "unleash_storms",
+        "name": "to raise storms, hail and avalanche upon the high passes",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Salkantay is characterized in regional belief as an authoritative, ill-tempered lord whose weather must be appeased.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bernbaum, Edwin. Sacred Mountains of the World. San Francisco: Sierra Club Books, 1990."
+          }
+        ]
+      },
+      {
+        "id": "govern_wild_animals",
+        "name": "to govern the wild creatures and untamed lands of the high puna",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His very name, from sallqa ('wild'), links him to the uncultivated highland wilderness and its animals.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reinhard, Johan. Machu Picchu: Exploring an Ancient Sacred Center. 4th ed. Los Angeles: Cotsen Institute of Archaeology Press, UCLA, 2007."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Apu Sallqantay",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reinhard, Johan. Machu Picchu: Exploring an Ancient Sacred Center. 4th ed. Los Angeles: Cotsen Institute of Archaeology Press, UCLA, 2007."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "quechua_roal",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Núñez del Prado, Juan V. 'The Supernatural World of the Quechua of Southern Peru as Seen from the Community of Qotobamba.' In Patricia J. Lyon (ed.), Native South Americans. Boston: Little, Brown, 1974."
+          }
+        ],
+        "notes": "As one of the great regional apus of the Cusco area, Salkantay stands within the hierarchy of mountain lords headed by Roal in southern Peruvian Quechua cosmology."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Apu Salkantay is the divinized 6,271 m 'savage mountain' west of Cusco, honoured in Quechua folk religion as one of the two greatest mountain lords of the region, a powerful and temperamental master of storms and the wild puna.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Reinhard, Johan. Machu Picchu: Exploring an Ancient Sacred Center. 4th ed. Los Angeles: Cotsen Institute of Archaeology Press, UCLA, 2007."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bernbaum, Edwin. Sacred Mountains of the World. San Francisco: Sierra Club Books, 1990."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Salkantay (Quechua Sallqantay, from sallqa, 'wild, untamed'), the highest peak of the Cordillera Vilcabamba, is regularly paired with Ausangate in Quechua folk religion as one of the two paramount apus of the Cusco region: Ausangate ruling the ranges to the south-east and Salkantay those to the west, above the Machu Picchu sanctuary. Regional belief characterizes him as an authoritative and easily angered male lord of storms, hail and the wild high puna, to whom travellers and herders direct coca offerings when crossing his passes. Johan Reinhard has argued that the sacred geography of Machu Picchu itself is oriented toward Salkantay, indicating the antiquity of the mountain's cult beneath its living folk veneration."
+  }
+]
+```

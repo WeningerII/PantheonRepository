@@ -1,0 +1,810 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Huichol
+Era (registered, exact): "mythic", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five genuinely individuated, well-attested Huichol figures beyond the existing set: Kieri (the wind-and-sorcery plant-god of Solandra/Datura, adversary of Kauyumari), Tatéi Haramara (Our Mother the Sea), Tatéi Werika Uimari (the double-headed eagle sky-goddess), Tatéi Niwetsika (Our Mother Corn and mother of the five corn-maidens), and Watákame (the first-farmer flood hero and ancestor of the Wixárika). Each carries at least two real scholarly citations drawn from the standard ethnographic corpus (Lumholtz 1900/1902, Zingg 1938, Furst & Myerhoff 1966, Myerhoff 1974, Knab 1977, Schaefer & Furst 1996, MacLean 2012). Where the record supports it I wired new figures into the existing pantheon: Werika Uimari as emerging from and attending Kauyumari, and Watákame as the mortal devotee subordinate to Nakawé who saves him from the flood. I stopped at five because the remaining Huichol theonyms in the literature are either aliases of existing figures (e.g. Maxa Kwaxi for Kauyumari) or generic collective classes such as the plural rain 'Our Mothers' (Tateima) that scholarship does not further individuate into named, separately-attested persons.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "huichol_kieri",
+    "name": {
+      "primary": "Kieri",
+      "alt": [
+        "Kiéri",
+        "Kieri Tewiyari",
+        "Kiéli Tewiali",
+        "Tree of the Wind"
+      ],
+      "transliterations": {
+        "wixarika": "Kieri Tewiyari",
+        "etymology": "kieri, the Solandra 'wind-tree' intoxicant; Tewiyari 'person/man', i.e. the plant personified as a supernatural being (Knab 1977)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Huichol",
+    "primaryTradition": "Huichol",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "In the Jimson-weed myth cycle Kieri appears as the malevolent plant-sorcerer of the wind who lures people with his intoxicating leaves and is defeated by the deer culture-hero.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Furst, Peter T. & Myerhoff, Barbara G., 'Myth as History: The Jimson Weed Cycle of the Huichols of Mexico,' Antropológica 17 (1966): 3-39"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sorcery-dark-magic",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kieri",
+          "script": "Latin (Wixárika)",
+          "rom": "kieri"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knab, Tim, 'Notes Concerning Use of Solandra among the Huichol,' Economic Botany 31.1 (1977): 80-86"
+          }
+        ]
+      },
+      {
+        "sphereId": "wind",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "eeka",
+          "script": "Latin (Wixárika)",
+          "rom": "eeka"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Furst, Peter T. & Myerhoff, Barbara G., 'Myth as History: The Jimson Weed Cycle of the Huichols of Mexico,' Antropológica 17 (1966): 3-39"
+          }
+        ]
+      },
+      {
+        "sphereId": "hallucinogenic-plants",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kieri",
+          "script": "Latin (Wixárika)",
+          "rom": "kieri"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knab, Tim, 'Notes Concerning Use of Solandra among the Huichol,' Economic Botany 31.1 (1977): 80-86"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deceive_with_intoxicant",
+        "name": "to deceive people into eating his maddening leaves and fruit",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His intoxication brings visions, then sickness, madness or death.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Furst, Peter T. & Myerhoff, Barbara G., 'Myth as History: The Jimson Weed Cycle of the Huichols of Mexico,' Antropológica 17 (1966): 3-39"
+          }
+        ]
+      },
+      {
+        "id": "teach_sorcery",
+        "name": "to teach harmful sorcery to shamans who serve him",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Sorcerers who follow Kieri gain power to injure rather than heal.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knab, Tim, 'Notes Concerning Use of Solandra among the Huichol,' Economic Botany 31.1 (1977): 80-86"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "huichol_kieri_plant",
+        "name": "The kieri plant (Solandra)",
+        "kind": "emblem",
+        "role": "The living Solandra shrub in which the defeated god is embodied and at which offerings are left.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knab, Tim, 'Notes Concerning Use of Solandra among the Huichol,' Economic Botany 31.1 (1977): 80-86"
+          }
+        ]
+      },
+      {
+        "id": "huichol_kieri_violin",
+        "name": "Kieri's violin",
+        "kind": "emblem",
+        "role": "The instrument whose music he plays to enchant victims into dancing to their ruin.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "MacLean, Hope, The Shaman's Mirror: Visionary Art of the Huichol (2012)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Kieri Tewiyari",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Knab, Tim, 'Notes Concerning Use of Solandra among the Huichol,' Economic Botany 31.1 (1977): 80-86"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Kieri is the Huichol wind-and-sorcery plant-god personifying the intoxicant Solandra (in earlier accounts Datura), the malevolent adversary of the deer culture-hero Kauyumari.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Furst, Peter T. & Myerhoff, Barbara G., 'Myth as History: The Jimson Weed Cycle of the Huichols of Mexico,' Antropológica 17 (1966): 3-39"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Knab, Tim, 'Notes Concerning Use of Solandra among the Huichol,' Economic Botany 31.1 (1977): 80-86"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kieri, the 'Tree of the Wind,' is a Huichol god of wind, magic and intoxication who personifies the psychoactive shrub Solandra (identified as Datura in the earliest recordings). In the great myth cycle he is the sinister sorcerer who tempts wanderers with his sweet-smelling leaves, sap and fruit, giving them visions before driving them to madness and death, and who plays a violin whose music lures victims to dance until they fall from cliffs. He is the archetypal adversary of Kauyumari, the deer culture-hero allied with the peyote, and after his defeat he is fixed in the land as the kieri plant, still feared and propitiated by those who seek dangerous sorcerous power."
+  },
+  {
+    "id": "huichol_haramara",
+    "name": {
+      "primary": "Tatei Haramara",
+      "alt": [
+        "Tatéi Haramara",
+        "Our Mother the Sea"
+      ],
+      "transliterations": {
+        "wixarika": "Tatéi Haramara",
+        "etymology": "tatei 'our mother' + haramara 'the sea, the ocean'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Huichol",
+    "primaryTradition": "Huichol",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "As the primeval waters of the west, Our Mother the Sea is venerated at the Pacific shore of San Blas as one of the great ancestral 'Our Mothers.'",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lumholtz, Carl, Symbolism of the Huichol Indians (1900)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea-ocean",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "haramara",
+          "script": "Latin (Wixárika)",
+          "rom": "haramara"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lumholtz, Carl, Symbolism of the Huichol Indians (1900)"
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schaefer, Stacy B. & Furst, Peter T. (eds.), People of the Peyote: Huichol Indian History, Religion, and Survival (1996)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "embody_the_ocean",
+        "name": "to be and to govern the western sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Pacific Ocean is her body; pilgrims come to its shore to leave offerings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lumholtz, Carl, Symbolism of the Huichol Indians (1900)"
+          }
+        ]
+      },
+      {
+        "id": "raise_rain_clouds",
+        "name": "to send up the clouds and rain that rise from the sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As a water-mother she is joined to the rain that returns to the mountains.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schaefer, Stacy B. & Furst, Peter T. (eds.), People of the Peyote: Huichol Indian History, Religion, and Survival (1996)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "huichol_waxiewe_rock",
+        "name": "Waxiewe, the white rock in the sea",
+        "kind": "site",
+        "role": "The white islet-rock rising from the ocean at San Blas that is her principal western shrine.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Schaefer, Stacy B. & Furst, Peter T. (eds.), People of the Peyote: Huichol Indian History, Religion, and Survival (1996)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tatéi Haramara, 'Our Mother the Sea,' is the Huichol goddess who is the divine personification of the Pacific Ocean, venerated at the western sacred site of San Blas.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lumholtz, Carl, Symbolism of the Huichol Indians (1900)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Schaefer, Stacy B. & Furst, Peter T. (eds.), People of the Peyote: Huichol Indian History, Religion, and Survival (1996)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tatéi Haramara, 'Our Mother the Sea,' is the Huichol goddess who is the Pacific Ocean itself, one of the several great 'Our Mothers' (Tateima) associated with water and rain. Her cult centres on the western edge of the Wixárika sacred geography at San Blas, Nayarit, where the white rock Waxiewe rises from the surf and receives the offerings of pilgrims. As primeval water she marks the western pole of the cosmos, balancing the eastern desert of Wirikuta where the peyote grows, and the moisture that rises from her body is understood to return to the highlands as the fertilizing rain."
+  },
+  {
+    "id": "huichol_werika_uimari",
+    "name": {
+      "primary": "Tatei Werika Uimari",
+      "alt": [
+        "Tatéi Werika Wimari",
+        "Our Mother Young Eagle",
+        "Our Mother Eagle Girl"
+      ],
+      "transliterations": {
+        "wixarika": "Tatéi Werika Wimari",
+        "etymology": "tatei 'our mother' + werika 'eagle' + wimari/uimari 'young girl, maiden'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Huichol",
+    "primaryTradition": "Huichol",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "huichol_kauyumari"
+    ],
+    "parentRoles": [
+      "emerged from"
+    ],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "In the founding of the world the young eagle-mother emerged in association with the deer culture-hero and spread her wings to form the sky on which the gods could stand.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "MacLean, Hope, The Shaman's Mirror: Visionary Art of the Huichol (2012)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky-heavens",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "werika",
+          "script": "Latin (Wixárika)",
+          "rom": "werika"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "MacLean, Hope, The Shaman's Mirror: Visionary Art of the Huichol (2012)"
+          }
+        ]
+      },
+      {
+        "sphereId": "sun-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "uphold_the_sky",
+        "name": "to hold up the sky on which the gods stand",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "She opened her wings to make the heavens above the earth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "MacLean, Hope, The Shaman's Mirror: Visionary Art of the Huichol (2012)"
+          }
+        ]
+      },
+      {
+        "id": "watch_earth_and_heaven",
+        "name": "to watch over earth and heaven with her two heads",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As a double-headed eagle one head oversees the sun's ascent and the other its descent.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "MacLean, Hope, The Shaman's Mirror: Visionary Art of the Huichol (2012)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "huichol_double_headed_eagle",
+        "name": "The double-headed eagle image",
+        "kind": "emblem",
+        "role": "Her form as a two-headed eagle, painted on temple masks and yarn paintings watching over sky and earth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "MacLean, Hope, The Shaman's Mirror: Visionary Art of the Huichol (2012)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "huichol_kauyumari",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "MacLean, Hope, The Shaman's Mirror: Visionary Art of the Huichol (2012)"
+          }
+        ],
+        "notes": "In yarn-painting narrative she bows her head and opens her wings to listen to the deer-god Kauyumari, from whom she is said to have emerged and whose counsel she heeds."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tatéi Werika Uimari, 'Our Mother Young Eagle,' is the Huichol double-headed eagle goddess of the sky who upholds the heavens and watches over the course of the sun.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "MacLean, Hope, The Shaman's Mirror: Visionary Art of the Huichol (2012)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tatéi Werika Uimari, 'Our Mother Young Eagle,' is the Huichol sky-goddess imagined as a great double-headed eagle whose outstretched wings are the vault of heaven on which the deities stand. Her two heads keep watch simultaneously over the earth below and the heavens above, one supervising the rising of Our Father Sun and the other his setting. In the visionary yarn paintings studied by ethnographers she is shown emerging from and attending upon the deer culture-hero Kauyumari, listening to his counsel, and she embodies the celestial order that shelters the world."
+  },
+  {
+    "id": "huichol_niwetsika",
+    "name": {
+      "primary": "Tatei Niwetsika",
+      "alt": [
+        "Tatéi Niwetsika",
+        "Our Mother Corn",
+        "Our Mother Maize"
+      ],
+      "transliterations": {
+        "wixarika": "Tatéi Niwetsika",
+        "etymology": "tatei 'our mother' + niwetsika 'maize, corn' personified as a mother-ancestor"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Huichol",
+    "primaryTradition": "Huichol",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Our Mother Corn appears as the maize-mother whose five daughters, the corn-maidens, are the coloured varieties of maize brought to feed the people.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "maize",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "niwetsika",
+          "script": "Latin (Wixárika)",
+          "rom": "niwetsika"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      },
+      {
+        "sphereId": "sustenance-agriculture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Myerhoff, Barbara G., Peyote Hunt: The Sacred Journey of the Huichol Indians (1974)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "be_the_living_maize",
+        "name": "to be the living maize that feeds the people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The corn plant is her body and that of her daughters.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      },
+      {
+        "id": "require_tender_care",
+        "name": "to wither if her corn-daughters are treated harshly",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In myth the corn-maidens weep and vanish when overworked, so the maize must be handled gently.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "huichol_five_corn_maidens",
+        "name": "The five coloured corn-cobs",
+        "kind": "emblem",
+        "role": "Her five daughters, the corn-maidens, embodying the white, red, yellow, spotted and blue varieties of maize.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tatéi Niwetsika, 'Our Mother Corn,' is the Huichol maize goddess and ancestral mother of the five corn-maidens who embody the coloured varieties of maize.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Myerhoff, Barbara G., Peyote Hunt: The Sacred Journey of the Huichol Indians (1974)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tatéi Niwetsika, 'Our Mother Corn,' is the Huichol maize-mother, one of the great 'Our Mothers' and a central figure of the maize-deer-peyote complex around which Wixárika ceremonial life turns. In the classic myth her five daughters, the corn-maidens, are the white, red, yellow, spotted and blue varieties of maize; a poor mother receives them as brides for her son, but when they are set to the hard labour of grinding they weep and depart, teaching that the corn must be treated tenderly and honoured with ritual. She is celebrated above all at the festival of the new maize and squash, and her cultivation binds men and women together in the reproduction of Huichol life and knowledge."
+  },
+  {
+    "id": "huichol_watakame",
+    "name": {
+      "primary": "Watákame",
+      "alt": [
+        "Watakame",
+        "Watakami",
+        "Warátame",
+        "The Clearer of Fields"
+      ],
+      "transliterations": {
+        "wixarika": "Watákame",
+        "etymology": "watákame 'one who fells the forest and clears a field', i.e. the first farmer"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Huichol",
+    "primaryTradition": "Huichol",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A hard-working farmer clearing his field is warned by Grandmother Nakawé of the coming flood and told to build a boat and gather seed, fire and a dog.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lumholtz, Carl, Unknown Mexico (1902)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "After surviving the five-year deluge he repeoples the world, becoming the ancestor from whom the Wixárika are descended.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "agriculture-farming",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "watákame",
+          "script": "Latin (Wixárika)",
+          "rom": "watákame"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      },
+      {
+        "sphereId": "ancestry-origins",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lumholtz, Carl, Unknown Mexico (1902)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "clear_the_first_field",
+        "name": "to fell the forest and clear the first cultivated field",
+        "term": {
+          "value": "coamil",
+          "script": "Latin (Spanish/Nahuatl)",
+          "rom": "coamil"
+        },
+        "inheritability": "none",
+        "notes": "His diligent field-clearing, mysteriously undone each night, opens the flood story.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lumholtz, Carl, Unknown Mexico (1902)"
+          }
+        ]
+      },
+      {
+        "id": "survive_the_flood",
+        "name": "to survive the primordial flood in a boat with his dog",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He floats out the deluge carrying seed-corn, beans, squash and fire.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "huichol_watakame_boat",
+        "name": "The fig-wood flood boat",
+        "kind": "vessel",
+        "role": "The hollowed boat, made on Nakawé's instruction, in which he rides out the five-year flood.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ]
+      },
+      {
+        "id": "huichol_watakame_dog",
+        "name": "Watákame's dog",
+        "kind": "companion",
+        "role": "His sole animal companion in the boat, who becomes the first woman and mother of his descendants.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lumholtz, Carl, Unknown Mexico (1902)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "huichol_nakawe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ],
+        "notes": "As the one devout mortal he heeds and obeys Grandmother Nakawé, who warns him of the flood, instructs him in building his boat, and afterward teaches him to plant, harvest and make offerings."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Watákame, the first farmer, is the Huichol flood-survivor culture hero from whom the Wixárika people are descended, saved from the deluge by the warning of Grandmother Nakawé.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lumholtz, Carl, Unknown Mexico (1902)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Zingg, Robert M., The Huichols: Primitive Artists (1938)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Watákame, 'the Clearer of Fields,' is the Huichol first farmer and flood hero, the one man who worked hard and honoured the gods while the world had grown corrupt. Warned by Grandmother Growth, Nakawé, that a great flood would drown the forgetful people, he built a boat and rode out the five-year deluge with a small dog and the seeds of maize, beans and squash together with fire. When the waters fell his dog was transformed into the first woman, and from their union the Wixárika are descended; Nakawé then taught him to plant, harvest and make the proper offerings, so that the whole cycle of Huichol agriculture and ceremony is traced back to him. His deliverance is re-enacted each year at the festival of the new corn and squash."
+  }
+]
+```

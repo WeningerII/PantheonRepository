@@ -1,0 +1,645 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Kogi
+Era (registered, exact): "Kogi traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added the four best-attested individuated sons of the Kogi Great Mother (Gauteóvan) who stand distinct from the already-registered Sintana: Kashindúkua (the jaguar-priest and first curer), Búnkuasé (the 'shining one', patron of the máma priesthood and moral law), Duginávi (culture-hero of cultivation who descends in the King of Vultures' garb), and Noána-sé (a Jaguar Lord of the jaguar-men trilogy). Each is documented by Reichel-Dolmatoff ('The Great Mother and the Kogi Universe', 1987; 'Training for the Priesthood among the Kogi', 1976), with Preuss's Forschungsreise zu den Kágaba (1926) and Gómez Cardona's 'El jaguar en la literatura Kogi' (2002) as independent corroboration; all are wired to the existing corpus as children of kogi_gauteovan and siblings of one another. I stopped here rather than adding thinner names such as Ambuambu or Námaku, which recur mainly in enumerations without enough individuated narrative to sustain a cited standalone entry.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "kogi_kashindukua",
+    "name": {
+      "primary": "Kashindúkua, the jaguar-priest and first curer",
+      "alt": [
+        "Cashindúkua",
+        "Kashindúa",
+        "Kashindukua"
+      ],
+      "transliterations": {
+        "kogi": "Kashindúkua",
+        "etymology": "Kágaba personal name of the first máma destined to become a jaguar; recorded by Reichel-Dolmatoff"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kogi",
+    "primaryTradition": "Kogi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "kogi_gauteovan"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "Kogi traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Kogi traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Born of the Great Mother, Kashindúkua was appointed by her to be the first great healer, able to draw sickness from a patient's body as if it were a tangible substance.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'Training for the Priesthood among the Kogi of Colombia.' In Enculturation in Latin America, ed. Johannes Wilbert. Los Angeles: UCLA Latin American Center, 1976."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "healing-and-disease",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe: A Concise Overview.' Journal of Latin American Lore 13(1): 73-113, 1987."
+          }
+        ]
+      },
+      {
+        "sphereId": "jaguar-transformation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "extract_sickness",
+        "name": "to draw sickness out of a patient's body as a tangible substance",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'Training for the Priesthood among the Kogi of Colombia.' In Enculturation in Latin America, ed. Johannes Wilbert, 1976."
+          }
+        ]
+      },
+      {
+        "id": "become_jaguar",
+        "name": "to transform himself between the shape of a man and that of a jaguar",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kogi_kashindukua_mask",
+        "name": "Golden jaguar mask",
+        "kind": "regalia",
+        "role": "The mask given to Kashindúkua by the Mother that let him see and devour disease, but through which he came to see even forbidden women as prey.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "kogi_noanase",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ],
+        "notes": "Kashindúkua and Noána-sé are grouped together, with Námaku, as the trilogy of jaguar-ancestors born of the Mother."
+      },
+      {
+        "kind": "sibling",
+        "personId": "kogi_bunkuase",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ],
+        "notes": "Fellow son of the Great Mother."
+      },
+      {
+        "kind": "sibling",
+        "personId": "kogi_duginavi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ],
+        "notes": "Fellow son of the Great Mother and brother of Sintana."
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Máma nebbí",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kashindúkua is a son of the Kogi Great Mother, the first máma-healer, whose gift of curing was joined to the power to become a jaguar, a power he transgressively abused, so that his story explains the origin of sickness and death.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'Training for the Priesthood among the Kogi of Colombia.' In Enculturation in Latin America, ed. Johannes Wilbert. Los Angeles: UCLA Latin American Center, 1976."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kashindúkua is one of the sons of Gauteóvan, the Kogi Great Mother, and the first ceremonial priest (máma) destined to heal humankind. The Mother appointed him a great curer, able to pull sickness from a sufferer's body as though it were a solid thing, and gave him the ability to put on the shape of a jaguar so that he could see disease and devour it. In the myths, however, the jaguar-sight that let him consume illness also led him to see forbidden women as prey; his transgression of the Mother's command to do only good is one of the origins the Kogi give for disease, death, and the ambivalent, dangerous character of jaguar-power. He is remembered together with Noána-sé and Námaku as one of the jaguar-ancestors."
+  },
+  {
+    "id": "kogi_bunkuase",
+    "name": {
+      "primary": "Búnkuasé, the shining lord and patron of the priesthood",
+      "alt": [
+        "Búnkua-sé",
+        "Búnkuase",
+        "Bunkuasé",
+        "the shining one"
+      ],
+      "transliterations": {
+        "kogi": "Búnkuasé",
+        "etymology": "glossed by Reichel-Dolmatoff as 'the shining one'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kogi",
+    "primaryTradition": "Kogi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "kogi_gauteovan"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "Kogi traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Kogi traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "A son of the Great Mother, Búnkuasé became the first legendary máma to gather and instruct disciples, establishing the rules by which future priests would be chosen and trained.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'Training for the Priesthood among the Kogi of Colombia.' In Enculturation in Latin America, ed. Johannes Wilbert, 1976."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "priesthood-and-initiation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "máma",
+          "script": "Latin",
+          "rom": "máma"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'Training for the Priesthood among the Kogi of Colombia.' In Enculturation in Latin America, ed. Johannes Wilbert, 1976."
+          }
+        ]
+      },
+      {
+        "sphereId": "moral-law-and-justice",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ordain_priests",
+        "name": "to establish the rules by which priests are chosen and educated",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'Training for the Priesthood among the Kogi of Colombia.' In Enculturation in Latin America, ed. Johannes Wilbert, 1976."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "kogi_kashindukua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ],
+        "notes": "Fellow son of the Great Mother."
+      },
+      {
+        "kind": "sibling",
+        "personId": "kogi_duginavi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ],
+        "notes": "Fellow son of the Great Mother and brother of Sintana."
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Búnkuasé",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Búnkuasé, 'the shining one', is a son of the Kogi Great Mother who personifies the highest moral principles of Kogi ethics and is the patron and first exemplar of the máma priesthood, having established the rules of priestly selection and training.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'Training for the Priesthood among the Kogi of Colombia.' In Enculturation in Latin America, ed. Johannes Wilbert. Los Angeles: UCLA Latin American Center, 1976."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe: A Concise Overview.' Journal of Latin American Lore 13(1): 73-113, 1987."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Búnkuasé, whose name is glossed 'the shining one', is one of the sons of Gauteóvan, the Kogi Great Mother. He personifies the highest moral principles of Kogi ethics and is therefore regarded as the patron and spiritual guardian of the priesthood. According to Reichel-Dolmatoff, the sons of the Mother raised the sacred mountain of Doanankuívi at the headwaters of the Tucurrice River and built inside it the first ceremonial house in which novices were to be trained; Búnkuasé was the first legendary máma to teach a group of disciples and to lay down the rules by which future priests would be chosen and educated. He thus stands as the archetype of light, justice, and the disciplined ascetic knowledge that defines the Kogi máma."
+  },
+  {
+    "id": "kogi_duginavi",
+    "name": {
+      "primary": "Duginávi, culture-hero of cultivation",
+      "alt": [
+        "Duginauí",
+        "Dugināvi",
+        "Duginavi"
+      ],
+      "transliterations": {
+        "kogi": "Duginávi",
+        "etymology": "Kágaba personal name recorded in the myths gathered by Preuss and Reichel-Dolmatoff"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kogi",
+    "primaryTradition": "Kogi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "kogi_gauteovan"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "Kogi traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Kogi traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "A son of the Great Mother and brother of Sintana, Duginávi dwelt in the sky among the Makú, the people of Thunder, before descending to earth to bring cultivation to humankind.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "agriculture-and-cultivation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ]
+      },
+      {
+        "sphereId": "thunder-and-sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Makú",
+          "script": "Latin",
+          "rom": "Makú"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Preuss, Konrad Theodor. Forschungsreise zu den Kágaba. St. Gabriel-Mödling: Anthropos, 1926."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_cultivation",
+        "name": "to descend from the sky and teach the cultivation of crops",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kogi_duginavi_vulture_cloak",
+        "name": "Cloak of the King of Vultures",
+        "kind": "regalia",
+        "role": "The borrowed feather-garment of the King of the Vultures in which Duginávi descended from the sky to earth to begin cultivating.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "kogi_kashindukua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ],
+        "notes": "Fellow son of the Great Mother."
+      },
+      {
+        "kind": "sibling",
+        "personId": "kogi_bunkuase",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ],
+        "notes": "Fellow son of the Great Mother."
+      }
+    ],
+    "epithets": [],
+    "sources": [
+      {
+        "claim": "Duginávi is a son of the Kogi Great Mother and brother of Sintana who lived in the sky among the Makú (Thunder people) and, borrowing the garb of the King of the Vultures, descended to earth as the culture-hero who introduced cultivation.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe: A Concise Overview.' Journal of Latin American Lore 13(1): 73-113, 1987."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Preuss, Konrad Theodor. Forschungsreise zu den Kágaba: Beobachtungen, Textaufnahmen und sprachliche Studien. St. Gabriel-Mödling: Anthropos, 1926."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Duginávi is one of the sons of the Kogi Great Mother and a brother of Sintana, the first ancestor. In the myths he dwelt in the sky together with the Makú, the 'people of Thunder', and is associated with a stormy, contentious father-figure, the Thunder Lord, against whom he strives. His central deed makes him a culture-hero of agriculture: finding the King of the Vultures, he borrowed the great bird's feather-clothing and in it descended from the sky to the earth, where he began to cultivate crops and taught the growing of food. Kogi and comparative accounts also remember him as a maker of ritual masks and, in some versions, as a jaguar-elder who quarrels with his father, steals his drum, and is driven off toward the arid Guajira. His narratives bind together sky, thunder, the vulture, and the first fields of the Sierra Nevada."
+  },
+  {
+    "id": "kogi_noanase",
+    "name": {
+      "primary": "Noána-sé, the jaguar lord",
+      "alt": [
+        "Noánase",
+        "Nóana-sé",
+        "Makú Noána-se"
+      ],
+      "transliterations": {
+        "kogi": "Noána-sé",
+        "etymology": "Kágaba name of one of the jaguar-ancestors; the qualifier Makú links him to the Thunder people"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kogi",
+    "primaryTradition": "Kogi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "kogi_gauteovan"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "Kogi traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Kogi traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "One of the jaguar-ancestors born of the Great Mother, Noána-sé is counted among the Jaguar Lords who could put on the shape of the jaguar to confront disease and death.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "jaguar-power",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ]
+      },
+      {
+        "sphereId": "thunder-and-sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Makú",
+          "script": "Latin",
+          "rom": "Makú"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "become_jaguar_noanase",
+        "name": "to take on the shape of a jaguar",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "kogi_kashindukua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          }
+        ],
+        "notes": "Remembered together with Kashindúkua and Námaku as the trilogy of jaguar-ancestors."
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Makú Noána-se",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe.' Journal of Latin American Lore 13(1), 1987."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Noána-sé is one of the jaguar-ancestors of the Kogi, a son of the Great Mother counted among the Jaguar Lords, remembered with Kashindúkua and Námaku in the mythic complex explaining sickness, death, and the ambivalence of jaguar-power.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gómez Cardona, Fabio. 'El jaguar en la literatura Kogi.' Poligramas 18, Universidad del Valle, 2002."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Reichel-Dolmatoff, Gerardo. 'The Great Mother and the Kogi Universe: A Concise Overview.' Journal of Latin American Lore 13(1): 73-113, 1987."
+          }
+        ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Noána-sé is one of the jaguar-ancestors of the Kogi, named as a son of the Great Mother and counted among the Jaguar Lords who dwell in the upper levels of the Kogi universe and who are linked with the Makú, the people of thunder. He appears above all in the mythic trilogy of jaguar-men, alongside Kashindúkua and Námaku: beings who could put on the jaguar's shape in order to see and devour disease, but whose abuse of that transformation, against the Mother's command to do only good, is one of the Kogi explanations for the coming of illness and death into the world. Where Kashindúkua is developed as the exemplary curer, Noána-sé stands as a companion figure in the same complex, embodying the dangerous, predatory pole of shamanic power."
+  }
+]
+```

@@ -1,0 +1,592 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ngäbe
+Era (registered, exact): "Ng\u00e4be traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four individuated figures: the twin celestial brothers Ñänä (Sun) and Sö (Moon), attested both in the Noncomala-Rutbe cycle (Edwardes & Spence 1912, p. 127; Alexander 1920) and in the modern bilingual etnohistoria "Ñaglon bata Sö / El Sol y la Luna" (Séptimo & Joly 1986, digital ed. 2021); Evia, the named mother of the twins in that modern recension (single-collection attestation, flagged in her notes); and the prophetess Mama Chi (Delia Bejerano de Atencio / Besikö Kruningrobu, d. 1964), founder of the Mama Tatda religion of Ngöbö (Young 1971; Guionneau-Sinclair 1987; Young in Encyclopedia of World Cultures 1995). Deliberately excluded after verification: "Tibi Tolero" (maize-seed guardian, blog-attested only with no traceable scholarly publication), the Metobo, Mironombo and Cronombo (classes of rival shamans in Séptimo & Joly, not individuals), Rey Montezuma and the brothers Midi and Juite Chali (post-contact legendary-historical narratives rather than divine or heroic beings), and Cuasrán (a Boruca, not Ngäbe, figure). Young's Encyclopedia of World Cultures entry also reports an unnamed lightning god and unnamed culture heroes, which cannot be individuated from the accessible scholarship; note that Gutenberg, archive.org and most publisher sites were blocked by the sandbox proxy, so verification relied on search-engine extraction of the cited works.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ngabe_nana",
+    "name": {
+      "primary": "Ñänä (the Sun)",
+      "alt": [
+        "Ñaglon",
+        "Ngweana",
+        "The Sun twin"
+      ],
+      "transliterations": {
+        "ngäbere": "ñänä",
+        "etymology": "From Ngäbere ñänä 'sun'; the dialect variants ñaglon and ngweana appear in the title of the bilingual tale 'Ñaglon bata Sö (Ñänä botdä Sö)(Ngweana botdä Sö) / El Sol y la Luna' (Séptimo & Joly 1986)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ngäbe",
+    "primaryTradition": "Ngäbe",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "ngabe_noncomala",
+      "ngabe_rutbe"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Ngäbe traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Ngäbe traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Borne as one of twins by the water-maiden Rutbe to the creator Noncomala, he rose into the sky as the sun to light the newly made world (Edwardes & Spence 1912, p. 127).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marian Edwardes & Lewis Spence, A Dictionary of Non-Classical Mythology (London: J. M. Dent & Sons / New York: E. P. Dutton, 1912), p. 127, s.v. 'Noncomala'"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ñänä",
+          "script": "Latin",
+          "rom": "ñänä, 'sun'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "light_world_by_day",
+        "name": "to light the world as the sun",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marian Edwardes & Lewis Spence, A Dictionary of Non-Classical Mythology (London: J. M. Dent & Sons / New York: E. P. Dutton, 1912), p. 127, s.v. 'Noncomala'"
+          }
+        ]
+      },
+      {
+        "id": "transform_into_radiant_man",
+        "name": "to change from a neglected, ash-covered child into a resplendent grown man",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, 'Ñaglon Bata Sö (Ñänä botdä Sö)(Ngweana botdä Sö) / El Sol y la Luna', digital edition (Panamá: Asociación de Antropología e Historia de Panamá, 2021)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ngabe_golden_garments",
+        "name": "Garments of gold",
+        "kind": "regalia",
+        "role": "the golden raiment in which the grown Sun reappears in the Ngäbe tale of the sun and the moon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, 'Ñaglon Bata Sö (Ñänä botdä Sö)(Ngweana botdä Sö) / El Sol y la Luna', digital edition (Panamá: Asociación de Antropología e Historia de Panamá, 2021)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "twin sibling",
+        "personId": "ngabe_so",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marian Edwardes & Lewis Spence, A Dictionary of Non-Classical Mythology (London: J. M. Dent & Sons / New York: E. P. Dutton, 1912), p. 127, s.v. 'Noncomala'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          }
+        ],
+        "notes": "The sun and the moon are twin brothers: in the recension written down in the nineteenth century they are borne together by the water-maiden Rutbe, and in the modern Potrero de Caña telling they grow up together at their mother Evia's hearth before taking their places in the sky."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ñänä, the Sun, is one of the twins borne by the water-maiden Rutbe to the creator Noncomala, and in the modern Ngäbe telling one of two neglected brothers who leave their mother Evia's hearth and become the sun and the moon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Marian Edwardes & Lewis Spence, A Dictionary of Non-Classical Mythology (London: J. M. Dent & Sons / New York: E. P. Dutton, 1912), p. 127, s.v. 'Noncomala'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hartley Burr Alexander, Latin-American Mythology (The Mythology of All Races, vol. XI; Boston: Marshall Jones Company, 1920), chapter on the Isthmian region (Guaymí creation and flood traditions)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Ngäbe (Guaymí) creation cycle first written down in the nineteenth century, the creator Noncomala waded into a river of the newly made but still dark world and loved the water-maiden Rutbe, who bore him twins, the sun and the moon; their rising brought light to the earth. In the modern telling collected at Potrero de Caña in the Comarca Ngäbe-Buglé and published bilingually as 'Ñaglon bata Sö / El Sol y la Luna', the two brothers grow up dirty and neglected in the ashes of the hearth of their mother, the singer Evia, and later reveal themselves as men of extraordinary build, the one identified with the sun clothed all in gold. Ñänä is the ordinary Ngäbere word for the sun, and the tale's title preserves the dialect variants ñaglon and ngweana."
+  },
+  {
+    "id": "ngabe_so",
+    "name": {
+      "primary": "Sö (the Moon)",
+      "alt": [
+        "The Moon twin"
+      ],
+      "transliterations": {
+        "ngäbere": "sö",
+        "etymology": "From Ngäbere sö 'moon', as glossed in the title of the bilingual tale 'Ñaglon bata Sö / El Sol y la Luna', 'The Sun and the Moon' (Séptimo & Joly 1986)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ngäbe",
+    "primaryTradition": "Ngäbe",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "ngabe_noncomala",
+      "ngabe_rutbe"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Ngäbe traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Ngäbe traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Borne as one of twins by the water-maiden Rutbe to the creator Noncomala, he rose into the sky as the moon to light the world by night (Edwardes & Spence 1912, p. 127).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marian Edwardes & Lewis Spence, A Dictionary of Non-Classical Mythology (London: J. M. Dent & Sons / New York: E. P. Dutton, 1912), p. 127, s.v. 'Noncomala'"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sö",
+          "script": "Latin",
+          "rom": "sö, 'moon'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "light_world_by_night",
+        "name": "to light the world by night as the moon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marian Edwardes & Lewis Spence, A Dictionary of Non-Classical Mythology (London: J. M. Dent & Sons / New York: E. P. Dutton, 1912), p. 127, s.v. 'Noncomala'"
+          }
+        ]
+      },
+      {
+        "id": "transform_into_radiant_man",
+        "name": "to change from a neglected, ash-covered child into a resplendent grown man",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, 'Ñaglon Bata Sö (Ñänä botdä Sö)(Ngweana botdä Sö) / El Sol y la Luna', digital edition (Panamá: Asociación de Antropología e Historia de Panamá, 2021)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ngabe_silver_garments",
+        "name": "Garments of silver",
+        "kind": "regalia",
+        "role": "the silver raiment in which the grown Moon reappears in the Ngäbe tale of the sun and the moon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, 'Ñaglon Bata Sö (Ñänä botdä Sö)(Ngweana botdä Sö) / El Sol y la Luna', digital edition (Panamá: Asociación de Antropología e Historia de Panamá, 2021)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "twin sibling",
+        "personId": "ngabe_nana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marian Edwardes & Lewis Spence, A Dictionary of Non-Classical Mythology (London: J. M. Dent & Sons / New York: E. P. Dutton, 1912), p. 127, s.v. 'Noncomala'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          }
+        ],
+        "notes": "The moon and the sun are twin brothers: in the recension written down in the nineteenth century they are borne together by the water-maiden Rutbe, and in the modern Potrero de Caña telling they grow up together at their mother Evia's hearth before taking their places in the sky."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sö, the Moon, is the twin brother of the Sun, borne by the water-maiden Rutbe to the creator Noncomala, and in the modern Ngäbe telling the neglected boy who returns as a man clothed in silver and becomes the moon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Marian Edwardes & Lewis Spence, A Dictionary of Non-Classical Mythology (London: J. M. Dent & Sons / New York: E. P. Dutton, 1912), p. 127, s.v. 'Noncomala'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hartley Burr Alexander, Latin-American Mythology (The Mythology of All Races, vol. XI; Boston: Marshall Jones Company, 1920), chapter on the Isthmian region (Guaymí creation and flood traditions)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sö, the Moon, is the twin brother of Ñänä, the Sun, in Ngäbe (Guaymí) tradition. In the creation cycle first recorded in the nineteenth century the two are the children of the creator Noncomala and the water-maiden Rutbe, whose birth ends the darkness of the primal world. In the modern bilingual telling from Potrero de Caña in the Comarca Ngäbe-Buglé, the brothers grow up filthy and ignored in the hearth-ashes of their mother, the singer Evia, and later return as imposing men, the moon-brother dressed all in silver, before taking their places in the sky. Sö is the ordinary Ngäbere word for the moon."
+  },
+  {
+    "id": "ngabe_evia",
+    "name": {
+      "primary": "Evia",
+      "alt": [
+        "The mother of the Sun and the Moon"
+      ],
+      "transliterations": {
+        "ngäbere": "Evia",
+        "etymology": "Personal name of the mother of the sun and the moon as recorded in the Ngäbere text of the Potrero de Caña telling (Séptimo & Joly 1986)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Ngäbe",
+    "primaryTradition": "Ngäbe",
+    "sex": "female",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Ngäbe traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Ngäbe traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Remembered in the oral tradition of Potrero de Caña as the solitary singer whose two neglected sons rose from the ashes of her hearth to become the sun and the moon (Séptimo & Joly 1986).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "song",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, 'Ñaglon Bata Sö (Ñänä botdä Sö)(Ngweana botdä Sö) / El Sol y la Luna', digital edition (Panamá: Asociación de Antropología e Historia de Panamá, 2021)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sing_at_festivities",
+        "name": "to sing at festivities as a celebrated singer",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, 'Ñaglon Bata Sö (Ñänä botdä Sö)(Ngweana botdä Sö) / El Sol y la Luna', digital edition (Panamá: Asociación de Antropología e Historia de Panamá, 2021)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "ngabe_nana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          }
+        ],
+        "notes": "In the Potrero de Caña telling Evia is the mother of the boy who becomes the sun; the tale states that the boys' father was unknown."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "ngabe_so",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          }
+        ],
+        "notes": "In the Potrero de Caña telling Evia is the mother of the boy who becomes the moon; the tale states that the boys' father was unknown."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Evia is the woman of Ngäbe oral tradition who lived alone with two small sons of unknown paternity; the neglected, ash-covered boys left her hearth and returned as resplendent men dressed in gold and in silver, the sun and the moon of the tale's title.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, Kugüe kira nie ngäbere / Sucesos antiguos dichos en guaymí (Etnohistoria guaymí) (Panamá: Asociación Panameña de Antropología, 1986), tale 'Ñaglon bata Sö / El Sol y la Luna'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Roger Séptimo & Luz Graciela Joly Adames, 'Ñaglon Bata Sö (Ñänä botdä Sö)(Ngweana botdä Sö) / El Sol y la Luna', digital edition (Panamá: Asociación de Antropología e Historia de Panamá, 2021)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Evia is the mother of the sun and the moon in the Ngäbe oral tradition of Potrero de Caña, in the Müna district of the Comarca Ngäbe-Buglé, recorded on cassette by the Ngäbe agronomist Roger Séptimo in 1983 and 1984 and published bilingually with the anthropologist Luz Graciela Joly Adames in 1986. She lives alone with two small sons whose father is unknown; a celebrated singer, she is frequently away at festivities while the boys lie dirty in the ashes around her hearth, until they leave her and return transformed into men of extraordinary build, dressed impeccably in gold and in silver, the sun and the moon of the tale's title. She occupies the narrative place held by the water-maiden Rutbe in the Guaymí creation story written down in the nineteenth century, though the published sources do not identify the two women with one another."
+  },
+  {
+    "id": "ngabe_mama_chi",
+    "name": {
+      "primary": "Mama Chi",
+      "alt": [
+        "Delia Bejerano de Atencio",
+        "Besikö Kruningrobu",
+        "Mamachi",
+        "Little Mother"
+      ],
+      "transliterations": {
+        "ngäbere": "Besikö Kruningrobu",
+        "etymology": "Mama Chi is glossed 'Little Mother' in the ethnographic literature on the movement she founded; Besikö Kruningrobu is recorded as her Ngäbere personal name (Young 1995; Guionneau-Sinclair 1987)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Ngäbe",
+    "primaryTradition": "Ngäbe",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Ngäbe traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Ngäbe traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Founded the Mama Tatda (Mama Chi) religion after reporting a vision of two celestial visitors at Krunbiti, near Boca de Balsa, on 22 September 1962 (Guionneau-Sinclair 1987).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Françoise Guionneau-Sinclair, Movimiento profético e innovación política entre los ngobe (guaymí) de Panamá: 1962-1984 (Panamá: Universidad de Panamá, 1987)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Françoise Guionneau-Sinclair, Movimiento profético e innovación política entre los ngobe (guaymí) de Panamá: 1962-1984 (Panamá: Universidad de Panamá, 1987)"
+          }
+        ]
+      },
+      {
+        "sphereId": "moral-law",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Philip D. Young, 'Ngawbe', in James W. Dow (ed.), Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean (Boston: G. K. Hall / Macmillan, 1995)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_divine_visions",
+        "name": "to receive visions of divine beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Françoise Guionneau-Sinclair, Movimiento profético e innovación política entre los ngobe (guaymí) de Panamá: 1962-1984 (Panamá: Universidad de Panamá, 1987)"
+          }
+        ]
+      },
+      {
+        "id": "prophesy_fate_of_people",
+        "name": "to foretell doom or good fortune for her people according to their conduct",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Philip D. Young, 'Ngawbe', in James W. Dow (ed.), Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean (Boston: G. K. Hall / Macmillan, 1995)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Mama Chi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Philip D. Young, 'Ngawbe', in James W. Dow (ed.), Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean (Boston: G. K. Hall / Macmillan, 1995)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ngabe_ngobo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Françoise Guionneau-Sinclair, Movimiento profético e innovación política entre los ngobe (guaymí) de Panamá: 1962-1984 (Panamá: Universidad de Panamá, 1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Philip D. Young, Ngawbe: Tradition and Change Among the Western Guaymí of Panama (Illinois Studies in Anthropology 7; Urbana: University of Illinois Press, 1971)"
+          }
+        ],
+        "notes": "As prophetess and founder of the Mama Tatda (Mama Chi) religion, she preached devotion to Ngöbö, the Ngäbe supreme god, in whose name the movement reformed ritual life."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mama Chi (Delia Bejerano de Atencio, Ngäbere name Besikö Kruningrobu, died 14 September 1964 aged twenty-three) was the Ngäbe prophetess whose 1962 vision of celestial visitors founded the Mama Tatda or Mama Chi religion centred on Ngöbö.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Françoise Guionneau-Sinclair, Movimiento profético e innovación política entre los ngobe (guaymí) de Panamá: 1962-1984 (Panamá: Universidad de Panamá, 1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Philip D. Young, Ngawbe: Tradition and Change Among the Western Guaymí of Panama (Illinois Studies in Anthropology 7; Urbana: University of Illinois Press, 1971)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Philip D. Young, 'Ngawbe', in James W. Dow (ed.), Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean (Boston: G. K. Hall / Macmillan, 1995)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Delia Bejerano de Atencio, known by her Ngäbere name Besikö Kruningrobu and by the title Mama Chi ('Little Mother'), was a young Ngäbe woman of the Tabasará region of western Panama who, on 22 September 1962 at Krunbiti near Boca de Balsa, reported a vision of two celestial visitors who charged her with reforming Ngäbe life. The religion that grew from her preaching, called Mama Chi or Mama Tatda ('Mother-Father'), centred worship on Ngöbö, prohibited alcohol and the balsería and chichería festivals, discouraged contact with outsiders, instituted regular prayer meetings, and prophesied destruction if its precepts were ignored and prosperity if they were kept. The movement swept the Ngäbe area in the 1960s, drew many sukias (shamans) into its priesthood, and is credited by ethnographers with beginning the political mobilization that led to the Ngäbe-Buglé comarca. Mama Chi died of a fever on 14 September 1964, aged twenty-three; leadership of the still-continuing religion later passed to others, including her daughter Emilce Atencio."
+  }
+]
+```

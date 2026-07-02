@@ -1,0 +1,339 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ket
+Era (registered, exact): "mythic / cosmic"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added the three named 'master' (owner) spirits that Ket hunting-and-fishing religion individuates alongside the cosmic deities already in the corpus: Kaigus, host of the forest and its game (also met as a bear or a 'forest-mother'); Kholai, mistress of the hunted animals; and Ulgys, master of the rivers and their fish. All three are named, offering-receiving beings documented by Alekseenko (1967) and Vajda (2011), distinct from generic unnamed nature spirits, which is why they clear the individuation bar. I checked for but did not add a moon or earth deity: in the accessible scholarship the Moon of the Es–Hosedem tale and the earth are impersonal, unnamed features rather than individuated figures, so they were excluded rather than padded in. The three masters are left solitary because the sources give them no attested parentage or myth-kinship to Es, Hosedem, Tomam, Alba or Doh.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ket_kaigus",
+    "name": {
+      "primary": "Master of the Forest (Kaigus)",
+      "alt": [
+        "Kajgus",
+        "Qaigus",
+        "Kaygus",
+        "Kaigus'",
+        "Кайгусь",
+        "Хайгусь"
+      ],
+      "transliterations": {
+        "ket": "kajgus",
+        "etymology": "Ket kajgus, the personified 'owner' or host of the taiga and its animals; in the ethnographic literature glossed as the master (khozyain) of forest game."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ket",
+    "primaryTradition": "Ket",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / cosmic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic / cosmic",
+        "eraOrdering": 0,
+        "startEvent": "As the enduring master of the taiga, Kaigus presides over the wild animals of the forest, granting or withholding game to hunters who honour him with offerings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки [The Kets: Historical-Ethnographic Essays]. Leningrad: Nauka."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "forest-and-wild-game",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kajgus",
+          "script": "Latin",
+          "rom": "kaigus"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки. Leningrad: Nauka — Kaigus as master of all animals of the forest."
+          }
+        ]
+      },
+      {
+        "sphereId": "the-hunt",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture. Fairbanks: Alaska Native Language Center — the forest master who dispenses hunting luck."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_or_withhold_game",
+        "name": "to grant or withhold success in the hunt",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Kaigus rewards hunters who leave proper offerings and punishes disrespect with empty forests.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки. Leningrad: Nauka."
+          }
+        ]
+      },
+      {
+        "id": "appear_as_a_bear",
+        "name": "to appear as a bear or man-bear",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Ket bear cult the forest master is encountered in ursine or man-bear form; the bear ceremony returns the animal's bones so that it may be reborn.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1960). Культ медведя у кетов [The Bear Cult among the Ket]. Советская этнография / Soviet Ethnography, no. 4."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kaigus is the named master (owner-spirit) of the Ket taiga and of its wild animals, an ambiguous power sometimes met as a female 'forest-mother' or as a bear, who dispenses or denies hunting fortune.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки [The Kets]. Leningrad: Nauka."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture. Fairbanks: Alaska Native Language Center."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kaigus is the Ket spirit-owner of the forest and its game, one of the named 'masters' of the natural world in Ket hunting religion. Ethnographers record the being as gender-ambiguous: sometimes a male man-bear, sometimes a female 'forest-mother' who tests and then rewards a hunter. Kaigus stands at the centre of the Ket bear ceremony, in which the killed bear's bones are returned to the east so that the animal, and the master's bounty, may be renewed. Hunters secure his favour with offerings and ritual respect, and offend him at the cost of an empty forest."
+  },
+  {
+    "id": "ket_kholai",
+    "name": {
+      "primary": "Mistress of the Hunted Animals (Kholai)",
+      "alt": [
+        "Kholaj",
+        "Kholay",
+        "Kholəj",
+        "Холай",
+        "Холэй"
+      ],
+      "transliterations": {
+        "ket": "kholaj",
+        "etymology": "Ket kholaj, named female 'mistress' (khozyaika) of the prey animals of the hunt, sometimes identified with the forest itself."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ket",
+    "primaryTradition": "Ket",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / cosmic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic / cosmic",
+        "eraOrdering": 0,
+        "startEvent": "Kholai reigns as the mistress of all the hunted animals, releasing prey to hunters who observe the proper rites and closing the chase to those who do not.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки [The Kets]. Leningrad: Nauka — Kholai as mistress of all hunted animals."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "prey-and-the-hunt",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kholaj",
+          "script": "Latin",
+          "rom": "kholai"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки. Leningrad: Nauka."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "release_the_prey",
+        "name": "to release or withhold prey to hunters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As owner of the game animals she determines whether the hunt succeeds, requiring appeasement through offerings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки. Leningrad: Nauka."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kholai is the named Ket mistress of the hunted animals (patroness of prey), one of the owner-spirits of the natural world who must be appeased with offerings for the hunt to prosper.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки [The Kets]. Leningrad: Nauka."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture. Fairbanks: Alaska Native Language Center."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kholai is the Ket mistress of the prey animals, a named female owner-spirit standing beside Kaigus among the masters of the wild. Where Kaigus owns the forest and its beasts generally, Kholai is specifically the patroness of the hunted game; some accounts blur the two and treat her as mistress of the forest as well. Hunters direct offerings and ritual respect to her to open the chase, and her displeasure spells failure and want."
+  },
+  {
+    "id": "ket_ulgys",
+    "name": {
+      "primary": "Master of the Rivers and Fish (Ulgys)",
+      "alt": [
+        "Ulgus",
+        "Ulgəs",
+        "Ульгысь",
+        "Ульгусь"
+      ],
+      "transliterations": {
+        "ket": "ulgys",
+        "etymology": "Ket ulgys, the named 'owner' (khozyain) of the waterways, personifying the Yenisei and its tributaries and their yield of fish."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ket",
+    "primaryTradition": "Ket",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / cosmic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic / cosmic",
+        "eraOrdering": 0,
+        "startEvent": "Ulgys owns the waterways of the Yenisei basin and their fish, granting abundant catches to fishermen who honour the river and withholding them from those who foul or disrespect it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки [The Kets]. Leningrad: Nauka — Ulgys as master of waterways and fish."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers-and-fishing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ulgys",
+          "script": "Latin",
+          "rom": "ulgus"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки. Leningrad: Nauka."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_the_catch",
+        "name": "to fill or empty the fishing nets",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As owner of the rivers Ulgys controls the fish yield, rewarding offerings of tea, tobacco, food and coin and punishing pollution of the water with scarcity.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture. Fairbanks: Alaska Native Language Center."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ulgys is the named Ket master of the waterways and their fish, the owner-spirit of the Yenisei and its tributaries whose favour, secured by offerings, governs the success of fishing.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alekseenko, E.A. (1967). Кеты: историко-этнографические очерки [The Kets]. Leningrad: Nauka."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture. Fairbanks: Alaska Native Language Center."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ulgys is the Ket spirit-owner of the rivers and their fish, completing the triad of nature-masters that also includes the forest-master Kaigus and the game-mistress Kholai. Inhabiting the Yenisei and its tributaries, Ulgys is a benevolent but temperamental power over freshwater abundance; fishermen leave offerings of tea, tobacco, food and coins to keep the catch plentiful, while polluting or disrespecting the water invites scarcity and misfortune. Accounts vary on the being's gender, treating the river-owner at times as a masculine master and at times as a feminine source of plenty."
+  }
+]
+```

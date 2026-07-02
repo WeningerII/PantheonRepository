@@ -1,0 +1,301 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Lenca
+Era (registered, exact): "Lenca traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the two figures that ethnohistorical scholarship genuinely individuates beyond the recently authored divine core: the hero-ancestor Lempira and his overlord Entepica, both attested in Herrera's Historia general (Década VI, 1601–1615) and in modern scholarship (Chapman 1978; Newson 1986; Martínez Castillo 1987, who published Rodrigo Ruiz's 1558 probanza naming "Elempira"). I verified the remainder of the record is exhausted: García de Palacio's 1576 two-faced, many-eyed stone idol at Cezori/Sesori is the already-authored Icelaca; Comizahual's three sons/brothers are unnamed in Herrera and all retellings; and Anne Chapman's ethnography (Los hijos del copal y la candela, 1985–86) records only syncretic Catholic figures and unnamed spirit classes (ángeles, señores de los cerros, dueños), which do not qualify as individuated native figures. The creator "Managuara/Maraguana" circulating online was examined and excluded because it carries no scholarly citation for the Lenca and appears to conflate Cacaopera (Kakawira, Misumalpan-speaking) oral tradition collected by Miguel Ángel Amaya Amaya with Lenca material.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "lenca_lempira",
+    "name": {
+      "primary": "Lempira, Lord of the Mountain",
+      "alt": [
+        "Lempira",
+        "Elempira",
+        "Lempaera",
+        "Señor de la Sierra"
+      ],
+      "transliterations": {
+        "lenca": "Lempira",
+        "etymology": "Interpreted by the Salvadoran scholar Jorge Lardé as Lempaera, from Lenca lempa 'lord' (a title of rank) and era 'hill, mountain range', hence 'Lord of the Mountain'; the 1558 service record (probanza) of the soldier Rodrigo Ruiz writes the name as Elempira."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Lenca",
+    "primaryTradition": "Lenca",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Lenca traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Lenca traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Lempira enters the documentary record in 1537, when Antonio de Herrera's chronicle describes him raising the towns of the Cerquín highlands of Honduras into an armed confederation against the Spanish conquest.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio de Herrera y Tordesillas, Historia general de los hechos de los castellanos en las islas y tierra firme del mar océano, Década VI (Madrid, 1601–1615)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Linda A. Newson, The Cost of Conquest: Indian Decline in Honduras under Spanish Rule (Boulder: Westview Press, Dellplain Latin American Studies 20, 1986)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio de Herrera y Tordesillas, Historia general de los hechos de los castellanos en las islas y tierra firme del mar océano, Década VI (Madrid, 1601–1615)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Linda A. Newson, The Cost of Conquest: Indian Decline in Honduras under Spanish Rule (Boulder: Westview Press, Dellplain Latin American Studies 20, 1986)"
+          }
+        ]
+      },
+      {
+        "sphereId": "sovereignty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anne Chapman, Los lencas de Honduras en el siglo XVI (Tegucigalpa: Instituto Hondureño de Antropología e Historia, 1978)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "confederate_war_leadership",
+        "name": "to unite rival highland chiefdoms into a single war confederation",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Herrera credits Lempira with drawing together the Cares and other formerly hostile Lenca groups, mustering warriors from some two hundred towns.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio de Herrera y Tordesillas, Historia general de los hechos de los castellanos en las islas y tierra firme del mar océano, Década VI (Madrid, 1601–1615)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Linda A. Newson, The Cost of Conquest: Indian Decline in Honduras under Spanish Rule (Boulder: Westview Press, Dellplain Latin American Studies 20, 1986)"
+          }
+        ]
+      },
+      {
+        "id": "stronghold_defense",
+        "name": "to hold a fortified mountain refuge against prolonged siege",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He withstood the Spanish siege of the Peñol de Cerquín for some six months in 1537–1538 while the uprising spread through much of the province.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Linda A. Newson, The Cost of Conquest: Indian Decline in Honduras under Spanish Rule (Boulder: Westview Press, Dellplain Latin American Studies 20, 1986)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "lenca_penol_de_cerquin",
+        "name": "Peñol de Cerquín",
+        "kind": "stronghold",
+        "role": "Fortified rock citadel of the southwestern Honduran highlands from which Lempira directed the 1537–1538 resistance",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Linda A. Newson, The Cost of Conquest: Indian Decline in Honduras under Spanish Rule (Boulder: Westview Press, Dellplain Latin American Studies 20, 1986)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anne Chapman, Los lencas de Honduras en el siglo XVI (Tegucigalpa: Instituto Hondureño de Antropología e Historia, 1978)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "lenca_entepica",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio de Herrera y Tordesillas, Historia general de los hechos de los castellanos en las islas y tierra firme del mar océano, Década VI (Madrid, 1601–1615)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anne Chapman, Los lencas de Honduras en el siglo XVI (Tegucigalpa: Instituto Hondureño de Antropología e Historia, 1978)"
+          }
+        ],
+        "notes": "According to Herrera's chronicle, Entepica, paramount lord of Cerquín and Piraera, charged Lempira with organizing the armed resistance to the Spanish advance because of his reputation for invincibility."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Lempira was the Lenca war captain who in 1537–1538 led the confederated resistance of the Cerquín highlands against the Spanish conquest of Honduras, dying in its defense and becoming the paradigmatic hero-ancestor of the Lenca and the national hero of Honduras.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio de Herrera y Tordesillas, Historia general de los hechos de los castellanos en las islas y tierra firme del mar océano, Década VI (Madrid, 1601–1615)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mario Felipe Martínez Castillo, Los últimos días de Lempira y otros documentos (Tegucigalpa: Editorial Universitaria, 1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Linda A. Newson, The Cost of Conquest: Indian Decline in Honduras under Spanish Rule (Boulder: Westview Press, Dellplain Latin American Studies 20, 1986)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anne Chapman, Los lencas de Honduras en el siglo XVI (Tegucigalpa: Instituto Hondureño de Antropología e Historia, 1978)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Lempira, also written Elempira in the 1558 service record of the soldier Rodrigo Ruiz, was a Lenca war leader of the Cerquín highlands of southwestern Honduras. The chronicler Antonio de Herrera relates that in 1537, at the charge of the paramount lord Entepica, he united some two hundred towns, including the Cares with whom his own people had been at war, and held the fortified Peñol de Cerquín against the Spaniards for about six months while the revolt spread through much of the province of Honduras-Higueras. Two traditions of his death survive: in Herrera's account he was treacherously shot with an arquebus during a feigned parley, whereas the probanza de méritos of Rodrigo Ruiz (Archivo General de Indias, Patronato 69, ramo 5), rediscovered and published by Mario Felipe Martínez Castillo, claims that Ruiz killed him in hand-to-hand combat and carried off his head. His name, traditionally interpreted as 'Lord of the Mountain', was given in 1926 to the national currency of Honduras and later to a department of the republic, and 20 July is kept as the Day of Lempira; among the modern Lenca he remains the emblematic ancestor-hero of indigenous resistance."
+  },
+  {
+    "id": "lenca_entepica",
+    "name": {
+      "primary": "Entepica, Lord of Cerquín",
+      "alt": [
+        "Entepica",
+        "Tapica"
+      ],
+      "transliterations": {
+        "lenca": "Entepica",
+        "etymology": "A Lenca personal name of unestablished meaning, recorded by the chronicler Antonio de Herrera in the forms Entepica and Tapica."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Lenca",
+    "primaryTradition": "Lenca",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Lenca traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Lenca traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Entepica appears in Antonio de Herrera's chronicle as the paramount lord of the province of Cerquín and of the town of Piraera on the eve of the Spanish conquest of the Honduran highlands in the 1530s.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio de Herrera y Tordesillas, Historia general de los hechos de los castellanos en las islas y tierra firme del mar océano, Década VI (Madrid, 1601–1615)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sovereignty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio de Herrera y Tordesillas, Historia general de los hechos de los castellanos en las islas y tierra firme del mar océano, Década VI (Madrid, 1601–1615)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anne Chapman, Los lencas de Honduras en el siglo XVI (Tegucigalpa: Instituto Hondureño de Antropología e Historia, 1978)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "paramount_chieftainship",
+        "name": "to hold supreme lordship over the towns of a highland province",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Herrera styles him the principal lord and cacique of the province of Cerquín and of Piraera, whose authority extended over the settlements around the Peñol de Cerquín.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio de Herrera y Tordesillas, Historia general de los hechos de los castellanos en las islas y tierra firme del mar océano, Década VI (Madrid, 1601–1615)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anne Chapman, Los lencas de Honduras en el siglo XVI (Tegucigalpa: Instituto Hondureño de Antropología e Historia, 1978)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Entepica was the paramount Lenca lord of the province of Cerquín and the town of Piraera who, according to Herrera's chronicle, entrusted the war captain Lempira with organizing the resistance to the Spanish conquest in 1537.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio de Herrera y Tordesillas, Historia general de los hechos de los castellanos en las islas y tierra firme del mar océano, Década VI (Madrid, 1601–1615)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anne Chapman, Los lencas de Honduras en el siglo XVI (Tegucigalpa: Instituto Hondureño de Antropología e Historia, 1978)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Entepica, whose name is also written Tapica, is recorded by the chronicler Antonio de Herrera as the principal lord and cacique of the Lenca province of Cerquín and of the town of Piraera in southwestern Honduras. Honduran historiography, following Herrera, credits him with commissioning the war captain Lempira to organize the confederated defense of the Peñol de Cerquín against the Spanish invasion of 1537, on account of Lempira's reputation for invincibility. He thus personifies the paramount chiefly authority of the pre-conquest Lenca of Cerquín, the same legendary province over which the Comizahual cycle is set; nothing further is recorded of his life or death."
+  }
+]
+```

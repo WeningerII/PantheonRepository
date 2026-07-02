@@ -1,0 +1,371 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Chaga
+Era (registered, exact): "mythic-past", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added three individuated, cited figures: the personified brother peaks Kibo and Mawenzi (numina, from Gutmann's Volksbuch der Wadschagga 1914, Dundas's Kilimanjaro and its People 1924, and Hutchinson's 'The Meaning of Kilimanjaro', Tanganyika Notes and Records 1965) and the mortal Tone, whose offence against Ruwa brought famine and whose death upon Kibo the legend uses to explain the landscape (Hutchinson 1965, p. 65, translating Gutmann's collections). I deliberately excluded Werner's one-legged sky-stranger 'Mrule' as a probable variant of the existing Murile, and the irimu ogres and warimu ancestors as unindividuated spirit classes. Chagga religion is otherwise strongly centred on Ruwa and the ancestor cult, with no further well-attested named deities in the ethnographic record (Dundas 1924; Gutmann 1909/1914).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "chaga_kibo",
+    "name": {
+      "primary": "Kibo",
+      "alt": [
+        "Kipoo",
+        "Kyibo"
+      ],
+      "transliterations": {
+        "kichagga": "Kipoo",
+        "etymology": "Hutchinson derives Kibo from Kichagga kipoo, 'spotted', for the dark rock flecked with snow, the peak's name also serving locally as the word for snow (Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, 1965)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Chaga",
+    "primaryTradition": "Chaga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Kibo, the snow-capped main summit of Kilimanjaro, is personified in Chagga legend as the elder and more generous of two brother peaks and is revered as the seat of the high god Ruwa, toward which prayers and the dead are oriented (Dundas, Kilimanjaro and its People, 1924).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles Dundas, Kilimanjaro and its People: A History of the Wachagga, their Laws, Customs and Legends (London: H.F. & G. Witherby, 1924)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kipoo",
+          "script": "Latin",
+          "rom": "the spotted / snow-covered one (Kichagga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965)"
+          }
+        ]
+      },
+      {
+        "sphereId": "snow-and-cold",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kibo",
+          "script": "Latin",
+          "rom": "snow (Kichagga usage for the white summit)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_fire",
+        "name": "to give fire and embers to those who come begging",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the well-known Chagga tale, the peak Mawenzi repeatedly came to Kibo to beg live embers, which Kibo granted until his patience was exhausted.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruno Gutmann, Volksbuch der Wadschagga: Sagen, Märchen, Fabeln und Schwänke (Leipzig: Verlag der Evangelisch-lutherischen Mission, 1914)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "chaga_mawenzi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruno Gutmann, Volksbuch der Wadschagga (1914)"
+          }
+        ],
+        "notes": "In Chagga legend Kibo and Mawenzi are brothers; the jagged form of Mawenzi is explained by the beating Kibo gave him after too many visits to beg embers."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "chaga_ruwa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles Dundas, Kilimanjaro and its People (1924)"
+          }
+        ],
+        "notes": "Kibo is venerated as the dwelling-place of the high god Ruwa; Chagga prayers and burials were oriented toward the peak."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kibo is the personified snow summit of Kilimanjaro, the generous elder brother of Mawenzi and the seat of the god Ruwa in Chagga belief.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Charles Dundas, Kilimanjaro and its People: A History of the Wachagga, their Laws, Customs and Legends (1924)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bruno Gutmann, Volksbuch der Wadschagga: Sagen, Märchen, Fabeln und Schwänke (1914)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kibo, the higher, snow-covered dome of Kilimanjaro, is more than a landmark in Chagga religion: it is a personified, sacred presence. Dundas records that the Chagga treated Kibo as the abode of the high god Ruwa, offering prayers while facing the peak and burying the dead oriented toward it. In the widely told legend recorded by the missionary-ethnographer Bruno Gutmann, Kibo and the neighbouring peak Mawenzi are brothers: Mawenzi, whose fire kept going out, came again and again to beg embers from Kibo, until Kibo lost patience and thrashed him, leaving Mawenzi with his shattered, jagged profile while Kibo remained smooth and serene."
+  },
+  {
+    "id": "chaga_mawenzi",
+    "name": {
+      "primary": "Mawenzi",
+      "alt": [
+        "Kimawenze",
+        "Mawensi"
+      ],
+      "transliterations": {
+        "kichagga": "Kimawenze",
+        "etymology": "Hutchinson derives Mawenzi from Kichagga kimawenze, 'having a broken top' or notched summit (Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, 1965)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Chaga",
+    "primaryTradition": "Chaga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Mawenzi, the jagged eastern peak of Kilimanjaro, is personified in Chagga legend as the younger brother of Kibo, whose battered appearance dates from the beating he received for repeatedly begging embers (Gutmann, Volksbuch der Wadschagga, 1914).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruno Gutmann, Volksbuch der Wadschagga: Sagen, Märchen, Fabeln und Schwänke (Leipzig, 1914)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kimawenze",
+          "script": "Latin",
+          "rom": "having a broken or notched top (Kichagga)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hide_in_clouds",
+        "name": "to hide his shattered face in cloud out of shame",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Chagga tellings explain that Mawenzi keeps his broken summit veiled in mist from shame at the beating received from Kibo.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruno Gutmann, Volksbuch der Wadschagga (1914)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "chaga_kibo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruno Gutmann, Volksbuch der Wadschagga (1914)"
+          }
+        ],
+        "notes": "Mawenzi is the younger brother of Kibo in Chagga legend; his jagged profile is the mark of the blows Kibo dealt him after too many visits to beg embers for his fire."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mawenzi is the personified jagged peak of Kilimanjaro, the younger brother of Kibo whose broken summit Chagga legend explains as the result of a thrashing for begging embers once too often.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bruno Gutmann, Volksbuch der Wadschagga: Sagen, Märchen, Fabeln und Schwänke (1914)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Charles Dundas, Kilimanjaro and its People (1924)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mawenzi is the older, heavily eroded eastern summit of Kilimanjaro, personified in one of the best-known Chagga aetiological tales, recorded by Bruno Gutmann and later discussed by Hutchinson. Mawenzi's household fire kept dying, so he went again and again to his elder brother Kibo to beg live embers; exasperated, Kibo finally beat him so severely that his summit was smashed into the ragged pinnacles seen today, and Mawenzi is said to keep his ruined face hidden in cloud out of shame. The tale encodes the visual contrast between the smooth snow dome of Kibo and Mawenzi's shattered rock towers."
+  },
+  {
+    "id": "chaga_tone",
+    "name": {
+      "primary": "Tone",
+      "alt": [],
+      "transliterations": {
+        "kichagga": "Tone",
+        "etymology": "Personal name recorded in the Chagga famine legend translated by Hutchinson from Gutmann's collections (Hutchinson, 'The Meaning of Kilimanjaro', 1965)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Chaga",
+    "primaryTradition": "Chaga",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-past"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-past",
+        "eraOrdering": 0,
+        "startEvent": "Tone belongs to the Chagga legendary past: his provocation of the god Ruwa brought famine upon the land, and his fatal pursuit of miraculous cattle explains the raising of the hills, ending with his collapse upon Kibo (Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, 1965, p. 65).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965), p. 65"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "famine",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "provoke_divine_famine",
+        "name": "to provoke the god Ruwa into sending famine upon the land",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The legend presents the great famine as the direct consequence of Tone's offence against Ruwa.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "chaga_ruwa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965)"
+          }
+        ],
+        "notes": "Tone was a mortal subject of the high god Ruwa, whose anger he provoked and whose famine punished the whole land."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tone is the legendary Chagga man who provoked the god Ruwa to send famine, was driven out by his people, and, chasing the escaped miraculous cattle of the hermit who sheltered him, collapsed and died upon Kibo as the fleeing cattle threw up the hills of the region.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "J. A. Hutchinson, 'The Meaning of Kilimanjaro', Tanganyika Notes and Records, No. 64/65 (1965), p. 65"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bruno Gutmann, Volksbuch der Wadschagga: Sagen, Märchen, Fabeln und Schwänke (1914)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tone is the protagonist of a Chagga aetiological legend of famine and landscape. Having provoked the high god Ruwa into bringing famine upon the land, Tone was driven out by his angry neighbours and found refuge only with a solitary dweller whose stones miraculously turned into cattle. Warned never to open the cattle stable, Tone disobeyed; the herd stampeded, throwing up hills — including Mawenzi and Kibo — as they fled, and Tone, exhausted by the pursuit, finally collapsed and perished upon Kibo. The tale, published in translation by Hutchinson from the German mission-era collections, ties the visible topography of the Kilimanjaro region to a moral narrative of divine anger and broken prohibition."
+  }
+]
+```

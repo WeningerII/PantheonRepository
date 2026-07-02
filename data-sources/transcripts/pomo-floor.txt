@@ -1,0 +1,830 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Pomo
+Era (registered, exact): "myth-age", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six individuated, primary-ethnography-attested Pomo figures: Thunder Man, Coyote's son charged with thunder and the salmon runs (Loeb 1926; Barrett 1933); the monster-bird Kilak/Gilak (Barrett 1933; Curtis 1924; de Angulo 1930); the bird-hero Falcon/tciya, Coyote's grandson (Barrett 1906, 1933; de Angulo & Freeland 1928); Obsidian Man of Mount Konocti (Barrett 1933); Frog Woman of Frog Woman Rock, Coyote's wife and Obsidian Man's mother (Clark & Williams 1954; Hudson ms c. 1892 via California Historical Landmark 549 documentation); and Calnis, the eastern world-end companion impersonated alongside the existing Kuksu (Barrett 1917; Loeb 1926, 1932). Excluded as non-qualifying: "Dasan," documented as a Northern Pomo name of the existing Kuksu, and "Makila," a tertiary-dictionary thunder god not traceable in primary ethnography whose niche the attested Thunder Man occupies; likewise the bagil water-monsters and olayome rock-people, which are spirit classes rather than named individuals. Sun-man and the Sun-people appear only at index level in Barrett 1933 without recoverable individuated detail, so they were left out; note that direct fetching of full texts was proxy-blocked, so verification relied on search-indexed content of Barrett 1906/1917/1933, Loeb 1926/1932, Curtis vol. 14, JAF 41 (1928), American Anthropologist 32 (1930), and the landmark documentation.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "pomo_thunder_man",
+    "name": {
+      "primary": "Thunder Man",
+      "alt": [
+        "Thunder"
+      ],
+      "transliterations": {
+        "etymology": "English rendering of the Pomo thunder personage as he appears in the creation narrative recorded by Edwin Loeb (Pomo Folkways, 1926) and in the myth corpus of S. A. Barrett (Pomo Myths, 1933)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "pomo_coyote"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "myth-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "myth-age",
+        "eraOrdering": 0,
+        "startEvent": "In the Pomo creation narrative recorded by Loeb, Coyote's son Thunder Man is stationed at the making of the world and told to make thunder without breaking the rocks or the trees (Loeb 1926).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      },
+      {
+        "sphereId": "salmon-runs",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_thunder",
+        "name": "to make thunder and storm without splitting the rocks or the trees",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Coyote cautioned him not to thunder too much lest he crack the earth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ]
+      },
+      {
+        "id": "release_salmon",
+        "name": "to let the salmon out into the streams when the waters come",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The first thunder of the season is thus tied to the arrival of the fish runs.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "pomo_cocoon_rattle",
+        "name": "cocoon rattle",
+        "kind": "instrument",
+        "role": "given to Thunder Man by Coyote when he was charged with sounding the thunder",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ]
+      },
+      {
+        "id": "pomo_split_stick_rattle",
+        "name": "split-stick rattle",
+        "kind": "instrument",
+        "role": "given to Thunder Man by Coyote so that he need not thunder too violently",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ]
+      },
+      {
+        "id": "pomo_thunder_whistle",
+        "name": "whistle",
+        "kind": "instrument",
+        "role": "given to Thunder Man by Coyote together with his rattles",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Thunder Man is the Pomo personification of thunder, the son of Coyote, charged at the making of the world with sounding the thunder and with releasing the salmon when the waters come.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Pomo creation narrative recorded by Edwin Loeb, Coyote had no wife but had a son named Thunder Man, and the two lived together. When Coyote called for him a great storm came with him, and Coyote, fearing that too much thundering would crack the earth, told Thunder Man to make thunder but not to break the rocks or the trees, and gave him the cocoon rattle, the whistle and the split-stick rattle to sound in its place (Loeb 1926). Thunder Man was also told that when the water came he was to let the salmon out, tying the season's first thunder to the arrival of the fish runs. Thunder likewise appears as an individuated mythic personage across the narratives assembled by Samuel Barrett from the Northern, Central and Eastern Pomo (Barrett 1933)."
+  },
+  {
+    "id": "pomo_kilak",
+    "name": {
+      "primary": "Kilak",
+      "alt": [
+        "Gilak",
+        "Ki'lak",
+        "the Monster-Bird"
+      ],
+      "transliterations": {
+        "pomo": "kilak",
+        "etymology": "Pomo kilak (indexed as Ki'lak by Barrett, 1933), the name of the great monster-bird; the Central Pomo dance kilak-ke is glossed 'monster-bird dance' (Curtis 1924)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age",
+        "eraOrdering": 0,
+        "startEvent": "The kilak haunts the myth-age world of the Pomo narratives gathered by Barrett, and its terror was dramatized among the Central Pomo in the monster-bird dance (Barrett 1933; Curtis 1924).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "monster-birds",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kilak",
+          "script": "Latin",
+          "rom": "kilak, 'monster-bird'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Curtis, Edward S. (1924). The North American Indian, Volume 14 (The Pomo). Norwood, Mass.: Plimpton Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1917). Ceremonies of the Pomo Indians. University of California Publications in American Archaeology and Ethnology 12(10): 397–441. Berkeley: University of California Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "monstrous_flight",
+        "name": "to fly as a great monster-bird that strikes terror into people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Central Pomo kilak-ke, the monster-bird dance, dramatized the being in the dance house.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Curtis, Edward S. (1924). The North American Indian, Volume 14 (The Pomo). Norwood, Mass.: Plimpton Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Kilak (Gilak) is the great monster-bird of Pomo myth, a dreaded figure of the narrative corpus that was dramatized in the Central Pomo kilak-ke or monster-bird dance.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Curtis, Edward S. (1924). The North American Indian, Volume 14 (The Pomo). Norwood, Mass.: Plimpton Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "de Angulo, Jaime (1930). Review of An-nik-a-del: The History of the Universe as Told by the Modesse Indians of California, ed. C. Hart Merriam. American Anthropologist 32(1): 172."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The kilak or gilak is a great monster-bird of Pomo myth, listed among the personages of Samuel Barrett's Pomo Myths (Barrett 1933). Its terror was dramatized among the Central Pomo in the kilak-ke or monster-bird dance recorded in the early ethnographies (Curtis 1924; Barrett 1917). Reviewing the Achumawi cosmogony An-nik-a-del, Jaime de Angulo compared its dragon Kwillah to 'the famous Kilak of the Pomo,' an index of how widely the being was known in north-central California (de Angulo 1930); the neighboring Wappo also borrowed the figure. Although some narratives speak of more than one such being, the dance and the principal tales treat the monster-bird as a single formidable figure."
+  },
+  {
+    "id": "pomo_falcon",
+    "name": {
+      "primary": "Falcon",
+      "alt": [
+        "Chicken Hawk",
+        "Tciya"
+      ],
+      "transliterations": {
+        "pomo": "tciya",
+        "etymology": "Barrett (1906) records tciya, a species of hawk, as the native name of the falcon hero in his Pomo texts."
+      }
+    },
+    "type": "quartigod",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "pomo_coyote"
+    ],
+    "parentRoles": [
+      "grandfather"
+    ],
+    "temporal": {
+      "era": "myth-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "quartigod",
+        "era": "myth-age",
+        "eraOrdering": 0,
+        "startEvent": "Falcon comes forward in the myth-age villages of the bird people as the venturesome grandson of Coyote, who guides and provides for him in his adventures (Barrett 1933, pp. 589–590).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heroic-quests",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "perilous_journeys",
+        "name": "to venture everywhere into distant and dangerous places and prevail",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His grandfather Coyote answers all his questions and makes for him whatever he desires.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Falcon (tciya, the chicken hawk) is the venturesome young bird-hero of Pomo myth and the grandson of Coyote.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          },
+          {
+            "kind": "secondary",
+            "reference": "de Angulo, Jaime, and L. S. Freeland (1928). 'Miwok and Pomo Myths.' Journal of American Folk-Lore 41(160): 232–252."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1906). 'A Composite Myth of the Pomo Indians.' Journal of American Folk-Lore 19(72): 37–51."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Falcon, called tciya, a species of hawk, in Barrett's early Pomo texts (Barrett 1906), is the venturesome young hero of the Pomo bird-people myths. In Barrett's collection Condor tells Falcon that Coyote is 'your grandfather, the biggest and wisest man in the world,' and Coyote thereafter answers all of Falcon's questions and makes for him whatever he desires as the young hero travels everywhere (Barrett 1933, pp. 589–590). In the Clear Lake area tradition recorded by Jaime de Angulo and L. S. Freeland, Coyote comes from the west followed by Chicken Hawk, his grandson, before making people (de Angulo and Freeland 1928). Barrett's composite myth of 1906, in which the hawk tciya figures, also recounts how the people recovered the stolen sun and hung it in the sky."
+  },
+  {
+    "id": "pomo_obsidian_man",
+    "name": {
+      "primary": "Obsidian Man",
+      "alt": [
+        "Obsidian-Man"
+      ],
+      "transliterations": {
+        "etymology": "English rendering of the Pomo name of the being who sprang from an obsidian arrow point, as recorded in the myths collected by Barrett (1933)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "pomo_frog_woman"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "myth-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "myth-age",
+        "eraOrdering": 0,
+        "startEvent": "Obsidian Man springs to life from an obsidian arrow point in the myth-age tales of the Clear Lake Pomo and journeys homeward to Mount Konocti (Barrett 1933).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "obsidian",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lake County News (Lakeport, Calif.). 'Lake County Time Capsule: Obsidian Use in Native Culture' (local-history column summarizing the Pomo Obsidian-Man legends of Mount Konocti)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "obsidian_body",
+        "name": "to cut with the sharp, serrated edges of his obsidian limbs",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His arms and legs bore edges like flaked obsidian.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      },
+      {
+        "id": "tests_of_power",
+        "name": "to prevail in tests of power",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Several Pomo myths set Obsidian Man and Coyote in contests of power amid volcanic forces.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "pomo_obsidian_arrow_point",
+        "name": "obsidian arrow point",
+        "kind": "emblem",
+        "role": "the arrow point from which Obsidian Man sprang; his shattered fragments are said to strew the slopes of Mount Konocti",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Obsidian Man is a Pomo mythic hero who sprang from an obsidian arrow point and whose shattered body accounts for the obsidian strewn over Mount Konocti; in the Russian River tradition he is the son of Frog Woman.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1933). Pomo Myths. Bulletin of the Public Museum of the City of Milwaukee 15. Milwaukee: Public Museum of the City of Milwaukee."
+          },
+          {
+            "kind": "secondary",
+            "reference": "The Press Democrat (Santa Rosa, Calif.). 'Settlers Changed Stories behind Frog Woman Rock' (feature on Pomo traditions of Frog Woman Rock, in which Frog Woman is the wife of Coyote and mother of Obsidian Man)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pomo legend tells of Obsidian Man springing to life from an obsidian arrow point, his arms and legs edged sharp and serrated like flaked glass (Barrett 1933). Returning home to Mount Konocti above Clear Lake he became tangled in brush, and as he struggled to free himself his body broke into a great many pieces, which is why blocks and chips of obsidian strew the southern slopes of the mountain to this day. Other myths set Obsidian Man and Coyote in tests of power amid the volcanic landscape. In the traditions surrounding Frog Woman Rock on the Russian River, Obsidian Man is remembered as the son of Frog Woman, the clever wife of Coyote."
+  },
+  {
+    "id": "pomo_frog_woman",
+    "name": {
+      "primary": "Frog Woman",
+      "alt": [
+        "Bi-tsin' ma-ca",
+        "Kawao Maatha"
+      ],
+      "transliterations": {
+        "central-pomo": "kawao maatha",
+        "etymology": "Central Pomo kawao maatha, 'frog woman' (as in kawao maatha qhabe, 'Frog Woman Rock'); John Hudson's Pomo linguistic manuscript of about 1892 records her name as Bi-tsin' ma-ca."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "myth-age",
+        "eraOrdering": 0,
+        "startEvent": "Frog Woman keeps her dwelling in the myth-age landscape at the volcanic monolith in the Russian River canyon that Pomo speakers name for her (California Office of Historic Preservation 2011, citing Hudson c. 1892).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "California Office of Historic Preservation (2011). California Historical Landmark No. 549, 'Frog Woman Rock,' Mendocino County: updated designation documentation, citing John W. Hudson, Pomo Linguistic Manuscript (c. 1892), Grace Hudson Museum, Ukiah."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fresh-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, Cora, and Texa Bowen Williams (1954). Pomo Indian Myths and Some of Their Sacred Meanings. New York: Vantage Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "cleverness",
+        "name": "to outwit other beings through cleverness",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Pomo tradition portrays her as the clever and powerful wife of the trickster Coyote.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Press Democrat (Santa Rosa, Calif.). 'Settlers Changed Stories behind Frog Woman Rock' (feature on Pomo traditions of Frog Woman Rock)."
+          }
+        ]
+      },
+      {
+        "id": "guard_dwelling",
+        "name": "to make her rock dwelling feared and avoided",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Hudson recorded that people avoided the monolith because Bi-tsin' ma-ca lived there.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "California Office of Historic Preservation (2011). California Historical Landmark No. 549, 'Frog Woman Rock,' Mendocino County: updated designation documentation, citing John W. Hudson, Pomo Linguistic Manuscript (c. 1892), Grace Hudson Museum, Ukiah."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "pomo_coyote",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Press Democrat (Santa Rosa, Calif.). 'Settlers Changed Stories behind Frog Woman Rock' (feature on Pomo traditions of Frog Woman Rock)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Clark, Cora, and Texa Bowen Williams (1954). Pomo Indian Myths and Some of Their Sacred Meanings. New York: Vantage Press."
+          }
+        ],
+        "notes": "In Pomo tradition Frog Woman is generally portrayed as the clever and powerful wife of Coyote, the principal trickster of the stories."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "pomo_obsidian_man",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The Press Democrat (Santa Rosa, Calif.). 'Settlers Changed Stories behind Frog Woman Rock' (feature on Pomo traditions of Frog Woman Rock)."
+          }
+        ],
+        "notes": "In some Pomo stories Frog Woman is the mother of Obsidian Man."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Frog Woman is a powerful female being of Pomo myth, the clever wife of Coyote and in some tellings the mother of Obsidian Man, associated with water and with the Russian River monolith named for her.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Clark, Cora, and Texa Bowen Williams (1954). Pomo Indian Myths and Some of Their Sacred Meanings. New York: Vantage Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "California Office of Historic Preservation (2011). California Historical Landmark No. 549, 'Frog Woman Rock,' Mendocino County: updated designation documentation, citing John W. Hudson, Pomo Linguistic Manuscript (c. 1892), Grace Hudson Museum, Ukiah."
+          },
+          {
+            "kind": "secondary",
+            "reference": "The Press Democrat (Santa Rosa, Calif.). 'Settlers Changed Stories behind Frog Woman Rock' (feature on Pomo traditions of Frog Woman Rock)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Frog Woman is a powerful female personage of Pomo tradition, generally portrayed as the clever and capable wife of Coyote and, in some tellings, the mother of Obsidian Man. The storytellers whose myths Cora Clark and Texa Bowen Williams recorded explained that Frog Woman stands for water in the nature symbolism of the tales (Clark and Williams 1954). Her dwelling is the volcanic monolith in the Russian River canyon of Mendocino County: John Hudson's Pomo linguistic manuscript of about 1892 records that people avoided the rock because Bi-tsin' ma-ca lived there, and in Central Pomo the crag is called kawao maatha qhabe, 'Frog Woman Rock,' a name formally restored to the California landmark in 2011 in place of the older settler name. Later settler storytelling recast her as a man-devouring seductress, a distortion of the older Pomo figure."
+  },
+  {
+    "id": "pomo_calnis",
+    "name": {
+      "primary": "Calnis",
+      "alt": [],
+      "transliterations": {
+        "pomo": "calnis",
+        "etymology": "Early ethnographic rendering of the Pomo name of the supernatural being of the eastern end of the world who accompanies the guksu (Barrett 1917)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "myth-age",
+        "eraOrdering": 0,
+        "startEvent": "Calnis dwells in human form at the eastern end of the world and comes among people in the guksu ceremonies described in the early Pomo ethnographies (Barrett 1917).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1917). Ceremonies of the Pomo Indians. University of California Publications in American Archaeology and Ethnology 12(10): 397–441. Berkeley: University of California Press."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "eastern-world-end",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1917). Ceremonies of the Pomo Indians. University of California Publications in American Archaeology and Ethnology 12(10): 397–441. Berkeley: University of California Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ]
+      },
+      {
+        "sphereId": "ceremonial-dance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1932). The Western Kuksu Cult. University of California Publications in American Archaeology and Ethnology 33(1): 1–137. Berkeley: University of California Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "pursue_and_trip",
+        "name": "to pursue people and trip them up",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Early accounts describe him as testy toward humans, in contrast to the curative Guksu.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1917). Ceremonies of the Pomo Indians. University of California Publications in American Archaeology and Ethnology 12(10): 397–441. Berkeley: University of California Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "pomo_calnis_black_staff",
+        "name": "black staff",
+        "kind": "regalia",
+        "role": "carried by the blackened calnis impersonator in the guksu ceremony",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1917). Ceremonies of the Pomo Indians. University of California Publications in American Archaeology and Ethnology 12(10): 397–441. Berkeley: University of California Press."
+          }
+        ]
+      },
+      {
+        "id": "pomo_calnis_feather_cape",
+        "name": "feather face-cape",
+        "kind": "regalia",
+        "role": "cape of feathers worn over the face by the calnis impersonator",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1917). Ceremonies of the Pomo Indians. University of California Publications in American Archaeology and Ethnology 12(10): 397–441. Berkeley: University of California Press."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "pomo_kuksu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1917). Ceremonies of the Pomo Indians. University of California Publications in American Archaeology and Ethnology 12(10): 397–441. Berkeley: University of California Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          }
+        ],
+        "notes": "Calnis was impersonated alongside Guksu (Kuksu) in the guksu ceremonies as the eastern counterpart and companion of the great healer from the south, who remained the principal figure of the rite."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Calnis is a Pomo supernatural being in human form who dwells at the eastern end of the world and was impersonated alongside Guksu in the guksu ceremonies.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Barrett, S. A. (1917). Ceremonies of the Pomo Indians. University of California Publications in American Archaeology and Ethnology 12(10): 397–441. Berkeley: University of California Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1926). Pomo Folkways. University of California Publications in American Archaeology and Ethnology 19(2): 149–405. Berkeley: University of California Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. (1932). The Western Kuksu Cult. University of California Publications in American Archaeology and Ethnology 33(1): 1–137. Berkeley: University of California Press."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Calnis is a supernatural being of the Pomo who dwells in human form at the eastern end of the world, the counterpart of the healer Guksu of the south, alongside whom he appears in the guksu ceremonies (Barrett 1917; Loeb 1926). Unlike the curative Guksu, to whom the doctors prayed, Calnis was reckoned testy: he pursued people and tripped them up. His impersonators in the dance painted themselves entirely black, carried a black staff, and wore a cape of feathers over the face, in contrast to the red-striped, long-nosed guksu dancers (Barrett 1917; Loeb 1932)."
+  }
+]
+```
+
+

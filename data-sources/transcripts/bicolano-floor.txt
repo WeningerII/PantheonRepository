@@ -1,0 +1,605 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bicolano
+Era (registered, exact): "heroic-age", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four figures from the fragmentary Bicolano folk epic Ibalong that individuate the record beyond the already-registered Handyong and Oryol: the pioneer-hero Baltog and the monster he slays, the giant boar Tandayag; the third hero Bantong and the stone-cursing monster Rabot he destroys. These are securely attested in Espinas's edition of the epic and Eugenio's Philippine Folk Literature: The Epics, and are wired to the existing pantheon via Bantong's service under Handyong and slayer/enemy links among the new figures. I also added Bakunawa, the moon-devouring eclipse serpent, which is attested for the Bicol region in Lisboa's Vocabulario de la lengua Bicol. I deliberately excluded the popular "moon goddess" Haliya and the moon god Bulan: current scholarship shows the individuated Haliya-versus-Bakunawa narrative to be a modern embellishment of Lisboa's halea (a women's moon-song/game) rather than an attested deity, and Bulan functions in Bikol chiefly as the common noun for the moon without secure individuation, so authoring them would constitute dubious padding.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bicolano_baltog",
+    "name": {
+      "primary": "Baltog",
+      "alt": [
+        "Baltóg"
+      ],
+      "transliterations": {
+        "bikol": "Baltog",
+        "etymology": "Personal name of the pioneering hero of the Lipod clan in the Ibalong epic; in the poem he is reckoned among the tawong-lipod ('cloud people')."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Bicolano",
+    "primaryTradition": "Bicolano",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "heroic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "Baltog, of the brave clan of Lipod, migrated from a distant land called Boltavara to settle the fertile country of Ibalong, where he introduced the cultivation of the grain called linsa.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas (reissued 1996, UST Publishing House)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "agriculture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "linsa",
+          "script": "Latin",
+          "rom": "linsa (a cultivated grain he first planted in Ibalong)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      },
+      {
+        "sphereId": "hunting",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (2001). Philippine Folk Literature: The Epics. Quezon City: University of the Philippines Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bare_handed_strength",
+        "name": "to kill a monstrous beast with his bare hands",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bicolano_tandayag_jawbone",
+        "name": "Jawbones of the Tandayag",
+        "kind": "trophy",
+        "role": "The enormous jawbones of the boar he killed, which Baltog hung on a talisay tree before his house at Tondol as proof of his feat.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Tawong Lipod",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "bicolano_tandayag",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ],
+        "notes": "Baltog chased and killed the giant wild boar Tandayag that had foraged his newly planted linsa patch, strangling it with his bare hands."
+      },
+      {
+        "kind": "enemy",
+        "personId": "bicolano_tandayag",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ],
+        "notes": "The marauding boar and the pioneer farmer stand as adversaries in the opening episode of the epic."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Baltog is the founder-hero of the Ibalong epic, first of the Lipod clan to settle Ibalong, who introduced agriculture and slew the giant boar Tandayag.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas (reissued 1996, UST Publishing House)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (2001). Philippine Folk Literature: The Epics. Quezon City: University of the Philippines Press."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Baltog is the first of the three heroes of the fragmentary Bicolano folk epic Ibalong. Reckoned a member of the invisible 'cloud people' (tawong-lipod) and coming from a distant homeland, he settled the land of Ibalong and taught its people to cultivate the grain linsa. When a colossal wild boar ravaged his field at Tondol, Baltog killed the beast barehanded and hung its huge jawbones on a talisay tree, a feat that won him recognition as chief of the local hunters and drew neighbouring clans to marvel at the carcass. His episode opens the epic's larger narrative of humanity taming the wild land, later continued by Handyong and Bantong."
+  },
+  {
+    "id": "bicolano_tandayag",
+    "name": {
+      "primary": "Tandayag",
+      "alt": [
+        "The giant wild boar of Tondol"
+      ],
+      "transliterations": {
+        "bikol": "tandayag",
+        "etymology": "A Bikol word denoting something colossal or gigantic, applied in the epic to the monstrous wild boar slain by Baltog."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Bicolano",
+    "primaryTradition": "Bicolano",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "heroic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "A colossal wild boar that repeatedly foraged and destroyed Baltog's newly planted field of linsa at Tondol, until the hero killed it with his bare hands.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wild-beasts",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (2001). Philippine Folk Literature: The Epics. Quezon City: University of the Philippines Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "crop_ravaging",
+        "name": "to devastate cultivated fields",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "bicolano_baltog",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ],
+        "notes": "The destructive boar is the adversary whom the pioneer-hero Baltog kills in the opening episode of the epic."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tandayag is the monstrous giant wild boar of the Ibalong epic, ravager of Baltog's fields, slain by the hero with his bare hands.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas (reissued 1996, UST Publishing House)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (2001). Philippine Folk Literature: The Epics. Quezon City: University of the Philippines Press."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tandayag is the enormous wild boar of the Ibalong epic, the first of the land's monstrous beasts to be overcome. The name reflects a Bikol term for something of gigantic size. The boar destroyed the grain fields that Baltog had newly planted at Tondol; when the hero killed it barehanded and displayed its jawbones on a talisay tree, its carcass became a marvel that drew clans from surrounding districts. As a named menace of the wilds it belongs to the same class of monstrous adversaries as the serpent Oryol and the beast Rabot who challenge the epic's heroes."
+  },
+  {
+    "id": "bicolano_bantong",
+    "name": {
+      "primary": "Bantong",
+      "alt": [
+        "Bantóng"
+      ],
+      "transliterations": {
+        "bikol": "Bantong",
+        "etymology": "Personal name of the third hero of the Ibalong epic, celebrated for intelligence and agility."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Bicolano",
+    "primaryTradition": "Bicolano",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "heroic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "Bantong, a close friend of Handyong, was given a thousand warriors and charged with destroying the half-man, half-beast monster Rabot.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heroism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (2001). Philippine Folk Literature: The Epics. Quezon City: University of the Philippines Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "single_handed_slaying",
+        "name": "to slay a magical monster single-handedly",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "bicolano_rabot",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ],
+        "notes": "Bantong studied the monster's habits, waited for it to sleep, and killed Rabot single-handedly, cutting the body in half."
+      },
+      {
+        "kind": "enemy",
+        "personId": "bicolano_rabot",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ],
+        "notes": "The stone-cursing monster Rabot is the final adversary Bantong is sent to destroy."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "bicolano_handyong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ],
+        "notes": "Bantong was a trusted companion who acted within the kingdom of Handyong and was commissioned by the elder hero to rid the land of Rabot."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bantong is the third hero of the Ibalong epic, companion of Handyong, who single-handedly slew the stone-cursing monster Rabot.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas (reissued 1996, UST Publishing House)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (2001). Philippine Folk Literature: The Epics. Quezon City: University of the Philippines Press."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bantong is the last of the three heroes of the Ibalong epic, renowned for cleverness and agility rather than raw strength. A close friend of Handyong, he was entrusted with a thousand warriors to hunt down Rabot, a half-human, half-beast creature who petrified everyone it met. Rather than assault the monster directly, Bantong observed that it liked to sleep, and when it slumbered he killed it single-handedly, severing the body in two. The corpse was so hideous that when it was brought to Ligmanan even the great Handyong recoiled at the sight. Bantong's victory closes the surviving epic on the restoration of peace to the land."
+  },
+  {
+    "id": "bicolano_rabot",
+    "name": {
+      "primary": "Rabot",
+      "alt": [
+        "Rabut"
+      ],
+      "transliterations": {
+        "bikol": "Rabot",
+        "etymology": "Name of the half-man, half-beast monster of the Ibalong epic; of uncertain derivation."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Bicolano",
+    "primaryTradition": "Bicolano",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "heroic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "A ferocious half-man, half-beast dwelling in a cave who could turn people into stone by magic, until the hero Bantong slew him in his sleep.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "petrification",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (2001). Philippine Folk Literature: The Epics. Quezon City: University of the Philippines Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "turn_to_stone",
+        "name": "to turn people into stone",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "bicolano_bantong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas."
+          }
+        ],
+        "notes": "Rabot is the final monster of the epic, hunted down and killed by the hero Bantong."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Rabot is the half-man, half-beast monster of the Ibalong epic who turned his victims to stone and was slain by Bantong.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Espinas, Merito B. (1968). Ibalong: The Bikol Folk Epic-Fragment. Unitas 41(3), University of Santo Tomas (reissued 1996, UST Publishing House)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (2001). Philippine Folk Literature: The Epics. Quezon City: University of the Philippines Press."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Rabot is the last of the great monsters of the Ibalong epic, a ferocious being half human and half beast who lived in a cave and could turn anyone he encountered into stone. His den was ringed with the petrified figures of his victims. The hero Bantong, sent against him with a thousand warriors, killed Rabot single-handedly by attacking while the monster slept, cleaving the body in two. So gruesome was the corpse that even the great Handyong was appalled when it was carried to Ligmanan. Rabot belongs to the epic's succession of named adversaries alongside the serpent Oryol and the boar Tandayag."
+  },
+  {
+    "id": "bicolano_bakunawa",
+    "name": {
+      "primary": "Bakunawa",
+      "alt": [
+        "Bacunaua",
+        "Baconaua"
+      ],
+      "transliterations": {
+        "bikol": "bakunawa",
+        "etymology": "Commonly glossed from native roots as a 'bent' or 'curved serpent'; recorded in the Bikol lexicon as the serpent that swallows the moon."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Bicolano",
+    "primaryTradition": "Bicolano",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "A monstrous serpent held to cause eclipses by attempting to swallow the moon, a belief recorded among the Bicolanos in Marcos de Lisboa's Vocabulario de la lengua Bicol.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lisboa, Marcos de (1865). Vocabulario de la lengua Bicol [1st ed. 1754]. Manila: Establecimiento Tipográfico del Colegio de Santo Tomás."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "eclipses",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bakunawa",
+          "script": "Latin",
+          "rom": "bakunawa (the moon-devouring serpent)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lisboa, Marcos de (1865). Vocabulario de la lengua Bicol [1st ed. 1754]. Manila: Establecimiento Tipográfico del Colegio de Santo Tomás."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_moon",
+        "name": "to swallow the moon and cause eclipses",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (1993). Philippine Folk Literature: The Myths. Quezon City: University of the Philippines Press."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Bakunawa is the moon-devouring serpent of Bicolano cosmology, held to cause eclipses, recorded in Lisboa's Vocabulario de la lengua Bicol.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lisboa, Marcos de (1865). Vocabulario de la lengua Bicol [1st ed. 1754]. Manila: Establecimiento Tipográfico del Colegio de Santo Tomás."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Eugenio, Damiana L. (1993). Philippine Folk Literature: The Myths. Quezon City: University of the Philippines Press."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bakunawa is the giant sea-serpent of Bicolano (and wider Philippine) cosmology, believed to cause eclipses by rising to devour the moon. The belief is attested for the Bicol region in Marcos de Lisboa's early Vocabulario de la lengua Bicol, which records the term for the serpent that swallows the moon; during eclipses people made noise by beating drums, bamboo, and hollow trunks to frighten it into releasing its prey. In Bicol lore the serpent is regarded with a measure of awe and respect as a cosmic force rather than pure evil. It stands apart from the fire-and-Mayon pantheon of Gugurang and Asuang, being an independent celestial menace recorded in its own right."
+  }
+]
+```

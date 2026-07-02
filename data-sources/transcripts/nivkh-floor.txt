@@ -1,0 +1,444 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Nivkh
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the three remaining individuated figures the ethnographic record supports: Kurŋ, the supreme sky-universe god central to Shternberg's account of Gilyak religion; Tly yz (Tly nivkh), the Master of the Sky who completes the mountain-sea-sky triad with the existing Pal-yz and Tol-yz and has its own entry in Tokarev's Mify narodov mira (signed by Taksami); and Tugrsh ytik, the Fire Grandmother of the hearth documented by Kreinovich and Ostrovsky. Tly yz is wired to Kurŋ via a directed subordinate-to relation reflecting Shternberg's identification of the sky with kurŋ. Candidates rejected: Tairnadz/Taikhnad (an alias of the existing Tol-yz), the wind god "Laizna" (attested only in non-scholarly popular material), and milk/kinr evil spirits and kekhn shaman helpers (spirit classes, not named individuals).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "nivkh_kurn",
+    "name": {
+      "primary": "Kurŋ",
+      "alt": [
+        "Kurn",
+        "Kur",
+        "Курн",
+        "Курң"
+      ],
+      "transliterations": {
+        "nivkh": "курң",
+        "etymology": "Nivkh kurŋ denotes at once 'sky, universe, weather' and a personal anthropomorphic god; Shternberg treated this semantic fusion as the key to Gilyak theism (Штернберг, Гиляки, орочи, гольды, негидальцы, айны, 1933)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nivkh",
+    "primaryTradition": "Nivkh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Kurŋ is coextensive with the universe itself, the word naming both the cosmos and the supreme personal god, and is regarded by the Nivkh as the source of all that exists (Shternberg 1933).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Штернберг, Л. Я. Гиляки, орочи, гольды, негидальцы, айны: статьи и материалы. Хабаровск: Дальгиз, 1933."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cosmos",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "курң",
+          "script": "Cyrillic (Nivkh)",
+          "rom": "kurŋ — 'universe, sky, god'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Штернберг, Л. Я. Гиляки, орочи, гольды, негидальцы, айны. Хабаровск: Дальгиз, 1933."
+          }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "курң",
+          "script": "Cyrillic (Nivkh)",
+          "rom": "kurŋ"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Островский, А. Б. Мифология и верования нивхов. Санкт-Петербург: Петербургское востоковедение, 1997."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_universe",
+        "name": "to govern the universe, the sky, and the weather",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Nivkh address short prayers to Kurŋ as the highest power over the cosmos and its conditions.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Штернберг, Л. Я. Гиляки, орочи, гольды, негидальцы, айны. Хабаровск: Дальгиз, 1933."
+          }
+        ]
+      },
+      {
+        "id": "judge_transgression",
+        "name": "to judge human transgression and transform offenders into beasts",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "An Amur Nivkh legend has the god condemn humans who behaved like beasts to remain beasts, producing the tiger and snow leopard.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Островский, А. Б. Мифология и верования нивхов. Санкт-Петербург: Петербургское востоковедение, 1997."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kurŋ is the Nivkh supreme being, a personal god whose name is identical with the word for the universe and sky, invoked with brief prayers as the source of all that exists.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Штернберг, Л. Я. Гиляки, орочи, гольды, негидальцы, айны: статьи и материалы. Хабаровск: Дальгиз, 1933."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Shternberg, Lev Iakovlevich. The Social Organization of the Gilyak. Ed. Bruce Grant. Anthropological Papers of the American Museum of Natural History 82. Seattle: University of Washington Press, 1999."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Островский, А. Б. Мифология и верования нивхов. Санкт-Петербург: Петербургское востоковедение, 1997."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kurŋ (also rendered Kurn or Kur) occupies the summit of Nivkh religion. Lev Shternberg, the foundational ethnographer of the Gilyak (Nivkh), emphasized that the same word kurŋ names the visible universe, the sky and its weather, and a personal human-like god, so that cosmos and supreme deity are conceptually fused. The Nivkh addressed him with short prayers rather than an elaborate cult, and regarded him as the maker of all that exists. In an Amur Nivkh legend the god condemned humans who copulated like animals to remain beasts forever, an origin ascribed to the tiger and snow leopard. Kurŋ stands above, and is distinct from, the elemental spirit-masters (yz) of mountain, sea, sky, and fire who administer particular realms."
+  },
+  {
+    "id": "nivkh_tly_yz",
+    "name": {
+      "primary": "Master of the Sky",
+      "alt": [
+        "Tly yz",
+        "Tly nivkh",
+        "Tly Nivukh",
+        "Тлы ыз",
+        "Тлы нивх"
+      ],
+      "transliterations": {
+        "nivkh": "тлы ыз",
+        "etymology": "From Nivkh tly 'sky, heaven' and yz (ыз/ызнг) 'master, owner', literally 'sky master'; the variant Tly nivkh means 'sky person' (Таксами, in Мифы народов мира, 1980–82)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nivkh",
+    "primaryTradition": "Nivkh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "The Master of the Sky presides over the Upper World (Tly vo) in the three-tiered Nivkh cosmos, ranked alongside the primordial masters of mountain and sea (Worldmark Encyclopedia of Cultures and Daily Life, 2009).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Nivkhs.\" Worldmark Encyclopedia of Cultures and Daily Life, 2nd ed., ed. Timothy L. Gall and Jeneen Hobby. Detroit: Gale, 2009."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "тлы",
+          "script": "Cyrillic (Nivkh)",
+          "rom": "tly — 'sky, heaven'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Таксами, Ч. М. \"Тлы ыз.\" In Мифы народов мира: Энциклопедия, ed. С. А. Токарев. Москва: Советская энциклопедия, 1980–1982."
+          }
+        ]
+      },
+      {
+        "sphereId": "upper-world",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "тлы во",
+          "script": "Cyrillic (Nivkh)",
+          "rom": "tly vo — 'sky village', the Upper World"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Nivkhs.\" Worldmark Encyclopedia of Cultures and Daily Life, 2nd ed., ed. Timothy L. Gall and Jeneen Hobby. Detroit: Gale, 2009."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_upper_world",
+        "name": "to rule the Upper World and its celestial sky-people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The sky spirits (tly nivgun, 'sky people') belong to his heavenly domain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Таксами, Ч. М. \"Тлы ыз.\" In Мифы народов мира: Энциклопедия, ed. С. А. Токарев. Москва: Советская энциклопедия, 1980–1982."
+          }
+        ]
+      },
+      {
+        "id": "grant_shaman_helpers",
+        "name": "to send helper spirits to shamans from the sky realm",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Nivkh shamanic helper spirits (kekhn) could originate from the sky master as well as from the masters of sea and mountain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Таксами, Ч. М. \"Кехн.\" In Мифы народов мира: Энциклопедия, ed. С. А. Токарев. Москва: Советская энциклопедия, 1980–1982."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Тлы нивх",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Таксами, Ч. М. \"Тлы ыз.\" In Мифы народов мира: Энциклопедия, ed. С. А. Токарев. Москва: Советская энциклопедия, 1980–1982."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "nivkh_kurn",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Штернберг, Л. Я. Гиляки, орочи, гольды, негидальцы, айны. Хабаровск: Дальгиз, 1933."
+          }
+        ],
+        "notes": "The sky over which Tly yz presides is itself kurŋ, the domain and body of the supreme being, so the sky master administers a realm that ultimately belongs to Kurŋ."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tly yz (Tly nivkh), the Master of the Sky, is the Nivkh spirit-owner of the heavens who rules the Upper World, completing the triad with the masters of the mountain and the sea.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Таксами, Ч. М. \"Тлы ыз.\" In Мифы народов мира: Энциклопедия, ed. С. А. Токарев. Москва: Советская энциклопедия, 1980–1982."
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Nivkhs.\" Worldmark Encyclopedia of Cultures and Daily Life, 2nd ed., ed. Timothy L. Gall and Jeneen Hobby. Detroit: Gale, 2009."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Таксами, Ч. М. Основные проблемы этнографии и истории нивхов. Ленинград: Наука, 1975."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tly yz, 'Master of the Sky' (also called Tly nivkh, 'sky person'), is the celestial counterpart of the Nivkh masters of the mountain (Pal yz) and the sea (Tol yz). In the Nivkh three-tiered cosmos he presides over the Upper World, Tly vo, the sky village above the Middle World of humans and above the Lower World of the dead. The sky is populated by his people, the tly nivgun, and shamans' helper spirits could be sent from his realm as readily as from the sea or the mountain. He received respect rather than an organized cult, as befits the diffuse, master-based theism that Shternberg, Kreinovich, and Taksami all described among the Nivkh."
+  },
+  {
+    "id": "nivkh_tugrs_ytik",
+    "name": {
+      "primary": "Fire Grandmother",
+      "alt": [
+        "Tugrsh ytik",
+        "Тугрш ытик",
+        "Mistress of Fire",
+        "Tuɣr ytik"
+      ],
+      "transliterations": {
+        "nivkh": "тугрш ытик",
+        "etymology": "From Nivkh tuɣr (тугр) 'fire' and ytik (ытик) 'grandmother, old woman': 'fire grandmother', the aged mistress dwelling in the hearth (Крейнович, Нивхгу, 1973)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nivkh",
+    "primaryTradition": "Nivkh",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "The mistress of fire dwells in every clan hearth from the establishment of the household fire, which the Nivkh personified as an old woman and surrounded with strict taboos (Крейнович 1973).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Крейнович, Е. А. Нивхгу: загадочные обитатели Сахалина и Амура. Москва: Наука, 1973."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "тугр",
+          "script": "Cyrillic (Nivkh)",
+          "rom": "tuɣr — 'fire'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Крейнович, Е. А. Нивхгу: загадочные обитатели Сахалина и Амура. Москва: Наука, 1973."
+          }
+        ]
+      },
+      {
+        "sphereId": "hearth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Островский, А. Б. Мифология и верования нивхов. Санкт-Петербург: Петербургское востоковедение, 1997."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_clan_hearth",
+        "name": "to guard the clan hearth and the well-being of the household",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The hearth fire, together with the ritual flint, symbolized the Nivkh clan itself and was protected by numerous taboos.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Крейнович, Е. А. Нивхгу: загадочные обитатели Сахалина и Амура. Москва: Наука, 1973."
+          }
+        ]
+      },
+      {
+        "id": "carry_offerings",
+        "name": "to convey offerings cast into the fire to the spirit world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Before hunting, fishing, and travel the Nivkh fed the fire with food, tobacco, and sweet roots so the offering would reach the spirits.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Островский, А. Б. Мифология и верования нивхов. Санкт-Петербург: Петербургское востоковедение, 1997."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nivkh_clan_hearth_flint",
+        "name": "clan hearth and ritual flint",
+        "kind": "emblem",
+        "role": "The hereditary hearth fire and the flint used to kindle ritual fire embodied the continuity of the clan under the fire mistress's guardianship.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Крейнович, Е. А. Нивхгу: загадочные обитатели Сахалина и Амура. Москва: Наука, 1973."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tugrsh ytik, the 'Fire Grandmother', is the Nivkh mistress of fire, an old woman dwelling in the hearth who guards the clan and transmits offerings placed in the flames.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Крейнович, Е. А. Нивхгу: загадочные обитатели Сахалина и Амура. Москва: Наука, 1973."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Островский, А. Б. Мифология и верования нивхов. Санкт-Петербург: Петербургское востоковедение, 1997."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tugrsh ytik, the 'Fire Grandmother', personifies the hearth fire in Nivkh religion. Evgenii Kreinovich, who lived among the Sakhalin and Amur Nivkh in the 1920s, recorded the dense web of taboos surrounding fire: it could not be stabbed, spat into, or doused carelessly, for an aged mistress lived within it. Each clan's hearth fire, kindled with the hereditary ritual flint, was a symbol of the clan itself, and before hunts, sea voyages, and journeys the Nivkh fed the fire with food and tobacco so that the fire mistress would carry the offerings to the spirit-masters of sea and mountain. She stands alongside the masters of mountain, sea, and sky as one of the principal elemental owners of the Nivkh world."
+  }
+]
+```

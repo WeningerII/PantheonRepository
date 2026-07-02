@@ -1,0 +1,521 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Jukun
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four individuated, named Jukun divinities missing from the corpus: Kenjo (household war deity), Akwa (ancestral protector deity), Yaku-Keji (tutelary "mother of all creation" at Wukari, linked to the existing Aku Uka), and Achu Nyande (rain god of the upper skies, linked to the existing sky god Chido). All are attested in C. K. Meek's foundational ethnography A Sudanese Kingdom (1931) and corroborated by recent scholarship (Elawa 2022 in Studies in World Christianity; Ukaogo and Tanko 2020). Beyond these, the literature records only unnamed ancestor spirits and cult-classes, which fall outside scope.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "jukun_kenjo",
+    "name": {
+      "primary": "Kenjo",
+      "alt": [
+        "Kenjo"
+      ],
+      "transliterations": {
+        "jukun": "Kenjo",
+        "etymology": "Jukun name of a household and communal cult-deity of war and hunting recorded by C. K. Meek (1931)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Jukun",
+    "primaryTradition": "Jukun",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Kenjo is venerated as one of the principal household deities of the Jukun, the patron of war and bringer of victory, with shrines maintained in family compounds.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (London: Kegan Paul, Trench, Trübner, 1931)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_victory_in_battle",
+        "name": "to grant victory in wars and battles to his devotees",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "jukun_kenjo_shrine",
+        "name": "Kenjo household shrine",
+        "kind": "shrine",
+        "role": "Sacred emblem-shrine kept in Jukun family compounds where offerings were made before war and hunting expeditions.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Kenjo is a Jukun household deity of war and hunting, the bringer of victory, whose cult was among the most widespread family cults in Jukunland.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (London: Kegan Paul, Trench, Trübner, 1931)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nathan Irmiya Elawa, \"'The Eliminated Gods': The Christian Reconfiguration of Jukun Theism,\" Studies in World Christianity 28.2 (2022), 209-228"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kenjo is one of the two most common family cult-deities of the Jukun-speaking peoples of the Benue valley in Nigeria, documented in detail by the colonial ethnographer C. K. Meek. He is regarded as the patron of war and the bringer of victory in battle, and his shrine was maintained within the household, each Jukun household functioning as a religious unit. Pre-colonial Jukun songs of worship were composed for Kenjo alongside other deities to express allegiance, thanksgiving and petition."
+  },
+  {
+    "id": "jukun_akwa",
+    "name": {
+      "primary": "Akwa",
+      "alt": [
+        "Akwa",
+        "Aku-ahwa"
+      ],
+      "transliterations": {
+        "jukun": "Akwa",
+        "etymology": "Jukun cult name connected with the ancestral dead; related to the aku-ahwa ancestral rites described by Meek (1931)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Jukun",
+    "primaryTradition": "Jukun",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Akwa is venerated in Jukun household shrines as the deity of the ancestors, a protector and provider for the family.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestors",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "aku-ahwa",
+          "script": "Latin",
+          "rom": "aku-ahwa (Jukun ancestral rites)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      },
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nathan Irmiya Elawa, \"'The Eliminated Gods': The Christian Reconfiguration of Jukun Theism,\" Studies in World Christianity 28.2 (2022)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_and_provide_for_household",
+        "name": "to protect the household and provide for its members on behalf of the ancestral dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "jukun_akwa_shrine",
+        "name": "Akwa household shrine",
+        "kind": "shrine",
+        "role": "Family shrine at which offerings were made to the ancestral cult-deity for protection and provision.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Akwa is a Jukun household cult-deity of the ancestors, regarded as protector and provider, and one of the two most common family deities alongside Kenjo.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (London: Kegan Paul, Trench, Trübner, 1931)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nathan Irmiya Elawa, \"'The Eliminated Gods': The Christian Reconfiguration of Jukun Theism,\" Studies in World Christianity 28.2 (2022), 209-228"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Akwa is the Jukun deity of the ancestors, venerated as protector and provider at household shrines throughout Jukunland. Together with Kenjo he formed the most common pair of family cult-deities recorded by C. K. Meek, and his name is connected with the aku-ahwa ancestral masquerade and post-burial rites through which the Jukun dead were honoured and mediated to the living."
+  },
+  {
+    "id": "jukun_yaku_keji",
+    "name": {
+      "primary": "Yaku-Keji",
+      "alt": [
+        "Yaku Keji",
+        "Yaku"
+      ],
+      "transliterations": {
+        "jukun": "Yaku-Keji",
+        "etymology": "Jukun name of the tutelary deity of Wukari, glossed in the literature as the mother of all creation (Ukaogo and Tanko 2020)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Jukun",
+    "primaryTradition": "Jukun",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Yaku-Keji is worshipped at the Jukun capital Wukari as the tutelary deity who supersedes the household deities and is credited with making all things, including rain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          }
+        ]
+      },
+      {
+        "sphereId": "peace-and-prosperity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_rain_and_all_things",
+        "name": "to make all things, including the rain, and to grant productivity and peace to the land",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          }
+        ]
+      },
+      {
+        "id": "ward_off_misfortune",
+        "name": "to shield tribute-paying villages and districts from misfortune",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "jukun_yaku_keji_tribute",
+        "name": "First-fruits tribute of produce",
+        "kind": "offering",
+        "role": "Villages and districts of the Wukari federation brought produce to Yaku-Keji at Wukari in thanksgiving for peace and security and as an expression of loyalty.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "jukun_aku_uka",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          }
+        ],
+        "notes": "The cult of Yaku-Keji is maintained at the capital Wukari under the ritual paramountcy of the divine king, the Aku Uka, to whom the federation's tribute was directed."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Yaku-Keji is the tutelary deity of the Jukun capital Wukari, described as the mother of all creation, who supersedes the family deities and receives tribute from the villages of the federation in exchange for peace, productivity and protection.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Victor Ukaogo and Adihikon Tanko, \"Linguistic and Cultural Practices in Jukunland: Contrasting Features of Resurgent Tradition\" (2020)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (London: Kegan Paul, Trench, Trübner, 1931)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Yaku-Keji is the great tutelary deity of Wukari, capital of the Jukun and seat of the divine king. She is described in the scholarship as the mother of all creation, believed to make everything including the rain, and her worship centred on prayers for productivity and peace. Villages and districts of the Wukari federation brought their produce to her shrine in thanksgiving for peace and security and to avert misfortune, so that her cult also expressed political loyalty to the capital. Annual Yaku-Keji festivals remain among the celebrated cultural heritages of the Jukun of Wukari."
+  },
+  {
+    "id": "jukun_achu_nyande",
+    "name": {
+      "primary": "Achu Nyande",
+      "alt": [
+        "Acho wa Nyande",
+        "Achu",
+        "Shu"
+      ],
+      "transliterations": {
+        "jukun": "Achu Nyande",
+        "etymology": "Jukun name of the god of rain and the upper skies; achu/shu denotes the upper heavens in Jukun usage recorded by Meek (1931)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Jukun",
+    "primaryTradition": "Jukun",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Achu Nyande is invoked among the Jukun as the god of rain and of the upper skies, closely associated with the celestial sphere of the sky god Chido.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "achu",
+          "script": "Latin",
+          "rom": "achu / shu, the upper skies"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send_rain",
+        "name": "to send rain from the upper skies upon the fields of the Jukun",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "jukun_chido",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (1931)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nathan Irmiya Elawa, \"'The Eliminated Gods': The Christian Reconfiguration of Jukun Theism,\" Studies in World Christianity 28.2 (2022)"
+          }
+        ],
+        "notes": "As god of rain and the upper skies, Achu Nyande operates within the celestial domain presided over by the sky god Chido, with whom he is closely associated in Jukun cosmology."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Achu Nyande (Acho wa Nyande) is the Jukun god of rain and the upper skies, associated with the celestial sphere of the sky god Chido in the agricultural religion of the Benue valley.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria (London: Kegan Paul, Trench, Trübner, 1931)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nathan Irmiya Elawa, \"'The Eliminated Gods': The Christian Reconfiguration of Jukun Theism,\" Studies in World Christianity 28.2 (2022), 209-228"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Achu Nyande, also rendered Acho wa Nyande, is the Jukun god of rain and of the upper skies. Rain held central importance for the agricultural Jukun of the Benue valley, and the divine king himself was believed to mediate rainfall; Achu Nyande personifies the celestial waters within the sphere of the sky god Chido. Modern studies of Jukun theism list him among the indigenous gods whose cults declined under Christian reconfiguration of the pantheon."
+  }
+]
+```

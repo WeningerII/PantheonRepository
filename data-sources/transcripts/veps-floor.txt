@@ -1,0 +1,459 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Veps
+Era (registered, exact): "timeless"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added three figures verified against scholarship on Veps folk religion: the supreme sky and weather god Jumou (dialect forms juma, d'umal, jumou, g'umou; thunder g'umalanguru 'god's thunder'), and the two attested female mistresses (emäg) of water and forest, wired as consorts of the existing water and forest masters, since Veps host spirits are documented as families in which the ižand as a rule had a wife-emäg. Primary anchor is I. Yu. Vinokurova's encyclopedia Mifologiya vepsov (2015) plus her 1994 calendar-rites and 2006 animal-worldview monographs and Uno Holmberg's comparative studies. I deliberately excluded bathhouse, threshing-barn and field masters and the figure Sünd because I could not confirm individuated native terms or adequate citations from the sources reachable in this session; post-Christian saints (Ilya, Mikola) absorbed weather functions but are not Veps deities.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "veps_jumou",
+    "name": {
+      "primary": "Jumou",
+      "alt": [
+        "Jumal",
+        "Juma",
+        "D'umal",
+        "G'umou"
+      ],
+      "transliterations": {
+        "vep": "Jumou",
+        "etymology": "From the common Finnic root *juma(la) 'god, sky' (cf. Finnish/Karelian jumala, Estonian jumal), which researchers connect with the sky and the air (Vinokurova, Mifologiya vepsov, 2015)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Veps",
+    "primaryTradition": "Veps",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "timeless"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "timeless",
+        "eraOrdering": 0,
+        "startEvent": "Attested in Veps folk religion as the supreme heavenly deity governing the weather, whose name survives in all dialect areas (southern juma, northern d'umal, middle jumou/g'umou) and in compound weather terms such as g'umalanguru 'god's thunder' (Vinokurova, Mifologiya vepsov: entsiklopediya, 2015).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "taivaz",
+          "script": "Latin",
+          "rom": "sky, heaven"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      },
+      {
+        "sphereId": "thunder",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "g'umalanguru",
+          "script": "Latin",
+          "rom": "god's thunder"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      },
+      {
+        "sphereId": "weather",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "g'umalansä",
+          "script": "Latin",
+          "rom": "thunderstorm, literally 'god's weather'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Kalendarnye obychai, obryady i prazdniki vepsov (konets XIX — nachalo XX v.). St. Petersburg: Nauka, 1994."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_thunder_and_storm",
+        "name": "to send thunder, thunderstorms and rainbows",
+        "term": {
+          "value": "g'umalanguru",
+          "script": "Latin",
+          "rom": "god's thunder"
+        },
+        "inheritability": "none",
+        "notes": "Veps names for thunder, thunderstorm and rainbow are built on the god's own name, marking these phenomena as his direct actions.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      },
+      {
+        "id": "govern_weather",
+        "name": "to govern the weather and the seasons",
+        "term": {
+          "value": "sä",
+          "script": "Latin",
+          "rom": "weather"
+        },
+        "inheritability": "none",
+        "notes": "Calendar rites addressed the sky god for favourable weather; after Christianization many of his functions passed to St. Ilya (Elijah).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Kalendarnye obychai, obryady i prazdniki vepsov (konets XIX — nachalo XX v.). St. Petersburg: Nauka, 1994."
+          }
+        ]
+      },
+      {
+        "id": "fix_stars_in_sky",
+        "name": "to fasten the stars into the sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In a recorded Veps cosmological belief, God carved golden nails into the sky, and these are the stars.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Jumou (Jumal) is the supreme sky and weather god of Veps folk religion, master of thunder, storm and rainbow, cognate with Finnish-Karelian Jumala and Estonian Jumal.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Kalendarnye obychai, obryady i prazdniki vepsov (konets XIX — nachalo XX v.). St. Petersburg: Nauka, 1994."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Holmberg (Harva), Uno. Finno-Ugric, Siberian (The Mythology of All Races, vol. IV). Boston: Marshall Jones Company, 1927."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Jumou is the highest heavenly being of Veps folk religion, his name recorded in every dialect area (southern Veps juma, northern d'umal, middle jumou and g'umou) and descended from the common Finnic word for god and sky. He was held to be in charge of the weather: thunder was called g'umalanguru, 'god's thunder', and a thunderstorm g'umalansä, 'god's weather', while the rainbow likewise bore his name. A recorded cosmological belief credits him with carving golden nails into the sky to make the stars. With Christianization his thunderer's functions were largely transferred to the prophet Elijah (St. Ilya), whose feast remained a major weather-marking day in the Veps calendar."
+  },
+  {
+    "id": "veps_vedenemag",
+    "name": {
+      "primary": "Water Mistress",
+      "alt": [
+        "Veden emäg",
+        "Vedenemag"
+      ],
+      "transliterations": {
+        "vep": "Veden emäg",
+        "etymology": "Veps veden 'of the water' + emäg 'mistress, matron', a derivative of emä 'mother' (Vinokurova, Mifologiya vepsov, 2015)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Veps",
+    "primaryTradition": "Veps",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "timeless"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "timeless",
+        "eraOrdering": 0,
+        "startEvent": "Attested in Veps belief as veden emäg, the 'mistress of the water', named alongside the water master (veden ižand) among the host spirits applicable to any body of water (Vinokurova, Mifologiya vepsov: entsiklopediya, 2015).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fresh-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vezi",
+          "script": "Latin",
+          "rom": "water"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      },
+      {
+        "sphereId": "fishing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kala",
+          "script": "Latin",
+          "rom": "fish"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Holmberg (Harva), Uno. Die Wassergottheiten der finnisch-ugrischen Völker. Helsinki: Société Finno-Ougrienne, 1913."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_or_withhold_fish",
+        "name": "to grant or withhold the fish of her waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Fishermen addressed the water's host spirits with offerings and spoken requests before fishing.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      },
+      {
+        "id": "punish_offenders_of_water",
+        "name": "to send illness or drowning upon those who offend the water",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Veps disease names attribute ailments 'coming from the water' to its host spirits, who punished improper behaviour at rivers and lakes.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "veps_vedenizand",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ],
+        "notes": "In Veps belief the master spirit (ižand) of a natural space as a rule had a wife-mistress (emäg), and the mistress of the water is named alongside the water master among the host spirits of any body of water."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Veden emäg, the 'mistress of the water', is the female host spirit of rivers and lakes in Veps belief, counterpart and consort of the water master.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Holmberg (Harva), Uno. Die Wassergottheiten der finnisch-ugrischen Völker. Helsinki: Société Finno-Ougrienne, 1913."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Veden emäg, the mistress of the water, belongs to the family of host spirits that Veps tradition assigns to every river and lake: vedehiine the 'waterman', veden ižand the 'master of the water', veden emäg his mistress-wife, and veden uk the 'water old man'. Like the other emäg figures of Veps lower mythology, she is the female head of the watery household, approached by fishermen and by families washing or drawing water, who owed her respect and small offerings. Water spirits in Veps belief were quick to punish offence, and diseases 'coming from the water' were traced back to them."
+  },
+  {
+    "id": "veps_mecanemag",
+    "name": {
+      "primary": "Forest Mistress",
+      "alt": [
+        "Mecan emäg",
+        "Mecanemag"
+      ],
+      "transliterations": {
+        "vep": "Mecan emäg",
+        "etymology": "Veps mecan 'of the forest' (mec 'forest') + emäg 'mistress, matron', a derivative of emä 'mother' (Vinokurova, Mifologiya vepsov, 2015)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Veps",
+    "primaryTradition": "Veps",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "timeless"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "timeless",
+        "eraOrdering": 0,
+        "startEvent": "Attested in Veps belief as mecan emäg, the wife-mistress of the forest master, since the master spirit (ižand) of a space as a rule had a wife-mistress (emäg) and sometimes children (Vinokurova, Mifologiya vepsov: entsiklopediya, 2015).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "forest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mec",
+          "script": "Latin",
+          "rom": "forest"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      },
+      {
+        "sphereId": "wild-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Zhivotnye v traditsionnom mirovozzrenii vepsov (opyt rekonstruktsii). Petrozavodsk: Izdatel'stvo PetrGU, 2006."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "keep_forest_household",
+        "name": "to keep the household of the forest and its animals",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As mistress of the forest spirits' household she shares in the forest family's power over game and grazing cattle.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Zhivotnye v traditsionnom mirovozzrenii vepsov (opyt rekonstruktsii). Petrozavodsk: Izdatel'stvo PetrGU, 2006."
+          }
+        ]
+      },
+      {
+        "id": "lead_astray_or_release",
+        "name": "to lead astray or release people and cattle lost in the forest",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Veps herding and hunting custom addressed the forest's host spirits with requests and offerings to recover strayed cattle and lost people.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "veps_metsanisand",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          }
+        ],
+        "notes": "In Veps belief the forest master (mecan ižand) headed a spirit family in which he as a rule had a wife-mistress (emäg) and sometimes children (lapsed); the forest mistress is his consort."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mecan emäg, the 'mistress of the forest', is the female host spirit of the woodland in Veps belief, wife of the forest master within the forest spirit family.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Mifologiya vepsov: entsiklopediya. Petrozavodsk: Izdatel'stvo PetrGU, 2015."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Vinokurova, I. Yu. Zhivotnye v traditsionnom mirovozzrenii vepsov (opyt rekonstruktsii). Petrozavodsk: Izdatel'stvo PetrGU, 2006."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mecan emäg, the mistress of the forest, is the female partner of the Veps forest master. Veps tradition pictured the spirit-owners of natural and domestic spaces as households: the master (ižand) as a rule had a wife-mistress (emäg) and sometimes children, and the forest family together governed the game, the grazing herds sent into the woods for the summer, and the fate of anyone who wandered there. Herdsmen and hunters addressed the forest's hosts with spoken formulas and small offerings, and cattle or people who went missing were believed to be held by the forest household until it was ritually petitioned to let them go."
+  }
+]
+```

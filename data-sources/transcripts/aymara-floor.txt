@@ -1,0 +1,618 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Aymara
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five well-attested, individuated Aymara figures beyond the existing set: Ekeko/Iqiqu (god of abundance, from Bertonio 1612 and Ponce Sanginés's archaeological study Tunupa y Ekako); Copacati and the Copacabana idol, the complementary rain/celestial-water and lake/fish wak'as of Lake Titicaca documented by Ramos Gavilán (1621) and analyzed by Salles-Reese (1997), which I wired to each other as a Hanan/Hurin complementary pair; Phaxsi, the personified moon and feminine complement of the existing Tata Inti (attested in Bertonio and van den Berg 1990), wired as consort-of Inti; and Wari, the primordial chthonic deity of the world below reconstructed by Bouysse-Cassagne (1988). I deliberately excluded generic spirit-classes such as the anchanchu (a demon type rather than a named individual) and did not re-author Tunupa despite the scholarly equation of Ekeko with Thunupa, since Tunupa already exists in the corpus.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "aymara_ekeko",
+    "name": {
+      "primary": "Ekeko",
+      "alt": [
+        "Iqiqu",
+        "Ekhako",
+        "Eqaqo",
+        "Ekhekho",
+        "Equeco"
+      ],
+      "transliterations": {
+        "aymara": "Iqiqu",
+        "etymology": "From Aymara iqiqu, 'dwarf' or 'hunchback', descriptive of the god's squat, hump-backed figure"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Aymara",
+    "primaryTradition": "Aymara",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Archaeological phallic, hump-backed figurines from the Tiwanaku and Titicaca sites identify Ekeko as a pre-Inca Andean god of abundance whose cult was carried into the colonial and modern Alasitas fair.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Carlos Ponce Sanginés, Tunupa y Ekako: estudio arqueológico acerca de las efigies precolombinas de dorso adunco (1969)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "abundance-and-prosperity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "qamiri",
+          "script": "Latin",
+          "rom": "prosperous / wealthy one"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Carlos Ponce Sanginés, Tunupa y Ekako (1969)"
+          }
+        ]
+      },
+      {
+        "sphereId": "household-fortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ludovico Bertonio, Vocabulario de la lengua aymara (1612)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_abundance",
+        "name": "to bestow abundance and good fortune on a household",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Worshippers offer him miniature versions of the goods they desire so that he will grant the real things in the coming year.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Carlos Ponce Sanginés, Tunupa y Ekako (1969)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "aymara_ekeko_qhipi",
+        "name": "Bundle of miniature goods",
+        "kind": "emblem",
+        "role": "The load of tiny household provisions, banknotes and produce hung on the figurine and exchanged at the Alasitas fair to secure real abundance.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ernesto Cavour Aramayo, Alasitas (1996)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Ekhekho",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Antonio Díaz Villamil, La leyenda del Ekako, in Leyendas de mi tierra (1929)"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ekeko (Aymara Iqiqu) is the Andean god of abundance and prosperity, a hump-backed household deity of pre-Inca Tiwanaku origin whose cult survives as the central figure of the Alasitas fair.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Carlos Ponce Sanginés, Tunupa y Ekako: estudio arqueológico acerca de las efigies precolombinas de dorso adunco (1969)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ludovico Bertonio, Vocabulario de la lengua aymara (1612)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ekeko is the Aymara god of abundance, prosperity and good luck, depicted as a small, smiling, hump-backed man laden with household provisions. His worship is traced by archaeologists to phallic hump-backed effigies of the Tiwanaku culture around Lake Titicaca, and several colonial and modern writers, following Bertonio, have identified him with the older deity Thunupa. Today he presides over the annual Alasitas fair of La Paz, where believers buy miniatures of the goods and fortunes they hope to obtain in the year ahead."
+  },
+  {
+    "id": "aymara_copacati",
+    "name": {
+      "primary": "Copacati",
+      "alt": [
+        "Copacati",
+        "Qota Qati"
+      ],
+      "transliterations": {
+        "aymara": "Quta Qati",
+        "etymology": "Associated with Aymara quta, 'lake'; the second element linked to the serpents (kati) that wreathed the idol, marking it as the deity of celestial water"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Aymara",
+    "primaryTradition": "Aymara",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "The chronicler Alonso Ramos Gavilán records that a serpent-wreathed stone idol on a hill above Copacabana was worshipped as Copacati, the deity of rain and celestial water, and was petitioned for water in times of drought.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alonso Ramos Gavilán, Historia del célebre santuario de Nuestra Señora de Copacabana (1621)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rain-and-celestial-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "jallu",
+          "script": "Latin",
+          "rom": "rain"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verónica Salles-Reese, From Viracocha to the Virgin of Copacabana: Representation of the Sacred at Lake Titicaca (1997)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send_rain",
+        "name": "to send rain upon the fields in times of drought",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the personification of water from Above (Hanan), she was implored for the rains needed for the crops.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alonso Ramos Gavilán, Historia del célebre santuario de Nuestra Señora de Copacabana (1621)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "aymara_copacati_idol",
+        "name": "Serpent-wreathed stone idol",
+        "kind": "cult-image",
+        "role": "A stone image, its body entirely wound about with curled snakes, set on a hilltop above Copacabana and approached in drought to beg for rain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alonso Ramos Gavilán, Historia del célebre santuario de Nuestra Señora de Copacabana (1621)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "aymara_copacabana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verónica Salles-Reese, From Viracocha to the Virgin of Copacabana (1997)"
+          }
+        ],
+        "notes": "Copacati, the deity of water from Above (Hanan) on the hilltop, formed a complementary pair with the lakeshore idol Copacabana, the deity of water from Below (Hurin), expressing the moiety dualism of the Copacabana sanctuary."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Copacati is the pre-Hispanic Aymara deity of rain and celestial water venerated on a hill above Copacabana, represented by a serpent-wreathed stone idol implored for rain in times of drought.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alonso Ramos Gavilán, Historia del célebre santuario de Nuestra Señora de Copacabana (1621)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Verónica Salles-Reese, From Viracocha to the Virgin of Copacabana: Representation of the Sacred at Lake Titicaca (1997)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Copacati was one of the two principal wak'as of pre-Christian Copacabana on Lake Titicaca. The colonial chronicler Ramos Gavilán describes her as a stone idol of ugly form whose body was entirely bound with curled snakes, set upon a hill and beseeched for rain during droughts. Scholars read her as the personification of celestial water from Above (Hanan), the complement of the lakeside idol Copacabana who embodied the terrestrial waters from Below (Hurin); her sanctuary was later overlaid by the cult of the Virgin of Copacabana."
+  },
+  {
+    "id": "aymara_copacabana",
+    "name": {
+      "primary": "Copacabana Idol",
+      "alt": [
+        "Copacabana",
+        "Qota Qawana",
+        "Kotakahuana"
+      ],
+      "transliterations": {
+        "aymara": "Quta Qawana",
+        "etymology": "From Aymara quta, 'lake', and qawaña, 'to view / vantage point', i.e. 'the vantage of the lake'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Aymara",
+    "primaryTradition": "Aymara",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Ramos Gavilán records that on the lakeshore stood a showy blue stone with a human face and a fish's body, worshipped as the deity of the lagoon and the creator of its fish, from which the town of Copacabana took its name.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alonso Ramos Gavilán, Historia del célebre santuario de Nuestra Señora de Copacabana (1621)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lake-and-fish",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "challwa",
+          "script": "Latin",
+          "rom": "fish"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verónica Salles-Reese, From Viracocha to the Virgin of Copacabana (1997)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_fish",
+        "name": "to create and multiply the fish of the lake",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Adored as the maker of fish and of their fertility, the idol embodied the terrestrial waters of Lake Titicaca.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alonso Ramos Gavilán, Historia del célebre santuario de Nuestra Señora de Copacabana (1621)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "aymara_copacabana_bluestone",
+        "name": "Blue stone fish-idol",
+        "kind": "cult-image",
+        "role": "A handsome blue (turquoise-hued) stone carved with a human face and a fish's body, set at the lakeshore and revered as god of the lagoon.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alonso Ramos Gavilán, Historia del célebre santuario de Nuestra Señora de Copacabana (1621)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "aymara_copacati",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Verónica Salles-Reese, From Viracocha to the Virgin of Copacabana (1997)"
+          }
+        ],
+        "notes": "The lakeshore Copacabana, deity of water from Below (Hurin), formed a complementary pair with the hilltop Copacati, deity of water from Above (Hanan)."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Copacabana idol was a pre-Hispanic Aymara lake deity, a blue stone with a human face and fish's body worshipped as god of Lake Titicaca and creator of its fish, whose name passed to the town and later the Marian shrine.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alonso Ramos Gavilán, Historia del célebre santuario de Nuestra Señora de Copacabana (1621)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Verónica Salles-Reese, From Viracocha to the Virgin of Copacabana: Representation of the Sacred at Lake Titicaca (1997)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Copacabana idol was the second of the two great wak'as of pre-Christian Copacabana. Ramos Gavilán describes it as a beautiful blue stone bearing a human face on a body shaped like a fish, adored as the deity of the lagoon and the creator of its fish and their fertility. It represented the terrestrial waters from Below (Hurin), complementing the celestial-water goddess Copacati of the hilltop; the sanctuary's sacred prestige was eventually inherited by the Virgin of Copacabana enthroned there in 1583."
+  },
+  {
+    "id": "aymara_phaxsi",
+    "name": {
+      "primary": "Phaxsi",
+      "alt": [
+        "Paxsi",
+        "Phaxsi Mama"
+      ],
+      "transliterations": {
+        "aymara": "Phaxsi",
+        "etymology": "Aymara phaxsi, 'moon' (also 'month'), the feminine celestial complement of the sun"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Aymara",
+    "primaryTradition": "Aymara",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Aymara cosmovision pairs the moon Phaxsi, as feminine principle, with the sun Tata Inti as masculine principle, and Bertonio's early lexicon records phaxsi as both the moon and the lunar month by which time was reckoned.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ludovico Bertonio, Vocabulario de la lengua aymara (1612)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon-and-night",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "phaxsi",
+          "script": "Latin",
+          "rom": "moon / month"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ludovico Bertonio, Vocabulario de la lengua aymara (1612)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_the_moon",
+        "name": "to govern the moon and the reckoning of the months",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the lunar deity she measures the months and, as feminine principle, complements the solar order of Inti.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hans van den Berg, La tierra no da así nomás: los ritos agrícolas en la religión de los aymara-cristianos (1990)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Phaxsi Mama",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hans van den Berg, La tierra no da así nomás (1990)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "aymara_inti",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hans van den Berg, La tierra no da así nomás (1990)"
+          }
+        ],
+        "notes": "As the feminine lunar principle, Phaxsi is the celestial complement and consort of the masculine sun, Tata Inti."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Phaxsi is the Aymara moon deity, the feminine celestial principle and complement of the sun Tata Inti, whose name also denotes the lunar month.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ludovico Bertonio, Vocabulario de la lengua aymara (1612)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hans van den Berg, La tierra no da así nomás: los ritos agrícolas en la religión de los aymara-cristianos (1990)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Phaxsi is the personified moon of Aymara cosmology, honoured as Phaxsi Mama, 'Mother Moon'. Within the pervasive dual structure of Aymara thought she is the feminine celestial principle set opposite the masculine sun Tata Inti, the two together ordering day and night, and her cycle (phaxsi also meaning 'month') governs the agricultural and ritual calendar. She is associated with women, fertility and the timing of planting and harvest."
+  },
+  {
+    "id": "aymara_wari",
+    "name": {
+      "primary": "Wari",
+      "alt": [
+        "Huari",
+        "Wari"
+      ],
+      "transliterations": {
+        "aymara": "Wari",
+        "etymology": "Andean wari, denoting the autochthonous and primordial (and the vicuña); applied to the chthonic being of the pre-solar age"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Aymara",
+    "primaryTradition": "Aymara",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Bouysse-Cassagne reconstructs Wari as a primordial chthonic deity of the world below, a being of the dark pre-solar age worshipped at underground oracles and linked to springs, subterranean wealth and the world-overturning pachakuti.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thérèse Bouysse-Cassagne, Lluvias y cenizas: dos Pachacuti en la historia (1988)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld-and-mineral-wealth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Manqha Pacha",
+          "script": "Latin",
+          "rom": "the world below"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thérèse Bouysse-Cassagne, Lluvias y cenizas: dos Pachacuti en la historia (1988)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_the_underworld",
+        "name": "to command the springs, winds and hidden wealth beneath the earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "A being of gigantic force dwelling below ground, associated with springs, whirlwinds and the mineral riches of the mines.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thérèse Bouysse-Cassagne, Lluvias y cenizas: dos Pachacuti en la historia (1988)"
+          }
+        ]
+      },
+      {
+        "id": "overturn_the_world",
+        "name": "to overturn the world in the cataclysm of the pachakuti",
+        "term": {
+          "value": "pachakuti",
+          "script": "Latin",
+          "rom": "world-overturning"
+        },
+        "inheritability": "none",
+        "notes": "As a power of the world below, Wari belongs to the forces that generate the transformative cataclysm dividing the world's ages.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thérèse Bouysse-Cassagne and Olivia Harris, Pacha: en torno al pensamiento aymara, in Tres reflexiones sobre el pensamiento andino (1987)"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Wari is a primordial Aymara chthonic deity of the world below (Manqha Pacha), a being of the pre-solar age associated with underground oracles, springs, winds and subterranean wealth, standing opposite the later solar order.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thérèse Bouysse-Cassagne, Lluvias y cenizas: dos Pachacuti en la historia (1988)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Thérèse Bouysse-Cassagne and Olivia Harris, Pacha: en torno al pensamiento aymara, in Tres reflexiones sobre el pensamiento andino (1987)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Wari is a primordial deity of the Aymara world below, the Manqha Pacha. Ethnohistorical reconstruction presents him as a chthonic power of the dark, pre-solar age, worshipped at subterranean oracles and bound up with springs, hurricane winds, and the hidden mineral wealth of the earth, sometimes taking the forms of snakes, lizards and other creeping creatures. As a being of the underworld he is associated with the pachakuti, the periodic cataclysm that overturns the world, and stands in structural opposition to the celestial, solar order that succeeded his age."
+  }
+]
+```

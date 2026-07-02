@@ -1,0 +1,396 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Lydian
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three individuated, well-attested Lydian deities absent from the existing set: Qλdãns/Pldãns (the chief male god of the inscriptions, wired to the existing Artimus as her attested consort), Baki/Pakiš (the native wine-and-frenzy god cognate with Bakkhos), and Malis/Maλiš (a vegetation goddess continuing Anatolian Maliya, recovered via a Lydian–Greek bilingual equating her with Athena). Each rests on at least two real scholarly sources (Gusmani 1964; Greenewalt 2010; Sasseville & Euler, Kadmos 2019; Yakubovich 2024; Payne & Sasseville 2023; Payne & Wintjes 2016). I deliberately excluded the Marivda/"Dark Gods," since these are attested only as an unindividuated collective class rather than a named person, and imported figures such as Kore, whose Lydian standing is too thin to individuate. The corpus's native theonymic record for Lydian is otherwise largely exhausted by these plus the pre-existing entries.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "lydian_qldans",
+    "name": {
+      "primary": "Qλdãns",
+      "alt": [
+        "Pldãns",
+        "Qldans",
+        "Pldans"
+      ],
+      "transliterations": {
+        "lyd": "qλdãns",
+        "etymology": "Yakubovich (2024) derives the theonym from an Anatolian (Luwic) base connected with the word for 'army' (cf. Luwian kuwalan-), reconstructing an original 'Storm-god of the Army'; older readings segmented the first sign as p- (Pldãns) and connected it to Apollo."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lydian",
+    "primaryTradition": "Lydian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Qλdãns appears as the second most frequently attested divine name in the Lydian inscriptions after Artimus, invoked in dedicatory and protective curse formulae from Sardis and its territory.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sasseville, David & Katrin Euler, 'Die Identität des lydischen Qλdãns und seine kulturgeschichtlichen Folgen,' Kadmos 58 (2019): 125–156."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "storm-and-war",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "qλdãns",
+          "script": "Lydian",
+          "rom": "Qλdãns"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Yakubovich, Ilya, 'The Lydian god Qλdãns,' 2024."
+          }
+        ]
+      },
+      {
+        "sphereId": "kingship-and-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sasseville, David & Katrin Euler, 'Die Identität des lydischen Qλdãns und seine kulturgeschichtlichen Folgen,' Kadmos 58 (2019): 125–156."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_the_storm",
+        "name": "to wield storm and thunder in battle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Yakubovich's reconstruction of Qλdãns as a martial Storm-god of the army.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Yakubovich, Ilya, 'The Lydian god Qλdãns,' 2024."
+          }
+        ]
+      },
+      {
+        "id": "guard_the_dedication",
+        "name": "to protect tombs and dedications with binding curses",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Named alongside Artimus in Lydian funerary curse formulae.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gusmani, Roberto, Lydisches Wörterbuch: mit grammatischer Skizze und Inschriftensammlung, Heidelberg: Carl Winter, 1964."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "lydian_artimus",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Greenewalt, Crawford H., Jr., 'The Gods of Lydia,' in N. D. Cahill (ed.), The Lydians and Their World, Istanbul: Yapı Kredi, 2010."
+          }
+        ],
+        "notes": "One long-standing scholarly interpretation makes Qλdãns the principal male deity and paredros of Artimus, the two appearing together as the leading divine pair in Lydian dedications and protective formulae."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Qλdãns (older reading Pldãns) is the chief male deity of the Lydian inscriptions, variously interpreted as a storm/war god, a lunar or Apolline figure, and the consort of Artimus.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sasseville, David & Katrin Euler, 'Die Identität des lydischen Qλdãns und seine kulturgeschichtlichen Folgen,' Kadmos 58 (2019): 125–156."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Yakubovich, Ilya, 'The Lydian god Qλdãns,' 2024."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Qλdãns is the most frequently attested male deity in the surviving Lydian inscriptions, second in overall frequency only to the goddess Artimus, beside whom he is regularly named. His true nature is debated: earlier scholars read the theonym as Pldãns and equated him with Apollo or a moon-god, while more recent work (Sasseville and Euler; Yakubovich) reinterprets the sign values and etymology to reconstruct him as a martial Storm-god of the army. Across these readings he remains the leading masculine power of the native Lydian pantheon."
+  },
+  {
+    "id": "lydian_baki",
+    "name": {
+      "primary": "Baki",
+      "alt": [
+        "Pakiš",
+        "Baki-",
+        "Paki",
+        "Bakivalis"
+      ],
+      "transliterations": {
+        "lyd": "baki- / pakiš",
+        "etymology": "Cognate with Greek Bakkhos (Βάκχος); the Lydian theonym and the Greek name share an Aegean–Anatolian background, with Lydia reputed among the Greeks as a land of viticulture and Dionysiac cult."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lydian",
+    "primaryTradition": "Lydian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Forms of Baki- occur in Lydian texts as a theonym, in the title of a priest, and in the name of the autumn month Pakillλ associated with the grape harvest.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gusmani, Roberto, Lydisches Wörterbuch: mit grammatischer Skizze und Inschriftensammlung, Heidelberg: Carl Winter, 1964, 74–75."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wine-and-viticulture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "pakiš",
+          "script": "Lydian",
+          "rom": "Pakiš"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Greenewalt, Crawford H., Jr., 'The Gods of Lydia,' in N. D. Cahill (ed.), The Lydians and Their World, Istanbul: Yapı Kredi, 2010."
+          }
+        ]
+      },
+      {
+        "sphereId": "ecstasy-and-frenzy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gusmani, Roberto, Lydisches Wörterbuch: mit grammatischer Skizze und Inschriftensammlung, Heidelberg: Carl Winter, 1964."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ripen_the_vine",
+        "name": "to ripen the grape and grant wine",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The autumn month Pakillλ, named for the god, coincided with the grape harvest.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Greenewalt, Crawford H., Jr., 'The Gods of Lydia,' in N. D. Cahill (ed.), The Lydians and Their World, Istanbul: Yapı Kredi, 2010."
+          }
+        ]
+      },
+      {
+        "id": "inspire_ecstasy",
+        "name": "to inspire ecstatic frenzy",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Identified with the ecstatic wine-god Bakkhos/Dionysos by the Greeks.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gusmani, Roberto, Lydisches Wörterbuch: mit grammatischer Skizze und Inschriftensammlung, Heidelberg: Carl Winter, 1964, 74–75."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Baki (Pakiš) is the native Lydian god of wine and ecstatic frenzy, cognate and identified with Greek Bakkhos/Dionysos, whose cult left traces in theophoric names and the calendar month Pakillλ.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gusmani, Roberto, Lydisches Wörterbuch: mit grammatischer Skizze und Inschriftensammlung, Heidelberg: Carl Winter, 1964, 74–75."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Greenewalt, Crawford H., Jr., 'The Gods of Lydia,' in N. D. Cahill (ed.), The Lydians and Their World, Istanbul: Yapı Kredi, 2010."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Baki, appearing in Lydian texts as Baki- or Pakiš, is the indigenous Lydian god of wine and ecstatic frenzy, cognate with the Greek Bakkhos (Dionysos). His name survives in a priestly title, in theophoric personal names such as Pakiwas that imply he was regarded favourably, and in the calendar month Pakillλ, which fell in the part of autumn when the grapes were gathered. Ancient Greek tradition, which prized Lydia as a wine country, connected Dionysos closely with the region, reflecting the shared Aegean–Anatolian roots of the two figures."
+  },
+  {
+    "id": "lydian_malis",
+    "name": {
+      "primary": "Malis",
+      "alt": [
+        "Maλiš",
+        "Malis",
+        "Mališ"
+      ],
+      "transliterations": {
+        "lyd": "maλiš",
+        "etymology": "Continues the Anatolian goddess Maliya, attested in Hittite and Lycian (Lycian Malija); in a Lydian–Greek bilingual she corresponds to Greek Athena."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lydian",
+    "primaryTradition": "Lydian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Malis is identified through a new collation of the Lydian–Greek bilingual inscription on a column drum from the temple of Athena at Pergamon, where her Lydian name corresponds to Greek Athena.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Payne, Annick & David Sasseville, 'Malis: a new Lydian goddess,' in Studies on the History and Archaeology of Lydia from the Early Lydian Period to Late Antiquity, Besançon: Presses universitaires de Franche-Comté, 2023."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "vegetation-and-harvest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maλiš",
+          "script": "Lydian",
+          "rom": "Maλiš"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Payne, Annick & David Sasseville, 'Malis: a new Lydian goddess,' in Studies on the History and Archaeology of Lydia from the Early Lydian Period to Late Antiquity, Besançon: Presses universitaires de Franche-Comté, 2023."
+          }
+        ]
+      },
+      {
+        "sphereId": "wisdom-and-craft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Payne, Annick & Jorit Wintjes, Lords of Asia Minor: An Introduction to the Lydians (Philippika 93), Wiesbaden: Harrassowitz, 2016."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "quicken_vegetation",
+        "name": "to make vines and grain flourish",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Malis possessed a vegetative aspect, especially of wine and corn.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Payne, Annick & David Sasseville, 'Malis: a new Lydian goddess,' in Studies on the History and Archaeology of Lydia from the Early Lydian Period to Late Antiquity, Besançon: Presses universitaires de Franche-Comté, 2023."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Malis (Maλiš) is a Lydian goddess of vegetation, wine and grain, continuing the Anatolian goddess Maliya and corresponding to Greek Athena in a Lydian–Greek bilingual inscription.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Payne, Annick & David Sasseville, 'Malis: a new Lydian goddess,' in Studies on the History and Archaeology of Lydia from the Early Lydian Period to Late Antiquity, Besançon: Presses universitaires de Franche-Comté, 2023."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Payne, Annick & Jorit Wintjes, Lords of Asia Minor: An Introduction to the Lydians (Philippika 93), Wiesbaden: Harrassowitz, 2016."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Malis, in Lydian Maλiš, is a goddess recovered for the Lydian pantheon through a fresh collation of the Lydian–Greek bilingual inscription from the temple of Athena at Pergamon, where her name stands opposite Greek Athena. She continues the older Anatolian goddess Maliya, known from Hittite and Lycian sources, and carries a marked vegetative character, presiding especially over wine and grain. Greek tradition preserved her name in the tale of Arachne, where Athena is called Malis, showing that the cult of Maλiš had passed into the Greek milieu; ancient sources report that the Lydian kings sponsored her worship."
+  }
+]
+```

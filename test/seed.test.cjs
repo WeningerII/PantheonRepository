@@ -139,10 +139,11 @@ test('family-graph parity floors hold (wave-7 enrichment)', () => {
   // Headroom for the ongoing smallest-first sweep; every kinless figure counted
   // here is a cited verified-solitary verdict (enforced by the test above). The
   // ceiling was raised from 470 when the discovery expansion added 100+ new
-  // traditions, each contributing one or two genuinely kinless apex creators
-  // (lone high gods with no named in-corpus consort or progeny) — all carrying a
-  // cited verified-solitary.json reason.
-  assert.ok(noFam <= 650, `figures with no family links grew to ${noFam} (ceiling 650)`);
+  // traditions, and again during the floor-raising sweep over every 1-5-figure
+  // tradition — each pass contributes genuinely kinless apex creators, lone
+  // culture-heroes and epigraphic-only deities (no named in-corpus kin) — all
+  // carrying a cited verified-solitary.json reason.
+  assert.ok(noFam <= 850, `figures with no family links grew to ${noFam} (ceiling 850)`);
 });
 
 test('iconography coverage floor (wave-7g)', () => {

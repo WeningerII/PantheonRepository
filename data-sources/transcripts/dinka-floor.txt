@@ -1,0 +1,380 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Dinka
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two genuinely individuated figures documented in the standard ethnographic literature beyond the existing set. Aiwel Longar (Aiwel), the semi-divine culture hero born of a mortal woman and a river-divinity, is the archetypal first Master of the Fishing Spear and founder of the spear-master priesthood, wired to Nhialic (subordinate-to) and to the divinity Flesh (creator-of). Flesh (Dinka ring) is the named, hereditary clan-divinity of the spear-masters that Aiwel conferred, tied to Nhialic as one of its refractions. I deliberately excluded the many clan-divinity classes Lienhardt lists (Grass/Mon, Fibre, various snake and lion divinities) and the colwic (people struck by lightning), since these are species- or category-associated spirit-classes rather than named individuals; the well-attested individuated Dinka pantheon appears essentially exhausted by the existing five plus these two. Sources checked: Lienhardt, Divinity and Experience: The Religion of the Dinka (1961); Francis Mading Deng, Dinka Cosmology (1980) and The Dinka and Their Songs (1973); Encyclopaedia Britannica 'Aiwel'; and the Wikipedia/encyclopaedic summaries of Dinka religion.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "dinka_aiwel_longar",
+    "name": {
+      "primary": "Aiwel Longar",
+      "alt": [
+        "Aiwel",
+        "Longar",
+        "Aiwel Longar"
+      ],
+      "transliterations": {
+        "dinka": "Aiwel Longar",
+        "etymology": "Aiwel is the personal name of the culture hero; Longar is his ox-name (col), taken from the multicoloured ox he brought back from the river, following the Dinka custom by which a man receives a praise-name from his ox on reaching manhood (Lienhardt 1961; Deng 1980)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Dinka",
+    "primaryTradition": "Dinka",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Born of a mortal woman and a river-divinity, the child Aiwel was carried into the river to his father and returned to his people during a great drought bearing the ox Longar, becoming the first Master of the Fishing Spear.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), chs. 4-5."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "priesthood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bany bith",
+          "script": "Latin",
+          "rom": "master of the fishing-spear"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 171-184."
+          }
+        ]
+      },
+      {
+        "sphereId": "life-and-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "wei",
+          "script": "Latin",
+          "rom": "life / breath"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Deng, Francis Mading, Dinka Cosmology (London: Ithaca Press, 1980)."
+          }
+        ]
+      },
+      {
+        "sphereId": "blessing-and-curse",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": "power of spittle to bless and tongue to curse"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 172-173."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bless_with_spittle",
+        "name": "to bless the living with his spittle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Aiwel conferred on the spear-masters the power of blessing through spittle and cursing through the tongue.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 172-173."
+          }
+        ]
+      },
+      {
+        "id": "secure_fertility_by_prayer",
+        "name": "to keep people, cattle and land fertile through effective invocation",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His prayers were held to be so truthful that they infallibly maintained the fertility and life of his people.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Deng, Francis Mading, Dinka Cosmology (London: Ithaca Press, 1980)."
+          }
+        ]
+      },
+      {
+        "id": "confer_the_divinity_flesh",
+        "name": "to give the divinity Flesh and the fishing-spears to the founding priests",
+        "term": {
+          "value": "ring",
+          "script": "Latin",
+          "rom": "flesh"
+        },
+        "inheritability": "none",
+        "notes": "Those who received spears and the divinity Flesh from Aiwel became the ancestors of the spear-master clans.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 171-184."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dinka_ox_longar",
+        "name": "The ox Longar",
+        "kind": "emblem",
+        "role": "The multicoloured ox from the river whose name became the hero's praise-name.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Deng, Francis Mading, Dinka Cosmology (London: Ithaca Press, 1980)."
+          }
+        ]
+      },
+      {
+        "id": "dinka_bith_spear",
+        "name": "Fishing-spear (bith)",
+        "kind": "regalia",
+        "role": "The sacred fishing-spears Aiwel gave to the first spear-masters as instruments of effective invocation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 171-184."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "bany bith",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), p. 171."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "dinka_nhialic",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), chs. 4-5."
+          }
+        ],
+        "notes": "Aiwel's life-giving powers were understood as derived from and answerable to Divinity, though tradition also records his contest with Divinity's ordering of life and death."
+      },
+      {
+        "kind": "creator-of",
+        "personId": "dinka_flesh",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 171-184."
+          }
+        ],
+        "notes": "Aiwel bestowed the divinity Flesh upon the men who became the founding spear-masters."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Aiwel Longar is the semi-divine culture hero of the Dinka, son of a mortal woman and a river-divinity, who became the first Master of the Fishing Spear and founded the hereditary spear-master priesthood.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), chs. 4-5."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Deng, Francis Mading, Dinka Cosmology (London: Ithaca Press, 1980)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Encyclopaedia Britannica, 'Aiwel' (Chicago: Encyclopaedia Britannica)."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Aiwel Longar is the great culture hero and archetypal ancestor of the Dinka masters of the fishing spear. According to the widely attested myth, his mother was a mortal woman and his father a divinity of the river; as a child he was taken into the river to his father, and he later returned to his people during a devastating drought leading a multicoloured ox named Longar, from which he took his ox-name. He established the hereditary priesthood by giving chosen men fishing-spears, the power of effective invocation, the blessing of his spittle and the cursing of his tongue, and the divinity Flesh; their descendants form the spear-master clans. Because his prayers unfailingly upheld the life and fertility of people, cattle and land, and because in myth he masters death rather than simply succumbing to it, he stands at the boundary between humanity and Divinity, and the ritual of the willing burial alive of aged spear-masters re-enacts his triumph over mortality."
+  },
+  {
+    "id": "dinka_flesh",
+    "name": {
+      "primary": "Flesh",
+      "alt": [
+        "Ring",
+        "Flesh (Divinity)"
+      ],
+      "transliterations": {
+        "dinka": "ring",
+        "etymology": "From Dinka ring, 'flesh, meat'; the divinity is named for the flesh of the spear-masters in which it dwells and which it is said to make quiver when the divinity is active (Lienhardt 1961)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Dinka",
+    "primaryTradition": "Dinka",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Flesh was conferred by Aiwel Longar upon the first Masters of the Fishing Spear and thereafter dwells hereditarily in the bodies of their descendants as the life-giving divinity of the priestly clans.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 136-141, 171-184."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "life-force",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ring",
+          "script": "Latin",
+          "rom": "flesh"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 136-141."
+          }
+        ]
+      },
+      {
+        "sphereId": "priesthood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bany bith",
+          "script": "Latin",
+          "rom": "masters of the fishing-spear"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Deng, Francis Mading, Dinka Cosmology (London: Ithaca Press, 1980)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_life_to_priestly_clans",
+        "name": "to give and sustain life in the spear-master clans",
+        "term": {
+          "value": "wei",
+          "script": "Latin",
+          "rom": "life / breath"
+        },
+        "inheritability": "hereditary",
+        "notes": "Flesh is the life-giving power passed down in the bodies of the spear-master lineages.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 136-141."
+          }
+        ]
+      },
+      {
+        "id": "manifest_by_quivering",
+        "name": "to manifest by making the priest's flesh quiver",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The activity of the divinity is recognised when the flesh of a spear-master trembles or rises.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 136-141."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "dinka_nhialic",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 28-32, 136-141."
+          }
+        ],
+        "notes": "As a clan-divinity, Flesh is understood as a particular refraction of the single Divinity (Nhialic) present among men."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Flesh (Dinka ring) is the named life-giving clan-divinity of the Dinka masters of the fishing spear, conferred by Aiwel Longar and dwelling hereditarily in the bodies of the priestly lineages.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lienhardt, R. Godfrey, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961), pp. 136-141, 171-184."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Deng, Francis Mading, Dinka Cosmology (London: Ithaca Press, 1980)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Flesh, in Dinka ring, is the pre-eminent clan-divinity of the masters of the fishing spear. Unlike the free-divinities of the sky, Flesh is bound to particular human lineages: it was given by the culture hero Aiwel Longar to the men who became the first spear-masters, and it is transmitted through their descendants, in whose bodies it is said to dwell. Its presence and activity are recognised when the flesh of a priest quivers or rises during invocation, and it is the source of the life-giving, truth-speaking power that makes the spear-masters' prayers effective. In Dinka thought Flesh, like the other clan-divinities, is a particular manifestation of the one Divinity (Nhialic) as encountered by a specific group of people, embodying the ideal and enduring values of descent."
+  }
+]
+```

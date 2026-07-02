@@ -1,0 +1,933 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Chamorro
+Era (registered, exact): "mythic-age", "perennial"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the six named, individuated figures that the documented Chamorro record supports beyond the existing creation pair, Chaifi, and the taotaomo'na class: the hero-chiefs Gadao of Inalåhan and Taga of Tinian, the Puntan Påtgon strongman Masåla (wired as Taga's father per the tellings that join the two legends), the Hagåtña mermaid Sirena, the individually named taotaomo'na Anufat, and the Spanish-era trickster Juan Malo, each resting on real citations (Van Peenen 1945; Flood 2001; Spoehr 1957; Fritz 1904; Russell 1998; Heathcote et al., Micronesica 2012; Fee and Webb 2016; Guampedia encyclopedia entries). Gadao's rival chief of Tumon was deliberately excluded because his name is unstable across retellings (Malaguana/Mataquana) and lacks scholarly attestation, while other candidates checked — the maidens who saved Guam, the Two Lovers of Puntan Dos Amantes, duendes/birak, and the White Lady — are unnamed individuals, spirit classes, or modern ghost lore rather than individuated mythic figures. Seventeenth-century chiefs such as Hurao, Kepuha, and Matå'pang were likewise left out as documented historical persons rather than mythological beings.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "chamorro_gadao",
+    "name": {
+      "primary": "Gadao",
+      "alt": [
+        "Gådao",
+        "Chief Gadao",
+        "Maga'låhi Gådao"
+      ],
+      "transliterations": {
+        "ch": "Gådao",
+        "etymology": "CHamoru personal name of uncertain derivation, written Gådao in the modern orthography (\"Folktale: Gådao's Strength,\" Guampedia)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Remembered as the maga'låhi (high chief) of Inalåhan in southern Guam during the island's legendary age, when rival chiefs tested one another in contests of strength.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Gådao's Strength,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/folktale-gadaos-strength/"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "strength",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "minetgot",
+          "script": "Latin",
+          "rom": "strength, might (nominal form of metgot, 'strong')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Gådao's Strength,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/folktale-gadaos-strength/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bo Flood, Marianas Island Legends: Myth and Magic (Honolulu: Bess Press, 2001)"
+          }
+        ]
+      },
+      {
+        "sphereId": "chiefly-authority",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maga'låhi",
+          "script": "Latin",
+          "rom": "high chief, highest-ranking male of a village"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Gådao's Strength,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/folktale-gadaos-strength/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Mythological Depictions of Men,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/mythological-depictions-of-men/"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "superhuman_strength",
+        "name": "to perform feats of superhuman strength",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Gådao's Strength,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/folktale-gadaos-strength/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bo Flood, Marianas Island Legends: Myth and Magic (Honolulu: Bess Press, 2001)"
+          }
+        ]
+      },
+      {
+        "id": "mighty_paddling",
+        "name": "to paddle with such force that a war canoe tears in two",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Gådao's Strength,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/folktale-gadaos-strength/"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "chamorro_liyang_gadao",
+        "name": "Liyang Gådao (Gadao's Cave)",
+        "kind": "monument",
+        "role": "limestone rock-art cave at Inalåhan whose pictograph of two human figures is popularly read as the chief's canoe contest",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Ancient CHamoru/Chamorro Cave Art,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/chamorro-cave-art/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gadao's Cave (Liyang Gådao), Inarajan, Guam — National Register of Historic Places listing (1974)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Maga'låhi Gådao",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Gådao's Strength,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/folktale-gadaos-strength/"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Gadao is the legendary maga'låhi (high chief) of Inalåhan (Inarajan), southern Guam, celebrated for feats of superhuman strength against a rival chief of Tumon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Gådao's Strength,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/folktale-gadaos-strength/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bo Flood, Marianas Island Legends: Myth and Magic (Honolulu: Bess Press, 2001)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Mythological Depictions of Men,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/mythological-depictions-of-men/"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gadao (modern CHamoru Gådao) is the legendary high chief of the southern Guam village of Inalåhan (Inarajan). Two principal legends surround him. In the Three Feats of Strength he proves his worth against the island's other chiefs; in the Battle Between the Chiefs, a rival chief of Tumon in the north — called Malaguana or Mataquana in different retellings — travels south to challenge him. Gadao, unrecognized, greets the visitor and cracks open coconuts with his bare hands, and when the shaken challenger tries to leave with Gadao sharing his canoe, the two men paddle in opposite directions with such force that the canoe tears in half, each chief shooting away on his own half. A panel of roughly fifty pictographs in the cave now called Liyang Gådao (Gadao's Cave), listed on the National Register of Historic Places in 1974, includes two human figures popularly identified with the contending chiefs, and a statue of Gadao stands in Inalåhan today."
+  },
+  {
+    "id": "chamorro_taga",
+    "name": {
+      "primary": "Taga",
+      "alt": [
+        "Tåga",
+        "Tagga'",
+        "Taga the Great",
+        "Maga'låhi Taga"
+      ],
+      "transliterations": {
+        "ch": "Tåga",
+        "etymology": "Recorded as Taga, Tåga and Tagga'; the derivation of the name is uncertain (Heathcote et al., Micronesica 43, 2012)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "chamorro_masala"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Born, according to the legend, at Litekyan (Ritidian) at Guam's northern tip to the village chief, before his wanderings took him first to Luta (Rota) and then to Tinian, where he ruled as chief.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taga,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taga/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Puntan Påtgon,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/puntan-patgon-folktale/"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "strength",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "minetgot",
+          "script": "Latin",
+          "rom": "strength, might (nominal form of metgot, 'strong')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taga,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taga/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gary M. Heathcote, Vincent P. Diego, Hajime Ishida, and Vincent J. Sava, \"An Osteobiography of a Remarkable Protohistoric Chamorro Man from Taga, Tinian,\" Micronesica 43, no. 2 (2012): 131–213"
+          }
+        ]
+      },
+      {
+        "sphereId": "megalithic-architecture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "latte",
+          "script": "Latin",
+          "rom": "megalithic house foundation of pillar (haligi) and capstone (tåsa)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alexander Spoehr, Marianas Prehistory: Archaeological Survey and Excavations on Saipan, Tinian and Rota, Fieldiana: Anthropology 48 (Chicago: Chicago Natural History Museum, 1957)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Taga,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taga/"
+          }
+        ]
+      },
+      {
+        "sphereId": "chiefly-authority",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maga'låhi",
+          "script": "Latin",
+          "rom": "high chief, highest-ranking male of a village"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taga,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taga/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Taga the Great (Saipan: Trust Territory of the Pacific Islands Department of Education, 1978), ERIC ED168910"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "latte_raising",
+        "name": "to quarry, carry, and raise megalithic latte pillars single-handedly",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taga,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taga/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Scott Russell, Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands, Micronesian Archaeological Survey Report 32 (Saipan: CNMI Division of Historic Preservation, 1998)"
+          }
+        ]
+      },
+      {
+        "id": "contest_victory",
+        "name": "to best rival chiefs in contests of strength",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taga,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taga/"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "chamorro_guma_taga",
+        "name": "Guma' Taga (House of Taga)",
+        "kind": "monument",
+        "role": "megalithic latte house on Sanhalom Bay, Tinian, attributed to the chief; its stones stand about fifteen feet tall and were sketched by George Anson's expedition in 1742",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alexander Spoehr, Marianas Prehistory: Archaeological Survey and Excavations on Saipan, Tinian and Rota, Fieldiana: Anthropology 48 (Chicago: Chicago Natural History Museum, 1957)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "William N. Morgan, Prehistoric Architecture in Micronesia (Austin: University of Texas Press, 1988)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Georg Fritz, \"Die Chamorro: Eine Geschichte und Ethnographie der Marianen,\" Ethnologisches Notizblatt 3, no. 3 (1904), trans. Elfriede Craddock as The Chamorro: A History and Ethnography of the Mariana Islands (Saipan: CNMI Division of Historic Preservation, 1989)"
+          }
+        ]
+      },
+      {
+        "id": "chamorro_as_nieves_quarry",
+        "name": "As Nieves latte quarry",
+        "kind": "monument",
+        "role": "quarry on Luta (Rota) where the largest latte shafts ever attempted lie unfinished, said to have been abandoned by Taga before he crossed to Tinian",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Scott Russell, Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands, Micronesian Archaeological Survey Report 32 (Saipan: CNMI Division of Historic Preservation, 1998)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Taga,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taga/"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Maga'låhi Taga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Puntan Påtgon,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/puntan-patgon-folktale/"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Taga is the legendary giant chief of Tinian who raised the megalithic House of Taga and is remembered as the greatest chief of the Mariana Islands.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taga,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taga/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gary M. Heathcote, Vincent P. Diego, Hajime Ishida, and Vincent J. Sava, \"An Osteobiography of a Remarkable Protohistoric Chamorro Man from Taga, Tinian,\" Micronesica 43, no. 2 (2012): 131–213"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alexander Spoehr, Marianas Prehistory: Archaeological Survey and Excavations on Saipan, Tinian and Rota, Fieldiana: Anthropology 48 (Chicago: Chicago Natural History Museum, 1957)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Taga the Great (Saipan: Trust Territory of the Pacific Islands Department of Education, 1978), ERIC ED168910"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Taga is the most celebrated legendary chief of the Northern Mariana Islands. In the tale as told on Guam and Tinian he was born a giant at Litekyan (Ritidian) on Guam's northern tip, son of the village chief — a father whom the linked Puntan Påtgon legend names Masåla. After clashing with his father (in one telling losing a challenge fight, in another fleeing his father's jealous rage by leaping across the sea), the boy settled on Luta (Rota), where he defeated the resident chief in contests and began quarrying at As Nieves the largest latte shafts ever attempted, which still lie unfinished in the rock. Moving on to Tinian, he became its chief and raised the House of Taga (Guma' Taga), the tallest latte structure ever built, with stones about fifteen feet high; members of George Anson's expedition sketched all twelve pillars standing in 1742, and Alexander Spoehr excavated the site in the twentieth century. Tellings of his end differ: the pillars of his house are said to have fallen one by one as members of his family died, and the spirit of his daughter is said to remain in the single pillar still standing."
+  },
+  {
+    "id": "chamorro_masala",
+    "name": {
+      "primary": "Masåla",
+      "alt": [
+        "Masala"
+      ],
+      "transliterations": {
+        "ch": "Masåla",
+        "etymology": "CHamoru personal name of unexplained meaning, spelled Masala or Masåla in the retellings (\"Folktale: Puntan Påtgon,\" Guampedia)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Lived on Guåhan (Guam) as the strongest man of the Marianas in the age of giants, until his jealousy drove his own giant child across the sea to Luta (Rota).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Puntan Påtgon,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/puntan-patgon-folktale/"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "strength",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "minetgot",
+          "script": "Latin",
+          "rom": "strength, might (nominal form of metgot, 'strong')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Puntan Påtgon,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/puntan-patgon-folktale/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Chamorro Folktales about Guam: Puntan Påtgon,\" Stripes Guam (Stars and Stripes Pacific), https://guam.stripes.com/travel/chamorro-folktales-about-guam-puntan-patgon"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "unmatched_strength",
+        "name": "to wield strength unmatched among the people of the Marianas",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Puntan Påtgon,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/puntan-patgon-folktale/"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "chamorro_taga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Puntan Påtgon,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/puntan-patgon-folktale/"
+          }
+        ],
+        "notes": "In tellings that continue the Puntan Påtgon legend, the giant child who fled Masåla's jealous rage and leapt from Jinapsan Point to Luta (Rota) grew up to become the great chief Taga."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Masåla is the strongman of Guam's Puntan Påtgon (Child's Point) legend, whose jealousy of his giant child's greater strength drove the boy to leap from Jinapsan Point in northern Guam to Rota.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Puntan Påtgon,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/puntan-patgon-folktale/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Chamorro Folktales about Guam: Puntan Påtgon,\" Stripes Guam (Stars and Stripes Pacific), https://guam.stripes.com/travel/chamorro-folktales-about-guam-puntan-patgon"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Eric Forbes, \"Puntan Påtgon,\" Paleric: Chamorro history and culture blog (October 2014), http://paleric.blogspot.com/2014/10/puntan-patgon.html"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Masåla appears in the Puntan Påtgon (Child's Point) legend of northern Guam as the strongest man of the Marianas in the age when giants were said to live in the islands. He grew jealous of his own small son, whose casual feats — such as tearing a coconut palm out of the ground to bare the burrow of an ayuyu (coconut crab) — began to outshine the father's fame. When Masåla flew into a rage, the frightened child ran to the island's northernmost point at Jinapsan (Hinapsan) and leapt across some forty miles of sea to the southern tip of Luta (Rota), leaving a giant footprint in the rock on each island. The tale explains the placename Puntan Påtgon and is told as a lesson about mamåhlao, the CHamoru value of humility and shame, which Masåla's pride and envy violated; in some tellings the child who made the leap grew up to become the great chief Taga."
+  },
+  {
+    "id": "chamorro_sirena",
+    "name": {
+      "primary": "Sirena",
+      "alt": [
+        "Sirena of Guam",
+        "I Sirena"
+      ],
+      "transliterations": {
+        "ch": "Sirena",
+        "etymology": "From Spanish sirena, 'mermaid'; the tale entered CHamoru tradition during the Spanish colonial era, and Sirena was traditionally not given as a baptismal name on Guam before the Second World War (\"Folktale: Sirena,\" Guampedia)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "female",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Born a daughter of Hagåtña who swam at the Minondu spring on the Hagåtña River whenever she could slip away from her chores, as the legend set in Guam's Spanish era tells.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Sirena,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/sirena/"
+          }
+        ]
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "perennial",
+        "eraOrdering": 1,
+        "startEvent": "Changed from the waist down into a fish by her mother's curse, tempered by her godmother's blessing, she swam out of the river mouth and is said to dwell in the sea ever after.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Sirena,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/sirena/"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tåsi",
+          "script": "Latin",
+          "rom": "sea, ocean"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Sirena,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/sirena/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          }
+        ]
+      },
+      {
+        "sphereId": "rivers-and-springs",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "saddok",
+          "script": "Latin",
+          "rom": "river (as in Saddok Hagåtña, the Hagåtña River)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Sirena,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/sirena/"
+          }
+        ]
+      },
+      {
+        "sphereId": "transformation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bo Flood, Marianas Island Legends: Myth and Magic (Honolulu: Bess Press, 2001)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sea_dwelling",
+        "name": "to live in the sea as half woman, half fish",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Sirena,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/sirena/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          }
+        ]
+      },
+      {
+        "id": "swift_swimming",
+        "name": "to swim with speed and grace no pursuer can match",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bo Flood, Marianas Island Legends: Myth and Magic (Honolulu: Bess Press, 2001)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Sirena is the mermaid of Hagåtña — a girl of Spanish-era Guam changed half into a fish by her mother's curse and preserved half human by her godmother's intercession.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Folktale: Sirena,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/sirena/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bo Flood, Marianas Island Legends: Myth and Magic (Honolulu: Bess Press, 2001)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sirena is the mermaid of Hagåtña and the best-loved figure of Guam's Spanish-era folklore. A girl who loved swimming above every chore, she slipped away once too often to the Hagåtña River at the Minondu spring instead of gathering coconut shells for her mother's ironing coals. Her exasperated mother cursed her — if she loved to swim so much, let her be a fish — and her godmother (in some tellings her grandmother) quickly blessed the part of the girl that belonged to her, so that only Sirena's lower half became a fish. Half woman and half fish, Sirena swam out of the river mouth into the Pacific, where sailors are said to glimpse her still. The tale, adapted from Iberian mermaid lore during the colonial period and first set down at length by Mavis Warner Van Peenen in 1945, is told as a caution to disobedient children and quick-tongued mothers alike; a statue of Sirena stands today beside the river mouth in Hagåtña."
+  },
+  {
+    "id": "chamorro_anufat",
+    "name": {
+      "primary": "Anufat",
+      "alt": [],
+      "transliterations": {
+        "ch": "Anufat",
+        "etymology": "CHamoru spirit-name of unexplained derivation borne by a singular taotaomo'na (\"Taotaomo'na,\" Guampedia)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "perennial",
+        "eraOrdering": 0,
+        "startEvent": "Known from CHamoru accounts of the taotaomo'na as a fearsome, individually named ancestral spirit who haunts ancient burial places to the present day.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taotaomo'na,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taotaomona-taotaomona/"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "burial-grounds",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "naftan",
+          "script": "Latin",
+          "rom": "grave, burial place"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taotaomo'na,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taotaomona-taotaomona/"
+          }
+        ]
+      },
+      {
+        "sphereId": "ancestral-spirits",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "taotaomo'na",
+          "script": "Latin",
+          "rom": "'people of before'; ancestral spirit"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taotaomo'na,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taotaomona-taotaomona/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Mythological Depictions of Men,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/mythological-depictions-of-men/"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "burial_ground_wrath",
+        "name": "to strike ill or harm those who cross ancient burial grounds without announcing themselves",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taotaomo'na,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taotaomona-taotaomona/"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Anufat is the most vividly described of the individually named taotaomo'na — a fanged, fern-grown ancestral spirit who haunts ancient burial grounds on Guam and harms intruders who fail to whistle in warning.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "\"Taotaomo'na,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/taotaomona-taotaomona/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Mythological Depictions of Men,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/mythological-depictions-of-men/"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Anufat is the most vividly described of the individually named taotaomo'na, the ancestral spirits of the Mariana Islands. Accounts collected on Guam picture him as a huge, ugly spirit with long fangs or six-inch teeth and long nails, a dark complexion, a hole in the side of his head holding a bird's nest, and a gaping wound in his side out of which grows a large galak fern (galak dangkulu). He is bound to ancient burial places: the manåmko' (elders) teach that anyone walking through such ground must whistle so as not to startle Anufat, who may otherwise do the intruder great harm. He is thus a singular, named presence within the wider taotaomo'na belief that the spirits of the people of before still inhabit the jungle and sacred sites of the islands."
+  },
+  {
+    "id": "chamorro_juan_malo",
+    "name": {
+      "primary": "Juan Malo",
+      "alt": [
+        "Juan Måla",
+        "Juan Mala",
+        "Pedro Malas"
+      ],
+      "transliterations": {
+        "ch": "Juan Måla",
+        "etymology": "Spanish for 'Bad John'; the trickster is also recorded as Juan Måla and Pedro Malas (Fee and Webb, eds., American Myths, Legends, and Tall Tales, 2016)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "male",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Set in Spanish colonial Guam, the tale cycle presents Juan Malo as a poor CHamoru whose wits repeatedly best the island's governors and officials.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "trickery-and-cunning",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "dagi",
+          "script": "Latin",
+          "rom": "to lie, deceive, trick"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Christopher R. Fee and Jeffrey B. Webb, eds., American Myths, Legends, and Tall Tales: An Encyclopedia of American Folklore, s.v. \"Water Buffalo, a Guamanian American Legend\" (Santa Barbara: ABC-CLIO, 2016)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "governor_outwitting",
+        "name": "to outwit governors and officials with cunning schemes",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Christopher R. Fee and Jeffrey B. Webb, eds., American Myths, Legends, and Tall Tales: An Encyclopedia of American Folklore, s.v. \"Water Buffalo, a Guamanian American Legend\" (Santa Barbara: ABC-CLIO, 2016)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "chamorro_juan_malo_karabao",
+        "name": "Juan Malo's karabao (water buffalo)",
+        "kind": "companion animal",
+        "role": "the trickster's trusty sidekick and partner in his schemes, as when Juan walks it backward so its tracks mislead the governor's soldiers",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Christopher R. Fee and Jeffrey B. Webb, eds., American Myths, Legends, and Tall Tales: An Encyclopedia of American Folklore, s.v. \"Water Buffalo, a Guamanian American Legend\" (Santa Barbara: ABC-CLIO, 2016)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Juan Malo is the CHamoru trickster folk hero of Spanish-era Guam who, often aided by his karabao, repeatedly outwits the island's Spanish governors, a cycle read as covert resistance to colonial rule.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mavis Warner Van Peenen, Chamorro Legends on the Island of Guam (1945; repr. Mangilao: Richard F. Taitano Micronesian Area Research Center, University of Guam, 2008)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Christopher R. Fee and Jeffrey B. Webb, eds., American Myths, Legends, and Tall Tales: An Encyclopedia of American Folklore, s.v. \"Water Buffalo, a Guamanian American Legend\" (Santa Barbara: ABC-CLIO, 2016)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"CHamoru/Chamorro Comic Strip: Juan Malimanga,\" Guampedia: The Encyclopedia of Guam, https://www.guampedia.com/comic-strip-juan-malimanga/"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Juan Malo ('Bad John', also recorded as Juan Måla and Pedro Malas) is the trickster of CHamoru folklore: a poor young man of Spanish-era Guam who, often with his faithful karabao (water buffalo), outwits the Spanish governor and other colonial authorities in a long cycle of comic tales. In one famous story his karabao wallows in the governor's lily pond and Juan parlays the embarrassment into a job minding the governor's pigs, which he promptly eats, before escaping by walking his karabao backward so that its tracks appear to lead toward the house rather than away. Folklorists read the cycle, first set down at length by Mavis Warner Van Peenen in 1945, as covert resistance to colonial rule, and the trickster's name lives on in Guam's long-running CHamoru-language newspaper comic strip Juan Malimanga."
+  }
+]
+```

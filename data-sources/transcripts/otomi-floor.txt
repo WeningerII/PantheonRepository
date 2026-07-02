@@ -1,0 +1,699 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Otomi
+Era (registered, exact): "mythic", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five individuated, well-attested Otomi divinities missing from the corpus: the pre-Hispanic rain lord Muye (Otomi counterpart of Tlaloc; Wright Carr 2007, Méndez Gómez 2023), the wind god and universal creator Eday/Edähi of the Jilotepec-Querétaro Otomi (Relación geográfica de Querétaro 1582, Carrasco 1950), the oracle serpent-goddess Acpaxapo of Lake Xaltocan (Anales de Cuauhtitlan tr. Bierhorst 1992, Carrasco 1950, Béligand 1998), and the two great Sierra Otomi lords still worshipped today, Maka Xumpø Dehe the Lady of the Waters ("la Sirena") and Maka Häi, Lord Earth (Dow ed. 1995, Galinier 1990/2004, Gallardo Arias 2012). Yocippa was deliberately not added because scholarship identifies Yocippa/Yozipa as another name of Otontecuhtli-Xocotl, already in the corpus. Also excluded were unindividuated spirit classes (antiguas, judíos, seed spirits, the plural muye thunder-lords, which are subsumed under the singular colonial rain lord) and post-contact syncretic individuations such as Moctezuma and Santa Rosa. No attested genealogies or personal relations link these five to each other or to the existing four figures, so each carries a cited solitary justification instead of speculative wiring.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "otomi_muye",
+    "name": {
+      "primary": "Lord of the Rain",
+      "alt": [
+        "Muye",
+        "Mu'ye",
+        "Hmü'ye"
+      ],
+      "transliterations": {
+        "ote": "Muye",
+        "etymology": "From Otomi hmü 'lord' + 'ye 'rain', 'lord of the rain' (Wright Carr 2007; Méndez Gómez 2023)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Otomi",
+    "primaryTradition": "Otomi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped from pre-Hispanic times as the Otomi lord of rain, the counterpart of the Nahua Tlaloc, and still receiving offerings from Otomi devotees in colonial-era idolatry proceedings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wright Carr, David Charles (2007). \"Los dioses en las lenguas otomí y náhuatl\" (IX Coloquio Internacional sobre Otopames, Xalapa)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Méndez Gómez, David (2023). \"La Inquisición de Tlalhuacpan: el culto a la lluvia entre los otomíes del Mezquital.\" Cuicuilco. Revista de Ciencias Antropológicas 30(88): 193-214."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "'ye",
+          "script": "Latn",
+          "rom": "'ye 'rain'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Méndez Gómez, David (2023). \"La Inquisición de Tlalhuacpan: el culto a la lluvia entre los otomíes del Mezquital.\" Cuicuilco 30(88): 193-214."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wright Carr, David Charles (2007). \"Los dioses en las lenguas otomí y náhuatl\" (IX Coloquio Internacional sobre Otopames, Xalapa)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send_the_rains",
+        "name": "to send the rains that water the fields",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the Otomi equivalent of Tlaloc, Muye dispenses the seasonal rains around which the Otomi festival calendar of twenty-day months turned.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Patrick Encina, Geraldine (2015). \"Muye, el Tláloc otomí. ¿Qué papel juega en las veintenas?\" (Seminario sobre el culto a Tláloc, IIA-UNAM)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wright Carr, David Charles (2007). \"Los dioses en las lenguas otomí y náhuatl\" (IX Coloquio Internacional sobre Otopames, Xalapa)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Muye ('Lord of the Rain') is the Otomi rain god, the counterpart of the central Mexican Tlaloc, attested in colonial Otomi-language sources and worshipped by Otomi communities such as Tutotepec into the colonial era.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Wright Carr, David Charles (2007). \"Los dioses en las lenguas otomí y náhuatl\" (IX Coloquio Internacional sobre Otopames, Xalapa)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Méndez Gómez, David (2023). \"La Inquisición de Tlalhuacpan: el culto a la lluvia entre los otomíes del Mezquital.\" Cuicuilco. Revista de Ciencias Antropológicas 30(88): 193-214."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Patrick Encina, Geraldine (2015). \"Muye, el Tláloc otomí. ¿Qué papel juega en las veintenas?\" (Seminario sobre el culto a Tláloc, IIA-UNAM)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Otomi/Hñähñu (central Mexico). Muye, 'Lord of the Rain' (hmü 'lord' + 'ye 'rain'), is the Otomi god of rain whom the Nahua worshipped as Tlaloc. His name is preserved in early colonial Otomi-language materials connected with the festival calendar of twenty-day months, and inquisitorial records studied by Méndez Gómez show the rain lord still receiving offerings and self-sacrifice from Otomi devotees of the Mezquital and the Sierra town of Tutotepec long after the conquest. He is a weather god of the first rank in the ancient Otomi pantheon, standing beside the old fire god and the lunar Old Mother."
+  },
+  {
+    "id": "otomi_edahi",
+    "name": {
+      "primary": "God of the Winds",
+      "alt": [
+        "Eday",
+        "Edähi"
+      ],
+      "transliterations": {
+        "ote": "Edähi",
+        "etymology": "Otomi e- (proper-name prefix) + dähi 'wind', i.e. 'the personified Wind' (Wright Carr 2007)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Otomi",
+    "primaryTradition": "Otomi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Venerated by the Otomi of the province of Jilotepec, founders of Querétaro, as the wind god who had created the whole universe, according to the Relación geográfica de Querétaro of 1582.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ramos de Cárdenas, Francisco (1582). \"Relación geográfica de Querétaro,\" in René Acuña (ed.), Relaciones geográficas del siglo XVI: Michoacán (México: UNAM, 1987)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wright Carr, David Charles (2007). \"Los dioses en las lenguas otomí y náhuatl\" (IX Coloquio Internacional sobre Otopames, Xalapa)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wind",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "dähi",
+          "script": "Latn",
+          "rom": "dähi 'wind'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wright Carr, David Charles (2007). \"Los dioses en las lenguas otomí y náhuatl\" (IX Coloquio Internacional sobre Otopames, Xalapa)."
+          }
+        ]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ramos de Cárdenas, Francisco (1582). \"Relación geográfica de Querétaro,\" in René Acuña (ed.), Relaciones geográficas del siglo XVI: Michoacán (México: UNAM, 1987)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_the_universe",
+        "name": "to create the whole universe",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Relación geográfica de Querétaro records that the Otomi held Eday, god of the winds, to have created the entire universe.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ramos de Cárdenas, Francisco (1582). \"Relación geográfica de Querétaro,\" in René Acuña (ed.), Relaciones geográficas del siglo XVI: Michoacán (México: UNAM, 1987)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Carrasco Pizana, Pedro (1950). Los otomíes: cultura e historia prehispánicas de los pueblos mesoamericanos de habla otomiana. México: UNAM."
+          }
+        ]
+      },
+      {
+        "id": "raise_the_winds",
+        "name": "to raise and command the winds",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the personified Wind he governs the moving air, and his image corresponds to the buccal-masked wind god of central Mexico.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wright Carr, David Charles (2007). \"Los dioses en las lenguas otomí y náhuatl\" (IX Coloquio Internacional sobre Otopames, Xalapa)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "otomi_eday_stone_idol",
+        "name": "Stone idol of Eday",
+        "kind": "cult-image",
+        "role": "Principal image of the wind god, set in the most eminent place of a sanctuary that served as his temple, attended by priests",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ramos de Cárdenas, Francisco (1582). \"Relación geográfica de Querétaro,\" in René Acuña (ed.), Relaciones geográficas del siglo XVI: Michoacán (México: UNAM, 1987)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Carrasco Pizana, Pedro (1950). Los otomíes: cultura e historia prehispánicas de los pueblos mesoamericanos de habla otomiana. México: UNAM."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Eday/Edähi ('the Wind') was the wind god and universal creator worshipped with a stone idol and priesthood by the Otomi of Jilotepec and early Querétaro, corresponding to the central Mexican Ehecatl.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Ramos de Cárdenas, Francisco (1582). \"Relación geográfica de Querétaro,\" in René Acuña (ed.), Relaciones geográficas del siglo XVI: Michoacán (México: UNAM, 1987)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wright Carr, David Charles (2007). \"Los dioses en las lenguas otomí y náhuatl\" (IX Coloquio Internacional sobre Otopames, Xalapa)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Carrasco Pizana, Pedro (1950). Los otomíes: cultura e historia prehispánicas de los pueblos mesoamericanos de habla otomiana. México: UNAM."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Otomi/Hñähñu (central Mexico). The Relación geográfica de Querétaro (1582) describes the stone idol the Otomi of Jilotepec called Eday, 'god of the winds', whom they believed to have created the whole universe; it stood in the most eminent place of a sanctuary served by priests. The name is the Otomi word for wind, dähi, turned into a proper name by the personifying prefix e-, and the god's image with its projecting mouth-mask corresponds to the central Mexican wind god Ehecatl, as Pedro Carrasco and David Wright Carr have shown."
+  },
+  {
+    "id": "otomi_acpaxapo",
+    "name": {
+      "primary": "Serpent-Woman of Lake Xaltocan",
+      "alt": [
+        "Acpaxapo",
+        "Ācpaxapo"
+      ],
+      "transliterations": {
+        "nci": "Acpaxapo",
+        "etymology": "Nahuatl name preserved in the Anales de Cuauhtitlan for the oracle-serpent of the Otomi of Xaltocan; its derivation is uncertain"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Otomi",
+    "primaryTradition": "Otomi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Rose from the waters of Lake Xaltocan as a great serpent with the face and hair of a woman to deliver oracles to the Otomi of Xaltocan during their fourteenth-century wars with Cuauhtitlan.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Anales de Cuauhtitlan, in John Bierhorst (tr.), History and Mythology of the Aztecs: The Codex Chimalpopoca (Tucson: University of Arizona Press, 1992)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Carrasco Pizana, Pedro (1950). Los otomíes: cultura e historia prehispánicas de los pueblos mesoamericanos de habla otomiana. México: UNAM."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "prophecy-and-oracles",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Anales de Cuauhtitlan, in John Bierhorst (tr.), History and Mythology of the Aztecs: The Codex Chimalpopoca (Tucson: University of Arizona Press, 1992)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Carrasco Pizana, Pedro (1950). Los otomíes: cultura e historia prehispánicas de los pueblos mesoamericanos de habla otomiana. México: UNAM."
+          }
+        ]
+      },
+      {
+        "sphereId": "lakes-and-springs",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Béligand, Nadine (1998). \"Les trois âges d'un couple de déités lacustres: éclosion, renaissance et disparition des sirènes du lac de Chicnahuapan, vallée de Toluca (Mexique).\" Journal de la Société des Américanistes 84(1): 45-72."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "foretell_the_fortunes_of_war",
+        "name": "to foretell the fortunes of war",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "When war was declared she told the people of Xaltocan whether they would take captives, die or be captured, and when the enemy would sally forth.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Anales de Cuauhtitlan, in John Bierhorst (tr.), History and Mythology of the Aztecs: The Codex Chimalpopoca (Tucson: University of Arizona Press, 1992)."
+          }
+        ]
+      },
+      {
+        "id": "rise_from_the_lake_as_a_serpent_woman",
+        "name": "to rise from the lake as a great serpent with a woman's face",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "She appeared in the lagoon of Xaltocan as an enormous snake bearing the face and long hair of a woman, and offerings were cast into the water for her at Acpaxapocan.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Anales de Cuauhtitlan, in John Bierhorst (tr.), History and Mythology of the Aztecs: The Codex Chimalpopoca (Tucson: University of Arizona Press, 1992)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Carrasco Pizana, Pedro (1950). Los otomíes: cultura e historia prehispánicas de los pueblos mesoamericanos de habla otomiana. México: UNAM."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Acpaxapo is the oracle-goddess of the Otomi of Xaltocan, a great water-serpent with a woman's face and hair who rose from the lake to foretell the outcome of their wars and received offerings at Acpaxapocan.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Anales de Cuauhtitlan, in John Bierhorst (tr.), History and Mythology of the Aztecs: The Codex Chimalpopoca (Tucson: University of Arizona Press, 1992)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Carrasco Pizana, Pedro (1950). Los otomíes: cultura e historia prehispánicas de los pueblos mesoamericanos de habla otomiana. México: UNAM."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Béligand, Nadine (1998). \"Les trois âges d'un couple de déités lacustres: éclosion, renaissance et disparition des sirènes du lac de Chicnahuapan, vallée de Toluca (Mexique).\" Journal de la Société des Américanistes 84(1): 45-72."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Otomi of Xaltocan (Valley of Mexico). The Anales de Cuauhtitlan relate that during the wars between Otomi Xaltocan and Cuauhtitlan the goddess Acpaxapo used to rise from the lagoon as a great serpent with the face and long hair of a woman, telling the Xaltocameca whether they would take captives, die or be captured, and when the enemy would come out, and that offerings were made to her in the waters at the place named after her, Acpaxapocan. Modern scholarship treats her as a lacustrine and lunar divinity of the lake-dwelling Otomi, comparable to the serpent-women and sirens of the central Mexican lakes and to the Cihuacoatl complex."
+  },
+  {
+    "id": "otomi_maka_xumpo_dehe",
+    "name": {
+      "primary": "Lady of the Waters",
+      "alt": [
+        "Maka Xumpø Dehe",
+        "Sirena",
+        "Hmũthe",
+        "Xumfø Dehe",
+        "Nxünfō Dehe"
+      ],
+      "transliterations": {
+        "ote": "Maka Xumpø Dehe",
+        "etymology": "Otomi maka 'sacred, venerated' + xumpø 'lady' + dehe 'water', 'Sacred Lady of the Waters' (Dow 1995)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Otomi",
+    "primaryTradition": "Otomi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Honored among the Sierra Otomi as one of the principal deities of the pantheon, the sacred Lady of the Waters who owns the springs and rivers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Otomí of the Sierra,\" in Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean, ed. James W. Dow (Boston: G. K. Hall/Macmillan, 1995)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "dehe",
+          "script": "Latn",
+          "rom": "dehe 'water'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Otomí of the Sierra,\" in Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean, ed. James W. Dow (Boston: G. K. Hall/Macmillan, 1995)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gallardo Arias, Patricia (2012). Ritual, palabra y cosmos otomí: yo soy costumbre, yo soy de antigua. México: UNAM, Instituto de Investigaciones Históricas."
+          }
+        ]
+      },
+      {
+        "sphereId": "vegetation-and-love",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galinier, Jacques (1990). La mitad del mundo: cuerpo y cosmos en el ritual otomí. México: UNAM/CEMCA/INI."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "own_the_springs_and_waters",
+        "name": "to own the springs, rivers and rain-bearing waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As mistress and owner of the water she is petitioned at springs, and communities make offerings to her so that the water will not fail.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Otomí of the Sierra,\" in Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean, ed. James W. Dow (Boston: G. K. Hall/Macmillan, 1995)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gallardo Arias, Patricia (2012). Ritual, palabra y cosmos otomí: yo soy costumbre, yo soy de antigua. México: UNAM, Instituto de Investigaciones Históricas."
+          }
+        ]
+      },
+      {
+        "id": "quicken_the_green_realm_of_moisture",
+        "name": "to quicken the green realm of moisture, lush vegetation and love",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In Galinier's ethnography the water divinity hmũthe presides over the kingdom of humidity, exuberant vegetation and love, whose habitual color is green.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galinier, Jacques (1990). La mitad del mundo: cuerpo y cosmos en el ritual otomí. México: UNAM/CEMCA/INI."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Hmũthe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galinier, Jacques (1990). La mitad del mundo: cuerpo y cosmos en el ritual otomí. México: UNAM/CEMCA/INI."
+          }
+        ]
+      },
+      {
+        "original": "Nxünfō Dehe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Museo Nacional de Antropología (INAH), \"Nxünfō Dehe. La dueña del agua\" (Pieza del mes, Sala Otopame)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Maka Xumpø Dehe, the 'Sacred Lady of the Waters' commonly called the Sirena, is the Sierra Otomi water goddess who owns the springs, rivers and rain-bearing waters and is one of the principal deities of the living pantheon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "\"Otomí of the Sierra,\" in Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean, ed. James W. Dow (Boston: G. K. Hall/Macmillan, 1995)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gallardo Arias, Patricia (2012). Ritual, palabra y cosmos otomí: yo soy costumbre, yo soy de antigua. México: UNAM, Instituto de Investigaciones Históricas."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Otomi of the Sierra Madre Oriental (Puebla, Hidalgo, Veracruz). The Lady of the Waters, Maka Xumpø Dehe, is one of the principal deities of the Sierra Otomi pantheon alongside Lord Sun, Grandfather Fire and Lord Earth. Popularly called la Sirena, she is the mistress and owner of springs, rivers and the waters that bring rain, imagined as a long-haired woman of the springs, and she receives offerings at water sources during the Santa Cruz observances and in the healing rites of Otomi ritual specialists. Galinier records the water divinity hmũthe as ruling the green kingdom of humidity, exuberant vegetation and love."
+  },
+  {
+    "id": "otomi_maka_hai",
+    "name": {
+      "primary": "Lord Earth",
+      "alt": [
+        "Maka Häi",
+        "Maka Hai",
+        "Sacred Earth"
+      ],
+      "transliterations": {
+        "ote": "Maka Häi",
+        "etymology": "Otomi maka 'sacred, venerated' + häi 'earth', 'Venerated Earth' (Dow 1995)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Otomi",
+    "primaryTradition": "Otomi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Revered among the Sierra Otomi as Lord Earth, one of the great approachable deities of the pantheon together with Lord Sun, the Lady of the Waters and Grandfather Fire.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Otomí of the Sierra,\" in Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean, ed. James W. Dow (Boston: G. K. Hall/Macmillan, 1995)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "häi",
+          "script": "Latn",
+          "rom": "häi 'earth'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Otomí of the Sierra,\" in Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean, ed. James W. Dow (Boston: G. K. Hall/Macmillan, 1995)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear_the_living_and_devour_the_dead",
+        "name": "to bear up the living and devour the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In Sierra Otomi cosmology the earth is an ambivalent power that feeds humankind from its surface and consumes bodies and offerings within it; food, drink and paper figures are buried or laid on the ground as payment to it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dow, James W. (1986). The Shaman's Touch: Otomí Indian Symbolic Healing. Salt Lake City: University of Utah Press."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Maka Häi, 'Lord Earth', is the Sierra Otomi earth deity, one of the principal approachable lords of the pantheon, an ambivalent power that sustains the living and consumes the dead and the offerings buried for it.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "\"Otomí of the Sierra,\" in Encyclopedia of World Cultures, vol. 8: Middle America and the Caribbean, ed. James W. Dow (Boston: G. K. Hall/Macmillan, 1995)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Otomi of the Sierra Madre Oriental (Puebla, Hidalgo, Veracruz). Lord Earth, Maka Häi, is named in Sierra Otomi ethnography as one of the four great approachable deities together with Lord Sun (Maka Hyadi), the Lady of the Waters (Maka Xumpø Dehe) and Grandfather Fire (Maka Xita Sibi). The earth is fed with offerings of food, drink and cut-paper figures before planting, building and curing, and in Galinier's account it is an ambivalent, devouring power of the world below that both nourishes humankind and eats the dead; though addressed as a lord, it also bears maternal traits in Otomi ritual thought. He is distinct from the lunar Old Mother, whose fertility is celestial and nocturnal rather than telluric."
+  }
+]
+```

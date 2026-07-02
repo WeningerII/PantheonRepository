@@ -1,0 +1,747 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bhil
+Era (registered, exact): "creation time", "perennial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five individuated, cited figures missing from the Bhil tradition: Raja Pantha (chief deity and consort of the existing Dev Mogra, per Naik 1956 and the Encyclopedia of World Cultures), Rani Kajal (mother/clan goddess and queen of the Bhilala Gayana creation song, per Baviskar 1995), Pithori Rani (consort of the existing Baba Pithora in the Pithora mural pantheon, per Jain 1984 and Sahapedia), Bhilat Dev (the Narmada-valley cowherd and serpent godling, per Russell and Hira Lal 1916 and Parmar 1972), and Salabai (the goddess of the 1922-23 Devi movement among the Bhils, per Hardiman 1984/1987). New figures were wired to existing corpus deities via directed consort-of relations where attested. Generic classes (Babadev village gods, Karkulia dev crop spirits, gatla ancestor pillars) and Hindu borrowings already individuated elsewhere (Tejaji, Ganesh as Baba Ganeh) were deliberately excluded.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bhil_raja_pantha",
+    "name": {
+      "primary": "Raja Pantha",
+      "alt": [
+        "Pantha Raja",
+        "Raja Pantha Dev"
+      ],
+      "transliterations": {
+        "etymology": "Hindi/Bhili raja 'king' with the proper name Pantha; the title marks him as the royal chief of the Bhil pantheon (T. B. Naik, The Bhils: A Study, 1956)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bhil",
+    "primaryTradition": "Bhil",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial",
+        "eraOrdering": 0,
+        "startEvent": "Raja Pantha is worshipped as the chief deity of the Bhils of the Satpura region, honoured together with his consort the grain goddess Dev Mogra (T. B. Naik, The Bhils: A Study, 1956).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. B. Naik, The Bhils: A Study, Delhi: Bharatiya Adimjati Sevak Sangh, 1956."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "rājā",
+          "script": "Devanagari (romanized)",
+          "rom": "king"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Bhil,\" in Paul Hockings (ed.), Encyclopedia of World Cultures, Vol. 3: South Asia, Boston: G. K. Hall, 1992."
+          }
+        ]
+      },
+      {
+        "sphereId": "tribal-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "dev",
+          "script": "Devanagari (romanized)",
+          "rom": "god"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. B. Naik, The Bhils: A Study, Delhi: Bharatiya Adimjati Sevak Sangh, 1956."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_bhil_community",
+        "name": "to watch over the Bhil community as its royal chief deity",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Bhil,\" in Paul Hockings (ed.), Encyclopedia of World Cultures, Vol. 3: South Asia, Boston: G. K. Hall, 1992."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bhil_devmogra_sanctuary",
+        "name": "Devmogra sanctuary",
+        "kind": "shrine",
+        "role": "pilgrimage seat where Raja Pantha is honoured alongside his consort at the annual fair",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. B. Naik, The Bhils: A Study, Delhi: Bharatiya Adimjati Sevak Sangh, 1956."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "bhil_mogra_dev",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "T. B. Naik, The Bhils: A Study, Delhi: Bharatiya Adimjati Sevak Sangh, 1956."
+          }
+        ],
+        "notes": "Ethnographic accounts describe the grain goddess Dev Mogra (Yaha Mogi) as the wife of Raja Pantha, the major deity of the Bhils of the Satpura ranges."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Raja Pantha is the chief male deity of the Bhils, a royal guardian god whose consort is the grain goddess Dev Mogra.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "T. B. Naik, The Bhils: A Study, Delhi: Bharatiya Adimjati Sevak Sangh, 1956."
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Bhil,\" in Paul Hockings (ed.), Encyclopedia of World Cultures, Vol. 3: South Asia, Boston: G. K. Hall, 1992."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Raja Pantha is repeatedly named in ethnographic literature as the chief deity worshipped by the Bhils. T. B. Naik's classic monograph identifies him as a major god of the tribe and names the goddess Dev Mogra as his wife; the two are venerated together at the Devmogra sanctuary in the Satpura hills of southern Gujarat and Maharashtra, where Bhil and related communities gather for an annual fair. The Encyclopedia of World Cultures notes that among the many deities the Bhils honour, Raja Pantha is worshipped chiefly, marking him as the effective head of the living Bhil pantheon."
+  },
+  {
+    "id": "bhil_rani_kajal",
+    "name": {
+      "primary": "Rani Kajal",
+      "alt": [
+        "Rani Kajal Mata",
+        "Kajal Rani",
+        "Kajal Dev"
+      ],
+      "transliterations": {
+        "hi": "रानी काजल",
+        "etymology": "Hindi rānī 'queen' + kājal 'lampblack, collyrium'; she is addressed as queen throughout the Bhilala creation song (Amita Baviskar, In the Belly of the River, 1995)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bhil",
+    "primaryTradition": "Bhil",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "creation time"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "creation time",
+        "eraOrdering": 0,
+        "startEvent": "Rani Kajal acts in the Gayana, the Bhilala song of creation, where as queen of the primordial world she summons the bard Malgu Gayan to set the disordered cosmos right (Amita Baviskar, In the Belly of the River, 1995).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amita Baviskar, In the Belly of the River: Tribal Conflicts over Development in the Narmada Valley, Delhi: Oxford University Press, 1995."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "perennial",
+        "eraOrdering": 1,
+        "startEvent": "Rani Kajal is worshipped as mother and clan goddess of Bhil and Bhilala communities, with her principal hill temple near Mathvad on the Narmada borderlands of Gujarat and Madhya Pradesh (Amita Baviskar, In the Belly of the River, 1995).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amita Baviskar, In the Belly of the River: Tribal Conflicts over Development in the Narmada Valley, Delhi: Oxford University Press, 1995."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mātā",
+          "script": "Devanagari (romanized)",
+          "rom": "mother"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amita Baviskar, In the Belly of the River: Tribal Conflicts over Development in the Narmada Valley, Delhi: Oxford University Press, 1995."
+          }
+        ]
+      },
+      {
+        "sphereId": "clan-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kuldevī",
+          "script": "Devanagari (romanized)",
+          "rom": "clan goddess"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Motifs in Pithora Painting,\" Sahapedia (online encyclopaedia of Indian arts and culture), 2018."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "restore_cosmic_order",
+        "name": "to summon bards and gods to repair the damaged primordial world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Gayana she calls the singer Malgu Gayan when the world-mountain goes awry.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amita Baviskar, In the Belly of the River: Tribal Conflicts over Development in the Narmada Valley, Delhi: Oxford University Press, 1995."
+          }
+        ]
+      },
+      {
+        "id": "protect_clans",
+        "name": "to protect the households and clans that keep her as their mother goddess",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Motifs in Pithora Painting,\" Sahapedia (online encyclopaedia of Indian arts and culture), 2018."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bhil_mathvad_hill_temple",
+        "name": "hill temple of Rani Kajal near Mathvad",
+        "kind": "shrine",
+        "role": "principal seat of her cult on the Narmada borderlands of Gujarat and Madhya Pradesh",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amita Baviskar, In the Belly of the River: Tribal Conflicts over Development in the Narmada Valley, Delhi: Oxford University Press, 1995."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Rānī",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amita Baviskar, In the Belly of the River: Tribal Conflicts over Development in the Narmada Valley, Delhi: Oxford University Press, 1995."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Rani Kajal is the great mother and clan goddess of the Bhil and Bhilala peoples, a queenly figure of the Gayana creation song who also appears among the chief deities of the Pithora ritual paintings.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Amita Baviskar, In the Belly of the River: Tribal Conflicts over Development in the Narmada Valley, Delhi: Oxford University Press, 1995."
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Motifs in Pithora Painting,\" Sahapedia (online encyclopaedia of Indian arts and culture), 2018."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Rani Kajal is one of the most prominent goddesses of the Bhil and closely related Bhilala communities of the Narmada valley. In the Gayana, the Bhilala song of creation transcribed by Amita Baviskar from singers of Anjanwara village, Rani Kajal appears as the queen of the primordial world: when the world-mountain is thrown into disorder she weeps, consults her husband's younger brother Ratukamai, and sends for the bard Malgu Gayan whose singing helps set creation right. She is worshipped as mother and kuldevi, her main temple standing on a hill near Mathvad on the Gujarat-Madhya Pradesh border above the Narmada, and she is also counted among the chief deities painted in the Pithora ritual murals of the region."
+  },
+  {
+    "id": "bhil_pithori_rani",
+    "name": {
+      "primary": "Pithori Rani",
+      "alt": [
+        "Rani Pithori",
+        "Pithori"
+      ],
+      "transliterations": {
+        "etymology": "Feminine counterpart of the name Pithora with rānī 'queen'; she is the queen paired with Baba Pithora in the Pithora ritual paintings (\"Motifs in Pithora Painting,\" Sahapedia, 2018)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bhil",
+    "primaryTradition": "Bhil",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial",
+        "eraOrdering": 0,
+        "startEvent": "Pithori Rani is painted among the chief mounted deities of the Pithora ritual murals as the celestial wife of Baba Pithora and is invoked in times of erratic monsoons (\"Motifs in Pithora Painting,\" Sahapedia, 2018).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Motifs in Pithora Painting,\" Sahapedia (online encyclopaedia of Indian arts and culture), 2018."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "marriage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "rānī",
+          "script": "Devanagari (romanized)",
+          "rom": "queen"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Motifs in Pithora Painting,\" Sahapedia (online encyclopaedia of Indian arts and culture), 2018."
+          }
+        ]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Motifs in Pithora Painting,\" Sahapedia (online encyclopaedia of Indian arts and culture), 2018."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "steady_the_monsoon",
+        "name": "to bring timely rain when propitiated during erratic monsoons",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Motifs in Pithora Painting,\" Sahapedia (online encyclopaedia of Indian arts and culture), 2018."
+          }
+        ]
+      },
+      {
+        "id": "aid_pithora",
+        "name": "to aid her husband Baba Pithora in all his divine undertakings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jyotindra Jain, Painted Myths of Creation: Art and Ritual of an Indian Tribe, New Delhi: Lalit Kala Akademi, 1984."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bhil_pithora_mural_horse",
+        "name": "painted horse of the Pithora mural",
+        "kind": "emblem",
+        "role": "she is depicted as one of the mounted figures in the ritual wall painting executed to fulfil vows",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jyotindra Jain, Painted Myths of Creation: Art and Ritual of an Indian Tribe, New Delhi: Lalit Kala Akademi, 1984."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "bhil_pithora",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Motifs in Pithora Painting,\" Sahapedia (online encyclopaedia of Indian arts and culture), 2018."
+          }
+        ],
+        "notes": "Pithori Rani is portrayed as the celestial and devoted wife of Baba Pithora, painted beside him among the chief deities of the Pithora murals."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Pithori Rani is the divine queen and wife of Baba Pithora, painted among the chief deities of the Pithora ritual wall paintings of the Bhil and Rathwa communities and invoked for reliable monsoons.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "\"Motifs in Pithora Painting,\" Sahapedia (online encyclopaedia of Indian arts and culture), 2018."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jyotindra Jain, Painted Myths of Creation: Art and Ritual of an Indian Tribe, New Delhi: Lalit Kala Akademi, 1984."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pithori Rani is the queenly consort of the horse-lord Baba Pithora in the ritual art and mythology of the Bhil, Bhilala and Rathwa communities of eastern Gujarat and western Madhya Pradesh. In the Pithora wall paintings, executed inside houses to fulfil vows made to Baba Pithora, she appears among the chief mounted deities beside her husband, portrayed as a celestial and devoted wife ready to assist him in all his endeavours. Villagers also turn to her in years when the monsoon is erratic, seeking her help for timely rain."
+  },
+  {
+    "id": "bhil_bhilat_dev",
+    "name": {
+      "primary": "Bhilat Dev",
+      "alt": [
+        "Bhilat",
+        "Bhilat Baba",
+        "Bhilat Deo"
+      ],
+      "transliterations": {
+        "hi": "भीलट देव",
+        "etymology": "The name has been connected with the Bhils of the Narmada (Nerbudda) valley, where he is a popular local godling (R. V. Russell and Hira Lal, The Tribes and Castes of the Central Provinces of India, 1916)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bhil",
+    "primaryTradition": "Bhil",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial",
+        "eraOrdering": 0,
+        "startEvent": "Bhilat, born to a Gaoli herdswoman by the grace of the great god Mahadeo, grew into a wonder-working hero of the Narmada valley and came to be worshipped as a godling who cures cattle and possesses his devotees (R. V. Russell and Hira Lal, The Tribes and Castes of the Central Provinces of India, 1916).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell and Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. II, London: Macmillan, 1916."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cattle",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "gāy",
+          "script": "Devanagari (romanized)",
+          "rom": "cow"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell and Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. II, London: Macmillan, 1916."
+          }
+        ]
+      },
+      {
+        "sphereId": "serpents",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nāg",
+          "script": "Devanagari (romanized)",
+          "rom": "serpent"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shyam Parmar, Folklore of Madhya Pradesh, New Delhi: National Book Trust, 1972."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heal_cattle",
+        "name": "to cure cattle of disease and make barren cows bear calves",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell and Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. II, London: Macmillan, 1916."
+          }
+        ]
+      },
+      {
+        "id": "master_serpents",
+        "name": "to subdue serpents and shield people and herds from snakebite",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Nimadi ballad he seizes a serpent by the hood, and Bhil communities revere him as a serpent-god.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shyam Parmar, Folklore of Madhya Pradesh, New Delhi: National Book Trust, 1972."
+          }
+        ]
+      },
+      {
+        "id": "possess_devotees",
+        "name": "to possess his devotees with his spirit during worship",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell and Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. II, London: Macmillan, 1916."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bhil_bhilat_herd",
+        "name": "herds of cows granted to Bhilat",
+        "kind": "emblem",
+        "role": "the hundreds of cattle bestowed on him in the Nimadi ballad mark him as the divine cowherd",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shyam Parmar, Folklore of Madhya Pradesh, New Delhi: National Book Trust, 1972."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Bhilat Dev is a cowherd hero-godling of the Narmada valley and Nimar region, revered by the Bhils as a serpent-mastering deity who protects cattle and possesses his devotees.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "R. V. Russell and Rai Bahadur Hira Lal, The Tribes and Castes of the Central Provinces of India, Vol. II, London: Macmillan, 1916."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Shyam Parmar, Folklore of Madhya Pradesh, New Delhi: National Book Trust, 1972."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bhilat Dev is a popular godling of the Narmada valley and the Nimar country of western Madhya Pradesh, worshipped by Bhils alongside neighbouring pastoral and tribal communities. In the legend recorded by Russell and Hira Lal, he was born to a childless Ahir or Gaoli herdswoman through the favour of the god Mahadeo, was carried off by Mahadeo disguised as a beggar, and grew into a great hero who performed many conquests and miracles before returning to live with his herdsman parents. The Nimadi ballad tradition documented by Shyam Parmar tells how he caught a serpent by the hood and received hundreds of cows, after which he was worshipped as a deity; among the Bhils he counts as a serpent-god who guards people and livestock from snakes, and his devotees are believed to become possessed by his spirit. His best-known modern shrine stands at Nagalwadi in the Nimar region."
+  },
+  {
+    "id": "bhil_salabai",
+    "name": {
+      "primary": "Salabai",
+      "alt": [
+        "Devi Salabai",
+        "the Devi"
+      ],
+      "transliterations": {
+        "etymology": "The female honorific -bāī attached to the goddess's name Sala; she was known simply as the Devi, 'the goddess' (David Hardiman, The Coming of the Devi, 1987)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bhil",
+    "primaryTradition": "Bhil",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial",
+        "eraOrdering": 0,
+        "startEvent": "Salabai, a mother goddess first propitiated against smallpox, swept through the adivasi country of western India in 1922-23, speaking through possessed mediums and commanding the Bhils and their neighbours to reform their way of life (David Hardiman, The Coming of the Devi, 1987).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Hardiman, The Coming of the Devi: Adivasi Assertion in Western India, Delhi: Oxford University Press, 1987."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "epidemic-disease",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "devī",
+          "script": "Devanagari (romanized)",
+          "rom": "goddess"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Hardiman, The Coming of the Devi: Adivasi Assertion in Western India, Delhi: Oxford University Press, 1987."
+          }
+        ]
+      },
+      {
+        "sphereId": "moral-reform",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Hardiman, \"Adivasi Assertion in South Gujarat: The Devi Movement of 1922-3,\" in Ranajit Guha (ed.), Subaltern Studies III, Delhi: Oxford University Press, 1984."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "speak_through_mediums",
+        "name": "to possess human mediums and issue her commands through their mouths",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her spokesmen shook their heads in trance and pronounced her orders at village gatherings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Hardiman, The Coming of the Devi: Adivasi Assertion in Western India, Delhi: Oxford University Press, 1987."
+          }
+        ]
+      },
+      {
+        "id": "avert_smallpox",
+        "name": "to ward off smallpox and safeguard the fertility of the soil when propitiated",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Hardiman, \"Adivasi Assertion in South Gujarat: The Devi Movement of 1922-3,\" in Ranajit Guha (ed.), Subaltern Studies III, Delhi: Oxford University Press, 1984."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Salabai is the goddess of the Devi movement of 1922-23, a smallpox and fertility mother goddess whose commands, delivered through possessed mediums, moved the Bhils and other adivasis of western India to collective social reform and assertion.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "David Hardiman, The Coming of the Devi: Adivasi Assertion in Western India, Delhi: Oxford University Press, 1987."
+          },
+          {
+            "kind": "secondary",
+            "reference": "David Hardiman, \"Adivasi Assertion in South Gujarat: The Devi Movement of 1922-3,\" in Ranajit Guha (ed.), Subaltern Studies III, Delhi: Oxford University Press, 1984."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Salabai is the named goddess at the heart of the Devi movement that swept the adivasi tracts of western India in 1922-23, studied in detail by the historian David Hardiman. Originating in propitiation ceremonies to a mother goddess associated with smallpox and the fertility of the soil among the coastal fisherfolk of Palghar, her cult moved north through the Dangs and south Gujarat, where Bhils and other adivasi communities gathered to hear her commands spoken through mediums who shook in trance. The goddess ordered her followers to give up liquor and toddy, to bathe daily and keep clean, and to withhold service from liquor dealers and moneylenders, so that what began as a religious visitation became a far-reaching movement of adivasi self-assertion."
+  }
+]
+```

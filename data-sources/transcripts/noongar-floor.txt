@@ -1,0 +1,394 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Noongar
+Era (registered, exact): "dreaming-creator-era"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added three individuated, well-attested Noongar figures beyond the existing Wagyl: Yondock, the ancestral saltwater crocodile killed by the Waugal at the Swan River mouth (Walley's Derbal Nara narrative; City of Fremantle Whadjuk significance study; Collard, Westerly 54); the Charnok Woman, the Milky Way spirit woman documented by Whadjuk elder Noel Nannup (Moondang-ak Kaaradjiny, 2008) and City of Joondalup heritage material; and Mulka, the cross-eyed giant of Mulka's Cave, whose legend is recorded in Gunn's Records of the Western Australian Museum study (2006). I deliberately excluded spirit classes (djanga, woodarchi/bulyit, charnok beings generally) and thinly attested names such as Motogon (a Salvado-era report surviving mainly via the Dictionnaire Infernal, with no corroborating ethnography) and the Charnok Man and Balyet, whose documentation I could not verify to a scholarly standard. Relations to the Wagyl (its killing of Yondock, its river valley crossed by the Charnok Woman) are described in prose and sources, since no validator-approved directed relation kind expresses being slain by an existing figure.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "noongar_yondock",
+    "name": {
+      "primary": "Yondock",
+      "alt": [
+        "Yondok",
+        "Spirit Crocodile",
+        "Ancestral Crocodile"
+      ],
+      "transliterations": {
+        "nys": "Yondock",
+        "etymology": "Noongar name for the ancestral saltwater crocodile of Whadjuk Dreaming narratives (Walley, 'Origin of Derbal Nara', Derbal Nara project; City of Fremantle, 'Statements of Significance for the Fremantle Area', Whadjuk Nyoongar report)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Noongar",
+    "primaryTradition": "Noongar",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dreaming-creator-era"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "dreaming-creator-era",
+        "eraOrdering": 0,
+        "startEvent": "In the Nyitting (cold-time Dreaming), Yondock the ancestral crocodile travelled south from the north country, flooding the Derbal Yerrigan (Swan River) with salt water and shaping Cockburn Sound, Rottnest and Carnac Islands before being killed by the Waugal at the river mouth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walley, Trevor, 'Origin of Derbal Nara', Derbal Nara / Cockburn Sound Nyungar heritage project (derbalnara.org.au), 2013"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "saltwater-and-estuaries",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "yondock",
+          "script": "Latin",
+          "rom": "crocodile"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "City of Fremantle, 'Statements of Significance for the Fremantle Area — Whadjuk Nyoongar', City of Fremantle heritage report, 2016"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "flood_country_with_salt_water",
+        "name": "to flood rivers and country with salt water",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Yondock's southward journey brought the salt water that flooded the Swan River estuary and carved Cockburn Sound.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walley, Trevor, 'Origin of Derbal Nara', Derbal Nara / Cockburn Sound Nyungar heritage project (derbalnara.org.au), 2013"
+          }
+        ]
+      },
+      {
+        "id": "shape_islands_and_seabed",
+        "name": "to shape islands and the seabed by its movements",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Its passage and dismembered body account for Wadjemup (Rottnest Island), Ngooloormayup (Carnac Island) and the limestone bar at the Swan River mouth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "City of Fremantle, 'Statements of Significance for the Fremantle Area — Whadjuk Nyoongar', City of Fremantle heritage report, 2016"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "noongar_yondock_tail_bar",
+        "name": "Limestone bar at the Swan River mouth",
+        "kind": "landform relic",
+        "role": "Identified in Whadjuk tradition as Yondock's severed tail, placed by the Waugal to keep the salt water from the fresh",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "City of Fremantle, 'Statements of Significance for the Fremantle Area — Whadjuk Nyoongar', City of Fremantle heritage report, 2016"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Yondock is the ancestral saltwater crocodile of Whadjuk Noongar Dreaming narrative who flooded the Swan River with salt water and was killed by the Waugal, its body becoming islands and the river-mouth bar.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walley, Trevor, 'Origin of Derbal Nara', Derbal Nara / Cockburn Sound Nyungar heritage project (derbalnara.org.au), 2013"
+          },
+          {
+            "kind": "secondary",
+            "reference": "City of Fremantle, 'Statements of Significance for the Fremantle Area — Whadjuk Nyoongar', City of Fremantle heritage report, 2016"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Collard, Leonard M., 'Nyungar Dream Time Messengers', Westerly, vol. 54, no. 2, 2009"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Yondock is the great ancestral crocodile of Whadjuk Noongar tradition. In the Nyitting, the cold-time Dreaming, Yondock travelled down from the north country, disturbing and flooding the land: its passage let salt water into the Derbal Yerrigan (Swan River) and shaped Derbal Nara (Cockburn Sound), Wadjemup (Rottnest Island) and Ngooloormayup (Carnac Island). The Waugal, guardian of the fresh waters, smelled the salt, came down the river, fought and killed Yondock, cutting off its tail and setting it as the limestone bar at the river mouth at Walyalup (Fremantle) to divide salt water from fresh. The story, recorded from Whadjuk custodians including Trevor Walley and Teresa Walley, remains central to the cultural significance of the Fremantle area."
+  },
+  {
+    "id": "noongar_charnok_woman",
+    "name": {
+      "primary": "Charnok Woman",
+      "alt": [
+        "Charrnock Woman",
+        "Junda",
+        "Spirit Woman of the Milky Way"
+      ],
+      "transliterations": {
+        "nys": "Charnok",
+        "etymology": "Charnok (also spelt charrnock, tjanak) denotes a powerful, often fearsome spirit being in Noongar; the great spirit woman of the Milky Way is also recorded under the name Junda (Nannup, 'Moondang-ak Kaaradjiny: The Carers of Everything', 2008)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Noongar",
+    "primaryTradition": "Noongar",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dreaming-creator-era"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "dreaming-creator-era",
+        "eraOrdering": 0,
+        "startEvent": "In the darkness of the Dreaming the Charnok Woman walked across the south-west gathering spirit children into her long white hair, crossing the valley the Waugal had made (the Swan River) and leaving her footprint at Blackwall Reach before rising into the sky.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nannup, Noel, 'Moondang-ak Kaaradjiny: The Carers of Everything', Batchelor Press, 2008"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "milky-way-and-stars",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "City of Joondalup, 'Charnok Woman: Mama ng Karda', City of Joondalup cultural heritage publication"
+          }
+        ]
+      },
+      {
+        "sphereId": "spirit-children",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nannup, Noel, 'Moondang-ak Kaaradjiny: The Carers of Everything', Batchelor Press, 2008"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "gather_spirit_children",
+        "name": "to gather and carry spirit children in her hair",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The spirit children she collected cling to her long white hair; in the night sky they are seen as the stars.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nannup, Noel, 'Moondang-ak Kaaradjiny: The Carers of Everything', Batchelor Press, 2008"
+          }
+        ]
+      },
+      {
+        "id": "stride_across_country",
+        "name": "to stride across the land leaving footprints in the country",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her footprint crossing the Swan River valley is identified at Blackwall Reach.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "City of Joondalup, 'Charnok Woman: Mama ng Karda', City of Joondalup cultural heritage publication"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "noongar_charnok_white_hair",
+        "name": "Long white hair",
+        "kind": "emblem",
+        "role": "Her hair, filled with spirit children, is seen in the night sky as the Milky Way",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nannup, Noel, 'Moondang-ak Kaaradjiny: The Carers of Everything', Batchelor Press, 2008"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The Charnok Woman is a great female spirit being of Noongar Dreaming narrative who gathered spirit children into her long white hair as she crossed the south-west; her hair is the Milky Way and the children are the stars.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Nannup, Noel, 'Moondang-ak Kaaradjiny: The Carers of Everything', Batchelor Press, 2008"
+          },
+          {
+            "kind": "secondary",
+            "reference": "City of Joondalup, 'Charnok Woman: Mama ng Karda', City of Joondalup cultural heritage publication"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Charnok (Charrnock) Woman, also recorded under the name Junda, is described by Whadjuk Noongar elder and storyteller Noel Nannup as the strongest spirit of the South West, a tall being with long white hair reaching down her back. Walking the land in the darkness of the Dreaming, she found spirit children looking up at her and placed them in her hair, gathering more as she travelled; crossing the great valley the Waugal had made, now the Swan River, she left her footprint at Blackwall Reach. In the night sky her white hair is the Milky Way and the stars are the spirit children she carries. Some versions present her as a loving maternal carer; others as a fearsome spirit who collected children for the Charnok Man of the cave near Katter Kich (Wave Rock)."
+  },
+  {
+    "id": "noongar_mulka",
+    "name": {
+      "primary": "Mulka",
+      "alt": [
+        "Mulka the Terrible"
+      ],
+      "transliterations": {
+        "nys": "Mulka",
+        "etymology": "Noongar personal name of the legendary cross-eyed giant of Bates Cave near Hyden, which is known after him as Mulka's Cave (Gunn 2006)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Noongar",
+    "primaryTradition": "Noongar",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "dreaming-creator-era"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "dreaming-creator-era",
+        "eraOrdering": 0,
+        "startEvent": "Mulka was born cross-eyed as the son of a forbidden union between a woman and a man of the wrong marriage class, grew into a giant who could not spear game, turned to eating children, killed his mother, and was hunted down and slain south of Hyden, his body left unburied for the ants.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gunn, R.G., 'Mulka's Cave Aboriginal rock art site: its context and content', Records of the Western Australian Museum 23: 19–41, 2006"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "caves-and-rock-shelters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gunn, R.G., 'Mulka's Cave Aboriginal rock art site: its context and content', Records of the Western Australian Museum 23: 19–41, 2006"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "colossal_strength",
+        "name": "to exert the strength and stature of a giant",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Mulka is remembered as a man of colossal height and outstanding strength, though his crossed eyes made him unable to aim a spear.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gunn, R.G., 'Mulka's Cave Aboriginal rock art site: its context and content', Records of the Western Australian Museum 23: 19–41, 2006"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "noongar_mulka_handprints",
+        "name": "Giant hand stencils of Mulka's Cave",
+        "kind": "emblem",
+        "role": "Hand stencils placed unusually high on the cave walls are identified in the legend as the prints of Mulka's oversized hands",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gunn, R.G., 'Mulka's Cave Aboriginal rock art site: its context and content', Records of the Western Australian Museum 23: 19–41, 2006"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Mulka is the legendary cross-eyed giant of Noongar tradition, born of a forbidden marriage, who lived in the cave near Hyden that bears his name, preyed on children, killed his mother, and was hunted down and killed, the story serving as a warning against wrong-way marriage.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gunn, R.G., 'Mulka's Cave Aboriginal rock art site: its context and content', Records of the Western Australian Museum 23: 19–41, 2006"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rossi, A.M. & Webb, R.E., 'The erosive effect of tourism at an Aboriginal rock art site on the western edge of the arid zone in south-western Australia', Antiquity Project Gallery 315, 2008"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mulka is a legendary figure of the south-eastern Noongar country around Hyden, Western Australia. According to the tradition recorded at Mulka's Cave (Bates Cave) near Wave Rock, he was born with crossed eyes as the son of a woman who broke the marriage law by taking a man of a forbidden class. Though he grew into a giant of great strength, his crossed eyes kept him from spearing game, and in frustration he took to catching and eating children, becoming the terror of the district. When his mother rebuked him he killed her, then fled; the outraged people tracked him far to the south, killed him, and left his body to the ants, denying him ritual burial. The unusually high hand stencils on the cave walls are pointed to as the prints of his giant hands, and ethnographers read the story as a cautionary tale about the consequences of wrong-way marriage."
+  }
+]
+```

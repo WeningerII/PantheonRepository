@@ -1,0 +1,190 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Māori
+Era (registered, exact): "mythic-prehistoric"
+Author pass: genealogy completion — the parents of Urutonga (wife of Hemā, mother of Tāwhaki and Karihi).
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+Urutonga (polynesian_urutonga) is the wife of Hemā and mother of Tāwhaki and
+Karihi in the Tāwhaki cycle (Grey, Polynesian Mythology, 1855). The modern
+reference tradition names her parents as UA (father) and KAHILINAI (mother);
+both are known only genealogically and play no independent narrative role in
+the recorded myths.
+
+Both figures are therefore authored as MORTAL genealogical ancestors (the
+sources record no divine role for either), and the parentage is recorded via
+directed father-of / mother-of relations on the parent side. Urutonga's own
+entry is deliberately left untouched: writing the pair into her lineage as
+formal parents would mechanically re-derive the divine descent of the whole
+canonical Tāwhaki line, and that kind of re-derivation is reserved for a
+human-reviewed pass, following the registry's existing practice for the line
+of Tros of Troy.
+
+Phonological note kept in the figure notes: the form "Kahilinai" contains /l/,
+which is absent from the Māori phoneme inventory — the name evidently entered
+the record from a cognate (likely Hawaiian) genealogical source, as with other
+figures of the pan-Polynesian Hemā/Tāwhaki cycle.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "polynesian_ua",
+    "name": {
+      "primary": "Ua, father of Urutonga",
+      "alt": [
+        "Ua"
+      ],
+      "transliterations": {
+        "maori": "Ua",
+        "etymology": "Māori ua 'rain'; the figure is recorded purely as a genealogical name in the Tāwhaki-cycle tradition."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Named in the genealogical tradition of the Tāwhaki cycle as the father of Urutonga, the wife of Hemā and mother of Tāwhaki and Karihi.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Urutonga', Wikipedia, The Free Encyclopedia (en.wikipedia.org/wiki/Urutonga), naming Ua as Urutonga's father"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George Grey, Polynesian Mythology and Ancient Traditional History of the New Zealand Race (London: John Murray, 1855), 'The Legend of Tawhaki' (Urutonga as wife of Hemā, mother of Tāwhaki and Karihi)"
+          }
+        ]
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "polynesian_urutonga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Urutonga', Wikipedia, The Free Encyclopedia (en.wikipedia.org/wiki/Urutonga), naming Ua as Urutonga's father"
+          }
+        ],
+        "notes": "Ua's daughter Urutonga married Hemā and became the mother of the heroes Tāwhaki and Karihi."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ua is named as the father of Urutonga — the wife of Hemā and mother of Tāwhaki and Karihi — in the genealogical tradition of the Māori Tāwhaki cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "'Urutonga', Wikipedia, The Free Encyclopedia (en.wikipedia.org/wiki/Urutonga), naming Ua as Urutonga's father"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George Grey, Polynesian Mythology and Ancient Traditional History of the New Zealand Race (London: John Murray, 1855), 'The Legend of Tawhaki'"
+          }
+        ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Ua is known only genealogically, as the father of Urutonga, the woman who married Hemā and bore the heroes Tāwhaki and Karihi. He plays no independent role in the recorded narratives of the Tāwhaki cycle, and no tradition of divinity attaches to him — he is entered as a mortal ancestor of the heroic line. His name is the ordinary Māori word for rain."
+  },
+  {
+    "id": "polynesian_kahilinai",
+    "name": {
+      "primary": "Kahilinai, mother of Urutonga",
+      "alt": [
+        "Kahilinai"
+      ],
+      "transliterations": {
+        "maori": "Kahilinai",
+        "etymology": "The form contains /l/, absent from Māori phonology, indicating transmission from a cognate Polynesian (likely Hawaiian) genealogical source into the received record of the Tāwhaki cycle."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Named in the genealogical tradition of the Tāwhaki cycle as the mother of Urutonga, the wife of Hemā and mother of Tāwhaki and Karihi.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Urutonga', Wikipedia, The Free Encyclopedia (en.wikipedia.org/wiki/Urutonga), naming Kahilinai as Urutonga's mother"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George Grey, Polynesian Mythology and Ancient Traditional History of the New Zealand Race (London: John Murray, 1855), 'The Legend of Tawhaki' (Urutonga as wife of Hemā, mother of Tāwhaki and Karihi)"
+          }
+        ]
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "polynesian_urutonga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Urutonga', Wikipedia, The Free Encyclopedia (en.wikipedia.org/wiki/Urutonga), naming Kahilinai as Urutonga's mother"
+          }
+        ],
+        "notes": "Kahilinai's daughter Urutonga married Hemā and became the mother of the heroes Tāwhaki and Karihi."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kahilinai is named as the mother of Urutonga — the wife of Hemā and mother of Tāwhaki and Karihi — in the genealogical tradition of the Māori Tāwhaki cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "'Urutonga', Wikipedia, The Free Encyclopedia (en.wikipedia.org/wiki/Urutonga), naming Kahilinai as Urutonga's mother"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George Grey, Polynesian Mythology and Ancient Traditional History of the New Zealand Race (London: John Murray, 1855), 'The Legend of Tawhaki'"
+          }
+        ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Kahilinai is known only genealogically, as the mother of Urutonga, the woman who married Hemā and bore the heroes Tāwhaki and Karihi. She plays no independent role in the recorded narratives, and no tradition of divinity attaches to her; she is entered as a mortal ancestress of the heroic line. The form of her name, with a sound foreign to Māori, evidently reached the received record through a cognate Polynesian genealogy, as happened elsewhere in the pan-Polynesian Hemā and Tāwhaki traditions."
+  }
+]
+```
+
+SOLITARY: (none — both figures carry a directed parental relation to polynesian_urutonga.)
+RECIPROCAL-NEEDED: (none — father-of / mother-of are directed, non-symmetric relations.)

@@ -1,0 +1,161 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Dacian
+Era (registered, exact): "Dacian kingdom, 1st c. BCE (Burebista's reign), per Strabo; cult continuous from Getic period"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added only Gebeleizis, the sole additional individuated divine name securely attested for the Getae-Dacians (Herodotus 4.94; Eliade 1972; Detschew 1957), documenting carefully the ancient equation with the existing Zalmoxis while following Eliade in treating him as a distinct storm-sky deity. The equation is kept in prose rather than as a symmetric relation to the pre-existing Zalmoxis record. Other names sometimes attached to a 'Dacian pantheon' — Bendis, Kotys, Sabazios, Pleistoros, Derzelas/Darzalas — are Thracian or Greek-colonial Getic-coast cults attested outside the Dacian tradition proper and were excluded per the task note; kings such as Cotiso or Comosicus fall outside the divine/heroic scope and the registered era keys. The attested individuated record beyond Zalmoxis, Decaeneus, Burebista, and Gebeleizis appears exhausted.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "dacian_gebeleizis",
+    "name": {
+      "primary": "Gebeleizis, Storm and Sky God of the Getae",
+      "alt": [
+        "Gebeleïzis",
+        "Beleizis",
+        "Nebeleizis"
+      ],
+      "transliterations": {
+        "grc": "Γεβελέϊζις",
+        "etymology": "Often analysed as a Thraco-Dacian compound whose second element -zis reflects Proto-Indo-European *dyēus 'sky-god' (cf. Zeus), the first element variously connected with a root for 'brightness' or 'lightning' (Detschew, Die thrakischen Sprachreste, 1957; Eliade, Zalmoxis, the Vanishing God, 1972)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dacian",
+    "primaryTradition": "Dacian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Dacian kingdom, 1st c. BCE (Burebista's reign), per Strabo; cult continuous from Getic period"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Dacian kingdom, 1st c. BCE (Burebista's reign), per Strabo; cult continuous from Getic period",
+        "eraOrdering": 0,
+        "startEvent": "First attested by Herodotus (Histories 4.94), who reports that some of the Getae call the god to whom they send messengers 'Gebeleizis', a cult already established by the late 6th century BCE and presumed continuous into the Dacian kingdom.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, Histories 4.94 (trans. A. D. Godley, Loeb Classical Library, 1921)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Zalmoxis, the Vanishing God: Comparative Studies in the Religions and Folklore of Dacia and Eastern Europe, trans. Willard R. Trask, University of Chicago Press, 1972"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "storm-and-thunder",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Gebeleizis",
+          "script": "Greek (romanized)",
+          "rom": "the divine name itself, interpreted as containing the Indo-European sky-god element"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Zalmoxis, the Vanishing God, University of Chicago Press, 1972, ch. 2"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dimiter Detschew, Die thrakischen Sprachreste, Verlag der Österreichischen Akademie der Wissenschaften, 1957"
+          }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Tomaschek, Die alten Thraker: Eine ethnologische Untersuchung, Sitzungsberichte der Akademie der Wissenschaften in Wien, 1893-1894"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "wield_thunder_and_lightning",
+        "name": "to send thunder and lightning from the sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Herodotus reports that when it thunders and lightens, the Getae shoot arrows skyward at the sky, threatening the god; Eliade reads this as the celestial-storm aspect of Gebeleizis.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, Histories 4.94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Zalmoxis, the Vanishing God, University of Chicago Press, 1972"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dacian_arrows_shot_skyward",
+        "name": "Arrows shot toward the storm-sky",
+        "kind": "ritual weapon",
+        "role": "Getic archers loosed arrows against thunder and lightning as a rite bound to the sky-god described by Herodotus",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, Histories 4.94"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Zalmoxis, the Vanishing God, University of Chicago Press, 1972"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Gebeleizis is a Getic-Dacian celestial storm god named by Herodotus, whom some Getae identified with Zalmoxis but whom several modern scholars treat as an originally distinct sky-and-thunder deity.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, Histories 4.94 (trans. A. D. Godley, Loeb Classical Library, 1921)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Zalmoxis, the Vanishing God: Comparative Studies in the Religions and Folklore of Dacia and Eastern Europe, University of Chicago Press, 1972"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dimiter Detschew, Die thrakischen Sprachreste, Verlag der Österreichischen Akademie der Wissenschaften, 1957"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gebeleizis is the only Dacian-Getic divine name besides Zalmoxis transmitted securely in an ancient source. Herodotus (Histories 4.94) writes that the Getae 'believe they do not die, but that the one who perishes goes to the god Zalmoxis, whom some of them call Gebeleizis', and that they shoot arrows into the sky against thunder and lightning. Ancient testimony thus records an explicit equation of the two names, yet many modern interpreters — notably Mircea Eliade — argue that Gebeleizis was originally a distinct celestial storm-and-lightning god whose cult was later absorbed by or conflated with that of Zalmoxis. The name is generally analysed as containing the Indo-European sky-god element *dyēus, and Romanian scholarship has traced possible survivals of the storm-god's functions in the folk figure of Saint Elijah (Sfântul Ilie). Manuscript variants include Beleizis and Nebeleizis. Because the equation with Zalmoxis rests on Herodotus alone, the figure is documented here as a separate deity with the equation carefully noted rather than silently merged."
+  }
+]
+```

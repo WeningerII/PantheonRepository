@@ -1,0 +1,621 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Khoekhoe
+Era (registered, exact): "ancestral / culture-hero age", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four individuated, well-attested figures: Ga-gorib, the pit-monster 'thrower down' slain by Heitsi-eibib (Bleek 1864; Hahn 1881; Lynch 2004); ǁKhâb the Moon and the Hare of the origin-of-death myth, the most heavily documented Khoekhoe narrative (Bleek 1864; Hahn 1881; Schapera 1930; Harley 1885; Hartmann & Sukdaven, HTS 2024), wired to each other as reciprocal enemies; and the ǀKhunuseti, the Pleiades 'Stars of Spring', attached as daughters of the existing Tsui-ǁgoab (Hahn 1881; Snedegar 1995; Slotegraaf, MNASSA 2013; Alcock 2014). Deliberately excluded: ǁGamab/Gamab as a Damara–Haiǁom variant of the existing ǁGaunab; the ogres Aigamuxa, Hai-uri and Bi-blouk as folk-tale bogey figures rather than divine or heroic beings; and the unnamed husband-star (Aldebaran), insect messenger, and fable Sun, none of which is an individuated named divinity. Beyond these, the record surveyed (Bleek 1864; Hahn 1881; Schapera 1930; Hartmann & Sukdaven 2024) names no further individuated Khoekhoe divine or heroic figures.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "khoekhoe_khab",
+    "name": {
+      "primary": "Moon Who Dies and Rises Again",
+      "alt": [
+        "ǁKhâb",
+        "ǁKhab",
+        "//Khab"
+      ],
+      "transliterations": {
+        "khoekhoe": "ǁKhâb",
+        "ascii": "//Khab",
+        "etymology": "Khoekhoegowab ǁkhâb 'moon; month' (Haacke & Eiseb 2002); nineteenth-century records write ǁkhāb/ǁxãb"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khoekhoe",
+    "primaryTradition": "Khoekhoe",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "From the first times the Moon has died away and returned to life, and at the beginning of things he sent word to humankind that they would share this renewal (Bleek 1864; Hahn 1881).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Origin of Death'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Theophilus Hahn, Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi (London: Trübner & Co., 1881)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ǁkhâb",
+          "script": "Latn",
+          "rom": "//khab, 'moon; month'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.G. Haacke & E. Eiseb, A Khoekhoegowab Dictionary with an English-Khoekhoegowab Index (Windhoek: Gamsberg Macmillan, 2002)"
+          }
+        ]
+      },
+      {
+        "sphereId": "death-and-renewal",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Origin of Death'"
+          }
+        ]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "I. Hartmann & M. Sukdaven, 'The interrelatedness between the Nama Khoikhoi supreme being and celestial objects', HTS Teologiese Studies/Theological Studies 80(2), a9299 (2024)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "die_and_return",
+        "name": "to die away and return to life again each month",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The waning and waxing of the moon was read as a perpetual dying and reviving.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theophilus Hahn, Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi (London: Trübner & Co., 1881)"
+          }
+        ]
+      },
+      {
+        "id": "decree_renewal",
+        "name": "to decree the pattern of death and return for humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Moon's message — 'as I die and rising live again, so shall you' — was garbled in delivery, and death became final.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Origin of Death'"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "khoekhoe_hare",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Origin of Death'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Timothy Harley, Moon Lore (London, 1885)"
+          }
+        ],
+        "notes": "Enraged at the garbled death-message, the Moon struck the Hare and split his lip; the Hare clawed the Moon's face, leaving the dark scars still seen on its disc."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "ǁKhâb, the Moon, is the dying-and-reviving luminary of Khoekhoe religion, honoured with night-long dances at new and full moon and linked with rain, whose miscarried promise of renewal explains the origin of death.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Theophilus Hahn, Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi (London: Trübner & Co., 1881)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "I. Schapera, The Khoisan Peoples of South Africa: Bushmen and Hottentots (London: Routledge & Sons, 1930)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "I. Hartmann & M. Sukdaven, 'The interrelatedness between the Nama Khoikhoi supreme being and celestial objects', HTS Teologiese Studies/Theological Studies 80(2), a9299 (2024)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Early travellers at the Cape repeatedly described the Khoekhoe as worshipping the moon, and dances were held through the night at new and full moon, times also associated with rain rites; both Theophilus Hahn and Isaac Schapera concluded that the moon held a genuine place of veneration in Khoekhoe religion. The moon's central myth explains the origin of death: seeing that he himself dies away and returns, the Moon sent word to humankind — in the old Nama version written down by Krönlein, first by an insect, then by the hare who outran it — that as the moon dies and rising lives again, so people too would rise from death. The message was delivered wrongly as a sentence of final death, and the enraged Moon split the messenger's lip, while the hare in turn scratched the Moon's face, marking it darkly. The Khoekhoegowab noun ǁkhâb ('moon; month') is grammatically masculine, though some English renderings of the tales make the Moon 'she'."
+  },
+  {
+    "id": "khoekhoe_hare",
+    "name": {
+      "primary": "Hare, False Messenger of the Moon",
+      "alt": [
+        "the Hare"
+      ]
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Khoekhoe",
+    "primaryTradition": "Khoekhoe",
+    "sex": "male",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "At the beginning of things the Hare took over the Moon's message of renewal and delivered it to humankind as a decree of final death (Bleek 1864).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Origin of Death'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "I. Hartmann & M. Sukdaven, 'The interrelatedness between the Nama Khoikhoi supreme being and celestial objects', HTS Teologiese Studies/Theological Studies 80(2), a9299 (2024)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Origin of Death'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "I. Hartmann & M. Sukdaven, 'The interrelatedness between the Nama Khoikhoi supreme being and celestial objects', HTS Teologiese Studies/Theological Studies 80(2), a9299 (2024)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "outrun_messengers",
+        "name": "to outrun the Moon's appointed messenger and take the message himself",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Nama version the Moon first sent an insect; the hare, boasting himself the swifter runner, took the errand from it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Origin of Death'"
+          }
+        ]
+      },
+      {
+        "id": "garble_divine_message",
+        "name": "to deliver the Moon's promise of renewal as a sentence of final death",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He told humankind that, as he dies and does not rise, so they too would die and rise no more.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Timothy Harley, Moon Lore (London, 1885)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "I. Hartmann & M. Sukdaven, 'The interrelatedness between the Nama Khoikhoi supreme being and celestial objects', HTS Teologiese Studies/Theological Studies 80(2), a9299 (2024)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "khoekhoe_khab",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Origin of Death'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Timothy Harley, Moon Lore (London, 1885)"
+          }
+        ],
+        "notes": "For the false message the Moon split the Hare's lip — the hare-lip he bears to this day — and the Hare raised his claws and scratched the Moon's face, leaving its dark markings."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Hare of Khoekhoe myth carried the Moon's promise that people would die and rise again as the moon does, but delivered it as a decree of final death, for which the Moon split his lip and hare's flesh came to be shunned among the Nama.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Origin of Death'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "I. Hartmann & M. Sukdaven, 'The interrelatedness between the Nama Khoikhoi supreme being and celestial objects', HTS Teologiese Studies/Theological Studies 80(2), a9299 (2024)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Timothy Harley, Moon Lore (London, 1885)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Hare is the miscarrying messenger of the Khoekhoe account of how death became final, one of the most widely recorded of all Khoekhoe narratives; Bleek's 1864 collection prints several Nama versions. In the tale written down by the missionary J.G. Krönlein, the Moon first sent an insect with the promise that people, like the moon, would die and rise again; the hare, claiming to be the swifter runner, took the message and told humankind instead that, as he dies and does not rise, so they too would die and rise no more. For this the Moon struck him and split his upper lip — in one version with a hatchet, in another by burning his mouth with a hot stone — while the hare scratched the Moon's face, leaving its dark patches. Nama custom shunned the flesh of the hare, a scruple observers connected with the animal's part in bringing death or with fear of taking on its faint-heartedness."
+  },
+  {
+    "id": "khoekhoe_ga_gorib",
+    "name": {
+      "primary": "Thrower-Down of the Pit",
+      "alt": [
+        "Ga-gorib",
+        "Ga-gorip",
+        "Gā-gorib"
+      ],
+      "transliterations": {
+        "khoekhoe": "Ga-gorib",
+        "etymology": "rendered 'the thrower down' in the Nama tales translated in Bleek's Reynard the Fox in South Africa (1864)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Khoekhoe",
+    "primaryTradition": "Khoekhoe",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "ancestral / culture-hero age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "ancestral / culture-hero age",
+        "eraOrdering": 0,
+        "startEvent": "In the age of Heitsi-eibib's wanderings he sat at the edge of a great pit daring passers-by to throw stones at him, until the hero struck him beneath the ear and he fell into his own pit (Bleek 1864).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Victory of Heitsi Eibip' and 'Another Version of the same Legend'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Theophilus Hahn, Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi (London: Trübner & Co., 1881)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z (New York: Facts on File, 2004), s.v. 'Ga-gorib'"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rebound_thrown_stones",
+        "name": "to turn stones thrown at him back upon the thrower",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Every stone cast at him rebounded and killed the thrower, whose body fell into the pit.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Victory of Heitsi Eibip'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z (New York: Facts on File, 2004), s.v. 'Ga-gorib'"
+          }
+        ]
+      },
+      {
+        "id": "dare_deadly_contest",
+        "name": "to goad passers-by into a fatal stone-throwing contest at his pit",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He challenged all who passed; only Heitsi-eibib refused the dare and turned it against him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Victory of Heitsi Eibip'"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "khoekhoe_ga_gorib_pit",
+        "name": "the great pit",
+        "kind": "lair",
+        "role": "the deep hole in the earth beside which he sat, into which his victims — and at last he himself — fell",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Victory of Heitsi Eibip'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z (New York: Facts on File, 2004), s.v. 'Ga-gorib'"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ga-gorib, 'the thrower down', is the monstrous adversary of the Heitsi-eibib cycle who sat by a deep pit daring passers-by to cast stones that rebounded fatally upon them, until Heitsi-eibib evaded the dare and hurled him beneath the ear into his own pit.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W.H.I. Bleek, Reynard the Fox in South Africa; or, Hottentot Fables and Tales (London: Trübner & Co., 1864), 'The Victory of Heitsi Eibip' and 'Another Version of the same Legend'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Theophilus Hahn, Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi (London: Trübner & Co., 1881)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Patricia Ann Lynch, African Mythology A to Z (New York: Facts on File, 2004), s.v. 'Ga-gorib'"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ga-gorib, 'the thrower down', sat at the edge of a deep pit and dared all who passed to throw stones at him; each stone rebounded and struck the thrower dead, and the body fell into the pit. When Heitsi-eibib came he refused the dare, drew the monster's eyes aside, and hurled a stone that caught him beneath the ear, so that Ga-gorib tumbled into his own pit. In another telling the two chased one another around the pit until Heitsi-eibib himself slipped in, escaped, and after a long struggle threw the monster down at last. His destruction is the chief victory credited to the hunter-hero, and the felling blow beneath the ear so closely echoes the stroke with which Tsui-ǁgoab felled ǁGaunab that some scholars have read the two combats as one myth in different dress."
+  },
+  {
+    "id": "khoekhoe_khunuseti",
+    "name": {
+      "primary": "Star Daughters of the Sky God",
+      "alt": [
+        "ǀKhunuseti",
+        "Khunuseti",
+        "Stars of Spring"
+      ],
+      "transliterations": {
+        "khoekhoe": "ǀKhunuseti",
+        "etymology": "the Nama name of the Pleiades, the 'Stars of Spring' whose dawn rising opened the rain season (Hahn 1881; Snedegar 1995)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Khoekhoe",
+    "primaryTradition": "Khoekhoe",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "khoekhoe_tsui_goab"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "primordial / first ancestor of dawn"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial / first ancestor of dawn",
+        "eraOrdering": 0,
+        "startEvent": "Set among the stars as daughters of the dawn sky-god, their first rising before dawn in spring has ever since opened the season of rain (Snedegar 1995; Alcock 2014).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K.V. Snedegar, 'Stars and seasons in southern Africa', Vistas in Astronomy 39(4) (1995), 529–538"
+          },
+          {
+            "kind": "secondary",
+            "reference": "P.G. Alcock, Venus Rising: South African Astronomical Beliefs, Customs and Observations (2014)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K.V. Snedegar, 'Stars and seasons in southern Africa', Vistas in Astronomy 39(4) (1995), 529–538"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. Slotegraaf, 'African star lore', MNASSA: Monthly Notes of the Astronomical Society of Southern Africa (2013)"
+          }
+        ]
+      },
+      {
+        "sphereId": "stars-and-seasons",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ǀKhunuseti",
+          "script": "Latn",
+          "rom": "the Pleiades, 'Stars of Spring'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theophilus Hahn, Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi (London: Trübner & Co., 1881)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "P.G. Alcock, Venus Rising: South African Astronomical Beliefs, Customs and Observations (2014)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "herald_the_rains",
+        "name": "to open the rain season by rising before dawn in spring",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Their heliacal rising was greeted with communal slaughter, dance and song in honour of the sky god.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K.V. Snedegar, 'Stars and seasons in southern Africa', Vistas in Astronomy 39(4) (1995), 529–538"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Theophilus Hahn, Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi (London: Trübner & Co., 1881)"
+          }
+        ]
+      },
+      {
+        "id": "bind_husband_by_curse",
+        "name": "to hold their failed hunter-husband exiled in the cold night sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Their anger keeps the hunter (Aldebaran) from returning home, so he sits shivering between his lost arrow and the watching lion; the tale is remembered as the curse of the women.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "P.G. Alcock, Venus Rising: South African Astronomical Beliefs, Customs and Observations (2014)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. Slotegraaf, 'African star lore', MNASSA: Monthly Notes of the Astronomical Society of Southern Africa (2013)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The ǀKhunuseti, the Pleiades or 'Stars of Spring' of Nama star-lore, are the star daughters of the sky god Tsui-ǁgoab whose pre-dawn rising opened the rain season, and whose myth of the banished hunter-husband maps Aldebaran, Orion's Belt and Betelgeuse.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Theophilus Hahn, Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi (London: Trübner & Co., 1881)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "K.V. Snedegar, 'Stars and seasons in southern Africa', Vistas in Astronomy 39(4) (1995), 529–538"
+          },
+          {
+            "kind": "secondary",
+            "reference": "P.G. Alcock, Venus Rising: South African Astronomical Beliefs, Customs and Observations (2014)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The ǀKhunuseti are the Pleiades, the 'Stars of Spring' of Nama star-lore, remembered as the daughters of the sky god Tsui-ǁgoab. Their first rising above the eastern horizon before dawn marked the opening of the wet season and was greeted with a communal ritual of slaughter, dance and song in honour of the sky god. In their myth the sisters sent their husband, the star Aldebaran, to shoot the three zebras of Orion's Belt; he took only one arrow and missed, and dared neither retrieve the arrow — Orion's sword, lying beyond the zebras where a lion, Betelgeuse, sat watching — nor face the anger of his wives, so he sits in the cold sky still, shivering, hungry and thirsty. The tale is remembered as the curse of the women. Though a sisterhood of seven stars, they act and are invoked as a single named personage of the sky."
+  }
+]
+```
+

@@ -1,0 +1,193 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Idoma
+Era (registered, exact): "Idoma traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added one genuinely individuated, missing figure: Owo, the God-given personal guardian spirit / soul (also associated with destiny and with rain) that scholarship consistently names as a distinct element of Idoma cosmology alongside the already-registered Owoicho, Aje, Alekwu, Anjenu, and Egli-Enyanwu. It is wired to the pantheon as subordinate to Owoicho, who apportions it and to whom it returns at death. I deliberately excluded "Ejembi," which appears in Wikipedia-derived popular listings as "the guardian spirit" but which I could not corroborate in any independent scholarly (book or journal) source and which appears to duplicate the Owo guardian-spirit concept; per the correctness-over-quantity standard I would rather omit it than pad with an uncorroborated name. Sources consulted include Armstrong (1955), Anizoba & Johnson (2021, Filosofia Theoretica), Allam (2018, GNOSI), and Kasfir on Anjenu; these confirm the tripartite Owoicho–Aje–Alekwu framework plus Anjenu, Egli-Enyanwu, and Owo as the attested named divine beings, so beyond Owo the individuated record for this tradition appears essentially exhausted.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "idoma_owo",
+    "name": {
+      "primary": "Owo",
+      "alt": [
+        "Owa",
+        "Owo (the guardian spirit)",
+        "Owo (personal soul/destiny)"
+      ],
+      "transliterations": {
+        "Idoma": "Owo",
+        "etymology": "Idoma 'owo', the divine spark or breath apportioned to each person; the word doubles in Idoma for both 'God-given personal spirit' and 'rain', and is cognate with the theonym Owoicho ('Owo the Great/Supreme')."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Idoma",
+    "primaryTradition": "Idoma",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Idoma traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Idoma traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In Idoma cosmology the Supreme Being Owoicho apportions to every person at birth an Owo, a personal guardian spirit or soul that watches over the individual through life and, at death, returns to Owoicho to mediate between the deceased and the Supreme God.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Armstrong, Robert G. 'The Idoma-speaking Peoples.' In Daryll Forde (ed.), Peoples of the Niger-Benue Confluence, pp. 77-138. London: International African Institute / Oxford University Press, 1955."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "personal-guardian-spirit",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Owo",
+          "script": "Latin",
+          "rom": "personal guardian spirit / soul"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Armstrong, Robert G. 'The Idoma-speaking Peoples.' In Daryll Forde (ed.), Peoples of the Niger-Benue Confluence, pp. 77-138. London: International African Institute / Oxford University Press, 1955."
+          }
+        ]
+      },
+      {
+        "sphereId": "destiny-and-fate",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Owo",
+          "script": "Latin",
+          "rom": "God-given portion allotted to a person"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anizoba, Emmanuel C., and Edache Monday Johnson. 'Patterns of Traditional Religious and Cultural Practices of the Idoma People of Nigeria.' Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 10, no. 2 (2021): 155-172."
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-and-weather",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "owo",
+          "script": "Latin",
+          "rom": "rain"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anizoba, Emmanuel C., and Edache Monday Johnson. 'Patterns of Traditional Religious and Cultural Practices of the Idoma People of Nigeria.' Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 10, no. 2 (2021): 155-172."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_individual",
+        "name": "to guard and protect the person to whom it is given",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Each Idoma person is watched over by their own Owo from birth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Armstrong, Robert G. 'The Idoma-speaking Peoples.' In Daryll Forde (ed.), Peoples of the Niger-Benue Confluence, pp. 77-138. London: International African Institute / Oxford University Press, 1955."
+          }
+        ]
+      },
+      {
+        "id": "mediate_with_owoicho",
+        "name": "to carry a person's appeals to the Supreme God after death",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "At death the Owo returns to Owoicho and becomes an intermediary between the deceased and the Supreme Being.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Allam, Onche Solomon. 'Unmasking \"Alekwu\" Religious Experience among the Idoma People-Group of Nigeria.' GNOSI: An Interdisciplinary Journal of Human Theory and Praxis 1, no. 2 (2018): 118-130."
+          }
+        ]
+      },
+      {
+        "id": "bring_rain",
+        "name": "to send or withhold rain",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In Idoma usage the same word denotes both the personal spirit and rain, reflecting an association of Owo with rainfall.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anizoba, Emmanuel C., and Edache Monday Johnson. 'Patterns of Traditional Religious and Cultural Practices of the Idoma People of Nigeria.' Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 10, no. 2 (2021): 155-172."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "idoma_owoicho",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Allam, Onche Solomon. 'Unmasking \"Alekwu\" Religious Experience among the Idoma People-Group of Nigeria.' GNOSI: An Interdisciplinary Journal of Human Theory and Praxis 1, no. 2 (2018): 118-130."
+          }
+        ],
+        "notes": "The Owo is given to each person by the Supreme Being Owoicho and returns to him at death, so it is theologically dependent upon and subordinate to Owoicho."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Owo is the God-given personal guardian spirit or soul that the Idoma believe Owoicho apportions to every individual, associated also with destiny and with rain, which returns to the Supreme God at death to intercede for the deceased.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Armstrong, Robert G. 'The Idoma-speaking Peoples.' In Daryll Forde (ed.), Peoples of the Niger-Benue Confluence, pp. 77-138. London: International African Institute / Oxford University Press, 1955."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anizoba, Emmanuel C., and Edache Monday Johnson. 'Patterns of Traditional Religious and Cultural Practices of the Idoma People of Nigeria.' Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 10, no. 2 (2021): 155-172."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Allam, Onche Solomon. 'Unmasking \"Alekwu\" Religious Experience among the Idoma People-Group of Nigeria.' GNOSI: An Interdisciplinary Journal of Human Theory and Praxis 1, no. 2 (2018): 118-130."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Owo is the Idoma personal guardian spirit: the divine portion that the Supreme Being Owoicho grants to every person at birth. It accompanies and protects the individual throughout life and embodies that person's allotted destiny. When the person dies, the Owo is said to go back to Owoicho and to become an intermediary through whom the deceased may still address the Supreme God, an idea that links the doctrine of the personal spirit to the wider Idoma system of ancestral mediation. In everyday Idoma speech the same word, owo, is used both for this personal spirit and for rain, and Owo is accordingly numbered among the beneficent powers that grant rainfall and life. The concept is broadly comparable to the Igbo chi and the Yoruba ori, though it retains its own distinct place in Idoma theology alongside the earth power Aje and the ancestral collectivity Alekwu."
+  }
+]
+```

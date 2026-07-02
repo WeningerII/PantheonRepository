@@ -1,0 +1,466 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Aramean
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added three epigraphically secure, distinctly Aramaean deities: Sahar, the moon god of Nerab and 'Lord of Harran' (KAI 218, 225-226); Šamš, the sun god of the Sam'al dynastic pantheon, the Katumuwa stele and the Sefire and Nerab curses (KAI 214; Pardee, BASOR 356, 2009); and Iluwer, the storm-god patron of Zakkur of Hamath at Tell Afis (KAI 202). Nikkal and Resheph were deliberately excluded because they already exist in the corpus under the Canaanite tradition, Nusku because he is a Mesopotamian import at Nerab rather than a distinctly Aramaean figure, and Baalshamin (of the Zakkur stele) because this corpus files him under Palmyrene; El and Kubaba likewise belong to the Canaanite and Luwian spheres. Beyond these, the Iron Age Aramaean epigraphic record (surveyed via Lipiński 2000 and Niehr 2014) yields chiefly compound manifestations of Hadad and non-individuated god-list members.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "aramean_sahar",
+    "name": {
+      "primary": "Sahar",
+      "alt": [
+        "Śahr",
+        "Šahr",
+        "Sehr",
+        "Se'",
+        "Baal-Harran"
+      ],
+      "transliterations": {
+        "arc": "śhr",
+        "etymology": "From the common West Semitic noun śahr/sahrā, 'moon, crescent'; the Aramaic name of the lunar deity, as in later Aramaic sahrā 'moon' (Lipiński, The Aramaeans, 2000)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Aramean",
+    "primaryTradition": "Aramean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Sahar is attested as the great moon god of the Aramaeans, worshipped at Nerab near Aleppo, where the seventh-century BCE funerary stelae of his priests Sin-zer-ibni and Si'-gabbari invoke him at the head of the local pantheon.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. C. L. Gibson, Textbook of Syrian Semitic Inscriptions, vol. 2: Aramaic Inscriptions, Oxford: Clarendon Press, 1975 (Nerab stelae, nos. 18–19)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "śhr",
+          "script": "Aramaic (consonantal)",
+          "rom": "śahr, 'moon, crescent'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. Lipiński, The Aramaeans: Their Ancient History, Culture, Religion (Orientalia Lovaniensia Analecta 100), Leuven: Peeters, 2000"
+          }
+        ]
+      },
+      {
+        "sphereId": "oaths-and-curses",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. C. L. Gibson, Textbook of Syrian Semitic Inscriptions, vol. 2: Aramaic Inscriptions, Oxford: Clarendon Press, 1975 (curse formulae of the Nerab stelae)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_lunar_cycle",
+        "name": "to govern the waxing and waning of the moon and mark the months",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. Theuer, Der Mondgott in den Religionen Syrien-Palästinas (Orbis Biblicus et Orientalis 173), Freiburg/Göttingen: Universitätsverlag/Vandenhoeck & Ruprecht, 2000"
+          }
+        ]
+      },
+      {
+        "id": "enforce_funerary_curses",
+        "name": "to strike down those who violate tombs and break sworn agreements",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. C. L. Gibson, Textbook of Syrian Semitic Inscriptions, vol. 2: Aramaic Inscriptions, Oxford: Clarendon Press, 1975"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "aramean_crescent_standard",
+        "name": "Crescent standard of Harran",
+        "kind": "emblem",
+        "role": "Crescent-topped, tasselled cult standard representing the moon god, depicted on Aramaean stelae including that of Bar-Rakib of Sam'al",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Niehr (ed.), The Aramaeans in Ancient Syria (Handbuch der Orientalistik I/106), Leiden: Brill, 2014"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "bʿl ḥrn",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Donner and W. Röllig, Kanaanäische und aramäische Inschriften (KAI), Wiesbaden: Harrassowitz, 1966–2002, no. 218 (Bar-Rakib's dedication to 'the Lord of Harran')"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Sahar is the West Semitic moon god of the Aramaeans, chief deity of Nerab near Aleppo and, as the 'Lord of Harran', the great lunar god of northern Syria, invoked in seventh-century BCE Aramaic funerary curses alongside Shamash, Nikkal and Nusku.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "E. Lipiński, The Aramaeans: Their Ancient History, Culture, Religion (Orientalia Lovaniensia Analecta 100), Leuven: Peeters, 2000"
+          },
+          {
+            "kind": "secondary",
+            "reference": "H. Niehr (ed.), The Aramaeans in Ancient Syria (Handbuch der Orientalistik I/106), Leiden: Brill, 2014"
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. Theuer, Der Mondgott in den Religionen Syrien-Palästinas (Orbis Biblicus et Orientalis 173), Freiburg/Göttingen, 2000"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sahar (Aramaic śhr, 'moon') is the Aramaean moon god, the West Semitic counterpart in name to the Mesopotamian Sin, yet worshipped under his own Aramaic name. His principal cult places were Nerab, southeast of Aleppo, and Harran in upper Mesopotamia, whose 'Lord' (bʿl ḥrn) the Sam'alian king Bar-Rakib honoured on a stele bearing the crescent standard. The two Nerab funerary stelae (KAI 225–226), erected for the priests Sin-zer-ibni and Si'-gabbari in the seventh century BCE, name him first among the gods and call on him — with Shamash, Nikkal and Nusku — to give a miserable death to any who would disturb the priests' remains. The devotion of the Aramaean population of northern Syria to the moon god, which intensified under Neo-Babylonian patronage of Harran, is regarded as a distinctive feature of Aramaean religiosity."
+  },
+  {
+    "id": "aramean_shamash",
+    "name": {
+      "primary": "Shamash",
+      "alt": [
+        "Šamš",
+        "Shemesh",
+        "Šemeš"
+      ],
+      "transliterations": {
+        "arc": "šmš",
+        "etymology": "The common Semitic noun šamš/šemeš, 'sun', used as the proper name of the Aramaean solar deity (van der Toorn, Becking and van der Horst, Dictionary of Deities and Demons in the Bible, 1999, s.v. 'Shemesh')."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Aramean",
+    "primaryTradition": "Aramean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Šamš is attested as the sun god of the Aramaean states, named in the dynastic pantheon of Sam'al on the Hadad statue of Panamuwa I alongside Hadad, El, Rakib-El and Resheph, and receiving a ram in the funerary feast prescribed by the Katumuwa stele from Zincirli.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "D. Pardee, 'A New Aramaic Inscription from Zincirli', Bulletin of the American Schools of Oriental Research 356 (2009), 51–71"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "šmš",
+          "script": "Aramaic (consonantal)",
+          "rom": "šamš, 'sun'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Donner and W. Röllig, Kanaanäische und aramäische Inschriften (KAI), Wiesbaden: Harrassowitz, 1966–2002, no. 214 (Hadad statue of Panamuwa I)"
+          }
+        ]
+      },
+      {
+        "sphereId": "justice",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. van der Toorn, B. Becking and P. W. van der Horst (eds.), Dictionary of Deities and Demons in the Bible, 2nd ed., Leiden: Brill, 1999, s.v. 'Shemesh'"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "see_all_deeds",
+        "name": "to traverse the sky by day and witness all deeds of gods and men",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "K. van der Toorn, B. Becking and P. W. van der Horst (eds.), Dictionary of Deities and Demons in the Bible, 2nd ed., Leiden: Brill, 1999, s.v. 'Shemesh'"
+          }
+        ]
+      },
+      {
+        "id": "guarantee_treaties",
+        "name": "to guarantee sworn treaties and avenge their violation",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. A. Fitzmyer, The Aramaic Inscriptions of Sefire, rev. ed. (Biblica et Orientalia 19/A), Rome: Pontifical Biblical Institute, 1995"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "aramean_winged_sun_disc",
+        "name": "Winged sun disc",
+        "kind": "emblem",
+        "role": "Solar emblem of Syro-Anatolian and Aramaean royal iconography marking the sun deity's sphere",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Niehr (ed.), The Aramaeans in Ancient Syria (Handbuch der Orientalistik I/106), Leiden: Brill, 2014"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Šamš is the Aramaean sun god, a fixed member of the royal pantheon of Sam'al (Zincirli), a recipient of funerary offerings on the Katumuwa stele, and a divine witness invoked in the Sefire treaty curses and the Nerab funerary inscriptions.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "H. Niehr (ed.), The Aramaeans in Ancient Syria (Handbuch der Orientalistik I/106), Leiden: Brill, 2014"
+          },
+          {
+            "kind": "secondary",
+            "reference": "D. Pardee, 'A New Aramaic Inscription from Zincirli', Bulletin of the American Schools of Oriental Research 356 (2009), 51–71"
+          },
+          {
+            "kind": "secondary",
+            "reference": "E. Lipiński, The Aramaeans: Their Ancient History, Culture, Religion (Orientalia Lovaniensia Analecta 100), Leuven: Peeters, 2000"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Šamš (šmš, 'sun') is the male solar deity of the Iron Age Aramaean kingdoms, distinct from the female Ugaritic sun goddess Shapshu. At Sam'al (Zincirli) he belongs to the standing dynastic pantheon: the colossal Hadad statue of King Panamuwa I (KAI 214, eighth century BCE) repeatedly lists 'Hadad, El, Rakib-El, Šamš and Resheph' as the gods who gave the king his sceptre, and the mortuary stele of the royal servant Katumuwa prescribes the offering of a ram to Šamš in an annual feast. As in the wider ancient Near East, the all-seeing sun functioned as guardian of justice and of sworn agreements: he stands among the divine witnesses of the Sefire treaties and in the curse formulae of the Nerab priestly stelae, where he is paired with the moon god Sahar."
+  },
+  {
+    "id": "aramean_iluwer",
+    "name": {
+      "primary": "Iluwer",
+      "alt": [
+        "Ilu-Wer",
+        "El-Wer",
+        "ʾLWR",
+        "Wer",
+        "Mer"
+      ],
+      "transliterations": {
+        "arc": "ʾlwr",
+        "etymology": "A compound of Semitic ʾil, 'god', with the divine name Wer/Mer, an old Syro-Mesopotamian storm god of the middle Euphrates region (Lipiński, The Aramaeans, 2000)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Aramean",
+    "primaryTradition": "Aramean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Iluwer is attested as the god to whom King Zakkur of Hamath and Luash dedicated his victory stele, set up at Apish (Tell Afis) around 800 BCE after the siege of Hazrach was lifted.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. C. L. Gibson, Textbook of Syrian Semitic Inscriptions, vol. 2: Aramaic Inscriptions, Oxford: Clarendon Press, 1975 (Zakkur stele, no. 5)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "storm",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. R. W. Green, The Storm-God in the Ancient Near East (Biblical and Judaic Studies 8), Winona Lake: Eisenbrauns, 2003"
+          }
+        ]
+      },
+      {
+        "sphereId": "royal-patronage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Donner and W. Röllig, Kanaanäische und aramäische Inschriften (KAI), Wiesbaden: Harrassowitz, 1966–2002, no. 202 (Zakkur stele)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_storms",
+        "name": "to raise storms and bring the rains, after the manner of the old Euphratean storm god Wer",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "A. R. W. Green, The Storm-God in the Ancient Near East (Biblical and Judaic Studies 8), Winona Lake: Eisenbrauns, 2003"
+          }
+        ]
+      },
+      {
+        "id": "protect_royal_client",
+        "name": "to protect and grant victory to the king devoted to him",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E. Lipiński, The Aramaeans: Their Ancient History, Culture, Religion (Orientalia Lovaniensia Analecta 100), Leuven: Peeters, 2000"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "aramean_zakkur_stele",
+        "name": "Stele of Zakkur",
+        "kind": "votive stele",
+        "role": "Basalt royal stele erected to Iluwer at Apish (Tell Afis) by Zakkur of Hamath, the principal monument of his cult",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. C. L. Gibson, Textbook of Syrian Semitic Inscriptions, vol. 2: Aramaic Inscriptions, Oxford: Clarendon Press, 1975"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Iluwer is the divine patron of King Zakkur of Hamath and Luash, an Aramaean form of the ancient middle-Euphrates storm god Wer/Mer, to whom Zakkur dedicated the stele found at Tell Afis commemorating his deliverance from a coalition siege of Hazrach around 800 BCE.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "E. Lipiński, The Aramaeans: Their Ancient History, Culture, Religion (Orientalia Lovaniensia Analecta 100), Leuven: Peeters, 2000"
+          },
+          {
+            "kind": "secondary",
+            "reference": "H. Niehr (ed.), The Aramaeans in Ancient Syria (Handbuch der Orientalistik I/106), Leiden: Brill, 2014"
+          },
+          {
+            "kind": "secondary",
+            "reference": "A. R. W. Green, The Storm-God in the Ancient Near East (Biblical and Judaic Studies 8), Winona Lake: Eisenbrauns, 2003"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Iluwer (ʾlwr, 'the god Wer') is known from the Aramaic stele of Zakkur, king of Hamath and Luash (KAI 202), discovered in 1903 at Tell Afis southeast of Aleppo and dated to about 800 BCE. The stele opens as 'the stele which Zakkur set up for Iluwer', making him the deity of the sanctuary at Apish and the personal or dynastic god of the king, while Baalshamayin, the lord of the heavens, is the god who answered Zakkur through seers during the siege of Hazrach. Scholars identify Iluwer as an Aramaean continuation of Wer (Mer, Itur-Mer), a storm god venerated on the middle Euphrates since the third millennium BCE, whose cult travelled westward with populations settling in the kingdom of Hamath. He appears nowhere else by this name in Aramaic epigraphy, which makes the Zakkur stele the essential witness to his cult."
+  }
+]
+```

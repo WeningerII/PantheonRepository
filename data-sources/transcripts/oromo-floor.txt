@@ -1,0 +1,831 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Oromo
+Era (registered, exact): "Oromo traditional religion (Waaqeffanna); continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five individuated figures the recently authored core lacked: Lafa, the Earth, Waaqa's female counterpart and 'wife' (Bartels 1983; Ta'a, EJOSSAH 2012; Kelbessa 2022); Horoo, the apical ancestor created from the waters of Walaabuu (Hinew, STAR Journal 2012; Kelbessa 2022); Akkoo Manooyyee, the legendary queen of the era of women's rule still invoked in Guji rain prayers (Imana, EAJSSH 2023; IJIRD 2018); Makkoo Bilii, the Macha lawgiver-prophet of Odaa Bisil (Triulzi, Paideuma 1990; Mohammed Hassen 1990); and Holawaka, Waaqa's messenger bird in the origin-of-death myth (Frazer 1918; Scheub 2000). Deliberately excluded after source checks: the first woman Hortu, named only through a single chain (Megerssa apud Kelbessa 2022) and therefore folded into Horoo's entry; the moiety eponyms Borana and Barentu, genealogical charter figures attested since Bahrey (1593) but not religiously individuated; and the alleged Arsi divinity 'Boorantichaa', for which no verifiable scholarly attestation could be found. Waaqeffanna's strongly monotheistic structure means the remaining spirit vocabulary (ekeraa, jaarii, clan ayyaana) is class-level rather than individuated, so this set now approaches the attested limit of named figures.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "oromo_lafa",
+    "name": {
+      "primary": "Lafa",
+      "alt": [
+        "Dachee",
+        "Dache"
+      ],
+      "transliterations": {
+        "Afaan Oromo": "Lafa",
+        "etymology": "Afaan Oromo 'lafa', 'earth, land' (also 'dachee', 'the earth'); the Macha saying recorded by Bartels, 'lafa niti Waaqaa', calls the earth 'Waaqa's wife' (Bartels 1983; Ta'a 2012)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Oromo",
+    "primaryTradition": "Oromo",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "oromo_waaqa"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "Oromo traditional religion (Waaqeffanna); continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Oromo traditional religion (Waaqeffanna); continuing",
+        "eraOrdering": 0,
+        "startEvent": "In Oromo cosmology Waaqa fashioned the sky and the earth out of the primordial water, and the earth stands thereafter beside him as his female counterpart, invoked inseparably with him in prayer and blessing.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kelbessa, Workineh. \"The Oromo Doctrine of God.\" Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 11, no. 4 (2022)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bartels, Lambert. Oromo Religion: Myths and Rites of the Western Oromo of Ethiopia — An Attempt to Understand. Collectanea Instituti Anthropos 8. Berlin: Dietrich Reimer Verlag, 1983."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-and-land",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "lafa",
+          "script": "Latin",
+          "rom": "lafa (earth, land)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bartels, Lambert. Oromo Religion: Myths and Rites of the Western Oromo of Ethiopia — An Attempt to Understand. Collectanea Instituti Anthropos 8. Berlin: Dietrich Reimer Verlag, 1983."
+          }
+        ]
+      },
+      {
+        "sphereId": "motherhood-and-nurture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "haadha",
+          "script": "Latin",
+          "rom": "haadha (mother)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kelbessa, Workineh. \"The Oromo Doctrine of God.\" Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 11, no. 4 (2022)."
+          }
+        ]
+      },
+      {
+        "sphereId": "blessing-and-curse",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "eebba",
+          "script": "Latin",
+          "rom": "eebba (blessing)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ta'a, Tesema. \"Religious Beliefs among the Oromo: Waaqeffannaa, Christianity and Islam in the Context of Ethnic Identity, Citizenship and Integration.\" Ethiopian Journal of the Social Sciences and Humanities 8, no. 1 (2012): 87–111."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "nourish_all_life",
+        "name": "to nourish and protect all living things",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The earth is spoken of as a mother, fertile and creative, who feeds and shelters people, herds and crops, while Waaqa sustains her from above and makes her habitable.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kelbessa, Workineh. \"The Oromo Doctrine of God.\" Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 11, no. 4 (2022)."
+          }
+        ]
+      },
+      {
+        "id": "bind_blessings_and_curses",
+        "name": "to give binding force to blessings and curses sworn by heaven and earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Blessings and curses are pronounced in the joint names of Waaqa and the earth, whose shared witness makes the words effective.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bartels, Lambert. Oromo Religion: Myths and Rites of the Western Oromo of Ethiopia — An Attempt to Understand. Collectanea Instituti Anthropos 8. Berlin: Dietrich Reimer Verlag, 1983."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "oromo_earth_libation",
+        "name": "Libation to the earth",
+        "kind": "rite",
+        "role": "Drops of milk, coffee or honey-wine poured upon the ground so that the earth receives her share of the offerings made to Waaqa, in thanks for feeding and carrying his creation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bartels, Lambert. Oromo Religion: Myths and Rites of the Western Oromo of Ethiopia — An Attempt to Understand. Collectanea Instituti Anthropos 8. Berlin: Dietrich Reimer Verlag, 1983."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kelbessa, Workineh. Traditional Oromo Attitudes towards the Environment: An Argument for Environmentally Sound Development. Social Science Research Report Series 19. Addis Ababa: OSSREA, 2001."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "niti Waaqaa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bartels, Lambert. Oromo Religion: Myths and Rites of the Western Oromo of Ethiopia — An Attempt to Understand. Collectanea Instituti Anthropos 8. Berlin: Dietrich Reimer Verlag, 1983."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ta'a, Tesema. \"Religious Beliefs among the Oromo: Waaqeffannaa, Christianity and Islam in the Context of Ethnic Identity, Citizenship and Integration.\" Ethiopian Journal of the Social Sciences and Humanities 8, no. 1 (2012): 87–111."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "oromo_waaqa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bartels, Lambert. Oromo Religion: Myths and Rites of the Western Oromo of Ethiopia — An Attempt to Understand. Collectanea Instituti Anthropos 8. Berlin: Dietrich Reimer Verlag, 1983."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ta'a, Tesema. \"Religious Beliefs among the Oromo: Waaqeffannaa, Christianity and Islam in the Context of Ethnic Identity, Citizenship and Integration.\" Ethiopian Journal of the Social Sciences and Humanities 8, no. 1 (2012): 87–111."
+          }
+        ],
+        "notes": "Macha tradition calls the earth Waaqa's wife — lafa niti Waaqaa — and the two are experienced as a divine couple whose union frames blessing, oath and everyday piety."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Lafa, the Earth, is the female divine counterpart and wife of the sky-god Waaqa in Oromo religion, a nourishing mother invoked inseparably with Waaqa in prayers, blessings and curses.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bartels, Lambert. Oromo Religion: Myths and Rites of the Western Oromo of Ethiopia — An Attempt to Understand. Collectanea Instituti Anthropos 8. Berlin: Dietrich Reimer Verlag, 1983."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ta'a, Tesema. \"Religious Beliefs among the Oromo: Waaqeffannaa, Christianity and Islam in the Context of Ethnic Identity, Citizenship and Integration.\" Ethiopian Journal of the Social Sciences and Humanities 8, no. 1 (2012): 87–111."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kelbessa, Workineh. \"The Oromo Doctrine of God.\" Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 11, no. 4 (2022)."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "In Oromo Waaqeffanna religion the earth, lafa (also dachee), is the great female counterpart of the sky-god Waaqa. The Macha Oromo studied by Lambert Bartels put the relationship plainly: 'the earth is Waaqa's wife' — lafa niti Waaqaa. Waaqa, imagined as a loving father, sends the rain from above, while the earth, imagined as a mother, is fertile and creative, nourishing and protecting everything that lives; the two are held to be inseparable, and Oromo prayers, blessings and curses characteristically invoke the pair together, by Waaqa and by the earth, so that heaven and earth stand as joint witnesses to human words. The earth also receives her own share of worship: drops of drink are let fall to the ground in libation, and offerings are returned to her in thanks for feeding and carrying Waaqa's creation. As the visible, tangible half of the divine couple, she completes the Oromo picture of a cosmos held between the sky above and the life-bearing earth below."
+  },
+  {
+    "id": "oromo_horoo",
+    "name": {
+      "primary": "Horoo",
+      "alt": [
+        "Horo"
+      ],
+      "transliterations": {
+        "Afaan Oromo": "Horoo",
+        "etymology": "Afaan Oromo 'Horoo', a name associated with the root hor- 'to multiply, be fertile' (cf. horuu 'to breed', horii 'livestock, wealth') and with hora, the mineral springs of the origin-place Madda Walaabuu (Hinew 2012; Kelbessa 2022)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Oromo",
+    "primaryTradition": "Oromo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "oromo_waaqa"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "Oromo traditional religion (Waaqeffanna); continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Oromo traditional religion (Waaqeffanna); continuing",
+        "eraOrdering": 0,
+        "startEvent": "Waaqa creates Horoo, the first human being, out of the primordial water at Walaabuu, and the originally undivided ancestor is separated by Waaqa's glance into male and female.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hinew, Dereje. \"Historical Significances of Odaa with Special Reference to Walaabuu.\" Science, Technology and Arts Research Journal 1, no. 2 (2012): 81–90."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-and-lineage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "horuu",
+          "script": "Latin",
+          "rom": "horuu (to beget, multiply)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kelbessa, Workineh. \"The Oromo Doctrine of God.\" Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 11, no. 4 (2022)."
+          }
+        ]
+      },
+      {
+        "sphereId": "creation-and-origins",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "uumaa",
+          "script": "Latin",
+          "rom": "uumaa (creation / created things)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hinew, Dereje. \"Historical Significances of Odaa with Special Reference to Walaabuu.\" Science, Technology and Arts Research Journal 1, no. 2 (2012): 81–90."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "beget_the_oromo_people",
+        "name": "to beget the Oromo people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the apical ancestor, Horoo stands at the head of every Oromo genealogy; the nation traces itself to him as the firstborn of Waaqa's human creation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hinew, Dereje. \"Historical Significances of Odaa with Special Reference to Walaabuu.\" Science, Technology and Arts Research Journal 1, no. 2 (2012): 81–90."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kelbessa, Workineh. \"The Oromo Doctrine of God.\" Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 11, no. 4 (2022)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "oromo_madda_walaabuu",
+        "name": "Madda Walaabuu",
+        "kind": "sacred-site",
+        "role": "Springs in the Bale lowlands honoured as the place of origin where Waaqa created the first beings from the water and whence Horoo and all creatures came forth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hinew, Dereje. \"Historical Significances of Odaa with Special Reference to Walaabuu.\" Science, Technology and Arts Research Journal 1, no. 2 (2012): 81–90."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Horoo is the apical ancestor of the Oromo, the first human being created by Waaqa out of the water at Walaabuu and divided by Waaqa's glance into the first man and first woman.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Hinew, Dereje. \"Historical Significances of Odaa with Special Reference to Walaabuu.\" Science, Technology and Arts Research Journal 1, no. 2 (2012): 81–90."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kelbessa, Workineh. \"The Oromo Doctrine of God.\" Filosofia Theoretica: Journal of African Philosophy, Culture and Religions 11, no. 4 (2022)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Horoo (Horo) is the first human being and apical ancestor of the Oromo in the origin traditions of Waaqeffanna. In the myth as recorded from Oromo elders, creation began with water — Walaabuu — out of which Waaqa called all creatures, Horoo first among them; in a widespread telling the primordial ancestor was at first neither male nor female and was divided into the two sexes by the glance of Waaqa. The scholar Gemetchu Megerssa records that the first Oromo man and woman were called Horo and Hortu, while other strands of tradition name Tabo as the first person and Horo as the second, or hold the firstborn to be unknown. Horoo's birthplace is identified with Madda Walaabuu in the Bale lowlands, the sacred springs from which, as the tradition has it, all creation came forth and which long remained the ritual heartland and pilgrimage centre of the Oromo. Through Horoo the whole nation understands itself as a single family of common descent under Waaqa."
+  },
+  {
+    "id": "oromo_akkoo_manooyyee",
+    "name": {
+      "primary": "Akkoo Manooyyee",
+      "alt": [
+        "Akko Manoye",
+        "Akkoo Mannooyyee",
+        "Mootii Qorkee"
+      ],
+      "transliterations": {
+        "Afaan Oromo": "Akkoo Manooyyee",
+        "etymology": "Afaan Oromo 'akkoo', 'grandmother, old woman', an honorific joined to the personal name Manooyyee; in eastern tradition the queen is also called Mootii Qorkee (Imana 2023; 'Guji Girja Gada System and Contemporary Challenges' 2018)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Oromo",
+    "primaryTradition": "Oromo",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Oromo traditional religion (Waaqeffanna); continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Oromo traditional religion (Waaqeffanna); continuing",
+        "eraOrdering": 0,
+        "startEvent": "Oromo oral tradition places Akkoo Manooyyee at the end of the ancient era of women's rule, her harsh reign provoking the men to overthrow her and to found the gadaa order in its place.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Imana, Gutema. \"Some Notes on the Past of Oromo Society: The Story about Akkoo Manooyyee in Focus.\" East African Journal of Social Sciences and Humanities 8, no. 1 (2023)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sovereignty-and-rule",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mootii",
+          "script": "Latin",
+          "rom": "mootii (monarch, ruler)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Guji Girja Gada System and Contemporary Challenges.\" The International Journal of Innovative Research and Development 7, no. 12 (2018). doi:10.24940/ijird/2018/v7/i12/NOV18052."
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-and-intercession",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bokkaa",
+          "script": "Latin",
+          "rom": "bokkaa (rain)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"The Guji-Oromo Women Places in the Society (Polio-Economic and Socio-Cultural Rights): In Reference to the Gadaa System, South Ethiopia.\" Munich: GRIN Verlag, 2021."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_with_absolute_authority",
+        "name": "to rule the Oromo with absolute authority",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The legend remembers her as a formidable queen who dictated to the community and set the men labours whose deliberate impossibility finally drove them to conspire against her.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Imana, Gutema. \"Some Notes on the Past of Oromo Society: The Story about Akkoo Manooyyee in Focus.\" East African Journal of Social Sciences and Humanities 8, no. 1 (2023)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Guji Girja Gada System and Contemporary Challenges.\" The International Journal of Innovative Research and Development 7, no. 12 (2018). doi:10.24940/ijird/2018/v7/i12/NOV18052."
+          }
+        ]
+      },
+      {
+        "id": "intercede_for_rain",
+        "name": "to bring rain to women who pray at her grave",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In time of drought Guji women gather beneath the tree where the queen is said to lie buried and call upon her as they ask Waaqa for rain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"The Guji-Oromo Women Places in the Society (Polio-Economic and Socio-Cultural Rights): In Reference to the Gadaa System, South Ethiopia.\" Munich: GRIN Verlag, 2021."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "oromo_mokkonnisa_tree",
+        "name": "Mokkonnisa tree",
+        "kind": "sacred-site",
+        "role": "Tree under which Akkoo Manooyyee is said to be buried and beneath which Guji women assemble to pray for rain during drought.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"The Guji-Oromo Women Places in the Society (Polio-Economic and Socio-Cultural Rights): In Reference to the Gadaa System, South Ethiopia.\" Munich: GRIN Verlag, 2021."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Mootii Qorkee",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "\"Guji Girja Gada System and Contemporary Challenges.\" The International Journal of Innovative Research and Development 7, no. 12 (2018). doi:10.24940/ijird/2018/v7/i12/NOV18052."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Akkoo Manooyyee is the legendary queen of the ancient era of women's rule over the Oromo, whose tyranny led the men to overthrow her and institute the gadaa system, and who is still invoked by Guji women in prayers for rain.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Imana, Gutema. \"Some Notes on the Past of Oromo Society: The Story about Akkoo Manooyyee in Focus.\" East African Journal of Social Sciences and Humanities 8, no. 1 (2023)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"Guji Girja Gada System and Contemporary Challenges.\" The International Journal of Innovative Research and Development 7, no. 12 (2018). doi:10.24940/ijird/2018/v7/i12/NOV18052."
+          },
+          {
+            "kind": "secondary",
+            "reference": "\"The Guji-Oromo Women Places in the Society (Polio-Economic and Socio-Cultural Rights): In Reference to the Gadaa System, South Ethiopia.\" Munich: GRIN Verlag, 2021."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Akkoo Manooyyee ('Grandmother Manooyyee'), in eastern tradition also called Mootii Qorkee, is the legendary queen who ruled the Oromo in the remembered era of women's rule before the gadaa system. The Guji claim her especially, but many Oromo communities tell of her as their one-time sovereign: a formidable and finally tyrannical ruler under whom men performed the housework and were set labours of studied impossibility, until, weary of her orders, they conspired and brought her down. With her death the age of female rule ended, and the elders are said to have come together to institute the gadaa order; on her deathbed she is remembered as counselling the women to feign submission to male authority thereafter. Scholars read the tale as a charter narrative reflecting a remembered or imagined matriarchal past and its replacement by the male-centred gadaa polity, and as a key text in Oromo debates about the standing of women. Her memory retains ritual force: in time of drought Guji women gather beneath the Mokkonnisa tree, where the queen is said to be buried, and invoke her as they pray to Waaqa for rain."
+  },
+  {
+    "id": "oromo_makkoo_bilii",
+    "name": {
+      "primary": "Makkoo Bilii",
+      "alt": [
+        "Makko Billi",
+        "Makko Bili",
+        "Makkoo Billii"
+      ],
+      "transliterations": {
+        "Afaan Oromo": "Makkoo Bilii",
+        "etymology": "Afaan Oromo personal name, the second element following the Oromo custom of citing the father's name; borne by the legendary lawgiver of the Macha remembered at Odaa Bisil (Triulzi 1990)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Oromo",
+    "primaryTradition": "Oromo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Oromo traditional religion (Waaqeffanna); continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Oromo traditional religion (Waaqeffanna); continuing",
+        "eraOrdering": 0,
+        "startEvent": "Macha tradition sets Makkoo Bilii in the late sixteenth century, when the Macha Oromo separated from the Tulama and he seated their independent caffee assembly under the sycamore Odaa Bisil, giving them their gadaa laws.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Triulzi, Alessandro. \"The Saga of Makkoo Bilii: A Theme in Mac'a Oromoo History.\" Paideuma 36 (1990): 319–327."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "law-and-justice",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "seera",
+          "script": "Latin",
+          "rom": "seera (law)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ]
+      },
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "raajii",
+          "script": "Latin",
+          "rom": "raajii (prophet, prodigy)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ]
+      },
+      {
+        "sphereId": "moral-order",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "safuu",
+          "script": "Latin",
+          "rom": "safuu (moral order / ethical distance)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lay_down_the_gadaa_laws",
+        "name": "to lay down the gadaa laws",
+        "term": {
+          "value": "seera",
+          "script": "Latin",
+          "rom": "seera (law)"
+        },
+        "inheritability": "none",
+        "notes": "Makkoo Bilii instructed the Macha in the gadaa laws, including the settlement of disputes over land, the eight-yearly buttaa sacrifice of the incoming gadaa class, and the annual new-year observance.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ]
+      },
+      {
+        "id": "prophesy_in_the_name_of_waaqa",
+        "name": "to prophesy in the name of Waaqa",
+        "term": {
+          "value": "raajii",
+          "script": "Latin",
+          "rom": "raajii (prophet)"
+        },
+        "inheritability": "none",
+        "notes": "As raajii he spoke to the Macha in the name of Waaqa and taught them to follow the way of Waaqa.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "oromo_odaa_bisil",
+        "name": "Odaa Bisil",
+        "kind": "sacred-site",
+        "role": "Sycamore of the upper Gibe valley beneath which Makkoo Bilii seated the independent caffee assembly of the Macha and proclaimed their laws.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Triulzi, Alessandro. \"The Saga of Makkoo Bilii: A Theme in Mac'a Oromoo History.\" Paideuma 36 (1990): 319–327."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "raajii",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "oromo_waaqa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ],
+        "notes": "Remembered as a prophet as well as a lawgiver, Makkoo Bilii spoke to the Macha in the name of Waaqa and bound his laws to the way of Waaqa and the moral order safuu."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Makkoo Bilii is the legendary lawgiver and prophet of the Macha Oromo who established their independent caffee assembly at Odaa Bisil and gave them their gadaa laws.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Triulzi, Alessandro. \"The Saga of Makkoo Bilii: A Theme in Mac'a Oromoo History.\" Paideuma 36 (1990): 319–327."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hassen, Mohammed. The Oromo of Ethiopia: A History, 1570–1860. Cambridge: Cambridge University Press, 1990."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Makkoo Bilii (Makko Billi) is the legendary lawgiver of the Macha Oromo of western Ethiopia and one of the great culture-heroes of the gadaa tradition. Oral tradition places him in the late sixteenth and early seventeenth centuries, when the Macha, expanding westwards, separated from the Tulama in the remembered 'break of Bisil' and seated their own caffee assembly under the sycamore Odaa Bisil in the upper Gibe valley. There Makkoo Bilii is said to have instructed the people in the gadaa laws — among them the settling of disputes over land, the performance of the buttaa sacrifice by each new gadaa class every eight years, and the keeping of the annual new-year rite — so that the saga of Makkoo Bilii became the charter of Macha political identity. Tradition remembers him as at once an able leader, a great lawgiver and a raajii, a prophet who spoke in the name of Waaqa and taught the people to follow Waaqa's way; the distinctively Macha elaboration of safuu, the moral order of respect and due distance, is bound inseparably to his name. Whether or not a historical individual stands behind the saga, he is the individuated founder-figure through whom the Macha remember the origin of their law."
+  },
+  {
+    "id": "oromo_holawaka",
+    "name": {
+      "primary": "Holawaka",
+      "alt": [
+        "Hola-waka"
+      ],
+      "transliterations": {
+        "Afaan Oromo": "holawaka",
+        "etymology": "From Oromo hoolaa 'sheep' and Waaqa 'God/sky': 'the sheep of God', the name of the wailing bird whom Waaqa made his messenger (Frazer 1918)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Oromo",
+    "primaryTradition": "Oromo",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Oromo traditional religion (Waaqeffanna); continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Oromo traditional religion (Waaqeffanna); continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Oromo myth of the origin of death, Waaqa gives the bird holawaka a crest as the badge of his office and sends him to tell humankind that by shedding their skins in old age they will renew their youth and never die.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frazer, James George. Folk-Lore in the Old Testament: Studies in Comparative Religion, Legend and Law. Vol. 1. London: Macmillan, 1918."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "divine-messengers",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frazer, James George. Folk-Lore in the Old Testament: Studies in Comparative Religion, Legend and Law. Vol. 1. London: Macmillan, 1918."
+          }
+        ]
+      },
+      {
+        "sphereId": "death-and-mortality",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "du'a",
+          "script": "Latin",
+          "rom": "du'a (death)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frazer, James George. Folk-Lore in the Old Testament: Studies in Comparative Religion, Legend and Law. Vol. 1. London: Macmillan, 1918."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry_divine_messages",
+        "name": "to carry Waaqa's messages to humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Holawaka was entrusted with the message of immortality, and his crest was given as the badge authenticating him as Waaqa's herald.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frazer, James George. Folk-Lore in the Old Testament: Studies in Comparative Religion, Legend and Law. Vol. 1. London: Macmillan, 1918."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold. A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press, 2000, s.v. \"Holawaka.\""
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "oromo_holawaka_crest",
+        "name": "Crest of the messenger",
+        "kind": "emblem",
+        "role": "Crest bestowed by Waaqa upon the bird as the badge of his office, authenticating the message of immortality he carried.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frazer, James George. Folk-Lore in the Old Testament: Studies in Comparative Religion, Legend and Law. Vol. 1. London: Macmillan, 1918."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "oromo_waaqa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frazer, James George. Folk-Lore in the Old Testament: Studies in Comparative Religion, Legend and Law. Vol. 1. London: Macmillan, 1918."
+          }
+        ],
+        "notes": "Holawaka is Waaqa's messenger bird, crested as the badge of his commission and afterwards punished by him for betraying the message of immortality to the serpent."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Holawaka, 'the sheep of God', is the messenger bird of Oromo myth who, sent by Waaqa to bring humankind the secret of immortality, traded the message to the serpent and so brought death to humanity and skin-shedding renewal to snakes.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Frazer, James George. Folk-Lore in the Old Testament: Studies in Comparative Religion, Legend and Law. Vol. 1. London: Macmillan, 1918."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold. A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press, 2000, s.v. \"Holawaka.\""
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Holawaka, 'the sheep of God', is the messenger bird of Oromo mythology and the central figure of the Oromo account of how death came into the world. In the story, Waaqa sent the bird to tell human beings that they would not die: when they grew old and weak they had only to slip off their skins to renew their youth. To authenticate the message Waaqa gave the bird a crest as the badge of his office. On the way, however, the hungry bird came upon a serpent devouring a carcass and would not be refused a share; in payment it sold the message, telling the serpent that people would die when they grew old but that the serpent would cast its skin and grow young again. So mortality fell to humankind and renewal to the snakes, and Waaqa, angered at his herald's betrayal, afflicted the bird with a painful disease, so that it sits wailing in the tree-tops to this day. The tale, made widely known through James Frazer's comparative study of fall-of-man narratives and included in modern dictionaries of African mythology, gives the Waaqeffanna tradition its individuated, named actor in the widespread African myth of the perverted message."
+  }
+]
+```

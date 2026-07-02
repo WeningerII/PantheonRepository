@@ -1,0 +1,375 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Levantine
+Era (registered, exact): "late-bronze-age"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the five individuated non-pantheon figures of Ugaritic narrative and royal-ancestor ritual, which fit the Levantine label as constituted by the existing figure Ammurapi of Ugarit while avoiding the Canaanite deities proper: the legendary kings and heroes Kirta, Danel, Aqhat, and Pughat (KTU 1.14-1.16 and 1.17-1.19; Parker, Ugaritic Narrative Poetry, 1997; Wyatt, Religious Texts from Ugarit, 2002; Margalit, The Ugaritic Poem of AQHT, 1989), and the deified dynastic ancestor Ditanu of the funerary liturgy KTU 1.161 performed under Ammurapi himself (Pardee, Ritual and Cult at Ugarit, 2002; Pitard, BASOR 232, 1978). Secondary epic characters (Hurriya, Yassib, Yatpan, Shataqat) and the collective Rapiuma were excluded as insufficiently individuated or as spirit-classes.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "levantine_danel",
+    "name": {
+      "primary": "Danel",
+      "alt": [
+        "Danʾilu",
+        "Daniʾilu",
+        "Dnil"
+      ],
+      "transliterations": {
+        "ugaritic": "dnil",
+        "etymology": "Ugaritic dnil, 'El judges' or 'judge of El' (H.-P. Müller, 'Daniel', in van der Toorn et al., Dictionary of Deities and Demons in the Bible, 2nd ed., 1999)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Levantine",
+    "primaryTradition": "Levantine",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "late-bronze-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "late-bronze-age",
+        "eraOrdering": 0,
+        "startEvent": "Danel is the patriarch of the Ugaritic Aqhat epic (KTU 1.17-1.19), written down at Ugarit in the fourteenth-thirteenth centuries BCE (Parker, Ugaritic Narrative Poetry, 1997).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Simon B. Parker (ed.), Ugaritic Narrative Poetry, SBL Writings from the Ancient World 9, 1997"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "justice",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "dn",
+          "script": "Ugaritic cuneiform (romanized)",
+          "rom": "dīnu, 'judgment, cause'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Baruch Margalit, The Ugaritic Poem of AQHT: Text, Translation, Commentary, BZAW 182, 1989"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "gate_judgment",
+        "name": "to judge the cause of the widow and the orphan at the city gate",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The epic repeatedly depicts Danel sitting at the gate threshing floor, 'judging the case of the widow, adjudicating the cause of the fatherless'.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. Wyatt, Religious Texts from Ugarit, 2nd ed., 2002"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "mt rpi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Baruch Margalit, The Ugaritic Poem of AQHT, BZAW 182, 1989"
+          }
+        ]
+      },
+      {
+        "original": "mt hrnmy",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. Wyatt, Religious Texts from Ugarit, 2nd ed., 2002"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "canaanite_aqhat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Simon B. Parker (ed.), Ugaritic Narrative Poetry, 1997"
+          }
+        ],
+        "notes": "Aqhat is the long-awaited son granted to Danel by El after Baal's intercession. Aqhat himself is entered in the registry under the Canaanite tradition."
+      },
+      {
+        "kind": "father-of",
+        "personId": "levantine_pughat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. Wyatt, Religious Texts from Ugarit, 2nd ed., 2002"
+          }
+        ],
+        "notes": "Pughat is Danel's daughter, who avenges her brother Aqhat."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Danel is the righteous patriarch of the Aqhat epic, a childless judge granted a son by El, whose mourning and quest for his murdered son's remains occupy the poem's final tablet; he is widely connected with the Danel named as a paragon of righteousness in Ezekiel 14 and 28.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Simon B. Parker (ed.), Ugaritic Narrative Poetry, SBL Writings from the Ancient World 9, 1997"
+          },
+          {
+            "kind": "secondary",
+            "reference": "H.-P. Müller, 'Daniel', in K. van der Toorn, B. Becking and P. W. van der Horst (eds.), Dictionary of Deities and Demons in the Bible, 2nd ed., Brill, 1999"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Danel (Danʾilu), 'the man of Rapiu, the Harnamite', is the central patriarch of the Ugaritic Tale of Aqhat. After seven days of incubation rites El grants him a son, Aqhat. When the goddess Anat has the boy killed for his bow, Danel curses the land into drought, recovers his son's remains from the gullet of the vulture-mother Samal, and mourns him for seven years. His fame as an exemplar of righteous judgment evidently persisted in the Levant, since Ezekiel names a Danel alongside Noah and Job."
+  },
+  {
+    "id": "levantine_pughat",
+    "name": {
+      "primary": "Pughat",
+      "alt": [
+        "Puġatu",
+        "Pġt",
+        "Paghat"
+      ],
+      "transliterations": {
+        "ugaritic": "pġt",
+        "etymology": "Ugaritic pġt, 'girl, maiden' used as a personal name (Wyatt, Religious Texts from Ugarit, 2002)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Levantine",
+    "primaryTradition": "Levantine",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "levantine_danel"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "late-bronze-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "late-bronze-age",
+        "eraOrdering": 0,
+        "startEvent": "Pughat appears as Danel's dutiful daughter and her brother's avenger in the closing tablet of the Aqhat epic (KTU 1.19), copied at Ugarit in the fourteenth-thirteenth centuries BCE (Parker, Ugaritic Narrative Poetry, 1997).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Simon B. Parker (ed.), Ugaritic Narrative Poetry, SBL Writings from the Ancient World 9, 1997"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "vengeance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael D. Coogan and Mark S. Smith, Stories from Ancient Canaan, 2nd ed., 2012"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "star_lore",
+        "name": "to know the courses of the stars and read the signs of the sky",
+        "term": {
+          "value": "ydʿt hlk kbkbm",
+          "script": "Ugaritic cuneiform (romanized)",
+          "rom": "'she who knows the course of the stars'"
+        },
+        "inheritability": "none",
+        "notes": "Her stock epithets describe her as carrying water on her shoulder and knowing the movement of the stars.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. Wyatt, Religious Texts from Ugarit, 2nd ed., 2002"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "ṯkmt mym",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. Wyatt, Religious Texts from Ugarit, 2nd ed., 2002"
+          }
+        ]
+      },
+      {
+        "original": "ydʿt hlk kbkbm",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Baruch Margalit, The Ugaritic Poem of AQHT, BZAW 182, 1989"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Pughat is Danel's daughter who, disguising a warrior's gear beneath women's clothing, goes to the camp of her brother Aqhat's killer Yatpan to exact vengeance in the final scene of the Aqhat epic.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Simon B. Parker (ed.), Ugaritic Narrative Poetry, SBL Writings from the Ancient World 9, 1997"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Michael D. Coogan and Mark S. Smith, Stories from Ancient Canaan, 2nd ed., Westminster John Knox, 2012"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pughat, 'who shoulders water, who knows the course of the stars', is one of the most vividly drawn women of Levantine narrative literature. After her brother Aqhat's murder she washes and rouges herself, straps on a hero's dagger and sword beneath her garments, and comes at dusk to the tent of the assassin Yatpan, who is plied with wine as the extant text breaks off, on the evident brink of her revenge. She has often been compared with the vengeful and resourceful heroines of later biblical narrative such as Jael and Judith."
+  },
+  {
+    "id": "levantine_ditanu",
+    "name": {
+      "primary": "Ditanu",
+      "alt": [
+        "Didanu",
+        "Dtn",
+        "Tidanu"
+      ],
+      "transliterations": {
+        "ugaritic": "dtn",
+        "etymology": "Ugaritic dtn, cognate with the Amorite tribal name Ditanu/Didanu, possibly connected with a word for 'aurochs' or 'bison' (Annus, 'Are There Greek Rephaim?', Ugarit-Forschungen 31, 1999)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Levantine",
+    "primaryTradition": "Levantine",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "late-bronze-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "late-bronze-age",
+        "eraOrdering": 0,
+        "startEvent": "Ditanu is invoked as head of the deified royal ancestors in the Ugaritic funerary liturgy KTU 1.161, performed for King Niqmaddu III shortly before the fall of Ugarit (Pardee, Ritual and Cult at Ugarit, 2002).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dennis Pardee, Ritual and Cult at Ugarit, SBL Writings from the Ancient World 10, 2002"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-dead",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "qbṣ dtn",
+          "script": "Ugaritic cuneiform (romanized)",
+          "rom": "'the assembly of Ditanu'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Brian B. Schmidt, Israel's Beneficent Dead: Ancestor Cult and Necromancy in Ancient Israelite Religion and Tradition, 1994"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "dynastic_blessing",
+        "name": "to receive funerary offerings and extend blessing from the underworld to the reigning king and his house",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In KTU 1.161 the assembly of Ditanu and the ancient Rapiuma are summoned to attend the royal funeral, after which well-being is invoked on King Ammurapi and on Ugarit.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wayne T. Pitard, 'The Ugaritic Funerary Text RS 34.126', Bulletin of the American Schools of Oriental Research 232, 1978"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ditanu (Didanu) is the eponymous, deified dynastic ancestor at the head of the Rapiuma in Ugaritic royal ritual, whose 'assembly' is invoked in the funerary liturgy for Niqmaddu III and in the Kirta epic's blessing, and from whom Amorite royal lines including that of Ugarit claimed descent.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Dennis Pardee, Ritual and Cult at Ugarit, SBL Writings from the Ancient World 10, Society of Biblical Literature, 2002"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Amar Annus, 'Are There Greek Rephaim? On the Etymology of Greek Meropes and Titanes', Ugarit-Forschungen 31, 1999"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Brian B. Schmidt, Israel's Beneficent Dead: Ancestor Cult and Necromancy in Ancient Israelite Religion and Tradition, Mohr Siebeck, 1994"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ditanu (also read Didanu) is the individuated head of the deified royal dead of Ugarit. The funerary liturgy KTU 1.161, performed at the burial of Niqmaddu III under his successor Ammurapi, summons 'the assembly of Ditanu' together with the ancient Rapiuma to receive offerings and to bless the new king and the city. In the Kirta epic the hero's promised offspring are to be exalted 'in the midst of the Rapiuma of the earth, in the gathering of the assembly of Ditanu'. The name matches that of the Amorite Ditanu/Tidanu tribe, from which the Assyrian King List and the genealogy of the Hammurabi dynasty also derive early ancestors, making Ditanu a rare pan-Levantine and Mesopotamian dynastic eponym elevated to cultic status."
+  }
+]
+```

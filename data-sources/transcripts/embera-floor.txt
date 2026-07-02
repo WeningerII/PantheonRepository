@@ -1,0 +1,381 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Embera
+Era (registered, exact): "Embera traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three individuated beings that scholarship documents beyond the existing five: Jinopotabá (the crab-shaped healer and prototype jaibaná, son of Karagabí, who crosses the three cosmic worlds), Ba (the personified Thunder of the upper world), and Jino Poto Warra (a hero created by Karagabí to free the Emberá from dangers in Tutruicá's underworld), wiring the two Jino-Poto heroes to Karagabí by parentage and to each other as companions within one mythic complex. Sources are Isacsson's Transformations of Eternity (1993), Pardo's El convite de los espíritus (1987), Vasco's Jaibanás: los verdaderos hombres (1985), and the IIAP Bioetnia synthesis (2011). I deliberately excluded the sun and moon (their names are unstable across sources — Umadau/Humantahú, Jedeko/Hedeko/Gedeco — and Karagabí is himself identified with the moon in the Katío branch, risking duplication) and Nusí (attested as a class of voracious deep-pool fish-monsters rather than a single named individual), since padding with those would be less defensible than the tight, cleanly attested set given here.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "embera_jinopotaba",
+    "name": {
+      "primary": "Jinopotabá, the crab-healer who crosses the three worlds",
+      "alt": [
+        "Jinopotabar",
+        "Jino Potabá",
+        "Jinopotawa"
+      ],
+      "transliterations": {
+        "emb": "Jinopotabá",
+        "etymology": "Emberá name of the crab-shaped world-crossing healer; the element warra 'child' recurs in the related figure Jino Poto Warra (Isacsson 1993; Bioetnia 2011)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Embera",
+    "primaryTradition": "Embera",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "embera_karagabi"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "Embera traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Embera traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Emberá oral tradition presents Jinopotabá as a crab-shaped healer and son of Karagabí who alone passes freely among the celestial, earthly and watery worlds of the cosmos.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Isacsson, Sven-Erik. Transformations of Eternity: On Man and Cosmos in Emberá Thought. Gothenburg: University of Gothenburg, Department of Social Anthropology, 1993."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, Instituto de Investigaciones Ambientales del Pacífico (IIAP), Quibdó, 2011."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "shamanic-mediation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "jaibaná",
+          "script": "Latin",
+          "rom": "one who possesses jai; Emberá shaman"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Vasco Uribe, Luis Guillermo. Jaibanás: los verdaderos hombres. Bogotá: Fundación de Investigaciones Arqueológicas Nacionales, Banco de la República, 1985."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Pardo Rojas, Mauricio. El convite de los espíritus. Notas sobre chamanismo Chocó. Quibdó: Centro Pastoral Indigenista, Diócesis de Quibdó, 1987."
+          }
+        ]
+      },
+      {
+        "sphereId": "cosmic-travel",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bajía",
+          "script": "Latin",
+          "rom": "the upper/celestial world"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Isacsson, Sven-Erik. Transformations of Eternity: On Man and Cosmos in Emberá Thought. Gothenburg: University of Gothenburg, 1993."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "cross_the_three_worlds",
+        "name": "to travel between the upper, human, and lower worlds",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He goes to the mountain to reach the moon that sails the sky and to the river to reach the world below.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, IIAP, Quibdó, 2011."
+          }
+        ]
+      },
+      {
+        "id": "heal_as_first_jaibana",
+        "name": "to heal the sick as the prototype of the jaibaná",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pardo Rojas, Mauricio. El convite de los espíritus. Notas sobre chamanismo Chocó. Quibdó: Centro Pastoral Indigenista, 1987."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "embera_jino_poto_warra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, IIAP, Quibdó, 2011."
+          }
+        ],
+        "notes": "Both belong to the family of Jino-Poto beings who cross between the worlds; the sources name them together in the same mythic complex."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Jinopotabá is the crab-shaped healer and prototype jaibaná, a son of Karagabí who alone moves among the three levels of the Emberá cosmos.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Isacsson, Sven-Erik. Transformations of Eternity: On Man and Cosmos in Emberá Thought. Gothenburg: University of Gothenburg, Department of Social Anthropology, 1993."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, Instituto de Investigaciones Ambientales del Pacífico (IIAP), Quibdó, 2011."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Pardo Rojas, Mauricio. El convite de los espíritus. Notas sobre chamanismo Chocó. Quibdó: Centro Pastoral Indigenista, Diócesis de Quibdó, 1987."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In Emberá cosmology Jinopotabá (also Jinopotabar, Jino Potabá) is the paradigmatic world-crossing being and the prototype of the jaibaná, the Emberá shaman. He is described as a crab and a great healer, and he alone passes freely among the three levels of the cosmos: the celestial world (bajía) of his father Karagabí, the earthly world (egoró) of living people, and the watery world below (aremuko or chiapera) governed by Tutruicá. He climbs to the mountain to reach the moon that sails the sky in its canoe and descends to the river to reach the lower world, and through this constant traffic he sustains the exchanges of soul-force on which healing and cosmic order depend."
+  },
+  {
+    "id": "embera_ba",
+    "name": {
+      "primary": "Ba, the personified Thunder of the upper world",
+      "alt": [
+        "Bá"
+      ],
+      "transliterations": {
+        "emb": "Ba",
+        "etymology": "Emberá ba 'thunder' (Bioetnia 2011)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Embera",
+    "primaryTradition": "Embera",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Embera traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Embera traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Emberá cosmology places Ba, the Thunder, among the beings that dwell in the upper world (bajía) alongside the high god Karagabí.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, Instituto de Investigaciones Ambientales del Pacífico (IIAP), Quibdó, 2011."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Isacsson, Sven-Erik. Transformations of Eternity: On Man and Cosmos in Emberá Thought. Gothenburg: University of Gothenburg, 1993."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ba",
+          "script": "Latin",
+          "rom": "thunder"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, IIAP, Quibdó, 2011."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sound_as_thunder",
+        "name": "to sound as thunder across the sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, IIAP, Quibdó, 2011."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ba is the personified Thunder, a distinct sky-being who inhabits the upper world of the Emberá cosmos together with Karagabí.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, Instituto de Investigaciones Ambientales del Pacífico (IIAP), Quibdó, 2011."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Isacsson, Sven-Erik. Transformations of Eternity: On Man and Cosmos in Emberá Thought. Gothenburg: University of Gothenburg, Department of Social Anthropology, 1993."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ba is the personified Thunder, one of the beings that dwell in the upper celestial world (bajía) together with the high god Karagabí. In Emberá thought thunder is not merely a natural event but a distinct sky-being whose voice belongs to the ordered upper cosmos, set above the earthly world of living people and the watery world below."
+  },
+  {
+    "id": "embera_jino_poto_warra",
+    "name": {
+      "primary": "Jino Poto Warra, the hero sent into the underworld",
+      "alt": [
+        "Jinopotowarra",
+        "Jino Poto Warra"
+      ],
+      "transliterations": {
+        "emb": "Jino Poto Warra",
+        "etymology": "Emberá warra 'son, child'; the name is glossed 'child of the leg/calf' (Bioetnia 2011)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Embera",
+    "primaryTradition": "Embera",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "embera_karagabi"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "Embera traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Embera traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Emberá myth relates that Karagabí created Jino Poto Warra to carry out feats in the underworld of Tutruicá and to free the Emberá from its dangers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, Instituto de Investigaciones Ambientales del Pacífico (IIAP), Quibdó, 2011."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Isacsson, Sven-Erik. Transformations of Eternity: On Man and Cosmos in Emberá Thought. Gothenburg: University of Gothenburg, 1993."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heroic-deliverance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, IIAP, Quibdó, 2011."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deliver_from_underworld",
+        "name": "to rescue the Emberá from the dangers of the underworld",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Charged by Karagabí to accomplish feats in the domain of Tutruicá.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, IIAP, Quibdó, 2011."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "embera_jinopotaba",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, IIAP, Quibdó, 2011."
+          }
+        ],
+        "notes": "Both are Jino-Poto beings who cross between the worlds; the sources treat them together within the same mythic complex."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Jino Poto Warra is a hero created by Karagabí to perform feats in Tutruicá's underworld and deliver the Emberá from its dangers.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Mitología embera. Principales mitos, características y funciones. Revista Bioetnia, vol. 8, no. 1, Instituto de Investigaciones Ambientales del Pacífico (IIAP), Quibdó, 2011."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Isacsson, Sven-Erik. Transformations of Eternity: On Man and Cosmos in Emberá Thought. Gothenburg: University of Gothenburg, Department of Social Anthropology, 1993."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Jino Poto Warra, whose name is glossed 'child of the leg/calf,' is a hero created by Karagabí to descend into the underworld domain of Tutruicá and accomplish feats there, delivering Emberá people from the dangers of that lower realm. He belongs to the same family of Jino-Poto world-crossing beings as the crab-healer Jinopotabá, and his mission expresses the ongoing rivalry between Karagabí's ordered world and Tutruicá's underworld."
+  }
+]
+```

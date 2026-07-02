@@ -1,0 +1,571 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Yi
+Era (registered, exact): "Yi traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four individuated, well-attested figures beyond the existing four, each wired into the pantheon: Pumo Hniyyr, the weaving virgin-mother of the hero Zhyge Alu (mother-of yi_zhyge_alu); Qobu Jjumu, the ancestral patriarch and father of the flood survivor (father-of yi_jjumu_vuvu); and the bimo pair Asu Lazzi (Ashy Lazzi), an eminent ancestral priest, and his daughter Lazzi Shysi, the one woman remembered to have practiced as a bimo in male disguise. All rest on the University of Washington Press translation of the Book of Origins (Bender, Aku Wuwu, Zopqu 2019), Bender's "Tribes of Snow" (2008), Bamo Qubumo's Oral Tradition study (2001), and the Liangshan bimo ethnographies of Bamo Ayi (2001; Fieldwork Connections 2007) supported by Kraef (2014). I deliberately excluded the Torch Festival wrestlers Atilaba and Sireabi: although the wrestling contest is attested, the surviving accounts of those named champions are Sinicized/pan-Yi and lack the two clean Nuosu-specific scholarly citations this dataset requires, so padding with them would have lowered rigor.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "yi_pumo_hniyyr",
+    "name": {
+      "primary": "Pumo Hniyyr",
+      "alt": [
+        "Pupmop Hnixyyr",
+        "Pumo Hnixyyr",
+        "Pumo Hniyyr"
+      ],
+      "transliterations": {
+        "nuosu": "Pupmop Hnixyyr",
+        "etymology": "Romanized Nuosu name of the weaving woman who becomes the virgin mother of the culture hero Zhyge Alu in the Book of Origins; rendered Pupmop Hnixyyr in Bender's study of the epic and Pumo Hniyyr in the University of Washington Press translation."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Yi",
+    "primaryTradition": "Yi",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Yi traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Yi traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "As she sits weaving under the eaves of her house, three drops of blood from eagles and dragon-eagles wheeling overhead fall upon her, and she conceives the strange child who will become the hero Zhyge Alu.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-and-progenitors",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          }
+        ]
+      },
+      {
+        "sphereId": "miraculous-birth",
+        "contextTag": "episodic",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark. \"Tribes of Snow: Animals and Plants in the Nuosu Book of Origins.\" Asian Ethnology 67, no. 1 (2008): 5-42."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "conceive_hero_from_celestial_blood",
+        "name": "to conceive the culture hero from drops of eagle and dragon-eagle blood",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The epic frames the hero's birth as a miraculous conception: three drops of blood from the raptors circling above fall on the weaving woman and quicken her with the dragon-eagle child.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Pupmop Hnixyyr",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark. \"Tribes of Snow: Animals and Plants in the Nuosu Book of Origins.\" Asian Ethnology 67, no. 1 (2008): 5-42."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "yi_zhyge_alu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          }
+        ],
+        "notes": "She is the weaving woman upon whom the drops of dragon-eagle blood fall, and so the mother of the hero Zhyge Alu, whom she later places in a cave to be raised by dragons."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Pumo Hniyyr is the weaving woman of the Nuosu Book of Origins who miraculously conceives the culture hero Zhyge Alu when drops of eagle and dragon-eagle blood fall upon her, and who, unable to nurse the strange child, gives him over to be reared by dragons.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark. \"Tribes of Snow: Animals and Plants in the Nuosu Book of Origins.\" Asian Ethnology 67, no. 1 (2008): 5-42."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pumo Hniyyr is the mother of the great Nuosu culture hero Zhyge Alu in the Hnewo Teyy (Book of Origins). She is introduced weaving under the eaves of her house when three drops of blood shed by eagles and dragon-eagles wheeling overhead fall upon her, whereupon she conceives. The child she bears is so strange-natured that he refuses her milk, her bed, and the clothes she weaves for him, and, unable to keep him, she places him in a cave where dragons rear him, giving him the dragon-element in his name. As the mortal woman through whom the sky's raptor-blood enters the world, Pumo Hniyyr stands at the threshold of the epic's heroic age, the human mother of a half-celestial son."
+  },
+  {
+    "id": "yi_asu_lazzi",
+    "name": {
+      "primary": "Asu Lazzi",
+      "alt": [
+        "Ashy Lazzi",
+        "Asu Laze",
+        "Aci Lazi"
+      ],
+      "transliterations": {
+        "nuosu": "Ashy Lazzi",
+        "etymology": "Romanized Nuosu name of the eminent ancestral bimo (ritual priest); rendered Asu Laze / Ashy Lazzi in the ethnographic literature on Liangshan bimo lineages, whose descent is recited in Nuosu genealogies."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Yi",
+    "primaryTradition": "Yi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Yi traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Yi traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Remembered as one of the great masters at the head of the bimo lineages of Liangshan, Asu Lazzi commands the highest and most powerful of the ritual scriptures and transmits them along his patriline.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi. \"On the Nature and Transmission of Bimo Knowledge in Liangshan.\" In Perspectives on the Yi of Southwest China, edited by Stevan Harrell, 118-131. Berkeley: University of California Press, 2001."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "priesthood-and-ritual",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bimo",
+          "script": "Latin (Nuosu romanization)",
+          "rom": "bimo (ritual priest)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi. \"On the Nature and Transmission of Bimo Knowledge in Liangshan.\" In Perspectives on the Yi of Southwest China, edited by Stevan Harrell, 118-131. Berkeley: University of California Press, 2001."
+          }
+        ]
+      },
+      {
+        "sphereId": "exorcism-and-demon-quelling",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ]
+      },
+      {
+        "sphereId": "sacred-knowledge-and-scripture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kraef, Olivia. \"Of Canons and Commodities: The Cultural Predicaments of Nuosu-Yi 'Bimo Culture.'\" Journal of Current Chinese Affairs 43, no. 2 (2014): 145-179."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "master_highest_bimo_scriptures",
+        "name": "to master and transmit the highest and most powerful ritual scriptures",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "patrilineal",
+        "notes": "As an exemplary bimo, he embodies the ideal of long apprenticeship and the patrilineal handing-down of the ritual canon.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi. \"On the Nature and Transmission of Bimo Knowledge in Liangshan.\" In Perspectives on the Yi of Southwest China, edited by Stevan Harrell, 118-131. Berkeley: University of California Press, 2001."
+          }
+        ]
+      },
+      {
+        "id": "suppress_demons_and_banish_ghosts",
+        "name": "to suppress demons and banish malevolent ghosts",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The eminent bimo is credited with the power to subdue demons, drive off ghosts, and deliver people from calamity.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Asu Laze",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "yi_lazzi_shysi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ],
+        "notes": "His daughter Lazzi Shysi learns the highest bimo arts from him, the sole woman remembered to have practiced as a bimo."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Asu Lazzi (Ashy Lazzi) is an eminent ancestral bimo of the Nuosu of Liangshan, master of the most powerful ritual scriptures, remembered at the head of bimo lineages and as the father of the exceptional female bimo Lazzi Shysi.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi. \"On the Nature and Transmission of Bimo Knowledge in Liangshan.\" In Perspectives on the Yi of Southwest China, edited by Stevan Harrell, 118-131. Berkeley: University of California Press, 2001."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Asu Lazzi, in Nuosu form Ashy Lazzi, is one of the great ancestral bimo of the Yi of Liangshan, the hereditary priests who chant the Book of Origins and the ritual scriptures at rites of passage, exorcisms, and funerals. He is remembered as a master of the highest and most complicated classics, able to suppress demons and banish ghosts, and his descent is among the bimo genealogies preserved in Nuosu tradition. Bimo learning passes patrilineally from father to son through long apprenticeship, and Asu Lazzi stands as an emblem of that ideal. He is best known through his daughter Lazzi Shysi, who learned his arts and became the one woman remembered to have practiced as a bimo."
+  },
+  {
+    "id": "yi_lazzi_shysi",
+    "name": {
+      "primary": "Lazzi Shysi",
+      "alt": [
+        "Lazzi Shysse",
+        "Lanzy Shysse"
+      ],
+      "transliterations": {
+        "nuosu": "Lazzi Shysi",
+        "etymology": "Romanized Nuosu name of the daughter of the bimo Asu Lazzi; the name carries the paternal element Lazzi, marking her descent within the bimo lineage."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Yi",
+    "primaryTradition": "Yi",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "yi_asu_lazzi"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "Yi traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Yi traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Learning the highest bimo arts from her father Asu Lazzi, she practices as a bimo while dressed in men's clothing, until her disguise is discovered because both of her ears are pierced.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "priesthood-and-ritual",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bimo",
+          "script": "Latin (Nuosu romanization)",
+          "rom": "bimo (ritual priest)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ]
+      },
+      {
+        "sphereId": "exorcism-and-demon-quelling",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi. \"On the Nature and Transmission of Bimo Knowledge in Liangshan.\" In Perspectives on the Yi of Southwest China, edited by Stevan Harrell, 118-131. Berkeley: University of California Press, 2001."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "suppress_demons_rescue_people",
+        "name": "to suppress demons, banish ghosts, and rescue people from calamity",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Having mastered the most powerful classics, she is credited with subduing demons, driving off ghosts, and saving people from dangerous accidents.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ]
+      },
+      {
+        "id": "perform_bimo_rites_in_disguise",
+        "name": "to perform the priestly rites while disguised in men's clothing",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Barred as a woman from the priesthood, she practiced only by dressing as a man, until the double piercing of her ears betrayed her, men customarily piercing only the left earlobe.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Lazzi Shysi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Lazzi Shysi is the daughter of the eminent bimo Asu Lazzi and the sole woman remembered in Nuosu tradition to have practiced as a bimo, doing so disguised in men's clothing until her double-pierced ears revealed her.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi, Stevan Harrell, and Ma Lunzy. Fieldwork Connections: The Fabric of Ethnographic Collaboration in China and America. Seattle: University of Washington Press, 2007."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bamo Ayi. \"On the Nature and Transmission of Bimo Knowledge in Liangshan.\" In Perspectives on the Yi of Southwest China, edited by Stevan Harrell, 118-131. Berkeley: University of California Press, 2001."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Lazzi Shysi is the storied daughter of the great bimo Asu Lazzi and the one woman remembered in Nuosu tradition to have practiced the hereditary priesthood. Because bimo knowledge passes exclusively down the male line, and women are barred from touching the ritual instruments, she could only serve by dressing in men's clothing. Having learned the highest arts from her father, she is said to have understood the most powerful and complicated classics, to have suppressed demons and banished ghosts, and to have rescued people from disaster. Her true identity was at last exposed because both of her ears were pierced, whereas Nuosu men pierce only the left earlobe, and she was forced to give up her practice. She survives as the singular exception invoked whenever the question of women and the bimo vocation is raised."
+  },
+  {
+    "id": "yi_qobu_jjumu",
+    "name": {
+      "primary": "Qobu Jjumu",
+      "alt": [
+        "Qoholo Jjumu",
+        "Gubu Jjumu"
+      ],
+      "transliterations": {
+        "nuosu": "Qobu Jjumu",
+        "etymology": "Romanized Nuosu name of the ancestral patriarch of the Book of Origins, father of the three brothers of the flood generation; the flood survivor Jjumu Vuvu carries the paternal element Jjumu in his name."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Yi",
+    "primaryTradition": "Yi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Yi traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Yi traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Standing in the genealogy of the epic as the patriarch of the flood generation, Qobu Jjumu fathers three sons, of whom the youngest, Jjumu Vuvu, alone will survive the world-destroying deluge.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-and-progenitors",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "father_the_flood_generation",
+        "name": "to father the three brothers whose fates divide at the great flood",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His three sons meet the deluge with vessels of different make, and only the youngest, in his wooden chest, comes through to continue the human line.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bamo Qubumo. \"Traditional Nuosu Origin Narratives: A Case Study of Ritualized Epos in Bimo Incantation Scriptures.\" Oral Tradition 16, no. 2 (2001): 453-479."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Qobu Jjumu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "yi_jjumu_vuvu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          }
+        ],
+        "notes": "He is named as the father of Jjumu Vuvu, the youngest of his three sons and the sole survivor of the flood."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Qobu Jjumu is the ancestral patriarch of the flood generation in the Nuosu Book of Origins, father of three brothers of whom the youngest, Jjumu Vuvu, alone survives the great flood to continue the human line.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bender, Mark, Aku Wuwu, and Jjivot Zopqu, trans. The Nuosu Book of Origins: A Creation Epic from Southwest China. Seattle: University of Washington Press, 2019."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bamo Qubumo. \"Traditional Nuosu Origin Narratives: A Case Study of Ritualized Epos in Bimo Incantation Scriptures.\" Oral Tradition 16, no. 2 (2001): 453-479."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Qobu Jjumu is the ancestral patriarch who stands at the hinge of the mythic and human ages in the Nuosu Book of Origins. In the genealogy chanted by the bimo he fathers three sons, and it is his youngest, Jjumu Vuvu, who, warned of the coming deluge, seals himself in a wooden chest and survives while his brothers, trusting vessels of iron and bronze, perish. Through this surviving son and the son's celestial marriage the human clans descend, so that Qobu Jjumu is remembered as the father of the flood generation from whom the reckoning of Nuosu ancestry proceeds."
+  }
+]
+```

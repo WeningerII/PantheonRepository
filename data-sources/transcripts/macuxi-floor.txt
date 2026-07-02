@@ -1,0 +1,564 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Macuxi
+Era (registered, exact): "mythic-prehistoric"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four individuated figures completing the documented Macuxi cycle around the existing Insikiran: Makunaima (trickster-demiurge brother, Koch-Grünberg 1924; im Thurn 1883; Sá 2004), Wei the Sun as divine father (Koch-Grünberg 1924; Farage 1991), Anikê, the third brother named with Makunaima and Insikiran in the Macuxi erenkon songs (Farage 1991; Santilli 2001), and Piai'mã, the cannibal giant/'great shaman' adversary of the circum-Roraima corpus. Generic spirit-classes such as the canaimé were deliberately excluded as non-individuated. Sources checked: Koch-Grünberg's Vom Roraima zum Orinoco II, Farage's As Muralhas dos Sertões, Santilli's Pemongon Patá, im Thurn's Among the Indians of Guiana, and Sá's Rain Forest Literatures.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "macuxi_makunaima",
+    "name": {
+      "primary": "Makunaima (Macuxi recension)",
+      "alt": [
+        "Makunaimî",
+        "Macunaima",
+        "Makonaima",
+        "Makunaíma"
+      ],
+      "transliterations": {
+        "mkx": "Makunaimî",
+        "etymology": "Commonly analysed as a Carib compound often glossed 'the great evil one' or 'he who works in the dark' (maku 'evil/bad' + -ima augmentative), per Koch-Grünberg, Vom Roraima zum Orinoco II (1924) and Lúcia Sá, Rain Forest Literatures (2004)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Macuxi",
+    "primaryTradition": "Macuxi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "macuxi_wei"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Born as a son of the Sun (Wei) in the circum-Roraima creation cycle, in which he fells the world-tree Wazaká whose stump becomes Mount Roraima (Koch-Grünberg, Vom Roraima zum Orinoco II, 1924).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II: Mythen und Legenden der Taulipang- und Arekuná-Indianern, Stuttgart: Strecker und Schröder, 1924"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Wazaká",
+          "script": "Latin",
+          "rom": "the world-tree of all cultivated plants whose felling he caused"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ]
+      },
+      {
+        "sphereId": "trickery",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lúcia Sá, Rain Forest Literatures: Amazonian Texts and Latin American Culture, University of Minnesota Press, 2004"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "transform_beings_and_landscape",
+        "name": "to transform people, animals and features of the landscape into stone and other forms",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ]
+      },
+      {
+        "id": "create_fire_and_disease",
+        "name": "to bring fire and also diseases into the world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nádia Farage, As Muralhas dos Sertões: os povos indígenas no rio Branco e a colonização, Rio de Janeiro: Paz e Terra/ANPOCS, 1991"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "macuxi_wazaka_axe",
+        "name": "Stone axe used to fell the Wazaká tree",
+        "kind": "tool",
+        "role": "instrument of the felling of the world-tree that produced Mount Roraima and the flood",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "macuxi_anike",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nádia Farage, As Muralhas dos Sertões, 1991"
+          }
+        ],
+        "notes": "The old Macuxi songs (erenkon) name Makunaima, Anikê and Insikiran together as the brother heroes of the beginning-time."
+      },
+      {
+        "kind": "enemy",
+        "personId": "macuxi_piaima",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ],
+        "notes": "In the circum-Roraima cycle Makunaima and his brothers are repeatedly pursued by, and finally destroy, the cannibal giant Piai'mã."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Makunaima is the trickster-demiurge son of the Sun in the Macuxi and circum-Roraima Carib creation cycle, feller of the world-tree Wazaká and shaper of the landscape.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II: Mythen und Legenden der Taulipang- und Arekuná-Indianern, 1924"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Everard im Thurn, Among the Indians of Guiana, London: Kegan Paul, 1883"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lúcia Sá, Rain Forest Literatures: Amazonian Texts and Latin American Culture, 2004"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Makunaima (Macuxi Makunaimî) is the most widely attested figure of the Carib-speaking peoples of the Guiana Highlands. Among the Macuxi he is remembered as a son of the Sun and brother of Insikiran and Anikê; his deeds include the discovery and felling of the world-tree Wazaká, whose petrified stump is Mount Roraima, the release of cultivated plants, and a long series of trickster episodes in which he transforms people and animals into the rocks of the savanna. Colonial and ethnographic sources note his ambivalence: he brings fire and food plants but also hardship and disease. His name was famously borrowed by Mário de Andrade for the 1928 Brazilian novel Macunaíma."
+  },
+  {
+    "id": "macuxi_wei",
+    "name": {
+      "primary": "Wei, the Sun",
+      "alt": [
+        "Wéi",
+        "Wei Kaikusé"
+      ],
+      "transliterations": {
+        "mkx": "wei",
+        "etymology": "wei is the ordinary Macuxi/Pemon word for 'sun' and 'day' (Koch-Grünberg, Vom Roraima zum Orinoco, 1924)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Macuxi",
+    "primaryTradition": "Macuxi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Present from the beginning-time as the Sun who fathers the culture-hero brothers of the circum-Roraima cycle (Koch-Grünberg, Vom Roraima zum Orinoco II, 1924).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "wei",
+          "script": "Latin",
+          "rom": "sun, day"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "engender_culture_heroes",
+        "name": "to engender the hero brothers who shape the world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nádia Farage, As Muralhas dos Sertões, 1991"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "macuxi_insikiran",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nádia Farage, As Muralhas dos Sertões, 1991"
+          }
+        ],
+        "notes": "Macuxi oral tradition holds the people to descend from the Sun's children, Insikiran and his brothers."
+      },
+      {
+        "kind": "father-of",
+        "personId": "macuxi_makunaima",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ],
+        "notes": "Makunaima is 'son of the Sun' throughout the circum-Roraima narratives."
+      },
+      {
+        "kind": "father-of",
+        "personId": "macuxi_anike",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paulo Santilli, Pemongon Patá: Território Macuxi, rotas de conflito, São Paulo: Editora UNESP, 2001"
+          }
+        ],
+        "notes": "Anikê is named among the brother heroes of the beginning-time descended from the Sun."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Wei, the Sun, is the divine father of the Macuxi culture-hero brothers Makunaima, Insikiran and Anikê, from whom the Macuxi trace their descent.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II: Mythen und Legenden der Taulipang- und Arekuná-Indianern, 1924"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nádia Farage, As Muralhas dos Sertões: os povos indígenas no rio Branco e a colonização, 1991"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Wei, the Sun, stands at the head of Macuxi mythical genealogy. Koch-Grünberg's circum-Roraima corpus opens with the Sun's dealings with the water-spirit woman and the birth of the hero brothers, and later Macuxi ethnography (Farage 1991; Santilli 2001) records that the Macuxi consider themselves descendants of the Sun's children. Wei also figures in his own narrative episodes, such as his capture of the water maiden and his conflicts with the beings of the dark."
+  },
+  {
+    "id": "macuxi_anike",
+    "name": {
+      "primary": "Anikê",
+      "alt": [
+        "Aniquê",
+        "Anike"
+      ],
+      "transliterations": {
+        "mkx": "Anikê",
+        "etymology": "A Macuxi personal name of the beginning-time preserved in the erenkon song corpus; no secure etymology is offered in the sources (Farage 1991; Santilli 2001)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Macuxi",
+    "primaryTradition": "Macuxi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "macuxi_wei"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Belongs to the beginning-time generation of hero brothers celebrated in the old Macuxi songs (erenkon) alongside Makunaima and Insikiran (Farage, As Muralhas dos Sertões, 1991).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nádia Farage, As Muralhas dos Sertões: os povos indígenas no rio Branco e a colonização, 1991"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-song",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "erenkon",
+          "script": "Latin",
+          "rom": "the old songs in which his deeds are sung"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paulo Santilli, Pemongon Patá: Território Macuxi, rotas de conflito, 2001"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_ancestral_order",
+        "name": "to establish, with his brothers, the ways of the first people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nádia Farage, As Muralhas dos Sertões, 1991"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "macuxi_makunaima",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nádia Farage, As Muralhas dos Sertões, 1991"
+          }
+        ],
+        "notes": "The erenkon name Makunaima, Anikê and Insikiran together as the brother heroes of the beginning-time."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Anikê is one of the trio of ancestral hero brothers, sons of the Sun, whose deeds the Macuxi celebrated in their traditional erenkon songs together with Makunaima and Insikiran.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Nádia Farage, As Muralhas dos Sertões: os povos indígenas no rio Branco e a colonização, Rio de Janeiro: Paz e Terra/ANPOCS, 1991"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paulo Santilli, Pemongon Patá: Território Macuxi, rotas de conflito, São Paulo: Editora UNESP, 2001"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Anikê is the least narratively developed of the three Macuxi hero brothers, but he is consistently and specifically named in the ethnographic record: the old Macuxi songs (erenkon) are described as the songs 'of Makunaima, Anikê and Insikiran'. He thus belongs, with his brothers, to the founding generation of sons of the Sun from whom the Macuxi trace their origin."
+  },
+  {
+    "id": "macuxi_piaima",
+    "name": {
+      "primary": "Piai'mã",
+      "alt": [
+        "Piaimã",
+        "Piai'ma",
+        "Piaima"
+      ],
+      "transliterations": {
+        "mkx": "Piai'mã",
+        "etymology": "Understood as an augmentative of piai'san / piatzan 'shaman': 'great shaman', the ogre-shaman of the circum-Roraima cycle (Koch-Grünberg 1924; Sá 2004)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Macuxi",
+    "primaryTradition": "Macuxi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Appears in the beginning-time as the man-eating giant and first master of shamanic power who pursues the sons of the Sun (Koch-Grünberg, Vom Roraima zum Orinoco II, 1924).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "shamanic-power",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "piai'san",
+          "script": "Latin",
+          "rom": "shaman (the root of his name)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lúcia Sá, Rain Forest Literatures: Amazonian Texts and Latin American Culture, 2004"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_humans",
+        "name": "to hunt and devour human beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ]
+      },
+      {
+        "id": "wield_shamanic_arts",
+        "name": "to wield the original arts and chants of the shaman, later taken from him by the hero brothers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lúcia Sá, Rain Forest Literatures, 2004"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "macuxi_piaima_basket",
+        "name": "Carrying basket in which he hauls off his human prey",
+        "kind": "emblem",
+        "role": "signature attribute in the pursuit episodes of the hero cycle",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "macuxi_makunaima",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II, 1924"
+          }
+        ],
+        "notes": "Piai'mã hunts the hero brothers, kills and dismembers Makunaima (who is revived), and is finally destroyed by fire in his own house."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Piai'mã is the man-eating giant and archetypal 'great shaman' of the circum-Roraima Carib cycle, adversary of Makunaima and his brothers and the source from whom shamanic knowledge passed to humans.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Theodor Koch-Grünberg, Vom Roraima zum Orinoco, Bd. II: Mythen und Legenden der Taulipang- und Arekuná-Indianern, 1924"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lúcia Sá, Rain Forest Literatures: Amazonian Texts and Latin American Culture, University of Minnesota Press, 2004"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Piai'mã ('great shaman') is the ogre of the Makunaima cycle shared by the Macuxi, Taurepang and Arekuna of the circum-Roraima region. A cannibal giant who carries victims off in his basket, he kills and cuts up Makunaima, who is restored to life by his brothers; the heroes in turn trick and destroy Piai'mã, and in some tellings the powers and chants of shamanism derive from him. The figure entered Brazilian literature as the giant Piaimã of Mário de Andrade's Macunaíma."
+  }
+]
+```

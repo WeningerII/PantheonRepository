@@ -1,0 +1,452 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Desana
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three individuated Desana supernaturals that Reichel-Dolmatoff's ethnographies consistently name as distinct "divine personifications" created by the Sun-Father, alongside the already-registered Emëkóri-mahsë and Vaí-mahsë: Vihó-mahsë (the snuff-being who dwells in the Milky Way and mediates all shamanic contact), Ñamíri-mahsë (the Night People, agents of witchcraft and the punitive/evil principle, explicit counterpart of the existing Day People), and Diróa-mahsë (the Blood People, who with the Day People uphold the principle of good). Each is wired to the existing pantheon via a subordinate-to relation to desana_sun_father, since the sources present all of them as ordained by the Sun. I stopped at three because the remaining figures in the corpus (Sun-Father, Master of Animals, Maker of Humanity, Daughter of the Sun) are already present, and other Desana narrative beings (e.g. the Moon or an unnamed "Son of the Sun") lack a securely attested individuated name in the accessible scholarship; padding with them would be speculative. Sources consulted: Reichel-Dolmatoff, Amazonian Cosmos (1971), The Shaman and the Jaguar (1975), Desana: Simbolismo de los indios tukano del Vaupés (1968), and Buchillet's "Nobody is There to Hear" (1992).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "desana_viho_mahse",
+    "name": {
+      "primary": "Vihó-mahsë",
+      "alt": [
+        "Viho-mahse",
+        "Vihó-mahsú",
+        "Snuff Person",
+        "Master of Vihó"
+      ],
+      "transliterations": {
+        "Desana": "Vihó-mahsë",
+        "etymology": "From vihó, the hallucinogenic snuff prepared from Virola resin, plus mahsë 'person, being'; hence 'the snuff-person' (Reichel-Dolmatoff, Amazonian Cosmos, 1971)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Desana",
+    "primaryTradition": "Desana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the primordial creation the Sun-Father brought forth Vihó-mahsë, the being of the hallucinogenic snuff, and set him to dwell in the Milky Way in a permanent trance as the intermediary through whom shamans reach the spirit world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "visionary-trance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vihó",
+          "script": "Latin",
+          "rom": "hallucinogenic Virola snuff"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, The Shaman and the Jaguar: A Study of Narcotic Drugs Among the Indians of Colombia (Philadelphia: Temple University Press, 1975)."
+          }
+        ]
+      },
+      {
+        "sphereId": "shamanic-mediation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mahsë",
+          "script": "Latin",
+          "rom": "person, being"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "open_spirit_doorway",
+        "name": "to serve as the intermediary between shamans and the other divine beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The paye, having taken earthly vihó, ascends to the Milky Way and asks Vihó-mahsë to mediate with Emëkóri-mahsë, Diróa-mahsë or Vaí-mahsë.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, The Shaman and the Jaguar: A Study of Narcotic Drugs Among the Indians of Colombia (Philadelphia: Temple University Press, 1975)."
+          }
+        ]
+      },
+      {
+        "id": "induce_visionary_trance",
+        "name": "to open visionary trance through the hallucinogenic snuff",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "desana_viho_snuff",
+        "name": "Vihó snuff",
+        "kind": "emblem",
+        "role": "The powdered hallucinogenic snuff, prepared from the resin of Virola trees, that is his earthly substance and the shaman's means of reaching him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, The Shaman and the Jaguar: A Study of Narcotic Drugs Among the Indians of Colombia (Philadelphia: Temple University Press, 1975)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "desana_sun_father",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ],
+        "notes": "Created by the Sun-Father and stationed in the Milky Way to serve as his intermediary with mankind."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Vihó-mahsë is the Desana personification of the hallucinogenic snuff vihó, a divine being who dwells in the Milky Way and serves as the shaman's intermediary with the other supernaturals.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, The Shaman and the Jaguar: A Study of Narcotic Drugs Among the Indians of Colombia (Philadelphia: Temple University Press, 1975)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Vihó-mahsë, the 'snuff-person', is the Desana personification of vihó, the hallucinogenic snuff made from the resin of Virola trees. Created by the Sun-Father, he lives in the 'blue zone' of the Milky Way in a state of permanent trance. When a Desana shaman (paye) takes earthly vihó he ascends in vision to this region and must first make contact with Vihó-mahsë, who then serves as the intermediary through whom the shaman may consult the other divine beings such as Emëkóri-mahsë, Diróa-mahsë and Vaí-mahsë. He thus governs the whole apparatus of visionary communication between the human and supernatural worlds."
+  },
+  {
+    "id": "desana_namiri_mahse",
+    "name": {
+      "primary": "Ñamíri-mahsë",
+      "alt": [
+        "Nyamíri-mahsë",
+        "Nyamikëri-mahsë",
+        "Night People",
+        "Night Beings"
+      ],
+      "transliterations": {
+        "Desana": "Ñamíri-mahsë",
+        "etymology": "From ñamí 'night' plus mahsë 'person, being'; hence 'the Night People', the nocturnal counterpart of the Day People, Emëkóri-mahsë (Reichel-Dolmatoff, Amazonian Cosmos, 1971)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Desana",
+    "primaryTradition": "Desana",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the primordial ordering of the world the Sun-Father created the Night People and placed them in the Dark Region west of the paradise Ahpikondiá, giving them the task of serving as intermediaries of witchcraft and sorcery.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "night",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ñamí",
+          "script": "Latin",
+          "rom": "night"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      },
+      {
+        "sphereId": "sorcery",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mahsë",
+          "script": "Latin",
+          "rom": "person, being"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Desana: Simbolismo de los indios tukano del Vaupés (Bogotá: Universidad de los Andes, 1968)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "act_as_agents_of_sorcery",
+        "name": "to serve as the intermediaries of witchcraft and sorcery",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "They embody the principle of evil that the Sun-Father also created, in balance with the beneficent Day People.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      },
+      {
+        "id": "punish_breakers_of_tradition",
+        "name": "to punish people who fail to follow ancestral custom",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "desana_sun_father",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ],
+        "notes": "Created by the Sun-Father and assigned to the Dark Region as agents of the punitive, evil principle."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ñamíri-mahsë, the 'Night People', are the Desana supernatural beings created by the Sun to dwell in the western Dark Region and to act as intermediaries of witchcraft and sorcery, the counterpart of the beneficent Day People.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Desana: Simbolismo de los indios tukano del Vaupés (Bogotá: Universidad de los Andes, 1968)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Ñamíri-mahsë or 'Night People' are the nocturnal personifications that the Sun-Father created and placed in the Dark Region to the west of Ahpikondiá. They are the deliberate counterpart of the Day People, Emëkóri-mahsë: because the Sun created not only the principle of good but also that of evil, the Night People were charged with serving as the intermediaries of witchcraft and sorcery and with punishing humans who abandon the customs of tradition. In the dualistic Desana cosmos they thus balance the beneficent daytime beings, and shamanic aggression is understood as drawing upon their agency."
+  },
+  {
+    "id": "desana_diroa_mahse",
+    "name": {
+      "primary": "Diróa-mahsë",
+      "alt": [
+        "Diroa-mahse",
+        "Diroá-mahsá",
+        "Blood People",
+        "Blood Beings"
+      ],
+      "transliterations": {
+        "Desana": "Diróa-mahsë",
+        "etymology": "From diró 'blood' plus mahsë 'person, being'; the 'Blood People', associated with vital blood-energy and, with Emëkóri-mahsë, with the principle of good (Reichel-Dolmatoff, Amazonian Cosmos, 1971)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Desana",
+    "primaryTradition": "Desana",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Among the divine beings established by the Sun-Father in the primordial world are the Diróa-mahsë, the Blood People, who together with the Day People uphold the principle of good and are summoned by shamans as benevolent intermediaries.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "benevolence",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "diró",
+          "script": "Latin",
+          "rom": "blood, vital energy"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      },
+      {
+        "sphereId": "health-vitality",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mahsë",
+          "script": "Latin",
+          "rom": "person, being"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dominique Buchillet, 'Nobody is There to Hear: Desana Therapeutic Incantations', in Portals of Power: Shamanism in South America, ed. E. Jean Matteson Langdon and Gerhard Baer (Albuquerque: University of New Mexico Press, 1992)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "uphold_principle_of_good",
+        "name": "to uphold the principle of good in the cosmos",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "With Emëkóri-mahsë they form the benevolent pole set against the Night People.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ]
+      },
+      {
+        "id": "answer_shamanic_summons",
+        "name": "to answer the shaman as a benevolent supernatural intermediary",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Contacted by the paye through Vihó-mahsë in the Milky Way.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, The Shaman and the Jaguar: A Study of Narcotic Drugs Among the Indians of Colombia (Philadelphia: Temple University Press, 1975)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "desana_sun_father",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          }
+        ],
+        "notes": "One of the divine personifications ordained by the Sun-Father, representing the principle of good."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Diróa-mahsë, the 'Blood People', are Desana divine personifications associated with blood and vital energy who, alongside the Day People, embody the principle of good and are approached by shamans as benevolent intermediaries.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gerardo Reichel-Dolmatoff, The Shaman and the Jaguar: A Study of Narcotic Drugs Among the Indians of Colombia (Philadelphia: Temple University Press, 1975)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Diróa-mahsë, or 'Blood People', are among the divine personifications that Reichel-Dolmatoff records the Sun-Father as having established. Named from diró, 'blood', they are linked with the life-giving blood-energy that the Desana associate with health and, together with the Day People (Emëkóri-mahsë), they consistently represent the principle of good, standing in contrast to the sorcerous Night People. In shamanic practice the paye reaches them, like the other beneficent supernaturals, through the mediation of Vihó-mahsë in the Milky Way, calling upon them in the healing and protective dimension of Desana cosmology."
+  }
+]
+```

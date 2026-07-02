@@ -1,0 +1,426 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Bribri-Cabécar
+Era (registered, exact): "Bribri-Cab\u00e9car traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added three individuated, well-attested figures from the Talamancan (Bribri-Cabécar) creation cycle that individuate the existing set: Nãmãitãmĩ (the Tapir-woman, sister of Sibö and mother of the earth-girl Irìria), her mother Namásia / Makeur Siau (the underworld grandmother and counsellor), and Dukúr Bulú (the first great bat whose blood-drinking and revelation of the hidden path enable the earth's creation). Each is wired into the existing pantheon via parentage and directed relations to Iriria and Sulá, forming the maternal underworld lineage behind Iriria's transformation. All three are documented in Jara & García's 'Diccionario de mitología bribri' (2003), Constenla Umaña's 'Laca majifijca' (1993), Bozzoli de Wille (1979), and González Chaves & González Vásquez (1989). I deliberately excluded the omen-monsters born from Sórkura's dismembered body (wáyuk, Ùruksura, Àiáksura) as derivative portent-signs rather than individuated divine or ancestral beings.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "bribri_cabecar_namaitami",
+    "name": {
+      "primary": "Nãmãitãmĩ, the Tapir-woman, mother of the earth-girl",
+      "alt": [
+        "Namaitamí",
+        "Namaĩtãmĩ",
+        "Nãmãitãmĩ",
+        "the Danta (Tapir)"
+      ],
+      "transliterations": {
+        "bribri": "Nãmãitãmĩ",
+        "etymology": "Built on the Bribri root namã 'tapir (danta)', the animal whose form she embodies (Jara & García 2003)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bribri-Cabécar",
+    "primaryTradition": "Bribri-Cabécar",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "bribri_cabecar_namasia"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "Bribri-Cabécar traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bribri-Cabécar traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Talamancan creation account Nãmãitãmĩ is the Tapir-woman, a sister of the creator Sibö, who dwells in the underworld and there gives birth to the girl-child destined to become the earth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tapir-and-game-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "namã",
+          "script": "Latin",
+          "rom": "tapir (danta)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      },
+      {
+        "sphereId": "earth-and-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "iríria",
+          "script": "Latin",
+          "rom": "earth"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Constenla Umaña, Adolfo (ed.), 'Laca majifijca: la transformación de la tierra', San José: Editorial de la Universidad de Costa Rica, 1993."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear_the_earth_girl",
+        "name": "to give birth to the girl-child who becomes the earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the Tapir-woman she is mother of Irìria (Sulára among the Cabécar), from whose trampled body the fertile earth is formed.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Constenla Umaña, Adolfo (ed.), 'Laca majifijca: la transformación de la tierra', San José: Editorial de la Universidad de Costa Rica, 1993."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Nãmãitãmĩ",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "bribri_cabecar_iriria",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bozzoli de Wille, María Eugenia, 'El nacimiento y la muerte entre los bribris', San José: Editorial de la Universidad de Costa Rica, 1979."
+          }
+        ],
+        "notes": "The Tapir-woman is the mother of the earth-girl Irìria, whom Sibö takes from the underworld so that the world may be made."
+      },
+      {
+        "kind": "consort-of",
+        "personId": "bribri_cabecar_sula",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ],
+        "notes": "In the accounts collected by Talamancan ethnographers the earth-girl is named as the daughter of Sulá and Nãmãitãmĩ, making Sulá her co-parent."
+      },
+      {
+        "kind": "enemy",
+        "personId": "bribri_cabecar_dukur_bulu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ],
+        "notes": "The great bat Dukúr Bulú is reckoned an enemy of her household because each night he draws off the blood of her sleeping daughter."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nãmãitãmĩ is the Tapir-woman of Talamancan mythology, a sister of the creator Sibö and, with Sulá, mother of the girl-child who becomes the earth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Constenla Umaña, Adolfo (ed.), 'Laca majifijca: la transformación de la tierra', San José: Editorial de la Universidad de Costa Rica, 1993."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bozzoli de Wille, María Eugenia, 'El nacimiento y la muerte entre los bribris', San José: Editorial de la Universidad de Costa Rica, 1979."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nãmãitãmĩ (Namaitamí), whose name derives from the Bribri word for the tapir, is a divinity of the Bribri and Cabécar peoples who takes the form of the danta. A sister of the creator Sibö and daughter of the underworld matriarch Namásia, she lives beneath the world with her mother and her own daughter, the earth-girl Irìria (called Sulára among the Cabécar). In the central creation narrative Sibö dreams of, or contrives, a festival at which he lures the Tapir-woman with chocolate so that he may carry off her daughter; the child falls, is trampled during the dancing, and from her blood the fertile soil and all vegetation arise. Nãmãitãmĩ thus stands as the maternal source of the living earth itself."
+  },
+  {
+    "id": "bribri_cabecar_namasia",
+    "name": {
+      "primary": "Namásia, the underworld grandmother of the earth-girl",
+      "alt": [
+        "Namasia",
+        "Makeur Siau"
+      ],
+      "transliterations": {
+        "bribri": "Namásia",
+        "cabecar": "Makeur Siau",
+        "etymology": "Bribri Namásia, sharing the tapir-root namã of her lineage; among the Cabécar the same figure is named Makeur Siau (Jara & García 2003)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bribri-Cabécar",
+    "primaryTradition": "Bribri-Cabécar",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bribri-Cabécar traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Bribri-Cabécar traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Namásia, called Makeur Siau among the Cabécar, is the elder woman of the underworld, mother of the Tapir-woman Nãmãitãmĩ and grandmother of the girl-child who becomes the earth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld-and-ancestral-counsel",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "counsel_through_story_and_song",
+        "name": "to instruct the earth-girl through story and song",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "She recounts legends and sings melodic counsel to her granddaughter about how girls and boys should conduct themselves among others, and warns her that Dukúr Bulú is an enemy.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "bribri_cabecar_namaitami",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ],
+        "notes": "She is the mother of the Tapir-woman Nãmãitãmĩ and thereby grandmother of the earth-girl, all three dwelling together in the underworld."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Namásia (Cabécar Makeur Siau) is the underworld grandmother and counsellor of the earth-girl, mother of the Tapir-woman Nãmãitãmĩ.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          },
+          {
+            "kind": "secondary",
+            "reference": "González Chaves, Alfredo & Fernando González Vásquez, 'La casa cósmica talamanqueña y sus simbolismos', San José: Editorial de la Universidad de Costa Rica / EUNED, 1989."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Namásia, known to the Cabécar as Makeur Siau, is the elder woman of the lower world in Bribri and Cabécar cosmology. She is the mother of the Tapir-woman Nãmãitãmĩ and the grandmother of the girl-child who becomes the earth, with whom she shares the underworld dwelling. Her role is that of the ancestral teacher: she narrates the stories and sings the melodious songs that instruct her granddaughter in right conduct toward other people, and it is she who names the great bat Dukúr Bulú as the family's enemy who feeds on the sleeping child's blood. She personifies the counselling grandmother at the deepest root of the pantheon's maternal line."
+  },
+  {
+    "id": "bribri_cabecar_dukur_bulu",
+    "name": {
+      "primary": "Dukúr Bulú, the first great bat",
+      "alt": [
+        "Dukur Bulú",
+        "Dukúr Bulu",
+        "Dukúr Këklä",
+        "Dukúr Këglö"
+      ],
+      "transliterations": {
+        "bribri": "Dukúr Bulú",
+        "etymology": "Dukúr names the great bat of the myth; the epithet Këklä / Këglö marks him as the elder or original one (Jara & García 2003)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Bribri-Cabécar",
+    "primaryTradition": "Bribri-Cabécar",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Bribri-Cabécar traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Bribri-Cabécar traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Dukúr Bulú, the first and greatest bat, dwelt in the house of Sibö and flew each night to the underworld to drink the blood of the sleeping earth-girl.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "bats-and-night-flight",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "dukúr",
+          "script": "Latin",
+          "rom": "bat (the great bat)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "drain_blood_of_the_sleeping_earth_girl",
+        "name": "to drink the blood of the sleeping earth-girl",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Each night he flew over the hidden hills to where the earth-girl slept and drew off her blood, which passed through him and, in his droppings, sprouted the first plants.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      },
+      {
+        "id": "reveal_the_hidden_path",
+        "name": "to reveal the hidden path to the earth-girl's chamber",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "After much insistence from Sibö, the bat disclosed the route down to the room where the earth-girl lay, enabling the making of the world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bozzoli de Wille, María Eugenia, 'El nacimiento y la muerte entre los bribris', San José: Editorial de la Universidad de Costa Rica, 1979."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Dukúr Këklä",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "bribri_cabecar_namaitami",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          }
+        ],
+        "notes": "He is counted an enemy of the Tapir-woman's underworld household because he feeds on the blood of her sleeping daughter."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dukúr Bulú is the first great bat of Talamancan myth who drank the earth-girl's blood and revealed to Sibö the path to her underworld chamber.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jara Murillo, Carla Victoria & Alí García Segura, 'Diccionario de mitología bribri', San José: Editorial de la Universidad de Costa Rica, 2003."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bozzoli de Wille, María Eugenia, 'El nacimiento y la muerte entre los bribris', San José: Editorial de la Universidad de Costa Rica, 1979."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Dukúr Bulú, also called Dukúr Këklä or Dukúr Këglö, is the first and greatest bat of Bribri and Cabécar mythology. He lived in the house of the creator Sibö, and each evening flew over concealed hills to the underworld where the earth-girl slept, drinking her blood. When plants with a sweet smell sprang up from his droppings inside Sibö's house, the astonished creator questioned him and learned that the blood came from the daughter of Sulá and Nãmãitãmĩ. Though an enemy of that underworld family for preying on the child, the bat, after much insistence, revealed to Sibö the way down to her chamber, and so became an unwitting instrument in the transformation of the earth-girl into the living world."
+  }
+]
+```

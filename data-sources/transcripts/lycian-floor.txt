@@ -1,0 +1,536 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Lycian
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four well-attested, individuated figures that the existing set omitted. Natri is the native Lycian god of the Letoon triad (identified with Apollo, son of Eni Mahanahi/Lada and brother of Ertemi), wired to the existing corpus through his mother; Kakasbos is the indigenous club-bearing rider-god of northern Lycia and Pisidia known from more than a hundred votive stelai; and Sarpedon and Glaukos are the two named Lycian heroes of the Iliad, the former a Zeus-born ancestral king who received cult at Xanthos and the latter his Bellerophontid kinsman, linked to each other as joint commanders. Each rests on standard scholarship (Melchert's Lycian dictionary, Bryce, Keen, Delemen, Kirk) plus primary sources. I deliberately excluded vague spirit-classes such as the Eliyãna nymphs and the imported Corinthian Bellerophon, whose primary tradition is not Lycian, so as not to pad the set.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "lycian_natri",
+    "name": {
+      "primary": "Natri",
+      "alt": [
+        "Natr",
+        "Natr̥",
+        "Lycian Apollo",
+        "Apollon"
+      ],
+      "transliterations": {
+        "lyc": "natri",
+        "grc": "Ἀπόλλων",
+        "etymology": "Lycian natri, a divine name identified in the Hellenistic period with Greek Apollo; its formation is disputed, some scholars connecting it to a common noun meaning 'god'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lycian",
+    "primaryTradition": "Lycian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "lycian_lada"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Named in Lycian inscriptions as natri, the son of the mother-goddess Eni Mahanahi and brother of Ertemi, he is equated with Apollo in the Greek and Aramaic versions of the Xanthos and Letoon texts.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Craig Melchert, A Dictionary of the Lycian Language (Ann Arbor & New York: Beech Stave Press, 2004)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tutelary-divinity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "natri",
+          "script": "Lycian",
+          "rom": "natri"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "H. Craig Melchert, A Dictionary of the Lycian Language (Ann Arbor & New York: Beech Stave Press, 2004)"
+          }
+        ]
+      },
+      {
+        "sphereId": "oracular-prophecy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Trevor R. Bryce, The Lycians in Literary and Epigraphic Sources (Copenhagen: Museum Tusculanum Press, 1986)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deliver_oracles",
+        "name": "to deliver oracles at the Letoon sanctuary",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Trevor R. Bryce, The Lycians in Literary and Epigraphic Sources (Copenhagen: Museum Tusculanum Press, 1986)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Natri is the native Lycian god named alongside the mother-goddess Eni Mahanahi and Ertemi, identified with Greek Apollo in the bilingual and trilingual documents of Xanthos and the Letoon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "H. Craig Melchert, A Dictionary of the Lycian Language (Ann Arbor & New York: Beech Stave Press, 2004)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Trevor R. Bryce, The Lycians in Literary and Epigraphic Sources (Copenhagen: Museum Tusculanum Press, 1986)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Antony G. Keen, Dynastic Lycia: A Political History of the Lycians and Their Relations with Foreign Powers, c. 545–362 B.C. (Leiden: Brill, 1998)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Natri is the male member of the Lycian divine triad centred on the Letoon sanctuary near Xanthos, appearing in native inscriptions as the child of the mother-goddess Eni Mahanahi and as the counterpart of Ertemi. In the Hellenistic reinterpretation of Lycian religion the trio was read as Leto, Artemis and Apollo, and Natri was accordingly identified with Apollo. His role in the strictly Lycian-language record appears comparatively marginal, and the identification rests on the correspondences preserved in the bilingual and trilingual monuments of the fourth century BCE."
+  },
+  {
+    "id": "lycian_kakasbos",
+    "name": {
+      "primary": "Kakasbos",
+      "alt": [
+        "Κακασβος",
+        "Kakasbos Herakles"
+      ],
+      "transliterations": {
+        "grc": "Κακασβος",
+        "etymology": "the second element -asbos is connected with the Anatolian (Luwic) word for 'horse', ultimately deriving from Proto-Indo-European *h₁éḱwos"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lycian",
+    "primaryTradition": "Lycian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Attested on well over a hundred votive stelai from northern Lycia and southern Pisidia, Kakasbos is depicted as a club-wielding horseman and invoked in short dedicatory formulae fulfilling a vow.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "İnci Delemen, Anatolian Rider-Gods: A Study on Stone Finds from the Regions of Lycia, Pisidia, Isauria, Lycaonia, Phrygia, Lydia and Caria in the Late Roman Period, Asia Minor Studien 35 (Bonn: Habelt, 1999)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "protection-from-wild-dangers",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Κακασβος",
+          "script": "Greek",
+          "rom": "Kakasbos"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "İnci Delemen, Anatolian Rider-Gods: A Study on Stone Finds from the Regions of Lycia, Pisidia, Isauria, Lycaonia, Phrygia, Lydia and Caria in the Late Roman Period, Asia Minor Studien 35 (Bonn: Habelt, 1999)"
+          }
+        ]
+      },
+      {
+        "sphereId": "horsemanship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Aslı Candaş, The Kakasbos/Herakles Cult: A Study of Its Origins, Diffusion and Possible Syncretisms (MA thesis, Bilkent University, Ankara, 2006)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ride_down_dangers",
+        "name": "to ride down wild beasts and dangers with an upraised club",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "İnci Delemen, Anatolian Rider-Gods: A Study on Stone Finds from the Regions of Lycia, Pisidia, Isauria, Lycaonia, Phrygia, Lydia and Caria in the Late Roman Period, Asia Minor Studien 35 (Bonn: Habelt, 1999)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "lycian_kakasbos_club",
+        "name": "club",
+        "kind": "weapon",
+        "role": "the raised or shouldered club that is the god's defining attribute on the votive reliefs",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "İnci Delemen, Anatolian Rider-Gods: A Study on Stone Finds from the Regions of Lycia, Pisidia, Isauria, Lycaonia, Phrygia, Lydia and Caria in the Late Roman Period, Asia Minor Studien 35 (Bonn: Habelt, 1999)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Kakasbos is an indigenous rider-god of northern Lycia and Pisidia, worshipped from the late Hellenistic and Roman periods as a mounted, club-bearing protector and later identified with Herakles.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "İnci Delemen, Anatolian Rider-Gods: A Study on Stone Finds from the Regions of Lycia, Pisidia, Isauria, Lycaonia, Phrygia, Lydia and Caria in the Late Roman Period, Asia Minor Studien 35 (Bonn: Habelt, 1999)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Louis Robert, Documents de l'Asie Mineure méridionale: Inscriptions, monnaies et géographie (Geneva & Paris: Droz, 1966)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Aslı Candaş, The Kakasbos/Herakles Cult: A Study of Its Origins, Diffusion and Possible Syncretisms (MA thesis, Bilkent University, Ankara, 2006)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kakasbos is a local Anatolian rider-god venerated in northern Lycia, western Pamphylia and Pisidia, known almost entirely from crudely carved votive stelai that show him on horseback brandishing a club. The short Greek dedications follow a fixed pattern in which a worshipper fulfils a vow, and the god appears to have protected against wild dangers of the uplands rather than being housed in any temple or formal sanctuary. From the early Roman Imperial period he was regularly assimilated to Herakles, the two names sometimes appearing together on the same monuments."
+  },
+  {
+    "id": "lycian_sarpedon",
+    "name": {
+      "primary": "Sarpedon",
+      "alt": [
+        "Σαρπηδών",
+        "Sarpedous"
+      ],
+      "transliterations": {
+        "grc": "Σαρπηδών",
+        "etymology": "Greek Sarpēdṓn, of disputed and possibly Anatolian origin"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Lycian",
+    "primaryTradition": "Lycian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A son of Zeus and king of the Lycians, Sarpedon led the Lycian contingent as an ally of Troy and was slain by Patroclus, his body borne home to Lycia by Sleep and Death.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Homer, Iliad (Books V, XII, XVI), trans. A. T. Murray, Loeb Classical Library (Cambridge, MA: Harvard University Press, 1924)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Trevor R. Bryce, The Lycians in Literary and Epigraphic Sources (Copenhagen: Museum Tusculanum Press, 1986)"
+          }
+        ]
+      },
+      {
+        "sphereId": "warfare",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Aslı Saraçoğlu, 'Hero Concept in the Light of Homer's Iliad and the Death of Sarpedon, Lycian Warrior,' Anadolu/Anatolia 29 (2006): 57–79"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead_lycian_host",
+        "name": "to lead the Lycian host in battle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Homer, Iliad (Book XII), trans. A. T. Murray, Loeb Classical Library (Cambridge, MA: Harvard University Press, 1924)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Σαρπηδὼν ἄναξ Λυκίων",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Trevor R. Bryce, The Lycians in Literary and Epigraphic Sources (Copenhagen: Museum Tusculanum Press, 1986)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "lycian_glaukos",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Homer, Iliad (Book XII), trans. A. T. Murray, Loeb Classical Library (Cambridge, MA: Harvard University Press, 1924)"
+          }
+        ],
+        "notes": "Sarpedon and Glaukos are kinsmen and joint commanders of the Lycian force at Troy, fighting side by side at the wall of the Achaean camp."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sarpedon is the demigod king of the Lycians, son of Zeus, leader of the Lycian contingent at Troy and a founding ancestor-hero of the Lycians who received cult at Xanthos.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Trevor R. Bryce, The Lycians in Literary and Epigraphic Sources (Copenhagen: Museum Tusculanum Press, 1986)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Antony G. Keen, Dynastic Lycia: A Political History of the Lycians and Their Relations with Foreign Powers, c. 545–362 B.C. (Leiden: Brill, 1998)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Aslı Saraçoğlu, 'Hero Concept in the Light of Homer's Iliad and the Death of Sarpedon, Lycian Warrior,' Anadolu/Anatolia 29 (2006): 57–79"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sarpedon is the pre-eminent Lycian hero of Greek epic, a son of Zeus who ruled the Lycians and brought them to Troy as allies of Priam. In the Iliad his death at the hands of Patroclus is one of the poem's great set-pieces: Zeus weeps tears of blood over his son but permits his fall, and Sleep and Death carry the corpse back to Lycia for burial. He was remembered by the Lycians themselves as a founding ancestor — Herodotus links the migration of the Termilae from Crete to his leadership — and a sanctuary and games in his honour, the Sarpedoneia, are reported at Xanthos."
+  },
+  {
+    "id": "lycian_glaukos",
+    "name": {
+      "primary": "Glaukos",
+      "alt": [
+        "Γλαῦκος",
+        "Glaucus",
+        "Glaukos son of Hippolochos"
+      ],
+      "transliterations": {
+        "grc": "Γλαῦκος",
+        "etymology": "Greek glaukós, 'gleaming, bluish-grey'"
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Lycian",
+    "primaryTradition": "Lycian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A Lycian prince, son of Hippolochos and grandson of Bellerophon, Glaukos commands the Lycians alongside Sarpedon at Troy and exchanges gold armour for bronze with Diomedes in recognition of ancestral guest-friendship.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Homer, Iliad (Books VI, XII, XVII), trans. A. T. Murray, Loeb Classical Library (Cambridge, MA: Harvard University Press, 1924)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "warfare",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. S. Kirk, The Iliad: A Commentary, Volume II: Books 5–8 (Cambridge: Cambridge University Press, 1990)"
+          }
+        ]
+      },
+      {
+        "sphereId": "guest-friendship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ξενία",
+          "script": "Greek",
+          "rom": "xenia"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. S. Kirk, The Iliad: A Commentary, Volume II: Books 5–8 (Cambridge: Cambridge University Press, 1990)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "honor_guest_friendship",
+        "name": "to honour the inherited bonds of guest-friendship",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Homer, Iliad (Book VI), trans. A. T. Murray, Loeb Classical Library (Cambridge, MA: Harvard University Press, 1924)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "lycian_glaukos_golden_armor",
+        "name": "golden armour",
+        "kind": "regalia",
+        "role": "the gold armour, worth a hundred oxen, that Glaukos exchanges for the bronze arms of Diomedes",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Homer, Iliad (Book VI), trans. A. T. Murray, Loeb Classical Library (Cambridge, MA: Harvard University Press, 1924)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "lycian_sarpedon",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Homer, Iliad (Book XII), trans. A. T. Murray, Loeb Classical Library (Cambridge, MA: Harvard University Press, 1924)"
+          }
+        ],
+        "notes": "Glaukos is the kinsman and co-commander of Sarpedon, and after Sarpedon falls he rallies the Lycians and Trojans to fight over his body."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Glaukos, son of Hippolochos and grandson of Bellerophon, is the Lycian prince who co-commands the Lycian force at Troy with his kinsman Sarpedon and is famed for the armour-exchange with Diomedes.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "G. S. Kirk, The Iliad: A Commentary, Volume II: Books 5–8 (Cambridge: Cambridge University Press, 1990)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Trevor R. Bryce, The Lycians in Literary and Epigraphic Sources (Copenhagen: Museum Tusculanum Press, 1986)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Glaukos is the second of the two named Lycian leaders of the Iliad, a prince descended from Bellerophon through his son Hippolochos and thus part of the heroic genealogy the Lycian dynasts claimed as their own. His most celebrated moment is the encounter with the Achaean Diomedes on the battlefield: recognising a bond of guest-friendship between their forebears, the two decline to fight and exchange armour, Glaukos giving gold for bronze in a bargain the poet says cost him his wits. He is closely bound to Sarpedon, whose fallen body he strives to defend, and he is later killed in the fighting over the corpse of Achilles."
+  }
+]
+```

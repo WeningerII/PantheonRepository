@@ -1,0 +1,723 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Serer
+Era (registered, exact): "ancestral", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the five individuated figures the scholarship documents beyond Roog and the Pangool collective: the paired lesser gods Takhar (justice/vengeance) and Tiurakh (wealth), attested since Bérenger-Féraud (1879) and discussed by Gravrand (1990); and three individually named pangool — Mindiss, protector of Fatick and its sea arm with the sanctuary Mbind Ngo Mindiss; and the 'milk' pangool Njemeh of Languème and Moussa Sarr — grounded in Gravrand's La civilisation sereer: Pangool (1990), Thiaw (1991) and Kalis (1997). Kopé Tiatie Cac/Kokh Kox/Koox were excluded as Cangin-language names of the existing supreme being Roog, and the generic pangool/blood-pangool classes and unnamed spirits were excluded as non-individuated. All new figures are wired to the existing serer_roog via subordinate-to relations.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "serer_takhar",
+    "name": {
+      "primary": "Takhar",
+      "alt": [
+        "Taahkarr",
+        "Takhàr"
+      ],
+      "transliterations": {
+        "serer": "Taahkarr",
+        "etymology": "Serer name recorded by 19th-century Senegambian ethnography as the tree-dwelling god of justice (Bérenger-Féraud, Les peuplades de la Sénégambie, 1879)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Serer",
+    "primaryTradition": "Serer",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Takhar belongs to the tier of lesser divinities beneath the supreme being Roog in the classical Serer religious cosmology documented from the nineteenth century onward.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "justice",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      },
+      {
+        "sphereId": "vengeance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "avenge_wrongdoing",
+        "name": "to punish wrongdoers and avenge injuries suffered by his devotees",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Worshippers appeal to Takhar for redress against theft, sorcery and personal injury.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "serer_sacred_tree_altar",
+        "name": "Sacred forest tree altar",
+        "kind": "cult site",
+        "role": "Takhar is worshipped at the foot of tall forest trees deemed sacred, where offerings are deposited.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "serer_roog",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thiaw, Issa Laye, 'La religiosité des Seereer, avant et pendant leur islamisation', Éthiopiques, no. 54, 1991."
+          }
+        ],
+        "notes": "Like all lesser divinities of the Serer pantheon, Takhar stands below the supreme creator Roog, to whom ultimate worship is directed."
+      },
+      {
+        "kind": "rival",
+        "personId": "serer_tiurakh",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          }
+        ],
+        "notes": "Takhar, god of justice, is traditionally described as the adversary of Tiurakh, god of wealth; both are said to dwell in the tallest trees of the forest."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Takhar is the Serer god of justice and vengeance, worshipped at the foot of sacred forest trees.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Takhar (Taahkarr) is a lesser divinity of the Serer people of Senegal, the Gambia and Mauritania, venerated as the god of justice and vengeance. Devotees who have suffered theft, injury or sorcery appeal to him for redress, bringing offerings to the foot of tall forest trees held sacred to him. He is conceived as the adversary of Tiurakh, the god of wealth, with whom he shares a dwelling in the highest trees of the forest. Both figures were recorded by French colonial-era ethnographers of Senegambia and discussed within the broader Serer religious system centred on the supreme being Roog."
+  },
+  {
+    "id": "serer_tiurakh",
+    "name": {
+      "primary": "Tiurakh",
+      "alt": [
+        "Thiorak",
+        "Théourakh",
+        "Tulrakh"
+      ],
+      "transliterations": {
+        "serer": "Thiorak",
+        "etymology": "Serer name rendered in French colonial orthography as Thiorak or Théourakh, the god of wealth (Bérenger-Féraud, Les peuplades de la Sénégambie, 1879)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Serer",
+    "primaryTradition": "Serer",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Tiurakh is counted among the lesser divinities beneath the supreme being Roog in the Serer religious cosmology recorded since the nineteenth century.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wealth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          }
+        ]
+      },
+      {
+        "sphereId": "property",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_wealth",
+        "name": "to grant wealth, goods and material prosperity to his worshippers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Offerings are made to Tiurakh in hope of riches and increase of property.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "serer_forest_tree_dwelling",
+        "name": "Tall forest tree dwelling",
+        "kind": "cult site",
+        "role": "Tiurakh is believed to reside in the tallest trees of the forest, where offerings for prosperity are brought.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "serer_roog",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thiaw, Issa Laye, 'La religiosité des Seereer, avant et pendant leur islamisation', Éthiopiques, no. 54, 1991."
+          }
+        ],
+        "notes": "Tiurakh is a lesser god subordinate to the supreme creator Roog, to whom all Serer worship is ultimately addressed."
+      },
+      {
+        "kind": "rival",
+        "personId": "serer_takhar",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          }
+        ],
+        "notes": "Tiurakh, god of wealth, is the traditional adversary of Takhar, god of justice; the two are said to inhabit the tallest trees of the forest."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tiurakh is the Serer god of wealth and property, a lesser divinity dwelling in the tall trees of the forest.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bérenger-Féraud, L. J. B., Les peuplades de la Sénégambie, Ernest Leroux, Paris, 1879."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tiurakh (also written Thiorak, Théourakh or Tulrakh) is a lesser divinity of the Serer people of Senegal, the Gambia and Mauritania, regarded as the god of wealth and property. Worshippers seeking riches bring him offerings in the forest, where he is believed to dwell in the tallest trees together with his adversary Takhar, the god of justice and vengeance. The pair were first recorded in detail by nineteenth-century French ethnographers of Senegambia and remain the two most frequently named lesser gods of the Serer pantheon under the supreme being Roog."
+  },
+  {
+    "id": "serer_mindiss",
+    "name": {
+      "primary": "Mindiss",
+      "alt": [
+        "Mindis",
+        "Mendiss",
+        "Ngo Mindiss"
+      ],
+      "transliterations": {
+        "serer": "Mindiss",
+        "etymology": "Serer name shared by the fangool and the arm of the sea at Fatick that bears her name (Gravrand, La civilisation sereer: Pangool, 1990)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Serer",
+    "primaryTradition": "Serer",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "ancestral"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "ancestral",
+        "eraOrdering": 0,
+        "startEvent": "Mindiss is venerated among the pangool, the ancestral spirits and saints who mediate between the Serer people and the supreme being Roog.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea-and-rivers",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      },
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kalis, Simone, Médecine traditionnelle, religion et divination chez les Seereer Siin du Sénégal, L'Harmattan, Paris, 1997."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "appear_as_manatee",
+        "name": "to appear to humans in the form of a manatee",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Tradition holds that Mindiss manifests herself in the waters of the Sine as a manatee.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      },
+      {
+        "id": "protect_fatick",
+        "name": "to protect the Fatick region and those who make offerings in her waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kalis, Simone, Médecine traditionnelle, religion et divination chez les Seereer Siin du Sénégal, L'Harmattan, Paris, 1997."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "serer_mbind_ngo_mindiss",
+        "name": "Mbind Ngo Mindiss",
+        "kind": "cult site",
+        "role": "Sacred site of offerings and libations on the arm of the Sine River at Fatick, listed among Senegal's historic monuments.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "serer_roog",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thiaw, Issa Laye, 'La religiosité des Seereer, avant et pendant leur islamisation', Éthiopiques, no. 54, 1991."
+          }
+        ],
+        "notes": "As a fangool, Mindiss serves as an intermediary between the living and the supreme creator Roog, to whom worship is ultimately directed."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mindiss is a female fangool, protector of the Fatick region and of the arm of the sea on the Sine that bears her name, to whom offerings are made and who appears in the form of a manatee.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kalis, Simone, Médecine traditionnelle, religion et divination chez les Seereer Siin du Sénégal, L'Harmattan, Paris, 1997."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mindiss (also Mindis or Mendiss) is one of the most prominent individually named pangool of the Serer people. A female tutelary spirit with goddess-like attributes, she protects the Fatick region of Senegal and the arm of the sea on the Sine River that carries her name. Offerings and libations are made to her at the riverside sanctuary of Mbind Ngo Mindiss, a site recognised among Senegal's historic monuments, and tradition holds that she shows herself to humans in the form of a manatee. Like all pangool she is an intermediary between the Serer faithful and the supreme being Roog."
+  },
+  {
+    "id": "serer_njemeh",
+    "name": {
+      "primary": "Njemeh of Languème",
+      "alt": [
+        "Njemeh",
+        "Ndiémé"
+      ],
+      "transliterations": {
+        "serer": "Njemeh",
+        "etymology": "Serer personal name, rendered Ndiémé in French orthography, borne by the tutelary fangool of Languème (Gravrand, La civilisation sereer: Pangool, 1990)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Serer",
+    "primaryTradition": "Serer",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "ancestral"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "ancestral",
+        "eraOrdering": 0,
+        "startEvent": "Njemeh is counted among the 'milk' pangool, the peaceful class of Serer ancestral spirits venerated as protectors of towns and the weak.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      },
+      {
+        "sphereId": "peace",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thiaw, Issa Laye, 'La religiosité des Seereer, avant et pendant leur islamisation', Éthiopiques, no. 54, 1991."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_towns_and_weak",
+        "name": "to protect Serer settlements and defend the weak",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As a milk fangool, Njemeh rejects all that symbolises violence, such as iron, weapons, gunpowder, blood and the colour red.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "serer_roog",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thiaw, Issa Laye, 'La religiosité des Seereer, avant et pendant leur islamisation', Éthiopiques, no. 54, 1991."
+          }
+        ],
+        "notes": "As a fangool, Njemeh mediates between the living and the supreme creator Roog."
+      },
+      {
+        "kind": "companion",
+        "personId": "serer_moussa_sarr",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ],
+        "notes": "Njemeh and Moussa Sarr are classed together among the peaceful 'milk' pangool, protectors of Serer towns and defenders of the weak."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Njemeh of Languème is a peaceful 'milk' fangool of the Serer, a protector spirit who defends settlements and the weak and abhors violence.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Thiaw, Issa Laye, 'La religiosité des Seereer, avant et pendant leur islamisation', Éthiopiques, no. 54, 1991."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Njemeh (Ndiémé) of Languème is an individually named fangool of the Serer people, classed among the 'milk' pangool, the peaceful order of ancestral spirits contrasted with the 'blood' pangool. Milk pangool such as Njemeh reject everything that evokes violence, destruction or death, including iron, weapons, gunpowder, blood and the colour red, and serve as protectors of Serer towns and defenders of the weak. Like all pangool, she intercedes between the living community and the supreme being Roog."
+  },
+  {
+    "id": "serer_moussa_sarr",
+    "name": {
+      "primary": "Moussa Sarr",
+      "alt": [],
+      "transliterations": {
+        "serer": "Musaa Saar",
+        "etymology": "Serer personal name combining the given name Moussa with the Serer patronym Sarr (Gravrand, La civilisation sereer: Pangool, 1990)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Serer",
+    "primaryTradition": "Serer",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "ancestral"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "ancestral",
+        "eraOrdering": 0,
+        "startEvent": "Moussa Sarr is venerated among the 'milk' pangool, the peaceful class of Serer ancestral spirits and saints.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      },
+      {
+        "sphereId": "peace",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thiaw, Issa Laye, 'La religiosité des Seereer, avant et pendant leur islamisation', Éthiopiques, no. 54, 1991."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_towns_and_weak",
+        "name": "to protect Serer settlements and defend the weak",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As a milk fangool, Moussa Sarr shuns iron, weapons, gunpowder, blood and the colour red, all of which symbolise violence.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "serer_roog",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thiaw, Issa Laye, 'La religiosité des Seereer, avant et pendant leur islamisation', Éthiopiques, no. 54, 1991."
+          }
+        ],
+        "notes": "As a fangool, Moussa Sarr intercedes between the living and the supreme creator Roog."
+      },
+      {
+        "kind": "companion",
+        "personId": "serer_njemeh",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          }
+        ],
+        "notes": "Moussa Sarr and Njemeh of Languème are classed together among the peaceful 'milk' pangool, protectors of Serer towns and defenders of the weak."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Moussa Sarr is an individually named 'milk' fangool of the Serer, a peaceful ancestral spirit venerated as a protector of towns and defender of the weak.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gravrand, Henry, La civilisation sereer, vol. 2: Pangool, Nouvelles Éditions Africaines du Sénégal, 1990."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Thiaw, Issa Laye, 'La religiosité des Seereer, avant et pendant leur islamisation', Éthiopiques, no. 54, 1991."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Moussa Sarr is an individually named fangool (ancestral saint) of the Serer people of Senegal, the Gambia and Mauritania. He belongs to the 'milk' pangool, the peaceful order of ancestral spirits contrasted with the violent 'blood' pangool: milk pangool reject everything symbolising violence or death, such as iron, weapons, gunpowder, blood and the colour red, and act as protectors of Serer settlements and defenders of the weak. Like all pangool he serves as an intermediary between the living and the supreme being Roog."
+  }
+]
+```

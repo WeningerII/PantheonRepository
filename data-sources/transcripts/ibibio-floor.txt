@@ -1,0 +1,376 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ibibio
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two strongly individuated figures absent from the existing set: Eka Abasi, the primordial Great Mother ("Mother of God") who in Ibibio esoteric teaching is the true head of the pantheon, and her son-and-consort Obumo (Abasi Obumo), the thunder god regarded by ordinary worshippers as the chief deity. Both are richly documented in the two classic Ibibio ethnographies of P. Amaury Talbot (1923) and D. Amaury Talbot (1915), which explicitly describe their mother/spouse relationship and cosmogonic role; I wired Obumo to Eka Abasi via parentage and a reciprocal spousal relation. I deliberately excluded candidates that are merely aspects or epithets of already-registered figures (e.g. Abasi Enyong, the sky aspect of the supreme Abasi; Abasi Isong the earth goddess; and the generic ndem/eka-abasi child-spirit class), and treated the fertility "spirit mother" gloss as subsumed under Eka Abasi proper. Beyond these two, the attested Ibibio record is dominated by spirit-classes (ndem, ekpo) already covered or non-individuated, so I stopped at the two securely named divine individuals.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ibibio_eka_abasi",
+    "name": {
+      "primary": "Eka Abasi",
+      "alt": [
+        "Eka Abassi",
+        "Eka Abbassi",
+        "The Mother",
+        "Mother of God"
+      ],
+      "transliterations": {
+        "ibibio": "Eka Abasi",
+        "etymology": "Ibibio 'eka' (mother) + 'Abasi' (God/deity), i.e. 'Mother of God' or 'Mother of the gods'; per Talbot she is so named as the primordial source from whom the divine order springs."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ibibio",
+    "primaryTradition": "Ibibio",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "According to Ibibio esoteric teaching recorded by the Talbots, Eka Abasi stands at the very fount of existence as the nameless Great Mother from whom all gods, spirits and living things have sprung.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "motherhood-and-childbirth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "eka",
+          "script": "Latin",
+          "rom": "eka (mother)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ]
+      },
+      {
+        "sphereId": "primordial-creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Abasi",
+          "script": "Latin",
+          "rom": "Abasi (God)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, P. Amaury. Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe. London: Macmillan and Co., 1923."
+          }
+        ]
+      },
+      {
+        "sphereId": "sacred-waters-and-rocks",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_children",
+        "name": "to grant children to her worshippers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the Great Mother she is invoked for offspring and safe childbirth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ]
+      },
+      {
+        "id": "bring_forth_creation",
+        "name": "to bring forth all gods and living things from herself",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, P. Amaury. Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe. London: Macmillan and Co., 1923."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ibibio_eka_abasi_holy_pools",
+        "name": "Holy pools and rocks",
+        "kind": "sacred-site",
+        "role": "Earthly manifestations of Eka Abasi at which rites for her and her son Obumo are performed.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Eka Abasi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, P. Amaury. Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe. London: Macmillan and Co., 1923."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "ibibio_obumo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ],
+        "notes": "By her own might she gave birth to Obumo the Thunderer, who is at once her son and her consort."
+      },
+      {
+        "kind": "spouse",
+        "personId": "ibibio_obumo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ],
+        "notes": "Talbot records that Eka Abasi is at once mother and spouse of Obumo, standing above him with a great gulf fixed between her and the lesser gods."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Eka Abasi ('Mother of God') is, in Ibibio esoteric teaching, the primordial Great Mother and true head of the pantheon, mother and consort of the thunder god Obumo, from whom all gods and living things spring.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Talbot, P. Amaury. Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe. London: Macmillan and Co., 1923."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Eka Abasi, whose name means 'Mother of God,' is in Ibibio esoteric religion the supreme and nameless Great Mother who stands at the fount of all existence. Beyond and above the ordinary gods, she may scarcely be spoken of among them, and from her have sprung all things, from her son and consort Obumo the Thunderer down to the least living creature. Holy pools and rocks scattered through Ibibio country are regarded as her earthly manifestations, and she is invoked above all as the giver of children. She is distinct from the earth goddess Abasi Isong and from Atai, being conceived as the primal maternal source underlying the whole divine order."
+  },
+  {
+    "id": "ibibio_obumo",
+    "name": {
+      "primary": "Obumo",
+      "alt": [
+        "Abasi Obumo",
+        "Obuma",
+        "Obumo the Thunderer"
+      ],
+      "transliterations": {
+        "ibibio": "Obumo",
+        "etymology": "Ibibio Obumo, glossed by Talbot as 'the Thunderer'; frequently prefixed 'Abasi' (God), giving 'Abasi Obumo', the god of thunder."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ibibio",
+    "primaryTradition": "Ibibio",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "ibibio_eka_abasi"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Born of the Great Mother Eka Abasi by her own power, Obumo the Thunderer emerges as the first and chief of the active gods, wielding storm and thunder.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder-and-storms",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Obumo",
+          "script": "Latin",
+          "rom": "Obumo (the Thunderer)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, P. Amaury. Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe. London: Macmillan and Co., 1923."
+          }
+        ]
+      },
+      {
+        "sphereId": "sky-and-weather",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl_thunder",
+        "name": "to hurl thunder and unleash storms",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, P. Amaury. Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe. London: Macmillan and Co., 1923."
+          }
+        ]
+      },
+      {
+        "id": "reign_as_chief_god",
+        "name": "to reign as chief deity of the common people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "To the uninitiated majority Obumo, rather than the hidden Eka Abasi, is regarded as the head god.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ibibio_obumo_thunderbolt",
+        "name": "Thunderbolt",
+        "kind": "emblem",
+        "role": "The thunder and storm through which Obumo makes his presence felt and known to worshippers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, P. Amaury. Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe. London: Macmillan and Co., 1923."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Abasi Obumo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "ibibio_eka_abasi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ],
+        "notes": "Obumo is at once the son and the consort of the Great Mother Eka Abasi, from whom he sprang and whose rites are bound up with his own."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Obumo (Abasi Obumo, 'the Thunderer') is the Ibibio god of thunder and storm, son and consort of the Great Mother Eka Abasi, and is regarded by the uninitiated majority as the chief deity of the tribe.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Talbot, P. Amaury. Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe. London: Macmillan and Co., 1923."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Talbot, D. Amaury. Woman's Mysteries of a Primitive People: The Ibibios of Southern Nigeria. London: Cassell and Company, 1915."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Obumo, often called Abasi Obumo, is the Ibibio god of thunder, glossed by Talbot as 'the Thunderer.' Born of the Great Mother Eka Abasi by her own might, he is at once her son and her consort, and his rites are commonly performed at the holy pools and rocks held to be her earthly manifestations. To the mass of ordinary worshippers, who are not admitted to the esoteric teaching about Eka Abasi, Obumo appears as the chief deity of the tribe, his power made manifest in the crash of storms. He is distinct from the supreme creator Abasi, belonging instead to the older maternal cosmogony centred on Eka Abasi."
+  }
+]
+```

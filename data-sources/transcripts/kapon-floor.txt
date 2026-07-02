@@ -1,0 +1,526 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Kapon
+Era (registered, exact): "colonial", "heroic-age", "mythic-prehistoric"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four well-attested individuated Kapon figures: Pia, twin brother of Makonaima and first shaman (Roth 1915; Brett 1880); Sigu, the Akawaio flood hero and son of Makonaima (Brett 1880; Roth 1915); Piai'ma, the named mountain ogre and archetypal master of shamanic power (Butt 1977; Whitehead 2002; Roth 1915); and Abel, the historical prophet-founder of the Hallelujah/Areruya religion (Butt Colson 1960). Generic spirit classes such as kanaima assassins and imawali forest spirits were deliberately excluded as non-individuated. Sigu is genealogically linked to the existing Makonaima entry; Pia's twin relationship is documented in prose because symmetric links to pre-existing entries are disallowed.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "kapon_pia",
+    "name": {
+      "primary": "Pia",
+      "alt": [
+        "Piá",
+        "Pia'imö",
+        "Pia the Twin"
+      ],
+      "transliterations": {
+        "kapon": "Pia",
+        "etymology": "From the Cariban root pia/piache, 'medicine-man, shaman'; Roth (1915: 328) derives the name from early Carib piače, the shamanic specialist."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kapon",
+    "primaryTradition": "Kapon",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Pia is born as one of the primordial twin culture heroes of the Cariban-speaking peoples of the Guiana Highlands, sons of the Sun, in the age before the present order of the world (Roth 1915; Brett 1880).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 30th Annual Report of the Bureau of American Ethnology, 1915."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "shamanism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "piai",
+          "script": "Latin",
+          "rom": "piai — shaman, medicine-man"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 1915, p. 328."
+          }
+        ]
+      },
+      {
+        "sphereId": "healing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. H. Brett, Legends and Myths of the Aboriginal Indians of British Guiana, 1880."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "institute_shamanic_practice",
+        "name": "to teach and originate the arts of the shaman",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Pia is remembered as the first medicine-man and the origin of shamanic knowledge.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 1915."
+          }
+        ]
+      },
+      {
+        "id": "monster_slaying",
+        "name": "to rid the land of monsters and dangerous beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. H. Brett, Legends and Myths of the Aboriginal Indians of British Guiana, 1880."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Pia is the twin brother of Makonaima in the mythology of the Cariban-speaking Kapon and their neighbours, a culture hero who cleared the land of monsters and originated the practice of the shaman (piai).",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 30th Annual Report of the Bureau of American Ethnology, 1915."
+          },
+          {
+            "kind": "secondary",
+            "reference": "W. H. Brett, Legends and Myths of the Aboriginal Indians of British Guiana, 1880."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pia is the twin brother of Makonaima in the mythic traditions shared by the Kapon (Akawaio and Patamona) and the wider Cariban-speaking peoples of the Guiana Highlands. In the versions recorded by Brett and Roth, the twins are sons of the Sun who benefit humankind by slaying monsters, and Pia in particular becomes the first medicine-man; his name is cognate with the Cariban term piai for the shaman. Because the symmetric twin relationship links him to the previously catalogued Makonaima, the fraternity is documented here in prose rather than as a formal genealogical entry."
+  },
+  {
+    "id": "kapon_sigu",
+    "name": {
+      "primary": "Sigu",
+      "alt": [
+        "Sigo",
+        "Sigoo"
+      ],
+      "transliterations": {
+        "kapon": "Sigu",
+        "etymology": "Akawaio personal name of the flood hero; recorded by Brett (1880) in the Guiana flood narrative and treated by Roth (1915) as a culture-hero name of the region."
+      }
+    },
+    "type": "quartigod",
+    "origin": "canon",
+    "tradition": "Kapon",
+    "primaryTradition": "Kapon",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "kapon_makonaima"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "heroic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "quartigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "Sigu, son of the creator Makonaima, leads the animals and preserves the seeds of all plants through the great flood that follows the felling of the wonderful tree of life (Brett 1880; Roth 1915).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. H. Brett, Legends and Myths of the Aboriginal Indians of British Guiana, 1880."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "flood-and-deluge",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 1915."
+          }
+        ]
+      },
+      {
+        "sphereId": "cultivated-plants",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. H. Brett, Legends and Myths of the Aboriginal Indians of British Guiana, 1880."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preserve_life_through_flood",
+        "name": "to shelter animals and preserve the seeds of all plants through the deluge",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Sigu hides the animals in a cave and climbs a kokerite palm to gauge the receding waters.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. H. Brett, Legends and Myths of the Aboriginal Indians of British Guiana, 1880."
+          }
+        ]
+      },
+      {
+        "id": "distribute_cultigens",
+        "name": "to distribute the fruits and cultivated plants that grew from the tree of life",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 1915."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kapon_kokerite_palm",
+        "name": "Kokerite palm",
+        "kind": "emblem",
+        "role": "The tall palm Sigu climbs, dropping seeds to measure the depth of the flood waters.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. H. Brett, Legends and Myths of the Aboriginal Indians of British Guiana, 1880."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "kapon_makonaima",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 1915."
+          }
+        ],
+        "notes": "Sigu acts as the son and agent of the creator Makonaima, carrying out the ordering of animals and plants after the felling of the world tree."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sigu is the Akawaio culture hero and flood survivor, son of the creator Makonaima, who preserved animals and plant life through the great deluge caused by the felling of the tree of life.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. H. Brett, Legends and Myths of the Aboriginal Indians of British Guiana, 1880."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 30th Annual Report of the Bureau of American Ethnology, 1915."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sigu is the flood hero of the Akawaio branch of the Kapon peoples. In the narrative recorded by the missionary William Henry Brett and later analysed by Walter Roth, Sigu, son of the creator Makonaima, directs the animals after the felling of the marvellous tree that bore all cultivated plants; when the stump gushes forth a deluge he seals the burrowing creatures in a cave, takes the birds and climbing animals up a tall kokerite palm, and drops seeds into the darkness to judge when the waters have receded. Later tradition tends to transfer to Sigu heroic exploits that older texts ascribe to Makonaima himself."
+  },
+  {
+    "id": "kapon_piaima",
+    "name": {
+      "primary": "Piai'ma",
+      "alt": [
+        "Piaima",
+        "Piai'mà",
+        "Piaimö"
+      ],
+      "transliterations": {
+        "kapon": "Piai'ma",
+        "etymology": "Augmentative of piai, 'shaman': literally 'great shaman' or 'master shaman' (Butt 1977; Whitehead 2002)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Kapon",
+    "primaryTradition": "Kapon",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Piai'ma appears in Kapon narrative as a primordial mountain-dwelling ogre and master of shamanic power, present in the forested highlands since the mythic age (Roth 1915; Butt 1977).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey Butt, 'The Akawaio Shaman', in Ellen B. Basso (ed.), Carib-Speaking Indians: Culture, Society and Language, University of Arizona Press, 1977."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "shamanic-power",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "piai",
+          "script": "Latin",
+          "rom": "piai — shamanic power and practice"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey Butt, 'The Akawaio Shaman', in Ellen B. Basso (ed.), Carib-Speaking Indians, 1977."
+          }
+        ]
+      },
+      {
+        "sphereId": "mountain-wilderness",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Neil L. Whitehead, Dark Shamans: Kanaimà and the Poetics of Violent Death, Duke University Press, 2002."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_shamanic_knowledge",
+        "name": "to grant or withhold shamanic knowledge and songs",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Shamans' spirit helpers and knowledge are associated with Piai'ma as the archetypal master of piai.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey Butt, 'The Akawaio Shaman', in Ellen B. Basso (ed.), Carib-Speaking Indians, 1977."
+          }
+        ]
+      },
+      {
+        "id": "abduct_and_devour",
+        "name": "to abduct, deceive, and devour unwary humans in the forest",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 1915."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Piai'ma is the named mountain ogre and archetypal 'great shaman' of Kapon (Akawaio and Patamona) narrative, a cannibal trickster-figure who is also the source and master of shamanic power.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Neil L. Whitehead, Dark Shamans: Kanaimà and the Poetics of Violent Death, Duke University Press, 2002."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Audrey Butt, 'The Akawaio Shaman', in Ellen B. Basso (ed.), Carib-Speaking Indians: Culture, Society and Language, University of Arizona Press, 1977."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Walter E. Roth, An Inquiry into the Animism and Folk-Lore of the Guiana Indians, 30th Annual Report of the Bureau of American Ethnology, 1915."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Piai'ma, the 'great shaman', is a named individuated being of the Kapon highlands: a giant, mountain-dwelling ogre of the forest who abducts and eats humans in a large cycle of cautionary tales, yet who is simultaneously regarded as the archetypal master of piai, the shamanic art. Roth recorded ogre tales about him among the Guiana peoples, Audrey Butt Colson documented his role in Akawaio shamanic ideology, and Neil Whitehead analysed his continuing importance among the Patamona of the Pakaraima mountains."
+  },
+  {
+    "id": "kapon_abel",
+    "name": {
+      "primary": "Abel",
+      "alt": [
+        "Ebel"
+      ],
+      "transliterations": {
+        "kapon": "Abel",
+        "etymology": "Biblical baptismal name adopted by the Akawaio prophet; recorded in this form by Butt Colson (1960)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Kapon",
+    "primaryTradition": "Kapon",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "colonial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "colonial",
+        "eraOrdering": 0,
+        "startEvent": "In the late nineteenth century the Akawaio prophet Abel, after a visionary journey to heaven during a death-like trance, receives the songs and prayers that found the Hallelujah (Areruya) religion (Butt Colson 1960).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey J. Butt [Colson], 'The Birth of a Religion: The Origins of a Semi-Christian Religion among the Akawaio', Journal of the Royal Anthropological Institute 90(1): 66-106, 1960."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Areruya",
+          "script": "Latin",
+          "rom": "Areruya — the Hallelujah religion he founded"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey J. Butt [Colson], 'The Birth of a Religion', JRAI 90(1), 1960."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_heavenly_revelation",
+        "name": "to journey in trance to heaven and receive songs and prayers from God",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey J. Butt [Colson], 'The Birth of a Religion', JRAI 90(1), 1960."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Abel was the historical Akawaio prophet who, following a visionary near-death experience in the late nineteenth century, founded the Hallelujah (Areruya) religion that remains central to Kapon religious life.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Audrey J. Butt [Colson], 'The Birth of a Religion: The Origins of a Semi-Christian Religion among the Akawaio', Journal of the Royal Anthropological Institute 90(1): 66-106, 1960."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Neil L. Whitehead, Dark Shamans: Kanaimà and the Poetics of Violent Death, Duke University Press, 2002."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Abel of Amokokupai was the Akawaio prophet who founded Hallelujah (Areruya), the indigenous semi-Christian religion of the Kapon and Pemon peoples, in the latter half of the nineteenth century. According to the ethnography of Audrey Butt Colson, Abel fell into a death-like trance, journeyed in spirit to heaven, and returned with songs, prayers, and moral teachings received directly from God, which he combined with older shamanic cosmology into a new ritual practice. He is remembered as a revered ancestor-founder rather than a divinity, and his religion was later carried to the Pemon and other neighbouring peoples."
+  }
+]
+```
+

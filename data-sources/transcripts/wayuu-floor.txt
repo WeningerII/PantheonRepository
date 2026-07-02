@@ -1,0 +1,513 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Wayuu
+Era (registered, exact): "Wayuu traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four individuated figures beyond the existing core (Maleiwa, Juyá, Pulowi, Wanülü). Wolunka is the well-attested culture heroine of the Wayuu origin cycle — daughter of the rain (and, in some tellings, Pulowi) whose pierced toothed vagina inaugurated menstruation and human birth (Wilbert & Simoneau 1986; Suárez González 2024; Paz Ipuana 1972). Kai (the Sun) and Kashi (the Moon) are the two named, personified celestial sentinels appointed by Maleiwa, wired to him by subordination and paired with each other (Perrin 1987; Paz Ipuana 1972). Ulepala is the legendary man of the Orpheus-like myth of the journey to Jepira, the land of the dead, documented by Perrin (1976, 1987). I deliberately excluded borderline nature-classes (e.g. Palaa/Sea, Mma/Earth, Shüliwala/Stars, the rainbow Kasipoluin, and the unnamed transforming twins) as insufficiently individuated named persons.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "wayuu_wolunka",
+    "name": {
+      "primary": "Wolunka",
+      "alt": [
+        "Worunka",
+        "Wolunkat"
+      ],
+      "transliterations": {
+        "wayuunaiki": "Wolunka",
+        "etymology": "A Wayuunaiki proper name for the primordial maiden; the myth is remembered as the origin of the wayuu people."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wayuu",
+    "primaryTradition": "Wayuu",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "wayuu_juya",
+      "wayuu_pulowi"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Wayuu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wayuu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the beginning Wolunka, daughter of the rain Juyá, was the first woman on earth, born with a toothed vagina that made procreation impossible.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilbert, Johannes, and Karin Simoneau, eds. (1986). Folk Literature of the Guajiro Indians. Los Angeles: UCLA Latin American Center Publications."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "human-origins",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "wayuu",
+          "script": "Latin",
+          "rom": "the people"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Suárez González, Geraldine (2024). 'Mito wayuu: Wolunka y su análisis simbólico.' Omnia 30 (2): 297–306. Universidad del Zulia."
+          }
+        ]
+      },
+      {
+        "sphereId": "menstruation-and-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Suárez González, Geraldine (2024). 'Mito wayuu: Wolunka y su análisis simbólico.' Omnia 30 (2): 297–306. Universidad del Zulia."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "originate_human_procreation",
+        "name": "to make human birth and menstruation possible",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "When the twins' arrow shattered the teeth of her vagina, her flowing blood inaugurated menstruation and the capacity of Wayuu women to bear children.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paz Ipuana, Ramón (1972). Mitos, leyendas y cuentos guajiros. Caracas: Instituto Agrario Nacional."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "wayuu_piedra_wolunka",
+        "name": "The blood-stained stones of Wolunka",
+        "kind": "sacred-landmark",
+        "role": "A rock formation in the Makuira (Macuira) range near Nazareth said to be stained with Wolunka's blood, remembered as the place where the Wayuu came into being.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilbert, Johannes, and Karin Simoneau, eds. (1986). Folk Literature of the Guajiro Indians. Los Angeles: UCLA Latin American Center Publications."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Wolunka is the primordial maiden of Wayuu myth, daughter of the rain, whose toothed vagina was pierced by an arrow so that her blood gave rise to menstruation and the Wayuu people.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Wilbert, Johannes, and Karin Simoneau, eds. (1986). Folk Literature of the Guajiro Indians. Los Angeles: UCLA Latin American Center Publications."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Suárez González, Geraldine (2024). 'Mito wayuu: Wolunka y su análisis simbólico.' Omnia 30 (2): 297–306. Universidad del Zulia."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paz Ipuana, Ramón (1972). Mitos, leyendas y cuentos guajiros. Caracas: Instituto Agrario Nacional."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Wolunka is the culture heroine of the Wayuu origin cycle. In the most widely recorded version she is the daughter of the rain-god Juyá (some tellings also name Pulowi as her mother, while others say Maleiwa formed her), and at the dawn of time she was the only woman on earth. She was born with a toothed vagina and so could bear no children. While she bathed nude in a stream in the Makuira mountains, a pair of transforming twins lay in wait and loosed an arrow that struck her genitals and knocked out the teeth; her spilled blood stained the rocks that bear her name and, according to tradition, is the reason women menstruate and can thereafter conceive. The myth is understood as a cosmogonic account of the beginning of the Wayuu and is linked to the girls' seclusion rite observed at first menstruation."
+  },
+  {
+    "id": "wayuu_kai",
+    "name": {
+      "primary": "Kai (the Sun)",
+      "alt": [
+        "Ka'i",
+        "Kaí"
+      ],
+      "transliterations": {
+        "wayuunaiki": "Ka'i",
+        "etymology": "Wayuunaiki 'sun'; the same word denotes 'day' in the Wayuu reckoning of time."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wayuu",
+    "primaryTradition": "Wayuu",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wayuu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wayuu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Before withdrawing beneath the earth, the creator Maleiwa set Kai, the Sun, as the sentinel who watches over the world by day.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun-and-daylight",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ka'i",
+          "script": "Latin",
+          "rom": "sun / day"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paz Ipuana, Ramón (1972). Mitos, leyendas y cuentos guajiros. Caracas: Instituto Agrario Nacional."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "watch_over_world_by_day",
+        "name": "to watch over the world by day",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Kai keeps the daytime vigil that Maleiwa entrusted to him, the counterpart of the Moon's night watch.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "wayuu_maleiwa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          }
+        ],
+        "notes": "Appointed by Maleiwa as the daytime sentinel of the world before the creator hid himself away."
+      },
+      {
+        "kind": "companion",
+        "personId": "wayuu_kashi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paz Ipuana, Ramón (1972). Mitos, leyendas y cuentos guajiros. Caracas: Instituto Agrario Nacional."
+          }
+        ],
+        "notes": "Kai and Kashi form the paired sentinels of day and night among the primordial celestial beings."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kai is the personified Sun of Wayuu cosmology, one of the primordial celestial beings and the daytime sentinel appointed by Maleiwa.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paz Ipuana, Ramón (1972). Mitos, leyendas y cuentos guajiros. Caracas: Instituto Agrario Nacional."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kai (Ka'i) is the Sun in Wayuu cosmology, counted among the primordial beings that Maleiwa set in the sky. In the widely told account, when the creator Maleiwa prepared to withdraw beneath the earth he appointed two watchmen — Kai the Sun to keep vigil by day and Kashi the Moon to keep vigil by night. The Sun is often imagined as the fire or hearth of Maleiwa that warms the world, and its name doubles as the Wayuu word for 'day' in the traditional reckoning in which the day is Kai, the month is Kashi, and the year is Juyá."
+  },
+  {
+    "id": "wayuu_kashi",
+    "name": {
+      "primary": "Kashi (the Moon)",
+      "alt": [
+        "Kashí",
+        "Kashi-kai"
+      ],
+      "transliterations": {
+        "wayuunaiki": "Kashi",
+        "etymology": "Wayuunaiki 'moon'; the same word denotes 'month' in the Wayuu reckoning of time."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Wayuu",
+    "primaryTradition": "Wayuu",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wayuu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Wayuu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "The creator Maleiwa set Kashi, the Moon, as the sentinel who keeps watch over the world by night.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon-and-night",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Kashi",
+          "script": "Latin",
+          "rom": "moon / month"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paz Ipuana, Ramón (1972). Mitos, leyendas y cuentos guajiros. Caracas: Instituto Agrario Nacional."
+          }
+        ]
+      },
+      {
+        "sphereId": "seduction",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilbert, Johannes, and Karin Simoneau, eds. (1986). Folk Literature of the Guajiro Indians. Los Angeles: UCLA Latin American Center Publications."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "watch_over_world_by_night",
+        "name": "to watch over the world by night",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Kashi keeps the night vigil entrusted by Maleiwa, complementing the Sun's daytime watch.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          }
+        ]
+      },
+      {
+        "id": "seduce_by_night",
+        "name": "to visit and seduce women in the night",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In popular tradition Kashi is a nocturnal seducer whose place is one of enchantment; the dark markings on the moon are read as traces of these encounters.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paz Ipuana, Ramón (1972). Mitos, leyendas y cuentos guajiros. Caracas: Instituto Agrario Nacional."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "wayuu_maleiwa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          }
+        ],
+        "notes": "Appointed by Maleiwa as the night sentinel of the world."
+      },
+      {
+        "kind": "companion",
+        "personId": "wayuu_kai",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paz Ipuana, Ramón (1972). Mitos, leyendas y cuentos guajiros. Caracas: Instituto Agrario Nacional."
+          }
+        ],
+        "notes": "Kashi and Kai form the paired sentinels of night and day among the primordial celestial beings."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kashi is the personified Moon of Wayuu cosmology, the night sentinel appointed by Maleiwa and, in popular tradition, a nocturnal seducer.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paz Ipuana, Ramón (1972). Mitos, leyendas y cuentos guajiros. Caracas: Instituto Agrario Nacional."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kashi (Kashí) is the Moon in Wayuu cosmology, counted among the primordial celestial beings and, with the Sun Kai, one of the two sentinels appointed by Maleiwa: Kai keeps watch by day and Kashi by night. The Moon is often described as the lamp of Maleiwa. In popular Wayuu narrative Kashi is a male figure of enchantment and seduction who visits women under cover of night, and the shadowed markings on the lunar disc are explained in some tellings by these amorous adventures. The word Kashi also serves as the Wayuu term for 'month.'"
+  },
+  {
+    "id": "wayuu_ulepala",
+    "name": {
+      "primary": "Ulepala",
+      "alt": [
+        "Ulépala",
+        "Ulapüla"
+      ],
+      "transliterations": {
+        "wayuunaiki": "Ulepala",
+        "etymology": "A Wayuunaiki proper name borne by the legendary man of the myth of the journey to the land of the dead."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Wayuu",
+    "primaryTradition": "Wayuu",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Wayuu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Wayuu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Grieving for his dead wife, Ulepala set out on a perilous journey to Jepira, the land of the Wayuu dead, to bring her back.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1976). El camino de los indios muertos: Mitos y símbolos guajiros. Caracas: Monte Ávila Editores."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "journey-to-the-dead",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Jepira",
+          "script": "Latin",
+          "rom": "land of the dead"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1976). El camino de los indios muertos: Mitos y símbolos guajiros. Caracas: Monte Ávila Editores."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "travel_to_land_of_dead",
+        "name": "to travel living into the land of the dead and return",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Ulepala crosses to Jepira, the abode of the yolujaa (spirits of the dead), while still alive in his quest to recover his beloved.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ulepala is the legendary Wayuu man who journeyed to Jepira, the land of the dead, in search of his deceased beloved, a myth documented and analyzed by Michel Perrin.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1976). El camino de los indios muertos: Mitos y símbolos guajiros. Caracas: Monte Ávila Editores."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Perrin, Michel (1987). The Way of the Dead Indians: Guajiro Myths and Symbols. Trans. Michael Fineberg. Austin: University of Texas Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wilbert, Johannes, and Karin Simoneau, eds. (1986). Folk Literature of the Guajiro Indians. Los Angeles: UCLA Latin American Center Publications."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ulepala (Ulépala) is the hero of a well-known Wayuu myth of the journey to the land of the dead. Yearning for his beloved who has died, he undertakes a difficult and dangerous passage to Jepira — the mansion of the Wayuu dead, situated on a headland in the sea and reached by way of the Milky Way — in the hope of bringing her back among the living. The narrative, one of the myths collected and given structural analysis by Michel Perrin, articulates Wayuu conceptions of death, the fate of the soul, and the irreversible boundary between the living and the spirits (yolujaa) who dwell in Jepira."
+  }
+]
+```
+

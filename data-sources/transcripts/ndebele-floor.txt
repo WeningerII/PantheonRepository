@@ -1,0 +1,268 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ndebele
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the only two genuinely individuated mythic beings the scholarship documents beyond the existing corpus: Unwabu the chameleon and Intulo the lizard, the paired messengers of Unkulunkulu in the Nguni origin-of-death myth (Callaway 1870; Werner 1933; Bozongwana 1983), both wired to the existing ndebele_unkulunkulu as subordinates and to each other as reciprocated rivals. I deliberately excluded the Njelele shrine triad names Shologulu, Banyanchaba, and Lunji (Daneel 1970; Werbner 1989) because scholars describe them explicitly as father/mother/son manifestations of Mwali, i.e. aspects of the existing ndebele_umlimu, which the brief forbids re-authoring. Nomkhubulwana/Inkosazana was excluded as attested for the Zulu rather than the Zimbabwean Ndebele, and the venerated royal ancestors Mzilikazi and Lobengula were excluded as historical persons falling outside the registered primordial/mythic-past era keys.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ndebele_unwabu",
+    "name": {
+      "primary": "Unwabu",
+      "alt": [
+        "the Chameleon",
+        "unwaba"
+      ],
+      "transliterations": {
+        "isiNdebele": "unwabu",
+        "etymology": "Nguni unwabu, 'chameleon'; proverbial for slowness (ukuhamba kukanwabu, 'to go at the chameleon's pace') (Callaway, The Religious System of the Amazulu, 1870)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ndebele",
+    "primaryTradition": "Ndebele",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "At the beginning of the world Unkulunkulu dispatched the chameleon to tell humankind that they would not die (Callaway, The Religious System of the Amazulu, 1870).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu, Part I: Unkulunkulu, Springvale: Blair, 1870"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "life-and-immortality",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ukuphila",
+          "script": "Latin",
+          "rom": "life, being alive"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu, Part I: Unkulunkulu, Springvale: Blair, 1870"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, London: George G. Harrap, 1933, ch. 2"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear_message_of_life",
+        "name": "to carry the creator's promise of deathlessness to humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The chameleon dawdled on the way, eating the fruit of the ubukwebezane shrub, and arrived after the lizard had already delivered the sentence of death.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu, Part I: Unkulunkulu, Springvale: Blair, 1870"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ndebele_unkulunkulu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu, Part I: Unkulunkulu, Springvale: Blair, 1870"
+          }
+        ],
+        "notes": "Unwabu acts solely as the messenger of Unkulunkulu, the First Being, who charged it to announce that people would not die."
+      },
+      {
+        "kind": "rival",
+        "personId": "ndebele_intulo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, London: George G. Harrap, 1933, ch. 2"
+          }
+        ],
+        "notes": "The slow chameleon and the swift lizard raced with opposing messages; the lizard's arrival first fixed death upon humankind, and both animals are consequently disliked in Nguni communities."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Unwabu the chameleon is the messenger sent by Unkulunkulu to grant humankind everlasting life, whose slowness allowed death to enter the world in the origin-of-death myth shared by the Ndebele and other Nguni peoples.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu, Part I: Unkulunkulu, Springvale: Blair, 1870"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, London: George G. Harrap, 1933, ch. 2 ('Where Man Came From, and How Death Came')"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wallace Bozongwana, Ndebele Religion and Customs, Gweru: Mambo Press, 1983"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Unwabu, the chameleon, is one of the two mythic animal messengers in the origin-of-death narrative that the Ndebele of Zimbabwe carried north with the rest of their Nguni religious inheritance. In the tale first recorded at length by Henry Callaway among the Zulu and documented across the Nguni-speaking world, the First Being Unkulunkulu sent the chameleon to tell people that they would not die; it loitered on the road, and the lizard Intulo, sent afterwards with the contrary decree, arrived first, so that death became irrevocable. The chameleon's fatal slowness remains proverbial in isiNdebele and isiZulu, and the animal itself is treated with superstitious aversion as the messenger who failed humankind."
+  },
+  {
+    "id": "ndebele_intulo",
+    "name": {
+      "primary": "Intulo",
+      "alt": [
+        "the Lizard",
+        "intulwa",
+        "the blue-headed gecko"
+      ],
+      "transliterations": {
+        "isiNdebele": "intulo",
+        "etymology": "Nguni intulo, 'gecko, salamander-like lizard' (Callaway, The Religious System of the Amazulu, 1870)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ndebele",
+    "primaryTradition": "Ndebele",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "After the chameleon delayed, Unkulunkulu sent the lizard with the decree that humankind must die, and it outran the first messenger (Callaway, The Religious System of the Amazulu, 1870).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu, Part I: Unkulunkulu, Springvale: Blair, 1870"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ukufa",
+          "script": "Latin",
+          "rom": "death, dying"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu, Part I: Unkulunkulu, Springvale: Blair, 1870"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, London: George G. Harrap, 1933, ch. 2"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deliver_decree_of_death",
+        "name": "to deliver the creator's sentence of death to humankind before the message of life arrives",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "By racing ahead of the chameleon and speaking first, the lizard made death permanent; the people refused the later message of life because the first word had already been accepted.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, London: George G. Harrap, 1933, ch. 2"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ndebele_unkulunkulu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu, Part I: Unkulunkulu, Springvale: Blair, 1870"
+          }
+        ],
+        "notes": "Intulo acts as the second messenger of Unkulunkulu, dispatched with the word that people must die."
+      },
+      {
+        "kind": "rival",
+        "personId": "ndebele_unwabu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, London: George G. Harrap, 1933, ch. 2"
+          }
+        ],
+        "notes": "The lizard's race against the dawdling chameleon, and its victory, is the pivot of the Nguni origin-of-death myth; both animals are killed on sight in traditional communities for their parts in it."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Intulo the lizard (blue-headed gecko) is the second messenger of Unkulunkulu, who outran the chameleon and delivered the decree of death, thereby making mortality permanent in the Nguni origin-of-death myth shared by the Ndebele.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu, Part I: Unkulunkulu, Springvale: Blair, 1870"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu, London: George G. Harrap, 1933, ch. 2 ('Where Man Came From, and How Death Came')"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wallace Bozongwana, Ndebele Religion and Customs, Gweru: Mambo Press, 1983"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Intulo, the lizard or blue-headed gecko, is the counterpart of the chameleon Unwabu in the origin-of-death myth inherited by the Zimbabwean Ndebele from their Nguni forebears. When the chameleon delayed on its errand of everlasting life, Unkulunkulu sent the lizard with the opposite word, that people must die; it ran swiftly, spoke first, and its message could not be recalled. In Nguni-speaking communities, including the Ndebele, the intulo is consequently regarded with hostility and often killed on sight as the creature that brought death into the world."
+  }
+]
+```

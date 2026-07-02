@@ -1,0 +1,211 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Apapocúva-Guaraní
+Era (registered, exact): "cosmogonic", "post-contact"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added one genuinely individuated figure, Charía (Xariá / the celestial "blue" jaguar), the eternal adversary of the divine twins in the Apapocúva-Guaraní world-cycle recorded by Nimuendajú (1914): the fishing enemy who clubs the younger twin (the Moon, jasy) before the elder resurrects him, and who as the celestial jaguar accounts for eclipses and threatens the world's destruction until restrained by Ñanderuvuçú (namandu). He is wired in via a directed slayer-of relation to jasy and subordinate-to namandu, and cited to Nimuendajú, Schaden and Métraux. Beyond this the Apapocúva record appears essentially exhausted relative to the existing five: Tupã is already carried as an aspect/alias of Ñanderu Mba'ekuá, the twins and their parents are already in the corpus, and the añay/jaguar-ogres and the eschatological jaguars are unnamed spirit-classes rather than individuated beings; I found no securely named additional prophet or deity in the sources checked (Nimuendajú 1914/1987, Schaden 1962/1974, Métraux 1928 & 1946, H. Clastres 1975/1995) to justify padding the set further.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "apapocuva_guarani_charia",
+    "name": {
+      "primary": "Charía",
+      "alt": [
+        "Xariá",
+        "Charĩ",
+        "Jaguar ový",
+        "the Celestial Jaguar",
+        "Onça Celeste"
+      ],
+      "transliterations": {
+        "guarani": "Charía",
+        "etymology": "Guaraní; the name's derivation is not firmly established. In the comparative Guaraní twin-cycle the same adversary is equated with the celestial or 'blue' jaguar (jaguar ový), and Egon Schaden treats Charía as the standing name of the culture-heroes' great enemy across the Apapocúva, Mbyá and Ñandeva recensions."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Apapocúva-Guaraní",
+    "primaryTradition": "Apapocúva-Guaraní",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "cosmogonic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "cosmogonic",
+        "eraOrdering": 0,
+        "startEvent": "In the world-establishing myth recorded by Nimuendajú, Charía appears as the fishing adversary encountered by the divine twins, killing the younger brother at the river before the elder restores him to life.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Curt Nimuendajú, Die Sagen von der Erschaffung und Vernichtung der Welt als Grundlagen der Religion der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914), 284-403 (Port. trans. ed. Egon Schaden, São Paulo: Hucitec/EDUSP, 1987)."
+          }
+        ]
+      },
+      {
+        "typeStatus": "numen",
+        "era": "post-contact",
+        "eraOrdering": 1,
+        "startEvent": "In the ethnographic present Charía endures as the celestial jaguar believed to assail the sun and moon, so that his pursuit accounts for eclipses and his eventual release is feared as a sign of the world's destruction.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred Métraux, La religion des Tupinamba et ses rapports avec celle des autres tribus tupi-guaraní (Paris: Ernest Leroux, 1928)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cosmic-antagonism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Egon Schaden, Aspectos fundamentais da cultura guaraní, 3rd ed. (São Paulo: EPU/EDUSP, 1974; 1st ed. 1962)."
+          }
+        ]
+      },
+      {
+        "sphereId": "eclipses",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "jaguarete",
+          "script": "Latin",
+          "rom": "jaguar"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred Métraux, La religion des Tupinamba et ses rapports avec celle des autres tribus tupi-guaraní (Paris: Ernest Leroux, 1928)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "assail_sun_and_moon",
+        "name": "to attack the sun and the moon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the celestial jaguar he pursues and bites the luminaries, an assault the living Guaraní read in solar and lunar eclipses.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred Métraux, La religion des Tupinamba et ses rapports avec celle des autres tribus tupi-guaraní (Paris: Ernest Leroux, 1928)."
+          }
+        ]
+      },
+      {
+        "id": "menace_world_until_end",
+        "name": "to threaten mankind until the world's end unless restrained",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The adversary is never finally destroyed but held back by the high god, and his loosing belongs to the expected destruction of the earth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Curt Nimuendajú, Die Sagen von der Erschaffung und Vernichtung der Welt als Grundlagen der Religion der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914), 284-403 (Port. trans. ed. Egon Schaden, São Paulo: Hucitec/EDUSP, 1987)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "apapocuva_guarani_charia_yvyra",
+        "name": "wooden club (yvyra)",
+        "kind": "weapon",
+        "role": "The stave with which Charía strikes and kills the younger of the divine twins during the fishing episode of the twin-cycle.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred Métraux, 'Twin Heroes in South American Mythology,' Journal of American Folklore 59, no. 232 (1946): 114-123."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Jaguar ový",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Egon Schaden, Aspectos fundamentais da cultura guaraní, 3rd ed. (São Paulo: EPU/EDUSP, 1974; 1st ed. 1962)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "jasy",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred Métraux, 'Twin Heroes in South American Mythology,' Journal of American Folklore 59, no. 232 (1946): 114-123."
+          }
+        ],
+        "notes": "At the river Charía hooks and clubs the younger twin (the Moon), taking him home to be cooked as if he were a fish; the elder twin recovers the bones and restores his brother to life."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "namandu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Curt Nimuendajú, Die Sagen von der Erschaffung und Vernichtung der Welt als Grundlagen der Religion der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914), 284-403 (Port. trans. ed. Egon Schaden, São Paulo: Hucitec/EDUSP, 1987)."
+          }
+        ],
+        "notes": "The malevolent jaguar-adversary is contained at the edge of the world by the great father Ñanderuvuçú, whose restraint keeps him from devouring humanity before the appointed destruction."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Charía is the eternal adversary of the culture-hero twins in the Apapocúva-Guaraní world-cycle, the fishing enemy who kills the younger twin and, as the celestial jaguar, threatens the sun, the moon and the world's end.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Curt Nimuendajú, Die Sagen von der Erschaffung und Vernichtung der Welt als Grundlagen der Religion der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914), 284-403 (Port. trans. ed. Egon Schaden, São Paulo: Hucitec/EDUSP, 1987)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Egon Schaden, Aspectos fundamentais da cultura guaraní, 3rd ed. (São Paulo: EPU/EDUSP, 1974; 1st ed. 1962)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alfred Métraux, 'Twin Heroes in South American Mythology,' Journal of American Folklore 59, no. 232 (1946): 114-123."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Charía is the recurring adversary of the divine twins in the Guaraní twin-cycle set down for the Apapocúva by Curt Nimuendajú. In the celebrated fishing episode the twins mock him as he angles at a river; when the younger brother dives at the baited hook Charía hooks him, clubs him dead and carries him home to be cooked as a fish, whereupon the elder brother gathers the bones and brings him back to life. Comparative scholarship identifies him with the celestial or 'blue' jaguar whose pursuit of the luminaries the Guaraní see in eclipses, and whose ultimate unleashing belongs to their expectation of the destruction of the earth; until then he is held in check by the great father Ñanderuvuçú. Nimuendajú and later commentators note that the Apapocúva also read this primordial enemy as the prototype of the alien outsider, a mythic template later mapped onto the encroaching non-Indigenous world."
+  }
+]
+```

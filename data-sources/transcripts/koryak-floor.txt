@@ -1,0 +1,381 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Koryak
+Era (registered, exact): "mythic / cosmic", "mythic / first-times (creation epoch)"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three genuinely individuated, well-attested figures beyond the existing Raven-family set. Cloud-Man (Yahal/Yahalan) is a named Koryak sky deity, son of the Supreme Being and patron of marriage, who weds Yiniaaneut in the Raven cycle — wired to koryak_universe as father and to koryak_yiniaaneut as consort. Illa and Kilu are the only two named members of the younger generation of Big-Raven's kin in Koryak oral tradition (nephew and niece, or in one variant the creator's children); they are wired into the pantheon through their canonical cousin-marriages to the existing Yiniaaneut and Ememqut respectively and to each other as siblings. I deliberately excluded Raven-Man and Little-Bird-Man because their clearest attestation is Chukchee (Bogoras) rather than securely Koryak, and I treated kalau/kamak spirits as an unnamed class rather than individuated figures; each added figure carries two primary ethnographic citations (Jochelson 1908/1904, Bogoras 1917).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "koryak_cloud_man",
+    "name": {
+      "primary": "Cloud-Man",
+      "alt": [
+        "Yahal",
+        "Yahalan",
+        "Yahalʼnaut (Cloud-Man)"
+      ],
+      "transliterations": {
+        "Koryak": "Yahal",
+        "etymology": "Koryak yahal, 'cloud'; the personified sky-youth known as Cloud-Man"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Koryak",
+    "primaryTradition": "Koryak",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "koryak_universe"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic / cosmic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / cosmic",
+        "eraOrdering": 0,
+        "startEvent": "Cloud-Man dwells in the sky as a son of the Supreme Being and serves as the patron who blesses the marriages of young couples.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X (Jesup North Pacific Expedition, Vol. VI). Leiden: E. J. Brill / New York: G. E. Stechert, 1908."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "marriage-and-courtship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Yahal",
+          "script": "Latin",
+          "rom": "Yahal"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X. Leiden: E. J. Brill, 1908."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bless_young_couples",
+        "name": "to bless and protect the unions of young couples",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "A bridegroom sacrifices a reindeer to Cloud-Man after marriage; neglect of the offering brings his displeasure.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X. Leiden: E. J. Brill, 1908."
+          }
+        ]
+      },
+      {
+        "id": "grant_success_in_love",
+        "name": "to grant success in courtship to those who drum for love",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Lovers seeking to win a beloved's heart appeal to Cloud-Man by beating the drum.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. \"The Mythology of the Koryak.\" American Anthropologist, n.s., Vol. 6, No. 4 (1904), pp. 413-425."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "koryak_yiniaaneut",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X. Leiden: E. J. Brill, 1908."
+          }
+        ],
+        "notes": "In several Raven-cycle tales Big-Raven's daughter Yiniaaneut is given in marriage to Cloud-Man, one of a set of otherworldly suitors she weds across variant narratives."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Cloud-Man (Yahal, Yahalan) is a Koryak sky deity, a son of the Supreme Being, who is the patron of marriage and young lovers and who weds Big-Raven's daughter Yiniaaneut in the Raven cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X (Jesup North Pacific Expedition, Vol. VI). Leiden: E. J. Brill / New York: G. E. Stechert, 1908."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. \"The Mythology of the Koryak.\" American Anthropologist, n.s., Vol. 6, No. 4 (1904), pp. 413-425."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Cloud-Man is a benevolent celestial being of Koryak religion, reckoned a son of the Supreme Being who dwells with his family in the upper world. He presides over marriage and courtship: a newly married man offers him a reindeer, and young men and women beat the drum to invoke his help in winning a beloved. In the mythological narratives collected by Jochelson, Cloud-Man appears as one of the supernatural husbands of Yiniaaneut, the eldest daughter of Big-Raven, linking the sky-family of the Supreme Being to the household of the creator-trickster."
+  },
+  {
+    "id": "koryak_illa",
+    "name": {
+      "primary": "Illa",
+      "alt": [
+        "Illaʼ",
+        "Ila"
+      ],
+      "transliterations": {
+        "Koryak": "Illa",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Koryak",
+    "primaryTradition": "Koryak",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / first-times (creation epoch)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times (creation epoch)",
+        "eraOrdering": 0,
+        "startEvent": "Illa belongs to Big-Raven's kin as a nephew who joins and aids the creator's household in its adventures during the first-times.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bogoras, Waldemar. Koryak Texts. Publications of the American Ethnological Society, Vol. V. Leiden: E. J. Brill, 1917."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kinship-and-marriage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X. Leiden: E. J. Brill, 1908."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "aid_ravens_household",
+        "name": "to help Big-Raven's family carry out its exploits",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As a member of Raven's kin Illa recurs across the tales as a helper and marriage-partner within the household.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bogoras, Waldemar. Koryak Texts. Publications of the American Ethnological Society, Vol. V. Leiden: E. J. Brill, 1917."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "koryak_yiniaaneut",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X. Leiden: E. J. Brill, 1908."
+          }
+        ],
+        "notes": "The cousin-marriage of Illa and Yiniaaneut, Big-Raven's eldest daughter, is a recurring pairing in the legends recorded by Jochelson and Bogoras."
+      },
+      {
+        "kind": "sibling",
+        "personId": "koryak_kilu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bogoras, Waldemar. Koryak Texts. Publications of the American Ethnological Society, Vol. V. Leiden: E. J. Brill, 1917."
+          }
+        ],
+        "notes": "Illa and Kilu are paired as the two named younger kin of Big-Raven; in one narrative both are the son and daughter of the creator Tenanto'mwan, making them brother and sister."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Illa is a named younger male member of Big-Raven's kin (a nephew, or in one variant the creator's son) who recurs through the Koryak Raven cycle as a helper and as the cousin-husband of Yiniaaneut.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X (Jesup North Pacific Expedition, Vol. VI). Leiden: E. J. Brill / New York: G. E. Stechert, 1908."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bogoras, Waldemar. Koryak Texts. Publications of the American Ethnological Society, Vol. V. Leiden: E. J. Brill, 1917."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Illa is one of only two named members of the younger generation of Big-Raven's kin in Koryak oral literature (the other being Kilu). Usually described as a nephew of the Raven, he assists the creator's household through its many adventures. In the widespread pattern of cousin-marriage that structures the tales, Illa is paired with Yiniaaneut, Big-Raven's eldest daughter, just as Kilu is paired with Big-Raven's son Ememqut. A variant narrative instead makes Illa the son of the creator Tenanto'mwan, an aspect of Big-Raven himself."
+  },
+  {
+    "id": "koryak_kilu",
+    "name": {
+      "primary": "Kilu",
+      "alt": [
+        "Kiluʼ",
+        "Kilu'"
+      ],
+      "transliterations": {
+        "Koryak": "Kiluʼ",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Koryak",
+    "primaryTradition": "Koryak",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / first-times (creation epoch)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times (creation epoch)",
+        "eraOrdering": 0,
+        "startEvent": "Kilu belongs to Big-Raven's kin as a niece who joins and aids the creator's household in the tales of the first-times.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bogoras, Waldemar. Koryak Texts. Publications of the American Ethnological Society, Vol. V. Leiden: E. J. Brill, 1917."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kinship-and-marriage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X. Leiden: E. J. Brill, 1908."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "assist_ravens_family",
+        "name": "to assist and share in the exploits of Big-Raven's family",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As Raven's niece Kilu appears repeatedly as a helper and marriage-partner within the household.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bogoras, Waldemar. Koryak Texts. Publications of the American Ethnological Society, Vol. V. Leiden: E. J. Brill, 1917."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "koryak_ememqut",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X. Leiden: E. J. Brill, 1908."
+          }
+        ],
+        "notes": "The cousin-marriage of Kilu and Ememqut, Big-Raven's eldest son, is a recurring pairing across the legends recorded by Jochelson and Bogoras."
+      },
+      {
+        "kind": "sibling",
+        "personId": "koryak_illa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bogoras, Waldemar. Koryak Texts. Publications of the American Ethnological Society, Vol. V. Leiden: E. J. Brill, 1917."
+          }
+        ],
+        "notes": "Kilu and Illa are paired as the two named younger kin of Big-Raven; in one narrative both are the daughter and son of the creator Tenanto'mwan, making them sister and brother."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kilu (Kiluʼ) is a named younger female member of Big-Raven's kin, usually his niece, who recurs through the Koryak Raven cycle as a helper and as the cousin-wife of Ememqut.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jochelson, Waldemar. The Koryak. Memoirs of the American Museum of Natural History, Vol. X (Jesup North Pacific Expedition, Vol. VI). Leiden: E. J. Brill / New York: G. E. Stechert, 1908."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bogoras, Waldemar. Koryak Texts. Publications of the American Ethnological Society, Vol. V. Leiden: E. J. Brill, 1917."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kilu is one of only two named members of the younger generation of Big-Raven's kin in Koryak oral literature (the other being Illa). Usually described as a niece of the Raven, she takes part in the adventures of the creator's household. In the recurring pattern of cousin-marriage that organizes the tales, Kilu is paired with Ememqut, Big-Raven's eldest son, just as Illa is paired with Big-Raven's daughter Yiniaaneut. A variant narrative instead makes Kilu the daughter of the creator Tenanto'mwan, an aspect of Big-Raven himself."
+  }
+]
+```

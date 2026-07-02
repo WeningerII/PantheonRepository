@@ -1,0 +1,750 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Fulɓe pastoral initiatory tradition
+Era (registered, exact): "Ful\u0253e pastoral initiatory tradition traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added six individuated, well-attested figures from the recorded Fulɓe initiatory corpus of Amadou Hampâté Bâ and Germaine Dieterlen: Njeddo Dewal (the sorceress 'mother of calamity') and her nemesis Bâgoumâwel (the wonder-child) from the Njeddo Dewal tale; Hammadi, the wisdom-winning initiate of Kaïdara; and, from the Koumen cosmogony, Silê Sadio (the first silatigi/master-initiate), Ilo son of Yaladi (the first herdsman and brother of Tyanaba), and Ndurbeele (the primordial hermaphrodite cow). Each is wired into the existing pantheon by attested directed relations — Njeddo Dewal and Ndurbeele to Guéno, Silê Sadio to Koumen and Foroforondou, Hammadi to Kaïdara, Ilo to Tyanaba — with the Njeddo Dewal/Bâgoumâwel enmity reciprocated between the two new figures. I deliberately excluded non-individuated or minor elements (Njeddo Dewal's seven unnamed daughters, a spirit-class; and the greed-blinded foils Hamtoudo and Dembourou), since the task calls for named divine, ancestral or heroic beings rather than literary bit-players.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ful_e_pastoral_initiatory_tradition_njeddo_dewal",
+    "name": {
+      "primary": "Njeddo Dewal, Mother of Calamity",
+      "alt": [
+        "Njeddo Dewal",
+        "Ndjeddo Dewal",
+        "Njeɗɗo Dewal"
+      ],
+      "transliterations": {
+        "Fulfulde": "Njeɗɗo Dewal",
+        "etymology": "Fulfulde; Dewal is a feminine augmentative ('great/monstrous woman'), the name rendered by Amadou Hampâté Bâ as 'mother of calamity' or 'the great sorceress'."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Fulɓe pastoral initiatory tradition",
+    "primaryTradition": "Fulɓe pastoral initiatory tradition",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "According to Amadou Hampâté Bâ's initiatory recitation, in the early ages of the Fulani the supreme god Guéno raised up Njeddo Dewal, a monstrous sorceress, to punish the people for their corruption.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sorcery-and-calamity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "unleash_calamity",
+        "name": "to unleash plagues, drought and misfortune upon the land",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ]
+      },
+      {
+        "id": "ensnare_through_daughters",
+        "name": "to lure and destroy young men through her seven beautiful daughters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ismahan Soukeyna Diop, African Mythology, Femininity, and Maternity, Pan-African Psychologies, Palgrave Macmillan, Cham, 2019."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ful_e_pastoral_initiatory_tradition_geno",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ],
+        "notes": "Njeddo Dewal is raised up and set loose by the supreme god Guéno as an instrument of chastisement against the Fulani for their sins."
+      },
+      {
+        "kind": "enemy",
+        "personId": "ful_e_pastoral_initiatory_tradition_bagoumawel",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ],
+        "notes": "Her destined nemesis is the miraculous child Bâgoumâwel, the only being able to overcome her sorcery."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Njeddo Dewal is the monstrous sorceress and 'mother of calamity' of Fulani initiatory tradition, raised by God to punish the people and finally defeated by the miraculous hero Bâgoumâwel.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ismahan Soukeyna Diop, African Mythology, Femininity, and Maternity, Pan-African Psychologies, Palgrave Macmillan, Cham, 2019."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Njeddo Dewal is the great malevolent sorceress of the Fulani initiatory cycle, the first and framing tale in the sequence that includes Kaïdara and The Radiance of the Great Star. Aroused by the supreme god Guéno as a scourge upon a corrupted people, she embodies destructive, devouring evil; her seven daughters, each beautiful as a female genie, entice suitors and drain their blood for their mother. The narrative dramatises the eternal struggle of good and evil, and her downfall at the hands of the wonder-child Bâgoumâwel carries the initiatory lesson of the pitfalls to be avoided on the path of self-conquest."
+  },
+  {
+    "id": "ful_e_pastoral_initiatory_tradition_bagoumawel",
+    "name": {
+      "primary": "Bâgoumâwel, the Miraculous Child",
+      "alt": [
+        "Bâgoumâwel",
+        "Bagoumawel"
+      ],
+      "transliterations": {
+        "Fulfulde": "Bâgoumâwel",
+        "etymology": ""
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Fulɓe pastoral initiatory tradition",
+    "primaryTradition": "Fulɓe pastoral initiatory tradition",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In Amadou Hampâté Bâ's recitation, Bâgoumâwel speaks from his mother's womb and is born already possessed of wisdom, at once child and elder, destined to deliver the Fulani from Njeddo Dewal.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wisdom-and-deliverance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "overcome_the_sorceress",
+        "name": "to outwit and overcome the sorceress Njeddo Dewal",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ]
+      },
+      {
+        "id": "know_hidden_things",
+        "name": "to know hidden and future things from before his birth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ismahan Soukeyna Diop, African Mythology, Femininity, and Maternity, Pan-African Psychologies, Palgrave Macmillan, Cham, 2019."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "ful_e_pastoral_initiatory_tradition_njeddo_dewal",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ],
+        "notes": "Bâgoumâwel is the sworn adversary of Njeddo Dewal, the only being able to defeat the mother of calamity."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "ful_e_pastoral_initiatory_tradition_geno",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          }
+        ],
+        "notes": "The child is understood as the divinely favoured deliverer raised up in answer to the calamity that Guéno himself had loosed."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bâgoumâwel is the miraculous, prematurely-wise child hero of Fulani initiatory tradition who alone defeats the sorceress Njeddo Dewal.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Njeddo Dewal, mère de la calamité: conte initiatique peul, Nouvelles Éditions Africaines, Abidjan/Dakar, 1985."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ismahan Soukeyna Diop, African Mythology, Femininity, and Maternity, Pan-African Psychologies, Palgrave Macmillan, Cham, 2019."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bâgoumâwel is the wonder-child of the Fulani initiatory cycle, described as an African counterpart of Little Thumb, young and old at once, who speaks before birth and names himself. He embodies the good in the tale's cosmic struggle, protecting his uncles and finally destroying the sorceress Njeddo Dewal through cunning and superior knowledge. As the hero of the initiatory reading, he models the wisdom, courage and self-mastery the postulant must attain."
+  },
+  {
+    "id": "ful_e_pastoral_initiatory_tradition_sile_sadio",
+    "name": {
+      "primary": "Silê Sadio, the First Silatigi",
+      "alt": [
+        "Silê Sadio",
+        "Sile Saajo",
+        "Soulé"
+      ],
+      "transliterations": {
+        "Fulfulde": "Silê Saajo",
+        "etymology": "Soulé, a diminutive of Souleymane (Solomon), the alternate name of the first pastoralist to be initiated."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Fulɓe pastoral initiatory tradition",
+    "primaryTradition": "Fulɓe pastoral initiatory tradition",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Koumen text recorded by Amadou Hampâté Bâ and Germaine Dieterlen, Silê Sadio is the first pastor to be initiated, led by the bush-spirit Koumen through twelve clearings of pastoral knowledge.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "pastoral-initiation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "silatigi",
+          "script": "Latin",
+          "rom": "master-initiate of the herders"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "pass_the_twelve_clearings",
+        "name": "to pass through the twelve clearings of pastoral knowledge",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ful_e_pastoral_initiatory_tradition_koumen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ],
+        "notes": "Silê Sadio is the disciple of the bush-spirit Koumen, who guides him stage by stage through his pastoral initiation."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "ful_e_pastoral_initiatory_tradition_foroforondou",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ],
+        "notes": "He is nourished and instructed by Foroforondou, mistress of the milk and companion of Koumen."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Silê Sadio is the mythic first silatigi (master-initiate) of the Fulani pastoralists, whose initiation by Koumen is the model narrated in the Koumen text.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          },
+          {
+            "kind": "secondary",
+            "reference": "C. Edward Hopen, review of 'Koumen: Texte initiatique des Pasteurs Peul' by A. Hampaté Bâ and G. Dieterlen, American Anthropologist, vol. 64, no. 4, 1962, pp. 872–873."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Silê Sadio (also Soulé, a diminutive of Souleymane/Solomon) is the archetypal first silatigi, the pastoral master-initiate of Fulani tradition. In the Koumen text, transmitted by the initiation-master Arɗo Dembo of Ndilli in the Ferlo of Senegal, he progresses through twelve successive 'clearings' of knowledge under the guidance of the bearded dwarf bush-spirit Koumen and his companion Foroforondou, learning the structure of the elements, of space and of time. His journey furnishes the paradigmatic pattern for every subsequent initiation of the herders."
+  },
+  {
+    "id": "ful_e_pastoral_initiatory_tradition_hammadi",
+    "name": {
+      "primary": "Hammadi, the Initiate of Kaïdara",
+      "alt": [
+        "Hammadi",
+        "Hamadi"
+      ],
+      "transliterations": {
+        "Fulfulde": "Hammadi",
+        "etymology": ""
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Fulɓe pastoral initiatory tradition",
+    "primaryTradition": "Fulɓe pastoral initiatory tradition",
+    "sex": "male",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the récit Kaïdara recorded by Amadou Hampâté Bâ, Hammadi is one of three companions who journey to the underground land of the god Kaïdara in search of gold and hidden knowledge.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Kaïdara: récit initiatique peul, Les Classiques Africains, Julliard, Paris, 1969."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hidden-knowledge",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Kaïdara: récit initiatique peul, Les Classiques Africains, Julliard, Paris, 1969."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "interpret_symbols",
+        "name": "to interpret the enigmatic symbols met on the initiatory road",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Kaïdara: récit initiatique peul, Les Classiques Africains, Julliard, Paris, 1969."
+          }
+        ]
+      },
+      {
+        "id": "renounce_wealth_for_wisdom",
+        "name": "to renounce gold in exchange for words of wisdom",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Kaïdara: récit initiatique peul, Les Classiques Africains, Julliard, Paris, 1969."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ful_e_pastoral_initiatory_tradition_kaidara",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Kaïdara: récit initiatique peul, Les Classiques Africains, Julliard, Paris, 1969."
+          }
+        ],
+        "notes": "Hammadi is the seeker who attains the wisdom dispensed by the god Kaïdara, surviving where his greed-driven companions perish."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hammadi is the wisdom-seeking initiate of the Kaïdara récit who alone survives the journey to the god of gold and hidden knowledge by choosing wisdom over wealth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Kaïdara: récit initiatique peul, Les Classiques Africains, Julliard, Paris, 1969."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ, Contes initiatiques peuls (Njeddo Dewal, mère de la calamité; Kaïdara), Collection Motifs, Stock, Paris, 1994."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hammadi is the protagonist of the initiatory poem Kaïdara, one of three companions — with Hamtoudo and Dembourou — who descend to the land of the dwarf-genies to reach Kaïdara, god of gold and knowledge. Where his companions covet only material wealth and perish, Hammadi seeks understanding of the mysterious signs he witnesses and, on the return road, surrenders his riches for three pieces of wisdom. His success embodies the tradition's teaching that the true initiate values knowledge above gold."
+  },
+  {
+    "id": "ful_e_pastoral_initiatory_tradition_ilo",
+    "name": {
+      "primary": "Ilo Yaladi, the First Herdsman",
+      "alt": [
+        "Ilo",
+        "Ilo son of Yaladi",
+        "Ilo Yaladi"
+      ],
+      "transliterations": {
+        "Fulfulde": "Ilo Yaladi",
+        "etymology": "'Ilo, son of Yaladi', named in Fulani pastoral tradition as the first human herdsman."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Fulɓe pastoral initiatory tradition",
+    "primaryTradition": "Fulɓe pastoral initiatory tradition",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In Fulani pastoral tradition, Ilo son of Yaladi followed the serpent Tyanaba into the waters of Lake Debo and drove out the first cattle, becoming the first herdsman of the Fulani.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, 'Les fresques d'époque bovidienne du Tassili n'Ajjer et les traditions des Peul: hypothèses d'interprétation', Journal de la Société des Africanistes, vol. 36, no. 1, 1966, pp. 141–157."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cattle-herding",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "drive_the_first_herd",
+        "name": "to drive out and tend the first herd of cattle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, 'Les fresques d'époque bovidienne du Tassili n'Ajjer et les traditions des Peul: hypothèses d'interprétation', Journal de la Société des Africanistes, vol. 36, no. 1, 1966, pp. 141–157."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ful_e_pastoral_initiatory_tradition_nelbi",
+        "name": "Nelbi herding staff",
+        "kind": "emblem",
+        "role": "the herdsman's walking stick used to drive cattle, whose pastoral use tradition traces to Ilo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ful_e_pastoral_initiatory_tradition_tyanaba",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, 'Les fresques d'époque bovidienne du Tassili n'Ajjer et les traditions des Peul: hypothèses d'interprétation', Journal de la Société des Africanistes, vol. 36, no. 1, 1966, pp. 141–157."
+          }
+        ],
+        "notes": "Fulani tradition pairs Ilo with the primordial serpent Tyanaba as brothers; Ilo follows Tyanaba into the lake to receive and drive out the first cattle, thereby becoming the first shepherd of mankind."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ilo son of Yaladi is the mythic first herdsman of the Fulani, twin-brother of the serpent Tyanaba, who led out the first cattle from the waters.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, 'Les fresques d'époque bovidienne du Tassili n'Ajjer et les traditions des Peul: hypothèses d'interprétation', Journal de la Société des Africanistes, vol. 36, no. 1, 1966, pp. 141–157."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ilo, son of Yaladi, is the primordial first herdsman of Fulani cosmology, paired in tradition with the serpent Tyanaba as his brother. When the cattle followed Tyanaba into the depths of Lake Debo, Ilo tapped and drove them out in the darkness, founding the pastoral vocation of the Fulani. He stands at the head of the line of herders whose sacred knowledge the initiatory tradition transmits."
+  },
+  {
+    "id": "ful_e_pastoral_initiatory_tradition_ndurbeele",
+    "name": {
+      "primary": "Ndurbeele, the Primordial Hermaphrodite Cow",
+      "alt": [
+        "Ndurbeele",
+        "Ndourbêle"
+      ],
+      "transliterations": {
+        "Fulfulde": "Ndurbeele",
+        "etymology": ""
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Fulɓe pastoral initiatory tradition",
+    "primaryTradition": "Fulɓe pastoral initiatory tradition",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Fulɓe pastoral initiatory tradition traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Koumen initiatory tradition, Ndurbeele is the primordial hermaphrodite cow issuing from the creative act of Guéno, ancestress of the first cattle.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cattle-and-creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nagge",
+          "script": "Latin",
+          "rom": "cow"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "engender_cattle",
+        "name": "to bring forth the first herd of cattle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ful_e_pastoral_initiatory_tradition_geno",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          }
+        ],
+        "notes": "Ndurbeele issues from Guéno's primordial drop of milk as the source and mother of all cattle."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ndurbeele is the primordial hermaphrodite cow of Fulani cosmogony, issuing from Guéno's creative act and ancestress of the original herd associated with Tyanaba.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, Koumen: Texte initiatique des pasteurs peul, Cahiers de l'Homme, Mouton & Cie, Paris, 1961."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Amadou Hampâté Bâ & Germaine Dieterlen, 'Les fresques d'époque bovidienne du Tassili n'Ajjer et les traditions des Peul: hypothèses d'interprétation', Journal de la Société des Africanistes, vol. 36, no. 1, 1966, pp. 141–157."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ndurbeele is the mythical hermaphrodite cow of Fulani cosmogony who represents creation itself. Emerging from the primordial drop of milk fashioned by Guéno — composed of the four elements and four directions — she is the ancestress of the twenty-two original cattle. Contact with this bovine hermaphrodite is among the mysteries encountered in the pastoral initiation, situating the sacred origin of the herds at the centre of Fulani religious thought."
+  }
+]
+```

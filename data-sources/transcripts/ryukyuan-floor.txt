@@ -1,0 +1,1073 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Ryukyuan
+Era (registered, exact): "Ryukyuan traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six figures that scholarship individuates beyond the existing creation-cycle core: the household hearth deity Hinukan (Lebra 1966; Sered 1999); Tentei, the Heavenly Emperor of the royal chronicles who commissions Amamikyu (Chūzan Seikan 1650; Kerr 1958); the Maitreya-derived visiting god of plenty Miruku (Ouwehand 1985; Miyata 1988); Akariyazagama, the Miyako water-of-life bearer in the origin-of-death myth recorded by Nevsky (Nevskii 1971; Jarosz 2015); and the Miyako creator pair Koitsuno and Koitama of Harimizu utaki (Miyakojima kiji shitsugi 1748; Kiyomura 1927). New figures are wired into the pantheon where attested: Akariyazagama serves the sun deity Tedako, and the Miyako pair act under Tentei's command. Deliberately excluded as not genuinely individuated: Tenson (a dynastic eponym covering twenty-five unnamed generations), the masked visiting-deity complexes Pāntu and Akamata-Kuromata (village-variable ritual classes), spirit classes such as kijimuna, and the Nirai-Kanai and obotsu 'great lords', which the sources treat as aspects of the already-registered Kinmamon.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "ryukyuan_hinukan",
+    "name": {
+      "primary": "Hinukan, the Hearth Fire Deity",
+      "alt": [
+        "Hinukan",
+        "Hi-nu-kan",
+        "Fii nu kan",
+        "ヒヌカン",
+        "火の神",
+        "Ukama nu kami (ウカマヌカミ)",
+        "Ukama-ganashī (ウカマガナシー)",
+        "Umichimun (ウミチムン)"
+      ],
+      "transliterations": {
+        "ryu": "火ヌ神（ヒヌカン）",
+        "etymology": "Okinawan fī/hī 'fire' + nu (genitive) + kan 'deity', 'the deity of fire'; also called ukama nu kami, 'deity of the cooking hearth' (William P. Lebra, Okinawan Religion, 1966)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ryukyuan",
+    "primaryTradition": "Ryukyuan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Ryukyuan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Ryukyuan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Documented ethnographically as the hearth deity enshrined in three stones or a censer in the kitchen of virtually every Okinawan and Amami household, the centre of domestic worship (Lebra 1966).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William P. Lebra, Okinawan Religion: Belief, Ritual, and Social Structure (Honolulu: University of Hawaii Press, 1966)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hearth-fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "火",
+          "script": "kanji",
+          "rom": "fī / hī — Okinawan 'fire'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William P. Lebra, Okinawan Religion: Belief, Ritual, and Social Structure (Honolulu: University of Hawaii Press, 1966)"
+          }
+        ]
+      },
+      {
+        "sphereId": "household-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Susan Sered, Women of the Sacred Groves: Divine Priestesses of Okinawa (New York: Oxford University Press, 1999)"
+          }
+        ]
+      },
+      {
+        "sphereId": "prayer-mediation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "御願",
+          "script": "kanji",
+          "rom": "ugan — 'prayer, supplication', announced first before the hearth deity"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Susan Sered, Women of the Sacred Groves: Divine Priestesses of Okinawa (New York: Oxford University Press, 1999)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "William P. Lebra, Okinawan Religion: Belief, Ritual, and Social Structure (Honolulu: University of Hawaii Press, 1966)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "convey_prayers_to_heaven",
+        "name": "to carry the household's prayers and reports to the gods of heaven",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "At the close of the lunar year the deity is sent off to heaven with an account of the household, returning at the new year; scholars see here the influence of the Chinese stove god.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William P. Lebra, Okinawan Religion: Belief, Ritual, and Social Structure (Honolulu: University of Hawaii Press, 1966)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Susan Sered, Women of the Sacred Groves: Divine Priestesses of Okinawa (New York: Oxford University Press, 1999)"
+          }
+        ]
+      },
+      {
+        "id": "guard_family_hearth",
+        "name": "to guard the family hearth and the wellbeing of the household",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William P. Lebra, Okinawan Religion: Belief, Ritual, and Social Structure (Honolulu: University of Hawaii Press, 1966)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ryukyuan_umichimun_hearthstones",
+        "name": "Umichimun, the three hearthstones",
+        "kind": "cult object",
+        "role": "Original embodiment of the deity: the three stones of the old cooking hearth, venerated as the god's seat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William P. Lebra, Okinawan Religion: Belief, Ritual, and Social Structure (Honolulu: University of Hawaii Press, 1966)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okinawa daihyakka jiten [沖縄大百科事典, Okinawa Encyclopedia] (Naha: Okinawa Times, 1983), s.v. 'ヒヌカン'"
+          }
+        ]
+      },
+      {
+        "id": "ryukyuan_hinukan_ukoru",
+        "name": "Ukōru, the hearth censer",
+        "kind": "cult object",
+        "role": "Ceramic incense bowl that replaces the hearthstones in modern kitchens; its ash is held to house the deity",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Susan Sered, Women of the Sacred Groves: Divine Priestesses of Okinawa (New York: Oxford University Press, 1999)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Hinukan is the hearth fire deity of Okinawan and Amami household religion, embodied in three hearthstones or a censer, tended by the senior woman of the house, and serving as the household's messenger to the gods of heaven.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "William P. Lebra, Okinawan Religion: Belief, Ritual, and Social Structure (Honolulu: University of Hawaii Press, 1966)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Susan Sered, Women of the Sacred Groves: Divine Priestesses of Okinawa (New York: Oxford University Press, 1999)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okinawa daihyakka jiten [沖縄大百科事典, Okinawa Encyclopedia] (Naha: Okinawa Times, 1983), s.v. 'ヒヌカン'"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hinukan, 'the deity of fire', is the hearth deity of household religion throughout Okinawa and the Amami islands. Originally the cooking hearth itself was the object of worship; the deity later came to be embodied in three hearthstones (umichimun) and, in modern kitchens, in a small ceramic censer whose ash is held to house the god. The hearth deity is generally regarded as female — though household traditions also speak of a divine couple or of three sibling deities — and is tended exclusively by the senior woman of the household, who makes offerings on the first and fifteenth of each lunar month; the cult passes from woman to woman within the house. Hinukan is the household's intermediary with the higher gods: prayers are announced first at the hearth, and at the close of the lunar year the deity ascends to heaven to report on the family, returning at the new year, a rite in which scholars see the influence of the Chinese stove god. Many Okinawans hold that a dwelling can stand without an ancestral altar but not without its hearth deity."
+  },
+  {
+    "id": "ryukyuan_tentei",
+    "name": {
+      "primary": "Tentei, the Heavenly Emperor",
+      "alt": [
+        "Tentei",
+        "天帝",
+        "The Heavenly Emperor"
+      ],
+      "transliterations": {
+        "ja": "天帝",
+        "etymology": "Sino-Japanese tentei, 'heavenly sovereign', the term the Ryukyuan royal chronicles borrowed from Chinese cosmology (Tiandi) for the high god of heaven (Chūzan Seikan, 1650)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ryukyuan",
+    "primaryTradition": "Ryukyuan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Ryukyuan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Ryukyuan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "First set down in the royal chronicle Chūzan Seikan (1650), where the Heavenly Emperor, dwelling in the heavenly stronghold, commands the goddess Amamikyu to descend and build the Ryukyu Islands.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shō Shōken (Haneji Chōshū), Chūzan Seikan [Mirror of Chūzan], royal chronicle of Ryukyu (1650)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George H. Kerr, Okinawa: The History of an Island People (Rutland, VT: Charles E. Tuttle, 1958)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "heaven",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "天",
+          "script": "kanji",
+          "rom": "ten / tin — 'heaven', the sky realm of Ryukyuan cosmology"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mabuchi Tōichi, 'Space and Time in Ryukyuan Cosmology', Asian Folklore Studies 39/1 (1980)"
+          }
+        ]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George H. Kerr, Okinawa: The History of an Island People (Rutland, VT: Charles E. Tuttle, 1958)"
+          }
+        ]
+      },
+      {
+        "sphereId": "sovereignty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shō Shōken (Haneji Chōshū), Chūzan Seikan [Mirror of Chūzan], royal chronicle of Ryukyu (1650)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_heavenly_gods",
+        "name": "to command the deities of heaven",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He orders Amamikyu to build the islands in the Okinawan chronicle, and dispatches Koitsuno and Koitama to Miyako in the royal record of that island.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shō Shōken (Haneji Chōshū), Chūzan Seikan [Mirror of Chūzan], royal chronicle of Ryukyu (1650)"
+          },
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          }
+        ]
+      },
+      {
+        "id": "supply_creation_materials",
+        "name": "to grant the stones, grasses, and trees from which the islands were built",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shō Shōken (Haneji Chōshū), Chūzan Seikan [Mirror of Chūzan], royal chronicle of Ryukyu (1650)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George H. Kerr, Okinawa: The History of an Island People (Rutland, VT: Charles E. Tuttle, 1958)"
+          }
+        ]
+      },
+      {
+        "id": "send_down_progenitors",
+        "name": "to send down his son and daughter to become the ancestors of humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Their three sons and two daughters become the first king, the first lord, the first farmer, the first high priestess, and the first village priestess.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shō Shōken (Haneji Chōshū), Chūzan Seikan [Mirror of Chūzan], royal chronicle of Ryukyu (1650)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George H. Kerr, Okinawa: The History of an Island People (Rutland, VT: Charles E. Tuttle, 1958)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tentei, the Heavenly Emperor of the Ryukyuan royal chronicles, is the high god of heaven who commands Amamikyu to build the Ryukyu Islands and supplies the divine children who become the ancestors of human society.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shō Shōken (Haneji Chōshū), Chūzan Seikan [Mirror of Chūzan], royal chronicle of Ryukyu (1650)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "George H. Kerr, Okinawa: The History of an Island People (Rutland, VT: Charles E. Tuttle, 1958)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tentei, the Heavenly Emperor, is the high god of the Ryukyuan royal chronicles. In the opening of the Chūzan Seikan (1650), the oldest official history of the kingdom, he dwells in a heavenly stronghold, looks down upon an empty sea, and commands the goddess Amamikyu to descend and build the Ryukyu Islands, supplying her with the grasses, trees, and stones of heaven. When the finished islands lack people, he sends down his own son and daughter, whose three sons and two daughters become the first sovereign, the first territorial lord, the first farmer, the first high priestess, and the first village priestess. The same heavenly sovereign appears in the royal-government records of the outer islands, where he dispatches the deities Koitsuno and Koitama to bring order and people to the newly made island of Miyako. The figure reflects the court's use of Chinese cosmological language for the native sky realm of Ryukyuan belief."
+  },
+  {
+    "id": "ryukyuan_miruku",
+    "name": {
+      "primary": "Miruku, the Bringer of the World of Plenty",
+      "alt": [
+        "Miruku",
+        "ミルク",
+        "Mirukugami (ミルク神)",
+        "弥勒神",
+        "Miroku"
+      ],
+      "transliterations": {
+        "ryu": "ミルク",
+        "ja": "弥勒神",
+        "etymology": "Okinawan form of Miroku, the Japanese name of the bodhisattva Maitreya (Sanskrit Maitreya), with regular raising of o to u; in the islands the name designates a masked folk god of plenty rather than the Buddhist bodhisattva (Miyata 1988)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ryukyuan",
+    "primaryTradition": "Ryukyuan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Ryukyuan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Ryukyuan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Enters island festival religion in the early modern period, when the Maitreya figure transmitted through continental contact was refashioned as the masked god who arrives from beyond the sea bearing the world of plenty (Ouwehand 1985).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Ouwehand, Hateruma: Socio-Religious Aspects of a South-Ryukyuan Island Culture (Leiden: E. J. Brill, 1985)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "harvest-abundance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "弥勒世",
+          "script": "kanji",
+          "rom": "miruku-yū — 'the world of Miruku', an age of peace and abundant harvests"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Miyata Noboru, 'Types of Maitreya Belief in Japan', in Alan Sponberg and Helen Hardacre (eds.), Maitreya, the Future Buddha (Cambridge: Cambridge University Press, 1988)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "'Saviors Who Come from the Sea and Earth: The Jinin (眞人) of Korea and Miroku (ミロク) of Japan', Journal of Marine and Island Cultures 9/1 (2020)"
+          }
+        ]
+      },
+      {
+        "sphereId": "sea-otherworld",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ニライカナイ",
+          "script": "katakana",
+          "rom": "Nirai Kanai — the otherworld across the sea from which the god arrives"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Ouwehand, Hateruma: Socio-Religious Aspects of a South-Ryukyuan Island Culture (Leiden: E. J. Brill, 1985)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mabuchi Tōichi, 'Space and Time in Ryukyuan Cosmology', Asian Folklore Studies 39/1 (1980)"
+          }
+        ]
+      },
+      {
+        "sphereId": "good-fortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "世果報",
+          "script": "kanji",
+          "rom": "yugafū — 'good fortune of the world', the blessing the god brings ashore"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kishaba Eijun, Yaeyama min'yōshi [Records of Yaeyama Folk Song] (Naha: Okinawa Times, 1967)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_world_of_plenty",
+        "name": "to bring the world of plenty from across the sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Miyata Noboru, 'Types of Maitreya Belief in Japan', in Alan Sponberg and Helen Hardacre (eds.), Maitreya, the Future Buddha (Cambridge: Cambridge University Press, 1988)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "'Saviors Who Come from the Sea and Earth: The Jinin (眞人) of Korea and Miroku (ミロク) of Japan', Journal of Marine and Island Cultures 9/1 (2020)"
+          }
+        ]
+      },
+      {
+        "id": "bestow_harvest_fortune",
+        "name": "to bestow rich harvests and good fortune on the villages he visits",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Ouwehand, Hateruma: Socio-Religious Aspects of a South-Ryukyuan Island Culture (Leiden: E. J. Brill, 1985)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ryukyuan_miruku_mask",
+        "name": "Miruku mask",
+        "kind": "mask",
+        "role": "Large white smiling mask, modelled on the Chinese pot-bellied monk Budai, worn with a long yellow robe by the god's impersonator in village processions",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Ouwehand, Hateruma: Socio-Religious Aspects of a South-Ryukyuan Island Culture (Leiden: E. J. Brill, 1985)"
+          }
+        ]
+      },
+      {
+        "id": "ryukyuan_miruku_fan",
+        "name": "Miruku's fan",
+        "kind": "regalia",
+        "role": "Fan carried by the god at the head of festival processions, waved to beckon in the age of plenty",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "C. Ouwehand, Hateruma: Socio-Religious Aspects of a South-Ryukyuan Island Culture (Leiden: E. J. Brill, 1985)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "大国ぬ弥勒 (Ufukuku nu Miruku, 'Miruku of the great land')",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kishaba Eijun, Yaeyama min'yōshi [Records of Yaeyama Folk Song] (Naha: Okinawa Times, 1967)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Miruku is the Ryukyuan god of the world of plenty (miruku-yū), a Maitreya-derived masked deity who visits village festivals from across the sea to bestow harvests and good fortune.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "C. Ouwehand, Hateruma: Socio-Religious Aspects of a South-Ryukyuan Island Culture (Leiden: E. J. Brill, 1985)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Miyata Noboru, 'Types of Maitreya Belief in Japan', in Alan Sponberg and Helen Hardacre (eds.), Maitreya, the Future Buddha (Cambridge: Cambridge University Press, 1988)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "'Saviors Who Come from the Sea and Earth: The Jinin (眞人) of Korea and Miroku (ミロク) of Japan', Journal of Marine and Island Cultures 9/1 (2020)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Miruku is the Ryukyuan god of the world of plenty. The name is the Okinawan form of Miroku, the bodhisattva Maitreya, but in the islands the figure has become a folk deity of harvest and good fortune who comes to the villages from across the sea, from the otherworld Nirai Kanai. In festival processions — most famously the Mushāma festival of Hateruma and the harvest festivals of the Yaeyama islands, where the mask tradition is said to have spread from Tonoshiro on Ishigaki — a villager embodies the god in a large white smiling mask derived from the Chinese pot-bellied monk Budai, a long yellow robe, and a fan, leading children and dancers and beckoning in the miruku-yū, the age of peace and abundant harvests celebrated in songs such as the Miruku-bushi. The deity is generally represented as male through the Budai mask, though some island traditions regard Miruku as female."
+  },
+  {
+    "id": "ryukyuan_akariyazagama",
+    "name": {
+      "primary": "Akariyazagama, Bearer of the Water of Life",
+      "alt": [
+        "Akariyazagama",
+        "アカリヤザガマ",
+        "Akarjazzagama"
+      ],
+      "transliterations": {
+        "mvi": "アカリヤザガマ (akarjazzagama)",
+        "etymology": "Miyakoan personal name recorded by Nikolai Nevsky in his 1920s fieldwork; the final element -gama is the Miyakoan diminutive-affectionate suffix (Jarosz 2015)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Ryukyuan",
+    "primaryTradition": "Ryukyuan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Ryukyuan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Ryukyuan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Placed at the beginning of human history in Miyako tradition, when the Moon and the Sun sent him to earth with the water of life and the water of death on the first night of the sïtsï festival (Nevskii 1971).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nikolai A. Nevskii, Tsuki to fushi [The Moon and Immortality], ed. Oka Masao, Tōyō Bunko 185 (Tokyo: Heibonsha, 1971)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rejuvenating-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "変若水",
+          "script": "kanji",
+          "rom": "sïdimizï / shidimizu — 'water of rebirth' that renews life"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nikolai A. Nevskii, Tsuki to fushi [The Moon and Immortality], ed. Oka Masao, Tōyō Bunko 185 (Tokyo: Heibonsha, 1971)"
+          }
+        ]
+      },
+      {
+        "sphereId": "origin-of-death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "死に水",
+          "script": "kanji",
+          "rom": "sïnimizï / shinimizu — 'water of death' that fell to humankind"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nikolai A. Nevskii, Tsuki to fushi [The Moon and Immortality], ed. Oka Masao, Tōyō Bunko 185 (Tokyo: Heibonsha, 1971)"
+          }
+        ]
+      },
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "月",
+          "script": "kanji",
+          "rom": "tsïkï — 'moon', on whose face the water-carrier is said to stand"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nikolai A. Nevskii, Tsuki to fushi [The Moon and Immortality], ed. Oka Masao, Tōyō Bunko 185 (Tokyo: Heibonsha, 1971)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Katō Kyūzō, Ten no hebi: Nikorai Nefusukī no shōgai [The Heavenly Serpent: The Life of Nikolai Nevsky] (Tokyo: Kawade Shobō Shinsha, 1976)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry_two_waters",
+        "name": "to carry the waters of life and death between heaven and earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nikolai A. Nevskii, Tsuki to fushi [The Moon and Immortality], ed. Oka Masao, Tōyō Bunko 185 (Tokyo: Heibonsha, 1971)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Aleksandra Jarosz, Nikolai Nevskiy's Miyakoan Dictionary: Reconstruction from the Manuscript and Its Ethnolinguistic Analysis (PhD dissertation, Adam Mickiewicz University in Poznań, 2015)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ryukyuan_akariyazagama_pails",
+        "name": "Pails of the two waters",
+        "kind": "emblem",
+        "role": "Two water pails carried on a shoulder pole, one holding the water of rebirth and one the water of death; he is pictured standing on the moon still holding them",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nikolai A. Nevskii, Tsuki to fushi [The Moon and Immortality], ed. Oka Masao, Tōyō Bunko 185 (Tokyo: Heibonsha, 1971)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "ryukyuan_tedako",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nikolai A. Nevskii, Tsuki to fushi [The Moon and Immortality], ed. Oka Masao, Tōyō Bunko 185 (Tokyo: Heibonsha, 1971)"
+          }
+        ],
+        "notes": "In the Miyako tale he is the servant whom the Sun and the Moon dispatched to earth with the two waters; the Ryukyuan sun deity is registered in this tradition as Tedako (Tida)."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Akariyazagama is the servant of the Moon and Sun in Miyako myth who, sent to earth with the water of life for humans and the water of death for serpents, let a serpent bathe in the water of life, so that snakes renew their skins while human beings die.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Nikolai A. Nevskii, Tsuki to fushi [The Moon and Immortality], ed. Oka Masao, Tōyō Bunko 185 (Tokyo: Heibonsha, 1971)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Aleksandra Jarosz, Nikolai Nevskiy's Miyakoan Dictionary: Reconstruction from the Manuscript and Its Ethnolinguistic Analysis (PhD dissertation, Adam Mickiewicz University in Poznań, 2015)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Katō Kyūzō, Ten no hebi: Nikorai Nefusukī no shōgai [The Heavenly Serpent: The Life of Nikolai Nevsky] (Tokyo: Kawade Shobō Shinsha, 1976)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Akariyazagama is a figure of Miyako Island myth recorded in the 1920s by the Russian orientalist Nikolai Nevsky. At the beginning of human history the Moon and the Sun sent their servant Akariyazagama down to earth on the night of the sïtsï festival with two pails on a shoulder pole: the water of rebirth (sïdimizï), to be poured on humankind, and the water of death (sïnimizï), meant for the serpents. Resting on the way, he set the pails down, and a serpent bathed in the water of rebirth; weeping, he could only pour the water of death over human beings before returning to heaven. Ever since, snakes slough their skins and renew their lives while humans age and die; for his failure he is said to stand on the face of the moon still holding his pails. The tale, which Nevsky connected with the Miyako custom of drawing lustral water at the sïtsï new-year festival, is the classic Ryukyuan myth of the origin of death."
+  },
+  {
+    "id": "ryukyuan_koitsuno",
+    "name": {
+      "primary": "Koitsuno, Creator of Miyako",
+      "alt": [
+        "Koitsuno",
+        "Koitsunu",
+        "古意角",
+        "こいつの",
+        "コイツヌ"
+      ],
+      "transliterations": {
+        "ja": "古意角",
+        "etymology": "Name preserved in phonogram (ateji) spelling in the royal-government record Miyakojima kiji shitsugi (1748); read Koitsuno or Koitsunu in modern accounts (Kiyomura 1927)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ryukyuan",
+    "primaryTradition": "Ryukyuan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Ryukyuan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Ryukyuan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Recorded in the royal-government document Miyakojima kiji shitsugi (1748) as the male deity whom the Heavenly Emperor sent down to guard and people the newly made island of Miyako.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "island-creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "すま",
+          "script": "hiragana",
+          "rom": "sïma — Miyakoan 'island, home community'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Aleksandra Jarosz, Nikolai Nevskiy's Miyakoan Dictionary: Reconstruction from the Manuscript and Its Ethnolinguistic Analysis (PhD dissertation, Adam Mickiewicz University in Poznań, 2015)"
+          }
+        ]
+      },
+      {
+        "sphereId": "human-progeniture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_miyako_island",
+        "name": "to bring order and habitation to the island of Miyako",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          }
+        ]
+      },
+      {
+        "id": "beget_first_islanders",
+        "name": "to beget the first inhabitants of Miyako",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "ryukyuan_koitama",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          }
+        ],
+        "notes": "Male half of the creator pair of Miyako: pleading that a male god alone could not create, he obtained the goddess Koitama as his partner, and together they cultivated the island and bore its people."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "ryukyuan_tentei",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          }
+        ],
+        "notes": "Sent down to Miyako at the command of the Heavenly Emperor."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Koitsuno is the male creator deity of Miyako Island, sent down by the Heavenly Emperor with the goddess Koitama to cultivate the island and beget its people; the pair are enshrined at Harimizu utaki, Miyako's foremost sacred grove.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okinawa daihyakka jiten [沖縄大百科事典, Okinawa Encyclopedia] (Naha: Okinawa Times, 1983), s.v. '漲水御嶽'"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Koitsuno is the male creator deity of Miyako Island. According to the creation account preserved in the royal-government record Miyakojima kiji shitsugi (1748), after the island had been raised from the sea the Heavenly Emperor charged Koitsuno with bringing it to order; Koitsuno answered that all things require the pairing of yin and yang and that a male god alone could not create, so the goddess Koitama was sent down with him. Descending at the spring of Harimizu, the two cultivated the land, begot the human inhabitants of the island, and, their work complete, returned to heaven. The pair are enshrined at Harimizu utaki in Hirara, the foremost sacred grove of Miyako, worshipped since before the founding of the Ryukyu Kingdom and also famous as the seat of the island's white-serpent legends."
+  },
+  {
+    "id": "ryukyuan_koitama",
+    "name": {
+      "primary": "Koitama, Creatrix of Miyako",
+      "alt": [
+        "Koitama",
+        "姑依玉",
+        "こいたま",
+        "コイタマ"
+      ],
+      "transliterations": {
+        "ja": "姑依玉",
+        "etymology": "Name preserved in phonogram (ateji) spelling in the royal-government record Miyakojima kiji shitsugi (1748); read Koitama in modern accounts (Kiyomura 1927)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ryukyuan",
+    "primaryTradition": "Ryukyuan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Ryukyuan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Ryukyuan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Recorded in the royal-government document Miyakojima kiji shitsugi (1748) as the goddess sent down by the Heavenly Emperor to join the god Koitsuno in peopling the newly made island of Miyako.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "island-creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "すま",
+          "script": "hiragana",
+          "rom": "sïma — Miyakoan 'island, home community'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Aleksandra Jarosz, Nikolai Nevskiy's Miyakoan Dictionary: Reconstruction from the Manuscript and Its Ethnolinguistic Analysis (PhD dissertation, Adam Mickiewicz University in Poznań, 2015)"
+          }
+        ]
+      },
+      {
+        "sphereId": "human-progeniture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_miyako_island",
+        "name": "to bring order and habitation to the island of Miyako",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          }
+        ]
+      },
+      {
+        "id": "beget_first_islanders",
+        "name": "to bear the first inhabitants of Miyako",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "ryukyuan_koitsuno",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          }
+        ],
+        "notes": "Female half of the creator pair of Miyako, sent down as partner to the god Koitsuno so that creation, requiring the union of male and female, could proceed."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "ryukyuan_tentei",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          }
+        ],
+        "notes": "Sent down to Miyako at the command of the Heavenly Emperor."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Koitama is the female creator deity of Miyako Island, sent down by the Heavenly Emperor as partner to the god Koitsuno; together they cultivated the island and bore its people, and the pair are enshrined at Harimizu utaki, Miyako's foremost sacred grove.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Miyakojima kiji shitsugi [宮古島記事仕次], royal-government record of Miyako (1748)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kiyomura Kōnin, Miyako shiden [宮古史伝, Historical Traditions of Miyako] (1927)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Okinawa daihyakka jiten [沖縄大百科事典, Okinawa Encyclopedia] (Naha: Okinawa Times, 1983), s.v. '漲水御嶽'"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Koitama is the female creator deity of Miyako Island. In the creation account preserved in the royal-government record Miyakojima kiji shitsugi (1748), the Heavenly Emperor first charged the god Koitsuno with bringing the newly made island to order; when Koitsuno pleaded that all creation requires the union of yin and yang, the goddess Koitama was sent down to join him. Descending together at the spring of Harimizu, the pair cultivated the land, bore the ancestors of the island's people, and, their work complete, returned to heaven. Koitama is enshrined together with Koitsuno at Harimizu utaki in Hirara, the foremost sacred grove of Miyako, whose worship predates the founding of the Ryukyu Kingdom."
+  }
+]
+```

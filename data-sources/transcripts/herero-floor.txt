@@ -1,0 +1,178 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Herero
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added one figure: Kamangarunga, the First Woman who emerged from the omumborombonga tree as wife of the first man, attested in Vedder (1928), Irle (1906), and Scheub's Dictionary of African Mythology (2000), and wired to the existing herero_kamangundu via a directed consort-of relation. The other divine names documented for the Herero (Karunga, Musisi, Kaheua, Nguvitjita, Karivangera, Kapurua) are recorded only as alternate designations of the supreme being already covered by herero_ndjambi and herero_mukuru, and Karunga is explicitly an alias in the existing Ndjambi entry. Herero religion is otherwise ancestor-focused (unnamed ovakuru and the okuruwo holy fire), with no further individuated named figures in the scholarship checked, so the attested record is essentially exhausted with this addition.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "herero_kamangarunga",
+    "name": {
+      "primary": "the First Woman from the Tree",
+      "alt": [
+        "Kamangarunga",
+        "Kamungarunga",
+        "Kamangundu (feminine variant)"
+      ],
+      "transliterations": {
+        "otjiherero": "Kamangarunga",
+        "etymology": "Otjiherero personal name recorded in emergence narratives of the omumborombonga tree; variant recordings Kamungarunga and Kamangundu appear across early ethnographies (Vedder 1928; Scheub 2000)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Herero",
+    "primaryTradition": "Herero",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "At the beginning of time she emerged, together with the first man and the first cattle, from the sacred omumborombonga (leadwood) tree standing between the Kaokoveld and Ovamboland (Vedder 1928; Scheub 2000).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Heinrich Vedder, The Native Tribes of South West Africa, Cape Town: Cape Times, 1928"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller, Oxford University Press, 2000"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "human-origins",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "omumborombonga",
+          "script": "Latin",
+          "rom": "the leadwood tree of emergence, Combretum imberbe"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller, Oxford University Press, 2000"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Heinrich Vedder, The Native Tribes of South West Africa, Cape Town: Cape Times, 1928"
+          }
+        ]
+      },
+      {
+        "sphereId": "ancestral-motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "eanda",
+          "script": "Latin",
+          "rom": "the Herero matrilineal descent line"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. Irle, Die Herero: Ein Beitrag zur Landes-, Volks- und Missionskunde, Gütersloh: Bertelsmann, 1906"
+          },
+          {
+            "kind": "secondary",
+            "reference": "H. G. Luttig, The Religious System and Social Organization of the Herero: A Study in Bantu Culture, Utrecht: Kemink en Zoon, 1933"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear_the_first_peoples",
+        "name": "to bear the ancestral lines from which the Herero and neighbouring peoples descend",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The emergence narrative makes her the ancestress from whom the Herero, and in some tellings the Ovambo, Nama, and Tswana, sprang.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller, Oxford University Press, 2000"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "herero_omumborombonga_tree",
+        "name": "the omumborombonga (leadwood) tree",
+        "kind": "emblem",
+        "role": "the ancestral tree from which she and the first man emerged; Herero passing such trees traditionally salute them as an ancestor",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Heinrich Vedder, The Native Tribes of South West Africa, Cape Town: Cape Times, 1928"
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. Irle, Die Herero: Ein Beitrag zur Landes-, Volks- und Missionskunde, Gütersloh: Bertelsmann, 1906"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "herero_kamangundu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller, Oxford University Press, 2000"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Heinrich Vedder, The Native Tribes of South West Africa, Cape Town: Cape Times, 1928"
+          }
+        ],
+        "notes": "She is the wife of the first man who came out of the omumborombonga tree with her, recorded variously as Kamangundu or as Mukuru the Old One."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kamangarunga is the First Woman of Herero myth, who emerged with the first man and the cattle from the sacred omumborombonga tree and became the ancestress of the Herero people.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Heinrich Vedder, The Native Tribes of South West Africa, Cape Town: Cape Times, 1928"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller, Oxford University Press, 2000"
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. Irle, Die Herero: Ein Beitrag zur Landes-, Volks- und Missionskunde, Gütersloh: Bertelsmann, 1906"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the central Herero emergence narrative, the first human couple and their cattle came out of the omumborombonga, the leadwood tree (Combretum imberbe) said to stand between the Kaokoveld and Ovamboland. The woman of this primordial couple is recorded under the names Kamangarunga or Kamungarunga, wife of the first man (Kamangundu, or Mukuru 'the Old One'). From her sprang the Herero and, in some versions, the Ovambo, Nama, and Tswana peoples, making her the mythic ancestress of the matrilineal descent lines (omaanda) central to Herero social organization. Herero travellers traditionally greeted leadwood trees with respectful words and offerings of twigs in memory of this ancestral origin."
+  }
+]
+```

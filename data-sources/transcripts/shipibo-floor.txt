@@ -1,0 +1,305 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Shipibo
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added two individuated, well-cited figures missing from the corpus: Oshe, the male moon of the Shipibo huito-stain incest myth (Margery Peña 1998; Roe 1982; Loriot et al. 1993), and Cori Inca, the beneficent "Gold Inca" hero of order paired against the existing Yoashico Inca (Bertrand-Rousseau 1984, Anthropologica 2(2); Roe 1988 in Hill, Rethinking History and Myth; Morales Chocano & Mujica Baquerizo 2019). Symmetric relation kinds may not target pre-existing ids and no directed kind (parent, consort, slayer, etc.) fits Cori Inca's rivalry with Yoashico Inca or Oshe's story, so both are documented as standing alone. Candidates rejected as non-individuated or under-attested: the chaikonibo (invisible perfected people), the ibo spirit-owners, the Wishmabo/Pleiades children (all classes or collectives), and "Wiso Ino" (black jaguar, attested only on practitioner websites).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "shipibo_oshe",
+    "name": {
+      "primary": "Moon",
+      "alt": [
+        "Oshe",
+        "Oxe",
+        "Uxe"
+      ],
+      "transliterations": {
+        "shipibo-konibo": "oxe",
+        "etymology": "Shipibo-Konibo oxe, the common noun for 'moon' (Loriot, Lauriault & Day, Diccionario shipibo-castellano, 1993)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Shipibo",
+    "primaryTradition": "Shipibo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A young man who secretly visited his sister at night was unmasked when she smeared his face with huito (Genipa americana) dye, and in shame he ascended to the sky to become the moon, whose dark markings are the indelible dye stains.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Margery Peña, Enrique. 'Versiones y distribución geográfica del mito de \"El origen de las manchas de la luna\" en la tradición oral indoamericana.' Revista de Filología y Lingüística de la Universidad de Costa Rica 24(2): 115-146, 1998."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "oxe",
+          "script": "Latin",
+          "rom": "oshe, 'moon'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loriot, James, Erwin Lauriault & Dwight Day. Diccionario shipibo-castellano. Serie Lingüística Peruana 31. Lima: Instituto Lingüístico de Verano, 1993."
+          }
+        ]
+      },
+      {
+        "sphereId": "night",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "yamé",
+          "script": "Latin",
+          "rom": "yame, 'night'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roe, Peter G. The Cosmic Zygote: Cosmology in the Amazon Basin. New Brunswick: Rutgers University Press, 1982."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ascend_to_sky",
+        "name": "to rise into the night sky and shine as the moon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Margery Peña, Enrique. 'Versiones y distribución geográfica del mito de \"El origen de las manchas de la luna\" en la tradición oral indoamericana.' Revista de Filología y Lingüística de la Universidad de Costa Rica 24(2): 115-146, 1998."
+          }
+        ]
+      },
+      {
+        "id": "visit_unseen_at_night",
+        "name": "to visit lovers unseen under cover of darkness",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roe, Peter G. The Cosmic Zygote: Cosmology in the Amazon Basin. New Brunswick: Rutgers University Press, 1982."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "shipibo_huito_face_stain",
+        "name": "Huito (Genipa americana) face stain",
+        "kind": "emblem",
+        "role": "The black genipap dye smeared on his face by his sister remains visible as the dark markings of the moon.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Margery Peña, Enrique. 'Versiones y distribución geográfica del mito de \"El origen de las manchas de la luna\" en la tradición oral indoamericana.' Revista de Filología y Lingüística de la Universidad de Costa Rica 24(2): 115-146, 1998."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Oshe is the Shipibo moon, mythically a young man who committed nocturnal incest with his sister, was marked with huito dye, and fled to the sky where the dye stains remain as the moon's spots.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Margery Peña, Enrique. 'Versiones y distribución geográfica del mito de \"El origen de las manchas de la luna\" en la tradición oral indoamericana.' Revista de Filología y Lingüística de la Universidad de Costa Rica 24(2): 115-146, 1998."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Roe, Peter G. The Cosmic Zygote: Cosmology in the Amazon Basin. New Brunswick: Rutgers University Press, 1982."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Loriot, James, Erwin Lauriault & Dwight Day. Diccionario shipibo-castellano. Serie Lingüística Peruana 31. Lima: Instituto Lingüístico de Verano, 1993."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Oshe (Shipibo oxe, 'moon') is the male moon of Shipibo-Konibo oral tradition. In the widely recorded Panoan incest myth, of which the Shipibo tell their own version, a young man crept to his sister's mosquito tent night after night without revealing himself; to discover her visitor's identity she blackened her hands with the juice of the huito fruit (Genipa americana) and smeared his face in the dark. Recognized by the indelible stain at dawn, the youth fled in shame to the sky and became the moon, and the dye marks are still visible as the lunar spots. The Shipibo narrative belongs to a myth type whose versions and geographic distribution across Indigenous America were surveyed by Enrique Margery Peña, and the moon's masculine, transgressive character within Shipibo cosmology is analyzed by Peter Roe, who contrasts the nocturnal, seductive moon with the paternal and protective sun Bari."
+  },
+  {
+    "id": "shipibo_cori_inca",
+    "name": {
+      "primary": "Gold Inca",
+      "alt": [
+        "Cori Inca",
+        "Cori-Inca",
+        "Kori Inka"
+      ],
+      "transliterations": {
+        "shipibo-konibo": "Cori Inka",
+        "etymology": "From Quechua quri 'gold' plus Inka; the name of the beneficent 'Gold Inca' culture hero in Shipibo myth (Bertrand-Rousseau 1984)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Shipibo",
+    "primaryTradition": "Shipibo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Cori Inca appears in the mythic age of the Incas as the beneficent hero of order who lived among the ancestors of the Shipibo and instituted the arts of proper cultural life, in contrast to the stingy anti-hero Yoashico Inca (Bertrand-Rousseau 1984).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bertrand-Rousseau, Pierrette. 'A propósito de la mitología shipibo.' Anthropologica 2(2): 209-232, 1984."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cultural-order",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "jakon",
+          "script": "Latin",
+          "rom": "jakon, 'good, proper'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bertrand-Rousseau, Pierrette. 'A propósito de la mitología shipibo.' Anthropologica 2(2): 209-232, 1984."
+          }
+        ]
+      },
+      {
+        "sphereId": "gold",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "cori",
+          "script": "Latin",
+          "rom": "kori, 'gold' (from Quechua quri)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roe, Peter G. 'The Josho Nahuanbo Are All Wet and Undercooked: Shipibo Views of the Whiteman and the Incas in Myth, Legend, and History.' In Jonathan D. Hill (ed.), Rethinking History and Myth: Indigenous South American Perspectives on the Past. Urbana: University of Illinois Press, 1988."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "establish_order",
+        "name": "to establish social order and teach the arts of proper living",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bertrand-Rousseau, Pierrette. 'A propósito de la mitología shipibo.' Anthropologica 2(2): 209-232, 1984."
+          }
+        ]
+      },
+      {
+        "id": "bestow_culture",
+        "name": "to bestow the goods and knowledge of cultural existence on humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roe, Peter G. 'The Josho Nahuanbo Are All Wet and Undercooked: Shipibo Views of the Whiteman and the Incas in Myth, Legend, and History.' In Jonathan D. Hill (ed.), Rethinking History and Myth: Indigenous South American Perspectives on the Past. Urbana: University of Illinois Press, 1988."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Cori Inka",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bertrand-Rousseau, Pierrette. 'A propósito de la mitología shipibo.' Anthropologica 2(2): 209-232, 1984."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Cori Inca, the 'Gold Inca,' is the beneficent Inca culture hero of Shipibo mythology, the hero of order whose adventures are narratively paired against the stingy anti-hero Yoashico Inca.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bertrand-Rousseau, Pierrette. 'A propósito de la mitología shipibo.' Anthropologica 2(2): 209-232, 1984."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Morales Chocano, Daniel & Ana Mujica Baquerizo. 'La arqueología y el mito de origen de los shipibo-conibo de la Amazonía peruana.' Investigaciones Sociales 22(40), 2019."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Roe, Peter G. 'The Josho Nahuanbo Are All Wet and Undercooked: Shipibo Views of the Whiteman and the Incas in Myth, Legend, and History.' In Jonathan D. Hill (ed.), Rethinking History and Myth: Indigenous South American Perspectives on the Past. Urbana: University of Illinois Press, 1988."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Cori Inca, the 'Gold Inca' (from Quechua quri, 'gold'), is the beneficent Inca of Shipibo-Konibo mythology. In the mythic Inca cycle of the Ucayali, the Shipibo remember several Incas who once lived among their ancestors; Cori Inca stands as the hero of order and generosity, the donor associated with the goods and disciplines of proper cultural life, while his narrative counterpart, the stingy Yoashico Inca, withholds fire and cultivated plants and thereby provokes rebellion and transformation. Pierrette Bertrand-Rousseau, working from two texts she collected among the Shipibo, analyzed the adventures of Cori Inca as hero of order against Yoashico Inca as anti-hero and founder of upheavals; Peter Roe situates these Inca figures within Shipibo reflections on the Andean past and on outsiders, and Daniel Morales Chocano and Ana Mujica Baquerizo have correlated the Inca-cycle origin mythology with the archaeological record of the Ucayali basin."
+  }
+]
+```

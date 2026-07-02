@@ -1,0 +1,493 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Salish
+Era (registered, exact): "myth-age (animal-people / spt\u00e1kwelh time)", "primordial / myth-age"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four well-attested individuated Salish figures: Fox (Interior Salish animal-person and Coyote's reviving elder brother; Teit 1912, Boas 1917), Scomalt (giant woman chief of the Okanagan island-flood origin narrative; Clark 1953, Erdoes & Ortiz 1984), Xá:ls the Coast Salish Transformer (Carlson 2001, Hill-Tout 1978, Jenness 1955), and Dohkwibuhch the Snohomish creator-changer (Clark 1953, Haeberlin & Gunther 1930). I deliberately excluded Amotken because his name literally means "the old one (who sits on the mountain top)" and he overlaps with the existing salish_old_one/Great Chief Above entry; likewise I authored no generic spirit-classes (sxwixwiyam ancestors, unnamed stl'áleqem beings). Fraternal ties between Fox and the pre-existing Coyote could not be expressed because sibling/companion kinds are symmetric-only, so Fox is documented in solitary instead.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "salish_fox",
+    "name": {
+      "primary": "Fox",
+      "alt": [
+        "Xgwélemx",
+        "Red Fox"
+      ],
+      "transliterations": {
+        "en": "Fox",
+        "etymology": "English gloss of the Interior Salish animal-person Fox, Coyote's elder brother in Plateau narratives (Teit, Mythology of the Thompson Indians, 1912)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Salish",
+    "primaryTradition": "Salish",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age (animal-people / sptákwelh time)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "myth-age (animal-people / sptákwelh time)",
+        "eraOrdering": 0,
+        "startEvent": "Fox belongs to the age of the animal-people, travelling with Coyote and repeatedly restoring him to life after his misadventures (Teit, Mythology of the Thompson Indians, 1912).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James A. Teit, Mythology of the Thompson Indians, Memoirs of the American Museum of Natural History 12.2 (Jesup North Pacific Expedition 8.2), 1912."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "revival-of-the-dead",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Franz Boas (ed.), Folk-Tales of Salishan and Sahaptin Tribes, Memoirs of the American Folk-Lore Society 11, 1917."
+          }
+        ]
+      },
+      {
+        "sphereId": "cunning",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James A. Teit, Mythology of the Thompson Indians, 1912."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "revive_coyote",
+        "name": "to restore the dead Coyote to life by stepping or jumping over his remains",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "A recurrent episode in Thompson, Shuswap and Okanagan Coyote cycles: Fox finds Coyote's bones or carcass and revives him by stepping over them.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James A. Teit, Mythology of the Thompson Indians, 1912; Franz Boas (ed.), Folk-Tales of Salishan and Sahaptin Tribes, 1917."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Fox is an individuated animal-person of Interior Salish mythology, Coyote's elder brother and companion, best known for repeatedly resurrecting Coyote by stepping over his bones.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "James A. Teit, Mythology of the Thompson Indians, Memoirs of the American Museum of Natural History 12.2 (Jesup North Pacific Expedition 8.2), 1912."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Franz Boas (ed.), Folk-Tales of Salishan and Sahaptin Tribes, Memoirs of the American Folk-Lore Society 11, 1917."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Interior Salish (Thompson, Shuswap, Okanagan) narrative cycles recorded by James Teit and edited by Franz Boas, Fox is a distinct animal-person of the myth age, usually presented as Coyote's elder brother or close companion. His signature role is that of reviver: whenever Coyote's greed or foolishness gets him killed, Fox seeks out the bones or carcass and brings Coyote back to life, typically by stepping or jumping over the remains. Fox is generally portrayed as wiser and more restrained than Coyote, serving as a moral counterweight within the trickster cycle."
+  },
+  {
+    "id": "salish_scomalt",
+    "name": {
+      "primary": "Scomalt",
+      "alt": [
+        "Skomalt",
+        "Scomalt the Giantess"
+      ],
+      "transliterations": {
+        "en": "Scomalt",
+        "etymology": "Name recorded from Okanagan (Okanogan) tradition for the giant woman chief of the white giants of the floating island; the etymology is not securely glossed in the ethnographic record (Clark, Indian Legends of the Pacific Northwest, 1953)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Salish",
+    "primaryTradition": "Salish",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial / myth-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial / myth-age",
+        "eraOrdering": 0,
+        "startEvent": "Scomalt rules the white giants on a remote island at the beginning of the world, before the flood that drives the ancestors of the Okanagan to the mainland (Clark, Indian Legends of the Pacific Northwest, 1953).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sovereignty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Richard Erdoes and Alfonso Ortiz (eds.), American Indian Myths and Legends, Pantheon Books, 1984 (Okanogan flood narrative)."
+          }
+        ]
+      },
+      {
+        "sphereId": "flood-and-sea",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "break_off_land",
+        "name": "to break off part of the island and set it adrift on the sea with the rebellious giants aboard",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Okanagan origin narrative Scomalt, angered by the warring giants, breaks off the piece of the island on which they live and pushes it out to sea; the survivors of its sinking become the ancestors of the Okanagan people.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Richard Erdoes and Alfonso Ortiz (eds.), American Indian Myths and Legends, Pantheon Books, 1984."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Scomalt is the powerful giant woman who chiefs the white giants of a primordial island in Okanagan tradition and whose punishment of the quarrelling giants by setting their land adrift produces the flood-borne ancestors of the Okanagan people.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Richard Erdoes and Alfonso Ortiz (eds.), American Indian Myths and Legends, Pantheon Books, 1984."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Scomalt appears in the Okanagan (Okanogan) origin narrative first recorded in the fur-trade era and later anthologized by Ella Clark and by Erdoes and Ortiz. She is described as a woman of great height and power who ruled an island of white giants in the primordial sea and 'could create whatever she wished.' When the giants fell to fighting among themselves, she broke off the portion of the island where they lived and pushed it adrift; it slowly sank, and a surviving man and woman who escaped in a canoe reached the mainland and became the ancestors of the Okanagan people. She is one of the few individually named female sovereign figures in Interior Salish oral literature."
+  },
+  {
+    "id": "salish_xals",
+    "name": {
+      "primary": "Xá:ls",
+      "alt": [
+        "Xals",
+        "Xexá:ls",
+        "Xexa:ls",
+        "Hals",
+        "Kals",
+        "the Transformer"
+      ],
+      "transliterations": {
+        "halkomelem": "Xá:ls (pl. Xexá:ls)",
+        "etymology": "Halq'eméylem name of the Transformer(s); Stó:lō elders gloss Xá:ls in English as 'Transformer,' 'Changer,' or 'the one who makes things right' (Carlson, A Stó:lō-Coast Salish Historical Atlas, 2001)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Salish",
+    "primaryTradition": "Salish",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "myth-age (animal-people / sptákwelh time)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "myth-age (animal-people / sptákwelh time)",
+        "eraOrdering": 0,
+        "startEvent": "In the Stó:lō sxwōxwiyám, Xá:ls and his bear siblings (the Xexá:ls, children of Red-Headed Woodpecker and Black Bear) travel through the land at the end of the chaotic myth age, transforming people and animals into their present forms (Carlson, A Stó:lō-Coast Salish Historical Atlas, 2001).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Keith Thor Carlson (ed.), A Stó:lō-Coast Salish Historical Atlas, Douglas & McIntyre / University of Washington Press, 2001."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "transformation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Xexá:ls",
+          "script": "Latin (Halq'eméylem orthography)",
+          "rom": "the Transformers"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles Hill-Tout, The Salish People (ed. Ralph Maud), 4 vols., Talonbooks, 1978."
+          }
+        ]
+      },
+      {
+        "sphereId": "world-ordering",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Keith Thor Carlson (ed.), A Stó:lō-Coast Salish Historical Atlas, 2001."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "transform_beings_to_stone",
+        "name": "to transform people and animals into stone, salmon, cedar, and other enduring forms",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Transformer stones attributed to Xá:ls, such as Xá:ytem near Mission, British Columbia, remain named landmarks throughout Stó:lō territory.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Keith Thor Carlson (ed.), A Stó:lō-Coast Salish Historical Atlas, 2001; Charles Hill-Tout, The Salish People (ed. Ralph Maud), 1978."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Xexá:ls",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Keith Thor Carlson (ed.), A Stó:lō-Coast Salish Historical Atlas, 2001."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Xá:ls is the Transformer of Coast Salish (especially Stó:lō/Halkomelem) tradition who travelled through the world 'making things right,' fixing people, animals, and places into their present forms.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Keith Thor Carlson (ed.), A Stó:lō-Coast Salish Historical Atlas, Douglas & McIntyre / University of Washington Press, 2001."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Charles Hill-Tout, The Salish People (ed. Ralph Maud), 4 vols., Talonbooks, 1978."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Diamond Jenness, The Faith of a Coast Salish Indian, Anthropology in British Columbia Memoir 3, 1955."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Xá:ls (plural Xexá:ls) is the great Transformer of the Coast Salish peoples of the lower Fraser River and Strait of Georgia. In Stó:lō sxwōxwiyám the Xexá:ls are the four children — three bear brothers and their sister — of Red-Headed Woodpecker and Black Bear, who journeyed from the head of the Fraser to the sea and back at the close of the myth age, punishing the wicked, rewarding the generous, and turning beings into salmon, cedar, and stone so that the world took its lasting shape. Numerous transformer stones in the landscape, most famously Xá:ytem, are pointed out as the petrified subjects of his work, and elders describe him with English glosses such as Transformer, Changer, and Holy One."
+  },
+  {
+    "id": "salish_dohkwibuhch",
+    "name": {
+      "primary": "Dohkwibuhch",
+      "alt": [
+        "Dukwibał",
+        "dukʷibəł",
+        "Dokibatl",
+        "the Changer"
+      ],
+      "transliterations": {
+        "lushootseed": "dukʷibəł",
+        "etymology": "Lushootseed name of the creator-changer of the southern Coast Salish, conventionally glossed 'the Changer' or 'Transformer' (Haeberlin & Gunther, The Indians of Puget Sound, 1930)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Salish",
+    "primaryTradition": "Salish",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial / myth-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial / myth-age",
+        "eraOrdering": 0,
+        "startEvent": "Dohkwibuhch creates the world beginning in the east, giving each people its language as he moves westward, and stops at Puget Sound, where he scatters the remaining languages among the tribes (Clark, Indian Legends of the Pacific Northwest, 1953).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "dukʷibəł",
+          "script": "Latin (Lushootseed orthography)",
+          "rom": "the Changer"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hermann Haeberlin and Erna Gunther, The Indians of Puget Sound, University of Washington Publications in Anthropology 4(1), 1930."
+          }
+        ]
+      },
+      {
+        "sphereId": "language",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_peoples_and_languages",
+        "name": "to create the peoples of the world and assign each its own language",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Snohomish account he distributes languages as he creates, which explains the great linguistic diversity around Puget Sound.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, 1953."
+          }
+        ]
+      },
+      {
+        "id": "raise_the_sky",
+        "name": "to have set the sky so low that the people together pushed it up with poles",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The famous Snohomish 'Pushing Up the Sky' narrative turns on Dohkwibuhch having made the sky too low, so that the assembled peoples lifted it in unison with the cry 'Yah-hoh!'",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, 1953; Hermann Haeberlin and Erna Gunther, The Indians of Puget Sound, 1930."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Dohkwibuhch (Lushootseed dukʷibəł, 'the Changer') is the creator deity of the Snohomish and neighbouring southern Coast Salish peoples of Puget Sound, who made the peoples and their languages and left the sky so low that the people had to push it up together.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest, University of California Press, 1953."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hermann Haeberlin and Erna Gunther, The Indians of Puget Sound, University of Washington Publications in Anthropology 4(1), 1930."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Dohkwibuhch (Lushootseed dukʷibəł, 'the Changer') is the creator of Snohomish and broader Puget Sound Salish tradition. He is said to have begun creation in the east and moved westward, giving each people its own language; when he reached Puget Sound he was so pleased that he stopped there and scattered all the remaining languages, accounting for the region's linguistic diversity. Because he made the sky too low, the assembled peoples and animals, coordinating with the shout 'Yah-hoh!', pushed it up with poles — the widely anthologized 'Pushing Up the Sky' story. As the Changer he also travelled the land transforming beings into their present forms, a role documented ethnographically by Haeberlin and Gunther."
+  }
+]
+```

@@ -1,0 +1,536 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Mbuti
+Era (registered, exact): "mythic", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the three individuated figures the attested record still supported: Baatsi, the Efe first man kneaded from clay under the tahu-tree prohibition (explicitly deferred by the earlier authoring pass; Schebesta 1936; Scheub 2000), now tied to his attested maker Arebati; Masupa, the hidden smith-creator of Schebesta's Efe narrative whose withdrawal down the river brings toil, childbirth-pain and death (Schebesta 1934/1936; with Sawada 2001 recording the caution that the unified Efe creator is partly Schebesta's monotheistic construction); and Kalisia, the Ituri lord of forest and game with a concrete hunters' dream-oracle and offering-hut cult (Roome 1934; Zuesse 1979 'ndura nde Kalisia'; Jordan 1993). Each entry preserves the corpus's standing caution that these god-names are band-variants of one forest divinity rather than a tidy pantheon, so no symmetric equations were asserted against existing entries. Excluded after source-checking: Gor the thunder-elephant and the chameleon (Khonvoum's messengers, already recorded on his entry and tertiary-only), Mugasa/Mungu (Bantu loan god-names with no separable Mbuti myth, per the corpus's Muungu precedent), Epilipili (name-only equation already carried as an Arebati alt), and 'Matu'/'Muri-Muri' (a named mother of the fire-theft god circulating only in fan compendia such as TV Tropes and unverifiable in Schebesta, Scheub or any reachable scholarship, so Tore's mother remains unnamed and unauthored).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "mbuti_baatsi",
+    "name": {
+      "primary": "Baatsi",
+      "alt": [],
+      "transliterations": {
+        "efe": "Baatsi",
+        "etymology": "Personal name of the first man in the Efe creation narrative recorded by Paul Schebesta in the 1930s (Revisiting My Pygmy Hosts, 1936); no secure gloss is given in the sources, and Harold Scheub's dictionary (2000) shows the name drifting onto the creator himself in later retellings."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Mbuti",
+    "primaryTradition": "Mbuti",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "mbuti_arebati"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "At the beginning of the world the Efe creator, with the Moon as his helper, kneads the first man from clay, wraps the clay in skin, pours blood into the skin to quicken it, and names him Baatsi.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts, trans. Gerald Griffin (London: Hutchinson, 1936), on the Efe creation of the first man and the tahu-tree prohibition"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000), s.v. 'Baatsi'"
+          }
+        ],
+        "notes": "Baatsi is commanded to beget children and to teach them the one law: they may eat of every tree but the tahu tree. He obeys, begets many children, grows old, and withdraws to heaven; his descendants keep the rule until a pregnant woman craves the tahu fruit and her husband picks it in the dark. The Moon sees the deed and reports it to the creator, who sends death among humankind."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "primordial-humanity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts (London: Hutchinson, 1936)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. 'Baatsi'"
+          }
+        ],
+        "notes": "The first human being of the Efe creation cycle and forefather of humankind."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "beget_first_generations",
+        "name": "to beget the first generations of humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Commanded by his maker to beget many children and to hand down the tahu-tree prohibition to them.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts (London: Hutchinson, 1936)"
+          }
+        ]
+      },
+      {
+        "id": "ascend_to_heaven_when_old",
+        "name": "to go up to heaven when grown old and weary of life",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Grown old, Baatsi retired to heaven, and in the days before the prohibition was broken his children, when they grew old, followed his pattern and went to heaven likewise.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. 'Baatsi' ('Baatsi Takes the First Man to Heaven')"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Baatsi is the named protagonist of the Efe creation cycle: the first human, kneaded from clay with the Moon's help, wrapped in skin and quickened with blood by the creator, who begets humankind under the tahu-tree prohibition and, grown old, withdraws to heaven.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts, trans. Gerald Griffin (London: Hutchinson, 1936), the Efe creation narrative"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (New York: Oxford University Press, 2000), s.v. 'Baatsi'"
+          }
+        ],
+        "weight": "medium"
+      },
+      {
+        "claim": "The breach of Baatsi's tahu-tree rule — a husband picking the forbidden fruit for his pregnant wife, witnessed and reported by the Moon — is the Efe aetiology of human death.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Die Bambuti-Pygmäen vom Ituri (Brussels: Institut Royal Colonial Belge, 1938–1950), the Efe creation of Baatsi and the tahu tree"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. 'Baatsi'"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Baatsi is the first man of the Efe (Bambuti) creation narrative recorded by Paul Schebesta in the 1930s. The creator — named Arebati in the Efe accounts, though some retellings give the equated names Tore or Epilipili — kneaded him from clay with the help of the Moon, wrapped the clay in skin, poured blood into it, and whispered the one law into his ear: beget children, and let them eat of every tree but the tahu tree. Baatsi obeyed, fathered many children, and when he had grown old and weary of life retired to heaven; he is therefore recorded here as the departed first ancestor rather than as a god. His descendants kept his rule until a pregnant woman persuaded her husband to pick the forbidden fruit at night; the Moon saw it and told the creator, who sent death among humankind. Harold Scheub's dictionary preserves a variant in which the name Baatsi attaches to the creator himself, who 'became old and went to heaven', and a further tale in which Baatsi lowers a long creeping vine to draw the first man up to heaven — a sign of how fluidly the Efe names move between the maker and the made in the recorded tradition."
+  },
+  {
+    "id": "mbuti_masupa",
+    "name": {
+      "primary": "Masupa",
+      "alt": [],
+      "transliterations": {
+        "efe": "Masupa",
+        "etymology": "Efe divine name recorded by Paul Schebesta (Revisiting My Pygmy Hosts, 1936) for the primordial creator who lived hidden by the river; the sources offer no native etymology."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mbuti",
+    "primaryTradition": "Mbuti",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the beginning there is only Masupa, quite alone, with neither wife nor brother; he brings forth three children — two sons and a daughter — and provides them every good thing while remaining unseen in his great hut, from which the sound of hammering and forging is heard.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts, trans. Gerald Griffin (London: Hutchinson, 1936), the Efe narrative of Masupa"
+          },
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Der Urwald ruft wieder: Meine zweite Forschungsreise zu den Ituri-Zwergen (Salzburg: Anton Pustet, 1934)"
+          }
+        ],
+        "notes": "One of Masupa's sons is the ancestor of the Pygmies, the other of the neighbouring farmers; the daughter's only task is to set water and firewood by his door. Humankind lives in ease, without toil, so long as no one seeks to look upon him."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "When his daughter breaks the command never to look upon him and glimpses his richly adorned arm, Masupa in anger withdraws down the river, leaving his children tools and weapons but bequeathing toil, painful childbirth and death to humankind, and is never seen again.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts (London: Hutchinson, 1936), the withdrawal of Masupa"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Masato Sawada, 'Rethinking Methods and Concepts of Anthropological Studies on African Pygmies' World View: The Creator-God and the Dead', African Study Monographs, Suppl. 27 (2001)"
+          }
+        ],
+        "notes": "The departure of the hidden god down the river is the Efe aetiology of the end of the primal ease: work, the pains of childbirth and mortality date from his withdrawal."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts (London: Hutchinson, 1936)"
+          }
+        ],
+        "notes": "The primordial creator of the Efe narrative: alone at the beginning, he brings forth the first three children, ancestors of the peoples."
+      },
+      {
+        "sphereId": "smithcraft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts (London: Hutchinson, 1936), the hammering and forging heard from Masupa's hut"
+          }
+        ],
+        "notes": "A hidden smith: from his great hut came the constant sound of hammering and forging, and at his departure he left tools and weapons to his children."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_first_children_alone",
+        "name": "to bring forth the first children while utterly alone",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Alone at the beginning, with neither wife nor brother, he created two sons and a daughter, the ancestors of humankind.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts (London: Hutchinson, 1936)"
+          }
+        ]
+      },
+      {
+        "id": "remain_unseen",
+        "name": "to dwell hidden, speaking with his children but never letting himself be seen",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He spoke with his children from within his hut and forbade them ever to look upon him; the primal ease of the world depended on the keeping of this command.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts (London: Hutchinson, 1936)"
+          }
+        ]
+      },
+      {
+        "id": "decree_toil_and_death",
+        "name": "to leave toil, painful childbirth and death to humankind at his departure",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Enraged by his daughter's forbidden glance, he withdrew down the river and never returned; work, the pains of childbirth and mortality are the legacy of his going.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts (London: Hutchinson, 1936)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mbuti_masupa_forge",
+        "name": "Hidden forge",
+        "kind": "implement",
+        "role": "the unseen smithy within Masupa's great hut, whence hammering and forging were heard; its tools and weapons were left to his children at his departure",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts (London: Hutchinson, 1936)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "In the Efe narrative recorded by Schebesta, Masupa is the primordial creator — alone at the beginning with neither wife nor brother, father of the first three children, an unseen provider from whose hut came the sound of forging — who withdraws down the river after his daughter's forbidden glance and leaves toil, painful childbirth and death behind.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Revisiting My Pygmy Hosts, trans. Gerald Griffin (London: Hutchinson, 1936)"
+          },
+          {
+            "kind": "primary",
+            "reference": "Paul Schebesta, Der Urwald ruft wieder: Meine zweite Forschungsreise zu den Ituri-Zwergen (Salzburg: Anton Pustet, 1934)"
+          }
+        ],
+        "weight": "medium"
+      },
+      {
+        "claim": "Later anthropology treats the unified 'creator-god of the Efe' assembled from such name-narratives as partly an artefact of Schebesta's monotheistic expectations, so Masupa is best read as one distinct narrative strand among the Efe divine names rather than proof of a single structured pantheon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Masato Sawada, 'Rethinking Methods and Concepts of Anthropological Studies on African Pygmies' World View: The Creator-God and the Dead', African Study Monographs, Suppl. 27 (2001)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Masupa is the hidden creator of an Efe (Bambuti) narrative recorded by Paul Schebesta: 'In the beginning there was only Masupa. He was quite alone, and had neither wife nor brother.' He brought forth three children — two sons, ancestors of the Pygmies and of the neighbouring farmers, and one daughter — and dwelt unseen in a great hut by the river, from which the sound of hammering and forging could always be heard. He failed his children in nothing; they lived in ease, without toil, and the daughter's only duty was to set water and firewood at his door, under the one command that none should ever seek to see him. Moved by curiosity, she hid and glimpsed his richly adorned arm; Masupa, enraged, withdrew down the river, leaving his children tools and weapons but bequeathing work, painful childbirth and death, and was never seen again. The narrative is a distinct strand of the Efe record: some retellings assign the hidden god's role to Tore, and modern scholarship cautions that Schebesta's assembly of the Efe names into one creator reflects his monotheistic framework, so the equation is recorded here as an observation about naming rather than as kinship. His three children remain unnamed in the sources, so no genealogical line can be drawn from him."
+  },
+  {
+    "id": "mbuti_kalisia",
+    "name": {
+      "primary": "Kalisia",
+      "alt": [],
+      "transliterations": {
+        "mbuti": "Kalisia",
+        "etymology": "Ituri god-name recorded among the Bambuti in the 1930s (Roome 1934); at Epulu it names the forest divinity itself — 'ndura nde Kalisia', the forest is Kalisia (Zuesse 1979). No secure etymology is recorded."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mbuti",
+    "primaryTradition": "Mbuti",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "From the first ordering of the forest world Kalisia stands as its gracious lord, the source of all good things for the Bambuti, who accompanies the hunter on the trail and reveals game and unlucky days in dreams.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William J. W. Roome, Apolo: The Apostle to the Pygmies (London: Marshall, Morgan & Scott, 1934), on the Bambuti cult of Kalisia"
+          },
+          {
+            "kind": "tertiary",
+            "reference": "Michael Jordan, Encyclopedia of Gods: Over 2,500 Deities of the World (New York: Facts on File, 1993), s.v. 'Kalisia'"
+          }
+        ],
+        "notes": "A creator and guardian divinity of the Ituri forest and its game; at Epulu the Mbuti equate the name with the forest divinity itself."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-forest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ndura",
+          "script": "Latin",
+          "rom": "ndura — 'the forest'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Evan M. Zuesse, Ritual Cosmos: The Sanctification of Life in African Religions (Athens, OH: Ohio University Press, 1979), quoting the Epulu saying 'ndura nde Kalisia, ndura nde Mungu'"
+          }
+        ],
+        "notes": "At Epulu the Mbuti say 'ndura nde Kalisia, ndura nde Mungu' — the forest is Kalisia, the forest is God: the divinity is the forest itself under this name."
+      },
+      {
+        "sphereId": "the-hunt",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William J. W. Roome, Apolo: The Apostle to the Pygmies (London: Marshall, Morgan & Scott, 1934)"
+          },
+          {
+            "kind": "tertiary",
+            "reference": "Michael Jordan, Encyclopedia of Gods (New York: Facts on File, 1993), s.v. 'Kalisia' (guardian of hunters and of the jungle forests)"
+          }
+        ],
+        "notes": "Lord of the game who stands by the hunter on the trail, shows him the proper place and time to seek his prey, and warns of days unlucky for hunting."
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "tertiary",
+            "reference": "Michael Jordan, Encyclopedia of Gods (New York: Facts on File, 1993), s.v. 'Kalisia' (creator god of the Pygmies of Zaire)"
+          }
+        ],
+        "notes": "The handbook tradition classes Kalisia as a creator god of the Ituri Pygmies; the primary record emphasises rather his lordship of forest and game."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guide_hunters_through_dreams",
+        "name": "to reveal game and unlucky days to hunters in dreams",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "If the sleeping hunter dreams that he will kill an animal, it is a hint from Kalisia which he follows without demur the next day; Kalisia likewise gives warning of days that will be unlucky for the hunt.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William J. W. Roome, Apolo: The Apostle to the Pygmies (London: Marshall, Morgan & Scott, 1934)"
+          }
+        ]
+      },
+      {
+        "id": "steady_the_hunters_aim",
+        "name": "to stand behind the hunter, bend his bow and inspire his arm so the shot does not miss",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "On the trail of elephant, buffalo or wild pig, Kalisia stands behind the Pygmy hunter, bends his bow and inspires his arm so that he may not miss.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William J. W. Roome, Apolo: The Apostle to the Pygmies (London: Marshall, Morgan & Scott, 1934)"
+          }
+        ]
+      },
+      {
+        "id": "bestow_forest_bounty",
+        "name": "to give all good things of the forest to the Bambuti",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "From Kalisia all good things come, and he is gracious towards the Bambuti; at Epulu this graciousness is that of the forest itself, which feeds, shelters and clothes its children.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William J. W. Roome, Apolo: The Apostle to the Pygmies (London: Marshall, Morgan & Scott, 1934)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Evan M. Zuesse, Ritual Cosmos: The Sanctification of Life in African Religions (Ohio University Press, 1979)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mbuti_kalisia_offering_hut",
+        "name": "Gable-roofed offering hut",
+        "kind": "shrine",
+        "role": "small gable-roofed hut in which sacrificial offerings for Kalisia are placed; against it the hunter props his spear at night and appeals to the deity for luck in the morning's hunt",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William J. W. Roome, Apolo: The Apostle to the Pygmies (London: Marshall, Morgan & Scott, 1934)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Kalisia is an Ituri-forest divinity of the Bambuti — the gracious lord from whom all good things come, who stands behind the hunter, bends his bow, and reveals game and unlucky days in dreams, honoured with offerings in a small gable-roofed hut against which the hunter props his spear overnight.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "William J. W. Roome, Apolo: The Apostle to the Pygmies (London: Marshall, Morgan & Scott, 1934)"
+          },
+          {
+            "kind": "tertiary",
+            "reference": "Michael Jordan, Encyclopedia of Gods: Over 2,500 Deities of the World (New York: Facts on File, 1993), s.v. 'Kalisia'"
+          }
+        ],
+        "weight": "medium"
+      },
+      {
+        "claim": "At Epulu the Mbuti equate the name with the forest divinity itself — 'ndura nde Kalisia, ndura nde Mungu', the forest is Kalisia, is the Creator himself.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Evan M. Zuesse, Ritual Cosmos: The Sanctification of Life in African Religions (Athens, OH: Ohio University Press, 1979)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kalisia is a divinity of the Ituri forest attested among the Bambuti from the 1930s: a gracious lord from whom all good things come, and above all a god of the hunt. He stands by the Pygmy hunter on the trail of elephant, buffalo or wild pig, inspires him as to the proper place and time to seek his prey, bends his bow and steadies his arm so that he may not miss, and gives warning in dreams both of the game to be taken and of days that will be unlucky. His modest cult is the most concrete recorded for any Mbuti divine name: offerings are placed in a small gable-roofed hut, against which the hunter props his spear at night while appealing for luck in the morning's hunt. At Epulu — the band later studied by Colin Turnbull — the name is applied to the forest divinity itself, in the saying 'ndura nde Kalisia, ndura nde Mungu', the forest is Kalisia, the forest is God; the handbook tradition accordingly classes Kalisia as a creator god of the Ituri Pygmies. As with Tore, Arebati and Khonvoum, scholarship treats such names as band-variants applied to the one forest divinity rather than members of a structured pantheon, and no kin, consort or offspring is attested for Kalisia anywhere in the record."
+  }
+]
+```

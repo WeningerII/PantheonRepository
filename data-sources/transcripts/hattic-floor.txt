@@ -1,0 +1,949 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Hattic
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (7 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added seven individuated Hattic-substrate deities verified against current Hittitological scholarship (Taracha 2009; Haas 1994; Klinger 1996; Soysal 2004, plus figure-specific studies by Starke 1979, Archi 2013, Torri 2019 and Pecchioli Daddi 1987/2014): the throne-goddess Hanwasuit/Halmasuit, Telipinu's bride Hatepuna (recorded as his consort), Katahha the 'Queen' of Ankuwa, the paired fate-spinners Istustaya and Papaya, the divine smith Hasamili, and the wild-nature goddess Teteshapi. The other obvious Hattic candidates were deliberately not authored because the corpus already covers them elsewhere: Taru, Inar, Mezulla, Zintuhi, Wurusemu and Hannahanna exist in or as aliases of Hittite-tradition figures (hittite_tarhunna, hittite_inara, hittite_mezzulla, hittite_zintuhi, hittite_arinna, hittite_hannahanna), while Kattahzipuri is an alias of luwian_kamrusepa and Sulinkatte an alias of hattic_wurunkatte. A few genuinely attested but more weakly individuated local figures (Zashapuna of Kastama, the mountain-god Zaliyanu, the hearth-god Zilipuri, Kammamma, Tahattanuiti) were left for a possible future pass rather than padded in with thin documentation.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "hattic_hanwasuit",
+    "name": {
+      "primary": "Hanwasuit",
+      "alt": [
+        "Ḫanwašuit",
+        "Ḫalmašuit",
+        "Ḫalmašuitt",
+        "Ḫalmašuiz",
+        "Halmasuit"
+      ],
+      "transliterations": {
+        "hattic": "Ḫanwašuit",
+        "hittite": "Ḫalmašuitt-",
+        "etymology": "Hattic theonym of the deified throne; borrowed into Hittite as the common noun ḫalmaššuitt- 'throne-dais' (Kloekhorst 2008; Soysal 2004)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Attested from the earliest Hittite textual tradition as the deified throne-dais of Hattic origin, appearing already in the Anitta text in connection with the taking of Hattusa and the ideology of kingship (Starke 1979; Neu 1974).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frank Starke, \"Ḫalmašuit im Anitta-Text und die hethitische Ideologie vom Königtum\", Zeitschrift für Assyriologie und Vorderasiatische Archäologie 69 (1979): 47–120"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Erich Neu, Der Anitta-Text (Studien zu den Boğazköy-Texten 18), Wiesbaden: Harrassowitz, 1974"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ḫanwašuit",
+          "script": "Hattic (romanized cuneiform)",
+          "rom": "the throne"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oğuz Soysal, Hattischer Wortschatz in hethitischer Textüberlieferung (Handbook of Oriental Studies I/74), Leiden: Brill, 2004"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Frank Starke, \"Ḫalmašuit im Anitta-Text und die hethitische Ideologie vom Königtum\", Zeitschrift für Assyriologie und Vorderasiatische Archäologie 69 (1979): 47–120"
+          }
+        ]
+      },
+      {
+        "sphereId": "royal-throne",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ḫalmaššuitt-",
+          "script": "Hittite (Hattic loanword, romanized cuneiform)",
+          "rom": "throne-dais"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alwin Kloekhorst, Etymological Dictionary of the Hittite Inherited Lexicon, Leiden: Brill, 2008 (s.v. ḫalmaššuitt-)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_kingship",
+        "name": "to bestow kingship and its regalia upon the ruler",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Old Hittite palace-foundation ritual the king converses with the Throne as with an ally and receives the emblems of rule in her presence.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frank Starke, \"Ḫalmašuit im Anitta-Text und die hethitische Ideologie vom Königtum\", Zeitschrift für Assyriologie und Vorderasiatische Archäologie 69 (1979): 47–120"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Albrecht Goetze, \"Ritual for the Erection of a New Palace\", in J. B. Pritchard (ed.), Ancient Near Eastern Texts Relating to the Old Testament, 3rd ed., Princeton: Princeton University Press, 1969"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hattic_throne_dais",
+        "name": "throne-dais",
+        "kind": "regalia",
+        "role": "the goddess is herself the deified throne-dais upon which the Hittite king sits",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Frank Starke, \"Ḫalmašuit im Anitta-Text und die hethitische Ideologie vom Königtum\", Zeitschrift für Assyriologie und Vorderasiatische Archäologie 69 (1979): 47–120"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Hanwasuit (Hittite Ḫalmašuit) is the Hattic throne-goddess, the deified royal throne-dais who embodies and confers legitimate kingship in Old Hittite religion.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Frank Starke, \"Ḫalmašuit im Anitta-Text und die hethitische Ideologie vom Königtum\", Zeitschrift für Assyriologie und Vorderasiatische Archäologie 69 (1979): 47–120"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hanwasuit (Hattic Ḫanwašuit, Hittite Ḫalmašuit) is the deified royal throne-dais, one of the most distinctive inheritances of the Hattic substrate in Hittite religion. She appears already in the Anitta text, the oldest Hittite historical document, in connection with the seizure of Hattusa, and Frank Starke demonstrated that she stands at the centre of the old central Anatolian ideology of kingship. In the Old Hittite ritual for the founding of a new palace the king addresses the Throne as a personal ally: she sends the eagle to the sea, where the fate-goddesses Ištuštaya and Papaya sit spinning the king's years, and the transfer of the regalia of rule takes place in her presence. The Hittite common noun for the throne-dais, ḫalmaššuitt-, is itself a loanword from her Hattic name."
+  },
+  {
+    "id": "hattic_hatepuna",
+    "name": {
+      "primary": "Hatepuna",
+      "alt": [
+        "Ḫatepuna",
+        "Ḫatepinu",
+        "Ḫalipinu"
+      ],
+      "transliterations": {
+        "hattic": "Ḫatepuna",
+        "etymology": "Commonly explained from Hattic as 'child of the sea' (ḫa 'sea' + puna 'child'), matching her descent from the sea-god (cf. Soysal 2004)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Attested in Old Hittite cult of the Ḫanḫana–Kašḫa region and identified with the sea-god's daughter who becomes Telipinu's bride in Hittite myth (Haas 1994; Hoffner 1998).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harry A. Hoffner Jr., Hittite Myths, 2nd ed. (Writings from the Ancient World 2), Atlanta: Scholars Press, 1998"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "agriculture-and-vegetation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "further_agrarian_plenty",
+        "name": "to further the prosperity of fields and flocks",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Like her husband Telipinu she was in all likelihood an agrarian goddess.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "hattic_telipinu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          },
+          {
+            "kind": "primary",
+            "reference": "Telipinu and the Daughter of the Sea-god (CTH 322), trans. H. A. Hoffner, Hittite Myths, 2nd ed., 1998"
+          }
+        ],
+        "notes": "In the cult of Kašḫa and the Ḫanḫana region Hatepuna is Telipinu's wife; myth recounts how the sea-god's daughter was given to the young god and how a bride-price of a thousand cattle and a thousand sheep was paid for her."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hatepuna is a Hattian goddess, the sea-god's daughter who became the wife of Telipinu and shared his agrarian character.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harry A. Hoffner Jr., Hittite Myths, 2nd ed. (Writings from the Ancient World 2), Atlanta: Scholars Press, 1998"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hatepuna (Ḫatepuna, Ḫatepinu; at Zalpa perhaps in the form Ḫalipinu) is a Bronze Age Anatolian goddess of Hattian origin, worshipped by Hittites and also venerated among the Kaška. She is understood as the daughter of the sea-god and as the wife of Telipinu, whose consort she is in the cults of Kašḫa and the Ḫanḫana region, and like her husband she was probably an agricultural deity. In the myth of Telipinu and the daughter of the sea-god, the Sea gives his daughter to Telipinu, and when her father later demands a bride-price the Storm-god, advised by the mother-goddess Hannahanna, pays a thousand cattle and a thousand sheep for the bride. Her name is commonly explained from Hattic as 'child of the sea'."
+  },
+  {
+    "id": "hattic_katahha",
+    "name": {
+      "primary": "Katahha",
+      "alt": [
+        "Kataḫḫa",
+        "Kataḫḫi",
+        "Kattaḫḫa"
+      ],
+      "transliterations": {
+        "hattic": "Kataḫḫa",
+        "etymology": "A title rather than a personal name: Hattic kattaḫ 'queen' (Soysal 2004); in cuneiform often written with the Sumerograms dMUNUS.LUGAL, 'divine Queen'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Attested from the Old Hittite period onward as 'the Queen' (Hattic kattaḫ), head of the local pantheon of the central Anatolian town of Ankuwa (Taracha 2009; Torri 2019).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Giulia Torri, \"Did the Storm God of Zippalanda have a Mother or a Wife? Remarks about the Cults of Kataḫḫa and the Sun Goddess of the Earth in Zippalanda and Ankuwa\", Asia Anteriore Antica 1 (2019): 217–224"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "queenship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kattaḫ",
+          "script": "Hattic (romanized cuneiform)",
+          "rom": "queen"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oğuz Soysal, Hattischer Wortschatz in hethitischer Textüberlieferung (Handbook of Oriental Studies I/74), Leiden: Brill, 2004"
+          }
+        ]
+      },
+      {
+        "sphereId": "city-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Giulia Torri, \"Did the Storm God of Zippalanda have a Mother or a Wife? Remarks about the Cults of Kataḫḫa and the Sun Goddess of the Earth in Zippalanda and Ankuwa\", Asia Anteriore Antica 1 (2019): 217–224"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_over_city",
+        "name": "to preside as queen over her city and its gods",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "At Ankuwa she stood at the head of the local pantheon.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Giulia Torri, \"Did the Storm God of Zippalanda have a Mother or a Wife? Remarks about the Cults of Kataḫḫa and the Sun Goddess of the Earth in Zippalanda and Ankuwa\", Asia Anteriore Antica 1 (2019): 217–224"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Katahha, 'the Queen', is a Hattian tutelary goddess who heads the pantheon of Ankuwa, with homonymous 'Queens' worshipped in nearby towns.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Giulia Torri, \"Did the Storm God of Zippalanda have a Mother or a Wife? Remarks about the Cults of Kataḫḫa and the Sun Goddess of the Earth in Zippalanda and Ankuwa\", Asia Anteriore Antica 1 (2019): 217–224"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Katahha, from the Hattic word for 'queen', is the name or title of a Hattian tutelary goddess, most prominently the head of the pantheon of the central Anatolian town of Ankuwa; goddesses bearing the same name were worshipped at Katapa and other nearby settlements. In cuneiform her name is frequently concealed behind the Sumerographic writing dMUNUS.LUGAL, 'the divine Queen'. The Queens of Ankuwa and Katapa appear among the divine witnesses of Hittite state treaties, and her cult at Ankuwa flourished into the imperial period. Her possible connection to the Storm-god of Zippalanda, whether as his mother or as his wife, remains debated in current scholarship."
+  },
+  {
+    "id": "hattic_istustaya",
+    "name": {
+      "primary": "Istustaya",
+      "alt": [
+        "Ištuštaya"
+      ],
+      "transliterations": {
+        "hittite": "Ištuštaya",
+        "etymology": "Hattic theonym of undetermined meaning, borne by one of the paired Hattian goddesses of destiny (cf. Archi 2013)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Attested in the Old Hittite ritual for the founding of a new palace (KUB 29.1), where she sits with Papaya by the sea spinning the years of the king (Archi 2013; Haas 1994).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fate-and-destiny",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "spin_the_kings_years",
+        "name": "to spin the years and life-thread of the king",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "With her companion Papaya she holds spindle and distaff and fixes the length of the ruler's reign.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Albrecht Goetze, \"Ritual for the Erection of a New Palace\", in J. B. Pritchard (ed.), Ancient Near Eastern Texts Relating to the Old Testament, 3rd ed., Princeton: Princeton University Press, 1969"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hattic_spindle_of_istustaya",
+        "name": "spindle and distaff",
+        "kind": "emblem",
+        "role": "implements with which she spins the years of the king in the palace-foundation ritual",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Old Hittite foundation ritual for a new palace, KUB 29.1 (CTH 414)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "hattic_papaya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          }
+        ],
+        "notes": "Ištuštaya and Papaya form an inseparable pair of Hattian fate-goddesses, sitting together by the sea and spinning the king's years."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Istustaya is one of the two paired Hattian goddesses of destiny who spin the thread of the king's life.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          },
+          {
+            "kind": "primary",
+            "reference": "Old Hittite foundation ritual for a new palace, KUB 29.1 (CTH 414)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Istustaya (Ištuštaya) is one of the two Hattian goddesses of destiny, always paired with Papaya. In the Old Hittite ritual for the founding of a new palace the Throne sends an eagle to the shore of the sea, where the two primeval goddesses sit crouching with spindles, distaff and mirrors, spinning the years of the king; the passage is the classic Anatolian counterpart to the spinning fate-goddesses of other ancient traditions. In the Hittite state cult the pair belonged to the circle of chthonic deities and was worshipped together with the netherworld goddess Lelwani."
+  },
+  {
+    "id": "hattic_papaya",
+    "name": {
+      "primary": "Papaya",
+      "alt": [],
+      "transliterations": {
+        "hittite": "Papaya",
+        "etymology": "Hattic theonym of undetermined meaning, borne by one of the paired Hattian goddesses of destiny (cf. Archi 2013)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Attested in the Old Hittite ritual for the founding of a new palace (KUB 29.1), where she sits with Ištuštaya by the sea spinning the years of the king (Archi 2013; Haas 1994).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fate-and-destiny",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "spin_the_kings_years",
+        "name": "to spin the years and life-thread of the king",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "With her companion Ištuštaya she holds spindle and mirror and fixes the length of the ruler's reign.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Albrecht Goetze, \"Ritual for the Erection of a New Palace\", in J. B. Pritchard (ed.), Ancient Near Eastern Texts Relating to the Old Testament, 3rd ed., Princeton: Princeton University Press, 1969"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hattic_mirror_of_papaya",
+        "name": "mirror and spindle",
+        "kind": "emblem",
+        "role": "implements with which she spins the years of the king in the palace-foundation ritual",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Old Hittite foundation ritual for a new palace, KUB 29.1 (CTH 414)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "hattic_istustaya",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          }
+        ],
+        "notes": "Papaya and Ištuštaya form an inseparable pair of Hattian fate-goddesses, sitting together by the sea and spinning the king's years."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Papaya is one of the two paired Hattian goddesses of destiny who spin the thread of the king's life.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alfonso Archi, \"The Anatolian Fate-Goddesses and their Different Traditions\", in E. Cancik-Kirschbaum, J. Klinger & G. G. W. Müller (eds.), Diversity and Standardization: Perspectives on Social and Political Norms in the Ancient Near East, Berlin: Akademie Verlag, 2013"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          },
+          {
+            "kind": "primary",
+            "reference": "Old Hittite foundation ritual for a new palace, KUB 29.1 (CTH 414)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Papaya is one of the two Hattian goddesses of destiny, always paired with Ištuštaya. In the Old Hittite ritual for the founding of a new palace the two primeval goddesses sit crouching by the shore of the sea with spindles, distaff and mirrors, spinning the years of the king, whose reign they thereby fix. In the Hittite state cult the pair belonged to the circle of chthonic deities and was worshipped together with the netherworld goddess Lelwani."
+  },
+  {
+    "id": "hattic_hasamili",
+    "name": {
+      "primary": "Hasamili",
+      "alt": [
+        "Ḫašamili",
+        "Ḫašammili"
+      ],
+      "transliterations": {
+        "hattic": "Ḫašamili",
+        "etymology": "Hattic theonym of unclear meaning, spelled variously in Hattic, Hittite and Palaic texts (cf. Soysal 2004)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Attested from the Old Hittite period as a divine smith and protector of the household, of Hattic origin and subsequently received into the Hittite, Palaic and Luwian pantheons (Taracha 2009; Haas 1994).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "smithcraft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          }
+        ]
+      },
+      {
+        "sphereId": "household-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "forge_metal",
+        "name": "to forge and work metal for gods and kings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He was revered as a strong divine blacksmith, linked with the smith's tools invoked in building rituals.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          }
+        ]
+      },
+      {
+        "id": "conceal_from_sight",
+        "name": "to conceal those under his protection from hostile eyes",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He was associated with invisibility and with the safeguarding of kings and households.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hattic_hammer_of_hasamili",
+        "name": "bronze hammer",
+        "kind": "tool",
+        "role": "implement of the divine smith invoked in Hittite building rituals",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Hasamili is a divine smith and protective household god of Hattic origin, adopted into the Hittite, Palaic and Luwian pantheons.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Volkert Haas, Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15), Leiden: Brill, 1994"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Maciej Popko, Religions of Asia Minor, Warsaw: Academic Publications Dialog, 1995"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hasamili (Ḫašamili, Ḫašammili) is a god of Hattic origin who served as a divine smith and as an apotropaic protector of the household and of children; texts link him with the bronze hammer and with building work, and he was believed able to hide those under his protection from sight. From the Hattian milieu he was received into the Hittite, Palaic and Luwian pantheons, standing in Palaic cult beside Ziparwa and Kataḫzipuri, while in Hittite cult he keeps company with chthonic powers such as Lelwani and the fate-goddesses. He also plays a role, imperfectly understood, in the mythological fragment concerning Ḫaḫḫima (Frost)."
+  },
+  {
+    "id": "hattic_teteshapi",
+    "name": {
+      "primary": "Teteshapi",
+      "alt": [
+        "Tetešḫapi"
+      ],
+      "transliterations": {
+        "hattic": "Tetešḫapi",
+        "etymology": "Commonly analysed as Hattic 'great deity' (te- 'great' + (wa)šḫap 'god, deity'; cf. Soysal 2004)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Attested in Old Hittite festival texts, largely recited in the Hattic language, which celebrate her at Tawiniya during the purulli festival season (Pecchioli Daddi 1987; Klinger 1996).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Franca Pecchioli Daddi, \"Aspects du culte de la divinité hattie Tetešḫapi\", Hethitica 8 (1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jörg Klinger, Untersuchungen zur Rekonstruktion der hattischen Kultschicht (Studien zu den Boğazköy-Texten 37), Wiesbaden: Harrassowitz, 1996"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wild-nature-and-hunt",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Franca Pecchioli Daddi, \"Aspects du culte de la divinité hattie Tetešḫapi\", Hethitica 8 (1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_over_wild_beasts",
+        "name": "to preside over the beasts of the wild and the rites of the hunt",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Her festivals feature performers in the guise of wild animals such as the leopard and the wolf.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Franca Pecchioli Daddi, \"Aspects du culte de la divinité hattie Tetešḫapi\", Hethitica 8 (1987)"
+          }
+        ]
+      },
+      {
+        "id": "speak_through_priestess",
+        "name": "to answer worshippers through the mouth of her priestess",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "During her celebrations the goddess responds to invocations and speaks to the onlookers through her priestess, the NIN.DINGIR.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Franca Pecchioli Daddi, \"Messengers of the Gods: NIN.DINGIR and Tetešḫapi\", Die Welt des Orients 44/2 (2014): 289–300"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Teteshapi is a Hattian goddess of wild nature and the hunt, honoured with her own extensive festival complex celebrated at Tawiniya with Hattic-language liturgy.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Franca Pecchioli Daddi, \"Aspects du culte de la divinité hattie Tetešḫapi\", Hethitica 8 (1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jörg Klinger, Untersuchungen zur Rekonstruktion der hattischen Kultschicht (Studien zu den Boğazköy-Texten 37), Wiesbaden: Harrassowitz, 1996"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Piotr Taracha, Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27), Wiesbaden: Harrassowitz, 2009"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Teteshapi (Tetešḫapi), whose Hattic name is commonly rendered 'great deity', is a Hattian goddess of wild nature and the hunt with an unusually rich festival tradition of her own: large parts of her liturgy are recited in Hattic, and her rites at Tawiniya during the purulli festival season unfolded in and around the temple of Telipinu, with dancers and performers appearing in the guise of wild beasts such as the leopard and the wolf. At the climax of her celebrations the goddess answers those who invoke her through the mouth of her priestess, the NIN.DINGIR, a rare instance of staged divine speech in Hittite cult."
+  }
+]
+```
