@@ -1,7 +1,7 @@
 # Pantheon Registry — MCP connector
 
 A remote [Model Context Protocol](https://modelcontextprotocol.io) server over the
-Pantheon Registry corpus (~2,893 cited figures across 249 traditions). It loads
+Pantheon Registry corpus (~4,142 cited figures across 360 traditions). It loads
 `app/data.js` exactly the way the test/build pipeline does (`window.__PR`), so the
 connector and the app share one source of truth and every answer stays cited.
 

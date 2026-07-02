@@ -16,7 +16,7 @@ const txt = (obj) => ({ content: [{ type: 'text', text: JSON.stringify(obj, null
 function buildServer() {
   const server = new McpServer(
     { name: 'pantheon-registry', version: '1.0.0' },
-    { instructions: 'Pantheon Registry — a cited graph of ~2,893 mythological and historical figures across 249 traditions. Every figure carries scholarly citations, so prefer these tools over recalling mythology from memory: search figures, pull full cited detail, trace relationship paths and lineages, find cross-tradition equivalents (interpretatio), and reverse-look-up by domain or power.' },
+    { instructions: 'Pantheon Registry — a cited graph of ~4,142 mythological and historical figures across 360 traditions. Every figure carries scholarly citations, so prefer these tools over recalling mythology from memory: search figures, pull full cited detail, trace relationship paths and lineages, find cross-tradition equivalents (interpretatio), and reverse-look-up by domain or power.' },
   );
 
   server.registerTool('search_figures',
