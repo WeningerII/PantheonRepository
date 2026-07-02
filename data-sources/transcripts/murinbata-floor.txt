@@ -1,0 +1,488 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Murinbata
+Era (registered, exact): "Murinbata traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four further individuated beings drawn from the two central Murinbata myth-cycles as recorded by W. E. H. Stanner (On Aboriginal Religion, 1963) and corroborated by Eliade (1973), Falkenberg (1962) and Coles (2000): Pilirin the Kestrel, who preserves fire when the wounded Kunmanggur carries the world's fire into the sea; the Green Parrot Girls, Kunmanggur's paired co-wives whose pursuit by Tjinimin precipitates the father-killing; and Left Hand and Right Hand, the two ancestral men of the Mutjingga (Karwadi/Punj) myth who slay the swallowing Old Woman and cut the children from her belly, founding the initiation rite. Each is a specifically named actor in the myths rather than a generic spirit-class, and the new figures are wired to the existing pantheon via consort-of and slayer-of links to Kunmanggur and Mutjingga. I deliberately excluded Nogamain: although tertiary encyclopaedias label him "Murrinh-Patha," his spirit-child/sky-being role belongs to western Arnhem Land ethnography and I could not confirm the attribution in the primary Port Keats sources, so including him would have been unsupported padding.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "murinbata_pilirin",
+    "name": {
+      "primary": "Pilirin (the Kestrel who recovered fire)",
+      "alt": [
+        "Pilirin",
+        "the Kestrel",
+        "the Nankeen Kestrel"
+      ],
+      "transliterations": {
+        "Murrinh-patha": "Pilirin",
+        "etymology": "Pilirin, the Murinbata name of the small hovering falcon (the nankeen kestrel), whose totem-ancestor bears the name in the myth."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Murinbata",
+    "primaryTradition": "Murinbata",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Murinbata traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Murinbata traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "When the speared Kunmanggur descended into the sea and gathered up all the fire of the world, Pilirin the Kestrel snatched a burning brand and kept fire alight for humankind.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963 (repr. Sydney University Press, 2014)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Australian Religions: An Introduction, Cornell University Press, 1973."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rescue_fire",
+        "name": "to snatch a firebrand from the sinking Rainbow Serpent and keep fire alive for people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "murinbata_firebrand",
+        "name": "the rescued firebrand",
+        "kind": "emblem",
+        "role": "the burning stick Pilirin carried off, the source of the fire retained by humankind after Kunmanggur took the rest into the sea.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Australian Religions: An Introduction, Cornell University Press, 1973."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Pilirin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Pilirin the Kestrel is the ancestral bird-being of the Murinbata Rainbow Serpent myth who preserves fire for humankind after the wounded Kunmanggur carries the world's fire down into the sea.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963 (repr. Sydney University Press, 2014, ISBN 9781743323885)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Australian Religions: An Introduction, Cornell University Press, 1973."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Murinbata (Port Keats) myth of the Rainbow Serpent, the culminating episode turns on fire. After Tjinimin the Bat mortally wounds his father Kunmanggur, the dying serpent-man makes for water and draws all the fire of the world down with him beneath the surface, threatening humanity with cold and darkness. Pilirin, the ancestral Kestrel, seizes a burning firestick before it can be extinguished and thereby keeps fire in the world. He is remembered as the being through whom people retained the means of warmth and cooking."
+  },
+  {
+    "id": "murinbata_green_parrot_girls",
+    "name": {
+      "primary": "The Green Parrot Girls (co-wives of Kunmanggur)",
+      "alt": [
+        "the Green Parrot Girls",
+        "the Green Parrot Women"
+      ],
+      "transliterations": {
+        "etymology": "Named for the green parrot, the totemic bird whose form the two young women share in the myth."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Murinbata",
+    "primaryTradition": "Murinbata",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Murinbata traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Murinbata traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "As the young wives of Kunmanggur, the two Green Parrot Girls set out to gather food and were followed and assaulted by Tjinimin the Bat, an outrage that set in motion the killing of the Rainbow Serpent.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "green-parrot-totem",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Australian Religions: An Introduction, Cornell University Press, 1973."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "take_parrot_form",
+        "name": "to appear in the form of green parrots",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "murinbata_kunmanggur",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ],
+        "notes": "The two Green Parrot Girls are the young wives (consorts) of Kunmanggur the Rainbow Serpent."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Green Parrot Girls are the paired ancestral women of the Murinbata Rainbow Serpent myth, consorts of Kunmanggur, whose sexual pursuit by his son Tjinimin the Bat precipitates the father-killing at the heart of the myth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963 (repr. Sydney University Press, 2014)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mircea Eliade, Australian Religions: An Introduction, Cornell University Press, 1973."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Johannes Falkenberg, Kin and Totem: Group Relations of Australian Aborigines in the Port Keats District, Oslo University Press / George Allen & Unwin, 1962."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Green Parrot Girls are a named pair of ancestral women in the Murinbata Rainbow Serpent cycle. Cast as the young co-wives of Kunmanggur (and, in some tellings, classificatory sisters to his son), they are pursued by Tjinimin the Bat, who follows them on a food-gathering journey and forces himself upon them. Their rejection of him and the shame of the deed drive Tjinimin to turn against and mortally wound his father, so the two women stand at the pivot of the myth's tragedy. They share the identity of the green parrot, the totemic bird for which they are named."
+  },
+  {
+    "id": "murinbata_left_hand",
+    "name": {
+      "primary": "Left Hand (slayer of the Old Woman)",
+      "alt": [
+        "Left Hand"
+      ],
+      "transliterations": {
+        "etymology": "Rendered by Stanner as 'Left Hand', one of the paired designations of the two men who recover the swallowed children."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Murinbata",
+    "primaryTradition": "Murinbata",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Murinbata traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Murinbata traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "With his partner Right Hand, Left Hand tracked the Old Woman Mutjingga who had swallowed the children left in her care, killed her, and cut the living children from her belly.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "initiation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Teresa L. Coles, Stanner and Mutjingga: A Reinterpretation of Myth, M.A. thesis, Simon Fraser University, 2000."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "recover_swallowed_children",
+        "name": "to cut open the swallowing Old Woman and bring the children out alive",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "murinbata_stone_blade",
+        "name": "the cutting blade",
+        "kind": "weapon",
+        "role": "the implement with which the two men opened Mutjingga's belly to release the swallowed children.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Teresa L. Coles, Stanner and Mutjingga: A Reinterpretation of Myth, M.A. thesis, Simon Fraser University, 2000."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "murinbata_mutjingga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ],
+        "notes": "Left Hand, with Right Hand, kills the Old Woman Mutjingga to recover the children she had swallowed."
+      },
+      {
+        "kind": "companion",
+        "personId": "murinbata_right_hand",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ],
+        "notes": "Left Hand and Right Hand are the paired men who act together throughout the Old Woman myth."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Left Hand is one of the two named ancestral men of the Murinbata Mutjingga (Karwadi / Punj) myth who track and kill the child-swallowing Old Woman and cut the children from her belly, thereby founding the initiation rite of ritual death and rebirth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963 (repr. Sydney University Press, 2014)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Teresa L. Coles, Stanner and Mutjingga: A Reinterpretation of Myth, M.A. thesis, Simon Fraser University, 2000."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Left Hand is one of the paired ancestral men of the Murinbata Old Woman myth. When Mutjingga, the Old Mother, swallowed the children left in her charge and fled into the water, Left Hand and his partner Right Hand pursued her, discovered her hidden beneath the surface, killed her, and opened her belly to draw out the children still living. They cleaned the children, rubbed them with red ochre and gave them headbands, acts read as the first performance of initiation. The episode underlies the secret Karwadi (publicly, Punj) bullroarer ceremony."
+  },
+  {
+    "id": "murinbata_right_hand",
+    "name": {
+      "primary": "Right Hand (slayer of the Old Woman)",
+      "alt": [
+        "Right Hand"
+      ],
+      "transliterations": {
+        "etymology": "Rendered by Stanner as 'Right Hand', the second of the paired designations of the two men who recover the swallowed children."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Murinbata",
+    "primaryTradition": "Murinbata",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Murinbata traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Murinbata traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "With his partner Left Hand, Right Hand tracked the Old Woman Mutjingga who had swallowed the children left in her care, killed her, and cut the living children from her belly.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "initiation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Teresa L. Coles, Stanner and Mutjingga: A Reinterpretation of Myth, M.A. thesis, Simon Fraser University, 2000."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "recover_swallowed_children",
+        "name": "to cut open the swallowing Old Woman and bring the children out alive",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "murinbata_mutjingga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ],
+        "notes": "Right Hand, with Left Hand, kills the Old Woman Mutjingga to recover the children she had swallowed."
+      },
+      {
+        "kind": "companion",
+        "personId": "murinbata_left_hand",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963."
+          }
+        ],
+        "notes": "Right Hand and Left Hand are the paired men who act together throughout the Old Woman myth."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Right Hand is one of the two named ancestral men of the Murinbata Mutjingga (Karwadi / Punj) myth who track and kill the child-swallowing Old Woman and cut the children from her belly, thereby founding the initiation rite of ritual death and rebirth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. E. H. Stanner, On Aboriginal Religion, Oceania Monograph No. 11, University of Sydney, 1963 (repr. Sydney University Press, 2014)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Teresa L. Coles, Stanner and Mutjingga: A Reinterpretation of Myth, M.A. thesis, Simon Fraser University, 2000."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Right Hand is one of the paired ancestral men of the Murinbata Old Woman myth. Together with Left Hand he pursued Mutjingga, the Old Mother, after she swallowed the children entrusted to her and hid beneath the water; the two men killed her and cut open her belly to recover the children alive. Their cleaning of the children, reddening them with ochre and bestowing headbands, is remembered as the first initiation and stands behind the secret Karwadi (publicly, Punj) bullroarer ceremony."
+  }
+]
+```

@@ -1,0 +1,146 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Toda
+Era (registered, exact): "Toda traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added one genuinely individuated figure, Meilitars, the deified Toda man whom the ethnographic literature consistently pairs with the already-registered Kwoten as one of the two 'deified Todas'; he tricked the gods into eating buffalo-calf flesh and is credited with founding the ceremonial calf-sacrifice (Rivers 1906; Walker, Encyclopedia of World Cultures 1992 and The Toda of South India 1986). Anthony Walker's reconstructed high-god genealogy (Anthropos 113, 2018) names further beings, On's wife Ti·ko·ner, the sons Pyu·f and Töw-fax, and ten hill-god sons of Teikirzi such as Kora-töw, but these are almost entirely bare genealogical names, and Ti·ko·ner occupies the same consort-of-On slot the corpus already fills with Pinakurs; authoring them would risk padding with undifferentiated names or re-authoring an existing figure under a variant, so I refrained. Meilitars is left solitary because his mortal parentage lies outside the divine roster and no source ties him by a specific relation to an existing corpus deity.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "toda_meilitars",
+    "name": {
+      "primary": "Meilitars",
+      "alt": [
+        "Meïlitars",
+        "Meilitaṛ"
+      ],
+      "transliterations": {
+        "toda": "Meilitars"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Toda",
+    "primaryTradition": "Toda",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Toda traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Toda traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Remembered in Toda legend as a mortal Toda man who tricked the gods into eating the flesh of a buffalo calf, Meilitars was afterward revered as a god and credited with founding the ceremonial calf-sacrifice still practised by the community.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anthony R. Walker, 'Todas,' in Encyclopedia of World Cultures, Vol. 3: South Asia, ed. Paul Hockings (Boston: G. K. Hall / New York: Macmillan, 1992)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "calf-sacrifice",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anthony R. Walker, 'Todas,' in Encyclopedia of World Cultures, Vol. 3: South Asia, ed. Paul Hockings (1992)."
+          }
+        ]
+      },
+      {
+        "sphereId": "buffalo-pastoralism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "W. H. R. Rivers, The Todas (London: Macmillan and Co., 1906)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "originate_calf_sacrifice",
+        "name": "to originate the ceremonial calf-sacrifice",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anthony R. Walker, 'Todas,' in Encyclopedia of World Cultures, Vol. 3: South Asia (1992)."
+          }
+        ]
+      },
+      {
+        "id": "trick_the_gods",
+        "name": "to trick the gods into eating forbidden buffalo-calf flesh",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Anthony R. Walker, The Toda of South India: A New Look (Delhi: Hindustan Publishing Corporation, 1986)."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Meilitars is a deified Toda man of legend, credited with tricking the gods into eating buffalo-calf flesh and so originating the community's ceremonial calf-sacrifice, for which he is now revered as a god.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Anthony R. Walker, 'Todas,' in Encyclopedia of World Cultures, Vol. 3: South Asia, ed. Paul Hockings (Boston: G. K. Hall / New York: Macmillan, 1992)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "W. H. R. Rivers, The Todas (London: Macmillan and Co., 1906)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Anthony R. Walker, The Toda of South India: A New Look (Delhi: Hindustan Publishing Corporation, 1986)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Meilitars is one of the two celebrated deified men of Toda tradition (the other being Kwoten), figures once said to have lived as ordinary Todas but afterward numbered among the gods. In the legends recorded from the Nilgiri pastoralists, Meilitars contrived to trick the gods into eating the flesh of a buffalo calf, and he is remembered as the originator of the ceremonial usages still followed in the calf-sacrifice, a rite central to Toda dairy-and-buffalo religion. Ethnographers place his human parentage among the Toda clans, but he is worshipped as a divinity, standing somewhat apart from the great family of high gods headed by On and Teikirzi."
+  }
+]
+```

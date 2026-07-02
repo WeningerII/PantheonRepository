@@ -1,0 +1,483 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Sinhala folk yakku
+Era (registered, exact): "Sinhala folk yakku traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three genuinely individuated, well-attested figures beyond the existing set. Dala Raja (the tusked chief of the twelve gara-yakku, also called Gara Yaka) and his sister-counterpart Giri Devi form the paired gara myth-cycle documented by Wirz (1954), Kapferer (1983) and the Pattini-cult scholarship of Obeyesekere (1984); they are wired to each other as siblings and are the ambivalent pollution-removing demons of the closing gara-yakuma. Oddisa (Oddi Yaka) is the mythic first exorcist and founder of the Suniyama rite, attested by Kapferer (1997), Wirz (1954) and Scott (1994); he stands solitary as an originating culture-figure rather than within the demonic genealogies. I deliberately excluded the individual eighteen Sanni demons (aspects subordinate to the already-registered Maha Kola Sanniya), the Kadavara group and the deviyo-class deities such as Devol, which fall outside the individuated-yaka scope or are spirit-classes rather than named individuals.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "sinhala_folk_yakku_dala_raja",
+    "name": {
+      "primary": "Dala Raja, the tusked chief of the gara-yakku",
+      "alt": [
+        "Gara Yaka",
+        "Gara Yakā",
+        "Dala-raja",
+        "Dala Kumara",
+        "Gara Devata"
+      ],
+      "transliterations": {
+        "si": "දළ රජ / ගර යකා",
+        "etymology": "Sinhala daḷa ('tusk, fang') + raja ('king'), 'the Tusked King'; gara names the demon-class charged with removing ritual pollution."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sinhala folk yakku",
+    "primaryTradition": "Sinhala folk yakku",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Sinhala folk yakku traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Sinhala folk yakku traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In Sinhala folk narrative the prince Dala, condemned for violating his own sister, is reborn as the tusked chief of the twelve gara-yakku, a band summoned to consume uncleanliness at the close of tovil exorcisms and village peraheras.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "removal-of-ritual-pollution",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "වස් දොස්",
+          "script": "Sinhala",
+          "rom": "vas dos (affliction of the evil eye and evil mouth)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, A Celebration of Demons: Exorcism and the Aesthetics of Healing in Sri Lanka (Bloomington: Indiana University Press, 1983)."
+          }
+        ]
+      },
+      {
+        "sphereId": "closing-rites-of-exorcism-and-perahera",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ගර යකුම",
+          "script": "Sinhala",
+          "rom": "gara yakuma (dance-rite of the gara demons)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "consume_ritual_impurity",
+        "name": "to absorb and carry off the pollution of the evil eye and evil mouth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The gara-yakku are invited at the end of ceremonies to take away vas-dos and other defilements rather than to harm.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sinhala_folk_yakku_gara_vesamuna",
+        "name": "Gara mask",
+        "kind": "mask",
+        "role": "The tusked, cobra-hooded mask worn by the dancer who embodies the gara-yaka in the gara-yak-natuma.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, A Celebration of Demons: Exorcism and the Aesthetics of Healing in Sri Lanka (Bloomington: Indiana University Press, 1983)."
+          }
+        ]
+      },
+      {
+        "id": "sinhala_folk_yakku_gara_pandam",
+        "name": "Twin torches",
+        "kind": "emblem",
+        "role": "A flaming torch carried in each hand, an attribute of Dala-raja who is figured with three hooded cobras and two protruding tusks.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "දළ රජ",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ]
+      },
+      {
+        "original": "ගර යකා",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dandris de Silva Gooneratne, 'On Demonology and Witchcraft in Ceylon,' Journal of the Ceylon Branch of the Royal Asiatic Society 4, no. 13 (1865-66): 1-117."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "sinhala_folk_yakku_giri_devi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ],
+        "notes": "In the paired myth Dala and his sister become, respectively, the gara demon and the goddess Giri Devi, and the female giri figures are the counterparts of the male gara demons in ritual."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dala Raja is the tusked chief of the twelve gara-yakku, ambivalent demons invoked at the close of Sinhala exorcisms and processions to remove ritual pollution.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, A Celebration of Demons: Exorcism and the Aesthetics of Healing in Sri Lanka (Bloomington: Indiana University Press, 1983)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dandris de Silva Gooneratne, 'On Demonology and Witchcraft in Ceylon,' Journal of the Ceylon Branch of the Royal Asiatic Society 4, no. 13 (1865-66): 1-117."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Dala Raja is the leader of the gara-yakku, a band of twelve demons counted among the ambivalent, comparatively benign figures of the Sinhala yaka pantheon. Iconographically he is shown with three hooded cobras rising above his head, ear ornaments, two protruding tusks, and a blazing torch in each hand. Unlike the graveyard and disease demons, the gara-yakku are welcomed rather than feared: they are summoned in the gara-yak-natuma, a masked dance performed at the end of tovil healing ceremonies and annual peraheras, to gather up and carry away the pollution of the evil eye and evil mouth and other defilements. Folk narrative identifies him with Prince Dala of Danthapura, who, cursed to outrage his own sister, ended his life and was reborn as this demon; the sister's parallel fate produces the goddess Giri Devi, whose female giri counterparts accompany the gara demons in ritual."
+  },
+  {
+    "id": "sinhala_folk_yakku_giri_devi",
+    "name": {
+      "primary": "Giri Devi, the wronged princess made goddess",
+      "alt": [
+        "Giri Devi",
+        "Giri Kali",
+        "Giriya",
+        "Giri Yakshani",
+        "Giri Devata"
+      ],
+      "transliterations": {
+        "si": "ගිරි දේවි",
+        "etymology": "Sinhala giri, naming the female figures who serve as the counterparts of the male gara demons in the gara ritual."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sinhala folk yakku",
+    "primaryTradition": "Sinhala folk yakku",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Sinhala folk yakku traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Sinhala folk yakku traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "According to Sinhala folk narrative the dishonoured princess who hanged herself in shame is reborn as Giri Devi, tutelary of the giri goddesses who form the female counterpart of the gara demons in the gara-yakuma.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "female-aspect-of-the-gara-rite",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ගිරි",
+          "script": "Sinhala",
+          "rom": "giri (the goddess-counterpart of the gara demons)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ]
+      },
+      {
+        "sphereId": "purification-and-affliction-of-women",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "වස් දොස්",
+          "script": "Sinhala",
+          "rom": "vas dos (pollution removed in the rite)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gananath Obeyesekere, The Cult of the Goddess Pattini (Chicago: University of Chicago Press, 1984)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "afflict_and_cleanse_the_impure",
+        "name": "to inflict and then to lift impurity, especially upon women",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As with the gara demons, the giri figures both threaten and, when propitiated in the rite, withdraw pollution.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, A Celebration of Demons: Exorcism and the Aesthetics of Healing in Sri Lanka (Bloomington: Indiana University Press, 1983)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sinhala_folk_yakku_giri_vesamuna",
+        "name": "Giri mask",
+        "kind": "mask",
+        "role": "The female mask paired with the gara mask in the gara-yakuma, representing the giri goddess-counterpart.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, A Celebration of Demons: Exorcism and the Aesthetics of Healing in Sri Lanka (Bloomington: Indiana University Press, 1983)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ගිරි දේවි",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "sinhala_folk_yakku_dala_raja",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ],
+        "notes": "The folk cycle pairs the outraged princess (Giri Devi) with her brother Prince Dala, who becomes the gara demon; the giri goddesses and gara demons are thereafter ritual counterparts."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Giri Devi is the deified wronged princess of the gara myth-cycle, chief of the giri goddesses who are the female counterparts of the gara demons in Sinhala ritual.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Gananath Obeyesekere, The Cult of the Goddess Pattini (Chicago: University of Chicago Press, 1984)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, A Celebration of Demons: Exorcism and the Aesthetics of Healing in Sri Lanka (Bloomington: Indiana University Press, 1983)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Giri Devi is the female principal of the gara myth-cycle. In the tale set in the Indian kingdom of Danthapura she is the princess whom her brother, Prince Dala, is fated to violate; overwhelmed by shame she hangs herself and is reborn as a goddess (in some tellings a yakshani), while her brother becomes the gara demon Dala Raja. In the gara-yakuma her giri figures appear as the female counterparts of the male gara-yakku, and like them they are ambivalent, both sending and withdrawing the pollution of the evil eye and evil mouth. Wirz records that the female aspects of the twelve gara demons are the giri goddesses, and the figure is drawn into the wider Sinhala goddess-complex analysed in studies of the Pattini cult."
+  },
+  {
+    "id": "sinhala_folk_yakku_oddisa",
+    "name": {
+      "primary": "Oddisa, the archetypal first exorcist",
+      "alt": [
+        "Oddi Yaka",
+        "Oddi Yakā",
+        "Oddi Raja",
+        "Oddisa Gurunnanse",
+        "Oddisa Guru"
+      ],
+      "transliterations": {
+        "si": "ඔඩ්ඩිසා"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sinhala folk yakku",
+    "primaryTradition": "Sinhala folk yakku",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Sinhala folk yakku traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Sinhala folk yakku traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Sinhala ritual specialists trace their craft to Oddisa, the archetypal grand sorcerer-sacrificer regarded as the creator of the very first exorcism and the founder of the anti-sorcery rite of the Suniyama.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, The Feast of the Sorcerer: Practices of Consciousness and Power (Chicago: University of Chicago Press, 1997)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "exorcism-and-counter-sorcery",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "සූනියම",
+          "script": "Sinhala",
+          "rom": "sūniyama (the great anti-sorcery rite)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, The Feast of the Sorcerer: Practices of Consciousness and Power (Chicago: University of Chicago Press, 1997)."
+          }
+        ]
+      },
+      {
+        "sphereId": "binding-and-expelling-of-demons",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "අදුර",
+          "script": "Sinhala",
+          "rom": "adura (exorcist), the office he originates"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Scott, Formations of a Ritual: Colonial and Anthropological Discourses on the Sinhala Yaktovil (Minneapolis: University of Minnesota Press, 1994)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_and_perform_the_exorcistic_sacrifice",
+        "name": "to originate and perform the sacrificial rite that binds and expels demons of sorcery",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Contemporary aduras hold their practice to descend from Oddisa's foundational performance of the Suniyama.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, The Feast of the Sorcerer: Practices of Consciousness and Power (Chicago: University of Chicago Press, 1997)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sinhala_folk_yakku_atamagala",
+        "name": "Atamagala",
+        "kind": "ritual structure",
+        "role": "The tiered palace-structure at the centre of the Suniyama, the rite founded by Oddisa, into which the sorcery-victim is symbolically restored.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, The Feast of the Sorcerer: Practices of Consciousness and Power (Chicago: University of Chicago Press, 1997)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ඔඩ්ඩි යකා",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Oddisa (Oddi Yaka) is the mythic first exorcist of the Sinhala tradition, founder of the Suniyama anti-sorcery rite and, with the Sanni and Huniyam demons, a member of the exorcistic triad invoked by aduras.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce Kapferer, The Feast of the Sorcerer: Practices of Consciousness and Power (Chicago: University of Chicago Press, 1997)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Exorcism and the Art of Healing in Ceylon (Leiden: E. J. Brill, 1954)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "David Scott, Formations of a Ritual: Colonial and Anthropological Discourses on the Sinhala Yaktovil (Minneapolis: University of Minnesota Press, 1994)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Oddisa is the archetypal originator of Sinhala exorcism, remembered as the grand wizard-sacrificer whose practice living exorcists (aduras) regard as the root of their own craft. He is credited above all with the founding of the Suniyama, the great rite performed to sever the bond that ties a victim to an act of sorcery and to restore that person, through the tiered palace-structure known as the atamagala, to a purified social order. In demonological classification Oddisa also appears as Oddi Yaka, forming a triad alongside the disease-demon complex of the Sanni and the sorcery demon Huniyam that the exorcist must master. As a foundational culture-figure standing at the origin of the ritual tradition rather than within its demonic genealogies, he is invoked chiefly as the guarantor and prototype of the exorcist's authority."
+  }
+]
+```

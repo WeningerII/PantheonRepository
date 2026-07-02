@@ -1,0 +1,458 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Tlapanec
+Era (registered, exact): "Tlapanec traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three genuinely individuated Me'phaa (Tlapanec) deities absent from the existing set: Akuun mbaa, the god of the earth who owns the animals and gives seeds and edible plants; Akuun júba, the lord of the mountain and owner of wild game to whom hunters pray; and Bego (Totonásha), the lightning-and-rain god, whom myth makes a son of the existing fire god Akuun mbatsuun' (wired via parentIds and a subordinate-to relation). All three are consistently documented in Danièle Dehouve's ethnographies of Tlapanec sacrificial ritual and in corroborating Me'phaa cosmology scholarship. I deliberately did not author the localized 'lord of water' figure a second time, since the corpus already carries Akuniya of La Ciénaga and the generic 'Akuun iya' title overlaps with it; the remaining Tlapanec record (a male/female high-god pair and unnamed 'impersonal' gods noted by Schultze Jena) is not individuated enough to yield further named figures.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "tlapanec_akuun_mbaa",
+    "name": {
+      "primary": "Akuun mbaa (the god of the Earth)",
+      "alt": [
+        "Akuun mbaa",
+        "Aku mbaa",
+        "Akuun mbáá",
+        "Aku'un mbaa"
+      ],
+      "transliterations": {
+        "mph": "Akuun mbaa",
+        "etymology": "Me'phaa aku'un 'lord/grandparent/deity' + mbaa 'earth, land, world'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlapanec",
+    "primaryTradition": "Tlapanec",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Tlapanec traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tlapanec traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Me'phaa cosmology names Akuun mbaa as the god of the earth who guards the animals and yields the seeds and edible plants that sustain human life.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, México, Universidad Autónoma de Guerrero/CEMCA/INAH/Plaza y Valdés, 2007."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-and-soil",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mbaa",
+          "script": "Latin",
+          "rom": "mbaa ('earth, land')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, Plaza y Valdés/CEMCA/INAH, 2007."
+          }
+        ]
+      },
+      {
+        "sphereId": "wild-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "La Ceremonia a Akuun Ñee, diosa del temazcal, en la comunidad de El Tejocote, Guerrero: aportes etnográficos para una interpretación de un mito fundamental de la cultura tlapaneca, Religación: Revista de Ciencias Sociales y Humanidades, 2023."
+          }
+        ]
+      },
+      {
+        "sphereId": "agriculture-and-seeds",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, El depósito ritual tlapaneco, in Johanna Broda (coord.), Convocar a los dioses: Ofrendas mesoamericanas, Xalapa, IVEC, 2013, pp. 127-170."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_the_animals",
+        "name": "to guard and own the animals of the earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Hunters and the sick deliver the bones of hunted animals to Akuun mbaa in compensation and to restore his herds.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, Plaza y Valdés/CEMCA/INAH, 2007."
+          }
+        ]
+      },
+      {
+        "id": "yield_seeds_and_plants",
+        "name": "to provide the seeds and edible plants",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "La Ceremonia a Akuun Ñee, diosa del temazcal... Religación: Revista de Ciencias Sociales y Humanidades, 2023."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tlapanec_animal_bones_offering",
+        "name": "Bones of hunted animals",
+        "kind": "offering",
+        "role": "Returned to Akuun mbaa so that the game he owns may be renewed and illness averted.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, Plaza y Valdés/CEMCA/INAH, 2007."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Akuun mbaa is the Me'phaa (Tlapanec) god of the earth, protector and owner of the animals and giver of the seeds and edible plants that feed human beings.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, México, Universidad Autónoma de Guerrero/CEMCA/INAH/Plaza y Valdés, 2007."
+          },
+          {
+            "kind": "secondary",
+            "reference": "La Ceremonia a Akuun Ñee, diosa del temazcal, en la comunidad de El Tejocote, Guerrero: aportes etnográficos para una interpretación de un mito fundamental de la cultura tlapaneca, Religación: Revista de Ciencias Sociales y Humanidades, 2023."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Akuun mbaa is the earth deity of the Me'phaa (Tlapanec) of the Montaña and Costa Chica of Guerrero. He is understood as the guardian and owner of the animals and as the power that yields the maize seed and the edible wild and cultivated plants on which the community depends. In curing and hunting ritual the bones of hunted game are gathered and returned to him, both as recompense for the animals taken and so that his herds may be renewed; failure to make this return is thought to bring sickness. He is one of the central figures of the living Me'phaa ritual system documented by Danièle Dehouve alongside the sun, moon, fire god and the goddess of the temazcal."
+  },
+  {
+    "id": "tlapanec_akuun_juba",
+    "name": {
+      "primary": "Akuun júba (the lord of the mountain)",
+      "alt": [
+        "Ákúún júbá",
+        "Akuun juba",
+        "Aku júba",
+        "Aku of the hill"
+      ],
+      "transliterations": {
+        "mph": "Akuun júba",
+        "etymology": "Me'phaa aku'un 'lord/grandparent/deity' + júba 'mountain, hill'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlapanec",
+    "primaryTradition": "Tlapanec",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Tlapanec traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tlapanec traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Me'phaa belief holds that Akuun júba is the owner of the mountain and of the wild animals upon it, the divine addressee of hunting prayers offered on the sacred hills.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, México, Universidad Autónoma de Guerrero/CEMCA/INAH/Plaza y Valdés, 2007."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "júba",
+          "script": "Latin",
+          "rom": "júba ('mountain, hill')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, Plaza y Valdés/CEMCA/INAH, 2007."
+          }
+        ]
+      },
+      {
+        "sphereId": "hunting-and-wild-game",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, El depósito ritual tlapaneco, in Johanna Broda (coord.), Convocar a los dioses: Ofrendas mesoamericanas, Xalapa, IVEC, 2013, pp. 127-170."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "own_the_wild_animals",
+        "name": "to own the wild animals of the mountain",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "A hunter must beg Akuun júba's forgiveness for game taken, laying out the skulls of rabbits, birds and deer and sacrificing white fowl in compensation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, Plaza y Valdés/CEMCA/INAH, 2007."
+          }
+        ]
+      },
+      {
+        "id": "guard_the_sacred_hills",
+        "name": "to inhabit and guard the sacred hills",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "La Ceremonia a Akuun Ñee, diosa del temazcal... Religación: Revista de Ciencias Sociales y Humanidades, 2023."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tlapanec_hunted_skulls_mat",
+        "name": "Mat of hunted-animal skulls",
+        "kind": "offering",
+        "role": "Skulls of rabbits, birds and deer spread on a mat, with sacrificed white fowl, presented to the lord of the mountain in the hunting rite.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, Plaza y Valdés/CEMCA/INAH, 2007."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Akuun júba is the Me'phaa (Tlapanec) lord and owner of the mountain and of the wild animals living on it, the deity to whom hunters address prayers and offerings on the sacred hills.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, México, Universidad Autónoma de Guerrero/CEMCA/INAH/Plaza y Valdés, 2007."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, El Fuego Nuevo: interpretación de una 'ofrenda contada' tlapaneca (Guerrero, México), Journal de la Société des Américanistes, 2007."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Akuun júba, the 'lord of the mountain', is the Me'phaa deity who owns the wild game and presides over the sacred hills where the community performs its rites, mountains being regarded as the places where the powers of nature manifest. He is the principal addressee of the hunter's prayer: before or after a kill the hunter begs his pardon so that no harm befall the hunter or his family, laying out on a mat the skulls of rabbits, birds and deer and sacrificing white chickens or turkeys in recompense. Danièle Dehouve records the Me'phaa equating this 'aku of the hill' with the earth-and-rain complex of Mesoamerican tradition, and his cult remains part of living Tlapanec agricultural and hunting ritual."
+  },
+  {
+    "id": "tlapanec_bego",
+    "name": {
+      "primary": "Bego (the god of lightning and rain)",
+      "alt": [
+        "Bego",
+        "Bigo",
+        "Totonásha"
+      ],
+      "transliterations": {
+        "mph": "Bego",
+        "etymology": "Me'phaa bego / bigo 'lightning, thunderbolt'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlapanec",
+    "primaryTradition": "Tlapanec",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "tlapanec_akuun_mbatsuun"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "Tlapanec traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tlapanec traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Me'phaa myth describes the lightning beings, sons of the fire god Akuun mbatsuun', each receiving fire in the form of a thunderbolt through which the rain is brought.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, México, Universidad Autónoma de Guerrero/CEMCA/INAH/Plaza y Valdés, 2007."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lightning-and-thunder",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bego",
+          "script": "Latin",
+          "rom": "bego ('lightning')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, Plaza y Valdés/CEMCA/INAH, 2007."
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-and-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "La Ceremonia a Akuun Ñee, diosa del temazcal, en la comunidad de El Tejocote, Guerrero, Religación: Revista de Ciencias Sociales y Humanidades, 2023."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_the_rains",
+        "name": "to command the rains and bring water for the crops",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the power over water and fertility, Bego is petitioned so that timely rain falls on the maize and coffee.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, Plaza y Valdés/CEMCA/INAH, 2007."
+          }
+        ]
+      },
+      {
+        "id": "hurl_the_thunderbolt",
+        "name": "to hurl the thunderbolt of lightning",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "La Ceremonia a Akuun Ñee, diosa del temazcal... Religación: Revista de Ciencias Sociales y Humanidades, 2023."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "tlapanec_akuun_mbatsuun",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, Plaza y Valdés/CEMCA/INAH, 2007."
+          }
+        ],
+        "notes": "In Me'phaa myth the lightning beings are the sons of the fire god Akuun mbatsuun', who conveys fire to them as the thunderbolt."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bego (Totonásha) is the Me'phaa (Tlapanec) god of lightning and rain, born of the fire god Akuun mbatsuun', who governs water and fertility and brings the rains upon which agriculture depends.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Danièle Dehouve, La ofrenda sacrificial entre los tlapanecos de Guerrero, México, Universidad Autónoma de Guerrero/CEMCA/INAH/Plaza y Valdés, 2007."
+          },
+          {
+            "kind": "secondary",
+            "reference": "La Ceremonia a Akuun Ñee, diosa del temazcal, en la comunidad de El Tejocote, Guerrero: aportes etnográficos para una interpretación de un mito fundamental de la cultura tlapaneca, Religación: Revista de Ciencias Sociales y Humanidades, 2023."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bego, also called Totonásha, is the Me'phaa (Tlapanec) god of lightning and rain, the power over water and fertility who controls the rains vital to maize and coffee farming in the Montaña of Guerrero. Me'phaa myth relates that the lightning beings are the sons of the fire god Akuun mbatsuun', each receiving fire in the form of a thunderbolt through which the rain descends. In the syncretic ritual life of the region his cult is fused with that of San Marcos, patron of lightning and rain, whose feast couples Catholic recitation with the sacrifice of goats to petition timely rainfall. He is generally distinguished from the localized water deity Akuniya of La Ciénaga, though the Me'phaa also apply the general title 'lord of water' to the rain powers."
+  }
+]
+```

@@ -1,0 +1,451 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Pende
+Era (registered, exact): "Pende traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four well-attested, individuated named Pende mask-spirits as numen — Mbangu (the sorcery-afflicted, paralysed man), Tundu (the licensed clown-transgressor), Giwoyo/Kiwoyo-Muyombo (the bearded mask of the honoured dead), and Gitenga (the solar-disc mask and elder of the minganji) — following the corpus's own precedent of treating specific named masks (Gipogo, Pumbu) as figures. Each is documented across de Sousberghe's L'Art Pende (1959) and Strother's Inventing Masks (1998) and Pende (2008). I deliberately excluded generic spirit-classes the sources do not individuate: the collective ancestors (mvumbi), the unnamed minganji fibre masks as a group, and unnamed nature spirits, since the task forbids padding with non-individuated classes. The high-god names (Nzambi, Kalunga, Mawese) are already in the corpus, and I found no attested named founding-hero or culture-hero beyond the mask repertoire, so the additions are confined to the securely documented named masquerade personages.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "pende_mbangu",
+    "name": {
+      "primary": "Mbangu (the bewitched, afflicted mask-spirit)",
+      "alt": [
+        "Mbangu",
+        "Mbangu the epileptic",
+        "the sick man"
+      ],
+      "transliterations": {
+        "Kipende": "Mbangu",
+        "etymology": ""
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Pende",
+    "primaryTradition": "Pende",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Pende traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Pende traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Mbangu is one of the fixed named characters of the Pende mbuya village masquerade, embodying a man whose face and body have been ruined by facial paralysis and by the invisible arrows of sorcerers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "affliction-and-witchcraft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mbangu",
+          "script": "Latin",
+          "rom": "mbangu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "embody_sorcery_affliction",
+        "name": "to embody the sickness and disfigurement inflicted by witchcraft",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "pende_mbangu_mask",
+        "name": "Mbangu paralysis mask",
+        "kind": "mask",
+        "role": "A face split into black and white halves, the mouth wrenched sideways by paralysis; the dancer limps on a cane and wears a humpback pierced by an arrow to show the sorcerer's strike.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Pende (5 Continents Editions, Visions of Africa, 2008)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Mbangu is a named character of the Pende mbuya masquerade personifying a man disfigured by facial paralysis and by sorcery, danced to warn the community against mocking the afflicted.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mbangu is one of the recurring named personages of the Pende mbuya masquerade, the wooden-mask theatre performed at village festivities and at the close of initiation. He represents a man whose face has been twisted by a stroke or facial paralysis, an affliction the Pende attribute to sorcery; the mask is characteristically divided into a black half and a white half. In performance the dancer hobbles on a staff and wears a hump pierced with an arrow, referring to the invisible arrows with which sorcerers are said to strike their victims. His accompanying song admonishes onlookers not to laugh at the sick or deformed, since misfortune of this kind is understood as bewitchment rather than fault."
+  },
+  {
+    "id": "pende_tundu",
+    "name": {
+      "primary": "Tundu (the transgressor and clown mask-spirit)",
+      "alt": [
+        "Tundu",
+        "Kindombolo",
+        "Mabambolo"
+      ],
+      "transliterations": {
+        "Kipende": "Tundu",
+        "etymology": ""
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Pende",
+    "primaryTradition": "Pende",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Pende traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Pende traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Tundu is the licensed clown of the Pende mbuya masquerade, a male buffoon whose deliberately disgusting antics dramatize the breaking of every social norm.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "misrule-and-social-transgression",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tundu",
+          "script": "Latin",
+          "rom": "tundu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mock_social_breaches",
+        "name": "to shame breaches of custom through obscene mockery",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "pende_tundu_mask",
+        "name": "Tundu clown mask",
+        "kind": "mask",
+        "role": "A coarse, grimacing face with exaggerated, often deliberately ugly features, worn with unruly gestures that invert dignified comportment.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Pende (5 Continents Editions, Visions of Africa, 2008)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tundu is the named clown-transgressor of the Pende mbuya masquerade, a male buffoon whose antisocial behaviour teaches proper conduct by counter-example.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tundu, known in the eastern Pende region as Kindombolo or Mabambolo, is the licensed clown of the mbuya masquerade. As a male buffoon he flouts every rule of decorum, behaving in ways calculated to appear disgusting so that spectators learn, by revulsion, how one ought not to act. His transgressive licence lets him mock authority and mimic other characters, making him the comic counterweight to the dignified masks of the repertoire."
+  },
+  {
+    "id": "pende_giwoyo",
+    "name": {
+      "primary": "Giwoyo (the bearded mask-spirit of the honoured dead)",
+      "alt": [
+        "Giwoyo",
+        "Kiwoyo",
+        "Kiwoyo-Muyombo",
+        "Muyombo"
+      ],
+      "transliterations": {
+        "Kipende": "giwoyo",
+        "etymology": ""
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Pende",
+    "primaryTradition": "Pende",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Pende traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Pende traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Giwoyo is a bearded, downward-tilting Pende mask associated with the dignity of elders and the spirit of the dead, worn tipped over the dancer's brow so the face hangs like that of a corpse.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestral-authority-and-the-dead",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "giwoyo",
+          "script": "Latin",
+          "rom": "giwoyo"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "manifest_honoured_dead",
+        "name": "to make present the dignity of elders and the spirit of the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "pende_giwoyo_mask",
+        "name": "Giwoyo bearded mask",
+        "kind": "mask",
+        "role": "An elongated face ending in a long pointed beard, symbol of the wisdom and authority of the ancestors; worn tilted back on the head so it evokes a body laid out at a wake.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Metropolitan Museum of Art, catalogue entry for Mask (Giwoyo or Kiwoyo), Pende peoples"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Giwoyo (also Kiwoyo, and in composite form Kiwoyo-Muyombo) is a named bearded Pende mask embodying the authority of elders and the spirit of the dead, worn tipped over the brow to suggest a cadaver.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Giwoyo, called Kiwoyo among the eastern Pende and frequently combined with Muyombo as the hybrid Kiwoyo-Muyombo, is a long, beard-tipped mask of the mbuya repertoire. The pointed beard signals the wisdom and authority of the ancestors, and the mask is characteristically worn tilted back over the dancer's forehead so that the face droops downward, evoking the head of a corpse laid out during a wake. It is accordingly linked to the honoured dead and to elder dignity. De Sousberghe speculated that the bearded form arose from early Pende encounters with bearded European missionaries."
+  },
+  {
+    "id": "pende_gitenga",
+    "name": {
+      "primary": "Gitenga (the solar disc mask, elder of the minganji masks)",
+      "alt": [
+        "Gitenga",
+        "Kitenga"
+      ],
+      "transliterations": {
+        "Kipende": "gitenga",
+        "etymology": ""
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Pende",
+    "primaryTradition": "Pende",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Pende traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Pende traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Gitenga is a flat circular Pende mask figuring the solar disc, honoured as the grandfather and chief of the minganji fibre masks that guard the men's initiation camp.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun-and-regeneration",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "gitenga",
+          "script": "Latin",
+          "rom": "gitenga"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_minganji",
+        "name": "to preside as elder over the minganji guardian masks",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "pende_gitenga_mask",
+        "name": "Gitenga solar mask",
+        "kind": "mask",
+        "role": "A flat, round wooden disc haloed with raffia fibre and feathers, figuring the setting sun as a symbol of life and regeneration; danced in a slow, stately manner unlike the aggressive fibre minganji.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Pende (5 Continents Editions, Visions of Africa, 2008)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Gitenga is a named flat circular Pende mask representing the solar disc and honoured as the grandfather and chief of the minganji fibre masks that guard the male initiation camp.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Leon de Sousberghe, L'Art Pende (Academie Royale de Belgique, 1959)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Zoe S. Strother, Inventing Masks: Agency and History in the Art of the Central Pende (University of Chicago Press, 1998)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gitenga is a flat, circular wooden mask haloed with a fringe of raffia and feathers, understood to figure the solar disc, and in particular the setting sun as an emblem of life and regeneration. Unlike the aggressive fibre masks of the minganji troupe that guard the men's initiation enclosure, Gitenga moves with slow, stately gravity and is regarded as their grandfather or chief. It thus occupies a place of seniority within the male initiation masquerade, distinct from the wooden mbuya village masks."
+  }
+]
+```

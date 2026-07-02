@@ -1,0 +1,398 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Roman Mithraic Mysteries
+Era (registered, exact): "roman-imperial-mithraism"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three further individuated cosmic deities that the standard Mithraic scholarship (Clauss 2000, Beck 2006, Vermaseren's CIMRM, Cumont 1903, Merkelbach 1984) documents as named presences on the monuments beyond the existing core five: Luna, the moon-goddess set opposite Sol at the top of the tauroctony and descending in her chariot; Oceanus, the reclining primordial-waters god of the marginal and rock-birth scenes; and Caelus, the personified vault of heaven bending over the zodiac-ringed celestial sphere. Each is wired into the pantheon as subordinate to Mithras, the cult's cosmocrator, matching how the existing torchbearers are placed. I deliberately did NOT author a separate Saturn/Kronos figure, since the reclining time-and-power elder overlaps the already-registered leontocephaline Arimanius, whose alternate names explicitly include Aion and note the Kronos-Saturn identification; likewise I excluded non-individuated classes (the seven planetary grade-gods, the four winds and seasons, the unnamed primal bull) as out of scope. The attested individuated record beyond these additions appears exhausted.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "roman_mithraic_mysteries_luna",
+    "name": {
+      "primary": "Luna (the Moon Goddess of the Tauroctony)",
+      "alt": [
+        "Luna",
+        "Selene",
+        "Mene"
+      ],
+      "transliterations": {
+        "latin": "Luna",
+        "greek": "Selene",
+        "etymology": "Latin luna 'moon', from Proto-Italic *louksna 'the shining one', ultimately from PIE *lewk- 'to shine, be bright'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Roman Mithraic Mysteries",
+    "primaryTradition": "Roman Mithraic Mysteries",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "roman-imperial-mithraism"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "roman-imperial-mithraism",
+        "eraOrdering": 0,
+        "startEvent": "Luna presides in the upper right corner of the tauroctony as a crescent-crowned bust facing the sun-god across the scene, and in the fuller reliefs she descends on the right in an ox-drawn chariot while Sol's team mounts on the left.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "M. J. Vermaseren, Corpus Inscriptionum et Monumentorum Religionis Mithriacae (CIMRM), 2 vols. (The Hague: Martinus Nijhoff, 1956-1960)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Luna",
+          "script": "Latin",
+          "rom": "moon"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          }
+        ]
+      },
+      {
+        "sphereId": "night-and-descending-time",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Beck, The Religion of the Mithras Cult in the Roman Empire (Oxford: Oxford University Press, 2006)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "drive_the_lunar_chariot",
+        "name": "to drive the ox-drawn chariot of the descending moon",
+        "term": {
+          "value": "biga",
+          "script": "Latin",
+          "rom": "two-horse (here two-ox) chariot"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. J. Vermaseren, Corpus Inscriptionum et Monumentorum Religionis Mithriacae (CIMRM), 2 vols. (The Hague: Martinus Nijhoff, 1956-1960)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "roman_mithraic_mysteries_luna_biga",
+        "name": "the lunar biga",
+        "kind": "vehicle",
+        "role": "The ox- or horse-drawn two-yoke chariot in which Luna sinks on the right-hand side of the more elaborate tauroctonies, mirroring Sol's ascending team.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "roman_mithraic_mysteries_mithras",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Beck, The Religion of the Mithras Cult in the Roman Empire (Oxford: Oxford University Press, 2006)."
+          }
+        ],
+        "notes": "As one of the two luminaries framing the bull-slaying, Luna belongs to the ordered cosmos over which Mithras presides as its master, and she witnesses rather than commands the central act."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Luna is the moon-goddess of Mithraic iconography, a crescent-crowned bust set opposite Sol in the upper corner of the tauroctony and shown descending in her chariot as the lunar counterpart of the ascending sun.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "M. J. Vermaseren, Corpus Inscriptionum et Monumentorum Religionis Mithriacae (CIMRM), 2 vols. (The Hague: Martinus Nijhoff, 1956-1960)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Luna is the individuated lunar deity of the Roman Mithraic monuments, almost invariably paired with Sol at the top of the bull-slaying scene: he in the upper left with radiate crown and rising quadriga, she in the upper right with the crescent moon and a descending team of oxen. As the sole prominent female presence in the male initiatory cult, she embodies the night sky and the waning half of cosmic time, completing the solar-lunar polarity that the torchbearers Cautes and Cautopates echo at the level of dawn and dusk."
+  },
+  {
+    "id": "roman_mithraic_mysteries_oceanus",
+    "name": {
+      "primary": "Oceanus (the Reclining God of the Encircling Waters)",
+      "alt": [
+        "Oceanus",
+        "Okeanos"
+      ],
+      "transliterations": {
+        "latin": "Oceanus",
+        "greek": "Okeanos",
+        "etymology": "Latin Oceanus, a borrowing of Greek Okeanos, the personified world-encircling river-sea; the pre-Greek name is of uncertain, probably non-Indo-European origin."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Roman Mithraic Mysteries",
+    "primaryTradition": "Roman Mithraic Mysteries",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "roman-imperial-mithraism"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "roman-imperial-mithraism",
+        "eraOrdering": 0,
+        "startEvent": "Oceanus appears as a bearded, half-reclining elder among the marginal scenes of the Mithraic reliefs, present as the primordial waters at the rock-birth of Mithras and set as one of the cosmic boundaries in the decoration of the mithraeum.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Franz Cumont, The Mysteries of Mithra, trans. Thomas J. McCormack (Chicago: Open Court, 1903)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "primordial-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Oceanus",
+          "script": "Latin",
+          "rom": "the world-ocean"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Franz Cumont, The Mysteries of Mithra, trans. Thomas J. McCormack (Chicago: Open Court, 1903)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "encircle_the_world_as_water",
+        "name": "to encircle and bound the cosmos as its primal ocean",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "roman_mithraic_mysteries_mithras",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Beck, The Religion of the Mithras Cult in the Roman Empire (Oxford: Oxford University Press, 2006)."
+          }
+        ],
+        "notes": "As the personified waters that bound the world, Oceanus is one of the elemental powers of the cosmos that the cult subordinates to Mithras, and he lies as the watery ground of the scene at the god's rock-birth."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Oceanus is the reclining, bearded water-god who appears in the marginal and cosmogonic scenes of Mithraic monuments as the encircling primordial waters of the world.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Franz Cumont, The Mysteries of Mithra, trans. Thomas J. McCormack (Chicago: Open Court, 1903)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Oceanus is the personified world-ocean of the Mithraic cosmos, rendered in the reliefs as a half-recumbent bearded elder among the elemental powers that frame the central drama. He recurs in the side-scenes and cosmogonic panels as the watery boundary of creation and, in the rock-birth compositions, as the primordial waters over which the new-born god emerges; scholars group him with the sky-god Caelus as the paired vertical limits of the ordered universe the cult celebrates."
+  },
+  {
+    "id": "roman_mithraic_mysteries_caelus",
+    "name": {
+      "primary": "Caelus (the Personified Vault of Heaven)",
+      "alt": [
+        "Caelus",
+        "Caelum",
+        "Ouranos"
+      ],
+      "transliterations": {
+        "latin": "Caelus",
+        "greek": "Ouranos",
+        "etymology": "Latin caelus/caelum 'sky, heaven' personified as a god; the noun is of disputed etymology, sometimes linked to a root meaning 'to hollow, vault' (compare caelare 'to engrave')."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Roman Mithraic Mysteries",
+    "primaryTradition": "Roman Mithraic Mysteries",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "roman-imperial-mithraism"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "roman-imperial-mithraism",
+        "eraOrdering": 0,
+        "startEvent": "Caelus arches over the Mithraic cosmos as the personified heaven, figured in some monuments as an eagle or a bending elder spread above the celestial globe marked with the planets and the signs of the zodiac.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Reinhold Merkelbach, Mithras: Ein persisch-roemischer Mysterienkult (Weinheim: Beltz Athenaeum, 1984)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-vault-of-heaven",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Caelus",
+          "script": "Latin",
+          "rom": "heaven, sky"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "vault_over_the_cosmos",
+        "name": "to arch over the world as the vault of heaven",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reinhold Merkelbach, Mithras: Ein persisch-roemischer Mysterienkult (Weinheim: Beltz Athenaeum, 1984)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "roman_mithraic_mysteries_celestial_sphere",
+        "name": "the celestial sphere",
+        "kind": "emblem",
+        "role": "The globe of heaven inscribed with the zodiac and the planetary bodies, over which Caelus is shown bending and which anchors the astronomical symbolism of the mysteries.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Beck, The Religion of the Mithras Cult in the Roman Empire (Oxford: Oxford University Press, 2006)."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "roman_mithraic_mysteries_mithras",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roger Beck, The Religion of the Mithras Cult in the Roman Empire (Oxford: Oxford University Press, 2006)."
+          }
+        ],
+        "notes": "As the personified heaven arching over the world, Caelus is one of the cosmic frame-powers ranked beneath Mithras, whom the cult celebrates as lord and orderer of the whole celestial sphere."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Caelus is the personified sky or vault of heaven in Mithraic monuments, depicted arching over or bending above the zodiac-marked celestial globe as one of the cosmic boundaries of the mysteries.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Manfred Clauss, The Roman Cult of Mithras: The God and his Mysteries, trans. Richard Gordon (Edinburgh: Edinburgh University Press, 2000)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Reinhold Merkelbach, Mithras: Ein persisch-roemischer Mysterienkult (Weinheim: Beltz Athenaeum, 1984)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Caelus is the personified heaven of the Mithraic cosmos, the upper limit of the ordered world that the mithraeum's vaulted, star-studded ceiling was itself built to imitate. He is shown in some reliefs as a bearded elder or an eagle spread above the celestial sphere ringed by the zodiac; paired conceptually with Oceanus below, he marks the vertical bounds of the universe over which Mithras, the cult's cosmocrator, is celebrated as master."
+  }
+]
+```

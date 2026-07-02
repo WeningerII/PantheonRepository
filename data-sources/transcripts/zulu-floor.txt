@@ -1,0 +1,395 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Zulu
+Era (registered, exact): "mythic", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three genuinely individuated figures beyond the existing five. Uhlakanyana is the archetypal Zulu trickster hero, extensively documented in Callaway's Nursery Tales (1868), Werner (1933), and Scheub (2000); he stands alone with no attested tie to the creator gods. Unwabu (the chameleon) and Intulo (the lizard) are the two named divine messengers of the well-attested origin-of-death myth recorded in Callaway's Religious System of the Amazulu (1868–70), analysed comparatively by Abrahamsson (1951) and Werner (1933); both are wired to the existing Unkulunkulu as his messengers and to each other as rivals in the race that fixed human mortality. I treated them as discrete named mythic actors rather than generic animal-classes because each is a specific narrative agent in a canonical episode. I deliberately excluded non-individuated spirit-classes (tikoloshe familiars, impundulu lightning-bird, generic amadlozi ancestors) as outside the individuated scope.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "zulu_uhlakanyana",
+    "name": {
+      "primary": "Uhlakanyana",
+      "alt": [
+        "Hlakanyana",
+        "uHlakanyana",
+        "Ucakijana",
+        "uCakijana",
+        "Little Weasel"
+      ],
+      "transliterations": {
+        "zul": "uHlakanyana",
+        "etymology": "Diminutive built on the isiZulu root -hlakanipha, 'to be clever, cunning'; the name conveys 'the clever little one', while the alias uCakijana denotes a small weasel or mongoose, emblem of quickness and guile."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Zulu",
+    "primaryTradition": "Zulu",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Born precociously to a chief's wife, Uhlakanyana speaks and walks from the womb and immediately begins his career of trickery, according to the Zulu tales recorded by Henry Callaway.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, Nursery Tales, Traditions, and Histories of the Zulus, in Their Own Words, with a Translation into English, and Notes (Springvale/London, 1868)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "trickery-cunning",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ubuqili",
+          "script": "Latin",
+          "rom": "craftiness, cunning"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu (London: George G. Harrap, 1933), ch. XI, 'The Trickster'."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "outwit_by_guile",
+        "name": "to deceive and outwit by cunning",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In tale after tale he tricks animals, ogres, and elders through quick-witted deception.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (Oxford: Oxford University Press, 2000), s.v. 'Hlakanyana'."
+          }
+        ]
+      },
+      {
+        "id": "shapeshift_and_disguise",
+        "name": "to change shape and pass unrecognised",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He assumes disguises and altered forms to escape his dupes.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu (London: George G. Harrap, 1933), ch. XI, 'The Trickster'."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "uCakijana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, Nursery Tales, Traditions, and Histories of the Zulus (Springvale/London, 1868)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Uhlakanyana is the diminutive trickster hero of Zulu folktale, a precociously born, cunning shapeshifter whose exploits pervade the oral tradition.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, Nursery Tales, Traditions, and Histories of the Zulus, in Their Own Words (Springvale/London, 1868)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu (London: George G. Harrap, 1933), ch. XI, 'The Trickster'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Harold Scheub, A Dictionary of African Mythology: The Mythmaker as Storyteller (Oxford: Oxford University Press, 2000), s.v. 'Hlakanyana'."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Uhlakanyana (also Hlakanyana, and nicknamed uCakijana, 'the little weasel') is the archetypal trickster of Zulu oral literature. In the tales gathered by Henry Callaway he is born already able to speak and walk, and at once begins outwitting cattle, ogres, and grown men through a mixture of guile, flattery, and disguise. Small and weasel-like in cunning, he embodies the ambivalent trickster type found across Bantu-speaking Africa: sometimes a benefactor whose wit topples the powerful, more often a self-serving prankster whose schemes rebound on him. His stories, comparable in the European imagination to Tom Thumb or Jack the Giant-Killer, remain among the best-known narratives of the Zulu storytelling tradition."
+  },
+  {
+    "id": "zulu_unwabu",
+    "name": {
+      "primary": "Unwabu, the Chameleon of Life",
+      "alt": [
+        "uNwabu",
+        "Unwaba",
+        "uNwaba",
+        "the Chameleon"
+      ],
+      "transliterations": {
+        "zul": "unwabu",
+        "etymology": "isiZulu unwabu, 'chameleon'; older ethnographic transcriptions give unwaba. The creature's proverbial slowness underlies its role as the messenger who came too late."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Zulu",
+    "primaryTradition": "Zulu",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "At the beginning of things Unkulunkulu dispatches the chameleon to carry to humankind the word that people shall not die, but it dawdles on the way.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu (Springvale/London: Trübner, 1868–1870)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "life-immortality",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ukungafi",
+          "script": "Latin",
+          "rom": "not-dying, deathlessness"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hans Abrahamsson, The Origin of Death: Studies in African Mythology (Uppsala: Almqvist & Wiksell, 1951)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear_the_word_of_deathlessness",
+        "name": "to carry the message that people shall not die",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Its fatal slowness lets the counter-message overtake it, so humanity forfeits the promised deathlessness.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu (Springvale/London: Trübner, 1868–1870)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "zulu_unkulunkulu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu (Springvale/London: Trübner, 1868–1870)."
+          }
+        ],
+        "notes": "The chameleon is sent out by the creator Unkulunkulu bearing the first message, that humankind shall live and not die."
+      },
+      {
+        "kind": "rival",
+        "personId": "zulu_intulo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu (London: George G. Harrap, 1933), ch. II."
+          }
+        ],
+        "notes": "The slow chameleon is outrun by the lizard Intulo, whose contrary message of death is delivered first and made binding."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Unwabu is the chameleon dispatched by Unkulunkulu with the message that humankind shall not die, but its dawdling causes the promise to be lost, explaining the origin of death.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu (Springvale/London: Trübner, 1868–1870)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hans Abrahamsson, The Origin of Death: Studies in African Mythology (Uppsala: Almqvist & Wiksell, 1951)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu (London: George G. Harrap, 1933), ch. II."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Unwabu (the chameleon; older sources write unwaba) is the first of the two divine messengers in the Zulu myth of the origin of death. The creator Unkulunkulu sends the chameleon to tell humankind that people shall live and not die, but the chameleon loiters and eats along the way. Meanwhile a second, contrary message overtakes it, and death enters the world. Because of this tale the chameleon is treated with wary respect in Zulu custom, its proverbial slowness read as the very reason mortals do not live forever. The episode is one of the most widely recorded African 'message of death' myths, documented for the Zulu by Callaway and analysed comparatively by Abrahamsson."
+  },
+  {
+    "id": "zulu_intulo",
+    "name": {
+      "primary": "Intulo, the Lizard of Death",
+      "alt": [
+        "iNtulo",
+        "the Lizard",
+        "the Gecko"
+      ],
+      "transliterations": {
+        "zul": "intulo",
+        "etymology": "isiZulu intulo, a lizard or gecko (often the blue-headed rock lizard); in the myth its swiftness makes it the bearer of the decree of death."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Zulu",
+    "primaryTradition": "Zulu",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Sent after the chameleon with the reversed word that people shall die, the swift lizard arrives first and its message is made law.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu (Springvale/London: Trübner, 1868–1870)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death-mortality",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ukufa",
+          "script": "Latin",
+          "rom": "death, dying"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hans Abrahamsson, The Origin of Death: Studies in African Mythology (Uppsala: Almqvist & Wiksell, 1951)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deliver_the_decree_of_death",
+        "name": "to deliver the decree that people shall die",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "By reaching humankind before the chameleon, the lizard fixes mortality as the binding word.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu (Springvale/London: Trübner, 1868–1870)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "zulu_unkulunkulu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu (Springvale/London: Trübner, 1868–1870)."
+          }
+        ],
+        "notes": "The lizard is sent out by the creator Unkulunkulu bearing the reversed message, that humankind shall die."
+      },
+      {
+        "kind": "rival",
+        "personId": "zulu_unwabu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu (London: George G. Harrap, 1933), ch. II."
+          }
+        ],
+        "notes": "The swift lizard overtakes the dawdling chameleon Unwabu and delivers the fatal counter-message first."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Intulo is the lizard sent by Unkulunkulu with the reversed message that humankind shall die; arriving before the chameleon, it fixes mortality upon the world.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Henry Callaway, The Religious System of the Amazulu (Springvale/London: Trübner, 1868–1870)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Hans Abrahamsson, The Origin of Death: Studies in African Mythology (Uppsala: Almqvist & Wiksell, 1951)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alice Werner, Myths and Legends of the Bantu (London: George G. Harrap, 1933), ch. II."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Intulo (the lizard or gecko) is the second messenger in the Zulu origin-of-death myth and the counterpart of the chameleon Unwabu. After the chameleon sets out too slowly with the promise of deathlessness, Unkulunkulu sends the swift lizard with the opposite word, that humankind shall die. The lizard arrives first, and because the first-delivered message stands as law, death becomes the fixed lot of mortals. In Zulu custom the intulo is consequently regarded as an ill-omened creature, its entry into a dwelling counted a bad sign, in pointed contrast to the merely slow chameleon. The paired messenger tale is among the best-attested African explanations for the coming of death."
+  }
+]
+```

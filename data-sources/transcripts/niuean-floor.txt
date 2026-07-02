@@ -1,0 +1,524 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Niuean
+Era (registered, exact): "Niuean traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four genuinely individuated, well-attested figures beyond the existing five. Lageiki (Laga-iki) is the fifth of the five tupua whom the corpus was missing; he is wired into the pantheon as one of the migrant gods led by Huanaki. Tilalofonua (god of the rat/kuma) and Halevao (god of the flying fox/peka) form the paired protagonists of Loeb's wing-lending tale and are reciprocally related to each other as new figures. Mataginifale, the celebrated whale-borne culture-heroine and patroness of women's crafts, stands genealogically apart from the tupua and is recorded as solitary with a cited reason. All figures rest on at least two of Loeb (1926), Smith (1902–03) and Craig (1989); I checked for further named individuals (e.g. a distinct Niuean Maui, or the reported "Levmatangi") but found no scholarly attestation individuating them, so I stopped at these four.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "niuean_lageiki",
+    "name": {
+      "primary": "Lageiki",
+      "alt": [
+        "Laga-iki",
+        "Lage-iki",
+        "Lagaiki"
+      ],
+      "transliterations": {
+        "niuean": "Lageiki",
+        "etymology": "Niuean theonym; the first element corresponds to lagi ('sky, heaven'), the same root seen in the fellow tupua Lagi-atea (Smith 1903)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Niuean",
+    "primaryTradition": "Niuean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Niuean traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Niuean traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Lageiki is remembered as the fifth of the five principal gods (tupua) who journeyed with Huanaki and Fao from the lost land of Fonuagalo to settle Niue.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tupua",
+          "script": "Latin",
+          "rom": "principal god"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Smith, S. Percy. \"Niuē-fekai (or Savage) Island and its People.\" Journal of the Polynesian Society 11 (1902) and 12 (1903)."
+          }
+        ],
+        "notes": "Traditions describe Lageiki as having numerous children, marking him as an ancestral and generative figure among the tupua."
+      },
+      {
+        "sphereId": "territorial-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "lagi",
+          "script": "Latin",
+          "rom": "sky, heaven"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ],
+        "notes": "He is said to reside in and be associated with the western part of the island of Niue."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "beget_many_descendants",
+        "name": "to father a great multitude of descendants",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Smith, S. Percy. \"Niuē-fekai (or Savage) Island and its People.\" Journal of the Polynesian Society 11 (1902) and 12 (1903)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "niuean_huanaki",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ],
+        "notes": "Lageiki was one of the migrant tupua whose expedition from Fonuagalo to Niue was led by Huanaki together with Fao."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Lageiki is the fifth of the five principal gods (tupua) of Niue, a migrant ancestral deity associated with the western part of the island and remembered for his many descendants.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Craig, Robert D. Dictionary of Polynesian Mythology. New York: Greenwood Press, 1989."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Lageiki (also Laga-iki) is counted among the five tupua, the principal gods of Niue, alongside Huanaki, Fao, Fakahoko and Lagi-atea. According to island tradition these gods came from a lost land called Fonuagalo, their expedition led by Huanaki and Fao, and landed on Niue in the vicinity of Motu and Lakepa. Lageiki is remembered as dwelling in the western district of the island and as the progenitor of numerous offspring, and so occupies an ancestral place in Niuean cosmology."
+  },
+  {
+    "id": "niuean_tilalofonua",
+    "name": {
+      "primary": "Tilalofonua",
+      "alt": [
+        "Tila-lo-fonua"
+      ],
+      "transliterations": {
+        "niuean": "Tilalofonua",
+        "etymology": "Niuean name whose final element is fonua ('land, country'); the sources gloss the figure as the rat-god who became the bird of the heavens."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Niuean",
+    "primaryTradition": "Niuean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Niuean traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Niuean traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Tilalofonua is named among the ancient gods of Niue as the god of the kuma (rat), who by persistent prayer to Halevao was granted wings and rose to become a bird of the heavens.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kuma",
+          "script": "Latin",
+          "rom": "rat"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ],
+        "notes": "Tilalofonua is the tutelary god of the kuma, the rat."
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "lagi",
+          "script": "Latin",
+          "rom": "heavens"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Craig, Robert D. Dictionary of Polynesian Mythology. New York: Greenwood Press, 1989."
+          }
+        ],
+        "notes": "After receiving wings he is called the bird of the heavens."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fly_through_the_heavens",
+        "name": "to fly through the heavens on borrowed wings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Granted the power of flight by the flying-fox god Halevao after long entreaty.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "niuean_halevao",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ],
+        "notes": "Tilalofonua entreated the flying-fox god Halevao, who at length lent him his wings for a trial of flight, upon which the rat-god ascended to the heavens."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tilalofonua is a Niuean god of the kuma (rat) who, after begging the flying-fox god Halevao for wings, was granted them and became the bird of the heavens.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Craig, Robert D. Dictionary of Polynesian Mythology. New York: Greenwood Press, 1989."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tilalofonua figures in Niuean tradition as the god of the kuma, the rat. In the recorded tale he longed to fly and prayed persistently to Halevao, the god of the peka (flying fox), who eventually consented, saying that he would lend his wings for a short trial. Tilalofonua flew up into the heavens and, having proved himself, remained there permanently as the bird of the heavens. The story links the earthbound rat and the winged flying fox and explains a transformation from creature of the land to creature of the sky."
+  },
+  {
+    "id": "niuean_halevao",
+    "name": {
+      "primary": "Halevao",
+      "alt": [
+        "Hale-vao"
+      ],
+      "transliterations": {
+        "niuean": "Halevao",
+        "etymology": "Niuean name analysable as hale ('house') and vao ('forest, bush'), fitting a god of the forest-dwelling flying fox."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Niuean",
+    "primaryTradition": "Niuean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Niuean traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Niuean traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Halevao is named as the god of the peka (flying fox), the winged creature whose flight the rat-god Tilalofonua coveted and was at length allowed to share.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "peka",
+          "script": "Latin",
+          "rom": "flying fox"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ],
+        "notes": "Halevao is the tutelary god of the peka, the flying fox."
+      },
+      {
+        "sphereId": "flight",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Craig, Robert D. Dictionary of Polynesian Mythology. New York: Greenwood Press, 1989."
+          }
+        ],
+        "notes": "He possesses natural wings and the power to confer flight."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_the_power_of_flight",
+        "name": "to bestow the power of flight by lending his wings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Lent his wings to Tilalofonua after the rat-god's long entreaty.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "niuean_tilalofonua",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ],
+        "notes": "Halevao granted the rat-god Tilalofonua a trial of his wings, enabling the rat-god's ascent to the heavens."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Halevao is the Niuean god of the peka (flying fox) who, in the tale of the rat-god, lends his wings to Tilalofonua and thereby confers the power of flight.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Craig, Robert D. Dictionary of Polynesian Mythology. New York: Greenwood Press, 1989."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Halevao is the god of the peka, the flying fox, and thus master of wings and flight in Niuean tradition. He appears principally in the story of Tilalofonua, the rat-god, who longed for the gift of flight. Moved by Tilalofonua's persistence and devotion, Halevao at last invited him to take his wings for a short trial, upon which the rat-god flew up and became the bird of the heavens. Halevao's role marks him as the possessor and giver of the ability to fly."
+  },
+  {
+    "id": "niuean_mataginifale",
+    "name": {
+      "primary": "Mataginifale",
+      "alt": [
+        "Mata-ginifale",
+        "Matagenifale"
+      ],
+      "transliterations": {
+        "niuean": "Mataginifale",
+        "etymology": "A Niuean personal name borne by a legendary ancestress celebrated as a patroness of women's crafts."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Niuean",
+    "primaryTradition": "Niuean",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Niuean traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Niuean traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Mataginifale, an ancestress of the chiefly line of Malotele and Tehamau, was swallowed by a whale and carried to Tonga, where she is said to have taught the arts of women, returning to Niue as a culture-bringer.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "handicraft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "koloa",
+          "script": "Latin",
+          "rom": "handicraft goods, valuables"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ],
+        "notes": "She is remembered as a patroness and teacher of women's crafts and skills."
+      },
+      {
+        "sphereId": "childbirth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Smith, S. Percy. \"Niuē-fekai (or Savage) Island and its People.\" Journal of the Polynesian Society 11 (1902) and 12 (1903)."
+          }
+        ],
+        "notes": "In some versions she teaches the sacred art of childbirth during her sojourn in Tonga."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "teach_the_womens_arts",
+        "name": "to teach the arts of weaving and childbirth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Smith, S. Percy. \"Niuē-fekai (or Savage) Island and its People.\" Journal of the Polynesian Society 11 (1902) and 12 (1903)."
+          }
+        ]
+      },
+      {
+        "id": "survive_the_whale",
+        "name": "to survive being swallowed by a whale and cross the ocean within it",
+        "term": {
+          "value": "tafuā",
+          "script": "Latin",
+          "rom": "whale"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "niuean_koloa_handicraft",
+        "name": "koloa (women's handicraft and valuables)",
+        "kind": "emblem",
+        "role": "The woven and crafted goods whose arts Mataginifale is said to embody and transmit.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mataginifale is a legendary Niuean ancestress and culture-heroine, swallowed by a whale and carried to Tonga, remembered as a patroness of women's crafts and skills.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. History and Traditions of Niue. Bernice P. Bishop Museum Bulletin 32. Honolulu: Bishop Museum, 1926."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Smith, S. Percy. \"Niuē-fekai (or Savage) Island and its People.\" Journal of the Polynesian Society 11 (1902) and 12 (1903)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mataginifale is among the best-remembered figures of Niuean legend, an ancestress of the chiefly line descended from Malotele and Tehamau. The central story tells how she was swallowed by a whale that bore her across the ocean to Tonga; there she is said to have shared and learned skills, including the arts of women and of childbirth, before her line returned to Niue. She is genealogically tied to later island history through her son Tepunu Muitalau, associated with Mutalau, and she is honoured as a patroness of women's craft and creativity."
+  }
+]
+```

@@ -1,0 +1,960 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Vietnamese
+Era (registered, exact): "H\u1ed3ng B\u00e0ng period \u2014 mythic dawn of the L\u1ea1c Vi\u1ec7t", "L\u00ea dynasty (16th c.) \u2014 \u0110\u1ea1o M\u1eabu mother-goddess religion", "reign of the 18th H\u00f9ng king \u2014 mythic age"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added six well-attested, individuated figures that scholarship documents beyond the existing five. Chử Đồng Tử and his wife Tiên Dung complete the Four Immortals (Tứ bất tử), of which three members were already in the corpus; Thủy Tinh is the divine antagonist of the Sơn Tinh–Thủy Tinh flood myth; Kinh Dương Vương is the Hồng Bàng progenitor wired in as father of the existing Lạc Long Quân; and Mẫu Thượng Ngàn (daughter of the existing Tản Viên) and Mẫu Thoải complete the Đạo Mẫu Four-Palaces mother-goddess triad alongside the already-registered Liễu Hạnh. Each figure is grounded in at least two real scholarly or primary sources (Lĩnh Nam chích quái, Đại Việt sử ký toàn thư, Taylor 1983, Chapuis 1995, Nguyễn Đổng Chi, Ngô Đức Thịnh's Đạo Mẫu Việt Nam, Durand 1959, Fjelstad & Nguyễn 2006, Dumoutier 1907), and new figures are wired into the existing pantheon by parentage or directed relation wherever attested. I deliberately excluded vague spirit-classes and the Mẫu Địa palace (commonly merged with Liễu Hạnh rather than individuated).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "vietnamese_chu_dong_tu",
+    "name": {
+      "primary": "Chử Đồng Tử, the Naked Fisher-Sage of Đầm Nhất Dạ",
+      "alt": [
+        "Chử Đồng Tử",
+        "Chử Đạo Tổ",
+        "Đức Thánh Chử"
+      ],
+      "transliterations": {
+        "chuHan": "褚童子",
+        "vi": "Chử Đồng Tử",
+        "etymology": "Chử is the clan name; Đồng Tử (童子) means 'the lad / boy', recalling that he was orphaned and poor in youth (Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Vietnamese",
+    "primaryTradition": "Vietnamese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Hồng Bàng period — mythic dawn of the Lạc Việt"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Hồng Bàng period — mythic dawn of the Lạc Việt",
+        "eraOrdering": 0,
+        "startEvent": "A destitute Lạc Việt fisherman who shared a single loincloth with his dying father, Chử Đồng Tử is caught bathing by the princess Tiên Dung, weds her against her royal father's wishes, and after study under the monk Phật Quang ascends bodily into the heavens, becoming one of the Four Immortals (Tứ bất tử).",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Vũ Quỳnh & Kiều Phú (comp.), Lĩnh Nam chích quái ('Wondrous Tales of Lĩnh Nam'), 15th c., 'Truyện Nhất Dạ Trạch' ('Tale of the One-Night Marsh')."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam ('Treasury of Vietnamese Folktales'), Hà Nội, 1957–1982."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wealth-and-commerce",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "buôn bán",
+          "script": "Latin (Vietnamese)",
+          "rom": "buôn bán ('trade, commerce')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam, Hà Nội, 1957–1982."
+          }
+        ]
+      },
+      {
+        "sphereId": "marriage-and-love",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "duyên",
+          "script": "Latin (Vietnamese)",
+          "rom": "duyên ('marital bond, destined love')"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          }
+        ]
+      },
+      {
+        "sphereId": "immortality",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bất tử",
+          "script": "Latin (Vietnamese)",
+          "rom": "bất tử ('the undying, immortal')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georges Dumoutier, Les cultes annamites, Revue Indochinoise, Hanoi, 1907."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_overnight_citadel",
+        "name": "to raise a walled palace and township overnight from a planted staff and hat",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The magical staff (gậy) and conical hat (nón) given by the monk Phật Quang conjure a full citadel with servants in a single night.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          }
+        ]
+      },
+      {
+        "id": "ascend_to_heaven",
+        "name": "to ascend bodily into the immortal realm",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In a single night his settlement and household rose into the sky, leaving only an empty marsh, hence Đầm Nhất Dạ ('the One-Night Marsh').",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam, Hà Nội, 1957–1982."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vietnamese_gay_non",
+        "name": "The magical staff and conical hat (gậy và nón)",
+        "kind": "regalia",
+        "role": "Talismans from the monk Phật Quang that conjure a citadel and effect the couple's apotheosis.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Chử Đạo Tổ",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georges Dumoutier, Les cultes annamites, Revue Indochinoise, Hanoi, 1907."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "vietnamese_tien_dung",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          }
+        ],
+        "notes": "He weds the princess Tiên Dung after she bathes over the sand that concealed him; the pair renounce court life, prosper as traders, and ascend together as immortals."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Chử Đồng Tử is a poor Lạc Việt fisherman deified as one of Vietnam's Four Immortals, patron of trade, marriage and Taoist attainment.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam ('Treasury of Vietnamese Folktales'), Hà Nội, 1957–1982."
+          },
+          {
+            "kind": "primary",
+            "reference": "Vũ Quỳnh & Kiều Phú (comp.), Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Georges Dumoutier, Les cultes annamites, Revue Indochinoise, Hanoi, 1907."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Chử Đồng Tử is one of the Tứ bất tử, the Four Immortals of Vietnamese folk religion, standing beside the Saint of Tản Viên Mountain, the Holy Giant of Phù Đổng and the Willow-Blossom Mother Goddess. Born to a destitute fishing family so poor that father and son shared one loincloth, he burned with filial piety, giving the cloth to bury his father and remaining naked. Discovered by the wandering princess Tiên Dung, he married into royalty against the king's will, then embraced an ascetic and mercantile life; instructed by the monk Phật Quang and armed with a magical staff and hat, he raised a palace overnight before ascending into the heavens with his wife, leaving the One-Night Marsh (Đầm Nhất Dạ) at Dạ Trạch. Venerated as Chử Đạo Tổ, a founding patriarch of Vietnamese Taoism, he is honoured at the Đa Hòa and Dạ Trạch temples in Hưng Yên."
+  },
+  {
+    "id": "vietnamese_tien_dung",
+    "name": {
+      "primary": "Tiên Dung, the Wandering Princess of the Hùng Court",
+      "alt": [
+        "Tiên Dung",
+        "Tiên Dung công chúa"
+      ],
+      "transliterations": {
+        "chuHan": "仙容",
+        "vi": "Tiên Dung",
+        "etymology": "Tiên Dung (仙容) means 'immortal's countenance / fairy beauty', a name later read as foreshadowing her apotheosis (Lĩnh Nam chích quái)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Vietnamese",
+    "primaryTradition": "Vietnamese",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Hồng Bàng period — mythic dawn of the Lạc Việt"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Hồng Bàng period — mythic dawn of the Lạc Việt",
+        "eraOrdering": 0,
+        "startEvent": "A daughter of a Hùng king who loved to roam the rivers rather than marry, Tiên Dung bathes behind a curtain over the sand hiding the naked fisher Chử Đồng Tử, takes his uncovering as a decree of fate, weds him, and ultimately ascends with him into the heavens.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Vũ Quỳnh & Kiều Phú (comp.), Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam, Hà Nội, 1957–1982."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "marriage-and-love",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "duyên phận",
+          "script": "Latin (Vietnamese)",
+          "rom": "duyên phận ('destined marital lot')"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          }
+        ]
+      },
+      {
+        "sphereId": "immortality",
+        "contextTag": "posthumous",
+        "term": {
+          "value": "thăng thiên",
+          "script": "Latin (Vietnamese)",
+          "rom": "thăng thiên ('to rise to heaven')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam, Hà Nội, 1957–1982."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ascend_with_settlement",
+        "name": "to ascend bodily into the heavens together with her household",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "With Chử Đồng Tử she is carried skyward in a single night, becoming an object of cult at the marsh she left behind.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Tiên Dung công chúa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam, Hà Nội, 1957–1982."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "vietnamese_chu_dong_tu",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          }
+        ],
+        "notes": "She marries the fisher Chử Đồng Tử, defies her royal father to live as a commoner and trader, and ascends with her husband as an immortal."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tiên Dung is a princess-daughter of a Hùng king whose fated marriage to the fisher Chử Đồng Tử and shared apotheosis form one of the earliest Vietnamese love legends.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Vũ Quỳnh & Kiều Phú (comp.), Lĩnh Nam chích quái, 15th c., 'Truyện Nhất Dạ Trạch'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam ('Treasury of Vietnamese Folktales'), Hà Nội, 1957–1982."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tiên Dung is the free-spirited daughter of a Hùng king (in the traditional reckoning the third) who refused marriage in order to travel the rivers of Văn Lang. Bathing at a sandbank she unwittingly washed away the sand under which the naked Chử Đồng Tử had buried himself in shame; reading the encounter as the will of Heaven she married him on the spot, abandoning her rank. Disowned by her father, she and Chử Đồng Tử built a prosperous trading community and, guided by Buddhist and Taoist teaching, rose bodily into the heavens in a single night. She is co-venerated with her husband at the Đa Hòa and Dạ Trạch temples in Hưng Yên, and their story is celebrated as a founding myth of romantic devotion and self-made prosperity."
+  },
+  {
+    "id": "vietnamese_thuy_tinh",
+    "name": {
+      "primary": "Thủy Tinh, the Water Genie and Bringer of Floods",
+      "alt": [
+        "Thủy Tinh",
+        "Thần Nước"
+      ],
+      "transliterations": {
+        "chuHan": "水精",
+        "vi": "Thủy Tinh",
+        "etymology": "Thủy Tinh (水精) means 'the essence / genie of water', contrasting with his rival Sơn Tinh (山精), 'the essence of the mountain' (Nguyễn Đổng Chi)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vietnamese",
+    "primaryTradition": "Vietnamese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "reign of the 18th Hùng king — mythic age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "reign of the 18th Hùng king — mythic age",
+        "eraOrdering": 0,
+        "startEvent": "Lord of the waters, Thủy Tinh competes with the mountain god for the hand of Princess Mỵ Nương, daughter of the eighteenth Hùng king, and on arriving too late unleashes rising floods to seize her, waging an eternal seasonal war he can never win.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Vũ Quỳnh & Kiều Phú (comp.), Lĩnh Nam chích quái, 15th c., 'Truyện Sơn Tinh Thủy Tinh' ('Tale of the Mountain Genie and the Water Genie')."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam, Hà Nội, 1957–1982."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "floods",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "lũ lụt",
+          "script": "Latin (Vietnamese)",
+          "rom": "lũ lụt ('flood, inundation')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam, Hà Nội, 1957–1982."
+          }
+        ]
+      },
+      {
+        "sphereId": "storms-and-rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mưa bão",
+          "script": "Latin (Vietnamese)",
+          "rom": "mưa bão ('rain and storm')"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lĩnh Nam chích quái, 15th c., 'Truyện Sơn Tinh Thủy Tinh'."
+          }
+        ]
+      },
+      {
+        "sphereId": "waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "thủy",
+          "script": "Latin (Vietnamese)",
+          "rom": "thủy ('water')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Keith Weller Taylor, The Birth of Vietnam, University of California Press, 1983."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "summon_floods",
+        "name": "to summon torrential rains, gales and rising floodwaters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Enraged at losing Mỵ Nương, he raises the waters higher and higher against the mountain each year, mythically explaining Vietnam's monsoon floods.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Lĩnh Nam chích quái, 15th c., 'Truyện Sơn Tinh Thủy Tinh'."
+          }
+        ]
+      },
+      {
+        "id": "command_water_beasts",
+        "name": "to marshal aquatic creatures as an army",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He leads fish, serpents and water beasts against the mountain god's forces.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam, Hà Nội, 1957–1982."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Thủy Tinh is the water god who annually floods the lowlands in his losing war against the mountain god for Princess Mỵ Nương, a myth explaining Vietnam's seasonal inundations.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Nguyễn Đổng Chi, Kho tàng truyện cổ tích Việt Nam ('Treasury of Vietnamese Folktales'), Hà Nội, 1957–1982."
+          },
+          {
+            "kind": "primary",
+            "reference": "Vũ Quỳnh & Kiều Phú (comp.), Lĩnh Nam chích quái, 15th c., 'Truyện Sơn Tinh Thủy Tinh'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Keith Weller Taylor, The Birth of Vietnam, University of California Press, 1983."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Thủy Tinh, the Water Genie, is the divine antagonist of the Sơn Tinh–Thủy Tinh legend set under the eighteenth Hùng king. When the king promised his daughter Mỵ Nương to whichever suitor first brought the appointed bride-gifts, the mountain god (the Saint of Tản Viên Mountain) arrived first and carried her off. Arriving too late, Thủy Tinh raised the rivers and seas, summoned storms, and led armies of water creatures against the mountain, only to be repelled as the mountain god raised the land ever higher. Unable to accept defeat, he renews the assault each rainy season, and Vietnamese tradition reads the annual monsoon floods of the Red River delta as the recurrence of his jealous war. He stands here as the counterpart and perpetual rival of the mountain saint already registered in this pantheon."
+  },
+  {
+    "id": "vietnamese_kinh_duong_vuong",
+    "name": {
+      "primary": "Kinh Dương Vương, Founding King of the Hồng Bàng Line",
+      "alt": [
+        "Kinh Dương Vương",
+        "Lộc Tục"
+      ],
+      "transliterations": {
+        "chuHan": "涇陽王",
+        "vi": "Kinh Dương Vương (Lộc Tục 祿續)",
+        "etymology": "Kinh Dương Vương (涇陽王) is a regnal title, 'King of Kinh Dương'; his personal name Lộc Tục (祿續) means roughly 'continuing emolument / blessing' (Đại Việt sử ký toàn thư)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Vietnamese",
+    "primaryTradition": "Vietnamese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Hồng Bàng period — mythic dawn of the Lạc Việt"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Hồng Bàng period — mythic dawn of the Lạc Việt",
+        "eraOrdering": 0,
+        "startEvent": "A descendant of the divine farmer Thần Nông who could move freely through the underwater realm, Kinh Dương Vương is enthroned as ruler of Xích Quỷ, weds Thần Long the daughter of the Dragon Lord of Động Đình Lake, and fathers Lạc Long Quân, founding the Hồng Bàng line.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ngô Sĩ Liên et al., Đại Việt sử ký toàn thư ('Complete Annals of Đại Việt'), 1479, Ngoại kỷ ('Outer Annals'), Kỷ Hồng Bàng thị."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Keith Weller Taylor, The Birth of Vietnam, University of California Press, 1983."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship-and-sovereignty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vương",
+          "script": "Latin (Vietnamese)",
+          "rom": "vương ('king, sovereign')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oscar Chapuis, A History of Vietnam: From Hong Bang to Tu Duc, Greenwood Press, 1995."
+          }
+        ]
+      },
+      {
+        "sphereId": "founding-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "thủy tổ",
+          "script": "Latin (Vietnamese)",
+          "rom": "thủy tổ ('primordial ancestor / founder')"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Đại Việt sử ký toàn thư, 1479, Kỷ Hồng Bàng thị."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "travel_water_realm",
+        "name": "to travel freely into the underwater dragon realm",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "patrilineal",
+        "notes": "His capacity to move through the waters is inherited by his dragon-natured son Lạc Long Quân.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Đại Việt sử ký toàn thư, 1479, Kỷ Hồng Bàng thị."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Kinh Dương Vương",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Keith Weller Taylor, The Birth of Vietnam, University of California Press, 1983."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "vietnamese_lac_long_quan",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Đại Việt sử ký toàn thư, 1479, Kỷ Hồng Bàng thị."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Keith Weller Taylor, The Birth of Vietnam, University of California Press, 1983."
+          }
+        ],
+        "notes": "By Thần Long, daughter of the Dragon Lord of Động Đình Lake, he begets Sùng Lãm, the Dragon Lord of Lạc, who marries the mountain fairy Âu Cơ and sires the Hùng kings."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kinh Dương Vương (Lộc Tục) is the legendary founder of the Hồng Bàng dynasty and father of Lạc Long Quân, standing at the head of the Vietnamese royal genealogy.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Ngô Sĩ Liên et al., Đại Việt sử ký toàn thư, 1479, Ngoại kỷ, Kỷ Hồng Bàng thị."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Keith Weller Taylor, The Birth of Vietnam, University of California Press, 1983."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Oscar Chapuis, A History of Vietnam: From Hong Bang to Tu Duc, Greenwood Press, 1995."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kinh Dương Vương, personal name Lộc Tục, is the mythic progenitor placed at the very head of the Hồng Bàng genealogy in the fifteenth-century Đại Việt sử ký toàn thư and the Lĩnh Nam chích quái. Reckoned a descendant of the divine agriculturalist Thần Nông (Shennong), he is enthroned circa 2879 BCE as king of the realm of Xích Quỷ and, endowed with the power to pass into the underwater world, marries Thần Long, daughter of the Dragon Lord of Động Đình Lake. Their son Sùng Lãm becomes the Dragon Lord of Lạc (Lạc Long Quân), whose union with the mountain fairy Âu Cơ produces the hundred sons and the line of Hùng kings. Kinh Dương Vwương thus supplies the first generation of the national origin myth already partly represented in this pantheon, and is honoured at a tomb-shrine in Bắc Ninh."
+  },
+  {
+    "id": "vietnamese_mau_thuong_ngan",
+    "name": {
+      "primary": "Mẫu Thượng Ngàn, Mother Goddess of the Upland Forests",
+      "alt": [
+        "Mẫu Thượng Ngàn",
+        "Lâm Cung Thánh Mẫu",
+        "Bà Chúa Thượng Ngàn",
+        "La Bình Công Chúa",
+        "Diệu Tín Thiền sư",
+        "Mẫu Đệ Nhị"
+      ],
+      "transliterations": {
+        "chuHan": "林宮聖母",
+        "vi": "Mẫu Thượng Ngàn",
+        "etymology": "Thượng Ngàn means 'the high forest / upland woods'; her palace title Lâm Cung Thánh Mẫu (林宮聖母) means 'Holy Mother of the Forest Palace' (Ngô Đức Thịnh, Đạo Mẫu Việt Nam)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vietnamese",
+    "primaryTradition": "Vietnamese",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "vietnamese_tan_vien_son_thanh"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "Lê dynasty (16th c.) — Đạo Mẫu mother-goddess religion"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "reign of the 18th Hùng king — mythic age",
+        "eraOrdering": 0,
+        "startEvent": "Born La Bình, daughter of the mountain saint Sơn Tinh (Tản Viên) and the Hùng princess Mỵ Nương, she is entrusted with the guardianship of the forests and mountains.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam ('The Mother Goddess Religion in Vietnam'), Hà Nội: NXB Tôn giáo, 2009."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "Lê dynasty (16th c.) — Đạo Mẫu mother-goddess religion",
+        "eraOrdering": 1,
+        "startEvent": "In the systematized Đạo Mẫu of the Four Palaces (Tứ Phủ) she is enshrined as Mẫu Đệ Nhị, the Second Mother, sovereign of the green Palace of Forests and Mountains, incarnated in green during lên đồng spirit-possession rites.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karen Fjelstad & Nguyễn Thị Hiền (eds.), Possessed by the Spirits: Mediumship in Contemporary Vietnamese Communities, Cornell Southeast Asia Program Publications, 2006."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Maurice Durand, Technique et panthéon des médiums viêtnamiens (Đồng), École française d'Extrême-Orient, Paris, 1959."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "forests-and-mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "rừng núi",
+          "script": "Latin (Vietnamese)",
+          "rom": "rừng núi ('forests and mountains')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam, Hà Nội: NXB Tôn giáo, 2009."
+          }
+        ]
+      },
+      {
+        "sphereId": "hunting-and-woodland",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sơn lâm",
+          "script": "Latin (Vietnamese)",
+          "rom": "sơn lâm ('mountain forest / wilds')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maurice Durand, Technique et panthéon des médiums viêtnamiens (Đồng), EFEO, Paris, 1959."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_forests",
+        "name": "to govern and protect the forests, mountains and their peoples",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As Second Mother of the Four Palaces she rules the upland realm and shelters hunters, foragers and highland communities.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam, Hà Nội: NXB Tôn giáo, 2009."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vietnamese_ao_xanh_thuong_ngan",
+        "name": "Green robe of the Forest Palace (áo xanh)",
+        "kind": "regalia",
+        "role": "The green vestment marking her as sovereign of the woodland palace, worn by mediums when she is incarnated.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maurice Durand, Technique et panthéon des médiums viêtnamiens (Đồng), EFEO, Paris, 1959."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Lâm Cung Thánh Mẫu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam, Hà Nội: NXB Tôn giáo, 2009."
+          }
+        ]
+      },
+      {
+        "original": "Bà Chúa Thượng Ngàn",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karen Fjelstad & Nguyễn Thị Hiền (eds.), Possessed by the Spirits, Cornell SEAP, 2006."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Mẫu Thượng Ngàn is the Mother Goddess of the forests and mountains, Second Mother of the Đạo Mẫu Four Palaces, popularly identified as La Bình, daughter of the mountain saint Tản Viên.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam ('The Mother Goddess Religion in Vietnam'), Hà Nội: NXB Tôn giáo, 2009."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Maurice Durand, Technique et panthéon des médiums viêtnamiens (Đồng), École française d'Extrême-Orient, Paris, 1959."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Karen Fjelstad & Nguyễn Thị Hiền (eds.), Possessed by the Spirits: Mediumship in Contemporary Vietnamese Communities, Cornell SEAP, 2006."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Mẫu Thượng Ngàn, the Mother of the Upland Forests, is one of the great mother goddesses of Đạo Mẫu, the Vietnamese Mother Goddess religion systematized around the Four Palaces (Tứ Phủ). As Mẫu Đệ Nhị, the Second Mother, she presides over the green Palace of Forests and Mountains, ranking beside the Willow-Blossom Mother of the Sky (Liễu Hạnh) and the Mother of the Waters. Local legend, especially at Bắc Lệ and Suối Mỡ, identifies her as La Bình Công Chúa, daughter of the mountain saint Sơn Tinh (Tản Viên) and the Hùng princess Mỵ Nương, and hence granddaughter of a Hùng king; a Buddhicized strand names her the enlightened nun Diệu Tín. In lên đồng possession rites she descends robed in green to bless hunters, foragers and highland folk. Her attachment as daughter to the Saint of Tản Viên Mountain links her directly to a figure already registered in this pantheon."
+  },
+  {
+    "id": "vietnamese_mau_thoai",
+    "name": {
+      "primary": "Mẫu Thoải, Mother Goddess of the Waters",
+      "alt": [
+        "Mẫu Thoải",
+        "Thoải Cung Thánh Mẫu",
+        "Bà Chúa Thoải",
+        "Thủy Cung Thánh Mẫu",
+        "Mẫu Đệ Tam"
+      ],
+      "transliterations": {
+        "chuHan": "水宮聖母",
+        "vi": "Mẫu Thoải",
+        "etymology": "Thoải is the vernacular (Nôm) reading of Hán 'thủy' (水, 'water'); Thoải Cung Thánh Mẫu (水宮聖母) means 'Holy Mother of the Water Palace' (Ngô Đức Thịnh, Đạo Mẫu Việt Nam)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vietnamese",
+    "primaryTradition": "Vietnamese",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Lê dynasty (16th c.) — Đạo Mẫu mother-goddess religion"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Lê dynasty (16th c.) — Đạo Mẫu mother-goddess religion",
+        "eraOrdering": 0,
+        "startEvent": "Daughter of the Dragon King of Động Đình Lake, Mẫu Thoải is enshrined in the Đạo Mẫu Four Palaces as Mẫu Đệ Tam, the Third Mother, sovereign of the white Water Palace, incarnated in white during lên đồng rites to rule rivers, seas and rain.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam ('The Mother Goddess Religion in Vietnam'), Hà Nội: NXB Tôn giáo, 2009."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Maurice Durand, Technique et panthéon des médiums viêtnamiens (Đồng), École française d'Extrême-Orient, Paris, 1959."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers-and-seas",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sông biển",
+          "script": "Latin (Vietnamese)",
+          "rom": "sông biển ('rivers and seas')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam, Hà Nội: NXB Tôn giáo, 2009."
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-and-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "thủy",
+          "script": "Latin (Vietnamese)",
+          "rom": "thủy ('water')"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maurice Durand, Technique et panthéon des médiums viêtnamiens (Đồng), EFEO, Paris, 1959."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_the_waters",
+        "name": "to command rivers, seas and rain and to shelter those who travel the water",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As Third Mother of the Four Palaces she governs the aquatic realm and protects boatmen, fishers and seafarers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam, Hà Nội: NXB Tôn giáo, 2009."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vietnamese_ao_trang_thoai",
+        "name": "White robe of the Water Palace (áo trắng)",
+        "kind": "regalia",
+        "role": "The white vestment marking her as sovereign of the water palace, worn by mediums when she is incarnated.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maurice Durand, Technique et panthéon des médiums viêtnamiens (Đồng), EFEO, Paris, 1959."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Thoải Cung Thánh Mẫu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam, Hà Nội: NXB Tôn giáo, 2009."
+          }
+        ]
+      },
+      {
+        "original": "Bà Chúa Thoải",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karen Fjelstad & Nguyễn Thị Hiền (eds.), Possessed by the Spirits, Cornell SEAP, 2006."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Mẫu Thoải is the Mother Goddess of the Waters, Third Mother of the Đạo Mẫu Four Palaces, daughter of the Dragon King of Động Đình Lake and patroness of rivers, seas and rain.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ngô Đức Thịnh, Đạo Mẫu Việt Nam ('The Mother Goddess Religion in Vietnam'), Hà Nội: NXB Tôn giáo, 2009."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Maurice Durand, Technique et panthéon des médiums viêtnamiens (Đồng), École française d'Extrême-Orient, Paris, 1959."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Karen Fjelstad & Nguyễn Thị Hiền (eds.), Possessed by the Spirits: Mediumship in Contemporary Vietnamese Communities, Cornell SEAP, 2006."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Mẫu Thoải, the Mother of the Waters, is the third of the great mother goddesses of Đạo Mẫu, ruling the white Water Palace (Thoải Phủ) of the Four Palaces alongside the Mother of the Sky (Liễu Hạnh) and the Mother of the Forests (Mẫu Thượng Ngàn). Her legend makes her a daughter of the Dragon King of Động Đình Lake, wronged in a marriage to the mortal Kính Xuyên and vindicated by divine intervention, after which she becomes sovereign of rivers, seas and rain and protector of those who travel the water. In lên đồng spirit-possession rites she descends robed in white. She stands somewhat apart in this pantheon because her divine father, the Dragon Lord of Động Đình, is not separately individuated in the corpus, though the same lake-dragon lineage underlies the ancestry of the Hồng Bàng kings."
+  }
+]
+```

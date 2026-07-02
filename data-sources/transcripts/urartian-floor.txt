@@ -1,0 +1,400 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Urartian
+Era (registered, exact): "historical"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three genuinely individuated Urartian deities documented beyond the existing five: Selardi, the moon god equated with Mesopotamian Sîn; Tushpuea, the eponymous goddess of the capital Tušpa and consort of the sun god Šiuini; and Huba, consort of the weather god Teišeba and the Urartian form of the Hurrian mother goddess Ḫepat. Each is attested in the Meher Kapısı (Mheri-Dur) pantheon list and treated in the standard scholarship (Piotrovsky 1969, Zimansky 1985, Salvini CTU 2008, Chahin 2001, Wilhelm 1989, Adontz 1946), and I wired Tushpuea and Huba into the corpus as consorts of the existing Shivini and Teisheba. I stopped at three because the remaining dozens of names on the Meher Kapısı stele are, in the consensus of specialists, otherwise unattested and lack any individuating role, consort, or myth, so authoring them would amount to padding rather than documented figures.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "urartian_selardi",
+    "name": {
+      "primary": "Selardi",
+      "alt": [
+        "Šelardi",
+        "Sielardi",
+        "Melardi",
+        "Sardi"
+      ],
+      "transliterations": {
+        "urartian": "Šelardi",
+        "etymology": "Nicholas Adontz derived Sielardi from an element siela ('woman/sister') plus ardi ('sun/light'), and the name is often connected with the medieval Armenian word for moon; in cuneiform the god is written with the Mesopotamian ideogram for Sîn."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Urartian",
+    "primaryTradition": "Urartian",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "historical"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "historical",
+        "eraOrdering": 0,
+        "startEvent": "Selardi is recorded among the roughly seventy-nine gods of the Meher Kapısı (Mheri-Dur) rock inscription of Išpuini and Menua near Tušpa, where each deity is assigned prescribed sacrificial offerings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lunar-deity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Šelardi",
+          "script": "Latin",
+          "rom": "moon god"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Zimansky, Paul E. Ecology and Empire: The Structure of the Urartian State. Studies in Ancient Oriental Civilization 41. Chicago: Oriental Institute of the University of Chicago, 1985."
+          }
+        ]
+      },
+      {
+        "sphereId": "night-sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Belli, Oktay. The Anzaf Fortresses and the Gods of Urartu. Istanbul: Arkeoloji ve Sanat Yayınları, 1999."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_the_moon",
+        "name": "to govern the moon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the Urartian lunar god Selardi stood as the local counterpart of the Mesopotamian moon god Sîn.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Selardi is the Urartian lunar deity listed in the Meher Kapısı pantheon and equated with the Mesopotamian moon god Sîn.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Zimansky, Paul E. Ecology and Empire: The Structure of the Urartian State. Studies in Ancient Oriental Civilization 41. Chicago: Oriental Institute of the University of Chicago, 1985."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Adontz, Nicholas. Histoire d'Arménie: les origines, du Xe siècle au VIe (av. J.-C.). Paris: Union générale arménienne de bienfaisance, 1946."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Selardi (also Šelardi, Sielardi, or Melardi) is the moon god of the Urartian pantheon, one of the many deities enumerated in the Meher Kapısı rock inscription that fixed the state cult of the Van kingdom. He served as the Urartian equivalent of the Mesopotamian lunar god Sîn, whose ideogram is used to write his name in cuneiform. The deity is only partially attested, and scholars have long debated both the reading of the name and the god's gender, some proposing a female lunar figure and others a male one. Beyond the offering lists no myth about Selardi survives, but the prominence of the name within the sacrificial catalogue indicates a deity of real cultic weight."
+  },
+  {
+    "id": "urartian_tushpuea",
+    "name": {
+      "primary": "Tushpuea",
+      "alt": [
+        "Tušpuea",
+        "Tuspuea",
+        "Tushpues"
+      ],
+      "transliterations": {
+        "urartian": "Tušpuea",
+        "etymology": "The goddess's name is bound to that of the Urartian capital Tušpa (modern Van), of which she was the eponymous patron; the toponym is generally taken to derive from the divine name."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Urartian",
+    "primaryTradition": "Urartian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "historical"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "historical",
+        "eraOrdering": 0,
+        "startEvent": "Tushpuea appears as the third goddess in the female column of the Meher Kapısı offering list, a position paralleling that of the sun god Šiuini in the male column, which underlies her identification as his consort.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "city-patron",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Tušpa",
+          "script": "Latin",
+          "rom": "the city Tušpa (Van)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Salvini, Mirjo. Corpus dei testi urartei (CTU), Vol. I: Le iscrizioni su pietra e roccia. Rome: CNR, Istituto di Studi sulle Civiltà dell'Egeo e del Vicino Oriente, 2008."
+          }
+        ]
+      },
+      {
+        "sphereId": "solar-consort",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chahin, M. The Kingdom of Armenia: A History. Richmond: Curzon Press, 2001."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_the_capital",
+        "name": "to watch over the capital city of Tušpa",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As eponymous goddess of Tušpa she personified and protected the royal capital on Lake Van.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "urartian_winged_cauldron_head",
+        "name": "Winged female cauldron attachment",
+        "kind": "emblem",
+        "role": "Bronze cauldron rims from Urartu are frequently decorated with the busts of winged goddesses, figures often identified with Tushpuea.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "urartian_shivini",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chahin, M. The Kingdom of Armenia: A History. Richmond: Curzon Press, 2001."
+          }
+        ],
+        "notes": "Tushpuea is generally taken to be the consort of the sun god Šiuini, both occupying the third rank in their respective divine columns of the Meher Kapısı list."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tushpuea is the Urartian goddess who gave her name to the capital Tušpa and is identified as the consort of the sun god Šiuini.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Salvini, Mirjo. Corpus dei testi urartei (CTU), Vol. I: Le iscrizioni su pietra e roccia. Rome: CNR, Istituto di Studi sulle Civiltà dell'Egeo e del Vicino Oriente, 2008."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chahin, M. The Kingdom of Armenia: A History. Richmond: Curzon Press, 2001."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tushpuea (Tušpuea) is the Urartian goddess after whom the kingdom's capital Tušpa, on the eastern shore of Lake Van, was named. In the Meher Kapısı offering inscription she is the third-ranked goddess, matching the third-ranked position of the sun god Šiuini among the male deities, and on this parallel scholars identify her as his consort. She is frequently connected with the winged female figures that adorn the rims of Urartian bronze cauldrons, imagery that would present her as a radiant, solar-associated goddess. Little narrative material survives, but her eponymous link to the royal capital marks her as a figure of significant cultic and civic importance."
+  },
+  {
+    "id": "urartian_huba",
+    "name": {
+      "primary": "Huba",
+      "alt": [
+        "Ḫuba",
+        "Khuba",
+        "Hepat"
+      ],
+      "transliterations": {
+        "urartian": "Ḫuba",
+        "etymology": "Huba is the Urartian form of the Hurrian mother goddess Ḫepat (Hebat), consort of the storm god Teššub, taken over into the Urartian pantheon alongside her husband Teišeba."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Urartian",
+    "primaryTradition": "Urartian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "historical"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "historical",
+        "eraOrdering": 0,
+        "startEvent": "Huba is enumerated among the goddesses of the Meher Kapısı sacrificial list, where her rank pairs her with the weather god Teišeba much as the Hurrian Ḫepat was paired with Teššub.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mother-goddess",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ḫepat",
+          "script": "Latin",
+          "rom": "Hebat, mother goddess"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm, Gernot. The Hurrians. Warminster: Aris & Phillips, 1989."
+          }
+        ]
+      },
+      {
+        "sphereId": "storm-consort",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "nurture_living_things",
+        "name": "to sustain all living things as a mother goddess",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "By her identity with the Hurrian Ḫepat, a mother goddess 'of all living things,' Huba was likely credited with a similar nurturing role.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm, Gernot. The Hurrians. Warminster: Aris & Phillips, 1989."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "urartian_teisheba",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          }
+        ],
+        "notes": "Huba is the wife of the weather god Teišeba, mirroring the Hurrian pairing of Ḫepat with the storm god Teššub, from whom the Urartian couple was adopted."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Huba is the Urartian consort of the weather god Teišeba, the local form of the Hurrian mother goddess Ḫepat (Hebat).",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Piotrovsky, Boris B. The Ancient Civilization of Urartu: An Archaeological Adventure. New York: Cowles Book Co., 1969."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm, Gernot. The Hurrians. Warminster: Aris & Phillips, 1989."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Salvini, Mirjo. Corpus dei testi urartei (CTU), Vol. I: Le iscrizioni su pietra e roccia. Rome: CNR, Istituto di Studi sulle Civiltà dell'Egeo e del Vicino Oriente, 2008."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Huba (Ḫuba) is the wife of the Urartian storm and war god Teišeba, and appears among the goddesses of the Meher Kapısı offering inscription. She is the Urartian reflex of the Hurrian mother goddess Ḫepat (Hebat), consort of the weather god Teššub, taken into the Van pantheon together with her divine husband as part of the strong Hurrian component in Urartian religion. As Hebat was revered as a mother goddess of all living things and 'Queen of Heaven,' Huba is presumed to have carried a comparably maternal and sovereign character, though little independent Urartian tradition about her survives beyond the cultic lists."
+  }
+]
+```

@@ -1,0 +1,375 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Urhobo
+Era (registered, exact): "Urhobo traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two genuinely individuated, well-attested figures beyond the existing set. Ohworhu is a named southern-Urhobo water divinity (edjo) honoured in the two-day Ohworu masquerade festival at Evwreni, documented by Perkins Foss's Museum for African Art catalogue and Nabofa's ethnography, and wired to Oghene as one of the edjo held to be his children/messengers. Ubiesha Etarakpor is the historical prophet of Kokori who founded the Igbe dance religion in 1858, an indigenous Urhobo monotheism, attested by Nabofa's chapter in Studies in Urhobo Culture and Afatakpa's 2021 Yoruba Studies Review article; he is wired to Oghene, the God he preached. I deliberately excluded borderline or non-individuated items: Osonobrughwe (an alias of the already-registered supreme god Oghene), Erivwin (the ancestral realm/cult rather than a named being), Eravwe Oganga (a masquerade aspect of Ohworhu, recorded as materialCulture), a putative war-deity "Oranre" (the sources only confirm it as a calendar/festival month), and Olokun (whose Urhobo-specific attestation is too entangled with the pan-regional Edo/Yoruba deity to author safely here).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "urhobo_ohworhu",
+    "name": {
+      "primary": "Ohworhu",
+      "alt": [
+        "Ohworu",
+        "Ohvworhu",
+        "Ohworhu water spirit"
+      ],
+      "transliterations": {
+        "urhobo": "Ohworhu",
+        "etymology": "Urhobo name for a powerful water divinity (edjo rẹ ame, 'spirit of the water'); the associated festival is likewise called Ohworu."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Urhobo",
+    "primaryTradition": "Urhobo",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Urhobo traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Urhobo traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Ohworhu is venerated among the southern Urhobo as a water spirit of the rivers and creeks, honoured chiefly in the two-day Ohworu festival at Evwreni.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perkins Foss (ed.), Where Gods and Mortals Meet: Continuity and Renewal in Urhobo Art (Ghent: Snoeck Publishers; New York: Museum for African Art, 2004)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "edjo rẹ ame",
+          "script": "Latin",
+          "rom": "spirit of the water"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perkins Foss (ed.), Where Gods and Mortals Meet: Continuity and Renewal in Urhobo Art (New York: Museum for African Art, 2004)."
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility-and-prosperity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Religious Practices among the Urhobo,' in Onigu Otite (ed.), The Urhobo People (Ibadan: Heinemann Educational Books, 1982)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_bountiful_waters",
+        "name": "to grant good fishing and a bountiful harvest",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Devotees seek Ohworhu's favour for productive rivers and fields.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perkins Foss (ed.), Where Gods and Mortals Meet: Continuity and Renewal in Urhobo Art (New York: Museum for African Art, 2004)."
+          }
+        ]
+      },
+      {
+        "id": "protect_from_waters",
+        "name": "to protect people from the dangers of rivers and creeks",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As an edjo of the riverine Niger Delta, Ohworhu is invoked for safety on the water.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Religious Practices among the Urhobo,' in Onigu Otite (ed.), The Urhobo People (Ibadan: Heinemann Educational Books, 1982)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "urhobo_eravwe_oganga",
+        "name": "Eravwe Oganga",
+        "kind": "masquerade",
+        "role": "The 'Huge Beast', the largest and most elaborate masquerade of the Ohworu festival, danced by three men, embodying the animal forces of the water spirit Ohworhu.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perkins Foss (ed.), Where Gods and Mortals Meet: Continuity and Renewal in Urhobo Art (New York: Museum for African Art, 2004)."
+          }
+        ]
+      },
+      {
+        "id": "urhobo_ohworhu_mask",
+        "name": "Ohworhu water-spirit mask",
+        "kind": "emblem",
+        "role": "Carved headdress worn in Ohworhu dances, made not to please mortals but to attract and honour the edjo of the water.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Perkins Foss (ed.), Where Gods and Mortals Meet: Continuity and Renewal in Urhobo Art (New York: Museum for African Art, 2004)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "urhobo_oghene",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Religious Practices among the Urhobo,' in Onigu Otite (ed.), The Urhobo People (Ibadan: Heinemann Educational Books, 1982)."
+          }
+        ],
+        "notes": "In Urhobo theology the edjo divinities, Ohworhu among them, are acknowledged as children and messengers of the supreme being Oghene, serving as intermediaries between him and humankind."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ohworhu is a named Urhobo water divinity (edjo) of the southern communities, honoured in the annual two-day Ohworu masquerade festival at Evwreni and appealed to for fertility, good fishing and protection on the waters.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Perkins Foss (ed.), Where Gods and Mortals Meet: Continuity and Renewal in Urhobo Art (Ghent: Snoeck Publishers; New York: Museum for African Art, 2004)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Religious Practices among the Urhobo,' in Onigu Otite (ed.), The Urhobo People (Ibadan: Heinemann Educational Books, 1982)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ohworhu is a water spirit of the southern Urhobo of the Niger Delta, one of the many edjo believed to dwell in the rivers and creeks, expressed in the proverb that spirits come from the water. It is honoured in the two-day Ohworu festival at Evwreni, whose climax is the appearance of the Eravwe Oganga or 'Huge Beast', a great masquerade danced by several men that embodies the animal forces of the spirit. Worshippers appeal to Ohworhu for abundant fishing and harvests, for the fertility of the community, and for protection against the perils of the water. The masquerade tradition is thought to have been carried northward by itinerant Urhobo fishermen from Ijo fishing camps."
+  },
+  {
+    "id": "urhobo_ubiesha",
+    "name": {
+      "primary": "Ubiesha Etarakpor",
+      "alt": [
+        "Ubiecha Etarakpo",
+        "Ubiesha",
+        "Ubiẹsha Etarakpọ"
+      ],
+      "transliterations": {
+        "urhobo": "Ubiẹsha Etarakpọ",
+        "etymology": "Personal name of the historical Urhobo prophet of Kokori; the movement he founded is called Igbe, an Urhobo word meaning 'dance', the medium of its worship."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Urhobo",
+    "primaryTradition": "Urhobo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Urhobo traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Urhobo traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Ubiesha Etarakpor, a man of Kokori Inland, founded the Igbe religion in 1858 after a vision of two divine beings who anointed him to preach against immorality and witchcraft, and he led the movement until his death in 1920.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Igbe Ubiesha: An Indigenous Charismatic Movement of the Urhobo People,' in Peter P. Ekeh (ed.), Studies in Urhobo Culture (Lagos: Urhobo Historical Society, 2005), pp. 371-402."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "prophecy-and-healing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Igbe",
+          "script": "Latin",
+          "rom": "dance (as worship)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fortune Afatakpa, 'An African Monotheism: The Igbe Religion of the Urhobo and the Economic Importance of the Ore-Isi Festival,' Yoruba Studies Review 6, no. 1 (2021)."
+          }
+        ]
+      },
+      {
+        "sphereId": "purification-and-anti-witchcraft",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "orhen",
+          "script": "Latin",
+          "rom": "sacred white chalk"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Igbe Ubiesha: An Indigenous Charismatic Movement of the Urhobo People,' in Peter P. Ekeh (ed.), Studies in Urhobo Culture (Lagos: Urhobo Historical Society, 2005)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heal_the_sick",
+        "name": "to heal the sick",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Ubiesha was credited with curing the ill through ministration with sacred white chalk.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Igbe Ubiesha: An Indigenous Charismatic Movement of the Urhobo People,' in Peter P. Ekeh (ed.), Studies in Urhobo Culture (Lagos: Urhobo Historical Society, 2005)."
+          }
+        ]
+      },
+      {
+        "id": "identify_witches",
+        "name": "to detect and expose witches and wizards",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His campaign against witchcraft was central to the appeal of the early Igbe movement.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fortune Afatakpa, 'An African Monotheism: The Igbe Religion of the Urhobo and the Economic Importance of the Ore-Isi Festival,' Yoruba Studies Review 6, no. 1 (2021)."
+          }
+        ]
+      },
+      {
+        "id": "prophesy",
+        "name": "to foretell future events",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He was famed for accurate predictions after his founding vision.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Igbe Ubiesha: An Indigenous Charismatic Movement of the Urhobo People,' in Peter P. Ekeh (ed.), Studies in Urhobo Culture (Lagos: Urhobo Historical Society, 2005)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "urhobo_orhen_chalk",
+        "name": "Orhen",
+        "kind": "regalia",
+        "role": "Native white chalk with which Ubiesha and later Igbe priests minister to, bless and purify worshippers; the emblem of the Igbe religion.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Igbe Ubiesha: An Indigenous Charismatic Movement of the Urhobo People,' in Peter P. Ekeh (ed.), Studies in Urhobo Culture (Lagos: Urhobo Historical Society, 2005)."
+          }
+        ]
+      },
+      {
+        "id": "urhobo_ogua_worship_house",
+        "name": "Ogua",
+        "kind": "regalia",
+        "role": "The worship house Ubiesha built in his compound at Kokori, from which he ministered and prophesied; the prototype of the Igbe temple.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fortune Afatakpa, 'An African Monotheism: The Igbe Religion of the Urhobo and the Economic Importance of the Ore-Isi Festival,' Yoruba Studies Review 6, no. 1 (2021)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Uku",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fortune Afatakpa, 'An African Monotheism: The Igbe Religion of the Urhobo and the Economic Importance of the Ore-Isi Festival,' Yoruba Studies Review 6, no. 1 (2021)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "urhobo_oghene",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fortune Afatakpa, 'An African Monotheism: The Igbe Religion of the Urhobo and the Economic Importance of the Ore-Isi Festival,' Yoruba Studies Review 6, no. 1 (2021)."
+          }
+        ],
+        "notes": "Ubiesha preached the direct worship of the one supreme God, called Oghene (also Oweya or Orise), making Igbe an indigenous monotheism centred on that deity."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ubiesha Etarakpor was the historical Urhobo prophet of Kokori who founded the Igbe (dance) religion in 1858 following a vision, became renowned as a healer, seer and witch-finder, held the supreme office of Uku, and is revered as the founding figure of an indigenous Urhobo monotheism.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Y. Nabofa, 'Igbe Ubiesha: An Indigenous Charismatic Movement of the Urhobo People,' in Peter P. Ekeh (ed.), Studies in Urhobo Culture (Lagos: Urhobo Historical Society, 2005), pp. 371-402."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fortune Afatakpa, 'An African Monotheism: The Igbe Religion of the Urhobo and the Economic Importance of the Ore-Isi Festival,' Yoruba Studies Review 6, no. 1 (2021)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ubiesha Etarakpor of Kokori Inland founded the Igbe religion in 1858, an indigenous Urhobo charismatic movement whose name means 'dance', the medium through which its adherents worship. According to tradition he experienced a vision of two divine beings who anointed him to preach against immorality and witchcraft, after which he became renowned for healing the sick with sacred white chalk (orhen), exposing witches, and foretelling the future. He built a worship house (ogua) in his compound and held the supreme priestly office known as Uku; a visiting Oba of Benin is said to have knelt before him. Ubiesha directed worship to a single supreme God, Oghene, so that Igbe is often described as one of the earliest monotheistic religions to arise in Nigeria. He died in 1920 and was succeeded by his son Ibodje, and he remains venerated as the movement's founding ancestor by its roughly two million adherents."
+  }
+]
+```

@@ -1,0 +1,392 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Nias
+Era (registered, exact): "Nias traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two genuinely individuated, well-attested figures missing from the corpus. Sirao (Sirao Uwu Zihönö) is the keystone divine progenitor-king of the golden heaven Teteholi Ana'a and father of the nine ancestral sons; I wired him into the pantheon as father-of the existing Hia (named in Suzuki as Sirao's son) and father-of Lowalangi (the son Luo Mewöna who kept the upper world), per Suzuki 1959, Loeb 1935, Schröder 1917, and Beatty 1992. Buruti Siraso, the heavenly Seed-Maiden (Putri Bibit) who brought cultivated seed down to Tanö Niha, is the Nias agricultural culture-heroine documented in Mendröfa's Fondrakö Ono Niha (1981) and Suzuki 1959; because her attested parent (Balugu Silaride Ana'a) and twin (Silogu Mbana) are not in the corpus and she has no fixed genealogical tie to the existing figures, she is listed as solitary. I deliberately withheld the primeval tree-born couple (Tuhamöra Ana'a / Buruti Rao Ana'a), the god Sihai, and the individual clan-eponym sons (Gozo, Daeli, etc.), whose names are either spelling-unstable, thinly cited, or generic clan-founder ancestors rather than robustly individuated deities.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "nias_sirao",
+    "name": {
+      "primary": "Sirao, the Divine Progenitor-King of the Golden Heaven",
+      "alt": [
+        "Sirao",
+        "Sirao Uwu Zihönö",
+        "Tuha Sirao",
+        "Balugu Sirao",
+        "King Sirao"
+      ],
+      "transliterations": {
+        "nia": "Sirao Uwu Zihönö",
+        "etymology": "His abode Teteholi Ana'a incorporates Nias 'ana'a' ('gold'), i.e. the golden heaven; Suzuki (1959) places him as king of the lowest, ninth layer of the heavens nearest the earth."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nias",
+    "primaryTradition": "Nias",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Nias traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Nias traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the golden upper heaven of Teteholi Ana'a, Sirao reigns as king over the divine descendants of the tree of life and fathers the nine sons whose quarrel over his throne sends the ancestors down to the island of Nias.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peter Suzuki, The Religious System and Culture of Nias, Indonesia (The Hague: Excelsior, 1959)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "divine-kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Balugu",
+          "script": "Latin",
+          "rom": "paramount lord/chief"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrew Beatty, Society and Exchange in Nias (Oxford: Clarendon Press, 1992)."
+          }
+        ]
+      },
+      {
+        "sphereId": "celestial-realm",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Teteholi Ana'a",
+          "script": "Latin",
+          "rom": "the golden heaven"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peter Suzuki, The Religious System and Culture of Nias, Indonesia (The Hague: Excelsior, 1959)."
+          }
+        ]
+      },
+      {
+        "sphereId": "cosmic-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ono Niha",
+          "script": "Latin",
+          "rom": "children of humankind (the Nias people)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E.E.W.Gs. Schröder, Nias: ethnographische, geographische en historische aanteekeningen en studiën (Leiden: E.J. Brill, 1917)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "reign_over_golden_heaven",
+        "name": "to reign over the golden heaven of Teteholi Ana'a",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peter Suzuki, The Religious System and Culture of Nias, Indonesia (The Hague: Excelsior, 1959)."
+          }
+        ]
+      },
+      {
+        "id": "father_the_clan_ancestors",
+        "name": "to father the ancestors of the Nias clans",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edwin M. Loeb, Sumatra: Its History and People (Vienna: Institut für Völkerkunde, 1935)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nias_sigaru_toroa",
+        "name": "Sigaru Törö'a, the Tree of Life",
+        "kind": "cosmic tree / emblem",
+        "role": "The world-tree standing in Teteholi Ana'a from whose fruits the primeval divine line — and thus Sirao's forebears — sprang.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peter Suzuki, The Religious System and Culture of Nias, Indonesia (The Hague: Excelsior, 1959)."
+          }
+        ]
+      },
+      {
+        "id": "nias_toho_siwa",
+        "name": "the nine spears (toho)",
+        "kind": "regalia / ordeal",
+        "role": "The nine upright spears upon which Sirao's sons contended by dancing to decide the succession to his throne.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edwin M. Loeb, Sumatra: Its History and People (Vienna: Institut für Völkerkunde, 1935)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Sirao Uwu Zihönö",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peter Suzuki, The Religious System and Culture of Nias, Indonesia (The Hague: Excelsior, 1959)."
+          }
+        ]
+      },
+      {
+        "original": "Balugu Sirao",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E.E.W.Gs. Schröder, Nias: ethnographische, geographische en historische aanteekeningen en studiën (Leiden: E.J. Brill, 1917)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "nias_hia",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peter Suzuki, The Religious System and Culture of Nias, Indonesia (The Hague: Excelsior, 1959)."
+          }
+        ],
+        "notes": "Hia, the first ancestor (recorded in genealogy as Hia Walangi Adu), is named among the nine sons of Sirao; Suzuki states plainly that 'Hia was the son of Sirao.'"
+      },
+      {
+        "kind": "father-of",
+        "personId": "nias_lowalangi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "E.E.W.Gs. Schröder, Nias: ethnographische, geographische en historische aanteekeningen en studiën (Leiden: E.J. Brill, 1917)."
+          }
+        ],
+        "notes": "Luo Mewöna, the youngest of Sirao's nine sons who won the succession contest and remained in the upper world, is identified with the supreme sky-lord Lowalangi."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sirao is the divine progenitor-king who rules the golden upper heaven of Teteholi Ana'a and fathers the nine sons who become the ancestors of the Nias people and gods.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Peter Suzuki, The Religious System and Culture of Nias, Indonesia (The Hague: Excelsior, 1959)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edwin M. Loeb, Sumatra: Its History and People (Vienna: Institut für Völkerkunde, 1935)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "E.E.W.Gs. Schröder, Nias: ethnographische, geographische en historische aanteekeningen en studiën (Leiden: E.J. Brill, 1917)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Andrew Beatty, Society and Exchange in Nias (Oxford: Clarendon Press, 1992)."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Sirao (Sirao Uwu Zihönö) is the divine king of Teteholi Ana'a, the golden ninth heaven that lies nearest the earth in the Nias cosmos. He is a late link in the primordial line descended from the pair of beings hatched from the fruits of the tree of life. Sirao took three wives and begot nine sons, and when he wished to abdicate they quarrelled over the throne; a contest of dancing upon nine upright spears was held, which the youngest, Luo Mewöna, won and by which he kept the upper world, being identified with the sky-lord Lowalangi. To end the strife Sirao sent the eight elder brothers down from heaven, and those who reached the island of Nias safely became the founding ancestors of its clans; one, too heavy, plunged through the earth and became the great serpent that upholds the world and shakes it in earthquakes. Through his sons — among them Hia, the first ancestor — Sirao stands at the head of both the human genealogies and the divine order of Nias religion."
+  },
+  {
+    "id": "nias_buruti_siraso",
+    "name": {
+      "primary": "Buruti Siraso, the Heavenly Seed-Maiden",
+      "alt": [
+        "Buruti Siraso",
+        "Putri Buruti Siraso",
+        "Bururi Siraso",
+        "Putri Bibit",
+        "Dewi Bibit"
+      ],
+      "transliterations": {
+        "nia": "Buruti Siraso",
+        "etymology": "Popularly styled in Indonesian 'Putri Bibit', 'the Seed Princess', from 'bibit' ('seed'); the narrative is recorded among the agricultural-origin myths of Mendröfa's Fondrakö Ono Niha (1981)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nias",
+    "primaryTradition": "Nias",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Nias traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Nias traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Born as the twin daughter of a heavenly king in Teteholi Ana'a, Buruti Siraso descends to Tanö Niha carrying cultivated seeds from heaven, and where she scatters them the failing fields of humankind bring forth abundant harvests.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sökhiaro Welther Mendröfa, Fondrakö Ono Niha (Jakarta, 1981)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "agriculture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bibit",
+          "script": "Latin",
+          "rom": "seed / seedling"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sökhiaro Welther Mendröfa, Fondrakö Ono Niha (Jakarta, 1981)."
+          }
+        ]
+      },
+      {
+        "sphereId": "crop-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Tanö Niha",
+          "script": "Latin",
+          "rom": "the land of humankind (Nias)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Peter Suzuki, The Religious System and Culture of Nias, Indonesia (The Hague: Excelsior, 1959)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_seeds_from_heaven",
+        "name": "to bring cultivated seeds down from heaven",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sökhiaro Welther Mendröfa, Fondrakö Ono Niha (Jakarta, 1981)."
+          }
+        ]
+      },
+      {
+        "id": "make_crops_flourish",
+        "name": "to make planted seeds yield abundant harvests",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sökhiaro Welther Mendröfa, Fondrakö Ono Niha (Jakarta, 1981)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nias_bua_mbibit",
+        "name": "the heavenly seeds",
+        "kind": "emblem",
+        "role": "The cultivated seeds Buruti Siraso deliberately carried down from Teteholi Ana'a to relieve the suffering farmers of Tanö Niha.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sökhiaro Welther Mendröfa, Fondrakö Ono Niha (Jakarta, 1981)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Putri Bibit",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sökhiaro Welther Mendröfa, Fondrakö Ono Niha (Jakarta, 1981)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Buruti Siraso is the heavenly maiden of Teteholi Ana'a who descended to the island of Nias bringing cultivated seeds, and is venerated as the origin-figure of agriculture and abundant harvest.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sökhiaro Welther Mendröfa, Fondrakö Ono Niha (Jakarta, 1981)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Peter Suzuki, The Religious System and Culture of Nias, Indonesia (The Hague: Excelsior, 1959)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Buruti Siraso is a heavenly maiden of the golden realm Teteholi Ana'a, born a twin to her brother Silogu Mbana to a long-childless royal couple. In the myth of the origin of cultivation, the fields of the people of Tanö Niha failed and their planted seeds would not grow; moved by their suffering, Buruti Siraso descended from heaven bearing seed she had purposely brought with her, and where she sowed it the harvest was abundant, so that the people honoured her as Putri Bibit, 'the Seed Princess.' The narrative — set down among the agricultural-origin traditions of the hoho (oral poetry) — makes her the Nias culture-heroine and tutelary figure of planting and crop fertility. She stands somewhat apart from the Sirao descent-genealogy, belonging to the distinct Teteholi Ana'a cycle concerning the coming of agriculture to the island."
+  }
+]
+```

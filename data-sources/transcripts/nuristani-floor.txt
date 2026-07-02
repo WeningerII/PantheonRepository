@@ -1,0 +1,686 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Nuristani
+Era (registered, exact): "creation time / perennial (pre-Islamic Kafiristan)", "mythic age (pre-Islamic Kafiristan)", "perennial (pre-Islamic Kafiristan)"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five individuated deities well attested beyond the existing set: Indr (storm/vine god, cognate of Vedic Indra, wired as father of Disani in one tradition), Wushum/Shomde (a localized creator-god held equal to or senior to Imra), Sudrem (the Prasun weather-god arising from Imra's breath, wired to Imra as creator/superior), Krumai (the wild-goat goddess of Tirich Mir linked to childbirth), and Arom (the tutelary tribal god of the Kata with his holy stone at Kamdesh). Crucially, Wushum/Shomde and Sudrem are documented as distinct deities rather than regional names of one weather-god, so both were authored separately. Each figure rests on at least two of Robertson (1896), Jettmar (1986), Buddruss and Klimburg's Encyclopaedia Iranica article, Klimburg (2008), and Halfmann's 2022 theonym study. I stopped at five and deliberately excluded thin or class-level entries (e.g. the yush giants, unnamed fairies/Kundrik, ancestral Gandeo, and the poorly individuated Sanju/Sanu) as either non-individuated or insufficiently attested.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "nuristani_indr",
+    "name": {
+      "primary": "Indr the Storm-Lord",
+      "alt": [
+        "Indr",
+        "Indri",
+        "Indra"
+      ],
+      "transliterations": {
+        "Kati": "Indr",
+        "etymology": "From Old Indo-Aryan Indra, the Vedic storm-god; the Nuristani reflex is treated by Halfmann (2022)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nuristani",
+    "primaryTradition": "Nuristani",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial (pre-Islamic Kafiristan)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial (pre-Islamic Kafiristan)",
+        "eraOrdering": 0,
+        "startEvent": "Indr was venerated across pre-Islamic Kafiristan as the lord of storms and of the grapevine, with a holy vineyard named Indrkun in the Wama valley set apart in his honour.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "storms-and-rain",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          }
+        ]
+      },
+      {
+        "sphereId": "viticulture-and-wine",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Indrkun",
+          "script": "Latin",
+          "rom": "Indrkun (Indr's vineyard)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send_rain_and_thunderstorms",
+        "name": "to send rain and thunderstorms",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          }
+        ]
+      },
+      {
+        "id": "ripen_the_vine",
+        "name": "to ripen the grapevine and grant wine",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nuristani_indrkun",
+        "name": "Indrkun",
+        "kind": "sacred-site",
+        "role": "A holy vineyard in the Wama valley consecrated to Indr, where the vine and the god were honoured together.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "nuristani_disani",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ],
+        "notes": "In one strand of tradition the earth-mother Disani is reckoned the daughter of Indr, though other accounts derive her directly from the creator Imra."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Indr is the pre-Islamic Kafir god of storms, rain and the grapevine, a cognate of the Vedic Indra, brother of the war-god Gish and reckoned in some traditions the father of Disani.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jakob Halfmann, 'Nuristani Theonyms in Light of Historical Phonology,' International Journal of Diachronic Linguistics and Linguistic Reconstruction 19 (2022): 59–98."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Indr is the Nuristani continuation of the ancient Indo-Aryan storm-god Indra, presiding over rain, thunder and the intoxicating vine. He was counted a brother of the war-god Gish, and the sacred vineyard of Indrkun in the Wama valley was set aside for his worship. Several accounts make him the father of the earth-mother Disani, linking him closely to the fertility of the land."
+  },
+  {
+    "id": "nuristani_wushum",
+    "name": {
+      "primary": "Wushum the Creator",
+      "alt": [
+        "Wushum",
+        "Wušum",
+        "Shomde",
+        "Usum",
+        "Shomd"
+      ],
+      "transliterations": {
+        "Kati": "Wušum",
+        "Waigali": "Shomde",
+        "etymology": "Kati Wušum, Waigali Shomde and the variant Usum are regional theonyms of the same high creator-god, treated by Halfmann (2022)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nuristani",
+    "primaryTradition": "Nuristani",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "creation time / perennial (pre-Islamic Kafiristan)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "creation time / perennial (pre-Islamic Kafiristan)",
+        "eraOrdering": 0,
+        "startEvent": "Under the names Wushum and Shomde a high creator-god was worshipped in certain Kafir valleys, regarded there either as the equal of the supreme Imra or as senior to him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_and_order_the_world",
+        "name": "to create and order the world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Wushum, called Shomde in the Waigal valley, is a high Kafir creator-god of localized worship, regarded in his home valleys as equal to or senior to the supreme creator Imra.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jakob Halfmann, 'Nuristani Theonyms in Light of Historical Phonology,' International Journal of Diachronic Linguistics and Linguistic Reconstruction 19 (2022): 59–98."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Wushum, known in the Waigal valley as Shomde and elsewhere as Usum, was a creator-god of strongly regional character. Where he was worshipped he was held to equal or even outrank Imra as the maker and orderer of the world, illustrating the valley-by-valley variation of the Kafir high gods. Because his standing beside Imra was one of local identification rather than fixed kinship, he is best treated as a parallel supreme figure."
+  },
+  {
+    "id": "nuristani_sudrem",
+    "name": {
+      "primary": "Sudrem the Weather-God",
+      "alt": [
+        "Sudrem",
+        "Sudaram",
+        "Sujum"
+      ],
+      "transliterations": {
+        "Prasun": "Sudrem",
+        "etymology": "Prasun theonym (also recorded Sudaram); its historical phonology is examined by Halfmann (2022)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nuristani",
+    "primaryTradition": "Nuristani",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "nuristani_imra"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "creation time / perennial (pre-Islamic Kafiristan)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "creation time / perennial (pre-Islamic Kafiristan)",
+        "eraOrdering": 0,
+        "startEvent": "In the Prasun cosmogony the weather-god Sudrem came into being from the breath of the creator Imra, thereafter governing the weather over the valleys.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "weather",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          }
+        ]
+      },
+      {
+        "sphereId": "rain-and-agriculture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Max Klimburg, 'The Arts and Culture of Parun, Kafiristan’s Sacred Valley,' Arts Asiatiques 63 (2008): 51–68."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_the_weather",
+        "name": "to govern the weather",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          }
+        ]
+      },
+      {
+        "id": "bring_rain_to_the_fields",
+        "name": "to bring rain to the fields",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Max Klimburg, 'The Arts and Culture of Parun, Kafiristan’s Sacred Valley,' Arts Asiatiques 63 (2008): 51–68."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "nuristani_imra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ],
+        "notes": "Sudrem is a creature and subordinate of Imra, having issued from the creator's breath at the making of the world."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sudrem is the Prasun weather-god, brought into being from the breath of the creator Imra and charged with the rains that sustain the valley's crops.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jakob Halfmann, 'Nuristani Theonyms in Light of Historical Phonology,' International Journal of Diachronic Linguistics and Linguistic Reconstruction 19 (2022): 59–98."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sudrem (also Sudaram) is the weather-deity of the Prasun (Parun) Kafirs, the most devout of the Kafir communities. Prasun cosmogony holds that he arose from the breath of the creator Imra, and he was invoked for the timely rains on which the terraced fields of the sacred valley depended. He is distinct from the storm-god Indr and from the creator Wushum, though all three share weather associations."
+  },
+  {
+    "id": "nuristani_krumai",
+    "name": {
+      "primary": "Krumai the Goat-Goddess",
+      "alt": [
+        "Krumai",
+        "Kumai"
+      ],
+      "transliterations": {
+        "Prasun": "Krumai",
+        "etymology": "Prasun theonym for the goddess of Tirich Mir; its form is discussed by Halfmann (2022)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nuristani",
+    "primaryTradition": "Nuristani",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic age (pre-Islamic Kafiristan)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic age (pre-Islamic Kafiristan)",
+        "eraOrdering": 0,
+        "startEvent": "In the myths of the sacred valley Krumai descended from the peak of Tirich Mir in the shape of a wild goat and mingled with the gods, whom she at last feasted at a great banquet.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "childbirth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ]
+      },
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Tirich Mir",
+          "script": "Latin",
+          "rom": "Tirich Mir"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "take_the_shape_of_a_wild_goat",
+        "name": "to take the shape of a wild goat",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ]
+      },
+      {
+        "id": "protect_women_in_childbirth",
+        "name": "to protect women in childbirth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nuristani_krumai_goat_form",
+        "name": "Wild she-goat form",
+        "kind": "theriomorph",
+        "role": "The wild goat shape in which Krumai descends from Tirich Mir, marking the rocks as she climbs.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Krumai is a Kafir goddess associated with the peak Tirich Mir, appearing in the form of a wild goat and linked to childbirth, who in myth was exposed by Imra and afterwards feasted the gods.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jakob Halfmann, 'Nuristani Theonyms in Light of Historical Phonology,' International Journal of Diachronic Linguistics and Linguistic Reconstruction 19 (2022): 59–98."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Georg Buddruss and Max Klimburg, 'Nuristan,' Encyclopaedia Iranica (online edition)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Krumai is the goddess of the great peak Tirich Mir, appearing among the gods in the shape of a wild she-goat and associated with the protection of women in childbirth. In a well-known myth she came down disguised as a goat; only Imra saw through her and slyly pushed her into a mountain torrent, whereupon she climbed to a summit and pelted the gods with stones until, on promising good conduct, she resumed her true form and hosted a lavish banquet. Her goat theriomorphy links her thematically to the earth-mother Disani, who is likewise pictured mounted on a mountain goat."
+  },
+  {
+    "id": "nuristani_arom",
+    "name": {
+      "primary": "Arom, Tribal God of the Kata",
+      "alt": [
+        "Arom"
+      ],
+      "transliterations": {
+        "Kati": "Arom",
+        "etymology": "Kati tribal theonym recorded by Robertson (1896); of uncertain further derivation."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nuristani",
+    "primaryTradition": "Nuristani",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "perennial (pre-Islamic Kafiristan)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "perennial (pre-Islamic Kafiristan)",
+        "eraOrdering": 0,
+        "startEvent": "Arom was honoured as the tutelary god of the Kata (Kam) tribe, his shrine at Kamdesh enclosing a holy standing stone sacred to him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tribal-tutelage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_tribe_and_its_lands",
+        "name": "to guard the tribe and its lands",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nuristani_arom_holy_stone",
+        "name": "Holy stone of Arom",
+        "kind": "cult-object",
+        "role": "A sacred standing stone within the wooden enclosure of Arom's shrine at Kamdesh, the focus of his cult.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Arom is the tutelary tribal deity of the Kata (Kam) Kafirs, worshipped at a shrine in Kamdesh containing a holy stone sacred to him.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "George Scott Robertson, The Kāfirs of the Hindu-Kush (London: Lawrence & Bullen, 1896)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs, trans. Adam Nayyar (Warminster: Aris & Phillips, 1986)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Arom was the tutelary god of the Kata (Kam) tribe, one of the many clan-specific deities of the Kafir world who stood alongside the pan-Kafir high gods. At Kamdesh his shrine consisted of a wooden enclosure sheltering a holy standing stone that received his cult, a form typical of the localized tribal godlings documented in the ethnography of pre-Islamic Kafiristan."
+  }
+]
+```

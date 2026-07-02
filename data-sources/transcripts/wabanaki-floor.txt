@@ -1,0 +1,659 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Wabanaki
+Era (registered, exact): "mythic", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five genuinely individuated, well-attested Wabanaki figures absent from the existing set. From the Mi'kmaq creation cycle recorded by Stephen Augustine and Ruth Holmes Whitehead I added Nukumi (the grandmother formed from stone) and Netawansum (Gluskap's foam-born nephew), wiring both to the tradition's creator (Tabaldak/Kisulk) and to each other, plus Apistanewj the Marten, Gluskap's shapeshifting helper-brother from Rand and Leland (subordinate to Gluskap). From Leland and Speck I added two personified nature-powers subdued by Gluskap: Wuchowsen the Wind Bird (distinct from the existing Pamola) and Aglebemu the giant water-hoarding frog. Other recurring names in the corpus (Pukwudgies, Chenoo, the frog/wind classes) are spirit-classes rather than individuals, and the sorcerer Winpe and beings like Coolpujot are too thinly and locally attested to individuate confidently, so I stopped at these five.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "wabanaki_nukumi",
+    "name": {
+      "primary": "Nukumi, the Grandmother",
+      "alt": [
+        "Nukumi",
+        "Nokumi",
+        "Nogami",
+        "Nukmij"
+      ],
+      "transliterations": {
+        "mikmaq": "Nukumi",
+        "etymology": "From Mi'kmaq nukum- 'grandmother' with the first-person possessive, hence 'my grandmother'"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Wabanaki",
+    "primaryTradition": "Wabanaki",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "wabanaki_tabaldak"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "In the Mi'kmaq creation sequence an ancient rock lying in a dew-filled valley is warmed by Niskam, the Sun, and given the body of a wise old woman who names herself Nukumi and becomes grandmother to the culture-hero.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen J. Augustine, Mi'kmaq Creation Story (narrated account, Canadian Museum of History, 2016)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "elder-wisdom",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Nukumi",
+          "script": "Latin",
+          "rom": "my grandmother"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruth Holmes Whitehead, Stories from the Six Worlds: Micmac Legends (Nimbus, 1988)"
+          }
+        ]
+      },
+      {
+        "sphereId": "plant-medicine",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Silas T. Rand, Legends of the Micmacs (Longmans, Green, 1894)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "teach_survival_and_medicine",
+        "name": "to teach the people the arts of survival, plants and medicine",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Created already old and wise, Nukumi embodies the knowledge that comes only with age and instructs the culture-hero and the people in living well upon the land.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen J. Augustine, Mi'kmaq Creation Story (Canadian Museum of History, 2016)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "wabanaki_netawansum",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen J. Augustine, Mi'kmaq Creation Story (Canadian Museum of History, 2016)"
+          }
+        ],
+        "notes": "Nukumi and the young nephew Netawansum travel together as members of Kluskap's household in the creation narrative."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nukumi is the primordial grandmother of Mi'kmaq/Wabanaki tradition, formed from a rock by the power of the Sun and serving as the wise elder and guardian of the culture-hero Gluskap.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen J. Augustine, Mi'kmaq Creation Story (narrated account, Canadian Museum of History, 2016)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ruth Holmes Whitehead, Stories from the Six Worlds: Micmac Legends (Nimbus, 1988)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Siobhan Senier (ed.), Dawnland Voices: An Anthology of Indigenous Writing from New England (University of Nebraska Press, 2014)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nukumi ('my grandmother') is the aged, wise woman of Mi'kmaq creation tradition. In the account preserved by the Mi'kmaq Grand Council she owes her existence to a rock in a low valley that gathered dew and was warmed to life by Niskam, the Sun, an agent of the creator Kisulk (the pan-Wabanaki Great Spirit). Made already old and knowing, she introduces herself to the culture-hero Gluskap as his grandmother and thereafter guides him and the people, teaching them the plants, medicines and wisdom that belong to age. She is a foundational household figure alongside Gluskap's nephew and represents the generational transmission of knowledge in Wabanaki thought."
+  },
+  {
+    "id": "wabanaki_netawansum",
+    "name": {
+      "primary": "Netawansum, the Nephew",
+      "alt": [
+        "Netawansum",
+        "Netaoansom"
+      ],
+      "transliterations": {
+        "mikmaq": "Netawansum"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Wabanaki",
+    "primaryTradition": "Wabanaki",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "wabanaki_tabaldak"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "During the creation sequence ocean foam blown onto the sweetgrass by the shore is quickened into the youth Netawansum, nephew and travelling companion of the culture-hero Kluskap.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen J. Augustine, Mi'kmaq Creation Story (Canadian Museum of History, 2016)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "foresight",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen J. Augustine, Mi'kmaq Creation Story (Canadian Museum of History, 2016)"
+          }
+        ]
+      },
+      {
+        "sphereId": "provision",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Siobhan Senier (ed.), Dawnland Voices: An Anthology of Indigenous Writing from New England (University of Nebraska Press, 2014)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "see_far_and_foresee",
+        "name": "to see great distances and into things to come",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Carrying the knowledge of the strength and life of the sea, Netawansum brings the gift of far sight and foresight, and grants the culture-hero improved vision.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen J. Augustine, Mi'kmaq Creation Story (Canadian Museum of History, 2016)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "wabanaki_nukumi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen J. Augustine, Mi'kmaq Creation Story (Canadian Museum of History, 2016)"
+          }
+        ],
+        "notes": "Netawansum accompanies the grandmother Nukumi and Kluskap as one of the household of creation."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Netawansum is the nephew and travelling companion of the Mi'kmaq culture-hero Kluskap, quickened from sea-foam on the sweetgrass and bearing the gifts of strength and far-seeing sight.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen J. Augustine, Mi'kmaq Creation Story (narrated account, Canadian Museum of History, 2016)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Siobhan Senier (ed.), Dawnland Voices: An Anthology of Indigenous Writing from New England (University of Nebraska Press, 2014)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Netawansum is the nephew of the Mi'kmaq culture-hero Kluskap (Gluskap). In the Grand Council creation narrative he is formed when ocean foam is blown onto sweetgrass by the shore and given life, appearing as a youth who already knows the life and power of the sea. He brings physical strength and the ability to see far into the distance and into the future, and in some tellings bestows sharpened vision upon Kluskap himself. With the grandmother Nukumi he forms the small family that surrounds the culture-hero at the beginning of the world."
+  },
+  {
+    "id": "wabanaki_apistanewj",
+    "name": {
+      "primary": "Apistanewj, the Marten",
+      "alt": [
+        "Apistanéwj",
+        "Abistanaooch",
+        "Abistanooj",
+        "Marten"
+      ],
+      "transliterations": {
+        "mikmaq": "apistanewj",
+        "etymology": "Mi'kmaq apistanewj 'pine marten', the woodland weasel whose form the helper wears"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Wabanaki",
+    "primaryTradition": "Wabanaki",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Throughout the Mi'kmaq Gluskap cycle Marten appears as the culture-hero's adopted younger brother and right-hand helper, able to pass between the shape of a marten and that of a man.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Silas T. Rand, Legends of the Micmacs (Longmans, Green, 1894)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "companionship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "apistanewj",
+          "script": "Latin",
+          "rom": "marten"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Silas T. Rand, Legends of the Micmacs (Longmans, Green, 1894)"
+          }
+        ]
+      },
+      {
+        "sphereId": "hunting-and-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, The Algonquin Legends of New England (Houghton, Mifflin, 1884)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "change_between_marten_and_man",
+        "name": "to change between the form of a marten and the form of a man",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Marten shifts freely between his animal and human shapes and serves as the culture-hero's constant helper and messenger.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruth Holmes Whitehead, Stories from the Six Worlds: Micmac Legends (Nimbus, 1988)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "wabanaki_marten_birchbark_dish",
+        "name": "Marten's birch-bark dish",
+        "kind": "emblem",
+        "role": "The small birch-bark dish from which Marten always ate, a recurring token of the humble helper in the Gluskap tales.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Silas T. Rand, Legends of the Micmacs (Longmans, Green, 1894)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "wabanaki_gluskap",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Silas T. Rand, Legends of the Micmacs (Longmans, Green, 1894)"
+          }
+        ],
+        "notes": "Marten is the adopted younger brother, servant and right-hand helper of Gluskap, whom the culture-hero calls 'my younger brother'."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Apistanewj the Marten is the individuated animal-spirit companion and adopted younger brother of the Wabanaki culture-hero Gluskap, a shapeshifter who serves as his helper throughout the Mi'kmaq legend cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Silas T. Rand, Legends of the Micmacs (Longmans, Green, 1894)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, The Algonquin Legends of New England, or Myths and Folk Lore of the Micmac, Passamaquoddy, and Penobscot Tribes (Houghton, Mifflin, 1884)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Apistanewj, the Marten, is the faithful helper and adopted younger brother of the culture-hero Gluskap in Mi'kmaq tradition. Named for the pine marten, he moves between the shape of the sacred weasel and that of a man, and accompanies Gluskap on his journeys as servant, messenger and companion, always eating from his own small birch-bark dish. Gluskap addresses him as 'my younger brother', and Marten's loyalty makes him one of the most enduring individuated figures of the household that surrounds the hero."
+  },
+  {
+    "id": "wabanaki_wuchowsen",
+    "name": {
+      "primary": "Wuchowsen, the Wind Bird",
+      "alt": [
+        "Wuchowsen",
+        "Wochowsen",
+        "Wocawson",
+        "Wajosen",
+        "Wuchowsin",
+        "the Wind-Blower",
+        "the Great Wind-Bird"
+      ],
+      "transliterations": {
+        "passamaquoddy": "wocawson",
+        "etymology": "From the Passamaquoddy verb wocawson 'it is windy / the wind blows', hence 'the Wind-Blower'"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Wabanaki",
+    "primaryTradition": "Wabanaki",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "At the edge of the world sits the giant immortal Wind Bird, whose every beat of the wings raises the winds, until the culture-hero Glooskap binds one wing to temper the storms.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, 'How Glooskap bound Wuchowsen, the Great Wind-Bird', in The Algonquin Legends of New England (Houghton, Mifflin, 1884)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wind",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "wocawson",
+          "script": "Latin",
+          "rom": "the wind blows / it is windy"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, The Algonquin Legends of New England (Houghton, Mifflin, 1884)"
+          }
+        ]
+      },
+      {
+        "sphereId": "storms-and-weather",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frank G. Speck, 'Penobscot Tales and Religious Beliefs', Journal of American Folklore 48 (1935): 1-107"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_the_winds",
+        "name": "to raise the winds by beating his wings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Whenever the Wind Bird stirs or flaps his wings the winds blow across the world; when he is still the air is calm and the waters grow stagnant.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, The Algonquin Legends of New England (Houghton, Mifflin, 1884)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "wabanaki_gluskap",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, 'How Glooskap bound Wuchowsen, the Great Wind-Bird', in The Algonquin Legends of New England (Houghton, Mifflin, 1884)"
+          }
+        ],
+        "notes": "Glooskap masters the Wind Bird, binding one of his wings so that thereafter he raises the winds only in moderation and at the hero's sufferance."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Wuchowsen is the giant immortal Wind Bird of the Wabanaki peoples, a personified cosmic force at the world's edge whose wing-beats make all the winds and who is bound and moderated by the culture-hero Glooskap.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, The Algonquin Legends of New England, or Myths and Folk Lore of the Micmac, Passamaquoddy, and Penobscot Tribes (Houghton, Mifflin, 1884)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Frank G. Speck, 'Penobscot Tales and Religious Beliefs', Journal of American Folklore 48 (1935): 1-107"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Wuchowsen, the Wind Bird or Wind-Blower, is a gigantic immortal bird-spirit known to the Abenaki, Penobscot, Maliseet, Passamaquoddy and Mi'kmaq. Perched at the far edge of the world, he raises the winds whenever he beats his wings. In the well-known Passamaquoddy tale recorded by Leland, Glooskap, weary of storms that overturned canoes, seizes the bird and binds one wing, only to find the air grown so still and the waters so foul that life cannot go on; he then frees the bird partway, so that the winds now blow in due measure. Though monstrous in size, Wuchowsen is not treated as a mere monster but as a necessary force of nature that must be respected. He is distinct from Pamola, the storm-spirit of Mount Katahdin, though both are storm-birds of the Wabanaki world."
+  },
+  {
+    "id": "wabanaki_aglebemu",
+    "name": {
+      "primary": "Aglebemu, the Giant Frog",
+      "alt": [
+        "Aglebemu",
+        "Aglabem",
+        "Aglabemu",
+        "the Great Bull-Frog",
+        "the Water Monster"
+      ],
+      "transliterations": {
+        "penobscot": "Aglabem"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Wabanaki",
+    "primaryTradition": "Wabanaki",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A monstrous frog swallows and dams up all the waters of a great river, bringing drought upon the people, until the culture-hero Glooskap splits the dam and crushes the creature into an ordinary frog.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, 'How Glooskap conquered the Great Bull-Frog', in The Algonquin Legends of New England (Houghton, Mifflin, 1884)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fresh-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, The Algonquin Legends of New England (Houghton, Mifflin, 1884)"
+          }
+        ]
+      },
+      {
+        "sphereId": "drought",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frank G. Speck, 'Penobscot Tales and Religious Beliefs', Journal of American Folklore 48 (1935): 1-107"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "swallow_and_dam_the_waters",
+        "name": "to swallow and dam up the waters, withholding them from the land",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The giant frog drinks or blocks the river so that it runs dry, causing the drought that Glooskap must break to free the water.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Frank G. Speck, Penobscot Man: The Life History of a Forest Tribe in Maine (University of Pennsylvania Press, 1940)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "wabanaki_gluskap",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, 'How Glooskap conquered the Great Bull-Frog', in The Algonquin Legends of New England (Houghton, Mifflin, 1884)"
+          }
+        ],
+        "notes": "Glooskap overcomes the water-monster, breaking its dam and pressing it down into the small bull-frog it has been ever since."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Aglebemu is the individuated giant frog-monster of Wabanaki tradition who hoards and dams the waters to cause drought and is subdued by the culture-hero Glooskap, who releases the rivers.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Charles G. Leland, The Algonquin Legends of New England, or Myths and Folk Lore of the Micmac, Passamaquoddy, and Penobscot Tribes (Houghton, Mifflin, 1884)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Frank G. Speck, 'Penobscot Tales and Religious Beliefs', Journal of American Folklore 48 (1935): 1-107"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Aglebemu (Penobscot Aglabem), the Great Bull-Frog, is the water-hoarding monster of Wabanaki legend among the Penobscot, Maliseet and Passamaquoddy. Swollen to enormous size, he swallows or dams the whole of a great river so that it runs dry and the people below languish in drought. In the tale recorded by Leland the culture-hero Glooskap comes to the parched village, breaks the monster's dam and squeezes the creature until it shrinks to the ordinary bull-frog, its wrinkled back the mark of Glooskap's grip; the freed waters rush down, and those villagers who leap into the flood become the fish, crabs, leeches and other water creatures. The story explains both the origin of rivers and the small frog's form."
+  }
+]
+```

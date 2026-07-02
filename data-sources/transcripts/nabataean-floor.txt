@@ -1,0 +1,692 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Nabataean
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five well-attested, individuated deities beyond the existing set, each documented in the standard Nabataean epigraphic scholarship: Shaiʿ al-Qawm (guardian of caravans and the tribe, 'the god who drinks no wine'), al-Kutbā (patron of writing, commerce and divination, wired to the existing al-ʿUzzā via the Venus–Mercury consort pairing), Obodas the God (the divinised king Obodas I worshipped as a healer/Zeus Obodas), Aʿrā (tutelary god of Bostra and the royal house, later fused as Dushara-Aʿrā), and Hubal (attested in Nabataean epigraphy at Hegra, invoked with Dushara and Manōtu in a tomb curse). Each carries at least two real citations, principally Healey's The Religion of the Nabataeans (2001) and Tomb Inscriptions of Madaʾin Salih (1993), Alpass's The Religious Life of Nabataea (2013), Teixidor (1977), Negev (1986) and Fahd (1968). I stopped at these five because the remaining Nabataean divine names in the record are either aspects of figures already in the corpus, foreign imports (e.g. Atargatis, Baalshamin) whose centre of gravity lies in other traditions, or unnamed spirit-classes that do not meet the individuation bar.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "nabataean_shai_al_qaum",
+    "name": {
+      "primary": "Shaiʿ al-Qawm",
+      "alt": [
+        "Shai al-Qaum",
+        "Shayʿ al-Qawm",
+        "Al-Qaum"
+      ],
+      "transliterations": {
+        "nabataean-aramaic": "šyʿ ʾlqwm",
+        "arabic": "شيع القوم",
+        "etymology": "From Šayʿ 'he who accompanies/escorts' + al-Qawm 'the people/tribe', i.e. 'the one who accompanies the people', a guardian of the tribe and its caravans."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nabataean",
+    "primaryTradition": "Nabataean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A tutelary god of nomads and caravan traders venerated across the Nabataean and wider North Arabian world, named in Nabataean and Safaitic inscriptions and honoured on two altars set up by a Nabataean at Palmyra in AD 132.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Religions in the Graeco-Roman World 136. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "caravan-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "šyʿ ʾlqwm",
+          "script": "Nabataean Aramaic",
+          "rom": "Šayʿ al-Qawm"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      },
+      {
+        "sphereId": "war-and-night",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Teixidor, Javier (1977). The Pagan God: Popular Religion in the Greco-Roman Near East. Princeton: Princeton University Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_caravans",
+        "name": "to guard travelling caravans and their camps",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      },
+      {
+        "id": "protect_the_tribe",
+        "name": "to protect the tribe by watchful vigilance",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Teixidor, Javier (1977). The Pagan God: Popular Religion in the Greco-Roman Near East. Princeton: Princeton University Press."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nabataean_shai_al_qaum_altars",
+        "name": "Twin votive altars",
+        "kind": "cult installation",
+        "role": "The paired altars dedicated to him by Obaidu son of Animu at Palmyra in AD 132 are the clearest cult objects associated with the god.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Teixidor, Javier (1977). The Pagan God: Popular Religion in the Greco-Roman Near East. Princeton: Princeton University Press."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ʾlhʾ ṭbʾ wškrʾ dy lʾ štʾ ḥmr",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Shaiʿ al-Qawm is a Nabataean and North Arabian tutelary god of caravans, war and the night, styled 'the good and rewarding god who does not drink wine'.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Religions in the Graeco-Roman World 136. Leiden: Brill."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Teixidor, Javier (1977). The Pagan God: Popular Religion in the Greco-Roman Near East. Princeton: Princeton University Press."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Shaiʿ al-Qawm ('he who accompanies the people') was a guardian deity of the desert-dwelling and caravan-trading Arabs adopted into the Nabataean pantheon, protecting nomads, tribal communities and merchant convoys. He is best known from a Nabataean dedication at Palmyra (AD 132), where Obaidu son of Animu set up two altars to him, describing him as 'the good and rewarding god who does not drink wine' — a notable temperance formula distinguishing his cult. His name also appears in a Nabataean text near Bostra dated AD 95/6 and beside a cult-niche opposite the Diwan at Hegra, and in numerous Safaitic graffiti, indicating a wide following among pastoral and trading tribes."
+  },
+  {
+    "id": "nabataean_al_kutba",
+    "name": {
+      "primary": "Al-Kutbā",
+      "alt": [
+        "al-Kutbay",
+        "al-Aktab",
+        "Aktab-Kutbay",
+        "Kutbaʾ"
+      ],
+      "transliterations": {
+        "nabataean-aramaic": "ktbʾ / ʾktb",
+        "arabic": "الكتبى",
+        "etymology": "From the Semitic root k-t-b 'to write'; the name means roughly 'the scribe / the writer', marking a deity of writing, reckoning and divination."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nabataean",
+    "primaryTradition": "Nabataean",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A Nabataean deity of writing, commerce and divination, attested by betyls at Petra and Wadi Rum and by a dedication carried with Nabataean merchants to the temple at Qasr Ghayt (Qusrawet) in Egypt.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "writing-and-learning",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ktbʾ",
+          "script": "Nabataean Aramaic",
+          "rom": "Kutbaʾ"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      },
+      {
+        "sphereId": "commerce-and-divination",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alpass, Peter (2013). The Religious Life of Nabataea. Religions in the Graeco-Roman World 175. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "record_and_reckon",
+        "name": "to record deeds and reckon accounts in writing",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      },
+      {
+        "id": "grant_divination",
+        "name": "to grant skill in learning and divination",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alpass, Peter (2013). The Religious Life of Nabataea. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nabataean_al_kutba_betyl",
+        "name": "Aniconic betyl block",
+        "kind": "emblem",
+        "role": "Al-Kutbā is represented by carved block-betyls, including one at Wadi Rum standing beside a betyl of al-ʿUzzā, whose similarity is one argument for the deity's contested female identity.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alpass, Peter (2013). The Religious Life of Nabataea. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ʾktb",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "nabataean_al_uzza",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ],
+        "notes": "In the Hellenised pairing that assimilated al-ʿUzzā to Venus/Aphrodite, al-Kutbā (as al-Aktab, 'the Scribe') was identified with Mercury/Hermes and treated as her consort, the two appearing together as betyls at Wadi Rum."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Al-Kutbā is a Nabataean deity of writing, commerce and divination, of contested gender, later equated with Hermes/Mercury and paired with al-ʿUzzā.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Religions in the Graeco-Roman World 136. Leiden: Brill."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alpass, Peter (2013). The Religious Life of Nabataea. Religions in the Graeco-Roman World 175. Leiden: Brill."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Al-Kutbā (also al-Kutbay, al-Aktab) is a Nabataean deity whose name derives from the root k-t-b, 'to write', marking a patron of writing, learning, commerce and divination. The deity's gender is debated in scholarship: at Gaia the figure appears female and its betyls resemble those of al-ʿUzzā, while at Qusrawet (Qasr Ghayt) in Egypt the god is treated as masculine, and in the Graeco-Roman interpretatio al-Aktab was equated with Hermes/Mercury. Nabataean merchants carried the cult from Petra into Egypt, where an altar-base at Qasr Ghayt bears the dedication 'from Hawyru son of Geram to al-Kutbay'."
+  },
+  {
+    "id": "nabataean_obodas_the_god",
+    "name": {
+      "primary": "Obodas the God",
+      "alt": [
+        "ʿObodat",
+        "Obodat Alaha",
+        "Zeus Obodas"
+      ],
+      "transliterations": {
+        "nabataean-aramaic": "ʿbdt ʾlhʾ",
+        "greek": "Ζεὺς Ὀβοδας",
+        "etymology": "ʿbdt, a Nabataean royal name from the root ʿ-b-d 'to serve/servant', with ʾlhʾ 'the god'; i.e. 'Obodas the god', the deified king Obodas."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nabataean",
+    "primaryTradition": "Nabataean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A Nabataean king — most probably Obodas I — was divinised and worshipped as a healing god, honoured at holy sites at Petra and at Oboda (Avdat), where a temple to 'Zeus Obodas' was built under Aretas IV.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "healing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ʿbdt ʾlhʾ",
+          "script": "Nabataean Aramaic",
+          "rom": "ʿObodat ʾilāhā"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      },
+      {
+        "sphereId": "royal-ancestral-cult",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alpass, Peter (2013). The Religious Life of Nabataea. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heal_the_sick",
+        "name": "to heal the sick and answer prayers for recovery",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alpass, Peter (2013). The Religious Life of Nabataea. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nabataean_obodas_image",
+        "name": "Cult image of Obodas the god",
+        "kind": "cult statue",
+        "role": "A Petra inscription records 'the image of the god Obodas' made by Hunaynu son of Hutayshu, and a temple of Zeus Obodas stood at Oboda (Avdat).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Negev, Avraham (1986). Nabatean Archaeology Today. New York: New York University Press."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ʿbdt ʾlhʾ",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Obodas the God is a divinised Nabataean king (probably Obodas I) worshipped as a healing deity, styled Zeus Obodas in Greek.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Religions in the Graeco-Roman World 136. Leiden: Brill."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alpass, Peter (2013). The Religious Life of Nabataea. Religions in the Graeco-Roman World 175. Leiden: Brill."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Obodas the God (ʿObodat ʾilāhā, Greek Zeus Obodas) is the deified form of a Nabataean king, most likely Obodas I (reigned c. 96–87 BCE), venerated as a healing deity. His cult is attested by a dedication naming a 'servant of Obodas' at Madaba, by a Petra inscription describing 'the image of the god Obodas' made by Hunaynu son of Hutayshu, and above all at Oboda (Avdat), a city named for the king, where a temple of Zeus Obodas was erected under Aretas IV. The divinisation of kings was a recognised strand of Nabataean religion, and some scholars suggest a local deity underlay the royal cult onto which the historical Obodas kings were mapped."
+  },
+  {
+    "id": "nabataean_ara",
+    "name": {
+      "primary": "Aʿrā",
+      "alt": [
+        "Aʿara",
+        "A'ra",
+        "Aarra"
+      ],
+      "transliterations": {
+        "nabataean-aramaic": "ʾʿrʾ",
+        "greek": "Ααρρα",
+        "etymology": "ʾʿrʾ, a North Arabian divine name; the god is identified in inscriptions as 'Aʿrā who is in Bostra', the tutelary god of Bostra and of the Nabataean kings."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nabataean",
+    "primaryTradition": "Nabataean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A tutelary god of Bostra and of the Nabataean royal house, named 'Aʿrā who is in Bostra, the god of Rabbel' in a Hegra betyl inscription and later fused with Dushara as Dushara-Aʿrā.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "city-and-royal-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ʾʿrʾ",
+          "script": "Nabataean Aramaic",
+          "rom": "Aʿrā"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_royal_house",
+        "name": "to protect the royal house and the city of Bostra",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alpass, Peter (2013). The Religious Life of Nabataea. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nabataean_ara_betyl",
+        "name": "Betyl of Aʿrā at Hegra",
+        "kind": "emblem",
+        "role": "A betyl or altar at Hegra is captioned as representing 'Aʿrā who is in Bostra, the god of Rabbel', the god's principal aniconic image.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ʾʿrʾ dy bbṣrʾ ʾlh rbʾl",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Leiden: Brill."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Aʿrā is the North Arabian tutelary god of Bostra and of the Nabataean kings, later identified with Dushara in the compound cult Dushara-Aʿrā.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (2001). The Religion of the Nabataeans: A Conspectus. Religions in the Graeco-Roman World 136. Leiden: Brill."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alpass, Peter (2013). The Religious Life of Nabataea. Religions in the Graeco-Roman World 175. Leiden: Brill."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Aʿrā (Greek Aarra) is a tutelary god of the city of Bostra and of the Nabataean royal house, described in a Hegra betyl inscription as 'Aʿrā who is in Bostra, the god of Rabbel'. Originally a distinct Bostran deity, Aʿrā became closely identified with the chief Nabataean god Dushara, so that inscriptions and the Bostra temple complex speak of Dushara-Aʿrā. Because his individuality is documented chiefly through this royal-tutelary role at Bostra rather than through genealogy, he is treated here as a separate figure whose cult gradually merged into that of Dushara."
+  },
+  {
+    "id": "nabataean_hubal",
+    "name": {
+      "primary": "Hubal",
+      "alt": [
+        "Hubalu",
+        "Hobal"
+      ],
+      "transliterations": {
+        "nabataean-aramaic": "hblw",
+        "arabic": "هبل",
+        "etymology": "Hblw; a North Arabian divine name of uncertain derivation, possibly connected to a word for 'vapour/spirit' or read as a title 'the Baal', invoked in Nabataean tomb curses."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nabataean",
+    "primaryTradition": "Nabataean",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A North Arabian god invoked as Hblw alongside Dushara and Manōtu in the curse-formula of a Nabataean tomb inscription at Hegra (Madaʾin Salih), where he sanctions the protection of the grave.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (1993). The Nabataean Tomb Inscriptions of Madaʾin Salih. Journal of Semitic Studies Supplement 1. Oxford: Oxford University Press."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tomb-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "hblw",
+          "script": "Nabataean Aramaic",
+          "rom": "Hubalu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (1993). The Nabataean Tomb Inscriptions of Madaʾin Salih. Oxford: Oxford University Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sanction_tomb_curse",
+        "name": "to punish those who violate a sealed tomb",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (1993). The Nabataean Tomb Inscriptions of Madaʾin Salih. Oxford: Oxford University Press."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "hblw",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (1993). The Nabataean Tomb Inscriptions of Madaʾin Salih. Oxford: Oxford University Press."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hubal is a North Arabian deity attested in Nabataean epigraphy at Hegra, invoked with Dushara and Manōtu in a first-century tomb curse.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Healey, John F. (1993). The Nabataean Tomb Inscriptions of Madaʾin Salih. Journal of Semitic Studies Supplement 1. Oxford: Oxford University Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fahd, Toufic (1968). Le panthéon de l'Arabie centrale à la veille de l'hégire. Paris: Librairie orientaliste Paul Geuthner."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hubal (Nabataean Hblw), later famous as the great idol of pre-Islamic Mecca, is attested within Nabataean religion by a funerary inscription at Hegra (Madaʾin Salih), datable to around the turn of the era, which names him as Hblw alongside Dushara and Manōtu in the curse pronounced against anyone who would desecrate the tomb of the women Kamkam and her daughter Kulaybat. This is one of the few securely dated Nabataean occurrences of Hubal and places him among the divine guarantors of tomb-inviolability invoked by Nabataean funerary law. His broader nature and the etymology of his name remain debated in the scholarship on North Arabian religion."
+  }
+]
+```

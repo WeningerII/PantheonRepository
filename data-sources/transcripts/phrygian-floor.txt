@@ -1,0 +1,597 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Phrygian
+Era (registered, exact): "mythic"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five individuated figures well attested for Phrygia beyond the existing Cybele-Attis-Agdistis-Men-Sabazios core. Two extend the Mother-of-the-Gods myth as told by Pausanias and Arnobius: the river-god Sangarios and his daughter, the naiad Nana, who conceived Attis from the miraculous almond (wired to Attis as mother and to Sangarios as father). Marsyas is the Phrygian silenos and aulete of Celaenae, remembered as composer of the aulos 'Song of the Mother' for Cybele's rites, and I tied him to Cybele accordingly. The legendary kings Gordias and Midas form the Phrygian royal line (Midas's mythic name preserving the historical Mita/Mita of Mushki), wired father-to-son and to Cybele. I stopped at these five: further Phrygian names (e.g. Papas, Lityerses) are either bare epithets of existing gods or too thinly individuated to author responsibly.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "phrygian_sangarios",
+    "name": {
+      "primary": "Sangarios",
+      "alt": [
+        "Sangarius",
+        "Saggarios",
+        "Sakarya"
+      ],
+      "transliterations": {
+        "greek": "Σαγγάριος",
+        "etymology": "Greek name of the great Phrygian river (modern Sakarya); the hydronym is of pre-Greek Anatolian origin, personified as its resident river-god."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "In Phrygian tradition the great river Sangarius (modern Sakarya) is personified as a primeval river-god, counted among the river-sons of Oceanus and Tethys in Hesiod's Theogony and named as the father of Nana.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hesiod, Theogony 337-345, trans. Glenn W. Most, Loeb Classical Library (Harvard University Press, 2006)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers-and-fresh-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Sangarios",
+          "script": "Greek",
+          "rom": "Sangarios"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, In Search of God the Mother: The Cult of Anatolian Cybele (University of California Press, 1999), pp. 237-242."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "personify_the_river",
+        "name": "to embody and govern the flowing of the Sangarius river",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hesiod, Theogony 337-345, trans. Glenn W. Most, Loeb Classical Library (Harvard University Press, 2006)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "phrygian_nana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 7.17.11, trans. W. H. S. Jones, Loeb Classical Library (Harvard University Press, 1933)."
+          }
+        ],
+        "notes": "The naiad Nana, mother of Attis, is named in Pausanias and Arnobius as the daughter of the river-god Sangarius."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sangarios is the Phrygian river-god personifying the Sangarius (Sakarya), listed among the rivers born of Oceanus and Tethys and remembered as the father of the naiad Nana.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Hesiod, Theogony 337-345, trans. Glenn W. Most, Loeb Classical Library (Harvard University Press, 2006)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, In Search of God the Mother: The Cult of Anatolian Cybele (University of California Press, 1999), pp. 237-242."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sangarios is the divine personification of the Sangarius, the third-longest river of Anatolia, which flowed through the heart of ancient Phrygia. Hesiod enumerates him among the river-gods born to Oceanus and Tethys, while the Phrygian myth of the Mother of the Gods recorded by Pausanias and Arnobius makes him the father of the naiad Nana and thereby the grandfather of Attis. As a local water-deity his cult belonged to the fertility landscape of the Phrygian river valleys."
+  },
+  {
+    "id": "phrygian_nana",
+    "name": {
+      "primary": "Nana",
+      "alt": [
+        "Nana",
+        "Nane"
+      ],
+      "transliterations": {
+        "greek": "Νάνα",
+        "etymology": "A nursery-word (Lallname) of the type meaning 'mother' or 'nurse' common across Anatolian and Mediterranean languages; borne here by the naiad daughter of the river Sangarius."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "phrygian_sangarios"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "In the Phrygian myth recorded by Pausanias and Arnobius, Nana, daughter of the river Sangarius, conceives Attis after taking into her bosom the fruit of the almond (or pomegranate) that sprang from the severed member of Agdistis.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 7.17.11, trans. W. H. S. Jones, Loeb Classical Library (Harvard University Press, 1933)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "miraculous-conception",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Arnobius of Sicca, Adversus Nationes 5.5-7, trans. George E. McCracken, Ancient Christian Writers (Newman Press, 1949)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "conceive_attis_virginally",
+        "name": "to conceive Attis without union through the miraculous almond",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 7.17.11, trans. W. H. S. Jones, Loeb Classical Library (Harvard University Press, 1933)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "phrygian_attis",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, In Search of God the Mother: The Cult of Anatolian Cybele (University of California Press, 1999), pp. 237-242."
+          }
+        ],
+        "notes": "Nana bore Attis after the miraculous conception, then exposed the infant, who was reared by a he-goat before becoming the beloved of Cybele."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nana is the naiad daughter of the river Sangarius who conceived Attis from the fruit of the almond born of Agdistis, in the Phrygian myth of the Mother of the Gods.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 7.17.9-12, trans. W. H. S. Jones, Loeb Classical Library (Harvard University Press, 1933)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Maarten J. Vermaseren, Cybele and Attis: The Myth and the Cult, trans. A. M. H. Lemmers (Thames & Hudson, 1977), pp. 90-92."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nana is a river-nymph of Phrygian myth, daughter of the Sangarius river-god. In the aetiology of the Mother of the Gods preserved by Pausanias and by the Latin apologist Arnobius, an almond tree (a pomegranate in Arnobius) grew from the place where the hermaphroditic Agdistis was castrated; Nana gathered its fruit into her lap and became pregnant with Attis. She exposed the child, who was nourished by a goat and grew into the youth beloved of Cybele. Nana thus stands at the genealogical root of the Attis cycle, linking the river landscape of Phrygia to the myth of death and renewal at the center of the Cybele cult."
+  },
+  {
+    "id": "phrygian_marsyas",
+    "name": {
+      "primary": "Marsyas",
+      "alt": [
+        "Marsyas",
+        "Marsuas"
+      ],
+      "transliterations": {
+        "greek": "Μαρσύας",
+        "etymology": "A name of Anatolian (pre-Greek) origin, also carried by rivers in Phrygia and Caria into which he was said to have been transformed."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Phrygian tradition at Celaenae remembers Marsyas as the silenos who took up the aulos cast aside by Athena, challenged Apollo to a contest of pipe against lyre, and after his defeat was flayed, his memory bound to the eponymous river that ran through the city.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, Histories 7.26, trans. A. D. Godley, Loeb Classical Library (Harvard University Press, 1922)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "pipe-music",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "aulos",
+          "script": "Greek",
+          "rom": "aulos"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 10.30.9, trans. W. H. S. Jones, Loeb Classical Library (Harvard University Press, 1935)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "master_the_aulos",
+        "name": "to play the double-reed aulos with unrivalled skill",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, Histories 7.26, trans. A. D. Godley, Loeb Classical Library (Harvard University Press, 1922)."
+          }
+        ]
+      },
+      {
+        "id": "compose_the_song_of_the_mother",
+        "name": "to have composed the aulos melody sung in the rites of the Mother",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 10.30.9, trans. W. H. S. Jones, Loeb Classical Library (Harvard University Press, 1935)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "phrygian_aulos",
+        "name": "Aulos",
+        "kind": "instrument",
+        "role": "The double-reed pipe invented and discarded by Athena, taken up by Marsyas and central to the ecstatic music of the Phrygian Mother cult.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, In Search of God the Mother: The Cult of Anatolian Cybele (University of California Press, 1999), pp. 149-151."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "phrygian_cybele",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pausanias, Description of Greece 10.30.9, trans. W. H. S. Jones, Loeb Classical Library (Harvard University Press, 1935)."
+          }
+        ],
+        "notes": "The Phrygians of Celaenae held that Marsyas composed the 'Song of the Mother,' the aulos air performed in the worship of Cybele, making him the mythic musician of her cult."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Marsyas is the Phrygian silenos and master aulete of Celaenae who challenged Apollo, was flayed for his defeat, and was remembered as composer of the aulos melody of the Mother's rites and as the eponym of the river Marsyas.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, Histories 7.26, trans. A. D. Godley, Loeb Classical Library (Harvard University Press, 1922)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, In Search of God the Mother: The Cult of Anatolian Cybele (University of California Press, 1999), pp. 149-151."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Simon Hornblower, Antony Spawforth and Esther Eidinow (eds.), The Oxford Classical Dictionary, 4th ed. (Oxford University Press, 2012), s.v. 'Marsyas'."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Marsyas is a Phrygian silenos closely tied to the city of Celaenae, where Herodotus reports his flayed skin was still displayed in his day. He took up the double aulos that Athena had thrown away after it distorted her face, and grew so proud of his artistry that he challenged Apollo to a contest of pipe against lyre; losing to the divine kitharist, he was flayed alive, and the tears of his mourners, or his own flowing blood, were said to have become the river Marsyas. Pausanias records that the Phrygians credited him with composing the 'Song of the Mother,' the aulos air performed in the rites of Cybele, so that in local tradition he is the archetypal musician of the Phrygian Mother's ecstatic worship. His figure fuses the woodland silenos, the Anatolian river-personification, and the aulos music that defined Phrygian religion."
+  },
+  {
+    "id": "phrygian_midas",
+    "name": {
+      "primary": "Midas",
+      "alt": [
+        "Mita",
+        "Midai"
+      ],
+      "transliterations": {
+        "greek": "Μίδας",
+        "paleo-phrygian": "Midai",
+        "etymology": "Greek Midas renders Phrygian Mita, a royal name attested in the Paleo-Phrygian dedication of the Midas Monument ('Midai lavagtaei vanaktei') and in the Assyrian annals of Sargon II as 'Mita of Mushki'."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "phrygian_gordias",
+      "phrygian_cybele"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Greek and Phrygian tradition places the legendary king Midas, son of Gordias, as ruler of Phrygia, famed for the golden touch granted by Dionysus in reward for his hospitality to the satyr Silenus.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, 'The Legend of Midas,' Classical Antiquity 2, no. 2 (1983): 299-313."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vanaks",
+          "script": "Paleo-Phrygian",
+          "rom": "wanaks (king)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, In Search of God the Mother: The Cult of Anatolian Cybele (University of California Press, 1999), pp. 66-70."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "golden_touch",
+        "name": "to turn all he touches into gold",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, 'The Legend of Midas,' Classical Antiquity 2, no. 2 (1983): 299-313."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Midas is the legendary king of Phrygia, son of Gordias, remembered for the golden touch granted by Dionysus and for his ties to the cult of Cybele; the name preserves the historical Phrygian royal name Mita.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, 'The Legend of Midas,' Classical Antiquity 2, no. 2 (1983): 299-313."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, 'Midas and the Gordian Knot,' Classical Antiquity 3, no. 2 (1984): 256-271."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, Histories 1.14 and 8.138, trans. A. D. Godley, Loeb Classical Library (Harvard University Press, 1920-1925)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Midas is the archetypal king of Phrygia, whose legendary name preserves the historical Phrygian royal title Mita, borne by a ruler known to the Assyrians as 'Mita of Mushki' and commemorated in the Paleo-Phrygian inscription of the Midas Monument. In Greek myth he is the son of Gordias and, in several sources, of the goddess Cybele, binding the dynasty to the Mother of the Gods. His best-known tale is the golden touch: rewarded by Dionysus for his hospitality to the lost satyr Silenus, he wished that all he touched turn to gold, only to find food and drink transformed until he washed the power into the river Pactolus, whose sands ran gold thereafter. A second story gives him the ears of an ass for judging Pan above Apollo in a musical contest. He dedicated his father's ox-cart to Sabazios, the Phrygian sky-god, tying the fateful Gordian Knot."
+  },
+  {
+    "id": "phrygian_gordias",
+    "name": {
+      "primary": "Gordias",
+      "alt": [
+        "Gordios",
+        "Gordius"
+      ],
+      "transliterations": {
+        "greek": "Γορδίας",
+        "etymology": "The name is connected in tradition with the Phrygian capital Gordion, of which he was reckoned the founder and eponym."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Phrygian foundation legend makes Gordias the ox-driver whom an oracle raised to the kingship when an eagle settled on his cart, founder and eponym of the capital Gordion and father of Midas.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, 'Midas and the Gordian Knot,' Classical Antiquity 3, no. 2 (1984): 256-271."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Arrian, Anabasis of Alexander 2.3, trans. P. A. Brunt, Loeb Classical Library (Harvard University Press, 1976)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_the_royal_city",
+        "name": "to found the Phrygian royal capital of Gordion",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, 'Midas and the Gordian Knot,' Classical Antiquity 3, no. 2 (1984): 256-271."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "phrygian_gordian_knot",
+        "name": "Gordian Knot",
+        "kind": "emblem",
+        "role": "The intricate knot of cornel bark binding Gordias's ox-cart, dedicated in the citadel and prophesied to be loosed only by the future ruler of Asia.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Arrian, Anabasis of Alexander 2.3, trans. P. A. Brunt, Loeb Classical Library (Harvard University Press, 1976)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "phrygian_midas",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, 'Midas and the Gordian Knot,' Classical Antiquity 3, no. 2 (1984): 256-271."
+          }
+        ],
+        "notes": "Gordias is the father of the golden-touched king Midas, who dedicated his father's ox-cart and tied the Gordian Knot."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Gordias is the legendary founder-king and eponym of the Phrygian capital Gordion, raised to the throne by an oracle of the ox-cart and eagle, and father of Midas.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lynn E. Roller, 'Midas and the Gordian Knot,' Classical Antiquity 3, no. 2 (1984): 256-271."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Arrian, Anabasis of Alexander 2.3, trans. P. A. Brunt, Loeb Classical Library (Harvard University Press, 1976)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Gordias is the founder-king of Phrygian legend and eponym of Gordion, the dynastic capital. According to the foundation story an eagle alighted on the pole of his ox-cart while he ploughed, an omen confirmed when the kingless Phrygians, following an oracle to crown the first man to drive into the assembly on a cart, hailed him king. His cart was preserved on the citadel, bound to its yoke by an elaborate knot of cornel bark, the Gordian Knot, which legend said only the destined lord of Asia could loose, and which Alexander the Great famously severed with his sword. Gordias is the father of Midas, and through him the origin of the Phrygian royal house."
+  }
+]
+```

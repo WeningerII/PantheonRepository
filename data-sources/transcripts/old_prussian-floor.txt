@@ -1,0 +1,701 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Old Prussian
+Era (registered, exact): "old-prussian-pagan"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five further individuated Old Prussian deities that scholarship attests beyond the existing core: Pergrubrius (spring/vegetation, from Meletius's 1551 feast account), Pilnitis (wealth and full granaries), Bardoayts (ships and seafarers), Puskaitis (chthonic earth god of the sacred elder, lord of the Barstukai), and Auschauts (health and sickness). All five are named in the sixteenth-century Sudovian Book and/or Meletius (1551) and are treated in standard scholarship (Mannhardt 1936; Gimbutas 1963; Bojtár 1999; Kregždys 2020), so each carries at least two real citations. The four agrarian/household gods are wired to one another as companions in the productivity-fertility-health cluster reported by the sources, while Bardoayts is placed in solitary because the record ties him to no other figure. I stopped here deliberately: remaining names in the Sudovian list (e.g. Swayxtix, Pockols) and Grunau's added figures are either bare functional labels or of contested authenticity, and generic classes such as the Barstukai are spirit-collectives rather than named individuals, so authoring them would be padding rather than documented individuation.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "old_prussian_pergrubrius",
+    "name": {
+      "primary": "Pergrubrius (God of Spring and Vegetation)",
+      "alt": [
+        "Pergrubius",
+        "Pergubrius",
+        "Grubrius",
+        "Pargrubrijs"
+      ],
+      "transliterations": {
+        "prg": "Pergrubrius",
+        "etymology": "Old Prussian theonym built on a stem *grub-/grubr-, connected by scholars to the springtime quickening and greening of vegetation; the whole is glossed as the 'god of spring'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Old Prussian",
+    "primaryTradition": "Old Prussian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "old-prussian-pagan"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "old-prussian-pagan",
+        "eraOrdering": 0,
+        "startEvent": "At the feast held about St George's Day the priest raises a cake and invokes Pergrubrius, who drives away winter and clothes the fields and woods once more in green, according to Johann Meletius's account of 1551.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Johann Meletius (Jan Malecki), De sacrificiis et idolatria veterum Borussorum, Livonum, aliarumque vicinarum gentium (Königsberg, 1551)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jan Máchal, 'Slavic Mythology,' in The Mythology of All Races, vol. III: Celtic and Slavic (Boston: Marshall Jones Company, 1918)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "spring-and-renewal",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Johann Meletius (Jan Malecki), De sacrificiis et idolatria veterum Borussorum, Livonum, aliarumque vicinarum gentium (Königsberg, 1551)."
+          }
+        ]
+      },
+      {
+        "sphereId": "plant-growth-and-vegetation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Rolandas Kregždys, Baltų mitologemų etimologijos žodynas II: Sūduvių knygelė / Etymological Dictionary of Baltic Mythologemes II: Yatvigian Book (Vilnius: Lietuvos kultūros tyrimų institutas, 2020)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_back_spring",
+        "name": "to drive away winter and bring back the spring",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Johann Meletius (Jan Malecki), De sacrificiis et idolatria veterum Borussorum, Livonum, aliarumque vicinarum gentium (Königsberg, 1551)."
+          }
+        ]
+      },
+      {
+        "id": "make_plants_grow",
+        "name": "to make grass, grain and trees grow green",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan Máchal, 'Slavic Mythology,' in The Mythology of All Races, vol. III: Celtic and Slavic (Boston: Marshall Jones Company, 1918)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "old_prussian_pilnitis",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marija Gimbutas, The Balts (London: Thames & Hudson, 1963)."
+          }
+        ],
+        "notes": "Pergrubrius, who reawakens the fields in spring, is grouped with Pilnitis, the god who fills the granaries, among the agrarian deities honoured at spring sowing."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Pergrubrius is the Old Prussian god of spring and vegetation, invoked at the St George's Day feast to drive off winter and green the fields.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Johann Meletius (Jan Malecki), De sacrificiis et idolatria veterum Borussorum, Livonum, aliarumque vicinarum gentium (Königsberg, 1551)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jan Máchal, 'Slavic Mythology,' in The Mythology of All Races, vol. III: Celtic and Slavic (Boston: Marshall Jones Company, 1918)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rolandas Kregždys, Baltų mitologemų etimologijos žodynas II: Sūduvių knygelė / Etymological Dictionary of Baltic Mythologemes II: Yatvigian Book (Vilnius: Lietuvos kultūros tyrimų institutas, 2020)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pergrubrius (Grubrius) is the Old Prussian and West-Baltic god of spring and growing things. Johann Meletius's 1551 letter preserves the fullest account: at a village feast about St George's Day (23 April) the priest lifts a cake and calls on Pergrubrius to banish the winter that Perkūns had held back and to clothe the fields, meadows and woods in fresh green, after which the beer-cup is passed with the teeth. He is also listed among the gods of the Sudovian Book as the deity of plants."
+  },
+  {
+    "id": "old_prussian_pilnitis",
+    "name": {
+      "primary": "Pilnitis (God of Wealth and Abundance)",
+      "alt": [
+        "Pilnitys",
+        "Pilvitis",
+        "Pilvytis"
+      ],
+      "transliterations": {
+        "prg": "Pilnitis",
+        "etymology": "From the Baltic stem *piln- 'full' (compare Lithuanian pilnas 'full', pilnatis 'full moon'); an alternative derivation links the name to Prussian pilv- 'fortune, plenty'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Old Prussian",
+    "primaryTradition": "Old Prussian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "old-prussian-pagan"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "old-prussian-pagan",
+        "eraOrdering": 0,
+        "startEvent": "Pilnitis, the god who enriches and fills the granaries, is named among the gods of the Sudovian Book and honoured with offerings in spring before ploughing and in autumn after the harvest.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sudauerbüchlein (Sudovian Book), anonymous, mid-16th century."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wealth-and-abundance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "pilnas",
+          "script": "Latin",
+          "rom": "full"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sudauerbüchlein (Sudovian Book), anonymous, mid-16th century."
+          }
+        ]
+      },
+      {
+        "sphereId": "harvest-plenty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marija Gimbutas, The Balts (London: Thames & Hudson, 1963)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fill_the_granaries",
+        "name": "to fill the granaries and bestow plenty",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "old_prussian_pergrubrius",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marija Gimbutas, The Balts (London: Thames & Hudson, 1963)."
+          }
+        ],
+        "notes": "Pilnitis, who fills the barns, is paired with Pergrubrius, who reawakens the fields, among the deities of the agrarian year."
+      },
+      {
+        "kind": "companion",
+        "personId": "old_prussian_puskaitis",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ],
+        "notes": "Pilnitis is most often named together with Puskaitis and Auschauts as the gods of productivity, fertility and household well-being."
+      },
+      {
+        "kind": "companion",
+        "personId": "old_prussian_auschauts",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ],
+        "notes": "Pilnitis is grouped with Auschauts and Puskaitis among the lesser gods of plenty and health invoked for the prosperity of the homestead."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Pilnitis is the Old Prussian god of wealth, plenty and full granaries, named in the Sudovian Book and invoked at sowing and harvest.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sudauerbüchlein (Sudovian Book), anonymous, mid-16th century."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rolandas Kregždys, Baltų mitologemų etimologijos žodynas II: Sūduvių knygelė / Etymological Dictionary of Baltic Mythologemes II: Yatvigian Book (Vilnius: Lietuvos kultūros tyrimų institutas, 2020)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pilnitis (later Pilvytis) is the Old Prussian god of wealth and abundance, whose name derives from the Baltic word for 'full'. Listed among the gods of the Sudovian Book, he is credited with enriching and replenishing the granaries; sacrifices were offered to him in spring before ploughing and in autumn after the harvest. Seventeenth-century writers likened him to the Roman Ceres and to Pluto as a giver of fortune, and associated him with the cornucopia."
+  },
+  {
+    "id": "old_prussian_bardoayts",
+    "name": {
+      "primary": "Bardoayts (God of Ships and Seafarers)",
+      "alt": [
+        "Bardaits",
+        "Bardoits",
+        "Gardoayts",
+        "Perdoytus"
+      ],
+      "transliterations": {
+        "prg": "Bardoayts",
+        "etymology": "Old Prussian theonym of uncertain origin; variously connected to a word for the sea-voyage or, less securely, to the Baltic 'barda' (beard). The parallel form Perdoytus is recorded by later writers for the same maritime god."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Old Prussian",
+    "primaryTradition": "Old Prussian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "old-prussian-pagan"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "old-prussian-pagan",
+        "eraOrdering": 0,
+        "startEvent": "Bardoayts, the god of boats, is named among the deities of the Sudovian Book as the protector of ships and of those who put to sea.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sudauerbüchlein (Sudovian Book), anonymous, mid-16th century."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ships-and-seafaring",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sudauerbüchlein (Sudovian Book), anonymous, mid-16th century."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_ships",
+        "name": "to protect ships and sailors at sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Bardoayts is the Old Prussian god of ships and seafarers, listed among the gods of the Sudovian Book and recorded in later sources as Perdoytus.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sudauerbüchlein (Sudovian Book), anonymous, mid-16th century."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rolandas Kregždys, Baltų mitologemų etimologijos žodynas II: Sūduvių knygelė / Etymological Dictionary of Baltic Mythologemes II: Yatvigian Book (Vilnius: Lietuvos kultūros tyrimų institutas, 2020)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Matthäus Prätorius, Deliciae Prussicae, oder Preussische Schaubühne (manuscript, c. 1690; ed. W. Pierson, Berlin, 1871)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bardoayts is the Old Prussian god of boats, named among the deities of the Sudovian Book as the patron of ships and of the men of the Sambian coast who sailed the Baltic. A closely related maritime god, Perdoytus, appears in Matthäus Prätorius's late-seventeenth-century Deliciae Prussicae; scholars have long debated whether Bardoayts, Gardoayts and Perdoytus are variants of a single sea-god or distinct figures. He fits the coastal, seafaring character of the West-Baltic Prussians."
+  },
+  {
+    "id": "old_prussian_puskaitis",
+    "name": {
+      "primary": "Puskaitis (Earth God of the Sacred Elder)",
+      "alt": [
+        "Puschkaits",
+        "Puškaitis",
+        "Puschkayts",
+        "Pušaitis"
+      ],
+      "transliterations": {
+        "prg": "Puskaitis",
+        "etymology": "Old Prussian theonym of uncertain origin, connected by some to a Baltic root meaning 'to swell, to sprout'; the god is bound to the elder tree, called in the region bezdas."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Old Prussian",
+    "primaryTradition": "Old Prussian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "old-prussian-pagan"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "old-prussian-pagan",
+        "eraOrdering": 0,
+        "startEvent": "Puskaitis dwells beneath the sacred elder tree and rules the Barstukai and Markopole, the little earth-people who at night carry corn into the barns of households that leave them food and honour their master.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marija Gimbutas, The Balts (London: Thames & Hudson, 1963)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-and-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bezdas",
+          "script": "Latin",
+          "rom": "elder tree"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marija Gimbutas, The Balts (London: Thames & Hudson, 1963)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_the_barstukai",
+        "name": "to command the earth-dwelling little folk and grant household plenty",
+        "term": {
+          "value": "Barstukai",
+          "script": "Latin",
+          "rom": "little earth-people"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "old_prussian_puskaitis_elder",
+        "name": "the sacred elder tree",
+        "kind": "sacred-tree",
+        "role": "The elder (bezdas) beneath which Puskaitis dwells and at whose roots offerings of bread and drink were laid for him and his little folk.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marija Gimbutas, The Balts (London: Thames & Hudson, 1963)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "old_prussian_pilnitis",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ],
+        "notes": "Puskaitis, whose little folk bring corn to the barns, is grouped with Pilnitis, the god of full granaries, among the deities of household plenty."
+      },
+      {
+        "kind": "companion",
+        "personId": "old_prussian_auschauts",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ],
+        "notes": "Puskaitis is named alongside Auschauts and Pilnitis as one of the gods of fertility, health and prosperity of the homestead."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Puskaitis is the Old Prussian earth god who dwells beneath the sacred elder and commands the Barstukai, the little earth-people who bring plenty to farmsteads.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marija Gimbutas, The Balts (London: Thames & Hudson, 1963)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Endre Bojtár, Foreword to the Past: A Cultural History of the Baltic People (Budapest: Central European University Press, 1999)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Puskaitis (Puschkaits) is the Old Prussian god of the earth, imagined as living under an elder tree, from which he governs the Barstukai (also Parstukai) and Markopole, tiny bearded subterranean folk. Households that set out bread, meat, cheese and butter for these little people, and so honoured Puskaitis, were rewarded with corn carried secretly into their barns and with bountiful crops. He belongs to the chthonic, agrarian stratum of the West-Baltic pantheon and is recorded in the Sudovian Book and elaborated by Matthäus Prätorius."
+  },
+  {
+    "id": "old_prussian_auschauts",
+    "name": {
+      "primary": "Auschauts (God of Health and Sickness)",
+      "alt": [
+        "Aušauts",
+        "Aushauts",
+        "Auschauts",
+        "Auxtheias Vissas"
+      ],
+      "transliterations": {
+        "prg": "Auschauts",
+        "etymology": "Old Prussian theonym of debated origin; connected by some scholars to a Baltic root for healing or, through the recorded epithet Auxtheias Vissas, to the sense 'highest of all'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Old Prussian",
+    "primaryTradition": "Old Prussian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "old-prussian-pagan"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "old-prussian-pagan",
+        "eraOrdering": 0,
+        "startEvent": "Auschauts, the god of the sick, is named among the deities of the Sudovian Book as the power who both sends and lifts disease, invoked for the recovery of health.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sudauerbüchlein (Sudovian Book), anonymous, mid-16th century."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "health-and-sickness",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sudauerbüchlein (Sudovian Book), anonymous, mid-16th century."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send_and_cure_sickness",
+        "name": "to send and to cure sickness",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Marija Gimbutas, The Balts (London: Thames & Hudson, 1963)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Auxtheias Vissas",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "old_prussian_pilnitis",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ],
+        "notes": "Auschauts, giver of health, is regularly named together with Pilnitis and Puskaitis among the lesser gods of well-being and plenty."
+      },
+      {
+        "kind": "companion",
+        "personId": "old_prussian_puskaitis",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wilhelm Mannhardt, Letto-Preussische Götterlehre (Riga: Lettisch-Literärische Gesellschaft, 1936)."
+          }
+        ],
+        "notes": "Auschauts is grouped with Puskaitis and Pilnitis as one of the gods of fertility, prosperity and bodily health."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Auschauts is the Old Prussian god of health and sickness, named in the Sudovian Book as the power who both inflicts and heals disease.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sudauerbüchlein (Sudovian Book), anonymous, mid-16th century."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Marija Gimbutas, The Balts (London: Thames & Hudson, 1963)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rolandas Kregždys, Baltų mitologemų etimologijos žodynas II: Sūduvių knygelė / Etymological Dictionary of Baltic Mythologemes II: Yatvigian Book (Vilnius: Lietuvos kultūros tyrimų institutas, 2020)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Auschauts (Aušauts) is the Old Prussian god of the sick, listed among the deities of the Sudovian Book. As a healing power he was believed both to send illness and to restore health, and he is grouped with Pilnitis and Puskaitis as one of the gods on whom the well-being and prosperity of the household depended. The epithet Auxtheias Vissas, sometimes attached to him, has been read as 'the highest of all'."
+  }
+]
+```

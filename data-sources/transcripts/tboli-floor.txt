@@ -1,0 +1,798 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Tboli
+Era (registered, exact): "Tboli traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added six well-attested, individuated members of the T'boli creation pantheon that were missing from the corpus, all drawn from the same creation cycle as the existing figures: Bong Libun (daughter of the supreme couple, wife and slayer of Sfedat, keeper of the primordial land), Hyu We (sister-wife of D'wata and mother of the nature-gods who moulds the first humans from clay), and four of D'wata and Hyu We's children who each hold a distinct domain — Ginton the smith-god of Hulon volcano, Fun Bulol lord of the mountains, Tdolok god of death, and Lmugot Mangay god of life. Each is genealogically wired into the existing pantheon via parentIds pointing at Kadaw La Sambad, Bulon La Mogoaw, D'wata and the new Hyu We, plus directed consort/slayer/mother relations to existing figures. I deliberately stopped short of the remaining named children (Litik, Blanga, Teme Lus and Sedek We) and the omen-bird Muhen to keep the entries to the most robustly individuated cases; those thinner name-plus-domain figures could be added later but risk padding. Attestation rests on Casal's ethnography T'boli Art in its Socio-Cultural Context (1978), Jocano's Outline of Philippine Mythology (1969) and the CCP Encyclopedia of Philippine Art (1994).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "tboli_bong_libun",
+    "name": {
+      "primary": "Bong Libun",
+      "alt": [
+        "Boi Henwu",
+        "Bong Libon"
+      ],
+      "transliterations": {
+        "Tboli": "Bong Libun",
+        "etymology": "Commonly glossed from Tboli bong 'great, big' and libun 'woman', i.e. 'the Great Woman'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tboli",
+    "primaryTradition": "Tboli",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "tboli_kadaw_la_sambad",
+      "tboli_bulon_la_mogoaw"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Tboli traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tboli traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "One of the daughters of the primordial couple Kadaw La Sambad and Bulon La Mogoaw, she married her brother Sfedat and, in the creation account, brought about his death, after which his body became the primordial land.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-origin",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "possess_primordial_land",
+        "name": "to hold and bargain over the primordial land",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the creation narrative the land that D'wata needed to fashion the earth was hers to grant, on the condition of a marriage that was never honoured.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "tboli_sfedat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ],
+        "notes": "She was given in marriage to her brother Sfedat, the second son of the supreme couple."
+      },
+      {
+        "kind": "slayer-of",
+        "personId": "tboli_sfedat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "notes": "In the myth she brings about Sfedat's death, whereupon his corpse becomes the earth's landmass and the source of all vegetation."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bong Libun is a T'boli goddess, daughter of the supreme couple, whose marriage to and slaying of Sfedat produces the primordial land and who later withholds land from D'wata over an unfulfilled marriage bargain.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Cultural Center of the Philippines. CCP Encyclopedia of Philippine Art, Vol. II: Peoples of the Philippines. Manila: Cultural Center of the Philippines, 1994."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bong Libun is one of the divine daughters of the sun-lord Kadaw La Sambad and the moon-lady Bulon La Mogoaw. In the T'boli creation cycle she is married to her brother Sfedat; when he dies through her, his body becomes the land upon which all plants and trees grow. When D'wata later seeks that land to fashion the earth and the first human beings, Bong Libun grants it on the condition that one of D'wata's sons marry her, a promise that is ultimately broken, leaving her a figure of unresolved claim in the mythology."
+  },
+  {
+    "id": "tboli_hyu_we",
+    "name": {
+      "primary": "Hyu We",
+      "alt": [
+        "Hyu",
+        "Hiu We"
+      ],
+      "transliterations": {
+        "Tboli": "Hyu We"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tboli",
+    "primaryTradition": "Tboli",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "tboli_kadaw_la_sambad",
+      "tboli_bulon_la_mogoaw"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Tboli traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tboli traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "A daughter of the supreme couple who became one of the two wives of her brother D'wata and the mother of the generation of nature-gods, and who modelled from clay the figures that D'wata brought to life as the first human beings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "human-creation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ]
+      },
+      {
+        "sphereId": "motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mould_clay_figures",
+        "name": "to model the first human figures from clay",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Together with the co-wife Sedek We she shapes the clay figurines that become humanity once D'wata breathes life into them.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tboli_clay_figures",
+        "name": "clay figurines of the first people",
+        "kind": "emblem",
+        "role": "The moulded clay bodies she fashions become the first human beings when animated by D'wata.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "tboli_dwata",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ],
+        "notes": "One of the two sister-wives of D'wata, the creator, alongside Sedek We."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "tboli_ginton",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "notes": "Mother of Ginton, the smith-god, among her seven children by D'wata."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "tboli_fun_bulol",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "notes": "Mother of Fun Bulol, lord of the mountains."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "tboli_tdolok",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "notes": "Mother of Tdolok, the god of death."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "tboli_lmugot_mangay",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "notes": "Mother of Lmugot Mangay, god of life and of all growing things."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hyu We is a T'boli goddess, sister-wife of the creator D'wata and mother of the generation of nature-gods, who moulded from clay the figures that became the first human beings.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Cultural Center of the Philippines. CCP Encyclopedia of Philippine Art, Vol. II: Peoples of the Philippines. Manila: Cultural Center of the Philippines, 1994."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hyu We is a divine daughter of the supreme couple and one of the two sister-wives of the creator-god D'wata. By D'wata she bears seven children who become the gods of the natural world, including Ginton the smith, Fun Bulol of the mountains, Tdolok of death and Lmugot Mangay of life. In the creation of humankind she and the co-wife Sedek We shape human bodies out of clay, which D'wata then animates, making her a maternal source both of the divine generation and of humanity itself."
+  },
+  {
+    "id": "tboli_ginton",
+    "name": {
+      "primary": "Ginton",
+      "alt": [
+        "Guinton"
+      ],
+      "transliterations": {
+        "Tboli": "Ginton"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tboli",
+    "primaryTradition": "Tboli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "tboli_dwata",
+      "tboli_hyu_we"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Tboli traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tboli traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "A son of D'wata and Hyu We who settled on the volcano Hulon to work metal, becoming the divine smith credited with the brass ornaments of T'boli craft.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "metalworking",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "forge_brass",
+        "name": "to forge brass ornaments and metalwork",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Divine originator of the cast-brass ornaments that distinguish T'boli material culture.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tboli_singkil",
+        "name": "singkil",
+        "kind": "regalia",
+        "role": "Cast-brass anklets, among the ornaments whose making is attributed to Ginton.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      },
+      {
+        "id": "tboli_blonso",
+        "name": "blonso",
+        "kind": "regalia",
+        "role": "Brass bracelets attributed to the smith-god Ginton.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Cultural Center of the Philippines. CCP Encyclopedia of Philippine Art, Vol. II: Peoples of the Philippines. Manila: Cultural Center of the Philippines, 1994."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ginton is the T'boli smith-god, a son of D'wata and Hyu We who settled on the Hulon volcano and is credited with the tradition's cast-brass ornaments.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Cultural Center of the Philippines. CCP Encyclopedia of Philippine Art, Vol. II: Peoples of the Philippines. Manila: Cultural Center of the Philippines, 1994."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ginton is the divine smith of the T'boli, one of the seven children of the creator D'wata by Hyu We. He is said to have settled on the volcano Hulon in order to work metal, and to him is attributed the origin of the tribe's characteristic cast-brass ornaments, including the singkil anklets, blonso bracelets, chain-mail girdles and finger-rings that figure prominently in T'boli adornment. As a culture-hero of craft, he anchors the prestige of metalwork within the divine order."
+  },
+  {
+    "id": "tboli_fun_bulol",
+    "name": {
+      "primary": "Fun Bulol",
+      "alt": [
+        "Fun Bulul"
+      ],
+      "transliterations": {
+        "Tboli": "Fun Bulol",
+        "etymology": "Commonly analysed from Tboli fun 'owner, master (of a place)' and bulol 'mountain', i.e. 'Lord of the Mountain'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tboli",
+    "primaryTradition": "Tboli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "tboli_dwata",
+      "tboli_hyu_we"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Tboli traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tboli traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "A son of D'wata and Hyu We who became the god and owner of the mountains.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mountains",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bulol",
+          "script": "Latin",
+          "rom": "mountain"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_over_mountains",
+        "name": "to preside over the mountains",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As 'owner' of the highlands he holds authority over the mountain landscape.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Fun Bulol is the T'boli god and owner of the mountains, one of the children of D'wata and Hyu We.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Fun Bulol is the mountain-god of the T'boli, one of the seven children of the creator D'wata by his wife Hyu We. His name carries the sense of the 'owner' or master of the mountain, and in the pantheon he presides over the highland terrain that dominates the T'boli homeland around Lake Sebu. He belongs to the generation of sibling deities who, on leaving the sky with their father, took up the several domains of the natural world."
+  },
+  {
+    "id": "tboli_tdolok",
+    "name": {
+      "primary": "Tdolok",
+      "alt": [
+        "T'dolok",
+        "Tdolo"
+      ],
+      "transliterations": {
+        "Tboli": "Tdolok"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tboli",
+    "primaryTradition": "Tboli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "tboli_dwata",
+      "tboli_hyu_we"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Tboli traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tboli traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "A son of D'wata and Hyu We who became the god of death.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_over_death",
+        "name": "to preside over death and the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He holds the domain of death within the T'boli pantheon.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "tboli_lmugot_mangay",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "notes": "Brother of Lmugot Mangay, god of life, with whom he forms a death-and-life pairing among the children of D'wata."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tdolok is the T'boli god of death, one of the children of D'wata and Hyu We.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tdolok is the god of death among the T'boli, one of the seven children of the creator D'wata by Hyu We. He stands in complementary opposition to his brother Lmugot Mangay, the god of life and of all growing things, the two together framing the cosmic passage between living and dying. Like his siblings he took up his domain when the divine generation descended from the sky to inhabit the world."
+  },
+  {
+    "id": "tboli_lmugot_mangay",
+    "name": {
+      "primary": "Lmugot Mangay",
+      "alt": [
+        "L'mugot Mangay",
+        "Lemugot Mangay"
+      ],
+      "transliterations": {
+        "Tboli": "Lmugot Mangay"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tboli",
+    "primaryTradition": "Tboli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "tboli_dwata",
+      "tboli_hyu_we"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Tboli traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tboli traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "A son of D'wata and Hyu We who became the god of life and of all growing things.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "life-and-growth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_life_to_growing_things",
+        "name": "to give life to all growing things",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He governs life and the vitality of plants and living creatures.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "tboli_tdolok",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "notes": "Brother of Tdolok, god of death, forming a life-and-death pairing among the children of D'wata."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Lmugot Mangay is the T'boli god of life and of all growing things, one of the children of D'wata and Hyu We.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Casal, Gabriel. T'boli Art in its Socio-Cultural Context. Manila: Ayala Museum, 1978."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Jocano, F. Landa. Outline of Philippine Mythology. Manila: Centro Escolar University Research and Development Center, 1969."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Lmugot Mangay is the god of life and of all growing things among the T'boli, one of the seven children of the creator D'wata by Hyu We. He is the counterpart of his brother Tdolok, the god of death, and together the pair express the T'boli understanding of the balance between vitality and mortality in the world. As a life-giving deity he is associated with the flourishing of plants, animals and human beings alike."
+  }
+]
+```

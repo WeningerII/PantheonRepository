@@ -1,0 +1,358 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Mentawai
+Era (registered, exact): "Mentawai traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two genuinely individuated figures beyond the four ruling spirits and the high deity Ulaumanua. Sikameinan is a named female water spirit of southern Siberut, documented at length by Singh, Kaptchuk & Henrich (2021) and Darmanto (2024/25) as a 'small god' who afflicts those who violate meat-sharing norms and is appeased through public shamanic rites. Pageta Sabbau (also called Teteu, 'Grandfather') is the mythic first shaman and culture hero of Loeb (1929), Spina (1981) and Krutak (2012), who taught shamanism and tattooing and, imprisoned beneath the earth, causes earthquakes. I deliberately did NOT author muntogat, rakrak or sirubeiteteu (these proved to be social-organizational categories — clan/sib/common-descent — not individuated beings), the generic sikoinan class of waterhole guardians, or Maligai (attested only as a myth-title, its protagonist not confirmed as a named individual); both new figures stand outside the four-ruler genealogy in the sources and are therefore recorded as solitary.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "mentawai_sikameinan",
+    "name": {
+      "primary": "Sikameinan, water spirit who punishes stinginess",
+      "alt": [
+        "Sikameinan",
+        "Meinan",
+        "Si Kameinan"
+      ],
+      "transliterations": {
+        "mentawai": "Sikameinan",
+        "etymology": "From Mentawai kameinan 'aunt' (father's sister) with the nominalizing prefix si-, hence roughly 'the Aunt'; recorded by Singh, Kaptchuk & Henrich (2021)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Mentawai",
+    "primaryTradition": "Mentawai",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mentawai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Mentawai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Sikameinan is venerated in southern Siberut as a water-dwelling spirit who afflicts people that fail to share hunted meat, and is appeased through public shamanic healing rites.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Singh, Manvir, Ted J. Kaptchuk, and Joseph Henrich. 'Small gods, rituals, and cooperation: The Mentawai water spirit Sikameinan.' Evolution and Human Behavior 42, no. 1 (2021): 61-72."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers-and-freshwater",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "oinan",
+          "script": "Latin",
+          "rom": "river"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Singh, Manvir, Ted J. Kaptchuk, and Joseph Henrich. 'Small gods, rituals, and cooperation: The Mentawai water spirit Sikameinan.' Evolution and Human Behavior 42, no. 1 (2021): 61-72."
+          }
+        ]
+      },
+      {
+        "sphereId": "food-sharing-and-reciprocity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Darmanto. 'Eating, sharing, and mutuality of being among the Mentawai on Siberut Island, Indonesia.' Food, Culture & Society 28, no. 3 (2025): 546-572."
+          }
+        ]
+      },
+      {
+        "sphereId": "illness-and-affliction",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Singh, Manvir, Ted J. Kaptchuk, and Joseph Henrich. 'Small gods, rituals, and cooperation: The Mentawai water spirit Sikameinan.' Evolution and Human Behavior 42, no. 1 (2021): 61-72."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "afflict_the_stingy",
+        "name": "to strike with illness those who fail to share hunted meat",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Singh, Manvir, Ted J. Kaptchuk, and Joseph Henrich. 'Small gods, rituals, and cooperation: The Mentawai water spirit Sikameinan.' Evolution and Human Behavior 42, no. 1 (2021): 61-72."
+          }
+        ]
+      },
+      {
+        "id": "demand_public_atonement",
+        "name": "to compel offenders to apologize and make restitution through a shaman's rite",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Singh, Manvir, Ted J. Kaptchuk, and Joseph Henrich. 'Small gods, rituals, and cooperation: The Mentawai water spirit Sikameinan.' Evolution and Human Behavior 42, no. 1 (2021): 61-72."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Meinan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Singh, Manvir, Ted J. Kaptchuk, and Joseph Henrich. 'Small gods, rituals, and cooperation: The Mentawai water spirit Sikameinan.' Evolution and Human Behavior 42, no. 1 (2021): 61-72."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Sikameinan is a named female water spirit of southern Siberut who causes illness in those who violate norms of meat-sharing and is appeased through public shamanic healing ceremonies.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Singh, Manvir, Ted J. Kaptchuk, and Joseph Henrich. 'Small gods, rituals, and cooperation: The Mentawai water spirit Sikameinan.' Evolution and Human Behavior 42, no. 1 (2021): 61-72."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Darmanto. 'Eating, sharing, and mutuality of being among the Mentawai on Siberut Island, Indonesia.' Food, Culture & Society 28, no. 3 (2025): 546-572."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sikameinan (from kameinan, 'aunt') is a water-dwelling spirit of the rivers and streams of southern Siberut in the Mentawai Islands. She is invoked in Mentawai moral life as the supernatural enforcer of the community's most important sharing obligation: the distribution of hunted meat, especially the primates and game brought back from the forest. A person who is stingy, or whose household withholds a share, is thought to be 'seized' by Sikameinan and to fall ill; the remedy is a public healing rite in which respected elders and a shaman apologize to the spirit on the patient's behalf and acknowledge the fault. The conspicuously public character of these ceremonies is understood by ethnographers to reinforce onlookers' belief in the spirit and to underline the rule she guards. She is a local, individuated 'small god' rather than one of the four cosmic ruling spirits, and her cult is best documented for the southern river valleys of Siberut."
+  },
+  {
+    "id": "mentawai_pageta_sabbau",
+    "name": {
+      "primary": "Pageta Sabbau, the first shaman",
+      "alt": [
+        "Pagete Sabbau",
+        "Pageta Sabbau",
+        "Teteu"
+      ],
+      "transliterations": {
+        "mentawai": "Pageta Sabbau",
+        "etymology": "Also called Teteu, from Mentawai teteu 'grandfather/ancestor', the honorific under which he is addressed as the earthquake-causing forebear; recorded by Loeb (1929) and Krutak (2012)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Mentawai",
+    "primaryTradition": "Mentawai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Mentawai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Mentawai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Pageta Sabbau, remembered as the first Mentawai shaman, is said to have taught the people shamanic healing and tattooing before being imprisoned beneath the central house-post, whence, as Teteu ('Grandfather'), he shakes the earth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. 'Mentawei Religious Cult.' University of California Publications in American Archaeology and Ethnology 25, no. 2 (1929): 185-247."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "shamanic-healing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kerei",
+          "script": "Latin",
+          "rom": "shaman"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. 'Mentawei Religious Cult.' University of California Publications in American Archaeology and Ethnology 25, no. 2 (1929): 185-247."
+          }
+        ]
+      },
+      {
+        "sphereId": "tattooing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "titi",
+          "script": "Latin",
+          "rom": "tattoo"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Krutak, Lars. 'Titi: Spirit Tattoos of the Mentawai Shaman.' In Spiritual Skin: Magical Tattoos and Scarification. Aschaffenburg: Edition Reuss, 2012."
+          }
+        ]
+      },
+      {
+        "sphereId": "earthquakes",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "teteu",
+          "script": "Latin",
+          "rom": "grandfather/earthquake-bringer"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. 'Mentawei Religious Cult.' University of California Publications in American Archaeology and Ethnology 25, no. 2 (1929): 185-247."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shake_the_earth",
+        "name": "to cause earthquakes from beneath the ground",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. 'Mentawei Religious Cult.' University of California Publications in American Archaeology and Ethnology 25, no. 2 (1929): 185-247."
+          }
+        ]
+      },
+      {
+        "id": "heal_and_mediate_with_spirits",
+        "name": "to heal the sick and commune with spirits as the first shaman",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Spina, Bruno. Mitos dan legenda suku Mentawai. Jakarta: Balai Pustaka, 1981."
+          }
+        ]
+      },
+      {
+        "id": "originate_tattooing",
+        "name": "to have first given the people the art of tattooing",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Krutak, Lars. 'Titi: Spirit Tattoos of the Mentawai Shaman.' In Spiritual Skin: Magical Tattoos and Scarification. Aschaffenburg: Edition Reuss, 2012."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mentawai_titi_tattoo",
+        "name": "Titi (body tattoo)",
+        "kind": "emblem",
+        "role": "The tattooing tradition traced to Pageta Sabbau's original teaching, applied after the punen lepa rite so that spilled blood does not reach the ground and rouse the earthquake-bringer.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Krutak, Lars. 'Titi: Spirit Tattoos of the Mentawai Shaman.' In Spiritual Skin: Magical Tattoos and Scarification. Aschaffenburg: Edition Reuss, 2012."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Teteu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. 'Mentawei Religious Cult.' University of California Publications in American Archaeology and Ethnology 25, no. 2 (1929): 185-247."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Pageta Sabbau, also called Teteu ('Grandfather'), is the mythic first shaman and culture hero who taught the Mentawai shamanism and tattooing and, imprisoned beneath the earth, causes earthquakes.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Loeb, Edwin M. 'Mentawei Religious Cult.' University of California Publications in American Archaeology and Ethnology 25, no. 2 (1929): 185-247."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Spina, Bruno. Mitos dan legenda suku Mentawai. Jakarta: Balai Pustaka, 1981."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Krutak, Lars. 'Titi: Spirit Tattoos of the Mentawai Shaman.' In Spiritual Skin: Magical Tattoos and Scarification. Aschaffenburg: Edition Reuss, 2012."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pageta Sabbau (also Pagete Sabbau) is remembered in Mentawai tradition as the first shaman and the originator of the arts that define Mentawai life, above all shamanic healing and tattooing. In the myth recorded on the Pagai islands and Siberut, his people grew jealous of his magic and resolved to kill him: when they raised their first uma (communal longhouse) they sent him down to dig beneath the central post and then dropped the post onto him, sealing him in the ground. In revenge he threw down the house with an earthquake, and thereafter he is the being who shakes the earth. Because of this he is addressed by the honorific Teteu, 'Grandfather', and the two names are used interchangeably; his name is treated as taboo except in the gravest speech. The connection ties together several threads of Mentawai custom: tattooing was carried out after the punen lepa purification and on a special porch so that blood would not fall to the ground and summon Pageta Sabbau or Teteu, bringing an earthquake. He is thus at once a founding culture hero, the archetype of the sikerei, and the subterranean cause of seismic disaster."
+  }
+]
+```

@@ -1,0 +1,431 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Maleku
+Era (registered, exact): "Maleku traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+The existing corpus already held the three principal Malecu gods (Nharíne Cha Cónhe, Aóre Cha Cónhe, their daughter Jáfara) and the two chief demons (Orónhcafa of the sky, Jára of the earth). Beyond these, the individuated record scholarship documents lies almost entirely on the demonic side: Andrés Solano-Fallas's descriptive inventory of the Malecu demon-pantheon (drawing on Constenla Umaña and Castro's 'Laca Majifijica', 1993) names several further individual maíca, of whom I added the four most clearly attested as single named beings — Pilhinanhque, Cáramurulhca and Lhíca Lhafára (sky demons of the celestial place of torment, wired as subordinates of Orónhcafa) and Cumáserr (a terrestrial demoness under Jára). I deliberately excluded the demonic and divine spirit-CLASSES that carry the plurifier '-maráma' (yóricofa maráma, aúrunanhque maráma, nujteífa maráma, porélecsuífa maráma, tócu maráma, etc.), the unnamed 'son of Jára', and the name Nálhunálhu, which the sources describe inconsistently as a collective rather than an individual; no additional individuated named god survives scrutiny, since the river-headwater divinities are referred to only by locale ('the one of the headwaters of X') and their proper names were traditionally unspeakable.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "maleku_pilhinanhque",
+    "name": {
+      "primary": "Pilhinanhque",
+      "alt": [
+        "Pilhínanhque"
+      ],
+      "transliterations": {
+        "malecu": "Pilhinanhque",
+        "etymology": "The meaning of the name is not recorded in the sources; Solano-Fallas notes it as opaque."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maleku",
+    "primaryTradition": "Maleku",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Maleku traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Maleku traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Malecu oral tradition catalogues Pilhinanhque as an individual male demon of the celestial place of torment charged with punishing those who were murdered and those killed by a falling tree.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "afterlife-punishment",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maíca",
+          "script": "Latin",
+          "rom": "demon"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés (2018). 'Ogros en los malecus: sobre la elección y la responsabilidad en la filosofía antigua malecu.' Revista Humanidades 8(2): 106-135, Universidad de Costa Rica."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "punish_the_dead",
+        "name": "to punish the souls of the murdered and of those crushed by a falling tree",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "maleku_oronhcafa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ],
+        "notes": "Pilhinanhque belongs to the celestial demonic retinue over which Orónhcafa presides as chief demon of the sky."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Pilhinanhque is a named individual male demon of the Malecu celestial place of punishment who torments the murdered and those killed by falling trees.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés (2018). 'Ogros en los malecus: sobre la elección y la responsabilidad en la filosofía antigua malecu.' Revista Humanidades 8(2): 106-135, Universidad de Costa Rica."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pilhinanhque is one of the named individual demons (maíca) of the ancient Malecu (Guatuso) pantheon of Costa Rica. In the Malecu vision of the afterlife there were two places of torment, one celestial and one terrestrial, each dominated by a chief demon; Pilhinanhque dwells in the celestial place under the authority of Orónhcafa, the chief of the sky-demons. He is specifically tasked with punishing the souls of people who died by murder and of those who were killed by falling trees. His name has no recorded meaning."
+  },
+  {
+    "id": "maleku_caramurulhca",
+    "name": {
+      "primary": "Cáramurulhca",
+      "alt": [],
+      "transliterations": {
+        "malecu": "Cáramurulhca",
+        "etymology": "The meaning of the name is not recorded in the sources."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maleku",
+    "primaryTradition": "Maleku",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Maleku traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Maleku traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Malecu oral tradition lists Cáramurulhca among the individual male demons that inhabit the sky within the celestial place of torment.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "afterlife-punishment",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maíca",
+          "script": "Latin",
+          "rom": "demon"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Constenla Umaña, Adolfo; Sánchez Avendaño, Carlos; Fonseca Marín, Raquel (2023). Diccionario malecu-español / español-malecu. Cartago: Editorial Tecnológica de Costa Rica."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "torment_the_dead",
+        "name": "to torment the souls of the dead in the celestial place of punishment",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "maleku_oronhcafa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ],
+        "notes": "As a sky-dwelling demon Cáramurulhca forms part of the celestial demonic retinue headed by Orónhcafa."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Cáramurulhca is a named individual male demon of the Malecu celestial place of punishment.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés (2019). 'Ogros y tarocafárrafas en los malecus: identidad y aliciente moral.' Pensamiento Actual 19(33): 1-14, Universidad de Costa Rica."
+          }
+        ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Cáramurulhca is one of the named individual demons (maíca) enumerated for the ancient Malecu (Guatuso) pantheon. He is described as a male demon inhabiting the sky, i.e. the celestial place of torment presided over by the chief sky-demon Orónhcafa, where the souls of certain classes of the dead are punished. Little further detail about him is preserved beyond his name, sex, and abode."
+  },
+  {
+    "id": "maleku_lhica_lhafara",
+    "name": {
+      "primary": "Lhíca Lhafára",
+      "alt": [
+        "Lica Lafara"
+      ],
+      "transliterations": {
+        "malecu": "Lhíca Lhafára",
+        "etymology": "Glossed by Solano-Fallas as 'Lhafára of the Sábalo Real', associating the demon with a named watercourse or the tarpon (sábalo real)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maleku",
+    "primaryTradition": "Maleku",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Maleku traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Maleku traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Malecu oral tradition lists Lhíca Lhafára among the individual male demons that inhabit the sky within the celestial place of torment.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "afterlife-punishment",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maíca",
+          "script": "Latin",
+          "rom": "demon"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés (2018). 'Ogros en los malecus: sobre la elección y la responsabilidad en la filosofía antigua malecu.' Revista Humanidades 8(2): 106-135, Universidad de Costa Rica."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "torment_the_dead",
+        "name": "to torment the souls of the dead in the celestial place of punishment",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "maleku_oronhcafa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ],
+        "notes": "As a sky-dwelling demon Lhíca Lhafára belongs to the celestial demonic retinue over which Orónhcafa presides."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Lhíca Lhafára is a named individual male demon of the Malecu celestial place of punishment, his name glossed 'Lhafára of the Sábalo Real'.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés (2018). 'Ogros en los malecus: sobre la elección y la responsabilidad en la filosofía antigua malecu.' Revista Humanidades 8(2): 106-135, Universidad de Costa Rica."
+          }
+        ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Lhíca Lhafára is one of the named individual demons (maíca) enumerated for the ancient Malecu (Guatuso) pantheon. He is a male demon of the sky, part of the celestial place of torment presided over by Orónhcafa. His name is glossed as 'Lhafára of the Sábalo Real', tying him to a specific watercourse in the Río Frío basin, in keeping with the strongly water-anchored geography of Malecu religion in which supernatural beings are identified with particular rivers and headwaters."
+  },
+  {
+    "id": "maleku_cumaserr",
+    "name": {
+      "primary": "Cumáserr",
+      "alt": [],
+      "transliterations": {
+        "malecu": "Cumáserr",
+        "etymology": "The meaning of the name is not recorded in the sources."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maleku",
+    "primaryTradition": "Maleku",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Maleku traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Maleku traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Malecu oral tradition lists Cumáserr among the individual female demons of the terrestrial place of torment.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "afterlife-punishment",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maíca",
+          "script": "Latin",
+          "rom": "demon"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Constenla Umaña, Adolfo; Sánchez Avendaño, Carlos; Fonseca Marín, Raquel (2023). Diccionario malecu-español / español-malecu. Cartago: Editorial Tecnológica de Costa Rica."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "torment_the_dead",
+        "name": "to torment the souls of the dead in the terrestrial place of punishment",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "maleku_jara",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          }
+        ],
+        "notes": "As a terrestrial demon Cumáserr belongs to the earthly demonic retinue headed by Jára at the mouth of the Tilhácalí river."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Cumáserr is a named individual female demon of the Malecu terrestrial place of punishment.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés. 'Listado descriptivo de demonios del panteón malecu.' Avance de investigación, Doctorado Interdisciplinario en Estudios Socio-religiosos, Universidad Nacional, Costa Rica."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Solano-Fallas, Andrés (2019). 'Ogros y tarocafárrafas en los malecus: identidad y aliciente moral.' Pensamiento Actual 19(33): 1-14, Universidad de Costa Rica."
+          }
+        ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Cumáserr is one of the named individual demons (maíca) enumerated for the ancient Malecu (Guatuso) pantheon and one of the few identified as female individuals rather than as part of a demoness collective. She belongs to the terrestrial place of torment, located at the mouth of the Tilhácalí river and ruled by the chief demon Jára, where the souls of the dead are punished by fire. Little further detail about her is preserved beyond her name, sex, and abode."
+  }
+]
+```

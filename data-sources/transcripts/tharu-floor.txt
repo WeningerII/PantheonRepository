@@ -1,0 +1,281 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Tharu
+Era (registered, exact): "Tharu traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two genuinely individuated Tharu deities beyond the existing set. Saura is securely attested by Christian McDonaugh's ethnography of the Dangaura Tharu as the named eldest son of the goddess Debi (whose active aspect is the corpus figure Maiya), so I wired him to tharu_maiya as mother and to tharu_gurbaba, beneath whom he sits on the household altar. Daharchandi is the paramount goddess of the maruwa than village shrine in western/Dangaura Tharu practice, documented in Krishna Raj Sarbahari's study of Tharu shamanism and consistent with Rajaure's survey of Dang Tharu than-worship; she stands solitary because her only named kin (Draupadi) lies outside the tradition. I deliberately excluded Narayan, Mahadeo and Parbati (unmodified pan-Hindu borrowings), and left aside further than-list names such as Bagheswori, Kotiya and Kuiya Pani, which are more functional place-guardians and rest on a single source, to avoid padding the register with under-attested or non-individuated entries.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "tharu_saura",
+    "name": {
+      "primary": "Saura",
+      "alt": [
+        "Saurā",
+        "Saur"
+      ],
+      "transliterations": {
+        "tharu": "Saurā",
+        "etymology": "A Tharu theonym of uncertain derivation; documented ethnographically as the personal name of the goddess's eldest son rather than as a common noun."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tharu",
+    "primaryTradition": "Tharu",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "tharu_maiya"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "Tharu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tharu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Dangaura Tharu Pacra song Saura appears as the eldest son of the goddess Debi, accompanying his mother on her journey from the northern mountain of Harikabilas down to her temple at Patan near Tulsipur.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McDonaugh, Christian. \"The Mythology of the Tharu: Aspects of Cultural Identity in Dang.\" Kailash: A Journal of Himalayan Studies 15, no. 3-4 (1989): 191-206."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "household-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "deuhar",
+          "script": "Latin",
+          "rom": "deuhār"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McDonaugh, Christian. \"Spirit, Substance, Vehicle: Kinship and Cosmology among the Dangaura Tharu of Nepal.\" Social Anthropology 8, no. 1 (2000): 23-39."
+          },
+          {
+            "kind": "secondary",
+            "reference": "McDonaugh, Christian. \"The Mythology of the Tharu: Aspects of Cultural Identity in Dang.\" Kailash: A Journal of Himalayan Studies 15, no. 3-4 (1989): 191-206."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "attend_the_goddess",
+        "name": "to accompany the goddess on her journey from the mountains to her temple",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the Pacra recitation Saura travels at his mother's side as she descends from Harikabilas to the central shrine at Patan.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McDonaugh, Christian. \"The Mythology of the Tharu: Aspects of Cultural Identity in Dang.\" Kailash: A Journal of Himalayan Studies 15, no. 3-4 (1989): 191-206."
+          }
+        ]
+      },
+      {
+        "id": "occupy_central_altar",
+        "name": "to sit at the centre of the household altar among the tutelary deities",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "On the domestic shrine Saura is grouped around Maiya, the central figure, beneath the leather effigy of Guru Baba.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McDonaugh, Christian. \"Spirit, Substance, Vehicle: Kinship and Cosmology among the Dangaura Tharu of Nepal.\" Social Anthropology 8, no. 1 (2000): 23-39."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "tharu_gurbaba",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "McDonaugh, Christian. \"Spirit, Substance, Vehicle: Kinship and Cosmology among the Dangaura Tharu of Nepal.\" Social Anthropology 8, no. 1 (2000): 23-39."
+          }
+        ],
+        "notes": "On the Dangaura household altar Saura belongs to the central group presided over by the ancestral figure Guru Baba, whose leather effigy hangs above the shrine."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Saura is the eldest son of the Tharu goddess Debi (Maiya) and one of the tutelary deities of the Dangaura Tharu household and village pantheon.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "McDonaugh, Christian. \"The Mythology of the Tharu: Aspects of Cultural Identity in Dang.\" Kailash: A Journal of Himalayan Studies 15, no. 3-4 (1989): 191-206."
+          },
+          {
+            "kind": "secondary",
+            "reference": "McDonaugh, Christian. \"Spirit, Substance, Vehicle: Kinship and Cosmology among the Dangaura Tharu of Nepal.\" Social Anthropology 8, no. 1 (2000): 23-39."
+          },
+          {
+            "kind": "secondary",
+            "reference": "McDonaugh, Christian. \"The Tharu of Dang: A Study of Social Organisation, Myth and Ritual in West Nepal.\" D.Phil. thesis, University of Oxford, 1984."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Saura is a deity of the Dangaura Tharu of the Dang and Deukhuri valleys of western Nepal, named in the mythology recorded by Christian McDonaugh as the eldest son of the goddess Debi. In the Pacra, the possession-inducing song chanted at the initiation of a guruwa priest, the goddess descends from the northern mountain of Harikabilas to her temple at Patan, understood as the cosmological navel of the Dangaura world, with Saura travelling at her side. On the domestic shrine he is installed among the central group of tutelary deities that gathers around his mother Maiya, an active aspect of Debi, and beneath the flat leather effigy that represents the ancestral figure Guru Baba, forming part of the household divinities that anchor Dangaura social and ritual identity."
+  },
+  {
+    "id": "tharu_daharchandi",
+    "name": {
+      "primary": "Daharchandi",
+      "alt": [
+        "Dahar Chandi",
+        "Daharcaṇḍī",
+        "Ghatchandi"
+      ],
+      "transliterations": {
+        "tharu": "Daharcaṇḍī",
+        "etymology": "The second element -caṇḍī derives from Sanskrit Caṇḍī, a fierce epithet of the goddess Durga; the first element localises the figure within the Tharu village shrine."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tharu",
+    "primaryTradition": "Tharu",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Tharu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Tharu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Among the western and Dangaura Tharu, Daharchandi is enumerated as the foremost of the deities of the maruwa than village shrine, receiving the first offering of incense and an oil lamp when the guruwa priest conducts the communal worship.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarbahari, Krishna Raj. Tharu Ojha ra Mantra Bidhi (Tharu Shamans and Mantra Techniques). Nepali-language ethnographic monograph on Tharu shamanic ritual and the deities of the maruwa than."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "village-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "maruwa than",
+          "script": "Latin",
+          "rom": "maruwā than"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarbahari, Krishna Raj. Tharu Ojha ra Mantra Bidhi (Tharu Shamans and Mantra Techniques). Nepali-language ethnographic monograph on Tharu shamanic ritual and the deities of the maruwa than."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rajaure, Drone P. \"Tharus of Dang: Tharu Religion.\" Kailash: A Journal of Himalayan Studies 9, no. 1 (1981): 61-96."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shield_village_from_calamity",
+        "name": "to shield the village from epidemics and natural calamities",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the most powerful of the than deities she is invoked by the guruwa to keep the settlement whole against disease and disaster.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarbahari, Krishna Raj. Tharu Ojha ra Mantra Bidhi (Tharu Shamans and Mantra Techniques). Nepali-language ethnographic monograph on Tharu shamanic ritual and the deities of the maruwa than."
+          }
+        ]
+      },
+      {
+        "id": "receive_first_offerings",
+        "name": "to receive the first offerings of incense and lamplight at the village shrine",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Worship at the than commences with incense and an oil lamp offered to Daharchandi before the other deities, and alcohol is presented to her once all have been honoured.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarbahari, Krishna Raj. Tharu Ojha ra Mantra Bidhi (Tharu Shamans and Mantra Techniques). Nepali-language ethnographic monograph on Tharu shamanic ritual and the deities of the maruwa than."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tharu_daharchandi_batti",
+        "name": "oil lamp and incense",
+        "kind": "offering",
+        "role": "The lighting of an oil lamp and incense before Daharchandi opens the collective worship of the twenty-two deities of the maruwa than.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarbahari, Krishna Raj. Tharu Ojha ra Mantra Bidhi (Tharu Shamans and Mantra Techniques). Nepali-language ethnographic monograph on Tharu shamanic ritual and the deities of the maruwa than."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Daharchandi is the paramount goddess of the maruwa than village shrine among the western and Dangaura Tharu, first among the deities worshipped there and held to be a sister of Draupadi.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sarbahari, Krishna Raj. Tharu Ojha ra Mantra Bidhi (Tharu Shamans and Mantra Techniques). Nepali-language ethnographic monograph on Tharu shamanic ritual and the deities of the maruwa than."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rajaure, Drone P. \"Tharus of Dang: Tharu Religion.\" Kailash: A Journal of Himalayan Studies 9, no. 1 (1981): 61-96."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Daharchandi is the most powerful of the deities gathered at the maruwa than, the communal village shrine of the western and Dangaura Tharu, where the guruwa priest holds mass worship to keep the settlement intact against epidemics, disasters and crop failure. Documented in Krishna Raj Sarbahari's study of Tharu shamanism among the twenty-two gods and goddesses of the than, she is honoured before all others: worship opens with incense and an oil lamp set before her, and alcohol is offered to her once the whole pantheon has been worshipped. Tradition holds that Daharchandi and the Mahabharata heroine Draupadi are sisters, and the than assembly over which she presides also includes the five Pandavas and three Jagannathia brothers, reflecting the syncretic blend of indigenous and epic Hindu figures characteristic of Tharu religion."
+  }
+]
+```

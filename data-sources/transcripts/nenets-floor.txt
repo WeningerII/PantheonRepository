@@ -1,0 +1,714 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Nenets
+Era (registered, exact): "mythic / cosmic", "mythic / first-times", "mythic / perennial cult"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five well-attested, individuated Nenets figures beyond the existing set: Ilebyam'pertya (guardian of reindeer and game, deified benefactor to whom Num delegated authority), Yavmal (deity of the southern sky, sea's edge and winds, servant of Num and forefather of water-spirits), Pe-mal Khada (the 'Old Woman of the mountain's edge,' goddess of the Polar Urals), and the divine couple of Vaygach Island — Vesako (the 'Old Man,' a many-headed male idol-deity at the south) and Hadako (the 'Old Woman' at the north). Ilebyam'pertya and Yavmal are wired to the existing Num as subordinate deities per the sources; Vesako and Hadako are joined as a reciprocal spouse pair; Pe-mal Khada stands alone as attested. Each rests on real scholarship (Kharyuchi's Sibirica 2018 pantheon survey, Golovnev and Osherenko's Siberian Survival 1999, Khomich's Nentsy 1995, Lehtisalo's Jurak mythology 1924, Vallikivi's JEF study of the Vaygach idols 2011, and the 1855 Veniamin account). I deliberately excluded the mythic wind-eagle Minlei (a named creature rather than an individuated cult figure with firm scholarly citation) and the pan-Siberian 'White Old Man' Ser-Ne Iriko (likely a borrowing), preferring correctness over quantity.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "nenets_ilebyam_pertya",
+    "name": {
+      "primary": "Guardian of the Herds (Ilebyam'pertya)",
+      "alt": [
+        "Ilebyambertya",
+        "Ilebyam'pertya",
+        "Ilibembertya",
+        "Ilebyampertya"
+      ],
+      "transliterations": {
+        "nenets": "Илебям'пэртя",
+        "etymology": "From Nenets ilebts 'wild reindeer, livelihood, life' + pertya 'the one who tends/does', i.e. 'keeper of the living/game' (Khomich 1995)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / perennial cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic / first-times",
+        "eraOrdering": 0,
+        "startEvent": "In Nenets legend Ilebyam'pertya lived as a man who performed many good deeds before his elevation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrei V. Golovnev and Gail Osherenko, Siberian Survival: The Nenets and Their Story (Ithaca: Cornell University Press, 1999)."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic / perennial cult",
+        "eraOrdering": 1,
+        "startEvent": "The sky-god Num granted him the right to bestow domestic reindeer and game upon people and to watch over reindeer breeding.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ludmila V. Khomich, Nentsy: Ocherki traditsionnoi kul'tury (St. Petersburg: Russkii Dvor, 1995)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "reindeer-husbandry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "илебц",
+          "script": "Cyrillic",
+          "rom": "ilebts (wild reindeer / livelihood)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ludmila V. Khomich, Nentsy: Ocherki traditsionnoi kul'tury (St. Petersburg: Russkii Dvor, 1995)."
+          }
+        ]
+      },
+      {
+        "sphereId": "hunting-and-game",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_reindeer_and_game",
+        "name": "to grant domestic reindeer and wild game to herders and hunters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Andrei V. Golovnev and Gail Osherenko, Siberian Survival: The Nenets and Their Story (Ithaca: Cornell University Press, 1999)."
+          }
+        ]
+      },
+      {
+        "id": "protect_the_herds",
+        "name": "to protect and increase the reindeer herds",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ludmila V. Khomich, Nentsy: Ocherki traditsionnoi kul'tury (St. Petersburg: Russkii Dvor, 1995)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "nenets_num",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ludmila V. Khomich, Nentsy: Ocherki traditsionnoi kul'tury (St. Petersburg: Russkii Dvor, 1995)."
+          }
+        ],
+        "notes": "The supreme sky-god Num delegated to him the office of dispensing reindeer and game, so he acts within Num's authority."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ilebyam'pertya is the Nenets guardian deity of reindeer and game, a deified benefactor to whom the sky-god Num entrusted the granting of livestock and hunting fortune.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andrei V. Golovnev and Gail Osherenko, Siberian Survival: The Nenets and Their Story (Ithaca: Cornell University Press, 1999)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ludmila V. Khomich, Nentsy: Ocherki traditsionnoi kul'tury (St. Petersburg: Russkii Dvor, 1995)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ilebyam'pertya, 'the keeper of the living,' is the Nenets patron of domestic reindeer and master of wild game. Ethnographic tradition holds that he was once a man who did much good, whereupon the creator Num raised him among the celestial beings and gave him the power to bestow reindeer and game on people and to safeguard their herds. Herders appealed to him for the fertility and survival of their animals, the very foundation of tundra life."
+  },
+  {
+    "id": "nenets_yavmal",
+    "name": {
+      "primary": "God of the Sea's End (Yavmal)",
+      "alt": [
+        "Yavmal-hehe",
+        "Yavmal-khese",
+        "Yav-mal",
+        "Yamal-hehe"
+      ],
+      "transliterations": {
+        "nenets": "Явмал хэхэ",
+        "etymology": "From Nenets yav 'sea' + mal 'end, edge', i.e. 'end of the sea'; hehe/khese 'deity, spirit' (Kharyuchi 2018)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / cosmic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / cosmic",
+        "eraOrdering": 0,
+        "startEvent": "Yavmal presides over the southern sky and the winds at the edge of the sea, reckoned the progenitor of the spirits of waters, rivers and the sea.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea-and-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "яв",
+          "script": "Cyrillic",
+          "rom": "yav (sea)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Toivo Lehtisalo, Entwurf einer Mythologie der Jurak-Samojeden, Mémoires de la Société Finno-Ougrienne 53 (Helsinki, 1924)."
+          }
+        ]
+      },
+      {
+        "sphereId": "wind-and-southern-sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "мерця",
+          "script": "Cyrillic",
+          "rom": "mertsya (wind)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_sea_winds",
+        "name": "to command the winds of the sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Toivo Lehtisalo, Entwurf einer Mythologie der Jurak-Samojeden, Mémoires de la Société Finno-Ougrienne 53 (Helsinki, 1924)."
+          }
+        ]
+      },
+      {
+        "id": "govern_southern_sky",
+        "name": "to govern the southern sky",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Явмал хэхэ",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "nenets_num",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Toivo Lehtisalo, Entwurf einer Mythologie der Jurak-Samojeden, Mémoires de la Société Finno-Ougrienne 53 (Helsinki, 1924)."
+          }
+        ],
+        "notes": "In one tradition Yavmal is a shaman who ascended to the heavens and remained there to serve the creator Num, and he acts under Num's sky-sovereignty."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Yavmal is the Nenets deity of the southern sky and of the sea's edge and its winds, reckoned the ancestor of all water-spirits and a servant of Num.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Toivo Lehtisalo, Entwurf einer Mythologie der Jurak-Samojeden, Mémoires de la Société Finno-Ougrienne 53 (Helsinki, 1924)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ludmila V. Khomich, Nentsy: Ocherki traditsionnoi kul'tury (St. Petersburg: Russkii Dvor, 1995)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Yavmal, 'the end of the sea,' is a Nenets deity associated with the southern sky, the wind and the waters at the world's coastal edge. He is regarded as the forefather of the spirits of rivers, lakes and the sea, whose breath animates the visible world. A parallel legend makes him a great shaman who rose into the heavens and stayed to serve the creator Num. His name is preserved in the geography of the Yamal Peninsula, literally 'the end of the land.'"
+  },
+  {
+    "id": "nenets_pe_mal_khada",
+    "name": {
+      "primary": "Old Woman of the Mountain's Edge (Pe-mal Khada)",
+      "alt": [
+        "Pe-Mal Khada",
+        "Paemal Khada",
+        "Pe Mal Hada",
+        "Pe-mal hada"
+      ],
+      "transliterations": {
+        "nenets": "Пэ мал хада",
+        "etymology": "From Nenets pe 'stone, mountain' + mal 'end, edge' + khada 'old woman, grandmother', i.e. 'grandmother of the edge of the mountains' (Kharyuchi 2018)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / perennial cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / first-times",
+        "eraOrdering": 0,
+        "startEvent": "Pe-mal Khada travelled from the southern forest boundary to the northern end of the Ural ridge, where her sanctuary arose.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic / perennial cult",
+        "eraOrdering": 1,
+        "startEvent": "Her sacred mountain in the Polar Urals became a principal object of Nenets pilgrimage and sacrifice.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ludmila V. Khomich, Nentsy: Ocherki traditsionnoi kul'tury (St. Petersburg: Russkii Dvor, 1995)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mountains-and-passes",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "пэ",
+          "script": "Cyrillic",
+          "rom": "pe (stone, mountain)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_mountain_passes",
+        "name": "to guard the passes and edges of the Ural mountains",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Pe-mal Khada is the Nenets 'Old Woman of the mountain's edge,' the tutelary goddess of the northern Ural ridge whose sacred mountain is a chief pilgrimage site.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ludmila V. Khomich, Nentsy: Ocherki traditsionnoi kul'tury (St. Petersburg: Russkii Dvor, 1995)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Andrei V. Golovnev and Gail Osherenko, Siberian Survival: The Nenets and Their Story (Ithaca: Cornell University Press, 1999)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pe-mal Khada, the 'Old Woman of the edge of the mountains,' is a Nenets goddess who watches over the northern end of the Ural range. Legend tells that she journeyed from the southern forest boundary to the northernmost reach of the ridge, where her sanctuary appeared; her migration mirrors the historical path of the Nenets from the forest to the far tundra. Her sacred mountain remains a foremost place of sacrifice and pilgrimage in the Polar Urals."
+  },
+  {
+    "id": "nenets_vesako",
+    "name": {
+      "primary": "The Old Man of Vaygach (Vesako)",
+      "alt": [
+        "Vesako",
+        "Vesoko",
+        "Ves",
+        "Wesako"
+      ],
+      "transliterations": {
+        "nenets": "Весако",
+        "etymology": "Nenets vesako 'old man', the honorific name of the chief male idol of Vaygach (Vallikivi 2011)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / perennial cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / perennial cult",
+        "eraOrdering": 0,
+        "startEvent": "Vesako was venerated as the principal male deity at the southern end of Vaygach Island, embodied in a many-headed wooden idol amid hundreds of offering-figures.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Laur Vallikivi, 'What Does Matter? Idols and Icons in the Nenets Tundra,' Journal of Ethnology and Folkloristics 5, no. 1 (2011): 75-95."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-site-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "хэхэ",
+          "script": "Cyrillic",
+          "rom": "khekhe (idol, deity)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Laur Vallikivi, 'What Does Matter? Idols and Icons in the Nenets Tundra,' Journal of Ethnology and Folkloristics 5, no. 1 (2011): 75-95."
+          }
+        ]
+      },
+      {
+        "sphereId": "hunting-fortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_hunting_success",
+        "name": "to grant success to hunters and sea-mammal takers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Laur Vallikivi, 'What Does Matter? Idols and Icons in the Nenets Tundra,' Journal of Ethnology and Folkloristics 5, no. 1 (2011): 75-95."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nenets_vesako_idol",
+        "name": "The seven-headed wooden idol of Vaygach",
+        "kind": "idol",
+        "role": "The trihedral wooden effigy at the southern cape of Vaygach in which Vesako was embodied, surrounded by ranks of offering-idols",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Archimandrite Veniamin, 'Samoedy mezenskie,' Vestnik Imperatorskogo Russkogo Geograficheskogo Obshchestva (St. Petersburg, 1855)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Весако",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Laur Vallikivi, 'What Does Matter? Idols and Icons in the Nenets Tundra,' Journal of Ethnology and Folkloristics 5, no. 1 (2011): 75-95."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "nenets_hadako",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Archimandrite Veniamin, 'Samoedy mezenskie,' Vestnik Imperatorskogo Russkogo Geograficheskogo Obshchestva (St. Petersburg, 1855)."
+          }
+        ],
+        "notes": "Vesako, the male 'Old Man' at the south of Vaygach, forms a divine couple with Hadako, the female 'Old Woman' at the north of the island."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Vesako, the 'Old Man,' is the chief male deity of Vaygach Island, the Nenets religious center, embodied in a great many-headed wooden idol at the island's southern cape.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Laur Vallikivi, 'What Does Matter? Idols and Icons in the Nenets Tundra,' Journal of Ethnology and Folkloristics 5, no. 1 (2011): 75-95."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Archimandrite Veniamin, 'Samoedy mezenskie,' Vestnik Imperatorskogo Russkogo Geograficheskogo Obshchestva (St. Petersburg, 1855)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Vesako, 'the Old Man,' is the foremost male deity of Vaygach Island (Hebidya Ya, 'the sacred land'), the pan-Nenets sanctuary at the edge of the earth. His seat was a tall, trihedral, many-faced wooden idol at the southern cape, ringed by hundreds of smaller offering-figures. Missionary and ethnographic accounts from 1855 onward record him as patron of hunters and sea-mammal takers, paired with the female deity Hadako at the northern end of the island."
+  },
+  {
+    "id": "nenets_hadako",
+    "name": {
+      "primary": "The Old Woman of Vaygach (Hadako)",
+      "alt": [
+        "Hadako",
+        "Khadako",
+        "Hadeye",
+        "Hadako-khada"
+      ],
+      "transliterations": {
+        "nenets": "Хадако",
+        "etymology": "Nenets khada 'old woman, grandmother' with diminutive/honorific -ko, the name of the chief female idol of Vaygach (Vallikivi 2011)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / perennial cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic / perennial cult",
+        "eraOrdering": 0,
+        "startEvent": "Hadako was venerated as the principal female deity at the northern end of Vaygach Island, counterpart to Vesako in the south.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Archimandrite Veniamin, 'Samoedy mezenskie,' Vestnik Imperatorskogo Russkogo Geograficheskogo Obshchestva (St. Petersburg, 1855)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-site-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "хада",
+          "script": "Cyrillic",
+          "rom": "khada (old woman)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Laur Vallikivi, 'What Does Matter? Idols and Icons in the Nenets Tundra,' Journal of Ethnology and Folkloristics 5, no. 1 (2011): 75-95."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "watch_over_northern_sanctuary",
+        "name": "to watch over the northern reaches of the sacred island",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Archimandrite Veniamin, 'Samoedy mezenskie,' Vestnik Imperatorskogo Russkogo Geograficheskogo Obshchestva (St. Petersburg, 1855)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nenets_hadako_idol",
+        "name": "The female idol at the north of Vaygach",
+        "kind": "idol",
+        "role": "The wooden effigy at the northern end of Vaygach Island in which Hadako was embodied and received sacrifice",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Archimandrite Veniamin, 'Samoedy mezenskie,' Vestnik Imperatorskogo Russkogo Geograficheskogo Obshchestva (St. Petersburg, 1855)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "nenets_vesako",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Archimandrite Veniamin, 'Samoedy mezenskie,' Vestnik Imperatorskogo Russkogo Geograficheskogo Obshchestva (St. Petersburg, 1855)."
+          }
+        ],
+        "notes": "Hadako, the female 'Old Woman' at the north of Vaygach, forms a divine couple with Vesako, the male 'Old Man' at the south of the island."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hadako, the 'Old Woman,' is the chief female deity of Vaygach Island, embodied in a wooden idol at the island's northern end and paired with Vesako.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Archimandrite Veniamin, 'Samoedy mezenskie,' Vestnik Imperatorskogo Russkogo Geograficheskogo Obshchestva (St. Petersburg, 1855)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Laur Vallikivi, 'What Does Matter? Idols and Icons in the Nenets Tundra,' Journal of Ethnology and Folkloristics 5, no. 1 (2011): 75-95."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Galina P. Kharyuchi, 'Sacred Places in the Nenets Traditional Culture,' Sibirica 17, no. 3 (2018): 155-171."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hadako, 'the Old Woman,' is the foremost female deity of Vaygach Island, revered at the island's northern end as the consort and counterpart of Vesako in the south. Together the two 'ancestral' idols anchored the pan-Nenets sanctuary at the world's edge, and both received offerings of reindeer and other goods. Her cult is documented from the 1855 account of Archimandrite Veniamin and in modern ethnographies of the Vaygach shrines."
+  }
+]
+```

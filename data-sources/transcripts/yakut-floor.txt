@@ -1,0 +1,707 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Yakut
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five well-attested, individuated Yakut figures absent from the corpus: Kün Dzhösögöi Toyon (horse-and-cattle god of the Ysyakh festival), Kydai Bakhsy (the primordial lower-world blacksmith who also reforges shamans), Baai Baianai (spirit-master of the taiga and patron of the hunt), Aan Alakhchyn Khotun (earth-goddess of the world tree Aal Luuk Mas), and Ilbis Khaan (spirit-lord of bloodshed and battle-frenzy). Each is documented across classic ethnographies and folklore scholarship (Holmberg/Harva 1927, Sieroszewski 1896, Jochelson 1933, Ksenofontov, Alekseev 1975, Emelyanov 1980) rather than being a spirit-class. Where sources support it I wired them into the existing pantheon — Dzhösögöi as a bright aiyy under Ürüng Aiyy Toyon, and Ilbis among the fierce spirits under Uluu Toyon — while the smith-, hunt-, and earth-deities stand solitary because attestation gives them no firm kinship. I stopped at five rather than padding with vaguer names (e.g. an unindividuated fire-spirit or thunder figure) whose attestation as discrete named individuals is weaker.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "yakut_dzhesegei",
+    "name": {
+      "primary": "Kün Dzhösögöi Toyon",
+      "alt": [
+        "Dzhesegei",
+        "Djesegei Aiyy",
+        "Dzhösögöi Aiyy",
+        "Kün Djesegey Toyon",
+        "Cohogoy Toyon"
+      ],
+      "transliterations": {
+        "sah": "Күн Дьөһөгөй Тойон",
+        "etymology": "Dьöhögöй, a name traditionally connected with the neigh of a stallion; Kün 'sun' and Toyon 'lord', hence 'Sun-Dzhösögöi Lord', the celestial patron of horses."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yakut",
+    "primaryTradition": "Yakut",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Dwelling among the bright aiyy of the eastern sky, Dzhösögöi Toyon was established as the heavenly source and protector of horses and horned cattle for the Sakha.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology (The Mythology of All Races, vol. IV), Boston: Marshall Jones, 1927."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "horses-and-livestock",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "сылгы",
+          "script": "Cyrillic",
+          "rom": "sylgy"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v. [Traditional Religious Beliefs of the Yakuts], Novosibirsk: Nauka, 1975."
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility-and-abundance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "иһиэх",
+          "script": "Cyrillic",
+          "rom": "ysyakh"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology (The Mythology of All Races, vol. IV), Boston: Marshall Jones, 1927."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_horses_and_cattle",
+        "name": "to grant and multiply horses and cattle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Believed to send the kut (life-soul) of foals and colts down to the herds of worshippers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yakut_choron_cup",
+        "name": "Choron",
+        "kind": "regalia",
+        "role": "Tall ceremonial kumys cup from which the first libation of fermented mare's milk is offered to Dzhösögöi at the Ysyakh festival.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Waldemar Jochelson, The Yakut (Anthropological Papers of the American Museum of Natural History, vol. 33, part 2), New York, 1933."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Күн Дьөһөгөй Айыы",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho [Plots of Yakut Olonkho], Moscow: Nauka, 1980."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "yakut_uruung_aiyy_toyon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology (The Mythology of All Races, vol. IV), Boston: Marshall Jones, 1927."
+          }
+        ],
+        "notes": "Numbered among the bright aiyy of the upper world who serve the supreme White Creator Lord; some olonkho count Dzhösögöi as an offspring or emanation of the highest sky deity."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kün Dzhösögöi Toyon is the celestial Yakut deity who creates, gives, and protects horses (and horned cattle), honoured above all at the summer Ysyakh kumys festival.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology (The Mythology of All Races, vol. IV), Boston: Marshall Jones, 1927."
+          },
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Kün Dzhösögöi Toyon is the horse-god of the Sakha (Yakut), a bright aiyy of the eastern or south-eastern sky regarded as the heavenly origin and guardian of horses and, by extension, of horned cattle. Because the horse was central to Yakut pastoral life, Dzhösögöi held a paramount place in ritual: the great summer festival of Ysyakh, celebrating renewal and abundance, opened with libations of kumys (fermented mare's milk) addressed to him, and his presence was invoked in horse races and blessings over the herds. He is portrayed as a stallion-lord whose whinny scatters the souls of foals to the earth, and worshippers prayed to him for the increase and health of their livestock."
+  },
+  {
+    "id": "yakut_kydai_bakhsy",
+    "name": {
+      "primary": "Kydai Bakhsy",
+      "alt": [
+        "Kydai Bakhsy Toyon",
+        "Kytai Bakhsy",
+        "K'daai Maqsin",
+        "Kydai Maqsyn"
+      ],
+      "transliterations": {
+        "sah": "Кыдай Бахсы",
+        "etymology": "Personal name Kydai/Kytai with Bakhsy 'master, teacher' (from Mongolic bagshi), i.e. 'Master Kydai', the archetypal smith."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yakut",
+    "primaryTradition": "Yakut",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Seated at his forge in the lower world, Kydai Bakhsy became the primordial blacksmith who forged the first iron and set the pattern for all human smiths.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gavriil V. Ksenofontov, Shamanizm. Izbrannye trudy [Shamanism: Selected Works], Yakutsk, 1992 (orig. 1928)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "smithing-and-metalwork",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "тимир",
+          "script": "Cyrillic",
+          "rom": "timir"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "I. Kornilov, Obryad posvyashcheniya kuznetsa i Kytai-Bakhsy [The Rite of a Blacksmith's Initiation and Kytai-Bakhsy], 1910."
+          }
+        ]
+      },
+      {
+        "sphereId": "shamanic-initiation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ойуун",
+          "script": "Cyrillic",
+          "rom": "oyuun"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gavriil V. Ksenofontov, Shamanizm. Izbrannye trudy, Yakutsk, 1992 (orig. 1928)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "forge_iron_and_tools",
+        "name": "to forge iron weapons and tools",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The mythic first smith from whom all human blacksmiths derive their craft and protective power.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "I. Kornilov, Obryad posvyashcheniya kuznetsa i Kytai-Bakhsy, 1910."
+          }
+        ]
+      },
+      {
+        "id": "temper_the_shaman",
+        "name": "to reforge and temper the body of a shaman",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In initiation lore the smith-deity dismembers and re-forges the candidate shaman, hardening him for his calling.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gavriil V. Ksenofontov, Shamanizm. Izbrannye trudy, Yakutsk, 1992 (orig. 1928)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yakut_smith_anvil",
+        "name": "Anvil and hammer",
+        "kind": "emblem",
+        "role": "The forge, anvil, and hammer are the emblems of Kydai Bakhsy and the source of the smith's ritual power, held equal or superior to the shaman's drum.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Waldemar Jochelson, The Yakut (Anthropological Papers of the American Museum of Natural History, vol. 33, part 2), New York, 1933."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kydai Bakhsy is the primordial blacksmith deity of the Yakut lower world, patron of smiths whose forge tempers weapons and, in initiation lore, the very bodies of shamans.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gavriil V. Ksenofontov, Shamanizm. Izbrannye trudy [Shamanism: Selected Works], Yakutsk, 1992 (orig. 1928)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Uno Holmberg (Harva), Finno-Ugric, Siberian Mythology (The Mythology of All Races, vol. IV), Boston: Marshall Jones, 1927."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kydai Bakhsy (also K'daai Maqsin) is the divine blacksmith of Yakut belief, imagined as dwelling at a forge in the lower world and reckoned the first and greatest of smiths. He combines the roles of miner, smelter, charcoal-burner, and blacksmith, and human smiths trace their protective and quasi-sacred authority to him — Yakut tradition held that a smith of the ninth generation was as powerful as a shaman. In shamanic initiation narratives the smith-deity is the being who reforges the future shaman, cutting apart and re-tempering the body to fit it for its ordeals, which links the crafts of iron and of the spirit in a single mythic figure."
+  },
+  {
+    "id": "yakut_baai_baianai",
+    "name": {
+      "primary": "Baai Baianai",
+      "alt": [
+        "Bai Baianai",
+        "Baianai",
+        "Baai Baryllaakh",
+        "Bayanay"
+      ],
+      "transliterations": {
+        "sah": "Баай Байанай",
+        "etymology": "From baai 'rich, wealthy, abundant', hence 'the Rich One', reflecting the game and fortune he bestows on hunters."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yakut",
+    "primaryTradition": "Yakut",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Established as master of the taiga, Baai Baianai took charge of the beasts of forest and water and of the fortune of those who hunt and fish.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wacław Sieroszewski, Yakuty: Opyt etnograficheskogo issledovaniya [The Yakut: An Experiment in Ethnographic Research], St. Petersburg, 1896."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hunting-and-forest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "тыа",
+          "script": "Cyrillic",
+          "rom": "tya"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Waldemar Jochelson, The Yakut (Anthropological Papers of the American Museum of Natural History, vol. 33, part 2), New York, 1933."
+          }
+        ]
+      },
+      {
+        "sphereId": "wild-game-and-luck",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "кыыл",
+          "script": "Cyrillic",
+          "rom": "kyyl"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wacław Sieroszewski, Yakuty: Opyt etnograficheskogo issledovaniya, St. Petersburg, 1896."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_hunting_fortune",
+        "name": "to grant or withhold success in the hunt",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Hunters kindled fires and prayed to Baianai for a safe, fruitful hunt; boasting or offending him brought failure.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Waldemar Jochelson, The Yakut (Anthropological Papers of the American Museum of Natural History, vol. 33, part 2), New York, 1933."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yakut_hunter_hearth",
+        "name": "Hunter's hearth-fire",
+        "kind": "emblem",
+        "role": "The campfire before which hunters feed morsels of food and address prayers and offerings to Baai Baianai for good fortune.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wacław Sieroszewski, Yakuty: Opyt etnograficheskogo issledovaniya, St. Petersburg, 1896."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Баай Барыллаах",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Baai Baianai is the Yakut spirit-master of the taiga, patron of hunters and fishermen who dispenses game and the luck of the chase.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Wacław Sieroszewski, Yakuty: Opyt etnograficheskogo issledovaniya [The Yakut: An Experiment in Ethnographic Research], St. Petersburg, 1896."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Waldemar Jochelson, The Yakut (Anthropological Papers of the American Museum of Natural History, vol. 33, part 2), New York, 1933."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Baai Baianai is the Yakut lord of the forest and its animals and the patron of the hunt, whose name ('the Rich One') marks him as a giver of abundance. Hunters and fishermen sought his favour through fire offerings, prayers, and taboos, believing that success in the taiga depended entirely on his goodwill; immodesty, cruelty, or breaking the customary courtesies of the hunt would cause him to drive the game away. Later tradition speaks of several Baianais dividing the spheres of hunting, forest, and fishing, but the central figure is the male master-spirit Baai Baianai himself, whose worship long outlasted the conversion of the Yakut to Christianity."
+  },
+  {
+    "id": "yakut_aan_alakhchyn",
+    "name": {
+      "primary": "Aan Alakhchyn Khotun",
+      "alt": [
+        "Aan Alahchyn Khotun",
+        "Aan Alakhchyn",
+        "An Alakhchyn Khotun",
+        "Aan Darkhan Khotun"
+      ],
+      "transliterations": {
+        "sah": "Аан Алахчын Хотун",
+        "etymology": "Aan 'primordial, first', with Khotun 'lady, mistress', hence 'the Primordial Lady', mistress-spirit of the earth."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yakut",
+    "primaryTradition": "Yakut",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "From the first she inhabited the trunk of the world tree Aal Luuk Mas, becoming the indwelling mistress-spirit of the earth and its growth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho [Plots of Yakut Olonkho], Moscow: Nauka, 1980."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-and-soil",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "сир",
+          "script": "Cyrillic",
+          "rom": "sir"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ]
+      },
+      {
+        "sphereId": "vegetation-and-growth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Аал Луук Мас",
+          "script": "Cyrillic",
+          "rom": "Aal Luuk Mas"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho, Moscow: Nauka, 1980."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "nourish_and_protect_land",
+        "name": "to nourish and protect the land and its people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In olonkho she emerges from the world tree to bless and restore the hero, the milk of her breast healing and strengthening him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho, Moscow: Nauka, 1980."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yakut_aal_luuk_mas",
+        "name": "Aal Luuk Mas (world tree)",
+        "kind": "emblem",
+        "role": "The great sacred tree of the middle world in whose trunk Aan Alakhchyn Khotun resides and through which she is honoured.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho, Moscow: Nauka, 1980."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Аан Алахчын Хотун",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Aan Alakhchyn Khotun is the Yakut earth-goddess and mistress-spirit of the world tree Aal Luuk Mas, protector of the land, its growth, and the epic hero.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho [Plots of Yakut Olonkho], Moscow: Nauka, 1980."
+          },
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Aan Alakhchyn Khotun ('the Primordial Lady') is the earth-goddess of the Yakut, the indwelling spirit-mistress of the soil and of the cosmic world tree Aal Luuk Mas that stands at the centre of the middle world. In the olonkho epics she appears from the trunk of the tree as a maternal, protective figure who blesses the land and its people and who aids the hero, the milk of her breast restoring his strength. As host-spirit (ichchi) of the earth she is invoked in wedding and household ceremonial poetry (algys), embodying fertility, stability, and the abiding life of the land."
+  },
+  {
+    "id": "yakut_ilbis",
+    "name": {
+      "primary": "Ilbis Khaan",
+      "alt": [
+        "Ilbis",
+        "Ilbis Khan",
+        "Ilbis Kyyha (daughter of Ilbis)"
+      ],
+      "transliterations": {
+        "sah": "Илбис Хаан",
+        "etymology": "Ilbis 'bloodthirst, battle-frenzy, incitement to slaughter', with Khaan 'khan, lord', hence 'Lord of Bloodshed'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yakut",
+    "primaryTradition": "Yakut",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Ranged among the fierce upper spirits, Ilbis Khaan came to preside over slaughter and battle-madness, hovering over the field of combat.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho [Plots of Yakut Olonkho], Moscow: Nauka, 1980."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-and-bloodshed",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "илбис",
+          "script": "Cyrillic",
+          "rom": "ilbis"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ]
+      },
+      {
+        "sphereId": "battle-frenzy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "өһөл",
+          "script": "Cyrillic",
+          "rom": "ohol"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho, Moscow: Nauka, 1980."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "incite_battle_frenzy",
+        "name": "to rouse warriors to bloodlust and slaughter",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Ilbis and his kin scream and howl above the fighting, driving warriors into a killing frenzy.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho, Moscow: Nauka, 1980."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Илбис Хаан",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "yakut_uluu_toyon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ],
+        "notes": "Counted among the fierce and warlike upper spirits headed by Uluu Toyon, the terrible lord who patronizes warriors and violent forces."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ilbis Khaan is the Yakut spirit-lord of war, slaughter, and battle-frenzy in the olonkho epics, presiding over the field of combat together with his kin (the daughter of Ilbis and son of Osol).",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "N. V. Emelyanov, Syuzhety yakutskikh olonkho [Plots of Yakut Olonkho], Moscow: Nauka, 1980."
+          },
+          {
+            "kind": "secondary",
+            "reference": "N. A. Alekseev, Traditsionnye religioznye verovaniya yakutov v XIX – nachale XX v., Novosibirsk: Nauka, 1975."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ilbis Khaan is the Yakut personification of bloodshed and the frenzy of battle, a fierce being of the upper world named repeatedly in the olonkho epics. Ilbis and his companion Osol are spirits of strife and hostility who oversee the field of battle, screaming and howling as they incite warriors to slaughter; the tradition most often speaks of their children — the daughter of Ilbis and the son of Osol — who are said to perch upon spearheads and arrowheads and to haunt the 'laughing abysses' of the epic world. As embodiments of war-madness they belong among the terrible, violent powers grouped under Uluu Toyon, standing opposite the peaceable, life-giving aiyy."
+  }
+]
+```

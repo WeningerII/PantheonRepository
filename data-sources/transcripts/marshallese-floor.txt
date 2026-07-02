@@ -1,0 +1,661 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Marshallese
+Era (registered, exact): "mythic-age"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added four individuated figures that scholarship documents beyond the existing set. Three form the well-attested star-race charter myth: Lōktañūr (Capella), the culture-heroine who invents the sail; her youngest son Jebro (the Pleiades), who wins the founding canoe race to become the model paramount chief; and her eldest son Tūmur (Antares), the greedy rival who loses, each recorded by Erdland (1914), Tobin (2002), Genz (2018) and others and wired to one another by parentage and sibling/rival relations. The fourth, Jemeliwut, is the named brother-companion of the existing trickster Letao and son of the existing figure Wullep, attested in Downing & Spennemann (1992) and Kelin (2003) and wired in via parentage to marshallese_wulleb. I deliberately excluded the remaining, non-individuated star-sons of Lōktañūr, who survive only as star identifications without distinct personhood, to avoid padding.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "marshallese_loktanur",
+    "name": {
+      "primary": "Lōktañūr",
+      "alt": [
+        "Loktanur",
+        "Liktanur",
+        "Lentaanur",
+        "Loktañūr",
+        "Lōktōñūr"
+      ],
+      "transliterations": {
+        "mah": "Lōktañūr",
+        "etymology": "Marshallese star-name identified with Capella (Alpha Aurigae); glossed in the tradition as the mother of the great stars."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marshallese",
+    "primaryTradition": "Marshallese",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "In the charter myth of the first canoe race, Lōktañūr, mother of the star-sons, unrolls a bundle to reveal the first mast, sail and rigging and gives sailing to her youngest son so that he may become paramount chief.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "seafaring-navigation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "meto",
+          "script": "Latin",
+          "rom": "meto (ocean, sea-lane, the domain of the navigator)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Genz, Joseph H. Breaking the Shell: Voyaging from Nuclear Refugees to People of the Sea in the Marshall Islands. Honolulu: University of Hawai'i Press, 2018."
+          }
+        ]
+      },
+      {
+        "sphereId": "sailmaking",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "wōjḷā",
+          "script": "Latin",
+          "rom": "wōjḷā (sail)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ]
+      },
+      {
+        "sphereId": "matrilineal-chieftainship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "irooj",
+          "script": "Latin",
+          "rom": "irooj (paramount chief)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Downing, Jane, Dirk H. R. Spennemann, and Margaret Schorer, eds. Bwebwenatoon Etto: A Collection of Marshallese Legends and Traditions. Majuro: RMI Historic Preservation Office, 1992."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "invent_the_sail",
+        "name": "to invent the mast, sail and rigging",
+        "term": {
+          "value": "wōjḷā",
+          "script": "Latin",
+          "rom": "wōjḷā"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ]
+      },
+      {
+        "id": "bestow_the_chieftainship",
+        "name": "to confer the paramount chieftainship through the maternal line",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Genz, Joseph H. Breaking the Shell: Voyaging from Nuclear Refugees to People of the Sea in the Marshall Islands. Honolulu: University of Hawai'i Press, 2018."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "marshallese_wojla_sail",
+        "name": "The first sail and rigging (wōjḷā)",
+        "kind": "emblem",
+        "role": "The bundled sail, mast and rigging she unrolls during the race, the mythic origin of Marshallese sailing technology.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "marshallese_jebro",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ],
+        "notes": "Jebro, her youngest son, is the one child who agrees to carry her in his canoe and is rewarded with sailing and the chieftainship."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "marshallese_tumur",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          }
+        ],
+        "notes": "Tūmur, her eldest son, refuses to take her aboard and so loses the race and the chieftainship."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Lōktañūr (Capella), mother of the star-sons, is the Marshallese culture-heroine who invented the sail and, by aiding her youngest son, established that the paramount chieftainship descends through the maternal line.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Genz, Joseph H. Breaking the Shell: Voyaging from Nuclear Refugees to People of the Sea in the Marshall Islands. Honolulu: University of Hawai'i Press, 2018."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Downing, Jane, Dirk H. R. Spennemann, and Margaret Schorer, eds. Bwebwenatoon Etto: A Collection of Marshallese Legends and Traditions. Majuro: RMI Historic Preservation Office, 1992."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Lōktañūr, also recorded as Liktanur or Lentaanur, is the celestial mother of the great stars in Marshallese cosmology, identified with the star Capella. She is central to the tradition's foundational charter myth of the canoe race: her sons compete by paddle to determine who shall be paramount chief, and she asks each in turn to carry her aboard. All refuse except the youngest, Jebro, and as the race begins she unrolls a hidden bundle to produce the first mast, sail and rigging, technology unknown until that moment. With her invention Jebro overtakes his brothers, and when the greedy eldest, Tūmur, tries to seize the sailing canoe she withholds part of the rigging so he cannot steer. The tale explains both the Marshallese origin of sailing and the matrilineal principle by which rank and chiefly title pass through the mother's line."
+  },
+  {
+    "id": "marshallese_jebro",
+    "name": {
+      "primary": "Jebro",
+      "alt": [
+        "Jebrọ",
+        "Jebbro",
+        "Mājdik",
+        "Buonṃar",
+        "Jeḷeilōñ",
+        "Dāpeej"
+      ],
+      "transliterations": {
+        "mah": "Jebrọ",
+        "etymology": "Marshallese name of the Pleiades star cluster (specifically Alcyone); the several alternate names mark stages of his life from child to aged chief."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Marshallese",
+    "primaryTradition": "Marshallese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "marshallese_loktanur"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "As the youngest of the star-sons, Jebro alone agrees to carry his mother Lōktañūr in the canoe race, receives from her the first sail, wins, and is proclaimed paramount chief.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "stars-and-sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "iju",
+          "script": "Latin",
+          "rom": "iju (star); Jebro = the Pleiades"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          }
+        ]
+      },
+      {
+        "sphereId": "matrilineal-chieftainship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "irooj",
+          "script": "Latin",
+          "rom": "irooj (paramount chief)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "win_the_founding_race",
+        "name": "to win the founding canoe race",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kelin, Daniel A., II. Marshall Islands Legends and Stories. Honolulu: Bess Press, 2003."
+          }
+        ]
+      },
+      {
+        "id": "appear_as_the_pleiades",
+        "name": "to rise in the eastern sky as the Pleiades",
+        "term": {
+          "value": "Jebrọ",
+          "script": "Latin",
+          "rom": "Jebrọ (the Pleiades)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "marshallese_jebro_canoe",
+        "name": "Jebro's sailing canoe (wa)",
+        "kind": "vehicle",
+        "role": "The outrigger canoe rigged with his mother's sail with which he wins the race for the chieftainship.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "marshallese_tumur",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          }
+        ],
+        "notes": "Youngest brother to the eldest star-son Tūmur; the two are the poles of the canoe-race charter myth."
+      },
+      {
+        "kind": "rival",
+        "personId": "marshallese_tumur",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ],
+        "notes": "Jebro's cleverness and generosity are set against Tūmur's greed in the contest for the chieftainship."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Jebro, the youngest star-son of Lōktañūr and identified with the Pleiades, is the Marshallese culture-hero who wins the first canoe race with the sail his mother gives him and becomes the model paramount chief.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kelin, Daniel A., II. Marshall Islands Legends and Stories. Honolulu: Bess Press, 2003."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Jebro is the Marshallese name for the Pleiades and, in myth, the youngest of the star-sons of Lōktañūr. Because he alone agrees to take his mother aboard in the great canoe race, she rewards him with the first sail, and he wins the contest to become the ideal paramount chief, remembered as generous, kind and clever. He is called by different names across his life-stages, being Mājdik as a small child, Buonṃar when he sets out in the contest, Jeḷeilōñ when he becomes chief, and Dāpeej in old age. As a star he is honored as the benevolent king of the stars, and his heliacal rising marks the Marshallese seasonal calendar; he stands as the eternal counterpart and moral opposite of his eldest brother Tūmur (Antares)."
+  },
+  {
+    "id": "marshallese_tumur",
+    "name": {
+      "primary": "Tūmur",
+      "alt": [
+        "Tūṃur",
+        "Tumur",
+        "Tum",
+        "Tomur"
+      ],
+      "transliterations": {
+        "mah": "Tūṃur",
+        "etymology": "Marshallese star-name applied to Antares (and the surrounding asterism in the head of Scorpius), the great red star of the eldest star-son."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Marshallese",
+    "primaryTradition": "Marshallese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "marshallese_loktanur"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "As the eldest and strongest star-son, Tūmur refuses to carry his mother in the canoe race, is overtaken once she gives sailing to Jebro, and though he lands first and claims the chieftainship he is denied it in favor of his youngest brother.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "stars-and-sky",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "iju",
+          "script": "Latin",
+          "rom": "iju (star); Tūmur = Antares"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "appear_as_antares",
+        "name": "to rise in the sky as the red star Antares",
+        "term": {
+          "value": "Tūṃur",
+          "script": "Latin",
+          "rom": "Tūṃur (Antares)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          }
+        ]
+      },
+      {
+        "id": "seize_a_canoe",
+        "name": "to seize a rival's sailing canoe",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "marshallese_jebro",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          }
+        ],
+        "notes": "Eldest brother of Jebro; the elder and younger star-sons are the two poles of the canoe-race myth."
+      },
+      {
+        "kind": "rival",
+        "personId": "marshallese_jebro",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ],
+        "notes": "His greed and refusal to aid his mother make him the losing rival to the generous Jebro."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tūmur (Antares), eldest of the star-sons of Lōktañūr, is the proud elder brother who refuses to carry his mother, loses the founding canoe race to Jebro, and endures in the sky as the great red star opposite the Pleiades.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Erdland, August. Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek II.1. Münster: Aschendorff, 1914."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Tobin, Jack A. Stories from the Marshall Islands: Bwebwenato jān Aelōñ Kein. Honolulu: University of Hawai'i Press, 2002."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Tūmur is the Marshallese name for the red star Antares (extended in some accounts to the asterism in the head of Scorpius) and, in myth, the eldest and strongest of the star-sons of Lōktañūr. In the canoe-race charter myth he is the antagonist: confident of his strength, he brusquely refuses to take his aging mother aboard, and so is overtaken when she gives the newly invented sail to the youngest brother, Jebro. Though he reaches the shore first by trying to commandeer the sailing canoe, his mother has withheld part of the rigging so he cannot steer true, and the chieftainship is awarded to Jebro instead. Tūmur embodies the vices of pride and greed that the tale warns against, and in the sky he and Jebro are set in eternal opposition, the seasons of the Marshallese year turning between the setting of one and the rising of the other."
+  },
+  {
+    "id": "marshallese_jemeliwut",
+    "name": {
+      "primary": "Jemeliwut",
+      "alt": [
+        "Jemaliwut",
+        "Jemaluut",
+        "Jemāluut",
+        "Jemliwut"
+      ],
+      "transliterations": {
+        "mah": "Jemeliwut",
+        "etymology": "Marshallese; the name is associated with the rainbow (Marshallese iia / jemāluut), the sky-sign linked to this trickster brother."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Marshallese",
+    "primaryTradition": "Marshallese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "marshallese_wulleb"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "Born together with his brother Letao from the body of Wullep and endowed with magical power by the turtle Lijebake, Jemeliwut travels the Ralik and Ratak chains as the quieter companion in the brothers' trickster adventures.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Downing, Jane, Dirk H. R. Spennemann, and Margaret Schorer, eds. Bwebwenatoon Etto: A Collection of Marshallese Legends and Traditions. Majuro: RMI Historic Preservation Office, 1992."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "trickery-and-magic",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kelin, Daniel A., II. Marshall Islands Legends and Stories. Honolulu: Bess Press, 2003."
+          }
+        ]
+      },
+      {
+        "sphereId": "rainbows",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "iia",
+          "script": "Latin",
+          "rom": "iia (rainbow)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Downing, Jane, Dirk H. R. Spennemann, and Margaret Schorer, eds. Bwebwenatoon Etto: A Collection of Marshallese Legends and Traditions. Majuro: RMI Historic Preservation Office, 1992."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "change_shape",
+        "name": "to change shape and work magic",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Kelin, Daniel A., II. Marshall Islands Legends and Stories. Honolulu: Bess Press, 2003."
+          }
+        ]
+      },
+      {
+        "id": "arch_as_rainbow",
+        "name": "to arch across the sky as the rainbow",
+        "term": {
+          "value": "iia",
+          "script": "Latin",
+          "rom": "iia (rainbow)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Downing, Jane, Dirk H. R. Spennemann, and Margaret Schorer, eds. Bwebwenatoon Etto: A Collection of Marshallese Legends and Traditions. Majuro: RMI Historic Preservation Office, 1992."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "marshallese_jemeliwut_rainbow",
+        "name": "The rainbow (iia)",
+        "kind": "emblem",
+        "role": "The sky-sign associated with Jemeliwut, marking his presence as he and Letao move across the islands.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Downing, Jane, Dirk H. R. Spennemann, and Margaret Schorer, eds. Bwebwenatoon Etto: A Collection of Marshallese Legends and Traditions. Majuro: RMI Historic Preservation Office, 1992."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Jemeliwut is the brother and constant companion of the trickster Letao, a son of Wullep gifted with magic by the turtle Lijebake, remembered as the calmer counterpart in the brothers' shape-shifting journeys and associated with the rainbow.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Downing, Jane, Dirk H. R. Spennemann, and Margaret Schorer, eds. Bwebwenatoon Etto: A Collection of Marshallese Legends and Traditions. Majuro: RMI Historic Preservation Office, 1992."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Kelin, Daniel A., II. Marshall Islands Legends and Stories. Honolulu: Bess Press, 2003."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Jemeliwut, also spelled Jemaliwut, is the brother and lifelong companion of the celebrated trickster Letao. Both were born from the body of the first man Wullep, springing, according to differing accounts, from a boil on his leg or from his forehead, and both received their magic from Lijebake, the Great Mother Turtle. Together the two brothers roamed the Ralik and Ratak chains of the Marshall Islands and as far as Kiribati, working tricks and occasionally teaching useful arts. Where Letao is impulsive and mischievous, Jemeliwut is the quieter, more thoughtful of the pair, often drawn into his brother's schemes; his name is linked to the rainbow, which serves as his sign in the sky."
+  }
+]
+```

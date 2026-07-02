@@ -1,0 +1,256 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Qiang folk religion
+Era (registered, exact): "Qiang folk religion traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added one securely attested, individuated figure: Abba Mula (阿爸木纳), the Golden Monkey God who serves as the tutelary "father god" of Qiang shamans, a Prometheus-like fire-thief and recoverer of the lost birch-bark scriptures. He is documented in David Crockett Graham's ethnography The Customs and Religion of the Ch'iang (1958) and Michael Oppitz's study of Qiang shamanic ritual objects (Res, 2004), and is wired beneath the existing supreme Heaven God Mubyasei as one of the lesser tutelary gods. I deliberately stopped there: the remainder of the documented Qiang pantheon consists of the already-registered great deities (Heaven God, Heavenly Maiden, Mountain God and Goddess, the earthly ancestor Dou'anzhu) and of function-gods named only by domain (god of fire, goddess of women, ox king, tree and river gods) or unnamed spirit-classes, none of which scholarship individuates as a named being. Padding with those domain-labels would misrepresent the record, so a single addition is the evidence-bounded result.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "qiang_folk_religion_abba_mula",
+    "name": {
+      "primary": "Abba Mula, the Golden Monkey God",
+      "alt": [
+        "Abba Mula",
+        "Aba Muna",
+        "Golden Monkey God",
+        "Sacred Monkey",
+        "Father God"
+      ],
+      "transliterations": {
+        "zh": "阿爸木纳",
+        "qiang": "abba mula",
+        "etymology": "Qiangic 'abba mula' means 'father god'; the Chinese form 阿爸木纳 (Aba Muna) transcribes the same tutelary title borne by the shaman's monkey deity"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Qiang folk religion",
+    "primaryTradition": "Qiang folk religion",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Qiang folk religion traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Qiang folk religion traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In Qiang tradition a golden, stone-born monkey stole fire from heaven and later recovered the people's lost sacred scriptures, after which it became the tutelary 'father god' (abba mula) worshipped by shamans.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Graham, David Crockett (1958). The Customs and Religion of the Ch'iang. Smithsonian Miscellaneous Collections, vol. 135, no. 1. Washington: Smithsonian Institution."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "shamanism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "abba mula",
+          "script": "Latin",
+          "rom": "father god"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oppitz, Michael (2004). 'Ritual objects of the Qiang shamans.' Res: Anthropology and Aesthetics 45: 10-46."
+          }
+        ]
+      },
+      {
+        "sphereId": "exorcism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oppitz, Michael (2004). 'Ritual objects of the Qiang shamans.' Res: Anthropology and Aesthetics 45: 10-46."
+          }
+        ]
+      },
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Graham, David Crockett (1958). The Customs and Religion of the Ch'iang. Smithsonian Miscellaneous Collections, vol. 135, no. 1. Washington: Smithsonian Institution."
+          }
+        ]
+      },
+      {
+        "sphereId": "sacred-knowledge",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oppitz, Michael (2004). 'Ritual objects of the Qiang shamans.' Res: Anthropology and Aesthetics 45: 10-46."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "steal_fire_from_heaven",
+        "name": "to steal fire from the heavens for humankind",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the legend the monkey succeeds only on its third attempt, hiding the flame inside a white quartz stone after the gods of wind and rain extinguish it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Graham, David Crockett (1958). The Customs and Religion of the Ch'iang. Smithsonian Miscellaneous Collections, vol. 135, no. 1. Washington: Smithsonian Institution."
+          }
+        ]
+      },
+      {
+        "id": "drive_away_evil_spirits",
+        "name": "to drive away evil spirits and demons",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Shamans invoke the god as patron of exorcistic rites, its power residing in a wrapped monkey-skull bundle.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oppitz, Michael (2004). 'Ritual objects of the Qiang shamans.' Res: Anthropology and Aesthetics 45: 10-46."
+          }
+        ]
+      },
+      {
+        "id": "recover_sacred_scriptures",
+        "name": "to recover the lost sacred scriptures of the people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "After a goat devoured the birch-bark scriptures, the monkey helped the shaman-patriarch regain the lost knowledge, thereafter transmitted orally.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oppitz, Michael (2004). 'Ritual objects of the Qiang shamans.' Res: Anthropology and Aesthetics 45: 10-46."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "qiang_folk_religion_abba_mula_bundle",
+        "name": "Wrapped monkey-skull bundle (abba mula)",
+        "kind": "regalia",
+        "role": "The physical seat of the god, a monkey skull successively wrapped in white paper and regarded as the source of the shaman's power.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oppitz, Michael (2004). 'Ritual objects of the Qiang shamans.' Res: Anthropology and Aesthetics 45: 10-46."
+          }
+        ]
+      },
+      {
+        "id": "qiang_folk_religion_monkey_fur_hat",
+        "name": "Three-peaked golden-monkey-fur hat",
+        "kind": "regalia",
+        "role": "Shaman's headdress made from golden monkey fur, its three peaks representing the deities of heaven, earth, and shamanism.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Graham, David Crockett (1958). The Customs and Religion of the Ch'iang. Smithsonian Miscellaneous Collections, vol. 135, no. 1. Washington: Smithsonian Institution."
+          }
+        ]
+      },
+      {
+        "id": "qiang_folk_religion_goatskin_drum",
+        "name": "Goatskin ritual drum",
+        "kind": "emblem",
+        "role": "Drum said to derive from the goat that ate the scriptures, beaten in rites to recall the lost written knowledge the monkey preserved.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oppitz, Michael (2004). 'Ritual objects of the Qiang shamans.' Res: Anthropology and Aesthetics 45: 10-46."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "阿爸木纳",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oppitz, Michael (2004). 'Ritual objects of the Qiang shamans.' Res: Anthropology and Aesthetics 45: 10-46."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "qiang_folk_religion_mubyasei",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Graham, David Crockett (1958). The Customs and Religion of the Ch'iang. Smithsonian Miscellaneous Collections, vol. 135, no. 1. Washington: Smithsonian Institution."
+          }
+        ],
+        "notes": "As a tutelary of shamans the golden monkey ranks among the lesser gods below the supreme Heaven God Mubyasei, from whose celestial fire it was taken and whose scriptures it helped restore."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Abba Mula, the golden stone-born monkey, is the Qiang shamans' tutelary 'father god', a fire-bringer who stole flame from heaven and recovered the people's lost sacred scriptures, worshipped in the form of a wrapped monkey skull.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Graham, David Crockett (1958). The Customs and Religion of the Ch'iang. Smithsonian Miscellaneous Collections, vol. 135, no. 1. Washington: Smithsonian Institution."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Oppitz, Michael (2004). 'Ritual objects of the Qiang shamans.' Res: Anthropology and Aesthetics 45: 10-46."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Abba Mula ('father god'), the Golden Monkey God, is the patron deity of Qiang shamans, especially those specializing in exorcism. Qiang legend casts the golden, stone-born monkey as a fire-bringer who, after two failures when the gods of wind and rain doused the flames, succeeded on the third attempt by concealing fire inside a white quartz stone. A companion legend tells how a goat devoured the people's birch-bark scriptures, and the monkey enabled the shaman-patriarch to recover the lost knowledge, which has since been transmitted orally and drummed on a goatskin drum. The god is embodied in a monkey skull wrapped in successive layers of white paper, regarded as the seat of a shaman's power, while shamans wear a three-peaked cap of golden-monkey fur symbolizing heaven, earth, and the shamanic vocation. The figure has drawn scholarly comparison with Sun Wukong, the Monkey King."
+  }
+]
+```

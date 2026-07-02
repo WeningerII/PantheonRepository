@@ -1,0 +1,152 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Selkup
+Era (registered, exact): "mythic / first-times"
+Author pass: floor-raising expansion — attested individuated figures still missing (1 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added one genuinely individuated, well-attested being missing from the corpus: Pönege (Pünegusse), the man-eating forest ogre who is the recurring monstrous antagonist of the It'a/Icha tale cycle, documented in the Encyclopaedia of Uralic Mythologies vol. 4 (Tuchkova, Kuznetsova, Kazakevich et al. 2010), Pelikh's Sel'kupskaya mifologiya (1998), and Maloney's 2022 Hamburg study of Selkup folklore. It is left solitary because the sources give it no genealogical tie into the divine family; the directed relation kinds available do not accurately capture "adversary slain by It'a" (Icha is the slayer, not the slain, and symmetric enemy relations may not point at existing corpus ids), so the antagonism with the already-registered hero Icha is documented in prose. I deliberately did NOT add several checked candidates: the "Earth Old Woman" (Chvechyt Paya/Paya) is described in the sources as merging with — i.e. a southern regional aspect of — the already-registered life-giving Ylynta Kota; the forest-mistress and per-lake/river water-spirits are unnamed loz classes (the loz class is already registered); sun, moon and thunder are treated as aspects/voice of Num/Nom; and the cosmogonic earth-diver bird is not individuated by name. The attested individuated record beyond the existing five figures is therefore close to exhausted, with Pönege the one solid addition.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "selkup_ponege",
+    "name": {
+      "primary": "Pönege (Forest Cannibal-Ogre)",
+      "alt": [
+        "Pönege",
+        "Pönegese",
+        "Pünegusse",
+        "Pünegusse-loz",
+        "Pöne"
+      ],
+      "transliterations": {
+        "selkup": "pönege",
+        "ru": "Пёнеге / Пюнегуссе",
+        "etymology": "Selkup name of the man-eating forest monster of the It'a/Icha tale cycle; the being is defined in the sources by its association with the taiga and with swallowing/cannibalism (Tuchkova et al. 2010)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Selkup",
+    "primaryTradition": "Selkup",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic / first-times"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic / first-times",
+        "eraOrdering": 0,
+        "startEvent": "In the mythic first-times of the It'a/Icha tale cycle the pönege appears as a giant, man-devouring monster of the taiga who preys on people until the culture-hero It'a outwits and destroys it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tuchkova, N. A., Kuznetsova, A. I., Kazakevich, O. A. et al., Selkup Mythology (Encyclopaedia of Uralic Mythologies, vol. 4), Budapest: Akadémiai Kiadó / Helsinki, 2010."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cannibalism-devouring",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "pönege",
+          "script": "Latin",
+          "rom": "man-eater, cannibal ogre"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maloney, R., 'Loss of Life and Return to Life in Selkup Folklore,' Samoyed Workshop, Universität Hamburg, 2022."
+          }
+        ]
+      },
+      {
+        "sphereId": "forest-wilderness",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mačʼ",
+          "script": "Latin",
+          "rom": "taiga, forest"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tuchkova, N. A., Kuznetsova, A. I., Kazakevich, O. A. et al., Selkup Mythology (Encyclopaedia of Uralic Mythologies, vol. 4), Budapest: Akadémiai Kiadó / Helsinki, 2010."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_humans",
+        "name": "to swallow and devour human beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Swallowing whole is the defining act of the pönege and equates it with cannibalism in the tale cycle.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maloney, R., 'Loss of Life and Return to Life in Selkup Folklore,' Samoyed Workshop, Universität Hamburg, 2022."
+          }
+        ]
+      },
+      {
+        "id": "menace_taiga_travelers",
+        "name": "to stalk and menace people in the forest",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pelikh, G. I., Sel'kupskaya mifologiya [Selkup Mythology], Tomsk: Tomsk State University Press, 1998."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Pönege (Pünegusse) is the giant, man-eating forest ogre of Selkup oral tradition, the recurring monstrous adversary whom the culture-hero It'a/Icha defeats.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Tuchkova, N. A., Kuznetsova, A. I., Kazakevich, O. A. et al., Selkup Mythology (Encyclopaedia of Uralic Mythologies, vol. 4), Budapest: Akadémiai Kiadó / Helsinki, 2010."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Pelikh, G. I., Sel'kupskaya mifologiya [Selkup Mythology], Tomsk: Tomsk State University Press, 1998."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Maloney, R., 'Loss of Life and Return to Life in Selkup Folklore,' Samoyed Workshop, Universität Hamburg, 2022."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The pönege (also pünegusse) is a monstrous, man-eating giant of the taiga in Selkup folklore. In the extensive cycle of tales about the culture-hero It'a (Icha), the pönege is the archetypal antagonist: a cannibal who swallows people whole and whom the clever hero repeatedly outwits and destroys, in one widespread version stabbing the ogre's daughter, boiling her, and finally killing the pönege with a knife and burning its body. Scholars treat the name both as that of a specific recurring character in the It'a narratives and as a term for a class of forest-dwelling cannibal beings; its swallowing motif places it among the powers of death opposed to the life-giving upper world. As a folkloric adversary of the hero rather than a member of the cosmological family of gods, it has no attested parentage or marriage among the Selkup deities."
+  }
+]
+```

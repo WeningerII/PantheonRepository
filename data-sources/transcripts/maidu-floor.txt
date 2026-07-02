@@ -1,0 +1,431 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Maidu
+Era (registered, exact): "Maidu traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three individuated figures well attested in the Dixon corpus and later ethnography. Kuksu (the first man, 'Maidu Adam,' molded from reddish earth by Earth-Initiate) and Morning-Star Woman (the first woman, his wife) are the ancestral human pair of the Maidu creation and are wired to the existing Earth-Initiate as their maker and to each other as spouses; Kuksu additionally carries the well-documented 'Big Head' ceremonial identity of the Kuksu cult (Dixon 1902; Kroeber 1925; Loeb 1933). Rattlesnake is the specific agent of the first death in the same creation cycle (Dixon 1902; Shipley 1991) and is listed as solitary because the sources give him a pivotal role but no kin. I stopped at three because the remaining Maidu narrative population (Bear, Deer, Loon, Mountain Lion, Muskrat, etc.) consists of generic animal-people classes rather than further named, individuated divine or ancestral beings beyond the existing set.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "maidu_kuksu",
+    "name": {
+      "primary": "Kuksu (the first man)",
+      "alt": [
+        "Ku'ksū",
+        "Ku'ksuu",
+        "Kuksui",
+        "Big Head"
+      ],
+      "transliterations": {
+        "Maidu": "Ku'ksū",
+        "etymology": "Kuksu is also the name carried by the 'Big Head' tutelary spirit impersonated across the central-California ceremonial system (Kroeber 1925)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maidu",
+    "primaryTradition": "Maidu",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "maidu_earth_initiate"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "Maidu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Maidu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Maidu creation narrative Earth-Initiate molds Kuksu, the first man, from reddish earth, making him the founding male ancestor of humankind.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "first-ancestors",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Ku'ksū",
+          "script": "Latin",
+          "rom": "Kuksu"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ]
+      },
+      {
+        "sphereId": "ceremonial-initiation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edwin M. Loeb, 'The Eastern Kuksu Cult,' University of California Publications in American Archaeology and Ethnology 33, no. 2 (1933): 139-232."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_humankind_male",
+        "name": "to stand as the founding male ancestor of the human race",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ]
+      },
+      {
+        "id": "preside_secret_society",
+        "name": "to preside over the men's secret-society dances as the Big-Head spirit",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred L. Kroeber, 'Handbook of the Indians of California,' Bureau of American Ethnology Bulletin 78 (Washington, D.C.: Smithsonian Institution, 1925)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "maidu_kuksu_big_head_headdress",
+        "name": "Big-Head feather headdress and feathered cloak",
+        "kind": "regalia",
+        "role": "The extravagant radiating feather headdress and feather-decorated cloak worn by the dancer who impersonates Kuksu, the 'Big Head,' in the ceremonial cycle.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edwin M. Loeb, 'The Eastern Kuksu Cult,' University of California Publications in American Archaeology and Ethnology 33, no. 2 (1933): 139-232."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "maidu_morning_star_woman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ],
+        "notes": "Kuksu and Morning-Star Woman, molded together from the reddish earth, are the first married pair and the ancestors of the Maidu people."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "maidu_earth_initiate",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ],
+        "notes": "Kuksu is fashioned by the creator Earth-Initiate, who instructs him and gives him the institutions the people are to follow."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kuksu is the first man of Maidu creation, molded from reddish earth by Earth-Initiate as the founding male ancestor, and lends his name to the 'Big Head' spirit impersonated in the Kuksu ceremonial cycle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alfred L. Kroeber, 'Handbook of the Indians of California,' Bureau of American Ethnology Bulletin 78 (Washington, D.C.: Smithsonian Institution, 1925)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edwin M. Loeb, 'The Eastern Kuksu Cult,' University of California Publications in American Archaeology and Ethnology 33, no. 2 (1933): 139-232."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "In the Maidu creation story recorded by Roland Dixon, the creator Earth-Initiate shapes the first human pair from reddish earth; the man is Kuksu and the woman is Morning-Star Woman, from whom the Maidu people descend. Kuksu is often described as the 'Maidu Adam.' His name is shared with the central figure of the Kuksu ceremonial system of central California, the 'Big Head' spirit whose dancer wears a towering feather headdress and feathered regalia; among the Konkow and Nisenan this observance was central to the men's secret society, while the Mountain Maidu preserved the figure chiefly in myth."
+  },
+  {
+    "id": "maidu_morning_star_woman",
+    "name": {
+      "primary": "Morning-Star Woman (the first woman)",
+      "alt": [
+        "Morning Star Woman",
+        "Morningstar"
+      ],
+      "transliterations": {
+        "etymology": "An English rendering of her Maidu descriptive name identifying her with the morning star; the first woman paired with Kuksu (Dixon 1902)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maidu",
+    "primaryTradition": "Maidu",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "maidu_earth_initiate"
+    ],
+    "parentRoles": [
+      "creator"
+    ],
+    "temporal": {
+      "era": "Maidu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Maidu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Earth-Initiate forms Morning-Star Woman from reddish earth alongside Kuksu, making her the founding female ancestor of the Maidu.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "first-ancestors",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ]
+      },
+      {
+        "sphereId": "dawn-morning-star",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alfred L. Kroeber, 'Handbook of the Indians of California,' Bureau of American Ethnology Bulletin 78 (Washington, D.C.: Smithsonian Institution, 1925)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_humankind_female",
+        "name": "to stand as the founding female ancestor of the human race",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "maidu_kuksu",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ],
+        "notes": "Morning-Star Woman is the wife of Kuksu, the first married pair from whom the Maidu descend."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "maidu_earth_initiate",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ],
+        "notes": "She is fashioned by the creator Earth-Initiate together with Kuksu at the founding of the human race."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Morning-Star Woman is the first woman of Maidu creation, molded from reddish earth by Earth-Initiate and wed to Kuksu, the ancestral pair of humankind.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alfred L. Kroeber, 'Handbook of the Indians of California,' Bureau of American Ethnology Bulletin 78 (Washington, D.C.: Smithsonian Institution, 1925)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Morning-Star Woman is the first woman in the Maidu creation recorded by Dixon, shaped from reddish earth by Earth-Initiate at the same time as the first man, Kuksu. Identified with the morning star and sometimes called the 'Maidu Eve,' she is, with Kuksu, the ancestress of the human race."
+  },
+  {
+    "id": "maidu_rattlesnake",
+    "name": {
+      "primary": "Rattlesnake (the bringer of death)",
+      "alt": [
+        "Rattlesnake-Man"
+      ],
+      "transliterations": {
+        "etymology": "The animal-person Rattlesnake of Maidu myth, whose bite establishes mortality in the world (Dixon 1902)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maidu",
+    "primaryTradition": "Maidu",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Maidu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Maidu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "During the ordering of the world Rattlesnake hides beside the racing-track and bites Coyote's son in the ankle, causing the first death.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "death-and-mortality",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ]
+      },
+      {
+        "sphereId": "serpents-and-venom",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'The Northern Maidu,' Bulletin of the American Museum of Natural History 17, no. 3 (1905): 119-346."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_first_death",
+        "name": "to bring the first death into the world by his bite",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Rattlesnake is the animal-person of Maidu myth who brings mortality into the world by biting Coyote's son, occasioning the first death and the first mourning.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, 'Maidu Myths,' Bulletin of the American Museum of Natural History 17, no. 2 (1902): 33-118."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Shipley, ed. and trans., 'The Maidu Indian Myths and Stories of Hanc'ibyjim' (Berkeley: Heyday Books, 1991)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In the Maidu creation cycle, Coyote insists that death should be real and permanent against Earth-Initiate's wish that people live forever. Soon after, at a footrace, Rattlesnake lies hidden and bites Coyote's swift son in the ankle; the boy dies at once. This is the first death, and Coyote's grief brings the first tears, sealing mortality for all people. Rattlesnake thus functions as the specific agent through whom death enters the ordered world."
+  }
+]
+```

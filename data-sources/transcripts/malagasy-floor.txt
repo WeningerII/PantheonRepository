@@ -1,0 +1,523 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Malagasy
+Era (registered, exact): "mythic", "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (4 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added four genuinely individuated figures missing from the corpus: the first man Andriambahomanana and first woman Andriamahilala, whose contrasting death-choices (the banana that sprouts anew, and the moon that wanes and returns) constitute the canonical Malagasy origin-of-death myth (Ruud 1960; Scheub 2000; Sibree 1896); the incarnate son of Zanahary, Andrianerinerina, who descended at Anerinerina, was stranded by a food taboo, and became the divine ancestor of the Merina royal line (Delivré 1974; Ottino 1982, 1983); and the landscape-shaping giant Darafify/Rapeto of the eastern tradition (Renel 1910; Sibree 1896). The first couple are wired to one another as spouses and both subordinated to the existing Zanahary, while Andrianerinerina is placed as Zanahary's child, integrating the new figures into the standing pantheon. I stopped at four because the remaining named beings I checked are either non-individuated (generic Vazimba, unnamed ancestors) or are mere place-eponyms (the giant's wives Rasoabe and Rasoamasay, personifications of lakes) that lack the sustained scholarly attestation these four carry.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "malagasy_andriambahomanana",
+    "name": {
+      "primary": "Andriambahomanana",
+      "alt": [
+        "Andriambahomananana",
+        "Andriambaho"
+      ],
+      "transliterations": {
+        "mg": "Andriambahomanana",
+        "etymology": "Incorporates the honorific 'andriana' ('lord, noble') borne by ancestral and royal figures; glossed in the sources as the founding first man from whom humankind is peopled."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Malagasy",
+    "primaryTradition": "Malagasy",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "When humankind had multiplied across the earth, Zanahary asked the first man how he wished to die, and Andriambahomanana chose the death of the banana, which perishes yet sends up new shoots, so that his line would continue after him.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruud, Jørgen (1960). Taboo: A Study of Malagasy Customs and Beliefs. Oslo University Press; London: George Allen & Unwin."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "origin-of-death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "fahafatesana",
+          "script": "Latin",
+          "rom": "death, mortality"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold (2000). A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press."
+          }
+        ]
+      },
+      {
+        "sphereId": "human-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "razana",
+          "script": "Latin",
+          "rom": "ancestors"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruud, Jørgen (1960). Taboo: A Study of Malagasy Customs and Beliefs. Oslo University Press; London: George Allen & Unwin."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "choose_manner_of_death",
+        "name": "to choose the manner in which humankind would die",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "By electing the banana's death he fixed mortality for his descendants while binding it to the renewal of the lineage.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold (2000). A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "malagasy_andriamahilala",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruud, Jørgen (1960). Taboo: A Study of Malagasy Customs and Beliefs. Oslo University Press; London: George Allen & Unwin."
+          }
+        ],
+        "notes": "The first man and the first woman are paired as husband and wife, together the parents of humankind."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "malagasy_zanahary",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold (2000). A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press."
+          }
+        ],
+        "notes": "It is the creator Zanahary who poses to Andriambahomanana the choice of death, and to whom the human soul returns."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Andriambahomanana is the primordial first man of Malagasy myth who, asked by Zanahary how humans should die, chose the death of the banana plant, thereby introducing mortality tempered by the renewal of the lineage.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ruud, Jørgen (1960). Taboo: A Study of Malagasy Customs and Beliefs. Oslo University Press; London: George Allen & Unwin."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold (2000). A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sibree, James (1896). Madagascar Before the Conquest. London: T. Fisher Unwin."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Andriambahomanana is the first man of Malagasy tradition, paired with the first woman Andriamahilala as the ancestors of the human race. When their descendants had grown numerous, the creator Zanahary decreed that death was needed and let the first couple choose its form. Andriambahomanana chose to die after the manner of the banana plant, which withers but immediately throws up young shoots from its stock, so that though the individual perishes the lineage renews itself. His counterpart chose the fate of the moon. The paired choices form the canonical Malagasy explanation for the origin of death and its link to the continuity of the family line."
+  },
+  {
+    "id": "malagasy_andriamahilala",
+    "name": {
+      "primary": "Andriamahilala",
+      "alt": [
+        "Andriamahihala"
+      ],
+      "transliterations": {
+        "mg": "Andriamahilala",
+        "etymology": "Bears the honorific element 'andriana' ('lord, noble'); in the myth she is identified with the moon (Malagasy 'volana'), whose monthly waning and return mirror her chosen death."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Malagasy",
+    "primaryTradition": "Malagasy",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Offered by Zanahary a choice of how she would die, the first woman chose the fate of the moon, which wanes into darkness each month and is reborn, so that she should never wholly perish.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold (2000). A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "volana",
+          "script": "Latin",
+          "rom": "moon"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruud, Jørgen (1960). Taboo: A Study of Malagasy Customs and Beliefs. Oslo University Press; London: George Allen & Unwin."
+          }
+        ]
+      },
+      {
+        "sphereId": "renewal",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold (2000). A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "renew_like_the_moon",
+        "name": "to wane and be reborn after the manner of the moon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "By choosing the moon's death she secured a cyclical, recurring end rather than final extinction.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruud, Jørgen (1960). Taboo: A Study of Malagasy Customs and Beliefs. Oslo University Press; London: George Allen & Unwin."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "malagasy_andriambahomanana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ruud, Jørgen (1960). Taboo: A Study of Malagasy Customs and Beliefs. Oslo University Press; London: George Allen & Unwin."
+          }
+        ],
+        "notes": "The first woman is wedded to the first man, and with him becomes an ancestor of humankind."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "malagasy_zanahary",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold (2000). A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press."
+          }
+        ],
+        "notes": "It is Zanahary who grants her the choice of death, and to whom her soul belongs."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Andriamahilala is the primordial first woman of Malagasy myth who, given the choice of death by Zanahary, elected the fate of the moon, waning and returning each month rather than dying outright.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Scheub, Harold (2000). A Dictionary of African Mythology: The Mythmaker as Storyteller. New York: Oxford University Press."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ruud, Jørgen (1960). Taboo: A Study of Malagasy Customs and Beliefs. Oslo University Press; London: George Allen & Unwin."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Andriamahilala is the first woman of Malagasy tradition and the wife of the first man Andriambahomanana. In the origin-of-death myth she is offered by the creator Zanahary a choice of how she will die and selects the manner of the moon, which dwindles to nothing each month yet is always reborn. Her lunar death is contrasted with her husband's banana death: where he elects renewal through the sprouting of new shoots, she elects the cyclical disappearance and return of the moon. Because of this choice she is identified in the tradition with the moon itself and with the theme of perpetual renewal."
+  },
+  {
+    "id": "malagasy_andrianerinerina",
+    "name": {
+      "primary": "Andrianerinerina",
+      "alt": [
+        "Andriananerinerina"
+      ],
+      "transliterations": {
+        "mg": "Andrianerinerina",
+        "etymology": "Formed on the honorific 'andriana' ('lord, noble, prince') and the place-name Anerinerina, the spot north of Angavokely where the son of Zanahary is said to have descended to earth."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Malagasy",
+    "primaryTradition": "Malagasy",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "malagasy_zanahary"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "In Merina tradition the son of Zanahary descended from the sky at Anerinerina to dwell among the Vazimba; having unwittingly eaten forbidden mutton he could no longer return to heaven, and so became the divine ancestor from whom the royal line claimed descent.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Delivré, Alain (1974). L'Histoire des rois d'Imerina: Interprétation d'une tradition orale. Paris: Klincksieck."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "hasina",
+          "script": "Latin",
+          "rom": "sacred efficacy, royal sanctity"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Delivré, Alain (1974). L'Histoire des rois d'Imerina: Interprétation d'une tradition orale. Paris: Klincksieck."
+          }
+        ]
+      },
+      {
+        "sphereId": "royal-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "andriana",
+          "script": "Latin",
+          "rom": "nobility, royal caste"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ottino, Paul (1983). \"Ancient Malagasy Dynastic Succession: The Merina Example.\" History in Africa 10: 247–292."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "descend_from_heaven",
+        "name": "to descend from the sky to found a royal lineage on earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "lineal",
+        "notes": "His descent and subsequent stranding on earth transmit divine kingship to his Merina descendants.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ottino, Paul (1982). \"Myth and History: The Malagasy Andriambahoaka and the Indonesian Legacy.\" History in Africa 9: 221–250."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Zanak'Andriamanitra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ottino, Paul (1982). \"Myth and History: The Malagasy Andriambahoaka and the Indonesian Legacy.\" History in Africa 9: 221–250."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Andrianerinerina is the incarnate son of the sky-god Zanahary in one Merina origin myth: he descended to earth at Anerinerina, was stranded there by unknowingly eating tabooed mutton, and became the divine ancestor from whom the Merina royal line claims descent.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Delivré, Alain (1974). L'Histoire des rois d'Imerina: Interprétation d'une tradition orale. Paris: Klincksieck."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ottino, Paul (1983). \"Ancient Malagasy Dynastic Succession: The Merina Example.\" History in Africa 10: 247–292."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ottino, Paul (1982). \"Myth and History: The Malagasy Andriambahoaka and the Indonesian Legacy.\" History in Africa 9: 221–250."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Andrianerinerina is a central figure of one of the competing Merina origin myths of the central highlands of Madagascar, in which he is the incarnate son of the creator Zanahary. According to the tradition the son of Zanahary came down from the sky at a place called Anerinerina, north of Angavokely, to play among the Vazimba, the island's aboriginal inhabitants. The Vazimba were warned never to cook his sheep, but one was butchered and served to him in a stew; by unwittingly eating the forbidden mutton he lost the power to rejoin his father in the heavens and remained on earth. From this stranded god-king the aristocracy of Imerina traced its descent, so that his story underwrites the sacred character of Merina kingship. He is sometimes remembered as a rebellious hero and was an object of cult as the 'son of God'."
+  },
+  {
+    "id": "malagasy_darafify",
+    "name": {
+      "primary": "Darafify",
+      "alt": [
+        "Rapeto",
+        "Darafely",
+        "Ietana"
+      ],
+      "transliterations": {
+        "mg": "Darafify",
+        "etymology": "The name of a colossal being in eastern Malagasy tradition; in the highlands the equivalent giant is called Rapeto, a name that has become a byword for anything enormous."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Malagasy",
+    "primaryTradition": "Malagasy",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A colossus who strode the eastern forests in a single bound and stilled the sea with his breath, Darafify was at last felled by the people, and his ceaselessly flowing blood enriched the soil so that the eastern forest would never lack for trees.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Renel, Charles (1910). Contes de Madagascar. Paris: Ernest Leroux."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "landforms",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "goavana",
+          "script": "Latin",
+          "rom": "giant, colossal"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Renel, Charles (1910). Contes de Madagascar. Paris: Ernest Leroux."
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility-of-the-land",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sibree, James (1896). Madagascar Before the Conquest. London: T. Fisher Unwin."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "stride_and_shape_land",
+        "name": "to stride over hills and reshape the land by his movements",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His enormous stride and breath are credited with forming features of the eastern Malagasy landscape.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Renel, Charles (1910). Contes de Madagascar. Paris: Ernest Leroux."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Darafify (in the highlands, Rapeto) is a named colossal giant of Malagasy folklore whose gigantic deeds shape the land and whose death enriches the eastern forest, recorded in the ethnographic tale collections.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Renel, Charles (1910). Contes de Madagascar. Paris: Ernest Leroux."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sibree, James (1896). Madagascar Before the Conquest. London: T. Fisher Unwin."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Darafify is a named giant of Malagasy folklore, associated especially with the Betsimisaraka of the eastern coast, and identified in some tellings with the highland giant Rapeto whose name has become proverbial for hugeness. He is described as tall as the sky, able to blow away the waves with a breath and to cross several hills in a single stride. In the tale recorded by Charles Renel he gave lakes to his wives Rasoabe and Rasoamasay to turn into rice-fields, and drowned them in those lakes when they proved unfaithful, so that the lakes still bear their names. In another cycle he catches the moon at his wife's asking, drops it, and sets the eastern forests ablaze; when the people finally fell the seeming great tree they discover it is Darafify himself, whose unstoppable blood becomes a fertiliser making the land bring forth trees in endless variety. He is a Malagasy example of the divine giant who moulds and enriches the landscape."
+  }
+]
+```

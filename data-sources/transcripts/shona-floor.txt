@@ -1,0 +1,486 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Shona
+Era (registered, exact): "c. 1840 \u2013 27 April 1898", "founding ancestral era; mediums active into the 19th century"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three individuated figures that scholarship documents beyond the existing set. Kaguvi (Kagubi) is the male mhondoro war-spirit and Nehanda's ritual consort, and Gumboreshumba is its historical medium hanged on 27 April 1898 — together they mirror the Nehanda/Charwe spirit-and-medium pairing already in the corpus, and are wired to those figures by directed consort-of and subordinate-to relations. Murenga Sororenzou (Pfumojena), the legendary elephant-headed founder-warrior whose name is the etymological root of "chimurenga," is added as a founding ancestor and wired as father-of the existing Chaminuka and Nehanda, following widely attested Shona genealogies. All three rest on standard scholarship (Ranger 1967; Lan 1985; Beach 1979/1986; Gelfand 1962; Pongweni 1982; Vambe 2004; Mutswairo 1996). I deliberately excluded generic ancestor-classes and figures with contested attribution (e.g. Mushavatu, the Mwari-shrine officiants, and the Tonga river-spirit Nyaminyami, which is not Shona), as they are either non-individuated or outside the tradition.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "shona_kaguvi",
+    "name": {
+      "primary": "Male War Ancestor-Spirit of the First Chimurenga",
+      "alt": [
+        "Kaguvi",
+        "Kagubi",
+        "Kakubi",
+        "Sekuru Kaguvi"
+      ],
+      "transliterations": {
+        "sn": "Kaguvi",
+        "etymology": "A mhondoro (royal lion) spirit whose name was borne by those said to speak for the supreme deity Mwari; its medium's name Gumboreshumba means 'leg of the lion' (gumbo, leg; shumba, lion)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Shona",
+    "primaryTradition": "Shona",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "founding ancestral era; mediums active into the 19th century"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "founding ancestral era; mediums active into the 19th century",
+        "eraOrdering": 0,
+        "startEvent": "Kaguvi is a male royal ancestor lion-spirit (mhondoro) of the Goromonzi and Chishawasha region whose medium coordinated the Shona rising of 1896-97.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Terence O. Ranger, Revolt in Southern Rhodesia, 1896-97: A Study in African Resistance (London: Heinemann, 1967)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-and-resistance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "chimurenga",
+          "script": "Latin",
+          "rom": "chimurenga (uprising, war of liberation)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Lan, Guns and Rain: Guerrillas and Spirit Mediums in Zimbabwe (London: James Currey; Berkeley: University of California Press, 1985)."
+          }
+        ]
+      },
+      {
+        "sphereId": "royal-ancestral-authority",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mhondoro",
+          "script": "Latin",
+          "rom": "mhondoro (royal lion ancestor-spirit)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Gelfand, Shona Religion, with Special Reference to the Makorekore (Cape Town: Juta, 1962)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inspire_armed_resistance",
+        "name": "to inspire and coordinate armed resistance against foreign rule",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Terence O. Ranger, Revolt in Southern Rhodesia, 1896-97: A Study in African Resistance (London: Heinemann, 1967)."
+          }
+        ]
+      },
+      {
+        "id": "speak_through_medium",
+        "name": "to speak and deliver commands through a human spirit-medium",
+        "term": {
+          "value": "svikiro",
+          "script": "Latin",
+          "rom": "svikiro (spirit-medium)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Lan, Guns and Rain: Guerrillas and Spirit Mediums in Zimbabwe (London: James Currey; Berkeley: University of California Press, 1985)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Sekuru Kaguvi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "D. N. Beach, War and Politics in Zimbabwe, 1840-1900 (Gweru: Mambo Press, 1986)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "shona_nehanda",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Terence O. Ranger, Revolt in Southern Rhodesia, 1896-97: A Study in African Resistance (London: Heinemann, 1967)."
+          }
+        ],
+        "notes": "In the ritual idiom of the 1896-97 rising the Kaguvi spirit was regarded as the spiritual husband of the Nehanda spirit, the two coordinating the resistance across Mashonaland."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kaguvi is a male Shona royal ancestral lion-spirit (mhondoro) whose medium jointly led the First Chimurenga uprising of 1896-97.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Terence O. Ranger, Revolt in Southern Rhodesia, 1896-97: A Study in African Resistance (London: Heinemann, 1967)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "David Lan, Guns and Rain: Guerrillas and Spirit Mediums in Zimbabwe (London: James Currey; Berkeley: University of California Press, 1985)."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Kaguvi (also Kagubi or Kakubi) is a male royal ancestral lion-spirit of the Shona, associated with the Goromonzi and Chishawasha districts of central Zimbabwe. Like Chaminuka and Nehanda, the spirit expressed its will through a human medium, and it stands as the principal male counterpart to the female Nehanda spirit. In the ritual language of the 1896-97 rising the two were spoken of as spiritual husband and wife who together directed the Shona resistance to the British South Africa Company, teaching that the settlers were the source of the drought, locusts and cattle plague afflicting the land."
+  },
+  {
+    "id": "shona_gumboreshumba",
+    "name": {
+      "primary": "Spirit-Medium of Kaguvi",
+      "alt": [
+        "Gumboreshumba",
+        "Sekuru Kaguvi",
+        "Gumboreshumba Gwati"
+      ],
+      "transliterations": {
+        "sn": "Gumboreshumba",
+        "etymology": "gumbo re shumba, 'the leg (or foot/claw) of the lion' (gumbo, leg; re, of; shumba, lion)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Shona",
+    "primaryTradition": "Shona",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "c. 1840 – 27 April 1898"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "c. 1840 – 27 April 1898",
+        "eraOrdering": 0,
+        "startEvent": "Gumboreshumba, the historical man who served as the medium of the Kaguvi spirit, was tried by the colonial administration and hanged at Salisbury on 27 April 1898.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Terence O. Ranger, Revolt in Southern Rhodesia, 1896-97: A Study in African Resistance (London: Heinemann, 1967)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "spirit-mediumship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "svikiro",
+          "script": "Latin",
+          "rom": "svikiro (spirit-medium)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Lan, Guns and Rain: Guerrillas and Spirit Mediums in Zimbabwe (London: James Currey; Berkeley: University of California Press, 1985)."
+          }
+        ]
+      },
+      {
+        "sphereId": "war-and-resistance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "chimurenga",
+          "script": "Latin",
+          "rom": "chimurenga (uprising)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "D. N. Beach, \"'Chimurenga': The Shona Rising of 1896-97,\" Journal of African History 20, no. 3 (1979): 395-420."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "voice_kaguvi_spirit",
+        "name": "to be possessed by and speak for the Kaguvi ancestral spirit",
+        "term": {
+          "value": "kusvikirwa",
+          "script": "Latin",
+          "rom": "kusvikirwa (to be possessed by a spirit)"
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "David Lan, Guns and Rain: Guerrillas and Spirit Mediums in Zimbabwe (London: James Currey; Berkeley: University of California Press, 1985)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Sekuru Kaguvi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "D. N. Beach, War and Politics in Zimbabwe, 1840-1900 (Gweru: Mambo Press, 1986)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "shona_kaguvi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Terence O. Ranger, Revolt in Southern Rhodesia, 1896-97: A Study in African Resistance (London: Heinemann, 1967)."
+          }
+        ],
+        "notes": "Gumboreshumba was the human vessel through whom the Kaguvi spirit spoke, standing to that spirit exactly as Charwe stood to the Nehanda spirit."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Gumboreshumba (c.1870-1898) was the historical spirit-medium of the Kaguvi mhondoro, a leader of the 1896-97 Shona rising who was hanged by the colonial authorities on 27 April 1898.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Terence O. Ranger, Revolt in Southern Rhodesia, 1896-97: A Study in African Resistance (London: Heinemann, 1967)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "D. N. Beach, \"'Chimurenga': The Shona Rising of 1896-97,\" Journal of African History 20, no. 3 (1979): 395-420."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Gumboreshumba was the flesh-and-blood medium possessed by the Kaguvi spirit during the First Chimurenga. Operating out of the Chishawasha and Goromonzi districts, he preached armed resistance to the British South Africa Company and worked in concert with Charwe, the medium of Nehanda. Captured after the collapse of the rising, he was convicted of complicity in settler killings and hanged at Salisbury (Harare) on 27 April 1898, the same day as Charwe. He stands to the Kaguvi spirit precisely as the mortal Charwe stands to the Nehanda spirit in the Shona record."
+  },
+  {
+    "id": "shona_murenga",
+    "name": {
+      "primary": "Elephant-Headed Founder War-Ancestor",
+      "alt": [
+        "Murenga",
+        "Murenga Sororenzou",
+        "Murenga Sororenzou Pfumojena",
+        "Pfumojena",
+        "Sororenzou"
+      ],
+      "transliterations": {
+        "sn": "Murenga Sororenzou",
+        "etymology": "soro re nzou, 'head of an elephant' (soro, head; nzou, elephant); the epithet Pfumojena means 'white spear' (pfumo, spear; jena, white); the war-name chimurenga ('that which pertains to Murenga') derives from his name."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Shona",
+    "primaryTradition": "Shona",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "founding ancestral era; mediums active into the 19th century"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "founding ancestral era; mediums active into the 19th century",
+        "eraOrdering": 0,
+        "startEvent": "Murenga Sororenzou is remembered in Shona oral tradition as a legendary founder-ancestor and mighty warrior whose fighting spirit gave its name to the chimurenga wars of liberation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alec J. C. Pongweni, Songs that Won the Liberation War (Harare: College Press, 1982)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-and-resistance",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "chimurenga",
+          "script": "Latin",
+          "rom": "chimurenga (war of resistance/liberation), derived from his name"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maurice T. Vambe, African Oral Story-Telling Tradition and the Zimbabwean Novel in English (Pretoria: Unisa Press, 2004)."
+          }
+        ]
+      },
+      {
+        "sphereId": "founding-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "madzitateguru",
+          "script": "Latin",
+          "rom": "madzitateguru (founding ancestors)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alec J. C. Pongweni, Songs that Won the Liberation War (Harare: College Press, 1982)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rally_with_warsongs",
+        "name": "to rally warriors and sustain their courage with war-songs",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alec J. C. Pongweni, Songs that Won the Liberation War (Harare: College Press, 1982)."
+          }
+        ]
+      },
+      {
+        "id": "embody_resistance",
+        "name": "to embody and inspire the spirit of resistance against tyranny",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maurice T. Vambe, African Oral Story-Telling Tradition and the Zimbabwean Novel in English (Pretoria: Unisa Press, 2004)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "shona_pfumojena",
+        "name": "Pfumojena (the white spear)",
+        "kind": "weapon",
+        "role": "war emblem carried in his epithet Pfumojena, 'the white spear', symbol of his martial leadership",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maurice T. Vambe, African Oral Story-Telling Tradition and the Zimbabwean Novel in English (Pretoria: Unisa Press, 2004)."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Sororenzou",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Alec J. C. Pongweni, Songs that Won the Liberation War (Harare: College Press, 1982)."
+          }
+        ]
+      },
+      {
+        "original": "Pfumojena",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Maurice T. Vambe, African Oral Story-Telling Tradition and the Zimbabwean Novel in English (Pretoria: Unisa Press, 2004)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "shona_chaminuka",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solomon M. Mutswairo, Introduction to Shona Culture (Kadoma: Juta Zimbabwe, 1996)."
+          }
+        ],
+        "notes": "Shona oral genealogies name Chaminuka among the children of Murenga, the founder-ancestor of the nation."
+      },
+      {
+        "kind": "father-of",
+        "personId": "shona_nehanda",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Solomon M. Mutswairo, Introduction to Shona Culture (Kadoma: Juta Zimbabwe, 1996)."
+          }
+        ],
+        "notes": "The same genealogies count Nehanda among Murenga's children, making him the progenitor of the great royal ancestor-spirits."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Murenga Sororenzou (Pfumojena) is the legendary Shona founder-ancestor and war-hero whose name is the root of chimurenga and who is remembered as progenitor of Chaminuka and Nehanda.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alec J. C. Pongweni, Songs that Won the Liberation War (Harare: College Press, 1982)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Maurice T. Vambe, African Oral Story-Telling Tradition and the Zimbabwean Novel in English (Pretoria: Unisa Press, 2004)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Murenga Sororenzou, also called Pfumojena ('the white spear'), is a legendary founder-ancestor of the Shona, pictured in oral tradition as a giant warrior whose head was the size of an elephant's (soro renzou). Renowned for his fighting spirit and for composing war-songs to hearten his soldiers, he is venerated as the great ancestral spirit of war. His name is the acknowledged root of the word chimurenga, the term for both the anti-colonial risings of 1896-97 and the liberation war of the 1960s-70s, and later the popular music genre born of that struggle. Shona genealogies place him at the head of the ancestral line, counting Chaminuka and Nehanda among his descendants."
+  }
+]
+```

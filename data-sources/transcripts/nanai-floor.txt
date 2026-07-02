@@ -1,0 +1,318 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Nanai
+Era (registered, exact): "Nanai traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (2 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added two genuinely individuated named beings that the existing five-figure set omitted: Mameldi (Мамельди/Mamaldi), the Nanai female progenitress-demiurge who twists the earth out of nine serpent-streams and bears the first human from a drop of her blood, and Na Enduri (На эндури, 'Earth-Deity'), the aged earth-goddess of the muddy island whose soil the sky-god Boa Enduri forms into the continents. Both are attested across multiple scholarly sources (T. Yu. Sem's monograph and dissertation on the Tungus-Manchu pantheon, V. A. Avrorin's Nanai folklore corpus, I. A. Lopatin's Goldi ethnography, and A. V. Smolyak), and both wire into the existing pantheon — Mameldi as the maternal counterpart-consort of Khado, and Na Enduri as the lower-world complement of Boa Enduri. I deliberately excluded the three-suns hero "Guranta/Goronta" (already an alias of the existing Khado) and declined to add spirit-classes such as the dzhulin clan guardians, the ayami tutelary spirits, or the unnamed three suns, since scholarship treats these as categories rather than single named individuals.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "nanai_mameldi",
+    "name": {
+      "primary": "Mameldi, the Progenitress and Shaper of the Earth",
+      "alt": [
+        "Mameldi",
+        "Myameldi",
+        "Mamaldi",
+        "Mamelʹdi",
+        "Mameldy"
+      ],
+      "transliterations": {
+        "Nanai": "Мамельди",
+        "russian": "Мямельди",
+        "etymology": "Connected by ethnographers with the Tungus-Manchu element mama, 'grandmother, venerable female ancestress', marking her as the primordial mother of the clans (T. Yu. Sem)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nanai",
+    "primaryTradition": "Nanai",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Nanai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Nanai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Nanai cosmogonic myth chanted by the shaman Bogdano Onenko in 1927 during the great memorial rite for sending the soul to the land of the dead, Mameldi the female first-ancestress twists the earth into being out of nine serpent-streams and, from a drop of blood on her finger, brings forth the first human being.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon (semantika obrazov i etnokul'turnye svyazi). Istoriko-etnograficheskie ocherki. St. Petersburg: Izd-vo SPbGU, 2015."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Avrorin, V. A. Materialy po nanaiskomu yazyku i fol'kloru. Leningrad: Nauka, 1986."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "creation-cosmogony",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "na",
+          "script": "Latin",
+          "rom": "earth, land"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon. St. Petersburg: Izd-vo SPbGU, 2015."
+          }
+        ]
+      },
+      {
+        "sphereId": "ancestry-and-progeniture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "mama",
+          "script": "Latin",
+          "rom": "female ancestress, grandmother"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Semantika obrazov bogini-praroditel'nitsy u tunguso-manchzhurskikh narodov // Izvestiya RGPU im. A. I. Gertsena. Aspirantskie tetradi. St. Petersburg, 2007."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shape_earth_from_serpent_streams",
+        "name": "to twist the dry earth into being out of nine serpent-streams",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The serpent, coiling the primeval waters, is the creative instrument through which the land is wrung out of the flood.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon. St. Petersburg: Izd-vo SPbGU, 2015."
+          }
+        ]
+      },
+      {
+        "id": "bring_forth_first_human",
+        "name": "to bring forth the first human from a drop of her own blood",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "All later humanity is descended from this first person born of the ancestress.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Avrorin, V. A. Materialy po nanaiskomu yazyku i fol'kloru. Leningrad: Nauka, 1986."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "nanai_khado",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon. St. Petersburg: Izd-vo SPbGU, 2015."
+          }
+        ],
+        "notes": "Mameldi is paired with the first-ancestor and culture hero Khado (Khadau/Guranta): she embodies the maternal line and he the paternal line, and together they order the cosmos and populate the earth. In a widely recorded variant the two quarrel after the creation and both turn to stone, Khadau becoming a rock on the Keppi River and his wife a high mountain on Sakhalin; a separate variant instead casts Khado as her son."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mameldi is the Nanai progenitress-goddess and demiurge who shaped the earth out of nine serpent-streams and from whom the first human and all the clans descend.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Semantika obrazov bogini-praroditel'nitsy u tunguso-manchzhurskikh narodov // Izvestiya RGPU im. A. I. Gertsena. Aspirantskie tetradi. St. Petersburg, 2007."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon (semantika obrazov i etnokul'turnye svyazi). St. Petersburg: Izd-vo SPbGU, 2015."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Smolyak, A. V. Shaman: lichnost', funktsii, mirovozzrenie (narody Nizhnego Amura). Moscow: Nauka, 1991."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mameldi (Nanai Мамельди, also Mямельди/Myameldi and Mamaldi) is the female first-ancestress and demiurge of Nanai cosmogony, the maternal counterpart to the culture hero Khado. In the myth recorded from the shaman Bogdano Onenko in 1927 she coils the primeval waters into land by means of nine serpent-streams, and from a drop of blood on her finger the first human is born, so that she stands at the head of the whole human line. Ethnographers group her with a wider Tungus-Manchu family of ancestress figures whose name-element mama denotes the venerable grandmother, and read her together with Khado as the paired symbols of the maternal and paternal clans. Her myth also accounts for the coming of the first death and for the transformation of an earlier race of giants into ordinary people."
+  },
+  {
+    "id": "nanai_na_enduri",
+    "name": {
+      "primary": "Na Enduri, the Earth-Deity of the Muddy Island",
+      "alt": [
+        "Na Enduri",
+        "Na endurni",
+        "Na Enduli",
+        "Na-Endur"
+      ],
+      "transliterations": {
+        "Nanai": "На эндури",
+        "russian": "На-эндурни",
+        "etymology": "na 'earth, land, ground' + enduri 'deity, celestial spirit' (a widespread Tungus-Manchu theonymic element), hence 'the Earth-Deity', the chthonic counterpart of Boa Enduri, 'the Sky-Deity'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nanai",
+    "primaryTradition": "Nanai",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Nanai traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Nanai traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Nanai earth-diver creation myth the sky-god Boa Enduri, in eagle form, alights on a tiny muddy island the size of an elk's head in the primeval waters, where he finds the old earth-goddess Na Enduri sitting by her fire; she declares herself the lower earth-deity to his heavenly one and lets him carry off as much of her earth as he can hold, from which the continents are made.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lopatin, I. A. Gol'dy amurskie, ussuriiskie i sungariiskie: opyt etnograficheskogo issledovaniya. Vladivostok, 1922."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon (semantika obrazov i etnokul'turnye svyazi). St. Petersburg: Izd-vo SPbGU, 2015."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-and-land",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "na",
+          "script": "Latin",
+          "rom": "earth, land, ground"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon. St. Petersburg: Izd-vo SPbGU, 2015."
+          }
+        ]
+      },
+      {
+        "sphereId": "creation-cosmogony",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "enduri",
+          "script": "Latin",
+          "rom": "deity, celestial spirit"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Verkhovnyi panteon tunguso-manchzhurskikh narodov Sibiri i Dal'nego Vostoka (XIX–XX vv.): tipologiya i semantika obrazov. Diss. kand. ist. nauk. St. Petersburg, 2007."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hold_the_primal_earth",
+        "name": "to hold the first dry earth on her island in the primeval waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Before the world exists she alone possesses solid ground, a fire, and dwelling in the midst of the flood.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lopatin, I. A. Gol'dy amurskie, ussuriiskie i sungariiskie. Vladivostok, 1922."
+          }
+        ]
+      },
+      {
+        "id": "grant_earth_for_continents",
+        "name": "to grant earth for the forming of the continents",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The soil she gives to the sky-god becomes land wherever he sets it down, so that the middle world grows from her gift.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon. St. Petersburg: Izd-vo SPbGU, 2015."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "nanai_boa_enduri",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon. St. Petersburg: Izd-vo SPbGU, 2015."
+          }
+        ],
+        "notes": "Na Enduri names herself the lower, earthly deity in contrast to Boa Enduri, the heavenly one who rules the ninth sky; the two form the complementary earth-and-sky pair of the Nanai cosmos, with the supreme celestial Enduri at the apex of the pantheon. From the earth she yields to him the sky-god shapes the continents of the middle world."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Na Enduri is the Nanai earth-deity, an old goddess dwelling on a muddy island in the primeval waters, from whose soil the sky-god Boa Enduri forms the continents.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Lopatin, I. A. Gol'dy amurskie, ussuriiskie i sungariiskie: opyt etnograficheskogo issledovaniya. Vladivostok, 1922."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Kartina mira tungusov: panteon (semantika obrazov i etnokul'turnye svyazi). St. Petersburg: Izd-vo SPbGU, 2015."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sem, T. Yu. Verkhovnyi panteon tunguso-manchzhurskikh narodov Sibiri i Dal'nego Vostoka (XIX–XX vv.): tipologiya i semantika obrazov. Diss. kand. ist. nauk. St. Petersburg, 2007."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Na Enduri (Nanai На эндури, 'Earth-Deity', also recorded as Na-endurni) is the chthonic counterpart of the sky-lord Boa Enduri in Nanai three-world cosmology, her name pairing na, 'earth', with the pan-Tungus-Manchu theonym enduri, 'deity'. In the earth-diver creation myth she appears as an aged goddess seated by her fire on a single muddy island, the size of an elk's head, amid the primeval sea; when the eagle-shaped sky-god descends she distinguishes herself as the lower, earthly power against his heavenly one and permits him to carry off her soil, which becomes solid land wherever he lets it fall, so that the whole middle world grows out of her gift. She thus personifies the earth as a divine being and completes the vertical scheme of upper, middle, and lower worlds central to Nanai belief."
+  }
+]
+```

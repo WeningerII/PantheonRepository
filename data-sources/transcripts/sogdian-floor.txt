@@ -1,0 +1,769 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Sogdian
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five individuated deities well attested for Sogdiana beyond the existing set: Tish (Tištrya), the rain-and-star god reconstructed as Nana's consort; Wašaγn (Verethragna), the victory god and patron of caravaneers; Miši (Mithra), the solar guardian of covenants; Rašn (Rašnu), the scale-holding judge attested on the Afrasiyab ossuary; and Farn (xᵛarənah), the personified fortune/glory. Each is wired into the pantheon (Tish as consort-of Nana; all five subordinate-to Adbag; Miši and Rašn as the paired divine judges of the Chinvat Bridge). Sources are Grenet's Journal Asiatique 2017 pantheon study and BAI 2010 article, Shenkar 2014, Compareti 2017, Grenet–Marshak 1998, de la Vaissière 2005, Boyce 1975, Panaino and Gnoli in Encyclopaedia Iranica. I stopped here deliberately: further Sogdian theonyms attested in onomastics (e.g. Srosh/Sraosha) are named in the judgment triad but are less individuated in surviving Sogdian material, so adding them would be padding rather than genuine individuation.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "sogdian_tish",
+    "name": {
+      "primary": "Tish",
+      "alt": [
+        "Tiš",
+        "Tishtrya",
+        "Tištrya"
+      ],
+      "transliterations": {
+        "sogdian": "tyš",
+        "avestan": "Tištrya",
+        "etymology": "From Avestan Tištrya, the yazata of the star Sirius and bringer of rains; in Sogdiana identified with Mesopotamian Nabu as the consort of Nana."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sogdian",
+    "primaryTradition": "Sogdian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Adopted into the Sogdian heavens as the rain-bringing star god and paired with the goddess Nana as a divine couple modelled on the Mesopotamian pairing of Nanaya and Nabu.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Compareti, Matteo. 'Nana and Tish in Sogdiana: The Adoption from Mesopotamia of a Divine Couple.' DABIR (Digital Archive of Brief notes & Iran Review) 4 (2017): 1–14."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rain-and-fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tyš",
+          "script": "Sogdian",
+          "rom": "Tiš"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Panaino, Antonio. 'Tištrya.' In Encyclopaedia Iranica (online edition, 2009)."
+          }
+        ]
+      },
+      {
+        "sphereId": "stars-and-astral-order",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Tištrya",
+          "script": "Avestan",
+          "rom": "Tishtrya"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Boyce, Mary. A History of Zoroastrianism, Vol. I: The Early Period. Leiden: Brill, 1975."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_seasonal_rains",
+        "name": "to bring the seasonal rains",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Panaino, Antonio. 'Tištrya.' In Encyclopaedia Iranica (online edition, 2009)."
+          }
+        ]
+      },
+      {
+        "id": "shine_as_star_sirius",
+        "name": "to shine as the star Sirius",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Boyce, Mary. A History of Zoroastrianism, Vol. I: The Early Period. Leiden: Brill, 1975."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sogdian_tish_white_stallion",
+        "name": "White stallion form",
+        "kind": "emblem",
+        "role": "The shining white horse in which Tishtrya descends to do battle for the rains, a form inherited from the Avestan myth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Panaino, Antonio. 'Tištrya.' In Encyclopaedia Iranica (online edition, 2009)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "consort-of",
+        "personId": "sogdian_nana",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Compareti, Matteo. 'Nana and Tish in Sogdiana: The Adoption from Mesopotamia of a Divine Couple.' DABIR (Digital Archive of Brief notes & Iran Review) 4 (2017): 1–14."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz, and Boris Marshak. 'Le mythe de Nana dans l'art de la Sogdiane.' Arts Asiatiques 53 (1998): 5–18."
+          }
+        ],
+        "notes": "Sogdian scholarship reconstructs Tish and Nana as a divine couple, with Tish standing in the place occupied by Nabu beside Nanaya in Mesopotamian tradition."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "sogdian_adbag",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'The Religion and the Pantheon of the Sogdians (5th–8th centuries CE) in Light of their Sociopolitical Structures.' Journal Asiatique 305, no. 2 (2017): 191–209."
+          }
+        ],
+        "notes": "As one of the yazatas of the Sogdian heavens, Tish stands below the supreme god Adbag."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tish is the Sogdian rain-and-star god, continuation of Avestan Tištrya, worshipped as the divine consort of the goddess Nana.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Compareti, Matteo. 'Nana and Tish in Sogdiana: The Adoption from Mesopotamia of a Divine Couple.' DABIR (Digital Archive of Brief notes & Iran Review) 4 (2017): 1–14."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz, and Boris Marshak. 'Le mythe de Nana dans l'art de la Sogdiane.' Arts Asiatiques 53 (1998): 5–18."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Panaino, Antonio. 'Tištrya.' In Encyclopaedia Iranica (online edition, 2009)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tish (Sogdian tyš) is the Sogdian form of the Avestan yazata Tištrya, the deity of the star Sirius who was believed to battle the demon of drought and release the seasonal rains. In Sogdiana his cult was fused with that of the Mesopotamian scribe-god Nabu, so that scholars reconstruct Tish and the goddess Nana as a divine couple parallel to Nanaya and Nabu. He belongs to the astral and fertility sphere of the Sogdian pantheon and stands among the yazatas beneath the supreme god Adbag."
+  },
+  {
+    "id": "sogdian_washagn",
+    "name": {
+      "primary": "Wašaγn",
+      "alt": [
+        "Washagn",
+        "Wašaγn",
+        "Wšγn",
+        "Verethragna"
+      ],
+      "transliterations": {
+        "sogdian": "wšγn",
+        "avestan": "Vərəθraγna",
+        "etymology": "From Avestan Vərəθraγna, 'the smiting of resistance', i.e. victory; the Sogdian god of victory and patron of caravaneers."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sogdian",
+    "primaryTradition": "Sogdian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Venerated across Sogdiana as the giver of victory and guardian of travellers, a role that made him especially dear to the merchant communities of the Silk Road.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "de la Vaissière, Étienne. Sogdian Traders: A History. Translated by James Ward. Leiden: Brill, 2005."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-and-victory",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "wšγn",
+          "script": "Sogdian",
+          "rom": "Wašaγn"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'The Religion and the Pantheon of the Sogdians (5th–8th centuries CE) in Light of their Sociopolitical Structures.' Journal Asiatique 305, no. 2 (2017): 191–209."
+          }
+        ]
+      },
+      {
+        "sphereId": "protection-of-travellers",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Vərəθraγna",
+          "script": "Avestan",
+          "rom": "Verethragna"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "de la Vaissière, Étienne. Sogdian Traders: A History. Translated by James Ward. Leiden: Brill, 2005."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_victory_in_battle",
+        "name": "to grant victory in battle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'The Religion and the Pantheon of the Sogdians (5th–8th centuries CE) in Light of their Sociopolitical Structures.' Journal Asiatique 305, no. 2 (2017): 191–209."
+          }
+        ]
+      },
+      {
+        "id": "guard_travellers_on_the_road",
+        "name": "to guard travellers on the road",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "de la Vaissière, Étienne. Sogdian Traders: A History. Translated by James Ward. Leiden: Brill, 2005."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sogdian_washagn_winged_camel",
+        "name": "Winged Bactrian camel",
+        "kind": "emblem",
+        "role": "One of the incarnations of Verethragna, the two-humped camel appears in Sogdian art, often winged, as a fitting emblem for the god of the caravan roads.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "sogdian_adbag",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'The Religion and the Pantheon of the Sogdians (5th–8th centuries CE) in Light of their Sociopolitical Structures.' Journal Asiatique 305, no. 2 (2017): 191–209."
+          }
+        ],
+        "notes": "The war god belongs to the retinue of yazatas serving beneath the supreme god Adbag."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Wašaγn is the Sogdian god of victory (Avestan Verethragna), a patron of warriors and caravan travellers popular among Silk Road merchants.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "de la Vaissière, Étienne. Sogdian Traders: A History. Translated by James Ward. Leiden: Brill, 2005."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'The Religion and the Pantheon of the Sogdians (5th–8th centuries CE) in Light of their Sociopolitical Structures.' Journal Asiatique 305, no. 2 (2017): 191–209."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Wašaγn (Sogdian wšγn) is the Sogdian continuation of the Avestan victory-god Vərəθraγna, the personified 'smiting of resistance'. Beyond his martial function he was cherished as a protector of travellers, a role that gave him particular importance among the merchant communities of Sogdiana whose livelihood depended on the caravan roads. In art his incarnation as a two-humped, sometimes winged, Bactrian camel provided an apt emblem. He ranks among the yazatas of the Sogdian pantheon beneath the supreme god Adbag."
+  },
+  {
+    "id": "sogdian_mishi",
+    "name": {
+      "primary": "Miši",
+      "alt": [
+        "Mihr",
+        "Mišē",
+        "Myšy",
+        "Mithra"
+      ],
+      "transliterations": {
+        "sogdian": "myšy",
+        "avestan": "Miθra",
+        "etymology": "From Avestan Miθra, 'covenant', the yazata of oaths and the sun; Sogdian Miši corresponds to Middle Persian Mihr."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sogdian",
+    "primaryTradition": "Sogdian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Honoured as the solar guardian of covenants who, together with Rašn and Srosh, presides over the judgment of the soul at the Chinvat Bridge, a scene depicted on Sogdian ossuaries.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "covenants-and-oaths",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "myšy",
+          "script": "Sogdian",
+          "rom": "Miši"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ]
+      },
+      {
+        "sphereId": "sun-and-light",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Miθra",
+          "script": "Avestan",
+          "rom": "Mithra"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside_over_judgment_of_souls",
+        "name": "to preside over the judgment of souls",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          }
+        ]
+      },
+      {
+        "id": "uphold_covenants_and_oaths",
+        "name": "to uphold covenants and oaths",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sogdian_mishi_rayed_nimbus",
+        "name": "Rayed solar nimbus",
+        "kind": "regalia",
+        "role": "The radiate halo marking Miši as the solar deity in Sogdian and wider eastern Iranian iconography.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "sogdian_rashn",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          }
+        ],
+        "notes": "Miši and Rašn act together, with Srosh, as the tribunal that judges the soul at the Chinvat Bridge in Sogdian funerary imagery."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "sogdian_adbag",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'The Religion and the Pantheon of the Sogdians (5th–8th centuries CE) in Light of their Sociopolitical Structures.' Journal Asiatique 305, no. 2 (2017): 191–209."
+          }
+        ],
+        "notes": "The sun-god ranks among the yazatas serving beneath the supreme god Adbag."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Miši is the Sogdian sun-god and guardian of covenants (Avestan Mithra), one of the three divine judges of the dead in Sogdian funerary art.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Miši (Sogdian myšy) is the Sogdian form of the Avestan yazata Miθra, the god of the covenant and of the sun, corresponding to Middle Persian Mihr. In Sogdian religion he is prominent as the lord of oaths and, alongside Rašn (justice) and Srosh (obedience), as one of the three judges who weigh the soul at the Chinvat Bridge; such tribunals are depicted on Sogdian ossuaries from Samarkand and the Shahr-i Sabz region. He is marked in art by a radiate solar nimbus and ranks among the yazatas beneath the supreme god Adbag."
+  },
+  {
+    "id": "sogdian_rashn",
+    "name": {
+      "primary": "Rašn",
+      "alt": [
+        "Rashn",
+        "Ršn",
+        "Rashnu",
+        "Rašnu"
+      ],
+      "transliterations": {
+        "sogdian": "ršn",
+        "avestan": "Rašnu",
+        "etymology": "From Avestan Rašnu, 'the just one', the yazata of justice who holds the scales weighing the deeds of the dead."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sogdian",
+    "primaryTradition": "Sogdian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Depicted on Sogdian ossuaries as the crowned deity holding the scales of justice, weighing the deeds of the departed soul at the judgment of the Chinvat Bridge.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "justice-and-judgment",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ršn",
+          "script": "Sogdian",
+          "rom": "Rašn"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "weigh_the_deeds_of_the_dead",
+        "name": "to weigh the deeds of the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sogdian_rashn_scales",
+        "name": "Scales of justice",
+        "kind": "emblem",
+        "role": "The balance held by the seated, three-peaked-crowned deity on the Afrasiyab ossuary, used to weigh the good and evil deeds of the soul.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "sogdian_mishi",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          }
+        ],
+        "notes": "Rašn and Miši form, with Srosh, the tribunal that judges the soul at the Chinvat Bridge in Sogdian funerary imagery."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "sogdian_adbag",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'The Religion and the Pantheon of the Sogdians (5th–8th centuries CE) in Light of their Sociopolitical Structures.' Journal Asiatique 305, no. 2 (2017): 191–209."
+          }
+        ],
+        "notes": "The god of justice ranks among the yazatas serving beneath the supreme god Adbag."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Rašn is the Sogdian god of justice (Avestan Rašnu) who holds the scales weighing the deeds of the dead, attested in Sogdian ossuary iconography.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'Iranian Gods in Hindu Garb: The Zoroastrian Pantheon of the Bactrians and Sogdians, Second–Eighth Centuries.' Bulletin of the Asia Institute 20 (2006 [2010]): 87–99."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Rašn (Sogdian ršn) is the Sogdian form of the Avestan yazata Rašnu, the personification of justice. In Sogdian funerary art he appears as a seated, three-peaked-crowned deity holding a pair of scales, weighing the good and evil deeds of the deceased in the judgment scene at the Chinvat Bridge, most famously on an ossuary from Afrasiyab (old Samarkand). He acts together with Miši and Srosh as one of the three divine judges and ranks among the yazatas beneath the supreme god Adbag."
+  },
+  {
+    "id": "sogdian_farn",
+    "name": {
+      "primary": "Farn",
+      "alt": [
+        "Frn",
+        "Pharro",
+        "Xᵛarənah",
+        "Khwarenah"
+      ],
+      "transliterations": {
+        "sogdian": "frn",
+        "avestan": "Xᵛarənah",
+        "etymology": "From Avestan xᵛarənah, 'glory, splendour, (good) fortune'; Sogdian farn, the personified divine fortune and royal glory."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sogdian",
+    "primaryTradition": "Sogdian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Personified in the eastern Iranian world as the divine fortune and glory bestowed on kings and heroes, marked in Sogdian art by the flaming nimbus and shoulder-flames.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fortune-and-glory",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "frn",
+          "script": "Sogdian",
+          "rom": "farn"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gnoli, Gherardo. 'Farr(ah).' In Encyclopaedia Iranica, vol. IX/3 (1999): 312–319."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_fortune_and_royal_glory",
+        "name": "to bestow fortune and royal glory",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Gnoli, Gherardo. 'Farr(ah).' In Encyclopaedia Iranica, vol. IX/3 (1999): 312–319."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sogdian_farn_flaming_nimbus",
+        "name": "Flaming nimbus and shoulder-flames",
+        "kind": "regalia",
+        "role": "In Sogdian art the divine fortune of a deity or ruler is signalled by a flaming halo and flames rising from the shoulders, an extension of Kushan practice.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "sogdian_adbag",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grenet, Frantz. 'The Religion and the Pantheon of the Sogdians (5th–8th centuries CE) in Light of their Sociopolitical Structures.' Journal Asiatique 305, no. 2 (2017): 191–209."
+          }
+        ],
+        "notes": "The personified fortune belongs to the Sogdian divine order beneath the supreme god Adbag."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Farn is the Sogdian personification of divine fortune and royal glory (Avestan xᵛarənah), widely attested in Sogdian names and iconography.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Gnoli, Gherardo. 'Farr(ah).' In Encyclopaedia Iranica, vol. IX/3 (1999): 312–319."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Shenkar, Michael. Intangible Spirits and Graven Images: The Iconography of Deities in the Pre-Islamic Iranian World. Leiden: Brill, 2014."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Farn (Sogdian frn) is the Sogdian continuation of the Avestan xᵛarənah, the 'glory' or 'good fortune' that was personified as a divine power throughout the eastern Iranian world, corresponding to Bactrian Pharro on Kushan coinage. In Sogdiana the concept was both a widely used theophoric element in personal names and a numinous force marked in art by the flaming nimbus and shoulder-flames that distinguish gods, kings and heroes. He belongs to the divine order of the Sogdian pantheon beneath the supreme god Adbag."
+  }
+]
+```

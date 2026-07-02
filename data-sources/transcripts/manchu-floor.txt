@@ -1,0 +1,469 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Manchu
+Era (registered, exact): "Manchu traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three genuinely individuated, well-attested figures absent from the existing set. Fekulen (the heavenly maiden) and her divinely-born son Bukūri Yongšon are the core actors of the canonical Manchu/Qing origin myth preserved in the Manzhou Shilu and analyzed by Crossley, Elliott, and Lin Sun; I wired Bukūri to Fekulen via parentIds and a mother-of relation. Monggaldai Nakcu is the named underworld gate-warden and soul-fetcher of the Tale of the Nišan Shamaness, which I subordinated to the existing figure Ilmun Han per Nowak & Durrant and Durrant's Signs analysis. I deliberately excluded the two barely-individuated bathing sisters (Enggulen, Jenggulen), the mortal plot-figure Sergudai Fiyanggo, and the Chinese-derived Guan-mafa, since scholarship does not develop them as distinct divine personalities beyond the figures given here.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "manchu_fekulen",
+    "name": {
+      "primary": "Fekulen, the Heavenly Maiden",
+      "alt": [
+        "Fekulen",
+        "Fokulon",
+        "Fekulan",
+        "佛库伦"
+      ],
+      "transliterations": {
+        "manchu": "Fekulen",
+        "chinese": "佛库伦",
+        "etymology": "A Manchu celestial maiden's name; some scholars connect the trio of maiden-names (Enggulen, Jenggulen, Fekulen) to reduplicated kin-syllables such as 'fefe' (mother)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Manchu",
+    "primaryTradition": "Manchu",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Manchu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Manchu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Youngest of three heavenly maidens who descended to bathe in the lake Bulhūri Omo below the Changbai Mountains, Fekulen swallowed a red fruit dropped by a sacred magpie and conceived the Manchu progenitor.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pamela Kyle Crossley, The Manchus (Oxford: Blackwell, 1997)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "celestial-realm",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lin Sun, 'Writing an Empire: An Analysis of the Manchu Origin Myth and the Dynamics of Manchu Identity,' Journal of Chinese History 1 (2017): 93-109"
+          }
+        ]
+      },
+      {
+        "sphereId": "divine-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mark C. Elliott, The Manchu Way: The Eight Banners and Ethnic Identity in Late Imperial China (Stanford: Stanford University Press, 2001)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "conceive_by_divine_fruit",
+        "name": "to conceive a son by swallowing a heaven-sent fruit",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pamela Kyle Crossley, The Manchus (Oxford: Blackwell, 1997)"
+          }
+        ]
+      },
+      {
+        "id": "ascend_to_heaven",
+        "name": "to ascend back to the heavens after bearing her child",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lin Sun, 'Writing an Empire: An Analysis of the Manchu Origin Myth and the Dynamics of Manchu Identity,' Journal of Chinese History 1 (2017): 93-109"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "manchu_bulhuri_omo",
+        "name": "Bulhūri Omo",
+        "kind": "sacred-site",
+        "role": "The mountain lake in which the three heavenly maidens bathed and where Fekulen conceived Bukūri Yongšon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pamela Kyle Crossley, The Manchus (Oxford: Blackwell, 1997)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "manchu_bukuri_yongson",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mark C. Elliott, The Manchu Way (Stanford: Stanford University Press, 2001)"
+          }
+        ],
+        "notes": "Fekulen bore Bukūri Yongšon after eating the red fruit, named him, taught him his lineage, and set him adrift downriver before returning to the sky."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Fekulen is the youngest of three heavenly maidens of Manchu origin myth who, having eaten a magpie-dropped red fruit while bathing in Bulhūri Omo, gave birth to Bukūri Yongšon, ancestor of the Aisin Gioro imperial clan.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Pamela Kyle Crossley, The Manchus (Oxford: Blackwell, 1997)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lin Sun, 'Writing an Empire: An Analysis of the Manchu Origin Myth and the Dynamics of Manchu Identity,' Journal of Chinese History 1 (2017): 93-109"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Fekulen is the celestial mother-figure of the Manchu foundation myth preserved in the Qing dynastic records (the Manzhou Shilu and later the Draft History of Qing). In the canonical account three heavenly maidens, Enggulen, Jenggulen, and Fekulen, descended to bathe at the lake Bulhūri Omo at the foot of the Changbai Mountains; a sacred magpie let fall a red fruit onto Fekulen's garments, and on eating it she became pregnant and could not ascend with her sisters. She bore a boy who could speak at birth, gave him the clan-name Aisin Gioro and the personal name Bukūri Yongšon, instructed him in his heavenly origin, and set him upon a small boat to float downstream before she herself returned to heaven. Through this virgin-birth motif Fekulen serves as the divine progenitrix legitimating the ancestry of the Qing imperial house."
+  },
+  {
+    "id": "manchu_bukuri_yongson",
+    "name": {
+      "primary": "Bukūri Yongšon, Progenitor of the Aisin Gioro",
+      "alt": [
+        "Bukūri Yongšon",
+        "Bukuri Yongson",
+        "Bukuri Yongšon",
+        "布库里雍顺"
+      ],
+      "transliterations": {
+        "manchu": "Bukūri Yongšon",
+        "chinese": "布库里雍順",
+        "etymology": "The personal name Yongšon borne by the child of Mount Bukūri; taken with the bestowed clan-surname Aisin Gioro, 'golden clan'"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Manchu",
+    "primaryTradition": "Manchu",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "manchu_fekulen"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "Manchu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Manchu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Born of the heavenly maiden Fekulen after she ate a heaven-sent red fruit, Bukūri Yongšon was able to speak from birth and was set adrift on the river to found the ruling line of the Manchus.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pamela Kyle Crossley, The Manchus (Oxford: Blackwell, 1997)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "founding-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Aisin Gioro",
+          "script": "Latin",
+          "rom": "golden clan"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mark C. Elliott, The Manchu Way (Stanford: Stanford University Press, 2001)"
+          }
+        ]
+      },
+      {
+        "sphereId": "sovereignty",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Odoli",
+          "script": "Latin",
+          "rom": "Odoli (settlement)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lin Sun, 'Writing an Empire: An Analysis of the Manchu Origin Myth and the Dynamics of Manchu Identity,' Journal of Chinese History 1 (2017): 93-109"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "speak_from_birth",
+        "name": "to speak and reason from the moment of birth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pamela Kyle Crossley, The Manchus (Oxford: Blackwell, 1997)"
+          }
+        ]
+      },
+      {
+        "id": "pacify_warring_clans",
+        "name": "to end the feuding of the tribes and be raised as their chief",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lin Sun, 'Writing an Empire: An Analysis of the Manchu Origin Myth and the Dynamics of Manchu Identity,' Journal of Chinese History 1 (2017): 93-109"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "manchu_bukuri_boat",
+        "name": "Fekulen's small boat",
+        "kind": "vessel",
+        "role": "The little craft on which his heavenly mother set the newborn to drift down the Sunggari (Songhua) river toward the land where he would be made chief",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pamela Kyle Crossley, The Manchus (Oxford: Blackwell, 1997)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Aisin Gioro",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Mark C. Elliott, The Manchu Way (Stanford: Stanford University Press, 2001)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Bukūri Yongšon is the divinely-born founding ancestor of the Manchu Aisin Gioro clan and legendary first chief of Odoli, son of the heavenly maiden Fekulen.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Pamela Kyle Crossley, The Manchus (Oxford: Blackwell, 1997)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Mark C. Elliott, The Manchu Way: The Eight Banners and Ethnic Identity in Late Imperial China (Stanford: Stanford University Press, 2001)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Bukūri Yongšon is the half-divine culture-hero and eponymous progenitor of the Aisin Gioro, the clan that produced the Qing emperors. In the foundation narrative canonized in the Manzhou Shilu, his heavenly mother Fekulen bore him after eating a magpie-dropped red fruit, named him with the surname Aisin Gioro and the personal name Yongšon, and set him adrift in a small boat down the river. Coming ashore near three warring tribes, he settled their strife, was raised up as their lord at the settlement of Odoli, and thereby established the ruling line. The myth functioned in Qing state ideology as a charter of imperial legitimacy, linking the dynasty's ancestry directly to heaven; his supernatural birth and gift of speech mark him as a demigod rather than an ordinary human forebear."
+  },
+  {
+    "id": "manchu_monggaldai_nakcu",
+    "name": {
+      "primary": "Monggaldai Nakcu, Warden of the Land of the Dead",
+      "alt": [
+        "Monggoldai Nakcu",
+        "Monggaldai Nakcu",
+        "Mongoldai Nagts",
+        "Mongoldai Nakcu"
+      ],
+      "transliterations": {
+        "manchu": "Monggaldai Nakcu",
+        "etymology": "Manchu 'nakcu', maternal uncle, appended as a kin-title to the personal name Monggaldai, marking him as an 'uncle' officer of the underworld court"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Manchu",
+    "primaryTradition": "Manchu",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Manchu traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Manchu traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "As the officer of the underworld lord Ilmun Han, Monggaldai Nakcu is dispatched to seize the soul of the dying Sergudai Fiyanggo and later guards the gate against the shamaness Nišan's escape with the recovered soul.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Margaret Nowak and Stephen Durrant, The Tale of the Nišan Shamaness: A Manchu Folk Epic (Seattle: University of Washington Press, 1977)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Margaret Nowak and Stephen Durrant, The Tale of the Nišan Shamaness: A Manchu Folk Epic (Seattle: University of Washington Press, 1977)"
+          }
+        ]
+      },
+      {
+        "sphereId": "soul-collection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen W. Durrant, 'The Nišan Shaman Caught in Cultural Contradiction,' Signs 5, no. 2 (1979): 338-347"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "seize_dying_souls",
+        "name": "to carry off the souls of those marked to die",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Margaret Nowak and Stephen Durrant, The Tale of the Nišan Shamaness: A Manchu Folk Epic (Seattle: University of Washington Press, 1977)"
+          }
+        ]
+      },
+      {
+        "id": "guard_the_gate_of_the_dead",
+        "name": "to guard the gate between the living and the dead",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen W. Durrant, 'The Nišan Shaman Caught in Cultural Contradiction,' Signs 5, no. 2 (1979): 338-347"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "manchu_ilmun_han",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Margaret Nowak and Stephen Durrant, The Tale of the Nišan Shamaness: A Manchu Folk Epic (Seattle: University of Washington Press, 1977)"
+          }
+        ],
+        "notes": "Monggaldai Nakcu serves as the fetcher of souls and gate-warden of the underworld ruler Ilmun Han, acting on his orders and negotiating with the shamaness on his behalf."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Monggaldai Nakcu is the named underworld officer and gate-warden of Ilmun Han in the Manchu epic of the shamaness Nišan, who seizes the dying and whom Nišan must outwit to recover a stolen soul.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Margaret Nowak and Stephen Durrant, The Tale of the Nišan Shamaness: A Manchu Folk Epic (Seattle: University of Washington Press, 1977)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stephen W. Durrant, 'The Nišan Shaman Caught in Cultural Contradiction,' Signs 5, no. 2 (1979): 338-347"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Monggaldai Nakcu is the personified underworld functionary of the widely-attested Manchu shamanic epic, the Tale of the Nišan Shamaness. As the agent of Ilmun Han, ruler of the land of the dead, he is sent to carry off the soul of the young hunter Sergudai Fiyanggo, and it is with him that the shamaness Nišan must bargain, and ultimately whom she outmatches at the gate, in order to bring the boy's soul back to the living. His kin-title 'nakcu' (maternal uncle) casts the underworld as a bureaucratic household in which he is a subordinate officer to Ilmun Han rather than a sovereign of the dead. Recorded from Manchu, Sibe, and neighbouring Tungusic oral tradition and first set down for scholarship in the early twentieth century, he is among the few individually named lesser divinities of the Manchu afterworld."
+  }
+]
+```

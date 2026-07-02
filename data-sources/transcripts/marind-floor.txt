@@ -1,0 +1,633 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Marind
+Era (registered, exact): "primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added five individuated dema attested in the primary ethnographies of Marind-anim religion (Wirz 1922-1925; van Baal 1966) and comparative scholarship (Knauft 1993): Uaba, the sun-and-fire dema, and his partner Ualiwamb (Kanis-iwag), from whose union the first fire, cassowary and stork arose in the Mayo cult cycle; Aramemb, the healer-dema and phratry eponym tied to the cassowary and the origin of death; Yorma, the sea-dema; and Dawi, the cassowary-dema of the origin-of-fire and Habee-island episode. Uaba and Ualiwamb are wired to each other as spouses (both new figures); Uaba's attested fraternal link to the existing figure Sosom and membership in the Aramemb phratry are recorded in prose since sibling ties cannot be directed onto an existing id. I stopped at these five because the remaining named dema in the sources (e.g. Desse and Dawena, the depth pair) are only thinly individuated, and padding with them would lower the evidential quality of the set.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "marind_uaba",
+    "name": {
+      "primary": "Uaba",
+      "alt": [
+        "Waba"
+      ],
+      "transliterations": {
+        "marind": "Uaba",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marind",
+    "primaryTradition": "Marind",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Uaba, the incarnate sun and fire-dema, generated the first fire during his union with Ualiwamb at the Mayo cult site of Kondo.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "rapa",
+          "script": "Latin",
+          "rom": "rapa (fire)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      },
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Die Marind-anim von Holländisch-Süd-Neu-Guinea (Hamburg: Friederichsen, 1922-1925)"
+          }
+        ]
+      },
+      {
+        "sphereId": "male-initiation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Mayo",
+          "script": "Latin",
+          "rom": "Mayo (initiation cult)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "kindle_first_fire",
+        "name": "to kindle the first fire",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The heat of Uaba's union with Ualiwamb produced fire (rapa) for humankind.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      },
+      {
+        "id": "embody_the_sun",
+        "name": "to embody the sun",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Uaba is identified with the sun in its heat and daily course.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Die Marind-anim von Holländisch-Süd-Neu-Guinea (Hamburg: Friederichsen, 1922-1925)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "marind_ualiwamb",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ],
+        "notes": "Uaba brought the young woman Ualiwamb to the Mayo ritual at Kondo; the heat of their union produced the first fire."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Uaba (Waba) is the Marind-anim sun-and-fire dema whose union with Ualiwamb at Kondo produced the first fire in the myth cycle of the Mayo initiation cult.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Die Marind-anim von Holländisch-Süd-Neu-Guinea (Hamburg: Friederichsen, 1922-1925)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Uaba, also spelled Waba, is one of the principal dema of the Marind-anim, revered as the incarnate sun and as the fire-dema whose myth explains the origin of fire. In the foundational narrative of the Mayo initiation cult at Kondo he brought the young woman Ualiwamb to the ritual; the heat generated by their union produced the first fire (rapa), from which the first cassowary and stork also sprang, and he then pursued her westward to the coast. Marind tradition groups Uaba within the Aramemb phratry and names the giant initiator Sosom as his brother."
+  },
+  {
+    "id": "marind_ualiwamb",
+    "name": {
+      "primary": "Ualiwamb",
+      "alt": [
+        "Kanis-iwag",
+        "Betel Woman"
+      ],
+      "transliterations": {
+        "marind": "Ualiwamb",
+        "etymology": "The by-name Kanis-iwag contains Marind 'iwag' (woman/girl), glossed 'betel woman'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marind",
+    "primaryTradition": "Marind",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Ualiwamb, the betel-woman dema, gave forth the first fire from her body during her union with the sun-dema Uaba at Kondo.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "rapa",
+          "script": "Latin",
+          "rom": "rapa (fire)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      },
+      {
+        "sphereId": "procreation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "iwag",
+          "script": "Latin",
+          "rom": "iwag (woman)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Die Marind-anim von Holländisch-Süd-Neu-Guinea (Hamburg: Friederichsen, 1922-1925)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_forth_fire_and_birds",
+        "name": "to bring forth fire and the first birds",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "From her burning body issued the first fire and the first cassowary and stork, whose plumage was scorched black.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Kanis-iwag",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "marind_uaba",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ],
+        "notes": "Partner of the sun-dema Uaba, from whose union with her the first fire was struck."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ualiwamb, also called Kanis-iwag ('betel woman'), is the Marind-anim female dema from whose body the first fire burst during her union with the sun-dema Uaba, an act that also produced the first cassowary and stork.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Die Marind-anim von Holländisch-Süd-Neu-Guinea (Hamburg: Friederichsen, 1922-1925)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ualiwamb, also called Kanis-iwag ('betel woman'), is the female dema from whose body the first fire burst during her union with the sun-dema Uaba at the Mayo cult site of Kondo. As the flames engulfed her she gave birth to the first cassowary and the first stork, whose plumage was scorched black. Her flight westward toward the coast and Uaba's pursuit of her form the core of the Marind origin-of-fire narrative."
+  },
+  {
+    "id": "marind_aramemb",
+    "name": {
+      "primary": "Aramemb",
+      "alt": [
+        "Aramément"
+      ],
+      "transliterations": {
+        "marind": "Aramemb",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marind",
+    "primaryTradition": "Marind",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Aramemb, a healer-dema and eponym of a Marind phratry, figures in the primordial narratives that fixed death as the human condition.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "healing",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      },
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Die Marind-anim von Holländisch-Süd-Neu-Guinea (Hamburg: Friederichsen, 1922-1925)"
+          }
+        ]
+      },
+      {
+        "sphereId": "cassowary",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "attempt_to_revive_the_dead",
+        "name": "to attempt to restore the dead to life",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In myth Aramemb's efforts at restorative magic fail, so that death becomes irreversible.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Aramemb is a prominent Marind-anim dema, eponymous ancestor of one of the great phratries, remembered as a healer closely bound to the cassowary and appearing in myths concerning the origin of death.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bruce M. Knauft, South Coast New Guinea Cultures: History, Comparison, Dialectic (Cambridge: Cambridge University Press, 1993)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Aramemb is a prominent dema and the eponymous ancestor of one of the great Marind-anim phratries, which groups such figures as Uaba and Sosom. He appears in myth as a healer and worker of restorative magic and is closely associated with the cassowary. Aramemb figures in narratives about the origin of death, in which his attempts to keep or bring back the dead fail, so that mortality is established as the permanent human condition."
+  },
+  {
+    "id": "marind_yorma",
+    "name": {
+      "primary": "Yorma",
+      "alt": [
+        "Jorma"
+      ],
+      "transliterations": {
+        "marind": "Yorma",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marind",
+    "primaryTradition": "Marind",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Yorma, the dema of the sea, rose from the waters as the personified ocean whose surge can overwhelm the shore.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_destructive_waves",
+        "name": "to raise destructive waves",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the sea-dema, Yorma can send great waves that destroy coastal dwellings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Yorma is the Marind-anim dema of the sea, whose great waves can destroy coastal houses; tradition names him the offspring of Desse and Dawena, the paired dema of the watery depths.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Paul Wirz, Die Marind-anim von Holländisch-Süd-Neu-Guinea (Hamburg: Friederichsen, 1922-1925)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Yorma is the dema of the sea, whose surging waves can overwhelm coastal dwellings. Marind tradition names him the offspring of Desse and Dawena, the paired dema of the watery depths credited with supplying ground water. As a personification of the ocean he belongs to the maritime stratum of the dema pantheon."
+  },
+  {
+    "id": "marind_dawi",
+    "name": {
+      "primary": "Dawi",
+      "alt": [
+        "Dawe"
+      ],
+      "transliterations": {
+        "marind": "Dawi",
+        "etymology": ""
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marind",
+    "primaryTradition": "Marind",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "Dawi, the cassowary-dema, tried to beat out the primal fire with his hunting club, dislodging the land that became the island of Habee.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cassowary",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      },
+      {
+        "sphereId": "fire",
+        "contextTag": "episodic",
+        "term": {
+          "value": "rapa",
+          "script": "Latin",
+          "rom": "rapa (fire)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Bruce M. Knauft, South Coast New Guinea Cultures: History, Comparison, Dialectic (Cambridge: Cambridge University Press, 1993)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "beat_out_the_primal_fire",
+        "name": "to beat at the primal fire with a club",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Dawi's attempt to extinguish the first fire dislodged a coconut-bearing spit of land.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "marind_dawi_club",
+        "name": "hunting club",
+        "kind": "weapon",
+        "role": "The club with which Dawi struck at the primal fire.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dawi is the Marind-anim cassowary-dema who, in the origin-of-fire cycle, tried to beat out the primal flames with his hunting club, dislodging a coconut-covered spit of land that became the offshore island of Habee.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jan van Baal, Dema: Description and Analysis of Marind-anim Culture (South New Guinea) (The Hague: Martinus Nijhoff, 1966)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Bruce M. Knauft, South Coast New Guinea Cultures: History, Comparison, Dialectic (Cambridge: Cambridge University Press, 1993)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Dawi is the cassowary-dema of Marind-anim myth. In one account of the origin of fire he attempted to beat out the primal flames with his hunting club; the disturbance caused a coconut-covered spit of land to break away and be seized in an iguana's jaws, an event held to explain the form of the offshore island of Habee, which resembles an animal's head."
+  }
+]
+```

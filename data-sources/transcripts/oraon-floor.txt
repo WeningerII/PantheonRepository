@@ -1,0 +1,367 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Oraon
+Era (registered, exact): "Oraon traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (3 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+I added three genuinely individuated, well-attested Oraon powers absent from the existing set: Anna Kuari, the grain-and-wealth goddess famous from Frazer and Dalton for her former human sacrifices; Chandi, the local Oraon goddess of the hunt documented in the Encyclopedia of World Cultures and Roy; and Darha, the chief tutelary/village-guardian bhut central to Roy's classification of Oraon village spirits. Each is wired into the pantheon as subordinate to the existing supreme creator Dharmes, consistent with the attested Oraon hierarchy of spiritual beings. I deliberately excluded Chala Pachho, which Roy explicitly identifies as an alias of the already-registered Sarna Burhi ("Chala Pachcho, or Sarna Burhia"), and I omitted generic classes such as Khunt bhuts and unnamed ancestral spirits, which are not individuated named figures. Remaining minor village names (Pat Raja, Desauli, Mahadania) were left out because their Oraon-specific individuation is thin or conflated with neighbouring Munda/Ho usage in the sources I checked (Roy 1915/1928, Dalton 1872, Frazer 1922, Encyclopedia of World Cultures vol. 3).
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "oraon_anna_kuari",
+    "name": {
+      "primary": "Anna Kuari, the maiden goddess of grain and wealth",
+      "alt": [
+        "Anna Kumari",
+        "Anna Kunwari"
+      ],
+      "transliterations": {
+        "kurukh": "Anna Kuari",
+        "etymology": "From anna 'grain, food' + kuari 'maiden, virgin', i.e. 'the grain-maiden'"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Oraon",
+    "primaryTradition": "Oraon",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Oraon traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Oraon traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Among the Oraons of Chota Nagpur, Anna Kuari is revered as the goddess who bestows abundant crops and wealth, and who in earlier times was propitiated with clandestine human sacrifice to secure the fertility of the fields.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James George Frazer, The Golden Bough: A Study in Magic and Religion, abridged ed. (London: Macmillan, 1922), ch. 47 'Lityerses', §3 'Human Sacrifices for the Crops'."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "agriculture-and-harvest",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "anna",
+          "script": "Latin",
+          "rom": "grain, food"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Edward Tuite Dalton, Descriptive Ethnology of Bengal (Calcutta: Office of the Superintendent of Government Printing, 1872), pp. 258-259."
+          }
+        ]
+      },
+      {
+        "sphereId": "wealth-and-prosperity",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James George Frazer, The Golden Bough, abridged ed. (London: Macmillan, 1922), ch. 47 'Lityerses', §3."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_abundant_harvest",
+        "name": "to grant abundant harvests and material wealth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Frazer records that she 'can give good crops and make a man rich', but only in return for costly offerings.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James George Frazer, The Golden Bough, abridged ed. (London: Macmillan, 1922), ch. 47 'Lityerses', §3."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "oraon_dharmes",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, Oraon Religion and Customs (Ranchi: Man in India Office, 1928), ch. on the Oraon pantheon."
+          }
+        ],
+        "notes": "In the Oraon hierarchy of spiritual beings, the supreme creator Dharmes stands above all lesser deities and godlings, including the harvest-goddess Anna Kuari."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Anna Kuari is an Oraon goddess of grain, harvest and wealth of the Chota Nagpur plateau, historically the recipient of secret human sacrifice offered to secure good crops.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "James George Frazer, The Golden Bough: A Study in Magic and Religion, abridged ed. (London: Macmillan, 1922), ch. 47 'Lityerses', §3 'Human Sacrifices for the Crops'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edward Tuite Dalton, Descriptive Ethnology of Bengal (Calcutta, 1872), pp. 258-259."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Anna Kuari (also Anna Kumari) is a goddess worshipped by the Oraons of the Chota Nagpur plateau who is believed to grant plentiful harvests and to make her devotees rich. Nineteenth- and early twentieth-century ethnographers, most famously J. G. Frazer following E. T. Dalton, recorded that in return for these boons she was formerly propitiated with human sacrifice performed secretly in the spring, the victim's fat and body-parts being scattered on the fields to ensure their fertility. She is one of the distinctively local, non-Sanskritic godlings of the Oraon pantheon, subordinate to the supreme creator Dharmes."
+  },
+  {
+    "id": "oraon_chandi",
+    "name": {
+      "primary": "Chandi, the goddess of the hunt",
+      "alt": [
+        "Chandi Devi",
+        "Bir Chandi"
+      ],
+      "transliterations": {
+        "kurukh": "Chandi",
+        "etymology": "Adopted from a regional (Sanskritic) goddess-name, borne among the Oraon by a distinct local deity of the forest and the chase"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Oraon",
+    "primaryTradition": "Oraon",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Oraon traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Oraon traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Chandi is honoured by the Oraons as the goddess of the hunt, invoked at the collective hunting expeditions held several times a year, whose success is held to ensure the fertility of the fields by sympathetic magic.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedia of World Cultures, Vol. 3: South Asia, ed. Paul Hockings (Boston: G. K. Hall, 1992), s.v. 'Oraon'."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hunting",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "sendra",
+          "script": "Latin",
+          "rom": "hunt, hunting expedition"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedia of World Cultures, Vol. 3: South Asia, ed. Paul Hockings (Boston: G. K. Hall, 1992), s.v. 'Oraon'."
+          }
+        ]
+      },
+      {
+        "sphereId": "forest-and-wild-animals",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, Oraon Religion and Customs (Ranchi: Man in India Office, 1928)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_success_in_hunt",
+        "name": "to grant success in the hunt",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Propitiated at the periodic hunting ceremonies, including a women's hunt held every twelve years.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedia of World Cultures, Vol. 3: South Asia, ed. Paul Hockings (Boston: G. K. Hall, 1992), s.v. 'Oraon'."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "oraon_dharmes",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, Oraon Religion and Customs (Ranchi: Man in India Office, 1928)."
+          }
+        ],
+        "notes": "Chandi is one of the local Oraon deities ranked beneath the supreme creator Dharmes in the pantheon's hierarchy of spiritual beings."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Chandi is the Oraon goddess of the hunt, propitiated at the community hunting expeditions whose success is linked ritually to the fertility of the crops.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedia of World Cultures, Vol. 3: South Asia, ed. Paul Hockings (Boston: G. K. Hall, 1992), s.v. 'Oraon'."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, Oraon Religion and Customs (Ranchi: Man in India Office, 1928)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Chandi is the Oraon goddess of the hunt. Although her name is shared with a pan-Indian Sanskritic goddess, ethnographers class the Oraon Chandi among the local, non-Sanskritic deities peculiar to the tribe. She is invoked at the ceremonial hunting expeditions (sendra) held several times a year, including a distinctive women's hunt observed once every twelve years; a successful hunt was believed to secure an abundant harvest through sympathetic magic. She ranks among the lesser deities beneath the supreme creator Dharmes."
+  },
+  {
+    "id": "oraon_darha",
+    "name": {
+      "primary": "Darha, the guardian spirit of the village",
+      "alt": [
+        "Draha",
+        "Darha Bhut"
+      ],
+      "transliterations": {
+        "kurukh": "Darha",
+        "etymology": "A vernacular name for the chief tutelary spirit (bhut) of an Oraon village"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Oraon",
+    "primaryTradition": "Oraon",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Oraon traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Oraon traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Darha, though reckoned the most dreaded of the village spirits, is regarded by the Oraons as the guardian of the village, dwelling beneath great trees and boulders and requiring regular propitiation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, Oraon Religion and Customs (Ranchi: Man in India Office, 1928), classification of village Deotas and Bhuts."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "village-guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "bhut",
+          "script": "Latin",
+          "rom": "spirit, tutelary ghost"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, Oraon Religion and Customs (Ranchi: Man in India Office, 1928)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_village",
+        "name": "to guard the village and its boundaries",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As the principal village bhut, Darha both protects the settlement and, if neglected, inflicts sickness and misfortune, so must be appeased with sacrifice.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, The Oraons of Chota Nagpur: Their History, Economic Life and Social Organization (Ranchi, 1915)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "oraon_dharmes",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, Oraon Religion and Customs (Ranchi: Man in India Office, 1928)."
+          }
+        ],
+        "notes": "In the Oraon scheme of spiritual beings, the village bhuts such as Darha rank far below the supreme creator Dharmes, who presides over ancestors and spirits alike."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Darha is the chief tutelary spirit of an Oraon village, at once the most feared and the guardian of the settlement, dwelling under great trees and rocks and appeased by sacrifice.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, Oraon Religion and Customs (Ranchi: Man in India Office, 1928)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sarat Chandra Roy, The Oraons of Chota Nagpur: Their History, Economic Life and Social Organization (Ranchi, 1915)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Darha (also Draha) is the principal tutelary spirit of an Oraon village. In S. C. Roy's classification of village powers into Deotas (gods) and Bhuts (ghosts), Darha heads the bhut category: though reckoned the most dreaded of all village spirits, he is at the same time the village's guardian, believed to reside beneath large trees or boulders on the village outskirts. He is regularly propitiated with sacrifice, for neglect is thought to bring sickness and calamity, and like all Oraon spirits he is ranked beneath the supreme creator Dharmes."
+  }
+]
+```
