@@ -1,0 +1,857 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Sukuma
+Era (registered, exact): "Sukuma traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added the two named protagonists of the central Sukuma myth — the all-swallowing ogre Shing'weng'we and the clever hero Masala Kulangwa (Healey & Sybertz 1996: 64-65; Tertrais 2000; Sybertz & the Ndoleleji Research Committee, Tears of Joy, 2006) — and the four individuated founders of the Sukuma dynastic tradition: the hunter-pioneer Ilembo, the leader Nkanda whose utterance 'nsukumala aha' named the Sukuma, the ancestress Minza, and Sanga, the first ntemi of Sukumalaha (Itandala 1975 and 1979; Sukuma Museum, 'Sukuma Chiefs and Royal History'; Cory 1951). I deliberately did not author Lyangombe, the spirit whose disciples the Sukuma Baswezi society are (Cory, 'The Buswezi', American Anthropologist 57, 1955), because he already stands in the corpus as banyaruanda_ryangombe and re-authoring him under Sukuma would create a cross-tradition duplicate. Beyond these, the ethnographic record (Millroth, Lyuba: Traditional Religion of the Sukuma, 1965; Tanner 1959; Cory 1953) presents Sukuma religion as the creator Liwelelo plus unindividuated classes of ancestor spirits (masamva) and society spirits, so no further named, individuated beings qualified; the Nyamwezi corpus figures (Likube, Limatunda, Limi, Liwelelo) were not cross-duplicated.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "sukuma_shingwengwe",
+    "name": {
+      "primary": "Shing'weng'we (the all-devouring ogre)",
+      "alt": [
+        "Shing'wengwe",
+        "Shingwengwe"
+      ],
+      "transliterations": {
+        "Kisukuma": "Shing'weng'we",
+        "etymology": "Kisukuma proper name of the devouring ogre of the tale, retained as the monster's name in the Swahili telling Kijana Mwerevu na Shing'weng'we (Tertrais 2000; Healey and Sybertz 1996)."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Sukuma",
+    "primaryTradition": "Sukuma",
+    "sex": "unknown",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Sukuma traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Sukuma traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the great Sukuma tale the ogre Shing'weng'we swallows all the people of the world together with their domestic animals, sparing only one pregnant woman who hides in a pile of chaff.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996; Maryknoll, NY: Orbis Books, 1997), 64-65"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Max Tertrais, The Clever Young Man and the Monster: The Sukuma Myth of Shing'weng'we and Masala-Kulangwa, illustrated by Charles Ndege (Nairobi: Paulines Publications Africa, 2000)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ogres-and-monsters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "shing'weng'we",
+          "script": "Latin",
+          "rom": "the devouring ogre of the Sukuma tale"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Max Tertrais, The Clever Young Man and the Monster: The Sukuma Myth of Shing'weng'we and Masala-Kulangwa (Nairobi: Paulines Publications Africa, 2000)"
+          }
+        ]
+      },
+      {
+        "sphereId": "devouring",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "swallow_the_world",
+        "name": "to swallow whole the people and herds of the earth",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In the myth the ogre devours all humankind and their domestic animals, leaving only one hidden woman; the swallowed emerge alive when the monster is at last cut open.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Max Tertrais, The Clever Young Man and the Monster: The Sukuma Myth of Shing'weng'we and Masala-Kulangwa (Nairobi: Paulines Publications Africa, 2000)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "enemy",
+        "personId": "sukuma_masala_kulangwa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          }
+        ],
+        "notes": "The ogre's destined adversary is Masala Kulangwa, the boy born of the one woman who escaped the swallowing; the young hero seeks the monster out and destroys it."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Shing'weng'we is the man-eating ogre of the central Sukuma myth, who swallowed all the people of the world and their herds except one hidden pregnant woman, and who was slain and cut open by her son Masala Kulangwa so that the swallowed people came out alive.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996; Maryknoll, NY: Orbis Books, 1997), 64-65"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Max Tertrais, The Clever Young Man and the Monster: The Sukuma Myth of Shing'weng'we and Masala-Kulangwa, illustrated by Charles Ndege (Nairobi: Paulines Publications Africa, 2000)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Donald Sybertz and the Ndoleleji Research Committee, Tears of Joy: An African Story about Heroes and Monsters (Dar es Salaam: Mathews Bookstore & Stationers, 2006)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Shing'weng'we is the all-devouring ogre of the most celebrated Sukuma myth, told among the Sukuma of north-western Tanzania both as a prose tale and as part of a long Sukuma song. In the story the monster swallows all the people of the world together with their domestic animals; only one pregnant woman escapes, hiding in a pile of chaff. The son she bears, Masala Kulangwa, grows up, seeks out the ogre, kills it and cuts it open, whereupon his father and all the swallowed people and herds come out alive and the young hero is made chief. The tale was recorded and studied by the Maryknoll missionary-ethnographers Donald Sybertz and Joseph Healey, retold in an illustrated edition by Max Tertrais with the Sukuma painter Charles Ndege, and issued in English, Swahili and Sukuma versions by the Ndoleleji Research Committee of Shinyanga. It is the Sukuma form of the swallowing-monster cycle told widely across Bantu-speaking Africa, distinctive in that both the monster and the hero bear proper names."
+  },
+  {
+    "id": "sukuma_masala_kulangwa",
+    "name": {
+      "primary": "Masala Kulangwa (the clever hero who slew Shing'weng'we)",
+      "alt": [
+        "Masala-Kulangwa"
+      ],
+      "transliterations": {
+        "Kisukuma": "Masala Kulangwa",
+        "etymology": "From Kisukuma masala, 'cleverness, quick wits'; the full name is glossed 'the smart or clever person who understands quickly' (Healey and Sybertz 1996)."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Sukuma",
+    "primaryTradition": "Sukuma",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Sukuma traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Sukuma traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Born in a world emptied by the ogre Shing'weng'we to the one woman who escaped the swallowing, Masala Kulangwa grows up to slay the monster, release the swallowed people alive, and be raised in the chief's chair as chief of the whole world.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996; Maryknoll, NY: Orbis Books, 1997), 64-65"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Max Tertrais, The Clever Young Man and the Monster: The Sukuma Myth of Shing'weng'we and Masala-Kulangwa, illustrated by Charles Ndege (Nairobi: Paulines Publications Africa, 2000)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "cleverness-and-wit",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "masala",
+          "script": "Latin",
+          "rom": "cleverness, quick wits"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          }
+        ]
+      },
+      {
+        "sphereId": "heroism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Donald Sybertz and the Ndoleleji Research Committee, Tears of Joy: An African Story about Heroes and Monsters (Dar es Salaam: Mathews Bookstore & Stationers, 2006)"
+          }
+        ]
+      },
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ntemi",
+          "script": "Latin",
+          "rom": "chief; the tale ends with the hero raised in the chief's chair as chief of the whole world"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          },
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "understand_quickly",
+        "name": "to grasp and act more quickly than any other",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His very name is glossed 'the smart or clever person who understands quickly', and the tale turns on his quick wits, from his boyish trial-kills of small creatures to the final defeat of the ogre.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          }
+        ]
+      },
+      {
+        "id": "slay_the_devourer",
+        "name": "to slay the all-devouring ogre and free the people swallowed within it",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "He kills Shing'weng'we and cuts the monster open, releasing his father and all the swallowed people and herds alive.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Max Tertrais, The Clever Young Man and the Monster: The Sukuma Myth of Shing'weng'we and Masala-Kulangwa (Nairobi: Paulines Publications Africa, 2000)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sukuma_chiefs_chair",
+        "name": "the chief's chair in which the victorious hero was raised",
+        "kind": "regalia",
+        "role": "the seat of chiefship into which the people lifted Masala Kulangwa when they made him chief of the whole world",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Masala Kulangwa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "sukuma_shingwengwe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Max Tertrais, The Clever Young Man and the Monster: The Sukuma Myth of Shing'weng'we and Masala-Kulangwa (Nairobi: Paulines Publications Africa, 2000)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          }
+        ],
+        "notes": "After a boyhood of mistaken trial-kills he finds the ogre Shing'weng'we, kills it and cuts it open, so that the swallowed people of the world come out alive."
+      },
+      {
+        "kind": "enemy",
+        "personId": "sukuma_shingwengwe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996), 64-65"
+          }
+        ],
+        "notes": "The monster that emptied the world of people is the adversary he is born to destroy."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Masala Kulangwa, 'the clever one who understands quickly', is the hero of the central Sukuma myth: born of the only woman to escape the ogre Shing'weng'we, he slew the monster, released the swallowed people and animals alive, and was raised in the chief's chair as chief of the whole world, his mother becoming queen mother.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Joseph G. Healey and Donald Sybertz, Towards an African Narrative Theology (Nairobi: Paulines Publications Africa, 1996; Maryknoll, NY: Orbis Books, 1997), 64-65"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Max Tertrais, The Clever Young Man and the Monster: The Sukuma Myth of Shing'weng'we and Masala-Kulangwa, illustrated by Charles Ndege (Nairobi: Paulines Publications Africa, 2000)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Donald Sybertz and the Ndoleleji Research Committee, Tears of Joy: An African Story about Heroes and Monsters (Dar es Salaam: Mathews Bookstore & Stationers, 2006)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Masala Kulangwa, whose name is glossed 'the smart or clever person who understands quickly', is the boy-hero of the central Sukuma myth. The ogre Shing'weng'we had swallowed all the people of the world and their domestic animals; only one pregnant woman escaped by hiding in a pile of chaff, and the son she bore in secret was Masala Kulangwa. Learning from his mother why the world stood empty, he vowed to find the monster, at first triumphantly killing a grasshopper and other small creatures and asking her whether each was Shing'weng'we, until at last he met the ogre itself, slew it, and cut it open, releasing his father and all the swallowed people and animals alive. When in cutting he accidentally nicked the ear of an old woman, she reviled and bewitched him, and he first sought out medicine to heal her; the restored people then raised him in the chief's chair as chief of the whole world, with his mother honored as queen mother. Recorded among the Sukuma by Donald Sybertz and Joseph Healey and retold by Max Tertrais, the tale has also been read in Sukuma Christian narrative theology as a story of deliverance, with the clever young deliverer's mother compared to the mother of the savior."
+  },
+  {
+    "id": "sukuma_ilembo",
+    "name": {
+      "primary": "Ilembo (the Babinza hunter-pioneer)",
+      "alt": [],
+      "transliterations": {
+        "Kisukuma": "Ilembo",
+        "etymology": "Personal name of the Babinza hunter-pioneer who heads the dynastic traditions from which Itandala established his chronology of the Babinza (Itandala 1979)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Sukuma",
+    "primaryTradition": "Sukuma",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Sukuma traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Sukuma traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Babinza dynastic traditions whose chronology Itandala established, the hunter Ilembo leads the pioneering movement of Babinza settlers in search of game into the country that became Usukuma.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hunting",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ]
+      },
+      {
+        "sphereId": "migration-and-settlement",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buluda Itandala, 'The Establishment of the First Four Babinza States in Usukuma' (History Department seminar paper, University of Dar es Salaam, 1975)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "pioneer_new_country",
+        "name": "to open new country for his people in pursuit of game",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The dynastic traditions remember him as the hunter whose venturing after game drew the Babinza pioneers into the lands south of Lake Victoria.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "sukuma_nkanda",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ],
+        "notes": "Ilembo the hunter-pioneer and Nkanda the war-leader stand together at the head of the Babinza founding tradition, the paired leaders of the pioneering generation who settled and consolidated Usukuma."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ilembo is the hunter-pioneer of the Babinza dynastic traditions, leader of the movement of settlers whose founding generations the historian Buluda Itandala used to establish the chronology of the Babinza planting of the earliest Sukuma chiefdoms.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda Itandala, 'The Establishment of the First Four Babinza States in Usukuma' (History Department seminar paper, University of Dar es Salaam, 1975)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ilembo is the hunter-pioneer who stands at the head of the dynastic traditions of the Babinza, the chiefly clan credited with planting the earliest chiefdoms of Usukuma, the Sukuma country south of Lake Victoria. In the traditions gathered from the chiefly houses, Ilembo leads the venturing of Babinza settlers into new hunting grounds, and the founding women who accompany the pioneers — remembered in the tradition as 'the girls' — knit the newcomers to the country through their marriages. The historian Buluda Itandala took the generations of Ilembo, the war-leader Nkanda and the founding women as the armature of his chronology of the Babinza, whose consolidation of the sparsely settled Lake Victoria hinterland is conventionally placed around the sixteenth century. As founding ancestors of the chiefly lines, the pioneers of this tradition belong to the honored dead of the Sukuma royal houses."
+  },
+  {
+    "id": "sukuma_nkanda",
+    "name": {
+      "primary": "Nkanda (leader of the Babinza settlement of Usukuma)",
+      "alt": [],
+      "transliterations": {
+        "Kisukuma": "Nkanda",
+        "etymology": "Personal name of the Babinza leader; tradition derives the ethnonym Sukuma not from his name but from his utterance nsukumala aha, 'let us rest here' (Sukuma Museum)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Sukuma",
+    "primaryTradition": "Sukuma",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Sukuma traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Sukuma traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Leading the Babinza settlers from Lushamba in the present Geita District, Nkanda halts at the place where he speaks the words 'nsukumala aha' ('let us rest here'), from which the first chiefdom, Sukumalaha, and the Sukuma people themselves take their name.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "migration-and-settlement",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "nsukumala aha",
+          "script": "Latin",
+          "rom": "'let us rest here' — the utterance from which the names Sukumalaha and Sukuma are traditionally derived"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          }
+        ]
+      },
+      {
+        "sphereId": "war-leadership",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "unite_the_settlements",
+        "name": "to lead the Babinza migration and bind the scattered settlements into one people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The founding traditions remember Nkanda as the leader who consolidated the individual settlements of the Lake Victoria hinterland under Babinza leadership, so that nearly every chiefly clan of Usukuma afterwards claimed his lineage.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "sukuma_ilembo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ],
+        "notes": "Nkanda the war-leader and Ilembo the hunter-pioneer stand together at the head of the Babinza founding tradition, the paired leaders of the generation that settled and consolidated Usukuma."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nkanda is the Babinza leader of Sukuma founding tradition who halted the migrating settlers with the words 'nsukumala aha' ('let us rest here'), giving Sukumalaha and the Sukuma their name, and whose lineage nearly every chiefly clan of Usukuma claims.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Nkanda is the leader of the Babinza settlers in the founding tradition of the Sukuma chiefdoms. Remembered as coming from Lushamba in the present Geita District — in some tellings under the guidance of his father Muletwa, chief of Lushamba — he brought his following to a settlement site in the country south of the Mwanza Gulf and declared, in words the tradition preserves, 'nsukumala aha', 'let us rest here'; the resting-place became Sukumalaha (Nsukumale), the first Sukuma chiefdom, and tradition derives from the utterance the very name of the Sukuma. In the accounts studied by the historian Buluda Itandala, Nkanda is the war-leader of the pioneering generation beside the hunter Ilembo, uniting the scattered local settlements under Babinza leadership, and nearly every chiefly clan of Usukuma afterwards claimed descent from his line. The chiefship itself he is said not to have taken: the first stool passed to Sanga, son of his kinswoman Minza, whose name the traditional greeting of the Sukuma chiefdom, Iminza, still recalls, and from Sukumalaha the chiefdoms of Usukuma multiplied to more than fifty."
+  },
+  {
+    "id": "sukuma_minza",
+    "name": {
+      "primary": "Minza (ancestress of the Sukuma chiefly line)",
+      "alt": [],
+      "transliterations": {
+        "Kisukuma": "Minza",
+        "etymology": "Personal name of the founding ancestress; the traditional greeting of the Sukuma chiefdom, Iminza, is a direct reference to Minza and her family (Sukuma Museum)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Sukuma",
+    "primaryTradition": "Sukuma",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Sukuma traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Sukuma traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Minza, kinswoman of the Babinza leader Nkanda and most celebrated of the founding women of the migration traditions, becomes the mother of Sanga, the first ntemi of the Sukuma.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "royal-ancestry",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Iminza",
+          "script": "Latin",
+          "rom": "the traditional greeting of the Sukuma chiefdom, recalling Minza and her family"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          }
+        ]
+      },
+      {
+        "sphereId": "motherhood-and-lineage",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mother_the_royal_line",
+        "name": "to mother the royal line from which the first ntemi sprang",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "As mother of Sanga, the first chief enthroned at Sukumalaha, she stands as ancestress of the chiefly houses of Usukuma; the founding women of the migration traditions are credited with establishing the earliest chiefly settlements.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Iminza",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "sukuma_sanga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          }
+        ],
+        "notes": "Sanga, the son of Minza, was appointed to the region where the Babinza rested and enthroned as the first ntemi of the Sukuma."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Minza is the founding ancestress of the Sukuma chiefly line — kinswoman of the Babinza leader Nkanda, remembered variously as his sister, wife or mother, and mother of Sanga, the first ntemi — whose name is preserved in the Sukuma chiefdom's traditional greeting, Iminza.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Minza is the founding ancestress of the Sukuma chiefly line. In the royal tradition preserved at the Sukuma Museum at Bujora she is the kinswoman of the Babinza leader Nkanda — remembered variously as his sister, his wife or his mother in different tellings, most often as his sister — and the mother of Sanga, the first ntemi (chief), who was enthroned at Sukumalaha. In the dynastic traditions used by the historian Buluda Itandala to establish the chronology of the Babinza founding of Usukuma, the pioneering men are accompanied by founding women, 'the girls', whose marriages established the earliest chiefly houses, and Minza is the most celebrated of them. Her memory is kept alive in daily usage: the traditional greeting of the Sukuma chiefdom, Iminza, is a direct reference to Minza and her family, and so to the Babinza line she mothered."
+  },
+  {
+    "id": "sukuma_sanga",
+    "name": {
+      "primary": "Sanga (the first ntemi of the Sukuma)",
+      "alt": [],
+      "transliterations": {
+        "Kisukuma": "Sanga",
+        "etymology": "Personal name of the first ntemi enthroned at Sukumalaha; the chiefly title ntemi is traditionally derived from kutema, 'to cut down trees, to clear the bush' (Sukuma Museum)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Sukuma",
+    "primaryTradition": "Sukuma",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "sukuma_minza"
+    ],
+    "parentRoles": [
+      "mother"
+    ],
+    "temporal": {
+      "era": "Sukuma traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Sukuma traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Sanga, son of Minza and sister's-son of the Babinza leader Nkanda, is enthroned at Sukumalaha — by traditional reckoning in 1504 — as the first ntemi of the Sukuma, the founding chiefship of Usukuma.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda Itandala, 'The Establishment of the First Four Babinza States in Usukuma' (History Department seminar paper, University of Dar es Salaam, 1975)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ntemi",
+          "script": "Latin",
+          "rom": "chief; from kutema, 'to cut, to clear the bush'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hans Cory, The Ntemi: Traditional Rites of a Sukuma Chief in Tanganyika (London: Macmillan for the East African Literature Bureau, 1951)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          }
+        ]
+      },
+      {
+        "sphereId": "dynastic-foundation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buluda Itandala, 'The Establishment of the First Four Babinza States in Usukuma' (History Department seminar paper, University of Dar es Salaam, 1975)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_as_first_ntemi",
+        "name": "to rule as the first ntemi of the Sukuma from the stool of Sukumalaha",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Appointed over the place where the migrating Babinza had rested, he inaugurated the chiefship from which the chiefdoms of Usukuma — ultimately fifty-two — trace their descent.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "In Sukuma royal tradition Sanga, son of Minza and sister's-son of the Babinza leader Nkanda, was enthroned at Sukumalaha — traditionally dated to 1504 — as the first ntemi, the founding chiefship from which the fifty-two chiefdoms of Usukuma grew.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "'Sukuma Chiefs and Royal History', Sukuma Museum (Bujora Cultural Centre, Mwanza, Tanzania), sukumamuseum.org"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda Itandala, 'The Establishment of the First Four Babinza States in Usukuma' (History Department seminar paper, University of Dar es Salaam, 1975)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Buluda A. Itandala, 'Ilembo, Nkanda and the Girls: Establishing a Chronology of the Babinza', in J. B. Webster (ed.), Chronology, Migration and Drought in Interlacustrine Africa (London: Longman; New York: Africana Publishing Company, 1979), 145-173"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sanga is the first ntemi (chief) of the Sukuma in the royal tradition of Usukuma. The son of Minza and sister's-son of the Babinza leader Nkanda, he was appointed to rule the place where the migrating Babinza had rested and was enthroned — by the traditional reckoning in 1504 — at Sukumalaha (Nsukumale), the resting-place whose name the Sukuma people themselves came to bear. From this first chiefdom the chiefdoms of Usukuma multiplied, ultimately to the fifty-two chiefdoms of recent times, and Sanga stands at the head of the line of batemi whose burial, election and enthronement rites, and whose magical powers, Hans Cory described in his study of the Sukuma chiefship. The title he inaugurated, ntemi, is traditionally derived from kutema, 'to cut', that is, to clear the bush for settlement."
+  }
+]
+```

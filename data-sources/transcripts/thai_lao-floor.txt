@@ -1,0 +1,1051 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Thai-Lao
+Era (registered, exact): "Lao-Isan Buddhist folk cosmology; living cult of the Mekong", "Lao-Isan cosmology; living folk cult", "Theravada Buddhist mythic time; pan-Tai folk cult", "pre-Buddhist Tai agrarian folk religion; living cult"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six individuated, well-attested Thai-Lao figures missing from the corpus: Khun Borom, progenitor king sent down by (and in most redactions son of) the existing Phaya Thaen (Souneth Phothisane 1996; Stuart-Fox 1998; Archaimbault 1959); the Luang Prabang guardian-ancestor couple Pu Nyoe and Ya Nyoe, wired as spouses and as subordinates of Phaya Thaen (Trankell 1999; Hongsuwan, Journal of Lao Studies 2018); Mae Khongkha, who completes the attested mother-goddess triad alongside existing Thorani and Phosop (Anuman Rajadhon 1956, 1968); Phaya Khankhak, the Toad King of the Bun Bang Fai rain myth (Tossa 1996; Tambiah 1970); and the epic hero Thao Hung/Cheuang (Chamberlain 1989-1990; Stuart-Fox 1998). All attestations and citations were verified by web research during authoring. Spirit-classes such as phi ban village guardians, ta haek field spirits, and mae sue birth spirits were deliberately excluded as non-individuated offices rather than named beings; Kabinlaphrom of the Songkran myth was considered but left out as the next-weakest candidate under the scope cap.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "thai_lao_khun_borom",
+    "name": {
+      "primary": "Progenitor King of the Tai-Lao",
+      "alt": [
+        "Khun Borom",
+        "Khun Bulom",
+        "Khun Bolom",
+        "Khoun Bourom",
+        "Khun Borom Rachathirath"
+      ],
+      "transliterations": {
+        "lo": "ຂຸນບໍລົມ",
+        "th": "ขุนบรม",
+        "etymology": "khun, an archaic Tai title meaning 'lord, chief', plus Borom from Pali/Sanskrit parama, 'supreme' (Souneth Phothisane, The Nidan Khun Borom, 1996)"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Thai-Lao",
+    "primaryTradition": "Thai-Lao",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "thai_lao_phaya_thaen"
+    ],
+    "parentRoles": [
+      "father"
+    ],
+    "temporal": {
+      "era": "Lao-Isan cosmology; living folk cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "Lao-Isan cosmology; living folk cult",
+        "eraOrdering": 0,
+        "startEvent": "Sent down from the heaven of the sky king Phaya Thaen — whose son the chronicle tradition makes him — to rule mankind at Mueang Thaen (Dien Bien Phu) after the great flood, as recounted in the Nithan Khun Borom (Souneth Phothisane 1996).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Souneth Phothisane, The Nidān Khun Bôrom: Annotated Translation and Analysis (PhD dissertation, University of Queensland, 1996)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Martin Stuart-Fox, The Lao Kingdom of Lān Xāng: Rise and Decline (Bangkok: White Lotus Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ຂຸນ",
+          "script": "Lao",
+          "rom": "khun — lord, chief (archaic Tai royal title)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martin Stuart-Fox, The Lao Kingdom of Lān Xāng: Rise and Decline (Bangkok: White Lotus Press, 1998)"
+          }
+        ]
+      },
+      {
+        "sphereId": "ancestral-origins",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Charles Archaimbault, 'La naissance du monde selon les traditions lao: le mythe de Khun Bulom', in La Naissance du Monde, Sources Orientales 1 (Paris: Éditions du Seuil, 1959), pp. 383–416"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_kingdoms",
+        "name": "to found kingdoms and appoint the first kings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Martin Stuart-Fox, The Lao Kingdom of Lān Xāng: Rise and Decline (Bangkok: White Lotus Press, 1998)"
+          }
+        ]
+      },
+      {
+        "id": "teach_civilized_arts",
+        "name": "to teach humankind cultivation, crafts, and proper custom",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Souneth Phothisane, The Nidān Khun Bôrom: Annotated Translation and Analysis (PhD dissertation, University of Queensland, 1996)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "thai_lao_gourds_of_mueang_thaen",
+        "name": "The great gourds of Mueang Thaen",
+        "kind": "emblem",
+        "role": "the twin gourds from which the peoples of the land poured forth when pierced in the origin cycle over which Khun Borom presides",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Grant Evans, A Short History of Laos: The Land in Between (Crows Nest, NSW: Allen & Unwin, 2002)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Martin Stuart-Fox, The Lao Kingdom of Lān Xāng: Rise and Decline (Bangkok: White Lotus Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ຂຸນບໍລົມລາຊາທິລາດ",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Souneth Phothisane, The Nidān Khun Bôrom: Annotated Translation and Analysis (PhD dissertation, University of Queensland, 1996)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "subordinate-to",
+        "personId": "thai_lao_phaya_thaen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Souneth Phothisane, The Nidān Khun Bôrom: Annotated Translation and Analysis (PhD dissertation, University of Queensland, 1996)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Charles Archaimbault, 'La naissance du monde selon les traditions lao: le mythe de Khun Bulom', in La Naissance du Monde, Sources Orientales 1 (Paris: Éditions du Seuil, 1959), pp. 383–416"
+          }
+        ],
+        "notes": "The Nithan Khun Borom presents Khun Borom as the son and emissary of the celestial king Phaya Thaen, who sends him down with regalia, counsellors, and celestial consorts to govern mankind and to whom he remains answerable."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Khun Borom (Khun Bulom) is the legendary progenitor of the Tai-Lao peoples, sent down from the heaven of the sky king Phaya Thaen to rule at Mueang Thaen, whose seven sons founded the principal Tai kingdoms.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Souneth Phothisane, The Nidān Khun Bôrom: Annotated Translation and Analysis (PhD dissertation, University of Queensland, 1996)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Martin Stuart-Fox, The Lao Kingdom of Lān Xāng: Rise and Decline (Bangkok: White Lotus Press, 1998)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Charles Archaimbault, 'La naissance du monde selon les traditions lao: le mythe de Khun Bulom', in La Naissance du Monde, Sources Orientales 1 (Paris: Éditions du Seuil, 1959), pp. 383–416"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Khun Borom is the ancestral culture hero of the Lao and the wider Tai-speaking world. In the Nithan Khun Borom, the Lao chronicle of origins, the sky king Phaya Thaen sends him down after a great flood to reign at Mueang Thaen, the plain of Dien Bien Phu; most redactions make him the sky king's own son. During his reign two vast gourds sprang up, and when they were pierced the peoples of the land — the aboriginal inhabitants first, then the Tai-Lao — poured out of them, making Khun Borom the sovereign of a repopulated world. He taught his subjects proper custom, and his celebrated testament enjoined harmony upon his seven sons, whom he dispatched to found seven kingdoms, the eldest, Khun Lo, taking Luang Prabang. Lao dynasties down to the twentieth century traced their legitimacy to his line, and modern Lao historiography still debates his myth as the 'birth of the Lao race'."
+  },
+  {
+    "id": "thai_lao_pu_nyoe",
+    "name": {
+      "primary": "Grandfather Nyoe, Guardian Ancestor of Luang Prabang",
+      "alt": [
+        "Pu Nyoe",
+        "PuYer",
+        "Pu Yer",
+        "Pou Gneu",
+        "Phou Nheu",
+        "Pu No",
+        "Pu Nyeu"
+      ],
+      "transliterations": {
+        "lo": "ປູ່ເຍີ",
+        "th": "ปู่เยอ",
+        "etymology": "pu, 'paternal grandfather', plus the ancestor's proper name Nyoe (Yer); paired with Ya Nyoe, 'Grandmother Nyoe' (Pathom Hongsuwan, Journal of Lao Studies 6:1, 2018)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Thai-Lao",
+    "primaryTradition": "Thai-Lao",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Lao-Isan cosmology; living folk cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Lao-Isan cosmology; living folk cult",
+        "eraOrdering": 0,
+        "startEvent": "Ordered down from the heaven of Phaya Thaen to fell the giant khua khao kat creeper that darkened the world, he perished beneath it and was raised to the rank of guardian ancestor (devata luang) of Luang Prabang (Hongsuwan 2018).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ເທວະດາຫຼວງ",
+          "script": "Lao",
+          "rom": "thevada luang — the great tutelary deities of the royal city"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ]
+      },
+      {
+        "sphereId": "seasonal-renewal",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ປີໃໝ່",
+          "script": "Lao",
+          "rom": "pi mai — the New Year, when the ancestors dance"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fell_sky_vine",
+        "name": "to cut down the great vine that darkened the world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ]
+      },
+      {
+        "id": "guard_city",
+        "name": "to guard Luang Prabang and bring prosperity and abundance to its people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "thai_lao_pu_nyoe_mask",
+        "name": "Red-faced ancestral mask of Pu Nyoe kept at Vat Aham",
+        "kind": "cult mask",
+        "role": "worn by a consecrated dancer who embodies the ancestor when the masks are brought out for the Lao New Year processions and the lustration of the Prabang image",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ເທວະດາຫຼວງ",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "thai_lao_ya_nyoe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ],
+        "notes": "Grandfather Nyoe and Grandmother Nyoe act throughout the myth as a married primordial couple and are honored together, as a pair, as the devata luang of Luang Prabang."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "thai_lao_phaya_thaen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ],
+        "notes": "In the Luang Prabang myth it is Phaya Thaen Luang who orders the aged couple down to earth to save humankind from the world-shading creeper."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Pu Nyoe is the male half of the ancestral couple who died felling the giant creeper that blotted out the sun and who are venerated as the devata luang, the guardian ancestor spirits of Luang Prabang, embodied by masked dancers at the Lao New Year.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Pu Nyoe ('Grandfather Nyoe') is one of the two great guardian ancestors of Luang Prabang. In the myth, a colossal creeper, the khua khao kat, grew up over the world and hid the sun; at the command of the sky lord Phaya Thaen the aged Pu Nyoe and his wife Ya Nyoe descended to cut it down, and when it finally fell it crushed them both. For this sacrifice the Lao honor them as the founding ancestors and tutelary deities (devata luang) of the royal city, a cult that tradition traces to the reign of Fa Ngum, founder of Lan Xang. Their red-faced, white-maned masks are kept at Vat Aham, and at the Lao New Year (Pi Mai) dancers embodying the couple, together with their lion companion Sing Kaew Sing Kham, lead the processions and take part in bathing the Prabang, the palladium of Laos. Villagers still invoke the pair when calling blessings, and they are believed to bring prosperity and abundance to the city and its people."
+  },
+  {
+    "id": "thai_lao_ya_nyoe",
+    "name": {
+      "primary": "Grandmother Nyoe, Guardian Ancestress of Luang Prabang",
+      "alt": [
+        "Ya Nyoe",
+        "YaYer",
+        "Ya Yer",
+        "Gna Gneu",
+        "Nha Nheu",
+        "Na No",
+        "Nya Nyeu"
+      ],
+      "transliterations": {
+        "lo": "ຍ່າເຍີ",
+        "th": "ย่าเยอ",
+        "etymology": "ya (nya), 'paternal grandmother', plus the ancestress's proper name Nyoe (Yer); paired with Pu Nyoe, 'Grandfather Nyoe' (Pathom Hongsuwan, Journal of Lao Studies 6:1, 2018)"
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Thai-Lao",
+    "primaryTradition": "Thai-Lao",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Lao-Isan cosmology; living folk cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Lao-Isan cosmology; living folk cult",
+        "eraOrdering": 0,
+        "startEvent": "Ordered down from the heaven of Phaya Thaen with her husband to fell the giant khua khao kat creeper that darkened the world, she perished beneath it and was raised to the rank of guardian ancestress (devata luang) of Luang Prabang (Hongsuwan 2018).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "guardianship",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ເທວະດາຫຼວງ",
+          "script": "Lao",
+          "rom": "thevada luang — the great tutelary deities of the royal city"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ]
+      },
+      {
+        "sphereId": "seasonal-renewal",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ປີໃໝ່",
+          "script": "Lao",
+          "rom": "pi mai — the New Year, when the ancestors dance"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fell_sky_vine",
+        "name": "to cut down the great vine that darkened the world",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ]
+      },
+      {
+        "id": "guard_city",
+        "name": "to guard Luang Prabang and bring prosperity and abundance to its people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "thai_lao_ya_nyoe_mask",
+        "name": "Red-faced ancestral mask of Ya Nyoe kept at Vat Aham",
+        "kind": "cult mask",
+        "role": "worn by a consecrated dancer who embodies the ancestress when the masks are brought out for the Lao New Year processions and the lustration of the Prabang image",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "ເທວະດາຫຼວງ",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "thai_lao_pu_nyoe",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          }
+        ],
+        "notes": "Grandmother Nyoe and Grandfather Nyoe act throughout the myth as a married primordial couple and are honored together, as a pair, as the devata luang of Luang Prabang."
+      },
+      {
+        "kind": "subordinate-to",
+        "personId": "thai_lao_phaya_thaen",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ],
+        "notes": "In the Luang Prabang myth it is Phaya Thaen Luang who orders the aged couple down to earth to save humankind from the world-shading creeper."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ya Nyoe is the female half of the ancestral couple who died felling the giant creeper that blotted out the sun and who are venerated as the devata luang, the guardian ancestor spirits of Luang Prabang, embodied by masked dancers at the Lao New Year.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Ing-Britt Trankell, 'Royal Relics: Ritual and Social Memory in Louang Prabang', in Grant Evans (ed.), Laos: Culture and Society (Chiang Mai: Silkworm Books, 1999), pp. 191–213"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Pathom Hongsuwan, 'PuYer-YaYer: Myths and Rituals of Ancestor Spirits with Buddhism in Luang Prabang, Lao PDR', Journal of Lao Studies 6:1 (2018), pp. 94–106"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ya Nyoe ('Grandmother Nyoe') is the ancestress of the guardian pair of Luang Prabang. With her husband Pu Nyoe she came down, at the bidding of the sky lord Phaya Thaen, to cut through the monstrous khua khao kat creeper whose canopy had plunged the world into darkness; the falling vine killed them both, and in gratitude the Lao raised the couple to the rank of devata luang, the great tutelary spirits of the royal capital. Her mask, kept with her husband's and that of the lion Sing Kaew Sing Kham at Vat Aham, is danced through Luang Prabang at the Pi Mai New Year, when the ancestral couple bless the town, join the great processions, and help lustrate the Prabang image. Households calling the couple's names at ceremonies remember them as the nurturing grandparents of the Lao people, givers of protection, prosperity, and abundance."
+  },
+  {
+    "id": "thai_lao_mae_khongkha",
+    "name": {
+      "primary": "Mother of Waters",
+      "alt": [
+        "Mae Khongkha",
+        "Phra Mae Khongkha",
+        "Mae Phra Khongkha",
+        "Me Khongkha",
+        "Khongkha"
+      ],
+      "transliterations": {
+        "th": "แม่คงคา",
+        "etymology": "mae, 'mother', plus khongkha, from Pali/Sanskrit Gaṅgā, 'the Ganges', used in Thai for the personified waters (Anuman Rajadhon, Loy Krathong & Songkran Festival, 1956)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thai-Lao",
+    "primaryTradition": "Thai-Lao",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Theravada Buddhist mythic time; pan-Tai folk cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Theravada Buddhist mythic time; pan-Tai folk cult",
+        "eraOrdering": 0,
+        "startEvent": "Enters Tai religion as the personified 'Mother of Waters' when the Indic river goddess Ganga was absorbed into Siamese and Lao Buddhist folk practice, above all in the festival of floating lights (Anuman Rajadhon 1956).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Loy Krathong & Songkran Festival, Thailand Culture Series No. 5 (Bangkok: The National Culture Institute, 1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Essays on Thai Folklore (Bangkok: Editions Duang Kamol, 1968)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers-and-waters",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "คงคา",
+          "script": "Thai",
+          "rom": "khongkha — the waters, a river (from Gaṅgā)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Loy Krathong & Songkran Festival, Thailand Culture Series No. 5 (Bangkok: The National Culture Institute, 1956)"
+          }
+        ]
+      },
+      {
+        "sphereId": "purification",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Essays on Thai Folklore (Bangkok: Editions Duang Kamol, 1968)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_waters",
+        "name": "to preside over rivers, canals, and all flowing waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Loy Krathong & Songkran Festival, Thailand Culture Series No. 5 (Bangkok: The National Culture Institute, 1956)"
+          }
+        ]
+      },
+      {
+        "id": "pardon_water_offences",
+        "name": "to accept thanks and grant pardon for the use and fouling of the waters",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Loy Krathong & Songkran Festival, Thailand Culture Series No. 5 (Bangkok: The National Culture Institute, 1956)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "thai_lao_krathong",
+        "name": "Krathong, the floating leaf-cup lamp",
+        "kind": "offering vessel",
+        "role": "banana-leaf float bearing candle, incense, flowers, and coins set adrift on the full moon of the twelfth month to honor and appease the Mother of Waters",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Loy Krathong & Songkran Festival, Thailand Culture Series No. 5 (Bangkok: The National Culture Institute, 1956)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "พระแม่คงคา",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Loy Krathong & Songkran Festival, Thailand Culture Series No. 5 (Bangkok: The National Culture Institute, 1956)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Mae Khongkha is the Thai-Lao mother goddess of rivers and waters, an adaptation of the Indic Ganga, to whom the floating-lights festival (Loy Krathong; Lao Boun Lai Heua Fai) is addressed in thanksgiving and apology.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Loy Krathong & Songkran Festival, Thailand Culture Series No. 5 (Bangkok: The National Culture Institute, 1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Phya Anuman Rajadhon, Essays on Thai Folklore (Bangkok: Editions Duang Kamol, 1968)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "'Mae Phra Khongkha', in Encyclopedia Mythica, online encyclopedia of mythology (pantheon.org)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mae Khongkha, the 'Mother of Waters', personifies the rivers, canals, and floods on which Tai agrarian life depends. Her name is the Thai form of Ganga, the Indic river goddess, naturalized — like the earth mother Mae Thorani and the rice mother Mae Phosop, with whom she completes the classic triad of Thai-Lao 'mother' deities — into a Buddhist folk religion of maternal providers. She is honored above all at the festival of floating lights on the twelfth-month full moon, when krathong floats of banana leaf, candle, incense, and coins are set adrift to thank her for water given to fields and households and to beg her pardon for a year of using and fouling her element; along the Mekong the fire-boat and floating-lights rites carry the same address to the waters. Boatmen, farmers, and householders continue to invoke her before drawing on rivers and canals, making hers one of the most widespread living cults of the tradition."
+  },
+  {
+    "id": "thai_lao_phaya_khankhak",
+    "name": {
+      "primary": "Toad King",
+      "alt": [
+        "Phaya Khankhak",
+        "Phya Khankhaak",
+        "Phaya Khan Khak",
+        "Phaya Khang Khok",
+        "Thao Khankhak"
+      ],
+      "transliterations": {
+        "th": "พญาคันคาก",
+        "lo": "ພະຍາຄັນຄາກ",
+        "etymology": "phaya, 'lord, king', plus khankhak, the Lao-Isan word for 'toad' (Wajuppa Tossa, Phya Khankhaak, the Toad King, 1996)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Thai-Lao",
+    "primaryTradition": "Thai-Lao",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Lao-Isan Buddhist folk cosmology; living cult of the Mekong"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Lao-Isan Buddhist folk cosmology; living cult of the Mekong",
+        "eraOrdering": 0,
+        "startEvent": "Born in the Isan verse epic as the Bodhisatta in the golden form of a toad to a human royal house, he grows into the universal king who wars on the sky lord Phaya Thaen when the rains are withheld (Tossa 1996).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wajuppa Tossa (trans.), Phya Khankhaak, the Toad King: A Translation of an Isan Fertility Myth in Verse, transcribed by Phra Ariyanuwat (Lewisburg: Bucknell University Press, 1996)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. J. Tambiah, Buddhism and the Spirit Cults in North-east Thailand (Cambridge: Cambridge University Press, 1970), ch. 17, 'Myth and Rite: The Naga Symbol and the Rocket Festival'"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rain-making",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ฝน",
+          "script": "Thai",
+          "rom": "fon — rain"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wajuppa Tossa (trans.), Phya Khankhaak, the Toad King: A Translation of an Isan Fertility Myth in Verse, transcribed by Phra Ariyanuwat (Lewisburg: Bucknell University Press, 1996)"
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. J. Tambiah, Buddhism and the Spirit Cults in North-east Thailand (Cambridge: Cambridge University Press, 1970), ch. 17, 'Myth and Rite: The Naga Symbol and the Rocket Festival'"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "compel_rain",
+        "name": "to compel the sky lord to release the rains",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wajuppa Tossa (trans.), Phya Khankhaak, the Toad King: A Translation of an Isan Fertility Myth in Verse, transcribed by Phra Ariyanuwat (Lewisburg: Bucknell University Press, 1996)"
+          }
+        ]
+      },
+      {
+        "id": "muster_creature_armies",
+        "name": "to muster animals, nagas, and insects as an army against heaven",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Wajuppa Tossa (trans.), Phya Khankhaak, the Toad King: A Translation of an Isan Fertility Myth in Verse, transcribed by Phra Ariyanuwat (Lewisburg: Bucknell University Press, 1996)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. J. Tambiah, Buddhism and the Spirit Cults in North-east Thailand (Cambridge: Cambridge University Press, 1970), ch. 17, 'Myth and Rite: The Naga Symbol and the Rocket Festival'"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "thai_lao_bang_fai_rocket",
+        "name": "Bang fai, the bamboo skyrocket",
+        "kind": "ritual emblem",
+        "role": "rockets fired skyward at the Bun Bang Fai festival to remind the sky lord of the rain covenant won by the Toad King",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. J. Tambiah, Buddhism and the Spirit Cults in North-east Thailand (Cambridge: Cambridge University Press, 1970), ch. 17, 'Myth and Rite: The Naga Symbol and the Rocket Festival'"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Wajuppa Tossa (trans.), Phya Khankhaak, the Toad King: A Translation of an Isan Fertility Myth in Verse, transcribed by Phra Ariyanuwat (Lewisburg: Bucknell University Press, 1996)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Phaya Khankhak, the Toad King, is the Bodhisatta hero of the Lao-Isan fertility epic who defeats the sky lord Phaya Thaen and establishes the covenant of the rains commemorated in the Bun Bang Fai rocket festival.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Wajuppa Tossa (trans.), Phya Khankhaak, the Toad King: A Translation of an Isan Fertility Myth in Verse, transcribed by Phra Ariyanuwat (Lewisburg: Bucknell University Press, 1996)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. J. Tambiah, Buddhism and the Spirit Cults in North-east Thailand (Cambridge: Cambridge University Press, 1970), ch. 17, 'Myth and Rite: The Naga Symbol and the Rocket Festival'"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Phaya Khankhak, the Toad King, is the hero of one of the great verse epics of the Lao-Isan world, transcribed from palm-leaf manuscripts by the monk-scholar Phra Ariyanuwat and translated by Wajuppa Tossa. Born to a human king and queen as the Bodhisatta in the ungainly golden form of a toad, he sheds his skin, wins a celestial wife, and becomes a universal monarch so revered that all beings bring him tribute. The slighted sky lord Phaya Thaen avenges himself by withholding rain for seven years, whereupon the Toad King builds a causeway to heaven and leads an army of men, nagas, and stinging creatures that forces Thaen to capitulate. Their settlement is the charter of the Lao-Isan rains: whenever people fire bang fai rockets at the start of the planting season, Thaen must send rain, and the croaking of toads and frogs confirms its arrival. The story, recounted throughout northeastern Thailand and Laos, remains the founding myth of the living Bun Bang Fai rocket festival of the Mekong basin."
+  },
+  {
+    "id": "thai_lao_thao_hung_cheuang",
+    "name": {
+      "primary": "Hero-King Cheuang",
+      "alt": [
+        "Thao Hung",
+        "Thao Cheuang",
+        "Thao Chueang",
+        "Khun Chueang",
+        "Phaya Chueang",
+        "Thao Hung Thao Cheuang"
+      ],
+      "transliterations": {
+        "lo": "ທ້າວຮຸ່ງ ທ້າວເຈືອງ",
+        "th": "ท้าวฮุ่งท้าวเจือง",
+        "etymology": "thao, 'lord, prince'; Hung is the hero's personal name and Cheuang his title-name, attested in hero traditions across the Tai-speaking world (James R. Chamberlain, Mon-Khmer Studies 18–19, 1989–1990)"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Thai-Lao",
+    "primaryTradition": "Thai-Lao",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Buddhist Tai agrarian folk religion; living cult"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "pre-Buddhist Tai agrarian folk religion; living cult",
+        "eraOrdering": 0,
+        "startEvent": "Emerges in the oldest stratum of Tai heroic literature as the warrior prince of the Suan Tan country whose wars, death, and campaigns beyond death fill the epic Thao Hung Thao Cheuang, a poem set in the pre-Buddhist Tai world (Chamberlain 1989–1990).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James R. Chamberlain, 'Thao Hung or Cheuang: A Tai Epic Poem', Mon-Khmer Studies 18–19 (1989–1990), pp. 14–34"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Martin Stuart-Fox, The Lao Kingdom of Lān Xāng: Rise and Decline (Bangkok: White Lotus Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ເສິກ",
+          "script": "Lao",
+          "rom": "soek — war, battle"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James R. Chamberlain, 'Thao Hung or Cheuang: A Tai Epic Poem', Mon-Khmer Studies 18–19 (1989–1990), pp. 14–34"
+          }
+        ]
+      },
+      {
+        "sphereId": "afterlife",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ຜີ",
+          "script": "Lao",
+          "rom": "phi — spirit of the dead"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James R. Chamberlain, 'Thao Hung or Cheuang: A Tai Epic Poem', Mon-Khmer Studies 18–19 (1989–1990), pp. 14–34"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead_armies",
+        "name": "to lead vast armies in war",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James R. Chamberlain, 'Thao Hung or Cheuang: A Tai Epic Poem', Mon-Khmer Studies 18–19 (1989–1990), pp. 14–34"
+          }
+        ]
+      },
+      {
+        "id": "command_ghost_hosts",
+        "name": "to lead the armies of the dead after his own death",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "James R. Chamberlain, 'Thao Hung or Cheuang: A Tai Epic Poem', Mon-Khmer Studies 18–19 (1989–1990), pp. 14–34"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Martin Stuart-Fox, The Lao Kingdom of Lān Xāng: Rise and Decline (Bangkok: White Lotus Press, 1998)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Thao Hung, also called Cheuang, is the hero-king of the pre-Buddhist Tai epic Thao Hung Thao Cheuang, remembered across Lao, Isan, and wider Tai traditions as a paragon warrior who continues to lead phantom armies after his death.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "James R. Chamberlain, 'Thao Hung or Cheuang: A Tai Epic Poem', Mon-Khmer Studies 18–19 (1989–1990), pp. 14–34"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Martin Stuart-Fox, The Lao Kingdom of Lān Xāng: Rise and Decline (Bangkok: White Lotus Press, 1998)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Thao Hung, honored under the title-name Cheuang, is the hero of the verse epic Thao Hung Thao Cheuang, which James Chamberlain has called perhaps the most important piece of literature of the Southeast Asian mainland and which is prized as a rare window on the Tai world before Buddhism. The poem follows the prince of the Suan Tan country through courtship, rivalry, and immense campaigns fought between Tai lords and the peoples of the middle Mekong uplands; struck down at the height of his power, the hero does not rest but marches again at the head of ghost armies in the land of the dead. The single surviving manuscript, recovered by the Lao savant Maha Sila Viravong in the National Library in Bangkok in 1943, preserves a poem whose hero is also remembered in chronicles and local hero-lore from Laos and northern Thailand to Sipsong Panna, where Chueang figures as a founding king. Because the epic's cosmology turns on the phi (spirits of the dead) and the old sky world rather than on Indic gods, scholars treat it as the outstanding monument of pre-Buddhist Tai religion and heroic ancestry."
+  }
+]
+```
+
+

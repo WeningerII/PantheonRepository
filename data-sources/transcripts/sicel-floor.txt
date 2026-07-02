@@ -1,0 +1,869 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Sicel
+Era (registered, exact): "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+Author pass: floor-raising expansion — attested individuated figures still missing (5 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added five genuinely individuated figures within the registered Sikel-Sicani era: the eponymous ancestor-king Sikelos (Hellanicus, Philistus and Antiochus apud Dionysius Hal. 1.22 and 1.12.3; Sammartano 1998), the Sican king Kokalos of Kamikos (Herodotus 7.170; Diodorus 4.78-79; Dunbabin, PBSR 16, 1948), the Sican battle-hero Leukaspis (Diodorus 4.23.5; Syracusan drachms c. 405-400 BCE; Caccamo Caltabiano, LIMC VI.1, 1992; Dunst, BCH 88, 1964), the deified river Chrysas of Assorus (Cicero, Verr. 2.4.96; Head, Historia Numorum2, p. 127), and the collective Mothers of Engyon (Diodorus 4.79.5-80.6; Plutarch, Marcellus 20; Cicero, Verr. 2.4.97; Sfameni Gasparro 1973), the last authored as a single collective cult figure on the model of the existing Palici entry. Kokalos is wired into the wider registry by the attested directed relation slayer-of toward the existing greek_minos. Deliberately excluded as not further individuated or out of scope: the bare-name Sican generals of Diodorus 4.23.5 (Pediacrates, Buphonas and others), the historical Sicel kings Hyblon (Thuc. 6.4.1) and Ducetius (historical actors without attested cult), the mainland eponyms Italos and Morges, and Aitne, already covered as an alias of the existing sicel_thaleia.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "sicel_sikelos",
+    "name": {
+      "primary": "Sikelos",
+      "alt": [
+        "Sicelus",
+        "Siculus",
+        "Sikelós"
+      ],
+      "transliterations": {
+        "grc": "Σικελός",
+        "lat": "Siculus",
+        "etymology": "The personal name is the singular of the ethnonym Sikeloi (Latin Siculi); Greek historians derived both the people and the island Sikelia from this eponymous king, while the ethnic name itself is of Italic origin (R. Sammartano, Origines gentium Siciliae, 1998)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Sicel",
+    "primaryTradition": "Sicel",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 0,
+        "startEvent": "Placed by Hellanicus of Lesbos three generations before the Trojan War, when as king he led his people out of Italy across the strait into the island that thereafter bore his name, Sikelia.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dionysius of Halicarnassus, Roman Antiquities 1.22.3-5 (citing Hellanicus of Lesbos and Philistus of Syracuse) (trans. E. Cary, Loeb Classical Library 319, Harvard University Press, 1937)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "eponymous-ancestry-and-peoplehood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Sikeloi",
+          "script": "Latin",
+          "rom": "Sikeloí (the Sicel people)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dionysius of Halicarnassus, Roman Antiquities 1.22.3-5 (trans. E. Cary, Loeb Classical Library 319, Harvard University Press, 1937)"
+          }
+        ]
+      },
+      {
+        "sphereId": "migration-and-land-taking",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "R. Sammartano, Origines gentium Siciliae: Ellanico, Antioco, Tucidide (Supplementi a Kokalos 14; Rome: Giorgio Bretschneider, 1998)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead_the_sicels_across_the_strait",
+        "name": "to lead his people out of Italy across the strait into Sicily",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Hellanicus makes him king of the Ausonians fleeing the Iapygians; Philistus makes the migrants Ligurians under his command.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dionysius of Halicarnassus, Roman Antiquities 1.22.3-5 (trans. E. Cary, Loeb Classical Library 319, Harvard University Press, 1937)"
+          }
+        ]
+      },
+      {
+        "id": "give_his_name_to_people_and_island",
+        "name": "to give his name to the Sicel people and to the island of Sicily",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The renaming of Sikania as Sikelia after the newcomers is the constant element of the Greek accounts of the Sicel crossing.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thucydides, History of the Peloponnesian War 6.2.4-5 (trans. C. F. Smith, Loeb Classical Library 110, Harvard University Press, 1921)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Sikelos is the eponymous ancestor-king of the Sicels, remembered by the Greek historians as the leader under whom the people crossed from Italy into the island that was renamed Sikelia after them.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Dionysius of Halicarnassus, Roman Antiquities 1.12.3 and 1.22.3-5 (trans. E. Cary, Loeb Classical Library 319, Harvard University Press, 1937)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "R. Sammartano, Origines gentium Siciliae: Ellanico, Antioco, Tucidide (Supplementi a Kokalos 14; Rome: Giorgio Bretschneider, 1998)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "W. Smith (ed.), 'Siculi', in A Dictionary of Greek and Roman Geography (London: Walton & Maberly, 1854-1857), vol. 2"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Sikelos (Latin Siculus) is the legendary eponymous ancestor of the Sicels, the pre-Greek people of eastern Sicily. The classical accounts of the Sicel crossing from the Italian mainland all turn on him: Hellanicus of Lesbos, quoted by Dionysius of Halicarnassus, dated the migration three generations before the Trojan War and named Sikelos as king of the Ausonians who fled the Iapygians; Philistus of Syracuse put the crossing eighty years before the Trojan War and called Sikelos a son of Italos leading Ligurians; Antiochus of Syracuse told instead of a fugitive from Rome named Sikelos who was received by Morges, king of Italy, and whose followers took his name. Thucydides, who records the same migration and the renaming of the island from Sikania to Sikelia, adds that Italy itself was named after Italos, a king of the Sicels. Sikelos is thus an ancestral figure of Greco-Roman ethnographic legend rather than a cult recipient; modern scholarship, above all Roberto Sammartano's study of the origin-traditions of the Sicilian peoples, treats these genealogies as Greek constructions built around a genuine memory of an Italic migration into Sicily late in the second millennium BCE."
+  },
+  {
+    "id": "sicel_kokalos",
+    "name": {
+      "primary": "Kokalos",
+      "alt": [
+        "Cocalus",
+        "Kokalos of Kamikos",
+        "Cocalos"
+      ],
+      "transliterations": {
+        "grc": "Κώκαλος",
+        "lat": "Cocalus",
+        "etymology": "Kokalos, a personal name of uncertain and probably indigenous Sicilian origin borne by the legendary king of Kamikos; the leading journal of ancient Sicilian studies, Kokalos (Palermo, founded 1955), takes its title from him (cf. T. J. Dunbabin, 'Minos and Daidalos in Sicily', 1948)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Sicel",
+    "primaryTradition": "Sicel",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 0,
+        "startEvent": "Reigned over the Sicani from the rock-citadel of Kamikos in the generation of Minos, and received the craftsman Daedalus after his flight from Crete, setting him to great building works across Sicily.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.78.1-4.79.1 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 1,
+        "startEvent": "When Minos landed in Sicania with a great armada to demand the fugitive, Kokalos received the king with feigned hospitality and destroyed him in the bath, so that Minos, as Herodotus says, died a violent death at Kamikos.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, The Persian Wars 7.170 (trans. A. D. Godley, Loeb Classical Library 119, Harvard University Press, 1922)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.79.1-2 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship-among-the-sicani",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "basileus",
+          "script": "Latin",
+          "rom": "basileús (king)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.78.1 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          }
+        ]
+      },
+      {
+        "sphereId": "hospitality-and-protection-of-suppliants",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "xenia",
+          "script": "Latin",
+          "rom": "xenía (guest-friendship)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Apollodorus, The Library, Epitome 1.14-15 (trans. J. G. Frazer, Loeb Classical Library 122, Harvard University Press, 1921)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shelter_the_fugitive_daedalus",
+        "name": "to shelter the fugitive craftsman Daedalus against the power of Minos",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Kokalos kept Daedalus hidden even when Minos exposed him through the riddle of threading a spiral seashell, which only Daedalus could solve by harnessing an ant to a thread.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Apollodorus, The Library, Epitome 1.14-15 (trans. J. G. Frazer, Loeb Classical Library 122, Harvard University Press, 1921)"
+          }
+        ]
+      },
+      {
+        "id": "destroy_minos_through_cunning_hospitality",
+        "name": "to destroy an invading king through cunning hospitality",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "In Diodorus the king himself kept Minos too long in the hot bath; in the commoner version his daughters, at Daedalus' prompting, scalded the Cretan king to death with boiling water.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.79.2 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Apollodorus, The Library, Epitome 1.15 (trans. J. G. Frazer, Loeb Classical Library 122, Harvard University Press, 1921)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sicel_kamikos_rock_citadel",
+        "name": "the rock-citadel of Kamikos",
+        "kind": "stronghold",
+        "role": "The impregnable fortress that Daedalus built for Kokalos on a crag near Akragas, the strongest place in Sicily, where the king kept his treasures and withstood the five-year Cretan siege.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.78.2-3 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, The Persian Wars 7.170 (trans. A. D. Godley, Loeb Classical Library 119, Harvard University Press, 1922)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "slayer-of",
+        "personId": "greek_minos",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.79.2 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Herodotus, The Persian Wars 7.170 (trans. A. D. Godley, Loeb Classical Library 119, Harvard University Press, 1922)"
+          }
+        ],
+        "notes": "In Diodorus' Sicilian account Kokalos himself killed Minos by holding him too long in the scalding bath and returned the body to the Cretans as an accident; the commoner version makes his daughters, advised by Daedalus, pour boiling water over the king. Herodotus knows only that Minos, having come to Sicania in search of Daedalus, died there a violent death at Kamikos."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kokalos is the legendary king of the Sicani at Kamikos who sheltered the fugitive Daedalus and brought about the death of Minos of Crete in the bath, the central native figure of the oldest Greek legend attached to pre-Greek Sicily.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "T. J. Dunbabin, 'Minos and Daidalos in Sicily', Papers of the British School at Rome 16 (1948), pp. 1-18"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.78-79 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "E. Sjöqvist, Sicily and the Greeks: Studies in the Interrelationship between the Indigenous Populations and the Greek Colonists (Jerome Lectures 9; Ann Arbor: University of Michigan Press, 1973)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kokalos (Latin Cocalus) is the legendary king of the Sicani whose court at the rock-citadel of Kamikos, near later Akragas, is the setting of the oldest Greek story told of pre-Greek Sicily. When Daedalus fled from Crete, Kokalos took him in, and Sicilian tradition credited the craftsman with marvellous works for his host, above all the impregnable citadel of Kamikos where the king kept his treasure. Minos pursued the fugitive with a great fleet and unmasked him by offering a reward to whoever could thread a spiral seashell, a riddle only Daedalus could solve; Kokalos then promised the king everything, received him as a guest, and destroyed him in the bath, either keeping him in the scalding water himself, as Diodorus tells it, or through his daughters, who at Daedalus' prompting poured boiling water over the guest. Herodotus already knew that Minos died a violent death at Kamikos in Sikania and that the Cretans besieged the town for five years in vain. The tale was dramatized in Sophocles' lost Men of Kamikos and Aristophanes' lost comedy Kokalos, and its possible kernel of Bronze Age Aegean contact with Sicily has been debated since T. J. Dunbabin's classic study; the Palermo journal of ancient Sicilian history is named Kokalos after the king."
+  },
+  {
+    "id": "sicel_leukaspis",
+    "name": {
+      "primary": "Leukaspis",
+      "alt": [
+        "Leucaspis",
+        "Leukaspis the Sican"
+      ],
+      "transliterations": {
+        "grc": "Λεύκασπις",
+        "lat": "Leucaspis",
+        "etymology": "Greek leukaspis, 'he of the white shield' (leukos 'white' + aspis 'shield'), a Greek warrior-name applied to the indigenous Sican hero (M. Caccamo Caltabiano, 'Leukaspis', LIMC VI.1, 1992)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Sicel",
+    "primaryTradition": "Sicel",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 0,
+        "startEvent": "Set in the age of Heracles' passage through the interior of Sicily with the cattle of Geryon, when the Sicani met the hero in a pitched battle and Leukaspis fell among their most distinguished generals, who, Diodorus says, receive heroic honours even to this day.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.23.5 (trans. C. H. Oldfather, Loeb Classical Library 303, Harvard University Press, 1935)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 1,
+        "startEvent": "About 405-400 BCE the mint of Syracuse struck silver drachms naming the hero ΛΕΥΚΑΣΠΙΣ and showing him nude and helmeted, advancing with spear and oval shield beside a garlanded altar with the forepart of a sacrificed ram, the clearest witness to his living cult in Syracusan territory.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. Caccamo Caltabiano, 'Leukaspis', in Lexicon Iconographicum Mythologiae Classicae (LIMC) VI.1 (Zurich and Munich: Artemis Verlag, 1992)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. Dunst, 'Leukaspis', Bulletin de correspondance hellénique 88.2 (1964), pp. 482-485"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-leadership-in-battle",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.23.5 (trans. C. H. Oldfather, Loeb Classical Library 303, Harvard University Press, 1935)"
+          }
+        ]
+      },
+      {
+        "sphereId": "hero-cult-and-guardianship-of-the-land",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "heros",
+          "script": "Latin",
+          "rom": "hḗrōs (hero)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. Caccamo Caltabiano, 'Leukaspis', in Lexicon Iconographicum Mythologiae Classicae (LIMC) VI.1 (Zurich and Munich: Artemis Verlag, 1992)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead_the_sicani_in_battle",
+        "name": "to lead the Sicani in battle against Heracles",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Diodorus names him first among the distinguished generals of the Sicani who fell opposing the hero's passage through the island's interior.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.23.5 (trans. C. H. Oldfather, Loeb Classical Library 303, Harvard University Press, 1935)"
+          }
+        ]
+      },
+      {
+        "id": "guard_the_land_as_a_worshipped_hero",
+        "name": "to guard the land as a worshipped hero receiving sacrifice at his altar",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The garlanded altar and sacrificed ram beside the armed hero on the Syracusan drachms depict the sacrificial cult he received.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. Dunst, 'Leukaspis', Bulletin de correspondance hellénique 88.2 (1964), pp. 482-485"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sicel_white_shield_of_leukaspis",
+        "name": "the white shield of Leukaspis",
+        "kind": "emblem",
+        "role": "The oval shield from which the hero takes his name and with which he advances on the Syracusan silver drachms of the late fifth century BCE.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "M. Caccamo Caltabiano, 'Leukaspis', in Lexicon Iconographicum Mythologiae Classicae (LIMC) VI.1 (Zurich and Munich: Artemis Verlag, 1992)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Leukaspis is a Sican war-leader who fell fighting Heracles and was thereafter worshipped as a hero, named and depicted with spear, shield and sacrificial altar on Syracusan silver drachms of about 405-400 BCE.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.23.5 (trans. C. H. Oldfather, Loeb Classical Library 303, Harvard University Press, 1935)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "M. Caccamo Caltabiano, 'Leukaspis', in Lexicon Iconographicum Mythologiae Classicae (LIMC) VI.1 (Zurich and Munich: Artemis Verlag, 1992)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. Dunst, 'Leukaspis', Bulletin de correspondance hellénique 88.2 (1964), pp. 482-485"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Leukaspis ('he of the white shield') is a hero of the Sicani, the pre-Greek people of central and western Sicily. Diodorus Siculus relates that when Heracles drove the cattle of Geryon through the interior of the island the Sicani opposed him in a pitched battle, and that among the many slain were distinguished generals who continued to receive heroic honours down to his own day, Leukaspis being named first among them alongside Pediacrates and four others. Alone of that company Leukaspis can be traced in cult: at the end of the fifth century BCE, under Dionysius I, the Syracusan mint issued silver drachms whose reverse names him ΛΕΥΚΑΣΠΙΣ and shows the nude, crest-helmeted hero advancing with spear and oval shield, a sword slung at his shoulder, beside a garlanded altar and the forepart of a sacrificed ram — the image of an armed guardian hero honoured with sacrifice in Syracusan territory. The adoption of an indigenous Sican hero on the coinage of Greek Syracuse is a striking witness to the interweaving of native and colonial religion in Sicily; the name itself is Greek, evidently a Hellenization of the native figure."
+  },
+  {
+    "id": "sicel_chrysas",
+    "name": {
+      "primary": "Chrysas",
+      "alt": [
+        "Chrysas of Assorus",
+        "the river-god of the Dittaino"
+      ],
+      "transliterations": {
+        "grc": "Χρύσας",
+        "lat": "Chrysas",
+        "etymology": "Greek Chrysas, from chrysos 'gold', 'the golden river'; the Hellenized name of the stream (the modern Dittaino) that flows past Assorus and was worshipped there as a god (W. Smith (ed.), Dictionary of Greek and Roman Geography, s.v. 'Assorus', 1854)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sicel",
+    "primaryTradition": "Sicel",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped by the Sikel community of Assorus as the deified river flowing through its fields, with a shrine of exceptional sanctity standing in open country beside the road from Assorus to Henna.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Cicero, The Verrine Orations 2.4.96 (trans. L. H. G. Greenwood, Loeb Classical Library 293, Harvard University Press, 1935)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 1,
+        "startEvent": "After 210 BCE his image, evidently copied from the marble cult statue, appears on the bronze coinage of Assorus, and about 73-71 BCE Verres' agents Tlepolemus and Hiero broke into the shrine by night in an attempt to carry the statue off, the townsmen rallying to its defence.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "B. V. Head, Historia Numorum: A Manual of Greek Numismatics, 2nd ed. (Oxford: Clarendon Press, 1911), p. 127"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Cicero, The Verrine Orations 2.4.96 (trans. L. H. G. Greenwood, Loeb Classical Library 293, Harvard University Press, 1935)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers-and-flowing-water",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "amnis",
+          "script": "Latin",
+          "rom": "amnis (river)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Cicero, The Verrine Orations 2.4.96 ('Chrysas est amnis qui per Assorinorum agros fluit; is apud illos habetur deus') (trans. L. H. G. Greenwood, Loeb Classical Library 293, Harvard University Press, 1935)"
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility-of-the-fields",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "B. V. Head, Historia Numorum: A Manual of Greek Numismatics, 2nd ed. (Oxford: Clarendon Press, 1911), p. 127 (the river-god of Assorus holds amphora and cornucopiae)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "embody_the_river_chrysas",
+        "name": "to embody the river that waters the fields of Assorus",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Cicero states plainly that the river itself was held to be a god among the Assorini and worshipped with the greatest reverence.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Cicero, The Verrine Orations 2.4.96 (trans. L. H. G. Greenwood, Loeb Classical Library 293, Harvard University Press, 1935)"
+          }
+        ]
+      },
+      {
+        "id": "guard_the_sanctity_of_his_shrine",
+        "name": "to guard his wayside shrine with an awe that restrained even a plundering governor",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "So great was the shrine's religious standing that Verres dared not demand the statue openly but sent agents to steal it by night, and the townspeople drove them off.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Cicero, The Verrine Orations 2.4.96 (trans. L. H. G. Greenwood, Loeb Classical Library 293, Harvard University Press, 1935)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sicel_marble_statue_of_chrysas",
+        "name": "the marble cult statue of Chrysas",
+        "kind": "cult-image",
+        "role": "The marble image of the river-god in his roadside shrine, target of Verres' night raid; the standing river-god with amphora and cornucopiae on the bronze coins of Assorus is thought to copy it.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Cicero, The Verrine Orations 2.4.96 (trans. L. H. G. Greenwood, Loeb Classical Library 293, Harvard University Press, 1935)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "B. V. Head, Historia Numorum: A Manual of Greek Numismatics, 2nd ed. (Oxford: Clarendon Press, 1911), p. 127"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Chrysas is the deified river of the Sikel town of Assorus, worshipped, as Cicero attests, as a god with a revered shrine on the Assorus-Henna road and depicted as a standing river-god on the town's bronze coinage.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Cicero, The Verrine Orations 2.4.96 (trans. L. H. G. Greenwood, Loeb Classical Library 293, Harvard University Press, 1935)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "B. V. Head, Historia Numorum: A Manual of Greek Numismatics, 2nd ed. (Oxford: Clarendon Press, 1911), p. 127"
+          },
+          {
+            "kind": "secondary",
+            "reference": "W. Smith (ed.), 'Assorus', in A Dictionary of Greek and Roman Geography (London: Walton & Maberly, 1854), vol. 1"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Chrysas, 'the golden river' (the modern Dittaino), was the god of the small Sikel town of Assorus (modern Assoro), which lay between Henna and Agyrium in the island's interior and appears among the Sikel communities of that region in Diodorus (14.78.7). Cicero, prosecuting Verres in 70 BCE, provides the fullest ancient notice of a Sicilian river-cult: 'Chrysas is the river that flows through the territory of the Assorini; among them he is held to be a god and is worshipped with the greatest reverence. His shrine stands in the countryside beside the road from Assorus to Henna, and in it is an image of Chrysas himself, finely wrought in marble.' Because of the shrine's exceptional sanctity Verres did not dare demand the statue outright but sent his agents Tlepolemus and Hiero to break in by night; roused by the temple slaves' horn, the countryside gathered and drove the raiders off, and only a small bronze piece was carried away. The bronze coins of Assorus struck after 210 BCE show the river-god standing with amphora and cornucopiae, very likely copying the marble image; the cult of the local stream, Greek in dress but rooted in the town's indigenous devotion to its own waters, is a prime example of the persistence of pre-Greek Sicilian religion into the Roman period."
+  },
+  {
+    "id": "sicel_meteres_of_engyon",
+    "name": {
+      "primary": "The Mothers of Engyon",
+      "alt": [
+        "Meteres",
+        "Matres",
+        "Mater Magna of Engyum",
+        "Helike and Kynosoura (Cretan identification)"
+      ],
+      "transliterations": {
+        "grc": "Μητέρες",
+        "lat": "Matres / Mater Magna",
+        "etymology": "Greek Meteres, 'the Mothers'; Diodorus identifies the goddesses with the Cretan nurses of the infant Zeus who became the Bears among the stars, while Cicero renders the cult in Roman terms as that of the Mater Magna (G. Sfameni Gasparro, I culti orientali in Sicilia, 1973)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sicel",
+    "primaryTradition": "Sicel",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped at Engyon, a hill-town of the Sicilian interior whose foundation legend held that Cretans of the age of Minos settled at its spring and established there the worship of the goddesses called the Mothers, whom they had honoured in their homeland.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.79.5-7 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          }
+        ]
+      },
+      {
+        "typeStatus": "deity",
+        "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)",
+        "eraOrdering": 1,
+        "startEvent": "Their temple, endowed with sacred herds and rich revenues and hung with heroic dedications such as the spears and bronze helmets inscribed with the names of Meriones and Odysseus, remained famous for the goddesses' manifest epiphanies into the Roman age, when Nicias of Engyion exploited the belief in their power to possess the impious and P. Scipio's dedicated armour was stolen by Verres.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Marcellus 20 (trans. B. Perrin, Loeb Classical Library 87, Harvard University Press, 1917)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Cicero, The Verrine Orations 2.4.97 (trans. L. H. G. Greenwood, Loeb Classical Library 293, Harvard University Press, 1935)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "motherhood-and-divine-nurture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Meteres",
+          "script": "Latin",
+          "rom": "Mētéres (the Mothers)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Marcellus 20 (trans. B. Perrin, Loeb Classical Library 87, Harvard University Press, 1917)"
+          }
+        ]
+      },
+      {
+        "sphereId": "epiphany-and-numinous-terror",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "epiphaneia",
+          "script": "Latin",
+          "rom": "epipháneia (manifest divine presence)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Marcellus 20 (trans. B. Perrin, Loeb Classical Library 87, Harvard University Press, 1917)"
+          }
+        ]
+      },
+      {
+        "sphereId": "stars-of-the-great-and-little-bear",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "arktoi",
+          "script": "Latin",
+          "rom": "árktoi (the Bears)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.79.7-80.3 (citing Aratus) (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "nurse_the_infant_zeus",
+        "name": "to nurse and rear the infant Zeus in secret",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Diodorus, citing Aratus, identifies the Mothers with the nymphs Helike and Kynosoura who nurtured Zeus in Crete and were set among the stars as the Great and Little Bear.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.79.7-80.3 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          }
+        ]
+      },
+      {
+        "id": "manifest_in_epiphanies",
+        "name": "to make their presence manifest through epiphanies and portents",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "Plutarch, drawing on Posidonius, says Engyion was famous above all for the epiphany of the goddesses called the Mothers.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Marcellus 20 (trans. B. Perrin, Loeb Classical Library 87, Harvard University Press, 1917)"
+          }
+        ]
+      },
+      {
+        "id": "strike_the_impious_with_madness",
+        "name": "to strike those who offend them with possession and madness",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "During the Second Punic War Nicias of Engyion saved himself by feigning that the Mothers had seized him, throwing off his cloak and raving in their name — a ruse that worked only because such possession was believed to be within the goddesses' power.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Marcellus 20 (trans. B. Perrin, Loeb Classical Library 87, Harvard University Press, 1917)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sicel_engyon_heroic_dedications",
+        "name": "the spears and bronze helmets of Meriones and Odysseus at Engyon",
+        "kind": "votive-relic",
+        "role": "Heroic arms displayed in the Mothers' temple and inscribed with the names of their dedicators Meriones and Odysseus (Ulysses), tokens of the sanctuary's legendary Cretan pedigree; alongside them stood the Corinthian-bronze corslets, helmets and great water-jars dedicated by P. Scipio Africanus and later stolen by Verres.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Marcellus 20 (trans. B. Perrin, Loeb Classical Library 87, Harvard University Press, 1917)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Cicero, The Verrine Orations 2.4.97 (trans. L. H. G. Greenwood, Loeb Classical Library 293, Harvard University Press, 1935)"
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Μητέρες",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Marcellus 20 (trans. B. Perrin, Loeb Classical Library 87, Harvard University Press, 1917)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The Mothers (Meteres) of Engyon are the collective mother-goddesses of a famous and wealthy sanctuary in the Sicilian interior, identified by Diodorus with the Cretan nurses of Zeus, celebrated by Plutarch for their epiphanies, and assimilated by Cicero to the Mater Magna.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Diodorus Siculus, Library of History 4.79.5-80.6 (trans. C. H. Oldfather, Loeb Classical Library 340, Harvard University Press, 1939)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Plutarch, Life of Marcellus 20 (trans. B. Perrin, Loeb Classical Library 87, Harvard University Press, 1917)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "G. Sfameni Gasparro, I culti orientali in Sicilia (EPRO 31; Leiden: Brill, 1973)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Mothers (Greek Meteres) were the goddesses of Engyon (Engyum), a hill-town of the central Sicilian interior whose site is disputed between Gangivecchio near Gangi and Troina. Ancient tradition, reported by Diodorus and, from Posidonius, by Plutarch, made Engyon a foundation of Cretans stranded in Sicily after the death of Minos, who named the town after its spring and transplanted the worship of the Mothers from their homeland; Diodorus, citing Aratus, identifies the goddesses with the nymphs Helike and Kynosoura who nursed the infant Zeus on Cretan Ida and were translated to the sky as the Great and Little Bear. The sanctuary was among the most famous of inland Sicily: Diodorus describes a temple of astonishing size and costly construction, an estate of three thousand sacred cattle and wide lands yielding great revenues, while Plutarch records the heroic relics shown there — spears and bronze helmets inscribed with the names of Meriones and Odysseus — and tells how, in the Second Punic War, the pro-Roman notable Nicias escaped execution by feigning that the Mothers had possessed him with madness, a ruse credible only where their punishing power was feared. Cicero, listing Verres' sacrileges, calls the shrine a temple of the Mater Magna and reports the theft of the Corinthian-bronze corslets, helmets and great water-jars dedicated by P. Scipio Africanus. Modern students of Sicilian religion see in the Mothers an indigenous cult of collective mother-goddesses in Sikel-Sicani country, given a Cretan pedigree in the Hellenistic age and a Roman face by Cicero; the plural cult entity is worshipped jointly, like the twin Palici, and is here registered as a single collective figure."
+  }
+]
+```

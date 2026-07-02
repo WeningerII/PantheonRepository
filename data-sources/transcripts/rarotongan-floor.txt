@@ -1,0 +1,975 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Rarotongan
+Era (registered, exact): "Rarotongan traditional religion; continuing"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six figures that Rarotongan-specific scholarship clearly individuates beyond the recently authored core: the cosmogonic parents Atea and Papa (Paparoa-i-te-itinga), wired as father and mother of the existing Tangaroa and Rongo (Keane, Te Ara; Taonui in Vaka Moana, 2006; Gill 1876; Craig 1989); the lizard-bodied god Tongaiti, who besides his place among the five divine sons has a dedicated Rarotongan narrative (Manuiri, JPS 5, 1896) and sailed with Tangiia's god-company (Te Ariki-tara-are, JPS 28-29); and the three great mortals of the settlement cycle — the navigator-priest Iro-nui-ma-oata (Te Rei, JPS 25-26, 1916-17; Savage, JPS 25, 1916), his son Tai-te-ariki, adopted by Tangiia and installed as first ariki (Te Ariki-tara-are, JPS 28, 1919), and the pursuer Tutapu-aru-roa (Smith, Hawaiki, 1910; Buck, Vikings of the Sunrise, 1938). I deliberately excluded Tane, who appears in the Rarotongan five-son genealogy but is cultically individuated only on Aitutaki and Mangaia, and Motoro, Tangiia's deified son, whose worship belongs to Mangaia's Ngariki (Gill 1876). Gill's other Mangaian figures (Vari-ma-te-takere, Miru, Tinirau, the lunar aspects of Avatea) were likewise judged to belong to a Mangaian rather than Rarotongan register. Note: the JPS website and several archives were blocked by this session's egress policy, so attestation was verified through search-indexed excerpts of the JPS texts, Te Ara, and the secondary literature cited.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "rarotongan_atea",
+    "name": {
+      "primary": "Atea (the Sky Father)",
+      "alt": [
+        "Ātea",
+        "Vatea",
+        "Avatea",
+        "Vātea"
+      ],
+      "transliterations": {
+        "rar": "Ātea",
+        "etymology": "atea, 'clear, wide, open space': the personified bright expanse of the sky, answering to Vātea/Avatea of Mangaia and Wākea of Hawai'i (Robert D. Craig, Dictionary of Polynesian Mythology, 1989)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Rarotongan",
+    "primaryTradition": "Rarotongan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Rarotongan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Rarotongan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "In the Rarotongan cosmogony the sky father Atea, drawn from the side of the primordial goddess Vari-ma-te-takere, moves about, changing shape and growing until he forms the heavens, and takes the earth mother Paparoa-i-te-itinga to wife.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rawiri Taonui, 'Polynesian Oral Traditions', in K. R. Howe (ed.), Vaka Moana: Voyages of the Ancestors (Auckland: David Bateman, 2006)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky-and-light",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "atea",
+          "script": "Latin",
+          "rom": "clear, open expanse; the bright sky"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (New York: Greenwood Press, 1989)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "form_the_heavens",
+        "name": "to spread out, change shape and form the heavens",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          }
+        ]
+      },
+      {
+        "id": "beget_the_great_gods",
+        "name": "to beget the great gods of the pantheon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "rarotongan_tangaroa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          }
+        ],
+        "notes": "Tangaroa is the senior of the five sons borne to Atea by Paparoa-i-te-itinga in the Rarotongan genealogy; the closely related Mangaian telling recorded by Gill makes Tangaroa and Rongo his twin sons by Papa."
+      },
+      {
+        "kind": "father-of",
+        "personId": "rarotongan_rongo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          }
+        ],
+        "notes": "Rongo is one of the five great sons of Atea and Paparoa-i-te-itinga; in Gill's Mangaian version Papa contrived that her favourite Rongo, twin of Tangaroa, should receive the tribute of food."
+      },
+      {
+        "kind": "spouse",
+        "personId": "rarotongan_papa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rawiri Taonui, 'Polynesian Oral Traditions', in K. R. Howe (ed.), Vaka Moana: Voyages of the Ancestors (Auckland: David Bateman, 2006)."
+          }
+        ],
+        "notes": "Atea, the sky father, married Paparoa-i-te-itinga, the earth mother, in the Rarotongan tradition."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Atea is the sky father of the Rarotongan cosmogony who formed the heavens and, with the earth mother Paparoa-i-te-itinga, begot the great gods including Tangaroa and Rongo.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rawiri Taonui, 'Polynesian Oral Traditions', in K. R. Howe (ed.), Vaka Moana: Voyages of the Ancestors (Auckland: David Bateman, 2006)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (New York: Greenwood Press, 1989)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Atea, the personified bright expanse of the sky, stands at the head of the Rarotongan genealogy of the gods. In the tradition reported from Rarotonga, the primordial goddess Vari-ma-te-takere drew Atea from her side; he moved about, changing shape and increasing in size until he formed the heavens, and he took to wife Paparoa-i-te-itinga, the earth mother, who bore him the five great gods Tangaroa, Rongo, Tane, Tongaiti and the divine Tangiia. He answers to Vātea or Avatea of neighbouring Mangaia, whose eyes were there said to be the sun and the moon, and further afield to Wākea of Hawai'i and Ātea of the Marquesas and the Tuamotu Islands."
+  },
+  {
+    "id": "rarotongan_papa",
+    "name": {
+      "primary": "Papa (the Earth Mother)",
+      "alt": [
+        "Papa",
+        "Paparoa-i-te-itinga"
+      ],
+      "transliterations": {
+        "rar": "Paparoa-i-te-itinga",
+        "etymology": "papa, 'foundation rock, stratum'; the full Rarotongan name Paparoa-i-te-itinga is understood as the great foundation stretching into the sunrise (Basil Keane, 'Ranginui – the sky', Te Ara, 2007)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Rarotongan",
+    "primaryTradition": "Rarotongan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Rarotongan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Rarotongan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Paparoa-i-te-itinga, the earth mother of the Rarotongan genealogy, weds the sky father Atea and bears the five great gods — Tangaroa, Rongo, Tane, Tongaiti and Tangiia — together with Te Tumu, the foundation stone.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rawiri Taonui, 'Polynesian Oral Traditions', in K. R. Howe (ed.), Vaka Moana: Voyages of the Ancestors (Auckland: David Bateman, 2006)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-and-foundation",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "papa",
+          "script": "Latin",
+          "rom": "foundation, flat rock, stratum"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear_the_great_gods",
+        "name": "to bring forth the great gods of the pantheon",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          }
+        ]
+      },
+      {
+        "id": "ground_the_world",
+        "name": "to underlie the world as its foundation",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Rawiri Taonui, 'Polynesian Oral Traditions', in K. R. Howe (ed.), Vaka Moana: Voyages of the Ancestors (Auckland: David Bateman, 2006)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Paparoa-i-te-itinga",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rawiri Taonui, 'Polynesian Oral Traditions', in K. R. Howe (ed.), Vaka Moana: Voyages of the Ancestors (Auckland: David Bateman, 2006)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "rarotongan_tangaroa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          }
+        ],
+        "notes": "Paparoa-i-te-itinga bore Tangaroa among her five divine sons; in Gill's Mangaian record Tangaroa was the first-born twin whom Papa set aside in favour of Rongo."
+      },
+      {
+        "kind": "mother-of",
+        "personId": "rarotongan_rongo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          }
+        ],
+        "notes": "Rongo is one of the five sons of Papa in the Rarotongan genealogy; the Mangaian telling makes him her favourite child, for whom she diverted the tribute of food."
+      },
+      {
+        "kind": "spouse",
+        "personId": "rarotongan_atea",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rawiri Taonui, 'Polynesian Oral Traditions', in K. R. Howe (ed.), Vaka Moana: Voyages of the Ancestors (Auckland: David Bateman, 2006)."
+          }
+        ],
+        "notes": "The earth mother Paparoa-i-te-itinga is the wife of the sky father Atea in the Rarotongan tradition."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Papa, called Paparoa-i-te-itinga on Rarotonga, is the earth mother of the Rarotongan cosmogony, wife of Atea and mother of the great gods including Tangaroa and Rongo.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (New York: Greenwood Press, 1989)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Rawiri Taonui, 'Polynesian Oral Traditions', in K. R. Howe (ed.), Vaka Moana: Voyages of the Ancestors (Auckland: David Bateman, 2006)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Papa, the earth mother, bears on Rarotonga the fuller name Paparoa-i-te-itinga, the great foundation reaching toward the sunrise. Married to the sky father Atea, she gave birth to the five great gods of the Rarotongan genealogy — Tangaroa, Rongo, Tane, Tongaiti and the divine Tangiia — and to Te Tumu, the foundation stone. Her name belongs to a family of Polynesian earth mothers all beginning with Papa, such as Papa'ele of Samoa, Papatu'oi of Tahiti and Papatūānuku of New Zealand. In the neighbouring Mangaian tradition written down by William Wyatt Gill, it was Papa's preference for her son Rongo that diverted the tribute of food from the first-born Tangaroa, explaining why Rongo took precedence in that island's worship."
+  },
+  {
+    "id": "rarotongan_tongaiti",
+    "name": {
+      "primary": "Tongaiti (the Lizard God)",
+      "alt": [
+        "Tonga-iti",
+        "Tonga-iti-mata-rau",
+        "Matarau"
+      ],
+      "transliterations": {
+        "rar": "Tonga-iti",
+        "etymology": "His by-name Tonga-iti-mata-rau, 'many-eyed (mata rau) Tongaiti', is glossed in the Rarotongan tradition as 'the wise one who sees all things' (Te Ariki-tara-are, 'History and Traditions of Rarotonga', JPS, 1919-1921)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Rarotongan",
+    "primaryTradition": "Rarotongan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [
+      "rarotongan_atea",
+      "rarotongan_papa"
+    ],
+    "parentRoles": [
+      "father",
+      "mother"
+    ],
+    "temporal": {
+      "era": "Rarotongan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Rarotongan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Tongaiti is born among the five great sons of Atea and Paparoa-i-te-itinga, and Rarotongan tradition tells how he came to the island out of Avaiki and was known there in the body of the spotted lizard.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Manuiri, 'The Story of the Visit of Tonga-iti to Rarotonga', trans. Arthur W. Browne, Journal of the Polynesian Society 5 (1896): 142-144."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lizards-and-watchfulness",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "moko",
+          "script": "Latin",
+          "rom": "lizard, the god's visible body"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          }
+        ]
+      },
+      {
+        "sphereId": "voyaging-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tere",
+          "script": "Latin",
+          "rom": "voyage; travelling company"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga', trans. S. Percy Smith, Journal of the Polynesian Society 28-29 (1919-1920)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "take_lizard_form",
+        "name": "to appear in the body of the white and black spotted lizard",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          }
+        ]
+      },
+      {
+        "id": "see_all_things",
+        "name": "to watch and know all things with his many eyes",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga', trans. S. Percy Smith, Journal of the Polynesian Society 28-29 (1919-1920)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Tonga-iti-mata-rau",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga', trans. S. Percy Smith, Journal of the Polynesian Society 28-29 (1919-1920)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tongaiti is one of the five great gods of the Rarotongan divine genealogy, a deity whose visible form was the spotted lizard and who is remembered as coming to Rarotonga from Avaiki.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Manuiri, 'The Story of the Visit of Tonga-iti to Rarotonga', trans. Arthur W. Browne, Journal of the Polynesian Society 5 (1896): 142-144."
+          },
+          {
+            "kind": "secondary",
+            "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Basil Keane, 'Ranginui – the sky', Te Ara – the Encyclopedia of New Zealand (Wellington: Ministry for Culture and Heritage, 2007)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tongaiti is one of the five great gods borne to the sky father Atea by Paparoa-i-te-itinga in the Rarotongan genealogy, alongside Tangaroa, Rongo, Tane and the divine Tangiia. William Wyatt Gill recorded that his visible form, or aria, was the white and black spotted lizard, and a Rarotongan by-name, Tonga-iti-mata-rau, styles him the many-eyed one, the wise god who sees all things. A short Rarotongan tradition set down by Manuiri tells how Tonga-iti came to Rarotonga from Avaiki with his wife Mai-ove, who was also called Rangatira, and in the traditions of the high priest Te Ariki-tara-are he is counted among the gods who consented to sail with Tangiia's fleet to Rarotonga. He was honoured elsewhere in the southern Cook Islands as well, so that the lizard remained a sacred and ominous creature on Rarotonga."
+  },
+  {
+    "id": "rarotongan_iro",
+    "name": {
+      "primary": "Iro-nui-ma-oata (the Master Navigator)",
+      "alt": [
+        "Iro",
+        "Iro-ma-oata",
+        "Iro-nui-ma-ōata"
+      ],
+      "transliterations": {
+        "rar": "Iro-nui-ma-ōata",
+        "etymology": "Iro is the Rarotongan form of the pan-East-Polynesian voyager's name (Tahitian Hiro, Māori Whiro, Hawaiian Hilo); the addition -nui-ma-ōata, 'great Iro with the ōata', recalls the bright nights of the moon at his naming (Tamuera Te Rei, JPS, 1916-1917; Craig 1989)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Rarotongan",
+    "primaryTradition": "Rarotongan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Rarotongan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Rarotongan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Iro-nui-ma-oata is born to Moe-tara-uri and Aki-mano and, reared at Upolu among his mother's other sons, rises to become the most famous voyaging priest of the Rarotongan traditions and a contemporary of Tangiia.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tamuera Te Rei, 'Ko to Rarotonga are-korero teia no Iro-nui-ma-oata', Journal of the Polynesian Society 25 (1916): 131-137 and 26 (1917): 45-65."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stephen Savage, 'The Period of Iro-nui-ma-oata and Tangiia-nui-ariki', Journal of the Polynesian Society 25 (1916): 138-149."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ocean-voyaging",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tere",
+          "script": "Latin",
+          "rom": "voyage; sailing expedition"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Stephen Savage, 'The Period of Iro-nui-ma-oata and Tangiia-nui-ariki', Journal of the Polynesian Society 25 (1916): 138-149."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Te Rangi Hiroa (Peter H. Buck), Vikings of the Sunrise (New York: Frederick A. Stokes, 1938)."
+          }
+        ]
+      },
+      {
+        "sphereId": "priestly-lore",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "karakia",
+          "script": "Latin",
+          "rom": "incantation, ritual chant"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tamuera Te Rei, 'Ko to Rarotonga are-korero teia no Iro-nui-ma-oata', Journal of the Polynesian Society 25 (1916): 131-137 and 26 (1917): 45-65."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "navigate_the_ocean",
+        "name": "to navigate the deep ocean between the islands",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Rangi Hiroa (Peter H. Buck), Vikings of the Sunrise (New York: Frederick A. Stokes, 1938)."
+          }
+        ]
+      },
+      {
+        "id": "wield_karakia",
+        "name": "to recite potent incantations learned in secret from blind elders",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tamuera Te Rei, 'Ko to Rarotonga are-korero teia no Iro-nui-ma-oata', Journal of the Polynesian Society 25 (1916): 131-137 and 26 (1917): 45-65."
+          }
+        ]
+      },
+      {
+        "id": "return_from_death",
+        "name": "to come back to life after being slain by his half-brothers",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Tamuera Te Rei, 'Ko to Rarotonga are-korero teia no Iro-nui-ma-oata', Journal of the Polynesian Society 25 (1916): 131-137 and 26 (1917): 45-65."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "rarotongan_taiteariki",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga. Part VII', trans. S. Percy Smith, Journal of the Polynesian Society 28 (1919): 183-208."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stephen Savage, 'The Period of Iro-nui-ma-oata and Tangiia-nui-ariki', Journal of the Polynesian Society 25 (1916): 138-149."
+          }
+        ],
+        "notes": "Iro begot Tai-te-ariki and, meeting the fleeing Tangiia at sea, granted his prayer for the boy as an ariki and a head for the whole of his people."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Iro-nui-ma-oata is the celebrated navigator-priest of Rarotongan tradition, a contemporary of Tangiia and the father of Tai-te-ariki, the first ariki installed on Rarotonga.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Tamuera Te Rei, 'Ko to Rarotonga are-korero teia no Iro-nui-ma-oata', Journal of the Polynesian Society 25 (1916): 131-137 and 26 (1917): 45-65."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stephen Savage, 'The Period of Iro-nui-ma-oata and Tangiia-nui-ariki', Journal of the Polynesian Society 25 (1916): 138-149."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Te Rangi Hiroa (Peter H. Buck), Vikings of the Sunrise (New York: Frederick A. Stokes, 1938)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (New York: Greenwood Press, 1989)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Iro-nui-ma-oata, whose name recalls the bright moon-nights at his birth, is the great navigator of the Rarotongan learned traditions, the same voyager celebrated across eastern Polynesia as Hiro of Tahiti, Whiro of the Māori and Hilo of Hawai'i. The Rarotongan house of learning told how he was born to Moe-tara-uri and Aki-mano, grew up at Upolu among his mother's sons by another husband, was beaten to death by those half-brothers and returned to life four times, and secretly mastered the karakia of two old blind relatives before winning renown as priest and deep-sea navigator. When Tangiia fled across the ocean before Tutapu, he met Iro at sea, and Iro gave him his young son Tai-te-ariki to be ariki over his people, so binding Iro's line into the chieftainship of Rarotonga."
+  },
+  {
+    "id": "rarotongan_taiteariki",
+    "name": {
+      "primary": "Tai-te-ariki (the First Ariki)",
+      "alt": [
+        "Tai-te-ariki",
+        "Te Ariki-upoko-tini"
+      ],
+      "transliterations": {
+        "rar": "Tai-te-ariki",
+        "etymology": "His installation name Te Ariki-upoko-tini is glossed 'the ariki of countless heads', that is, ruler of many people (Te Ariki-tara-are, 'History and Traditions of Rarotonga. Part VII', JPS, 1919)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Rarotongan",
+    "primaryTradition": "Rarotongan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [
+      "rarotongan_iro",
+      "rarotongan_tangiia"
+    ],
+    "parentRoles": [
+      "father",
+      "adoptive father"
+    ],
+    "temporal": {
+      "era": "Rarotongan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Rarotongan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Tai-te-ariki, begotten by Iro, is given at sea to Tangiia, who renames him Te Ariki-upoko-tini and installs him as ariki and head over his people on Rarotonga.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga. Part VII', trans. S. Percy Smith, Journal of the Polynesian Society 28 (1919): 183-208."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stephen Savage, 'The Period of Iro-nui-ma-oata and Tangiia-nui-ariki', Journal of the Polynesian Society 25 (1916): 138-149."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "chiefly-rule",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "ariki",
+          "script": "Latin",
+          "rom": "high chief, paramount chief"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga. Part VII', trans. S. Percy Smith, Journal of the Polynesian Society 28 (1919): 183-208."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "head_the_people",
+        "name": "to stand as ariki and head over Tangiia's people",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga. Part VII', trans. S. Percy Smith, Journal of the Polynesian Society 28 (1919): 183-208."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Te Ariki-upoko-tini",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga. Part VII', trans. S. Percy Smith, Journal of the Polynesian Society 28 (1919): 183-208."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tai-te-ariki, the son of Iro adopted by Tangiia and renamed Te Ariki-upoko-tini, was installed as the first ariki over Tangiia's people on Rarotonga.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga. Part VII', trans. S. Percy Smith, Journal of the Polynesian Society 28 (1919): 183-208."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Stephen Savage, 'The Period of Iro-nui-ma-oata and Tangiia-nui-ariki', Journal of the Polynesian Society 25 (1916): 138-149."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. Percy Smith, Hawaiki: The Original Home of the Maori, 3rd ed. (Christchurch: Whitcombe & Tombs, 1910)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tai-te-ariki was begotten by the navigator Iro-nui-ma-oata. When Tangiia, fleeing from Tutapu, met Iro upon the ocean, he begged the boy of his father as a chief for himself and a head for the whole of his people; Iro granted the request, and Tangiia received the child and gave him the new name Te Ariki-upoko-tini, the ariki of countless heads. Installed as ariki when Tangiia's people settled Rarotonga, he stands at the beginning of the consecrated high chieftainship of the Takitumu side of the island, and Rarotongan genealogical tradition carries the ariki succession of Tangiia's people onward from his installation."
+  },
+  {
+    "id": "rarotongan_tutapu",
+    "name": {
+      "primary": "Tutapu-aru-roa (the Relentless Pursuer)",
+      "alt": [
+        "Tutapu",
+        "Tu-tapu-aru-roa"
+      ],
+      "transliterations": {
+        "rar": "Tutapu-aru-roa",
+        "etymology": "aru, 'to pursue, follow', with roa, 'long': the by-name Tutapu-aru-roa, 'Tutapu of the long pursuit', was earned by his years-long chase of Tangiia across the ocean (S. Percy Smith, Hawaiki, 1910)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Rarotongan",
+    "primaryTradition": "Rarotongan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Rarotongan traditional religion; continuing"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "Rarotongan traditional religion; continuing",
+        "eraOrdering": 0,
+        "startEvent": "Tutapu, reared with Tangiia in the household of Pou-vananga-roa in Tahiti, seizes the breadfruit tribute and the rule of Tahiti and drives his kinsman out upon the long pursuit that ends with his own death on Rarotonga.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga', Parts VI-XI, trans. S. Percy Smith, Journal of the Polynesian Society 28-29 (1919-1920)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. Percy Smith, Hawaiki: The Original Home of the Maori, 3rd ed. (Christchurch: Whitcombe & Tombs, 1910)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war-and-pursuit",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "aru",
+          "script": "Latin",
+          "rom": "to pursue, chase"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. Percy Smith, Hawaiki: The Original Home of the Maori, 3rd ed. (Christchurch: Whitcombe & Tombs, 1910)."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "pursue_across_the_sea",
+        "name": "to hunt his rival's fleet from island to island",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. Percy Smith, Hawaiki: The Original Home of the Maori, 3rd ed. (Christchurch: Whitcombe & Tombs, 1910)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Te Rangi Hiroa (Peter H. Buck), Vikings of the Sunrise (New York: Frederick A. Stokes, 1938)."
+          }
+        ]
+      },
+      {
+        "id": "command_war_fleets",
+        "name": "to lead war canoes and fighting men in battle",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga', Parts VI-XI, trans. S. Percy Smith, Journal of the Polynesian Society 28-29 (1919-1920)."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Tutapu-aru-roa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "S. Percy Smith, Hawaiki: The Original Home of the Maori, 3rd ed. (Christchurch: Whitcombe & Tombs, 1910)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga', Parts VI-XI, trans. S. Percy Smith, Journal of the Polynesian Society 28-29 (1919-1920)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tutapu is the rival kinsman of Tangiia who seized the rule of Tahiti, pursued Tangiia across Polynesia as Tutapu-aru-roa, and was slain by him on Rarotonga.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Te Ariki-tara-are, 'History and Traditions of Rarotonga', Parts VI-XI, trans. S. Percy Smith, Journal of the Polynesian Society 28-29 (1919-1920)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. Percy Smith, Hawaiki: The Original Home of the Maori, 3rd ed. (Christchurch: Whitcombe & Tombs, 1910)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Te Rangi Hiroa (Peter H. Buck), Vikings of the Sunrise (New York: Frederick A. Stokes, 1938)."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tutapu, the son of Maonga, was reared in Tahiti in the household of Pou-vananga-roa together with Tangiia, so that the traditions remember the two variously as cousins or as adoptive brothers. Their quarrel over the breadfruit tribute and the sacred stream Vai-iria grew into open war; Tutapu took the rule of Tahiti, and in the fighting a fire set by his men burned to death Tangiia's young son Pou-te-anuanua. When Tangiia fled across the sea, Tutapu followed him from island to island so unrelentingly that he was ever after called Tutapu-aru-roa, Tutapu of the long pursuit. The chase ended at Rarotonga, where Tangiia, strengthened by his gods and his alliance with Karika, defeated the pursuing fleet and slew Tutapu, plucking out his eye and holding it aloft in the victory rite of the time."
+  }
+]
+```

@@ -1,0 +1,918 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Tlingit
+Era (registered, exact): "mythic-perennial", "mythic-primordial"
+Author pass: floor-raising expansion — attested individuated figures still missing (6 added).
+
+================================================================================
+REVIEWER NOTE
+================================================================================
+
+Added six well-attested individuated Tlingit figures: the cosmological earth-supporter Old Woman Underneath (Hayicā'nak!u/Agischanak), the two great wealth-bringing beings Gonakadet (Gunakadeit) and Wealth Woman (Tl'anaxéedáḵw/Property Woman), and the three canonical clan heroes Natsilane (Naatsilanéi), Blackskin (Dukt'ootl') and Kaats', each grounded in Swanton (1909), Krause (1956 [1885]), de Laguna (1972), Emmons/de Laguna (1991), McClellan (1963), Dauenhauer and Dauenhauer (1987), Beck (1989), and Sealaska Heritage Institute reference works. None has source-attested genealogy or a permitted directed relation to the existing Raven, Petrel, Thunderbird, or Fog Master entries (Raven's harassment of the earth-supporter is adversarial, for which no directed kind is registered), so all six carry cited solitary entries. Fog Woman was deliberately excluded because the existing tlingit_khanukh entry already claims the alias Fog-over-the-Salmon, and remaining candidates — the unnamed Tide Woman, the collective creek-women and Kushtaka land-otter people, Salmon Boy Aak'wtaatseen, and the borderline-historical Kaax'achgóok — were left out as unnamed, collective classes, or better handled in a future pass.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "tlingit_hayicanak",
+    "name": {
+      "primary": "Old Woman Underneath",
+      "alt": [
+        "Hayicanak",
+        "Hayicā'nak!u",
+        "Hayicanako",
+        "Agischanak",
+        "Old-Woman-Underneath-Us"
+      ],
+      "transliterations": {
+        "tli": "Hayicā'nak!u",
+        "etymology": "Recorded by Swanton as Hayicā'nak!u and glossed 'Old-woman-underneath'; Krause earlier wrote the name Agischanak (Swanton, Tlingit Myths and Texts, 1909; Krause, The Tlingit Indians, 1956 [1885])."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "Tlingit cosmology places the Old Woman Underneath beneath the world from its shaping, tending the post on which the earth rests (Swanton 1909; Krause 1956 [1885]).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Krause, Aurel, The Tlingit Indians: Results of a Trip to the Northwest Coast of America and the Bering Straits [1885], trans. Erna Gunther (Seattle: University of Washington Press, 1956)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "tl'átk",
+          "script": "Latin",
+          "rom": "tl'atk — land, ground"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edwards, Keri (ed.), Dictionary of Tlingit (Juneau: Sealaska Heritage Institute, 2009)"
+          }
+        ]
+      },
+      {
+        "sphereId": "earthquakes",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Krause, Aurel, The Tlingit Indians: Results of a Trip to the Northwest Coast of America and the Bering Straits [1885], trans. Erna Gunther (Seattle: University of Washington Press, 1956)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "tend_the_earth_post",
+        "name": "to tend the post on which the earth rests",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          }
+        ]
+      },
+      {
+        "id": "shake_the_earth",
+        "name": "to shake the earth when hungry or disturbed, causing earthquakes",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Krause, Aurel, The Tlingit Indians: Results of a Trip to the Northwest Coast of America and the Bering Straits [1885], trans. Erna Gunther (Seattle: University of Washington Press, 1956)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tlingit_earth_post",
+        "name": "The post beneath the earth",
+        "kind": "cosmic pillar",
+        "role": "The support on which the earth rests, which she guards and tends; its shaking is felt as earthquakes.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Krause, Aurel, The Tlingit Indians: Results of a Trip to the Northwest Coast of America and the Bering Straits [1885], trans. Erna Gunther (Seattle: University of Washington Press, 1956)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The old woman beneath the world who attends the post on which the earth rests; when she is hungry or disturbed the earth shakes, and people pour grease into the fire so that it may go down to her.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Krause, Aurel, The Tlingit Indians: Results of a Trip to the Northwest Coast of America and the Bering Straits [1885], trans. Erna Gunther (Seattle: University of Washington Press, 1956)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "In Tlingit cosmology an old woman dwells beneath the world and attends to the post on which the earth rests. Swanton recorded her name as Hayicā'nak!u, 'Old-woman-underneath', noting that when she is hungry the earth shakes and that people then put grease into the fire so that it may reach her below. Aurel Krause, writing from observations among the northern Tlingit in the 1880s, called her Agischanak and reported that she guards the pillar of the world and that earthquakes follow when Raven tries to drive her from her post. She is thus the traditional explanation of the frequent earthquakes of Southeast Alaska, a benign but formidable guardian on whose steadfastness the stability of the world depends."
+  },
+  {
+    "id": "tlingit_gonakadet",
+    "name": {
+      "primary": "Gonakadet",
+      "alt": [
+        "Gunakadeit",
+        "GonaqAdē't",
+        "Konakadet",
+        "Gonaqadet",
+        "Sea Wolf"
+      ],
+      "transliterations": {
+        "tli": "Gunakadeit",
+        "etymology": "Swanton recorded the name as GonaqAdē't; Gunakadeit is the modern orthography used by Sealaska Heritage Institute, and the name's further derivation is uncertain (Swanton, Tlingit Myths and Texts, 1909; Sealaska Heritage Institute, Tlingit Clan Crest Registry, 2024)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "In the narrative told to Swanton by the Wrangell chief Katishan in 1904, a young man slew the great creature of the lake, put on its skin, and was transformed forever into the wealth-bringing Gonaqadet (Swanton 1909).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "éil'",
+          "script": "Latin",
+          "rom": "eil' — salt water, the sea"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edwards, Keri (ed.), Dictionary of Tlingit (Juneau: Sealaska Heritage Institute, 2009)"
+          }
+        ]
+      },
+      {
+        "sphereId": "wealth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Emmons, George Thornton, The Tlingit Indians, ed. Frederica de Laguna, Anthropological Papers of the American Museum of Natural History 70 (Seattle: University of Washington Press, 1991)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_wealth_on_sight",
+        "name": "to bring wealth and good fortune to those who see him",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Emmons, George Thornton, The Tlingit Indians, ed. Frederica de Laguna, Anthropological Papers of the American Museum of Natural History 70 (Seattle: University of Washington Press, 1991)"
+          }
+        ]
+      },
+      {
+        "id": "hunt_beneath_the_sea",
+        "name": "to swim and hunt beneath the sea in the skin of the great lake monster",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tlingit_gonakadet_skin",
+        "name": "Skin of the lake monster",
+        "kind": "guise",
+        "role": "The skin of the great creature which the hero trapped and put on, transforming himself into the Gonakadet.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          }
+        ]
+      },
+      {
+        "id": "tlingit_gonakadet_undersea_house",
+        "name": "Undersea house of the Gonakadet",
+        "kind": "dwelling",
+        "role": "A splendid house beneath the sea; the sight of it rising above the waters, like the sight of its owner, portends wealth.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Emmons, George Thornton, The Tlingit Indians, ed. Frederica de Laguna, Anthropological Papers of the American Museum of Natural History 70 (Seattle: University of Washington Press, 1991)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "A great wealth-bringing sea being, originally a man who put on the skin of the lake monster he had slain; whoever sees the Gonakadet, or his house rising from the water, is destined for wealth and good fortune.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Emmons, George Thornton, The Tlingit Indians, ed. Frederica de Laguna, Anthropological Papers of the American Museum of Natural History 70 (Seattle: University of Washington Press, 1991)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Gonakadet (modern orthography Gunakadeit) is the great benevolent sea monster of Tlingit tradition, whose sight brings wealth, good fortune, and success to the beholder. In the story recorded by John Swanton from Katishan, chief of the Kaasx'agweidi at Wrangell, in 1904, a young man mocked by his mother-in-law during a famine trapped the monster of the lake, put on its skin, and by night hunted salmon, seals, and finally whales beneath the water, secretly provisioning the starving village; in the end he did not return from beneath the sea and lived on as the Gonakadet, while his wife and daughters became beneficent creek-women who likewise bring good fortune. Emmons documented the being as a guardian of wealth widely represented on house posts, crest hats, and carved chests, and the figure is closely paralleled by the Haida Wasgo or Sea Wolf. Descriptions portray a composite creature combining traits of wolf and killer whale, with sharp teeth, claws, and fins."
+  },
+  {
+    "id": "tlingit_tlanaxeedakw",
+    "name": {
+      "primary": "Wealth Woman",
+      "alt": [
+        "Property Woman",
+        "Tl'anaxéedákw",
+        "L!ê'naxî'daq",
+        "Lenaxxidek",
+        "Łenaxxídaq"
+      ],
+      "transliterations": {
+        "tli": "Tl'anaxéedákw",
+        "etymology": "The modern orthography Tl'anaxéedáḵw is glossed 'Wealth-Bringing Woman' (Sealaska Heritage Institute, Tlingit Clan Crest Registry, 2024); Swanton recorded the name as L!ê'naxî'daq (Tlingit Myths and Texts, 1909)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "Encounter narratives recorded at Wrangell, Yakutat, and in the southern Yukon describe the Wealth Woman wandering the forest and shore with her child from time immemorial (Swanton 1909; de Laguna 1972; McClellan 1963).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "de Laguna, Frederica, Under Mount Saint Elias: The History and Culture of the Yakutat Tlingit, Smithsonian Contributions to Anthropology 7 (Washington: Smithsonian Institution Press, 1972)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wealth",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "de Laguna, Frederica, Under Mount Saint Elias: The History and Culture of the Yakutat Tlingit, Smithsonian Contributions to Anthropology 7 (Washington: Smithsonian Institution Press, 1972)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "McClellan, Catharine, 'Wealth Woman and Frogs among the Tagish Indians', Anthropos 58, no. 1/2 (1963), pp. 121–128"
+          }
+        ]
+      },
+      {
+        "sphereId": "good-fortune",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "McClellan, Catharine, 'Wealth Woman and Frogs among the Tagish Indians', Anthropos 58, no. 1/2 (1963), pp. 121–128"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_riches",
+        "name": "to destine for wealth those who hear her child's cry and manage to take hold of it",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "de Laguna, Frederica, Under Mount Saint Elias: The History and Culture of the Yakutat Tlingit, Smithsonian Contributions to Anthropology 7 (Washington: Smithsonian Institution Press, 1972)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "McClellan, Catharine, 'Wealth Woman and Frogs among the Tagish Indians', Anthropos 58, no. 1/2 (1963), pp. 121–128"
+          }
+        ]
+      },
+      {
+        "id": "appear_as_omen",
+        "name": "to appear on the forest edge or shore as a portent of coming fortune",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The Wealth Woman or Property Woman, a spirit woman who wanders with an infant; hearing the child's cry, seeing her, or seizing something from her destines a person to become rich, and under the name Tl'anaxéedáḵw she is a crest of the L'eeneidí clan.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "de Laguna, Frederica, Under Mount Saint Elias: The History and Culture of the Yakutat Tlingit, Smithsonian Contributions to Anthropology 7 (Washington: Smithsonian Institution Press, 1972)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "McClellan, Catharine, 'Wealth Woman and Frogs among the Tagish Indians', Anthropos 58, no. 1/2 (1963), pp. 121–128"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Sealaska Heritage Institute, Tlingit Clan Crest Registry (Juneau: Sealaska Heritage Institute, 2024)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The Wealth Woman, in older ethnographic literature called Property Woman, is a female counterpart to the Gonakadet among the wealth-bringing beings of the Tlingit. She haunts the forest and the beach carrying an infant, and the fortunate person who hears the baby's cry, glimpses her, or succeeds in laying hold of the child is destined to become rich. Swanton took down a Wrangell tale of the L!ê'naxî'daq in 1904, Frederica de Laguna recorded extensive beliefs about Property Woman at Yakutat, and Catharine McClellan devoted a study to Wealth Woman traditions among the neighboring Tagish and Inland Tlingit, where the good luck of the family of Skookum Jim, co-discoverer of Klondike gold, was traced to such an encounter. Under the modern spelling Tl'anaxéedáḵw, 'Wealth-Bringing Woman', she is registered as a crest of the L'eeneidí clan and appears on totem poles carrying her baby."
+  },
+  {
+    "id": "tlingit_natsilane",
+    "name": {
+      "primary": "Natsilane",
+      "alt": [
+        "Naatsilanéi",
+        "NātsAłAne'",
+        "Natsalane",
+        "Maker of the Killer Whales"
+      ],
+      "transliterations": {
+        "tli": "Naatsilanéi",
+        "etymology": "The modern orthography Naatsilanéi follows Dauenhauer and Dauenhauer, Haa Shuká (1987); Swanton recorded the name as NātsAłAne', a man of the Tsague'dî (Tsaagweidí) (Tlingit Myths and Texts, 1909)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "male",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "Clan tradition places Naatsilanéi in the legendary past before there were killer whales, when the marooned carver shaped blackfish of yellow cedar and sent them living into the sea (Swanton 1909; Dauenhauer and Dauenhauer 1987).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "killer-whales",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "kéet",
+          "script": "Latin",
+          "rom": "keet — killer whale"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edwards, Keri (ed.), Dictionary of Tlingit (Juneau: Sealaska Heritage Institute, 2009)"
+          }
+        ]
+      },
+      {
+        "sphereId": "carving",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_carvings_to_life",
+        "name": "to carve killer whales from yellow cedar and bring them to life in the sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          }
+        ]
+      },
+      {
+        "id": "command_killer_whales",
+        "name": "to command the killer whales he made and forbid them ever to harm human beings",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tlingit_yellow_cedar_killer_whales",
+        "name": "Yellow-cedar killer whale carvings",
+        "kind": "carving",
+        "role": "The blackfish figures he carved — after failures in spruce, red cedar, and other woods — which came alive as the first killer whales.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The marooned master carver who created the killer whales from yellow cedar, used them to avenge his abandonment, and then charged them never again to harm human beings.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Natsilane (Naatsilanéi) is the culture hero credited with the origin of the killer whale. In the version Swanton recorded, a skilled carver and sea-lion hunter, a man of the Tsaagweidí, was abandoned on a rock by his jealous brothers-in-law; aided by the sea beings, he reached shore and carved blackfish first of spruce, red cedar, and other woods, which floated lifeless, and at last of yellow cedar, which swam. The living whales destroyed his treacherous brothers-in-law, sparing only the youngest who had shown him kindness, whereupon Natsilane commanded the whales never again to harm a human being — an injunction Tlingit tradition holds killer whales keep to this day. The Dauenhauers published Tlingit-language tellings by Willie Marks and J. B. Fawcett, and the narrative underlies Killer Whale crest claims among several clans."
+  },
+  {
+    "id": "tlingit_duktootl",
+    "name": {
+      "primary": "Blackskin",
+      "alt": [
+        "Dukt'ootl'",
+        "Duktoothl",
+        "Strong Man",
+        "Kâhâ's!î"
+      ],
+      "transliterations": {
+        "tli": "Dukt'ootl'",
+        "etymology": "Called Dukt'ootl' in Tlingit and 'Blackskin' in English retellings after the soot-darkened skin of the seemingly idle youth who slept by the fire; the strong man of Swanton's Sitka Tlingit text bears the name Kâhâ's!î (Dauenhauer and Dauenhauer 1987; Beck 1989; Swanton 1909)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "male",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "The Strong Man narrative recounts how a despised youth trained secretly in the winter sea until, at the sea-lion rock, he tore the great bull sea lion in half with his bare hands (Swanton 1909; Dauenhauer and Dauenhauer 1987).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "strength",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "latseen",
+          "script": "Latin",
+          "rom": "latseen — strength, power"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edwards, Keri (ed.), Dictionary of Tlingit (Juneau: Sealaska Heritage Institute, 2009)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "superhuman_strength",
+        "name": "to twist trees from the ground and tear a full-grown sea lion in half with his bare hands",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          }
+        ]
+      },
+      {
+        "id": "gain_strength_by_bathing",
+        "name": "to gain power through secret nightly bathing in the freezing winter sea",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The Tlingit strong man: a mocked, soot-blackened youth who secretly hardened himself by bathing in the winter sea and proved his strength by tearing the great sea lion in half, in most tellings avenging his uncle.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Beck, Mary Giraudo, Heroes and Heroines: Tlingit-Haida Legend (Anchorage: Alaska Northwest Books, 1989)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Blackskin, Dukt'ootl', is the hero of the most famous Tlingit strong-man legend. Regarded as a lazy orphan who slept in the ashes by the fire, he went down to the water at night while others slept, bathed in the freezing sea, and wrestled until his strength surpassed that of every man in the village; when the men went out to the sea-lion rock he seized the great bull sea lion and tore it in half with his bare hands, in most tellings avenging an uncle the animal had killed. Swanton printed both an English version of the Strong Man story and a Sitka Tlingit text in which the hero is named Kâhâ's!î, and the Dauenhauers published Frank G. Johnson's Tlingit telling of Dukt'ootl'. The feat is a favorite subject of Tlingit monumental art, carved on house posts and totem poles, including the great pole at Kake."
+  },
+  {
+    "id": "tlingit_kaats",
+    "name": {
+      "primary": "Kaats'",
+      "alt": [
+        "Kâts!",
+        "Kats",
+        "The Bear Husband"
+      ],
+      "transliterations": {
+        "tli": "Kaats'",
+        "etymology": "The modern orthography Kaats' follows Dauenhauer and Dauenhauer, Haa Shuká (1987); Swanton recorded the name as Kâts! (Tlingit Myths and Texts, 1909)."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "mythic-perennial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "Sitka tradition tells how the hunter Kaats' was taken into a brown bear's den, married the bear woman, and, after breaking her injunction, was killed by his own bear children (Swanton 1909, tale 19).",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "bears",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "xóots",
+          "script": "Latin",
+          "rom": "xoots — brown bear"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Edwards, Keri (ed.), Dictionary of Tlingit (Juneau: Sealaska Heritage Institute, 2009)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "kinship_with_bears",
+        "name": "to live among the brown bears as the husband of a bear woman and father of bear children",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The hunter who was taken into the den of a brown bear, married the bear woman and fathered bear children, and was killed by them when he broke his bear wife's injunction; the ancestral hero of Tlingit brown-bear crest tradition.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Swanton, John R., Tlingit Myths and Texts, Bureau of American Ethnology Bulletin 39 (Washington: Government Printing Office, 1909)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Dauenhauer, Nora Marks, and Richard Dauenhauer (eds.), Haa Shuká, Our Ancestors: Tlingit Oral Narratives, Classics of Tlingit Oral Literature 1 (Seattle: University of Washington Press, 1987)"
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kaats' is the hero of the Tlingit bear-husband narrative, recorded by Swanton at Sitka in 1904 as tale 19 of Tlingit Myths and Texts. While hunting, Kaats' was drawn into the den of a brown bear and taken as husband by the bear woman, who bore him children; when he later returned among people, she forbade him any dealings with his human wife and children, and he hunted daily to feed his bear family. At last he disobeyed her injunction and was killed by his own bear children. The Dauenhauers published J. B. Fawcett's Tlingit-language telling, noting the story's standing among brown-bear crest traditions of the Teikweidí; the narrative is commemorated in totem art such as the Kaats' pole at Saxman."
+  }
+]
+```
