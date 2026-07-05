@@ -197,8 +197,21 @@ function Rail({ filters, view, hasDetail }) {
   );
 }
 
+// Placeholder for the views that need the full corpus while the async shell
+// is still fetching it (Browse works from the skinny index; these don't).
+// Sync boots never render it — dataReady is true from the first frame.
+function ViewLoading({ label }) {
+  return (
+    <div className="empty empty-loading" role="status" aria-live="polite">
+      <div className="empty-mark" aria-hidden="true" />
+      <h2>Loading the corpus…</h2>
+      <p>The {label} view needs the full records — it opens as soon as they arrive.</p>
+    </div>
+  );
+}
+
 function Shell() {
-  const { people, atlas, byId, childrenOf, ready } = window.useData();
+  const { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion } = window.useData();
   const filters = window.useFilters(people);
   const selection = window.useSelection(filters.filtered);
   const filteredRef = __sRef(filters.filtered);
@@ -219,14 +232,39 @@ function Shell() {
   const [domainOrderVer, setDomainOrderVer] = __sState(0);
   const searchRef = __sRef(null);
 
-  // Item registry (built in data.js, read once). The sorted list drives the
-  // Items index and the j/k navigation between open items.
-  const itemList = __sMemo(() => (window.allItems ? window.allItems() : []), []);
+  // Item / power / domain registry lists. Built eagerly these cost ~56 ms
+  // inside the FIRST commit for views most sessions never open — so each is
+  // built on the first render that needs it (its view active, or a detail id
+  // set by a click or deep link) and held from then on. The latch is a ref
+  // flipped during render: any flip rides a state change (view or a selected
+  // id) that already triggered this render, and the memo dep picks it up in
+  // the same pass — first use stays synchronous, in browsers and jsdom
+  // alike. [people, corpusVersion] key the rebuild across the async corpus
+  // swap: a list computed from the skinny index must not outlive it.
+  const regWantRef = __sRef({ items: false, powers: false, domains: false });
+  const regWant = regWantRef.current;
+  if (view === 'items'   || selectedItemId   != null) regWant.items = true;
+  if (view === 'powers'  || selectedPowerId  != null) regWant.powers = true;
+  if (view === 'domains' || selectedDomainId != null) regWant.domains = true;
+  const itemList = __sMemo(() => (regWant.items && window.allItems ? window.allItems() : []), [regWant.items, people, corpusVersion]);
   const selectedItem = selectedItemId && window.itemById ? window.itemById(selectedItemId) : null;
-  const powerList = __sMemo(() => (window.allPowers ? window.allPowers() : []), []);
+  const powerList = __sMemo(() => (regWant.powers && window.allPowers ? window.allPowers() : []), [regWant.powers, people, corpusVersion]);
   const selectedPower = selectedPowerId && window.powerById ? window.powerById(selectedPowerId) : null;
-  const domainList = __sMemo(() => (window.allDomains ? window.allDomains() : []), []);
+  const domainList = __sMemo(() => (regWant.domains && window.allDomains ? window.allDomains() : []), [regWant.domains, people, corpusVersion]);
   const selectedDomain = selectedDomainId && window.domainById ? window.domainById(selectedDomainId) : null;
+
+  // Warm the deferred power/domain registries (module-cached in state.jsx)
+  // off the critical path so the first Powers/Domains navigation pays
+  // nothing. Browsers only — without requestIdleCallback (jsdom) the first
+  // use above stays synchronous, which is what the tests exercise.
+  __sEff(() => {
+    if (!dataReady || typeof window.requestIdleCallback !== 'function') return;
+    const idle = window.requestIdleCallback(() => {
+      if (window.allPowers) window.allPowers();
+      if (window.allDomains) window.allDomains();
+    });
+    return () => { if (window.cancelIdleCallback) window.cancelIdleCallback(idle); };
+  }, [dataReady, corpusVersion]);
 
   // Scope the registries by the rail. The rail filters (type / origin /
   // tradition) and the figure search narrow `filters.filtered`; each registry
@@ -288,6 +326,18 @@ function Shell() {
       try { id = decodeURIComponent(parts[1]); } catch (_) { id = parts[1]; }
     }
     setView(v);
+    // Async boot: an id in the hash names a full record (figure relations,
+    // the item/power/domain registries) that the skinny index can't satisfy.
+    // Show the view now and re-apply the whole hash once the corpus lands —
+    // pr-boot settles localStorage before resolving, so the deferred pass
+    // resolves against the same records a sync boot would have seen. Multiple
+    // hash edits during the wait each queue a re-apply; every one re-reads
+    // the live hash, so the last edit wins. A rejected ready is already
+    // painted into the boot overlay by pr-boot — swallow it here.
+    if (id && window.__PR && window.__PR.dataReady === false && window.__PR.ready) {
+      window.__PR.ready.then(() => applyHashRef.current(), () => {});
+      return;
+    }
     if (v === 'browse') {
       selection.setSelectedId(id);
       if (id) {
@@ -300,6 +350,12 @@ function Shell() {
     else if (v === 'powers') setSelectedPowerId(id);
     else if (v === 'domains') setSelectedDomainId(id);
   }, [selection]);
+  // The deferred re-apply must see the LATEST applyHash, not the one the
+  // ready.then closure captured — a render between defer and resolve would
+  // otherwise pin a stale closure. (Its setters and refs are stable, but the
+  // ref costs nothing and removes the question.)
+  const applyHashRef = __sRef(null);
+  applyHashRef.current = applyHash;
 
   __sEff(() => {
     applyHash();
@@ -368,7 +424,11 @@ function Shell() {
   }, [view, selection.selectedId, graphFocusId, atlasFocus, selectedItemId, selectedPowerId, selectedDomainId]);
   // ─────────────────────────────────────────────────────────────────────
 
-  const selectedEntry = selection.selectedId ? byId.get(selection.selectedId) : null;
+  // Gated on dataReady: Detail's j/k stepping and cross-links assume the
+  // full record (relations, faculties, materialCulture), which skinny index
+  // rows don't carry. A row clicked during the skinny window keeps its
+  // selectedId and the slide-over opens on the render after 'pr:ready'.
+  const selectedEntry = (dataReady && selection.selectedId) ? byId.get(selection.selectedId) : null;
 
   // Find current index of the selected entry within current filtered list
   const selIdxInFiltered = __sMemo(() => {
@@ -608,6 +668,23 @@ function Shell() {
   }, []);
 
   if (!ready) {
+    // Async boot, pre-index: no data has had the chance to arrive yet, so
+    // the storage dead-end below would be a lie. Skeleton rows instead —
+    // inline-styled because they exist only for the sub-second window before
+    // 'pr:index' lands and replaces this whole branch.
+    if (!dataReady) {
+      return (
+        <div className="empty empty-loading" role="status" aria-live="polite">
+          <div className="empty-mark" aria-hidden="true" />
+          <h2>Loading the registry…</h2>
+          <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center' }} aria-hidden="true">
+            {[0, 1, 2, 3, 4, 5].map((i) => (
+              <div key={i} style={{ width: 420 - (i % 3) * 60, maxWidth: '70vw', height: 12, borderRadius: 3, background: 'var(--rule, #e3ded4)', opacity: 0.7 }} />
+            ))}
+          </div>
+        </div>
+      );
+    }
     return (
       <div className="empty empty-loading">
         <div className="empty-mark" aria-hidden="true" />
@@ -640,7 +717,12 @@ function Shell() {
               onOpen={(id, idx) => { selection.setSelectedId(id); if (idx != null) selection.setCursorIdx(idx); }}
             />
           )}
-          {view === 'graph' && (
+          {/* Everything below Browse consumes full records (relations for
+              Graph, seedAtlas for Atlas, the registries for Items/Powers/
+              Domains) — behind the placeholder until the async corpus lands.
+              dataReady is true from the first frame on every sync boot. */}
+          {view === 'graph' && !dataReady && <ViewLoading label="graph" />}
+          {view === 'graph' && dataReady && (
             <window.Graph
               people={filters.filtered}
               byId={byId}
@@ -649,7 +731,8 @@ function Shell() {
               onOpenDetail={(id) => { setGraphFocusId(null); setView('browse'); selection.setSelectedId(id); const idx = filters.filtered.findIndex(p => p.id === id); if (idx >= 0) selection.setCursorIdx(idx); }}
             />
           )}
-          {view === 'atlas' && (
+          {view === 'atlas' && !dataReady && <ViewLoading label="atlas" />}
+          {view === 'atlas' && dataReady && (
             <window.Atlas
               atlas={atlas}
               byId={byId}
@@ -663,7 +746,8 @@ function Shell() {
               }}
             />
           )}
-          {view === 'items' && (
+          {view === 'items' && !dataReady && <ViewLoading label="items" />}
+          {view === 'items' && dataReady && (
             <window.Items
               items={visibleItems}
               total={itemList.length}
@@ -673,7 +757,8 @@ function Shell() {
               onVisibleOrder={onItemVisibleOrder}
             />
           )}
-          {view === 'powers' && (
+          {view === 'powers' && !dataReady && <ViewLoading label="powers" />}
+          {view === 'powers' && dataReady && (
             <window.PowersView
               powers={visiblePowers}
               total={powerList.length}
@@ -683,7 +768,8 @@ function Shell() {
               onVisibleOrder={onPowerVisibleOrder}
             />
           )}
-          {view === 'domains' && (
+          {view === 'domains' && !dataReady && <ViewLoading label="domains" />}
+          {view === 'domains' && dataReady && (
             <window.Domains
               domains={visibleDomains}
               total={domainList.length}

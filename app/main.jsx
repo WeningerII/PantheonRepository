@@ -1,7 +1,14 @@
 // ═══════════════════════════════════════════════════════════════════════════
-//  main.jsx — entry point. app/data.js has already seeded window.__PR and
-//  localStorage synchronously by the time this runs, so there's nothing to
-//  await — just mount the Shell.
+//  main.jsx — entry point. Two boot modes, detected off __PR.seedPeople the
+//  same way pr-boot.js does:
+//    sync  — data.js seeded window.__PR and localStorage before this ran
+//            (dev, the single-file artifact, jsdom): count, mount, done.
+//    async — the multi-file shell; pr-boot is fetching. Mount the Shell
+//            immediately (it renders its own skeleton), keep the #boot
+//            overlay up, and only on __PR.ready fill the counts, hide the
+//            overlay, and flip __bootDone — the head error trap keys on
+//            __bootDone, so it must not flip before the app is genuinely
+//            interactive.
 // ═══════════════════════════════════════════════════════════════════════════
 
 // Error boundary so one bad entry render doesn't unmount the whole shell.
@@ -50,13 +57,13 @@ class ErrorBoundary extends React.Component {
     if (s) s.textContent = 'failed';
   };
 
-  try {
-    // data.js has run; __PR is set. Count entries for the boot label so it's
-    // specific instead of a generic "ready". Prefer localStorage (it holds
-    // user edits when a persist ever succeeded; same precedence as
-    // state.jsx loadPeople), fall back to the in-memory seed — the corpus
-    // exceeds the localStorage quota, so in real browsers only the
-    // in-memory path exists.
+  // Count entries for the boot label so it's specific instead of a generic
+  // "ready". Prefer localStorage (it holds user edits when a persist ever
+  // succeeded; same precedence as state.jsx loadPeople), fall back to the
+  // in-memory seed — the corpus exceeds the localStorage quota, so in real
+  // browsers only the in-memory path exists. In the async mode this runs at
+  // 'pr:ready', after pr-boot's persist tail has settled localStorage.
+  const labelBoot = () => {
     let corpus = null;
     try {
       const key = (window.__PR && window.__PR.PEOPLE_KEY) || 'pantheon_registry_v9';
@@ -82,15 +89,50 @@ class ErrorBoundary extends React.Component {
     }
 
     setStep(figureCount ? `loaded ${figureCount} figures` : 'ready', 100);
+  };
 
+  const mountShell = () => {
     const mount = document.getElementById('app');
     if (!mount) throw new Error('#app mount point not found');
     ReactDOM.createRoot(mount).render(
       <ErrorBoundary><window.Shell /></ErrorBoundary>
     );
+  };
+
+  const hideBoot = () => {
     document.getElementById('boot')?.classList.add('hidden');
     setTimeout(() => document.getElementById('boot')?.remove(), 500);
     window.__bootDone = true;
+  };
+
+  try {
+    if (window.__PR && window.__PR.seedPeople) {
+      // Sync mode — data.js has run; __PR is set. Same statements, same
+      // order as before the async shell existed.
+      labelBoot();
+      mountShell();
+      hideBoot();
+    } else {
+      // Async mode — pr-boot declared the flags/promise synchronously before
+      // any UI script; the data is still on the wire. Mount now: the Shell
+      // renders skinny rows the moment 'pr:index' lands, well before ready.
+      setStep('loading corpus…', 60);
+      mountShell();
+      const ready = window.__PR && window.__PR.ready;
+      if (!ready || typeof ready.then !== 'function') {
+        // Neither data.js nor pr-boot ran — nothing will ever arrive. Loud.
+        throw new Error('no corpus: data.js did not run and __PR.ready is absent');
+      }
+      // A throw inside the fulfilled branch must land in the overlay, not as
+      // an unhandled rejection of the derived promise. A rejected ready is
+      // already painted by pr-boot's fail(); fatal() repeats it harmlessly.
+      ready.then(() => {
+        try {
+          labelBoot();
+          hideBoot();
+        } catch (e) { fatal(e); }
+      }, fatal);
+    }
   } catch (e) {
     fatal(e);
   }
