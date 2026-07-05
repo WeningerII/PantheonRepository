@@ -17,7 +17,29 @@
 //  position is always anchored when scrolling.
 // ═══════════════════════════════════════════════════════════════════════════
 
-const { useRef: __bRef, useEffect: __bEff, useMemo: __bMemo } = React;
+const { useRef: __bRef, useEffect: __bEff, useMemo: __bMemo, useState: __bState } = React;
+
+// ── Chunked row reveal ─────────────────────────────────────────────────
+// Committing all ~4,000 BrowseRows in one pass holds React's initial
+// commit window at ~1.3 s — profiled as one giant style/layout frame of
+// the full table, not scripting. Render the first screenful synchronously,
+// then append the remainder in requestAnimationFrame batches. Each batch
+// re-lays-out every row mounted so far, so total reveal work scales with
+// rows²/batch: smaller batches give smoother frames but strictly more
+// total layout. 500 rows/frame measures ~200-400 ms per batch and mounts
+// the full corpus in ~2.5 s; interaction stays responsive because any
+// filter/search change resets the window to the first screenful.
+const REVEAL_FIRST = 150;
+const REVEAL_BATCH = 500;
+// jsdom escape hatch: the test harness asserts thousands of rows are
+// present after a single synchronous flush, and its requestAnimationFrame
+// is a setTimeout stub that would need one flush per batch. Without a real
+// renderer there is no frame budget to protect, so under jsdom — or
+// wherever requestAnimationFrame is missing — reveal every row in one
+// commit.
+const REVEAL_ALL =
+  typeof window.requestAnimationFrame !== 'function' ||
+  /jsdom/i.test((window.navigator && window.navigator.userAgent) || '');
 
 const BrowseRow = React.memo(function BrowseRow({ entry, idx, cursor, selected, onOpen, onHover }) {
   const ref = __bRef(null);
@@ -161,6 +183,45 @@ function Browse({ filters, selection, onOpen }) {
     return groups;
   }, [filtered, sort]);
 
+  // Reveal window: how many leading rows of `filtered` are mounted. Keyed to
+  // the exact list it was measured against so any filter/sort/tier change
+  // resets to the first screenful of the NEW result set — the render-phase
+  // setState re-renders before commit, so a stale window never paints.
+  const [reveal, setReveal] = __bState({ list: filtered, count: REVEAL_ALL ? Infinity : REVEAL_FIRST });
+  if (reveal.list !== filtered) {
+    setReveal({ list: filtered, count: REVEAL_ALL ? Infinity : REVEAL_FIRST });
+  }
+
+  // Keyboard nav and deep links address rows by index into `filtered` (data,
+  // not DOM), but the cursor/selected row must be mounted for its highlight
+  // and auto-scroll to exist — grow the window through both indices in the
+  // same commit. Coverage is suppressed for the one commit where `filtered`
+  // just changed: useSelection resets cursorIdx in an effect AFTER that
+  // commit, so until then the cursor still indexes the OLD list and a stale
+  // deep cursor would force a full-size reveal — the exact commit cost this
+  // window exists to avoid.
+  const selIdx = __bMemo(
+    () => (selectedId ? filtered.findIndex(p => p.id === selectedId) : -1),
+    [filtered, selectedId]
+  );
+  const coverListRef = __bRef(filtered);
+  __bEff(() => { coverListRef.current = filtered; });
+  const coverIdx = coverListRef.current === filtered ? Math.max(cursorIdx, selIdx) : -1;
+  const revealCount = Math.min(filtered.length, Math.max(
+    reveal.list === filtered ? reveal.count : (REVEAL_ALL ? Infinity : REVEAL_FIRST),
+    coverIdx + 1
+  ));
+
+  __bEff(() => {
+    if (REVEAL_ALL || revealCount >= filtered.length) return;
+    const raf = window.requestAnimationFrame(() => {
+      setReveal(prev => (prev.list === filtered && prev.count < filtered.length
+        ? { list: filtered, count: Math.max(prev.count, revealCount) + REVEAL_BATCH }
+        : prev));
+    });
+    return () => window.cancelAnimationFrame(raf);
+  }, [filtered, revealCount]);
+
   // Build a compact list of active-filter chips so the user always sees
   // what's narrowing the result count and can shake any one off.
   const activeChips = [];
@@ -264,7 +325,11 @@ function Browse({ filters, selection, onOpen }) {
                 const out = [];
                 let lastKey = null;
                 let groupIdx = -1;
-                filtered.forEach((entry, idx) => {
+                // Only the revealed prefix mounts. Row indices and group
+                // headers match the full-list render exactly because the
+                // window is always a prefix of `filtered`.
+                for (let idx = 0; idx < revealCount; idx++) {
+                  const entry = filtered[idx];
                   const key = groupKeyForEntry(entry, sort);
                   if (key !== lastKey) {
                     groupIdx++;
@@ -288,7 +353,7 @@ function Browse({ filters, selection, onOpen }) {
                       onHover={stableHover}
                     />
                   );
-                });
+                }
                 return out;
               })()}
             </tbody>

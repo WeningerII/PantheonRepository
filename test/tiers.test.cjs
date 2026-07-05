@@ -3,41 +3,90 @@
 // the corpus. Pure node — no React/jsdom. This locks the scale foundation:
 // the generator is inert (the app still loads inline today), so without a test
 // a drift between the tiers and the corpus would go unnoticed until a future
-// cutover. Validates the contract every tier consumer will rely on.
+// cutover. Schema 3 adds the multi-file-shell artifacts — corpus-<h>.json (the
+// post-pipeline __PR snapshot), core-<h>.js (module-scope constants), hashed
+// index/edges filenames recorded in meta.json, full-fidelity power/domain
+// registries — so the parity assertions here are the contract the async
+// runtime will boot against.
 const { test } = require('node:test');
 const assert = require('node:assert');
 const fs = require('fs');
 const path = require('path');
+const vm = require('vm');
+const crypto = require('crypto');
 const { execFileSync } = require('child_process');
+const { loadCorpus } = require('../scripts/build-tiers.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'dist', 'data');
 
 // Generate fresh from the committed source of truth so the test never reads a
-// stale artifact from a previous run.
-execFileSync('node', [path.join('scripts', 'build-tiers.cjs')], { cwd: ROOT, stdio: 'ignore' });
+// stale artifact from a previous run. Run TWICE and fingerprint both trees:
+// dist/data is gitignored, so byte-exact determinism is enforced here instead
+// of by the verify-regen git-diff gate.
+const generate = () => execFileSync('node', [path.join('scripts', 'build-tiers.cjs')], { cwd: ROOT, stdio: 'ignore' });
+const fingerprint = () => {
+  const map = {};
+  const walk = (dir) => {
+    for (const ent of fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => (a.name < b.name ? -1 : 1))) {
+      const fp = path.join(dir, ent.name);
+      if (ent.isDirectory()) walk(fp);
+      else map[path.relative(OUT, fp)] = crypto.createHash('sha256').update(fs.readFileSync(fp)).digest('hex');
+    }
+  };
+  walk(OUT);
+  return map;
+};
+generate();
+const firstRun = fingerprint();
+generate();
+const secondRun = fingerprint();
 
 const readJSON = (f) => JSON.parse(fs.readFileSync(path.join(OUT, f), 'utf8'));
 const meta = readJSON('meta.json');
-const index = readJSON('index.json');
-const edges = readJSON('edges.json');
+const index = readJSON(meta.files.index);
+const edges = readJSON(meta.files.edges);
+const corpus = readJSON(meta.files.corpus);
 const items = readJSON('items.json');
 const powers = readJSON('powers.json');
 const domains = readJSON('domains.json');
+
+// The vm-loaded __PR is the parity oracle. vm objects live in a foreign realm
+// whose prototypes fail deepStrictEqual's === prototype check — JSON
+// round-trip everything vm-born into this realm before comparing (which also
+// matches what a fetch+JSON.parse consumer of the artifacts actually sees).
+const PR = loadCorpus({ quiet: true });
+const roundTrip = (x) => JSON.parse(JSON.stringify(x));
 
 // Mirror of the generator's bucket hash — if these drift, sharding lookups break.
 const bucketOf = (id) => { let s = 0; for (let k = 0; k < id.length; k++) s = (s + id.charCodeAt(k)) % meta.buckets; return s; };
 
 const idSet = new Set(index.map((r) => r.i));
 
-test('meta is schema 2 and counts agree with the emitted tiers', () => {
-  assert.strictEqual(meta.schema, 2, 'tier schema must be 2');
+test('two consecutive generator runs emit byte-identical trees', () => {
+  assert.ok(Object.keys(firstRun).length > meta.buckets, 'unexpectedly few artifacts');
+  assert.deepStrictEqual(secondRun, firstRun, 'artifact bytes changed between runs');
+});
+
+test('meta is schema 3, counts agree, and hashed filenames match their bodies', () => {
+  assert.strictEqual(meta.schema, 3, 'tier schema must be 3');
   assert.strictEqual(meta.buckets, 64, 'bucket count');
   assert.strictEqual(meta.bucketHash, 'sum-charcodes-mod-buckets');
   assert.strictEqual(meta.figures, index.length, 'meta.figures vs index length');
   assert.strictEqual(meta.items, Object.keys(items).length, 'meta.items vs items.json');
   assert.strictEqual(meta.powers, Object.keys(powers).length, 'meta.powers vs powers.json');
   assert.strictEqual(meta.domains, Object.keys(domains).length, 'meta.domains vs domains.json');
+  const patterns = {
+    core: /^core-[0-9a-f]{12}\.js$/, index: /^index-[0-9a-f]{12}\.json$/,
+    corpus: /^corpus-[0-9a-f]{12}\.json$/, edges: /^edges-[0-9a-f]{12}\.json$/,
+  };
+  assert.deepStrictEqual(Object.keys(meta.files).sort(), Object.keys(patterns).sort(), 'meta.files key set');
+  for (const [k, re] of Object.entries(patterns)) {
+    const name = meta.files[k];
+    assert.match(name, re, `meta.files.${k}: ${name}`);
+    const h = crypto.createHash('sha256').update(fs.readFileSync(path.join(OUT, name))).digest('hex').slice(0, 12);
+    assert.ok(name.includes(`-${h}.`), `${name}: embedded hash != content hash ${h}`);
+  }
 });
 
 test('index records are structurally complete and ids are unique', () => {
@@ -47,9 +96,64 @@ test('index records are structurally complete and ids are unique', () => {
     assert.ok(r.i.length, `empty index id`);
     assert.strictEqual(typeof r.n, 'string', `${r.i}: name (n) not a string`);
     assert.ok(r.n.length, `${r.i}: empty name`);
-    for (const k of ['s', 't', 'y', 'e']) assert.strictEqual(typeof r[k], 'string', `${r.i}: field ${k} not a string`);
+    for (const k of ['s', 't', 'y', 'e', 'o']) assert.strictEqual(typeof r[k], 'string', `${r.i}: field ${k} not a string`);
+    assert.ok(Array.isArray(r.a), `${r.i}: alt names (a) not an array`);
+    for (const alt of r.a) assert.ok(alt && typeof alt === 'string', `${r.i}: empty/non-string alt name`);
+    if (r.d !== null) {
+      assert.ok(Array.isArray(r.d) && r.d.length === 2, `${r.i}: dates (d) not a [start,end] pair`);
+      assert.ok(r.d.some((v) => v != null), `${r.i}: date pair with both bounds null`);
+      for (const v of r.d) assert.ok(v === null || typeof v === 'number', `${r.i}: non-numeric date bound ${v}`);
+    }
     assert.ok(Number.isInteger(r.f) && r.f >= 0 && r.f <= 15, `${r.i}: capability flags out of range: ${r.f}`);
   }
+});
+
+test('index d/o/a mirror the vm corpus (dates resolved per-axis, mythic first)', () => {
+  for (const r of index) {
+    const p = PR.seedPeople[r.i];
+    assert.ok(p, `${r.i}: not in vm corpus`);
+    assert.strictEqual(r.o, p.origin || '', `${r.i}: origin flag`);
+    const alt = (p.name && Array.isArray(p.name.alt)) ? p.name.alt.filter(Boolean) : [];
+    assert.deepStrictEqual(r.a, roundTrip(alt), `${r.i}: alt names`);
+    const dates = PR.getEntryDates(p) || {};
+    const expect = (dates.mythicStart != null || dates.mythicEnd != null)
+      ? [dates.mythicStart ?? null, dates.mythicEnd ?? null]
+      : (dates.textualStart != null || dates.textualEnd != null)
+        ? [dates.textualStart ?? null, dates.textualEnd ?? null]
+        : null;
+    assert.deepStrictEqual(r.d, expect, `${r.i}: resolved date pair`);
+  }
+});
+
+test('corpus snapshot deep-equals the vm __PR after a JSON round-trip', () => {
+  assert.deepStrictEqual(Object.keys(corpus).sort(),
+    ['divinity', 'inheritedPowers', 'items', 'seedAtlas', 'seedPeople', 'traditionMix'], 'corpus key set');
+  // Compared key by key so a failure names the drifted layer instead of
+  // dumping a 20 MB diff.
+  for (const k of Object.keys(corpus)) {
+    assert.deepStrictEqual(corpus[k], roundTrip(PR[k]), `corpus.${k} != vm __PR.${k}`);
+  }
+});
+
+test('core.js is a classic-script IIFE carrying the six module-scope constants', () => {
+  const body = fs.readFileSync(path.join(OUT, meta.files.core), 'utf8');
+  assert.ok(/;\(function\(\)\{window\.__PR=Object\.assign\(window\.__PR\|\|\{\},/.test(body), 'core.js IIFE shape');
+  assert.ok(!/^\s*(import|export)\b/m.test(body), 'core.js must stay a classic script');
+  const ctx = { window: {} };
+  vm.createContext(ctx);
+  vm.runInContext(body, ctx, { filename: meta.files.core });
+  const got = roundTrip(ctx.window.__PR);
+  assert.deepStrictEqual(Object.keys(got).sort(),
+    ['ATLAS_KEY', 'ERA_DATES', 'ERA_ORDER', 'PEOPLE_KEY', 'TRADITION_PIGMENTS', 'TYPE_META'], 'core.js key set');
+  for (const k of Object.keys(got)) {
+    assert.deepStrictEqual(got[k], roundTrip(PR[k]), `core.js ${k} != vm __PR.${k}`);
+  }
+  // Assign-over semantics: an already-populated __PR (inline data.js ran
+  // first) must survive the merge.
+  const ctx2 = { window: { __PR: { seedPeople: { probe: 1 } } } };
+  vm.createContext(ctx2);
+  vm.runInContext(body, ctx2, { filename: meta.files.core });
+  assert.strictEqual(ctx2.window.__PR.seedPeople.probe, 1, 'core.js clobbered a pre-existing __PR');
 });
 
 test('every figure resolves to exactly one detail shard at its hashed bucket', () => {
@@ -84,17 +188,54 @@ test('edges reference only real figures (no dangling parent/relation targets)', 
   assert.strictEqual(dangling.length, 0, `dangling edge targets:\n  ${dangling.slice(0, 20).join('\n  ')}`);
 });
 
-test('aggregate holders/inheritors are all real figures', () => {
-  const check = (reg, label) => {
-    for (const [key, rec] of Object.entries(reg)) {
-      for (const h of (rec.holders || [])) assert.ok(idSet.has(h), `${label} ${key}: holder ${h} not in index`);
-      for (const h of (rec.inheritors || [])) assert.ok(idSet.has(h), `${label} ${key}: inheritor ${h} not in index`);
+test('powers.json carries the full runtime-registry shape with consistent counts', () => {
+  assert.ok(Object.keys(powers).length > 0, 'powers registry empty');
+  for (const [pid, rec] of Object.entries(powers)) {
+    assert.strictEqual(rec.id, pid, `${pid}: id mismatch`);
+    assert.ok(rec.displayName && typeof rec.displayName === 'string', `${pid}: displayName`);
+    for (const k of ['holders', 'inheritors', 'scopeTags', 'sources']) assert.ok(Array.isArray(rec[k]), `${pid}: ${k} not an array`);
+    assert.ok(rec.heritCounts && typeof rec.heritCounts === 'object', `${pid}: heritCounts`);
+    const holderIds = new Set();
+    for (const h of rec.holders) {
+      assert.strictEqual(typeof h.personId, 'string', `${pid}: holder without personId`);
+      assert.ok(idSet.has(h.personId), `power ${pid}: holder ${h.personId} not in index`);
+      assert.ok(Array.isArray(h.scopeTags) && Array.isArray(h.sources), `${pid}: holder ${h.personId} missing scopeTags/sources`);
+      holderIds.add(h.personId);
     }
-  };
-  check(powers, 'power');
-  check(domains, 'domain');
-  // Powers must carry the descent dimension the schema-2 upgrade added.
-  assert.ok('inheritors' in Object.values(powers)[0], 'powers aggregate missing inheritors field');
+    for (const h of rec.inheritors) {
+      assert.strictEqual(typeof h.personId, 'string', `${pid}: inheritor without personId`);
+      assert.ok(idSet.has(h.personId), `power ${pid}: inheritor ${h.personId} not in index`);
+    }
+    assert.strictEqual(rec.holderCount, holderIds.size, `${pid}: holderCount`);
+    assert.strictEqual(rec.inheritorCount, rec.inheritors.length, `${pid}: inheritorCount`);
+    assert.strictEqual(rec.figureCount,
+      holderIds.size + rec.inheritors.filter((h) => !holderIds.has(h.personId)).length, `${pid}: figureCount`);
+    // Consensus inheritability = most-attested heritCounts key, first wins on
+    // ties (JSON preserves the registry's insertion order).
+    let best = null, bestN = -1;
+    for (const k of Object.keys(rec.heritCounts)) if (rec.heritCounts[k] > bestN) { best = k; bestN = rec.heritCounts[k]; }
+    assert.strictEqual(rec.inheritability, best, `${pid}: inheritability consensus`);
+  }
+  // The descent dimension must survive the schema-3 upgrade.
+  assert.ok(Object.values(powers).some((r) => r.inheritors.length), 'no power carries inheritors');
+});
+
+test('domains.json carries the full runtime-registry shape with consistent counts', () => {
+  assert.ok(Object.keys(domains).length > 0, 'domains registry empty');
+  for (const [did, rec] of Object.entries(domains)) {
+    assert.strictEqual(rec.id, did, `${did}: id mismatch`);
+    assert.ok(rec.displayName && typeof rec.displayName === 'string', `${did}: displayName`);
+    for (const k of ['holders', 'contextTags', 'sources']) assert.ok(Array.isArray(rec[k]), `${did}: ${k} not an array`);
+    const holderIds = new Set();
+    for (const h of rec.holders) {
+      assert.strictEqual(typeof h.personId, 'string', `${did}: holder without personId`);
+      assert.ok(idSet.has(h.personId), `domain ${did}: holder ${h.personId} not in index`);
+      assert.ok(Array.isArray(h.sources), `${did}: holder ${h.personId} missing sources`);
+      holderIds.add(h.personId);
+    }
+    assert.strictEqual(rec.holderCount, rec.holders.length, `${did}: holderCount`);
+    assert.strictEqual(rec.figureCount, holderIds.size, `${did}: figureCount`);
+  }
 });
 
 test('capability flags in the index match the detailed record', () => {
