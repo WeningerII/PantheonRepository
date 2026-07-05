@@ -1,9 +1,59 @@
-# Load-time re-architecture proposal
+# Load-time re-architecture
 
-Status: proposal (no code changes yet). Produced from a measured audit of the
-current boot path — real Chromium benchmarks of `dist/pantheon-registry.html`,
-an anatomy of `app/data.js`, a data-flow map of the UI, and an evaluation of
-three candidate architectures against the project's constraints.
+Status: **implemented** (waves 1–3 on this branch). Sections below this one
+are the original proposal, kept as the design record; predictions in them are
+superseded by the measured results here.
+
+## Outcome — measured after implementation
+
+Same harness for all three subjects (Chromium headless, fresh profile per
+run, loopback server, 4-vCPU Xeon; medians of 3; CDN scripts served from
+byte-identical local copies, fonts stubbed):
+
+| ms from navigation | Baseline (pre-migration) | New single-file artifact | New Pages shell |
+|---|---|---|---|
+| First React commit | 2,739 | 931 | **264** |
+| First Browse rows | 2,739 | 931 | **378** |
+| Fully interactive (`__bootDone`) | 2,288 | 2,174 | **927** |
+| DOMContentLoaded | 3,688 | 848 | **110** |
+| Critical-path transfer (gzip) | 4.9 MB | 5.0 MB | **~0.35 MB** |
+
+- The **Pages shell** (what visitors get) reaches real content 7.2× sooner
+  and full interactivity 2.5× sooner; the 4.7 MB-gzip corpus streams in the
+  background behind an interactive skinny-index Browse. Critical-path bytes
+  fell ~14×, which is where most of the real-network win lives (unmeasurable
+  on loopback).
+- The **single-file artifact** (file://, srcdoc, download at
+  `/artifact.html`) shows first rows 2.9× sooner via the inert-JSON payload;
+  its `__bootDone` is near-flat by design — it still carries the full 24 MB
+  payload, parsed off the critical path. A no-index variant reaching
+  `__bootDone` at ~1.0 s was measured and documented at the decision site in
+  `build.py`; time-to-first-rows won.
+- All 9 benchmark runs: 4,014 figures reachable, zero console errors.
+- Suite grew 131 → 168 tests, all green, with the sync path proven unchanged
+  (zero pre-existing test-file modifications) and byte-exact regeneration
+  preserved throughout.
+
+What shipped, by wave: (1) async fonts + quota-probe persist guard +
+schema-3 tiers + chunked Browse reveal; (2) `app/pr-boot.js` two-stage
+loader with an all-figures parity net + async-tolerant seams in
+state/Shell/main + memoized alpha sort (6.2×); (3) `build.py --pages`
+multi-file shell + Pages deploy layout (`/`, `/data/`, `/artifact.html`) +
+the embedded-JSON artifact encoding.
+
+Deliberately deferred (unchanged from the plan): lazy d3/topojson injection
+(~440 KB), a service worker for repeat visits under Pages' fixed
+`max-age=600`, per-shard Tier-3 hydration (the seam is in place), and a
+worker-thread corpus parse. The profiler found the post-commit window was
+layout, not effects — that finding is recorded in the wave-1 commit.
+
+---
+
+The original proposal follows. It was produced from a measured audit of the
+pre-migration boot path — real Chromium benchmarks of
+`dist/pantheon-registry.html`, an anatomy of `app/data.js`, a data-flow map
+of the UI, and an evaluation of three candidate architectures against the
+project's constraints.
 
 ## TL;DR
 
