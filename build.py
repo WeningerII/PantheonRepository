@@ -1,18 +1,32 @@
 #!/usr/bin/env python3
 """
-Build script for the single-file deployable artifact.
+Build script for the deployable artifacts.
 
 Pre-transforms each app/*.jsx through Babel (no in-browser transformer),
-inlines everything alongside app/data.js and app/styles.css, and writes
-dist/pantheon-registry.html — a self-contained HTML file you can open
-from disk, host as a static file, or drop into a Claude.ai artifact.
+inlines them alongside app/styles.css, and swaps the data layer per mode.
+Both modes regenerate the schema-3 tiers (scripts/build-tiers.cjs) first and
+ship the SAME post-pipeline snapshot through the same inlined app/pr-boot.js:
+
+  python3 build.py          dist/pantheon-registry.html — the single-file
+                            artifact: open from disk, host as a static file,
+                            or drop into a Claude.ai artifact. Committed and
+                            byte-exact-gated. The corpus is embedded as inert
+                            <script type="application/json"> payloads the JS
+                            parser never tokenizes; pr-boot JSON.parses them
+                            off the critical path. No fetch() — file:// and
+                            srcdoc keep working.
+  python3 build.py --pages  dist/site/index.html — the multi-file Pages
+                            shell: same template, but the corpus arrives as
+                            the hashed dist/data tiers fetched by pr-boot.
+                            Gitignored, CI-built.
 
 Prerequisites:
   npm install            # installs @babel/standalone
 
 Usage:
-  python3 build.py
+  python3 build.py [--pages]
 """
+import json
 import re
 import subprocess
 import sys
@@ -71,6 +85,12 @@ def safe(src: str) -> str:
 
 
 def main() -> None:
+    args = sys.argv[1:]
+    pages = '--pages' in args
+    unknown = [a for a in args if a != '--pages']
+    if unknown:
+        sys.exit(f'usage: python3 build.py [--pages]  (unrecognized: {", ".join(unknown)})')
+
     print('Pre-transforming JSX...')
     transformed = {}
     for f in JSX_FILES:
@@ -80,12 +100,37 @@ def main() -> None:
         print(f'  {f:24s}  {len(src):>7,} → {len(code):>7,} bytes')
 
     styles_css = (APP / 'styles.css').read_text(encoding='utf-8')
-    data_js    = (APP / 'data.js').read_text(encoding='utf-8')
+
+    # The two modes differ only in the data layer: embedded inert JSON
+    # (artifact) vs the hashed tiers fetched over HTTP (Pages shell) — both
+    # loaded by the same inlined app/pr-boot.js. dist/data is gitignored and
+    # the generator is deterministic and cheap (~2.5 s), so always
+    # regenerate: the hashed names pinned into the shell — and the payloads
+    # inlined into the artifact — can never go stale against app/data.js.
+    print('Building data tiers (scripts/build-tiers.cjs)...')
+    proc = subprocess.run(['node', 'scripts/build-tiers.cjs'], cwd=ROOT)
+    if proc.returncode != 0:
+        sys.exit('!! scripts/build-tiers.cjs failed')
+    tiers = json.loads((DIST / 'data' / 'meta.json').read_text(encoding='utf-8'))['files']
+    data_name = 'pr-boot.js'
+    data_body = (APP / data_name).read_text(encoding='utf-8')
 
     # Sanity: abort on anything that would terminate or mis-parse the inline
     # script element (case-insensitive close tags, comment-open sequences).
-    for name, body in [('styles.css', styles_css), ('data.js', data_js),
-                       *((f, transformed[f]) for f in JSX_FILES)]:
+    hazard_checks = [('styles.css', styles_css), (data_name, data_body),
+                     *((f, transformed[f]) for f in JSX_FILES)]
+    if not pages:
+        core_body = (DIST / 'data' / tiers['core']).read_text(encoding='utf-8')
+        # The JSON payloads are safe()-escaped BEFORE the check: '<\/script'
+        # inside a JSON string literal still parses to '</script', so the
+        # corpus keeps its bytes while the element survives the HTML
+        # tokenizer. '<!--' has no JSON-transparent escape — it aborts here.
+        index_payload = safe((DIST / 'data' / tiers['index']).read_text(encoding='utf-8'))
+        corpus_payload = safe((DIST / 'data' / tiers['corpus']).read_text(encoding='utf-8'))
+        hazard_checks += [(tiers['core'], core_body),
+                          (tiers['index'] + ' (escaped)', index_payload),
+                          (tiers['corpus'] + ' (escaped)', corpus_payload)]
+    for name, body in hazard_checks:
         hit = _PARSE_HAZARD.search(body)
         if hit:
             print(f'!! {name} contains a script-breaking sequence at offset {hit.start()}: {hit.group()!r}', file=sys.stderr)
@@ -163,10 +208,13 @@ def main() -> None:
 })();
 </script>
 
-<!-- Fonts -->
+<!-- Fonts. Loaded async via the media swap: a render-blocking font stylesheet
+     stalls first paint for the full fetch (12.66 s measured on a degraded
+     network) while display=swap already keeps text readable without it. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"></noscript>
 
 <style id="app-styles">
 __STYLES_CSS__
@@ -267,10 +315,7 @@ __STYLES_CSS__
 
 <div id="app"></div>
 
-<!-- Data layer (IIFE-wrapped, plain JS) -->
-<script>
-__DATA_JS__
-</script>
+__DATA_LAYER__
 
 <!-- UI scripts (pre-transformed from JSX at build time) -->
 __UI_SCRIPTS__
@@ -279,8 +324,59 @@ __UI_SCRIPTS__
 </html>
 """
 
+    if pages:
+        # __PR_DATA names the tiers pr-boot fetches; core.js satisfies the
+        # module-scope __PR reads (PEOPLE_KEY, ERA_DATES, …) before any UI
+        # script runs. Hashed names are pinned into the shell — the only
+        # cache-busting available under Pages' fixed max-age=600 — as
+        # page-relative URLs so the shell serves from a project sub-path.
+        # pr-boot ships inline: _site carries no app/ files beside data/.
+        # test/manifest.test.cjs pins this order (__PR_DATA, core, pr-boot,
+        # then the UI scripts) against index.html and the artifact.
+        data_layer = (
+            '<!-- Data layer (async tiers; hashed names pinned from dist/data/meta.json) -->\n'
+            f"<script>window.__PR_DATA = {{ index: 'data/{tiers['index']}', corpus: 'data/{tiers['corpus']}' }};</script>\n"
+            f'<script src="data/{tiers["core"]}"></script>\n'
+            '\n'
+            '<!-- pr-boot.js (async data loader, inlined) -->\n'
+            '<script>\n'
+            f'{safe(data_body)}\n'
+            '</script>')
+    else:
+        # Same load order as the Pages shell (core constants, __PR_DATA,
+        # pr-boot, then the UI scripts via the template) — only the source
+        # differs: the tiers sit in-document as inert application/json
+        # payloads, placed AFTER pr-boot so the small executable scripts
+        # parse before the tokenizer walks the 20+ MB. pr-boot reads them by
+        # element id at DOMContentLoaded (never a fetch), so the skeleton
+        # boot and the two-stage install match the shell exactly.
+        # test/manifest.test.cjs pins this order.
+        #
+        # The skinny index stage ships in the artifact too, by measurement:
+        # medians of 3 cold Chromium runs over loopback put first Browse rows
+        # at 875 ms with the index vs 1,066 ms without (both against 2,320 ms
+        # for the retired inline-data.js encoding). The 0.93 MB block and the
+        # second render pass defer __bootDone (~1.9 s vs ~1.0 s — the idle
+        # corpus parse waits out the skinny row reveal), but rows-on-screen
+        # is the boot the user watches, and one flow shared with the Pages
+        # shell beats a third artifact-only variant.
+        data_layer = (
+            '<!-- Data layer (embedded: inert JSON tiers, parsed off the critical path by pr-boot) -->\n'
+            '<!-- core constants (dist/data core.js, inlined) -->\n'
+            '<script>\n'
+            f'{safe(core_body)}\n'
+            '</script>\n'
+            "<script>window.__PR_DATA = { embeddedIndex: 'pr-data-index', embeddedCorpus: 'pr-data-corpus' };</script>\n"
+            '\n'
+            '<!-- pr-boot.js (async data loader, inlined) -->\n'
+            '<script>\n'
+            f'{safe(data_body)}\n'
+            '</script>\n'
+            f'<script type="application/json" id="pr-data-index">{index_payload}</script>\n'
+            f'<script type="application/json" id="pr-data-corpus">{corpus_payload}</script>')
+
     out = template.replace('__STYLES_CSS__', safe(styles_css))
-    out = out.replace('__DATA_JS__',    safe(data_js))
+    out = out.replace('__DATA_LAYER__',  data_layer)
     out = out.replace('__UI_SCRIPTS__', script_blocks)
 
     # Verify no template tokens remain. /*#__PURE__*/ is Babel output, not a token.
@@ -289,7 +385,11 @@ __UI_SCRIPTS__
         print(f'!! Leftover template tokens: {set(leftover)}', file=sys.stderr)
         sys.exit(1)
 
-    out_path = DIST / 'pantheon-registry.html'
+    if pages:
+        (DIST / 'site').mkdir(exist_ok=True)
+        out_path = DIST / 'site' / 'index.html'
+    else:
+        out_path = DIST / 'pantheon-registry.html'
     # Explicit encoding + newline: a cp1252 locale (Windows) cannot encode the
     # corpus, and newline translation would break byte-exact regeneration.
     out_path.write_text(out, encoding='utf-8', newline='\n')

@@ -6,3 +6,6 @@ _site/
 
 # Generated lazy-load data tiers (build-tiers.cjs); wired into deploy in a later stage
 dist/data/
+
+# Generated multi-file Pages shell (build.py --pages); CI-built, never committed
+dist/site/

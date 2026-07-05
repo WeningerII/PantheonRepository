@@ -406,7 +406,7 @@ function displayName(entry) {
 //    Z. The group key strips them and reads the next letter (e.g. 'A' from
 //    ʾAshtart), while the sort places ʾA entries after Z — producing duplicate
 //    'A', 'I', 'O' headers scattered at the tail of the A→Z list.
-function nameForAlphaSort(entry) {
+function computeAlphaSortKey(entry) {
   const raw = displayName(entry) || '';
   const normalized = raw
     .normalize('NFD')
@@ -424,6 +424,25 @@ function nameForAlphaSort(entry) {
   // so these entries sort after Z by their own script's locale order — placing
   // the '#' catch-all group at the TAIL of A→Z rather than the head.
   return normalized || raw;
+}
+
+// The alpha comparator runs the normalize/replace chain above O(n log n)
+// times per sort — 52 ms of the 72 ms `filtered` memo at corpus size, re-paid
+// on every keystroke. The key is a pure function of the (never-mutated) entry,
+// so cache it per entry OBJECT. A WeakMap, not an id-keyed Map: the async tier
+// swap replaces every entry object once mid-session, and identity keys let the
+// new generation miss cleanly while the old one falls out via GC — id keys
+// would keep serving first-load names across the swap.
+const ALPHA_SORT_KEYS = new WeakMap();
+
+function nameForAlphaSort(entry) {
+  if (entry === null || typeof entry !== 'object') return computeAlphaSortKey(entry);
+  let key = ALPHA_SORT_KEYS.get(entry);
+  if (key === undefined) {
+    key = computeAlphaSortKey(entry);
+    ALPHA_SORT_KEYS.set(entry, key);
+  }
+  return key;
 }
 
 function altNames(entry) {
@@ -496,18 +515,50 @@ function relationFamily(kind) {
 
 // ── Hook: useData ────────────────────────────────────────────────────────
 //
-// data.js seeds localStorage synchronously at module load — by the time this
-// hook first runs, both PEOPLE_KEY and ATLAS_KEY are populated. So we load
-// once via the state initializer (synchronous, before first paint) and call
-// it done. The earlier architecture had this hook polling localStorage every
-// 100ms up to 200 times because the legacy registry seeded asynchronously
-// from inside its own useEffect; that's gone now and the polling along with
-// it. ready is just `people.length > 0` since there's nothing left to await.
+// Two boot modes, detected the same way pr-boot.js detects them. When the
+// corpus is present synchronously (data.js ran before us — dev, the
+// artifact, jsdom, and the Node-VM consumers), the state initializer loads
+// once before first paint and nothing here ever fires again: __PR.dataReady
+// is undefined or true, the effect returns immediately, and the hook
+// behaves exactly as it did before the multi-file shell existed. On the
+// Pages shell, pr-boot sets __PR.dataReady = false before any UI script
+// runs and the corpus arrives in two stages — 'pr:index' (skinny Browse
+// rows) then 'pr:ready' (full records, localStorage settled) — so the one
+// effect below re-runs the loaders on each. dataReady gates the views that
+// need full records; corpusVersion keys every cache that must not serve
+// skinny-index-era results after the swap.
 
 function useData() {
-  const [people] = useState(loadPeople);
-  const [atlas]  = useState(loadAtlas);
+  const [data, setData] = useState(() => ({
+    people: loadPeople(),
+    atlas: loadAtlas(),
+    dataReady: !window.__PR || window.__PR.dataReady !== false,
+    corpusVersion: (window.__PR && window.__PR.corpusVersion) || 0,
+  }));
+  const { people, atlas, dataReady, corpusVersion } = data;
   const ready = people.length > 0;
+
+  useEffect(() => {
+    if (data.dataReady) return; // sync world: nothing arrives later
+    const refresh = () => setData({
+      people: loadPeople(),
+      atlas: loadAtlas(),
+      dataReady: window.__PR.dataReady === true,
+      corpusVersion: window.__PR.corpusVersion || 0,
+    });
+    window.addEventListener('pr:index', refresh);
+    window.addEventListener('pr:ready', refresh);
+    // A stage that landed between the initializer and this subscription
+    // would otherwise be missed — its event already fired.
+    if ((window.__PR.corpusVersion || 0) !== data.corpusVersion) refresh();
+    return () => {
+      window.removeEventListener('pr:index', refresh);
+      window.removeEventListener('pr:ready', refresh);
+    };
+  // Mount-only by design: `data` here is the first-render snapshot, used only
+  // to decide whether anything can still arrive.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Index by id for relation lookups, and a reverse parentage index so the
   // lineage view can walk descendants in O(1).
@@ -528,13 +579,19 @@ function useData() {
     return m;
   }, [people]);
 
-  return { people, atlas, byId, childrenOf, ready };
+  return { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion };
 }
 
 // ── Hook: useFilters ─────────────────────────────────────────────────────
 
+// One collator shared by the alpha comparator's O(n log n) calls. ECMA-402
+// pins bare localeCompare to `new Intl.Collator(undefined, undefined)`, so
+// the ordering is identical — this only skips the per-call collator
+// resolution inside String.prototype.localeCompare.
+const NAME_COLLATOR = new Intl.Collator();
+
 const SORTS = {
-  alpha:     { label: 'Alphabetical', short: 'A→Z',       cmp: (a, b) => nameForAlphaSort(a).localeCompare(nameForAlphaSort(b)) || displayName(a).localeCompare(displayName(b)) },
+  alpha:     { label: 'Alphabetical', short: 'A→Z',       cmp: (a, b) => NAME_COLLATOR.compare(nameForAlphaSort(a), nameForAlphaSort(b)) || NAME_COLLATOR.compare(displayName(a), displayName(b)) },
   tradition: { label: 'Tradition',    short: 'Tradition', cmp: (a, b) => (a.tradition || '').localeCompare(b.tradition || '') || displayName(a).localeCompare(displayName(b)) },
   era:       { label: 'Era (oldest)', short: 'Era',       cmp: (a, b) => {
     const ya = entryAnchorYear(a); const yb = entryAnchorYear(b);
@@ -733,7 +790,14 @@ function itemsForEntry(entry) {
 // who DECLARE the faculty plus, for the descent view, the figures who INHERIT it
 // (from __PR.inheritedPowers, each edge naming the ancestor it descends from).
 // A domain record gathers the figures who govern the sphere.
-let _powerReg = null, _domainReg = null;
+//
+// Each cache is keyed to the __PR.seedPeople object it was built from. In
+// the sync world that identity never changes, so this is the same build-once
+// behavior as before. On the async shell the corpus swap replaces seedPeople
+// wholesale (skinny index → full snapshot), and a registry built from skinny
+// records — no faculties, no domains — must not survive it.
+let _powerReg = null, _powerRegSrc = null;
+let _domainReg = null, _domainRegSrc = null;
 const humanizeTag = (s) => String(s == null ? '' : s).replace(/[-_]+/g, ' ').trim();
 const dedupeSources = (arr) => {
   const seen = new Set();
@@ -744,8 +808,9 @@ const dedupeSources = (arr) => {
 };
 
 function buildPowerRegistry() {
-  if (_powerReg) return _powerReg;
-  const people = (window.__PR && window.__PR.seedPeople) || {};
+  const source = window.__PR && window.__PR.seedPeople;
+  if (_powerReg && _powerRegSrc === source) return _powerReg;
+  const people = source || {};
   const inh = (window.__PR && window.__PR.inheritedPowers) || {};
   const reg = {};
   const ensure = (id) => (reg[id] || (reg[id] = {
@@ -792,12 +857,14 @@ function buildPowerRegistry() {
     rec.inheritability = best;
   }
   _powerReg = reg;
+  _powerRegSrc = source;
   return reg;
 }
 
 function buildDomainRegistry() {
-  if (_domainReg) return _domainReg;
-  const people = (window.__PR && window.__PR.seedPeople) || {};
+  const source = window.__PR && window.__PR.seedPeople;
+  if (_domainReg && _domainRegSrc === source) return _domainReg;
+  const people = source || {};
   const reg = {};
   const ensure = (id) => (reg[id] || (reg[id] = {
     id, displayName: humanizeTag(id), term: null,
@@ -825,6 +892,7 @@ function buildDomainRegistry() {
     rec.sources = dedupeSources(rec.sources);
   }
   _domainReg = reg;
+  _domainRegSrc = source;
   return reg;
 }
 

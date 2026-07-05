@@ -1,8 +1,10 @@
 name: Deploy to GitHub Pages
 
-# Builds the single-file artifact with build.py and deploys it through GitHub's
-# native Pages pipeline (actions/deploy-pages). This creates a real
-# `github-pages` Deployment with a clickable URL on each run, and
+# Builds both distributions with build.py — the multi-file shell (served at /,
+# with its tiered data under /data/) and the single-file artifact (served at
+# /artifact.html as a downloadable secondary distribution) — and deploys them
+# through GitHub's native Pages pipeline (actions/deploy-pages). This creates a
+# real `github-pages` Deployment with a clickable URL on each run, and
 # actions/configure-pages (enablement: true) turns Pages on automatically the
 # first time — no manual Settings toggle required.
 # NOTE: if the repo's `github-pages` environment has a Deployment-branches
@@ -54,18 +56,26 @@ jobs:
       - name: Verify byte-exact regeneration
         run: bash scripts/verify-regen.sh
 
-      - name: Build single-file artifact
-        run: python3 build.py
+      # Two builds: the single-file artifact (dist/pantheon-registry.html) and
+      # the Pages shell (dist/site/index.html), which also guarantees the
+      # tiered data files under dist/data/ are current.
+      - name: Build distributions
+        run: python3 build.py && python3 build.py --pages
 
+      # Site layout: the multi-file shell at /, its hashed data files under
+      # /data/, and the single-file artifact at /artifact.html (kept as a
+      # first-class downloadable secondary distribution).
       # Goal 3 — every release ships a dogfood sign-off. Ship the COMMITTED
       # checklist (the one a human actually reviewed), not a fresh unticked
       # regeneration; only the link base is rewritten for the site layout
-      # (the artifact deploys as index.html, not dist/pantheon-registry.html).
+      # (the artifact deploys as artifact.html, not dist/pantheon-registry.html).
       - name: Assemble Pages site
         run: |
           rm -rf _site && mkdir -p _site
-          cp dist/pantheon-registry.html _site/index.html
-          sed 's#dist/pantheon-registry\.html\##./index.html\##g' DOGFOOD.md > _site/DOGFOOD.md
+          cp dist/site/index.html _site/index.html
+          cp -R dist/data _site/data
+          cp dist/pantheon-registry.html _site/artifact.html
+          sed 's#dist/pantheon-registry\.html\##./artifact.html\##g' DOGFOOD.md > _site/DOGFOOD.md
 
       # Reads the repo's Pages config. Pages must be enabled once in Settings
       # (Source: GitHub Actions) — GitHub does not permit the Actions token to
