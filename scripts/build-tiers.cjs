@@ -48,7 +48,12 @@ const util = require('util');
 const crypto = require('crypto');
 
 const ROOT = path.resolve(__dirname, '..');
-const OUT = path.join(ROOT, 'dist', 'data');
+// PR_TIERS_OUT redirects the output tree. The test suite runs its files
+// concurrently, so no test may rewrite the shared dist/data mid-run; the
+// determinism test builds into a scratch dir through this seam instead.
+const OUT = process.env.PR_TIERS_OUT
+  ? path.resolve(process.env.PR_TIERS_OUT)
+  : path.join(ROOT, 'dist', 'data');
 const BUCKETS = 64;
 const SCHEMA = 3;
 

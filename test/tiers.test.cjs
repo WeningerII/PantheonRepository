@@ -20,27 +20,35 @@ const { loadCorpus } = require('../scripts/build-tiers.cjs');
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'dist', 'data');
 
-// Generate fresh from the committed source of truth so the test never reads a
-// stale artifact from a previous run. Run TWICE and fingerprint both trees:
-// dist/data is gitignored, so byte-exact determinism is enforced here instead
-// of by the verify-regen git-diff gate.
-const generate = () => execFileSync('node', [path.join('scripts', 'build-tiers.cjs')], { cwd: ROOT, stdio: 'ignore' });
-const fingerprint = () => {
+// dist/data is gitignored and built by the `npm test` command itself
+// (`python3 build.py --pages`) BEFORE the runner starts: node runs test files
+// concurrently, so no test may rewrite the shared tree mid-run — that race
+// 404s any sibling test reading dist/data at that moment. Byte-exact
+// determinism is still enforced (dist/data is gitignored, so the verify-regen
+// git-diff gate never sees it): a second generation lands in a scratch dir
+// through the PR_TIERS_OUT seam and must fingerprint identically.
+if (!fs.existsSync(path.join(OUT, 'meta.json'))) {
+  throw new Error('dist/data missing — run `python3 build.py --pages` first (npm test does this automatically)');
+}
+const fingerprint = (base) => {
   const map = {};
   const walk = (dir) => {
     for (const ent of fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => (a.name < b.name ? -1 : 1))) {
       const fp = path.join(dir, ent.name);
       if (ent.isDirectory()) walk(fp);
-      else map[path.relative(OUT, fp)] = crypto.createHash('sha256').update(fs.readFileSync(fp)).digest('hex');
+      else map[path.relative(base, fp)] = crypto.createHash('sha256').update(fs.readFileSync(fp)).digest('hex');
     }
   };
-  walk(OUT);
+  walk(base);
   return map;
 };
-generate();
-const firstRun = fingerprint();
-generate();
-const secondRun = fingerprint();
+const SCRATCH = fs.mkdtempSync(path.join(require('os').tmpdir(), 'pr-tiers-'));
+execFileSync('node', [path.join('scripts', 'build-tiers.cjs')], {
+  cwd: ROOT, stdio: 'ignore', env: { ...process.env, PR_TIERS_OUT: SCRATCH },
+});
+const firstRun = fingerprint(OUT);
+const secondRun = fingerprint(SCRATCH);
+fs.rmSync(SCRATCH, { recursive: true, force: true });
 
 const readJSON = (f) => JSON.parse(fs.readFileSync(path.join(OUT, f), 'utf8'));
 const meta = readJSON('meta.json');
@@ -63,7 +71,7 @@ const bucketOf = (id) => { let s = 0; for (let k = 0; k < id.length; k++) s = (s
 
 const idSet = new Set(index.map((r) => r.i));
 
-test('two consecutive generator runs emit byte-identical trees', () => {
+test('an independent generator run emits a byte-identical tree', () => {
   assert.ok(Object.keys(firstRun).length > meta.buckets, 'unexpectedly few artifacts');
   assert.deepStrictEqual(secondRun, firstRun, 'artifact bytes changed between runs');
 });

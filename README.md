@@ -68,7 +68,10 @@ After that, deploys are automatic.
 ```bash
 npm install   # installs the test-only devDependencies (jsdom + the React/d3/
               # topojson builds the app otherwise loads from a CDN)
-npm test      # node --test --test-force-exit test/*.test.cjs
+npm test      # builds the gitignored test fixtures (python3 build.py --pages),
+              # then node --test --test-force-exit test/*.test.cjs — fixtures
+              # are built up front because test files run concurrently and
+              # must never rewrite the shared dist/ trees mid-run
 ```
 
 - `test/seed.test.cjs` runs `app/data.js` in an isolated VM and checks the seeded

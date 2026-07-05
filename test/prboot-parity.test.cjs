@@ -16,16 +16,16 @@ const assert = require('node:assert');
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
-const { execFileSync } = require('child_process');
-
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'dist', 'data');
 const BOOT = fs.readFileSync(path.join(ROOT, 'app', 'pr-boot.js'), 'utf8');
 
-// dist/data is gitignored — generate when absent. (tiers.test.cjs regenerates
-// unconditionally, so a stale tree cannot survive a full CI run.)
+// dist/data is gitignored and built by the `npm test` command itself before
+// the runner starts. This file must never build it: test files run
+// concurrently, and a sibling rewriting the tree mid-run 404s the fetch
+// stub below (the exact failure CI saw on a cold checkout).
 if (!fs.existsSync(path.join(OUT, 'meta.json'))) {
-  execFileSync('node', [path.join('scripts', 'build-tiers.cjs')], { cwd: ROOT, stdio: 'ignore' });
+  throw new Error('dist/data missing — run `python3 build.py --pages` first (npm test does this automatically)');
 }
 const meta = JSON.parse(fs.readFileSync(path.join(OUT, 'meta.json'), 'utf8'));
 const CORE = fs.readFileSync(path.join(OUT, meta.files.core), 'utf8');

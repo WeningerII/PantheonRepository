@@ -14,7 +14,6 @@ const { test } = require('node:test');
 const assert = require('node:assert');
 const fs = require('fs');
 const path = require('path');
-const { execFileSync } = require('child_process');
 const { JSDOM } = require('jsdom');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -23,11 +22,13 @@ const SHELL = path.join(ROOT, 'dist', 'site', 'index.html');
 const NM = path.join(ROOT, 'node_modules');
 const read = (p) => fs.readFileSync(p, 'utf8');
 
-// dist/site and dist/data are gitignored — generate when absent. --pages
-// regenerates dist/data itself, so one command covers both trees and the
-// hashed names pinned in the shell always agree with the tiers beside it.
+// dist/site and dist/data are gitignored and built by the `npm test` command
+// itself before the runner starts (one `--pages` build covers both trees, so
+// the hashed names pinned in the shell always agree with the tiers beside
+// it). This file must never build them: test files run concurrently, and a
+// sibling rewriting dist/data mid-run breaks every reader of the tree.
 if (!fs.existsSync(SHELL) || !fs.existsSync(path.join(DATA, 'meta.json'))) {
-  execFileSync('python3', [path.join(ROOT, 'build.py'), '--pages'], { cwd: ROOT, stdio: 'ignore' });
+  throw new Error('dist/site or dist/data missing — run `python3 build.py --pages` first (npm test does this automatically)');
 }
 
 const meta = JSON.parse(read(path.join(DATA, 'meta.json')));
