@@ -1,21 +1,28 @@
 // ═══════════════════════════════════════════════════════════════════════════
-//  pr-boot.js — async data loader for the multi-file Pages shell
+//  pr-boot.js — async data loader for the Pages shell and the artifact
 //
-//  Loaded ONLY by the Pages shell, after data/core-<hash>.js (the module-scope
-//  __PR constants) and before the UI scripts. Everywhere else — dev
-//  index.html, the single-file artifact, jsdom, the Node-VM consumers — the
-//  corpus is already present synchronously and this file must change nothing:
-//  the capability check below is the seam that keeps those modes untouched.
+//  Loaded by the multi-file Pages shell AND the single-file artifact, after
+//  the core constants (data/core-<hash>.js as a tag, or its body inlined) and
+//  before the UI scripts. Everywhere else — dev index.html, jsdom, the
+//  Node-VM consumers — the corpus is already present synchronously and this
+//  file must change nothing: the capability check below is the seam that
+//  keeps those modes untouched.
 //
-//  Async contract (the shell injects window.__PR_DATA = { index, corpus },
-//  URLs relative to the page; core.js is a plain script tag the shell emits):
-//    stage 1  fetch index-<h>.json → skinny id→person map on __PR.seedPeople
-//             (only the fields Browse/search/facets read), corpusVersion 0→1,
-//             CustomEvent 'pr:index' on window.
-//    stage 2  fetch corpus-<h>.json (the full post-pipeline __PR snapshot),
-//             JSON.parse off the critical path, Object.assign onto __PR,
-//             corpusVersion 1→2, dataReady = true, the localStorage contract
-//             mirrored from the data.js tail, 'pr:ready', resolve __PR.ready.
+//  Async contract — window.__PR_DATA names ONE source for the tiers:
+//    fetched   { index: url, corpus: url }   (Pages shell; page-relative)
+//    embedded  { embeddedIndex: elementId|null, embeddedCorpus: elementId }
+//              (single-file artifact; ids of inert <script type=
+//              "application/json"> blocks — no fetch() ever runs, so
+//              file:// and srcdoc keep working)
+//  Either way the same two stages install through the same functions:
+//    stage 1  index records → skinny id→person map on __PR.seedPeople (only
+//             the fields Browse/search/facets read), corpusVersion++,
+//             CustomEvent 'pr:index' on window. Skipped when the source
+//             carries no index (embeddedIndex absent/null).
+//    stage 2  the full post-pipeline __PR snapshot, JSON.parsed off the
+//             critical path, Object.assign onto __PR, corpusVersion++,
+//             dataReady = true, the localStorage contract mirrored from the
+//             data.js tail, 'pr:ready', resolve __PR.ready.
 //  Failures reject __PR.ready and paint the boot overlay — never silent.
 //
 //  IIFE-wrapped for the same reason as data.js: state.jsx declares
@@ -154,9 +161,11 @@ const fetchTier = (url, as) => fetch(url).then((res) => {
 });
 
 // Parse the 20+ MB snapshot off the critical path — the skinny Browse rows
-// already on screen must not jank behind it.
+// already on screen must not jank behind it. Accepts the text or a thunk for
+// it: the embedded source defers even the textContent read (materializing a
+// 20+ MB string) into the idle slot.
 const parseOnIdle = (text) => new Promise((res, rej) => {
-  const run = () => { try { res(JSON.parse(text)); } catch (e) { rej(e); } };
+  const run = () => { try { res(JSON.parse(typeof text === 'function' ? text() : text)); } catch (e) { rej(e); } };
   if (typeof window.requestIdleCallback === 'function') window.requestIdleCallback(run, { timeout: 2000 });
   else setTimeout(run, 0);
 });
@@ -211,33 +220,65 @@ const persist = (snapshot) => {
   } catch (e) { console.warn('pantheon seed persist failed', e); }
 };
 
-// Both fetches start now and stream while the shell's UI scripts parse;
-// installs stay ordered (index → corpus) so corpusVersion and the events are
-// monotonic. Persist runs BEFORE 'pr:ready' so a listener that re-runs
+// ─── Install stages — ONE path for both sources ─────────────────────────────
+// Everything behavioral (corpusVersion, the events, dataReady, the persist
+// tail, ready resolution) lives here so the fetched and embedded sources
+// cannot drift. Persist runs BEFORE 'pr:ready' so a listener that re-runs
 // loadPeople sees localStorage in its settled state, same as the sync boot.
-const indexFetch = fetchTier(TIERS.index, 'json');
-const corpusFetch = fetchTier(TIERS.corpus, 'text');
-// Surfaced via the chain below; an index failure must not strand this
-// rejection as a second unhandled error.
-corpusFetch.catch(() => {});
+const installIndex = (records) => {
+  PR.seedPeople = adaptIndex(records);
+  PR.corpusVersion++;
+  dispatch('pr:index');
+};
+const installCorpus = (snapshot) => {
+  // {seedPeople, divinity, traditionMix, inheritedPowers, items, seedAtlas}
+  Object.assign(PR, snapshot);
+  PR.corpusVersion++;
+  PR.dataReady = true;
+  persist(snapshot);
+  dispatch('pr:ready');
+  resolveReady(PR);
+};
 
-indexFetch
-  .then((records) => {
-    PR.seedPeople = adaptIndex(records);
-    PR.corpusVersion++;
-    dispatch('pr:index');
-    return corpusFetch;
-  })
-  .then(parseOnIdle)
-  .then((snapshot) => {
-    // {seedPeople, divinity, traditionMix, inheritedPowers, items, seedAtlas}
-    Object.assign(PR, snapshot);
-    PR.corpusVersion++;
-    PR.dataReady = true;
-    persist(snapshot);
-    dispatch('pr:ready');
-    resolveReady(PR);
-  })
-  .catch(fail);
+if (TIERS.embeddedCorpus) {
+  // Embedded source (single-file artifact): the tiers sit in inert
+  // <script type="application/json"> blocks the JS parser never tokenized.
+  // The blocks follow this script in the document, and the UI scripts must
+  // take the skeleton boot (main.jsx keys it off seedPeople's absence), so
+  // stage 1 waits for the document to finish parsing — never a microtask
+  // that would land between inline scripts.
+  const whenParsed = new Promise((res) => {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => res(), { once: true });
+    } else res();
+  });
+  const readBlock = (id) => {
+    const el = document.getElementById(id);
+    if (!el) throw new Error('embedded data block #' + id + ' is missing');
+    return el.textContent;
+  };
+  whenParsed
+    .then(() => {
+      if (TIERS.embeddedIndex) installIndex(JSON.parse(readBlock(TIERS.embeddedIndex)));
+      return parseOnIdle(() => readBlock(TIERS.embeddedCorpus));
+    })
+    .then(installCorpus)
+    .catch(fail);
+} else {
+  // Fetched source (Pages shell): both fetches start now and stream while
+  // the shell's UI scripts parse; installs stay ordered (index → corpus) so
+  // corpusVersion and the events are monotonic.
+  const indexFetch = fetchTier(TIERS.index, 'json');
+  const corpusFetch = fetchTier(TIERS.corpus, 'text');
+  // Surfaced via the chain below; an index failure must not strand this
+  // rejection as a second unhandled error.
+  corpusFetch.catch(() => {});
+
+  indexFetch
+    .then((records) => { installIndex(records); return corpusFetch; })
+    .then(parseOnIdle)
+    .then(installCorpus)
+    .catch(fail);
+}
 
 })();

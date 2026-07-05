@@ -38,11 +38,25 @@ inlines `app/data.js` and `app/styles.css`, and writes
 ## Deployment (GitHub Pages)
 
 `.github/workflows/deploy-pages.yml` runs the test suite, verifies byte-exact
-regeneration, rebuilds the artifact, and deploys it through GitHub's native Pages
+regeneration, rebuilds both distributions (`python3 build.py` and
+`python3 build.py --pages`), and deploys them through GitHub's native Pages
 pipeline (`actions/deploy-pages`) on every push to `main` (or on demand via the
-**Actions** tab → *Run workflow*), serving the production build (production
-React, SRI-pinned CDN libraries) at
-`https://<owner>.github.io/PantheonRepository/`.
+**Actions** tab → *Run workflow*) at
+`https://<owner>.github.io/PantheonRepository/`. The deployed site serves:
+
+- **`/`** — the multi-file shell (production React, SRI-pinned CDN libraries):
+  a small page that mounts immediately and fetches the corpus asynchronously
+  from the content-hashed data files under **`/data/`**. If those files are
+  missing or fail to load, the shell fails loudly in the boot overlay rather
+  than rendering an empty registry.
+- **`/artifact.html`** — the single-file artifact, unchanged from
+  `dist/pantheon-registry.html`, kept as a first-class downloadable secondary
+  distribution (works from `file://`, srcdoc iframes, or any static host).
+
+One version-skew caveat: Pages caches with `max-age=600`, and a stale shell
+references hashed data files from the previous deploy, so a mid-rollout visitor
+can hard-fail until their cache expires (the boot overlay shows the error
+loudly).
 
 One-time setup: enable Pages under **Settings → Pages → Build and deployment →
 Source: GitHub Actions**, and if the `github-pages` environment has a

@@ -5,6 +5,12 @@
 // runs in another against the real dist/data tiers behind a fetch stub, and
 // every figure/fraction must agree — this is the permanent drift net the
 // load-time plan requires for the dual implementations.
+//
+// The embedded source (the single-file artifact's inert application/json
+// blocks) shares the fetched path's install functions, so its coverage below
+// asserts the source-specific seams only: element reads instead of fetches,
+// the document-parsed gate, the optional index stage, and the same loud
+// failure semantics on malformed or missing blocks.
 const { test } = require('node:test');
 const assert = require('node:assert');
 const fs = require('fs');
@@ -63,17 +69,25 @@ const refPR = loadReference();
 
 // ── pr-boot VM: core.js then pr-boot.js, tiers served by a fetch stub ───────
 // opts: preload (localStorage k→v), quotaBytes (setItem throws above this),
-// deny (RegExp of URLs to 404).
+// deny (RegExp of URLs to 404), embedded ({ indexText|null, corpusText|null,
+// readyState } — boot from in-document JSON blocks; a null text drops that
+// block AND its id from __PR_DATA, readyState 'loading' arms the
+// DOMContentLoaded gate, released via the returned fireDCL()).
 function bootVM(opts = {}) {
   const store = new Map(Object.entries(opts.preload || {}));
   const logs = { warn: [], error: [] };
   const events = [];
   const snapshots = {};
   const fetched = [];
+  const dclListeners = [];
   const els = {
     'boot-step': { textContent: 'loading…', style: {} },
     'boot-err': { textContent: '', style: { display: 'none' } },
   };
+  if (opts.embedded) {
+    if (opts.embedded.indexText != null) els['pr-data-index'] = { textContent: opts.embedded.indexText };
+    if (opts.embedded.corpusText != null) els['pr-data-corpus'] = { textContent: opts.embedded.corpusText };
+  }
   const cap = opts.quotaBytes || Infinity;
   const ctx = {
     localStorage: {
@@ -91,7 +105,12 @@ function bootVM(opts = {}) {
     },
     CustomEvent: class { constructor(t, o) { Object.assign(this, { type: t }, o || {}); } },
     setTimeout,
-    document: { getElementById: (id) => els[id] || null },
+    document: {
+      getElementById: (id) => els[id] || null,
+      // Absent readyState reads as parsed — pr-boot only waits on 'loading'.
+      readyState: (opts.embedded && opts.embedded.readyState) || undefined,
+      addEventListener: (type, fn) => { if (type === 'DOMContentLoaded') dclListeners.push(fn); },
+    },
     fetch: (url) => {
       fetched.push(String(url));
       return new Promise((resolve) => {
@@ -105,7 +124,12 @@ function bootVM(opts = {}) {
     },
   };
   ctx.window = {
-    __PR_DATA: { index: `data/${meta.files.index}`, corpus: `data/${meta.files.corpus}` },
+    // Embedded __PR_DATA always names the corpus block (a null corpusText
+    // keeps the id but drops the element — the missing-block failure path);
+    // a null indexText drops the id too, exercising the skipped stage 1.
+    __PR_DATA: opts.embedded
+      ? { embeddedIndex: opts.embedded.indexText != null ? 'pr-data-index' : null, embeddedCorpus: 'pr-data-corpus' }
+      : { index: `data/${meta.files.index}`, corpus: `data/${meta.files.corpus}` },
     requestIdleCallback: (cb) => setTimeout(cb, 0),
     dispatchEvent: (e) => {
       const PRc = ctx.window.__PR || {};
@@ -126,6 +150,7 @@ function bootVM(opts = {}) {
   const PR = ctx.window.__PR;
   return {
     ctx, PR, store, logs, events, els, snapshots, fetched,
+    fireDCL: () => { for (const fn of dclListeners.splice(0)) fn(); },
     // Captured synchronously, before any fetch can have resolved: the UI
     // scripts that run right after pr-boot must already see this surface.
     syncShape: {
@@ -353,4 +378,113 @@ test('a corpus fetch failure after a good index rejects ready but keeps the skin
   assert.strictEqual(Object.keys(b.PR.seedPeople).length, meta.figures, 'the skinny index must survive the failure');
   assert.strictEqual(b.els['boot-step'].textContent, 'failed');
   assert.match(b.els['boot-err'].textContent, /HTTP 404/);
+});
+
+// ── Embedded source: the single-file artifact's inert JSON blocks ──────────
+// One shared embedded boot over the REAL tier payloads, preloaded like the
+// fetched `main` — the install functions are shared, so what these tests pin
+// is the source seam: element reads instead of fetches, and byte-identical
+// outcomes from either source.
+
+const INDEX_TEXT = fs.readFileSync(path.join(OUT, meta.files.index), 'utf8');
+const CORPUS_TEXT = fs.readFileSync(path.join(OUT, meta.files.corpus), 'utf8');
+const emb = bootVM({
+  embedded: { indexText: INDEX_TEXT, corpusText: CORPUS_TEXT },
+  preload: Object.fromEntries([...STALE.map((k) => [k, 'stale']), ['pantheon_atlas_v3', '{"old":1}']]),
+});
+const embDone = withTimeout(emb.PR.ready, 120000, 'embedded boot');
+
+// Cheap synthetic tiers for the flow-shape tests below — no need to re-parse
+// 20+ MB per boot to prove ordering and failure semantics.
+const TINY_INDEX = [{ i: 'probe', n: 'Probe', a: [], t: 'test', y: 'deity', e: '', o: '', d: null }];
+const TINY_CORPUS = {
+  seedPeople: { probe: { id: 'probe', name: { primary: 'Probe', alt: [] }, tradition: 'test' } },
+  divinity: {}, traditionMix: {}, inheritedPowers: {}, items: {}, seedAtlas: { sites: [] },
+};
+
+test('embedded: the async __PR surface is identical to the fetched source, and nothing ever fetches', async () => {
+  assert.deepStrictEqual(emb.syncShape, main.syncShape, 'embedded and fetched sync surfaces differ');
+  await embDone;
+  assert.deepStrictEqual(emb.fetched, [], 'the embedded source must never call fetch');
+});
+
+test('embedded: two-stage install — pr:index then pr:ready, skinny map covers the index, corpus lands whole', async () => {
+  const resolved = await embDone;
+  assert.strictEqual(resolved, emb.PR, 'ready must resolve with __PR');
+  assert.deepStrictEqual(rt(emb.events), [
+    { type: 'pr:index', corpusVersion: 1, dataReady: false },
+    { type: 'pr:ready', corpusVersion: 2, dataReady: true },
+  ]);
+  assert.strictEqual(Object.keys(emb.snapshots.skinny).length, meta.figures, 'skinny map must cover the whole index');
+  assert.deepStrictEqual(rt(emb.PR.seedPeople), corpusHost.seedPeople, 'seedPeople != corpus.json seedPeople');
+  for (const k of ['divinity', 'traditionMix', 'inheritedPowers', 'items', 'seedAtlas']) {
+    assert.ok(emb.PR[k] && typeof emb.PR[k] === 'object', `__PR.${k} missing after pr:ready`);
+  }
+});
+
+test('embedded: the shared persist tail runs before pr:ready — purge, atlas overwrite, corpus seed', async () => {
+  await embDone;
+  for (const k of STALE) assert.ok(!emb.store.has(k), `stale key ${k} survived`);
+  assert.deepStrictEqual(JSON.parse(emb.store.get(emb.PR.ATLAS_KEY)), corpusHost.seedAtlas, 'ATLAS_KEY != snapshot seedAtlas');
+  assert.strictEqual(Object.keys(JSON.parse(emb.store.get(emb.PR.PEOPLE_KEY))).length, meta.figures, 'PEOPLE_KEY figure count');
+  assert.strictEqual(emb.snapshots.peopleKeySeededAtReady, true, 'persist must run before pr:ready fires');
+  assert.deepStrictEqual(emb.logs.warn, [], `unexpected persist warnings: ${emb.logs.warn}`);
+});
+
+test('embedded: a null embeddedIndex skips stage 1 — no pr:index, ready lands straight on the corpus', async () => {
+  const b = bootVM({ embedded: { indexText: null, corpusText: JSON.stringify(TINY_CORPUS) } });
+  await withTimeout(b.PR.ready, 30000, 'no-index embedded boot');
+  assert.deepStrictEqual(rt(b.events), [{ type: 'pr:ready', corpusVersion: 1, dataReady: true }]);
+  assert.deepStrictEqual(rt(b.PR.seedPeople), TINY_CORPUS.seedPeople);
+  assert.deepStrictEqual(b.fetched, []);
+});
+
+test('embedded: nothing installs while the document is parsing; DOMContentLoaded releases both stages', async () => {
+  const b = bootVM({
+    embedded: { indexText: JSON.stringify(TINY_INDEX), corpusText: JSON.stringify(TINY_CORPUS), readyState: 'loading' },
+  });
+  // The blocks follow pr-boot in the artifact — an install before the parser
+  // finishes would read a half-built document and flip main.jsx to the sync
+  // boot. Give any wrongly-scheduled microtask/timeout room to fire first.
+  await new Promise((r) => setTimeout(r, 30));
+  assert.deepStrictEqual(b.events, [], 'no stage may install before DOMContentLoaded');
+  assert.strictEqual(b.PR.corpusVersion, 0);
+  b.fireDCL();
+  await withTimeout(b.PR.ready, 30000, 'gated embedded boot');
+  assert.deepStrictEqual(rt(b.events).map((e) => e.type), ['pr:index', 'pr:ready']);
+  assert.strictEqual(b.PR.dataReady, true);
+});
+
+test('embedded: malformed corpus JSON rejects ready and paints the overlay, keeping the skinny stage', async () => {
+  const b = bootVM({ embedded: { indexText: JSON.stringify(TINY_INDEX), corpusText: '{"seedPeople": tru' } });
+  const err = await withTimeout(
+    b.PR.ready.then(() => { throw new Error('ready must reject'); }, (e) => e),
+    30000, 'malformed-corpus embedded boot');
+  assert.match(String(err), /JSON|Unexpected/i, 'rejection must carry the parse failure');
+  assert.deepStrictEqual(rt(b.events), [{ type: 'pr:index', corpusVersion: 1, dataReady: false }]);
+  assert.strictEqual(b.PR.dataReady, false, 'dataReady must not flip on failure');
+  assert.deepStrictEqual(rt(b.PR.seedPeople.probe.name), { primary: 'Probe', alt: [] }, 'the skinny index must survive the failure');
+  assert.strictEqual(b.els['boot-step'].textContent, 'failed');
+  assert.strictEqual(b.els['boot-err'].style.display, 'block');
+  assert.ok(b.logs.error.some((m) => m.includes('[pr-boot]')), 'failure must console.error');
+});
+
+test('embedded: a missing corpus block rejects ready naming the element — never silent', async () => {
+  const b = bootVM({ embedded: { indexText: JSON.stringify(TINY_INDEX), corpusText: null } });
+  const err = await withTimeout(
+    b.PR.ready.then(() => { throw new Error('ready must reject'); }, (e) => e),
+    30000, 'missing-corpus embedded boot');
+  assert.match(String(err && err.message), /pr-data-corpus/, 'the rejection must name the missing block');
+  assert.strictEqual(b.els['boot-step'].textContent, 'failed');
+  assert.match(b.els['boot-err'].textContent, /pr-data-corpus/);
+});
+
+test('embedded: malformed index JSON rejects ready before any event fires', async () => {
+  const b = bootVM({ embedded: { indexText: '[{"i": nope', corpusText: JSON.stringify(TINY_CORPUS) } });
+  const err = await withTimeout(
+    b.PR.ready.then(() => { throw new Error('ready must reject'); }, (e) => e),
+    30000, 'malformed-index embedded boot');
+  assert.match(String(err), /JSON|Unexpected/i);
+  assert.deepStrictEqual(b.events, [], 'no events may fire when stage 1 fails');
+  assert.strictEqual(b.els['boot-step'].textContent, 'failed');
 });
