@@ -132,6 +132,10 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
       itemBucketLabel(a[0]).localeCompare(itemBucketLabel(b[0])));
   }, [visible]);
 
+  // First screenful now, the rest in rAF batches — Prev/Next order and the
+  // count labels stay on the FULL groups; only what mounts is windowed.
+  const revealedGroups = window.usePrefixReveal(groups, 150, 600);
+
   // Report the flattened on-screen order (grouped + filtered) so the item
   // detail's Prev/Next walks the same sequence the index displays, not the
   // raw registry sort.
@@ -177,7 +181,7 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
       </div>
 
       <div className="items-grid">
-        {groups.map(([kind, list]) => (
+        {revealedGroups.map(([kind, list]) => (
           <div className="items-group" key={kind}>
             <h3 className="items-group-head">
               {itemBucketLabel(kind)} <span className="items-group-count">{list.length}</span>

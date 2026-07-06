@@ -771,6 +771,18 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
   // Position memory survives graph rebuilds so dragging the year slider
   // doesn't re-explode the layout every frame. See useForceSim above.
   const positionsRef = __gRef(__graphPosCache);
+  // Links mount one frame after nodes: the first commit paints the node
+  // dots (~half the SVG elements) and the edge lines follow on the next
+  // frame — the sim's tick handler no-ops on refs that aren't mounted yet.
+  // jsdom (no real frames, tests count lines synchronously) renders both.
+  const [linksMounted, setLinksMounted] = __gState(
+    typeof window.requestAnimationFrame !== 'function' ||
+    /jsdom/i.test((window.navigator && window.navigator.userAgent) || ''));
+  __gEff(() => {
+    if (linksMounted) return;
+    const raf = window.requestAnimationFrame(() => setLinksMounted(true));
+    return () => window.cancelAnimationFrame(raf);
+  }, [linksMounted]);
   // Seed coordinates during render so the first committed frame of every
   // rebuild already carries cached/seeded positions (see seedPositions).
   __gMemo(() => { seedPositions(graph, size.w, size.h, positionsRef); }, [graph, size.w, size.h]);
@@ -1055,7 +1067,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
             onClick={(e) => { if (e.target === svgRef.current) setFocusId(null); }}
           >
             <g ref={gRef}>
-              {graph.links.map((l, i) => {
+              {linksMounted && graph.links.map((l, i) => {
                 const sId = typeof l.source === 'string' ? l.source : l.source.id;
                 const tId = typeof l.target === 'string' ? l.target : l.target.id;
                 const sx = typeof l.source === 'object' ? l.source.x : 0;
