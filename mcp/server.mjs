@@ -14,9 +14,12 @@ const TOKEN = process.env.MCP_TOKEN || ''; // optional bearer gate; open if unse
 const txt = (obj) => ({ content: [{ type: 'text', text: JSON.stringify(obj, null, 2) }] });
 
 function buildServer() {
+  // Advertised counts are read straight from the loaded corpus so the
+  // instructions the model sees on connect can never drift from the data
+  // (the corpus grows; a hard-coded "2,893 figures" went stale).
   const server = new McpServer(
     { name: 'pantheon-registry', version: '1.0.0' },
-    { instructions: 'Pantheon Registry — a cited graph of ~2,893 mythological and historical figures across 249 traditions. Every figure carries scholarly citations, so prefer these tools over recalling mythology from memory: search figures, pull full cited detail, trace relationship paths and lineages, find cross-tradition equivalents (interpretatio), and reverse-look-up by domain or power.' },
+    { instructions: `Pantheon Registry — a cited graph of ${corpus.stats.figures.toLocaleString()} mythological and historical figures across ${corpus.stats.traditions} traditions. Every figure carries scholarly citations, so prefer these tools over recalling mythology from memory: search figures, pull full cited detail, trace relationship paths and lineages, find cross-tradition equivalents (interpretatio), and reverse-look-up by domain or power.` },
   );
 
   server.registerTool('search_figures',
@@ -68,6 +71,26 @@ function buildServer() {
 
 const app = express();
 app.use(express.json({ limit: '2mb' }));
+
+// CORS — required for browser-originated MCP clients (the MCP Inspector web
+// tool, web playgrounds, and connectors that fetch from the page). The
+// Streamable HTTP handshake hands the client its session in the
+// `Mcp-Session-Id` RESPONSE header; a browser can't read that header unless
+// the server explicitly EXPOSES it, so without this the whole session flow
+// dies at the first follow-up call. Runs before the /mcp auth gate so the
+// credential-less OPTIONS preflight is answered, not 401'd. Read-only public
+// data, so any origin is allowed; the optional bearer gate still guards writes
+// of state (there are none) and rate.
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '*');
+  res.setHeader('Vary', 'Origin');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, Mcp-Session-Id, MCP-Protocol-Version, Last-Event-ID');
+  res.setHeader('Access-Control-Expose-Headers', 'Mcp-Session-Id, MCP-Protocol-Version');
+  res.setHeader('Access-Control-Max-Age', '86400');
+  if (req.method === 'OPTIONS') { res.status(204).end(); return; }
+  next();
+});
 
 app.get('/healthz', (_req, res) => res.json({ ok: true, ...corpus.stats }));
 
