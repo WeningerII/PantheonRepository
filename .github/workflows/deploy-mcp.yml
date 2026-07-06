@@ -1,0 +1,48 @@
+name: Redeploy MCP connector
+
+# The MCP server bakes app/data.js into its Docker image at build time (one
+# source of truth, no runtime data fetch), so the live connector only reflects
+# a corpus change after the image is REBUILT. Render's free tier spins down when
+# idle and does not reliably rebuild on its own, which is how the deployed corpus
+# drifted ~700 figures behind main ("stale numbers through the MCP").
+#
+# This fires a Render Deploy Hook whenever the corpus or the server changes on
+# main, so the connector refreshes automatically. It is a no-op until the hook
+# is configured, so it never shows a red check:
+#   1. Render dashboard → pantheon-registry-mcp → Settings → Deploy Hook → copy URL
+#   2. GitHub repo → Settings → Secrets and variables → Actions → new secret
+#      RENDER_DEPLOY_HOOK_URL = <that URL>
+# (A one-time manual "Deploy latest commit" in Render clears the current drift.)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/data.js'
+      - 'mcp/**'
+      - 'render.yaml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-mcp
+  cancel-in-progress: true
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Trigger Render deploy
+        env:
+          HOOK: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "RENDER_DEPLOY_HOOK_URL is not set — skipping (configure it to enable auto-redeploy)."
+            exit 0
+          fi
+          echo "Corpus or MCP server changed on main — triggering a Render redeploy…"
+          code=$(curl -fsS -o /dev/null -w '%{http_code}' -X POST "$HOOK")
+          echo "Render deploy hook responded HTTP $code"

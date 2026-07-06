@@ -44,6 +44,24 @@ curl localhost:3939/healthz
 > The blueprint defaults to the **free** plan, which spins down when idle (first
 > request after idle is slow). Switch the plan to **starter** to keep it warm.
 
+### Keeping the corpus fresh
+
+`app/data.js` is baked into the image at build time, so the connector only
+reflects a corpus change after the image is **rebuilt**. The corpus grows, and
+the free plan does not reliably rebuild on its own — so the live server can drift
+behind `main` (stale figure/tradition counts). Two ways to stay current:
+
+- **One-time fix for current drift:** Render dashboard → *pantheon-registry-mcp*
+  → **Manual Deploy → Deploy latest commit**.
+- **Automatic henceforth:** copy the service's **Deploy Hook** URL (Render →
+  Settings → Deploy Hook) into a repo secret `RENDER_DEPLOY_HOOK_URL`. The
+  `.github/workflows/deploy-mcp.yml` workflow then redeploys the connector on
+  every push to `main` that touches `app/data.js` or `mcp/`. (Inert until the
+  secret is set.)
+
+The counts the server advertises (its `instructions` and `/healthz`) are read
+live from the loaded corpus, so once the image is current, so are the numbers.
+
 ## Add as a Claude connector
 
 In claude.ai → **Settings → Connectors → Add custom connector**, paste the
