@@ -3044,11 +3044,22 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 .items-grid {
   flex: 1; min-height: 0; overflow-y: auto;
   padding: 22px 40px 64px;
-  column-width: 320px; column-gap: 36px;
+  /* Grid, NOT css multicolumn: column-width balancing must lay out the
+     entire subtree before it can paint, which froze the main thread in a
+     single ~16 s Layout task over the 12-18k nodes these registry views
+     mount (items/powers/domains all share this container; measured on the
+     deployed shell). Grid places groups row-major with no whole-content
+     balancing pass. */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 26px 36px;
+  align-items: start; align-content: start;
 }
 .items-group {
-  break-inside: avoid;
-  margin-bottom: 26px;
+  /* Off-screen groups skip layout entirely; the intrinsic-size estimate
+     keeps the scrollbar stable until they scroll into view. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 420px;
 }
 .items-group-head {
   margin: 0 0 8px;
@@ -3085,6 +3096,7 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 .item-badge-custody { color: var(--accent); background: var(--accent-bg); }
 .item-badge-multi { color: var(--ink-2); background: var(--surface-2); }
 .items-empty {
+  grid-column: 1 / -1;
   font: italic 400 14px/1.5 var(--font-serif);
   color: var(--mute);
 }

@@ -177,6 +177,12 @@ const linkStrength = l => l.family === 'Cross-tradition' ? 0.35 : 0.55;
 // React-driven re-renders still happen for state changes (hover, focus,
 // path mode) — those read the mutated `n.x` / `n.y` at render time, so
 // the imperative path and the React path see the same numbers.
+// Position cache at module scope: navigating away unmounts Graph, and a
+// per-mount cache made every return visit re-run the force simulation cold
+// from alpha 1. Node ids are stable across corpus swaps, so the map simply
+// keeps growing with the last-known coords per figure.
+const __graphPosCache = new Map();
+
 // Seed positions BEFORE the simulation (or React) sees the nodes. Mutates
 // graph.nodes in place — fine, the nodes array is created fresh per
 // buildGraph call. Called from a render-time useMemo, NOT a passive effect:
@@ -188,14 +194,20 @@ function seedPositions(graph, width, height, positionsRef) {
   const cx = width / 2, cy = height / 2;
   const cache = positionsRef.current;
 
-  // Phase 1: restore cached positions for retained nodes
+  // Phase 1: restore cached positions for retained nodes. The restored
+  // fraction is recorded on the graph so the simulation can warm-start:
+  // a remount with converged positions needs a brief settle, not the full
+  // alpha-1 run (~150 ticks — seconds of >50 ms frames on slow hardware).
+  let restored = 0;
   for (const n of graph.nodes) {
     const prev = cache.get(n.id);
     if (prev && Number.isFinite(prev.x) && Number.isFinite(prev.y)) {
       n.x = prev.x; n.y = prev.y;
       n.vx = prev.vx || 0; n.vy = prev.vy || 0;
+      restored++;
     }
   }
+  graph.warmFraction = restored / graph.nodes.length;
 
   // Phase 2: place newcomers near a connected neighbor that already has
   // a cached position. Fall back to a small ring near center.
@@ -289,6 +301,12 @@ function useForceSim(graph, width, height, positionsRef, nodeElRefs, linkElRefs)
         .force('collide', d3.forceCollide(d => 9 + Math.sqrt(d.degree || 1)))
         .alphaDecay(0.045)
         .on('tick', onTick);
+      if ((graph.warmFraction || 0) > 0.9) {
+        // Remount over converged positions: a short settle instead of the
+        // full run. ~24 ticks at this alpha/decay vs ~150 from alpha 1 —
+        // the difference between a blink and seconds of dropped frames.
+        simRef.current.alpha(0.1).alphaDecay(0.09);
+      }
     } else {
       // Update existing instance with the new node/link set. Reusing the
       // simulation keeps cached momentum + tick subscriptions intact.
@@ -752,7 +770,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
   );
   // Position memory survives graph rebuilds so dragging the year slider
   // doesn't re-explode the layout every frame. See useForceSim above.
-  const positionsRef = __gRef(new Map());
+  const positionsRef = __gRef(__graphPosCache);
   // Seed coordinates during render so the first committed frame of every
   // rebuild already carries cached/seeded positions (see seedPositions).
   __gMemo(() => { seedPositions(graph, size.w, size.h, positionsRef); }, [graph, size.w, size.h]);

@@ -207,10 +207,15 @@ function Browse({ filters, selection, onOpen }) {
   const coverListRef = __bRef(filtered);
   __bEff(() => { coverListRef.current = filtered; });
   const coverIdx = coverListRef.current === filtered ? Math.max(cursorIdx, selIdx) : -1;
-  const revealCount = Math.min(filtered.length, Math.max(
-    reveal.list === filtered ? reveal.count : (REVEAL_ALL ? Infinity : REVEAL_FIRST),
-    coverIdx + 1
-  ));
+  const base = reveal.list === filtered ? reveal.count : (REVEAL_ALL ? Infinity : REVEAL_FIRST);
+  // Synchronous coverage only when the cursor/selected row sits within one
+  // batch of the window (j/k stepping at the frontier). A DISTANT target —
+  // a deep link or cross-view jump to a row thousands deep — must not force
+  // a single commit that large (measured multi-second under throttle); the
+  // rAF loop below reaches it within a few frames and the highlight/scroll
+  // land when the row mounts.
+  const syncCover = coverIdx + 1 <= base + REVEAL_BATCH ? coverIdx + 1 : 0;
+  const revealCount = Math.min(filtered.length, Math.max(base, syncCover));
 
   __bEff(() => {
     if (REVEAL_ALL || revealCount >= filtered.length) return;
