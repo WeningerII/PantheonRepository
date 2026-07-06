@@ -229,6 +229,12 @@ button:focus-visible,
   min-height: 0;
 }
 
+/* View panes are layout-transparent wrappers (the deferred-unmount stage
+   in Shell.jsx toggles them); a leaving pane drops out of flow entirely so
+   the incoming view lays out alone. */
+.view-pane { display: contents; }
+.view-pane.pane-leaving { display: none; }
+
 .shell-main {
   display: flex; flex-direction: column;
   min-height: 0;

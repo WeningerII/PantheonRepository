@@ -217,7 +217,42 @@ function Shell() {
   const filteredRef = __sRef(filters.filtered);
   filteredRef.current = filters.filtered;
 
-  const [view, setView] = __sState('browse');
+  const [view, __setViewRaw] = __sState('browse');
+  // Deferred unmount: tearing down the outgoing view's subtree (70k nodes
+  // for the Browse table, 12-18k for a registry index) costs 50-150 ms of
+  // removeChild work that used to land INSIDE the switch's commit. The
+  // outgoing view now stays mounted two frames behind a display:none pane,
+  // then unmounts in an idle callback — off the switch's critical path.
+  // jsdom (no real frames; the suite asserts the old view is gone right
+  // after a switch) unmounts synchronously, exactly as before.
+  const [leavingView, setLeavingView] = __sState(null);
+  const viewRef = __sRef('browse');
+  const leavingCancelRef = __sRef(null);
+  const DEFER_UNMOUNT =
+    typeof window.requestAnimationFrame === 'function' &&
+    !/jsdom/i.test((window.navigator && window.navigator.userAgent) || '');
+  const setView = __sCb((next) => {
+    const prev = viewRef.current;
+    if (prev === next) return;
+    viewRef.current = next;
+    if (DEFER_UNMOUNT) {
+      if (leavingCancelRef.current) leavingCancelRef.current();
+      setLeavingView(prev);
+      let r1, r2, cancelled = false;
+      r1 = window.requestAnimationFrame(() => {
+        r2 = window.requestAnimationFrame(() => {
+          const ric = window.requestIdleCallback || ((cb) => setTimeout(cb, 50));
+          ric(() => { if (!cancelled) setLeavingView(null); });
+        });
+      });
+      leavingCancelRef.current = () => {
+        cancelled = true;
+        window.cancelAnimationFrame(r1);
+        if (r2) window.cancelAnimationFrame(r2);
+      };
+    }
+    __setViewRaw(next);
+  }, []);
   const [cmdkOpen, setCmdkOpen] = __sState(false);
   const [graphFocusId, setGraphFocusId] = __sState(null);
   const [atlasFocus, setAtlasFocus] = __sState(null);   // tradition name
@@ -710,74 +745,86 @@ function Shell() {
           <Rail filters={filters} view={view} hasDetail={!!(selectedEntry || selectedItemId || selectedPowerId || selectedDomainId)} />
         </div>
         <div className="shell-main">
-          {view === 'browse' && (
-            <window.Browse
-              filters={filters}
-              selection={selection}
-              onOpen={(id, idx) => { selection.setSelectedId(id); if (idx != null) selection.setCursorIdx(idx); }}
-            />
+          {(view === 'browse' || leavingView === 'browse') && (
+            <div className={'view-pane' + (view === 'browse' ? '' : ' pane-leaving')}>
+              <window.Browse
+                filters={filters}
+                selection={selection}
+                onOpen={(id, idx) => { selection.setSelectedId(id); if (idx != null) selection.setCursorIdx(idx); }}
+              />
+            </div>
           )}
           {/* Everything below Browse consumes full records (relations for
               Graph, seedAtlas for Atlas, the registries for Items/Powers/
               Domains) — behind the placeholder until the async corpus lands.
               dataReady is true from the first frame on every sync boot. */}
           {view === 'graph' && !dataReady && <ViewLoading label="graph" />}
-          {view === 'graph' && dataReady && (
-            <window.Graph
-              people={filters.filtered}
-              byId={byId}
-              focusId={graphFocusId}
-              setFocusId={setGraphFocusId}
-              onOpenDetail={(id) => { setGraphFocusId(null); setView('browse'); selection.setSelectedId(id); const idx = filters.filtered.findIndex(p => p.id === id); if (idx >= 0) selection.setCursorIdx(idx); }}
-            />
+          {(view === 'graph' || leavingView === 'graph') && dataReady && (
+            <div className={'view-pane' + (view === 'graph' ? '' : ' pane-leaving')}>
+              <window.Graph
+                people={filters.filtered}
+                byId={byId}
+                focusId={graphFocusId}
+                setFocusId={setGraphFocusId}
+                onOpenDetail={(id) => { setGraphFocusId(null); setView('browse'); selection.setSelectedId(id); const idx = filters.filtered.findIndex(p => p.id === id); if (idx >= 0) selection.setCursorIdx(idx); }}
+              />
+            </div>
           )}
           {view === 'atlas' && !dataReady && <ViewLoading label="atlas" />}
-          {view === 'atlas' && dataReady && (
-            <window.Atlas
-              atlas={atlas}
-              byId={byId}
-              focused={atlasFocus}
-              setFocused={setAtlasFocus}
-              traditionFilter={filters.traditions}
-              onOpenDetail={(tradition) => {
-                // "N figures →" click: drop into Browse with the tradition selected
-                filters.setTraditions(new Set([tradition]));
-                changeView('browse');
-              }}
-            />
+          {(view === 'atlas' || leavingView === 'atlas') && dataReady && (
+            <div className={'view-pane' + (view === 'atlas' ? '' : ' pane-leaving')}>
+              <window.Atlas
+                atlas={atlas}
+                byId={byId}
+                focused={atlasFocus}
+                setFocused={setAtlasFocus}
+                traditionFilter={filters.traditions}
+                onOpenDetail={(tradition) => {
+                  // "N figures →" click: drop into Browse with the tradition selected
+                  filters.setTraditions(new Set([tradition]));
+                  changeView('browse');
+                }}
+              />
+            </div>
           )}
           {view === 'items' && !dataReady && <ViewLoading label="items" />}
-          {view === 'items' && dataReady && (
-            <window.Items
-              items={visibleItems}
-              total={itemList.length}
-              byId={byId}
-              selectedItemId={selectedItemId}
-              onOpenItem={openItem}
-              onVisibleOrder={onItemVisibleOrder}
-            />
+          {(view === 'items' || leavingView === 'items') && dataReady && (
+            <div className={'view-pane' + (view === 'items' ? '' : ' pane-leaving')}>
+              <window.Items
+                items={visibleItems}
+                total={itemList.length}
+                byId={byId}
+                selectedItemId={selectedItemId}
+                onOpenItem={openItem}
+                onVisibleOrder={onItemVisibleOrder}
+              />
+            </div>
           )}
           {view === 'powers' && !dataReady && <ViewLoading label="powers" />}
-          {view === 'powers' && dataReady && (
-            <window.PowersView
-              powers={visiblePowers}
-              total={powerList.length}
-              byId={byId}
-              selectedPowerId={selectedPowerId}
-              onOpenPower={openPower}
-              onVisibleOrder={onPowerVisibleOrder}
-            />
+          {(view === 'powers' || leavingView === 'powers') && dataReady && (
+            <div className={'view-pane' + (view === 'powers' ? '' : ' pane-leaving')}>
+              <window.PowersView
+                powers={visiblePowers}
+                total={powerList.length}
+                byId={byId}
+                selectedPowerId={selectedPowerId}
+                onOpenPower={openPower}
+                onVisibleOrder={onPowerVisibleOrder}
+              />
+            </div>
           )}
           {view === 'domains' && !dataReady && <ViewLoading label="domains" />}
-          {view === 'domains' && dataReady && (
-            <window.Domains
-              domains={visibleDomains}
-              total={domainList.length}
-              byId={byId}
-              selectedDomainId={selectedDomainId}
-              onOpenDomain={openDomain}
-              onVisibleOrder={onDomainVisibleOrder}
-            />
+          {(view === 'domains' || leavingView === 'domains') && dataReady && (
+            <div className={'view-pane' + (view === 'domains' ? '' : ' pane-leaving')}>
+              <window.Domains
+                domains={visibleDomains}
+                total={domainList.length}
+                byId={byId}
+                selectedDomainId={selectedDomainId}
+                onOpenDomain={openDomain}
+                onVisibleOrder={onDomainVisibleOrder}
+              />
+            </div>
           )}
         </div>
       </div>
