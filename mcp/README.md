@@ -9,15 +9,25 @@ never drift as it grows.
 
 ## Tools
 
+Fourteen tools, designed for LLM use: batch gets, a one-call `dossier` view,
+discoverable vocabularies, closest-match suggestions on every miss, compact
+paginated output, and canonical matching across relation-kind variants
+(`killed-by` finds `killed by`, and points at `killer-of` as see-also).
+
 | Tool | What it answers |
 |------|-----------------|
-| `search_figures` | fuzzy/faceted figure search |
-| `get_figure` | full cited detail for one figure |
-| `relate` | shortest relationship path between two figures |
-| `trace_lineage` | ancestors / descendants to a depth |
-| `cross_tradition_equivalents` | interpretatio (Zeus → Jupiter, Amun…) |
-| `who_governs` / `who_wields` | reverse lookup by domain / power |
-| `list_traditions` / `tradition_overview` | tradition index + summary |
+| `search_figures` | names, epithets (original + translation), full-text notes; filters: tradition/type/era/domain/power/icon/place/item class/relation kind/year |
+| `get_figure` | one or many ids; views `card` → `standard` → `dossier` (one-call context) → `full` (iconography, cult attestations, variants, per-claim citations) |
+| `relate` | shortest path between two figures, every step typed; optional kind restriction |
+| `neighbors` | a figure's direct connections grouped by relation kind, with kind counts |
+| `trace_lineage` | ancestors/descendants with divinity tiers + the root's divinity math |
+| `cross_tradition_equivalents` | interpretatio / equated-with / syncretism, one transitive hop |
+| `query_relations` | corpus-wide edge slices by kind ("all killed-by edges among the Aztec") |
+| `who_governs` / `who_wields` | domain + power registries; wields returns holders AND inheritors with provenance |
+| `get_item` | 2,687-item registry: custody chains, holders, lore, native names |
+| `vocab` | every controlled vocabulary with counts — relation kinds, spheres, powers, item classes, iconography, places, epithet tags, eras, traditions |
+| `aggregate` | grouped counts (by tradition/type/era/domain/power/item class/relation kind/death manner) |
+| `list_traditions` / `tradition_overview` | tradition index + profile (tiers, eras, top domains, territory) |
 
 Transport: **Streamable HTTP** at `POST /mcp`. Health check at `GET /healthz`.
 
