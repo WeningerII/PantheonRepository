@@ -56,6 +56,22 @@ function loadBasemap() {
   return __basemapPromise;
 }
 
+// Geometry survives unmount: smoothing + projecting every territory (and
+// rebuilding the basemap paths) costs ~100-200 ms per mount, and the inputs
+// — the corpus atlas object, the rail filter, the viewport size — rarely
+// change. Keyed by host-object identity via WeakMap so a corpus swap misses
+// cleanly; the per-host map is bounded to a handful of size/filter variants.
+const __atlasGeomCache = new WeakMap();
+function atlasGeomMemo(host, key, compute) {
+  let m = __atlasGeomCache.get(host);
+  if (!m) { m = new Map(); __atlasGeomCache.set(host, m); }
+  if (!m.has(key)) {
+    if (m.size > 8) m.clear();
+    m.set(key, compute());
+  }
+  return m.get(key);
+}
+
 // ── Territory geometry ───────────────────────────────────────────────────
 
 // Chaikin corner-cutting in lon/lat space. Each pass replaces every vertex
@@ -205,14 +221,16 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
   // properly curved path instead of straight chords.
   const basemapPaths = __aMemo(() => {
     if (!basemap || !projection || !window.d3) return null;
-    const path = window.d3.geoPath(projection);
-    return {
-      sphere:    path({ type: 'Sphere' }),
-      graticule: path(window.d3.geoGraticule10()),
-      land:      path(basemap.land),
-      countries: path(basemap.countries),
-    };
-  }, [basemap, projection]);
+    return atlasGeomMemo(basemap, 'paths:' + size.w + 'x' + size.h, () => {
+      const path = window.d3.geoPath(projection);
+      return {
+        sphere:    path({ type: 'Sphere' }),
+        graticule: path(window.d3.geoGraticule10()),
+        land:      path(basemap.land),
+        countries: path(basemap.countries),
+      };
+    });
+  }, [basemap, projection, size.w, size.h]);
 
   // Visible traditions (rail filter, if set, narrows the set).
   const visibleTraditions = __aMemo(() => {
@@ -240,9 +258,12 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
 
   // Smooth + wind each authored ring into a spherical GeoJSON feature once
   // per atlas/filter change — independent of projection and zoom.
+  const filterSig = (traditionFilter && traditionFilter.size)
+    ? [...traditionFilter].sort().join(',') : 'ALL';
+
   const territoryFeatures = __aMemo(() => {
-    if (!window.d3) return [];
-    return visibleTraditions.map(trad => {
+    if (!window.d3 || !atlas) return [];
+    return atlasGeomMemo(atlas, 'feat:' + filterSig, () => visibleTraditions.map(trad => {
       const t = atlas[trad];
       if (!t?.polygons?.length) return null;
       const polys = t.polygons.map((poly, i) => ({
@@ -256,25 +277,27 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
       if (!polys.length) return null;
       const maxArea = polys.reduce((m, p) => Math.max(m, p.area), 0);
       return { tradition: trad, polys, color: window.colorForTradition(trad), maxArea };
-    }).filter(Boolean);
-  }, [visibleTraditions, atlas]);
+    }).filter(Boolean));
+  }, [visibleTraditions, atlas, filterSig]);
 
   // Project the features into path strings + anchors so we don't re-project
   // on every hover. d3.geoPath resamples edges adaptively under the curved
   // projection and splits rings at the antimeridian.
   const renderedTraditions = __aMemo(() => {
-    if (!projection || !window.d3) return [];
-    const path = window.d3.geoPath(projection);
-    return territoryFeatures.map(({ tradition, polys, color, maxArea }) => ({
-      tradition, color, maxArea,
-      polys: polys.map(p => ({
-        ...p,
-        d: path(p.feature),
-        centroid: path.centroid(p.feature),
-        bounds: path.bounds(p.feature),
-      })).filter(p => p.d),
-    })).filter(t => t.polys.length);
-  }, [territoryFeatures, projection]);
+    if (!projection || !window.d3 || !atlas) return [];
+    return atlasGeomMemo(atlas, 'render:' + filterSig + ':' + size.w + 'x' + size.h, () => {
+      const path = window.d3.geoPath(projection);
+      return territoryFeatures.map(({ tradition, polys, color, maxArea }) => ({
+        tradition, color, maxArea,
+        polys: polys.map(p => ({
+          ...p,
+          d: path(p.feature),
+          centroid: path.centroid(p.feature),
+          bounds: path.bounds(p.feature),
+        })).filter(p => p.d),
+      })).filter(t => t.polys.length);
+    });
+  }, [territoryFeatures, projection, atlas, filterSig, size.w, size.h]);
 
   const resetZoom = __aCb(() => {
     if (!svgRef.current || !window.d3 || !zoomRef.current) return;

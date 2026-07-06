@@ -93,6 +93,10 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
       (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
   }, [visible]);
 
+  // First screenful now, the rest in rAF batches — Prev/Next order and the
+  // count labels stay on the FULL groups; only what mounts is windowed.
+  const revealedGroups = window.usePrefixReveal(groups, 150, 600);
+
   __pEff(() => {
     if (!onVisibleOrder) return;
     const ids = [];
@@ -138,7 +142,7 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
       </div>
 
       <div className="items-grid powers-grid">
-        {groups.map(([letter, list]) => (
+        {revealedGroups.map(([letter, list]) => (
           <div className="items-group powers-group" key={letter}>
             <h3 className="items-group-head">
               {letter} <span className="items-group-count">{list.length}</span>

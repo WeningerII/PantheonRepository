@@ -177,6 +177,20 @@ const linkStrength = l => l.family === 'Cross-tradition' ? 0.35 : 0.55;
 // React-driven re-renders still happen for state changes (hover, focus,
 // path mode) — those read the mutated `n.x` / `n.y` at render time, so
 // the imperative path and the React path see the same numbers.
+// Position cache at module scope: navigating away unmounts Graph, and a
+// per-mount cache made every return visit re-run the force simulation cold
+// from alpha 1. Node ids are stable across corpus swaps, so the map simply
+// keeps growing with the last-known coords per figure.
+const __graphPosCache = new Map();
+
+// The assembled graph (relation scan over every figure) also survives
+// unmount, keyed by the scoped people array's identity plus the mode/focus
+// signature. The force sim mutates the cached node objects' x/y in place —
+// deliberately: a remount resumes from the exact objects it left, and
+// d3.forceLink tolerates links whose endpoints were already resolved from
+// ids to node refs by a previous mount.
+const __graphBuildCache = new WeakMap();
+
 // Seed positions BEFORE the simulation (or React) sees the nodes. Mutates
 // graph.nodes in place — fine, the nodes array is created fresh per
 // buildGraph call. Called from a render-time useMemo, NOT a passive effect:
@@ -188,14 +202,20 @@ function seedPositions(graph, width, height, positionsRef) {
   const cx = width / 2, cy = height / 2;
   const cache = positionsRef.current;
 
-  // Phase 1: restore cached positions for retained nodes
+  // Phase 1: restore cached positions for retained nodes. The restored
+  // fraction is recorded on the graph so the simulation can warm-start:
+  // a remount with converged positions needs a brief settle, not the full
+  // alpha-1 run (~150 ticks — seconds of >50 ms frames on slow hardware).
+  let restored = 0;
   for (const n of graph.nodes) {
     const prev = cache.get(n.id);
     if (prev && Number.isFinite(prev.x) && Number.isFinite(prev.y)) {
       n.x = prev.x; n.y = prev.y;
       n.vx = prev.vx || 0; n.vy = prev.vy || 0;
+      restored++;
     }
   }
+  graph.warmFraction = restored / graph.nodes.length;
 
   // Phase 2: place newcomers near a connected neighbor that already has
   // a cached position. Fall back to a small ring near center.
@@ -289,6 +309,12 @@ function useForceSim(graph, width, height, positionsRef, nodeElRefs, linkElRefs)
         .force('collide', d3.forceCollide(d => 9 + Math.sqrt(d.degree || 1)))
         .alphaDecay(0.045)
         .on('tick', onTick);
+      if ((graph.warmFraction || 0) > 0.9) {
+        // Remount over converged positions: a short settle instead of the
+        // full run. ~24 ticks at this alpha/decay vs ~150 from alpha 1 —
+        // the difference between a blink and seconds of dropped frames.
+        simRef.current.alpha(0.1).alphaDecay(0.09);
+      }
     } else {
       // Update existing instance with the new node/link set. Reusing the
       // simulation keeps cached momentum + tick subscriptions intact.
@@ -736,23 +762,64 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     return people.filter(p => figureActiveAt(p, year));
   }, [people, yearScope, year]);
 
-  // A focus that the active filters / year scope exclude cannot be rendered:
-  // buildGraph can't recover a node whose figure isn't in `people`, and
-  // seeding the BFS at a linkless phantom empties the whole graph behind the
-  // focus card. Treat it as unfocused and say so (notice rendered below).
+  // Focusing a node drills IN: its neighbourhood escapes the rail filter
+  // (tradition / type / origin / search). Cross-tradition edges — and plenty
+  // of ordinary relations — reach figures in OTHER traditions that the rail
+  // filter has excluded, so a filtered universe amputates every one of them
+  // and the focused node renders as an orphan ("no edges to other figures in
+  // this view" — the reported dead-end: cross-tradition mode + a single
+  // tradition filter are inherently contradictory). The focus universe is
+  // therefore the FULL corpus; only the Graph-local year scope still narrows
+  // it, so scrubbing years stays consistent.
+  const focusUniverse = __gMemo(() => {
+    if (!focusId || !byId) return null;
+    const all = Array.from(byId.values());
+    return yearScope ? all.filter(p => figureActiveAt(p, year)) : all;
+  }, [focusId, byId, yearScope, year]);
+
+  // A focus the year scope excludes still can't be rendered (the figure is
+  // not active at that year) — treat it as unfocused and say so (notice
+  // below). The rail filter no longer excludes a focus: the full corpus is
+  // the focus universe, so a filtered-out figure focuses fine.
   const focusInScope = __gMemo(
-    () => !focusId || scopedPeople.some(p => p.id === focusId),
-    [focusId, scopedPeople],
+    () => !focusId || (focusUniverse != null && focusUniverse.some(p => p.id === focusId)),
+    [focusId, focusUniverse],
   );
 
   const effectiveFocusId = focusInScope ? focusId : null;
-  const graph = __gMemo(
-    () => buildGraph(scopedPeople, byId, mode, effectiveFocusId),
-    [scopedPeople, byId, mode, effectiveFocusId],
-  );
+  const graph = __gMemo(() => {
+    // Focused: build over the full-corpus focus universe. Unfocused: over the
+    // rail-filtered set. Cache keyed by whichever universe object was built
+    // from, so re-focusing the same node still hits cache.
+    const universe = (effectiveFocusId && focusUniverse) ? focusUniverse : scopedPeople;
+    let m = __graphBuildCache.get(universe);
+    if (!m) { m = new Map(); __graphBuildCache.set(universe, m); }
+    const k = mode + '|' + (effectiveFocusId || '');
+    if (!m.has(k)) {
+      if (m.size > 8) m.clear();
+      m.set(k, buildGraph(universe, byId, mode, effectiveFocusId));
+    }
+    return m.get(k);
+  }, [scopedPeople, focusUniverse, byId, mode, effectiveFocusId]);
   // Position memory survives graph rebuilds so dragging the year slider
   // doesn't re-explode the layout every frame. See useForceSim above.
-  const positionsRef = __gRef(new Map());
+  const positionsRef = __gRef(__graphPosCache);
+  // Staged SVG reveal: commit ~1/3 of the node dots first, the rest of the
+  // nodes on the next frame, the edge lines on the frame after — the sim's
+  // tick handler no-ops on refs that aren't mounted yet, so geometry is
+  // unaffected. jsdom (no real frames, tests count elements synchronously)
+  // renders everything in one pass.
+  const GRAPH_STAGE_ALL =
+    typeof window.requestAnimationFrame !== 'function' ||
+    /jsdom/i.test((window.navigator && window.navigator.userAgent) || '');
+  const [svgStage, setSvgStage] = __gState(GRAPH_STAGE_ALL ? 2 : 0);
+  __gEff(() => {
+    if (svgStage >= 2) return;
+    const raf = window.requestAnimationFrame(() => setSvgStage(st => st + 1));
+    return () => window.cancelAnimationFrame(raf);
+  }, [svgStage]);
+  const NODE_FIRST_SLICE = 250;
+  const linksMounted = svgStage >= 2;
   // Seed coordinates during render so the first committed frame of every
   // rebuild already carries cached/seeded positions (see seedPositions).
   __gMemo(() => { seedPositions(graph, size.w, size.h, positionsRef); }, [graph, size.w, size.h]);
@@ -1037,7 +1104,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
             onClick={(e) => { if (e.target === svgRef.current) setFocusId(null); }}
           >
             <g ref={gRef}>
-              {graph.links.map((l, i) => {
+              {linksMounted && graph.links.map((l, i) => {
                 const sId = typeof l.source === 'string' ? l.source : l.source.id;
                 const tId = typeof l.target === 'string' ? l.target : l.target.id;
                 const sx = typeof l.source === 'object' ? l.source.x : 0;
@@ -1068,7 +1135,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
                   />
                 );
               })}
-              {graph.nodes.map((n) => {
+              {(svgStage >= 1 ? graph.nodes : graph.nodes.slice(0, NODE_FIRST_SLICE)).map((n) => {
                 const isFocus = focusId === n.id;
                 const isHover = hoverNode === n.id;
                 const r = 3.5 + Math.min(8, Math.sqrt(n.degree));

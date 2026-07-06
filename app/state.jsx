@@ -968,8 +968,51 @@ function buildFacetOptions(list, bucketOf, labelOf, rank) {
       String(a.label).localeCompare(String(b.label)));
 }
 
+// ── Shared prefix reveal for the grouped registry indexes ────────────────
+// Same pattern as Browse's chunked rows: the first screenful commits
+// synchronously and the remainder streams in requestAnimationFrame batches,
+// so a view's first paint never waits on a multi-thousand-row commit. Takes
+// and returns groups shaped [key, list][]. jsdom renders everything in one
+// pass — the suite asserts full row counts, and its rAF is a setTimeout stub.
+const REVEAL_ALL_LISTS =
+  typeof window.requestAnimationFrame !== 'function' ||
+  /jsdom/i.test((window.navigator && window.navigator.userAgent) || '');
+
+function usePrefixReveal(groups, first, batch) {
+  const total = React.useMemo(
+    () => groups.reduce((n, [, l]) => n + l.length, 0), [groups]);
+  const [reveal, setReveal] = React.useState(
+    { key: groups, count: REVEAL_ALL_LISTS ? Infinity : first });
+  // Render-phase reset: a new groups identity (filter/search/corpus change)
+  // re-renders with the fresh window before anything stale can paint.
+  if (reveal.key !== groups) {
+    setReveal({ key: groups, count: REVEAL_ALL_LISTS ? Infinity : first });
+  }
+  const count = Math.min(total,
+    reveal.key === groups ? reveal.count : (REVEAL_ALL_LISTS ? Infinity : first));
+  React.useEffect(() => {
+    if (REVEAL_ALL_LISTS || count >= total) return;
+    const raf = window.requestAnimationFrame(() => {
+      setReveal(prev => (prev.key === groups && prev.count < total
+        ? { key: groups, count: Math.max(prev.count, count) + batch }
+        : prev));
+    });
+    return () => window.cancelAnimationFrame(raf);
+  }, [groups, count, total, batch]);
+  if (count >= total) return groups;
+  const out = [];
+  let left = count;
+  for (const [k, list] of groups) {
+    if (left <= 0) break;
+    out.push([k, list.length <= left ? list : list.slice(0, left)]);
+    left -= list.length;
+  }
+  return out;
+}
+
 // Expose to other babel scripts
 Object.assign(window, {
+  usePrefixReveal,
   TYPE_TIER, TYPE_ORDER, TierIcon,
   useData, useFilters, useSelection,
   displayName, nameForAlphaSort, altNames, transliterations, pressable,
