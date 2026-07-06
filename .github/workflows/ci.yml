@@ -41,6 +41,16 @@ jobs:
       - name: Run tests
         run: npm test
 
+      # The MCP connector (mcp/) has its own deps and query engine that the
+      # main suite doesn't touch; exercise its smoke suite (real-question
+      # assertions over search/graph/registry/vocab) so the tools the
+      # connector serves can't silently regress.
+      - name: MCP connector smoke test
+        run: |
+          cd mcp
+          npm ci --no-audit --no-fund
+          npm run smoke
+
       # Goal 2 — the committed corpus must reproduce byte-for-byte from the
       # committed data-sources/ via the generators + build (no hand-edited
       # blob). This rebuilds dist/pantheon-registry.html itself, so a
