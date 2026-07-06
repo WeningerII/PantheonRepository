@@ -183,6 +183,14 @@ const linkStrength = l => l.family === 'Cross-tradition' ? 0.35 : 0.55;
 // keeps growing with the last-known coords per figure.
 const __graphPosCache = new Map();
 
+// The assembled graph (relation scan over every figure) also survives
+// unmount, keyed by the scoped people array's identity plus the mode/focus
+// signature. The force sim mutates the cached node objects' x/y in place —
+// deliberately: a remount resumes from the exact objects it left, and
+// d3.forceLink tolerates links whose endpoints were already resolved from
+// ids to node refs by a previous mount.
+const __graphBuildCache = new WeakMap();
+
 // Seed positions BEFORE the simulation (or React) sees the nodes. Mutates
 // graph.nodes in place — fine, the nodes array is created fresh per
 // buildGraph call. Called from a render-time useMemo, NOT a passive effect:
@@ -764,25 +772,35 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
   );
 
   const effectiveFocusId = focusInScope ? focusId : null;
-  const graph = __gMemo(
-    () => buildGraph(scopedPeople, byId, mode, effectiveFocusId),
-    [scopedPeople, byId, mode, effectiveFocusId],
-  );
+  const graph = __gMemo(() => {
+    let m = __graphBuildCache.get(scopedPeople);
+    if (!m) { m = new Map(); __graphBuildCache.set(scopedPeople, m); }
+    const k = mode + '|' + (effectiveFocusId || '');
+    if (!m.has(k)) {
+      if (m.size > 8) m.clear();
+      m.set(k, buildGraph(scopedPeople, byId, mode, effectiveFocusId));
+    }
+    return m.get(k);
+  }, [scopedPeople, byId, mode, effectiveFocusId]);
   // Position memory survives graph rebuilds so dragging the year slider
   // doesn't re-explode the layout every frame. See useForceSim above.
   const positionsRef = __gRef(__graphPosCache);
-  // Links mount one frame after nodes: the first commit paints the node
-  // dots (~half the SVG elements) and the edge lines follow on the next
-  // frame — the sim's tick handler no-ops on refs that aren't mounted yet.
-  // jsdom (no real frames, tests count lines synchronously) renders both.
-  const [linksMounted, setLinksMounted] = __gState(
+  // Staged SVG reveal: commit ~1/3 of the node dots first, the rest of the
+  // nodes on the next frame, the edge lines on the frame after — the sim's
+  // tick handler no-ops on refs that aren't mounted yet, so geometry is
+  // unaffected. jsdom (no real frames, tests count elements synchronously)
+  // renders everything in one pass.
+  const GRAPH_STAGE_ALL =
     typeof window.requestAnimationFrame !== 'function' ||
-    /jsdom/i.test((window.navigator && window.navigator.userAgent) || ''));
+    /jsdom/i.test((window.navigator && window.navigator.userAgent) || '');
+  const [svgStage, setSvgStage] = __gState(GRAPH_STAGE_ALL ? 2 : 0);
   __gEff(() => {
-    if (linksMounted) return;
-    const raf = window.requestAnimationFrame(() => setLinksMounted(true));
+    if (svgStage >= 2) return;
+    const raf = window.requestAnimationFrame(() => setSvgStage(st => st + 1));
     return () => window.cancelAnimationFrame(raf);
-  }, [linksMounted]);
+  }, [svgStage]);
+  const NODE_FIRST_SLICE = 250;
+  const linksMounted = svgStage >= 2;
   // Seed coordinates during render so the first committed frame of every
   // rebuild already carries cached/seeded positions (see seedPositions).
   __gMemo(() => { seedPositions(graph, size.w, size.h, positionsRef); }, [graph, size.w, size.h]);
@@ -1098,7 +1116,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
                   />
                 );
               })}
-              {graph.nodes.map((n) => {
+              {(svgStage >= 1 ? graph.nodes : graph.nodes.slice(0, NODE_FIRST_SLICE)).map((n) => {
                 const isFocus = focusId === n.id;
                 const isHover = hoverNode === n.id;
                 const r = 3.5 + Math.min(8, Math.sqrt(n.degree));

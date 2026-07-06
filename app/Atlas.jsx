@@ -260,6 +260,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
   // per atlas/filter change — independent of projection and zoom.
   const filterSig = (traditionFilter && traditionFilter.size)
     ? [...traditionFilter].sort().join(',') : 'ALL';
+
   const territoryFeatures = __aMemo(() => {
     if (!window.d3 || !atlas) return [];
     return atlasGeomMemo(atlas, 'feat:' + filterSig, () => visibleTraditions.map(trad => {

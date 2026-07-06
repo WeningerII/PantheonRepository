@@ -686,6 +686,25 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
     if (el) el.scrollTop = 0;
   }, [localEntry?.id]);
 
+  // Below-the-fold sections (lineage SVG, lifecycle, descent, network,
+  // attribute lists, sources) mount one frame after the header/parentage:
+  // the whole stack committed in the panel's first paint (~100 ms of SVG
+  // layout on the reference box). Resets per displayed entry so Prev/Next
+  // pages the same way. jsdom renders everything in one pass — the suite
+  // asserts sections synchronously. Hooks sit ABOVE the null early-return:
+  // the hook count must not depend on whether an entry is displayed.
+  const deferRest =
+    typeof window.requestAnimationFrame === 'function' &&
+    !/jsdom/i.test((window.navigator && window.navigator.userAgent) || '');
+  const [restFor, setRestFor] = __dState(null);
+  const __entryId = localEntry ? localEntry.id : null;
+  const restMounted = !deferRest || (__entryId != null && restFor === __entryId);
+  __dEff(() => {
+    if (restMounted || __entryId == null) return;
+    const raf = window.requestAnimationFrame(() => setRestFor(__entryId));
+    return () => window.cancelAnimationFrame(raf);
+  }, [restMounted, __entryId]);
+
   if (!localEntry) return null;
   // Alias so the rest of the render reads the same; the conceptual entry
   // is whichever is currently being displayed (live or mid-exit).
@@ -783,6 +802,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
 
           <NameRecords entry={entry} />
           <Parentage entry={entry} byId={byId} onOpen={onOpen} />
+          {restMounted && <>
           {window.Lineage && childrenOf && (
             <window.Lineage
               entry={entry}
@@ -860,6 +880,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
           )}
 
           <Sources entry={entry} />
+          </>}
         </div>
       </aside>
     </>
