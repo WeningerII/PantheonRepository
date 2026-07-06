@@ -56,4 +56,7 @@ In claude.ai → **Settings → Connectors → Add custom connector**, paste the
 |---------|---------|
 | `PORT` | listen port (Render injects this) |
 | `MCP_TOKEN` | if set, require `Authorization: Bearer <token>` on `/mcp` |
+| `MCP_ALLOWED_ORIGINS` | if set (comma-separated), restrict browser CORS to these origins; unset = open to any origin (default). Server-to-server clients send no `Origin` and are unaffected. |
 | `PANTHEON_DATA` | override path to `data.js` (defaults to `../app/data.js`) |
+
+CORS is enabled so browser-based MCP clients (the [Inspector](https://github.com/modelcontextprotocol/inspector) web tool, web playgrounds, connectors that fetch from the page) can complete the session handshake — the server exposes the `Mcp-Session-Id` response header they need to read.

@@ -78,17 +78,33 @@ app.use(express.json({ limit: '2mb' }));
 // `Mcp-Session-Id` RESPONSE header; a browser can't read that header unless
 // the server explicitly EXPOSES it, so without this the whole session flow
 // dies at the first follow-up call. Runs before the /mcp auth gate so the
-// credential-less OPTIONS preflight is answered, not 401'd. Read-only public
-// data, so any origin is allowed; the optional bearer gate still guards writes
-// of state (there are none) and rate.
+// credential-less OPTIONS preflight is answered, not 401'd.
+//
+// Default is open (any origin) — the data is public and read-only. Set
+// MCP_ALLOWED_ORIGINS to a comma-separated list to restrict browser access to
+// named origins (e.g. "https://claude.ai,https://chatgpt.com"); server-to-
+// server clients send no Origin and are unaffected either way.
+const ALLOWED_ORIGINS = (process.env.MCP_ALLOWED_ORIGINS || '')
+  .split(',').map((s) => s.trim()).filter(Boolean);
+const originAllowed = (origin) => {
+  if (!ALLOWED_ORIGINS.length) return origin || '*'; // open
+  return origin && ALLOWED_ORIGINS.includes(origin) ? origin : null;
+};
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '*');
-  res.setHeader('Vary', 'Origin');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, Mcp-Session-Id, MCP-Protocol-Version, Last-Event-ID');
-  res.setHeader('Access-Control-Expose-Headers', 'Mcp-Session-Id, MCP-Protocol-Version');
-  res.setHeader('Access-Control-Max-Age', '86400');
-  if (req.method === 'OPTIONS') { res.status(204).end(); return; }
+  const allow = originAllowed(req.headers.origin);
+  if (allow) {
+    res.setHeader('Access-Control-Allow-Origin', allow);
+    res.setHeader('Vary', 'Origin');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, Mcp-Session-Id, MCP-Protocol-Version, Last-Event-ID');
+    res.setHeader('Access-Control-Expose-Headers', 'Mcp-Session-Id, MCP-Protocol-Version');
+    res.setHeader('Access-Control-Max-Age', '86400');
+  }
+  // Preflight from a disallowed browser origin is refused; everything else
+  // (including originless server-to-server calls) proceeds — a browser with a
+  // disallowed origin simply won't receive the ACAO header and is blocked
+  // client-side, exactly as intended.
+  if (req.method === 'OPTIONS') { res.status(allow ? 204 : 403).end(); return; }
   next();
 });
 
