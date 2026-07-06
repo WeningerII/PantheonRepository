@@ -62,9 +62,19 @@ jobs:
       - name: Build distributions
         run: python3 build.py && python3 build.py --pages
 
+      # Crawlable static mirror: a JS-free page per figure + a master index,
+      # sitemap, and robots.txt, written into dist/site/. Without this a fetch
+      # of the SPA (crawler, link unfurler, or an LLM reading the URL) sees only
+      # the "loading…" shell. Must run AFTER build.py --pages, which produces
+      # the shell this enriches.
+      - name: Build static mirror
+        run: node scripts/build-static.cjs
+
       # Site layout: the multi-file shell at /, its hashed data files under
-      # /data/, and the single-file artifact at /artifact.html (kept as a
-      # first-class downloadable secondary distribution).
+      # /data/, the crawlable static mirror (registry/, sitemap.xml, robots.txt),
+      # and the single-file artifact at /artifact.html (kept as a first-class
+      # downloadable secondary distribution). Copy the whole dist/site tree so
+      # the static mirror ships alongside the shell.
       # Goal 3 — every release ships a dogfood sign-off. Ship the COMMITTED
       # checklist (the one a human actually reviewed), not a fresh unticked
       # regeneration; only the link base is rewritten for the site layout
@@ -72,7 +82,7 @@ jobs:
       - name: Assemble Pages site
         run: |
           rm -rf _site && mkdir -p _site
-          cp dist/site/index.html _site/index.html
+          cp -R dist/site/. _site/
           cp -R dist/data _site/data
           cp dist/pantheon-registry.html _site/artifact.html
           sed 's#dist/pantheon-registry\.html\##./artifact.html\##g' DOGFOOD.md > _site/DOGFOOD.md

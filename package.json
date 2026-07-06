@@ -26,7 +26,7 @@
   "scripts": {
     "build": "python3 build.py",
     "dev": "python3 -m http.server 8000",
-    "test": "python3 build.py --pages && node --test --test-force-exit test/*.test.cjs"
+    "test": "python3 build.py --pages && node scripts/build-static.cjs && node --test --test-force-exit test/*.test.cjs"
   },
   "dependencies": {
     "@babel/standalone": "7.29.7"

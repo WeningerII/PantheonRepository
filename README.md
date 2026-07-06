@@ -49,6 +49,13 @@ pipeline (`actions/deploy-pages`) on every push to `main` (or on demand via the
   from the content-hashed data files under **`/data/`**. If those files are
   missing or fail to load, the shell fails loudly in the boot overlay rather
   than rendering an empty registry.
+- **`/registry/`** — a crawlable, JavaScript-free static mirror of the corpus
+  (`scripts/build-static.cjs`): a master index plus one cited page per figure,
+  with **`/sitemap.xml`** and **`/robots.txt`**. The app is a client-rendered
+  SPA, so a fetch of `/` — by a search crawler, a link unfurler, or an LLM
+  reading the URL — would otherwise see only the boot shell; the shell's
+  `<noscript>` routes those clients to `/registry/`, where the full content is
+  readable without executing any JavaScript.
 - **`/artifact.html`** — the single-file artifact, unchanged from
   `dist/pantheon-registry.html`, kept as a first-class downloadable secondary
   distribution (works from `file://`, srcdoc iframes, or any static host).
