@@ -762,26 +762,45 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     return people.filter(p => figureActiveAt(p, year));
   }, [people, yearScope, year]);
 
-  // A focus that the active filters / year scope exclude cannot be rendered:
-  // buildGraph can't recover a node whose figure isn't in `people`, and
-  // seeding the BFS at a linkless phantom empties the whole graph behind the
-  // focus card. Treat it as unfocused and say so (notice rendered below).
+  // Focusing a node drills IN: its neighbourhood escapes the rail filter
+  // (tradition / type / origin / search). Cross-tradition edges — and plenty
+  // of ordinary relations — reach figures in OTHER traditions that the rail
+  // filter has excluded, so a filtered universe amputates every one of them
+  // and the focused node renders as an orphan ("no edges to other figures in
+  // this view" — the reported dead-end: cross-tradition mode + a single
+  // tradition filter are inherently contradictory). The focus universe is
+  // therefore the FULL corpus; only the Graph-local year scope still narrows
+  // it, so scrubbing years stays consistent.
+  const focusUniverse = __gMemo(() => {
+    if (!focusId || !byId) return null;
+    const all = Array.from(byId.values());
+    return yearScope ? all.filter(p => figureActiveAt(p, year)) : all;
+  }, [focusId, byId, yearScope, year]);
+
+  // A focus the year scope excludes still can't be rendered (the figure is
+  // not active at that year) — treat it as unfocused and say so (notice
+  // below). The rail filter no longer excludes a focus: the full corpus is
+  // the focus universe, so a filtered-out figure focuses fine.
   const focusInScope = __gMemo(
-    () => !focusId || scopedPeople.some(p => p.id === focusId),
-    [focusId, scopedPeople],
+    () => !focusId || (focusUniverse != null && focusUniverse.some(p => p.id === focusId)),
+    [focusId, focusUniverse],
   );
 
   const effectiveFocusId = focusInScope ? focusId : null;
   const graph = __gMemo(() => {
-    let m = __graphBuildCache.get(scopedPeople);
-    if (!m) { m = new Map(); __graphBuildCache.set(scopedPeople, m); }
+    // Focused: build over the full-corpus focus universe. Unfocused: over the
+    // rail-filtered set. Cache keyed by whichever universe object was built
+    // from, so re-focusing the same node still hits cache.
+    const universe = (effectiveFocusId && focusUniverse) ? focusUniverse : scopedPeople;
+    let m = __graphBuildCache.get(universe);
+    if (!m) { m = new Map(); __graphBuildCache.set(universe, m); }
     const k = mode + '|' + (effectiveFocusId || '');
     if (!m.has(k)) {
       if (m.size > 8) m.clear();
-      m.set(k, buildGraph(scopedPeople, byId, mode, effectiveFocusId));
+      m.set(k, buildGraph(universe, byId, mode, effectiveFocusId));
     }
     return m.get(k);
-  }, [scopedPeople, byId, mode, effectiveFocusId]);
+  }, [scopedPeople, focusUniverse, byId, mode, effectiveFocusId]);
   // Position memory survives graph rebuilds so dragging the year slider
   // doesn't re-explode the layout every frame. See useForceSim above.
   const positionsRef = __gRef(__graphPosCache);
