@@ -32,7 +32,15 @@ test('a figure page carries real, cited, JS-free content', () => {
   assert.match(zeus, /<h1>Zeus<\/h1>/, 'figure name as h1');
   assert.match(zeus, /Cronus/, 'parentage present');
   assert.match(zeus, /<h2>Sources<\/h2>/, 'a Sources section');
-  assert.match(zeus, /Theogony|Hesiod|Iliad|Apollod/i, 'at least one real citation');
+  // Verify the Sources list is genuinely populated — NOT by matching a
+  // hard-coded citation string, which can collide with the id itself
+  // ("Hesiod" is a substring of "greek_hesiod_zeus" and appears in every URL
+  // on the page). Extract the list and require real, non-empty items.
+  const srcUl = zeus.match(/<h2>Sources<\/h2><ul>(.*?)<\/ul>/s);
+  assert.ok(srcUl, 'Sources renders as a list');
+  const cites = [...srcUl[1].matchAll(/<li>(.*?)<\/li>/gs)].map((m) => m[1].trim());
+  assert.ok(cites.length >= 1 && cites.every((t) => t.length > 0),
+    `Sources list has non-empty items, got ${JSON.stringify(cites)}`);
   assert.match(zeus, /application\/ld\+json/, 'JSON-LD structured data');
   assert.match(zeus, /rel="canonical"/, 'canonical link');
   // Parent links resolve to real figure pages (relative, same dir).
