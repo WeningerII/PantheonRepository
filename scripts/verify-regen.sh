@@ -12,9 +12,17 @@ node scripts/gen-powers-terms.cjs  >/dev/null
 node scripts/gen-powers-items.cjs  >/dev/null
 python3 build.py                   >/dev/null
 
-if ! git diff --quiet -- app/data.js dist/pantheon-registry.html; then
-  echo "✗ regeneration drift — committed data is not reproducible from data-sources/:"
-  git --no-pager diff --stat -- app/data.js dist/pantheon-registry.html
+# Corpus counts are computed into committed prose (README, package.json,
+# mcp/README) by update-counts, never typed by hand — so re-run it and fold the
+# result into the same drift gate. A corpus change that leaves a stale count in
+# any doc fails here instead of shipping. Fix locally with: npm run counts
+node scripts/update-counts.cjs     >/dev/null
+
+GUARDED='app/data.js dist/pantheon-registry.html README.md package.json mcp/README.md'
+if ! git diff --quiet -- $GUARDED; then
+  echo "✗ regeneration drift — committed output is not reproducible from data-sources/ + the corpus:"
+  git --no-pager diff --stat -- $GUARDED
+  echo "  (run the generators + \`npm run counts\`, then commit)"
   exit 1
 fi
-echo "✓ byte-exact: app/data.js and dist/pantheon-registry.html reproduce from committed data-sources/"
+echo "✓ byte-exact: corpus, artifact, and all committed counts reproduce from source"

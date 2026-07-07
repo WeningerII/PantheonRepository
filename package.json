@@ -2,7 +2,7 @@
   "name": "pantheon-registry",
   "private": true,
   "version": "1.0.0",
-  "description": "Multi-tradition registry of mythological and historical figures — 3,470+ entries across 360 traditions.",
+  "description": "Multi-tradition registry of mythological and historical figures — 4,014 entries across 360 traditions.",
   "keywords": [
     "mythology",
     "pantheon",
@@ -26,7 +26,8 @@
   "scripts": {
     "build": "python3 build.py",
     "dev": "python3 -m http.server 8000",
-    "test": "python3 build.py --pages && node scripts/build-static.cjs && node --test --test-force-exit test/*.test.cjs"
+    "test": "python3 build.py --pages && node scripts/build-static.cjs && node --test --test-force-exit test/*.test.cjs",
+    "counts": "node scripts/update-counts.cjs"
   },
   "dependencies": {
     "@babel/standalone": "7.29.7"

@@ -86,7 +86,7 @@ Workflow that works: (1) unsure of exact vocabulary? call vocab (relation kinds,
     async ({ power, limit }) => txt(corpus.whoWields(power, { limit })));
 
   server.registerTool('get_item',
-    { description: 'The mythic-item registry (2,687 items: weapons, regalia, relics…). Pass an exact item id for full detail — custody chain (who forged it, who wielded it, era by era, cited), holders, native names, lore, maker, resting place. Pass a name/text query (optionally with item_class) to search; a single hit auto-expands. Use for "who forged Mjölnir", "trace the thunderbolt\'s custody".',
+    { description: `The mythic-item registry (${corpus.stats.items.toLocaleString()} items: weapons, regalia, relics…). Pass an exact item id for full detail — custody chain (who forged it, who wielded it, era by era, cited), holders, native names, lore, maker, resting place. Pass a name/text query (optionally with item_class) to search; a single hit auto-expands. Use for "who forged Mjölnir", "trace the thunderbolt's custody".`,
       inputSchema: { query: z.string(), item_class: z.string().optional(), limit: z.number().int().positive().max(100).optional() } },
     async ({ query, item_class, limit }) => txt(corpus.getItem(query, { item_class, limit })));
 
