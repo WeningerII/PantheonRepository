@@ -211,7 +211,7 @@ function ViewLoading({ label }) {
 }
 
 function Shell() {
-  const { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion } = window.useData();
+  const { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, registryReady, registryVersion } = window.useData();
   const filters = window.useFilters(people);
   const selection = window.useSelection(filters.filtered);
   const filteredRef = __sRef(filters.filtered);
@@ -281,12 +281,26 @@ function Shell() {
   if (view === 'items'   || selectedItemId   != null) regWant.items = true;
   if (view === 'powers'  || selectedPowerId  != null) regWant.powers = true;
   if (view === 'domains' || selectedDomainId != null) regWant.domains = true;
-  const itemList = __sMemo(() => (regWant.items && window.allItems ? window.allItems() : []), [regWant.items, people, corpusVersion]);
+  // registryVersion keys the rebuild across the lazy tier install: a list built
+  // before its tier landed (empty, or skinny-derived) must not outlive it.
+  const itemList = __sMemo(() => (regWant.items && window.allItems ? window.allItems() : []), [regWant.items, people, corpusVersion, registryVersion]);
   const selectedItem = selectedItemId && window.itemById ? window.itemById(selectedItemId) : null;
-  const powerList = __sMemo(() => (regWant.powers && window.allPowers ? window.allPowers() : []), [regWant.powers, people, corpusVersion]);
+  const powerList = __sMemo(() => (regWant.powers && window.allPowers ? window.allPowers() : []), [regWant.powers, people, corpusVersion, registryVersion]);
   const selectedPower = selectedPowerId && window.powerById ? window.powerById(selectedPowerId) : null;
-  const domainList = __sMemo(() => (regWant.domains && window.allDomains ? window.allDomains() : []), [regWant.domains, people, corpusVersion]);
+  const domainList = __sMemo(() => (regWant.domains && window.allDomains ? window.allDomains() : []), [regWant.domains, people, corpusVersion, registryVersion]);
   const selectedDomain = selectedDomainId && window.domainById ? window.domainById(selectedDomainId) : null;
+
+  // Fetch a registry view's own tier the moment it's wanted (its view is active
+  // or a detail id is set) — this is what unblocks Items/Powers/Domains without
+  // waiting on the 20 MB corpus. loadRegistry is idempotent (per-kind promise
+  // cache) and absent on sync boots, where the registries are already present.
+  __sEff(() => {
+    const load = window.__PR && window.__PR.loadRegistry;
+    if (!load) return;
+    if (regWant.items) load('items');
+    if (regWant.powers) load('powers');
+    if (regWant.domains) load('domains');
+  }, [regWant.items, regWant.powers, regWant.domains, registryVersion]);
 
   // Warm the deferred power/domain registries (module-cached in state.jsx)
   // off the critical path so the first Powers/Domains navigation pays
@@ -787,8 +801,8 @@ function Shell() {
               />
             </div>
           )}
-          {view === 'items' && !dataReady && <ViewLoading label="items" />}
-          {(view === 'items' || leavingView === 'items') && dataReady && (
+          {view === 'items' && !registryReady.items && <ViewLoading label="items" />}
+          {(view === 'items' || leavingView === 'items') && registryReady.items && (
             <div className={'view-pane' + (view === 'items' ? '' : ' pane-leaving')}>
               <window.Items
                 items={visibleItems}
@@ -800,8 +814,8 @@ function Shell() {
               />
             </div>
           )}
-          {view === 'powers' && !dataReady && <ViewLoading label="powers" />}
-          {(view === 'powers' || leavingView === 'powers') && dataReady && (
+          {view === 'powers' && !registryReady.powers && <ViewLoading label="powers" />}
+          {(view === 'powers' || leavingView === 'powers') && registryReady.powers && (
             <div className={'view-pane' + (view === 'powers' ? '' : ' pane-leaving')}>
               <window.PowersView
                 powers={visiblePowers}
@@ -813,8 +827,8 @@ function Shell() {
               />
             </div>
           )}
-          {view === 'domains' && !dataReady && <ViewLoading label="domains" />}
-          {(view === 'domains' || leavingView === 'domains') && dataReady && (
+          {view === 'domains' && !registryReady.domains && <ViewLoading label="domains" />}
+          {(view === 'domains' || leavingView === 'domains') && registryReady.domains && (
             <div className={'view-pane' + (view === 'domains' ? '' : ' pane-leaving')}>
               <window.Domains
                 domains={visibleDomains}

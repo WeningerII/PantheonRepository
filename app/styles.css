@@ -3062,10 +3062,14 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   align-items: start; align-content: start;
 }
 .items-group {
-  /* Off-screen groups skip layout entirely; the intrinsic-size estimate
-     keeps the scrollbar stable until they scroll into view. */
+  /* Off-screen groups skip layout entirely; the intrinsic-size estimate keeps
+     the scrollbar stable until they scroll into view. The estimate is set
+     per-group from its row count (--group-h, computed in the view from measured
+     row heights) — a flat placeholder was ~174x wrong for the largest letter
+     group (Powers 'T' = 1,772 rows), which made the scroll height lurch by tens
+     of thousands of px as groups materialized. */
   content-visibility: auto;
-  contain-intrinsic-size: auto 420px;
+  contain-intrinsic-size: auto var(--group-h, 420px);
 }
 .items-group-head {
   margin: 0 0 8px;

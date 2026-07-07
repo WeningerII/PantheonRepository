@@ -92,17 +92,64 @@ function externalName(ext) {
   return ext.tradition ? `${name} · ${ext.tradition}` : name;
 }
 
+// Precompute the per-row derived fields once: kind bucket (a chain of up to ~15
+// regex tests over free-text `kind`), glyph flag, search haystack, and badge.
+// The holder display name is resolved from byId every pass (cheap) rather than
+// guarded — the primary name is identical in the skinny index and the full
+// record, so it never changes across the corpus swap. Idempotent via `_dec`.
+function decorateItem(it, byId) {
+  if (!it._dec) {
+    it._kind = itemKindBucket(it.kind);
+    it._glyph = isGlyphScript(it.names && it.names[0] && it.names[0].script);
+    it._search = [it.displayName, it.id, it.classId, it.kind,
+      ...((it.names || []).map((n) => n.value))].join(' ').toLowerCase();
+    it._badge = itemBadge(it);
+    it._dec = true;
+  }
+  const hp = it.holders && it.holders[0] && it.holders[0].personId;
+  const holder = hp ? byId.get(hp) : null;
+  it._holderName = holder ? window.displayName(holder) : null;
+  return it;
+}
+
+// Memoized index row (Browse pattern): stable onOpen + immutable record → memo
+// bails, so the reveal cascade reconciles only new rows.
+const ItemRow = React.memo(function ItemRow({ it, selected, onOpen }) {
+  const badge = it._badge;
+  return (
+    <button
+      className={'item-row' + (selected ? ' on' : '')}
+      onClick={() => onOpen(it.id)}
+    >
+      <span className={'item-row-name' + (it._glyph ? ' glyph' : '')}>{it.displayName}</span>
+      <span className="item-row-meta">
+        {it.classId && <span className="item-row-class">{humanizeItem(it.classId)}</span>}
+        {it._holderName && <span className="item-row-holder">{it._holderName}</span>}
+        {badge && <span className={'item-badge ' + badge.cls}>{badge.label}</span>}
+      </span>
+    </button>
+  );
+});
+
 // ── Items index ────────────────────────────────────────────────────────────
 function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder }) {
   const [q, setQ] = __iState('');
   const [kinds, setKinds] = __iState(() => new Set());
 
+  // Stable open callback so React.memo(ItemRow) can skip re-renders.
+  const onOpenRef = __iRef(null); onOpenRef.current = onOpenItem;
+  const stableOpen = __iMemo(() => (id) => onOpenRef.current && onOpenRef.current(id), []);
+
+  // Decorate every record once (kind bucket + search + badge; holder name each
+  // pass). Returns the same array; the fields live on the records.
+  const decorated = __iMemo(() => { for (const it of items) decorateItem(it, byId); return items; }, [items, byId]);
+
   const kindOptions = __iMemo(
-    () => window.buildFacetOptions(items, (it) => itemKindBucket(it.kind), itemBucketLabel, ITEM_BUCKET_RANK),
-    [items]);
+    () => window.buildFacetOptions(decorated, (it) => it._kind, itemBucketLabel, ITEM_BUCKET_RANK),
+    [decorated]);
   const faceted = __iMemo(
-    () => (kinds.size ? items.filter((it) => kinds.has(itemKindBucket(it.kind))) : items),
-    [items, kinds]);
+    () => (kinds.size ? decorated.filter((it) => kinds.has(it._kind)) : decorated),
+    [decorated, kinds]);
   const toggleKind = (v) => setKinds((prev) => {
     const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n;
   });
@@ -113,17 +160,13 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
   const visible = __iMemo(() => {
     const query = q.trim().toLowerCase();
     if (!query) return faceted;
-    return faceted.filter((it) => {
-      const hay = [it.displayName, it.id, it.classId, it.kind,
-        ...(it.names || []).map((n) => n.value)].join(' ').toLowerCase();
-      return hay.includes(query);
-    });
+    return faceted.filter((it) => it._search.includes(query));
   }, [faceted, q]);
 
   const groups = __iMemo(() => {
     const byKind = new Map();
     for (const it of visible) {
-      const k = itemKindBucket(it.kind);
+      const k = it._kind;
       if (!byKind.has(k)) byKind.set(k, []);
       byKind.get(k).push(it);
     }
@@ -182,31 +225,15 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
 
       <div className="items-grid">
         {revealedGroups.map(([kind, list]) => (
-          <div className="items-group" key={kind}>
+          // --group-h: measured ~58 px/row + ~26 px header (see styles.css).
+          <div className="items-group" key={kind} style={{ '--group-h': (26 + list.length * 58) + 'px' }}>
             <h3 className="items-group-head">
               {itemBucketLabel(kind)} <span className="items-group-count">{list.length}</span>
             </h3>
             <div className="items-rows">
-              {list.map((it) => {
-                const badge = itemBadge(it);
-                const holder = it.holders?.[0]?.personId ? byId.get(it.holders[0].personId) : null;
-                return (
-                  <button
-                    key={it.id}
-                    className={'item-row' + (it.id === selectedItemId ? ' on' : '')}
-                    onClick={() => onOpenItem(it.id)}
-                  >
-                    <span className={'item-row-name' + (isGlyphScript(it.names?.[0]?.script) ? ' glyph' : '')}>
-                      {it.displayName}
-                    </span>
-                    <span className="item-row-meta">
-                      {it.classId && <span className="item-row-class">{humanizeItem(it.classId)}</span>}
-                      {holder && <span className="item-row-holder">{window.displayName(holder)}</span>}
-                      {badge && <span className={'item-badge ' + badge.cls}>{badge.label}</span>}
-                    </span>
-                  </button>
-                );
-              })}
+              {list.map((it) => (
+                <ItemRow key={it.id} it={it} selected={it.id === selectedItemId} onOpen={stableOpen} />
+              ))}
             </div>
           </div>
         ))}

@@ -55,9 +55,9 @@ const meta = readJSON('meta.json');
 const index = readJSON(meta.files.index);
 const edges = readJSON(meta.files.edges);
 const corpus = readJSON(meta.files.corpus);
-const items = readJSON('items.json');
-const powers = readJSON('powers.json');
-const domains = readJSON('domains.json');
+const items = readJSON(meta.registry.items);
+const powers = readJSON(meta.registry.powers);
+const domains = readJSON(meta.registry.domains);
 
 // The vm-loaded __PR is the parity oracle. vm objects live in a foreign realm
 // whose prototypes fail deepStrictEqual's === prototype check — JSON
@@ -92,6 +92,21 @@ test('meta is schema 3, counts agree, and hashed filenames match their bodies', 
   for (const [k, re] of Object.entries(patterns)) {
     const name = meta.files[k];
     assert.match(name, re, `meta.files.${k}: ${name}`);
+    const h = crypto.createHash('sha256').update(fs.readFileSync(path.join(OUT, name))).digest('hex').slice(0, 12);
+    assert.ok(name.includes(`-${h}.`), `${name}: embedded hash != content hash ${h}`);
+  }
+});
+
+test('meta.registry names the three content-hashed per-view tiers', () => {
+  const patterns = {
+    items: /^items-[0-9a-f]{12}\.json$/,
+    powers: /^powers-[0-9a-f]{12}\.json$/,
+    domains: /^domains-[0-9a-f]{12}\.json$/,
+  };
+  assert.deepStrictEqual(Object.keys(meta.registry).sort(), Object.keys(patterns).sort(), 'meta.registry key set');
+  for (const [k, re] of Object.entries(patterns)) {
+    const name = meta.registry[k];
+    assert.match(name, re, `meta.registry.${k}: ${name}`);
     const h = crypto.createHash('sha256').update(fs.readFileSync(path.join(OUT, name))).digest('hex').slice(0, 12);
     assert.ok(name.includes(`-${h}.`), `${name}: embedded hash != content hash ${h}`);
   }
