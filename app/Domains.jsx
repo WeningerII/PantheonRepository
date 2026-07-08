@@ -53,28 +53,60 @@ function domainCtxBuckets(d) {
   return [...set];
 }
 
+// Precompute per-row derived fields once (context buckets + glyph + search +
+// badge). Idempotent via `_dec`.
+function decorateDomain(d) {
+  if (d._dec) return d;
+  d._glyph = domIsGlyph(d.term && d.term.script);
+  d._ctx = domainCtxBuckets(d);
+  d._search = [d.displayName, d.id, d.term && d.term.value,
+    ...(d.contextTags || [])].join(' ').toLowerCase();
+  d._badge = domainBadge(d);
+  d._dec = true;
+  return d;
+}
+
+// Memoized index row (Browse pattern).
+const DomainRow = React.memo(function DomainRow({ d, selected, onOpen }) {
+  const badge = d._badge;
+  return (
+    <button
+      className={'item-row domain-index-row' + (selected ? ' on' : '')}
+      onClick={() => onOpen(d.id)}
+    >
+      <span className={'item-row-name' + (d._glyph ? ' glyph' : '')}>{d.displayName}</span>
+      <span className="item-row-meta">
+        {badge && <span className={'item-badge ' + badge.cls}>{badge.label}</span>}
+      </span>
+    </button>
+  );
+});
+
 // ── Domains index ────────────────────────────────────────────────────────────
 function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisibleOrder }) {
   const [q, setQ] = __dmState('');
   const [ctx, setCtx] = __dmState(() => new Set());
 
+  // Stable open callback so React.memo(DomainRow) can skip re-renders.
+  const onOpenRef = __dmRef(null); onOpenRef.current = onOpenDomain;
+  const stableOpen = __dmMemo(() => (id) => onOpenRef.current && onOpenRef.current(id), []);
+
+  // Decorate every record once; returns the same array (fields live on records).
+  const decorated = __dmMemo(() => { for (const d of domains) decorateDomain(d); return domains; }, [domains]);
+
   const ctxOptions = __dmMemo(
-    () => window.buildFacetOptions(domains, domainCtxBuckets, domainCtxLabel, DOMAIN_CTX_RANK),
-    [domains]);
+    () => window.buildFacetOptions(decorated, (d) => d._ctx, domainCtxLabel, DOMAIN_CTX_RANK),
+    [decorated]);
   const faceted = __dmMemo(
-    () => (ctx.size ? domains.filter((d) => domainCtxBuckets(d).some((b) => ctx.has(b))) : domains),
-    [domains, ctx]);
+    () => (ctx.size ? decorated.filter((d) => d._ctx.some((b) => ctx.has(b))) : decorated),
+    [decorated, ctx]);
 
   // Post-facet, post-query list — drives the header count/summary so they
   // track the search box, not just the context facet.
   const visible = __dmMemo(() => {
     const query = q.trim().toLowerCase();
     if (!query) return faceted;
-    return faceted.filter((d) => {
-      const hay = [d.displayName, d.id, d.term && d.term.value,
-        ...(d.contextTags || [])].join(' ').toLowerCase();
-      return hay.includes(query);
-    });
+    return faceted.filter((d) => d._search.includes(query));
   }, [faceted, q]);
 
   const groups = __dmMemo(() => {
@@ -138,28 +170,15 @@ function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisib
 
       <div className="items-grid domains-grid">
         {revealedGroups.map(([letter, list]) => (
-          <div className="items-group domains-group" key={letter}>
+          // --group-h: measured ~46 px/row + ~26 px header (see styles.css).
+          <div className="items-group domains-group" key={letter} style={{ '--group-h': (26 + list.length * 46) + 'px' }}>
             <h3 className="items-group-head">
               {letter} <span className="items-group-count">{list.length}</span>
             </h3>
             <div className="items-rows">
-              {list.map((d) => {
-                const badge = domainBadge(d);
-                return (
-                  <button
-                    key={d.id}
-                    className={'item-row domain-index-row' + (d.id === selectedDomainId ? ' on' : '')}
-                    onClick={() => onOpenDomain(d.id)}
-                  >
-                    <span className={'item-row-name' + (domIsGlyph(d.term && d.term.script) ? ' glyph' : '')}>
-                      {d.displayName}
-                    </span>
-                    <span className="item-row-meta">
-                      {badge && <span className={'item-badge ' + badge.cls}>{badge.label}</span>}
-                    </span>
-                  </button>
-                );
-              })}
+              {list.map((d) => (
+                <DomainRow key={d.id} d={d} selected={d.id === selectedDomainId} onOpen={stableOpen} />
+              ))}
             </div>
           </div>
         ))}

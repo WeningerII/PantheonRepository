@@ -528,14 +528,27 @@ function relationFamily(kind) {
 // need full records; corpusVersion keys every cache that must not serve
 // skinny-index-era results after the swap.
 
+// Per-view registry readiness, read off __PR. Defaults to all-ready when the
+// flags are absent (sync boots: dev index.html never loads pr-boot, so the
+// registries build synchronously from the present corpus).
+function readRegistryState() {
+  const R = window.__PR;
+  return {
+    registryReady: (R && R.registryReady) ? { ...R.registryReady } : { items: true, powers: true, domains: true },
+    registryVersion: (R && R.registryVersion) || 0,
+  };
+}
+const registryAllReady = (r) => !!(r && r.items && r.powers && r.domains);
+
 function useData() {
   const [data, setData] = useState(() => ({
     people: loadPeople(),
     atlas: loadAtlas(),
     dataReady: !window.__PR || window.__PR.dataReady !== false,
     corpusVersion: (window.__PR && window.__PR.corpusVersion) || 0,
+    ...readRegistryState(),
   }));
-  const { people, atlas, dataReady, corpusVersion } = data;
+  const { people, atlas, dataReady, corpusVersion, registryReady, registryVersion } = data;
   const ready = people.length > 0;
 
   useEffect(() => {
@@ -545,6 +558,7 @@ function useData() {
       atlas: loadAtlas(),
       dataReady: window.__PR.dataReady === true,
       corpusVersion: window.__PR.corpusVersion || 0,
+      ...readRegistryState(),
     });
     window.addEventListener('pr:index', refresh);
     window.addEventListener('pr:ready', refresh);
@@ -557,6 +571,19 @@ function useData() {
     };
   // Mount-only by design: `data` here is the first-render snapshot, used only
   // to decide whether anything can still arrive.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Registry tiers arrive independently of the corpus. Update ONLY the registry
+  // flags on 'pr:registry' — reloading people here would rebuild byId/filtered/
+  // searchHaystacks for a registry install that never touched the figure graph.
+  useEffect(() => {
+    if (data.dataReady && registryAllReady(data.registryReady)) return; // sync: nothing arrives
+    const onReg = () => setData((prev) => ({ ...prev, ...readRegistryState() }));
+    window.addEventListener('pr:registry', onReg);
+    // Catch a tier installed between the initializer and this subscription.
+    if (((window.__PR && window.__PR.registryVersion) || 0) !== data.registryVersion) onReg();
+    return () => window.removeEventListener('pr:registry', onReg);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -579,7 +606,7 @@ function useData() {
     return m;
   }, [people]);
 
-  return { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion };
+  return { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, registryReady, registryVersion };
 }
 
 // ── Hook: useFilters ─────────────────────────────────────────────────────
@@ -808,6 +835,11 @@ const dedupeSources = (arr) => {
 };
 
 function buildPowerRegistry() {
+  // Precomputed tier (the Pages shell fetches powers.json — the exact shape
+  // this function produces — on first Powers navigation, so the view never
+  // waits on the 20 MB corpus). When present it IS the registry; return it.
+  const pre = window.__PR && window.__PR.powers;
+  if (pre) return pre;
   const source = window.__PR && window.__PR.seedPeople;
   if (_powerReg && _powerRegSrc === source) return _powerReg;
   const people = source || {};
@@ -862,6 +894,9 @@ function buildPowerRegistry() {
 }
 
 function buildDomainRegistry() {
+  // Precomputed tier (domains.json), same contract as buildPowerRegistry.
+  const pre = window.__PR && window.__PR.domains;
+  if (pre) return pre;
   const source = window.__PR && window.__PR.seedPeople;
   if (_domainReg && _domainRegSrc === source) return _domainReg;
   const people = source || {};

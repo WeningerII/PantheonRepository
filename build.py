@@ -111,7 +111,9 @@ def main() -> None:
     proc = subprocess.run(['node', 'scripts/build-tiers.cjs'], cwd=ROOT)
     if proc.returncode != 0:
         sys.exit('!! scripts/build-tiers.cjs failed')
-    tiers = json.loads((DIST / 'data' / 'meta.json').read_text(encoding='utf-8'))['files']
+    meta = json.loads((DIST / 'data' / 'meta.json').read_text(encoding='utf-8'))
+    tiers = meta['files']
+    registry = meta['registry']
     data_name = 'pr-boot.js'
     data_body = (APP / data_name).read_text(encoding='utf-8')
 
@@ -336,6 +338,11 @@ __UI_SCRIPTS__
         data_layer = (
             '<!-- Data layer (async tiers; hashed names pinned from dist/data/meta.json) -->\n'
             f"<script>window.__PR_DATA = {{ index: 'data/{tiers['index']}', corpus: 'data/{tiers['corpus']}' }};</script>\n"
+            # The per-view registry tiers, kept in their own global so __PR_DATA
+            # stays the two upfront tiers. pr-boot fetches these lazily on the
+            # first Items/Powers/Domains navigation — those views no longer wait
+            # on the 20 MB corpus.
+            f"<script>window.__PR_REGISTRY_DATA = {{ items: 'data/{registry['items']}', powers: 'data/{registry['powers']}', domains: 'data/{registry['domains']}' }};</script>\n"
             f'<script src="data/{tiers["core"]}"></script>\n'
             '\n'
             '<!-- pr-boot.js (async data loader, inlined) -->\n'

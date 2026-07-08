@@ -43,6 +43,12 @@ if ((window.__PR && window.__PR.seedPeople) || !window.__PR_DATA) {
   const PR = window.__PR = window.__PR || {};
   PR.dataReady = true;
   PR.ready = Promise.resolve(PR);
+  // The registry views build from the synchronously-present corpus — nothing to
+  // fetch, everything ready. loadRegistry is a resolved no-op so the shared
+  // consumer code (Shell's per-view load trigger) is mode-agnostic.
+  PR.registryReady = { items: true, powers: true, domains: true };
+  PR.registryVersion = 0;
+  PR.loadRegistry = function () { return PR.ready; };
   return;
 }
 
@@ -135,6 +141,11 @@ ready.catch(() => {});
 Object.assign(PR, {
   dataReady: false,
   corpusVersion: 0,
+  // Per-view registry readiness — each flips true when its tier installs (or
+  // when the full corpus lands). registryVersion bumps on every install so the
+  // UI's list memos re-read the newly-available registry. See loadRegistry.
+  registryReady: { items: false, powers: false, domains: false },
+  registryVersion: 0,
   ready,
   getEntryDates,
   formatFraction,
@@ -220,6 +231,43 @@ const persist = (snapshot) => {
   } catch (e) { console.warn('pantheon seed persist failed', e); }
 };
 
+// ─── Lazy per-view registry tiers ───────────────────────────────────────────
+// Items/Powers/Domains render from their own small precomputed tier (items /
+// powers / domains.json — the exact runtime-registry shape state.jsx builds
+// from seedPeople), fetched on first navigation instead of gating on the 20 MB
+// corpus. This is the Browse-from-the-skinny-index pattern applied to the
+// registries: the view unblocks the moment its ~0.4-0.9 MB gz tier lands.
+// Idempotent per kind; a failed fetch (or the corpus arriving first) falls back
+// to the corpus, which carries the same data.
+const registryPromises = {};
+const installRegistry = (kind, map) => {
+  PR[kind] = map;                     // PR.items / PR.powers / PR.domains
+  PR.registryReady[kind] = true;
+  PR.registryVersion++;
+  dispatch('pr:registry');
+};
+const loadRegistry = (kind) => {
+  if (!PR.registryReady || !(kind in PR.registryReady)) return ready;
+  if (PR.registryReady[kind]) return Promise.resolve(PR);
+  if (registryPromises[kind]) return registryPromises[kind];
+  const urls = window.__PR_REGISTRY_DATA;
+  const url = urls && urls[kind];
+  // No tier URL (embedded artifact): the corpus carries every registry — wait
+  // on it rather than fetching a file that was never emitted.
+  if (!url) return (registryPromises[kind] = ready);
+  const p = fetchTier(url, 'json')
+    .then((map) => { installRegistry(kind, map); return PR; })
+    .catch((err) => {
+      // Not fatal: the corpus provides the same data. Fall back to it, and drop
+      // the cached rejection so the corpus arrival can still mark this ready.
+      console.warn('[pr-boot] registry tier ' + kind + ' failed; falling back to corpus', err);
+      delete registryPromises[kind];
+      return ready;
+    });
+  return (registryPromises[kind] = p);
+};
+PR.loadRegistry = loadRegistry;
+
 // ─── Install stages — ONE path for both sources ─────────────────────────────
 // Everything behavioral (corpusVersion, the events, dataReady, the persist
 // tail, ready resolution) lives here so the fetched and embedded sources
@@ -229,12 +277,24 @@ const installIndex = (records) => {
   PR.seedPeople = adaptIndex(records);
   PR.corpusVersion++;
   dispatch('pr:index');
+  // Warm the small registry tiers on idle so the first Items/Powers/Domains
+  // navigation is instant. Never blocks the corpus (already in flight), and is
+  // inert wherever there is no idle callback (jsdom) or no tier URLs (artifact).
+  if (typeof window.requestIdleCallback === 'function' && window.__PR_REGISTRY_DATA) {
+    window.requestIdleCallback(() => { loadRegistry('items'); loadRegistry('powers'); loadRegistry('domains'); });
+  }
 };
 const installCorpus = (snapshot) => {
   // {seedPeople, divinity, traditionMix, inheritedPowers, items, seedAtlas}
   Object.assign(PR, snapshot);
   PR.corpusVersion++;
   PR.dataReady = true;
+  // The full corpus carries every registry's source data (seedPeople faculties
+  // / domains, PR.items) — any registry tier that never arrived is now
+  // satisfiable, so unblock all three views. No separate 'pr:registry' dispatch:
+  // the 'pr:ready' below already refreshes the UI, which re-reads registryReady.
+  for (const k of Object.keys(PR.registryReady)) PR.registryReady[k] = true;
+  PR.registryVersion++;
   persist(snapshot);
   dispatch('pr:ready');
   resolveReady(PR);

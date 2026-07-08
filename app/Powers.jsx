@@ -29,6 +29,46 @@ function powerBadge(p) {
   return null;
 }
 
+// Precompute the per-row derived fields ONCE per registry record: the
+// heritability bucket (a chain of up to ~10 regex tests over free text), the
+// glyph flag, and a lowercased search haystack. Before this, each was recomputed
+// on every one of the tens of thousands of row renders the reveal cascade emits
+// (and the search join rebuilt per keystroke) — the bulk of the view's cost.
+// Idempotent: the registry record is immutable, so `_dec` guards the work.
+function decoratePower(p) {
+  if (p._dec) return p;
+  p._herit = powerHeritBucket(p.inheritability);
+  p._glyph = powIsGlyph(p.term && p.term.script);
+  p._search = [p.displayName, p.id, p.domainTag, p.term && p.term.value,
+    ...(p.scopeTags || [])].join(' ').toLowerCase();
+  p._dec = true;
+  return p;
+}
+
+// Memoized index row — the Browse pattern applied to the registry. With a
+// stable `onOpen` and the immutable record, React.memo bails out of re-render,
+// so a reveal batch (or a version bump, keystroke, or detail open) reconciles
+// only genuinely-changed rows instead of every mounted one.
+const PowerRow = React.memo(function PowerRow({ p, selected, onOpen }) {
+  const badge = powerBadge(p);
+  const hb = p._herit;
+  return (
+    <button
+      className={'item-row power-index-row' + (selected ? ' on' : '')}
+      onClick={() => onOpen(p.id)}
+    >
+      <span className={'item-row-name' + (p._glyph ? ' glyph' : '')}>{p.displayName}</span>
+      <span className="item-row-meta">
+        {p.domainTag && <span className="item-row-class">{humanizePow(p.domainTag)}</span>}
+        {hb !== 'none' && hb !== 'unspecified' && (
+          <span className={'power-herit herit-' + hb}>{powerHeritLabel(hb)}</span>
+        )}
+        {badge && <span className={'item-badge ' + badge.cls}>{badge.label}</span>}
+      </span>
+    </button>
+  );
+});
+
 // Heritability is authored as free text — dozens of variants ("none",
 // "non-inheritable", "unique-to-bearer", "patrilineal", "lineage-conferred",
 // "function of the supreme god"…). Canonicalize into a small, meaningful set so
@@ -63,23 +103,30 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
   const [q, setQ] = __pState('');
   const [herit, setHerit] = __pState(() => new Set());
 
+  // Stable open callback so React.memo(PowerRow) actually skips re-renders —
+  // Shell's openPower is a fresh reference each render (it closes over the
+  // per-render selection object).
+  const onOpenRef = __pRef(null); onOpenRef.current = onOpenPower;
+  const stableOpen = __pMemo(() => (id) => onOpenRef.current && onOpenRef.current(id), []);
+
+  // Decorate every record once (heritability bucket + search haystack) before
+  // anything reads those fields. Returns the same array — the fields live on the
+  // records — so downstream memo identities are unaffected.
+  const decorated = __pMemo(() => { for (const p of powers) decoratePower(p); return powers; }, [powers]);
+
   const heritOptions = __pMemo(
-    () => window.buildFacetOptions(powers, (p) => powerHeritBucket(p.inheritability), powerHeritLabel, POWER_HERIT_RANK),
-    [powers]);
+    () => window.buildFacetOptions(decorated, (p) => p._herit, powerHeritLabel, POWER_HERIT_RANK),
+    [decorated]);
   const faceted = __pMemo(
-    () => (herit.size ? powers.filter((p) => herit.has(powerHeritBucket(p.inheritability))) : powers),
-    [powers, herit]);
+    () => (herit.size ? decorated.filter((p) => herit.has(p._herit)) : decorated),
+    [decorated, herit]);
 
   // Post-facet, post-query list — drives the header count/summary so they
   // track the search box, not just the heritability facet.
   const visible = __pMemo(() => {
     const query = q.trim().toLowerCase();
     if (!query) return faceted;
-    return faceted.filter((p) => {
-      const hay = [p.displayName, p.id, p.domainTag, p.term && p.term.value,
-        ...(p.scopeTags || [])].join(' ').toLowerCase();
-      return hay.includes(query);
-    });
+    return faceted.filter((p) => p._search.includes(query));
   }, [faceted, q]);
 
   const groups = __pMemo(() => {
@@ -143,33 +190,16 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
 
       <div className="items-grid powers-grid">
         {revealedGroups.map(([letter, list]) => (
-          <div className="items-group powers-group" key={letter}>
+          // --group-h: measured ~50 px/row + ~26 px header — sizes off-screen
+          // groups accurately so the scrollbar doesn't lurch (see styles.css).
+          <div className="items-group powers-group" key={letter} style={{ '--group-h': (26 + list.length * 50) + 'px' }}>
             <h3 className="items-group-head">
               {letter} <span className="items-group-count">{list.length}</span>
             </h3>
             <div className="items-rows">
-              {list.map((p) => {
-                const badge = powerBadge(p);
-                const hb = powerHeritBucket(p.inheritability);
-                return (
-                  <button
-                    key={p.id}
-                    className={'item-row power-index-row' + (p.id === selectedPowerId ? ' on' : '')}
-                    onClick={() => onOpenPower(p.id)}
-                  >
-                    <span className={'item-row-name' + (powIsGlyph(p.term && p.term.script) ? ' glyph' : '')}>
-                      {p.displayName}
-                    </span>
-                    <span className="item-row-meta">
-                      {p.domainTag && <span className="item-row-class">{humanizePow(p.domainTag)}</span>}
-                      {hb !== 'none' && hb !== 'unspecified' && (
-                        <span className={'power-herit herit-' + hb}>{powerHeritLabel(hb)}</span>
-                      )}
-                      {badge && <span className={'item-badge ' + badge.cls}>{badge.label}</span>}
-                    </span>
-                  </button>
-                );
-              })}
+              {list.map((p) => (
+                <PowerRow key={p.id} p={p} selected={p.id === selectedPowerId} onOpen={stableOpen} />
+              ))}
             </div>
           </div>
         ))}

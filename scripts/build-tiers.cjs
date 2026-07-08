@@ -267,11 +267,17 @@ function main() {
   let detailBytes = 0;
   buckets.forEach((b, i) => { detailBytes += writeJSON(path.join('details', `${i}.json`), sortedObj(b)); });
 
-  // TIER 4 — aggregates
+  // TIER 4 — aggregates (per-view registries, fetched lazily when the Items /
+  // Powers / Domains view is opened — NOT gated on the 20 MB corpus). These are
+  // the exact runtime-registry shapes state.jsx builds from seedPeople, so the
+  // views render from them the way Browse renders from the skinny index. Hashed
+  // like the other tiers (the only cache-bust under Pages' fixed max-age=600).
   const items = sortedObj(PR.items);
   const powers = sortedObj(buildPowers(P, inh));
   const domains = sortedObj(buildDomains(P));
   const itemsBody = JSON.stringify(items);
+  const powersBody = JSON.stringify(powers);
+  const domainsBody = JSON.stringify(domains);
 
   // Post-pipeline snapshot. seedPeople and inheritedPowers keep vm insertion
   // order — it is semantic: the runtime registries (state.jsx
@@ -306,19 +312,27 @@ function main() {
     corpus: `corpus-${hash12(corpusBody)}.json`,
     edges: `edges-${hash12(edgesBody)}.json`,
   };
+  // The per-view registries are content-hashed and recorded under meta.registry
+  // (kept separate from meta.files, which pins the upfront/core tiers). pr-boot
+  // fetches these on the first Items/Powers/Domains navigation.
+  const registry = {
+    items: `items-${hash12(itemsBody)}.json`,
+    powers: `powers-${hash12(powersBody)}.json`,
+    domains: `domains-${hash12(domainsBody)}.json`,
+  };
   const coreBytes = write(files.core, coreBody);
   const idxBytes = write(files.index, indexBody);
   const corpusBytes = write(files.corpus, corpusBody);
   const edgeBytes = write(files.edges, edgesBody);
-  const itemBytes = write('items.json', itemsBody);
-  writeJSON('powers.json', powers);
-  writeJSON('domains.json', domains);
+  const itemBytes = write(registry.items, itemsBody);
+  const powerBytes = write(registry.powers, powersBody);
+  const domainBytes = write(registry.domains, domainsBody);
 
   writeJSON('meta.json', {
     schema: SCHEMA, buckets: BUCKETS, bucketHash: 'sum-charcodes-mod-buckets',
     figures: ids.length, items: Object.keys(items).length,
     powers: Object.keys(powers).length, domains: Object.keys(domains).length,
-    files,
+    files, registry,
   });
 
   console.log(`build-tiers: ${ids.length} figures -> dist/data/ (schema ${SCHEMA})`);
@@ -327,7 +341,9 @@ function main() {
   console.log(`  ${files.edges}   ${MB(edgeBytes)} raw / ${MB(gz(edgesBody))} gz MB  (on graph/lineage/detail)`);
   console.log(`  ${files.corpus}   ${MB(corpusBytes)} raw / ${MB(gz(corpusBody))} gz MB  (full snapshot — async)`);
   console.log(`  details/     ${BUCKETS} shards, ${MB(detailBytes)} MB total (lazy per open)`);
-  console.log(`  items.json   ${MB(itemBytes)} raw / ${MB(gz(itemsBody))} gz MB (lazy per view)`);
+  console.log(`  ${registry.items}   ${MB(itemBytes)} raw / ${MB(gz(itemsBody))} gz MB (lazy per view)`);
+  console.log(`  ${registry.powers}   ${MB(powerBytes)} raw / ${MB(gz(powersBody))} gz MB (lazy per view)`);
+  console.log(`  ${registry.domains}   ${MB(domainBytes)} raw / ${MB(gz(domainsBody))} gz MB (lazy per view)`);
 }
 
 if (require.main === module) main();
