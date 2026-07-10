@@ -28,6 +28,15 @@ const LAYER_STYLES = {
 
 const LAYER_ORDER = ['core', 'extent', 'colonies', 'successors', 'diaspora'];
 
+// Locator dots for tiny territories. Small islands and city-states project to a
+// sub-pixel fill at world zoom — and the coarse 110m land mask omits most atolls
+// entirely, so their fill is clipped to nothing and only the floating label
+// survives. A territory whose largest polygon covers fewer than this many screen
+// px² gets a constant-size mark at its core centroid instead, so an atoll reads
+// as a point. The real polygon takes over once zoom grows it past the floor.
+const DOT_MIN_AREA_PX2 = 90;   // ~9.5×9.5 px — below this, draw a dot
+const DOT_R = 3.0;             // dot radius in screen px (kept constant via 1/zoomK)
+
 // Cache world basemap across mounts. Loads countries (so we can render
 // borders) AND derives the land outline (so we can clip tradition
 // polygons to actual landmass via SVG clip-path).
@@ -294,6 +303,7 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
           d: path(p.feature),
           centroid: path.centroid(p.feature),
           bounds: path.bounds(p.feature),
+          area0: path.area(p.feature),   // projected px² at zoom 1 — scaled by zoomK² at draw time
         })).filter(p => p.d),
       })).filter(t => t.polys.length);
     });
@@ -618,6 +628,47 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                 })}
               </g>
 
+              {/* Locator dots — UNCLIPPED so they survive the coarse land mask
+                  that omits small islands. A territory whose largest polygon is
+                  smaller than DOT_MIN_AREA_PX2 on screen (atolls, city-states)
+                  gets a constant-size mark at its core centroid, carrying the
+                  same hover/click as the polygon so an otherwise-invisible island
+                  is still inspectable. The area test scales with zoomK², so the
+                  dot yields to the real polygon once zoom grows it past the floor. */}
+              {layers.core && (() => {
+                const out = [];
+                for (const { tradition, polys, color } of renderedTraditions) {
+                  const core = polys.find(p => p.kind === 'core') || polys[0];
+                  if (!core?.centroid || !isFinite(core.centroid[0]) || !isFinite(core.centroid[1])) continue;
+                  const footprint = polys.reduce((m, p) => Math.max(m, p.area0 || 0), 0) * zoomK * zoomK;
+                  if (footprint >= DOT_MIN_AREA_PX2) continue;   // big enough to read as a shape
+                  out.push({ tradition, color, cx: core.centroid[0], cy: core.centroid[1], raw: core.raw });
+                }
+                const R = DOT_R / zoomK;
+                return out.map(({ tradition, color, cx, cy, raw }) => {
+                  const dim = focused && focused !== tradition;
+                  const isFocus = focused === tradition;
+                  const isHover = hover?.tradition === tradition;
+                  return (
+                    <circle
+                      key={'dot-' + tradition}
+                      cx={cx} cy={cy}
+                      r={R * (isFocus ? 1.7 : isHover ? 1.35 : 1)}
+                      fill={color}
+                      fillOpacity={dim ? 0.2 : 0.92}
+                      stroke="rgba(250,250,247,0.92)"
+                      strokeWidth={1.1}
+                      vectorEffect="non-scaling-stroke"
+                      style={{ cursor: 'pointer', transition: 'opacity .15s' }}
+                      onMouseEnter={(e) => { positionTooltip(e.clientX, e.clientY); setHover({ tradition, polygon: raw }); }}
+                      onMouseMove={(e) => positionTooltip(e.clientX, e.clientY)}
+                      onMouseLeave={() => setHover(null)}
+                      onClick={(e) => { e.stopPropagation(); setFocused(prev => prev === tradition ? null : tradition); }}
+                    />
+                  );
+                });
+              })()}
+
               {/* Tradition labels (core centroid). Greedy collision-aware
                   placement: largest polygons get label priority, smaller
                   ones skip if their rect overlaps an already-placed label.
@@ -640,7 +691,11 @@ function Atlas({ atlas, byId, focused, setFocused, traditionFilter, onOpenDetail
                   // Approximate label rect (serif average ~0.55em char width)
                   const w = tradition.length * fontSize * 0.55 + 6 * scale;
                   const h = fontSize * 1.2 + 4 * scale;
-                  const [cx, cy] = core.centroid;
+                  const [cx, cy0] = core.centroid;
+                  // A dotted (tiny) territory lifts its label off the mark so the
+                  // text doesn't sit dead-center on a 3 px dot.
+                  const tiny = polys.reduce((m, p) => Math.max(m, p.area0 || 0), 0) * zoomK * zoomK < DOT_MIN_AREA_PX2;
+                  const cy = tiny ? cy0 - (DOT_R + 3) * scale : cy0;
                   const rect = [cx - w / 2, cy - h / 2, w, h];
 
                   // Always show focused / hovered
