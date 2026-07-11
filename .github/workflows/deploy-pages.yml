@@ -86,6 +86,11 @@ jobs:
           cp -R dist/data _site/data
           cp dist/pantheon-registry.html _site/artifact.html
           sed 's#dist/pantheon-registry\.html\##./artifact.html\##g' DOGFOOD.md > _site/DOGFOOD.md
+          # Custom domain: the CNAME must ride in the published artifact for an
+          # Actions-based deploy (there is no branch for GitHub to write it to),
+          # so every deploy re-asserts the domain. Must match the primary custom
+          # domain set in Settings → Pages.
+          echo 'www.listofgods.com' > _site/CNAME
 
       # Reads the repo's Pages config. Pages must be enabled once in Settings
       # (Source: GitHub Actions) — GitHub does not permit the Actions token to
