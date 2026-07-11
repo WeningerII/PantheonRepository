@@ -3277,3 +3277,234 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   font: 500 8.5px/1.4 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--accent);
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   MOBILE / RESPONSIVE PASS (phone tier)
+   Additive: every rule below is gated behind `max-width: 760px` or
+   `pointer: coarse`, so the desktop experience is byte-for-byte unchanged.
+   Placed at the END of the file, after the existing 700/720/820px queries, so
+   re-shows (e.g. the brand name, which 820px hides) win on source order.
+   All values reuse the :root tokens — no new colors. Mirrors design_handoff.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Change 1 — touch-target + legibility floor (touch devices, any width) ── */
+@media (pointer: coarse) {
+  .btn              { height: 40px; padding: 0 14px; font-size: 11px; }
+  .btn.btn-sm       { height: 36px; padding: 0 12px; font-size: 10.5px; }
+  .btn-group .btn   { height: 40px; }
+  .rail-row         { padding: 10px 8px; min-height: 44px; }
+  .rail-row-trad .rail-trad-name { font-size: 14px; }
+  .detail-bar .close { width: 40px; height: 40px; }
+  /* keyboard affordances are noise without a keyboard */
+  .kbd-hint, .rail-shortcuts, .topbar-search .kbd { display: none; }
+}
+
+/* Hide-by-default for the phone-only chrome. Declared BEFORE the ≤760px
+   blocks so every "show" rule inside them (which come later in source order)
+   wins at phone width — a base reset placed after them would override the
+   reveal and keep these permanently hidden. */
+.mobile-nav, .mobile-more, .mobile-scrim, .mobile-filter-btn { display: none; }
+
+/* ── Changes 2 + 3 — phone layout ────────────────────────────────────────── */
+@media (max-width: 760px) {
+  :root { --bar-h: 52px; }
+
+  /* Topbar grows to hold a brand row + a search row; single column below. */
+  .shell      { grid-template-rows: auto 1fr; }
+  .shell-body { grid-template-columns: 1fr; }
+  .topbar     { grid-template-columns: 1fr; }
+  .topbar-actions { display: none; }            /* view-switcher → bottom nav */
+
+  /* Grid/flex items default to min-width:auto, so a wide descendant — the
+     desktop table's min-content, the 960px atlas map SVG — stretches the whole
+     shell past the viewport and scrolls the PAGE sideways. Zero it on each
+     track so the column collapses to the phone width and any genuinely wide
+     content scrolls inside its own overflow container (.browse-scroll,
+     .atlas-canvas) instead of pushing the body. */
+  .shell-body, .shell-main, .view-pane { min-width: 0; }
+
+  /* The Atlas keeps its full desktop toolbar (find, layers, time anchors,
+     stats) and era scrubber — both wider than a phone. Let those two rows
+     scroll horizontally inside themselves rather than push the page; the map
+     canvas already clips (overflow:hidden). The atlas territories/rendering
+     are untouched — this only contains the chrome at phone width. */
+  .atlas-wrap { min-width: 0; }
+  .atlas-bar, .atlas-time { overflow-x: auto; }
+  .atlas-bar > *, .atlas-time > * { flex-shrink: 0; }
+
+  .topbar-brand {
+    grid-row: 1; border-right: 0;
+    border-bottom: 1px solid var(--rule-2);
+    padding: 0 14px; min-height: var(--bar-h);
+  }
+  .topbar-brand .name { display: inline; font-size: 17px; }   /* re-show (820px hid it) */
+  .topbar-brand .meta { display: inline; }                    /* re-show (700px hid it) */
+
+  .topbar-search {
+    grid-row: 2; gap: 10px;
+    padding: 10px 14px; border-bottom: 1px solid var(--rule);
+  }
+  /* search reads as a real field on mobile: bordered, rounded, tappable */
+  .topbar-search .search-field {
+    flex: 1; display: flex; align-items: center; gap: 8px; min-width: 0;
+    height: 44px; padding: 0 12px;
+    border: 1px solid var(--rule); border-radius: 10px; background: var(--surface);
+  }
+  .topbar-search input { font-size: 16px; }     /* ≥16px prevents iOS focus-zoom */
+  .mobile-filter-btn {
+    flex-shrink: 0; width: 44px; height: 44px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid var(--rule); border-radius: 10px;
+    background: var(--surface); color: var(--ink-2); position: relative;
+  }
+  .mobile-filter-btn.has-filters::after {
+    content: ''; position: absolute; top: 7px; right: 7px;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+  }
+
+  /* Type-size floor on the smallest labels. */
+  .browse-head .filter-summary .figunit,
+  .rail-row .count,
+  .rail-section h3 .rail-section-count { font-size: 11px; }
+  .browse-table td.cell-name { font-size: 15.5px; }
+
+  /* ── Rail → slide-up filter-&-sort sheet ── */
+  .shell-rail {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    max-height: 84vh; z-index: 60;
+    border-right: 0; border-top: 1px solid var(--rule);
+    border-radius: 14px 14px 0 0;
+    box-shadow: 0 -14px 34px rgba(0,0,0,0.16);
+    transform: translateY(101%);
+    transition: transform .26s cubic-bezier(.16,.84,.36,1);
+    display: flex; flex-direction: column; overflow-y: auto;
+  }
+  body.rail-open .shell-rail { transform: translateY(0); }
+
+  .rail-sheet-head {
+    position: sticky; top: 0; z-index: 2;
+    display: flex; align-items: center; gap: 10px;
+    padding: 18px 16px 10px; background: var(--surface);
+    border-bottom: 1px solid var(--rule-2);
+  }
+  .rail-sheet-grip {
+    position: absolute; top: 7px; left: 50%; transform: translateX(-50%);
+    width: 36px; height: 4px; border-radius: 2px; background: var(--rule);
+  }
+  .rail-sheet-title { font: 500 17px/1 var(--font-serif); color: var(--ink); }
+  .rail-sheet-reset {
+    margin-left: auto; font: 500 11px/1 var(--font-mono); letter-spacing: .08em;
+    text-transform: uppercase; color: var(--accent); padding: 8px 6px;
+  }
+  .rail-sheet-close {
+    width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
+    font-size: 22px; line-height: 1; color: var(--mute); border-radius: 50%;
+  }
+  .rail-sheet-apply {
+    position: sticky; bottom: 0; z-index: 2; margin-top: auto;
+    padding: 12px 14px calc(12px + env(safe-area-inset-bottom, 0px));
+    background: var(--surface); border-top: 1px solid var(--rule);
+    width: 100%;
+  }
+  .rail-sheet-apply span {
+    display: flex; align-items: center; justify-content: center;
+    height: 48px; border-radius: 9px; background: var(--accent); color: #fff;
+    font: 600 12.5px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase;
+  }
+
+  /* ── Browse table → cards (CSS-only) ── */
+  .browse-head   { padding: 12px 14px; flex-wrap: wrap; gap: 10px 12px; }
+  .browse-scroll { padding-bottom: 76px; }               /* clear the bottom nav */
+  .browse-table, .browse-table tbody, .browse-table tr, .browse-table td { display: block; width: 100%; }
+  .browse-table thead { display: none; }
+  .browse-table tbody tr:not(.browse-group-header) {
+    position: relative;
+    border: 1px solid var(--rule); border-radius: 8px;
+    margin: 0 14px 10px; padding: 12px 14px 12px 18px;
+    overflow: hidden;
+  }
+  .browse-table td { min-height: 0; height: auto; padding: 2px 0; border: 0; }
+  /* The desktop table pins each cell to a fixed row height (52/58px) so the
+     dense grid aligns; stacked into a card those three heights add up to a
+     tall block of dead space. Reset the alt-line variant too — it out-specifies
+     the rule above and would otherwise re-impose min-height: 58px per cell. */
+  .browse-table tbody tr:has(.alt-line) td { min-height: 0; height: auto; }
+  /* full-height tier stripe on the card's left edge */
+  .browse-table tbody tr:not(.browse-group-header) td.cell-name { padding-left: 0; }
+  .browse-table tbody tr:not(.browse-group-header) td.cell-name::before { display: none; }
+  .browse-table tbody tr:not(.browse-group-header)::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: #555148;
+  }
+  .browse-table tbody tr.type-row-deity::before     { background: #DDA017; }
+  .browse-table tbody tr.type-row-numen::before     { background: #2E9C9C; }
+  .browse-table tbody tr.type-row-demigod::before   { background: #B45C2D; }
+  .browse-table tbody tr.type-row-quartigod::before { background: #6E4C9E; }
+  .browse-table tbody tr.type-row-scion::before     { background: #3A8A55; }
+  .browse-table tbody tr.type-row-mortal::before    { background: #555148; }
+  .browse-table tr.browse-group-header td { padding: 10px 16px 4px; }
+  .browse-table td.cell-era   { margin-top: 4px; }
+
+  /* registry grids clear the nav too */
+  .items-grid { padding-bottom: 76px; }
+
+  /* ── Detail → full screen ── */
+  .detail { left: 0; width: 100%; max-width: 100%; border-left: 0; box-shadow: none; }
+}
+
+/* ── Change 4 — bottom navigation + "More" registries sheet ──────────────── */
+@media (max-width: 760px) {
+  .mobile-scrim { display: block; position: fixed; inset: 0; z-index: 55; background: var(--backdrop); }
+
+  .mobile-nav {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+    display: flex; height: 60px;
+    background: var(--surface); border-top: 1px solid var(--rule);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .mobile-nav button {
+    position: relative; flex: 1;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+    font: 500 10px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase;
+    color: var(--mute);
+  }
+  .mobile-nav button.on { color: var(--ink); }
+  .mobile-nav button.on::before {
+    content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 20px; height: 2px; border-radius: 1px; background: var(--accent);
+  }
+  .mobile-nav button svg { display: block; }
+
+  .mobile-more {
+    display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    background: var(--surface);
+    border-top: 1px solid var(--rule); border-radius: 14px 14px 0 0;
+    box-shadow: 0 -14px 34px rgba(0,0,0,0.16);
+    transform: translateY(101%);
+    transition: transform .26s cubic-bezier(.16,.84,.36,1);
+    padding: 18px 0 calc(10px + env(safe-area-inset-bottom, 0px));
+  }
+  body.more-open .mobile-more { transform: translateY(0); }
+  .mobile-more-grip {
+    position: absolute; top: 7px; left: 50%; transform: translateX(-50%);
+    width: 36px; height: 4px; border-radius: 2px; background: var(--rule);
+  }
+  .mobile-more-row {
+    display: flex; align-items: center; gap: 14px; width: 100%;
+    padding: 16px 20px; text-align: left;
+  }
+  .mobile-more-row.on { background: var(--surface-2); }
+  .mobile-more-label { font: 500 17px/1.1 var(--font-serif); color: var(--ink); }
+  .mobile-more-sub   { font: 400 11.5px/1.3 var(--font-mono); color: var(--mute); margin-top: 2px; }
+  .mobile-more-arrow { margin-left: auto; color: var(--faint); font-size: 16px; }
+}
+
+@media (max-width: 760px) {
+  body.rail-open, body.more-open { overflow: hidden; }   /* scroll-lock behind a sheet */
+  .mobile-more-text { display: flex; flex-direction: column; gap: 2px; }
+}
+/* The search-field wrapper is transparent on desktop so it can't change the
+   topbar layout; the ≤760px block above restyles it into a bordered field.
+   Scoped to min-width:761 so it never overrides that mobile rule. */
+@media (min-width: 761px) {
+  .topbar-search .search-field { display: contents; }
+}

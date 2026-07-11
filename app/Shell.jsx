@@ -4,7 +4,32 @@
 
 const { useState: __sState, useEffect: __sEff, useRef: __sRef, useCallback: __sCb, useMemo: __sMemo } = React;
 
-function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK }) {
+// Tracks the phone breakpoint (mirrors the max-width:760px CSS tier) so the
+// bottom nav, the filter sheet, and the "More" sheet mount only where the
+// layout actually needs them. jsdom has no matchMedia (the suite never stubs
+// it), so this returns false there — the tests always exercise the desktop
+// tree, and none of the mobile-only chrome renders under them.
+function useIsMobile() {
+  const query = '(max-width: 760px)';
+  const supported = typeof window !== 'undefined' && typeof window.matchMedia === 'function';
+  const [mobile, setMobile] = __sState(() => (supported ? window.matchMedia(query).matches : false));
+  __sEff(() => {
+    if (!supported) return;
+    const mql = window.matchMedia(query);
+    const onChange = () => setMobile(mql.matches);
+    onChange();
+    // addEventListener is the modern API; addListener the Safari<14 fallback.
+    if (mql.addEventListener) mql.addEventListener('change', onChange);
+    else if (mql.addListener) mql.addListener(onChange);
+    return () => {
+      if (mql.removeEventListener) mql.removeEventListener('change', onChange);
+      else if (mql.removeListener) mql.removeListener(onChange);
+    };
+  }, [supported]);
+  return mobile;
+}
+
+function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK, onOpenFilter, hasFilters }) {
   return (
     <div className="topbar">
       <div className="topbar-brand">
@@ -13,21 +38,37 @@ function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK 
         <div className="meta">{totalCount.toLocaleString()} figures</div>
       </div>
       <div className="topbar-search">
-        <svg className="search-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-          <circle cx="7" cy="7" r="4.5" />
-          <line x1="10.3" y1="10.3" x2="14" y2="14" strokeLinecap="round" />
-        </svg>
-        <input
-          ref={searchRef}
-          placeholder="Search figures, alt names, traditions…"
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          aria-label="Search registry"
-        />
-        {query && (
-          <button className="topbar-search-clear" onClick={() => setQuery('')} title="Clear (esc)">clear</button>
-        )}
+        {/* .search-field is transparent on desktop (display:contents) and
+            becomes a bordered field on mobile — see styles.css. */}
+        <div className="search-field">
+          <svg className="search-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+            <circle cx="7" cy="7" r="4.5" />
+            <line x1="10.3" y1="10.3" x2="14" y2="14" strokeLinecap="round" />
+          </svg>
+          <input
+            ref={searchRef}
+            placeholder="Search figures, alt names, traditions…"
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+            aria-label="Search registry"
+          />
+          {query && (
+            <button className="topbar-search-clear" onClick={() => setQuery('')} title="Clear (esc)">clear</button>
+          )}
+        </div>
         <span className="kbd" title="Press / to focus search">/</span>
+        {/* Mobile-only: opens the filter & sort sheet (the rail). Hidden ≥761px. */}
+        <button
+          className={'mobile-filter-btn' + (hasFilters ? ' has-filters' : '')}
+          onClick={onOpenFilter}
+          aria-label="Filter and sort"
+          title="Filter & sort"
+        >
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
+            <line x1="2" y1="4.5" x2="9" y2="4.5" /><circle cx="11.5" cy="4.5" r="1.8" /><line x1="13.3" y1="4.5" x2="14" y2="4.5" />
+            <line x1="2" y1="11.5" x2="3.5" y2="11.5" /><circle cx="5.5" cy="11.5" r="1.8" /><line x1="7.3" y1="11.5" x2="14" y2="11.5" />
+          </svg>
+        </button>
       </div>
       <div className="topbar-actions">
         <button className="btn btn-ghost" onClick={onCmdK} title="Find a figure by name (⌘K)">
@@ -266,6 +307,39 @@ function Shell() {
   const [powerOrderVer, setPowerOrderVer] = __sState(0);
   const [domainOrderVer, setDomainOrderVer] = __sState(0);
   const searchRef = __sRef(null);
+
+  // ── Mobile chrome ────────────────────────────────────────────────────────
+  // Below 760px the rail becomes a slide-up filter sheet and the view tabs
+  // become a bottom nav (Browse/Graph/Atlas + a "More" sheet for the
+  // registries). railOpen / moreOpen drive those two sheets; isMobile gates
+  // whether any of the mobile-only chrome mounts at all.
+  const isMobile = useIsMobile();
+  const [railOpen, setRailOpen] = __sState(false);
+  const [moreOpen, setMoreOpen] = __sState(false);
+  // Any narrowing active → the filter button wears an accent dot. Mirrors the
+  // rail's own "clear" affordances (type / origin / tradition / search).
+  const hasFilters =
+    filters.types.size > 0 ||
+    filters.origin !== 'both' ||
+    filters.traditions.size > 0 ||
+    filters.query.trim().length > 0;
+
+  // Reflect the open sheet onto <body> so the CSS can scroll-lock the page
+  // behind it (body.rail-open / body.more-open). Cleanup clears both on every
+  // change, so a fast open→open transition never leaves a stale class.
+  __sEff(() => {
+    const b = typeof document !== 'undefined' ? document.body : null;
+    if (!b) return;
+    b.classList.toggle('rail-open', railOpen);
+    b.classList.toggle('more-open', moreOpen);
+    return () => { b.classList.remove('rail-open'); b.classList.remove('more-open'); };
+  }, [railOpen, moreOpen]);
+
+  // Leaving the phone tier (rotate / resize to desktop) must not strand an
+  // open sheet — the desktop rail is always visible and has no dismiss.
+  __sEff(() => {
+    if (!isMobile) { setRailOpen(false); setMoreOpen(false); }
+  }, [isMobile]);
 
   // Item / power / domain registry lists. Built eagerly these cost ~56 ms
   // inside the FIRST commit for views most sessions never open — so each is
@@ -576,6 +650,8 @@ function Shell() {
   // (written by the URL-sync effect from these same state values) collapses to
   // a bare #/<view> — mirroring applyHash's mutual-exclusion contract.
   const changeView = __sCb((v) => {
+    setRailOpen(false);       // any view switch dismisses an open mobile sheet
+    setMoreOpen(false);
     selection.setSelectedId(null);
     selection.setCursorIdx(0);
     setGraphFocusId(null);
@@ -638,6 +714,7 @@ function Shell() {
       return;
     }
     if (e.key === 'Escape') {
+      if (railOpen || moreOpen) { setRailOpen(false); setMoreOpen(false); return; }
       if (cmdkOpen) { setCmdkOpen(false); return; }
       if (inField) { e.target.blur(); return; }
       if (selectedItemId) { setSelectedItemId(null); return; }
@@ -753,10 +830,28 @@ function Shell() {
         setQuery={filters.setQuery}
         searchRef={searchRef}
         onCmdK={() => setCmdkOpen(true)}
+        onOpenFilter={() => setRailOpen(true)}
+        hasFilters={hasFilters}
       />
       <div className="shell-body">
         <div className="shell-rail">
+          {/* Sheet chrome (mobile only): grip + title + reset/close above the
+              filters, an "apply" button pinned below. Gated on isMobile so the
+              desktop rail is untouched and the test tree never sees it. */}
+          {isMobile && (
+            <div className="rail-sheet-head">
+              <div className="rail-sheet-grip" aria-hidden="true" />
+              <div className="rail-sheet-title">Filter &amp; sort</div>
+              <button className="rail-sheet-reset" onClick={() => filters.reset()}>Reset</button>
+              <button className="rail-sheet-close" onClick={() => setRailOpen(false)} aria-label="Close filters">×</button>
+            </div>
+          )}
           <Rail filters={filters} view={view} hasDetail={!!(selectedEntry || selectedItemId || selectedPowerId || selectedDomainId)} />
+          {isMobile && (
+            <button className="rail-sheet-apply" onClick={() => setRailOpen(false)}>
+              <span>Show {filters.filtered.length.toLocaleString()} figures</span>
+            </button>
+          )}
         </div>
         <div className="shell-main">
           {(view === 'browse' || leavingView === 'browse') && (
@@ -951,6 +1046,77 @@ function Shell() {
             setCmdkOpen(false);
           }}
         />
+      )}
+
+      {/* ── Mobile chrome ─────────────────────────────────────────────────
+          Rendered only on the phone tier. The scrim dims + dismisses whichever
+          sheet is open (z55: above the nav, below the sheets at z60). The
+          bottom nav replaces the desktop view tabs; its "More" button opens a
+          sheet for the three registry views. */}
+      {isMobile && (railOpen || moreOpen) && (
+        <div
+          className="mobile-scrim"
+          onClick={() => { setRailOpen(false); setMoreOpen(false); }}
+          aria-hidden="true"
+        />
+      )}
+
+      {isMobile && (
+        <nav className="mobile-nav" aria-label="Primary views">
+          <button className={view === 'browse' ? 'on' : ''} onClick={() => changeView('browse')} aria-current={view === 'browse'}>
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
+              <line x1="2.5" y1="4" x2="13.5" y2="4" /><line x1="2.5" y1="8" x2="13.5" y2="8" /><line x1="2.5" y1="12" x2="9.5" y2="12" />
+            </svg>
+            <span>Browse</span>
+          </button>
+          <button className={view === 'graph' ? 'on' : ''} onClick={() => changeView('graph')} aria-current={view === 'graph'}>
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
+              <circle cx="8" cy="3.5" r="1.8" /><circle cx="3.5" cy="12" r="1.8" /><circle cx="12.5" cy="11.5" r="1.8" />
+              <line x1="7" y1="5.1" x2="4.4" y2="10.4" /><line x1="9" y1="5.1" x2="11.6" y2="9.9" /><line x1="5.3" y1="12" x2="10.7" y2="11.6" />
+            </svg>
+            <span>Graph</span>
+          </button>
+          <button className={view === 'atlas' ? 'on' : ''} onClick={() => changeView('atlas')} aria-current={view === 'atlas'}>
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
+              <circle cx="8" cy="8" r="6" /><ellipse cx="8" cy="8" rx="2.6" ry="6" /><line x1="2" y1="8" x2="14" y2="8" />
+            </svg>
+            <span>Atlas</span>
+          </button>
+          <button
+            className={(moreOpen || view === 'items' || view === 'powers' || view === 'domains') ? 'on' : ''}
+            onClick={() => { setRailOpen(false); setMoreOpen(true); }}
+            aria-haspopup="true" aria-expanded={moreOpen}
+          >
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <circle cx="3" cy="8" r="1.4" /><circle cx="8" cy="8" r="1.4" /><circle cx="13" cy="8" r="1.4" />
+            </svg>
+            <span>More</span>
+          </button>
+        </nav>
+      )}
+
+      {isMobile && (
+        <div className="mobile-more" role="dialog" aria-label="More views">
+          <div className="mobile-more-grip" aria-hidden="true" />
+          {[
+            { v: 'items',   label: 'Items',   sub: 'material culture & custody chains' },
+            { v: 'powers',  label: 'Powers',  sub: 'faculties & inheritance' },
+            { v: 'domains', label: 'Domains', sub: 'governed spheres' },
+          ].map(m => (
+            <button
+              key={m.v}
+              className={'mobile-more-row' + (view === m.v ? ' on' : '')}
+              onClick={() => changeView(m.v)}
+              aria-current={view === m.v}
+            >
+              <span className="mobile-more-text">
+                <span className="mobile-more-label">{m.label}</span>
+                <span className="mobile-more-sub">{m.sub}</span>
+              </span>
+              <span className="mobile-more-arrow" aria-hidden="true">›</span>
+            </button>
+          ))}
+        </div>
       )}
     </div>
   );
