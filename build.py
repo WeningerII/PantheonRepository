@@ -42,6 +42,50 @@ JSX_FILES = [
     'Items.jsx', 'Powers.jsx', 'Domains.jsx', 'Graph.jsx', 'Atlas.jsx', 'CommandPalette.jsx', 'Shell.jsx', 'main.jsx',
 ]
 
+# ── Web analytics (Google Analytics 4) ──────────────────────────────────────
+# Set to the GA4 Measurement ID ('G-XXXXXXXXXX') to enable traffic analytics on
+# the DEPLOYED site. The snippet ships only in the Pages shell (build --pages),
+# never in the offline single-file artifact, and at runtime it no-ops on
+# localhost / 127.0.0.1 / file:// so dev builds and the render harness never
+# reach Google or pollute the numbers. While the ID is the placeholder below,
+# nothing is injected at all — the site is byte-identical to no-analytics.
+GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
+
+# gtag.js with hash-router support: GA4's built-in page_view fires once on load
+# and its enhanced-measurement history tracking watches the History API, not
+# '#/' hash routes — so we disable the auto page_view and emit one ourselves on
+# load and on every hashchange, giving each view (#/browse, #/atlas, a figure)
+# its own entry in the reports. __GA_ID__ is substituted at build time.
+_GA_SNIPPET = r"""<!-- Google Analytics 4 (deployed site only; hash-router aware) -->
+<script>
+(function () {
+  var ID = '__GA_ID__';
+  if (ID.indexOf('XXXX') !== -1) return;                       // unset placeholder
+  if (location.protocol === 'file:') return;                   // offline artifact
+  var host = location.hostname;
+  if (host === 'localhost' || host === '127.0.0.1' || host === '') return;  // dev
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+  document.head.appendChild(s);
+  gtag('js', new Date());
+  gtag('config', ID, { send_page_view: false });              // we send views ourselves
+  function sendView() {
+    gtag('event', 'page_view', {
+      page_location: location.href,
+      page_path: location.pathname + location.search + location.hash,
+      page_title: document.title
+    });
+  }
+  sendView();
+  window.addEventListener('hashchange', sendView);
+})();
+</script>
+"""
+
 
 def transform_jsx(filename: str) -> str:
     """Run app/<filename> through Babel via Node and return the transformed code."""
@@ -150,7 +194,7 @@ def main() -> None:
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pantheon Registry</title>
 <meta name="description" content="A browsable, source-cited index of the world's mythological and historical figures — their genealogies, domains, epithets, iconography, and cult (sites, festivals, priesthoods, offerings) — across hundreds of traditions. Client-rendered single-page app." />
-
+__ANALYTICS__
 <!-- Early error trap. Surfaces boot-time errors into the visible boot overlay. -->
 <script>
 (function () {
@@ -385,6 +429,12 @@ __UI_SCRIPTS__
     out = template.replace('__STYLES_CSS__', safe(styles_css))
     out = out.replace('__DATA_LAYER__',  data_layer)
     out = out.replace('__UI_SCRIPTS__', script_blocks)
+    # Analytics rides only the deployed Pages shell — the offline artifact stays
+    # self-contained and never phones home. The token sits on its own line, so
+    # replacing it with '' for the artifact leaves the surrounding blank line
+    # exactly as it was (byte-exact regen holds).
+    analytics = _GA_SNIPPET.replace('__GA_ID__', GA_MEASUREMENT_ID) if pages else ''
+    out = out.replace('__ANALYTICS__', analytics)
 
     # Verify no template tokens remain. /*#__PURE__*/ is Babel output, not a token.
     leftover = [x for x in re.findall(r'__[A-Z_]+__', out) if x != '__PURE__']
