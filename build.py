@@ -49,7 +49,7 @@ JSX_FILES = [
 # localhost / 127.0.0.1 / file:// so dev builds and the render harness never
 # reach Google or pollute the numbers. While the ID is the placeholder below,
 # nothing is injected at all — the site is byte-identical to no-analytics.
-GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
+GA_MEASUREMENT_ID = 'G-K33CL0JZ0V'
 
 # gtag.js with hash-router support: GA4's built-in page_view fires once on load
 # and its enhanced-measurement history tracking watches the History API, not
