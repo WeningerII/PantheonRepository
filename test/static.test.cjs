@@ -99,6 +99,27 @@ test('llms.txt front door + llms-full.txt one-file corpus are generated for LLM 
   assert.match(full, /registry\/greek_hesiod_zeus\.html/, 'a known figure link is present');
 });
 
+test('registry/figures.json is a valid structured catalog for code agents', () => {
+  const data = JSON.parse(read(path.join(REG, 'figures.json')));
+  assert.strictEqual(data.count, meta.figures, 'count matches the figure total');
+  assert.strictEqual(data.figures.length, meta.figures, 'one record per figure');
+  const zeus = data.figures.find((f) => f.id === 'greek_hesiod_zeus');
+  assert.ok(zeus, 'a known figure is present');
+  for (const k of ['id', 'name', 'tradition', 'type', 'parents', 'children', 'domains', 'powers', 'url']) {
+    assert.ok(k in zeus, `record carries "${k}"`);
+  }
+  assert.match(zeus.url, /registry\/greek_hesiod_zeus\.html$/, 'record url points at the figure page');
+});
+
+test('per-tradition llms/<tradition>.txt files: one per tradition + an index', () => {
+  const idx = read(path.join(SITE, 'llms', 'index.txt'));
+  assert.match(idx, /per-tradition files/, 'index header');
+  assert.match(idx, /llms\/norse\.txt/, 'index lists a known tradition file');
+  const norse = read(path.join(SITE, 'llms', 'norse.txt'));
+  assert.match(norse, /# Norse — Pantheon Registry/, 'per-tradition header');
+  assert.match(norse, /registry\/norse_\w+\.html/, 'per-tradition file links figure pages');
+});
+
 test('HTML is escaped — no unbalanced angle brackets leak from corpus text', () => {
   // A page whose notes/name could contain markup must not break out of tags.
   const zeus = read(path.join(REG, 'greek_hesiod_zeus.html'));
