@@ -341,11 +341,22 @@ __STYLES_CSS__
 <!-- React + ReactDOM + d3 + topojson (no in-browser Babel — JSX is pre-transformed).
      Production React builds for the shipped artifact; every tag is pinned with a
      Subresource Integrity sha384 hash + crossorigin so a tampered CDN response
-     is rejected by the browser. -->
+     is rejected by the browser.
+
+     React + ReactDOM load synchronously: the inline UI scripts destructure React
+     at module-eval time (e.g. Shell.jsx's `const { useState } = React`), so both
+     must exist before those scripts run.
+
+     d3 + topojson are `defer`red — they were the two heaviest render-blockers
+     (d3 alone ~4 s on emulated Slow 4G) yet are used only INSIDE Graph.jsx and
+     Atlas.jsx, and only in effects/handlers, never at eval time. Both views are
+     gated behind `dataReady` (the ~22 MB corpus), so a deferred 76 KB d3 always
+     finishes long before either can render — deferring drops them off the
+     first-paint critical path with no functional risk. -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha384-9dCJK6nh7skY14HrcvlLYlFga9/MehJjL9ONWRflmiXNRuf8p2jiF4Y5PR881PTq" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha384-9dCJK6nh7skY14HrcvlLYlFga9/MehJjL9ONWRflmiXNRuf8p2jiF4Y5PR881PTq" crossorigin="anonymous"></script>
 
 </head>
 <body>

@@ -166,6 +166,19 @@ const fail = (err) => {
   rejectReady(err);
 };
 
+// A corpus failure AFTER the index installed is NOT fatal: Browse runs off the
+// skinny index, so blanking the whole app behind the boot overlay throws away a
+// working experience over a lost enhancement (Graph / Atlas / figure relations /
+// the Items·Powers·Domains registries). Reject ready so awaiters settle, and log
+// loudly — but leave the overlay untouched. main.jsx reveals the index-only app
+// on this rejection. Contrast fail(), reserved for an index failure with nothing
+// to render.
+const corpusFail = (err) => {
+  console.error('[pr-boot] corpus load failed — running on the skinny index. Browse works; the corpus-only views (Graph / Atlas / Items / Powers / Domains) stay unavailable until reload.', err);
+  PR.corpusFailed = true;
+  rejectReady(err);
+};
+
 const fetchTier = (url, as) => fetch(url).then((res) => {
   if (!res.ok) throw new Error('HTTP ' + res.status + ' fetching ' + url);
   return as === 'text' ? res.text() : res.json();
@@ -335,9 +348,14 @@ if (TIERS.embeddedCorpus) {
   corpusFetch.catch(() => {});
 
   indexFetch
-    .then((records) => { installIndex(records); return corpusFetch; })
-    .then(parseOnIdle)
-    .then(installCorpus)
+    .then((records) => {
+      installIndex(records);
+      // Once the skinny index is in, Browse is fully usable — so the corpus
+      // (an enhancement) must degrade, not blank the app. Its failure routes to
+      // corpusFail (reject + log, no overlay); only an INDEX failure reaches the
+      // fatal .catch(fail) below, where there is genuinely nothing to render.
+      return corpusFetch.then(parseOnIdle).then(installCorpus).catch(corpusFail);
+    })
     .catch(fail);
 }
 
