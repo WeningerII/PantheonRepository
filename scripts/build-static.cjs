@@ -195,6 +195,30 @@ const altNames = (p) => ((p.name && p.name.alt) || [])
   .map((a) => (typeof a === 'string' ? a : a && (a.value || a.primary)))
   .filter(Boolean);
 
+// Stable URL slug for a tradition name (used for the per-tradition llms files).
+const slugify = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unattributed';
+
+// Figures grouped by tradition, sorted — shared by the full dump, the JSON dump,
+// and the per-tradition files so all three partition identically.
+function groupByTradition() {
+  const byTrad = new Map();
+  for (const id of IDS) {
+    const t = PEOPLE[id].tradition || 'Unattributed';
+    if (!byTrad.has(t)) byTrad.set(t, []);
+    byTrad.get(t).push(id);
+  }
+  const trads = [...byTrad.keys()].sort((a, b) => a.localeCompare(b));
+  for (const t of trads) byTrad.get(t).sort((a, b) => nameOf(a).localeCompare(nameOf(b)));
+  // Collision-safe slug map (distinct names that slug alike get -2, -3, …).
+  const slugs = new Map(); const used = new Set();
+  for (const t of trads) {
+    let s = slugify(t); const base = s; let i = 2;
+    while (used.has(s)) s = `${base}-${i++}`;
+    used.add(s); slugs.set(t, s);
+  }
+  return { byTrad, trads, slugs };
+}
+
 function llmEntry(id) {
   const p = PEOPLE[id];
   const meta = [p.type, p.temporal && p.temporal.era].filter(Boolean).map(humanize).join(', ');
@@ -206,17 +230,10 @@ function llmEntry(id) {
 }
 
 function llmsFull() {
-  const byTrad = new Map();
-  for (const id of IDS) {
-    const t = PEOPLE[id].tradition || 'Unattributed';
-    if (!byTrad.has(t)) byTrad.set(t, []);
-    byTrad.get(t).push(id);
-  }
-  const trads = [...byTrad.keys()].sort((a, b) => a.localeCompare(b));
-  const sections = trads.map((t) => {
-    const ids = byTrad.get(t).sort((a, b) => nameOf(a).localeCompare(nameOf(b)));
-    return `## ${t} (${ids.length})\n\n` + ids.map(llmEntry).join('\n');
-  }).join('\n\n');
+  const { byTrad, trads } = groupByTradition();
+  const sections = trads.map((t) =>
+    `## ${t} (${byTrad.get(t).length})\n\n` + byTrad.get(t).map(llmEntry).join('\n')
+  ).join('\n\n');
   return `# Pantheon Registry — full figure catalog\n\n`
     + `A source-cited index of ${IDS.length.toLocaleString()} mythological and historical figures across `
     + `${trads.length} traditions. Each entry gives the name, alternate names, type, era, and a one-line `
@@ -237,6 +254,10 @@ function llmsIndex() {
     + `## Whole corpus, one fetch\n\n`
     + `- [/llms-full.txt](${BASE}llms-full.txt): every figure — name, alternate names, type, era, one-line `
     + `summary, page link — grouped by tradition, in Markdown.\n`
+    + `- [/registry/figures.json](${BASE}registry/figures.json): the catalog as structured JSON — id, names, `
+    + `tradition, type, era, divinity, parents, children, domains, powers, summary, url. For code.\n`
+    + `- [/llms/index.txt](${BASE}llms/index.txt): one Markdown file per tradition, to read just one `
+    + `(e.g. ${BASE}llms/norse.txt) without the whole corpus.\n`
     + `- [Registry index](${BASE}registry/index.html): the same, as linked HTML.\n`
     + `- [Sitemap](${BASE}sitemap.xml): every URL.\n\n`
     + `## One figure at a time\n\n`
@@ -257,6 +278,64 @@ function llmsIndex() {
     + `## Interactive\n\n`
     + `- [The app](${BASE}): browse, relationship graph, atlas, and search.\n\n`
     + `All static pages are JavaScript-free and source-cited.\n`;
+}
+
+// ── figures.json — the catalog as structured data for code-based agents ──────
+// A stable, documented subset (not the app's internal 20 MB corpus tier): one
+// record per figure with the fields an agent needs to build on without fetching
+// 4,000 pages. Full relations, epithets, and per-claim citations stay on each
+// figure's page and the MCP server. Emitted one figure per line (valid JSON,
+// diff-friendly).
+function figureRecord(id) {
+  const p = PEOPLE[id];
+  const div = (PR.divinity && PR.divinity[id]) || null;
+  return {
+    id,
+    name: primary(p),
+    altNames: altNames(p),
+    tradition: p.tradition || null,
+    type: p.type || null,
+    era: (p.temporal && p.temporal.era) || null,
+    divinity: div && div.tier ? humanize(div.tier) : null,
+    parents: (p.parentIds || []).filter(Boolean),
+    children: CHILDREN.get(id) || [],
+    domains: (p.domains || []).map((d) => humanize(d.sphereId)).filter(Boolean),
+    powers: (p.faculties || []).map((f) => f.name || humanize(f.id)).filter(Boolean),
+    summary: (p.notes ? String(p.notes) : '').replace(/\s+/g, ' ').trim(),
+    url: `${BASE}registry/${id}.html`,
+  };
+}
+function figuresJson() {
+  const figures = IDS.map(figureRecord);
+  return '{\n'
+    + `"registry": "Pantheon Registry",\n`
+    + `"source": ${JSON.stringify(BASE)},\n`
+    + `"count": ${figures.length},\n`
+    + `"schema": ${JSON.stringify('id, name, altNames[], tradition, type, era, divinity, parents[], children[], domains[], powers[], summary, url. Full typed relations, epithets, and per-claim citations are on each figure\'s url page and via the MCP server at ' + BASE)},\n`
+    + `"figures": [\n`
+    + figures.map((f) => JSON.stringify(f)).join(',\n')
+    + `\n]\n}\n`;
+}
+
+// ── per-tradition Markdown files — read one tradition without the full dump ───
+function traditionFiles() {
+  const { byTrad, trads, slugs } = groupByTradition();
+  const dir = path.join(SITE, 'llms');
+  fs.mkdirSync(dir, { recursive: true });
+  for (const t of trads) {
+    const ids = byTrad.get(t);
+    const body = `# ${t} — Pantheon Registry (${ids.length} figures)\n\n`
+      + `The source-cited figures of the ${t} tradition. Whole corpus: ${BASE}llms-full.txt · `
+      + `Structured JSON: ${BASE}registry/figures.json · App: ${BASE}\n\n`
+      + ids.map(llmEntry).join('\n') + '\n';
+    fs.writeFileSync(path.join(dir, `${slugs.get(t)}.txt`), body);
+  }
+  const index = `# Pantheon Registry — per-tradition files\n\n`
+    + `Each tradition's figures as a standalone Markdown file, so you can read just one without the whole `
+    + `${IDS.length.toLocaleString()}-figure corpus. Filename = the tradition name lowercased with non-alphanumerics as hyphens.\n\n`
+    + trads.map((t) => `- ${t} (${byTrad.get(t).length}): ${BASE}llms/${slugs.get(t)}.txt`).join('\n') + '\n';
+  fs.writeFileSync(path.join(dir, 'index.txt'), index);
+  return trads.length;
 }
 
 // ── inject SEO head + noscript crawl-path into the shell ─────────────────────
@@ -313,9 +392,11 @@ function main() {
   fs.writeFileSync(path.join(SITE, 'robots.txt'), robots());
   fs.writeFileSync(path.join(SITE, 'llms.txt'), llmsIndex());
   fs.writeFileSync(path.join(SITE, 'llms-full.txt'), llmsFull());
+  fs.writeFileSync(path.join(REG, 'figures.json'), figuresJson());
+  const tf = traditionFiles();
   enrichShell();
-  console.log(`[static] wrote ${n} figure pages + registry index, sitemap (${n + 2} urls), robots.txt, llms.txt + llms-full.txt; shell enriched`);
+  console.log(`[static] wrote ${n} figure pages + index, sitemap (${n + 2} urls), robots.txt, llms.txt + llms-full.txt, registry/figures.json, ${tf} per-tradition files; shell enriched`);
 }
 
 if (require.main === module) main();
-module.exports = { figurePage, indexPage, sitemap, llmsIndex, llmsFull };
+module.exports = { figurePage, indexPage, sitemap, llmsIndex, llmsFull, figuresJson, traditionFiles };
