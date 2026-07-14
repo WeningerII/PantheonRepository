@@ -367,7 +367,11 @@ test('an index fetch failure rejects ready and paints the boot overlay', async (
   assert.deepStrictEqual(b.events, [], 'no events may fire when stage 1 fails');
 });
 
-test('a corpus fetch failure after a good index rejects ready but keeps the skinny stage', async () => {
+// Unlike an index failure, a corpus failure after a good index is NOT fatal:
+// Browse runs off the skinny index, so pr-boot degrades instead of painting the
+// overlay. It still rejects ready (awaiters settle) and stays loud in the
+// console; main.jsx reveals the index-only app on that rejection.
+test('a corpus fetch failure after a good index rejects ready, keeps the skinny stage, and does NOT paint the overlay', async () => {
   const b = bootVM({ deny: /corpus-/ });
   const err = await withTimeout(
     b.PR.ready.then(() => { throw new Error('ready must reject'); }, (e) => e),
@@ -376,8 +380,13 @@ test('a corpus fetch failure after a good index rejects ready but keeps the skin
   assert.deepStrictEqual(rt(b.events), [{ type: 'pr:index', corpusVersion: 1, dataReady: false }]);
   assert.strictEqual(b.PR.dataReady, false, 'dataReady must not flip on failure');
   assert.strictEqual(Object.keys(b.PR.seedPeople).length, meta.figures, 'the skinny index must survive the failure');
-  assert.strictEqual(b.els['boot-step'].textContent, 'failed');
-  assert.match(b.els['boot-err'].textContent, /HTTP 404/);
+  assert.strictEqual(b.PR.corpusFailed, true, 'a corpus failure must flag PR.corpusFailed');
+  // Loud in the console, but the boot overlay stays untouched — the app is not
+  // blanked, so Browse remains usable behind it.
+  assert.ok(b.logs.error.some((m) => m.includes('[pr-boot]') && /corpus/i.test(m)), 'corpus failure must console.error');
+  assert.strictEqual(b.els['boot-step'].textContent, 'loading…', 'boot-step must NOT be painted "failed" on a corpus failure');
+  assert.strictEqual(b.els['boot-err'].style.display, 'none', 'boot-err overlay must stay hidden on a corpus failure');
+  assert.strictEqual(b.els['boot-err'].textContent, '', 'boot-err must not be painted on a corpus failure');
 });
 
 // ── Embedded source: the single-file artifact's inert JSON blocks ──────────

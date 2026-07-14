@@ -131,7 +131,20 @@ class ErrorBoundary extends React.Component {
           labelBoot();
           hideBoot();
         } catch (e) { fatal(e); }
-      }, fatal);
+      }, (err) => {
+        // ready rejected. If the skinny index made it in (Browse rendered its
+        // rows on 'pr:index'), reveal that working app rather than blanking it
+        // behind the error overlay — a lost corpus costs Graph/Atlas/registries,
+        // not Browse. Only a total data failure (no index at all) is fatal.
+        if (window.__PR && window.__PR.seedPeople) {
+          try {
+            labelBoot();
+            hideBoot();
+          } catch (e) { fatal(e); }
+        } else {
+          fatal(err);
+        }
+      });
     }
   } catch (e) {
     fatal(e);
