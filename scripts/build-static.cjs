@@ -212,8 +212,20 @@ function enrichShell() {
   </div>
 </noscript>
 `;
+  // A DOM-present crawl path to the static registry, OUTSIDE <noscript>. A real
+  // browser renders the app and never sees it (visually hidden via the standard
+  // clip pattern — not display:none, so it stays followable by crawlers and
+  // readable by assistive tech). But a plain HTML fetcher — including AI browse
+  // tools that grab only "/", don't run JS, and strip <noscript> — still finds
+  // the link to the 4,000+ readable pages instead of just the boot shell.
+  // No own marker — this is part of the single body injection (the noscript
+  // below carries the marker), so the idempotency count stays head + body = 2.
+  const crawlNav = `<nav aria-label="Static registry" style="position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0">
+  <a href="${BASE}registry/index.html">Browse all ${IDS.length.toLocaleString()} figures across ${trads} traditions as static, no-JavaScript pages</a>
+</nav>
+`;
   html = html.replace('</head>', head + '</head>');
-  html = html.replace(/<body>/, '<body>\n' + noscript);
+  html = html.replace(/<body>/, '<body>\n' + crawlNav + noscript);
   fs.writeFileSync(shellPath, html);
 }
 

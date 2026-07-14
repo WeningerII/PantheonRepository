@@ -77,7 +77,11 @@ test('the shell is enriched with SEO head + a no-JS crawl path', () => {
   assert.match(shell, /<meta name="robots" content="index, follow">/, 'robots meta');
   assert.match(shell, /rel="canonical"/, 'canonical');
   assert.match(shell, /<noscript>[\s\S]*registry\/index\.html[\s\S]*<\/noscript>/, 'noscript routes to the static registry');
-  // Injection is idempotent: exactly one marker pair, never doubled.
+  // A DOM-present crawl path OUTSIDE <noscript>, so HTML-only fetchers that strip
+  // <noscript> (some AI browse tools) still reach the static registry.
+  const outsideNoscript = shell.replace(/<noscript>[\s\S]*?<\/noscript>/g, '');
+  assert.match(outsideNoscript, /aria-label="Static registry"[\s\S]*?registry\/index\.html/, 'crawl link survives noscript stripping');
+  // Injection is idempotent: exactly one marker pair (head + body), never doubled.
   assert.strictEqual((shell.match(/<!-- pr-static -->/g) || []).length, 2, 'head + body markers, not doubled');
 });
 
