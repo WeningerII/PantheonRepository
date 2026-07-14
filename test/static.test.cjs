@@ -85,6 +85,20 @@ test('the shell is enriched with SEO head + a no-JS crawl path', () => {
   assert.strictEqual((shell.match(/<!-- pr-static -->/g) || []).length, 2, 'head + body markers, not doubled');
 });
 
+test('llms.txt front door + llms-full.txt one-file corpus are generated for LLM readers', () => {
+  const llms = read(path.join(SITE, 'llms.txt'));
+  assert.match(llms, /^# Pantheon Registry/m, 'llms.txt title');
+  assert.match(llms, /llms-full\.txt/, 'links to the one-file corpus');
+  assert.match(llms, /registry\/index\.html/, 'links to the registry index');
+  assert.match(llms, /\/mcp|MCP connector/, 'surfaces the MCP connector');
+
+  const full = read(path.join(SITE, 'llms-full.txt'));
+  assert.match(full, /full figure catalog/, 'llms-full.txt header');
+  // Exactly one Markdown entry per figure, each carrying its page link.
+  assert.strictEqual((full.match(/^- \*\*/gm) || []).length, meta.figures, 'one entry per figure');
+  assert.match(full, /registry\/greek_hesiod_zeus\.html/, 'a known figure link is present');
+});
+
 test('HTML is escaped — no unbalanced angle brackets leak from corpus text', () => {
   // A page whose notes/name could contain markup must not break out of tags.
   const zeus = read(path.join(REG, 'greek_hesiod_zeus.html'));
