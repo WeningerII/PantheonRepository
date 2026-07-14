@@ -185,6 +185,75 @@ function sitemap() {
 }
 const robots = () => `User-agent: *\nAllow: /\nSitemap: ${BASE}sitemap.xml\n`;
 
+// ── LLM-native access: llms.txt front door + a one-file corpus dump ───────────
+// LLM browse tools read plain text/Markdown far more reliably than a JS app.
+// Following the emerging llmstxt.org convention: /llms.txt is a short Markdown
+// map an assistant reads to learn what the site is and where the machine-readable
+// content lives; /llms-full.txt is the entire catalog in one fetch. Generated
+// from the same corpus as everything else — one source of truth, never drifts.
+const altNames = (p) => ((p.name && p.name.alt) || [])
+  .map((a) => (typeof a === 'string' ? a : a && (a.value || a.primary)))
+  .filter(Boolean);
+
+function llmEntry(id) {
+  const p = PEOPLE[id];
+  const meta = [p.type, p.temporal && p.temporal.era].filter(Boolean).map(humanize).join(', ');
+  const alt = altNames(p);
+  const notes = (p.notes ? String(p.notes) : '').replace(/\s+/g, ' ').trim();
+  const summary = notes.length > 220 ? notes.slice(0, 217).trimEnd() + '…' : notes;
+  const paren = [alt.length ? `also ${alt.join(', ')}` : '', meta].filter(Boolean).join('; ');
+  return `- **${primary(p)}**${paren ? ` (${paren})` : ''}${summary ? ` — ${summary}` : ''} — ${BASE}registry/${id}.html`;
+}
+
+function llmsFull() {
+  const byTrad = new Map();
+  for (const id of IDS) {
+    const t = PEOPLE[id].tradition || 'Unattributed';
+    if (!byTrad.has(t)) byTrad.set(t, []);
+    byTrad.get(t).push(id);
+  }
+  const trads = [...byTrad.keys()].sort((a, b) => a.localeCompare(b));
+  const sections = trads.map((t) => {
+    const ids = byTrad.get(t).sort((a, b) => nameOf(a).localeCompare(nameOf(b)));
+    return `## ${t} (${ids.length})\n\n` + ids.map(llmEntry).join('\n');
+  }).join('\n\n');
+  return `# Pantheon Registry — full figure catalog\n\n`
+    + `A source-cited index of ${IDS.length.toLocaleString()} mythological and historical figures across `
+    + `${trads.length} traditions. Each entry gives the name, alternate names, type, era, and a one-line `
+    + `summary; follow the page link for the fully-cited detail (genealogy, divinity, domains, powers, `
+    + `epithets, typed relations, and per-claim sources).\n\n`
+    + `Interactive app: ${BASE}\nPer-figure page pattern: ${BASE}registry/<id>.html\n\n`
+    + sections + '\n';
+}
+
+function llmsIndex() {
+  const trads = new Set(IDS.map((id) => PEOPLE[id].tradition || 'Unattributed')).size;
+  return `# Pantheon Registry\n\n`
+    + `> A source-cited index of ${IDS.length.toLocaleString()} mythological and historical figures across `
+    + `${trads} traditions — genealogies, domains, powers, epithets, iconography, cult, and cross-tradition `
+    + `equivalents. Every claim carries scholarly citations.\n\n`
+    + `The interactive site is a JavaScript app, but the whole corpus is published as plain, JS-free text and `
+    + `data that machines can read directly.\n\n`
+    + `## Whole corpus, one fetch\n\n`
+    + `- [/llms-full.txt](${BASE}llms-full.txt): every figure — name, alternate names, type, era, one-line `
+    + `summary, page link — grouped by tradition, in Markdown.\n`
+    + `- [Registry index](${BASE}registry/index.html): the same, as linked HTML.\n`
+    + `- [Sitemap](${BASE}sitemap.xml): every URL.\n\n`
+    + `## One figure at a time\n\n`
+    + `Each figure has a static, source-cited page (with schema.org JSON-LD) at \`${BASE}registry/<id>.html\` — `
+    + `for example ${BASE}registry/greek_hesiod_zeus.html — carrying genealogy, divinity, domains, powers, `
+    + `epithets, typed relations, and per-claim citations.\n\n`
+    + `## Structured queries (richest)\n\n`
+    + `- **MCP connector** — a Model Context Protocol server over the same corpus, 14 tools built for LLMs: `
+    + `\`search_figures\`, \`get_figure\` (one-call \`dossier\` view), \`relate\`, \`trace_lineage\`, `
+    + `\`cross_tradition_equivalents\`, \`who_governs\` / \`who_wields\`, \`get_item\`, \`vocab\`, \`aggregate\`. `
+    + `Transport: Streamable HTTP, \`POST /mcp\`. Setup + tool reference: `
+    + `https://github.com/WeningerII/PantheonRepository/tree/main/mcp\n\n`
+    + `## Interactive\n\n`
+    + `- [The app](${BASE}): browse, relationship graph, atlas, and search.\n\n`
+    + `All static pages are JavaScript-free and source-cited.\n`;
+}
+
 // ── inject SEO head + noscript crawl-path into the shell ─────────────────────
 function enrichShell() {
   const shellPath = path.join(SITE, 'index.html');
@@ -237,9 +306,11 @@ function main() {
   fs.writeFileSync(path.join(REG, 'index.html'), indexPage());
   fs.writeFileSync(path.join(SITE, 'sitemap.xml'), sitemap());
   fs.writeFileSync(path.join(SITE, 'robots.txt'), robots());
+  fs.writeFileSync(path.join(SITE, 'llms.txt'), llmsIndex());
+  fs.writeFileSync(path.join(SITE, 'llms-full.txt'), llmsFull());
   enrichShell();
-  console.log(`[static] wrote ${n} figure pages + registry index, sitemap (${n + 2} urls), robots.txt; shell enriched`);
+  console.log(`[static] wrote ${n} figure pages + registry index, sitemap (${n + 2} urls), robots.txt, llms.txt + llms-full.txt; shell enriched`);
 }
 
 if (require.main === module) main();
-module.exports = { figurePage, indexPage, sitemap };
+module.exports = { figurePage, indexPage, sitemap, llmsIndex, llmsFull };
