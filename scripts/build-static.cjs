@@ -243,12 +243,17 @@ function llmsIndex() {
     + `Each figure has a static, source-cited page (with schema.org JSON-LD) at \`${BASE}registry/<id>.html\` — `
     + `for example ${BASE}registry/greek_hesiod_zeus.html — carrying genealogy, divinity, domains, powers, `
     + `epithets, typed relations, and per-claim citations.\n\n`
-    + `## Structured queries (richest)\n\n`
-    + `- **MCP connector** — a Model Context Protocol server over the same corpus, 14 tools built for LLMs: `
+    + `## Structured queries (richest) — live MCP server\n\n`
+    + `A Model Context Protocol server exposes the same corpus with 14 tools built for LLMs: `
     + `\`search_figures\`, \`get_figure\` (one-call \`dossier\` view), \`relate\`, \`trace_lineage\`, `
-    + `\`cross_tradition_equivalents\`, \`who_governs\` / \`who_wields\`, \`get_item\`, \`vocab\`, \`aggregate\`. `
-    + `Transport: Streamable HTTP, \`POST /mcp\`. Setup + tool reference: `
-    + `https://github.com/WeningerII/PantheonRepository/tree/main/mcp\n\n`
+    + `\`cross_tradition_equivalents\`, \`who_governs\` / \`who_wields\`, \`get_item\`, \`vocab\`, \`aggregate\`.\n\n`
+    + `- Endpoint (Streamable HTTP): \`POST https://pantheon-registry-mcp.onrender.com/mcp\`\n`
+    + `- Health check: \`GET https://pantheon-registry-mcp.onrender.com/healthz\`\n`
+    + `- Tools + setup: https://github.com/WeningerII/PantheonRepository/tree/main/mcp\n\n`
+    + `**Cold start** — this server sleeps when idle. Before your first query, GET the /healthz URL to wake it. `
+    + `If it does not answer within a few seconds it is booting: wait ~60 seconds, GET /healthz again until it `
+    + `returns 200, then make MCP calls normally. For an always-instant option that needs no warm-up, read `
+    + `${BASE}llms-full.txt instead.\n\n`
     + `## Interactive\n\n`
     + `- [The app](${BASE}): browse, relationship graph, atlas, and search.\n\n`
     + `All static pages are JavaScript-free and source-cited.\n`;
