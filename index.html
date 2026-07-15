@@ -189,6 +189,9 @@
 <!-- Data layer (plain JS — synchronously seeds window.__PR and localStorage) -->
 <script src="app/data.js"></script>
 
+<!-- Citation-link resolver (plain JS — defines window.PRCite before the UI) -->
+<script src="app/cite-links.js"></script>
+
 <!-- New UI scripts (Babel transforms in source order) -->
 <script type="text/babel" data-presets="react" src="app/state.jsx"></script>
 <script type="text/babel" data-presets="react" src="app/Browse.jsx"></script>

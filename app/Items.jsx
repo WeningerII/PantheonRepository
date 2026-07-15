@@ -349,12 +349,18 @@ function ItemSources({ sources }) {
     <div className="section section-item-sources">
       <h2>Sources <span className="count">{sources.length}</span></h2>
       <div className="item-sources">
-        {sources.map((s, i) => (
-          <div className="item-source" key={i}>
-            {s.kind && <span className="item-source-kind">{s.kind}</span>}
-            <span className="item-source-ref">{s.reference || (typeof s === 'string' ? s : '')}</span>
-          </div>
-        ))}
+        {sources.map((s, i) => {
+          const ref = s.reference || (typeof s === 'string' ? s : '');
+          const url = window.PRCite && window.PRCite.citeUrl(ref);
+          return (
+            <div className="item-source" key={i}>
+              {s.kind && <span className="item-source-kind">{s.kind}</span>}
+              {url
+                ? <a className="item-source-ref item-source-link" href={url} target="_blank" rel="noopener noreferrer">{ref}</a>
+                : <span className="item-source-ref">{ref}</span>}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
