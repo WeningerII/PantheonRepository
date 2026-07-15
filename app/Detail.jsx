@@ -430,10 +430,13 @@ function Sources({ entry }) {
                           // Only flag the per-citation kind when it differs
                           // from the claim's aggregate weight.
                           const flag = kind && kind.toLowerCase() !== w ? kind : null;
+                          const url = window.PRCite && window.PRCite.citeUrl(ref);
                           return (
                             <div className="source-cite" key={j}>
                               {flag && <span className="source-cite-kind">{flag}</span>}
-                              <span className="source-cite-ref">{ref}</span>
+                              {url
+                                ? <a className="source-cite-ref source-cite-link" href={url} target="_blank" rel="noopener noreferrer">{ref}</a>
+                                : <span className="source-cite-ref">{ref}</span>}
                             </div>
                           );
                         })}
@@ -867,13 +870,17 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
               </div>
               {Array.isArray(entry.linguistic.sources) && entry.linguistic.sources.length > 0 && (
                 <div className="etym-cites">
-                  {entry.linguistic.sources.map((s, i) => (
-                    <div className="etym-cite" key={i}>
-                      <span className="source-cite-ref">
-                        {typeof s === 'string' ? s : (s.reference || '')}
-                      </span>
-                    </div>
-                  ))}
+                  {entry.linguistic.sources.map((s, i) => {
+                    const ref = typeof s === 'string' ? s : (s.reference || '');
+                    const url = window.PRCite && window.PRCite.citeUrl(ref);
+                    return (
+                      <div className="etym-cite" key={i}>
+                        {url
+                          ? <a className="source-cite-ref source-cite-link" href={url} target="_blank" rel="noopener noreferrer">{ref}</a>
+                          : <span className="source-cite-ref">{ref}</span>}
+                      </div>
+                    );
+                  })}
                 </div>
               )}
             </div>

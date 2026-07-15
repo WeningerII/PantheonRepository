@@ -1449,6 +1449,20 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 .source-cite-ref {
   font-variant-numeric: tabular-nums;
 }
+/* Citation references that resolve to a source get a subtle link treatment
+   in the accent theme (no global `a` reset exists, so style explicitly). */
+.source-cite-link,
+.item-source-link {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-ring);
+  transition: color 0.12s, border-color 0.12s;
+}
+.source-cite-link:hover,
+.item-source-link:hover {
+  color: var(--accent-2);
+  border-bottom-color: var(--accent);
+}
 .source-cite-missing {
   font-style: italic;
   color: var(--faint);

@@ -32,6 +32,7 @@ const JSX = ['state', 'Browse', 'Lineage', 'Lifecycle', 'Detail', 'Items', 'Powe
 async function bootApp({ panelWidth = 1200, preSeedStorage = null } = {}) {
   const libCode = LIB_FILES.map(read);
   const dataJs = read(path.join(APP, 'data.js'));
+  const citeJs = read(path.join(APP, 'cite-links.js')); // defines window.PRCite
   const ui = JSX.map((f) => babel.transform(read(path.join(APP, `${f}.jsx`)), {
     presets: [['react', { runtime: 'classic' }]], filename: `${f}.jsx`, compact: false,
   }).code);
@@ -91,6 +92,7 @@ async function bootApp({ panelWidth = 1200, preSeedStorage = null } = {}) {
   };
   libCode.forEach(runScript);
   runScript(dataJs);
+  runScript(citeJs); // window.PRCite must exist before the UI renders citations
   ui.forEach(runScript);
 
   const act = window.React.act;

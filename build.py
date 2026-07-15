@@ -144,6 +144,9 @@ def main() -> None:
         print(f'  {f:24s}  {len(src):>7,} → {len(code):>7,} bytes')
 
     styles_css = (APP / 'styles.css').read_text(encoding='utf-8')
+    # Shared citation-link resolver (window.PRCite). A plain classic script,
+    # inlined raw before the JSX like pr-boot.js — never Babel-transformed.
+    cite_links = (APP / 'cite-links.js').read_text(encoding='utf-8')
 
     # The two modes differ only in the data layer: embedded inert JSON
     # (artifact) vs the hashed tiers fetched over HTTP (Pages shell) — both
@@ -164,6 +167,7 @@ def main() -> None:
     # Sanity: abort on anything that would terminate or mis-parse the inline
     # script element (case-insensitive close tags, comment-open sequences).
     hazard_checks = [('styles.css', styles_css), (data_name, data_body),
+                     ('cite-links.js', cite_links),
                      *((f, transformed[f]) for f in JSX_FILES)]
     if not pages:
         core_body = (DIST / 'data' / tiers['core']).read_text(encoding='utf-8')
@@ -182,9 +186,12 @@ def main() -> None:
             print(f'!! {name} contains a script-breaking sequence at offset {hit.start()}: {hit.group()!r}', file=sys.stderr)
             sys.exit(1)
 
-    script_blocks = '\n'.join(
-        f'<!-- {f} (pre-transformed) -->\n<script>\n{safe(transformed[f])}\n</script>'
-        for f in JSX_FILES
+    script_blocks = (
+        f'<!-- cite-links.js (window.PRCite, inlined raw) -->\n<script>\n{safe(cite_links)}\n</script>\n'
+        + '\n'.join(
+            f'<!-- {f} (pre-transformed) -->\n<script>\n{safe(transformed[f])}\n</script>'
+            for f in JSX_FILES
+        )
     )
 
     template = r"""<!doctype html>

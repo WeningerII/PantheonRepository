@@ -30,6 +30,7 @@
 const fs = require('fs');
 const path = require('path');
 const { loadCorpus } = require('./build-tiers.cjs');
+const { citeUrl } = require('../app/cite-links.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE = process.env.PR_STATIC_OUT || path.join(ROOT, 'dist', 'site');
@@ -44,6 +45,9 @@ const IDS = Object.keys(PEOPLE).sort();
 const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+// Resolve a citation reference to a source URL (null if unlinkable); never
+// throws so one bad reference can't abort the deterministic build.
+const citeHref = (ref) => { try { return citeUrl(ref) || null; } catch (_) { return null; } };
 const primary = (p) => (p.name && p.name.primary) || p.id;
 const nameOf = (id) => (PEOPLE[id] ? primary(PEOPLE[id]) : id);
 const humanize = (s) => String(s == null ? '' : s).replace(/[-_]+/g, ' ').trim();
@@ -140,7 +144,10 @@ ${sec('Domains', list(domains.map(esc)))}
 ${sec('Powers', list(powers.map(esc)))}
 ${sec('Epithets', list(epithets.map(esc)))}
 ${sec('Relations', list(relations.map((r) => `${esc(humanize(r.kind))}: ${figLink(r.personId)}`)))}
-${sec('Sources', list(sources.map(esc)))}
+${sec('Sources', list(sources.map((ref) => {
+    const u = citeHref(ref);
+    return u ? `<a href="${esc(u)}" rel="nofollow noopener" target="_blank">${esc(ref)}</a>` : esc(ref);
+  })))}
 <a class="app-link" href="${BASE}#/browse/${esc(id)}">Open in the interactive app →</a>`;
   return page(`${primary(p)} — Pantheon Registry`, desc, body, canonical + jsonld);
 }
@@ -303,6 +310,7 @@ function figureRecord(id) {
     powers: (p.faculties || []).map((f) => f.name || humanize(f.id)).filter(Boolean),
     summary: (p.notes ? String(p.notes) : '').replace(/\s+/g, ' ').trim(),
     url: `${BASE}registry/${id}.html`,
+    sources: sourcesOf(p).map((ref) => ({ reference: ref, url: citeHref(ref) })),
   };
 }
 function figuresJson() {
@@ -311,7 +319,7 @@ function figuresJson() {
     + `"registry": "Pantheon Registry",\n`
     + `"source": ${JSON.stringify(BASE)},\n`
     + `"count": ${figures.length},\n`
-    + `"schema": ${JSON.stringify('id, name, altNames[], tradition, type, era, divinity, parents[], children[], domains[], powers[], summary, url. Full typed relations, epithets, and per-claim citations are on each figure\'s url page and via the MCP server at ' + BASE)},\n`
+    + `"schema": ${JSON.stringify('id, name, altNames[], tradition, type, era, divinity, parents[], children[], domains[], powers[], summary, url, sources[{reference, url}] (url is null when the reference has no resolvable source link). Full typed relations and epithets are on each figure\'s url page and via the MCP server at ' + BASE)},\n`
     + `"figures": [\n`
     + figures.map((f) => JSON.stringify(f)).join(',\n')
     + `\n]\n}\n`;

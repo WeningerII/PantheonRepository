@@ -111,6 +111,28 @@ test('registry/figures.json is a valid structured catalog for code agents', () =
   assert.match(zeus.url, /registry\/greek_hesiod_zeus\.html$/, 'record url points at the figure page');
 });
 
+test('figure-page source citations resolve to links where possible', () => {
+  // greek_apollod_perseus cites Apollod./Hom. Il. — resolvable to Theoi.
+  const p = read(path.join(REG, 'greek_apollod_perseus.html'));
+  const srcUl = p.match(/<h2>Sources<\/h2><ul>(.*?)<\/ul>/s);
+  assert.ok(srcUl, 'Perseus renders a Sources list');
+  assert.match(srcUl[1], /<a href="https:\/\/[^"]+" rel="nofollow noopener"[^>]*>/,
+    'a resolvable citation renders as an <a href> on the static figure page');
+});
+
+test('figures.json records carry a sources[] array with resolved links', () => {
+  const data = JSON.parse(read(path.join(REG, 'figures.json')));
+  const perseus = data.figures.find((f) => f.id === 'greek_apollod_perseus');
+  assert.ok(perseus && Array.isArray(perseus.sources) && perseus.sources.length >= 1,
+    'a known figure carries a non-empty sources[]');
+  for (const s of perseus.sources) {
+    assert.ok('reference' in s && 'url' in s, 'each source record has {reference, url}');
+  }
+  assert.ok(perseus.sources.some((s) => s.url && /^https:/.test(s.url)),
+    'at least one source resolves to an https url');
+  assert.match(data.schema, /sources\[\{reference, url\}\]/, 'schema documents the sources field');
+});
+
 test('per-tradition llms/<tradition>.txt files: one per tradition + an index', () => {
   const idx = read(path.join(SITE, 'llms', 'index.txt'));
   assert.match(idx, /per-tradition files/, 'index header');
