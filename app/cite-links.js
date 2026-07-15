@@ -69,7 +69,7 @@
     { type: 'theoiBook', base: 'OvidMetamorphoses', max: 15,
       keys: ['ov. met.', 'ovid metamorphoses', 'ovid, metamorphoses'] },
     { type: 'theoiBook', base: 'ApolloniusRhodius', max: 4,
-      keys: ['ap. rhod.', 'a.r.', 'apoll. rhod.', 'apollonius rhodius', 'argonautica'] },
+      keys: ['ap. rhod.', 'a.r.', 'apoll. rhod.', 'apollonius rhodius', 'apollonius argonautica', 'apollonius', 'argonautica'] },
     { type: 'theoiBook', base: 'QuintusSmyrnaeus', max: 14,
       keys: ['q.s.', 'quint. smyrn.', 'quintus smyrnaeus', 'posthomerica', 'fall of troy'] },
     { type: 'theoiFlat', file: 'HesiodTheogony',
@@ -108,7 +108,13 @@
     { type: 'wiki', q: 'Proclus Chrestomathia', keys: ['procl.', 'proclus', 'chrestomathia', 'chrest.'] },
     { type: 'wiki', q: 'Orphic Hymns', keys: ['orph. hymn', 'orphic hymn', 'orphic hymns'] },
     { type: 'wiki', q: 'Antoninus Liberalis Metamorphoses', keys: ['ant. lib.', 'antoninus liberalis'] },
-    { type: 'wiki', q: 'Hyginus De Astronomica', keys: ['hyg. astr.', 'astronomica', 'poetica astronomica', 'de astronomia'] }
+    { type: 'wiki', q: 'Hyginus De Astronomica', keys: ['hyg. astr.', 'astronomica', 'poetica astronomica', 'de astronomia'] },
+    { type: 'wiki', q: 'Cassius Dio Roman History', keys: ['cassius dio', 'cass. dio', 'dio cassius', 'dio. cass.'] },
+    { type: 'wiki', q: 'Velleius Paterculus', keys: ['velleius paterculus', 'vell. pat.', 'velleius'] },
+    { type: 'wiki', q: 'Dionysius of Halicarnassus Roman Antiquities', keys: ['dionysius of halicarnassus', 'dion. hal.', 'dionysius halicarnassus', 'dion. halic.'] },
+    { type: 'wiki', q: 'Sima Qian Records of the Grand Historian', keys: ['sima qian', 'shiji', 'shih chi', 'records of the grand historian'] },
+    { type: 'wiki', q: 'Valerius Flaccus Argonautica', keys: ['valerius flaccus', 'val. fl.'] },
+    { type: 'wiki', q: 'Lucan Pharsalia', keys: ['lucan', 'pharsalia', 'bellum civile'] }
   ];
 
   // ---- scripture & canonical sacred / epic texts --------------------------
@@ -117,7 +123,7 @@
   // 'wiki'/'wikisource': search endpoints (cannot 404).
   var SCRIPTURE = [
     { type: 'st', path: 'hin/rigveda/', keys: ['rigveda', 'rig veda', 'rig-veda', 'rgveda'] },
-    { type: 'st', path: 'hin/maha/', keys: ['mahabharata', 'maha-bharata', 'adi parva', 'sabha parva', 'vana parva', 'bhishma parva', 'drona parva', 'karna parva', 'shalya parva', 'sauptika parva', 'stri parva', 'shanti parva', 'anushasana parva', 'mausala parva'] },
+    { type: 'st', path: 'hin/maha/', keys: ['mahabharata', 'maha-bharata', 'mbh.', 'mbh ', 'adi parva', 'sabha parva', 'vana parva', 'aranyaka parva', 'virata parva', 'udyoga parva', 'bhishma parva', 'drona parva', 'karna parva', 'shalya parva', 'sauptika parva', 'stri parva', 'shanti parva', 'anushasana parva', 'mausala parva', 'harivamsa'] },
     { type: 'st', path: 'hin/rama/', keys: ['ramayana', 'valmiki ramayana', 'bala kanda', 'ayodhya kanda', 'aranya kanda', 'kishkindha kanda', 'sundara kanda', 'yuddha kanda', 'uttara kanda'] },
     { type: 'st', path: 'hin/gita/', keys: ['bhagavad gita', 'bhagavad-gita', 'bhagavadgita'] },
     { type: 'st', path: 'zor/', keys: ['avesta', 'zend-avesta', 'zend avesta', 'yasna', 'yasht', 'vendidad', 'videvdat', 'bundahishn'] },
@@ -166,9 +172,24 @@
     var after = head.charAt(key.length);
     return after === '' || !/[a-z0-9]/.test(after);
   }
+  // A distinctive long key (>=7 chars, e.g. "gylfaginning", "mahabharata")
+  // may match anywhere in the head at a word boundary, so "Snorri Sturluson,
+  // Gylfaginning" resolves via the mapped work even though the author leads.
+  // Short keys ("od.", "il.", "hom.") stay prefix-anchored to avoid collisions.
+  function headContains(head, key) {
+    var idx = head.indexOf(key);
+    while (idx !== -1) {
+      var before = idx === 0 ? '' : head.charAt(idx - 1);
+      var after = head.charAt(idx + key.length);
+      if ((before === '' || !/[a-z0-9]/.test(before)) && (after === '' || !/[a-z0-9]/.test(after))) return true;
+      idx = head.indexOf(key, idx + 1);
+    }
+    return false;
+  }
   function matchTable(flat, head) {
     for (var i = 0; i < flat.length; i++) {
-      if (headMatches(head, flat[i].key)) return flat[i].entry;
+      var k = flat[i].key;
+      if (k.length >= 7 ? headContains(head, k) : headMatches(head, k)) return flat[i].entry;
     }
     return null;
   }
@@ -239,8 +260,12 @@
 
   // ---- best-effort search fallback for modern books / journal articles ----
   function firstSurname(s) {
+    // "Surname, Given" -> Surname
     var m = s.match(/^\s*([A-ZÀ-Þ][\p{L}'’-]+)\s*,/u);
-    return m ? m[1] : '';
+    if (m) return m[1];
+    // "J. M. Surname," / "F. Landa Surname" -> Surname (skip leading initials)
+    var m2 = s.match(/^\s*(?:[A-ZÀ-Þ]\.?\s+){1,3}([A-ZÀ-Þ][\p{L}'’-]{2,})/u);
+    return m2 ? m2[1] : '';
   }
   function bookQuery(s) {
     var t = s
@@ -265,7 +290,11 @@
     var hasYear = /\b(?:1[5-9]\d{2}|20[0-2]\d)\b/.test(s);
     var scholarly = hasYear || quoted
       || /\b(?:press|university|univ\.|verlag|routledge|brill|macmillan|éditions|editions|museum bulletin|memoir)\b/i.test(s)
-      || /^[A-ZÀ-Þ][\p{L}'’.-]+,\s+[A-ZÀ-Þ]/u.test(s);
+      // "Surname, Given" OR "J. M. Surname," (initials-first author)
+      || /^[A-ZÀ-Þ][\p{L}'’.-]+,\s+[A-ZÀ-Þ]/u.test(s)
+      || /^(?:[A-ZÀ-Þ]\.\s*){1,3}[A-ZÀ-Þ][\p{L}'’-]+[,\s]/u.test(s)
+      // a cited-work locator (colonial chronicles etc.: "Cobo Bk. XII", "Cieza Pt. II Ch. 5")
+      || /\b(?:Bk\.|Book\s+[IVXLC0-9]|Ch\.|Chap\.|Pt\.|Part\s+[IVXLC0-9]|vol\.|s\.v\.)\b/.test(s);
     if (!scholarly) return null;
     if (quoted && journalish) {
       var q = '"' + quoted[1] + '"';
