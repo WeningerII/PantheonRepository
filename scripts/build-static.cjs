@@ -89,14 +89,29 @@ ul{padding-left:1.1rem;margin:.3rem 0}li{margin:.15rem 0}
   border-radius:4px;font-size:.9rem}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #8884;font-size:.85rem;opacity:.6}`;
 
-const page = (title, desc, body, extraHead = '') => `<!doctype html>
+const OG_IMAGE = `${BASE}og-image.png`;
+const ogTags = (title, desc, url, type = 'article') =>
+  `<meta property="og:type" content="${type}">\n`
+  + `<meta property="og:site_name" content="Pantheon Registry">\n`
+  + `<meta property="og:title" content="${esc(title)}">\n`
+  + `<meta property="og:description" content="${esc(desc)}">\n`
+  + `<meta property="og:url" content="${esc(url)}">\n`
+  + `<meta property="og:image" content="${OG_IMAGE}">\n`
+  + `<meta property="og:image:width" content="1200">\n`
+  + `<meta property="og:image:height" content="630">\n`
+  + `<meta name="twitter:card" content="summary_large_image">\n`
+  + `<meta name="twitter:title" content="${esc(title)}">\n`
+  + `<meta name="twitter:description" content="${esc(desc)}">\n`
+  + `<meta name="twitter:image" content="${OG_IMAGE}">\n`;
+
+const page = (title, desc, body, extraHead = '', url = BASE, type = 'website') => `<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow">
-${extraHead}<style>${STYLE}</style>
+${ogTags(title, desc, url, type)}${extraHead}<style>${STYLE}</style>
 </head><body>
 ${body}
 <footer>Pantheon Registry — a source-cited index of the world's mythological and
@@ -149,7 +164,8 @@ ${sec('Sources', list(sources.map((ref) => {
     return u ? `<a href="${esc(u)}" rel="nofollow noopener" target="_blank">${esc(ref)}</a>` : esc(ref);
   })))}
 <a class="app-link" href="${BASE}#/browse/${esc(id)}">Open in the interactive app →</a>`;
-  return page(`${primary(p)} — Pantheon Registry`, desc, body, canonical + jsonld);
+  return page(`${primary(p)} — Pantheon Registry`, desc, body, canonical + jsonld,
+    `${BASE}registry/${id}.html`, 'article');
 }
 
 // ── master index ───────────────────────────────────────────────────────────
@@ -401,6 +417,8 @@ function main() {
   fs.writeFileSync(path.join(SITE, 'llms.txt'), llmsIndex());
   fs.writeFileSync(path.join(SITE, 'llms-full.txt'), llmsFull());
   fs.writeFileSync(path.join(REG, 'figures.json'), figuresJson());
+  // Social share image, served at the site root for og:image / twitter:image.
+  fs.copyFileSync(path.join(ROOT, 'app', 'og-image.png'), path.join(SITE, 'og-image.png'));
   const tf = traditionFiles();
   enrichShell();
   console.log(`[static] wrote ${n} figure pages + index, sitemap (${n + 2} urls), robots.txt, llms.txt + llms-full.txt, registry/figures.json, ${tf} per-tradition files; shell enriched`);
