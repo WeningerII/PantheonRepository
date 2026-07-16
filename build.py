@@ -201,6 +201,18 @@ def main() -> None:
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pantheon Registry</title>
 <meta name="description" content="A browsable, source-cited index of the world's mythological and historical figures — their genealogies, domains, epithets, iconography, and cult (sites, festivals, priesthoods, offerings) — across hundreds of traditions. Client-rendered single-page app." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Pantheon Registry" />
+<meta property="og:title" content="Pantheon Registry — the gods, mapped" />
+<meta property="og:description" content="A source-cited index of the world's mythological and historical figures — genealogies, domains, epithets, iconography, and cult — across hundreds of traditions." />
+<meta property="og:url" content="https://www.listofgods.com/" />
+<meta property="og:image" content="https://www.listofgods.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pantheon Registry — the gods, mapped" />
+<meta name="twitter:description" content="A source-cited index of the world's mythological and historical figures across hundreds of traditions." />
+<meta name="twitter:image" content="https://www.listofgods.com/og-image.png" />
 __ANALYTICS__
 <!-- Early error trap. Surfaces boot-time errors into the visible boot overlay. -->
 <script>

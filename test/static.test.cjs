@@ -133,6 +133,17 @@ test('figures.json records carry a sources[] array with resolved links', () => {
   assert.match(data.schema, /sources\[\{reference, url\}\]/, 'schema documents the sources field');
 });
 
+test('pages carry Open Graph / Twitter share tags + the share image exists', () => {
+  assert.ok(fs.existsSync(path.join(SITE, 'og-image.png')), 'og-image.png is emitted at the site root');
+  const zeus = read(path.join(REG, 'greek_hesiod_zeus.html'));
+  assert.match(zeus, /<meta property="og:title" content="Zeus/, 'figure og:title');
+  assert.match(zeus, /<meta property="og:image" content="https?:\/\/\S+\/og-image\.png">/, 'figure og:image');
+  assert.match(zeus, /<meta property="og:type" content="article">/, 'figure og:type is article');
+  assert.match(zeus, /<meta name="twitter:card" content="summary_large_image">/, 'twitter card');
+  const shell = read(path.join(SITE, 'index.html'));
+  assert.match(shell, /property="og:image"[^>]*og-image\.png/, 'shell og:image');
+});
+
 test('per-tradition llms/<tradition>.txt files: one per tradition + an index', () => {
   const idx = read(path.join(SITE, 'llms', 'index.txt'));
   assert.match(idx, /per-tradition files/, 'index header');
