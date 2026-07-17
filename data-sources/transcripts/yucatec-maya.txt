@@ -1,0 +1,1785 @@
+Yucatec Maya — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "yucatec_maya_hunab_ku",
+  "name": {
+   "primary": "Hunab Ku",
+   "alt": [
+    "Hunab K'u",
+    "Hunab Kú",
+    "Hun Itzamna"
+   ],
+   "transliterations": {
+    "yua": "Hunab K'u",
+    "etymology": "Yucatec hun 'one' + ab (numeral classifier) + k'u 'god, deity', glossed 'the sole god' or 'the only god'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "supreme-divinity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Hunab K'u",
+     "script": "Latn",
+     "rom": "Hunab K'u"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Book of Chilam Balam of Chumayel, trans. Ralph L. Roys (1933), Carnegie Institution of Washington Publication 438"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yum k'u",
+     "script": "Latn",
+     "rom": "yum k'u"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (University of Oklahoma Press, 1970), ch. 6"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "beget-the-gods",
+    "name": "beget the sky-gods",
+    "term": {
+     "value": "sihsah k'u",
+     "script": "Latn",
+     "rom": "sihsah k'u"
+    },
+    "inheritability": "unique",
+    "notes": "Named in colonial Yucatec texts as the incorporeal source from whom Itzamná and the other deities descend.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diccionario de Motul, Maya-Español, ed. Juan Martínez Hernández (1929)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "yucatec_maya_itzamna",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970), pp. 203-206"
+     }
+    ],
+    "notes": "Colonial sources name Itzamná as the son of Hunab Ku."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Hunab K'u",
+    "translation": "the sole god",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diccionario de Motul (1929)"
+     }
+    ]
+   },
+   {
+    "original": "chelab caan",
+    "translation": "measurer of the sky",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hunab Ku appears in colonial Yucatec sources as a single, invisible, incorporeal supreme god and father of Itzamná.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "The Book of Chilam Balam of Chumayel, trans. Ralph L. Roys (1933)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Diccionario de Motul (1929)"
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "Scholars debate whether Hunab Ku reflects an authentic pre-Conquest monotheistic figure or a post-Conquest reinterpretation shaped by Christian evangelization.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970), pp. 203-206"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Hunab Ku is named in colonial Yucatec manuscripts, above all the Books of Chilam Balam and the Motul dictionary, as the sole, invisible, and incorporeal god, without form or image, from whom the other deities proceed. He is identified as the father of Itzamná, the creator who ordered the world. Sources differ on whether Hunab Ku represents a genuine Postclassic Maya conception of a single high god or a colonial abstraction produced under the pressure of Christian missionizing, since the figure is absent from the hieroglyphic codices and appears only in alphabetic texts written after the Conquest."
+ },
+ {
+  "id": "yucatec_maya_itzamna",
+  "name": {
+   "primary": "Itzamná",
+   "alt": [
+    "Itzamna",
+    "Zamná",
+    "Itzam Na",
+    "God D"
+   ],
+   "transliterations": {
+    "yua": "Itzam Na",
+    "etymology": "Debated; commonly read as itzam 'lizard, iguana' + naah 'house' ('iguana house'), or from itz 'dew, sap, sacred fluid' + naah 'house' ('house of dew')"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "yucatec_maya_hunab_ku"
+  ],
+  "parentRoles": {
+   "yucatec_maya_hunab_ku": "paternal"
+  },
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Itzam Na",
+     "script": "Latn",
+     "rom": "Itzam Na"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diego de Landa, Relación de las cosas de Yucatán (c. 1566), ed./trans. Alfred M. Tozzer (1941), Peabody Museum Papers 18"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "caan",
+     "script": "Latn",
+     "rom": "kaan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (Dumbarton Oaks, 1992), pp. 31-41"
+     }
+    ]
+   },
+   {
+    "sphereId": "writing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ah dzib",
+     "script": "Latn",
+     "rom": "aj tz'iib"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya (Thames & Hudson, 1993), pp. 99-100"
+     }
+    ]
+   },
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ah dzac",
+     "script": "Latn",
+     "rom": "aj tz'aak"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "order-the-cosmos",
+    "name": "order the created world",
+    "term": {
+     "value": "utzcinah balcah",
+     "script": "Latn",
+     "rom": "utzkinah balkah"
+    },
+    "inheritability": "unique",
+    "notes": "As demiurge Itzamná sets the sky, the days, and the order of the year in motion.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 31-41"
+     }
+    ]
+   },
+   {
+    "id": "invent-writing",
+    "name": "invent writing and books",
+    "term": {
+     "value": "sihsah dzib",
+     "script": "Latn",
+     "rom": "sihsah tz'iib"
+    },
+    "inheritability": "none",
+    "notes": "Credited by Landa with inventing the hieroglyphic script and the priestly calendar, and honored as patron of scribes and priests.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "id": "cure-the-sick",
+    "name": "restore the sick to life",
+    "term": {
+     "value": "kinsah cimil",
+     "script": "Latn",
+     "rom": "kinsah kimil"
+    },
+    "inheritability": "partial",
+    "notes": "Invoked in healing rites, sometimes under the name Kabul or Itzamna Kauil.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "yucatec_maya_hunab_ku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970), pp. 203-206"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "yucatec_maya_ix_chel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ],
+    "notes": "Frequently paired with the goddess Ix Chel as consort."
+   },
+   {
+    "kind": "ally",
+    "personId": "yucatec_maya_kinich_ahau",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 50-56"
+     }
+    ],
+    "notes": "Kinich Ahau, the sun god, is treated in some sources as a solar aspect of Itzamná."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Itzam Na Kauil",
+    "translation": "Itzamná of the harvest / sustenance",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992)"
+     }
+    ]
+   },
+   {
+    "original": "Kabul",
+    "translation": "the skillful hand",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Itzamná is the aged creator and sky god, head of the Yucatec pantheon, patron of writing, priesthood, and healing.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 31-41"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Itzamná corresponds to the codical God D and appears throughout the Dresden and Madrid codices.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Codex Dresdensis (Dresden Codex), Postclassic Maya"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary of the Gods and Symbols (1993), pp. 99-100"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Itzamná is the supreme creator and celestial deity of the Yucatec Maya, portrayed as an aged, toothless lord with a large aquiline nose. Diego de Landa records him as the greatest of the gods and the inventor of writing, books, and the sacred calendar, making him patron of scribes and priests; he was also invoked as a benevolent healer under names such as Itzamna Kauil and Kabul. In the Postclassic codices he corresponds to God D, an old man seated in a sky-band who presides over the other deities. His name, whose etymology remains disputed between readings such as 'iguana house' and 'house of dew or sacred fluid,' links him to the reptilian, celestial monster that forms the surface of the sky. He is paired with the goddess Ix Chel, and his solar aspect is often identified with Kinich Ahau."
+ },
+ {
+  "id": "yucatec_maya_ix_chel",
+  "name": {
+   "primary": "Ix Chel",
+   "alt": [
+    "Ixchel",
+    "Chak Chel",
+    "Goddess O",
+    "Goddess I"
+   ],
+   "transliterations": {
+    "yua": "Ix Chel",
+    "etymology": "Yucatec ix (feminine agentive prefix) + chel 'rainbow', 'Lady Rainbow'; the aged form Chak Chel means 'Great/Red Rainbow'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "uh",
+     "script": "Latn",
+     "rom": "uj"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970), pp. 241-249"
+     }
+    ]
+   },
+   {
+    "sphereId": "medicine",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "dzac",
+     "script": "Latn",
+     "rom": "tz'aak"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "sphereId": "childbirth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "alansah",
+     "script": "Latn",
+     "rom": "alansah"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "sphereId": "weaving",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sacal",
+     "script": "Latn",
+     "rom": "sakal"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 107-108"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "govern-childbirth",
+    "name": "preside over childbirth",
+    "term": {
+     "value": "canan alansah",
+     "script": "Latn",
+     "rom": "kanan alansah"
+    },
+    "inheritability": "unique",
+    "notes": "Pregnant women made pilgrimage to her shrines on Cozumel and Isla Mujeres to secure safe delivery.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "id": "send-the-flood",
+    "name": "pour the destroying waters",
+    "term": {
+     "value": "hobol haa",
+     "script": "Latn",
+     "rom": "hobol ha'"
+    },
+    "inheritability": "none",
+    "notes": "In her aged aspect Chak Chel she empties a great water jar upon the earth, an image of the destroying flood in the Dresden Codex.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Codex Dresdensis, final page (the flood scene)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "yucatec_maya_itzamna",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ],
+    "notes": "Paired with the creator Itzamná."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Chak Chel",
+    "translation": "Great Rainbow / Red Rainbow",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 99-105"
+     }
+    ]
+   },
+   {
+    "original": "Ix Chebel Yax",
+    "translation": "Lady of the first brush / weaving",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ix Chel is the Yucatec goddess of the moon, medicine, childbirth, and weaving, with a major pilgrimage cult on Cozumel.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970), pp. 241-249"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Scholars distinguish a young moon goddess (Goddess I) from the aged jaguar-clawed water goddess Chak Chel (Goddess O), with the name Ix Chel applied variously to both.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 64-69, 99-105"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ix Chel, 'Lady Rainbow,' is the principal goddess of the Yucatec Maya, associated with the moon, medicine and curing, childbirth, and weaving. Landa records that her island shrines on Cozumel and Isla Mujeres drew pilgrims, especially women seeking healthy children, from across the peninsula. Modern scholarship distinguishes at least two figures often gathered under her name: a youthful lunar goddess (codical Goddess I) linked to sexuality and fertility, and an aged, jaguar-eared and clawed goddess of the earth, flood, and midwifery, called Chak Chel (Goddess O), who is shown in the Dresden Codex pouring a torrent of water from an inverted jar to drown the world. She is regularly paired with the creator Itzamná."
+ },
+ {
+  "id": "yucatec_maya_chaac",
+  "name": {
+   "primary": "Chaac",
+   "alt": [
+    "Chac",
+    "Chaak",
+    "Chaac Xib Chaac",
+    "God B"
+   ],
+   "transliterations": {
+    "yua": "Chaak",
+    "etymology": "Yucatec chaak 'rain', also carrying the senses 'great' and 'red'; the god's name is the ordinary word for rain"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "chaak",
+     "script": "Latn",
+     "rom": "chaak"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "chac ikal",
+     "script": "Latn",
+     "rom": "chak ik'al"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 17-27"
+     }
+    ]
+   },
+   {
+    "sphereId": "agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "col",
+     "script": "Latn",
+     "rom": "kool"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970), pp. 251-262"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hurl-the-lightning",
+    "name": "strike lightning with a stone axe",
+    "term": {
+     "value": "hadz chac",
+     "script": "Latn",
+     "rom": "haadz chaak"
+    },
+    "inheritability": "full",
+    "notes": "Chaac splits the clouds with a lightning axe; thunder is the sound of his blow.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 17-27"
+     }
+    ]
+   },
+   {
+    "id": "send-the-rains",
+    "name": "pour rain upon the milpa",
+    "term": {
+     "value": "cħa chaac",
+     "script": "Latn",
+     "rom": "ch'a' chaak"
+    },
+    "inheritability": "full",
+    "notes": "The living Yucatec Ch'a Chaak ceremony still petitions Chaac to bring rain for the maize fields.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970), pp. 251-262"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "yucatec_maya_chaac-axe",
+    "kind": "weapon",
+    "name": "lightning axe",
+    "term": {
+     "value": "baat chaac",
+     "script": "Latn",
+     "rom": "baat chaak"
+    },
+    "role": "instrument of thunder and lightning",
+    "notes": "Chaac wields a flaming or serpentine stone axe with which he cleaves the storm clouds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 60-61"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Chaac Xib Chaac",
+    "translation": "Red Man Chaac (of the east)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992)"
+     }
+    ]
+   },
+   {
+    "original": "Yaxal Chaac",
+    "translation": "Green/first Chaac",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Chaac is the Yucatec god of rain, thunder, and lightning, quadrupled into four directional-color aspects positioned at the corners of the world.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 17-27"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Chaac corresponds to codical God B and is the most frequently depicted deity in the Dresden and Madrid codices.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Codex Dresdensis; Codex Tro-Cortesianus (Madrid Codex)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Chaac is the Yucatec Maya god of rain, thunder, and lightning, depicted with a long down-curled snout, reptilian features, and shell ornaments, wielding an axe or serpent with which he strikes the clouds to release the rains and the thunder. He is characteristically quadripartite, envisioned as four Chaacs stationed at the cardinal directions and bound to the directional colors: red in the east, white in the north, black in the west, and yellow in the south. The most-depicted figure in the Postclassic codices, where he corresponds to God B, Chaac remains the object of living petitionary ritual: the Ch'a Chaak ceremony is still performed in Yucatec villages to summon rain for the maize milpa, its officiants imitating the frogs that call the storm."
+ },
+ {
+  "id": "yucatec_maya_kukulkan",
+  "name": {
+   "primary": "Kukulkán",
+   "alt": [
+    "Kukulcan",
+    "K'uk'ulkan",
+    "Feathered Serpent"
+   ],
+   "transliterations": {
+    "yua": "K'uk'ulkan",
+    "etymology": "Yucatec k'uk'ul 'feathered, quetzal-plumed' + kaan 'serpent', 'Feathered Serpent'; a calque of Nahuatl Quetzalcoatl"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ik",
+     "script": "Latn",
+     "rom": "ik'"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 142-143"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ahaulil",
+     "script": "Latn",
+     "rom": "ajawlil"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "caan",
+     "script": "Latn",
+     "rom": "kaan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Book of Chilam Balam of Chumayel, trans. Roys (1933)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "descend-as-serpent",
+    "name": "descend from the sky as a feathered serpent",
+    "term": {
+     "value": "emel kukulcan",
+     "script": "Latn",
+     "rom": "emel k'uk'ulkan"
+    },
+    "inheritability": "unique",
+    "notes": "At the equinoxes the shadow of the serpent's body descends the northern balustrade of the great pyramid at Chichén Itzá.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 142-143"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "yucatec_maya_kukulkan-temple",
+    "kind": "monument",
+    "name": "El Castillo (Temple of Kukulcán)",
+    "term": {
+     "value": "u pak Kukulcan",
+     "script": "Latn",
+     "rom": "u pak K'uk'ulkan"
+    },
+    "role": "principal temple at Chichén Itzá",
+    "notes": "Landa records a great round-and-stepped temple dedicated to Kukulcán, whose feast fell on the day 16 Xul.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Nacxit Xuchit",
+    "translation": "Nacxit the flowery lord (a title of the serpent-lord from central Mexico)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Book of Chilam Balam of Chumayel, trans. Roys (1933)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kukulcán is the Yucatec Feathered Serpent, a sky and wind deity and culture-bringer associated with Chichén Itzá and Mayapán, equated with Nahuatl Quetzalcoatl.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 142-143"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Landa reports that Kukulcán came from the west, governed peacefully at Chichén Itzá, founded or ruled Mayapán, and was venerated as a god after departing.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kukulcán, the Feathered Serpent, is the Yucatec counterpart of the central Mexican Quetzalcoatl, a deity of the sky and wind bound up with rulership and the founding of cities. Diego de Landa relates that Kukulcán arrived from the west, ruled justly at Chichén Itzá, was instrumental in the founding of Mayapán, and after ordering the affairs of the land returned westward and was thereafter worshipped as a god; his feast was celebrated on the day 16 Xul. He is remembered in the Books of Chilam Balam under Mexicanized titles such as Nacxit Xuchit. His most famous monument is the great pyramid at Chichén Itzá, El Castillo, on whose balustrade the equinox sun casts the undulating shadow of the descending serpent."
+ },
+ {
+  "id": "yucatec_maya_kinich_ahau",
+  "name": {
+   "primary": "Kinich Ahau",
+   "alt": [
+    "K'inich Ajaw",
+    "Kinich Ahaw",
+    "Ah Kinchil",
+    "God G"
+   ],
+   "transliterations": {
+    "yua": "K'inich Ajaw",
+    "etymology": "Yucatec k'in 'sun, day' + ich 'eye, face' + ajaw 'lord', 'Sun-Eyed Lord' or 'Sun-Faced Lord'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kin",
+     "script": "Latn",
+     "rom": "k'in"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 50-56"
+     }
+    ]
+   },
+   {
+    "sphereId": "day",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kin",
+     "script": "Latn",
+     "rom": "k'in"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Codex Dresdensis"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ahau",
+     "script": "Latn",
+     "rom": "ajaw"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 106-107"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear-the-sun",
+    "name": "carry the sun across the sky",
+    "term": {
+     "value": "cuch kin",
+     "script": "Latn",
+     "rom": "kuch k'in"
+    },
+    "inheritability": "unique",
+    "notes": "By day he crosses the heavens as the sun; at night he descends into the underworld, where he takes the form of a jaguar.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 50-56"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "yucatec_maya_itzamna",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 50-56"
+     }
+    ],
+    "notes": "Often understood as the solar aspect of Itzamná."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ah Kinchil",
+    "translation": "the sun-eyed one",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "original": "Kinich Kakmo",
+    "translation": "Sun-Eyed Fire Macaw",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kinich Ahau is the Yucatec sun god, recognized by his squared crossed eyes, filed teeth, and the k'in sun-sign, corresponding to codical God G.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 50-56"
+     },
+     {
+      "kind": "primary",
+      "reference": "Codex Dresdensis"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "At Izamal a great temple bore his solar avatar Kinich Kakmo, the fire macaw who descended to consume offerings.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Kinich Ahau, the 'Sun-Eyed Lord,' is the Yucatec Maya solar deity, shown with squared, crossed eyes, a Roman-nosed profile, filed T-shaped teeth, and the k'in sun-sign marking his body. He crosses the sky by day and sinks at dusk into the underworld, where he is transformed into a jaguar. He corresponds to God G of the codices and was worshipped at Izamal under the avatar Kinich Kakmo, the 'Sun-Eyed Fire Macaw,' said to swoop down at midday to receive offerings. In much of the scholarship he is treated not as wholly independent but as the solar face of the creator Itzamná, with whom he shares aged, celestial attributes."
+ },
+ {
+  "id": "yucatec_maya_yum_kaax",
+  "name": {
+   "primary": "Yum Kaax",
+   "alt": [
+    "Yum K'aax",
+    "Ah Mun",
+    "Nal",
+    "God E"
+   ],
+   "transliterations": {
+    "yua": "Yum K'aax",
+    "etymology": "Yucatec yum 'lord, father' + k'aax 'forest, woodland', 'Lord of the Forest'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "maize",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nal",
+     "script": "Latn",
+     "rom": "nal"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 41-50"
+     }
+    ]
+   },
+   {
+    "sphereId": "agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "col",
+     "script": "Latn",
+     "rom": "kool"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 109-110"
+     }
+    ]
+   },
+   {
+    "sphereId": "forest",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kaax",
+     "script": "Latn",
+     "rom": "k'aax"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ripen-the-maize",
+    "name": "make the maize sprout and ripen",
+    "term": {
+     "value": "hokol nal",
+     "script": "Latn",
+     "rom": "hokol nal"
+    },
+    "inheritability": "unique",
+    "notes": "The young maize god personifies the growing ear; his fortunes rise and fall with the agricultural year.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 41-50"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Ah Mun",
+    "translation": "the tender green one / the sprout",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Yum Kaax is the Yucatec young maize god, a handsome youth whose head merges with the maize plant, corresponding to codical God E.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 41-50"
+     },
+     {
+      "kind": "primary",
+      "reference": "Codex Dresdensis"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "In modern Yucatec usage Yum Kaax, 'Lord of the Forest,' is invoked as guardian of the wild bush, game animals, and the milpa cut from the forest.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Yum Kaax, the 'Lord of the Forest,' is the Yucatec maize deity, depicted as a youthful god of ideal beauty whose elongated head takes the form of a ripening ear of maize and whose headdress sprouts foliage. He corresponds to God E of the codices, called Nal or Ah Mun, the personified young corn plant whose vulnerability to drought, wind, and the death gods dramatizes the fragility of the harvest. In ethnographic Yucatec religion his name is understood as lord of the woodland and its wild game as well as the maize milpa carved from the bush, and he is propitiated by farmers when clearing and planting the forest."
+ },
+ {
+  "id": "yucatec_maya_ah_puch",
+  "name": {
+   "primary": "Ah Puch",
+   "alt": [
+    "Ah Puch",
+    "Kisin",
+    "Cizin",
+    "Yum Cimil",
+    "Hun Ahau",
+    "God A"
+   ],
+   "transliterations": {
+    "yua": "Ah Puch",
+    "etymology": "Uncertain; possibly related to puch 'to melt, decompose'. The alternate Kisin derives from kis 'flatulence, stench', 'the stinking one'; Yum Cimil means 'Lord of Death'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cimil",
+     "script": "Latn",
+     "rom": "kimil"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Mitnal",
+     "script": "Latn",
+     "rom": "Mitnal"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "sphereId": "disease",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kohaanil",
+     "script": "Latn",
+     "rom": "k'ohaanil"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 11-17"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-underworld",
+    "name": "rule over the dead in Mitnal",
+    "term": {
+     "value": "mektan cimil",
+     "script": "Latn",
+     "rom": "mektan kimil"
+    },
+    "inheritability": "unique",
+    "notes": "He governs Mitnal, the lowest and worst of the underworld levels, a place of hunger, cold, and torment.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Yum Cimil",
+    "translation": "Lord of Death",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ]
+   },
+   {
+    "original": "Kisin",
+    "translation": "the flatulent / stinking one",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 61, 76"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Yucatec death god, called Ah Puch, Kisin, or Yum Cimil, rules the underworld Mitnal and corresponds to codical God A, depicted as a skeletal or bloated corpse-figure hung with bells.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Karl Taube, The Major Gods of Ancient Yucatan (1992), pp. 11-17"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Landa names Mitnal as the lowest level of the underworld, a place of torment ruled by the demon Hunhau.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Yucatec god of death is known under several names, chiefly Ah Puch, Kisin ('the stinking one'), and Yum Cimil ('Lord of Death'), and rules Mitnal, the lowest and most dreadful stratum of the nine-layered underworld, described by Landa as a place of hunger, cold, weariness, and grief. He corresponds to God A of the codices, portrayed as a skeleton or a swollen, black-spotted corpse, girdled with death-eyes and bells, and associated with the owl, the dog, and the stench of decay. His name Kisin, from the Yucatec word for flatulence and stench, evokes the rot of the grave. In the codices he stalks the young maize god, and the manuscripts pair his malignant death-days against the life-giving days of the benevolent gods."
+ },
+ {
+  "id": "yucatec_maya_ek_chuah",
+  "name": {
+   "primary": "Ek Chuah",
+   "alt": [
+    "Ek Chuaj",
+    "Ekchuah",
+    "God M"
+   ],
+   "transliterations": {
+    "yua": "Ek Chuah",
+    "etymology": "Yucatec ek 'black' + chuah, variously read as 'scorpion' or as a form linked to war and the black star; commonly rendered 'Black Scorpion' or 'Black War-Chief'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "commerce",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ppolom",
+     "script": "Latn",
+     "rom": "p'olom"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "sphereId": "cacao",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cacau",
+     "script": "Latn",
+     "rom": "kakaw"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "sphereId": "travel",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ah ximbal",
+     "script": "Latn",
+     "rom": "aj ximbal"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 76-77"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-the-merchants",
+    "name": "protect merchants on the road",
+    "term": {
+     "value": "canan ppolom",
+     "script": "Latn",
+     "rom": "kanan p'olom"
+    },
+    "inheritability": "unique",
+    "notes": "Traveling traders set up three stones with copal at their night camps and burned incense to Ek Chuah for safe passage.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "yucatec_maya_ek_chuah-pack",
+    "kind": "regalia",
+    "name": "merchant's pack and staff",
+    "term": {
+     "value": "cuch",
+     "script": "Latn",
+     "rom": "kuuch"
+    },
+    "role": "burden borne by the traveling trader god",
+    "notes": "In the Madrid Codex Ek Chuah is shown carrying a merchant's bundle slung on a tumpline, with a spear or walking staff.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Codex Tro-Cortesianus (Madrid Codex)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Ek Chuah",
+    "translation": "Black Scorpion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ek Chuah is the black-painted Yucatec patron of merchants, cacao, and travelers, corresponding to codical God M.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Mary Miller & Karl Taube, An Illustrated Dictionary (1993), pp. 76-77"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Landa records that cacao growers held a festival in the month Muan for Ek Chuah, Chaac, and Hobnil.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Ek Chuah, the 'Black Scorpion,' is the Yucatec Maya patron of long-distance merchants, of the cacao that served as currency, and of travelers on the road. Landa describes him as a god painted black, with a long drooping lip and, in the codices, a scorpion tail and a merchant's pack borne on a tumpline. Traders on the trail built a small cairn of three stones each night, laid copal upon it, and burned incense to him for protection, while cacao planters honored him alongside Chaac and the Bacab Hobnil in a festival of the month Muan. He corresponds to God M and, in his darker martial aspect, is also linked to war."
+ },
+ {
+  "id": "yucatec_maya_ix_tab",
+  "name": {
+   "primary": "Ix Tab",
+   "alt": [
+    "Ixtab",
+    "Ix Taab",
+    "Goddess of the Rope"
+   ],
+   "transliterations": {
+    "yua": "Ix Tab",
+    "etymology": "Yucatec ix (feminine prefix) + tab 'rope, cord, snare', 'Lady of the Rope / Rope Woman'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cimil ti tab",
+     "script": "Latn",
+     "rom": "kimil ti tab"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   },
+   {
+    "sphereId": "afterlife",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "u yaxche",
+     "script": "Latn",
+     "rom": "u yaxche'"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guide-the-hanged",
+    "name": "conduct the hanged to paradise",
+    "term": {
+     "value": "pay ti caan",
+     "script": "Latn",
+     "rom": "pay ti kaan"
+    },
+    "inheritability": "unique",
+    "notes": "She receives the souls of those who die by hanging and leads them to the shade of the world-tree Yaxche, a place of rest and abundance.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Ix Tab",
+    "translation": "the Rope Woman",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ix Tab is the Yucatec goddess of the noose who leads the souls of the hanged to paradise, described by Landa and depicted with a rope about her neck.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Landa reports that the Yucatec Maya held those who hanged themselves to be carried by the goddess of the gibbet to the paradise beneath the world-tree.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Landa, Relación de las cosas de Yucatán, trans. Tozzer (1941)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Ix Tab, the 'Rope Woman,' is the Yucatec Maya goddess of the hanged and the patroness of those who take their own lives by the noose. Diego de Landa records that the Maya so honored death by hanging that Ix Tab came in person to lead such souls to the paradise beneath the sacred ceiba, the world-tree Yaxche, where the blessed rested in shade and were free of pain and want. In an image reproduced from the Dresden Codex she is shown as a corpse suspended by a rope knotted around her neck, her body marked with the black spots of decay. Her cult reflects the Yucatec belief that certain forms of death, like death in childbirth or in war, opened the way directly to a favored afterlife."
+ },
+ {
+  "id": "yucatec_maya_xtabay",
+  "name": {
+   "primary": "Xtabay",
+   "alt": [
+    "X-Tabay",
+    "Xtabai",
+    "Ix Tabay"
+   ],
+   "transliterations": {
+    "yua": "X-Tabay",
+    "etymology": "Yucatec x- (feminine prefix) + tabay, from tab 'to ensnare, deceive', 'the ensnaring / deceiving woman'"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "seduction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "baxal",
+     "script": "Latn",
+     "rom": "baxal"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfredo Barrera Vásquez et al., Diccionario Maya Cordemex (1980)"
+     }
+    ]
+   },
+   {
+    "sphereId": "wilderness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yaxche",
+     "script": "Latn",
+     "rom": "yaxche'"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lure-travelers",
+    "name": "lure and destroy solitary men",
+    "term": {
+     "value": "tabal xib",
+     "script": "Latn",
+     "rom": "tabal xib"
+    },
+    "inheritability": "unique",
+    "notes": "Combing her long hair beneath a ceiba, she draws men to her and destroys them, her back revealed as hollow, thorned, or serpentine.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfredo Barrera Vásquez et al., Diccionario Maya Cordemex (1980)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "X-Tabay",
+    "translation": "the deceiving woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfredo Barrera Vásquez et al., Diccionario Maya Cordemex (1980)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Xtabay is a female spirit of Yucatec folklore who lures men to their deaths from beside a ceiba tree, associated with the spiny pochote.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alfredo Barrera Vásquez et al., Diccionario Maya Cordemex (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "Scholars have proposed a historical connection between the folkloric Xtabay and the colonial rope-goddess Ix Tab, though the identification is debated.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. Eric S. Thompson, Maya History and Religion (1970)"
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Xtabay is a seductive and dangerous female spirit of Yucatec Maya folklore who appears at night beside a ceiba tree, combing her long black hair, to entice solitary men. Those who follow her are led into the bush and destroyed, for her beautiful front conceals a back that is hollow like a dead trunk or bristling with the thorns of the pochote. In many tellings she is contrasted with a virtuous counterpart, Utz-Colel, in a moral tale about the fates of the wanton and the chaste. Sources differ on whether the name preserves a memory of the colonial rope-goddess Ix Tab, to which it is linguistically close, or represents an independent tree-and-forest spirit of the living oral tradition."
+ },
+ {
+  "id": "yucatec_maya_chilam_balam",
+  "name": {
+   "primary": "Chilam Balam",
+   "alt": [
+    "Chilam Balam of Maní",
+    "Balam the Prophet"
+   ],
+   "transliterations": {
+    "yua": "Chilam Balam",
+    "etymology": "Yucatec chilam 'spokesman, interpreter, one who lies prone to prophesy' + balam 'jaguar', 'the Jaguar Spokesman/Interpreter'"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Yucatec Maya",
+  "primaryTradition": "Yucatec Maya",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Yucatec Maya traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "chilam",
+     "script": "Latn",
+     "rom": "chilam"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Book of Chilam Balam of Chumayel, trans. Ralph L. Roys (1933)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "foretell-the-strangers",
+    "name": "prophesy the coming of a new faith",
+    "term": {
+     "value": "aluxthan",
+     "script": "Latn",
+     "rom": "aal u than"
+    },
+    "inheritability": "none",
+    "notes": "He is remembered as having foretold, before the Conquest, the arrival of bearded strangers from the east and a new religion.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Book of Chilam Balam of Chumayel, trans. Roys (1933)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Chilam Balam",
+    "translation": "the Jaguar Priest / Spokesman",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "The Book of Chilam Balam of Chumayel, trans. Roys (1933)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Chilam Balam was a Yucatec priest-prophet of Maní, remembered as foretelling the coming of a new religion, whose title gives its name to the community books of Yucatec Maya lore and prophecy.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "The Book of Chilam Balam of Chumayel, trans. Ralph L. Roys (1933), Carnegie Institution of Washington Publication 438"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Munro S. Edmonson, Heaven Born Merida and Its Destiny: The Book of Chilam Balam of Chumayel (University of Texas Press, 1986)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Chilam Balam, the 'Jaguar Spokesman,' was a Yucatec priest and prophet said to have lived at Maní in the years just before the Spanish Conquest. A chilam was an interpreter of the gods who prophesied lying prone in a trance, and Balam ('jaguar') was his lineage name. He is famed in the surviving tradition for having foretold the coming of bearded strangers from the east and of a new religion. After the Conquest, communities across northern Yucatán compiled manuscripts in the Maya language and Latin script that gathered calendrical lore, katun prophecies, myth, medicine, and history; these took his title collectively as the Books of Chilam Balam, named for the towns that kept them, above all Chumayel, Tizimín, and Maní. He stands between historical memory and legend, a named prophet whose person is now inseparable from the corpus that bears his name."
+ }
+]
+```

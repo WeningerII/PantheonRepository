@@ -1,0 +1,668 @@
+Atayal — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "atayal_utux",
+  "name": {
+   "primary": "Utux",
+   "alt": [
+    "Utux Kayal",
+    "Rutux",
+    "Utux Bnkis"
+   ],
+   "transliterations": {
+    "tay": "Utux",
+    "zh": "祖靈／神靈",
+    "etymology": "Atayal utux 'spirit, soul, supernatural being, god'; the compound Utux Kayal means 'spirit of the sky/heaven', Utux Bnkis 'spirit of the elders/ancestors'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Atayal",
+  "primaryTradition": "Atayal",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Atayal traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestral-spirits",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "utux bnkis",
+     "script": "Latn",
+     "rom": "utux bnkis"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wang Mei-hsia (王梅霞), Atayal (泰雅族), Sanmin (三民書局), 2006, ch. on utux and religious belief"
+     }
+    ]
+   },
+   {
+    "sphereId": "moral-law",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gaga",
+     "script": "Latn",
+     "rom": "gaga"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Furuno Kiyoto (古野清人), Ritual Life of the Takasago Tribes (高砂族の祭儀生活), Sanseido, 1945 — Atayal gaga and the sanction of utux"
+     }
+    ]
+   },
+   {
+    "sphereId": "death-and-afterlife",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hongu utux",
+     "script": "Latn",
+     "rom": "hongu utux"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ho Ting-jui (何廷瑞), A Comparative Study of Myths and Legends of Formosan Aborigines, Ph.D. diss., Indiana University, 1967 (Orient Cultural Service, Taipei, 1971) — Atayal afterlife and the spirits' bridge"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "enforce-gaga",
+    "name": "enforces the ancestral law",
+    "term": {
+     "value": "gaga",
+     "script": "Latn",
+     "rom": "gaga"
+    },
+    "inheritability": "unique",
+    "notes": "The Utux stand behind the gaga, the body of custom, taboo and ritual obligation; breach of gaga brings the anger of the ancestral spirits upon the group.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wang Mei-hsia (王梅霞), Atayal (泰雅族), Sanmin, 2006 — gaga as ritual-moral order under the utux"
+     }
+    ]
+   },
+   {
+    "id": "judge-the-dead",
+    "name": "judges the souls of the dead at the spirit bridge",
+    "term": {
+     "value": "hongu utux",
+     "script": "Latn",
+     "rom": "hongu utux"
+    },
+    "inheritability": "unique",
+    "notes": "The ancestral spirits receive the dead at the rainbow bridge, admitting the properly tattooed and the upright while the unworthy are cast down.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ho Ting-jui (何廷瑞), A Comparative Study of Myths and Legends of Formosan Aborigines, 1971 — passage of the soul across the bridge"
+     }
+    ]
+   },
+   {
+    "id": "send-fortune-and-affliction",
+    "name": "sends fortune, sickness and misfortune",
+    "term": {
+     "value": "utux",
+     "script": "Latn",
+     "rom": "utux"
+    },
+    "inheritability": "unique",
+    "notes": "Health, harvest, hunting success and illness alike are read as the favour or displeasure of the utux, addressed through offering and expiation.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sayama Yukichi (佐山融吉), Report on the Investigation of Formosan Aborigines: Atayal (蕃族調査報告書 タイヤル族), Rinji Taiwan Kyukan Chosakai, 1918 — beliefs concerning utux and affliction"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "atayal_siliq",
+    "notes": "The augural bird siliq carries the will of the utux to the living.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sayama Yukichi, Report on the Investigation of Formosan Aborigines: Atayal, 1918 — bird augury as communication of the spirits"
+     }
+    ]
+   },
+   {
+    "kind": "ally",
+    "personId": "atayal_hongu_utux",
+    "notes": "The rainbow bridge is the road to the ancestral spirits and the threshold they keep.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ho Ting-jui, A Comparative Study of Myths and Legends of Formosan Aborigines, 1971"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Utux Kayal",
+    "translation": "Spirit of the Sky",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wang Mei-hsia (王梅霞), Atayal (泰雅族), Sanmin, 2006"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Utux is the central category of Atayal religion, denoting soul, ancestral spirit and supreme spiritual power, and the guarantor of the gaga.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sayama Yukichi (佐山融吉), Report on the Investigation of Formosan Aborigines: Atayal (蕃族調査報告書 タイヤル族), 1918"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wang Mei-hsia (王梅霞), Atayal (泰雅族), Sanmin (三民書局), 2006"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Utux is the pivotal spiritual reality of Atayal religion. The word names at once the soul of a living person, the spirit of a dead one, the collective ancestral spirits (utux bnkis), and the highest supernatural power, sometimes distinguished as Utux Kayal, the spirit of the sky. The utux are not depicted in image and are rarely individualized; they are experienced as a watching, judging presence that upholds gaga, the interwoven code of custom, taboo and ritual by which Atayal groups live. Prosperity, illness, success in the hunt and the fate of the soul after death are all referred to the pleasure or anger of the utux, who receive the dead at the rainbow bridge and admit the worthy to the ancestral land. Offerings, expiatory rites and the reading of omens keep the living in right relation with them."
+ },
+ {
+  "id": "atayal_pinsbkan",
+  "name": {
+   "primary": "Pinsbkan",
+   "alt": [
+    "Pinsbukan",
+    "Bnsbkan"
+   ],
+   "transliterations": {
+    "tay": "Pinsbkan",
+    "zh": "賓斯博干（發祥巨石）",
+    "etymology": "from an Atayal root meaning 'to split apart, burst open'; understood as 'the place of the splitting-forth', where the ancestral rock broke open and the first people emerged."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Atayal",
+  "primaryTradition": "Atayal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Atayal traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation-and-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "pinsbkan",
+     "script": "Latn",
+     "rom": "pinsbkan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ogawa Naoyoshi & Asai Erin (小川尚義・淺井惠倫), The Myths and Traditions of the Formosan Native Tribes (原語による台湾高砂族伝説集), Taihoku Imperial University, 1935 — Atayal origin texts"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-forth-the-ancestors",
+    "name": "brings forth the first ancestors from stone",
+    "term": {
+     "value": "pinsbkan",
+     "script": "Latn",
+     "rom": "pinsbkan"
+    },
+    "inheritability": "unique",
+    "notes": "In the emergence myth the great rock splits open and the first Atayal, a man and a woman, step out into the world.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ogawa & Asai, The Myths and Traditions of the Formosan Native Tribes, 1935 — Atayal rock-emergence narrative"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Many Atayal groups trace their origin to the rock Pinsbkan (in the Ren'ai/Ruiyan area of Nantou), from which the ancestors emerged when the stone split open.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Ogawa Naoyoshi & Asai Erin, The Myths and Traditions of the Formosan Native Tribes (原語による台湾高砂族伝説集), 1935"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Liao Shou-chen (廖守臣), The Culture of the Atayal: Tribal Migration and Expansion (泰雅族的文化：部落遷徙與拓展), 1984 — Pinsbkan as ancestral point of dispersal"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Pinsbkan is the sacred origin-rock of a large part of the Atayal nation. In the emergence myth the primordial stone bursts open and the first human beings step forth, from whom the lineages spread out across the mountains; Atayal genealogical tradition remembers Pinsbkan as the point from which the ancestors migrated in successive waves to their later valleys. The site is localized in the highlands of Nantou, near Ruiyan in present-day Ren'ai. Sources differ on whether the true place of origin was Pinsbkan or the crag Papak-Waqa, and different groups preserve the memory differently, but in both traditions the ancestors are born not of a womb but of the living rock of the homeland."
+ },
+ {
+  "id": "atayal_papak_waqa",
+  "name": {
+   "primary": "Papak-Waqa",
+   "alt": [
+    "Papak Waqa",
+    "Bbu Papak",
+    "Dabajian Mountain",
+    "Dabajianshan"
+   ],
+   "transliterations": {
+    "tay": "Papak Waqa",
+    "zh": "大霸尖山",
+    "etymology": "Atayal papak 'ears' with the name Waqa, 'the ears of Waqa', a descriptive name for the twin-horned crag of the mountain."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Atayal",
+  "primaryTradition": "Atayal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Atayal traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sacred-geography",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "papak waqa",
+     "script": "Latn",
+     "rom": "papak waqa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tian Zhe-yi / Masegeseg Z. Gadu (田哲益), Atayal Myths and Legends (泰雅族神話與傳說), Morningstar (晨星), 2003 — Papak-Waqa origin and flood traditions"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shelter-the-ancestors",
+    "name": "shelters the ancestors above the flood",
+    "term": {
+     "value": "papak waqa",
+     "script": "Latn",
+     "rom": "papak waqa"
+    },
+    "inheritability": "unique",
+    "notes": "In the deluge tradition the crag is the peak that rises above the waters, where the surviving people gather until the flood recedes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tian Zhe-yi (田哲益), Atayal Myths and Legends, 2003 — the flood and the mountain refuge"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The northern and eastern Atayal (and the neighbouring Saisiyat) hold the crag Papak-Waqa, Mount Dabajian, to be the place of origin of their ancestors and the refuge above the great flood.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Tian Zhe-yi / Masegeseg Z. Gadu (田哲益), Atayal Myths and Legends (泰雅族神話與傳說), Morningstar, 2003"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ferrell, Raleigh, Taiwan Aboriginal Groups, Academia Sinica Monograph 17, 1969 — Atayal and Saisiyat origin traditions at Dabajian"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Papak-Waqa, the sheer twin-horned crag known in Chinese as Mount Dabajian, is the most sacred mountain of the northern Atayal and their Saisiyat neighbours. In one great strand of tradition it is the place of origin itself, the crag from which the ancestors came into being, and in the widely told deluge myth it is the peak that stands above the rising waters, the refuge where the remnant of humankind survives until the flood withdraws. Sources differ on whether the ancestors first sprang from Papak-Waqa or from the rock Pinsbkan, and the two traditions belong to different clusters of Atayal groups. The mountain remains a focus of reverence and is approached with restraint."
+ },
+ {
+  "id": "atayal_hongu_utux",
+  "name": {
+   "primary": "Hongu Utux",
+   "alt": [
+    "Hakaw Utux",
+    "Rainbow Bridge",
+    "Bridge of the Spirits"
+   ],
+   "transliterations": {
+    "tay": "Hongu Utux",
+    "zh": "彩虹橋（靈魂橋）",
+    "etymology": "Atayal hongu 'bridge' + utux 'spirit', 'the bridge of the spirits'; identified with the rainbow. The form hakaw utux belongs to the closely related Sediq."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Atayal",
+  "primaryTradition": "Atayal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Atayal traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death-and-afterlife",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hongu utux",
+     "script": "Latn",
+     "rom": "hongu utux"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ho Ting-jui (何廷瑞), A Comparative Study of Myths and Legends of Formosan Aborigines, 1971 — the spirit bridge in Atayal eschatology"
+     }
+    ]
+   },
+   {
+    "sphereId": "judgment",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ptasan",
+     "script": "Latn",
+     "rom": "ptasan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ho Ting-jui (何廷瑞), A Study of the Tattoo Customs of the Formosan Aborigines (台灣土著諸族文身習俗之研究), Bulletin of the Dept. of Archaeology and Anthropology, NTU, 1960"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "test-the-dead",
+    "name": "tests the dead at the crossing",
+    "term": {
+     "value": "hongu utux",
+     "script": "Latn",
+     "rom": "hongu utux"
+    },
+    "inheritability": "unique",
+    "notes": "The properly tattooed, who in life kept gaga and earned their marks by weaving or by taking a head, cross safely to the ancestral land; the unmarked and the guilty lose their footing and fall into the abyss below.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ho Ting-jui, A Comparative Study of Myths and Legends of Formosan Aborigines, 1971"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "atayal_hongu_utux-ptasan",
+    "kind": "body-marking",
+    "name": "facial tattoo",
+    "term": {
+     "value": "ptasan",
+     "script": "Latn",
+     "rom": "ptasan"
+    },
+    "role": "token of qualification for crossing the spirit bridge",
+    "notes": "Men earned the forehead and chin tattoo through success in the hunt or headhunt, women through mastery of weaving; the marks certified adult standing in life and safe passage across the rainbow bridge in death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ho Ting-jui (何廷瑞), A Study of the Tattoo Customs of the Formosan Aborigines (台灣土著諸族文身習俗之研究), 1960"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "atayal_utux",
+    "notes": "The bridge is the road to the ancestral spirits, who keep its far threshold.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ho Ting-jui, A Comparative Study of Myths and Legends of Formosan Aborigines, 1971"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Atayal tradition holds that the soul of the dead must cross a rainbow bridge, the hongu utux, where the properly tattooed pass to the ancestral land and the unqualified fall away.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ho Ting-jui (何廷瑞), A Comparative Study of Myths and Legends of Formosan Aborigines, Indiana University / Orient Cultural Service, 1971"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wang Mei-hsia (王梅霞), Atayal (泰雅族), Sanmin, 2006 — tattoo, gaga and the afterlife"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Hongu Utux, the bridge of the spirits, is the rainbow along which the Atayal dead travel to the land of the ancestors. It is a place of reckoning: only those who kept the gaga and bear the facial tattoo earned in life may set foot on it and cross in safety, while the untattooed, the cowardly and the guilty lose their footing and fall into the gulf beneath, in some tellings to be seized by a great crab or lost in the dark water. The bridge thus binds together the central concerns of Atayal life and death, tattoo, headtaking, weaving and the moral order of gaga, into a single image of judgement. The Sediq preserve the cognate hakaw utux with a comparable belief."
+ },
+ {
+  "id": "atayal_halus",
+  "name": {
+   "primary": "Halus",
+   "alt": [
+    "Halos",
+    "Halux"
+   ],
+   "transliterations": {
+    "tay": "Halus",
+    "zh": "哈路斯（巨人）",
+    "etymology": "proper name of the legendary giant; of uncertain further derivation."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Atayal",
+  "primaryTradition": "Atayal",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "Atayal traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "monsters-and-giants",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "halus",
+     "script": "Latn",
+     "rom": "halus"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tian Zhe-yi / Masegeseg Z. Gadu (田哲益), Atayal Myths and Legends (泰雅族神話與傳說), Morningstar, 2003 — the giant Halus"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "span-the-valley",
+    "name": "spans rivers and valleys with his body",
+    "term": {
+     "value": "halus",
+     "script": "Latn",
+     "rom": "halus"
+    },
+    "inheritability": "none",
+    "notes": "Of monstrous size, the giant could lie across a gorge or stretch himself over a river, in the coarser tellings using his enormous member to dam the stream or to snare fish and game.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tian Zhe-yi (田哲益), Atayal Myths and Legends, 2003"
+     }
+    ]
+   },
+   {
+    "id": "devour-game",
+    "name": "devours whole beasts",
+    "term": {
+     "value": "halus",
+     "script": "Latn",
+     "rom": "halus"
+    },
+    "inheritability": "none",
+    "notes": "His appetite was without measure, swallowing wild boar entire and exhausting the people who were forced to feed him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tian Zhe-yi (田哲益), Atayal Myths and Legends, 2003"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Atayal oral literature tells of a giant named Halus, of grotesque size and appetite, who oppressed the people until they contrived to kill him.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Tian Zhe-yi / Masegeseg Z. Gadu (田哲益), Atayal Myths and Legends (泰雅族神話與傳說), Morningstar, 2003"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ogawa Naoyoshi & Asai Erin, The Myths and Traditions of the Formosan Native Tribes, 1935 — Atayal giant tales"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Halus is the great giant of Atayal legend, a being of the old world whose body could bridge a gorge and whose hunger consumed whole animals at a sitting. The tales dwell with rough humour on his monstrous proportions, telling how he laid himself across rivers, diverted their water or trapped fish and game, and how he wearied the people with his demands for food. In the end the villagers rid themselves of him by a trick, in the common version feeding him red-hot stones disguised as food so that he burned from within and died. He belongs to the widely shared Formosan repertoire of giant and ogre stories, localized to the Atayal mountains."
+ },
+ {
+  "id": "atayal_siliq",
+  "name": {
+   "primary": "Siliq",
+   "alt": [
+    "Sisil",
+    "Sisilek",
+    "siliq bird"
+   ],
+   "transliterations": {
+    "tay": "siliq",
+    "zh": "希利克鳥（占卜鳥）",
+    "etymology": "Atayal name of the small augural bird, the grey-cheeked fulvetta; the word echoes its call."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Atayal",
+  "primaryTradition": "Atayal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Atayal traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "divination",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "siliq",
+     "script": "Latn",
+     "rom": "siliq"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sayama Yukichi (佐山融吉), Report on the Investigation of Formosan Aborigines: Atayal (蕃族調査報告書 タイヤル族), 1918 — bird augury among the Atayal"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "deliver-omens",
+    "name": "delivers omens by call and flight",
+    "term": {
+     "value": "siliq",
+     "script": "Latn",
+     "rom": "siliq"
+    },
+    "inheritability": "unique",
+    "notes": "The bird's cry and the direction of its flight sanction or forbid an undertaking; a favourable sign clears the way for a hunt, a journey, a marriage or a raid, an ill one turns the party back.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sayama Yukichi, Report on the Investigation of Formosan Aborigines: Atayal, 1918"
+     }
+    ]
+   },
+   {
+    "id": "voice-the-utux",
+    "name": "voices the will of the ancestral spirits",
+    "term": {
+     "value": "siliq",
+     "script": "Latn",
+     "rom": "siliq"
+    },
+    "inheritability": "unique",
+    "notes": "The siliq is understood as a messenger through which the utux make their pleasure known to the living.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wang Mei-hsia (王梅霞), Atayal (泰雅族), Sanmin, 2006 — the omen bird as intermediary of the utux"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "atayal_utux",
+    "notes": "The bird bears the will of the utux to human beings and is consulted before every consequential act.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sayama Yukichi, Report on the Investigation of Formosan Aborigines: Atayal, 1918"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Atayal treat the small bird siliq (the grey-cheeked fulvetta) as a sacred oracle whose call and flight, read as the will of the utux, must be consulted before hunting, raiding, travel, farming and marriage.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sayama Yukichi (佐山融吉), Report on the Investigation of Formosan Aborigines: Atayal (蕃族調査報告書 タイヤル族), Rinji Taiwan Kyukan Chosakai, 1918"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wang Mei-hsia (王梅霞), Atayal (泰雅族), Sanmin (三民書局), 2006"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The siliq, a small mountain bird identified with the grey-cheeked fulvetta, is the great oracle of Atayal life. Its call and the manner of its flight are read as direct communication from the utux: a clear, favourable sign opens the way for a hunt, a journey, a betrothal or a war-party, while an adverse cry or a crossing flight halts the enterprise and sends the people home. So binding is its authority that no serious undertaking was begun without consulting it, and the reading of the siliq stood beside the keeping of gaga as a daily discipline linking the Atayal to the ancestral spirits. Bird augury of this kind is shared across the Formosan peoples, but the siliq holds a particularly central place in Atayal practice."
+ }
+]
+```

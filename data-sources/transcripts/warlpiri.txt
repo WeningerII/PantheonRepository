@@ -1,0 +1,963 @@
+Warlpiri — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "warlpiri_yarripiri",
+  "name": {
+   "primary": "Yarripiri",
+   "alt": [
+    "Jarapiri",
+    "Yarapiri",
+    "Jarrapiri"
+   ],
+   "transliterations": {
+    "wbp": "Yarripiri",
+    "etymology": "A great python (warna) ancestor whose body and journey are fixed in the country around Winparrku (Mount Wedge)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Warlpiri",
+  "primaryTradition": "Warlpiri",
+  "sex": "male",
+  "vitalStatus": "eternal",
+  "temporal": {
+   "era": "Warlpiri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "serpentine-creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "warna",
+     "script": "Latn",
+     "rom": "warna"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mountford, C.P. (1968), Winbaraku and the Myth of Jarapiri, Rigby, Adelaide, pp. 14-59"
+     }
+    ]
+   },
+   {
+    "sphereId": "ceremony-fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Jardiwanpa",
+     "script": "Latn",
+     "rom": "Jardiwanpa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Aboriginal Art Directory / Warlukurlangu Artists, 'Jardiwanpa Jukurrpa (Ancestral Snake Dreaming)', Yuendumu documentation"
+     }
+    ]
+   },
+   {
+    "sphereId": "landscape-track",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yiwarra",
+     "script": "Latn",
+     "rom": "yiwarra"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munn, N.D. (1973), Walbiri Iconography, Cornell University Press, pp. 58-118"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "travel-blind-carried",
+    "name": "travels the country blind and crippled, carried by his kin",
+    "term": {
+     "value": "yani",
+     "script": "Latn",
+     "rom": "yani"
+    },
+    "inheritability": "unique",
+    "notes": "Left behind by his family at Winparrku, the blind snake compels the Nangala/Nampijinpa women and Jangala/Jampijinpa men to carry him as they perform his ceremony northward.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Jardiwanpa Jukurrpa documentation, Yuendumu"
+     }
+    ]
+   },
+   {
+    "id": "petrify-into-country",
+    "name": "turns his body into rock and sacred sites",
+    "term": {
+     "value": "warna-kurlangu",
+     "script": "Latn",
+     "rom": "warna-kurlangu"
+    },
+    "inheritability": "none",
+    "notes": "The coils and length of Yarripiri became named features of the Winparrku range, holding the Dreaming permanently in the land.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mountford, C.P. (1968), Winbaraku and the Myth of Jarapiri, Rigby, Adelaide"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "warna wiri",
+    "translation": "the great snake",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1962), Desert People, Angus & Robertson"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Yarripiri is a great blind python ancestor who travelled from Winparrku (Mount Wedge) performing the Jardiwanpa (reconciliation/fire) ceremony, and whose body became the landscape.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Mountford, C.P. (1968), Winbaraku and the Myth of Jarapiri, Rigby, Adelaide"
+     },
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1955), field records; Desert People (1962), Angus & Robertson"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "His journey and iconography were analysed by Nancy Munn among the Yuendumu Warlpiri.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Munn, N.D. (1973), Walbiri Iconography, Cornell University Press"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Yarripiri is one of the greatest of the Warlpiri snake ancestors, a python identified with the rocky massif of Winparrku (Mount Wedge), south-west of Yuendumu. In the Jukurrpa he is old, blind and crippled, abandoned by his kin, and must be carried across the country by the men and women of the appropriate subsections as he travels north performing the Jardiwanpa ceremony of reconciliation and retribution. Where his body rested, coiled or dragged, the land rose into hills and outcrops that bear his name. Charles Mountford recorded and photographed the full track of his myth with Warlpiri men in the 1960s, and his design belongs to the enduring iconographic tradition documented by Nancy Munn at Yuendumu."
+ },
+ {
+  "id": "warlpiri_mamandabari",
+  "name": {
+   "primary": "Mamandabari",
+   "alt": [
+    "Mamandaparri",
+    "Wati-jarra",
+    "Wati-Kutjarra",
+    "The Two Men"
+   ],
+   "transliterations": {
+    "wbp": "Mamandabari",
+    "etymology": "The paired male ancestors of the Kajirri (Gadjari) initiation cycle; the Two Men"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Warlpiri",
+  "primaryTradition": "Warlpiri",
+  "sex": "male",
+  "vitalStatus": "eternal",
+  "parentIds": [
+   "warlpiri_wawulja"
+  ],
+  "parentRoles": {
+   "warlpiri_wawulja": "paternal"
+  },
+  "temporal": {
+   "era": "Warlpiri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "initiation-law",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kajirri",
+     "script": "Latn",
+     "rom": "Kajirri"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines of Central Australia, Oceania Monographs"
+     }
+    ]
+   },
+   {
+    "sphereId": "song-ceremony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yiri",
+     "script": "Latn",
+     "rom": "yiri"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wild, S.A. (1975), Walbiri Music and Dance in their Social and Cultural Nexus, PhD thesis, Indiana University"
+     }
+    ]
+   },
+   {
+    "sphereId": "landscape-track",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yiwarra",
+     "script": "Latn",
+     "rom": "yiwarra"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lay-initiation-track",
+    "name": "lays down the Kajirri initiation road across the desert",
+    "term": {
+     "value": "Kajirri-kirli",
+     "script": "Latn",
+     "rom": "Kajirri-kirli"
+    },
+    "inheritability": "unique",
+    "notes": "The travels of the Two Men established the sequence of secret episodes, songs and sites that structure the second-stage male initiation of the Warlpiri.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines of Central Australia"
+     }
+    ]
+   },
+   {
+    "id": "carry-sacred-objects",
+    "name": "carries and reveals the sacred boards and ritual gear",
+    "term": {
+     "value": "kuruwarri",
+     "script": "Latn",
+     "rom": "kuruwarri"
+    },
+    "inheritability": "partial",
+    "notes": "The pair are the archetypal ritual actors whose performance living men re-enact in the Mamandabari-Gadjari cycle.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wild, S.A. (1975), Walbiri Music and Dance, Indiana University"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "warlpiri_mamandabari-tywerrenge",
+    "kind": "sacred-object",
+    "name": "sacred incised board",
+    "term": {
+     "value": "kuruwarri",
+     "script": "Latn",
+     "rom": "kuruwarri"
+    },
+    "role": "ritual insignia carried and revealed in the Kajirri cycle",
+    "notes": "Incised boards and ground designs encode the episodes of the Two Men's journey.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Munn, N.D. (1973), Walbiri Iconography, Cornell University Press"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "warlpiri_wawulja",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Watson, C. (2003), Piercing the Ground: Balgo Women's Image Making and Relationship to Country, Fremantle Arts Centre Press"
+     }
+    ],
+    "notes": "In the Tanami Warlpiri tradition the Two Men (Wati-Kutjarra) are named as sons of Wawulja."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "wati-jarra",
+    "translation": "the two men",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Watson, C. (2003), Piercing the Ground, Fremantle Arts Centre Press"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Mamandabari are a pair of male ancestral heroes whose song cycle, recorded by Meggitt at Lajamanu, is the core of the secret male episodes of Kajirri (Gadjari) initiation.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines of Central Australia, Oceania Monographs"
+     },
+     {
+      "kind": "primary",
+      "reference": "Wild, S.A. (1975), Walbiri Music and Dance, Indiana University"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Sources differ on whether the Mamandabari cycle refers to the same pair as the Western Desert Wati-Kutjarra; Watson identifies them while others treat the two cycles as distinct.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Watson, C. (2003), Piercing the Ground, Fremantle Arts Centre Press"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The Mamandabari are the Two Men, a pair of ancestral heroes whose travels across the Tanami laid down the road of the Kajirri (Gadjari) male initiation. Meggitt recorded their song cycle at Lajamanu in the 1950s as the compilation of secret male episodes that gives the initiation its shape, and Stephen Wild later documented the music and dance of the same tradition. Their performance is the model that living men re-enact, and the incised boards and ground designs of the cycle encode the sequence of their journey. Sources differ on whether this pair is the same as the Western Desert Wati-Kutjarra: in the Tanami Warlpiri tradition the Two Men are called the sons of Wawulja, while scholars such as Watson identify the eastern and western cycles and others keep them apart."
+ },
+ {
+  "id": "warlpiri_wawulja",
+  "name": {
+   "primary": "Wawulja",
+   "alt": [
+    "Wawalja"
+   ],
+   "transliterations": {
+    "wbp": "Wawulja",
+    "etymology": "Glossed as 'the Invincible'; the ancestral man who married his own daughters"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Warlpiri",
+  "primaryTradition": "Warlpiri",
+  "sex": "male",
+  "vitalStatus": "eternal",
+  "temporal": {
+   "era": "Warlpiri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "kinship-law",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kurdungurlu",
+     "script": "Latn",
+     "rom": "kurdungurlu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Watson, C. (2003), Piercing the Ground, Fremantle Arts Centre Press"
+     }
+    ]
+   },
+   {
+    "sphereId": "landscape-track",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ngurra",
+     "script": "Latn",
+     "rom": "ngurra"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Watson, C. (2003), Piercing the Ground, Fremantle Arts Centre Press"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "father-the-two-men",
+    "name": "fathers the ancestral Two Men",
+    "term": {
+     "value": "kirda",
+     "script": "Latn",
+     "rom": "kirda"
+    },
+    "inheritability": "none",
+    "notes": "In the Tanami tradition the Wati-Kutjarra pair are named as his sons.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Watson, C. (2003), Piercing the Ground, Fremantle Arts Centre Press"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "warlpiri_mamandabari",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Watson, C. (2003), Piercing the Ground, Fremantle Arts Centre Press"
+     }
+    ],
+    "notes": "Father of the Two Men (Wati-Kutjarra) in the Tanami Warlpiri account."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Wawulja",
+    "translation": "the Invincible",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Watson, C. (2003), Piercing the Ground, Fremantle Arts Centre Press"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tanami Desert Warlpiri name the Wati-Kutjarra (Two Men) as the sons of Wawulja, glossed 'the Invincible', an ancestral man who married his own daughters.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Watson, C. (2003), Piercing the Ground: Balgo Women's Image Making and Relationship to Country, Fremantle Arts Centre Press"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Wawulja is an ancestral man of the Tanami whom the Warlpiri gloss as 'the Invincible'. His story carries the recurrent Central Desert motif of wrong marriage: he took his own daughters as wives, and from that union the Two Men, the Wati-Kutjarra, are descended. His figure anchors the eastern, Warlpiri-side account of the Two Men within a named genealogy, distinguishing it from the Western Desert versions of the same pair."
+ },
+ {
+  "id": "warlpiri_kajirri",
+  "name": {
+   "primary": "Gadjari",
+   "alt": [
+    "Kajirri",
+    "Gadjeri",
+    "Kadjari",
+    "The Old Woman",
+    "The Mother"
+   ],
+   "transliterations": {
+    "wbp": "Kajirri",
+    "etymology": "The ancestral Mother / Old Woman who presides over the great initiation cult; the cult itself is named for her"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Warlpiri",
+  "primaryTradition": "Warlpiri",
+  "sex": "female",
+  "vitalStatus": "eternal",
+  "temporal": {
+   "era": "Warlpiri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "miyalu",
+     "script": "Latn",
+     "rom": "miyalu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines of Central Australia, Oceania Monographs"
+     }
+    ]
+   },
+   {
+    "sphereId": "initiation-law",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kajirri",
+     "script": "Latn",
+     "rom": "Kajirri"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines of Central Australia"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "preside-over-initiation",
+    "name": "presides over the male initiation cult that bears her name",
+    "term": {
+     "value": "Kajirri-kirli",
+     "script": "Latn",
+     "rom": "Kajirri-kirli"
+    },
+    "inheritability": "unique",
+    "notes": "She stands apart from the ritual action, treated almost as a presiding deity above the male performers.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines"
+     }
+    ]
+   },
+   {
+    "id": "make-boys-into-men",
+    "name": "transforms initiands into ritual adults",
+    "term": {
+     "value": "kankarlu",
+     "script": "Latn",
+     "rom": "kankarlu"
+    },
+    "inheritability": "none",
+    "notes": "The Kajirri stage is the second, higher grade of Warlpiri male initiation.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wild, S.A. (1975), Walbiri Music and Dance, Indiana University"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Kajirri",
+    "translation": "the Old Woman",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Gadjari (Kajirri) is the ancestral Mother who presides over the great Warlpiri male-initiation cult named for her, documented in detail by Meggitt.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines of Central Australia, Oceania Monographs, Sydney"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Among the Warlpiri she is a distant presiding figure, standing apart from the Mamandabari ritual performance rather than acting within it.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Meggitt, M.J. (1966), Gadjari among the Walbiri Aborigines"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Gadjari, in modern Warlpiri Kajirri, is the ancestral Mother, the Old Woman for whom the great second-stage male initiation cult is named. Meggitt's monograph documents the Gadjari as the presiding fertility being of the northern and central-desert cult, associated across the wider region with the Rainbow Serpent and the Kunapipi Mother of Arnhem Land. Among the Warlpiri her presence is oblique: the secret episodes performed in her cult belong to the male Mamandabari pair, and the Mother herself stands some distance from the action, treated almost as a presiding deity rather than a character within the songs. Her cult is understood to have travelled south from Arnhem Land through Wave Hill and Lajamanu into the Tanami."
+ },
+ {
+  "id": "warlpiri_lungkarda",
+  "name": {
+   "primary": "Lungkarda",
+   "alt": [
+    "Lungkurda",
+    "The Blue-tongue Lizard Man"
+   ],
+   "transliterations": {
+    "wbp": "Lungkarda",
+    "etymology": "The Centralian blue-tongue lizard (Tiliqua multifasciata); an ancestral man of the Jampijinpa subsection"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Warlpiri",
+  "primaryTradition": "Warlpiri",
+  "sex": "male",
+  "vitalStatus": "eternal",
+  "temporal": {
+   "era": "Warlpiri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "warlu",
+     "script": "Latn",
+     "rom": "warlu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists Aboriginal Corporation, 'Warlukurlangu Jukurrpa (Fire Country Dreaming)', Yuendumu documentation"
+     }
+    ]
+   },
+   {
+    "sphereId": "law-punishment",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kurdu-kurdu",
+     "script": "Latn",
+     "rom": "kurdu-kurdu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "National Museum of Australia, 'Dreaming Story at Warlugulong'"
+     }
+    ]
+   },
+   {
+    "sphereId": "reptile-ancestor",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lungkarda",
+     "script": "Latn",
+     "rom": "lungkarda"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Fire Country Dreaming documentation, Yuendumu"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "kindle-avenging-fire",
+    "name": "sets an avenging bushfire from his fire-stick",
+    "term": {
+     "value": "warlu-jarrimi",
+     "script": "Latn",
+     "rom": "warlu-jarrimi"
+    },
+    "inheritability": "unique",
+    "notes": "He puts his firestick to the ground and sends a great fire after his sons, hurling them through the air.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Warlukurlangu Jukurrpa documentation, Yuendumu"
+     }
+    ]
+   },
+   {
+    "id": "revive-fire-from-burrow",
+    "name": "revives fire from his blue-tongue lizard hole",
+    "term": {
+     "value": "warlu-mardarni",
+     "script": "Latn",
+     "rom": "warlu-mardarni"
+    },
+    "inheritability": "none",
+    "notes": "Though the boys beat out the flames, his magic makes the fire reappear from his burrow until they are overcome.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "National Museum of Australia, 'Dreaming Story at Warlugulong'"
+     }
+    ]
+   },
+   {
+    "id": "feign-blindness",
+    "name": "feigns blindness to deceive his sons",
+    "term": {
+     "value": "langa-wangu",
+     "script": "Latn",
+     "rom": "langa-wangu"
+    },
+    "inheritability": "none",
+    "notes": "He pretends he cannot see, sending the boys out to hunt while he eats his own catch.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Fire Country Dreaming documentation"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "lungkarda Jampijinpa",
+    "translation": "the blue-tongue lizard man of the Jampijinpa subsection",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Fire Country Dreaming documentation, Yuendumu"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Lungkarda, a blue-tongue lizard ancestor of the Jampijinpa subsection, sent a magical bushfire to punish his two Jangala sons after they unknowingly killed and offered him a kangaroo sacred to him; the fire pursued and finally killed them at Wayililinypa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists Aboriginal Corporation, 'Warlukurlangu Jukurrpa (Fire Country Dreaming)', Yuendumu"
+     },
+     {
+      "kind": "secondary",
+      "reference": "National Museum of Australia, 'Dreaming Story at Warlugulong', Papunya Painting resources"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Lungkarda is the Centralian blue-tongue lizard ancestor of the Fire Country Dreaming (Warlukurlangu), an old man of the Jampijinpa subsection who lived on a hill with his two Jangala sons. Feigning blindness, he sent the boys out to hunt while he secretly ate his own game. When they returned with a kangaroo that was, unknown to them, sacred to him, he resolved to punish them: he put his firestick to the ground and sent a vast bushfire after them, hurling them through the air. Each time they beat out the flames his magic revived the fire from his lizard burrow, until at Wayililinypa the boys were overcome and killed. The sites of the chase, Warlukurlangu, Kirrkirrmanu, Marnimarnu and Wayililinypa, remain the sacred geography of the Dreaming and give their name to the Warlukurlangu Artists of Yuendumu."
+ },
+ {
+  "id": "warlpiri_napaljarri_warnu",
+  "name": {
+   "primary": "Napaljarri-warnu",
+   "alt": [
+    "The Seven Sisters",
+    "Yanjirlpiri women",
+    "The Pleiades Sisters"
+   ],
+   "transliterations": {
+    "wbp": "Napaljarri-warnu",
+    "etymology": "'Those of the Napaljarri subsection'; the seven ancestral sisters who became the Pleiades, associated with the site Yanjirlpiri ('star')"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Warlpiri",
+  "primaryTradition": "Warlpiri",
+  "sex": "female",
+  "vitalStatus": "eternal",
+  "temporal": {
+   "era": "Warlpiri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "stars-sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yanjirlpiri",
+     "script": "Latn",
+     "rom": "yanjirlpiri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, 'Yanjirlpiri or Napaljarri-warnu Jukurrpa (Star or Seven Sisters Dreaming)', Yuendumu"
+     }
+    ]
+   },
+   {
+    "sphereId": "flight-pursuit",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "parnkami",
+     "script": "Latn",
+     "rom": "parnkami"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Aboriginal Art Directory, 'Yanjirlpiri or Napaljarri-Warnu Jukurrpa'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ascend-as-stars",
+    "name": "turn into fire and ascend to become the Pleiades",
+    "term": {
+     "value": "warlu-jarrija",
+     "script": "Latn",
+     "rom": "warlu-jarrija"
+    },
+    "inheritability": "unique",
+    "notes": "In a final escape from the pursuing man the sisters became fire and rose into the sky as the seven stars.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Napaljarri-warnu Jukurrpa documentation, Yuendumu"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "warlpiri_jukurra_jukurra",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Star or Seven Sisters Dreaming documentation, Yuendumu"
+     }
+    ],
+    "notes": "They flee across the country and into the sky from the amorous Jakamarra man who pursues them."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Napaljarri-warnu",
+    "translation": "the Napaljarri women",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Seven Sisters Dreaming documentation, Yuendumu"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Napaljarri-warnu are seven ancestral sisters of the Napaljarri subsection, pursued across the land by an amorous Jakamarra man; to escape they became fire and rose into the sky as the Pleiades. The Dreaming centres on the site Yanjirlpiri.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists Aboriginal Corporation, 'Yanjirlpiri or Napaljarri-warnu Jukurrpa (Star or Seven Sisters Dreaming)', Yuendumu"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Aboriginal Art Directory, 'Yanjirlpiri or Napaljarri-Warnu Jukurrpa (Star or Seven Sisters Dreaming)'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Napaljarri-warnu are the seven ancestral sisters of the Napaljarri subsection, remembered today in the cluster of the Pleiades. An ancestral Jakamarra man fell in love with them and pursued them across the country, though under subsection law he was of the wrong skin to take a Napaljarri wife. Fleeing him without rest, the sisters at last turned themselves into fire and ascended into the night sky to become the seven stars. Their Dreaming is anchored at Yanjirlpiri, a low hill and water soakage whose name means 'star', and it is one of the great sky narratives painted at Yuendumu, where the sisters are sometimes shown carrying a Jampijinpa suitor named Wardilyka."
+ },
+ {
+  "id": "warlpiri_jukurra_jukurra",
+  "name": {
+   "primary": "Jukurra-jukurra",
+   "alt": [
+    "The Morning Star",
+    "The Jakamarra pursuer"
+   ],
+   "transliterations": {
+    "wbp": "Jukurra-jukurra",
+    "etymology": "The Morning Star (the planet Venus at dawn); a man of the Jakamarra subsection"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Warlpiri",
+  "primaryTradition": "Warlpiri",
+  "sex": "male",
+  "vitalStatus": "eternal",
+  "temporal": {
+   "era": "Warlpiri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "stars-sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yanjirlpiri",
+     "script": "Latn",
+     "rom": "yanjirlpiri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, 'Yanjirlpiri or Napaljarri-warnu Jukurrpa', Yuendumu"
+     }
+    ]
+   },
+   {
+    "sphereId": "pursuit-desire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yilpinji",
+     "script": "Latn",
+     "rom": "yilpinji"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cooee Art, 'Yanjirlpirri or Napaljarri-Warnu Jukurrpa (Star or Seven Sisters Dreaming)'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "chase-the-sisters",
+    "name": "chases the Seven Sisters across the night sky",
+    "term": {
+     "value": "wajilipi",
+     "script": "Latn",
+     "rom": "wajilipi"
+    },
+    "inheritability": "none",
+    "notes": "As the Morning Star he perpetually pursues the Pleiades sisters, forbidden to marry them under subsection law.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cooee Art, Star or Seven Sisters Dreaming documentation"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "warlpiri_napaljarri_warnu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Star or Seven Sisters Dreaming documentation, Yuendumu"
+     }
+    ],
+    "notes": "The unrequited suitor who drives the sisters into the sky; forbidden their marriage by the wrong-skin law."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Jukurra-jukurra",
+    "translation": "the morning star",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cooee Art, Star or Seven Sisters Dreaming documentation"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jukurra-jukurra, the Morning Star, is a Jakamarra man in love with the seven Napaljarri sisters, shown chasing them across the sky though forbidden to take a Napaljarri wife.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Cooee Art, 'Yanjirlpirri or Napaljarri-Warnu Jukurrpa (Star or Seven Sisters Dreaming)'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Warlukurlangu Artists, Seven Sisters Dreaming documentation, Yuendumu"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Jukurra-jukurra is the Morning Star, the planet Venus seen at dawn, and an ancestral man of the Jakamarra subsection. In the Seven Sisters Dreaming he is consumed with desire for the seven Napaljarri women, but the marriage law forbids a Jakamarra from taking a Napaljarri wife. Denied, he pursues the sisters ceaselessly, and it is his chase that finally drives them to become fire and flee into the sky. Warlpiri painters at Yuendumu show him rising each morning still in pursuit of the Pleiades, a sky drama that fixes the law of right and wrong marriage in the movement of the stars."
+ }
+]
+```

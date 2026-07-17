@@ -1,0 +1,637 @@
+Senoi — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "senoi_karey",
+  "name": {
+   "primary": "Karey",
+   "alt": [
+    "Karei",
+    "Kari",
+    "Kare'"
+   ],
+   "transliterations": {
+    "tea": "Karey",
+    "sea": "Karei",
+    "etymology": "The theonym is the ordinary Aslian word for 'thunder'; the deity and the meteorological phenomenon are named identically."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Senoi",
+  "primaryTradition": "Senoi",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Senoi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "weather-thunder",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Karey",
+     "script": "Latn",
+     "rom": "karey"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dentan, Robert Knox (1968), The Semai: A Nonviolent People of Malaya (New York: Holt, Rinehart & Winston), pp. 21-24."
+     }
+    ]
+   },
+   {
+    "sphereId": "law-prohibition",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tolah",
+     "script": "Latn",
+     "rom": "tolah"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Benjamin, Geoffrey (2014), Temiar Religion, 1964-2012 (Singapore: NUS Press), chapters on prohibition (misec) and thunder."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hurl-thunderstorm",
+    "name": "hurls the punishing thunderstorm",
+    "term": {
+     "value": "Karey ber'eek",
+     "script": "Latn",
+     "rom": "karey ber'eek"
+    },
+    "inheritability": "unique",
+    "notes": "Answers the breaking of prohibition with violent squalls, lightning and torrential rain directed at the offending settlement.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest: Temiar Music and Medicine (Berkeley: University of California Press), pp. 46-49."
+     }
+    ]
+   },
+   {
+    "id": "enforce-taboo",
+    "name": "enforces the tolah prohibitions",
+    "term": {
+     "value": "tolah",
+     "script": "Latn",
+     "rom": "tolah"
+    },
+    "inheritability": "none",
+    "notes": "Guards the categorical order of the world, punishing the mockery of animals, the mixing of incompatible foods, and incest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dentan, Robert Knox (1968), The Semai: A Nonviolent People of Malaya, pp. 21-24, 84-86."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "senoi_karey-genhaak",
+    "kind": "rite",
+    "name": "the blood sacrifice",
+    "term": {
+     "value": "genhaak",
+     "script": "Latn",
+     "rom": "genhaak"
+    },
+    "role": "appeasement offering",
+    "notes": "During a storm the transgressor draws blood from the shin, mixes it with water, and casts it upward toward the sky and downward toward the ground, the two portions addressing the thunderer above and the water-being below.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skeat, W. W. & Blagden, C. O. (1906), Pagan Races of the Malay Peninsula (London: Macmillan), vol. 2, pp. 202-215."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "senoi_engkuu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Benjamin, Geoffrey (2014), Temiar Religion, 1964-2012, on the paired sky-deity and underground deity."
+     }
+    ],
+    "notes": "The two paramount deities jointly punish breaches of prohibition, one from the sky and one from beneath the earth."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ta' Karey",
+    "translation": "Grandfather Thunder",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1990), 'Head, Heart, Odor, and Shadow', Ethos 18(3): 227-250."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Karey is the thunder-deity of the Senoi peoples, whose storms answer breaches of the tolah prohibitions and are averted by a blood offering.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Skeat, W. W. & Blagden, C. O. (1906), Pagan Races of the Malay Peninsula, vol. 2, pp. 175-215."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dentan, Robert Knox (1968), The Semai: A Nonviolent People of Malaya, pp. 21-24."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Benjamin, Geoffrey (2014), Temiar Religion, 1964-2012 (Singapore: NUS Press)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Karey is the thunder-deity and the central moral power of Senoi religion among the Temiar and Semai. His name is the everyday word for thunder, and the two are not sharply separated: the storm is his voice and his weapon. Karey governs the categorical order of the world and reacts with sudden, violent squalls to acts the Senoi class as tolah (Temiar misec) - laughing at or tormenting animals, especially butterflies and leeches, mimicking the calls of creatures, boiling certain foods together, or committing incest. The remedy during a storm is the blood sacrifice: an offender cuts the lower leg, mixes the blood with water, and throws it toward the sky and the ground to turn the anger aside. Sources differ on his relation to the subterranean deity: some Semai communities call the thunderer himself Enku or Ngkuu', while Temiar and other groups keep Karey above and a separate water-dragon below. He is commonly addressed with the respectful kin term 'grandfather'."
+ },
+ {
+  "id": "senoi_engkuu",
+  "name": {
+   "primary": "'Engku'",
+   "alt": [
+    "Engkuu'",
+    "Ngkuu'",
+    "Enku",
+    "Nkuu'"
+   ],
+   "transliterations": {
+    "tea": "'Engku'",
+    "sea": "Ngkuu'",
+    "etymology": "An Aslian name of uncertain derivation for the subterranean dragon; in several Semai communities the same word denotes the thunder itself."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Senoi",
+  "primaryTradition": "Senoi",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Senoi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "underworld-waters",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "'Engku'",
+     "script": "Latn",
+     "rom": "engku'"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Benjamin, Geoffrey (2014), Temiar Religion, 1964-2012 (Singapore: NUS Press), on the underground deity."
+     }
+    ]
+   },
+   {
+    "sphereId": "flood-earthquake",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "te'oor",
+     "script": "Latn",
+     "rom": "te'oor"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dentan, Robert Knox (1968), The Semai: A Nonviolent People of Malaya, pp. 21-24."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "raise-floodwaters",
+    "name": "raises the dissolving floodwaters",
+    "term": {
+     "value": "'Engku'",
+     "script": "Latn",
+     "rom": "engku'"
+    },
+    "inheritability": "unique",
+    "notes": "Answers a breach of prohibition from below, softening the ground into mud and sending up the waters that overturn the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Benjamin, Geoffrey (2014), Temiar Religion, 1964-2012."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "senoi_karey",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Benjamin, Geoffrey (2014), Temiar Religion, 1964-2012, on the paired sky and underground deities."
+     }
+    ],
+    "notes": "Counterpart to the thunderer above; the downward half of the blood sacrifice is directed to it."
+   },
+   {
+    "kind": "companion",
+    "personId": "senoi_nagaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skeat, W. W. & Blagden, C. O. (1906), Pagan Races of the Malay Peninsula, vol. 2."
+     }
+    ],
+    "notes": "Frequently identified with the world-bearing serpent; the two are often spoken of as a single subterranean being."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The subterranean water-dragon 'Engku' is the below-deity of Senoi cosmology, counterpart to the thunderer and sender of the world-dissolving flood.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Benjamin, Geoffrey (2014), Temiar Religion, 1964-2012 (Singapore: NUS Press)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dentan, Robert Knox (1968), The Semai: A Nonviolent People of Malaya, pp. 21-24."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "'Engku' is the great being of the underworld waters, conceived as a dragon or serpent dwelling beneath the earth. In the paired cosmology best described for the Temiar, it forms a complementary opposite to Karey: where the thunderer strikes from the sky, 'Engku' answers a broken prohibition from below, dissolving solid ground into mud and raising the waters that can drown and overturn the world. The downward portion of the blood sacrifice - blood mixed with water and poured toward the earth - is its share. Its identity is genuinely unsettled in the literature. Some Semai use the name Ngkuu' or Enku for the thunderer himself, collapsing the two powers into one; others keep them distinct as an above-and-below pair; and 'Engku' is regularly identified with the world-bearing serpent whose movements cause earthquakes."
+ },
+ {
+  "id": "senoi_nagaa",
+  "name": {
+   "primary": "Naga'",
+   "alt": [
+    "Nagak",
+    "the world-serpent"
+   ],
+   "transliterations": {
+    "sea": "Naga'",
+    "etymology": "From Sanskrit naga 'serpent', borrowed through Malay; applied to the great snake on which the earth is imagined to rest."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Senoi",
+  "primaryTradition": "Senoi",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Senoi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "earth-support",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Naga'",
+     "script": "Latn",
+     "rom": "naga'"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dentan, Robert Knox (1968), The Semai: A Nonviolent People of Malaya, on the earth-serpent and earthquakes."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shake-the-earth",
+    "name": "shakes the earth when it stirs",
+    "term": {
+     "value": "Naga'",
+     "script": "Latn",
+     "rom": "naga'"
+    },
+    "inheritability": "unique",
+    "notes": "The great serpent bears the world on its coils; its shifting is felt as earthquake, and its arc is sometimes seen as the rainbow.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skeat, W. W. & Blagden, C. O. (1906), Pagan Races of the Malay Peninsula, vol. 2."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "senoi_engkuu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skeat, W. W. & Blagden, C. O. (1906), Pagan Races of the Malay Peninsula, vol. 2."
+     }
+    ],
+    "notes": "Often merged with the underworld water-dragon into a single subterranean being."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Senoi imagine the earth as resting upon a great serpent whose movements cause earthquakes and whose form may appear as the rainbow.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Skeat, W. W. & Blagden, C. O. (1906), Pagan Races of the Malay Peninsula, vol. 2, pp. 175-230."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dentan, Robert Knox (1968), The Semai: A Nonviolent People of Malaya."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Naga' is the cosmic serpent on whose body the earth is thought to rest. When it stirs the ground trembles, and Senoi tradition explains earthquakes as its movement; its curving form is at times identified with the rainbow arching over the forest. The name is a loan, ultimately from Sanskrit by way of Malay, and the being it labels overlaps heavily with the underworld water-dragon: many Semai and Temiar treat the world-bearing snake and the flood-sending dragon of the underworld as one and the same power, while other accounts keep the earth-bearer and the flood-bringer apart. It belongs to the subterranean, watery pole of the cosmos that stands opposite the thunder of the sky."
+ },
+ {
+  "id": "senoi_bcaa",
+  "name": {
+   "primary": "Bca'",
+   "alt": [
+    "Baca'",
+    "the Tiger spirit-guide",
+    "gunig bca'"
+   ],
+   "transliterations": {
+    "tea": "bca'",
+    "etymology": "The Temiar word for 'tiger'; used of the tiger-shaped spirit-familiar of the most powerful adepts."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Senoi",
+  "primaryTradition": "Senoi",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Senoi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "mediumship-familiar",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gunig",
+     "script": "Latn",
+     "rom": "gunig"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest, pp. 54-58, 132-140."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-the-medium",
+    "name": "guards and empowers the tiger-adept",
+    "term": {
+     "value": "bca'",
+     "script": "Latn",
+     "rom": "bca'"
+    },
+    "inheritability": "partial",
+    "notes": "Serves the senior adept as protective familiar; the strongest halaa' are said to take tiger form and, at death, to become tiger spirit-guides for their successors.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest, pp. 132-140."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The tiger is the most powerful class of Temiar spirit-guide; great adepts assume tiger form in trance and become tiger spirit-guides after death.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest: Temiar Music and Medicine (Berkeley: University of California Press), pp. 54-58, 132-140."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Benjamin, Geoffrey (2014), Temiar Religion, 1964-2012 (Singapore: NUS Press), on the tiger and the halaa'."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Bca', the tiger, is the most formidable of the spirit-guides (gunig) that a Temiar or Semai adept marshals in the mediumistic ceremony. Ordinary spirit-guides come from fruits, flowers, mountains and waters, but the tiger belongs to the most senior and powerful halaa'. In deep trance such an adept is said to take on the tiger's form and prowl the darkness around the ceremonial house, and when a great healer dies his head-soul is believed to persist as a tiger spirit-guide who returns in dreams to teach and protect the living. The tiger thus binds the world of the forest predator to the shamanic vocation, standing at the apex of the graded ranks of spirit-familiars."
+ },
+ {
+  "id": "senoi_cincem",
+  "name": {
+   "primary": "Cincem",
+   "alt": [
+    "Chinchem",
+    "Cinca'em",
+    "the fruit-blossom spirit"
+   ],
+   "transliterations": {
+    "tea": "cincem",
+    "etymology": "A Temiar term for the flowering-and-fruiting season and for the spirit-guide and song-genre that come with it."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Senoi",
+  "primaryTradition": "Senoi",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Senoi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "dream-song",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cincem",
+     "script": "Latn",
+     "rom": "cincem"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest, chapters on spirit-guides and song-genres."
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-fruit-season",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cincem",
+     "script": "Latn",
+     "rom": "cincem"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-dream-song",
+    "name": "bestows the dream-song",
+    "term": {
+     "value": "genggong",
+     "script": "Latn",
+     "rom": "genggong"
+    },
+    "inheritability": "partial",
+    "notes": "Comes to a sleeping adept as a beautiful spirit and gives a song that the singer will later raise in ceremony to summon healing.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1990), 'Head, Heart, Odor, and Shadow', Ethos 18(3): 227-250."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The seasonal fruit-and-blossom spirit-guide visits Temiar adepts in dreams and confers the songs used in mediumistic healing.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest: Temiar Music and Medicine (Berkeley: University of California Press)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1990), 'Head, Heart, Odor, and Shadow: The Structure of the Self, the Emotional World, and Ritual Performance among Senoi Temiar', Ethos 18(3): 227-250."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Cincem is the spirit-guide of the flowering and fruiting season, one of the principal sources of the dream-songs on which Temiar and Semai mediumship depends. In the theory of the self the detachable head-soul (ruwaay) wanders in sleep and meets such beings; the fruit-blossom spirit approaches the dreaming adept as an attractive person and teaches a song. On waking the singer carries the melody into the nightlong ceremony, where it is raised to draw the cool, fragrant vitality of the forest into the sick. The name attaches at once to the season, to the spirit that personifies it, and to the genre of songs it gives, so that the singing of cincem is understood as the very presence of the spirit in the ceremonial house."
+ },
+ {
+  "id": "senoi_kahyeek",
+  "name": {
+   "primary": "Kahyeek",
+   "alt": [
+    "Kahyek",
+    "Kayek",
+    "the water spirit-guide"
+   ],
+   "transliterations": {
+    "tea": "kahyeek",
+    "etymology": "A Temiar term for cool liquid; the animating essence of water and the spirit-guides of rivers and waterfalls."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Senoi",
+  "primaryTradition": "Senoi",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Senoi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "healing-coolness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kahyeek",
+     "script": "Latn",
+     "rom": "kahyeek"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1990), 'Head, Heart, Odor, and Shadow', Ethos 18(3): 227-250."
+     }
+    ]
+   },
+   {
+    "sphereId": "water-rivers",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "teew",
+     "script": "Latn",
+     "rom": "teew"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "cool-and-heal",
+    "name": "brings healing coolness",
+    "term": {
+     "value": "kahyeek",
+     "script": "Latn",
+     "rom": "kahyeek"
+    },
+    "inheritability": "partial",
+    "notes": "The waterfall and river spirits transfer their cool liquid vitality through the singing adept to soothe the fevered and the frightened.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest, on coolness and healing."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Cool liquid (kahyeek) is a vital healing essence of Senoi Temiar thought, personified in the spirit-guides of rivers and waterfalls who supply coolness in the healing ceremony.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1990), 'Head, Heart, Odor, and Shadow', Ethos 18(3): 227-250."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roseman, Marina (1991), Healing Sounds from the Malaysian Rainforest: Temiar Music and Medicine (Berkeley: University of California Press)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Kahyeek is the cool liquid essence of water and, in personified form, the class of spirit-guides that rise from rivers and waterfalls. Senoi Temiar healing turns on a contrast between the dangerous heat of illness, fear and thunder and the soothing coolness of water and shade; the waterfall spirits embody that coolness. Coming to the adept in dreams like the other spirit-guides, they lend their liquid vitality to the songs of the nightlong ceremony, and the singer channels it - together with the sweeping of leaf-whisks dipped in water - onto the bodies of the sick to quench fever and calm a startled soul. Kahyeek thus names both a substance, a quality of the person, and the water-beings who bestow it."
+ }
+]
+```

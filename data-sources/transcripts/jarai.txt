@@ -1,0 +1,937 @@
+Jarai — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "jarai_potao_apui",
+  "name": {
+   "primary": "Potao Apui",
+   "alt": [
+    "Potao Apui",
+    "Master of Fire",
+    "Fire King",
+    "Hoa Xa"
+   ],
+   "transliterations": {
+    "jra": "Potao Apui",
+    "vi": "Hoa Xa",
+    "hani": "火舍",
+    "etymology": "Jarai potao 'lord, master, sacral king' + apui 'fire'; the Vietnamese court title Hoa Xa renders the same 'Fire' sovereignty."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Jarai",
+  "primaryTradition": "Jarai",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "temporal": {
+   "era": "Jarai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "apui",
+     "script": "Latin",
+     "rom": "apui"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Jacques Dournes, Potao, une theorie du pouvoir chez les Indochinois jorai (Paris: Flammarion, 1977), on the sacral mastery of fire."
+     }
+    ]
+   },
+   {
+    "sphereId": "sacral-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "potao",
+     "script": "Latin",
+     "rom": "potao"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gerald C. Hickey, Sons of the Mountains (New Haven: Yale University Press, 1982), on the Potao as sacral masters rather than territorial rulers."
+     }
+    ]
+   },
+   {
+    "sphereId": "agricultural-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hojan",
+     "script": "Latin",
+     "rom": "hojan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977), on the Fire King's rites securing rain and harvest."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-sacred-sabre",
+    "name": "guards the sacred sabre",
+    "term": {
+     "value": "wai gum",
+     "script": "Latin",
+     "rom": "wai gum"
+    },
+    "inheritability": "unique",
+    "notes": "He alone may tend the wrapped royal sabre, the seat of the office's power.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977), the guardianship of the epee sacree as the pivot of Jarai power."
+     }
+    ]
+   },
+   {
+    "id": "secure-rain",
+    "name": "secures rain and fertile harvest",
+    "term": {
+     "value": "iou hojan",
+     "script": "Latin",
+     "rom": "iou hojan"
+    },
+    "inheritability": "partial",
+    "notes": "Through seasonal rites and sacrifice he averts drought and blight.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hickey, Sons of the Mountains (1982); Oscar Salemink, The Ethnography of Vietnam's Central Highlanders (Honolulu: University of Hawai'i Press, 2003)."
+     }
+    ]
+   },
+   {
+    "id": "mediate-yang",
+    "name": "mediates between people and the yang",
+    "term": {
+     "value": "poyao yang",
+     "script": "Latin",
+     "rom": "poyao yang"
+    },
+    "inheritability": "partial",
+    "notes": "As a master of the yang he intercedes for the community, his body hedged by prohibitions.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "jarai_potao_apui-hut",
+    "kind": "sanctuary",
+    "name": "the sabre-hut",
+    "term": {
+     "value": "sang gum",
+     "script": "Latin",
+     "rom": "sang gum"
+    },
+    "role": "reliquary shelter",
+    "notes": "A dedicated hut in which the sacred sabre is kept wrapped and never fully drawn.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "jarai_potao_ia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977), on the ritual complementarity of Fire and Water Kings."
+     }
+    ],
+    "notes": "Senior partner to the Water King in the sacral order."
+   },
+   {
+    "kind": "ally",
+    "personId": "jarai_potao_angin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   },
+   {
+    "kind": "companion",
+    "personId": "jarai_sacred_sabre",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ],
+    "notes": "Bound to the sabre he tends as its inseparable guardian."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Potao Apui",
+    "translation": "King of Fire",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   },
+   {
+    "original": "Hoa Xa",
+    "translation": "Lord of Fire (Vietnamese court title)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Quy Don, Phu bien tap luc (1776); Dai Nam nhat thong chi (19th c.)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Potao Apui is the foremost Jarai sacral master, traditionally drawn from the Siu clan, whose guardianship of a sacred sabre and seasonal rites secure rain, fertility, and cosmic order.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Jacques Dournes, Potao, une theorie du pouvoir chez les Indochinois jorai (Paris: Flammarion, 1977)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gerald C. Hickey, Sons of the Mountains (New Haven: Yale University Press, 1982)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The Fire King was recognized by Vietnamese and Cambodian courts as a sovereign of the interior, exchanging periodic tribute recorded from the eighteenth century.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Le Quy Don, Phu bien tap luc (1776), records of the Thuy Xa and Hoa Xa."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The Potao Apui, or King of Fire, is the foremost of the Jarai sacral masters (potao), a hereditary officiant traditionally drawn from the Siu clan whose ritual labour is held to secure rain, agricultural fertility, and cosmic equilibrium for the highland communities of the Ayun and Apa river basins. He is not a territorial ruler but a master of the yang, a mediator whose person is hedged by numerous prohibitions. His central charge is the guardianship of a sacred sabre, an object of Cham association whose latent power he alone may tend. Vietnamese and Cambodian courts long treated the Fire King and the Water King as sovereigns of the interior, exchanging periodic gifts recorded from the eighteenth century onward. Jacques Dournes, whose Potao (1977) remains the fullest study, read the institution as a Jarai theory of power in which authority is deliberately held apart from coercion. The consecrated line is generally held to have lapsed with the death of the last incumbent in the late twentieth century."
+ },
+ {
+  "id": "jarai_potao_ia",
+  "name": {
+   "primary": "Potao Ia",
+   "alt": [
+    "Potao Ia",
+    "Master of Water",
+    "Water King",
+    "Thuy Xa"
+   ],
+   "transliterations": {
+    "jra": "Potao Ia",
+    "vi": "Thuy Xa",
+    "hani": "水舍",
+    "etymology": "Jarai potao 'lord, sacral king' + ia 'water'; the Vietnamese court title Thuy Xa names the same 'Water' sovereignty."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Jarai",
+  "primaryTradition": "Jarai",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "temporal": {
+   "era": "Jarai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ia",
+     "script": "Latin",
+     "rom": "ia"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977), on the sacral mastery of water."
+     }
+    ]
+   },
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hojan",
+     "script": "Latin",
+     "rom": "hojan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hickey, Sons of the Mountains (1982)."
+     }
+    ]
+   },
+   {
+    "sphereId": "sacral-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "potao",
+     "script": "Latin",
+     "rom": "potao"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "summon-rain",
+    "name": "summons rain and water",
+    "term": {
+     "value": "iou ia",
+     "script": "Latin",
+     "rom": "iou ia"
+    },
+    "inheritability": "partial",
+    "notes": "His rites govern rainfall, springs, and the flooding needed for cultivation.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   },
+   {
+    "id": "mediate-yang",
+    "name": "mediates between people and the yang of the waters",
+    "term": {
+     "value": "poyao yang ia",
+     "script": "Latin",
+     "rom": "poyao yang ia"
+    },
+    "inheritability": "partial",
+    "notes": "Counterpart intercessor to the Fire King.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Salemink, The Ethnography of Vietnam's Central Highlanders (2003)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "jarai_potao_apui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ],
+    "notes": "Junior partner to the Fire King in the sacral order."
+   },
+   {
+    "kind": "ally",
+    "personId": "jarai_potao_angin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Potao Ia",
+    "translation": "King of Water",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   },
+   {
+    "original": "Thuy Xa",
+    "translation": "Lord of Water (Vietnamese court title)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Quy Don, Phu bien tap luc (1776)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Potao Ia, or Water King, is the second Jarai sacral master, traditionally of the Ro-cham clan, whose rites govern rain and water and who complements the Fire King.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hickey, Sons of the Mountains (1982)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Potao Ia, or King of Water, is the second of the Jarai sacral masters, traditionally drawn from the Ro-cham clan and paired with the Fire King as his ritual complement. Where the Fire King answers to the sun-warmed order of fire and the sacred blade, the Water King's rites bear on rain, springs, and the inundation of the fields. Like his senior he is a master of the yang rather than a chief, bound by taboo and consecrated for the welfare of the highland communities. Vietnamese chronicles from the eighteenth century onward name him alongside the Fire King as Thuy Xa, receiving and returning tribute across the frontier of the interior. The office is generally reckoned to have lapsed in the modern period."
+ },
+ {
+  "id": "jarai_potao_angin",
+  "name": {
+   "primary": "Potao Angin",
+   "alt": [
+    "Potao Angin",
+    "Master of Wind",
+    "Wind King"
+   ],
+   "transliterations": {
+    "jra": "Potao Angin",
+    "etymology": "Jarai potao 'lord, sacral king' + angin 'wind' (cf. Malay angin)."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Jarai",
+  "primaryTradition": "Jarai",
+  "sex": "male",
+  "temporal": {
+   "era": "Jarai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "angin",
+     "script": "Latin",
+     "rom": "angin"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977), on the third sacral mastery, of the wind."
+     }
+    ]
+   },
+   {
+    "sphereId": "sacral-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "potao",
+     "script": "Latin",
+     "rom": "potao"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "govern-wind",
+    "name": "governs the wind and storm",
+    "term": {
+     "value": "gru angin",
+     "script": "Latin",
+     "rom": "gru angin"
+    },
+    "inheritability": "partial",
+    "notes": "The least documented of the three masteries.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "jarai_potao_apui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   },
+   {
+    "kind": "ally",
+    "personId": "jarai_potao_ia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Potao Angin",
+    "translation": "King of Wind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Dournes records a third Jarai sacral master, the King of Wind, alongside the better-attested Fire and Water Kings, though sources differ on whether it formed a continuous office.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Jacques Dournes, Potao, une theorie du pouvoir chez les Indochinois jorai (Paris: Flammarion, 1977)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hickey, Sons of the Mountains (1982)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The Potao Angin, or King of Wind, completes the Jarai triad of sacral masters. He is by far the most shadowy of the three: the Fire and Water Kings dominate both indigenous tradition and the external records of the Vietnamese and Cambodian courts, while the Wind King appears chiefly in ethnographic accounts of the fuller sacral scheme. Sources differ on whether the Wind King formed a continuous third office or a more intermittently filled complement to his seniors. In the ordered cosmology reconstructed by Dournes he rounds out a set of elemental masteries, fire, water, and wind, through which the community's dependence on the yang of the natural world is ritually managed."
+ },
+ {
+  "id": "jarai_oi_adai",
+  "name": {
+   "primary": "Oi Adai",
+   "alt": [
+    "Oi Adei",
+    "Yang Adai",
+    "Grandfather Adai"
+   ],
+   "transliterations": {
+    "jra": "Oi Adai",
+    "etymology": "Jarai oi 'grandfather, revered lord' + adai, a high-divine name; cognate with the Ede supreme god Ae Die."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Jarai",
+  "primaryTradition": "Jarai",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Jarai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "adai",
+     "script": "Latin",
+     "rom": "adai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Salemink, The Ethnography of Vietnam's Central Highlanders (2003), on the highland high-god concept."
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yang",
+     "script": "Latin",
+     "rom": "yang"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Anne de Hauteclocque-Howe, Les Rhades (Paris: CNRS, 1987), comparative Chamic cosmology."
+     }
+    ]
+   },
+   {
+    "sphereId": "supreme-authority",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "oi adai",
+     "script": "Latin",
+     "rom": "oi adai"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977), on the yang and the high god of the Jarai."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "order-cosmos",
+    "name": "orders the cosmos and its yang",
+    "term": {
+     "value": "pogang yang",
+     "script": "Latin",
+     "rom": "pogang yang"
+    },
+    "inheritability": "unique",
+    "notes": "Remote high god standing above the lesser yang.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Salemink (2003); Hauteclocque-Howe (1987)."
+     }
+    ]
+   },
+   {
+    "id": "witness-oaths",
+    "name": "witnesses oaths and truth",
+    "term": {
+     "value": "kra yang",
+     "script": "Latin",
+     "rom": "kra yang"
+    },
+    "inheritability": "unique",
+    "notes": "Invoked in solemn assurance and adjuration.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Oi Adai",
+    "translation": "Grandfather / Lord Adai",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Salemink (2003)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Oi Adai is the Jarai high god, a remote sky-associated supreme being standing above the many yang; his name was later adopted to render the Christian God in Jarai.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Oscar Salemink, The Ethnography of Vietnam's Central Highlanders (Honolulu: University of Hawai'i Press, 2003)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anne de Hauteclocque-Howe, Les Rhades, une societe de droit maternel (Paris: CNRS, 1987), on the cognate Ede supreme god Ae Die."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Oi Adai is the Jarai supreme being, a remote high god associated with the sky and set above the multitude of yang that animate the natural and social world. In the everyday religion of the highlands it is the lesser yang, of rice, water, mountain, hearth, and ancestor, who receive the bulk of sacrifice, while Oi Adai remains a distant guarantor of cosmic order, invoked in oaths and solemn assurance. His name pairs the honorific oi, grandfather or revered lord, with the divine name Adai, cognate with the Ede supreme god Ae Die. The concept proved durable enough that Christian missions later took Oi Adai as the Jarai term for God, a continuity that has sometimes blurred the earlier, more diffuse indigenous conception."
+ },
+ {
+  "id": "jarai_yang_sri",
+  "name": {
+   "primary": "Yang Sri",
+   "alt": [
+    "Yang Hri",
+    "Rice Spirit",
+    "Rice Mother"
+   ],
+   "transliterations": {
+    "jra": "Yang Sri",
+    "etymology": "Jarai yang 'spirit, deity' + Sri, from Sanskrit Sri, the rice-and-prosperity name transmitted through Cham; the local form Yang Hri also occurs."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Jarai",
+  "primaryTradition": "Jarai",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Jarai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "rice",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "pdai",
+     "script": "Latin",
+     "rom": "pdai"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977), on the rice cult of the Jarai."
+     }
+    ]
+   },
+   {
+    "sphereId": "agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hma",
+     "script": "Latin",
+     "rom": "hma"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hickey, Sons of the Mountains (1982), on the central highland rice deity."
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yang sri",
+     "script": "Latin",
+     "rom": "yang sri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Salemink (2003)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ripen-rice",
+    "name": "ripens the rice and grants the harvest",
+    "term": {
+     "value": "brei pdai",
+     "script": "Latin",
+     "rom": "brei pdai"
+    },
+    "inheritability": "unique",
+    "notes": "The rice-soul is called home and honoured at planting and harvest.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   },
+   {
+    "id": "guard-granary",
+    "name": "guards the standing crop and granary",
+    "term": {
+     "value": "wai atuk",
+     "script": "Latin",
+     "rom": "wai atuk"
+    },
+    "inheritability": "unique",
+    "notes": "Offerings secure the spirit's presence in field and store.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hickey (1982)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Yang Sri",
+    "translation": "Spirit of the Rice",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hickey, Sons of the Mountains (1982)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Yang Sri is the personified rice deity of the Jarai swidden cult, honoured with offerings at planting and harvest; the name descends from Sanskrit Sri via Cham, and the local form Yang Hri also occurs.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Jacques Dournes, Potao (1977), on the Jarai rice cult."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gerald C. Hickey, Sons of the Mountains (1982), on the rice spirit across the central highlands."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Yang Sri is the personified spirit of the rice, the deity at the heart of the Jarai swidden cult and, more broadly, of the whole central highland rice-growing world. Conceived as a feminine, mother-like presence, the rice-soul must be treated with care lest it flee the field or granary: it is called, fed, and honoured with sacrifice at the turning points of the agricultural year, from the clearing and sowing of the swidden to the ingathering of the crop. The name joins the generic yang, spirit or deity, to Sri, the Sanskrit name of rice and prosperity carried inland through Cham influence; the assimilated form Yang Hri is also recorded. Among a people whose subsistence and ritual calendar alike turn on the rice, Yang Sri is among the most constantly invoked of the many yang."
+ },
+ {
+  "id": "jarai_sacred_sabre",
+  "name": {
+   "primary": "The Sacred Sabre",
+   "alt": [
+    "Gum thieng",
+    "Guom than",
+    "the sabre of the Fire King",
+    "the sacred blade"
+   ],
+   "transliterations": {
+    "jra": "gum",
+    "vi": "guom than",
+    "etymology": "Jarai gum 'sword, sabre'; Vietnamese guom than 'divine sword'; treated as a numinous, agentive object rather than a mere weapon."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Jarai",
+  "primaryTradition": "Jarai",
+  "temporal": {
+   "era": "Jarai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sacred-power",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gum",
+     "script": "Latin",
+     "rom": "gum"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977), the sacred sabre as the seat of Jarai power."
+     }
+    ]
+   },
+   {
+    "sphereId": "omen-and-catastrophe",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gru",
+     "script": "Latin",
+     "rom": "gru"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977), the blade as portent of war, epidemic, and drought."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "portend-catastrophe",
+    "name": "portends war, epidemic, and drought",
+    "term": {
+     "value": "brei gru",
+     "script": "Latin",
+     "rom": "brei gru"
+    },
+    "inheritability": "none",
+    "notes": "The blade is said to sweat or redden before calamity.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   },
+   {
+    "id": "embody-sovereign-power",
+    "name": "embodies the sovereign power of the Fire King",
+    "term": {
+     "value": "dwi potao",
+     "script": "Latin",
+     "rom": "dwi potao"
+    },
+    "inheritability": "none",
+    "notes": "Never fully drawn; unsheathing it is held to loose fire upon the world.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "jarai_potao_apui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dournes, Potao (1977)."
+     }
+    ],
+    "notes": "Tended by the Fire King as its sole guardian."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "guom than",
+    "translation": "the divine sword",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dai Nam nhat thong chi (19th c.); Dournes, Potao (1977)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The sacred sabre guarded by the Fire King is treated as an agentive numinous being: kept wrapped and never fully drawn, fed offerings, and read as an omen that sweats or reddens before catastrophe; it is probably of Cham royal origin and is the pivot of Dournes' analysis of Jarai power.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Jacques Dournes, Potao, une theorie du pouvoir chez les Indochinois jorai (Paris: Flammarion, 1977)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The sacred sabre is the numinous object around which the whole Jarai institution of sacral kingship turns. Kept wrapped in cloth within a dedicated hut and never fully drawn from its sheath, it is less a weapon than a living, dangerous presence: it must be fed offerings, and it is said to sweat or redden as an omen before war, epidemic, or drought. Tradition holds that to unsheathe it completely would loose fire upon the world, and the Fire King's foremost office is simply to tend and restrain it. The blade is widely thought to be of Cham royal origin, a relic of the lowland kingdoms absorbed into the highland economy of the sacred. Jacques Dournes made this object the pivot of his study, reading in it a theory of power in which sovereignty is vested not in a ruling person but in a charged thing that its guardian may never wield. Sources differ on its precise provenance and on whether a second such blade was once attached to the Water King."
+ }
+]
+```

@@ -1,0 +1,1114 @@
+Mojave (Mohave) — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "mojave_matavilya",
+  "name": {
+   "primary": "Matavilya",
+   "alt": [
+    "Matavilye",
+    "Matevilye",
+    "Mataviliya"
+   ],
+   "transliterations": {
+    "mov": "Matavilye",
+    "etymology": "Recorded by Bourke and Kroeber as the name of the first-born creator; internal analysis uncertain."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mojave (Mohave)",
+  "primaryTradition": "Mojave (Mohave)",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "mojave_sky",
+   "mojave_earth"
+  ],
+  "parentRoles": {
+   "mojave_sky": "paternal",
+   "mojave_earth": "maternal"
+  },
+  "temporal": {
+   "era": "Mojave (Mohave) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "creation",
+     "script": "Latn",
+     "rom": "creation"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, 'Notes on the Cosmogony and Theogony of the Mojave Indians of the Rio Colorado, Arizona,' Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   },
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "first death",
+     "script": "Latn",
+     "rom": "first death"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), 'The Mohave,' pp. 726-770."
+     }
+    ]
+   },
+   {
+    "sphereId": "mortuary-rites",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cremation",
+     "script": "Latn",
+     "rom": "cremation"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), 'The Mohave,' pp. 749-751."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "institute-custom",
+    "name": "institutes the first customs",
+    "term": {
+     "value": "institute custom",
+     "script": "Latn",
+     "rom": "institute custom"
+    },
+    "inheritability": "none",
+    "notes": "Raised the Great Dark House at Avikwame and began to order the world before his death.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   },
+   {
+    "id": "die-the-first-death",
+    "name": "dies the first death",
+    "term": {
+     "value": "die first",
+     "script": "Latn",
+     "rom": "die first"
+    },
+    "inheritability": "unique",
+    "notes": "As the first being to die, his passing brings mortality and the cremation rite into the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 749-751, 770."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mojave_matavilya-dark-house",
+    "kind": "structure",
+    "name": "Great Dark House at Avikwame",
+    "term": {
+     "value": "Great Dark House",
+     "script": "Latn",
+     "rom": "Great Dark House"
+    },
+    "role": "first ceremonial house of creation",
+    "notes": "The dark house raised at the sacred mountain Avikwame (Spirit Mountain), where the creators gathered the first beings.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mojave_mastamho",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "mojave_frog",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ],
+    "notes": "His daughter Frog bewitches and kills him."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the first-born",
+    "translation": "eldest creator, first to come into being",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Matavilya is the first-born creator of Mohave cosmogony, son of Sky and Earth, who leads the first people and raises the Great Dark House at Avikwame.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, 'Notes on the Cosmogony and Theogony of the Mojave Indians of the Rio Colorado, Arizona,' Journal of American Folklore 2, no. 6 (1889): 169-189."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), 'The Mohave,' pp. 770-771."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Matavilya is bewitched by his daughter Frog and dies the first death, and his cremation founds the Mohave mortuary rite.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 749-751, 770-771."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Matavilya, also spelled Matavilye, is the first-born creator of Mohave cosmogony, son of the primordial Sky and Earth. Born where sky met earth, he led the first people to the origin place in the Mohave Valley and raised the Great Dark House at Avikwame, Spirit Mountain, where he began to order the world and institute custom. Having given offense, in most tellings an improper gesture toward his daughter Frog, he was bewitched by her: she seized his bodily leavings and worked sickness upon him, and he weakened and died, the first being to do so. His death established mortality and the cremation rite, and the ordering of the world then passed to his younger brother Mastamho. Sources differ on the exact offense and on whether Frog acted alone."
+ },
+ {
+  "id": "mojave_mastamho",
+  "name": {
+   "primary": "Mastamho",
+   "alt": [
+    "Mastamxo",
+    "Kumastamho",
+    "Kumastamxo",
+    "Mustamho"
+   ],
+   "transliterations": {
+    "mov": "Mastamxo",
+    "etymology": "The transformer-creator; the honorific form Kumastamxo is also recorded."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mojave (Mohave)",
+  "primaryTradition": "Mojave (Mohave)",
+  "sex": "male",
+  "vitalStatus": "transformed",
+  "parentIds": [
+   "mojave_sky",
+   "mojave_earth"
+  ],
+  "parentRoles": {
+   "mojave_sky": "paternal",
+   "mojave_earth": "maternal"
+  },
+  "temporal": {
+   "era": "Mojave (Mohave) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "world-ordering",
+     "script": "Latn",
+     "rom": "world-ordering"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (University of California Press, 1948), 'Mastamho.'"
+     }
+    ]
+   },
+   {
+    "sphereId": "rivers",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Aha Kwahwat (Colorado River)",
+     "script": "Latn",
+     "rom": "Aha Kwahwat"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   },
+   {
+    "sphereId": "shamanism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "dreamed power",
+     "script": "Latn",
+     "rom": "dreamed power"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 754-770."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "raise-the-river",
+    "name": "brings forth the Colorado River",
+    "term": {
+     "value": "bring forth the river",
+     "script": "Latn",
+     "rom": "bring forth the river"
+    },
+    "inheritability": "unique",
+    "notes": "Thrusts his cane into the ground to release the river and rides its flood to cut the valley.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   },
+   {
+    "id": "name-the-tribes",
+    "name": "names the tribes and grants speech and lands",
+    "term": {
+     "value": "name the peoples",
+     "script": "Latn",
+     "rom": "name the peoples"
+    },
+    "inheritability": "unique",
+    "notes": "In the sacred house he assigns each people its territory, language, and institutions.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948)."
+     }
+    ]
+   },
+   {
+    "id": "transform-into-eagle",
+    "name": "transforms into the fish-eagle",
+    "term": {
+     "value": "become the eagle",
+     "script": "Latn",
+     "rom": "become the eagle"
+    },
+    "inheritability": "unique",
+    "notes": "His work finished, he turns himself into the fish-eagle and loses his mind and speech.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mojave_mastamho-cane",
+    "kind": "implement",
+    "name": "Mastamho's cane",
+    "term": {
+     "value": "cane",
+     "script": "Latn",
+     "rom": "cane"
+    },
+    "role": "instrument of world-shaping",
+    "notes": "The staff thrust into the earth to release the waters of the Colorado.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mojave_matavilya",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "mojave_sky_rattlesnake",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948)."
+     }
+    ],
+    "notes": "Summons the great serpent from the sea and has it killed to obtain curing power."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Kumastamxo",
+    "translation": "Great Mastamho, the transformer",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mastamho, younger brother of Matavilya, completes creation: he brings forth the Colorado River with his cane, shapes the land, and gathers the peoples to assign lands, speech, and institutions.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     },
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948), 'Mastamho.'"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Having ordered the world, Mastamho transforms himself into the fish-eagle and becomes the source of the dreamed power of shamans and singers.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 754, 770-771."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Mastamho, also Mastamxo or Kumastamho, younger brother of Matavilya and son of Sky and Earth, is the great transformer who completed the ordering of the world after Matavilya's death. Standing at Avikwame, he thrust his cane into the ground to bring forth the Colorado River, then rode its flood in a boat to cut the valley and settle its waters. He raised the mountains, divided day from night, and gathered the peoples in the sacred house to name the tribes, assign their lands and speech, and grant the Mohave their dreams and song-cycles, farming, and the institutions of war and curing. His work finished, he transformed himself into the fish-eagle, losing his mind and speech. He is regarded as the source of the dreamed power on which Mohave shamans and singers drew."
+ },
+ {
+  "id": "mojave_frog",
+  "name": {
+   "primary": "Frog",
+   "alt": [
+    "Frog Woman",
+    "Hanya"
+   ],
+   "transliterations": {
+    "mov": "hanya",
+    "etymology": "hanya, the Mohave word for frog; the creator's daughter is named for the animal."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Mojave (Mohave)",
+  "primaryTradition": "Mojave (Mohave)",
+  "sex": "female",
+  "vitalStatus": "unknown",
+  "parentIds": [
+   "mojave_matavilya"
+  ],
+  "parentRoles": {
+   "mojave_matavilya": "paternal"
+  },
+  "temporal": {
+   "era": "Mojave (Mohave) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "witchcraft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sorcery",
+     "script": "Latn",
+     "rom": "sorcery"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   },
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bringer of death",
+     "script": "Latn",
+     "rom": "bringer of death"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bewitch-the-creator",
+    "name": "bewitches Matavilya to death",
+    "term": {
+     "value": "bewitch",
+     "script": "Latn",
+     "rom": "bewitch"
+    },
+    "inheritability": "unique",
+    "notes": "Seizes her father's excrement or spittle and works sickness upon him, causing the first death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "mojave_matavilya",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ],
+    "notes": "Kills her father by sorcery."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Frog, daughter of Matavilya, works sorcery on her father by capturing his bodily leavings, causing the first death, then flees and hides.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), 'The Mohave,' pp. 770-771."
+     },
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Frog is the daughter of the creator Matavilya and the agent of the first death in Mohave myth. Angered by her father's conduct, she worked sorcery upon him by seizing his excrement or spittle and swallowing or burying it, so that he sickened and died. She then fled and hid, in some tellings beneath the earth or the waters, and was pursued. Through her act death, sickness, and witchcraft entered the world, and the cremation of Matavilya that followed became the model for Mohave mortuary practice."
+ },
+ {
+  "id": "mojave_coyote",
+  "name": {
+   "primary": "Coyote",
+   "alt": [
+    "Hukthar",
+    "Hatalykwe"
+   ],
+   "transliterations": {
+    "mov": "hukthar",
+    "etymology": "hukthar, the Mohave word for coyote; the trickster is named for the animal."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Mojave (Mohave)",
+  "primaryTradition": "Mojave (Mohave)",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mojave (Mohave) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "trickery",
+     "script": "Latn",
+     "rom": "trickery"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "steal-the-heart",
+    "name": "steals Matavilya's heart from the pyre",
+    "term": {
+     "value": "steal the heart",
+     "script": "Latn",
+     "rom": "steal the heart"
+    },
+    "inheritability": "unique",
+    "notes": "Leaps over the ring of mourners at the cremation and snatches the creator's heart to devour it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Coyote, the Mohave trickster, leaps over the mourners at Matavilya's cremation and snatches the creator's heart from the burning body.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), 'The Mohave,' pp. 770-771."
+     },
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948), 'Coyote.'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Coyote, called Hukthar, is the trickster of Mohave narrative, best known for his theft at the funeral of Matavilya. When the mourners cremated the dead creator, they arranged themselves in a close ring to guard the body and sent Coyote away on a pretext, kindling the pyre with the swift Fly; but Coyote leaped over the shortest of the watchers, snatched the creator's heart from the flames, and fled to devour it. His theft explains features of the funeral, and across the wider mythology he is the type of the greedy, disruptive trickster whose own dream-sung cycle the Mohave preserved."
+ },
+ {
+  "id": "mojave_sky",
+  "name": {
+   "primary": "Sky",
+   "alt": [
+    "Father Sky",
+    "Ammaya",
+    "Amay"
+   ],
+   "transliterations": {
+    "mov": "ammaya",
+    "etymology": "ammaya / amay, 'sky, above'; the primordial male principle."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mojave (Mohave)",
+  "primaryTradition": "Mojave (Mohave)",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mojave (Mohave) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ammaya (sky)",
+     "script": "Latn",
+     "rom": "ammaya"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "primordial origin",
+     "script": "Latn",
+     "rom": "primordial origin"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "beget-the-creators",
+    "name": "begets the creator brothers",
+    "term": {
+     "value": "beget",
+     "script": "Latn",
+     "rom": "beget"
+    },
+    "inheritability": "none",
+    "notes": "With Earth produces Matavilya and Mastamho at the beginning of things.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "mojave_earth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sky is the primordial male principle who, with Earth, forms the first pair and fathers the creators Matavilya and Mastamho.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, 'Notes on the Cosmogony and Theogony of the Mojave Indians,' Journal of American Folklore 2, no. 6 (1889): 169-189."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Sky, called Ammaya, is the primordial male principle of Mohave cosmogony, who with Earth forms the first parental pair. In the beginning, before the ordered world, Sky and Earth came together at the western horizon, and from their union the creator brothers Matavilya and Mastamho were born. Sky and Earth are named as the ultimate origin of the divine beings but recede from the narrative once their offspring begin the work of creation."
+ },
+ {
+  "id": "mojave_earth",
+  "name": {
+   "primary": "Earth",
+   "alt": [
+    "Mother Earth",
+    "Amata",
+    "Amat"
+   ],
+   "transliterations": {
+    "mov": "amat",
+    "etymology": "amat / amata, 'earth, land, ground'; the primordial female principle."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mojave (Mohave)",
+  "primaryTradition": "Mojave (Mohave)",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mojave (Mohave) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "amat (earth)",
+     "script": "Latn",
+     "rom": "amat"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "primordial origin",
+     "script": "Latn",
+     "rom": "primordial origin"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear-the-creators",
+    "name": "bears the creator brothers",
+    "term": {
+     "value": "bear offspring",
+     "script": "Latn",
+     "rom": "bear offspring"
+    },
+    "inheritability": "none",
+    "notes": "With Sky brings forth Matavilya and Mastamho at the beginning of things.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "mojave_sky",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Earth is the primordial female principle who, with Sky, forms the first pair and bears the creators Matavilya and Mastamho.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "John G. Bourke, Journal of American Folklore 2, no. 6 (1889): 169-189."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Earth, called Amat, is the primordial female principle of Mohave cosmogony, consort of Sky and, with him, mother of the creators Matavilya and Mastamho. Their meeting at the beginning of things produces the first generation of divine beings; thereafter Earth, like Sky, plays little active part, the ordering of the world falling to her sons."
+ },
+ {
+  "id": "mojave_kwayu",
+  "name": {
+   "primary": "Kwayu",
+   "alt": [
+    "Kwayú",
+    "Kwayoo"
+   ],
+   "transliterations": {
+    "mov": "kwayú",
+    "etymology": "kwayú, the meteor or shooting-star; also the name of the cannibal ogre."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Mojave (Mohave)",
+  "primaryTradition": "Mojave (Mohave)",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mojave (Mohave) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "monsters",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cannibal ogre",
+     "script": "Latn",
+     "rom": "cannibal ogre"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 771-775."
+     }
+    ]
+   },
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kwayú (meteor)",
+     "script": "Latn",
+     "rom": "kwayú"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 771-775."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "devour-humans",
+    "name": "devours human beings",
+    "term": {
+     "value": "devour",
+     "script": "Latn",
+     "rom": "devour"
+    },
+    "inheritability": "unique",
+    "notes": "A man-eating monster who preys upon people until destroyed by a hero.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 771-775."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "kwayú",
+    "translation": "the meteor, the shooting-star ogre",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 771-775."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kwayu is a man-eating monster of Mohave lore associated with the meteor or fireball, destroyed in hero-tales.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), 'The Mohave,' pp. 771-775."
+     },
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, More Mohave Myths, Anthropological Records 27 (University of California Press, 1972)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Kwayu is a man-eating monster of Mohave lore, associated with the meteor or fireball that streaks the desert sky. Described as a great cannibal ogre, he devours human beings and is the antagonist of hero-tales in which he is at last destroyed. His name is given to the shooting star, and children were warned of him."
+ },
+ {
+  "id": "mojave_nyohaiva",
+  "name": {
+   "primary": "Nyohaiva",
+   "alt": [
+    "Nyohaiva-nyamasave"
+   ],
+   "transliterations": {
+    "mov": "Nyohaiva",
+    "etymology": "Recorded by Kroeber as the name of the heroine of a Mohave song-narrative; internal analysis uncertain."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Mojave (Mohave)",
+  "primaryTradition": "Mojave (Mohave)",
+  "sex": "female",
+  "vitalStatus": "transformed",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mojave (Mohave) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "victory-ceremony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "scalp ceremony",
+     "script": "Latn",
+     "rom": "scalp ceremony"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948), 'Nyohaiva.'"
+     }
+    ]
+   },
+   {
+    "sphereId": "song-cycle",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "dreamed song",
+     "script": "Latn",
+     "rom": "dreamed song"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-victory-rite",
+    "name": "institutes the victory ceremony",
+    "term": {
+     "value": "institute the ceremony",
+     "script": "Latn",
+     "rom": "institute the ceremony"
+    },
+    "inheritability": "unique",
+    "notes": "Travels the land naming places and founds the victory or scalp ceremony and its songs.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Nyohaiva is the heroine of one of the Seven Mohave Myths, born at Avikwame, who travels the land and institutes the victory or scalp ceremony before her transformation.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (University of California Press, 1948), 'Nyohaiva.'"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Nyohaiva is the heroine of one of the great Mohave dream-sung narratives recorded by Kroeber. Born at Avikwame in the time of creation, she travels through the land, naming places and encountering other beings, and institutes the victory or scalp ceremony and its songs before undergoing her own transformation. Her story belongs to the song-cycles held to be received in dreams and sung over successive nights."
+ },
+ {
+  "id": "mojave_sky_rattlesnake",
+  "name": {
+   "primary": "Sky-Rattlesnake",
+   "alt": [
+    "the Great Serpent",
+    "Kumastamho's serpent"
+   ],
+   "transliterations": {
+    "mov": "avé",
+    "etymology": "avé, 'snake, rattlesnake'; the great sea-serpent is recorded chiefly under a translated title."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Mojave (Mohave)",
+  "primaryTradition": "Mojave (Mohave)",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mojave (Mohave) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "curing power",
+     "script": "Latn",
+     "rom": "curing power"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948)."
+     }
+    ]
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the southern sea",
+     "script": "Latn",
+     "rom": "the southern sea"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "yield-curing-power",
+    "name": "yields the power of curing",
+    "term": {
+     "value": "yield curing power",
+     "script": "Latn",
+     "rom": "yield curing power"
+    },
+    "inheritability": "unique",
+    "notes": "From his killed body and scattered substance the shamans' healing knowledge and the dangers of sickness derive.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "mojave_mastamho",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (1948)."
+     }
+    ],
+    "notes": "Summoned and then killed by Mastamho."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A great serpent of the southern sea is summoned by Mastamho to the sacred house at Avikwame and killed, and from its body the powers of curing and the dangers of sickness derive.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "A. L. Kroeber, Seven Mohave Myths, Anthropological Records 11, no. 1 (University of California Press, 1948)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. L. Kroeber, Handbook of the Indians of California, BAE Bulletin 78 (1925), pp. 770-771."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Sky-Rattlesnake is a great serpent of the southern sea summoned by Mastamho during the ordering of the world. Called to the sacred house at Avikwame to furnish the powers of curing, the serpent came northward along the Colorado; in the telling he is killed, and from his severed body and scattered substance the shamans' healing knowledge and the dangers of sickness are derived. Sources record the being chiefly under a translated title, and native forms of the name vary."
+ }
+]
+```

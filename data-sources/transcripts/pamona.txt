@@ -1,0 +1,771 @@
+Pamona — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "pamona_pue_mpalaburu",
+  "name": {
+   "primary": "Pue mPalaburu",
+   "alt": [
+    "Poee mPalaboeroe",
+    "Pue Palaburu",
+    "Puempalaburu"
+   ],
+   "transliterations": {
+    "pmf": "Pue mPalaburu",
+    "etymology": "Bare'e pue 'lord' + palaburu 'to form, fashion, create': 'the Lord who Fashions'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Pamona",
+  "primaryTradition": "Pamona",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Pamona traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "palaburu",
+     "script": "Latin",
+     "rom": "palaburu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes, 3 vols. (Batavia: Landsdrukkerij, 1912–1914; 2nd ed. 4 vols., Amsterdam, 1950–1951), cosmogony"
+     }
+    ]
+   },
+   {
+    "sphereId": "humankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tau",
+     "script": "Latin",
+     "rom": "tau"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (The Hague: Excelsior, 1956), the creator"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fashion-humankind",
+    "name": "fashions the first human beings",
+    "term": {
+     "value": "mampapali tau",
+     "script": "Latin",
+     "rom": "mampapali tau"
+    },
+    "inheritability": "unique",
+    "notes": "Shapes the first human bodies, into which soul-substance is put from the realms above and below.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950), vols. on cosmogony and man"
+     }
+    ]
+   },
+   {
+    "id": "decree-mortality",
+    "name": "decrees human mortality through the stone-and-banana choice",
+    "term": {
+     "value": "watu pai loka",
+     "script": "Latin",
+     "rom": "watu pai loka"
+    },
+    "inheritability": "none",
+    "notes": "Offered a stone and a banana, the first people chose the banana and so became short-lived, dying and multiplying as the plant does rather than enduring like stone.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), origin of death"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "pamona_i_lai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950), creation of man"
+     }
+    ],
+    "notes": "Lai supplies celestial soul-substance to the beings the creator forms."
+   },
+   {
+    "kind": "ally",
+    "personId": "pamona_i_ndara",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950), creation of man"
+     }
+    ],
+    "notes": "Ndara supplies chthonic soul-substance to the beings the creator forms."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Pue",
+    "translation": "the Lord",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani, Bare'e-Nederlandsch Woordenboek (Leiden: Brill, 1928), s.v. pue"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Pue mPalaburu is the supreme creator who fashioned the first human beings and stands above the paired gods of the upper and lower worlds",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Human mortality is traced to the primeval choice of the banana over the stone offered by the creator",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), origin of death"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Pue mPalaburu, 'the Lord who Fashions,' is the supreme creator of the Bare'e-speaking Toradja and stands above the paired gods of the upper and lower worlds. In the cosmogony recorded by Adriani and Kruyt he shapes the first human beings, whose animating soul-substance is supplied from the realm of Lai above and Ndara below. He is also the author of human mortality: offered the choice between a stone and a banana, the first people took the banana and so became short-lived, perishing and reproducing as the plant does rather than enduring like stone. Though seldom the object of a dedicated cult, he is invoked as the ultimate origin of life and the moral order."
+ },
+ {
+  "id": "pamona_i_lai",
+  "name": {
+   "primary": "i Lai",
+   "alt": [
+    "Lai",
+    "Ilai",
+    "Pue di Songi"
+   ],
+   "transliterations": {
+    "pmf": "i Lai",
+    "etymology": "personal article i + Lai; the god of the Upperworld and sky"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Pamona",
+  "primaryTradition": "Pamona",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Pamona traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "songi",
+     "script": "Latin",
+     "rom": "songi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), the gods of the upper and lower worlds"
+     }
+    ]
+   },
+   {
+    "sphereId": "soul",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tanoana",
+     "script": "Latin",
+     "rom": "tanoana"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), tanoana"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "govern-upperworld",
+    "name": "rules the Upperworld and the daylight sky",
+    "term": {
+     "value": "wawo yangi",
+     "script": "Latin",
+     "rom": "wawo yangi"
+    },
+    "inheritability": "unique",
+    "notes": "Lord of the heavens to which the shaman's soul ascends.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     }
+    ]
+   },
+   {
+    "id": "bestow-soul-substance",
+    "name": "provides the celestial share of the human life-soul",
+    "term": {
+     "value": "tanoana",
+     "script": "Latin",
+     "rom": "tanoana"
+    },
+    "inheritability": "partial",
+    "notes": "With Ndara, endows the bodies formed by Pue mPalaburu with animating soul-substance.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950), creation of man"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "pamona_i_ndara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), the divine pair"
+     }
+    ],
+    "notes": "Male sky-power paired with the female earth-power below."
+   },
+   {
+    "kind": "ally",
+    "personId": "pamona_pue_mpalaburu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950)"
+     }
+    ]
+   },
+   {
+    "kind": "ally",
+    "personId": "pamona_wurake",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alb. C. Kruyt, 'Measa, eene bijdrage tot het animisme der Bare'e-sprekende Toradja's,' Bijdragen tot de Taal-, Land- en Volkenkunde 74–80 (1918–1924)"
+     }
+    ],
+    "notes": "The wurake spirits dwell in his sky-realm."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Pue di Songi",
+    "translation": "the Lord in the Heaven",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "i Lai is the male god of the Upperworld, associated with the sky and sun, and with the earth-goddess Ndara forms the great divine pair",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     },
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "i Lai is the god of the Upperworld, the luminous male power of the sky, and with the earth-goddess Ndara forms the great divine pair of Bare'e cosmology. The two are complementary: Lai rules above and is associated with the sun and daylight, Ndara below with the earth and the dead. In the making of humankind the life-soul is drawn from both. Lai's celestial realm is the destination of the mowurake shaman, whose soul-journey ascends to fetch back a sick person's strayed tanoana. He is commonly addressed by the honorific Pue di Songi, 'the Lord in the Heaven.' Sources differ on how sharply he is distinguished from the creator Pue mPalaburu."
+ },
+ {
+  "id": "pamona_i_ndara",
+  "name": {
+   "primary": "i Ndara",
+   "alt": [
+    "Ndara",
+    "Indara"
+   ],
+   "transliterations": {
+    "pmf": "i Ndara",
+    "etymology": "personal article i + Ndara; goddess of the Underworld and earth"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Pamona",
+  "primaryTradition": "Pamona",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Pamona traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "wawo ntana",
+     "script": "Latin",
+     "rom": "wawo ntana"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), the gods of the upper and lower worlds"
+     }
+    ]
+   },
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tana",
+     "script": "Latin",
+     "rom": "tana"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani, Bare'e-Nederlandsch Woordenboek (Leiden: Brill, 1928), s.v. tana"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "govern-underworld",
+    "name": "rules the Underworld and the earth beneath",
+    "term": {
+     "value": "wawo ntana",
+     "script": "Latin",
+     "rom": "wawo ntana"
+    },
+    "inheritability": "unique",
+    "notes": "Female power of the ground and the realm below, paired with Lai above.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     }
+    ]
+   },
+   {
+    "id": "provide-soul-substance",
+    "name": "provides the chthonic share of the human life-soul",
+    "term": {
+     "value": "tanoana",
+     "script": "Latin",
+     "rom": "tanoana"
+    },
+    "inheritability": "partial",
+    "notes": "With Lai, endows the bodies formed by Pue mPalaburu with animating soul-substance.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950), creation of man"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "pamona_i_lai",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), the divine pair"
+     }
+    ],
+    "notes": "Female earth-power paired with the male sky-power above."
+   },
+   {
+    "kind": "ally",
+    "personId": "pamona_pue_mpalaburu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "i Ndara",
+    "translation": "the Lady Below",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "i Ndara is the female deity of the Underworld and earth, counterpart of the sky-god Lai and co-source of the human soul",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     },
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "i Ndara is the goddess of the Underworld and the earth, the female counterpart of the sky-god Lai. As the lower half of the cosmic pair she governs the ground and the realm beneath, and shares in the endowment of the human soul, the tanoana that quickens the bodies fashioned by Pue mPalaburu. In ritual invocation her name is habitually coupled with Lai's, the two named together as the powers above and below."
+ },
+ {
+  "id": "pamona_wurake",
+  "name": {
+   "primary": "Wurake",
+   "alt": [
+    "wurake",
+    "tau wurake"
+   ],
+   "transliterations": {
+    "pmf": "wurake",
+    "etymology": "the celestial spirit-women of the Upperworld who preside over and guide the mowurake shaman"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Pamona",
+  "primaryTradition": "Pamona",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Pamona traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "shamanism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mowurake",
+     "script": "Latin",
+     "rom": "mowurake"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alb. C. Kruyt, 'Measa, eene bijdrage tot het animisme der Bare'e-sprekende Toradja's,' Bijdragen tot de Taal-, Land- en Volkenkunde 74–80 (1918–1924)"
+     }
+    ]
+   },
+   {
+    "sphereId": "upperworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "wawo yangi",
+     "script": "Latin",
+     "rom": "wawo yangi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), wurake"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guide-soul-journey",
+    "name": "guides the shaman's soul on its ascent to the heavens",
+    "term": {
+     "value": "mowurake",
+     "script": "Latin",
+     "rom": "mowurake"
+    },
+    "inheritability": "unique",
+    "notes": "Accompany the entranced priestess along the spirit-ladder to recover a strayed tanoana or escort the dead.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alb. C. Kruyt, 'Measa,' Bijdragen tot de Taal-, Land- en Volkenkunde 74–80 (1918–1924)"
+     }
+    ]
+   },
+   {
+    "id": "teach-shamanic-rite",
+    "name": "taught the shamanic art to the first human practitioners",
+    "term": {
+     "value": "mowurake",
+     "script": "Latin",
+     "rom": "mowurake"
+    },
+    "inheritability": "none",
+    "notes": "The rite and its officiants take their name from these spirits.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "pamona_i_lai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alb. C. Kruyt, 'Measa,' Bijdragen tot de Taal-, Land- en Volkenkunde 74–80 (1918–1924)"
+     }
+    ],
+    "notes": "Dwell in the sky-realm of the Upperworld god."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The wurake are female Upperworld spirits who patronise and guide the mowurake shamanic rite, lending it their name",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alb. C. Kruyt, 'Measa, eene bijdrage tot het animisme der Bare'e-sprekende Toradja's,' Bijdragen tot de Taal-, Land- en Volkenkunde 74–80 (1918–1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The wurake are the female spirits of the Upperworld who preside over Bare'e shamanism. They dwell in the sky-realm of Lai and are the patrons and guides of the mowurake, the shamanic rite in which a priestess, entranced, sends her soul on a journey along a spirit-ladder to the heavens to recover a patient's lost tanoana or to escort the newly dead. The wurake taught this art to the first human practitioners and accompany the shaman on each ascent; the ceremony and its officiants take their name from them."
+ },
+ {
+  "id": "pamona_angga",
+  "name": {
+   "primary": "Angga",
+   "alt": [
+    "angga",
+    "tau angga"
+   ],
+   "transliterations": {
+    "pmf": "angga",
+    "etymology": "the death-soul or shade of a deceased person, which journeys to the land of the dead"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Pamona",
+  "primaryTradition": "Pamona",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Pamona traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "angga",
+     "script": "Latin",
+     "rom": "angga"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani, Bare'e-Nederlandsch Woordenboek (Leiden: Brill, 1928), s.v. angga"
+     }
+    ]
+   },
+   {
+    "sphereId": "afterlife",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "torate",
+     "script": "Latin",
+     "rom": "torate"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), the land of the dead"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "survive-death",
+    "name": "survives the body as the shade of the deceased",
+    "term": {
+     "value": "angga",
+     "script": "Latin",
+     "rom": "angga"
+    },
+    "inheritability": "none",
+    "notes": "Distinguished from the tanoana, the detachable life-soul of the living; the angga is what remains once life has ended.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950), death and the soul"
+     }
+    ]
+   },
+   {
+    "id": "journey-to-land-of-dead",
+    "name": "journeys to and settles in the land of the dead",
+    "term": {
+     "value": "torate",
+     "script": "Latin",
+     "rom": "torate"
+    },
+    "inheritability": "none",
+    "notes": "The secondary death-feast is directed at speeding and settling the angga among the ancestral dead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956), mortuary ritual"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The angga is the surviving death-soul, distinct from the living person's tanoana, and the object of Bare'e mortuary ritual as it travels to the land of the dead",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "R. E. Downs, The Religion of the Bare'e-speaking Toradja of Central Celebes (1956)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Angga is the soul of a dead person as it survives the body — the shade that departs at death and travels to the land of the dead. Distinguished from the tanoana, the detachable life-soul of the living, the angga is what remains once life has ended; the mortuary rites of the Bare'e Toradja, culminating in the great secondary death-feast, are directed at speeding and settling it in the realm of the dead. Sources describe the angga as retaining the character and needs of the living, requiring provisioning and eventually joining the ancestral dead."
+ },
+ {
+  "id": "pamona_sese_ntaola",
+  "name": {
+   "primary": "Sese nTaola",
+   "alt": [
+    "Sese mpai Taola",
+    "i Sese nTaola"
+   ],
+   "transliterations": {
+    "pmf": "Sese nTaola",
+    "etymology": "hero of the principal Bare'e epic tale recorded by Adriani"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Pamona",
+  "primaryTradition": "Pamona",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Pamona traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "heroism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "measa",
+     "script": "Latin",
+     "rom": "measa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani, Verzamelde geschriften, 3 vols. (Haarlem: De Erven F. Bohn, 1932), the Bare'e tale of Sese nTaola"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "overcome-ordeals",
+    "name": "prevails through a cycle of heroic ordeals and journeys",
+    "term": {
+     "value": "measa",
+     "script": "Latin",
+     "rom": "measa"
+    },
+    "inheritability": "none",
+    "notes": "A prince of prodigious strength and fortune who passes through trials, voyages, and marriages typical of the Indonesian hero-tale.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani, Verzamelde geschriften (1932), Sese nTaola"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Sese nTaola is the hero of the principal epic of Bare'e oral literature, recorded and published by Adriani as a central specimen of the language",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "N. Adriani, Verzamelde geschriften, 3 vols. (Haarlem: De Erven F. Bohn, 1932)"
+     },
+     {
+      "kind": "primary",
+      "reference": "N. Adriani & Alb. C. Kruyt, De Bare'e-sprekende Toradja van Midden-Celebes (1912–1914/1950), folk-literature"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Sese nTaola is the hero of the principal epic tale of Bare'e oral literature, recorded and published by Adriani. A prince of prodigious strength and fortune, he passes through a cycle of ordeals, journeys, and marriages typical of the Indonesian hero-tale. The narrative is one of the longest and best known in the Bare'e corpus and served Adriani as a central specimen of the language and its literature. Unlike the cosmic gods, Sese nTaola belongs to the world of legendary human heroes rather than the divine genealogy."
+ }
+]
+```

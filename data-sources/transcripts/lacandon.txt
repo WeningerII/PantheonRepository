@@ -1,0 +1,1912 @@
+Lacandon — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "lacandon_kakoch",
+  "name": {
+   "primary": "Kʼakʼoch",
+   "alt": [
+    "Kakoch",
+    "Kʼak Och"
+   ],
+   "transliterations": {
+    "lac": "Kʼakʼoch",
+    "etymology": "Glossed by Bruce as a primordial creator-name; the remote high god who precedes the world"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "primordial creation",
+     "script": "Latn",
+     "rom": "primordial creation"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (Colección Científica 12, INAH, Mexico City, 1974), cosmogonic narratives"
+     }
+    ]
+   },
+   {
+    "sphereId": "cosmogony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the first sun and the earth-flower",
+     "script": "Latn",
+     "rom": "the first sun and the earth-flower"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Contes et mythologie des indiens lacandons (L'Harmattan, Paris, 1986), creation cycle"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "engender-the-gods",
+    "name": "engender the gods",
+    "term": {
+     "value": "engender the gods",
+     "script": "Latn",
+     "rom": "engender the gods"
+    },
+    "inheritability": "unique",
+    "notes": "Fashioned Hachäkyum and the other deities before withdrawing from the world.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "id": "make-the-first-sun",
+    "name": "make the first sun",
+    "term": {
+     "value": "make the first sun",
+     "script": "Latn",
+     "rom": "make the first sun"
+    },
+    "inheritability": "unique",
+    "notes": "Brought the primal sun and the great flower from which the world unfolded.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Contes et mythologie des indiens lacandons (L'Harmattan, 1986)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "lacandon_hachakyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "lacandon_sukunkyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "lacandon_akyantho",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Kʼakʼoch",
+    "translation": "the remote creator",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kʼakʼoch is the primordial creator who made the first sun and the earth-flower and fashioned Hachäkyum, then withdrew.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (Colección Científica 12, INAH, Mexico City, 1974)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Contes et mythologie des indiens lacandons (L'Harmattan, Paris, 1986)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kʼakʼoch is the remote primordial creator of the northern Lacandon cosmogony. Existing before the present world, he brought into being the first sun and the great flower from whose unfolding the earth and the other gods arose, and he fashioned Hachäkyum, to whom the ongoing governance of the world then passed. Having set creation in motion, Kʼakʼoch withdrew and receives no cult, standing above the deities who accept offerings. Sources differ on whether he is a single father-figure or a more diffuse creative principle."
+ },
+ {
+  "id": "lacandon_hachakyum",
+  "name": {
+   "primary": "Hachäkyum",
+   "alt": [
+    "Nohochakyum",
+    "Nohoch Äkyum",
+    "Hach Äk Yum"
+   ],
+   "transliterations": {
+    "lac": "Hach Äk Yum",
+    "etymology": "'hach' true + 'äk yum' our lord, hence 'Our True Lord'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lacandon_kakoch"
+  ],
+  "parentRoles": {
+   "lacandon_kakoch": "paternal"
+  },
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "creation of the true people",
+     "script": "Latn",
+     "rom": "creation of the true people"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred M. Tozzer, A Comparative Study of the Mayas and the Lacandones (Macmillan, New York, 1907)"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kʼin (sun) and the stars",
+     "script": "Latn",
+     "rom": "kʼin and the stars"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lordship over gods and people",
+     "script": "Latn",
+     "rom": "lordship over gods and people"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, Belmont, 1990)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shape-the-first-people",
+    "name": "shape the first people",
+    "term": {
+     "value": "shape the Hach Winik from clay",
+     "script": "Latn",
+     "rom": "shape the Hach Winik from clay"
+    },
+    "inheritability": "unique",
+    "notes": "Formed the first true people from clay or river sand.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred M. Tozzer, A Comparative Study of the Mayas and the Lacandones (Macmillan, 1907)"
+     }
+    ]
+   },
+   {
+    "id": "set-the-stars",
+    "name": "set the stars in the sky",
+    "term": {
+     "value": "scatter the flower-stars",
+     "script": "Latn",
+     "rom": "scatter the flower-stars"
+    },
+    "inheritability": "unique",
+    "notes": "The stars are flowers he cast into the sky.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "id": "decree-death",
+    "name": "decree human mortality",
+    "term": {
+     "value": "decree human mortality",
+     "script": "Latn",
+     "rom": "decree human mortality"
+    },
+    "inheritability": "unique",
+    "notes": "In some narratives he ordained death once the first people had multiplied.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, University at Albany, 1998)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "lacandon_hachakyum-god-pot",
+    "kind": "ritual-vessel",
+    "name": "god-pot (incense burner)",
+    "term": {
+     "value": "u läkil kʼuh",
+     "script": "Latn",
+     "rom": "u lakil kʼuh"
+    },
+    "role": "clay incensario bearing a modelled human face that houses the god and receives copal",
+    "notes": "The anthropomorphic 'god-pots' are the material focus of Lacandon worship, periodically renewed in ceremony.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Alfred M. Tozzer, A Comparative Study of the Mayas and the Lacandones (Macmillan, 1907)"
+     }
+    ]
+   },
+   {
+    "id": "lacandon_hachakyum-pom",
+    "kind": "substance",
+    "name": "copal incense",
+    "term": {
+     "value": "pom",
+     "script": "Latn",
+     "rom": "pom"
+    },
+    "role": "resin burned in the god-pots as the gods' food",
+    "notes": "Copal nodules shaped and burned as the principal offering.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "lacandon_kakoch",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "lacandon_sukunkyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "lacandon_akyantho",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "lacandon_xkaleox",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "lacandon_kisin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "kind": "ally",
+    "personId": "lacandon_akinchob",
+    "notes": "Reckoned his son-in-law and steward of the maize.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "lacandon_kayum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Nohoch Äkyum",
+    "translation": "Our Great Lord",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred M. Tozzer, A Comparative Study of the Mayas and the Lacandones (Macmillan, 1907)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hachäkyum, 'Our True Lord', is the principal creator god who shaped the first people and set the stars, dwelling at Yaxchilan.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred M. Tozzer, A Comparative Study of the Mayas and the Lacandones (Macmillan, New York, 1907)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     },
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Hachäkyum, 'Our True Lord', is the principal creator and high god of the living Lacandon pantheon. Modelling the earth and the forest and shaping the first Hach Winik ('true people') from clay or river sand, he also set the stars in the sky, said to be flowers he scattered, and dwells at the ruined city the Lacandon call Yaxchilan, where his stone images stand. He is the chief recipient of copal incense burned in the anthropomorphic god-pots. In some narratives he decreed human mortality once the first people had multiplied. He is widely also called Nohoch Äkyum, 'Our Great Lord'."
+ },
+ {
+  "id": "lacandon_xkaleox",
+  "name": {
+   "primary": "Xkʼaleʼox",
+   "alt": [
+    "Akʼna",
+    "Xkaleox"
+   ],
+   "transliterations": {
+    "lac": "Xkʼaleʼox",
+    "etymology": "Recorded as the consort of Hachäkyum; Akʼna glosses as 'Our Mother'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "uh (moon)",
+     "script": "Latn",
+     "rom": "uh"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "generation and the domestic sphere",
+     "script": "Latn",
+     "rom": "generation and the domestic sphere"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mother-the-gods",
+    "name": "mother the gods",
+    "term": {
+     "value": "bear the children of Hachäkyum",
+     "script": "Latn",
+     "rom": "bear the children of Hachäkyum"
+    },
+    "inheritability": "unique",
+    "notes": "Mother of Hachäkyum's divine offspring, among them the singer-god Kʼayum.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "lacandon_hachakyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "lacandon_kayum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Akʼna",
+    "translation": "Our Mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Xkʼaleʼox is the consort of Hachäkyum, associated with the moon and mother of his children.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (Colección Científica 12, INAH, 1974)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, University at Albany, 1998)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Xkʼaleʼox is the consort of Hachäkyum and a mother among the gods, associated with the moon and with the domestic and generative sphere. She appears in the northern Lacandon narratives recorded by Bruce as Hachäkyum's wife and the mother of his children, among them the singer-god Kʼayum. Sources differ on her name, which is also given as Akʼna, 'Our Mother'."
+ },
+ {
+  "id": "lacandon_sukunkyum",
+  "name": {
+   "primary": "Sukunkyum",
+   "alt": [
+    "Sukunkʼyum",
+    "Sukun Kyum"
+   ],
+   "transliterations": {
+    "lac": "Sukun Kyum",
+    "etymology": "'sukun' elder brother + 'kyum' (äk yum) our lord, hence 'Our Elder Brother Lord'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lacandon_kakoch"
+  ],
+  "parentRoles": {
+   "lacandon_kakoch": "paternal"
+  },
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yalam lumil (beneath the earth)",
+     "script": "Latn",
+     "rom": "yalam lumil"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "judgment of the dead",
+     "script": "Latn",
+     "rom": "judgment of the dead"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   },
+   {
+    "sphereId": "solar",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the nocturnal sun",
+     "script": "Latn",
+     "rom": "the nocturnal sun"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "carry-the-sun-by-night",
+    "name": "carry the sun through the underworld",
+    "term": {
+     "value": "bear kʼin through the night-world",
+     "script": "Latn",
+     "rom": "bear kʼin through the night-world"
+    },
+    "inheritability": "unique",
+    "notes": "Each night receives the setting sun and carries it to the eastern horizon.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "id": "judge-the-dead",
+    "name": "judge the souls of the dead",
+    "term": {
+     "value": "weigh the souls",
+     "script": "Latn",
+     "rom": "weigh the souls"
+    },
+    "inheritability": "unique",
+    "notes": "Assesses the conduct of the dead and assigns their fate.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "id": "restrain-kisin",
+    "name": "restrain the death-god",
+    "term": {
+     "value": "hold Kisin in check",
+     "script": "Latn",
+     "rom": "hold Kisin in check"
+    },
+    "inheritability": "unique",
+    "notes": "Keeps the destructive Kisin under control in the underworld.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "lacandon_kakoch",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "lacandon_hachakyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "lacandon_akyantho",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "lacandon_kisin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "lacandon_tuup",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Sukun Kyum",
+    "translation": "Our Elder Brother Lord",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sukunkyum is the eldest god and ruler of the underworld, who carries the sun by night and judges the dead.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, Belmont, 1990)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Sukunkyum, 'Our Elder Brother Lord', is the eldest of the gods and ruler of the underworld, Yalam Lumil ('beneath the earth'). Each night he receives the setting sun and carries it through the underworld to the eastern horizon, and he judges the souls of the dead, weighing their conduct and assigning their fate. He also keeps the destructive death-god Kisin in check. As guardian of the dead he is central to Lacandon mortuary belief."
+ },
+ {
+  "id": "lacandon_kisin",
+  "name": {
+   "primary": "Kisin",
+   "alt": [
+    "Kʼisin",
+    "Cizin"
+   ],
+   "transliterations": {
+    "lac": "Kisin",
+    "etymology": "Popularly glossed 'the flatulent one' or 'the stinking one', from the root for foul odour"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "death and the punishment of souls",
+     "script": "Latn",
+     "rom": "death and the punishment of souls"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "sphereId": "earthquake",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yúk luʼum (earthquake)",
+     "script": "Latn",
+     "rom": "yuk luʼum"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Contes et mythologie des indiens lacandons (L'Harmattan, 1986)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "cause-earthquakes",
+    "name": "cause earthquakes",
+    "term": {
+     "value": "shake the earth",
+     "script": "Latn",
+     "rom": "shake the earth"
+    },
+    "inheritability": "unique",
+    "notes": "His restless movements in the underworld make the earth tremble.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Contes et mythologie des indiens lacandons (L'Harmattan, 1986)"
+     }
+    ]
+   },
+   {
+    "id": "torment-the-dead",
+    "name": "torment the souls of the wicked",
+    "term": {
+     "value": "burn the souls of the dead",
+     "script": "Latn",
+     "rom": "burn the souls of the dead"
+    },
+    "inheritability": "unique",
+    "notes": "Burns and torments the souls of the wicked in the underworld.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "lacandon_hachakyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "lacandon_sukunkyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Kisin",
+    "translation": "the stinking one",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred M. Tozzer, A Comparative Study of the Mayas and the Lacandones (Macmillan, 1907)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kisin is the Lacandon god of death and earthquakes who torments the souls of the wicked and is restrained by Sukunkyum.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Alfred M. Tozzer, A Comparative Study of the Mayas and the Lacandones (Macmillan, 1907)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kisin is the Lacandon god of death and earthquakes, dwelling in the underworld where he burns and torments the souls of the wicked. His restless movements shake the earth, and narratives hold that his eventual unbinding will bring the destruction of the world. He is the adversary of Hachäkyum and is restrained by Sukunkyum. His name is popularly glossed as 'the flatulent one' or 'the stinking one'."
+ },
+ {
+  "id": "lacandon_mensabak",
+  "name": {
+   "primary": "Mensäbäk",
+   "alt": [
+    "Metzabok",
+    "Mensabak"
+   ],
+   "transliterations": {
+    "lac": "Mensäbäk",
+    "etymology": "'men' maker + 'säbäk' soot/black powder, hence 'Maker of Powder'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "haʼ (rain)",
+     "script": "Latn",
+     "rom": "haʼ"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   },
+   {
+    "sphereId": "weather",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the blackening of the clouds",
+     "script": "Latn",
+     "rom": "the blackening of the clouds"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-the-rain",
+    "name": "bring the rain",
+    "term": {
+     "value": "scatter soot to darken the sky",
+     "script": "Latn",
+     "rom": "scatter soot to darken the sky"
+    },
+    "inheritability": "unique",
+    "notes": "Blackens the clouds with ground soot so that rain falls.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   },
+   {
+    "id": "guard-the-souls",
+    "name": "guard the marked souls",
+    "term": {
+     "value": "keep the souls painted with soot",
+     "script": "Latn",
+     "rom": "keep the souls painted with soot"
+    },
+    "inheritability": "unique",
+    "notes": "Said to guard the souls of the dead marked with the black pigment at his lake.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Contes et mythologie des indiens lacandons (L'Harmattan, 1986)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "lacandon_mensabak-sabak",
+    "kind": "substance",
+    "name": "black powder",
+    "term": {
+     "value": "säbäk",
+     "script": "Latn",
+     "rom": "sabak"
+    },
+    "role": "ground soot scattered on the clouds to release rain",
+    "notes": "The soot-like powder that gives the god his name.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Mensäbäk",
+    "translation": "Maker of Powder",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mensäbäk is the Lacandon rain god who blackens the clouds with soot and is tied to the lake and rock-paintings that bear his name.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, University at Albany, 1998)"
+     },
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Mensäbäk, 'Maker of Powder', is the Lacandon rain god, who blackens the clouds by scattering the soot-like black powder (säbäk) that his helpers grind, so releasing the rain. He is associated with the lake and cliff-paintings at the place that bears his name in the northern Lacandon territory, where he is said to keep the rain and to guard souls marked with the black pigment. The name also appears as Metzabok."
+ },
+ {
+  "id": "lacandon_akinchob",
+  "name": {
+   "primary": "Äkʼinchob",
+   "alt": [
+    "Kʼin Chob",
+    "Äk Kʼin Chob",
+    "Akinchob"
+   ],
+   "transliterations": {
+    "lac": "Äkʼinchob",
+    "etymology": "Guardian of the maize; the name is linked to kʼin (sun) and to the milpa in Bruce's vocabularies"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the milpa (cornfield)",
+     "script": "Latn",
+     "rom": "the milpa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "sphereId": "maize",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nal (maize)",
+     "script": "Latn",
+     "rom": "nal"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "protect-the-milpa",
+    "name": "protect the milpa",
+    "term": {
+     "value": "guard the cornfield",
+     "script": "Latn",
+     "rom": "guard the cornfield"
+    },
+    "inheritability": "unique",
+    "notes": "Watches over the cornfield and the cultivators who plant it.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "id": "ripen-the-maize",
+    "name": "ripen the maize",
+    "term": {
+     "value": "make the corn grow",
+     "script": "Latn",
+     "rom": "make the corn grow"
+    },
+    "inheritability": "unique",
+    "notes": "Causes the maize to grow and ripen.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "lacandon_hachakyum",
+    "notes": "Son-in-law of Hachäkyum, having married one of his daughters.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Äkʼinchob",
+    "translation": "guardian of the maize",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Äkʼinchob is the Lacandon guardian of maize and the milpa and the son-in-law of Hachäkyum.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Äkʼinchob is the Lacandon guardian of maize and the milpa (cornfield), who makes the crop grow and ripen and protects the cultivators. He is reckoned a son-in-law of Hachäkyum, having married one of the high god's daughters, and mediates between the farming Lacandon and the creator. His name is also given as Kʼin Chob."
+ },
+ {
+  "id": "lacandon_akyantho",
+  "name": {
+   "primary": "Äkyantho'",
+   "alt": [
+    "Akyantho",
+    "Äk Yantoʼ"
+   ],
+   "transliterations": {
+    "lac": "Äkyantho'",
+    "etymology": "The lord of foreigners and of trade goods in Bruce's and McGee's accounts"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lacandon_kakoch"
+  ],
+  "parentRoles": {
+   "lacandon_kakoch": "paternal"
+  },
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "foreigners",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the non-Lacandon peoples",
+     "script": "Latn",
+     "rom": "the non-Lacandon peoples"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "sphereId": "commerce",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "trade and metal goods",
+     "script": "Latn",
+     "rom": "trade and metal goods"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "sphereId": "medicine",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "remedies and healing",
+     "script": "Latn",
+     "rom": "remedies and healing"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "govern-the-foreigners",
+    "name": "govern the foreigners",
+    "term": {
+     "value": "rule the strangers",
+     "script": "Latn",
+     "rom": "rule the strangers"
+    },
+    "inheritability": "unique",
+    "notes": "Divine counterpart and lord of the ladinos and other outsiders.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "id": "dispense-remedies",
+    "name": "dispense remedies",
+    "term": {
+     "value": "give medicine to men",
+     "script": "Latn",
+     "rom": "give medicine to men"
+    },
+    "inheritability": "partial",
+    "notes": "Attributed with medicines and manufactured goods that come from outside the forest.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "lacandon_kakoch",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "lacandon_hachakyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "lacandon_sukunkyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "lacandon_hesuklistos",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Äkyantho'",
+    "translation": "lord of the foreigners",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Äkyantho' is the Lacandon god of foreigners, trade, and medicine, and the father of Hesuklistos.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Äkyantho' is the Lacandon god of foreigners and of the non-Lacandon peoples, presiding over trade, metal goods, and healing remedies. Pale or yellow in appearance, he is the father of Hesuklistos and the divine counterpart of the outsiders whose commerce and medicine the Lacandon attribute to him. He is a brother of Hachäkyum and Sukunkyum."
+ },
+ {
+  "id": "lacandon_hesuklistos",
+  "name": {
+   "primary": "Hesuklistos",
+   "alt": [
+    "Jesucristo",
+    "Hesukristo"
+   ],
+   "transliterations": {
+    "lac": "Hesuklistos",
+    "etymology": "Lacandon rendering of Spanish 'Jesucristo', Jesus Christ"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lacandon_akyantho"
+  ],
+  "parentRoles": {
+   "lacandon_akyantho": "paternal"
+  },
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "foreigners",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "god of the Mexicans",
+     "script": "Latn",
+     "rom": "god of the Mexicans"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "watch-over-the-foreigners",
+    "name": "watch over the foreigners",
+    "term": {
+     "value": "tend the outsiders",
+     "script": "Latn",
+     "rom": "tend the outsiders"
+    },
+    "inheritability": "none",
+    "notes": "Assigned a peripheral charge over the Mexicans and other outsiders.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "lacandon_akyantho",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Hesuklistos",
+    "translation": "Jesus Christ, god of the outsiders",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hesuklistos, the Lacandon Jesus Christ, is a minor deity assimilated as a son of Äkyantho' and god of the Mexicans.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, Belmont, 1990)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Hesuklistos, the Lacandon rendering of Jesus Christ, is a minor deity assimilated to the indigenous pantheon as a son of Äkyantho', god of foreigners. Identified as the god of the Mexicans and other outsiders, he is assigned a slight and peripheral role in the cosmos, subordinate to the true gods of the forest. Sources differ on the extent of his integration, which reflects historical contact with Christian missions."
+ },
+ {
+  "id": "lacandon_tuup",
+  "name": {
+   "primary": "Tʼuup",
+   "alt": [
+    "Tuup",
+    "Tʼup"
+   ],
+   "transliterations": {
+    "lac": "Tʼuup",
+    "etymology": "'the youngest' or 'the last-born', the smallest of the gods"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lacandon_sukunkyum"
+  ],
+  "parentRoles": {
+   "lacandon_sukunkyum": "paternal"
+  },
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "solar",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the tending of the sun",
+     "script": "Latn",
+     "rom": "the tending of the sun"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tend-the-sun",
+    "name": "tend the sun",
+    "term": {
+     "value": "keep the sun from burning the world",
+     "script": "Latn",
+     "rom": "keep the sun from burning the world"
+    },
+    "inheritability": "unique",
+    "notes": "Cares for the sun in the underworld cycle and moderates its heat.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Contes et mythologie des indiens lacandons (L'Harmattan, 1986)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "lacandon_sukunkyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Tʼuup",
+    "translation": "the Youngest",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tʼuup is the youngest and smallest of the gods, charged with tending the sun, and reckoned a son of Sukunkyum.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (Colección Científica 12, INAH, 1974)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Contes et mythologie des indiens lacandons (L'Harmattan, Paris, 1986)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Tʼuup, 'the Youngest', is the smallest and last-born of the gods, charged with tending the sun. In the underworld cycle he cares for the sun that Sukunkyum bears, and narratives credit him with keeping its heat from consuming the world. He is reckoned a son of Sukunkyum."
+ },
+ {
+  "id": "lacandon_kayum",
+  "name": {
+   "primary": "Kʼayum",
+   "alt": [
+    "Kayum",
+    "Kʼayoum"
+   ],
+   "transliterations": {
+    "lac": "Kʼayum",
+    "etymology": "'kʼay' song + 'yum' lord, hence 'Lord of Song'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lacandon_hachakyum",
+   "lacandon_xkaleox"
+  ],
+  "parentRoles": {
+   "lacandon_hachakyum": "paternal",
+   "lacandon_xkaleox": "maternal"
+  },
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "music",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kʼay (song)",
+     "script": "Latn",
+     "rom": "kʼay"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sing-the-sacred-songs",
+    "name": "sing the sacred songs",
+    "term": {
+     "value": "raise the songs of the gods",
+     "script": "Latn",
+     "rom": "raise the songs of the gods"
+    },
+    "inheritability": "unique",
+    "notes": "The proper voice by which the gods are addressed in ceremony.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "id": "beat-the-drum",
+    "name": "beat the drum",
+    "term": {
+     "value": "sound the ceremonial drum",
+     "script": "Latn",
+     "rom": "sound the ceremonial drum"
+    },
+    "inheritability": "partial",
+    "notes": "Accompanies the ceremonies of the gods with the drum.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "lacandon_kayum-drum",
+    "kind": "instrument",
+    "name": "ceremonial drum",
+    "term": {
+     "value": "kʼayum",
+     "script": "Latn",
+     "rom": "kʼayum"
+    },
+    "role": "drum sounded to accompany sacred song",
+    "notes": "The drum shares the god's name; its beat marks the songs of ceremony.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "lacandon_hachakyum",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "lacandon_xkaleox",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   },
+   {
+    "kind": "companion",
+    "personId": "lacandon_bol",
+    "notes": "Song and the ceremonial drink attend the same rites.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Kʼayum",
+    "translation": "Lord of Song",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kʼayum is the Lacandon god of music and sacred song, a son of Hachäkyum, who accompanies the ceremonies of the gods with the drum.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Robert D. Bruce, El Libro de Chan Kʼin (INAH, 1974)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, University at Albany, 1998)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Kʼayum, 'Lord of Song', is the Lacandon god of music and sacred singing, who accompanies the ceremonies of the gods with the drum. He is counted among the children of Hachäkyum, and his name is borne by many Lacandon men. In ritual his songs are the proper voice by which the deities are addressed."
+ },
+ {
+  "id": "lacandon_bol",
+  "name": {
+   "primary": "Bol",
+   "alt": [
+    "Bor",
+    "Boɓ"
+   ],
+   "transliterations": {
+    "lac": "Bol",
+    "etymology": "The god of balché and of drunkenness in the northern Lacandon corpus"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lacandon",
+  "primaryTradition": "Lacandon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Lacandon traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "intoxication",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kalan (drunkenness)",
+     "script": "Latn",
+     "rom": "kalan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ritual-drink",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "balché",
+     "script": "Latn",
+     "rom": "balche"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ferment-the-balche",
+    "name": "ferment the balché",
+    "term": {
+     "value": "brew the sacred drink",
+     "script": "Latn",
+     "rom": "brew the sacred drink"
+    },
+    "inheritability": "unique",
+    "notes": "Presides over the brewing trough where balché is prepared.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   },
+   {
+    "id": "induce-intoxication",
+    "name": "induce ritual intoxication",
+    "term": {
+     "value": "bring on drunkenness",
+     "script": "Latn",
+     "rom": "bring on drunkenness"
+    },
+    "inheritability": "unique",
+    "notes": "The intoxication of balché that accompanies the offering of incense.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "lacandon_bol-balche",
+    "kind": "substance",
+    "name": "balché (ritual mead)",
+    "term": {
+     "value": "balché",
+     "script": "Latn",
+     "rom": "balche"
+    },
+    "role": "fermented drink of Lonchocarpus bark and honey offered to the gods",
+    "notes": "Prepared in a hollowed canoe-trough and central to every major rite.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, 1998)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "lacandon_kayum",
+    "notes": "Drink and song attend the same ceremonies.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Bol",
+    "translation": "lord of balché",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, 1990)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Bol is the Lacandon god of balché, the fermented ritual drink, and of the intoxication it brings.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. Jon McGee, Life, Ritual, and Religion among the Lacandon Maya (Wadsworth, Belmont, 1990)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Didier Boremanse, Hach Winik: The Lacandon Maya of Chiapas (IMS, University at Albany, 1998)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Bol is the Lacandon god of balché, the fermented ceremonial drink of Lonchocarpus bark and honey, and of the intoxication it brings. He presides over the brewing trough and the offering of the drink that accompanies incense in every major rite. His name is also given as Bor."
+ }
+]
+```
