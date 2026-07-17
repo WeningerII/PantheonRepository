@@ -1,0 +1,899 @@
+Central Carolinian — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "central_carolinian_ialulep",
+  "name": {
+   "primary": "Ialulep",
+   "alt": [
+    "Yalulep",
+    "Yalulwe",
+    "Aluelap",
+    "Ialulwe",
+    "Great Spirit"
+   ],
+   "transliterations": {
+    "uli": "Ialulep",
+    "chk": "Aluelap",
+    "etymology": "from an element alu 'spirit, ghost' with lap 'great', i.e. 'the Great Spirit'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Central Carolinian",
+  "primaryTradition": "Central Carolinian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Central Carolinian traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lang",
+     "script": "Latn",
+     "rom": "lang"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Publications in Folklore Studies 13, Berkeley: describing Ialulep as the supreme sky-dwelling deity."
+     }
+    ]
+   },
+   {
+    "sphereId": "fate-and-longevity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "maiul",
+     "script": "Latn",
+     "rom": "maiul"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1966), 'The Decreasing Power of Myth on Ulithi', Journal of American Folklore 79: Ialulep as the great old man who apportions each human lifespan."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "measure-lifespans",
+    "name": "measures out the lifespan of every person",
+    "term": {
+     "value": "maiul",
+     "script": "Latn",
+     "rom": "maiul"
+    },
+    "inheritability": "unique",
+    "notes": "Each mortal life is figured as a cord or thread whose length Ialulep determines; death follows when the measure is reached.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Press."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "central_carolinian_lugeilang",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Burrows, E. G. & Spiro, M. E. (1953), An Atoll Culture: Ethnography of Ifaluk, New Haven: HRAF - the divine genealogy Aluelap > Lugeilang > Iolofath."
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "central_carolinian_ligoapup",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Goodenough, W. H. (2002), Under Heaven's Brow: Pre-Christian Religious Tradition in Chuuk, Philadelphia: American Philosophical Society - Ligoapup as a daughter of the great god."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ialulep is the supreme benevolent deity of Ulithi, envisaged as a colossal aged man dwelling in the highest sky who governs human life and death.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Publications in Folklore Studies 13, Berkeley."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Scholars identify the Ulithian Ialulep with the Chuukic great god Aluelap, the head of the sky-god lineage; sources differ over his precise relation to the navigation deities.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Burrows, E. G. & Spiro, M. E. (1953), An Atoll Culture: Ethnography of Ifaluk in the Central Carolines, New Haven: HRAF."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ialulep is the supreme deity of Ulithi and, under the cognate name Aluelap, the great god at the head of the sky-god lineage across the Chuukic outer islands. He is pictured as a benevolent, enormous, and very old man enthroned in the uppermost heaven. His central prerogative is the apportionment of human life: each person's span is figured as a measured cord, and death comes when the measure runs out. From him descend the sky god Lugeilang and, in the Chuukic creation cycle, the creatrix Ligoapup. Sources differ on whether the supreme god of the sky is to be identified with, or held distinct from, the navigation god whose names resemble his."
+ },
+ {
+  "id": "central_carolinian_lugeilang",
+  "name": {
+   "primary": "Lugeilang",
+   "alt": [
+    "Lukeleng",
+    "Lugeilan",
+    "Lugeleng",
+    "Lukelang",
+    "Luk"
+   ],
+   "transliterations": {
+    "uli": "Lugeilang",
+    "chk": "Lukeleng",
+    "etymology": "commonly parsed as luke 'middle, within' and lang 'sky', i.e. 'within the sky'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Central Carolinian",
+  "primaryTradition": "Central Carolinian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "central_carolinian_ialulep"
+  ],
+  "parentRoles": {
+   "central_carolinian_ialulep": "paternal"
+  },
+  "temporal": {
+   "era": "Central Carolinian traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lang",
+     "script": "Latn",
+     "rom": "lang"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Burrows, E. G. & Spiro, M. E. (1953), An Atoll Culture, HRAF: Lugeilang as a sky god, son of the great god and father of Iolofath."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "descend-from-sky",
+    "name": "descends from the sky to consort with mortals",
+    "term": {
+     "value": "lang",
+     "script": "Latn",
+     "rom": "lang"
+    },
+    "inheritability": "partial",
+    "notes": "By his descent to earth and union with a mortal woman he engenders the half-divine trickster Iolofath.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Press."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "central_carolinian_ialulep",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Burrows, E. G. & Spiro, M. E. (1953), An Atoll Culture, HRAF."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "central_carolinian_ligoapup",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Goodenough, W. H. (2002), Under Heaven's Brow, American Philosophical Society - Lukeleng and Ligoapup among the offspring of the great god."
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "central_carolinian_iolofath",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Lugeilang is a sky god, son of the supreme deity, occupying the middle heavens between the great god and mankind.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Burrows, E. G. & Spiro, M. E. (1953), An Atoll Culture: Ethnography of Ifaluk, HRAF."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "By union with a mortal woman Lugeilang fathers the trickster Iolofath, the pivotal figure of the Carolinian tale corpus.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Press."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Lugeilang is the sky god of the middle heavens, son of the supreme deity Ialulep (Aluelap) and, in the Chuukic genealogy, brother of the creatrix Ligoapup. He is the divine intermediary between the remote high god and the world of men: descending to earth, he takes a mortal woman and begets the trickster Iolofath, whose exploits dominate Ulithian and wider Carolinian narrative. His name is widely parsed as 'within the sky'."
+ },
+ {
+  "id": "central_carolinian_iolofath",
+  "name": {
+   "primary": "Iolofath",
+   "alt": [
+    "Olofat",
+    "Wolfat",
+    "Yelafath",
+    "Olofáth",
+    "Iolofáth"
+   ],
+   "transliterations": {
+    "uli": "Iolofath",
+    "chk": "Olofat",
+    "etymology": "the name is not securely analysed; recorded across Micronesia as Olofat, Wolfat and cognate forms"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Central Carolinian",
+  "primaryTradition": "Central Carolinian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "central_carolinian_lugeilang"
+  ],
+  "parentRoles": {
+   "central_carolinian_lugeilang": "paternal"
+  },
+  "temporal": {
+   "era": "Central Carolinian traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Olofat",
+     "script": "Latn",
+     "rom": "Olofat"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Press: Iolofath as the central trickster of the corpus."
+     }
+    ]
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "af",
+     "script": "Latn",
+     "rom": "af"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll: tales crediting the trickster with the acquisition of fire for mankind."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shape-shift",
+    "name": "changes his shape and deceives gods and men",
+    "term": {
+     "value": "Olofat",
+     "script": "Latn",
+     "rom": "Olofat"
+    },
+    "inheritability": "unique",
+    "notes": "The trickster assumes bird, animal and human guises to work his deceptions, ascending between earth and sky at will.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Press."
+     }
+    ]
+   },
+   {
+    "id": "bring-fire",
+    "name": "carries fire to mankind",
+    "term": {
+     "value": "af",
+     "script": "Latn",
+     "rom": "af"
+    },
+    "inheritability": "none",
+    "notes": "In several tales the trickster is the agent by whom fire, cooking or other benefits reach human beings.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1966), 'Discoverer-of-the-Sun: Mythology as a Reflection of Culture', Journal of American Folklore 79."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "central_carolinian_lugeilang",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Iolofath is a half-divine trickster and culture-hero, son of the sky god Lugeilang by a mortal woman, and the dominant figure of Central Carolinian narrative.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Publications in Folklore Studies 13, Berkeley."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The same trickster is attested across Micronesia under the names Olofat and Wolfat, sharing the deceiving, amoral, benefit-bringing character.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Burrows, E. G. & Spiro, M. E. (1953), An Atoll Culture, HRAF; and Chuukese tradition of Olofat."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Iolofath is the great trickster of the Central Carolines, the half-divine son of the sky god Lugeilang by a mortal woman, and the figure around whom the largest share of Ulithian and Woleaian tales revolves. Cunning, amoral and irrepressible, he moves freely between earth and the heavens, changes his shape, outwits gods and men, suffers dismemberment and revives, and in several narratives secures benefits such as fire for humankind. He is one and the same as the Chuukese Olofat and the Wolfat of neighbouring islands, making him the most widely attested mythic personality of the whole region."
+ },
+ {
+  "id": "central_carolinian_palulop",
+  "name": {
+   "primary": "Palulop",
+   "alt": [
+    "Palulap",
+    "Palulep",
+    "Pelulap",
+    "Peruruo"
+   ],
+   "transliterations": {
+    "chk": "Palulap",
+    "stw": "Palulop",
+    "etymology": "understood as palu 'navigator, master of wayfinding' with lap 'great', i.e. 'the great navigator'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Central Carolinian",
+  "primaryTradition": "Central Carolinian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Central Carolinian traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "navigation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "palu",
+     "script": "Latn",
+     "rom": "palu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gladwin, T. (1970), East Is a Big Bird: Navigation and Logic on Puluwat Atoll, Cambridge: Harvard University Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "father-the-sea-gods",
+    "name": "fathers the deities and lore of wayfinding",
+    "term": {
+     "value": "palu",
+     "script": "Latn",
+     "rom": "palu"
+    },
+    "inheritability": "full",
+    "notes": "From Palulop descend the navigation gods and, through them, the star-lore and canoe-craft of the master navigators.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Goodenough, W. H. (2002), Under Heaven's Brow, American Philosophical Society."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "central_carolinian_aluluei",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gladwin, T. (1970), East Is a Big Bird, Harvard University Press - Aluluei the son of Palulap."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Palulop is the primordial master navigator, the ancestral 'great captain' from whom the sea-gods and the whole tradition of wayfinding descend.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gladwin, T. (1970), East Is a Big Bird: Navigation and Logic on Puluwat Atoll, Cambridge: Harvard University Press."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "In the navigation mythology his son is the sea and star god Aluluei, patron of navigators.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Goodenough, W. H. (2002), Under Heaven's Brow, American Philosophical Society."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Palulop, the 'great navigator', is the primordial captain and ancestral source of Carolinian wayfinding. He stands at the head of the line of sea-gods, and his son Aluluei becomes the patron deity of navigators. Through this lineage the star-paths, canoe-craft and sailing-lore transmitted in the pwo navigator-initiation are traced back to a single divine origin. His name pairs palu, the word for a master navigator, with the augmentative lap, 'great'."
+ },
+ {
+  "id": "central_carolinian_aluluei",
+  "name": {
+   "primary": "Aluluei",
+   "alt": [
+    "Yaluluwe",
+    "Aluluu",
+    "Alluluei",
+    "Anulap"
+   ],
+   "transliterations": {
+    "chk": "Aluluei",
+    "stw": "Yaluluwe",
+    "etymology": "recorded by Chamisso (1817) from the navigator Kadu as the god of the sea and of navigation"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Central Carolinian",
+  "primaryTradition": "Central Carolinian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "central_carolinian_palulop"
+  ],
+  "parentRoles": {
+   "central_carolinian_palulop": "paternal"
+  },
+  "temporal": {
+   "era": "Central Carolinian traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "navigation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "palu",
+     "script": "Latn",
+     "rom": "palu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gladwin, T. (1970), East Is a Big Bird, Harvard University Press: Aluluei as patron god of navigators."
+     }
+    ]
+   },
+   {
+    "sphereId": "stars-and-sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "fu",
+     "script": "Latn",
+     "rom": "fu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Chamisso, A. von (1821/1836), account of the voyage of the Rurik and the testimony of the Carolinian Kadu, naming Aluluei god of the sea and stars."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guide-navigators",
+    "name": "guides the canoes of navigators across the sea",
+    "term": {
+     "value": "palu",
+     "script": "Latn",
+     "rom": "palu"
+    },
+    "inheritability": "partial",
+    "notes": "Pictured with a face upon the front and the back of his head, his numerous eyes are said to be the stars by which sailors steer.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gladwin, T. (1970), East Is a Big Bird, Harvard University Press."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "central_carolinian_palulop",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gladwin, T. (1970), East Is a Big Bird, Harvard University Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Aluluei is the god of navigation and seamanship, patron of the master navigators, son of the primordial captain Palulop.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gladwin, T. (1970), East Is a Big Bird: Navigation and Logic on Puluwat Atoll, Cambridge: Harvard University Press."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "He was recorded as early as 1817 from the Carolinian voyager Kadu as the god of the sea and stars; iconographically he bears two faces, and his many eyes are the guiding stars.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Chamisso, A. von (1821), Bemerkungen und Ansichten, in Otto von Kotzebue, Entdeckungs-Reise in die Sud-See; Kadu's testimony on Carolinian religion."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Aluluei is the god of navigation and seamanship, the patron of the palu or master navigators, and son of the primordial captain Palulop. He was among the first Carolinian deities to enter the written record, described in 1817 by the voyager Kadu to the naturalist Adelbert von Chamisso as god of the sea and of the stars. He is imagined with a face on both the front and the back of his head, and his many eyes are the stars by which a canoe is steered. In the widespread navigation myth his elder half-brothers mistreated and killed him, whereupon he became the sea-god who forever guides seafarers. His name resembles that of the supreme god so closely that some accounts conflate the two; scholars differ over whether the sea-god and the sky-god were originally one."
+ },
+ {
+  "id": "central_carolinian_ligoapup",
+  "name": {
+   "primary": "Ligoapup",
+   "alt": [
+    "Ligobubfefan",
+    "Ligoubub",
+    "Ligoupup",
+    "Ligoapwup"
+   ],
+   "transliterations": {
+    "chk": "Ligoapup",
+    "woe": "Ligoubub",
+    "etymology": "a female name formed with the Chuukic feminine prefix li-"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Central Carolinian",
+  "primaryTradition": "Central Carolinian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "central_carolinian_ialulep"
+  ],
+  "parentRoles": {
+   "central_carolinian_ialulep": "paternal"
+  },
+  "temporal": {
+   "era": "Central Carolinian traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "fonu",
+     "script": "Latn",
+     "rom": "fonu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Goodenough, W. H. (2002), Under Heaven's Brow, American Philosophical Society: the creatrix Ligoapup in the Chuukic cosmogony."
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "fonu",
+     "script": "Latn",
+     "rom": "fonu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kramer, A. (1937), Zentralkarolinen, Ergebnisse der Sudsee-Expedition."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-forth-land",
+    "name": "brings forth land and the first beings",
+    "term": {
+     "value": "fonu",
+     "script": "Latn",
+     "rom": "fonu"
+    },
+    "inheritability": "unique",
+    "notes": "As daughter of the great god she is the ancestress from whom the peopled world proceeds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Goodenough, W. H. (2002), Under Heaven's Brow, American Philosophical Society."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "central_carolinian_ialulep",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Goodenough, W. H. (2002), Under Heaven's Brow, American Philosophical Society."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "central_carolinian_lugeilang",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Goodenough, W. H. (2002), Under Heaven's Brow, American Philosophical Society."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ligoapup is the primordial creatrix and ancestress of the Chuukic cosmogony, a daughter of the great sky god.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Goodenough, W. H. (2002), Under Heaven's Brow: Pre-Christian Religious Tradition in Chuuk, Philadelphia: American Philosophical Society."
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "The same creatrix figure recurs in the outer-island cosmologies recorded by the Sudsee-Expedition.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Kramer, A. (1937), Zentralkarolinen (Ergebnisse der Sudsee-Expedition 1908-1910, II.B.10), Hamburg: Friederichsen."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ligoapup is the primordial creatrix and ancestress of the Chuukic cosmogony shared across the central Carolines. Daughter of the great sky god and sister of Lugeilang, she is the female principle from whom land and the first generations of beings proceed. Her name carries the Chuukic feminine prefix li-. Sources vary between the several outer islands over her exact role, some casting her as the mother of the divine and human lines, others more nearly as the earth itself."
+ },
+ {
+  "id": "central_carolinian_motikitik",
+  "name": {
+   "primary": "Motikitik",
+   "alt": [
+    "Mortikitik",
+    "Motikatik",
+    "Motiktik"
+   ],
+   "transliterations": {
+    "uli": "Motikitik",
+    "etymology": "the name of the island-fishing hero recorded by Lessa on Ulithi"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Central Carolinian",
+  "primaryTradition": "Central Carolinian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "temporal": {
+   "era": "Central Carolinian traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "fishing-and-provision",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gau",
+     "script": "Latn",
+     "rom": "gau"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Press: the Motikitik tale of fishing up land and food."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fish-up-land",
+    "name": "fishes islands and food up from beneath the sea",
+    "term": {
+     "value": "gau",
+     "script": "Latn",
+     "rom": "gau"
+    },
+    "inheritability": "none",
+    "notes": "The youngest of brothers, he uses a magic hook to draw up land and provisions, following his spirit-mother into the world below.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Motikitik is the Ulithian island-fishing hero, youngest of a set of brothers, whose mother is a spirit and who draws land and food from beneath the sea with a magic hook.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, University of California Publications in Folklore Studies 13, Berkeley."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The tale belongs to the Oceania-wide fisher-of-islands complex cognate with the Polynesian Maui, adapted to the Carolinian setting.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Lessa, W. A. (1961), Tales from Ulithi Atoll, comparative apparatus; and Lessa, W. A. (1980), More Tales from Ulithi Atoll, Folklore and Mythology Studies 32."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Motikitik is the island-fishing hero of Ulithian tradition, the youngest of a set of brothers whose mother is a spirit of the world below. With a magic hook he draws up land and food from beneath the sea, follows his mother into her hidden realm, and by breaking a taboo brings the flow of provisions to its ordained limit. His story is the Carolinian form of the Oceania-wide fisher-of-islands, cognate with the Polynesian Maui, recorded and analysed comparatively by Lessa."
+ },
+ {
+  "id": "central_carolinian_marespa",
+  "name": {
+   "primary": "Marespa",
+   "alt": [
+    "Marespe",
+    "Maresba"
+   ],
+   "transliterations": {
+    "woe": "Marespa",
+    "etymology": "name of a benevolent high god recorded on Ifaluk"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Central Carolinian",
+  "primaryTradition": "Central Carolinian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Central Carolinian traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "tutelary-benevolence",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "yalus",
+     "script": "Latn",
+     "rom": "yalus"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Burrows, E. G. & Spiro, M. E. (1953), An Atoll Culture: Ethnography of Ifaluk, HRAF: Marespa among the benevolent high gods of Ifaluk."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "receive-cult",
+    "name": "receives offerings at a dedicated spirit-house",
+    "term": {
+     "value": "yalus",
+     "script": "Latn",
+     "rom": "yalus"
+    },
+    "inheritability": "none",
+    "notes": "A spirit-house was maintained and offerings made to Marespa as a protecting benevolent deity of the atoll.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Burrows, E. G. & Spiro, M. E. (1953), An Atoll Culture, HRAF."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Marespa is a benevolent high god of Ifaluk, to whom a spirit-house and offerings were dedicated; some accounts hold that he was once a man who became a god.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Burrows, E. G. & Spiro, M. E. (1953), An Atoll Culture: Ethnography of Ifaluk in the Central Carolines, New Haven: HRAF."
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "On Ifaluk the benevolent gods and the ancestral spirits are distinguished from the malevolent ghosts, the alus, that afflict the living.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Spiro, M. E. (1952), 'Ghosts, Ifaluk, and Teleological Functionalism', American Anthropologist 54."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Marespa is numbered among the great benevolent deities of Ifaluk, a protecting high god to whom a spirit-house was kept and offerings made. Some accounts recorded by Burrows and Spiro hold that he had once been a man who was raised to divinity, which set him among the tutelary gods rather than the malevolent alus, the harmful ghosts whose affliction of the living is the central preoccupation of Ifaluk religion. He exemplifies the benevolent side of a spirit world sharply divided between protecting gods and dangerous dead."
+ }
+]
+```
