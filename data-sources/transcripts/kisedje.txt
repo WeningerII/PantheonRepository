@@ -1,0 +1,923 @@
+Kĩsêdjê — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "kisedje_karo",
+  "name": {
+   "primary": "Me Karõ",
+   "alt": [
+    "Spirits of the Dead",
+    "The Karõ"
+   ],
+   "transliterations": {
+    "suy": "karõ",
+    "etymology": "'spirit, shadow, image, echo'; the aspect of a person that departs the body at death"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death-and-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "spirit of the dead",
+     "script": "Latin",
+     "rom": "karõ"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil: The Suyá Indians of Mato Grosso. Harvard University Press, ch. on person and soul."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "depart-the-body",
+    "name": "departs the body at death",
+    "term": {
+     "value": "karõ leaves",
+     "script": "Latin",
+     "rom": "karõ"
+    },
+    "inheritability": "none",
+    "notes": "At death the karõ separates from the corpse and travels to the settlement of the dead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil. Harvard University Press."
+     }
+    ]
+   },
+   {
+    "id": "dwell-in-village-of-the-dead",
+    "name": "dwells in the village of the dead",
+    "term": {
+     "value": "village of the karõ",
+     "script": "Latin",
+     "rom": "me karõ"
+    },
+    "inheritability": "none",
+    "notes": "The dead re-form a society of their own, mirroring the living but set apart from it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing. University of Illinois Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The karõ is the spirit or shadow-image that survives bodily death and joins a community of the dead.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil: The Suyá Indians of Mato Grosso. Harvard University Press."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Notions of soul, hearing and spirit underpin Suyá understandings of song and personhood.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing: A Musical Anthropology of an Amazonian People. University of Illinois Press."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The karõ is the spirit, shadow or image that constitutes a person's inner aspect and separates from the body at death. In Kĩsêdjê thought the dead do not vanish but re-form a parallel community, the village of the karõ, which mirrors the world of the living while remaining categorically apart from it. Because the karõ is bound up with the faculties of hearing and of song, the boundary between the living and the dead is porous to ritual knowledge: certain songs and powers are understood to travel across it. The concept anchors Kĩsêdjê eschatology and, through its links to sorcery and to the acquisition of song, connects the domains of death, music and witchcraft."
+ },
+ {
+  "id": "kisedje_witch",
+  "name": {
+   "primary": "The Witch",
+   "alt": [
+    "The Sorcerer",
+    "Wã927 the witch-being"
+   ],
+   "transliterations": {
+    "en": "witch",
+    "etymology": "Kĩsêdjê category of the human being who harbours lethal, transformative power"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "witchcraft-and-sorcery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "witch",
+     "script": "Latin",
+     "rom": "witch"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil, ch. on witchcraft and social control. Harvard University Press."
+     }
+    ]
+   },
+   {
+    "sphereId": "death-and-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cause of death",
+     "script": "Latin",
+     "rom": "witch"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil. Harvard University Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "cause-illness-and-death",
+    "name": "causes illness and death",
+    "term": {
+     "value": "sends sickness",
+     "script": "Latin",
+     "rom": "witch"
+    },
+    "inheritability": "partial",
+    "notes": "Nearly all serious illness and death is attributed to a witch's action rather than to natural cause.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil. Harvard University Press."
+     }
+    ]
+   },
+   {
+    "id": "send-out-a-double",
+    "name": "sends out a nocturnal double",
+    "term": {
+     "value": "flies at night",
+     "script": "Latin",
+     "rom": "witch"
+    },
+    "inheritability": "partial",
+    "notes": "The witch's abnormal inner substance lets it act at a distance and travel unseen; the condition is thought innate and largely uncontrollable.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil. Harvard University Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The witch is a person carrying an abnormal, lethal substance, held responsible for most death and misfortune; accusation and execution of witches structured Suyá politics.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil: The Suyá Indians of Mato Grosso. Harvard University Press."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Witchcraft, hearing and the boundaries of moral society are central to Suyá cosmology and to the interpretation of anomalous power.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing. University of Illinois Press."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "In Kĩsêdjê cosmology the witch is not primarily a practitioner who learns spells but a kind of person who carries a lethal, transformative substance within. This inner anomaly permits action at a distance, nocturnal travel and the sending of sickness, and it is to witches, rather than to impersonal misfortune, that nearly all serious illness and death is attributed. The witch is the dark counterpart of the moral, fully social person: where proper Kĩsêdjê life is oriented to collective song and the plaza, the witch's power turns inward, secret and antisocial. Because the condition is understood as innate and difficult to control, accusation, ordeal and the killing of suspected witches historically shaped village politics. Sources treat the figure both as a social type and as a cosmological principle of anomalous, deadly transformation."
+ },
+ {
+  "id": "kisedje_mouse",
+  "name": {
+   "primary": "The Mouse",
+   "alt": [
+    "The Rat",
+    "Donor of the Mouse Ceremony"
+   ],
+   "transliterations": {
+    "en": "mouse",
+    "etymology": "the rodent from whose people the Kĩsêdjê are said to have received a major ceremony"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "music-and-ceremony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "origin of ceremonial song",
+     "script": "Latin",
+     "rom": "mouse"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing: A Musical Anthropology of an Amazonian People. University of Illinois Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-songs-and-ceremony",
+    "name": "gives songs and ceremony to humans",
+    "term": {
+     "value": "teaches the mouse songs",
+     "script": "Latin",
+     "rom": "mouse"
+    },
+    "inheritability": "none",
+    "notes": "A man who lived among the mouse-people learned their songs and brought the ceremony back to the Kĩsêdjê.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing. University of Illinois Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Kĩsêdjê song and ceremony are understood to originate outside human society, learned from animal, plant and enemy others; the mouse is a named donor associated with a major seasonal ceremony.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing: A Musical Anthropology of an Amazonian People. University of Illinois Press."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "For the Kĩsêdjê, song does not originate within human society but is acquired from beings outside it, and the mouse is among the most important of these donors. Narratives tell of a man who came to live among the mouse-people and learned their songs, carrying the knowledge back to the village where it became a recurring ceremony tied to the agricultural season. The mouse thus exemplifies a general cosmological principle Seeger drew out of Kĩsêdjê music: creativity and ceremony flow inward from the animal and spirit world, and a person who can 'hear' such songs mediates between the human community and its powerful others. The figure is inseparable from the ceremony that bears its stamp and from the wider Kĩsêdjê theory of where song comes from."
+ },
+ {
+  "id": "kisedje_bee",
+  "name": {
+   "primary": "The Bee",
+   "alt": [
+    "The Bees and Wasps",
+    "Honey-Donor of Song"
+   ],
+   "transliterations": {
+    "en": "bee",
+    "etymology": "stinging honey-making insects counted among the donors of Kĩsêdjê song"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "music-and-ceremony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "origin of song",
+     "script": "Latin",
+     "rom": "bee"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing. University of Illinois Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-songs",
+    "name": "gives songs to humans",
+    "term": {
+     "value": "source of bee songs",
+     "script": "Latin",
+     "rom": "bee"
+    },
+    "inheritability": "none",
+    "notes": "Bees and wasps are among the natural species whose songs the Kĩsêdjê incorporate into ceremony.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing. University of Illinois Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Insects, and bees in particular, figure among the non-human species credited as sources of Kĩsêdjê song, illustrating the origin of music outside human society.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing: A Musical Anthropology of an Amazonian People. University of Illinois Press."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Among the non-human donors of Kĩsêdjê song, the bee and its stinging kin occupy a place beside the mouse and the fish. As with other song-origin beings, the honey insects are understood to possess songs of their own that enter human ceremony through the mediation of those able to receive them. The bee thus belongs to the broader Kĩsêdjê principle that music is gathered from the powerful others of the forest and river rather than composed from within the village. Its association with honey ties it to seasonal abundance, reinforcing the link between the acquisition of song and the cycles of the natural world on which Kĩsêdjê ceremonial life turns."
+ },
+ {
+  "id": "kisedje_fish",
+  "name": {
+   "primary": "The Fish",
+   "alt": [
+    "The Fish-People",
+    "Aquatic Donor of Song"
+   ],
+   "transliterations": {
+    "en": "fish",
+    "etymology": "the river fish counted among the donors of Kĩsêdjê song"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "music-and-ceremony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "origin of song",
+     "script": "Latin",
+     "rom": "fish"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing. University of Illinois Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-songs",
+    "name": "gives songs to humans",
+    "term": {
+     "value": "source of fish songs",
+     "script": "Latin",
+     "rom": "fish"
+    },
+    "inheritability": "none",
+    "notes": "Fish are among the aquatic species from which the Kĩsêdjê are said to have taken songs.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing. University of Illinois Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Fish and other river beings are credited among the sources of Kĩsêdjê song, part of a musical cosmology in which songs are received from non-human others.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing: A Musical Anthropology of an Amazonian People. University of Illinois Press."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The fish belong to the river's contribution to Kĩsêdjê song. Like the mouse and the bee, the fish-people are held to possess songs that pass into human ceremony through those able to hear them, extending the Kĩsêdjê map of musical origins from forest and garden to the waters of the Xingu. Their inclusion underlines a consistent principle in Kĩsêdjê thought: the world's animal and spirit others are the true composers, and human ceremonial life is an ongoing gathering-in of their voices. Fish songs thus sit within a single cosmological economy of music that spans land, air and water."
+ },
+ {
+  "id": "kisedje_sun",
+  "name": {
+   "primary": "Sun",
+   "alt": [
+    "The Sun demiurge"
+   ],
+   "transliterations": {
+    "en": "sun",
+    "etymology": "the celestial luminary, a culture-hero of the Northern Jê demiurge pair"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "celestial-order",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the sun and the ordering of the world",
+     "script": "Latin",
+     "rom": "sun"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "order-the-world",
+    "name": "orders and fixes the shape of the world",
+    "term": {
+     "value": "world-ordering",
+     "script": "Latin",
+     "rom": "sun"
+    },
+    "inheritability": "partial",
+    "notes": "In the Northern Jê demiurge cycle Sun and his companion establish features of the world and the terms of human life.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kisedje_moon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ],
+    "notes": "Sun and Moon act as the paired demiurges of the Northern Jê cycle."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the elder of the two",
+    "translation": "the elder of the two",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sun forms one half of the paired demiurge culture-heroes documented across the Northern Jê, whose adventures order the world and set the terms of human existence.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "The Suyá share the wider Central and Northern Jê mythic patrimony within which the Sun and Moon demiurges appear.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil: The Suyá Indians of Mato Grosso. Harvard University Press."
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Sun is the elder of the paired demiurges whose exploits pervade Northern Jê mythology, of which the Kĩsêdjê form a part. In the shared cycle Sun and his companion Moon travel through a still-forming world, and their deeds and quarrels fix its features and settle the hard conditions of human life, including mortality. Sun is typically the cannier and more successful of the two, Moon the imitator whose blunders bring difficulty into the world. Sources differ on how far the Kĩsêdjê elaborate this cosmogonic pair relative to their neighbours and relative to their more distinctive emphasis on the acquisition of song and ceremony, but the demiurge motif is well attested for the Northern Jê to whom the Kĩsêdjê belong."
+ },
+ {
+  "id": "kisedje_moon",
+  "name": {
+   "primary": "Moon",
+   "alt": [
+    "The Moon demiurge"
+   ],
+   "transliterations": {
+    "en": "moon",
+    "etymology": "the lunar luminary, companion and foil of Sun in the Northern Jê demiurge pair"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "celestial-order",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the moon and the flaws of the world",
+     "script": "Latin",
+     "rom": "moon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "imitate-the-sun",
+    "name": "imitates the sun and brings hardship",
+    "term": {
+     "value": "botched imitation",
+     "script": "Latin",
+     "rom": "moon"
+    },
+    "inheritability": "partial",
+    "notes": "Moon's failed copying of Sun's deeds is a stock cause of the world's hardships in the Jê cycle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kisedje_sun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ],
+    "notes": "Moon is the companion and foil of Sun in the demiurge cycle."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Moon is the companion and imitative foil of Sun in the Northern Jê demiurge cycle, his blunders accounting for hardship and disorder in the world.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "The Kĩsêdjê belong to the Northern Jê and share its broad mythic framework including the celestial demiurge pair.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil. Harvard University Press."
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Moon is the companion of Sun and his opposite in temperament: where Sun succeeds, Moon copies and fails, and it is often through his clumsy imitation that hardship, blemish and disorder enter the world of the Northern Jê. The pair travel and quarrel through a world still taking shape, and their contrasting fortunes account for many of its features. As with Sun, sources differ on the degree to which the Kĩsêdjê develop this cosmogony compared with neighbouring Jê peoples, given the Kĩsêdjê emphasis on ceremony and song; but Moon is securely part of the demiurge tradition of the family to which they belong."
+ },
+ {
+  "id": "kisedje_jaguar",
+  "name": {
+   "primary": "The Jaguar",
+   "alt": [
+    "The Fire-Owner",
+    "Original Owner of Fire"
+   ],
+   "transliterations": {
+    "en": "jaguar",
+    "etymology": "the great cat who first possessed cooking fire in the Jê myth of its theft"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the owner of fire",
+     "script": "Latin",
+     "rom": "jaguar"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1978. Folk Literature of the Gê Indians, Vol. 1. UCLA Latin American Center."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "keep-fire",
+    "name": "keeps the first cooking fire",
+    "term": {
+     "value": "owner of fire",
+     "script": "Latin",
+     "rom": "jaguar"
+    },
+    "inheritability": "none",
+    "notes": "In the pan-Jê myth the jaguar alone possessed fire before humans obtained it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1978. Folk Literature of the Gê Indians, Vol. 1. UCLA Latin American Center."
+     }
+    ]
+   },
+   {
+    "id": "yield-fire-to-humans",
+    "name": "yields fire to humankind",
+    "term": {
+     "value": "loss of fire",
+     "script": "Latin",
+     "rom": "jaguar"
+    },
+    "inheritability": "none",
+    "notes": "A boy taken in by the jaguar becomes the means by which humans carry fire from the jaguar's house to the village.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1978. Folk Literature of the Gê Indians, Vol. 1. UCLA Latin American Center."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The theft of fire from the jaguar is a foundational myth across the Jê, including the Suyá; the jaguar is the original owner of cooking fire that humans acquire through a captured boy.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1978. Folk Literature of the Gê Indians, Vol. 1. UCLA Latin American Center."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "In the Jê myth of the origin of fire, of which the Suyá partake, the jaguar was once the sole owner of cooking fire while humans ate their food raw or warmed only by the sun. A boy, abandoned or lost, is taken in by the jaguar and raised in its house; from there humankind learns of the fire and carries it away, so that cooking and its attendant social order become human possessions. The jaguar is thereafter both benefactor and threatened predator, and its ambivalent gift marks the passage from a rawer to a properly human condition. The narrative is one of the most widely shared in Jê mythology and situates the Kĩsêdjê within that broad tradition."
+ },
+ {
+  "id": "kisedje_star_woman",
+  "name": {
+   "primary": "Star Woman",
+   "alt": [
+    "The Star Wife",
+    "Bringer of Cultivated Plants"
+   ],
+   "transliterations": {
+    "en": "star woman",
+    "etymology": "a woman descended from the sky who brings cultivated plants, above all maize"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "cultivation-and-plenty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "origin of cultivated plants",
+     "script": "Latin",
+     "rom": "star woman"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-cultivated-plants",
+    "name": "brings cultivated plants to humankind",
+    "term": {
+     "value": "gift of maize",
+     "script": "Latin",
+     "rom": "star woman"
+    },
+    "inheritability": "none",
+    "notes": "The star who takes a human husband reveals maize and other cultivens, ending an age of poorer food.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ]
+   },
+   {
+    "id": "descend-from-the-sky",
+    "name": "descends from the sky to marry a human",
+    "term": {
+     "value": "star descends",
+     "script": "Latin",
+     "rom": "star woman"
+    },
+    "inheritability": "none",
+    "notes": "Her descent and marriage frame the introduction of agriculture in the Jê corpus.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The Star Woman who descends to marry a human and introduces maize and cultivated plants is a widely attested Jê origin-of-agriculture myth shared by the Suyá.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wilbert, J. & Simoneau, K. (eds.) 1984. Folk Literature of the Gê Indians, Vol. 2. UCLA Latin American Center."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "In the Jê myth of the origin of agriculture, a star takes the form of a woman, descends from the sky and marries a human man. Through her the people learn of maize and the other cultivated plants, which until then were unknown or hidden, ending an age in which food was poor or gathered wild. Her celestial origin marks cultivation as a gift from beyond the human world, and her marriage into the community is the channel by which that gift is domesticated. Attested across the Jê and belonging to the Kĩsêdjê share of that patrimony, the Star Woman complements the fire myth: together they account for the two pillars of settled life, the cooked and the cultivated. Sources vary in the details of her arrival and of the plants she reveals."
+ },
+ {
+  "id": "kisedje_first_ancestor",
+  "name": {
+   "primary": "The First Kĩsêdjê",
+   "alt": [
+    "The Original People",
+    "The Emergent Ancestors"
+   ],
+   "transliterations": {
+    "suy": "Kĩsêdjê",
+    "etymology": "the primordial people from whom the Kĩsêdjê descend and take their name"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kĩsêdjê",
+  "primaryTradition": "Kĩsêdjê",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kĩsêdjê traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "origins-and-peoplehood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "origin of the people",
+     "script": "Latin",
+     "rom": "Kĩsêdjê"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil: The Suyá Indians of Mato Grosso. Harvard University Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-the-people",
+    "name": "founds the Kĩsêdjê people and their way of life",
+    "term": {
+     "value": "founding of the people",
+     "script": "Latin",
+     "rom": "Kĩsêdjê"
+    },
+    "inheritability": "full",
+    "notes": "The primordial ancestors establish the village, its plaza and the practices later acquired from other beings.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil. Harvard University Press."
+     }
+    ]
+   },
+   {
+    "id": "acquire-culture-from-others",
+    "name": "acquires names, songs and ceremonies from other peoples and beings",
+    "term": {
+     "value": "gathering-in of culture",
+     "script": "Latin",
+     "rom": "Kĩsêdjê"
+    },
+    "inheritability": "full",
+    "notes": "Kĩsêdjê self-understanding stresses that much of their culture was taken from enemies, neighbours and animals rather than possessed from the first.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 2004 [1987]. Why Suyá Sing. University of Illinois Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Kĩsêdjê origin narratives and self-understanding emphasise a founding people who established village life and then progressively acquired names, songs and ceremonies from enemies, neighbours and non-human beings.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seeger, A. 1981. Nature and Society in Central Brazil: The Suyá Indians of Mato Grosso. Harvard University Press."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The name Kĩsêdjê and Suyá ethnohistory are documented in the ethnographic record from first contact by Karl von den Steinen (1884) onward.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Von den Steinen, K. 1886. Durch Central-Brasilien. Leipzig: F. A. Brockhaus."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The first Kĩsêdjê are the primordial people who established the village with its central plaza and men's house and set the pattern of proper social life. Distinctively, Kĩsêdjê self-understanding does not present their culture as complete from the beginning: a recurring theme, drawn out especially in Seeger's work, is that names, songs, ceremonies and much else were taken over time from enemies, from neighbouring peoples of the Upper Xingu, and from animals and spirits. The founding ancestors thus inaugurate not a fixed order but an ongoing capacity to gather in the powers of others and make them the community's own. This origin frames the Kĩsêdjê as a people constituted through incorporation, and it underlies both their ceremonial life and their historical openness to the wider Xinguan world into which they moved."
+ }
+]
+```
