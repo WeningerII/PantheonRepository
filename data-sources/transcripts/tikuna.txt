@@ -1,0 +1,1356 @@
+Barasana/Uitoto/Tikuna Amazonian tradition package — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "tikuna_ngutapa",
+  "name": {
+   "primary": "Ngutapa",
+   "alt": [
+    "Nutapa",
+    "Ngutapã"
+   ],
+   "transliterations": {
+    "tca": "Ngutapa",
+    "etymology": "the primordial being from whose body the culture heroes issued"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ngutapa",
+     "script": "Latin",
+     "rom": "Ngutapa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Curt Nimuendaju, The Tukuna, ed. Robert H. Lowie, University of California Publications in American Archaeology and Ethnology 45 (Berkeley: University of California Press, 1952)."
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia e mitologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "generate-offspring-from-body",
+    "name": "brings forth the primordial siblings from his own swollen knees",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "unique",
+    "notes": "After his wife sent wasps that stung and swelled his knees, the two culture-hero brothers and their two sisters emerged from them, the right knee bearing one pair and the left the other.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna e a festa da moca nova', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "tikuna_yoi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "born from the right knee"
+   },
+   {
+    "kind": "parent",
+    "personId": "tikuna_ipi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "born from the left knee"
+   },
+   {
+    "kind": "parent",
+    "personId": "tikuna_mowatcha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "sister born with Yoi"
+   },
+   {
+    "kind": "parent",
+    "personId": "tikuna_aikuna",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "sister born with Ipi"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ngutapa is the first man of Tikuna myth, from whose stung and swollen knees the culture-hero brothers Yoi and Ipi and their sisters Mowatcha and Aicuna were born.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Curt Nimuendaju, The Tukuna, ed. Robert H. Lowie (Berkeley: University of California Press, 1952)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna e a festa da moca nova', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Ngutapa is the primordial being of Tikuna cosmogony, the ancestor who stands before the ordered world. In the canonical account he was bathing in a stream when wasps dispatched by his wife stung his knees, which swelled enormously; from the right knee issued the elder hero Yoi together with his sister Mowatcha, and from the left the younger hero Ipi with his sister Aicuna, each pair already occupied with the arts of blowgun, net, bow and weaving. From his body thus descends the whole subsequent generation of world-shapers. Sources differ over whether Ngutapa is better understood as a creator deity or as a primordial ancestor, since his generative act rather than any sustained rule defines him."
+ },
+ {
+  "id": "tikuna_yoi",
+  "name": {
+   "primary": "Yoi",
+   "alt": [
+    "Yo'i",
+    "Dyoi",
+    "Yoxi",
+    "Yoï"
+   ],
+   "transliterations": {
+    "tca": "Yo'i",
+    "etymology": "the elder, civilizing culture hero; glossed 'the one who knows / the advised one'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tikuna_ngutapa"
+  ],
+  "parentRoles": {
+   "tikuna_ngutapa": "paternal"
+  },
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Magüta",
+     "script": "Latin",
+     "rom": "Maguta"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Curt Nimuendaju, The Tukuna, ed. Robert H. Lowie (Berkeley: University of California Press, 1952)."
+     }
+    ]
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Eware",
+     "script": "Latin",
+     "rom": "Eware"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fish-humanity-from-the-water",
+    "name": "fishes the first Tikuna out of the Eware creek with hook and bait",
+    "term": {
+     "value": "magü",
+     "script": "Latin",
+     "rom": "magu"
+    },
+    "inheritability": "unique",
+    "notes": "Casting a line baited with manioc into the red waters of the Eware, he drew the ancestral people from the river; the fished-out ones are called Magüta, 'those fished with a rod'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "id": "fell-the-world-tree",
+    "name": "fells the sky-covering tree Wone, releasing the waters",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "unique",
+    "notes": "By cutting down the immense tree whose crown darkened the sky he set the alternation of day and night and turned its trunk and branches into the Solimoes and its tributaries.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "id": "institute-clans-and-law",
+    "name": "establishes clans, marriage rule, laws and customs",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "unique",
+    "notes": "Unable at first to tell the fished-out people apart, he had each drink the broth of a cooked bird so that each discovered its clan, and ordained that the two resulting moieties intermarry.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Curt Nimuendaju, The Tukuna, ed. Robert H. Lowie (Berkeley: University of California Press, 1952)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tikuna_yoi-fishing-rod",
+    "kind": "instrument",
+    "name": "baited fishing line",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "role": "wielder; the rod with which Yoi drew the Magüta from the Eware",
+    "notes": "Baited with pieces of manioc, the line brought the ancestral people up out of the water as fish that became human.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "tikuna_ngutapa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "born from the right knee"
+   },
+   {
+    "kind": "twin",
+    "personId": "tikuna_ipi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "his mischievous counterpart"
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_mowatcha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_aikuna",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "tikuna_tetchi_aru_ngui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "el que sabe",
+    "translation": "the one who knows",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Autoridades Tradicionales Indigenas de Colombia (Gobierno Mayor), 'Tikuna Yoi', gobiernomayor.org.co."
+     }
+    ]
+   },
+   {
+    "original": "el aconsejado",
+    "translation": "the advised one",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Autoridades Tradicionales Indigenas de Colombia (Gobierno Mayor), 'Tikuna Yoi', gobiernomayor.org.co."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Yoi is the elder culture hero who fished the first Tikuna (the Maguta) from the Eware creek and established clans, laws and customs.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Curt Nimuendaju, The Tukuna, ed. Robert H. Lowie (Berkeley: University of California Press, 1952)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Yoi felled the immense tree Wone, whose fall created night and day and became the Solimoes and its tributaries.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Yoi is the principal civilizing hero of the Tikuna, the elder of the two brothers born from Ngutapa's knees and the prudent, deliberate counterpart to his brother Ipi. He is credited with the very origin of the Tikuna people, whom he fished from the reddened waters of the Eware creek with a baited line; the ones drawn out are the Magüta, 'those fished with a rod', a name the people still use for themselves. To the confused multitude he gave order, distributing them into clans and moieties by having each drink a cooked broth that revealed its affiliation, and decreeing that the two halves marry one another. He is further said to have felled the sky-darkening tree Wone, thereby instituting the succession of day and night and transforming its wood into the river system of the upper Amazon. Sources treat him at once as a creator deity and as the founding culture hero of ritual and social law."
+ },
+ {
+  "id": "tikuna_ipi",
+  "name": {
+   "primary": "Ipi",
+   "alt": [
+    "Ipí",
+    "Epi",
+    "Ipã"
+   ],
+   "transliterations": {
+    "tca": "Ipi",
+    "etymology": "the younger, trickster culture hero; associated with disorder and transgression"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tikuna_ngutapa"
+  ],
+  "parentRoles": {
+   "tikuna_ngutapa": "paternal"
+  },
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "é",
+     "script": "Latin",
+     "rom": "e (huito, Genipa americana)"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A festa da moca nova', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "beget-through-transgression",
+    "name": "begets offspring by seduction and transgression",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "He seduced the woman associated with his brother and, in a further account, lay with a sister, acts by which the primordial immortality is said to have begun to fail.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "id": "grate-himself-into-origin",
+    "name": "grates his own body while scraping huito, seeding the origin of peoples",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "unique",
+    "notes": "Punished by Yoi to grate huito, Ipi grated his own flesh; the shavings cast into the water became the fish from which the Tikuna and other peoples were fished out.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tikuna_ipi-huito",
+    "kind": "plant",
+    "name": "huito",
+    "term": {
+     "value": "é",
+     "script": "Latin",
+     "rom": "e"
+    },
+    "role": "the genipap (Genipa americana) Ipi was set to grate and on which he grated himself",
+    "notes": "The black dye of huito, with which Tikuna girls are painted at the puberty festival, commemorates Ipi's self-grating in mythical time.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A festa da moca nova', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "tikuna_ngutapa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "born from the left knee"
+   },
+   {
+    "kind": "twin",
+    "personId": "tikuna_yoi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "his prudent counterpart"
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_mowatcha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_aikuna",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "kind": "lover",
+    "personId": "tikuna_umari_daughter",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Portal de lenguas y literaturas de Colombia (Instituto Caro y Cuervo), 'Mito de origen de los ticunas', lenguasyliteraturasnativas.caroycuervo.gov.co."
+     }
+    ],
+    "notes": "he impregnated the woman born of the umari fruit"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "el travieso",
+    "translation": "the trickster / the mischievous one",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Autoridades Tradicionales Indigenas de Colombia (Gobierno Mayor), 'Tikuna Yoi', gobiernomayor.org.co."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ipi is the younger culture hero, a disobedient trickster whose transgressions and self-grating of huito lie at the origin of the peoples and of the puberty festival's black body-paint.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Curt Nimuendaju, The Tukuna, ed. Robert H. Lowie (Berkeley: University of California Press, 1952)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna e a festa da moca nova', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Ipi is the younger of the two hero-brothers, born from Ngutapa's left knee, and stands throughout Tikuna narrative as the emblem of disorder against his brother Yoi's ordering wisdom. Rash, disobedient and given to transgression, he seduced the woman bound to Yoi and, in another strand of the tradition, lay with a sister, acts through which the original human immortality is said to have begun to decay. Set by Yoi to grate huito as punishment, he grated his own flesh; the scrapings thrown into the water became the fish from which the Tikuna and neighbouring peoples were drawn. Because Tikuna girls are painted black with huito at their puberty seclusion, that rite is remembered as a commemoration of Ipi's self-grating in the first times. In the separation of the brothers Ipi was tricked into departing westward while Yoi went east, a parting that fixed the moiety division of Tikuna society."
+ },
+ {
+  "id": "tikuna_mowatcha",
+  "name": {
+   "primary": "Mowatcha",
+   "alt": [
+    "Mavütcha",
+    "Mowacha",
+    "Mowatchi"
+   ],
+   "transliterations": {
+    "tca": "Mowatcha",
+    "etymology": "sister born together with Yoi from the right knee"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tikuna_ngutapa"
+  ],
+  "parentRoles": {
+   "tikuna_ngutapa": "paternal"
+  },
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "craft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tucum",
+     "script": "Latin",
+     "rom": "tucum"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "weave-carrying-bag",
+    "name": "weaves a carrying-bag of tucum fibre",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "notes": "In the moment of her birth from Ngutapa's knee she was already twisting a bag of tucum palm fibre, an emblem of women's textile work.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tikuna_mowatcha-tucum-bag",
+    "kind": "object",
+    "name": "tucum carrying-bag",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "role": "maker; woven at the instant of her birth",
+    "notes": "The bag of tucum fibre she was weaving marks her as patroness of women's plaiting and net-work.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "tikuna_ngutapa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "born from the right knee with Yoi"
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_yoi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_ipi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_aikuna",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mowatcha is one of the two primordial sisters, born from Ngutapa's right knee together with Yoi and depicted weaving tucum fibre at the moment of her birth.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Curt Nimuendaju, The Tukuna, ed. Robert H. Lowie (Berkeley: University of California Press, 1952)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna e a festa da moca nova', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Mowatcha is one of the two primordial sisters of the Tikuna origin myth, born from the right knee of Ngutapa alongside the elder hero Yoi. In the account of the knees she emerges already engaged in women's work, twisting a bag of tucum palm fibre, so that she and her sister embody the beginnings of feminine craft as the brothers embody hunting and fishing. Though she plays a lesser narrative role than the hero-brothers, her presence at the four-fold birth is integral to the balanced pairing of the sexes at the origin of the Tikuna world, and her name recurs in the ritual songs of the girls' puberty festival."
+ },
+ {
+  "id": "tikuna_aikuna",
+  "name": {
+   "primary": "Aicüna",
+   "alt": [
+    "Aiküna",
+    "Aikɨna",
+    "Aikia",
+    "Aicuna"
+   ],
+   "transliterations": {
+    "tca": "Aicüna",
+    "etymology": "sister born together with Ipi from the left knee"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tikuna_ngutapa"
+  ],
+  "parentRoles": {
+   "tikuna_ngutapa": "paternal"
+  },
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "craft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "weave-fishing-net",
+    "name": "weaves a fishing net at the moment of her birth",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "notes": "As she issued from Ngutapa's knee she was busy weaving a net, complement to the blowgun and bow the brothers were fashioning.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Priscila Faulhaber, 'Ticuna knowledge, Worecu stars and sky movements', Proceedings of the International Astronomical Union 7, S278 (2011): 58-65."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "tikuna_ngutapa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "notes": "born from the left knee with Ipi"
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_yoi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_ipi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "tikuna_mowatcha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Aicuna is the second primordial sister, born from Ngutapa's left knee with Ipi and shown weaving a net at her birth.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Curt Nimuendaju, The Tukuna, ed. Robert H. Lowie (Berkeley: University of California Press, 1952)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Priscila Faulhaber, 'Ticuna knowledge, Worecu stars and sky movements', Proceedings of the International Astronomical Union 7, S278 (2011): 58-65."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Aicüna is the second of the two primordial sisters, born from the left knee of Ngutapa together with the younger hero Ipi. Like her sister Mowatcha she appears at the instant of her birth already occupied with women's textile labour, weaving a net while the brothers ready blowgun and bow, so that the four-fold emergence from the knees sets out the complementary crafts of men and women at the beginning of the world. She figures in the astronomical and ritual traditions recorded for the Tikuna, where the primordial sisters are woven into the imagery of the girls' initiation and its stars."
+ },
+ {
+  "id": "tikuna_tetchi_aru_ngui",
+  "name": {
+   "primary": "Tetchi arü Ngu'i",
+   "alt": [
+    "Tetchi aru Ngui",
+    "Tetchiarü Ngü'i"
+   ],
+   "transliterations": {
+    "tca": "Tetchi arü Ngu'i",
+    "etymology": "the wife of Yoi who cast the seed-and-flesh mixture into the Eware"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Eware",
+     "script": "Latin",
+     "rom": "Eware"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "episodic",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "cast-the-mixture-into-the-river",
+    "name": "casts the mixture of blood, flesh and seeds into the Eware, where it becomes fish",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "She threw the mixture into the Eware; it turned to fish, and, regretting the loss, she asked Yoi to fish the ancestral people back out of the water.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tikuna_yoi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tetchi arü Ngu'i, the wife of Yoi, threw the mixture of blood, flesh and seeds into the Eware where it became fish, then had Yoi fish the people back out.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: A origem dos Ticuna', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Tetchi arü Ngu'i is named in the origin narrative as the wife of the hero Yoi and the immediate cause of the fishing that peopled the world. It was she who cast the mixture of blood, flesh and seeds into the reddened waters of the Eware creek, where it turned into fish; grieving that she had thrown it away, she asked her husband to draw it back out, and so Yoi took up his baited line and fished the ancestral Tikuna, the Magüta, from the river. Her act supplies the material of humankind while Yoi supplies its ordering, and the two together frame the central Tikuna myth of origins."
+ },
+ {
+  "id": "tikuna_umari_daughter",
+  "name": {
+   "primary": "Daughter of the Umari",
+   "alt": [
+    "hija del umarí",
+    "the umari woman",
+    "moca do umari"
+   ],
+   "transliterations": {
+    "tca": "",
+    "etymology": "the young woman who grew from the fruit of the umari tree (Poraqueiba sericea)"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "sex": "female",
+  "vitalStatus": "fate-unknown",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "umarí",
+     "script": "Latin",
+     "rom": "umari (Poraqueiba sericea)"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Portal de lenguas y literaturas de Colombia (Instituto Caro y Cuervo), 'Mito de origen de los ticunas', lenguasyliteraturasnativas.caroycuervo.gov.co."
+     }
+    ]
+   },
+   {
+    "sphereId": "vegetation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "delamazonas.com, 'El principio del mundo: leyenda amazonica', mitos y leyendas del Amazonas."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "arise-from-the-fruit",
+    "name": "arises as a woman from the fruit of the umari tree",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "unique",
+    "notes": "From the heart of the felled world-tree grew an umari, whose fruit became a young woman; she was taken by Ipi, and the ensuing fishing produced the Tikuna and other peoples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Portal de lenguas y literaturas de Colombia (Instituto Caro y Cuervo), 'Mito de origen de los ticunas', lenguasyliteraturasnativas.caroycuervo.gov.co."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "tikuna_ipi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Portal de lenguas y literaturas de Colombia (Instituto Caro y Cuervo), 'Mito de origen de los ticunas', lenguasyliteraturasnativas.caroycuervo.gov.co."
+     }
+    ],
+    "notes": "Ipi impregnated her"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A young woman known as the daughter of the umari grew from the fruit of an umari tree sprung from the heart of the world-tree; impregnated by Ipi, she is bound to the fishing episode that originated the peoples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Portal de lenguas y literaturas de Colombia (Instituto Caro y Cuervo), 'Mito de origen de los ticunas', lenguasyliteraturasnativas.caroycuervo.gov.co."
+     },
+     {
+      "kind": "secondary",
+      "reference": "delamazonas.com, 'El principio del mundo: leyenda amazonica'."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The daughter of the umari is a vegetal woman of the Tikuna origin cycle. When Yoi felled the immense world-tree, from its heart there sprang an umari tree (Poraqueiba sericea), and one of its fruits ripened into a young woman. The trickster Ipi lay with her and made her pregnant, and it is in connection with her that the great fishing takes place from which the Tikuna and the other peoples of the world are drawn out of the water. She personifies the passage from the vegetal abundance of the felled tree to the human generations, joining the imagery of forest fruit to the founding act of peopling the earth. Accounts vary as to whether the woman seduced by Ipi and this fruit-born woman are one and the same."
+ },
+ {
+  "id": "tikuna_tae",
+  "name": {
+   "primary": "Ta'e",
+   "alt": [
+    "Tae",
+    "Taë"
+   ],
+   "transliterations": {
+    "tca": "Ta'e",
+    "etymology": "the divinity of the World Above who apportions souls"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "sex": "unknown",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia e mundo de cima', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "sphereId": "soul",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jean-Pierre Goulard, Entre mortales e inmortales: El ser segun los Ticuna de la Amazonia (Lima: CAAAP/IFEA, 2009)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-souls",
+    "name": "gives the Tikuna their souls from the World Above",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "unique",
+    "notes": "Ta'e is the divinity dwelling in the World Above who bestows souls upon the Tikuna and, in some accounts, guards the earth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ta'e is the divinity who inhabits the World Above and who gives the Tikuna their souls; in some accounts a creator god who guards the earth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jean-Pierre Goulard, Entre mortales e inmortales: El ser segun los Ticuna de la Amazonia (Lima: CAAAP/IFEA, 2009)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ta'e is the divinity of the uppermost of the three Tikuna worlds, the World Above, and the giver of human souls. In a cosmos divided among the World Above, the intermediate world of living people, and the World Below of demons and malevolent forces, Ta'e presides over the highest region and endows the Tikuna with the animating soul-principle at the source of life; some accounts additionally cast Ta'e as a guardian of the earth. The figure belongs to the domain of the immortals rather than to the narrative cycle of the hero-brothers, and stands somewhat apart from the genealogy that issues from Ngutapa. Sources differ on Ta'e's gender and on whether the name designates a single deity or a class of celestial being."
+ },
+ {
+  "id": "tikuna_wone",
+  "name": {
+   "primary": "Wone",
+   "alt": [
+    "Wõne",
+    "Woné"
+   ],
+   "transliterations": {
+    "tca": "Wõne",
+    "etymology": "the immense primordial tree whose crown covered the sky"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Wõne",
+     "script": "Latin",
+     "rom": "Wone"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "episodic",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "darken-the-sky",
+    "name": "covers the sky with its crown, holding the world in perpetual shade",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Before its felling the tree's branches spread over the whole sky; only when Yoi cut it down did day and night begin to alternate.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   },
+   {
+    "id": "become-the-rivers",
+    "name": "becomes the Solimoes and its tributaries when it falls",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Its trunk, branches and leaves turned into the great river, the streams and the lakes of the Tikuna land; from its heart grew the umari tree.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Wone is the immense tree whose crown covered the sky; felled by Yoi, it set the alternation of day and night and its trunk and branches became the Solimoes and its tributaries.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Instituto Socioambiental, 'Ticuna: Cosmologia', Povos Indigenas no Brasil, pib.socioambiental.org."
+     },
+     {
+      "kind": "primary",
+      "reference": "Curt Nimuendaju, The Tukuna, ed. Robert H. Lowie (Berkeley: University of California Press, 1952)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Wone is the primordial world-tree of Tikuna cosmology, an enormous tree whose branches spread across the entire sky and held the early world in unbroken shade. Its felling by the hero Yoi is one of the foundational acts of the cosmogony: with the tree brought down, the succession of day and night began, while its trunk, boughs and leaves were transformed into the Solimões river together with the streams and lakes of the Tikuna country. From the heart of the fallen tree grew an umari, whose fruit became the vegetal woman of the origin cycle. As an impersonal cosmic entity the tree binds together the making of the waters, the ordering of time, and the vegetal source of the human generations."
+ },
+ {
+  "id": "tikuna_coyatchicura",
+  "name": {
+   "primary": "Coyatchicüra",
+   "alt": [
+    "Coyatchicüra",
+    "Jaguar's Snout",
+    "Queixada da Onca"
+   ],
+   "transliterations": {
+    "tca": "Coyatchicüra",
+    "etymology": "'the jaguar's snout', a Tikuna constellation associated with the jaguar clan"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tikuna",
+  "primaryTradition": "Tikuna",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tikuna traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Coyatchicüra",
+     "script": "Latin",
+     "rom": "Coyatchicura"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Priscila Faulhaber, 'As estrelas eram terrenas: antropologia do clima, da iconografia e das constelacoes Ticuna', Revista de Antropologia 47, no. 1 (Sao Paulo: USP, 2004): 173-206."
+     }
+    ]
+   },
+   {
+    "sphereId": "seasons",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Priscila Faulhaber, 'Ticuna knowledge, Worecu stars and sky movements', Proceedings of the International Astronomical Union 7, S278 (2011): 58-65."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "govern-the-seasons",
+    "name": "marks the turning of the seasons by its yearly movement across the sky",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The annual course of the Jaguar's Snout across the heavens is read by the Tikuna as a marker of seasonal change and is tied in ritual imagery to the jaguar clan.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Priscila Faulhaber, 'Ticuna knowledge, Worecu stars and sky movements', Proceedings of the International Astronomical Union 7, S278 (2011): 58-65."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Coyatchicura, the 'jaguar's snout', is a Tikuna constellation whose yearly movement marks the seasons and which is associated with the jaguar clan in the imagery of the girls' puberty festival.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Priscila Faulhaber, 'As estrelas eram terrenas: antropologia do clima, da iconografia e das constelacoes Ticuna', Revista de Antropologia 47, no. 1 (2004): 173-206."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Priscila Faulhaber, 'Ticuna knowledge, Worecu stars and sky movements', Proceedings of the International Astronomical Union 7, S278 (2011): 58-65."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Coyatchicüra, 'the jaguar's snout', is one of the celestial beings of Tikuna sky-knowledge, a constellation whose annual passage across the heavens the Tikuna read as a sign of the turning seasons. In the ethnoastronomy recorded for the people, the constellations are treated as beings that were once terrestrial, and Coyatchicüra is drawn among the star-figures depicted on the ritual artefacts of the girls' puberty festival, where it is bound to the imagery of the jaguar clan. As a jaguar of the sky it links the animal that most concentrates Tikuna cosmological attention to the ordering of time and the ceremonial life of the moiety and clan system."
+ }
+]
+```
