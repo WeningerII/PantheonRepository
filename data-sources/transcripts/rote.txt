@@ -1,0 +1,891 @@
+Rote — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "rote_manetualain",
+  "name": {
+   "primary": "Manetualain",
+   "alt": [
+    "Lamatuak",
+    "Manetua Lain",
+    "Lord of the Sun and Moon"
+   ],
+   "transliterations": {
+    "rot": "Manetualain",
+    "etymology": "From mane 'lord', tua 'great, exalted', and lai(n) 'above, the heavens' — 'the Exalted Lord on High'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rote",
+  "primaryTradition": "Rote",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Rote traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lain",
+     "script": "Latn",
+     "rom": "lain"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1977. Harvest of the Palm: Ecological Change in Eastern Indonesia. Harvard University Press, ch. on Rotinese cosmology."
+     }
+    ]
+   },
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "manek",
+     "script": "Latn",
+     "rom": "manek"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters: The Art of Oral Composition Among the Rotenese of Eastern Indonesia. ANU Press."
+     }
+    ]
+   },
+   {
+    "sphereId": "fate-life-and-death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "so'da ma mate",
+     "script": "Latn",
+     "rom": "so'da ma mate"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1973. 'On Bad Death and the Left Hand.' In Right & Left, ed. R. Needham, University of Chicago Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-heavens",
+    "name": "rules the sun and moon",
+    "term": {
+     "value": "Manek Ledo ma Bulan",
+     "script": "Latn",
+     "rom": "Manek Ledo ma Bulan"
+    },
+    "inheritability": "unique",
+    "notes": "The sun and moon are held to be the visible sign of his lordship over the sky.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   },
+   {
+    "id": "ordain-life-and-death",
+    "name": "ordains the span of human life",
+    "term": {
+     "value": "ordains life and death",
+     "script": "Latn",
+     "rom": "ordains life and death"
+    },
+    "inheritability": "unique",
+    "notes": "Held to fix the term of mortal life and the certainty of death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1973. 'On Bad Death and the Left Hand.' In Right & Left, ed. R. Needham, University of Chicago Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Lamatuak",
+    "translation": "the Lord",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Jonker, J.C.G. 1908. Rottineesch-Hollandsch woordenboek. Leiden: E.J. Brill, s.v. Lamatuak."
+     }
+    ]
+   },
+   {
+    "original": "Manetua Lain",
+    "translation": "the Exalted Lord on High",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1977. Harvest of the Palm. Harvard University Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Rotinese high divinity is a single Lord of the Heavens, addressed as Lamatuak and Manetualain and titled Lord of the Sun and Moon.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1977. Harvest of the Palm. Harvard University Press."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The name Manetualain was adopted for the Christian God after conversion, reflecting continuity with the pre-Christian sky-lord.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Jonker, J.C.G. 1908. Rottineesch-Hollandsch woordenboek. Leiden: E.J. Brill."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "In Rotinese cosmology the supreme power is a single Lord of the Heavens, addressed in ordinary speech as Lamatuak, 'the Lord,' and in fuller ritual form as Manetualain, 'the Exalted Lord on High.' He bears the title Lord of the Sun and Moon, the two luminaries standing as the visible sign of his sovereignty over the sky, and he is held to ordain the span of human life and the certainty of death. With the coming of Christianity the same name was carried over for the Christian God; sources differ on how far the pre-Christian Lord was conceived as a personal being rather than an encompassing sky-power."
+ },
+ {
+  "id": "rote_ledo",
+  "name": {
+   "primary": "Ledo",
+   "alt": [
+    "Ledo Holo",
+    "the Sun"
+   ],
+   "transliterations": {
+    "rot": "Ledo",
+    "etymology": "ledo 'sun'; the ritual pair-name Ledo Holo complements Bula Kai, the moon, in parallel speech."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Rote",
+  "primaryTradition": "Rote",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Rote traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sun-and-daylight",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ledo",
+     "script": "Latn",
+     "rom": "ledo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs: Essays on the Ritual Languages of Eastern Indonesia. Cambridge University Press."
+     }
+    ]
+   },
+   {
+    "sphereId": "time-reckoning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ledo ma bulan",
+     "script": "Latn",
+     "rom": "ledo ma bulan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-the-day",
+    "name": "brings daylight and the dry season",
+    "term": {
+     "value": "ledo",
+     "script": "Latn",
+     "rom": "ledo"
+    },
+    "inheritability": "none",
+    "notes": "Governs the day and, with the moon, the seasonal round.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "rote_bulan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     }
+    ],
+    "notes": "Sun and moon form the fixed celestial dyad Ledo Holo // Bula Kai of Rotinese ritual language."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ledo Holo",
+    "translation": "the Sun (ritual pair-name)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The sun, Ledo (ritual name Ledo Holo), is personified in Rotinese cosmology and paired with the moon as the fixed celestial dyad.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Ledo, the sun, and Bula, the moon, form the fixed celestial dyad of Rotinese ritual language, named in parallel as Ledo Holo and Bula Kai. The sun governs daylight and the dry season and, with the moon, orders the reckoning of ritual time. In Rotinese thought the luminaries are the manifest face of the Lord of the Sun and Moon rather than independent objects of cult."
+ },
+ {
+  "id": "rote_bulan",
+  "name": {
+   "primary": "Bulan",
+   "alt": [
+    "Bula Kai",
+    "Bula",
+    "the Moon"
+   ],
+   "transliterations": {
+    "rot": "Bulan",
+    "etymology": "bula(n) 'moon, month'; the ritual pair-name Bula Kai complements Ledo Holo, the sun."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Rote",
+  "primaryTradition": "Rote",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Rote traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "moon-and-night",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bulan",
+     "script": "Latn",
+     "rom": "bulan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     }
+    ]
+   },
+   {
+    "sphereId": "months-and-calendar",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bulan",
+     "script": "Latn",
+     "rom": "bulan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "measure-the-months",
+    "name": "measures the months and ritual time",
+    "term": {
+     "value": "bulan",
+     "script": "Latn",
+     "rom": "bulan"
+    },
+    "inheritability": "none",
+    "notes": "The waxing and waning moon reckons months and the ritual calendar.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "rote_ledo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     }
+    ],
+    "notes": "Moon and sun form the fixed celestial dyad Bula Kai // Ledo Holo of Rotinese ritual language."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Bula Kai",
+    "translation": "the Moon (ritual pair-name)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The moon, Bula (ritual name Bula Kai), is personified and paired with the sun; the same word names both the moon and the month.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     },
+     {
+      "kind": "primary",
+      "reference": "Jonker, J.C.G. 1908. Rottineesch-Hollandsch woordenboek. Leiden: E.J. Brill, s.v. bula."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Bula, the moon, is the twin term of the sun in the paired ritual designation Bula Kai // Ledo Holo. The moon rules the night and, through its waxing and waning, measures the months and the ritual calendar; the single Rotinese word bulan names both the moon and the month. Like the sun, it is understood as an aspect of the Lord of the Sun and Moon rather than a separate deity of cult."
+ },
+ {
+  "id": "rote_suti_solo",
+  "name": {
+   "primary": "Suti Solo",
+   "alt": [
+    "Suti",
+    "Suti Solo do Bina Bane"
+   ],
+   "transliterations": {
+    "rot": "Suti Solo",
+    "etymology": "suti, a small spiral sea-shell; solo, its parallel poetic complement."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Rote",
+  "primaryTradition": "Rote",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Rote traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sea-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sain",
+     "script": "Latn",
+     "rom": "sain"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2014. Explorations in Semantic Parallelism. Canberra: ANU E Press."
+     }
+    ]
+   },
+   {
+    "sphereId": "mortuary-mourning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mourning rites",
+     "script": "Latn",
+     "rom": "mourning rites"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "voice-the-lament",
+    "name": "laments separation from the sea",
+    "term": {
+     "value": "lament",
+     "script": "Latn",
+     "rom": "lament"
+    },
+    "inheritability": "none",
+    "notes": "In mortuary recitation the shell's parting from the sea figures the soul's departure from the living.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2014. Explorations in Semantic Parallelism. ANU E Press."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "rote_suti_solo-shell",
+    "kind": "regalia",
+    "name": "the spiral sea-shell (suti)",
+    "term": {
+     "value": "suti",
+     "script": "Latn",
+     "rom": "suti"
+    },
+    "role": "chant-persona",
+    "notes": "The named shell dislodged from the sea; its recitation is attached to the origin of a ceremonial textile.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2014. Explorations in Semantic Parallelism. ANU E Press."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin",
+    "personId": "rote_bina_bane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ],
+    "notes": "Suti Solo and Bina Bane are the matched pair of shells named together in the origin chant."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Suti Solo do Bina Bane",
+    "translation": "Suti Solo and Bina Bane, the paired shells",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Suti Solo and Bina Bane are the title-personae of a widely recited Rotinese origin chant, sea-shells torn from the deep and carried ashore, recited at mortuary rites and attached to a ceremonial textile.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2014. Explorations in Semantic Parallelism. Canberra: ANU E Press."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Suti Solo and Bina Bane are two sea-shells that furnish the title-personae of one of the most widely recited Rotinese origin chants. Torn from the depths of the sea by a storm and carried to the shore, the pair lament their separation from their watery origin; the chant is sung at mortuary rites, where the shells' parting from the sea figures the soul's departure from the living, and it is also attached to the origin of a ceremonial cloth. In parallel recitation the two names function as a single dyadic subject even as the shells are pictured as a matched pair."
+ },
+ {
+  "id": "rote_bina_bane",
+  "name": {
+   "primary": "Bina Bane",
+   "alt": [
+    "Bina",
+    "Suti Solo do Bina Bane"
+   ],
+   "transliterations": {
+    "rot": "Bina Bane",
+    "etymology": "bina, a bailer sea-shell; bane, its parallel poetic complement."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Rote",
+  "primaryTradition": "Rote",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Rote traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sea-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sain",
+     "script": "Latn",
+     "rom": "sain"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2014. Explorations in Semantic Parallelism. Canberra: ANU E Press."
+     }
+    ]
+   },
+   {
+    "sphereId": "mortuary-mourning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mourning rites",
+     "script": "Latn",
+     "rom": "mourning rites"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "figure-the-parting",
+    "name": "figures the soul's parting from the living",
+    "term": {
+     "value": "separation",
+     "script": "Latn",
+     "rom": "separation"
+    },
+    "inheritability": "none",
+    "notes": "With Suti Solo, embodies the theme of separation from origin central to the mortuary chant.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "rote_bina_bane-shell",
+    "kind": "regalia",
+    "name": "the bailer sea-shell (bina)",
+    "term": {
+     "value": "bina",
+     "script": "Latn",
+     "rom": "bina"
+    },
+    "role": "chant-persona",
+    "notes": "The named bailer shell paired with the spiral shell Suti in the origin chant.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2014. Explorations in Semantic Parallelism. ANU E Press."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin",
+    "personId": "rote_suti_solo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ],
+    "notes": "Bina Bane and Suti Solo are the matched pair of shells named together in the origin chant."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Suti Solo do Bina Bane",
+    "translation": "Suti Solo and Bina Bane, the paired shells",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Bina Bane is the twin shell-persona of Suti Solo in the Rotinese origin chant of the two shells cast up from the sea.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2014. Explorations in Semantic Parallelism. Canberra: ANU E Press."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2016. Master Poets, Ritual Masters. ANU Press."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Bina Bane, a bailer shell, is the paired complement of the spiral shell Suti Solo in the celebrated Rotinese origin chant of the two shells. Dislodged together from the sea and carried to land, the pair voice a lament for their lost origin that lends the chant to mortuary use. The two names, always spoken in parallel, name one dyadic subject while picturing two matched shells."
+ },
+ {
+  "id": "rote_manek_liun_sain",
+  "name": {
+   "primary": "Manek Liun ma Sain",
+   "alt": [
+    "Lord of the Ocean and Sea",
+    "Lord of the Sea"
+   ],
+   "transliterations": {
+    "rot": "Manek Liun ma Sain",
+    "etymology": "manek 'lord, ruler of a domain'; liun 'the ocean deep'; sain 'the open sea'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rote",
+  "primaryTradition": "Rote",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Rote traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sain",
+     "script": "Latn",
+     "rom": "sain"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     }
+    ]
+   },
+   {
+    "sphereId": "ocean-deep",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "liun",
+     "script": "Latn",
+     "rom": "liun"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     }
+    ]
+   },
+   {
+    "sphereId": "storms-and-monsoon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "monsoon storms",
+     "script": "Latn",
+     "rom": "monsoon storms"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1977. Harvest of the Palm. Harvard University Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "raise-the-monsoon",
+    "name": "stirs the winds that cast creatures ashore",
+    "term": {
+     "value": "monsoon",
+     "script": "Latn",
+     "rom": "monsoon"
+    },
+    "inheritability": "unique",
+    "notes": "The storms of the sea's lord drive shells and sea-wealth onto the shores of Rote.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 2014. Explorations in Semantic Parallelism. ANU E Press."
+     }
+    ]
+   },
+   {
+    "id": "keep-the-seas-wealth",
+    "name": "keeps the origin of life and wealth in the deep",
+    "term": {
+     "value": "liun",
+     "script": "Latn",
+     "rom": "liun"
+    },
+    "inheritability": "unique",
+    "notes": "Sea-origin narratives derive rice, wealth, and the shell-beings from his domain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1977. Harvest of the Palm. Harvard University Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Liun ma Sain",
+    "translation": "the Ocean and the Sea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The sea is personified as a lord named in the paired ritual terms Liun (the ocean deep) and Sain (the open sea), the watery counterpart to the Lord of the Heavens in Rotinese dual cosmology.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. To Speak in Pairs. Cambridge University Press."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1977. Harvest of the Palm. Harvard University Press."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The sea is personified as a lord, named in the paired ritual terms Liun, the ocean deep, and Sain, the open sea. As the source of storms and of the creatures and goods cast up on Rote's shores, the Lord of the Ocean and Sea stands as the watery counterpart to the Lord of the Heavens in Rotinese dual classification. Sea-origin narratives derive rice, wealth, and the shell-beings Suti Solo and Bina Bane from his domain; sources treat the sea more as a personified cosmic realm than as a deity with a developed cult."
+ },
+ {
+  "id": "rote_manu_kama",
+  "name": {
+   "primary": "Manu Kama",
+   "alt": [
+    "Tepa Nilu",
+    "Manu Kama do Tepa Nilu"
+   ],
+   "transliterations": {
+    "rot": "Manu Kama do Tepa Nilu",
+    "etymology": "manu 'fowl, cock'; the dyadic name of the wandering protagonist, Manu Kama paired with Tepa Nilu."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Rote",
+  "primaryTradition": "Rote",
+  "vitalStatus": "unknown",
+  "parentIds": [],
+  "temporal": {
+   "era": "Rote traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "journeys-and-roads",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "dala ma eno",
+     "script": "Latn",
+     "rom": "dala ma eno"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. 'Manu Kama's Road, Tepa Nilu's Path: Theme, Narrative, and Formula in Rotinese Ritual Language.' In To Speak in Pairs, ed. J.J. Fox, Cambridge University Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "walk-the-road",
+    "name": "journeys along road and path",
+    "term": {
+     "value": "dala ma eno",
+     "script": "Latn",
+     "rom": "dala ma eno"
+    },
+    "inheritability": "none",
+    "notes": "The formula of 'Manu Kama's road and Tepa Nilu's path' organizes the narrative of his journey.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. 'Manu Kama's Road, Tepa Nilu's Path.' In To Speak in Pairs, Cambridge University Press."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Manu Kama do Tepa Nilu",
+    "translation": "Manu Kama and Tepa Nilu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. 'Manu Kama's Road, Tepa Nilu's Path.' In To Speak in Pairs, Cambridge University Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Manu Kama, named in parallel as Tepa Nilu, is the traveling protagonist of a Rotinese ritual narrative built on the formula of his road and path.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fox, J.J. 1988. 'Manu Kama's Road, Tepa Nilu's Path: Theme, Narrative, and Formula in Rotinese Ritual Language.' In To Speak in Pairs, ed. J.J. Fox, Cambridge University Press."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Manu Kama, named in parallel as Tepa Nilu, is the traveling protagonist of a Rotinese ritual narrative built on the formula of 'Manu Kama's road and Tepa Nilu's path.' The journey along this road is a recurrent formulaic theme in the island's oral poetry, and sources treat the dyadic name as a single wandering figure whose route organizes the telling. The particulars of the tale vary between reciters."
+ }
+]
+```

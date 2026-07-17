@@ -1,0 +1,1502 @@
+Visayan — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "visayan_kaptan",
+  "name": {
+   "primary": "Kaptan",
+   "alt": [
+    "Captan",
+    "Makaptan"
+   ],
+   "transliterations": {
+    "ceb": "Kaptan",
+    "es": "Captan",
+    "etymology": "Colonial orthography 'Captan'; the celestial sovereign of the ancient Visayans"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "langit",
+     "script": "Latn",
+     "rom": "langit"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Miguel de Loarca, Relacion de las Yslas Filipinas (1582), in E. H. Blair & J. A. Robertson, The Philippine Islands 1493-1898, vol. V (Cleveland, 1903), pp. 121-135."
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "paglalang",
+     "script": "Latn",
+     "rom": "paglalang"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590), ed. G. B. Souza & J. S. Turley, The Boxer Codex (Leiden: Brill, 2015), Visayan cosmogony."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hurl-thunderbolt",
+    "name": "hurls the thunderbolt",
+    "term": {
+     "value": "lipak",
+     "script": "Latn",
+     "rom": "lipak"
+    },
+    "inheritability": "unique",
+    "notes": "From the sky Kaptan casts down bolts of lightning; with them he struck the rebellious Likalibutan, shattering the elder children into the land, sun, moon and stars.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mabel Cook Cole, Philippine Folk Tales (Chicago: A. C. McClurg, 1916), 'The Creation' (Visayan), pp. 99-101."
+     }
+    ]
+   },
+   {
+    "id": "quicken-the-bamboo",
+    "name": "breathes life into the first bamboo",
+    "term": {
+     "value": "paghuyop og kinabuhi",
+     "script": "Latn",
+     "rom": "paghuyop og kinabuhi"
+    },
+    "inheritability": "unique",
+    "notes": "The reed from which the first man and woman emerged is drawn upward to the sky god, who sanctions the appearance of humankind.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Miguel de Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, The Philippine Islands, vol. V, pp. 121-135."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "visayan_lihangin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "visayan_likalibutan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ],
+    "notes": "The grandson storms the gates of the sky and is destroyed by Kaptan's bolts."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Amay sa Langit",
+    "translation": "Father of the Sky",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Outline of Philippine Mythology (Manila: Centro Escolar University, 1969)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kaptan (Captan) is the supreme sky god of the pre-Hispanic Visayans, paired with Magwayen of the waters in the creation of the world.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Miguel de Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, The Philippine Islands, vol. V, pp. 121-135."
+     },
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590), ed. Souza & Turley (Brill, 2015)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "In the recorded Visayan creation narrative Kaptan is father of the wind Lihangin and destroys his rebellious grandchildren with thunderbolts.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Kaptan is the supreme sky god of the pre-Hispanic Visayans, remembered in the colonial chronicles of Loarca and the Boxer Codex as the celestial power who, together with Magwayen of the sea, framed the world. In the creation narrative preserved in later folklore he is father of the wind Lihangin and grandfather of the four cosmic children; when the eldest, Likalibutan, leads his brothers in an assault upon the gates of the sky, Kaptan shatters them with his thunderbolts, and their broken bodies become the land, the sun, the moon and the stars. Grieving, the sky god afterward calls the sea to help him coax the first human beings from the drifting bamboo. Sources sometimes distinguish a wrathful aspect, Makaptan, an unfed sky lord who sends sickness because he has tasted neither the rice nor the wine of mortals."
+ },
+ {
+  "id": "visayan_magwayen",
+  "name": {
+   "primary": "Magwayen",
+   "alt": [
+    "Maguayen",
+    "Maguayan",
+    "Magwayan"
+   ],
+   "transliterations": {
+    "ceb": "Magwayen",
+    "es": "Maguayen",
+    "etymology": "Colonial 'Maguayen'; deity of the primordial waters and ferry of the dead"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "dagat",
+     "script": "Latn",
+     "rom": "dagat"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Miguel de Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, The Philippine Islands, vol. V, pp. 121-135."
+     }
+    ]
+   },
+   {
+    "sphereId": "psychopomp",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tigbugsay sa kalag",
+     "script": "Latn",
+     "rom": "tigbugsay sa kalag"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Francisco Ignacio Alcina, Historia de las islas e indios de Bisayas (1668); trans. C. Kobak & L. Gutierrez, History of the Bisayan People in the Philippine Islands (Manila: UST Press, 2002)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ferry-the-dead",
+    "name": "ferries the souls of the dead",
+    "term": {
+     "value": "pagtabok sa kalag",
+     "script": "Latn",
+     "rom": "pagtabok sa kalag"
+    },
+    "inheritability": "unique",
+    "notes": "In the Bisayan afterlife tradition Magwayen carries the departed by boat across the waters toward the abode of the dead.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alcina, Historia de las islas e indios de Bisayas (1668), trans. Kobak & Gutierrez (2002)."
+     }
+    ]
+   },
+   {
+    "id": "churn-the-waters",
+    "name": "moves the primordial sea",
+    "term": {
+     "value": "pagkutaw sa dagat",
+     "script": "Latn",
+     "rom": "pagkutaw sa dagat"
+    },
+    "inheritability": "unique",
+    "notes": "As the power of the waters Magwayen answers the sky in shaping the first world.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590), ed. Souza & Turley (Brill, 2015)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "visayan_lidagat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ginoo sa Dagat",
+    "translation": "Lord of the Sea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Magwayen (Maguayen) is the Visayan deity of the sea and primordial waters, counterpart of the sky god Kaptan in the creation.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     },
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590), ed. Souza & Turley (Brill, 2015)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Magwayen conducts the souls of the dead across the waters to the afterworld.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alcina, Historia de las islas e indios de Bisayas (1668), trans. Kobak & Gutierrez (2002)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Magwayen is the deity of the sea and the primordial waters, the power that answers the sky god Kaptan in the framing of the world. Beyond the cosmogony, Bisayan belief made the sea deity a ferry of souls: the dead were carried by boat across the waters toward Sulad, the abode of the departed. In the recorded creation narrative Magwayen is parent of Lidagat, the calm sea, whose marriage to the wind Lihangin produces the four cosmic children. Sources differ on the deity's gender: in the primordial sky-and-sea pairing Magwayen is often figured as a feminine ocean set against the masculine heaven, while the folklore genealogies name Magwayen as a sea-god father; the ambiguity is original to the tradition rather than resolved by it."
+ },
+ {
+  "id": "visayan_lihangin",
+  "name": {
+   "primary": "Lihangin",
+   "alt": [
+    "Lihangin"
+   ],
+   "transliterations": {
+    "ceb": "Lihangin",
+    "etymology": "From hangin, 'wind'; the personified wind"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "visayan_kaptan"
+  ],
+  "parentRoles": {
+   "visayan_kaptan": "paternal"
+  },
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hangin",
+     "script": "Latn",
+     "rom": "hangin"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "command-the-winds",
+    "name": "commands the moving air",
+    "term": {
+     "value": "pagmando sa hangin",
+     "script": "Latn",
+     "rom": "pagmando sa hangin"
+    },
+    "inheritability": "partial",
+    "notes": "As the wind Lihangin ranges between the sky of his father and the sea of his bride.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "visayan_kaptan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "visayan_lidagat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "visayan_likalibutan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "visayan_liadlaw",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "visayan_libulan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Lihangin, the wind, is the son of the sky god Kaptan and husband of the sea Lidagat in the Visayan creation narrative.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Lihangin is the personified wind, son of the sky god Kaptan. He takes to wife Lidagat, the calm sea and daughter of Magwayen, and from their union come four children who will become the earth, the sun, the moon and the stars. When the eldest child leads his brothers in rebellion and Kaptan destroys them, Lihangin and Lidagat die of grief, so that neither wind nor sea long survives the children they made. His name is transparent Bisaya, hangin, 'wind.'"
+ },
+ {
+  "id": "visayan_lidagat",
+  "name": {
+   "primary": "Lidagat",
+   "alt": [
+    "Lidagat"
+   ],
+   "transliterations": {
+    "ceb": "Lidagat",
+    "etymology": "From dagat, 'sea'; the personified calm sea"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "visayan_magwayen"
+  ],
+  "parentRoles": {
+   "visayan_magwayen": "paternal"
+  },
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "dagat",
+     "script": "Latn",
+     "rom": "dagat"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "still-the-waters",
+    "name": "holds the calm of the sea",
+    "term": {
+     "value": "paglinaw sa dagat",
+     "script": "Latn",
+     "rom": "paglinaw sa dagat"
+    },
+    "inheritability": "partial",
+    "notes": "The gentle sea joined to the wind; her stillness is the counterpart of Lihangin's motion.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "visayan_magwayen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "visayan_lihangin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "visayan_likalibutan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "visayan_liadlaw",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "visayan_libulan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Lidagat, the calm sea, is the daughter of Magwayen and wife of the wind Lihangin, mother of the four cosmic children.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Lidagat is the personified calm sea, daughter of the sea deity Magwayen. Wedded to the wind Lihangin, she bears the four children of the Visayan cosmogony. Her stillness set against her husband's restless motion, she perishes with him of grief after their sons are struck down by the sky. Her name is the Bisaya word dagat, 'sea.'"
+ },
+ {
+  "id": "visayan_likalibutan",
+  "name": {
+   "primary": "Likalibutan",
+   "alt": [
+    "Likalibutan"
+   ],
+   "transliterations": {
+    "ceb": "Likalibutan",
+    "etymology": "From kalibutan, 'world, earth'; the personified world"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "visayan_lihangin",
+   "visayan_lidagat"
+  ],
+  "parentRoles": {
+   "visayan_lihangin": "paternal",
+   "visayan_lidagat": "maternal"
+  },
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kalibutan",
+     "script": "Latn",
+     "rom": "kalibutan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "storm-the-sky",
+    "name": "wars upon the gates of heaven",
+    "term": {
+     "value": "pagsulong sa langit",
+     "script": "Latn",
+     "rom": "pagsulong sa langit"
+    },
+    "inheritability": "none",
+    "notes": "Strong and bold, with a body of rock, the eldest child rouses his brothers to seize the realm of Kaptan and is destroyed for it, his broken body becoming the land.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "visayan_lihangin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "visayan_lidagat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "visayan_liadlaw",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "visayan_libulan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "visayan_kaptan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Likalibutan, eldest of the four children of Lihangin and Lidagat, has a body of rock and leads a rebellion against the sky, becoming the earth when Kaptan destroys him.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Likalibutan is the eldest of the four children of the wind and the sea, a strong and ambitious being with a body of rock. Persuading his brothers Liadlaw and Libulan to join him, he assaults the gates of the sky to wrest the heavens from his grandfather Kaptan. The sky god drives them back and shatters them with his thunderbolts; Likalibutan's rocky body falls and becomes the land, the earth on which humankind would afterward stand. His name is the Bisaya word kalibutan, 'world.' The fourth child, the daughter Lisuga, who did not join the revolt, becomes the stars."
+ },
+ {
+  "id": "visayan_liadlaw",
+  "name": {
+   "primary": "Liadlaw",
+   "alt": [
+    "Liadlaw"
+   ],
+   "transliterations": {
+    "ceb": "Liadlaw",
+    "etymology": "From adlaw, 'sun, day'; the personified sun"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "visayan_lihangin",
+   "visayan_lidagat"
+  ],
+  "parentRoles": {
+   "visayan_lihangin": "paternal",
+   "visayan_lidagat": "maternal"
+  },
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "adlaw",
+     "script": "Latn",
+     "rom": "adlaw"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "become-the-sun",
+    "name": "becomes the sun",
+    "term": {
+     "value": "pagkahimong adlaw",
+     "script": "Latn",
+     "rom": "pagkahimong adlaw"
+    },
+    "inheritability": "none",
+    "notes": "Made all of gold, the shining child is struck down with his brothers and his body is set in the sky as the sun.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "visayan_lihangin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "visayan_lidagat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "visayan_likalibutan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "visayan_libulan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Liadlaw, a child of gold, is one of the four children of Lihangin and Lidagat and becomes the sun after being destroyed by Kaptan.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Liadlaw is the golden child among the four offspring of the wind and the sea, a being made all of gold. Drawn by his elder brother Likalibutan into the assault on the sky, he is destroyed by Kaptan's thunderbolts, and his shining body is set in the heavens as the sun. His name is the Bisaya word adlaw, 'sun, day.'"
+ },
+ {
+  "id": "visayan_libulan",
+  "name": {
+   "primary": "Libulan",
+   "alt": [
+    "Libulan"
+   ],
+   "transliterations": {
+    "ceb": "Libulan",
+    "etymology": "From bulan, 'moon'; the personified moon"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "visayan_lihangin",
+   "visayan_lidagat"
+  ],
+  "parentRoles": {
+   "visayan_lihangin": "paternal",
+   "visayan_lidagat": "maternal"
+  },
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bulan",
+     "script": "Latn",
+     "rom": "bulan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "become-the-moon",
+    "name": "becomes the moon",
+    "term": {
+     "value": "pagkahimong bulan",
+     "script": "Latn",
+     "rom": "pagkahimong bulan"
+    },
+    "inheritability": "none",
+    "notes": "The timid child made of copper is struck down with his brothers, and his softer body becomes the moon.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "visayan_lihangin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "visayan_lidagat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "visayan_likalibutan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "visayan_liadlaw",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Libulan, a timid child of copper, is one of the four children of Lihangin and Lidagat and becomes the moon after being destroyed by Kaptan.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Cole, Philippine Folk Tales (1916), 'The Creation', pp. 99-101."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Libulan is the copper-bodied and timid child among the four offspring of the wind and the sea. Swept along in his brothers' revolt against the sky rather than leading it, he is destroyed by Kaptan's bolts, and his soft body becomes the moon. His name is the Bisaya word bulan, 'moon.'"
+ },
+ {
+  "id": "visayan_sidapa",
+  "name": {
+   "primary": "Sidapa",
+   "alt": [
+    "Sidapa"
+   ],
+   "transliterations": {
+    "ceb": "Sidapa",
+    "es": "Sidapa",
+    "etymology": "Bisayan deity of death and of the measure of life"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kamatayon",
+     "script": "Latn",
+     "rom": "kamatayon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     }
+    ]
+   },
+   {
+    "sphereId": "fate",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gitas-on sa kinabuhi",
+     "script": "Latn",
+     "rom": "gitas-on sa kinabuhi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scott, Barangay: Sixteenth-Century Philippine Culture and Society (1994)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "measure-lifespan",
+    "name": "measures the span of every life",
+    "term": {
+     "value": "pagsukod sa kinabuhi",
+     "script": "Latn",
+     "rom": "pagsukod sa kinabuhi"
+    },
+    "inheritability": "unique",
+    "notes": "Upon the birth of each person Sidapa determines the length of that life against a great tree on the sacred mountain; when the appointed measure is reached, the person dies.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "visayan_sidapa-madjaas-tree",
+    "kind": "place",
+    "name": "Madia-as",
+    "term": {
+     "value": "Bukid sa Madia-as",
+     "script": "Latn",
+     "rom": "Bukid sa Madia-as"
+    },
+    "role": "abode and instrument of fate",
+    "notes": "The sacred mountain of Panay on which Sidapa is said to dwell and against whose tall tree the lifespans of mortals are measured.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Magsusukod sa Kinabuhi",
+    "translation": "Measurer of Life",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sidapa is the Visayan god of death who dwells on the sacred Mount Madia-as in Panay and fixes the lifespan of every person at birth by measuring a tree.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Scott, Barangay (1994)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Sidapa is the Visayan god of death, remembered as the power who governs the length of mortal life. He is said to dwell upon Madia-as, the sacred mountain of Panay, where a great tree stands; at the birth of every person Sidapa marks upon that tree the measure of the coming life, and when a mortal attains the height set for him he must die. As lord of the appointed end he presides over the departure of souls toward the afterworld, which other deities of the sea and the underworld receive. A later and largely modern popular tradition pairs Sidapa with the moon Bulan in a romance; the attested older figure is simply the measurer and master of death."
+ },
+ {
+  "id": "visayan_lalahon",
+  "name": {
+   "primary": "Lalahon",
+   "alt": [
+    "Laon",
+    "Lauon"
+   ],
+   "transliterations": {
+    "ceb": "Lalahon",
+    "es": "Lalahon",
+    "etymology": "Goddess of the harvest dwelling in the fire-mountain; associated with Kanlaon"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ani",
+     "script": "Latn",
+     "rom": "ani"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ]
+   },
+   {
+    "sphereId": "volcanism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bulkan",
+     "script": "Latn",
+     "rom": "bulkan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send-locusts",
+    "name": "sends locusts upon the harvest",
+    "term": {
+     "value": "pagpadala og dulon",
+     "script": "Latn",
+     "rom": "pagpadala og dulon"
+    },
+    "inheritability": "unique",
+    "notes": "When she is displeased Lalahon dispatches swarms of locusts to devour the crops; when propitiated she grants an abundant harvest.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ]
+   },
+   {
+    "id": "cast-fire",
+    "name": "casts fire from the mountain",
+    "term": {
+     "value": "pagbuga og kalayo",
+     "script": "Latn",
+     "rom": "pagbuga og kalayo"
+    },
+    "inheritability": "unique",
+    "notes": "Her dwelling is a volcano from which she throws forth fire.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "visayan_lalahon-kanlaon",
+    "kind": "place",
+    "name": "Kanlaon",
+    "term": {
+     "value": "Bukid Kanlaon",
+     "script": "Latn",
+     "rom": "Bukid Kanlaon"
+    },
+    "role": "fiery dwelling of the goddess",
+    "notes": "The volcano of Negros in which Lalahon is said to live and from which she sends fire; its name has been read as 'belonging to Laon,' the Ancient One.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scott, Barangay (1994)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Nagpuyo sa Bukid nga Nagkalayo",
+    "translation": "She Who Dwells in the Fire-Mountain",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Lalahon is a Visayan goddess who lives in a volcano and sends locusts to destroy the harvest when angered, and is invoked for a good harvest.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Lalahon is the Visayan goddess of the harvest, described by Loarca as dwelling in a volcano from which she throws forth fire. She holds the increase of the fields: when she is angry she sends swarms of locusts to destroy the crops, and the people offer to her so that she will withhold them and grant abundance instead. Her volcanic home is commonly identified with Kanlaon on Negros. Sources differ on whether Lalahon is the same being as Laon, 'the Ancient One,' the supreme deity for whom the mountain of Kanlaon appears to be named, or a distinct goddess later associated with the same peak."
+ },
+ {
+  "id": "visayan_bakunawa",
+  "name": {
+   "primary": "Bakunawa",
+   "alt": [
+    "Bakonawa",
+    "Baconaua"
+   ],
+   "transliterations": {
+    "ceb": "Bakunawa",
+    "hil": "Bakunawa",
+    "etymology": "Often read as 'bent or coiled serpent'; the sea-dragon that swallows the moon"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "eclipses",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "paglamon sa bulan",
+     "script": "Latn",
+     "rom": "paglamon sa bulan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Damiana L. Eugenio, Philippine Folk Literature: The Myths (Quezon City: University of the Philippines Press, 1993)."
+     }
+    ]
+   },
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "dagat",
+     "script": "Latn",
+     "rom": "dagat"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "devour-the-moon",
+    "name": "devours the moon",
+    "term": {
+     "value": "paglamoy sa bulan",
+     "script": "Latn",
+     "rom": "paglamoy sa bulan"
+    },
+    "inheritability": "unique",
+    "notes": "The great serpent rises from the sea to swallow the moon, causing an eclipse; to save it the people beat drums, gongs and cooking pots and cry out until the dragon disgorges it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Eugenio, Philippine Folk Literature: The Myths (1993)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Halas nga Naglamon sa Bulan",
+    "translation": "The Serpent That Swallows the Moon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Bakunawa is a giant sea serpent or dragon of Visayan belief that swallows the moon to cause eclipses; people make noise to force it to release the moon.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Eugenio, Philippine Folk Literature: The Myths (1993)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Bakunawa is the great serpent-dragon of the sea in Visayan belief, the devourer of the moon. In the folk account the sky once held several moons, of which Bakunawa swallowed all but one, rising out of the waters to take them; the eclipse is its attempt upon the last. When the moon darkens, the people beat drums, gongs and cooking pots and shout, and make noise until the serpent releases it. Sources vary in describing the creature, some giving it the mouth and whiskers of a great fish or naga and a coiled, moon-bright body; its enmity is with the moon and, in some tellings, with the god who set the moon in the sky."
+ },
+ {
+  "id": "visayan_sikalak",
+  "name": {
+   "primary": "Sikalak",
+   "alt": [
+    "Sicalac",
+    "Silalak"
+   ],
+   "transliterations": {
+    "ceb": "Sikalak",
+    "es": "Sicalac",
+    "etymology": "Related to lalaki/lalak, 'male'; the first man"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "human-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "unang tawo",
+     "script": "Latn",
+     "rom": "unang tawo"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "father-humankind",
+    "name": "fathers humankind",
+    "term": {
+     "value": "pagsugod sa katawhan",
+     "script": "Latn",
+     "rom": "pagsugod sa katawhan"
+    },
+    "inheritability": "full",
+    "notes": "From Sikalak and his companion Sikabay descend the peoples of the islands.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "visayan_sikalak-kawayan",
+    "kind": "plant",
+    "name": "Kawayan",
+    "term": {
+     "value": "kawayan",
+     "script": "Latn",
+     "rom": "kawayan"
+    },
+    "role": "the bamboo of origin",
+    "notes": "The single jointed bamboo that drifted to the feet of the gods and, split open by a bird, disclosed the first man in one internode and the first woman in the other.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590), ed. Souza & Turley (Brill, 2015)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "visayan_sikabay",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sikalak (Sicalac) is the first man of Visayan tradition, who emerged with the first woman Sikabay from a bamboo split open by a bird.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     },
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590), ed. Souza & Turley (Brill, 2015)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Sikalak is the first man in the Visayan origin tradition recorded by Loarca and the Boxer Codex. A single length of bamboo drifted upon the primordial sea to the feet of the gods; a bird, alighting and pecking at it, split the cane, and from one joint stepped Sikalak, the first man, and from the other Sikabay, the first woman. From the two of them the peoples of the islands are descended. His name preserves the Bisaya root for 'male,' set against Sikabay's 'female.' Colonial variants give the pair as Silalak and Sibabay."
+ },
+ {
+  "id": "visayan_sikabay",
+  "name": {
+   "primary": "Sikabay",
+   "alt": [
+    "Sicabay",
+    "Sibabay"
+   ],
+   "transliterations": {
+    "ceb": "Sikabay",
+    "es": "Sicabay",
+    "etymology": "Related to babaye, 'female'; the first woman"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Visayan",
+  "primaryTradition": "Visayan",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Visayan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "human-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "unang babaye",
+     "script": "Latn",
+     "rom": "unang babaye"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mother-humankind",
+    "name": "mothers humankind",
+    "term": {
+     "value": "pagsugod sa katawhan",
+     "script": "Latn",
+     "rom": "pagsugod sa katawhan"
+    },
+    "inheritability": "full",
+    "notes": "From Sikabay and her companion Sikalak descend the peoples of the islands.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590), ed. Souza & Turley (Brill, 2015)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "visayan_sikalak",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sikabay (Sicabay) is the first woman of Visayan tradition, who emerged with the first man Sikalak from a bamboo split open by a bird.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Loarca, Relacion de las Yslas Filipinas (1582), in Blair & Robertson, vol. V, pp. 121-135."
+     },
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590), ed. Souza & Turley (Brill, 2015)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Sikabay is the first woman in the Visayan origin tradition, who stepped from the second joint of the bamboo that a bird split open beside the first man Sikalak. In a folk elaboration she at first refuses to take Sikalak, being of the same stock, until the earthquake, the birds and the fishes of the sea urge the union, and only then does humankind begin. Her name carries the Bisaya root for 'female'; colonial sources also give the pair as Sibabay and Silalak."
+ }
+]
+```

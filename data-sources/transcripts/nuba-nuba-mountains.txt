@@ -1,0 +1,882 @@
+Nuba (Nuba Mountains) — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "nuba_supreme_sky_being",
+  "name": {
+   "primary": "Supreme Sky-Being (Nuba High God)",
+   "alt": [
+    "The High God",
+    "The Sky",
+    "The Great One"
+   ],
+   "transliterations": {
+    "en": "Supreme Sky-Being",
+    "etymology": "Across the Nuba hills the high god is most often designated by, or identified with, the ordinary word for 'sky' or 'above' in each community's language rather than by a fixed proper name."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Nuba (Nuba Mountains)",
+  "primaryTradition": "Nuba (Nuba Mountains)",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Nuba (Nuba Mountains) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sky and firmament",
+     "script": "Latn",
+     "rom": "sky"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947), chapters on religion"
+     }
+    ]
+   },
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "giver of rain",
+     "script": "Latn",
+     "rom": "rain"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "C. G. Seligman & B. Z. Seligman, Pagan Tribes of the Nilotic Sudan (Routledge, 1932)"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "maker of the world and of men",
+     "script": "Latn",
+     "rom": "creation"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John S. Mbiti, Concepts of God in Africa (SPCK, 1970)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send-the-rains",
+    "name": "sends the seasonal rains",
+    "term": {
+     "value": "sends rain",
+     "script": "Latn",
+     "rom": "send-the-rains"
+    },
+    "inheritability": "unique",
+    "notes": "The high god's chief practical relation to the living is as ultimate source of the rain on which hill cultivation depends.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "id": "withdraw-to-remoteness",
+    "name": "withdraws into remoteness",
+    "term": {
+     "value": "the withdrawn god",
+     "script": "Latn",
+     "rom": "deus otiosus"
+    },
+    "inheritability": "unique",
+    "notes": "The supreme being is characteristically otiose: acknowledged as creator yet distant, receiving little regular cult and lacking developed myth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John S. Mbiti, Concepts of God in Africa (SPCK, 1970)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "nuba_rain_power",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ],
+    "notes": "Sources differ on whether the rain is a distinct power or simply the agency and gift of the sky god."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Most Nuba hill communities recognise a remote supreme being associated with the sky and the sending of rain, invoked chiefly in drought and calamity.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "C. G. Seligman & B. Z. Seligman, Pagan Tribes of the Nilotic Sudan (Routledge, 1932)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "John S. Mbiti, Concepts of God in Africa (SPCK, 1970)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The high god is generally otiose, without elaborated myth or a single fixed personal name, and receives far less cult than the ancestors and the rain.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The Nuba of the Kordofan hills are not one people but a mosaic of distinct communities speaking Kordofanian and Eastern Sudanic languages, and their religion is correspondingly localized. Almost all of them, however, acknowledge a single supreme being conceived as creator of the world and of humankind and identified with the sky and the rain. This being is characteristically remote: it is credited with having made and ordered the world, yet it stands apart from daily life, is the object of little regular worship, and is turned to mainly in extremity, above all when the rains fail. It is seldom personified in narrative and in many communities is named by, or simply equated with, the everyday word for 'sky' or 'the above' rather than by a proper name, so that scholars differ on whether a true theonym exists at all. The weight of religious attention among the Nuba falls not on this distant creator but on the ancestral dead, on the rain, and on the spirit-powers that seize the diviner."
+ },
+ {
+  "id": "nuba_rain_power",
+  "name": {
+   "primary": "The Rain (Nuba Rain-Cult Numen)",
+   "alt": [
+    "The Rain-Power",
+    "The Rain-Spirit"
+   ],
+   "transliterations": {
+    "en": "the rain",
+    "etymology": "The object of the rain cult is 'the rain' itself, mediated in several groups through hereditary rain-chiefs and sacred rain-stones rather than through a named anthropomorphic deity."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nuba (Nuba Mountains)",
+  "primaryTradition": "Nuba (Nuba Mountains)",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Nuba (Nuba Mountains) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the rains",
+     "script": "Latn",
+     "rom": "rain"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "sphereId": "agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "fertility of the fields",
+     "script": "Latn",
+     "rom": "harvest"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Stevenson, The Nuba People of Kordofan Province (University of Khartoum, 1984)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-the-rains",
+    "name": "brings and withholds the rains",
+    "term": {
+     "value": "brings rain",
+     "script": "Latn",
+     "rom": "bring-the-rains"
+    },
+    "inheritability": "unique",
+    "notes": "The coming of the rains, and their disastrous failure, are the pivotal events the rain cult seeks to command.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "id": "answer-rain-sacrifice",
+    "name": "answers the rain-sacrifice",
+    "term": {
+     "value": "answers offering",
+     "script": "Latn",
+     "rom": "answer-rain-sacrifice"
+    },
+    "inheritability": "none",
+    "notes": "Drought is read as anger or as fault in the rain-maker, and is met with sacrifice at the sacred stones and groves.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Stevenson, The Nuba People of Kordofan Province (University of Khartoum, 1984)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nuba_rain_power-rain_stones",
+    "kind": "cult object",
+    "name": "sacred rain-stones",
+    "term": {
+     "value": "rain-stones",
+     "script": "Latn",
+     "rom": "rain-stones"
+    },
+    "role": "instrument of rain-making",
+    "notes": "Among the Nyimang and other groups the rain is controlled through hereditary rain-chiefs who guard sacred stones and other rain-medicines.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "nuba_supreme_sky_being",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ],
+    "notes": "In some communities the rain is treated as the direct gift or agency of the sky god."
+   },
+   {
+    "kind": "ally",
+    "personId": "nuba_green_stone_spirit",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, A Study of Shamanism in the Nuba Mountains, JRAI 76 (1946)"
+     }
+    ],
+    "notes": "Rain-making is among the powers the possessing spirit exercises through the diviner."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Rain, on which the hill agriculture wholly depends, is the focus of the most developed Nuba cults; in several groups hereditary rain-chiefs and sacred rain-stones mediate it.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "R. C. Stevenson, The Nuba People of Kordofan Province (University of Khartoum, 1984)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Failure of the rains is ascribed to spiritual anger or to the fault of the rain-maker and is answered with sacrifice.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "In an economy of hoe-cultivation on rocky hillsides, rain is the decisive good, and the rites surrounding it are the most elaborate in Nuba religion. The rain is treated as a power that can be angered, coaxed, and controlled: its failure spells famine, and blame falls on both offended spirits and the human specialist charged with securing it. Among the Nyimang and comparable communities that specialist is a hereditary rain-chief who guards sacred rain-stones and other medicines and performs the seasonal rites at fixed places. Whether the rain is an independent numen or merely the working of the distant sky god is not consistently resolved in the sources; in practice it is addressed as a power in its own right, and its mastery is also claimed by the possessed diviner."
+ },
+ {
+  "id": "nuba_green_stone_spirit",
+  "name": {
+   "primary": "The Green-Stone Spirit (Kujur's Tutelary Power)",
+   "alt": [
+    "The Kujur's Spirit",
+    "The Diviner's Spirit",
+    "Spirit of the Green Stone"
+   ],
+   "transliterations": {
+    "ar": "كُجُور",
+    "en": "kujur-spirit",
+    "etymology": "Kujur (Sudanese Arabic kujur) is the regional term for the possessed diviner-priest; the tutelary power that seizes him is bound up with the sacred green stones through which it acts."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nuba (Nuba Mountains)",
+  "primaryTradition": "Nuba (Nuba Mountains)",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Nuba (Nuba Mountains) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "divination",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "revelation of hidden causes",
+     "script": "Latn",
+     "rom": "divination"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, A Study of Shamanism in the Nuba Mountains, JRAI 76 (1946)"
+     }
+    ]
+   },
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "diagnosis and cure of affliction",
+     "script": "Latn",
+     "rom": "healing"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "sphereId": "possession",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "spirit-possession",
+     "script": "Latn",
+     "rom": "possession"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, A Study of Shamanism in the Nuba Mountains, JRAI 76 (1946)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "possess-the-diviner",
+    "name": "possesses the diviner",
+    "term": {
+     "value": "seizes the kujur",
+     "script": "Latn",
+     "rom": "possess-the-diviner"
+    },
+    "inheritability": "partial",
+    "notes": "The spirit seizes its medium in trance; the relationship, and the stones that anchor it, commonly pass to a successor.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, A Study of Shamanism in the Nuba Mountains, JRAI 76 (1946)"
+     }
+    ]
+   },
+   {
+    "id": "reveal-hidden-causes",
+    "name": "reveals the hidden causes of misfortune",
+    "term": {
+     "value": "uncovers the cause",
+     "script": "Latn",
+     "rom": "reveal-hidden-causes"
+    },
+    "inheritability": "none",
+    "notes": "Through the entranced diviner the spirit names the witch, the offended ancestor, or the broken rule behind sickness and loss.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "id": "dwell-in-the-green-stone",
+    "name": "dwells in the sacred green stone",
+    "term": {
+     "value": "inhabits the stone",
+     "script": "Latn",
+     "rom": "dwell-in-the-green-stone"
+    },
+    "inheritability": "partial",
+    "notes": "The power is materially localized in green stones kept and handled by the diviner.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, A Study of Shamanism in the Nuba Mountains, JRAI 76 (1946)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nuba_green_stone_spirit-green_stones",
+    "kind": "cult object",
+    "name": "sacred green stones",
+    "term": {
+     "value": "green stones",
+     "script": "Latn",
+     "rom": "green-stones"
+    },
+    "role": "seat of the possessing spirit",
+    "notes": "Small green stones serve as the material seat and instrument of the diviner's spirit, central to Nadel's account of Nuba shamanism.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, A Study of Shamanism in the Nuba Mountains, JRAI 76 (1946)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "nuba_rain_power",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, A Study of Shamanism in the Nuba Mountains, JRAI 76 (1946)"
+     }
+    ],
+    "notes": "Rain-making is among the feats claimed for the diviner's spirit."
+   },
+   {
+    "kind": "ally",
+    "personId": "nuba_ancestral_shades",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ],
+    "notes": "The possessing power is frequently identified with, or works alongside, the ancestral dead."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The kujur, a diviner possessed by a spirit, is the central religious specialist of the Nuba, his power bound up with sacred green stones through which the spirit acts.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, A Study of Shamanism in the Nuba Mountains, JRAI 76 (1946): 25-37"
+     },
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Nadel analysed Nuba diviner-mediumship as a form of shamanism in which the spirit seizes the diviner in trance to reveal hidden causes of misfortune and to command the rain.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, A Study of Shamanism in the Nuba Mountains, JRAI 76 (1946): 25-37"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The living heart of Nuba religion is the kujur, the diviner-priest into whom a spirit descends, and the power that possesses him is the being here registered. In trance the spirit speaks through its medium to uncover the concealed causes of sickness, death, and misfortune, to accuse witches, to prescribe cure and expiation, and, in the hands of the greatest practitioners, to make rain. What most sharply distinguishes the Nuba case, and what drew Nadel to call it shamanism, is the role of small green stones: the spirit is materially lodged in these stones, which the diviner keeps, handles, and passes to a successor, so that the tie between spirit and medium is inheritable through the objects. Sources vary on the spirit's nature, sometimes casting it as an ancestral shade, sometimes as a free spirit of the hills or waters, and the boundary between the diviner's power, the ancestors, and the rain is not sharply drawn."
+ },
+ {
+  "id": "nuba_ancestral_shades",
+  "name": {
+   "primary": "The Ancestral Shades (Grandfather-Spirits)",
+   "alt": [
+    "The Grandfathers",
+    "The Ancestral Dead",
+    "Lineage Shades"
+   ],
+   "transliterations": {
+    "en": "the grandfathers",
+    "etymology": "The venerated dead are commonly addressed under the kinship idiom of 'grandfather', the term for a forebear standing for the collective lineage dead."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nuba (Nuba Mountains)",
+  "primaryTradition": "Nuba (Nuba Mountains)",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Nuba (Nuba Mountains) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestors",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the venerated dead",
+     "script": "Latn",
+     "rom": "ancestors"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "sphereId": "kinship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "guardianship of the lineage",
+     "script": "Latn",
+     "rom": "lineage"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gerd Baumann, National Integration and Local Integrity: The Miri of the Nuba Mountains (Clarendon Press, 1987)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-the-lineage",
+    "name": "guards the living lineage",
+    "term": {
+     "value": "watches over kin",
+     "script": "Latn",
+     "rom": "guard-the-lineage"
+    },
+    "inheritability": "none",
+    "notes": "The dead remain concerned members of the descent group, protecting it when honoured.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gerd Baumann, National Integration and Local Integrity (Clarendon Press, 1987)"
+     }
+    ]
+   },
+   {
+    "id": "send-sickness-when-neglected",
+    "name": "sends sickness when neglected",
+    "term": {
+     "value": "afflicts the forgetful",
+     "script": "Latn",
+     "rom": "send-sickness-when-neglected"
+    },
+    "inheritability": "none",
+    "notes": "Neglect of offerings or breach of custom draws affliction, diagnosed by the diviner and repaired by sacrifice.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "id": "receive-libation",
+    "name": "receives libation and offering",
+    "term": {
+     "value": "takes the offering",
+     "script": "Latn",
+     "rom": "receive-libation"
+    },
+    "inheritability": "none",
+    "notes": "Beer, grain, and blood are poured or laid at household and lineage shrines.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nuba_ancestral_shades-shrine",
+    "kind": "shrine",
+    "name": "grandfather-shrine",
+    "term": {
+     "value": "ancestral shrine",
+     "script": "Latn",
+     "rom": "shrine"
+    },
+    "role": "place of ancestral offering",
+    "notes": "Household and lineage shrines mark the presence of the dead and receive libation and sacrifice.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gerd Baumann, National Integration and Local Integrity (Clarendon Press, 1987)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "nuba_green_stone_spirit",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ],
+    "notes": "The spirit possessing the diviner is often identified with an ancestral shade."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ancestral spirits, addressed under the idiom of 'grandfathers', are venerated at household and lineage shrines with libation and offering, and send sickness when neglected.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gerd Baumann, National Integration and Local Integrity (Clarendon Press, 1987)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The cult of the dead carries more of the everyday weight of Nuba religion than the distant creator does. The lineage forebears, addressed collectively through the kinship idiom of 'grandfather', remain interested members of the descent group: honoured with libations of beer, with grain and with blood at household and lineage shrines, they protect their living kin, uphold custom, and punish neglect or wrongdoing with sickness and misfortune. Affliction traced by the diviner to an offended ancestor is set right by sacrifice at the shrine. The ancestral dead are not sharply separated from the other spirit-powers: the being that possesses the kujur is frequently an ancestor, and the line between forebear, spirit, and the more diffuse powers of place is drawn differently from one hill community to the next."
+ },
+ {
+  "id": "nuba_bush_spirits",
+  "name": {
+   "primary": "The Bush Spirits (Powers of the Wild Land)",
+   "alt": [
+    "Spirits of the Bush",
+    "Wild-Land Spirits"
+   ],
+   "transliterations": {
+    "en": "spirits of the bush",
+    "etymology": "A class of powers belonging to the uncultivated bush, hills, and waters standing outside the domesticated order of homestead and field."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nuba (Nuba Mountains)",
+  "primaryTradition": "Nuba (Nuba Mountains)",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Nuba (Nuba Mountains) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wilderness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the uncultivated bush",
+     "script": "Latn",
+     "rom": "wilderness"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "sphereId": "disease",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "affliction and misfortune",
+     "script": "Latn",
+     "rom": "affliction"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "James C. Faris, Nuba Personal Art (Duckworth, 1972)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "haunt-the-wild-land",
+    "name": "haunts the wild and uncultivated land",
+    "term": {
+     "value": "dwells in the bush",
+     "script": "Latn",
+     "rom": "haunt-the-wild-land"
+    },
+    "inheritability": "none",
+    "notes": "These powers belong to hills, groves, and waters beyond the settled ground.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "id": "cause-affliction",
+    "name": "causes affliction and is placated by offering",
+    "term": {
+     "value": "brings and lifts affliction",
+     "script": "Latn",
+     "rom": "cause-affliction"
+    },
+    "inheritability": "none",
+    "notes": "Certain sicknesses and mishaps are laid to these spirits and answered with offering.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "James C. Faris, Nuba Personal Art (Duckworth, 1972)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Beyond the high god and the ancestors, the Nuba recognise spirits of the bush and wild places held responsible for certain afflictions and placated by offering.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "James C. Faris, Nuba Personal Art (Duckworth, 1972)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Alongside the creator, the rain, and the ancestral dead, Nuba communities reckon with a less clearly defined order of spirits belonging to the wild: to the bush, the hills, groves, springs, and waters that lie beyond the cultivated ground and the homestead. These powers are not the object of an organized cult like the ancestors or the rain; they surface chiefly in the explanation of affliction, when a sickness or mishap is traced to an offended or malevolent spirit of a place and answered with an offering, often at the diviner's direction. Their names, ranks, and attributes are not systematized and vary from one community and one diviner to the next, and the sources treat them as a diffuse category rather than a fixed roster of individuals."
+ },
+ {
+  "id": "nuba_earth_power",
+  "name": {
+   "primary": "The Earth (Earth-Power)",
+   "alt": [
+    "The Ground",
+    "The Earth-Power"
+   ],
+   "transliterations": {
+    "en": "the earth",
+    "etymology": "The ground onto which libations are poured and by which oaths are sworn, conceived as a power underlying fertility and truth."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nuba (Nuba Mountains)",
+  "primaryTradition": "Nuba (Nuba Mountains)",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Nuba (Nuba Mountains) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the ground",
+     "script": "Latn",
+     "rom": "earth"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "fertility of the ground",
+     "script": "Latn",
+     "rom": "fertility"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "receive-poured-libation",
+    "name": "receives the poured libation",
+    "term": {
+     "value": "takes the poured offering",
+     "script": "Latn",
+     "rom": "receive-poured-libation"
+    },
+    "inheritability": "none",
+    "notes": "Beer and other offerings poured on the ground reach the ancestors and the earth together.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   },
+   {
+    "id": "witness-the-oath",
+    "name": "witnesses oaths and truth",
+    "term": {
+     "value": "stands witness",
+     "script": "Latn",
+     "rom": "witness-the-oath"
+    },
+    "inheritability": "none",
+    "notes": "The earth is invoked in swearing, standing as witness to truth and wrongdoing.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Libations poured on the ground and oaths sworn by the earth point to a conception of the earth as a power underlying fertility and truth, though it is only weakly personified.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. F. Nadel, The Nuba (Oxford University Press, 1947)"
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "The earth appears in Nuba ritual less as a fully drawn deity than as a power implicit in practice. Offerings are poured onto the ground, where they reach at once the buried ancestors and the earth itself, and the ground is invoked in oath and ordeal as a witness to truth. From these usages ethnographers infer a conception of the earth as a fertile and moral power complementary to the sky, but it is thinly personified, carries no developed myth, and is not everywhere clearly distinguished from the ancestral dead who lie within it. It is registered here as a genuine but minor and weakly individuated focus of Nuba religious practice."
+ }
+]
+```

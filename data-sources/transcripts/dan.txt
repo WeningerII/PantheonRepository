@@ -1,0 +1,1332 @@
+Dan — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "dan_zlan",
+  "name": {
+   "primary": "Zlan",
+   "alt": [
+    "Zan",
+    "Zra",
+    "Zlã",
+    "Xra",
+    "Zlàn"
+   ],
+   "transliterations": {
+    "dnj": "Zlan",
+    "etymology": "Also rendered Zan, Zra, Xra or Zlã across Dan and Gio dialects; the term names the supreme creator and, by extension, the sky and the divine in the Dan language."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dan",
+  "primaryTradition": "Dan",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Dan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Zlan",
+     "script": "Latin",
+     "rom": "Zlan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Schwab, Tribes of the Liberian Hinterland (Cambridge, MA: Peabody Museum of American Archaeology and Ethnology, Harvard University, 1947), on the Gio-Dan supreme creator."
+     }
+    ]
+   },
+   {
+    "sphereId": "sky-supreme",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Zlan",
+     "script": "Latin",
+     "rom": "Zlan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)', on the distant sky-creator of Dan cosmology."
+     }
+    ]
+   },
+   {
+    "sphereId": "life-giving",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "du",
+     "script": "Latin",
+     "rom": "du"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Eberhard Fischer and Hans Himmelheber, The Arts of the Dan in West Africa (Zurich: Museum Rietberg, 1984), on the soul (du) imparted by the creator."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "create-world",
+    "name": "created the universe and all beings",
+    "term": {
+     "value": "Zlan",
+     "script": "Latin",
+     "rom": "Zlan"
+    },
+    "inheritability": "unique",
+    "notes": "Fashioned the cosmos and every living thing.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)'."
+     }
+    ]
+   },
+   {
+    "id": "impart-soul",
+    "name": "imparts the soul (du) at birth",
+    "term": {
+     "value": "du",
+     "script": "Latin",
+     "rom": "du"
+    },
+    "inheritability": "unique",
+    "notes": "Every human and animal receives its spirit-soul from the creator at birth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   },
+   {
+    "id": "bestow-mask",
+    "name": "gave humankind the mask (ge)",
+    "term": {
+     "value": "ge",
+     "script": "Latin",
+     "rom": "ge"
+    },
+    "inheritability": "unique",
+    "notes": "In Dan tradition the mask through which the forest spirits enter the village was received from Zlan.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984), on the mythic origin of the ge."
+     }
+    ]
+   },
+   {
+    "id": "remain-hidden",
+    "name": "remains unseen and unreachable",
+    "term": {
+     "value": "Zlan",
+     "script": "Latin",
+     "rom": "Zlan"
+    },
+    "inheritability": "none",
+    "notes": "The creator is held to be beyond direct human contact, approached only through the mediating power zu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)'."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "dan_zu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)', describing zu as the holy spirit of Zlan."
+     }
+    ],
+    "notes": "Zu is the immanent spirit-power that emanates from and mediates the otherwise inaccessible creator."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Zlan is the supreme creator god of the Dan, who made the universe and everything in it but remains inaccessible to direct human contact.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)'."
+     },
+     {
+      "kind": "primary",
+      "reference": "George Schwab, Tribes of the Liberian Hinterland (Peabody Museum, Harvard University, 1947)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The Dan received the mask (ge) through which forest spirits enter the village from their creator Zlan.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (Museum Rietberg, 1984)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Zlan is the supreme creator of Dan and Gio cosmology, the maker of the universe and of every living creature. Sources record the name in several dialectal forms, including Zan, Zra and Xra. Zlan fashioned the world and imparts to each person and animal its soul (du) at birth, yet is held to be distant and unreachable: no worshipper may see or approach the creator directly. Communication instead passes through zu, the immanent holy spirit that emanates from Zlan and is reached in dreams, divination and masquerade. Dan tradition also credits Zlan with giving humankind the mask (ge), the instrument by which the invisible spirits of the forest are made present and controllable within the ordered world of the village."
+ },
+ {
+  "id": "dan_zu",
+  "name": {
+   "primary": "Zu",
+   "alt": [
+    "Du",
+    "Dü",
+    "Zru",
+    "Zü"
+   ],
+   "transliterations": {
+    "dnj": "zu",
+    "etymology": "Northern Dan zu; the cognate Gio and Southern form is du, which also denotes the individual soul imparted to a person at birth. Sources differ on whether zu and du name one force or two closely related ones."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Dan",
+  "primaryTradition": "Dan",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Dan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "spirit-force",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "zu",
+     "script": "Latin",
+     "rom": "zu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)', on zu as the holy spirit-power of the supreme god."
+     }
+    ]
+   },
+   {
+    "sphereId": "mediation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "du",
+     "script": "Latin",
+     "rom": "du"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Schwab, Tribes of the Liberian Hinterland (Peabody Museum, 1947), on du as the mediator between the Gio and the supreme god."
+     }
+    ]
+   },
+   {
+    "sphereId": "soul",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "du",
+     "script": "Latin",
+     "rom": "du"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mediate-divine",
+    "name": "mediates between humanity and the creator",
+    "term": {
+     "value": "zu",
+     "script": "Latin",
+     "rom": "zu"
+    },
+    "inheritability": "unique",
+    "notes": "The reachable spirit-power standing between people and the unreachable Zlan.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)'."
+     }
+    ]
+   },
+   {
+    "id": "inhabit-object",
+    "name": "embodies itself in a consecrated object",
+    "term": {
+     "value": "zu",
+     "script": "Latin",
+     "rom": "zu"
+    },
+    "inheritability": "partial",
+    "notes": "The Dan harness zu by fashioning an object or mask for the power to inhabit.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   },
+   {
+    "id": "speak-in-dreams",
+    "name": "communicates through dreams",
+    "term": {
+     "value": "zu",
+     "script": "Latin",
+     "rom": "zu"
+    },
+    "inheritability": "partial",
+    "notes": "Dreaming is the ordinary channel through which people receive the will of zu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)'."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dan_zu-power-object",
+    "kind": "sacred object",
+    "name": "zu object",
+    "term": {
+     "value": "zu",
+     "script": "Latin",
+     "rom": "zu"
+    },
+    "role": "vessel",
+    "notes": "A consecrated object or figure fashioned so that the spirit-power zu may take up residence and be honoured.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "dan_zlan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)', describing zu as the holy spirit of Zlan."
+     }
+    ],
+    "notes": "Zu emanates from the creator Zlan and carries his power into the human world."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Zu is an immanent holy spirit-power emanating from Zlan that mediates between people and the creator and is contacted through dreams, divination and masquerade.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Britannica, 'Dan (African people)'."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Among the Gio the mediating spirit-power is called du, which is also the individual soul that may be reincarnated in another person or animal.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "George Schwab, Tribes of the Liberian Hinterland (Peabody Museum, 1947)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Zu is the immanent, active aspect of the divine in Dan religion: the holy spirit-power that emanates from the distant creator Zlan and permeates daily life. Because Zlan is unreachable, it is zu that people actually address, harnessing it by fashioning an object or mask for the power to inhabit, and receiving its guidance through dreams and divination. The Gio and southern communities use the cognate term du for this mediating force; du also names the individual soul that every being receives at birth and that, at death, may pass into another person or an animal. Sources differ on how sharply zu and du should be distinguished, some treating them as dialectal names for a single power, others separating the impersonal spirit-force from the personal soul."
+ },
+ {
+  "id": "dan_deangle",
+  "name": {
+   "primary": "Deangle",
+   "alt": [
+    "Deanglè",
+    "Dean gle",
+    "Deangle ge"
+   ],
+   "transliterations": {
+    "dnj": "deanglè",
+    "etymology": "gle / glö 'mask-spirit, mysterious being'; the term names the gentle, feminine ge, glossed as the peaceful or joking masquerade."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Dan",
+  "primaryTradition": "Dan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Dan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "initiation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "deanglè",
+     "script": "Latin",
+     "rom": "deangle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984), on the deangle serving the boys' initiation camp."
+     }
+    ]
+   },
+   {
+    "sphereId": "nurture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "deanglè",
+     "script": "Latin",
+     "rom": "deangle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Deangle ('peaceful spirit') mask, Dan peoples."
+     }
+    ]
+   },
+   {
+    "sphereId": "entertainment",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "deanglè",
+     "script": "Latin",
+     "rom": "deangle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "provision-initiates",
+    "name": "gathers food for the initiation camp",
+    "term": {
+     "value": "deanglè",
+     "script": "Latin",
+     "rom": "deangle"
+    },
+    "inheritability": "unique",
+    "notes": "Comes daily from the boys' seclusion camp into the village to ask the women for meals to carry back to the initiates.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   },
+   {
+    "id": "embody-feminine-grace",
+    "name": "embodies gentle, feminine beauty",
+    "term": {
+     "value": "deanglè",
+     "script": "Latin",
+     "rom": "deangle"
+    },
+    "inheritability": "partial",
+    "notes": "A benevolent ge whose narrow, almond-shaped eyes and refined features are read as feminine and peaceful.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Deangle mask, Dan peoples."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dan_deangle-mask",
+    "kind": "mask",
+    "name": "deangle face mask",
+    "term": {
+     "value": "ge",
+     "script": "Latin",
+     "rom": "ge"
+    },
+    "role": "embodiment",
+    "notes": "A smooth-featured wooden face mask with slit, almond eyes through which the deangle spirit is made present.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Deangle mask, Dan peoples."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "dan_tankagle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984), on the benevolent entertaining masks."
+     }
+    ],
+    "notes": "Ranked among the gentle, entertaining ge that appear in the same masquerade cycles."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Deangle is a gentle, feminine mask-spirit that leaves the boys' initiation camp daily to collect food from the village women for the initiates.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Deangle ('peaceful spirit') mask, Dan peoples."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Deangle is the gentle, feminine mask-spirit (ge) of the Dan, one of the benevolent forest spirits made present through masquerade. Its carved face is smooth and idealised, with narrow, almond-shaped eyes and refined features understood as feminine, and its temperament is peaceful and nurturing. During the seclusion of the boys' initiation camp the deangle comes each day into the village to ask the women for food, which it carries back to sustain the initiates, and it also entertains with graceful movement. Museum tradition glosses it as the peaceful or joking masquerade, set in deliberate contrast with the aggressive, masculine masks of war and misrule."
+ },
+ {
+  "id": "dan_gunyege",
+  "name": {
+   "primary": "Gunye ge",
+   "alt": [
+    "Gunyege",
+    "Gunye gle",
+    "Gunyega"
+   ],
+   "transliterations": {
+    "dnj": "gunye ge",
+    "etymology": "gunye 'foot-race, running' + ge 'mask-spirit'; the racing masquerade."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Dan",
+  "primaryTradition": "Dan",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Dan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "athletic-competition",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gunye ge",
+     "script": "Latin",
+     "rom": "gunye ge"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Gunye Ge (racing) mask, Dan peoples."
+     }
+    ]
+   },
+   {
+    "sphereId": "speed",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gunye ge",
+     "script": "Latin",
+     "rom": "gunye ge"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "race-swiftly",
+    "name": "runs foot-races as a village champion",
+    "term": {
+     "value": "gunye ge",
+     "script": "Latin",
+     "rom": "gunye ge"
+    },
+    "inheritability": "unique",
+    "notes": "Worn by a community's fastest runner, who as the masked spirit pursues an unmasked runner in competitive sprints between villages.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Gunye Ge mask, Dan peoples."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dan_gunyege-mask",
+    "kind": "mask",
+    "name": "gunye ge racing mask",
+    "term": {
+     "value": "ge",
+     "script": "Latin",
+     "rom": "ge"
+    },
+    "role": "embodiment",
+    "notes": "A relatively plain, sturdy face mask with round eye-holes, worn tightly for running.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Gunye Ge mask, Dan peoples."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Gunye ge is the racing mask-spirit, worn by a community's champion foot-racer in competitive sprints.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Gunye Ge mask, Dan peoples."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Gunye ge is the racing mask-spirit of the Dan, embodied by a village's swiftest young man. As the spirit, the runner competes in foot-races, characteristically pursuing an unmasked rival in sprints staged between neighbouring villages; a runner who is overtaken must in turn take up the mask. The gunye ge is one of the athletic, competitive ge, its mask kept relatively plain and robust so that it can be worn while running. Fischer and Himmelheber note that a mask's role among the Dan is not fixed for life, and a racing ge may in time be promoted to a more senior office."
+ },
+ {
+  "id": "dan_bugle",
+  "name": {
+   "primary": "Bugle",
+   "alt": [
+    "Bu gle",
+    "Bugle ge",
+    "Bagle"
+   ],
+   "transliterations": {
+    "dnj": "bugle",
+    "etymology": "gle 'mask-spirit'; the fierce war ge. Sources sometimes conflate the war mask bugle with the entertaining dance mask bagle."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Dan",
+  "primaryTradition": "Dan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Dan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bugle",
+     "script": "Latin",
+     "rom": "bugle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for Dan masks, on the bugle leading men into battle."
+     }
+    ]
+   },
+   {
+    "sphereId": "mobilization",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bugle",
+     "script": "Latin",
+     "rom": "bugle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "incite-war",
+    "name": "stirs warlike fervour",
+    "term": {
+     "value": "bugle",
+     "script": "Latin",
+     "rom": "bugle"
+    },
+    "inheritability": "unique",
+    "notes": "Its dark face, bared animal fangs and heavy beard rouse the men of the village to martial excitement.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   },
+   {
+    "id": "lead-warriors",
+    "name": "leads men into battle",
+    "term": {
+     "value": "bugle",
+     "script": "Latin",
+     "rom": "bugle"
+    },
+    "inheritability": "unique",
+    "notes": "Historically accompanied warriors on campaign and marched at their head.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for Dan masks."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dan_bugle-mask",
+    "kind": "mask",
+    "name": "bugle war mask",
+    "term": {
+     "value": "ge",
+     "script": "Latin",
+     "rom": "ge"
+    },
+    "role": "embodiment",
+    "notes": "A dark, aggressive mask with an open mouth, protruding animal fangs, a large beard and often a helmet superstructure.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for Dan masks."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "dan_kagle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984), on the aggressive masculine masks."
+     }
+    ],
+    "notes": "Grouped with the fierce, provocative ge that agitate and discipline the community."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Bugle is the war mask-spirit that stirs warlike fervour and historically led men into battle.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for Dan masks."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Bugle is the war mask-spirit of the Dan, the fierce masculine counterpart to gentle ge such as deangle. Dark-faced, with an open mouth, bared animal fangs and a heavy beard, it is meant to rouse martial fervour in the village and, in earlier times, to march at the head of the warriors and accompany them into battle. Its aggression also served internal order, agitating and disciplining the community. Sources are not consistent in nomenclature: the fierce war mask bugle is sometimes conflated with, or distinguished from, the lively entertaining dance mask bagle."
+ },
+ {
+  "id": "dan_zakpai",
+  "name": {
+   "primary": "Zakpai",
+   "alt": [
+    "Zakpei",
+    "Zakpä",
+    "Zakpai ge"
+   ],
+   "transliterations": {
+    "dnj": "zakpai",
+    "etymology": "The fire-watch ge; its face is characteristically bound in red cloth."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Dan",
+  "primaryTradition": "Dan",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Dan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "fire-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "zakpai",
+     "script": "Latin",
+     "rom": "zakpai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984), on the zakpai enforcing fire safety in the dry season."
+     }
+    ]
+   },
+   {
+    "sphereId": "village-order",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "zakpai",
+     "script": "Latin",
+     "rom": "zakpai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection notes on Dan mask functions."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "enforce-fire-safety",
+    "name": "ensures cooking fires are extinguished",
+    "term": {
+     "value": "zakpai",
+     "script": "Latin",
+     "rom": "zakpai"
+    },
+    "inheritability": "unique",
+    "notes": "During the dry harmattan season it patrols the village at midday to see that all fires are put out, guarding the thatched houses against conflagration.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dan_zakpai-mask",
+    "kind": "mask",
+    "name": "zakpai fire mask",
+    "term": {
+     "value": "ge",
+     "script": "Latin",
+     "rom": "ge"
+    },
+    "role": "embodiment",
+    "notes": "A carved wooden face characteristically covered or bound with red cloth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Zakpai is the fire-prevention mask-spirit that, in the dry season, ensures all village fires are extinguished to prevent conflagration; its face is bound in red cloth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Zakpai is the fire-guardian mask-spirit of the Dan, an enforcing ge charged with protecting the village from fire during the parched harmattan season. At the dangerous midday hours it moves swiftly through the settlement to see that every cooking fire has been put out, since a single unattended flame could destroy the closely built, thatched houses. Its authority is coercive rather than gentle, and it is recognised by a carved face characteristically covered or bound with red cloth."
+ },
+ {
+  "id": "dan_gagon",
+  "name": {
+   "primary": "Gägon",
+   "alt": [
+    "Gagon",
+    "Ge gon",
+    "Gegon",
+    "Ge gõ"
+   ],
+   "transliterations": {
+    "dnj": "gägon",
+    "etymology": "ge 'mask-spirit' + gon (beak / hornbill); the beaked, hornbill ge, recorded by the Met as Ge Gon."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Dan",
+  "primaryTradition": "Dan",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Dan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gägon",
+     "script": "Latin",
+     "rom": "gagon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Bird Mask (Ge Gon), Dan peoples."
+     }
+    ]
+   },
+   {
+    "sphereId": "teaching-proverbs",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gägon",
+     "script": "Latin",
+     "rom": "gagon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "recite-proverbs",
+    "name": "sings songs and proverbs",
+    "term": {
+     "value": "gägon",
+     "script": "Latin",
+     "rom": "gagon"
+    },
+    "inheritability": "unique",
+    "notes": "Historically sang proverbs and songs to instruct the village, especially concerning the hornbill it represents.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Bird Mask (Ge Gon), Dan peoples."
+     }
+    ]
+   },
+   {
+    "id": "embody-hornbill",
+    "name": "takes the form of the hornbill",
+    "term": {
+     "value": "gon",
+     "script": "Latin",
+     "rom": "gon"
+    },
+    "inheritability": "partial",
+    "notes": "Its long projecting beak fuses a human face with the bird whose lore it teaches.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Bird Mask (Ge Gon), Dan peoples."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dan_gagon-mask",
+    "kind": "mask",
+    "name": "gägon beaked mask",
+    "term": {
+     "value": "ge",
+     "script": "Latin",
+     "rom": "ge"
+    },
+    "role": "embodiment",
+    "notes": "A human face surmounted or extended by a long, articulated bird's beak, associated especially with the northern Dan and the Maou sub-group.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Bird Mask (Ge Gon), Dan peoples."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "dan_tankagle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984), on the entertaining, proverb-telling masks."
+     }
+    ],
+    "notes": "Paired among the entertaining ge that sing and recite proverbs before the village."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Gägon (Ge Gon) is a beaked, hornbill mask-spirit that sang songs and proverbs to teach the village, later performing to entertain with drummers and singers.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Bird Mask (Ge Gon), Dan peoples."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Gägon, recorded also as Ge Gon, is the beaked mask-spirit of the Dan, blending a human face with the long projecting bill of a hornbill. Prevalent among the northern Dan and the Maou sub-group, it was formerly a teaching spirit, singing songs and proverbs to instruct the community, particularly in the lore of the hornbill it represents. In its later, entertaining role it dances before the village accompanied by drummers and singers. The bird form marks it as a spirit mediating between the human settlement and the wisdom of the forest."
+ },
+ {
+  "id": "dan_kagle",
+  "name": {
+   "primary": "Kagle",
+   "alt": [
+    "Kaogle",
+    "Kágle",
+    "Ka gle",
+    "Kaugle"
+   ],
+   "transliterations": {
+    "dnj": "kagle",
+    "etymology": "gle 'mask-spirit'; the hooked or troublemaking ge, sometimes identified with the chimpanzee."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Dan",
+  "primaryTradition": "Dan",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Dan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "misrule",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kagle",
+     "script": "Latin",
+     "rom": "kagle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Kagle mask, Dan peoples."
+     }
+    ]
+   },
+   {
+    "sphereId": "festivity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kagle",
+     "script": "Latin",
+     "rom": "kagle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   },
+   {
+    "sphereId": "combat-instruction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kagle",
+     "script": "Latin",
+     "rom": "kagle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection notes on Dan mask functions."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hurl-hooks",
+    "name": "throws hooked branches at onlookers",
+    "term": {
+     "value": "kagle",
+     "script": "Latin",
+     "rom": "kagle"
+    },
+    "inheritability": "unique",
+    "notes": "Carries bundles of hooked branches or sticks, flinging them to warm up a dance ground and to provoke the crowd.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Kagle mask, Dan peoples."
+     }
+    ]
+   },
+   {
+    "id": "provoke-disorder",
+    "name": "disrupts festivities with erratic movement",
+    "term": {
+     "value": "kagle",
+     "script": "Latin",
+     "rom": "kagle"
+    },
+    "inheritability": "unique",
+    "notes": "A troublemaking spirit, sometimes cast as a chimpanzee, that stirs up the crowd with boisterous, unpredictable behaviour.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Kagle mask, Dan peoples."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dan_kagle-mask",
+    "kind": "mask",
+    "name": "kagle hook mask",
+    "term": {
+     "value": "gle",
+     "script": "Latin",
+     "rom": "gle"
+    },
+    "role": "embodiment",
+    "notes": "An angular mask with prominent, uneven teeth and, on some examples, a row of antelope horns across the forehead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Kagle mask, Dan peoples."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "dan_bugle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984), on the aggressive masculine masks."
+     }
+    ],
+    "notes": "Grouped with the fierce, provocative ge that agitate and toughen the community."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kagle is a troublemaking mask-spirit, sometimes identified as a chimpanzee, that throws hooked branches at onlookers to warm up a dance ground and disrupts festivities with erratic movement.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection record for the Kagle mask, Dan peoples."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kagle is the hooked, troublemaking mask-spirit of the Dan, sometimes cast as a chimpanzee. Its angular face bears prominent, uneven teeth, and some examples carry a row of antelope horns across the forehead. In performance it carries bundles of hooked branches, hurling them at spectators to clear and warm up a dancing ground and to provoke the crowd, and it disrupts festivities with boisterous, erratic movement. Its aggressive mischief has a disciplinary edge, and the mask is also associated with instructing young men in combat, placing it among the fierce ge alongside the war spirit bugle."
+ },
+ {
+  "id": "dan_tankagle",
+  "name": {
+   "primary": "Tankagle",
+   "alt": [
+    "Tan gle",
+    "Tanngle",
+    "Tankagle ge"
+   ],
+   "transliterations": {
+    "dnj": "tankagle",
+    "etymology": "gle 'mask-spirit'; the singing and entertaining ge that recites proverbs."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Dan",
+  "primaryTradition": "Dan",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Dan traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "entertainment",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tankagle",
+     "script": "Latin",
+     "rom": "tankagle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection notes on Dan entertaining masks."
+     }
+    ]
+   },
+   {
+    "sphereId": "song",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tankagle",
+     "script": "Latin",
+     "rom": "tankagle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   },
+   {
+    "sphereId": "proverb-lore",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tankagle",
+     "script": "Latin",
+     "rom": "tankagle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sing-and-mime",
+    "name": "entertains with song, dance and mime",
+    "term": {
+     "value": "tankagle",
+     "script": "Latin",
+     "rom": "tankagle"
+    },
+    "inheritability": "unique",
+    "notes": "Performs aesthetically pleasing dances, skits and mimes while singing and reciting proverbs.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "dan_tankagle-mask",
+    "kind": "mask",
+    "name": "tankagle entertainment mask",
+    "term": {
+     "value": "gle",
+     "script": "Latin",
+     "rom": "gle"
+    },
+    "role": "embodiment",
+    "notes": "A finely carved, human-featured face mask of the pleasing type used for song and dance.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection notes on Dan entertaining masks."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "dan_deangle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984), on the benevolent entertaining masks."
+     }
+    ],
+    "notes": "Ranked among the gentle, entertaining ge that appear together in the same masquerade cycles."
+   },
+   {
+    "kind": "companion",
+    "personId": "dan_gagon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984), on the singing, proverb-telling masks."
+     }
+    ],
+    "notes": "Paired among the entertaining ge that sing and recite proverbs before the village."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tankagle is a singing, entertaining mask-spirit that performs dances, skits and mimes while reciting proverbs.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fischer and Himmelheber, The Arts of the Dan in West Africa (1984)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "The Metropolitan Museum of Art, collection notes on Dan entertaining masks."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Tankagle is the singing entertainer among the mask-spirits of the Dan, one of the gentle, pleasing ge. In performance it delights the village with graceful dances, skits and mimes, singing songs and telling proverbs, and it appears in the same festive cycles as the nurturing deangle and the beaked gägon. Its refined, human-featured mask marks it as a benevolent spirit, the aesthetic counterpart to the fierce ge of war and misrule."
+ }
+]
+```

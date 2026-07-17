@@ -1,0 +1,766 @@
+Mambai — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "mambai_ama_lete",
+  "name": {
+   "primary": "Father Heaven",
+   "alt": [
+    "Ama Lete",
+    "Ama Rai Lete",
+    "Sky Father"
+   ],
+   "transliterations": {
+    "mgm": "Ama Lete",
+    "etymology": "Mambai ama 'father' with lete/leten 'above, the upper realm'; Traube renders the figure 'Father Heaven'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mambai",
+  "primaryTradition": "Mambai",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Mambai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lete",
+     "script": "Latn",
+     "rom": "lete"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Elizabeth G. Traube, Cosmology and Social Life: Ritual Exchange among the Mambai of East Timor (Chicago: University of Chicago Press, 1986), chs. on cosmogony (Father Heaven as the ascendant celestial parent)"
+     }
+    ]
+   },
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "usan",
+     "script": "Latn",
+     "rom": "usan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986) (the sky-father as source of rain and light descending upon the earth)"
+     }
+    ]
+   },
+   {
+    "sphereId": "vitality",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nurak",
+     "script": "Latn",
+     "rom": "nurak"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986) (life-giving breath sent from the upper world)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send-rain",
+    "name": "send rain and light from the upper world",
+    "term": {
+     "value": "usan-lelo",
+     "script": "Latn",
+     "rom": "usan-lelo"
+    },
+    "inheritability": "unique",
+    "notes": "From his height Father Heaven releases the rain and light that quicken the earth's fertility.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986)"
+     }
+    ]
+   },
+   {
+    "id": "ascend-on-high",
+    "name": "withdraw to the encompassing height",
+    "term": {
+     "value": "sae lete",
+     "script": "Latn",
+     "rom": "sae lete"
+    },
+    "inheritability": "none",
+    "notes": "At the separation of the primordial couple he rises to become the distant, encompassing sky.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, 'Mambai Rituals of Black and White,' in J. J. Fox (ed.), The Flow of Life (Harvard University Press, 1980), pp. 290-314"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "mambai_ina_rae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986) (the primordial couple Father Heaven and Mother Earth)"
+     }
+    ],
+    "notes": "The primordial couple whose union and separation open the ordered world."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Father Heaven is the celestial half of the Mambai primordial couple, source of rain and life, who ascends to the upper world at the separation of heaven and earth.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elizabeth G. Traube, Cosmology and Social Life: Ritual Exchange among the Mambai of East Timor (Chicago: University of Chicago Press, 1986)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Elizabeth G. Traube, 'Mambai Rituals of Black and White,' in J. J. Fox (ed.), The Flow of Life: Essays on Eastern Indonesia (Cambridge, MA: Harvard University Press, 1980), pp. 290-314"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "In Mambai cosmology Father Heaven is the celestial progenitor who, together with Mother Earth, forms the primordial couple from whose union the ordered world descends. In the beginning the two lay conjoined in darkness; their separation opens the space of creation, Father Heaven rising to the luminous upper world while Mother Earth settles below. From his height he sends down rain, light, and the vivifying breath that quickens living things, and he is invoked in agricultural and life-giving rites as the distant, ascendant source of vitality. Ritual casts him as the withdrawn, encompassing sky-father whose fructifying gifts must be answered by offerings returned to the earth. He is remembered as father of the primordial ancestors through whom the ritual and political heritage of Timor is divided."
+ },
+ {
+  "id": "mambai_ina_rae",
+  "name": {
+   "primary": "Mother Earth",
+   "alt": [
+    "Ina Rae",
+    "Ina Rai",
+    "Earth Mother"
+   ],
+   "transliterations": {
+    "mgm": "Ina Rae",
+    "etymology": "Mambai ina 'mother' with rae/rai 'earth, land'; Traube renders the figure 'Mother Earth'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mambai",
+  "primaryTradition": "Mambai",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Mambai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "rae",
+     "script": "Latn",
+     "rom": "rae"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986) (Mother Earth becomes the land of Timor)"
+     }
+    ]
+   },
+   {
+    "sphereId": "agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hena",
+     "script": "Latn",
+     "rom": "hena"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986) (the maternal earth yields crops and nourishment)"
+     }
+    ]
+   },
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mate",
+     "script": "Latn",
+     "rom": "mate"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986) (the primordial death and burial in the earth found the funerary cycle)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear-the-land",
+    "name": "become and bear the land of Timor",
+    "term": {
+     "value": "rae naʼin",
+     "script": "Latn",
+     "rom": "rae nain"
+    },
+    "inheritability": "unique",
+    "notes": "Her separated body becomes the ground itself, the island and its living beings.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986)"
+     }
+    ]
+   },
+   {
+    "id": "receive-the-dead",
+    "name": "receive the dead and life returned to the source",
+    "term": {
+     "value": "simu mate",
+     "script": "Latn",
+     "rom": "simu mate"
+    },
+    "inheritability": "unique",
+    "notes": "Life drawn from the earth must be returned to her body; the first burial founds the obligations of the funerary cycle.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, 'Obligations to the Source,' in D. Maybury-Lewis & U. Almagor (eds.), The Attraction of Opposites (University of Michigan Press, 1989), pp. 321-344"
+     }
+    ]
+   }
+  ],
+  "parentIds": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "mambai_ama_lete",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986) (the primordial couple Father Heaven and Mother Earth)"
+     }
+    ],
+    "notes": "The primordial couple whose union and separation open the ordered world."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mother Earth is the terrestrial half of the Mambai primordial couple whose body becomes the land, and whose primordial death and burial institute the funerary cycle of returning life to its source.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elizabeth G. Traube, Cosmology and Social Life: Ritual Exchange among the Mambai of East Timor (Chicago: University of Chicago Press, 1986)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Elizabeth G. Traube, 'Obligations to the Source: Complementarity and Hierarchy in an Eastern Indonesian Society,' in The Attraction of Opposites (University of Michigan Press, 1989), pp. 321-344"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Mother Earth is the terrestrial half of the Mambai primordial couple, the maternal body from which the land of Timor and its living beings take form. After her separation from Father Heaven she becomes the ground itself, and Mambai tradition dwells on a primordial death and burial within her: the first mortality institutes the funerary cycle, whereby life drawn from the earth must be ritually returned to its maternal source. As nurturer she yields crops, water, and the dead alike, and the autochthonous 'black' ritual houses claim precedence as keepers of the obligations owed to her. She is mother of the ancestral brothers through whom ritual and political authority are apportioned. Sources describe her both as an enduring cosmic parent and as the one who suffers the primordial death, a tension the ritual system exists to redress."
+ },
+ {
+  "id": "mambai_tatamailau",
+  "name": {
+   "primary": "Grandfather Mailau",
+   "alt": [
+    "Tatamailau",
+    "Tata Mailau",
+    "Foho Ramelau",
+    "Ramelau"
+   ],
+   "transliterations": {
+    "mgm": "Tata Mailau",
+    "tet": "Tatamailau",
+    "etymology": "tata 'grandfather, ancestor' + Mailau, the name of the highest peak of Timor (Mount Ramelau)."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Mambai",
+  "primaryTradition": "Mambai",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Mambai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "mountains",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "foho",
+     "script": "Latn",
+     "rom": "foho"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Traube, Cosmology and Social Life (1986) (the sacred geography of the Mambai highlands centred on the great mountain)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tata",
+     "script": "Latn",
+     "rom": "tata"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Traube, Cosmology and Social Life (1986) (ancestral potency gathered at the mountain addressed as grandfather)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "gather-ancestral-potency",
+    "name": "gather ancestral potency at the summit",
+    "term": {
+     "value": "lulik",
+     "script": "Latn",
+     "rom": "lulik"
+    },
+    "inheritability": "unique",
+    "notes": "The peak is a reservoir of ancestral and sacred potency, addressed and offered to as an elder.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Traube, Cosmology and Social Life (1986)"
+     }
+    ]
+   },
+   {
+    "id": "anchor-the-land",
+    "name": "anchor the sacred order of the highlands",
+    "term": {
+     "value": "ulun rae",
+     "script": "Latn",
+     "rom": "ulun rae"
+    },
+    "inheritability": "none",
+    "notes": "As the head of the land the mountain fixes the ritual geography read across the Mambai domain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Traube, Cosmology and Social Life (1986)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Tatamailau ('Grandfather Mailau'), the highest peak of Timor (Mount Ramelau), is venerated in the Mambai highlands as an ancestral elder and ritual centre of the upland world.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Elizabeth G. Traube, Cosmology and Social Life: Ritual Exchange among the Mambai of East Timor (Chicago: University of Chicago Press, 1986)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "David Hicks, Tetum Ghosts and Kin: Fertility and Gender in East Timor, 2nd ed. (Long Grove, IL: Waveland Press, 2004) (on the sacred mountains of Timor)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Tatamailau, 'Grandfather Mailau,' is the personified highest mountain of Timor (Mount Ramelau), venerated by the Mambai as an ancestral elder and the ritual navel of their upland world. Rising at the centre of the Mambai domain, the peak is addressed as a grandfather in whom ancestral potency gathers; its summit and springs are places of invocation and offering. As the head of the land it anchors the sacred geography the Mambai read across the highlands. Later Marian devotion has been overlaid upon the ancestral mountain without displacing its older standing as grandfather of the origin peoples."
+ },
+ {
+  "id": "mambai_kaka",
+  "name": {
+   "primary": "The Elder Brother",
+   "alt": [
+    "Kaka",
+    "The Black Lord",
+    "Lord of the Trunk",
+    "Guardian of the Source"
+   ],
+   "transliterations": {
+    "mgm": "Kaka",
+    "etymology": "Mambai kaka 'elder sibling'; the senior of the two brothers of the origin narrative who retains ritual precedence."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mambai",
+  "primaryTradition": "Mambai",
+  "sex": "male",
+  "vitalStatus": "ancestral",
+  "temporal": {
+   "era": "Mambai traditional religion; continuing"
+  },
+  "parentIds": [
+   "mambai_ama_lete",
+   "mambai_ina_rae"
+  ],
+  "parentRoles": {
+   "mambai_ama_lete": "paternal",
+   "mambai_ina_rae": "maternal"
+  },
+  "domains": [
+   {
+    "sphereId": "ritual-authority",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "un",
+     "script": "Latn",
+     "rom": "un"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, 'Mambai Rituals of Black and White' (1980), pp. 290-314 (the elder retains the ritual 'trunk')"
+     }
+    ]
+   },
+   {
+    "sphereId": "autochthony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "maeta",
+     "script": "Latn",
+     "rom": "maeta"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986) (the 'black' autochthonous ritual precedence)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-the-trunk",
+    "name": "guard the ritual trunk at the source",
+    "term": {
+     "value": "taʼu un",
+     "script": "Latn",
+     "rom": "tau un"
+    },
+    "inheritability": "full",
+    "notes": "By remaining immobile at the origin he keeps the sacred house, the origin objects, and the obligations owed to Mother Earth.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986)"
+     }
+    ]
+   },
+   {
+    "id": "hold-ritual-precedence",
+    "name": "hold silent ritual precedence over later powers",
+    "term": {
+     "value": "uf",
+     "script": "Latn",
+     "rom": "uf"
+    },
+    "inheritability": "full",
+    "notes": "His renunciation of outward power is the source of a hidden precedence the visible authorities must acknowledge.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, 'Obligations to the Source' (1989), pp. 321-344"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mambai_ali",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, 'Mambai Rituals of Black and White' (1980), pp. 290-314 (the elder and younger brothers who divide the heritage)"
+     }
+    ],
+    "notes": "Senior of the two brothers of the origin myth; he stays while the younger departs."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "In the Mambai origin narrative the elder brother remains in Timor as guardian of the ritual 'trunk', the dark autochthonous 'black' authority whose immobility confers ritual precedence.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elizabeth G. Traube, 'Mambai Rituals of Black and White,' in The Flow of Life (Harvard University Press, 1980), pp. 290-314"
+     },
+     {
+      "kind": "primary",
+      "reference": "Elizabeth G. Traube, Cosmology and Social Life (University of Chicago Press, 1986)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "In the Mambai origin narrative the heritage of the first ancestors is divided between an elder and a younger brother. The elder remains in Timor as guardian of the ritual trunk, the still, dark, autochthonous 'black' authority rooted at the source. Renouncing movement and outward power, he keeps the sacred house, the origin objects, and the obligations owed to Mother Earth, and from this immobility derives ritual precedence over all who came after. Mambai political thought makes the elder the hidden ground of legitimacy: the quiet lord of the land whose silent priority the visible powers must acknowledge. Sources give him by his relational title rather than a personal name."
+ },
+ {
+  "id": "mambai_ali",
+  "name": {
+   "primary": "The Younger Brother",
+   "alt": [
+    "Ali",
+    "Alin",
+    "The White Lord",
+    "Lord of the Tip"
+   ],
+   "transliterations": {
+    "mgm": "Ali",
+    "etymology": "Mambai ali/alin 'younger sibling'; the junior of the two brothers of the origin narrative who departs overseas."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mambai",
+  "primaryTradition": "Mambai",
+  "sex": "male",
+  "vitalStatus": "ancestral",
+  "temporal": {
+   "era": "Mambai traditional religion; continuing"
+  },
+  "parentIds": [
+   "mambai_ama_lete",
+   "mambai_ina_rae"
+  ],
+  "parentRoles": {
+   "mambai_ama_lete": "paternal",
+   "mambai_ina_rae": "maternal"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lauk",
+     "script": "Latn",
+     "rom": "lauk"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, 'Mambai Rituals of Black and White' (1980), pp. 290-314 (the younger carries the 'tip' and outward power)"
+     }
+    ]
+   },
+   {
+    "sphereId": "foreignness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "malaia",
+     "script": "Latn",
+     "rom": "malaia"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986) (the younger brother as source of the Malaia and overseas powers)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "carry-the-tip",
+    "name": "carry the tip of the heritage overseas",
+    "term": {
+     "value": "lori lauk",
+     "script": "Latn",
+     "rom": "lori lauk"
+    },
+    "inheritability": "full",
+    "notes": "He departs across the sea bearing the mobile, luminous portion associated with trade, weaponry, writing, and rule.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, 'Mambai Rituals of Black and White' (1980), pp. 290-314"
+     }
+    ]
+   },
+   {
+    "id": "bear-foreign-power",
+    "name": "father the foreign powers and be awaited in return",
+    "term": {
+     "value": "buti",
+     "script": "Latn",
+     "rom": "buti"
+    },
+    "inheritability": "full",
+    "notes": "Ancestor of the overseas rulers, he is expected eventually to return, his dominion remaining derivative of the elder's precedence.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, Cosmology and Social Life (1986)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mambai_kaka",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Traube, 'Mambai Rituals of Black and White' (1980), pp. 290-314 (the elder and younger brothers who divide the heritage)"
+     }
+    ],
+    "notes": "Junior of the two brothers of the origin myth; he departs while the elder stays."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "In the Mambai origin narrative the younger brother departs overseas with the 'tip' of the heritage, becoming the ancestral source of foreign political power and awaited in return, his dominion subordinate to the elder's ritual precedence.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elizabeth G. Traube, 'Mambai Rituals of Black and White,' in The Flow of Life (Harvard University Press, 1980), pp. 290-314"
+     },
+     {
+      "kind": "primary",
+      "reference": "Elizabeth G. Traube, Cosmology and Social Life (University of Chicago Press, 1986)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The younger brother of the Mambai origin myth departs across the sea carrying the 'tip' of the divided heritage, the mobile, outward, luminous 'white' portion associated with trade, weaponry, writing, and rule. He is the ancestral source of the foreign powers, the Malaia and ultimately the overseas rulers, and tradition awaits his eventual return. His visible dominion is understood as derivative and incomplete: the younger carries force and wealth but not the ritual precedence retained by the elder at the source, so that political power abroad remains obligated to the hidden authority of the land. The dualism of departed younger and abiding elder frames the Mambai reading of their relations with outside sovereignty. Like his elder, he is designated by relational title rather than a personal name."
+ },
+ {
+  "id": "mambai_lafaek",
+  "name": {
+   "primary": "Grandfather Crocodile",
+   "alt": [
+    "Lafaek",
+    "Abo Lafaek",
+    "The Crocodile of the Island"
+   ],
+   "transliterations": {
+    "tet": "Abo Lafaek",
+    "mgm": "Lafaek",
+    "etymology": "Timorese lafaek 'crocodile' with the ancestral honorific 'grandfather'; the crocodile whose body is said to be the island of Timor."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Mambai",
+  "primaryTradition": "Mambai",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Mambai traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "rae mori",
+     "script": "Latn",
+     "rom": "rae mori"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "David Hicks, Tetum Ghosts and Kin, 2nd ed. (Waveland Press, 2004) (the crocodile origin of the island of Timor)"
+     }
+    ]
+   },
+   {
+    "sphereId": "waters",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tasi",
+     "script": "Latn",
+     "rom": "tasi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "David Hicks, Tetum Ghosts and Kin, 2nd ed. (Waveland Press, 2004)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "become-the-island",
+    "name": "become the mountainous island of Timor",
+    "term": {
+     "value": "sai rae",
+     "script": "Latn",
+     "rom": "sai rae"
+    },
+    "inheritability": "unique",
+    "notes": "At death the crocodile's swelling body hardens into the island, its ridged spine forming the central cordillera.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "David Hicks, Tetum Ghosts and Kin, 2nd ed. (Waveland Press, 2004)"
+     }
+    ]
+   },
+   {
+    "id": "carry-across-the-sea",
+    "name": "carry the human friend across the sea",
+    "term": {
+     "value": "lori tasi",
+     "script": "Latn",
+     "rom": "lori tasi"
+    },
+    "inheritability": "none",
+    "notes": "In gratitude for being saved as a hatchling, the crocodile bears the boy who reared him across the waters before growing into the land.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "David Hicks, Tetum Ghosts and Kin, 2nd ed. (Waveland Press, 2004)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Across Timor, including the Mambai highlands, the island is told to be the body of a great crocodile who carried a human friend and, at death, became the mountainous land; the crocodile is revered as an ancestral grandfather.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "David Hicks, Tetum Ghosts and Kin: Fertility and Gender in East Timor, 2nd ed. (Long Grove, IL: Waveland Press, 2004)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Elizabeth G. Traube, Cosmology and Social Life (University of Chicago Press, 1986) (on the Mambai highlands as the ridged spine of the land)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Across Timor, including the Mambai highlands, the island itself is told to be the body of a great crocodile. In the origin tale a small crocodile, saved and reared by a boy, grows vast and bears his human friend across the sea; at death the grateful crocodile's body swells and hardens into the mountainous island of Timor, its ridged spine becoming the central cordillera on whose heights the Mambai dwell. Revered as a grandfather and ancestor, the crocodile is treated with ritual respect as elder kin. Sources present the crocodile-island myth as a shared Timorese charter of the land's origin rather than the possession of any single group, the Mambai occupying the mountainous back of the creature."
+ }
+]
+```

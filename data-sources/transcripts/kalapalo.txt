@@ -1,0 +1,1134 @@
+Kalapalo — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "kalapalo_taugi",
+  "name": {
+   "primary": "Taugi",
+   "alt": [
+    "Taũgi",
+    "Tawgi",
+    "Taũginõ"
+   ],
+   "transliterations": {
+    "kui": "Taũgi",
+    "etymology": "Personal name of the trickster-demiurge, the chief of the itseke; associated with the sun and daylight"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kalapalo",
+  "primaryTradition": "Kalapalo",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "kalapalo_nitsuegi",
+   "kalapalo_wooden_woman"
+  ],
+  "parentRoles": {
+   "kalapalo_nitsuegi": "paternal",
+   "kalapalo_wooden_woman": "maternal"
+  },
+  "temporal": {
+   "era": "Kalapalo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "powerful-being-itseke",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "itseke",
+     "script": "Latin",
+     "rom": "itseke"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe: Kalapalo Myth and Ritual Performances (Philadelphia: University of Pennsylvania Press, 1985), on the itseke as powerful beings"
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery-deceit",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "deceit",
+     "script": "Latin",
+     "rom": "deceit"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, In Favor of Deceit: A Study of Tricksters in an Amazonian Society (Tucson: University of Arizona Press, 1987)"
+     }
+    ]
+   },
+   {
+    "sphereId": "celestial-sun-daylight",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sun",
+     "script": "Latin",
+     "rom": "sun"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, In Favor of Deceit (1987), on Taugi's solar associations and acquisition of daylight"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "deceive-by-eloquence",
+    "name": "Deceives beings by persuasive speech",
+    "term": {
+     "value": "deceit",
+     "script": "Latin",
+     "rom": "deceit"
+    },
+    "inheritability": "unique",
+    "notes": "Taugi's characteristic power is not brute creation but the cunning talk by which he induces other beings to give up what he wants.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, In Favor of Deceit (Tucson: University of Arizona Press, 1987)"
+     }
+    ]
+   },
+   {
+    "id": "transform-shape",
+    "name": "Changes his own shape at will",
+    "term": {
+     "value": "transformation",
+     "script": "Latin",
+     "rom": "transformation"
+    },
+    "inheritability": "partial",
+    "notes": "Like other itseke he assumes animal and human forms to approach and outwit his targets.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ]
+   },
+   {
+    "id": "institute-mourning-festival",
+    "name": "Instituted the mortuary festival for the dead",
+    "term": {
+     "value": "egitsu",
+     "script": "Latin",
+     "rom": "egitsu"
+    },
+    "inheritability": "unique",
+    "notes": "To mourn his murdered mother the twin brothers held the first egitsu, the intertribal ceremony that became the model for Kalapalo mourning of chiefs.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo narration of the twin cycle in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kalapalo_taugi-egitsu",
+    "kind": "ritual",
+    "name": "Egitsu mortuary festival",
+    "term": {
+     "value": "egitsu",
+     "script": "Latin",
+     "rom": "egitsu"
+    },
+    "role": "founding institution",
+    "notes": "The intertribal festival, widely known in the Xingu by the Kamayurá name kwarup, held to honor and release the dead; Kalapalo tradition traces its first performance to the twins' grief for their mother.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985); and Ellen B. Basso, The Kalapalo Indians of Central Brazil (1973)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin",
+    "personId": "kalapalo_aulukuma",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo twin narrative in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "kalapalo_nitsuegi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "The jaguar Nitsuegï is the twins' father."
+   },
+   {
+    "kind": "parent",
+    "personId": "kalapalo_wooden_woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "The woman carved from wood is the twins' mother."
+   },
+   {
+    "kind": "enemy",
+    "personId": "kalapalo_jaguar_mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo twin narrative in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "Taugi avenges his mother upon the old jaguar-woman who killed her."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Taũgi",
+    "translation": "the Deceiver",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, In Favor of Deceit (1987)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Taugi is the chief of the itseke and the trickster-demiurge of Kalapalo cosmology.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, In Favor of Deceit: A Study of Tricksters in an Amazonian Society (Tucson: University of Arizona Press, 1987)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Taugi is one of a pair of twins born of a wooden woman and the jaguar, and is associated with the sun.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Taugi is the foremost of the itseke, the 'powerful beings' of Kalapalo cosmology, and the trickster-demiurge whose cunning shaped the present order of the world. Born with his twin Aulukumã to a woman carved from wood and fathered by the jaguar Nitsuegï, he grew to avenge his murdered mother and to fix the conditions of human life. He is linked to the sun and to daylight, yet Kalapalo narrators celebrate him less for creative might than for eloquent deceit, dwelling on the ingenuity with which he talks other beings out of what they hold. Sources differ on how far his shaping of the world overlaps with the making done by the elder maker Kwatïngï, but Taugi is consistently the being through whose trickery the world took on its enduring features, among them the great mortuary festival, egitsu."
+ },
+ {
+  "id": "kalapalo_aulukuma",
+  "name": {
+   "primary": "Aulukumã",
+   "alt": [
+    "Aulukuma",
+    "Aulukumáñ",
+    "Aulukumañ"
+   ],
+   "transliterations": {
+    "kui": "Aulukumã",
+    "etymology": "Personal name of the second twin, counterpart of Taugi; associated with the moon"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kalapalo",
+  "primaryTradition": "Kalapalo",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "kalapalo_nitsuegi",
+   "kalapalo_wooden_woman"
+  ],
+  "parentRoles": {
+   "kalapalo_nitsuegi": "paternal",
+   "kalapalo_wooden_woman": "maternal"
+  },
+  "temporal": {
+   "era": "Kalapalo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "powerful-being-itseke",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "itseke",
+     "script": "Latin",
+     "rom": "itseke"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "sphereId": "celestial-moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "moon",
+     "script": "Latin",
+     "rom": "moon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985), on the twin brothers as sun and moon"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "assist-twin",
+    "name": "Acts as counterpart and companion to Taugi",
+    "term": {
+     "value": "companionship",
+     "script": "Latin",
+     "rom": "companionship"
+    },
+    "inheritability": "partial",
+    "notes": "Aulukumã shares in his brother's exploits and their common vengeance, often as the more cautious of the two.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo twin narrative in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin",
+    "personId": "kalapalo_taugi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo twin narrative in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "kalapalo_nitsuegi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "The jaguar Nitsuegï is the twins' father."
+   },
+   {
+    "kind": "parent",
+    "personId": "kalapalo_wooden_woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "The woman carved from wood is the twins' mother."
+   },
+   {
+    "kind": "enemy",
+    "personId": "kalapalo_jaguar_mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo twin narrative in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "Shares in the vengeance on the old jaguar-woman who killed the twins' mother."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Aulukumã is the second of the Kalapalo demiurge-twins, counterpart of Taugi and associated with the moon.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Aulukumã is the twin brother of Taugi, the second of the pair of powerful beings born of the wooden woman and the jaguar. Where Taugi carries the associations of the sun, Aulukumã is aligned with the moon, and in the narratives he is the quieter, more circumspect twin who shares his brother's journeys and their joint vengeance for their mother. The two are inseparable in Kalapalo tradition, and the founding of the egitsu mortuary festival belongs to them together."
+ },
+ {
+  "id": "kalapalo_kwatingi",
+  "name": {
+   "primary": "Kwatïngï",
+   "alt": [
+    "Kwatingi",
+    "Kuatungi",
+    "Kwatïñï"
+   ],
+   "transliterations": {
+    "kui": "Kwatïngï",
+    "etymology": "Name of the elder maker who carved living women from tree trunks; grandfather of the demiurge-twins"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kalapalo",
+  "primaryTradition": "Kalapalo",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kalapalo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "demiurgic-craft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "making",
+     "script": "Latin",
+     "rom": "making"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985), on Kwatïngï's carving of the wooden women"
+     }
+    ]
+   },
+   {
+    "sphereId": "kinship-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "descent",
+     "script": "Latin",
+     "rom": "descent"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "carve-living-beings",
+    "name": "Carves living women from wood",
+    "term": {
+     "value": "carving",
+     "script": "Latin",
+     "rom": "carving"
+    },
+    "inheritability": "unique",
+    "notes": "Wishing for descendants, Kwatïngï shapes women out of tree trunks and brings them to life, intending them as wives for the jaguar.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo narration in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "kalapalo_wooden_woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "The wooden woman is his made daughter and the mother of the twins."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kwatïngï is the elder maker who carves living women from wood and is the grandfather of the demiurge-twins.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kwatïngï is the elder maker of Kalapalo tradition, the being whose craft sets the twin cycle in motion. Longing for grandchildren, he carves women out of tree trunks and animates them, intending them as wives for the jaguar Nitsuegï. From one of these made women are born the demiurge-twins Taugi and Aulukumã, so that Kwatïngï stands as their grandfather and the first cause of the events that shaped the world. His act of carving persons from wood echoes through Xingu ritual, where painted trunks stand for the honored dead."
+ },
+ {
+  "id": "kalapalo_nitsuegi",
+  "name": {
+   "primary": "Nitsuegï",
+   "alt": [
+    "Nitsuegi",
+    "the Jaguar"
+   ],
+   "transliterations": {
+    "kui": "Nitsuegï",
+    "etymology": "Name of the jaguar itseke who married the wooden women and fathered the twins"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kalapalo",
+  "primaryTradition": "Kalapalo",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "kalapalo_jaguar_mother"
+  ],
+  "parentRoles": {
+   "kalapalo_jaguar_mother": "maternal"
+  },
+  "temporal": {
+   "era": "Kalapalo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "predation-jaguar",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "jaguar",
+     "script": "Latin",
+     "rom": "jaguar"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "sphereId": "affinity-marriage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "affinity",
+     "script": "Latin",
+     "rom": "affinity"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985), on the jaguar as affine of the maker"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "father-twins",
+    "name": "Fathers the demiurge-twins",
+    "term": {
+     "value": "fatherhood",
+     "script": "Latin",
+     "rom": "fatherhood"
+    },
+    "inheritability": "none",
+    "notes": "By the wooden woman given to him he begets Taugi and Aulukumã.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo narration in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "kalapalo_wooden_woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "kalapalo_jaguar_mother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "The old cannibal jaguar-woman is his mother."
+   },
+   {
+    "kind": "child",
+    "personId": "kalapalo_taugi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "kalapalo_aulukuma",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The jaguar Nitsuegï is an itseke who marries the wooden woman and fathers the twins Taugi and Aulukumã.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Nitsuegï is the jaguar, one of the itseke, to whom the maker Kwatïngï sends the women he has carved from wood. Taking the wooden woman as wife, the jaguar becomes father of the demiurge-twins Taugi and Aulukumã. His household, however, is a place of danger: his own mother, an old cannibal jaguar-woman, murders his pregnant wife, so that the twins are born from her body and raised in the very house where she died. The figure joins the Xingu pattern in which the jaguar stands as the fierce affine of the human and the primordial line."
+ },
+ {
+  "id": "kalapalo_wooden_woman",
+  "name": {
+   "primary": "The Wooden Woman",
+   "alt": [
+    "the Made Woman",
+    "mother of the twins"
+   ],
+   "transliterations": {
+    "kui": "",
+    "etymology": "The woman carved and animated from a tree trunk by Kwatïngï; mother of Taugi and Aulukumã. Kalapalo tellings largely leave her personal name unspoken"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kalapalo",
+  "primaryTradition": "Kalapalo",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "kalapalo_kwatingi"
+  ],
+  "parentRoles": {
+   "kalapalo_kwatingi": "paternal"
+  },
+  "temporal": {
+   "era": "Kalapalo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "made-being",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "wooden effigy",
+     "script": "Latin",
+     "rom": "wooden effigy"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "sphereId": "primordial-motherhood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "motherhood",
+     "script": "Latin",
+     "rom": "motherhood"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear-demiurges",
+    "name": "Bears the demiurge-twins from her body",
+    "term": {
+     "value": "childbearing",
+     "script": "Latin",
+     "rom": "childbearing"
+    },
+    "inheritability": "none",
+    "notes": "Though killed while pregnant, her body yields the living twins Taugi and Aulukumã.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo narration in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "kalapalo_kwatingi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "She is the daughter carved from wood by Kwatïngï."
+   },
+   {
+    "kind": "spouse",
+    "personId": "kalapalo_nitsuegi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "kalapalo_taugi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "kalapalo_aulukuma",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "kalapalo_jaguar_mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo twin narrative in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "Murdered by the old jaguar-woman, her mother-in-law."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The mother of the twins is a woman carved and animated from wood by Kwatïngï, killed while pregnant, from whose body the twins are born.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The wooden woman is the mother of the demiurge-twins, a person carved from a tree trunk by the maker Kwatïngï and brought to life to become the wife of the jaguar Nitsuegï. Sent to the jaguar's house, she is murdered while pregnant by her mother-in-law, the old cannibal jaguar-woman; yet from her body the twins Taugi and Aulukumã are taken alive. She is the primordial mother whose death the twins spend their youth avenging, and whose mourning they institute in the first egitsu. Kalapalo tellings dwell on her making and her death more than on any personal name, so that she is known chiefly as the woman of wood."
+ },
+ {
+  "id": "kalapalo_jaguar_mother",
+  "name": {
+   "primary": "The Jaguar's Mother",
+   "alt": [
+    "the old jaguar-woman",
+    "the cannibal grandmother"
+   ],
+   "transliterations": {
+    "kui": "",
+    "etymology": "The aged, man-eating jaguar itseke who is mother of Nitsuegï and killer of the twins' mother"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kalapalo",
+  "primaryTradition": "Kalapalo",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kalapalo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "cannibalism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "man-eating",
+     "script": "Latin",
+     "rom": "man-eating"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "sphereId": "monstrous-elder",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "itseke",
+     "script": "Latin",
+     "rom": "itseke"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "devour-kin",
+    "name": "Kills and would devour her son's wife",
+    "term": {
+     "value": "predation",
+     "script": "Latin",
+     "rom": "predation"
+    },
+    "inheritability": "none",
+    "notes": "Her murder of the pregnant wooden woman is the crime the twins are born to avenge.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo narration in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "kalapalo_nitsuegi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "The jaguar Nitsuegï is her son."
+   },
+   {
+    "kind": "enemy",
+    "personId": "kalapalo_wooden_woman",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo twin narrative in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ],
+    "notes": "She murders her son's wooden wife."
+   },
+   {
+    "kind": "enemy",
+    "personId": "kalapalo_taugi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo twin narrative in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "kalapalo_aulukuma",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo twin narrative in Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "An old cannibal jaguar-woman, mother of Nitsuegï, murders the twins' pregnant mother and is avenged by the twins.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The jaguar's mother is an aged, man-eating itseke, mother of the jaguar Nitsuegï. When her son takes the wooden woman to wife, the old woman kills her daughter-in-law while she is pregnant, and it is this act that the twins are born to avenge. Raising the very children whose mother she has slain, she embodies the danger that Kalapalo narrative locates within the affinal household of the jaguar. Her defeat by the grown twins closes the primordial cycle of the murdered mother."
+ },
+ {
+  "id": "kalapalo_kutsafugu",
+  "name": {
+   "primary": "Kutsafugu",
+   "alt": [
+    "Kutsafẽgu"
+   ],
+   "transliterations": {
+    "kui": "Kutsafugu",
+    "etymology": "Name of a human protagonist of a Kalapalo narrative who journeys among the itseke"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kalapalo",
+  "primaryTradition": "Kalapalo",
+  "sex": "male",
+  "vitalStatus": "unknown",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kalapalo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "human-among-spirits",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "encounter with itseke",
+     "script": "Latin",
+     "rom": "encounter with itseke"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe: Kalapalo Myth and Ritual Performances (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "survive-the-powerful-beings",
+    "name": "Endures encounters with powerful beings",
+    "term": {
+     "value": "endurance",
+     "script": "Latin",
+     "rom": "endurance"
+    },
+    "inheritability": "none",
+    "notes": "Like other Kalapalo human heroes, his story turns on surviving the perilous company of the itseke.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Kutsafugu is a named human protagonist of a Kalapalo myth-with-song recorded and analyzed by Basso.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo narration transcribed in Ellen B. Basso, A Musical View of the Universe: Kalapalo Myth and Ritual Performances (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Kutsafugu is the human hero of one of the Kalapalo myth-and-song performances set down by Basso. In common with other Kalapalo narratives of mortal protagonists, his tale carries him into the dangerous world of the itseke, where song and proper conduct rather than force secure his passage. He belongs to the class of human figures whose experiences among powerful beings define, by contrast, the ethic of restraint and generosity that the Kalapalo prize."
+ },
+ {
+  "id": "kalapalo_tamakafi",
+  "name": {
+   "primary": "Tamakafi",
+   "alt": [
+    "Tamakafí"
+   ],
+   "transliterations": {
+    "kui": "Tamakafi",
+    "etymology": "Name of a Kalapalo warrior-hero of narrative tradition"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kalapalo",
+  "primaryTradition": "Kalapalo",
+  "sex": "male",
+  "vitalStatus": "unknown",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kalapalo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "warrior-heroism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "warriorhood",
+     "script": "Latin",
+     "rom": "warriorhood"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe: Kalapalo Myth and Ritual Performances (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "prevail-in-combat",
+    "name": "Overcomes a dangerous adversary",
+    "term": {
+     "value": "combat",
+     "script": "Latin",
+     "rom": "combat"
+    },
+    "inheritability": "none",
+    "notes": "His narrative turns on the confrontation with, and defeat of, a menacing being.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Tamakafi is a named hero of a Kalapalo narrative performance recorded by Basso.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kalapalo narration transcribed in Ellen B. Basso, A Musical View of the Universe: Kalapalo Myth and Ritual Performances (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Tamakafi is the hero of a Kalapalo narrative of combat and endurance among the beings of the mythic world. His story, told with its embedded songs, sets a mortal against a formidable adversary and turns on the courage and skill by which he prevails. He stands with the other human protagonists of Kalapalo tradition whose deeds are recounted in performance rather than treated as acts of creation."
+ },
+ {
+  "id": "kalapalo_sakatsuegi",
+  "name": {
+   "primary": "Sakatsuegï",
+   "alt": [
+    "Sakatsuegi",
+    "the great serpent"
+   ],
+   "transliterations": {
+    "kui": "Sakatsuegï",
+    "etymology": "Name of a monstrous serpent-being among the itseke"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kalapalo",
+  "primaryTradition": "Kalapalo",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Kalapalo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "monstrous-serpent",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "serpent",
+     "script": "Latin",
+     "rom": "serpent"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   },
+   {
+    "sphereId": "powerful-being-itseke",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "itseke",
+     "script": "Latin",
+     "rom": "itseke"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "menace-travelers",
+    "name": "Menaces those who cross its waters or path",
+    "term": {
+     "value": "menace",
+     "script": "Latin",
+     "rom": "menace"
+    },
+    "inheritability": "none",
+    "notes": "As a monstrous itseke it embodies the perils of the wild places beyond the settled village.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe (1985)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Sakatsuegï is a monstrous serpent-being of the itseke class in Kalapalo narrative.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ellen B. Basso, A Musical View of the Universe: Kalapalo Myth and Ritual Performances (Philadelphia: University of Pennsylvania Press, 1985)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Sakatsuegï is a monstrous serpent, one of the itseke that people the waters and forests of the Kalapalo mythic landscape. Such serpent-beings mark the dangerous ground beyond the ordered village, and encounters with them test the human protagonists of Kalapalo narrative. As with other itseke, its power is both feared and, in the songs that name it, made partly knowable."
+ }
+]
+```

@@ -1,0 +1,652 @@
+Iatmul — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "iatmul_kavwokmali",
+  "name": {
+   "primary": "Kavwokmali",
+   "alt": [
+    "Kavwokmariwan"
+   ],
+   "transliterations": {
+    "ian": "Kavwokmali"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Iatmul",
+  "primaryTradition": "Iatmul",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Iatmul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "primordial-waters",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the primeval sea and its suspended mud",
+     "script": "Latn",
+     "rom": "the primeval sea and its suspended mud"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1972. Steps to an Ecology of Mind. San Francisco: Chandler, recounting the Iatmul cosmogony of Kavwokmali."
+     }
+    ]
+   },
+   {
+    "sphereId": "cosmogony",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the primal crocodile who held earth and water undivided",
+     "script": "Latn",
+     "rom": "the primal crocodile who held earth and water undivided"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1936. Naven. Cambridge: Cambridge University Press."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "churn-the-primeval-waters",
+    "name": "churn the primeval waters",
+    "term": {
+     "value": "paddling that keeps the mud suspended",
+     "script": "Latn",
+     "rom": "paddling that keeps the mud suspended"
+    },
+    "inheritability": "unique",
+    "notes": "By paddling ceaselessly with fore and hind legs the crocodile kept the mud dispersed through the water so that no dry land could form.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1972. Steps to an Ecology of Mind. San Francisco: Chandler."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "iatmul_kevembuangga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1972. Steps to an Ecology of Mind. San Francisco: Chandler."
+     }
+    ],
+    "notes": "Speared and killed by the culture hero, whose act allowed the mud to settle into land."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the primal crocodile",
+    "translation": "the primal crocodile",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1936. Naven. Cambridge: Cambridge University Press."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kavwokmali is the primeval crocodile whose paddling kept mud and water intermixed at the beginning of the world.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1972. Steps to an Ecology of Mind. San Francisco: Chandler, p. 4 (Iatmul origin myth)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The crocodile belongs to the Iatmul cosmogony recorded during Bateson's Middle Sepik fieldwork of 1929-1933.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1936. Naven. Cambridge: Cambridge University Press."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kavwokmali is the primeval crocodile of Iatmul cosmogony. In the beginning nothing existed but water, and the crocodile paddled endlessly with his front and hind legs, keeping the mud churned up and suspended so that earth and water remained undivided. This unbroken labour held the cosmos in an unordered state until the culture hero Kevembuangga speared him, after which the stilled mud sank and settled into dry land. Sources differ over the relation between this churning crocodile and the wider Sepik image of a world-bearing crocodile whose movements cause earthquakes; Bateson records Kavwokmali specifically as the being whose death separates land from water."
+ },
+ {
+  "id": "iatmul_kevembuangga",
+  "name": {
+   "primary": "Kevembuangga",
+   "alt": [],
+   "transliterations": {
+    "ian": "Kevembuangga"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Iatmul",
+  "primaryTradition": "Iatmul",
+  "sex": "male",
+  "parentIds": [],
+  "temporal": {
+   "era": "Iatmul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the separation of dry land from the primeval water",
+     "script": "Latn",
+     "rom": "the separation of dry land from the primeval water"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1972. Steps to an Ecology of Mind. San Francisco: Chandler."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "separate-land-from-water",
+    "name": "separate land from water",
+    "term": {
+     "value": "spearing the crocodile so the mud settles",
+     "script": "Latn",
+     "rom": "spearing the crocodile so the mud settles"
+    },
+    "inheritability": "unique",
+    "notes": "By killing Kavwokmali the hero ended the churning of the waters; the suspended mud then sank and consolidated into the first ground.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1972. Steps to an Ecology of Mind. San Francisco: Chandler."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "iatmul_kavwokmali",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1972. Steps to an Ecology of Mind. San Francisco: Chandler."
+     }
+    ],
+    "notes": "Slayer of the primeval crocodile; his spear-thrust brings dry land into being."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the great culture hero",
+    "translation": "the great culture hero",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1972. Steps to an Ecology of Mind. San Francisco: Chandler."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kevembuangga is the culture hero who came with a spear and killed the primeval crocodile Kavwokmali, allowing land to form.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Bateson, Gregory. 1972. Steps to an Ecology of Mind. San Francisco: Chandler, p. 4."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kevembuangga is the culture hero of the Iatmul separation myth. When the primeval crocodile Kavwokmali kept the mud forever suspended by his paddling, Kevembuangga came with his spear and killed him. With the churning stilled, the mud sank to the bottom and hardened, and dry land appeared where the first ancestors could stand. His act is the decisive gesture of cosmic ordering in the Iatmul account of origins, transforming an undivided watery chaos into the layered world of earth and water."
+ },
+ {
+  "id": "iatmul_mendangumeli",
+  "name": {
+   "primary": "Mendangumeli",
+   "alt": [
+    "Mendagumeli"
+   ],
+   "transliterations": {
+    "ian": "Mendangumeli"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Iatmul",
+  "primaryTradition": "Iatmul",
+  "sex": "male",
+  "parentIds": [],
+  "temporal": {
+   "era": "Iatmul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "flood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the deluge that rises from the water-hole",
+     "script": "Latn",
+     "rom": "the deluge that rises from the water-hole"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. 'The Waters of Mendangumeli: A Masculine Psychoanalytic Interpretation of a New Guinea Flood Myth-and Women's Laughter.' Journal of American Folklore 129(512): 171-202."
+     }
+    ]
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ancestral spirit-crocodile of the swamp",
+     "script": "Latn",
+     "rom": "ancestral spirit-crocodile of the swamp"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. Journal of American Folklore 129(512): 171-202."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send-the-deluge",
+    "name": "send the deluge",
+    "term": {
+     "value": "raising water through lilies and holes to drown a village",
+     "script": "Latn",
+     "rom": "raising water through lilies and holes to drown a village"
+    },
+    "inheritability": "unique",
+    "notes": "Petitioned with shell valuables and animals, the spirit causes rain and water lilies to sprout before the men's house; when the lilies are plucked, water bursts up through the holes and floods the land.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. Journal of American Folklore 129(512): 171-202."
+     }
+    ]
+   },
+   {
+    "id": "carry-the-supplicant-to-safety",
+    "name": "carry the supplicant to safety",
+    "term": {
+     "value": "bearing the survivor on his back to dry land",
+     "script": "Latn",
+     "rom": "bearing the survivor on his back to dry land"
+    },
+    "inheritability": "none",
+    "notes": "The crocodile-spirit ferries the one who honoured him, with his family and possessions, above the rising waters to safety.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. Journal of American Folklore 129(512): 171-202."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "iatmul_mendangumeli-spirit-costume",
+    "kind": "costume",
+    "name": "mendangumeli spirit costume",
+    "term": {
+     "value": "ensorcelled crocodile-spirit dance costume",
+     "script": "Latn",
+     "rom": "ensorcelled crocodile-spirit dance costume"
+    },
+    "role": "The great crocodile-spirit is embodied at Tambunum by an ensorcelled dance costume worn in ritual performance.",
+    "notes": "Photographed and described in the eastern Iatmul village of Tambunum, where the myth was collected.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. Journal of American Folklore 129(512): 171-202."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "iatmul_wobowi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. Journal of American Folklore 129(512): 171-202."
+     }
+    ],
+    "notes": "Answers Wobowi's plea, sends the flood that destroys his village, and carries him to safety."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the great spirit of the water-hole",
+    "translation": "the great spirit of the water-hole",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. Journal of American Folklore 129(512): 171-202."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mendangumeli is the ancestral spirit-crocodile of the eastern Iatmul flood myth, who rises from his swamp water-hole to unleash and steer the deluge.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. 'The Waters of Mendangumeli.' Journal of American Folklore 129(512): 171-202."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Mendangumeli is the great ancestral crocodile-spirit of the Iatmul deluge myth, recorded by Eric Silverman at Tambunum. When the grieving man Wobowi brought shell valuables and animals to the spirit's swamp home and begged him to punish a village that would not share his mourning, Mendangumeli rose from the bottom of his water-hole and demanded to hear the tale. Persuaded, he instructed Wobowi to build a platform atop a tall palm; after five days of rain, two water lilies sprouted before the men's ceremonial house, and when villagers plucked them, torrents of water burst up through the holes and drowned the settlement. The crocodile then carried Wobowi and his household to dry land. In a second telling the spirit turns on Wobowi's own daughter, marking the myth's darker undercurrent of male power over female fertility."
+ },
+ {
+  "id": "iatmul_wobowi",
+  "name": {
+   "primary": "Wobowi",
+   "alt": [],
+   "transliterations": {
+    "ian": "Wobowi"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Iatmul",
+  "primaryTradition": "Iatmul",
+  "sex": "male",
+  "parentIds": [],
+  "temporal": {
+   "era": "Iatmul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death-and-mourning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "grief turned to vengeance",
+     "script": "Latn",
+     "rom": "grief turned to vengeance"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. Journal of American Folklore 129(512): 171-202."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "summon-the-flood-in-vengeance",
+    "name": "summon the flood in vengeance",
+    "term": {
+     "value": "petitioning the crocodile-spirit with offerings",
+     "script": "Latn",
+     "rom": "petitioning the crocodile-spirit with offerings"
+    },
+    "inheritability": "none",
+    "notes": "By carrying shell wealth, a pig, a dog and a fowl to the spirit's swamp and dropping them into the water, Wobowi moves Mendangumeli to destroy his unfeeling village.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. Journal of American Folklore 129(512): 171-202."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "iatmul_mendangumeli",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. Journal of American Folklore 129(512): 171-202."
+     }
+    ],
+    "notes": "Supplicant of the crocodile-spirit, whom he petitions and who spares him from the flood."
+   }
+  ],
+  "epithets": [],
+  "sources": [
+   {
+    "claim": "Wobowi is the mortal protagonist of the Iatmul flood myth, who summons the deluge through the spirit-crocodile Mendangumeli and survives it.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Silverman, Eric K. 2016. 'The Waters of Mendangumeli.' Journal of American Folklore 129(512): 171-202."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Wobowi is the mythic mortal at the centre of the eastern Iatmul deluge story. Deceived by a cousin into killing his own wife, and then denied the village's participation in his mourning, he took shell valuables and animals to the swamp home of the crocodile-spirit Mendangumeli and begged for destruction. Following the spirit's instructions he raised a platform on a coconut palm and gathered his family and possessions upon it; the flood that came drowned everyone else, and the crocodile bore him to dry land. Wobowi thus embodies the Iatmul theme of grief and slighted kinship escalating into world-ending catastrophe, a human counterpart to the ancestral spirit whose waters he releases."
+ },
+ {
+  "id": "iatmul_tipmeaman",
+  "name": {
+   "primary": "Tipmeaman",
+   "alt": [
+    "Tɨpmeaman"
+   ],
+   "transliterations": {
+    "ian": "Tɨpmeaman"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Iatmul",
+  "primaryTradition": "Iatmul",
+  "parentIds": [],
+  "temporal": {
+   "era": "Iatmul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "dual-cosmology",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the mythic Borassus palm of the primal mound",
+     "script": "Latn",
+     "rom": "the mythic Borassus palm of the primal mound"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Schindlbeck, Markus. 'Stones in swamps: remains of a mythical past in the Sepik area.' Journal de la Societe des Oceanistes."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "crown-the-primal-mound",
+    "name": "crown the primal mound",
+    "term": {
+     "value": "standing atop the ancestral mound before the men's house",
+     "script": "Latn",
+     "rom": "standing atop the ancestral mound before the men's house"
+    },
+    "inheritability": "unique",
+    "notes": "The tall fan-palm bearing this mythological name rises on the ceremonial mound, embodying one half of the paired botanical order of the Middle Sepik.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Schindlbeck, Markus. 'Stones in swamps: remains of a mythical past in the Sepik area.' Journal de la Societe des Oceanistes."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "brother of the sago palm",
+    "translation": "brother of the sago palm",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Schindlbeck, Markus. 'Stones in swamps: remains of a mythical past in the Sepik area.' Journal de la Societe des Oceanistes."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "In Central Iatmul and Sawos tradition the tall Borassus (fan) palm standing on the ceremonial mound bears the mythological name Tɨpmeaman and is the mythic 'brother' of the sago palm.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Schindlbeck, Markus. 'Stones in swamps: remains of a mythical past in the Sepik area.' Journal de la Societe des Oceanistes."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Tɨpmeaman is the mythological name of the tall Borassus fan-palm that crowns the ancestral mound set before the men's ceremonial house in Central Iatmul and neighbouring Sawos villages. Named as the 'brother' of the sago palm, it gives botanical form to the pervasive dual structure of Middle Sepik cosmology, in which paired beings and species divide and balance the world. The mound it surmounts marks the site of a mythical past, associated with founding ancestors and with the stone settings on which the heads of slain enemies were once laid."
+ },
+ {
+  "id": "iatmul_subut",
+  "name": {
+   "primary": "Subut",
+   "alt": [
+    "Sabut"
+   ],
+   "transliterations": {
+    "ian": "Subut"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Iatmul",
+  "primaryTradition": "Iatmul",
+  "parentIds": [],
+  "temporal": {
+   "era": "Iatmul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "guardianship of women and the unborn",
+     "script": "Latn",
+     "rom": "guardianship of women and the unborn"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "'Deconstructing a Popular Iatmul/Sawos Sculptural Design' (analysis of the Sepik bird-over-woman 'Subut' motif)."
+     }
+    ]
+   },
+   {
+    "sphereId": "sacred-knowledge",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "protector of secret knowledge held by women",
+     "script": "Latn",
+     "rom": "protector of secret knowledge held by women"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oral tradition of Yamok village, Middle Sepik, documented in ethnographic descriptions of the Subut/Sabut protector-bird carving."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shield-the-primal-woman",
+    "name": "shield the primal woman",
+    "term": {
+     "value": "driving off the crocodile-man and tending her eggs",
+     "script": "Latn",
+     "rom": "driving off the crocodile-man and tending her eggs"
+    },
+    "inheritability": "unique",
+    "notes": "The bird protects a woman from assault by a crocodile-man and helps tend the two eggs she lays, from which a human and a malevolent crocodile-man are hatched.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oral tradition of Yamok village, Middle Sepik, documented in ethnographic descriptions of the Subut/Sabut protector-bird carving."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "iatmul_subut-guardian-carving",
+    "kind": "sculpture",
+    "name": "Subut protector figure",
+    "term": {
+     "value": "carved bird set around female figures",
+     "script": "Latn",
+     "rom": "carved bird set around female figures"
+    },
+    "role": "Carvings of the bird are placed encircling female figures, marking Subut as the guardian of women and of the sacred knowledge they hold.",
+    "notes": "A recurrent Iatmul/Sawos sculptural design of the Yamok and Middle Sepik area.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "'Deconstructing a Popular Iatmul/Sawos Sculptural Design' (analysis of the Sepik bird-over-woman motif)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "protector of women",
+    "translation": "protector of women",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oral tradition of Yamok village, Middle Sepik."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Subut is a primordial protective bird of Iatmul creation myth who shields a woman from a crocodile-man and helps tend the two eggs from which a human and a crocodile-man hatch; he is honoured as guardian of women and of secret knowledge.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Oral tradition of Yamok village, Middle Sepik, documented in ethnographic descriptions of the Subut/Sabut carving."
+     },
+     {
+      "kind": "secondary",
+      "reference": "'Deconstructing a Popular Iatmul/Sawos Sculptural Design' (study of the Sepik protector-bird motif)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Subut is a primordial bird of Iatmul creation tradition, remembered especially at Yamok in the Middle Sepik. In the myth he intervenes to protect a woman from a crocodile-man who sought to violate her, and afterward helps her tend the two eggs she lays; from these hatch a human being and a malevolent crocodile-man, an origin of the enduring opposition between people and the predatory crocodile. Because he sheltered the woman and her offspring, Subut is honoured as a protector of women and, by extension, of the secret knowledge that Iatmul tradition holds women to possess, and his image is carved surrounding female figures for that reason."
+ }
+]
+```

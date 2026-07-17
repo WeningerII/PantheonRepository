@@ -1,0 +1,770 @@
+Orokaiva — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "orokaiva_totoima",
+  "name": {
+   "primary": "Totoima",
+   "alt": [
+    "the boar-ogre",
+    "the tusked cannibal"
+   ],
+   "transliterations": {
+    "okv": "Totoima",
+    "etymology": "personal name of the ogre; no secure gloss is recorded"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Orokaiva",
+  "primaryTradition": "Orokaiva",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Orokaiva traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "cannibalism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "man-eating",
+     "script": "Latn",
+     "rom": "man-eating"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930), myth of Totoima"
+     }
+    ]
+   },
+   {
+    "sphereId": "wild-boar-and-hunt",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the tusked boar",
+     "script": "Latn",
+     "rom": "the tusked boar"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "sphereId": "male-initiation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "charter of initiation",
+     "script": "Latn",
+     "rom": "charter of initiation"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Erik Schwimmer, Exchange in the Social Structure of the Orokaiva (London: C. Hurst & Co., 1973)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "devour-his-offspring",
+    "name": "devours his own newborn children",
+    "term": {
+     "value": "child-eating",
+     "script": "Latn",
+     "rom": "child-eating"
+    },
+    "inheritability": "none",
+    "notes": "Each infant borne by his wife is eaten until the twins are hidden from him.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "id": "take-boar-form",
+    "name": "takes the shape of a great tusked boar",
+    "term": {
+     "value": "boar-shape",
+     "script": "Latn",
+     "rom": "boar-shape"
+    },
+    "inheritability": "none",
+    "notes": "Part man and part boar; the boar's tusks become emblems of the initiate.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "orokaiva_totoima_wife",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "orokaiva_boar_slayer_twins",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "orokaiva_boar_slayer_twins",
+    "notes": "His twin sons hunt him down and kill him in revenge for their eaten siblings.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Totoima the boar-tusker",
+    "translation": "the boar-tusked cannibal",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Erik Schwimmer, Exchange in the Social Structure of the Orokaiva (London: C. Hurst & Co., 1973)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Totoima is the cannibal boar-ogre at the centre of the best-known Orokaiva myth, a devouring father slain by his twin sons and taken as the charter of male initiation.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930), myth of Totoima"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Erik Schwimmer, Exchange in the Social Structure of the Orokaiva (London: C. Hurst & Co., 1973)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Totoima is the cannibal ogre of the most celebrated Orokaiva myth. Part man and part tusked boar, he takes a human wife and devours each child she bears him. When she at last carries twins she hides them, and they are reared in secret by her mother; grown to manhood and armed, the brothers hunt Totoima down and kill him. F. E. Williams recorded the tale in the 1920s as the charter of male initiation, in which novices are ritually swallowed and reborn much as Totoima's victims are consumed, and the boar's tusks furnish the initiate's regalia. Erik Schwimmer read the slaying of the devouring father as a founding statement about exchange, taro cultivation, and the passage of boys into men."
+ },
+ {
+  "id": "orokaiva_boar_slayer_twins",
+  "name": {
+   "primary": "The twin sons of Totoima",
+   "alt": [
+    "the boar-slayers",
+    "the twin brothers"
+   ],
+   "transliterations": {
+    "en": "the twin sons of Totoima"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Orokaiva",
+  "primaryTradition": "Orokaiva",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "orokaiva_totoima",
+   "orokaiva_totoima_wife"
+  ],
+  "parentRoles": {
+   "orokaiva_totoima": "paternal",
+   "orokaiva_totoima_wife": "maternal"
+  },
+  "temporal": {
+   "era": "Orokaiva traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the avengers",
+     "script": "Latn",
+     "rom": "the avengers"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "sphereId": "taro-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "origin of taro",
+     "script": "Latn",
+     "rom": "origin of taro"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Erik Schwimmer, Exchange in the Social Structure of the Orokaiva (London: C. Hurst & Co., 1973)"
+     }
+    ]
+   },
+   {
+    "sphereId": "male-initiation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "origin of the initiation spirits",
+     "script": "Latn",
+     "rom": "origin of the initiation spirits"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "slay-the-ogre",
+    "name": "kills the cannibal Totoima",
+    "term": {
+     "value": "ogre-slaying",
+     "script": "Latn",
+     "rom": "ogre-slaying"
+    },
+    "inheritability": "unique",
+    "notes": "The brothers ambush and spear their father to avenge their devoured siblings.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "id": "originate-taro-and-tree-spirits",
+    "name": "gives rise to the taro-spirit and the initiatory tree-spirits",
+    "term": {
+     "value": "origination of cult spirits",
+     "script": "Latn",
+     "rom": "origination of cult spirits"
+    },
+    "inheritability": "none",
+    "notes": "In tellings that anchor horticulture and ritual to the myth, the brothers' victory is the origin of the spirit that quickens taro and of the tree-spirits later impersonated in initiation.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Erik Schwimmer, Exchange in the Social Structure of the Orokaiva (London: C. Hurst & Co., 1973)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "orokaiva_totoima",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "orokaiva_totoima_wife",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "orokaiva_totoima",
+    "notes": "They kill the father who ate their brothers and sisters.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The twin sons of Totoima are the culture-heroes of the myth, saved and hidden by their mother, who grow up to slay the cannibal father and whose deed is told as the origin of the taro-spirit and the initiatory tree-spirits.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Erik Schwimmer, Exchange in the Social Structure of the Orokaiva (London: C. Hurst & Co., 1973)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The twin sons of Totoima are the heroes of the myth: the children their mother rescues from the cannibal, reared in hiding by their grandmother until they are strong enough to avenge their eaten siblings and destroy their father. In the versions that bind the myth to horticulture and ritual, the brothers' victory is the origin of the taro-spirit that makes the gardens flourish and of the tree-spirits afterwards impersonated in male initiation. Sources do not preserve individual names for the twins, who are remembered as a pair; some tellings give a single surviving son rather than two."
+ },
+ {
+  "id": "orokaiva_totoima_wife",
+  "name": {
+   "primary": "The wife of Totoima",
+   "alt": [
+    "the mother of the twins"
+   ],
+   "transliterations": {
+    "en": "the wife of Totoima"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Orokaiva",
+  "primaryTradition": "Orokaiva",
+  "sex": "female",
+  "vitalStatus": "unknown",
+  "parentIds": [],
+  "temporal": {
+   "era": "Orokaiva traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "concealment-and-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the hidden mother",
+     "script": "Latn",
+     "rom": "the hidden mother"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "conceal-the-twins",
+    "name": "hides her twin sons from the cannibal",
+    "term": {
+     "value": "concealment",
+     "script": "Latn",
+     "rom": "concealment"
+    },
+    "inheritability": "none",
+    "notes": "She entrusts the twins to her own mother so that they survive Totoima's appetite.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "orokaiva_totoima",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "orokaiva_boar_slayer_twins",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The unnamed wife of Totoima bears the children he devours and conceals the surviving twins, whom she gives to her mother to rear.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The wife of Totoima is the mother of the twin heroes and the pivot of the myth's action. Married to the cannibal and forced to watch him eat each newborn, she conceals her twin sons and entrusts them to her own mother so that they survive to avenge their siblings. The tale turns on her concealment as much as on the brothers' later strength. The ethnographic record leaves her without a personal name."
+ },
+ {
+  "id": "orokaiva_baigona",
+  "name": {
+   "primary": "Baigona",
+   "alt": [
+    "the snake-spirit",
+    "the python of the dead"
+   ],
+   "transliterations": {
+    "okv": "baigona",
+    "etymology": "commonly glossed as the snake or python in which the spirits of the dead are held to reside"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Orokaiva",
+  "primaryTradition": "Orokaiva",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Orokaiva traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "serpents",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the python",
+     "script": "Latn",
+     "rom": "the python"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. P. Chinnery and A. C. Haddon, 'Five New Religious Cults in British New Guinea', The Hibbert Journal 15 (1917): 448-463"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the spirits of the dead",
+     "script": "Latn",
+     "rom": "the spirits of the dead"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. P. Chinnery and A. C. Haddon, 'Five New Religious Cults in British New Guinea', The Hibbert Journal 15 (1917): 448-463"
+     }
+    ]
+   },
+   {
+    "sphereId": "healing-and-divination",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "divining and curing",
+     "script": "Latn",
+     "rom": "divining and curing"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. E. Williams, Orokaiva Magic (Oxford: Clarendon Press, 1928)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "possess-the-baigona-men",
+    "name": "empowers the baigona men through snakes",
+    "term": {
+     "value": "snake-mediumship",
+     "script": "Latn",
+     "rom": "snake-mediumship"
+    },
+    "inheritability": "partial",
+    "notes": "Adherents commune with the ancestral dead through the python and other snakes.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. P. Chinnery and A. C. Haddon, 'Five New Religious Cults in British New Guinea', The Hibbert Journal 15 (1917): 448-463"
+     }
+    ]
+   },
+   {
+    "id": "heal-and-afflict",
+    "name": "sends and lifts sickness",
+    "term": {
+     "value": "sickness-magic",
+     "script": "Latn",
+     "rom": "sickness-magic"
+    },
+    "inheritability": "partial",
+    "notes": "The baigona men claimed power to divine wrongdoing, cure, and inflict illness.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. E. Williams, Orokaiva Magic (Oxford: Clarendon Press, 1928)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "baigona",
+    "translation": "the snake (of the dead)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. P. Chinnery and A. C. Haddon, 'Five New Religious Cults in British New Guinea', The Hibbert Journal 15 (1917): 448-463"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Baigona is the serpent-spirit of the cult of the same name that spread through the Northern District, including Orokaiva country, around 1912, in which the spirits of the dead were held to reside in snakes and to grant divination, curing, and the power to inflict sickness.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. W. P. Chinnery and A. C. Haddon, 'Five New Religious Cults in British New Guinea', The Hibbert Journal 15 (1917): 448-463"
+     },
+     {
+      "kind": "secondary",
+      "reference": "F. E. Williams, Orokaiva Magic (Oxford: Clarendon Press, 1928)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Baigona is the serpent-spirit of the cult of the same name, which swept the Northern District of Papua, Orokaiva country among it, from about 1912. Its adherents, the baigona men, held that the spirits of the dead dwelt in snakes, above all the python of the mountains, and that through the baigona they could divine hidden fault, cure the sick, and send illness. E. W. P. Chinnery and A. C. Haddon documented the movement in 1917, and F. E. Williams treated it beside the later taro cult as an expression of Orokaiva dealings with the ancestral dead. Sources differ on whether baigona names a single presiding serpent or the class of snake-borne ancestral spirits at large."
+ },
+ {
+  "id": "orokaiva_taro_spirit",
+  "name": {
+   "primary": "The taro-spirit",
+   "alt": [
+    "the taro-cult spirit",
+    "the spirit of Kava keva"
+   ],
+   "transliterations": {
+    "en": "the taro-spirit"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Orokaiva",
+  "primaryTradition": "Orokaiva",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Orokaiva traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "taro-agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the taro crop",
+     "script": "Latn",
+     "rom": "the taro crop"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Magic (Oxford: Clarendon Press, 1928)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "garden fertility",
+     "script": "Latn",
+     "rom": "garden fertility"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Magic (Oxford: Clarendon Press, 1928)"
+     }
+    ]
+   },
+   {
+    "sphereId": "possession-and-prophecy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the shaking (jipari)",
+     "script": "Latn",
+     "rom": "jipari"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Magic (Oxford: Clarendon Press, 1928)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "possess-the-kasamba",
+    "name": "possesses the taro-men and makes them shake",
+    "term": {
+     "value": "possession",
+     "script": "Latn",
+     "rom": "possession"
+    },
+    "inheritability": "partial",
+    "notes": "Entering the kasamba, it induces the trembling and prophecy called jipari.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Magic (Oxford: Clarendon Press, 1928)"
+     }
+    ]
+   },
+   {
+    "id": "quicken-the-taro",
+    "name": "makes the taro gardens flourish",
+    "term": {
+     "value": "crop-quickening",
+     "script": "Latn",
+     "rom": "crop-quickening"
+    },
+    "inheritability": "none",
+    "notes": "The cult held that the spirit's favour secured abundant taro.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Magic (Oxford: Clarendon Press, 1928)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The taro-spirit is the animating power of the taro cult (Kava keva) documented by Williams, entering the kasamba to make them tremble and prophesy and holding the fertility of the taro gardens.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Magic (Oxford: Clarendon Press, 1928)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The taro-spirit is the animating power of the taro cult, called Kava keva, which F. E. Williams described in Orokaiva Magic. Entering the kasamba or taro-men, it made them tremble and prophesy in the seizure known as jipari, and its favour was held to make the taro gardens flourish. The cult drew on the older Orokaiva conviction that ancestral spirits govern the fertility of the staple crop; some tellings of the Totoima myth trace the origin of the taro-spirit to the deed of the ogre's twin sons. Sources differ on whether it is conceived as one spirit or as the ancestral dead acting collectively through the taro."
+ },
+ {
+  "id": "orokaiva_initiation_spirit",
+  "name": {
+   "primary": "The initiation spirit",
+   "alt": [
+    "the devourer of novices",
+    "the tree-spirit of initiation"
+   ],
+   "transliterations": {
+    "en": "the initiation spirit"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Orokaiva",
+  "primaryTradition": "Orokaiva",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Orokaiva traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "male-initiation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the seclusion rite",
+     "script": "Latn",
+     "rom": "the seclusion rite"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   },
+   {
+    "sphereId": "death-and-rebirth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "swallowing and disgorging",
+     "script": "Latn",
+     "rom": "swallowing and disgorging"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "swallow-and-disgorge-novices",
+    "name": "swallows the novices and gives them back as men",
+    "term": {
+     "value": "ritual devouring",
+     "script": "Latn",
+     "rom": "ritual devouring"
+    },
+    "inheritability": "none",
+    "notes": "The boys are said to die within the spirit and be reborn from it, echoing the cannibal Totoima.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "In Orokaiva male initiation the secluded novices are given to a spirit said to swallow and disgorge them so that the boys die and are reborn as men, a devouring imagery Williams links to the myth of Totoima.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Orokaiva Society (London: Oxford University Press, 1930)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "In Orokaiva male initiation the novices are secluded and delivered to a spirit said to swallow and then disgorge them, so that the boys die as children and are reborn as men. F. E. Williams recorded the rite in Orokaiva Society; its imagery of a devouring being echoes the cannibal Totoima, and the myth of the ogre's death is told as the origin of the tree-spirits impersonated in the ceremonies. Sources vary in how sharply this initiation-spirit is set apart from the wider host of sovai, the spirits of the dead who otherwise dominate Orokaiva belief."
+ }
+]
+```

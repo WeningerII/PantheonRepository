@@ -1,0 +1,926 @@
+Malekula — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "malekula_ambat",
+  "name": {
+   "primary": "Ambat",
+   "alt": [
+    "Ambet",
+    "Ta-mbat"
+   ],
+   "transliterations": {
+    "sns": "Ambat",
+    "etymology": "Recorded by Deacon for the South West Bay and Seniang districts; the single name is borne by all five brothers of the cycle, who are distinguished only by seniority"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Malekula",
+  "primaryTradition": "Malekula",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Malekula traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "culture-heroism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "culture-bringer",
+     "script": "Latin",
+     "rom": "culture-bringer"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula: A Vanishing People in the New Hebrides (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "sphereId": "craft-pottery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "pottery-making",
+     "script": "Latin",
+     "rom": "pottery-making"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "sphereId": "seafaring",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "canoe-building",
+     "script": "Latin",
+     "rom": "canoe-building"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roslyn Poignant, Oceanic Mythology (1967), New Hebrides section"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "founding ancestor",
+     "script": "Latin",
+     "rom": "founding ancestor"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "introduce-the-arts",
+    "name": "introduces the arts of civilisation",
+    "term": {
+     "value": "culture-bringing",
+     "script": "Latin",
+     "rom": "culture-bringing"
+    },
+    "inheritability": "unique",
+    "notes": "The Seniang myths credit Ambat with first making pottery, the outrigger canoe and the bow, and teaching their use.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "id": "outwit-the-ogress",
+    "name": "outwits the cannibal ogress",
+    "term": {
+     "value": "trickster-cunning",
+     "script": "Latin",
+     "rom": "trickster-cunning"
+    },
+    "inheritability": "partial",
+    "notes": "In the best-known tale Ambat detects and escapes the ogress Nevinbumbaau, who has flayed and impersonated a woman of his household.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "id": "bear-the-long-head",
+    "name": "bears and models the elongated head",
+    "term": {
+     "value": "long-headedness",
+     "script": "Latin",
+     "rom": "long-headedness"
+    },
+    "inheritability": "partial",
+    "notes": "Ambat's pale skin and pointed skull are the mythic charter for cranial binding and for the elongated modelled heads of the funerary effigies.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "malekula_ambat-outrigger",
+    "kind": "vessel",
+    "name": "the first outrigger canoe",
+    "term": {
+     "value": "outrigger canoe",
+     "script": "Latin",
+     "rom": "outrigger canoe"
+    },
+    "role": "first fashioned by the hero",
+    "notes": "Seafaring craft whose invention the Seniang myths attribute to Ambat.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "id": "malekula_ambat-rambaramp",
+    "kind": "effigy",
+    "name": "rambaramp funerary effigy",
+    "term": {
+     "value": "rambaramp",
+     "script": "Latin",
+     "rom": "rambaramp"
+    },
+    "role": "iconographic descendant of the hero's form",
+    "notes": "The over-modelled effigies of important dead reproduce the elongated head associated with Ambat.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "malekula_ambat_brother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ],
+    "notes": "One of the five brothers who all bear the name Ambat."
+   },
+   {
+    "kind": "enemy",
+    "personId": "malekula_nevinbumbaau",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ],
+    "notes": "The ogress deceives and menaces Ambat's household."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ambat is the principal culture-hero of the South West Bay and Seniang districts of Malekula, the cleverest of five brothers who all bear the name Ambat.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula: A Vanishing People in the New Hebrides (1934), pp. 618-641"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Ambat introduced pottery, the outrigger canoe and the bow, and is distinguished by pale skin and an elongated head that furnishes the charter for cranial deformation.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roslyn Poignant, Oceanic Mythology (1967)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Ambat is the great culture-hero of southern and western Malekula, the foremost and most cunning of five brothers who all carry the same name and are told apart only by their birth-order. He is imagined as pale-skinned and long-headed, and it is from him that the peoples of the South West Bay derive the arts they most prize: the shaping and firing of clay pots, the building of the outrigger canoe, and the bow. Around him gathers a cycle of tales in which his brothers by turns assist and envy him, and in which he is pitted against the ogress Nevinbumbaau, whom he alone is clever enough to unmask and evade. His distinctive elongated skull is the model for the head-binding once practised on the island and for the tall modelled heads of the funerary effigies, so that the dead of rank are made, in death, to resemble him."
+ },
+ {
+  "id": "malekula_ambat_brother",
+  "name": {
+   "primary": "Ambat",
+   "alt": [
+    "the elder Ambat",
+    "one of the five Ambat brothers"
+   ],
+   "transliterations": {
+    "sns": "Ambat",
+    "etymology": "The brothers share a single name and are differentiated in the tales chiefly by seniority rather than by distinct epithets"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Malekula",
+  "primaryTradition": "Malekula",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Malekula traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "culture-heroism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hero's kinsman",
+     "script": "Latin",
+     "rom": "hero's kinsman"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "sphereId": "kinship-rivalry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "fraternal envy",
+     "script": "Latin",
+     "rom": "fraternal envy"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "envy-the-hero",
+    "name": "envies and rivals the culture-hero",
+    "term": {
+     "value": "fraternal rivalry",
+     "script": "Latin",
+     "rom": "fraternal rivalry"
+    },
+    "inheritability": "none",
+    "notes": "In several episodes the elder brothers covet the youngest Ambat's cunning, his catch or his wife, and their scheming drives the plot.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "id": "aid-the-hero",
+    "name": "accompanies and aids the hero",
+    "term": {
+     "value": "companionship",
+     "script": "Latin",
+     "rom": "companionship"
+    },
+    "inheritability": "none",
+    "notes": "In other tales the brothers travel, fish and build with Ambat, so that the band of five acts as a single company.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "malekula_ambat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ],
+    "notes": "Brother to the culture-hero within the band of five."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Ambat cycle turns on five brothers who all bear the name Ambat and are distinguished by seniority; the elder brothers act by turns as companions and as envious rivals of the youngest and cleverest.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula: A Vanishing People in the New Hebrides (1934), pp. 618-641"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The Ambat cycle is a brother-cycle: five siblings who all carry the name Ambat and are set apart only by age. The elder brothers are lightly individuated in the tales, appearing as a company that fishes, voyages and builds alongside the hero, and at other times as rivals who envy his cleverness and covet his wife or his catch. Their scheming supplies much of the movement of the myths, while the hero's escape from their designs, or from the ogress into whose hands their folly delivers him, confirms his pre-eminence. Sources present the brothers collectively more than singly, and no separate proper names distinguish them."
+ },
+ {
+  "id": "malekula_nevinbumbaau",
+  "name": {
+   "primary": "Nevinbumbaau",
+   "alt": [
+    "Nevinbumbau",
+    "Nevimbumbau",
+    "Nevinbumbaau"
+   ],
+   "transliterations": {
+    "sns": "Nevinbumbaau",
+    "etymology": "Rendered by Deacon with diacritics as Nevinbumbaau; a female ghost-being of great size"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Malekula",
+  "primaryTradition": "Malekula",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Malekula traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "devouring",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cannibal appetite",
+     "script": "Latin",
+     "rom": "cannibal appetite"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "sphereId": "secret-society-ritual",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nevinbur",
+     "script": "Latin",
+     "rom": "nevinbur"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934)"
+     }
+    ]
+   },
+   {
+    "sphereId": "monstrous-guardianship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ogre-guardian",
+     "script": "Latin",
+     "rom": "ogre-guardian"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "devour-humans",
+    "name": "devours human beings",
+    "term": {
+     "value": "cannibalism",
+     "script": "Latin",
+     "rom": "cannibalism"
+    },
+    "inheritability": "none",
+    "notes": "A giant cannibal ogress with long sharp nails who preys on those who fall into her power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "id": "impersonate-by-flaying",
+    "name": "impersonates a victim by wearing her skin",
+    "term": {
+     "value": "skin-disguise",
+     "script": "Latin",
+     "rom": "skin-disguise"
+    },
+    "inheritability": "unique",
+    "notes": "In the celebrated tale she kills a woman, dons her flayed skin and takes her place until the deception is detected.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ]
+   },
+   {
+    "id": "loom-as-giant-effigy",
+    "name": "appears as a towering effigy in ritual",
+    "term": {
+     "value": "nevinbur",
+     "script": "Latin",
+     "rom": "nevinbur"
+    },
+    "inheritability": "none",
+    "notes": "She is embodied as the huge female figure raised in the Nevinbur cycle of the secret society.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "malekula_nevinbumbaau-nevinbur-effigy",
+    "kind": "effigy",
+    "name": "the giant Nevinbur figure",
+    "term": {
+     "value": "nevinbur",
+     "script": "Latin",
+     "rom": "nevinbur"
+    },
+    "role": "ritual embodiment of the ogress",
+    "notes": "A towering constructed female figure displayed to initiates in the Nevinbur rites, identified with the ogress.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "malekula_ambat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula (1934), pp. 618-641"
+     }
+    ],
+    "notes": "Adversary of the culture-hero, whom she cannot deceive."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Nevinbumbaau is a giant cannibal ogress of Malekula myth who kills a woman and wears her flayed skin to impersonate her, and who is embodied as a colossal female effigy in the Nevinbur rites of the secret society.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Malekula: A Vanishing People in the New Hebrides (1934), pp. 618-641"
+     },
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Nevinbumbaau is the great ogress of Malekula, a female ghost-being of enormous size with long sharp nails and an appetite for human flesh. She is best known from the tale in which she murders a woman of the culture-hero's household, flays her and wears the skin to take her place, keeping up the imposture until Ambat detects it and escapes her. Beyond the narrative she has a ritual life: in the Nevinbur cycle of the men's secret society she is made present as a towering female effigy shown to initiates, so that the ogress of story and the fearful figure of the rite are one. Layard, comparing her with the devouring guardian of the road of the dead, reads her as an expression of the terrible-mother theme that runs through Malekula belief."
+ },
+ {
+  "id": "malekula_le_hev_hev",
+  "name": {
+   "primary": "Le-hev-hev",
+   "alt": [
+    "Lehevhev",
+    "Ler-hev-hev",
+    "Le-hev hev"
+   ],
+   "transliterations": {
+    "vao": "Le-hev-hev",
+    "etymology": "Glossed in the ethnography as a name evoking a smile or laugh of ironic welcome"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Malekula",
+  "primaryTradition": "Malekula",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Malekula traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death-threshold",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "guardian of the road of the dead",
+     "script": "Latin",
+     "rom": "guardian of the road of the dead"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Maze-Dances and the Ritual of the Labyrinth in Malekula, Folk-Lore 47 (1936), pp. 123-170"
+     }
+    ]
+   },
+   {
+    "sphereId": "labyrinth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the path design",
+     "script": "Latin",
+     "rom": "the path design"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Geometrical Drawings from Malekula, JRAI 64 (1934), pp. 129-175"
+     }
+    ]
+   },
+   {
+    "sphereId": "devouring",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "devourer of the untutored dead",
+     "script": "Latin",
+     "rom": "devourer of the untutored dead"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-the-road-of-the-dead",
+    "name": "guards the entrance to the land of the dead",
+    "term": {
+     "value": "threshold-warding",
+     "script": "Latin",
+     "rom": "threshold-warding"
+    },
+    "inheritability": "unique",
+    "notes": "She sits beside the path the ghost must travel, before a completed geometrical figure drawn on the ground.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Maze-Dances and the Ritual of the Labyrinth in Malekula, Folk-Lore 47 (1936), pp. 123-170"
+     }
+    ]
+   },
+   {
+    "id": "erase-half-the-maze",
+    "name": "erases half of the labyrinth design",
+    "term": {
+     "value": "half-erasure of the path",
+     "script": "Latin",
+     "rom": "half-erasure of the path"
+    },
+    "inheritability": "unique",
+    "notes": "As the ghost approaches she rubs out one half of the figure, which the ghost must restore by tracing to pass.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Geometrical Drawings from Malekula, JRAI 64 (1934), pp. 129-175"
+     }
+    ]
+   },
+   {
+    "id": "devour-the-ignorant-dead",
+    "name": "devours the dead who cannot complete the maze",
+    "term": {
+     "value": "devouring",
+     "script": "Latin",
+     "rom": "devouring"
+    },
+    "inheritability": "none",
+    "notes": "The ghost who failed to learn the design in life, or whose kin gave no sacrifice, is eaten and never reaches the dead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "malekula_le_hev_hev-labyrinth",
+    "kind": "ritual-design",
+    "name": "the labyrinth of the dead",
+    "term": {
+     "value": "na-leng",
+     "script": "Latin",
+     "rom": "na-leng"
+    },
+    "role": "test set before the ghost",
+    "notes": "The geometrical sand-drawing, called the path or road, which the ghost must complete before the guardian; sand-drawing remains a living Malekula and Vanuatu art.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Geometrical Drawings from Malekula, JRAI 64 (1934), pp. 129-175"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Le-hev-hev is the female guardian at the entrance to the land of the dead; she erases half of a geometrical labyrinth that the ghost must complete to pass, and devours those who fail.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Maze-Dances and the Ritual of the Labyrinth in Malekula, Folk-Lore 47 (1936), pp. 123-170"
+     },
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Le-hev-hev is the devouring guardian who sits at the threshold of the land of the dead. On the road every ghost must travel, she waits beside a completed geometrical figure, the labyrinth called the path; as the newcomer approaches she rubs out one half of it. The ghost must at once restore the missing half by tracing the correct line. One who learned the design in life, and for whom the proper sacrifices were made, passes on to the dead; one who cannot complete it is seized and devoured, and never arrives. Layard makes her the centre of the maze-dances and labyrinth ritual of Malekula, and reads her, with the ogress Nevinbumbaau, as a face of the devouring female. Deacon records the same guardian and test under a district name in the Seniang, so that the two accounts describe one figure known across the island under differing names."
+ },
+ {
+  "id": "malekula_temes_savsap",
+  "name": {
+   "primary": "Temes Savsap",
+   "alt": [
+    "Temes Savsab",
+    "Savsap"
+   ],
+   "transliterations": {
+    "sns": "Temes Savsap",
+    "etymology": "temes 'ghost, spirit' with the name Savsap; the ghost-woman of the road of the dead in the Seniang district"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Malekula",
+  "primaryTradition": "Malekula",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Malekula traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death-threshold",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ghost-guardian of the dead's road",
+     "script": "Latin",
+     "rom": "ghost-guardian of the dead's road"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Geometrical Drawings from Malekula, JRAI 64 (1934), pp. 129-175"
+     }
+    ]
+   },
+   {
+    "sphereId": "labyrinth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nahal",
+     "script": "Latin",
+     "rom": "nahal"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Geometrical Drawings from Malekula, JRAI 64 (1934), pp. 129-175"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sit-at-the-guardian-rock",
+    "name": "sits at the rock on the road of the dead",
+    "term": {
+     "value": "threshold-keeping",
+     "script": "Latin",
+     "rom": "threshold-keeping"
+    },
+    "inheritability": "unique",
+    "notes": "She is seated beside the rock on which the design called Nahal, the path, is drawn.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Geometrical Drawings from Malekula, JRAI 64 (1934), pp. 129-175"
+     }
+    ]
+   },
+   {
+    "id": "erase-the-nahal",
+    "name": "erases half of the Nahal design",
+    "term": {
+     "value": "half-erasure of the Nahal",
+     "script": "Latin",
+     "rom": "half-erasure of the Nahal"
+    },
+    "inheritability": "unique",
+    "notes": "She rubs out half the figure so that the ghost must complete it or be destroyed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Geometrical Drawings from Malekula, JRAI 64 (1934), pp. 129-175"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "malekula_temes_savsap-nahal",
+    "kind": "ritual-design",
+    "name": "the Nahal, the path",
+    "term": {
+     "value": "Nahal",
+     "script": "Latin",
+     "rom": "Nahal"
+    },
+    "role": "the labyrinth completed by the ghost",
+    "notes": "The geometrical figure, called the path or road, drawn beside the guardian on the way of the dead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Geometrical Drawings from Malekula, JRAI 64 (1934), pp. 129-175"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "In the Seniang district Deacon records the guardian of the road of the dead as a ghost-woman seated by a rock bearing the design Nahal, who rubs out half the figure so that the ghost must restore it to pass; she is the district counterpart of Le-hev-hev.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Deacon, Geometrical Drawings from Malekula and Other Islands of the New Hebrides, JRAI 64 (1934), pp. 129-175"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "In the Seniang district of southern Malekula the guardian of the road of the dead is a ghost-woman who sits beside a rock on which is traced the geometrical figure called Nahal, the path. As each ghost comes to her she erases half of the design; the dead must complete the missing half from memory to be allowed to go on, and one who cannot is destroyed. She is the same guardian, in her local name and setting, as the Le-hev-hev whom Layard describes for other districts, and the two accounts together fix the labyrinth-test as a belief held across Malekula rather than in one village only. The word temes, ghost or spirit, marks her nature as one of the dead who wards the passage of the newly dead."
+ },
+ {
+  "id": "malekula_taghar",
+  "name": {
+   "primary": "Taghar",
+   "alt": [
+    "Tagar",
+    "Tagaro"
+   ],
+   "transliterations": {
+    "vao": "Taghar",
+    "etymology": "Cognate with the Tagaro of Ambae, Maewo and Pentecost; a sky-dwelling being of the northern New Hebrides"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Malekula",
+  "primaryTradition": "Malekula",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Malekula traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sky-dweller",
+     "script": "Latin",
+     "rom": "sky-dweller"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. H. Codrington, The Melanesians (1891), New Hebrides material"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "originator",
+     "script": "Latin",
+     "rom": "originator"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dwell-in-the-sky",
+    "name": "dwells in the sky above the island",
+    "term": {
+     "value": "celestial abode",
+     "script": "Latin",
+     "rom": "celestial abode"
+    },
+    "inheritability": "none",
+    "notes": "A remote sky-being, invoked rather than the subject of a developed narrative on Malekula.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. H. Codrington, The Melanesians (1891)"
+     }
+    ]
+   },
+   {
+    "id": "originate-the-order-of-things",
+    "name": "stands at the origin of the present order",
+    "term": {
+     "value": "primal origination",
+     "script": "Latin",
+     "rom": "primal origination"
+    },
+    "inheritability": "none",
+    "notes": "In the wider Tagaro tradition of the northern islands he is credited with the making or ordering of the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. H. Codrington, The Melanesians (1891)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "A sky-dwelling being named Taghar, cognate with the Tagaro of Ambae, Maewo and Pentecost, is known in the northern and small-island districts within Malekula's orbit; sources differ on whether he belongs to the indigenous Malekula pantheon or was known chiefly through contact with the neighbouring islands where the culture-hero Ambat holds the central place.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "R. H. Codrington, The Melanesians: Studies in Their Anthropology and Folk-Lore (1891)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "John Layard, Stone Men of Malekula: Vao (1942)"
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Taghar is a sky-dwelling being, the local reflex of the Tagaro known across the northern New Hebrides on Ambae, Maewo and Pentecost, and reported in the northern and small-island districts within Malekula's cultural reach. Unlike the richly storied culture-hero Ambat, he is a remote and lightly narrated figure, invoked as a distant originator rather than made the subject of a developed cycle. Sources differ on whether he is properly indigenous to Malekula or was known there chiefly through the constant traffic with the neighbouring islands, where such sky-beings are central; on Malekula itself the creative and civilising roles that elsewhere belong to Tagaro are largely gathered onto Ambat."
+ }
+]
+```

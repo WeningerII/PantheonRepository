@@ -1,0 +1,860 @@
+Nez Perce — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "nez_perce_coyote",
+  "name": {
+   "primary": "Coyote",
+   "alt": [
+    "Iceye'ye",
+    "Itsayaya",
+    "Itsaya'ya"
+   ],
+   "transliterations": {
+    "nez": "ʔiceyéeye",
+    "etymology": "Nez Perce name of the mythic Coyote, the trickster-transformer chief of the First People"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Nez Perce",
+  "primaryTradition": "Nez Perce",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Nez Perce traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "world-shaping",
+     "script": "Latin",
+     "rom": "world-shaping"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (Columbia University Press, 1934), 'Coyote and the Monster'"
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "trickery",
+     "script": "Latin",
+     "rom": "trickery"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herbert J. Spinden, 'Myths of the Nez Percé Indians,' Journal of American Folklore 21 (1908): 13-23"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation-of-humankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "peopling of the land",
+     "script": "Latin",
+     "rom": "peopling of the land"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), origin of the tribes at Kamiah"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "slay-monster",
+    "name": "slays the swallowing monster from within",
+    "term": {
+     "value": "monster-slaying",
+     "script": "Latin",
+     "rom": "monster-slaying"
+    },
+    "inheritability": "unique",
+    "notes": "Allowing himself to be inhaled, Coyote cuts the monster's heart loose with flint knives and kills it.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), 'Coyote and the Monster'"
+     }
+    ]
+   },
+   {
+    "id": "form-peoples",
+    "name": "forms the nations from the monster's body",
+    "term": {
+     "value": "carving of the peoples",
+     "script": "Latin",
+     "rom": "carving of the peoples"
+    },
+    "inheritability": "unique",
+    "notes": "The dismembered carcass is flung to the four directions to become the surrounding tribes; the Nimiipuu are made from the heart's blood.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934); Herbert J. Spinden, Journal of American Folklore 21 (1908)"
+     }
+    ]
+   },
+   {
+    "id": "release-salmon",
+    "name": "breaks the dam and looses the salmon runs",
+    "term": {
+     "value": "salmon-release",
+     "script": "Latin",
+     "rom": "salmon-release"
+    },
+    "inheritability": "unique",
+    "notes": "Coyote destroys the barrier penning the fish downstream, establishing the seasonal runs of the Plateau rivers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest (University of California Press, 1953), Nez Perce salmon tales"
+     }
+    ]
+   },
+   {
+    "id": "return-from-death",
+    "name": "dies and revives across the cycle",
+    "term": {
+     "value": "deathlessness",
+     "script": "Latin",
+     "rom": "deathlessness"
+    },
+    "inheritability": "unique",
+    "notes": "Coyote perishes repeatedly through his own folly and is restored, most often by Fox.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), Coyote-and-Fox episodes"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nez_perce_coyote-flint-knives",
+    "kind": "tool",
+    "name": "flint knives",
+    "term": {
+     "value": "flint knives",
+     "script": "Latin",
+     "rom": "flint knives"
+    },
+    "role": "cutting the monster open from within",
+    "notes": "Coyote sharpens and hides five stone knives before letting himself be swallowed, then severs the monster's heart.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), 'Coyote and the Monster'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "nez_perce_fox",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), Coyote-and-Fox episodes"
+     }
+    ],
+    "notes": "Inseparable travelling companion and reviver."
+   },
+   {
+    "kind": "enemy",
+    "personId": "nez_perce_monster",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), 'Coyote and the Monster'"
+     }
+    ],
+    "notes": "Coyote destroys the devouring monster at Kamiah."
+   },
+   {
+    "kind": "ally",
+    "personId": "nez_perce_meadowlark",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herbert J. Spinden, 'Myths of the Nez Percé Indians,' Journal of American Folklore 21 (1908)"
+     }
+    ],
+    "notes": "The bird supplies Coyote with news."
+   },
+   {
+    "kind": "enemy",
+    "personId": "nez_perce_grizzly_bear",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Deward E. Walker Jr. with Daniel N. Matthews, Nez Perce Coyote Tales: The Myth Cycle (University of Oklahoma Press, 1994)"
+     }
+    ],
+    "notes": "Coyote is pitted against the ferocious grizzly in several tales."
+   },
+   {
+    "kind": "ally",
+    "personId": "nez_perce_salmon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest (1953)"
+     }
+    ],
+    "notes": "Coyote liberates the salmon and grants them to the people."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "ʔiceyéeye",
+    "translation": "Coyote",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Haruo Aoki, Nez Perce Dictionary (University of California Publications in Linguistics 122, 1994)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Coyote is the transformer who slays the swallowing monster and creates the peoples, forming the Nimiipuu from the heart's blood at Kamiah.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (Columbia University Press, 1934), 'Coyote and the Monster'"
+     },
+     {
+      "kind": "primary",
+      "reference": "Herbert J. Spinden, 'Myths of the Nez Percé Indians,' Journal of American Folklore 21 (1908): 13-23"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Coyote frees the salmon and journeys to the land of the dead in the Nez Perce myth cycle.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), 'Coyote and the Shadow People'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Deward E. Walker Jr. with Daniel N. Matthews, Nez Perce Coyote Tales: The Myth Cycle (1994)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "In Nez Perce tradition Coyote (ʔiceyéeye) is the foremost of the First People and the transformer who readies the world for humankind. The central narrative recounts how he slew the swallowing monster that had devoured the animal people along the Clearwater: letting himself be inhaled, he cut the monster's heart free from inside with flint knives, released the swallowed beings, and then carved the carcass into pieces, flinging them to the four directions to become the surrounding nations. From the heart's blood, sprinkled at Kamiah, he formed the Nimiipuu, promising them a small country but a people strong and clever. Coyote is likewise credited with breaking the dam that held back the salmon, with ordering marriage and death and the seasons, and with journeying to the land of the shadows to recover his dead wife, whom he lost by embracing her before the appointed time. He is at once benefactor and buffoon, wise orderer and appetitive trickster, and he dies and revives many times across the cycle."
+ },
+ {
+  "id": "nez_perce_fox",
+  "name": {
+   "primary": "Fox",
+   "alt": [
+    "Tiléepe",
+    "Tilipe"
+   ],
+   "transliterations": {
+    "nez": "tiléepe",
+    "etymology": "Nez Perce name of Fox, Coyote's constant companion and reviver"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nez Perce",
+  "primaryTradition": "Nez Perce",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Nez Perce traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "resurrection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "restoration of life",
+     "script": "Latin",
+     "rom": "restoration of life"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), Coyote-and-Fox episodes"
+     }
+    ]
+   },
+   {
+    "sphereId": "counsel",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "counsel",
+     "script": "Latin",
+     "rom": "counsel"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "revive-the-dead",
+    "name": "revives the dead by stepping over the body",
+    "term": {
+     "value": "life-restoring step",
+     "script": "Latin",
+     "rom": "life-restoring step"
+    },
+    "inheritability": "unique",
+    "notes": "Fox steps or leaps over Coyote's scattered remains, whereupon Coyote rises as if from sleep.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934)"
+     }
+    ]
+   },
+   {
+    "id": "counsel-coyote",
+    "name": "counsels the headstrong Coyote",
+    "term": {
+     "value": "wise counsel",
+     "script": "Latin",
+     "rom": "wise counsel"
+    },
+    "inheritability": "none",
+    "notes": "Fox is the more temperate of the pair and warns Coyote against the follies Coyote nonetheless commits.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Deward E. Walker Jr. with Daniel N. Matthews, Nez Perce Coyote Tales: The Myth Cycle (1994)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "nez_perce_coyote",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), Coyote-and-Fox episodes"
+     }
+    ],
+    "notes": "Coyote's inseparable companion who restores him after each fatal mishap."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "tiléepe",
+    "translation": "Fox",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Haruo Aoki, Nez Perce Dictionary (1994)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Fox is Coyote's companion who restores him to life by stepping over his body.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Deward E. Walker Jr. with Daniel N. Matthews, Nez Perce Coyote Tales: The Myth Cycle (1994)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Fox (tiléepe) is Coyote's inseparable companion and foil throughout the myth cycle. Wiser and more temperate than Coyote, he offers counsel that Coyote habitually disregards, and it is Fox who restores Coyote to life after each of his fatal misadventures by stepping or leaping over the scattered body, whereupon Coyote rises as though waking from sleep. Sources present the two sometimes as brothers and sometimes simply as fellow travelers."
+ },
+ {
+  "id": "nez_perce_monster",
+  "name": {
+   "primary": "The Swallowing Monster",
+   "alt": [
+    "Monster of Kamiah",
+    "The Kamiah Monster",
+    "The Monster"
+   ],
+   "transliterations": {
+    "en": "the Monster",
+    "etymology": "the great being that inhaled the animal people; the texts name it only descriptively as 'the monster'"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nez Perce",
+  "primaryTradition": "Nez Perce",
+  "sex": "male",
+  "vitalStatus": "slain",
+  "parentIds": [],
+  "temporal": {
+   "era": "Nez Perce traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "devouring",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "devouring",
+     "script": "Latin",
+     "rom": "devouring"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), 'Coyote and the Monster'"
+     }
+    ]
+   },
+   {
+    "sphereId": "monsters",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "monstrousness",
+     "script": "Latin",
+     "rom": "monstrousness"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herbert J. Spinden, 'Myths of the Nez Percé Indians,' Journal of American Folklore 21 (1908)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "swallow-with-breath",
+    "name": "draws in beings with its breath",
+    "term": {
+     "value": "inhaling breath",
+     "script": "Latin",
+     "rom": "inhaling breath"
+    },
+    "inheritability": "unique",
+    "notes": "The monster inhales every creature within reach, emptying the country of the animal people until Coyote comes.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), 'Coyote and the Monster'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nez_perce_monster-heart",
+    "kind": "landmark",
+    "name": "Heart of the Monster",
+    "term": {
+     "value": "Heart of the Monster",
+     "script": "Latin",
+     "rom": "Heart of the Monster"
+    },
+    "role": "petrified heart of the slain monster",
+    "notes": "A basalt formation near Kamiah, Idaho, pointed to as the monster's heart and the place where the Nimiipuu were formed from its blood.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest (1953); National Park Service, Nez Perce National Historical Park, Heart of the Monster site"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "nez_perce_coyote",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), 'Coyote and the Monster'"
+     }
+    ],
+    "notes": "Slain by Coyote, who makes the peoples from its body."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The swallowing monster devours the animal people and is slain by Coyote, whose dismembering of it creates the tribes, the Nimiipuu arising from the heart's blood at Kamiah.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (Columbia University Press, 1934), 'Coyote and the Monster'"
+     },
+     {
+      "kind": "primary",
+      "reference": "Herbert J. Spinden, 'Myths of the Nez Percé Indians,' Journal of American Folklore 21 (1908): 13-23"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Swallowing Monster is the great being whose devouring of the animal people sets the Nez Perce origin story in motion. Lying along the Clearwater, it drew in every creature with its breath until Coyote allowed himself to be swallowed, cut the monster's heart loose from inside, and killed it. From its dismembered body Coyote made the peoples of the region, and from the blood of its heart he formed the Nimiipuu at Kamiah; a basalt formation there, the Heart of the Monster, is pointed to as the petrified heart. The texts name the being only as 'the monster,' and no personal name is consistently recorded."
+ },
+ {
+  "id": "nez_perce_meadowlark",
+  "name": {
+   "primary": "Meadowlark",
+   "alt": [],
+   "transliterations": {
+    "en": "Meadowlark",
+    "etymology": "the small prairie bird who serves as Coyote's informant in the myth cycle"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nez Perce",
+  "primaryTradition": "Nez Perce",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Nez Perce traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "omens",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tidings",
+     "script": "Latin",
+     "rom": "tidings"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herbert J. Spinden, 'Myths of the Nez Percé Indians,' Journal of American Folklore 21 (1908)"
+     }
+    ]
+   },
+   {
+    "sphereId": "birds",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "prairie birds",
+     "script": "Latin",
+     "rom": "prairie birds"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest (1953)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "disclose-hidden-news",
+    "name": "reveals hidden news to Coyote",
+    "term": {
+     "value": "revealing of news",
+     "script": "Latin",
+     "rom": "revealing of news"
+    },
+    "inheritability": "none",
+    "notes": "The meadowlark tells Coyote things he could not otherwise learn, including tidings of his dead wife on the road to the shadowland.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934), 'Coyote and the Shadow People'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "nez_perce_coyote",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Herbert J. Spinden, 'Myths of the Nez Percé Indians,' Journal of American Folklore 21 (1908)"
+     }
+    ],
+    "notes": "Informant to Coyote, though her disclosures may help or hinder him."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Meadowlark acts as Coyote's informant; Coyote breaks her leg and mends it with a splint, an etiology of the bird's slender legs and markings.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Herbert J. Spinden, 'Myths of the Nez Percé Indians,' Journal of American Folklore 21 (1908)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest (1953)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Meadowlark is the small prairie bird who acts as Coyote's informant, disclosing to him news he could not otherwise learn, including word of his wife on the journey to the land of the dead. In a widely told incident Coyote, hurrying past, breaks the bird's leg; repenting, he mends it with a splint, and the meadowlark's slender legs and dark breast-markings are traced to this repair. Her disclosures are as apt to further Coyote's schemes as to expose them."
+ },
+ {
+  "id": "nez_perce_grizzly_bear",
+  "name": {
+   "primary": "Grizzly Bear",
+   "alt": [
+    "Xáxaac"
+   ],
+   "transliterations": {
+    "nez": "xáxaac",
+    "etymology": "Nez Perce name of the grizzly bear, the fierce antagonist of the myth cycle"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nez Perce",
+  "primaryTradition": "Nez Perce",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Nez Perce traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "predation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "predation",
+     "script": "Latin",
+     "rom": "predation"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Deward E. Walker Jr. with Daniel N. Matthews, Nez Perce Coyote Tales: The Myth Cycle (1994)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ferocity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ferocity",
+     "script": "Latin",
+     "rom": "ferocity"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "maul-travelers",
+    "name": "attacks and devours travelers",
+    "term": {
+     "value": "mauling",
+     "script": "Latin",
+     "rom": "mauling"
+    },
+    "inheritability": "none",
+    "notes": "Grizzly waylays and kills those who cross its country until outwitted or overcome.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Deward E. Walker Jr. with Daniel N. Matthews, Nez Perce Coyote Tales: The Myth Cycle (1994)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "nez_perce_coyote",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Deward E. Walker Jr. with Daniel N. Matthews, Nez Perce Coyote Tales: The Myth Cycle (1994)"
+     }
+    ],
+    "notes": "Grizzly's ferocity is set against Coyote's ordering work."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "xáxaac",
+    "translation": "grizzly bear",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Haruo Aoki, Nez Perce Dictionary (1994)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Grizzly Bear is a recurring fierce antagonist, including in the cycle of the murderous Five Grizzly-Bear Sisters, set against Coyote.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (Columbia University Press, 1934)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Deward E. Walker Jr. with Daniel N. Matthews, Nez Perce Coyote Tales: The Myth Cycle (1994)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Grizzly Bear (xáxaac) is the fierce antagonist of many tales, appearing as a devourer of travelers and, in the cycle of the Five Grizzly-Bear Sisters, as a household of murderous women whose killings are avenged. Set against the ordering work of Coyote, Grizzly embodies untamed ferocity, and encounters with the bear commonly resolve through trickery or violence. Sources vary in casting the grizzly as male or as the sisterhood of grizzly-women."
+ },
+ {
+  "id": "nez_perce_salmon",
+  "name": {
+   "primary": "Salmon",
+   "alt": [
+    "Nacóx"
+   ],
+   "transliterations": {
+    "nez": "nacóx",
+    "etymology": "Nez Perce for chinook salmon; the First Salmon whose runs Coyote loosed up the rivers"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nez Perce",
+  "primaryTradition": "Nez Perce",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Nez Perce traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "rivers",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "river runs",
+     "script": "Latin",
+     "rom": "river runs"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest (1953)"
+     }
+    ]
+   },
+   {
+    "sphereId": "subsistence-fishing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "fisheries",
+     "script": "Latin",
+     "rom": "fisheries"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Deward E. Walker Jr., ed., Handbook of North American Indians, Vol. 12: Plateau (1998)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ascend-the-rivers",
+    "name": "ascends the rivers each season",
+    "term": {
+     "value": "upstream running",
+     "script": "Latin",
+     "rom": "upstream running"
+    },
+    "inheritability": "full",
+    "notes": "Once freed by Coyote, the salmon run up the Snake, Clearwater, and Salmon rivers, founding the seasonal fisheries.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest (1953)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "nez_perce_coyote",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest (1953)"
+     }
+    ],
+    "notes": "Liberated by Coyote and granted to the people."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "nacóx",
+    "translation": "chinook salmon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Haruo Aoki, Nez Perce Dictionary (1994)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Coyote breaks the dam holding back the salmon and looses the runs up the rivers, founding the Nez Perce fisheries.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Ella E. Clark, Indian Legends of the Pacific Northwest (University of California Press, 1953)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Archie Phinney, Nez Percé Texts (1934)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Salmon (nacóx) are the First Salmon whose release Coyote secured by breaking the dam that penned them downstream, so opening the runs that ascend the Snake, Clearwater, and Salmon rivers each season. The event founds the fisheries and the observances surrounding the first catch that are central to Nez Perce life. Sources differ on the identity of the beings who kept the dam before Coyote broke it."
+ }
+]
+```

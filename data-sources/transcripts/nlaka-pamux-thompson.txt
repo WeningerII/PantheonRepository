@@ -1,0 +1,904 @@
+Nlaka'pamux (Thompson) — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "nlakapamux_old_one",
+  "name": {
+   "primary": "Old-One",
+   "alt": [
+    "The Old One",
+    "The Chief",
+    "Old Man"
+   ],
+   "transliterations": {
+    "en": "the Old One",
+    "etymology": "English gloss used throughout Teit's Thompson corpus; the being is recorded under descriptive titles such as 'the Old One' and 'the Chief' rather than under a single fixed Nłeʔkepmxcín name."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Nlaka'pamux (Thompson)",
+  "primaryTradition": "Nlaka'pamux (Thompson)",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Nlaka'pamux (Thompson) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation-and-cosmic-order",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "world-ordering",
+     "script": "Latn",
+     "rom": "world-ordering"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Mythology of the Thompson Indians,' Memoirs of the American Museum of Natural History 12 (Jesup North Pacific Expedition 8, pt. 2), Leiden/New York, 1912, cosmogonic introduction."
+     }
+    ]
+   },
+   {
+    "sphereId": "fate-and-decree",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sending of the transformers",
+     "script": "Latn",
+     "rom": "sending of the transformers"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'The Thompson Indians of British Columbia,' Memoirs of the American Museum of Natural History 2, New York, 1900, section on religion and beliefs."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ordain-the-world",
+    "name": "ordains the shape of the world",
+    "term": {
+     "value": "world-ordering",
+     "script": "Latn",
+     "rom": "world-ordering"
+    },
+    "inheritability": "unique",
+    "notes": "Existing before the present order, the Old-One establishes the earth and dispatches agents to make it fit for the people who are to come.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' cosmogonic opening."
+     }
+    ]
+   },
+   {
+    "id": "dispatch-transformers",
+    "name": "sends out world-fixers",
+    "term": {
+     "value": "sending",
+     "script": "Latn",
+     "rom": "sending"
+    },
+    "inheritability": "none",
+    "notes": "Rather than acting directly, the Old-One delegates the finishing of the world to Coyote and to the transformer brothers.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1900, 'The Thompson Indians of British Columbia,' beliefs concerning the creator and the transformers."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "nlakapamux_coyote",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians': the Old-One commissions Coyote as world-fixer."
+     }
+    ],
+    "notes": "Dispatches Coyote to travel the land and set it right."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the Chief",
+    "translation": "the Chief (who dwells above)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1900, 'The Thompson Indians of British Columbia.'"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Old-One (the Chief) is the pre-existing creator who orders the world and delegates its finishing to lesser transformers.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Mythology of the Thompson Indians,' Memoirs of the American Museum of Natural History 12, 1912, cosmogony."
+     },
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'The Thompson Indians of British Columbia,' Memoirs of the American Museum of Natural History 2, 1900, religion."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Old-One, also called the Chief, is the highest being of Nlaka'pamux tradition: a creator who exists before the world takes its present form and who sets earth and sky in order. He works chiefly through delegates, sending Coyote and the transformer brothers to travel the land, subdue monsters, and shape the country for the human people who are to follow. Sources differ on how sharply he is distinguished from the transformers themselves, and Teit notes that he is invoked descriptively rather than by a single fixed name."
+ },
+ {
+  "id": "nlakapamux_coyote",
+  "name": {
+   "primary": "Coyote",
+   "alt": [
+    "Sk'elép",
+    "Skelép",
+    "Spilqmítm (Coyote-person)"
+   ],
+   "transliterations": {
+    "thp": "Sk'elép",
+    "etymology": "Teit records the name as SkelE'p; it is the ordinary Nłeʔkepmxcín word for the coyote animal, applied to the mythic transformer-trickster."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Nlaka'pamux (Thompson)",
+  "primaryTradition": "Nlaka'pamux (Thompson)",
+  "sex": "male",
+  "vitalStatus": "living",
+  "temporal": {
+   "era": "Nlaka'pamux (Thompson) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "transforming",
+     "script": "Latn",
+     "rom": "transforming"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Coyote cycle."
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery-and-appetite",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "trickery",
+     "script": "Latn",
+     "rom": "trickery"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Traditions of the Thompson River Indians of British Columbia,' Memoirs of the American Folk-Lore Society 6, 1898, Coyote tales."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "transform-the-land",
+    "name": "transforms beings and the land",
+    "term": {
+     "value": "transforming",
+     "script": "Latn",
+     "rom": "transforming"
+    },
+    "inheritability": "partial",
+    "notes": "Sent by the Old-One, Coyote makes rivers passable, brings salmon up the Fraser and Thompson, and turns monsters and rebellious beings into rocks and animals.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Coyote transformations."
+     }
+    ]
+   },
+   {
+    "id": "deceive-and-covet",
+    "name": "deceives out of appetite and lust",
+    "term": {
+     "value": "trickery",
+     "script": "Latn",
+     "rom": "trickery"
+    },
+    "inheritability": "none",
+    "notes": "Coyote's greed and desire drive many episodes, including his scheme to possess his own son's wives.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1898, 'Traditions of the Thompson River Indians,' Coyote and his son."
+     }
+    ]
+   },
+   {
+    "id": "die-and-revive",
+    "name": "dies and is restored to life",
+    "term": {
+     "value": "revival",
+     "script": "Latn",
+     "rom": "revival"
+    },
+    "inheritability": "none",
+    "notes": "Killed repeatedly through his own folly, Coyote is brought back to life when Fox steps over his scattered bones.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Coyote and Fox."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "nlakapamux_old_one",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians': commissioned by the Old-One."
+     }
+    ],
+    "notes": "Acts as the Old-One's world-fixer."
+   },
+   {
+    "kind": "child",
+    "personId": "nlakapamux_nliksentem",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1898, 'Traditions of the Thompson River Indians,' Coyote and his son."
+     }
+    ],
+    "notes": "Father of Nliksentem, whom he betrays out of lust."
+   },
+   {
+    "kind": "sibling",
+    "personId": "nlakapamux_fox",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians': Fox as Coyote's brother and reviver."
+     }
+    ],
+    "notes": "Brother to Fox, who repeatedly restores him to life."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Sk'elép",
+    "translation": "Coyote",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians.'"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Coyote (Sk'elép) is the principal transformer-trickster of the Thompson, sent by the Old-One to make the world habitable, and the protagonist of the largest body of tales.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Mythology of the Thompson Indians,' Memoirs of the American Museum of Natural History 12, 1912, Coyote cycle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Traditions of the Thompson River Indians of British Columbia,' Memoirs of the American Folk-Lore Society 6, 1898."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Coyote, Sk'elép, is the great transformer and trickster of the Nlaka'pamux and the central figure of Teit's collections. Commissioned by the Old-One to travel the land, he clears obstructions from the rivers, releases and distributes the salmon, and turns dangerous beings into the rocks and animals that mark the country to this day. He is at once benefactor and fool: his appetite and lust as often bring disaster and ridicule as they bring order, and his death and revival by his brother Fox recur through the cycle. In one of the best-known tales he covets the wives of his own son Nliksentem and contrives to send the young man into the sky world."
+ },
+ {
+  "id": "nlakapamux_nliksentem",
+  "name": {
+   "primary": "Nliksentem",
+   "alt": [
+    "NLĭ'ksEntEm",
+    "Nlik̓sentem",
+    "Coyote's Son"
+   ],
+   "transliterations": {
+    "thp": "NLĭ'ksEntEm",
+    "etymology": "as transcribed by Teit; the son of Coyote and hero of the sky-marriage narrative."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Nlaka'pamux (Thompson)",
+  "primaryTradition": "Nlaka'pamux (Thompson)",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "nlakapamux_coyote"
+  ],
+  "parentRoles": {
+   "nlakapamux_coyote": "paternal"
+  },
+  "temporal": {
+   "era": "Nlaka'pamux (Thompson) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky-and-ascent",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ascent to the upper world",
+     "script": "Latn",
+     "rom": "ascent to the upper world"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1898, 'Traditions of the Thompson River Indians,' Coyote and his son."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ascend-to-the-sky-world",
+    "name": "ascends to the sky world",
+    "term": {
+     "value": "ascent",
+     "script": "Latn",
+     "rom": "ascent"
+    },
+    "inheritability": "none",
+    "notes": "Marooned in the sky after his father causes a tree or feather to carry him aloft, he reaches the country of the sky people.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1898, 'Traditions of the Thompson River Indians,' Coyote and his son."
+     }
+    ]
+   },
+   {
+    "id": "return-to-earth",
+    "name": "returns to earth and exposes his father",
+    "term": {
+     "value": "descent",
+     "script": "Latn",
+     "rom": "descent"
+    },
+    "inheritability": "none",
+    "notes": "Aided by sky beings, he is let down to the earth, recovers his wives, and requites Coyote's treachery.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Boas, Franz, ed. 'Folk-Tales of Salishan and Sahaptin Tribes,' Memoirs of the American Folk-Lore Society 11, 1917, Thompson versions."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "nlakapamux_coyote",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1898, 'Traditions of the Thompson River Indians,' Coyote and his son."
+     }
+    ],
+    "notes": "Son of Coyote, who betrays him."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Nliksentem is Coyote's son, hero of the Thompson sky-marriage narrative in which Coyote covets his wives and strands him in the upper world.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Traditions of the Thompson River Indians of British Columbia,' Memoirs of the American Folk-Lore Society 6, 1898, 'Coyote and his son.'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Boas, Franz, ed. 'Folk-Tales of Salishan and Sahaptin Tribes,' Memoirs of the American Folk-Lore Society 11, 1917."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Nliksentem is the son of Coyote and the protagonist of the Thompson version of the widespread 'star-husband' or 'bungling host' story. Coveting his son's two wives, Coyote contrives to send the young man into the sky, causing a tree to grow beneath him or a bird to carry him upward until he is stranded in the upper world. There Nliksentem is taken in and married among the sky people; growing homesick, he is lowered back to the earth by his sky kin, recovers his wives, and turns his father's treachery back upon him. The narrative binds the human and celestial worlds and accounts for features of both."
+ },
+ {
+  "id": "nlakapamux_fox",
+  "name": {
+   "primary": "Fox",
+   "alt": [
+    "Coyote's Brother"
+   ],
+   "transliterations": {
+    "en": "Fox",
+    "etymology": "Teit renders the reviver by the English animal name; in the Interior Salish tellings Fox is Coyote's brother, and no single stabilized romanization is used across the Thompson texts."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nlaka'pamux (Thompson)",
+  "primaryTradition": "Nlaka'pamux (Thompson)",
+  "sex": "male",
+  "vitalStatus": "living",
+  "temporal": {
+   "era": "Nlaka'pamux (Thompson) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death-and-revival",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "restoring the dead",
+     "script": "Latn",
+     "rom": "restoring the dead"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Coyote and Fox episodes."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "revive-the-dead",
+    "name": "revives the dead by stepping over the bones",
+    "term": {
+     "value": "revival",
+     "script": "Latn",
+     "rom": "revival"
+    },
+    "inheritability": "unique",
+    "notes": "Fox gathers Coyote's scattered remains and, by stepping over them, restores him to life, allowing the trickster's endless deaths to be undone.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Fox reviving Coyote."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "nlakapamux_coyote",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians': Fox as Coyote's brother."
+     }
+    ],
+    "notes": "Brother and reviver of Coyote."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Fox is Coyote's brother in Thompson tradition and the being who repeatedly restores the trickster to life by stepping over his bones.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Mythology of the Thompson Indians,' Memoirs of the American Museum of Natural History 12, 1912, Coyote cycle."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Fox is the brother and constant companion of Coyote in Nlaka'pamux tradition. His defining role is that of reviver: after Coyote is killed through his own folly and his body scattered, Fox finds the remains and, by stepping over them, brings the trickster back to life. This recurring rescue makes Coyote's deaths reversible and allows the transformer cycle to continue, and it echoes the same Fox-and-Coyote pairing found across the Interior Salish peoples."
+ },
+ {
+  "id": "nlakapamux_qoaqlqal",
+  "name": {
+   "primary": "Qoáqɬqaɬ",
+   "alt": [
+    "The Transformers",
+    "QoaqLqaL",
+    "The Three Brothers"
+   ],
+   "transliterations": {
+    "thp": "Qoáqɬqaɬ",
+    "etymology": "Teit's rendering of the traveling transformer brothers; the same name and cycle are prominent in the neighbouring Lillooet (St'át'imc) corpus, from which the Thompson tellings are drawn."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Nlaka'pamux (Thompson)",
+  "primaryTradition": "Nlaka'pamux (Thompson)",
+  "vitalStatus": "transformed",
+  "temporal": {
+   "era": "Nlaka'pamux (Thompson) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "transforming the land",
+     "script": "Latn",
+     "rom": "transforming the land"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' transformer narratives; cf. Teit, 'The Lillooet Indians,' Jesup North Pacific Expedition 2, pt. 5, 1906."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "transform-beings",
+    "name": "transform beings and finish the world",
+    "term": {
+     "value": "transforming",
+     "script": "Latn",
+     "rom": "transforming"
+    },
+    "inheritability": "partial",
+    "notes": "Traveling together as brothers, they rid the land of dangers and fix its final form, working in parallel to Coyote.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' transformer brothers."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The Qoáqɬqaɬ are the traveling transformer brothers who move through the country finishing the world; in Thompson tradition the cycle is shared with and largely derived from the neighbouring Lillooet.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Mythology of the Thompson Indians,' Memoirs of the American Museum of Natural History 12, 1912."
+     },
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'The Lillooet Indians,' Memoirs of the American Museum of Natural History 4 (Jesup North Pacific Expedition 2, pt. 5), 1906, transformer cycle."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The Qoáqɬqaɬ are the transformer brothers who travel as a band through the land, overcoming dangerous beings and giving the country its finished shape. They act in parallel to Coyote, and Nlaka'pamux tellings of them are closely linked to the fuller transformer cycle of the neighbouring Lillooet, from which Teit judged the Thompson to have borrowed much of the story. Sources differ on their precise number, presenting them as a set of brothers who function collectively rather than as sharply individuated actors."
+ },
+ {
+  "id": "nlakapamux_grizzly_bear_woman",
+  "name": {
+   "primary": "Grizzly-Bear Woman",
+   "alt": [
+    "The Grizzly-Bear"
+   ],
+   "transliterations": {
+    "en": "Grizzly-Bear Woman",
+    "etymology": "Teit renders the character by the English animal name; she is the jealous, murderous co-wife of the bear narrative."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nlaka'pamux (Thompson)",
+  "primaryTradition": "Nlaka'pamux (Thompson)",
+  "sex": "female",
+  "temporal": {
+   "era": "Nlaka'pamux (Thompson) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "violence-and-wilderness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "murderous violence",
+     "script": "Latn",
+     "rom": "murderous violence"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Grizzly-Bear and Black-Bear."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "kill-and-devour",
+    "name": "kills and devours her rival",
+    "term": {
+     "value": "killing",
+     "script": "Latn",
+     "rom": "killing"
+    },
+    "inheritability": "none",
+    "notes": "Consumed by jealousy, Grizzly-Bear Woman murders Black-Bear Woman and turns on her children, setting the feud of the bear tale in motion.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Grizzly-Bear and Black-Bear."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "nlakapamux_black_bear_woman",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Grizzly-Bear and Black-Bear."
+     }
+    ],
+    "notes": "Murders her co-wife and is avenged by the latter's daughters."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Grizzly-Bear Woman is the jealous, violent figure of the Thompson bear narrative who kills Black-Bear Woman and is destroyed in revenge by Black-Bear's daughters.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Mythology of the Thompson Indians,' Memoirs of the American Museum of Natural History 12, 1912, 'Grizzly-Bear and Black-Bear.'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Grizzly-Bear Woman is the antagonist of one of the most widely told Nlaka'pamux narratives, the tale of the Grizzly and the Black Bear. Jealous and ferocious, she murders her gentle co-wife Black-Bear Woman and seeks to destroy her children as well. Her cruelty is ultimately requited when the surviving daughters of Black-Bear turn her own violence against her and kill her, a reversal that supplies the story's moral weight and accounts for the temper attributed to the grizzly."
+ },
+ {
+  "id": "nlakapamux_black_bear_woman",
+  "name": {
+   "primary": "Black-Bear Woman",
+   "alt": [
+    "The Black-Bear"
+   ],
+   "transliterations": {
+    "en": "Black-Bear Woman",
+    "etymology": "Teit renders the character by the English animal name; she is the gentle co-wife slain in the bear narrative, whose daughters take revenge."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nlaka'pamux (Thompson)",
+  "primaryTradition": "Nlaka'pamux (Thompson)",
+  "sex": "female",
+  "temporal": {
+   "era": "Nlaka'pamux (Thompson) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "kinship-and-motherhood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "motherhood",
+     "script": "Latn",
+     "rom": "motherhood"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Grizzly-Bear and Black-Bear."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "foresee-her-death",
+    "name": "foresees her death and provides for her children",
+    "term": {
+     "value": "foreknowledge",
+     "script": "Latn",
+     "rom": "foreknowledge"
+    },
+    "inheritability": "none",
+    "notes": "Knowing she will be killed, Black-Bear Woman instructs her daughters how to escape and avenge her.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Grizzly-Bear and Black-Bear."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "nlakapamux_grizzly_bear_woman",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' Grizzly-Bear and Black-Bear."
+     }
+    ],
+    "notes": "Murdered by her co-wife, then avenged by her daughters."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Black-Bear Woman is the gentle co-wife murdered by Grizzly-Bear Woman in the Thompson bear narrative; her daughters escape and avenge her.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Mythology of the Thompson Indians,' Memoirs of the American Museum of Natural History 12, 1912, 'Grizzly-Bear and Black-Bear.'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Black-Bear Woman is the sympathetic figure of the Thompson bear tale, the co-wife whom the jealous Grizzly-Bear Woman murders. Foreseeing her own death, she prepares her daughters, instructing them how to flee and how to bring about their aunt's destruction. Her killing and the daughters' revenge form the pivot of the narrative, which sets the contrasting natures of the black bear and the grizzly and warns against jealousy within a household."
+ },
+ {
+  "id": "nlakapamux_snina",
+  "name": {
+   "primary": "Snína",
+   "alt": [
+    "The Owl",
+    "SnēnaɁ"
+   ],
+   "transliterations": {
+    "thp": "Snína",
+    "etymology": "snína, 'owl'; the widespread Interior Salish word, used of the owl invoked as a child-stealing bogey."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Nlaka'pamux (Thompson)",
+  "primaryTradition": "Nlaka'pamux (Thompson)",
+  "temporal": {
+   "era": "Nlaka'pamux (Thompson) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "night-and-dread",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "night terror",
+     "script": "Latn",
+     "rom": "night terror"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1900, 'The Thompson Indians of British Columbia,' beliefs; Teit 1912, 'Mythology of the Thompson Indians,' Owl tales."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "carry-off-children",
+    "name": "carries off disobedient children",
+    "term": {
+     "value": "child-stealing",
+     "script": "Latn",
+     "rom": "child-stealing"
+    },
+    "inheritability": "none",
+    "notes": "The Owl seizes children who stray or misbehave after dark, and is named to keep the young close and quiet at night.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1900, 'The Thompson Indians of British Columbia,' the Owl as bogey."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The Owl, Snína, is a dreaded night being who carries off children and functions as a disciplinary bogey in Thompson belief and story.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'The Thompson Indians of British Columbia,' Memoirs of the American Museum of Natural History 2, 1900, beliefs and children's lore."
+     },
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Mythology of the Thompson Indians,' Memoirs of the American Museum of Natural History 12, 1912, Owl tales."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Snína, the Owl, is a being of night and dread in Nlaka'pamux tradition, invoked as the taker of children who wander or refuse to sleep after dark. As both a figure of tale and a name spoken to discipline the young, the Owl embodies the danger of the night forest; its hoot was heard as an omen and its appearance in story is uniformly menacing."
+ },
+ {
+  "id": "nlakapamux_sun",
+  "name": {
+   "primary": "The Sun",
+   "alt": [
+    "Sun"
+   ],
+   "transliterations": {
+    "en": "the Sun",
+    "etymology": "from Teit's Thompson 'origin of Sun and Moon' narratives; rendered descriptively as the daytime sky-being finally fixed in place after unsuitable candidates are tried."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Nlaka'pamux (Thompson)",
+  "primaryTradition": "Nlaka'pamux (Thompson)",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Nlaka'pamux (Thompson) traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky-and-daylight",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "daylight",
+     "script": "Latn",
+     "rom": "daylight"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' origin of the Sun and Moon."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-daylight",
+    "name": "gives light and warmth to the world",
+    "term": {
+     "value": "shining",
+     "script": "Latn",
+     "rom": "shining"
+    },
+    "inheritability": "unique",
+    "notes": "After several animal-people prove too hot, too dim, or too indiscreet, a suitable being is set in the sky to carry the day.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teit 1912, 'Mythology of the Thompson Indians,' origin of the Sun and Moon."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "In Thompson tradition the present Sun is established after a series of animal-people are tested and found unfit, an Interior Salish origin narrative recorded by Teit.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teit, James A. 'Mythology of the Thompson Indians,' Memoirs of the American Museum of Natural History 12, 1912, 'Origin of the Sun and Moon.'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Boas, Franz, ed. 'Folk-Tales of Salishan and Sahaptin Tribes,' Memoirs of the American Folk-Lore Society 11, 1917, comparative notes on Sun-and-Moon tales."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The Sun is the daytime sky-being of Nlaka'pamux cosmology, whose origin is told in the widespread Interior Salish story of the making of the Sun and Moon. Several of the animal-people are tried in the sky in turn and each proves unsuitable, being too fierce in heat, too weak in light, or too apt to spy on human doings and report what should stay hidden; only when a fitting being is fixed in place does day take its present form. Sources differ on the identity of the one finally chosen and on the exact ordering of the candidates."
+ }
+]
+```

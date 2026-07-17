@@ -1,0 +1,1009 @@
+Menominee — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "menominee_manabus",
+  "name": {
+   "primary": "Manabus",
+   "alt": [
+    "Ma'nabush",
+    "Ma'napus",
+    "Manabozho",
+    "Great Rabbit"
+   ],
+   "transliterations": {
+    "mez": "Mä'näpus",
+    "etymology": "Sources differ, connecting the name with the Great Hare and, in other readings, with light or dawn."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Menominee",
+  "primaryTradition": "Menominee",
+  "sex": "male",
+  "vitalStatus": "departed",
+  "parentIds": [],
+  "temporal": {
+   "era": "Menominee traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation-transformation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "world-shaping and transformation",
+     "script": "Latn",
+     "rom": "world-shaping and transformation"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, 1892-93, pp. 87-114."
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "trickster cunning",
+     "script": "Latn",
+     "rom": "trickster cunning"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. Anthropological Papers of the American Museum of Natural History 13(3), Manabus cycle."
+     }
+    ]
+   },
+   {
+    "sphereId": "medicine-mide",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the medicine lodge (Mitäwin)",
+     "script": "Latn",
+     "rom": "Mitäwin"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 66-137 (Mitä'wit)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "transform-shape",
+    "name": "transforms his shape and the shape of the world",
+    "term": {
+     "value": "transformation",
+     "script": "Latn",
+     "rom": "transformation"
+    },
+    "inheritability": "unique",
+    "notes": "Changes his own form and that of animals and landscape at will throughout the hero-cycle.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bloomfield, L. (1928). Menomini Texts. Publications of the American Ethnological Society 12, Me'napus narratives."
+     }
+    ]
+   },
+   {
+    "id": "found-the-medicine-lodge",
+    "name": "founds the medicine lodge",
+    "term": {
+     "value": "institution of the Mitäwin",
+     "script": "Latn",
+     "rom": "Mitäwin"
+    },
+    "inheritability": "none",
+    "notes": "Received the Mitäwin (Midewiwin) from the good spirits and gave it to humankind so the sick might be cured and life prolonged.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 66-70."
+     }
+    ]
+   },
+   {
+    "id": "recreate-the-earth",
+    "name": "recreates the flooded earth",
+    "term": {
+     "value": "earth-diver re-creation",
+     "script": "Latn",
+     "rom": "earth-diver re-creation"
+    },
+    "inheritability": "none",
+    "notes": "After the world-flood he refashions the land from a grain of soil brought up by the muskrat.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3), flood episode."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "menominee_the_wolf",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 113-114."
+     }
+    ],
+    "notes": "The Wolf is his younger brother."
+   },
+   {
+    "kind": "companion",
+    "personId": "menominee_nokomis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ],
+    "notes": "Nokomis is his grandmother, who reared him and remains his constant guardian."
+   },
+   {
+    "kind": "ally",
+    "personId": "menominee_kese_manetow",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 87-89."
+     }
+    ],
+    "notes": "Acts as emissary and agent of the Great Good Spirit."
+   },
+   {
+    "kind": "enemy",
+    "personId": "menominee_great_white_bear",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 113-114."
+     }
+    ],
+    "notes": "Wars on the underground powers to avenge the Wolf."
+   },
+   {
+    "kind": "enemy",
+    "personId": "menominee_underwater_panther",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "menominee_misikinubik",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the Great Rabbit",
+    "translation": "epithet linking the culture-hero to the hare",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, p. 113."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Manabus is the Menominee culture-hero and transformer who founded the medicine lodge and recreated the earth after the flood.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, 1892-93, pp. 66-70, 87-114."
+     },
+     {
+      "kind": "primary",
+      "reference": "Bloomfield, L. (1928). Menomini Texts. Publications of the American Ethnological Society 12."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Manabus is the great culture-hero and transformer of Menominee tradition, the being through whom the present order of the world was shaped and the medicine lodge given to humankind. Grandson of the earth-grandmother Nokomis, he was reared by her after the early death of his mother. Acting as emissary of the benevolent Great Good Spirit, he rid the world of monsters, taught the arts of survival, and figures in a long cycle of tales that shade from solemn creation to broad trickster escapade. The pivotal episode of his career is the drowning of his younger brother, the Wolf, by the malevolent powers beneath the water; his four days of mourning and his war of vengeance bring on a world-flood, after which he refashions the earth from a grain of soil retrieved by the muskrat. To console him for his brother's death and to reconcile the powers above and below, the good spirits founded the Mitäwin medicine society and initiated Manabus as its first member, so that human beings might cure sickness and lengthen their lives. Sources differ in glossing his name, some connecting it with the Great Hare and others with light or dawn."
+ },
+ {
+  "id": "menominee_nokomis",
+  "name": {
+   "primary": "Nokomis",
+   "alt": [
+    "Grandmother",
+    "Earth-Grandmother"
+   ],
+   "transliterations": {
+    "mez": "Nokomɛhsæh",
+    "etymology": "'my grandmother'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Menominee",
+  "primaryTradition": "Menominee",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "Menominee traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the nurturing earth",
+     "script": "Latn",
+     "rom": "the nurturing earth"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestry-household",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "grandmother and keeper of the lodge",
+     "script": "Latn",
+     "rom": "grandmother and keeper of the lodge"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, p. 113."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rear-the-culture-hero",
+    "name": "rears and counsels the culture-hero",
+    "term": {
+     "value": "nurture and counsel",
+     "script": "Latn",
+     "rom": "nurture and counsel"
+    },
+    "inheritability": "none",
+    "notes": "Raises the orphaned Manabus and supplies the practical and ritual knowledge he carries to humankind.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "menominee_manabus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ],
+    "notes": "As the grandmother who reared Manabus, she is his constant guardian and the fixed point of the hero-cycle."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Nokomis is the primordial earth-grandmother who reared the culture-hero Manabus.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, p. 113."
+     },
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Nokomis, 'Grandmother,' is the primordial earth-grandmother of Menominee myth, the aged woman who dwelt upon the earth before the culture-hero and who reared the infant Manabus after his mother died at his birth. She is at once a kinswoman of the hero and an embodiment of the nurturing earth, keeper of the lodge to which Manabus returns between his wanderings and the source of much of the practical and ritual knowledge he carries to humankind. In the tales she counsels, warns, and occasionally suffers from her grandson's recklessness, and her lodge is the fixed point around which the episodic hero-cycle turns."
+ },
+ {
+  "id": "menominee_the_wolf",
+  "name": {
+   "primary": "The Wolf",
+   "alt": [
+    "Manabus's brother",
+    "the Younger Brother"
+   ],
+   "transliterations": {
+    "mez": "Mahwæw",
+    "etymology": "'wolf'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Menominee",
+  "primaryTradition": "Menominee",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Menominee traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "death and the departed",
+     "script": "Latn",
+     "rom": "death and the departed"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 113-114."
+     }
+    ]
+   },
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the land of the dead in the west",
+     "script": "Latn",
+     "rom": "the land of the dead in the west"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-dead",
+    "name": "rules the land of the dead",
+    "term": {
+     "value": "sovereignty over the departed",
+     "script": "Latn",
+     "rom": "sovereignty over the departed"
+    },
+    "inheritability": "none",
+    "notes": "Keeps the fire that warms the souls of the dead as they travel the road of the setting sun.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 113-114."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "menominee_manabus",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 113-114."
+     }
+    ],
+    "notes": "Younger brother and companion of Manabus."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Wolf, younger brother of Manabus, is drowned by the underwater powers and becomes ruler of the land of the dead, inaugurating human mortality.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 113-114."
+     },
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Wolf is the younger brother and inseparable companion of Manabus. In the central myth of the hero-cycle he is lured out upon the winter ice and dragged down and drowned by the malevolent underwater powers. After four days his shade returns to his grieving brother, but Manabus sends him away to the west, where he becomes ruler of the land of the dead and keeper of the fire that warms the souls of the departed as they travel the road of the setting sun. His death and translation to the underworld inaugurate human mortality and, indirectly, the founding of the medicine lodge, whose rites answer the death he was the first to suffer. Sources differ on whether the brother was a wolf from the first or a youth who took wolf form."
+ },
+ {
+  "id": "menominee_kese_manetow",
+  "name": {
+   "primary": "Kese-Manetōw",
+   "alt": [
+    "The Great Good Spirit",
+    "The Good Mystery",
+    "Great Spirit"
+   ],
+   "transliterations": {
+    "mez": "Kese-Manetōw",
+    "etymology": "'the kind or good spirit'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Menominee",
+  "primaryTradition": "Menominee",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "Menominee traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "supremacy over the powers above",
+     "script": "Latn",
+     "rom": "supremacy over the powers above"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 87-89."
+     }
+    ]
+   },
+   {
+    "sphereId": "benevolence-order",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the ordered and beneficent world",
+     "script": "Latn",
+     "rom": "the ordered and beneficent world"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1913). Social Life and Ceremonial Bundles of the Menomini Indians. AP-AMNH 13(1)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "commission-the-culture-hero",
+    "name": "commissions the culture-hero",
+    "term": {
+     "value": "delegation of the world's ordering",
+     "script": "Latn",
+     "rom": "delegation of the world's ordering"
+    },
+    "inheritability": "none",
+    "notes": "Sets Manabus his tasks and grants, through the good spirits, the medicine lodge to humankind.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 87-89."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "menominee_manabus",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 87-89."
+     }
+    ],
+    "notes": "Manabus acts as the Good Spirit's emissary."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kese-Manetōw, the Great Good Spirit, is the supreme benevolent power of the Menominee sky-world, over against the malevolent powers beneath the earth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 87-89."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1913). Social Life and Ceremonial Bundles of the Menomini Indians. AP-AMNH 13(1)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Kese-Manetōw, the Great Good Spirit or Good Mystery, is the supreme benevolent power of Menominee cosmology, the remote overseer who set the culture-hero Manabus his tasks and through whom the ordered world and its blessings descend to humankind. Dwelling in the highest tier of the sky-world, above the Thunderers and the lesser powers, the Good Spirit is approached less through direct petition than through the mediating figure of Manabus and the ceremonies of the medicine lodge. Menominee tradition sets over against this power the malevolent forces beneath the earth, and the flood-cycle turns on the effort to hold the two in balance. Sources differ on how far the sharply dualistic scheme of a single good and a single evil power reflects the influence of mission-era teaching upon older Menominee belief."
+ },
+ {
+  "id": "menominee_great_white_bear",
+  "name": {
+   "primary": "The Great White Bear",
+   "alt": [
+    "The Underground Bear-Chief",
+    "The Ancestral Bear"
+   ],
+   "transliterations": {
+    "mez": "Awæhsæh",
+    "etymology": "'bear'; the great light-colored underground bear."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Menominee",
+  "primaryTradition": "Menominee",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "Menominee traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the powers beneath the earth",
+     "script": "Latn",
+     "rom": "the powers beneath the earth"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 87-88, 113-114."
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestry-origin",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "first ancestor and founder of the Bear phratry",
+     "script": "Latn",
+     "rom": "founder of the Bear phratry"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1913). Social Life and Ceremonial Bundles of the Menomini Indians. AP-AMNH 13(1), origin of the clans."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "become-first-man",
+    "name": "becomes the first man",
+    "term": {
+     "value": "transformation into the ancestor",
+     "script": "Latn",
+     "rom": "transformation into the ancestor"
+    },
+    "inheritability": "none",
+    "notes": "Emerges from the ground at the mouth of the Menominee River and is transformed into the first human, founder of the nation.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1913). Social Life and Ceremonial Bundles of the Menomini Indians. AP-AMNH 13(1)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "menominee_thunderbird",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1913). Social Life and Ceremonial Bundles of the Menomini Indians. AP-AMNH 13(1)."
+     }
+    ],
+    "notes": "In the clan-origin legend the ancestral bear called the golden eagle down to become his brother, founding the two great phratries."
+   },
+   {
+    "kind": "enemy",
+    "personId": "menominee_manabus",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 113-114."
+     }
+    ],
+    "notes": "As chief of the underground powers he is among those Manabus fights to avenge the Wolf."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Great White Bear is the chief of the underground powers and, in the clan-origin tradition, the first ancestor of the Menominee, founder of the Bear phratry.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1913). Social Life and Ceremonial Bundles of the Menomini Indians. AP-AMNH 13(1), origin of the clans."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 87-88."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Great White Bear is the paramount power of the world beneath the earth and, in the Menominee origin tradition, the mythical first ancestor of the nation. In the clan legend a great light-colored bear emerged from the ground at the mouth of the Menominee River and was transformed into the first man, founder of the Bear phratry; seeing a golden eagle overhead, he called it down to become his brother and the founder of the Thunderbird phratry. As chief of the underground powers the same being appears in a darker aspect, ranged among the horned, copper-tailed water-monsters whom Manabus wars upon to avenge his drowned brother. Sources connect, and sometimes distinguish, the benevolent ancestral bear and the dread underground bear-chief."
+ },
+ {
+  "id": "menominee_thunderbird",
+  "name": {
+   "primary": "The Thunderbird",
+   "alt": [
+    "The Thunderers",
+    "The Golden Eagle",
+    "founder of the Thunder phratry"
+   ],
+   "transliterations": {
+    "mez": "the Thunderers (golden-eagle sky powers)",
+    "etymology": "the thunder-beings of the upper world, whose wing-beats are thunder and whose glance is lightning."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Menominee",
+  "primaryTradition": "Menominee",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "Menominee traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky-thunder",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "thunder and lightning",
+     "script": "Latn",
+     "rom": "thunder and lightning"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 88-89."
+     }
+    ]
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "war and the martial sky powers",
+     "script": "Latn",
+     "rom": "war and the martial sky powers"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1913). Social Life and Ceremonial Bundles of the Menomini Indians. AP-AMNH 13(1)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hunt-the-underwater-powers",
+    "name": "hunts the underwater powers with lightning",
+    "term": {
+     "value": "the sky-war on the horned powers",
+     "script": "Latn",
+     "rom": "the sky-war on the horned powers"
+    },
+    "inheritability": "none",
+    "notes": "The Thunderers pursue the horned serpents and the underwater panther across the sky, striking with lightning.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 88-89."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "menominee_great_white_bear",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1913). Social Life and Ceremonial Bundles of the Menomini Indians. AP-AMNH 13(1)."
+     }
+    ],
+    "notes": "Called down by the ancestral bear to become his brother and found the Thunder phratry."
+   },
+   {
+    "kind": "enemy",
+    "personId": "menominee_underwater_panther",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 88-89."
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "menominee_misikinubik",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 88-89."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Thunderbird, chief of the Thunderers, is the golden-eagle sky power, founder of the Thunder phratry and enemy of the underwater monsters.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1913). Social Life and Ceremonial Bundles of the Menomini Indians. AP-AMNH 13(1), origin of the clans."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 88-89."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Thunderbird, imagined as a great golden eagle, is the foremost of the Thunderers, the martial powers of the upper world whose wing-beats are thunder and whose glance is lightning. In the Menominee clan-origin the first Thunderbird descended at the summons of the ancestral bear to become his brother and the founding ancestor of the Thunder, or Eagle, phratry. As a class the Thunderers are the standing enemies of the horned underwater powers, whom they hunt with the lightning; this cosmic war between the beings of the sky and the beings beneath the water frames much of Menominee myth and ritual."
+ },
+ {
+  "id": "menominee_underwater_panther",
+  "name": {
+   "primary": "The Underwater Panther",
+   "alt": [
+    "Underneath-Panther",
+    "The Great Horned Lynx"
+   ],
+   "transliterations": {
+    "mez": "the underneath-panther (great horned water-lynx)",
+    "etymology": "the long-tailed horned lynx of the deeps and rapids."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Menominee",
+  "primaryTradition": "Menominee",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "Menominee traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "water-underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the deep waters and rapids",
+     "script": "Latn",
+     "rom": "the deep waters and rapids"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ]
+   },
+   {
+    "sphereId": "drowning-danger",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "drowning and peril on the water",
+     "script": "Latn",
+     "rom": "drowning and peril on the water"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 88, 113-114."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "drag-down-the-unwary",
+    "name": "drags the unwary beneath the water",
+    "term": {
+     "value": "overturning and drowning",
+     "script": "Latn",
+     "rom": "overturning and drowning"
+    },
+    "inheritability": "none",
+    "notes": "Upsets canoes and pulls victims into the depths; among the powers that drowned the Wolf.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 113-114."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "menominee_manabus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "menominee_thunderbird",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 88-89."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Underwater Panther is a chief malevolent water-power that drowns the unwary and is hunted by the Thunderers.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 88, 113-114."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Underwater Panther, the great horned lynx of the lakes and rivers, is among the mightiest of the malevolent powers beneath the water. Long-tailed and horned, dwelling in the deep places and the rapids, it overturns canoes and drags the unwary down, and it is numbered among the powers that drowned the brother of Manabus and drew upon themselves his vengeance and the world-flood. It stands with the horned serpents as the perennial quarry of the Thunderers above."
+ },
+ {
+  "id": "menominee_misikinubik",
+  "name": {
+   "primary": "Misikinubik",
+   "alt": [
+    "The Great Horned Serpent",
+    "The Great Water-Snake"
+   ],
+   "transliterations": {
+    "mez": "Misikinēpik",
+    "etymology": "'great serpent'; the horned snake of the underworld waters."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Menominee",
+  "primaryTradition": "Menominee",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "Menominee traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "water-underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the serpent-powers of the deep",
+     "script": "Latn",
+     "rom": "the serpent-powers of the deep"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ]
+   },
+   {
+    "sphereId": "storm-power",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "storm and dangerous medicine",
+     "script": "Latn",
+     "rom": "storm and dangerous medicine"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1920). Medicine Ceremony of the Menomini, Iowa, and Wahpeton Dakota. Indian Notes and Monographs 4."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-dangerous-power",
+    "name": "bestows dangerous power on those who treat with it",
+    "term": {
+     "value": "the giving of perilous medicine",
+     "script": "Latn",
+     "rom": "the giving of perilous medicine"
+    },
+    "inheritability": "none",
+    "notes": "The horned serpent grants potent but hazardous power, and brings storm and drowning.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1920). Medicine Ceremony of the Menomini, Iowa, and Wahpeton Dakota. Indian Notes and Monographs 4."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "menominee_manabus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "menominee_thunderbird",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hoffman, W. J. (1896). The Menomini Indians. 14th Annual Report of the Bureau of American Ethnology, pp. 88-89."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Misikinubik, the Great Horned Serpent, is a chief water-monster of the Menominee underworld, giver of dangerous power and quarry of the Thunderers.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Skinner, A. & Satterlee, J. V. (1915). Folklore of the Menomini Indians. AP-AMNH 13(3)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Skinner, A. (1920). Medicine Ceremony of the Menomini, Iowa, and Wahpeton Dakota. Indian Notes and Monographs 4."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Misikinubik, the Great Horned Serpent, is the monstrous horned snake of the underworld waters, greatest of the serpent-powers that lie beneath lakes and rapids. Bearing horns and, in some tellings, a crest of copper, it is a bringer of storm and drowning and a giver of dangerous power to those who dare to treat with it. With the underwater panther it belongs to the powers that Manabus fought to avenge the Wolf, and it is a chief object of the Thunderers' hunt across the sky."
+ }
+]
+```

@@ -1,0 +1,698 @@
+Mekeo — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "mekeo_aaisa",
+  "name": {
+   "primary": "A'aisa",
+   "alt": [
+    "Akaisa",
+    "Aisa",
+    "Isa"
+   ],
+   "transliterations": {
+    "mek": "A'aisa",
+    "etymology": "Treated in the sources as a proper name; no secure gloss is offered, and orthography varies between coastal Roro and bush Mekeo dialects."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Mekeo",
+  "primaryTradition": "Mekeo",
+  "sex": "male",
+  "vitalStatus": "departed",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mekeo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "culture-hero-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "A'aisa",
+     "script": "Latn",
+     "rom": "A'aisa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts: A Study of Magic and the Self. Berkeley: University of California Press, 1995, pp. 1-45."
+     }
+    ]
+   },
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mae",
+     "script": "Latn",
+     "rom": "mae"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hau'ofa, Epeli. Mekeo: Inequality and Ambivalence in a Village Society. Canberra: Australian National University Press, 1981, ch. on cosmology and sorcery."
+     }
+    ]
+   },
+   {
+    "sphereId": "sorcery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "esa",
+     "script": "Latn",
+     "rom": "esa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995, esp. chs. 2-3 on the origin of sorcery."
+     }
+    ]
+   },
+   {
+    "sphereId": "custom-and-ritual-law",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kangakanga",
+     "script": "Latn",
+     "rom": "kangakanga"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mosko, Mark S. Quadripartite Structures: Categories, Relations, and Homologies in Bush Mekeo Culture. Cambridge: Cambridge University Press, 1985, ch. on mythic charter of ritual offices."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "institute-death",
+    "name": "releases death into the world",
+    "term": {
+     "value": "mae fa'a",
+     "script": "Latn",
+     "rom": "mae fa'a"
+    },
+    "inheritability": "none",
+    "notes": "In retaliation for being mocked and refused hospitality while disguised, A'aisa withdrew immortality and made human death permanent.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995, pp. 20-40."
+     }
+    ]
+   },
+   {
+    "id": "bestow-sorcery",
+    "name": "bequeaths deadly sorcery and magic (esa)",
+    "term": {
+     "value": "esa",
+     "script": "Latn",
+     "rom": "esa"
+    },
+    "inheritability": "partial",
+    "notes": "The body of spells and sorcery techniques A'aisa left to humankind, transmitted through the hereditary death-dealing sorcerers (ungaunga).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995, chs. 2-4."
+     }
+    ]
+   },
+   {
+    "id": "assume-disguise",
+    "name": "disguises himself as a filthy, sore-covered old man",
+    "term": {
+     "value": "faifai oa",
+     "script": "Latn",
+     "rom": "faifai oa"
+    },
+    "inheritability": "unique",
+    "notes": "The test-of-hospitality motif central to the myth cycle: only a few treat the disguised hero kindly, and the rest are cursed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hau'ofa, Epeli. Mekeo. Canberra: ANU Press, 1981."
+     }
+    ]
+   },
+   {
+    "id": "ordain-ritual-offices",
+    "name": "ordains the ritual offices and custom of Mekeo society",
+    "term": {
+     "value": "kangakanga",
+     "script": "Latn",
+     "rom": "kangakanga"
+    },
+    "inheritability": "none",
+    "notes": "The mythic charter for the peace chiefs, war chiefs and sorcerers; in Mosko's analysis these form the four-fold (quadripartite) order.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mosko, Mark S. Quadripartite Structures. Cambridge: Cambridge University Press, 1985."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mekeo_aaisa-esa",
+    "kind": "magical-corpus",
+    "name": "esa (A'aisa's gifts)",
+    "term": {
+     "value": "esa",
+     "script": "Latn",
+     "rom": "esa"
+    },
+    "role": "The corpus of spells, sorcery and healing/garden/love magic that A'aisa bequeathed before departing.",
+    "notes": "Held and transmitted by ritual specialists; the phrase 'A'aisa's gifts' gives Stephen's monograph its title.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mekeo_isapini",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mosko, Mark S. Quadripartite Structures. Cambridge: Cambridge University Press, 1985, on the paired culture heroes of bush Mekeo."
+     }
+    ],
+    "notes": "Sources differ on whether the two are brothers or merely travelling companions."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A'aisa is the pre-eminent culture hero and trickster-demiurge of the Mekeo, and the source of death and sorcery.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts: A Study of Magic and the Self. Berkeley: University of California Press, 1995."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The A'aisa myth cycle underpins Mekeo sorcery and the charter of ritual offices.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Hau'ofa, Epeli. Mekeo: Inequality and Ambivalence in a Village Society. Canberra: ANU Press, 1981."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Mosko, Mark S. Quadripartite Structures. Cambridge: Cambridge University Press, 1985."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Early recordings of Mekeo and Roro mythology appear in the ethnographic record from the first decade of the twentieth century.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Egidi, V.M. Articles on Mekeo custom and mythology, Anthropos, 1907-1913."
+     },
+     {
+      "kind": "primary",
+      "reference": "Seligmann, C.G. The Melanesians of British New Guinea. Cambridge: Cambridge University Press, 1910."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "A'aisa (also Akaisa or Aisa) is the pre-eminent culture hero and trickster-demiurge of the Mekeo and the neighbouring Roro of Papua New Guinea's Central Province, and the central figure of an otherwise sparse mythology. The myth cycle recounts how A'aisa came among an early human community disguised as a filthy, sore-covered old man; mocked and denied hospitality by all but a few, he retaliated by withdrawing the possibility of immortality and releasing death, deadly sorcery and affliction into the world. Before departing westward to the land of the dead he bequeathed to humankind the esa, the body of magical spells and sorcery techniques, together with the charter for the ritual offices that order Mekeo society. Sources differ on his parentage and on the manner of his departure. Michele Stephen's A'aisa's Gifts (1995) treats him as the mythic origin of both sorcery and the 'hidden self', while Mark Mosko's Quadripartite Structures (1985) analyses a bush Mekeo variant in which the hero travels with a companion."
+ },
+ {
+  "id": "mekeo_isapini",
+  "name": {
+   "primary": "Isapini",
+   "alt": [
+    "Tsabini",
+    "Isabini"
+   ],
+   "transliterations": {
+    "mek": "Isapini",
+    "etymology": "Recorded chiefly in bush Mekeo material; the spelling varies, and the initial sibilant is written variously s-, ts- or is-."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Mekeo",
+  "primaryTradition": "Mekeo",
+  "sex": "male",
+  "vitalStatus": "departed",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mekeo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "culture-hero-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Isapini",
+     "script": "Latn",
+     "rom": "Isapini"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mosko, Mark S. Quadripartite Structures: Categories, Relations, and Homologies in Bush Mekeo Culture. Cambridge: Cambridge University Press, 1985."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "accompany-hero",
+    "name": "accompanies A'aisa on the world-shaping journey",
+    "term": {
+     "value": "oa faenge",
+     "script": "Latn",
+     "rom": "oa faenge"
+    },
+    "inheritability": "none",
+    "notes": "The paired journey of the two heroes is drawn on in Mosko's analysis of the four-fold ordering of bush Mekeo categories.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mosko, Mark S. Quadripartite Structures. Cambridge: Cambridge University Press, 1985."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mekeo_aaisa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mosko, Mark S. Quadripartite Structures. Cambridge: Cambridge University Press, 1985."
+     }
+    ],
+    "notes": "Sources differ on whether the two are brothers or travelling companions."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "In bush Mekeo mythology A'aisa is paired with a companion figure whose journey with the hero informs the shaping of custom and the landscape.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Mosko, Mark S. Quadripartite Structures: Categories, Relations, and Homologies in Bush Mekeo Culture. Cambridge: Cambridge University Press, 1985."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Isapini (also given as Tsabini) is the companion of the culture hero A'aisa in bush Mekeo tradition, where the two travel together and their deeds help fix death, sorcery and custom. The attestation is thinner and more localised than that of A'aisa himself: the sources differ on the spelling of his name and on whether he is A'aisa's brother or simply his fellow-traveller. The paired heroes are of particular interest to Mark Mosko, whose Quadripartite Structures (1985) reads bush Mekeo cosmology through recurring sets and pairs."
+ },
+ {
+  "id": "mekeo_faifai",
+  "name": {
+   "primary": "Faifai",
+   "alt": [
+    "faifai spirits"
+   ],
+   "transliterations": {
+    "mek": "faifai",
+    "etymology": "A general Mekeo term for wild bush and water spirit-beings; also used of the powers a sorcerer commands."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Mekeo",
+  "primaryTradition": "Mekeo",
+  "vitalStatus": "active",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mekeo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "bush-and-wilderness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "faifai",
+     "script": "Latn",
+     "rom": "faifai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   },
+   {
+    "sphereId": "sorcery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "faifai",
+     "script": "Latn",
+     "rom": "faifai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hau'ofa, Epeli. Mekeo. Canberra: ANU Press, 1981."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "empower-sorcerer",
+    "name": "serves the death-dealing sorcerer as a familiar power",
+    "term": {
+     "value": "faifai",
+     "script": "Latn",
+     "rom": "faifai"
+    },
+    "inheritability": "none",
+    "notes": "The wild spirit-powers that the ungaunga draws on to kill and to travel in spirit.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   },
+   {
+    "id": "haunt-wild-places",
+    "name": "inhabits bush, water and lonely places",
+    "term": {
+     "value": "faifai",
+     "script": "Latn",
+     "rom": "faifai"
+    },
+    "inheritability": "none",
+    "notes": "Associated with rivers, whirlpools and the untamed country beyond the villages.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hau'ofa, Epeli. Mekeo. Canberra: ANU Press, 1981."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The faifai are a named class of wild bush and water spirit-beings that also denote the spirit-powers a Mekeo sorcerer commands.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts: A Study of Magic and the Self. Berkeley: University of California Press, 1995."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hau'ofa, Epeli. Mekeo: Inequality and Ambivalence in a Village Society. Canberra: ANU Press, 1981."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The faifai are a named class of wild spirit-beings of the Mekeo cosmos, dwelling in the bush, rivers and other places beyond the ordered village. The same word denotes the spirit-powers a death-dealing sorcerer (ungaunga) commands, and in this sense the faifai are the agents through which lethal sorcery, the gift of A'aisa, takes effect. They are a collective category rather than a single individuated being, and Mekeo ethnography treats them as one of the principal kinds of spirit alongside the ghosts of the dead."
+ },
+ {
+  "id": "mekeo_tsiange",
+  "name": {
+   "primary": "Tsiange",
+   "alt": [
+    "isange",
+    "tsange"
+   ],
+   "transliterations": {
+    "mek": "tsiange",
+    "etymology": "The Mekeo term for the ghosts or spirits of the human dead; written variously tsiange, isange or tsange."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Mekeo",
+  "primaryTradition": "Mekeo",
+  "vitalStatus": "active",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mekeo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "afterlife-and-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tsiange",
+     "script": "Latn",
+     "rom": "tsiange"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "afflict-the-living",
+    "name": "afflicts and haunts the living",
+    "term": {
+     "value": "tsiange",
+     "script": "Latn",
+     "rom": "tsiange"
+    },
+    "inheritability": "none",
+    "notes": "The dead may bring sickness or misfortune to kin and are addressed in mortuary and healing ritual.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hau'ofa, Epeli. Mekeo. Canberra: ANU Press, 1981."
+     }
+    ]
+   },
+   {
+    "id": "depart-to-land-of-dead",
+    "name": "departs to the land of the dead",
+    "term": {
+     "value": "tsiange",
+     "script": "Latn",
+     "rom": "tsiange"
+    },
+    "inheritability": "none",
+    "notes": "The dead follow the path opened by A'aisa when he withdrew from the human world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The tsiange are the named class of ghosts or spirits of the human dead in Mekeo belief, capable of afflicting the living.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts: A Study of Magic and the Self. Berkeley: University of California Press, 1995."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hau'ofa, Epeli. Mekeo: Inequality and Ambivalence in a Village Society. Canberra: ANU Press, 1981."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The tsiange (also isange) are the ghosts or spirits of the human dead. In Mekeo belief the dead do not simply vanish but persist as spirit-beings who may aid or, more often, afflict their living kin, and who are the object of mortuary observance and of the sorcerer's and healer's dealings. Their existence as a permanent order of spirits is a direct consequence of A'aisa's release of death into the world. They form a collective class rather than a single named individual."
+ },
+ {
+  "id": "mekeo_isanga",
+  "name": {
+   "primary": "Isanga",
+   "alt": [
+    "isanga sorcery"
+   ],
+   "transliterations": {
+    "mek": "isanga",
+    "etymology": "A Mekeo term for the deadly killing-sorcery and its associated lethal spirit-power."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Mekeo",
+  "primaryTradition": "Mekeo",
+  "vitalStatus": "active",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mekeo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sorcery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "isanga",
+     "script": "Latn",
+     "rom": "isanga"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   },
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "isanga",
+     "script": "Latn",
+     "rom": "isanga"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "kill-by-sorcery",
+    "name": "kills the victim through deadly sorcery",
+    "term": {
+     "value": "isanga",
+     "script": "Latn",
+     "rom": "isanga"
+    },
+    "inheritability": "none",
+    "notes": "The lethal killing-power wielded by the hereditary sorcerer, understood as one of A'aisa's gifts.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Isanga is the Mekeo deadly killing-sorcery and its associated lethal spirit-power, traced to the gift of A'aisa and wielded by the hereditary sorcerer.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts: A Study of Magic and the Self. Berkeley: University of California Press, 1995."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Isanga denotes the deadly killing-sorcery of the Mekeo together with the lethal spirit-power that carries it. It is one of the 'gifts' that A'aisa left to humankind and is deployed by the hereditary death-dealing sorcerer against victims marked out for punishment or vengeance. As with the other Mekeo spirit-terms, isanga names a power and a class of malign agency rather than a single individuated being; the boundary between isanga and the sorcerer's faifai familiars is drawn differently by different accounts."
+ },
+ {
+  "id": "mekeo_aunga",
+  "name": {
+   "primary": "Aunga",
+   "alt": [
+    "lalauga",
+    "spirit-double"
+   ],
+   "transliterations": {
+    "mek": "aunga",
+    "etymology": "The Mekeo free-soul or spirit-double that leaves the body in sleep, dream and trance."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Mekeo",
+  "primaryTradition": "Mekeo",
+  "vitalStatus": "active",
+  "parentIds": [],
+  "temporal": {
+   "era": "Mekeo traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "soul-and-dream",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "aunga",
+     "script": "Latn",
+     "rom": "aunga"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "travel-in-spirit",
+    "name": "leaves the body to travel in dream and trance",
+    "term": {
+     "value": "aunga",
+     "script": "Latn",
+     "rom": "aunga"
+    },
+    "inheritability": "none",
+    "notes": "The free-soul's journeying is the basis of the sorcerer's and dreamer's spirit-travel and of the 'hidden self' that Stephen analyses.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   },
+   {
+    "id": "become-ghost",
+    "name": "departs the body at death to become a ghost",
+    "term": {
+     "value": "aunga",
+     "script": "Latn",
+     "rom": "aunga"
+    },
+    "inheritability": "none",
+    "notes": "On death the free-soul departs and takes its place among the tsiange.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts. Berkeley: University of California Press, 1995."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Aunga is the Mekeo free-soul or spirit-double that leaves the body in dream and trance and departs at death to become a ghost.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stephen, Michele. A'aisa's Gifts: A Study of Magic and the Self. Berkeley: University of California Press, 1995."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The aunga is the Mekeo free-soul or spirit-double: the animate part of a person that leaves the body in sleep, dream and trance and journeys apart from it. This journeying underlies the spirit-travel of sorcerers and dreamers and is central to Michele Stephen's account of the Mekeo 'hidden self'. At death the aunga departs the body and takes its place among the tsiange, the ghosts of the dead. It is a category of animating spirit rather than a single named being, and different observers describe its relation to the ordinary waking self in different terms."
+ }
+]
+```

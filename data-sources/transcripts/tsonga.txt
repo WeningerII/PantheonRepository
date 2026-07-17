@@ -1,0 +1,980 @@
+Tsonga — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "tsonga_tilo",
+  "name": {
+   "primary": "Tilo",
+   "alt": [
+    "Ntilo",
+    "Djilo",
+    "Heaven"
+   ],
+   "transliterations": {
+    "ts": "Tilo",
+    "en": "Heaven, the sky",
+    "etymology": "Xitsonga tilo, 'sky, heaven', used both for the physical firmament and for the celestial power that dwells in it"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tsonga",
+  "primaryTradition": "Tsonga",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Tsonga traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tilo",
+     "script": "Latn",
+     "rom": "tilo"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2: Mental Life (2nd ed., London: Macmillan, 1927), section on the Sky and Heaven"
+     }
+    ]
+   },
+   {
+    "sphereId": "storms-and-lightning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "rihati",
+     "script": "Latn",
+     "rom": "rihati"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on Heaven striking with lightning and stirring storms"
+     }
+    ]
+   },
+   {
+    "sphereId": "disease",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mavabyi ya tilo",
+     "script": "Latn",
+     "rom": "mavabyi ya tilo"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on the convulsions of children named diseases of Heaven"
+     }
+    ]
+   },
+   {
+    "sphereId": "rain-and-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mpfula",
+     "script": "Latn",
+     "rom": "mpfula"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Benjamin C. Ray, African Religions: Symbol, Ritual, and Community (Englewood Cliffs: Prentice-Hall, 1976), discussion of the Thonga sky-power and rain"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "strike-with-lightning",
+    "name": "strikes mortals dead with lightning",
+    "term": {
+     "value": "ku ba hi tilo",
+     "script": "Latn",
+     "rom": "ku ba hi tilo"
+    },
+    "inheritability": "unique",
+    "notes": "A person killed by lightning is said to have been struck by Heaven itself, and the homestead requires special purification.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on lightning as the act of Heaven"
+     }
+    ]
+   },
+   {
+    "id": "afflict-with-convulsions",
+    "name": "sends the convulsive seizures called diseases of Heaven",
+    "term": {
+     "value": "mavabyi ya tilo",
+     "script": "Latn",
+     "rom": "mavabyi ya tilo"
+    },
+    "inheritability": "unique",
+    "notes": "Infantile convulsions and certain nervous disorders are attributed directly to Heaven and treated by specialist doctors.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on the diseases of Heaven"
+     }
+    ]
+   },
+   {
+    "id": "grant-or-withhold-rain",
+    "name": "grants or withholds the rain",
+    "term": {
+     "value": "ku nisa mpfula",
+     "script": "Latn",
+     "rom": "ku nisa mpfula"
+    },
+    "inheritability": "unique",
+    "notes": "In drought, communities addressed prayers to Heaven for rain.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on prayers to Heaven in drought"
+     }
+    ]
+   },
+   {
+    "id": "claim-twins-as-children-of-heaven",
+    "name": "makes women bear twins, who belong to Heaven",
+    "term": {
+     "value": "vana va tilo",
+     "script": "Latn",
+     "rom": "vana va tilo"
+    },
+    "inheritability": "unique",
+    "notes": "Twins and the mothers of twins are held to belong to Heaven and are surrounded by special observances.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on twins as children of Heaven"
+     }
+    ]
+   }
+  ],
+  "temporalNote": "",
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "tsonga_ndlati",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on the bird of Heaven as the agent of the lightning sent by Tilo"
+     }
+    ],
+    "notes": "Tilo sends the bird of Heaven to earth as the lightning-stroke."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Tilo ra le henhla",
+    "translation": "Heaven on high",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edwin W. Smith (ed.), African Ideas of God (London: Edinburgh House Press, 1950), on Thonga conceptions of the sky-power"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tilo is the Tsonga word for the sky and for the diffuse celestial power that Junod took to be the nearest thing in Thonga religion to a supreme being, acting through lightning, storms, the diseases of Heaven, twins and rain.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2: Mental Life (2nd ed., London: Macmillan, 1927), section on the Sky and Heaven"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Junod judged Tilo only partly personified, a mysterious force rather than a creator god with myths of his own, and later scholars of Southern Bantu religion continue to debate whether Tilo is an indigenous sky-divinity or an impersonal numinous power.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Benjamin C. Ray, African Religions: Symbol, Ritual, and Community (Prentice-Hall, 1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Edwin W. Smith (ed.), African Ideas of God (Edinburgh House Press, 1950)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Tilo is the Tsonga word for the sky and, by extension, the diffuse celestial power that early ethnographers took to be the nearest thing in Thonga religion to a supreme being. Junod described Tilo as at once a place and an agent: it is the physical heaven, but it also acts, striking people dead with lightning, brewing the great storms, and sending the convulsive seizures of small children that are named the diseases of Heaven (mavabyi ya tilo). Twins and their mothers are held to belong to Heaven, and in drought communities addressed Tilo directly for rain. Junod concluded that Tilo was only partly personified, a mysterious force rather than a creator god possessing myths of his own, and later students of Southern Bantu religion have continued to debate whether Tilo represents an indigenous sky-divinity or an impersonal numinous power. Worship centred on averting the sky's violence: specialist doctors of Heaven treated lightning-struck homesteads and worked to still hailstorms."
+ },
+ {
+  "id": "tsonga_ndlati",
+  "name": {
+   "primary": "Ndlati",
+   "alt": [
+    "Ndhlati",
+    "Nyoni ya Tilo",
+    "the bird of Heaven"
+   ],
+   "transliterations": {
+    "ts": "Ndlati",
+    "en": "the bird of Heaven, the lightning-bird",
+    "etymology": "Southern Bantu name for the lightning-bird; in Tsonga glossed as nyoni ya tilo, 'bird of Heaven'"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tsonga",
+  "primaryTradition": "Tsonga",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Tsonga traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "lightning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "rihati",
+     "script": "Latn",
+     "rom": "rihati"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on lightning conceived as a bird sent by Heaven"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "descend-as-lightning",
+    "name": "descends to earth as the lightning-stroke",
+    "term": {
+     "value": "rihati",
+     "script": "Latn",
+     "rom": "rihati"
+    },
+    "inheritability": "unique",
+    "notes": "The flash of lightning is the bird itself striking the ground.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on the bird of Heaven"
+     }
+    ]
+   },
+   {
+    "id": "burrow-into-the-earth",
+    "name": "buries itself in the earth where it strikes",
+    "term": {
+     "value": "ku tumbela",
+     "script": "Latn",
+     "rom": "ku tumbela"
+    },
+    "inheritability": "unique",
+    "notes": "Where the bolt falls the bird is said to hide in the ground, and doctors dig for its traces.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on doctors digging where lightning strikes"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tsonga_ndlati-lightning-medicine",
+    "kind": "substance",
+    "name": "lightning medicine",
+    "term": {
+     "value": "murhi wa rihati",
+     "script": "Latn",
+     "rom": "murhi wa rihati"
+    },
+    "role": "matter dug from the spot where lightning has struck",
+    "notes": "Recovered by doctors as the traces of the buried bird and compounded into protective and weather charms.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on medicines taken from lightning-strike sites"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "tsonga_tilo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on the bird as the agent of Heaven"
+     }
+    ],
+    "notes": "Sent down by Tilo as the embodied lightning."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "In Tsonga belief the lightning-flash is a living creature, a bird sent down from Tilo, which plunges into the ground where it strikes and hides, so that doctors afterward dig at the spot to recover its traces as a potent charm ingredient.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2: Mental Life (2nd ed., London: Macmillan, 1927), on lightning as a bird"
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "Belief in a lightning-bird sent by the sky-power is shared across neighbouring Southern Bantu peoples, and the Tsonga name and details vary in the sources.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Henri-Philippe Junod, Bantu Heritage (Johannesburg: Hortors, 1938), on sky beliefs among the Tsonga and their neighbours"
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "In Tsonga belief the lightning-flash is a living creature, a bird sent down from Tilo. Where the bolt strikes, the bird is said to plunge into the ground and hide; doctors afterward dig at the spot to recover its traces, which are prized as a potent ingredient in protective and weather medicines. Junod records the conviction that lightning is thus caught and its power harnessed rather than merely feared. The bird of Heaven links the impersonal violence of the sky to the practical world of the diviner-healer, and beliefs in such a lightning-bird are shared across the neighbouring Southern Bantu peoples, among whom its name and attributes vary."
+ },
+ {
+  "id": "tsonga_nwampfundla",
+  "name": {
+   "primary": "Nwampfundla",
+   "alt": [
+    "Mpfundla",
+    "Mfundhla",
+    "the Hare"
+   ],
+   "transliterations": {
+    "ts": "Nwampfundla",
+    "en": "the Hare",
+    "etymology": "Xitsonga mpfundla, 'hare', with the personifying prefix n'wa-, roughly 'Mister Hare'"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tsonga",
+  "primaryTradition": "Tsonga",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Tsonga traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "trickery-and-cunning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "vutlhari",
+     "script": "Latn",
+     "rom": "vutlhari"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, Les Chants et les Contes des Ba-Ronga de la baie de Delagoa (Lausanne: Georges Bridel, 1897), hare tales"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "outwit-the-powerful",
+    "name": "outwits stronger animals through cunning",
+    "term": {
+     "value": "vutlhari",
+     "script": "Latn",
+     "rom": "vutlhari"
+    },
+    "inheritability": "none",
+    "notes": "Turns the strength of the elephant, lion, hyena and crocodile against them.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, Les Chants et les Contes des Ba-Ronga (1897), hare cycle"
+     }
+    ]
+   },
+   {
+    "id": "escape-by-trickery",
+    "name": "escapes danger by trickery and disguise",
+    "term": {
+     "value": "ku canga",
+     "script": "Latn",
+     "rom": "ku canga"
+    },
+    "inheritability": "none",
+    "notes": "Slips out of traps and death by deceit.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), folklore chapter"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Nwampfundla, the Hare, is the master trickster of Tsonga oral literature, small and weak yet prevailing through cunning over the elephant, lion, hyena and crocodile; Junod gathered many of these tales among the Ronga of Delagoa Bay.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, Les Chants et les Contes des Ba-Ronga de la baie de Delagoa (Lausanne: Georges Bridel, 1897)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2: Mental Life (1927), chapter on folklore"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The hare trickster travelled with enslaved Africans to the Americas, where he is cousin to Brer Rabbit.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Patrick Harries, Work, Culture, and Identity: Migrant Laborers in Mozambique and South Africa (Heinemann/Witwatersrand UP, 1994), on Tsonga oral culture and its diffusion"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Nwampfundla, the Hare, is the master trickster of Tsonga oral literature. Small and physically weak, he prevails through cunning, deceiving the elephant, the lion, the hyena and the crocodile, and turning the strength of larger creatures against them. Junod gathered many of these tales among the Ronga of Delagoa Bay, where the hare cycle forms one of the richest bodies of Tsonga narrative; the same trickster travelled with enslaved Africans across the Atlantic, where he is cousin to Brer Rabbit. The stories are at once entertainment and a school of wit, teaching that intelligence outmatches force."
+ },
+ {
+  "id": "tsonga_gwambe",
+  "name": {
+   "primary": "Gwambe",
+   "alt": [
+    "Gwambi"
+   ],
+   "transliterations": {
+    "ts": "Gwambe",
+    "en": "the first man",
+    "etymology": "Personal name of the primordial ancestor in Tsonga origin tradition"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tsonga",
+  "primaryTradition": "Tsonga",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Tsonga traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "origins-and-first-ancestors",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hlanga",
+     "script": "Latn",
+     "rom": "hlanga"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on the origin of humankind from a reed"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "father-the-first-people",
+    "name": "fathers the first human beings",
+    "term": {
+     "value": "ku veleka",
+     "script": "Latn",
+     "rom": "ku veleka"
+    },
+    "inheritability": "none",
+    "notes": "With Dzavana, ancestor of the living according to the reed-emergence tradition.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), origin traditions"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tsonga_dzavana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on the primordial human pair"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tsonga origin tradition holds that humankind issued from a reed, encapsulated in the phrase 'hi humile hi hlanga' ('we came out of the reed'), and in the fuller tellings the first human pair are named Gwambe and his wife Dzavana.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2: Mental Life (1927), on the origin of man"
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "Sources differ over the age and precise ownership of the names Gwambe and Dzavana, which recur in cognate forms among neighbouring Tsonga-Tonga groups; the reed-emergence motif itself is shared widely across the Bantu-speaking world.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Henri-Philippe Junod, Bantu Heritage (Johannesburg: Hortors, 1938), on Tsonga origin traditions"
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Tsonga origin tradition holds that humankind issued from a reed: the proverbial phrase 'hi humile hi hlanga', 'we came out of the reed', encapsulates the belief. In the fuller tellings recorded from the region the first human pair are named Gwambe and his wife Dzavana, the primordial ancestors from whom the living are descended. Sources differ over the age and the precise ownership of these names, which recur in cognate forms among neighbouring Tsonga-Tonga groups, and the reed-emergence motif is shared widely across the Bantu-speaking world."
+ },
+ {
+  "id": "tsonga_dzavana",
+  "name": {
+   "primary": "Dzavana",
+   "alt": [
+    "Dzabana"
+   ],
+   "transliterations": {
+    "ts": "Dzavana",
+    "en": "the first woman",
+    "etymology": "Personal name of the primordial first woman in Tsonga origin tradition"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tsonga",
+  "primaryTradition": "Tsonga",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Tsonga traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "origins-and-first-ancestors",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hlanga",
+     "script": "Latn",
+     "rom": "hlanga"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on the origin of humankind from a reed"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear-the-first-people",
+    "name": "bears the first human beings",
+    "term": {
+     "value": "ku veleka",
+     "script": "Latn",
+     "rom": "ku veleka"
+    },
+    "inheritability": "none",
+    "notes": "With Gwambe, mother of the living according to the reed-emergence tradition.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), origin traditions"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tsonga_gwambe",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2 (1927), on the primordial human pair"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Dzavana is the primordial first woman of Tsonga origin tradition, wife of Gwambe, belonging with him to the myth of the reed from which the first people are said to have come forth.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Henri-Alexandre Junod, The Life of a South African Tribe, vol. 2: Mental Life (1927), on the origin of man"
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "As with her husband, the antiquity of the name is uncertain and cognate forms are attested among related peoples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Henri-Philippe Junod, Bantu Heritage (Johannesburg: Hortors, 1938)"
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Dzavana is the primordial first woman of Tsonga origin tradition, wife of Gwambe. With him she belongs to the myth of the reed from which the first people are said to have come forth. As with her husband, the antiquity of the name is uncertain, and cognate forms are attested among related peoples; the pairing preserves the widespread Bantu image of a first couple emerging at the beginning of the world."
+ },
+ {
+  "id": "tsonga_soshangane",
+  "name": {
+   "primary": "Soshangane",
+   "alt": [
+    "Manukosi",
+    "Manukuza",
+    "Soshangana",
+    "Nxumalo"
+   ],
+   "transliterations": {
+    "ts": "Soshangana",
+    "en": "eponymous founder of the Shangaan",
+    "etymology": "The ethnonym Machangana / Shangaan derives from his name"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tsonga",
+  "primaryTradition": "Tsonga",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Tsonga traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "kingship-and-conquest",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "vuhosi",
+     "script": "Latn",
+     "rom": "vuhosi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gerhard Liesegang, 'Nguni Migrations between Delagoa Bay and the Zambezi, 1821-1839', African Historical Studies 3.2 (1970)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-the-gaza-kingdom",
+    "name": "founds the Gaza empire and the Shangaan people",
+    "term": {
+     "value": "Gaza",
+     "script": "Latn",
+     "rom": "Gaza"
+    },
+    "inheritability": "partial",
+    "notes": "Subjugated the Tsonga of southern Mozambique and welded them into a tributary kingdom.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Patrick Harries, Work, Culture, and Identity (1994), on the making of Shangaan identity"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "tsonga_mzila",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gerhard Liesegang, 'Nguni Migrations' (1970), Gaza dynastic succession"
+     }
+    ],
+    "notes": "Mzila, his son, succeeded to the throne of Gaza after a war of succession."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Manukosi",
+    "translation": "the honoured lord",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Patrick Harries, Work, Culture, and Identity (1994), on Soshangane's praise-name"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Soshangane, of the Nguni Nxumalo clan and known by his praise-name Manukosi, led his followers north from Zululand during the Mfecane of the 1820s, subjugated the Tsonga-speaking peoples of southern Mozambique, and founded the Gaza empire, giving his name to the Machangana or Shangaan.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gerhard Liesegang, 'Nguni Migrations between Delagoa Bay and the Zambezi, 1821-1839', African Historical Studies 3.2 (1970)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Patrick Harries, Work, Culture, and Identity: Migrant Laborers in Mozambique and South Africa (1994)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "He ruled until his death about 1858, when his sons contended for the succession.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gerhard Liesegang, 'Nguni Migrations' (1970)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Soshangane, of the Nguni Nxumalo clan and better known by his praise-name Manukosi, was the warlord who during the upheavals of the Mfecane in the 1820s led his followers north from Zululand and subjugated the Tsonga-speaking peoples of southern Mozambique, welding them into the Gaza empire. The conquered Tsonga came to be called Machangana, or Shangaan, after him, and he is remembered as the eponymous ancestor of Shangaan identity. He ruled until his death about 1858, when his sons contended for the throne."
+ },
+ {
+  "id": "tsonga_mzila",
+  "name": {
+   "primary": "Mzila",
+   "alt": [
+    "Muzila"
+   ],
+   "transliterations": {
+    "ts": "Mzila",
+    "en": "king of Gaza"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tsonga",
+  "primaryTradition": "Tsonga",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Tsonga traditional religion; continuing"
+  },
+  "parentIds": [
+   "tsonga_soshangane"
+  ],
+  "parentRoles": {
+   "tsonga_soshangane": "paternal"
+  },
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "vuhosi",
+     "script": "Latn",
+     "rom": "vuhosi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gerhard Liesegang, 'Nguni Migrations between Delagoa Bay and the Zambezi, 1821-1839', African Historical Studies 3.2 (1970)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-gaza-kingdom",
+    "name": "rules the Gaza empire",
+    "term": {
+     "value": "Gaza",
+     "script": "Latn",
+     "rom": "Gaza"
+    },
+    "inheritability": "partial",
+    "notes": "Consolidated Nguni rule over the Tsonga and shifted the empire's centre northward.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Patrick Harries, Work, Culture, and Identity (1994), on the Gaza kingdom under Mzila"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "tsonga_soshangane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gerhard Liesegang, 'Nguni Migrations' (1970), Gaza dynastic succession"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "tsonga_gungunhana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Douglas L. Wheeler, 'Gungunyane the Negotiator', Journal of African History 9.4 (1968)"
+     }
+    ],
+    "notes": "Ngungunyane, his son, was the last king of Gaza."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mzila, a son of Soshangane, won the throne of Gaza after a war of succession with his brother Mawewe and reigned from about 1861 until 1884, shifting the empire's centre northward and consolidating Nguni rule over the Tsonga; he was the father of Ngungunyane.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gerhard Liesegang, 'Nguni Migrations between Delagoa Bay and the Zambezi, 1821-1839', African Historical Studies 3.2 (1970)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Patrick Harries, Work, Culture, and Identity (1994)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Mzila, a son of Soshangane, won the throne of Gaza after a war of succession with his brother Mawewe and reigned from about 1861 until 1884. He shifted the centre of the empire northward toward the Zambezi highlands and consolidated Nguni rule over the Tsonga populations of the interior and the coast. He was the father of Ngungunyane, the last independent king of Gaza."
+ },
+ {
+  "id": "tsonga_gungunhana",
+  "name": {
+   "primary": "Ngungunyane",
+   "alt": [
+    "Gungunhana",
+    "Ngungunhana",
+    "Mudungazi",
+    "Mdungazwe",
+    "Reinaldo Frederico Gungunhana"
+   ],
+   "transliterations": {
+    "ts": "Ngungunyane",
+    "en": "the last king of Gaza",
+    "etymology": "Birth name Mdungazwe; regnal name Ngungunyane; baptismal name in exile Reinaldo Frederico"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tsonga",
+  "primaryTradition": "Tsonga",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Tsonga traditional religion; continuing"
+  },
+  "parentIds": [
+   "tsonga_mzila"
+  ],
+  "parentRoles": {
+   "tsonga_mzila": "paternal"
+  },
+  "domains": [
+   {
+    "sphereId": "kingship-and-resistance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "vuhosi",
+     "script": "Latn",
+     "rom": "vuhosi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Douglas L. Wheeler, 'Gungunyane the Negotiator: A Study in African Diplomacy', Journal of African History 9.4 (1968)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "resist-colonial-conquest",
+    "name": "resists the Portuguese conquest of Gaza",
+    "term": {
+     "value": "Gaza",
+     "script": "Latn",
+     "rom": "Gaza"
+    },
+    "inheritability": "none",
+    "notes": "Manoeuvred between colonial powers until defeated and captured in 1895.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Douglas L. Wheeler, 'Gungunyane the Negotiator' (1968)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "tsonga_mzila",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Douglas L. Wheeler, 'Gungunyane the Negotiator' (1968), Gaza dynastic succession"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Leao de Gaza",
+    "translation": "the Lion of Gaza",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Douglas L. Wheeler, 'Gungunyane the Negotiator', Journal of African History 9.4 (1968)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ngungunyane, son of Mzila, was the last king of the Gaza empire, reigning from 1884 until his defeat and capture in 1895 by Portuguese columns under Mouzinho de Albuquerque, after which he was exiled to Lisbon and the Azores, where he died in 1906.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Douglas L. Wheeler, 'Gungunyane the Negotiator: A Study in African Diplomacy', Journal of African History 9.4 (1968)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Patrick Harries, Work, Culture, and Identity: Migrant Laborers in Mozambique and South Africa (1994)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Praised as the Lion of Gaza, he became the supreme symbol of Tsonga-Shangaan resistance, and in 1985 his remains were carried home to be reburied as a hero of independent Mozambique.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Patrick Harries, Work, Culture, and Identity (1994), on Gungunyane in Tsonga historical memory"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ngungunyane, son of Mzila, was the last king of the Gaza empire, reigning from 1884 until his defeat in 1895. Ruling a vast tributary state over the Tsonga of southern Mozambique, he manoeuvred between Portuguese, British and Boer interests before Portuguese columns under Mouzinho de Albuquerque broke his power and captured him; he was exiled first to Lisbon and then to the Azores, where he died in 1906. Praised as the Lion of Gaza, he became the supreme symbol of Tsonga-Shangaan resistance, and in 1985 his remains were carried home to be reburied as a hero of independent Mozambique."
+ }
+]
+```

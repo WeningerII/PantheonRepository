@@ -139,11 +139,14 @@ test('family-graph parity floors hold (wave-7 enrichment)', () => {
   // Headroom for the ongoing smallest-first sweep; every kinless figure counted
   // here is a cited verified-solitary verdict (enforced by the test above). The
   // ceiling was raised from 470 when the discovery expansion added 100+ new
-  // traditions, and again during the floor-raising sweep over every 1-5-figure
-  // tradition — each pass contributes genuinely kinless apex creators, lone
-  // culture-heroes and epigraphic-only deities (no named in-corpus kin) — all
-  // carrying a cited verified-solitary.json reason.
-  assert.ok(noFam <= 850, `figures with no family links grew to ${noFam} (ceiling 850)`);
+  // traditions, again during the floor-raising sweep over every 1-5-figure
+  // tradition, and again for the atlas gap-fill program — the South American,
+  // Melanesian and worldwide vacant-region batches add genuinely kinless
+  // figures, and much traditional cosmology catalogues spirit-CLASSES (tambaran
+  // grades, shadow-doubles, place-spirits, bush-spirits) that have no genealogy
+  // by nature — each pass contributes lone creators, culture-heroes and
+  // impersonal powers, all carrying a cited verified-solitary.json reason.
+  assert.ok(noFam <= 1250, `figures with no family links grew to ${noFam} (ceiling 1250)`);
 });
 
 test('iconography coverage floor (wave-7g)', () => {

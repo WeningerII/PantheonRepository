@@ -1,0 +1,733 @@
+Gimi — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "gimi_first_woman",
+  "name": {
+   "primary": "First Woman",
+   "alt": [
+    "The Primal Sister",
+    "The First Mother"
+   ],
+   "transliterations": {
+    "tpi": "meri",
+    "etymology": "The Gimi primal ancestress is known descriptively in the myths rather than by a fixed proper name; Tok Pisin 'meri' = woman."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Gimi",
+  "primaryTradition": "Gimi",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Gimi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "primal source of human life",
+     "script": "Latn",
+     "rom": "primal source of human life"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy: A New Guinea Highlands Mythology. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   },
+   {
+    "sphereId": "menstruation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "origin of menstrual blood",
+     "script": "Latn",
+     "rom": "origin of menstrual blood"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender, ed. C. MacCormack and M. Strathern, 143-173. Cambridge: Cambridge University Press, 1980."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "engender-humankind",
+    "name": "engender humankind through primal union",
+    "term": {
+     "value": "engender humankind",
+     "script": "Latn",
+     "rom": "engender humankind"
+    },
+    "inheritability": "unique",
+    "notes": "In the origin myth the first woman and her brother, the first man, are the parents of humanity through an incestuous union.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Incest and the Atom of Kinship: The Role of the Mother's Brother in a New Guinea Highlands Society.' Ethos 15, no. 2 (1987): 166-202."
+     }
+    ]
+   },
+   {
+    "id": "loose-first-blood",
+    "name": "shed the first menstrual blood",
+    "term": {
+     "value": "shed the first blood",
+     "script": "Latn",
+     "rom": "shed the first blood"
+    },
+    "inheritability": "none",
+    "notes": "Her first bleeding is the mythic prototype of women's menstruation, tied in myth to the origin of the moon.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy: A New Guinea Highlands Mythology. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "gimi_first_man",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Incest and the Atom of Kinship.' Ethos 15, no. 2 (1987): 166-202."
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "gimi_first_man",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "gimi_moon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ],
+    "notes": "In tellings that make the moon her firstborn son."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the first mother",
+    "translation": "the first mother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Gimi origin myth centres on a primal brother and sister whose incestuous union founds humanity; the sister is the first woman and first mother.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy: A New Guinea Highlands Mythology. Chicago: University of Chicago Press, 1993."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Incest and the Atom of Kinship.' Ethos 15, no. 2 (1987): 166-202."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The First Woman is the primal ancestress of Gimi cosmogony, paired with her brother, the First Man. Their incestuous union is the origin of humankind, and her first menstruation is the mythic prototype of women's monthly bleeding. Sources link her body to the origin of the moon, which in several tellings is her concealed firstborn son. She is closely identified in Gimi thought with the cassowary, the wingless maternal bird of the forest, so that the boundary between the first woman and the primal cassowary-mother is deliberately blurred."
+ },
+ {
+  "id": "gimi_first_man",
+  "name": {
+   "primary": "First Man",
+   "alt": [
+    "The Primal Brother"
+   ],
+   "transliterations": {
+    "tpi": "man",
+    "etymology": "Known descriptively in the myths; Tok Pisin 'man' = man."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Gimi",
+  "primaryTradition": "Gimi",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Gimi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "primal male ancestor",
+     "script": "Latn",
+     "rom": "primal male ancestor"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-descent",
+    "name": "found human descent with the first woman",
+    "term": {
+     "value": "found human descent",
+     "script": "Latn",
+     "rom": "found human descent"
+    },
+    "inheritability": "unique",
+    "notes": "Progenitor of humanity through union with his sister.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Incest and the Atom of Kinship.' Ethos 15, no. 2 (1987): 166-202."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "gimi_first_woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Incest and the Atom of Kinship.' Ethos 15, no. 2 (1987): 166-202."
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "gimi_first_woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "gimi_moon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ],
+    "notes": "Where the moon is counted the offspring of the primal union."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the first man",
+    "translation": "the first man",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The first man is the primal brother of the first woman in the Gimi cosmogonic myth of sibling incest.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy: A New Guinea Highlands Mythology. Chicago: University of Chicago Press, 1993."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The First Man is the primal brother whose union with his sister, the First Woman, begins human descent in Gimi myth. His role is bound up with the men's cult and the sacred flutes: the mythology of the first man belongs to the same complex that, in the stolen-flutes narrative, transfers the flute-spirits from women's keeping into men's. Gimi cosmology grants him no supreme or creator status; he is a founding ancestor rather than a high god."
+ },
+ {
+  "id": "gimi_moon",
+  "name": {
+   "primary": "The Moon",
+   "alt": [
+    "The Moon-Man"
+   ],
+   "transliterations": {
+    "tpi": "mun",
+    "etymology": "In Gimi the moon is a masculine being known through its origin myth; Tok Pisin 'mun' = moon."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gimi",
+  "primaryTradition": "Gimi",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "gimi_first_woman",
+   "gimi_first_man"
+  ],
+  "parentRoles": {
+   "gimi_first_woman": "maternal",
+   "gimi_first_man": "paternal"
+  },
+  "temporal": {
+   "era": "Gimi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the moon and its cycle",
+     "script": "Latn",
+     "rom": "the moon and its cycle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   },
+   {
+    "sphereId": "menstruation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "governor of the menstrual cycle",
+     "script": "Latn",
+     "rom": "governor of the menstrual cycle"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender, ed. C. MacCormack and M. Strathern, 143-173. Cambridge: Cambridge University Press, 1980."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-menses",
+    "name": "rule women's monthly bleeding",
+    "term": {
+     "value": "rule the menses",
+     "script": "Latn",
+     "rom": "rule the menses"
+    },
+    "inheritability": "none",
+    "notes": "Women's monthly bleeding is understood as the effect of the masculine moon; the moon is imagined as a lover who causes menstruation.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   },
+   {
+    "id": "rise-into-sky",
+    "name": "rise from a woman's body into the sky",
+    "term": {
+     "value": "rise into the sky",
+     "script": "Latn",
+     "rom": "rise into the sky"
+    },
+    "inheritability": "unique",
+    "notes": "The origin myth traces the moon to menstrual blood or to a concealed firstborn who ascends into the heavens.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "gimi_first_woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "gimi_first_man",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Gimi moon is masculine and originates from menstrual blood or from a hidden firstborn; it governs the menstrual cycle.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy: A New Guinea Highlands Mythology. Chicago: University of Chicago Press, 1993."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender. Cambridge: Cambridge University Press, 1980."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Moon is a masculine celestial being in Gimi cosmology. Sources differ on whether it arose from the first woman's menstrual blood or from a firstborn son whom she hid and secretly nursed until he rose into the sky. In either telling the moon and menstruation are the same substance transposed to the heavens: women's monthly bleeding is read as the moon's continuing intercourse with them, so the lunar being governs the female cycle. The strong incest motif of the cosmogony recurs here, the moon being simultaneously son and phantom lover of the first mother."
+ },
+ {
+  "id": "gimi_kore",
+  "name": {
+   "primary": "Kore",
+   "alt": [
+    "The Forest of the Dead",
+    "The Wild"
+   ],
+   "transliterations": {
+    "gim": "kore",
+    "etymology": "Gimi term denoting both the spirit of a dead person and the primeval forest of the dead; also 'the wild' as against the cultivated settlement."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Gimi",
+  "primaryTradition": "Gimi",
+  "temporal": {
+   "era": "Gimi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "spirit of the dead",
+     "script": "Latn",
+     "rom": "kore"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   },
+   {
+    "sphereId": "wilderness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the wild forest of the dead",
+     "script": "Latn",
+     "rom": "kore"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender. Cambridge: Cambridge University Press, 1980."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "receive-the-dead",
+    "name": "receive the spirits of the dead",
+    "term": {
+     "value": "receive the dead",
+     "script": "Latn",
+     "rom": "receive the dead"
+    },
+    "inheritability": "none",
+    "notes": "At death the kore of a person passes into the primeval forest to live on as birds and marsupials.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "kore",
+    "translation": "the wild",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender. Cambridge: Cambridge University Press, 1980."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kore is the Gimi spirit of the dead and the wild forest of the dead, where the dead survive as birds and marsupials, opposed to the cultivated settlement.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy: A New Guinea Highlands Mythology. Chicago: University of Chicago Press, 1993."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender. Cambridge: Cambridge University Press, 1980."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kore names at once the disembodied spirit of a dead person and the primeval forest into which that spirit passes. It is the wild, the domain outside the gardens and settlements, where the dead live on transformed into the birds and marsupials of the high forest. Kore stands as the structuring opposite of the cultivated, domestic world of the living, and Gimi mortuary practice, including the former eating of the dead by women, was understood as a means of returning the kore to its proper place in the wild rather than letting it rot in the ground."
+ },
+ {
+  "id": "gimi_auwa",
+  "name": {
+   "primary": "Auwa",
+   "alt": [
+    "The Flute-Spirits",
+    "The Sacred Flutes"
+   ],
+   "transliterations": {
+    "gim": "auwa",
+    "etymology": "Gimi term for the sacred paired bamboo flutes and the spirits whose voices sound within them."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Gimi",
+  "primaryTradition": "Gimi",
+  "temporal": {
+   "era": "Gimi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "initiation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "voice of the men's cult",
+     "script": "Latn",
+     "rom": "auwa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   },
+   {
+    "sphereId": "music",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "spirit-voice of the sacred flutes",
+     "script": "Latn",
+     "rom": "auwa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "cry-as-birds",
+    "name": "sound as the cries of birds and the dead",
+    "term": {
+     "value": "cry as birds and the dead",
+     "script": "Latn",
+     "rom": "cry as birds and the dead"
+    },
+    "inheritability": "none",
+    "notes": "The paired flutes are played to produce interlocking cries heard as the voices of birds and of the dead of the forest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "gimi_auwa-flutes",
+    "kind": "instrument",
+    "name": "sacred paired bamboo flutes",
+    "term": {
+     "value": "auwa",
+     "script": "Latn",
+     "rom": "auwa"
+    },
+    "role": "voiced in male initiation as the cry of the flute-spirits",
+    "notes": "Played in matched pairs and kept hidden from women and the uninitiated; in myth the flutes were first owned by women and were taken from them by men.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy: A New Guinea Highlands Mythology. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "auwa",
+    "translation": "the flute-spirits",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The auwa are the flute-spirits of the Gimi men's cult, sounded in sacred paired bamboo flutes whose cries are heard as birds and the dead; myth holds the flutes were first owned by women.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy: A New Guinea Highlands Mythology. Chicago: University of Chicago Press, 1993."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The auwa are the flute-spirits whose voices sound in the sacred paired bamboo flutes of the men's cult, played at initiation and mortuary festivals. Their interlocking cries are heard as the calls of forest birds and of the dead of kore, binding the flutes to the wild and to the ancestors. A widely attested Gimi myth of origin holds that the flutes and their power belonged first to women and were seized by men, so that male ritual secrecy re-enacts a theft; the flutes must be kept hidden from women and the uninitiated on pain of death."
+ },
+ {
+  "id": "gimi_cassowary",
+  "name": {
+   "primary": "The Cassowary",
+   "alt": [
+    "The Cassowary-Mother",
+    "The Wingless Mother"
+   ],
+   "transliterations": {
+    "tpi": "muruk",
+    "etymology": "The Gimi maternal cassowary of the forest; Tok Pisin 'muruk' = cassowary."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Gimi",
+  "primaryTradition": "Gimi",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Gimi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "motherhood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "primal maternal bird",
+     "script": "Latn",
+     "rom": "primal maternal bird"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender, ed. C. MacCormack and M. Strathern, 143-173. Cambridge: Cambridge University Press, 1980."
+     }
+    ]
+   },
+   {
+    "sphereId": "wilderness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "wild forest kin of humankind",
+     "script": "Latn",
+     "rom": "wild forest kin of humankind"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy. Chicago: University of Chicago Press, 1993."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "embody-the-mother",
+    "name": "embody the forbidden mother",
+    "term": {
+     "value": "embody the mother",
+     "script": "Latn",
+     "rom": "embody the mother"
+    },
+    "inheritability": "unique",
+    "notes": "The wingless cassowary is imagined as a woman without a penis and as the maternal body men must ritually separate from; hunting or becoming the cassowary re-enacts the severance from the mother.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender. Cambridge: Cambridge University Press, 1980."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "the wingless mother",
+    "translation": "the wingless mother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender. Cambridge: Cambridge University Press, 1980."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The cassowary is a female maternal being in Gimi thought, identified with the first woman and the menstruating mother, and central to male ritual imagery of separation from the mother.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. 'Images of Nature in Gimi Thought.' In Nature, Culture and Gender. Cambridge: Cambridge University Press, 1980."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gillison, Gillian. Between Culture and Fantasy: A New Guinea Highlands Mythology. Chicago: University of Chicago Press, 1993."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Cassowary is the great maternal being of Gimi thought, a wingless bird of the high forest imagined as a woman without a penis and as the archetypal, forbidden mother. Sources identify her closely with the First Woman, so that the primal ancestress and the cassowary-mother shade into one figure. She belongs to the wild alongside the dead of kore, and Gimi ritual and hunting imagery treats the killing or ritual assumption of the cassowary as a re-enactment of the son's severance from the maternal body. Her prohibitions, particularly around blood and menstruation, mark her as the pole against which male identity is defined."
+ }
+]
+```
