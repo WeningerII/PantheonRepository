@@ -1,0 +1,610 @@
+Foi — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "foi_moon",
+  "name": {
+   "primary": "The Moon",
+   "alt": [
+    "Moon-man"
+   ],
+   "transliterations": {
+    "en": "The Moon",
+    "etymology": "Personified lunar sky-being of Foi cosmology"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Foi",
+  "primaryTradition": "Foi",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Foi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "celestial-bodies",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "The Moon",
+     "script": "Latn",
+     "rom": "The Moon"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua, Oceania Monographs No. 6 (1940-41), section on cosmology and celestial lore."
+     }
+    ]
+   },
+   {
+    "sphereId": "death-and-mortality",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "waxing and waning",
+     "script": "Latn",
+     "rom": "waxing and waning"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell: The Mythological Dimension of Foi Sociality (University of California Press, 1988), on lunar imagery and the body."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "wax-and-wane",
+    "name": "waxes and wanes across the month",
+    "term": {
+     "value": "waxing and waning",
+     "script": "Latn",
+     "rom": "waxing and waning"
+    },
+    "inheritability": "unique",
+    "notes": "The moon's monthly death and return supplies the Foi image of bodily and reproductive rhythm.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (1988)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "foi_sun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua (1940-41)."
+     }
+    ],
+    "notes": "Sources differ on whether the pairing is fraternal or adversarial."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Moon-man",
+    "translation": "the personified male moon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (1988)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The moon is a personified male sky-being in Foi cosmology, linked to the menstrual rhythm and to the Papuan Plateau complex of myths that account for human mortality.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua, Oceania Monographs No. 6 (1940-41)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (University of California Press, 1988)."
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "In Foi cosmology the moon is a personified male sky-being. His monthly waning and return furnish the standard image for bodily and reproductive rhythm, and he belongs to the wider Papuan Plateau complex of myths that account for human mortality and for the menstrual cycle. Sources differ on whether the moon and the sun are imagined as brothers or as adversaries who pursue one another across the sky."
+ },
+ {
+  "id": "foi_sun",
+  "name": {
+   "primary": "The Sun",
+   "alt": [
+    "Sun-being"
+   ],
+   "transliterations": {
+    "en": "The Sun",
+    "etymology": "Personified solar sky-being of Foi cosmology"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Foi",
+  "primaryTradition": "Foi",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Foi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "celestial-bodies",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "The Sun",
+     "script": "Latn",
+     "rom": "The Sun"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua, Oceania Monographs No. 6 (1940-41), section on cosmology and celestial lore."
+     }
+    ]
+   },
+   {
+    "sphereId": "daylight",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "daylight",
+     "script": "Latn",
+     "rom": "daylight"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Empty Place: Poetry, Space, and Being among the Foi of Papua New Guinea (Indiana University Press, 1991)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "cross-the-sky",
+    "name": "crosses the sky by day",
+    "term": {
+     "value": "daily crossing",
+     "script": "Latn",
+     "rom": "daily crossing"
+    },
+    "inheritability": "unique",
+    "notes": "The sun's diurnal passage frames the ordering of Foi time and the rhythm of subsistence life.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua (1940-41)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "foi_moon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua (1940-41)."
+     }
+    ],
+    "notes": "Sources differ on whether the pairing is fraternal or adversarial."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The sun is a personified sky-being paired with the moon in Foi celestial lore.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua, Oceania Monographs No. 6 (1940-41)."
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "The sun is a personified sky-being whose daily crossing orders Foi reckonings of time. In the celestial lore recorded for Lake Kutubu it is paired with the moon; the two are variously cast as kin or as rivals. Foi religion accords the sky-beings a modest place, its cosmological attention resting far more on the ghosts of the dead and on the spirits of bush and water."
+ },
+ {
+  "id": "foi_kutubu_serpent",
+  "name": {
+   "primary": "The Serpent of Lake Kutubu",
+   "alt": [
+    "the lake-origin being",
+    "the water-being of Kutubu"
+   ],
+   "transliterations": {
+    "en": "The Serpent of Lake Kutubu",
+    "etymology": "Primordial water-being of the lake-creation myth"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Foi",
+  "primaryTradition": "Foi",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Foi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "lakes-and-water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the lake waters",
+     "script": "Latn",
+     "rom": "the lake waters"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua, Oceania Monographs No. 6 (1940-41), origin of the lake."
+     }
+    ]
+   },
+   {
+    "sphereId": "primordial-creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the flooding of the land",
+     "script": "Latn",
+     "rom": "the flooding of the land"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Empty Place (Indiana University Press, 1991), on the mythic geography of Lake Kutubu."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "loose-the-flood",
+    "name": "looses the flood that forms the lake",
+    "term": {
+     "value": "the bursting of the waters",
+     "script": "Latn",
+     "rom": "the bursting of the waters"
+    },
+    "inheritability": "unique",
+    "notes": "In the origin story the waters burst from the ground where a tree or plant is uprooted, drowning the old land and forming Lake Kutubu.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua (1940-41)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The creation of Lake Kutubu is told as a primordial flooding, the waters bursting from the ground where a tree or plant was uprooted; the lake and its waters are figured as a great serpentine being.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "F. E. Williams, Natives of Lake Kutubu, Papua, Oceania Monographs No. 6 (1940-41)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Empty Place (Indiana University Press, 1991)."
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "The creation of Lake Kutubu is told as a primordial flooding: water burst from the ground where a tree or plant had been pulled up, drowning the old land and forming the lake while a dog warned the people to flee to high ground. The waters and their resident power are imagined as a great serpentine being. Foi settlement of the lake shore and the surrounding Mubi valley is dated, in myth, from this event."
+ },
+ {
+  "id": "foi_empty_place_hero",
+  "name": {
+   "primary": "The Culture-Hero of the Empty Places",
+   "alt": [
+    "the first ancestor",
+    "the wandering hero"
+   ],
+   "transliterations": {
+    "en": "The Culture-Hero of the Empty Places",
+    "etymology": "Composite ancestral hero of the Foi landscape myths"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Foi",
+  "primaryTradition": "Foi",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Foi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "culture-hero",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the arts of living",
+     "script": "Latn",
+     "rom": "the arts of living"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Empty Place (Indiana University Press, 1991), chs. on mythic geography and the named landscape."
+     }
+    ]
+   },
+   {
+    "sphereId": "landscape-and-place",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the empty places",
+     "script": "Latn",
+     "rom": "the empty places"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (University of California Press, 1988)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "name-the-land",
+    "name": "leaves named places along a journey",
+    "term": {
+     "value": "the naming of places",
+     "script": "Latn",
+     "rom": "the naming of places"
+    },
+    "inheritability": "none",
+    "notes": "Ancestral wanderings deposit the network of creeks, sago stands and abandoned longhouse sites through which the living move and which the memorial poetry recalls.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Empty Place (1991)."
+     }
+    ]
+   },
+   {
+    "id": "found-the-arts",
+    "name": "institutes sago-making and the longhouse",
+    "term": {
+     "value": "the founding of the arts",
+     "script": "Latn",
+     "rom": "the founding of the arts"
+    },
+    "inheritability": "none",
+    "notes": "The hero's acts establish sago processing, hunting and trapping, and the longhouse settlement pattern.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (1988)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Foi landscape is understood as the residue of ancestral journeys; culture-heroes and first ancestors instituted the arts of living and left the network of named and 'empty' places recalled in memorial poetry.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Empty Place: Poetry, Space, and Being among the Foi of Papua New Guinea (Indiana University Press, 1991)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (University of California Press, 1988)."
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Foi country is read as the residue of ancestral journeys. Named creeks, sago stands, and the 'empty places' — abandoned longhouse and garden sites — mark where culture-heroes and first ancestors once acted. Their travels are said to have instituted the arts of living, from sago processing and the longhouse to hunting and trapping, and to have left the web of places through which the living move and which the women's memorial poetry recalls. The Foi preserve this heroic matter as a body of distinct myths rather than as the biography of a single named creator."
+ },
+ {
+  "id": "foi_first_dead",
+  "name": {
+   "primary": "The First of the Dead",
+   "alt": [
+    "the first ghost",
+    "the origin of death"
+   ],
+   "transliterations": {
+    "en": "The First of the Dead",
+    "etymology": "The primordial being whose death instituted human mortality"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Foi",
+  "primaryTradition": "Foi",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "Foi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death-and-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the coming of death",
+     "script": "Latn",
+     "rom": "the coming of death"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (University of California Press, 1988), on death, ghosts and Foi cosmology."
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-ghosts",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "the ghosts of the dead",
+     "script": "Latn",
+     "rom": "the ghosts of the dead"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Empty Place (Indiana University Press, 1991)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "begin-mortality",
+    "name": "brings death that cannot be reversed",
+    "term": {
+     "value": "the first, irreversible death",
+     "script": "Latn",
+     "rom": "the first, irreversible death"
+    },
+    "inheritability": "full",
+    "notes": "From this primordial death derive the ghosts who remain the dominant supernatural presence in Foi life.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (1988)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "the origin of death",
+    "translation": "the being whose passing began human mortality",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (1988)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Death entered the world through a primordial being whose passing could not be reversed; from that first death derive the ghosts of the dead, the dominant supernatural presence of Foi cosmology, since the Foi have no developed pantheon of high gods.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell: The Mythological Dimension of Foi Sociality (University of California Press, 1988)."
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Death is said to have entered the world through a primordial being whose passing could not be undone, and from that first death derive the ghosts of the dead. These ghosts, not any high god, are the dominant supernatural presence of Foi life: they linger near their former places, act upon the living, and are addressed and placated. Weiner stresses that Foi religion has no developed pantheon of creator deities, its cosmology resting instead on the relation between the living and the dead."
+ },
+ {
+  "id": "foi_sorcery_spirit",
+  "name": {
+   "primary": "The Sorcery-Spirit",
+   "alt": [
+    "the unseen agent of sorcery",
+    "the sickness-power"
+   ],
+   "transliterations": {
+    "en": "The Sorcery-Spirit",
+    "etymology": "The personified malevolent power behind Foi sorcery and illness"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Foi",
+  "primaryTradition": "Foi",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Foi traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sorcery-and-witchcraft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sorcery",
+     "script": "Latn",
+     "rom": "sorcery"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (University of California Press, 1988), on sorcery, death and exchange."
+     }
+    ]
+   },
+   {
+    "sphereId": "illness-and-affliction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "wasting sickness",
+     "script": "Latn",
+     "rom": "wasting sickness"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Empty Place (Indiana University Press, 1991)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "consume-vitality",
+    "name": "consumes the victim's vitality unseen",
+    "term": {
+     "value": "the eating of life",
+     "script": "Latn",
+     "rom": "the eating of life"
+    },
+    "inheritability": "none",
+    "notes": "Directed by human practitioners, the sorcery-power works invisibly to cause wasting, illness and untimely death; countering it requires divination and ritual.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell (1988)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Illness and untimely death are attributed to sorcery, whose agency the Foi personify as a malevolent spirit-power directed by human practitioners and bound up with the exchange of pearl-shell wealth and the management of death.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. F. Weiner, The Heart of the Pearl Shell: The Mythological Dimension of Foi Sociality (University of California Press, 1988)."
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Illness and untimely death are attributed to sorcery, whose agency the Foi personify as a malevolent spirit-power set in motion by human practitioners. Working unseen, it consumes the victim's vitality; countering it demands divination and ritual response. Weiner treats this sorcery complex as inseparable from the circulation of pearl-shell valuables and from the way the Foi account for and settle death."
+ }
+]
+```

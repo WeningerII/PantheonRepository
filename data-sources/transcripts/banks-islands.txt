@@ -1,0 +1,1048 @@
+Banks Islands — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "banks_islands_qat",
+  "name": {
+   "primary": "Qat",
+   "alt": [
+    "Qet",
+    "Qatu"
+   ],
+   "transliterations": {
+    "mtt": "Qat",
+    "etymology": "Obscure; the proper name of the pre-eminent vui (spirit) of the Banks group, left unglossed by Codrington. The initial q represents a labialised velar stop characteristic of Mota."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Banks Islands",
+  "primaryTradition": "Banks Islands",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "banks_islands_qatgoro"
+  ],
+  "parentRoles": {
+   "banks_islands_qatgoro": "maternal"
+  },
+  "temporal": {
+   "era": "Banks Islands traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation-and-culture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "vui",
+     "script": "Latn",
+     "rom": "vui"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, 'The Story of Qat', pp. 156-158."
+     }
+    ]
+   },
+   {
+    "sphereId": "night-and-day",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "qong",
+     "script": "Latn",
+     "rom": "qong"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), pp. 156-157, on Qat's obtaining of night from Qong."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shape-humankind",
+    "name": "carve and quicken the first people",
+    "term": {
+     "value": "tavisoviso",
+     "script": "Latn",
+     "rom": "tavisoviso"
+    },
+    "inheritability": "unique",
+    "notes": "Qat cut men and women out of the wood of the tavisoviso tree, jointed and shaped them, and by drumming and dancing before them for three days brought them alive.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 157-158."
+     }
+    ]
+   },
+   {
+    "id": "ordain-night",
+    "name": "bring night, sleep and dawn to a dayless world",
+    "term": {
+     "value": "qong",
+     "script": "Latn",
+     "rom": "qong"
+    },
+    "inheritability": "unique",
+    "notes": "In the beginning it was always day; Qat sailed to buy night (qong) from the being Qong, learned sleep, and set the birds and the reddening sky to end each night, so establishing the round of day and night.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 156-157."
+     }
+    ]
+   },
+   {
+    "id": "fashion-the-world",
+    "name": "make and order the lands, canoes and living things",
+    "term": {
+     "value": "vanua",
+     "script": "Latn",
+     "rom": "vanua"
+    },
+    "inheritability": "unique",
+    "notes": "Qat shaped the islands, hollowed out canoes, and set in place pigs, food-plants and other creatures, acting as the maker and orderer of the Banks Islands world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. B. Dixon, Oceanic Mythology (The Mythology of All Races IX, 1916), pp. 129-134."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "banks_islands_qat-canoe",
+    "kind": "vessel",
+    "name": "Qat's canoe",
+    "term": {
+     "value": "aka",
+     "script": "Latn",
+     "rom": "aka"
+    },
+    "role": "vehicle of the culture-hero",
+    "notes": "The great canoe Qat hewed from a single tree; in the cycle it carries him between the islands and to the edge of the sky.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "banks_islands_qatgoro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ],
+    "notes": "Born of the bursting stone Qatgoro; he had no father."
+   },
+   {
+    "kind": "spouse",
+    "personId": "banks_islands_ro_lei",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ]
+   },
+   {
+    "kind": "companion",
+    "personId": "banks_islands_marawa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ],
+    "notes": "Marawa the spider is his helper and rescuer."
+   },
+   {
+    "kind": "enemy",
+    "personId": "banks_islands_qasavara",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 160-162."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "banks_islands_tangaro_gilagilala",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "banks_islands_tangaro_loloqong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Qat vui",
+    "translation": "Qat the spirit",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), pp. 156, 168, on Qat as the chief vui."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Qat is the pre-eminent culture-hero and quasi-creator of the Banks Islands, born from the stone Qatgoro with eleven brothers, maker of humankind and orderer of the world.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, 'The Story of Qat', pp. 156-172."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Qat established night and day by obtaining night from Qong.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), pp. 156-157."
+     },
+     {
+      "kind": "secondary",
+      "reference": "R. B. Dixon, Oceanic Mythology (1916), pp. 129-134."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Qat is the great vui (spirit-being) and culture-hero of the Banks Islands, most fully recorded on Mota and Vanua Lava. He was born at Alo Sepere on Vanua Lava from a stone, his mother Qatgoro, which burst asunder to bring him forth; he had no father and was one of twelve brothers. Qat is credited with fashioning the first men and women, whom he cut from the wood of the tavisoviso tree and quickened by drumming and dancing before them, and with ordering the islands, canoes, food-plants and animals. When the world knew only unbroken day he sailed to purchase night from the being Qong, and so instituted sleep, the dawn and the alternation of day and night. Much of the cycle turns on the jealousy of his brothers, who covet his wife Ro Lei and repeatedly try to kill him, and on his rescue each time by Marawa the spider. Codrington notes that Qat was nowhere worshipped as a god but was everywhere the hero of the foremost body of Banks Islands story."
+ },
+ {
+  "id": "banks_islands_marawa",
+  "name": {
+   "primary": "Marawa",
+   "alt": [
+    "Marawa the Spider"
+   ],
+   "transliterations": {
+    "mtt": "Marawa",
+    "etymology": "Mota marawa, 'spider'; the being is identified with a large spider."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Banks Islands",
+  "primaryTradition": "Banks Islands",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Banks Islands traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "craft-and-cunning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "marawa",
+     "script": "Latn",
+     "rom": "marawa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 157-160."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "spin-rescue-web",
+    "name": "let down a web to save the falling hero",
+    "term": {
+     "value": "marawa",
+     "script": "Latn",
+     "rom": "marawa"
+    },
+    "inheritability": "unique",
+    "notes": "When the brothers fell a tree on Qat or fling him into a pit, Marawa lets down his thread or web and draws him up unharmed.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "banks_islands_marawa-web",
+    "kind": "implement",
+    "name": "Marawa's thread",
+    "term": {
+     "value": "una marawa",
+     "script": "Latn",
+     "rom": "una marawa"
+    },
+    "role": "instrument of rescue",
+    "notes": "The spider's line by which Qat is repeatedly lifted out of danger.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "banks_islands_qat",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ],
+    "notes": "Helper and rescuer of Qat, though also his rival in some episodes of making men."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Marawa",
+    "translation": "the Spider",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 157."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Marawa is a vui in the form of a spider who is Qat's helper and rescuer, and in one tradition the origin of death through his rotting wooden images.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 157-160."
+     },
+     {
+      "kind": "secondary",
+      "reference": "R. B. Dixon, Oceanic Mythology (1916), pp. 130-131."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Marawa, whose name means 'spider', is a vui of the Banks Islands and the constant companion of Qat. He is at once Qat's rival and his rescuer: when Qat carves men from wood and brings them to life, Marawa makes images of his own, but buries them for seven days and finds them rotten, and in this way, some tellers say, death entered the world. Thereafter Marawa is Qat's protector, letting down his spider's thread to save the hero whenever the jealous brothers try to crush or drown him. Codrington records Marawa as one of the two great cooperating spirits of the Qat cycle, the shrewd counterpart to the maker Qat."
+ },
+ {
+  "id": "banks_islands_qasavara",
+  "name": {
+   "primary": "Qasavara",
+   "alt": [
+    "Qasavar"
+   ],
+   "transliterations": {
+    "mtt": "Qasavara",
+    "etymology": "Obscure; the proper name of the great cannibal ogre-spirit of the Qat cycle."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Banks Islands",
+  "primaryTradition": "Banks Islands",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "Banks Islands traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "cannibalism-and-menace",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gana",
+     "script": "Latn",
+     "rom": "gana"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 160-162."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "devour-men",
+    "name": "seize and eat human beings",
+    "term": {
+     "value": "gana tamataei",
+     "script": "Latn",
+     "rom": "gana tamataei"
+    },
+    "inheritability": "none",
+    "notes": "A man-eating ogre of enormous strength who preys on Qat and his brothers.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 160-162."
+     }
+    ]
+   },
+   {
+    "id": "resist-death",
+    "name": "withstand all wounds until his life-token is struck",
+    "term": {
+     "value": "vat",
+     "script": "Latn",
+     "rom": "vat"
+    },
+    "inheritability": "none",
+    "notes": "Qasavara cannot be killed by ordinary means; Qat overcomes him only by striking the mana that is the ogre's life.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 160-162."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "banks_islands_qasavara-stone",
+    "kind": "cult-object",
+    "name": "the stone of Qasavara",
+    "term": {
+     "value": "vat Qasavara",
+     "script": "Latn",
+     "rom": "vat Qasavara"
+    },
+    "role": "seat of residual mana",
+    "notes": "After the ogre's death his petrified form was pointed out as a mana-charged stone associated with strength and fighting.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 161-162."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "banks_islands_qat",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 160-162."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Qasavara",
+    "translation": "the man-eater",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), pp. 160-162."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Qasavara is the cannibal ogre-spirit and chief antagonist of Qat, whom Qat destroys; a mana-stone commemorates him.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 160-162."
+     },
+     {
+      "kind": "secondary",
+      "reference": "R. B. Dixon, Oceanic Mythology (1916), pp. 131-132."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Qasavara is the great cannibal ogre of the Banks Islands, the principal antagonist of Qat. Immensely strong and all but invulnerable, he seizes and devours human beings and lies in wait for Qat and his brothers. In the climactic episode Qat lures Qasavara, escapes his traps, and at last kills him, in some tellings by striking the token in which the ogre's life resides. After his death Qasavara was said to be turned to stone, and his petrified body served as a mana-charged object connected with strength and success in fighting. Sources differ on how far the origin of death is bound to Qasavara's overthrow, but he is uniformly the embodiment of murderous menace subdued by the culture-hero."
+ },
+ {
+  "id": "banks_islands_qatgoro",
+  "name": {
+   "primary": "Qatgoro",
+   "alt": [
+    "Iro Qatgoro",
+    "Ro Qatgoro"
+   ],
+   "transliterations": {
+    "mtt": "Iro Qatgoro",
+    "etymology": "Contains the feminine personal article i-Ro and the element Qat; the name of the stone that gave birth to Qat."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Banks Islands",
+  "primaryTradition": "Banks Islands",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Banks Islands traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "primordial-origin",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "vat",
+     "script": "Latn",
+     "rom": "vat"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, p. 156."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "birth-from-stone",
+    "name": "burst as a rock to bring forth the brothers",
+    "term": {
+     "value": "vat",
+     "script": "Latn",
+     "rom": "vat"
+    },
+    "inheritability": "unique",
+    "notes": "The stone Qatgoro split open and gave birth to Qat and, in the same hour, to his eleven brothers.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, p. 156."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "banks_islands_qat",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "banks_islands_tangaro_gilagilala",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "banks_islands_tangaro_loloqong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Iro Qatgoro",
+    "translation": "the stone-mother Qatgoro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Qatgoro is the stone from which Qat and his eleven brothers were born; she is the fatherless primordial mother of the cycle.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, p. 156."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Qatgoro is the primordial stone-mother of the Qat cycle. At Alo Sepere on Vanua Lava she was a stone that burst asunder and brought forth Qat, and in the same hour his eleven brothers, all of one mother and without any father. She belongs to the widespread Banks Islands theme of vui and mana concentrated in stones, and her sole but foundational act is the birth of the culture-hero and his kin from her riven body."
+ },
+ {
+  "id": "banks_islands_tangaro_gilagilala",
+  "name": {
+   "primary": "Tangaro Gilagilala",
+   "alt": [
+    "Tagaro Gilagilala",
+    "Tangaro the Wise"
+   ],
+   "transliterations": {
+    "mtt": "Tangaro Gilagilala",
+    "etymology": "Tangaro, the shared name of Qat's brothers (cognate with Polynesian Tangaroa), with gilagilala from Mota gila 'to know', hence 'the very knowing, the wise'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Banks Islands",
+  "primaryTradition": "Banks Islands",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "banks_islands_qatgoro"
+  ],
+  "parentRoles": {
+   "banks_islands_qatgoro": "maternal"
+  },
+  "temporal": {
+   "era": "Banks Islands traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom-and-knowing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gila",
+     "script": "Latn",
+     "rom": "gila"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, p. 156."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "discern-truth",
+    "name": "understand and judge all things rightly",
+    "term": {
+     "value": "gilagilala",
+     "script": "Latn",
+     "rom": "gilagilala"
+    },
+    "inheritability": "unique",
+    "notes": "The wise brother who understands everything, foil to the foolish Loloqong.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, p. 156."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "banks_islands_qatgoro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "banks_islands_qat",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "banks_islands_tangaro_loloqong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Gilagilala",
+    "translation": "the Wise",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tangaro Gilagilala, 'the Wise', is one of Qat's eleven brothers, the one who understands all things, paired as a foil against the foolish brother.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, p. 156."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Tangaro Gilagilala, 'Tangaro the Wise', is the cleverest of Qat's eleven brothers, all of whom bear the name Tangaro and were born together from the stone Qatgoro. Where his brother Loloqong is a byword for folly, Gilagilala understands everything and does all things rightly; the pair express a characteristic Banks Islands contrast of wisdom and stupidity within a single set of kin. In the cycle the brothers as a body grow jealous of Qat's wife Ro Lei and repeatedly plot his death."
+ },
+ {
+  "id": "banks_islands_tangaro_loloqong",
+  "name": {
+   "primary": "Tangaro Loloqong",
+   "alt": [
+    "Tagaro Loloqong",
+    "Tangaro the Fool"
+   ],
+   "transliterations": {
+    "mtt": "Tangaro Loloqong",
+    "etymology": "Tangaro, the shared name of the brothers, with loloqong glossed by Codrington as 'foolish, without understanding'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Banks Islands",
+  "primaryTradition": "Banks Islands",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "banks_islands_qatgoro"
+  ],
+  "parentRoles": {
+   "banks_islands_qatgoro": "maternal"
+  },
+  "temporal": {
+   "era": "Banks Islands traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "folly-and-misrule",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "loloqong",
+     "script": "Latn",
+     "rom": "loloqong"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, p. 156."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "misjudge-all",
+    "name": "misunderstand and bungle every matter",
+    "term": {
+     "value": "loloqong",
+     "script": "Latn",
+     "rom": "loloqong"
+    },
+    "inheritability": "unique",
+    "notes": "The foolish brother who understands nothing and does everything wrong, foil to the wise Gilagilala.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, p. 156."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "banks_islands_qatgoro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "banks_islands_qat",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "banks_islands_tangaro_gilagilala",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Loloqong",
+    "translation": "the Foolish",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), p. 156."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tangaro Loloqong, 'the Foolish', is one of Qat's eleven brothers, the one who understands nothing, paired as a foil against the wise brother.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, p. 156."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Tangaro Loloqong, 'Tangaro the Foolish', is the dull-witted brother among Qat's eleven kin, all born together from the stone Qatgoro and all called Tangaro. He is proverbial for understanding nothing and doing everything the wrong way, the exact foil of the all-knowing Gilagilala; the two together give the cycle its paired figures of folly and wisdom. Like the rest of the brothers he shares in the jealousy of Qat and the plots against his life that Marawa the spider repeatedly foils."
+ },
+ {
+  "id": "banks_islands_qong",
+  "name": {
+   "primary": "Qong",
+   "alt": [
+    "I Qong",
+    "Ro Qong"
+   ],
+   "transliterations": {
+    "mtt": "Qong",
+    "etymology": "Mota qong, 'night'; the being is Night personified, dwelling where the sky bends down to the sea."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Banks Islands",
+  "primaryTradition": "Banks Islands",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Banks Islands traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "night-and-sleep",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "qong",
+     "script": "Latn",
+     "rom": "qong"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 156-157."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-night",
+    "name": "grant night, sleep and the coming of dawn",
+    "term": {
+     "value": "qong",
+     "script": "Latn",
+     "rom": "qong"
+    },
+    "inheritability": "unique",
+    "notes": "Qong teaches Qat sleep, gives him eyebrows, shows him the reddening of the dawn and the birds that sing to end the night.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 156-157."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Qong",
+    "translation": "Night",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), pp. 156-157."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Qong is Night personified, the being from whom Qat purchases night and learns sleep and the dawn, establishing the alternation of day and night.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 156-157."
+     },
+     {
+      "kind": "secondary",
+      "reference": "R. B. Dixon, Oceanic Mythology (1916), pp. 129-130."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Qong, whose name is simply the Mota word for 'night', is Night personified in the Banks Islands cosmogony. When the world knew only ceaseless day, Qat heard that night dwelt at the edge of the world where the sky comes down to the sea, and sailed there to buy it. Qong received him, taught him sleep, gave him eyebrows so that his eyes might close, and revealed the reddening of the eastern sky and the birds whose song brings the day again. Bearing night home, Qat set the round of day and darkness in motion. Qong stands apart from the kin of Qat, entering the cycle solely as the keeper and giver of night."
+ },
+ {
+  "id": "banks_islands_ro_lei",
+  "name": {
+   "primary": "Ro Lei",
+   "alt": [
+    "Iro Lei",
+    "Ro Lé"
+   ],
+   "transliterations": {
+    "mtt": "Iro Lei",
+    "etymology": "The feminine personal article i-Ro prefixed to the name Lei; the wife of Qat."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Banks Islands",
+  "primaryTradition": "Banks Islands",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Banks Islands traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "marriage-and-consort",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Iro Lei",
+     "script": "Latn",
+     "rom": "Iro Lei"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "occasion-the-brothers-envy",
+    "name": "be the coveted wife over whom the brothers plot",
+    "term": {
+     "value": "Iro Lei",
+     "script": "Latn",
+     "rom": "Iro Lei"
+    },
+    "inheritability": "none",
+    "notes": "As Qat's wife she is desired by the eleven brothers, whose envy drives the repeated attempts on Qat's life.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "banks_islands_qat",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Iro Lei",
+    "translation": "the lady Lei",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), pp. 158-160."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ro Lei is the wife of Qat, whose desirability provokes the jealousy of the eleven brothers and the murder-plots that structure the cycle.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "R. H. Codrington, The Melanesians (1891), ch. X, pp. 158-160."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ro Lei, the lady Lei, is the wife of Qat in the Banks Islands cycle. Her role is that of the coveted consort: the eleven brothers of Qat desire her, and their jealousy sets in motion the sequence of attempts on Qat's life, in which they fell a tree upon him, fling him into a pit, and try to drown or crush him, only for Marawa the spider to rescue him each time. Through her the cycle's central conflict of a hero against his envious kin is joined."
+ }
+]
+```
