@@ -1,0 +1,1550 @@
+Kazakh — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "kazakh_tengri",
+  "name": {
+   "primary": "Tengri",
+   "alt": [
+    "Tanir",
+    "Taniri",
+    "Kok Tengri"
+   ],
+   "transliterations": {
+    "kk": "Тәңір",
+    "otk": "TeNri (𐱅𐰭𐰼𐰃)",
+    "etymology": "From Old Turkic teNri 'sky, heaven, god', a term shared across the Turko-Mongol world and among the oldest attested Turkic religious words."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky-heaven",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Көк аспан",
+     "script": "Kazakh Cyrillic",
+     "rom": "Kok aspan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kul Tigin and Bilge Qagan inscriptions (Orkhon, c. 732-735 CE), ed. and trans. Talat Tekin, A Grammar of Orkhon Turkic (Bloomington: Indiana University, 1968)."
+     }
+    ]
+   },
+   {
+    "sphereId": "fate-destiny",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Жазмыш",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zhazmysh"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, J.-P. 'Tangri: Essai sur le ciel-dieu des peuples altaiques,' Revue de l'histoire des religions 149-150 (1956)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "grant-kingship",
+    "name": "bestows sovereignty and fortune",
+    "term": {
+     "value": "Құт",
+     "script": "Kazakh Cyrillic",
+     "rom": "Qut"
+    },
+    "inheritability": "unique",
+    "notes": "Confers qut, the divine charisma and life-fortune that legitimates rulers and prospers households and herds.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bilge Qagan inscription (Orkhon, c. 735 CE), in Tekin, A Grammar of Orkhon Turkic (1968)."
+     }
+    ]
+   },
+   {
+    "id": "ordain-fate",
+    "name": "ordains the span of life",
+    "term": {
+     "value": "Тәңір жарылқасын",
+     "script": "Kazakh Cyrillic",
+     "rom": "Tanir zharylqasyn"
+    },
+    "inheritability": "none",
+    "notes": "The measure of each life is 'written' by heaven; the invocation Tanir jarylqasyn ('may Heaven bless') survives in everyday Kazakh speech.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Valikhanov, Ch. Ch. 'Sledy shamanstva u kirgizov,' in Sobranie sochinenii, vol. 4 (Alma-Ata: Nauka, 1985 [1860s])."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Мәңгі Көк Тәңір",
+    "translation": "Eternal Blue Sky",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions, in Tekin, A Grammar of Orkhon Turkic (1968)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "kazakh_umai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tonyuquq / Bilge Qagan inscriptions, where Tengri, Umai and the sacred Yer-Sub are invoked together as protecting powers; in Tekin (1968)."
+     }
+    ],
+    "notes": "Invoked together with Umai as the paired celestial protectors of the people."
+   },
+   {
+    "kind": "ally",
+    "personId": "kazakh_zher_su",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions naming Tengri and the sacred Yer-Sub among the powers that raised the Turkic people; in Tekin (1968)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tengri is the supreme sky-god of Kazakh Tengrism, the paramount deity of the pre-Islamic Turkic pantheon whose worship persisted in Kazakh folk religion.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions (c. 732-735 CE), trans. Talat Tekin (1968)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roux, J.-P. La religion des Turcs et des Mongols (Paris: Payot, 1984)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Kazakh sources record Tanir as the high god alongside a syncretic identification with Islamic Kudai/Allah.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Valikhanov, 'Sledy shamanstva u kirgizov,' Sobranie sochinenii, vol. 4 (1985)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Tengri is the sky-god and supreme deity of the old Turkic religion carried into Kazakh tradition, the vault of the eternal blue heaven personified as a conscious, ordering power. From him descends qut, the fortune and charisma that legitimates khans and prospers herds, and by his will the length of every life is measured. First attested by name in the eighth-century Orkhon inscriptions, where the blue Tengri above and the sacred Earth-Water below are said to have ordered the Turkic people into being, he remained central to Kazakh oath, blessing and lament; the everyday invocation Tanir jarylqasyn preserves his name. In later folk usage his figure merged with the Islamic Kudai, so that Tanir came to name the one God without wholly losing its ancient celestial coloring."
+ },
+ {
+  "id": "kazakh_umai",
+  "name": {
+   "primary": "Umai",
+   "alt": [
+    "Umay",
+    "Umai-ana",
+    "Mai-ene"
+   ],
+   "transliterations": {
+    "kk": "Ұмай",
+    "otk": "Umay (𐰆𐰢𐰖)",
+    "etymology": "From Old Turkic umay 'placenta, afterbirth, womb', extended to the goddess who presides over the womb and the newborn."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth-motherhood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ұмай ана",
+     "script": "Kazakh Cyrillic",
+     "rom": "Umai ana"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Potapov, L. P. 'Umai - bozhestvo drevnikh tyurkov v svete etnograficheskikh dannykh,' Tyurkologicheskii sbornik 1972 (Moscow, 1973)."
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-increase",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ұрпақ береке",
+     "script": "Kazakh Cyrillic",
+     "rom": "Urpaq bereke"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, V. N. 'Umai,' in Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980-82)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "protect-newborn",
+    "name": "guards infants and women in childbirth",
+    "term": {
+     "value": "Бесік иесі",
+     "script": "Kazakh Cyrillic",
+     "rom": "Besik iyesi"
+    },
+    "inheritability": "unique",
+    "notes": "Attends the cradle and the birthing woman, warding the newborn's soul until it takes firm hold; a child's smile in sleep is said to come from Umai's caress.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Potapov, 'Umai,' Tyurkologicheskii sbornik 1972 (1973)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ұмай ана",
+    "translation": "Mother Umai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kul Tigin inscription, which compares the queen to 'my mother the Qatun, like Umai'; in Tekin (1968)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "kazakh_tengri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions invoking Tengri and Umai together; in Tekin (1968)."
+     }
+    ],
+    "notes": "The maternal counterpart to the celestial Tengri; the two head the protective powers of the old Turkic cult."
+   },
+   {
+    "kind": "ally",
+    "personId": "kazakh_zher_su",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Bilge Qagan inscription pairing Umai with the sacred Yer-Sub; in Tekin (1968)."
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "kazakh_albasty",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, V. N. Shamanstvo u narodov Srednei Azii i Kazakhstana (Moscow: Nauka, 1992)."
+     }
+    ],
+    "notes": "As guardian of mothers and newborns Umai stands directly against the child-harming Albasty, whom baksy expel in her name."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Umai is the mother-goddess of Turkic religion, protectress of children, women in labor and the fertility of the household, carried into Kazakh belief as Umai-ana.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kul Tigin inscription (c. 732 CE), in Tekin (1968)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Potapov, 'Umai' (1973)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "In Kazakh and Altaic ethnography Umai presides over the cradle and the birthing tent and is invoked against spirits that endanger the infant.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Harva, Uno. Die religiosen Vorstellungen der altaischen Voelker, FF Communications 125 (Helsinki, 1938)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Umai is the great mother-goddess of the Turkic peoples, whose name means the womb and afterbirth and who therefore rules over conception, birth and the tender first years of life. She attends every cradle and every woman in labor, warding the newborn's fragile soul; a sleeping baby's smile is her caress, and its startled cry her momentary departure. Named beside Tengri in the eighth-century inscriptions, where a queen's dignity is measured by likeness to her, she endured in Kazakh usage as Umai-ana, invoked by mothers and by the baksy who drive off the child-stealing Albasty in her name. She forms with the sky-father Tengri and the sacred Earth-Water a triad of protecting powers, the maternal earthward pole of a cosmos crowned by heaven."
+ },
+ {
+  "id": "kazakh_zher_su",
+  "name": {
+   "primary": "Zher-Su",
+   "alt": [
+    "Jer-Su",
+    "Yer-Sub",
+    "Yer-Su"
+   ],
+   "transliterations": {
+    "kk": "Жер-Су",
+    "otk": "Yer-Sub (𐰘𐰼:𐰽𐰆𐰉)",
+    "etymology": "'Earth-Water', from Old Turkic yer 'earth' and sub 'water'; the sanctified land-and-waters of the homeland conceived as a single numinous power."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "earth-land",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Жер",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zher"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions naming iduk yer sub, 'the sacred Earth-Water'; in Tekin (1968)."
+     }
+    ]
+   },
+   {
+    "sphereId": "water-springs",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Су",
+     "script": "Kazakh Cyrillic",
+     "rom": "Su"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, J.-P. La religion des Turcs et des Mongols (Paris: Payot, 1984)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sanctify-homeland",
+    "name": "hallows and protects the homeland",
+    "term": {
+     "value": "Ыдуқ жер-су",
+     "script": "Kazakh Cyrillic",
+     "rom": "Iduq zher-su"
+    },
+    "inheritability": "unique",
+    "notes": "The consecrated mountains, springs and pastures of the ancestral land, whose favor secures the people and whose neglect brings ruin.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harva, Die religiosen Vorstellungen der altaischen Voelker (1938)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ыдуқ Жер-Су",
+    "translation": "Sacred Earth-Water",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions, in Tekin (1968)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "kazakh_tengri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions in which Tengri above and the sacred Yer-Sub below raise the Turkic people; in Tekin (1968)."
+     }
+    ]
+   },
+   {
+    "kind": "ally",
+    "personId": "kazakh_umai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions grouping Umai with the sacred Yer-Sub; in Tekin (1968)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Yer-Sub / Zher-Su, the 'Sacred Earth-Water', is a named numinous power of Old Turkic religion invoked in the Orkhon inscriptions and continued in Kazakh reverence for consecrated land and water.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kul Tigin and Bilge Qagan inscriptions (c. 732-735 CE), trans. Tekin (1968)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The cult of hallowed mountains, springs and pastures under the concept of Zher-Su persisted among the Kazakhs alongside the worship of Tengri and Umai.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Harva, Die religiosen Vorstellungen der altaischen Voelker (1938)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Zher-Su, the 'Earth-Water', is the sanctified homeland itself conceived as a numinous power: the mountains, rivers, springs and pastures of the ancestral steppe gathered into one sacred presence. In the eighth-century inscriptions the blue Tengri above and the sacred Yer-Sub below are said together to have raised the Turkic people, and neglect of that favor to have brought their near-destruction. Among the Kazakhs the concept endured in the veneration of consecrated peaks and life-giving waters, and in the pouring of libations and the tying of rags at holy springs. With Tengri and Umai it completes the elder triad of protecting powers, the earthward foundation answering to the celestial vault."
+ },
+ {
+  "id": "kazakh_albasty",
+  "name": {
+   "primary": "Albasty",
+   "alt": [
+    "Al basty",
+    "Sary albasty",
+    "Kara albasty",
+    "Al"
+   ],
+   "transliterations": {
+    "kk": "Албасты",
+    "etymology": "Perhaps from al, an old word for a malignant spirit (and for 'scarlet'), with basty 'pressed down'; a night-pressing, blood-loving demon."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "disease-affliction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Босану қызбасы",
+     "script": "Kazakh Cyrillic",
+     "rom": "Bosanu qyzbasy"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, V. N. 'Albasty,' in Mify narodov mira, ed. Tokarev (Moscow, 1980-82)."
+     }
+    ]
+   },
+   {
+    "sphereId": "nightmare-terror",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Түн басу",
+     "script": "Kazakh Cyrillic",
+     "rom": "Tun basu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "afflict-mothers",
+    "name": "attacks women in childbirth",
+    "term": {
+     "value": "Ана мен нәрестеге жау",
+     "script": "Kazakh Cyrillic",
+     "rom": "Ana men narestege zhau"
+    },
+    "inheritability": "none",
+    "notes": "Steals the lungs or liver of the birthing woman and endangers the newborn; the baksy must wrestle and expel her to save the mother.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Valikhanov, 'Sledy shamanstva u kirgizov,' Sobranie sochinenii, vol. 4 (1985)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Сары албасты",
+    "translation": "Yellow Albasty",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, 'Albasty,' in Mify narodov mira (1980-82)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kazakh_umai",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     }
+    ],
+    "notes": "The child-harming demon opposed to Umai, protectress of mothers and infants; baksy expel Albasty in Umai's name."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Albasty is a named female demon of Kazakh and wider Central Asian belief who assails women in childbirth and their newborns, distinguished into a 'yellow' and a 'black' kind.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, 'Albasty,' Mify narodov mira (1980-82)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Valikhanov, 'Sledy shamanstva u kirgizov' (1985)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The baksy's healing seances are directed in part at driving out Albasty from the birthing tent.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Albasty is a malign female spirit of the Kazakh and wider Central Asian imagination, the enemy of mothers and newborn children. Dishevelled and pendulous-breasted, dwelling by water and haunting the birthing tent, she presses upon sleepers by night and above all attacks women in labor, seeking to tear away the lungs or liver of mother or child. Tradition distinguishes a 'yellow' Albasty and a more dangerous 'black' one, and holds that a person who seizes a hair or a talisman from her can bind her to service. Against her the baksy conducts his violent seance, wrestling the unseen demon and casting her out; in this she stands as the direct antagonist of Umai, the guardian of the cradle."
+ },
+ {
+  "id": "kazakh_jalmauyz_kempir",
+  "name": {
+   "primary": "Jalmauyz Kempir",
+   "alt": [
+    "Zhalmauyz Kempir",
+    "Jalmauyz",
+    "Jelmoguz"
+   ],
+   "transliterations": {
+    "kk": "Жалмауыз кемпір",
+    "etymology": "From jalma- 'to gulp down, devour' and kempir 'old woman'; the all-devouring hag."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "cannibalism-devouring",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Жалмау",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zhalmau"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Serikbol. Kazakhskaya mifologiya: kratkii slovar (Almaty: Nurly Alem, 2005)."
+     }
+    ]
+   },
+   {
+    "sphereId": "witchcraft-sorcery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Сиқыр",
+     "script": "Kazakh Cyrillic",
+     "rom": "Siqyr"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Potanin, G. N. Kazakh-kirgizskie i altaiskie predaniya, legendy i skazki (St. Petersburg, 1917)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "devour-victims",
+    "name": "devours those she captures",
+    "term": {
+     "value": "Адам жеу",
+     "script": "Kazakh Cyrillic",
+     "rom": "Adam zheu"
+    },
+    "inheritability": "none",
+    "notes": "Seizes travellers and children at a spring or ford and swallows them; often many-headed, and in some tales her life is hidden outside her body so she can be killed only by finding it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "жеті басты Жалмауыз",
+    "translation": "seven-headed Jalmauyz",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Potanin, Kazakh-kirgizskie i altaiskie predaniya (1917)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kazakh_er_tostik",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Er-Tostik, in Kazakhskie narodnye skazki, ed. Institut literatury i iskusstva im. M. Auezova (Alma-Ata, 1971)."
+     }
+    ],
+    "notes": "The devouring hag figures among the underworld adversaries the hero Er Tostik must overcome."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jalmauyz Kempir is a cannibal ogress of Kazakh folk narrative, often depicted as a many-headed old woman who devours humans and whose soul may be kept hidden outside her body.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Potanin, Kazakh-kirgizskie i altaiskie predaniya, legendy i skazki (1917)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Jalmauyz Kempir, the 'devouring old woman', is the cannibal ogress of Kazakh magic tales, a hag who lurks at springs and fords to seize the unwary and swallow them whole. In many tellings she is monstrous and multiple-headed, sometimes counted seven-headed, and in others she guards the water so that the thirsty must yield a child before they may drink. Like the deathless sorcerers of neighboring traditions she may keep her life-soul hidden far outside her body, in an egg or a beast, so that she cannot be slain until the hero discovers and destroys it. She belongs among the underworld and wilderness adversaries whom heroes such as Er Tostik must outwit, the female face of the tale's devouring chaos."
+ },
+ {
+  "id": "kazakh_qorqyt_ata",
+  "name": {
+   "primary": "Qorqyt Ata",
+   "alt": [
+    "Korkyt",
+    "Qorqyt",
+    "Dede Korkut"
+   ],
+   "transliterations": {
+    "kk": "Қорқыт ата",
+    "etymology": "Qorqyt, the personal name of the legendary Oghuz bard, with ata 'father, grandfather, revered ancestor'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "music-song",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Қобыз",
+     "script": "Kazakh Cyrillic",
+     "rom": "Qobyz"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zhirmunsky, V. M. 'Oguzskii geroicheskii epos i Kniga Korkuta,' in Kniga moego deda Korkuta (Moscow-Leningrad, 1962)."
+     }
+    ]
+   },
+   {
+    "sphereId": "prophecy-wisdom",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Даналық",
+     "script": "Kazakh Cyrillic",
+     "rom": "Danalyq"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tursunov, E. D. Vozniknovenie baksy, akynov, seri i zhyrau (Astana: Foliant, 1999)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "invent-kobyz",
+    "name": "created the qyl-qobyz and the art of song",
+    "term": {
+     "value": "Қыл қобыз",
+     "script": "Kazakh Cyrillic",
+     "rom": "Qyl qobyz"
+    },
+    "inheritability": "partial",
+    "notes": "Fashioned the first horsehair fiddle and is honored as the patron and founder of the baksy and zhyrau, whose kobyz music descends from his.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tursunov, Vozniknovenie baksy, akynov, seri i zhyrau (1999)."
+     }
+    ]
+   },
+   {
+    "id": "flee-death",
+    "name": "fled from death across the earth",
+    "term": {
+     "value": "Өлімнен қашу",
+     "script": "Kazakh Cyrillic",
+     "rom": "Olimnen qashu"
+    },
+    "inheritability": "none",
+    "notes": "Wandering the four directions to escape his fated end, he found everywhere men digging his grave, and death overtook him at last on the Syr Darya.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zhirmunsky, 'Oguzskii geroicheskii epos i Kniga Korkuta' (1962)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Қорқыт ата",
+    "translation": "Grandfather Qorqyt",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zhirmunsky, 'Oguzskii geroicheskii epos i Kniga Korkuta' (1962)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Qorqyt Ata is the legendary bard, seer and first baksy of the Oghuz-Kazakh tradition, credited with inventing the qyl-qobyz and revered as patron of shaman-musicians.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Zhirmunsky, 'Oguzskii geroicheskii epos i Kniga Korkuta' (1962)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Tursunov, Vozniknovenie baksy, akynov, seri i zhyrau (1999)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Kazakh legend tells that Qorqyt fled his foretold death across the world and died of a snake-bite while playing the kobyz on the Syr Darya, where his mausoleum stands.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Zhirmunsky, V. Skazanie ob Alpamyshe i bogatyrskaya skazka (Moscow: Nauka, 1960), with the Korkut cycle."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Qorqyt Ata is the legendary bard and seer at the root of the Kazakh musical and shamanic tradition, the maker of the first qyl-qobyz and the archetype of the baksy and zhyrau who followed him. In the most famous legend he sought to escape a death foretold him in a dream, riding to the four quarters of the earth; but at each place he found men already digging a grave, and understood there was no flight from fate. Returning to the Syr Darya, he spread a carpet upon the water and played his kobyz without cease, so that death could not take him while the music sounded; only when weariness stilled the strings did a serpent bite him and end his life. His melodies are held to be the source of all kobyz music, and his domed mausoleum on the Syr Darya remains a place of pilgrimage."
+ },
+ {
+  "id": "kazakh_er_tostik",
+  "name": {
+   "primary": "Er Tostik",
+   "alt": [
+    "Er-Tostik",
+    "Yer-Tostik"
+   ],
+   "transliterations": {
+    "kk": "Ер Төстік",
+    "etymology": "From er 'hero, brave man' and the personal name Tostik; 'the hero Tostik'."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "heroism-valor",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Батырлық",
+     "script": "Kazakh Cyrillic",
+     "rom": "Batyrlyq"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Er-Tostik, in Kazakhskie narodnye skazki (Alma-Ata, 1971)."
+     }
+    ]
+   },
+   {
+    "sphereId": "underworld-journey",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Жер асты әлемі",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zher asty alemi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Er-Tostik recorded in Radloff, Proben der Volkslitteratur der tuerkischen Staemme, Bd. III (1870)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "descend-underworld",
+    "name": "journeys to the underworld and returns",
+    "term": {
+     "value": "Жер астына түсу",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zher astyna tusu"
+    },
+    "inheritability": "none",
+    "notes": "Falls into the subterranean world, wins the aid of Bapy Khan the serpent-king, and climbs back to the light on the wings of the giant bird Samuryk.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chadwick, N. K., and V. Zhirmunsky. Oral Epics of Central Asia (Cambridge University Press, 1969)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kazakh_er_tostik-shalkuiryk",
+    "kind": "steed",
+    "name": "Shalkuiryk",
+    "term": {
+     "value": "Шалқұйрық",
+     "script": "Kazakh Cyrillic",
+     "rom": "Shalquiryq"
+    },
+    "role": "the hero's speaking tulpar",
+    "notes": "A magical winged horse that counsels Er Tostik and bears him between the upper and lower worlds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Er-Tostik, in Kazakhskie narodnye skazki (1971)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "сегіз ұлдың кенжесі Ер Төстік",
+    "translation": "Er Tostik, the youngest of eight sons",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Er-Tostik, in Kazakhskie narodnye skazki (1971)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "kazakh_jalmauyz_kempir",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Er-Tostik, in Kazakhskie narodnye skazki (Alma-Ata, 1971)."
+     }
+    ],
+    "notes": "Among the monstrous adversaries he must defeat in his subterranean wanderings."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Er Tostik is the hero of the classic Kazakh magic tale of the same name, the youngest of eight sons who descends to the underworld and returns with the help of a speaking tulpar and the bird Samuryk.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Er-Tostik recorded in Radloff, Proben, Bd. III (1870)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Chadwick and Zhirmunsky, Oral Epics of Central Asia (1969)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Er Tostik is the hero of the best-loved of Kazakh magic tales, the miraculous youngest of the eight sons of the herdsman Ernazar. Betrothed to the wise maiden Kenzhekei and mounted on the speaking tulpar Shalkuiryk, he is dragged down into the subterranean world, where he passes through the realm of Bapy Khan the king of serpents and struggles against monstrous adversaries, among them the many-headed devouring hag. Winning the serpent-king's favor, he is carried back to the surface world on the vast wings of the bird Samuryk, whose nestlings he has saved from a dragon. The tale preserves an old shamanic pattern of descent and return, and Er Tostik stands as the archetypal questing hero of Kazakh folk narrative."
+ },
+ {
+  "id": "kazakh_qobylandy",
+  "name": {
+   "primary": "Qobylandy Batyr",
+   "alt": [
+    "Koblandy",
+    "Kobylandy",
+    "Qobylandy"
+   ],
+   "transliterations": {
+    "kk": "Қобыланды батыр",
+    "etymology": "The personal name Qobylandy with batyr 'hero, warrior' (ultimately from Mongol baghatur)."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "war-battle",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Соғыс",
+     "script": "Kazakh Cyrillic",
+     "rom": "Sogys"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chadwick and Zhirmunsky, Oral Epics of Central Asia (1969)."
+     }
+    ]
+   },
+   {
+    "sphereId": "heroism-valor",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Батырлық",
+     "script": "Kazakh Cyrillic",
+     "rom": "Batyrlyq"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Qobylandy batyr recorded in Radloff, Proben, Bd. III (1870)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ride-taiburyl",
+    "name": "rides the tulpar Taiburyl",
+    "term": {
+     "value": "Тайбурыл",
+     "script": "Kazakh Cyrillic",
+     "rom": "Taiburyl"
+    },
+    "inheritability": "none",
+    "notes": "His winged war-horse Taiburyl carries him across vast distances in a night, its famous gallop celebrated in a set-piece of the epic.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chadwick and Zhirmunsky, Oral Epics of Central Asia (1969)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kazakh_qobylandy-taiburyl",
+    "kind": "steed",
+    "name": "Taiburyl",
+    "term": {
+     "value": "Тайбурыл",
+     "script": "Kazakh Cyrillic",
+     "rom": "Taiburyl"
+    },
+    "role": "the hero's tulpar war-horse",
+    "notes": "Reared by his wife Qortqa, the swift Taiburyl is inseparable from Qobylandy's exploits.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qobylandy batyr (academic edition), in Batyrlar zhyry (Alma-Ata: Institut literatury i iskusstva)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Қобыланды батыр",
+    "translation": "Qobylandy the Hero",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chadwick and Zhirmunsky, Oral Epics of Central Asia (1969)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Qobylandy Batyr is the hero of one of the oldest Kazakh heroic epics, a warrior of the Qara-Qypshaq who defends his people against the Kyzylbash and Kalmyk, aided by his wife Qortqa and his tulpar Taiburyl.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Qobylandy batyr recorded in Radloff, Proben, Bd. III (1870)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Chadwick and Zhirmunsky, Oral Epics of Central Asia (1969)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Qobylandy Batyr is the hero of one of the most ancient and widely sung of Kazakh heroic epics, a champion of the Qara-Qypshaq (Black Kipchak) people. The poem follows his birth to long-childless parents, his winning of the wise Qortqa, and his campaigns against the enemy khans Qazan and Alshagyr, defenders and raiders of the steppe frontier. Central to his fame is the tulpar Taiburyl, reared by Qortqa and celebrated in the epic's bravura account of its gallop, which covers in a single night a distance of many days. Rooted in the memory of Kipchak warfare, the cycle belongs to the core repertoire of the zhyrau and remains among the best-known of the batyrlar zhyry."
+ },
+ {
+  "id": "kazakh_alpamys",
+  "name": {
+   "primary": "Alpamys Batyr",
+   "alt": [
+    "Alpamys",
+    "Alpamysh",
+    "Alip-Manash"
+   ],
+   "transliterations": {
+    "kk": "Алпамыс батыр",
+    "etymology": "From alp 'hero, mighty champion, giant', an ancient Turkic heroic epithet, with batyr 'warrior'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "heroism-valor",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Батырлық",
+     "script": "Kazakh Cyrillic",
+     "rom": "Batyrlyq"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zhirmunsky, V. M. Skazanie ob Alpamyshe i bogatyrskaya skazka (Moscow: Nauka, 1960)."
+     }
+    ]
+   },
+   {
+    "sphereId": "war-battle",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Соғыс",
+     "script": "Kazakh Cyrillic",
+     "rom": "Sogys"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chadwick and Zhirmunsky, Oral Epics of Central Asia (1969)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "endure-captivity",
+    "name": "survives long captivity and returns",
+    "term": {
+     "value": "Тұтқыннан оралу",
+     "script": "Kazakh Cyrillic",
+     "rom": "Tutqynnan oralu"
+    },
+    "inheritability": "none",
+    "notes": "Cast into the deep dungeon of Taishyk Khan, he endures for years and comes home in disguise to reclaim his wife and people.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zhirmunsky, Skazanie ob Alpamyshe (1960)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Алпамыс батыр",
+    "translation": "Alpamys the Hero",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chadwick and Zhirmunsky, Oral Epics of Central Asia (1969)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Alpamys Batyr is the Kazakh hero of a pan-Turkic epic, a champion of the Konyrat who wins the maiden Gulbarshyn, is imprisoned by an enemy khan, and returns in disguise to restore his household.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Zhirmunsky, Skazanie ob Alpamyshe i bogatyrskaya skazka (1960)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Chadwick and Zhirmunsky, Oral Epics of Central Asia (1969)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Alpamys Batyr is the Kazakh embodiment of one of the great pan-Turkic epics, sung from the Altai to the Oghuz lands in many forms. A hero of the Konyrat, he wins by feats of strength the beautiful Gulbarshyn, then rides against the tyrant Taishyk Khan, is betrayed, and is cast into a deep pit or dungeon where he languishes for years. Freed at last, he returns home in beggar's disguise to find his wife besieged by a usurper's suit, and reveals himself only by stringing the great bow that no other man can bend. The tale of the long-absent husband's homecoming links Alpamys to a heroic pattern of vast antiquity, and the epic remains a cornerstone of the Kazakh oral repertoire."
+ },
+ {
+  "id": "kazakh_asan_qaigy",
+  "name": {
+   "primary": "Asan Qaigy",
+   "alt": [
+    "Asan Kaigy",
+    "Asan the Sorrowful",
+    "Hasan Sabituly"
+   ],
+   "transliterations": {
+    "kk": "Асан Қайғы",
+    "etymology": "Asan (from Hasan) with qaigy 'sorrow, grief'; 'Asan the Sorrowful', for his lament over the people's fate."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "prophecy-wisdom",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Көріпкелдік",
+     "script": "Kazakh Cyrillic",
+     "rom": "Koripkeldik"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Winner, Thomas G. The Oral Art and Literature of the Kazakhs of Russian Central Asia (Durham: Duke University Press, 1958)."
+     }
+    ]
+   },
+   {
+    "sphereId": "utopia-promised-land",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Жерұйық",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zheruiyq"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "seek-zheruiyq",
+    "name": "searches for the promised land Zheruiyq",
+    "term": {
+     "value": "Жерұйықты іздеу",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zheruiyqty izdeu"
+    },
+    "inheritability": "none",
+    "notes": "Roams the steppe on his fleet she-camel Zhelmaya seeking Zheruiyq, an earthly paradise of endless pasture where sorrow and want are unknown.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Winner, The Oral Art and Literature of the Kazakhs (1958)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kazakh_asan_qaigy-zhelmaya",
+    "kind": "steed",
+    "name": "Zhelmaya",
+    "term": {
+     "value": "Желмая",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zhelmaya"
+    },
+    "role": "his swift she-camel",
+    "notes": "A fleet-as-the-wind she-camel on which Asan Qaigy crosses the steppe in his search for Zheruiyq.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Асан Қайғы",
+    "translation": "Asan the Sorrowful",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Winner, The Oral Art and Literature of the Kazakhs (1958)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Asan Qaigy is a legendary fifteenth-century sage and zhyrau linked to the founding of the Kazakh Khanate, remembered for wandering the steppe on the camel Zhelmaya in search of the utopian land Zheruiyq.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Winner, The Oral Art and Literature of the Kazakhs of Russian Central Asia (1958)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Asan Qaigy, 'Asan the Sorrowful', is the legendary sage, prophet and zhyrau of Kazakh tradition, associated with the age of the khans Janibek and Kerei and the birth of the Kazakh Khanate in the fifteenth century. His byname comes from the grief with which he foresaw the hardships in store for his people. In the most enduring legend he rides the steppe on Zhelmaya, a she-camel swift as the wind, searching for Zheruiyq, a promised earthly paradise of boundless green pasture and gentle waters where flocks multiply and neither sorrow nor oppression is known. Though he never reaches it, his quest and his wise, mournful sayings became a lasting image of the yearning for a just and abundant homeland, and he is counted among the first and greatest of the steppe poet-sages."
+ },
+ {
+  "id": "kazakh_qambar_ata",
+  "name": {
+   "primary": "Qambar Ata",
+   "alt": [
+    "Kambar Ata",
+    "Zhylqyshy Ata"
+   ],
+   "transliterations": {
+    "kk": "Қамбар ата",
+    "etymology": "The name Qambar with ata 'father, patron'; the ancestral patron of horses and horse-herders."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "horses-herding",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Жылқы",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zhylqy"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, V. N. Shamanstvo u narodov Srednei Azii i Kazakhstana (Moscow: Nauka, 1992)."
+     }
+    ]
+   },
+   {
+    "sphereId": "livestock-patronage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Мал пірі",
+     "script": "Kazakh Cyrillic",
+     "rom": "Mal piri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "protect-horses",
+    "name": "guards and multiplies the horse herds",
+    "term": {
+     "value": "Жылқыны қорғау",
+     "script": "Kazakh Cyrillic",
+     "rom": "Zhylqyny qorgau"
+    },
+    "inheritability": "unique",
+    "notes": "Invoked by herders for the health and increase of horses; his name is spoken over foaling mares and at the branding of colts.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "жылқының пірі Қамбар ата",
+    "translation": "Qambar Ata, patron of horses",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kazakh_shopan_ata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     }
+    ],
+    "notes": "One of the paired patron-spirits (pir) of the herds, invoked together for the increase of stock."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Qambar Ata is the patron spirit (pir) of horses in Kazakh folk religion, one of the ata invoked by herders for the protection and increase of livestock.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Qambar Ata is the patron spirit of horses in Kazakh folk religion, the pir under whose protection the herds of a horse-breeding people are placed. His name is invoked over foaling mares, at the branding and gelding of colts, and in blessings for the multiplication of the stud; herders count him the ancestral guardian of all that pertains to the horse. He belongs to a set of tutelary ata each governing a kind of livestock, and though his figure has absorbed the coloring of a Muslim saint, his function reaches back to the pre-Islamic reverence for the spirit-protectors of the animals on which steppe life depended. Sources sometimes link or confuse him with the epic hero Qambar."
+ },
+ {
+  "id": "kazakh_shopan_ata",
+  "name": {
+   "primary": "Shopan Ata",
+   "alt": [
+    "Choban Ata",
+    "Chopan Ata"
+   ],
+   "transliterations": {
+    "kk": "Шопан ата",
+    "etymology": "From shopan 'shepherd' and ata 'father, patron'; the shepherd-patron of sheep."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kazakh",
+  "primaryTradition": "Kazakh",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kazakh traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sheep-herding",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Қой",
+     "script": "Kazakh Cyrillic",
+     "rom": "Qoi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, V. N. Shamanstvo u narodov Srednei Azii i Kazakhstana (Moscow: Nauka, 1992)."
+     }
+    ]
+   },
+   {
+    "sphereId": "livestock-patronage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Мал пірі",
+     "script": "Kazakh Cyrillic",
+     "rom": "Mal piri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "protect-flocks",
+    "name": "guards and multiplies the sheep flocks",
+    "term": {
+     "value": "Қойды қорғау",
+     "script": "Kazakh Cyrillic",
+     "rom": "Qoidy qorgau"
+    },
+    "inheritability": "unique",
+    "notes": "Invoked by shepherds for lambing and the fatness of the flock; his cult centers on the underground mosque and necropolis of Shopan-ata in Mangystau.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "қойдың пірі Шопан ата",
+    "translation": "Shopan Ata, patron of sheep",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kazakh_qambar_ata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     }
+    ],
+    "notes": "Reckoned together with the horse-patron Qambar Ata among the tutelary pir of the herds."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Shopan Ata is the patron spirit (pir) of sheep in Kazakh folk religion, whose principal shrine is the Shopan-ata underground mosque and necropolis of the Mangystau peninsula.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Basilov, Shamanstvo u narodov Srednei Azii i Kazakhstana (1992)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Qondybai, Kazakhskaya mifologiya (2005)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Shopan Ata is the patron spirit of sheep in Kazakh folk religion, the 'shepherd-father' under whose care the flocks that clothe and feed the herding household are placed. Shepherds invoke him at lambing and for the fatness and safety of the flock, and his name is joined with that of Qambar Ata, guardian of horses, in the reckoning of the tutelary ata of livestock. His veneration is concentrated in Mangystau, where the ancient underground mosque and vast necropolis of Shopan-ata form one of the holiest pilgrimage sites of the western steppe. As with the other livestock patrons, an older pastoral spirit-cult here wears the outward form of a revered Muslim saint."
+ }
+]
+```

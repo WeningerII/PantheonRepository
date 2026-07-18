@@ -1,0 +1,913 @@
+Kanuri — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "kanuri_sef",
+  "name": {
+   "primary": "Sef",
+   "alt": [
+    "Saif",
+    "Sayf",
+    "Sef bin Dhu Yazan",
+    "Sayf ibn Dhi Yazan",
+    "Susam"
+   ],
+   "transliterations": {
+    "kr": "Sef",
+    "ar": "سيف بن ذي يزن",
+    "etymology": "From Arabic sayf, 'sword'; the eponymous ancestor was retrospectively identified with the Himyarite prince Sayf ibn Dhi Yazan, giving the dynastic name Sefuwa (Sayfawa)."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kanuri",
+  "primaryTradition": "Kanuri",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kanuri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sacred-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald Cohen, The Kanuri of Bornu (1967), ch. on kingship and the state"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Sefuwa",
+     "script": "Latn",
+     "rom": "Sefuwa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Dierk Lange (Wiesbaden: Franz Steiner, 1977), king-list opening"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "embody-sacral-kingship",
+    "name": "embody sacral kingship",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "inheritability": "full",
+    "notes": "As founding ancestor Sef transmits to his descendants the sacral office of mai, whose holders early Arab geographers reported were revered by their subjects as more than human.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yves Urvoy, Histoire de l'empire du Bornou (Paris: Larose, 1949)"
+     }
+    ]
+   },
+   {
+    "id": "found-the-sefuwa-line",
+    "name": "found the Sefuwa dynasty",
+    "term": {
+     "value": "Sefuwa",
+     "script": "Latn",
+     "rom": "Sefuwa"
+    },
+    "inheritability": "unique",
+    "notes": "The royal house of Kanem and Bornu took its name and its claim to legitimacy from descent traced back to Sef.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "kanuri_ibrahim",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977), succession of Sef, Ibrahim, Duku"
+     }
+    ],
+    "notes": "Ibrahim stands as Sef's son and successor in the Diwan king-list."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Sayf ibn Dhi Yazan",
+    "translation": "Sword, son of Dhu Yazan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dierk Lange, 'The Kingdoms and Peoples of Chad', in UNESCO General History of Africa, vol. IV (1984)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sef heads the Diwan (Girgam) king-list of Kanem-Bornu as founding ancestor of the ruling house.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Dierk Lange (Wiesbaden, 1977)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "H. R. Palmer, Sudanese Memoirs (Lagos, 1928), vol. I"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The identification of Sef with the Yemenite Himyarite prince Sayf ibn Dhi Yazan is a post-Islamic legitimizing genealogy that scholars regard as fabricated.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dierk Lange, 'The Kingdoms and Peoples of Chad', in UNESCO General History of Africa, vol. IV (1984)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Sef is the eponymous ancestor of the Sefuwa (Sayfawa), the dynasty that ruled Kanem and then Bornu for roughly eight centuries and whose kings bore the sacral title mai. He opens the Diwan, the dynastic chronicle preserved in written form as the Diwan and recited orally as the girgam. After the court's conversion to Islam, court genealogists equated Sef with Sayf ibn Dhi Yazan, a semi-legendary sixth-century Himyarite prince of southern Arabia and hero of later Arabic romance, thereby grafting the royal line onto a prestigious Near Eastern pedigree. Modern historians, notably Dierk Lange, treat this Yemeni descent as an ideological construction rather than history, while recognising Sef as the genuine apical figure of the dynasty's self-image. Through him the office of divine or semi-divine kingship was held to descend to every mai."
+ },
+ {
+  "id": "kanuri_ibrahim",
+  "name": {
+   "primary": "Ibrahim",
+   "alt": [
+    "Bir",
+    "Biri",
+    "Ibrahim ibn Sef"
+   ],
+   "transliterations": {
+    "kr": "Ibrahim",
+    "ar": "إبراهيم",
+    "etymology": "The Arabic form of the name Abraham, adopted into the dynastic genealogy after Islamisation."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kanuri",
+  "primaryTradition": "Kanuri",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "kanuri_sef"
+  ],
+  "parentRoles": {
+   "kanuri_sef": "paternal"
+  },
+  "temporal": {
+   "era": "Kanuri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sacred-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "transmit-the-royal-line",
+    "name": "transmit the royal line",
+    "term": {
+     "value": "Sefuwa",
+     "script": "Latn",
+     "rom": "Sefuwa"
+    },
+    "inheritability": "full",
+    "notes": "Ibrahim links the apical ancestor Sef to Duku, from whom the first named dynasty of Kanem is called.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "kanuri_sef",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   },
+   {
+    "kind": "child",
+    "personId": "kanuri_dugu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ibrahim appears as the second ruler of the Diwan king-list, son of Sef and father of Duku.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Dierk Lange (1977)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Augustin F. C. Holl, The Diwan Revisited: Literacy, State Formation and the Rise of Kanuri Domination (London: Kegan Paul, 2000)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ibrahim is named in the Diwan as the second king of the line, standing between the founding ancestor Sef and Duku, the eponym of the Duguwa dynasty. His name reflects the Islamic reworking of the genealogy, in which the Arabic Ibrahim (Abraham) was woven into the ancestral chain. Beyond his place in the succession little narrative attaches to him; he functions in the tradition chiefly as the genealogical bridge that carries the sacral kingship from Sef down to the historically attested Duguwa mais."
+ },
+ {
+  "id": "kanuri_dugu",
+  "name": {
+   "primary": "Dugu",
+   "alt": [
+    "Duku",
+    "Duku",
+    "Dougou",
+    "Banu Duku"
+   ],
+   "transliterations": {
+    "kr": "Dugu",
+    "ar": "دوكو",
+    "etymology": "Eponym of the Duguwa dynasty, called in Arabic sources the Banu Duku, 'the sons of Duku'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kanuri",
+  "primaryTradition": "Kanuri",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "kanuri_ibrahim"
+  ],
+  "parentRoles": {
+   "kanuri_ibrahim": "paternal"
+  },
+  "temporal": {
+   "era": "Kanuri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sacred-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dierk Lange, 'The Kingdoms and Peoples of Chad', UNESCO General History of Africa, vol. IV (1984)"
+     }
+    ]
+   },
+   {
+    "sphereId": "dynasty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Duguwa",
+     "script": "Latn",
+     "rom": "Duguwa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-the-duguwa-line",
+    "name": "found the Duguwa royal line",
+    "term": {
+     "value": "Duguwa",
+     "script": "Latn",
+     "rom": "Duguwa"
+    },
+    "inheritability": "unique",
+    "notes": "The pre-Islamic Zaghawa kings of Kanem are named the Duguwa (Banu Duku) after him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Abdullahi Smith, 'The early states of the Central Sudan', in J. F. A. Ajayi and M. Crowder (eds), History of West Africa, vol. I (1971)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "kanuri_ibrahim",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Banu Duku",
+    "translation": "the sons of Duku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dierk Lange, Le Diwan des sultans du Kanem-Bornu (1977), commentary"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Duku is the third king of the Diwan and the eponym of the Duguwa (Banu Duku), the original royal dynasty of Kanem.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Dierk Lange (1977)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Augustin F. C. Holl, The Diwan Revisited (2000)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The Duguwa correspond to the Zaghawa kings whom early Arab geographers describe as ruling Kanem and being venerated by their people.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dierk Lange, 'The Kingdoms and Peoples of Chad', UNESCO General History of Africa, vol. IV (1984)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Dugu, in Arabic Duku, is the eponymous ancestor of the Duguwa dynasty, called in the Arabic sources the Banu Duku. Appearing as the third ruler in the Diwan, he gives his name to the first royal line of Kanem, identified by modern scholars with the Zaghawa kings whom ninth- and tenth-century Arab geographers such as al-Yaqubi and al-Muhallabi located east of Lake Chad. Those geographers report that the Zaghawa held their king in awe as a sacred person, a sovereign hidden from common sight and believed to command life and death, a pattern of divine kingship that underlies the later Sefuwa institution of the mai. The Duguwa ruled until the eleventh century, when the line of Muslim mais descended from Hummay displaced them."
+ },
+ {
+  "id": "kanuri_hummay",
+  "name": {
+   "primary": "Hummay",
+   "alt": [
+    "Ume",
+    "Umme",
+    "Ume Jilmi",
+    "Umme Jilmi",
+    "Umar ibn Abd al-Jalil",
+    "Hume"
+   ],
+   "transliterations": {
+    "kr": "Hummay",
+    "ar": "هومي بن عبد الجليل",
+    "etymology": "Also given as Umar ibn Abd al-Jalil; the epithet Jilmi is preserved with the name in the chronicle tradition."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kanuri",
+  "primaryTradition": "Kanuri",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kanuri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "islam",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Islam",
+     "script": "Latn",
+     "rom": "Islam"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   },
+   {
+    "sphereId": "sacred-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John E. Lavers, 'Kanem and Borno to 1808', in Groundwork of Nigerian History (1980)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "establish-islam",
+    "name": "establish Islam over the kingship",
+    "term": {
+     "value": "Islam",
+     "script": "Latn",
+     "rom": "Islam"
+    },
+    "inheritability": "partial",
+    "notes": "The Diwan credits Hummay with being the first Muslim mai, binding the sacral kingship to Islam.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   },
+   {
+    "id": "found-the-muslim-mais",
+    "name": "found the line of Muslim mais",
+    "term": {
+     "value": "Sefuwa",
+     "script": "Latn",
+     "rom": "Sefuwa"
+    },
+    "inheritability": "full",
+    "notes": "All later Muslim kings of Kanem and Bornu trace their line to Hummay.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dierk Lange, Le Diwan des sultans du Kanem-Bornu (1977), commentary"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Jilmi",
+    "translation": "an honorific attached to Hummay's name in the chronicles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hummay (Ume Jilmi) is recorded as the first Muslim king of Kanem, reigning in the late eleventh century.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Dierk Lange (1977)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "John E. Lavers, 'Kanem and Borno to 1808', in Groundwork of Nigerian History (Ibadan, 1980)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Lange interprets Hummay's accession as the replacement of the pre-Islamic Duguwa line by a new Islamic dynasty.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dierk Lange, 'The Kingdoms and Peoples of Chad', UNESCO General History of Africa, vol. IV (1984)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Hummay, also called Ume or Umme Jilmi, is remembered as the first Muslim mai of Kanem, reigning around 1075 to 1086. The Diwan marks his reign as the point at which the ruling house embraced Islam, and it is from Hummay that all subsequent Muslim mais of Kanem and Bornu reckoned their descent. Dierk Lange reads the change as more than a conversion, arguing that Hummay's advent represents the supplanting of the older Duguwa (Zaghawa) kings by a new line. In the religious memory of the tradition he marks the threshold between the pre-Islamic sacral kingship and the Islamic monarchy that succeeded it, even as much older belief in the sanctity of the king's person persisted beneath the new faith."
+ },
+ {
+  "id": "kanuri_dunama_dibalami",
+  "name": {
+   "primary": "Dunama Dibalami",
+   "alt": [
+    "Dunama II",
+    "Dunama Dabbalemi",
+    "Dunama ibn Salma",
+    "Mai Dunama"
+   ],
+   "transliterations": {
+    "kr": "Dunama Dibalami",
+    "ar": "دوناما دبلمي",
+    "etymology": "Dunama is a recurring royal name of Kanem; the by-name Dibalami (Dabbalemi) distinguishes this thirteenth-century mai."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kanuri",
+  "primaryTradition": "Kanuri",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kanuri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sacred-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   },
+   {
+    "sphereId": "sacred-relic",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mune",
+     "script": "Latn",
+     "rom": "mune"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ahmad ibn Furtu, Kitab ghazawat Kanim, cited in H. R. Palmer, Sudanese Memoirs (1928)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "open-the-mune",
+    "name": "open the sacred mune",
+    "term": {
+     "value": "mune",
+     "script": "Latn",
+     "rom": "mune"
+    },
+    "inheritability": "none",
+    "notes": "Dunama violated the taboo protecting the mune, an act the chronicle tradition blames for the subsequent misfortunes of the dynasty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ahmad ibn Furtu, in H. R. Palmer, Sudanese Memoirs (1928)"
+     }
+    ]
+   },
+   {
+    "id": "muster-the-cavalry",
+    "name": "muster the great cavalry of Kanem",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "inheritability": "none",
+    "notes": "External sources credit his reign with a vast force of horsemen, marking the height of Kanem's power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yves Urvoy, Histoire de l'empire du Bornou (1949)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kanuri_dunama_dibalami-mune",
+    "kind": "relic",
+    "name": "the Mune",
+    "term": {
+     "value": "mune",
+     "script": "Latn",
+     "rom": "mune"
+    },
+    "role": "royal palladium and focus of the pre-Islamic cult of divine kingship",
+    "notes": "A sacred object, described in the sources as a wrapped or enclosed thing that must never be opened, kept as the talisman of the mais. Dunama Dibalami opened it in his zeal for Islam; its violation was held to have unleashed revolt among the Tubu and Bulala and the long dynastic strife that eventually drove the Sefuwa from Kanem to Bornu.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ahmad ibn Furtu, Kitab ghazawat Kanim, trans. H. R. Palmer, in Sudanese Memoirs (1928)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Augustin F. C. Holl, The Diwan Revisited (2000)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Dibalami",
+    "translation": "Dabbalemi, the by-name of the great thirteenth-century Dunama",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Le Diwan des sultans du Kanem-Bornu, ed. Lange (1977)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Dunama Dibalami (Dunama II), reigning c. 1210-1248, opened or destroyed the sacred mune, an act the Diwan and Ibn Furtu present as sacrilege that precipitated revolt.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Ahmad ibn Furtu, Kitab ghazawat Kanim, trans. H. R. Palmer, Sudanese Memoirs (1928)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dierk Lange, Le Diwan des sultans du Kanem-Bornu (1977)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "His reign marks the apogee of Kanem's medieval power and expansion.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Yves Urvoy, Histoire de l'empire du Bornou (1949)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Dunama Dibalami, or Dunama II, was the greatest of the medieval mais of Kanem, reigning in the first half of the thirteenth century at the height of the empire's power. He is remembered above all for opening the mune, the sacred relic that stood as the palladium of the kingship and the surviving emblem of the pre-Islamic royal cult. Moved by his devotion to Islam, he violated the taboo that forbade the object ever being unwrapped. The internal chronicles, the Diwan and the account of the imam Ahmad ibn Furtu, treat this as a grievous sacrilege and trace to it the rebellions of the Tubu and the Bulala and the century of dynastic bloodshed that followed, which ultimately forced the Sefuwa to abandon Kanem for Bornu west of Lake Chad. In him the collision between the old sacral order and the new faith is crystallised into a single fateful act."
+ },
+ {
+  "id": "kanuri_idris_alooma",
+  "name": {
+   "primary": "Idris Alooma",
+   "alt": [
+    "Idris Alauma",
+    "Idris ibn Ali",
+    "Idris Aloma",
+    "Mai Idris"
+   ],
+   "transliterations": {
+    "kr": "Idris Alooma",
+    "ar": "إدريس ألوما",
+    "etymology": "The by-name Alooma (Alauma) derives from Alau, the place near which he is said to have died and been buried."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kanuri",
+  "primaryTradition": "Kanuri",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kanuri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "islam",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Islam",
+     "script": "Latn",
+     "rom": "Islam"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ahmad ibn Furtu, Kitab ghazawat Kanim / History of the First Twelve Years of the Reign of Mai Idris Alooma, trans. H. R. Palmer (1926)"
+     }
+    ]
+   },
+   {
+    "sphereId": "warfare",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ahmad ibn Furtu, trans. Palmer (1926)"
+     }
+    ]
+   },
+   {
+    "sphereId": "law",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sharia",
+     "script": "Latn",
+     "rom": "sharia"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald Cohen, The Kanuri of Bornu (1967)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "reform-worship",
+    "name": "reform worship and suppress pre-Islamic practice",
+    "term": {
+     "value": "sharia",
+     "script": "Latn",
+     "rom": "sharia"
+    },
+    "inheritability": "none",
+    "notes": "The chronicle celebrates his replacement of customary observance with Islamic law and his campaigns against remaining non-Muslim practice.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ahmad ibn Furtu, trans. Palmer (1926)"
+     }
+    ]
+   },
+   {
+    "id": "wage-holy-war",
+    "name": "wage holy war on the enemies of Bornu",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "inheritability": "none",
+    "notes": "Ibn Furtu recorded his campaigns against the Sao, Bulala, Tuareg and others as jihad.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ahmad ibn Furtu, trans. Palmer (1926)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Alooma",
+    "translation": "he of Alau, from the place of his death and burial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yves Urvoy, Histoire de l'empire du Bornou (1949)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Idris Alooma, mai of Bornu c. 1564-1596, is celebrated as the ideal Muslim king who enforced sharia, built brick mosques and campaigned as a holy warrior; his reign is chronicled by his imam Ahmad ibn Furtu.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Ahmad ibn Furtu, History of the First Twelve Years of the Reign of Mai Idris Alooma, trans. H. R. Palmer (Lagos, 1926)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ronald Cohen, The Kanuri of Bornu (1967)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Idris Alooma, mai of Bornu in the later sixteenth century, is the most celebrated of the Sefuwa kings and survives in Kanuri memory in near-legendary colours. His reign is uniquely documented by his imam Ahmad ibn Furtu, whose chronicle of the mai's campaigns presents him as the model Muslim sovereign: a builder of brick mosques, a patron of scholars, a reformer who set the sharia over customary law, and a relentless holy warrior against the Sao, the Bulala, the Tuareg and other enemies. His figure stands at the culmination of the long religious transformation that began with Hummay and Dunama Dibalami, embodying the triumph of orthodox Islam over the older sacral order, even while the folk religion of spirits and protective charms endured beneath the surface of Kanuri Islam."
+ },
+ {
+  "id": "kanuri_aisa_kili",
+  "name": {
+   "primary": "Aisa Kili Ngirmaramma",
+   "alt": [
+    "Aisa Kili",
+    "Aisa Kili N'guirmaramma",
+    "Amsa"
+   ],
+   "transliterations": {
+    "kr": "Aisa Kili Ngirmaramma",
+    "ar": "عائشة كيلي",
+    "etymology": "Aisa from Arabic Aisha; the title Ngirmaramma is a Kanuri honorific marking exalted rank."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Kanuri",
+  "primaryTradition": "Kanuri",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Kanuri traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sacred-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mai",
+     "script": "Latn",
+     "rom": "mai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald Cohen, The Kanuri of Bornu (1967), on the offices of royal women"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hold-the-throne",
+    "name": "hold the throne in regency",
+    "term": {
+     "value": "magira",
+     "script": "Latn",
+     "rom": "magira"
+    },
+    "inheritability": "none",
+    "notes": "Tradition credits her with governing Bornu and preserving the succession during an interregnum.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Yves Urvoy, Histoire de l'empire du Bornou (1949)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ngirmaramma",
+    "translation": "the great, one of exalted rank",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ronald Cohen, The Kanuri of Bornu (1967)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Aisa Kili Ngirmaramma is remembered in the Bornu king tradition as a female ruler or regent who held the throne for several years and secured the succession, in some accounts for Idris Alooma.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Yves Urvoy, Histoire de l'empire du Bornou (Paris: Larose, 1949)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "H. R. Palmer, The Bornu Sahara and Sudan (London: John Murray, 1936)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Aisa Kili Ngirmaramma is one of the very few women named in the dynastic tradition of Bornu, remembered as a royal woman who held the throne during a sixteenth-century interregnum and preserved the succession, in several accounts safeguarding it until Idris Alooma could reign. Sources differ on her exact kinship to the mais and on the length of her rule, and some scholars question the details of the story, but her figure preserves the strong Kanuri institution of powerful royal women, of whom the queen mother (magira) and the senior wife (gumsu) held recognised offices of state. She belongs to the semi-legendary memory surrounding the Sefuwa kingship rather than to securely documented history."
+ }
+]
+```

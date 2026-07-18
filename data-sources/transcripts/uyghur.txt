@@ -1,0 +1,1409 @@
+Uyghur — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "uyghur_tengri",
+  "name": {
+   "primary": "Tängri",
+   "alt": [
+    "Tengri",
+    "Kök Tängri",
+    "Täŋri",
+    "Tanri"
+   ],
+   "transliterations": {
+    "ug": "تەڭرى",
+    "otk": "𐱅𐰭𐰼𐰃",
+    "etymology": "Old Turkic täŋri 'sky, heaven, the deity of heaven'; the same word denotes both the physical firmament and the god"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky-heaven",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "كۆك",
+     "script": "Arabic",
+     "rom": "kök"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions (Kül Tigin, Bilge Kagan), 8th c. CE, ed. Talat Tekin, A Grammar of Orkhon Turkic (Bloomington: Indiana University, 1968)"
+     }
+    ]
+   },
+   {
+    "sphereId": "royal-fortune",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "قۇت",
+     "script": "Arabic",
+     "rom": "qut"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jean-Paul Roux, La religion des Turcs et des Mongols (Paris: Payot, 1984), 122-149"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "govern-heaven",
+    "name": "governs the eternal sky",
+    "term": {
+     "value": "تەڭرى تەق",
+     "script": "Arabic",
+     "rom": "täŋri täg"
+    },
+    "inheritability": "unique",
+    "notes": "Tängri presides over the ordered heaven and, in the runic inscriptions, is said to have 'created' or 'ordained' the khagan above the peoples.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon inscriptions, opening formula 'Täŋri täg täŋri yaratmïš', ed. Tekin 1968"
+     }
+    ]
+   },
+   {
+    "id": "bestow-sovereignty",
+    "name": "bestows sovereign fortune on the khagan",
+    "term": {
+     "value": "قۇت بەر",
+     "script": "Arabic",
+     "rom": "qut bär"
+    },
+    "inheritability": "none",
+    "notes": "Rule descends from heaven as qut, a heaven-granted charisma that legitimises the ruler; the Uyghur khagans styled themselves as enthroned by Tängri.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hayrettin İhsan Erkoç, 'Pre-Manichaean Beliefs of the Uyghurs I: Celestial and Natural Cults', Harvard Theological Review 116, no. 1 (2023)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Kök Tängri",
+    "translation": "Blue (Eternal) Heaven",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984), 122-125"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "uyghur_umay",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tonyukuk inscription, line invoking 'Täŋri, Umay, ïduq Yer-Sub', ed. Tekin 1968"
+     }
+    ],
+    "notes": "Invoked together with Umay and the sacred Earth-Water as the tutelary powers who grant victory."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tängri is the supreme heaven-deity of the Old Turkic and Uyghur peoples, attested by name in the 8th-century runic inscriptions and in Kāshgarī.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Orkhon and Tonyukuk inscriptions, 8th c. CE, ed. Tekin 1968"
+     },
+     {
+      "kind": "primary",
+      "reference": "Maḥmūd al-Kāshgarī, Dīwān Lughāt al-Turk (1072-74), trans. Robert Dankoff & James Kelly, Compendium of the Turkic Dialects (Cambridge, MA: Harvard University, 1982-85), s.v. teŋri"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Uyghur retention of the sky-cult beneath later Manichaean and Islamic layers is documented ethnographically and historically.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Erkoç, 'Pre-Manichaean Beliefs of the Uyghurs I', Harvard Theological Review 116, no. 1 (2023)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Tängri is the god of the eternal blue heaven, the highest power of the pre-Islamic Turkic and Uyghur world. The word names at once the visible firmament and the deity who dwells in and rules it. In the Orkhon and Tonyukuk inscriptions Tängri creates the khagan, grants the heaven-sent fortune (qut) by which rulers govern, and, invoked beside Umay and the sacred Earth-Water, delivers victory to the Turks. Kāshgarī records that the unbelieving Turks called the sky teŋri and applied the same word to anything they held great or exalted. Though the Uyghur court adopted Manichaeism in the 760s and later Islam, the heaven-cult persisted as a substratum in oath, blessing and folk belief."
+ },
+ {
+  "id": "uyghur_umay",
+  "name": {
+   "primary": "Umay",
+   "alt": [
+    "Umai",
+    "Umay Ana",
+    "Ïmay"
+   ],
+   "transliterations": {
+    "ug": "ئۇماي",
+    "otk": "𐰆𐰢𐰖",
+    "etymology": "Old Turkic umay 'placenta, afterbirth; womb', extended to the goddess who guards the newborn"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ئۇماي",
+     "script": "Arabic",
+     "rom": "umay"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tonyukuk inscription, line 'Umay teg ögüm katun kutıŋa', ed. Tekin 1968"
+     }
+    ]
+   },
+   {
+    "sphereId": "protection-of-children",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "بالا ساقچىسى",
+     "script": "Arabic",
+     "rom": "bala saqchisi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984), 174-180"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ensoul-the-newborn",
+    "name": "gives the newborn its soul",
+    "term": {
+     "value": "قۇت بەر",
+     "script": "Arabic",
+     "rom": "qut bär"
+    },
+    "inheritability": "unique",
+    "notes": "In folk belief Umay descends at birth and touches the infant's lips with a drop from the celestial Milk Lake, imparting the soul.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984), 174-180"
+     }
+    ]
+   },
+   {
+    "id": "guard-mother-and-infant",
+    "name": "guards mother and infant from harmful spirits",
+    "term": {
+     "value": "قوغدا",
+     "script": "Arabic",
+     "rom": "qoghda"
+    },
+    "inheritability": "none",
+    "notes": "Umay shields the newly delivered mother and child for the perilous first days after birth, standing against the childbirth-demons who assail them.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Erkoç, 'Pre-Manichaean Beliefs of the Uyghurs I', Harvard Theological Review 116, no. 1 (2023)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Umay Ana",
+    "translation": "Mother Umay",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984), 174"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "uyghur_tengri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tonyukuk inscription, joint invocation of Täŋri and Umay, ed. Tekin 1968"
+     }
+    ],
+    "notes": "Named beside Tängri and the sacred Earth-Water among the powers granting victory to the Turks."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Umay is the sole named goddess of the Old Turkic runic inscriptions, protectress of women and children.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Tonyukuk and Kül Tigin inscriptions, 8th c. CE, ed. Tekin 1968"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The Umay birth-cult survives among Turkic peoples including the Uyghurs as guardian of childbirth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984), 174-180"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Erkoç, 'Pre-Manichaean Beliefs of the Uyghurs I', Harvard Theological Review 116, no. 1 (2023)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Umay is the goddess of childbirth and the guardian of infants, the one female divinity named alongside Tängri in the earliest Turkic writing. Her name is that of the placenta, and her sphere is the fragile passage of birth: she confers the soul upon the newborn, brought as a drop from the heavenly Milk Lake, and shields mother and child through the dangerous first days against the demons of the birth-chamber. The Tonyukuk inscription likens the ruler's mother, the katun, to Umay, and later Turkic queens were held to embody her. Beneath Islam her figure endures in Uyghur and wider Turkic birth-customs and protective charms."
+ },
+ {
+  "id": "uyghur_erklig_qan",
+  "name": {
+   "primary": "Ärklig Qan",
+   "alt": [
+    "Erlik",
+    "Erlik Khan",
+    "Ärklig",
+    "Erklig Khan"
+   ],
+   "transliterations": {
+    "ug": "ئەرلىك خان",
+    "otk": "𐰼𐰚𐰠𐰃𐰚",
+    "etymology": "Old Turkic ärklig 'powerful, mighty' + qan 'lord, king'; 'the mighty king', epithet of the lord of the dead"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death-underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ئۆلۈم",
+     "script": "Arabic",
+     "rom": "ölüm"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Peter Zieme, Manichäisch-türkische Texte (Berlin: Akademie-Verlag, 1975), on Ärklig Qan / Yama in Old Uyghur texts"
+     }
+    ]
+   },
+   {
+    "sphereId": "judgment-of-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "يارغۇ",
+     "script": "Arabic",
+     "rom": "yarghu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984), 213-224"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "judge-the-dead",
+    "name": "judges the souls of the dead",
+    "term": {
+     "value": "يارغۇ قىل",
+     "script": "Arabic",
+     "rom": "yarghu qil"
+    },
+    "inheritability": "unique",
+    "notes": "In the Old Uyghur Buddhist texts Ärklig Qan renders the Yama-judgment, weighing a soul's deeds by white and black reckoning before assigning its fate.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zieme, Manichäisch-türkische Texte (1975)"
+     }
+    ]
+   },
+   {
+    "id": "loose-death-and-plague",
+    "name": "sends forth death and pestilence",
+    "term": {
+     "value": "ئاجۇن ئىلىت",
+     "script": "Arabic",
+     "rom": "ajun ilit"
+    },
+    "inheritability": "none",
+    "notes": "As lord of the lower world he dispatches death and disease among the living and gathers their souls to his realm.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984), 213-224"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ärklig Qan",
+    "translation": "the Mighty King",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zieme, Manichäisch-türkische Texte (1975)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "In Old Uyghur Buddhist literature Ärklig Qan is the lord of the dead, identified with the Indo-Buddhist Yama; the same figure is the Erlik of wider Turkic underworld belief.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Zieme, Manichäisch-türkische Texte (1975)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984), 213-224"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Erlik as ruler of the lower world and judge of the dead is a pan-Turkic and Turco-Mongol deity of death.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Uno Harva, Die religiösen Vorstellungen der altaischen Völker (Helsinki: FF Communications 125, 1938)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ärklig Qan, 'the Mighty King', is the ruler of the lower world and judge of the dead. In the Old Uyghur Buddhist manuscripts of Turfan his name renders that of Yama, king of the dead, who examines the deeds of each soul and pronounces its fate; in the broader Turkic imagination the same being is Erlik, lord of the dark underworld who looses death, plague and evil spirits upon the living and draws their souls down to him. The figure sits at the meeting of native Turkic underworld belief and the Indo-Buddhist infernal judge, the two fused in the Uyghur textual tradition."
+ },
+ {
+  "id": "uyghur_xormuzta",
+  "name": {
+   "primary": "Xormuzta Täŋri",
+   "alt": [
+    "Qormusta",
+    "Hormuzta",
+    "Xormuzta",
+    "Xormuzda"
+   ],
+   "transliterations": {
+    "ug": "خورمۇزتا تەڭرى",
+    "otk": "𐭇𐭅𐭓𐭌𐭆𐭕",
+    "etymology": "From Middle Iranian (Zoroastrian) Ahura Mazdā / Ōhrmazd, borrowed through Sogdian into Old Uyghur as the name of the Manichaean First Man"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "uyghur_azrua"
+  ],
+  "parentRoles": {
+   "uyghur_azrua": "paternal"
+  },
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "light-vs-darkness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "يارۇق",
+     "script": "Arabic",
+     "rom": "yaruq"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Old Uyghur Manichaean hymns, ed. Larry Clark, Uygur Manichaean Texts, vol. 2: Texts (Turnhout: Brepols, Corpus Fontium Manichaeorum, 2017)"
+     }
+    ]
+   },
+   {
+    "sphereId": "primordial-combat",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "بەش تەڭرى",
+     "script": "Arabic",
+     "rom": "beš täŋri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Peter Zieme, 'Manichäische türkische Texte' and studies on Old Uyghur Manichaean cosmology"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "descend-as-primal-man",
+    "name": "descends as the First Man to fight darkness",
+    "term": {
+     "value": "قورۇغ",
+     "script": "Arabic",
+     "rom": "qorugh"
+    },
+    "inheritability": "unique",
+    "notes": "As the Manichaean Primal Man, Xormuzta arms himself with the Fivefold God (ether, wind, light, water, fire) and goes down to do battle with the powers of darkness.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Old Uyghur Manichaean hymnbook (Mahrnāmag / Turfan hymns), ed. Clark, Uygur Manichaean Texts vol. 2 (2017)"
+     }
+    ]
+   },
+   {
+    "id": "be-rescued-as-living-soul",
+    "name": "is redeemed and drawn back toward the light",
+    "term": {
+     "value": "قۇتغار",
+     "script": "Arabic",
+     "rom": "qutghar"
+    },
+    "inheritability": "none",
+    "notes": "Overcome and swallowed by darkness, the First Man is answered and lifted up, his imprisoned light-armour becoming the Living Soul to be gathered from the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hans-Joachim Klimkeit, Gnosis on the Silk Road: Gnostic Texts from Central Asia (San Francisco: HarperCollins, 1993)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Xormuzta Täŋri",
+    "translation": "the god Xormuzta (Ohrmazd)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Clark, Uygur Manichaean Texts vol. 2 (2017)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "uyghur_azrua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Klimkeit, Gnosis on the Silk Road (1993), on the Manichaean evocation of the First Man by the Father of Greatness through the Mother of Life"
+     }
+    ],
+    "notes": "Evoked from the transcendent Father of Greatness (Äzrua) at the opening of the cosmic drama; treated in the tradition as the Father's called-forth son."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Xormuzta is the Old Uyghur Manichaean name of the First Man / Primal Man, derived from the Iranian Ohrmazd, attested in the Turfan Manichaean texts.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Clark, Uygur Manichaean Texts vol. 2: Texts (Brepols, 2017)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Klimkeit, Gnosis on the Silk Road (1993)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "After the Manichaean period the name Xormuzta / Qormusta passed into Old Uyghur Buddhist usage as an epithet of the heaven-king Indra.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Erkoç, 'Pre-Manichaean Beliefs of the Uyghurs II: Other Religious Elements', Journal of Religious History 47 (2023)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Xormuzta Täŋri is the Old Uyghur name of the Manichaean First Man, the champion whom the Father of Light sends down at the beginning of the cosmic war. Bearing the name of the Iranian Ohrmazd, borrowed through Sogdian, he arms himself with the Fivefold God of the light-elements and descends to meet the invading darkness. Defeated and devoured, his luminous armour becomes the Living Soul scattered through matter, and he himself is answered from above and raised back toward the realm of light. The Turfan hymnbooks of the Uyghur Manichaean church praise him at length; in the later Buddhist Uyghur texts his name survives as a title of Indra, king of the gods."
+ },
+ {
+  "id": "uyghur_azrua",
+  "name": {
+   "primary": "Äzrua",
+   "alt": [
+    "Azrua",
+    "Äzrua Täŋri",
+    "Zurwān"
+   ],
+   "transliterations": {
+    "ug": "ئەزرۇئا",
+    "otk": "ʾʾzrwʾ",
+    "etymology": "From Sogdian ʾʾzrwʾ, itself from Iranian Zurwān, adopted by the Manichaeans as the name of the supreme Father of Greatness"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "supreme-godhead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ئۇلۇغ ئاتا",
+     "script": "Arabic",
+     "rom": "ulugh ata"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Klimkeit, Gnosis on the Silk Road (1993), on the Father of Greatness"
+     }
+    ]
+   },
+   {
+    "sphereId": "realm-of-light",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "يارۇق ئۇلۇش",
+     "script": "Arabic",
+     "rom": "yaruq uluš"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Old Uyghur Manichaean confession and hymn texts, ed. Clark, Uygur Manichaean Texts vol. 2 (2017)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "evoke-the-primal-man",
+    "name": "calls forth the First Man against darkness",
+    "term": {
+     "value": "قىغىر",
+     "script": "Arabic",
+     "rom": "qïghïr"
+    },
+    "inheritability": "unique",
+    "notes": "When darkness assails the realm of light, the transcendent Father evokes the Mother of Life, who evokes the First Man (Xormuzta), setting the drama of salvation in motion.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Klimkeit, Gnosis on the Silk Road (1993)"
+     }
+    ]
+   },
+   {
+    "id": "reign-in-the-paradise-of-light",
+    "name": "reigns unmoved over the Paradise of Light",
+    "term": {
+     "value": "يارۇق ئوردۇ",
+     "script": "Arabic",
+     "rom": "yaruq ordu"
+    },
+    "inheritability": "none",
+    "notes": "The Father of Greatness dwells serene in the highest Paradise of Light with his aeons, untouched by the conflict he sets his emanations to resolve.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xuāstvānīft (Manichaean confession) and Uyghur hymns, ed. Clark (2017)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Äzrua Täŋri",
+    "translation": "the god Äzrua, Father of Greatness",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Clark, Uygur Manichaean Texts vol. 2 (2017)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "uyghur_xormuzta",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Klimkeit, Gnosis on the Silk Road (1993)"
+     }
+    ],
+    "notes": "The First Man, Xormuzta, is the god called forth from him at the first evocation."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Äzrua is the Old Uyghur name of the Manichaean Father of Greatness, the supreme deity of light, borrowed via Sogdian from Iranian Zurwān.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Clark, Uygur Manichaean Texts vol. 2: Texts (Brepols, 2017)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Klimkeit, Gnosis on the Silk Road (1993)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Äzrua is the supreme god of the Uyghur Manichaean church, the Father of Greatness who reigns over the Paradise of Light. His name, taken through Sogdian from the Iranian Zurwān, marks the syncretism by which the Manichaeans clothed their highest principle in an Iranian dress. Transcendent and serene, Äzrua does not fight the darkness himself; when the powers of the abyss press upon the light he sets the cosmic rescue in motion by evocation, calling forth the Mother of Life and, through her, the First Man Xormuzta who goes down to war. He stands at the apex of the Manichaean hierarchy attested in the Turfan hymns and confessional texts of the West Uyghur kingdom."
+ },
+ {
+  "id": "uyghur_bogu_khan",
+  "name": {
+   "primary": "Bögü Khan",
+   "alt": [
+    "Buqu Khan",
+    "Bughu Khan",
+    "Bögü Qaghan (legendary)",
+    "Buqu Qan"
+   ],
+   "transliterations": {
+    "ug": "بۆگۈ خان",
+    "otk": "𐰋𐰇𐰏𐰇",
+    "etymology": "Old Turkic bögü 'wise, sage, possessing magical wisdom' + qan 'ruler'; 'the sage-king'"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sovereignty-founding",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "خانلىق",
+     "script": "Arabic",
+     "rom": "xanliq"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "ʿAṭā-Malik Juvaynī, Tārīkh-i Jahān-gushā, trans. J. A. Boyle, The History of the World-Conqueror (Manchester: Manchester University Press, 1958), i.55-61"
+     }
+    ]
+   },
+   {
+    "sphereId": "heaven-born-charisma",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "يارۇق",
+     "script": "Arabic",
+     "rom": "yaruq"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Erkoç, 'Pre-Manichaean Beliefs of the Uyghurs II', Journal of Religious History 47 (2023)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "be-born-of-heavenly-light",
+    "name": "is born from a mound quickened by heavenly light",
+    "term": {
+     "value": "يارۇقتىن تۇغۇل",
+     "script": "Arabic",
+     "rom": "yaruqtin tughul"
+    },
+    "inheritability": "none",
+    "notes": "A ray descends from heaven upon a mound between two trees; the swelling mound opens to disclose five infant boys, the youngest of whom is Bögü Khan.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Juvaynī, Tārīkh-i Jahān-gushā, trans. Boyle (1958), i.55-61"
+     }
+    ]
+   },
+   {
+    "id": "receive-heavenly-prophecy",
+    "name": "receives world-dominion by heavenly counsel",
+    "term": {
+     "value": "پەرمان ئال",
+     "script": "Arabic",
+     "rom": "pärman al"
+    },
+    "inheritability": "none",
+    "notes": "A radiant woman visits him in sleep and at the White Mountain (Aq-Taγ) foretells, after a span of years, that he shall subdue the whole world.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Juvaynī, Tārīkh-i Jahān-gushā, trans. Boyle (1958), i.55-61"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Bögü Khan",
+    "translation": "the Sage-King",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roux, La religion des Turcs et des Mongols (1984)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The legend of Bögü / Buqu Khan, born of a light-quickened tree-mound and destined for world-rule, is the Uyghur dynastic origin-myth recorded by Juvaynī and echoed in the Chinese Yuan-shi.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Juvaynī, Tārīkh-i Jahān-gushā, trans. Boyle, The History of the World-Conqueror (1958), i.55-61"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Erkoç, 'Pre-Manichaean Beliefs of the Uyghurs II', Journal of Religious History 47 (2023)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Bögü Khan, the 'Sage-King', is the legendary founder-hero of the Uyghurs. In the origin-myth preserved by the Persian historian Juvaynī, a beam of light falls from heaven upon a mound that has risen between two trees by a river; the mound grows great and, opening, yields five infant boys reared by the people, the youngest and ablest of whom becomes Bögü Khan. A being of light in female form later visits him in his sleep and, over successive meetings at the White Mountain, promises him mastery of the world. The tale fuses the Turkic motifs of the sacred tree and the heaven-sent ray of sovereign light with the memory of the historical Uyghur khagans, and it is echoed in the Chinese account of the Yuan-shi."
+ },
+ {
+  "id": "uyghur_oghuz_khagan",
+  "name": {
+   "primary": "Oghuz Khagan",
+   "alt": [
+    "Oğuz Kağan",
+    "Oghuz Khan",
+    "Uğuz Qaγan"
+   ],
+   "transliterations": {
+    "ug": "ئوغۇزخان",
+    "otk": "𐰆𐰍𐰕:𐰴𐰍𐰣",
+    "etymology": "Oγuz, the eponym of the Oghuz confederation, + qaγan 'supreme ruler'; the name of the legendary Turkic world-conqueror"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "world-conquest",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "چاغىر",
+     "script": "Arabic",
+     "rom": "chaghir"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Uyghur-script Oγuz-nāma (Turfan MS, Bibliothèque nationale, Paris), ed. W. Bang & G. R. Rachmati, Die Legende von Oghuz Qaghan (Berlin: SPAW, 1932)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-eponym",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ئوغۇز",
+     "script": "Arabic",
+     "rom": "oghuz"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Balázs Danka, The 'Pagan' Oγuz-nāmä: A Philological and Linguistic Analysis (Turnhout: Brepols, 2019)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "conquer-the-four-quarters",
+    "name": "subdues the peoples of the four quarters",
+    "term": {
+     "value": "يەرنى ئال",
+     "script": "Arabic",
+     "rom": "yärni al"
+    },
+    "inheritability": "none",
+    "notes": "From his marvelous youth Oghuz campaigns to the horizons, defeating distant kings and dividing the conquered world among his six sons.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oγuz-nāma, ed. Bang & Rachmati (1932)"
+     }
+    ]
+   },
+   {
+    "id": "be-guided-by-the-grey-wolf",
+    "name": "is led to war by the heaven-sent grey wolf",
+    "term": {
+     "value": "كۆك بۆرى",
+     "script": "Arabic",
+     "rom": "kök böri"
+    },
+    "inheritability": "none",
+    "notes": "A great sky-blue wolf issues from a beam of light and goes before Oghuz's army as its guide in every campaign.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oγuz-nāma, ed. Bang & Rachmati (1932)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "uyghur_oghuz_khagan-altun-ya",
+    "kind": "regalia",
+    "name": "the golden bow and three silver arrows",
+    "term": {
+     "value": "ئالتۇن يا",
+     "script": "Arabic",
+     "rom": "altun ya"
+    },
+    "role": "token of the succession divided among the six sons",
+    "notes": "Oghuz finds a golden bow and three silver arrows; he gives the bow to his three elder sons (the Bozok) and the arrows to the three younger (the Üchok), ordering the tribes of the Oghuz.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Oγuz-nāma, ed. Bang & Rachmati (1932)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Oğuz Kağan",
+    "translation": "Oghuz the Khagan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Danka, The 'Pagan' Oγuz-nāmä (2019)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The Oghuz Khan legend survives in its oldest, pre-Islamic form in a Uyghur-script manuscript of the Oγuz-nāma from Turfan, held in Paris.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Uyghur-script Oγuz-nāma, Bibliothèque nationale de France, ed. Bang & Rachmati, Die Legende von Oghuz Qaghan (1932)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Danka, The 'Pagan' Oγuz-nāmä (Brepols, 2019)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Oghuz's miraculous birth, precocious speech, marriages to a light-born and a tree-born maiden, and division of the world among six sons are the core of the epic.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "'Oγuz Khan Narratives', Encyclopaedia Iranica"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Oghuz Khagan is the legendary world-conquering ancestor of the Turks, whose oldest surviving telling is the pre-Islamic Oγuz-nāma written in Uyghur script and preserved among the Turfan finds. Born of a barren mother after long waiting, he speaks at birth, drinks only his mother's milk, and grows in a single day; his blue face, fiery eyes and animal features mark him as more than mortal. He takes to wife a maiden who descends in a shaft of heavenly light and another found within a tree, and by them fathers the six sons Gün (Sun), Ay (Moon), Yulduz (Star), Kök (Sky), Taγ (Mountain) and Deŋiz (Sea). A sky-grey wolf sent from a beam of light guides his armies as he subdues the kingdoms of the world, which he then parts among his sons with a golden bow and three silver arrows, founding the order of the Oghuz tribes."
+ },
+ {
+  "id": "uyghur_albasti",
+  "name": {
+   "primary": "Albasti",
+   "alt": [
+    "Alwasti",
+    "Al Basty",
+    "Al",
+    "Almasti"
+   ],
+   "transliterations": {
+    "ug": "ئالۋاستى",
+    "otk": "al bastï",
+    "etymology": "Turkic al 'red; the demon Al' + bas- 'to press, weigh down'; 'the red one that presses (the sleeper)'"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth-harm",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ئالۋاستى",
+     "script": "Arabic",
+     "rom": "alwasti"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "'Albasty: A Female Demon of Turkic Peoples', Acta Orientalia Academiae Scientiarum Hungaricae 64, no. 2 (2011): 413-424"
+     }
+    ]
+   },
+   {
+    "sphereId": "nightmare-oppression",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "بېسىش",
+     "script": "Arabic",
+     "rom": "bësish"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ildikó Bellér-Hann, Community Matters in Xinjiang 1880-1949: Towards a Historical Anthropology of the Uyghur (Leiden: Brill, 2008)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "afflict-the-new-mother",
+    "name": "assails women in and after childbirth",
+    "term": {
+     "value": "ئانىنى باس",
+     "script": "Arabic",
+     "rom": "anini bas"
+    },
+    "inheritability": "unique",
+    "notes": "The demon attacks the woman in confinement and the newborn, in Turkic accounts snatching the mother's lungs or liver, and must be driven off before it reaches water.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "'Albasty: A Female Demon of Turkic Peoples', Acta Orientalia Hung. 64/2 (2011)"
+     }
+    ]
+   },
+   {
+    "id": "press-the-sleeper",
+    "name": "presses upon the sleeper as nightmare",
+    "term": {
+     "value": "باس",
+     "script": "Arabic",
+     "rom": "bas"
+    },
+    "inheritability": "partial",
+    "notes": "As an incubus she sits upon the sleeping, causing the crushing paralysis and terror of nightmare; she can shift into a yellow woman, goat, fox or dog.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bellér-Hann, Community Matters in Xinjiang (2008)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "sarïq albasti",
+    "translation": "the yellow albasti",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "'Albasty: A Female Demon of Turkic Peoples', Acta Orientalia Hung. 64/2 (2011)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "uyghur_peri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bellér-Hann, Community Matters in Xinjiang (2008), on perixan healers who set peri-familiars against harmful spirits"
+     }
+    ],
+    "notes": "Opposed in the healing rite by the peri-familiars whom the Uyghur perixan summons to expel her from mother and child."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Albasti is the female childbirth-demon and nightmare-spirit of the Turkic peoples, alive in Uyghur folk belief, who harms mothers and infants and can shapeshift.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "'Albasty: A Female Demon of Turkic Peoples', Acta Orientalia Academiae Scientiarum Hungaricae 64, no. 2 (2011)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bellér-Hann, Community Matters in Xinjiang (2008)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Albasti is the dreaded female demon of the birth-chamber, a being of the living Uyghur and wider Turkic folk world. Ugly and wild-haired, with pendulous breasts and long nails, she preys above all on women in and just after childbirth and on their infants, in the older Turkic accounts tearing out the mother's lungs or liver and fleeing to the nearest water. As a night-spirit she is also the incubus who presses upon sleepers, bringing the suffocating paralysis of nightmare, and she takes many shapes, most often that of a yellow woman, a goat, a fox or a dog. Against her the household sets iron, and the Uyghur peri-caller sets the peris."
+ },
+ {
+  "id": "uyghur_peri",
+  "name": {
+   "primary": "Peri",
+   "alt": [
+    "Pari",
+    "Päri",
+    "Peri"
+   ],
+   "transliterations": {
+    "ug": "پەرى",
+    "otk": "parī",
+    "etymology": "From Persian parī 'fairy, winged spirit', an Iranian being taken into Uyghur folk and shamanic belief"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "fairy-spirit",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "پەرى",
+     "script": "Arabic",
+     "rom": "peri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bellér-Hann, Community Matters in Xinjiang (2008)"
+     }
+    ]
+   },
+   {
+    "sphereId": "shamanic-familiar",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "پەرىخان",
+     "script": "Arabic",
+     "rom": "perixan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Rahilä Dawut, 'Shrine Pilgrimage among the Uyghurs', The Silk Road 6, no. 1 (2008); on perixan healing"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "possess-the-healer",
+    "name": "serves the perixan as summoned familiar",
+    "term": {
+     "value": "پەرى چاقىر",
+     "script": "Arabic",
+     "rom": "peri chaqir"
+    },
+    "inheritability": "partial",
+    "notes": "The Uyghur peri-caller (perixan) summons peris into trance to diagnose and drive off the spirits causing sickness, miscarriage and madness.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bellér-Hann, Community Matters in Xinjiang (2008)"
+     }
+    ]
+   },
+   {
+    "id": "abduct-mortals",
+    "name": "seduces and carries off human beings",
+    "term": {
+     "value": "ئېلىپ قاچ",
+     "script": "Arabic",
+     "rom": "ëlip qach"
+    },
+    "inheritability": "none",
+    "notes": "Peris may take an interest in a mortal and spirit them away to their own weddings and revels; contact with them can bring both gift and derangement.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "'On Some Mythical Words in a 19th-Century Uyghur Dictionary', in Turkic-studies scholarship on the Uyghur lexicon"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "aq peri",
+    "translation": "the white (benign) peri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bellér-Hann, Community Matters in Xinjiang (2008)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "uyghur_albasti",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bellér-Hann, Community Matters in Xinjiang (2008)"
+     }
+    ],
+    "notes": "Set by the perixan against the albasti and other malign spirits that afflict mothers and the sick."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The peri is a fairy-spirit of Uyghur folk and shamanic belief, both a healer's familiar summoned by the perixan and a dangerous seducer and abductor of mortals.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Bellér-Hann, Community Matters in Xinjiang 1880-1949 (Brill, 2008)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rahilä Dawut, 'Shrine Pilgrimage among the Uyghurs', The Silk Road 6, no. 1 (2008)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The peri is the fairy-spirit of the Uyghur world, an Iranian being long naturalised in Turkic folk and shamanic belief. Beautiful and volatile, peris move unseen among people; they may fall in love with a mortal and carry them off to their own weddings and feasts, and contact with them brings both inspiration and madness. In Uyghur healing the peri is the familiar of the peri-caller, the perixan, who in drum-driven trance summons benign white peris to name and expel the spirits behind sickness, miscarriage and possession, setting them against the childbirth-demon albasti and the malevolent jinn. Sources distinguish helping white peris from dangerous black ones."
+ },
+ {
+  "id": "uyghur_satuq_bughra_khan",
+  "name": {
+   "primary": "Sultan Satuq Bughra Khan",
+   "alt": [
+    "Satuq Bughra Khan",
+    "Abd al-Karim Satuq Bughra Khan",
+    "Sutuq Bughraxan"
+   ],
+   "transliterations": {
+    "ug": "سۇلتان سۇتۇق بۇغراخان",
+    "otk": "Satuq Bughra Xan",
+    "etymology": "Turkic Satuq (personal name) + bughra 'stud-camel, sire-camel', a Karakhanid royal title, + qan 'khan'"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Uyghur",
+  "primaryTradition": "Uyghur",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "temporal": {
+   "era": "Uyghur traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sainthood-mazar-cult",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "مازار",
+     "script": "Arabic",
+     "rom": "mazar"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Rian Thum, The Sacred Routes of Uyghur History (Harvard University Press, 2014)"
+     }
+    ]
+   },
+   {
+    "sphereId": "conversion-and-holy-war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "غازات",
+     "script": "Arabic",
+     "rom": "ghazat"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tazkirah-i Satuq Bughra Khan (Chagatai hagiography); cf. Jamal Qarshi, Mulḥaqāt al-Ṣurāḥ (13th c.)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "be-called-to-islam",
+    "name": "is summoned to the faith by a marvel of the hunt",
+    "term": {
+     "value": "توشقان",
+     "script": "Arabic",
+     "rom": "toshqan"
+    },
+    "inheritability": "none",
+    "notes": "On the chase the young prince pursues a hare that turns and becomes a holy man, in many tellings Khidr, who calls him to Islam; he converts in secret and later openly.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tazkirah-i Satuq Bughra Khan; summarised in Devin DeWeese, studies on Central Asian Islamization narratives"
+     }
+    ]
+   },
+   {
+    "id": "work-wonders-at-the-tomb",
+    "name": "grants intercession from his shrine",
+    "term": {
+     "value": "كارامەت",
+     "script": "Arabic",
+     "rom": "karamat"
+    },
+    "inheritability": "none",
+    "notes": "As the first Muslim khan and a saint, he is petitioned at his mazar in Artush, a foremost node of the Uyghur pilgrimage network.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thum, The Sacred Routes of Uyghur History (2014)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "uyghur_satuq_bughra_khan-mazar",
+    "kind": "shrine",
+    "name": "the mazar of Satuq Bughra Khan at Artush",
+    "term": {
+     "value": "سۇتۇق بۇغراخان مازارى",
+     "script": "Arabic",
+     "rom": "Sutuq Bughraxan mazari"
+    },
+    "role": "pilgrimage shrine and cult centre",
+    "notes": "The saint's tomb-shrine near Kashgar, a major destination of Uyghur ziyaret; restored in the 1990s and central to the living mazar cult.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Thum, The Sacred Routes of Uyghur History (2014); Rahilä Dawut, 'Shrine Pilgrimage among the Uyghurs' (2008)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Sultan Satuq Bughra Khan Ghazi",
+    "translation": "Sultan Satuq Bughra Khan, the Warrior of the Faith",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tazkirah-i Satuq Bughra Khan"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Satuq Bughra Khan, the first Karakhanid ruler to embrace Islam, is remembered in Uyghur hagiography (tazkirah) as a saint converted by a marvelous hare / Khidr and is venerated at his mazar at Artush.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Tazkirah-i Satuq Bughra Khan (Chagatai); Jamal Qarshi, Mulḥaqāt al-Ṣurāḥ (13th c.)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rian Thum, The Sacred Routes of Uyghur History (Harvard University Press, 2014)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Sultan Satuq Bughra Khan is the founding saint of Islam among the Turks of the Tarim, a semi-historical Karakhanid khan who became the hero of a rich Uyghur hagiographic tradition. In the tazkirah his calling comes on the hunt: he chases a hare that turns to face him and becomes a holy man, in many versions the immortal Khidr, who summons him to the faith. Converting first in secret and then openly, he wrests the throne, wages holy war against his unbelieving kin, and brings his people to Islam. Around his tomb-shrine at Artush near Kashgar grew one of the foremost mazars of the Uyghur pilgrimage landscape, where the saint is still petitioned for intercession, binding the memory of the first Muslim khan to the living cult of the shrines."
+ }
+]
+```

@@ -1,0 +1,912 @@
+Aghul — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "aghul_rag",
+  "name": {
+   "primary": "Rag",
+   "alt": [
+    "Ragh",
+    "Raghʼ",
+    "the Sun"
+   ],
+   "transliterations": {
+    "agx": "рагъ",
+    "ru": "Раг",
+    "lez": "рагъ",
+    "etymology": "From the common South-Daghestanian (Lezgic) sun-word, cognate with Lezgin рагъ and Tabasaran ригъ 'sun'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Aghul",
+  "primaryTradition": "Aghul",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Aghul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "рагъ",
+     "script": "Cyrl",
+     "rom": "raghʼ"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб.: Петербургское Востоковедение, 1999 (астральные культы)."
+     }
+    ]
+   },
+   {
+    "sphereId": "light-and-warmth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "экв",
+     "script": "Cyrl",
+     "rom": "ekv"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана (типология, характеристика, персонификации). Махачкала, 2009."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-daylight",
+    "name": "gives light and warmth to the world",
+    "term": {
+     "value": "экв гуз",
+     "script": "Cyrl",
+     "rom": "ekv guz"
+    },
+    "inheritability": "unique",
+    "notes": "The Sun's daily course brings daylight, warmth and the ripening of the harvest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб., 1999."
+     }
+    ]
+   },
+   {
+    "id": "ripen-crops",
+    "name": "ripens the grain and fruit",
+    "term": {
+     "value": "магьсул еткьуз",
+     "script": "Cyrl",
+     "rom": "mahsul etkʼuz"
+    },
+    "inheritability": "unique",
+    "notes": "Agricultural fertility was tied to the Sun's warmth, and oaths were sworn by her.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "aghul_warz",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992 (легенда о солнце-сестре и месяце-брате)."
+     }
+    ],
+    "notes": "Popular astral legend of the Lezgic peoples casts the Sun and Moon as sister and brother."
+   },
+   {
+    "kind": "enemy",
+    "personId": "aghul_azhdaha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992 (представления о затмениях)."
+     }
+    ],
+    "notes": "At a solar eclipse the dragon azhdaha was believed to seize and swallow the Sun."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Sun, Rag, is a venerated celestial being of Aghul folk religion within the South-Daghestanian astral cult.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб.: Петербургское Востоковедение, 1999."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The Aghul Sun and Moon appear in legend as sister and brother, a motif shared across the Lezgic peoples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "In Aghul folk cosmology the Sun, Rag, is a luminous female being whose daily course brings light, warmth and the ripening of the harvest. Recorded within the wider South-Daghestanian (Lezgic) astral complex, she is venerated together with the Moon, and popular legend casts the two as sister and brother. Reverent gestures greeted sunrise and oaths were sworn by her; her temporary seizure during a solar eclipse was blamed on a devouring dragon, against which villagers raised a protective din. The Aghul sun-word stands as a cognate of Lezgin рагъ."
+ },
+ {
+  "id": "aghul_warz",
+  "name": {
+   "primary": "Warz",
+   "alt": [
+    "Varz",
+    "Waz",
+    "the Moon"
+   ],
+   "transliterations": {
+    "agx": "варз",
+    "ru": "Варз",
+    "lez": "варз",
+    "etymology": "From the Lezgic moon-word, cognate with Lezgin варз and Rutul ваз 'moon, month'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Aghul",
+  "primaryTradition": "Aghul",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Aghul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "варз",
+     "script": "Cyrl",
+     "rom": "warz"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб., 1999 (лунный календарь)."
+     }
+    ]
+   },
+   {
+    "sphereId": "lunar-calendar",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "варзар",
+     "script": "Cyrl",
+     "rom": "warzar"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "order-the-months",
+    "name": "orders the months by waxing and waning",
+    "term": {
+     "value": "варзар кьадагуз",
+     "script": "Cyrl",
+     "rom": "warzar qʼadaguz"
+    },
+    "inheritability": "unique",
+    "notes": "The Moon's phases governed the traditional lunar calendar that ordered farm work and ritual.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб., 1999."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "aghul_rag",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992."
+     }
+    ],
+    "notes": "Brother of the Sun in the shared Lezgic astral legend; the dark markings on his face are explained by folk narrative."
+   },
+   {
+    "kind": "enemy",
+    "personId": "aghul_azhdaha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992."
+     }
+    ],
+    "notes": "At a lunar eclipse the azhdaha was said to swallow the Moon until driven off by communal noise."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Warz, the Moon, is a personified celestial being of Aghul folk religion whose phases ordered the lunar calendar.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб.: Петербургское Востоковедение, 1999."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Warz, the Moon, is the Sun's brother in the astral lore shared across the Lezgic peoples of southern Daghestan. His waxing and waning ordered the traditional lunar calendar that governed agricultural and ritual life, and the dark markings on his face were explained by folk narrative. Like the Sun, the Moon could be swallowed by a dragon at an eclipse, prompting communal noise-making to compel its release."
+ },
+ {
+  "id": "aghul_avdal",
+  "name": {
+   "primary": "Avdal",
+   "alt": [
+    "Abdal",
+    "Avdal-dede"
+   ],
+   "transliterations": {
+    "agx": "Авдал",
+    "ru": "Авдал",
+    "lez": "Абдал",
+    "etymology": "Areal Lezgic name of the master of wild animals; cognate with Lezgin, Rutul and Tsakhur Abdal."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Aghul",
+  "primaryTradition": "Aghul",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Aghul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wild-animals",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "вагьший гьайванар",
+     "script": "Cyrl",
+     "rom": "vahshiy hayvanar"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Гаджиев Г.А. Доисламские верования и обряды народов Нагорного Дагестана. М.: Наука, 1991."
+     }
+    ]
+   },
+   {
+    "sphereId": "hunting",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "гъуьрхъвал",
+     "script": "Cyrl",
+     "rom": "gʼürkʼval"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "herd-wild-game",
+    "name": "herds and protects the wild goats and game",
+    "term": {
+     "value": "жанавурар хуьз",
+     "script": "Cyrl",
+     "rom": "zhanavurar khüz"
+    },
+    "inheritability": "unique",
+    "notes": "Master and herdsman of the wild goats (tur) of the high ranges, milking the hinds and guarding the herds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Гаджиев Г.А. Доисламские верования и обряды народов Нагорного Дагестана. М.: Наука, 1991."
+     }
+    ]
+   },
+   {
+    "id": "grant-hunting-luck",
+    "name": "grants or withholds success in the hunt",
+    "term": {
+     "value": "гъуьрхъван бахт",
+     "script": "Cyrl",
+     "rom": "gʼürkʼvan bakht"
+    },
+    "inheritability": "none",
+    "notes": "Hunters sought his favour and observed taboos; a wasteful kill drew his anger and ended their luck.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "вагьший гьайванрин иеси",
+    "translation": "master of the wild animals",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Гаджиев Г.А. Доисламские верования и обряды народов Нагорного Дагестана. М.: Наука, 1991."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Avdal is the patron of wild animals and hunters, part of the shared hunting cult of the Lezgic peoples including the Aghuls.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Гаджиев Г.А. Доисламские верования и обряды народов Нагорного Дагестана. М.: Наука, 1991."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Avdal is the patron and herdsman of wild animals, above all the wild goats (tur) of the high Daghestani ranges. Hunters sought his favour before the chase and observed taboos over the killing and butchering of game; an excessive or wasteful kill was thought to draw his anger and end a hunter's luck. The figure belongs to the shared hunting cult of the Lezgic peoples, among whom he appears under closely related names."
+ },
+ {
+  "id": "aghul_al",
+  "name": {
+   "primary": "Al",
+   "alt": [
+    "Al-pab",
+    "Albasty",
+    "Hal"
+   ],
+   "transliterations": {
+    "agx": "Ал",
+    "ru": "Ал",
+    "etymology": "Aghul reflex of the pan-Daghestanian childbirth demon Al / Albasty."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Aghul",
+  "primaryTradition": "Aghul",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Aghul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth-danger",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "хендедайрин балагь",
+     "script": "Cyrl",
+     "rom": "khendedayrin balah"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Мифологические персонажи традиционных верований агулов // Вестник Дагестанского научного центра РАН. Махачкала."
+     }
+    ]
+   },
+   {
+    "sphereId": "water-and-rivers",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "яд",
+     "script": "Cyrl",
+     "rom": "yad"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Гаджиев Г.А. Доисламские верования и обряды народов Нагорного Дагестана. М.: Наука, 1991."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "attack-women-in-labour",
+    "name": "attacks women in childbirth and newborns",
+    "term": {
+     "value": "хендедайриз хер гуз",
+     "script": "Cyrl",
+     "rom": "khendedayriz kher guz"
+    },
+    "inheritability": "unique",
+    "notes": "Believed to steal the liver or lungs of a parturient woman and to endanger the infant.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Мифологические персонажи традиционных верований агулов. Махачкала."
+     }
+    ]
+   },
+   {
+    "id": "haunt-water",
+    "name": "haunts rivers and damp places",
+    "term": {
+     "value": "къвед патав",
+     "script": "Cyrl",
+     "rom": "qʼved patav"
+    },
+    "inheritability": "none",
+    "notes": "She dwells by water and is repelled by iron laid near mother and child.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Гаджиев Г.А. Доисламские верования и обряды народов Нагорного Дагестана. М.: Наука, 1991."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "aghul_al-iron",
+    "kind": "apotropaic object",
+    "name": "iron roasting-spit or knife",
+    "term": {
+     "value": "ракьун затӏ",
+     "script": "Cyrl",
+     "rom": "raqʼun zatʼ"
+    },
+    "role": "protection of mother and newborn",
+    "notes": "Iron objects placed beside the lying-in bed to keep the Al from mother and child.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Гаджиев Г.А. Доисламские верования и обряды народов Нагорного Дагестана. М.: Наука, 1991."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Ал паб",
+    "translation": "the Al-woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Мифологические персонажи традиционных верований агулов. Махачкала."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Al is a female demon dangerous to women in childbirth and to newborns, repelled by iron, attested in Aghul traditional belief.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Мифологические персонажи традиционных верований агулов // Вестник Дагестанского научного центра РАН. Махачкала."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Гаджиев Г.А. Доисламские верования и обряды народов Нагорного Дагестана. М.: Наука, 1991."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Al is a malevolent female spirit dangerous to women in childbirth and to newborn infants. Haunting rivers and damp places, she was believed to steal the liver or lungs of a parturient woman; iron objects such as a roasting-spit or knife were laid beside mother and child to keep her off, and the lying-in room was guarded until the danger passed. The belief is common to the peoples of Daghestan, the Aghul form standing within the Lezgic variant of the wider Al and Albasty complex."
+ },
+ {
+  "id": "aghul_azhdaha",
+  "name": {
+   "primary": "Azhdaha",
+   "alt": [
+    "Azhdagha",
+    "Azhdakha"
+   ],
+   "transliterations": {
+    "agx": "аждагьа",
+    "ru": "аждаха",
+    "etymology": "Ultimately from Persian aždahā 'dragon', borrowed across the Caucasus."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Aghul",
+  "primaryTradition": "Aghul",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Aghul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "monsters",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "аждагьа",
+     "script": "Cyrl",
+     "rom": "azhdaha"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992."
+     }
+    ]
+   },
+   {
+    "sphereId": "water-sources",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "булахар",
+     "script": "Cyrl",
+     "rom": "bulakhar"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "swallow-the-luminary",
+    "name": "swallows the Sun or Moon at an eclipse",
+    "term": {
+     "value": "рагъ туьхкьуьн",
+     "script": "Cyrl",
+     "rom": "ragh tükʼün"
+    },
+    "inheritability": "unique",
+    "notes": "The seizure of a luminary during an eclipse was blamed on the dragon, driven off by communal noise.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992."
+     }
+    ]
+   },
+   {
+    "id": "block-the-springs",
+    "name": "coils about springs to withhold water",
+    "term": {
+     "value": "яд кьазвай",
+     "script": "Cyrl",
+     "rom": "yad qʼazvay"
+    },
+    "inheritability": "none",
+    "notes": "In hero-tales it dams the waters until slain or placated with tribute.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "aghul_rag",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992."
+     }
+    ],
+    "notes": "Devours the Sun at solar eclipses."
+   },
+   {
+    "kind": "enemy",
+    "personId": "aghul_warz",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992."
+     }
+    ],
+    "notes": "Devours the Moon at lunar eclipses."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The azhdaha is a serpent-dragon of Aghul and Daghestani legend that blocks water sources and swallows the luminaries at eclipses.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Халидова М.Р. Мифологический и исторический эпос народов Дагестана. Махачкала, 1992."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The azhdaha is a great serpent-dragon of Aghul and neighbouring Daghestani legend. It coils about springs and rivers to withhold water until placated, and at eclipses it is the azhdaha that seizes and swallows the Sun or Moon, released only when the people drive it off with clamour. The monster figures in local hero-tales as the adversary slain to free the waters or the captured luminary."
+ },
+ {
+  "id": "aghul_gudil",
+  "name": {
+   "primary": "Gudil",
+   "alt": [
+    "Gudi",
+    "Peshapay",
+    "Godey"
+   ],
+   "transliterations": {
+    "agx": "Гудил",
+    "ru": "Гудил",
+    "lez": "Пешапай",
+    "etymology": "South-Daghestanian name of the rain personage; Tabasaran Gudi, Lezgin Peshapay."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Aghul",
+  "primaryTradition": "Aghul",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Aghul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "марф",
+     "script": "Cyrl",
+     "rom": "marf"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб., 1999 (обряды вызывания дождя)."
+     }
+    ]
+   },
+   {
+    "sphereId": "drought-relief",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "гъурагьвал",
+     "script": "Cyrl",
+     "rom": "gʼurahval"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "summon-the-rain",
+    "name": "summons rain to break the drought",
+    "term": {
+     "value": "марф эвич1",
+     "script": "Cyrl",
+     "rom": "marf evichʼ"
+    },
+    "inheritability": "unique",
+    "notes": "Personified by a leaf-clad youth led house to house and doused with water while the village chanted for rain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб., 1999."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "aghul_gudil-costume",
+    "kind": "ritual costume",
+    "name": "cloak of leaves and green branches",
+    "term": {
+     "value": "пешерин пекар",
+     "script": "Cyrl",
+     "rom": "pesherin pekar"
+    },
+    "role": "rain-invocation rite",
+    "notes": "Full covering of leaves and branches worn by the youth who embodied the rain personage.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб., 1999."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Gudil is the rain personage of the Aghul drought-breaking rite, a leaf-clad figure paralleled across the Lezgic peoples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб.: Петербургское Востоковедение, 1999."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Gudil is the rain-personage of the Aghul drought-breaking rite, enacted by a youth entirely clad in leaves and green branches who was led from house to house and doused with water while the community chanted for rain. Documented across the Lezgic peoples of southern Daghestan under cognate names — Lezgin Peshapay, Tabasaran Gudi — the figure personifies the sympathetic magic of the agricultural calendar's rain-invocation ceremony."
+ },
+ {
+  "id": "aghul_khidir",
+  "name": {
+   "primary": "Khidir",
+   "alt": [
+    "Khydyr",
+    "Khidir Nebi",
+    "al-Khizr"
+   ],
+   "transliterations": {
+    "agx": "Хидир",
+    "ru": "Хыдыр",
+    "etymology": "From the Islamic figure al-Khiḍr ('the Green One'), assimilated to a South-Daghestanian spring patron."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Aghul",
+  "primaryTradition": "Aghul",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Aghul traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "spring-and-vegetation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "гатфар",
+     "script": "Cyrl",
+     "rom": "gatfar"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб., 1999."
+     }
+    ]
+   },
+   {
+    "sphereId": "abundance-and-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "берекет",
+     "script": "Cyrl",
+     "rom": "bereket"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-the-spring",
+    "name": "brings the renewal of spring and green growth",
+    "term": {
+     "value": "гатфар хкез",
+     "script": "Cyrl",
+     "rom": "gatfar khkez"
+    },
+    "inheritability": "unique",
+    "notes": "His coming at the turn from winter marks the greening of the land and the promise of a fruitful season.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб., 1999."
+     }
+    ]
+   },
+   {
+    "id": "grant-abundance",
+    "name": "blesses households with plenty",
+    "term": {
+     "value": "берекет гуз",
+     "script": "Cyrl",
+     "rom": "bereket guz"
+    },
+    "inheritability": "none",
+    "notes": "Invoked for a plentiful harvest and as a helper of travelers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Хидир Неби",
+    "translation": "Khidir the Prophet",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб., 1999."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Khidir is a folk patron of spring, vegetation and abundance in the South-Daghestanian calendar, syncretising al-Khidr with older seasonal rite.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Булатова А.Г. Сельскохозяйственный календарь и календарные обычаи и обряды народов Дагестана. СПб.: Петербургское Востоковедение, 1999."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Сефербеков Р.И. Пантеон языческих божеств народов Дагестана. Махачкала, 2009."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Khidir is the folk patron of spring, green growth and abundance in the Aghul calendar year, his coming marking the renewal of vegetation and the promise of a fruitful season. Celebrated at the turn from winter with observances shared across Daghestan, he blesses households with plenty and is invoked as a helper of travelers. His cult fuses the Islamic figure of al-Khidr with older South-Daghestanian seasonal rite."
+ }
+]
+```

@@ -1,0 +1,424 @@
+Buduma — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "buduma_kumani",
+  "name": {
+   "primary": "Kumani",
+   "alt": [
+    "Komani",
+    "Kumani"
+   ],
+   "transliterations": {
+    "bdm": "Kumani",
+    "etymology": "Buduma theonym for the supreme creator; sense uncertain in the sources"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buduma",
+  "primaryTradition": "Buduma",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Buduma traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kumani",
+     "script": "Latn",
+     "rom": "Kumani"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "People of the Grasses: Studies on the Buduma — Kumani identified as the world-founding creator"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky-weather",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kumani",
+     "script": "Latn",
+     "rom": "Kumani"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990) — the high god as sender of rain over the lake and its pastures"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-the-world",
+    "name": "founded the world and the lake",
+    "term": {
+     "value": "Kumani",
+     "script": "Latn",
+     "rom": "Kumani"
+    },
+    "inheritability": "unique",
+    "notes": "Set the lake, its islands and its grasses in order at the beginning.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "People of the Grasses: Studies on the Buduma"
+     }
+    ]
+   },
+   {
+    "id": "grant-rain",
+    "name": "grants rain and pasture to the herds",
+    "term": {
+     "value": "Kumani",
+     "script": "Latn",
+     "rom": "Kumani"
+    },
+    "inheritability": "none",
+    "notes": "Provider on whom cattle and fishing livelihoods ultimately depend.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "buduma_alla",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990) — the inherited high god largely identified with the God of Islam"
+     }
+    ],
+    "notes": "Widely equated under folk Islam."
+   },
+   {
+    "kind": "ally",
+    "personId": "buduma_kuri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "People of the Grasses: Studies on the Buduma — the cattle-and-water cult referred ultimately to the creator"
+     }
+    ],
+    "notes": "The sacred herds and the lake's favour are held to be his provision."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kumani is the world-founding creator and high god of the Buduma (Yedina) of Lake Chad",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "People of the Grasses: Studies on the Buduma"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Kumani is the supreme creator and world-founder of the Buduma of the Lake Chad archipelago, the god who set the lake, its islands and its grasses in order and who sends the rains on which the herds and fisheries depend. Beneath a folk-Islamic surface he remains the high god to whom the spirit-appeasing priests ultimately refer, and observers frequently equate him with the God of Islam. Little developed narrative survives: the record preserves his role as maker and provider rather than a cycle of deeds."
+ },
+ {
+  "id": "buduma_alla",
+  "name": {
+   "primary": "Alla",
+   "alt": [
+    "Allah",
+    "Alai"
+   ],
+   "transliterations": {
+    "bdm": "Alla",
+    "etymology": "the Islamic name of God as used by the Muslim Buduma"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buduma",
+  "primaryTradition": "Buduma",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Buduma traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Alla",
+     "script": "Latn",
+     "rom": "Alla"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990) — folk Islam of the lake islanders"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sustain-creation",
+    "name": "sustains and judges creation",
+    "term": {
+     "value": "Alla",
+     "script": "Latn",
+     "rom": "Alla"
+    },
+    "inheritability": "unique",
+    "notes": "Supreme God of the Islamic overlay onto the Buduma high-god cult.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "buduma_kumani",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990)"
+     }
+    ],
+    "notes": "Largely identified with the inherited creator Kumani."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Alla is the name under which the Muslim Buduma address the supreme God, largely identified with the older creator Kumani",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "People of the Grasses: Studies on the Buduma — folk Islam beneath the older water and cattle cults"
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "Alla is the name under which the Muslim Buduma address the supreme God, and ethnographers of the lake islands record that the inherited creator Kumani and the Alla of Islam are largely identified with one another. Whether the two were ever wholly distinct is unclear; observers describe a single high god approached both through the older cult and through the practices of folk Islam that overlie the lake and cattle rites."
+ },
+ {
+  "id": "buduma_sao",
+  "name": {
+   "primary": "Sao",
+   "alt": [
+    "So",
+    "Sao giants"
+   ],
+   "transliterations": {
+    "bdm": "Sao",
+    "etymology": "regional name for the legendary giant first-people of the Lake Chad basin"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buduma",
+  "primaryTradition": "Buduma",
+  "temporal": {
+   "era": "Buduma traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestors",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Sao",
+     "script": "Latn",
+     "rom": "Sao"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jean-Paul Lebeuf & Annie Masson Detourbet, La civilisation du Tchad (Paris: Payot, 1950) — the Sao (So) as legendary giant ancestors of the Chad basin"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "raise-first-settlements",
+    "name": "raised the first settlements and earthworks",
+    "term": {
+     "value": "Sao",
+     "script": "Latn",
+     "rom": "Sao"
+    },
+    "inheritability": "none",
+    "notes": "Credited with the oldest mounds and walled sites of the lake plains.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jean-Paul Lebeuf & Annie Masson Detourbet, La civilisation du Tchad (Payot, 1950)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The Sao (So) are the legendary giant first-people remembered across the Lake Chad basin, including by the island societies neighbouring and overlapping the Buduma",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Jean-Paul Lebeuf & Annie Masson Detourbet, La civilisation du Tchad (Payot, 1950)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990)"
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "The Sao are the legendary giant first-people remembered across the societies of the Lake Chad basin, credited with the region's oldest settlements and earthworks and with a stature and strength beyond that of later inhabitants. The tradition is most fully elaborated among the Kotoko and Kanembu neighbours of the Buduma and is shared, in outline, by the lake's island peoples. Sources treat the Sao collectively rather than as a single individual, and their relation to any real earlier population remains debated."
+ },
+ {
+  "id": "buduma_kuri",
+  "name": {
+   "primary": "Kuri",
+   "alt": [
+    "Kouri",
+    "Baharie"
+   ],
+   "transliterations": {
+    "bdm": "Kuri",
+    "etymology": "name of the amphibious bulbous-horned lake cattle of the Buduma; also a neighbouring island people"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Buduma",
+  "primaryTradition": "Buduma",
+  "temporal": {
+   "era": "Buduma traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "cattle-herding",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kuri",
+     "script": "Latn",
+     "rom": "Kuri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990) — the Kuri cattle at the centre of Buduma island life"
+     }
+    ]
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kuri",
+     "script": "Latn",
+     "rom": "Kuri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "People of the Grasses: Studies on the Buduma — the cattle-and-water cult"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "swim-the-lake",
+    "name": "swims the lake buoyed by great horns",
+    "term": {
+     "value": "Kuri",
+     "script": "Latn",
+     "rom": "Kuri"
+    },
+    "inheritability": "full",
+    "notes": "The enormous bulbous horns act as floats as the herds cross open water between islands and pastures.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "buduma_kuri-horns",
+    "kind": "attribute",
+    "name": "bulbous floating horns",
+    "term": {
+     "value": "Kuri",
+     "script": "Latn",
+     "rom": "Kuri"
+    },
+    "role": "distinguishing feature and buoyancy aid of the sacred herds",
+    "notes": "The oversized horns are the emblem by which the breed and its cult are recognised.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "buduma_kumani",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "People of the Grasses: Studies on the Buduma"
+     }
+    ],
+    "notes": "The herds and the lake's favour are held to be the creator's provision."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Kuri are the amphibious sacred lake cattle at the centre of the Buduma cattle-and-water cult",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Christian Bouquet, Insulaires et riverains du lac Tchad (L'Harmattan, 1990)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "People of the Grasses: Studies on the Buduma"
+     }
+    ],
+    "weight": "low"
+   }
+  ],
+  "notes": "The Kuri are the Buduma's amphibious lake cattle, famous for their enormous bulbous horns, which serve as floats as the herds swim between islands and pastures. They stand at the centre of the Buduma cattle-and-water cult, tended and ritually protected as the tradition's chief wealth and the pledge of the lake's favour. The same name denotes a neighbouring island people, and sources differ on the connection between the herds, that people, and the older strata of the cult."
+ }
+]
+```
