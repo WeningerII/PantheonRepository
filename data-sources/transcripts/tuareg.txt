@@ -1,0 +1,862 @@
+Tuareg — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "tuareg_tin_hinan",
+  "name": {
+   "primary": "Tin Hinan",
+   "alt": [
+    "Tinhinan",
+    "Tin-Hinan",
+    "Ti-n-Hinan"
+   ],
+   "transliterations": {
+    "tmh": "Tin Hinan",
+    "fr": "Tin Hinan",
+    "etymology": "Tamasheq, commonly glossed 'she of the tents' or 'she of the tent-poles', from ti-n ('she of') and a stem for the nomadic tent; sometimes rendered 'mother of us all'"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tuareg",
+  "primaryTradition": "Tuareg",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tuareg traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ma-s n Kel Ahaggar",
+     "script": "Latin",
+     "rom": "ma-s n Kel Ahaggar"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gabriel Camps, 'L'age du tombeau de Tin Hinan, ancetre des Touareg du Hoggar', Antiquites africaines 5 (1971): 65-83"
+     }
+    ]
+   },
+   {
+    "sphereId": "migration",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "aglan (migration)",
+     "script": "Latin",
+     "rom": "aglan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, foundation legend of the Kel Ahaggar, in 'Dictionnaire touareg-francais' (Paris: Imprimerie Nationale, 1951-52); Henri Lhote, 'Les Touaregs du Hoggar' (Paris: Payot, 1944)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-a-noble-line",
+    "name": "found the noble matriline of the Kel Ahaggar",
+    "term": {
+     "value": "Kel Rela",
+     "script": "Latin",
+     "rom": "Kel Rela"
+    },
+    "inheritability": "unique",
+    "notes": "As apical ancestress she transmits nobility (an aristocratic rank) to her descendants through the matriline.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Henri Lhote, 'Les Touaregs du Hoggar' (Paris: Payot, 1944)"
+     }
+    ]
+   },
+   {
+    "id": "lead-a-migration",
+    "name": "lead the migration from the Tafilalt to the Hoggar",
+    "term": {
+     "value": "Tafilalt > Ahaggar",
+     "script": "Latin",
+     "rom": "Tafilalt > Ahaggar"
+    },
+    "inheritability": "none",
+    "notes": "The journey across the desert with her companion Takama is the charter act of the legend.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, recorded Kel Ahaggar tradition, in 'Dictionnaire touareg-francais' (1951-52)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tuareg_tin_hinan-tomb-abalessa",
+    "kind": "monument",
+    "name": "Tomb of Tin Hinan at Abalessa",
+    "term": {
+     "value": "edebni n Abalessa",
+     "script": "Latin",
+     "rom": "edebni n Abalessa"
+    },
+    "role": "monumental drystone funerary chamber overlooking the Oued Tifirt, identified in local memory as the ancestress's grave",
+    "notes": "Opened in 1925-1927, it held the richly adorned skeleton of a woman radiocarbon-dated to the fourth or fifth century, with gold and silver jewellery and a Roman coin of Constantine.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maurice Reygasse, 'Monuments funeraires preislamiques de l'Afrique du Nord' (Paris: Arts et Metiers Graphiques, 1950); Gabriel Camps, Antiquites africaines 5 (1971): 65-83"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "tuareg_kella",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, Kel Ahaggar foundation legend, in 'Dictionnaire touareg-francais' (1951-52)"
+     }
+    ],
+    "notes": "Kella is her daughter, born in the Hoggar."
+   },
+   {
+    "kind": "companion",
+    "personId": "tuareg_takama",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, Kel Ahaggar foundation legend, in 'Dictionnaire touareg-francais' (1951-52)"
+     }
+    ],
+    "notes": "Takama is the maidservant who accompanies her migration."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ma-nnagh",
+    "translation": "our mother / mother of us all",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Henri Lhote, 'Les Touaregs du Hoggar' (Paris: Payot, 1944)"
+     }
+    ]
+   },
+   {
+    "original": "ta-n ehen",
+    "translation": "she of the tent(s)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopedie berbere, s.v. 'Tin Hinan' (Aix-en-Provence: Edisud)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tin Hinan is the legendary ancestress-queen of the Kel Ahaggar, who migrated from the Tafilalt to the Hoggar and mothered the noble Kel Rela.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, foundation legend of the Kel Ahaggar, in 'Dictionnaire touareg-francais' (Paris: Imprimerie Nationale, 1951-52)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Henri Lhote, 'Les Touaregs du Hoggar' (Paris: Payot, 1944)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Her monumental tomb at Abalessa held a richly adorned female skeleton of the fourth-fifth century.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gabriel Camps, 'L'age du tombeau de Tin Hinan', Antiquites africaines 5 (1971): 65-83"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Tin Hinan is the legendary ancestress-queen of the Kel Ahaggar Tuareg, remembered as the woman who journeyed from the Tafilalt oasis of southern Morocco to the Hoggar highlands and became the mother of the noble Kel Rela. Oral tradition, first set down by Charles de Foucauld and later analysed by Henri Lhote and Gabriel Camps, names her maidservant Takama as the companion of her migration and her daughter Kella as the eponym of the ruling lineage. The monumental drystone tomb at Abalessa, opened in 1925-1927, held the richly adorned skeleton of a woman of the fourth or fifth century, which local memory identifies as hers. Sources differ on whether the tomb's occupant is the historical original of the legend or a later noblewoman assimilated to it."
+ },
+ {
+  "id": "tuareg_takama",
+  "name": {
+   "primary": "Takama",
+   "alt": [
+    "Takamat",
+    "Takamet",
+    "Takamma"
+   ],
+   "transliterations": {
+    "tmh": "Takama",
+    "fr": "Takamat",
+    "etymology": "Tamasheq personal name of the servant-ancestress; borne today as the eponym of tributary lineages"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tuareg",
+  "primaryTradition": "Tuareg",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tuareg traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ma-s n imghad",
+     "script": "Latin",
+     "rom": "ma-s n imghad"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, Kel Ahaggar foundation legend, in 'Dictionnaire touareg-francais' (1951-52)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-the-vassal-lines",
+    "name": "found the vassal (imghad) lineages",
+    "term": {
+     "value": "imghad",
+     "script": "Latin",
+     "rom": "imghad"
+    },
+    "inheritability": "unique",
+    "notes": "Her descendants, including the Dag Rali and Ait Loaien, are reckoned tributary to the nobility descended from Tin Hinan.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Henri Lhote, 'Les Touaregs du Hoggar' (Paris: Payot, 1944)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "tuareg_tin_hinan",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, Kel Ahaggar foundation legend, in 'Dictionnaire touareg-francais' (1951-52)"
+     }
+    ],
+    "notes": "Maidservant and travelling companion of Tin Hinan."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "taklit",
+    "translation": "the servant / bondwoman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopedie berbere, s.v. 'Tin Hinan' (Aix-en-Provence: Edisud)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Takama, servant-companion of Tin Hinan, is the ancestress of the vassal (imghad) tribes of the Ahaggar such as the Dag Rali and Ait Loaien.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, foundation legend of the Kel Ahaggar, in 'Dictionnaire touareg-francais' (1951-52)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Henri Lhote, 'Les Touaregs du Hoggar' (Paris: Payot, 1944)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Takama, the servant-companion of Tin Hinan in the Kel Ahaggar foundation legend, travelled with her mistress from the Tafilalt to the Hoggar and there became the ancestress of the vassal (imghad) tribes, among them the Dag Rali and the Ait Loaien. Where Tin Hinan's line is remembered as noble, Takama's is remembered as tributary, and the paired descent of the two women furnishes the traditional charter for the ranked order of Ahaggar society."
+ },
+ {
+  "id": "tuareg_kella",
+  "name": {
+   "primary": "Kella",
+   "alt": [
+    "Kel-Ghela",
+    "Kella n Tin Hinan"
+   ],
+   "transliterations": {
+    "tmh": "Kella",
+    "fr": "Kella",
+    "etymology": "Tamasheq personal name; source of the confederation name Kel Rela / Kel Ghela ('those of Kella')"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tuareg",
+  "primaryTradition": "Tuareg",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "tuareg_tin_hinan"
+  ],
+  "parentRoles": {
+   "tuareg_tin_hinan": "maternal"
+  },
+  "temporal": {
+   "era": "Tuareg traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kel Rela",
+     "script": "Latin",
+     "rom": "Kel Rela"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Henri Lhote, 'Les Touaregs du Hoggar' (Paris: Payot, 1944)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-name-to-the-nobility",
+    "name": "give her name to the ruling Kel Rela",
+    "term": {
+     "value": "Kel Ghela",
+     "script": "Latin",
+     "rom": "Kel Ghela"
+    },
+    "inheritability": "unique",
+    "notes": "The aristocratic drum-group of the Kel Ahaggar traces its name and its nobility to her.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopedie berbere, s.v. 'Kel Ahaggar' (Aix-en-Provence: Edisud)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "tuareg_tin_hinan",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, Kel Ahaggar foundation legend, in 'Dictionnaire touareg-francais' (1951-52)"
+     }
+    ],
+    "notes": "Daughter of Tin Hinan, born in the Hoggar."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kella is the daughter of Tin Hinan and the eponymous ancestress of the noble Kel Rela (Kel Ghela) of the Ahaggar.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Charles de Foucauld, foundation legend of the Kel Ahaggar, in 'Dictionnaire touareg-francais' (1951-52)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Henri Lhote, 'Les Touaregs du Hoggar' (Paris: Payot, 1944)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kella is the daughter born to Tin Hinan in the Hoggar and the eponymous ancestress of the Kel Rela (Kel Ghela), the aristocratic drum-group that dominated the Kel Ahaggar confederation. Through her the nobility trace their descent to Tin Hinan by an unbroken matriline, in keeping with the strongly matrilineal cast of Tuareg genealogical reckoning."
+ },
+ {
+  "id": "tuareg_amerolqis",
+  "name": {
+   "primary": "Amerolqis",
+   "alt": [
+    "Amerkidis",
+    "Amerolqiss",
+    "Amrolqis",
+    "Amerolgis"
+   ],
+   "transliterations": {
+    "tmh": "Amerolqis",
+    "ar": "Amru al-Qays",
+    "etymology": "Tamasheq reflex of the name of the pre-Islamic Arabian poet Imru' al-Qays, reworked in oral tradition into an archetypal poet-genie and civilising hero"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tuareg",
+  "primaryTradition": "Tuareg",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tuareg traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "music",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "imzad",
+     "script": "Latin",
+     "rom": "imzad"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes: Amerolqis heros civilisateur pre-islamique et Aligurran archetype social' (Paris: L'Harmattan, 1979)"
+     }
+    ]
+   },
+   {
+    "sphereId": "poetry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tisiway",
+     "script": "Latin",
+     "rom": "tisiway"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes' (Paris: L'Harmattan, 1979)"
+     }
+    ]
+   },
+   {
+    "sphereId": "language",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tamasheq",
+     "script": "Latin",
+     "rom": "tamasheq"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes' (Paris: L'Harmattan, 1979)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "invent-the-imzad",
+    "name": "invent the single-stringed fiddle to charm women",
+    "term": {
+     "value": "imzad",
+     "script": "Latin",
+     "rom": "imzad"
+    },
+    "inheritability": "unique",
+    "notes": "Fearsomely large, he fashions the imzad and plays it to overcome the fear he inspires in women and to draw them to him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes' (Paris: L'Harmattan, 1979)"
+     }
+    ]
+   },
+   {
+    "id": "institute-poetry-and-eloquence",
+    "name": "institute poetry, eloquence and the forms of social life",
+    "term": {
+     "value": "amghar n tisiway",
+     "script": "Latin",
+     "rom": "amghar n tisiway"
+    },
+    "inheritability": "partial",
+    "notes": "He is credited with founding language, poetic art and the customs of society, standing at the head of the sung-poetry tradition.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Henri Lhote, 'Les Touaregs du Hoggar' (Paris: Payot, 1944); Aghali-Zakara & Drouin (1979)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tuareg_amerolqis-imzad",
+    "kind": "instrument",
+    "name": "Imzad",
+    "term": {
+     "value": "imzad",
+     "script": "Latin",
+     "rom": "imzad"
+    },
+    "role": "single-stringed bowed fiddle, played by women, whose invention is credited to him",
+    "notes": "The imzad's plaintive voice accompanies sung poetry and is felt to touch the spirit-world; UNESCO has inscribed its practices as intangible heritage.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes' (Paris: L'Harmattan, 1979)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "tuareg_kel_essuf",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Spirit Possession and Personhood among the Kel Ewey Tuareg' (Cambridge: Cambridge University Press, 1995); Aghali-Zakara & Drouin (1979)"
+     }
+    ],
+    "notes": "Sources link the archetypal poet-genie to the spirit-world of solitude from which poetic and musical inspiration is felt to come."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "amghar n imedyazen",
+    "translation": "master / chief of the poets",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes' (Paris: L'Harmattan, 1979)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Amerolqis is a pre-Islamic civilising hero and archetypal poet-genie of the Niger Tuareg who instituted language, poetry and social forms and invented the imzad.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes: Amerolqis heros civilisateur pre-islamique et Aligurran archetype social' (Paris: L'Harmattan, 1979)"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "His name derives from that of the pre-Islamic Arabian poet Imru' al-Qays, absorbed into Tamasheq oral tradition.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopedie berbere, s.v. 'Amerolqis' (Aix-en-Provence: Edisud)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Amerolqis is the archetypal poet and civilising hero of the Tuareg of Niger and the Air, a genie-like being whose name preserves that of the pre-Islamic Arabian poet Imru' al-Qays, reworked in Tamasheq oral tradition. He is credited with instituting language, poetry and the forms of social life, and above all with fashioning the imzad, the single-stringed bowed fiddle, which in the tales collected by Mohamed Aghali-Zakara and Jeannine Drouin he invented to overcome the fear his great size inspired in women and to draw them to him with music. As master of eloquence he stands at the head of the poetic tradition and is associated with the spirit-world from which poetic inspiration is felt to come."
+ },
+ {
+  "id": "tuareg_aligurran",
+  "name": {
+   "primary": "Aligurran",
+   "alt": [
+    "Anigouran",
+    "Aligouran",
+    "Aniguran",
+    "Anigwran"
+   ],
+   "transliterations": {
+    "tmh": "Aligurran",
+    "fr": "Aligouran",
+    "etymology": "Tamasheq name of the sage-trickster elder of the uncle-and-nephew tale cycle"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tuareg",
+  "primaryTradition": "Tuareg",
+  "sex": "male",
+  "vitalStatus": "unknown",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tuareg traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tamusni",
+     "script": "Latin",
+     "rom": "tamusni"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Tuareg Concepts of Truth, Lies, and Children's Tales', Oral Tradition 13/2 (1998): 328-355"
+     }
+    ]
+   },
+   {
+    "sphereId": "script",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tifinagh",
+     "script": "Latin",
+     "rom": "tifinagh"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes' (Paris: L'Harmattan, 1979)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "prevail-by-cunning",
+    "name": "prevail by wit rather than weapons",
+    "term": {
+     "value": "tamusni",
+     "script": "Latin",
+     "rom": "tamusni"
+    },
+    "inheritability": "none",
+    "notes": "He never resorts to arms, solving every difficulty through cleverness and foresight.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, Oral Tradition 13/2 (1998): 328-355"
+     }
+    ]
+   },
+   {
+    "id": "complicate-the-script",
+    "name": "elaborate and complicate the Tifinagh script",
+    "term": {
+     "value": "tifinagh",
+     "script": "Latin",
+     "rom": "tifinagh"
+    },
+    "inheritability": "unique",
+    "notes": "Popular belief makes him the author of the Saharan rock engravings and of the now-unreadable ancient Libyco-Berber writing, which he is said to have deliberately obscured to test his nephew.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes' (Paris: L'Harmattan, 1979)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "amghar amusnaw",
+    "translation": "the wise elder",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, Oral Tradition 13/2 (1998): 328-355"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Aligurran (Anigouran) is the wise trickster elder of a widespread Tuareg tale cycle, credited with the Saharan rock engravings and the ancient Tifinagh script, who prevails by cunning and functions as a social archetype.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Mohamed Aghali-Zakara & Jeannine Drouin, 'Traditions touaregues nigeriennes: Amerolqis heros civilisateur pre-islamique et Aligurran archetype social' (Paris: L'Harmattan, 1979)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Tuareg Concepts of Truth, Lies, and Children's Tales', Oral Tradition 13/2 (1998): 328-355"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Aligurran, also called Anigouran, is the sage and trickster of a widespread cycle of Tuareg tales built around an uncle and his gifted nephew. Never resorting to weapons, he prevails by cunning alone, and popular belief makes him the author of the enigmatic engravings and Libyco-Berber inscriptions scattered across the Saharan rock, explaining the now-unreadable ancient Tifinagh as a script he deliberately complicated to test his nephew. He functions in the oral literature as a social archetype, a measure of wit, foresight and the proper conduct of elders."
+ },
+ {
+  "id": "tuareg_kel_essuf",
+  "name": {
+   "primary": "Kel Essuf",
+   "alt": [
+    "Kel Asuf",
+    "Kel Es-suf",
+    "People of Solitude",
+    "People of the Wild"
+   ],
+   "transliterations": {
+    "tmh": "Kel Essuf",
+    "fr": "Kel Essouf",
+    "etymology": "Tamasheq 'people of the essuf' - kel ('people of') and essuf, the empty wild that is at once solitude, wilderness and longing"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tuareg",
+  "primaryTradition": "Tuareg",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tuareg traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wilderness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "essuf",
+     "script": "Latin",
+     "rom": "essuf"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Spirit Possession and Personhood among the Kel Ewey Tuareg' (Cambridge: Cambridge University Press, 1995)"
+     }
+    ]
+   },
+   {
+    "sphereId": "spirit-possession",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tende n goumaten",
+     "script": "Latin",
+     "rom": "tende n goumaten"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Spirit Possession and Personhood among the Kel Ewey Tuareg' (Cambridge University Press, 1995)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "possess-the-solitary",
+    "name": "possess and afflict those who are alone in the wild",
+    "term": {
+     "value": "essuf",
+     "script": "Latin",
+     "rom": "essuf"
+    },
+    "inheritability": "full",
+    "notes": "Encountered in deserted places, darkness and long crossings, they enter the isolated and cause illnesses of the heart and soul.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Spirit Possession and Personhood among the Kel Ewey Tuareg' (Cambridge University Press, 1995)"
+     }
+    ]
+   },
+   {
+    "id": "yield-to-the-drum",
+    "name": "be summoned and appeased by the tende drum and goumaten songs",
+    "term": {
+     "value": "goumaten",
+     "script": "Latin",
+     "rom": "goumaten"
+    },
+    "inheritability": "full",
+    "notes": "They are not exorcised but negotiated with: the mortar-drum and massed women's songs coax them into releasing their host.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Spirit Possession and Personhood among the Kel Ewey Tuareg' (Cambridge University Press, 1995); Johannes Nicolaisen, 'Essai sur la religion et la magie touaregues', Folk 3 (1961): 113-162"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tuareg_kel_essuf-tende",
+    "kind": "instrument",
+    "name": "Tende",
+    "term": {
+     "value": "tende",
+     "script": "Latin",
+     "rom": "tende"
+    },
+    "role": "mortar-drum of wood and stretched goatskin whose goumaten rhythms and songs summon and negotiate with the spirits",
+    "notes": "The tende n goumaten possession-healing rite aims at accommodation with the Kel Essuf rather than their destruction.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Spirit Possession and Personhood among the Kel Ewey Tuareg' (Cambridge University Press, 1995)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "tuareg_amerolqis",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Spirit Possession and Personhood among the Kel Ewey Tuareg' (Cambridge University Press, 1995); Aghali-Zakara & Drouin (1979)"
+     }
+    ],
+    "notes": "The spirits of solitude are the reservoir of poetic and musical inspiration associated with the poet-genie Amerolqis."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Kel Essuf",
+    "translation": "the people of solitude / of the wild",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dominique Casajus, 'La tente dans la solitude: la societe et les morts chez les Touaregs Kel Ferwan' (Cambridge: Cambridge University Press / Paris: MSH, 1987)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Kel Essuf are spirit-beings of the essuf (solitude/wild) who possess the isolated and cause spirit-illness treated in the tende n goumaten possession rite.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Susan J. Rasmussen, 'Spirit Possession and Personhood among the Kel Ewey Tuareg' (Cambridge: Cambridge University Press, 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Johannes Nicolaisen, 'Essai sur la religion et la magie touaregues', Folk 3 (1961): 113-162"
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Essuf denotes solitude, wilderness and longing, and the Kel Essuf are its inhabiting presences, felt around graves and empty spaces.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dominique Casajus, 'La tente dans la solitude' (Cambridge University Press / MSH, 1987)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Kel Essuf, the 'people of solitude' or 'people of the wild', are the spirit-beings that inhabit the essuf - the empty, silent immensity of the desert that is at once solitude, wilderness and longing. Encountered in deserted places, darkness and the disorientation of long crossings, they enter and afflict those who are alone, causing illnesses of the heart and soul. As documented by Susan Rasmussen among the Kel Ewey and by Johannes Nicolaisen and Dominique Casajus elsewhere, they are not exorcised but negotiated with in the tende n goumaten rite, in which a mortar-drum and the massed songs of women summon the spirits and coax them into release rather than combat."
+ }
+]
+```

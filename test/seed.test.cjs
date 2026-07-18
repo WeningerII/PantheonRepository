@@ -145,8 +145,11 @@ test('family-graph parity floors hold (wave-7 enrichment)', () => {
   // figures, and much traditional cosmology catalogues spirit-CLASSES (tambaran
   // grades, shadow-doubles, place-spirits, bush-spirits) that have no genealogy
   // by nature — each pass contributes lone creators, culture-heroes and
-  // impersonal powers, all carrying a cited verified-solitary.json reason.
-  assert.ok(noFam <= 1250, `figures with no family links grew to ${noFam} (ceiling 1250)`);
+  // impersonal powers, all carrying a cited verified-solitary.json reason. The
+  // Saharan / Central-Asian / Caucasus fill added many solitary folk-demons and
+  // spirit-classes (al, azhdaha, div, peri, the Bibi figures) and folk-Islamic
+  // saints, which are kinless by nature — lifting the ceiling again.
+  assert.ok(noFam <= 1450, `figures with no family links grew to ${noFam} (ceiling 1450)`);
 });
 
 test('iconography coverage floor (wave-7g)', () => {

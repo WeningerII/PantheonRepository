@@ -1,0 +1,640 @@
+Zaghawa — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "zaghawa_ido",
+  "name": {
+   "primary": "Ido",
+   "alt": [
+    "Iru",
+    "Ido Beggira"
+   ],
+   "transliterations": {
+    "zag": "Ido",
+    "en": "Iru",
+    "etymology": "Beria 'ido', the high god or heaven; the Chadian Beri dialectal form is Iru. The epithet 'ido beggira' means 'the High God'. After Islamization the name was identified with Allah."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zaghawa",
+  "primaryTradition": "Zaghawa",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Zaghawa traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ido beggira",
+     "script": "Latn",
+     "rom": "ido beggira"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews), on 'ido beggira' as the transcendent high god."
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "creator and master of the universe",
+     "script": "Latn",
+     "rom": "ido"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews): 'the universe has been created and controlled by a high god, known as ido'."
+     }
+    ]
+   },
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "boi be",
+     "script": "Latn",
+     "rom": "boi be"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews): ido is master of this world and of 'boi be', the home of the spirits of the dead and of evil spirits."
+     }
+    ]
+   },
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "karama",
+     "script": "Latn",
+     "rom": "karama"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marie-Jose Tubiana, 'Nature et fonction du sacrifice chez les Beri du Tchad et du Soudan', Systemes de pensee en Afrique noire (1979): Beri sacrifice is directed to securing rain, the fertility of people and herds, and healing."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "govern-the-universe",
+    "name": "creates and governs the whole universe",
+    "term": {
+     "value": "ido beggira",
+     "script": "Latn",
+     "rom": "ido beggira"
+    },
+    "inheritability": "unique",
+    "notes": "Sole transcendent creator and controller of both this world and the world to come.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews)."
+     }
+    ]
+   },
+   {
+    "id": "dwell-in-sacred-heights",
+    "name": "dwells within sacred mountains, rocks and trees",
+    "term": {
+     "value": "manda / gurbo manda / betti manda",
+     "script": "Latn",
+     "rom": "manda, gurbo manda, betti manda"
+    },
+    "inheritability": "unique",
+    "notes": "Reached only indirectly, through intermediary spirits lodged in sacred mountains (manda), rocks (gurbo manda) and trees (betti manda); his own seat was the cave of Ido Ha, 'the mountain of Ido'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews)."
+     }
+    ]
+   },
+   {
+    "id": "receive-sacrifice-for-fertility",
+    "name": "receives sacrifice for rain, fertility and healing",
+    "term": {
+     "value": "karama",
+     "script": "Latn",
+     "rom": "karama"
+    },
+    "inheritability": "none",
+    "notes": "Offerings of milk, butter unctions on sacred trees and rocks, millet and the blood of a bull, goat or lamb were made on his behalf, latterly under the Islamic name karama.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marie-Jose Tubiana, 'Nature et fonction du sacrifice chez les Beri du Tchad et du Soudan', Systemes de pensee en Afrique noire (1979)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "zaghawa_ido-ido-ha",
+    "kind": "cult-place",
+    "name": "Ido Ha",
+    "term": {
+     "value": "Ido Ha",
+     "script": "Latn",
+     "rom": "Ido Ha"
+    },
+    "role": "dwelling of the high god",
+    "notes": "'The mountain of Ido', a cave-crowned height held to be the god's own abode.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews)."
+     }
+    ]
+   },
+   {
+    "id": "zaghawa_ido-ha-manda",
+    "kind": "cult-place",
+    "name": "ha manda",
+    "term": {
+     "value": "ha manda",
+     "script": "Latn",
+     "rom": "ha manda"
+    },
+    "role": "clan sacred mountain",
+    "notes": "Clan sacred mountains that lent their names to Zaghawa territorial divisions; a newly installed chief slaughtered a pregnant camel on his clan's ha manda to legitimise his power, and butter unctions and libations were offered on such heights.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews); Marie-Jose Tubiana, 'Nature et fonction du sacrifice chez les Beri du Tchad et du Soudan' (1979)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "Ido Beggira",
+    "translation": "the High God",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews)."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ido (Beri: Iru), the High God (ido beggira), was the single transcendent creator and supreme deity of pre-Islamic Zaghawa religion, so remote that he could not be approached directly.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Ido was believed to dwell in natural features, above all the cave of Ido Ha, and was reached through intermediary spirits in sacred mountains (manda), rocks (gurbo manda) and trees (betti manda).",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Ido governed both this world and boi be, the abode of the dead and of malevolent spirits, into which human spirits pass at death.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews)."
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "Sacrifice among the Beri, later continued under the Islamic name karama (the killing of a bull, goat or lamb), sought rain, the fertility of people and herds, and healing.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Marie-Jose Tubiana, 'Nature et fonction du sacrifice chez les Beri du Tchad et du Soudan', Systemes de pensee en Afrique noire (1979)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Marie-Jose Tubiana, Survivances preislamiques en pays zaghawa (Paris: Institut d'Ethnologie, 1964)."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "With mass conversion to Maliki Sunni Islam the god Ido was identified with Allah while keeping older attributes, now conceived as omnipresent and nearer to a person than the artery of the neck.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "El Tigani M.-S. Ismail, 'Islam, Traditional Beliefs and Ritual Practices among the Zaghawa of Sudan' (PhD thesis, University of St Andrews)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ido, called Iru in the Chadian Beri dialect and honoured by the epithet Ido Beggira, 'the High God', is the supreme deity of pre-Islamic Zaghawa religion. He is conceived as a single transcendent creator and master of the universe, so remote and invisible that he cannot be addressed directly; worshippers reach him through a chain of intermediary spirits lodged in sacred mountains (manda), rocks (gurbo manda) and trees (betti manda), to which milk libations, unctions of butter and offerings of millet are made. Ido was said to dwell in natural features, above all the cave of Ido Ha, 'the mountain of Ido'. He rules both this world and boi be, the world of the dead, to which human spirits depart and where malevolent spirits gather. Sacrifice among the Beri, latterly continued under the Islamic name karama, was directed ultimately to him, chiefly to obtain rain, the fertility of people and livestock, and healing; clan chiefs were installed by slaughtering a pregnant camel on their sacred mountain. With the community's conversion to Maliki Sunni Islam, thought to have taken hold by the seventeenth century, Ido was identified with Allah while retaining his older character."
+ },
+ {
+  "id": "zaghawa_namarda",
+  "name": {
+   "primary": "Namarda",
+   "alt": [],
+   "transliterations": {
+    "zag": "Namarda",
+    "etymology": "A proper name recorded in the Zaghawa oral-tale repertoire; comparable in form to the widespread Saharan-Islamic tyrant-name Namrud (Nimrod)."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Zaghawa",
+  "primaryTradition": "Zaghawa",
+  "vitalStatus": "unknown",
+  "parentIds": [],
+  "temporal": {
+   "era": "Zaghawa traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wilderness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ogre of the bush",
+     "script": "Latn",
+     "rom": "Namarda"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad: trente-sept contes et deux legendes (Paris: Les Quatre Jeudis, 1961; repr. L'Harmattan, 2004), tale index and comparative notes."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "devour-the-vulnerable",
+    "name": "devours the weak and the wayward",
+    "term": {
+     "value": "devourer",
+     "script": "Latn",
+     "rom": "Namarda"
+    },
+    "inheritability": "none",
+    "notes": "Shares the appetite of the corpus's ogres and horned bush-spirits, whose prey falls above all on children and the imprudent.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Namarda is a named ogre-figure of the Zaghawa oral-tale repertoire collected by Marie-Jose and Joseph Tubiana.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad: trente-sept contes et deux legendes (1961; repr. L'Harmattan, 2004), index of proper names."
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "The Zaghawa tale corpus is peopled by devouring ogres, horned spirits of the bush, many-headed monsters and cruel giants, and by the motif of a tyrannical sultan, powers that are characteristically undone by the cunning of the weak.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004), comparative notes and preface (M. Leiris)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Namarda is one of the named ogre-figures of the Zaghawa oral-tale repertoire recorded by Marie-Jose and Joseph Tubiana. He belongs to the corpus's population of devouring ogres, horned spirits of the bush, many-headed monsters and cruel giants whose hunger falls especially on children, and stands close to the recurrent tale-motif of the tyrant. Throughout this repertoire such an overbearing power is characteristically overcome not by force but by cunning, the weapon of the weak, which the Zaghawa tales rank beside courage as a cardinal virtue."
+ },
+ {
+  "id": "zaghawa_amm_embrere",
+  "name": {
+   "primary": "Amm Embrere",
+   "alt": [
+    "Amm Embereré"
+   ],
+   "transliterations": {
+    "zag": "Amm Embrere",
+    "etymology": "The element 'Amm' reflects the honorific 'Umm' ('mother, dame') widely used to style ogresses in Saharan and Chadian tale-telling."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Zaghawa",
+  "primaryTradition": "Zaghawa",
+  "sex": "female",
+  "vitalStatus": "unknown",
+  "parentIds": [],
+  "temporal": {
+   "era": "Zaghawa traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "wilderness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ogress of the bush",
+     "script": "Latn",
+     "rom": "Amm Embrere"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004), tale index."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "prey-on-children",
+    "name": "preys upon children",
+    "term": {
+     "value": "child-devourer",
+     "script": "Latn",
+     "rom": "Amm Embrere"
+    },
+    "inheritability": "none",
+    "notes": "Female counterpart of the male ogres of the corpus, whose menace is directed at the young.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Amm Embrere is a named female ogre-figure of the Zaghawa oral-tale repertoire collected by Marie-Jose and Joseph Tubiana.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad: trente-sept contes et deux legendes (1961; repr. L'Harmattan, 2004), index of proper names."
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "The corpus's ogres and horned bush-spirits are chiefly concerned with devouring children, a menace overcome in the tales by cunning.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004), comparative notes."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Amm Embrere is a named ogress of the Zaghawa oral-tale repertoire recorded by Marie-Jose and Joseph Tubiana. As a female member of the corpus's company of ogres and horned bush-spirits, her appetite is turned upon children, and her stories share the repertoire's governing pattern in which the weak survive the devourer through wit rather than strength."
+ },
+ {
+  "id": "zaghawa_tedi_kidi",
+  "name": {
+   "primary": "Tedi-Kidi",
+   "alt": [],
+   "transliterations": {
+    "zag": "Tedi-Kidi",
+    "etymology": "A Beria proper name recorded as the eponym of a tale in the Zaghawa repertoire."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Zaghawa",
+  "primaryTradition": "Zaghawa",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Zaghawa traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cunning",
+     "script": "Latn",
+     "rom": "Tedi-Kidi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004), tale index."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "prevail-by-cunning",
+    "name": "prevails through cunning",
+    "term": {
+     "value": "the weapon of the weak",
+     "script": "Latn",
+     "rom": "Tedi-Kidi"
+    },
+    "inheritability": "none",
+    "notes": "Embodies the repertoire's governing ethic, in which cunning is as cardinal a virtue as courage.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Tedi-Kidi is a named figure who gives his name to a tale in the Zaghawa oral repertoire collected by Marie-Jose and Joseph Tubiana.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad: trente-sept contes et deux legendes (1961; repr. L'Harmattan, 2004), index of proper names."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Tedi-Kidi is the eponymous figure of a tale in the Zaghawa oral repertoire recorded by Marie-Jose and Joseph Tubiana. He stands among the human protagonists of a corpus that repeatedly dramatises how the weak overcome ogres, giants and other overbearing powers through cunning, held throughout these tales to be a cardinal virtue beside courage."
+ },
+ {
+  "id": "zaghawa_ba_kawre",
+  "name": {
+   "primary": "Ba-kawre",
+   "alt": [],
+   "transliterations": {
+    "zag": "Ba-kawre",
+    "etymology": "A Beria proper name recorded as the eponym of a tale in the Zaghawa repertoire."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Zaghawa",
+  "primaryTradition": "Zaghawa",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Zaghawa traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "cunning",
+     "script": "Latn",
+     "rom": "Ba-kawre"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004), tale index."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "prevail-by-cunning",
+    "name": "prevails through cunning",
+    "term": {
+     "value": "the weapon of the weak",
+     "script": "Latn",
+     "rom": "Ba-kawre"
+    },
+    "inheritability": "none",
+    "notes": "Like the other human protagonists of the corpus, triumphs by wit over stronger adversaries.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Ba-kawre is a named figure who gives his name to a tale in the Zaghawa oral repertoire collected by Marie-Jose and Joseph Tubiana.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad: trente-sept contes et deux legendes (1961; repr. L'Harmattan, 2004), index of proper names."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ba-kawre is the eponymous figure of a tale in the Zaghawa oral repertoire recorded by Marie-Jose and Joseph Tubiana. He belongs to the corpus's cast of human protagonists whose fortunes turn on cunning rather than force, the quality these tales prize as highly as bravery."
+ },
+ {
+  "id": "zaghawa_ob_zenaba",
+  "name": {
+   "primary": "Ob-Zenaba",
+   "alt": [
+    "Ob Zenaba"
+   ],
+   "transliterations": {
+    "zag": "Ob-Zenaba",
+    "etymology": "The name joins a Beria element to 'Zenaba' (Zaynab); recorded as the eponym of a tale in the Zaghawa repertoire, among the marvellous tales of Oriental origin adapted by Zaghawa tellers."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Zaghawa",
+  "primaryTradition": "Zaghawa",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "Zaghawa traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "oral-tradition",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tale heroine",
+     "script": "Latn",
+     "rom": "Ob-Zenaba"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004), tale index."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "endure-and-prevail",
+    "name": "endures and prevails within the tale",
+    "term": {
+     "value": "heroine",
+     "script": "Latn",
+     "rom": "Ob-Zenaba"
+    },
+    "inheritability": "none",
+    "notes": "A named female protagonist of the adapted marvel-tale strand of the repertoire.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Ob-Zenaba is a named female figure who gives her name to a tale in the Zaghawa oral repertoire collected by Marie-Jose and Joseph Tubiana.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad: trente-sept contes et deux legendes (1961; repr. L'Harmattan, 2004), index of proper names."
+     }
+    ],
+    "weight": "medium"
+   },
+   {
+    "claim": "The Zaghawa repertoire includes marvellous tales of Oriental origin adapted by Zaghawa tellers alongside indigenous animal- and ogre-tales.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "M.-J. & J. Tubiana, Contes zaghawa du Tchad (1961; repr. 2004), comparative notes."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ob-Zenaba is the eponymous heroine of a tale in the Zaghawa oral repertoire recorded by Marie-Jose and Joseph Tubiana. Her name, joining a Beria element to Zaynab, places her among the marvellous tales of Oriental origin that Zaghawa tellers took up and refashioned alongside their own animal fables and ogre stories."
+ }
+]
+```

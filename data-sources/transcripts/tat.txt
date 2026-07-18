@@ -1,0 +1,958 @@
+Tat — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "tat_div",
+  "name": {
+   "primary": "Div",
+   "alt": [
+    "Dev",
+    "Diw"
+   ],
+   "transliterations": {
+    "ttt": "div",
+    "fa": "دیو",
+    "ru": "див",
+    "etymology": "From Old Iranian *daiva- 'demon', cognate with Avestan daēva- and Persian div."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tat",
+  "primaryTradition": "Tat",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tat traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "demons-and-monsters",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "div",
+     "script": "Latn",
+     "rom": "div"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Div' (M. Omidsalar)"
+     }
+    ]
+   },
+   {
+    "sphereId": "wilderness-and-mountains",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "div-e kuh",
+     "script": "Latn",
+     "rom": "div-e kuh"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shift-shape",
+    "name": "shift shape",
+    "term": {
+     "value": "digirdisi",
+     "script": "Latn",
+     "rom": "digirdisi"
+    },
+    "inheritability": "unique",
+    "notes": "The div appears as a whirlwind, as a beast, or in the guise of an ordinary man before revealing its monstrous form.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Div' (M. Omidsalar)"
+     }
+    ]
+   },
+   {
+    "id": "abduct-humans",
+    "name": "abduct and imprison humans",
+    "term": {
+     "value": "odum berdan",
+     "script": "Latn",
+     "rom": "odum berdan"
+    },
+    "inheritability": "none",
+    "notes": "Divs carry off women and travelers to hoard them in remote caves and ruins.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980), s.v. 'Div'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "tat_peri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Pari'; and Tat wonder-tale corpus in A. L. Grünberg, Yazyk severoazerbaydzhanskikh tatov (Leningrad, 1963)"
+     }
+    ],
+    "notes": "In the shared tale corpus the div holds a captive pari whom the hero must free."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The div is the archetypal mountain-dwelling demon of Tat folk belief, a giant of enormous strength inherited from the common Iranian daēva.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Div' (M. Omidsalar)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "In Tat folk belief the div is a monstrous, mountain-dwelling demon of enormous size and strength, continuing the common Iranian daēva. Divs haunt ruins, gorges, and the wild uplands beyond the cultivated village, where they waylay travelers and carry off human women to hoard as captives in caves. They are shape-shifters able to appear as a whirlwind, a beast, or an ordinary man, and are driven off by iron, by fire, and by the name of God. In the wonder-tales shared across the eastern Caucasus the div is the great adversary whom the hero must overcome to free a captive pari."
+ },
+ {
+  "id": "tat_ol",
+  "name": {
+   "primary": "Ol",
+   "alt": [
+    "Al",
+    "Hal",
+    "Dedei-Ol",
+    "Al-arvadi"
+   ],
+   "transliterations": {
+    "ttt": "ol",
+    "fa": "آل",
+    "ru": "ол",
+    "az": "hal",
+    "etymology": "Iranian al 'the childbed demon'; cf. Persian al, Armenian al, Turkic al-basty."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tat",
+  "primaryTradition": "Tat",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tat traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth-and-infancy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ol",
+     "script": "Latn",
+     "rom": "ol"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Āl' (M. Omidsalar)"
+     }
+    ]
+   },
+   {
+    "sphereId": "disease-and-affliction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "dedei-ol",
+     "script": "Latn",
+     "rom": "dedei-ol"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "afflict-childbed",
+    "name": "afflict women in childbed",
+    "term": {
+     "value": "zoi vegunde",
+     "script": "Latn",
+     "rom": "zoi vegunde"
+    },
+    "inheritability": "unique",
+    "notes": "The Ol attacks women in labour and the days of the puerperium, and their newborn infants.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Āl' (M. Omidsalar)"
+     }
+    ]
+   },
+   {
+    "id": "devour-the-liver",
+    "name": "steal and devour the liver",
+    "term": {
+     "value": "jiger berdan",
+     "script": "Latn",
+     "rom": "jiger berdan"
+    },
+    "inheritability": "unique",
+    "notes": "She is said to tear out the mother's liver or lungs and carry them to water, whose contact is fatal to the victim.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980), s.v. 'Al'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tat_ol-iron-ward",
+    "kind": "apotropaic object",
+    "name": "iron ward",
+    "term": {
+     "value": "ohan",
+     "script": "Latn",
+     "rom": "ohan"
+    },
+    "role": "protection of mother and child",
+    "notes": "A knife, skewer, or nail of iron is kept at the bedside of the new mother, together with a burning lamp, since the Ol dreads iron and light; the mother is never left alone.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "epithets": [
+   {
+    "original": "dedei ol",
+    "translation": "Mother Ol",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Ol is the demon of childbirth who attacks parturient women and newborns and steals the liver, warded by iron and light.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Āl' (M. Omidsalar)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Ol (also Al, Hal) is the dreaded demon of childbirth, a hideous female being with disheveled hair, pendulous breasts, and long claws who attacks women in labour and during the puerperium, together with their newborn infants. She is said to tear out and devour the mother's liver or lungs, which she carries to water, contact with water being fatal to the victim. Tat custom guards the new mother by never leaving her alone, by keeping a lamp burning through the night, and by setting iron — a knife, skewer, or nail — at the bedside, for the Ol dreads iron and light. In many Tat villages she is named euphemistically as Dedei-Ol, 'Mother Ol,' a placating address meant to avert her malice."
+ },
+ {
+  "id": "tat_num_negir",
+  "name": {
+   "primary": "Num-negir",
+   "alt": [
+    "Nun-negir",
+    "Numnegir"
+   ],
+   "transliterations": {
+    "ttt": "num-negir",
+    "ru": "нумнегир",
+    "etymology": "The second element continues Iranian gir- 'to seize, catch'; the first is variously connected with num/nun 'bread' (Persian nan)."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tat",
+  "primaryTradition": "Tat",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tat traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "the-household-and-hearth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "num-negir",
+     "script": "Latn",
+     "rom": "num-negir"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Grünberg, Yazyk severoazerbaydzhanskikh tatov (Leningrad, 1963)"
+     }
+    ]
+   },
+   {
+    "sphereId": "night-and-sleep",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "shou",
+     "script": "Latn",
+     "rom": "shou"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "seize-transgressors",
+    "name": "seize transgressors of the home",
+    "term": {
+     "value": "negir",
+     "script": "Latn",
+     "rom": "negir"
+    },
+    "inheritability": "unique",
+    "notes": "The being lays hold of those who defile or waste the sanctities of the household, above all its bread.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Grünberg, Yazyk severoazerbaydzhanskikh tatov (Leningrad, 1963)"
+     }
+    ]
+   },
+   {
+    "id": "press-the-sleeper",
+    "name": "press the sleeper",
+    "term": {
+     "value": "vebasire",
+     "script": "Latn",
+     "rom": "vebasire"
+    },
+    "inheritability": "unique",
+    "notes": "In some accounts it comes by night to seize and stifle the sleeper.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Num-negir is a named household spirit of the Muslim Tats whose name contains the Iranian element gir- 'to seize'; sources describe it variously as a nocturnal presser and as a guardian of the hearth and bread.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Grünberg, Yazyk severoazerbaydzhanskikh tatov (Leningrad, 1963)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Num-negir is a household spirit of the Muslim Tats, counted among the unseen presences of the home. Its name is understood to hold the Iranian element gir- 'to seize, catch,' and the being is conceived as one who lays hold of those who transgress domestic sanctities. Sources differ on its precise character: some accounts describe a nocturnal presser that seizes and stifles the sleeper, others a guardian attached to the hearth and to the bread of the house, punishing the careless who defile or waste it. Like the other domestic spirits it is warded by invocation of God, by iron, and by keeping the hearth in good order."
+ },
+ {
+  "id": "tat_jin",
+  "name": {
+   "primary": "Jin",
+   "alt": [
+    "Jen",
+    "Jinn"
+   ],
+   "transliterations": {
+    "ttt": "jin",
+    "fa": "جن",
+    "ar": "جنّ",
+    "ru": "джин"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tat",
+  "primaryTradition": "Tat",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tat traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "the-household-and-hearth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "jin",
+     "script": "Latn",
+     "rom": "jin"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. F. Chursin, Ocherki po etnologii Kavkaza (Tiflis, 1913)"
+     }
+    ]
+   },
+   {
+    "sphereId": "disease-and-affliction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "jin-girifte",
+     "script": "Latn",
+     "rom": "jin-girifte"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Grünberg, Yazyk severoazerbaydzhanskikh tatov (Leningrad, 1963)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "possess-and-madden",
+    "name": "possess and madden",
+    "term": {
+     "value": "jin zere",
+     "script": "Latn",
+     "rom": "jin zere"
+    },
+    "inheritability": "none",
+    "notes": "One who offends a jin is struck with sickness, paralysis, or madness and is called jin-touched.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. L. Grünberg, Yazyk severoazerbaydzhanskikh tatov (Leningrad, 1963)"
+     }
+    ]
+   },
+   {
+    "id": "haunt-thresholds",
+    "name": "haunt thresholds and unclean places",
+    "term": {
+     "value": "menzil giriftan",
+     "script": "Latn",
+     "rom": "menzil giriftan"
+    },
+    "inheritability": "none",
+    "notes": "Jin gather at thresholds, bathhouses, mills, springs, cemeteries, and rubbish heaps, and are active after dark.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. F. Chursin, Ocherki po etnologii Kavkaza (Tiflis, 1913)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Jin are invisible spirits of the Muslim Tats who haunt liminal and unclean places and afflict those who offend them with sickness and madness.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. F. Chursin, Ocherki po etnologii Kavkaza (Tiflis, 1913)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. L. Grünberg, Yazyk severoazerbaydzhanskikh tatov (Leningrad, 1963)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The jin are the invisible spirits of the Muslim Tats, of the Islamic order of beings made from smokeless fire but thoroughly woven into local folk belief. They gather at thresholds, bathhouses, mills, cemeteries, springs, and rubbish heaps, and are most active after nightfall. Treading on a jin, spilling hot water into their haunts, or fouling their places brings sickness, paralysis, or madness, and a person so struck is said to be jin-touched. They may appear as animals — a cat, a dog, a goat — or as a human stranger, and are driven off by the name of God, by iron, and by salt."
+ },
+ {
+  "id": "tat_peri",
+  "name": {
+   "primary": "Peri",
+   "alt": [
+    "Pari",
+    "Pери"
+   ],
+   "transliterations": {
+    "ttt": "peri",
+    "fa": "پری",
+    "ru": "пери",
+    "etymology": "From Iranian pari, ultimately Avestan pairika-, a class of female spirit."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tat",
+  "primaryTradition": "Tat",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tat traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "beauty-and-seduction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "peri",
+     "script": "Latn",
+     "rom": "peri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Pari'"
+     }
+    ]
+   },
+   {
+    "sphereId": "waters-and-springs",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "peri-i ou",
+     "script": "Latn",
+     "rom": "peri-i ou"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980), s.v. 'Pari'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "enchant-lovers",
+    "name": "enchant and beguile lovers",
+    "term": {
+     "value": "asiq sohten",
+     "script": "Latn",
+     "rom": "asiq sohten"
+    },
+    "inheritability": "unique",
+    "notes": "A peri may love and aid a chosen man or lead him to ruin, sickness, and madness.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Pari'"
+     }
+    ]
+   },
+   {
+    "id": "dwell-by-water",
+    "name": "dwell by springs and rivers",
+    "term": {
+     "value": "sar-i cheshme",
+     "script": "Latn",
+     "rom": "sar-i cheshme"
+    },
+    "inheritability": "none",
+    "notes": "Peris haunt springs, rivers, and remote wild places, bathing and dancing unseen.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980), s.v. 'Pari'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "tat_div",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Pari'; and Tat wonder-tale corpus in A. L. Grünberg, Yazyk severoazerbaydzhanskikh tatov (Leningrad, 1963)"
+     }
+    ],
+    "notes": "In the tale corpus the pari is held captive by a div until freed by the hero."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The peri is a beautiful and ambivalent female spirit of springs and wild places who may love or ruin a man, and who appears in tales as the captive of a div.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Pari'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980), s.v. 'Pari'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The peri is a beautiful female spirit of Tat and wider Iranian folk belief, dwelling by springs, rivers, and remote wild places, where she bathes and dances unseen. She is ambivalent: she may fall in love with a chosen man and aid him, or she may beguile him and lead him to sickness, ruin, and madness. In the wonder-tales the peri is frequently held prisoner by a div, and her rescue is the object of the hero's quest, so that pari and div stand as the paired bright and dark powers of the tale world."
+ },
+ {
+  "id": "tat_shahmar",
+  "name": {
+   "primary": "Shahmar",
+   "alt": [
+    "Shah-mar",
+    "Shamar"
+   ],
+   "transliterations": {
+    "ttt": "sahmar",
+    "fa": "شاه‌مار",
+    "ru": "шахмар",
+    "etymology": "Persian shah-mar 'king-snake, king of snakes'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tat",
+  "primaryTradition": "Tat",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tat traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "serpents",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sahmar",
+     "script": "Latn",
+     "rom": "sahmar"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980), s.v. 'Iranskaya mifologiya'"
+     }
+    ]
+   },
+   {
+    "sphereId": "hidden-treasure",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "genj",
+     "script": "Latn",
+     "rom": "genj"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-snakes",
+    "name": "rule over all snakes",
+    "term": {
+     "value": "podsohi mar",
+     "script": "Latn",
+     "rom": "podsohi mar"
+    },
+    "inheritability": "unique",
+    "notes": "Shahmar is king of serpents and commands the snakes of the earth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980)"
+     }
+    ]
+   },
+   {
+    "id": "grant-animal-speech",
+    "name": "grant the speech of animals",
+    "term": {
+     "value": "zuhun-i heyvun",
+     "script": "Latn",
+     "rom": "zuhun-i heyvun"
+    },
+    "inheritability": "partial",
+    "notes": "One who wins its favour or eats of its flesh gains the understanding of the speech of animals and knowledge of healing herbs.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Shahmar, the king of snakes, is a great serpent of Tat and wider Caucasian-Iranian folklore, keeper of hidden knowledge and treasure, whose favour grants the understanding of animal speech.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "B. V. Miller, Taty, ikh rasselenie i govory (Baku, 1929)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Shahmar, the 'king of snakes,' is a great serpent of Tat and wider Caucasian-Iranian folklore, ruler of all snakes and keeper of hidden knowledge and buried treasure. He is imagined dwelling in caves and beneath the earth, sometimes crested or with a semblance of a human head. One who wins his favour, or who eats of his flesh, gains the understanding of the speech of animals and the secrets of healing herbs. The protective house-serpent, which guards the home and must never be killed, is reckoned among his kind."
+ },
+ {
+  "id": "tat_ajdaha",
+  "name": {
+   "primary": "Ajdaha",
+   "alt": [
+    "Azhdaha",
+    "Ejdeha"
+   ],
+   "transliterations": {
+    "ttt": "ajdaha",
+    "fa": "اژدها",
+    "ru": "аждаха",
+    "etymology": "Persian azhdaha 'dragon', from Avestan azhi dahaka."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Tat",
+  "primaryTradition": "Tat",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tat traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "serpents",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ajdaha",
+     "script": "Latn",
+     "rom": "ajdaha"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Aždahā'"
+     }
+    ]
+   },
+   {
+    "sphereId": "waters-and-springs",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sar-i ou",
+     "script": "Latn",
+     "rom": "sar-i ou"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980), s.v. 'Azhdakha'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hoard-waters",
+    "name": "seize and withhold the waters",
+    "term": {
+     "value": "ou vegirde",
+     "script": "Latn",
+     "rom": "ou vegirde"
+    },
+    "inheritability": "unique",
+    "notes": "The dragon lies upon a spring or river and withholds its water from the people.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Aždahā'"
+     }
+    ]
+   },
+   {
+    "id": "demand-tribute",
+    "name": "demand human tribute",
+    "term": {
+     "value": "qurban xasten",
+     "script": "Latn",
+     "rom": "qurban xasten"
+    },
+    "inheritability": "none",
+    "notes": "In the tales the dragon releases the water only in exchange for a maiden given up in tribute, until a hero slays it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "The ajdaha is the great dragon of Tat and wider Iranian folk-tale, which seizes the waters and exacts maiden-tribute until slain by a hero.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Aždahā'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Mify narodov mira, ed. S. A. Tokarev (Moscow, 1980)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The ajdaha is the monstrous dragon of Tat and wider Iranian folk-tale, a vast serpent continuing the ancient Azhi Dahaka. It coils upon a spring or river and withholds the water from a village, releasing it only in return for a maiden delivered up in yearly tribute. The dragon is at last confronted and slain by a hero, who frees both the waters and the appointed victim. Distinct from the serpent-king Shahmar, the ajdaha is wholly hostile, a devourer without kingship over its kind."
+ },
+ {
+  "id": "tat_xizir",
+  "name": {
+   "primary": "Xizir",
+   "alt": [
+    "Khidr",
+    "Khizr",
+    "Xidir Nebi"
+   ],
+   "transliterations": {
+    "ttt": "Xizir",
+    "fa": "خضر",
+    "ar": "الخضر",
+    "ru": "Хызыр",
+    "etymology": "Arabic al-Khadir 'the Green One'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tat",
+  "primaryTradition": "Tat",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Tat traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "prophecy-and-guidance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Xizir",
+     "script": "Latn",
+     "rom": "Xizir"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Ḵeżr'"
+     }
+    ]
+   },
+   {
+    "sphereId": "fortune-and-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "bereket",
+     "script": "Latn",
+     "rom": "bereket"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. F. Chursin, Ocherki po etnologii Kavkaza (Tiflis, 1913)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rescue-the-lost",
+    "name": "rescue the lost and the endangered",
+    "term": {
+     "value": "koumek",
+     "script": "Latn",
+     "rom": "koumek"
+    },
+    "inheritability": "unique",
+    "notes": "The deathless green wanderer appears without warning to save travelers in peril and to reward the pious.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Ḵeżr'"
+     }
+    ]
+   },
+   {
+    "id": "renew-life",
+    "name": "bring increase and renewal",
+    "term": {
+     "value": "bereket dorden",
+     "script": "Latn",
+     "rom": "bereket dorden"
+    },
+    "inheritability": "unique",
+    "notes": "Having drunk of the water of life, he brings plenty and the greening of the year where he treads.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. F. Chursin, Ocherki po etnologii Kavkaza (Tiflis, 1913)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Xizir (al-Khidr) is the deathless green wanderer venerated by the Muslim Tats, who appears to rescue the endangered and brings increase and renewal.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopaedia Iranica, s.v. 'Ḵeżr'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. F. Chursin, Ocherki po etnologii Kavkaza (Tiflis, 1913)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Xizir, the 'Green One' of Muslim tradition, is the deathless wandering saint venerated among the Tats as among their Caucasian neighbours. Having drunk of the water of life, he roams the earth unseen and appears without warning to rescue travelers lost or endangered, to reward the pious and the hospitable, and to bring plenty where he passes. His coming is bound to the turning of winter toward spring, and his festival, kept in the depth of the cold season, greets the first stirring of the year's renewal. Alone among the beings of Tat folk belief he is wholly benevolent, the bright counterpart to the demons of wilderness and hearth."
+ }
+]
+```

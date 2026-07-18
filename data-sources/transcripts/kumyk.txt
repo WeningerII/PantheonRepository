@@ -1,0 +1,921 @@
+Kumyk — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "kumyk_tengiri",
+  "name": {
+   "primary": "Tengiri",
+   "alt": [
+    "Tengri",
+    "Tängiri"
+   ],
+   "transliterations": {
+    "kum": "Тенгири",
+    "etymology": "Kipchak-Turkic reflex of Proto-Turkic *teŋri 'sky, heaven, sky-god'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kumyk",
+  "primaryTradition": "Kumyk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kumyk traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Кёк",
+     "script": "Cyrillic",
+     "rom": "Kök"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kumyks: Religion and Expressive Culture, in Encyclopedia of World Cultures (Russia and Eurasia/China), everyculture.com."
+     }
+    ]
+   },
+   {
+    "sphereId": "supreme-deity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Тенгири",
+     "script": "Cyrillic",
+     "rom": "Tengiri"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seferbekov, R. I. (2015). Verkhovnye bogi (gromoverzhtsy) narodov Dagestana. Vestnik Instituta IAE, no. 3, pp. 66-..."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-sky",
+    "name": "presides over the heavens",
+    "term": {
+     "value": "кёк",
+     "script": "Cyrillic",
+     "rom": "kök"
+    },
+    "inheritability": "unique",
+    "notes": "As lord of the sky Tengiri stands at the head of the older Turkic layer of Kumyk religion, above the powers of sun, moon, earth and water.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kumyks: Religion and Expressive Culture, in Encyclopedia of World Cultures, everyculture.com."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The pre-Islamic Kumyks venerated the high god Tengiri together with the divinities and spirits of the sun, moon, earth and water.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Kumyks: Religion and Expressive Culture, in Encyclopedia of World Cultures (Russia and Eurasia/China), everyculture.com."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Tengiri is the Kumyk form of the pan-Turkic celestial deity Tengri within the wider Tengrist tradition.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seferbekov, R. I. (2015). Verkhovnye bogi (gromoverzhtsy) narodov Dagestana. Vestnik Instituta IAE, no. 3."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Tengiri is the supreme sky-god of the pre-Islamic Kumyks, the Kipchak-Turkic form of the pan-Turkic celestial deity Tengri. Ethnographers record that the early Kumyk tribes venerated Tengiri together with the divinities and spirits of the sun, the moon, the earth and the water, Tengiri presiding over this loose pantheon as lord of the heavens. With the spread of Sunni Islam between the eighth and twelfth centuries his cult receded, surviving mainly in the divine name, in oath formulae and in scattered folk phrases; scholars treat him as the highest stratum of the older Turkic layer of Kumyk religion."
+ },
+ {
+  "id": "kumyk_zemire",
+  "name": {
+   "primary": "Zemire",
+   "alt": [
+    "Zamire",
+    "Zamura",
+    "Zemir"
+   ],
+   "transliterations": {
+    "kum": "Земире",
+    "etymology": "Recorded personal-name form of the Kumyk rain-goddess; also transmitted as Zamire and Zamura in ritual song."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kumyk",
+  "primaryTradition": "Kumyk",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kumyk traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "янгур",
+     "script": "Cyrillic",
+     "rom": "yangur"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana (kumyki, nogaytsy, terekementsy, azerbaydzhantsy g. Derbenta). Cyberleninka."
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "берекет",
+     "script": "Cyrillic",
+     "rom": "bereket"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seferbekov, R. I. (2015). Verkhovnye bogi (gromoverzhtsy) narodov Dagestana. Vestnik Instituta IAE, no. 3."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-rain",
+    "name": "sends the rain",
+    "term": {
+     "value": "янгур",
+     "script": "Cyrillic",
+     "rom": "yangur"
+    },
+    "inheritability": "partial",
+    "notes": "Invoked in drought by girls processing through the village to make the rain fall.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana. Cyberleninka."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kumyk_zemire-effigy",
+    "kind": "ritual-object",
+    "name": "Zemire figure",
+    "term": {
+     "value": "Земире",
+     "script": "Cyrillic",
+     "rom": "Zemire"
+    },
+    "role": "a decorated effigy carried in procession by girls during the drought rite that bears the goddess's name",
+    "notes": "Central prop of the Zemire rain-calling ceremony.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana. Cyberleninka."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "kumyk_gudurbay",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vestnik Instituta IAE (2015), no. 3, on the linkage of the fertility deity Gudurbay with the rain deity Zemire."
+     }
+    ],
+    "notes": "The harvest power Gudurbay is bound to the rain-goddess Zemire in the agrarian cycle."
+   },
+   {
+    "kind": "ally",
+    "personId": "kumyk_suvanasy",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ethnographic reports that the theonym Murgurek links Zemire with Suvanası as water-element deities; Cyberleninka, Kumyk rain rituals."
+     }
+    ],
+    "notes": "Grouped among the water-element deities; the name Murgurek is reported as a synonym uniting the two."
+   },
+   {
+    "kind": "companion",
+    "personId": "kumyk_sutqatyn",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana. Cyberleninka."
+     }
+    ],
+    "notes": "Paired with Sütqatın in the rain-calling songs."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Zemire is a rain-goddess of the old Kumyk pantheon, imagined as a tall, full-bodied and powerful woman, invoked in the drought rite of the same name performed by girls.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana (kumyki, nogaytsy, terekementsy). Cyberleninka."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Zemire is grouped with Sütqatın, Suvanası and Gudurbay among the water-element deities of the Kumyk pagan pantheon; Murgurek is reported as a synonym.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seferbekov, R. I. (2015). Verkhovnye bogi (gromoverzhtsy) narodov Dagestana. Vestnik Instituta IAE, no. 3."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Zemire (also Zamire, Zamura) is the rain-and-fertility goddess of the old Kumyk pantheon, imagined as a tall, full-figured and powerful woman. Her name survives above all in the drought-time rite Zemire, performed by girls who processed through the village carrying a decorated effigy and singing for the rain to fall. Sources group her with the other water-element powers Sütqatın, Suvanası and Gudurbay, and the theonym Murgurek is reported as a synonym linking Zemire with Suvanası. Scholars regard her as one of the clearest survivals of a pre-Islamic Turkic fertility cult among the Kumyks."
+ },
+ {
+  "id": "kumyk_sutqatyn",
+  "name": {
+   "primary": "Sütqatın",
+   "alt": [
+    "Sutkatyn",
+    "Sütkatïn",
+    "Sutkatan"
+   ],
+   "transliterations": {
+    "kum": "Сюткъатын",
+    "etymology": "Kumyk süt 'milk' + qatın 'woman', hence 'milk-woman'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kumyk",
+  "primaryTradition": "Kumyk",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kumyk traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "янгур",
+     "script": "Cyrillic",
+     "rom": "yangur"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana. Cyberleninka."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "summon-rain",
+    "name": "governs the coming of rain",
+    "term": {
+     "value": "янгур",
+     "script": "Cyrillic",
+     "rom": "yangur"
+    },
+    "inheritability": "partial",
+    "notes": "Named in Kumyk rain-calling songs alongside Zemire; in a rival reading she withholds rain and sends drought.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seferbekov, R. I. (2015). Verkhovnye bogi (gromoverzhtsy) narodov Dagestana. Vestnik Instituta IAE, no. 3."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "kumyk_zemire",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana. Cyberleninka."
+     }
+    ],
+    "notes": "Paired with Zemire in the rain-calling repertoire."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sütqatın is a figure invoked in Kumyk rain-calling songs and counted among the water-element deities of the pantheon.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana (kumyki, nogaytsy, terekementsy). Cyberleninka."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Sources differ on her nature: some class her as a benevolent rain-and-fertility deity, others as an evil spirit of drought and heat.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seferbekov, R. I. (2015). Verkhovnye bogi (gromoverzhtsy) narodov Dagestana. Vestnik Instituta IAE, no. 3."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Sütqatın ('milk-woman', from Kumyk süt 'milk' and qatın 'woman') is a personified power invoked in Kumyk rain-calling songs alongside Zemire. Sources differ on her character: some ethnographers class her among the benevolent water-and-fertility deities who bring rain, while others, drawing on Central Asian parallels, interpret her instead as a malevolent spirit of drought and scorching heat. Either way she belongs to the cluster of named powers that govern rain in Kumyk agrarian ritual."
+ },
+ {
+  "id": "kumyk_suvanasy",
+  "name": {
+   "primary": "Suvanası",
+   "alt": [
+    "Suv-anası",
+    "Suvanasy",
+    "Su anasy"
+   ],
+   "transliterations": {
+    "kum": "Сув анасы",
+    "etymology": "Kumyk suv 'water' + anası 'its mother', hence 'mother of the water'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kumyk",
+  "primaryTradition": "Kumyk",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kumyk traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "сув",
+     "script": "Cyrillic",
+     "rom": "suv"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. In Studies on Iran and the Caucasus (pp. 145-191). Leiden: Brill."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "drown-swimmers",
+    "name": "drowns those who enter the water",
+    "term": {
+     "value": "сув",
+     "script": "Cyrillic",
+     "rom": "suv"
+    },
+    "inheritability": "unique",
+    "notes": "A giant, exceptionally strong river-woman who can harm or kill people who come down to the water.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "kumyk_zemire",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ethnographic reports that the name Murgurek links Suvanası with the rain-goddess Zemire; Cyberleninka, Kumyk rain rituals."
+     }
+    ],
+    "notes": "Counted with Zemire among the water-element deities; the name Murgurek is reported as uniting the two."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Сув анасы",
+    "translation": "Mother of the Water",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Suvanası, 'water mother', is a giant, exceptionally strong woman living in rivers who can harm or kill people coming down to the water.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. In Studies on Iran and the Caucasus (pp. 145-191). Leiden: Brill."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Suvanası is counted among the water-element deities of the Kumyk pantheon alongside Zemire and Sütqatın.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana. Cyberleninka."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Suvanası (Suv-anası, 'mother of the water') is the Kumyk water-spirit, envisaged as a giant, exceptionally strong woman who dwells in rivers. She is dangerous to human beings, able to harm or drown those who come down to the water, and folk narrative warns bathers and washerwomen against her. In the reconstructed pagan pantheon she is counted among the water-element deities together with Zemire and Sütqatın, and she survives in oral tale and cautionary custom into modern times."
+ },
+ {
+  "id": "kumyk_gudurbay",
+  "name": {
+   "primary": "Gudurbay",
+   "alt": [
+    "Güdürbay",
+    "Gudur"
+   ],
+   "transliterations": {
+    "kum": "Гудурбай",
+    "etymology": "Kumyk ritual name of the autumn harvest power; cognate with the Gudil/Gudul/Gudi ritual personages of neighbouring Daghestani and Turkic peoples."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Kumyk",
+  "primaryTradition": "Kumyk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kumyk traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "harvest",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "гьасил",
+     "script": "Cyrillic",
+     "rom": "hasil"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana. Cyberleninka."
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "берекет",
+     "script": "Cyrillic",
+     "rom": "bereket"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Seferbekov, R. I. (2015). Verkhovnye bogi (gromoverzhtsy) narodov Dagestana. Vestnik Instituta IAE, no. 3."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "grant-harvest",
+    "name": "grants a rich harvest",
+    "term": {
+     "value": "берекет",
+     "script": "Cyrillic",
+     "rom": "bereket"
+    },
+    "inheritability": "partial",
+    "notes": "Invoked in the autumn Gudurbay rite by young men going from gate to gate to sing for a rich crop and well-being.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana. Cyberleninka."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "kumyk_zemire",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vestnik Instituta IAE (2015), no. 3, on the linkage of the fertility deity Gudurbay with the rain deity Zemire."
+     }
+    ],
+    "notes": "The harvest power is bound to the rain-goddess Zemire in the agrarian cycle."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Gudurbay is originally a deity of harvest and fertility, invoked in an autumn rite performed by young men during the grain harvest who sing at house gates for a rich crop and well-being.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Obryady vyzova dozhdya v traditsionnoy kul'ture tyurkoyazychnykh narodov Prikaspiyskogo Dagestana (kumyki, nogaytsy, terekementsy). Cyberleninka."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "The Kumyk Gudurbay belongs to a family of ritual personages (Gudil, Gudul, Gudi) shared with neighbouring Daghestani and Turkic peoples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Seferbekov, R. I. (2015). Verkhovnye bogi (gromoverzhtsy) narodov Dagestana. Vestnik Instituta IAE, no. 3."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Gudurbay is a Kumyk deity of harvest and fertility whose name is preserved in the autumn Gudurbay rite, performed by young men during the grain harvest who went from gate to gate singing for a rich crop, well-being and a happy life. Comparative study links the name to a family of ritual personages across Turkic and Daghestani communities - Terekemen and Tabasaran Gudil, Derbent Azerbaijani Gudul, Lak Gudi - associated with rain- and sun-calling. Among the Kumyks the figure is bound specifically to the autumn harvest and to the rain-goddess Zemire."
+ },
+ {
+  "id": "kumyk_albasly_qatyn",
+  "name": {
+   "primary": "Albaslı qatın",
+   "alt": [
+    "Albaslı",
+    "Albasty",
+    "Albaslu"
+   ],
+   "transliterations": {
+    "kum": "Албаслы къатын",
+    "etymology": "Turkic al-basty 'the al (spirit) has pressed/seized' + qatın 'woman', hence 'Albaslı woman'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kumyk",
+  "primaryTradition": "Kumyk",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kumyk traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "demonic-affliction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "албаслы",
+     "script": "Cyrillic",
+     "rom": "albaslı"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "menace-women",
+    "name": "menaces women and travellers",
+    "term": {
+     "value": "албаслы",
+     "script": "Cyrillic",
+     "rom": "albaslı"
+    },
+    "inheritability": "unique",
+    "notes": "A giant demoness who threatens women, especially in childbirth; if mastered she can be forced to serve a household.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "kumyk_temir_tosh",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill (Temir-töš as husband of Albaslı)."
+     }
+    ],
+    "notes": "Temir-töš, 'iron breast', is her husband."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Албаслы къатын",
+    "translation": "the Albaslı woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Albaslı qatın is a giant demonic woman with thick loose hair and long hanging breasts thrown back over her shoulders, a character typical of Caucasian demonology.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. In Studies on Iran and the Caucasus (pp. 145-191). Leiden: Brill."
+     }
+    ],
+    "weight": "high"
+   },
+   {
+    "claim": "Among the Kumyks (as among Karachays, Balkars and Nogays) a tamed Albasty was believed to help with household tasks; her husband is Temir-töš.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Demonologiya narodov Severnogo Kavkaza; and Chirikba (2015), Brill."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Albaslı qatın ('the Albaslı woman') is the most feared demoness of Kumyk folk belief, a giant female with thick, loosely hanging hair and long pendulous breasts thrown back over her shoulders - a form typical of the wider Caucasian and Turkic demonology, cognate with the Albasty of neighbouring peoples. She is a malevolent being who menaces women, above all in childbirth, and lone travellers; folk tradition holds that, if mastered, an Albaslı could be compelled to serve a household. Her husband is the demon Temir-töš."
+ },
+ {
+  "id": "kumyk_temir_tosh",
+  "name": {
+   "primary": "Temir-töš",
+   "alt": [
+    "Temir-tosh",
+    "Temirtöš"
+   ],
+   "transliterations": {
+    "kum": "Темиртёш",
+    "etymology": "Kumyk temir 'iron' + töš 'breast, chest', hence 'iron breast'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kumyk",
+  "primaryTradition": "Kumyk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kumyk traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "demonic-affliction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "темир",
+     "script": "Cyrillic",
+     "rom": "temir"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "haunt-as-demon",
+    "name": "haunts as a malevolent spirit",
+    "term": {
+     "value": "темир",
+     "script": "Cyrillic",
+     "rom": "temir"
+    },
+    "inheritability": "unique",
+    "notes": "Named for his metal chest, he appears chiefly as the counterpart and husband of Albaslı qatın.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "kumyk_albasly_qatyn",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ],
+    "notes": "Sometimes regarded as the husband of Albaslı qatın."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Темиртёш",
+    "translation": "Iron Breast",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Temir-töš ('iron breast') is a male demon sometimes regarded as the husband of the demoness Albaslı qatın.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. In Studies on Iran and the Caucasus (pp. 145-191). Leiden: Brill."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Temir-töš ('iron breast') is a male demon of Kumyk belief, named for his metal chest and regarded in some traditions as the husband of the demoness Albaslı qatın. He belongs to the same stratum of malevolent Caucasian spirits as his wife, and appears chiefly as her counterpart in the paired demonology recorded by ethnographers of the Kumyks."
+ },
+ {
+  "id": "kumyk_bastryq",
+  "name": {
+   "primary": "Bastrıq",
+   "alt": [
+    "Basdırıq",
+    "Bastyryk",
+    "Basdiriq"
+   ],
+   "transliterations": {
+    "kum": "Басдырыкъ",
+    "etymology": "From Kumyk bas- 'to press, to crush, to smother', naming the demon that presses upon sleepers."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kumyk",
+  "primaryTradition": "Kumyk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kumyk traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "nightmare",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "тюш",
+     "script": "Cyrillic",
+     "rom": "tüş"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "smother-sleepers",
+    "name": "smothers people in their sleep",
+    "term": {
+     "value": "басдырыкъ",
+     "script": "Cyrillic",
+     "rom": "basdırıq"
+    },
+    "inheritability": "unique",
+    "notes": "An incubus that presses upon and suffocates sleepers, producing night-terror and paralysis.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. Brill."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The evil incubus bastrıq was believed to smother people during their sleep.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Chirikba, V. A. (2015). Between Christianity and Islam: Heathen Heritage in the Caucasus. In Studies on Iran and the Caucasus (pp. 145-191). Leiden: Brill; and Kumyks: Religion and Expressive Culture, Encyclopedia of World Cultures, everyculture.com."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Bastrıq (also basdırıq) is the nightmare-demon of Kumyk belief, an evil incubus that presses upon and smothers sleepers, causing the sensation of suffocation and paralysis in the night. The name derives from the Kumyk verb bas- 'to press, to crush'. He is one of the household demons of Kumyk folk religion, standing alongside the jinn and shaytans of the Islamic-influenced later stratum."
+ },
+ {
+  "id": "kumyk_ilbis_shaytan",
+  "name": {
+   "primary": "İlbis-şaytan",
+   "alt": [
+    "Ilbis-shaytan",
+    "Ilbis",
+    "Albıs"
+   ],
+   "transliterations": {
+    "kum": "Илбис-шайтан",
+    "etymology": "Turkic ilbis/albıs 'evil spirit' compounded with Arabic shaytan 'devil'."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Kumyk",
+  "primaryTradition": "Kumyk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "Kumyk traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "temptation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "шайтан",
+     "script": "Cyrillic",
+     "rom": "şaytan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kumyks: Religion and Expressive Culture, in Encyclopedia of World Cultures, everyculture.com."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sow-discord",
+    "name": "tempts and sows discord",
+    "term": {
+     "value": "шайтан",
+     "script": "Cyrillic",
+     "rom": "şaytan"
+    },
+    "inheritability": "unique",
+    "notes": "A tempter-demon of the Islamic-influenced layer of Kumyk demonology, grouped with the jinn and shaytans.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kumyks: Religion and Expressive Culture, in Encyclopedia of World Cultures, everyculture.com."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Among the malignant spirits of Kumyk belief are the jinn and shaytans and the demon ilbis-shaytan.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Kumyks: Religion and Expressive Culture, in Encyclopedia of World Cultures (Russia and Eurasia/China), everyculture.com; and Chirikba (2015), Brill."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "İlbis-şaytan is a demon of Kumyk folk belief, his name combining the Turkic ilbis/albıs 'evil spirit' with the Arabic shaytan 'devil'. He belongs to the Islamic-influenced layer of Kumyk demonology together with the jinn and the shaytans, the stratum into which older Turkic malevolent spirits were reinterpreted, and figures as a tempter and sower of discord in popular narrative."
+ }
+]
+```

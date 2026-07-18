@@ -1,0 +1,937 @@
+Shor — figures authored from the cited ethnographic literature.
+
+```json
+[
+ {
+  "id": "shor_ulgen",
+  "name": {
+   "primary": "Ülgen",
+   "alt": [
+    "Ulgen",
+    "Bay-Ülgen",
+    "Kaira-Kan",
+    "Kudai",
+    "Ülgön"
+   ],
+   "transliterations": {
+    "cjs": "Ӱлген",
+    "ru": "Ульгень",
+    "etymology": "Commonly derived from Old Turkic ülüg 'portion, share, allotted destiny', casting the sky-god as the apportioner of fate and abundance."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Shor",
+  "primaryTradition": "Shor",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Shor traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "sky-and-creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "теертпек чер",
+     "script": "Cyrillic",
+     "rom": "Ülgen çer"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "L. P. Potapov, Ocherki po istorii Shorii, Moscow-Leningrad: Izd. AN SSSR, 1936, on the tripartite cosmos Ülgen-çer / Orty-çer / Aina-çer."
+     }
+    ]
+   },
+   {
+    "sphereId": "benevolence-and-mercy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "чакшы",
+     "script": "Cyrillic",
+     "rom": "çakşy"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad: Izd. AN SSSR, 1924, on Ülgen as lord of the upper world and master of benevolent spirits in the Altai-Sayan complex."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "create-the-world",
+    "name": "creates the earth and living things",
+    "term": {
+     "value": "чер пӱткен",
+     "script": "Cyrillic",
+     "rom": "çer pütken"
+    },
+    "inheritability": "unique",
+    "notes": "In the Shor cosmogony Ülgen shapes the earth from soil raised out of the primal water, and forms mountains and terrain when his adversary spits out hoarded soil.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "V. I. Verbitskii, Altaiskie inorodtsy, Moscow, 1893, recording the earth-diver creation narrative of the Altai-Sayan Turks."
+     }
+    ]
+   },
+   {
+    "id": "dwell-in-highest-heaven",
+    "name": "dwells in the highest stratum of the sky",
+    "term": {
+     "value": "тегри",
+     "script": "Cyrillic",
+     "rom": "tegri"
+    },
+    "inheritability": "none",
+    "notes": "Shor and Altai cosmogonies place Ülgen's throne in the loftiest layer of the heavens, from which he oversees the benevolent spirits.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "shor_erlik",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "V. I. Verbitskii, Altaiskie inorodtsy, Moscow, 1893, on Erlik as the younger brother and adversary of Ülgen."
+     }
+    ],
+    "notes": "Sources present Erlik as Ülgen's younger brother, his collaborator in creation and thereafter his cosmic antagonist."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Пай Ӱлген",
+    "translation": "Rich Ülgen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924."
+     }
+    ]
+   },
+   {
+    "original": "Кайра Кан",
+    "translation": "Merciful Khan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "V. I. Verbitskii, Altaiskie inorodtsy, Moscow, 1893, on the invocation Kaira-Kan for the supreme creator."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ülgen is the supreme benevolent creator and sky deity, lord of the upper world (Ülgen-çer) and master of the good spirits, opposed to Erlik of the lower world.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "L. P. Potapov, Ocherki po istorii Shorii, Moscow-Leningrad, 1936."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Ülgen is the supreme benevolent deity of Shor religion, creator of the earth and of living beings and lord of the uppermost of the three worlds, the Ülgen-çer or upper world. He is the master of the good spirits and the patron of humankind, invoked under the honorifics Bay-Ülgen ('Rich Ülgen') and Kaira-Kan ('Merciful Khan'), the latter sometimes treated as an independent high creator. In the widely recorded creation narrative he raises soil from the primal waters to shape the world, and the broken, mountainous relief of Shoria is explained as the residue of soil hoarded and then spat out by his brother and adversary Erlik. Sources differ on whether Kaira-Kan names Ülgen himself or a still higher creator standing above him."
+ },
+ {
+  "id": "shor_erlik",
+  "name": {
+   "primary": "Erlik",
+   "alt": [
+    "Erlik-Khan",
+    "Erlik-Kan",
+    "Aina",
+    "Aina-Kan"
+   ],
+   "transliterations": {
+    "cjs": "Эрлик",
+    "ru": "Эрлик",
+    "etymology": "Generally traced to Old Turkic erklig 'the mighty, the powerful one', an epithet-turned-name of the lord of the dead."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Shor",
+  "primaryTradition": "Shor",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Shor traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "death-and-underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Айна чер",
+     "script": "Cyrillic",
+     "rom": "Aina çer"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "L. P. Potapov, Ocherki po istorii Shorii, Moscow-Leningrad, 1936, on Aina-çer, the lower world of the dead."
+     }
+    ]
+   },
+   {
+    "sphereId": "disease-and-misfortune",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "аза",
+     "script": "Cyrillic",
+     "rom": "aza"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924, on Erlik as sender of sickness who demands sacrifice."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-lower-world",
+    "name": "rules the lower world and its evil spirits",
+    "term": {
+     "value": "айналарды пашкар",
+     "script": "Cyrillic",
+     "rom": "ainalardy paşkar"
+    },
+    "inheritability": "none",
+    "notes": "Erlik governs the Aina-çer, the sunless lower world, commanding the malevolent aina spirits that afflict the living.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "L. P. Potapov, Ocherki po istorii Shorii, Moscow-Leningrad, 1936."
+     }
+    ]
+   },
+   {
+    "id": "receive-the-dead",
+    "name": "receives the souls of the dead",
+    "term": {
+     "value": "ӧлген кижи алар",
+     "script": "Cyrillic",
+     "rom": "ölgen kiji alar"
+    },
+    "inheritability": "none",
+    "notes": "With Ülgen he determines the fate of the people of the middle world, taking the dead into his realm.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "shor_ulgen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "V. I. Verbitskii, Altaiskie inorodtsy, Moscow, 1893."
+     }
+    ],
+    "notes": "Presented as the younger brother of Ülgen who helps raise the earth and then becomes his adversary."
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Эрлик Кан",
+    "translation": "Erlik the Khan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Erlik is the lord of the lower world (Aina-çer), master of the evil spirits, sender of disease and receiver of the dead, and the cosmic antagonist of Ülgen.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "L. P. Potapov, Ocherki po istorii Shorii, Moscow-Leningrad, 1936."
+     },
+     {
+      "kind": "secondary",
+      "reference": "V. I. Verbitskii, Altaiskie inorodtsy, Moscow, 1893."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Erlik is the ruler of the lower world in Shor religion, the sunless Aina-çer, and master of the malevolent aina spirits. Known also simply as Aina, he is the sender of sickness and misfortune and the receiver of the souls of the dead, and together with Ülgen he fixes the destinies of the people of the middle world. The tradition presents him as Ülgen's younger brother who assisted in raising the earth from the primal water but was cast down after seeking a domain of his own; his hoarded and spat-out soil is said to have produced the mountains of Shoria. Shamans were understood to journey to Erlik's realm to negotiate over the sick."
+ },
+ {
+  "id": "shor_umai",
+  "name": {
+   "primary": "Umai",
+   "alt": [
+    "Umay",
+    "May-ene",
+    "Mai-ene",
+    "Umai-ene"
+   ],
+   "transliterations": {
+    "cjs": "Умай",
+    "ru": "Умай",
+    "etymology": "From Turkic umay 'placenta, afterbirth, caul', the protective spirit understood to inhere in the newborn."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Shor",
+  "primaryTradition": "Shor",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Shor traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "childbirth-and-infancy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Умай",
+     "script": "Cyrillic",
+     "rom": "Umai"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "L. P. Potapov, 'Umai — bozhestvo drevnikh tiurkov v svete etnograficheskikh dannykh', in Tiurkologicheskii sbornik 1972, Moscow: Nauka, 1973."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-childs-soul",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "кут",
+     "script": "Cyrillic",
+     "rom": "kut"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei: kompleksnoe issledovanie teleutskikh i shorskikh materialov, Moscow: Nauka, 2005."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-the-infant",
+    "name": "guards infants and nursing children",
+    "term": {
+     "value": "паланы кӧргӱзер",
+     "script": "Cyrillic",
+     "rom": "palany körgüzer"
+    },
+    "inheritability": "none",
+    "notes": "Umai stays beside the child from birth; her departure was believed to bring sickness and death, so her presence was sought until the child walked and spoke.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "L. P. Potapov, 'Umai — bozhestvo drevnikh tiurkov', Tiurkologicheskii sbornik 1972, Moscow, 1973."
+     }
+    ]
+   },
+   {
+    "id": "aid-childbirth",
+    "name": "aids women in childbirth",
+    "term": {
+     "value": "чаш паланы перер",
+     "script": "Cyrillic",
+     "rom": "çaş palany perer"
+    },
+    "inheritability": "none",
+    "notes": "As a mother-goddess of fertility she assists at birth and bestows children.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei, Moscow, 2005."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ак Умай",
+    "translation": "White Umai",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "L. P. Potapov, 'Umai — bozhestvo drevnikh tiurkov', Tiurkologicheskii sbornik 1972, Moscow, 1973."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Umai is the female protective deity of infants and childbirth; among the Shor the term also denotes the newborn's caul and the child-soul that Umai safeguards until the child is weaned.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "L. P. Potapov, 'Umai — bozhestvo drevnikh tiurkov v svete etnograficheskikh dannykh', Tiurkologicheskii sbornik 1972, Moscow, 1973."
+     },
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei, Moscow, 2005."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Umai, also called May-ene, is the mother-goddess who protects infants and women in childbirth. Among the Shor and neighbouring Khakas the same word names the newborn's caul and the fragile child-soul that Umai keeps beside the infant; should she withdraw, sickness or death was thought to follow, and her presence was invoked until the child could walk and speak freely, after which the soul was reckoned as kut. She belongs to the benevolent powers of the upper world and is addressed as Ak Umai, 'White Umai', in blessing."
+ },
+ {
+  "id": "shor_ot_ene",
+  "name": {
+   "primary": "Ot-ene",
+   "alt": [
+    "Od-ene",
+    "Ot-ana",
+    "Ot Eezi"
+   ],
+   "transliterations": {
+    "cjs": "От-эне",
+    "ru": "От-эне",
+    "etymology": "Shor ot 'fire' + ene 'mother' — the Fire-Mother who inhabits the domestic hearth."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Shor",
+  "primaryTradition": "Shor",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Shor traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "hearth-and-fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "от",
+     "script": "Cyrillic",
+     "rom": "ot"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924, on the cult of the fire-mother Ot-ene."
+     }
+    ]
+   },
+   {
+    "sphereId": "household-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "от ээзи",
+     "script": "Cyrillic",
+     "rom": "ot eezi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "N. P. Dyrenkova, Shorskii fol'klor, Moscow-Leningrad: Izd. AN SSSR, 1940, on hearth propitiation."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "inhabit-the-hearth",
+    "name": "inhabits and animates the household fire",
+    "term": {
+     "value": "отта чурта",
+     "script": "Cyrillic",
+     "rom": "otta çurta"
+    },
+    "inheritability": "none",
+    "notes": "The fire-mother is the living spirit of the hearth, fed with the first morsels of food and fat at meals.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924."
+     }
+    ]
+   },
+   {
+    "id": "purify-by-fire",
+    "name": "purifies people and dwellings",
+    "term": {
+     "value": "арыг эдер",
+     "script": "Cyrillic",
+     "rom": "aryg eder"
+    },
+    "inheritability": "none",
+    "notes": "Fire cleanses and wards off evil aina spirits; offerings to Ot-ene secure the household's welfare.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "N. P. Dyrenkova, Shorskii fol'klor, Moscow-Leningrad, 1940."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "От ана",
+    "translation": "Fire Mother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ot-ene, the Fire-Mother, is the protective spirit of the domestic hearth, propitiated with food offerings and credited with purification and household protection.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. V. Anokhin, Materialy po shamanstvu u altaitsev, Leningrad, 1924."
+     },
+     {
+      "kind": "secondary",
+      "reference": "N. P. Dyrenkova, Shorskii fol'klor, Moscow-Leningrad, 1940."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Ot-ene, the Fire-Mother, is the tutelary spirit of the household hearth. She is fed the first fat and morsels of every meal, and offerings to her secure the family's prosperity and health. As the living power of the fire she purifies people, food and dwellings and repels the malevolent aina spirits; mistreatment of the hearth-fire was believed to anger her and bring misfortune. Her cult is part of the wider Sayan-Altai reverence for domestic fire and stands alongside the taiga, mountain and water masters (çe eezi) whom the Shor propitiate in the middle world."
+ },
+ {
+  "id": "shor_kan_pergen",
+  "name": {
+   "primary": "Kan-Pergen",
+   "alt": [
+    "Kan-Bergen",
+    "Qan-Pergen"
+   ],
+   "transliterations": {
+    "cjs": "Қан-Перген",
+    "ru": "Кан-Перген",
+    "etymology": "kan 'khan, sovereign' with the heroic name-element pergen; roughly 'the sovereign champion'."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Shor",
+  "primaryTradition": "Shor",
+  "sex": "male",
+  "vitalStatus": "mortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Shor traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-valor",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "алып",
+     "script": "Cyrillic",
+     "rom": "alyp"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. I. Chudoyakov (ed.), Shorskie geroicheskie skazaniia: Kan-Pergen; Altyn-Syryk, Moscow-Novosibirsk: Nauka, 1998 (Pamiatniki fol'klora narodov Sibiri i Dal'nego Vostoka)."
+     }
+    ]
+   },
+   {
+    "sphereId": "defence-of-the-people",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "чер-суг",
+     "script": "Cyrillic",
+     "rom": "çer-sug"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei, Moscow: Nauka, 2005, on the Shor heroic epic (alyptyg nybak)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ride-the-heroic-steed",
+    "name": "rides the miraculous heroic steed",
+    "term": {
+     "value": "ат мӱнер",
+     "script": "Cyrillic",
+     "rom": "at müner"
+    },
+    "inheritability": "partial",
+    "notes": "The alp is inseparable from his talking, prescient warhorse, whose name and colour are announced in the epic's title.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. I. Chudoyakov (ed.), Shorskie geroicheskie skazaniia: Kan-Pergen; Altyn-Syryk, Moscow-Novosibirsk: Nauka, 1998."
+     }
+    ]
+   },
+   {
+    "id": "battle-monsters",
+    "name": "battles monstrous invaders and rival alyps",
+    "term": {
+     "value": "чаа эдер",
+     "script": "Cyrillic",
+     "rom": "çaa eder"
+    },
+    "inheritability": "none",
+    "notes": "Kan-Pergen defends his land against monstrous enemies and undertakes the quest for a destined bride, the staple plot of the alyptyg nybak.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. P. Dyrenkova, Shorskii fol'klor, Moscow-Leningrad: Izd. AN SSSR, 1940."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "алып Қан-Перген",
+    "translation": "Kan-Pergen the hero",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. I. Chudoyakov (ed.), Shorskie geroicheskie skazaniia, Moscow-Novosibirsk: Nauka, 1998."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kan-Pergen is the title hero of a major Shor heroic tale (alyptyg nybak), a superhuman alp who defends his land, battles monstrous enemies and quests for a bride, published in the academic edition of Shor heroic epics.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "A. I. Chudoyakov (ed.), Shorskie geroicheskie skazaniia: Kan-Pergen; Altyn-Syryk, Moscow-Novosibirsk: Nauka, 1998."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Kan-Pergen is the hero of one of the best-known Shor heroic tales, the alyptyg nybak sung by the kaichi to the accompaniment of the two-stringed komus. A superhuman alp of the middle world, he defends his people and land against monstrous invaders and rival heroes and undertakes the quest for a destined bride that structures the genre. Like all Shor epic heroes he is bound to a prescient, speaking warhorse whose name and colour are declared in the tale's own title. His epic was recorded from Shor singers and issued in the scholarly series of folklore monuments of the peoples of Siberia."
+ },
+ {
+  "id": "shor_altyn_syryk",
+  "name": {
+   "primary": "Altyn-Syryk",
+   "alt": [
+    "Altyn-Syrik",
+    "Altyn-Syryq"
+   ],
+   "transliterations": {
+    "cjs": "Алтын-Сырық",
+    "ru": "Алтын-Сырык",
+    "etymology": "altyn 'golden' + syryk 'pole, pillar'; 'Golden Pillar', an honorific hero-name."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Shor",
+  "primaryTradition": "Shor",
+  "sex": "male",
+  "vitalStatus": "mortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Shor traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-valor",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "алып",
+     "script": "Cyrillic",
+     "rom": "alyp"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. I. Chudoyakov (ed.), Shorskie geroicheskie skazaniia: Kan-Pergen; Altyn-Syryk, Moscow-Novosibirsk: Nauka, 1998."
+     }
+    ]
+   },
+   {
+    "sphereId": "epic-quest",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ныбак",
+     "script": "Cyrillic",
+     "rom": "nybak"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei, Moscow: Nauka, 2005."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "undertake-the-heroic-quest",
+    "name": "undertakes the heroic quest and marriage-suit",
+    "term": {
+     "value": "чол алар",
+     "script": "Cyrillic",
+     "rom": "çol alar"
+    },
+    "inheritability": "none",
+    "notes": "Altyn-Syryk journeys across the epic landscape in pursuit of a bride and against enemy heroes, in the pattern of the Shor alyptyg nybak.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. I. Chudoyakov (ed.), Shorskie geroicheskie skazaniia, Moscow-Novosibirsk: Nauka, 1998."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Алтын-Сырық",
+    "translation": "Golden Pillar",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. I. Chudoyakov (ed.), Shorskie geroicheskie skazaniia, Moscow-Novosibirsk: Nauka, 1998."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Altyn-Syryk ('Golden Pillar') is the title hero of a Shor heroic tale published alongside Kan-Pergen in the academic edition of Shor heroic epics.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "A. I. Chudoyakov (ed.), Shorskie geroicheskie skazaniia: Kan-Pergen; Altyn-Syryk, Moscow-Novosibirsk: Nauka, 1998."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Altyn-Syryk, 'Golden Pillar', is the hero of a Shor heroic tale recorded and published together with Kan-Pergen in the scholarly edition of Shor epics. A superhuman alp of the sung epic tradition, he crosses the vast landscape of the tale in the recurring pattern of quest, marriage-suit and single combat against hostile heroes and monstrous foes, mounted on the prescient warhorse without which no Shor alp acts."
+ },
+ {
+  "id": "shor_kara_kan",
+  "name": {
+   "primary": "Kara-Kan",
+   "alt": [
+    "Kara-Khan",
+    "Qara-Qan"
+   ],
+   "transliterations": {
+    "cjs": "Қара-Қан",
+    "ru": "Кара-Кан",
+    "etymology": "kara 'black, great, mighty' + kan 'khan'; the 'Black Khan' of the heroic tales."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Shor",
+  "primaryTradition": "Shor",
+  "sex": "male",
+  "vitalStatus": "mortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Shor traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "epic-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "қан",
+     "script": "Cyrillic",
+     "rom": "kan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. P. Dyrenkova, Shorskii fol'klor, Moscow-Leningrad: Izd. AN SSSR, 1940."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-the-ulus",
+    "name": "rules the people of the epic realm",
+    "term": {
+     "value": "чонны пашкар",
+     "script": "Cyrillic",
+     "rom": "çonny paşkar"
+    },
+    "inheritability": "partial",
+    "notes": "Kara-Kan figures as the ruling khan-ancestor whose household and heir set the heroic action in motion.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. P. Dyrenkova, Shorskii fol'klor, Moscow-Leningrad, 1940."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Қара-Қан",
+    "translation": "Black Khan",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "N. P. Dyrenkova, Shorskii fol'klor, Moscow-Leningrad, 1940."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kara-Kan ('Black Khan') is a named ruler-hero of the Shor heroic epic repertoire recorded in the Shor folklore corpus.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "N. P. Dyrenkova, Shorskii fol'klor, Moscow-Leningrad: Izd. AN SSSR, 1940."
+     },
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei, Moscow: Nauka, 2005."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Kara-Kan, the 'Black Khan', is a named figure of the Shor heroic-epic repertoire, appearing as a ruling khan of the epic middle world. In the alyptyg nybak the khan and his household frequently frame the action: the hero is his son or ward, and the tale opens from his settlement before moving outward into quest and combat. He belongs to the stock of named sovereigns preserved in the Shor folklore corpus recorded from native singers in the early twentieth century."
+ },
+ {
+  "id": "shor_altyn_torgu",
+  "name": {
+   "primary": "Altyn-Torgu",
+   "alt": [
+    "Altyn-Torgy",
+    "Altyn-Torğu"
+   ],
+   "transliterations": {
+    "cjs": "Алтын-Торғу",
+    "ru": "Алтын-Торгу",
+    "etymology": "altyn 'golden' + torgu 'silk'; 'Golden Silk', the name of an epic maiden."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Shor",
+  "primaryTradition": "Shor",
+  "sex": "female",
+  "vitalStatus": "mortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "Shor traditional religion; continuing"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-maiden",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "қыс",
+     "script": "Cyrillic",
+     "rom": "kys"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei, Moscow: Nauka, 2005."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "set-the-heroic-contest",
+    "name": "sets the contest by which she is won",
+    "term": {
+     "value": "маргыш пазар",
+     "script": "Cyrillic",
+     "rom": "margyş pazar"
+    },
+    "inheritability": "none",
+    "notes": "As the destined bride Altyn-Torgu is won through the competitions of strength and skill that drive the marriage-quest plot.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei, Moscow: Nauka, 2005."
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Алтын-Торғу",
+    "translation": "Golden Silk",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei, Moscow: Nauka, 2005."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Altyn-Torgu ('Golden Silk') is a named heroine of the Shor heroic epic, appearing as the destined bride figure in a competition narrative.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "D. A. Funk, Miry shamanov i skazitelei, Moscow: Nauka, 2005."
+     },
+     {
+      "kind": "primary",
+      "reference": "N. P. Dyrenkova, Shorskii fol'klor, Moscow-Leningrad: Izd. AN SSSR, 1940."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Altyn-Torgu, 'Golden Silk', is a named maiden of the Shor heroic epic, the destined bride whose winning motivates the hero's quest. Her episode turns on a contest of strength and skill among suitors, a characteristic structure of the alyptyg nybak in which the marriageable heroine is both prize and agent, testing the alp before she is won. She belongs to the gallery of named epic women preserved in the Shor sung-epic tradition."
+ }
+]
+```
