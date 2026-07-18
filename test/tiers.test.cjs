@@ -3,7 +3,7 @@
 // the corpus. Pure node — no React/jsdom. This locks the scale foundation:
 // the generator is inert (the app still loads inline today), so without a test
 // a drift between the tiers and the corpus would go unnoticed until a future
-// cutover. Schema 3 adds the multi-file-shell artifacts — corpus-<h>.json (the
+// cutover. Schema 4 adds the projections-migration artifacts (atlas tier, content-hashed detail shards + manifest, skinny registry lists) atop the schema-3 multi-file-shell set — corpus-<h>.json (the
 // post-pipeline __PR snapshot), core-<h>.js (module-scope constants), hashed
 // index/edges filenames recorded in meta.json, full-fidelity power/domain
 // registries — so the parity assertions here are the contract the async
@@ -76,9 +76,13 @@ test('an independent generator run emits a byte-identical tree', () => {
   assert.deepStrictEqual(secondRun, firstRun, 'artifact bytes changed between runs');
 });
 
-test('meta is schema 3, counts agree, and hashed filenames match their bodies', () => {
-  assert.strictEqual(meta.schema, 3, 'tier schema must be 3');
-  assert.strictEqual(meta.buckets, 64, 'bucket count');
+test('meta is schema 4, counts agree, and hashed filenames match their bodies', () => {
+  assert.strictEqual(meta.schema, 4, 'tier schema must be 4');
+  // Buckets are the deterministic scale knob: the next power of two keeping
+  // ~100 figures/shard, floored at 64 (5.7k → 64, 30k → 512). Never hand-set.
+  let expectBuckets = 64;
+  while (expectBuckets * 100 < meta.figures) expectBuckets *= 2;
+  assert.strictEqual(meta.buckets, expectBuckets, 'bucket count must follow the deterministic formula');
   assert.strictEqual(meta.bucketHash, 'sum-charcodes-mod-buckets');
   assert.strictEqual(meta.figures, index.length, 'meta.figures vs index length');
   assert.strictEqual(meta.items, Object.keys(items).length, 'meta.items vs items.json');
@@ -87,6 +91,7 @@ test('meta is schema 3, counts agree, and hashed filenames match their bodies', 
   const patterns = {
     core: /^core-[0-9a-f]{12}\.js$/, index: /^index-[0-9a-f]{12}\.json$/,
     corpus: /^corpus-[0-9a-f]{12}\.json$/, edges: /^edges-[0-9a-f]{12}\.json$/,
+    atlas: /^atlas-[0-9a-f]{12}\.json$/,
   };
   assert.deepStrictEqual(Object.keys(meta.files).sort(), Object.keys(patterns).sort(), 'meta.files key set');
   for (const [k, re] of Object.entries(patterns)) {
@@ -179,10 +184,27 @@ test('core.js is a classic-script IIFE carrying the six module-scope constants',
   assert.strictEqual(ctx2.window.__PR.seedPeople.probe, 1, 'core.js clobbered a pre-existing __PR');
 });
 
+// Phase-1 shards are per-bucket content-hashed (details/<b>-<hash12>.json),
+// resolved through the meta.details manifest — the fix for the deploy-skew
+// window an unhashed shard set has under Pages' fixed max-age=600.
+const shardCache = {};
+const shard = (b) => (shardCache[b] || (shardCache[b] = readJSON(path.join(meta.details.dir, meta.details.shards[b]))));
+
+test('the detail-shard manifest is complete and every name embeds its content hash', () => {
+  assert.strictEqual(meta.details.dir, 'details');
+  assert.strictEqual(meta.details.shards.length, meta.buckets, 'manifest length vs bucket count');
+  meta.details.shards.forEach((name, b) => {
+    assert.match(name, new RegExp(`^${b}-[0-9a-f]{12}\\.json$`), `shard ${b} name: ${name}`);
+    const h = crypto.createHash('sha256').update(fs.readFileSync(path.join(OUT, 'details', name))).digest('hex').slice(0, 12);
+    assert.ok(name.includes(`-${h}.`), `${name}: embedded hash != content hash ${h}`);
+  });
+  // No stray files beyond the manifest (a stale shard would resurrect old data).
+  const onDisk = fs.readdirSync(path.join(OUT, 'details')).sort();
+  assert.deepStrictEqual(onDisk, [...meta.details.shards].sort(), 'details/ contains files the manifest does not name');
+});
+
 test('every figure resolves to exactly one detail shard at its hashed bucket', () => {
   const seen = new Set();
-  const shardCache = {};
-  const shard = (b) => (shardCache[b] || (shardCache[b] = readJSON(path.join('details', `${b}.json`))));
   for (const r of index) {
     const b = bucketOf(r.i);
     const rec = shard(b)[r.i];
@@ -199,6 +221,44 @@ test('every figure resolves to exactly one detail shard at its hashed bucket', (
     }
   }
   assert.strictEqual(seen.size, index.length, 'detail coverage incomplete');
+});
+
+test('the atlas tier carries the corpus derived layers verbatim', () => {
+  const atlas = readJSON(meta.files.atlas);
+  assert.deepStrictEqual(Object.keys(atlas).sort(),
+    ['divinity', 'inheritedPowers', 'seedAtlas', 'traditionMix'], 'atlas tier key set');
+  for (const k of Object.keys(atlas)) {
+    assert.deepStrictEqual(atlas[k], roundTrip(PR[k]), `atlas.${k} != vm __PR.${k}`);
+  }
+  // seedAtlas key ORDER is semantic (Atlas iterates it); JSON preserves it.
+  assert.deepStrictEqual(Object.keys(atlas.seedAtlas), Object.keys(roundTrip(PR.seedAtlas)), 'seedAtlas key order drifted');
+});
+
+test('skinny registry lists agree with the full registries and their shard sets are complete', () => {
+  const sortedIds = index.map((r) => r.i);
+  for (const [kind, full] of [['powers', powers], ['domains', domains], ['items', items]]) {
+    const m = meta.lists[kind];
+    const list = readJSON(m.list);
+    assert.deepStrictEqual(Object.keys(list).sort(), Object.keys(full).sort(), `${kind}: list id set`);
+    const rBucketOf = (id) => { let s = 0; for (let k = 0; k < id.length; k++) s = (s + id.charCodeAt(k)) % m.buckets; return s; };
+    // Shard manifest: hashed names, full coverage, records identical to the full registry.
+    assert.strictEqual(m.shards.length, m.buckets, `${kind}: shard manifest length`);
+    const cache = {};
+    const rShard = (b) => (cache[b] || (cache[b] = readJSON(path.join(m.dir, m.shards[b]))));
+    for (const [id, rec] of Object.entries(full)) {
+      assert.deepStrictEqual(rShard(rBucketOf(id))[id], rec, `${kind}/${id}: shard record != full registry record`);
+      const s = list[id];
+      // Counts mirror the full record; holder indices decode to its personIds.
+      for (const k of ['displayName', 'holderCount', 'figureCount']) {
+        assert.deepStrictEqual(s[k], rec[k], `${kind}/${id}: list ${k}`);
+      }
+      const decode = (arr) => (arr || []).map((i) => sortedIds[i]);
+      assert.deepStrictEqual(decode(s.h), (rec.holders || []).map((h) => h.personId), `${kind}/${id}: holder indices`);
+      if (kind === 'powers') {
+        assert.deepStrictEqual(decode(s.n), (rec.inheritors || []).map((h) => h.personId), `${kind}/${id}: inheritor indices`);
+      }
+    }
+  }
 });
 
 test('edges reference only real figures (no dangling parent/relation targets)', () => {
@@ -262,8 +322,6 @@ test('domains.json carries the full runtime-registry shape with consistent count
 });
 
 test('capability flags in the index match the detailed record', () => {
-  const shardCache = {};
-  const shard = (b) => (shardCache[b] || (shardCache[b] = readJSON(path.join('details', `${b}.json`))));
   for (const r of index) {
     const rec = shard(bucketOf(r.i))[r.i];
     const expect =

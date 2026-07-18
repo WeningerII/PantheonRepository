@@ -60,9 +60,14 @@ test('size tripwires: every upfront and per-view artifact is inside its budget',
   check(meta.files.core, BUDGET.core, 'core');
   check(meta.files.edges, BUDGET.edges, 'edges');
   for (const [k, f] of Object.entries(meta.registry || {})) check(f, BUDGET.fullRegistry, `registry ${k}`);
-  // Phase-1 artifacts, covered the moment meta names them.
+  // Phase-1 artifacts, covered the moment meta names them. meta.lists values
+  // are {list, dir, shards} records: budget the skinny list file itself, and
+  // hold every per-registry shard to the detail-shard budget.
   if (meta.files.atlas) check(meta.files.atlas, BUDGET.atlasTier, 'atlas tier');
-  for (const [k, f] of Object.entries(meta.lists || {})) check(f, BUDGET.skinnyList, `skinny list ${k}`);
+  for (const [k, m] of Object.entries(meta.lists || {})) {
+    check(m.list, BUDGET.skinnyList, `skinny list ${k}`);
+    for (const s of m.shards || []) check(path.join(m.dir, s), BUDGET.detailShard, `${k} shard ${s}`);
+  }
   // Detail shards: unhashed legacy layout (details/<b>.json) or the Phase-1
   // content-hashed layout named by a manifest.
   const shardDir = path.join(OUT, 'details');

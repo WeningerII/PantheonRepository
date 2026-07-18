@@ -54,8 +54,21 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT = process.env.PR_TIERS_OUT
   ? path.resolve(process.env.PR_TIERS_OUT)
   : path.join(ROOT, 'dist', 'data');
-const BUCKETS = 64;
-const SCHEMA = 3;
+const SCHEMA = 4;
+
+// Bucket count is a deterministic function of record count — the scale knob
+// nobody hand-tunes (debate synthesis §3/§4). Next power of two that keeps
+// ~100 figures per shard, floored at 64: 5.7k figures → 64 (status quo),
+// 30k → 512, keeping every shard inside its 150KB-gz budget. Clients never
+// assume it: meta.json carries the resolved count and the shard manifest.
+const bucketCountFor = (n, per = 100, floor = 64) => {
+  let b = floor;
+  while (b * per < n) b *= 2;
+  return b;
+};
+// Resolved in main() from the corpus; module scope so bucketOf can close over
+// it (tests mirror the hash with meta.buckets, never this variable).
+let BUCKETS = 64;
 
 // __PR keys the emitted artifacts must reconstruct for the multi-file runtime.
 // A missing key means the data.js contract changed under us — fail the build.
@@ -212,6 +225,7 @@ function main() {
   const P = PR.seedPeople;
   const div = PR.divinity, inh = PR.inheritedPowers, mix = PR.traditionMix;
   const ids = Object.keys(P).sort();
+  BUCKETS = bucketCountFor(ids.length);
   fs.rmSync(OUT, { recursive: true, force: true });
   fs.mkdirSync(path.join(OUT, 'details'), { recursive: true });
   const gz = (s) => zlib.gzipSync(Buffer.isBuffer(s) ? s : Buffer.from(s)).length;
@@ -253,9 +267,14 @@ function main() {
   }
   const edgesBody = JSON.stringify(sortedObj(edges));
 
-  // TIER 3 — detail shards (full record + precomputed derived data). Shard
-  // names stay unhashed: they are already content-addressed by bucket, and
-  // meta.json's hashed siblings version the set as a whole.
+  // TIER 3 — detail shards (full record + precomputed derived data), PER-
+  // BUCKET content-hashed: details/<bucket>-<hash12>.json. A weekly authoring
+  // batch renames only the shards whose figures actually changed, so untouched
+  // buckets keep their URLs (and any HTTP cache) across deploys — and the
+  // hashed name closes the deploy-skew window an unhashed shard set has under
+  // Pages' fixed max-age=600. The bucket→filename manifest travels in
+  // meta.details AND is pinned into the shell at build time (same pattern as
+  // __PR_DATA / __PR_REGISTRY_DATA), so resolution never races a deploy.
   const buckets = Array.from({ length: BUCKETS }, () => ({}));
   for (const id of ids) {
     const rec = Object.assign({}, P[id]);
@@ -265,7 +284,12 @@ function main() {
     buckets[bucketOf(id)][id] = rec;
   }
   let detailBytes = 0;
-  buckets.forEach((b, i) => { detailBytes += writeJSON(path.join('details', `${i}.json`), sortedObj(b)); });
+  const detailShards = buckets.map((b, i) => {
+    const body = JSON.stringify(sortedObj(b));
+    const name = `${i}-${hash12(body)}.json`;
+    detailBytes += write(path.join('details', name), body);
+    return name;
+  });
 
   // TIER 4 — aggregates (per-view registries, fetched lazily when the Items /
   // Powers / Domains view is opened — NOT gated on the 20 MB corpus). These are
@@ -278,6 +302,70 @@ function main() {
   const itemsBody = JSON.stringify(items);
   const powersBody = JSON.stringify(powers);
   const domainsBody = JSON.stringify(domains);
+
+  // TIER 4b — SKINNY registry lists + hash-bucketed registry shards (Phase 1
+  // dual emission; unconsumed until the full-registry budget tripwire fires
+  // and the views switch — debate synthesis §3 Phase 1 / §4). The list carries
+  // what the view's LIST rendering needs — display fields and counts, with
+  // holder/inheritor personIds compressed to integer indices into the sorted
+  // figure-id order the index tier fixes. The heavy per-holder records
+  // (sources, notes, terms) live in per-registry shards fetched when a single
+  // power/domain/item is opened. Same content-hash discipline as details/.
+  const figIdx = new Map(ids.map((id, i) => [id, i]));
+  const toIdx = (arr, key) => (arr || []).map((h) => figIdx.get(key ? h[key] : h)).filter((x) => x !== undefined);
+  const skinnyPower = (r) => ({
+    id: r.id, displayName: r.displayName, domainTag: r.domainTag, term: r.term,
+    scopeTags: r.scopeTags, inheritability: r.inheritability,
+    holderCount: r.holderCount, inheritorCount: r.inheritorCount, figureCount: r.figureCount,
+    h: toIdx(r.holders, 'personId'), n: toIdx(r.inheritors, 'personId'),
+  });
+  const skinnyDomain = (r) => ({
+    id: r.id, displayName: r.displayName, term: r.term, contextTags: r.contextTags,
+    holderCount: r.holderCount, figureCount: r.figureCount, h: toIdx(r.holders, 'personId'),
+  });
+  const skinnyItem = (r) => ({
+    id: r.id, classId: r.classId, kind: r.kind, displayName: r.displayName,
+    names: r.names, location: r.location || null,
+    holderCount: r.holderCount, custodyCount: r.custodyCount, h: toIdx(r.holders, 'personId'),
+  });
+  const emitRegistryShards = (kind, reg, skinny) => {
+    const regIds = Object.keys(reg);
+    const rb = bucketCountFor(regIds.length, 100, 16);
+    const rBucketOf = (id) => { let s = 0; for (let k = 0; k < id.length; k++) s = (s + id.charCodeAt(k)) % rb; return s; };
+    const shardsObj = Array.from({ length: rb }, () => ({}));
+    for (const id of regIds) shardsObj[rBucketOf(id)][id] = reg[id];
+    fs.mkdirSync(path.join(OUT, kind), { recursive: true });
+    let bytes = 0;
+    const shards = shardsObj.map((b, i) => {
+      const body = JSON.stringify(sortedObj(b));
+      const name = `${i}-${hash12(body)}.json`;
+      bytes += write(path.join(kind, name), body);
+      return name;
+    });
+    const listObj = {};
+    for (const id of regIds) listObj[id] = skinny(reg[id]);
+    const listBody = JSON.stringify(listObj);
+    const listName = `${kind}-list-${hash12(listBody)}.json`;
+    bytes += write(listName, listBody);
+    return { list: listName, buckets: rb, bucketHash: 'sum-charcodes-mod-buckets', shards, bytes, listBody };
+  };
+  const lists = {
+    powers: emitRegistryShards('powers', powers, skinnyPower),
+    domains: emitRegistryShards('domains', domains, skinnyDomain),
+    items: emitRegistryShards('items', items, skinnyItem),
+  };
+
+  // TIER 5 — the atlas/derived tier: everything the corpus snapshot carries
+  // beyond seedPeople and items. Unblocks the Atlas view (seedAtlas polygons)
+  // and the divinity/inheritance/mix lookups without a single figure record.
+  // Key order matches the corpus emission rules: seedAtlas and inheritedPowers
+  // keep vm insertion order (semantic — Atlas iterates seedAtlas keys),
+  // divinity/traditionMix sorted for stable diffs.
+  const atlasTier = {
+    seedAtlas: PR.seedAtlas, divinity: sortedObj(div),
+    traditionMix: sortedObj(mix), inheritedPowers: inh,
+  };
+  const atlasBody = JSON.stringify(atlasTier);
 
   // Post-pipeline snapshot. seedPeople and inheritedPowers keep vm insertion
   // order — it is semantic: the runtime registries (state.jsx
@@ -311,6 +399,7 @@ function main() {
     index: `index-${hash12(indexBody)}.json`,
     corpus: `corpus-${hash12(corpusBody)}.json`,
     edges: `edges-${hash12(edgesBody)}.json`,
+    atlas: `atlas-${hash12(atlasBody)}.json`,
   };
   // The per-view registries are content-hashed and recorded under meta.registry
   // (kept separate from meta.files, which pins the upfront/core tiers). pr-boot
@@ -324,6 +413,7 @@ function main() {
   const idxBytes = write(files.index, indexBody);
   const corpusBytes = write(files.corpus, corpusBody);
   const edgeBytes = write(files.edges, edgesBody);
+  const atlasBytes = write(files.atlas, atlasBody);
   const itemBytes = write(registry.items, itemsBody);
   const powerBytes = write(registry.powers, powersBody);
   const domainBytes = write(registry.domains, domainsBody);
@@ -333,17 +423,27 @@ function main() {
     figures: ids.length, items: Object.keys(items).length,
     powers: Object.keys(powers).length, domains: Object.keys(domains).length,
     files, registry,
+    details: { dir: 'details', shards: detailShards },
+    lists: {
+      powers: { list: lists.powers.list, dir: 'powers', buckets: lists.powers.buckets, bucketHash: lists.powers.bucketHash, shards: lists.powers.shards },
+      domains: { list: lists.domains.list, dir: 'domains', buckets: lists.domains.buckets, bucketHash: lists.domains.bucketHash, shards: lists.domains.shards },
+      items: { list: lists.items.list, dir: 'items', buckets: lists.items.buckets, bucketHash: lists.items.bucketHash, shards: lists.items.shards },
+    },
   });
 
   console.log(`build-tiers: ${ids.length} figures -> dist/data/ (schema ${SCHEMA})`);
   console.log(`  ${files.core}   ${MB(coreBytes)} raw / ${MB(gz(coreBody))} gz MB  (constants — UPFRONT sync)`);
   console.log(`  ${files.index}   ${MB(idxBytes)} raw / ${MB(gz(indexBody))} gz MB  (${(idxBytes / ids.length).toFixed(0)} B/fig — UPFRONT)`);
   console.log(`  ${files.edges}   ${MB(edgeBytes)} raw / ${MB(gz(edgesBody))} gz MB  (on graph/lineage/detail)`);
+  console.log(`  ${files.atlas}   ${MB(atlasBytes)} raw / ${MB(gz(atlasBody))} gz MB  (atlas + derived layers)`);
   console.log(`  ${files.corpus}   ${MB(corpusBytes)} raw / ${MB(gz(corpusBody))} gz MB  (full snapshot — async)`);
-  console.log(`  details/     ${BUCKETS} shards, ${MB(detailBytes)} MB total (lazy per open)`);
+  console.log(`  details/     ${BUCKETS} content-hashed shards, ${MB(detailBytes)} MB total (lazy per open)`);
   console.log(`  ${registry.items}   ${MB(itemBytes)} raw / ${MB(gz(itemsBody))} gz MB (lazy per view)`);
   console.log(`  ${registry.powers}   ${MB(powerBytes)} raw / ${MB(gz(powersBody))} gz MB (lazy per view)`);
   console.log(`  ${registry.domains}   ${MB(domainBytes)} raw / ${MB(gz(domainsBody))} gz MB (lazy per view)`);
+  for (const k of Object.keys(lists)) {
+    console.log(`  ${lists[k].list}   ${MB(Buffer.byteLength(lists[k].listBody))} raw / ${MB(gz(lists[k].listBody))} gz MB + ${lists[k].shards.length} ${k}/ shards (skinny list — dual emission)`);
+  }
 }
 
 if (require.main === module) main();

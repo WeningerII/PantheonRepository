@@ -4,7 +4,7 @@ Build script for the deployable artifacts.
 
 Pre-transforms each app/*.jsx through Babel (no in-browser transformer),
 inlines them alongside app/styles.css, and swaps the data layer per mode.
-Both modes regenerate the schema-3 tiers (scripts/build-tiers.cjs) first and
+Both modes regenerate the schema-4 tiers (scripts/build-tiers.cjs) first and
 ship the SAME post-pipeline snapshot through the same inlined app/pr-boot.js:
 
   python3 build.py          dist/pantheon-registry.html — the single-file
