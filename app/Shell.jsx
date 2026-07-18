@@ -252,7 +252,7 @@ function ViewLoading({ label }) {
 }
 
 function Shell() {
-  const { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, registryReady, registryVersion } = window.useData();
+  const { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, registryReady, registryVersion, tierReady } = window.useData();
   const filters = window.useFilters(people);
   const selection = window.useSelection(filters.filtered);
   const filteredRef = __sRef(filters.filtered);
@@ -375,6 +375,17 @@ function Shell() {
     if (regWant.powers) load('powers');
     if (regWant.domains) load('domains');
   }, [regWant.items, regWant.powers, regWant.domains, registryVersion]);
+
+  // Same pattern for the projection tiers: the Atlas view unblocks on the
+  // atlas tier (seedAtlas + derived layers), Graph/Lineage on the edges tier
+  // rehydrated over the skinny records. loadTier is idempotent and absent on
+  // sync boots (where tierReady is already all-true).
+  __sEff(() => {
+    const load = window.__PR && window.__PR.loadTier;
+    if (!load) return;
+    if (view === 'atlas') load('atlas');
+    if (view === 'graph') load('edges');
+  }, [view, corpusVersion]);
 
   // Warm the deferred power/domain registries (module-cached in state.jsx)
   // off the critical path so the first Powers/Domains navigation pays
@@ -867,8 +878,8 @@ function Shell() {
               Graph, seedAtlas for Atlas, the registries for Items/Powers/
               Domains) — behind the placeholder until the async corpus lands.
               dataReady is true from the first frame on every sync boot. */}
-          {view === 'graph' && !dataReady && <ViewLoading label="graph" />}
-          {(view === 'graph' || leavingView === 'graph') && dataReady && (
+          {view === 'graph' && !(dataReady || tierReady.edges) && <ViewLoading label="graph" />}
+          {(view === 'graph' || leavingView === 'graph') && (dataReady || tierReady.edges) && (
             <div className={'view-pane' + (view === 'graph' ? '' : ' pane-leaving')}>
               <window.Graph
                 people={filters.filtered}
@@ -879,8 +890,8 @@ function Shell() {
               />
             </div>
           )}
-          {view === 'atlas' && !dataReady && <ViewLoading label="atlas" />}
-          {(view === 'atlas' || leavingView === 'atlas') && dataReady && (
+          {view === 'atlas' && !(dataReady || tierReady.atlas) && <ViewLoading label="atlas" />}
+          {(view === 'atlas' || leavingView === 'atlas') && (dataReady || tierReady.atlas) && (
             <div className={'view-pane' + (view === 'atlas' ? '' : ' pane-leaving')}>
               <window.Atlas
                 atlas={atlas}

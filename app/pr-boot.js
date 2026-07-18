@@ -49,6 +49,10 @@ if ((window.__PR && window.__PR.seedPeople) || !window.__PR_DATA) {
   PR.registryReady = { items: true, powers: true, domains: true };
   PR.registryVersion = 0;
   PR.loadRegistry = function () { return PR.ready; };
+  // Same mode-agnostic no-ops for the projection tiers (atlas, edges) — the
+  // sync corpus already carries everything they would deliver.
+  PR.tierReady = { atlas: true, edges: true };
+  PR.loadTier = function () { return PR.ready; };
   return;
 }
 
@@ -146,6 +150,10 @@ Object.assign(PR, {
   // UI's list memos re-read the newly-available registry. See loadRegistry.
   registryReady: { items: false, powers: false, domains: false },
   registryVersion: 0,
+  // Projection-tier readiness (the corpus-blob replacements): atlas unblocks
+  // the Atlas view + divinity/mix lookups, edges unblocks Graph/Lineage.
+  // Either the tier install or the full corpus flips these. See loadTier.
+  tierReady: { atlas: false, edges: false },
   ready,
   getEntryDates,
   formatFraction,
@@ -174,7 +182,7 @@ const fail = (err) => {
 // on this rejection. Contrast fail(), reserved for an index failure with nothing
 // to render.
 const corpusFail = (err) => {
-  console.error('[pr-boot] corpus load failed — running on the skinny index. Browse works; the corpus-only views (Graph / Atlas / Items / Powers / Domains) stay unavailable until reload.', err);
+  console.error('[pr-boot] corpus load failed — running on the skinny index. Browse works, and any view whose own tier landed (Atlas / Graph / Items / Powers / Domains) keeps working; figure detail and anything still corpus-bound stay unavailable until reload.', err);
   PR.corpusFailed = true;
   rejectReady(err);
 };
@@ -281,6 +289,63 @@ const loadRegistry = (kind) => {
 };
 PR.loadRegistry = loadRegistry;
 
+// ─── Lazy projection tiers (atlas, edges) ───────────────────────────────────
+// The corpus-blob replacements (projections migration Phase 2). Same
+// idempotent per-kind promise cache and catch-to-corpus fallback as
+// loadRegistry — the production-proven degrade seam.
+//
+//   atlas  {seedAtlas, divinity, traditionMix, inheritedPowers} — assigned
+//          onto __PR verbatim; the Atlas view and the divinity/mix/descent
+//          lookups read exactly these keys.
+//   edges  id → {p, pr, r} — rehydrated ONTO the skinny index records as
+//          parentIds / parentRoles / relations[{kind, personId}]: precisely
+//          the fields Graph, Lineage, and childrenOf consume. The transform
+//          is specified (and held lossless) by test/scale-gates.test.cjs;
+//          test/multifile.test.cjs holds this runtime to the same result.
+// Installs bump corpusVersion (these change record-derived caches) and
+// announce via 'pr:tier'; state.jsx reloads people/atlas on that event.
+const tierPromises = {};
+const installAtlasTier = (tier) => {
+  Object.assign(PR, tier);
+  PR.tierReady.atlas = true;
+  PR.corpusVersion++;
+  dispatch('pr:tier');
+};
+const installEdgesTier = (edges) => {
+  const P = PR.seedPeople || {};
+  for (const id of Object.keys(P)) {
+    const rec = P[id];
+    const e = edges[id];
+    rec.parentIds = (e && e.p) ? e.p : [];
+    if (e && e.pr) rec.parentRoles = e.pr;
+    rec.relations = (e && e.r) ? e.r.map((x) => ({ kind: x.k, personId: x.id })) : [];
+  }
+  PR.tierReady.edges = true;
+  PR.corpusVersion++;
+  dispatch('pr:tier');
+};
+const loadTier = (kind) => {
+  if (!PR.tierReady || !(kind in PR.tierReady)) return ready;
+  if (PR.tierReady[kind]) return Promise.resolve(PR);
+  if (tierPromises[kind]) return tierPromises[kind];
+  const urls = window.__PR_TIER_DATA;
+  const url = urls && urls[kind];
+  // No tier URL (embedded artifact): the corpus carries everything — wait on it.
+  if (!url) return (tierPromises[kind] = ready);
+  const p = fetchTier(url, 'json')
+    .then((data) => {
+      (kind === 'atlas' ? installAtlasTier : installEdgesTier)(data);
+      return PR;
+    })
+    .catch((err) => {
+      console.warn('[pr-boot] tier ' + kind + ' failed; falling back to corpus', err);
+      delete tierPromises[kind];
+      return ready;
+    });
+  return (tierPromises[kind] = p);
+};
+PR.loadTier = loadTier;
+
 // ─── Install stages — ONE path for both sources ─────────────────────────────
 // Everything behavioral (corpusVersion, the events, dataReady, the persist
 // tail, ready resolution) lives here so the fetched and embedded sources
@@ -290,11 +355,15 @@ const installIndex = (records) => {
   PR.seedPeople = adaptIndex(records);
   PR.corpusVersion++;
   dispatch('pr:index');
-  // Warm the small registry tiers on idle so the first Items/Powers/Domains
-  // navigation is instant. Never blocks the corpus (already in flight), and is
-  // inert wherever there is no idle callback (jsdom) or no tier URLs (artifact).
+  // Warm the small registry + projection tiers on idle so the first
+  // Items/Powers/Domains/Atlas/Graph navigation is instant. Never blocks the
+  // corpus (already in flight), and is inert wherever there is no idle
+  // callback (jsdom) or no tier URLs (artifact).
   if (typeof window.requestIdleCallback === 'function' && window.__PR_REGISTRY_DATA) {
     window.requestIdleCallback(() => { loadRegistry('items'); loadRegistry('powers'); loadRegistry('domains'); });
+  }
+  if (typeof window.requestIdleCallback === 'function' && window.__PR_TIER_DATA) {
+    window.requestIdleCallback(() => { loadTier('atlas'); loadTier('edges'); });
   }
 };
 const installCorpus = (snapshot) => {
@@ -308,6 +377,8 @@ const installCorpus = (snapshot) => {
   // the 'pr:ready' below already refreshes the UI, which re-reads registryReady.
   for (const k of Object.keys(PR.registryReady)) PR.registryReady[k] = true;
   PR.registryVersion++;
+  // Likewise the projection tiers: the snapshot IS their superset.
+  for (const k of Object.keys(PR.tierReady)) PR.tierReady[k] = true;
   persist(snapshot);
   dispatch('pr:ready');
   resolveReady(PR);

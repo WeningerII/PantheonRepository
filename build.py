@@ -417,6 +417,11 @@ __UI_SCRIPTS__
             # first Items/Powers/Domains navigation — those views no longer wait
             # on the 20 MB corpus.
             f"<script>window.__PR_REGISTRY_DATA = {{ items: 'data/{registry['items']}', powers: 'data/{registry['powers']}', domains: 'data/{registry['domains']}' }};</script>\n"
+            # The projection tiers (corpus-blob replacements): atlas unblocks
+            # the Atlas view + derived-layer lookups, edges unblocks Graph/
+            # Lineage — each a fraction of the corpus fetch. Same lazy pattern
+            # as the registries, same catch-to-corpus fallback in pr-boot.
+            f"<script>window.__PR_TIER_DATA = {{ atlas: 'data/{tiers['atlas']}', edges: 'data/{tiers['edges']}' }};</script>\n"
             f'<script src="data/{tiers["core"]}"></script>\n'
             '\n'
             '<!-- pr-boot.js (async data loader, inlined) -->\n'

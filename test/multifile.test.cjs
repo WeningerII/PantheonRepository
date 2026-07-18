@@ -67,7 +67,7 @@ function parseShell() {
   return { scripts, strippedHtml: dom.serialize() };
 }
 
-async function bootShell() {
+async function bootShell(opts = {}) {
   const { scripts, strippedHtml } = parseShell();
   const dom = new JSDOM(strippedHtml, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost/' });
   const { window } = dom;
@@ -98,10 +98,12 @@ async function bootShell() {
   };
   window.IS_REACT_ACT_ENVIRONMENT = true;
 
-  // Hand-released fetch over dist/data: each tier's response body resolves
-  // only when the stage that consumes it is under observation. Anything but
-  // the two pinned tier URLs is a failure — the shell may fetch nothing else
-  // during boot.
+  // Hand-released fetch over dist/data: the index and corpus bodies resolve
+  // only when the stage that consumes them is under observation. Every OTHER
+  // dist/data artifact (projection tiers, registries, detail shards) serves
+  // immediately — those are explicit loadTier/loadRegistry/loadDetail calls,
+  // never part of the plain boot (asserted below). Anything outside dist/data
+  // is a failure.
   const release = {};
   const gates = {
     index: new Promise((res) => { release.index = res; }),
@@ -111,11 +113,14 @@ async function bootShell() {
   window.fetch = (url) => {
     const u = String(url);
     fetched.push(u);
+    if (!u.startsWith('data/')) return Promise.reject(new Error('no network in tests: ' + u));
+    const fp = path.join(DATA, u.slice('data/'.length));
+    if (!fs.existsSync(fp)) return Promise.reject(new Error('no such tier artifact: ' + u));
+    const body = read(fp);
     const tier = u === `data/${meta.files.index}` ? 'index'
       : u === `data/${meta.files.corpus}` ? 'corpus' : null;
-    if (!tier) return Promise.reject(new Error('no network in tests: ' + u));
-    const body = read(path.join(DATA, u.slice('data/'.length)));
-    return gates[tier].then(() => ({
+    const gate = tier ? gates[tier] : Promise.resolve();
+    return gate.then(() => ({
       ok: true, status: 200,
       text: () => Promise.resolve(body),
       json: () => Promise.resolve(JSON.parse(body)),
@@ -160,6 +165,12 @@ async function bootShell() {
   });
   await flush();
   const indexed = snap(); // stage 1: skinny Browse rows
+
+  // Tier-mode boot: hold the corpus gate so the projection tiers can be
+  // exercised in the exact production race (corpus in flight, unresolved).
+  if (opts.holdCorpus) {
+    return { window, document: D, PR, scripts, fetched, errors, mounted, indexed, act, flush, release, snap };
+  }
 
   let bootStepAtReady = null;
   await act(async () => {
@@ -262,4 +273,82 @@ test('the boot fetches exactly the two pinned tiers, index first', async () => {
 test('the whole boot surfaces no errors', async () => {
   const b = await shell();
   assert.deepStrictEqual(b.errors, [], `boot errors:\n${b.errors.join('\n')}`);
+});
+
+// ── Projection tiers (Phase 2 of the projections migration) ────────────────
+// A second boot held at the skinny-index stage (corpus fetched but gated,
+// exactly the production race) exercises loadTier: the Atlas view must
+// unblock from the atlas tier and Graph/Lineage from the edges tier, with
+// the corpus arriving later and replacing everything cleanly.
+const bootedTier = bootShell({ holdCorpus: true });
+bootedTier.catch(() => {});
+const tierShell = () => withTimeout(bootedTier, 120000, 'tier-mode shell boot');
+
+test('the shell pins __PR_TIER_DATA to the hashed atlas/edges names in meta.json', async () => {
+  const b = await tierShell();
+  assert.deepStrictEqual({ ...b.window.__PR_TIER_DATA }, {
+    atlas: `data/${meta.files.atlas}`,
+    edges: `data/${meta.files.edges}`,
+  }, '__PR_TIER_DATA does not name the tiers meta.json records');
+  const oneLiner = b.scripts.find((s) => !s.src && s.body.includes('window.__PR_TIER_DATA'));
+  assert.ok(oneLiner, 'no inline __PR_TIER_DATA script in the shell');
+});
+
+test('loadTier(atlas) pre-corpus installs the derived layers and unblocks the Atlas gate', async () => {
+  const b = await tierShell();
+  assert.strictEqual(b.PR.tierReady.atlas, false, 'atlas tier must start un-ready on the async shell');
+  const v0 = b.PR.corpusVersion;
+  await b.act(async () => { await b.PR.loadTier('atlas'); await new Promise((r) => setTimeout(r, 0)); });
+  await b.flush();
+  assert.strictEqual(b.PR.tierReady.atlas, true, 'tierReady.atlas must flip on install');
+  assert.strictEqual(b.PR.corpusVersion, v0 + 1, 'corpusVersion must bump on the atlas install');
+  const file = JSON.parse(read(path.join(DATA, meta.files.atlas)));
+  for (const k of ['seedAtlas', 'divinity', 'traditionMix', 'inheritedPowers']) {
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(b.PR[k])), file[k], `__PR.${k} != atlas tier ${k}`);
+  }
+  assert.strictEqual(b.PR.dataReady, false, 'the corpus must still be pending');
+});
+
+test('loadTier(edges) pre-corpus rehydrates every record — runtime render parity (2b hard gate)', async () => {
+  const b = await tierShell();
+  await b.act(async () => { await b.PR.loadTier('edges'); await new Promise((r) => setTimeout(r, 0)); });
+  await b.flush();
+  assert.strictEqual(b.PR.tierReady.edges, true, 'tierReady.edges must flip on install');
+  const edges = JSON.parse(read(path.join(DATA, meta.files.edges)));
+  const corpusFile = JSON.parse(read(path.join(DATA, meta.files.corpus)));
+  // The adjacency Graph.jsx derives (parent links from parentIds, typed links
+  // from relations) must be IDENTICAL whether records were rehydrated from
+  // the edges tier or came from the full corpus. Whole graph, no sampling.
+  const buildLinks = (people) => {
+    const links = [];
+    for (const id of Object.keys(people).sort()) {
+      const p = people[id];
+      for (const pid of (p.parentIds || [])) links.push([pid, id, 'parent']);
+      for (const r of (p.relations || [])) if (r && r.personId) links.push([id, r.personId, r.kind]);
+    }
+    return links;
+  };
+  const got = buildLinks(JSON.parse(JSON.stringify(b.PR.seedPeople)));
+  const want = buildLinks(corpusFile.seedPeople);
+  assert.deepStrictEqual(got, want, 'tier-rehydrated adjacency differs from the corpus adjacency');
+  // parentRoles must survive for every figure that has them (Lineage renders roles).
+  for (const [id, e] of Object.entries(edges)) {
+    if (e.pr) assert.deepStrictEqual(JSON.parse(JSON.stringify(b.PR.seedPeople[id].parentRoles)), e.pr, `${id}: parentRoles`);
+  }
+});
+
+test('the corpus landing after the tiers replaces records cleanly and keeps every flag', async () => {
+  const b = await tierShell();
+  await b.act(async () => {
+    b.release.corpus();
+    await b.PR.ready;
+    await new Promise((r) => setTimeout(r, 0));
+  });
+  await b.flush();
+  const s = b.snap();
+  assert.strictEqual(s.dataReady, true, 'dataReady must flip when the corpus lands');
+  assert.deepStrictEqual({ ...b.PR.tierReady }, { atlas: true, edges: true }, 'tier flags must survive the corpus swap');
+  const zeus = b.PR.seedPeople['greek_hesiod_zeus'];
+  assert.ok(zeus.sources && zeus.sources.length, 'full record must replace the rehydrated skinny one');
+  assert.deepStrictEqual(b.errors, [], `tier-mode boot errors:\n${b.errors.join('\n')}`);
 });
