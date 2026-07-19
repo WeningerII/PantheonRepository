@@ -249,7 +249,10 @@ test('stage 1: skinny records carry exactly the Browse/search/facet fields, for 
     assert.ok(p, `${r.i}: missing from skinny map`);
     assert.deepStrictEqual(rt(p), {
       id: r.i,
-      name: { primary: r.n, alt: r.a },
+      // r.x (first transliterations entry) rides along so the Browse row's
+      // native-script sub-line is identical before and after detail-shard
+      // hydration — the row-content half of the layout-snap fix.
+      name: { primary: r.n, alt: r.a, ...(r.x ? { transliterations: { [r.x[0]]: r.x[1] } } : {}) },
       tradition: r.t,
       type: r.y,
       temporal: { era: r.e },

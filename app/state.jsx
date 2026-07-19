@@ -549,6 +549,7 @@ function useData() {
     atlas: loadAtlas(),
     dataReady: !window.__PR || window.__PR.dataReady !== false,
     corpusVersion: (window.__PR && window.__PR.corpusVersion) || 0,
+    detailVersion: (window.__PR && window.__PR.detailVersion) || 0,
     ...readRegistryState(),
   }));
   const { people, atlas, dataReady, corpusVersion, registryReady, registryVersion, tierReady } = data;
@@ -592,6 +593,19 @@ function useData() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Detail-shard hydration is identity-preserving (pr-boot merges into the
+  // existing record objects), so the ONLY reaction is a version bump that
+  // lets an open Detail pane re-read its record. Reloading people here would
+  // rebuild every list cache per hovered bucket — the layout-thrash bug.
+  useEffect(() => {
+    if (data.dataReady) return; // sync world: records are full from frame one
+    const onDetail = () => setData((prev) => ({ ...prev, detailVersion: (window.__PR && window.__PR.detailVersion) || 0 }));
+    window.addEventListener('pr:detail', onDetail);
+    if (((window.__PR && window.__PR.detailVersion) || 0) !== (data.detailVersion || 0)) onDetail();
+    return () => window.removeEventListener('pr:detail', onDetail);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Index by id for relation lookups, and a reverse parentage index so the
   // lineage view can walk descendants in O(1).
   const byId = useMemo(() => {
@@ -611,7 +625,7 @@ function useData() {
     return m;
   }, [people]);
 
-  return { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, registryReady, registryVersion, tierReady };
+  return { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, detailVersion: data.detailVersion || 0, registryReady, registryVersion, tierReady };
 }
 
 // ── Hook: useFilters ─────────────────────────────────────────────────────

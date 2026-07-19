@@ -245,11 +245,22 @@ function main() {
       : (dates.textualStart != null || dates.textualEnd != null)
         ? [dates.textualStart ?? null, dates.textualEnd ?? null]
         : null;
+    // x: the FIRST transliterations entry, verbatim [key, value] — Browse
+    // rows display transliterations(entry)[0].value as the native-script
+    // sub-line, so a skinny record must carry it or the row visibly grows a
+    // line when its detail shard hydrates (the projections-era layout-snap
+    // bug). Mirrors Object.entries order exactly; nothing else of the
+    // transliterations map is row-visible (search uses the s blob).
+    const tr = p.name && p.name.transliterations;
+    const x = (tr && typeof tr === 'object' && Object.keys(tr).length)
+      ? (([k, v]) => (typeof v === 'string' ? [k, v] : null))(Object.entries(tr)[0])
+      : null;
     return {
       i: id, n: (p.name && p.name.primary) || id, s: searchBlob(p),
       t: p.tradition || '', y: p.type || '', e: (p.temporal && p.temporal.era) || '',
       d, o: p.origin || '',
       a: (p.name && Array.isArray(p.name.alt)) ? p.name.alt.filter(Boolean) : [],
+      ...(x ? { x } : {}),
       f: flags(p),
     };
   });

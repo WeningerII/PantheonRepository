@@ -289,6 +289,29 @@ test('loadDetail(id) hydrates the figure from its content-hashed shard', async (
   assert.strictEqual(b.PR.dataReady, false, 'dataReady must stay false — hydration is per-figure');
 });
 
+test('detail hydration is invisible to the list: row HTML identical, no pr:tier storm', async () => {
+  const b = await shell();
+  // A figure guaranteed on-screen unfiltered: take the first rendered row's
+  // name, resolve it to an id, and hydrate that figure's bucket.
+  const rowsBefore = await (async () => b.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)'))();
+  assert.ok(rowsBefore.length > 50, 'need rendered rows');
+  const sample = [...rowsBefore].slice(0, 40).map((tr) => tr.outerHTML);
+  const firstName = rowsBefore[0].querySelector('.name-text').textContent;
+  const target = Object.values(JSON.parse(JSON.stringify(b.PR.seedPeople)))
+    .find((p) => p.name && p.name.primary === firstName);
+  assert.ok(target, 'first row name did not resolve to a record');
+  const tierEvents = [];
+  const onTier = () => tierEvents.push('pr:tier');
+  b.window.addEventListener('pr:tier', onTier);
+  await b.act(async () => { await b.PR.loadDetail(target.id); await new Promise((r) => setTimeout(r, 0)); });
+  await b.flush();
+  b.window.removeEventListener('pr:tier', onTier);
+  assert.strictEqual(b.PR.seedPeople[target.id]._full, true, 'target must hydrate');
+  assert.deepStrictEqual(tierEvents, [], 'hydration must not dispatch pr:tier (the render-thrash event)');
+  const rowsAfter = [...b.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)')].slice(0, 40).map((tr) => tr.outerHTML);
+  assert.deepStrictEqual(rowsAfter, sample, 'hydration changed rendered row HTML — layout snap regression');
+});
+
 test('a missing detail shard rejects loadDetail — the degrade seam the Shell routes to the static page', async () => {
   const b = await shell();
   // Pick a figure whose bucket has not been fetched yet and break its shard name.
