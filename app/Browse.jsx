@@ -185,12 +185,22 @@ function Browse({ filters, selection, onOpen }) {
   }, [filtered, sort]);
 
   // Reveal window: how many leading rows of `filtered` are mounted. Keyed to
-  // the exact list it was measured against so any filter/sort/tier change
-  // resets to the first screenful of the NEW result set — the render-phase
-  // setState re-renders before commit, so a stale window never paints.
+  // the exact list it was measured against so any filter/sort change resets
+  // to the first screenful of the NEW result set — the render-phase setState
+  // re-renders before commit, so a stale window never paints.
+  //
+  // ID-IDENTICAL refreshes keep the window. A data tier installing mid-load
+  // (atlas, edges) rebuilds the people array — same ids, same order, only
+  // the record objects enriched in place. Collapsing the mounted window back
+  // to REVEAL_FIRST on those refreshes unmounted thousands of already-shown
+  // rows and regrew them batch by batch, twice, right after first paint —
+  // the "list snaps during initial load" bug. Only a genuinely different
+  // result set (filter/search/sort — different ids or order) resets.
   const [reveal, setReveal] = __bState({ list: filtered, count: REVEAL_ALL ? Infinity : REVEAL_FIRST });
   if (reveal.list !== filtered) {
-    setReveal({ list: filtered, count: REVEAL_ALL ? Infinity : REVEAL_FIRST });
+    const sameRows = reveal.list.length === filtered.length
+      && reveal.list.every((p, i) => p.id === filtered[i].id);
+    setReveal({ list: filtered, count: sameRows ? reveal.count : (REVEAL_ALL ? Infinity : REVEAL_FIRST) });
   }
 
   // Keyboard nav and deep links address rows by index into `filtered` (data,
