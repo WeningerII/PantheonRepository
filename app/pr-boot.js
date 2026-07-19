@@ -309,6 +309,13 @@ const tierPromises = {};
 const installAtlasTier = (tier) => {
   Object.assign(PR, tier);
   PR.tierReady.atlas = true;
+  // The persist tail's atlas half, moved here for the corpus-less shell: a
+  // returning visitor must never keep a stale map (the exact production
+  // incident storage.test.cjs pins on the sync path). Small write, own try.
+  try {
+    const ATLAS_KEY = PR.ATLAS_KEY || 'pantheon_atlas_v3';
+    localStorage.setItem(ATLAS_KEY, JSON.stringify(tier.seedAtlas));
+  } catch (e) { console.warn('pantheon atlas persist failed', e); }
   PR.corpusVersion++;
   dispatch('pr:tier');
 };
@@ -388,11 +395,14 @@ const loadDetail = (id) => {
       return PR;
     })
     .catch((err) => {
-      // Not fatal, and the corpus fallback still applies — but surface it:
-      // Phase 3 routes this to the static registry/<id>.html degrade path.
-      console.warn('[pr-boot] detail shard ' + b + ' failed; falling back to corpus', err);
-      delete shardPromises[b];
-      return ready;
+      console.warn('[pr-boot] detail shard ' + b + ' failed', err);
+      delete shardPromises[b]; // next call retries the fetch
+      // Legacy shells (corpus URL present) fall back to the corpus, which
+      // carries the same records. Projection shells have no corpus: rethrow
+      // so the caller can degrade — the Shell deep-links the static
+      // registry/<id>.html page instead of rendering a broken pane.
+      if (TIERS.corpus) return ready;
+      throw err;
     });
   return (shardPromises[b] = p);
 };
@@ -460,10 +470,11 @@ if (TIERS.embeddedCorpus) {
     })
     .then(installCorpus)
     .catch(fail);
-} else {
-  // Fetched source (Pages shell): both fetches start now and stream while
-  // the shell's UI scripts parse; installs stay ordered (index → corpus) so
-  // corpusVersion and the events are monotonic.
+} else if (TIERS.corpus) {
+  // Legacy fetched source (a pre-projections shell cached under Pages'
+  // max-age=600 during a deploy): both fetches start now, installs stay
+  // ordered (index → corpus). Kept fully functional — the corpus artifact is
+  // still emitted — so a skewed deploy never strands an old shell.
   const indexFetch = fetchTier(TIERS.index, 'json');
   const corpusFetch = fetchTier(TIERS.corpus, 'text');
   // Surfaced via the chain below; an index failure must not strand this
@@ -478,6 +489,27 @@ if (TIERS.embeddedCorpus) {
       // corpusFail (reject + log, no overlay); only an INDEX failure reaches the
       // fatal .catch(fail) below, where there is genuinely nothing to render.
       return corpusFetch.then(parseOnIdle).then(installCorpus).catch(corpusFail);
+    })
+    .catch(fail);
+} else {
+  // Projections source (Phase 3): the index IS the boot. Everything richer
+  // arrives through its own tier — atlas/edges on idle or navigation, figure
+  // records per detail-shard open, registries per view. ready resolves here
+  // (main.jsx hides the boot overlay on it); dataReady stays false forever —
+  // it means "full corpus resident", which no longer happens, and every view
+  // gate already keys on its own tier flag. The persist tail shrinks to the
+  // stale-key purge (the atlas half moved into installAtlasTier; the
+  // PEOPLE_KEY seed-if-empty died with the snapshot — it was dead code in
+  // real browsers behind the quota probe, and loadPeople still honors a
+  // legacy-environment value if one exists).
+  fetchTier(TIERS.index, 'json')
+    .then((records) => {
+      installIndex(records);
+      for (const stale of ['pantheon_registry_v7', 'pantheon_registry_v8', 'pantheon_atlas_v1', 'pantheon_atlas_v2', 'pantheon_constants_v1']) {
+        try { localStorage.removeItem(stale); } catch (_) {}
+      }
+      dispatch('pr:ready');
+      resolveReady(PR);
     })
     .catch(fail);
 }

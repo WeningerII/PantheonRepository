@@ -460,15 +460,20 @@ function Shell() {
       try { id = decodeURIComponent(parts[1]); } catch (_) { id = parts[1]; }
     }
     setView(v);
-    // Async boot: an id in the hash names a full record (figure relations,
-    // the item/power/domain registries) that the skinny index can't satisfy.
-    // Show the view now and re-apply the whole hash once the corpus lands —
-    // pr-boot settles localStorage before resolving, so the deferred pass
-    // resolves against the same records a sync boot would have seen. Multiple
-    // hash edits during the wait each queue a re-apply; every one re-reads
-    // the live hash, so the last edit wins. A rejected ready is already
-    // painted into the boot overlay by pr-boot — swallow it here.
-    if (id && window.__PR && window.__PR.dataReady === false && window.__PR.ready) {
+    // Async boot, PRE-INDEX only: an id in the hash names a record that does
+    // not exist yet (no seedPeople at all). Show the view now and re-apply
+    // the whole hash once ready fires — which pr-boot resolves after the
+    // index install (projections shell) or the corpus persist tail (legacy
+    // shell), so the deferred pass sees settled records either way. The gate
+    // MUST be seedPeople's absence, not dataReady: in the projections shell
+    // dataReady stays false forever while ready is already resolved, and
+    // gating on it re-armed this deferral in an infinite microtask loop.
+    // Once records exist, ids resolve against them directly — a figure id
+    // hydrates through the loadDetail effect below. Multiple hash edits
+    // during the wait each queue a re-apply; every one re-reads the live
+    // hash, so the last edit wins. A rejected ready is already painted into
+    // the boot overlay by pr-boot — swallow it here.
+    if (id && window.__PR && !window.__PR.seedPeople && window.__PR.ready) {
       window.__PR.ready.then(() => applyHashRef.current(), () => {});
       return;
     }
@@ -572,7 +577,17 @@ function Shell() {
   __sEff(() => {
     const P = window.__PR;
     if (!P || !selection.selectedId || dataReady) return;
-    if (P.loadDetail) P.loadDetail(selection.selectedId);
+    const id = selection.selectedId;
+    if (P.loadDetail) {
+      P.loadDetail(id).catch(() => {
+        // Shard fetch failed with no corpus to fall back to: degrade to the
+        // static page — complete, cited, always deployed beside the app
+        // (scale-gates holds it field-complete). A 404-class boring failure
+        // instead of a broken pane.
+        const rec = P.seedPeople && P.seedPeople[id];
+        if (!(rec && rec._full)) window.location.assign('registry/' + id + '.html');
+      });
+    }
     if (P.loadTier) { P.loadTier('edges'); P.loadTier('atlas'); }
   }, [selection.selectedId, dataReady, corpusVersion]);
 

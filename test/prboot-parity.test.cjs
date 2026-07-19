@@ -129,7 +129,9 @@ function bootVM(opts = {}) {
     // a null indexText drops the id too, exercising the skipped stage 1.
     __PR_DATA: opts.embedded
       ? { embeddedIndex: opts.embedded.indexText != null ? 'pr-data-index' : null, embeddedCorpus: 'pr-data-corpus' }
-      : { index: `data/${meta.files.index}`, corpus: `data/${meta.files.corpus}` },
+      : opts.projections
+        ? { index: `data/${meta.files.index}` } // Phase-3 shell: no corpus URL
+        : { index: `data/${meta.files.index}`, corpus: `data/${meta.files.corpus}` },
     requestIdleCallback: (cb) => setTimeout(cb, 0),
     dispatchEvent: (e) => {
       const PRc = ctx.window.__PR || {};
@@ -496,4 +498,24 @@ test('embedded: malformed index JSON rejects ready before any event fires', asyn
   assert.match(String(err), /JSON|Unexpected/i);
   assert.deepStrictEqual(b.events, [], 'no events may fire when stage 1 fails');
   assert.strictEqual(b.els['boot-step'].textContent, 'failed');
+});
+
+// ── Projections mode (Phase 3): the renegotiated storage contract ───────────
+// With no corpus URL, ready resolves at the index; the PEOPLE_KEY
+// seed-if-empty DIED with the snapshot (it was dead code in real browsers
+// behind the 6 MB quota probe). The stale-key purge survives; the atlas
+// overwrite moved to the atlas-tier install (held by multifile.test.cjs).
+test('projections mode: ready at the index, PEOPLE_KEY never seeded, stale keys purged, dataReady stays false', async () => {
+  const b = bootVM({
+    projections: true,
+    preload: Object.fromEntries(STALE.map((k) => [k, 'stale'])),
+  });
+  await withTimeout(b.PR.ready, 120000, 'projections boot');
+  assert.strictEqual(b.PR.dataReady, false, 'dataReady must stay false — no corpus is ever resident');
+  assert.strictEqual(Object.keys(b.PR.seedPeople).length, meta.figures, 'skinny index installed');
+  assert.ok(!b.store.has(b.PR.PEOPLE_KEY), 'PEOPLE_KEY must NOT be seeded in projections mode');
+  for (const k of STALE) assert.ok(!b.store.has(k), 'stale key not purged: ' + k);
+  assert.deepStrictEqual(b.events.map((e) => e.type), ['pr:index', 'pr:ready'],
+    'event order: index install, then ready — nothing else');
+  assert.deepStrictEqual(b.fetched, [`data/${meta.files.index}`], 'only the index may be fetched at boot');
 });

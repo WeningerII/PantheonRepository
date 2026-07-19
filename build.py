@@ -411,7 +411,11 @@ __UI_SCRIPTS__
         # then the UI scripts) against index.html and the artifact.
         data_layer = (
             '<!-- Data layer (async tiers; hashed names pinned from dist/data/meta.json) -->\n'
-            f"<script>window.__PR_DATA = {{ index: 'data/{tiers['index']}', corpus: 'data/{tiers['corpus']}' }};</script>\n"
+            # Projections shell (Phase 3): no corpus URL — the index is the boot,
+            # every richer surface loads through its own tier. The corpus file is
+            # still emitted (the offline artifact embeds it, and stale shells
+            # cached across a deploy still fetch it by its old hashed name).
+            f"<script>window.__PR_DATA = {{ index: 'data/{tiers['index']}' }};</script>\n"
             # The per-view registry tiers, kept in their own global so __PR_DATA
             # stays the two upfront tiers. pr-boot fetches these lazily on the
             # first Items/Powers/Domains navigation — those views no longer wait
