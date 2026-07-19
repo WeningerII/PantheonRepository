@@ -422,6 +422,12 @@ __UI_SCRIPTS__
             # Lineage — each a fraction of the corpus fetch. Same lazy pattern
             # as the registries, same catch-to-corpus fallback in pr-boot.
             f"<script>window.__PR_TIER_DATA = {{ atlas: 'data/{tiers['atlas']}', edges: 'data/{tiers['edges']}' }};</script>\n"
+            # The detail-shard manifest: per-bucket content-hashed names, so a
+            # figure open fetches one ~100KB-gz shard instead of the corpus.
+            # Pinned into the shell like every hashed tier (the only cache-bust
+            # under Pages' max-age=600); the bucket count and hash rule ride
+            # along so the client never assumes them.
+            f"<script>window.__PR_DETAILS_DATA = {{ dir: 'data/{meta['details']['dir']}/', buckets: {meta['buckets']}, shards: {json.dumps(meta['details']['shards'])} }};</script>\n"
             f'<script src="data/{tiers["core"]}"></script>\n'
             '\n'
             '<!-- pr-boot.js (async data loader, inlined) -->\n'

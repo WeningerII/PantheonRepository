@@ -558,11 +558,23 @@ function Shell() {
   }, [view, selection.selectedId, graphFocusId, atlasFocus, selectedItemId, selectedPowerId, selectedDomainId]);
   // ─────────────────────────────────────────────────────────────────────
 
-  // Gated on dataReady: Detail's j/k stepping and cross-links assume the
-  // full record (relations, faculties, materialCulture), which skinny index
-  // rows don't carry. A row clicked during the skinny window keeps its
-  // selectedId and the slide-over opens on the render after 'pr:ready'.
-  const selectedEntry = (dataReady && selection.selectedId) ? byId.get(selection.selectedId) : null;
+  // Detail gates per FIGURE, not on the whole corpus: a record is renderable
+  // when the corpus landed (dataReady) or its detail shard hydrated it
+  // (_full). A row clicked during the skinny window triggers the shard fetch
+  // below and the slide-over opens on the render after 'pr:tier'.
+  const selectedRec = selection.selectedId ? byId.get(selection.selectedId) : null;
+  const selectedEntry = (selectedRec && (dataReady || selectedRec._full)) ? selectedRec : null;
+
+  // Fetch the selected figure's detail shard the moment it's wanted.
+  // loadDetail is idempotent (per-bucket promise cache) and a resolved no-op
+  // on sync boots. The edges + atlas tiers ride along so Parentage/Descent/
+  // divinity render complete, not skeleton-shaped.
+  __sEff(() => {
+    const P = window.__PR;
+    if (!P || !selection.selectedId || dataReady) return;
+    if (P.loadDetail) P.loadDetail(selection.selectedId);
+    if (P.loadTier) { P.loadTier('edges'); P.loadTier('atlas'); }
+  }, [selection.selectedId, dataReady, corpusVersion]);
 
   // Find current index of the selected entry within current filtered list
   const selIdxInFiltered = __sMemo(() => {

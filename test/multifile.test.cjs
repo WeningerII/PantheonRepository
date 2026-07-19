@@ -337,6 +337,24 @@ test('loadTier(edges) pre-corpus rehydrates every record — runtime render pari
   }
 });
 
+test('loadDetail(id) pre-corpus hydrates the figure from its content-hashed shard', async () => {
+  const b = await tierShell();
+  const id = 'greek_hesiod_zeus';
+  assert.ok(b.PR.seedPeople[id] && !b.PR.seedPeople[id]._full, 'record must start skinny');
+  assert.ok(b.window.__PR_DETAILS_DATA && Array.isArray(b.window.__PR_DETAILS_DATA.shards),
+    '__PR_DETAILS_DATA manifest missing from the shell');
+  assert.strictEqual(b.window.__PR_DETAILS_DATA.buckets, meta.buckets, 'manifest bucket count vs meta');
+  await b.act(async () => { await b.PR.loadDetail(id); await new Promise((r) => setTimeout(r, 0)); });
+  await b.flush();
+  const rec = b.PR.seedPeople[id];
+  assert.strictEqual(rec._full, true, 'record must be marked _full after hydration');
+  for (const k of ['domains', 'epithets', 'sources', 'relations']) {
+    assert.ok(rec[k] && rec[k].length, `full-record field ${k} missing after shard hydration`);
+  }
+  assert.ok(b.PR.divinity && b.PR.divinity[id] != null, 'divinity must install from the shard');
+  assert.strictEqual(b.PR.dataReady, false, 'the corpus must still be pending');
+});
+
 test('the corpus landing after the tiers replaces records cleanly and keeps every flag', async () => {
   const b = await tierShell();
   await b.act(async () => {

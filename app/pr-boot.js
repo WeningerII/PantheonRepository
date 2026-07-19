@@ -53,6 +53,7 @@ if ((window.__PR && window.__PR.seedPeople) || !window.__PR_DATA) {
   // sync corpus already carries everything they would deliver.
   PR.tierReady = { atlas: true, edges: true };
   PR.loadTier = function () { return PR.ready; };
+  PR.loadDetail = function () { return PR.ready; };
   return;
 }
 
@@ -345,6 +346,57 @@ const loadTier = (kind) => {
   return (tierPromises[kind] = p);
 };
 PR.loadTier = loadTier;
+
+// ─── Lazy figure detail (content-hashed shards) ─────────────────────────────
+// loadDetail(id) fetches the hash-bucketed shard carrying the figure's FULL
+// record (plus precomputed _divinity/_inherited/_traditionMix) and merges the
+// whole bucket into __PR.seedPeople — full records replace skinny ones, each
+// marked _full so the Shell can gate Detail per figure instead of on the
+// whole corpus. Derived layers install into the same lookups the atlas tier
+// fills, so divinityInfo()/traditionMix() work figure-by-figure even before
+// that tier lands. Merging into the shared map (never "set current figure")
+// makes late responses harmless: a stale shard arrival just hydrates more
+// records — the render keys off selectedId, not off the response.
+// The manifest travels in window.__PR_DETAILS_DATA {dir, buckets, shards[]},
+// pinned by the build like every other hashed tier name.
+const shardPromises = {};
+const detailBucketOf = (id, n) => { let s = 0; for (let k = 0; k < id.length; k++) s = (s + id.charCodeAt(k)) % n; return s; };
+const loadDetail = (id) => {
+  if (PR.dataReady) return Promise.resolve(PR);
+  const DET = window.__PR_DETAILS_DATA;
+  if (!DET || !DET.shards || !id) return ready;
+  const have = PR.seedPeople && PR.seedPeople[id];
+  if (have && have._full) return Promise.resolve(PR);
+  const b = detailBucketOf(id, DET.buckets);
+  if (shardPromises[b]) return shardPromises[b];
+  const p = fetchTier(DET.dir + DET.shards[b], 'json')
+    .then((recs) => {
+      const P = PR.seedPeople || (PR.seedPeople = {});
+      PR.divinity = PR.divinity || {};
+      PR.inheritedPowers = PR.inheritedPowers || {};
+      PR.traditionMix = PR.traditionMix || {};
+      for (const rid of Object.keys(recs)) {
+        const rec = recs[rid];
+        rec._full = true;
+        P[rid] = rec;
+        if (rec._divinity != null && PR.divinity[rid] == null) PR.divinity[rid] = rec._divinity;
+        if (rec._inherited && !PR.inheritedPowers[rid]) PR.inheritedPowers[rid] = rec._inherited;
+        if (rec._traditionMix && !PR.traditionMix[rid]) PR.traditionMix[rid] = rec._traditionMix;
+      }
+      PR.corpusVersion++;
+      dispatch('pr:tier');
+      return PR;
+    })
+    .catch((err) => {
+      // Not fatal, and the corpus fallback still applies — but surface it:
+      // Phase 3 routes this to the static registry/<id>.html degrade path.
+      console.warn('[pr-boot] detail shard ' + b + ' failed; falling back to corpus', err);
+      delete shardPromises[b];
+      return ready;
+    });
+  return (shardPromises[b] = p);
+};
+PR.loadDetail = loadDetail;
 
 // ─── Install stages — ONE path for both sources ─────────────────────────────
 // Everything behavioral (corpusVersion, the events, dataReady, the persist
