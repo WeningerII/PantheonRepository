@@ -626,7 +626,14 @@ button:focus-visible,
   border-collapse: separate;
   border-spacing: 0;
   font-size: var(--fs-body-2);
+  /* Fixed layout: column widths come from the thead declarations (28% /
+     24% / remainder) and never re-negotiate as rows mount. Under auto
+     layout, every progressive-reveal batch could shift the column
+     boundaries a few px, re-wrapping text in EVERY visible row — the
+     "row heights resize during initial load" jitter. */
+  table-layout: fixed;
 }
+.browse-table td { overflow-wrap: break-word; }
 
 /* Sticky column heads */
 .browse-table thead th {
