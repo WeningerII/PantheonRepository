@@ -153,6 +153,17 @@ test('index d/o/a mirror the vm corpus (dates resolved per-axis, mythic first)',
   }
 });
 
+test('index x mirrors the first transliterations entry (row sub-line parity)', () => {
+  for (const r of index) {
+    const p = PR.seedPeople[r.i];
+    const tr = p.name && p.name.transliterations;
+    const first = (tr && typeof tr === 'object') ? Object.entries(tr)[0] : undefined;
+    const expect = (first && typeof first[1] === 'string') ? first : undefined;
+    if (expect) assert.deepStrictEqual(r.x, roundTrip(expect), `${r.i}: index x`);
+    else assert.strictEqual(r.x, undefined, `${r.i}: index x must be absent`);
+  }
+});
+
 test('corpus snapshot deep-equals the vm __PR after a JSON round-trip', () => {
   assert.deepStrictEqual(Object.keys(corpus).sort(),
     ['divinity', 'inheritedPowers', 'items', 'seedAtlas', 'seedPeople', 'traditionMix'], 'corpus key set');

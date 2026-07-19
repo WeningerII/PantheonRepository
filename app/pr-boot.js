@@ -214,7 +214,10 @@ const adaptIndex = (records) => {
   for (const r of records) {
     map[r.i] = {
       id: r.i,
-      name: { primary: r.n, alt: r.a || [] },
+      // r.x is the first transliterations entry [key, value] — the one piece
+      // of the map Browse rows display (the native-script sub-line). Carrying
+      // it keeps a skinny row pixel-identical to its hydrated full record.
+      name: { primary: r.n, alt: r.a || [], ...(r.x ? { transliterations: { [r.x[0]]: r.x[1] } } : {}) },
       tradition: r.t,
       type: r.y,
       temporal: { era: r.e },
@@ -384,14 +387,36 @@ const loadDetail = (id) => {
       PR.traditionMix = PR.traditionMix || {};
       for (const rid of Object.keys(recs)) {
         const rec = recs[rid];
-        rec._full = true;
-        P[rid] = rec;
+        // Merge INTO the existing skinny record — never replace it. Object
+        // identity is what keeps this invisible: the people array, the byId
+        // map, and every React.memo'd Browse row hold references to these
+        // objects, so an identity-preserving merge means no rebuilt arrays,
+        // no cache invalidation, no row re-renders — hydration cannot cause
+        // layout shift. (Replacing records here churned every memo and
+        // re-rendered the whole list per hovered bucket — the "UI seizure".)
+        const existing = P[rid];
+        if (existing) {
+          Object.assign(existing, rec);
+          // The skinny fast-path marker must not survive hydration: the full
+          // record computes dates (identical output — build-tiers derived
+          // _dates from the same rule) and carries precision/axes Detail uses.
+          delete existing._dates;
+          existing._full = true;
+        } else {
+          rec._full = true;
+          P[rid] = rec;
+        }
         if (rec._divinity != null && PR.divinity[rid] == null) PR.divinity[rid] = rec._divinity;
         if (rec._inherited && !PR.inheritedPowers[rid]) PR.inheritedPowers[rid] = rec._inherited;
         if (rec._traditionMix && !PR.traditionMix[rid]) PR.traditionMix[rid] = rec._traditionMix;
       }
-      PR.corpusVersion++;
-      dispatch('pr:tier');
+      // A LIGHT event, deliberately not 'pr:tier': detail hydration changes
+      // no list-visible data, so state.jsx must not reload people/atlas (that
+      // rebuild — searchHaystacks, filtered, byId — on every hovered bucket
+      // was the render-thrash half of the seizure). The bump only lets the
+      // open Detail pane re-read its now-full record.
+      PR.detailVersion = (PR.detailVersion || 0) + 1;
+      dispatch('pr:detail');
       return PR;
     })
     .catch((err) => {
