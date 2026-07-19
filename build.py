@@ -4,7 +4,7 @@ Build script for the deployable artifacts.
 
 Pre-transforms each app/*.jsx through Babel (no in-browser transformer),
 inlines them alongside app/styles.css, and swaps the data layer per mode.
-Both modes regenerate the schema-3 tiers (scripts/build-tiers.cjs) first and
+Both modes regenerate the schema-4 tiers (scripts/build-tiers.cjs) first and
 ship the SAME post-pipeline snapshot through the same inlined app/pr-boot.js:
 
   python3 build.py          dist/pantheon-registry.html — the single-file
@@ -411,12 +411,27 @@ __UI_SCRIPTS__
         # then the UI scripts) against index.html and the artifact.
         data_layer = (
             '<!-- Data layer (async tiers; hashed names pinned from dist/data/meta.json) -->\n'
-            f"<script>window.__PR_DATA = {{ index: 'data/{tiers['index']}', corpus: 'data/{tiers['corpus']}' }};</script>\n"
+            # Projections shell (Phase 3): no corpus URL — the index is the boot,
+            # every richer surface loads through its own tier. The corpus file is
+            # still emitted (the offline artifact embeds it, and stale shells
+            # cached across a deploy still fetch it by its old hashed name).
+            f"<script>window.__PR_DATA = {{ index: 'data/{tiers['index']}' }};</script>\n"
             # The per-view registry tiers, kept in their own global so __PR_DATA
             # stays the two upfront tiers. pr-boot fetches these lazily on the
             # first Items/Powers/Domains navigation — those views no longer wait
             # on the 20 MB corpus.
             f"<script>window.__PR_REGISTRY_DATA = {{ items: 'data/{registry['items']}', powers: 'data/{registry['powers']}', domains: 'data/{registry['domains']}' }};</script>\n"
+            # The projection tiers (corpus-blob replacements): atlas unblocks
+            # the Atlas view + derived-layer lookups, edges unblocks Graph/
+            # Lineage — each a fraction of the corpus fetch. Same lazy pattern
+            # as the registries, same catch-to-corpus fallback in pr-boot.
+            f"<script>window.__PR_TIER_DATA = {{ atlas: 'data/{tiers['atlas']}', edges: 'data/{tiers['edges']}' }};</script>\n"
+            # The detail-shard manifest: per-bucket content-hashed names, so a
+            # figure open fetches one ~100KB-gz shard instead of the corpus.
+            # Pinned into the shell like every hashed tier (the only cache-bust
+            # under Pages' max-age=600); the bucket count and hash rule ride
+            # along so the client never assumes them.
+            f"<script>window.__PR_DETAILS_DATA = {{ dir: 'data/{meta['details']['dir']}/', buckets: {meta['buckets']}, shards: {json.dumps(meta['details']['shards'])} }};</script>\n"
             f'<script src="data/{tiers["core"]}"></script>\n'
             '\n'
             '<!-- pr-boot.js (async data loader, inlined) -->\n'

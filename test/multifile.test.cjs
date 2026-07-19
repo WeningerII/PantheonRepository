@@ -67,7 +67,7 @@ function parseShell() {
   return { scripts, strippedHtml: dom.serialize() };
 }
 
-async function bootShell() {
+async function bootShell(opts = {}) {
   const { scripts, strippedHtml } = parseShell();
   const dom = new JSDOM(strippedHtml, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost/' });
   const { window } = dom;
@@ -98,24 +98,26 @@ async function bootShell() {
   };
   window.IS_REACT_ACT_ENVIRONMENT = true;
 
-  // Hand-released fetch over dist/data: each tier's response body resolves
-  // only when the stage that consumes it is under observation. Anything but
-  // the two pinned tier URLs is a failure — the shell may fetch nothing else
-  // during boot.
+  // Hand-released fetch over dist/data: the index and corpus bodies resolve
+  // only when the stage that consumes them is under observation. Every OTHER
+  // dist/data artifact (projection tiers, registries, detail shards) serves
+  // immediately — those are explicit loadTier/loadRegistry/loadDetail calls,
+  // never part of the plain boot (asserted below). Anything outside dist/data
+  // is a failure.
   const release = {};
   const gates = {
     index: new Promise((res) => { release.index = res; }),
-    corpus: new Promise((res) => { release.corpus = res; }),
   };
   const fetched = [];
   window.fetch = (url) => {
     const u = String(url);
     fetched.push(u);
-    const tier = u === `data/${meta.files.index}` ? 'index'
-      : u === `data/${meta.files.corpus}` ? 'corpus' : null;
-    if (!tier) return Promise.reject(new Error('no network in tests: ' + u));
-    const body = read(path.join(DATA, u.slice('data/'.length)));
-    return gates[tier].then(() => ({
+    if (!u.startsWith('data/')) return Promise.reject(new Error('no network in tests: ' + u));
+    const fp = path.join(DATA, u.slice('data/'.length));
+    if (!fs.existsSync(fp)) return Promise.reject(new Error('no such tier artifact: ' + u));
+    const body = read(fp);
+    const gate = u === `data/${meta.files.index}` ? gates.index : Promise.resolve();
+    return gate.then(() => ({
       ok: true, status: 200,
       text: () => Promise.resolve(body),
       json: () => Promise.resolve(JSON.parse(body)),
@@ -154,27 +156,21 @@ async function bootShell() {
 
   const mounted = snap(); // stage 0: all scripts ran, nothing released yet
 
-  await act(async () => {
-    release.index();
-    await new Promise((r) => setTimeout(r, 0));
-  });
-  await flush();
-  const indexed = snap(); // stage 1: skinny Browse rows
-
+  // Projections shell: releasing the index IS the boot — pr-boot resolves
+  // ready on it, main.jsx labels and hides the overlay, and dataReady stays
+  // false forever (it means "full corpus resident", which no longer happens).
   let bootStepAtReady = null;
   await act(async () => {
-    release.corpus();
-    await PR.ready; // resolves after the snapshot merge + persist + 'pr:ready'
+    release.index();
+    await PR.ready;
     await new Promise((r) => setTimeout(r, 0)); // main.jsx ready.then → labelBoot/hideBoot
-    // Captured here, not in the settled snapshot: hideBoot removes #boot on a
-    // 500 ms timer, which the heavy full-corpus commit can outlast.
     const step = D.getElementById('boot-step');
     bootStepAtReady = step ? step.textContent : null;
   });
   await flush();
-  const settled = snap(); // stage 2: full corpus
+  const indexed = snap(); // stage 1: skinny rows, ready resolved, overlay gone
 
-  return { window, document: D, PR, scripts, fetched, errors, mounted, indexed, settled, bootStepAtReady };
+  return { window, document: D, PR, scripts, fetched, errors, mounted, indexed, bootStepAtReady, act, flush, snap };
 }
 
 // The one shared boot. Failures surface per-test through withTimeout below;
@@ -183,18 +179,25 @@ const booted = bootShell();
 booted.catch(() => {});
 const shell = () => withTimeout(booted, 120000, 'multi-file shell boot');
 
-test('the shell pins __PR_DATA to the exact hashed tier names in meta.json', async () => {
+test('the shell pins __PR_DATA to the index tier only (no corpus URL)', async () => {
   const b = await shell();
   assert.deepStrictEqual({ ...b.window.__PR_DATA }, {
     index: `data/${meta.files.index}`,
-    corpus: `data/${meta.files.corpus}`,
-  }, '__PR_DATA does not name the tiers meta.json records');
-  // And in the static markup, not just the executed window: the inline
-  // one-liner is what a stale shell would carry into a skewed deploy.
+  }, '__PR_DATA must name only the index — the corpus is off the fetch path');
   const oneLiner = b.scripts.find((s) => !s.src && s.body.includes('window.__PR_DATA'));
   assert.ok(oneLiner, 'no inline __PR_DATA script in the shell');
   assert.ok(oneLiner.body.includes(`data/${meta.files.index}`), 'index hash missing from the shell source');
-  assert.ok(oneLiner.body.includes(`data/${meta.files.corpus}`), 'corpus hash missing from the shell source');
+  assert.ok(!oneLiner.body.includes('corpus'), 'the shell must not reference a corpus URL');
+});
+
+test('the shell pins __PR_TIER_DATA and __PR_DETAILS_DATA to the hashed names in meta.json', async () => {
+  const b = await shell();
+  assert.deepStrictEqual({ ...b.window.__PR_TIER_DATA }, {
+    atlas: `data/${meta.files.atlas}`,
+    edges: `data/${meta.files.edges}`,
+  });
+  assert.strictEqual(b.window.__PR_DETAILS_DATA.buckets, meta.buckets);
+  assert.deepStrictEqual([...b.window.__PR_DETAILS_DATA.shards], meta.details.shards);
 });
 
 test('the shell inlines app/pr-boot.js verbatim', async () => {
@@ -218,45 +221,96 @@ test('stage 0: skeleton mounts before any tier arrives, boot overlay up, dataRea
   });
 });
 
-test('stage 1: released index → skinny Browse rows render, dataReady still false', async () => {
+test('the index IS the boot: rows render, ready resolves, overlay hides, dataReady stays false', async () => {
   const b = await shell();
   assert.ok(b.indexed.rows >= 2700, `expected >= 2700 skinny rows, got ${b.indexed.rows}`);
-  assert.strictEqual(b.indexed.rows, b.settled.rows, 'skinny and full row counts must agree');
-  assert.strictEqual(b.indexed.dataReady, false, 'dataReady must not flip on the index alone');
-  assert.strictEqual(b.indexed.corpusVersion, 1);
+  assert.strictEqual(b.indexed.dataReady, false, 'dataReady must stay false — no corpus ever arrives');
+  assert.strictEqual(b.indexed.corpusVersion, 1, 'corpusVersion reaches 1 (the index install)');
   assert.strictEqual(b.indexed.skeleton, false, 'the skeleton must be gone once real rows exist');
-  assert.strictEqual(b.indexed.bootHidden, false, 'the boot overlay must outlive the skinny stage');
-  assert.strictEqual(b.indexed.bootDone, false, '__bootDone must not flip before the corpus');
-});
-
-test('stage 2: released corpus → ready resolves, boot hidden, __bootDone, counted boot label', async () => {
-  const b = await shell();
-  assert.strictEqual(b.settled.dataReady, true, 'dataReady must flip with the corpus');
-  assert.strictEqual(b.settled.corpusVersion, 2, 'corpusVersion must reach 2 (index, then corpus)');
-  assert.ok(b.settled.rows >= 2700, `expected >= 2700 rows after ready, got ${b.settled.rows}`);
-  assert.strictEqual(b.settled.skeleton, false);
-  assert.strictEqual(b.settled.bootHidden, true, '#boot must be hidden (or removed) after ready');
-  assert.strictEqual(b.settled.bootDone, true, '__bootDone must flip once the app is interactive');
+  assert.strictEqual(b.indexed.bootHidden, true, '#boot must hide on ready — which the index resolves');
+  assert.strictEqual(b.indexed.bootDone, true, '__bootDone must flip once the app is interactive');
   assert.strictEqual(b.bootStepAtReady, `loaded ${meta.figures} figures`,
     'the boot label must carry the live figure count');
 });
 
-test('a known figure carries its full record fields after ready — not the skinny shape', async () => {
+test('loadTier(atlas) installs the derived layers and persists the atlas', async () => {
   const b = await shell();
-  const zeus = b.PR.seedPeople['greek_hesiod_zeus'];
-  assert.ok(zeus, 'greek_hesiod_zeus missing from __PR.seedPeople');
-  assert.strictEqual(zeus.name.primary, 'Zeus');
-  for (const k of ['domains', 'epithets', 'sources', 'cult', 'relations']) {
-    assert.ok(zeus[k] && typeof zeus[k] === 'object', `full-record field ${k} missing after ready`);
+  assert.strictEqual(b.PR.tierReady.atlas, false, 'atlas tier must start un-ready');
+  const v0 = b.PR.corpusVersion;
+  await b.act(async () => { await b.PR.loadTier('atlas'); await new Promise((r) => setTimeout(r, 0)); });
+  await b.flush();
+  assert.strictEqual(b.PR.tierReady.atlas, true);
+  assert.strictEqual(b.PR.corpusVersion, v0 + 1, 'corpusVersion must bump on the atlas install');
+  const file = JSON.parse(read(path.join(DATA, meta.files.atlas)));
+  for (const k of ['seedAtlas', 'divinity', 'traditionMix', 'inheritedPowers']) {
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(b.PR[k])), file[k], `__PR.${k} != atlas tier ${k}`);
   }
-  assert.ok(zeus.domains.length > 0, 'domains must be populated');
-  assert.ok(zeus.sources.length > 0, 'sources must be populated');
-  assert.ok(!('_dates' in zeus), 'the skinny-index marker must not survive the corpus swap');
+  // The returning-visitor stale-map fix must survive the corpus removal.
+  const stored = JSON.parse(b.window.localStorage.getItem(b.PR.ATLAS_KEY));
+  assert.deepStrictEqual(stored, file.seedAtlas, 'ATLAS_KEY must be overwritten on the atlas install');
 });
 
-test('the boot fetches exactly the two pinned tiers, index first', async () => {
+test('loadTier(edges) rehydrates every record — runtime render parity (2b hard gate)', async () => {
   const b = await shell();
-  assert.deepStrictEqual(b.fetched, [`data/${meta.files.index}`, `data/${meta.files.corpus}`]);
+  await b.act(async () => { await b.PR.loadTier('edges'); await new Promise((r) => setTimeout(r, 0)); });
+  await b.flush();
+  assert.strictEqual(b.PR.tierReady.edges, true);
+  const edges = JSON.parse(read(path.join(DATA, meta.files.edges)));
+  const corpusFile = JSON.parse(read(path.join(DATA, meta.files.corpus)));
+  const buildLinks = (people) => {
+    const links = [];
+    for (const id of Object.keys(people).sort()) {
+      const p = people[id];
+      for (const pid of (p.parentIds || [])) links.push([pid, id, 'parent']);
+      for (const r of (p.relations || [])) if (r && r.personId) links.push([id, r.personId, r.kind]);
+    }
+    return links;
+  };
+  const got = buildLinks(JSON.parse(JSON.stringify(b.PR.seedPeople)));
+  const want = buildLinks(corpusFile.seedPeople);
+  assert.deepStrictEqual(got, want, 'tier-rehydrated adjacency differs from the corpus adjacency');
+  for (const [id, e] of Object.entries(edges)) {
+    if (e.pr) assert.deepStrictEqual(JSON.parse(JSON.stringify(b.PR.seedPeople[id].parentRoles)), e.pr, `${id}: parentRoles`);
+  }
+});
+
+test('loadDetail(id) hydrates the figure from its content-hashed shard', async () => {
+  const b = await shell();
+  const id = 'greek_hesiod_zeus';
+  assert.ok(b.PR.seedPeople[id] && !b.PR.seedPeople[id]._full, 'record must start skinny');
+  await b.act(async () => { await b.PR.loadDetail(id); await new Promise((r) => setTimeout(r, 0)); });
+  await b.flush();
+  const rec = b.PR.seedPeople[id];
+  assert.strictEqual(rec._full, true, 'record must be marked _full after hydration');
+  for (const k of ['domains', 'epithets', 'sources', 'relations']) {
+    assert.ok(rec[k] && rec[k].length, `full-record field ${k} missing after shard hydration`);
+  }
+  assert.ok(b.PR.divinity && b.PR.divinity[id] != null, 'divinity must be present after hydration');
+  assert.strictEqual(b.PR.dataReady, false, 'dataReady must stay false — hydration is per-figure');
+});
+
+test('a missing detail shard rejects loadDetail — the degrade seam the Shell routes to the static page', async () => {
+  const b = await shell();
+  // Pick a figure whose bucket has not been fetched yet and break its shard name.
+  const DET = b.window.__PR_DETAILS_DATA;
+  const bucketOfId = (id) => { let s = 0; for (let k = 0; k < id.length; k++) s = (s + id.charCodeAt(k)) % DET.buckets; return s; };
+  const zeusBucket = bucketOfId('greek_hesiod_zeus');
+  const victim = Object.keys(JSON.parse(read(path.join(DATA, meta.files.edges))))
+    .find((id) => bucketOfId(id) !== zeusBucket && !(b.PR.seedPeople[id] && b.PR.seedPeople[id]._full));
+  assert.ok(victim, 'no un-hydrated victim figure found');
+  const vb = bucketOfId(victim);
+  const real = DET.shards[vb];
+  DET.shards[vb] = 'no-such-shard.json';
+  await assert.rejects(() => b.PR.loadDetail(victim), /no such tier artifact|HTTP/,
+    'a missing shard must reject so the caller can degrade to registry/<id>.html');
+  DET.shards[vb] = real;
+});
+
+test('the boot fetches exactly one tier: the index', async () => {
+  const b = await shell();
+  assert.strictEqual(b.fetched[0], `data/${meta.files.index}`, 'the index must be the first fetch');
+  const bootFetches = b.fetched.filter((u) => u === `data/${meta.files.corpus}`);
+  assert.deepStrictEqual(bootFetches, [], 'nothing may fetch the corpus — it is off the fetch path');
 });
 
 test('the whole boot surfaces no errors', async () => {

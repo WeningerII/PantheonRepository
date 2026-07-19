@@ -49,6 +49,11 @@ if ((window.__PR && window.__PR.seedPeople) || !window.__PR_DATA) {
   PR.registryReady = { items: true, powers: true, domains: true };
   PR.registryVersion = 0;
   PR.loadRegistry = function () { return PR.ready; };
+  // Same mode-agnostic no-ops for the projection tiers (atlas, edges) — the
+  // sync corpus already carries everything they would deliver.
+  PR.tierReady = { atlas: true, edges: true };
+  PR.loadTier = function () { return PR.ready; };
+  PR.loadDetail = function () { return PR.ready; };
   return;
 }
 
@@ -146,6 +151,10 @@ Object.assign(PR, {
   // UI's list memos re-read the newly-available registry. See loadRegistry.
   registryReady: { items: false, powers: false, domains: false },
   registryVersion: 0,
+  // Projection-tier readiness (the corpus-blob replacements): atlas unblocks
+  // the Atlas view + divinity/mix lookups, edges unblocks Graph/Lineage.
+  // Either the tier install or the full corpus flips these. See loadTier.
+  tierReady: { atlas: false, edges: false },
   ready,
   getEntryDates,
   formatFraction,
@@ -174,7 +183,7 @@ const fail = (err) => {
 // on this rejection. Contrast fail(), reserved for an index failure with nothing
 // to render.
 const corpusFail = (err) => {
-  console.error('[pr-boot] corpus load failed — running on the skinny index. Browse works; the corpus-only views (Graph / Atlas / Items / Powers / Domains) stay unavailable until reload.', err);
+  console.error('[pr-boot] corpus load failed — running on the skinny index. Browse works, and any view whose own tier landed (Atlas / Graph / Items / Powers / Domains) keeps working; figure detail and anything still corpus-bound stay unavailable until reload.', err);
   PR.corpusFailed = true;
   rejectReady(err);
 };
@@ -281,6 +290,124 @@ const loadRegistry = (kind) => {
 };
 PR.loadRegistry = loadRegistry;
 
+// ─── Lazy projection tiers (atlas, edges) ───────────────────────────────────
+// The corpus-blob replacements (projections migration Phase 2). Same
+// idempotent per-kind promise cache and catch-to-corpus fallback as
+// loadRegistry — the production-proven degrade seam.
+//
+//   atlas  {seedAtlas, divinity, traditionMix, inheritedPowers} — assigned
+//          onto __PR verbatim; the Atlas view and the divinity/mix/descent
+//          lookups read exactly these keys.
+//   edges  id → {p, pr, r} — rehydrated ONTO the skinny index records as
+//          parentIds / parentRoles / relations[{kind, personId}]: precisely
+//          the fields Graph, Lineage, and childrenOf consume. The transform
+//          is specified (and held lossless) by test/scale-gates.test.cjs;
+//          test/multifile.test.cjs holds this runtime to the same result.
+// Installs bump corpusVersion (these change record-derived caches) and
+// announce via 'pr:tier'; state.jsx reloads people/atlas on that event.
+const tierPromises = {};
+const installAtlasTier = (tier) => {
+  Object.assign(PR, tier);
+  PR.tierReady.atlas = true;
+  // The persist tail's atlas half, moved here for the corpus-less shell: a
+  // returning visitor must never keep a stale map (the exact production
+  // incident storage.test.cjs pins on the sync path). Small write, own try.
+  try {
+    const ATLAS_KEY = PR.ATLAS_KEY || 'pantheon_atlas_v3';
+    localStorage.setItem(ATLAS_KEY, JSON.stringify(tier.seedAtlas));
+  } catch (e) { console.warn('pantheon atlas persist failed', e); }
+  PR.corpusVersion++;
+  dispatch('pr:tier');
+};
+const installEdgesTier = (edges) => {
+  const P = PR.seedPeople || {};
+  for (const id of Object.keys(P)) {
+    const rec = P[id];
+    const e = edges[id];
+    rec.parentIds = (e && e.p) ? e.p : [];
+    if (e && e.pr) rec.parentRoles = e.pr;
+    rec.relations = (e && e.r) ? e.r.map((x) => ({ kind: x.k, personId: x.id })) : [];
+  }
+  PR.tierReady.edges = true;
+  PR.corpusVersion++;
+  dispatch('pr:tier');
+};
+const loadTier = (kind) => {
+  if (!PR.tierReady || !(kind in PR.tierReady)) return ready;
+  if (PR.tierReady[kind]) return Promise.resolve(PR);
+  if (tierPromises[kind]) return tierPromises[kind];
+  const urls = window.__PR_TIER_DATA;
+  const url = urls && urls[kind];
+  // No tier URL (embedded artifact): the corpus carries everything — wait on it.
+  if (!url) return (tierPromises[kind] = ready);
+  const p = fetchTier(url, 'json')
+    .then((data) => {
+      (kind === 'atlas' ? installAtlasTier : installEdgesTier)(data);
+      return PR;
+    })
+    .catch((err) => {
+      console.warn('[pr-boot] tier ' + kind + ' failed; falling back to corpus', err);
+      delete tierPromises[kind];
+      return ready;
+    });
+  return (tierPromises[kind] = p);
+};
+PR.loadTier = loadTier;
+
+// ─── Lazy figure detail (content-hashed shards) ─────────────────────────────
+// loadDetail(id) fetches the hash-bucketed shard carrying the figure's FULL
+// record (plus precomputed _divinity/_inherited/_traditionMix) and merges the
+// whole bucket into __PR.seedPeople — full records replace skinny ones, each
+// marked _full so the Shell can gate Detail per figure instead of on the
+// whole corpus. Derived layers install into the same lookups the atlas tier
+// fills, so divinityInfo()/traditionMix() work figure-by-figure even before
+// that tier lands. Merging into the shared map (never "set current figure")
+// makes late responses harmless: a stale shard arrival just hydrates more
+// records — the render keys off selectedId, not off the response.
+// The manifest travels in window.__PR_DETAILS_DATA {dir, buckets, shards[]},
+// pinned by the build like every other hashed tier name.
+const shardPromises = {};
+const detailBucketOf = (id, n) => { let s = 0; for (let k = 0; k < id.length; k++) s = (s + id.charCodeAt(k)) % n; return s; };
+const loadDetail = (id) => {
+  if (PR.dataReady) return Promise.resolve(PR);
+  const DET = window.__PR_DETAILS_DATA;
+  if (!DET || !DET.shards || !id) return ready;
+  const have = PR.seedPeople && PR.seedPeople[id];
+  if (have && have._full) return Promise.resolve(PR);
+  const b = detailBucketOf(id, DET.buckets);
+  if (shardPromises[b]) return shardPromises[b];
+  const p = fetchTier(DET.dir + DET.shards[b], 'json')
+    .then((recs) => {
+      const P = PR.seedPeople || (PR.seedPeople = {});
+      PR.divinity = PR.divinity || {};
+      PR.inheritedPowers = PR.inheritedPowers || {};
+      PR.traditionMix = PR.traditionMix || {};
+      for (const rid of Object.keys(recs)) {
+        const rec = recs[rid];
+        rec._full = true;
+        P[rid] = rec;
+        if (rec._divinity != null && PR.divinity[rid] == null) PR.divinity[rid] = rec._divinity;
+        if (rec._inherited && !PR.inheritedPowers[rid]) PR.inheritedPowers[rid] = rec._inherited;
+        if (rec._traditionMix && !PR.traditionMix[rid]) PR.traditionMix[rid] = rec._traditionMix;
+      }
+      PR.corpusVersion++;
+      dispatch('pr:tier');
+      return PR;
+    })
+    .catch((err) => {
+      console.warn('[pr-boot] detail shard ' + b + ' failed', err);
+      delete shardPromises[b]; // next call retries the fetch
+      // Legacy shells (corpus URL present) fall back to the corpus, which
+      // carries the same records. Projection shells have no corpus: rethrow
+      // so the caller can degrade — the Shell deep-links the static
+      // registry/<id>.html page instead of rendering a broken pane.
+      if (TIERS.corpus) return ready;
+      throw err;
+    });
+  return (shardPromises[b] = p);
+};
+PR.loadDetail = loadDetail;
+
 // ─── Install stages — ONE path for both sources ─────────────────────────────
 // Everything behavioral (corpusVersion, the events, dataReady, the persist
 // tail, ready resolution) lives here so the fetched and embedded sources
@@ -290,11 +417,15 @@ const installIndex = (records) => {
   PR.seedPeople = adaptIndex(records);
   PR.corpusVersion++;
   dispatch('pr:index');
-  // Warm the small registry tiers on idle so the first Items/Powers/Domains
-  // navigation is instant. Never blocks the corpus (already in flight), and is
-  // inert wherever there is no idle callback (jsdom) or no tier URLs (artifact).
+  // Warm the small registry + projection tiers on idle so the first
+  // Items/Powers/Domains/Atlas/Graph navigation is instant. Never blocks the
+  // corpus (already in flight), and is inert wherever there is no idle
+  // callback (jsdom) or no tier URLs (artifact).
   if (typeof window.requestIdleCallback === 'function' && window.__PR_REGISTRY_DATA) {
     window.requestIdleCallback(() => { loadRegistry('items'); loadRegistry('powers'); loadRegistry('domains'); });
+  }
+  if (typeof window.requestIdleCallback === 'function' && window.__PR_TIER_DATA) {
+    window.requestIdleCallback(() => { loadTier('atlas'); loadTier('edges'); });
   }
 };
 const installCorpus = (snapshot) => {
@@ -308,6 +439,8 @@ const installCorpus = (snapshot) => {
   // the 'pr:ready' below already refreshes the UI, which re-reads registryReady.
   for (const k of Object.keys(PR.registryReady)) PR.registryReady[k] = true;
   PR.registryVersion++;
+  // Likewise the projection tiers: the snapshot IS their superset.
+  for (const k of Object.keys(PR.tierReady)) PR.tierReady[k] = true;
   persist(snapshot);
   dispatch('pr:ready');
   resolveReady(PR);
@@ -337,10 +470,11 @@ if (TIERS.embeddedCorpus) {
     })
     .then(installCorpus)
     .catch(fail);
-} else {
-  // Fetched source (Pages shell): both fetches start now and stream while
-  // the shell's UI scripts parse; installs stay ordered (index → corpus) so
-  // corpusVersion and the events are monotonic.
+} else if (TIERS.corpus) {
+  // Legacy fetched source (a pre-projections shell cached under Pages'
+  // max-age=600 during a deploy): both fetches start now, installs stay
+  // ordered (index → corpus). Kept fully functional — the corpus artifact is
+  // still emitted — so a skewed deploy never strands an old shell.
   const indexFetch = fetchTier(TIERS.index, 'json');
   const corpusFetch = fetchTier(TIERS.corpus, 'text');
   // Surfaced via the chain below; an index failure must not strand this
@@ -355,6 +489,27 @@ if (TIERS.embeddedCorpus) {
       // corpusFail (reject + log, no overlay); only an INDEX failure reaches the
       // fatal .catch(fail) below, where there is genuinely nothing to render.
       return corpusFetch.then(parseOnIdle).then(installCorpus).catch(corpusFail);
+    })
+    .catch(fail);
+} else {
+  // Projections source (Phase 3): the index IS the boot. Everything richer
+  // arrives through its own tier — atlas/edges on idle or navigation, figure
+  // records per detail-shard open, registries per view. ready resolves here
+  // (main.jsx hides the boot overlay on it); dataReady stays false forever —
+  // it means "full corpus resident", which no longer happens, and every view
+  // gate already keys on its own tier flag. The persist tail shrinks to the
+  // stale-key purge (the atlas half moved into installAtlasTier; the
+  // PEOPLE_KEY seed-if-empty died with the snapshot — it was dead code in
+  // real browsers behind the quota probe, and loadPeople still honors a
+  // legacy-environment value if one exists).
+  fetchTier(TIERS.index, 'json')
+    .then((records) => {
+      installIndex(records);
+      for (const stale of ['pantheon_registry_v7', 'pantheon_registry_v8', 'pantheon_atlas_v1', 'pantheon_atlas_v2', 'pantheon_constants_v1']) {
+        try { localStorage.removeItem(stale); } catch (_) {}
+      }
+      dispatch('pr:ready');
+      resolveReady(PR);
     })
     .catch(fail);
 }

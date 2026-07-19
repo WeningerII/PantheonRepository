@@ -252,7 +252,7 @@ function ViewLoading({ label }) {
 }
 
 function Shell() {
-  const { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, registryReady, registryVersion } = window.useData();
+  const { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, registryReady, registryVersion, tierReady } = window.useData();
   const filters = window.useFilters(people);
   const selection = window.useSelection(filters.filtered);
   const filteredRef = __sRef(filters.filtered);
@@ -376,6 +376,17 @@ function Shell() {
     if (regWant.domains) load('domains');
   }, [regWant.items, regWant.powers, regWant.domains, registryVersion]);
 
+  // Same pattern for the projection tiers: the Atlas view unblocks on the
+  // atlas tier (seedAtlas + derived layers), Graph/Lineage on the edges tier
+  // rehydrated over the skinny records. loadTier is idempotent and absent on
+  // sync boots (where tierReady is already all-true).
+  __sEff(() => {
+    const load = window.__PR && window.__PR.loadTier;
+    if (!load) return;
+    if (view === 'atlas') load('atlas');
+    if (view === 'graph') load('edges');
+  }, [view, corpusVersion]);
+
   // Warm the deferred power/domain registries (module-cached in state.jsx)
   // off the critical path so the first Powers/Domains navigation pays
   // nothing. Browsers only — without requestIdleCallback (jsdom) the first
@@ -449,15 +460,20 @@ function Shell() {
       try { id = decodeURIComponent(parts[1]); } catch (_) { id = parts[1]; }
     }
     setView(v);
-    // Async boot: an id in the hash names a full record (figure relations,
-    // the item/power/domain registries) that the skinny index can't satisfy.
-    // Show the view now and re-apply the whole hash once the corpus lands —
-    // pr-boot settles localStorage before resolving, so the deferred pass
-    // resolves against the same records a sync boot would have seen. Multiple
-    // hash edits during the wait each queue a re-apply; every one re-reads
-    // the live hash, so the last edit wins. A rejected ready is already
-    // painted into the boot overlay by pr-boot — swallow it here.
-    if (id && window.__PR && window.__PR.dataReady === false && window.__PR.ready) {
+    // Async boot, PRE-INDEX only: an id in the hash names a record that does
+    // not exist yet (no seedPeople at all). Show the view now and re-apply
+    // the whole hash once ready fires — which pr-boot resolves after the
+    // index install (projections shell) or the corpus persist tail (legacy
+    // shell), so the deferred pass sees settled records either way. The gate
+    // MUST be seedPeople's absence, not dataReady: in the projections shell
+    // dataReady stays false forever while ready is already resolved, and
+    // gating on it re-armed this deferral in an infinite microtask loop.
+    // Once records exist, ids resolve against them directly — a figure id
+    // hydrates through the loadDetail effect below. Multiple hash edits
+    // during the wait each queue a re-apply; every one re-reads the live
+    // hash, so the last edit wins. A rejected ready is already painted into
+    // the boot overlay by pr-boot — swallow it here.
+    if (id && window.__PR && !window.__PR.seedPeople && window.__PR.ready) {
       window.__PR.ready.then(() => applyHashRef.current(), () => {});
       return;
     }
@@ -547,11 +563,33 @@ function Shell() {
   }, [view, selection.selectedId, graphFocusId, atlasFocus, selectedItemId, selectedPowerId, selectedDomainId]);
   // ─────────────────────────────────────────────────────────────────────
 
-  // Gated on dataReady: Detail's j/k stepping and cross-links assume the
-  // full record (relations, faculties, materialCulture), which skinny index
-  // rows don't carry. A row clicked during the skinny window keeps its
-  // selectedId and the slide-over opens on the render after 'pr:ready'.
-  const selectedEntry = (dataReady && selection.selectedId) ? byId.get(selection.selectedId) : null;
+  // Detail gates per FIGURE, not on the whole corpus: a record is renderable
+  // when the corpus landed (dataReady) or its detail shard hydrated it
+  // (_full). A row clicked during the skinny window triggers the shard fetch
+  // below and the slide-over opens on the render after 'pr:tier'.
+  const selectedRec = selection.selectedId ? byId.get(selection.selectedId) : null;
+  const selectedEntry = (selectedRec && (dataReady || selectedRec._full)) ? selectedRec : null;
+
+  // Fetch the selected figure's detail shard the moment it's wanted.
+  // loadDetail is idempotent (per-bucket promise cache) and a resolved no-op
+  // on sync boots. The edges + atlas tiers ride along so Parentage/Descent/
+  // divinity render complete, not skeleton-shaped.
+  __sEff(() => {
+    const P = window.__PR;
+    if (!P || !selection.selectedId || dataReady) return;
+    const id = selection.selectedId;
+    if (P.loadDetail) {
+      P.loadDetail(id).catch(() => {
+        // Shard fetch failed with no corpus to fall back to: degrade to the
+        // static page — complete, cited, always deployed beside the app
+        // (scale-gates holds it field-complete). A 404-class boring failure
+        // instead of a broken pane.
+        const rec = P.seedPeople && P.seedPeople[id];
+        if (!(rec && rec._full)) window.location.assign('registry/' + id + '.html');
+      });
+    }
+    if (P.loadTier) { P.loadTier('edges'); P.loadTier('atlas'); }
+  }, [selection.selectedId, dataReady, corpusVersion]);
 
   // Find current index of the selected entry within current filtered list
   const selIdxInFiltered = __sMemo(() => {
@@ -867,8 +905,8 @@ function Shell() {
               Graph, seedAtlas for Atlas, the registries for Items/Powers/
               Domains) — behind the placeholder until the async corpus lands.
               dataReady is true from the first frame on every sync boot. */}
-          {view === 'graph' && !dataReady && <ViewLoading label="graph" />}
-          {(view === 'graph' || leavingView === 'graph') && dataReady && (
+          {view === 'graph' && !(dataReady || tierReady.edges) && <ViewLoading label="graph" />}
+          {(view === 'graph' || leavingView === 'graph') && (dataReady || tierReady.edges) && (
             <div className={'view-pane' + (view === 'graph' ? '' : ' pane-leaving')}>
               <window.Graph
                 people={filters.filtered}
@@ -879,8 +917,8 @@ function Shell() {
               />
             </div>
           )}
-          {view === 'atlas' && !dataReady && <ViewLoading label="atlas" />}
-          {(view === 'atlas' || leavingView === 'atlas') && dataReady && (
+          {view === 'atlas' && !(dataReady || tierReady.atlas) && <ViewLoading label="atlas" />}
+          {(view === 'atlas' || leavingView === 'atlas') && (dataReady || tierReady.atlas) && (
             <div className={'view-pane' + (view === 'atlas' ? '' : ' pane-leaving')}>
               <window.Atlas
                 atlas={atlas}

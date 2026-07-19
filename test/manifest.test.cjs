@@ -92,7 +92,7 @@ test('the Pages shell keeps pr-boot after core/__PR_DATA and before the UI scrip
   // (pr-boot reads it), the core.js tag (module-scope __PR constants), then
   // the inlined pr-boot itself.
   assertOrdered(pagesLayer,
-    ['window.__PR_DATA', 'tiers["core"]', 'pr-boot.js (async data loader, inlined)'], 'pages');
+    ['window.__PR_DATA', 'window.__PR_REGISTRY_DATA', 'window.__PR_TIER_DATA', 'window.__PR_DETAILS_DATA', 'tiers["core"]', 'pr-boot.js (async data loader, inlined)'], 'pages');
   // Both modes inline the real loader file, not a copy.
   assert.match(py, /data_name = 'pr-boot\.js'/, 'the build must inline app/pr-boot.js');
 

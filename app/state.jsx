@@ -536,6 +536,9 @@ function readRegistryState() {
   return {
     registryReady: (R && R.registryReady) ? { ...R.registryReady } : { items: true, powers: true, domains: true },
     registryVersion: (R && R.registryVersion) || 0,
+    // Projection tiers (atlas, edges): absent flags mean the sync world,
+    // where the corpus carries everything from the first frame.
+    tierReady: (R && R.tierReady) ? { ...R.tierReady } : { atlas: true, edges: true },
   };
 }
 const registryAllReady = (r) => !!(r && r.items && r.powers && r.domains);
@@ -548,7 +551,7 @@ function useData() {
     corpusVersion: (window.__PR && window.__PR.corpusVersion) || 0,
     ...readRegistryState(),
   }));
-  const { people, atlas, dataReady, corpusVersion, registryReady, registryVersion } = data;
+  const { people, atlas, dataReady, corpusVersion, registryReady, registryVersion, tierReady } = data;
   const ready = people.length > 0;
 
   useEffect(() => {
@@ -561,12 +564,14 @@ function useData() {
       ...readRegistryState(),
     });
     window.addEventListener('pr:index', refresh);
+    window.addEventListener('pr:tier', refresh);
     window.addEventListener('pr:ready', refresh);
     // A stage that landed between the initializer and this subscription
     // would otherwise be missed — its event already fired.
     if ((window.__PR.corpusVersion || 0) !== data.corpusVersion) refresh();
     return () => {
       window.removeEventListener('pr:index', refresh);
+      window.removeEventListener('pr:tier', refresh);
       window.removeEventListener('pr:ready', refresh);
     };
   // Mount-only by design: `data` here is the first-render snapshot, used only
@@ -606,7 +611,7 @@ function useData() {
     return m;
   }, [people]);
 
-  return { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, registryReady, registryVersion };
+  return { people, atlas, byId, childrenOf, ready, dataReady, corpusVersion, registryReady, registryVersion, tierReady };
 }
 
 // ── Hook: useFilters ─────────────────────────────────────────────────────
