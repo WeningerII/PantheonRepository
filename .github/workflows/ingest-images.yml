@@ -1,0 +1,105 @@
+name: Ingest Commons images
+
+# Fetch PD / PD-old / PD-art / CC0 figure portraits from Wikimedia Commons
+# (docs/image-licensing.md — the owner-set HARD RULE) and commit the optimized,
+# self-hosted results. This lives in CI, not the build, because Commons is
+# unreachable from the build sandbox and because ingest needs network + sharp.
+# The running site only ever reads the committed, license-verified output.
+#
+# Run it from the Actions tab (workflow_dispatch). Modes:
+#   fetch    — download every approved "File:…" in data-sources/image-sources.json,
+#              RE-VERIFY its license is PD/CC0, optimize to WebP, and commit the
+#              images under assets/images/figures/ + data-sources/images.json.
+#   discover — search Commons for figures that still lack an image, license-gate
+#              the hits, and commit PD/CC0 candidates to
+#              data-sources/image-candidates.json for human review (downloads no
+#              full images). Copy chosen "title"s into image-sources.json, then
+#              run fetch.
+#   check    — re-verify every already-ingested file is still PD/CC0 (licenses on
+#              Commons can change; files get deleted). Fails the run on drift.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'What to run'
+        type: choice
+        options: [fetch, discover, check]
+        default: fetch
+      limit:
+        description: 'discover: max figures to probe (blank = all)'
+        type: string
+        default: ''
+      tradition:
+        description: 'discover: restrict to one tradition (blank = all)'
+        type: string
+        default: ''
+
+# The job commits the fetched images back to the branch it was dispatched from.
+permissions:
+  contents: write
+
+concurrency:
+  group: ingest-images-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      # sharp converts the Commons-sized thumbnails to WebP so committed
+      # portraits are small. The script treats it as optional (falls back to the
+      # original bytes); here we install it so the committed output is optimized.
+      - name: Install sharp (WebP optimization)
+        run: npm install --no-save sharp
+
+      # Inputs pass through env, never interpolated into the shell, so a
+      # dispatch value can't inject commands.
+      - name: Run ingest
+        env:
+          MODE: ${{ inputs.mode }}
+          LIMIT: ${{ inputs.limit }}
+          TRAD: ${{ inputs.tradition }}
+        run: |
+          set -euo pipefail
+          ARGS=()
+          if [ -n "$LIMIT" ]; then ARGS+=(--limit "$LIMIT"); fi
+          if [ -n "$TRAD" ]; then ARGS+=(--trad "$TRAD"); fi
+          node scripts/ingest-images.cjs "$MODE" "${ARGS[@]}"
+
+      # Never publish an image whose license drifted. fetch re-verifies each file
+      # at download, but this also catches a previously-committed image whose
+      # Commons license changed since it was ingested.
+      - name: Re-verify licenses (fetch)
+        if: ${{ inputs.mode == 'fetch' }}
+        run: node scripts/ingest-images.cjs check
+
+      - name: Commit results
+        env:
+          MODE: ${{ inputs.mode }}
+        run: |
+          set -euo pipefail
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add assets/images \
+                  data-sources/images.json \
+                  data-sources/image-candidates.json \
+                  data-sources/image-rejects.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No image changes to commit."
+          else
+            git commit -m "Ingest PD/CC0 Commons images ($MODE)"
+            git push
+          fi

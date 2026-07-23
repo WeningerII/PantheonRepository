@@ -61,3 +61,29 @@ One `action=query&prop=imageinfo&iiprop=url|extmetadata` call per file returns
 the image URL and the machine-readable license fields; gate on `License` /
 `Copyrighted` per rule 2. A descriptive, contactable `User-Agent` (or
 `Api-User-Agent` header from browser JS) is mandatory or the API returns 403.
+
+## Implementation
+
+The rules above are enforced in code, in one place each:
+
+- **The gate** — `scripts/lib/commons-license.cjs` `classify(extmetadata)` is the
+  single implementation of rules 2–3 (accept PD/CC0, reject everything else,
+  veto on non-empty `Restrictions`). Unit-tested in
+  `test/commons-license.test.cjs`.
+- **The pipeline** — `scripts/ingest-images.cjs` runs in CI (not the build
+  sandbox, which can't reach Commons): `discover` proposes PD/CC0 candidates for
+  human review → `data-sources/image-candidates.json`; a human copies chosen
+  `File:…` titles into `data-sources/image-sources.json`; `fetch` re-verifies the
+  license, downloads a Commons server-sized thumbnail (`iiurlwidth`, so no local
+  resize), optimizes to WebP, self-hosts under `assets/images/figures/`, archives
+  the `extmetadata` for the audit trail (rule 6), and writes the manifest
+  `data-sources/images.json`; `check` re-verifies committed files still pass.
+  Driven by `.github/workflows/ingest-images.yml`.
+- **Where it ships** — the manifest merges onto the per-figure **detail shards
+  only** (`scripts/build-tiers.cjs`), never the skinny first-load index, so a
+  portrait per figure costs nothing at first load (`test/scale-gates.test.cjs`
+  holds this). The image renders as a top-right infobox in the app
+  (`app/Detail.jsx` `LeadImage`) and on the static pages
+  (`scripts/lib/lead-figure.cjs`), each with the courtesy credit from the
+  Attribution section, self-hosted (rule 5) and `width`/`height`-reserved so it
+  never shifts the layout on load.

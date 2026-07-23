@@ -31,6 +31,7 @@ const fs = require('fs');
 const path = require('path');
 const { loadCorpus } = require('./build-tiers.cjs');
 const { citeUrl } = require('../app/cite-links.js');
+const { leadFigure } = require('./lib/lead-figure.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE = process.env.PR_STATIC_OUT || path.join(ROOT, 'dist', 'site');
@@ -40,6 +41,10 @@ const BASE = (require('../package.json').homepage || 'https://weningerii.github.
 const PR = loadCorpus();
 const PEOPLE = PR.seedPeople;
 const IDS = Object.keys(PEOPLE).sort();
+// PD/CC0 figure images (docs/image-licensing.md), self-hosted under
+// assets/images/figures/ and copied into dist/site by main(). The static
+// page shows the same lead portrait as the SPA infobox — SEO + no-JS parity.
+const IMAGES = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data-sources', 'images.json'), 'utf8')); } catch (_) { return {}; } })();
 
 // ── helpers ──────────────────────────────────────────────────────────────
 const esc = (s) => String(s == null ? '' : s)
@@ -87,6 +92,10 @@ ul{padding-left:1.1rem;margin:.3rem 0}li{margin:.15rem 0}
 .trad h2{margin-top:2.4rem}
 .app-link{display:inline-block;margin-top:2rem;padding:.5rem .9rem;border:1px solid currentColor;
   border-radius:4px;font-size:.9rem}
+.lead{float:right;width:min(42%,15rem);margin:.2rem 0 1rem 1.4rem;font-size:.78rem}
+.lead img{width:100%;height:auto;display:block;border-radius:6px;background:#8881}
+.lead figcaption{opacity:.6;margin-top:.4rem;line-height:1.4}
+@media(max-width:34rem){.lead{float:none;width:auto;max-width:18rem;margin:.2rem auto 1.4rem}}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #8884;font-size:.85rem;opacity:.6}`;
 
 const OG_IMAGE = `${BASE}og-image.png`;
@@ -137,11 +146,17 @@ function figurePage(id) {
   const sec = (label, html) => html ? `<h2>${label}</h2>${html}` : '';
   const list = (arr) => arr.length ? `<ul>${arr.map((x) => `<li>${x}</li>`).join('')}</ul>` : '';
 
+  // PD/CC0 lead portrait, floated top-right (docs/image-licensing.md). Self-hosted
+  // under assets/images/figures/; courtesy credit + license link back to Commons.
+  const img = IMAGES[id];
+  const lead = leadFigure(img, primary(p), BASE);
+
   const ld = {
     '@context': 'https://schema.org', '@type': 'Person',
     name: primary(p),
     alternateName: (p.name && p.name.alt) || undefined,
     description: desc,
+    image: img && img.file ? `${BASE}assets/images/figures/${img.file}` : undefined,
     additionalType: 'https://schema.org/Thing',
     subjectOf: sources.length ? sources.slice(0, 12).map((s) => ({ '@type': 'CreativeWork', name: s })) : undefined,
     url: `${BASE}registry/${id}.html`,
@@ -150,7 +165,7 @@ function figurePage(id) {
   const canonical = `<link rel="canonical" href="${BASE}registry/${esc(id)}.html">\n`;
 
   const body = `<nav class="crumb"><a href="index.html">← Registry</a></nav>
-<h1>${esc(primary(p))}</h1>
+${lead}<h1>${esc(primary(p))}</h1>
 <div class="sub">${esc(tline)}${div && div.tier ? ` · ${esc(humanize(div.tier))}` : ''}</div>
 ${p.notes ? `<p>${esc(p.notes)}</p>` : ''}
 ${sec('Parentage', list(parents.map(figLink)))}
@@ -419,6 +434,16 @@ function main() {
   fs.writeFileSync(path.join(REG, 'figures.json'), figuresJson());
   // Social share image, served at the site root for og:image / twitter:image.
   fs.copyFileSync(path.join(ROOT, 'app', 'og-image.png'), path.join(SITE, 'og-image.png'));
+  // Self-hosted PD/CC0 figure portraits (docs/image-licensing.md). Copy the whole
+  // tree so the static pages and the SPA serve the same files; exclude the _meta
+  // provenance archive (kept in the repo, not deployed).
+  const imgSrc = path.join(ROOT, 'assets', 'images');
+  if (fs.existsSync(imgSrc)) {
+    fs.cpSync(imgSrc, path.join(SITE, 'assets', 'images'), {
+      recursive: true,
+      filter: (s) => !s.split(path.sep).includes('_meta'),
+    });
+  }
   const tf = traditionFiles();
   enrichShell();
   console.log(`[static] wrote ${n} figure pages + index, sitemap (${n + 2} urls), robots.txt, llms.txt + llms-full.txt, registry/figures.json, ${tf} per-tradition files; shell enriched`);
