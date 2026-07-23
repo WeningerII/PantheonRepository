@@ -37,9 +37,14 @@ harvest ─► TIER A (auto-ships) confident QID → P18 canonical image
            title, no panorama) → WebP → commit. P31 negative classes
            (film/asteroid/genus/…) demote a bad mapping instead.
 
-fallback ─► TIER B (review)    everything less certain: P180 "depicts"
-            search, then ranked text search → top 3 per figure into
-            image-review.json → contact sheet (image-review.html)
+fallback ─► TIER B (review)    everything less certain, from EVERY source,
+            deepest first: the QID's P18 lead, its Commons category (P373 —
+            the richest, human-curated set of images OF the figure), P180
+            "depicts", and text search over primary AND alternate names.
+            Deduped, ranked, top 3 → image-review.json → contact sheet.
+            (map enriches each mapping with its P18 + P373 so fallback can use
+            them; `image-run.json {"rescan":true}` re-runs this deep pass over
+            previously-empty figures.)
 
 owner ───► approves on the sheet (keys 1/2/3/x) → exports
            image-approved.json → push → `approved` ingests

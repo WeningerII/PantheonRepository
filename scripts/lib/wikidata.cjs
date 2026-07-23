@@ -69,6 +69,20 @@ const p31Of = (entity) => {
   return cs.map((c) => c && c.mainsnak && c.mainsnak.datavalue && c.mainsnak.datavalue.value && c.mainsnak.datavalue.value.id)
     .filter(Boolean);
 };
+// P373 "Commons category" — the human-curated category holding images OF the
+// entity (Category:Zeus). Its file members are the single richest image source,
+// far better than a blind text search. Value is a bare category name.
+const p373Of = (entity) => {
+  const c = entity && entity.claims && entity.claims.P373;
+  const v = c && c[0] && c[0].mainsnak && c[0].mainsnak.datavalue && c[0].mainsnak.datavalue.value;
+  return typeof v === 'string' && v ? v : null;
+};
+// The Commons sitelink title (e.g. "Category:Zeus" or a gallery page), a
+// fallback when P373 is absent but the entity links Commons directly.
+const commonsSitelink = (entity) => {
+  const s = entity && entity.sitelinks && (entity.sitelinks.commonswiki || entity.sitelinks.commons);
+  return (s && s.title) || null;
+};
 
 // P31 classes that mean we matched the WRONG KIND of entity (a film named
 // Thor, an asteroid named Iris, a genus named Iris…). Deliberately a SMALL,
@@ -173,7 +187,7 @@ function corpusCollisions(figures) {
 }
 
 module.exports = {
-  searchEntities, getEntities, p18Of, p31Of, NEGATIVE_P31,
+  searchEntities, getEntities, p18Of, p31Of, p373Of, commonsSitelink, NEGATIVE_P31,
   normName, figureNames, nameMatches, pickQid, corpusCollisions,
   MYTH_DESC, WRONG_DESC,
 };

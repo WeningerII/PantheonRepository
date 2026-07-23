@@ -231,6 +231,41 @@ const searchCandidates = (query, limit = 30) => gatedSearch(query, limit);
 // Structured "depicts this entity" search — files editors tagged P180=<qid>.
 const searchDepicts = (qid, limit = 15) => gatedSearch(`haswbstatement:P180=${qid}`, limit);
 
+// The candidate shape used everywhere in review/ranking, from a raw imageinfo.
+const toCand = (title, info) => ({
+  title, thumb: info.thumburl || info.url, w: info.thumbwidth || info.width,
+  h: info.thumbheight || info.height, mime: info.mime,
+});
+// One File: → a gated candidate (or null). Used for a QID's P18 lead image.
+async function fileCandidate(title) {
+  let info; try { info = await imageInfo(title, 320); } catch (_) { return null; }
+  if (!info) return null;
+  const v = classify(info.extmetadata);
+  if (!v.accept) return null;
+  return { ...toCand(title, info), license: v.license.shortName || v.license.key, author: v.author };
+}
+// Files in a Commons category (P373) — the richest, human-curated image source
+// for a figure. generator=categorymembers over the File namespace, license-gated.
+async function commonsCategoryFiles(cat, limit = 20) {
+  const title = /^category:/i.test(cat) ? cat : 'Category:' + cat;
+  const u = new URL(API);
+  u.search = new URLSearchParams({
+    action: 'query', generator: 'categorymembers', gcmtitle: title, gcmtype: 'file', gcmlimit: String(limit),
+    prop: 'imageinfo', iiprop: 'url|size|mime|extmetadata', iiurlwidth: '320',
+    iiextmetadatafilter: EXT_FIELDS.join('|'), iiextmetadatalanguage: 'en', format: 'json', formatversion: '2',
+  }).toString();
+  let data; try { data = await getJSON(u.toString()); } catch (_) { return []; }
+  const pages = (data.query && data.query.pages) || [];
+  const ok = [];
+  for (const p of pages) {
+    const info = p.imageinfo && p.imageinfo[0];
+    if (!info) continue;
+    const v = classify(info.extmetadata);
+    if (v.accept) ok.push({ ...toCand(p.title, info), license: v.license.shortName || v.license.key, author: v.author });
+  }
+  return ok;
+}
+
 // Rank a hit by how likely it DEPICTS the figure (vs. scenery/context) — the
 // Zeus lesson. Used to order Tier-B candidates for the reviewer.
 const DEPICTION = /\b(bust|head|statue|statuette|portrait|painting|figure|relief|marble|bronze|terracotta|fresco|mosaic|vase|amphora|krater|kylix|coin|cameo|gem|icon|enthroned|seated)\b/i;
@@ -256,10 +291,19 @@ function scoreCandidate(c, name) {
 // write a no-qid state, or a transient outage would suppress retries for 90d.
 async function mapOne(fig, ctx) {
   const { qmap, scan, collisions } = ctx;
-  let cands;
-  try { cands = await wd.searchEntities((fig.name && fig.name.primary) || fig.id, 7); }
-  catch (e) { console.warn(`  ! map ${fig.id}: ${e.message}`); return 'error'; }
-  const pick = wd.pickQid(fig, cands, collisions.has(wd.normName((fig.name && fig.name.primary) || fig.id)));
+  const primary = (fig.name && fig.name.primary) || fig.id;
+  const alts = (fig.name && Array.isArray(fig.name.alt)) ? fig.name.alt.filter((s) => typeof s === 'string' && s) : [];
+  // Search the primary name AND up to two alternates/transliterations — an
+  // entity may only be findable under a different romanization. Union the
+  // candidates; pickQid matches them against ALL the figure's names.
+  const byQid = new Map();
+  try {
+    for (const q of [primary, ...alts.slice(0, 2)]) {
+      for (const c of await wd.searchEntities(q, 7)) if (!byQid.has(c.qid)) byQid.set(c.qid, c);
+      if (byQid.size >= 12) break;
+    }
+  } catch (e) { console.warn(`  ! map ${fig.id}: ${e.message}`); return 'error'; }
+  const pick = wd.pickQid(fig, [...byQid.values()], collisions.has(wd.normName(primary)));
   if (!pick) {
     scan[fig.id] = { status: 'no-qid', at: now() };
     return 'no-qid';
@@ -269,28 +313,44 @@ async function mapOne(fig, ctx) {
   return pick.confidence;
 }
 
-// Build one figure's Tier-B review entry (network): P180 depicts when a QID
-// exists, else ranked text search. Returns 'queued' | 'no-image' | 'error'.
-async function reviewOne(fig, qid, ctx) {
+// Non-image media that slip through the file namespace (a name-match on an
+// audio/video/document is never a portrait).
+const MEDIA_EXT = /\.(ogg|ogv|oga|mid|midi|wav|mp3|flac|webm|mp4|pdf|djvu|stl|xcf)$/i;
+
+// Build one figure's Tier-B review entry from EVERY source, deepest first
+// (docs/image-pipeline.md deep pass): the QID's P18 lead, its Commons category
+// P373 (the richest, human-curated set), P180 "depicts", and text search over
+// the primary AND alternate names. Deduped, scored against all the figure's
+// names, top 3 kept. `qrec` is the qid-map record (qid/confidence/cat/p18) or
+// null. Returns 'queued' | 'no-image' | 'error'.
+async function reviewOne(fig, qrec, ctx) {
   const { review, scan, bl } = ctx;
   const name = (fig.name && fig.name.primary) || fig.id;
-  let cands = [], via = 'text';
+  const alts = (fig.name && Array.isArray(fig.name.alt)) ? fig.name.alt.filter((s) => typeof s === 'string' && s) : [];
+  const names = [name, ...alts];
+  const qid = qrec && qrec.confidence !== 'rejected' ? qrec.qid : null;
+
+  const seen = new Set(); const cands = [];
+  const add = (arr, src) => { for (const c of (arr || [])) { if (c && c.title && !seen.has(c.title) && !MEDIA_EXT.test(c.title)) { seen.add(c.title); c.src = src; cands.push(c); } } };
   try {
-    if (qid) { cands = await searchDepicts(qid, 15); if (cands.length) via = 'p180'; }
-    if (!cands.length) cands = await searchCandidates(`${name} ${fig.tradition || ''}`.trim(), 30);
+    if (qrec && qrec.p18) { const c = await fileCandidate('File:' + qrec.p18); if (c) add([c], 'p18'); }
+    if (qrec && qrec.cat) add(await commonsCategoryFiles(qrec.cat, 20), 'cat');
+    if (qid) add(await searchDepicts(qid, 15), 'p180');
+    add(await searchCandidates(`${name} ${fig.tradition || ''}`.trim(), 25), 'text');
+    for (const a of alts.slice(0, 2)) add(await searchCandidates(a, 12), 'text');
   } catch (e) { console.warn(`  ! fallback ${fig.id}: ${e.message}`); return 'error'; }
-  cands = cands.filter((c) => !isBlocked(bl, fig.id, c.title));
-  cands.forEach((c) => { c.score = scoreCandidate(c, name); });
-  cands.sort((a, b) => b.score - a.score);
-  const top = cands.slice(0, 3);
+
+  const usable = cands.filter((c) => !isBlocked(bl, fig.id, c.title));
+  usable.forEach((c) => { c.score = Math.max(...names.map((n) => scoreCandidate(c, n))); });
+  usable.sort((a, b) => b.score - a.score);
+  const top = usable.slice(0, 3);
   if (!top.length) {
     scan[fig.id] = { status: 'no-image', at: now() };
     return 'no-image';
   }
   review[fig.id] = {
-    name, tradition: fig.tradition || '', qid: qid || null,
-    via,
-    options: top.map((c) => ({ title: c.title, thumb: c.thumb, license: c.license, author: c.author, score: c.score, w: c.w, h: c.h })),
+    name, tradition: fig.tradition || '', qid: qid || null, via: top[0].src,
+    options: top.map((c) => ({ title: c.title, thumb: c.thumb, license: c.license, author: c.author, score: c.score, w: c.w, h: c.h, src: c.src })),
     at: now(),
   };
   return 'queued';
@@ -318,7 +378,9 @@ async function cmdMap(opts) {
     if (!inShard(f.id, sh)) return false;
     if (qmap[f.id] && qmap[f.id].confidence !== 'rejected' && !opts.refresh) return false;
     const s = scan[f.id];
-    if (s && s.status === 'no-qid' && fresh(s, NO_QID_TTL_DAYS) && !opts.refresh) return false;
+    // --rescan re-tries previously-unmatched figures (with the deeper alt-name
+    // search) without re-resolving ones already mapped.
+    if (s && s.status === 'no-qid' && fresh(s, NO_QID_TTL_DAYS) && !opts.refresh && !opts.rescan) return false;
     return true;
   });
   if (opts.limit) pool = pool.slice(0, opts.limit);
@@ -329,9 +391,26 @@ async function cmdMap(opts) {
     tally[r] = (tally[r] || 0) + 1;
     await sleep(450);
   }
+  // Enrich mappings with their P18 lead image + P373 Commons category (the deep
+  // pass's richest sources) so fallback can use them without re-resolving.
+  // Covers this shard's mapped entries that lack enrichment (new or older).
+  const toEnrich = figures.filter((f) => inShard(f.id, sh) && qmap[f.id] && qmap[f.id].qid && qmap[f.id].confidence !== 'rejected' && !qmap[f.id].enriched).map((f) => f.id);
+  if (toEnrich.length) {
+    console.log(`map: enriching ${toEnrich.length} mappings with P18 + Commons category…`);
+    try {
+      const ents = await wd.getEntities([...new Set(toEnrich.map((id) => qmap[id].qid))], 'claims|sitelinks');
+      for (const id of toEnrich) {
+        const e = ents[qmap[id].qid];
+        if (!e) continue;
+        qmap[id].p18 = wd.p18Of(e) || null;
+        qmap[id].cat = wd.p373Of(e) || wd.commonsSitelink(e) || null;
+        qmap[id].enriched = true;
+      }
+    } catch (e) { console.warn('map: enrichment failed: ' + e.message); }
+  }
   writeJSON(QIDMAP, sortObj(qmap));
   writeJSON(SCANSTATE, sortObj(scan));
-  console.log(`map: ${tally.high || 0} confident, ${tally.ambiguous || 0} ambiguous, ${tally['no-qid'] || 0} unmatched, ${tally.error || 0} errors. qid-map: ${Object.keys(qmap).length}.`);
+  console.log(`map: ${tally.high || 0} confident, ${tally.ambiguous || 0} ambiguous, ${tally['no-qid'] || 0} unmatched, ${tally.error || 0} errors; ${toEnrich.length} enriched. qid-map: ${Object.keys(qmap).length}.`);
 }
 
 // harvest: Tier-A auto-ship from P18 for confidently-mapped, imageless figures.
@@ -432,7 +511,7 @@ async function cmdFallback(opts) {
 
   const tally = { queued: 0, 'no-image': 0, error: 0 };
   for (const id of ids) {
-    const r = await reviewOne(byId[id], qmap[id] && qmap[id].confidence !== 'rejected' ? qmap[id].qid : null, { review, scan, bl });
+    const r = await reviewOne(byId[id], qmap[id] || null, { review, scan, bl });
     tally[r] = (tally[r] || 0) + 1;
     await sleep(450);
   }
