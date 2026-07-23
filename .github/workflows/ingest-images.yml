@@ -7,18 +7,14 @@ name: Ingest Commons images
 # The running site only ever reads the committed, license-verified output.
 #
 # The tiered design and every mode are documented in docs/image-pipeline.md.
-# Ways this fires:
+# This workflow handles the LIGHT, single-committer paths; the corpus-wide
+# sweep (map/harvest/fallback fanned across parallel shards) lives in its own
+# workflow, image-sweep.yml. Ways this fires:
 #
-#   • Push data-sources/image-run.json     → runs the mode named inside it
-#     (usually {"mode":"delta"} — the capped incremental sweep). Bump any
-#     field to re-trigger the next batch.
 #   • Push data-sources/image-approved.json → ingests the owner's contact-
 #     sheet approvals (license gate re-runs on every file).
 #   • Push data-sources/image-request.json  → `auto` for the listed figure ids
 #     (Tier-A auto-ship when curated data allows; review queue otherwise).
-#   • Monthly cron                          → `check` (license-drift audit)
-#     then `delta`; scan-state TTLs make this the quarterly map refresh and
-#     yearly no-image re-scan automatically.
 #   • Manual dispatch                       → any mode, from the Actions tab.
 on:
   workflow_dispatch:
@@ -26,8 +22,8 @@ on:
       mode:
         description: 'What to run'
         type: choice
-        options: [delta, map, harvest, fallback, sheet, approved, auto, fetch, discover, check]
-        default: delta
+        options: [approved, auto, fetch, discover, check, map, harvest, fallback, sheet, delta]
+        default: check
       limit:
         description: 'Cap for map/harvest/fallback/discover (blank = mode default)'
         type: string
@@ -39,11 +35,8 @@ on:
   push:
     branches: ['**']
     paths:
-      - 'data-sources/image-run.json'
       - 'data-sources/image-request.json'
       - 'data-sources/image-approved.json'
-  schedule:
-    - cron: '23 5 2 * *'   # monthly, day 2 05:23 UTC
 
 # The job commits the fetched images back to the branch it ran on.
 permissions:
@@ -78,9 +71,8 @@ jobs:
       - name: Install sharp (WebP optimization)
         run: npm install --no-save sharp
 
-      # Which mode? Dispatch says explicitly; cron means check+delta; a push
-      # is resolved from WHICH trigger file changed (image-run.json names its
-      # mode and wins when several changed together).
+      # Which mode? Dispatch says explicitly; a push is resolved from WHICH
+      # trigger file changed (approved wins if both changed together).
       - name: Resolve mode
         id: mode
         env:
@@ -88,20 +80,15 @@ jobs:
           INPUT_MODE: ${{ inputs.mode }}
         run: |
           set -euo pipefail
-          if [ "$EVENT" = "schedule" ]; then
-            echo "mode=cron" >> "$GITHUB_OUTPUT"
-          elif [ "$EVENT" = "push" ]; then
+          if [ "$EVENT" = "push" ]; then
             CHANGED=$(git diff --name-only HEAD^ HEAD || true)
-            if grep -q 'data-sources/image-run.json' <<<"$CHANGED"; then
-              MODE=$(node -p 'try { require("./data-sources/image-run.json").mode || "delta" } catch (e) { "delta" }')
-              echo "mode=$MODE" >> "$GITHUB_OUTPUT"
-            elif grep -q 'data-sources/image-approved.json' <<<"$CHANGED"; then
+            if grep -q 'data-sources/image-approved.json' <<<"$CHANGED"; then
               echo "mode=approved" >> "$GITHUB_OUTPUT"
             else
               echo "mode=auto" >> "$GITHUB_OUTPUT"
             fi
           else
-            echo "mode=${INPUT_MODE:-delta}" >> "$GITHUB_OUTPUT"
+            echo "mode=${INPUT_MODE:-check}" >> "$GITHUB_OUTPUT"
           fi
 
       # Inputs pass through env, never interpolated into the shell, so a
@@ -116,12 +103,7 @@ jobs:
           ARGS=()
           if [ -n "${LIMIT:-}" ]; then ARGS+=(--limit "$LIMIT"); fi
           if [ -n "${TRAD:-}" ]; then ARGS+=(--trad "$TRAD"); fi
-          if [ "$MODE" = "cron" ]; then
-            node scripts/ingest-images.cjs check || true   # drift is reported, not a reason to skip the sweep
-            node scripts/ingest-images.cjs delta
-          else
-            node scripts/ingest-images.cjs "$MODE" "${ARGS[@]}"
-          fi
+          node scripts/ingest-images.cjs "$MODE" "${ARGS[@]}"
 
       - name: Commit results
         env:

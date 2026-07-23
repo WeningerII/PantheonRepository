@@ -10,6 +10,7 @@ const assert = require('node:assert');
 const wd = require('../scripts/lib/wikidata.cjs');
 const { sanityCheck } = require('../scripts/lib/sanity-check.cjs');
 const { renderSheet } = require('../scripts/lib/contact-sheet.cjs');
+const { hashBucket, parseShard, inShard, foldShards } = require('../scripts/ingest-images.cjs');
 
 const fig = (id, primary, tradition, alt = []) => ({ id, tradition, name: { primary, alt } });
 const cand = (qid, label, description, aliases = []) => ({ qid, label, description, aliases, matchText: label });
@@ -146,6 +147,70 @@ test('renderSheet renders a card per figure with keyboard + export machinery', (
   assert.match(html, /sheet-data/, 'embedded data block');
   assert.match(html, /keydown/, 'keyboard handler present');
   assert.match(html, /1<\/b> · Public domain/, 'license shown per option');
+});
+
+// ── parallel sharding + collector merge ─────────────────────────────────────
+
+test('hashBucket is deterministic and every id lands in exactly one of n buckets', () => {
+  const ids = ['greek_hesiod_zeus', 'norse_thor', 'egyptian_ra', 'hindu_shiva', 'a', 'b', 'c', 'd'];
+  for (const n of [1, 4, 12]) {
+    for (const id of ids) {
+      const b = hashBucket(id, n);
+      assert.ok(b >= 0 && b < n, `${id} bucket ${b} out of range for n=${n}`);
+      assert.strictEqual(hashBucket(id, n), b, 'deterministic');
+      assert.ok(inShard(id, parseShard({ shard: `${b}/${n}` })), 'inShard agrees with its own bucket');
+      // and NOT in any other bucket
+      for (let j = 0; j < n; j++) if (j !== b) assert.ok(!inShard(id, parseShard({ shard: `${j}/${n}` })));
+    }
+  }
+});
+
+test('parseShard validates form and range', () => {
+  assert.deepStrictEqual(parseShard({ shard: '2/5' }), { i: 2, n: 5 });
+  assert.strictEqual(parseShard({}), null);
+  assert.throws(() => parseShard({ shard: '5/5' }), /out of range/);
+  assert.throws(() => parseShard({ shard: 'x' }), /must be i\/n/);
+});
+
+test('foldShards: additions + updates + deletions across shards are correct', () => {
+  const N = 4;
+  // Build a baseline keyed by ids whose buckets we know; then simulate two
+  // shards running (their buckets), each authoritative for its own ids.
+  const idsByBucket = {};
+  for (const id of ['greek_hesiod_zeus', 'norse_thor', 'hindu_shiva', 'japanese_amaterasu', 'egyptian_ra', 'x', 'y', 'z', 'w', 'q']) {
+    (idsByBucket[hashBucket(id, N)] ||= []).push(id);
+  }
+  const buckets = Object.keys(idsByBucket).map(Number);
+  assert.ok(buckets.length >= 2, 'need at least two occupied buckets for this test');
+  const [bA, bB] = buckets;
+  const someA = idsByBucket[bA][0];
+  const untouched = idsByBucket[buckets.length > 2 ? buckets[2] : bA];
+
+  const baseline = {};
+  for (const b of buckets) for (const id of idsByBucket[b]) baseline[id] = { v: 'old', bucket: b };
+
+  // Shard bA ran: it UPDATES someA and DROPS every other id in its bucket
+  // (simulating a blocklist prune / cleared scan). Shard bB ran: unchanged.
+  const shardA = { [someA]: { v: 'new' } };
+  const shardB = {}; for (const id of idsByBucket[bB]) shardB[id] = baseline[id];
+
+  const merged = foldShards(baseline, [{ n: bA, data: shardA }, { n: bB, data: shardB }], N);
+
+  assert.deepStrictEqual(merged[someA], { v: 'new' }, 'update applied');
+  for (const id of idsByBucket[bA]) if (id !== someA) assert.ok(!(id in merged), `${id} dropped by its authoritative shard`);
+  for (const id of idsByBucket[bB]) assert.deepStrictEqual(merged[id], baseline[id], 'bB entries preserved');
+  // A bucket whose shard did NOT run keeps its baseline (retried next sweep).
+  if (buckets.length > 2) for (const id of untouched) assert.deepStrictEqual(merged[id], baseline[id], 'un-run bucket keeps baseline');
+});
+
+test('foldShards is order-independent (disjoint buckets)', () => {
+  const N = 4;
+  const a = { greek_hesiod_zeus: { v: 1 } }; // bucket 3
+  const b = { japanese_amaterasu: { v: 2 } }; // bucket 1
+  const m1 = foldShards({}, [{ n: hashBucket('greek_hesiod_zeus', N), data: a }, { n: hashBucket('japanese_amaterasu', N), data: b }], N);
+  const m2 = foldShards({}, [{ n: hashBucket('japanese_amaterasu', N), data: b }, { n: hashBucket('greek_hesiod_zeus', N), data: a }], N);
+  assert.deepStrictEqual(m1, m2);
+  assert.deepStrictEqual(m1, { greek_hesiod_zeus: { v: 1 }, japanese_amaterasu: { v: 2 } });
 });
 
 test('renderSheet escapes hostile titles and survives an empty queue', () => {

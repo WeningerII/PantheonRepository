@@ -90,6 +90,24 @@ const sortObj = (o) => Object.fromEntries(Object.keys(o).sort().map((k) => [k, o
 const now = () => new Date().toISOString();
 const fresh = (entry, days) => !!(entry && entry.at && (Date.now() - Date.parse(entry.at)) < days * 864e5);
 
+// ── sharding ────────────────────────────────────────────────────────────────
+// Stable bucket for an id (same char-sum scheme as build-tiers detail shards).
+// `--shard i/n` restricts a mode to bucket i of n, so a CI matrix runs map /
+// harvest / fallback over DISJOINT slices in parallel; a collector then merges
+// (cmdMerge) the per-shard outputs into one commit. Disjoint by construction:
+// every id belongs to exactly one bucket, so no two shard jobs touch the same
+// figure — no double-ship, no push race (only the collector commits).
+function hashBucket(id, n) { let s = 0; for (let k = 0; k < id.length; k++) s = (s + id.charCodeAt(k)) % n; return s; }
+function parseShard(opts) {
+  if (!opts.shard) return null;
+  const m = String(opts.shard).match(/^(\d+)\s*\/\s*(\d+)$/);
+  if (!m) throw new Error('--shard must be i/n, got ' + opts.shard);
+  const i = parseInt(m[1], 10), n = parseInt(m[2], 10);
+  if (!(n > 0 && i >= 0 && i < n)) throw new Error('--shard out of range: ' + opts.shard);
+  return { i, n };
+}
+const inShard = (id, sh) => !sh || hashBucket(id, sh.n) === sh.i;
+
 // ── blocklist ───────────────────────────────────────────────────────────────
 const blockedFor = (bl, id) => new Set([...(bl[id] || []), ...(bl._global || [])]);
 const isBlocked = (bl, id, title) => blockedFor(bl, id).has(title);
@@ -294,8 +312,10 @@ async function cmdMap(opts) {
   const qmap = readJSON(QIDMAP, {});
   const scan = readJSON(SCANSTATE, {});
   const collisions = wd.corpusCollisions(figures);
+  const sh = parseShard(opts);
   let pool = figures.filter((f) => {
     if (opts.id && f.id !== opts.id) return false;
+    if (!inShard(f.id, sh)) return false;
     if (qmap[f.id] && qmap[f.id].confidence !== 'rejected' && !opts.refresh) return false;
     const s = scan[f.id];
     if (s && s.status === 'no-qid' && fresh(s, NO_QID_TTL_DAYS) && !opts.refresh) return false;
@@ -323,8 +343,9 @@ async function cmdHarvest(opts) {
   const bl = readJSON(BLOCKLIST, {});
   pruneBlocked(manifest, sources, bl);
 
+  const sh = parseShard(opts);
   let ids = Object.keys(qmap).filter((id) =>
-    qmap[id].confidence === 'high' && needsImage(id, manifest, scan)
+    qmap[id].confidence === 'high' && inShard(id, sh) && needsImage(id, manifest, scan)
     && !(scan[id] && scan[id].status === 'no-p18' && fresh(scan[id], NO_IMAGE_TTL_DAYS)));
   if (opts.id) ids = ids.filter((id) => id === opts.id);
   if (opts.limit) ids = ids.slice(0, opts.limit);
@@ -390,9 +411,11 @@ async function cmdFallback(opts) {
   const manifest = readJSON(MANIFEST, {});
   const bl = readJSON(BLOCKLIST, {});
   const review = readJSON(REVIEW, {});
+  const sh = parseShard(opts);
 
   let ids = figures.map((f) => f.id).filter((id) => {
     if (opts.id && id !== opts.id) return false;
+    if (!inShard(id, sh)) return false;
     if (!needsImage(id, manifest, scan)) return false;
     if (review[id]) return false; // already queued
     const s = scan[id];
@@ -552,6 +575,70 @@ async function cmdFetch(opts) {
   console.log(`\nfetch: ${fetched} fetched, ${skipped} up-to-date, ${rejected} rejected. manifest: ${Object.keys(manifest).length} images.`);
 }
 
+// merge: the collector step of the parallel sweep. Each shard job uploaded an
+// artifact holding its slice's data-sources JSONs + newly-fetched image files;
+// this reads them all from --from <dir> and folds them into the committed files,
+// then the workflow makes ONE commit. Range-restricted per id: within a shard's
+// bucket the shard's output is authoritative (so an id it dropped — e.g. a
+// blocklist prune or a cleared scan entry — is really removed), while buckets
+// whose shard didn't run (or failed) keep the committed baseline untouched and
+// get retried next sweep. The id-keyed generated files only; owner inputs
+// (request/approved/run/blocklist) are never merged.
+const MERGE_FILES = [
+  ['qid-map.json', QIDMAP],
+  ['images.json', MANIFEST],
+  ['image-sources.json', SOURCES],
+  ['image-scan-state.json', SCANSTATE],
+  ['image-review.json', REVIEW],
+];
+// Pure range-restricted fold (unit-tested). Buckets whose shard didn't run keep
+// their baseline entry; within a ran shard's bucket the shard's data is
+// authoritative — so an id it OMITS (blocklist prune, cleared scan) is dropped,
+// not resurrected from baseline. Disjoint buckets ⇒ order-independent.
+function foldShards(baseline, shards, N) {
+  const ran = new Set(shards.map((s) => s.n));
+  const merged = {};
+  for (const id of Object.keys(baseline || {})) if (!ran.has(hashBucket(id, N))) merged[id] = baseline[id];
+  for (const { n, data } of shards) for (const id of Object.keys(data || {})) if (hashBucket(id, N) === n) merged[id] = data[id];
+  return merged;
+}
+function cmdMerge(opts) {
+  const N = opts.shards;
+  const from = opts.from;
+  if (!N || !from) { console.error('merge: needs --shards N --from <artifacts-dir>'); process.exitCode = 2; return; }
+  const shardDirs = fs.existsSync(from)
+    ? fs.readdirSync(from).map((d) => (d.match(/shard-(\d+)$/) ? { n: +RegExp.$1, dir: path.join(from, d) } : null)).filter(Boolean)
+    : [];
+  const ran = new Set(shardDirs.map((s) => s.n));
+  console.log(`merge: ${shardDirs.length} shard artifacts present (of ${N}): ${[...ran].sort((a, b) => a - b).join(',') || 'none'}`);
+  if (!shardDirs.length) { console.log('merge: nothing to merge.'); return; }
+
+  for (const [base, target] of MERGE_FILES) {
+    const shards = shardDirs.map(({ n, dir }) => ({ n, data: readJSON(path.join(dir, 'data-sources', base), {}) }));
+    writeJSON(target, sortObj(foldShards(readJSON(target, {}), shards, N)));
+  }
+
+  // Place newly-fetched image + provenance files (disjoint by id → no clash).
+  let copied = 0;
+  fs.mkdirSync(path.join(IMG_DIR, '_meta'), { recursive: true });
+  for (const { dir } of shardDirs) {
+    const figs = path.join(dir, 'assets', 'images', 'figures');
+    if (!fs.existsSync(figs)) continue;
+    for (const f of fs.readdirSync(figs)) {
+      const src = path.join(figs, f);
+      if (fs.statSync(src).isDirectory()) {
+        if (f === '_meta') for (const m of fs.readdirSync(src)) { fs.copyFileSync(path.join(src, m), path.join(IMG_DIR, '_meta', m)); }
+        continue;
+      }
+      fs.copyFileSync(src, path.join(IMG_DIR, f));
+      copied++;
+    }
+  }
+  // Rebuild the contact sheet from the merged review queue.
+  fs.writeFileSync(REVIEW_HTML, renderSheet(readJSON(REVIEW, {})));
+  console.log(`merge: ${copied} image files placed; manifest ${Object.keys(readJSON(MANIFEST, {})).length}, qid-map ${Object.keys(readJSON(QIDMAP, {})).length}, review queue ${Object.keys(readJSON(REVIEW, {})).length}.`);
+}
+
 // discover: legacy ad-hoc candidate proposer (kept for one-off digging).
 async function cmdDiscover(opts) {
   const corpus = loadFigures();
@@ -617,6 +704,9 @@ function parseArgs(argv) {
     else if (a === '--limit') o.limit = parseInt(argv[++i], 10);
     else if (a === '--trad') o.trad = argv[++i];
     else if (a === '--id') o.id = argv[++i];
+    else if (a === '--shard') o.shard = argv[++i];
+    else if (a === '--shards') o.shards = parseInt(argv[++i], 10);
+    else if (a === '--from') o.from = argv[++i];
     else o._.push(a);
   }
   return o;
@@ -630,6 +720,7 @@ async function main() {
   if (cmd === 'map') return cmdMap(opts);
   if (cmd === 'harvest') return cmdHarvest(opts);
   if (cmd === 'fallback') return cmdFallback(opts);
+  if (cmd === 'merge') return cmdMerge(opts);
   if (cmd === 'sheet') return cmdSheet();
   if (cmd === 'approved') return cmdApproved(opts);
   if (cmd === 'delta') return cmdDelta(opts);
@@ -637,8 +728,9 @@ async function main() {
   if (cmd === 'fetch') return cmdFetch(opts);
   if (cmd === 'discover') return cmdDiscover(opts);
   if (cmd === 'check') return cmdCheck();
-  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|sheet|approved|delta|auto|fetch|discover|check> [--id ID] [--limit N] [--trad T] [--force] [--refresh] [--rescan]');
+  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|merge|sheet|approved|delta|auto|fetch|discover|check>');
+  console.log('       [--id ID] [--shard i/n] [--shards N] [--from DIR] [--limit N] [--trad T] [--force] [--refresh] [--rescan]');
   process.exitCode = 2;
 }
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
-module.exports = { imageInfo, extOf, scoreCandidate, fetchOne };
+module.exports = { imageInfo, extOf, scoreCandidate, fetchOne, hashBucket, parseShard, inShard, foldShards, cmdMerge };

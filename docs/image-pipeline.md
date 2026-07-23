@@ -52,26 +52,39 @@ image archives its extmetadata + a verification record (tier, method, QID,
 signals) under `assets/images/figures/_meta/` so a bad batch is
 mass-revertible by cause.
 
-## Cadence — one cron, self-scheduling retries
+## Parallelism — fan out, don't monolith
 
-"No result" outcomes are recorded with timestamps in
-`image-scan-state.json` and carry TTLs: `no-qid` retries after **90 days**,
-`no-image` after **365 days**; `reviewed-none` (the owner said no) is
-permanent. The monthly cron runs `check` (license-drift audit) then `delta`
-(prune → map → harvest → fallback → sheet, capped). Stale misses age past
-their TTL and get retried — that **is** the quarterly map refresh and yearly
-re-scan, with no extra scheduling machinery.
+The sweep does NOT run as one long job. `image-sweep.yml` shards the corpus by
+id (same bucket scheme as the detail shards) and runs a **matrix of shard
+jobs** — each maps → harvests → falls back over its own disjoint slice —
+capped at `max-parallel: 6` so we stay polite to the Wikimedia APIs. Each shard
+uploads only its slice's outputs (+ the images it newly fetched); a single
+**collector** job merges the disjoint results (`ingest-images.cjs merge`,
+range-restricted per bucket so additions, updates, and deletions are all
+correct) and makes **one commit**. No shard ever pushes, so there's no
+push race, and a shard that fails only defers its slice to the next wave —
+the rest still land. 12 shards × ~285 figures ≈ a ~15–25 min wall-clock wave
+instead of a 4-hour monolith. The light per-figure paths (`auto`, `approved`,
+`fetch`, `check`) stay in `ingest-images.yml` — single-committer, no fan-out.
 
-Per-run caps keep each CI run ~an hour and each bot commit reviewable:
-map 3000 · harvest 600 · fallback 800. Re-trigger to advance; every mode
-skips ids already resolved in committed outputs, so runs only move forward.
+## Cadence — self-scheduling retries
+
+"No result" outcomes are recorded with timestamps in `image-scan-state.json`
+and carry TTLs: `no-qid` retries after **90 days**, `no-image` after **365
+days**; `reviewed-none` (the owner said no) is permanent. The monthly cron
+fires a sweep wave; stale misses age past their TTL and get retried — that
+**is** the quarterly map refresh and yearly re-scan, with no extra scheduling
+machinery. Every mode skips ids already resolved in committed outputs, so
+waves only move forward. (`delta` — prune → map → harvest → fallback in one
+process — remains for local/serial runs; the CI sweep parallelizes the same
+work across shards.)
 
 ## Operating manual (the owner's cheat sheet)
 
 | I want to… | Do this |
 |---|---|
 | Image one specific figure | Add its id to `data-sources/image-request.json`, push. Tier-A ships it if curated data allows; otherwise its candidates land on the review sheet. |
-| Run the next sweep batch | Bump `data-sources/image-run.json` (e.g. `{"mode":"delta","run":2}`), push. |
+| Run the next sweep wave | Bump `data-sources/image-run.json` (e.g. `{"shards":12,"run":2}`), push — fans out across `shards` parallel jobs, one merged commit. |
 | Review pending candidates | Pull, open `data-sources/image-review.html` in a browser. Keys: **1/2/3** approve, **x** none, **j/k** move, **e** export. Save the export as `data-sources/image-approved.json`, commit, push. |
 | Reject a shipped image | Add its `File:` title under the figure's id in `data-sources/image-blocklist.json`, push any trigger file (or wait for the cron). It's pruned everywhere and never re-picked. |
 | Pin an exact image | Put `"figure_id": "File:…"` in `data-sources/image-sources.json` and run `fetch` (dispatch). Pins always win. |
@@ -92,7 +105,7 @@ Commons directly, which is fine there; the **product** never hotlinks.
 | `data-sources/image-blocklist.json` | the owner | banned titles per figure (`_global` for all) |
 | `data-sources/image-scan-state.json` | all modes | timestamped no-result outcomes (drives TTL retries) |
 | `data-sources/image-request.json` | the owner | ids for `auto` |
-| `data-sources/image-run.json` | the owner | push-trigger: `{"mode": …}` |
+| `data-sources/image-run.json` | the owner | push-trigger for the parallel sweep: `{"shards": N, "run": k}` |
 | `assets/images/figures/` | shipping paths | self-hosted WebP portraits + `_meta/` provenance |
 
 ## Invariants (CI-enforced or structural)
