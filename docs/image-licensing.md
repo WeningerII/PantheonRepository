@@ -64,7 +64,10 @@ the image URL and the machine-readable license fields; gate on `License` /
 
 ## Implementation
 
-The rules above are enforced in code, in one place each:
+The production ingest architecture (tiered auto-ship vs. human review, Wikidata-
+joined identification, cadences, and the operating manual) is specified in
+[`image-pipeline.md`](image-pipeline.md). The rules above are enforced in code,
+in one place each:
 
 - **The gate** — `scripts/lib/commons-license.cjs` `classify(extmetadata)` is the
   single implementation of rules 2–3 (accept PD/CC0, reject everything else,
