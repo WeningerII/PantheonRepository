@@ -442,11 +442,32 @@ async function cmdFallback(opts) {
   cmdSheet();
 }
 
-// sheet: render the contact sheet from the review queue.
-function cmdSheet() {
+// Rank the review queue so the highest-value figures come first: prominent
+// tiers (deities before mortals) in larger traditions, with the strongest
+// candidate — so a short review sitting still covers what matters most. Best
+// effort: if the corpus can't load, keep the queue unranked.
+function prioritizeReview(review) {
+  let byId = {};
+  try { byId = Object.fromEntries(loadFigures().map((f) => [f.id, f])); } catch (_) {}
+  const TYPE = { deity: 6, demigod: 5, quartigod: 4, scion: 3, numen: 3, deity_aspect: 4, hero: 2, mortal: 1 };
+  const tradCount = {};
+  for (const f of Object.values(byId)) tradCount[f.tradition] = (tradCount[f.tradition] || 0) + 1;
+  const score = (id) => {
+    const r = review[id] || {}; const f = byId[id] || {};
+    const best = Math.max(0, ...((r.options || []).map((o) => o.score || 0)), 0);
+    return best * 100 + (TYPE[f.type] || 1) * 10 + Math.min(tradCount[f.tradition] || 0, 60) / 10;
+  };
+  return Object.keys(review).sort((a, b) => score(b) - score(a)
+    || String((review[a] || {}).name || a).localeCompare(String((review[b] || {}).name || b)));
+}
+function writeSheet() {
   const review = readJSON(REVIEW, {});
-  fs.writeFileSync(REVIEW_HTML, renderSheet(review));
-  console.log(`sheet: ${Object.keys(review).length} figures → ${path.relative(ROOT, REVIEW_HTML)}`);
+  fs.writeFileSync(REVIEW_HTML, renderSheet(review, prioritizeReview(review)));
+  return Object.keys(review).length;
+}
+// sheet: render the contact sheet from the review queue, highest-value first.
+function cmdSheet() {
+  console.log(`sheet: ${writeSheet()} figures → ${path.relative(ROOT, REVIEW_HTML)}`);
 }
 
 // approved: ingest the owner's sheet export. A title ships (gate re-runs, pick
@@ -634,8 +655,8 @@ function cmdMerge(opts) {
       copied++;
     }
   }
-  // Rebuild the contact sheet from the merged review queue.
-  fs.writeFileSync(REVIEW_HTML, renderSheet(readJSON(REVIEW, {})));
+  // Rebuild the contact sheet from the merged review queue (prioritized).
+  writeSheet();
   console.log(`merge: ${copied} image files placed; manifest ${Object.keys(readJSON(MANIFEST, {})).length}, qid-map ${Object.keys(readJSON(QIDMAP, {})).length}, review queue ${Object.keys(readJSON(REVIEW, {})).length}.`);
 }
 

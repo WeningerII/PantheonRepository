@@ -18,8 +18,13 @@ const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
-function renderSheet(review) {
-  const ids = Object.keys(review || {}).sort();
+function renderSheet(review, order) {
+  // `order` (optional) is a pre-ranked id list so the most valuable figures
+  // sit at the top — reviewing top-down covers what matters even in a short
+  // sitting. Falls back to alphabetical when no order is given.
+  const ids = (Array.isArray(order) && order.length)
+    ? order.filter((id) => review && review[id])
+    : Object.keys(review || {}).sort();
   const total = ids.length;
 
   // n→title mapping the export script reads; \u003c-escaped like every other

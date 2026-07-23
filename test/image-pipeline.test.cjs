@@ -213,6 +213,19 @@ test('foldShards is order-independent (disjoint buckets)', () => {
   assert.deepStrictEqual(m1, { greek_hesiod_zeus: { v: 1 }, japanese_amaterasu: { v: 2 } });
 });
 
+test('renderSheet honors an explicit priority order', () => {
+  const review = {
+    zzz_low: { name: 'Zzz', tradition: 'X', options: [{ title: 'File:z.jpg', thumb: 'https://u/z.jpg', license: 'CC0' }] },
+    aaa_high: { name: 'Aaa', tradition: 'X', options: [{ title: 'File:a.jpg', thumb: 'https://u/a.jpg', license: 'CC0' }] },
+  };
+  const html = renderSheet(review, ['zzz_low', 'aaa_high']); // low-id FIRST despite alphabetical
+  assert.ok(html.indexOf('card-zzz_low') < html.indexOf('card-aaa_high'), 'explicit order wins over alphabetical');
+  // Unknown ids in the order are skipped; missing entries not invented.
+  const html2 = renderSheet(review, ['nope', 'aaa_high']);
+  assert.ok(!html2.includes('card-nope'));
+  assert.ok(html2.includes('card-aaa_high'));
+});
+
 test('renderSheet escapes hostile titles and survives an empty queue', () => {
   const html = renderSheet({
     evil: { name: '<script>alert(1)</script>', tradition: 'X', options: [{ title: 'File:</script><script>x.jpg', thumb: 'https://u/x.jpg', license: 'CC0' }] },
