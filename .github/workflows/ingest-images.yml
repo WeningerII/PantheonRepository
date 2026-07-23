@@ -2,35 +2,30 @@ name: Ingest Commons images
 
 # Fetch PD / PD-old / PD-art / CC0 figure portraits from Wikimedia Commons
 # (docs/image-licensing.md — the owner-set HARD RULE) and commit the optimized,
-# self-hosted results. This lives in CI, not the build, because Commons is
+# self-hosted results. This lives in CI, not the build, because Wikimedia is
 # unreachable from the build sandbox and because ingest needs network + sharp.
 # The running site only ever reads the committed, license-verified output.
 #
-# Two ways to run it:
+# The tiered design and every mode are documented in docs/image-pipeline.md.
+# This workflow handles the LIGHT, single-committer paths; the corpus-wide
+# sweep (map/harvest/fallback fanned across parallel shards) lives in its own
+# workflow, image-sweep.yml. Ways this fires:
 #
-#   • Edit data-sources/image-request.json (a JSON array of figure ids) and push.
-#     CI runs `auto`: for each id it searches Commons, keeps only PD/CC0 hits,
-#     fetches the top one, optimizes to WebP, self-hosts it, and commits the
-#     result back to the branch. Zero filename lookup — good for "just get me a
-#     portrait for X". Swap the chosen File: in image-sources.json + re-run to
-#     override the pick.
-#
-#   • Run it from the Actions tab (workflow_dispatch) with a mode:
-#       fetch    — download every curated "File:…" in image-sources.json.
-#       discover — propose PD/CC0 candidates → image-candidates.json (no fetch).
-#       check    — re-verify committed licenses still pass (fails on drift).
-#     (Dispatch needs this workflow on the default branch; the push path above
-#     works from any branch.)
+#   • Push data-sources/image-approved.json → ingests the owner's contact-
+#     sheet approvals (license gate re-runs on every file).
+#   • Push data-sources/image-request.json  → `auto` for the listed figure ids
+#     (Tier-A auto-ship when curated data allows; review queue otherwise).
+#   • Manual dispatch                       → any mode, from the Actions tab.
 on:
   workflow_dispatch:
     inputs:
       mode:
         description: 'What to run'
         type: choice
-        options: [fetch, discover, check]
-        default: fetch
+        options: [approved, auto, fetch, discover, check, map, harvest, fallback, sheet, delta]
+        default: check
       limit:
-        description: 'discover: max figures to probe (blank = all)'
+        description: 'Cap for map/harvest/fallback/discover (blank = mode default)'
         type: string
         default: ''
       tradition:
@@ -41,6 +36,7 @@ on:
     branches: ['**']
     paths:
       - 'data-sources/image-request.json'
+      - 'data-sources/image-approved.json'
 
 # The job commits the fetched images back to the branch it ran on.
 permissions:
@@ -53,10 +49,12 @@ concurrency:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 150
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # mode resolution diffs HEAD^..HEAD on push
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -68,13 +66,13 @@ jobs:
         run: npm ci --no-audit --no-fund
 
       # sharp converts the Commons-sized thumbnails to WebP so committed
-      # portraits are small. The script treats it as optional (falls back to the
-      # original bytes); here we install it so the committed output is optimized.
+      # portraits are small. The script treats it as optional (falls back to
+      # the original bytes); here we install it so committed output is optimized.
       - name: Install sharp (WebP optimization)
         run: npm install --no-save sharp
 
-      # A push (image-request.json changed) means auto-ingest; a manual dispatch
-      # uses the chosen mode.
+      # Which mode? Dispatch says explicitly; a push is resolved from WHICH
+      # trigger file changed (approved wins if both changed together).
       - name: Resolve mode
         id: mode
         env:
@@ -83,9 +81,14 @@ jobs:
         run: |
           set -euo pipefail
           if [ "$EVENT" = "push" ]; then
-            echo "mode=auto" >> "$GITHUB_OUTPUT"
+            CHANGED=$(git diff --name-only HEAD^ HEAD || true)
+            if grep -q 'data-sources/image-approved.json' <<<"$CHANGED"; then
+              echo "mode=approved" >> "$GITHUB_OUTPUT"
+            else
+              echo "mode=auto" >> "$GITHUB_OUTPUT"
+            fi
           else
-            echo "mode=${INPUT_MODE:-fetch}" >> "$GITHUB_OUTPUT"
+            echo "mode=${INPUT_MODE:-check}" >> "$GITHUB_OUTPUT"
           fi
 
       # Inputs pass through env, never interpolated into the shell, so a
@@ -102,13 +105,6 @@ jobs:
           if [ -n "${TRAD:-}" ]; then ARGS+=(--trad "$TRAD"); fi
           node scripts/ingest-images.cjs "$MODE" "${ARGS[@]}"
 
-      # Never publish an image whose license drifted. auto/fetch re-verify each
-      # file at download; this also catches a previously-committed image whose
-      # Commons license changed since it was ingested.
-      - name: Re-verify licenses
-        if: ${{ steps.mode.outputs.mode == 'fetch' || steps.mode.outputs.mode == 'auto' }}
-        run: node scripts/ingest-images.cjs check
-
       - name: Commit results
         env:
           MODE: ${{ steps.mode.outputs.mode }}
@@ -118,9 +114,8 @@ jobs:
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           # Stage whole dirs (git add of a non-existent pathspec aborts the
-          # command and stages nothing — image-candidates/-rejects.json don't
-          # exist on a clean fetch). data-sources always exists; assets only
-          # after a successful fetch.
+          # command and stages nothing). data-sources always exists; assets
+          # only after a successful fetch.
           git add -A data-sources
           [ -d assets ] && git add -A assets || true
           if git diff --cached --quiet; then

@@ -1,0 +1,142 @@
+name: Image sweep (parallel)
+
+# The corpus-wide / incremental image sweep, fanned out across parallel shards
+# (docs/image-pipeline.md) instead of one long monolithic job. Each shard job
+# maps → harvests → falls back over a DISJOINT slice of figures (bucketed by id)
+# and uploads only its results; one collector merges the disjoint outputs into a
+# single commit. Bounded concurrency (max-parallel) keeps us polite to the
+# Wikimedia APIs. Resilient: a shard that fails only defers its slice to the
+# next sweep — the others still land. Runs a wave at a time; re-trigger to
+# continue (every mode skips already-resolved ids, so waves only advance).
+#
+# Triggers:
+#   • Push data-sources/image-run.json  → start a wave (bump any field; set
+#     "shards": N to choose the fan-out width).
+#   • Manual dispatch                    → same, with a shards input.
+#   • Monthly cron                       → the steady-state sweep; scan-state
+#     TTLs make it the quarterly map refresh + yearly no-image re-scan.
+on:
+  workflow_dispatch:
+    inputs:
+      shards:
+        description: 'parallel shards (disjoint slices of the corpus, 1–24)'
+        type: string
+        default: '12'
+  push:
+    branches: ['**']
+    paths:
+      - 'data-sources/image-run.json'
+  schedule:
+    - cron: '23 5 2 * *'   # monthly, day 2 05:23 UTC
+
+permissions:
+  contents: write
+
+# Never run two waves on the same branch at once (they'd both try to commit).
+concurrency:
+  group: image-sweep-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      shards: ${{ steps.gen.outputs.shards }}
+      matrix: ${{ steps.gen.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: gen
+        env:
+          INPUT_SHARDS: ${{ inputs.shards }}
+        run: |
+          set -euo pipefail
+          N=$(node -e '
+            const fs = require("fs");
+            let n = parseInt(process.env.INPUT_SHARDS || "", 10);
+            if (!(n > 0)) { try { n = JSON.parse(fs.readFileSync("data-sources/image-run.json","utf8")).shards; } catch (e) {} }
+            if (!(n > 0)) n = 12;
+            console.log(Math.min(Math.max(n, 1), 24));
+          ')
+          echo "shards=$N" >> "$GITHUB_OUTPUT"
+          echo "matrix=$(node -e "console.log(JSON.stringify(Array.from({length:$N},(_,i)=>i)))")" >> "$GITHUB_OUTPUT"
+
+  sweep:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 6   # polite concurrency against the Wikimedia APIs
+      matrix:
+        shard: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Install sharp (WebP optimization)
+        run: npm install --no-save sharp
+      - name: Map + harvest + fallback (shard ${{ matrix.shard }}/${{ needs.prepare.outputs.shards }})
+        env:
+          SHARD: ${{ matrix.shard }}
+          N: ${{ needs.prepare.outputs.shards }}
+        run: |
+          set -euo pipefail
+          node scripts/ingest-images.cjs map      --shard "$SHARD/$N"
+          node scripts/ingest-images.cjs harvest  --shard "$SHARD/$N"
+          node scripts/ingest-images.cjs fallback --shard "$SHARD/$N"
+      - name: Stage this shard's output
+        run: |
+          set -euo pipefail
+          mkdir -p upload/data-sources
+          for f in qid-map images image-sources image-scan-state image-review; do
+            [ -f "data-sources/$f.json" ] && cp "data-sources/$f.json" "upload/data-sources/" || true
+          done
+          # Only NEW (untracked) image + provenance files — never re-upload the
+          # already-committed portraits, so artifact size stays proportional to
+          # what THIS wave fetched.
+          git ls-files --others --exclude-standard -- assets/images/figures | while read -r p; do
+            mkdir -p "upload/$(dirname "$p")"; cp "$p" "upload/$p"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.shard }}
+          path: upload
+          retention-days: 1
+          if-no-files-found: ignore
+
+  collect:
+    needs: [prepare, sweep]
+    if: ${{ always() }}   # merge whatever shards succeeded, even if some failed
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: shard-*
+      - name: Merge shard outputs
+        run: node scripts/ingest-images.cjs merge --shards "${{ needs.prepare.outputs.shards }}" --from artifacts
+      - name: Commit merged results
+        env:
+          BRANCH: ${{ github.ref_name }}
+          SHARDS: ${{ needs.prepare.outputs.shards }}
+        run: |
+          set -euo pipefail
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A data-sources
+          [ -d assets ] && git add -A assets || true
+          if git diff --cached --quiet; then
+            echo "Sweep produced no changes."
+          else
+            git commit -m "Image sweep: merge $SHARDS shards"
+            git push origin "HEAD:$BRANCH"
+          fi

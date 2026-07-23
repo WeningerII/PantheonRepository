@@ -7,7 +7,9 @@ Never CC BY, CC BY-SA, GFDL, or any attribution/share-alike-encumbered license
 — we do not carry per-image legal obligations into the product. Source from
 `commons.wikimedia.org` only, gate on the Commons API license fields, and
 self-host optimized copies (never hotlink). Full spec:
-[`docs/image-licensing.md`](docs/image-licensing.md).
+[`docs/image-licensing.md`](docs/image-licensing.md). Ingest architecture
+(tiered: curated Wikidata P18 auto-ships, search hits go to human review —
+wrong image ≫ no image): [`docs/image-pipeline.md`](docs/image-pipeline.md).
 
 ## Load-time architecture
 
