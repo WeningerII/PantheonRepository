@@ -77,6 +77,29 @@ test('size tripwires: every upfront and per-view artifact is inside its budget',
   assert.deepStrictEqual(over, [], `size tripwire fired — execute the pre-agreed response for each:\n  ${over.join('\n  ')}`);
 });
 
+// ── Image tier placement (docs/image-licensing.md) ─────────────────────────
+// Figure portraits attach ONLY to detail shards, NEVER the skinny index — a
+// portrait per figure must not cost first-load bytes (CLAUDE.md load-time
+// rule). This holds the invariant structurally regardless of how many images
+// the committed manifest carries (currently zero): the index schema has no
+// image field, and any image that IS present lives on a shard.
+test('figure images live on detail shards, never on the skinny index', () => {
+  const index = readJSON(meta.files.index);
+  const leaked = index.filter((r) => 'image' in r || 'img' in r).map((r) => r.i);
+  assert.deepStrictEqual(leaked, [], `index records must carry no image field (would scale first-load bytes): ${leaked.slice(0, 10).join(', ')}`);
+
+  // Whatever the manifest holds must have been merged onto the shard records.
+  const manifestPath = path.join(ROOT, 'data-sources', 'images.json');
+  const manifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, 'utf8')) : {};
+  const ids = Object.keys(manifest);
+  if (!ids.length) return; // empty manifest — invariant holds vacuously
+  const shardDir = path.join(OUT, meta.details.dir);
+  const merged = {};
+  for (const f of meta.details.shards) Object.assign(merged, JSON.parse(fs.readFileSync(path.join(shardDir, f), 'utf8')));
+  const missing = ids.filter((id) => merged[id] && !(merged[id].image && merged[id].image.file));
+  assert.deepStrictEqual(missing, [], `manifest images not attached to their detail shard: ${missing.slice(0, 10).join(', ')}`);
+});
+
 // ── Graph/Lineage render parity ─────────────────────────────────────────────
 // The contract adapter: how the runtime must rehydrate skinny records from the
 // edges tier. Phase 2b implements exactly this transform in pr-boot; this

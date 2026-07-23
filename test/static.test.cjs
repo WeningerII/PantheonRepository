@@ -153,6 +153,57 @@ test('per-tradition llms/<tradition>.txt files: one per tradition + an index', (
   assert.match(norse, /registry\/norse_\w+\.html/, 'per-tradition file links figure pages');
 });
 
+// ── lead-portrait infobox (docs/image-licensing.md) ─────────────────────────
+// leadFigure builds the PD/CC0 <figure> that figurePage floats top-right. The
+// committed image manifest is empty, so unit-test the pure builder directly
+// with a synthetic images.json record. Imported from its own corpus-free lib
+// (requiring build-static.cjs would load the 28 MB corpus into this otherwise
+// light test process — enough concurrent memory to OOM the jsdom suite).
+const { leadFigure } = require('../scripts/lib/lead-figure.cjs');
+const BASE = 'https://www.listofgods.com/';
+
+test('leadFigure renders nothing when the figure has no image', () => {
+  assert.strictEqual(leadFigure(null, 'Zeus', BASE), '');
+  assert.strictEqual(leadFigure(undefined, 'Zeus', BASE), '');
+  assert.strictEqual(leadFigure({}, 'Zeus', BASE), '', 'a record with no file is not an image');
+});
+
+test('leadFigure emits a self-hosted, credited PD/CC0 infobox', () => {
+  const html = leadFigure({
+    file: 'greek_hesiod_zeus.webp', w: 800, h: 1000,
+    license: { key: 'pd-old-100', name: 'Public domain', url: null },
+    author: 'Rembrandt', authorUrl: 'https://commons.wikimedia.org/wiki/User:X',
+    source: 'https://commons.wikimedia.org/wiki/File:Zeus.webp',
+  }, 'Zeus', BASE);
+  assert.match(html, /^<figure class="lead">/, 'wraps in a lead figure');
+  // Self-hosted under assets/images/figures/ — never a Commons hotlink.
+  assert.match(html, /<img src="https?:\/\/\S+assets\/images\/figures\/greek_hesiod_zeus\.webp"/, 'self-hosted image src');
+  assert.ok(!/upload\.wikimedia\.org/.test(html), 'must not hotlink Commons upload host');
+  // Intrinsic dimensions reserve the box (no-shift), lazy + async decode.
+  assert.match(html, /width="800"/);
+  assert.match(html, /height="1000"/);
+  assert.match(html, /loading="lazy"/);
+  assert.match(html, /decoding="async"/);
+  assert.match(html, /alt="Zeus"/, 'alt is the figure name');
+  // Courtesy credit: author + license, both linking back to Commons.
+  assert.match(html, /Rembrandt/, 'author credited');
+  assert.match(html, /Public domain/, 'license shown');
+  assert.match(html, /href="https:\/\/commons\.wikimedia\.org\/wiki\/File:Zeus\.webp"/, 'license links to the Commons file page');
+  assert.match(html, /via Wikimedia Commons/, 'source attributed');
+});
+
+test('leadFigure escapes attacker-controlled author/name text', () => {
+  const html = leadFigure({
+    file: 'x.webp', w: 1, h: 1,
+    license: { name: 'Public domain' },
+    author: '<script>alert(1)</script>', authorUrl: 'https://commons.wikimedia.org/wiki/User:X',
+    source: 'https://commons.wikimedia.org/wiki/File:X.webp',
+  }, '"><img onerror=alert(1)>', BASE);
+  assert.ok(!/<script>alert/.test(html), 'author markup must be escaped');
+  assert.ok(!/<img onerror/.test(html), 'name markup must be escaped');
+  assert.match(html, /&lt;script&gt;/, 'author is HTML-escaped');
+});
+
 test('HTML is escaped — no unbalanced angle brackets leak from corpus text', () => {
   // A page whose notes/name could contain markup must not break out of tags.
   const zeus = read(path.join(REG, 'greek_hesiod_zeus.html'));

@@ -1020,7 +1020,37 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   scroll-padding-top: 32px;
 }
 
-.detail-header { margin-bottom: 28px; }
+/* flow-root contains the floated lead portrait so a tall image grows the
+   header instead of spilling over the notes/first section below it. */
+.detail-header { margin-bottom: 28px; display: flow-root; }
+/* Lead portrait infobox (docs/image-licensing.md) — PD/CC0 only, self-hosted.
+   Floats top-right; the eyebrow, name, and meta wrap to its left, the way a
+   reference infobox sits on the page. width/height on the <img> reserve the
+   aspect box so it drops in without shifting the header (cold-load no-shift). */
+.detail-lead {
+  float: right;
+  width: clamp(120px, 34%, 172px);
+  margin: 2px 0 16px 22px;
+}
+.detail-lead-img {
+  width: 100%; height: auto;
+  display: block;
+  border-radius: 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule-2);
+}
+.detail-lead-credit {
+  margin-top: 7px;
+  font: 400 10px/1.45 var(--font-mono);
+  letter-spacing: 0.02em;
+  color: var(--faint);
+}
+.detail-lead-credit a {
+  color: var(--faint);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule-2);
+}
+.detail-lead-credit a:hover { color: var(--ink-3); }
 .detail-header .eyebrow {
   display: flex; align-items: center;
   gap: 0 18px;

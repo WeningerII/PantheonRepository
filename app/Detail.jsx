@@ -633,6 +633,47 @@ function MaterialCulture({ entry, onOpenItem }) {
   );
 }
 
+// LeadImage — the PD/CC0 infobox portrait (docs/image-licensing.md). The
+// figure's detail shard carries it as entry.image (attached by build-tiers.cjs;
+// self-hosted under assets/images/figures/, never hotlinked). Floats top-right
+// of the header like a standard reference infobox and renders nothing when the
+// figure has no image — most don't, and the header must read the same either way.
+//
+// width/height are set from the manifest so the browser reserves the portrait's
+// aspect box before it decodes: the image drops in without nudging the header,
+// preserving the cold-load no-shift guarantee. A courtesy credit (author +
+// license) links back to the Commons file page — not legally required for
+// PD/CC0, but the honest, wiki-native thing to do.
+const IMG_BASE = 'assets/images/figures/'; // page-relative, same convention as the data/ tiers
+function LeadImage({ entry }) {
+  const img = entry && entry.image;
+  if (!img || !img.file) return null;
+  const license = (img.license && img.license.name) || 'Public domain';
+  return (
+    <figure className="detail-lead">
+      <img
+        className="detail-lead-img"
+        src={IMG_BASE + img.file}
+        alt={window.displayName(entry)}
+        width={img.w || undefined}
+        height={img.h || undefined}
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption className="detail-lead-credit">
+        {img.author && (img.authorUrl
+          ? <a href={img.authorUrl} target="_blank" rel="noopener noreferrer">{img.author}</a>
+          : <span>{img.author}</span>)}
+        {img.author && ' · '}
+        {img.source
+          ? <a href={img.source} target="_blank" rel="noopener noreferrer">{license}</a>
+          : <span>{license}</span>}
+        {' · Wikimedia Commons'}
+      </figcaption>
+    </figure>
+  );
+}
+
 function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, canPrev, canNext, onOpen, onOpenItem, onShowInGraph }) {
   // Exit-animation state machine. When `entryProp` becomes null, we keep the
   // currently-rendered entry around for one animation frame (cubic-bezier
@@ -753,6 +794,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
 
         <div className="detail-scroll">
           <div className="detail-header">
+            <LeadImage entry={entry} />
             <div className="eyebrow">
               <span className="eyebrow-leader">
                 <window.TierIcon type={entry.type} size={14} />

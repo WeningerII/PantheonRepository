@@ -226,6 +226,15 @@ function main() {
   const div = PR.divinity, inh = PR.inheritedPowers, mix = PR.traditionMix;
   const ids = Object.keys(P).sort();
   BUCKETS = bucketCountFor(ids.length);
+  // Figure images (PD/CC0 only — docs/image-licensing.md). The manifest is a
+  // separate committed source (scripts/ingest-images.cjs writes it), merged
+  // ONLY into the detail shards below — NEVER the skinny index, so a portrait
+  // per figure cannot touch first-load bytes. Image FILES self-host under
+  // assets/images/figures/; this carries just the ~200-byte metadata record.
+  const images = (() => {
+    try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data-sources', 'images.json'), 'utf8')); }
+    catch (_) { return {}; }
+  })();
   fs.rmSync(OUT, { recursive: true, force: true });
   fs.mkdirSync(path.join(OUT, 'details'), { recursive: true });
   const gz = (s) => zlib.gzipSync(Buffer.isBuffer(s) ? s : Buffer.from(s)).length;
@@ -292,6 +301,7 @@ function main() {
     if (div[id] != null) rec._divinity = div[id];
     if (inh[id]) rec._inherited = inh[id];
     if (mix[id]) rec._traditionMix = mix[id];
+    if (images[id]) rec.image = images[id]; // PD/CC0 lead portrait — shard-only
     buckets[bucketOf(id)][id] = rec;
   }
   let detailBytes = 0;

@@ -163,6 +163,81 @@ describe('app renders in a browser-like environment', () => {
     assert.ok(app.document.querySelector('.section-powers .power-row'), 'expected Heracles\' own faculties');
   });
 
+  // Lightweight LEAF figures — no descendants, parents, or relations — so
+  // opening their full Detail in jsdom stays cheap. (seedPeople key[0] is Zeus,
+  // who roots the whole Greek descendant tree; his Lineage SVG mounts
+  // synchronously here — deferRest is off under jsdom — and is far too heavy
+  // to open just to check an infobox.)
+  const lightFigureIds = (win, n = 2) => {
+    const sp = win.__PR.seedPeople;
+    const hasChild = new Set();
+    for (const k of Object.keys(sp)) for (const pid of (sp[k].parentIds || [])) hasChild.add(pid);
+    const out = [];
+    for (const k of Object.keys(sp)) {
+      const p = sp[k];
+      if (!hasChild.has(k) && !(p.parentIds || []).length && !(p.relations || []).length) out.push(k);
+      if (out.length >= n) break;
+    }
+    return out;
+  };
+
+  test('detail renders the PD/CC0 lead infobox only when the figure has an image', async () => {
+    // The detail shard carries entry.image (build-tiers attaches the images.json
+    // record). The harness boots the image-free corpus, so inject one record the
+    // same shape the shard delivers, then clean it up so no other test sees it.
+    // One test, both cases (present → absent), on two light figures so the panel
+    // opens cheaply and tears down before the memory-releasing Items switch that
+    // follows — keeping this file's peak jsdom heap where it was. Two DISTINCT
+    // figures because the absent case must change selectedId to force a real
+    // re-render (re-opening the same id is a no-op that leaves the old DOM).
+    const [idA, idB] = lightFigureIds(app.window, 2);
+    const rec = app.window.__PR.seedPeople[idA];
+    rec.image = {
+      file: idA + '.webp', w: 800, h: 1000,
+      license: { key: 'pd-old-100', name: 'Public domain', url: null },
+      author: 'Rembrandt', authorUrl: 'https://commons.wikimedia.org/wiki/User:X',
+      source: 'https://commons.wikimedia.org/wiki/File:Test.webp',
+      title: 'File:Test.webp', bytes: 12345,
+    };
+    try {
+      await app.openFigure(idA);
+      const fig = app.document.querySelector('.detail .detail-lead');
+      assert.ok(fig, 'lead infobox did not render for a figure with an image');
+      const img = fig.querySelector('img.detail-lead-img');
+      assert.ok(img, 'infobox <img> missing');
+      // Self-hosted, page-relative (never a Commons hotlink).
+      assert.match(img.getAttribute('src'), /^assets\/images\/figures\/.+\.webp$/,
+        `image src not self-hosted under assets/images/figures/: ${img.getAttribute('src')}`);
+      // width/height reserve the box so the portrait never shifts the header.
+      assert.strictEqual(img.getAttribute('width'), '800');
+      assert.strictEqual(img.getAttribute('height'), '1000');
+      assert.strictEqual(img.getAttribute('loading'), 'lazy');
+      const credit = fig.querySelector('.detail-lead-credit');
+      assert.ok(credit, 'credit line missing');
+      assert.match(credit.textContent, /Rembrandt/, 'author not credited');
+      assert.match(credit.textContent, /Public domain/, 'license not shown');
+      assert.match(credit.textContent, /Wikimedia Commons/, 'source not attributed');
+      const hrefs = [...credit.querySelectorAll('a')].map((a) => a.getAttribute('href'));
+      assert.ok(hrefs.includes('https://commons.wikimedia.org/wiki/File:Test.webp'),
+        'license credit must link back to the Commons file page');
+    } finally {
+      delete rec.image;
+    }
+    // A different, imageless figure: the header reads the same and emits no
+    // .detail-lead node (renders nothing, never a broken <img>).
+    assert.ok(!app.window.__PR.seedPeople[idB].image, 'precondition: idB has no image');
+    await app.openFigure(idB);
+    assert.ok(app.document.querySelector('.detail'), 'detail did not open for the imageless figure');
+    assert.strictEqual(app.document.querySelector('.detail .detail-lead'), null,
+      'an imageless figure rendered a lead infobox');
+    // Tear the panel down so it doesn't ride into the next tests' heap.
+    await app.act(async () => { app.key('Escape'); });
+    await app.flush();
+    await new Promise((r) => setTimeout(r, 220));
+    await app.flush();
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
   test('the Items view lists the object registry, grouped by kind', async () => {
     await app.clickButton('Items');
     const view = app.document.querySelector('.items-view');
