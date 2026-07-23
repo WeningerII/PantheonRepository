@@ -111,6 +111,17 @@ test('p18Of / p31Of read wbgetentities claim shapes', () => {
   assert.deepStrictEqual(wd.p31Of(undefined), []);
 });
 
+test('p373Of / commonsSitelink read the Commons category sources (deep pass)', () => {
+  const ent = {
+    claims: { P373: [{ mainsnak: { datavalue: { value: 'Zeus' } } }] },
+    sitelinks: { commonswiki: { title: 'Category:Zeus' } },
+  };
+  assert.strictEqual(wd.p373Of(ent), 'Zeus');
+  assert.strictEqual(wd.commonsSitelink(ent), 'Category:Zeus');
+  assert.strictEqual(wd.p373Of({}), null);
+  assert.strictEqual(wd.commonsSitelink({}), null);
+});
+
 // ── Tier-A sanity check ─────────────────────────────────────────────────────
 
 test('sanityCheck passes a portrait-shaped raster (the Artemision Bronze case)', () => {

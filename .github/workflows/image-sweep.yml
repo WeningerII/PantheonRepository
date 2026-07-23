@@ -84,9 +84,13 @@ jobs:
           N: ${{ needs.prepare.outputs.shards }}
         run: |
           set -euo pipefail
-          node scripts/ingest-images.cjs map      --shard "$SHARD/$N"
+          # image-run.json {"rescan":true} → a deep pass: re-try previously-empty
+          # figures with the enriched sources (Commons category, P18, alt-name
+          # search). Normal waves only advance new/stale figures.
+          RESCAN=$(node -p 'try { require("./data-sources/image-run.json").rescan ? "--rescan" : "" } catch (e) { "" }')
+          node scripts/ingest-images.cjs map      --shard "$SHARD/$N" $RESCAN
           node scripts/ingest-images.cjs harvest  --shard "$SHARD/$N"
-          node scripts/ingest-images.cjs fallback --shard "$SHARD/$N"
+          node scripts/ingest-images.cjs fallback --shard "$SHARD/$N" $RESCAN
       - name: Stage this shard's output
         run: |
           set -euo pipefail
