@@ -207,6 +207,27 @@ async function cmdFetch(opts) {
   if (rejected) console.log(`  rejects logged to ${path.relative(ROOT, REJECTS)}`);
 }
 
+// Rank a search hit by how likely it DEPICTS the figure (vs. scenery/context).
+// The blind top-of-search hit is often a temple/ruins/landscape photo that
+// happens to be CC0; a bust/statue/painting/coin in portrait-ish aspect is what
+// a lead portrait wants. Heuristic, title+aspect only — good enough to pick a
+// sensible default; a human can still override via image-sources.json.
+const DEPICTION = /\b(bust|head|statue|statuette|portrait|painting|figure|relief|marble|bronze|terracotta|fresco|mosaic|vase|amphora|krater|kylix|coin|cameo|gem|icon|enthroned|seated)\b/i;
+const NOT_DEPICTION = /\b(temple|ruin|ruins|site|sanctuary|archaeolog|excavat|\bmap\b|\bplan\b|panorama|landscape|\bview\b|vista|mount|hill|acropolis|street|interior|gallery|location|inscription|milestone|signpost)\b/i;
+function scoreCandidate(c, name) {
+  const t = c.title || '';
+  let s = 0;
+  if (name) {
+    const re = new RegExp('\\b' + name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+    if (re.test(t)) s += 3; // the figure's name in the title → likely about them
+  }
+  if (DEPICTION.test(t)) s += 2;
+  if (NOT_DEPICTION.test(t)) s -= 4; // scenery / place / text, not a portrait
+  const w = c.w || 0, h = c.h || 0;
+  if (w && h) { const r = h / w; if (r >= 0.95) s += 2; else if (r >= 0.75) s += 1; else if (r < 0.6) s -= 2; }
+  return s;
+}
+
 // ── auto: search + take the top PD/CC0 hit + fetch, for each requested id ─────
 // The one-shot path (no discover→review→fetch round-trip): reads figure ids from
 // data-sources/image-request.json (or --id), searches Commons, and fetches the
@@ -228,10 +249,15 @@ async function cmdAuto(opts) {
     if (!p) { console.warn(`  ! ${id}: not a known figure id`); rejects[id] = { reason: 'unknown figure id' }; failed++; continue; }
     const q = `${(p.name && p.name.primary) || id} ${p.tradition || ''}`.trim();
     let cands;
-    try { cands = await searchCandidates(q, 15); } catch (e) { console.warn(`  ! ${id}: search failed ${e.message}`); rejects[id] = { reason: 'search error: ' + e.message, query: q }; failed++; await sleep(400); continue; }
+    try { cands = await searchCandidates(q, 30); } catch (e) { console.warn(`  ! ${id}: search failed ${e.message}`); rejects[id] = { reason: 'search error: ' + e.message, query: q }; failed++; await sleep(400); continue; }
     if (!cands.length) { console.warn(`  ✗ ${id}: no PD/CC0 candidate for "${q}"`); rejects[id] = { reason: 'no PD/CC0 candidate', query: q }; failed++; await sleep(400); continue; }
 
-    // Walk candidates in relevance order until one downloads clean.
+    // Prefer an actual depiction over an incidental CC0 landscape/temple photo;
+    // ties keep the API's relevance order (Node's sort is stable).
+    const nm = (p.name && p.name.primary) || id;
+    cands.sort((a, b) => scoreCandidate(b, nm) - scoreCandidate(a, nm));
+
+    // Walk candidates best-first until one downloads clean.
     let placed = false;
     for (const c of cands) {
       const r = await fetchOne(id, c.title, manifest, opts);

@@ -117,11 +117,12 @@ jobs:
           set -euo pipefail
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add assets/images \
-                  data-sources/images.json \
-                  data-sources/image-sources.json \
-                  data-sources/image-candidates.json \
-                  data-sources/image-rejects.json 2>/dev/null || true
+          # Stage whole dirs (git add of a non-existent pathspec aborts the
+          # command and stages nothing — image-candidates/-rejects.json don't
+          # exist on a clean fetch). data-sources always exists; assets only
+          # after a successful fetch.
+          git add -A data-sources
+          [ -d assets ] && git add -A assets || true
           if git diff --cached --quiet; then
             echo "No image changes to commit."
           else
