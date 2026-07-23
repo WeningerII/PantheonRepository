@@ -43,6 +43,7 @@ const SOURCES = path.join(DS, 'image-sources.json');     // curated {id: "File:�
 const MANIFEST = path.join(DS, 'images.json');           // generated {id: {...}}
 const CANDIDATES = path.join(DS, 'image-candidates.json');
 const REJECTS = path.join(DS, 'image-rejects.json');
+const REQUEST = path.join(DS, 'image-request.json');     // [id, …] for `auto`
 const API = 'https://commons.wikimedia.org/w/api.php';
 const LEAD_WIDTH = 800;   // infobox @2x; the app also asks for a 400 @1x via srcset
 const UA = 'ListOfGods-ImageIngest/1.0 (https://listofgods.com; weningerii@gmail.com) node-https';
@@ -109,7 +110,72 @@ const extOf = (ct, url) => {
   const m = (url || '').match(/\.(jpe?g|png|webp|gif)(?:$|\?)/i); return m ? m[1].toLowerCase().replace('jpeg', 'jpg') : 'jpg';
 };
 
-// ── fetch: download + optimize + record the approved mapping ─────────────────
+// ── fetchOne: download + license-gate + optimize + record ONE approved File: ──
+// The shared per-image core used by both `fetch` (curated titles) and `auto`
+// (search-picked titles). Every path re-verifies the license here, so no image
+// is ever written without passing the PD/CC0 gate. Returns a small status.
+async function fetchOne(id, title, manifest, opts = {}) {
+  if (!opts.force && manifest[id] && fs.existsSync(path.join(IMG_DIR, manifest[id].file))) return { status: 'skip' };
+  let info;
+  try { info = await imageInfo(title); } catch (e) { return { status: 'reject', reason: 'api error: ' + e.message }; }
+  if (!info) return { status: 'reject', reason: 'file missing on Commons' };
+
+  const verdict = classify(info.extmetadata);
+  if (!verdict.accept) return { status: 'reject', reason: verdict.reason, license: verdict.license };
+
+  // Download the Commons-sized thumbnail (server-resized — no local resize needed).
+  const src = info.thumburl || info.url;
+  let dl;
+  try { dl = await get(src, 'buffer'); } catch (e) { return { status: 'reject', reason: 'download failed: ' + e.message }; }
+  let buf = dl.buf, ext = extOf(dl.contentType, src), w = info.thumbwidth || LEAD_WIDTH, h = info.thumbheight || null;
+
+  // Optional WebP conversion (CI has sharp; the sandbox does not).
+  if (sharp) {
+    try { const out = await sharp(buf).webp({ quality: 82 }).toBuffer(); if (out.length < buf.length) { buf = out; ext = 'webp'; } } catch (_) { /* keep original */ }
+  }
+
+  const file = `${id}.${ext}`;
+  fs.mkdirSync(IMG_DIR, { recursive: true });
+  fs.writeFileSync(path.join(IMG_DIR, file), buf);
+  // Archive the raw extmetadata for provenance (license state at ingest).
+  fs.mkdirSync(path.join(IMG_DIR, '_meta'), { recursive: true });
+  writeJSON(path.join(IMG_DIR, '_meta', `${id}.json`), { title, fetchedFrom: src, extmetadata: info.extmetadata });
+
+  manifest[id] = {
+    file, w, h,
+    license: { key: verdict.license.key, name: verdict.license.shortName || 'Public domain', url: verdict.license.url || null },
+    author: verdict.author || null,
+    authorUrl: verdict.authorUrl || null,
+    source: info.descriptionurl || `https://commons.wikimedia.org/wiki/${encodeURIComponent(title)}`,
+    title,
+    bytes: buf.length,
+  };
+  return { status: 'ok', file, w, h, bytes: buf.length, license: verdict.license.shortName || verdict.license.key };
+}
+
+// One Commons search → the PD/CC0-passing hits, in the API's relevance order.
+// Shared by `discover` (review) and `auto` (pick). File namespace (6) only.
+async function searchCandidates(query, limit = 15) {
+  const u = new URL(API);
+  u.search = new URLSearchParams({
+    action: 'query', generator: 'search', gsrsearch: query, gsrnamespace: '6', gsrlimit: String(limit),
+    prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: '320',
+    iiextmetadatafilter: EXT_FIELDS.join('|'), iiextmetadatalanguage: 'en',
+    format: 'json', formatversion: '2',
+  }).toString();
+  const data = await getJSON(u.toString());
+  const hits = ((data.query && data.query.pages) || []).slice().sort((a, b) => (a.index || 0) - (b.index || 0));
+  const ok = [];
+  for (const page of hits) {
+    const info = page.imageinfo && page.imageinfo[0];
+    if (!info) continue;
+    const v = classify(info.extmetadata);
+    if (v.accept) ok.push({ title: page.title, thumb: info.thumburl, w: info.width, h: info.height, license: v.license.shortName || v.license.key, author: v.author });
+  }
+  return ok;
+}
+
+// ── fetch: download + optimize the curated {id: File:} mapping ───────────────
 async function cmdFetch(opts) {
   const sources = readJSON(SOURCES, {});
   const ids = Object.keys(sources);
@@ -121,45 +187,14 @@ async function cmdFetch(opts) {
 
   for (const id of ids) {
     const title = sources[id];
-    if (!opts.force && manifest[id] && fs.existsSync(path.join(IMG_DIR, manifest[id].file))) { skipped++; continue; }
-    let info;
-    try { info = await imageInfo(title); } catch (e) { console.warn(`  ! ${id} <- ${title}: ${e.message}`); rejects[id] = { title, reason: 'api error: ' + e.message }; rejected++; await sleep(300); continue; }
-    if (!info) { rejects[id] = { title, reason: 'file missing on Commons' }; rejected++; await sleep(300); continue; }
-
-    const verdict = classify(info.extmetadata);
-    if (!verdict.accept) {
-      console.warn(`  ✗ ${id} <- ${title}: REJECT (${verdict.reason})`);
-      rejects[id] = { title, reason: verdict.reason, license: verdict.license };
+    const r = await fetchOne(id, title, manifest, opts);
+    if (r.status === 'skip') { skipped++; continue; }
+    if (r.status === 'reject') {
+      console.warn(`  ✗ ${id} <- ${title}: REJECT (${r.reason})`);
+      rejects[id] = { title, reason: r.reason, ...(r.license ? { license: r.license } : {}) };
       rejected++; await sleep(300); continue;
     }
-
-    // Download the Commons-sized thumbnail (server-resized — no local resize needed).
-    const src = info.thumburl || info.url;
-    let dl;
-    try { dl = await get(src, 'buffer'); } catch (e) { rejects[id] = { title, reason: 'download failed: ' + e.message }; rejected++; await sleep(300); continue; }
-    let buf = dl.buf, ext = extOf(dl.contentType, src), w = info.thumbwidth || LEAD_WIDTH, h = info.thumbheight || null;
-
-    // Optional WebP conversion (CI has sharp; the sandbox does not).
-    if (sharp) {
-      try { const out = await sharp(buf).webp({ quality: 82 }).toBuffer(); if (out.length < buf.length) { buf = out; ext = 'webp'; } } catch (_) { /* keep original */ }
-    }
-
-    const file = `${id}.${ext}`;
-    fs.writeFileSync(path.join(IMG_DIR, file), buf);
-    // Archive the raw extmetadata for provenance (license state at ingest).
-    fs.mkdirSync(path.join(IMG_DIR, '_meta'), { recursive: true });
-    writeJSON(path.join(IMG_DIR, '_meta', `${id}.json`), { title, fetchedFrom: src, extmetadata: info.extmetadata });
-
-    manifest[id] = {
-      file, w, h,
-      license: { key: verdict.license.key, name: verdict.license.shortName || 'Public domain', url: verdict.license.url || null },
-      author: verdict.author || null,
-      authorUrl: verdict.authorUrl || null,
-      source: info.descriptionurl || `https://commons.wikimedia.org/wiki/${encodeURIComponent(title)}`,
-      title,
-      bytes: buf.length,
-    };
-    console.log(`  ✓ ${id}  ${file}  ${w}×${h || '?'}  ${(buf.length / 1024).toFixed(0)}KB  [${verdict.license.shortName || verdict.license.key}]`);
+    console.log(`  ✓ ${id}  ${r.file}  ${r.w}×${r.h || '?'}  ${(r.bytes / 1024).toFixed(0)}KB  [${r.license}]`);
     fetched++;
     await sleep(400); // courteous pacing
   }
@@ -172,11 +207,59 @@ async function cmdFetch(opts) {
   if (rejected) console.log(`  rejects logged to ${path.relative(ROOT, REJECTS)}`);
 }
 
+// ── auto: search + take the top PD/CC0 hit + fetch, for each requested id ─────
+// The one-shot path (no discover→review→fetch round-trip): reads figure ids from
+// data-sources/image-request.json (or --id), searches Commons, and fetches the
+// FIRST license-verified PD/CC0 result that downloads clean, recording the chosen
+// File: back into image-sources.json. Convenience over curation — a human can
+// swap the title in image-sources.json and re-run fetch to override the pick.
+async function cmdAuto(opts) {
+  let ids = opts.id ? [opts.id] : readJSON(REQUEST, null);
+  if (!Array.isArray(ids) || !ids.length) { console.log('no data-sources/image-request.json ids (and no --id) — nothing to auto-ingest.'); return; }
+  const byId = Object.fromEntries(loadFigures().map((p) => [p.id, p]));
+  const sources = readJSON(SOURCES, {});
+  const manifest = readJSON(MANIFEST, {});
+  const rejects = {};
+  let done = 0, skipped = 0, failed = 0;
+
+  for (const id of ids) {
+    if (manifest[id] && !opts.force) { console.log(`  = ${id}: already has an image, skipping`); skipped++; continue; }
+    const p = byId[id];
+    if (!p) { console.warn(`  ! ${id}: not a known figure id`); rejects[id] = { reason: 'unknown figure id' }; failed++; continue; }
+    const q = `${(p.name && p.name.primary) || id} ${p.tradition || ''}`.trim();
+    let cands;
+    try { cands = await searchCandidates(q, 15); } catch (e) { console.warn(`  ! ${id}: search failed ${e.message}`); rejects[id] = { reason: 'search error: ' + e.message, query: q }; failed++; await sleep(400); continue; }
+    if (!cands.length) { console.warn(`  ✗ ${id}: no PD/CC0 candidate for "${q}"`); rejects[id] = { reason: 'no PD/CC0 candidate', query: q }; failed++; await sleep(400); continue; }
+
+    // Walk candidates in relevance order until one downloads clean.
+    let placed = false;
+    for (const c of cands) {
+      const r = await fetchOne(id, c.title, manifest, opts);
+      if (r.status === 'ok') {
+        sources[id] = c.title;
+        console.log(`  ✓ ${id}  ${c.title}  ${r.file}  ${r.w}×${r.h || '?'}  ${(r.bytes / 1024).toFixed(0)}KB  [${r.license}]`);
+        placed = true; done++; break;
+      }
+      console.warn(`    · ${id} <- ${c.title}: ${r.status}${r.reason ? ' (' + r.reason + ')' : ''}`);
+      await sleep(300);
+    }
+    if (!placed) { rejects[id] = { reason: 'all PD/CC0 candidates failed to fetch', query: q }; failed++; }
+    await sleep(400);
+  }
+
+  writeJSON(SOURCES, sortObj(sources));
+  writeJSON(MANIFEST, sortObj(manifest));
+  if (Object.keys(rejects).length) writeJSON(REJECTS, rejects);
+  console.log(`\nauto: ${done} ingested, ${skipped} already had images, ${failed} failed. manifest: ${Object.keys(manifest).length} images.`);
+  if (failed) console.log(`  failures logged to ${path.relative(ROOT, REJECTS)}`);
+}
+
 // ── discover: propose PD/CC0 candidates for human review (fetches nothing) ───
 async function cmdDiscover(opts) {
   const corpus = loadFigures();
   const have = new Set(Object.keys(readJSON(SOURCES, {})).concat(Object.keys(readJSON(MANIFEST, {}))));
   let pool = corpus.filter((p) => !have.has(p.id));
+  if (opts.id) pool = pool.filter((p) => p.id === opts.id);
   if (opts.trad) pool = pool.filter((p) => (p.tradition || '').toLowerCase() === opts.trad.toLowerCase());
   // Bias toward figures most likely to have public-domain art: deities first.
   pool.sort((a, b) => (a.type === 'deity' ? 0 : 1) - (b.type === 'deity' ? 0 : 1));
@@ -185,28 +268,13 @@ async function cmdDiscover(opts) {
   const candidates = readJSON(CANDIDATES, {});
   let proposed = 0;
   for (const p of pool) {
-    const q = `${p.name && p.name.primary || p.id} ${p.tradition || ''}`.trim();
-    let hits;
-    try {
-      const u = new URL(API);
-      u.search = new URLSearchParams({
-        action: 'query', generator: 'search', gsrsearch: q, gsrnamespace: '6', gsrlimit: '8',
-        prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: '320',
-        iiextmetadatafilter: EXT_FIELDS.join('|'), iiextmetadatalanguage: 'en',
-        format: 'json', formatversion: '2',
-      }).toString();
-      const data = await getJSON(u.toString());
-      hits = (data.query && data.query.pages) || [];
-    } catch (e) { console.warn(`  ! discover ${p.id}: ${e.message}`); await sleep(400); continue; }
-
-    const ok = [];
-    for (const page of hits) {
-      const info = page.imageinfo && page.imageinfo[0];
-      if (!info) continue;
-      const v = classify(info.extmetadata);
-      if (v.accept) ok.push({ title: page.title, thumb: info.thumburl, license: v.license.shortName || v.license.key, author: v.author });
+    const q = `${(p.name && p.name.primary) || p.id} ${p.tradition || ''}`.trim();
+    let ok;
+    try { ok = await searchCandidates(q, 8); } catch (e) { console.warn(`  ! discover ${p.id}: ${e.message}`); await sleep(400); continue; }
+    if (ok.length) {
+      candidates[p.id] = { name: q, options: ok.map((c) => ({ title: c.title, thumb: c.thumb, license: c.license, author: c.author })) };
+      proposed++; console.log(`  ○ ${p.id}: ${ok.length} PD/CC0 candidate(s)`);
     }
-    if (ok.length) { candidates[p.id] = { name: q, options: ok }; proposed++; console.log(`  ○ ${p.id}: ${ok.length} PD/CC0 candidate(s)`); }
     await sleep(500);
   }
   writeJSON(CANDIDATES, candidates);
@@ -247,6 +315,7 @@ function parseArgs(argv) {
     if (a === '--force') o.force = true;
     else if (a === '--limit') o.limit = parseInt(argv[++i], 10);
     else if (a === '--trad') o.trad = argv[++i];
+    else if (a === '--id') o.id = argv[++i];
     else o._.push(a);
   }
   return o;
@@ -254,11 +323,12 @@ function parseArgs(argv) {
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
   const cmd = opts._[0];
-  if (!sharp && cmd === 'fetch') console.log('(note: `sharp` not installed — saving Commons thumbnails as-is; CI installs sharp for WebP.)');
+  if (!sharp && (cmd === 'fetch' || cmd === 'auto')) console.log('(note: `sharp` not installed — saving Commons thumbnails as-is; CI installs sharp for WebP.)');
   if (cmd === 'fetch') return cmdFetch(opts);
+  if (cmd === 'auto') return cmdAuto(opts);
   if (cmd === 'discover') return cmdDiscover(opts);
   if (cmd === 'check') return cmdCheck();
-  console.log('usage: node scripts/ingest-images.cjs <discover|fetch|check> [--limit N] [--trad T] [--force]');
+  console.log('usage: node scripts/ingest-images.cjs <discover|auto|fetch|check> [--id ID] [--limit N] [--trad T] [--force]');
   process.exitCode = 2;
 }
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
