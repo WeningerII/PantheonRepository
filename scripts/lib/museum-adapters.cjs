@@ -57,8 +57,11 @@ const gates = {
     const dnr = rec && rec.content && rec.content.descriptiveNonRepeating;
     if (!dnr || !dnr.metadata_usage || dnr.metadata_usage.access !== 'CC0') return false;
     const media = dnr.online_media && Array.isArray(dnr.online_media.media) ? dnr.online_media.media : [];
-    // Must be an IMAGE media item (SI serves audio/video/3D too), CC0-usable.
-    return media.some((m) => m && m.content && (!m.type || /image/i.test(String(m.type))) && (!m.usage || m.usage.access === 'CC0'));
+    // Must be an IMAGE media item (SI serves audio/video/3D too) whose OWN
+    // usage flag is CC0. The record-level metadata_usage covers the METADATA,
+    // not the image — so a media item without its own explicit CC0 flag
+    // REJECTS (fail closed), never inherits.
+    return media.some((m) => m && m.content && (!m.type || /image/i.test(String(m.type))) && m.usage && m.usage.access === 'CC0');
   },
 };
 
@@ -234,11 +237,22 @@ const redactKey = (e) => {
   const msg = String((e && e.message) || e);
   return new Error(k ? msg.split(k).join('***SI_API_KEY***') : msg);
 };
-const siJSON = (url) => getJSON(url).catch((e) => { throw redactKey(e); });
+// api.data.gov keys default to 1,000 requests/hour. A sweep of ~4,700 figures
+// across 6 concurrent shards would blow through that and stall every shard on
+// rate-limit retries — so SI calls are budgeted per process (SI_BUDGET env,
+// default 60: 12 shards × 60 = 720/wave, under the default quota). Exhausting
+// the budget THROWS, which searchAll counts as an incomplete search — the
+// figure's scan state is not stamped and the next wave retries it.
+let siCalls = 0;
+const siBudget = () => parseInt(process.env.SI_BUDGET || '60', 10);
+const siJSON = (url) => {
+  if (++siCalls > siBudget()) return Promise.reject(new Error(`SI request budget exhausted (${siBudget()}/run) — deferred to next wave`));
+  return getJSON(url).catch((e) => { throw redactKey(e); });
+};
 function siToCand(row) {
   const dnr = row.content && row.content.descriptiveNonRepeating;
   const idx = (row.content && row.content.indexedStructured) || {};
-  const media = ((dnr && dnr.online_media && dnr.online_media.media) || []).find((m) => m && m.content && (!m.type || /image/i.test(String(m.type))) && (!m.usage || m.usage.access === 'CC0'));
+  const media = ((dnr && dnr.online_media && dnr.online_media.media) || []).find((m) => m && m.content && (!m.type || /image/i.test(String(m.type))) && m.usage && m.usage.access === 'CC0');
   if (!media) return null;
   return {
     ref: `si:${row.id}`, src: 'si', title: row.title || '',

@@ -5,7 +5,8 @@ Status: **the production design**, chosen by an adversarial architecture debate
 structured-data-first, automated-verification — two critics, one judge;
 unanimous synthesis). Licensing policy itself lives in
 [`image-licensing.md`](image-licensing.md) and is not restated here: PD /
-PD-old / PD-art / CC0 only, Commons only, self-host, never hotlink.
+PD-old / PD-art / CC0 only, approved sources only (Commons primary + the
+museum open-access list, owner-amended 2026-07-24), self-host, never hotlink.
 
 ## The two verdicts that shaped it
 
@@ -100,8 +101,8 @@ work across shards.)
 |---|---|
 | Image one specific figure | Add its id to `data-sources/image-request.json`, push. Tier-A ships it if curated data allows; otherwise its candidates land on the review sheet. |
 | Run the next sweep wave | Bump `data-sources/image-run.json` (e.g. `{"shards":12,"run":2}`), push — fans out across `shards` parallel jobs, one merged commit. |
-| Review pending candidates | Pull, open `data-sources/image-review.html` in a browser. Keys: **1/2/3** approve, **x** none, **j/k** move, **e** export. Save the export as `data-sources/image-approved.json`, commit, push. |
-| Reject a shipped image | Add its `File:` title under the figure's id in `data-sources/image-blocklist.json`, push any trigger file (or wait for the cron). It's pruned everywhere and never re-picked. |
+| Review pending candidates | Pull, open `data-sources/image-review.html` in a browser. Keys: **1–6** approve, **x** none, **j/k** move, **e** export. Save the export as `data-sources/image-approved.json`, commit, push. |
+| Reject a shipped image | Add its `File:` title (Commons) or its `src:id` ref (museum picks, e.g. `met:436535` — shown in the manifest entry's `ref`) under the figure's id in `data-sources/image-blocklist.json`, push any trigger file (or wait for the cron). It's pruned everywhere and never re-picked. |
 | Pin an exact image | Put `"figure_id": "File:…"` in `data-sources/image-sources.json` and run `fetch` (dispatch). Pins always win. |
 | Audit licenses now | Actions tab → Ingest Commons images → `check`. |
 

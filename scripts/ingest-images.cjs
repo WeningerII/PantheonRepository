@@ -636,12 +636,19 @@ async function cmdMuseums(opts) {
     if (fresh(mscan[f.id], MUSEUM_TTL_DAYS) && !opts.rescan) return false;
     return true;
   });
+  // Cap the run like delta's limits: an uncapped unsharded walk of ~4,700
+  // figures would outlive the job timeout. Sharded runs are already ~1/N.
+  const MUSEUMS_LIMIT = 400;
   if (opts.limit) pool = pool.slice(0, opts.limit);
+  else if (!sh) pool = pool.slice(0, MUSEUMS_LIMIT);
   if (!pool.length) { console.log('museums: nothing pending.'); return; }
   console.log(`museums: ${pool.length} imageless figures to search`);
 
-  let enriched = 0, empty = 0, errors = 0;
+  // Flush progress periodically so a timeout kill keeps everything done so far.
+  const flush = () => { writeJSON(REVIEW, sortObj(review)); writeJSON(MUSEUMSCAN, sortObj(mscan)); };
+  let enriched = 0, empty = 0, errors = 0, processed = 0;
   for (const fig of pool) {
+    if (++processed % 25 === 0) flush();
     const name = (fig.name && fig.name.primary) || fig.id;
     const alts = (fig.name && Array.isArray(fig.name.alt)) ? fig.name.alt.filter((s) => typeof s === 'string' && s) : [];
     const names = [name, ...alts];
@@ -680,9 +687,8 @@ async function cmdMuseums(opts) {
     console.log(`  ○ ${fig.id}: +${usable.slice(0, 3).length} museum candidate(s) [${usable.slice(0, 3).map((c) => c.src).join(',')}]`);
   }
 
-  writeJSON(REVIEW, sortObj(review));
-  writeJSON(MUSEUMSCAN, sortObj(mscan));
-  console.log(`museums: ${enriched} figures gained candidates, ${empty} had none, ${errors} errors. review queue: ${Object.keys(review).length}.`);
+  flush();
+  console.log(`museums: ${enriched} figures gained candidates, ${empty} had none, ${errors} incomplete (will retry next wave). review queue: ${Object.keys(review).length}.`);
   if (!sh) cmdSheet(); // sharded runs skip — the collector rebuilds the sheet once
 }
 

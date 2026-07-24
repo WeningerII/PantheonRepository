@@ -46,7 +46,7 @@ test('aic gate: is_public_domain===true with image_id', () => {
   assert.ok(!m.gates.aic({ image_id: 'abc' }));
 });
 
-test('si gate: metadata_usage CC0 plus a CC0 media item', () => {
+test('si gate: metadata_usage CC0 AND an explicitly-CC0 image media item', () => {
   const rec = (usage, mediaUsage, content = 'https://ids.si.edu/x.jpg') => ({
     content: { descriptiveNonRepeating: {
       metadata_usage: usage,
@@ -54,7 +54,9 @@ test('si gate: metadata_usage CC0 plus a CC0 media item', () => {
     } },
   });
   assert.ok(m.gates.si(rec({ access: 'CC0' }, { access: 'CC0' })));
-  assert.ok(m.gates.si(rec({ access: 'CC0' }, undefined)));                    // media without usage inherits record CC0
+  // Media WITHOUT its own usage flag REJECTS: metadata_usage covers the
+  // metadata, not the image — no inheritance, fail closed.
+  assert.ok(!m.gates.si(rec({ access: 'CC0' }, undefined)));
   assert.ok(!m.gates.si(rec({ access: 'Usage conditions apply' }, { access: 'CC0' })));
   assert.ok(!m.gates.si(rec({ access: 'CC0' }, { access: 'Usage conditions apply' })));
   assert.ok(!m.gates.si({ content: { descriptiveNonRepeating: {} } }));        // missing flag rejects
@@ -69,7 +71,7 @@ test('si gate: non-image media (video/audio) does not satisfy the gate', () => {
     } },
   });
   assert.ok(m.gates.si(rec('Images')));
-  assert.ok(m.gates.si(rec(undefined)));            // absent type tolerated
+  assert.ok(m.gates.si(rec(undefined)));            // absent type tolerated (usage flag still required)
   assert.ok(!m.gates.si(rec('Videos')));
   assert.ok(!m.gates.si(rec('Audio')));
 });
