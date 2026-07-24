@@ -78,24 +78,29 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - name: Install sharp (WebP optimization)
         run: npm install --no-save sharp
-      - name: Map + harvest + fallback (shard ${{ matrix.shard }}/${{ needs.prepare.outputs.shards }})
+      - name: Map + harvest + fallback + museums (shard ${{ matrix.shard }}/${{ needs.prepare.outputs.shards }})
         env:
           SHARD: ${{ matrix.shard }}
           N: ${{ needs.prepare.outputs.shards }}
+          SI_API_KEY: ${{ secrets.SI_API_KEY }}
         run: |
           set -euo pipefail
           # image-run.json {"rescan":true} → a deep pass: re-try previously-empty
           # figures with the enriched sources (Commons category, P18, alt-name
           # search). Normal waves only advance new/stale figures.
+          # image-run.json {"museums":true} → also query the approved museum
+          # open-access APIs (review-only; docs/image-licensing.md source list).
           RESCAN=$(node -p 'try { require("./data-sources/image-run.json").rescan ? "--rescan" : "" } catch (e) { "" }')
+          MUSEUMS=$(node -p 'try { require("./data-sources/image-run.json").museums ? "1" : "" } catch (e) { "" }')
           node scripts/ingest-images.cjs map      --shard "$SHARD/$N" $RESCAN
           node scripts/ingest-images.cjs harvest  --shard "$SHARD/$N"
           node scripts/ingest-images.cjs fallback --shard "$SHARD/$N" $RESCAN
+          if [ -n "$MUSEUMS" ]; then node scripts/ingest-images.cjs museums --shard "$SHARD/$N" $RESCAN; fi
       - name: Stage this shard's output
         run: |
           set -euo pipefail
           mkdir -p upload/data-sources
-          for f in qid-map images image-sources image-scan-state image-review; do
+          for f in qid-map images image-sources image-scan-state image-review museum-scan; do
             [ -f "data-sources/$f.json" ] && cp "data-sources/$f.json" "upload/data-sources/" || true
           done
           # Only NEW (untracked) image + provenance files — never re-upload the

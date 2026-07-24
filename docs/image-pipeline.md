@@ -46,7 +46,17 @@ fallback ─► TIER B (review)    everything less certain, from EVERY source,
             them; `image-run.json {"rescan":true}` re-runs this deep pass over
             previously-empty figures.)
 
-owner ───► approves on the sheet (keys 1/2/3/x) → exports
+museums ─► REVIEW-ONLY (added 2026-07-24, owner-approved) — the approved
+           museum open-access APIs (Met / Cleveland / AIC / Smithsonian-with-
+           key; lib/museum-adapters.cjs) searched for every imageless figure.
+           Per-source FAIL-CLOSED CC0 gates; name-hit required; natural-
+           history/taxa namespaces rejected; candidates carry culture/object-
+           type/date metadata onto the sheet. Museum picks travel as
+           "src:id" refs (met:436535) through the same approved→ingest path,
+           with the gate re-run at ingest. Own state: museum-scan.json
+           (180d TTL). Trigger: image-run.json {"museums":true}.
+
+owner ───► approves on the sheet (keys 1–6/x) → exports
            image-approved.json → push → `approved` ingests
            (license gate RE-RUNS on every file; picks become pins)
 ```
@@ -110,7 +120,8 @@ Commons directly, which is fine there; the **product** never hotlinks.
 | `data-sources/image-blocklist.json` | the owner | banned titles per figure (`_global` for all) |
 | `data-sources/image-scan-state.json` | all modes | timestamped no-result outcomes (drives TTL retries) |
 | `data-sources/image-request.json` | the owner | ids for `auto` |
-| `data-sources/image-run.json` | the owner | push-trigger for the parallel sweep: `{"shards": N, "run": k}` |
+| `data-sources/image-run.json` | the owner | push-trigger for the parallel sweep: `{"shards": N, "run": k, "rescan": bool, "museums": bool}` |
+| `data-sources/museum-scan.json` | `museums` | timestamped museum-search coverage (180d TTL) |
 | `assets/images/figures/` | shipping paths | self-hosted WebP portraits + `_meta/` provenance |
 
 ## Invariants (CI-enforced or structural)
