@@ -61,6 +61,43 @@ test('si gate: metadata_usage CC0 plus a CC0 media item', () => {
   assert.ok(!m.gates.si(null));
 });
 
+test('si gate: non-image media (video/audio) does not satisfy the gate', () => {
+  const rec = (type) => ({
+    content: { descriptiveNonRepeating: {
+      metadata_usage: { access: 'CC0' },
+      online_media: { media: [{ content: 'https://ids.si.edu/x', type, usage: { access: 'CC0' } }] },
+    } },
+  });
+  assert.ok(m.gates.si(rec('Images')));
+  assert.ok(m.gates.si(rec(undefined)));            // absent type tolerated
+  assert.ok(!m.gates.si(rec('Videos')));
+  assert.ok(!m.gates.si(rec('Audio')));
+});
+
+test('redactKey strips the SI api key from any error message', () => {
+  const prev = process.env.SI_API_KEY;
+  process.env.SI_API_KEY = 'sekrit123';
+  try {
+    const e = m.redactKey(new Error('HTTP 429 for https://api.si.edu/openaccess/api/v1.0/search?q=zeus&api_key=sekrit123'));
+    assert.ok(!e.message.includes('sekrit123'), 'key must not survive');
+    assert.ok(e.message.includes('***SI_API_KEY***'));
+  } finally {
+    if (prev === undefined) delete process.env.SI_API_KEY; else process.env.SI_API_KEY = prev;
+  }
+});
+
+test('lead-figure provenance: museum src labels the museum, Commons stays Commons', () => {
+  const { leadFigure, provenanceOf } = require('../scripts/lib/lead-figure.cjs');
+  assert.strictEqual(provenanceOf({ src: 'met' }), 'The Metropolitan Museum of Art');
+  assert.strictEqual(provenanceOf({ src: 'si' }), 'Smithsonian Open Access');
+  assert.strictEqual(provenanceOf({}), 'Wikimedia Commons');
+  const met = leadFigure({ file: 'x.webp', src: 'met', license: { name: 'CC0' }, source: 'https://www.metmuseum.org/art/collection/search/1' }, 'Shango');
+  assert.ok(met.includes('via The Metropolitan Museum of Art'));
+  assert.ok(!met.includes('Wikimedia Commons'));
+  const commons = leadFigure({ file: 'y.webp', license: { name: 'Public domain' }, source: 'https://commons.wikimedia.org/wiki/File:Y.jpg' }, 'Zeus');
+  assert.ok(commons.includes('via Wikimedia Commons'));
+});
+
 // ── homonym defenses ────────────────────────────────────────────────────────
 test('nameHit requires a word-boundary name match in title or tags', () => {
   const names = ['Shango', 'Ṣàngó'];
@@ -78,6 +115,7 @@ test('cultureMatch: tradition tokens and synonyms match culture/place fields', (
   assert.strictEqual(m.cultureMatch('Aztec/Mexica', { place: 'Mexico', objectType: 'Sculpture' }), 1);
   assert.strictEqual(m.cultureMatch('Yoruba', { culture: 'Japan', objectType: 'Print' }), 0);        // no match = neutral
   assert.strictEqual(m.cultureMatch('Yoruba', {}), 0);                                                // no metadata = neutral
+  assert.strictEqual(m.cultureMatch('Hindu', { place: 'Indianapolis' }), 0);                          // word boundary: "india" ≠ "indianapolis"
 });
 
 test('naturalHistoryReject kills the taxa/specimen namespace (the butterfly class)', () => {

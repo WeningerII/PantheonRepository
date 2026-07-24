@@ -232,16 +232,22 @@ async function museumFetchOne(id, ref, manifest, opts = {}, meta = {}) {
 
   let dl;
   try { dl = await get(rec.full, 'buffer'); } catch (e) { return { status: 'reject', reason: 'download failed: ' + e.message }; }
-  let buf = dl.buf, ext = extOf(dl.contentType, rec.full), w = null, h = null;
-  // Museum APIs serve original-resolution files; normalize to the same lead
-  // width Commons thumbnails ship at. Without sharp (sandbox), keep original.
-  if (sharp) {
-    try {
-      const out = await sharp(buf).resize({ width: LEAD_WIDTH, withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
-      const info = await sharp(out).metadata();
-      buf = out; ext = 'webp'; w = info.width || LEAD_WIDTH; h = info.height || null;
-    } catch (_) { /* keep original bytes */ }
+  if (dl.contentType && !/^image\//i.test(dl.contentType)) {
+    return { status: 'reject', reason: 'not an image: ' + dl.contentType };
   }
+  // Museum APIs serve original-resolution files; normalize to the same lead
+  // width Commons thumbnails ship at. Unlike the Commons path (which gets
+  // server-resized files WITH dimensions), this path depends on sharp for
+  // both the resize and the w/h the cold-load no-shift guarantee needs — so
+  // no sharp, or a sharp failure, REJECTS rather than shipping a full-res
+  // file with no reserved aspect box. CI always installs sharp.
+  if (!sharp) return { status: 'reject', reason: 'sharp unavailable — museum ingest requires resize + dimensions' };
+  let buf, ext, w, h;
+  try {
+    const out = await sharp(dl.buf).resize({ width: LEAD_WIDTH, withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
+    const info = await sharp(out).metadata();
+    buf = out; ext = 'webp'; w = info.width || LEAD_WIDTH; h = info.height || null;
+  } catch (e) { return { status: 'reject', reason: 'image processing failed: ' + e.message }; }
 
   const file = `${id}.${ext}`;
   fs.mkdirSync(IMG_DIR, { recursive: true });
@@ -639,14 +645,18 @@ async function cmdMuseums(opts) {
     const name = (fig.name && fig.name.primary) || fig.id;
     const alts = (fig.name && Array.isArray(fig.name.alt)) ? fig.name.alt.filter((s) => typeof s === 'string' && s) : [];
     const names = [name, ...alts];
-    let cands;
+    let res;
     try {
-      cands = await museums.searchAll(names, fig.tradition || '', { log: (m) => console.warn(`  ! ${fig.id}: ${m}`) });
+      res = await museums.searchAll(names, fig.tradition || '', { log: (m) => console.warn(`  ! ${fig.id}: ${m}`) });
     } catch (e) { console.warn(`  ! museums ${fig.id}: ${e.message}`); errors++; continue; }
 
-    const usable = cands.filter((c) => !isBlocked(bl, fig.id, c.ref) && !isBlocked(bl, fig.id, c.title));
-    mscan[fig.id] = { at: now(), hits: usable.length };
-    if (!usable.length) { empty++; continue; }
+    const usable = res.candidates.filter((c) => !isBlocked(bl, fig.id, c.ref) && !isBlocked(bl, fig.id, c.title));
+    // Scan state records ONLY complete searches (the mapOne rule): a source
+    // outage records nothing, so the next wave retries instead of the figure
+    // silently dropping out of museum coverage for the whole TTL.
+    if (res.errors === 0) mscan[fig.id] = { at: now(), hits: usable.length };
+    else errors++;
+    if (!usable.length) { if (res.errors === 0) empty++; continue; }
 
     // Merge the top museum hits into the figure's review entry (create it if
     // Commons found nothing). Museum options carry `ref` — the exportable
@@ -911,9 +921,15 @@ async function cmdCheck() {
     const rec = manifest[id];
     try {
       if (rec.ref && museums.parseRef(rec.ref)) {
-        // Museum entry: the source's CC0 gate must still pass today.
-        const m = await museums.resolveRef(rec.ref);
-        if (!m) drift[id] = 'museum gate no longer passes: ' + rec.ref; else ok++;
+        // Museum entry: the source's CC0 gate must still pass today. An
+        // unset SI_API_KEY means "cannot verify", never "drifted" — report
+        // it as its own outcome instead of a false license alarm.
+        if (museums.parseRef(rec.ref).src === 'si' && !process.env.SI_API_KEY) {
+          drift[id] = 'unverifiable: SI_API_KEY not configured (not license drift)';
+        } else {
+          const m = await museums.resolveRef(rec.ref);
+          if (!m) drift[id] = 'museum gate no longer passes: ' + rec.ref; else ok++;
+        }
       } else {
         const info = await imageInfo(rec.title, 120);
         if (!info) { drift[id] = 'file now missing on Commons'; }

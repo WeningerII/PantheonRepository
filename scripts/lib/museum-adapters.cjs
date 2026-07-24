@@ -57,7 +57,8 @@ const gates = {
     const dnr = rec && rec.content && rec.content.descriptiveNonRepeating;
     if (!dnr || !dnr.metadata_usage || dnr.metadata_usage.access !== 'CC0') return false;
     const media = dnr.online_media && Array.isArray(dnr.online_media.media) ? dnr.online_media.media : [];
-    return media.some((m) => m && m.content && (!m.usage || m.usage.access === 'CC0'));
+    // Must be an IMAGE media item (SI serves audio/video/3D too), CC0-usable.
+    return media.some((m) => m && m.content && (!m.type || /image/i.test(String(m.type))) && (!m.usage || m.usage.access === 'CC0'));
   },
 };
 
@@ -111,12 +112,13 @@ function cultureKeywords(tradition) {
   return [...syn];
 }
 // 1 = a culture/place field matches the tradition; 0 = no signal either way.
+// Word-boundary matching — substring would let "india" claim "Indianapolis".
 function cultureMatch(tradition, cand) {
   const kws = cultureKeywords(tradition);
   if (!kws.length) return 0;
   const hay = norm([cand.culture, cand.place, cand.objectType].filter(Boolean).join(' '));
   if (!hay) return 0;
-  return kws.some((k) => hay.includes(k)) ? 1 : 0;
+  return kws.some((k) => new RegExp('\\b' + k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(hay)) ? 1 : 0;
 }
 
 // Natural-history and other systematically-colliding namespaces (taxa named
@@ -223,10 +225,20 @@ async function aicGet(id) {
 }
 
 const siKey = () => process.env.SI_API_KEY || '';
+// The key travels in the request URL, and error paths quote full URLs
+// (wiki-http throws "HTTP <code> for <url>") — and some of those reasons end
+// up in COMMITTED files (image-rejects.json). Redact at the single choke
+// point so the secret can never leave the process in any message.
+const redactKey = (e) => {
+  const k = siKey();
+  const msg = String((e && e.message) || e);
+  return new Error(k ? msg.split(k).join('***SI_API_KEY***') : msg);
+};
+const siJSON = (url) => getJSON(url).catch((e) => { throw redactKey(e); });
 function siToCand(row) {
   const dnr = row.content && row.content.descriptiveNonRepeating;
   const idx = (row.content && row.content.indexedStructured) || {};
-  const media = ((dnr && dnr.online_media && dnr.online_media.media) || []).find((m) => m && m.content && (!m.usage || m.usage.access === 'CC0'));
+  const media = ((dnr && dnr.online_media && dnr.online_media.media) || []).find((m) => m && m.content && (!m.type || /image/i.test(String(m.type))) && (!m.usage || m.usage.access === 'CC0'));
   if (!media) return null;
   return {
     ref: `si:${row.id}`, src: 'si', title: row.title || '',
@@ -242,13 +254,13 @@ function siToCand(row) {
 async function siSearch(name, cap = 8) {
   if (!siKey()) return [];
   const q = encodeURIComponent(name);
-  const data = await getJSON(`https://api.si.edu/openaccess/api/v1.0/search?q=${q}&rows=${cap}&api_key=${siKey()}`);
+  const data = await siJSON(`https://api.si.edu/openaccess/api/v1.0/search?q=${q}&rows=${cap}&api_key=${siKey()}`);
   const rows = (data && data.response && Array.isArray(data.response.rows)) ? data.response.rows : [];
   return rows.filter((r) => gates.si(r)).map(siToCand).filter(Boolean);
 }
 async function siGet(id) {
   if (!siKey()) return null;
-  const data = await getJSON(`https://api.si.edu/openaccess/api/v1.0/content/${encodeURIComponent(id)}?api_key=${siKey()}`);
+  const data = await siJSON(`https://api.si.edu/openaccess/api/v1.0/content/${encodeURIComponent(id)}?api_key=${siKey()}`);
   const row = data && data.response;
   if (!row || !gates.si(row)) return null;
   const c = siToCand(row);
@@ -262,27 +274,30 @@ const GETTERS = { met: metGet, cma: cmaGet, aic: aicGet, si: siGet };
 const activeSources = () => ['met', 'cma', 'aic', ...(siKey() ? ['si'] : [])];
 
 /**
- * Search every active source for a figure. Returns gated, name-verified,
- * homonym-filtered candidates sorted by score — for the REVIEW SHEET only.
- * Per-source failures degrade to that source contributing nothing.
+ * Search every active source for a figure. Returns { candidates, errors } —
+ * gated, name-verified, homonym-filtered candidates sorted by score (for the
+ * REVIEW SHEET only), plus the count of per-source failures. Callers must
+ * treat errors > 0 as "coverage incomplete" and record NO scan state (the
+ * mapOne rule: a transient outage must never suppress retries for the TTL).
  */
 async function searchAll(names, tradition, { perSourceCap = 6, log = () => {} } = {}) {
   const out = [];
   const seen = new Set();
+  let errors = 0;
   for (const src of activeSources()) {
     for (const name of names.slice(0, 2)) {
       try {
         for (const c of await SEARCHERS[src](name, perSourceCap)) {
           if (!seen.has(c.ref)) { seen.add(c.ref); out.push(c); }
         }
-      } catch (e) { log(`${src} search "${name}": ${e.message}`); }
+      } catch (e) { errors++; log(`${src} search "${name}": ${e.message}`); }
       await sleep(PACE_MS);
     }
   }
   const kept = out.filter((c) => nameHit(names, c) && !naturalHistoryReject(c));
   kept.forEach((c) => { c.score = scoreMuseum(c, names, tradition); });
   kept.sort((a, b) => b.score - a.score);
-  return kept;
+  return { candidates: kept, errors };
 }
 
 /**
@@ -298,6 +313,6 @@ async function resolveRef(ref) {
 
 module.exports = {
   parseRef, gates, nameHit, cultureKeywords, cultureMatch, naturalHistoryReject,
-  scoreMuseum, searchAll, resolveRef, activeSources, siToCand, aicImg,
+  scoreMuseum, searchAll, resolveRef, activeSources, siToCand, aicImg, redactKey,
   DEPICTION_TYPE, NATURAL_HISTORY_TYPES,
 };

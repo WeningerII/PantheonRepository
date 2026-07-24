@@ -645,10 +645,19 @@ function MaterialCulture({ entry, onOpenItem }) {
 // license) links back to the Commons file page — not legally required for
 // PD/CC0, but the honest, wiki-native thing to do.
 const IMG_BASE = 'assets/images/figures/'; // page-relative, same convention as the data/ tiers
+// Honest per-source provenance: museum-sourced records carry `src`
+// (docs/image-licensing.md approved list); everything else is Commons.
+const IMG_SOURCE_LABELS = {
+  met: 'The Metropolitan Museum of Art',
+  cma: 'The Cleveland Museum of Art',
+  aic: 'The Art Institute of Chicago',
+  si: 'Smithsonian Open Access',
+};
 function LeadImage({ entry }) {
   const img = entry && entry.image;
   if (!img || !img.file) return null;
   const license = (img.license && img.license.name) || 'Public domain';
+  const provenance = IMG_SOURCE_LABELS[img.src] || 'Wikimedia Commons';
   return (
     <figure className="detail-lead">
       <img
@@ -668,7 +677,7 @@ function LeadImage({ entry }) {
         {img.source
           ? <a href={img.source} target="_blank" rel="noopener noreferrer">{license}</a>
           : <span>{license}</span>}
-        {' · Wikimedia Commons'}
+        {' · ' + provenance}
       </figcaption>
     </figure>
   );
