@@ -47,6 +47,22 @@ fallback ─► TIER B (review)    everything less certain, from EVERY source,
             them; `image-run.json {"rescan":true}` re-runs this deep pass over
             previously-empty figures.)
 
+native ──► NOT a stage but a MODIFIER on map + fallback (added 2026-07-24):
+           `image-run.json {"native":true}` makes both search each figure's own
+           script/language from `name.transliterations` (present on 97.5% of
+           the corpus) — lib/native-names.cjs turns Ἀκεσώ→el, 하백→ko,
+           Батраз→ru, Perkūnas→lt into (term, language) queries. Wikidata
+           labels are multilingual and Commons descriptions are written in the
+           uploading institution's language, so English-only search structurally
+           misses entities and files that exist. 2,017 imageless figures have
+           native terms; 1,099 in a non-Latin script. Compound values
+           ("Сварогъ Svarogŭ") are split per script run, parenthetical reading
+           glosses stripped, and scholarly Egyptological/Assyriological
+           transliteration ("sꜣt-ı͗mn") excluded — it is not a language anyone
+           catalogues in. Native matches count toward entity identification, but
+           a sub-3-character native match (dense CJK namespace) can never reach
+           high confidence.
+
 museums ─► REVIEW-ONLY (added 2026-07-24, owner-approved) — the approved
            museum open-access APIs (Met / Cleveland / AIC / Smithsonian-with-
            key; lib/museum-adapters.cjs) searched for every imageless figure.
@@ -121,7 +137,7 @@ Commons directly, which is fine there; the **product** never hotlinks.
 | `data-sources/image-blocklist.json` | the owner | banned titles per figure (`_global` for all) |
 | `data-sources/image-scan-state.json` | all modes | timestamped no-result outcomes (drives TTL retries) |
 | `data-sources/image-request.json` | the owner | ids for `auto` |
-| `data-sources/image-run.json` | the owner | push-trigger for the parallel sweep: `{"shards": N, "run": k, "rescan": bool, "museums": bool}` |
+| `data-sources/image-run.json` | the owner | push-trigger for the parallel sweep: `{"shards": N, "run": k, "rescan": bool, "museums": bool, "native": bool}` |
 | `data-sources/museum-scan.json` | `museums` | timestamped museum-search coverage (180d TTL) |
 | `assets/images/figures/` | shipping paths | self-hosted WebP portraits + `_meta/` provenance |
 

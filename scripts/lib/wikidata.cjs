@@ -14,16 +14,21 @@
  */
 'use strict';
 const { getJSON, sleep } = require('./wiki-http.cjs');
+const nn = require('./native-names.cjs');
 
 const API = 'https://www.wikidata.org/w/api.php';
 
 // ── network (thin, CI-only) ─────────────────────────────────────────────────
 
 // Name → up to `limit` candidate entities, in Wikidata's relevance order.
-async function searchEntities(name, limit = 7) {
+// `lang` selects WHICH language's labels/aliases are searched (Wikidata's
+// labels are multilingual): searching a Lithuanian deity in 'lt', a Japanese
+// figure by kanji in 'ja', or an Andean figure in 'es' resolves entities the
+// English romanization never finds. Defaults to English.
+async function searchEntities(name, limit = 7, lang = 'en') {
   const u = new URL(API);
   u.search = new URLSearchParams({
-    action: 'wbsearchentities', search: name, language: 'en', uselang: 'en',
+    action: 'wbsearchentities', search: name, language: lang, uselang: lang,
     type: 'item', limit: String(limit), format: 'json',
   }).toString();
   const data = await getJSON(u.toString());
@@ -129,6 +134,31 @@ const nameMatches = (names, cand) => {
   return candNames.some((c) => names.includes(c));
 };
 
+// The figure's NATIVE-script forms, raw. normName() strips non-ASCII, so
+// native strings (Ἀκεσώ, 하백, Батраз) can never match through it — they need
+// exact string comparison against the candidate's own labels/aliases.
+const nativeNameSet = (fig) => {
+  const set = new Set();
+  for (const f of nn.nativeForms(fig)) if (f.script !== 'latin') set.add(f.text);
+  return set;
+};
+
+/**
+ * How a candidate matches the figure: 'latin' (normalized romanized match),
+ * 'native' (exact native-script match), 'native-short' (native match on a
+ * string under 3 characters — real, but too dense a namespace to be
+ * confident: 2-character CJK strings collide heavily), or null.
+ */
+const matchKind = (names, natives, cand) => {
+  const raw = [cand.label, cand.matchText, ...(cand.aliases || [])].filter((s) => typeof s === 'string' && s);
+  if (raw.map(normName).filter(Boolean).some((c) => names.includes(c))) return 'latin';
+  for (const c of raw) {
+    const t = c.trim();
+    if (natives.has(t)) return t.length >= 3 ? 'native' : 'native-short';
+  }
+  return null;
+};
+
 /**
  * Choose a QID for a figure from its search candidates. Pure.
  * @param fig          corpus figure record (name.primary / name.alt / id)
@@ -140,9 +170,11 @@ const nameMatches = (names, cand) => {
 function pickQid(fig, candidates, isCollision) {
   if (!candidates || !candidates.length) return null;
   const names = figureNames(fig);
+  const natives = nativeNameSet(fig);
   const primary = names[0] || '';
 
-  const named = candidates.filter((c) => nameMatches(names, c));
+  const kinds = new Map(candidates.map((c) => [c, matchKind(names, natives, c)]));
+  const named = candidates.filter((c) => kinds.get(c));
   // No exact name match at all → at best a weak review-tier suggestion.
   const pool = (named.length ? named : candidates.slice(0, 3))
     .filter((c) => !WRONG_DESC.test(c.description || ''));
@@ -151,11 +183,14 @@ function pickQid(fig, candidates, isCollision) {
   const mythy = pool.filter((c) => MYTH_DESC.test(c.description || ''));
   const best = (mythy[0] || pool[0]);
   const base = { qid: best.qid, label: best.label, description: best.description };
+  // A match resting ONLY on a sub-3-character native string (dense CJK
+  // namespace) is real evidence but never confident evidence.
+  const solidMatch = named.some((c) => kinds.get(c) !== 'native-short');
 
   // Confident only when EVERY hazard is absent: exactly one myth-flavored
   // exact-name match, no intra-corpus name collision, not a trivially short
   // name (\"Al\", \"Set\" as 2-3 letters collide with the whole dictionary).
-  if (mythy.length === 1 && named.length && !isCollision && primary.length > 3) {
+  if (mythy.length === 1 && named.length && solidMatch && !isCollision && primary.length > 3) {
     return { ...base, confidence: 'high', reason: 'unique myth-description exact-name match' };
   }
   if (mythy.length >= 1) {
@@ -188,6 +223,6 @@ function corpusCollisions(figures) {
 
 module.exports = {
   searchEntities, getEntities, p18Of, p31Of, p373Of, commonsSitelink, NEGATIVE_P31,
-  normName, figureNames, nameMatches, pickQid, corpusCollisions,
+  normName, figureNames, nameMatches, matchKind, nativeNameSet, pickQid, corpusCollisions,
   MYTH_DESC, WRONG_DESC,
 };

@@ -52,6 +52,7 @@ const path = require('path');
 const { get, getJSON, sleep } = require('./lib/wiki-http.cjs');
 const { classify } = require('./lib/commons-license.cjs');
 const wd = require('./lib/wikidata.cjs');
+const nn = require('./lib/native-names.cjs');
 const { sanityCheck } = require('./lib/sanity-check.cjs');
 const { renderSheet } = require('./lib/contact-sheet.cjs');
 const museums = require('./lib/museum-adapters.cjs');
@@ -364,6 +365,17 @@ async function mapOne(fig, ctx) {
       for (const c of await wd.searchEntities(q, 7)) if (!byQid.has(c.qid)) byQid.set(c.qid, c);
       if (byQid.size >= 12) break;
     }
+    // Native-script / native-language pass (lib/native-names.cjs): Wikidata's
+    // labels are multilingual, so the entity an English romanization misses is
+    // often sitting under its own language's label (Ἀκεσώ in el, 하백 in ko,
+    // Батраз in ru). This is the single cheapest coverage gain available —
+    // once a QID lands, P18 and the Commons category are language-neutral.
+    if (ctx.native) {
+      for (const t of nn.searchTerms(fig, 2)) {
+        await sleep(250);
+        for (const c of await wd.searchEntities(t.term, 7, t.lang)) if (!byQid.has(c.qid)) byQid.set(c.qid, c);
+      }
+    }
   } catch (e) { console.warn(`  ! map ${fig.id}: ${e.message}`); return 'error'; }
   const pick = wd.pickQid(fig, [...byQid.values()], collisions.has(wd.normName(primary)));
   if (!pick) {
@@ -400,10 +412,20 @@ async function reviewOne(fig, qrec, ctx) {
     if (qid) add(await searchDepicts(qid, 15), 'p180');
     add(await searchCandidates(`${name} ${fig.tradition || ''}`.trim(), 25), 'text');
     for (const a of alts.slice(0, 2)) add(await searchCandidates(a, 12), 'text');
+    // Native-script text search: Commons file descriptions are written in the
+    // uploading institution's language — the Guaman Poma drawings (the best
+    // Inca source) are catalogued in Spanish, Siberian material in Russian,
+    // CJK material in native script. Searching only English misses them.
+    if (ctx.native) for (const t of nn.searchTerms(fig, 2)) add(await searchCandidates(t.term, 12), 'native');
   } catch (e) { console.warn(`  ! fallback ${fig.id}: ${e.message}`); return 'error'; }
 
   const usable = cands.filter((c) => !isBlocked(bl, fig.id, c.title));
-  usable.forEach((c) => { c.score = Math.max(...names.map((n) => scoreCandidate(c, n))); });
+  // Score against every romanized name; a title containing an exact NATIVE
+  // form is strong evidence the romanization can't see, so it scores too.
+  usable.forEach((c) => {
+    c.score = Math.max(...names.map((n) => scoreCandidate(c, n)));
+    if (nn.nativeHit(fig, c.title)) c.score += 3;
+  });
   usable.sort((a, b) => b.score - a.score);
   const top = usable.slice(0, 3);
   if (!top.length) {
@@ -449,7 +471,7 @@ async function cmdMap(opts) {
   console.log(`map: ${pool.length} figures to resolve (${collisions.size} collision names in corpus)`);
   const tally = { high: 0, ambiguous: 0, 'no-qid': 0, error: 0 };
   for (const fig of pool) {
-    const r = await mapOne(fig, { qmap, scan, collisions });
+    const r = await mapOne(fig, { qmap, scan, collisions, native: opts.native });
     tally[r] = (tally[r] || 0) + 1;
     await sleep(450);
   }
@@ -573,7 +595,7 @@ async function cmdFallback(opts) {
 
   const tally = { queued: 0, 'no-image': 0, error: 0 };
   for (const id of ids) {
-    const r = await reviewOne(byId[id], qmap[id] || null, { review, scan, bl });
+    const r = await reviewOne(byId[id], qmap[id] || null, { review, scan, bl, native: opts.native });
     tally[r] = (tally[r] || 0) + 1;
     await sleep(450);
   }
@@ -772,7 +794,7 @@ async function cmdAuto(opts) {
   // Map any requested id lacking a usable mapping (force — requests bypass TTLs).
   for (const id of ids) {
     if (!qmap[id] || qmap[id].confidence === 'rejected') {
-      await mapOne(byId[id], { qmap, scan, collisions });
+      await mapOne(byId[id], { qmap, scan, collisions, native: opts.native });
       await sleep(450);
     }
   }
@@ -963,6 +985,7 @@ function parseArgs(argv) {
     if (a === '--force') o.force = true;
     else if (a === '--refresh') o.refresh = true;
     else if (a === '--rescan') o.rescan = true;
+    else if (a === '--native') o.native = true;
     else if (a === '--limit') o.limit = parseInt(argv[++i], 10);
     else if (a === '--trad') o.trad = argv[++i];
     else if (a === '--id') o.id = argv[++i];
@@ -992,7 +1015,7 @@ async function main() {
   if (cmd === 'discover') return cmdDiscover(opts);
   if (cmd === 'check') return cmdCheck();
   console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
-  console.log('       [--id ID] [--shard i/n] [--shards N] [--from DIR] [--limit N] [--trad T] [--force] [--refresh] [--rescan]');
+  console.log('       [--id ID] [--shard i/n] [--shards N] [--from DIR] [--limit N] [--trad T] [--force] [--refresh] [--rescan] [--native]');
   process.exitCode = 2;
 }
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
