@@ -117,6 +117,12 @@ jobs:
           # Wikidata entity-search never resolved. Ships the lead image AND
           # repairs the mapping from the article's own wikibase_item.
           node scripts/ingest-images.cjs wikisearch --shard "$SHARD/$N" $RESCAN
+          # Read the BODY of those same articles. pageimages returns only the
+          # designated lead image, and the short articles in smaller wikis --
+          # exactly the figures still missing -- have no infobox at all, so
+          # their one engraving sits in the body. Review-tier, never auto-ship:
+          # a body image appears near the subject, it does not represent it.
+          node scripts/ingest-images.cjs articleimages --shard "$SHARD/$N" $RESCAN
           # Resolve domain-knowledge search leads (image-proposals.json) into
           # real, license-gated candidates before the generic fallback runs.
           node scripts/ingest-images.cjs proposals --shard "$SHARD/$N"

@@ -63,6 +63,21 @@ native ──► NOT a stage but a MODIFIER on map + fallback (added 2026-07-24)
            a sub-3-character native match (dense CJK namespace) can never reach
            high confidence.
 
+sitelinks ─► REVIEW (added 2026-07-24; DEMOTED from Tier A 2026-07-25) — the
+wikisearch  ~300 language Wikipedias. `sitelinks` walks each mapped QID's
+            editor-made entity→article links; `wikisearch` finds the article
+            directly, in the figure's own language, for figures Wikidata entity
+            search never resolved (and repairs the mapping from the article's
+            own wikibase_item). Both read the article's designated lead image.
+
+articleimages ─► REVIEW (added 2026-07-25) — the images inside the BODY of
+            those same articles (`prop=images`). `pageimages` returns only the
+            designated lead, and the short articles in the smaller wikis —
+            exactly the figures still missing — carry no infobox at all, so
+            their one engraving sits in the body where no path could see it.
+            Project logos, maintenance boxes and UI glyphs are dropped before
+            the license gate (lib/wiki-images.cjs `isChromeFile`).
+
 museums ─► REVIEW-ONLY (added 2026-07-24, owner-approved) — the approved
            museum open-access APIs (Met / Cleveland / AIC / Smithsonian-with-
            key; lib/museum-adapters.cjs) searched for every imageless figure.
@@ -83,6 +98,82 @@ The license gate (`scripts/lib/commons-license.cjs`) runs at ingest time on
 image archives its extmetadata + a verification record (tier, method, QID,
 signals) under `assets/images/figures/_meta/` so a bad batch is
 mass-revertible by cause.
+
+### The mapping is the weakest link (measured 2026-07-25)
+
+Everything entity-derived — P18, the Commons category, P180 "depicts", the
+Wikipedia sitelink lead, the article body — inherits the mapped entity's
+identity, so **one wrong entity makes all of them wrong at once**. An audit of
+all 4,363 mappings (each of the 595 riskiest rejections re-checked by an
+independent appeal, which upheld 593) found **45% of the table wrong**:
+
+| what the entity actually was | count |
+|---|---:|
+| place (village, river, station, airport, country) | 773 |
+| real person (politician, athlete, actress, researcher) | 274 |
+| modern work (film, game, article, software) | 217 |
+| concept (day of the week, kinship term, planet) | 212 |
+| other / organization / species / language / ethnic group | 403 |
+| a **different deity** | 98 |
+
+Some were absurd — `sua`→*the United States*, `ae`→*the United Arab Emirates*,
+`tiw`→*the planet Mars*, `aitar`→*Sunday*. The cause was `pickQid`'s final
+fallthrough: when no candidate had a myth-flavored description it returned the
+first name match **anyway**, as `ambiguous`. That bucket measured **82% wrong**.
+`WRONG_DESC` caught none of it, because it runs as a candidate filter — every
+mapping in the table had already passed it.
+
+Three changes, each measured against the audit's judgements:
+
+1. **`WRONG_KIND_DESC`** — a second wrong-kind gate covering what the audit
+   actually found. Applied only when the description carries no myth signal
+   and no pre-modern era marker, so "river god", "goddess of the city of Uruk"
+   and "6th-century Arab chieftain" all survive. **96.6% precision**, catching
+   51% of bad mappings, at 35 false positives corpus-wide — and a false
+   positive falls back to the text-search review path, not to nothing.
+2. **A new `weak` confidence tier** for a mapping whose entity has a non-empty
+   description with no myth signal. It is a real mapping but may not seed any
+   entity-derived candidate (`usableEntity()`). An *empty* description is
+   absence of evidence, not evidence of absence — Wikidata simply has none in
+   that language — and measured 18% wrong against 82%, so it stays `ambiguous`
+   and usable.
+3. **Text search always runs regardless**, since it depends on the figure's own
+   names rather than the entity. A rejected or weak mapping never leaves a
+   figure with nothing.
+
+Result: `high` 1,235 · `ambiguous` 791 · `weak` 361 · `rejected` 1,976.
+
+### Why only P18 auto-ships (measured 2026-07-25)
+
+The Wikipedia paths originally auto-shipped, on the reasoning that a sitelink is
+curated identification of the same class as P18. An audit of every auto-shipped
+image — each finding independently confirmed by a second reviewer before
+removal — measured otherwise:
+
+| path | wrong subject | shipped | rate |
+|------|--------------:|--------:|-----:|
+| `p18` | 0 | 328 | **0%** |
+| `sitelink` | 231 | 382 | **60%** |
+| `wikisearch` | 17 | 38 | **45%** |
+| reviewed (Tier B) | 0 | 536 | **0%** |
+
+The asymmetry is structural, not incidental. A P18 claim states *"this image
+depicts this entity"* — an assertion about the image. A sitelink states *"this
+article is about this entity"*, and the lead image is then curated for the
+**article**, one inference removed. So a sitelink lead is only as right as the
+entity mapping that reached it, and the mapping is the weakest link in the
+chain: `abkhaz_dzhadzha` was mapped to *Q920233 "Chaga people, ethnic group in
+Kenya and Tanzania"*, `aymara_amaru` to a commune in Buzău County, Romania.
+Each mis-mapping became a published factual error at the top of a figure's
+page. P18 is immune because an entity carrying a curated P18 claim is a
+well-described entity that the mapper matches correctly in the first place.
+
+248 images were purged and blocklisted; the 172 that survived the audit were
+re-tiered **A → B**, since what justifies them is the review, not the path.
+`test/image-pipeline.test.cjs` now pins the invariant: **Tier A is reachable
+only by `p18`.** Every other path — sitelinks, wikisearch, articleimages,
+proposals, museums, text fallback — earns its place through review, where the
+measured error rate is 0%.
 
 ## Parallelism — fan out, don't monolith
 

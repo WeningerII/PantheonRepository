@@ -120,6 +120,64 @@ const MYTH_DESC = /\b(deit\w*|god|goddess|myth\w*|legend\w*|folklor\w*|epic|hero
 // Backstop to NEGATIVE_P31 for entities whose P31 we never fetch.
 const WRONG_DESC = /\b(film|movie|television|tv series|episode|album|song|single|band|musical|video game|comics?|manga|anime|novel|painting by|sculpture by|asteroid|minor planet|crater|genus|species|plant|moth|butterfly|beetle|ship|vessel|locomotive|automobile|company|brand|typeface|font|programming language|footballer|wrestler|album by|surname|given name|family name)\b/i;
 
+// The SECOND wrong-kind gate, added 2026-07-25 after an audit of all 4,363
+// mappings found 45% of them wrong. WRONG_DESC above caught none of them —
+// not because it is useless, but because it runs as a candidate filter, so
+// everything already in the table had passed it. The failures were entities
+// it never contemplated: settlements, rivers, railway stations, days of the
+// week, planets, living researchers, journal articles, retail chains. The
+// worst were absurd: "Sua"→Q30 (the United States), "Ae"→Q878 (the UAE),
+// "Tiw"→Q111 (the planet Mars), "Aitar"→Q132 (Sunday).
+//
+// Applied ONLY when the description carries no myth signal, because these
+// words legitimately appear in real deity descriptions — "river god",
+// "goddess of the city of Uruk", "deified king of the region". Measured
+// against the audit's 4,363 judgements: 96.3% precision, catching 51% of all
+// bad mappings, at a cost of 39 false positives corpus-wide (which fall back
+// to the text-search review path rather than losing everything).
+const WRONG_KIND_DESC = new RegExp([
+  // inhabited places and administrative units
+  '\\b(village|hamlet|town|city|municipality|commune|settlement|locality|neighbourhood|neighborhood|quarter|district|county|province|prefecture|region|department|canton|parish|borough|census|populated place|human settlement|administrative|subdistrict|rural district)\\b',
+  // physical geography
+  '\\b(river|stream|creek|watercourse|lake|reservoir|bay|strait|island|archipelago|peninsula|mountain|peak|hill|valley|glacier|desert|cave|beach)\\b',
+  // infrastructure
+  '\\b(railway station|metro station|airport|airfield|airbase|highway|motorway|bridge|viaduct|dam|tunnel|harbour|harbor)\\b',
+  '\\b(country|sovereign state|federal state)\\b',
+  // real people
+  '\\b(politician|actress|actor|singer|rapper|musician|composer|painter|photographer|writer|author|poet|journalist|researcher|scientist|professor|academic|physician|lawyer|businessman|businesswoman|entrepreneur|youtuber|model)\\b',
+  '\\b(athlete|footballer|basketball|cricketer|boxer|cyclist|swimmer|runner|sprinter|marathon|gymnast|skier|skater|golfer|tennis|rower|weightlifter|judoka|racehorse|jockey|coach|referee)\\b',
+  '\\b(born \\d{4})|\\(\\d{4}[-–]\\d{4}\\)',
+  // scholarship and reference apparatus
+  '\\b(journal article|scientific article|scholarly article|academic paper|research article|encyclopedia article|wikimedia|disambiguation)\\b',
+  // organizations and products
+  '\\b(company|corporation|retail|brand|bank|airline|record label|publisher|newspaper|magazine|website|political party|trade union|university|school|college|hospital|foundation|association|federation)\\b',
+  '\\b(software|application|program|programming|operating system|file format|protocol|algorithm|media player|audio player|plugin|codec|emulator|web browser|text editor|compiler)\\b',
+  // natural science and abstractions
+  '\\b(day of the week|month of|unit of|chemical|mineral|isotope|protein|gene|enzyme|disease|disorder|syndrome|infection|anatomical)\\b',
+  '\\b(planet|natural satellite|constellation|galaxy|nebula|comet|meteorite|corona|crater)\\b',
+  '\\b(ethnic group|indigenous people|language|dialect|writing system)\\b',
+].join('|'), 'i');
+
+// A great many corpus figures are historical people who became legendary —
+// Antarah ibn Shaddad, Hatim al-Tai, Imru' al-Qais, deified rulers, epic
+// chieftains. Wikidata describes them by occupation ("Arabian warrior and
+// poet", "6th-century Arab chieftain"), which trips the real-person clause
+// above. An era marker is positive evidence the entity belongs to antiquity or
+// legend rather than to the modern world the person-clause targets, so it
+// vetoes the rejection the same way a myth signal does.
+// The trailing alternative catches a lifespan wholly inside the first
+// millennium — "(501–544)" — which the modern-person date clause misses.
+const PREMODERN = /\b(\d{1,2}(st|nd|rd|th)[- ]century|BCE?|AD \d|ancient|antiquity|classical|medieval|mediaeval|pre-islamic|pre-columbian|legendary|mythical|mythological|epic|semi-legendary|folk hero|bronze age|iron age|vedic|biblical|quranic)\b|\(\d{1,3}[-–]\d{1,4}\)/i;
+
+// True when the description is positive evidence of a DIFFERENT kind of thing.
+// A myth signal always wins: "river god" is a god, not a river.
+const wrongKind = (desc) => {
+  const d = String(desc || '');
+  if (WRONG_DESC.test(d)) return true;
+  if (!WRONG_KIND_DESC.test(d)) return false;
+  return !MYTH_DESC.test(d) && !PREMODERN.test(d);
+};
+
 // All the names a figure legitimately answers to.
 const figureNames = (fig) => {
   const n = fig && fig.name;
@@ -177,7 +235,7 @@ function pickQid(fig, candidates, isCollision) {
   const named = candidates.filter((c) => kinds.get(c));
   // No exact name match at all → at best a weak review-tier suggestion.
   const pool = (named.length ? named : candidates.slice(0, 3))
-    .filter((c) => !WRONG_DESC.test(c.description || ''));
+    .filter((c) => !wrongKind(c.description));
   if (!pool.length) return null;
 
   const mythy = pool.filter((c) => MYTH_DESC.test(c.description || ''));
@@ -202,8 +260,38 @@ function pickQid(fig, candidates, isCollision) {
         : 'short/hazardous name',
     };
   }
-  return { ...base, confidence: 'ambiguous', reason: 'no myth-flavored description' };
+  // No candidate reads like our domain at all. This bucket used to be returned
+  // as 'ambiguous', indistinguishable from a myth-flavored match that merely
+  // had a hazard — and the audit measured it at 82% wrong. It is now its own
+  // tier. `weak` is a real mapping (the name matched, nothing positively
+  // contradicts it) but it may not seed ENTITY-DERIVED image candidates: P18,
+  // the Commons category, "depicts", the sitelink lead and the article body
+  // all inherit the entity's identity, so a wrong entity makes all of them
+  // wrong at once. Text search over the figure's own names does not, and still
+  // runs.
+  //
+  // An EMPTY description is not evidence of anything — Wikidata simply has no
+  // description in that language. Those stay 'ambiguous' (measured 18% wrong,
+  // against 82% for a non-empty description with no myth signal).
+  const described = String(best.description || '').trim();
+  if (described) {
+    return { ...base, confidence: 'weak', reason: 'description is not myth-flavored' };
+  }
+  return { ...base, confidence: 'ambiguous', reason: 'no description to judge' };
 }
+
+/**
+ * May this mapping seed ENTITY-DERIVED image candidates (P18, the Commons
+ * category, P180 "depicts", the Wikipedia sitelink lead, the article body)?
+ *
+ * All of those inherit the entity's identity wholesale, so one wrong entity
+ * makes every one of them wrong together — which is exactly how a mapping to
+ * "Chaga people" put an East African harvest dance on an Abkhaz goddess. Text
+ * search over the figure's own names carries no such dependency and always
+ * runs, so a rejected or weak mapping never leaves a figure with nothing.
+ */
+const usableEntity = (rec) => !!(rec && rec.qid
+  && rec.confidence !== 'rejected' && rec.confidence !== 'weak');
 
 // Names appearing under more than one tradition in OUR corpus — computable
 // offline, and the direct fix for the cross-tradition collision hazard (the
@@ -224,5 +312,5 @@ function corpusCollisions(figures) {
 module.exports = {
   searchEntities, getEntities, p18Of, p31Of, p373Of, commonsSitelink, NEGATIVE_P31,
   normName, figureNames, nameMatches, matchKind, nativeNameSet, pickQid, corpusCollisions,
-  MYTH_DESC, WRONG_DESC,
+  MYTH_DESC, WRONG_DESC, WRONG_KIND_DESC, wrongKind, usableEntity,
 };

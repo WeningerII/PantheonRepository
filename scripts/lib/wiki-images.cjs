@@ -130,6 +130,78 @@ async function pageImages(lang, titles, { log = () => {} } = {}) {
   return out;
 }
 
+// Interface furniture that appears in article wikitext and is never a
+// depiction of the subject: project logos, maintenance boxes, UI glyphs, audio
+// speaker icons, flags/arms, map pins and locator maps, portal stars.
+// Matched against the bare filename, case-insensitively.
+// Matched against the filename with whitespace folded to "_", which is how
+// MediaWiki titles round-trip (the API hands back "Question book-new.svg", the
+// canonical title is "Question_book-new.svg" — both must hit).
+const CHROME_FILE = new RegExp([
+  '^(commons|wikisource|wiktionary|wikiquote|wikidata|wikinews|wikibooks|wikiversity|wikispecies|wikimedia)[-_]',
+  '^(ambox|imbox|cmbox|tmbox|ombox|fmbox)',
+  '^(nuvola|crystal|gnome|oojs|octicons|font_?awesome|material_?symbol)',
+  '^(flag|coat_of_arms|escudo|bandera|drapeau)[-_]',
+  '^(p_vip|portal|star_of_life|question_book|edit-clear|text_document|merge)',
+  '^(red|blue|green|orange|purple|yellow|black|white)_pog',
+  '^(searchtool|magnify-clip)',
+  '[-_](locator|location)_map',
+  '(speaker|loudspeaker|sound|audio)[-_]?icon',
+  '(^|_)(disambig|padlock|lock|wiki_letter|folder|emblem|icon)[-_]',
+  '(^|_)symbol_',
+  '(^|_)(increase|decrease|steady)\\d*\\.',
+].join('|'), 'i');
+
+const isChromeFile = (name) => CHROME_FILE.test(
+  String(name || '').replace(/^File:/i, '').replace(/\s+/g, '_').trim());
+
+/**
+ * Every file USED IN the body of many articles on ONE wiki.
+ *
+ * The gap this closes: `prop=pageimages` returns only the page's designated
+ * lead image, and a great many mythology articles have no infobox at all —
+ * their one 19th-century engraving or museum photograph sits in the body,
+ * invisible to every path we had. `prop=images` lists them.
+ *
+ * Body images are NOT curated identification of the subject (an article can
+ * illustrate a parent deity, a temple, a family tree), so callers must route
+ * these to human/agent review rather than auto-shipping them.
+ *
+ * @returns {title: [filename, …]} — filenames WITHOUT the "File:" prefix, in
+ *          article order, chrome already dropped.
+ */
+async function articleImages(lang, titles, { log = () => {}, perPage = 12 } = {}) {
+  const out = {};
+  for (let i = 0; i < titles.length; i += 50) {
+    const chunk = titles.slice(i, i + 50);
+    const u = new URL(`https://${lang}.wikipedia.org/w/api.php`);
+    u.search = new URLSearchParams({
+      action: 'query', prop: 'images', imlimit: 'max', redirects: '1',
+      titles: chunk.join('|'), format: 'json', formatversion: '2',
+    }).toString();
+    let data;
+    try { data = await getJSON(u.toString()); }
+    catch (e) { log(`${lang}wiki images batch: ${e.message}`); continue; }
+    const back = resolveRequested(data);
+    for (const p of ((data.query && data.query.pages) || [])) {
+      if (!p || !p.title || !Array.isArray(p.images)) continue;
+      const files = [];
+      for (const im of p.images) {
+        const name = String((im && im.title) || '').replace(/^[^:]+:/, '').trim();
+        if (!name || isChromeFile(name)) continue;
+        files.push(name);
+        if (files.length >= perPage) break;
+      }
+      if (!files.length) continue;
+      out[p.title] = files;
+      const orig = back.get(p.title);
+      if (orig) out[orig] = files;
+    }
+    if (i + 50 < titles.length) await sleep(200);
+  }
+  return out;
+}
+
 /**
  * Search ONE wiki for an article, in that wiki's own language, and return the
  * best title plus its lead image and Wikidata id in a single round trip.
@@ -181,5 +253,5 @@ function titleNamesFigure(title, names) {
 
 module.exports = {
   sitelinksOf, orderWikis, pageImages, wikiLangOf, resolveRequested,
-  searchWiki, titleNamesFigure, BIG_WIKIS,
+  searchWiki, titleNamesFigure, BIG_WIKIS, articleImages, isChromeFile,
 };
