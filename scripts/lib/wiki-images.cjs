@@ -130,4 +130,56 @@ async function pageImages(lang, titles, { log = () => {} } = {}) {
   return out;
 }
 
-module.exports = { sitelinksOf, orderWikis, pageImages, wikiLangOf, resolveRequested, BIG_WIKIS };
+/**
+ * Search ONE wiki for an article, in that wiki's own language, and return the
+ * best title plus its lead image and Wikidata id in a single round trip.
+ *
+ * Why this exists separately from the sitelink path: a figure only reaches
+ * sitelinks if `map` already resolved it to a Wikidata entity, and
+ * wbsearchentities misses entities routinely — 1,378 corpus figures have no
+ * QID at all. But the ARTICLE often exists anyway. Searching the wiki directly,
+ * in the figure's own language, finds it and hands back both the image and the
+ * QID (via pageprops.wikibase_item), which also repairs the mapping.
+ *
+ * @returns [{title, pageimage, qid, snippetTitle}] best-first
+ */
+async function searchWiki(lang, term, { limit = 3, log = () => {} } = {}) {
+  const u = new URL(`https://${lang}.wikipedia.org/w/api.php`);
+  u.search = new URLSearchParams({
+    action: 'query', generator: 'search', gsrsearch: term, gsrlimit: String(limit),
+    gsrnamespace: '0', prop: 'pageimages|pageprops', piprop: 'name',
+    pilicense: 'free', pilimit: String(limit), ppprop: 'wikibase_item',
+    format: 'json', formatversion: '2',
+  }).toString();
+  let data;
+  try { data = await getJSON(u.toString()); }
+  catch (e) { log(`${lang}wiki search "${term}": ${e.message}`); return []; }
+  const pages = (data.query && data.query.pages) || [];
+  return pages
+    .slice()
+    .sort((a, b) => (a.index || 0) - (b.index || 0))
+    .map((p) => ({
+      title: p.title,
+      pageimage: p.pageimage || null,
+      qid: (p.pageprops && p.pageprops.wikibase_item) || null,
+    }));
+}
+
+// Does an article title plausibly name the figure, rather than merely mention
+// it? Requires the title to BE the name, or the name plus a parenthetical
+// disambiguator ("Sarpedon (son of Zeus)") — never a title that just contains
+// the word, which is how "Elisha Cursing the Children of Bethel" happens.
+function titleNamesFigure(title, names) {
+  const norm = (s) => String(s || '').toLowerCase().normalize('NFD')
+    .replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
+  const t = norm(title).replace(/\s*\([^)]*\)\s*$/, '');   // drop disambiguator
+  return names.some((n) => {
+    const nn = norm(n);
+    return nn.length > 2 && t === nn;
+  });
+}
+
+module.exports = {
+  sitelinksOf, orderWikis, pageImages, wikiLangOf, resolveRequested,
+  searchWiki, titleNamesFigure, BIG_WIKIS,
+};

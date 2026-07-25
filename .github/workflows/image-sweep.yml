@@ -105,6 +105,10 @@ jobs:
           # under the same license + sanity gates as P18. Runs BEFORE fallback so
           # whatever it resolves never reaches the review queue at all.
           node scripts/ingest-images.cjs sitelinks --shard "$SHARD/$N" $RESCAN
+          # Find the ARTICLE directly, in the figure's own language, for figures
+          # Wikidata entity-search never resolved. Ships the lead image AND
+          # repairs the mapping from the article's own wikibase_item.
+          node scripts/ingest-images.cjs wikisearch --shard "$SHARD/$N" $RESCAN
           node scripts/ingest-images.cjs fallback --shard "$SHARD/$N" $RESCAN $NATIVE
           # NOTE: $RESCAN is deliberately NOT passed to museums. Museum
           # re-search is governed by its own 180-day TTL (museum-scan.json);

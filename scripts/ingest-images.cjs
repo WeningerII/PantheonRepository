@@ -760,6 +760,107 @@ async function cmdSitelinks(opts) {
   console.log(`sitelinks: ${shipped} shipped, ${none} without a usable lead image, ${gated} license-rejected. manifest: ${Object.keys(manifest).length}.`);
 }
 
+// wikisearch: find the ARTICLE directly, in the figure's own language, for
+// figures Wikidata entity-search never resolved.
+//
+// The sitelinks path only reaches figures that already have a QID, and
+// wbsearchentities misses entities constantly — 1,378 corpus figures have none.
+// The article usually exists regardless. Searching each wiki in its own
+// language finds it and returns, in one round trip, both the lead image and
+// the article's wikibase_item — so this ships an image AND repairs the
+// mapping, feeding every downstream path.
+//
+// Precision: the article's TITLE must actually name the figure (exact, modulo
+// a parenthetical disambiguator). A title that merely contains the word is
+// rejected — that is the "Elisha Cursing the Children of Bethel" failure mode.
+async function cmdWikiSearch(opts) {
+  const figures = loadFigures();
+  const qmap = readJSON(QIDMAP, {});
+  const scan = readJSON(SCANSTATE, {});
+  const manifest = readJSON(MANIFEST, {});
+  const sources = readJSON(SOURCES, {});
+  const bl = readJSON(BLOCKLIST, {});
+  pruneBlocked(manifest, sources, bl);
+  const sh = parseShard(opts);
+
+  let pool = figures.filter((f) => inShard(f.id, sh) && needsImage(f.id, manifest, scan)
+    && !(scan[f.id] && scan[f.id].status === 'no-wikisearch' && fresh(scan[f.id], NO_IMAGE_TTL_DAYS) && !opts.rescan));
+  if (opts.id) pool = pool.filter((f) => f.id === opts.id);
+  if (opts.limit) pool = pool.slice(0, opts.limit);
+  if (!pool.length) { console.log('wikisearch: nothing pending.'); return; }
+  console.log(`wikisearch: ${pool.length} imageless figures — searching wikis in their own languages`);
+
+  let shipped = 0, none = 0, mapped = 0, done = 0;
+  for (const fig of pool) {
+    const primary = (fig.name && fig.name.primary) || fig.id;
+    const alts = (fig.name && Array.isArray(fig.name.alt)) ? fig.name.alt.filter((s) => typeof s === 'string' && s) : [];
+    const names = [primary, ...alts];
+    const native = nn.searchTerms(fig, 3);
+    for (const t of native) names.push(t.term);
+
+    // Query the figure's own language wiki(s) first, then English. Each query
+    // is (wiki, term) with the term in that wiki's language where we have one.
+    const queries = [];
+    for (const t of native) queries.push({ lang: t.lang, term: t.term });
+    for (const t of native) queries.push({ lang: t.lang, term: primary });
+    queries.push({ lang: 'en', term: primary });
+    const seenQ = new Set();
+
+    let hit = null;
+    for (const q of queries) {
+      const key = q.lang + '|' + q.term;
+      if (!q.lang || !q.term || seenQ.has(key)) continue;
+      seenQ.add(key);
+      if (seenQ.size > 4) break;                       // budget per figure
+      const res = await wi.searchWiki(q.lang, q.term, { log: (m) => console.warn('  ! ' + m) });
+      await sleep(220);
+      for (const r of res) {
+        if (!wi.titleNamesFigure(r.title, names)) continue;
+        if (r.qid && (!qmap[fig.id] || qmap[fig.id].confidence === 'rejected')) {
+          // The article's own Wikidata link is a stronger mapping than a
+          // fuzzy entity search: the wiki editors made it.
+          qmap[fig.id] = { qid: r.qid, label: r.title, description: '', confidence: 'ambiguous',
+            reason: `article ${q.lang}wiki "${r.title}"`, at: now() };
+          mapped++;
+        }
+        if (r.pageimage) { hit = { ...r, lang: q.lang }; break; }
+      }
+      if (hit) break;
+    }
+
+    if (!hit) { scan[fig.id] = { status: 'no-wikisearch', at: now() }; none++; }
+    else {
+      const title = 'File:' + hit.pageimage;
+      let info = null;
+      // Commons-only (rule 1): a local wiki upload does not resolve here.
+      if (!isBlocked(bl, fig.id, title)) { try { info = await imageInfo(title); } catch (_) {} }
+      const gate = info ? classify(info.extmetadata) : null;
+      const sane = info ? sanityCheck({ title, mime: info.mime, width: info.width, height: info.height }) : null;
+      if (info && gate.accept && sane.pass) {
+        const r = await fetchOne(fig.id, title, manifest, { bl },
+          { tier: 'A', method: `wikisearch:${hit.lang}`, qid: hit.qid || null, signals: sane.signals });
+        if (r.status === 'ok') {
+          sources[fig.id] = title; delete scan[fig.id];
+          console.log(`  ✓ ${fig.id}  [${hit.lang}wiki "${hit.title}"]  ${title}`);
+          shipped++;
+        } else { scan[fig.id] = { status: 'no-wikisearch', at: now(), note: r.reason }; none++; }
+      } else {
+        scan[fig.id] = { status: 'no-wikisearch', at: now(), note: info ? 'gate/sanity' : 'not on Commons' };
+        none++;
+      }
+      await sleep(200);
+    }
+    if (++done % 40 === 0) {
+      writeJSON(MANIFEST, sortObj(manifest)); writeJSON(SOURCES, sortObj(sources));
+      writeJSON(SCANSTATE, sortObj(scan)); writeJSON(QIDMAP, sortObj(qmap));
+      console.log(`  … ${done}/${pool.length} (${shipped} shipped, ${mapped} mappings repaired)`);
+    }
+  }
+  writeJSON(MANIFEST, sortObj(manifest)); writeJSON(SOURCES, sortObj(sources));
+  writeJSON(SCANSTATE, sortObj(scan)); writeJSON(QIDMAP, sortObj(qmap));
+  console.log(`wikisearch: ${shipped} shipped, ${mapped} mappings repaired, ${none} without a usable article image. manifest: ${Object.keys(manifest).length}.`);
+}
+
 // museums: query the approved museum open-access APIs for every imageless
 // figure and append the gated, name-verified hits to the review queue with
 // their structured metadata (culture / object type / date) — the homonym
@@ -1135,6 +1236,7 @@ async function main() {
   if (cmd === 'fallback') return cmdFallback(opts);
   if (cmd === 'museums') return cmdMuseums(opts);
   if (cmd === 'sitelinks') return cmdSitelinks(opts);
+  if (cmd === 'wikisearch') return cmdWikiSearch(opts);
   if (cmd === 'merge') return cmdMerge(opts);
   if (cmd === 'sheet') return cmdSheet();
   if (cmd === 'approved') return cmdApproved(opts);
@@ -1143,7 +1245,7 @@ async function main() {
   if (cmd === 'fetch') return cmdFetch(opts);
   if (cmd === 'discover') return cmdDiscover(opts);
   if (cmd === 'check') return cmdCheck();
-  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|sitelinks|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
+  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|sitelinks|wikisearch|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
   console.log('       [--id ID] [--shard i/n] [--shards N] [--from DIR] [--limit N] [--trad T] [--force] [--refresh] [--rescan] [--native]');
   process.exitCode = 2;
 }
