@@ -25,15 +25,35 @@ const field = (ext, key) => {
 };
 
 // Strip HTML to plain text for display fields (Artist/Credit are HTML).
+//
+// Commons templates routinely carry a VISUALLY HIDDEN duplicate of the same
+// text for i18n/machine consumption, e.g.
+//   <a ...>Unknown author</a><span style="display:none">Unknown author</span>
+// Blindly stripping tags concatenated both copies, which is how 101 shipped
+// credits read "Unknown authorUnknown author" on the page. Drop hidden nodes
+// first, then collapse an exact doubling as a backstop for the variants that
+// hide themselves some other way.
+const dropHidden = (html) => String(html)
+  .replace(/<style[\s\S]*?<\/style>/gi, '')
+  .replace(/<script[\s\S]*?<\/script>/gi, '')
+  // any element whose style hides it, plus its content
+  .replace(/<([a-z][a-z0-9]*)\b[^>]*style\s*=\s*["'][^"']*(?:display\s*:\s*none|visibility\s*:\s*hidden)[^"']*["'][^>]*>[\s\S]*?<\/\1>/gi, '');
+
+const collapseDoubled = (s) => {
+  const t = s.trim();
+  if (t.length < 4 || t.length % 2) return t;
+  const h = t.length / 2;
+  return t.slice(0, h) === t.slice(h) ? t.slice(0, h) : t;
+};
+
 const htmlToText = (html) => {
   if (!html) return null;
-  const t = String(html)
-    .replace(/<style[\s\S]*?<\/style>/gi, '')
+  const t = dropHidden(html)
     .replace(/<[^>]+>/g, '')
     .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"').replace(/&#0?39;|&apos;/g, "'").replace(/&nbsp;/g, ' ')
     .replace(/\s+/g, ' ').trim();
-  return t || null;
+  return collapseDoubled(t) || null;
 };
 // First href in an HTML fragment (e.g. the author's Commons user page).
 const firstHref = (html) => {
