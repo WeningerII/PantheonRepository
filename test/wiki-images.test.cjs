@@ -53,6 +53,38 @@ test('resolveRequested walks normalization and redirects back to the request', (
   assert.strictEqual(wi.resolveRequested(null).size, 0);
 });
 
+// Article BODY images (prop=images). Every article cites project logos,
+// maintenance boxes and UI glyphs; if those reach the review queue the queue
+// fills with furniture and the real candidates get buried.
+test('isChromeFile rejects interface furniture, keeps real artwork', () => {
+  const chrome = [
+    'Commons-logo.svg', 'Wikisource-logo.svg', 'Wikiquote-logo.svg',
+    'Ambox important.svg', 'Question book-new.svg', 'Edit-clear.svg',
+    'Nuvola apps package graphics.png', 'OOjs UI icon edit-ltr.svg',
+    'Flag of Greece.svg', 'Coat of arms of Norway.svg',
+    'P vip.svg', 'Portal-puzzle.svg', 'Red pog.svg',
+    'Japan location map.svg', 'Speaker Icon.svg', 'Disambig gray.svg',
+    'Symbol support vote.svg', 'Increase2.svg', 'Searchtool.svg',
+  ];
+  for (const f of chrome) assert.ok(wi.isChromeFile(f), `${f} is chrome and must be dropped`);
+
+  const real = [
+    'Perkūnas by Mikalojus Konstantinas Čiurlionis.jpg',
+    'Benin ivory mask - Iyoba.jpg',
+    'Statuette of Sobek MET.jpg',
+    'Guaman Poma 0246.jpg',
+    'Сварог.jpg',
+    'Tlaloc - Codex Borgia.png',
+    // Contains "sign" only inside a longer word — must not be dropped.
+    'Ensign of the god Ashur.jpg',
+  ];
+  for (const f of real) assert.ok(!wi.isChromeFile(f), `${f} is real artwork and must survive`);
+
+  // Accepts either bare names or File:-prefixed ones.
+  assert.ok(wi.isChromeFile('File:Commons-logo.svg'));
+  assert.ok(!wi.isChromeFile(''));
+});
+
 test('BIG_WIKIS is a broad, deduplicated language sweep', () => {
   assert.ok(wi.BIG_WIKIS.length > 80, 'breadth pass must cover far more than a handful of languages');
   assert.strictEqual(new Set(wi.BIG_WIKIS).size, wi.BIG_WIKIS.length, 'no duplicate wikis');

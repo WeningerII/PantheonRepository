@@ -63,6 +63,21 @@ native ──► NOT a stage but a MODIFIER on map + fallback (added 2026-07-24)
            a sub-3-character native match (dense CJK namespace) can never reach
            high confidence.
 
+sitelinks ─► REVIEW (added 2026-07-24; DEMOTED from Tier A 2026-07-25) — the
+wikisearch  ~300 language Wikipedias. `sitelinks` walks each mapped QID's
+            editor-made entity→article links; `wikisearch` finds the article
+            directly, in the figure's own language, for figures Wikidata entity
+            search never resolved (and repairs the mapping from the article's
+            own wikibase_item). Both read the article's designated lead image.
+
+articleimages ─► REVIEW (added 2026-07-25) — the images inside the BODY of
+            those same articles (`prop=images`). `pageimages` returns only the
+            designated lead, and the short articles in the smaller wikis —
+            exactly the figures still missing — carry no infobox at all, so
+            their one engraving sits in the body where no path could see it.
+            Project logos, maintenance boxes and UI glyphs are dropped before
+            the license gate (lib/wiki-images.cjs `isChromeFile`).
+
 museums ─► REVIEW-ONLY (added 2026-07-24, owner-approved) — the approved
            museum open-access APIs (Met / Cleveland / AIC / Smithsonian-with-
            key; lib/museum-adapters.cjs) searched for every imageless figure.
@@ -83,6 +98,38 @@ The license gate (`scripts/lib/commons-license.cjs`) runs at ingest time on
 image archives its extmetadata + a verification record (tier, method, QID,
 signals) under `assets/images/figures/_meta/` so a bad batch is
 mass-revertible by cause.
+
+### Why only P18 auto-ships (measured 2026-07-25)
+
+The Wikipedia paths originally auto-shipped, on the reasoning that a sitelink is
+curated identification of the same class as P18. An audit of every auto-shipped
+image — each finding independently confirmed by a second reviewer before
+removal — measured otherwise:
+
+| path | wrong subject | shipped | rate |
+|------|--------------:|--------:|-----:|
+| `p18` | 0 | 328 | **0%** |
+| `sitelink` | 231 | 382 | **60%** |
+| `wikisearch` | 17 | 38 | **45%** |
+| reviewed (Tier B) | 0 | 536 | **0%** |
+
+The asymmetry is structural, not incidental. A P18 claim states *"this image
+depicts this entity"* — an assertion about the image. A sitelink states *"this
+article is about this entity"*, and the lead image is then curated for the
+**article**, one inference removed. So a sitelink lead is only as right as the
+entity mapping that reached it, and the mapping is the weakest link in the
+chain: `abkhaz_dzhadzha` was mapped to *Q920233 "Chaga people, ethnic group in
+Kenya and Tanzania"*, `aymara_amaru` to a commune in Buzău County, Romania.
+Each mis-mapping became a published factual error at the top of a figure's
+page. P18 is immune because an entity carrying a curated P18 claim is a
+well-described entity that the mapper matches correctly in the first place.
+
+248 images were purged and blocklisted; the 172 that survived the audit were
+re-tiered **A → B**, since what justifies them is the review, not the path.
+`test/image-pipeline.test.cjs` now pins the invariant: **Tier A is reachable
+only by `p18`.** Every other path — sitelinks, wikisearch, articleimages,
+proposals, museums, text fallback — earns its place through review, where the
+measured error rate is 0%.
 
 ## Parallelism — fan out, don't monolith
 

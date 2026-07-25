@@ -245,3 +245,72 @@ test('renderSheet escapes hostile titles and survives an empty queue', () => {
   assert.ok(!/<\/script><script>x\.jpg/.test(html), 'title escaped everywhere (JSON block uses \\u003c)');
   assert.match(renderSheet({}), /Nothing to review/, 'empty state');
 });
+
+// ── the Tier-A ship gate (measured, not assumed) ────────────────────────────
+//
+// A corpus-wide audit of every auto-shipped image measured the wrong-subject
+// rate per ingest path:
+//
+//     p18          0 / 328     0%
+//     sitelink   231 / 382    60%
+//     wikisearch  17 /  38    45%
+//     reviewed     0 / 536     0%
+//
+// A Wikipedia lead image is curated for the ARTICLE, and the article is only
+// as right as the entity mapping that found it — so every mis-mapped QID
+// (Dzhadzha→"Chaga people", Amaru→a Romanian commune) became a published
+// factual error. Both paths were demoted to the review queue; their discovery
+// value is unchanged, only their authority to ship unreviewed is gone.
+//
+// This test pins that: Tier A — the tier that ships with no human or agent
+// looking at it — may only be reached by a curated P18 claim. Anything else
+// must earn its place through review. Re-promoting a path silently is exactly
+// the regression that cost 248 figures a correct image.
+test('Tier A is reachable only by curated P18; every other path goes to review', () => {
+  const fs = require('fs');
+  const path = require('path');
+  const ROOT = path.resolve(__dirname, '..');
+  const manifestPath = path.join(ROOT, 'data-sources/images.json');
+  if (!fs.existsSync(manifestPath)) return;              // pre-ingest checkout
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  const metaDir = path.join(ROOT, 'assets/images/figures/_meta');
+
+  const offenders = [];
+  for (const id of Object.keys(manifest)) {
+    const p = path.join(metaDir, `${id}.json`);
+    if (!fs.existsSync(p)) continue;
+    let v;
+    try { v = (JSON.parse(fs.readFileSync(p, 'utf8')) || {}).verification || {}; }
+    catch (_) { continue; }
+    if (v.tier !== 'A') continue;
+    const family = String(v.method || '').split(':')[0];
+    if (family !== 'p18') offenders.push(`${id} (tier A via ${v.method})`);
+  }
+  assert.deepStrictEqual(offenders, [],
+    'these shipped unreviewed from a path with a measured wrong-subject rate');
+});
+
+// The blocklist is the corpus's memory of every image an audit rejected. If an
+// entry can be dropped, a later sweep re-ships the same wrong file — which is
+// how the same handful of homonyms kept coming back.
+test('every blocklisted file is absent from the shipped manifest', () => {
+  const fs = require('fs');
+  const path = require('path');
+  const ROOT = path.resolve(__dirname, '..');
+  const blPath = path.join(ROOT, 'data-sources/image-blocklist.json');
+  const manPath = path.join(ROOT, 'data-sources/images.json');
+  if (!fs.existsSync(blPath) || !fs.existsSync(manPath)) return;
+  const bl = JSON.parse(fs.readFileSync(blPath, 'utf8'));
+  const manifest = JSON.parse(fs.readFileSync(manPath, 'utf8'));
+
+  const leaked = [];
+  for (const [id, tokens] of Object.entries(bl)) {
+    const rec = manifest[id];
+    if (!rec) continue;
+    const shipped = [rec.ref, rec.title].filter(Boolean);
+    for (const t of (Array.isArray(tokens) ? tokens : [tokens])) {
+      if (t && shipped.includes(t)) leaked.push(`${id}: ${t}`);
+    }
+  }
+  assert.deepStrictEqual(leaked, [], 'blocklisted images are live again');
+});

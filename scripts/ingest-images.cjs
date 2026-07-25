@@ -445,6 +445,44 @@ async function reviewOne(fig, qrec, ctx) {
   return 'queued';
 }
 
+const qidOf = (qmap, id) => (qmap[id] && qmap[id].confidence !== 'rejected' ? qmap[id].qid : null);
+
+// Append one gated candidate to a figure's Tier-B review entry, creating the
+// entry if needed. Never overwrites what another source already found —
+// several paths contribute to the same figure and each one's evidence counts.
+//
+// This is the ONLY way the Wikipedia paths may deliver a result. They used to
+// auto-ship, and a corpus-wide audit measured the cost: 60% of sitelink leads
+// and 45% of wikisearch leads were the wrong subject, against 0% for P18 and
+// 0% for reviewed candidates. The reason is structural — a lead image is
+// curated for the ARTICLE, and the article is only as right as the entity
+// mapping that found it, so every mis-mapped QID (Dzhadzha→Chaga people,
+// Amaru→a Romanian commune) became a published factual error. Their discovery
+// value is real and unchanged; only the authority to ship unreviewed is gone.
+function queueCandidate(review, fig, cand, { qid = null, via = 'wiki', cap = 8 } = {}) {
+  if (!fig || !cand || !cand.title) return false;
+  const names = [(fig.name && fig.name.primary) || fig.id,
+    ...((fig.name && fig.name.alt) || []).filter((s) => typeof s === 'string')];
+  const entry = review[fig.id] || {
+    name: names[0], tradition: fig.tradition || '', qid, via, options: [], at: now(),
+  };
+  const have = new Set((entry.options || []).map((o) => o.ref || o.title));
+  if (have.has(cand.title)) return false;
+  let score = Math.max(...names.map((n) => scoreCandidate(cand, n)));
+  if (nn.nativeHit(fig, cand.title)) score += 3;
+  entry.options.push({
+    title: cand.title, thumb: cand.thumb, license: cand.license, author: cand.author,
+    score, w: cand.w, h: cand.h, src: cand.src,
+    ...(cand.lang ? { lang: cand.lang } : {}),
+    ...(cand.article ? { article: cand.article } : {}),
+  });
+  entry.options.sort((a, b) => b.score - a.score);
+  entry.options = entry.options.slice(0, cap);
+  if (!entry.qid && qid) entry.qid = qid;
+  review[fig.id] = entry;
+  return true;
+}
+
 // Figures needing an image: no shipped manifest entry and not owner-settled.
 const needsImage = (id, manifest, scan) => {
   if (manifest[id]) return false;
@@ -657,6 +695,7 @@ async function cmdSitelinks(opts) {
   const scan = readJSON(SCANSTATE, {});
   const manifest = readJSON(MANIFEST, {});
   const sources = readJSON(SOURCES, {});
+  const review = readJSON(REVIEW, {});
   const bl = readJSON(BLOCKLIST, {});
   pruneBlocked(manifest, sources, bl);
   const sh = parseShard(opts);
@@ -718,47 +757,54 @@ async function cmdSitelinks(opts) {
     await sleep(150);
   }
 
-  // 4) Ship, best wiki first, license-gated and sanity-checked on Commons.
-  let shipped = 0, none = 0, gated = 0;
+  // 4) Queue for review, best wiki first, license-gated and sanity-checked on
+  //    Commons. Up to 3 distinct wikis' leads per figure — when several
+  //    language editions independently chose the SAME file that is strong
+  //    corroboration, and when they disagree the reviewer needs to see it.
+  // As in articleimages: an id missing from `links` means its wbgetentities
+  // batch errored, not that the figure has no article. Recording a no-result
+  // state on a transient outage would suppress retries for a year, so defer.
+  let queued = 0, none = 0, gated = 0, skipped = 0;
   for (const id of ids) {
+    if (!(id in links)) { skipped++; continue; }
     const cands = found[id];
     if (!cands || !cands.length) { scan[id] = { status: 'no-sitelink-image', at: now() }; none++; continue; }
     // Order candidates by this figure's wiki preference.
     const rank = new Map(orderFor[id].map((l, i) => [l, i]));
     cands.sort((a, b) => (rank.get(a.lang) ?? 99) - (rank.get(b.lang) ?? 99));
     const tried = new Set();
-    let ok = false;
+    let got = 0;
     for (const c of cands) {
       const title = 'File:' + c.file;
       if (tried.has(title) || isBlocked(bl, id, title)) continue;
       tried.add(title);
+      if (tried.size > 6) break;
       let info;
       // Rule 1: the file must exist on COMMONS. A local wiki upload (often
       // non-free fair-use) resolves to nothing here and is skipped.
-      try { info = await imageInfo(title); } catch (_) { continue; }
+      try { info = await imageInfo(title, 320); } catch (_) { continue; }
       if (!info) continue;
-      if (!classify(info.extmetadata).accept) { gated++; continue; }
+      const v = classify(info.extmetadata);
+      if (!v.accept) { gated++; continue; }
       const sane = sanityCheck({ title, mime: info.mime, width: info.width, height: info.height });
       if (!sane.pass) continue;
-      const r = await fetchOne(id, title, manifest, { bl }, { tier: 'A', method: `sitelink:${c.lang}`, qid: qmap[id].qid, signals: sane.signals });
-      if (r.status === 'ok') {
-        sources[id] = title; delete scan[id];
-        console.log(`  ✓ ${id}  [${c.lang}wiki]  ${title}  ${(r.bytes / 1024).toFixed(0)}KB`);
-        shipped++; ok = true;
-      }
+      queueCandidate(review, byId[id], {
+        ...toCand(title, info), license: v.license.shortName || v.license.key,
+        author: v.author, src: 'sitelink', lang: c.lang,
+      }, { qid: qmap[id].qid, via: 'sitelink' });
+      console.log(`  + ${id}  [${c.lang}wiki]  ${title}  → review`);
+      got++;
       await sleep(250);
-      if (ok) break;
+      if (got >= 3) break;
     }
-    if (!ok && !tried.size) { scan[id] = { status: 'no-sitelink-image', at: now() }; none++; }
-    else if (!ok) { scan[id] = { status: 'no-sitelink-image', at: now(), note: 'candidates failed gate/sanity' }; none++; }
-    if ((shipped + none) % 50 === 0) {
-      writeJSON(MANIFEST, sortObj(manifest)); writeJSON(SOURCES, sortObj(sources)); writeJSON(SCANSTATE, sortObj(scan));
-    }
+    if (got) { delete scan[id]; queued++; }
+    else if (!tried.size) { scan[id] = { status: 'no-sitelink-image', at: now() }; none++; }
+    else { scan[id] = { status: 'no-sitelink-image', at: now(), note: 'candidates failed gate/sanity' }; none++; }
+    if ((queued + none) % 50 === 0) { writeJSON(REVIEW, sortObj(review)); writeJSON(SCANSTATE, sortObj(scan)); }
   }
-  writeJSON(MANIFEST, sortObj(manifest));
-  writeJSON(SOURCES, sortObj(sources));
+  writeJSON(REVIEW, sortObj(review));
   writeJSON(SCANSTATE, sortObj(scan));
-  console.log(`sitelinks: ${shipped} shipped, ${none} without a usable lead image, ${gated} license-rejected. manifest: ${Object.keys(manifest).length}.`);
+  console.log(`sitelinks: ${queued} queued for review, ${none} without a usable lead image, ${gated} license-rejected, ${skipped} deferred (sitelinks unresolved). review queue: ${Object.keys(review).length}.`);
 }
 
 // wikisearch: find the ARTICLE directly, in the figure's own language, for
@@ -780,6 +826,7 @@ async function cmdWikiSearch(opts) {
   const scan = readJSON(SCANSTATE, {});
   const manifest = readJSON(MANIFEST, {});
   const sources = readJSON(SOURCES, {});
+  const review = readJSON(REVIEW, {});
   const bl = readJSON(BLOCKLIST, {});
   pruneBlocked(manifest, sources, bl);
   const sh = parseShard(opts);
@@ -834,17 +881,17 @@ async function cmdWikiSearch(opts) {
       const title = 'File:' + hit.pageimage;
       let info = null;
       // Commons-only (rule 1): a local wiki upload does not resolve here.
-      if (!isBlocked(bl, fig.id, title)) { try { info = await imageInfo(title); } catch (_) {} }
+      if (!isBlocked(bl, fig.id, title)) { try { info = await imageInfo(title, 320); } catch (_) {} }
       const gate = info ? classify(info.extmetadata) : null;
       const sane = info ? sanityCheck({ title, mime: info.mime, width: info.width, height: info.height }) : null;
       if (info && gate.accept && sane.pass) {
-        const r = await fetchOne(fig.id, title, manifest, { bl },
-          { tier: 'A', method: `wikisearch:${hit.lang}`, qid: hit.qid || null, signals: sane.signals });
-        if (r.status === 'ok') {
-          sources[fig.id] = title; delete scan[fig.id];
-          console.log(`  ✓ ${fig.id}  [${hit.lang}wiki "${hit.title}"]  ${title}`);
-          shipped++;
-        } else { scan[fig.id] = { status: 'no-wikisearch', at: now(), note: r.reason }; none++; }
+        queueCandidate(review, fig, {
+          ...toCand(title, info), license: gate.license.shortName || gate.license.key,
+          author: gate.author, src: 'wikisearch', lang: hit.lang, article: hit.title,
+        }, { qid: hit.qid || qidOf(qmap, fig.id), via: 'wikisearch' });
+        delete scan[fig.id];
+        console.log(`  + ${fig.id}  [${hit.lang}wiki "${hit.title}"]  ${title}  → review`);
+        shipped++;
       } else {
         scan[fig.id] = { status: 'no-wikisearch', at: now(), note: info ? 'gate/sanity' : 'not on Commons' };
         none++;
@@ -852,14 +899,14 @@ async function cmdWikiSearch(opts) {
       await sleep(200);
     }
     if (++done % 40 === 0) {
-      writeJSON(MANIFEST, sortObj(manifest)); writeJSON(SOURCES, sortObj(sources));
+      writeJSON(REVIEW, sortObj(review));
       writeJSON(SCANSTATE, sortObj(scan)); writeJSON(QIDMAP, sortObj(qmap));
-      console.log(`  … ${done}/${pool.length} (${shipped} shipped, ${mapped} mappings repaired)`);
+      console.log(`  … ${done}/${pool.length} (${shipped} queued, ${mapped} mappings repaired)`);
     }
   }
-  writeJSON(MANIFEST, sortObj(manifest)); writeJSON(SOURCES, sortObj(sources));
+  writeJSON(REVIEW, sortObj(review));
   writeJSON(SCANSTATE, sortObj(scan)); writeJSON(QIDMAP, sortObj(qmap));
-  console.log(`wikisearch: ${shipped} shipped, ${mapped} mappings repaired, ${none} without a usable article image. manifest: ${Object.keys(manifest).length}.`);
+  console.log(`wikisearch: ${shipped} queued for review, ${mapped} mappings repaired, ${none} without a usable article image. review queue: ${Object.keys(review).length}.`);
 }
 
 // museums: query the approved museum open-access APIs for every imageless
@@ -885,6 +932,127 @@ async function cmdWikiSearch(opts) {
 // like every other path. Proposals are LEADS, not decisions: results land in
 // the review queue for judgement, because a confident-sounding filename is
 // exactly the kind of thing that can be confidently wrong.
+// articleimages: the images inside the BODY of a figure's Wikipedia articles.
+//
+// `sitelinks` and `wikisearch` both read `prop=pageimages`, which returns only
+// the page's designated LEAD image. A large share of mythology articles — the
+// short ones, in the smaller wikis, about exactly the figures we are still
+// missing — carry no infobox at all, so their one 19th-century engraving or
+// museum photograph sits in the body and no path we had could see it.
+// `prop=images` lists every file the article uses.
+//
+// Tier B, always. A lead image is the image editors chose to REPRESENT the
+// subject; a body image is merely an image that appears NEAR it, and may be a
+// parent deity, a temple, a family tree, a modern festival. Under "wrong image
+// ≫ no image" that is a candidate for review, never an auto-ship — so this
+// merges into image-review.json alongside the other Tier-B sources rather than
+// shipping, and never overwrites options another path already found.
+async function cmdArticleImages(opts) {
+  const figures = loadFigures();
+  const byId = Object.fromEntries(figures.map((f) => [f.id, f]));
+  const qmap = readJSON(QIDMAP, {});
+  const scan = readJSON(SCANSTATE, {});
+  const manifest = readJSON(MANIFEST, {});
+  const review = readJSON(REVIEW, {});
+  const bl = readJSON(BLOCKLIST, {});
+  const sh = parseShard(opts);
+
+  let ids = Object.keys(qmap).filter((id) => byId[id] && inShard(id, sh)
+    && qmap[id].qid && qmap[id].confidence !== 'rejected' && needsImage(id, manifest, scan)
+    && !(scan[id] && scan[id].status === 'no-article-images' && fresh(scan[id], NO_IMAGE_TTL_DAYS) && !opts.rescan));
+  if (opts.id) ids = ids.filter((id) => id === opts.id);
+  if (opts.limit) ids = ids.slice(0, opts.limit);
+  if (!ids.length) { console.log('articleimages: nothing pending.'); return; }
+  console.log(`articleimages: ${ids.length} mapped imageless figures — reading article bodies`);
+
+  // 1) Sitelinks for every candidate QID (batched 50/call by getEntities).
+  const links = {};
+  for (let i = 0; i < ids.length; i += 300) {
+    const slice = ids.slice(i, i + 300);
+    let ents;
+    try { ents = await wd.getEntities(slice.map((id) => qmap[id].qid), 'sitelinks'); }
+    catch (e) { console.warn(`  ! sitelinks batch: ${e.message}`); continue; }
+    for (const id of slice) { const e = ents[qmap[id].qid]; if (e) links[id] = wi.sitelinksOf(e); }
+  }
+  const withLinks = Object.keys(links).filter((id) => Object.keys(links[id]).length);
+  console.log(`articleimages: ${withLinks.length} figures have at least one Wikipedia article`);
+
+  // 2) Invert to wiki → [titles], own-language wikis first (their articles cite
+  //    the culturally correct material; en often cites a Greco-Roman stand-in).
+  const wanted = new Map(); const owner = new Map(); const orderFor = {};
+  for (const id of withLinks) {
+    const prefer = nn.searchTerms(byId[id], 3).map((t) => t.lang);
+    const order = wi.orderWikis(links[id], prefer);
+    orderFor[id] = order;
+    for (const lang of order.slice(0, 6)) {   // up to 6 wikis per figure
+      const title = links[id][lang];
+      if (!wanted.has(lang)) wanted.set(lang, new Set());
+      wanted.get(lang).add(title);
+      const k = lang + '|' + title;
+      if (!owner.has(k)) owner.set(k, []);
+      owner.get(k).push(id);
+    }
+  }
+
+  // 3) One batched prop=images sweep per wiki.
+  const found = {};   // id -> [{lang, file}]
+  const langs = [...wanted.keys()];
+  console.log(`articleimages: reading ${langs.length} wikis…`);
+  for (const lang of langs) {
+    const res = await wi.articleImages(lang, [...wanted.get(lang)], { log: (m) => console.warn('  ! ' + m) });
+    for (const [title, files] of Object.entries(res)) {
+      for (const id of (owner.get(lang + '|' + title) || [])) {
+        for (const file of files) (found[id] = found[id] || []).push({ lang, file });
+      }
+    }
+    await sleep(150);
+  }
+
+  // 4) Resolve on Commons (license gate + sanity), score, merge into review.
+  //
+  // Only figures whose sitelinks actually RESOLVED may be recorded as having
+  // no body image. An id missing from `links` means the wbgetentities batch
+  // errored, and writing a no-result state on a transient outage would suppress
+  // retries for NO_IMAGE_TTL_DAYS — the same trap mapOne documents.
+  let enriched = 0, none = 0, gated = 0, skipped = 0;
+  for (const id of ids) {
+    if (!(id in links)) { skipped++; continue; }
+    const raw = found[id];
+    if (!raw || !raw.length) { scan[id] = { status: 'no-article-images', at: now() }; none++; continue; }
+    const fig = byId[id];
+    const names = [(fig.name && fig.name.primary) || id, ...((fig.name && fig.name.alt) || []).filter((s) => typeof s === 'string')];
+    const rank = new Map((orderFor[id] || []).map((l, i) => [l, i]));
+    raw.sort((a, b) => (rank.get(a.lang) ?? 99) - (rank.get(b.lang) ?? 99));
+
+    const tried = new Set(); const cands = [];
+    for (const c of raw) {
+      const title = 'File:' + c.file;
+      if (tried.has(title) || isBlocked(bl, id, title) || MEDIA_EXT.test(title)) continue;
+      tried.add(title);
+      if (tried.size > 10) break;                  // bounded per figure
+      let info; try { info = await imageInfo(title, 320); } catch (_) { continue; }
+      if (!info) continue;                         // local wiki upload, not on Commons
+      const v = classify(info.extmetadata);
+      if (!v.accept) { gated++; continue; }
+      const sane = sanityCheck({ title, mime: info.mime, width: info.width, height: info.height });
+      if (!sane.pass) continue;
+      cands.push({ ...toCand(title, info), license: v.license.shortName || v.license.key, author: v.author, src: 'article', lang: c.lang });
+      await sleep(200);
+    }
+    if (!cands.length) { scan[id] = { status: 'no-article-images', at: now() }; none++; continue; }
+
+    // The figure's own-language article citing a file is evidence the romanized
+    // title cannot carry; those wikis were consulted first, so rank wins ties.
+    cands.sort((a, b) => (rank.get(a.lang) ?? 99) - (rank.get(b.lang) ?? 99));
+    for (const c of cands.slice(0, 3)) queueCandidate(review, fig, c, { qid: qmap[id].qid, via: 'article' });
+    delete scan[id]; enriched++;
+    if (enriched % 25 === 0) { writeJSON(REVIEW, sortObj(review)); writeJSON(SCANSTATE, sortObj(scan)); }
+  }
+  writeJSON(REVIEW, sortObj(review));
+  writeJSON(SCANSTATE, sortObj(scan));
+  console.log(`articleimages: ${enriched} figures gained candidates, ${none} had no usable body image, ${gated} license-rejected, ${skipped} deferred (sitelinks unresolved). review queue: ${Object.keys(review).length}.`);
+}
+
 async function cmdProposals(opts) {
   const figures = loadFigures();
   const byId = Object.fromEntries(figures.map((f) => [f.id, f]));
@@ -1316,6 +1484,7 @@ async function main() {
   if (cmd === 'proposals') return cmdProposals(opts);
   if (cmd === 'sitelinks') return cmdSitelinks(opts);
   if (cmd === 'wikisearch') return cmdWikiSearch(opts);
+  if (cmd === 'articleimages') return cmdArticleImages(opts);
   if (cmd === 'merge') return cmdMerge(opts);
   if (cmd === 'sheet') return cmdSheet();
   if (cmd === 'approved') return cmdApproved(opts);
@@ -1324,7 +1493,7 @@ async function main() {
   if (cmd === 'fetch') return cmdFetch(opts);
   if (cmd === 'discover') return cmdDiscover(opts);
   if (cmd === 'check') return cmdCheck();
-  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|sitelinks|wikisearch|proposals|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
+  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|sitelinks|wikisearch|articleimages|proposals|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
   console.log('       [--id ID] [--shard i/n] [--shards N] [--from DIR] [--limit N] [--trad T] [--force] [--refresh] [--rescan] [--native]');
   process.exitCode = 2;
 }
