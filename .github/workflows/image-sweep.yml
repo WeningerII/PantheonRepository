@@ -109,6 +109,9 @@ jobs:
           # Wikidata entity-search never resolved. Ships the lead image AND
           # repairs the mapping from the article's own wikibase_item.
           node scripts/ingest-images.cjs wikisearch --shard "$SHARD/$N" $RESCAN
+          # Resolve domain-knowledge search leads (image-proposals.json) into
+          # real, license-gated candidates before the generic fallback runs.
+          node scripts/ingest-images.cjs proposals --shard "$SHARD/$N"
           node scripts/ingest-images.cjs fallback --shard "$SHARD/$N" $RESCAN $NATIVE
           # NOTE: $RESCAN is deliberately NOT passed to museums. Museum
           # re-search is governed by its own 180-day TTL (museum-scan.json);
