@@ -32,10 +32,18 @@ on:
 permissions:
   contents: write
 
-# Never run two waves on the same branch at once (they'd both try to commit).
+# One wave per branch at a time, and the NEWEST wave wins.
+#
+# cancel-in-progress was false, which serialized waves instead of superseding
+# them: pushing image-run.json three times while iterating stacked three
+# sweeps, and the newest -- the only one carrying the new code -- sat last in
+# the queue for over an hour. Waves are idempotent and strictly advancing
+# (every mode skips ids already resolved in committed outputs), and a newer
+# wave always subsumes an older one's work, so cancelling the older run costs
+# nothing but the CI minutes already spent.
 concurrency:
   group: image-sweep-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   prepare:
