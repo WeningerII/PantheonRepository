@@ -114,15 +114,58 @@ function cultureKeywords(tradition) {
   for (const t of toks) for (const k of (CULTURE_SYNONYMS[t] || [])) syn.add(k);
   return [...syn];
 }
-// 1 = a culture/place field matches the tradition; 0 = no signal either way.
+// Culture agreement between a museum object and the figure's tradition:
+//   +1 the object's culture/place matches the tradition
+//    0 no signal (object carries no culture metadata, or we have no keywords)
+//   -1 the object HAS a culture and it is a DIFFERENT one
+//
+// The -1 case is the important one, and it was the flaw in the first museum
+// wave: treating a mismatch as merely "no evidence" let a Japanese Edo print
+// stand as a candidate for an Achuar deity purely because both are "a Print"
+// whose title contains the figure's name. Measured over that wave's 746
+// queued candidates, only 6.6% had a culture matching the tradition — and
+// those 6.6% were near-perfect (the Benin pendant mask of Ìyọ́bà Idià for Edo
+// Idia, "Statuette of the Goddess Maat", "Amulet of the God Seth"). The
+// culture field IS the discriminator, so a mismatch has to cost.
+//
+// objectType is deliberately NOT part of the haystack — "Painting"/"Print" is
+// never a culture and only adds accidental matches.
 // Word-boundary matching — substring would let "india" claim "Indianapolis".
-function cultureMatch(tradition, cand) {
+function cultureSignal(tradition, cand) {
   const kws = cultureKeywords(tradition);
   if (!kws.length) return 0;
-  const hay = norm([cand.culture, cand.place, cand.objectType].filter(Boolean).join(' '));
+  const hay = norm([cand.culture, cand.place].filter(Boolean).join(' '));
   if (!hay) return 0;
-  return kws.some((k) => new RegExp('\\b' + k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(hay)) ? 1 : 0;
+  return kws.some((k) => new RegExp('\\b' + k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(hay)) ? 1 : -1;
 }
+// Back-compat shim: 1 when the cultures agree, 0 otherwise.
+const cultureMatch = (tradition, cand) => (cultureSignal(tradition, cand) === 1 ? 1 : 0);
+
+// Figure names that are ordinary English common nouns. Animist traditions name
+// figures "Moon", "Corn", "Eagle", "Coyote" — searching a museum catalogue for
+// those returns thousands of unrelated artworks (a Japanese moon-viewing print
+// for an Amazonian Moon deity), and NO metadata can rescue them because the
+// name itself carries no identifying information. 64 such figures produced 167
+// junk candidates in the first wave. They are skipped outright: for these,
+// "no image" is the only honest outcome a name-based search can reach.
+const GENERIC_NAMES = new Set(['moon', 'sun', 'star', 'stars', 'earth', 'sky', 'water', 'fire',
+  'wind', 'rain', 'thunder', 'lightning', 'cloud', 'corn', 'maize', 'tobacco', 'eagle', 'turtle',
+  'coyote', 'buzzard', 'vulture', 'fox', 'wolf', 'bear', 'grizzly bear', 'brown bear', 'raven',
+  'crow', 'deer', 'snake', 'serpent', 'spider', 'frog', 'toad', 'loon', 'salmon', 'weasel',
+  'wolverine', 'muskrat', 'beaver', 'rabbit', 'hare', 'kingfisher', 'hawk', 'owl', 'jaguar',
+  'tapir', 'dog', 'horse', 'bull', 'cow', 'fish', 'whale', 'shark', 'thunderbird', 'rainbow',
+  'night', 'day', 'death', 'life', 'sea', 'ocean', 'river', 'mountain', 'forest', 'bladder',
+  'monkey', 'monkey god', 'god of wealth', 'elder brother', 'younger brother', 'star woman',
+  'africa', 'the fox', 'the wolf', 'the moon', 'the sun', 'the fish', 'guardian beast king']);
+const isGenericName = (name) => GENERIC_NAMES.has(norm(name).replace(/^the\s+/, ''));
+// True when EVERY name the figure answers to is a generic common noun.
+const allNamesGeneric = (names) => names.length > 0 && names.every(isGenericName);
+
+// A candidate must clear this to be worth the owner's review time.
+// culture match (+4) + depiction (+2) = 6 → kept;
+// culture mismatch (-5) + depiction (+2) = -3 → dropped;
+// unknown culture (0) + depiction (+2) = 2 → kept as weak evidence.
+const MIN_MUSEUM_SCORE = 1;
 
 // Natural-history and other systematically-colliding namespaces (taxa named
 // after Greek heroes, minerals, fossils…). Smithsonian search spans NMNH, so
@@ -148,7 +191,8 @@ const DEPICTION_TYPE = /\b(statue|statuette|figure|figurine|sculpture|relief|bus
 // ships one.
 function scoreMuseum(cand, names, tradition) {
   let s = 0;
-  s += cultureMatch(tradition, cand) * 4;
+  const cs = cultureSignal(tradition, cand);
+  s += cs > 0 ? 4 : cs < 0 ? -5 : 0;   // a mismatch is evidence AGAINST, not neutral
   if (DEPICTION_TYPE.test(String(cand.objectType || '') + ' ' + String(cand.title || ''))) s += 2;
   if (naturalHistoryReject(cand)) s -= 8;
   return s;
@@ -295,6 +339,9 @@ const activeSources = () => ['met', 'cma', 'aic', ...(siKey() ? ['si'] : [])];
  * mapOne rule: a transient outage must never suppress retries for the TTL).
  */
 async function searchAll(names, tradition, { perSourceCap = 6, log = () => {} } = {}) {
+  // A figure whose every name is an English common noun cannot be found by
+  // name in a museum catalogue — skip before spending any API call.
+  if (allNamesGeneric(names)) return { candidates: [], errors: 0, skipped: 'generic-name' };
   const out = [];
   const seen = new Set();
   let errors = 0;
@@ -310,8 +357,11 @@ async function searchAll(names, tradition, { perSourceCap = 6, log = () => {} } 
   }
   const kept = out.filter((c) => nameHit(names, c) && !naturalHistoryReject(c));
   kept.forEach((c) => { c.score = scoreMuseum(c, names, tradition); });
-  kept.sort((a, b) => b.score - a.score);
-  return { candidates: kept, errors };
+  // Precision gate: a name appearing in a title is NOT enough when the
+  // object's own culture says it belongs to a different tradition.
+  const worthy = kept.filter((c) => c.score >= MIN_MUSEUM_SCORE);
+  worthy.sort((a, b) => b.score - a.score);
+  return { candidates: worthy, errors, considered: kept.length };
 }
 
 /**
@@ -326,7 +376,8 @@ async function resolveRef(ref) {
 }
 
 module.exports = {
-  parseRef, gates, nameHit, cultureKeywords, cultureMatch, naturalHistoryReject,
+  parseRef, gates, nameHit, cultureKeywords, cultureMatch, cultureSignal,
+  naturalHistoryReject, isGenericName, allNamesGeneric,
   scoreMuseum, searchAll, resolveRef, activeSources, siToCand, aicImg, redactKey,
-  DEPICTION_TYPE, NATURAL_HISTORY_TYPES,
+  DEPICTION_TYPE, NATURAL_HISTORY_TYPES, GENERIC_NAMES, MIN_MUSEUM_SCORE,
 };

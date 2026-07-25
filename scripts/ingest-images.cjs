@@ -679,6 +679,7 @@ async function cmdMuseums(opts) {
       res = await museums.searchAll(names, fig.tradition || '', { log: (m) => console.warn(`  ! ${fig.id}: ${m}`) });
     } catch (e) { console.warn(`  ! museums ${fig.id}: ${e.message}`); errors++; continue; }
 
+    if (res.skipped === 'generic-name') { mscan[fig.id] = { at: now(), hits: 0, skipped: 'generic-name' }; empty++; continue; }
     const usable = res.candidates.filter((c) => !isBlocked(bl, fig.id, c.ref) && !isBlocked(bl, fig.id, c.title));
     // Scan state records ONLY complete searches (the mapOne rule): a source
     // outage records nothing, so the next wave retries instead of the figure

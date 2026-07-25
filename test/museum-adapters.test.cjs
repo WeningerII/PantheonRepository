@@ -130,6 +130,47 @@ test('naturalHistoryReject kills the taxa/specimen namespace (the butterfly clas
   assert.ok(!m.naturalHistoryReject({ objectType: 'Masks', title: 'Tunghak mask', unit: 'NMNHANTHRO' })); // anthropology kept
 });
 
+// ── the precision failure the first live wave exposed ───────────────────────
+// Wave 1 queued 746 museum candidates; only 6.6% had a culture matching the
+// figure's tradition. The cause: a culture MISMATCH scored as neutral, so a
+// Japanese Edo print stood as a candidate for an Achuar deity because both are
+// "a Print" whose title contains the name.
+test('cultureSignal: mismatch is evidence AGAINST, not merely absent evidence', () => {
+  assert.strictEqual(m.cultureSignal('Yoruba', { culture: 'Yoruba peoples' }), 1);
+  assert.strictEqual(m.cultureSignal('Achuar', { culture: 'Japan, Edo period (1615–1868)' }), -1);
+  assert.strictEqual(m.cultureSignal('Yoruba', {}), 0, 'no culture metadata = no signal');
+  // objectType must not count as culture ("Painting" is not a place).
+  assert.strictEqual(m.cultureSignal('Yoruba', { objectType: 'Painting' }), 0);
+});
+
+test('a culture-mismatched print never survives the review gate', () => {
+  // The real wave-1 noise: Achuar "Sua" -> a Japanese print of Lake Suwa.
+  const s = m.scoreMuseum({ culture: 'Japan, Edo period (1615–1868)', objectType: 'Painting', title: 'Lake Suwa' }, ['Sua'], 'Achuar');
+  assert.ok(s < m.MIN_MUSEUM_SCORE, `culture-mismatched print scored ${s}, must be below ${m.MIN_MUSEUM_SCORE}`);
+  // The real wave-1 signal: the Benin pendant mask for Edo Idia.
+  const good = m.scoreMuseum({ culture: 'Edo peoples', objectType: 'Pendant mask', title: 'Pendant mask of Ìyọ́bà Idià' }, ['Idia'], 'Edo');
+  assert.ok(good >= m.MIN_MUSEUM_SCORE, `genuine match scored ${good}`);
+});
+
+test('generic English common-noun names are skipped outright', () => {
+  for (const n of ['Moon', 'the Moon', 'Corn', 'Eagle', 'Coyote', 'Turtle', 'Buzzard', 'Africa']) {
+    assert.ok(m.isGenericName(n), `${n} must be treated as generic`);
+  }
+  for (const n of ['Idia', 'Sobek', 'Perkūnas', 'Dhṛtarāṣṭra']) {
+    assert.ok(!m.isGenericName(n), `${n} must NOT be treated as generic`);
+  }
+  assert.ok(m.allNamesGeneric(['Moon', 'the Moon']));
+  assert.ok(!m.allNamesGeneric(['Moon', 'Habaek']), 'one specific name is enough to search');
+  assert.ok(!m.allNamesGeneric([]));
+});
+
+test('searchAll short-circuits a generic-name figure without any API call', async () => {
+  const res = await m.searchAll(['Moon'], 'Arapaho');
+  assert.deepStrictEqual(res.candidates, []);
+  assert.strictEqual(res.skipped, 'generic-name');
+  assert.strictEqual(res.errors, 0);
+});
+
 test('scoreMuseum: culture-matched depictions outrank bare hits; taxa sink', () => {
   const names = ['Shango'];
   const good = m.scoreMuseum({ culture: 'Yoruba', objectType: 'Figure', title: 'Shango figure' }, names, 'Yoruba');
