@@ -84,6 +84,25 @@ function orderWikis(links, preferLangs = []) {
  * @param titles  article titles (any number; chunked 50/request)
  * @returns {title: filename} — filename WITHOUT the "File:" prefix
  */
+// MediaWiki rewrites the titles you ask for: it normalizes them (underscores,
+// leading-cap, unicode form) and silently follows redirects. So the `title` on
+// a result page is frequently NOT the string that was requested, and keying
+// results by it drops those figures on the floor. The response carries the
+// `normalized` and `redirects` mappings precisely so callers can undo this —
+// resolveRequested walks them back to the original request.
+function resolveRequested(data) {
+  const back = new Map();   // returned title -> originally requested title
+  const q = (data && data.query) || {};
+  const chain = [...(q.normalized || []), ...(q.redirects || [])];
+  // Apply in order: requested -> normalized -> redirect target.
+  for (const step of chain) {
+    if (!step || !step.from || !step.to) continue;
+    const origin = back.get(step.from) || step.from;
+    back.set(step.to, origin);
+  }
+  return back;
+}
+
 async function pageImages(lang, titles, { log = () => {} } = {}) {
   const out = {};
   for (let i = 0; i < titles.length; i += 50) {
@@ -91,17 +110,24 @@ async function pageImages(lang, titles, { log = () => {} } = {}) {
     const u = new URL(`https://${lang}.wikipedia.org/w/api.php`);
     u.search = new URLSearchParams({
       action: 'query', prop: 'pageimages', piprop: 'name', pilicense: 'free',
-      pilimit: '50', titles: chunk.join('|'), format: 'json', formatversion: '2',
+      pilimit: '50', redirects: '1', titles: chunk.join('|'),
+      format: 'json', formatversion: '2',
     }).toString();
     let data;
     try { data = await getJSON(u.toString()); }
     catch (e) { log(`${lang}wiki batch: ${e.message}`); continue; }
+    const back = resolveRequested(data);
     for (const p of ((data.query && data.query.pages) || [])) {
-      if (p && p.title && p.pageimage) out[p.title] = p.pageimage;
+      if (!p || !p.title || !p.pageimage) continue;
+      // Record under BOTH the returned title and the requested one, so the
+      // caller finds it whichever key it holds.
+      out[p.title] = p.pageimage;
+      const orig = back.get(p.title);
+      if (orig) out[orig] = p.pageimage;
     }
     if (i + 50 < titles.length) await sleep(200);
   }
   return out;
 }
 
-module.exports = { sitelinksOf, orderWikis, pageImages, wikiLangOf, BIG_WIKIS };
+module.exports = { sitelinksOf, orderWikis, pageImages, wikiLangOf, resolveRequested, BIG_WIKIS };
