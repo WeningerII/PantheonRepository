@@ -53,6 +53,7 @@ const { get, getJSON, sleep } = require('./lib/wiki-http.cjs');
 const { classify } = require('./lib/commons-license.cjs');
 const wd = require('./lib/wikidata.cjs');
 const nn = require('./lib/native-names.cjs');
+const wi = require('./lib/wiki-images.cjs');
 const { sanityCheck } = require('./lib/sanity-check.cjs');
 const { renderSheet } = require('./lib/contact-sheet.cjs');
 const museums = require('./lib/museum-adapters.cjs');
@@ -636,6 +637,129 @@ function cmdSheet() {
   console.log(`sheet: ${writeSheet()} figures → ${path.relative(ROOT, REVIEW_HTML)}`);
 }
 
+// sitelinks: harvest lead images from EVERY language Wikipedia.
+//
+// The largest source the pipeline had been ignoring. Each mapped QID carries
+// sitelinks — exact, editor-made entity→article mappings — into up to ~300
+// wikis, and each article has a curated lead image. A figure with no English
+// article routinely has an illustrated one in Russian, Japanese, Persian,
+// Armenian, Georgian, Telugu. This is curated identification of the same class
+// as P18, so it ships on the same terms (license gate + sanity check) instead
+// of going to review.
+//
+// Batched by WIKI, not by figure: one request covers 50 articles, so thousands
+// of figures across dozens of wikis cost tens of calls.
+async function cmdSitelinks(opts) {
+  const figures = loadFigures();
+  const byId = Object.fromEntries(figures.map((f) => [f.id, f]));
+  const qmap = readJSON(QIDMAP, {});
+  const scan = readJSON(SCANSTATE, {});
+  const manifest = readJSON(MANIFEST, {});
+  const sources = readJSON(SOURCES, {});
+  const bl = readJSON(BLOCKLIST, {});
+  pruneBlocked(manifest, sources, bl);
+  const sh = parseShard(opts);
+
+  let ids = Object.keys(qmap).filter((id) => byId[id] && inShard(id, sh)
+    && qmap[id].qid && qmap[id].confidence !== 'rejected' && needsImage(id, manifest, scan)
+    && !(scan[id] && scan[id].status === 'no-sitelink-image' && fresh(scan[id], NO_IMAGE_TTL_DAYS) && !opts.rescan));
+  if (opts.id) ids = ids.filter((id) => id === opts.id);
+  if (opts.limit) ids = ids.slice(0, opts.limit);
+  if (!ids.length) { console.log('sitelinks: nothing pending.'); return; }
+  console.log(`sitelinks: ${ids.length} mapped imageless figures — fetching sitelinks`);
+
+  // 1) sitelinks for every candidate QID (batched 50/call by getEntities).
+  const links = {};   // id -> {lang: title}
+  for (let i = 0; i < ids.length; i += 300) {
+    const slice = ids.slice(i, i + 300);
+    let ents;
+    try { ents = await wd.getEntities(slice.map((id) => qmap[id].qid), 'sitelinks'); }
+    catch (e) { console.warn(`  ! sitelinks batch: ${e.message}`); continue; }
+    for (const id of slice) {
+      const e = ents[qmap[id].qid];
+      if (e) links[id] = wi.sitelinksOf(e);
+    }
+  }
+  const withLinks = Object.keys(links).filter((id) => Object.keys(links[id]).length);
+  console.log(`sitelinks: ${withLinks.length} figures have at least one Wikipedia article`);
+
+  // 2) Invert to wiki -> [titles], preferring each figure's own tradition
+  //    language so a culturally-correct article is consulted first.
+  const wanted = new Map();       // lang -> Set(title)
+  const owner = new Map();        // lang + '|' + title -> [ids]
+  const orderFor = {};            // id -> ordered langs
+  for (const id of withLinks) {
+    const prefer = nn.searchTerms(byId[id], 3).map((t) => t.lang);
+    const order = wi.orderWikis(links[id], prefer);
+    orderFor[id] = order;
+    for (const lang of order.slice(0, 8)) {   // up to 8 wikis per figure
+      const title = links[id][lang];
+      if (!wanted.has(lang)) wanted.set(lang, new Set());
+      wanted.get(lang).add(title);
+      const k = lang + '|' + title;
+      if (!owner.has(k)) owner.set(k, []);
+      owner.get(k).push(id);
+    }
+  }
+
+  // 3) One batched pageimages sweep per wiki.
+  const found = {};               // id -> [filename, …] in wiki-preference order
+  const langs = [...wanted.keys()];
+  console.log(`sitelinks: querying ${langs.length} wikis for lead images…`);
+  for (const lang of langs) {
+    const titles = [...wanted.get(lang)];
+    const res = await wi.pageImages(lang, titles, { log: (m) => console.warn('  ! ' + m) });
+    for (const [title, file] of Object.entries(res)) {
+      for (const id of (owner.get(lang + '|' + title) || [])) {
+        (found[id] = found[id] || []).push({ lang, file });
+      }
+    }
+    await sleep(150);
+  }
+
+  // 4) Ship, best wiki first, license-gated and sanity-checked on Commons.
+  let shipped = 0, none = 0, gated = 0;
+  for (const id of ids) {
+    const cands = found[id];
+    if (!cands || !cands.length) { scan[id] = { status: 'no-sitelink-image', at: now() }; none++; continue; }
+    // Order candidates by this figure's wiki preference.
+    const rank = new Map(orderFor[id].map((l, i) => [l, i]));
+    cands.sort((a, b) => (rank.get(a.lang) ?? 99) - (rank.get(b.lang) ?? 99));
+    const tried = new Set();
+    let ok = false;
+    for (const c of cands) {
+      const title = 'File:' + c.file;
+      if (tried.has(title) || isBlocked(bl, id, title)) continue;
+      tried.add(title);
+      let info;
+      // Rule 1: the file must exist on COMMONS. A local wiki upload (often
+      // non-free fair-use) resolves to nothing here and is skipped.
+      try { info = await imageInfo(title); } catch (_) { continue; }
+      if (!info) continue;
+      if (!classify(info.extmetadata).accept) { gated++; continue; }
+      const sane = sanityCheck({ title, mime: info.mime, width: info.width, height: info.height });
+      if (!sane.pass) continue;
+      const r = await fetchOne(id, title, manifest, { bl }, { tier: 'A', method: `sitelink:${c.lang}`, qid: qmap[id].qid, signals: sane.signals });
+      if (r.status === 'ok') {
+        sources[id] = title; delete scan[id];
+        console.log(`  ✓ ${id}  [${c.lang}wiki]  ${title}  ${(r.bytes / 1024).toFixed(0)}KB`);
+        shipped++; ok = true;
+      }
+      await sleep(250);
+      if (ok) break;
+    }
+    if (!ok && !tried.size) { scan[id] = { status: 'no-sitelink-image', at: now() }; none++; }
+    else if (!ok) { scan[id] = { status: 'no-sitelink-image', at: now(), note: 'candidates failed gate/sanity' }; none++; }
+    if ((shipped + none) % 50 === 0) {
+      writeJSON(MANIFEST, sortObj(manifest)); writeJSON(SOURCES, sortObj(sources)); writeJSON(SCANSTATE, sortObj(scan));
+    }
+  }
+  writeJSON(MANIFEST, sortObj(manifest));
+  writeJSON(SOURCES, sortObj(sources));
+  writeJSON(SCANSTATE, sortObj(scan));
+  console.log(`sitelinks: ${shipped} shipped, ${none} without a usable lead image, ${gated} license-rejected. manifest: ${Object.keys(manifest).length}.`);
+}
+
 // museums: query the approved museum open-access APIs for every imageless
 // figure and append the gated, name-verified hits to the review queue with
 // their structured metadata (culture / object type / date) — the homonym
@@ -1010,6 +1134,7 @@ async function main() {
   if (cmd === 'harvest') return cmdHarvest(opts);
   if (cmd === 'fallback') return cmdFallback(opts);
   if (cmd === 'museums') return cmdMuseums(opts);
+  if (cmd === 'sitelinks') return cmdSitelinks(opts);
   if (cmd === 'merge') return cmdMerge(opts);
   if (cmd === 'sheet') return cmdSheet();
   if (cmd === 'approved') return cmdApproved(opts);
@@ -1018,7 +1143,7 @@ async function main() {
   if (cmd === 'fetch') return cmdFetch(opts);
   if (cmd === 'discover') return cmdDiscover(opts);
   if (cmd === 'check') return cmdCheck();
-  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
+  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|sitelinks|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
   console.log('       [--id ID] [--shard i/n] [--shards N] [--from DIR] [--limit N] [--trad T] [--force] [--refresh] [--rescan] [--native]');
   process.exitCode = 2;
 }

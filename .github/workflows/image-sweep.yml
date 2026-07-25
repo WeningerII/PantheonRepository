@@ -100,6 +100,11 @@ jobs:
           NATIVE=$(node -p 'try { require("./data-sources/image-run.json").native ? "--native" : "" } catch (e) { "" }')
           node scripts/ingest-images.cjs map      --shard "$SHARD/$N" $RESCAN $NATIVE
           node scripts/ingest-images.cjs harvest  --shard "$SHARD/$N"
+          # Lead images from EVERY language Wikipedia via Wikidata sitelinks.
+          # Curated identification (exact entity->article mapping), so it ships
+          # under the same license + sanity gates as P18. Runs BEFORE fallback so
+          # whatever it resolves never reaches the review queue at all.
+          node scripts/ingest-images.cjs sitelinks --shard "$SHARD/$N" $RESCAN
           node scripts/ingest-images.cjs fallback --shard "$SHARD/$N" $RESCAN $NATIVE
           # NOTE: $RESCAN is deliberately NOT passed to museums. Museum
           # re-search is governed by its own 180-day TTL (museum-scan.json);
