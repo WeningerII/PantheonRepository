@@ -72,7 +72,8 @@ const SCANSTATE = path.join(DS, 'image-scan-state.json'); // id → {status, at}
 const REVIEW = path.join(DS, 'image-review.json');        // Tier-B queue (generated)
 const REVIEW_HTML = path.join(DS, 'image-review.html');   // the contact sheet (generated)
 const APPROVED = path.join(DS, 'image-approved.json');    // owner's sheet export (consumed)
-const MUSEUMSCAN = path.join(DS, 'museum-scan.json');     // id → {at, hits} museum-search state (own TTL)
+const MUSEUMSCAN = path.join(DS, 'museum-scan.json');
+const PROPOSALS = path.join(DS, 'image-proposals.json');  // id → [search leads] (agent/owner domain knowledge)     // id → {at, hits} museum-search state (own TTL)
 
 const API = 'https://commons.wikimedia.org/w/api.php';
 const LEAD_WIDTH = 800;   // infobox @2x
@@ -868,6 +869,83 @@ async function cmdWikiSearch(opts) {
 // auto-ships; only the owner's click on the sheet does (docs/image-pipeline.md).
 // Its own scan file (museum-scan.json, 180d TTL) tracks coverage so waves
 // only advance; --rescan retries everything imageless regardless.
+// proposals: resolve human/agent-authored search leads into real candidates.
+//
+// The pipeline's discovery has always been mechanical — a name, an entity, a
+// category. That structurally cannot find "the Otricoli Zeus bust", "Guaman
+// Poma's drawing of Mama Huaco", "the Codex Borgia page for Tezcatlipoca":
+// knowing WHICH artwork depicts a figure is domain knowledge, not string
+// matching. data-sources/image-proposals.json carries that knowledge in:
+//
+//   { "figure_id": ["Otricoli Zeus bust", "File:Zeus Otricoli...jpg",
+//                   "Category:Zeus"] }
+//
+// Each lead is resolved against Commons — an exact "File:" is verified, a
+// "Category:" is enumerated, anything else is searched — then license-gated
+// like every other path. Proposals are LEADS, not decisions: results land in
+// the review queue for judgement, because a confident-sounding filename is
+// exactly the kind of thing that can be confidently wrong.
+async function cmdProposals(opts) {
+  const figures = loadFigures();
+  const byId = Object.fromEntries(figures.map((f) => [f.id, f]));
+  const proposals = readJSON(PROPOSALS, {});
+  const manifest = readJSON(MANIFEST, {});
+  const scan = readJSON(SCANSTATE, {});
+  const review = readJSON(REVIEW, {});
+  const bl = readJSON(BLOCKLIST, {});
+  const sh = parseShard(opts);
+
+  let ids = Object.keys(proposals).filter((id) => byId[id] && inShard(id, sh) && needsImage(id, manifest, scan));
+  if (opts.id) ids = ids.filter((id) => id === opts.id);
+  if (opts.limit) ids = ids.slice(0, opts.limit);
+  if (!ids.length) { console.log('proposals: nothing pending.'); return; }
+  console.log(`proposals: resolving leads for ${ids.length} figures`);
+
+  let enriched = 0, empty = 0;
+  for (const id of ids) {
+    const fig = byId[id];
+    const names = [(fig.name && fig.name.primary) || id, ...((fig.name && fig.name.alt) || [])];
+    const leads = (Array.isArray(proposals[id]) ? proposals[id] : [proposals[id]]).filter((s) => typeof s === 'string' && s.trim());
+    const seen = new Set(); const cands = [];
+    for (const lead of leads.slice(0, 6)) {
+      const t = lead.trim();
+      try {
+        if (/^file:/i.test(t)) {
+          const c = await fileCandidate(t);            // verifies existence + licence
+          if (c) { c.src = 'proposal'; cands.push(c); }
+        } else if (/^category:/i.test(t)) {
+          for (const c of await commonsCategoryFiles(t, 8)) { c.src = 'proposal-cat'; cands.push(c); }
+        } else {
+          for (const c of await searchCandidates(t, 8)) { c.src = 'proposal-search'; cands.push(c); }
+        }
+      } catch (e) { console.warn(`  ! ${id} lead "${t.slice(0, 40)}": ${e.message}`); }
+      await sleep(300);
+    }
+    const usable = cands.filter((c) => c && c.title && !seen.has(c.title) && !MEDIA_EXT.test(c.title)
+      && !isBlocked(bl, id, c.title) && (seen.add(c.title), true));
+    if (!usable.length) { empty++; continue; }
+    usable.forEach((c) => {
+      c.score = Math.max(...names.map((n) => scoreCandidate(c, n)));
+      if (nn.nativeHit(fig, c.title)) c.score += 3;
+      if (c.src === 'proposal') c.score += 4;          // an exact named file that verified
+    });
+    usable.sort((a, b) => b.score - a.score);
+    const entry = review[id] || { name: names[0], tradition: fig.tradition || '', qid: null, via: 'proposal', options: [], at: now() };
+    const have = new Set((entry.options || []).map((o) => o.ref || o.title));
+    for (const c of usable.slice(0, 4)) {
+      if (have.has(c.title)) continue;
+      entry.options.push({ title: c.title, thumb: c.thumb, license: c.license, author: c.author, score: c.score, w: c.w, h: c.h, src: c.src });
+      have.add(c.title);
+    }
+    entry.options = entry.options.slice(0, 8);
+    review[id] = entry; enriched++;
+    if (enriched % 25 === 0) writeJSON(REVIEW, sortObj(review));
+  }
+  writeJSON(REVIEW, sortObj(review));
+  console.log(`proposals: ${enriched} figures gained candidates, ${empty} resolved to nothing. review queue: ${Object.keys(review).length}.`);
+  if (!sh) cmdSheet();
+}
+
 async function cmdMuseums(opts) {
   const figures = loadFigures();
   const manifest = readJSON(MANIFEST, {});
@@ -1235,6 +1313,7 @@ async function main() {
   if (cmd === 'harvest') return cmdHarvest(opts);
   if (cmd === 'fallback') return cmdFallback(opts);
   if (cmd === 'museums') return cmdMuseums(opts);
+  if (cmd === 'proposals') return cmdProposals(opts);
   if (cmd === 'sitelinks') return cmdSitelinks(opts);
   if (cmd === 'wikisearch') return cmdWikiSearch(opts);
   if (cmd === 'merge') return cmdMerge(opts);
@@ -1245,7 +1324,7 @@ async function main() {
   if (cmd === 'fetch') return cmdFetch(opts);
   if (cmd === 'discover') return cmdDiscover(opts);
   if (cmd === 'check') return cmdCheck();
-  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|sitelinks|wikisearch|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
+  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|sitelinks|wikisearch|proposals|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
   console.log('       [--id ID] [--shard i/n] [--shards N] [--from DIR] [--limit N] [--trad T] [--force] [--refresh] [--rescan] [--native]');
   process.exitCode = 2;
 }

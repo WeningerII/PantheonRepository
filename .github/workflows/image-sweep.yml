@@ -32,10 +32,18 @@ on:
 permissions:
   contents: write
 
-# Never run two waves on the same branch at once (they'd both try to commit).
+# One wave per branch at a time, and the NEWEST wave wins.
+#
+# cancel-in-progress was false, which serialized waves instead of superseding
+# them: pushing image-run.json three times while iterating stacked three
+# sweeps, and the newest -- the only one carrying the new code -- sat last in
+# the queue for over an hour. Waves are idempotent and strictly advancing
+# (every mode skips ids already resolved in committed outputs), and a newer
+# wave always subsumes an older one's work, so cancelling the older run costs
+# nothing but the CI minutes already spent.
 concurrency:
   group: image-sweep-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   prepare:
@@ -109,6 +117,9 @@ jobs:
           # Wikidata entity-search never resolved. Ships the lead image AND
           # repairs the mapping from the article's own wikibase_item.
           node scripts/ingest-images.cjs wikisearch --shard "$SHARD/$N" $RESCAN
+          # Resolve domain-knowledge search leads (image-proposals.json) into
+          # real, license-gated candidates before the generic fallback runs.
+          node scripts/ingest-images.cjs proposals --shard "$SHARD/$N"
           node scripts/ingest-images.cjs fallback --shard "$SHARD/$N" $RESCAN $NATIVE
           # NOTE: $RESCAN is deliberately NOT passed to museums. Museum
           # re-search is governed by its own 180-day TTL (museum-scan.json);
