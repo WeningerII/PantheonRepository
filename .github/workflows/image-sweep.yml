@@ -101,7 +101,11 @@ jobs:
           node scripts/ingest-images.cjs map      --shard "$SHARD/$N" $RESCAN $NATIVE
           node scripts/ingest-images.cjs harvest  --shard "$SHARD/$N"
           node scripts/ingest-images.cjs fallback --shard "$SHARD/$N" $RESCAN $NATIVE
-          if [ -n "$MUSEUMS" ]; then node scripts/ingest-images.cjs museums --shard "$SHARD/$N" $RESCAN; fi
+          # NOTE: $RESCAN is deliberately NOT passed to museums. Museum
+          # re-search is governed by its own 180-day TTL (museum-scan.json);
+          # a Commons rescan would re-query every already-searched figure for
+          # identical results, burning the museum API budget for nothing.
+          if [ -n "$MUSEUMS" ]; then node scripts/ingest-images.cjs museums --shard "$SHARD/$N"; fi
       - name: Stage this shard's output
         run: |
           set -euo pipefail
