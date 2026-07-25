@@ -30,20 +30,31 @@ function renderSheet(review, order) {
   // n→title mapping the export script reads; \u003c-escaped like every other
   // embedded JSON block in this repo (a title containing </script> must not
   // terminate the block).
+  // The exported token is what image-approved.json carries: a museum option
+  // exports its "src:id" ref, a Commons option its File: title.
   const data = {};
   for (const id of ids) {
-    data[id] = (review[id].options || []).map((o) => o.title);
+    data[id] = (review[id].options || []).map((o) => o.ref || o.title);
   }
 
   const cards = ids.map((id) => {
     const r = review[id];
-    const opts = (r.options || []).slice(0, 3).map((o, i) => `
+    const opts = (r.options || []).slice(0, 6).map((o, i) => {
+      // Structured metadata (museum options) makes homonyms visible at a
+      // glance — a "Yoruba; 19th century; Figure" line under a thumbnail is
+      // the evidence a title alone can't give.
+      const metaBits = [o.src && o.src !== 'text' ? o.src.toUpperCase() : '', o.culture, o.objectType, o.date]
+        .filter(Boolean).map(esc).join(' · ');
+      const srcHref = o.url || `https://commons.wikimedia.org/wiki/${encodeURIComponent(o.title)}`;
+      return `
       <figure data-n="${i + 1}">
         <img src="${esc(o.thumb)}" alt="option ${i + 1}" loading="lazy">
         <figcaption><b>${i + 1}</b> · ${esc(o.license)}${o.author ? ' · ' + esc(o.author) : ''}
-          · <a href="https://commons.wikimedia.org/wiki/${esc(encodeURIComponent(o.title))}" target="_blank" rel="noopener">source</a>
-          ${o.score != null ? ` · score ${esc(o.score)}` : ''}</figcaption>
-      </figure>`).join('');
+          · <a href="${esc(srcHref)}" target="_blank" rel="noopener">source</a>
+          ${o.score != null ? ` · score ${esc(o.score)}` : ''}
+          ${metaBits ? `<br><span class="meta">${metaBits}</span>` : ''}</figcaption>
+      </figure>`;
+    }).join('');
     return `
   <section class="card" id="card-${esc(id)}" data-id="${esc(id)}" tabindex="0">
     <h2>${esc(r.name || id)} <small>${esc(r.tradition || '')}${r.qid ? ' · ' + esc(r.qid) : ''} · via ${esc(r.via || '?')}</small></h2>
@@ -74,12 +85,13 @@ header .keys{opacity:.6;font-size:.85em}
 .opts img{width:100%;height:170px;object-fit:contain;background:#8881;border-radius:4px;display:block}
 .opts .none div{width:100%;height:170px;display:flex;align-items:center;justify-content:center;font-size:2rem;opacity:.5;background:#8881;border-radius:4px}
 figcaption{font-size:.75rem;opacity:.75;margin-top:.3rem;line-height:1.35}
+figcaption .meta{color:#4a7dbd;font-weight:600}
 .empty{text-align:center;opacity:.6;margin:4rem 0}
 footer{position:fixed;bottom:0;left:0;right:0;background:inherit;border-top:1px solid #8884;padding:.7rem 1rem;display:flex;gap:1rem;align-items:center}
 button{font:inherit;padding:.45rem .9rem;border:1px solid #8886;border-radius:6px;background:#8881;cursor:pointer}
 </style></head><body>
 <header><b>Pantheon image review</b> <span><span id="done">0</span>/${total} decided</span>
-<span class="keys">keys: <b>1/2/3</b> approve · <b>x</b> none · <b>j/k</b> move · <b>u</b> undo · <b>e</b> export</span></header>
+<span class="keys">keys: <b>1–6</b> approve · <b>x</b> none · <b>j/k</b> move · <b>u</b> undo · <b>e</b> export</span></header>
 <main>
 ${total ? cards : empty}
 </main>
@@ -138,7 +150,7 @@ ${total ? cards : empty}
   }
   document.addEventListener('keydown', function (e) {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.key === '1' || e.key === '2' || e.key === '3') decide(e.key);
+    if (/^[1-6]$/.test(e.key)) decide(e.key);
     else if (e.key === 'x' || e.key === '0') decide('x');
     else if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); move(1); }
     else if (e.key === 'k' || e.key === 'ArrowUp') { e.preventDefault(); move(-1); }

@@ -5,7 +5,8 @@ Status: **the production design**, chosen by an adversarial architecture debate
 structured-data-first, automated-verification — two critics, one judge;
 unanimous synthesis). Licensing policy itself lives in
 [`image-licensing.md`](image-licensing.md) and is not restated here: PD /
-PD-old / PD-art / CC0 only, Commons only, self-host, never hotlink.
+PD-old / PD-art / CC0 only, approved sources only (Commons primary + the
+museum open-access list, owner-amended 2026-07-24), self-host, never hotlink.
 
 ## The two verdicts that shaped it
 
@@ -46,7 +47,33 @@ fallback ─► TIER B (review)    everything less certain, from EVERY source,
             them; `image-run.json {"rescan":true}` re-runs this deep pass over
             previously-empty figures.)
 
-owner ───► approves on the sheet (keys 1/2/3/x) → exports
+native ──► NOT a stage but a MODIFIER on map + fallback (added 2026-07-24):
+           `image-run.json {"native":true}` makes both search each figure's own
+           script/language from `name.transliterations` (present on 97.5% of
+           the corpus) — lib/native-names.cjs turns Ἀκεσώ→el, 하백→ko,
+           Батраз→ru, Perkūnas→lt into (term, language) queries. Wikidata
+           labels are multilingual and Commons descriptions are written in the
+           uploading institution's language, so English-only search structurally
+           misses entities and files that exist. 2,017 imageless figures have
+           native terms; 1,099 in a non-Latin script. Compound values
+           ("Сварогъ Svarogŭ") are split per script run, parenthetical reading
+           glosses stripped, and scholarly Egyptological/Assyriological
+           transliteration ("sꜣt-ı͗mn") excluded — it is not a language anyone
+           catalogues in. Native matches count toward entity identification, but
+           a sub-3-character native match (dense CJK namespace) can never reach
+           high confidence.
+
+museums ─► REVIEW-ONLY (added 2026-07-24, owner-approved) — the approved
+           museum open-access APIs (Met / Cleveland / AIC / Smithsonian-with-
+           key; lib/museum-adapters.cjs) searched for every imageless figure.
+           Per-source FAIL-CLOSED CC0 gates; name-hit required; natural-
+           history/taxa namespaces rejected; candidates carry culture/object-
+           type/date metadata onto the sheet. Museum picks travel as
+           "src:id" refs (met:436535) through the same approved→ingest path,
+           with the gate re-run at ingest. Own state: museum-scan.json
+           (180d TTL). Trigger: image-run.json {"museums":true}.
+
+owner ───► approves on the sheet (keys 1–6/x) → exports
            image-approved.json → push → `approved` ingests
            (license gate RE-RUNS on every file; picks become pins)
 ```
@@ -90,8 +117,8 @@ work across shards.)
 |---|---|
 | Image one specific figure | Add its id to `data-sources/image-request.json`, push. Tier-A ships it if curated data allows; otherwise its candidates land on the review sheet. |
 | Run the next sweep wave | Bump `data-sources/image-run.json` (e.g. `{"shards":12,"run":2}`), push — fans out across `shards` parallel jobs, one merged commit. |
-| Review pending candidates | Pull, open `data-sources/image-review.html` in a browser. Keys: **1/2/3** approve, **x** none, **j/k** move, **e** export. Save the export as `data-sources/image-approved.json`, commit, push. |
-| Reject a shipped image | Add its `File:` title under the figure's id in `data-sources/image-blocklist.json`, push any trigger file (or wait for the cron). It's pruned everywhere and never re-picked. |
+| Review pending candidates | Pull, open `data-sources/image-review.html` in a browser. Keys: **1–6** approve, **x** none, **j/k** move, **e** export. Save the export as `data-sources/image-approved.json`, commit, push. |
+| Reject a shipped image | Add its `File:` title (Commons) or its `src:id` ref (museum picks, e.g. `met:436535` — shown in the manifest entry's `ref`) under the figure's id in `data-sources/image-blocklist.json`, push any trigger file (or wait for the cron). It's pruned everywhere and never re-picked. |
 | Pin an exact image | Put `"figure_id": "File:…"` in `data-sources/image-sources.json` and run `fetch` (dispatch). Pins always win. |
 | Audit licenses now | Actions tab → Ingest Commons images → `check`. |
 
@@ -110,7 +137,8 @@ Commons directly, which is fine there; the **product** never hotlinks.
 | `data-sources/image-blocklist.json` | the owner | banned titles per figure (`_global` for all) |
 | `data-sources/image-scan-state.json` | all modes | timestamped no-result outcomes (drives TTL retries) |
 | `data-sources/image-request.json` | the owner | ids for `auto` |
-| `data-sources/image-run.json` | the owner | push-trigger for the parallel sweep: `{"shards": N, "run": k}` |
+| `data-sources/image-run.json` | the owner | push-trigger for the parallel sweep: `{"shards": N, "run": k, "rescan": bool, "museums": bool, "native": bool}` |
+| `data-sources/museum-scan.json` | `museums` | timestamped museum-search coverage (180d TTL) |
 | `assets/images/figures/` | shipping paths | self-hosted WebP portraits + `_meta/` provenance |
 
 ## Invariants (CI-enforced or structural)

@@ -14,14 +14,18 @@ const UA = 'ListOfGods-ImageIngest/1.0 (https://listofgods.com; weningerii@gmail
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-function get(url, as, redirects = 0) {
+function get(url, as, redirects = 0, retries429 = 0) {
   return new Promise((resolve, reject) => {
     const req = https.get(url, { headers: { 'User-Agent': UA, 'Api-User-Agent': UA, 'Accept-Encoding': 'identity' } }, (res) => {
       const { statusCode, headers } = res;
       if (statusCode === 429) {
+        // Bounded: a persistently rate-limited host must surface as an error
+        // the caller can degrade on (one stalled source must not stall a
+        // whole sweep shard into its job timeout).
+        if (retries429 >= 4) { res.resume(); return reject(new Error(`HTTP 429 (giving up after ${retries429} retries) for ${url}`)); }
         const wait = (parseInt(headers['retry-after'], 10) || 5) * 1000;
         res.resume();
-        return sleep(wait).then(() => get(url, as, redirects).then(resolve, reject));
+        return sleep(wait).then(() => get(url, as, redirects, retries429 + 1).then(resolve, reject));
       }
       if (statusCode >= 300 && statusCode < 400 && headers.location && redirects < 5) {
         res.resume();

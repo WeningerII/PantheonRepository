@@ -23,8 +23,13 @@
  *   map       resolve figures → QIDs into data-sources/qid-map.json
  *   harvest   Tier-A auto-ship from P18 for confidently-mapped figures
  *   fallback  build Tier-B candidates (P180 depicts, then text) → review file
+ *   museums   query the approved museum open-access APIs (Met/CMA/AIC/SI —
+ *             lib/museum-adapters.cjs, per-source fail-closed CC0 gates) for
+ *             imageless figures; hits append to the review queue with their
+ *             culture/object-type metadata. Review-only: never auto-ships.
  *   sheet     render data-sources/image-review.html from the review file
- *   approved  ingest the owner's exported approvals (gate re-runs)
+ *   approved  ingest the owner's exported approvals (gate re-runs). Values are
+ *             Commons "File:…" titles or museum "src:id" refs (met:436535…)
  *   delta     prune → map → harvest → fallback → sheet, incremental, capped
  *   auto      the same tiered flow restricted to data-sources/image-request.json
  *   fetch     download every curated pin in data-sources/image-sources.json
@@ -47,8 +52,10 @@ const path = require('path');
 const { get, getJSON, sleep } = require('./lib/wiki-http.cjs');
 const { classify } = require('./lib/commons-license.cjs');
 const wd = require('./lib/wikidata.cjs');
+const nn = require('./lib/native-names.cjs');
 const { sanityCheck } = require('./lib/sanity-check.cjs');
 const { renderSheet } = require('./lib/contact-sheet.cjs');
+const museums = require('./lib/museum-adapters.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const DS = path.join(ROOT, 'data-sources');
@@ -64,6 +71,7 @@ const SCANSTATE = path.join(DS, 'image-scan-state.json'); // id → {status, at}
 const REVIEW = path.join(DS, 'image-review.json');        // Tier-B queue (generated)
 const REVIEW_HTML = path.join(DS, 'image-review.html');   // the contact sheet (generated)
 const APPROVED = path.join(DS, 'image-approved.json');    // owner's sheet export (consumed)
+const MUSEUMSCAN = path.join(DS, 'museum-scan.json');     // id → {at, hits} museum-search state (own TTL)
 
 const API = 'https://commons.wikimedia.org/w/api.php';
 const LEAD_WIDTH = 800;   // infobox @2x
@@ -73,6 +81,7 @@ const LEAD_WIDTH = 800;   // infobox @2x
 // up without any extra scheduling machinery.
 const NO_QID_TTL_DAYS = 90;
 const NO_IMAGE_TTL_DAYS = 365;
+const MUSEUM_TTL_DAYS = 180;  // museum re-search window (collections grow)
 
 // Per-run caps (delta): keep each CI run ~an hour and each bot commit
 // reviewable. Successive runs advance via idempotent skips.
@@ -119,10 +128,12 @@ function pruneBlocked(manifest, sources, bl) {
   let pruned = 0;
   for (const id of Object.keys(manifest)) {
     const rec = manifest[id];
-    if (!rec || !isBlocked(bl, id, rec.title)) continue;
+    // Museum entries are addressable by their "src:id" ref as well as their
+    // human title — the blocklist matches either.
+    if (!rec || !(isBlocked(bl, id, rec.title) || (rec.ref && isBlocked(bl, id, rec.ref)))) continue;
     try { fs.unlinkSync(path.join(IMG_DIR, rec.file)); } catch (_) {}
     try { fs.unlinkSync(path.join(IMG_DIR, '_meta', `${id}.json`)); } catch (_) {}
-    if (sources[id] === rec.title) delete sources[id];
+    if (sources[id] === rec.title || (rec.ref && sources[id] === rec.ref)) delete sources[id];
     delete manifest[id];
     console.log(`  − pruned ${id} (${rec.title}) — blocklisted`);
     pruned++;
@@ -204,6 +215,58 @@ async function fetchOne(id, title, manifest, opts = {}, meta = {}) {
     ...(meta.qid ? { qid: meta.qid } : {}),
   };
   return { status: 'ok', file, w, h, bytes: buf.length, license: verdict.license.shortName || verdict.license.key };
+}
+
+// ── museum ingest: the fetchOne counterpart for "src:id" refs ───────────────
+// Same invariants as Commons: the source's CC0 gate RE-RUNS here at ingest
+// time (a review-era pass is never trusted), the optimized copy is
+// self-hosted, and provenance lands in _meta/ for cause-based revert.
+async function museumFetchOne(id, ref, manifest, opts = {}, meta = {}) {
+  const bl = opts.bl || {};
+  if (isBlocked(bl, id, ref)) return { status: 'reject', reason: 'blocklisted' };
+  if (!opts.force && manifest[id] && fs.existsSync(path.join(IMG_DIR, manifest[id].file))) return { status: 'skip' };
+
+  let rec;
+  try { rec = await museums.resolveRef(ref); } catch (e) { return { status: 'reject', reason: 'api error: ' + e.message }; }
+  if (!rec) return { status: 'reject', reason: 'gate failed or object missing (' + ref + ')' };
+  if (isBlocked(bl, id, rec.title)) return { status: 'reject', reason: 'blocklisted (title)' };
+
+  let dl;
+  try { dl = await get(rec.full, 'buffer'); } catch (e) { return { status: 'reject', reason: 'download failed: ' + e.message }; }
+  if (dl.contentType && !/^image\//i.test(dl.contentType)) {
+    return { status: 'reject', reason: 'not an image: ' + dl.contentType };
+  }
+  // Museum APIs serve original-resolution files; normalize to the same lead
+  // width Commons thumbnails ship at. Unlike the Commons path (which gets
+  // server-resized files WITH dimensions), this path depends on sharp for
+  // both the resize and the w/h the cold-load no-shift guarantee needs — so
+  // no sharp, or a sharp failure, REJECTS rather than shipping a full-res
+  // file with no reserved aspect box. CI always installs sharp.
+  if (!sharp) return { status: 'reject', reason: 'sharp unavailable — museum ingest requires resize + dimensions' };
+  let buf, ext, w, h;
+  try {
+    const out = await sharp(dl.buf).resize({ width: LEAD_WIDTH, withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
+    const info = await sharp(out).metadata();
+    buf = out; ext = 'webp'; w = info.width || LEAD_WIDTH; h = info.height || null;
+  } catch (e) { return { status: 'reject', reason: 'image processing failed: ' + e.message }; }
+
+  const file = `${id}.${ext}`;
+  fs.mkdirSync(IMG_DIR, { recursive: true });
+  fs.writeFileSync(path.join(IMG_DIR, file), buf);
+  fs.mkdirSync(path.join(IMG_DIR, '_meta'), { recursive: true });
+  writeJSON(path.join(IMG_DIR, '_meta', `${id}.json`), {
+    ref, title: rec.title, fetchedFrom: rec.full, sourceRecord: rec.record || null,
+    verification: { tier: meta.tier || 'B', method: meta.method || null, source: museums.parseRef(ref).src, signals: meta.signals || [], at: now() },
+  });
+
+  manifest[id] = {
+    file, w, h,
+    license: { key: 'cc0', name: 'CC0', url: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+    author: rec.credit || null, authorUrl: null,
+    source: rec.url || null, title: rec.title || ref, ref,
+    bytes: buf.length, tier: meta.tier || 'B', src: museums.parseRef(ref).src,
+  };
+  return { status: 'ok', file, w, h, bytes: buf.length, license: 'CC0' };
 }
 
 // ── Commons searches ────────────────────────────────────────────────────────
@@ -302,6 +365,17 @@ async function mapOne(fig, ctx) {
       for (const c of await wd.searchEntities(q, 7)) if (!byQid.has(c.qid)) byQid.set(c.qid, c);
       if (byQid.size >= 12) break;
     }
+    // Native-script / native-language pass (lib/native-names.cjs): Wikidata's
+    // labels are multilingual, so the entity an English romanization misses is
+    // often sitting under its own language's label (Ἀκεσώ in el, 하백 in ko,
+    // Батраз in ru). This is the single cheapest coverage gain available —
+    // once a QID lands, P18 and the Commons category are language-neutral.
+    if (ctx.native) {
+      for (const t of nn.searchTerms(fig, 2)) {
+        await sleep(250);
+        for (const c of await wd.searchEntities(t.term, 7, t.lang)) if (!byQid.has(c.qid)) byQid.set(c.qid, c);
+      }
+    }
   } catch (e) { console.warn(`  ! map ${fig.id}: ${e.message}`); return 'error'; }
   const pick = wd.pickQid(fig, [...byQid.values()], collisions.has(wd.normName(primary)));
   if (!pick) {
@@ -338,10 +412,20 @@ async function reviewOne(fig, qrec, ctx) {
     if (qid) add(await searchDepicts(qid, 15), 'p180');
     add(await searchCandidates(`${name} ${fig.tradition || ''}`.trim(), 25), 'text');
     for (const a of alts.slice(0, 2)) add(await searchCandidates(a, 12), 'text');
+    // Native-script text search: Commons file descriptions are written in the
+    // uploading institution's language — the Guaman Poma drawings (the best
+    // Inca source) are catalogued in Spanish, Siberian material in Russian,
+    // CJK material in native script. Searching only English misses them.
+    if (ctx.native) for (const t of nn.searchTerms(fig, 2)) add(await searchCandidates(t.term, 12), 'native');
   } catch (e) { console.warn(`  ! fallback ${fig.id}: ${e.message}`); return 'error'; }
 
   const usable = cands.filter((c) => !isBlocked(bl, fig.id, c.title));
-  usable.forEach((c) => { c.score = Math.max(...names.map((n) => scoreCandidate(c, n))); });
+  // Score against every romanized name; a title containing an exact NATIVE
+  // form is strong evidence the romanization can't see, so it scores too.
+  usable.forEach((c) => {
+    c.score = Math.max(...names.map((n) => scoreCandidate(c, n)));
+    if (nn.nativeHit(fig, c.title)) c.score += 3;
+  });
   usable.sort((a, b) => b.score - a.score);
   const top = usable.slice(0, 3);
   if (!top.length) {
@@ -387,7 +471,7 @@ async function cmdMap(opts) {
   console.log(`map: ${pool.length} figures to resolve (${collisions.size} collision names in corpus)`);
   const tally = { high: 0, ambiguous: 0, 'no-qid': 0, error: 0 };
   for (const fig of pool) {
-    const r = await mapOne(fig, { qmap, scan, collisions });
+    const r = await mapOne(fig, { qmap, scan, collisions, native: opts.native });
     tally[r] = (tally[r] || 0) + 1;
     await sleep(450);
   }
@@ -511,7 +595,7 @@ async function cmdFallback(opts) {
 
   const tally = { queued: 0, 'no-image': 0, error: 0 };
   for (const id of ids) {
-    const r = await reviewOne(byId[id], qmap[id] || null, { review, scan, bl });
+    const r = await reviewOne(byId[id], qmap[id] || null, { review, scan, bl, native: opts.native });
     tally[r] = (tally[r] || 0) + 1;
     await sleep(450);
   }
@@ -549,6 +633,88 @@ function cmdSheet() {
   console.log(`sheet: ${writeSheet()} figures → ${path.relative(ROOT, REVIEW_HTML)}`);
 }
 
+// museums: query the approved museum open-access APIs for every imageless
+// figure and append the gated, name-verified hits to the review queue with
+// their structured metadata (culture / object type / date) — the homonym
+// evidence the reviewer needs. Review-only by design: a museum hit NEVER
+// auto-ships; only the owner's click on the sheet does (docs/image-pipeline.md).
+// Its own scan file (museum-scan.json, 180d TTL) tracks coverage so waves
+// only advance; --rescan retries everything imageless regardless.
+async function cmdMuseums(opts) {
+  const figures = loadFigures();
+  const manifest = readJSON(MANIFEST, {});
+  const scan = readJSON(SCANSTATE, {});
+  const review = readJSON(REVIEW, {});
+  const bl = readJSON(BLOCKLIST, {});
+  const mscan = readJSON(MUSEUMSCAN, {});
+  const sh = parseShard(opts);
+  const active = museums.activeSources();
+  console.log(`museums: sources active: ${active.join(', ')}${active.includes('si') ? '' : ' (si skipped — set SI_API_KEY to enable Smithsonian)'}`);
+
+  let pool = figures.filter((f) => {
+    if (opts.id && f.id !== opts.id) return false;
+    if (!inShard(f.id, sh)) return false;
+    if (!needsImage(f.id, manifest, scan)) return false;
+    if (fresh(mscan[f.id], MUSEUM_TTL_DAYS) && !opts.rescan) return false;
+    return true;
+  });
+  // Cap the run like delta's limits: an uncapped unsharded walk of ~4,700
+  // figures would outlive the job timeout. Sharded runs are already ~1/N.
+  const MUSEUMS_LIMIT = 400;
+  if (opts.limit) pool = pool.slice(0, opts.limit);
+  else if (!sh) pool = pool.slice(0, MUSEUMS_LIMIT);
+  if (!pool.length) { console.log('museums: nothing pending.'); return; }
+  console.log(`museums: ${pool.length} imageless figures to search`);
+
+  // Flush progress periodically so a timeout kill keeps everything done so far.
+  const flush = () => { writeJSON(REVIEW, sortObj(review)); writeJSON(MUSEUMSCAN, sortObj(mscan)); };
+  let enriched = 0, empty = 0, errors = 0, processed = 0;
+  for (const fig of pool) {
+    if (++processed % 25 === 0) flush();
+    const name = (fig.name && fig.name.primary) || fig.id;
+    const alts = (fig.name && Array.isArray(fig.name.alt)) ? fig.name.alt.filter((s) => typeof s === 'string' && s) : [];
+    const names = [name, ...alts];
+    let res;
+    try {
+      res = await museums.searchAll(names, fig.tradition || '', { log: (m) => console.warn(`  ! ${fig.id}: ${m}`) });
+    } catch (e) { console.warn(`  ! museums ${fig.id}: ${e.message}`); errors++; continue; }
+
+    if (res.skipped === 'generic-name') { mscan[fig.id] = { at: now(), hits: 0, skipped: 'generic-name' }; empty++; continue; }
+    const usable = res.candidates.filter((c) => !isBlocked(bl, fig.id, c.ref) && !isBlocked(bl, fig.id, c.title));
+    // Scan state records ONLY complete searches (the mapOne rule): a source
+    // outage records nothing, so the next wave retries instead of the figure
+    // silently dropping out of museum coverage for the whole TTL.
+    if (res.errors === 0) mscan[fig.id] = { at: now(), hits: usable.length };
+    else errors++;
+    if (!usable.length) { if (res.errors === 0) empty++; continue; }
+
+    // Merge the top museum hits into the figure's review entry (create it if
+    // Commons found nothing). Museum options carry `ref` — the exportable
+    // token — plus the metadata the sheet displays. Dedupe by ref; cap the
+    // museum additions so a card stays reviewable at a glance.
+    const entry = review[fig.id] || { name, tradition: fig.tradition || '', qid: null, via: 'museum', options: [], at: now() };
+    const have = new Set((entry.options || []).map((o) => o.ref || o.title));
+    for (const c of usable.slice(0, 3)) {
+      if (have.has(c.ref)) continue;
+      entry.options.push({
+        ref: c.ref, title: c.title, thumb: c.thumb, license: c.license,
+        author: c.credit || null, score: c.score, w: c.w, h: c.h, src: c.src,
+        culture: c.culture || '', objectType: c.objectType || '', date: c.date || '', url: c.url || '',
+      });
+      have.add(c.ref);
+    }
+    entry.options = entry.options.slice(0, 6);
+    entry.museumsAt = now();
+    review[fig.id] = entry;
+    enriched++;
+    console.log(`  ○ ${fig.id}: +${usable.slice(0, 3).length} museum candidate(s) [${usable.slice(0, 3).map((c) => c.src).join(',')}]`);
+  }
+
+  flush();
+  console.log(`museums: ${enriched} figures gained candidates, ${empty} had none, ${errors} incomplete (will retry next wave). review queue: ${Object.keys(review).length}.`);
+  if (!sh) cmdSheet(); // sharded runs skip — the collector rebuilds the sheet once
+}
+
 // approved: ingest the owner's sheet export. A title ships (gate re-runs, pick
 // becomes a pin); null records "reviewed, none acceptable". Consumed entries
 // clear from the approvals file and the review queue.
@@ -571,7 +737,11 @@ async function cmdApproved(opts) {
       none++; continue;
     }
     const qid = (review[id] && review[id].qid) || null;
-    const r = await fetchOne(id, title, manifest, { bl, force: opts.force }, { tier: 'B', method: 'owner-approved', qid });
+    // A museum "src:id" ref takes the museum path; a Commons "File:…" title
+    // takes the Commons path. Both re-run their rights gate at ingest.
+    const r = museums.parseRef(title)
+      ? await museumFetchOne(id, title, manifest, { bl, force: opts.force }, { tier: 'B', method: 'owner-approved' })
+      : await fetchOne(id, title, manifest, { bl, force: opts.force }, { tier: 'B', method: 'owner-approved', qid });
     if (r.status === 'ok' || r.status === 'skip') {
       if (r.status === 'ok') console.log(`  ✓ ${id}  ${title}  [${r.license}]`);
       sources[id] = title;
@@ -625,7 +795,7 @@ async function cmdAuto(opts) {
   // Map any requested id lacking a usable mapping (force — requests bypass TTLs).
   for (const id of ids) {
     if (!qmap[id] || qmap[id].confidence === 'rejected') {
-      await mapOne(byId[id], { qmap, scan, collisions });
+      await mapOne(byId[id], { qmap, scan, collisions, native: opts.native });
       await sleep(450);
     }
   }
@@ -656,7 +826,9 @@ async function cmdFetch(opts) {
   let fetched = 0, skipped = 0, rejected = 0;
   for (const id of ids) {
     const title = sources[id];
-    const r = await fetchOne(id, title, manifest, { ...opts, bl }, { tier: 'B', method: 'pinned' });
+    const r = museums.parseRef(title)
+      ? await museumFetchOne(id, title, manifest, { ...opts, bl }, { tier: 'B', method: 'pinned' })
+      : await fetchOne(id, title, manifest, { ...opts, bl }, { tier: 'B', method: 'pinned' });
     if (r.status === 'skip') { skipped++; continue; }
     if (r.status === 'reject') {
       console.warn(`  ✗ ${id} <- ${title}: REJECT (${r.reason})`);
@@ -690,6 +862,7 @@ const MERGE_FILES = [
   ['image-sources.json', SOURCES],
   ['image-scan-state.json', SCANSTATE],
   ['image-review.json', REVIEW],
+  ['museum-scan.json', MUSEUMSCAN],
 ];
 // Pure range-restricted fold (unit-tested). Buckets whose shard didn't run keep
 // their baseline entry; within a ran shard's bucket the shard's data is
@@ -774,11 +947,23 @@ async function cmdCheck() {
   const ids = Object.keys(manifest);
   let ok = 0; const drift = {};
   for (const id of ids) {
-    const title = manifest[id].title;
+    const rec = manifest[id];
     try {
-      const info = await imageInfo(title, 120);
-      if (!info) { drift[id] = 'file now missing on Commons'; }
-      else { const v = classify(info.extmetadata); if (!v.accept) drift[id] = 'license no longer PD/CC0: ' + v.reason; else ok++; }
+      if (rec.ref && museums.parseRef(rec.ref)) {
+        // Museum entry: the source's CC0 gate must still pass today. An
+        // unset SI_API_KEY means "cannot verify", never "drifted" — report
+        // it as its own outcome instead of a false license alarm.
+        if (museums.parseRef(rec.ref).src === 'si' && !process.env.SI_API_KEY) {
+          drift[id] = 'unverifiable: SI_API_KEY not configured (not license drift)';
+        } else {
+          const m = await museums.resolveRef(rec.ref);
+          if (!m) drift[id] = 'museum gate no longer passes: ' + rec.ref; else ok++;
+        }
+      } else {
+        const info = await imageInfo(rec.title, 120);
+        if (!info) { drift[id] = 'file now missing on Commons'; }
+        else { const v = classify(info.extmetadata); if (!v.accept) drift[id] = 'license no longer PD/CC0: ' + v.reason; else ok++; }
+      }
     } catch (e) { drift[id] = 'api error: ' + e.message; }
     await sleep(300);
   }
@@ -801,6 +986,7 @@ function parseArgs(argv) {
     if (a === '--force') o.force = true;
     else if (a === '--refresh') o.refresh = true;
     else if (a === '--rescan') o.rescan = true;
+    else if (a === '--native') o.native = true;
     else if (a === '--limit') o.limit = parseInt(argv[++i], 10);
     else if (a === '--trad') o.trad = argv[++i];
     else if (a === '--id') o.id = argv[++i];
@@ -820,6 +1006,7 @@ async function main() {
   if (cmd === 'map') return cmdMap(opts);
   if (cmd === 'harvest') return cmdHarvest(opts);
   if (cmd === 'fallback') return cmdFallback(opts);
+  if (cmd === 'museums') return cmdMuseums(opts);
   if (cmd === 'merge') return cmdMerge(opts);
   if (cmd === 'sheet') return cmdSheet();
   if (cmd === 'approved') return cmdApproved(opts);
@@ -828,9 +1015,9 @@ async function main() {
   if (cmd === 'fetch') return cmdFetch(opts);
   if (cmd === 'discover') return cmdDiscover(opts);
   if (cmd === 'check') return cmdCheck();
-  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|merge|sheet|approved|delta|auto|fetch|discover|check>');
-  console.log('       [--id ID] [--shard i/n] [--shards N] [--from DIR] [--limit N] [--trad T] [--force] [--refresh] [--rescan]');
+  console.log('usage: node scripts/ingest-images.cjs <map|harvest|fallback|museums|merge|sheet|approved|delta|auto|fetch|discover|check>');
+  console.log('       [--id ID] [--shard i/n] [--shards N] [--from DIR] [--limit N] [--trad T] [--force] [--refresh] [--rescan] [--native]');
   process.exitCode = 2;
 }
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
-module.exports = { imageInfo, extOf, scoreCandidate, fetchOne, hashBucket, parseShard, inShard, foldShards, cmdMerge };
+module.exports = { imageInfo, extOf, scoreCandidate, fetchOne, museumFetchOne, hashBucket, parseShard, inShard, foldShards, cmdMerge };

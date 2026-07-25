@@ -1,15 +1,20 @@
 # Pantheon Registry — working notes for Claude
 
-## Image licensing — HARD RULE (owner-set)
+## Image licensing — HARD RULE (owner-set; amended 2026-07-24 with owner sign-off)
 
 Only ever ingest images that are **Public Domain / PD-old / PD-art / CC0**.
 Never CC BY, CC BY-SA, GFDL, or any attribution/share-alike-encumbered license
-— we do not carry per-image legal obligations into the product. Source from
-`commons.wikimedia.org` only, gate on the Commons API license fields, and
-self-host optimized copies (never hotlink). Full spec:
-[`docs/image-licensing.md`](docs/image-licensing.md). Ingest architecture
-(tiered: curated Wikidata P18 auto-ships, search hits go to human review —
-wrong image ≫ no image): [`docs/image-pipeline.md`](docs/image-pipeline.md).
+— we do not carry per-image legal obligations into the product. Source ONLY
+from the **approved source list**, each gated on its own machine-readable
+rights flag (never a human-written caption): `commons.wikimedia.org` (primary;
+extmetadata license fields), plus the museum open-access APIs — Met
+(`isPublicDomain`), Cleveland (`share_license_status: CC0`), Art Institute of
+Chicago (`is_public_domain`), Smithsonian (`metadata_usage.access: CC0`,
+requires the `SI_API_KEY` secret). Gates fail closed; museum hits are
+review-only (never auto-ship); self-host optimized copies (never hotlink).
+Full spec: [`docs/image-licensing.md`](docs/image-licensing.md). Ingest
+architecture (tiered: curated Wikidata P18 auto-ships, search hits go to human
+review — wrong image ≫ no image): [`docs/image-pipeline.md`](docs/image-pipeline.md).
 
 ## Load-time architecture
 

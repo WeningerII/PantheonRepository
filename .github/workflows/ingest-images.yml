@@ -22,7 +22,7 @@ on:
       mode:
         description: 'What to run'
         type: choice
-        options: [approved, auto, fetch, discover, check, map, harvest, fallback, sheet, delta]
+        options: [approved, auto, fetch, discover, check, map, harvest, fallback, museums, sheet, delta]
         default: check
       limit:
         description: 'Cap for map/harvest/fallback/discover (blank = mode default)'
@@ -98,6 +98,7 @@ jobs:
           MODE: ${{ steps.mode.outputs.mode }}
           LIMIT: ${{ inputs.limit }}
           TRAD: ${{ inputs.tradition }}
+          SI_API_KEY: ${{ secrets.SI_API_KEY }}   # museum refs (si:*) + museums mode
         run: |
           set -euo pipefail
           ARGS=()

@@ -17,6 +17,16 @@ const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
+// Honest per-source provenance (docs/image-licensing.md approved list): a
+// museum-sourced record carries `src`; everything else came from Commons.
+const SOURCE_LABELS = {
+  met: 'The Metropolitan Museum of Art',
+  cma: 'The Cleveland Museum of Art',
+  aic: 'The Art Institute of Chicago',
+  si: 'Smithsonian Open Access',
+};
+const provenanceOf = (img) => SOURCE_LABELS[img && img.src] || 'Wikimedia Commons';
+
 /**
  * @param {object|null} img   images.json record (or falsy)
  * @param {string} name       figure display name (unescaped)
@@ -35,11 +45,11 @@ function leadFigure(img, name, base = '') {
     + (img.source
       ? `<a href="${esc(img.source)}" rel="nofollow noopener" target="_blank">${esc(license)}</a>`
       : esc(license))
-    + ', via Wikimedia Commons';
+    + ', via ' + esc(provenanceOf(img));
   return `<figure class="lead">
 <img src="${base}assets/images/figures/${esc(img.file)}" alt="${esc(name)}"${img.w ? ` width="${img.w}"` : ''}${img.h ? ` height="${img.h}"` : ''} loading="lazy" decoding="async">
 <figcaption>${credit}</figcaption>
 </figure>`;
 }
 
-module.exports = { leadFigure, esc };
+module.exports = { leadFigure, esc, provenanceOf, SOURCE_LABELS };

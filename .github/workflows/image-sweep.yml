@@ -78,24 +78,39 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - name: Install sharp (WebP optimization)
         run: npm install --no-save sharp
-      - name: Map + harvest + fallback (shard ${{ matrix.shard }}/${{ needs.prepare.outputs.shards }})
+      - name: Map + harvest + fallback + museums (shard ${{ matrix.shard }}/${{ needs.prepare.outputs.shards }})
         env:
           SHARD: ${{ matrix.shard }}
           N: ${{ needs.prepare.outputs.shards }}
+          SI_API_KEY: ${{ secrets.SI_API_KEY }}
         run: |
           set -euo pipefail
           # image-run.json {"rescan":true} → a deep pass: re-try previously-empty
           # figures with the enriched sources (Commons category, P18, alt-name
           # search). Normal waves only advance new/stale figures.
+          # image-run.json {"museums":true} → also query the approved museum
+          # open-access APIs (review-only; docs/image-licensing.md source list).
+          # image-run.json {"native":true} → also search each figure's own
+          # native script/language (lib/native-names.cjs): Wikidata labels are
+          # multilingual and Commons descriptions are written in the uploading
+          # institution's language, so English-only search misses entities and
+          # files that exist. Review-tier evidence, never an auto-ship signal.
           RESCAN=$(node -p 'try { require("./data-sources/image-run.json").rescan ? "--rescan" : "" } catch (e) { "" }')
-          node scripts/ingest-images.cjs map      --shard "$SHARD/$N" $RESCAN
+          MUSEUMS=$(node -p 'try { require("./data-sources/image-run.json").museums ? "1" : "" } catch (e) { "" }')
+          NATIVE=$(node -p 'try { require("./data-sources/image-run.json").native ? "--native" : "" } catch (e) { "" }')
+          node scripts/ingest-images.cjs map      --shard "$SHARD/$N" $RESCAN $NATIVE
           node scripts/ingest-images.cjs harvest  --shard "$SHARD/$N"
-          node scripts/ingest-images.cjs fallback --shard "$SHARD/$N" $RESCAN
+          node scripts/ingest-images.cjs fallback --shard "$SHARD/$N" $RESCAN $NATIVE
+          # NOTE: $RESCAN is deliberately NOT passed to museums. Museum
+          # re-search is governed by its own 180-day TTL (museum-scan.json);
+          # a Commons rescan would re-query every already-searched figure for
+          # identical results, burning the museum API budget for nothing.
+          if [ -n "$MUSEUMS" ]; then node scripts/ingest-images.cjs museums --shard "$SHARD/$N"; fi
       - name: Stage this shard's output
         run: |
           set -euo pipefail
           mkdir -p upload/data-sources
-          for f in qid-map images image-sources image-scan-state image-review; do
+          for f in qid-map images image-sources image-scan-state image-review museum-scan; do
             [ -f "data-sources/$f.json" ] && cp "data-sources/$f.json" "upload/data-sources/" || true
           done
           # Only NEW (untracked) image + provenance files — never re-upload the
@@ -142,5 +157,21 @@ jobs:
             echo "Sweep produced no changes."
           else
             git commit -m "Image sweep: merge $SHARDS shards"
-            git push origin "HEAD:$BRANCH"
+            # Resilient push: the branch may have moved while the wave ran (a
+            # wave is ~30-60 min of wall clock). A plain push would be rejected
+            # and the ENTIRE wave's results discarded, so rebase onto whatever
+            # landed and retry. The sweep only touches generated data-sources
+            # files + new image assets, so a rebase is conflict-free in
+            # practice; if it ever is not, we abort loudly rather than force.
+            for attempt in 1 2 3 4 5; do
+              if git push origin "HEAD:$BRANCH"; then echo "pushed on attempt $attempt"; break; fi
+              echo "push rejected (attempt $attempt) — rebasing onto origin/$BRANCH"
+              git fetch origin "$BRANCH"
+              if ! git rebase "origin/$BRANCH"; then
+                git rebase --abort || true
+                echo "::error::sweep results conflict with newer commits on $BRANCH; artifacts are retained for a manual merge"
+                exit 1
+              fi
+              sleep $((attempt * 5))
+            done
           fi

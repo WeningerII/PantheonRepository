@@ -2,6 +2,9 @@
 
 Status: **binding rule.** Applies to every image ingested into this project
 from any source, forever, unless the owner changes it in writing here.
+Amended 2026-07-24 with the owner's sign-off: sourcing widened from
+Commons-only to the **approved source list** below (same license standard,
+machine-verified per source).
 
 ## The only licenses we accept
 
@@ -21,9 +24,29 @@ to PD/CC0 costs us very little coverage and removes the entire compliance
 
 ## Sourcing rules (all mandatory)
 
-1. **Commons proper only.** Ingest only files whose repository is
-   `commons.wikimedia.org`. Never a local Wikipedia upload (`en.wikipedia.org`
-   etc.) — those are frequently non-free fair-use and are not reusable.
+1. **Approved sources only — each with a machine-readable rights flag.**
+   A source qualifies only if every file's PD/CC0 status is a structured API
+   field our code verifies at ingest (never a human-written caption). The
+   approved list (owner-amended 2026-07-24):
+
+   | Source | Rights flag (exact, fail-closed) |
+   |---|---|
+   | `commons.wikimedia.org` (primary) | `extmetadata` license fields, rule 2 below |
+   | Met Museum Open Access | `isPublicDomain === true` |
+   | Cleveland Museum of Art | `share_license_status === "CC0"` |
+   | Art Institute of Chicago | `is_public_domain === true` |
+   | Smithsonian Open Access (`SI_API_KEY`) | `metadata_usage.access === "CC0"` |
+
+   Gates FAIL CLOSED: a missing or renamed flag rejects, so upstream schema
+   drift can never ship an image. Museum candidates are **review-only** —
+   they reach the product exclusively through the owner's approval on the
+   contact sheet, and the source's gate re-runs at ingest time
+   (`scripts/lib/museum-adapters.cjs`). Never a local Wikipedia upload
+   (`en.wikipedia.org` etc.) — those are frequently non-free fair-use and are
+   not reusable. Why museums: their open-access programs release their OWN
+   photography of their OWN 3D objects (masks, figures, ritual items) as CC0,
+   dissolving the photographer-copyright problem that blocks Commons photos
+   of sculpture — precisely the traditions with the least coverage.
 2. **License gate — accept only these machine-readable `License` keys** from
    the Commons API `extmetadata`:
    - `pd`, `pd-old`, `pd-old-*` (e.g. `pd-old-100`, `pd-old-70`), `pd-art`,
