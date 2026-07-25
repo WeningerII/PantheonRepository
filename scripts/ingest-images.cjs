@@ -407,13 +407,16 @@ async function reviewOne(fig, qrec, ctx) {
   const name = (fig.name && fig.name.primary) || fig.id;
   const alts = (fig.name && Array.isArray(fig.name.alt)) ? fig.name.alt.filter((s) => typeof s === 'string' && s) : [];
   const names = [name, ...alts];
-  const qid = qrec && qrec.confidence !== 'rejected' ? qrec.qid : null;
+  // P18, the Commons category and "depicts" all inherit this entity's
+  // identity, so a weak mapping poisons all three at once. Text search over
+  // the figure's own names is independent of it and still runs below.
+  const qid = wd.usableEntity(qrec) ? qrec.qid : null;
 
   const seen = new Set(); const cands = [];
   const add = (arr, src) => { for (const c of (arr || [])) { if (c && c.title && !seen.has(c.title) && !MEDIA_EXT.test(c.title)) { seen.add(c.title); c.src = src; cands.push(c); } } };
   try {
-    if (qrec && qrec.p18) { const c = await fileCandidate('File:' + qrec.p18); if (c) add([c], 'p18'); }
-    if (qrec && qrec.cat) add(await commonsCategoryFiles(qrec.cat, 20), 'cat');
+    if (qid && qrec.p18) { const c = await fileCandidate('File:' + qrec.p18); if (c) add([c], 'p18'); }
+    if (qid && qrec.cat) add(await commonsCategoryFiles(qrec.cat, 20), 'cat');
     if (qid) add(await searchDepicts(qid, 15), 'p180');
     add(await searchCandidates(`${name} ${fig.tradition || ''}`.trim(), 25), 'text');
     for (const a of alts.slice(0, 2)) add(await searchCandidates(a, 12), 'text');
@@ -445,7 +448,7 @@ async function reviewOne(fig, qrec, ctx) {
   return 'queued';
 }
 
-const qidOf = (qmap, id) => (qmap[id] && qmap[id].confidence !== 'rejected' ? qmap[id].qid : null);
+const qidOf = (qmap, id) => (wd.usableEntity(qmap[id]) ? qmap[id].qid : null);
 
 // Append one gated candidate to a figure's Tier-B review entry, creating the
 // entry if needed. Never overwrites what another source already found —
@@ -503,7 +506,10 @@ async function cmdMap(opts) {
   let pool = figures.filter((f) => {
     if (opts.id && f.id !== opts.id) return false;
     if (!inShard(f.id, sh)) return false;
-    if (qmap[f.id] && qmap[f.id].confidence !== 'rejected' && !opts.refresh) return false;
+    // 'rejected' and 'weak' are both worth re-resolving: the wrong-kind gate
+    // that demoted them also filters the candidate list, so a re-run either
+    // finds a better entity or correctly finds none.
+    if (qmap[f.id] && wd.usableEntity(qmap[f.id]) && !opts.refresh) return false;
     const s = scan[f.id];
     // --rescan re-tries previously-unmatched figures (with the deeper alt-name
     // search) without re-resolving ones already mapped.
@@ -512,7 +518,7 @@ async function cmdMap(opts) {
   });
   if (opts.limit) pool = pool.slice(0, opts.limit);
   console.log(`map: ${pool.length} figures to resolve (${collisions.size} collision names in corpus)`);
-  const tally = { high: 0, ambiguous: 0, 'no-qid': 0, error: 0 };
+  const tally = { high: 0, ambiguous: 0, weak: 0, 'no-qid': 0, error: 0 };
   for (const fig of pool) {
     const r = await mapOne(fig, { qmap, scan, collisions, native: opts.native });
     tally[r] = (tally[r] || 0) + 1;
@@ -521,7 +527,7 @@ async function cmdMap(opts) {
   // Enrich mappings with their P18 lead image + P373 Commons category (the deep
   // pass's richest sources) so fallback can use them without re-resolving.
   // Covers this shard's mapped entries that lack enrichment (new or older).
-  const toEnrich = figures.filter((f) => inShard(f.id, sh) && qmap[f.id] && qmap[f.id].qid && qmap[f.id].confidence !== 'rejected' && !qmap[f.id].enriched).map((f) => f.id);
+  const toEnrich = figures.filter((f) => inShard(f.id, sh) && wd.usableEntity(qmap[f.id]) && !qmap[f.id].enriched).map((f) => f.id);
   if (toEnrich.length) {
     console.log(`map: enriching ${toEnrich.length} mappings with P18 + Commons category…`);
     try {
@@ -701,7 +707,7 @@ async function cmdSitelinks(opts) {
   const sh = parseShard(opts);
 
   let ids = Object.keys(qmap).filter((id) => byId[id] && inShard(id, sh)
-    && qmap[id].qid && qmap[id].confidence !== 'rejected' && needsImage(id, manifest, scan)
+    && wd.usableEntity(qmap[id]) && needsImage(id, manifest, scan)
     && !(scan[id] && scan[id].status === 'no-sitelink-image' && fresh(scan[id], NO_IMAGE_TTL_DAYS) && !opts.rescan));
   if (opts.id) ids = ids.filter((id) => id === opts.id);
   if (opts.limit) ids = ids.slice(0, opts.limit);
@@ -958,7 +964,7 @@ async function cmdArticleImages(opts) {
   const sh = parseShard(opts);
 
   let ids = Object.keys(qmap).filter((id) => byId[id] && inShard(id, sh)
-    && qmap[id].qid && qmap[id].confidence !== 'rejected' && needsImage(id, manifest, scan)
+    && wd.usableEntity(qmap[id]) && needsImage(id, manifest, scan)
     && !(scan[id] && scan[id].status === 'no-article-images' && fresh(scan[id], NO_IMAGE_TTL_DAYS) && !opts.rescan));
   if (opts.id) ids = ids.filter((id) => id === opts.id);
   if (opts.limit) ids = ids.slice(0, opts.limit);

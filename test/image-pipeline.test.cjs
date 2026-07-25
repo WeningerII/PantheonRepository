@@ -77,12 +77,72 @@ test('pickQid: short names are never confident; no candidates → null', () => {
   assert.strictEqual(wd.pickQid(fig('a', 'Nobody', 'X'), [], false), null);
 });
 
-test('pickQid: no myth-flavored description → ambiguous, flagged as such', () => {
+// A described entity that reads nothing like our domain is the bucket an audit
+// of all 4,363 mappings measured at 82% wrong. It used to return 'ambiguous',
+// indistinguishable from a myth-flavored match with a hazard; it is now its own
+// tier, and entity-derived image sources refuse it.
+test('pickQid: a described, non-myth entity is weak — not merely ambiguous', () => {
   const pick = wd.pickQid(fig('x_y', 'Ambiguon', 'X'), [
     cand('Q9', 'Ambiguon', 'topic of unclear notability'),
   ], false);
+  assert.strictEqual(pick.confidence, 'weak');
+  assert.match(pick.reason, /not myth-flavored/);
+  assert.strictEqual(wd.usableEntity(pick), false, 'weak may not seed P18/category/depicts/sitelinks');
+});
+
+// An absent description is absence of evidence, not evidence of absence —
+// Wikidata simply has none in that language. Measured 18% wrong against 82%
+// for a described non-myth entity, so it stays usable and lands in review.
+test('pickQid: an undescribed entity stays ambiguous and usable', () => {
+  const pick = wd.pickQid(fig('x_y', 'Ambiguon', 'X'), [cand('Q9', 'Ambiguon', '')], false);
   assert.strictEqual(pick.confidence, 'ambiguous');
-  assert.match(pick.reason, /no myth-flavored/);
+  assert.match(pick.reason, /no description/);
+  assert.strictEqual(wd.usableEntity(pick), true);
+});
+
+// The gate that would have stopped the corpus's worst mappings. Every string
+// below is a real Wikidata description that got matched to a deity.
+test('wrongKind rejects the entity classes the mapping audit actually found', () => {
+  const wrong = [
+    'village in Papua, Indonesia', 'subdistrict in South Sulawesi',
+    'commune in Lot, France', 'district in Daykundi Province, Afghanistan',
+    'administrative quarter in Manisa, Turkey', 'railway station in Russia',
+    'military airport in Germany', 'city in Belarus', 'sovereign state in North America',
+    'a river in Jambi, Indonesia', 'Lake Okeechobee in Florida',
+    'Malaysian actress born 1999', 'Ethiopian long-distance runner',
+    'an Indonesian politician born 1962', 'a living researcher',
+    'Swedish retail chain', 'Japanese political party',
+    'a 2013 astronomy journal article', 'scientific article',
+    'audio player program', 'a corona feature on Venus',
+    'day of the week', 'the planet Mars', 'human disease',
+    'ethnic group in Kenya and Tanzania', 'the Serbo-Croatian language',
+  ];
+  for (const d of wrong) assert.ok(wd.wrongKind(d), `should reject: ${d}`);
+
+  // A myth signal always wins — these words appear in real deity descriptions,
+  // and rejecting them would cost the corpus its river gods and city goddesses.
+  const right = [
+    'river god in Greek mythology',
+    'goddess of the city of Uruk',
+    'deified king of the region of Kush',
+    'mountain deity in Ainu folklore',
+    'Yoruba orisha associated with the language of divination',
+    'ancestor spirit of an ethnic group in Borneo',
+    'personification of the planet Venus in Mesoamerican myth',
+    'legendary hero born 1000 BCE',
+    '',
+  ];
+  for (const d of right) assert.ok(!wd.wrongKind(d), `should keep: ${d}`);
+});
+
+test('usableEntity admits high and ambiguous, refuses weak, rejected, and unmapped', () => {
+  assert.strictEqual(wd.usableEntity({ qid: 'Q1', confidence: 'high' }), true);
+  assert.strictEqual(wd.usableEntity({ qid: 'Q1', confidence: 'ambiguous' }), true);
+  assert.strictEqual(wd.usableEntity({ qid: 'Q1', confidence: 'weak' }), false);
+  assert.strictEqual(wd.usableEntity({ qid: 'Q1', confidence: 'rejected' }), false);
+  assert.strictEqual(wd.usableEntity({ confidence: 'high' }), false);
+  assert.strictEqual(wd.usableEntity(null), false);
+  assert.strictEqual(wd.usableEntity(undefined), false);
 });
 
 // ── corpus collision detection ──────────────────────────────────────────────
