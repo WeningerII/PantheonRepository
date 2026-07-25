@@ -1020,6 +1020,40 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   scroll-padding-top: 32px;
 }
 
+/* Detail-load failure, rendered in the same slide-over as a real figure.
+   The point is that a dropped shard fetch stays a small, local, recoverable
+   event: the reader keeps the app, the table behind it, and their place. */
+.detail-error { max-width: 34em; }
+.detail-error h2 {
+  font: 400 var(--fs-display)/1.2 var(--font-serif);
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+.detail-error p {
+  margin: 0 0 24px;
+  color: var(--ink-3);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+.detail-error-actions { display: flex; align-items: center; gap: 20px; }
+.detail-error-retry {
+  padding: 7px 18px;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  font-size: var(--fs-body-2);
+  letter-spacing: .02em;
+}
+.detail-error-retry:hover { color: #fff; background: var(--accent); }
+.detail-error-actions a {
+  color: var(--mute);
+  font-size: var(--fs-body-2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+.detail-error-actions a:hover { color: var(--ink-3); }
+
 /* flow-root contains the floated lead portrait so a tall image grows the
    header instead of spilling over the notes/first section below it. */
 .detail-header { margin-bottom: 28px; display: flow-root; }

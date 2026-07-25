@@ -256,6 +256,74 @@ const persist = (snapshot) => {
   } catch (e) { console.warn('pantheon seed persist failed', e); }
 };
 
+// ─── Deploy-skew recovery: re-pin hashed tier names from data/meta.json ─────
+// Every lazy tier is fetched by a CONTENT-HASHED filename pinned into the shell
+// at build time — the only cache-bust available under Pages' fixed max-age=600.
+// That max-age cuts the other way on the shell itself: for up to ten minutes
+// after a deploy (and indefinitely in a tab left open across one) a browser
+// holds a shell pinning the PREVIOUS build's hashes, while /data/ already holds
+// only the new ones. Every such fetch 404s.
+//
+// Because build-tiers hashes each shard by ITS OWN content, a deploy renames
+// only the shards whose figures actually changed — so the 404s land on an
+// arbitrary SUBSET of figures. That is the whole shape of the bug: a handful of
+// figures fail while the rest of the app works perfectly.
+//
+// data/meta.json is UNHASHED and always current, so one cache-busted fetch of
+// it re-pins every tier name and the retry succeeds — the skew heals itself
+// without a reload. Fetched at most once per page load; concurrent callers
+// share the promise, and a failed refresh drops it so a later attempt retries.
+let manifestPromise = null;
+const refreshManifest = () => manifestPromise || (manifestPromise = fetch(
+  'data/meta.json?rev=' + Date.now(), { cache: 'reload' })
+  .then((res) => {
+    if (!res.ok) throw new Error('HTTP ' + res.status + ' fetching data/meta.json');
+    return res.json();
+  })
+  .then((meta) => {
+    // Re-pin exactly the globals build.py writes into the shell, in the same
+    // shapes, so every loader below picks the fresh names up transparently.
+    if (meta.files) {
+      if (window.__PR_DATA && window.__PR_DATA.corpus && meta.files.corpus) {
+        window.__PR_DATA.corpus = 'data/' + meta.files.corpus;
+      }
+      if (meta.files.atlas && meta.files.edges) {
+        window.__PR_TIER_DATA = { atlas: 'data/' + meta.files.atlas, edges: 'data/' + meta.files.edges };
+      }
+    }
+    if (meta.registry) {
+      window.__PR_REGISTRY_DATA = {
+        items: 'data/' + meta.registry.items,
+        powers: 'data/' + meta.registry.powers,
+        domains: 'data/' + meta.registry.domains,
+      };
+    }
+    if (meta.details && meta.details.shards) {
+      window.__PR_DETAILS_DATA = {
+        dir: 'data/' + meta.details.dir + '/',
+        buckets: meta.buckets,
+        shards: meta.details.shards,
+      };
+    }
+    console.warn('[pr-boot] tier names re-pinned from data/meta.json (deploy skew recovered)');
+    return meta;
+  })
+  .catch((err) => { manifestPromise = null; throw err; }));
+PR.refreshManifest = refreshManifest;
+
+// Fetch a hashed tier, and on failure re-pin from the manifest and retry ONCE
+// with the current name. `fresh()` re-reads the (now refreshed) pinned URL for
+// this tier — re-read rather than passed in, because the refresh may change the
+// bucket count as well as the filename. If the name did not change, the file is
+// genuinely unreachable and the ORIGINAL error propagates: callers distinguish
+// "stale pin" (invisible, recovered) from "offline" (surfaced) for free.
+const fetchPinned = (url, as, fresh) => fetchTier(url, as)
+  .catch((err) => refreshManifest().then(() => {
+    const next = fresh();
+    if (!next || next === url) throw err;
+    return fetchTier(next, as);
+  }, () => { throw err; }));
+
 // ─── Lazy per-view registry tiers ───────────────────────────────────────────
 // Items/Powers/Domains render from their own small precomputed tier (items /
 // powers / domains.json — the exact runtime-registry shape state.jsx builds
@@ -280,7 +348,7 @@ const loadRegistry = (kind) => {
   // No tier URL (embedded artifact): the corpus carries every registry — wait
   // on it rather than fetching a file that was never emitted.
   if (!url) return (registryPromises[kind] = ready);
-  const p = fetchTier(url, 'json')
+  const p = fetchPinned(url, 'json', () => (window.__PR_REGISTRY_DATA || {})[kind])
     .then((map) => { installRegistry(kind, map); return PR; })
     .catch((err) => {
       // Not fatal: the corpus provides the same data. Fall back to it, and drop
@@ -343,7 +411,7 @@ const loadTier = (kind) => {
   const url = urls && urls[kind];
   // No tier URL (embedded artifact): the corpus carries everything — wait on it.
   if (!url) return (tierPromises[kind] = ready);
-  const p = fetchTier(url, 'json')
+  const p = fetchPinned(url, 'json', () => (window.__PR_TIER_DATA || {})[kind])
     .then((data) => {
       (kind === 'atlas' ? installAtlasTier : installEdgesTier)(data);
       return PR;
@@ -379,7 +447,16 @@ const loadDetail = (id) => {
   if (have && have._full) return Promise.resolve(PR);
   const b = detailBucketOf(id, DET.buckets);
   if (shardPromises[b]) return shardPromises[b];
-  const p = fetchTier(DET.dir + DET.shards[b], 'json')
+  // A 404 here is almost always deploy skew: this shell pins the previous
+  // build's shard hash. fetchPinned re-pins from data/meta.json and retries with
+  // the current name — recomputing the bucket from the fresh manifest, since a
+  // corpus that crosses a size threshold changes the bucket count too. The user
+  // never sees it; the figure just opens.
+  const p = fetchPinned(DET.dir + DET.shards[b], 'json', () => {
+    const D2 = window.__PR_DETAILS_DATA;
+    if (!D2 || !D2.shards) return null;
+    return D2.dir + D2.shards[detailBucketOf(id, D2.buckets)];
+  })
     .then((recs) => {
       const P = PR.seedPeople || (PR.seedPeople = {});
       PR.divinity = PR.divinity || {};
@@ -423,9 +500,11 @@ const loadDetail = (id) => {
       console.warn('[pr-boot] detail shard ' + b + ' failed', err);
       delete shardPromises[b]; // next call retries the fetch
       // Legacy shells (corpus URL present) fall back to the corpus, which
-      // carries the same records. Projection shells have no corpus: rethrow
-      // so the caller can degrade — the Shell deep-links the static
-      // registry/<id>.html page instead of rendering a broken pane.
+      // carries the same records. Projection shells have no corpus: rethrow so
+      // the Shell can surface a retryable in-app error. It must NOT navigate
+      // away — registry/<id>.html is the crawler mirror, a different design in
+      // a different stylesheet, and sending a reader there over one dropped
+      // request ejects them from the app with no way back.
       if (TIERS.corpus) return ready;
       throw err;
     });

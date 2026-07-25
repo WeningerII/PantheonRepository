@@ -574,22 +574,38 @@ function Shell() {
   // loadDetail is idempotent (per-bucket promise cache) and a resolved no-op
   // on sync boots. The edges + atlas tiers ride along so Parentage/Descent/
   // divinity render complete, not skeleton-shaped.
+  // A figure whose detail shard could not be fetched, even after pr-boot
+  // re-pinned the manifest. Holds the id so a stale error can never shadow a
+  // different figure that opened fine; detailRetry re-runs the effect.
+  const [detailError, setDetailError] = __sState(null);
+  const [detailRetry, setDetailRetry] = __sState(0);
+
   __sEff(() => {
     const P = window.__PR;
     if (!P || !selection.selectedId || dataReady) return;
     const id = selection.selectedId;
+    setDetailError(null);
     if (P.loadDetail) {
       P.loadDetail(id).catch(() => {
-        // Shard fetch failed with no corpus to fall back to: degrade to the
-        // static page — complete, cited, always deployed beside the app
-        // (scale-gates holds it field-complete). A 404-class boring failure
-        // instead of a broken pane.
+        // The shard is genuinely unreachable (offline, blocked, or a deploy
+        // skew pr-boot's manifest refresh could not repair). Surface it INSIDE
+        // the app with a retry.
+        //
+        // This used to navigate to registry/<id>.html. That page is the JS-free
+        // crawler mirror — its own stylesheet, its own layout, honouring the
+        // OS dark theme the app never uses — so one dropped request threw the
+        // reader out of the app onto what looked like a different website
+        // entirely, with no way back but the browser's Back button. A transient
+        // fetch failure must never cost the user the UI.
         const rec = P.seedPeople && P.seedPeople[id];
-        if (!(rec && rec._full)) window.location.assign('registry/' + id + '.html');
+        if (!(rec && rec._full)) setDetailError(id);
       });
     }
     if (P.loadTier) { P.loadTier('edges'); P.loadTier('atlas'); }
-  }, [selection.selectedId, dataReady, corpusVersion]);
+  }, [selection.selectedId, dataReady, corpusVersion, detailRetry]);
+
+  // Only while this exact figure is still the selected one and still unrendered.
+  const showDetailError = !!detailError && detailError === selection.selectedId && !selectedEntry;
 
   // Find current index of the selected entry within current filtered list
   const selIdxInFiltered = __sMemo(() => {
@@ -1002,6 +1018,34 @@ function Shell() {
           selection.setCursorIdx(0);
         }}
       />
+
+      {/* Detail could not be fetched. Stays inside the app chrome — same
+          slide-over, same surface — so a dropped request reads as one figure
+          failing to load, not as the site changing out from under the reader. */}
+      {showDetailError && (
+        <>
+          <div className="detail-backdrop" onClick={() => selection.setSelectedId(null)} />
+          <aside className="detail" role="alertdialog" aria-label="Figure could not be loaded">
+            <div className="detail-bar">
+              <div className="spacer" />
+              <button className="close" onClick={() => selection.setSelectedId(null)} aria-label="Close">✕</button>
+            </div>
+            <div className="detail-scroll">
+              <div className="detail-error">
+                <h2>Couldn’t load this figure</h2>
+                <p>
+                  {(selectedRec && selectedRec.name && selectedRec.name.primary) || detailError}
+                  {' '}didn’t finish loading — usually a dropped connection.
+                </p>
+                <div className="detail-error-actions">
+                  <button className="detail-error-retry" onClick={() => setDetailRetry((n) => n + 1)}>Retry</button>
+                  <a href={'registry/' + detailError + '.html'}>Open the plain-text page instead</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </>
+      )}
 
       <window.ItemDetail
         item={selectedItem}
