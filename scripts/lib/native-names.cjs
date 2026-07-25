@@ -174,6 +174,14 @@ function langForTradition(tradition) {
   return null;
 }
 
+// A hand-written tradition table can only ever cover the traditions someone
+// thought to add, and silently drops the rest — which is how native search
+// ended up reaching ~22 languages while the corpus carries 892 distinct
+// transliteration keys. When no table entry matches, fall back to searching
+// the term in EVERY language Wikidata indexes ('mul' = all languages), so a
+// missing table row degrades to a broader search rather than to no search.
+const FALLBACK_LANG = 'mul';
+
 // A transliteration KEY that is itself a language code/name we can search in.
 const KEY_LANG = {
   ru: 'ru', uk: 'uk', ar: 'ar', fa: 'fa', he: 'he', el: 'el', grc: 'grc',
