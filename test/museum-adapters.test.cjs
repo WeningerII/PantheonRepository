@@ -181,6 +181,29 @@ test('scoreMuseum: culture-matched depictions outrank bare hits; taxa sink', () 
   assert.ok(bad < 0, 'taxa hits must score negative');
 });
 
+// The first museum ingest shipped 14/23 and lost every AIC pick to HTTP 403:
+// the Art Institute requires callers to identify themselves, and its IIIF
+// image server rejects anonymous requests even for CC0 objects.
+test('AIC requests carry the identifying header its server requires', () => {
+  const h = m.headersFor('aic');
+  assert.ok(h && h['AIC-User-Agent'], 'aic downloads must send AIC-User-Agent');
+  assert.match(h['AIC-User-Agent'], /listofgods\.com/i, 'header must identify this project');
+  // Sources that do not require one must not have headers invented for them.
+  assert.strictEqual(m.headersFor('met'), null);
+  assert.strictEqual(m.headersFor('cma'), null);
+  assert.strictEqual(m.headersFor('si'), null);
+  assert.strictEqual(m.headersFor('nope'), null);
+});
+
+test('wiki-http merges per-request headers over the defaults', () => {
+  const { UA } = require('../scripts/lib/wiki-http.cjs');
+  // Contract check: the default identity is still present and an extra header
+  // is additive (the merge is Object.assign(defaults, extra)).
+  const merged = Object.assign({ 'User-Agent': UA, 'Api-User-Agent': UA, 'Accept-Encoding': 'identity' }, m.headersFor('aic'));
+  assert.strictEqual(merged['User-Agent'], UA);
+  assert.ok(merged['AIC-User-Agent']);
+});
+
 test('aicImg builds the IIIF URL with the response config, falling back to the constant', () => {
   assert.strictEqual(m.aicImg('https://www.artic.edu/iiif/2', 'abc', 843), 'https://www.artic.edu/iiif/2/abc/full/843,/0/default.jpg');
   assert.strictEqual(m.aicImg(null, 'abc', 400), 'https://www.artic.edu/iiif/2/abc/full/400,/0/default.jpg');

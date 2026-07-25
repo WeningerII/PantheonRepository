@@ -232,7 +232,10 @@ async function museumFetchOne(id, ref, manifest, opts = {}, meta = {}) {
   if (isBlocked(bl, id, rec.title)) return { status: 'reject', reason: 'blocklisted (title)' };
 
   let dl;
-  try { dl = await get(rec.full, 'buffer'); } catch (e) { return { status: 'reject', reason: 'download failed: ' + e.message }; }
+  // Per-source download headers: some approved sources (AIC) 403 anonymous
+  // image requests even though the object itself is CC0.
+  const dlHeaders = museums.headersFor(museums.parseRef(ref).src);
+  try { dl = await get(rec.full, 'buffer', 0, 0, dlHeaders); } catch (e) { return { status: 'reject', reason: 'download failed: ' + e.message }; }
   if (dl.contentType && !/^image\//i.test(dl.contentType)) {
     return { status: 'reject', reason: 'not an image: ' + dl.contentType };
   }

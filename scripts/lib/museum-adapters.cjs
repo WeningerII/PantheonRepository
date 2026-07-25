@@ -249,9 +249,13 @@ async function cmaGet(id) {
 
 const AIC_FIELDS = 'id,title,is_public_domain,image_id,date_display,place_of_origin,artwork_type_title,classification_titles';
 const aicImg = (iiif, imageId, w) => `${iiif || 'https://www.artic.edu/iiif/2'}/${imageId}/full/${w},/0/default.jpg`;
+// The Art Institute requires callers to identify themselves; its IIIF image
+// server returns 403 to anonymous clients, which is exactly how the first
+// museum ingest lost all 9 AIC picks while Met and Cleveland succeeded.
+const AIC_HEADERS = { 'AIC-User-Agent': 'ListOfGods image ingest (https://listofgods.com; weningerii@gmail.com)' };
 async function aicSearch(name, cap = 8) {
   const q = encodeURIComponent(name);
-  const data = await getJSON(`https://api.artic.edu/api/v1/artworks/search?q=${q}&fields=${AIC_FIELDS}&limit=${cap}`);
+  const data = await getJSON(`https://api.artic.edu/api/v1/artworks/search?q=${q}&fields=${AIC_FIELDS}&limit=${cap}`, AIC_HEADERS);
   const iiif = data && data.config && data.config.iiif_url;
   const rows = (data && Array.isArray(data.data)) ? data.data : [];
   return rows.filter((r) => gates.aic(r)).map((r) => ({
@@ -265,7 +269,7 @@ async function aicSearch(name, cap = 8) {
   }));
 }
 async function aicGet(id) {
-  const data = await getJSON(`https://api.artic.edu/api/v1/artworks/${encodeURIComponent(id)}?fields=${AIC_FIELDS}`);
+  const data = await getJSON(`https://api.artic.edu/api/v1/artworks/${encodeURIComponent(id)}?fields=${AIC_FIELDS}`, AIC_HEADERS);
   const iiif = data && data.config && data.config.iiif_url;
   const r = data && data.data;
   return gates.aic(r) ? { full: aicImg(iiif, r.image_id, 843), title: r.title || '', credit: '', url: `https://www.artic.edu/artworks/${r.id}`, record: r } : null;
@@ -375,8 +379,13 @@ async function resolveRef(ref) {
   return GETTERS[p.src](p.id);
 }
 
+// Headers required to DOWNLOAD an image from a given source. The rights gate
+// and the byte fetch hit different hosts, so both need them.
+const IMAGE_HEADERS = { aic: AIC_HEADERS };
+const headersFor = (src) => IMAGE_HEADERS[src] || null;
+
 module.exports = {
-  parseRef, gates, nameHit, cultureKeywords, cultureMatch, cultureSignal,
+  parseRef, gates, nameHit, cultureKeywords, cultureMatch, cultureSignal, headersFor,
   naturalHistoryReject, isGenericName, allNamesGeneric,
   scoreMuseum, searchAll, resolveRef, activeSources, siToCand, aicImg, redactKey,
   DEPICTION_TYPE, NATURAL_HISTORY_TYPES, GENERIC_NAMES, MIN_MUSEUM_SCORE,
