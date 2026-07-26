@@ -28,6 +28,19 @@ const SOURCE_LABELS = {
 const provenanceOf = (img) => SOURCE_LABELS[img && img.src] || 'Wikimedia Commons';
 
 /**
+ * Alternative text for a lead portrait. The bare figure name duplicated the
+ * <h1> directly beside it, so a screen reader read the name twice and learned
+ * nothing about the picture. We cannot describe the artwork itself — nothing in
+ * images.json does — but we can say honestly what it is, and name the artist
+ * when the manifest knows one.
+ * @param {object} img   images.json record
+ * @param {string} name  figure display name (unescaped)
+ * @returns {string} unescaped alt text
+ */
+const altTextFor = (img, name) => `Depiction of ${name}`
+  + (img && img.author ? ` by ${img.author}` : '');
+
+/**
  * @param {object|null} img   images.json record (or falsy)
  * @param {string} name       figure display name (unescaped)
  * @param {string} [base='']  site base URL (BASE); the file self-hosts under
@@ -47,9 +60,9 @@ function leadFigure(img, name, base = '') {
       : esc(license))
     + ', via ' + esc(provenanceOf(img));
   return `<figure class="lead">
-<img src="${base}assets/images/figures/${esc(img.file)}" alt="${esc(name)}"${img.w ? ` width="${img.w}"` : ''}${img.h ? ` height="${img.h}"` : ''} loading="lazy" decoding="async">
+<img src="${base}assets/images/figures/${esc(img.file)}" alt="${esc(altTextFor(img, name))}"${img.w ? ` width="${img.w}"` : ''}${img.h ? ` height="${img.h}"` : ''} loading="lazy" decoding="async">
 <figcaption>${credit}</figcaption>
 </figure>`;
 }
 
-module.exports = { leadFigure, esc, provenanceOf, SOURCE_LABELS };
+module.exports = { leadFigure, esc, provenanceOf, altTextFor, SOURCE_LABELS };

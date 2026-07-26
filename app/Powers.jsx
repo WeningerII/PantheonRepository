@@ -193,9 +193,9 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
           // --group-h: measured ~50 px/row + ~26 px header — sizes off-screen
           // groups accurately so the scrollbar doesn't lurch (see styles.css).
           <div className="items-group powers-group" key={letter} style={{ '--group-h': (26 + list.length * 50) + 'px' }}>
-            <h3 className="items-group-head">
+            <h2 className="items-group-head">
               {letter} <span className="items-group-count">{list.length}</span>
-            </h3>
+            </h2>
             <div className="items-rows">
               {list.map((p) => (
                 <PowerRow key={p.id} p={p} selected={p.id === selectedPowerId} onOpen={stableOpen} />
@@ -365,7 +365,10 @@ function PowerDetail({ power, byId, onClose, onPrev, onNext, canPrev, canNext, o
   return (
     <>
       <div className={'detail-backdrop' + (closing ? ' closing' : '')} onClick={onClose} />
-      <aside
+      {/* A div, not an <aside>: role=dialog is not an allowed override of
+          <aside>'s implicit complementary role — the panel is a modal
+          slide-over, not a complementary region. */}
+      <div
         ref={panelRef}
         tabIndex={-1}
         className={'detail item-detail power-detail' + (closing ? ' closing' : '')}
@@ -408,7 +411,7 @@ function PowerDetail({ power, byId, onClose, onPrev, onNext, canPrev, canNext, o
           <PowerScopes scopeTags={p.scopeTags} />
           <PowerSources sources={p.sources} />
         </div>
-      </aside>
+      </div>
     </>
   );
 }

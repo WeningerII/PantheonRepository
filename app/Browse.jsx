@@ -303,7 +303,11 @@ function Browse({ filters, selection, onOpen }) {
         </div>
       </div>
 
-      <div className="browse-scroll">
+      {/* Focusable so the list can be scrolled from the keyboard. On the phone
+          tier the column heads (and their sort buttons) are hidden, which
+          leaves this scroll container with no focusable content at all —
+          a keyboard user could not reach the corpus. */}
+      <div className="browse-scroll" tabIndex={0} role="region" aria-label="Figures">
         {filtered.length === 0 ? (
           <div className="empty">
             <div className="empty-mark" aria-hidden="true" />
@@ -317,23 +321,28 @@ function Browse({ filters, selection, onOpen }) {
           </div>
         ) : (
           <table className="browse-table">
+            {/* Column heads: scope=col ties them to their data cells, aria-sort
+                announces which column is ordering the table, and the label sits
+                in a real <button> so the sort is reachable by keyboard — the
+                bare onClick on the <th> never was. */}
             <thead>
               <tr>
-                <th
-                  className={'th-name th-sortable' + (sort === 'alpha' ? ' th-on' : '')}
-                  onClick={() => setSort('alpha')}
-                  title="Sort by name (alphabetical)"
-                >Name {sort === 'alpha' && <span className="th-on-mark">↓</span>}</th>
-                <th
-                  className={'th-tradition th-sortable' + (sort === 'tradition' ? ' th-on' : '')}
-                  onClick={() => setSort('tradition')}
-                  title="Sort by tradition"
-                >Tradition {sort === 'tradition' && <span className="th-on-mark">↓</span>}</th>
-                <th
-                  className={'th-era th-sortable' + (sort === 'era' ? ' th-on' : '')}
-                  onClick={() => setSort('era')}
-                  title="Sort by era (oldest first)"
-                >Era {sort === 'era' && <span className="th-on-mark">↓</span>}</th>
+                {[
+                  ['alpha',     'th-name',      'Name',      'Sort by name (alphabetical)'],
+                  ['tradition', 'th-tradition', 'Tradition', 'Sort by tradition'],
+                  ['era',       'th-era',       'Era',       'Sort by era (oldest first)'],
+                ].map(([key, cls, label, hint]) => (
+                  <th
+                    key={key}
+                    scope="col"
+                    className={cls + ' th-sortable' + (sort === key ? ' th-on' : '')}
+                    aria-sort={sort === key ? 'ascending' : 'none'}
+                  >
+                    <button type="button" className="th-sort" onClick={() => setSort(key)} title={hint}>
+                      {label} {sort === key && <span className="th-on-mark">↓</span>}
+                    </button>
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>

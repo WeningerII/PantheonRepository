@@ -763,9 +763,9 @@ describe('app renders in a browser-like environment', () => {
     // "Clear all" only renders when activeChips.length >= 2.
     const greekRail = [...app.document.querySelectorAll('.rail-row-trad')]
       .find((r) => r.textContent.includes('Greek'));
-    const canonBtn = [...app.document.querySelectorAll('button[role="tab"]')]
+    const canonBtn = [...app.document.querySelectorAll('.rail-segment button[role="radio"]')]
       .find((b) => b.textContent === 'Canon');
-    if (!greekRail || !canonBtn) { return; } // expected UI missing — skip
+    assert.ok(greekRail && canonBtn, 'expected the Greek rail row and the Canon origin radio');
     await app.act(async () => { greekRail.click(); canonBtn.click(); });
     await app.flush();
     const clearAll = [...app.document.querySelectorAll('.filter-chip')]
@@ -834,5 +834,122 @@ describe('app renders in a browser-like environment', () => {
     assert.ok(headerTexts.some((t) => t.startsWith('Weapons')),
       `expected a "Weapons" group header, got: ${headerTexts.join(', ')}`);
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  // ── Accessibility structure ─────────────────────────────────────────────
+  // These are the properties an automated audit (axe / Lighthouse) checks and
+  // that silently rot as markup moves: they are cheap to assert and expensive
+  // to notice broken.
+
+  test('the app exposes landmarks, one h1, and a working skip link', async () => {
+    await app.clickButton('Browse');
+    await app.flush();
+    const D = app.document;
+    assert.ok(D.querySelector('header.topbar'), 'the top bar is a banner landmark');
+    assert.ok(D.querySelector('main#main-content'), 'the content column is a main landmark');
+    assert.ok(D.querySelector('aside.shell-rail[aria-label]'), 'the rail is a named complementary landmark');
+    assert.ok(D.querySelector('nav[aria-label="Views"]'), 'the view switcher is a named nav');
+
+    const h1s = [...D.querySelectorAll('h1')];
+    assert.strictEqual(h1s.length, 1, `expected exactly one h1, got ${h1s.length}`);
+    assert.strictEqual(h1s[0].textContent.trim(), 'Pantheon Registry');
+
+    // Headings never skip a level: h1 → h2, never h1 → h3.
+    const levels = [...D.querySelectorAll('h1,h2,h3,h4,h5,h6')]
+      .map((h) => Number(h.tagName[1]));
+    for (let i = 1; i < levels.length; i++) {
+      assert.ok(levels[i] <= levels[i - 1] + 1,
+        `heading level jumped from h${levels[i - 1]} to h${levels[i]}`);
+    }
+
+    // The skip link is the first focusable element and points at a real target.
+    const skip = D.querySelector('a.skip-link');
+    assert.ok(skip, 'no skip link');
+    assert.strictEqual(skip.getAttribute('href'), '#main-content');
+    assert.ok(D.querySelector('header.topbar').contains(skip),
+      'the skip link must sit inside a landmark, not loose in the page');
+    await app.act(async () => { skip.click(); });
+    await app.flush();
+    assert.strictEqual(D.activeElement, D.querySelector('main#main-content'),
+      'activating the skip link moves focus to main');
+  });
+
+  test('interactive chrome carries valid, named ARIA', async () => {
+    // Earlier tests leave the app on whichever view they needed; the sort
+    // group and the column heads are Browse's.
+    await app.clickButton('Browse');
+    await app.flush();
+    const D = app.document;
+    // A role must not contradict the element it sits on, and every widget
+    // grouping needs a name.
+    for (const el of D.querySelectorAll('[role="dialog"], [role="alertdialog"]')) {
+      assert.notStrictEqual(el.tagName, 'ASIDE',
+        'role=dialog is not an allowed override of <aside> (implicit complementary)');
+      assert.ok(el.getAttribute('aria-label') || el.getAttribute('aria-labelledby'),
+        'a dialog needs an accessible name');
+    }
+    // aria-label is prohibited on role=generic, so any labelled div needs a role.
+    for (const el of D.querySelectorAll('div[aria-label]')) {
+      assert.ok(el.getAttribute('role'),
+        `div[aria-label="${el.getAttribute('aria-label')}"] needs an explicit role`);
+    }
+    // Radio groups (sort order, origin) are named and expose checked state.
+    const groups = [...D.querySelectorAll('[role="radiogroup"]')];
+    assert.ok(groups.length >= 2, `expected the sort and origin radio groups, got ${groups.length}`);
+    for (const g of groups) {
+      assert.ok(g.getAttribute('aria-label'), 'a radiogroup needs a name');
+      const radios = [...g.querySelectorAll('[role="radio"]')];
+      assert.ok(radios.length >= 2, 'a radiogroup needs radios');
+      assert.strictEqual(radios.filter((r) => r.getAttribute('aria-checked') === 'true').length, 1,
+        'exactly one radio is checked');
+    }
+    // No leftover half-built tab pattern: a tab owes a panel, and none exists.
+    assert.strictEqual(D.querySelectorAll('[role="tab"]').length, 0,
+      'view switching is navigation, not a tablist');
+    // Every text input is named.
+    for (const input of D.querySelectorAll('input:not([type="range"]):not([type="hidden"])')) {
+      assert.ok(input.getAttribute('aria-label') || input.getAttribute('aria-labelledby')
+        || (input.id && D.querySelector(`label[for="${input.id}"]`)),
+        `unlabelled input: ${input.outerHTML.slice(0, 120)}`);
+    }
+    // Sortable column headers announce their state and are keyboard-reachable.
+    const on = D.querySelector('.browse-table th.th-on');
+    assert.ok(on, 'a column is sorted');
+    assert.strictEqual(on.getAttribute('aria-sort'), 'ascending');
+    for (const th of D.querySelectorAll('.browse-table thead th')) {
+      assert.strictEqual(th.getAttribute('scope'), 'col');
+      assert.ok(th.querySelector('button.th-sort'), 'the sort control is a real button');
+    }
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('the command palette is a labelled combobox over a listbox', async () => {
+    const D = app.document;
+    await app.act(async () => {
+      D.querySelector('.topbar-actions .btn-ghost').click();
+    });
+    await app.flush();
+    const input = D.querySelector('.cmdk input');
+    assert.ok(input, 'palette did not open');
+    assert.strictEqual(input.getAttribute('role'), 'combobox');
+    assert.ok(input.getAttribute('aria-label'), 'the palette input is named');
+    assert.strictEqual(input.getAttribute('aria-controls'), 'cmdk-results');
+    const list = D.querySelector('#cmdk-results');
+    assert.strictEqual(list.getAttribute('role'), 'listbox');
+    const options = [...list.querySelectorAll('[role="option"]')];
+    assert.ok(options.length > 0, 'the listbox has options');
+    assert.strictEqual(options.filter((o) => o.getAttribute('aria-selected') === 'true').length, 1,
+      'exactly one option is selected');
+    assert.strictEqual(input.getAttribute('aria-activedescendant'), options.find(
+      (o) => o.getAttribute('aria-selected') === 'true').id,
+      'aria-activedescendant tracks the visual cursor');
+    // A listbox may only own options — headers and the empty state are hidden.
+    for (const child of list.children) {
+      const role = child.getAttribute('role');
+      assert.ok(role === 'option' || role === 'presentation',
+        `disallowed listbox child: ${child.outerHTML.slice(0, 100)}`);
+    }
+    await app.act(async () => { app.key('Escape'); });
+    await app.flush();
   });
 });

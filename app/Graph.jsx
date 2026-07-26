@@ -1237,7 +1237,9 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
         />
 
         {/* Zoom controls, bottom-left */}
-        <div className="graph-zoom" aria-label="Zoom controls">
+        {/* role=group: aria-label is prohibited on a plain div (role=generic),
+            so the label was being dropped. */}
+        <div className="graph-zoom" role="group" aria-label="Zoom controls">
           <button onClick={() => zoomBy(1.4)}     title="Zoom in (+)"  aria-label="Zoom in">+</button>
           <button onClick={() => zoomBy(1 / 1.4)} title="Zoom out (−)" aria-label="Zoom out">−</button>
           <button onClick={resetZoom} className="graph-zoom-home" title="Reset zoom" aria-label="Reset zoom">⌂</button>

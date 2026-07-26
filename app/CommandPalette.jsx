@@ -104,21 +104,34 @@ function CommandPalette({ people, onClose, onPick }) {
   return (
     <div className="cmdk-back" onClick={onClose}>
       <div className="cmdk" role="dialog" aria-modal="true" aria-label="Find a figure" onClick={e => e.stopPropagation()}>
+        {/* Combobox + listbox. The arrow keys already moved a visual cursor
+            through the results; aria-activedescendant is what makes that
+            cursor audible, so a screen-reader user hears each figure as they
+            arrow rather than silence after typing. */}
         <input
           ref={inputRef}
           placeholder="Find a figure or tradition…"
+          aria-label="Find a figure or tradition"
+          role="combobox"
+          aria-expanded={results.length > 0}
+          aria-controls="cmdk-results"
+          aria-autocomplete="list"
+          aria-activedescendant={results.length > 0 ? `cmdk-opt-${cursor}` : undefined}
           value={q}
           onChange={e => setQ(e.target.value)}
         />
-        <div className="cmdk-results">
+        <div className="cmdk-results" id="cmdk-results" role="listbox" aria-label="Matching figures">
+          {/* role=presentation on the non-option furniture: a listbox may only
+              own options, and these headers/empty-state would otherwise be
+              disallowed children of it. */}
           {q.trim() === '' && (
-            <div className="cmdk-section">
+            <div className="cmdk-section" role="presentation">
               <span>A → Z</span>
               <span className="cmdk-section-meta">first 25 alphabetical · {people.length.toLocaleString()} total</span>
             </div>
           )}
           {q.trim() !== '' && results.length > 0 && (
-            <div className="cmdk-section">
+            <div className="cmdk-section" role="presentation">
               <span>Matches</span>
               <span className="cmdk-section-meta">{results.length} of {people.length.toLocaleString()}</span>
             </div>
@@ -133,6 +146,9 @@ function CommandPalette({ people, onClose, onPick }) {
             return (
               <div
                 key={entry.id}
+                id={`cmdk-opt-${i}`}
+                role="option"
+                aria-selected={i === cursor}
                 className={'cmdk-item' + (i === cursor ? ' active' : '')}
                 data-cmdk-idx={i}
                 onMouseEnter={() => {
@@ -154,7 +170,7 @@ function CommandPalette({ people, onClose, onPick }) {
             );
           })}
           {results.length === 0 && (
-            <div className="cmdk-empty">
+            <div className="cmdk-empty" role="presentation">
               No figures match <em>"{q}"</em>.
             </div>
           )}

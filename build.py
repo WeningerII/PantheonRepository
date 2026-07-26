@@ -325,7 +325,7 @@ __STYLES_CSS__
   }
   #boot .subtitle {
     font: italic 400 13px/1.4 'Newsreader', Georgia, serif;
-    color: #777472;
+    color: #65625F;   /* AA on the #FAFAF7 boot background */
     margin-top: -10px;
     max-width: 280px;
     text-align: center;
