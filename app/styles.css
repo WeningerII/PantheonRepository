@@ -424,6 +424,13 @@ button:focus-visible,
 .rail-row {
   display: flex; align-items: center; gap: 9px;
   padding: 4px 6px;
+  /* WCAG 2.2 SC 2.5.8 floor. These rows are role="checkbox" with tabindex=0,
+     so they are real targets; 4px padding around an 11px label rendered them
+     22px. The touch tier below already sets 44px inside @media (pointer:
+     coarse) — this is the pointer-fine case it never covered, and it is why
+     Lighthouse scored desktop accessibility 96 while mobile scored 100.
+     (axe-core does not implement target-size, so an axe sweep passes.) */
+  min-height: 24px;
   margin: 0 -6px;
   border-radius: 2px;
   font-size: var(--fs-body-2);

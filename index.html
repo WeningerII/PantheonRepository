@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pantheon Registry</title>
 <meta name="description" content="A browsable, source-cited index of the world's mythological and historical figures — their genealogies, domains, epithets, iconography, and cult (sites, festivals, priesthoods, offerings) — across hundreds of traditions. Client-rendered single-page app." />
+<!-- Favicon as a data: URI — see the matching block in build.py. Without it the
+     browser requests /favicon.ico, which this site does not serve. -->
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FAFAF7"/><circle cx="16" cy="16" r="10" fill="none" stroke="%230B0B0B" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="%230B0B0B"/></svg>' />
 
 <!-- Dev-mode entry. Run from the repo root with any static server:
        python3 -m http.server 8000

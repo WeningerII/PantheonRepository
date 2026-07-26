@@ -213,6 +213,13 @@ def main() -> None:
 <meta name="twitter:title" content="Pantheon Registry — the gods, mapped" />
 <meta name="twitter:description" content="A source-cited index of the world's mythological and historical figures across hundreds of traditions." />
 <meta name="twitter:image" content="https://www.listofgods.com/og-image.png" />
+<!-- Favicon as a data: URI, not a file. Without a declaration the browser
+     requests /favicon.ico, which this site does not serve — a real 404 that
+     Lighthouse counts under errors-in-console (best-practices). A path-based
+     icon would also 404 in the single-file artifact, which is opened over
+     file:// with no siblings; an inline SVG works in both and costs no request.
+     The mark matches the boot overlay: an ink ring around a centre dot. -->
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FAFAF7"/><circle cx="16" cy="16" r="10" fill="none" stroke="%230B0B0B" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="%230B0B0B"/></svg>' />
 __ANALYTICS__
 <!-- Early error trap. Surfaces boot-time errors into the visible boot overlay. -->
 <script>
