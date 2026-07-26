@@ -147,7 +147,9 @@ const ogTags = (title, desc, url, type = 'article') =>
   + `<meta name="twitter:description" content="${esc(desc)}">\n`
   + `<meta name="twitter:image" content="${OG_IMAGE}">\n`;
 
-const page = (title, desc, body, extraHead = '', url = BASE, type = 'website') => `<!doctype html>
+// regHref: the tradition hub pages live one directory down, so the footer's
+// link back to the full registry cannot be a bare 'index.html' for them.
+const page = (title, desc, body, extraHead = '', url = BASE, type = 'website', regHref = 'index.html') => `<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -159,7 +161,7 @@ ${ogTags(title, desc, url, type)}${extraHead}<style>${STYLE}</style>
 ${body}
 <footer>Pantheon Registry — a source-cited index of the world's mythological and
 historical figures. <a href="${BASE}">Interactive app</a> ·
-<a href="index.html">Full registry</a></footer>
+<a href="${regHref}">Full registry</a></footer>
 </body></html>`;
 
 // ── per-figure pages ───────────────────────────────────────────────────────
@@ -201,7 +203,15 @@ function figurePage(id) {
   // Everything but the breadcrumb and the footer sits in <main>: without a main
   // landmark the whole page is landmark-less, which is both a Lighthouse
   // best-practice failure and a real loss for anyone navigating by region.
-  const body = `<nav class="crumb"><a href="index.html">← Registry</a></nav>
+  // Breadcrumb up to the tradition hub as well as the master index, so the
+  // hierarchy is reciprocated: every figure names its parent, not just the
+  // parent naming its children.
+  const tradName = p.tradition || 'Unattributed';
+  const tradSlug = TRAD_SLUGS.get(tradName);
+  const crumb = `<nav class="crumb"><a href="index.html">← Registry</a>`
+    + (tradSlug ? ` · <a href="${TRAD_DIR}/${esc(tradSlug)}.html">${esc(tradName)}</a>` : '')
+    + `</nav>`;
+  const body = `${crumb}
 <main>
 ${lead}<h1>${esc(primary(p))}</h1>
 <div class="sub">${esc(tline)}${div && div.tier ? ` · ${esc(humanize(div.tier))}` : ''}</div>
@@ -224,13 +234,9 @@ ${sec('Sources', list(sources.map((ref) => {
 
 // ── master index ───────────────────────────────────────────────────────────
 function indexPage() {
-  const byTrad = new Map();
-  for (const id of IDS) {
-    const t = PEOPLE[id].tradition || 'Unattributed';
-    if (!byTrad.has(t)) byTrad.set(t, []);
-    byTrad.get(t).push(id);
-  }
-  const trads = [...byTrad.keys()].sort((a, b) => a.localeCompare(b));
+  // Share the grouping (and the collision-safe slugs) with the hub pages and the
+  // sitemap, so all three partition the corpus identically.
+  const { byTrad, trads, slugs } = groupByTradition();
   // Section anchors must stay unique as the corpus grows: two tradition names
   // that differ only by case or spacing slug to the same string, and duplicate
   // ids silently break in-page links and confuse assistive technology.
@@ -249,7 +255,11 @@ function indexPage() {
       const meta = [p.type, p.temporal && p.temporal.era].filter(Boolean).map(humanize).join(' · ');
       return `<li><a href="${esc(id)}.html">${esc(primary(p))}</a>${meta ? ` <span class="meta">${esc(meta)}</span>` : ''}</li>`;
     }).join('');
-    return `<section class="trad"><h2 id="${esc(anchorFor(t))}">${esc(t)} <span class="meta">${ids.length}</span></h2><ul>${items}</ul></section>`;
+    // The heading links down to the tradition's own page — that hub is what
+    // gives the figures below a parent narrower than "all 5,721 of them".
+    return `<section class="trad"><h2 id="${esc(anchorFor(t))}">`
+      + `<a href="${TRAD_DIR}/${esc(slugs.get(t))}.html">${esc(t)}</a> `
+      + `<span class="meta">${ids.length}</span></h2><ul>${items}</ul></section>`;
   }).join('\n');
 
   const desc = `Browse all ${IDS.length.toLocaleString()} cited figures across ${trads.length} traditions in the Pantheon Registry.`;
@@ -258,7 +268,8 @@ function indexPage() {
 <h1>Pantheon Registry</h1>
 <div class="sub">A source-cited index of ${IDS.length.toLocaleString()} mythological and historical figures across ${trads.length} traditions.</div>
 <p>This is a static, fully-readable mirror of the corpus for search engines and
-tools that don't run JavaScript. Every figure links to its cited detail page.
+tools that don't run JavaScript. Every figure links to its cited detail page,
+and every tradition heading links to that tradition's own page.
 For the interactive graph, map, and search, use the <a href="${BASE}">app</a>.</p>
 ${sections}
 </main>`;
@@ -266,9 +277,176 @@ ${sections}
     `<link rel="canonical" href="${BASE}registry/index.html">\n`);
 }
 
+// ── per-tradition hub pages ──────────────────────────────────────────────────
+// The master index links all 5,721 figures from a single page, so every figure
+// URL shares one parent and one undifferentiated pool of crawl priority. These
+// sit in between: one page per tradition, cheap to crawl, each linking only its
+// own figures plus the traditions it actually shares figures with. That last
+// part matters — it turns a flat fan-out into a connected graph a crawler can
+// work through, and it is also the level a reader wants ("the Norse ones").
+//
+// Each page carries a derived summary rather than a bare list of links, because
+// 560 near-identical list pages is the shape search engines treat as doorway
+// content. The counts, tier breakdown, era span and domain summary are computed
+// per tradition and are genuinely different on every page.
+const TRAD_DIR = 'tradition';
+// Memoised, and read at call time rather than module-eval time: figurePage()
+// needs the slug map, but groupByTradition() and slugify() are defined further
+// down this file. One shared map keeps figure breadcrumbs, the index headings,
+// the hub filenames and the sitemap pointing at exactly the same URLs.
+let _tradSlugs = null;
+const TRAD_SLUGS = { get: (t) => (_tradSlugs || (_tradSlugs = groupByTradition().slugs)).get(t) };
+// Same order the app's rail uses (TYPE_ORDER in app/state.jsx): most divine
+// first, so the figures a reader came for are at the top.
+const TIER_ORDER = ['deity', 'numen', 'demigod', 'quartigod', 'scion', 'mortal'];
+// Naive +s gives "deitys" and "numens"; both are wrong and both are visible in
+// the meta description, which is the first thing a search result shows.
+const TIER_PLURAL = { deity: 'deities', numen: 'numina', unclassified: 'unclassified figures' };
+const tierRank = (t) => { const i = TIER_ORDER.indexOf(t); return i < 0 ? TIER_ORDER.length : i; };
+const plural = (n, one, many) => `${n.toLocaleString()} ${n === 1 ? one : many || one + 's'}`;
+const tierPlural = (k, n) => plural(n, humanize(k), TIER_PLURAL[k]);
+
+// Traditions this one shares figures with, via parentage or a stated relation.
+// Counted in both directions so the link graph is symmetric and every edge is
+// reciprocated — a crawler arriving at either end finds the other.
+function neighbourTraditions(t, ids, byTrad) {
+  const idSet = new Set(ids);
+  const counts = new Map();
+  const bump = (other) => {
+    if (!other || other === t || !byTrad.has(other)) return;
+    counts.set(other, (counts.get(other) || 0) + 1);
+  };
+  const tradOf = (fid) => PEOPLE[fid] && (PEOPLE[fid].tradition || 'Unattributed');
+  for (const id of ids) {
+    const p = PEOPLE[id];
+    for (const pid of (p.parentIds || [])) bump(tradOf(pid));
+    for (const r of (p.relations || [])) if (r && r.personId) bump(tradOf(r.personId));
+  }
+  // Inbound edges too: a figure elsewhere naming one of ours.
+  for (const other of byTrad.keys()) {
+    if (other === t) continue;
+    for (const oid of byTrad.get(other)) {
+      const p = PEOPLE[oid];
+      const hits = [...(p.parentIds || []), ...(p.relations || []).map((r) => r && r.personId)]
+        .filter((x) => x && idSet.has(x)).length;
+      if (hits) counts.set(other, (counts.get(other) || 0) + hits);
+    }
+  }
+  return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+}
+
+function traditionPage(t, ids, slugs, byTrad) {
+  const slug = slugs.get(t);
+  const url = `${BASE}registry/${TRAD_DIR}/${slug}.html`;
+
+  // ── derived summary (unique per tradition) ──
+  const byTier = new Map();
+  for (const id of ids) {
+    const k = PEOPLE[id].type || 'unclassified';
+    if (!byTier.has(k)) byTier.set(k, []);
+    byTier.get(k).push(id);
+  }
+  const tiers = [...byTier.keys()].sort((a, b) => tierRank(a) - tierRank(b) || a.localeCompare(b));
+  const tierPhrase = tiers.map((k) => tierPlural(k, byTier.get(k).length)).join(', ');
+
+  const eras = [...new Set(ids.map((id) => PEOPLE[id].temporal && PEOPLE[id].temporal.era)
+    .filter(Boolean).map(humanize))].sort();
+  const domainCounts = new Map();
+  for (const id of ids) {
+    for (const d of (PEOPLE[id].domains || [])) {
+      const k = humanize(d.sphereId);
+      if (k) domainCounts.set(k, (domainCounts.get(k) || 0) + 1);
+    }
+  }
+  const topDomains = [...domainCounts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 8).map(([k]) => k);
+  const cited = ids.filter((id) => sourcesOf(PEOPLE[id]).length).length;
+
+  const desc = `All ${plural(ids.length, 'figure')} of the ${t} tradition in the Pantheon Registry`
+    + `${tierPhrase ? ` — ${tierPhrase}` : ''}. Genealogy, domains, epithets and cited sources for each.`;
+
+  const neighbours = neighbourTraditions(t, ids, byTrad);
+
+  // ── body ──
+  const sec = (label, html) => html ? `<h2>${label}</h2>${html}` : '';
+  const figureList = (list) => `<ul>${list.map((id) => {
+    const p = PEOPLE[id];
+    const meta = [p.temporal && p.temporal.era].filter(Boolean).map(humanize).join(' · ');
+    return `<li><a href="../${esc(id)}.html">${esc(primary(p))}</a>`
+      + `${meta ? ` <span class="meta">${esc(meta)}</span>` : ''}</li>`;
+  }).join('')}</ul>`;
+
+  // Plural, capitalised: the CSS uppercases these, but the source text is what
+  // a screen reader announces and what lands in the accessibility tree.
+  const tierHeading = (k) => {
+    const word = TIER_PLURAL[k] || `${humanize(k)}s`;
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  };
+  const tierSections = tiers.map((k) =>
+    `<h2>${esc(tierHeading(k))} <span class="meta">${byTier.get(k).length}</span></h2>`
+    + figureList(byTier.get(k))).join('\n');
+
+  const neighbourList = neighbours.length
+    ? `<ul>${neighbours.slice(0, 24).map(([other, n]) =>
+      `<li><a href="${esc(slugs.get(other))}.html">${esc(other)}</a> `
+      + `<span class="meta">${plural(n, 'shared figure')}</span></li>`).join('')}</ul>`
+    : '';
+
+  const ld = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${t} — Pantheon Registry`,
+    description: desc,
+    url,
+    isPartOf: { '@type': 'CollectionPage', name: 'Pantheon Registry — full figure index', url: `${BASE}registry/index.html` },
+    about: { '@type': 'Thing', name: t },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: ids.length,
+      itemListElement: ids.slice(0, 100).map((id, i) => ({
+        '@type': 'ListItem', position: i + 1, name: primary(PEOPLE[id]),
+        url: `${BASE}registry/${id}.html`,
+      })),
+    },
+  };
+
+  const body = `<nav class="crumb"><a href="../index.html">← Registry</a></nav>
+<main>
+<h1>${esc(t)}</h1>
+<div class="sub">${esc(plural(ids.length, 'figure'))} in the ${esc(t)} tradition</div>
+<p>The Pantheon Registry records ${esc(plural(ids.length, 'figure'))} for ${esc(t)}${
+  tierPhrase ? `: ${esc(tierPhrase)}` : ''}. ${
+  cited === ids.length ? 'Every entry carries' : `${esc(plural(cited, 'entry', 'entries'))} carry`
+} at least one cited source.${
+  eras.length ? ` Attested ${eras.length === 1 ? 'in the' : 'across'} ${esc(eras.slice(0, 6).join(', '))}${eras.length > 6 ? ` and ${eras.length - 6} further` : ''} ${eras.length === 1 ? 'era' : 'eras'}.` : ''
+}${
+  topDomains.length ? ` The domains recorded most often here are ${esc(topDomains.join(', '))}.` : ''
+}</p>
+<p>Each name links to its cited detail page — parentage, children, domains, powers,
+epithets, relations and sources. For the interactive graph and map, open
+<a href="${BASE}#/browse">the app</a> and filter to ${esc(t)}.</p>
+${tierSections}
+${sec('Connected traditions', neighbourList)}
+<a class="app-link" href="${BASE}#/browse">Open in the interactive app →</a>
+</main>`;
+
+  return page(`${t} — ${plural(ids.length, 'figure')} — Pantheon Registry`, desc, body,
+    `<link rel="canonical" href="${url}">\n`
+    + `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n`,
+    url, 'website', '../index.html');
+}
+
 // ── sitemap + robots ─────────────────────────────────────────────────────────
 function sitemap() {
-  const urls = [BASE, `${BASE}registry/index.html`, ...IDS.map((id) => `${BASE}registry/${id}.html`)];
+  const { trads, slugs } = groupByTradition();
+  const urls = [
+    BASE,
+    `${BASE}registry/index.html`,
+    // Hubs before the figures they parent: a crawler working the file in order
+    // meets the tradition page first and can use it to prioritise.
+    ...trads.map((t) => `${BASE}registry/${TRAD_DIR}/${slugs.get(t)}.html`),
+    ...IDS.map((id) => `${BASE}registry/${id}.html`),
+  ];
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`
     + urls.map((u) => `  <url><loc>${esc(u)}</loc></url>`).join('\n')
     + `\n</urlset>\n`;
@@ -285,8 +463,20 @@ const altNames = (p) => ((p.name && p.name.alt) || [])
   .map((a) => (typeof a === 'string' ? a : a && (a.value || a.primary)))
   .filter(Boolean);
 
-// Stable URL slug for a tradition name (used for the per-tradition llms files).
-const slugify = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unattributed';
+// Stable URL slug for a tradition name — used for the per-tradition llms files
+// and for the tradition hub pages, so the two always agree.
+//
+// Diacritics are folded rather than dropped. Stripping them outright turned
+// "Sámi" into "s-mi" and "Ashéninka" into "ash-ninka": stable, but unreadable
+// in a URL and useless as a search-result breadcrumb. NFD decomposition handles
+// most Latin marks; the letters below have no decomposition and need naming.
+const FOLD = { 'ð': 'd', 'þ': 'th', 'ø': 'o', 'æ': 'ae', 'œ': 'oe', 'ß': 'ss', 'ŋ': 'n', 'ħ': 'h', 'ł': 'l', 'đ': 'd', 'ı': 'i' };
+const slugify = (s) => String(s)
+  .toLowerCase()
+  .replace(/[ðþøæœßŋħłđı]/g, (c) => FOLD[c])
+  .normalize('NFD').replace(/[̀-ͯ]/g, '')   // strip combining marks
+  .replace(/[’'`]/g, '')                              // elide apostrophes, don't split on them
+  .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unattributed';
 
 // Figures grouped by tradition, sorted — shared by the full dump, the JSON dump,
 // and the per-tradition files so all three partition identically.
@@ -503,6 +693,18 @@ function main() {
   let n = 0;
   for (const id of IDS) { fs.writeFileSync(path.join(REG, `${id}.html`), figurePage(id)); n++; }
   fs.writeFileSync(path.join(REG, 'index.html'), indexPage());
+  // Tradition hubs, between the master index and the figures.
+  const { byTrad, trads, slugs } = groupByTradition();
+  const tradDir = path.join(REG, TRAD_DIR);
+  // Cleared, not merged: a tradition rename changes its slug, and the old file
+  // would otherwise linger in the output as an orphan that no sitemap entry or
+  // internal link points at. Every file here is rewritten from the corpus below.
+  fs.rmSync(tradDir, { recursive: true, force: true });
+  fs.mkdirSync(tradDir, { recursive: true });
+  for (const t of trads) {
+    fs.writeFileSync(path.join(tradDir, `${slugs.get(t)}.html`),
+      traditionPage(t, byTrad.get(t), slugs, byTrad));
+  }
   fs.writeFileSync(path.join(SITE, 'sitemap.xml'), sitemap());
   fs.writeFileSync(path.join(SITE, 'robots.txt'), robots());
   fs.writeFileSync(path.join(SITE, 'llms.txt'), llmsIndex());
@@ -522,8 +724,8 @@ function main() {
   }
   const tf = traditionFiles();
   enrichShell();
-  console.log(`[static] wrote ${n} figure pages + index, sitemap (${n + 2} urls), robots.txt, llms.txt + llms-full.txt, registry/figures.json, ${tf} per-tradition files; shell enriched`);
+  console.log(`[static] wrote ${n} figure pages + index + ${trads.length} tradition hubs, sitemap (${n + trads.length + 2} urls), robots.txt, llms.txt + llms-full.txt, registry/figures.json, ${tf} per-tradition files; shell enriched`);
 }
 
 if (require.main === module) main();
-module.exports = { figurePage, indexPage, sitemap, llmsIndex, llmsFull, figuresJson, traditionFiles };
+module.exports = { figurePage, indexPage, traditionPage, groupByTradition, sitemap, llmsIndex, llmsFull, figuresJson, traditionFiles };
