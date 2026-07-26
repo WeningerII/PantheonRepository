@@ -57,12 +57,63 @@ test('the master index lists figures grouped and linked', () => {
   assert.match(idx, new RegExp(`${meta.figures.toLocaleString()}`.replace(/,/g, ',')), 'advertises the live figure count');
 });
 
-test('sitemap.xml lists the base, index, and every figure', () => {
+test('sitemap.xml lists the base, index, every tradition hub, and every figure', () => {
   const sm = read(path.join(SITE, 'sitemap.xml'));
   const locs = (sm.match(/<loc>/g) || []).length;
-  assert.strictEqual(locs, meta.figures + 2, 'base + registry index + one per figure');
+  const hubs = fs.readdirSync(path.join(REG, 'tradition')).filter((f) => f.endsWith('.html'));
+  assert.strictEqual(locs, meta.figures + hubs.length + 2,
+    'base + registry index + one per tradition hub + one per figure');
   assert.match(sm, /registry\/greek_hesiod_zeus\.html<\/loc>/, 'a figure URL is present');
+  assert.match(sm, /registry\/tradition\/norse\.html<\/loc>/, 'a tradition hub URL is present');
+  // Hubs precede the figures they parent, so a crawler reading in order meets
+  // the parent first.
+  assert.ok(sm.indexOf('registry/tradition/') < sm.indexOf('registry/greek_hesiod_zeus'),
+    'tradition hubs are listed before figure pages');
   assert.match(sm, /^<\?xml/, 'valid XML prolog');
+  // Every URL resolves to a file that was actually written.
+  const missing = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)]
+    .map((m) => m[1].replace(/^https?:\/\/[^/]+\//, ''))
+    .filter((rel) => rel && !fs.existsSync(path.join(SITE, rel)));
+  assert.deepStrictEqual(missing, [], 'every sitemap URL resolves to a written file');
+});
+
+// The master index links all 5,721 figures from one page, so every figure URL
+// shared a single parent. These hubs sit in between and give the crawler — and
+// the reader — a level narrower than "the whole corpus".
+test('per-tradition hub pages exist, are reciprocated, and carry derived content', () => {
+  const hubDir = path.join(REG, 'tradition');
+  const hubs = fs.readdirSync(hubDir).filter((f) => f.endsWith('.html'));
+  const idx = read(path.join(REG, 'index.html'));
+  const tradCount = (idx.match(/<section class="trad">/g) || []).length;
+  assert.strictEqual(hubs.length, tradCount, 'one hub per tradition section on the index');
+
+  const norse = read(path.join(hubDir, 'norse.html'));
+  assert.match(norse, /<html lang="en">/);
+  assert.match(norse, /<main>/, 'hub has a main landmark');
+  assert.match(norse, /<h1>Norse<\/h1>/);
+  assert.match(norse, /rel="canonical" href="[^"]*registry\/tradition\/norse\.html"/);
+  assert.match(norse, /"@type":"CollectionPage"/, 'hub declares itself a collection');
+  // Derived summary, not a bare link list — 560 near-identical list pages is
+  // the shape search engines treat as doorway content.
+  assert.match(norse, /The Pantheon Registry records [\d,]+ figures for Norse/);
+  assert.match(norse, /cited source/, 'summary states citation coverage');
+  assert.ok(!/deitys|numens/.test(norse), 'tier plurals are real words');
+  assert.match(norse, /<h2>Deities <span class="meta">\d+<\/span><\/h2>/, 'figures grouped by tier');
+
+  // Reciprocity: index heading → hub → figure → back up to the hub.
+  assert.match(idx, /href="tradition\/norse\.html"/, 'index heading links down to the hub');
+  assert.match(norse, /href="\.\.\/norse_odin\.html"/, 'hub links down to its figures');
+  const odin = read(path.join(REG, 'norse_odin.html'));
+  assert.match(odin, /<nav class="crumb">[\s\S]*?href="tradition\/norse\.html"/,
+    'figure breadcrumbs back up to its tradition');
+
+  // Lateral edges between hubs — a connected graph, not a flat fan-out.
+  assert.match(norse, /<h2>Connected traditions<\/h2>/);
+  assert.match(norse, /href="anglo-saxon\.html"/, 'hub links to a tradition it shares figures with');
+
+  // Diacritics fold rather than drop: "Sámi" must not slug to "s-mi".
+  assert.ok(fs.existsSync(path.join(hubDir, 'sami.html')), 'Sámi folds to sami');
+  assert.ok(!fs.existsSync(path.join(hubDir, 's-mi.html')), 'no mark-stripped slug');
 });
 
 test('robots.txt allows all and points at the sitemap', () => {
