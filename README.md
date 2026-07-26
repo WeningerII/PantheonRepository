@@ -1,12 +1,57 @@
 # Pantheon Registry
 
-A multi-tradition registry of mythological and historical figures — **3,472 entries
-across 360 traditions**, presented as a single-page app you can browse, search,
-graph, and map.
+**[www.listofgods.com](https://www.listofgods.com/)**
 
-The whole thing runs from static files with React loaded over a CDN. There is no
-bundler and no build step required for development; a Python script produces an
-optional self-contained single-file artifact for distribution.
+One index of the world's mythologies: **5,721 figures across 560 traditions**,
+every one of them source-cited, cross-linked by genealogy, and browsable as a
+table, a relation graph, or a map of where each tradition was attested.
+
+Most mythology references are one tradition deep. This one is built to compare
+across them — Odin and Woden are the same record's two attestations; the
+graph will show you which traditions actually share figures, and the atlas will
+show you where they overlapped on the ground.
+
+## What's in it
+
+| | |
+|---|---|
+| Figures | 5,721 |
+| Traditions | 560 |
+| Domains | 5,212 |
+| Powers | 7,877 |
+| Items | 3,148 |
+| Mapped territories | 241 |
+
+Each figure carries parentage and children, domains, powers, epithets in their
+original script, relations to other figures, cult practice where it is attested
+(sites, festivals, priesthoods, offerings), and the primary and secondary
+sources the entry rests on.
+
+## What makes it different
+
+- **Everything is cited.** Entries name the primary text or scholarly source
+  behind them, and `test/content.test.cjs` fails the build on an uncited claim,
+  an invented native term, or a coined name. The corpus is regenerated from
+  committed research transcripts in `data-sources/`, and CI proves it is
+  byte-exact reproducible from them — the data cannot drift from its sources by
+  hand-editing.
+- **Public-domain images only.** Portraits are Public Domain / PD-art / CC0 or
+  they are not shipped, gated on machine-readable rights flags from Wikimedia
+  Commons and four museum open-access APIs — never a human-written caption.
+  Files are self-hosted, never hotlinked. See
+  [`docs/image-licensing.md`](docs/image-licensing.md).
+- **First load doesn't scale with the corpus.** The site is a static, no-server
+  React SPA on GitHub Pages, and the corpus blob is off the critical path:
+  projection tiers mean adding figures doesn't slow the first paint. Design
+  record and measurements in
+  [`docs/load-time-architecture.md`](docs/load-time-architecture.md).
+- **Readable without JavaScript.** `/registry/` is a full static mirror — a
+  master index, a hub page per tradition, and one cited page per figure — so
+  crawlers, link unfurlers and LLMs reading the URL get the real content rather
+  than a boot shell. There is an `/llms.txt` front door and a per-tradition
+  Markdown dump beside it.
+- **Queryable by an agent.** An MCP connector (`mcp/`) exposes the corpus as
+  tools, so a model can ask real questions of it instead of scraping pages.
 
 ## Quick start
 
@@ -50,8 +95,9 @@ pipeline (`actions/deploy-pages`) on every push to `main` (or on demand via the
   missing or fail to load, the shell fails loudly in the boot overlay rather
   than rendering an empty registry.
 - **`/registry/`** — a crawlable, JavaScript-free static mirror of the corpus
-  (`scripts/build-static.cjs`): a master index plus one cited page per figure,
-  with **`/sitemap.xml`** and **`/robots.txt`**. The app is a client-rendered
+  (`scripts/build-static.cjs`): a master index, a hub page per tradition under
+  **`/registry/tradition/`**, and one cited page per figure, with
+  **`/sitemap.xml`** and **`/robots.txt`**. The app is a client-rendered
   SPA, so a fetch of `/` — by a search crawler, a link unfurler, or an LLM
   reading the URL — would otherwise see only the boot shell; the shell's
   `<noscript>` routes those clients to `/registry/`, where the full content is
@@ -82,7 +128,7 @@ npm test      # builds the gitignored test fixtures (python3 build.py --pages),
 ```
 
 - `test/seed.test.cjs` runs `app/data.js` in an isolated VM and checks the seeded
-  corpus (the full ~2,815-figure corpus, exactly 241 territories, the `window.__PR`
+  corpus (the full 5,721-figure corpus, exactly 241 territories, the `window.__PR`
   surface, no hard-schema violations, and ceilings on warn-level integrity drift).
 - `test/render.test.cjs` boots the whole app in jsdom and exercises the views,
   keyboard navigation (j/k/Enter/Escape, ⌘K and Ctrl+K), the detail panel, the

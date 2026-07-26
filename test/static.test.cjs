@@ -241,6 +241,37 @@ test('per-tradition llms/<tradition>.txt files: one per tradition + an index', (
   assert.match(norse, /registry\/norse_\w+\.html/, 'per-tradition file links figure pages');
 });
 
+// The README's headline numbers had drifted to 3,472 figures / 360 traditions
+// against a corpus of 5,721 / 560 — the first thing anyone arriving from a
+// search result or an aggregator reads, and wrong by 65%. Documentation that
+// restates a computed fact should fail the build when it stops being true.
+test('README and package.json corpus counts match the built corpus', () => {
+  const readme = read(path.join(ROOT, 'README.md'));
+  const pkg = read(path.join(ROOT, 'package.json'));
+  const traditions = fs.readdirSync(path.join(REG, 'tradition'))
+    .filter((f) => f.endsWith('.html')).length;
+  const fmt = (n) => n.toLocaleString('en-US');
+
+  // Lead sentence.
+  assert.match(readme, new RegExp(`\\*\\*${fmt(meta.figures)} figures across ${fmt(traditions)} traditions\\*\\*`),
+    `README lead should read "${fmt(meta.figures)} figures across ${fmt(traditions)} traditions"`);
+
+  // Summary table — each row restates a number the build knows.
+  const row = (label) => {
+    const m = readme.match(new RegExp(`\\|\\s*${label}\\s*\\|\\s*([\\d,]+)\\s*\\|`));
+    assert.ok(m, `README table is missing a "${label}" row`);
+    return Number(m[1].replace(/,/g, ''));
+  };
+  assert.strictEqual(row('Figures'), meta.figures);
+  assert.strictEqual(row('Traditions'), traditions);
+  assert.strictEqual(row('Domains'), meta.domains);
+  assert.strictEqual(row('Powers'), meta.powers);
+  assert.strictEqual(row('Items'), meta.items);
+
+  assert.match(pkg, new RegExp(`${fmt(meta.figures)} entries across ${fmt(traditions)} traditions`),
+    'package.json description restates the same counts');
+});
+
 // ── lead-portrait infobox (docs/image-licensing.md) ─────────────────────────
 // leadFigure builds the PD/CC0 <figure> that figurePage floats top-right. The
 // committed image manifest is empty, so unit-test the pure builder directly
