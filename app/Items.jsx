@@ -227,9 +227,9 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
         {revealedGroups.map(([kind, list]) => (
           // --group-h: measured ~58 px/row + ~26 px header (see styles.css).
           <div className="items-group" key={kind} style={{ '--group-h': (26 + list.length * 58) + 'px' }}>
-            <h3 className="items-group-head">
+            <h2 className="items-group-head">
               {itemBucketLabel(kind)} <span className="items-group-count">{list.length}</span>
-            </h3>
+            </h2>
             <div className="items-rows">
               {list.map((it) => (
                 <ItemRow key={it.id} it={it} selected={it.id === selectedItemId} onOpen={stableOpen} />
@@ -420,7 +420,10 @@ function ItemDetail({ item, byId, onClose, onPrev, onNext, canPrev, canNext, onO
   return (
     <>
       <div className={'detail-backdrop' + (closing ? ' closing' : '')} onClick={onClose} />
-      <aside
+      {/* A div, not an <aside>: role=dialog is not an allowed override of
+          <aside>'s implicit complementary role — the panel is a modal
+          slide-over, not a complementary region. */}
+      <div
         ref={panelRef}
         tabIndex={-1}
         className={'detail item-detail' + (closing ? ' closing' : '')}
@@ -465,7 +468,7 @@ function ItemDetail({ item, byId, onClose, onPrev, onNext, canPrev, canNext, onO
           <ItemHolders holders={it.holders} byId={byId} onOpenFigure={onOpenFigure} />
           <ItemSources sources={it.sources} />
         </div>
-      </aside>
+      </div>
     </>
   );
 }

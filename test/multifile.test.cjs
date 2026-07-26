@@ -59,7 +59,14 @@ const withTimeout = (p, ms, label) => Promise.race([
 function parseShell() {
   const dom = new JSDOM(shellHtml);
   const doc = dom.window.document;
-  const scripts = [...doc.querySelectorAll('script')].map((s) => ({
+  // Data blocks (application/ld+json and friends) are not executable code —
+  // a browser's parser never runs them, so neither does this harness. Only
+  // scripts with no type, or an explicitly JavaScript type, get executed.
+  const isExecutable = (s) => {
+    const t = (s.getAttribute('type') || '').trim().toLowerCase();
+    return t === '' || t === 'module' || /javascript|ecmascript/.test(t);
+  };
+  const scripts = [...doc.querySelectorAll('script')].filter(isExecutable).map((s) => ({
     src: s.getAttribute('src'),
     body: s.textContent,
   }));

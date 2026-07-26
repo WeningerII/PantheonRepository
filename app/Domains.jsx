@@ -172,9 +172,9 @@ function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisib
         {revealedGroups.map(([letter, list]) => (
           // --group-h: measured ~46 px/row + ~26 px header (see styles.css).
           <div className="items-group domains-group" key={letter} style={{ '--group-h': (26 + list.length * 46) + 'px' }}>
-            <h3 className="items-group-head">
+            <h2 className="items-group-head">
               {letter} <span className="items-group-count">{list.length}</span>
-            </h3>
+            </h2>
             <div className="items-rows">
               {list.map((d) => (
                 <DomainRow key={d.id} d={d} selected={d.id === selectedDomainId} onOpen={stableOpen} />
@@ -292,7 +292,10 @@ function DomainDetail({ domain, byId, onClose, onPrev, onNext, canPrev, canNext,
   return (
     <>
       <div className={'detail-backdrop' + (closing ? ' closing' : '')} onClick={onClose} />
-      <aside
+      {/* A div, not an <aside>: role=dialog is not an allowed override of
+          <aside>'s implicit complementary role — the panel is a modal
+          slide-over, not a complementary region. */}
+      <div
         ref={panelRef}
         tabIndex={-1}
         className={'detail item-detail domain-detail' + (closing ? ' closing' : '')}
@@ -327,7 +330,7 @@ function DomainDetail({ domain, byId, onClose, onPrev, onNext, canPrev, canNext,
           <DomainGovernors holders={d.holders} byId={byId} onOpenFigure={onOpenFigure} />
           <DomainSources sources={d.sources} />
         </div>
-      </aside>
+      </div>
     </>
   );
 }

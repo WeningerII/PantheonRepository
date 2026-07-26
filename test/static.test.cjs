@@ -83,6 +83,43 @@ test('the shell is enriched with SEO head + a no-JS crawl path', () => {
   assert.match(outsideNoscript, /aria-label="Static registry"[\s\S]*?registry\/index\.html/, 'crawl link survives noscript stripping');
   // Injection is idempotent: exactly one marker pair (head + body), never doubled.
   assert.strictEqual((shell.match(/<!-- pr-static -->/g) || []).length, 2, 'head + body markers, not doubled');
+  // Site-level structured data: the per-figure pages describe a Person each,
+  // but the shell — the URL that actually gets shared and indexed — must say
+  // what the site itself is.
+  const ld = shell.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+  assert.ok(ld, 'shell carries JSON-LD');
+  const site = JSON.parse(ld[1]);
+  assert.strictEqual(site['@type'], 'WebSite');
+  assert.strictEqual(site.name, 'Pantheon Registry');
+  assert.match(site.url, /^https?:\/\//, 'absolute site URL');
+  assert.strictEqual(site.hasPart.url.endsWith('registry/index.html'), true,
+    'points at the crawlable full index');
+});
+
+// The static pages are what search results and LLM links resolve to, so a
+// human lands on them regularly — they get the same landmark structure and
+// alternative text the app does.
+test('static pages are navigable by landmark and screen reader', () => {
+  for (const f of ['greek_hesiod_zeus.html', 'index.html']) {
+    const html = read(path.join(REG, f));
+    assert.match(html, /<html lang="en">/, `${f}: html lang`);
+    assert.match(html, /<main>/, `${f}: a main landmark`);
+    assert.match(html, /<\/main>/, `${f}: main is closed`);
+    // The breadcrumb and the footer stay OUTSIDE main; everything else is in it.
+    assert.ok(html.indexOf('<nav class="crumb">') < html.indexOf('<main>'),
+      `${f}: the breadcrumb precedes main`);
+    assert.ok(html.indexOf('</main>') < html.indexOf('<footer>'),
+      `${f}: the footer follows main`);
+  }
+  // Colour is not the only cue that a word is a link (WCAG 1.4.1): brick on
+  // ink is 2.41:1, under the 3:1 a colour-only distinction would need.
+  const zeus = read(path.join(REG, 'greek_hesiod_zeus.html'));
+  assert.match(zeus, /a\{[^}]*text-decoration:underline/,
+    'in-prose links are underlined, not colour-only');
+  // Section anchors on the master index must be unique.
+  const idx = read(path.join(REG, 'index.html'));
+  const ids = [...idx.matchAll(/<h2 id="([^"]+)"/g)].map((m) => m[1]);
+  assert.strictEqual(new Set(ids).size, ids.length, 'tradition anchors are unique');
 });
 
 test('llms.txt front door + llms-full.txt one-file corpus are generated for LLM readers', () => {
@@ -184,7 +221,10 @@ test('leadFigure emits a self-hosted, credited PD/CC0 infobox', () => {
   assert.match(html, /height="1000"/);
   assert.match(html, /loading="lazy"/);
   assert.match(html, /decoding="async"/);
-  assert.match(html, /alt="Zeus"/, 'alt is the figure name');
+  // Not the bare name: it would duplicate the <h1> beside it (Lighthouse's
+  // redundant-alt audit) and say nothing about the picture.
+  assert.match(html, /alt="Depiction of Zeus by Rembrandt"/, 'alt describes the image and credits the artist');
+  assert.ok(!/alt="Zeus"/.test(html), 'alt must not be the bare figure name');
   // Courtesy credit: author + license, both linking back to Commons.
   assert.match(html, /Rembrandt/, 'author credited');
   assert.match(html, /Public domain/, 'license shown');

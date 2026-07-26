@@ -362,16 +362,21 @@ describe('Pantheon Registry — capability scenarios', () => {
   S('S29', 'Browse — sort', 'sorting by tradition reorders the table', async (app) => {
     await toBrowse(app);
     const firstNames = (app) => [...app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header) .name-text')].slice(0, 4).map((e) => e.textContent);
-    await app.act(async () => { app.document.querySelector('.th-name')?.click(); });
+    // The sort control is a real <button> inside the <th> (keyboard-reachable);
+    // clicking the cell itself no longer sorts.
+    const sortBtn = (cls) => app.document.querySelector(cls + ' .th-sort');
+    await app.act(async () => { sortBtn('.th-name')?.click(); });
     await app.flush();
     const alpha = firstNames(app);
-    const th = app.document.querySelector('.th-tradition');
+    const th = sortBtn('.th-tradition');
     assert.ok(th, 'tradition sort header not found');
     await app.act(async () => { th.click(); });
     await app.flush();
     assert.ok(app.document.querySelector('.th-tradition.th-on'), 'tradition sort did not engage');
+    assert.strictEqual(app.document.querySelector('.th-tradition').getAttribute('aria-sort'), 'ascending',
+      'the active column must announce its sort state');
     assert.notDeepStrictEqual(firstNames(app), alpha, 'table did not reorder on tradition sort');
-    await app.act(async () => { app.document.querySelector('.th-name')?.click(); });
+    await app.act(async () => { sortBtn('.th-name')?.click(); });
     await app.flush();
     return `reordered from alpha "${alpha[0]}"`;
   });

@@ -85,7 +85,7 @@ const figLink = (id) => (PEOPLE[id]
 // for anyone whose OS is in dark mode, while the app beside them stayed cream.
 const STYLE = `:root{color-scheme:light;
   --bg:#FAFAF7;--surface:#FFFFFF;--ink:#0B0B0B;--ink-2:#2A2A2A;--ink-3:#555;
-  --mute:#777472;--faint:#A8A6A2;--rule:rgba(0,0,0,.10);--rule-2:rgba(0,0,0,.05);
+  --mute:#65625F;--faint:#6F6D6A;--rule:rgba(0,0,0,.10);--rule-2:rgba(0,0,0,.05);
   --accent:#B5371F;--accent-bg:rgba(181,55,31,.06);
   --serif:'Newsreader','Source Serif Pro',Georgia,serif;
   --sans:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -94,8 +94,17 @@ const STYLE = `:root{color-scheme:light;
 body{max-width:46rem;margin:0 auto;padding:3rem 1.5rem 6rem;
   font:400 15px/1.65 var(--sans);color:var(--ink);background:var(--bg);
   -webkit-font-smoothing:antialiased}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline;text-underline-offset:2px}
+/* Links inside prose and list items must not be signalled by colour alone —
+   brick on ink is 2.41:1, below the 3:1 the rule asks of a colour-only cue. A
+   hairline underline carries the signal; hover darkens it to full strength.
+   Standalone chrome (breadcrumb, the app button) is not in a text block and
+   keeps its clean look. */
+a{color:var(--accent);text-decoration:underline;
+  text-underline-offset:2px;text-decoration-thickness:.06em;
+  text-decoration-color:rgba(181,55,31,.45)}
+a:hover{text-decoration-color:currentColor}
+.crumb a,.app-link{text-decoration:none}
+.crumb a:hover{text-decoration:underline}
 h1{font:500 32px/1.05 var(--serif);letter-spacing:-.018em;margin:.2rem 0 0;
   overflow-wrap:break-word}
 h2{font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;
@@ -189,7 +198,11 @@ function figurePage(id) {
   const jsonld = `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n`;
   const canonical = `<link rel="canonical" href="${BASE}registry/${esc(id)}.html">\n`;
 
+  // Everything but the breadcrumb and the footer sits in <main>: without a main
+  // landmark the whole page is landmark-less, which is both a Lighthouse
+  // best-practice failure and a real loss for anyone navigating by region.
   const body = `<nav class="crumb"><a href="index.html">← Registry</a></nav>
+<main>
 ${lead}<h1>${esc(primary(p))}</h1>
 <div class="sub">${esc(tline)}${div && div.tier ? ` · ${esc(humanize(div.tier))}` : ''}</div>
 ${p.notes ? `<p>${esc(p.notes)}</p>` : ''}
@@ -203,7 +216,8 @@ ${sec('Sources', list(sources.map((ref) => {
     const u = citeHref(ref);
     return u ? `<a href="${esc(u)}" rel="nofollow noopener" target="_blank">${esc(ref)}</a>` : esc(ref);
   })))}
-<a class="app-link" href="${BASE}#/browse/${esc(id)}">Open in the interactive app →</a>`;
+<a class="app-link" href="${BASE}#/browse/${esc(id)}">Open in the interactive app →</a>
+</main>`;
   return page(`${primary(p)} — Pantheon Registry`, desc, body, canonical + jsonld,
     `${BASE}registry/${id}.html`, 'article');
 }
@@ -217,6 +231,17 @@ function indexPage() {
     byTrad.get(t).push(id);
   }
   const trads = [...byTrad.keys()].sort((a, b) => a.localeCompare(b));
+  // Section anchors must stay unique as the corpus grows: two tradition names
+  // that differ only by case or spacing slug to the same string, and duplicate
+  // ids silently break in-page links and confuse assistive technology.
+  const seenAnchors = new Set();
+  const anchorFor = (t) => {
+    const base = t.replace(/\s+/g, '-').toLowerCase();
+    let a = base;
+    for (let n = 2; seenAnchors.has(a); n++) a = `${base}-${n}`;
+    seenAnchors.add(a);
+    return a;
+  };
   const sections = trads.map((t) => {
     const ids = byTrad.get(t).sort((a, b) => nameOf(a).localeCompare(nameOf(b)));
     const items = ids.map((id) => {
@@ -224,17 +249,19 @@ function indexPage() {
       const meta = [p.type, p.temporal && p.temporal.era].filter(Boolean).map(humanize).join(' · ');
       return `<li><a href="${esc(id)}.html">${esc(primary(p))}</a>${meta ? ` <span class="meta">${esc(meta)}</span>` : ''}</li>`;
     }).join('');
-    return `<section class="trad"><h2 id="${esc(t.replace(/\s+/g, '-').toLowerCase())}">${esc(t)} <span class="meta">${ids.length}</span></h2><ul>${items}</ul></section>`;
+    return `<section class="trad"><h2 id="${esc(anchorFor(t))}">${esc(t)} <span class="meta">${ids.length}</span></h2><ul>${items}</ul></section>`;
   }).join('\n');
 
   const desc = `Browse all ${IDS.length.toLocaleString()} cited figures across ${trads.length} traditions in the Pantheon Registry.`;
   const body = `<nav class="crumb"><a href="${BASE}">← Interactive app</a></nav>
+<main>
 <h1>Pantheon Registry</h1>
 <div class="sub">A source-cited index of ${IDS.length.toLocaleString()} mythological and historical figures across ${trads.length} traditions.</div>
 <p>This is a static, fully-readable mirror of the corpus for search engines and
 tools that don't run JavaScript. Every figure links to its cited detail page.
 For the interactive graph, map, and search, use the <a href="${BASE}">app</a>.</p>
-${sections}`;
+${sections}
+</main>`;
   return page('Pantheon Registry — full figure index', desc, body,
     `<link rel="canonical" href="${BASE}registry/index.html">\n`);
 }
@@ -413,10 +440,31 @@ function enrichShell() {
   if (html.includes('<!-- pr-static -->')) return; // idempotent (fresh build overwrites)
 
   const trads = new Set(IDS.map((id) => PEOPLE[id].tradition)).size;
+  // Site-level structured data. The per-figure pages already carry Person
+  // JSON-LD; the shell — the URL that actually gets shared and indexed — had
+  // none, so a search engine had no machine-readable statement of what the
+  // site is or how large the collection is.
+  const siteLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Pantheon Registry',
+    alternateName: 'List of Gods',
+    url: BASE,
+    description: `A source-cited index of ${IDS.length.toLocaleString()} mythological and historical `
+      + `figures across ${trads} traditions — genealogies, domains, epithets, iconography, and cult.`,
+    inLanguage: 'en',
+    license: 'https://opensource.org/licenses/MIT',
+    hasPart: {
+      '@type': 'CollectionPage',
+      name: 'Pantheon Registry — full figure index',
+      url: `${BASE}registry/index.html`,
+    },
+  };
   const head = `<!-- pr-static -->
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="${BASE}">
 <link rel="sitemap" type="application/xml" href="${BASE}sitemap.xml">
+<script type="application/ld+json">${JSON.stringify(siteLd).replace(/</g, '\\u003c')}</script>
 `;
   const noscript = `<!-- pr-static -->
 <noscript>
@@ -437,8 +485,11 @@ function enrichShell() {
   // the link to the 4,000+ readable pages instead of just the boot shell.
   // No own marker — this is part of the single body injection (the noscript
   // below carries the marker), so the idempotency count stays head + body = 2.
+  // tabindex="-1": the link is clipped out of view, so leaving it in the tab
+  // order made the very first Tab press send focus somewhere invisible, ahead
+  // of the skip link. Crawlers follow the href regardless of tabindex.
   const crawlNav = `<nav aria-label="Static registry" style="position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0">
-  <a href="${BASE}registry/index.html">Browse all ${IDS.length.toLocaleString()} figures across ${trads} traditions as static, no-JavaScript pages</a>
+  <a href="${BASE}registry/index.html" tabindex="-1">Browse all ${IDS.length.toLocaleString()} figures across ${trads} traditions as static, no-JavaScript pages</a>
 </nav>
 `;
   html = html.replace('</head>', head + '</head>');

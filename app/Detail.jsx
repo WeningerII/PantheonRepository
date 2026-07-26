@@ -658,12 +658,17 @@ function LeadImage({ entry }) {
   if (!img || !img.file) return null;
   const license = (img.license && img.license.name) || 'Public domain';
   const provenance = IMG_SOURCE_LABELS[img.src] || 'Wikimedia Commons';
+  // Not the bare figure name: that duplicates the heading directly beside it,
+  // so a screen reader reads the name twice and learns nothing about the
+  // picture. Mirrors altTextFor() in scripts/lib/lead-figure.cjs.
+  const alt = 'Depiction of ' + window.displayName(entry)
+    + (img.author ? ' by ' + img.author : '');
   return (
     <figure className="detail-lead">
       <img
         className="detail-lead-img"
         src={IMG_BASE + img.file}
-        alt={window.displayName(entry)}
+        alt={alt}
         width={img.w || undefined}
         height={img.h || undefined}
         loading="lazy"
@@ -780,7 +785,10 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
         className={'detail-backdrop' + (closing ? ' closing' : '')}
         onClick={onClose}
       />
-      <aside
+      {/* A div, not an <aside>: role=dialog is not an allowed override of
+          <aside>'s implicit complementary role — the panel is a modal
+          slide-over, not a complementary region. */}
+      <div
         ref={panelRef}
         tabIndex={-1}
         className={'detail' + (closing ? ' closing' : '')}
@@ -940,7 +948,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
           <Sources entry={entry} />
           </>}
         </div>
-      </aside>
+      </div>
     </>
   );
 }

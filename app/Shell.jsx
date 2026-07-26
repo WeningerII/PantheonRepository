@@ -29,12 +29,26 @@ function useIsMobile() {
   return mobile;
 }
 
-function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK, onOpenFilter, hasFilters }) {
+function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK, onOpenFilter, hasFilters, onSkip }) {
   return (
-    <div className="topbar">
+    <header className="topbar">
+      {/* First focusable element on the page, and inside the banner landmark
+          so it is not itself stray content outside every region.
+          href="#main-content" names a real target so it reads as a skip link,
+          but the click is handled here — letting the browser navigate to the
+          fragment would overwrite the hash route the app is addressed by. */}
+      <a
+        className="skip-link"
+        href="#main-content"
+        onClick={(e) => { e.preventDefault(); onSkip(); }}
+      >Skip to content</a>
       <div className="topbar-brand">
         <div className="mark" aria-hidden="true" />
-        <div className="name">Pantheon Registry</div>
+        {/* The site's only h1. It carries the same type as the div it replaced
+            (.topbar-brand .name), so this is a semantics-only change: a screen
+            reader and a crawler both get a document title, the layout does not
+            move. */}
+        <h1 className="name">Pantheon Registry</h1>
         <div className="meta">{totalCount.toLocaleString()} figures</div>
       </div>
       <div className="topbar-search">
@@ -74,16 +88,23 @@ function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK,
         <button className="btn btn-ghost" onClick={onCmdK} title="Find a figure by name (⌘K)">
           Find<span className="kbd-hint">⌘K</span>
         </button>
-        <div className="btn-group" role="tablist" aria-label="View">
-          <button className={'btn' + (view === 'browse' ? ' btn-on' : '')} onClick={() => setView('browse')} role="tab" aria-selected={view === 'browse'}>Browse</button>
-          <button className={'btn' + (view === 'graph'  ? ' btn-on' : '')} onClick={() => setView('graph')}  role="tab" aria-selected={view === 'graph'}>Graph</button>
-          <button className={'btn' + (view === 'atlas'  ? ' btn-on' : '')} onClick={() => setView('atlas')}  role="tab" aria-selected={view === 'atlas'}>Atlas</button>
-          <button className={'btn' + (view === 'items'  ? ' btn-on' : '')} onClick={() => setView('items')}  role="tab" aria-selected={view === 'items'}>Items</button>
-          <button className={'btn' + (view === 'powers' ? ' btn-on' : '')} onClick={() => setView('powers')} role="tab" aria-selected={view === 'powers'}>Powers</button>
-          <button className={'btn' + (view === 'domains'? ' btn-on' : '')} onClick={() => setView('domains')} role="tab" aria-selected={view === 'domains'}>Domains</button>
-        </div>
+        {/* These switch routes (#/browse, #/graph, …), so they are navigation,
+            not a tablist: the ARIA tab pattern owes a tabpanel, aria-controls
+            and roving-tabindex arrow keys that this group never had. nav +
+            aria-current="page" describes what actually happens. */}
+        <nav className="btn-group" aria-label="Views">
+          {[['browse', 'Browse'], ['graph', 'Graph'], ['atlas', 'Atlas'],
+            ['items', 'Items'], ['powers', 'Powers'], ['domains', 'Domains']].map(([v, label]) => (
+            <button
+              key={v}
+              className={'btn' + (view === v ? ' btn-on' : '')}
+              onClick={() => setView(v)}
+              aria-current={view === v ? 'page' : undefined}
+            >{label}</button>
+          ))}
+        </nav>
       </div>
-    </div>
+    </header>
   );
 }
 
@@ -140,37 +161,40 @@ function Rail({ filters, view, hasDetail }) {
   return (
     <>
       <div className="rail-section">
-        <h3>Type
+        <h2>Type
           {totalActiveTypes > 0 && <button className="clear" onClick={() => filters.setTypes(new Set())}>clear ({totalActiveTypes})</button>}
-        </h3>
+        </h2>
         {window.TYPE_ORDER.map(typeRow)}
       </div>
 
       <div className="rail-section">
-        <h3>Origin</h3>
-        <div className="rail-segment" role="tablist">
-          <button className={origin === 'both'     ? 'active' : ''} onClick={() => setOrigin('both')}     role="tab" aria-selected={origin === 'both'}>Both</button>
-          <button className={origin === 'canon'    ? 'active' : ''} onClick={() => setOrigin('canon')}    role="tab" aria-selected={origin === 'canon'}>Canon</button>
-          <button className={origin === 'original' ? 'active' : ''} onClick={() => setOrigin('original')} role="tab" aria-selected={origin === 'original'}>Original</button>
+        <h2>Origin</h2>
+        {/* One-of-three filter — a radio group, matching Browse's sort control.
+            It was a nameless tablist whose tabs controlled no panel. */}
+        <div className="rail-segment" role="radiogroup" aria-label="Origin">
+          <button className={origin === 'both'     ? 'active' : ''} onClick={() => setOrigin('both')}     role="radio" aria-checked={origin === 'both'}>Both</button>
+          <button className={origin === 'canon'    ? 'active' : ''} onClick={() => setOrigin('canon')}    role="radio" aria-checked={origin === 'canon'}>Canon</button>
+          <button className={origin === 'original' ? 'active' : ''} onClick={() => setOrigin('original')} role="radio" aria-checked={origin === 'original'}>Original</button>
         </div>
       </div>
 
       <div className="rail-section rail-section-tradition">
-        <h3>
+        <h2>
           Tradition
           {totalTradActive > 0 ? (
             <button className="clear" onClick={() => setTraditions(new Set())}>clear ({totalTradActive})</button>
           ) : (
             <span className="rail-section-count">{traditionList.length}</span>
           )}
-        </h3>
+        </h2>
         <div className="rail-search">
           <input
             placeholder="Filter traditions…"
+            aria-label="Filter traditions"
             value={tradQuery}
             onChange={e => setTradQuery(e.target.value)}
           />
-          {tradQuery && <button className="rail-search-clear" onClick={() => setTradQuery('')} title="Clear">×</button>}
+          {tradQuery && <button className="rail-search-clear" onClick={() => setTradQuery('')} title="Clear" aria-label="Clear the tradition filter">×</button>}
         </div>
         <div className="rail-traditions">
           {tradFiltered.map(t => {
@@ -307,6 +331,9 @@ function Shell() {
   const [powerOrderVer, setPowerOrderVer] = __sState(0);
   const [domainOrderVer, setDomainOrderVer] = __sState(0);
   const searchRef = __sRef(null);
+  // Target of the skip link — <main> is tabIndex={-1} so it can take focus
+  // programmatically without entering the tab order itself.
+  const mainRef = __sRef(null);
 
   // ── Mobile chrome ────────────────────────────────────────────────────────
   // Below 760px the rail becomes a slide-up filter sheet and the view tabs
@@ -852,31 +879,35 @@ function Shell() {
     // the storage dead-end below would be a lie. Skeleton rows instead —
     // inline-styled because they exist only for the sub-second window before
     // 'pr:index' lands and replaces this whole branch.
+    // Both pre-ready branches are the whole page for their moment, so each
+    // carries the main landmark — otherwise a boot slow enough to be measured
+    // is a page with no landmarks and no h1 at all.
     if (!dataReady) {
       return (
-        <div className="empty empty-loading" role="status" aria-live="polite">
+        <main className="empty empty-loading" id="main-content" aria-busy="true">
           <div className="empty-mark" aria-hidden="true" />
-          <h2>Loading the registry…</h2>
+          <h1>Loading the registry…</h1>
           <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center' }} aria-hidden="true">
             {[0, 1, 2, 3, 4, 5].map((i) => (
               <div key={i} style={{ width: 420 - (i % 3) * 60, maxWidth: '70vw', height: 12, borderRadius: 3, background: 'var(--rule, #e3ded4)', opacity: 0.7 }} />
             ))}
           </div>
-        </div>
+        </main>
       );
     }
     return (
-      <div className="empty empty-loading">
+      <main className="empty empty-loading" id="main-content">
         <div className="empty-mark" aria-hidden="true" />
-        <h2>Nothing in storage.</h2>
+        <h1>Nothing in storage.</h1>
         <p>The seed didn't write. Reload the page to try again; if the failure persists, check the boot log.</p>
-      </div>
+      </main>
     );
   }
 
   return (
     <div className="shell">
       <TopBar
+        onSkip={() => mainRef.current && mainRef.current.focus()}
         totalCount={people.length}
         view={view}
         setView={changeView}
@@ -888,7 +919,7 @@ function Shell() {
         hasFilters={hasFilters}
       />
       <div className="shell-body">
-        <div className="shell-rail">
+        <aside className="shell-rail" aria-label="Filter and sort">
           {/* Sheet chrome (mobile only): grip + title + reset/close above the
               filters, an "apply" button pinned below. Gated on isMobile so the
               desktop rail is untouched and the test tree never sees it. */}
@@ -906,8 +937,8 @@ function Shell() {
               <span>Show {filters.filtered.length.toLocaleString()} figures</span>
             </button>
           )}
-        </div>
-        <div className="shell-main">
+        </aside>
+        <main className="shell-main" id="main-content" ref={mainRef} tabIndex={-1}>
           {(view === 'browse' || leavingView === 'browse') && (
             <div className={'view-pane' + (view === 'browse' ? '' : ' pane-leaving')}>
               <window.Browse
@@ -989,7 +1020,7 @@ function Shell() {
               />
             </div>
           )}
-        </div>
+        </main>
       </div>
 
       {/* Both slide-overs render unconditionally: they own an exit-animation
@@ -1025,7 +1056,9 @@ function Shell() {
       {showDetailError && (
         <>
           <div className="detail-backdrop" onClick={() => selection.setSelectedId(null)} />
-          <aside className="detail" role="alertdialog" aria-label="Figure could not be loaded">
+          {/* A div, not an <aside>: role=dialog is not an allowed override of
+              <aside>'s implicit complementary role. */}
+          <div className="detail" role="alertdialog" aria-modal="true" aria-label="Figure could not be loaded">
             <div className="detail-bar">
               <div className="spacer" />
               <button className="close" onClick={() => selection.setSelectedId(null)} aria-label="Close">✕</button>
@@ -1043,7 +1076,7 @@ function Shell() {
                 </div>
               </div>
             </div>
-          </aside>
+          </div>
         </>
       )}
 
@@ -1145,20 +1178,20 @@ function Shell() {
 
       {isMobile && (
         <nav className="mobile-nav" aria-label="Primary views">
-          <button className={view === 'browse' ? 'on' : ''} onClick={() => changeView('browse')} aria-current={view === 'browse'}>
+          <button className={view === 'browse' ? 'on' : ''} onClick={() => changeView('browse')} aria-current={view === 'browse' ? 'page' : undefined}>
             <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
               <line x1="2.5" y1="4" x2="13.5" y2="4" /><line x1="2.5" y1="8" x2="13.5" y2="8" /><line x1="2.5" y1="12" x2="9.5" y2="12" />
             </svg>
             <span>Browse</span>
           </button>
-          <button className={view === 'graph' ? 'on' : ''} onClick={() => changeView('graph')} aria-current={view === 'graph'}>
+          <button className={view === 'graph' ? 'on' : ''} onClick={() => changeView('graph')} aria-current={view === 'graph' ? 'page' : undefined}>
             <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
               <circle cx="8" cy="3.5" r="1.8" /><circle cx="3.5" cy="12" r="1.8" /><circle cx="12.5" cy="11.5" r="1.8" />
               <line x1="7" y1="5.1" x2="4.4" y2="10.4" /><line x1="9" y1="5.1" x2="11.6" y2="9.9" /><line x1="5.3" y1="12" x2="10.7" y2="11.6" />
             </svg>
             <span>Graph</span>
           </button>
-          <button className={view === 'atlas' ? 'on' : ''} onClick={() => changeView('atlas')} aria-current={view === 'atlas'}>
+          <button className={view === 'atlas' ? 'on' : ''} onClick={() => changeView('atlas')} aria-current={view === 'atlas' ? 'page' : undefined}>
             <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
               <circle cx="8" cy="8" r="6" /><ellipse cx="8" cy="8" rx="2.6" ry="6" /><line x1="2" y1="8" x2="14" y2="8" />
             </svg>
@@ -1178,7 +1211,7 @@ function Shell() {
       )}
 
       {isMobile && (
-        <div className="mobile-more" role="dialog" aria-label="More views">
+        <div className="mobile-more" role="dialog" aria-modal="true" aria-label="More views">
           <div className="mobile-more-grip" aria-hidden="true" />
           {[
             { v: 'items',   label: 'Items',   sub: 'material culture & custody chains' },
@@ -1189,7 +1222,7 @@ function Shell() {
               key={m.v}
               className={'mobile-more-row' + (view === m.v ? ' on' : '')}
               onClick={() => changeView(m.v)}
-              aria-current={view === m.v}
+              aria-current={view === m.v ? 'page' : undefined}
             >
               <span className="mobile-more-text">
                 <span className="mobile-more-label">{m.label}</span>
