@@ -113,7 +113,9 @@ async function bootShell(opts = {}) {
     const u = String(url);
     fetched.push(u);
     if (!u.startsWith('data/')) return Promise.reject(new Error('no network in tests: ' + u));
-    const fp = path.join(DATA, u.slice('data/'.length));
+    // Serve past a cache-busting query string, as a real static host does —
+    // pr-boot's manifest refresh appends ?rev= to data/meta.json.
+    const fp = path.join(DATA, u.slice('data/'.length).split('?')[0]);
     if (!fs.existsSync(fp)) return Promise.reject(new Error('no such tier artifact: ' + u));
     const body = read(fp);
     const gate = u === `data/${meta.files.index}` ? gates.index : Promise.resolve();
@@ -312,21 +314,68 @@ test('detail hydration is invisible to the list: row HTML identical, no pr:tier 
   assert.deepStrictEqual(rowsAfter, sample, 'hydration changed rendered row HTML — layout snap regression');
 });
 
-test('a missing detail shard rejects loadDetail — the degrade seam the Shell routes to the static page', async () => {
-  const b = await shell();
-  // Pick a figure whose bucket has not been fetched yet and break its shard name.
+// Pick a figure whose detail bucket the boot has not already hydrated, so the
+// shard name under test is one loadDetail will actually go to the network for.
+const unhydratedVictim = (b) => {
   const DET = b.window.__PR_DETAILS_DATA;
   const bucketOfId = (id) => { let s = 0; for (let k = 0; k < id.length; k++) s = (s + id.charCodeAt(k)) % DET.buckets; return s; };
   const zeusBucket = bucketOfId('greek_hesiod_zeus');
-  const victim = Object.keys(JSON.parse(read(path.join(DATA, meta.files.edges))))
-    .find((id) => bucketOfId(id) !== zeusBucket && !(b.PR.seedPeople[id] && b.PR.seedPeople[id]._full));
-  assert.ok(victim, 'no un-hydrated victim figure found');
-  const vb = bucketOfId(victim);
-  const real = DET.shards[vb];
-  DET.shards[vb] = 'no-such-shard.json';
-  await assert.rejects(() => b.PR.loadDetail(victim), /no such tier artifact|HTTP/,
-    'a missing shard must reject so the caller can degrade to registry/<id>.html');
-  DET.shards[vb] = real;
+  const id = Object.keys(JSON.parse(read(path.join(DATA, meta.files.edges))))
+    .find((x) => bucketOfId(x) !== zeusBucket && !(b.PR.seedPeople[x] && b.PR.seedPeople[x]._full));
+  assert.ok(id, 'no un-hydrated victim figure found');
+  return { id, bucket: bucketOfId(id), DET };
+};
+
+// THE deploy-skew case, and the regression guard for the black-page bug: the
+// shell was cached across a deploy, so it pins the PREVIOUS build's shard hash
+// and that file no longer exists. Because build-tiers content-hashes each shard
+// separately, only the CHANGED buckets 404 — an arbitrary subset of figures
+// breaks while the rest of the app is fine. data/meta.json is unhashed and
+// always current, so pr-boot re-pins from it and the figure opens anyway. It
+// must never surface to the user, and it must never navigate out of the app.
+test('a stale pinned shard name self-heals from data/meta.json (deploy skew)', async () => {
+  const b = await shell();
+  const { id, bucket, DET } = unhydratedVictim(b);
+  const real = DET.shards[bucket];
+  DET.shards[bucket] = `${bucket}-deadbeefdead.json`; // last deploy's hash
+  await b.act(async () => { await b.PR.loadDetail(id); await new Promise((r) => setTimeout(r, 0)); });
+  assert.ok(b.PR.seedPeople[id] && b.PR.seedPeople[id]._full,
+    'a stale shard hash must recover via the manifest refresh, not fail the figure');
+  assert.ok(b.fetched.some((u) => u.startsWith('data/meta.json')), 'the manifest must be re-read');
+  assert.strictEqual(b.window.__PR_DETAILS_DATA.shards[bucket], real,
+    'the refresh must re-pin the current shard name for later opens');
+});
+
+test('a genuinely unreachable shard rejects loadDetail — the Shell renders its in-app error', async () => {
+  const b = await shell();
+  const { id, bucket, DET } = unhydratedVictim(b);
+  const real = DET.shards[bucket];
+  // Break the shard name AND take the manifest offline, so the refresh cannot
+  // repair it — this is offline/blocked, not deploy skew.
+  DET.shards[bucket] = 'no-such-shard.json';
+  const realFetch = b.window.fetch;
+  b.window.fetch = (url) => (String(url).startsWith('data/meta.json')
+    ? Promise.reject(new Error('no network in tests: ' + url))
+    : realFetch(url));
+  try {
+    await assert.rejects(() => b.PR.loadDetail(id), /no such tier artifact|HTTP/,
+      'an unrepairable shard must reject so the Shell can offer a retry');
+  } finally {
+    b.window.fetch = realFetch;
+    DET.shards[bucket] = real;
+  }
+});
+
+// The bug this whole seam exists to prevent: a failed detail fetch used to run
+// window.location.assign('registry/<id>.html'), throwing the reader out of the
+// app and onto the JS-free crawler mirror — a different stylesheet, a different
+// layout, dark where the app is cream. One dropped request must never cost the
+// user the UI.
+test('the Shell never navigates to the static mirror on a detail failure', () => {
+  const src = fs.readFileSync(path.join(__dirname, '..', 'app', 'Shell.jsx'), 'utf8');
+  const nav = /(location\s*\.\s*(assign|replace|href)|window\s*\.\s*open)[^\n]*registry\//;
+  assert.ok(!nav.test(src),
+    'Shell.jsx must not navigate to registry/<id>.html — degrade inside the app instead');
 });
 
 test('the boot fetches exactly one tier: the index', async () => {

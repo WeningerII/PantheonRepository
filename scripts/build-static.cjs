@@ -75,28 +75,53 @@ const figLink = (id) => (PEOPLE[id]
   ? `<a href="${esc(id)}.html">${esc(nameOf(id))}</a>`
   : esc(id));
 
-const STYLE = `:root{color-scheme:light dark}
+// These pages are the JS-free mirror, but they are NOT crawler-only: they are
+// what Google and every LLM link resolves to, so a human lands here regularly.
+// They therefore carry the app's own palette and type — paper background, ink
+// text, brick accent, serif display, mono section labels (app/styles.css :root)
+// — so arriving from a search result reads as the same site, not a different
+// one. Deliberately LIGHT-ONLY, matching the app: `color-scheme: light dark`
+// plus a prefers-color-scheme override used to repaint these pages near-black
+// for anyone whose OS is in dark mode, while the app beside them stayed cream.
+const STYLE = `:root{color-scheme:light;
+  --bg:#FAFAF7;--surface:#FFFFFF;--ink:#0B0B0B;--ink-2:#2A2A2A;--ink-3:#555;
+  --mute:#777472;--faint:#A8A6A2;--rule:rgba(0,0,0,.10);--rule-2:rgba(0,0,0,.05);
+  --accent:#B5371F;--accent-bg:rgba(181,55,31,.06);
+  --serif:'Newsreader','Source Serif Pro',Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace}
 *{box-sizing:border-box}
-body{max-width:52rem;margin:0 auto;padding:2rem 1.25rem 5rem;
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,serif;
-  color:#1a1a1a;background:#faf8f3}
-@media(prefers-color-scheme:dark){body{color:#e8e6e0;background:#141310}a{color:#8fb3ff}}
-a{color:#1f4e79;text-decoration:none}a:hover{text-decoration:underline}
-h1{font-size:1.9rem;margin:.2rem 0 .1rem;line-height:1.15}
-h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;opacity:.6;
-  margin:2rem 0 .5rem;font-weight:600}
-.sub{opacity:.7;margin:.1rem 0 1.2rem;font-style:italic}
-.crumb{font-size:.85rem;opacity:.6;margin-bottom:1.5rem}
-ul{padding-left:1.1rem;margin:.3rem 0}li{margin:.15rem 0}
-.meta{font-size:.85rem;opacity:.6}
-.trad h2{margin-top:2.4rem}
-.app-link{display:inline-block;margin-top:2rem;padding:.5rem .9rem;border:1px solid currentColor;
-  border-radius:4px;font-size:.9rem}
-.lead{float:right;width:min(42%,15rem);margin:.2rem 0 1rem 1.4rem;font-size:.78rem}
-.lead img{width:100%;height:auto;display:block;border-radius:6px;background:#8881}
-.lead figcaption{opacity:.6;margin-top:.4rem;line-height:1.4}
-@media(max-width:34rem){.lead{float:none;width:auto;max-width:18rem;margin:.2rem auto 1.4rem}}
-footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #8884;font-size:.85rem;opacity:.6}`;
+body{max-width:46rem;margin:0 auto;padding:3rem 1.5rem 6rem;
+  font:400 15px/1.65 var(--sans);color:var(--ink);background:var(--bg);
+  -webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:2px}
+h1{font:500 32px/1.05 var(--serif);letter-spacing:-.018em;margin:.2rem 0 0;
+  overflow-wrap:break-word}
+h2{font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-2);margin:2.2rem 0 .7rem;padding-top:1.1rem;
+  border-top:1px solid var(--rule-2)}
+p{color:var(--ink-2)}
+.sub{font:italic 400 15px/1.4 var(--serif);color:var(--ink-3);margin:.6rem 0 1.6rem}
+.crumb{font:400 12px/1 var(--mono);letter-spacing:.04em;color:var(--mute);
+  margin-bottom:2rem}
+.crumb a{color:var(--mute)}
+ul{padding-left:1.05rem;margin:.3rem 0}li{margin:.2rem 0;color:var(--ink-2)}
+.meta{font:400 11px/1 var(--mono);letter-spacing:.04em;color:var(--faint)}
+.trad h2{margin-top:2.6rem}
+.app-link{display:inline-block;margin-top:2.6rem;padding:.55rem 1.1rem;
+  border:1px solid var(--accent);border-radius:3px;background:var(--accent-bg);
+  font:400 12px/1.4 var(--sans);letter-spacing:.02em}
+.app-link:hover{color:#fff;background:var(--accent);text-decoration:none}
+.lead{float:right;width:min(42%,15rem);margin:.4rem 0 1rem 1.6rem;
+  font:400 11px/1.5 var(--mono);letter-spacing:.02em}
+.lead img{width:100%;height:auto;display:block;border-radius:2px;
+  border:1px solid var(--rule);background:var(--surface)}
+.lead figcaption{color:var(--faint);margin-top:.5rem}
+.lead figcaption a{color:var(--mute)}
+@media(max-width:34rem){.lead{float:none;width:auto;max-width:18rem;margin:.2rem auto 1.6rem}}
+footer{margin-top:4rem;padding-top:1.2rem;border-top:1px solid var(--rule);
+  font-size:12px;color:var(--mute)}`;
 
 const OG_IMAGE = `${BASE}og-image.png`;
 const ogTags = (title, desc, url, type = 'article') =>
