@@ -272,6 +272,30 @@ test('README and package.json corpus counts match the built corpus', () => {
     'package.json description restates the same counts');
 });
 
+// The mark is declared as a data: URI in three places — the two built
+// distributions and the dev entry point — from one source, assets/favicon.svg.
+// A duplicated icon that drifts is worse than no icon, so pin it.
+test('the favicon is the committed mark, identically in every entry point', () => {
+  const svg = read(path.join(ROOT, 'assets', 'favicon.svg'));
+  // Same normalisation build.py applies (_favicon_data_uri).
+  let s = svg.replace(/<!--[\s\S]*?-->/g, '').replace(/\s+/g, ' ').trim();
+  s = s.replace(/%/g, '%25').replace(/"/g, "'");
+  for (const [ch, enc] of [['<', '%3C'], ['>', '%3E'], ['#', '%23'], ['&', '%26']]) {
+    s = s.split(ch).join(enc);
+  }
+  const uri = 'data:image/svg+xml,' + s;
+
+  const shell = read(path.join(SITE, 'index.html'));
+  const artifact = read(path.join(ROOT, 'dist', 'pantheon-registry.html'));
+  const dev = read(path.join(ROOT, 'index.html'));
+  for (const [name, html] of [['Pages shell', shell], ['single-file artifact', artifact], ['index.html', dev]]) {
+    assert.ok(html.includes(`<link rel="icon" href="${uri}" />`),
+      `${name} does not carry the current assets/favicon.svg mark`);
+  }
+  // No leftover .ico request, which is what the 404 was in the first place.
+  assert.ok(!/href="[^"]*favicon\.ico"/.test(shell), 'nothing should request favicon.ico');
+});
+
 // ── lead-portrait infobox (docs/image-licensing.md) ─────────────────────────
 // leadFigure builds the PD/CC0 <figure> that figurePage floats top-right. The
 // committed image manifest is empty, so unit-test the pure builder directly

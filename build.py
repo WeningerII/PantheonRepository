@@ -128,6 +128,25 @@ def safe(src: str) -> str:
     return _SCRIPT_BREAK.sub('<\\\\/script', src)
 
 
+def _favicon_data_uri() -> str:
+    """assets/favicon.svg as a percent-encoded data: URI.
+
+    Read from the file rather than duplicated inline so the mark has one source
+    across both distributions and index.html. Only the characters that would
+    break an HTML double-quoted attribute or a URI are escaped — leaving the
+    rest literal keeps the tag readable and the payload small (base64 would be
+    ~33% larger). Comments and newlines are stripped; the result is
+    deterministic, which verify-regen.sh depends on.
+    """
+    svg = (ROOT / 'assets' / 'favicon.svg').read_text(encoding='utf-8')
+    svg = re.sub(r'<!--.*?-->', '', svg, flags=re.S)          # drop the doc comment
+    svg = re.sub(r'\s+', ' ', svg).strip()                    # collapse whitespace
+    out = svg.replace('%', '%25').replace('"', "'")           # attribute-safe quotes
+    for ch, enc in (('<', '%3C'), ('>', '%3E'), ('#', '%23'), ('&', '%26')):
+        out = out.replace(ch, enc)
+    return 'data:image/svg+xml,' + out
+
+
 def main() -> None:
     args = sys.argv[1:]
     pages = '--pages' in args
@@ -218,8 +237,8 @@ def main() -> None:
      Lighthouse counts under errors-in-console (best-practices). A path-based
      icon would also 404 in the single-file artifact, which is opened over
      file:// with no siblings; an inline SVG works in both and costs no request.
-     The mark matches the boot overlay: an ink ring around a centre dot. -->
-<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FAFAF7"/><circle cx="16" cy="16" r="10" fill="none" stroke="%230B0B0B" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="%230B0B0B"/></svg>' />
+     Source of truth is assets/favicon.svg — substituted in below. -->
+<link rel="icon" href="__FAVICON__" />
 __ANALYTICS__
 <!-- Early error trap. Surfaces boot-time errors into the visible boot overlay. -->
 <script>
@@ -487,6 +506,7 @@ __UI_SCRIPTS__
     # exactly as it was (byte-exact regen holds).
     analytics = _GA_SNIPPET.replace('__GA_ID__', GA_MEASUREMENT_ID) if pages else ''
     out = out.replace('__ANALYTICS__', analytics)
+    out = out.replace('__FAVICON__', _favicon_data_uri())
 
     # Verify no template tokens remain. /*#__PURE__*/ is Babel output, not a token.
     leftover = [x for x in re.findall(r'__[A-Z_]+__', out) if x != '__PURE__']
