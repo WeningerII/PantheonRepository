@@ -18,6 +18,7 @@ const { JSDOM } = require('jsdom');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'dist', 'data');
+const SITE = path.join(ROOT, 'dist', 'site');
 const SHELL = path.join(ROOT, 'dist', 'site', 'index.html');
 const NM = path.join(ROOT, 'node_modules');
 const read = (p) => fs.readFileSync(p, 'utf8');
@@ -142,7 +143,11 @@ async function bootShell(opts = {}) {
     if (!src) { runScript(body); continue; }
     const lib = LIB_MAP.find(([re]) => re.test(src));
     if (lib) { runScript(read(path.join(NM, lib[1]))); continue; }
-    // data/core-<hash>.js is the only non-CDN external script the shell loads.
+    // Two non-CDN external scripts: data/core-<hash>.js (constants, emitted by
+    // build-tiers.cjs) and app-<hash>.js beside the shell (the UI sources,
+    // emitted by build.py — external so the document stays off the first-paint
+    // critical path). Anything else appearing here is unreviewed.
+    if (/^app-[0-9a-f]+\.js$/.test(src)) { runScript(read(path.join(SITE, src))); continue; }
     assert.match(src, /^data\//, `unexpected external script in the shell: ${src}`);
     runScript(read(path.join(DATA, src.slice('data/'.length))));
   }

@@ -190,7 +190,88 @@ Four things a naive implementation gets wrong (all four were hit and handled):
    sticky variable-count group headers inside `table-layout: fixed`. That
    estimated-vs-real mismatch is what causes scroll jumps.
 
-### 3.2 The idle warm violates the flat-first-load invariant
+### 3.3 The page had no large contentful element, and the document was 149 KB gz — IMPLEMENTED 2026-07-27
+
+The finding that actually explains the field score. A PSI run reported
+**FCP 2,622 / SI 2,622 / LCP 8,011 / TBT 1,589 / CLS 0**, scoring mobile 46.
+Reproduced in the Lighthouse scoring model to the digit (all five metric
+sub-scores: 63 / 97 / 3 / 13 / 100), so the weighting below is arithmetic, not
+estimation. **LCP scored 3/100 at 25% weight.** That was the whole problem.
+
+**Why LCP was 8 s.** The LCP element was `div#placeholder` — the *placeholder
+text inside the search input*, 279×19 px, rendered by React. This page has no
+hero image and no large text block; it is uniformly small dense text, so the
+largest contentful element on it was a 5,301 px² placeholder. The boot splash's
+own title was ~5,200 px² and lost **by 2%**. LCP was therefore pinned to "React
+finished mounting", and nothing about the table mattered.
+
+**Why FCP was 2.6 s.** The shell inlined every UI source: 588 KB raw / **149 KB
+gz**, of which 122 KB gz was inline `<script>`. Lantern has no streaming model,
+so nothing paints until the whole document lands — the entire app sat on the
+first-paint critical path. Confirmed by elimination: moving react/react-dom out
+of `<head>` (the obvious suspect) moved FCP 2,328 → 2,286, i.e. not at all.
+
+Three changes, each measured:
+
+1. **The UI sources ship as one hashed external file** (`app-<hash>.js`, beside
+   the shell, `defer`red). Document 149 KB gz → **39.9 KB gz**. Concatenation is
+   semantics-preserving because the 13 blocks already shared one global lexical
+   environment (§6). `defer` is load-bearing: without it the bundle is simply
+   render-blocking again — measured at 1,370 ms, with FCP regressing to 2,262 ms.
+2. **The boot overlay carries a real lead paragraph** — the site's own
+   canonical description, the same sentence as `og:description`. It is static,
+   so it cannot drift; it is the largest text on the boot screen, so it owns
+   LCP; and it sits in the `position:fixed` overlay, so its removal on ready
+   cannot shift layout. A waiting visitor now reads what the site is instead of
+   watching a bare spinner.
+3. **`preconnect` to cdnjs.** Reasoned, not measured — see §1.
+
+Real Lighthouse 13.4.1, medians of 3 runs:
+
+| | mobile before | mobile after | desktop before | desktop after |
+|---|---:|---:|---:|---:|
+| FCP | 2,199 | **1,526** | 523 | **395** |
+| LCP | 4,787 | **1,676** | 932 | **608** |
+| TBT | 533 | 525 | 28 | 17 |
+| CLS | 0.0005 | 0.0005 | 0.0001 | 0.0001 |
+| **Performance** | **67** | **86** | **99** | **100** |
+
+Metric sub-scores now: FCP 96, SI 100, LCP 99, CLS 100, **TBT 56**. TBT is the
+only remaining lever on mobile — everything else is effectively maxed. Deferring
+react/react-dom as well (they remain render-blocking at 928 ms combined, and the
+Pages shell *could* now defer them since its UI bundle is deferred) models at
+**+1 point** and was not done.
+
+**The honest limit of change 2.** LCP now times the boot overlay's paragraph
+rather than the figure table. That is a genuine improvement — real content at
+1.5 s instead of 5 s — but it does mean the metric no longer tracks when the
+*table* appears. Making LCP measure the table would need build-time prerendering
+of the first screenful plus hydration, which is a much larger change and carries
+a real CLS risk that this one does not.
+
+### 3.2 The idle warm violates the flat-first-load invariant — IMPLEMENTED 2026-07-27
+
+**The "one point" verdict below was wrong by the time it mattered.** It was
+measured while Browse still mounted the whole corpus and TBT was 6,760 ms, where
+the warm was lost in the noise. Once §3.1 landed, the warm was most of what
+remained. Re-measured, medians of 3:
+
+| | mobile TBT | mobile perf | desktop perf |
+|---|---:|---:|---:|
+| with warm | 1,440 ms | 56 | 94 |
+| without | **533 ms** | **67** | **99** |
+
+Shipped without the §4.1 trade below: rather than accept a 7.7 s wait on first
+Powers open, the view buttons prefetch their registry tier on
+hover/focus/pointerdown (`Shell.jsx`), and Shell's existing effect still fetches
+on demand for deep links and keyboard. Verified in a browser: zero registry
+fetches after 9 s idle on Browse, prefetch fires on hover, no refetch on a
+second hover, click still lands. The projection tiers (atlas 163 KB gz, edges)
+stay warmed — they are a twentieth of the registries and have no equivalent seam.
+
+Original analysis follows.
+
+
 
 `app/pr-boot.js:528-530` unconditionally warms items + powers + domains on first
 idle: **3,059,169 B gzipped (15.5 MB raw), 77% of first-load transfer**, at High
@@ -358,15 +439,22 @@ Recorded so nobody re-derives them. Each was measured, not reasoned about.
 
 ## 7. Suggested sequencing
 
-~~1. §3.2 + §4.3 first.~~ ~~2. Decide on §3.1.~~ **§3.1 and §5 shipped
-2026-07-27**, ahead of this order — the PSI `!` marks made §3.1 the blocker,
-not the optimisation it is filed as. Remaining, in order:
+**§3.1, §3.2, §3.3 and §5 all shipped 2026-07-27.** The original order here was
+wrong twice over: it filed §3.1 as an optimisation when it was actually nulling
+two whole categories, and it never contained §3.3 at all — the finding that
+explained the field score. Local mobile went 51 → 67 → **86**, desktop 94 → 99 →
+**100**, across those three commits.
 
-1. §3.2 + §4.3 — one commit. −3.1 MB gz first-load transfer, −37 KB gz shell,
-   restores the flat-first-load invariant. Mobile is still TBT-bound at 51 and
-   this is what moves it; the §3.1 A/B put capped + §3.2 at 73.
+Remaining, in order:
+
+1. **TBT.** It is the only mobile metric not effectively maxed (56/100 at 30%
+   weight; everything else is ≥96). 525 ms → 300 ms models at 93, → 200 ms at 96.
+   §4.3's `comments: false` is the cheap start (−36,722 B gz, untried); beyond
+   that this needs main-thread profiling, not a known fix.
 2. §4.4 — the first-load byte tripwire, in `test/scale-gates.test.cjs`.
-3. §4.1 and §4.2 afterwards, independently.
+3. §4.1 and §4.2 afterwards, independently. Note §4.2's premise has weakened:
+   d3/topojson are already `defer`red and no longer appear in the
+   render-blocking set at all.
 
 `load-time-architecture.md` needs updating regardless: its "Critical-path
 transfer (gzip) ~0.35 MB" row (:19) is stale at 0.63 MB measured, it has never
