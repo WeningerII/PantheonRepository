@@ -277,6 +277,20 @@ test('README and package.json corpus counts match the built corpus', () => {
 // A duplicated icon that drifts is worse than no icon, so pin it.
 test('the favicon is the committed mark, identically in every entry point', () => {
   const svg = read(path.join(ROOT, 'assets', 'favicon.svg'));
+
+  // Parse it, do not just string-match it. build.py strips comments before
+  // inlining, so a malformed comment in the source produced a data: URI that
+  // rendered perfectly while assets/favicon.svg itself was unparseable — GitHub
+  // refused to preview it and every string assertion still passed. XML comments
+  // may not contain a double hyphen anywhere, which is how it happened.
+  const { JSDOM } = require('jsdom');
+  const doc = new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document;
+  assert.strictEqual(doc.querySelector('parsererror'), null,
+    'assets/favicon.svg is not well-formed XML: ' + (doc.querySelector('parsererror')?.textContent || ''));
+  assert.strictEqual(doc.documentElement.tagName, 'svg', 'root element is <svg>');
+  assert.ok(doc.querySelectorAll('path').length >= 6, 'the mark still has its six strokes');
+  assert.ok(!/<!--[\s\S]*?--[\s\S]*?-->/.test(svg.replace(/-->/g, '')),
+    'no double hyphen inside an XML comment');
   // Same normalisation build.py applies (_favicon_data_uri).
   let s = svg.replace(/<!--[\s\S]*?-->/g, '').replace(/\s+/g, ' ').trim();
   s = s.replace(/%/g, '%25').replace(/"/g, "'");

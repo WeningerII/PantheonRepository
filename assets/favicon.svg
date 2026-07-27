@@ -1,14 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 <!-- Pantheon Registry mark: alpha over omega.
-     The triangle (A) apexes above the ring; the ring (Omega) is wide enough to
+     The triangle (A) apexes above the ring; the ring (omega) is wide enough to
      bulge past the triangle's legs, and its tails sweep down and inward to the
      baseline. Drawn on a 64-unit grid at a 4.2 stroke: heavy enough that the
      interior counters survive a 16px tab favicon, light enough that they do not
-     close up — checked by rasterising at 16/20/32/48 rather than by eye at
-     full size. Colour is the app's --accent (#B5371F); the background is left
-     transparent so the mark reads on light and dark tab strips alike.
-     build.py inlines this file as a data: URI (the __FAVICON__ token), so this
-     is the single source for both distributions and the dev entry point. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+     close up, chosen by rasterising at 16/20/32/48 rather than by eye at full
+     size. The stroke colour is the accent token from app/styles.css (#B5371F);
+     the background is left transparent so the mark reads on light and dark tab
+     strips alike.
+
+     Two constraints on editing this file:
+     1. It must stay well-formed XML. An XML comment may not contain a double
+        hyphen ANYWHERE inside it, which is subtle enough that the first version
+        of this comment referenced the CSS custom property by name and silently
+        made the whole file unparseable.
+     2. build.py strips comments and inlines the rest as a data: URI (the
+        __FAVICON__ token), so this is the single source for both distributions
+        and for index.html. Keep it small. -->
 <g fill="none" stroke="#B5371F" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
 <path d="M26.49 53.23 A20 20 0 1 1 37.51 53.23"/>
 <path d="M26.49 53.23 C27.49 62.23 21 52 29 55"/>
