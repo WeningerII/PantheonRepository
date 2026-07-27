@@ -758,6 +758,19 @@ function main() {
     ],
   }, null, 2) + '\n');
 
+  // Site-verification files (assets/verification/README.md). The deploy
+  // rebuilds _site from scratch on every push, so a file uploaded to the site
+  // root by hand — which is what Search Console's "HTML file" method asks for —
+  // lasts only until the next deploy, and ownership verification then silently
+  // turns off. Copying from the repo re-asserts it every time, like the CNAME.
+  const verifyDir = path.join(ROOT, 'assets', 'verification');
+  if (fs.existsSync(verifyDir)) {
+    for (const f of fs.readdirSync(verifyDir)) {
+      if (f === 'README.md') continue;
+      fs.copyFileSync(path.join(verifyDir, f), path.join(SITE, f));
+    }
+  }
+
   const imgSrc = path.join(ROOT, 'assets', 'images');
   if (fs.existsSync(imgSrc)) {
     fs.cpSync(imgSrc, path.join(SITE, 'assets', 'images'), {

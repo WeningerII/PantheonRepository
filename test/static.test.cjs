@@ -116,6 +116,27 @@ test('per-tradition hub pages exist, are reciprocated, and carry derived content
   assert.ok(!fs.existsSync(path.join(hubDir, 's-mi.html')), 'no mark-stripped slug');
 });
 
+// Search Console's "HTML file" method wants a file at the site root. The
+// deploy rebuilds _site from scratch every push, so a hand-uploaded one lasts
+// until the next deploy and then ownership verification silently turns off —
+// which is exactly what happened. Copying it from the repo re-asserts it.
+test('site-verification files are copied to the site root', () => {
+  const dir = path.join(ROOT, 'assets', 'verification');
+  const files = fs.readdirSync(dir).filter((f) => f !== 'README.md');
+  assert.ok(files.length > 0, 'expected at least one verification file');
+  for (const f of files) {
+    const deployed = path.join(SITE, f);
+    assert.ok(fs.existsSync(deployed), `${f} did not reach the site root`);
+    assert.strictEqual(read(deployed), read(path.join(dir, f)), `${f} was altered in transit`);
+  }
+  // Google fetches /<name>.html and expects the single line naming the file.
+  const g = files.find((f) => /^google[0-9a-f]+\.html$/.test(f));
+  if (g) {
+    assert.strictEqual(read(path.join(SITE, g)).trim(), `google-site-verification: ${g}`,
+      `${g} must contain exactly "google-site-verification: ${g}"`);
+  }
+});
+
 test('robots.txt allows all and points at the sitemap', () => {
   const r = read(path.join(SITE, 'robots.txt'));
   assert.match(r, /User-agent: \*/);
