@@ -663,6 +663,11 @@ button:focus-visible,
   overflow-y: auto;
 }
 
+/* Growth sentinel for the demand-driven row reveal (Browse.jsx). Needs a real
+   box for IntersectionObserver to report against, and must not add visible
+   height below the last row. */
+.browse-sentinel { height: 1px; }
+
 .browse-table {
   width: 100%;
   border-collapse: separate;

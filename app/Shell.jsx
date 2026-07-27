@@ -29,6 +29,20 @@ function useIsMobile() {
   return mobile;
 }
 
+// Prefetch a view's registry tier as soon as the pointer or focus lands on
+// its button. pr-boot.js no longer warms items/powers/domains on idle — that
+// was 3 MB gz of first-load transfer for views nobody had opened — so this is
+// what keeps the first Items/Powers/Domains open feeling instant. Hover-to-
+// click buys 100-300 ms, focus-to-Enter more, and pointerdown covers touch,
+// where there is no hover at all. loadRegistry is idempotent per kind, so
+// sweeping the pointer across the whole nav costs one fetch each at most.
+const PREFETCH_REGISTRY = { items: 'items', powers: 'powers', domains: 'domains' };
+function prefetchView(v) {
+  const kind = PREFETCH_REGISTRY[v];
+  const load = kind && window.__PR && window.__PR.loadRegistry;
+  if (load) load(kind);
+}
+
 function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK, onOpenFilter, hasFilters, onSkip }) {
   return (
     <header className="topbar">
@@ -99,6 +113,9 @@ function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK,
               key={v}
               className={'btn' + (view === v ? ' btn-on' : '')}
               onClick={() => setView(v)}
+              onMouseEnter={() => prefetchView(v)}
+              onFocus={() => prefetchView(v)}
+              onPointerDown={() => prefetchView(v)}
               aria-current={view === v ? 'page' : undefined}
             >{label}</button>
           ))}
@@ -1222,6 +1239,8 @@ function Shell() {
               key={m.v}
               className={'mobile-more-row' + (view === m.v ? ' on' : '')}
               onClick={() => changeView(m.v)}
+              onMouseEnter={() => prefetchView(m.v)}
+              onPointerDown={() => prefetchView(m.v)}
               aria-current={view === m.v ? 'page' : undefined}
             >
               <span className="mobile-more-text">

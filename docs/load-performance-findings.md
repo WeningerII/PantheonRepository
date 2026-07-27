@@ -1,8 +1,9 @@
 # Load performance — measured findings, 2026-07-26
 
 A record of a Lighthouse investigation prompted by a PageSpeed Insights run on
-the deployed site. Nothing in section 3 or 4 has been implemented; this exists
-so the work can be picked up later without re-deriving it.
+the deployed site. **§3.1 was implemented on 2026-07-27** (see its before/after
+table); §3.2 and §4 remain open, and this exists so that work can be picked up
+later without re-deriving it.
 
 Companion to [`load-time-architecture.md`](load-time-architecture.md), which
 records the original tiering design. Where the two disagree, this file is the
@@ -95,34 +96,74 @@ Beware: an earlier non-gzip run scored mobile 27 and reported Style & Layout at
 
 ## 3. The dominant cost
 
-### 3.1 Browse mounts the entire corpus
+### 3.1 Browse mounts the entire corpus — IMPLEMENTED 2026-07-27
 
-`app/Browse.jsx:231-239` ramps an unconditional rAF reveal until all 5,721 rows
-are mounted: **100,167 DOM elements, 151,797 LayoutObjects, 92% of all Style &
+`app/Browse.jsx` ramped an unconditional rAF reveal until all 5,721 rows were
+mounted: **100,167 DOM elements, 151,797 LayoutObjects, 92% of all Style &
 Layout time.** Cost is linear in mounted rows (~1.15 ms/figure at mobile 4×
-CPU), so at 10,000 figures today's shape is ~15 s of mobile Style & Layout.
+CPU), so at 10,000 figures that shape was ~15 s of mobile Style & Layout.
 
-Measured by freezing the reveal at 150 rows (medians, interleaved, fresh
-Chromium per run):
+Replaced with demand-driven growth: an `IntersectionObserver` sentinel inside
+`.browse-scroll` (800 px margin), the rAF ramp kept only to chase a distant
+`coverIdx`, and a ratchet effect persisting whatever either produced.
 
-| | mobile perf | mobile TBT | mobile S&L | desktop perf |
+#### It was also nulling two whole categories
+
+This is the finding that made §3.1 urgent rather than optional, and it was
+**not** understood when this document was first written. A PageSpeed Insights
+run on the deployed site showed Accessibility and SEO as `!` — not a low score.
+Reproduced locally on the pre-fix build, both form factors:
+
+```
+accessibility  NULL (unscored)     66 audits: scoreDisplayMode 'error'
+seo            NULL (unscored)     errorMessage: "Required Accessibility
+                                    gatherer encountered an error:
+                                    PROTOCOL_TIMEOUT"
+```
+
+The chain: Lighthouse runs the whole axe sweep inside one
+`executionContext.evaluate`, capped at 60,000 ms
+(`core/gather/driver/execution-context.js:170`). Over a 100 k-element DOM that
+evaluate exceeds the cap. Every audit depending on the Accessibility artifact
+errors, and an errored audit scores `null`. `core/scoring.js:25` — *"If there is
+1 null score, return a null average"* — then nulls the entire category. SEO is
+collateral: it re-lists two axe-backed audits, `document-title` and `image-alt`,
+which is exactly the pair PSI showed erroring. Best Practices survived at 96
+because it contains no axe-backed audit — a useful control.
+
+**Do not attribute the 60 s to axe's own run time.** Measured directly with
+Lighthouse's exact gatherer options, `axe.run` over the full 100,206-element DOM
+is **1,516 ms** (mobile 1×) / 3,652 ms (2× CPU) — nowhere near the cap. The cost
+that blows the budget lives in the gatherer around the run (result serialization
+and node-details resolution across CDP), not in rule evaluation. An early draft
+of this file claimed 55–154 s of axe time; that was wrong and is corrected here.
+
+#### Measured, real Lighthouse 13.4.1, before → after
+
+Same harness, same machine, `dist/site` over gzip:
+
+| | mobile before | mobile after | desktop before | desktop after |
 |---|---:|---:|---:|---:|
-| base | 51 | 6,445 ms | 6,546 ms | 63 |
-| reveal capped | 56 | 1,310 ms | 541 ms | **97** |
-| capped + §3.2 | **73** | 362 ms | 521 ms | — |
+| Performance | 48 | 51 | 65 | **94** |
+| Accessibility | **NULL** | **100** | **NULL** | **100** |
+| SEO | **NULL** | **100** | **NULL** | **100** |
+| Best practices | 96 | 96 | 96 | 96 |
+| Errored audits | 66 | **0** | 66 | **0** |
+| A11y gatherer | `PROTOCOL_TIMEOUT` | 1,608 ms | `PROTOCOL_TIMEOUT` | 2,221 ms |
 
-Element count 100,167 → 5,564. FCP/LCP/CLS do not move.
+Cold-load DOM: 100,206 → **5,545 elements**, 5,721 → **150 rows**. Scrolling
+still reaches all 5,721 (`verify-coldload.cjs` asserts both ends).
 
-**The real fix is demand-driven growth** — an `IntersectionObserver` bottom
-sentinel inside `.browse-scroll`, keeping the rAF ramp only for a distant
-`coverIdx` (deep links, cross-view jumps).
+Desktop performance moved most (65 → 94) because it was never throttling-bound;
+mobile stays TBT-bound and needs §3.2 to move further — the §3.1-alone figure
+predicted here earlier was 56, measured 51, and the residual is the idle warm.
 
-**Why this is a product decision, not a merge:** Ctrl+F would permanently see
-only loaded rows. Today it reaches all 5,721 after ~2.6 s. On a reference
-registry that is a genuine regression, not a footnote. The scrollbar thumb also
-grows as you scroll.
+**Accepted trade:** the browser's own Ctrl+F now reaches only mounted rows,
+where it previously reached all 5,721 after ~2.6 s. The app's own search still
+covers the full corpus. The scrollbar thumb also grows as you scroll. Both were
+signed off deliberately against two nulled Lighthouse categories.
 
-Four things a naive implementation gets wrong:
+Four things a naive implementation gets wrong (all four were hit and handled):
 
 1. **Ratchet the window on cursor coverage.** `revealCount` (`Browse.jsx:229`)
    is render-derived; only the rAF effect persists it into `reveal.count`. Gate
@@ -136,15 +177,101 @@ Four things a naive implementation gets wrong:
    `openFirstFigure` helper, which silently no-ops at 0 rows.
 3. **`verify-coldload.cjs` becomes vacuous** — it never scrolls, so rows sit at
    150 for all 8 s and it "passes" while no longer observing the failure it
-   exists for. Add a scroll-to-bottom phase.
-4. **A full virtualizer is harder than it looks.** Rows are variable height by
+   exists for. Rewritten with a scroll-to-bottom phase and two new assertions
+   (cold load bounded ≤ 1,000 rows; scrolling must still reach every row), plus
+   the three §5 defects fixed. Verified to fail on the pre-fix build, exit 1.
+4. **A full virtualizer is harder than it looks.** Not attempted — the sentinel
+   grows the window and never unmounts, so no row is ever displaced and none of
+   the estimate-vs-real machinery below is in play. Kept as the reason NOT to
+   reach for windowing if this is revisited. Rows are variable height by
    design: `styles.css:780-791` floors plain rows at 52 px, `:792-796` gives
    `tr:has(.alt-line)` `height:auto; min-height:58px`, producing a trimodal
    distribution (52.00 × 59, ~58.5 × 3,115, ~63.05 × 2,480) interleaved with
    sticky variable-count group headers inside `table-layout: fixed`. That
    estimated-vs-real mismatch is what causes scroll jumps.
 
-### 3.2 The idle warm violates the flat-first-load invariant
+### 3.3 The page had no large contentful element, and the document was 149 KB gz — IMPLEMENTED 2026-07-27
+
+The finding that actually explains the field score. A PSI run reported
+**FCP 2,622 / SI 2,622 / LCP 8,011 / TBT 1,589 / CLS 0**, scoring mobile 46.
+Reproduced in the Lighthouse scoring model to the digit (all five metric
+sub-scores: 63 / 97 / 3 / 13 / 100), so the weighting below is arithmetic, not
+estimation. **LCP scored 3/100 at 25% weight.** That was the whole problem.
+
+**Why LCP was 8 s.** The LCP element was `div#placeholder` — the *placeholder
+text inside the search input*, 279×19 px, rendered by React. This page has no
+hero image and no large text block; it is uniformly small dense text, so the
+largest contentful element on it was a 5,301 px² placeholder. The boot splash's
+own title was ~5,200 px² and lost **by 2%**. LCP was therefore pinned to "React
+finished mounting", and nothing about the table mattered.
+
+**Why FCP was 2.6 s.** The shell inlined every UI source: 588 KB raw / **149 KB
+gz**, of which 122 KB gz was inline `<script>`. Lantern has no streaming model,
+so nothing paints until the whole document lands — the entire app sat on the
+first-paint critical path. Confirmed by elimination: moving react/react-dom out
+of `<head>` (the obvious suspect) moved FCP 2,328 → 2,286, i.e. not at all.
+
+Three changes, each measured:
+
+1. **The UI sources ship as one hashed external file** (`app-<hash>.js`, beside
+   the shell, `defer`red). Document 149 KB gz → **39.9 KB gz**. Concatenation is
+   semantics-preserving because the 13 blocks already shared one global lexical
+   environment (§6). `defer` is load-bearing: without it the bundle is simply
+   render-blocking again — measured at 1,370 ms, with FCP regressing to 2,262 ms.
+2. **The boot overlay carries a real lead paragraph** — the site's own
+   canonical description, the same sentence as `og:description`. It is static,
+   so it cannot drift; it is the largest text on the boot screen, so it owns
+   LCP; and it sits in the `position:fixed` overlay, so its removal on ready
+   cannot shift layout. A waiting visitor now reads what the site is instead of
+   watching a bare spinner.
+3. **`preconnect` to cdnjs.** Reasoned, not measured — see §1.
+
+Real Lighthouse 13.4.1, medians of 3 runs:
+
+| | mobile before | mobile after | desktop before | desktop after |
+|---|---:|---:|---:|---:|
+| FCP | 2,199 | **1,526** | 523 | **395** |
+| LCP | 4,787 | **1,676** | 932 | **608** |
+| TBT | 533 | 525 | 28 | 17 |
+| CLS | 0.0005 | 0.0005 | 0.0001 | 0.0001 |
+| **Performance** | **67** | **86** | **99** | **100** |
+
+Metric sub-scores now: FCP 96, SI 100, LCP 99, CLS 100, **TBT 56**. TBT is the
+only remaining lever on mobile — everything else is effectively maxed. Deferring
+react/react-dom as well (they remain render-blocking at 928 ms combined, and the
+Pages shell *could* now defer them since its UI bundle is deferred) models at
+**+1 point** and was not done.
+
+**The honest limit of change 2.** LCP now times the boot overlay's paragraph
+rather than the figure table. That is a genuine improvement — real content at
+1.5 s instead of 5 s — but it does mean the metric no longer tracks when the
+*table* appears. Making LCP measure the table would need build-time prerendering
+of the first screenful plus hydration, which is a much larger change and carries
+a real CLS risk that this one does not.
+
+### 3.2 The idle warm violates the flat-first-load invariant — IMPLEMENTED 2026-07-27
+
+**The "one point" verdict below was wrong by the time it mattered.** It was
+measured while Browse still mounted the whole corpus and TBT was 6,760 ms, where
+the warm was lost in the noise. Once §3.1 landed, the warm was most of what
+remained. Re-measured, medians of 3:
+
+| | mobile TBT | mobile perf | desktop perf |
+|---|---:|---:|---:|
+| with warm | 1,440 ms | 56 | 94 |
+| without | **533 ms** | **67** | **99** |
+
+Shipped without the §4.1 trade below: rather than accept a 7.7 s wait on first
+Powers open, the view buttons prefetch their registry tier on
+hover/focus/pointerdown (`Shell.jsx`), and Shell's existing effect still fetches
+on demand for deep links and keyboard. Verified in a browser: zero registry
+fetches after 9 s idle on Browse, prefetch fires on hover, no refetch on a
+second hover, click still lands. The projection tiers (atlas 163 KB gz, edges)
+stay warmed — they are a twentieth of the registries and have no equivalent seam.
+
+Original analysis follows.
+
+
 
 `app/pr-boot.js:528-530` unconditionally warms items + powers + domains on first
 idle: **3,059,169 B gzipped (15.5 MB raw), 77% of first-load transfer**, at High
@@ -241,11 +368,12 @@ all 297 tests and fails only in production, invisibly, on first Atlas mount.
   `test/multifile.test.cjs:212`, which locates the block by a comment string and
   asserts byte-equality with the source. Not worth weakening a verbatim-inlining
   guard for 7 KB.
-- `app/Browse.jsx:26-29` carries a stale comment claiming reveal work scales
-  rows²/batch. It does not — `table-layout: fixed` keeps mounted rows clean, so
-  each pass dirties a flat ~12,900 LayoutObjects. Quadratic predicts batch=250
-  costing ~11× batch=5,721; measured ratio is **1.24×**. It also says
-  "~4,000 BrowseRows"; it is 5,721.
+- ~~`app/Browse.jsx:26-29` carries a stale comment claiming reveal work scales
+  rows²/batch.~~ **Done** — the block was rewritten wholesale with §3.1. For the
+  record: layout is linear, not rows²/batch. `table-layout: fixed` keeps mounted
+  rows clean, so each pass dirties a flat ~12,900 LayoutObjects; quadratic
+  predicts batch=250 costing ~11× batch=5,721, measured ratio is **1.24×**. The
+  comment also said "~4,000 BrowseRows"; it is 5,721.
 
 ### 4.4 Add a first-load byte tripwire
 
@@ -256,25 +384,37 @@ fetches unconditionally. **Not** in `verify-coldload.cjs` — see §5.
 
 ---
 
-## 5. `verify-coldload.cjs` does not guard anything
+## 5. `verify-coldload.cjs` did not guard anything — FIXED 2026-07-27
 
-`CLAUDE.md` states cold-load stability "is guarded by
-`scripts/verify-coldload.cjs`". That claim is currently false, three ways:
+`CLAUDE.md` stated cold-load stability "is guarded by
+`scripts/verify-coldload.cjs`". That claim was false three ways:
 
-1. It is in **neither** CI workflow. `ci.yml` runs `npm test`, the MCP smoke
-   suite, and `verify-regen.sh`; `deploy-pages.yml` runs the first and last.
-2. It **cannot fail**. `verify-coldload.cjs:38-48` only `console.log`s its
-   verdict; the sole `process.exit(1)` is the crash catch. A detected collapse
-   or row-resize prints and exits 0.
-3. It **cannot run in a clean checkout**. It `require`s `playwright-core`, which
-   is in neither `package.json` nor `node_modules`, and hardcodes
+1. It was in **neither** CI workflow. `ci.yml` ran `npm test`, the MCP smoke
+   suite, and `verify-regen.sh`; `deploy-pages.yml` ran the first and last.
+2. It **could not fail**. It only `console.log`ed its verdict; the sole
+   `process.exit(1)` was the crash catch. A detected collapse or row-resize
+   printed and exited 0.
+3. It **could not run in a clean checkout**. It `require`d `playwright-core`,
+   which was in neither `package.json` nor `node_modules`, and hardcoded
    `/home/user/PantheonRepository` and `/opt/pw-browsers/chromium`.
 
-It was executed during this investigation (after manually installing
-`playwright-core`) and did report monotonic row growth with zero row-height
-changes — but that result carries less weight than it appears to, because the
-script has no failing branch. Either wire it into CI with real assertions and a
-declared dependency, or correct `CLAUDE.md`. Do not leave the claim standing.
+All three are fixed. The script now asserts four invariants and sets a non-zero
+exit code on any violation; `playwright-core` is a declared devDependency;
+paths resolve from `__dirname` and Chromium is discovered via
+`PLAYWRIGHT_CHROMIUM_PATH` / `PLAYWRIGHT_BROWSERS_PATH` / the standard
+Playwright cache, failing loudly rather than skipping when absent. `ci.yml`
+installs Chromium and runs it as a blocking step (job timeout raised 15 → 25
+minutes to cover the download).
+
+Two assertions are new, and they are what make the probe non-vacuous under a
+demand-driven reveal: cold load must stay **≤ 1,000 rows**, and scrolling must
+still reach **every** row. Confirmed to behave in both directions — it passes on
+the current build (150 rows cold, 5,721 after scrolling) and fails with exit 1
+on the pre-§3.1 build (5,721 rows cold, no growth on scroll).
+
+Still not covered, and worth knowing: the cdnjs route interception substitutes
+`node_modules` bytes, so neither the vendor URL nor its SRI hash is validated
+here — see §4.2.
 
 ---
 
@@ -285,7 +425,7 @@ Recorded so nobody re-derives them. Each was measured, not reasoned about.
 | Candidate | Why not |
 |---|---|
 | Tune `REVEAL_BATCH` | Layout is linear, not rows²/batch. 500 → 2000 measured perf 51 → 51. And 500 sits at the blocking-time minimum: longest single task is 202/253/635/1,795 ms across 250/500/2000/5721. Leave it. |
-| Per-row `content-visibility: auto` | Cuts mobile S&L 86% but **zeroes the accessibility and SEO categories** — Lighthouse's axe gatherer hits `PROTOCOL_TIMEOUT`, reproduced 3×. A full-document `getBoundingClientRect`+`getComputedStyle` sweep goes 219 ms → 31,729 ms (145×) because each skipped subtree un-skips individually. That sweep is what axe, Ctrl+F, print and screen readers all do. |
+| Per-row `content-visibility: auto` | Cuts mobile S&L 86% but **nulls the accessibility and SEO categories** (scored `null`, rendered `!` — same mechanism as §3.1) — Lighthouse's axe gatherer hits `PROTOCOL_TIMEOUT`, reproduced 3×. A full-document `getBoundingClientRect`+`getComputedStyle` sweep goes 219 ms → 31,729 ms (145×) because each skipped subtree un-skips individually. That sweep is what axe, Ctrl+F, print and screen readers all do. |
 | `content-visibility` on `<tr>` | Silent no-op — size containment does not apply to internal table boxes. `getComputedStyle` reports `auto` while layout ignores it. |
 | `content-visibility` on all `<td>` | Buys 71%, but `contain-intrinsic-size` is inert on `table-cell`, so scroll height under-reports by **64%** and drifts as you scroll. Untunable. |
 | Convert the table to block/flex rows | Desktop 67 → 88, but without containment it overflows horizontally, so correctness *depends* on `content-visibility` support; Safari <18 / Firefox <125 get a broken table and no speed win. Carries the same 145× traversal regression. |
@@ -299,14 +439,22 @@ Recorded so nobody re-derives them. Each was measured, not reasoned about.
 
 ## 7. Suggested sequencing
 
-1. §3.2 + §4.3 — one commit. −3.1 MB gz first-load transfer, −37 KB gz shell,
-   ~+3 mobile points, restores the flat-first-load invariant.
-2. Decide on §3.1. Everything else is rounding error next to it. Ship it *with*
-   §3.2 already landed, or the mobile number barely moves (capping alone is +5;
-   the residual 1,310 ms of TBT is the warm).
-3. §4.4 + §5 alongside it — tripwire, doc corrections, and the CLAUDE.md
-   retraction.
-4. §4.1 and §4.2 afterwards, independently.
+**§3.1, §3.2, §3.3 and §5 all shipped 2026-07-27.** The original order here was
+wrong twice over: it filed §3.1 as an optimisation when it was actually nulling
+two whole categories, and it never contained §3.3 at all — the finding that
+explained the field score. Local mobile went 51 → 67 → **86**, desktop 94 → 99 →
+**100**, across those three commits.
+
+Remaining, in order:
+
+1. **TBT.** It is the only mobile metric not effectively maxed (56/100 at 30%
+   weight; everything else is ≥96). 525 ms → 300 ms models at 93, → 200 ms at 96.
+   §4.3's `comments: false` is the cheap start (−36,722 B gz, untried); beyond
+   that this needs main-thread profiling, not a known fix.
+2. §4.4 — the first-load byte tripwire, in `test/scale-gates.test.cjs`.
+3. §4.1 and §4.2 afterwards, independently. Note §4.2's premise has weakened:
+   d3/topojson are already `defer`red and no longer appear in the
+   render-blocking set at all.
 
 `load-time-architecture.md` needs updating regardless: its "Critical-path
 transfer (gzip) ~0.35 MB" row (:19) is stale at 0.63 MB measured, it has never
