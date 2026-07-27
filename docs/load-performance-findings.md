@@ -13,10 +13,16 @@ newer measurement — see §5.
 
 ## 1. Method, and what is NOT verified
 
-The live site was **never sampled**. `www.listofgods.com`, `cdnjs.cloudflare.com`
-and `*.github.io` are all unreachable from the environment this ran in (HTTP 403
-on CONNECT), and the keyless PageSpeed Insights API is quota-capped at zero
-requests/day, so both PSI attempts returned 429.
+> **Superseded in part, 2026-07-27.** The deployed site has since been sampled
+> by PSI and scores 96 mobile / 98 desktop, Accessibility / SEO / Best practices
+> all 100 — see §3.3. The caveats below still describe how every *lab* number in
+> this file was produced, and §3.3 records where the lab proved conservative.
+
+The live site was **never sampled** during the investigation.
+`www.listofgods.com`, `cdnjs.cloudflare.com` and `*.github.io` are all
+unreachable from the environment this ran in (HTTP 403 on CONNECT), and the
+keyless PageSpeed Insights API is quota-capped at zero requests/day, so both PSI
+attempts returned 429.
 
 Everything below is real Lighthouse 13.4.1 against `dist/site` — the same
 artifact CI deploys — served from localhost **with gzip**, which is what GitHub
@@ -242,6 +248,37 @@ react/react-dom as well (they remain render-blocking at 928 ms combined, and the
 Pages shell *could* now defer them since its UI bundle is deferred) models at
 **+1 point** and was not done.
 
+#### Confirmed on the deployed site, 2026-07-27
+
+PSI run against `https://www.listofgods.com/` after the deploy:
+
+| | before (PSI) | after (PSI) |
+|---|---:|---:|
+| Performance, mobile | 46 | **96** |
+| Performance, desktop | — | **98** |
+| Accessibility | `!` unscored | **100** |
+| SEO | `!` unscored | **100** |
+| Best practices | 96 | **100** |
+
+**Production beat the lab, and that resolves §1's open question.** The local A/B
+predicted +35 mobile; production moved **+50**. The projection in this file
+(~81 mobile, ~58 desktop) was too conservative because it mapped Lantern-
+simulated deltas from a harness that *rewrites cdnjs to a same-origin path* onto
+a production page that does not. The ~3.3 s of production LCP this document
+could never account for was the cold third-origin handshake in front of
+render-blocking react — which taking LCP off React's critical path, plus the
+`preconnect`, removed. The preconnect shipped reasoned-not-measured; this is the
+evidence it was doing real work.
+
+Best practices reaching 100 confirms §2's prediction: the local 96 was purely
+the sandbox's `fonts.googleapis.com` certificate failure, never the site.
+
+**CrUX reports "No Data"** — the origin has too little real-user traffic to
+enter the field dataset. Every number in this document is therefore still lab
+data, and Core Web Vitals are not yet being assessed for this origin at all.
+That is an audience problem, not a performance one, and no further optimisation
+work changes it.
+
 **The honest limit of change 2.** LCP now times the boot overlay's paragraph
 rather than the figure table. That is a genuine improvement — real content at
 1.5 s instead of 5 s — but it does mean the metric no longer tracks when the
@@ -445,13 +482,20 @@ two whole categories, and it never contained §3.3 at all — the finding that
 explained the field score. Local mobile went 51 → 67 → **86**, desktop 94 → 99 →
 **100**, across those three commits.
 
-Remaining, in order:
+**The deployed site now scores 96 mobile / 98 desktop with all three other
+categories at 100.** Performance work on this page is done. What follows is
+kept because it is measured and would otherwise be re-derived — not because it
+is worth doing.
 
-1. **TBT.** It is the only mobile metric not effectively maxed (56/100 at 30%
-   weight; everything else is ≥96). 525 ms → 300 ms models at 93, → 200 ms at 96.
-   §4.3's `comments: false` is the cheap start (−36,722 B gz, untried); beyond
-   that this needs main-thread profiling, not a known fix.
-2. §4.4 — the first-load byte tripwire, in `test/scale-gates.test.cjs`.
+1. **TBT — deliberately not chased.** It is the only mobile metric not
+   effectively maxed in the lab (56/100 at 30% weight; everything else ≥96), and
+   525 ms → 300 ms models at 93 locally. But production already returns 96, so
+   the remaining headroom is a few points of a *lab* metric on an origin that
+   CrUX has no data for. §4.3's `comments: false` is the cheap start
+   (−36,722 B gz, untried) if anyone wants it; past that it needs main-thread
+   profiling and there is no known fix waiting.
+2. §4.4 — the first-load byte tripwire, in `test/scale-gates.test.cjs`. Still
+   worth it: it guards the invariant rather than the score.
 3. §4.1 and §4.2 afterwards, independently. Note §4.2's premise has weakened:
    d3/topojson are already `defer`red and no longer appear in the
    render-blocking set at all.
