@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pantheon Registry</title>
 <meta name="description" content="A browsable, source-cited index of the world's mythological and historical figures — their genealogies, domains, epithets, iconography, and cult (sites, festivals, priesthoods, offerings) — across hundreds of traditions. Client-rendered single-page app." />
-<!-- Favicon as a data: URI. Source of truth is assets/favicon.svg; build.py
-     substitutes the same string into both distributions (the __FAVICON__
-     token), and test/static.test.cjs asserts this copy has not drifted. -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E %3Cg fill='none' stroke='%23B5371F' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M26.21 55.19 A21 21 0 1 1 37.79 55.19'/%3E %3Cpath d='M26.21 55.19 C27.21 62.19 22 55 29 57'/%3E %3Cpath d='M37.79 55.19 C36.79 62.19 42 55 35 57'/%3E %3Cpath d='M32 3 L61 57'/%3E %3Cpath d='M32 3 L3 57'/%3E %3Cpath d='M3 57 L61 57'/%3E %3C/g%3E %3C/svg%3E" />
+<!-- Favicon (assets/brand/). The dev server runs from the repo root, so
+     these resolve directly; build.py emits the deployed equivalents. -->
+<link rel="icon" href="assets/brand/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/brand/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
 
 <!-- Dev-mode entry. Run from the repo root with any static server:
        python3 -m http.server 8000

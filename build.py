@@ -26,6 +26,7 @@ Prerequisites:
 Usage:
   python3 build.py [--pages]
 """
+import base64
 import json
 import re
 import subprocess
@@ -128,23 +129,27 @@ def safe(src: str) -> str:
     return _SCRIPT_BREAK.sub('<\\\\/script', src)
 
 
-def _favicon_data_uri() -> str:
-    """assets/favicon.svg as a percent-encoded data: URI.
+def _favicon_tags(pages: bool) -> str:
+    """The <link rel="icon"> tags, which differ by distribution.
 
-    Read from the file rather than duplicated inline so the mark has one source
-    across both distributions and index.html. Only the characters that would
-    break an HTML double-quoted attribute or a URI are escaped — leaving the
-    rest literal keeps the tag readable and the payload small (base64 would be
-    ~33% larger). Comments and newlines are stripped; the result is
-    deterministic, which verify-regen.sh depends on.
+    Pages links the files under assets/brand/ (copied to the site root by
+    scripts/build-static.cjs): browsers fetch and cache them once, and the .ico
+    carries real 16/32/48 frames rather than a downscale.
+
+    The single-file artifact has no siblings to fetch — it is opened straight
+    off disk — so it inlines the 96px PNG as a data: URI instead. That is ~13 KB
+    in a 31 MB artifact.
+
+    The generated favicon.svg is NOT used: it is a base64 PNG wrapped in an
+    <image> element, 5.9 MB for pixels identical to the file below. See
+    assets/brand/README.md.
     """
-    svg = (ROOT / 'assets' / 'favicon.svg').read_text(encoding='utf-8')
-    svg = re.sub(r'<!--.*?-->', '', svg, flags=re.S)          # drop the doc comment
-    svg = re.sub(r'\s+', ' ', svg).strip()                    # collapse whitespace
-    out = svg.replace('%', '%25').replace('"', "'")           # attribute-safe quotes
-    for ch, enc in (('<', '%3C'), ('>', '%3E'), ('#', '%23'), ('&', '%26')):
-        out = out.replace(ch, enc)
-    return 'data:image/svg+xml,' + out
+    if pages:
+        return ('<link rel="icon" href="/favicon.ico" sizes="32x32">\n'
+                '<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">')
+    png = (ROOT / 'assets' / 'brand' / 'favicon-96x96.png').read_bytes()
+    return ('<link rel="icon" type="image/png" href="data:image/png;base64,'
+            + base64.b64encode(png).decode('ascii') + '" />')
 
 
 def main() -> None:
@@ -232,13 +237,10 @@ def main() -> None:
 <meta name="twitter:title" content="Pantheon Registry — the gods, mapped" />
 <meta name="twitter:description" content="A source-cited index of the world's mythological and historical figures across hundreds of traditions." />
 <meta name="twitter:image" content="https://www.listofgods.com/og-image.png" />
-<!-- Favicon as a data: URI, not a file. Without a declaration the browser
-     requests /favicon.ico, which this site does not serve — a real 404 that
-     Lighthouse counts under errors-in-console (best-practices). A path-based
-     icon would also 404 in the single-file artifact, which is opened over
-     file:// with no siblings; an inline SVG works in both and costs no request.
-     Source of truth is assets/favicon.svg — substituted in below. -->
-<link rel="icon" href="__FAVICON__" />
+<!-- Favicon (assets/brand/). Substituted per mode: the Pages shell links the
+     real files, while the single-file artifact inlines a data: URI because it
+     is opened over file:// with no siblings and any path would 404 there. -->
+__FAVICON__
 __ANALYTICS__
 <!-- Early error trap. Surfaces boot-time errors into the visible boot overlay. -->
 <script>
@@ -506,7 +508,7 @@ __UI_SCRIPTS__
     # exactly as it was (byte-exact regen holds).
     analytics = _GA_SNIPPET.replace('__GA_ID__', GA_MEASUREMENT_ID) if pages else ''
     out = out.replace('__ANALYTICS__', analytics)
-    out = out.replace('__FAVICON__', _favicon_data_uri())
+    out = out.replace('__FAVICON__', _favicon_tags(pages))
 
     # Verify no template tokens remain. /*#__PURE__*/ is Babel output, not a token.
     leftover = [x for x in re.findall(r'__[A-Z_]+__', out) if x != '__PURE__']

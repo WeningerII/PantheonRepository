@@ -272,76 +272,65 @@ test('README and package.json corpus counts match the built corpus', () => {
     'package.json description restates the same counts');
 });
 
-// The mark is declared as a data: URI in three places — the two built
-// distributions and the dev entry point — from one source, assets/favicon.svg.
-// A duplicated icon that drifts is worse than no icon, so pin it.
-test('the favicon is the committed mark, identically in every entry point', () => {
-  const svg = read(path.join(ROOT, 'assets', 'favicon.svg'));
+// The owner's mark, from assets/brand/, is the icon everywhere. It is served
+// as files on the site and inlined only in the offline artifact, which has no
+// siblings to fetch. Pin the whole arrangement: an icon that silently stops
+// being declared is exactly the 404 this started as.
+test('the owner mark is the icon in every entry point', () => {
+  const BRAND = path.join(ROOT, 'assets', 'brand');
 
-  // Parse it, do not just string-match it. build.py strips comments before
-  // inlining, so a malformed comment in the source produced a data: URI that
-  // rendered perfectly while assets/favicon.svg itself was unparseable — GitHub
-  // refused to preview it and every string assertion still passed. XML comments
-  // may not contain a double hyphen anywhere, which is how it happened.
-  const { JSDOM } = require('jsdom');
-  const doc = new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document;
-  assert.strictEqual(doc.querySelector('parsererror'), null,
-    'assets/favicon.svg is not well-formed XML: ' + (doc.querySelector('parsererror')?.textContent || ''));
-  assert.strictEqual(doc.documentElement.tagName, 'svg', 'root element is <svg>');
-  assert.ok(doc.querySelectorAll('path').length >= 6, 'the mark still has its six strokes');
-  assert.ok(!/<!--[\s\S]*?--[\s\S]*?-->/.test(svg.replace(/-->/g, '')),
-    'no double hyphen inside an XML comment');
-  // Same normalisation build.py applies (_favicon_data_uri).
-  let s = svg.replace(/<!--[\s\S]*?-->/g, '').replace(/\s+/g, ' ').trim();
-  s = s.replace(/%/g, '%25').replace(/"/g, "'");
-  for (const [ch, enc] of [['<', '%3C'], ['>', '%3E'], ['#', '%23'], ['&', '%26']]) {
-    s = s.split(ch).join(enc);
-  }
-  const uri = 'data:image/svg+xml,' + s;
-
+  // Deployed shell + every static page link the files.
   const shell = read(path.join(SITE, 'index.html'));
-  const artifact = read(path.join(ROOT, 'dist', 'pantheon-registry.html'));
-  const dev = read(path.join(ROOT, 'index.html'));
-  for (const [name, html] of [['Pages shell', shell], ['single-file artifact', artifact], ['index.html', dev]]) {
-    assert.ok(html.includes(`<link rel="icon" href="${uri}" />`),
-      `${name} does not carry the current assets/favicon.svg mark`);
-  }
-  // No leftover .ico request, which is what the 404 was in the first place.
-  assert.ok(!/href="[^"]*favicon\.ico"/.test(shell), 'nothing should request favicon.ico');
+  assert.match(shell, /<link rel="icon" href="\/favicon\.ico" sizes="32x32">/);
+  assert.match(shell, /<link rel="icon" type="image\/png" sizes="96x96" href="\/favicon-96x96\.png">/);
+  assert.match(shell, /<link rel="apple-touch-icon" sizes="180x180"/);
+  assert.match(shell, /<link rel="manifest"/);
 
-  // The tab mark must stay a hand-drawn vector, not the owner's detailed
-  // artwork. The generated icon set shipped a 5.9 MB "favicon.svg" that was a
-  // single <image> wrapping a base64 raster; inlining that would put 5.9 MB in
-  // every page and still be a bitmap at 16px.
-  assert.ok(!/<image\b/.test(svg), 'the tab mark must be vector, not a wrapped raster');
-  assert.ok(!/base64/.test(svg), 'no embedded raster in the tab mark');
-  assert.ok(uri.length < 1500, `tab mark data: URI is ${uri.length} B — it ships in every page`);
+  // All 6,000+ static pages, at both directory depths, previously declared
+  // nothing at all and took a /favicon.ico 404 apiece.
+  for (const f of ['greek_hesiod_zeus.html', 'index.html', path.join('tradition', 'norse.html')]) {
+    const html = read(path.join(REG, f));
+    assert.match(html, /<link rel="icon" href="https?:\/\/[^"]*favicon\.ico"/, `${f}: no .ico link`);
+    assert.match(html, /<link rel="icon" type="image\/png"[^>]*favicon-96x96\.png"/, `${f}: no png link`);
+  }
+
+  // The offline artifact inlines the same PNG — file:// has nothing to fetch.
+  const artifact = read(path.join(ROOT, 'dist', 'pantheon-registry.html'));
+  const png = fs.readFileSync(path.join(BRAND, 'favicon-96x96.png')).toString('base64');
+  assert.ok(artifact.includes(`href="data:image/png;base64,${png}"`),
+    'the artifact does not inline the current assets/brand/favicon-96x96.png');
+  assert.ok(!/href="\/favicon\.ico"/.test(artifact),
+    'the artifact must not reference a sibling file it cannot fetch');
+
+  // The 5.9 MB favicon.svg from the generated set is a base64 PNG wrapped in
+  // an <image> element. Linking it would download 5.9 MB for identical pixels.
+  assert.ok(!fs.existsSync(path.join(BRAND, 'favicon.svg')),
+    'the raster-in-SVG favicon must not be committed; see assets/brand/README.md');
+  assert.ok(!/favicon\.svg/.test(shell), 'nothing should link favicon.svg');
 });
 
-// Large icons carry the owner's full drawing; the tab mark cannot. These are
-// file-backed and Pages-only, because iOS and Android fetch them by URL and the
-// single-file artifact has no siblings to fetch.
-test('the large icon set and PWA manifest ship correctly', () => {
-  for (const [f, min] of [['apple-touch-icon.png', 180], ['icon-192.png', 192], ['icon-512.png', 512]]) {
+test('the icon files and PWA manifest ship correctly', () => {
+  const sizes = { 'apple-touch-icon.png': 180, 'icon-192.png': 192, 'icon-512.png': 512, 'favicon-96x96.png': 96 };
+  for (const [f, px] of Object.entries(sizes)) {
     const p = path.join(SITE, f);
     assert.ok(fs.existsSync(p), `${f} was not copied into the site`);
-    // PNG IHDR: width/height are big-endian uint32 at bytes 16..24.
-    const buf = fs.readFileSync(p);
-    assert.strictEqual(buf.readUInt32BE(16), min, `${f} is not ${min}px wide`);
-    assert.strictEqual(buf.readUInt32BE(20), min, `${f} is not ${min}px tall`);
+    const buf = fs.readFileSync(p);           // PNG IHDR: w/h at bytes 16..24
+    assert.strictEqual(buf.readUInt32BE(16), px, `${f} is not ${px}px wide`);
+    assert.strictEqual(buf.readUInt32BE(20), px, `${f} is not ${px}px tall`);
   }
-
-  const shell = read(path.join(SITE, 'index.html'));
-  assert.match(shell, /<link rel="apple-touch-icon" sizes="180x180"/, 'apple-touch-icon is linked');
-  assert.match(shell, /<link rel="manifest"/, 'manifest is linked');
+  // The .ico must carry real 16/32/48 frames, not one downscale.
+  const ico = fs.readFileSync(path.join(SITE, 'favicon.ico'));
+  assert.strictEqual(ico.readUInt16LE(0), 0, 'ICO reserved field');
+  assert.strictEqual(ico.readUInt16LE(2), 1, 'ICO type is icon');
+  const frames = ico.readUInt16LE(4);
+  const widths = Array.from({ length: frames }, (_, i) => ico[6 + i * 16] || 256).sort((a, b) => a - b);
+  assert.deepStrictEqual(widths, [16, 32, 48], 'favicon.ico should carry 16/32/48 frames');
 
   const mf = JSON.parse(read(path.join(SITE, 'site.webmanifest')));
   // The icon generator's default manifest says "MyWebSite" with a white theme.
-  // Shipping that reads worse than shipping nothing.
   assert.strictEqual(mf.name, 'Pantheon Registry');
-  assert.ok(!/MyWebSite|MySite/.test(JSON.stringify(mf)), 'no generator boilerplate left in the manifest');
+  assert.ok(!/MyWebSite|MySite/.test(JSON.stringify(mf)), 'no generator boilerplate in the manifest');
   assert.strictEqual(mf.theme_color, '#FAFAF7', 'theme colour is the app paper, not white');
-  assert.deepStrictEqual(mf.icons.map((i) => i.sizes), ['192x192', '512x512']);
   for (const i of mf.icons) {
     assert.ok(fs.existsSync(path.join(SITE, i.src.replace(/^\//, ''))), `${i.src} is missing`);
   }

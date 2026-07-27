@@ -149,6 +149,16 @@ const ogTags = (title, desc, url, type = 'article') =>
 
 // regHref: the tradition hub pages live one directory down, so the footer's
 // link back to the full registry cannot be a bare 'index.html' for them.
+// The owner's mark (assets/brand/), copied to the site root by main(). Every
+// static page needs these: without them each of the 6,000+ pages fires a
+// request for /favicon.ico and takes a 404, which Lighthouse counts under
+// errors-in-console. Absolute URLs because these pages sit at two directory
+// depths (registry/ and registry/tradition/).
+const ICON_TAGS = `<link rel="icon" href="${BASE}favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="96x96" href="${BASE}favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="${BASE}apple-touch-icon.png">
+`;
+
 const page = (title, desc, body, extraHead = '', url = BASE, type = 'website', regHref = 'index.html') => `<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
@@ -156,6 +166,7 @@ const page = (title, desc, body, extraHead = '', url = BASE, type = 'website', r
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow">
+${ICON_TAGS}
 ${ogTags(title, desc, url, type)}${extraHead}<style>${STYLE}</style>
 </head><body>
 ${body}
@@ -634,6 +645,9 @@ function enrichShell() {
   // (build.py, from assets/favicon.svg) because it must also work in the
   // file:// artifact; these are file-backed and Pages-only, since iOS and
   // Android fetch them by URL.
+  // build.py already emits the two <link rel="icon"> tags in the shell (it
+  // needs to, because the artifact takes a different form). These are the
+  // extras only the deployed site can use.
   const icons = `<link rel="apple-touch-icon" sizes="180x180" href="${BASE}apple-touch-icon.png">
 <link rel="manifest" href="${BASE}site.webmanifest">
 <meta name="theme-color" content="#FAFAF7">
@@ -726,7 +740,7 @@ function main() {
   // Brand icons (assets/brand/README.md) + the PWA manifest. The generated
   // manifest from the icon tool shipped as "MyWebSite" with a white theme —
   // written here instead so it carries the real name and the paper ground.
-  for (const f of ['apple-touch-icon.png', 'icon-192.png', 'icon-512.png']) {
+  for (const f of ['favicon.ico', 'favicon-96x96.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png']) {
     const src = path.join(ROOT, 'assets', 'brand', f);
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(SITE, f));
   }
