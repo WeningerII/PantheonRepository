@@ -306,6 +306,16 @@ __ANALYTICS__
      network) while display=swap already keeps text readable without it. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- react + react-dom are render-blocking and live on cdnjs, so production
+     pays a cold DNS + TCP + TLS handshake to a third origin before first
+     paint can even begin — and their <script> tags sit ~26 KB gz into the
+     document, far past where the preload scanner would otherwise warm the
+     connection. Lantern models the handshake at ~675 ms cold vs ~75 ms warm.
+     UNVERIFIED here: every local run rewrites cdnjs to a same-origin path,
+     so this cost is invisible in our lab and this line is reasoned, not
+     measured. It is also free if it turns out not to help. -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"></noscript>
 
