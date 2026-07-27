@@ -272,6 +272,70 @@ test('README and package.json corpus counts match the built corpus', () => {
     'package.json description restates the same counts');
 });
 
+// The owner's mark, from assets/brand/, is the icon everywhere. It is served
+// as files on the site and inlined only in the offline artifact, which has no
+// siblings to fetch. Pin the whole arrangement: an icon that silently stops
+// being declared is exactly the 404 this started as.
+test('the owner mark is the icon in every entry point', () => {
+  const BRAND = path.join(ROOT, 'assets', 'brand');
+
+  // Deployed shell + every static page link the files.
+  const shell = read(path.join(SITE, 'index.html'));
+  assert.match(shell, /<link rel="icon" href="\/favicon\.ico" sizes="32x32">/);
+  assert.match(shell, /<link rel="icon" type="image\/png" sizes="96x96" href="\/favicon-96x96\.png">/);
+  assert.match(shell, /<link rel="apple-touch-icon" sizes="180x180"/);
+  assert.match(shell, /<link rel="manifest"/);
+
+  // All 6,000+ static pages, at both directory depths, previously declared
+  // nothing at all and took a /favicon.ico 404 apiece.
+  for (const f of ['greek_hesiod_zeus.html', 'index.html', path.join('tradition', 'norse.html')]) {
+    const html = read(path.join(REG, f));
+    assert.match(html, /<link rel="icon" href="https?:\/\/[^"]*favicon\.ico"/, `${f}: no .ico link`);
+    assert.match(html, /<link rel="icon" type="image\/png"[^>]*favicon-96x96\.png"/, `${f}: no png link`);
+  }
+
+  // The offline artifact inlines the same PNG — file:// has nothing to fetch.
+  const artifact = read(path.join(ROOT, 'dist', 'pantheon-registry.html'));
+  const png = fs.readFileSync(path.join(BRAND, 'favicon-96x96.png')).toString('base64');
+  assert.ok(artifact.includes(`href="data:image/png;base64,${png}"`),
+    'the artifact does not inline the current assets/brand/favicon-96x96.png');
+  assert.ok(!/href="\/favicon\.ico"/.test(artifact),
+    'the artifact must not reference a sibling file it cannot fetch');
+
+  // The 5.9 MB favicon.svg from the generated set is a base64 PNG wrapped in
+  // an <image> element. Linking it would download 5.9 MB for identical pixels.
+  assert.ok(!fs.existsSync(path.join(BRAND, 'favicon.svg')),
+    'the raster-in-SVG favicon must not be committed; see assets/brand/README.md');
+  assert.ok(!/favicon\.svg/.test(shell), 'nothing should link favicon.svg');
+});
+
+test('the icon files and PWA manifest ship correctly', () => {
+  const sizes = { 'apple-touch-icon.png': 180, 'icon-192.png': 192, 'icon-512.png': 512, 'favicon-96x96.png': 96 };
+  for (const [f, px] of Object.entries(sizes)) {
+    const p = path.join(SITE, f);
+    assert.ok(fs.existsSync(p), `${f} was not copied into the site`);
+    const buf = fs.readFileSync(p);           // PNG IHDR: w/h at bytes 16..24
+    assert.strictEqual(buf.readUInt32BE(16), px, `${f} is not ${px}px wide`);
+    assert.strictEqual(buf.readUInt32BE(20), px, `${f} is not ${px}px tall`);
+  }
+  // The .ico must carry real 16/32/48 frames, not one downscale.
+  const ico = fs.readFileSync(path.join(SITE, 'favicon.ico'));
+  assert.strictEqual(ico.readUInt16LE(0), 0, 'ICO reserved field');
+  assert.strictEqual(ico.readUInt16LE(2), 1, 'ICO type is icon');
+  const frames = ico.readUInt16LE(4);
+  const widths = Array.from({ length: frames }, (_, i) => ico[6 + i * 16] || 256).sort((a, b) => a - b);
+  assert.deepStrictEqual(widths, [16, 32, 48], 'favicon.ico should carry 16/32/48 frames');
+
+  const mf = JSON.parse(read(path.join(SITE, 'site.webmanifest')));
+  // The icon generator's default manifest says "MyWebSite" with a white theme.
+  assert.strictEqual(mf.name, 'Pantheon Registry');
+  assert.ok(!/MyWebSite|MySite/.test(JSON.stringify(mf)), 'no generator boilerplate in the manifest');
+  assert.strictEqual(mf.theme_color, '#FAFAF7', 'theme colour is the app paper, not white');
+  for (const i of mf.icons) {
+    assert.ok(fs.existsSync(path.join(SITE, i.src.replace(/^\//, ''))), `${i.src} is missing`);
+  }
+});
+
 // ── lead-portrait infobox (docs/image-licensing.md) ─────────────────────────
 // leadFigure builds the PD/CC0 <figure> that figurePage floats top-right. The
 // committed image manifest is empty, so unit-test the pure builder directly
