@@ -19,16 +19,32 @@
 
 const { useRef: __bRef, useEffect: __bEff, useMemo: __bMemo, useState: __bState } = React;
 
-// ── Chunked row reveal ─────────────────────────────────────────────────
-// Committing all ~4,000 BrowseRows in one pass holds React's initial
-// commit window at ~1.3 s — profiled as one giant style/layout frame of
-// the full table, not scripting. Render the first screenful synchronously,
-// then append the remainder in requestAnimationFrame batches. Each batch
-// re-lays-out every row mounted so far, so total reveal work scales with
-// rows²/batch: smaller batches give smoother frames but strictly more
-// total layout. 500 rows/frame measures ~200-400 ms per batch and mounts
-// the full corpus in ~2.5 s; interaction stays responsive because any
-// filter/search change resets the window to the first screenful.
+// ── Demand-driven row reveal ───────────────────────────────────────────
+// Mount a screenful, then grow only as the reader scrolls. This used to be
+// an unconditional rAF ramp that walked to the end of the corpus on every
+// load; at 5,721 figures that committed 100,167 elements / 151,797
+// LayoutObjects and accounted for 92% of all Style & Layout time. Cost is
+// linear in MOUNTED rows (~1.15 ms/figure at mobile 4x CPU), so the ramp
+// also scaled straight into the corpus: ~15 s of mobile layout at 10,000
+// figures. It additionally pushed Lighthouse's axe sweep — one evaluate
+// under a hard 60,000 ms protocol timeout — from ~1 s to 55-154 s
+// depending on form factor and CPU, erroring `document-title`/`image-alt`
+// and nulling the whole Accessibility and SEO categories.
+//
+// Three things now grow the window, all in the effects below: the scroll
+// sentinel (the normal path), a ramp that chases a distant cursor target
+// (deep links), and a ratchet that persists whatever either produced.
+//
+// KNOWN TRADE: the browser's own Ctrl+F only reaches mounted rows. The
+// app's search covers the full corpus regardless; native find does not.
+// The scrollbar thumb also grows as you scroll. Both were accepted
+// deliberately — see docs/load-performance-findings.md §3.1.
+//
+// REVEAL_BATCH stays at 500: layout is linear rather than rows²/batch (an
+// earlier comment here claimed quadratic; measured ratio between batch=250
+// and batch=5,721 is 1.24x, not ~11x), and 500 sits at the blocking-time
+// minimum — longest single task is 202/253/635/1,795 ms across
+// 250/500/2000/5721.
 const REVEAL_FIRST = 150;
 const REVEAL_BATCH = 500;
 // jsdom escape hatch: the test harness asserts thousands of rows are
@@ -228,15 +244,73 @@ function Browse({ filters, selection, onOpen }) {
   const syncCover = coverIdx + 1 <= base + REVEAL_BATCH ? coverIdx + 1 : 0;
   const revealCount = Math.min(filtered.length, Math.max(base, syncCover));
 
+  // Ratchet. `revealCount` is render-derived; `reveal.count` is what persists
+  // across commits. While the ramp below was unconditional it did that
+  // persisting as a side effect. Now that it only chases distant targets,
+  // j/k stepping past the frontier mounts rows through `syncCover` that
+  // would unmount the moment the cursor stepped back — mounted rows going
+  // DOWN, which is exactly the collapse verify-coldload.cjs exists to catch.
+  // Persist every gain, from whichever source.
   __bEff(() => {
-    if (REVEAL_ALL || revealCount >= filtered.length) return;
+    if (REVEAL_ALL) return;
+    setReveal(prev => (prev.list === filtered && prev.count < revealCount
+      ? { list: filtered, count: revealCount }
+      : prev));
+  }, [filtered, revealCount]);
+
+  // Distant-target ramp — the surviving piece of the old unconditional
+  // reveal. Deep links and cross-view jumps address rows by index into
+  // `filtered`, and the highlight/auto-scroll cannot exist until that row is
+  // mounted, so a target beyond the window still has to be walked to. Unlike
+  // the old loop this stops as soon as the target is covered rather than
+  // running on to the end of the corpus.
+  __bEff(() => {
+    if (REVEAL_ALL) return;
+    if (coverIdx < revealCount || revealCount >= filtered.length) return;
     const raf = window.requestAnimationFrame(() => {
       setReveal(prev => (prev.list === filtered && prev.count < filtered.length
-        ? { list: filtered, count: Math.max(prev.count, revealCount) + REVEAL_BATCH }
+        ? { list: filtered, count: Math.min(filtered.length, Math.max(prev.count, revealCount) + REVEAL_BATCH) }
         : prev));
     });
     return () => window.cancelAnimationFrame(raf);
-  }, [filtered, revealCount]);
+  }, [filtered, revealCount, coverIdx]);
+
+  // Demand-driven growth. A sentinel sits below the last mounted row and is
+  // watched against `.browse-scroll` with a screenful of margin, so the next
+  // batch commits before the reader can scroll into blank space. This is what
+  // replaces the old ramp: scrolling is now the only thing that mounts the
+  // body of the corpus, which is why cold load stays at REVEAL_FIRST rows
+  // instead of walking to 5,721.
+  const sentinelRef = __bRef(null);
+  const [nearEnd, setNearEnd] = __bState(false);
+  __bEff(() => {
+    if (REVEAL_ALL || typeof window.IntersectionObserver !== 'function') return;
+    const el = sentinelRef.current;
+    if (!el) return;
+    // A stale `true` from the previous result set would spend one batch on
+    // the new one before the observer corrected itself.
+    setNearEnd(false);
+    const io = new window.IntersectionObserver(
+      entries => setNearEnd(entries[entries.length - 1].isIntersecting),
+      { root: el.closest('.browse-scroll'), rootMargin: '800px 0px' }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [filtered]);
+
+  // IntersectionObserver reports TRANSITIONS, so a single callback can only
+  // ever buy one batch. Re-running this on `revealCount` keeps growing while
+  // the sentinel remains within margin, and stops when the observer reports
+  // it has been pushed back out of view.
+  __bEff(() => {
+    if (REVEAL_ALL || !nearEnd || revealCount >= filtered.length) return;
+    const raf = window.requestAnimationFrame(() => {
+      setReveal(prev => (prev.list === filtered && prev.count < filtered.length
+        ? { list: filtered, count: Math.min(filtered.length, Math.max(prev.count, revealCount) + REVEAL_BATCH) }
+        : prev));
+    });
+    return () => window.cancelAnimationFrame(raf);
+  }, [filtered, revealCount, nearEnd]);
 
   // Build a compact list of active-filter chips so the user always sees
   // what's narrowing the result count and can shake any one off.
@@ -384,6 +458,11 @@ function Browse({ filters, selection, onOpen }) {
             </tbody>
           </table>
         )}
+        {/* Growth sentinel. Rendered unconditionally so the observer always
+            has a node to watch; on an empty result set the growth effect
+            short-circuits on `revealCount >= filtered.length` anyway. Sits
+            outside the table because a <div> is not valid table content. */}
+        <div ref={sentinelRef} className="browse-sentinel" aria-hidden="true" />
       </div>
     </>
   );

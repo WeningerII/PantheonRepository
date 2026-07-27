@@ -241,6 +241,11 @@ Combined with the persist-guard fix below, artifact boot should land near
 5. **Browse chunked row reveal** (first ~150 rows sync, rest in rAF batches;
    full render under jsdom so `render.test`'s single-flush assertion holds).
    Ordered *before* the deploy flip so first-commit numbers hold on day one.
+   **Superseded 2026-07-27**: the unconditional rAF ramp still mounted the whole
+   corpus, which timed out Lighthouse's accessibility gatherer and nulled the
+   Accessibility and SEO categories. Reveal is now demand-driven (scroll
+   sentinel) and cold load stays at ~150 rows — see
+   [`load-performance-findings.md`](load-performance-findings.md) §3.1.
 6. **`build.py --pages`** + offline fixture-backed multi-file jsdom tests +
    `manifest.test` extension.
 7. **Deploy flip**: `deploy-pages.yml` assembles shell + `data/` + artifact;

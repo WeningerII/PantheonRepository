@@ -19,7 +19,8 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # Raised from 15 to cover the Chromium download and the cold-load probe.
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,6 +41,18 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      # Browse mounts rows on demand. If that regresses to mounting the whole
+      # corpus, Lighthouse's Accessibility gatherer (one CDP evaluate under a
+      # hard 60s cap) times out and nulls the Accessibility AND SEO categories
+      # — a silent, score-destroying failure no unit test can see. jsdom cannot
+      # observe it either: there is no layout and the reveal short-circuits to
+      # mount everything. It needs a real browser.
+      - name: Install Chromium for the cold-load probe
+        run: npx playwright@1.49.1 install chromium
+
+      - name: Verify cold-load and demand-reveal stability
+        run: node scripts/verify-coldload.cjs
 
       # The MCP connector (mcp/) has its own deps and query engine that the
       # main suite doesn't touch; exercise its smoke suite (real-question
