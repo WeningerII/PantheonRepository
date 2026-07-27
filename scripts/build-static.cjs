@@ -630,6 +630,14 @@ function enrichShell() {
   if (html.includes('<!-- pr-static -->')) return; // idempotent (fresh build overwrites)
 
   const trads = new Set(IDS.map((id) => PEOPLE[id].tradition)).size;
+  // Large icons + PWA manifest. The tab favicon is a data: URI in the template
+  // (build.py, from assets/favicon.svg) because it must also work in the
+  // file:// artifact; these are file-backed and Pages-only, since iOS and
+  // Android fetch them by URL.
+  const icons = `<link rel="apple-touch-icon" sizes="180x180" href="${BASE}apple-touch-icon.png">
+<link rel="manifest" href="${BASE}site.webmanifest">
+<meta name="theme-color" content="#FAFAF7">
+`;
   // Site-level structured data. The per-figure pages already carry Person
   // JSON-LD; the shell — the URL that actually gets shared and indexed — had
   // none, so a search engine had no machine-readable statement of what the
@@ -654,7 +662,7 @@ function enrichShell() {
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="${BASE}">
 <link rel="sitemap" type="application/xml" href="${BASE}sitemap.xml">
-<script type="application/ld+json">${JSON.stringify(siteLd).replace(/</g, '\\u003c')}</script>
+${icons}<script type="application/ld+json">${JSON.stringify(siteLd).replace(/</g, '\\u003c')}</script>
 `;
   const noscript = `<!-- pr-static -->
 <noscript>
@@ -715,6 +723,27 @@ function main() {
   // Self-hosted PD/CC0 figure portraits (docs/image-licensing.md). Copy the whole
   // tree so the static pages and the SPA serve the same files; exclude the _meta
   // provenance archive (kept in the repo, not deployed).
+  // Brand icons (assets/brand/README.md) + the PWA manifest. The generated
+  // manifest from the icon tool shipped as "MyWebSite" with a white theme —
+  // written here instead so it carries the real name and the paper ground.
+  for (const f of ['apple-touch-icon.png', 'icon-192.png', 'icon-512.png']) {
+    const src = path.join(ROOT, 'assets', 'brand', f);
+    if (fs.existsSync(src)) fs.copyFileSync(src, path.join(SITE, f));
+  }
+  fs.writeFileSync(path.join(SITE, 'site.webmanifest'), JSON.stringify({
+    name: 'Pantheon Registry',
+    short_name: 'Pantheon',
+    description: `A source-cited index of ${IDS.length.toLocaleString()} mythological and historical figures.`,
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#FAFAF7',
+    theme_color: '#FAFAF7',
+    icons: [
+      { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+  }, null, 2) + '\n');
+
   const imgSrc = path.join(ROOT, 'assets', 'images');
   if (fs.existsSync(imgSrc)) {
     fs.cpSync(imgSrc, path.join(SITE, 'assets', 'images'), {

@@ -1,28 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-<!-- Pantheon Registry mark: alpha over omega.
-     The triangle (A) apexes above the ring; the ring (omega) is wide enough to
-     bulge past the triangle's legs, and its tails sweep down and inward to the
-     baseline. Drawn on a 64-unit grid at a 4.2 stroke: heavy enough that the
-     interior counters survive a 16px tab favicon, light enough that they do not
-     close up, chosen by rasterising at 16/20/32/48 rather than by eye at full
-     size. The stroke colour is the accent token from app/styles.css (#B5371F);
-     the background is left transparent so the mark reads on light and dark tab
-     strips alike.
+<!-- Pantheon Registry mark: alpha over omega. The tab-sized cut.
 
-     Two constraints on editing this file:
+     This is the SMALL end of the icon set. The owner's drawing — a family of
+     20-60 offset strokes with soft gradients — is what ships at 180px and
+     above (assets/brand/), because that detail is the whole point of it and it
+     survives there. At 16px the same file resolves to a pale pink smudge, so
+     this is a redraw of the same form in as few strokes as it can be made
+     from: triangle (A) apexing above a ring (omega) wide enough to bulge past
+     its legs, the ring's tails sweeping down and inward to the baseline.
+
+     Weight and scale were chosen by rasterising candidates at 16/20/32 on both
+     light and dark tab strips and looking. 3.0 on a 64-unit grid, drawn nearly
+     edge to edge, keeps the interior counters open at 16px; the first version
+     of this file used 4.2 in a smaller frame and read as a solid blob.
+
+     Two constraints on editing:
      1. It must stay well-formed XML. An XML comment may not contain a double
-        hyphen ANYWHERE inside it, which is subtle enough that the first version
-        of this comment referenced the CSS custom property by name and silently
-        made the whole file unparseable.
+        hyphen ANYWHERE inside it, which is subtle enough that an earlier
+        version referenced the CSS custom property by name and silently made
+        the whole file unparseable. test/static.test.cjs now parses it.
      2. build.py strips comments and inlines the rest as a data: URI (the
-        __FAVICON__ token), so this is the single source for both distributions
-        and for index.html. Keep it small. -->
-<g fill="none" stroke="#B5371F" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
-<path d="M26.49 53.23 A20 20 0 1 1 37.51 53.23"/>
-<path d="M26.49 53.23 C27.49 62.23 21 52 29 55"/>
-<path d="M37.51 53.23 C36.51 62.23 43 52 35 55"/>
-<path d="M32 5 L59 55"/>
-<path d="M32 5 L5 55"/>
-<path d="M5 55 L59 55"/>
+        __FAVICON__ token), so this is the single source for both
+        distributions and for index.html. Keep it small. -->
+<g fill="none" stroke="#B5371F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M26.21 55.19 A21 21 0 1 1 37.79 55.19"/>
+<path d="M26.21 55.19 C27.21 62.19 22 55 29 57"/>
+<path d="M37.79 55.19 C36.79 62.19 42 55 35 57"/>
+<path d="M32 3 L61 57"/>
+<path d="M32 3 L3 57"/>
+<path d="M3 57 L61 57"/>
 </g>
 </svg>

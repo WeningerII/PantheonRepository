@@ -308,6 +308,43 @@ test('the favicon is the committed mark, identically in every entry point', () =
   }
   // No leftover .ico request, which is what the 404 was in the first place.
   assert.ok(!/href="[^"]*favicon\.ico"/.test(shell), 'nothing should request favicon.ico');
+
+  // The tab mark must stay a hand-drawn vector, not the owner's detailed
+  // artwork. The generated icon set shipped a 5.9 MB "favicon.svg" that was a
+  // single <image> wrapping a base64 raster; inlining that would put 5.9 MB in
+  // every page and still be a bitmap at 16px.
+  assert.ok(!/<image\b/.test(svg), 'the tab mark must be vector, not a wrapped raster');
+  assert.ok(!/base64/.test(svg), 'no embedded raster in the tab mark');
+  assert.ok(uri.length < 1500, `tab mark data: URI is ${uri.length} B — it ships in every page`);
+});
+
+// Large icons carry the owner's full drawing; the tab mark cannot. These are
+// file-backed and Pages-only, because iOS and Android fetch them by URL and the
+// single-file artifact has no siblings to fetch.
+test('the large icon set and PWA manifest ship correctly', () => {
+  for (const [f, min] of [['apple-touch-icon.png', 180], ['icon-192.png', 192], ['icon-512.png', 512]]) {
+    const p = path.join(SITE, f);
+    assert.ok(fs.existsSync(p), `${f} was not copied into the site`);
+    // PNG IHDR: width/height are big-endian uint32 at bytes 16..24.
+    const buf = fs.readFileSync(p);
+    assert.strictEqual(buf.readUInt32BE(16), min, `${f} is not ${min}px wide`);
+    assert.strictEqual(buf.readUInt32BE(20), min, `${f} is not ${min}px tall`);
+  }
+
+  const shell = read(path.join(SITE, 'index.html'));
+  assert.match(shell, /<link rel="apple-touch-icon" sizes="180x180"/, 'apple-touch-icon is linked');
+  assert.match(shell, /<link rel="manifest"/, 'manifest is linked');
+
+  const mf = JSON.parse(read(path.join(SITE, 'site.webmanifest')));
+  // The icon generator's default manifest says "MyWebSite" with a white theme.
+  // Shipping that reads worse than shipping nothing.
+  assert.strictEqual(mf.name, 'Pantheon Registry');
+  assert.ok(!/MyWebSite|MySite/.test(JSON.stringify(mf)), 'no generator boilerplate left in the manifest');
+  assert.strictEqual(mf.theme_color, '#FAFAF7', 'theme colour is the app paper, not white');
+  assert.deepStrictEqual(mf.icons.map((i) => i.sizes), ['192x192', '512x512']);
+  for (const i of mf.icons) {
+    assert.ok(fs.existsSync(path.join(SITE, i.src.replace(/^\//, ''))), `${i.src} is missing`);
+  }
 });
 
 // ── lead-portrait infobox (docs/image-licensing.md) ─────────────────────────
