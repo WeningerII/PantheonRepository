@@ -325,7 +325,10 @@ function PowerDetail({ power, byId, onClose, onPrev, onNext, canPrev, canNext, o
   const [local, setLocal] = __pState(power || null);
   const [closing, setClosing] = __pState(false);
   const panelRef = __pRef(null);
-  const openerRef = __pRef(null);
+
+  // Focus in on open, Tab trapped while open, restored on close — keyed on
+  // `local` so the trap outlives the 180 ms exit below. (Detail.jsx.)
+  window.useModalFocus(panelRef, !!local);
 
   __pEff(() => {
     if (power) { setLocal(power); setClosing(false); return; }
@@ -333,25 +336,11 @@ function PowerDetail({ power, byId, onClose, onPrev, onNext, canPrev, canNext, o
       setClosing(true);
       const t = setTimeout(() => {
         setLocal(null); setClosing(false);
-        const opener = openerRef.current; openerRef.current = null;
-        if (opener && opener.focus && document.contains(opener)) {
-          try { opener.focus({ preventScroll: true }); } catch (_) {}
-        }
       }, 180);
       return () => clearTimeout(t);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [power && power.id]);
-
-  const hadRef = __pRef(false);
-  __pEff(() => {
-    const has = !!local;
-    if (has && !hadRef.current) {
-      if (!openerRef.current) openerRef.current = document.activeElement;
-      if (panelRef.current) { try { panelRef.current.focus({ preventScroll: true }); } catch (_) {} }
-    }
-    hadRef.current = has;
-  }, [!!local]);
 
   __pEff(() => {
     if (!local) return;

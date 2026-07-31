@@ -246,9 +246,16 @@ test('pages carry Open Graph / Twitter share tags + the share image exists', () 
   assert.ok(fs.existsSync(path.join(SITE, 'og-image.png')), 'og-image.png is emitted at the site root');
   const zeus = read(path.join(REG, 'greek_hesiod_zeus.html'));
   assert.match(zeus, /<meta property="og:title" content="Zeus/, 'figure og:title');
-  assert.match(zeus, /<meta property="og:image" content="https?:\/\/\S+\/og-image\.png">/, 'figure og:image');
+  // An image-bearing page unfurls as its OWN artwork; the house card is the
+  // fallback for pages with no picture, not the share image for all of them.
+  const own = /https?:\/\/\S+\/assets\/images\/figures\/greek_hesiod_zeus\.webp/.source;
+  assert.match(zeus, new RegExp(`<meta property="og:image" content="${own}">`), 'figure og:image is its own artwork');
+  assert.match(zeus, new RegExp(`<meta name="twitter:image" content="${own}">`), 'figure twitter:image matches');
   assert.match(zeus, /<meta property="og:type" content="article">/, 'figure og:type is article');
   assert.match(zeus, /<meta name="twitter:card" content="summary_large_image">/, 'twitter card');
+  const hub = read(path.join(REG, 'tradition', 'norse.html'));
+  assert.match(hub, /<meta property="og:image" content="https?:\/\/\S+\/og-image\.png">/,
+    'a page with no picture of its own falls back to the house card');
   const shell = read(path.join(SITE, 'index.html'));
   assert.match(shell, /property="og:image"[^>]*og-image\.png/, 'shell og:image');
 });
@@ -359,8 +366,8 @@ test('the icon files and PWA manifest ship correctly', () => {
 
 // ── lead-portrait infobox (docs/image-licensing.md) ─────────────────────────
 // leadFigure builds the PD/CC0 <figure> that figurePage floats top-right. The
-// committed image manifest is empty, so unit-test the pure builder directly
-// with a synthetic images.json record. Imported from its own corpus-free lib
+// manifest covers only part of the corpus, so unit-test the pure builder
+// directly with a synthetic images.json record. Imported from its own corpus-free lib
 // (requiring build-static.cjs would load the 28 MB corpus into this otherwise
 // light test process — enough concurrent memory to OOM the jsdom suite).
 const { leadFigure } = require('../scripts/lib/lead-figure.cjs');
@@ -383,15 +390,20 @@ test('leadFigure emits a self-hosted, credited PD/CC0 infobox', () => {
   // Self-hosted under assets/images/figures/ — never a Commons hotlink.
   assert.match(html, /<img src="https?:\/\/\S+assets\/images\/figures\/greek_hesiod_zeus\.webp"/, 'self-hosted image src');
   assert.ok(!/upload\.wikimedia\.org/.test(html), 'must not hotlink Commons upload host');
-  // Intrinsic dimensions reserve the box (no-shift), lazy + async decode.
+  // Intrinsic dimensions reserve the box (no-shift), async decode. The lead
+  // portrait is the LCP element on every page that has one, so it must be
+  // fetchpriority="high" and never loading="lazy" — see lead-figure.cjs.
   assert.match(html, /width="800"/);
   assert.match(html, /height="1000"/);
-  assert.match(html, /loading="lazy"/);
+  assert.match(html, /fetchpriority="high"/);
+  assert.ok(!/loading="lazy"/.test(html), 'the LCP lead portrait must not be lazy');
   assert.match(html, /decoding="async"/);
   // Not the bare name: it would duplicate the <h1> beside it (Lighthouse's
-  // redundant-alt audit) and say nothing about the picture.
-  assert.match(html, /alt="Depiction of Zeus by Rembrandt"/, 'alt describes the image and credits the artist');
+  // redundant-alt audit) and say nothing about the picture. The credit stays
+  // out of alt and lives in the figcaption alone — see altTextFor().
+  assert.match(html, /alt="Depiction of Zeus"/, 'alt describes the image');
   assert.ok(!/alt="Zeus"/.test(html), 'alt must not be the bare figure name');
+  assert.ok(!/alt="[^"]*Rembrandt/.test(html), 'the credit is not repeated in alt');
   // Courtesy credit: author + license, both linking back to Commons.
   assert.match(html, /Rembrandt/, 'author credited');
   assert.match(html, /Public domain/, 'license shown');

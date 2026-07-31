@@ -97,7 +97,12 @@ input:focus, textarea:focus, button:focus { outline: none; }
   outline-offset: 2px;
   border-radius: 3px;
 }
+/* Text fields must be named here too: input:focus above is (0,1,1) and
+   outranks the bare :focus-visible rule, so they'd keep the suppression with
+   nothing put back. axe can't see that, which is how it survived at 100. */
 button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
 [role="checkbox"]:focus-visible,
 .btn:focus-visible,
 .rail-row:focus-visible {
@@ -2312,10 +2317,10 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   padding: 5px 8px;
   width: 150px;
 }
-.atlas-find:focus {
-  outline: none;
-  border-color: var(--accent-ring);
-}
+/* :not() keeps the suppression on pointer focus only — bare :focus is (0,2,0)
+   here and would outrank the keyboard ring, stripping it from this field. */
+.atlas-find:focus { border-color: var(--accent-ring); }
+.atlas-find:focus:not(:focus-visible) { outline: none; }
 .atlas-find::placeholder { color: var(--faint); }
 .graph-focused-label {
   font: 400 11px/1 var(--font-mono);
@@ -3183,7 +3188,8 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   font: 400 13px/1 var(--font-sans);
   color: var(--ink);
 }
-.items-search input:focus { border-color: var(--accent-ring); outline: none; }
+.items-search input:focus { border-color: var(--accent-ring); }
+.items-search input:focus:not(:focus-visible) { outline: none; } /* see .atlas-find */
 .items-search-clear {
   position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
   width: 18px; height: 18px; border-radius: 3px;

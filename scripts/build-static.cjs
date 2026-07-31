@@ -32,6 +32,7 @@ const path = require('path');
 const { loadCorpus } = require('./build-tiers.cjs');
 const { citeUrl } = require('../app/cite-links.js');
 const { leadFigure } = require('./lib/lead-figure.cjs');
+const { langAttr, markRuns } = require('./lib/bcp47.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE = process.env.PR_STATIC_OUT || path.join(ROOT, 'dist', 'site');
@@ -57,6 +58,39 @@ const primary = (p) => (p.name && p.name.primary) || p.id;
 const nameOf = (id) => (PEOPLE[id] ? primary(PEOPLE[id]) : id);
 const humanize = (s) => String(s == null ? '' : s).replace(/[-_]+/g, ' ').trim();
 
+// The last full stop inside the budget that really ends a sentence: a capital
+// (or an opening quote) has to follow it, or "…succeeding his nephew Ramesses
+// V. Born c." and "…daughter of Clymenus in Hom. Od." pass as endings — 59 of
+// them did, and each reads as a bug rather than a summary. Below two thirds of
+// the budget a sentence end costs more text than it buys polish, so the search
+// stops there and the word-boundary fallback takes over.
+const sentenceEnd = (s, max) => {
+  for (let i = max - 1; i >= Math.floor(max * 0.66); i--) {
+    if ('.!?'.indexOf(s[i]) < 0 || s[i + 1] !== ' ') continue;
+    if (/[\p{Lu}"'(“‘]/u.test(s[i + 2] || '')) return i;
+  }
+  return -1;
+};
+
+// Truncate to a boundary a reader can see rather than to a character count.
+// The meta descriptions were `String(p.notes).slice(0, 200)`, which cut
+// mid-word on 2,947 of the 4,517 descriptions it truncated, and normalised
+// whitespace only AFTER slicing — so a note with a newline inside the first 200
+// characters silently lost whatever the collapse removed, and 771 descriptions
+// came out short. Google's own snippet truncation fires long before 200
+// characters, so what this actually fixes is Slack/X/Facebook unfurls and the
+// LLM crawlers that read the tag verbatim. Shared with the llms.txt entry
+// summaries, so the two never disagree about where a note ends.
+const clip = (text, max) => {
+  const s = String(text == null ? '' : text).replace(/\s+/g, ' ').trim();
+  if (s.length <= max) return s;
+  const stop = sentenceEnd(s, max);
+  if (stop >= 0) return s.slice(0, stop + 1);
+  const head = s.slice(0, max);
+  const space = head.lastIndexOf(' ');
+  return (space > 0 ? head.slice(0, space) : head).replace(/[\s,;:·—–-]+$/, '') + '…';
+};
+
 // id -> children, built once
 const CHILDREN = new Map();
 for (const id of IDS) for (const pid of (PEOPLE[id].parentIds || [])) {
@@ -70,10 +104,25 @@ const sourcesOf = (p) => {
   return [...new Set(out)];
 };
 
+// One text run, ready to place in an element: [lang attribute, inner HTML].
+// A corpus that is ~97% non-Latin-script renders Ἀθηνᾶ, Анцәа and العزى inside
+// documents declared lang="en", so every run of corpus text that reaches the
+// page goes through here (scripts/lib/bcp47.cjs). When one script owns the
+// whole run the element carries the subtag; when the run is mixed — a native
+// name glossed in English prose — the element cannot honestly claim one, so the
+// non-Latin stretches inside get their own spans instead. Pure Latin text comes
+// back exactly as esc() left it.
+const scripted = (raw) => {
+  const l = langAttr(raw);
+  return l ? [l, esc(raw)] : ['', markRuns(esc(raw))];
+};
+
 // A figure link that only resolves to a page when the target actually exists.
-const figLink = (id) => (PEOPLE[id]
-  ? `<a href="${esc(id)}.html">${esc(nameOf(id))}</a>`
-  : esc(id));
+const figLink = (id) => {
+  if (!PEOPLE[id]) return esc(id);
+  const [l, html] = scripted(nameOf(id));
+  return `<a href="${esc(id)}.html"${l}>${html}</a>`;
+};
 
 // These pages are the JS-free mirror, but they are NOT crawler-only: they are
 // what Google and every LLM link resolves to, so a human lands here regularly.
@@ -112,6 +161,11 @@ h2{font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;
   border-top:1px solid var(--rule-2)}
 p{color:var(--ink-2)}
 .sub{font:italic 400 15px/1.4 var(--serif);color:var(--ink-3);margin:.6rem 0 1.6rem}
+/* The alias line sits directly under .sub. Its negative top margin collapses
+   against .sub's 1.6rem bottom (adjacent siblings collapse to the largest
+   positive plus the smallest negative), leaving the .6rem gap the two want,
+   without .sub having to know whether an alias line follows it. */
+.aka{font:400 13px/1.55 var(--sans);color:var(--ink-3);margin:-1rem 0 1.6rem}
 .crumb{font:400 12px/1 var(--mono);letter-spacing:.04em;color:var(--mute);
   margin-bottom:2rem}
 .crumb a{color:var(--mute)}
@@ -132,20 +186,36 @@ ul{padding-left:1.05rem;margin:.3rem 0}li{margin:.2rem 0;color:var(--ink-2)}
 footer{margin-top:4rem;padding-top:1.2rem;border-top:1px solid var(--rule);
   font-size:12px;color:var(--mute)}`;
 
+// The house card — the share image for every page that has no picture of its own.
 const OG_IMAGE = `${BASE}og-image.png`;
-const ogTags = (title, desc, url, type = 'article') =>
-  `<meta property="og:type" content="${type}">\n`
-  + `<meta property="og:site_name" content="Pantheon Registry">\n`
-  + `<meta property="og:title" content="${esc(title)}">\n`
-  + `<meta property="og:description" content="${esc(desc)}">\n`
-  + `<meta property="og:url" content="${esc(url)}">\n`
-  + `<meta property="og:image" content="${OG_IMAGE}">\n`
-  + `<meta property="og:image:width" content="1200">\n`
-  + `<meta property="og:image:height" content="630">\n`
-  + `<meta name="twitter:card" content="summary_large_image">\n`
-  + `<meta name="twitter:title" content="${esc(title)}">\n`
-  + `<meta name="twitter:description" content="${esc(desc)}">\n`
-  + `<meta name="twitter:image" content="${OG_IMAGE}">\n`;
+/**
+ * @param {object|null} img  the figure's images.json record, when it has one.
+ *   All 1,059 image-bearing pages used to unfurl as the identical house card,
+ *   which is the one thing a share preview is for. Resolve the filename from
+ *   the MANIFEST, never by appending an extension: 51 of the 1,059 are
+ *   .jpg/.png/.gif, so an `${id}.webp` guess 404s on every one of them.
+ */
+const ogTags = (title, desc, url, type = 'article', img = null) => {
+  const own = img && img.file;
+  const src = own ? `${BASE}assets/images/figures/${esc(img.file)}` : OG_IMAGE;
+  // Real intrinsic dimensions, so an unfurler reserves the right box instead of
+  // the house card's 1200×630. Omitted rather than guessed if the manifest
+  // record somehow lacks them.
+  const dims = own
+    ? (img.w && img.h ? `<meta property="og:image:width" content="${img.w}">\n<meta property="og:image:height" content="${img.h}">\n` : '')
+    : `<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n`;
+  return `<meta property="og:type" content="${type}">\n`
+    + `<meta property="og:site_name" content="Pantheon Registry">\n`
+    + `<meta property="og:title" content="${esc(title)}">\n`
+    + `<meta property="og:description" content="${esc(desc)}">\n`
+    + `<meta property="og:url" content="${esc(url)}">\n`
+    + `<meta property="og:image" content="${src}">\n`
+    + dims
+    + `<meta name="twitter:card" content="summary_large_image">\n`
+    + `<meta name="twitter:title" content="${esc(title)}">\n`
+    + `<meta name="twitter:description" content="${esc(desc)}">\n`
+    + `<meta name="twitter:image" content="${src}">\n`;
+};
 
 // regHref: the tradition hub pages live one directory down, so the footer's
 // link back to the full registry cannot be a bare 'index.html' for them.
@@ -159,21 +229,96 @@ const ICON_TAGS = `<link rel="icon" href="${BASE}favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" sizes="180x180" href="${BASE}apple-touch-icon.png">
 `;
 
-const page = (title, desc, body, extraHead = '', url = BASE, type = 'website', regHref = 'index.html') => `<!doctype html>
+// max-image-preview:large is what lets a figure's portrait appear at full size
+// in a search result and in Discover instead of a thumbnail; max-snippet:-1
+// lifts the snippet cap on pages whose whole value is the cited prose. Both are
+// opt-ins — the default is the restrictive one.
+// referrer: these pages link out to Commons, museum APIs and Google Books on
+// every citation, and with no policy set a browser sends the full path of the
+// figure page along. strict-origin-when-cross-origin sends only the origin.
+const page = (title, desc, body, extraHead = '', url = BASE, type = 'website', regHref = 'index.html', img = null) => `<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 ${ICON_TAGS}
-${ogTags(title, desc, url, type)}${extraHead}<style>${STYLE}</style>
+${ogTags(title, desc, url, type, img)}${extraHead}<style>${STYLE}</style>
 </head><body>
 ${body}
 <footer>Pantheon Registry — a source-cited index of the world's mythological and
 historical figures. <a href="${BASE}">Interactive app</a> ·
 <a href="${regHref}">Full registry</a></footer>
 </body></html>`;
+
+// ── page titles ──────────────────────────────────────────────────────────────
+// 546 figures shared 214 primary names: "Sun" belongs to 14 of them, "Moon" to
+// 13, "Coyote" to 11, and every one of those shipped the identical <title>.
+// Duplicate titles are duplicate results — the engine keeps one and drops the
+// rest — and a reader choosing between fourteen "Sun" links has nothing to go on.
+//
+// Two rules, and they pull opposite ways on the ~60-character budget a result
+// shows, so each is fenced to the case it is for:
+//   · a colliding name gets its tradition appended — but only if it is short
+//     enough to absorb one. (The longest colliding name is 23 characters, so
+//     the fence never fires today; it is what keeps the rule safe as the corpus
+//     grows, and prevents a fix for duplication from manufacturing truncation.)
+//   · a name past ~48 characters loses the " — Pantheon Registry" suffix, which
+//     on those 49 pages only pushes the part a reader needs further out of sight.
+const SUFFIX = ' — Pantheon Registry';
+const QUALIFY_MAX = 40;
+const SUFFIX_MAX = 48;
+
+// Global uniqueness must be computed over the WHOLE corpus before any title is
+// emitted — a name is only "unique" relative to every other figure, not to the
+// tradition being written.
+const NAME_COUNTS = (() => {
+  const m = new Map();
+  for (const id of IDS) { const n = primary(PEOPLE[id]); m.set(n, (m.get(n) || 0) + 1); }
+  return m;
+})();
+
+// Tradition, then type, then era — appended only as far as it takes to separate
+// a colliding group. Tradition alone leaves 19 pairs ambiguous (mostly Greek
+// figures attested twice, e.g. two Apollodoran Antiopes); type and era separate
+// 13 of those. The last 6 are near-duplicate corpus records that no field
+// distinguishes, and they keep the plain tradition rather than trailing a
+// qualifier that would not disambiguate anything.
+const qualifiersOf = (p) => [p.tradition || 'Unattributed', p.type, p.temporal && p.temporal.era]
+  .filter(Boolean).map(humanize);
+const headingAt = (id, depth) => {
+  const p = PEOPLE[id];
+  const n = primary(p);
+  if (NAME_COUNTS.get(n) === 1 || n.length > QUALIFY_MAX) return n;
+  const q = qualifiersOf(p).slice(0, depth);
+  return q.length ? `${n} (${q.join(', ')})` : n;
+};
+const TITLE_NAMES = (() => {
+  const byName = new Map();
+  for (const id of IDS) {
+    const n = primary(PEOPLE[id]);
+    if (!byName.has(n)) byName.set(n, []);
+    byName.get(n).push(id);
+  }
+  const out = new Map();
+  for (const ids of byName.values()) {
+    let depth = 1;
+    for (let d = 1; d <= 3; d++) {
+      if (new Set(ids.map((x) => headingAt(x, d))).size === ids.length) { depth = d; break; }
+    }
+    for (const x of ids) out.set(x, headingAt(x, depth));
+  }
+  return out;
+})();
+
+// og:title and twitter:title come from the same string — ogTags() is handed the
+// title, not the <h1> — so a search result and an unfurl always read alike.
+const titleFor = (id) => {
+  const heading = TITLE_NAMES.get(id) || primary(PEOPLE[id]);
+  return primary(PEOPLE[id]).length > SUFFIX_MAX ? heading : heading + SUFFIX;
+};
 
 // ── per-figure pages ───────────────────────────────────────────────────────
 function figurePage(id) {
@@ -187,21 +332,33 @@ function figurePage(id) {
   const epithets = (p.epithets || []).map((e) => e.original).filter(Boolean);
   const relations = (p.relations || []).filter((r) => r.personId);
   const sources = sourcesOf(p);
-  const desc = (p.notes ? String(p.notes).slice(0, 200)
-    : `${primary(p)} — ${tline}.`).replace(/\s+/g, ' ').trim();
+  const desc = p.notes ? clip(p.notes, 200) : clip(`${primary(p)} — ${tline}.`, 200);
 
   const sec = (label, html) => html ? `<h2>${label}</h2>${html}` : '';
+  // Two list builders, because only one of them owns the text it prints.
+  // textList's items ARE the run, so the <li> carries their script subtag;
+  // list's items are already markup whose <a> carries its own, and repeating it
+  // on the <li> would claim the surrounding text is in that script too.
   const list = (arr) => arr.length ? `<ul>${arr.map((x) => `<li>${x}</li>`).join('')}</ul>` : '';
+  const textList = (arr) => (arr.length
+    ? `<ul>${arr.map((x) => { const [l, html] = scripted(x); return `<li${l}>${html}</li>`; }).join('')}</ul>`
+    : '');
 
   // PD/CC0 lead portrait, floated top-right (docs/image-licensing.md). Self-hosted
   // under assets/images/figures/; courtesy credit + license link back to Commons.
   const img = IMAGES[id];
   const lead = leadFigure(img, primary(p), BASE);
 
+  // The alias names, read once and used three times — the visible line below,
+  // the JSON-LD here, and llms.txt via altNames() — so the three cannot drift.
+  const alts = altNames(p);
+
   const ld = {
     '@context': 'https://schema.org', '@type': 'Person',
     name: primary(p),
-    alternateName: (p.name && p.name.alt) || undefined,
+    // A length check, not `|| undefined`: 321 figures carry an empty alt array,
+    // and an empty array is truthy, so all 321 emitted `"alternateName":[]`.
+    alternateName: alts.length ? alts : undefined,
     description: desc,
     image: img && img.file ? `${BASE}assets/images/figures/${img.file}` : undefined,
     additionalType: 'https://schema.org/Thing',
@@ -222,25 +379,65 @@ function figurePage(id) {
   const crumb = `<nav class="crumb"><a href="index.html">← Registry</a>`
     + (tradSlug ? ` · <a href="${TRAD_DIR}/${esc(tradSlug)}.html">${esc(tradName)}</a>` : '')
     + `</nav>`;
+
+  // The same trail, machine-readable. Registry URLs are flat
+  // (/registry/<slug>.html), so nothing in the path tells a crawler that a
+  // figure sits under a tradition — a BreadcrumbList is the only way to say it,
+  // and it is the one rich result this content type is eligible for. Built from
+  // the SAME tradName/tradSlug the visible crumb above uses, so the markup and
+  // the structured data cannot drift apart.
+  const crumbLd = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Pantheon Registry', item: `${BASE}registry/index.html` },
+      ...(tradSlug ? [{ '@type': 'ListItem', position: 2, name: tradName, item: `${BASE}registry/${TRAD_DIR}/${tradSlug}.html` }] : []),
+      { '@type': 'ListItem', position: tradSlug ? 3 : 2, name: primary(p), item: `${BASE}registry/${id}.html` },
+    ],
+  };
+  const crumbJsonld = `<script type="application/ld+json">${JSON.stringify(crumbLd).replace(/</g, '\\u003c')}</script>\n`;
+
+  // The aliases, in the page a reader (and a keyword index) can actually see.
+  // 2,519 figures carried alternates that appeared nowhere but a <script> tag —
+  // worst where the <h1> is a descriptor, as on abkhaz_antswa.html, which is
+  // headed "Supreme God of the Abkhaz" while Antswa / Ancwa / Antsua / Анцәа
+  // lived only in JSON-LD. schema.org alternateName is not a matching signal;
+  // visible text is, and transliteration variance is the dominant query form
+  // for a corpus that is ~97% non-Latin-script. llms-full.txt already published
+  // these correctly, which is how the gap showed up.
+  //
+  // The line mixes scripts by nature ("Antswa · Анцәа"), so the subtag goes on
+  // each name rather than the line — tagging the whole thing would hand the
+  // Latin aliases to a Cyrillic voice. Latin-only names get no wrapper at all.
+  const akaName = (a) => { const [l, html] = scripted(a); return l ? `<span${l}>${html}</span>` : html; };
+  const aka = alts.length
+    ? `<div class="aka">Also known as: ${alts.map(akaName).join(' · ')}</div>` : '';
+
+  const [nameLang, nameHtml] = scripted(primary(p));
+  const [notesLang, notesHtml] = scripted(p.notes || '');
   const body = `${crumb}
 <main>
-${lead}<h1>${esc(primary(p))}</h1>
+${lead}<h1${nameLang}>${nameHtml}</h1>
 <div class="sub">${esc(tline)}${div && div.tier ? ` · ${esc(humanize(div.tier))}` : ''}</div>
-${p.notes ? `<p>${esc(p.notes)}</p>` : ''}
+${aka}
+${p.notes ? `<p${notesLang}>${notesHtml}</p>` : ''}
 ${sec('Parentage', list(parents.map(figLink)))}
 ${sec('Children', list(kids.map(figLink)))}
-${sec('Domains', list(domains.map(esc)))}
-${sec('Powers', list(powers.map(esc)))}
-${sec('Epithets', list(epithets.map(esc)))}
+${sec('Domains', textList(domains))}
+${sec('Powers', textList(powers))}
+${sec('Epithets', textList(epithets))}
 ${sec('Relations', list(relations.map((r) => `${esc(humanize(r.kind))}: ${figLink(r.personId)}`)))}
 ${sec('Sources', list(sources.map((ref) => {
+    // 75 pages cite Russian-language scholarship by its Cyrillic title, which
+    // is the reference text itself and needs the same treatment as an epithet.
+    const [l, html] = scripted(ref);
     const u = citeHref(ref);
-    return u ? `<a href="${esc(u)}" rel="nofollow noopener" target="_blank">${esc(ref)}</a>` : esc(ref);
+    if (u) return `<a href="${esc(u)}"${l} rel="nofollow noopener" target="_blank">${html}</a>`;
+    return l ? `<span${l}>${html}</span>` : html;
   })))}
 <a class="app-link" href="${BASE}#/browse/${esc(id)}">Open in the interactive app →</a>
 </main>`;
-  return page(`${primary(p)} — Pantheon Registry`, desc, body, canonical + jsonld,
-    `${BASE}registry/${id}.html`, 'article');
+  return page(titleFor(id), desc, body, canonical + jsonld + crumbJsonld,
+    `${BASE}registry/${id}.html`, 'article', 'index.html', img);
 }
 
 // ── master index ───────────────────────────────────────────────────────────
@@ -264,7 +461,8 @@ function indexPage() {
     const items = ids.map((id) => {
       const p = PEOPLE[id];
       const meta = [p.type, p.temporal && p.temporal.era].filter(Boolean).map(humanize).join(' · ');
-      return `<li><a href="${esc(id)}.html">${esc(primary(p))}</a>${meta ? ` <span class="meta">${esc(meta)}</span>` : ''}</li>`;
+      const [l, name] = scripted(primary(p));
+      return `<li><a href="${esc(id)}.html"${l}>${name}</a>${meta ? ` <span class="meta">${esc(meta)}</span>` : ''}</li>`;
     }).join('');
     // The heading links down to the tradition's own page — that hub is what
     // gives the figures below a parent narrower than "all 5,721 of them".
@@ -383,7 +581,8 @@ function traditionPage(t, ids, slugs, byTrad) {
   const figureList = (list) => `<ul>${list.map((id) => {
     const p = PEOPLE[id];
     const meta = [p.temporal && p.temporal.era].filter(Boolean).map(humanize).join(' · ');
-    return `<li><a href="../${esc(id)}.html">${esc(primary(p))}</a>`
+    const [l, name] = scripted(primary(p));
+    return `<li><a href="../${esc(id)}.html"${l}>${name}</a>`
       + `${meta ? ` <span class="meta">${esc(meta)}</span>` : ''}</li>`;
   }).join('')}</ul>`;
 
@@ -421,6 +620,18 @@ function traditionPage(t, ids, slugs, byTrad) {
     },
   };
 
+  // Registry → this hub. isPartOf above states the same relation for a
+  // CollectionPage, but only a BreadcrumbList is eligible for the breadcrumb
+  // rich result, and the flat /registry/ URL shape gives Google nothing to
+  // infer a trail from.
+  const crumbLd = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Pantheon Registry', item: `${BASE}registry/index.html` },
+      { '@type': 'ListItem', position: 2, name: t, item: url },
+    ],
+  };
+
   const body = `<nav class="crumb"><a href="../index.html">← Registry</a></nav>
 <main>
 <h1>${esc(t)}</h1>
@@ -443,7 +654,8 @@ ${sec('Connected traditions', neighbourList)}
 
   return page(`${t} — ${plural(ids.length, 'figure')} — Pantheon Registry`, desc, body,
     `<link rel="canonical" href="${url}">\n`
-    + `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n`,
+    + `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n`
+    + `<script type="application/ld+json">${JSON.stringify(crumbLd).replace(/</g, '\\u003c')}</script>\n`,
     url, 'website', '../index.html');
 }
 
@@ -462,7 +674,13 @@ function sitemap() {
     + urls.map((u) => `  <url><loc>${esc(u)}</loc></url>`).join('\n')
     + `\n</urlset>\n`;
 }
-const robots = () => `User-agent: *\nAllow: /\nSitemap: ${BASE}sitemap.xml\n`;
+// figures.json is 7.7 MB, is referenced by no HTML page and no JS on the site,
+// and is reachable — so a crawler that finds it spends most of its budget for
+// this host on one file that will never be a search result. The longer, more
+// specific Disallow wins over Allow: / under the standard's most-specific-match
+// rule. It stays served, and stays advertised in llms.txt: the LLM clients it
+// is written for do not consult robots.txt, so their access is unaffected.
+const robots = () => `User-agent: *\nAllow: /\nDisallow: /registry/figures.json\nSitemap: ${BASE}sitemap.xml\n`;
 
 // ── LLM-native access: llms.txt front door + a one-file corpus dump ───────────
 // LLM browse tools read plain text/Markdown far more reliably than a JS app.
@@ -514,8 +732,7 @@ function llmEntry(id) {
   const p = PEOPLE[id];
   const meta = [p.type, p.temporal && p.temporal.era].filter(Boolean).map(humanize).join(', ');
   const alt = altNames(p);
-  const notes = (p.notes ? String(p.notes) : '').replace(/\s+/g, ' ').trim();
-  const summary = notes.length > 220 ? notes.slice(0, 217).trimEnd() + '…' : notes;
+  const summary = clip(p.notes, 220);
   const paren = [alt.length ? `also ${alt.join(', ')}` : '', meta].filter(Boolean).join('; ');
   return `- **${primary(p)}**${paren ? ` (${paren})` : ''}${summary ? ` — ${summary}` : ''} — ${BASE}registry/${id}.html`;
 }
@@ -534,12 +751,41 @@ function llmsFull() {
     + sections + '\n';
 }
 
+// What the citations actually are, counted rather than asserted. app/cite-links.js
+// deliberately resolves a reference to a SEARCH endpoint whenever it cannot
+// verify a deep link — a search URL cannot 404, so it is an honest "find this"
+// affordance — but that means most references point at a result page rather
+// than at the passage. Counting it here rather than writing a number into the
+// prose means the claim tracks the corpus as references get resolved, instead
+// of going stale (and untrue) the moment someone fixes a batch.
+const isSearchUrl = (u) => /google\.com\/search|scholar\.google\.com|archive\.org\/search|Special:Search/i.test(u || '');
+function citationStats() {
+  let total = 0;
+  let resolved = 0;
+  for (const id of IDS) {
+    for (const ref of sourcesOf(PEOPLE[id])) {
+      total++;
+      const u = citeHref(ref);
+      if (u && !isSearchUrl(u)) resolved++;
+    }
+  }
+  return { total, resolved };
+}
+
 function llmsIndex() {
   const trads = new Set(IDS.map((id) => PEOPLE[id].tradition || 'Unattributed')).size;
+  const { total, resolved } = citationStats();
   return `# Pantheon Registry\n\n`
     + `> A source-cited index of ${IDS.length.toLocaleString()} mythological and historical figures across `
     + `${trads} traditions — genealogies, domains, powers, epithets, iconography, cult, and cross-tradition `
-    + `equivalents. Every claim carries scholarly citations.\n\n`
+    + `equivalents. Every entry carries source references.\n\n`
+    + `**What "source-cited" means here.** Each claim names a reference — a classical text and passage, a `
+    + `scripture citation, a named monograph. ${resolved.toLocaleString()} of the ${total.toLocaleString()} `
+    + `references resolve to the cited text itself (Theoi, sacred-texts.com, Wikisource, BibleGateway, `
+    + `quran.com); the remainder resolve to a search for the work — Google Books, archive.org, Wikipedia — `
+    + `or carry no link at all. A search pointer tells you what to look for, not where to read it. Turning `
+    + `those into resolved citations is ongoing work; treat an unresolved reference as a lead, not as a `
+    + `verified source.\n\n`
     + `The interactive site is a JavaScript app, but the whole corpus is published as plain, JS-free text and `
     + `data that machines can read directly.\n\n`
     + `## Whole corpus, one fetch\n\n`

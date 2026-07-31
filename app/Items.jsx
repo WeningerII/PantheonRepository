@@ -374,7 +374,11 @@ function ItemDetail({ item, byId, onClose, onPrev, onNext, canPrev, canNext, onO
   const [local, setLocal] = __iState(item || null);
   const [closing, setClosing] = __iState(false);
   const panelRef  = __iRef(null);
-  const openerRef = __iRef(null);
+
+  // Focus in on open, Tab trapped while open, restored on close — keyed on
+  // `local` so the trap outlives the 180 ms exit below, same as the figure
+  // Detail. (Detail.jsx.)
+  window.useModalFocus(panelRef, !!local);
 
   __iEff(() => {
     if (item) { setLocal(item); setClosing(false); return; }
@@ -383,29 +387,11 @@ function ItemDetail({ item, byId, onClose, onPrev, onNext, canPrev, canNext, onO
       const t = setTimeout(() => {
         setLocal(null);
         setClosing(false);
-        const opener = openerRef.current;
-        openerRef.current = null;
-        if (opener && opener.focus && document.contains(opener)) {
-          try { opener.focus({ preventScroll: true }); } catch (_) {}
-        }
       }, 180);
       return () => clearTimeout(t);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [item?.id]);
-
-  // Move focus into the dialog on open; remember the opener for restore.
-  const hadItemRef = __iRef(false);
-  __iEff(() => {
-    const has = !!local;
-    if (has && !hadItemRef.current) {
-      if (!openerRef.current) openerRef.current = document.activeElement;
-      if (panelRef.current) {
-        try { panelRef.current.focus({ preventScroll: true }); } catch (_) {}
-      }
-    }
-    hadItemRef.current = has;
-  }, [!!local]);
 
   __iEff(() => {
     if (!local) return;

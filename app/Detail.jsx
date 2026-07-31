@@ -11,6 +11,129 @@ const { useEffect: __dEff, useMemo: __dMemo, useCallback: __dCb, useState: __dSt
 // to a top-level `const pressable` here, that redeclares state.jsx's
 // identifier and kills the page ("Identifier already declared").
 
+// ── Modal focus management, shared by every aria-modal surface ──────────────
+// Eight surfaces in this app declare aria-modal="true" — the figure, item,
+// power and domain slide-overs, the detail-error alertdialog, the command
+// palette, and the two mobile sheets (More, and the rail/filter sheet, which
+// declares it only while open on the phone tier) — and none of them used to
+// hold focus.
+// Measured with the figure panel open: 589 focusable elements behind it, focus
+// gone by the 17th Tab, 44 of 60 tab stops outside the dialog; the palette
+// leaked on the second Tab. aria-modal tells a screen reader to hide the
+// background from the virtual cursor while the browser keeps sending keyboard
+// focus into it, so the AT and the browser disagreed about where the reader
+// was standing — the worst shape this bug can take.
+//
+// Deliberately NOT `inert` on the background: the slide-overs animate over a
+// live view whose subtree React is still committing into, and toggling inert
+// on an ancestor of 589 nodes costs a full a11y-tree rebuild on every open.
+// Trapping Tab inside the dialog is bounded by the dialog's own size.
+const MODAL_TAB_SEL = 'a[href],button,input,select,textarea,summary,[tabindex]';
+
+// The dialog roots themselves carry tabindex="-1" (programmatic focus without
+// entering the tab order), so tabindex="-1" is the exclusion, not the filter.
+// getClientRects() is the laid-out test: a rail section collapsed to
+// display:none is in the DOM but is not a tab stop. The query is scoped to the
+// dialog, so this is tens of elements, not the 589 behind it.
+function modalTabStops(root) {
+  const stops = [];
+  for (const el of root.querySelectorAll(MODAL_TAB_SEL)) {
+    if (el.disabled) continue;
+    if (el.getAttribute('tabindex') === '-1') continue;
+    if (el.hasAttribute('inert') || el.getAttribute('aria-hidden') === 'true') continue;
+    if (!el.getClientRects().length) continue;
+    stops.push(el);
+  }
+  return stops;
+}
+
+// ⌘K over an open figure panel puts two aria-modal surfaces on screen at once.
+// Only the topmost may own Tab — two traps preventDefault-ing the same keypress
+// pin focus in place and the key stops doing anything at all.
+const modalFocusStack = [];
+
+// Hand focus back to whatever opened the dialog, but only if nothing else has
+// claimed it. On an ordinary close the element focus was sitting on has left
+// the document and the browser has already dropped focus to <body>, which is
+// the signal that a restore is owed. "Show in graph" (Shell.jsx) moves focus to
+// the main column itself while this panel is still playing its 180 ms exit —
+// restoring over that would drag the reader back onto a Browse row parked in a
+// display:none pane.
+function restoreModalFocus(opener, root) {
+  const now = document.activeElement;
+  const claimed = now && now !== document.body && now !== document.documentElement &&
+                  !(root && root.contains(now));
+  if (claimed) return;
+  if (opener && opener.focus && document.contains(opener)) {
+    try { opener.focus({ preventScroll: true }); } catch (_) {}
+  }
+}
+
+// One effect covers the whole lifecycle so open, close and unmount can never
+// disagree about whether a restore is owed: the body runs on open, the cleanup
+// runs on both close (isOpen flips) and unmount. `initialRef` names the element
+// that should receive focus instead of the root — the command palette wants its
+// input, so the user can type immediately.
+function useModalFocus(rootRef, isOpen, initialRef) {
+  const openerRef = __dRef(null);
+
+  __dEff(() => {
+    if (!isOpen) return;
+    const token = {};
+    modalFocusStack.push(token);
+    openerRef.current = document.activeElement;
+    const target = (initialRef && initialRef.current) || rootRef.current;
+    if (target) { try { target.focus({ preventScroll: true }); } catch (_) {} }
+
+    const onKey = (e) => {
+      if (e.key !== 'Tab') return;
+      if (modalFocusStack[modalFocusStack.length - 1] !== token) return;
+      const root = rootRef.current;
+      if (!root) return;
+      const stops = modalTabStops(root);
+      // A dialog with nothing tabbable in it still may not leak: park on the
+      // root and swallow the key.
+      if (!stops.length) {
+        e.preventDefault();
+        try { root.focus({ preventScroll: true }); } catch (_) {}
+        return;
+      }
+      const first = stops[0];
+      const last  = stops[stops.length - 1];
+      const active = document.activeElement;
+      // Focus outside the dialog entirely — it escaped earlier, or the sheet
+      // opened without a click landing inside it. Pull it to the edge the Tab
+      // was already headed for.
+      if (!root.contains(active)) {
+        e.preventDefault();
+        (e.shiftKey ? last : first).focus({ preventScroll: true });
+        return;
+      }
+      // The root counts as "before the first stop": Shift+Tab off it would
+      // otherwise walk backwards into the page behind.
+      if (e.shiftKey && (active === first || active === root)) {
+        e.preventDefault();
+        last.focus({ preventScroll: true });
+      } else if (!e.shiftKey && active === last) {
+        e.preventDefault();
+        first.focus({ preventScroll: true });
+      }
+    };
+    // Capture phase: the palette already owns a window-level keydown listener,
+    // and focus may be anywhere by the time a Tab arrives.
+    document.addEventListener('keydown', onKey, true);
+
+    return () => {
+      document.removeEventListener('keydown', onKey, true);
+      const i = modalFocusStack.indexOf(token);
+      if (i >= 0) modalFocusStack.splice(i, 1);
+      restoreModalFocus(openerRef.current, rootRef.current);
+      openerRef.current = null;
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]);
+}
+
 // Render any common-shape tag object (domains use { sphereId }, faculties
 // use { id }, material culture uses { id, classId }, epithets vary).
 function safeLabel(item) {
@@ -660,9 +783,12 @@ function LeadImage({ entry }) {
   const provenance = IMG_SOURCE_LABELS[img.src] || 'Wikimedia Commons';
   // Not the bare figure name: that duplicates the heading directly beside it,
   // so a screen reader reads the name twice and learns nothing about the
-  // picture. Mirrors altTextFor() in scripts/lib/lead-figure.cjs.
-  const alt = 'Depiction of ' + window.displayName(entry)
-    + (img.author ? ' by ' + img.author : '');
+  // picture. Mirrors altTextFor() in scripts/lib/lead-figure.cjs — including
+  // the omission of the author, which the figcaption below already carries.
+  // Repeating it here made a screen reader announce the same credit twice, and
+  // on the static side it produced doubled ("Unknown authorUnknown author") and
+  // runaway alts — one page carried a 665-character donor list.
+  const alt = 'Depiction of ' + window.displayName(entry);
   return (
     <figure className="detail-lead">
       <img
@@ -698,7 +824,11 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
   const [localEntry, setLocalEntry] = __dState(entryProp || null);
   const [closing,    setClosing]    = __dState(false);
   const panelRef  = __dRef(null);
-  const openerRef = __dRef(null);
+
+  // Focus into the panel on open, trapped while open, handed back on every
+  // close path — including the exit animation below, which is why the hook is
+  // keyed on `localEntry` (what is on screen) and not on `entryProp`.
+  window.useModalFocus(panelRef, !!localEntry);
 
   __dEff(() => {
     if (entryProp) {
@@ -711,32 +841,11 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
       const t = setTimeout(() => {
         setLocalEntry(null);
         setClosing(false);
-        // Hand focus back to wherever the user was before the panel opened.
-        const opener = openerRef.current;
-        openerRef.current = null;
-        if (opener && opener.focus && document.contains(opener)) {
-          try { opener.focus({ preventScroll: true }); } catch (_) {}
-        }
       }, 180);
       return () => clearTimeout(t);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [entryProp?.id]);
-
-  // Move focus into the dialog when it opens (and remember the opener so it
-  // can be restored on close) — otherwise keyboard focus stays in the
-  // obscured page behind the slide-over.
-  const hadEntryRef = __dRef(false);
-  __dEff(() => {
-    const has = !!localEntry;
-    if (has && !hadEntryRef.current) {
-      if (!openerRef.current) openerRef.current = document.activeElement;
-      if (panelRef.current) {
-        try { panelRef.current.focus({ preventScroll: true }); } catch (_) {}
-      }
-    }
-    hadEntryRef.current = has;
-  }, [!!localEntry]);
 
   __dEff(() => {
     if (!localEntry) return;
@@ -953,4 +1062,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
   );
 }
 
-Object.assign(window, { Detail });
+// useModalFocus goes on window like state.jsx's shared helpers do, so all seven
+// call sites — here, Items, Powers, Domains, CommandPalette and Shell — read
+// identically and none of them has to know which file happens to define it.
+Object.assign(window, { Detail, useModalFocus });

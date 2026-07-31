@@ -3,9 +3,10 @@
 Build script for the deployable artifacts.
 
 Pre-transforms each app/*.jsx through Babel (no in-browser transformer),
-inlines them alongside app/styles.css, and swaps the data layer per mode.
-Both modes regenerate the schema-4 tiers (scripts/build-tiers.cjs) first and
-ship the SAME post-pipeline snapshot through the same inlined app/pr-boot.js:
+inlines them alongside app/styles.css, and swaps the data layer — plus the
+vendor libraries and the webfonts — per mode. Both modes regenerate the
+schema-4 tiers (scripts/build-tiers.cjs) first and ship the SAME
+post-pipeline snapshot through the same inlined app/pr-boot.js:
 
   python3 build.py          dist/pantheon-registry.html — the single-file
                             artifact: open from disk, host as a static file,
@@ -13,8 +14,19 @@ ship the SAME post-pipeline snapshot through the same inlined app/pr-boot.js:
                             byte-exact-gated. The corpus is embedded as inert
                             <script type="application/json"> payloads the JS
                             parser never tokenizes; pr-boot JSON.parses them
-                            off the critical path. No fetch() — file:// and
-                            srcdoc keep working.
+                            off the critical path. React, react-dom, d3 and
+                            topojson are inlined from node_modules and no
+                            webfont is requested, so the app boots and renders
+                            over file:// and srcdoc with the machine offline —
+                            verified by booting it with every request aborted.
+                            ONE origin remains, deliberately documented rather
+                            than papered over: Atlas.jsx fetches the world-atlas
+                            basemap from jsdelivr on demand (app/Atlas.jsx:46).
+                            Offline, the Atlas view renders its own empty state
+                            and every other view works. Vendoring the basemap
+                            would close it; that data is not in node_modules,
+                            and test/fixtures/countries-110m.json is a 286-byte
+                            stub, not a substitute.
   python3 build.py --pages  dist/site/index.html — the multi-file Pages
                             shell: same template, but the corpus arrives as
                             the hashed dist/data tiers fetched by pr-boot.
@@ -153,6 +165,120 @@ def _favicon_tags(pages: bool) -> str:
             + base64.b64encode(png).decode('ascii') + '" />')
 
 
+# The vendor libraries in load order, pinned to the versions package.json
+# already fixes in devDependencies — so the bytes the test harness boots
+# against are the bytes the artifact ships. Kept in step with the cdnjs URLs
+# and SRI hashes in _vendor_scripts(); nothing in CI cross-checks the two
+# (both the coldload gate and multifile.test.cjs intercept cdnjs and
+# substitute these same files), so a version bump has to touch both by hand.
+_VENDOR_FILES = [
+    ('react 18.3.1',     'react/umd/react.production.min.js'),
+    ('react-dom 18.3.1', 'react-dom/umd/react-dom.production.min.js'),
+    ('d3 7.9.0',         'd3/dist/d3.min.js'),
+    ('topojson 3.0.2',   'topojson/dist/topojson.min.js'),
+]
+
+
+def _network_head(pages: bool) -> str:
+    """The third-origin preconnects and the Google Fonts stylesheet.
+
+    Pages only. A font fetch is a network call like any other, and the
+    single-file artifact promises to work off disk with nothing reachable — so
+    it ships neither the stylesheet nor the preconnects and renders on the
+    fallback stacks styles.css already declares behind every family
+    ('Newsreader' → Georgia, 'Geist' → system-ui, 'Geist Mono' →
+    ui-monospace), the boot overlay's own font shorthands included. Over
+    file:// with no route out that is what it rendered anyway — minus a
+    stylesheet request that stalls until the browser gives up on it.
+    """
+    if not pages:
+        return ''
+    return """
+<!-- Fonts. Loaded async via the media swap: a render-blocking font stylesheet
+     stalls first paint for the full fetch (12.66 s measured on a degraded
+     network) while display=swap already keeps text readable without it. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- react + react-dom are render-blocking and live on cdnjs, so production
+     pays a cold DNS + TCP + TLS handshake to a third origin before first
+     paint can even begin — and their <script> tags sit ~26 KB gz into the
+     document, far past where the preload scanner would otherwise warm the
+     connection. Lantern models the handshake at ~675 ms cold vs ~75 ms warm.
+     UNVERIFIED here: every local run rewrites cdnjs to a same-origin path,
+     so this cost is invisible in our lab and this line is reasoned, not
+     measured. It is also free if it turns out not to help. -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"></noscript>
+"""
+
+
+def _vendor_scripts(pages: bool, sources: list) -> str:
+    """React + ReactDOM + d3 + topojson, which differ by distribution.
+
+    Both modes need all four evaluated before the UI scripts run, not merely
+    before anything draws: the UI destructures React at module-eval time (e.g.
+    Shell.jsx's `const { useState } = React`), and Atlas reads d3 in its RENDER
+    phase — `projection` and `basemapPaths` are useMemos guarded on
+    `window.d3` whose deps are `[size.w, size.h]`, so a d3 that arrives after
+    the first render leaves the map blank until a resize.
+
+    Pages links cdnjs, every tag pinned with a Subresource Integrity sha384 +
+    crossorigin so a tampered CDN response is rejected by the browser. d3 +
+    topojson are `defer`red there: they were the two heaviest render-blockers
+    (d3 alone ~4 s on emulated Slow 4G), and deferred scripts still run in
+    document order before DOMContentLoaded, so both land ahead of the deferred
+    UI bundle further down the document.
+
+    The artifact inlines them from node_modules instead. It is opened over
+    file:// with no siblings, and the cdnjs tags made that a permanent loading
+    screen — "React is not defined", the app never mounts — which is the one
+    thing this distribution exists to avoid. 433 KB against a 31.9 MB file,
+    1.4%. `defer` has no meaning on an inline script, so d3 + topojson are
+    parsed before first paint here rather than after it; that is 294 KB of
+    parse in a document whose 20+ MB of embedded JSON the tokenizer has to
+    walk anyway.
+    """
+    if pages:
+        return """
+<!-- React + ReactDOM + d3 + topojson (no in-browser Babel — JSX is pre-transformed).
+     Production React builds for the shipped artifact; every tag is pinned with a
+     Subresource Integrity sha384 hash + crossorigin so a tampered CDN response
+     is rejected by the browser.
+
+     React + ReactDOM load synchronously: the inline UI scripts destructure React
+     at module-eval time (e.g. Shell.jsx's `const { useState } = React`), so both
+     must exist before those scripts run.
+
+     d3 + topojson are `defer`red — they were the two heaviest render-blockers
+     (d3 alone ~4 s on emulated Slow 4G) yet are used only INSIDE Graph.jsx and
+     Atlas.jsx, and only in effects/handlers, never at eval time. Both views are
+     gated behind `dataReady` (the ~22 MB corpus), so a deferred 76 KB d3 always
+     finishes long before either can render — deferring drops them off the
+     first-paint critical path with no functional risk. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha384-9dCJK6nh7skY14HrcvlLYlFga9/MehJjL9ONWRflmiXNRuf8p2jiF4Y5PR881PTq" crossorigin="anonymous"></script>
+"""
+    # UMD builds, so each installs its global off the browser branch: nothing
+    # here defines module/exports/define, and these run in <head> ahead of the
+    # data layer and the UI scripts either way.
+    blocks = '\n'.join(
+        f'<!-- {label} — node_modules/{rel} -->\n<script>\n{safe(body)}\n</script>'
+        for label, rel, body in sources
+    )
+    return f"""
+<!-- React + ReactDOM + d3 + topojson (no in-browser Babel — JSX is pre-transformed),
+     inlined from the pinned node_modules copies. The artifact is opened off disk
+     and must reach no origin: a <script src> to cdnjs leaves it stuck on the boot
+     overlay forever whenever the network is absent or blocked. Load order matches
+     the Pages shell exactly — react before react-dom, both before the UI scripts. -->
+{blocks}
+"""
+
+
 def main() -> None:
     args = sys.argv[1:]
     pages = '--pages' in args
@@ -194,6 +320,7 @@ def main() -> None:
     hazard_checks = [('styles.css', styles_css), (data_name, data_body),
                      ('cite-links.js', cite_links),
                      *((f, transformed[f]) for f in JSX_FILES)]
+    vendor_sources = []
     if not pages:
         core_body = (DIST / 'data' / tiers['core']).read_text(encoding='utf-8')
         # The JSON payloads are safe()-escaped BEFORE the check: '<\/script'
@@ -205,6 +332,20 @@ def main() -> None:
         hazard_checks += [(tiers['core'], core_body),
                           (tiers['index'] + ' (escaped)', index_payload),
                           (tiers['corpus'] + ' (escaped)', corpus_payload)]
+        # The vendor libraries become inline <script> bodies here (see
+        # _vendor_scripts), so they face the same tokenizer as every other
+        # inlined payload: one literal '</script' inside a UMD bundle would
+        # close the element early and hand the rest of the library to the HTML
+        # parser as text. Checked raw, like the other executable sources —
+        # safe() rewrites the sequence for the shipped copy, but a hit outside
+        # a string literal would be corruption either way, so abort instead.
+        for label, rel in _VENDOR_FILES:
+            vendor_path = ROOT / 'node_modules' / rel
+            if not vendor_path.exists():
+                sys.exit(f'!! node_modules/{rel} is missing: run `npm install` '
+                         '(the artifact inlines the vendor libraries).')
+            vendor_sources.append((label, rel, vendor_path.read_text(encoding='utf-8')))
+        hazard_checks += [(f'node_modules/{rel}', body) for _, rel, body in vendor_sources]
     for name, body in hazard_checks:
         hit = _PARSE_HAZARD.search(body)
         if hit:
@@ -317,25 +458,7 @@ __ANALYTICS__
   window.history.pushState    = safe(origPush);
 })();
 </script>
-
-<!-- Fonts. Loaded async via the media swap: a render-blocking font stylesheet
-     stalls first paint for the full fetch (12.66 s measured on a degraded
-     network) while display=swap already keeps text readable without it. -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- react + react-dom are render-blocking and live on cdnjs, so production
-     pays a cold DNS + TCP + TLS handshake to a third origin before first
-     paint can even begin — and their <script> tags sit ~26 KB gz into the
-     document, far past where the preload scanner would otherwise warm the
-     connection. Lantern models the handshake at ~675 ms cold vs ~75 ms warm.
-     UNVERIFIED here: every local run rewrites cdnjs to a same-origin path,
-     so this cost is invisible in our lab and this line is reasoned, not
-     measured. It is also free if it turns out not to help. -->
-<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"></noscript>
-
+__NETWORK_HEAD__
 <style id="app-styles">
 __STYLES_CSS__
 </style>
@@ -419,27 +542,7 @@ __STYLES_CSS__
     border-left: 2px solid #B5371F;
   }
 </style>
-
-<!-- React + ReactDOM + d3 + topojson (no in-browser Babel — JSX is pre-transformed).
-     Production React builds for the shipped artifact; every tag is pinned with a
-     Subresource Integrity sha384 hash + crossorigin so a tampered CDN response
-     is rejected by the browser.
-
-     React + ReactDOM load synchronously: the inline UI scripts destructure React
-     at module-eval time (e.g. Shell.jsx's `const { useState } = React`), so both
-     must exist before those scripts run.
-
-     d3 + topojson are `defer`red — they were the two heaviest render-blockers
-     (d3 alone ~4 s on emulated Slow 4G) yet are used only INSIDE Graph.jsx and
-     Atlas.jsx, and only in effects/handlers, never at eval time. Both views are
-     gated behind `dataReady` (the ~22 MB corpus), so a deferred 76 KB d3 always
-     finishes long before either can render — deferring drops them off the
-     first-paint critical path with no functional risk. -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha384-9dCJK6nh7skY14HrcvlLYlFga9/MehJjL9ONWRflmiXNRuf8p2jiF4Y5PR881PTq" crossorigin="anonymous"></script>
-
+__VENDOR_SCRIPTS__
 </head>
 <body>
 
@@ -590,12 +693,22 @@ __UI_SCRIPTS__
     analytics = _GA_SNIPPET.replace('__GA_ID__', GA_MEASUREMENT_ID) if pages else ''
     out = out.replace('__ANALYTICS__', analytics)
     out = out.replace('__FAVICON__', _favicon_tags(pages))
+    out = out.replace('__NETWORK_HEAD__', _network_head(pages))
 
     # Verify no template tokens remain. /*#__PURE__*/ is Babel output, not a token.
-    leftover = [x for x in re.findall(r'__[A-Z_]+__', out) if x != '__PURE__']
+    # __VENDOR_SCRIPTS__ is deliberately still standing: react-dom's own
+    # __REACT_DEVTOOLS_GLOBAL_HOOK__ is indistinguishable from an unfilled token
+    # to this scan, so the vendor slot is verified here and filled immediately
+    # after — it cannot be forgotten, and the scan keeps its teeth.
+    leftover = [x for x in re.findall(r'__[A-Z_]+__', out)
+                if x not in ('__PURE__', '__VENDOR_SCRIPTS__')]
     if leftover:
         print(f'!! Leftover template tokens: {set(leftover)}', file=sys.stderr)
         sys.exit(1)
+    if out.count('__VENDOR_SCRIPTS__') != 1:
+        print('!! the template must slot __VENDOR_SCRIPTS__ exactly once', file=sys.stderr)
+        sys.exit(1)
+    out = out.replace('__VENDOR_SCRIPTS__', _vendor_scripts(pages, vendor_sources))
 
     if pages:
         (DIST / 'site').mkdir(exist_ok=True)

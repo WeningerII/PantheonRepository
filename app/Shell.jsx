@@ -36,6 +36,15 @@ function useIsMobile() {
 // click buys 100-300 ms, focus-to-Enter more, and pointerdown covers touch,
 // where there is no hover at all. loadRegistry is idempotent per kind, so
 // sweeping the pointer across the whole nav costs one fetch each at most.
+// One source of truth for what a route is called: the view tabs, the document
+// title, and the live-region route announcement all read it, and a reader who
+// hears "Graph view" then finds a tab labelled something else is being told
+// two different stories. Insertion order is the tab order.
+const VIEW_LABEL = {
+  browse: 'Browse', graph: 'Graph', atlas: 'Atlas',
+  items: 'Items', powers: 'Powers', domains: 'Domains',
+};
+
 const PREFETCH_REGISTRY = { items: 'items', powers: 'powers', domains: 'domains' };
 function prefetchView(v) {
   const kind = PREFETCH_REGISTRY[v];
@@ -107,8 +116,7 @@ function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK,
             and roving-tabindex arrow keys that this group never had. nav +
             aria-current="page" describes what actually happens. */}
         <nav className="btn-group" aria-label="Views">
-          {[['browse', 'Browse'], ['graph', 'Graph'], ['atlas', 'Atlas'],
-            ['items', 'Items'], ['powers', 'Powers'], ['domains', 'Domains']].map(([v, label]) => (
+          {Object.entries(VIEW_LABEL).map(([v, label]) => (
             <button
               key={v}
               className={'btn' + (view === v ? ' btn-on' : '')}
@@ -360,6 +368,9 @@ function Shell() {
   const isMobile = useIsMobile();
   const [railOpen, setRailOpen] = __sState(false);
   const [moreOpen, setMoreOpen] = __sState(false);
+  // Capitalized so JSX reads it as a variable, not the literal tag "railTag".
+  // See the element it renders, below.
+  const RailTag = isMobile ? 'div' : 'aside';
   // Any narrowing active → the filter button wears an accent dot. Mirrors the
   // rail's own "clear" affordances (type / origin / tradition / search).
   const hasFilters =
@@ -891,6 +902,76 @@ function Shell() {
     return () => window.removeEventListener('keydown', handler);
   }, []);
 
+  // ── Modal focus (window.useModalFocus, Detail.jsx) ───────────────────────
+  // The three aria-modal surfaces Shell owns directly. The two mobile sheets
+  // stay mounted whether or not they are open — CSS parks them off-screen with
+  // visibility:hidden — so the trap is keyed on their open flags, not on
+  // whether they rendered. The More sheet in particular had never received
+  // focus at all: it declared itself a modal and then left the reader standing
+  // in the page behind it.
+  const railSheetRef = __sRef(null);
+  const moreSheetRef = __sRef(null);
+  const detailErrorRef = __sRef(null);
+  window.useModalFocus(railSheetRef, isMobile && railOpen);
+  window.useModalFocus(moreSheetRef, isMobile && moreOpen);
+  window.useModalFocus(detailErrorRef, showDetailError);
+
+  // ── Live region + document title ─────────────────────────────────────────
+  // Before this there was no [aria-live] anywhere in the app: switching views
+  // or narrowing the corpus silently replaced the page under a screen-reader
+  // user, who had no way to know the result count had moved. One polite
+  // status region, written from both events, is the whole fix.
+  const [liveMsg, setLiveMsg] = __sState('');
+  const liveViewRef = __sRef(view);
+  __sEff(() => {
+    // Skip the mount pass: announcing "Browse view" at boot talks over the
+    // page the reader has only just arrived on.
+    if (liveViewRef.current === view) return;
+    liveViewRef.current = view;
+    setLiveMsg((VIEW_LABEL[view] || view) + ' view');
+  }, [view]);
+
+  // Filter/search settle, debounced: `filters.filtered` recomputes on every
+  // keystroke, and a polite region written that fast is a queue of stale
+  // counts read out long after the user stopped typing.
+  const liveCountRef = __sRef(-1);
+  __sEff(() => {
+    // Gated on `ready` and primed on its first pass: the corpus arriving takes
+    // the count from 0 to 5,721, which is a boot, not a filter, and announcing
+    // it would be the first thing a reader hears.
+    if (!ready) return;
+    const n = filters.filtered.length;
+    if (liveCountRef.current === -1) { liveCountRef.current = n; return; }
+    if (liveCountRef.current === n) return;
+    const t = setTimeout(() => {
+      liveCountRef.current = n;
+      setLiveMsg(n === people.length
+        ? `${n.toLocaleString()} figures`
+        : `${n.toLocaleString()} of ${people.length.toLocaleString()} figures match`);
+    }, 400);
+    return () => clearTimeout(t);
+  }, [ready, filters.filtered, people.length]);
+
+  // Title per route. NOT in the hashchange handler: in-app navigation writes
+  // the hash with history.pushState, which does not fire hashchange, so a
+  // title set there would only ever update on a manual URL edit or a Back
+  // press. These are the same deps the URL-sync effect above runs on, which is
+  // what makes the title track the hash in both directions.
+  __sEff(() => {
+    const focused =
+      (view === 'browse'  && selectedEntry  && window.displayName(selectedEntry)) ||
+      (view === 'items'   && selectedItem   && selectedItem.displayName) ||
+      (view === 'powers'  && selectedPower  && selectedPower.displayName) ||
+      (view === 'domains' && selectedDomain && selectedDomain.displayName) ||
+      (view === 'graph'   && graphFocusId   && byId.get(graphFocusId) && window.displayName(byId.get(graphFocusId))) ||
+      (view === 'atlas'   && atlasFocus) || null;
+    const parts = [];
+    if (focused) parts.push(focused);
+    parts.push(VIEW_LABEL[view] || view);
+    parts.push('Pantheon Registry');
+    document.title = parts.join(' · ');
+  }, [view, selectedEntry, selectedItem, selectedPower, selectedDomain, graphFocusId, atlasFocus, byId]);
+
   if (!ready) {
     // Async boot, pre-index: no data has had the chance to arrive yet, so
     // the storage dead-end below would be a lie. Skeleton rows instead —
@@ -936,7 +1017,23 @@ function Shell() {
         hasFilters={hasFilters}
       />
       <div className="shell-body">
-        <aside className="shell-rail" aria-label="Filter and sort">
+        {/* The rail is a complementary landmark on desktop and a modal sheet on
+            the phone tier — and it must change ELEMENT to say so, because
+            role=dialog is not an allowed override of <aside>'s implicit
+            complementary role (the same rule the slide-overs below obey). A div
+            has no implicit role to contradict, so it carries whichever of the
+            two the breakpoint calls for. Crossing 760px remounts the subtree
+            and clears Rail's tradition-search box; that costs a rotate, and the
+            alternative is an aside lying about what it is. jsdom has no
+            matchMedia, so the test tree only ever sees the <aside>. */}
+        <RailTag
+          ref={railSheetRef}
+          className="shell-rail"
+          aria-label="Filter and sort"
+          role={isMobile ? 'dialog' : undefined}
+          aria-modal={isMobile && railOpen ? 'true' : undefined}
+          tabIndex={isMobile ? -1 : undefined}
+        >
           {/* Sheet chrome (mobile only): grip + title + reset/close above the
               filters, an "apply" button pinned below. Gated on isMobile so the
               desktop rail is untouched and the test tree never sees it. */}
@@ -954,7 +1051,7 @@ function Shell() {
               <span>Show {filters.filtered.length.toLocaleString()} figures</span>
             </button>
           )}
-        </aside>
+        </RailTag>
         <main className="shell-main" id="main-content" ref={mainRef} tabIndex={-1}>
           {(view === 'browse' || leavingView === 'browse') && (
             <div className={'view-pane' + (view === 'browse' ? '' : ' pane-leaving')}>
@@ -1064,6 +1161,20 @@ function Shell() {
           setSelectedDomainId(null);
           selection.setSelectedId(null);
           selection.setCursorIdx(0);
+          // Re-home focus onto the main column — which the graph now fills —
+          // EXPLICITLY, rather than leaving it to the panel's restore. The
+          // opener is a Browse row, and the swap parks that row inside a
+          // display:none pane (leavingView holds it two frames) before the
+          // 180 ms exit timer fires: restoring onto it would put the caret in
+          // a pane nobody can see, and once it unmounts focus falls to <body>
+          // and the reader is at the top of the document. useModalFocus stands
+          // down once focus has been claimed elsewhere, so landing here first
+          // is what sticks. One frame's delay, because <main> is only the
+          // graph's container after the swap commits.
+          const raf = window.requestAnimationFrame || ((cb) => setTimeout(cb, 0));
+          raf(() => {
+            if (mainRef.current) { try { mainRef.current.focus({ preventScroll: true }); } catch (_) {} }
+          });
         }}
       />
 
@@ -1075,7 +1186,7 @@ function Shell() {
           <div className="detail-backdrop" onClick={() => selection.setSelectedId(null)} />
           {/* A div, not an <aside>: role=dialog is not an allowed override of
               <aside>'s implicit complementary role. */}
-          <div className="detail" role="alertdialog" aria-modal="true" aria-label="Figure could not be loaded">
+          <div ref={detailErrorRef} tabIndex={-1} className="detail" role="alertdialog" aria-modal="true" aria-label="Figure could not be loaded">
             <div className="detail-bar">
               <div className="spacer" />
               <button className="close" onClick={() => selection.setSelectedId(null)} aria-label="Close">✕</button>
@@ -1228,7 +1339,7 @@ function Shell() {
       )}
 
       {isMobile && (
-        <div className="mobile-more" role="dialog" aria-modal="true" aria-label="More views">
+        <div ref={moreSheetRef} tabIndex={-1} className="mobile-more" role="dialog" aria-modal="true" aria-label="More views">
           <div className="mobile-more-grip" aria-hidden="true" />
           {[
             { v: 'items',   label: 'Items',   sub: 'material culture & custody chains' },
@@ -1252,6 +1363,22 @@ function Shell() {
           ))}
         </div>
       )}
+
+      {/* The app's only live region. Clip-rect hidden, in the same shape the
+          static registry's crawl nav uses (scripts/build-static.cjs): NOT
+          display:none or visibility:hidden, which take a region out of the
+          accessibility tree and silence it. It must also never grow visible
+          text — the boot overlay's .lead is deliberately the largest thing on
+          screen because it is what LCP times, and a clipped 1px box has no
+          contentful area to compete with it. */}
+      <div
+        role="status"
+        aria-live="polite"
+        style={{
+          position: 'absolute', width: 1, height: 1, margin: -1, padding: 0,
+          overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0,
+        }}
+      >{liveMsg}</div>
     </div>
   );
 }

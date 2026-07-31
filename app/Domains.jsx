@@ -252,7 +252,10 @@ function DomainDetail({ domain, byId, onClose, onPrev, onNext, canPrev, canNext,
   const [local, setLocal] = __dmState(domain || null);
   const [closing, setClosing] = __dmState(false);
   const panelRef = __dmRef(null);
-  const openerRef = __dmRef(null);
+
+  // Focus in on open, Tab trapped while open, restored on close — keyed on
+  // `local` so the trap outlives the 180 ms exit below. (Detail.jsx.)
+  window.useModalFocus(panelRef, !!local);
 
   __dmEff(() => {
     if (domain) { setLocal(domain); setClosing(false); return; }
@@ -260,25 +263,11 @@ function DomainDetail({ domain, byId, onClose, onPrev, onNext, canPrev, canNext,
       setClosing(true);
       const t = setTimeout(() => {
         setLocal(null); setClosing(false);
-        const opener = openerRef.current; openerRef.current = null;
-        if (opener && opener.focus && document.contains(opener)) {
-          try { opener.focus({ preventScroll: true }); } catch (_) {}
-        }
       }, 180);
       return () => clearTimeout(t);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [domain && domain.id]);
-
-  const hadRef = __dmRef(false);
-  __dmEff(() => {
-    const has = !!local;
-    if (has && !hadRef.current) {
-      if (!openerRef.current) openerRef.current = document.activeElement;
-      if (panelRef.current) { try { panelRef.current.focus({ preventScroll: true }); } catch (_) {} }
-    }
-    hadRef.current = has;
-  }, [!!local]);
 
   __dmEff(() => {
     if (!local) return;

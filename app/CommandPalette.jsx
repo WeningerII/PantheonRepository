@@ -31,17 +31,14 @@ function CommandPalette({ people, onClose, onPick }) {
   const [q, setQ] = __cState('');
   const [cursor, setCursor] = __cState(0);
   const inputRef = __cRef(null);
+  const rootRef  = __cRef(null);
 
-  // Focus the input on open; hand focus back to the opener on close.
-  __cEff(() => {
-    const opener = document.activeElement;
-    inputRef.current?.focus();
-    return () => {
-      if (opener && opener.focus && document.contains(opener)) {
-        try { opener.focus({ preventScroll: true }); } catch (_) {}
-      }
-    };
-  }, []);
+  // Focus the input on open, trap Tab inside the palette, hand focus back to
+  // the opener on close. Shell mounts this component only while it is open, so
+  // `true` is the whole lifecycle. The third argument is why the palette gets
+  // its input rather than its root: the point of ⌘K is to start typing.
+  // Measured before the trap: focus was behind the palette by the second Tab.
+  window.useModalFocus(rootRef, true, inputRef);
 
   // Each result keeps its match provenance ({ p, viaAlt, viaTradition }) so
   // the list can show the alt name that actually matched, not just alts[0].
@@ -103,7 +100,7 @@ function CommandPalette({ people, onClose, onPick }) {
 
   return (
     <div className="cmdk-back" onClick={onClose}>
-      <div className="cmdk" role="dialog" aria-modal="true" aria-label="Find a figure" onClick={e => e.stopPropagation()}>
+      <div ref={rootRef} tabIndex={-1} className="cmdk" role="dialog" aria-modal="true" aria-label="Find a figure" onClick={e => e.stopPropagation()}>
         {/* Combobox + listbox. The arrow keys already moved a visual cursor
             through the results; aria-activedescendant is what makes that
             cursor audible, so a screen-reader user hears each figure as they
