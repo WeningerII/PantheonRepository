@@ -309,7 +309,7 @@ test('the owner mark is the icon in every entry point', () => {
 
   // Deployed shell + every static page link the files.
   const shell = read(path.join(SITE, 'index.html'));
-  assert.match(shell, /<link rel="icon" href="\/favicon\.ico" sizes="32x32">/);
+  assert.match(shell, /<link rel="icon" href="\/favicon\.ico" sizes="48x48 32x32 16x16">/);
   assert.match(shell, /<link rel="icon" type="image\/png" sizes="96x96" href="\/favicon-96x96\.png">/);
   assert.match(shell, /<link rel="apple-touch-icon" sizes="180x180"/);
   assert.match(shell, /<link rel="manifest"/);
@@ -335,6 +335,28 @@ test('the owner mark is the icon in every entry point', () => {
   assert.ok(!fs.existsSync(path.join(BRAND, 'favicon.svg')),
     'the raster-in-SVG favicon must not be committed; see assets/brand/README.md');
   assert.ok(!/favicon\.svg/.test(shell), 'nothing should link favicon.svg');
+
+  // The declared sizes must be the frames the .ico actually carries. It said
+  // "32x32" while the file's largest frame was 48x48 — a declaration that both
+  // misdescribed the file and undershot the floor Google documents for
+  // search-result favicons ("a square that's a multiple of 48px"), on the FIRST
+  // rel=icon a crawler meets. A literal-string assertion alone would not have
+  // caught it, because the literal was the thing that was wrong.
+  const icoBuf = fs.readFileSync(path.join(BRAND, 'favicon.ico'));
+  assert.deepStrictEqual([...icoBuf.subarray(0, 4)], [0, 0, 1, 0], 'favicon.ico is not a valid ICO');
+  const frameCount = icoBuf.readUInt16LE(4);
+  const frames = [];
+  for (let i = 0; i < frameCount; i++) {
+    const e = 6 + i * 16;
+    frames.push(icoBuf[e] || 256);          // 0 encodes 256 in an ICO dir entry
+  }
+  const declared = (shell.match(/<link rel="icon" href="\/favicon\.ico" sizes="([^"]+)">/) || [])[1];
+  assert.ok(declared, 'the shell must declare sizes on the .ico');
+  const declaredPx = declared.split(/\s+/).map((s) => Number(s.split('x')[0]));
+  assert.deepStrictEqual(declaredPx.slice().sort((a, b) => b - a), frames.slice().sort((a, b) => b - a),
+    `declared sizes "${declared}" do not match the .ico's real frames ${frames.join('/')}`);
+  assert.ok(declaredPx.some((px) => px % 48 === 0),
+    `no declared .ico size is a multiple of 48px (${declared}) — Google will not use it`);
 });
 
 test('the icon files and PWA manifest ship correctly', () => {

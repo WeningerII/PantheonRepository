@@ -158,7 +158,13 @@ def _favicon_tags(pages: bool) -> str:
     assets/brand/README.md.
     """
     if pages:
-        return ('<link rel="icon" href="/favicon.ico" sizes="32x32">\n'
+        # sizes lists the frames the .ico ACTUALLY carries (48/32/16, verified
+        # against the file's icondir), largest first. It read "32x32", which was
+        # both wrong about the file and below the floor Google documents for
+        # search-result favicons — "a square that's a multiple of 48px". The
+        # first rel=icon a crawler meets should not advertise a size the file
+        # does not have and the consumer will not accept.
+        return ('<link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16">\n'
                 '<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">')
     png = (ROOT / 'assets' / 'brand' / 'favicon-96x96.png').read_bytes()
     return ('<link rel="icon" type="image/png" href="data:image/png;base64,'

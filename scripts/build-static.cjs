@@ -224,7 +224,13 @@ const ogTags = (title, desc, url, type = 'article', img = null) => {
 // request for /favicon.ico and takes a 404, which Lighthouse counts under
 // errors-in-console. Absolute URLs because these pages sit at two directory
 // depths (registry/ and registry/tradition/).
-const ICON_TAGS = `<link rel="icon" href="${BASE}favicon.ico" sizes="32x32">
+//
+// sizes lists the frames the .ico ACTUALLY carries — 48/32/16, read out of the
+// file's icondir — largest first. It read "32x32", which was both wrong about
+// the file and below the floor Google documents for search-result favicons:
+// "a square that's a multiple of 48px". The first rel=icon a crawler meets
+// should not advertise a size the file does not have and the consumer rejects.
+const ICON_TAGS = `<link rel="icon" href="${BASE}favicon.ico" sizes="48x48 32x32 16x16">
 <link rel="icon" type="image/png" sizes="96x96" href="${BASE}favicon-96x96.png">
 <link rel="apple-touch-icon" sizes="180x180" href="${BASE}apple-touch-icon.png">
 `;
@@ -887,10 +893,13 @@ function enrichShell() {
   if (html.includes('<!-- pr-static -->')) return; // idempotent (fresh build overwrites)
 
   const trads = new Set(IDS.map((id) => PEOPLE[id].tradition)).size;
-  // Large icons + PWA manifest. The tab favicon is a data: URI in the template
-  // (build.py, from assets/favicon.svg) because it must also work in the
-  // file:// artifact; these are file-backed and Pages-only, since iOS and
-  // Android fetch them by URL.
+  // Large icons + PWA manifest. The shell's own tab favicon comes from
+  // build.py's _favicon_tags(): file-backed /favicon.ico + /favicon-96x96.png
+  // for Pages, and a data: URI only in the file:// artifact, which has no
+  // siblings to fetch. (This comment used to say the Pages shell also used a
+  // data: URI from assets/favicon.svg — it has not since the brand icon set
+  // landed, and a search crawler needs a real URL to fetch.) These larger ones
+  // are Pages-only, since iOS and Android fetch them by URL.
   // build.py already emits the two <link rel="icon"> tags in the shell (it
   // needs to, because the artifact takes a different form). These are the
   // extras only the deployed site can use.
