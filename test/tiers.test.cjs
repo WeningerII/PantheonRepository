@@ -79,9 +79,13 @@ test('an independent generator run emits a byte-identical tree', () => {
 test('meta is schema 4, counts agree, and hashed filenames match their bodies', () => {
   assert.strictEqual(meta.schema, 4, 'tier schema must be 4');
   // Buckets are the deterministic scale knob: the next power of two keeping
-  // ~100 figures/shard, floored at 64 (5.7k → 64, 30k → 512). Never hand-set.
+  // ~80 figures/shard, floored at 64 (5.1k → 64, 6.4k → 128, 30k → 512).
+  // Never hand-set. This mirrors bucketCountFor() in scripts/build-tiers.cjs;
+  // the per-shard target moved from 100 to 80 in 2026-09 when the size
+  // tripwire fired at 6,362 figures (bucket 8 at 151KB gz against a 150KB
+  // budget), which is the pre-agreed response for that tripwire executing.
   let expectBuckets = 64;
-  while (expectBuckets * 100 < meta.figures) expectBuckets *= 2;
+  while (expectBuckets * 80 < meta.figures) expectBuckets *= 2;
   assert.strictEqual(meta.buckets, expectBuckets, 'bucket count must follow the deterministic formula');
   assert.strictEqual(meta.bucketHash, 'sum-charcodes-mod-buckets');
   assert.strictEqual(meta.figures, index.length, 'meta.figures vs index length');
