@@ -1,0 +1,1497 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Chinese
+Eras (registered, exact): primordial | mythic | mythic-prehistory | xia |
+  shang | zhou | spring-autumn | warring-states | qin | han | three-kingdoms |
+  jin | northern-southern | sui | tang | song | yuan | ming | qing | modern
+Author pass: Chinese held 48 records. This adds 50.
+
+================================================================================
+THE GAP: 72 CHECKED, 70 ABSENT
+================================================================================
+
+A 72-name check across the WHOLE registry returned two hits, and both are
+false. "Yanluo Wang" matched `buddhist_yama` and `hindu_yama` — related
+figures in a transmission chain, not the Chinese king of Diyu. "Tudigong"
+matched `baule_asie`, an unrelated West African earth deity, on a normalised
+alias.
+
+Seventy absences out of seventy-two, in the religious corpus with more
+adherents and more surviving text than any other in this registry. What was
+missing was not a periphery. It was:
+
+- **The Three Pure Ones** — Yuanshi Tianzun, Lingbao Tianzun and Daode
+  Tianzun, who are the highest deities in Daoism, all three absent, in a
+  registry that held the Jade Emperor (who is below them).
+- **Six of the Eight Immortals.** The registry held Lü Dongbin and He Xiangu
+  and not the other six, which is like holding two Olympians.
+- **The entire underworld.** No Yanluo Wang. No Meng Po, whose soup of
+  forgetting every Chinese soul drinks before rebirth. No Zhong Kui, no Ox-Head
+  and Horse-Face, no Black and White Impermanence.
+- **The whole cast of the two novels the popular pantheon actually comes
+  from.** The registry held Sun Wukong and not Tang Sanzang, Zhu Bajie or Sha
+  Wujing — the Monkey King without the pilgrimage. It held Li Jing, Nezha,
+  Jinzha and Muzha from the *Fengshen Yanyi* and not Jiang Ziya, who is the
+  book's protagonist, nor Daji, nor King Zhou, nor King Wen, nor King Wu.
+- **Chiyou, Xingtian, Kuafu and Jingwei** — the four best-known figures in the
+  whole of early Chinese myth after the sovereigns.
+- **The Four Perils.**
+- **Guan Yu and Mazu**, who between them have more temples than any other two
+  figures in the Chinese world.
+
+================================================================================
+TWO SCOPING DECISIONS, STATED UP FRONT
+================================================================================
+
+**Offices are not figures.** Chenghuang, the City God, and Tudigong, the Earth
+God, are divine offices held by a different deified local person in every town
+and every field in China. The reference treatments define them that way — "a
+City God is a tutelary deity ... of a particular village, town or city" — which
+makes them a class, and this programme does not ingest classes. They are
+REJECT rows with the reasoning, not records, on the same rule that turned away
+the Ajogun, the Bacabs-as-a-class and the Are Ona Kakanfo. If the owner wants
+office-deities as records, these two are the first ADDs.
+
+**The imperial line is deferred as a unit.** Qin Shi Huang, Wu Zetian, Han
+Wudi and two thousand years of emperors are real, absent, and not here:
+sampling two of several hundred would be exactly the arbitrary partial the
+census exists to prevent. What is here from the historical record is the
+*deified*: Guan Yu, Mazu and Zhang Daoling, who receive cult.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the
+proxy — so research went through server-side web search and every citation
+names what was consulted. Where a figure comes from a datable literary source
+— the *Xiyouji* of the sixteenth century, the *Fengshen Yanyi* of the same
+period, the *Shanhaijing* of the Warring States and Han — the record says so
+rather than presenting a novel's invention as ancient myth.
+
+A note on eras. The Eight Immortals are traditionally dated to specific
+dynasties — Zhongli Quan to the Han, Zhang Guolao and Han Xiangzi to the Tang,
+Cao Guojiu to the Song — but the two already in this registry are filed under
+`mythic`, and these six are filed the same way so the group does not split
+across six era buckets. The traditional dating is on each record.
+
+================================================================================
+AUTHORED FIGURES — I. THE TOP OF THE DAOIST PANTHEON
+================================================================================
+
+```json
+[
+  {
+    "id": "chinese_yuanshi_tianzun",
+    "name": { "primary": "Yuanshi Tianzun", "alt": ["元始天尊", "Primeval Lord of Heaven", "Celestial Worthy of Primordial Beginning", "Jade Purity"],
+      "transliterations": { "Chinese": "元始天尊", "etymology": "yuan, origin; shi, beginning; tianzun, 'heavenly worthy' — the title of the highest rank of Daoist deity. 'The Heavenly Worthy of the Primordial Beginning'." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The first of the Sanqing, the Three Pure Ones, who are the highest deities of the Daoist pantheon. He holds Jade Purity, the first of the three highest heavens, and marks the first stage of the Dao's unfolding from undifferentiated unity into the manifest world.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Sanqing, the Three Pures, as the highest deities in the Daoist pantheon: Jade Purity, the Original and Primordial Heavenly Lord Yuanshi Tianzun; Upper Purity, Lingbao Tianzun; Grand Purity, Daode Tianzun — each marking a stage of cosmic creation and ruling one of the three highest heavens." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "In the Fengshen Yanyi it is he who gives Jiang Ziya the Fengshen Bang, the list that empowers him to invest the gods of Heaven — which is how a sixteenth-century novel arranges for the whole popular pantheon to be appointed by the highest Daoist deity.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Fengshen Yanyi: Yuanshi Tianzun bestows upon Jiang Ziya the Fengshen Bang, a list that empowers him to invest the gods of Heaven." } ] } ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "元始", "script": "Chinese", "rom": "yuanshi, primordial beginning" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yuanshi Tianzun as the first stage of the Dao's unfolding." } ] },
+      { "sphereId": "supreme-deity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Sanqing as the highest deities in the Daoist pantheon." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "patron-of", "personId": "chinese_jiang_ziya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yuanshi Tianzun bestowing the Fengshen Bang on Jiang Ziya." } ],
+        "notes": "The whole machinery of the Investiture of the Gods runs on this grant." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yuanshi Tianzun is the first of the Three Pure Ones, highest deities of the Daoist pantheon, holder of Jade Purity and the first stage of the Dao's unfolding, who in the Fengshen Yanyi gives Jiang Ziya the list by which the gods are invested.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Sanqing and of the Fengshen Yanyi." } ], "weight": "high" } ],
+    "notes": "The registry held the Jade Emperor and not the three deities above him, which is roughly the position of a Greek registry holding Zeus and not knowing about Chronos, Ouranos or Chaos — except that here the arrangement is doctrinal rather than genealogical. The Sanqing are not ancestors of the Jade Emperor; they are the Dao at three stages of becoming articulate, and the Jade Emperor administers what they constitute. Daoist temples have a Sanqing Hall and it is the principal one."
+  },
+  {
+    "id": "chinese_lingbao_tianzun",
+    "name": { "primary": "Lingbao Tianzun", "alt": ["靈寶天尊", "Celestial Worthy of the Numinous Treasure", "Divine Treasures Heavenly Lord", "Upper Purity"],
+      "transliterations": { "Chinese": "靈寶天尊", "etymology": "ling, numinous or spirit; bao, treasure — the Lingbao scriptures are one of the two great Daoist revelatory corpora, and the deity is the corpus personified." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The second of the Three Pure Ones, ruling the heaven of Highest Clarity and governing the second stage of creation: the tradition says he separated the yang from the yin, the clear from the murky, and sorted the elements into their groups.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lingbao Tianzun, the Celestial Worthy of the Numinous Treasure, who governs the second stage of creation and rules the heaven of Highest Clarity, and of whom tradition says he separated the yang from the yin, the clear from the murky, and sorted the elements into their groups." } ] } ],
+    "domains": [
+      { "sphereId": "cosmic-order", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lingbao Tianzun's separation of yin from yang and sorting of the elements." } ] },
+      { "sphereId": "revelation", "contextTag": "lifelong", "term": { "value": "靈寶", "script": "Chinese", "rom": "Lingbao, the Numinous Treasure scriptures" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Three Pure Ones as representing, among other dimensions, revealed scripture." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "emanation-of", "personId": "chinese_yuanshi_tianzun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Three Pure Ones as the unfolding of the Tao from undifferentiated unity into the manifest world, each marking a stage." } ],
+        "notes": "The second stage of an unfolding, not a son. The Sanqing are one Dao at three degrees of articulation and the relation is written that way." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Lingbao Tianzun is the second of the Three Pure Ones, ruler of the heaven of Highest Clarity, who governs the second stage of creation and separated yang from yin.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Sanqing and of Lingbao Tianzun's office." } ], "weight": "high" } ],
+    "notes": "He is a scripture that became a person. The Lingbao corpus is one of the two great bodies of Daoist revealed text, and the deity who holds the second Purity is that body of writing given a face and a heaven — which is an unusual thing for a god to be, and worth recording as what it is rather than flattening into 'creator deity, second rank'."
+  },
+  {
+    "id": "chinese_daode_tianzun",
+    "name": { "primary": "Daode Tianzun", "alt": ["道德天尊", "Heavenly Lord of Way and Virtue", "Taishang Laojun", "太上老君", "Laozi", "Lao Tzu", "Grand Purity"],
+      "transliterations": { "Chinese": "道德天尊", "etymology": "dao, the Way; de, virtue or power — the two words of the title of the Daodejing. He is the book's author deified, and the book is named for him or he for it." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The third of the Three Pure Ones, holding Grand Purity. Laozi, who wrote the Daodejing, is understood as his manifestation — the deity is prior and the philosopher is a descent of him, not the other way round.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daode Tianzun, the Heavenly Lord of Way and Virtue, third of the Sanqing, of whom Laozi is regarded to be a manifestation, and who authored the Dao De Jing." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "As Taishang Laojun he descended on Mount Heming in 142 CE to Zhang Daoling, abolished the reign of the demoniac Six Heavens, and gave him the Doctrine of the Orthodox One and the title of Celestial Master — which is the founding act of organised Daoism.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Zhang Daoling received in 142 CE a revelation from Taishang Laojun, the deified Laozi, who descended atop Mount Heming to establish a new covenant, bestowed the title of Celestial Master, and gave him the Doctrine of the Orthodox One Resting on the Authority of the Alliance, revealing that the demoniac Six Heavens had been abolished and replaced by a golden age of the Three Heavens." } ] } ],
+    "domains": [
+      { "sphereId": "revelation", "contextTag": "lifelong", "term": { "value": "道德", "script": "Chinese", "rom": "daode, the Way and its Virtue" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daode Tianzun as the author of the Daodejing and the revealer to Zhang Daoling." } ] },
+      { "sphereId": "divine-teaching", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Three Pure Ones as representing divine teaching." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "emanation-of", "personId": "chinese_lingbao_tianzun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Sanqing as three stages of the Dao's unfolding." } ],
+        "notes": "The third stage." },
+      { "kind": "guide-of", "personId": "chinese_zhang_daoling",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the revelation of 142 CE on Mount Heming and the bestowal of the title of Celestial Master." } ],
+        "notes": "The revelation that begins organised Daoism is a conversation between these two." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Daode Tianzun is the third of the Three Pure Ones, of whom Laozi is a manifestation, and who as Taishang Laojun revealed the Orthodox One covenant to Zhang Daoling on Mount Heming in 142 CE.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Sanqing, of Daode Tianzun and of the revelation to Zhang Daoling." } ], "weight": "high" } ],
+    "notes": "Laozi is an alias on this record rather than a record of his own, and that is the tradition's own arrangement rather than an editorial shortcut: in Daoist terms the man who wrote the Daodejing is a descent of the deity, one of many, and treating the deity as the deification of a historical philosopher inverts what the sources say. The historicity of Laozi as a person is separately disputed and this record takes no position on it — what it records is the deity, his office among the Three Pure Ones, and the one dated act attributed to him, which is 142 CE on Mount Heming."
+  },
+  {
+    "id": "chinese_doumu",
+    "name": { "primary": "Doumu", "alt": ["斗母", "斗姆", "Dou Mu", "Mother of the Big Dipper", "Dipper Mother"],
+      "transliterations": { "Chinese": "斗母元君", "etymology": "dou, the Dipper — the constellation, and also the measure-vessel it is named for; mu, mother. 'Mother of the Dipper'." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The mother of the Big Dipper and the female half of heavenly energy — the counterpart of Tian, whose other half is male. She is shown with a kind face and sixteen arms, two hands clasped in prayer and the other fourteen holding the instruments of her office.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Doumu: a goddess in Chinese folk religion and Taoism, mother of the Big Dipper and the female equivalent to Tian, the male half of the Chinese concept of heavenly energy, characterised by a kind face and sixteen arms, two hands clasped in prayer and the other fourteen holding various objects of religious significance." } ] } ],
+    "domains": [
+      { "sphereId": "stars", "contextTag": "lifelong", "term": { "value": "北斗", "script": "Chinese", "rom": "Beidou, the Northern Dipper" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Doumu as the mother of the Big Dipper." } ] },
+      { "sphereId": "heaven", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Doumu as the female equivalent of Tian." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Doumu is the Daoist and folk-religion goddess who is mother of the Big Dipper and the female half of heavenly energy against Tian's male half, shown with sixteen arms.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Doumu, her office and her iconography." } ], "weight": "high" } ],
+    "notes": "Sixteen arms is a Buddhist body on a Daoist goddess, and the borrowing is not disguised — Doumu is one of the clearest cases in Chinese religion of a figure assembled from more than one tradition and worshipped without anyone minding. Her office is the Dipper, which in Chinese astrology holds the registers of life and death, so a prayer to her is a prayer about how long you have. The registry had no Dipper deity at all."
+  },
+  {
+    "id": "chinese_xuanwu",
+    "name": { "primary": "Xuanwu", "alt": ["玄武", "Zhenwu", "真武", "True Martial Great Emperor", "Dark Warrior", "Black Tortoise"],
+      "transliterations": { "Chinese": "玄武", "etymology": "xuan, dark or mysterious; wu, martial. Renamed Zhenwu, 'Truly Martial', under Emperor Zhenzong of Song, to avoid the taboo on the personal name of the dynasty's ancestral sage Zhao Xuanlang." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the higher-ranking deities of Daoism: god of the north, associated with water, with winter, and with the Black Tortoise-Snake, one of the Four Symbols of the Chinese constellations.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xuanwu: also known as True Martial Great Emperor or Truly Valiant Great Emperor, a deity in Chinese religion and one of the higher-ranking deities in Taoism, identified as the god of the north, associated with water, winter and the Black Turtle-Snake, one of the Four Symbols of the Chinese constellations." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "Under Emperor Zhenzong of Song his name was changed from Xuanwu to Zhenwu to avoid a dynastic naming taboo, and he is known under both.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: during the reign of Emperor Zhenzong of Song, to avoid the taboo of the Song dynasty's ancestral sage Zhao Xuanlang, Xuanwu was changed to Zhenwu." } ] } ],
+    "domains": [
+      { "sphereId": "north", "contextTag": "lifelong", "term": { "value": "玄武", "script": "Chinese", "rom": "Xuanwu, the Dark Warrior of the north" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xuanwu as the god of the north." } ] },
+      { "sphereId": "water", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xuanwu's association with water and winter." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xuanwu as the True Martial or Truly Valiant Great Emperor." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xuanwu, renamed Zhenwu under Emperor Zhenzong of Song, is a high-ranking Daoist deity: god of the north, of water and winter, and the Black Tortoise-Snake of the Four Symbols.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Xuanwu / Zhenwu and of the Song naming taboo." } ], "weight": "high" } ],
+    "notes": "The naming taboo is worth keeping on the record because it dates the transformation: a constellation-figure of the Four Symbols becomes a personal deity with a martial biography, and the moment the state renames him is the moment that transformation is complete enough for the state to care. The temple complex on Wudang Mountain is his, and it was built by the Yongle emperor, who had usurped a throne and needed a martial god of the north on his side."
+  },
+  {
+    "id": "chinese_dongyue_dadi",
+    "name": { "primary": "Dongyue Dadi", "alt": ["東嶽大帝", "Great Emperor of the Eastern Peak", "Lord of Mount Tai"],
+      "transliterations": { "Chinese": "東嶽大帝", "etymology": "dong, east; yue, sacred peak; dadi, great emperor. The Eastern Peak is Mount Tai in Shandong, the first of the Five Sacred Mountains." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The Daoist deity of Mount Tai, and the head of a large bureaucratic celestial ministry whose business is the Book of Life — the register of the date on which each human soul must be summoned before the judges of hell.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dongyue Dadi: a Daoist deity of the sacred mountain Mount Tai, believed to be the leader of a large bureaucratic celestial ministry overseeing the maintenance of the Book of Life, a register of the due dates on which each human soul must be summoned before the Judges of Hell for judgement." } ] } ],
+    "domains": [
+      { "sphereId": "mountains", "contextTag": "lifelong", "term": { "value": "泰山", "script": "Chinese", "rom": "Taishan, Mount Tai" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dongyue Dadi as the deity of Mount Tai." } ] },
+      { "sphereId": "fate", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Book of Life and its due dates, maintained by his ministry." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Chinese", "placeName": "Mount Tai, and the Dongyue temples", "kind": "state-and-popular-cult", "period": "mythic to modern",
+        "attestation": "the Dongyue temples, which exist in cities across the Chinese world", "source": "Reference treatments of Dongyue Dadi and the Dongyue Temple.",
+        "note": "A Dongyue temple is laid out as a government office, with departments, clerks and files, because that is what the deity's ministry is." } ],
+    "sources": [ { "claim": "Dongyue Dadi is the Daoist deity of Mount Tai and the head of the celestial ministry that maintains the Book of Life, the register of when each soul is due before the judges of hell.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Dongyue Dadi and his ministry." } ], "weight": "high" } ],
+    "notes": "Chinese religion organises the afterlife as a civil service, and this is the department head. The Book of Life is a filing system: your death is not a fate but an appointment, entered in a register kept by clerks who work for a mountain. Everything below him in this batch — Yanluo Wang, the Ten Kings, Ox-Head and Horse-Face, Meng Po at the last bridge — is staff. The registry had the staff no more than it had the minister."
+  },
+  {
+    "id": "chinese_wenchang",
+    "name": { "primary": "Wenchang Wang", "alt": ["文昌王", "Wenchang Dijun", "文昌帝君", "God of Culture and Literature"],
+      "transliterations": { "Chinese": "文昌帝君", "etymology": "wen, writing or culture; chang, flourishing. Also a constellation name — the six stars near the Dipper — before it is a deity." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The Daoist god of culture and literature: the celestial official in charge of literary fortune — everything to do with learning, writing, and the examinations.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Wenchang Wang, also known as Wenchang Dijun, a Taoist deity known as the God of Culture and Literature, the celestial official in charge of 'literary fortune' — everything related to learning, writing and examinations." } ] } ],
+    "domains": [
+      { "sphereId": "literature", "contextTag": "lifelong", "term": { "value": "文昌", "script": "Chinese", "rom": "Wenchang" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Wenchang as the god of culture and literature." } ] },
+      { "sphereId": "examinations", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Wenchang's charge over literary fortune and the examinations." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Chinese", "placeName": "the Wenchang temples", "kind": "popular-cult", "period": "mythic to modern",
+        "attestation": "Wenchang temples across the Chinese world, and the offerings left at them before examinations", "source": "Reference treatments of Wenchang Wang and the Wenchang temples.",
+        "note": "Still in active use: the cult did not end with the imperial examinations, it transferred to the ones that replaced them." } ],
+    "sources": [ { "claim": "Wenchang Wang, Wenchang Dijun, is the Chinese god of culture and literature, the celestial official in charge of learning, writing and examinations.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Wenchang Wang and his office." } ], "weight": "high" } ],
+    "notes": "A civilisation that recruited its government by written examination for thirteen hundred years produced a god for it, and he is still receiving offerings from candidates now that the examination is a different one. He is also a constellation: the six stars of Wenchang sit beside the Dipper, and the deity is the asterism promoted, in the same way Xuanwu is one of the Four Symbols promoted. The registry had neither."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. SIX OF THE EIGHT IMMORTALS
+================================================================================
+
+The registry held Lü Dongbin and He Xiangu. The Eight Immortals are a group of
+eight by definition — they are named, painted, carved and invoked as a set,
+and "the Eight Immortals cross the sea" is one of the two or three best-known
+scenes in Chinese art. Holding two of them is not holding a fraction of a
+pantheon; it is holding a fragment of one object.
+
+Each of the six is given the attribute that identifies him in every
+representation, because in this group the object is the identification: the
+fan, the donkey, the flute, the court tablet, the iron crutch, the basket of
+flowers.
+
+```json
+[
+  {
+    "id": "chinese_zhongli_quan",
+    "name": { "primary": "Zhongli Quan", "alt": ["鍾離權", "Han Zhongli", "漢鍾離"],
+      "transliterations": { "Chinese": "鍾離權", "etymology": "Zhongli is the surname, Quan the given name. He is often called Han Zhongli, the Han prefixed because tradition places him in that dynasty." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the Eight Immortals, who attained immortality by spiritual cultivation and adherence to the Dao. He is recognised by his fan and his elder's bearing, and tradition places him in the Han.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a legendary group of eight who achieved immortality through spiritual cultivation and adherence to the Dao; and of Zhongli Quan as recognised by a fan and the bearing of an elder, often called Han Zhongli." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "He is credited with the transmutation of base metals into gold and stands for wealth and prosperity; his feather fan is his emblem in the group.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Zhongli Quan is known for his ability to transmute base metals into gold and symbolises wealth and prosperity; his magical object among the Eight is a feather fan." } ] } ],
+    "domains": [
+      { "sphereId": "alchemy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhongli Quan's transmutation of base metals into gold." } ] },
+      { "sphereId": "wealth", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhongli Quan as a symbol of wealth and prosperity." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_zhang_guolao",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." },
+      { "kind": "companion", "personId": "chinese_lan_caihe",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Zhongli Quan is one of the Eight Immortals, identified by a feather fan, credited with transmuting base metals into gold, and a symbol of wealth and prosperity.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Eight Immortals and of Zhongli Quan's attributes." } ], "weight": "high" } ],
+    "notes": "The fan is not decoration: in the group's stories it revives the dead, and it is how you tell him from the other elders on a lacquer screen. The Eight are a set in which each member is identified by a held object, which makes them unusually stable across a thousand years of depiction — an eighteenth-century porcelain and a Ming woodblock name them the same way, by what is in their hands."
+  },
+  {
+    "id": "chinese_zhang_guolao",
+    "name": { "primary": "Zhang Guolao", "alt": ["張果老", "Zhang Guo", "Elder Zhang Guo"],
+      "transliterations": { "Chinese": "張果老", "etymology": "Zhang Guo is the name; lao, 'old', is appended as a title — 'Old Zhang Guo' — and has effectively become part of it." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The eccentric of the Eight Immortals: an elder with a white donkey and a bamboo instrument, remembered as a powerful magician and particularly as a necromancer, fond of wine, and traditionally placed in the Tang.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhang Guolao: the eccentric elder associated with a white donkey and a bamboo instrument, remembered as a powerful magician particularly in the field of necromancy, regarded as the most eccentric of the Eight Immortals, known for his love of wine and for the martial art named after him." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "The donkey is the detail everyone keeps: he rides it backwards, and when he is not riding it he folds it up like paper and puts it away.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the magical objects of the Eight Immortals, among them Zhang Guolao's paper mule." } ] } ],
+    "domains": [
+      { "sphereId": "magic", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhang Guolao as a powerful magician and necromancer." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_zhongli_quan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." },
+      { "kind": "companion", "personId": "chinese_han_xiangzi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Zhang Guolao is one of the Eight Immortals: an eccentric elder with a white donkey he folds like paper, a bamboo instrument, a reputation as a necromancer, and a love of wine.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Zhang Guolao and of the Eight Immortals' attributes." } ], "weight": "high" } ],
+    "notes": "He is the one the stories are funniest about, and the folding donkey is why. A magician who can fold his mount into a square of paper and tuck it in his sleeve is a particular kind of joke about immortality — the powers are absurd, casually held, and used for getting about. He also has a martial art named after him, which is more than most gods manage."
+  },
+  {
+    "id": "chinese_han_xiangzi",
+    "name": { "primary": "Han Xiangzi", "alt": ["韓湘子", "Han Xiang"],
+      "transliterations": { "Chinese": "韓湘子", "etymology": "Han Xiang is the name; zi is the honorific 'master' appended to it." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The musician of the Eight Immortals, identified by his flute and by the arts. He made the bamboo into a flute, and is the patron of musicians and composers; tradition places him in the Tang.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Han Xiangzi: identified with a flute and the arts, who made the bamboo into a flute, making him a patron of musicians and composers; his magical object among the Eight is his flute." } ] } ],
+    "domains": [
+      { "sphereId": "music", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Han Xiangzi as patron of musicians and composers." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_zhang_guolao",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." },
+      { "kind": "companion", "personId": "chinese_cao_guojiu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Han Xiangzi is one of the Eight Immortals, identified by the flute he made from bamboo, and the patron of musicians and composers.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Han Xiangzi and the Eight Immortals." } ], "weight": "high" } ],
+    "notes": "His flute makes things grow — that is the power attached to him in the group's stories, and it is why the patronage runs to composition rather than performance. In the standard set he is the youngest and the one whose immortality is most recently acquired."
+  },
+  {
+    "id": "chinese_cao_guojiu",
+    "name": { "primary": "Cao Guojiu", "alt": ["曹國舅", "Cao the Imperial Uncle"],
+      "transliterations": { "Chinese": "曹國舅", "etymology": "Cao is the surname; guojiu, 'imperial uncle', is the title of a brother of an empress — it is what he was, and it stuck to him instead of a personal name." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The courtly member of the Eight: a man of the Song imperial family, shown in official robes and a ceremonial headdress, holding the tablet an official carried into a formal audience.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cao Guojiu: the courtly member of the group, usually represented in official robes and a ceremonial headdress, holding the tablet carried by officials during formal court audiences, and according to legend a member of the imperial family of the Song dynasty." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "He had always been devoted to the Dao; on learning of the corruption and abuse of power inside his own family he abandoned his position entirely and left.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cao Guojiu had always dedicated himself to the Tao, but after learning of corruption and abuse of power within his family he abandoned his privileged position entirely." } ] } ],
+    "domains": [
+      { "sphereId": "nobility", "contextTag": "lifelong", "term": { "value": "國舅", "script": "Chinese", "rom": "guojiu, imperial brother-in-law" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cao Guojiu's imperial connection and court dress." } ] },
+      { "sphereId": "renunciation", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his abandonment of his position on learning of his family's corruption." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_han_xiangzi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." },
+      { "kind": "companion", "personId": "chinese_li_tieguai",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Cao Guojiu is one of the Eight Immortals, a member of the Song imperial family shown in court dress with the audience tablet, who renounced his position on discovering his family's corruption.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Cao Guojiu and the Eight Immortals." } ], "weight": "high" } ],
+    "notes": "The Eight are socially assorted on purpose — a beggar, a court official, a musician, an old drunk, a woman, an androgyne — and Cao Guojiu is the one who arrives from the top. His castanets, in the sets that give them to him, are court instruments; the group's point is that the Dao is reached from any starting position, and his is the most encumbered one."
+  },
+  {
+    "id": "chinese_li_tieguai",
+    "name": { "primary": "Li Tieguai", "alt": ["李鐵拐", "Iron-Crutch Li", "Tieguai Li"],
+      "transliterations": { "Chinese": "李鐵拐", "etymology": "Li is the surname; tieguai, 'iron crutch'. He is named for the thing he leans on." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the Eight Immortals, who appears in the body of a beggar, carrying an iron crutch and a gourd. He is the patron of medicine and of healing, and is held to be particularly good to the poor and the sick.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Li Tieguai: he carries an iron crutch and gourd and appears in the body of a beggar; he is the patron of medicine and healing, often depicted as a beggar who walks with a crutch, and is said to be particularly benevolent to the poor and infirm." } ] } ],
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Li Tieguai as the patron of medicine and healing." } ] },
+      { "sphereId": "the-poor", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Li Tieguai's benevolence to the poor and infirm." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_cao_guojiu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." },
+      { "kind": "companion", "personId": "chinese_lan_caihe",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Li Tieguai is one of the Eight Immortals, appearing as a lame beggar with an iron crutch and a medicine gourd, patron of healing and particularly of the poor and sick.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Li Tieguai and the Eight Immortals." } ], "weight": "high" } ],
+    "notes": "The body is the story. In the standard account his spirit left it to travel, the body was burned in his absence as a corpse, and he had to take the only one available on his return, which belonged to a lame beggar who had just died. He is therefore a god who looks like the least of men by accident and stayed that way, and the medicine gourd he carries pours out for people who cannot pay. The registry, which held two Immortals, did not hold the one the poor pray to."
+  },
+  {
+    "id": "chinese_lan_caihe",
+    "name": { "primary": "Lan Caihe", "alt": ["藍采和"],
+      "transliterations": { "Chinese": "藍采和", "etymology": "Not securely derived; the name is treated as a personal name rather than a descriptive in the treatments consulted." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The androgynous member of the Eight Immortals, carrying a basket of flowers, and standing in the group for freedom and for the joy of being alive.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lan Caihe: often depicted as androgynous, representing freedom and the joy of life, often with a basket of flowers, which is the magical object attached to this immortal among the Eight." } ] } ],
+    "domains": [
+      { "sphereId": "flowers", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lan Caihe's basket of flowers." } ] },
+      { "sphereId": "freedom", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lan Caihe as representing freedom and the joy of life." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_li_tieguai",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." },
+      { "kind": "companion", "personId": "chinese_zhongli_quan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Eight Immortals as a fixed group." } ], "notes": "One of the Eight." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Lan Caihe is one of the Eight Immortals, commonly depicted as androgynous, carrying a basket of flowers, and standing for freedom and the joy of life.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Lan Caihe and of the Eight Immortals' attributes." } ], "weight": "high" } ],
+    "notes": "The sex is recorded as unknown because that is the position the tradition takes rather than a gap in the sources: Lan Caihe is depicted as androgynous, is described in some accounts as a man in women's dress and in others as a woman, and the group's own literature treats the ambiguity as characteristic. Filling it in either direction would be the invention this programme forbids."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. DIYU: THE UNDERWORLD AS A CIVIL SERVICE
+================================================================================
+
+The Chinese afterlife is administered. A soul is arrested by two officers,
+brought before a court, processed through nine more, and finally given a drink
+that clears its memory so it can be filed back into the world. Every stage has
+a named holder, and the registry had none of them — no Yanluo Wang, no Meng
+Po, no Zhong Kui, no Ox-Head and Horse-Face, no Black and White Impermanence.
+
+Diyu itself is a Buddhist import reworked by Daoism and by folk practice,
+which is why Yanluo Wang's name is the Chinese form of Yama. The corpus holds
+`buddhist_yama` and `hindu_yama`; this record is the Chinese magistrate at the
+end of that transmission, which is a different office in a different system,
+and the relation between them is stated rather than the records merged.
+
+```json
+[
+  {
+    "id": "chinese_yanluo_wang",
+    "name": { "primary": "Yanluo Wang", "alt": ["閻羅王", "Yanluo", "Yanwang", "閻王", "King Yama of China"],
+      "transliterations": { "Chinese": "閻羅王", "etymology": "A transcription of the Sanskrit Yamarāja through Buddhist translation, with wang, 'king', appended. The name arrives with the institution." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "God of death and ruler of Diyu, overseeing the Ten Kings of Hell from the capital at Youdu. He is himself the fifth of those ten and sits in the fifth court.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yanluo Wang: the god of death and ruler of Diyu, overseeing the Ten Kings of Hell in its capital of Youdu, and himself the fifth judge in the court of the underworld." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "He is shown as a large man with a scowling red face, bulging eyes and a long beard, in traditional robes and a judge's cap bearing the character for 'king'.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yanluo Wang's iconography: a large man with a scowling red face, bulging eyes and a long beard, wearing traditional robes and a judge's cap or crown bearing the Chinese character for 'king'." } ] } ],
+    "domains": [
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "閻羅王", "script": "Chinese", "rom": "Yanluo Wang" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yanluo Wang as the god of death." } ] },
+      { "sphereId": "judgment", "contextTag": "lifelong", "term": { "value": "地獄", "script": "Chinese", "rom": "Diyu, the earth prison" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yanluo Wang as ruler of Diyu and fifth judge of the underworld." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "chinese_dongyue_dadi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dongyue Dadi as leader of the celestial ministry maintaining the Book of Life, the register of the dates on which souls must be summoned before the Judges of Hell." } ],
+        "notes": "The summonses come down from the Eastern Peak; the judging happens here." },
+      { "kind": "counterpart-of", "personId": "buddhist_yama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Chinese hell as principally a Buddhist concept modified by Daoism and indigenous folk belief, and of Yanluo Wang's name as the Chinese form of Yama." } ],
+        "notes": "The same office at the other end of a transmission. Recorded as a counterpart rather than merged, because the Chinese magistrate of the fifth court in a ten-court bureaucracy is not the Buddhist Yama and is still less the Vedic one." },
+      { "kind": "companion", "personId": "chinese_qinguang_wang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Ten Kings of Hell, who preside over fixed regions where the dead are punished." } ],
+        "notes": "The first king of the ten; this is the fifth." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yanluo Wang is the god of death and ruler of Diyu, fifth of the Ten Kings of Hell, presiding from Youdu, whose name is the Chinese form of Yama.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yanluo Wang, Diyu and the Ten Kings." } ], "weight": "high" } ],
+    "notes": "The detail that makes this system Chinese rather than Indian is that he is fifth. A supreme god of death who is nonetheless the fifth of ten judges, reporting upward to a mountain's ministry and downward to clerks, is a bureaucracy's idea of death — appealable, documented, and staffed. The registry held the Buddhist and Hindu Yama and not the Chinese magistrate, which is the same shape of omission this programme found with Oshosi and the Cuban Ochosi, running the other way."
+  },
+  {
+    "id": "chinese_qinguang_wang",
+    "name": { "primary": "Qinguang Wang", "alt": ["秦廣王", "King Qinguang", "the First King of Hell"],
+      "transliterations": { "Chinese": "秦廣王", "etymology": "Qinguang is the title-name of the first of the Ten Kings; wang is 'king'." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The first of the Ten Kings of Hell, who runs the First Court: every soul arrives here for initial processing, its life record is reviewed, its general moral standing is determined, and it is routed to whichever court it belongs in.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: King Qinguang runs the First Court, where all souls arrive for initial processing and judgment, reviewing their life record and determining their general moral standing before routing them to the appropriate court; the Shiwang are the ten kings of hell who preside over fixed regions where the dead are punished by physical tortures appropriate to their crimes." } ] } ],
+    "domains": [
+      { "sphereId": "judgment", "contextTag": "lifelong", "term": { "value": "十王", "script": "Chinese", "rom": "Shiwang, the Ten Kings" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Ten Kings of Hell and of Qinguang's First Court." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_yanluo_wang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Ten Kings of Hell, of whom Yanluo Wang is the fifth." } ],
+        "notes": "The fifth king; this is the first." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Qinguang Wang is the first of the Ten Kings of Hell, whose First Court receives every soul for initial processing and routes it to the appropriate court.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Shiwang and of the First Court." } ], "weight": "medium" } ],
+    "notes": "He is intake. The other eight kings of the ten are not in this batch because the sources reachable in this session name the set and describe only the first and the fifth; recording eight names with an ordinal each would be filling a table rather than ingesting figures, and the census blocks them with that stated. What the first court establishes is that Chinese hell begins with paperwork."
+  },
+  {
+    "id": "chinese_meng_po",
+    "name": { "primary": "Meng Po", "alt": ["孟婆", "Lady Meng", "Granny Meng"],
+      "transliterations": { "Chinese": "孟婆", "etymology": "Meng is a surname; po, 'old woman' or 'granny', is the form of address. 'Old Mother Meng'." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The goddess of oblivion, who stands on the Naihe Bridge — the Bridge of Oblivion — at the last stage of the underworld and serves each soul a bowl of soup that wipes its memory, so that it can be reborn without the weight of the life before.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Meng Po: the goddess of oblivion in Chinese mythology who serves Meng Po Soup on the Bridge of Oblivion or Naihe Bridge, the soup wiping the memory of persons so they can reincarnate into the next life without the burdens of the previous one." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "She makes it herself, a soup of five flavours, from herbs she collects out of the ponds and streams of the world above.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Meng Po makes her Five Flavoured Soup of oblivion by collecting herbs from various earthly ponds and streams." } ] } ],
+    "domains": [
+      { "sphereId": "forgetting", "contextTag": "lifelong", "term": { "value": "孟婆湯", "script": "Chinese", "rom": "Mengpo tang, Meng Po's soup" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Meng Po's soup of forgetting." } ] },
+      { "sphereId": "reincarnation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Meng Po's role at the last stage before rebirth." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "chinese_yanluo_wang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yanluo Wang as ruler of Diyu, in which Meng Po holds the last station before rebirth." } ],
+        "notes": "Her post is the last one in his jurisdiction." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Meng Po is the Chinese goddess of oblivion who serves, on the Naihe Bridge, a five-flavoured soup made from herbs gathered in the world above, which erases a soul's memory before rebirth.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Meng Po, her soup and the Naihe Bridge." } ], "weight": "high" } ],
+    "notes": "Every Chinese person who has ever died has drunk this, and the fact that she gathers the ingredients herself from ordinary ponds is the part the stories linger on. She is the mechanism that makes reincarnation bearable and also the reason nobody remembers: the entire folk genre of people who avoided the soup, or drank it badly, or recognise a stranger for no reason they can name, runs off her. The registry held the whole of Chinese religion without her."
+  },
+  {
+    "id": "chinese_zhong_kui",
+    "name": { "primary": "Zhong Kui", "alt": ["鍾馗", "Chung Kuei", "the Demon Queller"],
+      "transliterations": { "Chinese": "鍾馗", "etymology": "Not securely derived. One old suggestion connects the name to a ritual mallet of peachwood used to drive off ghosts, which would make the man a personified instrument." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A Daoist deity, the vanquisher of ghosts and evil beings, depicted as a large man with a big black beard, bulging eyes and a wrathful expression, who commands eighty thousand demons.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhong Kui: a Taoist deity traditionally regarded as a vanquisher of ghosts and evil beings, depicted as a large man with a big black beard, bulging eyes and a wrathful expression, able to command 80,000 demons to do his bidding." } ] } ],
+    "domains": [
+      { "sphereId": "exorcism", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhong Kui as the vanquisher of ghosts and evil beings." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhong Kui's command of eighty thousand demons and his protective function." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Chinese", "placeName": "Chinese households, at the New Year and the fifth month", "kind": "apotropaic-cult", "period": "mythic to modern",
+        "attestation": "his image pasted on doors and hung in houses against ghosts", "source": "Reference treatments of Zhong Kui and of the painted subject 'Zhong Kui the Demon Queller'.",
+        "note": "He is a painting before he is a statue: the standing subject in Chinese art is Zhong Kui with five bats, and the image itself is the protection." } ],
+    "sources": [ { "claim": "Zhong Kui is the Daoist demon-queller, a large wrathful figure with a black beard and bulging eyes who commands eighty thousand demons and whose image protects houses against ghosts.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Zhong Kui and of his iconography." } ], "weight": "high" } ],
+    "notes": "The standard story makes him a scholar who took the imperial examination, came first, was refused the honour because he was too ugly to present at court, killed himself on the palace steps, and was appointed by the emperor of the dead to hunt ghosts — a bureaucratic grievance turned into a divine office, which is a very Chinese sort of apotheosis. He does not appear in the registry's Chinese records at all, though his image is on more doors in the Chinese world than almost any other god's."
+  },
+  {
+    "id": "chinese_bai_wuchang",
+    "name": { "primary": "Bai Wuchang", "alt": ["白無常", "White Impermanence", "Xie Bi'an"],
+      "transliterations": { "Chinese": "白無常", "etymology": "bai, white; wuchang, 'impermanence' — the Buddhist anitya, the fact that nothing lasts, made into an officer with a name and a uniform." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the two deities of Chinese folk religion charged with escorting the spirits of the dead to the underworld — the one dressed in white.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Heibai Wuchang, 'Black and White Impermanence', two deities in Chinese folk religion in charge of escorting the spirits of the dead to the underworld, dressed in black and white respectively." } ] } ],
+    "domains": [
+      { "sphereId": "psychopomp", "contextTag": "lifelong", "term": { "value": "無常", "script": "Chinese", "rom": "wuchang, impermanence" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Black and White Impermanence as escorts of the dead." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_hei_wuchang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Heibai Wuchang as a pair." } ],
+        "notes": "They work as a pair and are almost never shown apart." },
+      { "kind": "subordinate-to", "personId": "chinese_yanluo_wang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Heibai Wuchang as escorting spirits to the underworld ruled by Yanluo Wang." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bai Wuchang, White Impermanence, is one of the two deities of Chinese folk religion who escort the spirits of the dead to the underworld, the one in white.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Heibai Wuchang." } ], "weight": "high" } ],
+    "notes": "An abstract noun in a uniform. Wuchang is the Buddhist doctrine that nothing lasts, and Chinese folk religion turned it into two men in black and white who come to the door with a warrant. The white one is conventionally the taller, wears a hat reading 'fortune at first sight', and is the one people hope for."
+  },
+  {
+    "id": "chinese_hei_wuchang",
+    "name": { "primary": "Hei Wuchang", "alt": ["黑無常", "Black Impermanence", "Fan Wujiu"],
+      "transliterations": { "Chinese": "黑無常", "etymology": "hei, black; wuchang, impermanence. The pair are named for the colour of what they wear." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The second of the two escorts of the dead, the one dressed in black.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Heibai Wuchang, two deities in charge of escorting the spirits of the dead to the underworld, dressed in black and white respectively." } ] } ],
+    "domains": [
+      { "sphereId": "psychopomp", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Black and White Impermanence as escorts of the dead." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_bai_wuchang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Heibai Wuchang as a pair." } ], "notes": "The other half." },
+      { "kind": "subordinate-to", "personId": "chinese_yanluo_wang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Heibai Wuchang as escorting spirits to the underworld ruled by Yanluo Wang." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hei Wuchang, Black Impermanence, is the second of the two deities who escort the spirits of the dead to the Chinese underworld, the one in black.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Heibai Wuchang." } ], "weight": "high" } ],
+    "notes": "Recorded as two records and not one, because they are two deities with two names, two colours and two temperaments, and a single 'Heibai Wuchang' entry would be the collective this programme does not ingest. Where the white one's hat promises fortune, the black one's reads that whoever meets him is in trouble."
+  },
+  {
+    "id": "chinese_niutou",
+    "name": { "primary": "Niutou", "alt": ["牛頭", "Ox-Head"],
+      "transliterations": { "Chinese": "牛頭", "etymology": "niu, ox; tou, head. He has one." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the two guardians of hell who bring the newly dead, one at a time, before Yanluo Wang for judgment.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ox-Head and Horse-Face, the fearsome guardians of hell, who bring the newly dead one by one before Yan for judgment." } ] } ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "牛頭馬面", "script": "Chinese", "rom": "Niutou Mamian, Ox-Head and Horse-Face" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ox-Head and Horse-Face as guardians of hell." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_mamian",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ox-Head and Horse-Face, who are named and act together." } ], "notes": "Named in one breath with him, always." },
+      { "kind": "subordinate-to", "personId": "chinese_yanluo_wang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two bringing the dead before Yan for judgment." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Niutou, Ox-Head, is one of the two guardians of the Chinese hell who bring the newly dead before Yanluo Wang for judgment.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ox-Head and Horse-Face." } ], "weight": "high" } ],
+    "notes": "The arresting officers. Chinese hell is entered under escort by two figures with animal heads and human bodies carrying implements of restraint, and they are as familiar in Chinese popular culture as any deity in this batch — which makes their absence from a six-thousand-figure registry of world mythology a notable one."
+  },
+  {
+    "id": "chinese_mamian",
+    "name": { "primary": "Mamian", "alt": ["馬面", "Horse-Face"],
+      "transliterations": { "Chinese": "馬面", "etymology": "ma, horse; mian, face." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The second guardian of hell, who with Ox-Head brings the newly dead before Yanluo Wang.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ox-Head and Horse-Face, the fearsome guardians of hell, who bring the newly dead one by one before Yan for judgment." } ] } ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ox-Head and Horse-Face as guardians of hell." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_niutou",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ox-Head and Horse-Face acting as a pair." } ], "notes": "The other officer." },
+      { "kind": "subordinate-to", "personId": "chinese_yanluo_wang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two bringing the dead before Yan for judgment." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mamian, Horse-Face, is the second of the two guardians of the Chinese hell who bring the newly dead before Yanluo Wang.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ox-Head and Horse-Face." } ], "weight": "high" } ],
+    "notes": "Recorded separately from Ox-Head for the same reason the two Impermanences are: two names, two faces, one job. The pairing is the point in both cases — Chinese hell sends its officers in twos, which is how a Chinese government office would do it."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE INVESTITURE OF THE GODS
+================================================================================
+
+The *Fengshen Yanyi*, a hundred-chapter novel of the Ming, first printed
+between 1567 and 1619, is where a large part of the Chinese popular pantheon
+comes from: it tells the fall of the Shang and the rise of the Zhou as a war
+in which the casualties are enfeoffed as gods afterwards, off a list. The
+registry held four of its supernatural cast — Li Jing, Nezha, Jinzha, Muzha —
+and none of its principals.
+
+These records say on their face that they come from a sixteenth-century novel
+working on an eleventh-century-BC event, because the difference matters and
+the genre does not hide it.
+
+```json
+[
+  {
+    "id": "chinese_jiang_ziya",
+    "name": { "primary": "Jiang Ziya", "alt": ["姜子牙", "Taigong Wang", "太公望", "Jiang Shang", "Lü Shang"],
+      "transliterations": { "Chinese": "姜子牙", "etymology": "Jiang is the clan name and Ziya the courtesy name. Taigong Wang, 'the Grand Duke's Hope', is the title King Wen is said to have given him on finding him." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "zhou" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "zhou", "eraOrdering": 0,
+      "startEvent": "The protagonist of the Fengshen Yanyi and the tactician of the Zhou rebellion: Ji Fa leads the rising against King Zhou of Shang and Jiang Ziya plans it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Fengshen Yanyi: the novel depicts the adventures of Jiang Ziya and the campaigns between King Zhou, last king of Shang, and the founders of the Zhou; the rebellion is led by Ji Fa, the eventual King of Zhou, with Jiang Ziya as his tactician." } ] },
+      { "typeStatus": "mortal", "era": "zhou", "eraOrdering": 1,
+        "startEvent": "Yuanshi Tianzun gives him the Fengshen Bang, the list that empowers him to invest the gods of Heaven — so that when the war is over it is he who assigns the dead their divine offices.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yuanshi Tianzun bestows upon Jiang Ziya the Fengshen Bang, a list that empowers him to invest the gods of Heaven." } ] } ],
+    "domains": [
+      { "sphereId": "strategy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jiang Ziya as tactician of the Zhou rebellion." } ] },
+      { "sphereId": "investiture", "contextTag": "lifelong", "term": { "value": "封神榜", "script": "Chinese", "rom": "Fengshen Bang, the roster of investiture" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Fengshen Bang and Jiang Ziya's power to invest the gods." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "chinese_ji_fa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the rebellion led by Ji Fa with Jiang Ziya as his tactician." } ],
+        "notes": "Nominally. The book is his rather than the king's." },
+      { "kind": "enemy", "personId": "chinese_shen_gongbao",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shen Gongbao's attempt to trick Jiang Ziya into handing over and destroying the Fengshen List." } ],
+        "notes": "His opposite number, whose whole object is the list." },
+      { "kind": "enemy", "personId": "chinese_di_xin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Fengshen Yanyi as the campaigns between King Zhou of Shang and the Zhou founders, with Jiang Ziya as tactician of the rebellion." } ],
+        "notes": "The king he brings down." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Jiang Ziya is the protagonist of the Fengshen Yanyi, tactician of the Zhou rebellion under Ji Fa, to whom Yuanshi Tianzun gives the Fengshen Bang, the list by which he invests the gods of Heaven after the war.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Fengshen Yanyi, Jiang Ziya and the Fengshen Bang." } ], "weight": "high" } ],
+    "notes": "The premise of the book is an administrative one and he is the administrator: a war is fought, and the people killed in it are then appointed to divine offices from a roster, so that the Chinese popular pantheon is staffed by the casualties of the Shang-Zhou transition. Jiang Ziya holds the roster. Whatever one thinks of the novel as evidence for the eleventh century BC, it is unambiguously evidence for what sixteenth-century Chinese people believed about where their gods came from — and the registry held four of its minor characters and not the man with the list."
+  },
+  {
+    "id": "chinese_di_xin",
+    "name": { "primary": "King Zhou of Shang", "alt": ["紂王", "Di Xin", "帝辛", "Zhou Xin"],
+      "transliterations": { "Chinese": "帝辛", "etymology": "Di Xin is the name; Zhou is the posthumous condemnation, a character used of a crupper-strap and understood as 'cruel'. He is known to history by the insult." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "shang" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "shang", "eraOrdering": 0,
+      "startEvent": "The last king of the Shang, the dynasty whose decline from about 1600 to 1046 BC the Fengshen Yanyi covers, and in that book the tyrant whom the Zhou rise to destroy.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Fengshen Yanyi: the story is set in the era of the decline of the Shang dynasty (1600-1046 BC) and the rise of the Zhou (1046-256 BC), and depicts the campaigns between the last evil king of the Shang, King Zhou, and the founders of the Zhou, King Wen and King Wu." } ] },
+      { "typeStatus": "mortal", "era": "shang", "eraOrdering": 1,
+        "startEvent": "In the novel he is corrupted by Daji, a fox spirit whom the goddess Nüwa sent to seduce him and turn him into a tyrant. The corruption is the mechanism by which the Mandate of Heaven is withdrawn.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: King Zhou is corrupted by the sadistic demon-fox Daji, who was sent by the goddess Nüwa to seduce King Zhou and corrupt him into a tyrant." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of King Zhou as the last king of the Shang." } ] },
+      { "sphereId": "tyranny", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of King Zhou's corruption into a tyrant." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "chinese_daji",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Da Ji as King Zhou's concubine." } ],
+        "notes": "His concubine, and in the novel his ruin." },
+      { "kind": "enemy", "personId": "chinese_ji_fa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the campaigns between King Zhou of Shang and the Zhou founders." } ], "notes": "The king who replaced him." },
+      { "kind": "enemy", "personId": "chinese_jiang_ziya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jiang Ziya as tactician of the rebellion against King Zhou." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "King Zhou, Di Xin, is the last king of the Shang and the tyrant of the Fengshen Yanyi, corrupted by the fox spirit Daji whom Nüwa had sent, and overthrown by King Wu and Jiang Ziya.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Fengshen Yanyi and of King Zhou's corruption." } ], "weight": "high" } ],
+    "notes": "He is the standing Chinese example of the bad last king, the figure every subsequent dynasty's fall was written against, and his historicity is not in doubt even where the atrocities attached to him are. What the novel adds is a mechanism: he is not merely wicked, he is possessed by proxy, corrupted on a goddess's instruction, which relieves the Mandate of Heaven of the awkward implication that Heaven simply changed its mind. The registry held nothing of the Shang at all."
+  },
+  {
+    "id": "chinese_daji",
+    "name": { "primary": "Daji", "alt": ["妲己", "Su Daji", "蘇妲己", "the nine-tailed fox"],
+      "transliterations": { "Chinese": "妲己", "etymology": "Daji is the personal name; Su is the clan of the woman she possesses. The nine-tailed fox inside her is the huli jing of Chinese folklore." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "shang" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "shang", "eraOrdering": 0,
+      "startEvent": "In the Fengshen Yanyi her real form is a thousand-year-old nine-tailed fox spirit who has possessed a human woman, Su Daji; Nüwa sent her to seduce King Zhou and corrupt him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Fengshen Yanyi Daji's real form is a nine-tailed fox spirit who possessed a human named Su Daji, a 1,000-year-old fox spirit; and King Zhou is corrupted by the demon-fox Daji, sent by the goddess Nüwa to seduce him and corrupt him into a tyrant." } ] },
+      { "typeStatus": "deity", "era": "shang", "eraOrdering": 1,
+        "startEvent": "As King Zhou's concubine she is remembered for her appetite for torture. She desired Bo Yikao, the heir of Zhou; when he refused her she had him cut to pieces alive and the flesh baked into pies, which were served to his father.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Da Ji is King Zhou's concubine, known as a vile woman who enjoyed torture; she lusted for Bo Yikao and, when her advances failed, ordered him to be slowly cut alive and baked the pieces of his flesh into pies for his father." } ] } ],
+    "domains": [
+      { "sphereId": "seduction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daji's mission to seduce and corrupt King Zhou." } ] },
+      { "sphereId": "shapeshifting", "contextTag": "lifelong", "term": { "value": "九尾狐", "script": "Chinese", "rom": "jiuweihu, nine-tailed fox" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daji's true form as a nine-tailed fox spirit." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "chinese_di_xin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Da Ji as King Zhou's concubine." } ], "notes": "" },
+      { "kind": "subordinate-to", "personId": "chinese_nuwa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daji as sent by the goddess Nüwa to seduce and corrupt King Zhou." } ],
+        "notes": "She is on an errand, which is the part of the story most often forgotten: the corruption of the Shang is commissioned from above." },
+      { "kind": "killer-of", "personId": "chinese_bo_yikao",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daji's ordering Bo Yikao to be cut alive and baked into pies after he refused her." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Daji is, in the Fengshen Yanyi, a thousand-year-old nine-tailed fox spirit possessing the woman Su Daji, sent by Nüwa to corrupt King Zhou of Shang, and the killer of Bo Yikao.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Daji and of the Fengshen Yanyi." } ], "weight": "high" } ],
+    "notes": "She is the most famous fox spirit in East Asia and the origin of a whole genre: the huli jing who takes a beautiful woman's shape and destroys a household or a state runs from her through Chinese, Korean and Japanese literature to the present. The registry held Nüwa, who sent her, and not her. The one detail that keeps the story from being simple misogyny is the errand — she is the instrument of a goddess's judgment on a king who had insulted her, and the novel is quite clear that the commission came first."
+  },
+  {
+    "id": "chinese_ji_chang",
+    "name": { "primary": "King Wen of Zhou", "alt": ["周文王", "Ji Chang", "姬昌", "Xibo"],
+      "transliterations": { "Chinese": "姬昌", "etymology": "Ji is the Zhou royal clan name, Chang the given name. Wen, 'cultured' or 'civil', is the posthumous title — the pair Wen and Wu, civil and martial, is the founding pattern of Chinese kingship." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "shang" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "shang", "eraOrdering": 0,
+      "startEvent": "With his son King Wu, one of the two founders of the Zhou against whom the Fengshen Yanyi sets the last Shang king; the novel calls them the sagacious founders and King Zhou the evil one, which is the whole moral architecture of the book.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Fengshen Yanyi as depicting the campaigns between the last evil king of the Shang, King Zhou, and the sagacious founders of the Zhou dynasty, King Wen and King Wu." } ] },
+      { "typeStatus": "mortal", "era": "shang", "eraOrdering": 1,
+        "startEvent": "Daji had his eldest son Bo Yikao killed and baked into pies, which were served to him. He is the father of Ji Fa, who made the conquest he did not live to make.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daji having Bo Yikao cut alive and baked into pies for his father." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "文", "script": "Chinese", "rom": "wen, the civil virtue" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of King Wen as a founder of the Zhou." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "chinese_ji_fa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of King Wen and King Wu as the founders of the Zhou, Ji Fa being the eventual King of Zhou." } ], "notes": "The son who finished it." },
+      { "kind": "father-of", "personId": "chinese_bo_yikao",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bo Yikao as the son whose flesh was baked into pies for his father." } ], "notes": "The eldest son, killed by Daji." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "King Wen of Zhou, Ji Chang, is with his son King Wu one of the two founders of the Zhou against whom the Fengshen Yanyi sets the last Shang king, and the father of Bo Yikao, whom Daji killed.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Fengshen Yanyi and of the Zhou founders." } ], "weight": "high" } ],
+    "notes": "Wen and Wu, the civil founder and the martial one, are the template every later Chinese dynasty wrote its own founding against, and the Yijing's hexagram statements are traditionally ascribed to him — composed, the tradition says, while he was King Zhou's prisoner. The registry held no Zhou at all, which for a corpus carrying the Xia through Yu the Great and Qi is a strange place to have stopped."
+  },
+  {
+    "id": "chinese_ji_fa",
+    "name": { "primary": "King Wu of Zhou", "alt": ["周武王", "Ji Fa", "姬發"],
+      "transliterations": { "Chinese": "姬發", "etymology": "Ji is the clan, Fa the given name. Wu, 'martial', is the posthumous title, opposite his father's Wen." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["chinese_ji_chang"], "parentRoles": ["father"],
+    "temporal": { "era": "zhou" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "zhou", "eraOrdering": 0,
+      "startEvent": "Son of King Wen, and the leader of the rising against King Zhou of Shang, with Jiang Ziya as his tactician; the Zhou dynasty he founded ran from 1046 to 256 BC.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Fengshen Yanyi: the rebellion against King Zhou is led by Ji Fa, the eventual King of Zhou, and Jiang Ziya, his tactician; the story is set at the rise of the Zhou dynasty, 1046-256 BC." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "武", "script": "Chinese", "rom": "wu, the martial virtue" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of King Wu as founder of the Zhou dynasty." } ] },
+      { "sphereId": "conquest", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ji Fa's leadership of the rebellion that ended the Shang." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "chinese_di_xin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the campaigns between King Zhou of Shang and the Zhou founders." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "King Wu of Zhou, Ji Fa, son of King Wen, led the rebellion that overthrew King Zhou of Shang with Jiang Ziya as his tactician, founding the Zhou dynasty of 1046-256 BC.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Fengshen Yanyi and of the Zhou founding." } ], "weight": "high" } ],
+    "notes": "The conquest of 1046 is the event Chinese political philosophy is built on: the Mandate of Heaven is the doctrine invented to explain why it was legitimate, and every dynastic change afterwards cites it. The Fengshen Yanyi's contribution is to add a second war behind the first, fought by immortals, whose dead become the gods — so that the founding of the Zhou is also the founding of the pantheon."
+  },
+  {
+    "id": "chinese_bo_yikao",
+    "name": { "primary": "Bo Yikao", "alt": ["伯邑考"],
+      "transliterations": { "Chinese": "伯邑考", "etymology": "Bo indicates the eldest son; the rest is a personal name. The title is doing the identifying." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["chinese_ji_chang"], "parentRoles": ["father"],
+    "temporal": { "era": "shang" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "shang", "eraOrdering": 0,
+      "startEvent": "The eldest son of King Wen. Daji desired him; when he refused her she had him cut to pieces while alive and the flesh baked into pies, which were sent to his father.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Daji lusted for Bo Yikao and, when her advances failed, ordered for him to be slowly cut alive and baked the pieces of his flesh into pies for his father." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bo Yikao is the eldest son of King Wen of Zhou, killed by Daji after refusing her, his flesh baked into pies and served to his father.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Bo Yikao's death in the Fengshen Yanyi." } ], "weight": "medium" } ],
+    "notes": "He exists in the novel to be killed in the most unbearable way available, and the point of the atrocity is dynastic: it is the moment the Zhou can no longer be loyal subjects. The Chinese tradition has a standing category for this kind of episode — the outrage that makes rebellion filial rather than treasonous — and this is its most cited instance. The succession also depends on him: King Wu is the second son, and reigns because of what happened to the first."
+  },
+  {
+    "id": "chinese_shen_gongbao",
+    "name": { "primary": "Shen Gongbao", "alt": ["申公豹"],
+      "transliterations": { "Chinese": "申公豹", "etymology": "Shen is the surname; gong is a title, 'duke' or 'lord'; bao is 'leopard'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "shang" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "shang", "eraOrdering": 0,
+      "startEvent": "Jiang Ziya's antagonist in the Fengshen Yanyi, who tried to trick him into handing over the Fengshen List so it could be destroyed — and who died for the attempt.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shen Gongbao in the Fengshen Yanyi, who dies for trying to trick Jiang Ziya into handing over and destroying the Fengshen List." } ] } ],
+    "domains": [
+      { "sphereId": "treachery", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shen Gongbao's attempt on the Fengshen List." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "chinese_jiang_ziya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shen Gongbao's opposition to Jiang Ziya over the Fengshen List." } ],
+        "notes": "Same school, opposite side." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shen Gongbao is Jiang Ziya's antagonist in the Fengshen Yanyi, who attempted to trick him into surrendering the Fengshen List for destruction and died for it.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Shen Gongbao in the Fengshen Yanyi." } ], "weight": "medium" } ],
+    "notes": "His object is the list itself, which is what makes him the novel's most interesting villain: he is not fighting for the Shang so much as against the arrangement by which the dead are enrolled as gods off a roster he did not write. Destroy the list and there is no pantheon. In a corpus where the list is the premise, the man trying to burn it is worth a record."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. THE PILGRIMAGE
+================================================================================
+
+The registry held Sun Wukong and nobody he travelled with. The *Xiyouji* is
+about four pilgrims and a horse going to India for scriptures; holding the
+monkey alone is holding a companion without the thing he is a companion to.
+Seven records here: the monk, the two other disciples, the horse, and the
+family of demons at the Flaming Mountains who are the novel's most
+consequential antagonists.
+
+```json
+[
+  {
+    "id": "chinese_tang_sanzang",
+    "name": { "primary": "Tang Sanzang", "alt": ["唐三藏", "Xuanzang", "玄奘", "Tripitaka", "Golden Cicada"],
+      "transliterations": { "Chinese": "唐三藏", "etymology": "Tang, for the dynasty; sanzang, 'three baskets', the Chinese for the Sanskrit Tripiṭaka, the Buddhist canon. He is called after the thing he is fetching." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "tang" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "tang", "eraOrdering": 0,
+      "startEvent": "A Buddhist monk, and in the novel the reincarnation of Golden Cicada, a disciple of the Buddha, sent on a quest to Tianzhu to bring the Buddhist sutras back to the Tang empire.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tang Sanzang, also known as Xuanzang: a Buddhist monk who is the reincarnation of Golden Cicada, a disciple of the Buddha, sent on a quest to Tianzhu to bring Buddhist sutras back to the Tang Empire." } ] },
+      { "typeStatus": "mortal", "era": "tang", "eraOrdering": 1,
+        "startEvent": "He travels with three disciples — Sun Wukong, Zhu Bajie and Sha Wujing — and a dragon prince who serves as his horse.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three disciples Sun Wukong, Zhu Bajie and Sha Wujing, and of the White Dragon Horse, a dragon prince who acts as Xuanzang's steed." } ] } ],
+    "domains": [
+      { "sphereId": "pilgrimage", "contextTag": "lifelong", "term": { "value": "取經", "script": "Chinese", "rom": "qujing, fetching the scriptures" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the quest to bring the sutras to the Tang empire." } ] },
+      { "sphereId": "monasticism", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tang Sanzang as a Buddhist monk." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "guide-of", "personId": "chinese_sun_wukong",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sun Wukong as one of the three disciples who accompany Xuanzang on the journey west." } ],
+        "notes": "The registry held the disciple and not the master, which is the reverse of the way the book is organised." },
+      { "kind": "guide-of", "personId": "chinese_zhu_bajie",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhu Bajie as one of Xuanzang's three disciples." } ], "notes": "" },
+      { "kind": "guide-of", "personId": "chinese_sha_wujing",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sha Wujing as one of Xuanzang's three disciples." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tang Sanzang is the Buddhist monk of the Xiyouji, reincarnation of Golden Cicada, sent to fetch the sutras from Tianzhu, who travels with Sun Wukong, Zhu Bajie, Sha Wujing and a dragon-prince horse.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tang Sanzang and of the Journey to the West." } ], "weight": "high" } ],
+    "notes": "He is also a real person: the monk Xuanzang went to India in the seventh century, came back with the sutras, and wrote an account of the journey that is still a primary source for the history of Central Asia. The novel of nine hundred years later turns him into a helpless, weeping, frequently captured passenger whose three demonic disciples do all the work, which is one of the great transformations in world literature — a scholar's travelogue rewritten as a comic epic in which the scholar is the least capable person present. The record carries both the monk and the character, because the tradition does."
+  },
+  {
+    "id": "chinese_zhu_bajie",
+    "name": { "primary": "Zhu Bajie", "alt": ["豬八戒", "Pigsy", "Zhu Wuneng", "Marshal Tianpeng"],
+      "transliterations": { "Chinese": "豬八戒", "etymology": "zhu, pig; bajie, 'eight precepts' — the dietary and moral abstentions his master imposed on him, and which he keeps badly." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Originally Marshal of the Heavenly Canopy, he was banished from Heaven for trying to seduce Chang'e and was reincarnated as a monster with a pig's head.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhu Bajie: originally the Marshal of the Heavenly Canopy, banished from Heaven for attempting to seduce Chang'e and reincarnated as a humanoid monster with a pig's head." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "The second disciple of Tang Sanzang. His sins are greed and gluttony: he cannot control his appetites for food, wine or women, and the novel is unsparing about it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhu Bajie as the second disciple, whose sins are greed and gluttony and who cannot control his appetites for food, wine and women." } ] } ],
+    "domains": [
+      { "sphereId": "gluttony", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhu Bajie's greed and gluttony." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "student-of", "personId": "chinese_tang_sanzang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhu Bajie as one of the three disciples of Xuanzang." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Zhu Bajie is the second disciple of Tang Sanzang in the Xiyouji, formerly Marshal of the Heavenly Canopy, banished for attempting to seduce Chang'e and reborn with a pig's head, whose faults are greed and gluttony.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Zhu Bajie and of the Journey to the West." } ], "weight": "high" } ],
+    "notes": "The novel's comic engine and, more than the monkey, its human one — a demoted officer with a pig's face who wants dinner, a wife and a rest, and who is not much interested in enlightenment. He is the only member of the party whose fall is sexual and whose punishment is a body that advertises it. The registry held Chang'e, whom he propositioned, and Sun Wukong, who bullies him, and not him."
+  },
+  {
+    "id": "chinese_sha_wujing",
+    "name": { "primary": "Sha Wujing", "alt": ["沙悟淨", "Sandy", "Friar Sand", "Sha Seng"],
+      "transliterations": { "Chinese": "沙悟淨", "etymology": "sha, sand — for the Flowing Sands River where he was found; wujing, 'awakened to purity', is the dharma name his master gave him." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "An immortal banished to the mortal world, whom the pilgrims found terrorising travellers at the crossing of the Flowing Sands River; Sun Wukong and Zhu Bajie fought and beat him, and Xuanzang took him into the party.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sha Wujing: another immortal banished to the mortal world, encountered terrorising travellers trying to cross the Flowing Sands River, defeated by Sun Wukong and Zhu Bajie, after which Xuanzang let him join the group." } ] } ],
+    "domains": [
+      { "sphereId": "rivers", "contextTag": "phase", "term": { "value": "流沙河", "script": "Chinese", "rom": "Liusha He, the Flowing Sands River" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sha Wujing at the Flowing Sands River." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "student-of", "personId": "chinese_tang_sanzang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sha Wujing as the third of Xuanzang's disciples." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sha Wujing is the third disciple of Tang Sanzang, a banished immortal found preying on travellers at the Flowing Sands River, defeated by Sun Wukong and Zhu Bajie and taken into the pilgrimage.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sha Wujing and of the Journey to the West." } ], "weight": "high" } ],
+    "notes": "The quiet one, and the only member of the party who does what he is told. Chinese readers have argued for four hundred years about whether that makes him the steadiest of the four or the least interesting; the novel gives him the fewest lines and the fewest failures, which may be the same observation. He was wearing the skulls of the nine previous pilgrims who had tried to cross his river, which is the detail that keeps him from being merely dull."
+  },
+  {
+    "id": "chinese_yulong",
+    "name": { "primary": "White Dragon Horse", "alt": ["白龍馬", "Yulong", "玉龍", "Bailongma", "the Third Prince of the Western Sea"],
+      "transliterations": { "Chinese": "白龍馬", "etymology": "bai, white; long, dragon; ma, horse. Named for the shape he spends the book in rather than the one he was born in." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A dragon prince who serves as Xuanzang's steed for the whole of the journey west, carrying the monk in the shape of a white horse.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the White Dragon Horse, a dragon prince who acts as Xuanzang's steed." } ] } ],
+    "domains": [
+      { "sphereId": "dragons", "contextTag": "lifelong", "term": { "value": "龍", "script": "Chinese", "rom": "long, dragon" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the White Dragon Horse as a dragon prince." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "chinese_tang_sanzang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the White Dragon Horse as Xuanzang's steed." } ],
+        "notes": "He is the fourth disciple in the reckonings that count him, and the transport in all of them." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "The White Dragon Horse is a dragon prince who takes the shape of a white horse and carries Xuanzang throughout the journey west.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the White Dragon Horse in the Journey to the West." } ], "weight": "medium" } ],
+    "notes": "He is a person and he is the luggage, and the novel never quite resolves which. Formal lists of the pilgrims give five — monk, monkey, pig, friar and horse — and he speaks and fights on the few occasions the plot needs him to, then goes back to being ridden for another thirty chapters. Including him is the difference between a party of four and the party the Chinese tradition actually enumerates."
+  },
+  {
+    "id": "chinese_niu_mowang",
+    "name": { "primary": "Bull Demon King", "alt": ["牛魔王", "Niu Mowang", "the Great Sage Who Pacifies Heaven"],
+      "transliterations": { "Chinese": "牛魔王", "etymology": "niu, ox or bull; mo, demon; wang, king. The self-given title 'Great Sage Who Pacifies Heaven' is modelled on Sun Wukong's 'Great Sage Equal to Heaven'." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The principal antagonist of the Xiyouji: Sun Wukong's old sworn brother, who styles himself the Great Sage Who Pacifies Heaven.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Bull Demon King, also known by his self-proclaimed title the Great Sage Who Pacifies Heaven, the main antagonist of the sixteenth-century novel Journey to the West, the old sworn brother of Sun Wukong, father of Red Boy and ex-husband of Princess Iron Fan." } ] } ],
+    "domains": [
+      { "sphereId": "demons", "contextTag": "lifelong", "term": { "value": "魔王", "script": "Chinese", "rom": "mowang, demon king" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Bull Demon King as the novel's principal antagonist." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "chinese_tieshan_gongzhu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Princess Iron Fan as the wife of the Bull Demon King." } ],
+        "notes": "The treatments consulted describe him as her husband in one place and her ex-husband in another, which reflects the novel: he has left her for another demon by the time the pilgrims arrive." },
+      { "kind": "father-of", "personId": "chinese_hong_haier",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Red Boy as the son of the Bull Demon King and Princess Iron Fan." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "The Bull Demon King is the principal antagonist of the Journey to the West, Sun Wukong's sworn brother, husband of Princess Iron Fan and father of Red Boy.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Bull Demon King and of the Journey to the West." } ], "weight": "high" } ],
+    "notes": "He is what Sun Wukong would have been without the pilgrimage: the same power, the same self-awarded title one word different, the same brotherhood of demon-kings — and no master, no journey and no restraint. The Flaming Mountains episode, where the party must borrow his estranged wife's fan to pass, is the longest single sequence in the novel and turns entirely on the fact that the monkey and the bull were once sworn brothers."
+  },
+  {
+    "id": "chinese_tieshan_gongzhu",
+    "name": { "primary": "Princess Iron Fan", "alt": ["鐵扇公主", "Tieshan Gongzhu", "Rakshasi", "羅剎女"],
+      "transliterations": { "Chinese": "鐵扇公主", "etymology": "tieshan, iron fan; gongzhu, princess. Named for the object, as most of the novel's demons are." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The wife of the Bull Demon King and the mother of Red Boy, who lives on Jade Cloud Mountain and holds the Banana-Leaf Fan.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Princess Iron Fan as the wife of the Bull Demon King and the mother of Red Boy." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "Every ten years the people who live under the Flaming Mountains come to her to beg her to put the fire out with the fan for long enough to grow a crop.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: every ten years the people who live near the Flaming Mountains come to Jade Cloud Mountain to beg Princess Iron Fan to temporarily extinguish the fire on the mountain with her magical Banana-Leaf Fan so they can grow crops." } ] } ],
+    "domains": [
+      { "sphereId": "wind", "contextTag": "lifelong", "term": { "value": "芭蕉扇", "script": "Chinese", "rom": "Bajiao shan, the Banana-Leaf Fan" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Banana-Leaf Fan and its power over the fire of the Flaming Mountains." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "chinese_niu_mowang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Princess Iron Fan as the wife of the Bull Demon King." } ], "notes": "Estranged by the time of the episode." },
+      { "kind": "mother-of", "personId": "chinese_hong_haier",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Red Boy as the son of Princess Iron Fan and the Bull Demon King." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Princess Iron Fan is the wife of the Bull Demon King, mother of Red Boy, and holder of the Banana-Leaf Fan with which she quenches the Flaming Mountains every ten years so the local people can farm.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Princess Iron Fan and of the Flaming Mountains episode." } ], "weight": "high" } ],
+    "notes": "She is a demon who runs an irrigation scheme. The people under the mountain petition her once a decade, she grants it, and they farm — which makes her functionally a local deity with a cult and a schedule, and makes the pilgrims' theft of her fan a considerably more ambiguous act than the novel's genre would suggest. Her grievance against them is also entirely reasonable: they had her son taken away."
+  },
+  {
+    "id": "chinese_hong_haier",
+    "name": { "primary": "Red Boy", "alt": ["紅孩兒", "Hong Hai'er", "the Boy Sage King", "Sudhana"],
+      "transliterations": { "Chinese": "紅孩兒", "etymology": "hong, red; hai'er, child. Red for the Samadhi Fire he breathes." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["chinese_niu_mowang", "chinese_tieshan_gongzhu"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The son of the Bull Demon King and Princess Iron Fan, and one of the pilgrims' most dangerous opponents; he is eventually subdued and taken into Guanyin's service.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Red Boy as the son of the Bull Demon King and Princess Iron Fan." } ] } ],
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Red Boy in the Journey to the West." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "chinese_guanyin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Red Boy's defeat and his passing into Guanyin's service." } ],
+        "notes": "Which is why his parents hold a grudge: from their side, the pilgrims took their child." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Red Boy is the son of the Bull Demon King and Princess Iron Fan in the Journey to the West, defeated by the pilgrims and taken into Guanyin's service.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Red Boy and of the Journey to the West." } ], "weight": "medium" } ],
+    "notes": "A child demon who cannot be beaten by force and is taken instead — bound with golden rings and made an attendant of the bodhisattva. The registry held Guanyin, who took him; it did not hold him, his father or his mother, which meant the Flaming Mountains sequence, one of the most famous in Chinese literature, had no participants in the corpus at all."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. THE ANCIENT MYTH: MONSTERS, GIANTS AND THE FOUR PERILS
+================================================================================
+
+The oldest layer, most of it from the *Shanhaijing* and the *Zuo Zhuan*. The
+registry held the sovereigns — Fuxi, Nüwa, Shennong, Huangdi, Yao, Shun, Yu —
+and not the figures they are defined against: no Chiyou, whom Huangdi fought
+for ten years; no Xingtian, who kept fighting after decapitation; no Kuafu,
+who chased the sun; no Jingwei, the drowned girl who is trying to fill in the
+sea. These are the four most-quoted figures in early Chinese myth after the
+sovereigns themselves, and they were absent from a registry that held the
+sovereigns.
+
+Also here: the Four Perils, and Xihe, who is the mother of the ten suns that
+the registry's own Houyi shot down.
+
+```json
+[
+  {
+    "id": "chinese_chiyou",
+    "name": { "primary": "Chiyou", "alt": ["蚩尤"],
+      "transliterations": { "Chinese": "蚩尤", "etymology": "Not securely derived; the characters are used for little else and the name is treated as opaque in the treatments consulted." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistory" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistory", "eraOrdering": 0,
+      "startEvent": "A war deity and leader of the Jiuli, who fought the Yellow Emperor at the Battle of Zhuolu, traditionally placed around 2500 BC, between the Yanhuang tribes and his own.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Battle of Zhuolu, fought between the Yanhuang tribes led by the Yellow Emperor and the Jiuli tribes led by Chiyou, said to have taken place c. 2500 BC; and of Chiyou as a prominent demon god and war deity." } ] },
+      { "typeStatus": "deity", "era": "mythic-prehistory", "eraOrdering": 1,
+        "startEvent": "The war lasted ten years and he had the better of it for most of them, using fog and mist to blind the enemy — he breathed out a thick fog at Zhuolu and put out the sunlight — before Huangdi finally beat him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Battle of Zhuolu Chiyou led his army against Huangdi with cunning strategies and formidable weaponry, including fog and mist to confuse his enemies; the battle lasted ten years with Chiyou having the upper hand, and during it Chiyou breathed out a thick fog and obscured the sunlight." } ] } ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chiyou as a war deity." } ] },
+      { "sphereId": "metallurgy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chiyou's formidable weaponry at Zhuolu." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "chinese_huangdi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Battle of Zhuolu, in which the Yellow Emperor defeated Chiyou after ten years." } ],
+        "notes": "The edge is written one way because the existing Huangdi record cannot be given a reciprocal from here; the defeat is nonetheless the defining fact of both." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chiyou is the war deity and leader of the Jiuli who fought Huangdi at the Battle of Zhuolu for ten years, using fog to blind the enemy, and was finally defeated.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Chiyou and of the Battle of Zhuolu." } ], "weight": "high" } ],
+    "notes": "Zhuolu is the founding war of the Chinese people as the tradition tells it, and the registry held one side of it. Chiyou is also the figure the Miao and Hmong claim as an ancestor, which makes the battle a founding story for two peoples with opposite verdicts on its outcome — the corpus carries ten Hmong records and, until now, neither Chiyou nor the connection. The fog is his signature and is the reason the tradition credits Huangdi with inventing the south-pointing chariot: a navigation instrument invented to fight a weather weapon."
+  },
+  {
+    "id": "chinese_xingtian",
+    "name": { "primary": "Xingtian", "alt": ["刑天"],
+      "transliterations": { "Chinese": "刑天", "etymology": "xing, punishment or mutilation; tian, heaven. Read as 'punished by heaven' or 'he who was mutilated by heaven' — a name that is a description of what happened to him." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistory" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistory", "eraOrdering": 0,
+      "startEvent": "Decapitated, he went on fighting: he took his nipples for eyes and his navel for a mouth and kept going with his axe and his shield.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xingtian, who continued to fight even after being decapitated, using his chest as eyes and his navel as a mouth to continue battling with his halberd and shield." } ] },
+      { "typeStatus": "deity", "era": "mythic-prehistory", "eraOrdering": 1,
+        "startEvent": "In late imperial mythography he was drawn into the larger narrative of Huangdi, Yandi, Chiyou and Kuafu, so that one short Shanhaijing notice became part of a general memory of primordial war.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in late imperial mythography Xingtian was increasingly integrated with broader narratives of Huangdi, Yandi, Chiyou and Kuafu, which reframed one short myth into a larger memory of primordial conflict; and he endured strongly in textual memory and proverb-like citation, especially through the Tao Yuanming line and Shanhaijing recirculation." } ] } ],
+    "domains": [
+      { "sphereId": "defiance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xingtian's continued fighting after decapitation." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xingtian's axe and shield." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xingtian is the headless Chinese deity who fought on after decapitation, his nipples serving as eyes and his navel as a mouth, wielding axe and shield.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Xingtian and of his place in later mythography." } ], "weight": "high" } ],
+    "notes": "The whole myth is four lines in the Shanhaijing and it has outlasted almost everything around it, because the image is unimprovable. Tao Yuanming's poem — Xingtian brandishes his axe, his fierce will remains — made him the standing Chinese figure for refusing a defeat that has already happened, and the line is still quoted. He is one of the two or three most recognisable figures in Chinese myth and was absent from the registry entirely."
+  },
+  {
+    "id": "chinese_kuafu",
+    "name": { "primary": "Kuafu", "alt": ["夸父"],
+      "transliterations": { "Chinese": "夸父", "etymology": "kua, to boast or to be large; fu, a man or father. Read by some as simply 'the big man', which is what he is." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistory" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistory", "eraOrdering": 0,
+      "startEvent": "A giant of a great mountain in the northern wilderness, in the Shanhaijing, who set out to catch the sun and stop it setting, so that there would be light and warmth over the land without end.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kuafu Chasing the Sun, a myth from the Shanhaijing, the Classic of Mountains and Seas: Kuafu was a giant who lived on a vast mountain in the northern wilderness and wished to catch the sun and prevent it from setting, to bring perpetual light and warmth to the land." } ] },
+      { "typeStatus": "deity", "era": "mythic-prehistory", "eraOrdering": 1,
+        "startEvent": "He grew so thirsty that he drank the Yellow River and the Wei dry and they were not enough; he ran north for a great lake and died of thirst before he reached it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Kuafu was so thirsty that he drank up the Yellow River and the Wei River and they were not enough; he rushed to a large lake in the north to drink but died of thirst before he made it." } ] } ],
+    "domains": [
+      { "sphereId": "giants", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kuafu as a giant of the northern wilderness." } ] },
+      { "sphereId": "the-sun", "contextTag": "lifelong", "term": { "value": "夸父逐日", "script": "Chinese", "rom": "Kuafu zhuri, Kuafu chases the sun" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kuafu Chasing the Sun myth." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kuafu is a giant of the Shanhaijing who chased the sun to stop it setting, drank the Yellow River and the Wei dry, and died of thirst short of the northern lake.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kuafu and the Shanhaijing myth of chasing the sun." } ], "weight": "high" } ],
+    "notes": "'Kuafu chases the sun' is a four-character idiom in ordinary modern Chinese, used both for heroic overreach and for futility, and Chinese readers have been arguing about which since at least the Han. The record keeps both readings because the tradition does. His staff, thrown down as he died, became a forest of peach trees — the one part of the story that is not about failure."
+  },
+  {
+    "id": "chinese_jingwei",
+    "name": { "primary": "Jingwei", "alt": ["精衛"],
+      "transliterations": { "Chinese": "精衛", "etymology": "The name is onomatopoeic for the bird's cry: it calls jing-wei, jing-wei, and is named for the sound." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "female", "vitalStatus": "transformed",
+    "parentIds": ["chinese_shennong"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic-prehistory" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistory", "eraOrdering": 0,
+      "startEvent": "The youngest daughter of Emperor Yan — the Yandi Shennong — who drowned in the Eastern Sea.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jingwei: the youngest daughter of the Yandi Shennong clan, the young daughter of Emperor Yan, also known as Yandi, who drowned in the Eastern Sea." } ] },
+      { "typeStatus": "deity", "era": "mythic-prehistory", "eraOrdering": 1,
+        "startEvent": "She came back as a bird like a crow with a patterned head, a white beak and red feet, and set out to fill in the sea that killed her — carrying a pebble or a twig in her beak, one at a time, and dropping it in.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the bird that resulted resembles a crow with a patterned head, white beak and red feet; Jingwei is determined to fill up the sea, and continuously carries a pebble or twig in her mouth and drops it into the Eastern Sea." } ] } ],
+    "domains": [
+      { "sphereId": "perseverance", "contextTag": "lifelong", "term": { "value": "精衛填海", "script": "Chinese", "rom": "Jingwei tian hai, Jingwei fills the sea" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jingwei's endless work of filling the Eastern Sea." } ] },
+      { "sphereId": "birds", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the bird's description." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Jingwei is the youngest daughter of Yandi Shennong, drowned in the Eastern Sea, who returned as a bird and carries pebbles and twigs one at a time to fill the sea in.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Jingwei, her parentage and the myth of filling the sea." } ], "weight": "high" } ],
+    "notes": "Her parentage is given in the sources as Yandi, the Flame Emperor, who is identified with Shennong in the standard reckoning — the record uses the corpus's existing Shennong and says so rather than opening a second record for a second name. 'Jingwei fills the sea' is the Chinese idiom for a hopeless task pursued anyway, the companion piece to Kuafu chasing the sun, and between them they are the two commonest metaphors in the language for persistence. The registry held Shennong and not his daughter."
+  },
+  {
+    "id": "chinese_xihe",
+    "name": { "primary": "Xihe", "alt": ["羲和"],
+      "transliterations": { "Chinese": "羲和", "etymology": "Not securely derived. In the Shujing the name is also that of an office — the astronomical officials — which may be a later rationalisation of the goddess or her origin." } },
+    "type": "deity", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The solar goddess, and the mother of the ten suns — three-legged crows who lived in the Fusang, the mulberry tree in the East Sea. One of them was rostered each day to make the circuit of the world in a carriage she drove.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xihe: a solar goddess and the mother of the ten suns that in ancient times nearly destroyed the Earth, ten sun birds in the form of three-legged crows residing in a mulberry tree, the Fusang, in the East Sea, one of which was rostered each day to travel around the world on a carriage driven by Xihe." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "The day all ten went out together they nearly burned the world, which is the disaster the registry's own Houyi is famous for ending — he shot nine of the ten out of the sky.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xihe as the mother of the ten suns that in ancient times nearly destroyed the Earth." } ] } ],
+    "domains": [
+      { "sphereId": "the-sun", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xihe as a solar goddess." } ] },
+      { "sphereId": "timekeeping", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the daily rota of the ten suns and Xihe's carriage." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xihe is the Chinese solar goddess, mother of the ten suns — three-legged crows in the Fusang tree — who drives one of them around the world each day, and whose children nearly destroyed the earth when all ten rose together.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Xihe, the ten suns and the Fusang." } ], "weight": "high" } ],
+    "notes": "The registry held Houyi, who shot nine suns, and not the mother of the suns he shot — a gap of the same kind as Ra without Apep, and with the same effect: the famous act has no counterparty in the corpus. No relation is written between them here, because the tradition does not give the archer and the goddess a stated one and inventing an enmity would be worse than stating the absence. What is certain is that nine of her ten children are dead by his hand, and the tenth is the sun."
+  },
+  {
+    "id": "chinese_hundun",
+    "name": { "primary": "Hundun", "alt": ["混沌", "渾敦", "Chaos"],
+      "transliterations": { "Chinese": "混沌", "etymology": "The word means chaos, or a muddled, turbid state; rendered 'chaotic torrent' in one treatment. It is also the name of a dumpling, for the same reason — a shapeless lump." } },
+    "type": "numen", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistory" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistory", "eraOrdering": 0,
+      "startEvent": "One of the Four Perils: a yellow winged creature with six legs and no face, whose name means chaotic torrent. Shun exiled the four of them to the four directions.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils (Sixiong) — Hundun, Qiongqi, Taowu and Taotie — a group of four hostile deities exiled into the four directions by Shun, mentioned in the Zuo Zhuan and the Shiji; Hundun being a yellow winged creature of chaos with six legs and no face, whose name means 'chaotic torrent'." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistory", "eraOrdering": 1,
+        "startEvent": "In the Zuo Zhuan the four are not monsters but men: Hundun is said to have descended from Emperor Hong. The beasts are a later development of what began as a genealogy of bad characters.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Zuo Zhuan does not describe the four as mythological beasts but as 'historical' persons — Hundun descended from Emperor Hong, Qiongqi from Shaohao, Taowu from Zhuanxu and Taotie from the Jinyun lineage — and only over time did they evolve in popular legend into four distinct evil monsters." } ] } ],
+    "domains": [
+      { "sphereId": "chaos", "contextTag": "lifelong", "term": { "value": "混沌", "script": "Chinese", "rom": "hundun" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hundun as the chaos of the Four Perils." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_qiongqi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils as a group of four exiled to the four directions." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hundun is one of the Four Perils, a faceless six-legged winged creature of chaos exiled by Shun to one of the four directions, and in the Zuo Zhuan a man descended from Emperor Hong.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Four Perils and of the Zuo Zhuan's account." } ], "weight": "high" } ],
+    "notes": "The facelessness is the point and it is a famous joke in the Zhuangzi, where friends drill eyes and a mouth into a being who had none, at the rate of one hole a day, and on the seventh day he dies. Chaos in Chinese thought is not a howling void; it is an undifferentiated wholeness that is destroyed by being given features. The Four Perils record their own history in the sources — persons in the Zuo Zhuan, monsters later — and the record says so instead of choosing the more exciting version."
+  },
+  {
+    "id": "chinese_qiongqi",
+    "name": { "primary": "Qiongqi", "alt": ["窮奇"],
+      "transliterations": { "Chinese": "窮奇", "etymology": "Rendered 'distressingly strange' or 'thoroughly odd' in the treatments consulted: qiong, exhausted or extreme; qi, strange." } },
+    "type": "numen", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistory" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistory", "eraOrdering": 0,
+      "startEvent": "One of the Four Perils, a monstrous creature that eats people, whose name means 'distressingly strange'. In the Zuo Zhuan he is a man descended from Shaohao.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils: Qiongqi is a monstrous creature that eats people, whose name means 'distressingly strange' or 'thoroughly odd', and who in the Zuo Zhuan is said to have descended from Shaohao." } ] } ],
+    "domains": [
+      { "sphereId": "monstrosity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Qiongqi as a man-eating creature." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_hundun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils as a group." } ], "notes": "One of the four." },
+      { "kind": "companion", "personId": "chinese_taowu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Qiongqi is one of the Four Perils, a man-eating monster whose name means 'distressingly strange', and in the Zuo Zhuan a descendant of Shaohao.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Four Perils and of the Zuo Zhuan's genealogy." } ], "weight": "high" } ],
+    "notes": "The registry holds Shaohao, from whom the Zuo Zhuan descends him — which means the older, human version of this figure connects to a record already in the corpus, and the monster version does not connect to anything. The record keeps both and asserts neither as the true one, because the sources are two different kinds of document."
+  },
+  {
+    "id": "chinese_taowu",
+    "name": { "primary": "Taowu", "alt": ["檮杌"],
+      "transliterations": { "Chinese": "檮杌", "etymology": "Read as 'block stump' — a lump of wood — which is the tradition's way of calling him stubborn and unteachable." } },
+    "type": "numen", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistory" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistory", "eraOrdering": 0,
+      "startEvent": "One of the Four Perils: reckless and stubborn, and described as having a human face, a tiger's feet, a pig's tusks and a tail eighteen feet long. In the Zuo Zhuan he descends from Zhuanxu.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils: Taowu is a reckless, stubborn creature whose name means 'block stump', said to appear with 'a human face, a tiger's feet, a pig's tusks and a tail 18 feet long', and in the Zuo Zhuan to have descended from Zhuanxu." } ] } ],
+    "domains": [
+      { "sphereId": "obstinacy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Taowu as reckless and stubborn." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_qiongqi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils as a group." } ], "notes": "One of the four." },
+      { "kind": "companion", "personId": "chinese_taotie",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Taowu is one of the Four Perils, a reckless and stubborn creature with a human face, tiger's feet, boar's tusks and a tail eighteen feet long, descended in the Zuo Zhuan from Zhuanxu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Four Perils." } ], "weight": "high" } ],
+    "notes": "His name became the title of a genre: Taowu is what the state of Chu called its official history, on the argument that a record of bad acts is the most useful kind, and later Chinese writers used the word for a chronicle of wickedness. A monster who lends his name to historiography is unusual and worth keeping on the record. Zhuanxu, from whom the Zuo Zhuan descends him, is already in the corpus."
+  },
+  {
+    "id": "chinese_taotie",
+    "name": { "primary": "Taotie", "alt": ["饕餮"],
+      "transliterations": { "Chinese": "饕餮", "etymology": "'Greedy glutton': both characters mean an appetite that cannot be satisfied, and both are used for almost nothing else." } },
+    "type": "numen", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistory" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistory", "eraOrdering": 0,
+      "startEvent": "The fourth of the Four Perils, a gluttonous beast whose name means exactly that; in the Zuo Zhuan he belongs to the Jinyun lineage. Shun exiled all four to the four directions.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils: Taotie is a gluttonous beast whose name means 'greedy glutton', in the Zuo Zhuan descended from the Jinyun lineage, and one of the four exiled by Shun into the four directions." } ] } ],
+    "domains": [
+      { "sphereId": "gluttony", "contextTag": "lifelong", "term": { "value": "饕餮", "script": "Chinese", "rom": "taotie" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Taotie as the glutton of the Four Perils." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_taowu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Perils as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Taotie is one of the Four Perils, a gluttonous beast of the Jinyun lineage in the Zuo Zhuan, exiled with the other three by Shun to the four directions.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Four Perils." } ], "weight": "high" } ],
+    "notes": "His face is on the bronzes. The standing motif of Shang and Zhou ritual vessels — a frontal mask with huge eyes, no lower jaw, splitting into two profile dragons — has been called the taotie since the Song, when antiquarians attached the literary name to the archaeological ornament; whether the Shang bronze-casters called it that is unknowable and the identification is a scholarly convention rather than a fact. The record keeps the name and the caveat. It is, either way, the single most reproduced image from ancient China."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VII. CULTURE HEROES, AND THREE PEOPLE WHO BECAME GODS
+================================================================================
+
+Two groups that close the batch. First the culture heroes at the front of the
+Chinese sequence whom the registry skipped — the Four Clans are Youchao,
+Suiren, Fuxi and Shennong, and the corpus held the last two — plus Cangjie,
+who invented writing. Then the three figures who were people and are now gods:
+Zhang Daoling, who founded organised Daoism; Guan Yu, a general of the third
+century who is now the god of loyalty; and Mazu, a girl from a Fujian island
+who is now the Queen of Heaven.
+
+```json
+[
+  {
+    "id": "chinese_youchao",
+    "name": { "primary": "Youchao", "alt": ["有巢氏", "Youchaoshi", "the Nest Builder"],
+      "transliterations": { "Chinese": "有巢氏", "etymology": "you, to have; chao, nest; shi, clan. 'The clan that had nests' — a name that is a technology." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The inventor of houses and buildings, who taught people to make shelters of wood. He is one of the Four Clans, with Suiren, Fuxi and Shennong, who took part in making the world habitable.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Youchao: the inventor of houses and buildings according to ancient Chinese mythology, who taught people how to make wooden shelters; and of Youchao, Suiren, Fuxi and Shennong as the four members of the legend of the Four Clans, who took part in creating the world." } ] } ],
+    "domains": [
+      { "sphereId": "architecture", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Youchao as the inventor of houses and buildings." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_suiren",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Youchao, Suiren, Fuxi and Shennong as the Four Clans." } ],
+        "notes": "One of the Four Clans. The other two, Fuxi and Shennong, were already in the registry." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Youchao is the Chinese culture hero who invented houses and taught people to build wooden shelters, one of the Four Clans with Suiren, Fuxi and Shennong.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Youchao and of the Four Clans." } ], "weight": "medium" } ],
+    "notes": "The Chinese sequence of culture heroes is an argument about what civilisation consists of, taken in order: shelter, fire, divination and writing, agriculture. Youchao is the first term. The registry held the third and fourth and neither of the first two, which is the sort of gap that only shows up when you go looking for the beginning of a list."
+  },
+  {
+    "id": "chinese_suiren",
+    "name": { "primary": "Suiren", "alt": ["燧人氏", "Suirenshi", "the Fire-Maker"],
+      "transliterations": { "Chinese": "燧人氏", "etymology": "sui is the fire-drill or the burning-mirror; ren, person. 'The fire-drill man'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The Fire-Maker, credited with introducing the making of fire to human beings. Whether he did it by drilling wood or by striking flint varies between accounts, and the tradition has never settled it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Suiren, meaning 'Fire-maker', credited with introducing fire-making to humans in Chinese mythology, with accounts varying as to whether he used wood-drilling or flint-striking." } ] } ],
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "燧", "script": "Chinese", "rom": "sui, the fire-drill" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Suiren as the introducer of fire-making." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "chinese_youchao",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Clans." } ], "notes": "One of the Four Clans." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Suiren is the Chinese culture hero credited with the invention of fire-making, by drilling or by striking depending on the account, and one of the Four Clans.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Suiren and of the Four Clans." } ], "weight": "medium" } ],
+    "notes": "The Chinese Prometheus, with the theft taken out. Suiren does not steal fire from anybody: he works out how to make it, which is a materially different story and a characteristically Chinese one — the culture heroes of this tradition are inventors rather than thieves, and nothing is taken from heaven against its will. The disagreement over drill versus flint is preserved on the record because the sources preserve it."
+  },
+  {
+    "id": "chinese_cangjie",
+    "name": { "primary": "Cangjie", "alt": ["倉頡", "Ts'ang Chieh"],
+      "transliterations": { "Chinese": "倉頡", "etymology": "Not securely derived; treated as a personal name in the sources consulted." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistory" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic-prehistory", "eraOrdering": 0,
+      "startEvent": "The official historian of the Yellow Emperor and the inventor of Chinese characters, said to have had four eyes.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cangjie: said to have been an official historian of the Yellow Emperor and the inventor of Chinese characters, with the legend that he had four eyes." } ] },
+      { "typeStatus": "mortal", "era": "mythic-prehistory", "eraOrdering": 1,
+        "startEvent": "When he invented the characters the gods and the ghosts wept and the sky rained millet.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Cangjie invented the characters, the deities and ghosts cried and the sky rained millet." } ] } ],
+    "domains": [
+      { "sphereId": "writing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cangjie as the inventor of Chinese characters." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "chinese_huangdi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cangjie as the official historian of the Yellow Emperor." } ],
+        "notes": "His historian, which is the office the invention is attached to." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Cangjie is the four-eyed historian of the Yellow Emperor who invented Chinese characters, at which the gods and ghosts wept and millet fell from the sky.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Cangjie, his four eyes and the portents at the invention." } ], "weight": "high" } ],
+    "notes": "The portents are the interesting part and the tradition has always read them as ambivalent: millet falls because writing will let people keep accounts and grow rich, and the ghosts weep because writing will let people deceive and be deceived, and because what is written down can no longer be forgotten. A civilisation whose identity rests on its script produced, at the moment of the script's invention, a story about what it would cost. He was not in the registry."
+  },
+  {
+    "id": "chinese_zhang_daoling",
+    "name": { "primary": "Zhang Daoling", "alt": ["張道陵", "Zhang Ling", "the first Celestial Master", "Tianshi"],
+      "transliterations": { "Chinese": "張道陵", "etymology": "Zhang is the surname; Daoling is the religious name, dao being the Way. Tianshi, 'Celestial Master', is the title conferred on him and inherited by his line." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "han" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "han", "eraOrdering": 0,
+      "startEvent": "In 142 CE Taishang Laojun — the deified Laozi — descended to him on Mount Heming and bestowed on him the title of Celestial Master, establishing a new covenant between the true gods and the people.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Zhang Daoling received in 142 CE a revelation from Taishang Laojun, the deified Laozi, who bestowed on him the title of Celestial Master (tianshi); the movement traces its origins to that revelation, when Laozi descended atop Mount Heming to establish a new covenant between the true gods of Taoism and the people." } ] },
+      { "typeStatus": "mortal", "era": "han", "eraOrdering": 1,
+        "startEvent": "He received the Doctrine of the Orthodox One Resting on the Authority of the Alliance, with the revelation that the demoniac Six Heavens had been abolished and replaced by a golden age governed by the Three Heavens. The Way of the Celestial Masters that followed is the beginning of organised religious Daoism, and has run unbroken to the present.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the god gave Zhang Daoling the 'Doctrine of the Orthodox One [Resting on] the Authority of the Alliance', revealing that the demoniac Six Heavens had been abolished and their reign replaced by a golden age governed by the Three Heavens; the Way of the Celestial Masters marks the beginning of organised religious Taoism, with unbroken continuity from that time to the present, and the movement soon spread to all of China." } ] } ],
+    "domains": [
+      { "sphereId": "religious-founder", "contextTag": "lifelong", "term": { "value": "天師", "script": "Chinese", "rom": "tianshi, Celestial Master" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zhang Daoling as the first Celestial Master and founder of the Way of the Celestial Masters." } ] },
+      { "sphereId": "revelation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the revelation of 142 CE on Mount Heming." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "student-of", "personId": "chinese_daode_tianzun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the revelation of Taishang Laojun, the deified Laozi, to Zhang Daoling in 142 CE." } ],
+        "notes": "The whole of organised Daoism descends from this one reported conversation." } ],
+    "cultRecords": [
+      { "tradition": "Chinese", "placeName": "Mount Heming, and the Celestial Master lineage", "kind": "religious-foundation", "period": "han to modern",
+        "attestation": "the unbroken transmission of the Celestial Master title in the Zhang line", "source": "Reference treatments of Zhang Daoling and the Way of the Celestial Masters.",
+        "note": "The office has been held continuously since 142 by his descendants, which makes it one of the longest unbroken religious successions anywhere." } ],
+    "sources": [ { "claim": "Zhang Daoling received the revelation of Taishang Laojun on Mount Heming in 142 CE, was made the first Celestial Master, and founded the Way of the Celestial Masters, the beginning of organised religious Daoism.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Zhang Daoling, the 142 revelation and the Way of the Celestial Masters." } ], "weight": "high" } ],
+    "notes": "A dated founding for a religion that is usually treated as having none. 142 CE, Mount Heming, a specific text handed over and a specific claim made — that the old gods had been dismissed and a new administration installed. The movement he began taxed its members five pecks of rice, ran a small state in Sichuan, and passed its office down a family line that still holds it. The registry held a great deal of Daoist material and not the man who organised it."
+  },
+  {
+    "id": "chinese_guan_yu",
+    "name": { "primary": "Guan Yu", "alt": ["關羽", "Guandi", "關帝", "Guan Gong", "關公", "Emperor Guan"],
+      "transliterations": { "Chinese": "關羽", "etymology": "Guan is the surname, Yu the given name. Di, 'emperor', was added by imperial decree in 1594; gong, 'lord', is the popular honorific." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "A general under the warlord Liu Bei in the Three Kingdoms period, who died in 220 CE. His martial reputation and his unwavering loyalty, made famous by the Romance of the Three Kingdoms, began his elevation almost at once.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Guan Yu: a general serving under the warlord Liu Bei during the Three Kingdoms period, whose legendary martial prowess and unwavering loyalty, made famous in the Romance of the Three Kingdoms, elevated him to divine status after his death in 220 CE." } ] },
+      { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 1,
+        "startEvent": "He was progressively deified over the following centuries as Guandi, Emperor Guan — patron of soldiers, of police, of merchants, and of anyone who swears an oath. He was given the title of emperor in 1594 under the Wanli emperor, who built the Guanlin temple for him in 1596.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Guan Yu was progressively deified, eventually becoming Guandi, patron god of soldiers, police officers, businessmen and anyone who swears an oath; he was given the title of an emperor in AD 1594 during the reign of the Wanli emperor, and the Guanlin temple was built in 1596 in the same reign." } ] } ],
+    "domains": [
+      { "sphereId": "loyalty", "contextTag": "lifelong", "term": { "value": "義", "script": "Chinese", "rom": "yi, righteousness and sworn obligation" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Guan Yu as the god of loyalty — of the commitment that holds between people who have sworn to one another." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Guan Yu's deification as a god of war." } ] },
+      { "sphereId": "merchants", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Guandi as patron of businessmen." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "tradition": "Chinese", "placeName": "Guandi temples across the Chinese world; Guanlin at Luoyang", "kind": "state-and-popular-cult", "period": "three-kingdoms to modern",
+        "attestation": "the Guandi temples, and the Guanlin temple built in 1596 at his tomb", "source": "Reference treatments of Guan Yu's deification and of the Guandi and Guanlin temples.",
+        "note": "He is worshipped by soldiers, police, merchants and — notoriously — by both the police and the societies they pursue, on the argument that what he guarantees is the oath rather than the cause." } ],
+    "sources": [ { "claim": "Guan Yu, a general of Liu Bei who died in 220 CE, was progressively deified as Guandi, god of war and of loyalty and patron of soldiers, police, merchants and oath-takers, receiving the imperial title in 1594.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Guan Yu, his deification and the Wanli-era honours." } ], "weight": "high" } ],
+    "notes": "The most successful apotheosis in Chinese history: a defeated general of the third century who is now, thirteen hundred years later, on more altars than almost any other figure — in police stations, in shops, in restaurants, and in the halls of the societies the police are chasing. That last is not a contradiction but the exact content of the cult. What he is the god of is the oath itself: the obligation that holds between people who have sworn to one another, regardless of what they swore to do. In a registry that already carried a great deal of Chinese material he was entirely absent."
+  },
+  {
+    "id": "chinese_mazu",
+    "name": { "primary": "Mazu", "alt": ["媽祖", "Lin Moniang", "林默娘", "Tianhou", "天后", "Tianfei", "天妃", "Queen of Heaven"],
+      "transliterations": { "Chinese": "媽祖", "etymology": "mazu, 'ancestral mother' or 'granny'. Moniang, her personal name, means 'silent maiden' — she is said never to have cried as an infant." } },
+    "type": "mortal", "origin": "canon", "tradition": "Chinese", "primaryTradition": "Chinese",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "song" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "song", "eraOrdering": 0,
+      "startEvent": "Born in 960 on Meizhou Island, Putian, in Fujian, to a family named Lin. As a baby she never cried, which is why she was called Moniang, the Silent Maiden.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mazu: a real person by the name of Lin, born in 960 on Meizhou Island, Putian, in China's southeastern Fujian province, who as a baby never cried, earning her the name Moniang or 'Silent Maiden'." } ] },
+      { "typeStatus": "mortal", "era": "song", "eraOrdering": 1,
+        "startEvent": "Her fellow islanders deified her after her death as Angel of the Sea and Holy Mother, and in 987 built her temple on Meizhou. She became the tutelary deity of Chinese seafarers — fishermen and sailors alike.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: her fellow islanders deified her as Angel of the Sea and Holy Mother; in 987 the Temple of Goddess Mazu was built in her memory on Meizhou Island, Putian; and after her death she became revered as a tutelary deity of Chinese seafarers, including fishermen and sailors." } ] },
+      { "typeStatus": "mortal", "era": "song", "eraOrdering": 2,
+        "startEvent": "The state promoted her twice. The Yuan, who depended on grain shipped north by Fujianese boatmen, made her Tianfei, Consort of Heaven; the Qing raised her to Tianhou, Queen of Heaven.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Yuan dynasty, which relied on food shipped from the south by boatmen from Fujian, awarded Mazu the title of tianfei or Consort of Heaven, and the Qing later promoted her to tianhou, Queen of Heaven." } ] } ],
+    "domains": [
+      { "sphereId": "the-sea", "contextTag": "lifelong", "term": { "value": "媽祖", "script": "Chinese", "rom": "Mazu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mazu as tutelary deity of Chinese seafarers." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mazu as the protector of fishermen and sailors." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "tradition": "Chinese", "placeName": "Meizhou Island, Putian; and Mazu temples wherever Chinese ships went", "kind": "popular-and-state-cult", "period": "song to modern",
+        "attestation": "the Meizhou temple of 987 and the thousands of Mazu temples in Fujian, Taiwan, and the Chinese diaspora", "source": "Reference treatments of Mazu, the Meizhou temple and the imperial titles.",
+        "note": "The distribution of her temples is a map of Chinese maritime trade: she is where the ships went, which is why there are more of her temples in Taiwan and Southeast Asia than almost anywhere in the interior." } ],
+    "sources": [ { "claim": "Mazu, born Lin Moniang in 960 on Meizhou Island in Fujian, was deified by her islanders after her death, given a temple there in 987, and promoted by the state to Tianfei under the Yuan and Tianhou, Queen of Heaven, under the Qing.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Mazu, her life, her deification and her imperial titles." } ], "weight": "high" } ],
+    "notes": "A girl from a small island who is now the Queen of Heaven, and the promotions were transactional: the Yuan raised her because its capital ate grain carried by Fujianese sailors who prayed to her, and a state that depends on a sea route has an interest in the goddess of that route. Her cult is among the largest in the world by adherents and by number of temples, and the registry — which held the Jade Emperor, Guanyin and the Kitchen God — did not have her."
+  }
+]
+```
