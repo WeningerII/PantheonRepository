@@ -1,0 +1,1282 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Korean
+Eras (registered, exact): primordial | mythic-prehistoric | gojoseon | mythic |
+  three-kingdoms | unified-silla | goryeo | joseon | modern
+Author pass: Korean held 13 records. This adds 28.
+
+================================================================================
+THE GAP — NINE REGISTERED ERAS, SIX OF THEM EMPTY
+================================================================================
+
+A 68-name check across the WHOLE registry returned 21 hits and 47 absences.
+The Korean key held **thirteen records**, and they sat in three of its nine
+registered eras:
+
+    primordial               3   Cheonji-wang, Daebyeol-wang, Sobyeol-wang
+    mythic-prehistoric       4   Hwanin, Hwanung, Ungnyeo, Tangun
+    gojoseon                 0
+    mythic                   6   Haemosu, Habaek, Yuhwa, Jumong, Yuri, Jacheongbi
+    three-kingdoms           0
+    unified-silla            0
+    goryeo                   0
+    joseon                   0
+    modern                   0
+
+**Everything from the Three Kingdoms onward was empty.** The corpus held the
+Goguryeo foundation myth complete — Haemosu, Habaek, Yuhwa, Jumong, Yuri — and
+**not one figure from the founding of Silla, of Gaya, or of Baekje**, which are
+the other three of the four foundation myths the *Samguk Yusa* exists to record.
+
+No **Bak Hyeokgeose**, hatched from a heavenly egg. No **Aryeong**, born from a
+dragon. No **Seok Talhae**, who comes over the sea in a chest. No **Kim Alji**,
+found as an infant in a golden box in a forest that gave its name to the
+kingdom. No **Suro**, first of six eggs out of a golden chest, nor **Heo
+Hwang-ok**, who came to him by boat from Ayuta at sixteen. No **Onjo** and no
+**Biryu**, whose mother took them south and founded Baekje.
+
+================================================================================
+AND THE SHAMANS' OWN ORIGIN STORY WAS NOT IN IT
+================================================================================
+
+**Princess Bari** — Bari Gongju — is the seventh daughter of a king who wanted a
+son, thrown away at birth, who comes back when her parents are dying and walks
+to the underworld for the Water of Revival. **Korean shamans call her myth their
+origin story**; the *Barigongju bon-puri* is recited across the country and has
+been collected in more than a hundred versions.
+
+The corpus held six figures from the Jeju bon-puri tradition and **not her**.
+
+Nor **Yeomra**, who judges the dead; nor **Gangnim**, the man who was sent to
+arrest the King of the Underworld and came back with him.
+
+================================================================================
+AND NOT ONE HOUSEHOLD GOD
+================================================================================
+
+The *gasin* are the gods of the house, and they are the part of Korean religion
+that was practised daily in every home for centuries. The registry held none of
+them:
+
+    Seongjusin    the ridge-beam, and the fortune of the family
+    Jowangsin     the hearth — a bowl of fresh water, refilled every morning
+    Teojusin      the ground the house stands on
+    Munsin        the door
+    Samsin        childbirth and children's health
+    Eopsin        the storehouse, and the family's wealth
+    Cheuksin      the outhouse
+    Seonangsin    the village boundary
+
+================================================================================
+A TRADITION-KEY FINDING, THE SECOND OF ITS KIND
+================================================================================
+
+**Four figures are held twice.** `korean_cheonjiwang` and `jeju_cheonjiwang`;
+`korean_daebyeolwang` and `jeju_daebyeolwang`; `korean_sobyeolwang` and
+`jeju_sobyeolwang`; `korean_jacheongbi` and `jeju_jacheongbi`.
+
+Lane 20 found exactly this between the Finnish and Karelian keys, where
+Väinämöinen and Ilmarinen are each held twice. **This is the same fault in a
+different part of the corpus**: Jeju shamanism is a regional tradition within
+Korean religion, and the registry files some of its figures under both keys and
+some under only one.
+
+This batch **adds nothing under `jeju_`** and creates no new duplicates.
+**Yeongdeung Halmang**, the wind-and-sea goddess who visits Jeju once a year and
+sows the fish and the shellfish, is a census row rather than a record for exactly
+this reason: she belongs under the Jeju key beside Seolmundae Halmang, and adding
+a `korean_` copy would make the problem worse.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+**Jeoseung saja** are *a class* — the sources say so in as many words, "a class
+of spectral bureaucrats" — so the class is rejected and **Gangnim**, the one the
+sources name, is ingested. **Dokkaebi**, **gumiho** and **sonnim** are likewise
+classes. Gyerim, Ayuta and Mount Taebaek are **places**. The Cheoyong mask is an
+**object**.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE SHAMANS' OWN ORIGIN STORY
+================================================================================
+
+```json
+[
+  {
+    "id": "korean_bari_gongju",
+    "name": { "primary": "Princess Bari", "alt": ["Bari Gongju", "Bari-degi", "Biri-degi"],
+      "transliterations": { "Korean (hangul)": "바리공주", "rom": "Bari Gongju", "etymology": "Bari is from a word meaning 'thrown away' — she is named for what was done to her." } },
+    "type": "mortal", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The seventh daughter of royal parents who wanted a son. Six daughters had come already; when they saw that this one was a seventh they threw her away to die.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Princess Bari is born as the seventh daughter to royal parents who desperately desired a son; her parents had had six daughters in a row, and upon seeing that the infant Bari had nothing between her legs they discarded her in the forest to die, hence the name Bari, which roughly translates to 'thrown away'." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "When her parents fall mortally ill, she is the one who goes: a journey to the underworld for the Water of Revival, which none of the six kept daughters will make.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when her parents fall gravely ill, she undertakes a perilous journey to the Underworld to obtain the life-restoring Water of Revival." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 2,
+        "startEvent": "She becomes the goddess of the afterlife and of healing, and appears in the gut as the guide who takes the souls of the dead safely across. Korean shamans call her myth their origin story.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: this act of rejection becomes the catalyst for her transformation into Korea's goddess of the afterlife and healing; she appears in the gut as a divine guide who rescues the souls of the dead and leads them safely to the afterlife, and shamans of Korea call the Princess Bari myth their origin story and revere her as the healer of souls; her myth is preserved through the Barigongju bonpuri, recited by mansin throughout Korea, and has been collected nationwide in more than one hundred versions." } ] } ],
+    "domains": [
+      { "sphereId": "guidance-of-the-dead", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: she appears in the gut as a divine guide who leads the souls of the dead safely to the afterlife." } ] },
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Korea's goddess of the afterlife and healing, revered as the healer of souls." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "journeyed-to-the-realm-of", "personId": "korean_yeomra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: she undertakes a perilous journey to the Underworld to obtain the life-restoring Water of Revival." } ], "notes": "In-batch." } ],
+    "cultRecords": [
+      { "practice": "Barigongju bon-puri, recited by mansin in the gut", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: her myth is preserved through the Barigongju bonpuri, a narrative recited by mansin throughout Korea, and has been collected nationwide in more than one hundred versions." } ] } ],
+    "sources": [ { "claim": "Princess Bari is the abandoned seventh daughter who journeys to the underworld for the Water of Revival, becomes the goddess of the afterlife and healing, and is the origin story Korean shamans tell about themselves.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Bari Gongju and of the Barigongju bon-puri." } ], "weight": "high" } ],
+    "notes": "TYPE mortal AND NOT deity, DELIBERATELY. In this schema the type is a function of descent, and she is a king's daughter; what she BECOMES is on the lifecycle, where the tradition puts it. That is the rule lanes 16, 17 and 18 each lost a test cycle to and lanes 19 to 23 have applied before authoring. THE CORPUS HELD SIX FIGURES FROM THE JEJU BON-PURI TRADITION AND NOT THE ONE THE SHAMANS SAY IS ABOUT THEM. Her regional names are recorded as aliases: Bari Gongju in the Seoul tradition, Bari-degi and Biri-degi in Honam and on the east coast."
+  },
+  {
+    "id": "korean_yeomra",
+    "name": { "primary": "Yeomra", "alt": ["Yeomna", "Yeomra-daewang", "King Yeomra"],
+      "transliterations": { "Korean (hangul)": "염라", "rom": "Yeomra", "etymology": "From the Sanskrit Yama by way of Chinese Yanluo — the judge of the dead under a name that travelled the length of Asia." } },
+    "type": "deity", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Supreme ruler of the underworld and fifth of its ten kings, who judges the sins of the dead and decides what becomes of them. Nine other courts sit under him, with scribes, executioners and the messengers called jeoseung saja.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yeomna, or Yeomra, is a supreme ruler and fifth of the ten kings of the underworld, who judges the sins of the deceased and decides what to do with them; his closest associates are the underworld judges who preside over nine other courts as well as scribes, executioners and messengers known as jeoseung saja, among whom is the famous death messenger Gangnim." } ] } ],
+    "domains": [
+      { "sphereId": "judgement-of-the-dead", "contextTag": "lifelong", "term": { "value": "저승", "script": "Korean (hangul)", "rom": "jeoseung" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yeomra judges the sins of the deceased and decides what to do with them." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "served-by", "personId": "korean_gangnim",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: among Yeomra's attendants is the famous death messenger Gangnim." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yeomra is the king of the Korean underworld, fifth of its ten kings, who judges the dead.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yeomna and of the Korean underworld." } ], "weight": "high" } ],
+    "notes": "NO CROSS-TRADITION EDGE to the Hindu Yama or to any Chinese or Japanese counterpart the corpus holds. The name travelled from Sanskrit through Chinese into Korean and the fact is in the etymology, which is where this programme has put such facts since lane 13. TEN KINGS AND THE CORPUS HOLDS ONE: the other nine are a census row."
+  },
+  {
+    "id": "korean_gangnim",
+    "name": { "primary": "Gangnim", "alt": ["Gangnim Doryeong"],
+      "transliterations": { "Korean (hangul)": "강림도령", "rom": "Gangnim Doryeong", "etymology": "Doryeong is a term of address for a young unmarried man of rank — the title stayed on him after he stopped being one." } },
+    "type": "mortal", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A mortal sent, on pain of death, to fetch the King of the Underworld into a human court — and who does it: he goes down, finds Yeomra, and brings him back to answer a summons.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the epic of Gangnim Doryeong: the mortal who brought the King of Death to court." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "He becomes the best known of the jeoseung saja, the messengers who take the dead across — the only one of that class of spectral bureaucrats with a name and a story.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: among Yeomra's attendants is the famous death messenger Gangnim; jeoseung saja are a class of spectral bureaucrats responsible for escorting souls from the physical world to the netherworld." } ] } ],
+    "domains": [
+      { "sphereId": "conveying-the-dead", "contextTag": "lifelong", "term": { "value": "저승사자", "script": "Korean (hangul)", "rom": "jeoseung saja" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gangnim is the famous death messenger among the jeoseung saja." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "summoned", "personId": "korean_yeomra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the epic of Gangnim Doryeong: the mortal who brought the King of Death to court." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gangnim is the mortal who fetched Yeomra, the King of the Underworld, into a human court, and afterwards became the best known of the death messengers.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gangnim Doryeong and of the jeoseung saja." } ], "weight": "high" } ],
+    "notes": "THE CLASS IS REJECTED AND THE NAMED ONE IS INGESTED. The sources call the jeoseung saja 'a class of spectral bureaucrats' in as many words, which is the rejection this programme has applied to the Cwn Annwn, the Matronae and the aralez; Gangnim is the one the sources name, with an act of his own, and he is a record."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE GODS OF THE HOUSE
+================================================================================
+
+```json
+[
+ {
+  "id": "korean_seongjusin",
+  "name": {
+   "primary": "Seongjusin",
+   "alt": [],
+   "transliterations": {
+    "Korean (hangul)": "성주신",
+    "rom": "Seongjusin",
+    "etymology": "'God of the ridge-beam' — seongju is the main roof-beam, and he is held to live in it."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Korean",
+  "primaryTradition": "Korean",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The chief of the household gods, who governs the fortune of the whole family and is lodged in the ridge-beam of the house.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Seongjusin is the god that controls the fortune of the whole family, serving as the chief household deity."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-household",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "성주",
+     "script": "Korean (hangul)",
+     "rom": "seongju"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Seongjusin is the god that controls the fortune of the whole family, serving as the chief household deity."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "gosa and daily household observance",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Seongjusin is the god that controls the fortune of the whole family, serving as the chief household deity."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The chief of the household gods, who governs the fortune of the whole family and is lodged in the ridge-beam of the house.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatments of the Gasin faith and of the Korean household gods."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE CHIEF OF THE GASIN, and the corpus held none of the eight. The gasin are the part of Korean religion that was practised daily in every home for centuries, by the women of the house, without a temple or a priest."
+ },
+ {
+  "id": "korean_jowangsin",
+  "name": {
+   "primary": "Jowangsin",
+   "alt": [],
+   "transliterations": {
+    "Korean (hangul)": "조왕신",
+    "rom": "Jowangsin",
+    "etymology": "'God of the stove' — jowang is the kitchen hearth."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Korean",
+  "primaryTradition": "Korean",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The goddess of fire and the hearth, held to be embodied in a bowl of water standing on a clay altar above the stove: the housewife rose early, poured fresh water from the well into the bowl, and knelt before it wishing for luck.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Jowangsin is the goddess of fire and the hearth in Korean shamanism; she was regarded to embody a bowl of water held on a clay altar above the hearth, and the housewife awoke early every morning and poured fresh water from a nearby well into the bowl, then knelt before it, wishing for luck."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-hearth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "조왕",
+     "script": "Korean (hangul)",
+     "rom": "jowang"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Jowangsin is the goddess of fire and the hearth in Korean shamanism; she was regarded to embody a bowl of water held on a clay altar above the hearth, and the housewife awoke early every morning and poured fresh water from a nearby well into the bowl, then knelt before it, wishing for luck."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "gosa and daily household observance",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Jowangsin is the goddess of fire and the hearth in Korean shamanism; she was regarded to embody a bowl of water held on a clay altar above the hearth, and the housewife awoke early every morning and poured fresh water from a nearby well into the bowl, then knelt before it, wishing for luck."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The goddess of fire and the hearth, held to be embodied in a bowl of water standing on a clay altar above the stove: the housewife rose early, poured fresh water from the well into the bowl, and knelt before it wishing for luck.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatments of the Gasin faith and of the Korean household gods."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE MOST PRECISELY ATTESTED RITE IN THIS BATCH, AND IT IS A CUP OF WATER. A goddess of FIRE who is embodied in WATER, renewed every morning by the woman of the house, is the kind of thing a registry of cult practice exists to record."
+ },
+ {
+  "id": "korean_teojusin",
+  "name": {
+   "primary": "Teojusin",
+   "alt": [],
+   "transliterations": {
+    "Korean (hangul)": "터주신",
+    "rom": "Teojusin",
+    "etymology": "'God of the site' — teo is the plot of ground a house stands on."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Korean",
+  "primaryTradition": "Korean",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The patron deity of the ground the house is built on, distinct from the house and from the family in it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Teojusin is the patron deity of the ground on which the house is built, in the Gasin faith of Korea."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-ground-of-the-house",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "터",
+     "script": "Korean (hangul)",
+     "rom": "teo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Teojusin is the patron deity of the ground on which the house is built, in the Gasin faith of Korea."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "gosa and daily household observance",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Teojusin is the patron deity of the ground on which the house is built, in the Gasin faith of Korea."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The patron deity of the ground the house is built on, distinct from the house and from the family in it.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatments of the Gasin faith and of the Korean household gods."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A GOD OF THE PLOT AND NOT OF THE BUILDING, which is a distinction the gasin system makes and most pantheons do not."
+ },
+ {
+  "id": "korean_munsin",
+  "name": {
+   "primary": "Munsin",
+   "alt": [],
+   "transliterations": {
+    "Korean (hangul)": "문신",
+    "rom": "Munsin",
+    "etymology": "'God of the door' — mun is a door or a gate."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Korean",
+  "primaryTradition": "Korean",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The god of doors, who stands at the threshold of the house.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Munsin is the God of Doors in the Gasin faith of Korea."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-threshold",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "문",
+     "script": "Korean (hangul)",
+     "rom": "mun"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Munsin is the God of Doors in the Gasin faith of Korea."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "gosa and daily household observance",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Munsin is the God of Doors in the Gasin faith of Korea."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The god of doors, who stands at the threshold of the house.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatments of the Gasin faith and of the Korean household gods."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The door, the hearth, the ridge-beam, the storehouse, the outhouse and the ground: the gasin divide a single house between them, and each of the eight has a place you can point at."
+ },
+ {
+  "id": "korean_samsin_halmoni",
+  "name": {
+   "primary": "Samsin Halmoni",
+   "alt": [],
+   "transliterations": {
+    "Korean (hangul)": "삼신할머니",
+    "rom": "Samsin Halmeoni",
+    "etymology": "'Grandmother Samsin'. Samsin is generally read as 'three gods', and the sources give the name in the plural while the tradition addresses a single grandmother."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Korean",
+  "primaryTradition": "Korean",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The goddess of childbirth and of children's health, who brings a child and watches over it — addressed as a grandmother.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Samsin are gods of one's offspring and health, also known as Samsin Halmoni."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "childbirth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "삼신",
+     "script": "Korean (hangul)",
+     "rom": "samsin"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Samsin are gods of one's offspring and health, also known as Samsin Halmoni."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "gosa and daily household observance",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Samsin are gods of one's offspring and health, also known as Samsin Halmoni."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The goddess of childbirth and of children's health, who brings a child and watches over it — addressed as a grandmother.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatments of the Gasin faith and of the Korean household gods."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "ONE RECORD FOR A NAME THE SOURCES GIVE IN THE PLURAL. The tradition prays to a grandmother in the singular and the name means 'three gods'; the record holds the figure the tradition addresses and states the plural in the etymology rather than manufacturing three records out of a number, on the rule that kept lane 17 from manufacturing sixty thousand sons of Sagara."
+ },
+ {
+  "id": "korean_eopsin",
+  "name": {
+   "primary": "Eopsin",
+   "alt": [],
+   "transliterations": {
+    "Korean (hangul)": "업신",
+    "rom": "Eopsin",
+    "etymology": "'God of the eop' — eop is the household's accumulated fortune."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Korean",
+  "primaryTradition": "Korean",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The goddess of the storehouse and of wealth, who keeps the family's fortune where the grain is kept.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Eopsin is the goddess of the storage and wealth in Korean mythology and shamanism; she is one of the Gasin, or deities that protect the house."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-storehouse",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "업",
+     "script": "Korean (hangul)",
+     "rom": "eop"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Eopsin is the goddess of the storage and wealth in Korean mythology and shamanism; she is one of the Gasin, or deities that protect the house."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "gosa and daily household observance",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Eopsin is the goddess of the storage and wealth in Korean mythology and shamanism; she is one of the Gasin, or deities that protect the house."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The goddess of the storehouse and of wealth, who keeps the family's fortune where the grain is kept.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatments of the Gasin faith and of the Korean household gods."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "WEALTH KEPT IN THE SAME BUILDING AS THE GRAIN, which is what a household's wealth actually was."
+ },
+ {
+  "id": "korean_cheuksin",
+  "name": {
+   "primary": "Cheuksin",
+   "alt": [],
+   "transliterations": {
+    "Korean (hangul)": "측신",
+    "rom": "Cheuksin",
+    "etymology": "'God of the privy' — cheuk is the outhouse."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Korean",
+  "primaryTradition": "Korean",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The goddess of the outhouse, and in the tradition the most dangerous of the household gods to offend.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Cheuksin is the toilet goddess of Korean mythology, one of the Gasin."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-outhouse",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "측",
+     "script": "Korean (hangul)",
+     "rom": "cheuk"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Cheuksin is the toilet goddess of Korean mythology, one of the Gasin."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "gosa and daily household observance",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Cheuksin is the toilet goddess of Korean mythology, one of the Gasin."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The goddess of the outhouse, and in the tradition the most dangerous of the household gods to offend.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatments of the Gasin faith and of the Korean household gods."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A GODDESS OF THE OUTHOUSE IS NOT A JOKE AND THE RECORD DOES NOT TREAT IT AS ONE. A system that gives a god to every part of a house gives one to that part too, and leaving her out because the room is undignified would be a modern reader's edit of a religion."
+ },
+ {
+  "id": "korean_seonangsin",
+  "name": {
+   "primary": "Seonangsin",
+   "alt": [],
+   "transliterations": {
+    "Korean (hangul)": "서낭신",
+    "rom": "Seonangsin",
+    "etymology": "Also Seonghwangsin. The seonangdang is the shrine-cairn at the edge of a village, on the pass or by the road."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Korean",
+  "primaryTradition": "Korean",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The patron deity of the village, of boundaries and of war, whose shrine stands where the village ends.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Seonangsin, or Seonghwangsin, is the patron deity of the village in Korean mythology; as the goddess of villages, boundaries and war, the deity is one of the better-known Korean deities."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-village-boundary",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "서낭당",
+     "script": "Korean (hangul)",
+     "rom": "seonangdang"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Seonangsin, or Seonghwangsin, is the patron deity of the village in Korean mythology; as the goddess of villages, boundaries and war, the deity is one of the better-known Korean deities."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "gosa and daily household observance",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Seonangsin, or Seonghwangsin, is the patron deity of the village in Korean mythology; as the goddess of villages, boundaries and war, the deity is one of the better-known Korean deities."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The patron deity of the village, of boundaries and of war, whose shrine stands where the village ends.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatments of the Gasin faith and of the Korean household gods."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE ONE OF THE EIGHT WHO IS NOT INSIDE THE HOUSE. Her shrine is at the edge of the village, which is why she is also a goddess of boundaries and of war."
+ }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. SILLA: THE EGG, THE DRAGON, THE CHEST AND THE BOX
+================================================================================
+
+```json
+[
+  {
+    "id": "korean_hyeokgeose",
+    "name": { "primary": "Bak Hyeokgeose", "alt": ["Hyeokgeose", "Park Hyeokgeose", "Alji Geoseogan"],
+      "transliterations": { "Korean (hangul)": "박혁거세", "rom": "Bak Hyeokgeose", "etymology": "Bak is written with the character for gourd, from the gourd-shaped egg he hatched from. The sources record that he called himself Alji Geoseogan." } },
+    "type": "demigod", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Hatched from a heavenly egg and made the founding monarch of Silla, one of the Three Kingdoms.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hyeokgeose, also known by his personal full name as Bak Hyeokgeose, was the founding monarch of Silla, one of the Three Kingdoms of Korea; the egg-birth legend of Silla's Hyeokgeose is among the state-foundation myths of the Samguk Yusa; Hyeokgeose is said to have called himself Alji Geoseogan." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "거서간", "script": "Korean (hangul)", "rom": "geoseogan" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hyeokgeose was the founding monarch of Silla and is said to have called himself Alji Geoseogan." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "korean_aryeong",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aryeong Jong is the first queen of Silla, the dragon-born consort of King Bak Hyeokgeose." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bak Hyeokgeose is the egg-born founder of Silla and husband of the dragon-born Aryeong.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hyeokgeose of Silla, of Korean mythology and of the Samguk Yusa." } ], "weight": "high" } ],
+    "notes": "THE SECOND OF THE FOUR FOUNDATION MYTHS, AND THE FIRST OF THE THREE THE CORPUS DID NOT HOLD. The registry had the Goguryeo myth complete — Haemosu, Habaek, Yuhwa, Jumong, Yuri — and nothing of Silla, Gaya or Baekje. The record carries no dates and does not assert that he existed; the sources note that archaeology finds gradual chiefdom emergence rather than divine origins, and that is on the record as what the sources say."
+  },
+  {
+    "id": "korean_aryeong",
+    "name": { "primary": "Aryeong", "alt": ["Aryeong Jong", "Lady Aryeong", "Alyeong"],
+      "transliterations": { "Korean (hangul)": "알영", "rom": "Aryeong", "etymology": "From the well of Aryeong, where the dragon appeared and she was born." } },
+    "type": "demigod", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Born of a water dragon at the well that gave her her name, and made the first queen of Silla beside the egg-born Hyeokgeose — the sources set the two births against each other as complementary opposites, one out of heaven and one out of the water.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aryeong Jong is the first queen of Silla, celebrated in Korean myth as the dragon-born consort of King Bak Hyeokgeose; Hyeokgeose was born from a heavenly egg while Aryeong was tied to a water dragon — two opposing yet complementary forces in Korean cosmology; her story is preserved in the Samguk Sagi and Samguk Yusa." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "korean_hyeokgeose",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aryeong is the dragon-born consort of King Bak Hyeokgeose." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Aryeong is the dragon-born first queen of Silla, consort of Bak Hyeokgeose.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Aryeong Jong and of the Silla foundation myth." } ], "weight": "high" } ],
+    "notes": "parentIds IS EMPTY AND THE DRAGON IS IN THE LIFECYCLE. The sources say she is 'tied to a water dragon' and do not give the dragon a name; writing an unnamed dragon into descent would invent a record, and in this corpus parentIds drives the computed tier besides. TWO FOUNDERS, TWO BIRTHS, ONE OUT OF THE SKY AND ONE OUT OF THE WATER — which is the sort of symmetry a registry can only show if it holds both halves, and it held neither."
+  },
+  {
+    "id": "korean_seok_talhae",
+    "name": { "primary": "Seok Talhae", "alt": ["Talhae", "Seok Tal-hae", "Talhae of Silla"],
+      "transliterations": { "Korean (hangul)": "석탈해", "rom": "Seok Talhae", "etymology": "Seok is the surname the tradition derives from his story; Talhae is generally read as 'unbound' or 'released', from the opening of the chest." } },
+    "type": "demigod", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Founder of the Seok house of Silla, who comes to the peninsula from over the sea and challenges Suro of Geumgwan Gaya.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Samguk Yusa foundation myth of Geumgwan Gaya: the first to hatch, Suro, became king of Geumgwan Gaya, and was later challenged by Seok Talhae, the founder of the Seok family." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "challenged", "personId": "korean_suro",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Suro was later challenged by Seok Talhae, the founder of the Seok family." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Seok Talhae is the founder of the Seok house of Silla, who arrives from over the sea and challenges Suro of Geumgwan Gaya.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Samguk Yusa and of the Gaya foundation myth." } ], "weight": "high" } ],
+    "notes": "SILLA HAS THREE ROYAL SURNAMES AND EACH HAS ITS OWN ARRIVAL STORY — Bak out of an egg, Seok out of the sea, Kim out of a golden box — and the corpus held none of the three. This batch holds all three."
+  },
+  {
+    "id": "korean_kim_alji",
+    "name": { "primary": "Kim Alji", "alt": ["Gim Al-ji", "Alji"],
+      "transliterations": { "Korean (hangul)": "김알지", "rom": "Kim Alji", "etymology": "The sources gloss it themselves: Kim for the gold of the box, Alji for a child." } },
+    "type": "demigod", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Found as an infant in a golden box hanging in a wood. When the king opened it there was a child inside; he was named Kim, for the gold, and Alji, for a child — and the wood was named Gyerim, the rooster forest, which became a name for Silla itself.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: when the king opened the box, there was an infant inside; because he was born from a golden box and was very clever, the king named him Kim, meaning the gold, and Alji, meaning a child; the forest where the box was found was named Gyerim, rooster forest, which also was used as the name of Silla." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kim Alji is the infant found in a golden box in the forest of Gyerim, ancestor of the Kim house of Silla, whose finding gave the kingdom one of its names.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kim Alji and of the Silla royal houses." } ], "weight": "high" } ],
+    "notes": "A FOUNDATION STORY THAT NAMES A COUNTRY AFTER A WOOD AFTER A BOX. The record does not name the king who opened it, because the retrieved treatment does not; that is a census row. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "korean_east_sea_dragon_king",
+    "name": { "primary": "the Dragon King of the East Sea", "alt": ["Yongwang of the East Sea", "Donghae Yongwang"],
+      "transliterations": { "Korean (hangul)": "동해 용왕", "rom": "Donghae Yongwang", "etymology": "Yongwang is 'dragon king'; the title names the sea he rules rather than a personal name." } },
+    "type": "deity", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The dragon king whose son Cheoyong goes up to the Silla capital with King Heongang.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cheoyong is a mysterious son of the Dragon King of the East Sea, who follows King Heongang of Silla to the capital." } ] } ],
+    "domains": [
+      { "sphereId": "the-sea", "contextTag": "lifelong", "term": { "value": "용왕", "script": "Korean (hangul)", "rom": "yongwang" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Dragon King of the East Sea, Cheoyong's father." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "korean_cheoyong",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cheoyong is a son of the Dragon King of the East Sea." } ], "notes": "In-batch; Cheoyong carries him in parentIds." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "The Dragon King of the East Sea is the father of Cheoyong, who sends his son up to the Silla capital with King Heongang.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Cheoyong and of the Cheoyong-ga." } ], "weight": "medium" } ],
+    "notes": "FILED UNDER A TITLE BECAUSE THE SOURCE GIVES A TITLE, as lane 20 filed the Maiden of Pohjola and lane 21 Grendel's mother. The record does not merge him with the dragon kings of the other three seas, nor with any Chinese counterpart; what is attested here is the king of the EAST sea and the fact that he has this son."
+  },
+  {
+    "id": "korean_cheoyong",
+    "name": { "primary": "Cheoyong", "alt": ["Cheoyong-rang"],
+      "transliterations": { "Korean (hangul)": "처용", "rom": "Cheoyong", "etymology": "Unresolved; a Silla name preserved in the Cheoyong-ga and in the name of the mask-dance." } },
+    "type": "demigod", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["korean_east_sea_dragon_king"],
+    "parentRoles": [ { "personId": "korean_east_sea_dragon_king", "role": "father" } ],
+    "temporal": { "era": "unified-silla" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "unified-silla", "eraOrdering": 0,
+      "startEvent": "A son of the Dragon King of the East Sea who follows King Heongang of Silla up to the capital and marries a beautiful woman there.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cheoyong is a mysterious son of the Dragon King of the East Sea, who follows King Heongang of Silla to the capital and marries a beautiful woman." } ] },
+      { "typeStatus": "demigod", "era": "unified-silla", "eraOrdering": 1,
+        "startEvent": "He comes home and finds the Plague Spirit in his marriage bed — and instead of striking, he sings and dances. The spirit, shamed, swears never again to enter a house that shows Cheoyong's face, and Koreans hang his mask on the door against smallpox.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cheoyong confronts the Yeoksin, or Plague Spirit, after finding it inside his marital chamber; rather than responding through violence he sings and dances with controlled grief, irony and ritual composure, and the humbled Plague Spirit vows never again to enter a house where Cheoyong's face is displayed; since then Koreans began hanging Cheoyong masks on their doors to ward off disease and evil spirits, especially smallpox." } ] } ],
+    "domains": [
+      { "sphereId": "warding-off-plague", "contextTag": "lifelong", "term": { "value": "처용무", "script": "Korean (hangul)", "rom": "Cheoyongmu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Koreans hang Cheoyong masks on their doors to ward off disease, especially smallpox; the Cheoyongmu is the mask-dance named from him." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "faced", "personId": "korean_yeoksin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cheoyong confronts the Yeoksin, or Plague Spirit, found inside his marital chamber." } ], "notes": "In-batch." } ],
+    "cultRecords": [
+      { "practice": "Cheoyong masks hung on the door against disease; the Cheoyongmu", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the humbled Plague Spirit vows never again to enter a house where Cheoyong's face is displayed, and Koreans began hanging Cheoyong masks on their doors." } ] } ],
+    "sources": [ { "claim": "Cheoyong is the son of the Dragon King of the East Sea who meets the Plague Spirit in his own bed and drives it off by singing and dancing, and whose mask is hung on doors against disease.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Cheoyong, of the Cheoyong-ga and of the Cheoyongmu." } ], "weight": "high" } ],
+    "notes": "THE ONLY RECORD IN THIS BATCH FILED AT unified-silla, AND IT FILLS AN ERA THAT HELD NOBODY. His answer to finding a demon in his bed is A SONG, and the song survives — the Cheoyong-ga is one of the few Silla hyangga that came down — and the dance is still performed. The record does not say what became of his wife, because the sources consulted do not."
+  },
+  {
+    "id": "korean_yeoksin",
+    "name": { "primary": "the Plague Spirit", "alt": ["Yeoksin", "the Yeoksin of the Cheoyong-ga"],
+      "transliterations": { "Korean (hangul)": "역신", "rom": "yeoksin", "etymology": "'Epidemic god'. The word is also used generally of the gods of infectious disease, which the record states rather than resolves." } },
+    "type": "numen", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "unknown", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "unified-silla" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "unified-silla", "eraOrdering": 0,
+      "startEvent": "The spirit Cheoyong finds in his marriage bed, who is shamed by his song and swears never again to enter a house that shows his face.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cheoyong confronts the Yeoksin, or Plague Spirit; the humbled Plague Spirit vows never again to enter a house where Cheoyong's face is displayed, especially against smallpox." } ] } ],
+    "domains": [
+      { "sphereId": "epidemic-disease", "contextTag": "lifelong", "term": { "value": "역신", "script": "Korean (hangul)", "rom": "yeoksin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Yeoksin, the Plague Spirit of the Cheoyong story." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "faced-by", "personId": "korean_cheoyong",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cheoyong confronts the Plague Spirit and it is humbled." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "The Yeoksin of the Cheoyong story is the plague spirit found in Cheoyong's bed, humbled by his song and bound by an oath against houses showing his face.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Cheoyong, of the Cheoyong-ga and of the Korean plague gods." } ], "weight": "high" } ],
+    "notes": "A WORD THAT IS ALSO A CLASS, AND THE RECORD SAYS SO. Yeoksin is used generally for the gods of epidemic disease, and the sonnim — the plague gods addressed as 'guests' — are a collective this batch rejects. What is ingested is the ONE yeoksin the Cheoyong narrative gives an act and an oath to, on the same footing as lane 22's Liekkiö, whose word also has a second, generic sense."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. GAYA: SIX EGGS AND A BOAT FROM AYUTA
+================================================================================
+
+```json
+[
+  {
+    "id": "korean_suro",
+    "name": { "primary": "Suro", "alt": ["Kim Suro", "Suro of Geumgwan Gaya"],
+      "transliterations": { "Korean (hangul)": "수로", "rom": "Suro", "etymology": "Unresolved; the Kim surname is attached to him by the Gimhae Kim clan that traces itself to him." } },
+    "type": "demigod", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Nine leaders heard a voice out of the air telling them to found a kingdom; they sang and danced, and a golden chest came down from heaven with six golden eggs in it, which hatched into six giant boys. Suro hatched first and became king of Geumgwan Gaya; the other five took the other five Gaya kingdoms.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Samguk Yusa tells the founding myth of Geumgwan Gaya, where nine leaders heard a voice commanding them to found a kingdom, and after singing and dancing a golden chest came down from heaven containing six golden eggs, which hatched into giant boys who each became kings of the six Gaya kingdoms; the first to hatch, Suro, became king of Geumgwan Gaya." } ] },
+      { "typeStatus": "demigod", "era": "three-kingdoms", "eraOrdering": 1,
+        "startEvent": "He is challenged by Seok Talhae, and he marries a queen who arrives by boat from a country called Ayuta.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Suro was later challenged by Seok Talhae, the founder of the Seok family; Heo Hwang-ok became the wife of King Suro of Geumgwan Gaya at the age of 16, after arriving by boat from a distant kingdom called Ayuta." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Kim Suro was the legendary founder and hero-king of Geumgwan Gaya and founder of the Gaya confederacy." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "korean_heo_hwangok",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Heo Hwang-ok was queen consort of King Suro of Geumgwan Gaya." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "challenged-by", "personId": "korean_seok_talhae",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Suro was later challenged by Seok Talhae." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Suro is the first of six brothers hatched from golden eggs out of a heavenly chest, founder of Geumgwan Gaya and of the Gaya confederacy, challenged by Seok Talhae and married to Heo Hwang-ok.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Suro of Geumgwan Gaya, of Heo Hwang-ok and of the Samguk Yusa." } ], "weight": "high" } ],
+    "notes": "THE OTHER FIVE BROTHERS ARE NOT INGESTED. The source names a number and six kingdoms and not five more men, and a number is not five records — the rule that kept lane 17 from manufacturing the sixty thousand sons of Sagara and lane 16 from manufacturing ninety-six Kauravas. THE FOUNDING RITE IS IN THE RECORD: nine men singing and dancing until the sky sends down a box, which is a cult act preserved inside a foundation myth."
+  },
+  {
+    "id": "korean_heo_hwangok",
+    "name": { "primary": "Heo Hwang-ok", "alt": ["Hwang-ok", "Queen Heo"],
+      "transliterations": { "Korean (hangul)": "허황옥", "rom": "Heo Hwang-ok", "etymology": "Hwang-ok is 'yellow jade'. The Gimhae Heo clan traces its origin to her." } },
+    "type": "mortal", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "She arrived by boat at sixteen from a distant kingdom the Samguk Yusa calls Ayuta, and became queen to Suro of Geumgwan Gaya.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Heo Hwang-ok was a legendary queen mentioned in the Samguk Yusa and queen consort of King Suro of Geumgwan Gaya; she became his wife at the age of 16 after having arrived by boat from a distant kingdom called Ayuta, with many theorising it to be located in India, Thailand or Central Asia." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "korean_suro",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Heo Hwang-ok was queen consort of King Suro." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Heo Hwang-ok is the queen who came by boat from Ayuta at sixteen to marry Suro of Geumgwan Gaya, and the ancestress the Gimhae Heo clan traces itself to.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Heo Hwang-ok and of the Samguk Yusa." } ], "weight": "high" } ],
+    "notes": "AYUTA IS NOT LOCATED ON THIS RECORD. The sources say India, Thailand and Central Asia have all been argued and none is settled, and a registry that picked one would be taking a side in a live argument about where a queen came from. What is recorded is the boat, the age, and the name of the place as the Samguk Yusa gives it."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. BUYEO, AND THE FOUNDING OF BAEKJE
+================================================================================
+
+```json
+[
+  {
+    "id": "korean_hae_buru",
+    "name": { "primary": "Hae Buru", "alt": ["Buru", "Buru of Buyeo"],
+      "transliterations": { "Korean (hangul)": "해부루", "rom": "Hae Buru", "etymology": "Hae is the royal surname of Buyeo, generally connected with a word for the sun." } },
+    "type": "mortal", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "King of Bukbuyeo and founder of Dongbuyeo, East Buyeo — the kingdom Jumong grows up in and runs from.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hae Buru was king of Bukbuyeo and founder of Dongbuyeo, an ancient Korean kingdom; Hae Geumwa was the second ruler of Dongbuyeo." } ] },
+      { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 1,
+        "startEvent": "Childless, he finds a boy under a stone and raises him as his heir.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hae Geumwa was the second ruler of Dongbuyeo, and Daeso was the first son of King Geumwa and the grandson of Dongbuyeo's founder and first ruler, Hae Buru." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "raised", "personId": "korean_geumwa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hae Geumwa was the second ruler of Dongbuyeo, whose founder and first ruler was Hae Buru." } ],
+        "notes": "In-batch. DELIBERATELY 'raised' AND NOT parentIds: the tradition has Geumwa found rather than begotten, and this corpus computes descent from parentIds." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hae Buru is king of Bukbuyeo and founder of Dongbuyeo, and the predecessor of Geumwa.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Buru of Buyeo and of Geumwa of Buyeo." } ], "weight": "high" } ],
+    "notes": "THE CORPUS HELD JUMONG AND NOT THE COURT HE GREW UP IN. Haemosu, Habaek, Yuhwa, Jumong and Yuri were all in the registry, and the Buyeo king who raised Jumong, the king before him, and the prince who tried to kill him were not."
+  },
+  {
+    "id": "korean_geumwa",
+    "name": { "primary": "Geumwa", "alt": ["Hae Geumwa", "Geumwa of Buyeo"],
+      "transliterations": { "Korean (hangul)": "금와", "rom": "Geumwa", "etymology": "'Golden frog' — the tradition says he was found as a child in the shape of one under a stone." } },
+    "type": "mortal", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Second ruler of Dongbuyeo, found by Hae Buru and raised as his heir, and the king who takes in Yuhwa and raises Jumong at his court.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hae Geumwa was the second ruler (48-7 BCE) of Dongbuyeo, an ancient kingdom of Korea; Daeso was the first son of King Geumwa and the grandson of Hae Buru; Jumong fled persecution in Buyeo and founded Goguryeo." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "raised-by", "personId": "korean_hae_buru",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Geumwa was the second ruler of Dongbuyeo, whose founder and first ruler was Hae Buru." } ], "notes": "In-batch." },
+      { "kind": "father-of", "personId": "korean_daeso",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Daeso was the first son of King Geumwa." } ], "notes": "In-batch; Daeso carries him in parentIds." },
+      { "kind": "sheltered", "personId": "korean_jumong",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jumong grew up in Buyeo and fled persecution there before founding Goguryeo." } ],
+        "notes": "Non-symmetric toward a pre-existing record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Geumwa, the golden frog, is the second ruler of Dongbuyeo, raised by Hae Buru, father of Daeso, and the king at whose court Jumong grows up.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Geumwa of Buyeo and of the Goguryeo foundation myth." } ], "weight": "high" } ],
+    "notes": "A KING WHOSE NAME IS 'GOLDEN FROG' AND THE RECORD DOES NOT TIDY IT AWAY. The finding-under-a-stone is in the lifecycle and not in parentIds, for the same reason Otso's descent was in lane 20: the tier here is computed from descent, and a child found under a stone has none to compute from."
+  },
+  {
+    "id": "korean_daeso",
+    "name": { "primary": "Daeso", "alt": ["Daeso of Buyeo", "King Daeso"],
+      "transliterations": { "Korean (hangul)": "대소", "rom": "Daeso", "etymology": "Unresolved." } },
+    "type": "mortal", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["korean_geumwa"],
+    "parentRoles": [ { "personId": "korean_geumwa", "role": "father" } ],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Geumwa's eldest son and Jumong's rival at the Buyeo court — the persecution Jumong runs from.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Daeso was the first son of King Geumwa and the grandson of Dongbuyeo's founder Hae Buru; Jumong fled persecution in Buyeo, crossed a great river with the help of fish and turtles, and founded Goguryeo." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rivalled", "personId": "korean_jumong",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jumong fled persecution in Buyeo before founding Goguryeo." } ],
+        "notes": "Non-symmetric toward a pre-existing record. THE CORPUS HELD THE FLIGHT AND NOT THE MAN FLED FROM." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Daeso is Geumwa's eldest son and Jumong's rival at the Buyeo court.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Daeso of Buyeo and of the Goguryeo foundation myth." } ], "weight": "high" } ],
+    "notes": "The most famous scene in the Goguryeo myth is a man on the bank of a river with pursuers behind him and the fish and turtles coming up to make him a bridge. The corpus held the river-crossing and not the pursuit."
+  },
+  {
+    "id": "korean_soseono",
+    "name": { "primary": "Soseono", "alt": ["Sosseono", "So Seo-no"],
+      "transliterations": { "Korean (hangul)": "소서노", "rom": "Soseono", "etymology": "Unresolved." } },
+    "type": "mortal", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Daughter of Yeon Tabal of Holbon, widowed, and married to Jumong when he arrives there and founds Goguryeo.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Soseono was the daughter of the Holbon native Yeon Tabal; she became a widow after her first husband died, and when Dongmyeong arrived at Holbon he established Goguryeo and married Soseono." } ] },
+      { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 1,
+        "startEvent": "Her two sons go south and found Baekje, which the histories name as founded by Onjo or by Biryu.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Samguk Sagi, Samguk Yusa and Haedong Goseungjeon mention the founder of Baekje as Onjo or Biryu." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "married", "personId": "korean_jumong",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Dongmyeong arrived at Holbon he established Goguryeo and married Soseono." } ],
+        "notes": "Non-symmetric toward a pre-existing record; 'spouse' is the honest kind and cannot be used." },
+      { "kind": "mother-of", "personId": "korean_onjo",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the founder of Baekje is named as Onjo or Biryu, sons of Soseono." } ], "notes": "In-batch; Onjo carries her in parentIds." },
+      { "kind": "mother-of", "personId": "korean_biryu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the founder of Baekje is named as Onjo or Biryu." } ], "notes": "In-batch; Biryu carries her in parentIds." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Soseono is the widow of Holbon whom Jumong marries, and the mother of the brothers who found Baekje.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Soseono and of the Baekje foundation myth." } ], "weight": "high" } ],
+    "notes": "SHE IS THE JOIN BETWEEN TWO OF THE FOUR FOUNDATION MYTHS, and the corpus held one of them complete and could not reach the other. The registry had Jumong, his father, his mother, his grandfather and his son Yuri; it did not have the wife whose sons took a second kingdom south."
+  },
+  {
+    "id": "korean_onjo",
+    "name": { "primary": "Onjo", "alt": ["Onjo of Baekje", "King Onjo"],
+      "transliterations": { "Korean (hangul)": "온조", "rom": "Onjo", "etymology": "Unresolved." } },
+    "type": "demigod", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["korean_jumong", "korean_soseono"],
+    "parentRoles": [ { "personId": "korean_jumong", "role": "father" }, { "personId": "korean_soseono", "role": "mother" } ],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Named in the Samguk Sagi, the Samguk Yusa and the Haedong Goseungjeon as the founder of Baekje — in the account the histories give most often, with his brother Biryu as the alternative.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Samguk Sagi, Samguk Yusa and Haedong Goseungjeon mention the founder of Baekje as Onjo or Biryu." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Onjo as founder of Baekje." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "korean_biryu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the founder of Baekje is named as Onjo or Biryu, brothers." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Onjo is named in the Korean histories as the founder of Baekje, son of Jumong and Soseono.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the creation myth of Baekje and of the Samguk Sagi and Samguk Yusa." } ], "weight": "high" } ],
+    "notes": "TWO BROTHERS AND THE HISTORIES CANNOT AGREE WHICH OF THEM FOUNDED THE KINGDOM, and this batch ingests both and does not choose. Each record names the other and says that the sources give both, which is the handling lane 19 gave the two Myrddins and lane 21 the two Hengests, arrived at from a third direction: here it is not two figures or one, but one office and two claimants."
+  },
+  {
+    "id": "korean_biryu",
+    "name": { "primary": "Biryu", "alt": ["Biryu of Baekje", "Prince Biryu"],
+      "transliterations": { "Korean (hangul)": "비류", "rom": "Biryu", "etymology": "Unresolved." } },
+    "type": "demigod", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["korean_jumong", "korean_soseono"],
+    "parentRoles": [ { "personId": "korean_jumong", "role": "father" }, { "personId": "korean_soseono", "role": "mother" } ],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Named in the same histories as the founder of Baekje, in the account that makes him and not his brother the founder.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Samguk Sagi, Samguk Yusa and Haedong Goseungjeon mention the founder of Baekje as Onjo or Biryu." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "korean_onjo",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the founder of Baekje is named as Onjo or Biryu, brothers." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Biryu is named in the Korean histories, alongside his brother Onjo, as the founder of Baekje.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the creation myth of Baekje." } ], "weight": "high" } ],
+    "notes": "The record makes no claim about which brother founded the kingdom, and neither does his brother's."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. THE COUPLE WHO TOOK THE SUN AND MOON WITH THEM
+================================================================================
+
+```json
+[
+  {
+    "id": "korean_yeonorang",
+    "name": { "primary": "Yeonorang", "alt": ["Yeono-rang", "Yeon Orang"],
+      "transliterations": { "Korean (hangul)": "연오랑", "rom": "Yeonorang", "etymology": "Rang is a Silla term of address for a young man; the first element is unresolved." } },
+    "type": "mortal", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "A man of Silla who crosses over to Japan with his wife — and when the two of them are gone, the sun and the moon of Silla lose their light.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yeonorang and Seonyeo is a story about Yeonorang and Seonyeo, people of Silla, who crossed over to Japan, but the sun and moon of Silla lost their light, and a ritual was held with the silk sent by Seonyeo to restore their light to the sun and moon." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "korean_seonyeo",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yeonorang and Seonyeo, people of Silla, crossed over to Japan." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yeonorang is the man of Silla whose departure to Japan with his wife takes the light of the sun and moon with him.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yeonorang and Seonyeo." } ], "weight": "high" } ],
+    "notes": "A MYTH IN WHICH THE SUN AND MOON BELONG TO A COUNTRY AND LEAVE WITH THE PEOPLE WHO LEAVE IT. No cross-tradition edge is drawn to anything Japanese; the story is a Silla story about what happens in Silla."
+  },
+  {
+    "id": "korean_seonyeo",
+    "name": { "primary": "Seonyeo", "alt": ["Seo-nyeo", "Sehee"],
+      "transliterations": { "Korean (hangul)": "세오녀", "rom": "Seonyeo", "etymology": "Nyeo is 'woman'; the first element is unresolved and is given variously in the sources." } },
+    "type": "mortal", "origin": "canon", "tradition": "Korean", "primaryTradition": "Korean",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "three-kingdoms" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "three-kingdoms", "eraOrdering": 0,
+      "startEvent": "Yeonorang's wife, who crosses with him — and who, when Silla sends word that the sky has gone dark, sends back a bolt of silk she has woven, with which a rite is held and the light comes back.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yeonorang and Seonyeo, people of Silla, crossed over to Japan, but the sun and moon of Silla lost their light, and a ritual was held with the silk sent by Seonyeo to restore their light to the sun and moon." } ] } ],
+    "domains": [
+      { "sphereId": "weaving", "contextTag": "episodic", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a ritual was held with the silk sent by Seonyeo to restore the light of the sun and moon." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "korean_yeonorang",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yeonorang and Seonyeo, people of Silla, crossed over to Japan." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [
+      { "practice": "the rite held with Seonyeo's silk to restore the sun and moon", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a ritual was held with the silk sent by Seonyeo to restore their light to the sun and moon." } ] } ],
+    "sources": [ { "claim": "Seonyeo is Yeonorang's wife, whose woven silk, sent back from Japan, is used in the rite that restores the light of the sun and moon to Silla.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yeonorang and Seonyeo." } ], "weight": "high" } ],
+    "notes": "SHE IS THE ONE WHO FIXES IT, AND WITH A PIECE OF CLOTH SHE MADE. The corpus now holds a cult record whose ritual object is a bolt of silk and whose stated effect is the return of daylight."
+  }
+]
+```
+
